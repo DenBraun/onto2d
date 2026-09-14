@@ -18,8 +18,8 @@ scientific implementations. Schemas describe transport shapes; runtime code
 still verifies cross-record and semantic invariants.
 
 `@onto2d/engine` is catalogue-independent. A facade or application supplies
-verified Model Packs; the private root facade supplies the bundled Causal
-Emergence snapshot.
+verified Model Packs; the private root facade supplies the current canonical
+Causal Emergence graph.
 
 ## Ownership
 
@@ -45,7 +45,7 @@ Emergence snapshot.
 | `apps` | Explanatory studies and model readers over disclosed or versioned inputs |
 | `models` | Reproducible, reviewed Model Pack releases and their compilers |
 | `src` | Private root facade that composes the engine with bundled releases |
-| `references` | Preserved source catalogue and reference material |
+| `references` | Editable canonical graph, scientific evidence and original research inputs |
 | `scripts` | Repository checks and independent conformance tooling |
 | `tools` | Standalone local prototypes that remain independent of case interpretation |
 | `test` | Behavioral, schema, integration, case, and golden evidence |

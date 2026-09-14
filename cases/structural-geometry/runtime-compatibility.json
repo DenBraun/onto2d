@@ -1,14 +1,15 @@
 {
-  "format": "onto2d-runtime-compatibility-v1",
-  "scope": "Exact historical reports and their original implementation bindings are preserved. Only the listed runtime source replacements are accepted; all scientific fields and local payload hashes must match during replay.",
+  "format": "onto2d-runtime-compatibility-v2",
+  "scope": "Exact historical reports and their original implementation bindings are preserved. Only listed runtime source replacements and explicitly hashed additions are accepted; removals remain forbidden. All scientific fields and local payload hashes must match during replay.",
   "changes": [
     "Reject unsupported Randi tar headers at member dispatch on all supported Python versions, before extension payload allocation.",
     "Write native JSON with explicit LF on every operating system.",
     "Replay declared sequential binary64 score sums explicitly across Python versions; preserve exact score and tuning checks.",
     "Keep independent calculations available when the optional Unix resource module is absent; unavailable peak RSS is null.",
-    "Verify the exact compatibility receipts when checking and replaying the historical reports."
+    "Verify the exact compatibility receipts when checking and replaying the historical reports.",
+    "Use the bounded Model Pack aggregate canonicalization profile for expanded evidence; retain canonical bytes, all existing model identities and scientific calculations. Pin the three changed modules and the new capacity helper in the biological census receipt."
   ],
-  "verifierSha256": "7cda2e8620a57355b8d8942837d1a80892156c4050faf8e03e529799e0105b5e",
+  "verifierSha256": "4a9059d30baae8561e28f43b94b70b0ebfff93d06c35f82d8f6014f9c15bd94b",
   "reports": {
     "datasets/census.json": {
       "reportSha256": "7d2f1c9c32c4f4430883686f03cab0d8da396e11abe6845cb03b90aeb1f2cdac",
@@ -25,7 +26,22 @@
         "randi.py": {
           "recordedSha256": "38fdae1dcecfdd84a17d5235d9fe5a044b45043212d1eabd4f1f1e72cbc7086e",
           "currentSha256": "07ffecc3229698ec4b9f1ca18d914b38e1b881ca91180fc808d0136e8fdcf9fe"
+        },
+        "../../../packages/model-pack/src/index.js": {
+          "recordedSha256": "8adc749f099281cc3dc8ce531273ec9438265a5e5a3e60469a65eacece64fdee",
+          "currentSha256": "1a9a17423effa144424804149303aea83b30de3c213574417023c1e6928f8717"
+        },
+        "../../../packages/model-pack/src/transport-layout.js": {
+          "recordedSha256": "69c51f3aaebb78afefd440e533a314b4d398d36329e4296361a683ddd1b49ec7",
+          "currentSha256": "4c02f5bfc765abb5010f112e1a1f17f8e6c9efbb0881167f5a7bfd54cdf73590"
+        },
+        "../../../packages/model-pack/src/cache.js": {
+          "recordedSha256": "aad69aa95f45b5d49a00d818d448685e40686de20303d7a6488f023ff2c7482c",
+          "currentSha256": "9aea67870a7913091276002986eba507dd800b86ac3c30c35f8222ec729eea93"
         }
+      },
+      "addedFiles": {
+        "../../../packages/model-pack/src/canonical-options.js": "f36bb36f8f498df3921d8cb9b8478e9dfe79ac30f33539e4d7b1a1528904f921"
       }
     },
     "dream4/results.json": {

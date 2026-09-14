@@ -627,6 +627,11 @@ function isContentHash(value) {
   return typeof value === "string" && HASH_PATTERN.test(value);
 }
 
+// packages/model-pack/src/canonical-options.js
+var MODEL_PACK_CANONICAL_OPTIONS = Object.freeze({
+  limits: Object.freeze({ maxEntries: 1e6 })
+});
+
 // packages/model-pack/src/index.js
 var MODEL_PACK_FORMAT = "onto2d-model-pack";
 var MODEL_PACK_FORMAT_VERSION = "1";
@@ -822,7 +827,7 @@ function fileDescriptor(id, path, value) {
   return {
     id,
     path,
-    hash: hashCanonical("onto2d:model-pack-file:v1", { path, value })
+    hash: hashCanonical("onto2d:model-pack-file:v1", { path, value }, MODEL_PACK_CANONICAL_OPTIONS)
   };
 }
 function manifestRootInput(manifest) {
@@ -841,13 +846,13 @@ function manifestHashInput(manifest) {
   return body;
 }
 function buildModelPack(input) {
-  const value = canonicalClone(requirePlainObject(input, "input"));
+  const value = canonicalClone(requirePlainObject(input, "input"), MODEL_PACK_CANONICAL_OPTIONS);
   const model = normalizeModel(value.model);
   const source = normalizeSource(value.source);
   const nodes = normalizeNodes(value.nodes);
   const nodeIds = new Set(nodes.map((node) => node.id));
   const edges = normalizeEdges(value.edges, nodeIds);
-  const dictionaries = canonicalClone(requirePlainObject(value.dictionaries, "dictionaries"));
+  const dictionaries = canonicalClone(requirePlainObject(value.dictionaries, "dictionaries"), MODEL_PACK_CANONICAL_OPTIONS);
   const indexes = buildModelIndexes(nodes, edges);
   const files = {
     [FILE_PATHS.nodes]: nodes,
@@ -885,10 +890,10 @@ function buildModelPack(input) {
     "onto2d:model-pack-manifest:v1",
     manifestHashInput(manifest)
   );
-  return deepFreeze(canonicalClone({ manifest, files }));
+  return deepFreeze(canonicalClone({ manifest, files }, MODEL_PACK_CANONICAL_OPTIONS));
 }
 function verifyModelPack(pack) {
-  const value = canonicalClone(requirePlainObject(pack, "pack"));
+  const value = canonicalClone(requirePlainObject(pack, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
   const manifest = requirePlainObject(value.manifest, "pack.manifest");
   const files = requirePlainObject(value.files, "pack.files");
   if (manifest.format !== MODEL_PACK_FORMAT || manifest.formatVersion !== MODEL_PACK_FORMAT_VERSION || manifest.schemaVersion !== MODEL_PACK_SCHEMA_VERSION || manifest.compatibility?.engineApiVersion !== MODEL_PACK_ENGINE_API_VERSION || manifest.compatibility?.modelPackFormatVersion !== MODEL_PACK_FORMAT_VERSION) {
@@ -908,7 +913,7 @@ function verifyModelPack(pack) {
     edges: files[FILE_PATHS.edges],
     dictionaries: files[FILE_PATHS.dictionaries]
   });
-  if (canonicalize(value) !== canonicalize(expected)) {
+  if (canonicalize(value, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(expected, MODEL_PACK_CANONICAL_OPTIONS)) {
     fail2("MODEL_PACK_VERIFICATION_FAILED", "Model Pack bytes, indexes, or identities differ from reconstruction.", {
       model: manifest.model?.id,
       version: manifest.model?.version
@@ -967,7 +972,7 @@ function verifyTransportFiles(values) {
   const verified = verifyModelPack({ manifest, files: packFiles });
   if (values.has("bundle.json")) {
     const bundle = verifyModelPack(values.get("bundle.json"));
-    if (canonicalize(bundle) !== canonicalize(verified)) {
+    if (canonicalize(bundle, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(verified, MODEL_PACK_CANONICAL_OPTIONS)) {
       modelPackTransportFail(
         "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH",
         "bundle.json differs from the authoritative split Model Pack files."

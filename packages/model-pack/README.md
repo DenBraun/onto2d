@@ -13,6 +13,13 @@ not redefine model semantics. Every file is content-addressed, unexpected
 paths fail closed, and verification reconstructs all indexes from nodes and
 edges.
 
+Aggregate pack canonicalization accepts up to 1,000,000 visited values so
+expanded evidence and indexes fit one verified pack. The kernel default and
+individual-record budget remain 100,000. Depth (64), per-string byte limits
+(1,048,576), and the loader/cache byte limits still apply. The aggregate profile
+is shared by construction, verification, transport comparison and cache writes;
+it does not alter canonical bytes or existing content hashes.
+
 The package is model-neutral. It does not know the Causal Emergence Catalogue,
 network aliases, UI layout, or adapter semantics. Separate Node.js and browser
 subpaths load the same transparent format without moving filesystem or network

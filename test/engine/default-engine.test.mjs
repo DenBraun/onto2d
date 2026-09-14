@@ -17,17 +17,17 @@ import { buildCanonicalRelease } from "../../models/causal-emergence/canonical/b
 test("the root facade loads the exact bundled Causal Emergence Model Pack", async () => {
   const onto = await Onto2D.create();
   assert.equal(onto.model.name, "Causal Emergence — Canonical Reconstruction");
-  assert.equal(onto.model.version, "2026.09.12.4");
+  assert.equal(onto.model.version, "2026.09.14.31");
   assert.equal(onto.modelResolution.requested, "causal-emergence@stable");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.09.12.4");
-  assert.equal(onto.model.nodes().length, 56);
-  assert.equal(onto.model.edges().length, 60);
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.09.14.31");
+  assert.equal(onto.model.nodes().length, 826);
+  assert.equal(onto.model.edges().length, 356);
   assert.equal(onto.model.get("l0:crt-node").name, "CRT carrier class — no admitted instance");
   assert.equal(onto.model.get("R-object").parents().length, 5);
-  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 48);
+  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 176);
   assert.ok(onto.model.query({ level: 0, typeRole: "construction-rule" }).length > 0);
   assert.ok(onto.model.paths({ from: "l0:oscillatory-mode", to: "l0:crt-node" }).length > 0);
-  assert.equal(canonicalize(await buildCanonicalRelease()), canonicalize(bundledCausalEmergenceModelPack));
+  assert.deepEqual(await buildCanonicalRelease(), bundledCausalEmergenceModelPack);
 });
 
 test("the historical exact version remains selectable with its original identity and semantics", async () => {
@@ -39,29 +39,6 @@ test("the historical exact version remains selectable with its original identity
   assert.equal(onto.model.edges({ relationLayer: "source-parent" }).length, 971);
   assert.ok(onto.model.query({ level: 0, phase: "C", typeRole: "Object" }).length > 0);
   assert.ok(onto.model.paths({ from: "0.0", to: "0.8" }).length > 0);
-});
-
-test("the first canonical exact version remains selectable alongside the new default", async () => {
-  const onto = await Onto2D.create({ model: "causal-emergence@2026.09.11" });
-  assert.equal(onto.model.nodes().length, 33);
-  assert.equal(onto.model.edges().length, 23);
-  assert.equal(onto.model.get("R-object").parents().length, 4);
-});
-
-test("the Level-0 relation-review edition remains selectable after the retinal pilot", async () => {
-  const onto = await Onto2D.create({ model: "causal-emergence@2026.09.12" });
-  assert.equal(onto.model.nodes().length, 34);
-  assert.equal(onto.model.edges().length, 42);
-  assert.equal(onto.model.get("ret:photochemistry"), undefined);
-});
-
-test("both retinal pilot editions remain selectable after conditional routing", async () => {
-  for (const version of ["2026.09.12.1", "2026.09.12.2"]) {
-    const onto = await Onto2D.create({ model: `causal-emergence@${version}` });
-    assert.equal(onto.model.nodes().length, 50);
-    assert.equal(onto.model.edges().length, 57);
-    assert.equal(onto.model.get("ret:primate-off-readout"), undefined);
-  }
 });
 
 test("the historical release is an exact reproduction of preserved source bytes", async () => {
@@ -80,10 +57,11 @@ test("the historical release is an exact reproduction of preserved source bytes"
   assert.equal(expectedAudit.summary.nontrivialSccCount, 3);
 });
 
-test("the bounded Node loader accepts the committed split Causal Emergence release", async () => {
+test("the Node loader accepts the current release with an explicit 32 MiB file budget", async () => {
   const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
   const loaded = await loadModelPackDirectory(
-    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.09.12.4")
+    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.09.14.31"),
+    { maxFileBytes: 32 * 1024 * 1024 }
   );
   assert.equal(loaded.manifest.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
   assert.equal(loaded.manifest.manifestHash, bundledCausalEmergenceModelPack.manifest.manifestHash);

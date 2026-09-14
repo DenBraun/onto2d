@@ -30,3 +30,18 @@ test("compatible replay still requires every scientific field and local artifact
   assert.throws(() => validateReplayContent(original, seal({ implementation: current, score: -0.2, localDetailsSha256: "a".repeat(64) })), /Scientific replay content/);
   assert.throws(() => validateReplayContent(original, { ...original, score: 0.2 }), /digest differs/);
 });
+
+test("an added runtime helper requires its exact digest and cannot replace or remove an original binding", () => {
+  const added = { ...current, "capacity.js": "e".repeat(64) };
+  const extended = { ...receipt, addedFiles: { "capacity.js": added["capacity.js"] } };
+  assert.doesNotThrow(() => validateCompatibility(recorded, added, extended, reportSha256));
+  assert.throws(() => validateCompatibility(recorded, added, receipt, reportSha256), /file population/);
+  assert.throws(() => validateCompatibility(recorded, current, extended, reportSha256), /file population/);
+  assert.throws(() => validateCompatibility(recorded, { ...added, "extra.js": "f".repeat(64) }, extended, reportSha256), /file population/);
+  assert.throws(() => validateCompatibility(recorded, { ...added, "capacity.js": "f".repeat(64) }, extended, reportSha256), /Added implementation differs/);
+  assert.throws(() => validateCompatibility(recorded, added, extended, "f".repeat(64)), /exact frozen report/);
+  assert.throws(() => validateCompatibility(recorded, added, { ...extended, addedFiles: { "model.mjs": recorded["model.mjs"] } }, reportSha256), /already existed/);
+  assert.throws(() => validateCompatibility(recorded, added, { ...extended, addedFiles: { "capacity.js": "unverified" } }, reportSha256), /Invalid added implementation digest/);
+  const removed = { ...added }; delete removed["model.mjs"];
+  assert.throws(() => validateCompatibility(recorded, removed, extended, reportSha256), /file population/);
+});

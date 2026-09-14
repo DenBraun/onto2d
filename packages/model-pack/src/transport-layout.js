@@ -1,4 +1,5 @@
 import { canonicalize } from "@onto2d/kernel/canonical";
+import { MODEL_PACK_CANONICAL_OPTIONS } from "./canonical-options.js";
 import {
   ModelPackError,
   modelPackFilePaths,
@@ -59,7 +60,7 @@ export function verifyTransportFiles(values) {
   const verified = verifyModelPack({ manifest, files: packFiles });
   if (values.has("bundle.json")) {
     const bundle = verifyModelPack(values.get("bundle.json"));
-    if (canonicalize(bundle) !== canonicalize(verified)) {
+    if (canonicalize(bundle, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(verified, MODEL_PACK_CANONICAL_OPTIONS)) {
       modelPackTransportFail(
         "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH",
         "bundle.json differs from the authoritative split Model Pack files."

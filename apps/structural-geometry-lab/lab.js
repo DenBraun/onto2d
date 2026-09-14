@@ -1,5 +1,5 @@
-import { RELEASE } from "./release.js?v=20260909.2";
-import { REGIMES, SCENES, VIEWS, selection, rational, format, replayScore, pairedGain, verifyEvidence, frameAt, fetchPinned } from "./model.js?v=20260909.2";
+import { RELEASE } from "./release.js?v=20260913.1";
+import { REGIMES, SCENES, VIEWS, selection, rational, format, replayScore, pairedGain, verifyEvidence, frameAt, fetchPinned } from "./model.js?v=20260913.1";
 const $ = id => document.getElementById(id);
 const el = (tag, text, className) => { const n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (className) n.className = className; return n; };
 const option = (value, text) => { const n = el("option", text); n.value = value; return n; };

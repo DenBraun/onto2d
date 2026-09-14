@@ -1,64 +1,32 @@
-# Canonical reconstruction validation record
+# Current canonical validation
 
-Validation completed 2026-09-12 for research release `2026.09.11`.
-The [source guide](../../../references/canonical/README.md) explains the
-scientific scope, construction decisions and remaining obligations.
-
-## Exact artifact
-
-The [manifest](../releases/2026.09.11/manifest.json) binds 25 local source and
-implementation files. The release contains 33 specification records and 23
-rule incidences, derived from 27 concepts, six proposed rules and 41 scoped
-claims. Its bibliography has 18 source records, including two external
-research publications; source records also include manuscripts, internal
-checks, numerical evidence and the preserved legacy catalogues.
+Current graph: `2026.09.14.31`, checked on 14 September 2026.
+The [manifest](../releases/2026.09.14.31/manifest.json) binds 83 source and
+implementation files: 826 records, 356 connections, 749 claims and 294 sources.
+Connections comprise 176 descriptive dependencies and 180 functional relations
+with declared experimental scope.
 
 ```text
-rootHash: sha256:91eeb207dc0deab775985da6bcb06ce26adfe5780ddeb0fa88144c4d283034cb
-manifestHash: sha256:3042b6ca258eac6360552a8716a3b98b1155713cfa5097600a164d1c05cf96db
+rootHash: sha256:eaf1367fa046ad27a33023c466dd4814a92485831693468b91dba0b72720edd7
+manifestHash: sha256:088a5709b7319f8060f17d380504b22a7d3745cce1d24e332c4548a22737edea
 ```
 
-All 12 historical reference files and all 12 files of the `2026.08.15`
-release were compared byte-for-byte with Git `HEAD` and matched. The new
-migration ledger accounts for all 249 legacy nodes and 971 incoming edges.
-It records 24 reinterpreted nodes, 225 pending node reviews and 971 pending
-historical edge decisions. Its accounting is checked against the original
-JSON pointers, with reciprocal entity mappings for both splits.
+| Check | Result |
+| --- | --- |
+| Physics contracts | All 33 tests passed |
+| Full workspace tests | All 1904 tests passed, with no failures or skipped tests |
+| Repository build | All checks passed, including structural geometry, schemas, kernel closure, documentation and catalogue audit |
+| Canonical output | Exact reproduction and pinned hashes verified; 21 registry entries |
+| Public interface | Studio module revision 20260914.33 and 21 aligned dependencies verified; CSS revision 20260913.1 |
+| Browser | 22 neutron records and their connections checked at desktop and mobile widths; all 47 physics entries present; five JSON downloads match current data; four screenshots inspected; no runtime exceptions or horizontal overflow |
+| Research inputs | All 61 local source hashes match; the supplied Formal Core document is unchanged |
 
-## Checks performed
+Software checks and source hashes do not establish whole-graph scientific
+validity. Neutron lifetimes remain published inferences conditional on storage
+losses, detector corrections and shared-data uncertainty. Raw acquisition,
+covariance and the full systematic budget have not been independently
+reproduced; the published mean detector-uniformity correction is unresolved.
 
-| Check | Result and boundary |
-|---|---|
-| `npm test` | Final complete rerun passed: 1,809 tests, zero failures, approximately 434 seconds |
-| Focused source, engine, selection, evidence-link and public-site tests | 80 tests passed after the final source and interface corrections |
-| `npm run check:canonical` | Closed schema, source hashes, citation and rule references, status constraints, migration coverage, finite mathematical witnesses and exact derivative replay passed |
-| `npm run model:causal-emergence:legacy:verify` | Exact historical source-to-release reproduction passed |
-| `npm run case:level-0:verify` | Reproduced the frozen portable v3 case with the same model-specific negative objecthood conclusion |
-| Headless Chrome, local HTTP, 1500 × 1100 viewport | Loaded `R-promote` with 33 records / 23 incidences, exposed publication and repository links, received HTTP 200 for linked local sources, switched to the 249 / 971 historical release, restored the canonical default; no runtime exceptions or horizontal body overflow |
-| Registry and public module checks | 21 exact releases; Studio revision `20260911.4`, with 21 aligned module dependencies and the current registry hash |
-| Schema and kernel contract checks | 217 public schemas; 195 implemented kernel capabilities, zero pending, 372 mapped kernel tests |
-
-The initial `npm run build` passed its preceding stages but stopped at an
-Ollivier Python-oracle timeout in the existing LRU-cache test. The complete
-Ollivier stage was rerun through `node scripts/check-structural-ollivier.mjs`:
-all 26 tests passed in approximately seven seconds. No solver deadline or
-numeric expectation was changed. The timeout did not recur; its underlying
-environmental cause was not established.
-
-Every remaining build stage then passed: shadow flow, Structural Geometry
-site replay, exact registry, canonical reconstruction, public schemas, kernel
-closure, documentation and historical catalogue audit. Source syntax and
-public module revisions were checked again. Thus the build check set is
-covered by the initial run plus the successful retry and continuation; this
-record does **not** describe a single uninterrupted successful `npm run build`
-invocation. `npm run build` remains the command for replaying the entire set.
-
-## Scientific acceptance boundary
-
-These checks establish reproducibility and the declared finite witnesses.
-They do not automatically verify scientific prose, establish physical CRT
-instances, supply independent peer review, classify all historical edges, or
-complete the remaining levels. Rules in this release are specifications with
-joint conditions and no admitted instances. A source DOI is a locator, not
-evidence that a manuscript passed peer review. The exact limitations and
-roles of each citation remain part of the source records and Inspector.
+There are 197 unfinished [source cards](../../../references/canonical/pending-review.json).
+The [roadmap](../../../docs/ROADMAP.md) identifies current work. Formal Core
+implementation remains deferred.

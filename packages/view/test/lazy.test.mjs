@@ -92,6 +92,24 @@ test("bounded graph projections remain layout-ready without carrying full record
   assert.ok(layout.edges.every((edge) => typeof edge.path === "string"));
 });
 
+test("relation meaning survives the bounded projection without copying its evidence payload", async () => {
+  const input = {
+    identity, nodes,
+    edges: [{ ...edges[0], relationLayer: "descriptive", role: "interpretation-dependency",
+      assertion: "The estimate uses a stated model assumption.", rationale: [{ statement: "Full scientific evidence" }] }]
+  };
+  const view = createLazyModelPresentation(input);
+  const graph = view.neighborhood({ focusId: "a", depth: 1 });
+  assert.equal(graph.edges[0].role, "interpretation-dependency");
+  assert.equal(graph.edges[0].assertion, input.edges[0].assertion);
+  assert.equal(JSON.stringify(graph).includes("Full scientific evidence"), false);
+  const projected = layoutNeighborhood(graph, { width: 800, height: 480 }).edges[0];
+  assert.equal(projected.assertion, input.edges[0].assertion);
+  const schema = JSON.parse(await readFile(new URL("../../schemas/schemas/model-presentation-projection.schema.json", import.meta.url), "utf8"));
+  const validate = new Ajv2020({ allErrors: true, strict: false, validateFormats: false }).compile(schema);
+  assert.equal(validate(graph), true, JSON.stringify(validate.errors));
+});
+
 test("lazy presentation rejects ambiguous options and accessor-bearing input without invoking accessors", () => {
   let invoked = false;
   const accessorIdentity = { ...identity };

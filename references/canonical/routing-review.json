@@ -1,7 +1,7 @@
 {
   "id": "retinal-routing-review-v1",
   "policyId": "retinal-routing-policy-v1",
-  "policySha256": "325066a196f9b5167dc1ca848b56f275b5af4c5f1b432ef78f49eed5c5b2a3a6",
+  "policySha256": "7ff4d768f63467e5553d6a4055ebe6db3986e4eea32bdf7184ed76ab6b993cf1",
   "reviewStatus": "internal-retrospective-review",
   "independentScientificReviewComplete": false,
   "studies": [
@@ -813,10 +813,9 @@
     }
   ],
   "openObligations": [
-    "No relation joins the earlier toad rod-current, macaque cone/midget filtering, or intrinsic mouse ipRGC fragments to these experiments.",
+    "Establish a matched preparation before connecting rod-current, cone/midget filtering, intrinsic ipRGC and pathway-routing results.",
     "Obtain sample-level responses and uncertainty before estimating quantitative pathway contributions.",
     "Resolve secondary versus tertiary routing under matched preparation and selective interventions.",
-    "Review newer adaptation-dependent experiments before extending to other illumination or spatial protocols.",
-    "No extra legacy card or assertion has received a disposition in this extension."
+    "Review newer adaptation-dependent experiments before extending to other illumination or spatial protocols."
   ]
 }

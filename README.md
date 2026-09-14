@@ -69,13 +69,9 @@ the root `onto2d` package is private and has not been published to npm.
 
 ### Read a canonical construction rule and its premises
 
-`Onto2D.create()` loads the canonical research reconstruction, version
-`2026.09.12.4`. It records Level-0 definitions and proposed construction
-rules alongside scoped optical/retinal findings. It does not assert successful
-physical CRT instances or whole-graph empirical validation. See the [source and review ledger](references/canonical/README.md).
-The [dictionary review](references/canonical/DICTIONARY_REVIEW.md) supplies
-scoped vocabulary, mathematical corrections and a complete quantitative census;
-unjustified numerical defaults do not enter active graph semantics.
+`Onto2D.create()` loads the current Causal Emergence graph (`2026.09.14.31`).
+The graph is being reconstructed; its scope and evidence are documented in the
+[source documentation](references/canonical/README.md).
 
 ```js
 import { Onto2D } from "onto2d";
@@ -95,15 +91,12 @@ console.log("Direct parent IDs:", parents.map(parent => parent.id).join(", "));
 Expected output:
 
 ```text
-Causal Emergence — Canonical Reconstruction: 56 nodes, 60 connections
+Causal Emergence — Canonical Reconstruction: 826 nodes, 356 connections
 Test localized objecthood
 Direct parent IDs: l0:deformation, l0:integrated-density, l0:local-density, l0:nonlinear-action, l0:triad-configuration
 ```
 
 Each premise can be inspected with its claim rationale, citations and limits.
-The historical catalogue remains available through
-`Onto2D.create({ model: "causal-emergence@2026.08.15" })` with its original
-249 records and 971 source-parent assertions.
 
 ### Check whether two directed graphs have the same structure
 

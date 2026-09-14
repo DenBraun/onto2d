@@ -26,8 +26,6 @@ async function collectMarkdown(relativePath) {
   for (const entry of entries) {
     if (entry.isDirectory() && IGNORED_DIRECTORIES.has(entry.name)) continue;
     const child = path.join(absolutePath, entry.name);
-    // Historical evidence keeps its bytes and original link context; check its current guide.
-    if (entry.isDirectory() && /^models\/causal-emergence\/source-snapshots\/[^/]+\/files$/.test(path.relative(REPOSITORY_ROOT, child).split(path.sep).join("/"))) continue;
     if (entry.isDirectory()) {
       result.push(...await collectMarkdown(path.relative(REPOSITORY_ROOT, child)));
     } else if (entry.isFile() && entry.name.endsWith(".md")) {

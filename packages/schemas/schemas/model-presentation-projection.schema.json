@@ -169,6 +169,8 @@
         "source": { "type": "string", "minLength": 1, "maxLength": 1024 },
         "target": { "type": "string", "minLength": 1, "maxLength": 1024 },
         "relationLayer": {},
+        "role": { "type": "string" },
+        "assertion": { "type": "string" },
         "dependencyType": {},
         "necessity": {},
         "weight": {}

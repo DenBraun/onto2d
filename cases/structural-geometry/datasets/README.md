@@ -174,7 +174,8 @@ and implementation changes during execution fail the run.
 `replay` repeats the complete native scan and computations and compares the
 committed scientific census and local artifact hashes exactly. The
 [runtime compatibility receipts](../runtime-compatibility.json) retain the
-original report bytes while pinning reviewed portability replacements; they
+original report bytes while pinning reviewed runtime replacements and exact
+added-helper digests; missing original or unlisted new files still fail. They
 permit no scientific-content change. `check` needs no corpus: it checks the report's
 payload digest, source-lock identity and case/runtime implementation hashes.
 This static check does not independently rerun the sources or numerical work.

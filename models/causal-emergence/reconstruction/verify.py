@@ -160,9 +160,7 @@ def mathematical_witnesses():
 
 def run():
     inventory = read_json(HERE/'source-review.json')
-    proposal = read_json(HERE/'level-0-proposal.json')
-    require(proposal['status'] == 'reviewable-proposal-not-active-model-pack', 'Wrong proposal status')
-    identities = [inventory['archive'], *inventory['papers'], proposal['source'], *proposal['caseEvidence']]
+    identities = [inventory['archive'], *inventory['papers']]
     for record in identities:
         verify_identity(record)
     with zipfile.ZipFile(ROOT/inventory['archive']['path']) as archive:
@@ -179,44 +177,10 @@ def run():
             require(record['reviewedLines'] == [1,line_count] and record['lineCount'] == line_count,
                     'Archive review range does not cover member')
 
-    source = read_json(ROOT/proposal['source']['path'])
-    require(len(source) == 24, 'This proposal covers the historical 24-record Level 0')
-    source_nodes = {f"{n['Level']}.{n['Id']}": (i,n) for i,n in enumerate(source)}
-    mappings = proposal['legacyNodeMappings']
-    require(len(mappings) == len(source_nodes) and {m['legacyCode'] for m in mappings} == set(source_nodes),
-            'Legacy node coverage differs')
-    entity_ids = [e['id'] for e in proposal['entities']]
-    require(len(entity_ids) == len(set(entity_ids)), 'Duplicate proposed entity ID')
-    for mapping in mappings:
-        i, node = source_nodes[mapping['legacyCode']]
-        require(mapping['jsonPointer'] == f'/{i}' and mapping['legacyName'] == node['Name']
-                and mapping['cataloguePhase'] == node['Phase'], 'Incorrect source node locator/identity')
-        require(mapping['proposedEntityIds'] and set(mapping['proposedEntityIds']) <= set(entity_ids),
-                'Unresolved proposed entity mapping')
-    expected_relations = [(f"{p['ParentCode']}->0.{n['Id']}", f'/{i}/Parents/{j}')
-                          for i,n in enumerate(source) for j,p in enumerate(n['Parents'])]
-    actual_relations = [(e['id'],e['jsonPointer']) for e in proposal['legacyRelationInventory']]
-    require(actual_relations == expected_relations and len(actual_relations) == 84, 'Legacy edge coverage differs')
-    require(all(e['id'] == f"{e['parentCode']}->{e['childCode']}" for e in proposal['legacyRelationInventory']),
-            'Incorrect relation endpoint fields')
-    claims = proposal['claims']
-    claim_ids = {c['id'] for c in claims}
-    require(len(claim_ids) == len(claims), 'Duplicate claim ID')
-    require(all(set(c['entityIds']) <= set(entity_ids) for c in claims), 'Unresolved claim target')
-    require(all(c['source'] == 'topology' and all(1 <= p <= 36 for p in c['pages']) for c in claims),
-            'Invalid paper locator')
-    rules = proposal['constructionRules']
-    require(len({r['id'] for r in rules}) == len(rules), 'Duplicate construction rule ID')
-    for rule in rules:
-        require(set(rule['inputEntityIds']+rule['outputEntityIds']) <= set(entity_ids), 'Unresolved rule entity')
-        require(set(rule['sourceClaims']) <= claim_ids and rule['conditions'], 'Unresolved or empty rule')
-
-    result = {'status':'proposal-accounting-and-mathematical-witnesses-checked',
+    result = {'status':'source-identities-and-mathematical-witnesses-checked',
               'filesBound':len(identities), 'archiveTextMembers':len(reviewed_members),
-              'legacyNodes':len(mappings), 'legacyRelations':len(actual_relations),
-              'proposedEntities':len(entity_ids), 'claims':len(claims), 'rules':len(rules),
               'mathematicalWitnesses':mathematical_witnesses(),
-              'limits':'No physical validation, full PDF proof verification, exhaustive relation review or solver replay is claimed.'}
+              'limits':'Finite mathematical witnesses and source identities only; no physical validation or solver replay is claimed.'}
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 

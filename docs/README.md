@@ -1,9 +1,7 @@
 # Documentation
 
 Onto2D is in development, before its first project release. These documents
-describe current contracts, evidence and planned work. Git preserves development
-history; resolved fixes and completed implementation diaries do not need
-separate documents.
+describe current contracts, evidence and planned work.
 
 ## Choose a starting point
 
@@ -17,7 +15,7 @@ separate documents.
 | Understand numeric policies and expressions | [Numerics](architecture/NUMERICS.md) |
 | Understand filtering, admission, closure and pruning | [Execution](architecture/EXECUTION.md) |
 | Understand verified artifacts and null-model evidence | [Evidence](architecture/EVIDENCE.md) |
-| Review catalogue classification and source migration | [Source policy](architecture/SOURCE_POLICY.md) |
+| Review source evidence and classification | [Source policy](architecture/SOURCE_POLICY.md) |
 | Integrate Model Packs, engine, loaders, cache or Studio | [Engine](architecture/ENGINE.md) |
 | Import and map RDF with the closed SHACL profile | [RDF](architecture/RDF.md) |
 | Understand the foundational paper and its limits | [Foundations](architecture/FOUNDATIONS.md) |
@@ -26,6 +24,9 @@ separate documents.
 | Explore the Structural Geometry page and reproduce its data | [Lab guide](../apps/structural-geometry-lab/README.md) |
 | Work on Structural Geometry | [Structural Geometry](structural-geometry/README.md) |
 | Review the unimplemented Model Pack format proposal | [Model Pack v2](model-pack-v2/README.md) |
+| Review the supplied Formal Core proposal and current graph boundary | [Original proposal](ONTO2D_FORMAL_CORE.md), [source readiness](../references/canonical/SOURCE_READINESS.md) |
+| Review the optical source reconstruction and its evidence limits | [Material optics](../references/canonical/OPTICAL_REVIEW.md), [complete ledger](../references/canonical/optical-review.json) |
+| Review visual relay, cortical organization and feedback | [Visual pathways](../references/canonical/VISUAL_REVIEW.md), [complete ledger](../references/canonical/visual-review.json) |
 
 ## Documentation ownership
 

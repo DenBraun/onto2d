@@ -83,7 +83,7 @@ test("switching models cannot reuse a node selection from another model", () => 
 });
 
 test("the explicit Studio default survives registry canonical sorting and respects exact historical URLs", () => {
-  const preferred = { modelId: "causal-emergence", version: "2026.09.12.4" };
+  const preferred = { modelId: "causal-emergence", version: "2026.09.14.31" };
   const sorted = [{ modelId: "airflow", version: "v1" }, entries[0], preferred];
   assert.equal(requestedRegistryEntry(sorted, new URLSearchParams(), preferred), preferred);
   assert.equal(requestedRegistryEntry(sorted, new URLSearchParams({ model: "causal-emergence", version: "2026.08.15" }), preferred), entries[0]);
@@ -105,6 +105,17 @@ test("all exact registry releases open through the same verified presentation bo
     assert.ok(presentation.catalog({ limit: 1 }).items.length === 1);
     presentation.close();
   }
+});
+
+test("the shipped Studio pin resolves the canonical registry and its actual default", async () => {
+  const source = await readFile(new URL("apps/model-studio/model-studio.js", REPOSITORY_ROOT), "utf8");
+  const expectedRegistryHash = source.match(/const EXPECTED_REGISTRY_HASH = "([^"]+)";/)?.[1];
+  const defaults = source.match(/const DEFAULT_MODEL_SELECTION = Object.freeze\(\{ modelId: "([^"]+)", version: "([^"]+)" \}\);/);
+  assert.ok(expectedRegistryHash && defaults, "Missing shipped registry pin or default selection");
+  const resolved = resolveModelPackRegistry(await json("models/registry.json"), "https://onto2d.dev/models/registry.json", {
+    modelId: defaults[1], version: defaults[2]
+  }, { expectedRegistryHash });
+  assert.equal(resolved.registryHash, expectedRegistryHash);
 });
 
 test("an invalid external pack is rejected before presentation", async () => {

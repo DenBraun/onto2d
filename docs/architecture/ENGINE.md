@@ -77,7 +77,7 @@ child traversal, ancestors, descendants, bounded neighborhoods, and bounded
 all-shortest directed paths. It does not assign new scientific meaning to
 source relations.
 
-The current default is `causal-emergence@2026.09.12.4`, a partial research
+The current default is `causal-emergence@2026.09.14.31`, a partial research
 reconstruction. `stable` identifies the bundled software artifact, not
 scientific confirmation. Select `causal-emergence@2026.08.15` explicitly for
 the historical 249-record catalogue and its original source-parent semantics.
@@ -366,13 +366,6 @@ Load zero, or evidence of formation. The fixture proves the boundary and is not
 a general RDF ontology mapper, a W3C conformance test, or an independently
 reviewed scientific dataset.
 
-The bundled Causal Emergence pack is compiled reproducibly from the preserved
-`references/` snapshot. Its 971 relations are labelled `source-parent`: they have not
-yet passed reviewed migration into a stronger generative relation. The pack
-also records the current catalogue audit, including three known weight-sum
-anomalies and uncovered requirements. Compilation does not silently repair
-those source facts.
-
 <a id="engine-and-model-pack-architecture--state-and-comparison"></a>
 
 ### State and comparison
@@ -405,19 +398,20 @@ Deferred engineering work is listed in the
 
 ## Model Pack and Engine Foundation
 
-Add two inward-facing packages:
+Two packages provide the model boundary:
 
 - `@onto2d/model-pack` builds and verifies transparent, canonical Model Packs;
 - `@onto2d/engine` exposes exact-version model access, traversal, workspaces,
   registered analyses, and structural diff without embedding a catalogue.
 
-The private root facade composes the generic engine with one frozen Causal
-Emergence pack. `rootHash` binds semantic files, compatibility, and exact
+The private root facade composes the generic engine with the current canonical
+graph and the original catalogue used by research cases. `rootHash` binds semantic files, compatibility, and exact
 source; `manifestHash` additionally binds release metadata and derived indexes.
 Indexes are always rebuilt during verification.
 
-Current catalogue relations are published as `source-parent`, not as reviewed
-generative edges. Diff does not infer lineage and reports it as undeclared.
+Canonical relations retain their declared descriptive or functional-support
+roles and evidence scope. Diff reports lineage as undeclared unless an explicit
+lineage record is supplied.
 
 <a id="lineage-local-loading-and-first-registered-analysis"></a>
 
@@ -701,6 +695,10 @@ the original `data` records. Limits, input shapes, unknown fields, accessors,
 prototype-sensitive keys, closure, and missing nodes fail with stable
 `ViewError` codes. Descriptor and projection envelopes have published JSON
 Schemas.
+
+Neighborhood edges retain optional string `role` and `assertion` fields.
+Studio uses them in accessible edge labels and tooltips, alongside the declared
+relation layer; absent numerical weights are not displayed as inferred values.
 
 The view package still does not authenticate its input. Add the browser-safe
 `@onto2d/engine/presentation` bridge as the authoritative constructor for

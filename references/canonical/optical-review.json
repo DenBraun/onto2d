@@ -1,0 +1,91 @@
+{
+  "id": "optics-evidence",
+  "independentScientificReviewComplete": false,
+  "studies": [
+    {
+      "id": "hanssen2001",
+      "sourceId": "hanssen2001",
+      "studyType": "primary-experiment",
+      "doi": "10.1364/ao.40.003196",
+      "pmid": "11958259",
+      "journal": "Applied Optics",
+      "volume": "40",
+      "issue": "19",
+      "pages": "3196-3204",
+      "organism": "Not applicable: Specified Si, ZnSe, KRS-5 and MgF2 windows; Au mirror",
+      "preparation": "FTIR integrating-sphere measurements with the declared incident and collection geometry",
+      "observable": "Spectral reflectance and transmittance; absorptance inferred from balance",
+      "finding": "Reported aggregate reflection and transmission depend on the specified sample and measurement conditions.",
+      "limitations": [
+        "The source discusses instrumental structure and contaminants; spectra are not digitized here.",
+        "No full BRDF, microscopic necessity or matched retinal transfer is established."
+      ],
+      "readExtent": "selected-full-text-passages",
+      "reviewedLocators": [
+        "Abstract",
+        "Sections 2 and 4, pp. 3197-3200: sample, beam and measurement geometry",
+        "Section 6, pp. 3201-3203, Figures 6-8: results and limitations",
+        "Section 7, pp. 3203-3204: discussion and scope"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/11958259/",
+      "correctionCheck": "NIST publication record, publisher PDF and PubMed metadata checked; no exhaustive correction/retraction search."
+    },
+    {
+      "id": "pope1997",
+      "sourceId": "pope1997",
+      "studyType": "primary-experiment",
+      "doi": "10.1364/ao.36.008710",
+      "pmid": "18264420",
+      "journal": "Applied Optics",
+      "volume": "36",
+      "issue": "33",
+      "pages": "8710-8723",
+      "organism": "Not applicable: Pure liquid water as reported in the abstract",
+      "preparation": "Integrating-cavity technique; detailed preparation not yet reviewed",
+      "observable": "Reported wavelength-dependent absorption coefficient in the visible range",
+      "finding": "The paper reports an absorption spectrum from 380 to 700 nm.",
+      "limitations": [
+        "Only the abstract was reviewed; coefficient values and uncertainty are not admitted.",
+        "Quickenden et al. (2000) criticize uncertainty/purification and Fry (2000) replies; full adjudication remains open."
+      ],
+      "readExtent": "abstract-and-bibliographic-metadata",
+      "reviewedLocators": [
+        "Abstract"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/18264420/",
+      "correctionCheck": "Located criticism DOI 10.1364/ao.39.002740 and reply DOI 10.1364/ao.39.005843; read abstracts and metadata. Not an exhaustive correction/retraction search."
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "optical-forward-inverse",
+      "candidate": "Integrated response uniquely identifies surface geometry.",
+      "alternative": "Different angular responses can share an integrated flux fraction.",
+      "sourceIds": [],
+      "discriminator": "A frozen angular dataset and inverse model with observation bounds.",
+      "result": "not-tested",
+      "limit": "A synthetic integration counterexample is executed separately; no empirical graph-ranking comparison was performed."
+    },
+    {
+      "id": "optical-retinal-transfer",
+      "candidate": "The reviewed optical and retinal studies form one measured cascade.",
+      "alternative": "Different sample, spectral and preparation boundaries prevent that identification.",
+      "sourceIds": [],
+      "discriminator": "Matched source, material path, retinal preparation and transmitted field/readout.",
+      "result": "not-tested",
+      "limit": "No common experimental transfer protocol has been supplied."
+    }
+  ],
+  "openObligations": [
+    "Complete the water-method and published-dispute review before numerical calibration.",
+    "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
+    "Test the external-parent mechanisms and obtain matched optical/retinal evidence; other Level-2 cards remain pending."
+  ],
+  "checkIds": [
+    "angular-integral-not-inversion",
+    "coefficient-not-absorptance",
+    "balance-retains-covariance"
+  ]
+}

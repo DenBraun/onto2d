@@ -37,7 +37,7 @@ case or app from the site navigation after the checks pass.
 | `npm run check:worker` | Reproducible browser worker bundle |
 | `npm run audit:catalogue` | Preserved source-catalogue audit |
 | `npm run audit:references` | Complete legacy source JSON census, schema defects, missing bibliography and dictionary consistency; diagnostic, not a clean-data gate |
-| `npm run check:canonical` | Active source schema, claim/migration/dictionary accounting, mathematical witnesses, quantitative census, retinal data and exact current/historical release replay |
+| `npm run check:canonical` | Current source schema, claim and vocabulary contracts, mathematical witnesses, retinal data and exact current output verification |
 | `npm run model:causal-emergence:legacy:verify` | Exact reproduction of the historical `2026.08.15` catalogue |
 | `npm run structural-geometry:check` | Combined geometry evidence and independent references |
 | `npm run structural-geometry:added-value:check` | Frozen synthetic added-value study, coverage and baselines |
@@ -57,7 +57,9 @@ Use `npm run` or [package.json](../package.json) for the complete command list.
 2. For semantic behavior changes, add meaningful behavioral or independent
    reference coverage. Update schemas and public declarations together.
 3. Update the owning subject guide, case README and roadmap status where needed.
-   Do not create a separate fix history, ADR or per-stage review document.
+   Describe the current design, evidence and open work. Do not record moves,
+   renames or editing chronology, or create a separate fix history, ADR or
+   per-stage review document.
 4. Review the complete diff, error/missingness paths, budgets, source binding,
    exact arithmetic, browser/Node boundaries and artifact provenance affected by
    the change. A schema-valid or self-consistently hashed artifact still needs
@@ -80,12 +82,17 @@ reported result of the prior study.
 
 The biological reports retain the implementation hashes that produced them.
 [Runtime compatibility receipts](../cases/structural-geometry/runtime-compatibility.json)
-pin narrowly reviewed portability changes to exact historical report bytes,
+pin narrowly reviewed runtime changes to exact historical report bytes,
 original and current source hashes, and the verifier itself. They do not change
 the frozen protocol, predictions or source population. Replay must still match
 every scientific field and local artifact hash; only the listed implementation
 metadata may differ. Unlisted source changes fail verification. A scientific
 change requires a separately identified study, not another portability receipt.
+Version 2 can also pin an explicitly added runtime helper by its exact digest;
+unlisted additions and all missing original files still fail. The Model Pack
+capacity receipt changes the aggregate serialization budget, not canonical
+bytes or any scientific calculation. It binds the new helper and three changed
+modules without rewriting the biological census or its source population.
 Reference cost records use `null` with `resource-module-unavailable` when Python
 cannot measure peak RSS; unavailable memory is never reported as zero.
 

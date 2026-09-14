@@ -1,0 +1,194 @@
+{
+  "id": "visual-evidence",
+  "independentScientificReviewComplete": false,
+  "studies": [
+    {
+      "id": "usrey1998",
+      "sourceId": "usrey1998",
+      "studyType": "primary-experiment",
+      "doi": "10.1038/26487",
+      "pmid": "9759728",
+      "journal": "Nature",
+      "volume": "395",
+      "issue": "6700",
+      "pages": "384-387",
+      "organism": "Cat",
+      "preparation": "Simultaneous retinal and dLGN A-lamina extracellular recordings; referenced preparation protocol not fully reviewed.",
+      "observable": "Conditional efficacy of retinal spikes in linked LGN recordings",
+      "finding": "Closely spaced retinal spikes have different conditional transfer efficacy; the extracellular result does not identify its cellular mechanism.",
+      "limitations": [
+        "No causal edge weight or carrier threshold is calibrated.",
+        "No matched transfer through the rest of the atlas is established."
+      ],
+      "readExtent": "selected-full-text-passages",
+      "reviewedLocators": [
+        "Abstract",
+        "Results, pp. 384-385: paired-spike recordings and mechanism limitation",
+        "Methods, p. 386"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/9759728/",
+      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+    },
+    {
+      "id": "reid1995",
+      "sourceId": "reid1995",
+      "studyType": "primary-experiment",
+      "doi": "10.1038/378281a0",
+      "pmid": "7477347",
+      "journal": "Nature",
+      "volume": "378",
+      "issue": "6554",
+      "pages": "281-284",
+      "organism": "Cat",
+      "preparation": "Simultaneous LGN and area 17 simple-cell recordings; full methods remain unread.",
+      "observable": "Cross-correlation-inferred connectivity and receptive-field alignment",
+      "finding": "The reported functional connections favor matching contrast sign and aligned receptive-field subregions.",
+      "limitations": [
+        "Correlation supports a bounded operating relation, not direct anatomical proof.",
+        "Development and stable map formation were not tested by this adopted result."
+      ],
+      "readExtent": "abstract-and-bibliographic-metadata",
+      "reviewedLocators": [
+        "Abstract"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/7477347/",
+      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+    },
+    {
+      "id": "hubel1968",
+      "sourceId": "hubel1968",
+      "studyType": "primary-experiment",
+      "doi": "10.1113/jphysiol.1968.sp008455",
+      "pmid": "4966457",
+      "journal": "Journal of Physiology",
+      "volume": "195",
+      "issue": "1",
+      "pages": "215-243",
+      "organism": "Macaque and spider monkeys",
+      "preparation": "Lightly anaesthetized animals; extracellular single-unit recording with visual stimuli, as described in the numbered abstract.",
+      "observable": "Orientation and ocular-dominance organization in striate cortex",
+      "finding": "The abstract reports distinct columnar organizations for orientation and ocular dominance.",
+      "limitations": [
+        "The original 1962 citation refers to cats and cannot silently acquire this DOI.",
+        "No species-general necessity or unique cortical construction rule follows."
+      ],
+      "readExtent": "abstract-and-bibliographic-metadata",
+      "reviewedLocators": [
+        "Abstract"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/4966457/",
+      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+    },
+    {
+      "id": "ohki2005",
+      "sourceId": "ohki2005",
+      "studyType": "primary-experiment",
+      "doi": "10.1038/nature03274",
+      "pmid": "15660108",
+      "journal": "Nature",
+      "volume": "433",
+      "issue": "7026",
+      "pages": "597-603",
+      "organism": "Rat V1; cat area 18 comparison",
+      "preparation": "In vivo two-photon calcium imaging; full preparation not reviewed.",
+      "observable": "Orientation selectivity and local spatial arrangement",
+      "finding": "Rat V1 shows orientation selectivity without discernible local organization at the reported scale; the cat comparison concerns area 18.",
+      "limitations": [
+        "This limits a universal local-map claim, not the existence of every possible organization.",
+        "No direct spike measurement or developmental mechanism is inferred."
+      ],
+      "readExtent": "abstract-and-bibliographic-metadata",
+      "reviewedLocators": [
+        "Abstract"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/15660108/",
+      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+    },
+    {
+      "id": "denman2015",
+      "sourceId": "denman2015",
+      "studyType": "primary-experiment",
+      "doi": "10.1523/JNEUROSCI.0027-15.2015",
+      "pmid": "26109652",
+      "journal": "Journal of Neuroscience",
+      "volume": "35",
+      "issue": "25",
+      "pages": "9265-9280",
+      "organism": "GN220-Ntsr1 Cre mouse",
+      "preparation": "Selective optogenetic manipulation of layer 6 corticogeniculate projections; behavioral/anesthetic state not verified in the read passages.",
+      "observable": "dLGN visually evoked responses under projection manipulation",
+      "finding": "Removing cortical input produces increases or decreases depending on cell and contrast; driving input reduces evoked counts.",
+      "limitations": [
+        "No universal positive gain or necessary rhythm mechanism is established.",
+        "Feedback is cortex to thalamus; this does not establish the historical reverse dependency."
+      ],
+      "readExtent": "abstract-metadata-and-selected-figure-legends",
+      "reviewedLocators": [
+        "Abstract",
+        "Figure legends 1-3"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/26109652/",
+      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+    },
+    {
+      "id": "moore2003",
+      "sourceId": "moore2003",
+      "studyType": "primary-experiment",
+      "doi": "10.1038/nature01341",
+      "pmid": "12540901",
+      "journal": "Nature",
+      "volume": "421",
+      "issue": "6921",
+      "pages": "370-373",
+      "organism": "Primate (PubMed Haplorhini indexing); exact species not verified",
+      "preparation": "FEF stimulation below the saccade threshold with V4 recordings; full methods not reviewed.",
+      "observable": "V4 visual responses during frontal-eye-field microstimulation",
+      "finding": "Retinotopically corresponding stimulation enhances V4 responses; noncorresponding stimulation can suppress them.",
+      "limitations": [
+        "Effects depend on stimulus configuration.",
+        "A feedback intervention does not establish decision-making necessity or predictive coding."
+      ],
+      "readExtent": "abstract-and-bibliographic-metadata",
+      "reviewedLocators": [
+        "Abstract"
+      ],
+      "metadataCheckedAt": "2026-09-13",
+      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/12540901/",
+      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "visual-map-universality",
+      "candidate": "Orientation selectivity requires a discernible local feature map in every mammal.",
+      "alternative": "Selectivity and its local spatial organization are separate observables.",
+      "sourceIds": [
+        "ohki2005"
+      ],
+      "discriminator": "Cell-resolved orientation selectivity and spatial arrangement in the same preparation.",
+      "result": "universal-claim-contradicted-in-reviewed-preparation",
+      "limit": "Limited to the reported rat V1 imaging scale; not a claim of absent organization at every scale."
+    },
+    {
+      "id": "visual-prediction-feedback",
+      "candidate": "A feedback response identifies predictive coding as the unique mechanism.",
+      "alternative": "Feedback effects can be observed without identifying a prediction-error computation.",
+      "sourceIds": [],
+      "discriminator": "A frozen competing-model test with separately manipulated expectations and attention and specified neural readouts.",
+      "result": "not-tested",
+      "limit": "No graph-ranking experiment or model discrimination was executed here."
+    }
+  ],
+  "openObligations": [
+    "Read remaining full methods and verify preparation state and exact species before extending the abstract-scoped findings.",
+    "Review corrections and replications systematically before quantitative calibration.",
+    "Test development, external-parent necessity and competing computational mechanisms with matched interventions.",
+    "Obtain matched preparations before interpreting any optical-retinal-thalamocortical atlas path as one observed cascade."
+  ],
+  "checkIds": []
+}

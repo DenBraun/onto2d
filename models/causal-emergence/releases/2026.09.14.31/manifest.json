@@ -1,0 +1,414 @@
+{
+  "compatibility": {
+    "engineApiVersion": "1",
+    "modelPackFormatVersion": "1"
+  },
+  "format": "onto2d-model-pack",
+  "formatVersion": "1",
+  "indexFiles": [
+    {
+      "hash": "sha256:f7b73aed923403af02aae3d8dc6e7aa843b6dffcdac7b26408cc7d90a7a2e6e4",
+      "id": "byId",
+      "path": "indexes/by-id.json"
+    },
+    {
+      "hash": "sha256:7bde19ad641c86ec4509a64fe8df158ffa9b5682d3addbe45a243cb1393b4736",
+      "id": "parents",
+      "path": "indexes/parents.json"
+    },
+    {
+      "hash": "sha256:772d9fdfea78fd8cb056b980430fac6aa1ce614d804334f00e8bb788df71874a",
+      "id": "children",
+      "path": "indexes/children.json"
+    },
+    {
+      "hash": "sha256:a2832c4e666e4302f9304e02443d49f224b0b8be2e2410b534e602a8af39c6b9",
+      "id": "levels",
+      "path": "indexes/levels.json"
+    },
+    {
+      "hash": "sha256:a6e665f248bcdabdab9f74ff37023974dbdfd6681c94fb3680408c9c6d05db12",
+      "id": "phases",
+      "path": "indexes/phases.json"
+    },
+    {
+      "hash": "sha256:1e2efa92ae99c649b557a1e1f8cd9ba64fde03173c8cad62c25840aab21611f5",
+      "id": "typeRoles",
+      "path": "indexes/type-roles.json"
+    },
+    {
+      "hash": "sha256:7394f48cba3ecf501db6d35252109bc871b37f956e45c3e26a1b5d920d625fee",
+      "id": "scientificStatus",
+      "path": "indexes/scientific-status.json"
+    }
+  ],
+  "manifestHash": "sha256:088a5709b7319f8060f17d380504b22a7d3745cce1d24e332c4548a22737edea",
+  "model": {
+    "description": "Partial source reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural records. Formal specifications, computational models, experimental preparations, reported observations and conditional interpretations have distinct meanings and evidence. Reviewed studies retain their own systems, selections, observables, uncertainty limits and unresolved contradictions. Physical records distinguish quantum-field definitions, scattering and decay measurements, Bell tests, vacuum quantities, QCD running, lattice spectra and charge searches. Calibrated masses, detector unloading times, storage-loss rates and intrinsic-lifetime interpretations are separate quantities. Neutron survival studies retain production years, diagnostic controls, shared data and non-decay-loss corrections. Cross-domain construction, universal carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
+    "id": "causal-emergence",
+    "name": "Causal Emergence — Canonical Reconstruction",
+    "status": "research-reconstruction-partial",
+    "version": "2026.09.14.31"
+  },
+  "rootHash": "sha256:eaf1367fa046ad27a33023c466dd4814a92485831693468b91dba0b72720edd7",
+  "schemaVersion": "1",
+  "semanticFiles": [
+    {
+      "hash": "sha256:aca3c05c4ff73af12545f4674fe523a4748b483afba041cbb2205b42af9cf66b",
+      "id": "nodes",
+      "path": "model/nodes.json"
+    },
+    {
+      "hash": "sha256:060b4c783141a1adbbe0c2ccea55c5a932260e594a6c4930312547066c917f72",
+      "id": "edges",
+      "path": "model/edges.json"
+    },
+    {
+      "hash": "sha256:47b0238dd7dee3728f3a16d39692e8e5ff3525162050ab960599ceb3aaa9d86c",
+      "id": "dictionaries",
+      "path": "model/dictionaries.json"
+    }
+  ],
+  "source": {
+    "auditHash": "sha256:6aa2303d400af910fdd4405edae4b1b462c98147275b1e7da6e6c602cdc67a9b",
+    "files": [
+      {
+        "hash": "sha256:e7d8d1a41ee16fd7c4e639b0b6acc8f4f739ecb9ae90f4db866316374562f210",
+        "path": "cases/level-0-oscillator/artifacts/level-zero-validation-v3.json"
+      },
+      {
+        "hash": "sha256:86f155eb48f8292ff715e8757903e54ddfa1bebc8e8d97bcbebb9b5ef8f20bc0",
+        "path": "cases/level-0-oscillator/artifacts/reference-validation-v1.json"
+      },
+      {
+        "hash": "sha256:884369acfcfbe7cf5aa2f64ac1bc365841d8ab9499b106d32d9687834f2c9f76",
+        "path": "cases/level-0-oscillator/level-zero-validation-v3.json"
+      },
+      {
+        "hash": "sha256:0dd329510827adb6f68ce3a7455ce24c012646192948e2f21e2cc471842adbd2",
+        "path": "cases/level-0-oscillator/model-v1.json"
+      },
+      {
+        "hash": "sha256:36f1f84e067fa6d723b1bfaf2d6a4792a7b787853301356c07edaa1777f186da",
+        "path": "cases/level-0-oscillator/source-lock.json"
+      },
+      {
+        "hash": "sha256:86e53dae20c6aaf77fb3e1980cf5ccb70f680ef61166c05eabad3940dbe85e6b",
+        "path": "docs/ONTO2D_FORMAL_CORE.md"
+      },
+      {
+        "hash": "sha256:8ebe03071af3689739ee0de66f4dbac308da97ca9afae0d61cd99d3b8feb3220",
+        "path": "models/causal-emergence/canonical/build.mjs"
+      },
+      {
+        "hash": "sha256:43308b108c7cb31383c9ba74aa34efe45b0a7743ae0cdd52866d84c4a84b8c52",
+        "path": "models/causal-emergence/canonical/dictionaries.mjs"
+      },
+      {
+        "hash": "sha256:0c661f82b3ce28f0bcd3940e38543b9fa2d73abf2b4b681ac3d51c054686d8d8",
+        "path": "models/causal-emergence/canonical/dictionary-witnesses.mjs"
+      },
+      {
+        "hash": "sha256:f9e6ed3a05e3d5aa5e431a86f5422e11b4a8e47ff734e64a23e78b954689e882",
+        "path": "models/causal-emergence/canonical/geometric-model-data.mjs"
+      },
+      {
+        "hash": "sha256:aca8ace87cf8c7c40297857a14f98531071bac6cb431173624a95fbce5504621",
+        "path": "models/causal-emergence/canonical/neural.mjs"
+      },
+      {
+        "hash": "sha256:67c7a344574dc0235a8fe3ebbf8e9c4ed825c3a1045a1eedd1c85441ea2159c9",
+        "path": "models/causal-emergence/canonical/optical-witnesses.mjs"
+      },
+      {
+        "hash": "sha256:1e53eb0786ed80575945415b2b4ed33fc99848ed49ed35bba7eb7ee84986636e",
+        "path": "models/causal-emergence/canonical/optics.mjs"
+      },
+      {
+        "hash": "sha256:3cd2a4f3ca82338cb1f516a514249e19b78ae05d02a55f66189270f67ace2fd2",
+        "path": "models/causal-emergence/canonical/physics.mjs"
+      },
+      {
+        "hash": "sha256:1a6b66195a4900754e74d9fded2af5585a54a49d1ac2d763fd7e55397c45ec8d",
+        "path": "models/causal-emergence/canonical/readiness.mjs"
+      },
+      {
+        "hash": "sha256:24356889059911fa4c5d72b152ad1f6ad0e3291b3921c6fe9fb0cbd2a81fca20",
+        "path": "models/causal-emergence/canonical/retinal.mjs"
+      },
+      {
+        "hash": "sha256:47f2fecceeb8bf0e4a6fbff94b4d3381ad8088af83cd0e9bd7572faf670ac4f5",
+        "path": "models/causal-emergence/canonical/routing.mjs"
+      },
+      {
+        "hash": "sha256:f9c52f69af5586e0530cab21e0a41378ff58bb1f0c9773d9ef6f032f790d4156",
+        "path": "models/causal-emergence/canonical/source.mjs"
+      },
+      {
+        "hash": "sha256:0a322fa0b462167be60f1b897f0a86f8c74999ee838f1ae34c9ebccd51fd44d2",
+        "path": "models/causal-emergence/canonical/verify-bell-data.py"
+      },
+      {
+        "hash": "sha256:7af6740f93376509693369dc3709785e15a1a4acdddad7ae18acc8467c61bed3",
+        "path": "models/causal-emergence/canonical/verify-neurogenesis-data.py"
+      },
+      {
+        "hash": "sha256:9a3b3169167c8fdd02a16054616d5f69cb9f3d563c64bb63dd488191ea0297c1",
+        "path": "models/causal-emergence/canonical/verify-routing-data.py"
+      },
+      {
+        "hash": "sha256:cf08363a675ecbe3a2332a14e1b4d658bc120b501a979cb69119fe6482660bef",
+        "path": "models/causal-emergence/canonical/visual.mjs"
+      },
+      {
+        "hash": "sha256:8471eb51e9930dad86f9558cc1134d8599b4650952267fbf2db130588516b743",
+        "path": "models/causal-emergence/reconstruction/README.md"
+      },
+      {
+        "hash": "sha256:6ef6ce3893ccdc5f2cb1422192e0f8b550cb23e3921b2f1de22182f3447d0331",
+        "path": "models/causal-emergence/reconstruction/source-review.json"
+      },
+      {
+        "hash": "sha256:faa6c36b0410d4703baa3c609b4be6a68778c60fb46b18ea1d3ec2c574585d41",
+        "path": "models/causal-emergence/reconstruction/verify.py"
+      },
+      {
+        "hash": "sha256:9aea67870a7913091276002986eba507dd800b86ac3c30c35f8222ec729eea93",
+        "path": "packages/model-pack/src/cache.js"
+      },
+      {
+        "hash": "sha256:f36bb36f8f498df3921d8cb9b8478e9dfe79ac30f33539e4d7b1a1528904f921",
+        "path": "packages/model-pack/src/canonical-options.js"
+      },
+      {
+        "hash": "sha256:1a9a17423effa144424804149303aea83b30de3c213574417023c1e6928f8717",
+        "path": "packages/model-pack/src/index.js"
+      },
+      {
+        "hash": "sha256:4c02f5bfc765abb5010f112e1a1f17f8e6c9efbb0881167f5a7bfd54cdf73590",
+        "path": "packages/model-pack/src/transport-layout.js"
+      },
+      {
+        "hash": "sha256:a1bb9939655652513ea4984bef8f1ba06c158f7472e548b1560654d6be438b00",
+        "path": "references/canonical/DICTIONARY_REVIEW.md"
+      },
+      {
+        "hash": "sha256:c1fa002c27b8cdd91117f296f268d0f618cf73e32481e7fa73863d285f0605e0",
+        "path": "references/canonical/NEURAL_REVIEW.md"
+      },
+      {
+        "hash": "sha256:69daf27d0de208d59638e7a5776d67b36ebcf44913bc001fa2a73bd526b2e608",
+        "path": "references/canonical/OPTICAL_REVIEW.md"
+      },
+      {
+        "hash": "sha256:7668a2c72e83d53f6e7b51e36ab02757f3928b52279069c694c4d1a50a460a2f",
+        "path": "references/canonical/SOURCE_READINESS.md"
+      },
+      {
+        "hash": "sha256:8eb9a345ba2ccae7163d13215eec328fb092eb1923e743318a9668dd41169493",
+        "path": "references/canonical/VISUAL_REVIEW.md"
+      },
+      {
+        "hash": "sha256:5e9c3137adc3000a1fa7efd9d27bc70272e17157bfbd032b1044125378aed584",
+        "path": "references/canonical/data/41586_2020_2777_MOESM11_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:3d884c45108b09106f193de3406ee48c6bb5792faa5337b7af8f992d38e5895e",
+        "path": "references/canonical/data/41586_2023_6502_MOESM10_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:f167176638f83b9e24dedb5ca8b53c861922528382670a1704844bf43a9b49e9",
+        "path": "references/canonical/data/41586_2023_6502_MOESM11_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:e1df18d57dddae19ae2a8294ef44a969e2a26f681ae86ec02f4c18f85b31cf20",
+        "path": "references/canonical/data/41593_2017_BFnn4494_MOESM61_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:ce3501720e3f719f7cd901e8bd090d5009d59494e1c63b0739d815690c9794ed",
+        "path": "references/canonical/data/41593_2017_BFnn4494_MOESM62_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:b89ad90d7baf065d9c19d2dbce8b020ccf6080afc020b3246c75f9195bd7671f",
+        "path": "references/canonical/data/41593_2020_717_MOESM9_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:9ff2481f8307a016f603b05f640f110551771dcfd8c771912f3a38b2f81d0385",
+        "path": "references/canonical/data/STable1_Human_cohorts_used_in_the_study.xlsx"
+      },
+      {
+        "hash": "sha256:b4cca76f8eaccb21fc1358da034e8e8bd712b5aca5e8fec65f41938e7c6a769a",
+        "path": "references/canonical/data/STable8_Cell_type_abundance_copy.xlsx"
+      },
+      {
+        "hash": "sha256:c4d7fa269f232dda704814886fa14f65b22cf903f9efa532e7eec733673dcda5",
+        "path": "references/canonical/data/amalric2017-syntax.pdf"
+      },
+      {
+        "hash": "sha256:a93252186568d231d986659598292beaa6e16db1f4450c8d26b39cd7adaf6555",
+        "path": "references/canonical/data/baars1988.pdf"
+      },
+      {
+        "hash": "sha256:328ed93f08b4381adb7e6fcc47a0f70f8c52b2112c347443f362b51d44276895",
+        "path": "references/canonical/data/bak1987.pdf"
+      },
+      {
+        "hash": "sha256:0df50c9a8b5e3d6ba27800d1a3b906a398e57404a35016925f2210c34a269f4e",
+        "path": "references/canonical/data/cardin2009-supplement.pdf"
+      },
+      {
+        "hash": "sha256:30d9b09341642e25e182e0b5fcc77bb3b690c39d4532b9c3bb69e999189eeccd",
+        "path": "references/canonical/data/cogitate2025-supplement.pdf"
+      },
+      {
+        "hash": "sha256:01c6bab0ed80c9ff41d9f4d058d88533d549963930d9e886556e10cb8e73aa7b",
+        "path": "references/canonical/data/dehaene2011.pdf"
+      },
+      {
+        "hash": "sha256:9e11ef5b0e1d62f7cd005017da16c4d585f37b018c406086fae96d282904d0da",
+        "path": "references/canonical/data/elife-38281-fig6-data1-v2.xlsx"
+      },
+      {
+        "hash": "sha256:383cfa839d93bb25b202a02f95a22ef8c264dc791ac4d147818e9dd6be88c7da",
+        "path": "references/canonical/data/ernst2002.pdf"
+      },
+      {
+        "hash": "sha256:88e2fb26540cb075690607d37d38a498a1e7f19dca6639dd243672f962042e6a",
+        "path": "references/canonical/data/hanssen-2001.pdf"
+      },
+      {
+        "hash": "sha256:c28eb0f075759aef620a0b2e00a70fd675ce712bc8214d11c103f5a3d29492c0",
+        "path": "references/canonical/data/hensen2015-data.zip"
+      },
+      {
+        "hash": "sha256:876967e1cbe402b775d25392b773386325499b2343b18bf401d1825f2008a176",
+        "path": "references/canonical/data/hensen2016-data.zip"
+      },
+      {
+        "hash": "sha256:d1f8c489813f812b26c36c4a3b894fe0495b097d4a3e61c884fa816962012f20",
+        "path": "references/canonical/data/nicodemus-1977.pdf"
+      },
+      {
+        "hash": "sha256:f0301f4f31e36799c29cfca020e7da522139ee63dbe09ed7dd47556696aba817",
+        "path": "references/canonical/data/pajot2026-model-check.json"
+      },
+      {
+        "hash": "sha256:4f91de6e9c30266cbbd5633f2a154f4e8e4e04971f6c8339f3037e4f56939fe2",
+        "path": "references/canonical/data/pessoa2008.pdf"
+      },
+      {
+        "hash": "sha256:fb5fb174215df021dc5ed32a43f55b539ddfd323b90486d277abacdb95990ac6",
+        "path": "references/canonical/data/shannon1948.pdf"
+      },
+      {
+        "hash": "sha256:ec0b8c340525a55e9e6d64b3a41c93623aac91552fd16a64a7cf3faccd6abfea",
+        "path": "references/canonical/data/touboul2017.pdf"
+      },
+      {
+        "hash": "sha256:7cc771cf179933c2cf97bd37fa59fcf86d81cfd7f115af53d99b7e3bb872ef84",
+        "path": "references/canonical/data/usrey-1998.pdf"
+      },
+      {
+        "hash": "sha256:c4aa67a28dc945d839c43cd161ea178916616b1e12e5baa605c28c878e2ad2a0",
+        "path": "references/canonical/data/witvliet2021.pdf"
+      },
+      {
+        "hash": "sha256:f68df28398e410cce7a3002c9c10383781817b30667c88c8bbf0bb4ea8471825",
+        "path": "references/canonical/dictionary-review.json"
+      },
+      {
+        "hash": "sha256:54796dd2464fa6fbee8d52694e4da82bf26f55060d490f506b1d816d9c2bb8c0",
+        "path": "references/canonical/graph.json"
+      },
+      {
+        "hash": "sha256:847606dd32af74fc4b438d389f33fe39b3d6c975dbaa6eaa7d04d4e7954e0328",
+        "path": "references/canonical/neural-review.json"
+      },
+      {
+        "hash": "sha256:8589fc5e1f10ff884430e2d21592d716540cd2eb7cb313c2e149d9510b419bf7",
+        "path": "references/canonical/optical-review.json"
+      },
+      {
+        "hash": "sha256:ecdd4935c75d69ced5afa86d17166ff99900835752132ea0db206fc6c6bf21ba",
+        "path": "references/canonical/physics-review.json"
+      },
+      {
+        "hash": "sha256:9cdbbae62e075b793450ce7e8ea71547d5f74cfe0bc4d9fd2b2626e2ef4f0e65",
+        "path": "references/canonical/retinal-review.json"
+      },
+      {
+        "hash": "sha256:7ff4d768f63467e5553d6a4055ebe6db3986e4eea32bdf7184ed76ab6b993cf1",
+        "path": "references/canonical/routing-policy.json"
+      },
+      {
+        "hash": "sha256:6923602c97c46cf28ff0e59e07e4ab7e4e4baf5389bc145d6db0752dc8b9c564",
+        "path": "references/canonical/routing-review.json"
+      },
+      {
+        "hash": "sha256:e7af2aac713bc456ff970c5272d28c763e0b7ed260bb362ee07f691ac539a952",
+        "path": "references/canonical/schema.json"
+      },
+      {
+        "hash": "sha256:cb1994cf1934defd578d2af7946fe3d7d279888a1c35a1689feb5eb032dfbe3e",
+        "path": "references/canonical/source-readiness.json"
+      },
+      {
+        "hash": "sha256:ff160ba4d4a287f0fa0638a35739e4d23ed42e28b38279cb72712eba2619c8c9",
+        "path": "references/canonical/visual-review.json"
+      },
+      {
+        "hash": "sha256:f6fccc285b387097ec912cc9827e3eea45775cabf076ebc08adac8ce10b62ac6",
+        "path": "references/descriptions.json"
+      },
+      {
+        "hash": "sha256:761dab2265dd9e9275e8ff5feb8447eded7e5ed1fc42c9480e36a70cb8a59988",
+        "path": "references/level-0.json"
+      },
+      {
+        "hash": "sha256:b1bc5f0fe4b9741f57807d24b638b26a75b2b6e77a32c44b3f3711c8fd30a91a",
+        "path": "references/level-1.json"
+      },
+      {
+        "hash": "sha256:0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
+        "path": "references/level-2.json"
+      },
+      {
+        "hash": "sha256:baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
+        "path": "references/level-3.json"
+      },
+      {
+        "hash": "sha256:252bb941899fa2cdb8d42afb59823acb0a2dce84f028c2fcb354d0608e24163e",
+        "path": "references/level-4.json"
+      },
+      {
+        "hash": "sha256:b45a4fb9649b81a7ca4b5ebfe0211c8284497b75fcf968d8bb88efceb1c9c147",
+        "path": "references/level-5.json"
+      },
+      {
+        "hash": "sha256:da7e9afc05c0daf9cc958a67c3be16b0a7ff47fea6d863198710440ad8996d24",
+        "path": "references/level-6.json"
+      },
+      {
+        "hash": "sha256:10f91e78c279cc1fe83342b195702908c76ccdabbbc788a00d9f1142970fbfe6",
+        "path": "references/level-7.json"
+      },
+      {
+        "hash": "sha256:11945d9890881c3a4c0d791bf8c1842c29d593eeccd24e0720004779b333340a",
+        "path": "references/theory-of-causal-arisings.pdf"
+      },
+      {
+        "hash": "sha256:3992ae25c5e499842a57b07dea0d2f9d206ee3483d634fb9053af39dc260a8f7",
+        "path": "references/topology-of-arising.pdf"
+      },
+      {
+        "hash": "sha256:5e3ff386cb2165daefe3e1b4001ddeff894d116e2d37630892f8dd8d41773fbd",
+        "path": "references/Архив.zip"
+      }
+    ],
+    "id": "canonical-research-source-v18"
+  },
+  "statistics": {
+    "edgeCount": 356,
+    "nodeCount": 826
+  }
+}

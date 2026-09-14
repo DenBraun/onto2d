@@ -19,9 +19,14 @@ export function verifyPythonCosts(costs) {
 // repairs may verify that historical evidence through an explicit, byte-pinned
 // receipt; unknown source changes still require a new study or verified replay.
 export function validateCompatibility(expected, actual, receipt, reportSha256) {
-  assert.deepEqual(Object.keys(actual).sort(), Object.keys(expected).sort(), "Implementation file population differs.");
+  const additions = receipt?.addedFiles ?? {};
+  for (const [path, hash] of Object.entries(additions)) {
+    assert.ok(!Object.hasOwn(expected, path), `Added implementation already existed: ${path}`);
+    assert.match(hash, /^[0-9a-f]{64}$/, `Invalid added implementation digest: ${path}`);
+  }
+  assert.deepEqual(Object.keys(actual).sort(), [...Object.keys(expected), ...Object.keys(additions)].sort(), "Implementation file population differs.");
   const changed = Object.keys(expected).filter(path => expected[path] !== actual[path]);
-  if (!changed.length) return;
+  if (!changed.length && !Object.keys(additions).length) return;
   assert.ok(receipt, "No runtime compatibility receipt for changed implementation.");
   assert.equal(reportSha256, receipt.reportSha256, "Runtime compatibility requires the exact frozen report.");
   for (const path of changed) {
@@ -30,14 +35,14 @@ export function validateCompatibility(expected, actual, receipt, reportSha256) {
     assert.equal(expected[path], entry.recordedSha256, `Recorded implementation differs: ${path}`);
     assert.equal(actual[path], entry.currentSha256, `Current implementation differs: ${path}`);
   }
+  for (const [path, hash] of Object.entries(additions)) assert.equal(actual[path], hash, `Added implementation differs: ${path}`);
 }
 
 export async function verifyImplementationBinding(reportUrl, report, actual) {
   const expected = report.implementation;
-  assert.deepEqual(Object.keys(actual).sort(), Object.keys(expected).sort(), "Implementation file population differs.");
-  if (Object.keys(expected).every(path => expected[path] === actual[path])) return;
+  if (Object.keys(actual).length === Object.keys(expected).length && Object.keys(expected).every(path => expected[path] === actual[path])) return;
   const manifest = JSON.parse(await readFile(new URL("runtime-compatibility.json", here), "utf8"));
-  assert.equal(manifest.format, "onto2d-runtime-compatibility-v1");
+  assert.equal(manifest.format, "onto2d-runtime-compatibility-v2");
   assert.equal(manifest.verifierSha256, sha256(await readFile(new URL(import.meta.url))), "Runtime compatibility verifier differs.");
   assert.ok(reportUrl.href.startsWith(here.href), "Report must belong to Structural Geometry.");
   const key = reportUrl.href.slice(here.href.length);

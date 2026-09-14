@@ -1,68 +1,25 @@
-# Foundation review and central-graph reconstruction proposal
+# Foundations and graph construction
 
-Date: 2026-09-11. Status: **reviewable research proposal**, not a new active
-Model Pack, a frozen classification policy, or independent scientific review.
+The construction principles below are research proposals. They require scoped
+tests and independent scientific review.
 
 The supplied texts contain a recognizable construction idea: configurations
 become admissible, acquire persistent identity, and provide carriers and
 constraints for another round of organization. The missing link is a justified
 procedure from those principles to the individual catalogue decisions.
-The current catalogue does not yet implement that procedure.
-
-This corrects a potentially misleading reading of the earlier audit. The author's
-statement that the catalogue was assembled intuitively does **not** mean the
-project had no theoretical principles. The papers and archive supply principles,
-definitions and proposed algorithms. They do not supply a replayable selection
-history or scientific justification for all 249 current records and 971 edges.
+The papers and archive supply principles, definitions and proposed algorithms;
+scientific justification for individual nodes and relations requires separate
+evidence. The canonical graph implements a partial, explicitly scoped model.
 
 ## Scope and reproducibility
 
-- [Source review and archive inventory](source-review.json): complete textual
-  review of all 36 pages of
-  [topology-of-arising.pdf](../../../references/topology-of-arising.pdf) and all
-  ten text members of [Архив.zip](../../../references/Архив.zip). Page 13 was also
-  inspected as a rendered page to verify equation signs. This is selected
-  mathematical analysis, not certification of every proof.
-- A targeted reading of the 101-page
-  [Theory of Causal Arisings](../../../references/theory-of-causal-arisings.pdf)
-  covers its construction, lifecycle, completeness and applicability passages:
-  pages 1, 37–38, 45–48, 57–61, 77–79 and 98–101. Full review of that paper
-  remains pending. The original numerical source lock is preserved.
-- [Level-0 proposal](level-0-proposal.json): interpretations for all 24 legacy
-  cards, 27 proposed definition/class/rule entities, six construction operations,
-  twelve claim findings and an inventory of all 84 incoming source relations.
-  Those 84 relations remain marked pending for claim-specific classification;
-  inventory coverage is not completed scientific review.
-- [Read-only checker](verify.py): source and archive hashes, exact node/edge
-  coverage, internal references, and five finite mathematical checks.
-
-Run from the repository root:
+The supplied manuscripts and archive are research inputs. Their identities and
+the finite mathematical witnesses are checked by `verify.py`. Current entities,
+claims and proposed rules live in `references/canonical/graph.json`.
 
 ```sh
 python3 models/causal-emergence/reconstruction/verify.py
 ```
-
-The JSON files are research ledgers with explicit draft formats. They are not
-package schemas or executable kernel rule packages. The checker validates their
-accounting and the stated witnesses, not the scientific truth of their prose.
-Their PDF identities are tied to local bytes. The theory DOI/date were read
-from its title page; topology version metadata comes from the existing case
-source lock. Zenodo metadata could not be independently rechecked through web
-access during this review. A DOI identifies a deposit; it is not peer review.
-
-Validation performed for this review: the read-only checker passed all source
-bindings, inventory references and mathematical witnesses; `check:docs` passed
-for 173 Markdown files; `git diff --check` passed. The integrated
-`npm run case:level-0:verify` also reproduced its frozen v3 artifact, including
-the negative objecthood disposition. This rerun is computational replay, not
-independent scientific review. The full workspace test/build results from the
-earlier baseline audit are not presented as fresh checks of this addition.
-
-Archive locators below refer to member names and 1-based text line numbers.
-The machine-readable inventory hashes the original member bytes and records
-the full reviewed line range. No archived code or instructions were executed.
-Explicit v2/v3 dates are historical labels, not proof of when each idea arose;
-the archive does not establish speaker identities for conversational passages.
 
 ## What the sources contribute
 
@@ -241,61 +198,6 @@ external vocabulary: [gUFO Relator and Event definitions](https://nemo-ufes.gith
 That specification supports semantic review; it does not certify this proposed
 OntoUML extension.
 
-## Proposed graph representation
-
-Keep one linked scientific record with several explicit projections. Its
-central unit should be a **claim about a transition under conditions**, with
-the concepts and mechanisms needed to express that claim.
-
-| Record | What it identifies | What must accompany it |
-|---|---|---|
-| Concept or carrier class | A type of phenomenon, process, property or configuration | Operational definition, identity conditions, scope and original catalogue mapping |
-| Configuration instance | A particular measured or simulated system | Actual constituents, relation instances, parameters, environment, state and provenance |
-| Construction rule | A proposed way to generate/evaluate candidates | Typed inputs, multiplicities, joint/alternative conditions, operators, declared outputs and version |
-| Claim | A proposition about a concept, relation, parameter or rule | Source passage, assumptions, evidence role, counterexamples and review disposition |
-| Rule application | A rule applied to specified inputs | Candidate identity, evaluation method, outcome and rejection/missing-evidence witnesses |
-| Effective interface | A proposed representation at another scale | State map, interaction ports, valid operations, error bounds and relevant history |
-
-The existing five phenomenon type roles remain useful. Add record kinds such
-as formula, rule and evidence around them; do not silently redefine `TypeRole`
-to mean database record kind. Likewise, the six source relation kinds and
-the three lifecycle roles describe different axes. A rule can be a mathematical
-derivation without asserting physical genesis; a real interaction can support
-both formation and maintenance in different contexts. Preserve these statements
-even if a display chooses a dominant lifecycle label.
-
-The presentation can show a compact carrier progression while expanding a
-transition into an AND/OR rule with evidence. This avoids turning the number
-of terms in a formula into the number of physical constituents.
-
-```mermaid
-flowchart TD
-    A[Declared primitives and model assumptions] --> B[Generate mode candidates]
-    B --> C[Evaluate mode and joint resonance rules]
-    C --> T[Triad configuration candidates]
-    N[Nonlinear model and measurement protocol] --> O[Objecthood evaluation]
-    T --> O
-    O -->|all required gates pass| U[Admitted CRT instance]
-    O -->|fails or lacks evidence| R[Recorded rejection or unresolved candidate]
-    U --> E[Collective coupling and persistence evaluation]
-    E --> M[Effective description and substitution test]
-    M -->|passes within declared scope| P[New carrier interface and effective rules]
-    P --> B2[Next construction domain]
-```
-
-This is the proposed workflow. The current portable CRT study takes the
-rejection branch; the success arrows are conditional, not reported results.
-The proposal maps all 24 old cards, including assumptions, quantities and
-directional hypotheses, without requiring all of them to remain carrier nodes
-on this projection.
-
-Formula syntax, a hypothesis-dependency graph, and the physical interaction
-graph must remain distinguishable. Feedback belongs in the appropriate
-dynamical projection. Joint construction can be represented by a rule with
-several inputs; it need not be forced into a temporal ordering of its members.
-Source SCCs should still be handled under the existing
-[classification and resolution policy](../../../docs/architecture/SOURCE_POLICY.md).
-
 ## What “minimal” should mean
 
 Choose the target property and comparison regime before searching. A useful
@@ -373,27 +275,3 @@ organization and compare alternatives. It becomes part of the test only after
 its relation semantics and lengths have a defined interpretation. The present
 shadow flow changes lengths on a fixed source topology; it supplies neither
 the nonlinear CRT dynamics nor the missing empirical construction law.
-
-## Next central-data work
-
-1. **Resolve foundational claims before freezing rules.** Reconcile signs,
-   independent variation variables, support/measure and the four minimality
-   notions. Keep operational hypotheses explicit and bind current negative
-   results to the appropriate claims. A complete theory proof is not required
-   to retain a clearly labelled hypothesis.
-2. **Pilot the claim/rule representation.** Use the full Level-0 mapping here
-   and the existing optical/retinal empirical pilot. Specify AND/OR conditions,
-   carrier instances and formation/maintenance contexts. Test whether a reader
-   can reconstruct a decision from its sources without the old graph layout.
-3. **Implement the revised source contract and release lineage.** Preserve the
-   historical source and numerical cases; build a new graph version from the
-   reviewed claims. Definitions and evidence must survive compilation.
-4. **Review every incoming relation and expand through the existing batches.**
-   Use archive gap suggestions as candidates with inclusion criteria. Preserve
-   alternatives, unsupported statements and missing evidence explicitly.
-
-The current deliverable completes the requested topology/archive analysis and
-provides a concrete Level-0 representation proposal. Mathematical reconciliation,
-full review of the second paper, claim-specific classification of the 84
-Level-0 edges, the empirical pilot and migration of the active central graph
-remain open in the [roadmap](../../../docs/ROADMAP.md).

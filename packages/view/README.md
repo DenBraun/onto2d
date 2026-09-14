@@ -62,3 +62,7 @@ start from Model Packs should use `createVerifiedModelPresentation()` from
 `@onto2d/engine/presentation`; it verifies the complete pack and can bind a
 registry resolution before creating this session. Lazy presentation is not a
 partial semantic model or an analysis input.
+
+Neighborhood edges retain optional string `role` and `assertion` fields so an
+interface can show a relation's declared meaning and scope. They do not include
+the complete edge record or its citation payload.

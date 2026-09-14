@@ -9,7 +9,7 @@ export const RELEASE = {
     "sha256": "b846fcee02b1c585b65c1a805e0b38a21edcfe4464167318a931e51219d4592a"
   },
   "worker.js": {
-    "bytes": 310109,
-    "sha256": "63d960114c884561fd2bd2bd94b80f6089c47a0f69eb9346a4f3b14a03bb19fb"
+    "bytes": 310468,
+    "sha256": "86c61cf7405d957775a851ece0e8e05b8c66e3bb08f90515ab1cf9b6603b8701"
   }
 };

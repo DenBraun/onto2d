@@ -2,6 +2,7 @@ import {
   canonicalize,
   isContentHash
 } from "@onto2d/kernel/canonical";
+import { MODEL_PACK_CANONICAL_OPTIONS } from "./canonical-options.js";
 import {
   MODEL_PACK_FORMAT,
   MODEL_PACK_FORMAT_VERSION,
@@ -813,7 +814,7 @@ export function createVerifiedModelPackCache(storageInput, options = {}) {
   function serializeBounded(value, code, subject) {
     let serialized;
     try {
-      serialized = canonicalize(value);
+      serialized = canonicalize(value, MODEL_PACK_CANONICAL_OPTIONS);
     } catch (error) {
       fail(code, `${subject} is not canonicalizable Model Pack data.`, {
         cause: error instanceof Error ? error.name : typeof error

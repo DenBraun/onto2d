@@ -1,0 +1,990 @@
+{
+  "scope": "Remaining source cards requiring scientific review.",
+  "cards": [
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/0",
+      "title": "Quantum Field Architecture"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/1",
+      "title": "Quarks"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/2",
+      "title": "Leptons"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/3",
+      "title": "Gluons"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/4",
+      "title": "Quantum Entanglement"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/7",
+      "title": "Confinement"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/8",
+      "title": "Electroweak Symmetry Breaking"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/9",
+      "title": "Higgs Mechanism"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/10",
+      "title": "Hadronization"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/11",
+      "title": "Protons and Neutrons"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/12",
+      "title": "Particle Decays"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/13",
+      "title": "Vacuum-Structure Influence on Particle Properties"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/14",
+      "title": "Elementary Particle Masses via Higgs Coupling"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/15",
+      "title": "Confinement as Macroscale Constraint"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/16",
+      "title": "Hadron Family Formation"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/17",
+      "title": "Neutrino Oscillations"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/18",
+      "title": "Gluon Field Self-Organization"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/19",
+      "title": "Quark Influence on Macroscale Matter Properties"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/20",
+      "title": "Quantum Fluctuations as Source of Primordial Cosmological Perturbations"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/21",
+      "title": "Effective Theories and RG Flow"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/22",
+      "title": "Virtual Excitations in Quantum Field Interactions"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/23",
+      "title": "Photons"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/24",
+      "title": "W and Z Bosons"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/25",
+      "title": "Nonzero Neutrino Mass and Flavor Mixing"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/26",
+      "title": "Quantum Field Dynamics"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/27",
+      "title": "Vacuum Configuration"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/28",
+      "title": "Higgs Vacuum Configuration"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/29",
+      "title": "Gauge Sector Differentiation"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/32",
+      "title": "Effective Field Anisotropy"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/33",
+      "title": "Field Polarization Anisotropy"
+    },
+    {
+      "sourcePath": "references/level-1.json",
+      "pointer": "/34",
+      "title": "Directional Stability Asymmetry of Excitations"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/0",
+      "title": "Primordial Light-Nucleus Nucleosynthesis"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/1",
+      "title": "Atomic-to-Macroscopic Electromagnetic Interaction Regime"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/2",
+      "title": "Formation of Atomic Structure"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/3",
+      "title": "Chemical Bonding and Molecular Formation"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/4",
+      "title": "Ionic Interactions and Ion Formation"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/5",
+      "title": "Molecular Resonance and Delocalization"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/6",
+      "title": "Van der Waals Interactions and Dispersion Forces"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/7",
+      "title": "Hydrogen Bonds"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/8",
+      "title": "Molecular Polarization and Dipole Interactions"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/9",
+      "title": "Crystalline Structures and Phase Transitions"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/10",
+      "title": "Aromatic Systems and π-Conjugated Structures"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/11",
+      "title": "Quantum Effects in Chemical Reactions"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/12",
+      "title": "Molecular Self-Organization in Liquids"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/13",
+      "title": "Colloidal Systems and Interfacial Boundaries"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/14",
+      "title": "Metallic Bonding and Electron Collectivization"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/15",
+      "title": "Phase-Regime Organization and Thermodynamic Transitions"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/16",
+      "title": "Piezoelectric and Ferroelectric Properties of Crystals"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/17",
+      "title": "Mössbauer Effect"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/18",
+      "title": "Electronic-Environment Sensitivity of Selected Nuclear Decay Channels"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/19",
+      "title": "Casimir Effect under Macroscopic Electromagnetic Boundary Conditions"
+    },
+    {
+      "sourcePath": "references/level-2.json",
+      "pointer": "/20",
+      "title": "Hyperfine Structure"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/0",
+      "title": "Protein Folding and Functional Conformation"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/1",
+      "title": "Enzymatic Catalysis"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/2",
+      "title": "Enzyme Active Sites"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/3",
+      "title": "Ion Channels and Membrane Transport Structures"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/4",
+      "title": "Replication and Transcription of Nucleic Acids"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/5",
+      "title": "Cooperativity in Proteins and Complexes"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/6",
+      "title": "Enzymatic Complex"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/7",
+      "title": "RNA Folding and Catalytic Activity"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/8",
+      "title": "Ribozymes"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/9",
+      "title": "Self-Organization of Viral Capsids"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/10",
+      "title": "Viral Assembly and Maturation"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/11",
+      "title": "Antigen–Antibody Recognition"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/12",
+      "title": "Allosteric Regulation of Proteins"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/13",
+      "title": "Collectively Autocatalytic Reaction Networks"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/14",
+      "title": "Metabolic Cycles"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/15",
+      "title": "Signal Transduction Pathways"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/16",
+      "title": "Mechanisms of Viral Infection"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/17",
+      "title": "Compartmentalization of Metabolic Processes"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/18",
+      "title": "Biomolecular Condensates and Coacervate Phase Separation"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/19",
+      "title": "Epigenetic Regulation and Chromatin Modification"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/20",
+      "title": "Chaperones and Protein Quality Control Mechanisms"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/21",
+      "title": "Kinetics and Thermodynamics of Biochemical Reactions"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/22",
+      "title": "Mechanisms of Translation"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/23",
+      "title": "RNA Interference and Non-Coding RNAs"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/24",
+      "title": "Bioenergetic Cycles and ATP Generation"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/25",
+      "title": "Redox Systems and Regulation of Oxidation–Reduction Balance"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/26",
+      "title": "Post-Translational Modifications of Proteins"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/27",
+      "title": "Lipid Biosynthesis and Membrane Formation"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/28",
+      "title": "Regulation of pH and Ionic Balance"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/29",
+      "title": "Structural Organization of Viral Genomes"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/30",
+      "title": "Mechanisms of Viral Entry into Cells"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/31",
+      "title": "Protein-Structured Hydration and Ionic Microenvironments"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/32",
+      "title": "Stabilization of Transition States in Chemical Reactions"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/33",
+      "title": "Allosteric Modulation of Local Reactivity and Interaction Potential"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/34",
+      "title": "Chromatin Packaging as a Constraint on Gene Expression"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/35",
+      "title": "Viral Reprogramming of the Transcription–Translation Apparatus"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/36",
+      "title": "Selective Degradation of Misfolded Proteins (Proteasomes)"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/37",
+      "title": "Biochemical Environmental Effects on Selected Electron-Capture Decays"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/38",
+      "title": "Influence of Ion Pumps on Chemical Equilibria"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/39",
+      "title": "Activated Monomers and Energy-Rich Intermediates"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/40",
+      "title": "Template Complementarity and Selective Pairing Rules"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/41",
+      "title": "Non-Enzymatic Template-Directed Polymerization"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/42",
+      "title": "Sequence-Dependent Folding as Functional Constraint"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/43",
+      "title": "Amphiphile Self-Assembly into Bilayers and Vesicles"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/44",
+      "title": "Selective Permeability in Protocellular Boundaries"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/45",
+      "title": "Encapsulation of Polymers and Catalysts in Protocells"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/46",
+      "title": "Coupled Growth–Division Cycles of Protocellular Compartments"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/47",
+      "title": "Chemiosmotic Energy Transduction in Proto-Membranes"
+    },
+    {
+      "sourcePath": "references/level-3.json",
+      "pointer": "/48",
+      "title": "Protocellular Selection as a Population-Level Effect"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/0",
+      "title": "Prokaryotic Cell Organization"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/1",
+      "title": "Eukaryotic Cell Compartmentalization"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/2",
+      "title": "Cellular Metabolism and Energy Transformation"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/3",
+      "title": "Cellular Signaling and Communication"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/4",
+      "title": "Cell Cycle Regulation and Apoptosis"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/5",
+      "title": "Cell Differentiation and Specialization"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/6",
+      "title": "Cellular Homeostasis and Stress Response"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/7",
+      "title": "Intercellular Contacts and Prototissue Coordination"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/8",
+      "title": "Genetic Regulation and Gene Expression"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/9",
+      "title": "Endocytosis and Exocytosis"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/10",
+      "title": "DNA Repair Mechanisms and Genome Stability"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/11",
+      "title": "Intracellular Transport and Cytoskeletal Systems"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/12",
+      "title": "Cellular Mechanisms of Immune Response"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/13",
+      "title": "Cellular Regulatory Networks"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/14",
+      "title": "Endosymbiotic Origin of Organelles"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/15",
+      "title": "Secretory Pathway and Intracellular Protein Sorting"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/16",
+      "title": "Cellular Sensory Systems and Environmental Adaptation"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/17",
+      "title": "Downward Regulation of Enzymatic Networks by Cellular State"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/18",
+      "title": "Organizing Role of the Cytoskeleton in Protein and Organelle Distribution"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/19",
+      "title": "Cell-Level Suppression of Molecular Survival Programs via Apoptosis Control"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/20",
+      "title": "Autophagy and Local Degradation of Subcellular Components"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/21",
+      "title": "Cellular Membrane Potential as a Driver of Molecular Gradients"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/23",
+      "title": "Innate Immune Pattern Recognition and Damage-Associated Inflammatory Signaling"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/24",
+      "title": "Inflammasome Activation and IL-1-family Signaling"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/25",
+      "title": "Basal Cytokine Production and Cytokine Signaling Baseline"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/26",
+      "title": "Cellular Senescence as a Stress Outcome"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/27",
+      "title": "Senescence-Associated Secretory Phenotype"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/28",
+      "title": "Macrophage Polarization and Local Myeloid Regulatory Bias"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/29",
+      "title": "Constrained T-Cell Function under Chronic Stimulation and Age-Shifted Immunity"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/30",
+      "title": "NK-Mediated Immune Surveillance Capacity"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/31",
+      "title": "mTOR/Nutrient-Sensing Control of Autophagy and Senescence"
+    },
+    {
+      "sourcePath": "references/level-4.json",
+      "pointer": "/32",
+      "title": "Trained Immunity and Innate Memory Reprogramming"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/0",
+      "title": "Tissue Morphogenesis and Pattern Formation"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/1",
+      "title": "Organogenesis and Functional Differentiation"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/2",
+      "title": "Multicellular Structural Integration"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/3",
+      "title": "Tissue Repair and Regeneration"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/4",
+      "title": "Organization of the Extracellular Matrix"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/5",
+      "title": "Physiological Regulation and Organ Homeostasis"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/6",
+      "title": "Development of the Vascular System and Tissue Perfusion"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/7",
+      "title": "Nervous System and Physiological Coordination of Organs"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/8",
+      "title": "Endocrine Regulation and Hormonal Systems"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/9",
+      "title": "Organism-Scale Immune Defense Architecture"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/10",
+      "title": "Formation and Specialization of Basic Tissue Types"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/11",
+      "title": "Stem Cells and Regulation of Their Niches"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/12",
+      "title": "Hormonal–Neural Integration (Neuroendocrine System)"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/13",
+      "title": "Tissue Plasticity and Pathological Reconfigurations"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/14",
+      "title": "Trophic Regulation of Cellular Metabolism"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/15",
+      "title": "Organizing Influence of the Extracellular Matrix on Cell Phenotype"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/16",
+      "title": "Neuroendocrine Influence on Gene Expression"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/17",
+      "title": "Neural Regulation of Proliferative State in Target Tissues"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/22",
+      "title": "Tissue Inflammatory Microenvironments"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/23",
+      "title": "Gut Barrier Dysfunction and Microbial-Component Translocation"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/24",
+      "title": "Chronic Low-Grade Inflammation"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/25",
+      "title": "Immune Resilience vs Immune Constraint Trade-off"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/26",
+      "title": "Inflammation Resolution Capacity"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/27",
+      "title": "Inflammation–Metabolic Dysregulation Feedback Loop"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/28",
+      "title": "Adipose Immune Remodeling and Inflammatory Adipokine Bias"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/29",
+      "title": "Metabolic Endotoxemia as a Gut-Derived Driver of Basal Immune Activation"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/30",
+      "title": "Systemic Allocation Trade-off between Immune Surveillance and Repair"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/31",
+      "title": "Inflammaging Regime Stability and Hysteresis"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/32",
+      "title": "Age-Shifted Immune Set-Point Drift"
+    },
+    {
+      "sourcePath": "references/level-5.json",
+      "pointer": "/33",
+      "title": "Resolution Failure Regime"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/13",
+      "title": "Glial Regulation of Neural Activity"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/14",
+      "title": "Neural-State-Dependent Epigenetic and Transcriptional Modulation"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/15",
+      "title": "Neuro–Immune Interactions"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/16",
+      "title": "Neurovascular Coupling"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/17",
+      "title": "Restricted Adult Neurogenesis and Circuit Remodeling"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/18",
+      "title": "Working Memory and Executive Functions"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/19",
+      "title": "Neural Mechanisms of Symbolic Representation"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/20",
+      "title": "Neural Mechanisms of Social Recognition and Empathy"
+    },
+    {
+      "sourcePath": "references/level-6.json",
+      "pointer": "/21",
+      "title": "Placebo Responses and Psychosomatic Modulation"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/0",
+      "title": "Social Organization of Animals"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/1",
+      "title": "Social Roles and Stratification"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/2",
+      "title": "Recurrent Social Practices"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/3",
+      "title": "Social Exchange and Resource Coordination"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/4",
+      "title": "Collective Decision-Making"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/5",
+      "title": "Structures of Human Society"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/6",
+      "title": "Collective Intelligence under Distributed Aggregation"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/7",
+      "title": "Superorganism Behavior in Insect Colonies"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/8",
+      "title": "Social Norms and Conventions"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/9",
+      "title": "Dynamics of Economic Markets"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/10",
+      "title": "Political and Governance Structures"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/11",
+      "title": "Evolution of Complex Social Institutions"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/12",
+      "title": "Cultural and Linguistic Evolutionary Change"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/13",
+      "title": "Morphogenesis of Cities and Urban Dynamics"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/14",
+      "title": "Digital Social Networks"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/15",
+      "title": "Formation of Influence Networks"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/16",
+      "title": "Epistemic Markets and Knowledge Valuation"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/17",
+      "title": "Cooperation and Conflict in Large-Scale Societies"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/18",
+      "title": "Cultural Transmission, Recombination, and Idea Propagation"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/19",
+      "title": "Social Identity and Group Belonging"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/20",
+      "title": "Societal Feedback on Individual Neurodynamics"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/21",
+      "title": "Sociogenesis of Shared Information Environments"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/22",
+      "title": "Transculturation and Hybridization of Traditions"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/23",
+      "title": "Mass Cognitive Distortion Regimes"
+    },
+    {
+      "sourcePath": "references/level-7.json",
+      "pointer": "/24",
+      "title": "Global Governance and Supranational Institutions"
+    }
+  ]
+}

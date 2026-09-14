@@ -1,42 +1,42 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20260912.5";
+} from "../../packages/model-pack/src/browser.js?v=20260914.33";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20260912.5";
+} from "../../packages/model-pack/src/cache.js?v=20260914.33";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20260912.5";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20260912.5";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20260912.5";
+} from "../../packages/model-pack/src/registry.js?v=20260914.33";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20260914.33";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20260914.33";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20260912.5";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20260912.5";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20260912.5";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20260912.5";
-import { graphHighlight } from "./graph-interactions.js?v=20260912.5";
-import { citationLinks } from "./evidence-links.js?v=20260912.5";
+} from "../../packages/rdf-mapping/src/index.js?v=20260914.33";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20260914.33";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20260914.33";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20260914.33";
+import { graphHighlight } from "./graph-interactions.js?v=20260914.33";
+import { citationLinks } from "./evidence-links.js?v=20260914.33";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20260912.5";
+} from "./model-selection.js?v=20260914.33";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.09.12.4" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.09.14.31" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20260912.5",
+  "../../assets/js/model-pack-worker.js?v=20260914.33",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:c25cce42563686de6394414e4f68eb8be3dd2bfd67b7e49575d8a119f525b999";
+const EXPECTED_REGISTRY_HASH = "sha256:525e5cab547fec0aee1735fe4f5e71b9189bfccc2b8c4f8bb147ff7e51fd2072";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
@@ -70,7 +70,12 @@ const ids = [
   "level-filter-control", "role-filter-control", "phase-filter-control", "status-filter-control",
   "level-filter-label", "role-filter-label", "phase-filter-label", "status-filter-label",
   "vocabulary-panel", "vocabulary-scope", "vocabulary-group", "vocabulary-records",
-  "quantitative-summary", "quantitative-download"
+  "source-readiness-panel", "source-readiness-summary",
+  "source-readiness-records", "source-readiness-download", "optical-review-panel", "optical-review-summary",
+  "optical-review-records", "optical-review-download",
+  "visual-review-panel", "visual-review-summary", "visual-review-records", "visual-review-download",
+  "neural-review-panel", "neural-review-summary", "neural-review-records", "neural-review-download",
+  "physics-review-panel", "physics-review-summary", "physics-review-records", "physics-review-download"
 ];
 const elements = Object.fromEntries(ids.map((id) => [id, document.getElementById(id)]));
 for (const [id, element] of Object.entries(elements)) {
@@ -364,11 +369,15 @@ function renderGraph() {
 
   const edgeNodes = layout.edges.map((edge) => {
     const isFocusEdge = edge.source === state.focusId || edge.target === state.focusId;
+    const meaning = [edge.relationLayer, edge.role ?? edge.dependencyType, edge.assertion]
+      .filter((value) => value !== null && value !== undefined && value !== "").map(scalarLabel).join(" | ");
+    const weight = edge.weight === null || edge.weight === undefined ? "" : ` | weight ${scalarLabel(edge.weight)}`;
+    const label = `${edge.source} -> ${edge.target}${meaning ? ` | ${meaning}` : ""}${weight}`;
     const group = svgElement("g", {
       class: "graph-edge",
       tabindex: "0",
       role: "img",
-      "aria-label": `${edge.source} to ${edge.target}, ${scalarLabel(edge.dependencyType)}`,
+      "aria-label": label,
       "data-edge-id": edge.id,
       "data-source": edge.source,
       "data-target": edge.target
@@ -387,7 +396,7 @@ function renderGraph() {
       "marker-end": isFocusEdge ? "url(#studio-arrow-focus)" : "url(#studio-arrow)"
     });
     const title = svgElement("title");
-    title.textContent = `${edge.source} -> ${edge.target} | ${scalarLabel(edge.dependencyType)} | weight ${scalarLabel(edge.weight)}`;
+    title.textContent = label;
     group.append(hitPath, linePath, title);
     bindGraphHighlight(group, { kind: "edge", id: edge.id });
     return group;
@@ -548,7 +557,8 @@ function renderRationale(record) {
     for (const study of Array.isArray(claim.contexts) ? claim.contexts : []) {
       if (!study || typeof study !== "object") continue;
       const context = createElement("details");
-      context.append(createElement("summary", "", `Study context: ${study.id} \u00b7 ${study.organism}`));
+      const subject = study.system ?? study.organism;
+      context.append(createElement("summary", "", `Study context: ${study.id}${subject ? ` \u00b7 ${subject}` : ""}`));
       context.append(createElement("p", "", `Preparation: ${study.preparation}`));
       context.append(createElement("p", "", `Observable: ${study.observable}`));
       context.append(createElement("p", "", `Reviewed: ${study.readExtent}. ${(study.reviewedLocators ?? []).join("; ")}`));
@@ -578,6 +588,13 @@ function renderRationale(record) {
     conditions.append(createElement("h5", "", "Joint conditions \u2014 every condition is required"));
     for (const condition of record.conditions) conditions.append(createElement("p", "", condition));
     sections.unshift(conditions);
+  }
+  if (record.representation) {
+    const representation = createElement("section");
+    representation.append(createElement("h5", "", `Atlas role: ${record.representation.role}`));
+    representation.append(createElement("p", "", record.representation.denotes));
+    representation.append(createElement("p", "", `Physical instance admission: ${record.representation.instanceAdmission}.`));
+    sections.unshift(representation);
   }
   container.replaceChildren(...(sections.length ? sections : [createElement("p", "", "This release has no structured claim rationale for this record. Inspect its original source fields below.")]));
 }
@@ -632,6 +649,82 @@ function configureFacet(filterId, entries, allLabel, label) {
   elements[`${prefix}-filter-control`].hidden = entries.length === 0;
 }
 
+function downloadRecord(value, filename) {
+  const url = URL.createObjectURL(new Blob([`${JSON.stringify(value, null, 2)}\n`], { type: "application/json" }));
+  const anchor = createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
+  anchor.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function renderSourceReadiness(pack) {
+  const review = pack.files["model/dictionaries.json"]?.sourceReadiness;
+  const panel = elements["source-readiness-panel"];
+  panel.hidden = !review;
+  panel.open = false;
+  elements["source-readiness-records"].replaceChildren();
+  elements["source-readiness-summary"].textContent = review
+    ? `${review.nodeRoles.length} records with explicit representation roles. Roles describe what a record denotes; they do not establish a physical instance.` : "";
+  elements["source-readiness-download"].onclick = review
+    ? () => downloadRecord(review, "representation-roles.json") : null;
+}
+
+function renderSourceReview(pack, key, prefix) {
+  const dictionaries = pack.files["model/dictionaries.json"];
+  const review = dictionaries?.[key];
+  const panel = elements[`${prefix}-panel`];
+  panel.hidden = !review;
+  panel.open = false;
+  elements[`${prefix}-records`].replaceChildren();
+  elements[`${prefix}-summary`].textContent = "";
+  elements[`${prefix}-download`].onclick = null;
+  if (!review) return;
+  elements[`${prefix}-summary`].textContent = `${review.studies.length} study contexts. Measurements, interventions and interpretations retain their stated scope. Independent scientific review remains open.`;
+  const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
+  const appendSource = (section, id) => {
+    const source = sources.get(id);
+    if (!source) return;
+    const line = createElement("p", "", `${source.title}. `);
+    for (const link of citationLinks({ source }, new URL("../../", import.meta.url))) {
+      const anchor = createElement("a", "evidence-link", link.label);
+      anchor.href = link.href;
+      anchor.rel = "noopener noreferrer";
+      line.append(anchor, document.createTextNode(" "));
+    }
+    section.append(line);
+  };
+  const sections = review.studies.map((study) => {
+    const section = createElement("details", "record-details");
+    section.append(createElement("summary", "", sources.get(study.sourceId)?.title ?? study.id));
+    const studyDesign = {
+      "primary-observation": "Primary observational study",
+      "primary-experiment": "Primary experimental study",
+      "computational-analysis": "Computational analysis"
+    }[study.studyType];
+    for (const [label, value] of [["Study design", studyDesign], ["Preparation", study.preparation], ["Observable", study.observable], ["Finding", study.finding]]) {
+      if (value) section.append(createElement("p", "", `${label}: ${value}`));
+    }
+    for (const limit of study.limitations) section.append(createElement("p", "", limit));
+    if (study.correctionCheck) section.append(createElement("p", "", `Publication check: ${study.correctionCheck}`));
+    appendSource(section, study.sourceId);
+    return section;
+  });
+  for (const comparison of review.comparisons ?? []) {
+    const section = createElement("details", "record-details");
+    section.append(createElement("summary", "", `Interpretation: ${comparison.id}`));
+    section.append(createElement("p", "", comparison.candidate));
+    section.append(createElement("p", "", `Alternative: ${comparison.alternative}`));
+    section.append(createElement("p", "", `Discriminating evidence: ${comparison.discriminator}`));
+    section.append(createElement("p", "", `${comparison.result}. ${comparison.limit}`));
+    for (const assumption of comparison.assumptions ?? []) section.append(createElement("p", "", `Assumption: ${assumption}`));
+    for (const id of comparison.sourceIds) appendSource(section, id);
+    sections.push(section);
+  }
+  elements[`${prefix}-records`].replaceChildren(...sections);
+  elements[`${prefix}-download`].onclick = () => downloadRecord(review, `${key}-evidence.json`);
+}
+
 function renderVocabulary(pack) {
   const dictionaries = pack.files["model/dictionaries.json"];
   const vocabulary = dictionaries?.vocabulary;
@@ -640,7 +733,6 @@ function renderVocabulary(pack) {
   panel.open = false;
   const groupSelect = elements["vocabulary-group"];
   groupSelect.onchange = null;
-  elements["quantitative-download"].onclick = null;
   elements["vocabulary-records"].replaceChildren();
   groupSelect.replaceChildren();
   if (panel.hidden) return;
@@ -653,7 +745,7 @@ function renderVocabulary(pack) {
   const renderGroup = () => {
     const sections = vocabulary.filter((r) => r.group === groupSelect.value).map((record) => {
       const section = createElement("details", "record-details");
-      section.append(createElement("summary", "", `${record.legacyId}: ${record.name}`));
+      section.append(createElement("summary", "", record.name));
       section.append(createElement("p", "", `${record.disposition} / ${record.status}`));
       section.append(createElement("p", "", record.definition));
       section.append(createElement("p", "", record.finding));
@@ -667,33 +759,12 @@ function renderVocabulary(pack) {
         }
         section.append(line);
       }
-      const decision = dictionaries.dictionaryReview?.records?.find((r) => r.id === record.id);
-      if (decision) {
-        const original = createElement("details", "record-details");
-        original.append(createElement("summary", "", `Original record and field decisions: ${record.sourcePointer}`));
-        original.append(createElement("pre", "", JSON.stringify({ original: decision.original, fieldDecisions: decision.fieldDecisions }, null, 2)));
-        section.append(original);
-      }
       return section;
     });
     elements["vocabulary-records"].replaceChildren(...sections);
   };
   groupSelect.onchange = renderGroup;
   renderGroup();
-  const census = dictionaries.quantitativeCensus;
-  const summary = census?.summary;
-  elements["quantitative-summary"].textContent = summary
-    ? `${summary.assertionCount} historical quantitative assertions; ${summary.carrierMismatchCount} carrier-group conflicts across ${summary.carrierMismatchNodeCount} cards (${summary.carrierMismatchesByLevel?.[5]} at Level 5); ${summary.weightSumAnomalyCount} weight-sum anomalies. ${summary.activeLegacyQuantitativeAdmissions} admitted legacy numerical claims. This census does not add scientific-review coverage.`
-    : "No quantitative census is supplied by this release.";
-  elements["quantitative-download"].hidden = !census;
-  if (census) elements["quantitative-download"].onclick = () => {
-    const url = URL.createObjectURL(new Blob([`${JSON.stringify(census, null, 2)}\n`], { type: "application/json" }));
-    const anchor = createElement("a");
-    anchor.href = url;
-    anchor.download = `quantitative-census-${pack.manifest.model.version}.json`;
-    anchor.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  };
 }
 
 function activateModelPack(pack, options = {}) {
@@ -741,6 +812,11 @@ function activateModelPack(pack, options = {}) {
   elements["model-boundary-summary"].textContent = metadata.boundary.summary;
   elements["model-boundary-note"].textContent = metadata.boundary.note;
   renderVocabulary(pack);
+  renderSourceReadiness(pack);
+  renderSourceReview(pack, "optics", "optical-review");
+  renderSourceReview(pack, "visual", "visual-review");
+  renderSourceReview(pack, "neural", "neural-review");
+  renderSourceReview(pack, "physics", "physics-review");
   configureFacet("level-filter", descriptor.facets.levels, "All levels", metadata.labels.levelFilter);
   configureFacet("role-filter", descriptor.facets.typeRoles, "All types", metadata.labels.typeFilter);
   configureFacet("phase-filter", descriptor.facets.phases, "All phases", metadata.labels.phaseFilter);

@@ -1,0 +1,1421 @@
+{
+  "id": "physics-evidence",
+  "independentScientificReviewComplete": false,
+  "studies": [
+    {
+      "id": "breidenbach1969",
+      "sourceId": "breidenbach1969",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.23.935",
+      "journal": "Physical Review Letters",
+      "volume": "23",
+      "issue": "16",
+      "pages": "935-939",
+      "system": "High-energy electron-proton scattering",
+      "preparation": "SLAC-MIT electron-only spectra at 6 and 10 degrees. Figure 1 compares fixed recoil masses W=2, 3 and 3.5 GeV; Figure 2 keeps the incident-energy settings and R=0 versus R=infinity extractions separate.",
+      "observable": "Differential inelastic cross section divided by the Mott cross section, and an R-dependent extraction of nu W2 versus omega=2 M nu/q^2.",
+      "finding": "The deep-continuum ratio falls more slowly with q^2 than the elastic comparator. Approximate scaling is reported under transverse dominance; longitudinal dominance gives different curves.",
+      "limitations": [
+        "Only scattered electrons were detected; W1 and W2 were not separately determined by these small-angle data.",
+        "The inelastic differential/Mott ratio has units GeV^-1; the elastic comparator is dimensionless. The comparison concerns momentum-transfer dependence, not equal absolute observables.",
+        "The opening text says incident energies 7-17 GeV, while Figure 2 includes 17.7 GeV. The figure-specific settings are retained without an inferred common exact upper bound.",
+        "Conditional scaling does not directly observe free quarks, determine their number or uniquely establish the complete Standard Model."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 935-936: electron-only spectra and cross-section decomposition; Figure 1",
+        "Pages 936-937: R-dependent structure function and scaling; Figure 2",
+        "Pages 937-939: competing models, sum rules and references"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.935",
+      "correctionCheck": "Publisher identity checked; no correction link appears on the inspected article page. This is not a systematic search of all later reassessments."
+    },
+    {
+      "id": "tasso1979",
+      "sourceId": "tasso1979",
+      "studyType": "primary-experiment",
+      "doi": "10.1016/0370-2693(79)90830-X",
+      "journal": "Physics Letters B",
+      "volume": "86",
+      "issue": "2",
+      "pages": "243-249",
+      "system": "Hadronic electron-positron annihilation at PETRA",
+      "preparation": "TASSO charged-track sample: 75 events at 13 GeV, 40 at 17 GeV, 118 pooled at 27.4/27.7 GeV, 135 at 30 GeV and 40 at 31.6 GeV. Tracks satisfy the stated drift-chamber and transverse-momentum cuts. Low and high energy groups are compared with Field-Feynman fragmentation variants and azimuthal randomization.",
+      "observable": "Momentum-tensor event plane, in-plane/out-of-plane transverse momentum, aplanarity A, sphericity S and three fitted jet axes.",
+      "finding": "At high energy, A<0.04 and S>0.25 select 18 planar events versus 4.5 expected in the stated two-jet comparison and 4 in the randomization estimate. Selected events admit three-jet fits.",
+      "limitations": [
+        "Selected charged tracks define the momentum tensor and event plane; neutral hadrons and detector acceptance are not a complete final-state census.",
+        "Trigger multiplicity changes with energy; the report describes simulation checks. The data and simulation have not been replayed here.",
+        "Three fitted jet axes, charged-track counts, primary partons and color representations are distinct counting domains. No universal minimum or stable free-gluon occurrence follows.",
+        "The report rejects the specified collinear fragmentation comparison; quantitative first-order QCD comparisons are assigned to a subsequent paper."
+      ],
+      "readExtent": "full-primary-author-report",
+      "reviewedLocators": [
+        "DESY 79/53, PDF page 4: printed pages 2-3, selection and jet definitions",
+        "DESY 79/53, PDF pages 5-6: printed pages 4-7, transverse broadening and planarity tests",
+        "DESY 79/53, PDF page 7: printed pages 8-9, three-jet interpretation and conclusion",
+        "DESY 79/53, PDF pages 9-15: captions and Figures 1-6"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://bib-pubdb1.desy.de/record/322261",
+      "correctionCheck": "DOI, title, journal and DESY report number checked against the publisher and institutional record. The full text reviewed is the author report, not the restricted journal PDF. No exhaustive correction or replication review is claimed."
+    },
+    {
+      "id": "webber2011-r06",
+      "sourceId": "webber2011",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.106.041803",
+      "journal": "Physical Review Letters",
+      "volume": "106",
+      "issue": "4",
+      "pages": "041803, pages 1-5",
+      "system": "Stopped positive muons",
+      "preparation": "AK-3 ferromagnetic foil with approximately 0.4 T internal field. Residual spin effects are suppressed by target dephasing and opposite detector pairs; a corrected summed time histogram is fitted. Both runs use 5 microsecond accumulation and 22 microsecond measurement windows, with 170 scintillator pairs detecting positrons.",
+      "observable": "Corrected positron-time histograms and fitted positive-muon lifetime.",
+      "finding": "R06 lifetime: 2196979.9 ps with 2.5 ps statistical and 0.9 ps systematic uncertainties.",
+      "limitations": [
+        "Positive muons in the stated targets are measured; this is not a lifetime measurement for every lepton.",
+        "Pileup, gain, timing, beam extinction and spin effects enter the extraction. Shared systematic errors correlate R06 and R07.",
+        "Detector pairs and repeated fills are not independent replications of the entire experiment; decay neutrinos are not detected by this setup.",
+        "No raw-waveform fit or covariance calculation is independently reproduced."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 041803-1 to 041803-2: muon targets, timing and detector; Figure 1",
+        "Page 041803-3: pileup correction and distinct R06/R07 spin fits; Equation 2",
+        "Page 041803-4: run results and correlated uncertainties; Equations 3-4, Table I and Figure 2",
+        "Pages 041803-1 and 041803-4: coupling extraction and universality assumption; Equations 1 and 5"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.041803",
+      "correctionCheck": "Publisher note DOI 10.1103/PhysRevLett.106.079901 was read: the 7 February 2011 correction adds acknowledgments. The reported lifetime and coupling are unchanged by that note."
+    },
+    {
+      "id": "webber2011-r07",
+      "sourceId": "webber2011",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.106.041803",
+      "journal": "Physical Review Letters",
+      "volume": "106",
+      "issue": "4",
+      "pages": "041803, pages 1-5",
+      "system": "Stopped positive muons",
+      "preparation": "Quartz disk in approximately 0.013 T external field; most stops form muonium. Individual detector-pair fits include transverse precession, followed by a geometry-dependent longitudinal-relaxation fit. Both runs use 5 microsecond accumulation and 22 microsecond measurement windows, with 170 scintillator pairs detecting positrons.",
+      "observable": "Corrected positron-time histograms and fitted positive-muon lifetime.",
+      "finding": "R07 lifetime: 2196981.2 ps with 3.7 ps statistical and 0.9 ps systematic uncertainties.",
+      "limitations": [
+        "Positive muons in the stated targets are measured; this is not a lifetime measurement for every lepton.",
+        "Pileup, gain, timing, beam extinction and spin effects enter the extraction. Shared systematic errors correlate R06 and R07.",
+        "Detector pairs and repeated fills are not independent replications of the entire experiment; decay neutrinos are not detected by this setup.",
+        "No raw-waveform fit or covariance calculation is independently reproduced."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 041803-1 to 041803-2: muon targets, timing and detector; Figure 1",
+        "Page 041803-3: pileup correction and distinct R06/R07 spin fits; Equation 2",
+        "Page 041803-4: run results and correlated uncertainties; Equations 3-4, Table I and Figure 2",
+        "Pages 041803-1 and 041803-4: coupling extraction and universality assumption; Equations 1 and 5"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.041803",
+      "correctionCheck": "Publisher note DOI 10.1103/PhysRevLett.106.079901 was read: the 7 February 2011 correction adds acknowledgments. The reported lifetime and coupling are unchanged by that note."
+    },
+    {
+      "id": "hensen2015",
+      "sourceId": "hensen2015",
+      "studyType": "primary-experiment",
+      "doi": "10.1038/nature15759",
+      "journal": "Nature",
+      "volume": "526",
+      "issue": "7575",
+      "pages": "682-686",
+      "system": "Electronic spin subspaces of spatially separated nitrogen-vacancy centres in diamond",
+      "preparation": "Two NV spin qubits in diamond at 4 K, separated by 1280 m. Photon heralding, premeasurement validity filters and 3.7 microsecond binary spin readout define 245 Bell trials. Missing readout clicks give -1, not a discarded trial.",
+      "observable": "Binary setting/outcome records, setting-conditioned correlators and the event-tagged CHSH win count.",
+      "finding": "Deposited event-table replay recovers 196 wins in 245 trials from 4746 exported rows; S=2.422499870 with conventional SD 0.203826598. With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.039174643558790.",
+      "limitations": [
+        "The Bell trial uses two levels of each spin-1 NV ground state, not a census of two isolated spin-half particles.",
+        "S=2.42 and I=8(196/245-1/2)=2.40 are distinct finite-sample summaries. The quoted 0.20 uncertainty belongs to the conventional analysis.",
+        "The complete analysis permits memory and bounded setting predictability; its stopping and timing conditions require the original records for independent verification.",
+        "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum.",
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+      ],
+      "readExtent": "full-primary-article-and-selected-supplement",
+      "reviewedLocators": [
+        "Pages 682-684: CHSH definition, spin preparation and spacetime conditions; Figures 1-2",
+        "Pages 684-686: characterization, Bell results and interpretation limits; Figures 3-4",
+        "Supplementary pages 1-11: sections A-K, preparation, filtering, timing and recording",
+        "Supplementary pages 13-16: statistical introduction and sections N-P, score and null assumptions",
+        "Supplementary pages 21 and 24-26: Lemma 3 statement, sections R-S and references"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://www.nature.com/articles/nature15759",
+      "correctionCheck": "Publisher identity and the 2016 follow-up checked. No correction notice was found on the inspected publisher pages; no exhaustive later-reassessment review is claimed."
+    },
+    {
+      "id": "hensen2016",
+      "sourceId": "hensen2016",
+      "studyType": "primary-experiment",
+      "doi": "10.1038/srep30289",
+      "journal": "Scientific Reports",
+      "volume": "6",
+      "issue": "article 30289",
+      "pages": "30289, pages 1-11",
+      "system": "Electronic spin subspaces of spatially separated nitrogen-vacancy centres in diamond",
+      "preparation": "Second run on the Delft apparatus, with 300 trials, changed heralding windows, psi-minus/psi-plus event tags, and QRNG bits combined with stored classical bits. The state tag changes which setting pair requires anticorrelation.",
+      "observable": "Binary setting/outcome records, setting-conditioned correlators and the event-tagged CHSH win count.",
+      "finding": "Deposited event-table replay recovers 237 wins in 300 trials from 3918 exported rows; S=2.346430516 with conventional SD 0.184162420. With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.060727644566033.",
+      "limitations": [
+        "The same group and apparatus supply both runs; the second run has changed heralding windows, psi-minus/psi-plus tags and a replaced detector with recalibrated timing.",
+        "The second-run complete P=0.061 does not reject the specified null at 0.05. Nonrejection does not establish a local model.",
+        "Combined-run P-values depend on the combination assumptions; they are not a third independent experiment. Post hoc window scans do not yield global significance.",
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 1-3: second-run preparation, state-specific scores and results; Figures 1-2",
+        "Pages 3-6: combination assumptions, window scans and setting tests; Figures 3-4 and Table 1",
+        "Pages 6-10: conditional local-model assumptions, RNG analysis and conclusion"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://www.nature.com/articles/srep30289",
+      "correctionCheck": "Publisher identity and the 2016 follow-up checked. No correction notice was found on the inspected publisher pages; no exhaustive later-reassessment review is claimed."
+    },
+    {
+      "id": "lamoreaux1997",
+      "sourceId": "lamoreaux1997",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.78.5",
+      "journal": "Physical Review Letters",
+      "volume": "78",
+      "issue": "1",
+      "pages": "5-8",
+      "system": "Conducting sphere-plane force measurement",
+      "preparation": "Cu/Au-coated surfaces in a feedback torsion balance; relative separation from calibrated PZT motion and absolute separation from the electrostatic fit. The final dataset comprises 216 retained sweeps.",
+      "observable": "Feedback force versus separation and residual after subtracting fitted electrostatic and constant terms.",
+      "finding": "Attractive residual over the stated 0.6-6 micrometer range; interpretation requires the radius and optical-response corrections.",
+      "limitations": [
+        "Use the corrected local radius R=12.5 +/- 0.3 cm from the erratum and the accepted Lambrecht-Reynaud optical calculation.",
+        "The 2000 comment gives eta about 0.87 for Au at 0.6 micrometers and Au/Cu agreement within 1%; the reply accepts this correction.",
+        "The reply explicitly reports only minimal testing of systematic errors. Agreement is not a comprehensive 5% uncertainty certification.",
+        "Published measurements and fits have not been independently reproduced from acquisition data."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 5-7: sphere-plane apparatus, electrostatic calibration and subtraction; Figures 1-3",
+        "Pages 7-8: sweep selection, residual force and fitted amplitude; Figure 4 and Equation 9"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://doi.org/10.1103/PhysRevLett.78.5",
+      "correctionCheck": "1998 erratum and linked 2000 comment/reply read in full. The 1998 Au/Cu discrepancy is corrected by the accepted 2000 calculation. No exhaustive later-reassessment review."
+    },
+    {
+      "id": "bressi2002",
+      "sourceId": "bressi2002",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.88.041804",
+      "journal": "Physical Review Letters",
+      "volume": "88",
+      "issue": "4",
+      "pages": "041804-1 to 041804-4",
+      "system": "Parallel chromium-coated silicon surfaces",
+      "preparation": "A chromium-coated silicon cantilever faces a rigid coated beam, overlapping 1.2 by 1.2 mm. Interferometry reads the torsional resonance; electrostatic sweeps calibrate gap and residual voltage.",
+      "observable": "nu^2-nu0^2 versus calibrated gap, then residual after the electrostatic subtraction.",
+      "finding": "Main fitted coefficient K_C=(1.22 +/- 0.18) x 10^-27 N m^2; the selected distance range and voltage-sign conflict remain explicit.",
+      "limitations": [
+        "The main coefficient uses the nine closest points, 0.5-1.1 micrometers, selected through chi-square analysis.",
+        "The printed dynamic calibration gives V0=+(60.2 +/- 1.7) mV, conflicting with the static -(68.6 +/- 2.2) mV estimate and compensating Vc=-68.6 mV. The sign remains unresolved.",
+        "Points at 1-2 micrometers deviate from the main fit. A separate fit with linear time drift gives (1.24 +/- 0.10) x 10^-27 N m^2; it is not the same estimator.",
+        "The exponent 5.0 +/- 0.1 belongs to the squared-frequency shift; the corresponding ideal pressure scales as d^-4.",
+        "Published measurements and fits have not been independently reproduced from acquisition data."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 041804-1 to 041804-3: parallel surfaces, voltage calibration and frequency readout; Figures 1-3",
+        "Pages 041804-3 to 041804-4: residual fit, coefficient and selected distances; Equations 3-4 and Figure 4"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://doi.org/10.1103/PhysRevLett.88.041804",
+      "correctionCheck": "Publisher page inspected; no linked correction found there. This limited check does not resolve the printed voltage-sign discrepancy or cover all later criticism."
+    },
+    {
+      "id": "lamb1947",
+      "sourceId": "lamb1947",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRev.72.241",
+      "journal": "Physical Review",
+      "volume": "72",
+      "issue": "3",
+      "pages": "241-243",
+      "system": "Microwave spectroscopy of metastable hydrogen",
+      "preparation": "Electron-impact preparation of a metastable hydrogen beam; microwave quenching at fixed frequency while magnetic field is varied; electron-ejection detection at a metal target.",
+      "observable": "Galvanometer-current change under microwave interruption and resonance fields at several frequencies.",
+      "finding": "The Zeeman comparison places 2S1/2 about 1000 MHz above 2P1/2, without a best-fit uncertainty.",
+      "limitations": [
+        "The plotted 1000 MHz displacement is an approximate comparison and explicitly not a best fit.",
+        "Field calibration and inhomogeneity, line broadening and hyperfine structure limit the measurement; the proposed 10 MHz accuracy is future work in this article.",
+        "A measured level separation does not isolate a unique radiative contribution or absolute vacuum energy.",
+        "Published measurements and fits have not been independently reproduced from acquisition data."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 241-242: metastable hydrogen beam and microwave quenching; Figure 1",
+        "Pages 242-243: Zeeman comparison, approximate level separation and precision limits; Figure 2"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://doi.org/10.1103/PhysRev.72.241",
+      "correctionCheck": "Publisher identity checked against the published scan. Later precision measurements are outside this review; no exhaustive correction search is claimed."
+    },
+    {
+      "id": "cms2013-r32",
+      "sourceId": "cms2013-r32",
+      "studyType": "primary-experiment",
+      "doi": "10.1140/epjc/s10052-013-2604-6",
+      "journal": "European Physical Journal C",
+      "volume": "73",
+      "issue": "10",
+      "pages": "2604",
+      "system": "Inclusive jet production in proton-proton collisions",
+      "preparation": "CMS 2011 proton-proton collisions at sqrt(s)=7 TeV. The trigger samples have effective luminosities 0.15, 0.51 and 5.0 fb^-1 for HLT thresholds 190, 240 and 370 GeV. Particle-flow reconstruction and anti-kT R=0.7 define selected jets; both leading jets must have |y|<2.5 and selected jets require pT>150 GeV.",
+      "observable": "Unfolded inclusive three-jet/two-jet ratio R32 versus Q=(pT1+pT2)/2, with declared cuts.",
+      "finding": "The ratio supports a conditional NLO extraction of alpha_s(M_Z) and three correlated scale-region comparisons under the specified PDF/RGE assumptions.",
+      "limitations": [
+        "The observable uses anti-kT jets with R=0.7, pT>150 GeV and |y|<2.5; Q is the average transverse momentum of the two leading jets.",
+        "R32 is unfolded to stable-particle level with a simulated response. Luminosity cancels in the ratio, while jet-energy and unfolding uncertainties remain correlated across bins.",
+        "The measured range is 250-1390 GeV; the coupling fits use 420-1390 GeV to avoid the large scale uncertainty near the jet threshold.",
+        "The rising, plateau and falling parts of R32 also depend on phase space and parton luminosities; the shape is not a direct plot of alpha_s.",
+        "Event reconstruction, detector corrections, unfolding and the published fits have not been independently reproduced.",
+        "Use the unfolded 420-1390 GeV R32 data with the statistical covariance and fully bin-correlated individual JES and unfolding systematic sources.",
+        "Use NLOJET++/fastNLO NLO matrix elements with five massless flavors, the NNPDF2.1 NNLO PDF family and the stated nonperturbative correction; central mu_r=mu_f=Q.",
+        "The final Equation 6 result is alpha_s(M_Z)=0.1148 +/- 0.0014 (experimental) +/- 0.0018 (PDF) +/- 0.0050 (theory). The symmetric theory uncertainty includes the stated residual effects; the one-sided scale envelope alone is insufficient.",
+        "Changing PDFs, perturbative order, scale prescription or heavy-flavor treatment changes the inference; a fitted coupling is not a detector observable or a proof of its assumed running equation.",
+        "Fit alpha_s(M_Z) separately in the three Q ranges using the same NLO/PDF construction, then evolve to alpha_s(Q) with the NNPDF2.1 three-loop RGE.",
+        "The effective scales 474, 664 and 896 GeV are cross-section-weighted NLO averages for the 420-600, 600-800 and 800-1390 GeV ranges; 1390 GeV is an upper boundary, not a fourth extracted coupling.",
+        "Experimental uncertainties across the three extractions are correlated. The combined-fit curve and the three points share data; they are not independent replications.",
+        "R32 reduces sensitivity to PDF evolution but does not eliminate it. Agreement is conditional consistency with the specified RGE/PDF calculation, not a theory-independent measurement of the beta function.",
+        "The published comparison supplies no independent constant-coupling rejection statistic here; additional experiments plotted in Figure 3 are outside this review."
+      ],
+      "readExtent": "full-primary-author-report",
+      "reviewedLocators": [
+        "Author report arXiv:1304.7498v2, Sections 1-4, pages 1-6: selection, unfolding and R32; Table 1 and Figure 1",
+        "Author report arXiv:1304.7498v2, Section 5, pages 6-9: covariance fit, scale choices and final uncertainty; Equations 2-7 and Table 2",
+        "Author report arXiv:1304.7498v2, Sections 5-6, pages 9-11: separate scale fits and RGE comparison; Tables 3-4 and Figure 3"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://arxiv.org/abs/1304.7498v2",
+      "correctionCheck": "Article identity and published-replacement designation checked against the CMS result page and arXiv record. Use the final symmetric theory uncertainty in Equation 6 of v2. DOI/title searches found no separately identified correction; this is not an exhaustive correction guarantee."
+    },
+    {
+      "id": "creutz1980",
+      "sourceId": "creutz1980",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.21.2308",
+      "journal": "Physical Review D",
+      "volume": "21",
+      "issue": "8",
+      "pages": "2308-2315",
+      "system": "Pure SU(2) Euclidean lattice gauge theory without dynamical quarks",
+      "preparation": "Pure SU(2) Wilson gauge fields without dynamical quarks on four-dimensional periodic Euclidean hypercubic lattices. Local heat-bath updates sample Z=integral dU exp(-beta S), S=sum[1-one half Tr U_plaquette], beta=4/e0^2. Runs compare random and ordered starts and lattice sizes up to 10^4 sites.",
+      "observable": "Ensemble square-loop expectations and a conditional area coefficient as functions of beta and finite lattice size.",
+      "finding": "The fitted area coefficients show a crossover near beta=2 and a decrease compatible with the leading SU(2) asymptotic-freedom slope under fixed-string-tension renormalization. This is evidence within the finite pure-gauge model.",
+      "limitations": [
+        "The paper studies a statistical lattice ensemble, not detector events or the real-time formation of a flux tube.",
+        "At beta=3, the size comparison tests square loops through side six; side five is the largest used in the subsequent analysis. The main beta=2.1-3 data use a 10^4 lattice; other beta values use 8^4.",
+        "Figure 3 error bars are standard deviations of fluctuations over five iterations after equilibration, not a documented autocorrelation-corrected uncertainty of independent samples.",
+        "Hot/cold convergence and finite-size comparisons are diagnostics within the reported runs; no deposited configuration stream or independent Monte Carlo replay is admitted.",
+        "Fit square-loop expectations with W(S)=exp[-(A+B S+C S^2)] by minimizing mean squared deviations of loop values; identify C=a^2 K only within this fit model.",
+        "Below beta=2.1 only sides one and two are significant and the fit includes side zero; below beta=1.6 only side one is significant and area dominance is assumed.",
+        "The paper displays fit variants at beta=1.6-1.8 and 2.2/2.25. Above beta=2.5 the area term is too small relative to the perimeter term for an accurate tension determination.",
+        "Finite volume, available loop sizes, sampling and fit assumptions limit the inference. The fit is not a direct detector measurement or an independently reproduced asymptotic potential.",
+        "Use the fitted a^2 K in a renormalization prescription that holds K fixed; compare with the leading SU(2) form proportional to exp(-6 pi^2 beta/11).",
+        "Figure 6 uses an arbitrarily chosen normalization for the weak-coupling comparison. Equation 5.4 estimates Lambda approximately sqrt(K)/200 with uncertainty of roughly a factor of two in that coefficient.",
+        "The renormalization prescription is based on confinement and the loop fits have restricted resolving power; the comparison is conditional support, not an independent proof of continuum confinement.",
+        "The model contains no dynamical quarks. Its lattice bare coupling and scale normalization cannot be identified with CMS alpha_s, physical QCD string tension or a universal confinement threshold.",
+        "The crossover does not identify instantons or any other unique microscopic confinement mechanism; no real-time hadronization or stable-complexity rule is measured."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Sections I-II, pages 2308-2311: pure SU(2), periodic Euclidean lattice and local heat-bath sampling; Equations 2.1-2.21",
+        "Section III, pages 2311-2312: classical matching, fundamental Wilson loops, fixed-tension renormalization and coupling limits; Equations 3.1-3.24",
+        "Section IV, pages 2312-2314: hot/cold starts, finite-size dependence and square-loop fits; Figures 1-6 and Equations 4.1-4.4",
+        "Section V, page 2314: conditional scaling interpretation, approximate normalization and its uncertainty; Equations 5.1-5.4"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.21.2308",
+      "correctionCheck": "Publisher identity and listed comment checked. Bachas, Physical Review D 23, 1037-1041 (1981), DOI 10.1103/PhysRevD.23.1037, concerns an approximate instanton cutoff interpretation, not replacement Monte Carlo data or an erratum to the loop fits. The original Reference 1 swaps the Gross-Wilczek and Politzer page numbers; use their original DOI identities. No separately identified erratum found in the consulted publisher record and DOI/title searches; this is not an exhaustive guarantee."
+    },
+    {
+      "id": "bali2005",
+      "sourceId": "bali2005",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.71.114513",
+      "journal": "Physical Review D",
+      "volume": "71",
+      "issue": "11",
+      "pages": "114513",
+      "system": "SU(3) static-source spectrum with two degenerate Wilson sea quarks at one lattice spacing and mass",
+      "preparation": "Four-dimensional Euclidean SU(3) lattice gauge theory with two mass-degenerate Wilson sea quarks, external static sources and the I=0 string/two-meson sector. The 24^3 x 40 ensemble uses beta=5.6, kappa=0.1575 and r0/a=6.009(53); choosing r0=0.5 fm gives a approximately 0.083 fm. The sea-quark mass is slightly below the physical strange-quark mass.",
+      "observable": "Euclidean string/two-meson correlation matrix, fitted static energies and basis mixing.",
+      "finding": "The two-state fit gives an avoided crossing, with the lower energy approaching the two-static-light-meson threshold over the measured range. A quadratic gap fit reports r_c/a=15.00(8) and a*DeltaE_c=0.0217(9); physical-unit conversion and uncertainties retain their declared scale and ensemble.",
+      "limitations": [
+        "One lattice spacing and one sea-quark mass are studied; these are not physical up/down masses or a two-plus-one-flavor ensemble. Finite-volume diagnostics are not an infinite-volume or continuum extrapolation.",
+        "Quark-propagator matrix entries use 20 thermalized configurations separated by 125 HMC trajectories. Wilson loops use 184 configurations separated by 25 trajectories and aligned into 20 bins; the two sample counts are correlated, not independent replications.",
+        "Smearing, a modified static action, low-mode eigenvectors and residual stochastic estimators improve overlap and noise. Low-mode truncation alone is biased; finite stochastic estimates are not exact propagators.",
+        "Monte Carlo sampling and Euclidean separation are not real-time string formation. No underlying configuration stream, correlator covariance or independent numerical fit is available in this graph.",
+        "The correlation matrix retains Q-Q, Q-B and B-B entries, with disconnected and connected two-meson terms and their flavor factors. The I=1 disconnected comparison is a sector of the same dynamical ensemble, not a separate quenched simulation.",
+        "The Wilson-loop-only readout at r greater than r_c and measured Euclidean times t<=9a shows no visible string-breaking signal. This is a sensitivity limitation of that operator and time window.",
+        "The null readout does not negate mixing inferred from the full correlation matrix or demonstrate the existence of isolated free quarks.",
+        "The energy-spectrum and mixing fits share this ensemble; no independent replication or intervention switching off sea quarks is supplied.",
+        "Fit the common 2 x 2 correlation matrix with five parameters theta, a_Q, a_B, E1 and E2, retaining the separation-dependent time windows in Equations 71-75 and the two-state truncation.",
+        "Divide matrix correlators by the squared static-light correlator to infer E1-2m_B and E2-2m_B. Static self-energies cancel in these differences; absolute static energies are cutoff-dependent.",
+        "The lower fitted energy approaches the two-meson threshold within the sampled separation range. A Cornell fit below the breaking region is not a linearly rising ground-state potential at all distances.",
+        "The quadratic gap fit uses 14a<=r_bar<=16a and reports r_c/a=15.00(8), a*DeltaE_c=0.0217(9), r_c/r0=2.496(26), r_c=1.248(13) fm and DeltaE_c=51(3) MeV with r0=0.5 fm. Quoted errors are statistical; scale-setting, sea-mass and continuum uncertainties are not included.",
+        "Figure 17's no-mixing comparison uses operator sectors from the same two-flavor ensemble. It is not a separately sampled quenched control or an intervention experiment.",
+        "Figure 22's two-plus-one-flavor bands are explicitly speculative. The finite-window parametrization has an incorrect large-distance asymptote; neither supplies a physical-mass calculation or universal string-breaking threshold.",
+        "In the declared two-state basis, g(r)=DeltaE(r)*sin(2*theta(r))/2 has units of energy. It is a mixing coupling and Euclidean relaxation quantity, not a measured stochastic real-time decay rate.",
+        "Use the Equation 77 basis convention. The summary sine/cosine swap and the Equation 85 equal-mixing mismatch remain unresolved source inconsistencies; an exact theta(r_c)=pi/4 is not assumed.",
+        "The Equation 96 consistency ratio reuses correlators and the fitted energy gap. Agreement is not independent replication; small-separation corrections limit its plateau.",
+        "Finite-mass quarkonium, irreversible hadronization, stable nuclear or atomic organization and a downward causal rule are not computed. A static spectral description does not establish those claims.",
+        "Use Equation 77: |1>=cos(theta)|Q>+sin(theta)|B>, and Equation 78: |2>=-sin(theta)|Q>+cos(theta)|B>. The Section VII summary interchanges sine and cosine and is not the adopted convention.",
+        "The two-state truncation omits higher excitations. Mixing angles depend on the selected basis; fitted source overlaps are not probabilities of an exhaustive Fock decomposition.",
+        "The gap minimum defines r_c. Equation 85 gives theta(r_s)=pi/2-c*pi/4, so the text's exact theta(r_s)=pi/4 identity does not hold for fitted c=0.914. No exact identification of r_s, r_c and equal mixing is admitted.",
+        "The Euclidean transfer description concerns energy levels. A real-time decay, irreversible hadronization or downward change to quark dynamics requires additional dynamics and evidence."
+      ],
+      "readExtent": "full-primary-author-report",
+      "reviewedLocators": [
+        "Author report hep-lat/0505012v2, Sections II-III, pages 2-14: SU(3) static-source operators, two-flavor ensemble, sampling and noise reduction; Equations 13-26 and 53-65",
+        "Author report hep-lat/0505012v2, Sections IV-V A, pages 14-19: implicit mixing, Wilson-loop null result, spectral fits and basis convention; Figures 10-14, Table I and Equations 66-82",
+        "Author report hep-lat/0505012v2, Section V B, pages 19-20: avoided crossing, mixing-angle parametrization and minimum-gap fit; Figures 15-17 and Equations 85-93",
+        "Author report hep-lat/0505012v2, Section V C, pages 20-22: Euclidean mixing coupling, Minkowski oscillations and shared-data ratio check; Figures 18-19 and Equations 94-96",
+        "Author report hep-lat/0505012v2, Sections VI-VII, pages 23-25: physical-mass speculation, finite-range parametrization, quarkonium interpretation and summary convention"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/0505012v2",
+      "correctionCheck": "Author v2 and publisher identity checked; journal publication is 28 June 2005. The reviewed v2 includes corrected Table I uncertainties. Section VII reverses the Equation 77 basis coefficients, and Equation 85 does not give the stated exact equal-mixing identity at fitted c unequal to one. No separately identified erratum found in consulted publisher/DOI/title records; the search is not exhaustive."
+    },
+    {
+      "id": "lee2002",
+      "sourceId": "lee2002",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevD.66.012002",
+      "journal": "Physical Review D",
+      "volume": "66",
+      "issue": "1",
+      "pages": "012002",
+      "system": "Processed silicone-oil drops in a horizontal alternating electric field",
+      "preparation": "A modified Millikan oil-drop experiment measures horizontal trajectories in an alternating electric field while upward air flow slows the drops. The final selected sample contains 70.1 mg of processed silicone oil in 16,807,644 drops with average diameter approximately 20.6 micrometers.",
+      "observable": "Calibrated electric charge per accepted drop and a reported fractional-charge abundance bound.",
+      "finding": "The final 70.1 mg silicone-oil sample shows integer electric-charge peaks and no accepted drop more than 0.15 e from the nearest integer. The result uses the stated cuts without background subtraction.",
+      "limitations": [
+        "Stokes drift vx=Q*E/(6*pi*eta*r) supplies electric-charge readout. Hourly integer-peak fits calibrate E/r; Brownian-motion and vertical-velocity estimates provide radius checks.",
+        "The complete trajectory fit retains the negative covariance between consecutive velocity estimates caused by shared position measurements. The central residual peak has width approximately 0.021 in units of e.",
+        "Table I gives 3,377,477 drops and 12.1 mg in set 1, and 13,430,167 drops and 58.0 mg in set 2. Section IV B identifies the final sample after cuts; do not subtract the reported rejection fractions again.",
+        "Selection restricts charge magnitude, charge error, trajectory fit, vertical velocity, horizontal position and interdrop separation. Table II joint rejections are 21.0% and 9.4%; individual cuts overlap and their percentages cannot be added.",
+        "The observable is electric charge in processed silicone oil, not color charge. Raw trajectories, hourly calibrations and acceptance have not been independently replayed.",
+        "Section IV B reports no accepted drop farther than 0.15 e from the nearest integer, with no background subtraction. The modulo-one gap is described as 0.15-0.85; the narrower 0.18-0.82 interval is used for the admitted published bound.",
+        "The earlier 17.4 mg experiment contained an anomalous drop that this search did not confirm. These samples are not pooled, and the earlier event is not established to be an artifact.",
+        "Report the published 95% confidence upper limit of 1.17 x 10^-22 particles per nucleon only for 0.18<=q_r<=0.82 in the analyzed silicone oil. Non-detection is not proof of zero abundance.",
+        "The abstract and Introduction give the 0.18-0.82 window, whereas Section IV B assigns the same limit to 0.15-0.85. The observed gap and the admitted confidence-limit window remain distinct.",
+        "The confidence construction and effective-exposure normalization have not been independently reproduced. The quoted mass and zero count alone do not recover the printed limit under a simple unit-efficiency Poisson model; no unreported efficiency or replacement limit is invented.",
+        "Processing may remove fractional-charge particles and their natural concentration is unknown. The authors expressly restrict generalization to other materials; this bound does not establish universal color confinement or the absence of every isolated quark species.",
+        "q=Q/e is electric charge in electron-charge-magnitude units. It is not QCD color charge or an observable of neutral colored objects.",
+        "q_r=q-floor(q) lies in [0,1). The centered residual q_c=q-nearest_integer(q) has a different range; Figure 9's q_c caption is inconsistent with its modulo-one axis and the Section IV B definition.",
+        "A charge window is a measurement acceptance condition, not a particle species, minimum constituent count or universal absence statement."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 012002-1 to 012002-6, Sections I-III: electric-charge readout, oil preparation, integer-peak calibration and trajectory covariance; Equations 1-11 and Table I",
+        "Published pages 012002-6 to 012002-8, Section IV: selection, final sample, centered and modulo-one residuals, null result and reported limit; Table II, Figures 7-9 and Equations 12-16",
+        "Published pages 012002-1 and 012002-9, abstract, Introduction and Section V A: quoted charge window and abundance limit, material-processing restriction and limits of comparison; Table III"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://arxiv.org/abs/hep-ex/0204003v2",
+      "correctionCheck": "Published PDF identifies publication on 9 July 2002. The charge-window discrepancy and Figure 9 residual label are explicit; the printed confidence normalization remains unreproduced. No separately identified erratum found in consulted DOI/title records; the search is not exhaustive."
+    },
+    {
+      "id": "durr2008",
+      "sourceId": "durr2008",
+      "studyType": "computational-analysis",
+      "doi": "10.1126/science.1163233",
+      "journal": "Science",
+      "volume": "322",
+      "issue": "5905",
+      "pages": "1224-1227",
+      "system": "Isospin-symmetric two-plus-one-flavor SU(3) light-hadron spectrum at three lattice spacings",
+      "preparation": "Two-plus-one-flavor SU(3) lattice QCD with degenerate up/down masses and a strange quark, without QED or isospin breaking. Tree-level Symanzik gauge and clover-improved Wilson fermion actions use six stout-link averaging levels. Three gauge couplings beta=3.3, 3.57 and 3.7 give spacings about 0.125, 0.085 and 0.065 fm; simulated pion masses reach 190 MeV.",
+      "observable": "Hadronic two-point correlators, finite-lattice energies and calibrated physical-mass spectrum; selected lowest-level resonance sensitivity.",
+      "finding": "Nine non-input hadron masses per normalization set agree with the paper's comparison within the reported uncertainty; nucleon results are isospin symmetric. Two lightest rho/Delta channel points cannot supply a reliable mass extraction and are omitted.",
+      "limitations": [
+        "The physical pion mass is reached by extrapolation from a minimum simulated mass of 190 MeV, not by direct simulation at the physical light-quark masses. Three finite lattice spacings support a specified continuum fit, not exact continuum dynamics.",
+        "Table S1 has fourteen base parameter rows, including auxiliary volumes for one row and paired strange masses for four rows. Those additional runs must not be collapsed into fourteen identical ensembles or counted as independent full-spectrum replications.",
+        "Analysis uses every tenth trajectory and up to eight source timeslices per configuration. Autocorrelation and binning diagnostics, including the long 10000- and 4500-trajectory runs, support the stated sampling; source timeslices do not supply independent simulations.",
+        "Spatial extents reach about 4 fm and temporal extents about 8 fm. M_pi*L around four is a finite-volume rule of thumb tested within this analysis, not a universal stability or carrier threshold.",
+        "The detailed action and hadronic operators are delegated to cited method papers. This graph records the reported setup without claiming a complete action implementation or independent numerical reproduction.",
+        "Gaussian sources and sinks of radius about 0.32 fm on Coulomb-gauge-fixed configurations show reduced excited-state contamination relative to point sources in Figure S1. Reduced contamination is not its exact elimination.",
+        "The twelve channels are pi, K, rho, K*, N, Lambda, Sigma, Xi, Delta, Sigma*, Xi* and Omega. N denotes the isospin-symmetric nucleon channel, not separately resolved proton and neutron masses.",
+        "The published effective-mass plots and finite-lattice fits are reported computational outputs. Underlying correlators, full covariance matrices and the numerical fitting pipeline are not reproduced.",
+        "Pion, kaon and Xi are inputs in the Xi set; pion, kaon and Omega are inputs in the Omega set. The twelve channels yield nine predictions per set. Both sets reuse the same ensembles and do not independently replicate one another.",
+        "The mass and continuum extrapolations are correlated. Two normalization methods, two chiral/Taylor strategies, three pion-mass ranges, two continuum forms linear in a or a^2, and eighteen time windows produce 432 analysis variants per hadron in each normalization set, not 432 experiments.",
+        "The central value is the fit-quality-weighted distribution median. The central 68% interval of that variant distribution estimates systematic uncertainty; 2000 bootstrap datasets supply the median distribution and its central 68% statistical interval. Statistical and systematic errors are combined in quadrature for final plotted bars.",
+        "The fit family estimates selected extrapolation and excited-state effects. Exact fit-quality weights, raw correlators, full covariances and independent fit replay are unavailable here; the paper's description of blind analysis does not establish a separately audited outcome-masking protocol.",
+        "Finite-volume image corrections use M_X(L)=M_X+c_X(M_pi)*exp(-M_pi*L)/(M_pi*L)^(3/2), with volume scans at about a=0.125 fm and M_pi=320 MeV. Resonance corrections additionally use a scattering model; no precise width determination is supplied.",
+        "The lightest pion-mass point at a about 0.085 fm is excluded for rho and Delta because the lowest level is dominated by a two-particle state and weakly sensitive to the resonance mass. All other mass-range cuts remain part of the analysis.",
+        "Table S2 fractions are correlated, non-Gaussian and averaged across Xi/Omega sets. Finite-volume terms are treated as corrections. The fractions must not be summed or normalized as independent probabilities or independent variances.",
+        "The comparison uses the paper's PDG 2006 isospin averages. QED and isospin breaking are absent; leading pion/kaon electromagnetic adjustments and the neglected residual effects remain approximations. The result does not resolve the proton-neutron mass difference.",
+        "A mass spectrum does not establish stability against weak decay, a neutron lifetime, a real-time hadron formation path, a universal three-constituent minimum, nuclear stability or downward causation. The introductory percentages about visible matter and mass origin are not calculated decompositions in this study.",
+        "Figure 3 shaded bands represent experimental decay widths, not mass-measurement uncertainties. Input symbols have no error bars because their values set model parameters; this is not evidence of exact independent prediction.",
+        "The excluded cases are rho and Delta at the lightest pion-mass point at a about 0.085 fm. They are a sensitivity failure of the selected lowest-energy readout, not evidence that the resonances or their interactions are absent.",
+        "Extracting a resonance mass from those lowest levels would need precise width information. The authors omit these cases to avoid using an experimental width as an extra mass-inference input.",
+        "The remaining fits infer masses and couplings across the simulated volumes and masses; their width sensitivity is limited and errors are large. Multiple levels and cross-correlators for precise widths are outside this paper.",
+        "This limitation belongs to the same simulation data as the spectrum. It is neither an independent experiment nor an intervention that removes a hadron or changes a fundamental rule."
+      ],
+      "readExtent": "full-primary-author-report",
+      "reviewedLocators": [
+        "Author report 0906.3599v1, pages 1-6: two-plus-one-flavor QCD, three physical inputs, ensembles, extrapolation and spectrum interpretation",
+        "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands",
+        "Author report 0906.3599v1, Supporting Online Material, pages 11 and 17, Table S1 and Figure S1: action, sampling, bare-parameter rows, auxiliary runs, correlators and source smearing",
+        "Author report 0906.3599v1, Supporting Online Material, pages 11-13 and 21, Figure S4: finite-volume corrections, elastic resonance model and omitted rho/Delta lightest point",
+        "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations",
+        "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://arxiv.org/abs/0906.3599v1",
+      "correctionCheck": "Author metadata identifies Science publication on 21 November 2008 and an embargo-delayed June 2009 deposit. The complete deposited author report including supplement is the reviewed version. No separately identified correction was found in the consulted title/DOI records; this search is not exhaustive."
+    },
+    {
+      "id": "gonzalez2021-2017",
+      "sourceId": "gonzalez2021",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.127.162501",
+      "journal": "Physical Review Letters",
+      "volume": "127",
+      "issue": "16",
+      "pages": "162501, pages 1-6",
+      "system": "UCNtau 2017 production preparation",
+      "preparation": "The 2017 UCNtau campaign loads for 150 s, cleans for 50 s, stores for 20-1550 s and counts in three detector positions for 40, 20 and 150 s. Monitor choices and normalization precede the buffer-volume arrangement used in 2018. Part of the production data was exposed to a fallen aluminum component.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "For the 2017 campaign, Gonzalez Table III reports global-fit neutron lifetimes A 877.68+/-0.30, B 877.78+/-0.34 and C 877.74+/-0.33 seconds. These are three analyses of the same campaign with statistical uncertainties, not three independent experiments.",
+      "limitations": [
+        "The combined 2017/2018 dataset counts about 38 million surviving UCN, not 38 million beta decays or independently replicated lifetime measurements. The count is not separately assigned to each year.",
+        "The 5.5 T polarizer and spin flipper prepare low-field-seeking UCN for an NdFeB Halbach trap with a 60-120 G holding field. Transport energies up to about 180 neV, cleaning near 38 neV and the reported 50 cm/about 51 neV trap boundary refer to different stages.",
+        "The primary detector uses boron-10 capture in ZnS scintillator and two-PMT photon coincidences. Background, dead time, pileup and delayed scintillation affect the count; photoelectrons and neutron captures are different counting domains.",
+        "Three analyses share these acquisitions. They initially develop separately, compare run-level quantities after sharing blinded fits, and unblind when fitted lifetimes agree within 0.1 s. The timing shift is within a stated +/-15 s window; this is not three independent experiments.",
+        "Monitor weighting, spectral normalization and background estimates vary among analyzers and time subsets. Table I prints analysis-C intervals ((m-1)*t_fill,m*t_fill) without a division into twenty within-fill bins; the printed mean-arrival integral also lacks the normalization needed for count-rate input. These expressions require clarification before literal replay.",
+        "Original timestamps, detector corrections, regression coefficients, selection decisions, full nuisance-parameter covariance and numerical fitting implementations have not been independently reproduced.",
+        "The aluminum-exposed subset accounts for about 34% of the combined 2017/2018 data, not 34% of every year. The reported material-loss correction must remain part of the final lifetime interpretation.",
+        "The A/B/C estimates share acquisition and differ in selection, coincidence construction, normalization and background. Their statistical errors are correlated and must not be reduced by treating them as independent experiments.",
+        "Paired short/long yields and global fits are alternative analyses of these acquisitions. Global A uses Poisson counts and nuisance marginalization, B uses a quasi-Poisson/profile likelihood, and C uses yield chi-square with variance scaling; no unique raw fit is reproduced.",
+        "Loss corrections include the affected 2017 aluminum subset, residual gas, depolarization, incomplete cleaning and heating. The paired and global estimates already include their declared corrections.",
+        "A fitted lifetime in the hundreds of seconds limits an unqualified permanence claim for free neutrons within the model; it does not test bound-neutron nuclear stability or determine a quark constituent count.",
+        "Use the unweighted mean of the three full-data global central estimates and the largest statistical error, 0.28 s. The 2021 publication does not use an error-of-the-mean reduction or the later paper's yearly error-average rule.",
+        "The original systematic budget is +0.22/-0.16 s: event definition 0.13, normalization 0.06, depolarization +0.07, uncleaned +0.11, heating +0.08, aluminum 0.05 and gas 0.06 s. The nonzero central corrections +0.06 for aluminum and +0.11 for gas have already entered the reported lifetime.",
+        "The aluminum model estimates loss per encounter (2+/-1)*10^-4 and gives +0.15+/-0.07 s for the contaminated subset; its +0.06+/-0.05 s contribution to the combined result has a different scope.",
+        "Pressure, composition, loss-cross-section and detailed fit methods delegated to cited sources have not all been independently reconstructed. This is publication-supported storage inference, not a beta-branching or beam/bottle resolution test.",
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced.",
+        "The global combination includes exactly the production years 2017, 2018, 2020, 2021 and 2022. The displayed 2016 and 2019 comparisons are excluded; current and global values must not be pooled as independent results.",
+        "The 2017/2018 central results are imported from the earlier publication and already include its material/gas corrections. The 2025 paper applies its current systematic budget to the earlier data; no full cross-year covariance or separate older aluminum-uncertainty row is supplied.",
+        "The 2025 Table III yearly inputs are 877.73(.32), 877.80(.50), 879.39(.89), 878.41(.58) and 876.93(.57) s, with statistical parentheses. Averaging these rounded entries alone does not exactly reproduce every published final digit; the full-precision pipeline is unavailable.",
+        "The reported p=0.14 compares year results with their combination. It is not a significance test against infinite lifetime, a beam measurement, a dark-decay model or the Standard Model.",
+        "UCNtau+ elevator loading and projected 0.10 s precision are future plans in the paper. They provide no additional observations for this graph."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 162501-1 to 162501-3: 2017/2018 trap, polarization, loading, cleaning, staged readout, monitor normalization and blinding; Figures 1-2",
+        "Published pages 162501-3 to 162501-4: event selection, rate corrections, monitor weighting, paired and global fits; Table I and Equations 1-2",
+        "Published pages 162501-4 to 162501-5: aluminum-block exposure and dedicated polyethylene-covered-block diagnostic; Table II",
+        "Published page 162501-5: uncleaned 2018 control, escape/heating constraints, normalization and residual-gas uncertainties",
+        "Published pages 162501-4 to 162501-5, Tables II-III and Results: analyzer-specific fits, correlated averaging, systematic corrections and final lifetime"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.162501",
+      "correctionCheck": "Published article identity and date checked: 13 October 2021. Table I/mean-arrival notation and numerical replay remain unresolved; no separately identified correction was found in the consulted records, which are not exhaustive."
+    },
+    {
+      "id": "gonzalez2021-2018",
+      "sourceId": "gonzalez2021",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.127.162501",
+      "journal": "Physical Review Letters",
+      "volume": "127",
+      "issue": "16",
+      "pages": "162501, pages 1-6",
+      "system": "UCNtau 2018 production preparation",
+      "preparation": "The 2018 UCNtau campaign adds a buffer/precleaning volume and loads for 300 s. After 50 s cleaning, neutrons are stored for 20-1550 s and counted at cleaner, middle and bottom positions for 40, 20 and 150 s. Monitor detectors sample the changed loading arrangement.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "For the 2018 campaign, Gonzalez Table III reports global-fit neutron lifetimes A 878.06+/-0.49, B 877.80+/-0.46 and C 877.55+/-0.55 seconds. These are three analyses of the same campaign with statistical uncertainties, not three independent experiments.",
+      "limitations": [
+        "The combined 2017/2018 dataset counts about 38 million surviving UCN, not 38 million beta decays or independently replicated lifetime measurements. The count is not separately assigned to each year.",
+        "The 5.5 T polarizer and spin flipper prepare low-field-seeking UCN for an NdFeB Halbach trap with a 60-120 G holding field. Transport energies up to about 180 neV, cleaning near 38 neV and the reported 50 cm/about 51 neV trap boundary refer to different stages.",
+        "The primary detector uses boron-10 capture in ZnS scintillator and two-PMT photon coincidences. Background, dead time, pileup and delayed scintillation affect the count; photoelectrons and neutron captures are different counting domains.",
+        "Three analyses share these acquisitions. They initially develop separately, compare run-level quantities after sharing blinded fits, and unblind when fitted lifetimes agree within 0.1 s. The timing shift is within a stated +/-15 s window; this is not three independent experiments.",
+        "Monitor weighting, spectral normalization and background estimates vary among analyzers and time subsets. Table I prints analysis-C intervals ((m-1)*t_fill,m*t_fill) without a division into twenty within-fill bins; the printed mean-arrival integral also lacks the normalization needed for count-rate input. These expressions require clarification before literal replay.",
+        "Original timestamps, detector corrections, regression coefficients, selection decisions, full nuisance-parameter covariance and numerical fitting implementations have not been independently reproduced.",
+        "Short runs have storage times at most 500 s and long runs exceed 500 s in this analysis. That pairing rule is not the later experiment's 1550 s octet definition.",
+        "The A/B/C estimates share acquisition and differ in selection, coincidence construction, normalization and background. Their statistical errors are correlated and must not be reduced by treating them as independent experiments.",
+        "Paired short/long yields and global fits are alternative analyses of these acquisitions. Global A uses Poisson counts and nuisance marginalization, B uses a quasi-Poisson/profile likelihood, and C uses yield chi-square with variance scaling; no unique raw fit is reproduced.",
+        "Loss corrections include the affected 2017 aluminum subset, residual gas, depolarization, incomplete cleaning and heating. The paired and global estimates already include their declared corrections.",
+        "A fitted lifetime in the hundreds of seconds limits an unqualified permanence claim for free neutrons within the model; it does not test bound-neutron nuclear stability or determine a quark constituent count.",
+        "Use the unweighted mean of the three full-data global central estimates and the largest statistical error, 0.28 s. The 2021 publication does not use an error-of-the-mean reduction or the later paper's yearly error-average rule.",
+        "The original systematic budget is +0.22/-0.16 s: event definition 0.13, normalization 0.06, depolarization +0.07, uncleaned +0.11, heating +0.08, aluminum 0.05 and gas 0.06 s. The nonzero central corrections +0.06 for aluminum and +0.11 for gas have already entered the reported lifetime.",
+        "The aluminum model estimates loss per encounter (2+/-1)*10^-4 and gives +0.15+/-0.07 s for the contaminated subset; its +0.06+/-0.05 s contribution to the combined result has a different scope.",
+        "Pressure, composition, loss-cross-section and detailed fit methods delegated to cited sources have not all been independently reconstructed. This is publication-supported storage inference, not a beta-branching or beam/bottle resolution test.",
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced.",
+        "The global combination includes exactly the production years 2017, 2018, 2020, 2021 and 2022. The displayed 2016 and 2019 comparisons are excluded; current and global values must not be pooled as independent results.",
+        "The 2017/2018 central results are imported from the earlier publication and already include its material/gas corrections. The 2025 paper applies its current systematic budget to the earlier data; no full cross-year covariance or separate older aluminum-uncertainty row is supplied.",
+        "The 2025 Table III yearly inputs are 877.73(.32), 877.80(.50), 879.39(.89), 878.41(.58) and 876.93(.57) s, with statistical parentheses. Averaging these rounded entries alone does not exactly reproduce every published final digit; the full-precision pipeline is unavailable.",
+        "The reported p=0.14 compares year results with their combination. It is not a significance test against infinite lifetime, a beam measurement, a dark-decay model or the Standard Model.",
+        "UCNtau+ elevator loading and projected 0.10 s precision are future plans in the paper. They provide no additional observations for this graph."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 162501-1 to 162501-3: 2017/2018 trap, polarization, loading, cleaning, staged readout, monitor normalization and blinding; Figures 1-2",
+        "Published pages 162501-3 to 162501-4: event selection, rate corrections, monitor weighting, paired and global fits; Table I and Equations 1-2",
+        "Published pages 162501-4 to 162501-5: aluminum-block exposure and dedicated polyethylene-covered-block diagnostic; Table II",
+        "Published page 162501-5: uncleaned 2018 control, escape/heating constraints, normalization and residual-gas uncertainties",
+        "Published pages 162501-4 to 162501-5, Tables II-III and Results: analyzer-specific fits, correlated averaging, systematic corrections and final lifetime"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.162501",
+      "correctionCheck": "Published article identity and date checked: 13 October 2021. Table I/mean-arrival notation and numerical replay remain unresolved; no separately identified correction was found in the consulted records, which are not exhaustive."
+    },
+    {
+      "id": "gonzalez2021-al-control",
+      "sourceId": "gonzalez2021",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.127.162501",
+      "journal": "Physical Review Letters",
+      "volume": "127",
+      "issue": "16",
+      "pages": "162501, pages 1-6",
+      "system": "Polyethylene-covered block loss diagnostic",
+      "preparation": "A dedicated diagnostic reintroduces the fallen aluminum block, covered in polyethylene foil, at its original trap location. The nearly absorbing covering is used to estimate how often UCN encounter that surface; a separate aluminum-loss model translates this diagnostic to the production contamination.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "Reintroducing the polyethylene-covered block at the contamination location produces an additional approximately 424 s component in the stored-UCN yield. The authors use this diagnostic surface-incidence estimate in a separate aluminum-loss correction.",
+      "limitations": [
+        "The covered block is not the uncoated production contaminant. Its extra-loss component estimates surface incidence; aluminum loss per encounter remains an additional model input.",
+        "Diagnostic runs do not augment the nominal lifetime production sample. Their conditional correction must not be applied twice to published corrected lifetimes.",
+        "The diagnostic acquisition, energy/angle distribution and surface-loss calculation are not independently reproduced.",
+        "The approximately 424 s additional component is produced in the polyethylene-covered-block diagnostic. It is not the uncoated aluminum production loss rate or the intrinsic neutron lifetime.",
+        "Translation to aluminum-exposed production data additionally assumes the energy/angle-averaged aluminum loss probability; the diagnostic alone does not measure that probability.",
+        "The control supports a material-loss correction in the declared setup. No universal lifetime change under arbitrary matter contact or independent numerical replay follows."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 162501-1 to 162501-3: 2017/2018 trap, polarization, loading, cleaning, staged readout, monitor normalization and blinding; Figures 1-2",
+        "Published pages 162501-3 to 162501-4: event selection, rate corrections, monitor weighting, paired and global fits; Table I and Equations 1-2",
+        "Published pages 162501-4 to 162501-5: aluminum-block exposure and dedicated polyethylene-covered-block diagnostic; Table II",
+        "Published page 162501-5: uncleaned 2018 control, escape/heating constraints, normalization and residual-gas uncertainties",
+        "Published pages 162501-4 to 162501-5, Tables II-III and Results: analyzer-specific fits, correlated averaging, systematic corrections and final lifetime"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.162501",
+      "correctionCheck": "Published article identity and date checked: 13 October 2021. Table I/mean-arrival notation and numerical replay remain unresolved; no separately identified correction was found in the consulted records, which are not exhaustive."
+    },
+    {
+      "id": "gonzalez2021-uncleaned",
+      "sourceId": "gonzalez2021",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.127.162501",
+      "journal": "Physical Review Letters",
+      "volume": "127",
+      "issue": "16",
+      "pages": "162501, pages 1-6",
+      "system": "2018 uncleaned UCN diagnostic",
+      "preparation": "In dedicated 2018 runs the cleaner is never lowered before storage. The cleaner detector and primary detector then count UCN above the usual cleaning height; comparison with production conditions is used to assess escaping high-energy neutrons.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "The deliberately uncleaned 2018 runs show high-position UCN counts and an extracted storage lifetime about 15 s shorter. The authors associate the reduction with an escape rate around 2*10^-5 per second under their loss model.",
+      "limitations": [
+        "This deliberately uncleaned preparation differs from the production sample. A shorter storage lifetime does not imply a changed intrinsic neutron decay law.",
+        "Scaling observed diagnostic losses to production assumes a linear relation between escape rate and the high-position count; absence of a visible production peak is a sensitivity bound, not exact zero population.",
+        "Underlying diagnostic counts and the escape/heating extrapolation are not independently replayed.",
+        "The roughly 15 s reduction belongs to deliberately uncleaned 2018 storage; the inferred escape rate is about 2*10^-5 per second under the stated model.",
+        "The production bound assumes a linear relation between escape rate and high-position counts. Nonobservation of a production peak is not exact proof of zero uncleaned or heated neutrons.",
+        "This comparison diagnoses apparatus-dependent storage loss. It does not imply that cleaning changes the neutron's intrinsic beta-decay law."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 162501-1 to 162501-3: 2017/2018 trap, polarization, loading, cleaning, staged readout, monitor normalization and blinding; Figures 1-2",
+        "Published pages 162501-3 to 162501-4: event selection, rate corrections, monitor weighting, paired and global fits; Table I and Equations 1-2",
+        "Published pages 162501-4 to 162501-5: aluminum-block exposure and dedicated polyethylene-covered-block diagnostic; Table II",
+        "Published page 162501-5: uncleaned 2018 control, escape/heating constraints, normalization and residual-gas uncertainties",
+        "Published pages 162501-4 to 162501-5, Tables II-III and Results: analyzer-specific fits, correlated averaging, systematic corrections and final lifetime"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.162501",
+      "correctionCheck": "Published article identity and date checked: 13 October 2021. Table I/mean-arrival notation and numerical replay remain unresolved; no separately identified correction was found in the consulted records, which are not exhaustive."
+    },
+    {
+      "id": "musedinovic2025-2020",
+      "sourceId": "musedinovic2025",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevC.111.045501",
+      "journal": "Physical Review C",
+      "volume": "111",
+      "issue": "4",
+      "pages": "045501, pages 1-11",
+      "system": "UCNtau 2020 production preparation",
+      "preparation": "The 2020 UCNtau campaign uses the Fast boron-coated ZnS dagger and roundhouse-dump normalization. An initial dagger with about 1.0 Hz americium-contamination background is replaced by one with about 0.2 Hz background; both belong to the declared campaign analysis.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "For the 2020 campaign, final Musedinovic Table III reports A 879.47+/-0.86, B 879.38+/-0.92 and C 879.32+/-0.90 seconds. The reported yearly average is 879.39+/-0.89 seconds, with statistical uncertainty; the analyzer estimates share the campaign data.",
+      "limitations": [
+        "The production data are from trapdoor-loaded UCN in 2020, 2021 and 2022. This paper reports a 45 cm/about 45 neV trap depth and cleaning at 38 cm; those numbers must not silently replace the different 2017/2018 preparation description.",
+        "Typical loading lasts 300 s, followed by 50 s cleaning. Storage octets use 20,1550,1550,50,100,1550,1550,200 s; surviving-neutron readout first probes cleaning height, then lowers the dagger to about 1 cm above the bottom. Diagnostic timing differs.",
+        "Roundhouse-dump normalization and a second, energy-sensitive monitor reduce sensitivity to the loaded spectrum; they do not make its distribution identical to the stored population. Short-hold data fit spectral and rolling normalization corrections.",
+        "Coincidences begin with two PMTs within 100 ns, extend until a gap above 1000 ns and use a 20 ns fixed dead time; the standard threshold is ten photons. Detector-live-time and photon-tail/pileup corrections are fitted or simulated, not independently replayed here.",
+        "About 90% of production runs pass analyzer-dependent selection. At least three analyses per year share the acquisitions. Timing was blinded with factors 0.99986-1.00171, but wrongly rejected 2020 runs were restored after unblinding; the reported change to the 2020-2022 combination is about -0.14 s. Final selection must not be described as entirely blinded.",
+        "Equation 2 uses an empirically scaled yield-error model with DQE factors, including a net-count rather than independent peak-plus-background variance term. DQE parameters are adjusted from short-hold fluctuations and fit quality; reduced chi-square one is partly imposed, not an independent validation of the noise model.",
+        "Rolling normalization uses short holds in overlapping blocks, typically fifteen runs within epochs. Its covariance and uncertainty are not independently reconstructed by dividing a printed yield error by the fitted correction factor.",
+        "No acquisition-to-event selection, monitor correction, full covariance, Monte Carlo correction or lifetime-fit replay is supplied by this graph.",
+        "The post-unblinding restoration concerns a roughly 659-run subset in 2020 with a reported 1.0 s lifetime shift. This is a selection correction, not a new independent experiment.",
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced.",
+        "The global combination includes exactly the production years 2017, 2018, 2020, 2021 and 2022. The displayed 2016 and 2019 comparisons are excluded; current and global values must not be pooled as independent results.",
+        "The 2017/2018 central results are imported from the earlier publication and already include its material/gas corrections. The 2025 paper applies its current systematic budget to the earlier data; no full cross-year covariance or separate older aluminum-uncertainty row is supplied.",
+        "The 2025 Table III yearly inputs are 877.73(.32), 877.80(.50), 879.39(.89), 878.41(.58) and 876.93(.57) s, with statistical parentheses. Averaging these rounded entries alone does not exactly reproduce every published final digit; the full-precision pipeline is unavailable.",
+        "The reported p=0.14 compares year results with their combination. It is not a significance test against infinite lifetime, a beam measurement, a dark-decay model or the Standard Model.",
+        "UCNtau+ elevator loading and projected 0.10 s precision are future plans in the paper. They provide no additional observations for this graph."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 045501-1 to 045501-4, Sections I-III: 2020-2022 trapdoor loading, roundhouse monitors, dagger configurations, unloading curves and blinding; Figures 2-5",
+        "Published pages 045501-4 to 045501-7, Sections IV-VII: event definition, run selection, fitted normalization, uncertainty scaling, post-unblinding restoration and correction model; Equations 2-11 and Table I",
+        "Published pages 045501-7 to 045501-8, Sections VII-VIII: pressure, bias simulation, uncleaned diagnostics, Pk1 tail and conditional loss limits; Figure 9 and Table II",
+        "Published pages 045501-8 to 045501-9, Section IX: segment-dependent fitted lifetimes, gain balancing and phase-space interpretation; Figures 10-12",
+        "Published pages 045501-8 to 045501-10, Tables II-III and Sections X-XI: analyzer/year combinations, systematic budget, imported 2017-2018 data and reported lifetime",
+        "Published pages 045501-1 and 045501-10, abstract and Figure 13: final numerical result, included years and excluded 2016/2019 comparisons"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.111.045501",
+      "correctionCheck": "Published article identity and date checked: 7 April 2025. Final published Table III and abstract are admitted; preprint numerical/year-label differences, post-unblinding selection and Table II conventions are explicit. No separately identified correction was found in the consulted records; this search is not exhaustive."
+    },
+    {
+      "id": "musedinovic2025-2021",
+      "sourceId": "musedinovic2025",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevC.111.045501",
+      "journal": "Physical Review C",
+      "volume": "111",
+      "issue": "4",
+      "pages": "045501, pages 1-11",
+      "system": "UCNtau 2021 Fast and Slow preparations",
+      "preparation": "The 2021 UCNtau campaign includes a Fast dagger and a Slow variant with one whole side covered by UCN-reflective aluminum. The shared year result combines those declared configurations after rate and normalization corrections.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "For the 2021 campaign, final Musedinovic Table III reports A 878.41+/-0.60, B 878.40+/-0.59 and C 878.41+/-0.55 seconds. The reported yearly average is 878.41+/-0.58 seconds, with statistical uncertainty; the analyzer estimates share the campaign data.",
+      "limitations": [
+        "The production data are from trapdoor-loaded UCN in 2020, 2021 and 2022. This paper reports a 45 cm/about 45 neV trap depth and cleaning at 38 cm; those numbers must not silently replace the different 2017/2018 preparation description.",
+        "Typical loading lasts 300 s, followed by 50 s cleaning. Storage octets use 20,1550,1550,50,100,1550,1550,200 s; surviving-neutron readout first probes cleaning height, then lowers the dagger to about 1 cm above the bottom. Diagnostic timing differs.",
+        "Roundhouse-dump normalization and a second, energy-sensitive monitor reduce sensitivity to the loaded spectrum; they do not make its distribution identical to the stored population. Short-hold data fit spectral and rolling normalization corrections.",
+        "Coincidences begin with two PMTs within 100 ns, extend until a gap above 1000 ns and use a 20 ns fixed dead time; the standard threshold is ten photons. Detector-live-time and photon-tail/pileup corrections are fitted or simulated, not independently replayed here.",
+        "About 90% of production runs pass analyzer-dependent selection. At least three analyses per year share the acquisitions. Timing was blinded with factors 0.99986-1.00171, but wrongly rejected 2020 runs were restored after unblinding; the reported change to the 2020-2022 combination is about -0.14 s. Final selection must not be described as entirely blinded.",
+        "Equation 2 uses an empirically scaled yield-error model with DQE factors, including a net-count rather than independent peak-plus-background variance term. DQE parameters are adjusted from short-hold fluctuations and fit quality; reduced chi-square one is partly imposed, not an independent validation of the noise model.",
+        "Rolling normalization uses short holds in overlapping blocks, typically fifteen runs within epochs. Its covariance and uncertainty are not independently reconstructed by dividing a printed yield error by the fitted correction factor.",
+        "No acquisition-to-event selection, monitor correction, full covariance, Monte Carlo correction or lifetime-fit replay is supplied by this graph.",
+        "The Fast/Slow geometry-specific fits are subsets of the 2021 campaign. They must not be pooled again with the yearly result as independent data.",
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "The 2021 Fast-only fit is 879.81+/-1.18 s and Slow-only fit 877.94+/-0.69 s, with statistical errors. These are subsets of the yearly combination.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced.",
+        "The global combination includes exactly the production years 2017, 2018, 2020, 2021 and 2022. The displayed 2016 and 2019 comparisons are excluded; current and global values must not be pooled as independent results.",
+        "The 2017/2018 central results are imported from the earlier publication and already include its material/gas corrections. The 2025 paper applies its current systematic budget to the earlier data; no full cross-year covariance or separate older aluminum-uncertainty row is supplied.",
+        "The 2025 Table III yearly inputs are 877.73(.32), 877.80(.50), 879.39(.89), 878.41(.58) and 876.93(.57) s, with statistical parentheses. Averaging these rounded entries alone does not exactly reproduce every published final digit; the full-precision pipeline is unavailable.",
+        "The reported p=0.14 compares year results with their combination. It is not a significance test against infinite lifetime, a beam measurement, a dark-decay model or the Standard Model.",
+        "UCNtau+ elevator loading and projected 0.10 s precision are future plans in the paper. They provide no additional observations for this graph."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 045501-1 to 045501-4, Sections I-III: 2020-2022 trapdoor loading, roundhouse monitors, dagger configurations, unloading curves and blinding; Figures 2-5",
+        "Published pages 045501-4 to 045501-7, Sections IV-VII: event definition, run selection, fitted normalization, uncertainty scaling, post-unblinding restoration and correction model; Equations 2-11 and Table I",
+        "Published pages 045501-7 to 045501-8, Sections VII-VIII: pressure, bias simulation, uncleaned diagnostics, Pk1 tail and conditional loss limits; Figure 9 and Table II",
+        "Published pages 045501-8 to 045501-9, Section IX: segment-dependent fitted lifetimes, gain balancing and phase-space interpretation; Figures 10-12",
+        "Published pages 045501-8 to 045501-10, Tables II-III and Sections X-XI: analyzer/year combinations, systematic budget, imported 2017-2018 data and reported lifetime",
+        "Published pages 045501-1 and 045501-10, abstract and Figure 13: final numerical result, included years and excluded 2016/2019 comparisons"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.111.045501",
+      "correctionCheck": "Published article identity and date checked: 7 April 2025. Final published Table III and abstract are admitted; preprint numerical/year-label differences, post-unblinding selection and Table II conventions are explicit. No separately identified correction was found in the consulted records; this search is not exhaustive."
+    },
+    {
+      "id": "musedinovic2025-2022",
+      "sourceId": "musedinovic2025",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevC.111.045501",
+      "journal": "Physical Review C",
+      "volume": "111",
+      "issue": "4",
+      "pages": "045501, pages 1-11",
+      "system": "UCNtau 2022 segmented-dagger preparation",
+      "preparation": "The 2022 UCNtau campaign divides the dagger into four vertical strips read by eight PMTs, with additional reflective aluminum strips. Segment photon thresholds are balanced to account for gain differences before the reported combined lifetime is used.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "For the 2022 campaign, final Musedinovic Table III reports A 876.81+/-0.56, B 876.78+/-0.58, C 877.06+/-0.53 and D 877.08+/-0.63 seconds. The reported yearly average is 876.93+/-0.57 seconds, with statistical uncertainty; the analyzer estimates share the campaign data.",
+      "limitations": [
+        "The production data are from trapdoor-loaded UCN in 2020, 2021 and 2022. This paper reports a 45 cm/about 45 neV trap depth and cleaning at 38 cm; those numbers must not silently replace the different 2017/2018 preparation description.",
+        "Typical loading lasts 300 s, followed by 50 s cleaning. Storage octets use 20,1550,1550,50,100,1550,1550,200 s; surviving-neutron readout first probes cleaning height, then lowers the dagger to about 1 cm above the bottom. Diagnostic timing differs.",
+        "Roundhouse-dump normalization and a second, energy-sensitive monitor reduce sensitivity to the loaded spectrum; they do not make its distribution identical to the stored population. Short-hold data fit spectral and rolling normalization corrections.",
+        "Coincidences begin with two PMTs within 100 ns, extend until a gap above 1000 ns and use a 20 ns fixed dead time; the standard threshold is ten photons. Detector-live-time and photon-tail/pileup corrections are fitted or simulated, not independently replayed here.",
+        "About 90% of production runs pass analyzer-dependent selection. At least three analyses per year share the acquisitions. Timing was blinded with factors 0.99986-1.00171, but wrongly rejected 2020 runs were restored after unblinding; the reported change to the 2020-2022 combination is about -0.14 s. Final selection must not be described as entirely blinded.",
+        "Equation 2 uses an empirically scaled yield-error model with DQE factors, including a net-count rather than independent peak-plus-background variance term. DQE parameters are adjusted from short-hold fluctuations and fit quality; reduced chi-square one is partly imposed, not an independent validation of the noise model.",
+        "Rolling normalization uses short holds in overlapping blocks, typically fifteen runs within epochs. Its covariance and uncertainty are not independently reconstructed by dividing a printed yield error by the fitted correction factor.",
+        "No acquisition-to-event selection, monitor correction, full covariance, Monte Carlo correction or lifetime-fit replay is supplied by this graph.",
+        "Strip results and gain-reweighted fits use the same stored-neutron sample. They diagnose readout sensitivity; they do not define four neutron species or four independent lifetime experiments.",
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "Four strip-specific fits in the same 2022 acquisition span about 10 s; the shortest strip 78 gives the shortest fitted lifetime. The fits are not independent samples of four intrinsic lifetimes.",
+        "The authors interpret this as phase-space redistribution coupled to position-dependent detector efficiency. Relative gains vary about 20%; balancing photon thresholds shifts the combined fit by -0.22 s.",
+        "Laser response mapping and segment reweighting support a stated 0.02 s uniformity uncertainty. These are sensitivity analyses, not a unique microscopic identification of phase-space evolution.",
+        "Fast 2.87(0.07), segmented 5.70(0.07) and Slow 8.16(0.10) s in Figure 5 are unloading time constants. They must not replace the approximately 878 s neutron lifetime.",
+        "The Sect II segmented summary reports 876.93(0.56) s; final Table III across-analyzer 2022 reporting uses 876.93(0.57) s. These summaries must not be counted twice or silently given one common statistical scope.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced.",
+        "The global combination includes exactly the production years 2017, 2018, 2020, 2021 and 2022. The displayed 2016 and 2019 comparisons are excluded; current and global values must not be pooled as independent results.",
+        "The 2017/2018 central results are imported from the earlier publication and already include its material/gas corrections. The 2025 paper applies its current systematic budget to the earlier data; no full cross-year covariance or separate older aluminum-uncertainty row is supplied.",
+        "The 2025 Table III yearly inputs are 877.73(.32), 877.80(.50), 879.39(.89), 878.41(.58) and 876.93(.57) s, with statistical parentheses. Averaging these rounded entries alone does not exactly reproduce every published final digit; the full-precision pipeline is unavailable.",
+        "The reported p=0.14 compares year results with their combination. It is not a significance test against infinite lifetime, a beam measurement, a dark-decay model or the Standard Model.",
+        "UCNtau+ elevator loading and projected 0.10 s precision are future plans in the paper. They provide no additional observations for this graph."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 045501-1 to 045501-4, Sections I-III: 2020-2022 trapdoor loading, roundhouse monitors, dagger configurations, unloading curves and blinding; Figures 2-5",
+        "Published pages 045501-4 to 045501-7, Sections IV-VII: event definition, run selection, fitted normalization, uncertainty scaling, post-unblinding restoration and correction model; Equations 2-11 and Table I",
+        "Published pages 045501-7 to 045501-8, Sections VII-VIII: pressure, bias simulation, uncleaned diagnostics, Pk1 tail and conditional loss limits; Figure 9 and Table II",
+        "Published pages 045501-8 to 045501-9, Section IX: segment-dependent fitted lifetimes, gain balancing and phase-space interpretation; Figures 10-12",
+        "Published pages 045501-8 to 045501-10, Tables II-III and Sections X-XI: analyzer/year combinations, systematic budget, imported 2017-2018 data and reported lifetime",
+        "Published pages 045501-1 and 045501-10, abstract and Figure 13: final numerical result, included years and excluded 2016/2019 comparisons"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.111.045501",
+      "correctionCheck": "Published article identity and date checked: 7 April 2025. Final published Table III and abstract are admitted; preprint numerical/year-label differences, post-unblinding selection and Table II conventions are explicit. No separately identified correction was found in the consulted records; this search is not exhaustive."
+    },
+    {
+      "id": "musedinovic2025-uncleaned",
+      "sourceId": "musedinovic2025",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevC.111.045501",
+      "journal": "Physical Review C",
+      "volume": "111",
+      "issue": "4",
+      "pages": "045501, pages 1-11",
+      "system": "2022 cleaning-tail diagnostic",
+      "preparation": "Dedicated uncleaned 2022 runs compare 40 s and 200 s counting gates at the cleaning-height position Pk1. This measures the long tail missed by the shorter gate before the dagger is lowered to the bottom position Pk2.",
+      "observable": "Time-binned UCN capture readout and the explicitly scoped published storage-fit or diagnostic quantity.",
+      "finding": "The 2022 uncleaned diagnostic reports a background-subtracted 200 s/40 s Pk1 count ratio of 1.76+/-0.15. The ratio corrects high-position counts missed by the short gate before the normal bottom-position counting interval.",
+      "limitations": [
+        "The 200 s/40 s Pk1 ratio corrects a diagnostic counting tail. It is not a neutron survival probability, a universal counting efficiency or an independent lifetime result.",
+        "Production heating and incomplete-cleaning limits additionally assume scaling from this diagnostic high-energy population to the production sample.",
+        "The 2025 systematic budget weights cleaning/heating assessments from this work and the earlier paper; raw diagnostic counts and those combination weights are not independently reproduced.",
+        "The published ratio 1.76+/-0.15 compares background-subtracted Pk1 counts accumulated for 200 s with those in 40 s in uncleaned diagnostic data. It is not a physical neutron lifetime or a fraction bounded by one.",
+        "The correction accounts for counts in the long Pk1 tail overlapping the normal Pk2 timing. Scaling to production incomplete-cleaning/heating bounds requires an additional population assumption.",
+        "The ratio, background subtraction and weighted combination with earlier diagnostics have not been independently reproduced."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Published pages 045501-1 to 045501-4, Sections I-III: 2020-2022 trapdoor loading, roundhouse monitors, dagger configurations, unloading curves and blinding; Figures 2-5",
+        "Published pages 045501-4 to 045501-7, Sections IV-VII: event definition, run selection, fitted normalization, uncertainty scaling, post-unblinding restoration and correction model; Equations 2-11 and Table I",
+        "Published pages 045501-7 to 045501-8, Sections VII-VIII: pressure, bias simulation, uncleaned diagnostics, Pk1 tail and conditional loss limits; Figure 9 and Table II",
+        "Published pages 045501-8 to 045501-9, Section IX: segment-dependent fitted lifetimes, gain balancing and phase-space interpretation; Figures 10-12",
+        "Published pages 045501-8 to 045501-10, Tables II-III and Sections X-XI: analyzer/year combinations, systematic budget, imported 2017-2018 data and reported lifetime",
+        "Published pages 045501-1 and 045501-10, abstract and Figure 13: final numerical result, included years and excluded 2016/2019 comparisons"
+      ],
+      "metadataCheckedAt": "2026-09-14",
+      "metadataUrl": "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.111.045501",
+      "correctionCheck": "Published article identity and date checked: 7 April 2025. Final published Table III and abstract are admitted; preprint numerical/year-label differences, post-unblinding selection and Table II conventions are explicit. No separately identified correction was found in the consulted records; this search is not exhaustive."
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "slac-scaling",
+      "candidate": "Transverse-dominant extraction and pointlike-constituent interpretations.",
+      "alternative": "Longitudinal-dominant extraction and the vector-dominance/Regge alternatives discussed in the paper.",
+      "sourceIds": [
+        "breidenbach1969"
+      ],
+      "discriminator": "Figure 2 compares the R assumptions; pages 937-938 state model-specific successes, discrepancies and unmeasured separations.",
+      "result": "conditional-support",
+      "limit": "This paper alone neither isolates free quarks nor uniquely fixes their charges, number or complete interaction theory.",
+      "assumptions": [
+        "Use the stated small-angle cross-section decomposition and kinematic domain.",
+        "Assume transverse dominance (R approximately zero); do not claim a separately measured W1/W2 separation."
+      ],
+      "claimIds": [
+        "C-phys-slac-scaling"
+      ]
+    },
+    {
+      "id": "tasso-gluon",
+      "candidate": "Hard gluon radiation followed by fragmentation into hadronic jets.",
+      "alternative": "The specified collinear two-jet fragmentation models and randomized-track estimate.",
+      "sourceIds": [
+        "tasso1979"
+      ],
+      "discriminator": "High-energy planar-event counts, in-plane/out-of-plane broadening and fitted three-jet topology.",
+      "result": "specified-alternative-disfavored",
+      "limit": "Rejection concerns the stated comparisons. A jet fit does not supply every QCD property or a universal stable-component minimum.",
+      "assumptions": [
+        "Use accepted charged-track momenta and the specified event-shape selection.",
+        "Compare the declared collinear fragmentation variants and randomization procedure.",
+        "Interpret jets through hard noncollinear gluon emission followed by limited-transverse-momentum fragmentation."
+      ],
+      "claimIds": [
+        "C-phys-tasso-gluon"
+      ]
+    },
+    {
+      "id": "mulan-fermi",
+      "candidate": "A muon-decay coupling interpreted as universal G_F.",
+      "alternative": "A muon-specific coupling without an assumed equality to other weak processes.",
+      "sourceIds": [
+        "webber2011"
+      ],
+      "discriminator": "Equation 1 converts lifetime to a coupling; an independent weak-process comparison is needed to test universality.",
+      "result": "not-tested",
+      "limit": "The measurement determines lifetime; universality is not established by converting that same lifetime.",
+      "assumptions": [
+        "Use the combined R06/R07 lifetime with correlated uncertainties.",
+        "Apply the muon-mass, phase-space, QED and hadronic corrections in Equation 1.",
+        "Assume universality to name the inferred muon-decay coupling G_F."
+      ],
+      "claimIds": [
+        "C-phys-mulan-fermi"
+      ]
+    },
+    {
+      "id": "hensen2015-bell",
+      "candidate": "Quantum correlations outside the specified local hidden-variable model.",
+      "alternative": "Local responses with the declared setting, timing and stopping conditions.",
+      "sourceIds": [
+        "hensen2015"
+      ],
+      "discriminator": "The declared event-tagged CHSH win count and complete finite-sample null test.",
+      "result": "specified-alternative-disfavored",
+      "limit": "With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.039174643558790. The published 0.039 is rounded. This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+      "assumptions": [
+        "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
+        "Condition on the prior trial sequence; require local responses, independent setting generators and independence of the herald from those settings within the stated predictability bounds.",
+        "Choose the sample stopping rule independently of observed outcomes; do not optimize the filter or significance after inspecting Bell results.",
+        "Interpret P as a null-tail bound, not the probability that local realism is true."
+      ],
+      "claimIds": [
+        "C-phys-hensen2015-bell-test"
+      ]
+    },
+    {
+      "id": "hensen2016-bell",
+      "candidate": "Quantum correlations outside the specified local hidden-variable model.",
+      "alternative": "Local responses with the declared setting, timing and stopping conditions.",
+      "sourceIds": [
+        "hensen2016"
+      ],
+      "discriminator": "The declared event-tagged CHSH win count and complete finite-sample null test.",
+      "result": "inconclusive",
+      "limit": "With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.060727644566033. At 0.05 the result is inconclusive. This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+      "assumptions": [
+        "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
+        "Condition on the prior trial sequence; require local responses, independent setting generators and independence of the herald from those settings within the stated predictability bounds.",
+        "Choose the sample stopping rule independently of observed outcomes; do not optimize the filter or significance after inspecting Bell results.",
+        "Interpret P as a null-tail bound, not the probability that local realism is true."
+      ],
+      "claimIds": [
+        "C-phys-hensen2016-bell-test"
+      ]
+    },
+    {
+      "id": "lamoreaux-casimir",
+      "candidate": "Material-response Casimir interpretation with corrected local radius.",
+      "alternative": "An uncorrected ideal curve or a large intrinsic Au/Cu difference.",
+      "sourceIds": [
+        "lamoreaux1997",
+        "lamoreaux1998-note",
+        "lambrecht2000",
+        "lamoreaux2000-reply"
+      ],
+      "discriminator": "Residual attraction, corrected radius and accepted optical-response calculation.",
+      "result": "conditional-support",
+      "limit": "Systematic-error tests were minimal; the force is not an absolute-vacuum-energy measurement.",
+      "assumptions": [
+        "Use the corrected local radius R=12.5 +/- 0.3 cm from the erratum and the accepted Lambrecht-Reynaud optical calculation.",
+        "The 2000 comment gives eta about 0.87 for Au at 0.6 micrometers and Au/Cu agreement within 1%; the reply accepts this correction.",
+        "The reply explicitly reports only minimal testing of systematic errors. Agreement is not a comprehensive 5% uncertainty certification."
+      ],
+      "claimIds": [
+        "C-phys-lamoreaux-casimir"
+      ]
+    },
+    {
+      "id": "bressi-coefficient",
+      "candidate": "Ideal parallel-plate pressure with a calibrated resonance readout.",
+      "alternative": "Residual electrostatics, drift, imperfect surfaces and finite material response.",
+      "sourceIds": [
+        "bressi2002"
+      ],
+      "discriminator": "Nine-point residual fit and the distinct drift-inclusive fit; retain the voltage-sign conflict.",
+      "result": "conditional-support",
+      "limit": "No raw-data refit; the nine-point fit does not explain all 0.5-3 micrometer observations.",
+      "assumptions": [
+        "The main coefficient uses the nine closest points, 0.5-1.1 micrometers, selected through chi-square analysis.",
+        "The printed dynamic calibration gives V0=+(60.2 +/- 1.7) mV, conflicting with the static -(68.6 +/- 2.2) mV estimate and compensating Vc=-68.6 mV. The sign remains unresolved.",
+        "Points at 1-2 micrometers deviate from the main fit. A separate fit with linear time drift gives (1.24 +/- 0.10) x 10^-27 N m^2; it is not the same estimator.",
+        "The exponent 5.0 +/- 0.1 belongs to the squared-frequency shift; the corresponding ideal pressure scales as d^-4."
+      ],
+      "claimIds": [
+        "C-phys-bressi-coefficient"
+      ]
+    },
+    {
+      "id": "lamb-separation",
+      "candidate": "A nonzero 2S1/2-2P1/2 separation in hydrogen.",
+      "alternative": "Exact coincidence in the stated Dirac-Coulomb comparison.",
+      "sourceIds": [
+        "lamb1947"
+      ],
+      "discriminator": "Observed quenching resonance fields versus the Zeeman curves.",
+      "result": "specified-alternative-disfavored",
+      "limit": "Approximate 1000 MHz comparison; no best-fit confidence interval.",
+      "assumptions": [
+        "The plotted 1000 MHz displacement is an approximate comparison and explicitly not a best fit.",
+        "Field calibration and inhomogeneity, line broadening and hyperfine structure limit the measurement; the proposed 10 MHz accuracy is future work in this article.",
+        "A measured level separation does not isolate a unique radiative contribution or absolute vacuum energy."
+      ],
+      "claimIds": [
+        "C-phys-lamb-separation"
+      ]
+    },
+    {
+      "id": "lamb-radiative-interpretation",
+      "candidate": "Bethe leading self-energy estimate with an assumed relativistic cutoff.",
+      "alternative": "A uniquely isolated vacuum-polarization mechanism or complete relativistic calculation.",
+      "sourceIds": [
+        "lamb1947",
+        "bethe1947"
+      ],
+      "discriminator": "Approximate experimental and theoretical magnitudes; mechanisms are not separately measured.",
+      "result": "conditional-support",
+      "limit": "Compatibility with a model is not a measurement of its individual terms or absolute vacuum energy.",
+      "assumptions": [
+        "Use the approximate 1947 separation without assigning a best-fit error bar.",
+        "Apply the bound/free self-energy subtraction and the assumed cutoff K approximately m c^2.",
+        "Compare approximate magnitudes; do not identify a unique radiative mechanism from this agreement."
+      ],
+      "claimIds": [
+        "C-phys-lamb-radiative-interpretation"
+      ]
+    },
+    {
+      "id": "cms-alpha-mz",
+      "candidate": "A parameter estimate conditional on the stated NLO matrix elements, PDFs, unfolding and scale prescription.",
+      "alternative": "A direct detector measurement of alpha_s or independent validation of the assumed running equation.",
+      "sourceIds": [
+        "cms2013-r32"
+      ],
+      "discriminator": "Covariance-weighted fit and uncertainty variations; the interpretation assumptions are inputs, not tested alternatives.",
+      "result": "not-tested",
+      "limit": "The fit estimates a parameter within a chosen construction; it does not establish that construction independently.",
+      "assumptions": [
+        "Use the unfolded 420-1390 GeV R32 data with the statistical covariance and fully bin-correlated individual JES and unfolding systematic sources.",
+        "Use NLOJET++/fastNLO NLO matrix elements with five massless flavors, the NNPDF2.1 NNLO PDF family and the stated nonperturbative correction; central mu_r=mu_f=Q.",
+        "The final Equation 6 result is alpha_s(M_Z)=0.1148 +/- 0.0014 (experimental) +/- 0.0018 (PDF) +/- 0.0050 (theory). The symmetric theory uncertainty includes the stated residual effects; the one-sided scale envelope alone is insufficient.",
+        "Changing PDFs, perturbative order, scale prescription or heavy-flavor treatment changes the inference; a fitted coupling is not a detector observable or a proof of its assumed running equation."
+      ],
+      "claimIds": [
+        "C-phys-cms-alpha-mz"
+      ]
+    },
+    {
+      "id": "cms-running-consistency",
+      "candidate": "The stated three-loop running-coupling prediction within the NNPDF2.1/NLO extraction.",
+      "alternative": "A scale-independent coupling or arbitrary alternative running law.",
+      "sourceIds": [
+        "cms2013-r32"
+      ],
+      "discriminator": "Three correlated scale-region fits compared with the combined-fit RGE curve; no independent constant-coupling rejection statistic is supplied here.",
+      "result": "conditional-support",
+      "limit": "Common PDFs, RGE conversion, data and dominant theory errors limit the independence and strength of this test.",
+      "assumptions": [
+        "Fit alpha_s(M_Z) separately in the three Q ranges using the same NLO/PDF construction, then evolve to alpha_s(Q) with the NNPDF2.1 three-loop RGE.",
+        "The effective scales 474, 664 and 896 GeV are cross-section-weighted NLO averages for the 420-600, 600-800 and 800-1390 GeV ranges; 1390 GeV is an upper boundary, not a fourth extracted coupling.",
+        "Experimental uncertainties across the three extractions are correlated. The combined-fit curve and the three points share data; they are not independent replications.",
+        "R32 reduces sensitivity to PDF evolution but does not eliminate it. Agreement is conditional consistency with the specified RGE/PDF calculation, not a theory-independent measurement of the beta function.",
+        "The published comparison supplies no independent constant-coupling rejection statistic here; additional experiments plotted in Figure 3 are outside this review."
+      ],
+      "claimIds": [
+        "C-phys-cms-running-consistency"
+      ]
+    },
+    {
+      "id": "creutz-string-fit",
+      "candidate": "An area coefficient conditional on the stated finite-loop fit.",
+      "alternative": "A directly measured asymptotic potential or model-free confinement proof.",
+      "sourceIds": [
+        "creutz1980"
+      ],
+      "discriminator": "Fit square-loop values with the declared perimeter and area terms; low-beta fit variants and high-beta loss of area sensitivity limit identification.",
+      "result": "not-tested",
+      "limit": "Parameter inference within a chosen fit does not independently prove its asymptotic interpretation.",
+      "assumptions": [
+        "Fit square-loop expectations with W(S)=exp[-(A+B S+C S^2)] by minimizing mean squared deviations of loop values; identify C=a^2 K only within this fit model.",
+        "Below beta=2.1 only sides one and two are significant and the fit includes side zero; below beta=1.6 only side one is significant and area dominance is assumed.",
+        "The paper displays fit variants at beta=1.6-1.8 and 2.2/2.25. Above beta=2.5 the area term is too small relative to the perimeter term for an accurate tension determination.",
+        "Finite volume, available loop sizes, sampling and fit assumptions limit the inference. The fit is not a direct detector measurement or an independently reproduced asymptotic potential."
+      ],
+      "claimIds": [
+        "C-phys-creutz-string-fit"
+      ]
+    },
+    {
+      "id": "creutz-scaling",
+      "candidate": "Coexistence of confinement-based scale setting and the leading SU(2) ultraviolet slope in this computational model.",
+      "alternative": "An incompatible cutoff dependence within the same action and renormalization prescription.",
+      "sourceIds": [
+        "creutz1980"
+      ],
+      "discriminator": "Compare inferred a^2 K with the strong- and weak-coupling behaviors in Figure 6; no independent alternative-model rejection statistic is supplied.",
+      "result": "conditional-support",
+      "limit": "Finite-lattice, sampling, fit and normalization assumptions preclude a rigorous continuum or physical QCD claim.",
+      "assumptions": [
+        "Use the fitted a^2 K in a renormalization prescription that holds K fixed; compare with the leading SU(2) form proportional to exp(-6 pi^2 beta/11).",
+        "Figure 6 uses an arbitrarily chosen normalization for the weak-coupling comparison. Equation 5.4 estimates Lambda approximately sqrt(K)/200 with uncertainty of roughly a factor of two in that coefficient.",
+        "The renormalization prescription is based on confinement and the loop fits have restricted resolving power; the comparison is conditional support, not an independent proof of continuum confinement.",
+        "The model contains no dynamical quarks. Its lattice bare coupling and scale normalization cannot be identified with CMS alpha_s, physical QCD string tension or a universal confinement threshold.",
+        "The crossover does not identify instantons or any other unique microscopic confinement mechanism; no real-time hadronization or stable-complexity rule is measured."
+      ],
+      "claimIds": [
+        "C-phys-creutz-scaling"
+      ]
+    },
+    {
+      "id": "bali-avoided-crossing",
+      "candidate": "The fitted two-state spectrum has an avoided crossing and approaches the two-meson threshold.",
+      "alternative": "An indefinitely rising lower static energy in this same dynamical-quark setup.",
+      "sourceIds": [
+        "bali2005"
+      ],
+      "discriminator": "Joint string/two-meson correlator fits and the separation-dependent level gap; operator-only comparisons share the same ensemble.",
+      "result": "conditional-support",
+      "limit": "This supports the finite-ensemble spectral interpretation under the declared fit, not a rigorous continuum or physical-mass confinement proof.",
+      "assumptions": [
+        "Fit the common 2 x 2 correlation matrix with five parameters theta, a_Q, a_B, E1 and E2, retaining the separation-dependent time windows in Equations 71-75 and the two-state truncation.",
+        "Divide matrix correlators by the squared static-light correlator to infer E1-2m_B and E2-2m_B. Static self-energies cancel in these differences; absolute static energies are cutoff-dependent.",
+        "The lower fitted energy approaches the two-meson threshold within the sampled separation range. A Cornell fit below the breaking region is not a linearly rising ground-state potential at all distances.",
+        "The quadratic gap fit uses 14a<=r_bar<=16a and reports r_c/a=15.00(8), a*DeltaE_c=0.0217(9), r_c/r0=2.496(26), r_c=1.248(13) fm and DeltaE_c=51(3) MeV with r0=0.5 fm. Quoted errors are statistical; scale-setting, sea-mass and continuum uncertainties are not included.",
+        "Figure 17's no-mixing comparison uses operator sectors from the same two-flavor ensemble. It is not a separately sampled quenched control or an intervention experiment.",
+        "Figure 22's two-plus-one-flavor bands are explicitly speculative. The finite-window parametrization has an incorrect large-distance asymptote; neither supplies a physical-mass calculation or universal string-breaking threshold."
+      ],
+      "claimIds": [
+        "C-phys-bali-avoided-crossing"
+      ]
+    },
+    {
+      "id": "bali-mixing-coupling",
+      "candidate": "A coupling inferred from the fitted two-state spectrum and basis angle.",
+      "alternative": "An independently measured real-time hadronization rate.",
+      "sourceIds": [
+        "bali2005"
+      ],
+      "discriminator": "The coupling is converted from the same fit; the additional ratio reuses its gap and correlators. No real-time experiment is supplied.",
+      "result": "not-tested",
+      "limit": "The inferred Euclidean coupling does not independently test an irreversible decay or downward causal mechanism.",
+      "assumptions": [
+        "In the declared two-state basis, g(r)=DeltaE(r)*sin(2*theta(r))/2 has units of energy. It is a mixing coupling and Euclidean relaxation quantity, not a measured stochastic real-time decay rate.",
+        "Use the Equation 77 basis convention. The summary sine/cosine swap and the Equation 85 equal-mixing mismatch remain unresolved source inconsistencies; an exact theta(r_c)=pi/4 is not assumed.",
+        "The Equation 96 consistency ratio reuses correlators and the fitted energy gap. Agreement is not independent replication; small-separation corrections limit its plateau.",
+        "Finite-mass quarkonium, irreversible hadronization, stable nuclear or atomic organization and a downward causal rule are not computed. A static spectral description does not establish those claims."
+      ],
+      "claimIds": [
+        "C-phys-bali-mixing-coupling"
+      ]
+    },
+    {
+      "id": "lee-abundance-limit",
+      "candidate": "A published abundance bound conditional on the charge window and processed-oil preparation.",
+      "alternative": "A universal absence theorem for fractional or color-charged particles.",
+      "sourceIds": [
+        "lee2002"
+      ],
+      "discriminator": "The selected charge distribution contains no event in the admitted interval; confidence-limit construction and retention outside this material require separate information.",
+      "result": "not-tested",
+      "limit": "The reported null constrains this preparation; it does not test universal absence or establish the printed statistical normalization independently.",
+      "assumptions": [
+        "Report the published 95% confidence upper limit of 1.17 x 10^-22 particles per nucleon only for 0.18<=q_r<=0.82 in the analyzed silicone oil. Non-detection is not proof of zero abundance.",
+        "The abstract and Introduction give the 0.18-0.82 window, whereas Section IV B assigns the same limit to 0.15-0.85. The observed gap and the admitted confidence-limit window remain distinct.",
+        "The confidence construction and effective-exposure normalization have not been independently reproduced. The quoted mass and zero count alone do not recover the printed limit under a simple unit-efficiency Poisson model; no unreported efficiency or replacement limit is invented.",
+        "Processing may remove fractional-charge particles and their natural concentration is unknown. The authors expressly restrict generalization to other materials; this bound does not establish universal color confinement or the absence of every isolated quark species."
+      ],
+      "claimIds": [
+        "C-phys-lee-abundance-limit"
+      ]
+    },
+    {
+      "id": "durr-hadron-spectrum",
+      "candidate": "Calibrated two-plus-one-flavor QCD predicts the remaining light-hadron masses within the reported uncertainty.",
+      "alternative": "The independent predicted channels disagree with the comparison after the same inputs, extrapolations and uncertainty procedure.",
+      "discriminator": "Compare only non-input masses against the paper's isospin-averaged experimental values, retaining correlated fits, both normalization sets and the specified error construction.",
+      "result": "conditional-support",
+      "limit": "Published agreement supports this calibrated spectrum calculation within its domain; neither independent computational replay nor a proton/neutron stability or formation test is supplied.",
+      "assumptions": [
+        "Pion, kaon and Xi are inputs in the Xi set; pion, kaon and Omega are inputs in the Omega set. The twelve channels yield nine predictions per set. Both sets reuse the same ensembles and do not independently replicate one another.",
+        "The mass and continuum extrapolations are correlated. Two normalization methods, two chiral/Taylor strategies, three pion-mass ranges, two continuum forms linear in a or a^2, and eighteen time windows produce 432 analysis variants per hadron in each normalization set, not 432 experiments.",
+        "The central value is the fit-quality-weighted distribution median. The central 68% interval of that variant distribution estimates systematic uncertainty; 2000 bootstrap datasets supply the median distribution and its central 68% statistical interval. Statistical and systematic errors are combined in quadrature for final plotted bars.",
+        "The fit family estimates selected extrapolation and excited-state effects. Exact fit-quality weights, raw correlators, full covariances and independent fit replay are unavailable here; the paper's description of blind analysis does not establish a separately audited outcome-masking protocol.",
+        "Finite-volume image corrections use M_X(L)=M_X+c_X(M_pi)*exp(-M_pi*L)/(M_pi*L)^(3/2), with volume scans at about a=0.125 fm and M_pi=320 MeV. Resonance corrections additionally use a scattering model; no precise width determination is supplied.",
+        "The lightest pion-mass point at a about 0.085 fm is excluded for rho and Delta because the lowest level is dominated by a two-particle state and weakly sensitive to the resonance mass. All other mass-range cuts remain part of the analysis.",
+        "Table S2 fractions are correlated, non-Gaussian and averaged across Xi/Omega sets. Finite-volume terms are treated as corrections. The fractions must not be summed or normalized as independent probabilities or independent variances.",
+        "The comparison uses the paper's PDG 2006 isospin averages. QED and isospin breaking are absent; leading pion/kaon electromagnetic adjustments and the neglected residual effects remain approximations. The result does not resolve the proton-neutron mass difference.",
+        "A mass spectrum does not establish stability against weak decay, a neutron lifetime, a real-time hadron formation path, a universal three-constituent minimum, nuclear stability or downward causation. The introductory percentages about visible matter and mass origin are not calculated decompositions in this study.",
+        "Figure 3 shaded bands represent experimental decay widths, not mass-measurement uncertainties. Input symbols have no error bars because their values set model parameters; this is not evidence of exact independent prediction."
+      ],
+      "sourceIds": [
+        "durr2008"
+      ],
+      "claimIds": [
+        "C-phys-durr-hadron-spectrum"
+      ]
+    },
+    {
+      "id": "durr-resonance-exclusion",
+      "candidate": "The selected lowest finite-volume level reliably determines the lightest rho or Delta resonance mass.",
+      "alternative": "Two-particle-state dominance leaves insufficient sensitivity without additional width information or energy levels.",
+      "discriminator": "Inspect the lowest-level resonance-mass sensitivity in the stated scattering model at the two excluded channel/point combinations; preserve their omission from the mass fit.",
+      "result": "not-tested",
+      "limit": "These resonance-mass extractions are not performed; omission does not establish an absent resonance or a null physical interaction.",
+      "assumptions": [
+        "The excluded cases are rho and Delta at the lightest pion-mass point at a about 0.085 fm. They are a sensitivity failure of the selected lowest-energy readout, not evidence that the resonances or their interactions are absent.",
+        "Extracting a resonance mass from those lowest levels would need precise width information. The authors omit these cases to avoid using an experimental width as an extra mass-inference input.",
+        "The remaining fits infer masses and couplings across the simulated volumes and masses; their width sensitivity is limited and errors are large. Multiple levels and cross-correlators for precise widths are outside this paper.",
+        "This limitation belongs to the same simulation data as the spectrum. It is neither an independent experiment nor an intervention that removes a hadron or changes a fundamental rule."
+      ],
+      "sourceIds": [
+        "durr2008"
+      ],
+      "claimIds": [
+        "C-phys-durr-resonance-exclusion"
+      ]
+    },
+    {
+      "id": "ucn-al-loss",
+      "candidate": "Contact with an absorbing surface adds a storage-loss component in this preparation.",
+      "alternative": "The diagnostic surface has negligible influence on stored-UCN yield.",
+      "sourceIds": [
+        "gonzalez2021"
+      ],
+      "discriminator": "Use the dedicated covered-block diagnostic to estimate surface incidence; keep the separate aluminum loss probability when interpreting production data.",
+      "result": "conditional-support",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "The approximately 424 s additional component is produced in the polyethylene-covered-block diagnostic. It is not the uncoated aluminum production loss rate or the intrinsic neutron lifetime.",
+        "Translation to aluminum-exposed production data additionally assumes the energy/angle-averaged aluminum loss probability; the diagnostic alone does not measure that probability.",
+        "The control supports a material-loss correction in the declared setup. No universal lifetime change under arbitrary matter contact or independent numerical replay follows."
+      ],
+      "claimIds": [
+        "C-phys-ucn-al-loss"
+      ]
+    },
+    {
+      "id": "ucn2018-uncleaned-loss",
+      "candidate": "Retained high-energy UCN introduce extra escape loss during storage.",
+      "alternative": "The uncleaned preparation has the same storage-loss behavior as the cleaned production preparation.",
+      "sourceIds": [
+        "gonzalez2021"
+      ],
+      "discriminator": "Compare deliberately uncleaned storage with the reported production preparation and retain the conditional count-to-escape scaling.",
+      "result": "conditional-support",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "The roughly 15 s reduction belongs to deliberately uncleaned 2018 storage; the inferred escape rate is about 2*10^-5 per second under the stated model.",
+        "The production bound assumes a linear relation between escape rate and high-position counts. Nonobservation of a production peak is not exact proof of zero uncleaned or heated neutrons.",
+        "This comparison diagnoses apparatus-dependent storage loss. It does not imply that cleaning changes the neutron's intrinsic beta-decay law."
+      ],
+      "claimIds": [
+        "C-phys-ucn2018-uncleaned-loss"
+      ]
+    },
+    {
+      "id": "ucn2022-cleaning-tail",
+      "candidate": "The extended Pk1 gate supplies a correction for missed high-position counts.",
+      "alternative": "The diagnostic ratio alone certifies a production non-decay-loss rate.",
+      "sourceIds": [
+        "musedinovic2025"
+      ],
+      "discriminator": "Use the published background-subtracted gate ratio only for the diagnostic tail correction; production loss bounds need additional population scaling.",
+      "result": "not-tested",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "The published ratio 1.76+/-0.15 compares background-subtracted Pk1 counts accumulated for 200 s with those in 40 s in uncleaned diagnostic data. It is not a physical neutron lifetime or a fraction bounded by one.",
+        "The correction accounts for counts in the long Pk1 tail overlapping the normal Pk2 timing. Scaling to production incomplete-cleaning/heating bounds requires an additional population assumption.",
+        "The ratio, background subtraction and weighted combination with earlier diagnostics have not been independently reproduced."
+      ],
+      "claimIds": [
+        "C-phys-ucn2022-cleaning-tail"
+      ]
+    },
+    {
+      "id": "ucn2022-segment-response",
+      "candidate": "Position-dependent readout efficiency coupled to phase-space redistribution can bias the lifetime fit.",
+      "alternative": "Other correlated detector or sampling effects produce the pattern without uniquely identifying phase-space evolution.",
+      "sourceIds": [
+        "musedinovic2025"
+      ],
+      "discriminator": "Compare same-acquisition strip fits and the gain-balanced total; preserve the distinction between detector sensitivity and intrinsic lifetime.",
+      "result": "conditional-support",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "Four strip-specific fits in the same 2022 acquisition span about 10 s; the shortest strip 78 gives the shortest fitted lifetime. The fits are not independent samples of four intrinsic lifetimes.",
+        "The authors interpret this as phase-space redistribution coupled to position-dependent detector efficiency. Relative gains vary about 20%; balancing photon thresholds shifts the combined fit by -0.22 s.",
+        "Laser response mapping and segment reweighting support a stated 0.02 s uniformity uncertainty. These are sensitivity analyses, not a unique microscopic identification of phase-space evolution.",
+        "Fast 2.87(0.07), segmented 5.70(0.07) and Slow 8.16(0.10) s in Figure 5 are unloading time constants. They must not replace the approximately 878 s neutron lifetime.",
+        "The Sect II segmented summary reports 876.93(0.56) s; final Table III across-analyzer 2022 reporting uses 876.93(0.57) s. These summaries must not be counted twice or silently given one common statistical scope."
+      ],
+      "claimIds": [
+        "C-phys-ucn2022-segment-response"
+      ]
+    },
+    {
+      "id": "ucn2017-2018-lifetime",
+      "candidate": "The corrected storage analysis estimates a conventional free-neutron lifetime.",
+      "alternative": "The published fit independently identifies all disappearance mechanisms or resolves the beam/bottle discrepancy.",
+      "sourceIds": [
+        "gonzalez2021"
+      ],
+      "discriminator": "Combine the three full-data global fits with the original unweighted-center/largest-error rule and retain all declared non-decay-loss corrections.",
+      "result": "not-tested",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "The A/B/C estimates share acquisition and differ in selection, coincidence construction, normalization and background. Their statistical errors are correlated and must not be reduced by treating them as independent experiments.",
+        "Paired short/long yields and global fits are alternative analyses of these acquisitions. Global A uses Poisson counts and nuisance marginalization, B uses a quasi-Poisson/profile likelihood, and C uses yield chi-square with variance scaling; no unique raw fit is reproduced.",
+        "Loss corrections include the affected 2017 aluminum subset, residual gas, depolarization, incomplete cleaning and heating. The paired and global estimates already include their declared corrections.",
+        "A fitted lifetime in the hundreds of seconds limits an unqualified permanence claim for free neutrons within the model; it does not test bound-neutron nuclear stability or determine a quark constituent count.",
+        "Use the unweighted mean of the three full-data global central estimates and the largest statistical error, 0.28 s. The 2021 publication does not use an error-of-the-mean reduction or the later paper's yearly error-average rule.",
+        "The original systematic budget is +0.22/-0.16 s: event definition 0.13, normalization 0.06, depolarization +0.07, uncleaned +0.11, heating +0.08, aluminum 0.05 and gas 0.06 s. The nonzero central corrections +0.06 for aluminum and +0.11 for gas have already entered the reported lifetime.",
+        "The aluminum model estimates loss per encounter (2+/-1)*10^-4 and gives +0.15+/-0.07 s for the contaminated subset; its +0.06+/-0.05 s contribution to the combined result has a different scope.",
+        "Pressure, composition, loss-cross-section and detailed fit methods delegated to cited sources have not all been independently reconstructed. This is publication-supported storage inference, not a beta-branching or beam/bottle resolution test."
+      ],
+      "claimIds": [
+        "C-phys-ucn2017-2018-lifetime"
+      ]
+    },
+    {
+      "id": "ucn2020-2022-lifetime",
+      "candidate": "The corrected new-year storage analysis supplies a conditional free-neutron lifetime.",
+      "alternative": "The fitted result independently certifies the correction model and source selection.",
+      "sourceIds": [
+        "musedinovic2025"
+      ],
+      "discriminator": "Combine only the new yearly results with their declared error weighting, detector corrections and post-unblinding selection; do not add the prior production data.",
+      "result": "not-tested",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced."
+      ],
+      "claimIds": [
+        "C-phys-ucn2020-2022-lifetime"
+      ]
+    },
+    {
+      "id": "ucntau-global-lifetime",
+      "candidate": "The five-campaign combination estimates a free-neutron lifetime under the declared shared-systematic treatment.",
+      "alternative": "The combination is an independent replication of its constituent studies or a resolved test of alternative decay channels.",
+      "sourceIds": [
+        "gonzalez2021",
+        "musedinovic2025"
+      ],
+      "discriminator": "Combine the five included production campaigns while retaining reused older data, the updated systematic assignment and unavailable cross-year covariance.",
+      "result": "not-tested",
+      "limit": "The stated result is limited by its preparation, shared data, correction assumptions and unresolved reproduction requirements.",
+      "assumptions": [
+        "Yearly central estimates are averages of analyzer results and yearly statistical errors are averages of their reported errors. Shared analyses do not supply independent neutron samples.",
+        "The published final Table III is the admitted numerical source. Different numbers and year labels in the selected preprint passages are not alternate measurements.",
+        "Residual-gas corrections assume water for the run-pressure conversion and assign 50% uncertainty for composition and measurement. Statistical-bias corrections use simulated exponential counts with an assumed 877.75 s lifetime; this calibration is not an independent observation of that value.",
+        "The fitted uncertainty model, restored post-unblinding runs, detector gain balancing and unresolved systematic-table conventions remain part of the reported result. No exact raw-data fit or confidence calculation is reproduced.",
+        "The current result combines 2020, 2021 and 2022 with error-weighted yearly estimates; 2017 and 2018 are not new acquisitions in this combination.",
+        "The statistical-bias correction is calibrated with 192 octets/1536 simulated runs, repeated 10000 times, and fitted as 2985.3*N0^(-1.00102+0.855/N0) seconds. Production corrections in Table II vary by configuration (.51,.50,.55,.31 s); simulation repetitions are not experimental replications.",
+        "Table II lists a -0.22 s 2022 uniformity correction and zero for other configurations, but a +0.06 s average uniformity correction. A conventional signed average cannot recover that sign; the averaging convention is unresolved. Do not reconstruct the final central value by adding printed table entries.",
+        "The printed average correction entries sum to 0.56 s while the stated total is 0.58 s; rounding and averaging details are unavailable. The printed +0.20/-0.17 s systematic budget is likewise not an exact quadrature reconstruction from rounded entries.",
+        "Phase-space timing statements and Table II refer to small, scope-dependent shifts; the text gives bounds below 0.01 s and below 0.04 s in different discussions. No universal exact 0.01 s bound is adopted.",
+        "The budget combines event-definition variation, detector uniformity, residual gas, bias, depolarization, incomplete cleaning, heating and timing. Acquisition, correction code, covariance and full-precision averaging inputs remain unreproduced.",
+        "The global combination includes exactly the production years 2017, 2018, 2020, 2021 and 2022. The displayed 2016 and 2019 comparisons are excluded; current and global values must not be pooled as independent results.",
+        "The 2017/2018 central results are imported from the earlier publication and already include its material/gas corrections. The 2025 paper applies its current systematic budget to the earlier data; no full cross-year covariance or separate older aluminum-uncertainty row is supplied.",
+        "The 2025 Table III yearly inputs are 877.73(.32), 877.80(.50), 879.39(.89), 878.41(.58) and 876.93(.57) s, with statistical parentheses. Averaging these rounded entries alone does not exactly reproduce every published final digit; the full-precision pipeline is unavailable.",
+        "The reported p=0.14 compares year results with their combination. It is not a significance test against infinite lifetime, a beam measurement, a dark-decay model or the Standard Model.",
+        "UCNtau+ elevator loading and projected 0.10 s precision are future plans in the paper. They provide no additional observations for this graph."
+      ],
+      "claimIds": [
+        "C-phys-ucntau-global-lifetime"
+      ]
+    }
+  ],
+  "openObligations": [
+    "Review the companion SLAC apparatus/results paper and subsequent separated longitudinal/transverse measurements before extending the 1969 scaling inference.",
+    "Review independent jet experiments and gluon spin/color tests; a three-jet topology alone does not determine all QCD quantum numbers.",
+    "Review lepton-specific scattering, neutrino evidence, tau decay and electron stability constraints before generalizing from positive muons.",
+    "Complete spectroscopy, confinement, lattice and all remaining source-card dependency reviews. No measured Level-0-to-quantum-field construction is established.",
+    "For source card 1.4, review field-region/vacuum entanglement and specific quantum-information applications before extending the finite bipartite definitions. No QFT-to-entanglement formation edge or universal particle threshold is admitted.",
+    "Verify the acquisition-to-table extraction, original stopping records and random-generator calibration for both Delft runs. Complete the supplementary proof review and compare independent experiments before stronger reproducibility or generality claims.",
+    "Resolve the printed Bressi voltage-sign conflict and obtain acquisition/calibration data before reproducing the resonance and force fits. Keep the main selected-point estimate separate from the drift model.",
+    "Review modern material-response, thermal and surface-systematic tests before extending the historical Casimir comparisons; the 1997 systematic-error assessment was limited.",
+    "Review modern hydrogen precision measurements and complete radiative contributions before extending the approximate 1947 Lamb/Bethe comparison.",
+    "Interacting vacuum structure, virtual processes, symmetry sectors and cosmological perturbations need their own scoped models and evidence. Vacuum variance supplies no blanket generation or maintenance relation to other physical cards.",
+    "Review independent DIS scaling-violation and other running-coupling determinations before extending the CMS comparison across experiments or claiming a theory-independent beta-function measurement.",
+    "Reproduce the CMS event selection, response matrix, covariance, perturbative prediction and PDF/RGE fitting inputs before claiming independent numerical validation of its coupling extraction.",
+    "Confinement, hadronization, infrared phase structure and general effective-theory universality require distinct nonperturbative or domain-specific arguments; ultraviolet asymptotic freedom does not close them.",
+    "Obtain independent configurations and sampling/fit specifications before reproducing Creutz loop expectations, autocorrelation uncertainty, finite-size effects or continuum extrapolation.",
+    "Confinement mechanisms, hadronization and any proposed generative or downward constraints require distinct evidence; no generic nonperturbative organization stage or universal numeric dependency is admitted.",
+    "Extend the static screening review across sea-quark masses, lattice spacings, volumes and physical two-plus-one-flavor calculations. The reviewed two-flavor result does not complete source cards 1.7 or 1.15, hadron spectroscopy or real-time hadronization.",
+    "Obtain Bali correlators, covariance and fit specifications for independent spectrum and coupling replay. Resolve the basis-summary and equal-mixing inconsistencies before using those conventions quantitatively.",
+    "Recover Lee acquisition, selection and effective-exposure/confidence construction before independently certifying the reported abundance limit. Review independent materials and charge searches without pooling unmatched preparations.",
+    "An emergent downward confinement constraint requires an explicit macro variable, intervention or reduction map and discriminating predictions. Static spectra and electric-charge non-detection do not supply that construction.",
+    "Recover the Dürr configurations, correlators, covariance, fit-quality weighting and fitting implementation for independent spectrum replay. Extend the isospin-symmetric calculation with reviewed electromagnetic/isospin-breaking evidence before representing a proton-neutron mass difference.",
+    "Source cards 1.10 and 1.11 remain open. A calibrated mass spectrum does not complete real-time hadronization, nucleon form factors, magnetic moments, weak-decay stability, nuclear stability or the original numerical parent minima. Review each of those assertions separately.",
+    "Review additional energy levels, resonance widths and coupled-channel methods before generalizing the excluded rho/Delta extraction or interpreting finite-volume levels as physical lifetimes.",
+    "Reproduce neutron-storage acquisition, event selection, monitor/background corrections and full fitted covariance before claiming independent lifetime verification. Resolve the printed Gonzalez weighting/mean-arrival notation and Musedinovic systematic-table averaging/sign conventions.",
+    "Review independent beam measurements and their decay-product efficiencies before a matched beam/bottle comparison. A bottle survival estimate does not identify all beta branching channels, establish CKM unitarity or resolve proposed new physics.",
+    "Source card 1.11 remains open for proton stability, nucleon form factors, magnetic moments, nuclear stability and constituent/dependency claims. Finite free-neutron lifetime qualifies permanence; it does not close the other assertions.",
+    "Review isospin-breaking and electromagnetic mass-splitting calculations separately from the isospin-symmetric spectrum. No hadronization or universal carrier-construction rule follows from corrected storage survival."
+  ],
+  "checkIds": []
+}

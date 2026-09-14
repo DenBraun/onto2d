@@ -205,6 +205,8 @@ function lightweightEdge(edge) {
     source: edge.source,
     target: edge.target,
     relationLayer: edge.relationLayer,
+    ...(typeof edge.data.role === "string" ? { role: edge.data.role } : {}),
+    ...(typeof edge.data.assertion === "string" ? { assertion: edge.data.assertion } : {}),
     dependencyType: edge.dependencyType,
     necessity: edge.necessity,
     weight: edge.weight

@@ -61,9 +61,7 @@ export function validateRoutingReview({ graph, routing, routingPolicy }, { sourc
     assert.ok(claim.citations.some((ref) => ref.sourceId === "routing-review" && ref.locator === `/reviews/${i}`), "Missing route decision citation");
     assert.ok(claim.citations.some((ref) => ref.sourceId === c.studyId && ref.role === "supports" && ctx.reviewedLocators.includes(ref.locator)), "Missing experimental support citation");
     assert.equal(relation?.kind, "functional-support");
-    assert.equal(relation.legacyReviewId, null, "New bridge must not silently review a historical assertion");
     for (const endpoint of [relation.source, relation.target]) {
-      assert.deepEqual(entities.get(endpoint)?.legacyCodes, [], "Routing boundary silently reviews a legacy card");
       assert.ok(entities.get(endpoint).claimIds.includes(claim.id), "Routing endpoint lacks its claim");
     }
     assert.deepEqual(review.candidates.map((r) => r.routeId), routing.routes.map((r) => r.id), "Incomplete route alternatives");
