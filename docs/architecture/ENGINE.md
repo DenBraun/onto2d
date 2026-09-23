@@ -77,7 +77,7 @@ child traversal, ancestors, descendants, bounded neighborhoods, and bounded
 all-shortest directed paths. It does not assign new scientific meaning to
 source relations.
 
-The current default is `causal-emergence@2026.09.14.31`, a partial research
+The current default is `causal-emergence@2026.09.23.7`, a partial research
 reconstruction. `stable` identifies the bundled software artifact, not
 scientific confirmation. Select `causal-emergence@2026.08.15` explicitly for
 the historical 249-record catalogue and its original source-parent semantics.

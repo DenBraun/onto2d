@@ -1,42 +1,42 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20260914.33";
+} from "../../packages/model-pack/src/browser.js?v=20260923.7";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20260914.33";
+} from "../../packages/model-pack/src/cache.js?v=20260923.7";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20260914.33";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20260914.33";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20260914.33";
+} from "../../packages/model-pack/src/registry.js?v=20260923.7";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20260923.7";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20260923.7";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20260914.33";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20260914.33";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20260914.33";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20260914.33";
-import { graphHighlight } from "./graph-interactions.js?v=20260914.33";
-import { citationLinks } from "./evidence-links.js?v=20260914.33";
+} from "../../packages/rdf-mapping/src/index.js?v=20260923.7";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20260923.7";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20260923.7";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20260923.7";
+import { graphHighlight } from "./graph-interactions.js?v=20260923.7";
+import { citationLinks } from "./evidence-links.js?v=20260923.7";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20260914.33";
+} from "./model-selection.js?v=20260923.7";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.09.14.31" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.09.23.7" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20260914.33",
+  "../../assets/js/model-pack-worker.js?v=20260923.7",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:525e5cab547fec0aee1735fe4f5e71b9189bfccc2b8c4f8bb147ff7e51fd2072";
+const EXPECTED_REGISTRY_HASH = "sha256:36167084c78be0965122bd3fda7c3113cf7221d60659cbabf54f66100cb9d677";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
@@ -559,6 +559,8 @@ function renderRationale(record) {
       const context = createElement("details");
       const subject = study.system ?? study.organism;
       context.append(createElement("summary", "", `Study context: ${study.id}${subject ? ` \u00b7 ${subject}` : ""}`));
+      const design = studyDesignLabel(study);
+      if (design) context.append(createElement("p", "", `Study design: ${design}`));
       context.append(createElement("p", "", `Preparation: ${study.preparation}`));
       context.append(createElement("p", "", `Observable: ${study.observable}`));
       context.append(createElement("p", "", `Reviewed: ${study.readExtent}. ${(study.reviewedLocators ?? []).join("; ")}`));
@@ -670,6 +672,15 @@ function renderSourceReadiness(pack) {
     ? () => downloadRecord(review, "representation-roles.json") : null;
 }
 
+function studyDesignLabel(study) {
+  return {
+    "primary-observation": "Primary observational study",
+    "primary-experiment": "Primary experimental study",
+    "experimental-reanalysis": "Reanalysis of experimental data",
+    "computational-analysis": "Computational analysis"
+  }[study.studyType];
+}
+
 function renderSourceReview(pack, key, prefix) {
   const dictionaries = pack.files["model/dictionaries.json"];
   const review = dictionaries?.[key];
@@ -697,11 +708,7 @@ function renderSourceReview(pack, key, prefix) {
   const sections = review.studies.map((study) => {
     const section = createElement("details", "record-details");
     section.append(createElement("summary", "", sources.get(study.sourceId)?.title ?? study.id));
-    const studyDesign = {
-      "primary-observation": "Primary observational study",
-      "primary-experiment": "Primary experimental study",
-      "computational-analysis": "Computational analysis"
-    }[study.studyType];
+    const studyDesign = studyDesignLabel(study);
     for (const [label, value] of [["Study design", studyDesign], ["Preparation", study.preparation], ["Observable", study.observable], ["Finding", study.finding]]) {
       if (value) section.append(createElement("p", "", `${label}: ${value}`));
     }

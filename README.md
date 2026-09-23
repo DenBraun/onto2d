@@ -69,7 +69,7 @@ the root `onto2d` package is private and has not been published to npm.
 
 ### Read a canonical construction rule and its premises
 
-`Onto2D.create()` loads the current Causal Emergence graph (`2026.09.14.31`).
+`Onto2D.create()` loads the current Causal Emergence graph (`2026.09.23.7`).
 The graph is being reconstructed; its scope and evidence are documented in the
 [source documentation](references/canonical/README.md).
 
@@ -91,7 +91,7 @@ console.log("Direct parent IDs:", parents.map(parent => parent.id).join(", "));
 Expected output:
 
 ```text
-Causal Emergence — Canonical Reconstruction: 826 nodes, 356 connections
+Causal Emergence — Canonical Reconstruction: 938 nodes, 566 connections
 Test localized objecthood
 Direct parent IDs: l0:deformation, l0:integrated-density, l0:local-density, l0:nonlinear-action, l0:triad-configuration
 ```

@@ -22,6 +22,23 @@ Source records in [graph.json](../graph.json) bind local files by SHA-256 and
 identify the reviewed passages or cell ranges. Numerical values retain the
 measurement and replication limits of their original experiments.
 
+## Deuteron and molecular-ion figure tables
+
+[Figure 3](rau2020-fig3.xlsx), [Extended Data Figure 1](rau2020-edfig1.xlsx)
+and [Figure 4](rau2020-fig4.xlsx) retain the unchanged publisher workbooks for
+S. Rau et al., *Penning trap mass measurements of the deuteron and the HD+
+molecular ion*, Nature 585, 43–47 (2020),
+[article and source downloads](https://doi.org/10.1038/s41586-020-2628-7).
+The source records bind each download URL and SHA-256.
+
+The [verifier](../../../models/causal-emergence/canonical/verify-deuteron-data.py)
+reads ten AWG1 points, ten AWG2 points and seven HD+ points by worksheet name.
+It preserves erroneous species headers and distinguishes absolute ratio
+increments of 1e-12 from mass differences in pu (1e-12 u). Figure 4 gives
+18 pu for the reported mass uncertainty, while the article gives 17 pu.
+Grouped means and diagonal-weight fits do not reproduce the original
+acquisition, covariance, mass adjustment or uncertainty propagation.
+
 ## Retinal response ratios
 
 [elife-38281-fig6-data1-v2.xlsx](elife-38281-fig6-data1-v2.xlsx) is the

@@ -7788,6 +7788,1014 @@
       ]
     },
     {
+      "nodeId": "phys:qcd-qed-hadron-theory",
+      "role": "definition",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qcd-qed-hadron-theory"
+      ]
+    },
+    {
+      "nodeId": "phys:isospin-mass-splitting",
+      "role": "definition",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-isospin-mass-splitting"
+      ]
+    },
+    {
+      "nodeId": "phys:qcd-qed-calibration",
+      "role": "definition",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qcd-qed-calibration"
+      ]
+    },
+    {
+      "nodeId": "phys:qedl-volume-correction",
+      "role": "definition",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qedl-volume-correction"
+      ]
+    },
+    {
+      "nodeId": "phys:qcd-qed-separation",
+      "role": "definition",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qcd-qed-separation"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi2015-context",
+      "role": "model-context",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-borsanyi2015-context"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi-volume-context",
+      "role": "model-context",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-borsanyi-volume-context"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi-lattice-splittings",
+      "role": "scoped-phenomenon",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borsanyi-lattice-splittings"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi-kaon-volume",
+      "role": "scoped-phenomenon",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borsanyi-kaon-volume"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi-isospin-spectrum",
+      "role": "scoped-phenomenon",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borsanyi-isospin-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi-qcd-qed-components",
+      "role": "scoped-phenomenon",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borsanyi-qcd-qed-components"
+      ]
+    },
+    {
+      "nodeId": "phys:borsanyi-calibrated-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "A mathematical prescription, specified computational preparation or scoped reported mass-splitting result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borsanyi-calibrated-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:nucleon-ratio-calibration",
+      "role": "definition",
+      "denotes": "A declared extra calibration input to the reported component ratio.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-nucleon-ratio-calibration"
+      ]
+    },
+    {
+      "nodeId": "phys:bragg-wavelength",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-bragg-wavelength"
+      ]
+    },
+    {
+      "nodeId": "phys:ill25-calibration",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ill25-calibration"
+      ]
+    },
+    {
+      "nodeId": "phys:capture-recoil-energy",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-capture-recoil-energy"
+      ]
+    },
+    {
+      "nodeId": "phys:binding-unit-conversion",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-binding-unit-conversion"
+      ]
+    },
+    {
+      "nodeId": "phys:hydrogen-isotope-mass-input",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hydrogen-isotope-mass-input"
+      ]
+    },
+    {
+      "nodeId": "phys:neutron-mass-balance",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutron-mass-balance"
+      ]
+    },
+    {
+      "nodeId": "phys:ill25-adjusted-calibration",
+      "role": "definition",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ill25-adjusted-calibration"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler1995-context",
+      "role": "experimental-context",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kessler1995-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler1998-context",
+      "role": "experimental-context",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kessler1998-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler1995-angle",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler1995-angle"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler1998-angle",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler1998-angle"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler-combined-angle",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler-combined-angle"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler-capture-wavelength",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler-capture-wavelength"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler-binding-energy",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler-binding-energy"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler-neutron-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler-neutron-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler-recalibrated-wavelength",
+      "role": "scoped-phenomenon",
+      "denotes": "A declared measurement prescription, preparation or reported inference with its calibration inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kessler-recalibrated-wavelength"
+      ]
+    },
+    {
+      "nodeId": "phys:penning-cyclotron-ratio",
+      "role": "definition",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-penning-cyclotron-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:penning-sof-protocol",
+      "role": "definition",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-penning-sof-protocol"
+      ]
+    },
+    {
+      "nodeId": "phys:ion-atom-mass-correction",
+      "role": "definition",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ion-atom-mass-correction"
+      ]
+    },
+    {
+      "nodeId": "phys:atomic-mass-covariance",
+      "role": "definition",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-atomic-mass-covariance"
+      ]
+    },
+    {
+      "nodeId": "phys:natarajan1993-sof-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-natarajan1993-sof-context"
+      ]
+    },
+    {
+      "nodeId": "phys:natarajan1993-pnp-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-natarajan1993-pnp-context"
+      ]
+    },
+    {
+      "nodeId": "phys:difilippo1994-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-difilippo1994-context"
+      ]
+    },
+    {
+      "nodeId": "phys:natarajan-voltage-control",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-natarajan-voltage-control"
+      ]
+    },
+    {
+      "nodeId": "phys:natarajan-frequency-ratios",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-natarajan-frequency-ratios"
+      ]
+    },
+    {
+      "nodeId": "phys:natarajan-hydrogen-masses",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-natarajan-hydrogen-masses"
+      ]
+    },
+    {
+      "nodeId": "phys:difilippo-example-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-difilippo-example-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:difilippo-hydrogen-masses",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-difilippo-hydrogen-masses"
+      ]
+    },
+    {
+      "nodeId": "phys:difilippo-capture-input",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass-measurement prescription, preparation, readout or inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-difilippo-capture-input"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap-carbon-reference",
+      "role": "definition",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-liontrap-carbon-reference"
+      ]
+    },
+    {
+      "nodeId": "phys:penning-pna-fit",
+      "role": "definition",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-penning-pna-fit"
+      ]
+    },
+    {
+      "nodeId": "phys:penning-image-charge",
+      "role": "definition",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-penning-image-charge"
+      ]
+    },
+    {
+      "nodeId": "phys:penning-image-charge-geometry",
+      "role": "definition",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-penning-image-charge-geometry"
+      ]
+    },
+    {
+      "nodeId": "phys:penning-magnetron-control",
+      "role": "definition",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-penning-magnetron-control"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2017-pna-context",
+      "role": "experimental-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-liontrap2017-pna-context"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2019-reanalysis-context",
+      "role": "experimental-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-liontrap2019-reanalysis-context"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2019-double-dip-context",
+      "role": "experimental-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-liontrap2019-double-dip-context"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2019-oxygen-context",
+      "role": "experimental-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-liontrap2019-oxygen-context"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2019-carbon-control-context",
+      "role": "experimental-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-liontrap2019-carbon-control-context"
+      ]
+    },
+    {
+      "nodeId": "phys:schuh2019-magnetron-context",
+      "role": "experimental-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schuh2019-magnetron-context"
+      ]
+    },
+    {
+      "nodeId": "phys:schuh2019-geometry-context",
+      "role": "model-context",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schuh2019-geometry-context"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2017-proton",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liontrap2017-proton"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap2019-proton",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liontrap2019-proton"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap-correction-budget",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liontrap-correction-budget"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap-double-dip",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liontrap-double-dip"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap-oxygen",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liontrap-oxygen"
+      ]
+    },
+    {
+      "nodeId": "phys:liontrap-carbon-control",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liontrap-carbon-control"
+      ]
+    },
+    {
+      "nodeId": "phys:schuh-magnetron-difference",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schuh-magnetron-difference"
+      ]
+    },
+    {
+      "nodeId": "phys:schuh-image-charge",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schuh-image-charge"
+      ]
+    },
+    {
+      "nodeId": "phys:schuh-geometry-response",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schuh-geometry-response"
+      ]
+    },
+    {
+      "nodeId": "phys:schuh-ics-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped definition, experimental preparation, reanalysis, measured result or geometry calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schuh-ics-comparison"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-carbon-reference",
+      "role": "definition",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-rau-carbon-reference"
+      ]
+    },
+    {
+      "nodeId": "phys:molecular-ion-mass-balance",
+      "role": "definition",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-molecular-ion-mass-balance"
+      ]
+    },
+    {
+      "nodeId": "phys:rovibrational-state-boundary",
+      "role": "definition",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-rovibrational-state-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:silicon-lattice-transfer",
+      "role": "definition",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-silicon-lattice-transfer"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-awg1-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-awg1-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-awg2-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-awg2-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-hd-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-hd-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-local-fit-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-local-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-joint-fit-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-joint-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:korobov2017-hd-context",
+      "role": "model-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-korobov2017-hd-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kessler2017-ill-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kessler2017-ill-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2020-ratio-context",
+      "role": "experimental-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fink2020-ratio-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-figure-replay-context",
+      "role": "model-context",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-figure-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-deuteron",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-deuteron"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-hd-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-hd-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:korobov-hd-energy",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-korobov-hd-energy"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-hd-closure",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-hd-closure"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-local-adjustment",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-local-adjustment"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-joint-adjustment",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-joint-adjustment"
+      ]
+    },
+    {
+      "nodeId": "phys:ill2017-spacing",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ill2017-spacing"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-capture-binding",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-capture-binding"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-neutron-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-neutron-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:fink-deuteron-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink-deuteron-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:fink-proton-referenced-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink-proton-referenced-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-grouped-replay",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-grouped-replay"
+      ]
+    },
+    {
+      "nodeId": "phys:rau-printed-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped mass definition, ion preparation, analysis result or calibration dependency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rau-printed-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:rau2020-capture-recalibration-context",
+      "role": "experimental-context",
+      "denotes": "A reanalysis of existing capture measurements with a revised crystal calibration.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rau2020-capture-recalibration-context"
+      ]
+    },
+    {
+      "nodeId": "phys:coupled-cyclotron-readout",
+      "role": "definition",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-coupled-cyclotron-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:state-conditional-mass",
+      "role": "definition",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-state-conditional-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:mass-adjustment-constraint",
+      "role": "definition",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-mass-adjustment-constraint"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-simultaneous-context",
+      "role": "experimental-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fink2021-simultaneous-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-state-fit-context",
+      "role": "experimental-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fink2021-state-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-drive-control-context",
+      "role": "experimental-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fink2021-drive-control-context"
+      ]
+    },
+    {
+      "nodeId": "phys:korobov2017-h2-context",
+      "role": "model-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-korobov2017-h2-context"
+      ]
+    },
+    {
+      "nodeId": "phys:codata2022-mass-inputs-context",
+      "role": "experimental-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-codata2022-mass-inputs-context"
+      ]
+    },
+    {
+      "nodeId": "phys:codata2022-lattice-context",
+      "role": "experimental-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-codata2022-lattice-context"
+      ]
+    },
+    {
+      "nodeId": "phys:mass-constraint-replay-context",
+      "role": "model-context",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-mass-constraint-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-state-branches",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink2021-state-branches"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-drive-extrapolation",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink2021-drive-extrapolation"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-ground-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink2021-ground-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:korobov-h2-energy",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-korobov-h2-energy"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-deuteron-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink2021-deuteron-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:fink2021-proton-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fink2021-proton-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:codata2022-frequency-inputs",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-codata2022-frequency-inputs"
+      ]
+    },
+    {
+      "nodeId": "phys:codata2022-ion-covariance",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-codata2022-ion-covariance"
+      ]
+    },
+    {
+      "nodeId": "phys:codata2022-capture-equation",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-codata2022-capture-equation"
+      ]
+    },
+    {
+      "nodeId": "phys:codata2022-ill-input",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-codata2022-ill-input"
+      ]
+    },
+    {
+      "nodeId": "phys:mass-constraint-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "A conditional mass constraint, scoped preparation, calculation or source-input comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-mass-constraint-arithmetic"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

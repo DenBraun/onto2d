@@ -9,6 +9,15 @@ CI tests Node.js 22 with Python 3.11 and Node.js 24 with Python 3.13 on Linux,
 macOS and Windows. Python versions are explicit rather than inherited from
 the runner image.
 
+Python file reads and Node/Python pipes must use UTF-8. CI sets `PYTHONUTF8=1`
+and `PYTHONIOENCODING=utf-8` for every job. In Windows PowerShell, set these
+before running the commands below:
+
+```powershell
+$env:PYTHONUTF8 = "1"
+$env:PYTHONIOENCODING = "utf-8"
+```
+
 ```sh
 npm ci
 npm test

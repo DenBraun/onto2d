@@ -59,7 +59,7 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   return buildModelPack({
     model: { ...graph.model, description: graph.scope.summary },
-    source: { id: "canonical-research-source-v18", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
+    source: { id: "canonical-research-source-v19", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
     nodes, edges,
     dictionaries: {
       sources: graph.sources, claims: graph.claims, constructionRules: graph.rules,
@@ -91,6 +91,8 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/visual.mjs",
     "models/causal-emergence/canonical/neural.mjs",
     "models/causal-emergence/canonical/physics.mjs",
+    "models/causal-emergence/canonical/deuteron.mjs",
+    "models/causal-emergence/canonical/mass-constraints.mjs",
     "models/causal-emergence/canonical/geometric-model-data.mjs",
     "models/causal-emergence/canonical/verify-neurogenesis-data.py",
     "packages/model-pack/src/canonical-options.js", "packages/model-pack/src/index.js",

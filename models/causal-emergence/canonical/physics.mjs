@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import { MASS_CONSTRAINT_CHECKS, validateMassConstraintContracts } from "./mass-constraints.mjs";
+import { DEUTERON_CHECKS, validateDeuteronContracts } from "./deuteron.mjs";
 
 export const BELL_CHECKS = new Map([2015, 2016].flatMap((year) => [
   [`bell-event-table-${year}`, `C-phys-hensen${year}-correlations`],
@@ -40,7 +42,36 @@ const definitions = new Map([
   ["phys:hadron-mass-calibration", "D-phys-hadron-mass-calibration"],
   ["phys:finite-volume-hadron-resonance", "D-phys-finite-volume-hadron-resonance"],
   ["phys:exponential-survival", "D-phys-exponential-survival"],
-  ["phys:ucn-storage-loss-model", "D-phys-ucn-storage-loss-model"]
+  ["phys:ucn-storage-loss-model", "D-phys-ucn-storage-loss-model"],
+  ["phys:qcd-qed-hadron-theory", "D-phys-qcd-qed-hadron-theory"],
+  ["phys:isospin-mass-splitting", "D-phys-isospin-mass-splitting"],
+  ["phys:qcd-qed-calibration", "D-phys-qcd-qed-calibration"],
+  ["phys:qedl-volume-correction", "D-phys-qedl-volume-correction"],
+  ["phys:qcd-qed-separation", "D-phys-qcd-qed-separation"],
+  ["phys:nucleon-ratio-calibration", "D-phys-nucleon-ratio-calibration"],
+  ["phys:bragg-wavelength", "D-phys-bragg-wavelength"],
+  ["phys:ill25-calibration", "D-phys-ill25-calibration"],
+  ["phys:capture-recoil-energy", "D-phys-capture-recoil-energy"],
+  ["phys:binding-unit-conversion", "D-phys-binding-unit-conversion"],
+  ["phys:hydrogen-isotope-mass-input", "D-phys-hydrogen-isotope-mass-input"],
+  ["phys:neutron-mass-balance", "D-phys-neutron-mass-balance"],
+  ["phys:ill25-adjusted-calibration", "D-phys-ill25-adjusted-calibration"],
+  ["phys:penning-cyclotron-ratio", "D-phys-penning-cyclotron-ratio"],
+  ["phys:penning-sof-protocol", "D-phys-penning-sof-protocol"],
+  ["phys:ion-atom-mass-correction", "D-phys-ion-atom-mass-correction"],
+  ["phys:atomic-mass-covariance", "D-phys-atomic-mass-covariance"],
+  ["phys:liontrap-carbon-reference", "D-phys-liontrap-carbon-reference"],
+  ["phys:penning-pna-fit", "D-phys-penning-pna-fit"],
+  ["phys:penning-image-charge", "D-phys-penning-image-charge"],
+  ["phys:penning-image-charge-geometry", "D-phys-penning-image-charge-geometry"],
+  ["phys:penning-magnetron-control", "D-phys-penning-magnetron-control"],
+  ["phys:rau-carbon-reference", "D-phys-rau-carbon-reference"],
+  ["phys:molecular-ion-mass-balance", "D-phys-molecular-ion-mass-balance"],
+  ["phys:rovibrational-state-boundary", "D-phys-rovibrational-state-boundary"],
+  ["phys:silicon-lattice-transfer", "D-phys-silicon-lattice-transfer"],
+  ["phys:coupled-cyclotron-readout", "D-phys-coupled-cyclotron-readout"],
+  ["phys:state-conditional-mass", "D-phys-state-conditional-mass"],
+  ["phys:mass-adjustment-constraint", "D-phys-mass-adjustment-constraint"]
 ]);
 
 const formalDependencies = new Map([
@@ -74,7 +105,34 @@ const formalDependencies = new Map([
   ["lattice-hadron-correlator", ["lattice-gauge-formulation", "hadron-correlator-mass"]],
   ["qcd-hadron-calibration", ["qcd", "hadron-mass-calibration"]],
   ["correlator-hadron-resonance", ["hadron-correlator-mass", "finite-volume-hadron-resonance"]],
-  ["survival-storage-loss", ["exponential-survival", "ucn-storage-loss-model"]]
+  ["survival-storage-loss", ["exponential-survival", "ucn-storage-loss-model"]],
+  ["qcd-qcd-qed-hadron-theory", ["qcd", "qcd-qed-hadron-theory"]],
+  ["standard-model-qcd-qed-hadron-theory", ["standard-model", "qcd-qed-hadron-theory"]],
+  ["qcd-qed-hadron-theory-isospin-mass-splitting", ["qcd-qed-hadron-theory", "isospin-mass-splitting"]],
+  ["qcd-qed-hadron-theory-qcd-qed-calibration", ["qcd-qed-hadron-theory", "qcd-qed-calibration"]],
+  ["lattice-gauge-formulation-qedl-volume-correction", ["lattice-gauge-formulation", "qedl-volume-correction"]],
+  ["qcd-qed-hadron-theory-qedl-volume-correction", ["qcd-qed-hadron-theory", "qedl-volume-correction"]],
+  ["isospin-mass-splitting-qcd-qed-separation", ["isospin-mass-splitting", "qcd-qed-separation"]],
+  ["isospin-ratio-calibration", ["isospin-mass-splitting", "nucleon-ratio-calibration"]],
+  ["capture-recoil-energy-neutron-mass-balance", ["capture-recoil-energy", "neutron-mass-balance"]],
+  ["binding-unit-conversion-neutron-mass-balance", ["binding-unit-conversion", "neutron-mass-balance"]],
+  ["hydrogen-isotope-mass-input-neutron-mass-balance", ["hydrogen-isotope-mass-input", "neutron-mass-balance"]],
+  ["penning-cyclotron-ratio-penning-sof-protocol", ["penning-cyclotron-ratio", "penning-sof-protocol"]],
+  ["penning-cyclotron-ratio-ion-atom-mass-correction", ["penning-cyclotron-ratio", "ion-atom-mass-correction"]],
+  ["ion-atom-mass-correction-atomic-mass-covariance", ["ion-atom-mass-correction", "atomic-mass-covariance"]],
+  ["penning-cyclotron-ratio-liontrap-carbon-reference", ["penning-cyclotron-ratio", "liontrap-carbon-reference"]],
+  ["ion-atom-mass-correction-liontrap-carbon-reference", ["ion-atom-mass-correction", "liontrap-carbon-reference"]],
+  ["penning-cyclotron-ratio-penning-pna-fit", ["penning-cyclotron-ratio", "penning-pna-fit"]],
+  ["penning-cyclotron-ratio-penning-image-charge", ["penning-cyclotron-ratio", "penning-image-charge"]],
+  ["penning-image-charge-penning-image-charge-geometry", ["penning-image-charge", "penning-image-charge-geometry"]],
+  ["penning-cyclotron-ratio-penning-magnetron-control", ["penning-cyclotron-ratio", "penning-magnetron-control"]],
+  ["penning-cyclotron-ratio-rau-carbon-reference", ["penning-cyclotron-ratio", "rau-carbon-reference"]],
+  ["ion-atom-mass-correction-molecular-ion-mass-balance", ["ion-atom-mass-correction", "molecular-ion-mass-balance"]],
+  ["molecular-ion-mass-balance-rovibrational-state-boundary", ["molecular-ion-mass-balance", "rovibrational-state-boundary"]],
+  ["bragg-wavelength-silicon-lattice-transfer", ["bragg-wavelength", "silicon-lattice-transfer"]],
+  ["penning-cyclotron-ratio-coupled-cyclotron-readout", ["penning-cyclotron-ratio", "coupled-cyclotron-readout"]],
+  ["rovibrational-state-boundary-state-conditional-mass", ["rovibrational-state-boundary", "state-conditional-mass"]],
+  ["atomic-mass-covariance-mass-adjustment-constraint", ["atomic-mass-covariance", "mass-adjustment-constraint"]]
 ].map(([id, endpoints]) => [`physics:${id}`, endpoints.map((id) => `phys:${id}`)]));
 const bellAssumptions = [
   "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
@@ -130,7 +188,59 @@ const observations = [
   ["ucn2022-segment-response", "C-phys-ucn2022-segment-response", ["musedinovic2025-2022"]],
   ["ucn2017-2018-lifetime", "C-phys-ucn2017-2018-lifetime", ["gonzalez2021-2017", "gonzalez2021-2018"]],
   ["ucn2020-2022-lifetime", "C-phys-ucn2020-2022-lifetime", ["musedinovic2025-2020", "musedinovic2025-2021", "musedinovic2025-2022"]],
-  ["ucntau-global-lifetime", "C-phys-ucntau-global-lifetime", ["gonzalez2021-2017", "gonzalez2021-2018", "musedinovic2025-2020", "musedinovic2025-2021", "musedinovic2025-2022"]]
+  ["ucntau-global-lifetime", "C-phys-ucntau-global-lifetime", ["gonzalez2021-2017", "gonzalez2021-2018", "musedinovic2025-2020", "musedinovic2025-2021", "musedinovic2025-2022"]],
+  ["borsanyi-lattice-splittings", "C-phys-borsanyi-lattice-splittings", ["borsanyi2015"]],
+  ["borsanyi-kaon-volume", "C-phys-borsanyi-kaon-volume", ["borsanyi2015-volume"]],
+  ["borsanyi-isospin-spectrum", "C-phys-borsanyi-isospin-spectrum", ["borsanyi2015"]],
+  ["borsanyi-qcd-qed-components", "C-phys-borsanyi-qcd-qed-components", ["borsanyi2015"]],
+  ["borsanyi-calibrated-ratio", "C-phys-borsanyi-calibrated-ratio", ["borsanyi2015"]],
+  ["kessler1995-angle", "C-phys-kessler1995-angle", ["kessler1995"]],
+  ["kessler1998-angle", "C-phys-kessler1998-angle", ["kessler1998"]],
+  ["kessler-combined-angle", "C-phys-kessler-combined-angle", ["kessler1995", "kessler1998"]],
+  ["kessler-capture-wavelength", "C-phys-kessler-capture-wavelength", ["kessler1995", "kessler1998"]],
+  ["kessler-binding-energy", "C-phys-kessler-binding-energy", ["kessler1995", "kessler1998"]],
+  ["kessler-neutron-mass", "C-phys-kessler-neutron-mass", ["kessler1995", "kessler1998"]],
+  ["kessler-recalibrated-wavelength", "C-phys-kessler-recalibrated-wavelength", ["kessler1995", "kessler1998"]],
+  ["natarajan-voltage-control", "C-phys-natarajan-voltage-control", ["natarajan1993-sof", "natarajan1993-pnp"]],
+  ["natarajan-frequency-ratios", "C-phys-natarajan-frequency-ratios", ["natarajan1993-sof"]],
+  ["natarajan-hydrogen-masses", "C-phys-natarajan-hydrogen-masses", ["natarajan1993-sof"]],
+  ["difilippo-example-ratio", "C-phys-difilippo-example-ratio", ["difilippo1994"]],
+  ["difilippo-hydrogen-masses", "C-phys-difilippo-hydrogen-masses", ["difilippo1994"]],
+  ["difilippo-capture-input", "C-phys-difilippo-capture-input", ["difilippo1994", "kessler1995", "kessler1998"]],
+  ["liontrap2017-proton", "C-phys-liontrap2017-proton", ["liontrap2017-pna"]],
+  ["liontrap2019-proton", "C-phys-liontrap2019-proton", ["liontrap2017-pna", "liontrap2019-reanalysis"]],
+  ["liontrap-correction-budget", "C-phys-liontrap-correction-budget", ["liontrap2017-pna", "liontrap2019-reanalysis"]],
+  ["liontrap-double-dip", "C-phys-liontrap-double-dip", ["liontrap2019-double-dip", "liontrap2019-reanalysis"]],
+  ["liontrap-oxygen", "C-phys-liontrap-oxygen", ["liontrap2019-oxygen", "liontrap2019-reanalysis"]],
+  ["liontrap-carbon-control", "C-phys-liontrap-carbon-control", ["liontrap2019-carbon-control"]],
+  ["schuh-magnetron-difference", "C-phys-schuh-magnetron-difference", ["schuh2019-magnetron"]],
+  ["schuh-image-charge", "C-phys-schuh-image-charge", ["schuh2019-magnetron"]],
+  ["schuh-geometry-response", "C-phys-schuh-geometry-response", ["schuh2019-geometry"]],
+  ["schuh-ics-comparison", "C-phys-schuh-ics-comparison", ["schuh2019-magnetron", "schuh2019-geometry"]],
+  ["rau-deuteron", "C-phys-rau-deuteron", ["rau2020-awg1", "rau2020-awg2"]],
+  ["rau-hd-mass", "C-phys-rau-hd-mass", ["rau2020-hd"]],
+  ["korobov-hd-energy", "C-phys-korobov-hd-energy", ["korobov2017-hd"]],
+  ["rau-hd-closure", "C-phys-rau-hd-closure", ["rau2020-awg1", "rau2020-awg2", "rau2020-hd"]],
+  ["rau-local-adjustment", "C-phys-rau-local-adjustment", ["rau2020-local-fit"]],
+  ["rau-joint-adjustment", "C-phys-rau-joint-adjustment", ["rau2020-joint-fit"]],
+  ["ill2017-spacing", "C-phys-ill2017-spacing", ["kessler2017-ill"]],
+  ["rau-capture-binding", "C-phys-rau-capture-binding", ["rau2020-capture-recalibration"]],
+  ["rau-neutron-mass", "C-phys-rau-neutron-mass", ["rau2020-joint-fit"]],
+  ["fink-deuteron-ratio", "C-phys-fink-deuteron-ratio", ["fink2020-ratio"]],
+  ["fink-proton-referenced-mass", "C-phys-fink-proton-referenced-mass", ["fink2020-ratio"]],
+  ["rau-grouped-replay", "C-phys-rau-grouped-replay", ["rau2020-figure-replay"]],
+  ["rau-printed-arithmetic", "C-phys-rau-printed-arithmetic", ["rau2020-figure-replay"]],
+  ["fink2021-state-branches", "C-phys-fink2021-state-branches", ["fink2021-state-fit"]],
+  ["fink2021-drive-extrapolation", "C-phys-fink2021-drive-extrapolation", ["fink2021-drive-control"]],
+  ["fink2021-ground-ratio", "C-phys-fink2021-ground-ratio", ["fink2021-state-fit", "fink2021-drive-control"]],
+  ["korobov-h2-energy", "C-phys-korobov-h2-energy", ["korobov2017-h2"]],
+  ["fink2021-deuteron-ratio", "C-phys-fink2021-deuteron-ratio", ["fink2021-state-fit"]],
+  ["fink2021-proton-mass", "C-phys-fink2021-proton-mass", ["fink2021-state-fit"]],
+  ["codata2022-frequency-inputs", "C-phys-codata2022-frequency-inputs", ["codata2022-mass-inputs"]],
+  ["codata2022-ion-covariance", "C-phys-codata2022-ion-covariance", ["codata2022-mass-inputs"]],
+  ["codata2022-capture-equation", "C-phys-codata2022-capture-equation", ["codata2022-lattice"]],
+  ["codata2022-ill-input", "C-phys-codata2022-ill-input", ["codata2022-lattice", "kessler2017-ill"]],
+  ["mass-constraint-arithmetic", "C-phys-mass-constraint-arithmetic", ["mass-constraint-replay"]]
 ];
 const contexts = [
   ["slac-context", "M-phys-slac-readout", ["breidenbach1969"]],
@@ -154,7 +264,38 @@ const contexts = [
   ["ucn2020-context", "M-phys-ucn2020-context", ["musedinovic2025-2020"]],
   ["ucn2021-context", "M-phys-ucn2021-context", ["musedinovic2025-2021"]],
   ["ucn2022-context", "M-phys-ucn2022-context", ["musedinovic2025-2022"]],
-  ["ucn2022-uncleaned-context", "M-phys-ucn2022-uncleaned-context", ["musedinovic2025-uncleaned"]]
+  ["ucn2022-uncleaned-context", "M-phys-ucn2022-uncleaned-context", ["musedinovic2025-uncleaned"]],
+  ["borsanyi2015-context", "M-phys-borsanyi2015-context", ["borsanyi2015"]],
+  ["borsanyi-volume-context", "M-phys-borsanyi-volume-context", ["borsanyi2015-volume"]],
+  ["kessler1995-context", "M-phys-kessler1995-context", ["kessler1995"]],
+  ["kessler1998-context", "M-phys-kessler1998-context", ["kessler1998"]],
+  ["natarajan1993-sof-context", "M-phys-natarajan1993-sof-context", ["natarajan1993-sof"]],
+  ["natarajan1993-pnp-context", "M-phys-natarajan1993-pnp-context", ["natarajan1993-pnp"]],
+  ["difilippo1994-context", "M-phys-difilippo1994-context", ["difilippo1994"]],
+  ["liontrap2017-pna-context", "M-phys-liontrap2017-pna-context", ["liontrap2017-pna"]],
+  ["liontrap2019-reanalysis-context", "M-phys-liontrap2019-reanalysis-context", ["liontrap2019-reanalysis"]],
+  ["liontrap2019-double-dip-context", "M-phys-liontrap2019-double-dip-context", ["liontrap2019-double-dip"]],
+  ["liontrap2019-oxygen-context", "M-phys-liontrap2019-oxygen-context", ["liontrap2019-oxygen"]],
+  ["liontrap2019-carbon-control-context", "M-phys-liontrap2019-carbon-control-context", ["liontrap2019-carbon-control"]],
+  ["schuh2019-magnetron-context", "M-phys-schuh2019-magnetron-context", ["schuh2019-magnetron"]],
+  ["schuh2019-geometry-context", "M-phys-schuh2019-geometry-context", ["schuh2019-geometry"]],
+  ["rau2020-awg1-context", "M-phys-rau2020-awg1-context", ["rau2020-awg1"]],
+  ["rau2020-awg2-context", "M-phys-rau2020-awg2-context", ["rau2020-awg2"]],
+  ["rau2020-hd-context", "M-phys-rau2020-hd-context", ["rau2020-hd"]],
+  ["rau2020-local-fit-context", "M-phys-rau2020-local-fit-context", ["rau2020-local-fit"]],
+  ["rau2020-joint-fit-context", "M-phys-rau2020-joint-fit-context", ["rau2020-joint-fit"]],
+  ["korobov2017-hd-context", "M-phys-korobov2017-hd-context", ["korobov2017-hd"]],
+  ["kessler2017-ill-context", "M-phys-kessler2017-ill-context", ["kessler2017-ill"]],
+  ["fink2020-ratio-context", "M-phys-fink2020-ratio-context", ["fink2020-ratio"]],
+  ["rau2020-figure-replay-context", "M-phys-rau2020-figure-replay-context", ["rau2020-figure-replay"]],
+  ["rau2020-capture-recalibration-context", "M-phys-rau2020-capture-recalibration-context", ["rau2020-capture-recalibration"]],
+  ["fink2021-simultaneous-context", "M-phys-fink2021-simultaneous-context", ["fink2021-simultaneous"]],
+  ["fink2021-state-fit-context", "M-phys-fink2021-state-fit-context", ["fink2021-state-fit"]],
+  ["fink2021-drive-control-context", "M-phys-fink2021-drive-control-context", ["fink2021-drive-control"]],
+  ["korobov2017-h2-context", "M-phys-korobov2017-h2-context", ["korobov2017-h2"]],
+  ["codata2022-mass-inputs-context", "M-phys-codata2022-mass-inputs-context", ["codata2022-mass-inputs"]],
+  ["codata2022-lattice-context", "M-phys-codata2022-lattice-context", ["codata2022-lattice"]],
+  ["mass-constraint-replay-context", "M-phys-mass-constraint-replay-context", ["mass-constraint-replay"]]
 ];
 const dependencies = [
   ["slac-readout", "slac-context", "slac-spectrum", "M-phys-slac-readout", "measurement-context"],
@@ -248,7 +389,190 @@ const dependencies = [
   ["survival-ucn2022-segment-response", "ucn-storage-loss-model", "ucn2022-segment-response", "M-phys-ucn2022-segment-response", "interpretation-dependency"],
   ["survival-ucn2017-2018-lifetime", "ucn-storage-loss-model", "ucn2017-2018-lifetime", "M-phys-ucn2017-2018-lifetime", "interpretation-dependency"],
   ["survival-ucn2020-2022-lifetime", "ucn-storage-loss-model", "ucn2020-2022-lifetime", "M-phys-ucn2020-2022-lifetime", "interpretation-dependency"],
-  ["survival-ucntau-global-lifetime", "ucn-storage-loss-model", "ucntau-global-lifetime", "M-phys-ucntau-global-lifetime", "interpretation-dependency"]
+  ["survival-ucntau-global-lifetime", "ucn-storage-loss-model", "ucntau-global-lifetime", "M-phys-ucntau-global-lifetime", "interpretation-dependency"],
+  ["borsanyi2015-context-borsanyi-lattice-splittings", "borsanyi2015-context", "borsanyi-lattice-splittings", "M-phys-borsanyi2015-context", "computation-context"],
+  ["isospin-mass-splitting-borsanyi-lattice-splittings", "isospin-mass-splitting", "borsanyi-lattice-splittings", "M-phys-borsanyi2015-context", "computation-context"],
+  ["borsanyi-volume-context-borsanyi-kaon-volume", "borsanyi-volume-context", "borsanyi-kaon-volume", "M-phys-borsanyi-volume-context", "computation-context"],
+  ["qedl-volume-correction-borsanyi-kaon-volume", "qedl-volume-correction", "borsanyi-kaon-volume", "M-phys-borsanyi-kaon-volume", "interpretation-dependency"],
+  ["borsanyi-lattice-splittings-borsanyi-isospin-spectrum", "borsanyi-lattice-splittings", "borsanyi-isospin-spectrum", "M-phys-borsanyi-isospin-spectrum", "interpretation-dependency"],
+  ["qcd-qed-calibration-borsanyi-isospin-spectrum", "qcd-qed-calibration", "borsanyi-isospin-spectrum", "M-phys-borsanyi-isospin-spectrum", "interpretation-dependency"],
+  ["qedl-volume-correction-borsanyi-isospin-spectrum", "qedl-volume-correction", "borsanyi-isospin-spectrum", "M-phys-borsanyi-isospin-spectrum", "interpretation-dependency"],
+  ["borsanyi-kaon-volume-borsanyi-isospin-spectrum", "borsanyi-kaon-volume", "borsanyi-isospin-spectrum", "M-phys-borsanyi-isospin-spectrum", "interpretation-dependency"],
+  ["isospin-mass-splitting-borsanyi-isospin-spectrum", "isospin-mass-splitting", "borsanyi-isospin-spectrum", "M-phys-borsanyi-isospin-spectrum", "interpretation-dependency"],
+  ["borsanyi-isospin-spectrum-borsanyi-qcd-qed-components", "borsanyi-isospin-spectrum", "borsanyi-qcd-qed-components", "M-phys-borsanyi-qcd-qed-components", "interpretation-dependency"],
+  ["qcd-qed-separation-borsanyi-qcd-qed-components", "qcd-qed-separation", "borsanyi-qcd-qed-components", "M-phys-borsanyi-qcd-qed-components", "interpretation-dependency"],
+  ["qcd-qed-calibration-borsanyi-qcd-qed-components", "qcd-qed-calibration", "borsanyi-qcd-qed-components", "M-phys-borsanyi-qcd-qed-components", "interpretation-dependency"],
+  ["borsanyi-qcd-qed-components-borsanyi-calibrated-ratio", "borsanyi-qcd-qed-components", "borsanyi-calibrated-ratio", "M-phys-borsanyi-calibrated-ratio", "interpretation-dependency"],
+  ["qcd-qed-calibration-borsanyi-calibrated-ratio", "qcd-qed-calibration", "borsanyi-calibrated-ratio", "M-phys-borsanyi-calibrated-ratio", "interpretation-dependency"],
+  ["extra-mass-ratio-calibration", "nucleon-ratio-calibration", "borsanyi-calibrated-ratio", "M-phys-borsanyi-calibrated-ratio", "interpretation-dependency"],
+  ["kessler1995-context-kessler1995-angle", "kessler1995-context", "kessler1995-angle", "M-phys-kessler1995-context", "measurement-context"],
+  ["kessler1998-context-kessler1998-angle", "kessler1998-context", "kessler1998-angle", "M-phys-kessler1998-context", "measurement-context"],
+  ["kessler1995-angle-kessler-combined-angle", "kessler1995-angle", "kessler-combined-angle", "M-phys-kessler-combined-angle", "interpretation-dependency"],
+  ["kessler1998-angle-kessler-combined-angle", "kessler1998-angle", "kessler-combined-angle", "M-phys-kessler-combined-angle", "interpretation-dependency"],
+  ["bragg-wavelength-kessler-capture-wavelength", "bragg-wavelength", "kessler-capture-wavelength", "M-phys-kessler-capture-wavelength", "interpretation-dependency"],
+  ["ill25-calibration-kessler-capture-wavelength", "ill25-calibration", "kessler-capture-wavelength", "M-phys-kessler-capture-wavelength", "interpretation-dependency"],
+  ["kessler-combined-angle-kessler-capture-wavelength", "kessler-combined-angle", "kessler-capture-wavelength", "M-phys-kessler-capture-wavelength", "interpretation-dependency"],
+  ["kessler-capture-wavelength-kessler-binding-energy", "kessler-capture-wavelength", "kessler-binding-energy", "M-phys-kessler-binding-energy", "interpretation-dependency"],
+  ["capture-recoil-energy-kessler-binding-energy", "capture-recoil-energy", "kessler-binding-energy", "M-phys-kessler-binding-energy", "interpretation-dependency"],
+  ["binding-unit-conversion-kessler-binding-energy", "binding-unit-conversion", "kessler-binding-energy", "M-phys-kessler-binding-energy", "interpretation-dependency"],
+  ["kessler-binding-energy-kessler-neutron-mass", "kessler-binding-energy", "kessler-neutron-mass", "M-phys-kessler-neutron-mass", "interpretation-dependency"],
+  ["hydrogen-isotope-mass-input-kessler-neutron-mass", "hydrogen-isotope-mass-input", "kessler-neutron-mass", "M-phys-kessler-neutron-mass", "interpretation-dependency"],
+  ["neutron-mass-balance-kessler-neutron-mass", "neutron-mass-balance", "kessler-neutron-mass", "M-phys-kessler-neutron-mass", "interpretation-dependency"],
+  ["bragg-wavelength-kessler-recalibrated-wavelength", "bragg-wavelength", "kessler-recalibrated-wavelength", "M-phys-kessler-recalibrated-wavelength", "interpretation-dependency"],
+  ["ill25-adjusted-calibration-kessler-recalibrated-wavelength", "ill25-adjusted-calibration", "kessler-recalibrated-wavelength", "M-phys-kessler-recalibrated-wavelength", "interpretation-dependency"],
+  ["kessler-combined-angle-kessler-recalibrated-wavelength", "kessler-combined-angle", "kessler-recalibrated-wavelength", "M-phys-kessler-recalibrated-wavelength", "interpretation-dependency"],
+  ["natarajan1993-sof-context-natarajan-frequency-ratios", "natarajan1993-sof-context", "natarajan-frequency-ratios", "M-phys-natarajan1993-sof-context", "measurement-context"],
+  ["difilippo1994-context-difilippo-example-ratio", "difilippo1994-context", "difilippo-example-ratio", "M-phys-difilippo1994-context", "measurement-context"],
+  ["natarajan1993-sof-context-natarajan-voltage-control", "natarajan1993-sof-context", "natarajan-voltage-control", "M-phys-natarajan-voltage-control", "interpretation-dependency"],
+  ["natarajan1993-pnp-context-natarajan-voltage-control", "natarajan1993-pnp-context", "natarajan-voltage-control", "M-phys-natarajan-voltage-control", "interpretation-dependency"],
+  ["penning-cyclotron-ratio-natarajan-voltage-control", "penning-cyclotron-ratio", "natarajan-voltage-control", "M-phys-natarajan-voltage-control", "interpretation-dependency"],
+  ["penning-sof-protocol-natarajan-voltage-control", "penning-sof-protocol", "natarajan-voltage-control", "M-phys-natarajan-voltage-control", "interpretation-dependency"],
+  ["natarajan-frequency-ratios-natarajan-hydrogen-masses", "natarajan-frequency-ratios", "natarajan-hydrogen-masses", "M-phys-natarajan-hydrogen-masses", "interpretation-dependency"],
+  ["ion-atom-mass-correction-natarajan-hydrogen-masses", "ion-atom-mass-correction", "natarajan-hydrogen-masses", "M-phys-natarajan-hydrogen-masses", "interpretation-dependency"],
+  ["difilippo1994-context-difilippo-hydrogen-masses", "difilippo1994-context", "difilippo-hydrogen-masses", "M-phys-difilippo-hydrogen-masses", "interpretation-dependency"],
+  ["ion-atom-mass-correction-difilippo-hydrogen-masses", "ion-atom-mass-correction", "difilippo-hydrogen-masses", "M-phys-difilippo-hydrogen-masses", "interpretation-dependency"],
+  ["atomic-mass-covariance-difilippo-hydrogen-masses", "atomic-mass-covariance", "difilippo-hydrogen-masses", "M-phys-difilippo-hydrogen-masses", "interpretation-dependency"],
+  ["difilippo-hydrogen-masses-difilippo-capture-input", "difilippo-hydrogen-masses", "difilippo-capture-input", "M-phys-difilippo-capture-input", "interpretation-dependency"],
+  ["atomic-mass-covariance-difilippo-capture-input", "atomic-mass-covariance", "difilippo-capture-input", "M-phys-difilippo-capture-input", "interpretation-dependency"],
+  ["hydrogen-isotope-mass-input-difilippo-capture-input", "hydrogen-isotope-mass-input", "difilippo-capture-input", "M-phys-difilippo-capture-input", "interpretation-dependency"],
+  ["difilippo-capture-input-kessler-neutron-mass", "difilippo-capture-input", "kessler-neutron-mass", "M-phys-kessler-neutron-mass", "interpretation-dependency"],
+  ["liontrap2017-pna-context-liontrap2017-proton", "liontrap2017-pna-context", "liontrap2017-proton", "M-phys-liontrap2017-proton", "interpretation-dependency"],
+  ["liontrap-carbon-reference-liontrap2017-proton", "liontrap-carbon-reference", "liontrap2017-proton", "M-phys-liontrap2017-proton", "interpretation-dependency"],
+  ["penning-pna-fit-liontrap2017-proton", "penning-pna-fit", "liontrap2017-proton", "M-phys-liontrap2017-proton", "interpretation-dependency"],
+  ["penning-image-charge-liontrap2017-proton", "penning-image-charge", "liontrap2017-proton", "M-phys-liontrap2017-proton", "interpretation-dependency"],
+  ["liontrap2017-pna-context-liontrap2019-proton", "liontrap2017-pna-context", "liontrap2019-proton", "M-phys-liontrap2019-proton", "interpretation-dependency"],
+  ["liontrap2019-reanalysis-context-liontrap2019-proton", "liontrap2019-reanalysis-context", "liontrap2019-proton", "M-phys-liontrap2019-proton", "interpretation-dependency"],
+  ["liontrap-carbon-reference-liontrap2019-proton", "liontrap-carbon-reference", "liontrap2019-proton", "M-phys-liontrap2019-proton", "interpretation-dependency"],
+  ["penning-pna-fit-liontrap2019-proton", "penning-pna-fit", "liontrap2019-proton", "M-phys-liontrap2019-proton", "interpretation-dependency"],
+  ["liontrap-correction-budget-liontrap2019-proton", "liontrap-correction-budget", "liontrap2019-proton", "M-phys-liontrap2019-proton", "interpretation-dependency"],
+  ["liontrap2017-pna-context-liontrap-correction-budget", "liontrap2017-pna-context", "liontrap-correction-budget", "M-phys-liontrap-correction-budget", "interpretation-dependency"],
+  ["liontrap2019-reanalysis-context-liontrap-correction-budget", "liontrap2019-reanalysis-context", "liontrap-correction-budget", "M-phys-liontrap-correction-budget", "interpretation-dependency"],
+  ["penning-image-charge-liontrap-correction-budget", "penning-image-charge", "liontrap-correction-budget", "M-phys-liontrap-correction-budget", "interpretation-dependency"],
+  ["liontrap2019-double-dip-context-liontrap-double-dip", "liontrap2019-double-dip-context", "liontrap-double-dip", "M-phys-liontrap-double-dip", "interpretation-dependency"],
+  ["liontrap2019-proton-liontrap-double-dip", "liontrap2019-proton", "liontrap-double-dip", "M-phys-liontrap-double-dip", "interpretation-dependency"],
+  ["liontrap-carbon-reference-liontrap-double-dip", "liontrap-carbon-reference", "liontrap-double-dip", "M-phys-liontrap-double-dip", "interpretation-dependency"],
+  ["liontrap2019-oxygen-context-liontrap-oxygen", "liontrap2019-oxygen-context", "liontrap-oxygen", "M-phys-liontrap-oxygen", "interpretation-dependency"],
+  ["liontrap2019-proton-liontrap-oxygen", "liontrap2019-proton", "liontrap-oxygen", "M-phys-liontrap-oxygen", "interpretation-dependency"],
+  ["ion-atom-mass-correction-liontrap-oxygen", "ion-atom-mass-correction", "liontrap-oxygen", "M-phys-liontrap-oxygen", "interpretation-dependency"],
+  ["liontrap2019-carbon-control-context-liontrap-carbon-control", "liontrap2019-carbon-control-context", "liontrap-carbon-control", "M-phys-liontrap-carbon-control", "interpretation-dependency"],
+  ["liontrap-carbon-reference-liontrap-carbon-control", "liontrap-carbon-reference", "liontrap-carbon-control", "M-phys-liontrap-carbon-control", "interpretation-dependency"],
+  ["schuh2019-magnetron-context-schuh-magnetron-difference", "schuh2019-magnetron-context", "schuh-magnetron-difference", "M-phys-schuh-magnetron-difference", "interpretation-dependency"],
+  ["penning-magnetron-control-schuh-magnetron-difference", "penning-magnetron-control", "schuh-magnetron-difference", "M-phys-schuh-magnetron-difference", "interpretation-dependency"],
+  ["schuh-magnetron-difference-schuh-image-charge", "schuh-magnetron-difference", "schuh-image-charge", "M-phys-schuh-image-charge", "interpretation-dependency"],
+  ["penning-image-charge-schuh-image-charge", "penning-image-charge", "schuh-image-charge", "M-phys-schuh-image-charge", "interpretation-dependency"],
+  ["liontrap2017-proton-schuh-image-charge", "liontrap2017-proton", "schuh-image-charge", "M-phys-schuh-image-charge", "interpretation-dependency"],
+  ["schuh2019-geometry-context-schuh-geometry-response", "schuh2019-geometry-context", "schuh-geometry-response", "M-phys-schuh-geometry-response", "interpretation-dependency"],
+  ["penning-image-charge-geometry-schuh-geometry-response", "penning-image-charge-geometry", "schuh-geometry-response", "M-phys-schuh-geometry-response", "interpretation-dependency"],
+  ["schuh-image-charge-schuh-ics-comparison", "schuh-image-charge", "schuh-ics-comparison", "M-phys-schuh-ics-comparison", "interpretation-dependency"],
+  ["schuh-geometry-response-schuh-ics-comparison", "schuh-geometry-response", "schuh-ics-comparison", "M-phys-schuh-ics-comparison", "interpretation-dependency"],
+  ["penning-image-charge-schuh-ics-comparison", "penning-image-charge", "schuh-ics-comparison", "M-phys-schuh-ics-comparison", "interpretation-dependency"],
+  ["rau2020-awg1-context-rau-deuteron", "rau2020-awg1-context", "rau-deuteron", "M-phys-rau-deuteron", "interpretation-dependency"],
+  ["rau2020-awg2-context-rau-deuteron", "rau2020-awg2-context", "rau-deuteron", "M-phys-rau-deuteron", "interpretation-dependency"],
+  ["rau-carbon-reference-rau-deuteron", "rau-carbon-reference", "rau-deuteron", "M-phys-rau-deuteron", "interpretation-dependency"],
+  ["penning-pna-fit-rau-deuteron", "penning-pna-fit", "rau-deuteron", "M-phys-rau-deuteron", "interpretation-dependency"],
+  ["penning-image-charge-rau-deuteron", "penning-image-charge", "rau-deuteron", "M-phys-rau-deuteron", "interpretation-dependency"],
+  ["rau2020-hd-context-rau-hd-mass", "rau2020-hd-context", "rau-hd-mass", "M-phys-rau-hd-mass", "interpretation-dependency"],
+  ["rau-carbon-reference-rau-hd-mass", "rau-carbon-reference", "rau-hd-mass", "M-phys-rau-hd-mass", "interpretation-dependency"],
+  ["penning-pna-fit-rau-hd-mass", "penning-pna-fit", "rau-hd-mass", "M-phys-rau-hd-mass", "interpretation-dependency"],
+  ["rovibrational-state-boundary-rau-hd-mass", "rovibrational-state-boundary", "rau-hd-mass", "M-phys-rau-hd-mass", "interpretation-dependency"],
+  ["korobov2017-hd-context-korobov-hd-energy", "korobov2017-hd-context", "korobov-hd-energy", "M-phys-korobov-hd-energy", "interpretation-dependency"],
+  ["molecular-ion-mass-balance-korobov-hd-energy", "molecular-ion-mass-balance", "korobov-hd-energy", "M-phys-korobov-hd-energy", "interpretation-dependency"],
+  ["rau-deuteron-rau-hd-closure", "rau-deuteron", "rau-hd-closure", "M-phys-rau-hd-closure", "interpretation-dependency"],
+  ["rau-hd-mass-rau-hd-closure", "rau-hd-mass", "rau-hd-closure", "M-phys-rau-hd-closure", "interpretation-dependency"],
+  ["liontrap2019-proton-rau-hd-closure", "liontrap2019-proton", "rau-hd-closure", "M-phys-rau-hd-closure", "interpretation-dependency"],
+  ["korobov-hd-energy-rau-hd-closure", "korobov-hd-energy", "rau-hd-closure", "M-phys-rau-hd-closure", "interpretation-dependency"],
+  ["molecular-ion-mass-balance-rau-hd-closure", "molecular-ion-mass-balance", "rau-hd-closure", "M-phys-rau-hd-closure", "interpretation-dependency"],
+  ["rau2020-local-fit-context-rau-local-adjustment", "rau2020-local-fit-context", "rau-local-adjustment", "M-phys-rau-local-adjustment", "interpretation-dependency"],
+  ["rau-deuteron-rau-local-adjustment", "rau-deuteron", "rau-local-adjustment", "M-phys-rau-local-adjustment", "interpretation-dependency"],
+  ["rau-hd-mass-rau-local-adjustment", "rau-hd-mass", "rau-local-adjustment", "M-phys-rau-local-adjustment", "interpretation-dependency"],
+  ["liontrap2019-proton-rau-local-adjustment", "liontrap2019-proton", "rau-local-adjustment", "M-phys-rau-local-adjustment", "interpretation-dependency"],
+  ["korobov-hd-energy-rau-local-adjustment", "korobov-hd-energy", "rau-local-adjustment", "M-phys-rau-local-adjustment", "interpretation-dependency"],
+  ["atomic-mass-covariance-rau-local-adjustment", "atomic-mass-covariance", "rau-local-adjustment", "M-phys-rau-local-adjustment", "interpretation-dependency"],
+  ["rau2020-joint-fit-context-rau-joint-adjustment", "rau2020-joint-fit-context", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["rau-deuteron-rau-joint-adjustment", "rau-deuteron", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["rau-hd-mass-rau-joint-adjustment", "rau-hd-mass", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["liontrap2019-proton-rau-joint-adjustment", "liontrap2019-proton", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["korobov-hd-energy-rau-joint-adjustment", "korobov-hd-energy", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["fink-deuteron-ratio-rau-joint-adjustment", "fink-deuteron-ratio", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["atomic-mass-covariance-rau-joint-adjustment", "atomic-mass-covariance", "rau-joint-adjustment", "M-phys-rau-joint-adjustment", "interpretation-dependency"],
+  ["kessler2017-ill-context-ill2017-spacing", "kessler2017-ill-context", "ill2017-spacing", "M-phys-ill2017-spacing", "interpretation-dependency"],
+  ["silicon-lattice-transfer-ill2017-spacing", "silicon-lattice-transfer", "ill2017-spacing", "M-phys-ill2017-spacing", "interpretation-dependency"],
+  ["kessler-recalibrated-wavelength-rau-capture-binding", "kessler-recalibrated-wavelength", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["ill2017-spacing-rau-capture-binding", "ill2017-spacing", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["bragg-wavelength-rau-capture-binding", "bragg-wavelength", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["capture-recoil-energy-rau-capture-binding", "capture-recoil-energy", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["binding-unit-conversion-rau-capture-binding", "binding-unit-conversion", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["rau-deuteron-rau-capture-binding", "rau-deuteron", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["rau-joint-adjustment-rau-neutron-mass", "rau-joint-adjustment", "rau-neutron-mass", "M-phys-rau-neutron-mass", "interpretation-dependency"],
+  ["rau-capture-binding-rau-neutron-mass", "rau-capture-binding", "rau-neutron-mass", "M-phys-rau-neutron-mass", "interpretation-dependency"],
+  ["neutron-mass-balance-rau-neutron-mass", "neutron-mass-balance", "rau-neutron-mass", "M-phys-rau-neutron-mass", "interpretation-dependency"],
+  ["fink2020-ratio-context-fink-deuteron-ratio", "fink2020-ratio-context", "fink-deuteron-ratio", "M-phys-fink-deuteron-ratio", "interpretation-dependency"],
+  ["rovibrational-state-boundary-fink-deuteron-ratio", "rovibrational-state-boundary", "fink-deuteron-ratio", "M-phys-fink-deuteron-ratio", "interpretation-dependency"],
+  ["molecular-ion-mass-balance-fink-deuteron-ratio", "molecular-ion-mass-balance", "fink-deuteron-ratio", "M-phys-fink-deuteron-ratio", "interpretation-dependency"],
+  ["penning-cyclotron-ratio-fink-deuteron-ratio", "penning-cyclotron-ratio", "fink-deuteron-ratio", "M-phys-fink-deuteron-ratio", "interpretation-dependency"],
+  ["fink-deuteron-ratio-fink-proton-referenced-mass", "fink-deuteron-ratio", "fink-proton-referenced-mass", "M-phys-fink-proton-referenced-mass", "interpretation-dependency"],
+  ["liontrap2019-proton-fink-proton-referenced-mass", "liontrap2019-proton", "fink-proton-referenced-mass", "M-phys-fink-proton-referenced-mass", "interpretation-dependency"],
+  ["rau2020-figure-replay-context-rau-grouped-replay", "rau2020-figure-replay-context", "rau-grouped-replay", "M-phys-rau-grouped-replay", "interpretation-dependency"],
+  ["rau2020-awg1-context-rau-grouped-replay", "rau2020-awg1-context", "rau-grouped-replay", "M-phys-rau-grouped-replay", "interpretation-dependency"],
+  ["rau2020-awg2-context-rau-grouped-replay", "rau2020-awg2-context", "rau-grouped-replay", "M-phys-rau-grouped-replay", "interpretation-dependency"],
+  ["rau2020-hd-context-rau-grouped-replay", "rau2020-hd-context", "rau-grouped-replay", "M-phys-rau-grouped-replay", "interpretation-dependency"],
+  ["penning-pna-fit-rau-grouped-replay", "penning-pna-fit", "rau-grouped-replay", "M-phys-rau-grouped-replay", "interpretation-dependency"],
+  ["rau2020-figure-replay-context-rau-printed-arithmetic", "rau2020-figure-replay-context", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["korobov-hd-energy-rau-printed-arithmetic", "korobov-hd-energy", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["ill2017-spacing-rau-printed-arithmetic", "ill2017-spacing", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["kessler-recalibrated-wavelength-rau-printed-arithmetic", "kessler-recalibrated-wavelength", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["rau-hd-mass-rau-printed-arithmetic", "rau-hd-mass", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["rau-deuteron-rau-printed-arithmetic", "rau-deuteron", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["liontrap2019-proton-rau-printed-arithmetic", "liontrap2019-proton", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["capture-recoil-energy-rau-printed-arithmetic", "capture-recoil-energy", "rau-printed-arithmetic", "M-phys-rau-printed-arithmetic", "interpretation-dependency"],
+  ["rau2020-capture-recalibration-context-rau-capture-binding", "rau2020-capture-recalibration-context", "rau-capture-binding", "M-phys-rau-capture-binding", "interpretation-dependency"],
+  ["fink2021-state-fit-context-fink2021-state-branches", "fink2021-state-fit-context", "fink2021-state-branches", "M-phys-fink2021-state-branches", "interpretation-dependency"],
+  ["fink2021-simultaneous-context-fink2021-state-branches", "fink2021-simultaneous-context", "fink2021-state-branches", "M-phys-fink2021-state-branches", "interpretation-dependency"],
+  ["state-conditional-mass-fink2021-state-branches", "state-conditional-mass", "fink2021-state-branches", "M-phys-fink2021-state-branches", "interpretation-dependency"],
+  ["rovibrational-state-boundary-fink2021-state-branches", "rovibrational-state-boundary", "fink2021-state-branches", "M-phys-fink2021-state-branches", "interpretation-dependency"],
+  ["fink2021-drive-control-context-fink2021-drive-extrapolation", "fink2021-drive-control-context", "fink2021-drive-extrapolation", "M-phys-fink2021-drive-extrapolation", "interpretation-dependency"],
+  ["fink2021-simultaneous-context-fink2021-drive-extrapolation", "fink2021-simultaneous-context", "fink2021-drive-extrapolation", "M-phys-fink2021-drive-extrapolation", "interpretation-dependency"],
+  ["coupled-cyclotron-readout-fink2021-drive-extrapolation", "coupled-cyclotron-readout", "fink2021-drive-extrapolation", "M-phys-fink2021-drive-extrapolation", "interpretation-dependency"],
+  ["fink2021-state-branches-fink2021-ground-ratio", "fink2021-state-branches", "fink2021-ground-ratio", "M-phys-fink2021-ground-ratio", "interpretation-dependency"],
+  ["fink2021-drive-extrapolation-fink2021-ground-ratio", "fink2021-drive-extrapolation", "fink2021-ground-ratio", "M-phys-fink2021-ground-ratio", "interpretation-dependency"],
+  ["coupled-cyclotron-readout-fink2021-ground-ratio", "coupled-cyclotron-readout", "fink2021-ground-ratio", "M-phys-fink2021-ground-ratio", "interpretation-dependency"],
+  ["state-conditional-mass-fink2021-ground-ratio", "state-conditional-mass", "fink2021-ground-ratio", "M-phys-fink2021-ground-ratio", "interpretation-dependency"],
+  ["korobov2017-h2-context-korobov-h2-energy", "korobov2017-h2-context", "korobov-h2-energy", "M-phys-korobov-h2-energy", "interpretation-dependency"],
+  ["molecular-ion-mass-balance-korobov-h2-energy", "molecular-ion-mass-balance", "korobov-h2-energy", "M-phys-korobov-h2-energy", "interpretation-dependency"],
+  ["fink2021-ground-ratio-fink2021-deuteron-ratio", "fink2021-ground-ratio", "fink2021-deuteron-ratio", "M-phys-fink2021-deuteron-ratio", "interpretation-dependency"],
+  ["korobov-h2-energy-fink2021-deuteron-ratio", "korobov-h2-energy", "fink2021-deuteron-ratio", "M-phys-fink2021-deuteron-ratio", "interpretation-dependency"],
+  ["molecular-ion-mass-balance-fink2021-deuteron-ratio", "molecular-ion-mass-balance", "fink2021-deuteron-ratio", "M-phys-fink2021-deuteron-ratio", "interpretation-dependency"],
+  ["state-conditional-mass-fink2021-deuteron-ratio", "state-conditional-mass", "fink2021-deuteron-ratio", "M-phys-fink2021-deuteron-ratio", "interpretation-dependency"],
+  ["fink2021-deuteron-ratio-fink2021-proton-mass", "fink2021-deuteron-ratio", "fink2021-proton-mass", "M-phys-fink2021-proton-mass", "interpretation-dependency"],
+  ["rau-deuteron-fink2021-proton-mass", "rau-deuteron", "fink2021-proton-mass", "M-phys-fink2021-proton-mass", "interpretation-dependency"],
+  ["atomic-mass-covariance-fink2021-proton-mass", "atomic-mass-covariance", "fink2021-proton-mass", "M-phys-fink2021-proton-mass", "interpretation-dependency"],
+  ["codata2022-mass-inputs-context-codata2022-frequency-inputs", "codata2022-mass-inputs-context", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["liontrap2019-proton-codata2022-frequency-inputs", "liontrap2019-proton", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["rau-deuteron-codata2022-frequency-inputs", "rau-deuteron", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["rau-hd-mass-codata2022-frequency-inputs", "rau-hd-mass", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["fink2021-ground-ratio-codata2022-frequency-inputs", "fink2021-ground-ratio", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["codata2022-ion-covariance-codata2022-frequency-inputs", "codata2022-ion-covariance", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["mass-adjustment-constraint-codata2022-frequency-inputs", "mass-adjustment-constraint", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["korobov-h2-energy-codata2022-frequency-inputs", "korobov-h2-energy", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["korobov-hd-energy-codata2022-frequency-inputs", "korobov-hd-energy", "codata2022-frequency-inputs", "M-phys-codata2022-frequency-inputs", "interpretation-dependency"],
+  ["codata2022-mass-inputs-context-codata2022-ion-covariance", "codata2022-mass-inputs-context", "codata2022-ion-covariance", "M-phys-codata2022-ion-covariance", "interpretation-dependency"],
+  ["ion-atom-mass-correction-codata2022-ion-covariance", "ion-atom-mass-correction", "codata2022-ion-covariance", "M-phys-codata2022-ion-covariance", "interpretation-dependency"],
+  ["atomic-mass-covariance-codata2022-ion-covariance", "atomic-mass-covariance", "codata2022-ion-covariance", "M-phys-codata2022-ion-covariance", "interpretation-dependency"],
+  ["codata2022-lattice-context-codata2022-capture-equation", "codata2022-lattice-context", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["neutron-mass-balance-codata2022-capture-equation", "neutron-mass-balance", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["bragg-wavelength-codata2022-capture-equation", "bragg-wavelength", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["kessler-combined-angle-codata2022-capture-equation", "kessler-combined-angle", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["capture-recoil-energy-codata2022-capture-equation", "capture-recoil-energy", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["silicon-lattice-transfer-codata2022-capture-equation", "silicon-lattice-transfer", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["mass-adjustment-constraint-codata2022-capture-equation", "mass-adjustment-constraint", "codata2022-capture-equation", "M-phys-codata2022-capture-equation", "interpretation-dependency"],
+  ["codata2022-lattice-context-codata2022-ill-input", "codata2022-lattice-context", "codata2022-ill-input", "M-phys-codata2022-ill-input", "interpretation-dependency"],
+  ["ill2017-spacing-codata2022-ill-input", "ill2017-spacing", "codata2022-ill-input", "M-phys-codata2022-ill-input", "interpretation-dependency"],
+  ["silicon-lattice-transfer-codata2022-ill-input", "silicon-lattice-transfer", "codata2022-ill-input", "M-phys-codata2022-ill-input", "interpretation-dependency"],
+  ["mass-constraint-replay-context-mass-constraint-arithmetic", "mass-constraint-replay-context", "mass-constraint-arithmetic", "M-phys-mass-constraint-arithmetic", "interpretation-dependency"],
+  ["fink2021-ground-ratio-mass-constraint-arithmetic", "fink2021-ground-ratio", "mass-constraint-arithmetic", "M-phys-mass-constraint-arithmetic", "interpretation-dependency"],
+  ["fink2021-deuteron-ratio-mass-constraint-arithmetic", "fink2021-deuteron-ratio", "mass-constraint-arithmetic", "M-phys-mass-constraint-arithmetic", "interpretation-dependency"],
+  ["rau-deuteron-mass-constraint-arithmetic", "rau-deuteron", "mass-constraint-arithmetic", "M-phys-mass-constraint-arithmetic", "interpretation-dependency"],
+  ["korobov-h2-energy-mass-constraint-arithmetic", "korobov-h2-energy", "mass-constraint-arithmetic", "M-phys-mass-constraint-arithmetic", "interpretation-dependency"]
 ];
 
 const inferenceSources = new Map([
@@ -278,7 +602,46 @@ const inferenceSources = new Map([
     [
       "bethe1947"
     ]
-  ]
+  ],
+  ["C-phys-kessler-capture-wavelength", ["dewey2006-capture", "mohr2025-neutron"]],
+  ["C-phys-kessler-binding-energy", ["dewey2006-capture", "mohr2025-neutron"]],
+  ["C-phys-kessler-neutron-mass", ["dewey2006-capture", "mohr2025-neutron", "difilippo1994"]],
+  ["C-phys-kessler-recalibrated-wavelength", ["dewey2006-capture", "mohr2025-neutron"]],
+  ["M-phys-kessler-capture-wavelength", ["dewey2006-capture", "mohr2025-neutron"]],
+  ["M-phys-kessler-binding-energy", ["dewey2006-capture", "mohr2025-neutron"]],
+  ["M-phys-kessler-neutron-mass", ["dewey2006-capture", "mohr2025-neutron", "difilippo1994"]],
+  ["M-phys-kessler-recalibrated-wavelength", ["dewey2006-capture", "mohr2025-neutron"]],
+  ["C-phys-schuh-image-charge", ["heisse2017"]],
+  ["C-phys-schuh-ics-comparison", ["heisse2017"]],
+  ["M-phys-schuh-image-charge", ["heisse2017"]],
+  ["M-phys-schuh-ics-comparison", ["heisse2017"]],
+  ["C-phys-rau-deuteron", ["rau2020-fig4-data"]],
+  ["C-phys-rau-hd-closure", ["heisse2019", "korobov2017"]],
+  ["C-phys-rau-local-adjustment", ["heisse2019", "korobov2017"]],
+  ["C-phys-rau-joint-adjustment", ["fink2020"]],
+  ["C-phys-rau-capture-binding", ["kessler2017"]],
+  ["C-phys-fink-proton-referenced-mass", ["heisse2019"]],
+  ["C-phys-rau-grouped-replay", ["rau2020-fig3-data", "rau2020-edfig1-data", "rau2020-fig4-data", "deuteron-data-verifier"]],
+  ["C-phys-rau-printed-arithmetic", ["korobov2017", "kessler2017", "deuteron-data-verifier"]],
+  ["M-phys-rau-deuteron", ["rau2020-fig4-data"]],
+  ["M-phys-rau-hd-closure", ["heisse2019", "korobov2017"]],
+  ["M-phys-rau-local-adjustment", ["heisse2019", "korobov2017"]],
+  ["M-phys-rau-joint-adjustment", ["fink2020"]],
+  ["M-phys-rau-capture-binding", ["kessler2017"]],
+  ["M-phys-fink-proton-referenced-mass", ["heisse2019"]],
+  ["M-phys-rau-grouped-replay", ["rau2020-fig3-data", "rau2020-edfig1-data", "rau2020-fig4-data", "deuteron-data-verifier"]],
+  ["M-phys-rau-printed-arithmetic", ["korobov2017", "kessler2017", "deuteron-data-verifier"]],
+  ["M-phys-rau2020-capture-recalibration-context", ["kessler2017"]],
+  ["C-phys-fink2021-deuteron-ratio", ["korobov2017"]],
+  ["M-phys-fink2021-deuteron-ratio", ["korobov2017"]],
+  ["C-phys-fink2021-proton-mass", ["rau2020"]],
+  ["M-phys-fink2021-proton-mass", ["rau2020"]],
+  ["C-phys-codata2022-frequency-inputs", ["heisse2019", "rau2020", "fink2021"]],
+  ["M-phys-codata2022-frequency-inputs", ["heisse2019", "rau2020", "fink2021"]],
+  ["C-phys-codata2022-ill-input", ["tiesinga2021-lattice"]],
+  ["M-phys-codata2022-ill-input", ["tiesinga2021-lattice"]],
+  ["C-phys-mass-constraint-arithmetic", ["korobov2017", "rau2020", "mass-constraint-verifier"]],
+  ["M-phys-mass-constraint-arithmetic", ["korobov2017", "rau2020", "mass-constraint-verifier"]]
 ]);
 
 const vacuumAssumptions = new Map([
@@ -1540,6 +1903,2135 @@ const neutronStudies = [
   }
 ];
 
+const isospinLimits = [
+  "These are reported computational results for the specified action, ensembles and fitting procedure. The 60 TB archive, correlators, covariance matrices and analysis code have not been independently replayed.",
+  "Stability in this calculation concerns the included strong and electromagnetic interactions. Weak decays, a neutron lifetime, proton-decay bounds, nuclear stability and real-time hadron formation are outside its calculated scope.",
+  "Quark flavors, field components, sources per configuration and fitted states are different counting domains. The calculation establishes no universal constituent minimum or graph-level generative rule.",
+  "Weak interactions, dynamical leptons, bottom and top are neglected or absorbed into effective parameters at the precision stated by the authors. This is a scoped effective description, not the full Standard Model.",
+  "Sign and channel matter: Delta_Sigma=M_Sigma--M_Sigma+, Delta_Xi=M_Xi--M_Xi0, Delta_D=M_D+-M_D0, and Delta_Xi_cc=M_Xi_cc++-M_Xi_cc+. A label such as charged minus neutral does not have the same sign in every channel.",
+  "The primary physical-point inputs are M_pi+=139.570, M_K+=493.68, M_K0=497.61, M_D0=1864.9 and M_Omega=1672.4 MeV, with alpha^-1=137.036. The kaon squared-mass input is 3896 MeV^2. These are the paper's adopted inputs, not independent mass measurements or predictions reproduced here.",
+  "Omega sets the final scale. The exploratory w0=0.1755 fm value and charmonium tuning target are preparation aids, not extra predicted observables. The ratio and mass-independent normalization methods reuse the same ensembles.",
+  "Equation S37 uses the kaon squared-mass difference, which itself mixes QCD and QED. Its second term is not a pure strong contribution before a separation convention is supplied.",
+  "The alternative analysis using the Sigma splitting in place of the kaon difference has a different input set; a quantity used to tune that alternative cannot simultaneously count as its independent prediction.",
+  "The Wilson-flow charge is defined at hadronic scales, with final choices 280 and 525 MeV. Matching to the Thomson-limit input neglects effects of order alpha^2 at the stated precision; bare e is not the renormalized physical coupling.",
+  "QED_L removes spatial photon zero modes on every time slice. QED_TL removes only the four-momentum zero mode and has an ill-defined T-to-infinity limit at fixed L for the conventional charged-particle mass extraction. This is a regulator distinction, not two experimental forces.",
+  "At order alpha, the leading mass correction is -q^2*alpha*kappa/(2*L)*(1+2/(m*L)), with kappa approximately 2.837297 in units hbar=c=1. Universality through 1/L^2 assumes the photon is the only massless asymptotic state and the charged particle is stable and nondegenerate with states sharing its quantum numbers.",
+  "Terms of order 1/L^3 can depend on internal structure and spin; a point-fermion coefficient cannot be imposed on every hadron. Vanishing leading q^2 terms for a neutral particle do not prove absence of all finite-volume effects.",
+  "In the full QCD+QED theory the paper's continuum prescription retains an extremely small nonzero cutoff because of QED triviality. Its practical extrapolation does not establish a nonperturbative interacting QED limit at exactly zero lattice spacing.",
+  "The component split has a convention ambiguity of order alpha*(m_d-m_u). The selected convention sets the electromagnetic Sigma-minus/Sigma-plus splitting to zero; the zero is a definition within the stated accuracy, not a measured null result.",
+  "Under the connected-meson alternative, the same article reports a Sigma electromagnetic contribution of 0.18+/-0.12 (statistical) +/-0.06 (systematic) MeV. This motivates an approximate benchmark convention but does not establish exact vanishing in every scheme.",
+  "Opposite QCD and QED components describe parameter-dependent contributions to mass differences. They are not separately observed forces, measured shares of the nucleon mass or statistical probabilities.",
+  "The tabulated total and component values are separately rounded and correlated. For example 2.52-1.00=1.52 MeV from rounded entries does not justify replacing the reported total 1.51 MeV; marginal errors must not be combined as independent components.",
+  "The 41 ensembles comprise 27 zero-electromagnetic-coupling rows and 14 nonzero-coupling rows. They are not 41 detector experiments or 41 replications of the full extrapolation.",
+  "Table S2 gives a=0.102, 0.089, 0.077 and 0.064 fm for beta=3.2, 3.3, 3.4 and 3.5. Table S4 has nonzero electromagnetic coupling only at beta=3.2, 3.3 and 3.5; beta=3.4 is represented only in the neutral ensemble table.",
+  "The main text lists four bare alpha values including zero, whereas Table S4 lists four nonzero bare e values: sqrt(4*pi/137), 0.71, 1.00 and 1.41. Together with e=0 these are five values. The additional 0.71 row is retained; the prose/table census disagreement is unresolved.",
+  "The main text describes the lightest pion mass as about 195 MeV; the lowest rounded Table S3 entries are 197 MeV. Charged ensembles reach 236 MeV in Table S4. The physical pion point is reached through extrapolation, not a simulated physical-pion ensemble.",
+  "Configurations are separated by ten unit-length trajectories; the reported topological autocorrelation can reach about 50 trajectories. Hundreds of source positions reduce estimator noise, not the number of independent gauge samples. Fourier acceleration does not eliminate autocorrelation in the coupled quark theory.",
+  "Nonnegative determinant weights are checked a posteriori for the chosen parameter region. Algorithmic stability is not a general proof for all masses, volumes or lattice spacings.",
+  "The full hadronic calculation is dynamical QCD+QED. The separate point-particle implementation checks in Section 4 use quenched QED; their preparation cannot replace the production ensembles.",
+  "These four runs are a subset of the 14 charged production ensembles, not an independent replication of the 41-ensemble result. The temporal extent changes with the spatial box and the QED_L large-time assumptions remain applicable.",
+  "The bare coupling e=1.00 is larger than the physical coupling. Figure 1 uses the approximate label bare alpha about 1/10; e^2/(4*pi), the renormalized flow coupling and physical alpha are distinct quantities.",
+  "The plotted kaon mass-squared difference is negative at this enhanced coupling. That sign is not the physical kaon mass ordering and is not evidence of a neutron-proton sign reversal.",
+  "No significant neutral-kaon volume dependence is resolved in this scan; that does not prove exactly zero corrections. The charged-neutral difference needs a fitted 1/L^3 term in addition to the universal leading terms.",
+  "Isospin partners are fitted jointly with their mass difference, mean mass and two amplitudes, retaining time-slice and partner correlations. Only ten time slices are fitted at once for covariance stability.",
+  "The fit-window rule uses a Kolmogorov-Smirnov probability greater than 0.3 across ensemble fit qualities and a second start one time slice later. This is an analysis-selection rule, not a probability that the particle model is true.",
+  "Table S5 starts are 1.1 fm for N, Sigma and D, 1.3 fm for Xi and 1.2 fm for Xi_cc. Figure S12 points are adjusted to the physical point in other parameters and averaged by lattice spacing; they are not unprocessed correlator measurements.",
+  "About 500 fit variants vary normalization, mass dependence, cutoff terms, two correlator starts and two charge-renormalization scales. They reuse simulation data and are not independent replications.",
+  "AIC weights are proportional to exp[-(chi^2+2*p)/2]. The weighted mean gives the central estimate, variation among fits estimates systematic uncertainty, and the complete procedure is repeated on 2000 bootstrap samples for statistical uncertainty. AIC weights are not probabilities of physical truth or graph-edge strengths.",
+  "The chosen family includes g^2*a or a^2 discretization terms, mass extrapolations, and a fitted 1/L^3 electromagnetic term after the leading finite-volume corrections. Its uncertainty does not exhaust arbitrary omitted models or higher orders.",
+  "The primary Coleman-Glashow combination is fitted rather than constrained to zero. One auxiliary cross-check assumes that relation; it cannot independently verify the relation it imposes.",
+  "Three auxiliary analyses reuse the data; details are not fully supplied. One masks mass differences by a random factor between 0.7 and 1.3. This is not independent simulation replication or evidence that every analysis was blinded.",
+  "The neutron-proton total is reported as about five standard deviations above zero under the selected error construction. The paper does not supply an independently reproduced discovery p-value here. Comparisons with known masses are postdictions; the 2015 statement that some channels were unmeasured is not a current experimental census.",
+  "Table parentheses apply to the last digits. The Coleman-Glashow combination is separately fitted with correlations; neither exact cancellation nor its uncertainty follows from adding the independently rounded marginal table entries.",
+  "This reported dimensionless ratio additionally uses the experimental neutron-proton difference. It is not the uncalibrated ratio of the rounded 2.52 and -1.00 MeV components, nor an independent prediction of the total mass splitting.",
+  "Figure 3 uses this experiment-constrained ratio in its parameter contours. Its contour plot and inverse-beta-decay region are conditional illustrations, not independent simulations of cosmology, atomic survival, neutron lifetime or a new generative graph.",
+  "The underlying experimental mass measurement is delegated to the article's PDG reference and has not been independently reviewed here; no primary experimental confirmation or numerical propagation of its covariance is claimed."
+];
+
+const isospinClaims = [
+  {
+    "id": "D-phys-qcd-qed-hadron-theory",
+    "statement": "The reviewed low-energy model includes dynamical up, down, strange and charm quarks with nondegenerate masses, gluons and photons. Quark charges are +2/3 for up/charm and -1/3 for down/strange in units of e; both strong and electromagnetic fields enter the Euclidean action.",
+    "limits": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "D-phys-isospin-mass-splitting",
+    "statement": "A mass splitting is a signed difference between specified isospin partners. Here Delta_N=M_n-M_p; isospin breaking is expanded to first order in the renormalized alpha and delta_m=m_d-m_u. It is distinct from an absolute hadron mass, decay width or lifetime.",
+    "limits": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "D-phys-qcd-qed-calibration",
+    "statement": "Charged-pion, charged/neutral-kaon and neutral-D masses fix the physical quark-mass point, the Omega mass sets the scale, and the electromagnetic input is alpha^-1=137.036. Experimental inputs and fitted extrapolations precede the reported isospin-splitting comparison.",
+    "limits": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "id": "D-phys-qedl-volume-correction",
+    "statement": "QED_L removes photon modes with zero spatial momentum at every Euclidean time. Leading finite-volume mass terms scale as 1/L and 1/L^2 under the stated Ward-identity assumptions; composite-particle terms beyond those orders require additional treatment.",
+    "limits": [
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "D-phys-qcd-qed-separation",
+    "statement": "Separating an isospin splitting into strong and electromagnetic contributions requires a convention. Borsanyi adopts Delta_QED M_Sigma=0 at the reported precision, then infers the kaon electromagnetic squared-mass contribution and the other channel components.",
+    "limits": [
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "M-phys-borsanyi2015-context",
+    "statement": "Dynamical 1+1+1+1-flavor QCD+QED with tree-level Symanzik gluon action, clover-improved Wilson quarks, three HEX gluon-smearing steps and one APE photon-smearing step. The QED_L prescription, 27 neutral and 14 charged ensembles, four overall lattice spacings and declared mass/charge inputs define the production analysis.",
+    "limits": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "M-phys-borsanyi-volume-context",
+    "statement": "Four Table S4 ensembles at beta=3.2, bare e=1.00, a*m_u=-0.0859, a*m_d=-0.0792 and a*m_s=-0.0522: L^3*T=24^3*48, 32^3*64, 48^3*96 and 80^3*64. The rounded pion masses are 292, 290, 290 and 289 MeV. The common lattice spacing is about 0.102 fm; Figure 1 describes M_K0 as about 450 MeV.",
+    "limits": [
+      25,
+      26,
+      27,
+      28,
+      0
+    ]
+  },
+  {
+    "id": "C-phys-borsanyi-lattice-splittings",
+    "statement": "The paper extracts finite-lattice mass differences by fitting Euclidean correlators of isospin partners jointly. Ensemble fit-quality distributions and the selected time windows precede physical-point and cutoff extrapolations.",
+    "limits": [
+      29,
+      30,
+      31,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "C-phys-borsanyi-kaon-volume",
+    "statement": "For the four enhanced-coupling volumes, Figure 1 reports chi^2/dof=0.86 for the neutral-kaon constant fit and 0.90 for the squared-mass-difference fit with a free 1/L^3 term. The leading 1/L and 1/L^2 terms alone do not describe all four mass-difference points.",
+    "limits": [
+      25,
+      26,
+      27,
+      28,
+      0,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "C-phys-borsanyi-isospin-spectrum",
+    "statement": "Table 1 reports total splittings in MeV with statistical then systematic uncertainties: n-p 1.51(16)(23); Sigma--Sigma+ 8.09(16)(11); Xi--Xi0 6.66(11)(09); D+-D0 4.68(10)(13); Xi_cc++-Xi_cc+ 2.16(11)(17); Coleman-Glashow combination Delta_N-Delta_Sigma+Delta_Xi 0.00(11)(06). The neutron-proton total is 1.51+/-0.16 (statistical) +/-0.23 (systematic) MeV.",
+    "limits": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      0,
+      1,
+      2,
+      38
+    ]
+  },
+  {
+    "id": "C-phys-borsanyi-qcd-qed-components",
+    "statement": "In the selected convention, Table 1 gives QCD and QED components in MeV, with statistical then systematic uncertainties: n-p 2.52(17)(24) and -1.00(07)(14); Sigma--Sigma+ 8.09(16)(11) and 0 by convention; Xi--Xi0 5.53(17)(17) and 1.14(16)(09); D+-D0 2.54(08)(10) and 2.14(11)(07); Xi_cc++-Xi_cc+ -2.53(11)(06) and 4.69(10)(17); Coleman-Glashow -0.00(13)(05) and 0.00(06)(02). Equation S38 gives the electromagnetic kaon squared-mass contribution -2250(80)(90) MeV^2.",
+    "limits": [
+      14,
+      15,
+      16,
+      17,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "C-phys-borsanyi-calibrated-ratio",
+    "statement": "After additionally using the experimental neutron-proton mass difference, Borsanyi reports (M_n-M_p)_QCD/(M_n-M_p)_QED=-2.49+/-0.23 (statistical) +/-0.29 (systematic). This is a dimensionless, convention-dependent calibrated inference.",
+    "limits": [
+      39,
+      40,
+      41,
+      14,
+      15,
+      16,
+      17,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "M-phys-borsanyi-kaon-volume",
+    "statement": "Compare the declared four-volume scan while retaining its common bare parameters, varying temporal extents and fitted 1/L^3 term.",
+    "limits": [
+      25,
+      26,
+      27,
+      28,
+      0,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "M-phys-borsanyi-isospin-spectrum",
+    "statement": "Compare the physical-point outputs with the paper's experimental reference while retaining input masses, fitted corrections, analysis selection and correlated uncertainty.",
+    "limits": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "M-phys-borsanyi-qcd-qed-components",
+    "statement": "State the convention and compare scheme dependence before treating separate components as physically measured quantities.",
+    "limits": [
+      14,
+      15,
+      16,
+      17,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "M-phys-borsanyi-calibrated-ratio",
+    "statement": "Track the extra experimental input and its provenance when interpreting the ratio and Figure 3.",
+    "limits": [
+      39,
+      40,
+      41,
+      14,
+      15,
+      16,
+      17,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "D-phys-nucleon-ratio-calibration",
+    "statement": "The reported nucleon QCD/QED component ratio supplements the lattice calculation with the experimental neutron-proton mass difference. This additional calibration input is separate from the primary mass and charge inputs used for the unconstrained isospin spectrum.",
+    "limits": [
+      39,
+      40,
+      41
+    ]
+  }
+];
+
+const isospinStudies = [
+  {
+    "id": "borsanyi2015",
+    "system": "Four-flavor isospin-breaking ensemble",
+    "preparation": "Dynamical 1+1+1+1-flavor QCD+QED with tree-level Symanzik gluon action, clover-improved Wilson quarks, three HEX gluon-smearing steps and one APE photon-smearing step. The QED_L prescription, 27 neutral and 14 charged ensembles, four overall lattice spacings and declared mass/charge inputs define the production analysis."
+  },
+  {
+    "id": "borsanyi2015-volume",
+    "system": "Enhanced-coupling kaon volume scan",
+    "preparation": "Four Table S4 ensembles at beta=3.2, bare e=1.00, a*m_u=-0.0859, a*m_d=-0.0792 and a*m_s=-0.0522: L^3*T=24^3*48, 32^3*64, 48^3*96 and 80^3*64. The rounded pion masses are 292, 290, 290 and 289 MeV. The common lattice spacing is about 0.102 fm; Figure 1 describes M_K0 as about 450 MeV."
+  }
+];
+
+const isospinComparisons = [
+  {
+    "id": "borsanyi-kaon-volume",
+    "result": "conditional-support"
+  },
+  {
+    "id": "borsanyi-isospin-spectrum",
+    "result": "conditional-support"
+  },
+  {
+    "id": "borsanyi-qcd-qed-components",
+    "result": "not-tested"
+  },
+  {
+    "id": "borsanyi-calibrated-ratio",
+    "result": "not-tested"
+  }
+];
+
+const captureLimits = [
+  "The adopted 1999 ILL2.5 spacing is 1.920155723(96)e-10 m at 22.5 C in vacuum, from Table 3A. Table 3B gives 1.920155760(96)e-10 m using more PTB comparison steps; the authors select A rather than treating both as independent measurements.",
+  "PTB and IMGC routes agree more closely than the NRLM route. The authors enlarge the lattice relative uncertainty to 5e-8 by judgment; it is not an independently reproduced statistical fit uncertainty.",
+  "Angles were measured near 0.987 atmosphere. The crystal compression coefficient is 0.3452e-6 per atmosphere; omitting the factor 1-epsilon*p changes the inferred wavelength.",
+  "The lattice scale is a measured input with its own temperature, pressure, reference-crystal and covariance dependencies, not an exact universal length or a prediction of the gamma-ray experiment.",
+  "The later author report uses d220(ILL2.5)=1.920155822(96)e-10 m, retaining a 5e-8 relative uncertainty after enlarging the underlying adjustment uncertainty. Its deuterium row reuses Kessler data and is not a new capture experiment.",
+  "The earlier wavelength and mass cannot be combined with a later crystal spacing or conversion constant while retaining their old central values. Recalculation is required; this review does not replay the underlying lattice adjustment.",
+  "In the 2022 CODATA adjustment published in 2025, eta_d=2.90430245(49)e-3 is the dimensionless diffraction input with lambda=eta_d*d220(ILL). Table XXV D14 nevertheless prints m after this number. That unit conflicts with Section II.B and Equation 6; the dimensionless definition is used and the table discrepancy remains unresolved.",
+  "The 2005 author report notes that erroneous 2004 lattice measurements affected the 2002 adjustment, and uses the 1998 adjustment for this recalculation. Those upstream measurements and their erratum have not been independently reviewed here.",
+  "At the stated precision the recoil prescription is E_B approximately E_gamma + E_gamma^2/(2*m_d*c^2), so the energy-equivalent wavelength is shorter than the photon wavelength. It is not a second detected photon.",
+  "The recoil mass is the deuteron nuclear mass, not a deuterium atomic mass or the Kapton molecular mass. Thermal capture and the stated prompt-emission conditions limit this approximation; it is not an exact arbitrary-kinematics formula.",
+  "The paper reports a 5e-10 relative uncertainty contribution from recoil constants, negligible at its measurement precision. This does not make recoil itself negligible or set omitted kinematic effects identically to zero.",
+  "A capture photon, a binding-energy inference and an inferred neutron mass are different observables. None establishes a free-neutron lifetime, proton stability, a universal constituent minimum or a real-time hadron formation mechanism.",
+  "The 1999 inverse-meter conversions are 1.331025045(11)e-15 u and 1.239841870(54)e-6 eV per inverse meter. The first is a mass-equivalent conversion h/(m_u*c), the second is hc/e; energy and mass units are not interchangeable without c^2.",
+  "The conversions depend on the paper's electron relative mass, fine-structure constant, Rydberg constant and other adopted constants. Their uncertainties are different; changing to modern SI constants is a new calculation, not a silent correction of the published result.",
+  "Reported 1999 masses and conversion constants belong to that analysis. They are not current recommended constants or an independently traced input to the Borsanyi calculation.",
+  "The adopted atomic relative-mass difference Ar(2H)-Ar(1H)=1.00627674630(71) comes from DiFilippo et al. (1994), cited by Kessler. The primary mass-spectrometry article is reviewed; its unprinted fit covariance and original measurements remain unreproduced.",
+  "The paper uses the atomic mass difference plus the mass-equivalent binding energy at its precision. This is not a general exact identification of atomic and nuclear masses; electron binding and charge-state corrections require their own treatment at higher precision.",
+  "The published neutron mass is inferred by adding the adopted hydrogen-isotope mass difference and the capture-derived binding-energy mass equivalent. It is not a direct Penning-trap measurement of a neutral neutron.",
+  "The quoted uncertainty contributions are 0.42e-9 u from binding energy and 0.71e-9 u from mass spectrometry, with total 0.82e-9 u after rounding. No upstream covariance or raw mass-spectrometry fit is reproduced.",
+  "The five configuration groups are combined as two campaign sets because settings within a campaign share an angle calibration. They are not five independent mass experiments.",
+  "Each angle determination uses four profiles in the +,-,-,+ sequence. Bragg-angle counts, scan points, detected photons and independent calibration sets are distinct counting domains.",
+  "Profiles contain approximately 45 points with 60 or 90 seconds per point. A scan-specific summed pulse-height window precedes fitting dynamical diffraction profiles with Gaussian broadening; a profile width is not a direct neutron mass.",
+  "The approximately 6 g Kapton source in three graphite holders is exposed to about 5e14 neutrons per square centimeter per second. Its roughly 450 C environment and about 1.2 percent daily hydrogen loss do not describe isolated stationary free neutrons.",
+  "Four optical-polygon calibrations near the campaigns use the sum of 24 exterior angles, 2*pi. One serves 1995 and three serve March 1998; the 1998 humidity dependence is about 0.5e-6 per ten percentage points, with calibration relative uncertainty expanded to 1e-7.",
+  "Within each campaign the weighted-mean uncertainty is enlarged by sqrt(chi^2/dof), then the 1e-7 relative calibration uncertainty is added in quadrature. The two campaign means are combined before adding crystal-temperature and vertical-divergence contributions.",
+  "The final angle uncertainty includes relative contributions 0.1e-6 from crystal temperature and 0.05e-6 from vertical divergence. The 0.083202194(11) degree intermediate value excludes these final contributions; the final value is 0.083202194(14) degrees.",
+  "Table 2 prints final March 1995 result beneath the March 1998 configuration rows. Section 3 and the rows identify the second campaign as March 1998; the inconsistent printed label remains disclosed.",
+  "Repeatability across years and settings is an internal consistency check using the same facility and crystals, not independent replication or proof that every systematic effect has been removed.",
+  "These are published results for the stated capture source, spectrometer and calibration. Raw count profiles, fringe records, calibration runs and their covariance have not been independently replayed.",
+  "The corrected 1986 binding-energy comparison still differs from the 1999 result by about 4.2e-6 relatively. Temperature, alignment and interferometer errors are proposed explanations, not identified and verified causes.",
+  "Some older detector comparisons share crystal-derived energy standards. Their corrected central values and expanded uncertainties are the authors' comparisons, not independent confirmations reviewed here."
+];
+
+const captureClaims = [
+  {
+    "id": "D-phys-bragg-wavelength",
+    "statement": "For the first-order angle used by Kessler, lambda_gamma=2*d220*(1-epsilon*p)*sin(theta), with d220 the vacuum spacing at 22.5 C and pressure p in atmospheres. The angle and crystal scale are separate inputs.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "D-phys-ill25-calibration",
+    "statement": "The 1999 wavelength extraction adopts Table 3A d220(ILL2.5)=1.920155723(96)e-10 m in vacuum at 22.5 C, with the stated pressure correction for measurements in the reactor hall.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "D-phys-capture-recoil-energy",
+    "statement": "For capture by an approximately stationary proton, the binding energy includes the measured photon energy and the recoiling deuteron kinetic energy. The leading correction is E_gamma^2/(2*m_d*c^2).",
+    "limits": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "D-phys-binding-unit-conversion",
+    "statement": "Kessler converts the reciprocal recoil-corrected wavelength using 1.331025045(11)e-15 u per inverse meter or 1.239841870(54)e-6 eV per inverse meter. These are adopted 1999 conversion constants with uncertainties.",
+    "limits": [
+      12,
+      13,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "D-phys-hydrogen-isotope-mass-input",
+    "statement": "The neutron-mass extraction adopts Ar(2H)-Ar(1H)=1.00627674630(71), a dimensionless relative atomic-mass difference, from the mass-spectrometry reference cited by Kessler.",
+    "limits": [
+      15,
+      16,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "D-phys-neutron-mass-balance",
+    "statement": "For nuclear rest masses, m_n=m_d-m_p+E_B(d)/c^2. Kessler implements the inference at the paper's precision with a hydrogen-isotope atomic-mass difference and the measured binding-energy mass equivalent.",
+    "limits": [
+      15,
+      16,
+      17,
+      18,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "mohr2025-neutron",
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "D-phys-ill25-adjusted-calibration",
+    "statement": "The selected Dewey author report adopts d220(ILL2.5)=1.920155822(96)e-10 m at 22.5 C in vacuum from the 1998 adjustment with an enlarged uncertainty; this supplies a recalculation of the existing capture data.",
+    "limits": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "sourceIds": [
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "M-phys-kessler1995-context",
+    "statement": "February 1995 GAMS4 capture campaign at ILL: the common Kapton source and ILL2.5 silicon crystals, with 44 Bragg-angle determinations in (1,-2)/(1,2) and 8 in (2,-1)/(2,2). The March 6-7, 1995 optical-polygon calibration serves this campaign.",
+    "limits": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "M-phys-kessler1998-context",
+    "statement": "March 1998 GAMS4 capture campaign at ILL: the common Kapton source and ILL2.5 silicon crystals, with 32 Bragg-angle determinations in (1,-2)/(1,2), 32 in (2,-1)/(2,2) and 25 in (1,-3)/(1,3). Calibrations on March 7-8, 25-26 and 29-30 and a humidity correction serve this campaign.",
+    "limits": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "C-phys-kessler1995-angle",
+    "statement": "Table 2 gives 0.083202185(11) and 0.083202104(40) degrees for the 44- and 8-determination groups. The campaign estimate is 0.083202180(22) degrees after the stated uncertainty treatment.",
+    "limits": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "C-phys-kessler1998-angle",
+    "statement": "Table 2 gives 0.083202197(12), 0.083202229(22) and 0.083202190(12) degrees for the 32-, 32- and 25-determination groups. The campaign estimate is 0.083202199(12) degrees.",
+    "limits": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "C-phys-kessler-combined-angle",
+    "statement": "The two-campaign final first-order angle is 0.083202194(14) degrees at 22.5 C, including the stated crystal-temperature and vertical-divergence uncertainty contributions.",
+    "limits": [
+      24,
+      25,
+      26,
+      27,
+      19,
+      20,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "C-phys-kessler-capture-wavelength",
+    "statement": "Equation 1 reports lambda_gamma=5.57671299(99)e-13 m using the two-campaign angle, adopted ILL2.5 spacing and pressure correction. This is the emitted photon wavelength before recoil conversion.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "C-phys-kessler-binding-energy",
+    "statement": "Equations 3, 5 and 7 report the recoil-corrected energy-equivalent wavelength 5.57340978(99)e-13 m, binding-energy mass equivalent 2.38817007(42)e-3 u and binding energy 2224566.14(41) eV.",
+    "limits": [
+      8,
+      9,
+      10,
+      12,
+      13,
+      4,
+      5,
+      6,
+      7,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "C-phys-kessler-neutron-mass",
+    "statement": "Combining the adopted hydrogen-isotope mass difference with the binding-energy mass equivalent gives the reported neutron mass 1.00866491637(82) u. The binding-energy and mass-spectrometry uncertainty contributions are 0.42e-9 u and 0.71e-9 u.",
+    "limits": [
+      17,
+      18,
+      29,
+      30,
+      15,
+      16,
+      4,
+      5,
+      6,
+      7,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron",
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "C-phys-kessler-recalibrated-wavelength",
+    "statement": "The selected Dewey author report Table VII reuses the Kessler measurement with adjusted lattice input: photon wavelength 5.57671328(99)e-13 m and recoil-corrected energy-equivalent wavelength 5.57341007(99)e-13 m. Its Table VIII binding-energy mass equivalent is 2.38816996(42)e-3 u.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "M-phys-kessler-combined-angle",
+    "statement": "Combine the two campaign means after their within-campaign uncertainty treatment; retain shared calibration and final systematic terms.",
+    "limits": [
+      24,
+      25,
+      26,
+      27,
+      19,
+      20,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "M-phys-kessler-capture-wavelength",
+    "statement": "Apply the specified vacuum spacing, temperature convention and pressure correction to the combined angle.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "M-phys-kessler-binding-energy",
+    "statement": "Apply the stated nuclear recoil prescription and the 1999 conversion constants, keeping photon and energy-equivalent wavelengths distinct.",
+    "limits": [
+      8,
+      9,
+      10,
+      12,
+      13,
+      4,
+      5,
+      6,
+      7,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "M-phys-kessler-neutron-mass",
+    "statement": "Combine the declared mass difference and mass-equivalent binding energy with their uncertainty contributions; trace each input separately.",
+    "limits": [
+      17,
+      18,
+      29,
+      30,
+      15,
+      16,
+      4,
+      5,
+      6,
+      7,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron",
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "M-phys-kessler-recalibrated-wavelength",
+    "statement": "Retain the original two campaigns while applying the declared adjusted crystal scale; do not count the recalculation as new acquisition.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      28,
+      11,
+      14
+    ],
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  }
+];
+
+const captureStudies = [
+  {
+    "id": "kessler1995",
+    "system": "GAMS4 capture campaign in 1995",
+    "preparation": "February 1995 GAMS4 capture campaign at ILL: the common Kapton source and ILL2.5 silicon crystals, with 44 Bragg-angle determinations in (1,-2)/(1,2) and 8 in (2,-1)/(2,2). The March 6-7, 1995 optical-polygon calibration serves this campaign."
+  },
+  {
+    "id": "kessler1998",
+    "system": "GAMS4 capture campaign in 1998",
+    "preparation": "March 1998 GAMS4 capture campaign at ILL: the common Kapton source and ILL2.5 silicon crystals, with 32 Bragg-angle determinations in (1,-2)/(1,2), 32 in (2,-1)/(2,2) and 25 in (1,-3)/(1,3). Calibrations on March 7-8, 25-26 and 29-30 and a humidity correction serve this campaign."
+  }
+];
+
+const captureComparisons = [
+  {
+    "id": "kessler-combined-angle",
+    "result": "conditional-support",
+    "sourceIds": [
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "kessler-capture-wavelength",
+    "result": "conditional-support",
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "kessler-binding-energy",
+    "result": "conditional-support",
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  },
+  {
+    "id": "kessler-neutron-mass",
+    "result": "conditional-support",
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron",
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "kessler-recalibrated-wavelength",
+    "result": "not-tested",
+    "sourceIds": [
+      "kessler1999",
+      "dewey2006-capture",
+      "mohr2025-neutron"
+    ]
+  }
+];
+
+const captureSources = [
+  {
+    "id": "kessler1999",
+    "doi": "10.1016/S0375-9601(99)00078-X",
+    "url": "https://www.ati.ac.at/~neutropt/team/jericha/nkphSkriptum.pdf#page=37",
+    "year": 1999,
+    "extent": "full-primary-article"
+  },
+  {
+    "id": "dewey2006-capture",
+    "doi": "10.1103/PhysRevC.73.044303",
+    "url": "https://arxiv.org/abs/nucl-ex/0507011v1",
+    "year": 2006,
+    "extent": "selected-primary-author-report"
+  },
+  {
+    "id": "mohr2025-neutron",
+    "doi": "10.1103/RevModPhys.97.025002",
+    "url": "https://physics.nist.gov/cuu/pdf/RevModPhys.97.025002.pdf",
+    "year": 2025,
+    "extent": "selected-primary-adjustment-passages"
+  }
+];
+
+const atomicLimits = [
+  "The measured ion has three trap modes. The free cyclotron frequency is reconstructed from their squared frequencies; the trap cyclotron mode alone is not the free frequency.",
+  "The paper writes omega_c=q*B/(m*c) in Gaussian units. In SI the expression is omega_c=abs(q)*B/m for the frequency magnitude; an angular frequency differs from cycles per second by 2*pi.",
+  "For the same magnetic field, omega_2/omega_1=(m_1/abs(q_1))/(m_2/abs(q_2)). Equal charges permit a mass ratio; the Ar+/Ar++ entry requires the charge factor and is not a literal ratio of almost equal ionic masses.",
+  "The ions are loaded and measured alternately, not simultaneously. Removing a fitted magnetic drift does not make all residuals or adjacent ratios statistically independent.",
+  "PNP detects the ion after coherent radial-to-axial transfer. Its resonant voltages differ for N+ and N2+, changing equilibrium position in stray fields. The SOF protocol keeps the evolution voltage common and changes it only for detection.",
+  "The SOF signal is a classical cyclotron amplitude produced by two separated pulses, not a quantum-state amplitude or an entanglement measurement. Figure 1 uses evolution times up to 50 s for the precision estimate.",
+  "Figure 2 compares an N+ ion at approximately 5 V with the same species at 10 V and an N2+ ion at 10 V, with a 22.5 mV axial offset. The approximately 3 ppb unequal-voltage shift disappears at the reported precision with the common-voltage procedure.",
+  "Table I bounds residual magnetic, electrostatic and relativistic systematic terms at approximately 0.030, 0.025 and 0.020 ppb for the specified N+/N2+ settings. These are configuration-specific error estimates, not zero corrections or universal bounds.",
+  "The first two Table II(a) reference ratios depend on electron mass and binding energies. Their agreement near 0.15 ppb tests those controls; it does not prove absence of every systematic effect in all other ion comparisons.",
+  "The carbon-12 neutral-atom reference has mass exactly 12 u by definition. A carbon ion differs by electron mass and ionization energy; treating C+ as exactly 12 u is incorrect.",
+  "Converting molecular-ion comparisons to neutral isolated ground-state atoms requires electron, chemical-binding and ionization-energy terms. The 1994 analysis uses ideal-gas heats of formation at 0 K; this is not the trap temperature.",
+  "A neutral hydrogen atom is not a bare proton and a neutral deuterium atom is not a deuteron. Nuclear masses require removal of electronic contributions.",
+  "Table II(b) of the 1993 paper expresses masses in nu (1e-9 u). Its H and D values become 1.0078250317(7) u and 2.0141017779(6) u; the 1994 H value is 1.0078250316(5) u.",
+  "The 1994 result is a global least-squares solution of twenty pairwise comparisons. Its covariance matrix determines uncertainties of correlated atomic masses and mass differences; the short article does not provide that matrix or every input ratio.",
+  "For a mass difference, Var(D-H)=Var(D)+Var(H)-2*Cov(D,H). Adding printed marginal errors in quadrature assumes zero covariance and is not a reconstruction of the published fit.",
+  "The authors report reduced chi-square 0.74 and redundant routes to the mass table. These internal checks constrain the stated error model; they do not logically exclude every possible common systematic.",
+  "The quoted 2.6e-10 relative rms magnetic fluctuation applies to a single frequency measurement in the 1994 analysis. A typical one-night ratio error near 1e-10 and the final fitted mass uncertainties have different averaging domains.",
+  "The 1993 treatment describes approximately Gaussian residuals for its example; the 1994 robust estimator downweights non-Gaussian outliers. These are different analysis descriptions, not interchangeable procedures.",
+  "These are reported measurements and conditional inferences. Raw phase records, drift fits, chemical-energy inputs and complete covariance have not been independently replayed.",
+  "A charged-ion frequency, neutral-atom mass and inferred neutron mass are different quantities. These results do not establish nucleon formation, lifetime, stability or a universal constituent minimum.",
+  "The 1993 and 1994 publications belong to the same MIT measurement program. Disjoint acquisition and cross-publication covariance are not established; the two papers cannot be treated as independent replications or averaged as independent results.",
+  "Subtracting the printed 1994 D and H central values gives 1.0062767463 u. Kessler adopts the dimensionless relative-mass difference 1.00627674630(71); its 0.71e-9 uncertainty is not independently recovered from the missing mass-fit covariance.",
+  "The 1994 neutron value 1.0086649235(23) u already uses the Greene1986 deuteron binding energy. The 1993 neutron value uses the Wapstra1990 binding-energy compilation. Neither is a direct measurement of a neutral neutron in the trap.",
+  "The upstream H/D mass information is an input to the capture-based neutron inference. Feeding a neutron mass already derived from capture binding energy back as an independent confirmation would conceal a shared input.",
+  "The 1993/1994 mass inputs are historical values. They are not current recommended constants, a new SI kilogram definition or independently traced inputs to the Borsanyi calculation."
+];
+
+const atomicClaims = [
+  {
+    "id": "D-phys-penning-cyclotron-ratio",
+    "statement": "The free cyclotron frequency obeys omega_c^2=omega_plus^2+omega_z^2+omega_minus^2 in the stated Penning-trap treatment. A frequency ratio yields a mass-to-charge ratio, with charge state and magnetic-field drift handled explicitly.",
+    "limits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "D-phys-penning-sof-protocol",
+    "statement": "Two separated cyclotron pulses encode the frequency in a classical amplitude while the compared ions evolve under the same trap voltage. The voltage changes afterward to bring the axial mode into resonance for detection.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      0,
+      1,
+      2,
+      3
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "D-phys-ion-atom-mass-correction",
+    "statement": "A measured ionic mass-to-charge ratio is converted to a neutral-atom mass using charge state, electron mass, ionization and chemical binding energies, with neutral carbon-12 fixing the relative-mass scale.",
+    "limits": [
+      9,
+      10,
+      11,
+      12,
+      2
+    ],
+    "sourceIds": [
+      "natarajan1993",
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "D-phys-atomic-mass-covariance",
+    "statement": "Atomic masses and their differences are inferred from a jointly constrained comparison network. Uncertainty in D-H depends on the covariance as well as both marginal mass errors.",
+    "limits": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      9,
+      10
+    ],
+    "sourceIds": [
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "M-phys-natarajan1993-sof-context",
+    "statement": "The 8.5 T Penning trap at approximately 4.2 K measures single ions alternately. SOF stores the cyclotron phase difference in an amplitude under a common evolution voltage, then changes voltage for axial detection with a superconducting circuit (Q about 25000) and rf SQUID. Table II includes controls and carbon-referenced methane-ion comparisons.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      0,
+      1,
+      2,
+      3,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "M-phys-natarajan1993-pnp-context",
+    "statement": "Figure 2 measures N+ with the PNP method at its approximately 5 V resonant trap setting and compares it with common-voltage measurements at 10 V. The same diagnostic uses a 22.5 mV axial offset; an approximately 3 ppb shift remains for the unequal-voltage setting.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "M-phys-difilippo1994-context",
+    "statement": "Twenty pairwise comparisons use alternately trapped single ions in an 8.5 T field, axial rf SQUID detection and coupled radial-to-axial phase readout. Robust polynomial fits handle field drift. Corrected molecular-ion comparisons determine a global neutral-atom mass table with carbon-12 as reference.",
+    "limits": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      9,
+      10,
+      11,
+      12,
+      21,
+      22,
+      23,
+      24,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "C-phys-natarajan-voltage-control",
+    "statement": "Figure 2 shows an approximately 3 ppb offset for N+ measured at its own PNP resonant voltage. The offset disappears at the stated precision when N+ evolves at the same 10 V setting as N2+ under the SOF protocol.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      0,
+      1,
+      2,
+      3,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "C-phys-natarajan-frequency-ratios",
+    "statement": "Table II(a) reports charge-normalized ratios N2+/N+ 2.00003917561(29), Ar+/Ar++ 2.00002745412(36), CH4+/C+ 1.33595703378(23), CD3+/C+ 1.50354846235(20), CD4+/C+ 1.67139795039(31) and Ar+/Ne+ 1.99890212105(30).",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "C-phys-natarajan-hydrogen-masses",
+    "statement": "Table II(b) gives neutral-atom masses H 1.0078250317(7) u and D 2.0141017779(6) u after binding-energy corrections. The deuterium determination combines carbon comparisons using CD3+ and CD4+.",
+    "limits": [
+      9,
+      10,
+      11,
+      12,
+      0,
+      1,
+      2,
+      3,
+      22,
+      23,
+      24,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "C-phys-difilippo-example-ratio",
+    "statement": "Figure 1 reports CO+/N2+ mass ratio 0.99959888760(8) from alternating frequency measurements with a sixth-order polynomial and robust estimation. This is an example within the twenty-comparison analysis.",
+    "limits": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      2,
+      3,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "C-phys-difilippo-hydrogen-masses",
+    "statement": "Table I reports neutral-atom masses H 1.0078250316(5) u and D 2.0141017779(5) u from the global fit after chemical and ionization corrections. Their covariance matters when forming D-H.",
+    "limits": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      21,
+      22,
+      23,
+      24,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "C-phys-difilippo-capture-input",
+    "statement": "The printed 1994 atomic masses give D-H=1.0062767463 u. Kessler adopts Ar(2H)-Ar(1H)=1.00627674630(71) from that source for the neutron-mass calculation; its uncertainty is retained as an adopted input, not a reproduced covariance result.",
+    "limits": [
+      21,
+      22,
+      23,
+      24,
+      13,
+      14,
+      15,
+      9,
+      10,
+      11,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "difilippo1994",
+      "kessler1999"
+    ]
+  },
+  {
+    "id": "M-phys-natarajan-voltage-control",
+    "statement": "Compare the declared N+/N2+ settings while retaining the axial offset, field corrections and charge-aware frequency construction.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      0,
+      1,
+      2,
+      3,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "M-phys-natarajan-hydrogen-masses",
+    "statement": "Apply electron, ionization and chemical-energy corrections to the stated carbon comparisons; preserve the two deuterium routes and historical uncertainty.",
+    "limits": [
+      9,
+      10,
+      11,
+      12,
+      0,
+      1,
+      2,
+      3,
+      22,
+      23,
+      24,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "M-phys-difilippo-hydrogen-masses",
+    "statement": "Use the declared neutral-atom conversion and joint least-squares covariance, preserving redundant-route checks and unresolved raw-data replay.",
+    "limits": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      21,
+      22,
+      23,
+      24,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "M-phys-difilippo-capture-input",
+    "statement": "Trace the H/D mass input into the capture calculation while keeping the missing covariance and the older neutron row's binding-energy dependence explicit.",
+    "limits": [
+      21,
+      22,
+      23,
+      24,
+      13,
+      14,
+      15,
+      9,
+      10,
+      11,
+      18,
+      19,
+      20
+    ],
+    "sourceIds": [
+      "difilippo1994",
+      "kessler1999"
+    ]
+  }
+];
+
+const atomicStudies = [
+  {
+    "id": "natarajan1993-sof",
+    "system": "MIT common-voltage nondoublet measurements",
+    "preparation": "The 8.5 T Penning trap at approximately 4.2 K measures single ions alternately. SOF stores the cyclotron phase difference in an amplitude under a common evolution voltage, then changes voltage for axial detection with a superconducting circuit (Q about 25000) and rf SQUID. Table II includes controls and carbon-referenced methane-ion comparisons."
+  },
+  {
+    "id": "natarajan1993-pnp",
+    "system": "MIT unequal-voltage PNP control",
+    "preparation": "Figure 2 measures N+ with the PNP method at its approximately 5 V resonant trap setting and compares it with common-voltage measurements at 10 V. The same diagnostic uses a 22.5 mV axial offset; an approximately 3 ppb shift remains for the unequal-voltage setting."
+  },
+  {
+    "id": "difilippo1994",
+    "system": "MIT twenty-comparison atomic-mass fit",
+    "preparation": "Twenty pairwise comparisons use alternately trapped single ions in an 8.5 T field, axial rf SQUID detection and coupled radial-to-axial phase readout. Robust polynomial fits handle field drift. Corrected molecular-ion comparisons determine a global neutral-atom mass table with carbon-12 as reference."
+  }
+];
+
+const atomicComparisons = [
+  {
+    "id": "natarajan-voltage-control",
+    "result": "specified-alternative-disfavored",
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "natarajan-hydrogen-masses",
+    "result": "conditional-support",
+    "sourceIds": [
+      "natarajan1993"
+    ]
+  },
+  {
+    "id": "difilippo-hydrogen-masses",
+    "result": "conditional-support",
+    "sourceIds": [
+      "difilippo1994"
+    ]
+  },
+  {
+    "id": "difilippo-capture-input",
+    "result": "not-tested",
+    "sourceIds": [
+      "difilippo1994",
+      "kessler1999"
+    ]
+  }
+];
+
+const atomicSources = [
+  {
+    "id": "natarajan1993",
+    "doi": "10.1103/PhysRevLett.71.1998",
+    "url": "https://doi.org/10.1103/PhysRevLett.71.1998",
+    "year": 1993
+  },
+  {
+    "id": "difilippo1994",
+    "doi": "10.1103/PhysRevLett.73.1481",
+    "url": "https://doi.org/10.1103/PhysRevLett.73.1481",
+    "year": 1994
+  }
+];
+
+const liontrapLimits = [
+  "Neutral carbon-12 has mass exactly 12 u; C-12(6+) instead has mass 12 u minus six electron masses plus the six positive ionization energies divided by c^2. The sixfold charge factor in m_p=R*m_C/6 cannot be omitted.",
+  "Hei\u00dfe 2019 uses m_e=0.000548579909069(15) u and historical electronic-energy inputs. The electron mass is inferred using a bound-electron g factor and QED; it is not an independently reproduced direct weighing in this review.",
+  "Hei\u00dfe 2017 prints m_C=11.9967096264139(10) u and 0.08 ppt relative uncertainty. Hei\u00dfe 2019 prints 11.99670962641385(8) u but still states 0.08 ppt; the printed (8) corresponds to about 0.00667 ppt. This unresolved uncertainty discrepancy is not silently repaired.",
+  "The proton-electron ratio in Hei\u00dfe 2019 assumes zero covariance because the dominant proton and electron systematic uncertainties differ. That assumption is not proof of complete statistical independence.",
+  "The stored ions are measured alternately under the same trap voltages, using separate axial resonators. Randomized species order reduces linear drift; it does not make sequential measurements simultaneous or statistically independent.",
+  "The proton dataset comprises thirteen runs and three ion pairs, with about 300 hours of acquisition over two months. Runs, cycles, ion pairs and publications are not independent replications.",
+  "The planar fit extrapolates the deliberately excited cyclotron motion to zero using R_i=R_stat+a*S_p^2+b*S_C^2. Thermal axial and cyclotron motion still requires systematic corrections.",
+  "The 2019 reanalysis corrects the estimated ion temperatures and a minor measurement-program flaw in the 2017 datasets. The two publications cannot be averaged as independent proton-mass experiments.",
+  "Hei\u00dfe 2017 Figure 3 lists phase-unwrapping times 0.1, 1, 2 and 5 s; Hei\u00dfe 2019 describes 0.5, 1, 2 and 5 s. The four final 10 s phase evolutions are distinct from those unwrapping stages; the differing descriptions are retained.",
+  "The 2017 abbreviation MT denotes the measurement trap; in 2019 PT denotes the precision trap and MT the magnetometer trap. The proposed simultaneous three-ion readout and magnetic shim coils were not used in the reported proton campaign.",
+  "The proton campaign had C4=(0 +/- 6.3)e-6 and C6=(-6.8 +/- 0.4)e-4. The improved Table VI tuning and proposed millikelvin cooling describe other conditions, not the acquisition used for the reported mass.",
+  "Table VII revises feedback-cooled axial temperatures to 1.5(1.0) K for p and 4.5(1.4) K for C-12(6+), replacing the 2017 common 1.7(1.0) K estimate. No-feedback values are 3.4(1.0) K and 6.4(1.0) K. These are inferred temperatures, not zero thermal energies.",
+  "The reanalysis uses B2=-0.270(15) microtesla/mm^2. Reduced chi-square 1.17 for ten degrees of freedom and a 30 percent tail do not logically exclude common systematic effects.",
+  "For ion charge n*e, Schuh 2019 defines radial actual-minus-ideal shifts Delta_nu_plus/minus=opposite-sign n*E_rho/(2*pi*B0). The correction added to the measured cyclotron estimate is +n*(2*E_rho+E_z)/(4*pi*B0), in Hz. The change of sign convention is explicit in footnote 2.",
+  "The infinitely long cylindrical-electrode approximation gives a relative cyclotron correction approximately m/(4*pi*epsilon0*B0^2*rho0^3). Real gaps, electrode shape, displacements and axial fields require a scoped geometry calculation.",
+  "The invariance-based cyclotron estimate retains an image-charge correction. Cancellation of the opposite radial shifts in nu_plus+nu_minus does not establish that the squared-frequency reconstruction is unshifted.",
+  "The proton reports use C_IC=1.97(10) for their correction. The later, more detailed Schuh calculation is not silently substituted into the published mass as though that re-fit had been performed.",
+  "Hei\u00dfe 2019 Equation 21 prints a frequency shift with a dimensionless right side; the relative form in Hei\u00dfe 2017 Equation 2 and the explicit conventions in Schuh 2019 are used instead. The positive E/(m*c^2) beside a negative relativistic shift on page 13 is not adopted as a physical identity.",
+  "COMSOL 5.2 with the AC/DC module represents a point charge and perfectly conducting grounded electrode surfaces. Twenty-one ion positions from -0.5 to +0.5 mm are fitted with odd polynomials to extract field gradients.",
+  "Agreement between finite-element and semianalytical calculations is tested on the same simplified geometry. Full electrode geometry changes the LIONTRAP correction by 2.7(4) percent; horizontal and azimuthal slit effects are separately reported.",
+  "Numerical/fit and geometry uncertainties have different meanings. The geometry estimate assumes manufacturing deviations up to 10 micrometers; higher-order effects are treated as small under a displacement assumption below 50 micrometers.",
+  "The cylinder reference, polynomial order and matrix-truncation checks constrain numerical error. Increasing resolution or expansion order alone does not prove convergence or exact reproduction of the manufactured trap.",
+  "The calculation and experiment have shared geometry and calibration assumptions. Their agreement is conditional evidence for an image-charge correction in the stated trap, not a universal graph-generation rule or an independent mass measurement.",
+  "Schuh uses 120 cycles over 23 days, with 73 cycles at 40 s and the others at 20 s, and approximately 140 minutes per full cycle. Two 4.6 ms magnetron pulses and an intentionally deformed readout potential distinguish this experiment from proton-mass PnA acquisition.",
+  "The readout uses C2=-0.5997, C4=-0.00223(18), C6=0.014(4) and a maximal magnetron radius near 274 micrometers. Harmonic potential during phase evolution and deformed potential during readout must not be conflated.",
+  "The 43 microhertz statistical error is enlarged by sqrt(2) to 61 microhertz because the reduced chi-square is 2. Tilt fluctuations cannot be separated from voltage fluctuations by the axial signal alone.",
+  "The image-charge difference subtracts ideal 390.723(1) mHz, magnetic 0.056(21) mHz and tilt/ellipticity 0.188(37) mHz from 393.258(61)(77) mHz. The resulting 2.291(61)(111) mHz combines correlated correction uncertainties.",
+  "The 73 and 37 microhertz tilt contributions are correlated and add to 110 microhertz. The two 21 microhertz magnetic contributions cancel in the stated analysis; quadrature of all marginal errors would misrepresent that covariance.",
+  "Appendix A uses the 2017 proton mass and compares an axial calibration ratio over 1000 measurements drawn from both the image-charge and proton campaigns. This shared input prevents a claim of fully independent proton-mass validation.",
+  "The page 6 prose labels a ratio of magnetron frequencies as axial; Appendix A explicitly defines the required ratio using nu_z. The calibration follows the axial observable and retains the printed discrepancy.",
+  "These are reported measurements or calculations with scoped interpretations. Original acquisition records, analysis code, thermal corrections and full covariance have not been independently replayed.",
+  "A bare proton, a charged carbon or oxygen nucleus, and a neutral atom have different masses and charge factors. These mass results do not establish nucleon formation, lifetime, stability or a universal carrier minimum.",
+  "The quoted CODATA 2014 and AME 2016 comparisons are historical reference values. They are not current recommended constants or independent experiments reconstructed by this review.",
+  "Hei\u00dfe 2019 Table VIII reports corrections in parts per trillion: image charge 91.0(4.6), image current -1.9(0.3), line shape 3.1(3.0), magnetron determination 0.0(0.6), magnetic inhomogeneity -20.9(27.4), relativity -8.9(7.1), and electrostatic terms much smaller than 0.1. Its total is 59.5(28.8).",
+  "Adding all finite displayed rows gives 62.4 ppt. The line-shape correction varies by ion pair; the 2017 Table I caption explicitly excludes its pair-specific term from that earlier total. Omitting the 2019 line-shape row gives 59.3 ppt. The final weighting and application to the reanalysis have not been reconstructed; a naive sum is not evidence that the mass result is invalid.",
+  "The 2019 Table VIII header is (R_stat-R_cor)/R_stat, but Equations 20 and 23 increase R, giving (R_cor-R_stat)/R_stat about +59.55 ppt from rounded values. The printed sign convention remains unresolved.",
+  "For positive deuteron binding energy, m_n=m_d-m_p+E_B/c^2. The subtraction wording on Hei\u00dfe 2019 page 14 is not an independent neutron-mass determination or a replacement for that mass balance.",
+  "The double-dip result uses frequencies acquired in the same cycles as the PnA result. Their agreement is an internal method comparison, not an independent replication.",
+  "The oxygen conversion uses m(O-16(8+))=8*m_p/R(O,p), then adds eight electron masses and subtracts electronic binding energy to obtain the neutral atom. Its third uncertainty component comes from the proton input; the oxygen result cannot independently verify that input.",
+  "The carbon C-12(6+)/C-12(3+) control doubles the precision-trap voltage to match the two axial detectors. Its preparation is not the common-voltage proton/carbon production comparison. The 2019 paper reports agreement within 0.2 sigma at relative uncertainty 1.1e-10, versus 0.5 sigma in 2017. Disjoint control acquisition or independent replication between the accounts is not established.",
+  "Schuh Table I gives an experimental image-charge magnetron difference 2.291(126) mHz and a simulated difference 2.377(21) mHz. Table II separately prints an experimental free-cyclotron correction 471.9(23.9) microhertz per charge state and a full-geometry value 475.4(2.1)(3.6).",
+  "Dividing the Table I difference by the charge-state difference of five gives 458.2 microhertz, before the small axial contribution, rather than Table II 471.9. The conversion between these printed entries has not been recovered. Both tables are preserved; neither is silently rewritten or claimed to be an exact replay of the other."
+];
+
+const liontrapClaims = [
+  {
+    "id": "D-phys-liontrap-carbon-reference",
+    "statement": "For R=nu_c(C-12(6+))/nu_c(p), m_p=R*m_C/6 with m_C=12 u-6*m_e+sum(E_ion)/c^2. The nuclear reference retains its electronic-energy inputs and their stated uncertainty.",
+    "limits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "D-phys-penning-pna-fit",
+    "statement": "A phase-sensitive cyclotron comparison is extrapolated to zero deliberate excitation using a joint quadratic fit in the two species excitation strengths. Thermal-motion and apparatus corrections remain necessary.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "D-phys-penning-image-charge",
+    "statement": "The ion induces charge on trap electrodes; the resulting field shifts the measured motion. A correction to the free cyclotron estimate must specify the field model, units and whether it maps ideal to measured or measured to ideal frequency.",
+    "limits": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019",
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "D-phys-penning-image-charge-geometry",
+    "statement": "A finite-element or semianalytical boundary-value model predicts the local image field for a specified electrode geometry. Geometry tolerances, fitted gradients and numerical convergence limit its frequency correction.",
+    "limits": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      13,
+      14,
+      15
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "D-phys-penning-magnetron-control",
+    "statement": "Two separated radial pulses encode the magnetron phase in a classical motional amplitude. A changed electrostatic readout potential maps that amplitude to an axial-frequency shift; comparing single ions then constrains the image-charge contribution.",
+    "limits": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      13,
+      14,
+      15
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2017-pna-context",
+    "statement": "Single protons and C-12(6+) ions are alternated in a 5 mm-radius trap near 3.8 T and 4 K with separate axial detectors and common trapping voltages. Thirteen runs use three ion pairs. PnA and double-dip frequencies are acquired in each cycle; the original report fits excitation-dependent ratios and applies its stated corrections.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2019-reanalysis-context",
+    "statement": "The proton dataset reported in 2017 is reanalyzed with corrected temperature estimates and a measurement-program correction. A planar fit gives the zero-driven-excitation ratio, followed by the published systematic corrections. This is a revised analysis of the same acquisition, not a new independent experiment.",
+    "limits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      33,
+      34,
+      35,
+      11,
+      12,
+      17,
+      36,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2019-double-dip-context",
+    "statement": "Double-dip cyclotron frequencies recorded in the same proton/carbon cycles are used instead of the PnA frequencies. The shared apparatus, ions, mass reference and corrections remain part of the comparison.",
+    "limits": [
+      37,
+      4,
+      5,
+      6,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2019-oxygen-context",
+    "statement": "The oxygen campaign reported in 2017 compares O-16(8+) with a proton using a retuned axial resonator and the same measurement-cycle design. Revised temperature corrections and the reanalyzed proton mass enter the neutral-oxygen inference.",
+    "limits": [
+      38,
+      7,
+      0,
+      1,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2019-carbon-control-context",
+    "statement": "The reported C-12(6+)/C-12(3+) comparison doubles the precision-trap voltages to match the axial resonators. Its reference uses electron masses and electronic binding energies. Independent acquisition relative to the control described in 2017 is not established.",
+    "limits": [
+      39,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-schuh2019-magnetron-context",
+    "statement": "Alternating single p and C-12(6+) ions undergo a Ramsey-like magnetron measurement with two 4.6 ms pulses and deformed-potential axial readout. The 120 cycles over 23 days use 20 or 40 s precision phase evolution. Voltage and tilt corrections enter the extracted image-charge difference.",
+    "limits": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "M-phys-schuh2019-geometry-context",
+    "statement": "COMSOL 5.2 finite-element electrostatics and a semianalytical expansion compare simplified electrode models and full LIONTRAP geometry. Field gradients are inferred from 21 ion positions; a long-cylinder reference and geometry perturbations estimate numerical and manufacturing uncertainty.",
+    "limits": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "C-phys-liontrap2017-proton",
+    "statement": "The 2017 analysis reports R_stat=0.5037763676431(77), R_final=0.5037763676624(77)(146), and m_p=1.007276466583(15)(29) u. The uncertainties on the corrected result are statistical then systematic, on the final digits.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "C-phys-liontrap2019-proton",
+    "statement": "The 2019 reanalysis reports R_stat=0.5037763676401(81), R_cor=0.5037763676701(81)(144), and m_p=1.007276466598(16)(29) u. The mass shifts upward by 1.5e-11 u relative to the 2017 report of the same data.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      33,
+      34,
+      35,
+      11,
+      12,
+      17,
+      36,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "C-phys-liontrap-correction-budget",
+    "statement": "The 2019 proton correction budget reports a total 59.5(28.8) ppt. The displayed pair-specific terms, the total and the printed sign convention do not by themselves supply a reproducible global correction recipe.",
+    "limits": [
+      33,
+      34,
+      35,
+      11,
+      12,
+      17,
+      36,
+      2,
+      7,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "C-phys-liontrap-double-dip",
+    "statement": "Using the same-cycle double-dip readout, the 2019 account reports R_DD=0.50377636768(3)(5) and m_p=1.00727646661(6)(10) u. Agreement with the PnA result is an internal comparison with about fourfold lower precision.",
+    "limits": [
+      37,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "C-phys-liontrap-oxygen",
+    "statement": "The reanalyzed oxygen campaign reports R_stat(O,p)=0.503936558242(17) and neutral m(O-16)=15.99491461937(54)(45)(51) u after corrections. The three uncertainties are statistical, systematic and the adopted proton-mass contribution.",
+    "limits": [
+      38,
+      0,
+      1,
+      7,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "C-phys-liontrap-carbon-control",
+    "statement": "The 2019 C-12(6+)/C-12(3+) control agrees with its electronic-energy reference within 0.2 sigma at relative uncertainty 1.1e-10. Its doubled-voltage preparation tests a distinct charge-state comparison.",
+    "limits": [
+      39,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "C-phys-schuh-magnetron-difference",
+    "statement": "The dedicated image-charge experiment reports nu_minus(C-12(6+))-nu_minus(p)=393.258(61)(77) mHz after voltage correction. This includes the ideal-trap mass dependence and other apparatus shifts, not only the image-charge contribution.",
+    "limits": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "C-phys-schuh-image-charge",
+    "statement": "Subtracting the stated ideal, magnetic and tilt/ellipticity contributions gives an image-charge magnetron difference 2.291(61)(111) mHz, or 2.291(126) mHz with combined uncertainty, in Schuh Table I and Equation 23.",
+    "limits": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019",
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "C-phys-schuh-geometry-response",
+    "statement": "For LIONTRAP at B0=3.764 T, the full-geometry calculation reports a cyclotron correction 475.4(2.1)(3.6) microhertz per charge state, with numerical and geometry uncertainties. The simplified calculations give 488.416(58) and 488.7(2.1); including electrode gaps changes the prediction.",
+    "limits": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      13,
+      14,
+      15,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "C-phys-schuh-ics-comparison",
+    "statement": "Schuh Table I compares the extracted 2.291(126) mHz magnetron difference with 2.377(21) mHz from the geometry calculation. This supports the correction at roughly five-percent experimental precision, while the conversion to the distinct Table II experimental value remains unresolved.",
+    "limits": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      18,
+      19,
+      20,
+      21,
+      22,
+      13,
+      14,
+      15,
+      16,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019",
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2017-proton",
+    "statement": "Use the carbon nuclear reference, explicit charge factor and reported excitation extrapolation and systematic corrections for the original acquisition.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap2019-proton",
+    "statement": "Retain the original acquisition and revised thermal and program corrections, then convert the corrected ratio through the same carbon nuclear reference. Treat the result as a reanalysis.",
+    "limits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      33,
+      34,
+      35,
+      11,
+      12,
+      17,
+      36,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap-correction-budget",
+    "statement": "Trace each correction through its ion-pair scope, units, sign convention and covariance. Preserve the published discrepancies until the original weighting and correction application can be recovered.",
+    "limits": [
+      33,
+      34,
+      35,
+      11,
+      12,
+      17,
+      36,
+      2,
+      7,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap-double-dip",
+    "statement": "Compare the two cyclotron readouts obtained in the same cycles while retaining their shared reference, detector conditions and systematic inputs.",
+    "limits": [
+      37,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap-oxygen",
+    "statement": "Convert the corrected O-16(8+)/p ratio with the adopted proton mass and electronic-energy terms, retaining the uncertainty contributed by that input.",
+    "limits": [
+      38,
+      0,
+      1,
+      7,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-liontrap-carbon-control",
+    "statement": "Compare the two carbon charge states at the explicitly doubled trap voltage using the electron and binding-energy reference, without treating this as the proton production preparation.",
+    "limits": [
+      39,
+      0,
+      1,
+      2,
+      3,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "M-phys-schuh-magnetron-difference",
+    "statement": "Infer magnetron phases from separated-pulse motional amplitudes, correct the axial voltage proxy and apply the stated statistical-error inflation.",
+    "limits": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "M-phys-schuh-image-charge",
+    "statement": "Subtract the ideal-trap, magnetic and tilt/ellipticity components with their reported covariance and proton-mass input before identifying the residual as an image-charge shift.",
+    "limits": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019",
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "M-phys-schuh-geometry-response",
+    "statement": "Solve the specified electrostatic boundary problem, fit local gradients, compare a matched simplified geometry and bound numerical and manufacturing effects.",
+    "limits": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      13,
+      14,
+      15,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019"
+    ]
+  },
+  {
+    "id": "M-phys-schuh-ics-comparison",
+    "statement": "Compare the Table I magnetron residual and prediction with their declared uncertainties; retain shared mass/calibration inputs and the unresolved conversion to Table II.",
+    "limits": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      18,
+      19,
+      20,
+      21,
+      22,
+      13,
+      14,
+      15,
+      16,
+      40,
+      41,
+      30,
+      31,
+      32
+    ],
+    "sourceIds": [
+      "schuh2019",
+      "heisse2017"
+    ]
+  }
+];
+
+const liontrapStudies = [
+  {
+    "id": "liontrap2017-pna",
+    "system": "Original LIONTRAP proton campaign",
+    "preparation": "Single protons and C-12(6+) ions are alternated in a 5 mm-radius trap near 3.8 T and 4 K with separate axial detectors and common trapping voltages. Thirteen runs use three ion pairs. PnA and double-dip frequencies are acquired in each cycle; the original report fits excitation-dependent ratios and applies its stated corrections.",
+    "studyType": "primary-experiment"
+  },
+  {
+    "id": "liontrap2019-reanalysis",
+    "system": "LIONTRAP proton data reanalysis",
+    "preparation": "The proton dataset reported in 2017 is reanalyzed with corrected temperature estimates and a measurement-program correction. A planar fit gives the zero-driven-excitation ratio, followed by the published systematic corrections. This is a revised analysis of the same acquisition, not a new independent experiment.",
+    "studyType": "experimental-reanalysis"
+  },
+  {
+    "id": "liontrap2019-double-dip",
+    "system": "LIONTRAP same-cycle double-dip check",
+    "preparation": "Double-dip cyclotron frequencies recorded in the same proton/carbon cycles are used instead of the PnA frequencies. The shared apparatus, ions, mass reference and corrections remain part of the comparison.",
+    "studyType": "experimental-reanalysis"
+  },
+  {
+    "id": "liontrap2019-oxygen",
+    "system": "LIONTRAP oxygen data reanalysis",
+    "preparation": "The oxygen campaign reported in 2017 compares O-16(8+) with a proton using a retuned axial resonator and the same measurement-cycle design. Revised temperature corrections and the reanalyzed proton mass enter the neutral-oxygen inference.",
+    "studyType": "experimental-reanalysis"
+  },
+  {
+    "id": "liontrap2019-carbon-control",
+    "system": "LIONTRAP carbon charge-state check",
+    "preparation": "The reported C-12(6+)/C-12(3+) comparison doubles the precision-trap voltages to match the axial resonators. Its reference uses electron masses and electronic binding energies. Independent acquisition relative to the control described in 2017 is not established.",
+    "studyType": "primary-experiment"
+  },
+  {
+    "id": "schuh2019-magnetron",
+    "system": "LIONTRAP dedicated magnetron experiment",
+    "preparation": "Alternating single p and C-12(6+) ions undergo a Ramsey-like magnetron measurement with two 4.6 ms pulses and deformed-potential axial readout. The 120 cycles over 23 days use 20 or 40 s precision phase evolution. Voltage and tilt corrections enter the extracted image-charge difference.",
+    "studyType": "primary-experiment"
+  },
+  {
+    "id": "schuh2019-geometry",
+    "system": "LIONTRAP electrode-geometry calculation",
+    "preparation": "COMSOL 5.2 finite-element electrostatics and a semianalytical expansion compare simplified electrode models and full LIONTRAP geometry. Field gradients are inferred from 21 ion positions; a long-cylinder reference and geometry perturbations estimate numerical and manufacturing uncertainty.",
+    "studyType": "computational-analysis"
+  }
+];
+
+const liontrapComparisons = [
+  {
+    "id": "liontrap2017-proton",
+    "result": "conditional-support",
+    "sourceIds": [
+      "heisse2017"
+    ]
+  },
+  {
+    "id": "liontrap2019-proton",
+    "result": "conditional-support",
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "liontrap-correction-budget",
+    "result": "not-tested",
+    "sourceIds": [
+      "heisse2017",
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "liontrap-double-dip",
+    "result": "conditional-support",
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "liontrap-oxygen",
+    "result": "not-tested",
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "liontrap-carbon-control",
+    "result": "conditional-support",
+    "sourceIds": [
+      "heisse2019"
+    ]
+  },
+  {
+    "id": "schuh-ics-comparison",
+    "result": "conditional-support",
+    "sourceIds": [
+      "schuh2019",
+      "heisse2017"
+    ]
+  }
+];
+
+const liontrapSources = [
+  {
+    "id": "heisse2017",
+    "doi": "10.1103/PhysRevLett.119.033001",
+    "url": "https://doi.org/10.1103/PhysRevLett.119.033001",
+    "year": 2017
+  },
+  {
+    "id": "heisse2019",
+    "doi": "10.1103/PhysRevA.100.022518",
+    "url": "https://doi.org/10.1103/PhysRevA.100.022518",
+    "year": 2019
+  },
+  {
+    "id": "schuh2019",
+    "doi": "10.1103/PhysRevA.100.023411",
+    "url": "https://doi.org/10.1103/PhysRevA.100.023411",
+    "year": 2019
+  }
+];
+
 /** Enforce formal, computational and empirical boundaries; this does not verify physics. */
 export function validatePhysicsDefinitions({ graph, physics }, { sources, claims, entities, relations }) {
   const admitted = new Set([...definitions.keys(), ...observations.map(([id]) => `phys:${id}`), ...contexts.map(([id]) => `phys:${id}`)]);
@@ -1615,7 +4107,38 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   "musedinovic2025-2020",
   "musedinovic2025-2021",
   "musedinovic2025-2022",
-  "musedinovic2025-uncleaned"
+  "musedinovic2025-uncleaned",
+  "borsanyi2015",
+  "borsanyi2015-volume",
+  "kessler1995",
+  "kessler1998",
+  "natarajan1993-sof",
+  "natarajan1993-pnp",
+  "difilippo1994",
+  "liontrap2017-pna",
+  "liontrap2019-reanalysis",
+  "liontrap2019-double-dip",
+  "liontrap2019-oxygen",
+  "liontrap2019-carbon-control",
+  "schuh2019-magnetron",
+  "schuh2019-geometry",
+  "rau2020-awg1",
+  "rau2020-awg2",
+  "rau2020-hd",
+  "rau2020-local-fit",
+  "rau2020-joint-fit",
+  "korobov2017-hd",
+  "kessler2017-ill",
+  "fink2020-ratio",
+  "rau2020-figure-replay",
+  "rau2020-capture-recalibration",
+  "fink2021-simultaneous",
+  "fink2021-state-fit",
+  "fink2021-drive-control",
+  "korobov2017-h2",
+  "codata2022-mass-inputs",
+  "codata2022-lattice",
+  "mass-constraint-replay"
 ]);
   for (const [id, sourceId, doi, extent] of [
     ["breidenbach1969", "breidenbach1969", "10.1103/PhysRevLett.23.935", "full-primary-article"],
@@ -1639,11 +4162,42 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   ["musedinovic2025-2020", "musedinovic2025", "10.1103/PhysRevC.111.045501", "full-primary-article"],
   ["musedinovic2025-2021", "musedinovic2025", "10.1103/PhysRevC.111.045501", "full-primary-article"],
   ["musedinovic2025-2022", "musedinovic2025", "10.1103/PhysRevC.111.045501", "full-primary-article"],
-  ["musedinovic2025-uncleaned", "musedinovic2025", "10.1103/PhysRevC.111.045501", "full-primary-article"]
+  ["musedinovic2025-uncleaned", "musedinovic2025", "10.1103/PhysRevC.111.045501", "full-primary-article"],
+  ["borsanyi2015", "borsanyi2015", "10.1126/science.1257050", "full-primary-author-report"],
+  ["borsanyi2015-volume", "borsanyi2015", "10.1126/science.1257050", "full-primary-author-report"],
+  ["kessler1995", "kessler1999", "10.1016/S0375-9601(99)00078-X", "full-primary-article"],
+  ["kessler1998", "kessler1999", "10.1016/S0375-9601(99)00078-X", "full-primary-article"],
+  ["natarajan1993-sof", "natarajan1993", "10.1103/PhysRevLett.71.1998", "full-primary-article"],
+  ["natarajan1993-pnp", "natarajan1993", "10.1103/PhysRevLett.71.1998", "full-primary-article"],
+  ["difilippo1994", "difilippo1994", "10.1103/PhysRevLett.73.1481", "full-primary-article"],
+  ["liontrap2017-pna", "heisse2017", "10.1103/PhysRevLett.119.033001", "full-primary-article"],
+  ["liontrap2019-reanalysis", "heisse2019", "10.1103/PhysRevA.100.022518", "full-primary-article"],
+  ["liontrap2019-double-dip", "heisse2019", "10.1103/PhysRevA.100.022518", "full-primary-article"],
+  ["liontrap2019-oxygen", "heisse2019", "10.1103/PhysRevA.100.022518", "full-primary-article"],
+  ["liontrap2019-carbon-control", "heisse2019", "10.1103/PhysRevA.100.022518", "full-primary-article"],
+  ["schuh2019-magnetron", "schuh2019", "10.1103/PhysRevA.100.023411", "full-primary-article"],
+  ["schuh2019-geometry", "schuh2019", "10.1103/PhysRevA.100.023411", "full-primary-article"],
+  ["rau2020-awg1", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["rau2020-awg2", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["rau2020-hd", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["rau2020-local-fit", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["rau2020-joint-fit", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["korobov2017-hd", "korobov2017", "10.1103/PhysRevLett.118.233001", "full-author-manuscript"],
+  ["kessler2017-ill", "kessler2017", "10.6028/jres.122.024", "full-primary-article"],
+  ["fink2020-ratio", "fink2020", "10.1103/PhysRevLett.124.013001", "full-accepted-main-article"],
+  ["rau2020-figure-replay", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["rau2020-capture-recalibration", "rau2020", "10.1038/s41586-020-2628-7", "full-author-manuscript"],
+  ["fink2021-simultaneous", "fink2021", "10.1103/PhysRevLett.127.243001", "full-accepted-main-article"],
+  ["fink2021-state-fit", "fink2021", "10.1103/PhysRevLett.127.243001", "full-accepted-main-article"],
+  ["fink2021-drive-control", "fink2021", "10.1103/PhysRevLett.127.243001", "full-accepted-main-article"],
+  ["korobov2017-h2", "korobov2017", "10.1103/PhysRevLett.118.233001", "full-author-manuscript"],
+  ["codata2022-mass-inputs", "mohr2025-neutron", "10.1103/RevModPhys.97.025002", "selected-primary-adjustment-passages"],
+  ["codata2022-lattice", "mohr2025-neutron", "10.1103/RevModPhys.97.025002", "selected-primary-adjustment-passages"],
+  ["mass-constraint-replay", "fink2021", "10.1103/PhysRevLett.127.243001", "full-accepted-main-article"]
   ]) {
     const s = studies.get(id);
     assert.equal(s?.sourceId, sourceId, "Physical measurement borrowed a different publication");
-    assert.equal(s.studyType, ["creutz1980", "bali2005", "durr2008"].includes(id) ? "computational-analysis" : "primary-experiment", "A computational lattice result became an experiment");
+    assert.equal(s.studyType, ["creutz1980", "bali2005", "durr2008", "borsanyi2015", "borsanyi2015-volume", "schuh2019-geometry", "korobov2017-hd", "rau2020-figure-replay", "korobov2017-h2", "mass-constraint-replay"].includes(id) ? "computational-analysis" : ["liontrap2019-reanalysis", "liontrap2019-double-dip", "liontrap2019-oxygen", "rau2020-local-fit", "rau2020-joint-fit", "kessler2017-ill", "rau2020-capture-recalibration", "fink2021-state-fit", "codata2022-mass-inputs", "codata2022-lattice"].includes(id) ? "experimental-reanalysis" : "primary-experiment", "A computational lattice result became an experiment");
     assert.equal(s.doi, doi);
     assert.equal(s.readExtent, extent, "Author report and published PDF are distinct reading extents");
   }
@@ -1676,7 +4230,8 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   }
   for (const c of claims.values()) if (c.id.startsWith("C-phys-") || c.id.startsWith("M-phys-")) {
     const check = reproductionClaims.get(c.id);
-    assert.deepEqual(c.checkIds, check ? [check] : [], "Physical reproduction changed its verified scope");
+    const deuteronCheck = [...DEUTERON_CHECKS, ...MASS_CONSTRAINT_CHECKS].find(([, id]) => id === c.id)?.[0];
+    assert.deepEqual(c.checkIds, check ? [check] : deuteronCheck ? [deuteronCheck] : [], "Physical reproduction changed its verified scope");
     if (c.id === "C-phys-l0-bridge") continue;
     const datasetId = check ? `${c.contextIds[0]}-data` : null;
     if (check) for (const sourceId of [datasetId, "bell-data-verifier"]) {
@@ -1717,7 +4272,41 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   "ucn2022-segment-response",
   "ucn2017-2018-lifetime",
   "ucn2020-2022-lifetime",
-  "ucntau-global-lifetime"
+  "ucntau-global-lifetime",
+  "borsanyi-kaon-volume",
+  "borsanyi-isospin-spectrum",
+  "borsanyi-qcd-qed-components",
+  "borsanyi-calibrated-ratio",
+  "kessler-combined-angle",
+  "kessler-capture-wavelength",
+  "kessler-binding-energy",
+  "kessler-neutron-mass",
+  "kessler-recalibrated-wavelength",
+  "natarajan-voltage-control",
+  "natarajan-hydrogen-masses",
+  "difilippo-hydrogen-masses",
+  "difilippo-capture-input",
+  "liontrap2017-proton",
+  "liontrap2019-proton",
+  "liontrap-correction-budget",
+  "liontrap-double-dip",
+  "liontrap-oxygen",
+  "liontrap-carbon-control",
+  "schuh-ics-comparison",
+  "rau-hd-closure",
+  "rau-local-adjustment",
+  "rau-joint-adjustment",
+  "ill2017-spacing",
+  "fink-proton-referenced-mass",
+  "rau-grouped-replay",
+  "rau-printed-arithmetic",
+  "fink2021-state-branches",
+  "fink2021-drive-extrapolation",
+  "fink2021-deuteron-ratio",
+  "fink2021-proton-mass",
+  "codata2022-frequency-inputs",
+  "codata2022-ill-input",
+  "mass-constraint-arithmetic"
 ]);
   for (const [id, sourceId, claimId, methodId, result, assumptions] of [
     ["slac-scaling", "breidenbach1969", "C-phys-slac-scaling", "M-phys-slac-scaling", "conditional-support", [
@@ -1882,6 +4471,104 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
     assert.equal(study.preparation, expected.preparation, "Neutron study mixed detector, timing or cleaning preparations");
     for (const limit of expected.limitations) assert.ok(study.limitations.includes(limit), "Neutron study lost its reviewed scope");
   }
+
+  assert.equal(sources.get("borsanyi2015").year, 2015);
+  assert.equal(sources.get("borsanyi2015").url, "https://arxiv.org/abs/1406.4088v2", "Mass-splitting evidence lost its reviewed author version");
+  for (const expected of isospinClaims) {
+    const claim = claims.get(expected.id);
+    assert.equal(claim.statement, expected.statement, "Isospin quantity, units, sign or input status changed");
+    for (const index of expected.limits) assert.ok(claim.limitations.includes(isospinLimits[index]), "Isospin evidence lost its calibration, convention or computational boundary");
+  }
+  for (const expected of isospinStudies) {
+    const study = studies.get(expected.id);
+    assert.equal(study.system, expected.system);
+    assert.equal(study.preparation, expected.preparation, "Isospin production ensemble and volume diagnostic were mixed");
+  }
+  for (const expected of isospinComparisons) {
+    const comparison = comparisons.get(expected.id);
+    const method = isospinClaims.find((c) => c.id === "M-phys-" + expected.id);
+    assert.equal(comparison.result, expected.result, "Conditional mass inference became an independent experiment or unique decomposition");
+    assert.deepEqual(comparison.sourceIds, ["borsanyi2015"]);
+    assert.deepEqual(comparison.claimIds, ["C-phys-" + expected.id]);
+    assert.deepEqual(comparison.assumptions, method.limits.map((index) => isospinLimits[index]));
+  }
+
+  for (const expected of captureSources) {
+    const source = sources.get(expected.id);
+    for (const key of ["doi", "url", "year"]) assert.equal(source?.[key], expected[key], "Capture evidence changed publication or version");
+    assert.equal(source.review.extent, expected.extent, "Selected adjustment passages became a complete independent experiment");
+  }
+  for (const expected of captureClaims) {
+    const claim = claims.get(expected.id);
+    assert.equal(claim.statement, expected.statement, "Capture observable, calibration, units or mass input changed");
+    for (const index of expected.limits) assert.ok(claim.limitations.includes(captureLimits[index]), "Capture inference lost its calibration, recoil or shared-input boundary");
+    for (const id of expected.sourceIds) assert.ok(claim.citations.some((c) => c.sourceId === id), "Capture interpretation lost its primary calibration or adjustment source");
+  }
+  for (const expected of captureStudies) {
+    const study = studies.get(expected.id);
+    assert.equal(study.system, expected.system);
+    assert.equal(study.preparation, expected.preparation, "Capture campaigns, configurations or calibration sets were pooled");
+  }
+  for (const expected of captureComparisons) {
+    const comparison = comparisons.get(expected.id);
+    const method = captureClaims.find((c) => c.id === "M-phys-" + expected.id);
+    assert.equal(comparison.result, expected.result, "Calibrated capture inference became independent replication");
+    assert.deepEqual(comparison.sourceIds, expected.sourceIds);
+    assert.deepEqual(comparison.claimIds, ["C-phys-" + expected.id]);
+    assert.deepEqual(comparison.assumptions, method.limits.map((index) => captureLimits[index]));
+  }
+
+  for (const expected of atomicSources) {
+    const source = sources.get(expected.id);
+    for (const key of ["doi", "url", "year"]) assert.equal(source?.[key], expected[key], "Atomic mass evidence changed publication");
+    assert.equal(source.review.extent, "full-primary-article");
+  }
+  for (const expected of atomicClaims) {
+    const claim = claims.get(expected.id);
+    assert.equal(claim.statement, expected.statement, "Atomic mass quantity, charge convention or unit changed");
+    for (const index of expected.limits) assert.ok(claim.limitations.includes(atomicLimits[index]), "Atomic mass inference lost a charge, correction or covariance boundary");
+    for (const id of expected.sourceIds) assert.ok(claim.citations.some((c) => c.sourceId === id), "Mass interpretation lost its primary input");
+  }
+  for (const expected of atomicStudies) {
+    const study = studies.get(expected.id);
+    assert.equal(study.system, expected.system);
+    assert.equal(study.preparation, expected.preparation, "Atomic mass control and production preparations were pooled");
+  }
+  for (const expected of atomicComparisons) {
+    const comparison = comparisons.get(expected.id);
+    const method = atomicClaims.find((c) => c.id === "M-phys-" + expected.id);
+    assert.equal(comparison.result, expected.result, "Mass-input tracing became independent experimental validation");
+    assert.deepEqual(comparison.sourceIds, expected.sourceIds);
+    assert.deepEqual(comparison.claimIds, ["C-phys-" + expected.id]);
+    assert.deepEqual(comparison.assumptions, method.limits.map((index) => atomicLimits[index]));
+  }
+
+  for (const expected of liontrapSources) {
+    const source = sources.get(expected.id);
+    for (const key of ["doi", "url", "year"]) assert.equal(source?.[key], expected[key], "LIONTRAP evidence changed publication");
+    assert.equal(source.review.extent, "full-primary-article");
+  }
+  for (const expected of liontrapClaims) {
+    const claim = claims.get(expected.id);
+    assert.equal(claim.statement, expected.statement, "LIONTRAP quantity, correction convention or unit changed");
+    for (const index of expected.limits) assert.ok(claim.limitations.includes(liontrapLimits[index]), "LIONTRAP inference lost a correction, covariance or shared-data boundary");
+    for (const id of expected.sourceIds) assert.ok(claim.citations.some((c) => c.sourceId === id), "LIONTRAP interpretation lost a primary input");
+  }
+  for (const expected of liontrapStudies) {
+    const study = studies.get(expected.id);
+    for (const key of ["system", "preparation", "studyType"]) assert.equal(study[key], expected[key], "LIONTRAP acquisition, reanalysis or geometry scope changed");
+  }
+  for (const expected of liontrapComparisons) {
+    const comparison = comparisons.get(expected.id);
+    const method = liontrapClaims.find((c) => c.id === "M-phys-" + expected.id);
+    assert.equal(comparison.result, expected.result, "Conditional LIONTRAP comparison became independent validation");
+    assert.deepEqual(comparison.sourceIds, expected.sourceIds);
+    assert.deepEqual(comparison.claimIds, ["C-phys-" + expected.id]);
+    assert.deepEqual(comparison.assumptions, method.limits.map((index) => liontrapLimits[index]));
+  }
+
+  validateDeuteronContracts({ sources, claims, studies, comparisons });
+  validateMassConstraintContracts({ sources, claims, studies, comparisons });
 
   const bridge = claims.get("C-phys-l0-bridge");
   assert.equal(bridge?.status, "unresolved", "Carrier promotion became a derivation of quantum field theory");

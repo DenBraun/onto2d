@@ -6,6 +6,201 @@ const data = await loadCanonicalSource();
 const claim = (d, id) => d.graph.claims.find((c) => c.id === id);
 const entity = (d, id) => d.graph.entities.find((e) => e.id === id);
 
+test("LIONTRAP reanalysis preserves shared acquisition and distinct controls", () => {
+  rejects([
+    ["reanalysis becomes a new primary experiment", (d) => { d.physics.studies.find((s) => s.id === "liontrap2019-reanalysis").studyType = "primary-experiment"; }],
+    ["original acquisition disappears from the revised result", (d) => { claim(d, "C-phys-liontrap2019-proton").contextIds = ["liontrap2019-reanalysis"]; }],
+    ["double-dip agreement becomes independent replication", (d) => { dropPhysicsLimit(d, "C-phys-liontrap-double-dip", "same cycles"); }],
+    ["carbon control borrows proton production preparation", (d) => { d.physics.studies.find((s) => s.id === "liontrap2019-carbon-control").preparation = d.physics.studies.find((s) => s.id === "liontrap2017-pna").preparation; }],
+    ["original and revised mass values become independently averageable", (d) => { dropPhysicsLimit(d, "M-phys-liontrap2019-proton", "averaged as independent"); }]
+  ]);
+});
+
+test("LIONTRAP mass conversion preserves charge and upstream inputs", () => {
+  rejects([
+    ["sixfold nuclear charge is omitted", (d) => { const c = claim(d, "D-phys-liontrap-carbon-reference"); c.statement = c.statement.replace("R*m_C/6", "R*m_C"); }],
+    ["oxygen loses its proton-mass dependency", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:liontrap2019-proton-liontrap-oxygen"); }],
+    ["oxygen independently confirms its own input", (d) => { d.physics.comparisons.find((c) => c.id === "liontrap-oxygen").result = "conditional-support"; }],
+    ["carbon reference loses its uncertainty discrepancy", (d) => { dropPhysicsLimit(d, "D-phys-liontrap-carbon-reference", "0.00667 ppt"); }],
+    ["electron-proton covariance assumption becomes proved independence", (d) => { dropPhysicsLimit(d, "C-phys-liontrap2019-proton", "assumes zero covariance"); }]
+  ]);
+});
+
+test("LIONTRAP corrections retain thermal motion and unresolved conventions", () => {
+  rejects([
+    ["zero driven excitation removes thermal corrections", (d) => { dropPhysicsLimit(d, "D-phys-penning-pna-fit", "Thermal axial"); }],
+    ["pair-specific correction becomes a reproducible global sum", (d) => { d.physics.comparisons.find((c) => c.id === "liontrap-correction-budget").result = "conditional-support"; }],
+    ["table sign conflict is concealed", (d) => { dropPhysicsLimit(d, "C-phys-liontrap-correction-budget", "printed sign convention"); }],
+    ["dimensionless expression becomes a frequency shift", (d) => { dropPhysicsLimit(d, "D-phys-penning-image-charge", "dimensionless right side"); }],
+    ["proposal becomes realized simultaneous readout", (d) => { dropPhysicsLimit(d, "M-phys-liontrap2019-reanalysis-context", "were not used"); }],
+    ["later tuning becomes the mass-campaign preparation", (d) => { dropPhysicsLimit(d, "C-phys-liontrap2019-proton", "improved Table VI"); }]
+  ]);
+});
+
+test("image-charge extraction retains observable and correlated errors", () => {
+  rejects([
+    ["total magnetron difference becomes image charge alone", (d) => { const c = claim(d, "C-phys-schuh-image-charge"); c.statement = c.statement.replace("2.291(61)(111)", "393.258(61)(77)"); }],
+    ["tilt correction errors become independent quadrature terms", (d) => { dropPhysicsLimit(d, "M-phys-schuh-image-charge", "add to 110"); }],
+    ["variance inflation disappears", (d) => { dropPhysicsLimit(d, "C-phys-schuh-magnetron-difference", "sqrt(2)"); }],
+    ["magnetron ratio replaces axial calibration", (d) => { dropPhysicsLimit(d, "D-phys-penning-magnetron-control", "using nu_z"); }],
+    ["calibration drops its earlier proton input", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:liontrap2017-proton-schuh-image-charge"); }],
+    ["table conversion becomes exact without resolving the mismatch", (d) => { dropPhysicsLimit(d, "C-phys-schuh-ics-comparison", "458.2"); }]
+  ]);
+});
+
+test("electrode geometry retains numerical scope and shared calibration", () => {
+  assert.equal(data.readiness.nodeRoles.find((r) => r.nodeId === "phys:schuh2019-geometry-context").role, "model-context");
+  rejects([
+    ["electrostatic model becomes a physical experiment", (d) => { d.physics.studies.find((s) => s.id === "schuh2019-geometry").studyType = "primary-experiment"; }],
+    ["simplified geometry substitutes for manufactured electrodes", (d) => { dropPhysicsLimit(d, "C-phys-schuh-geometry-response", "same simplified geometry"); }],
+    ["numerical agreement removes manufacturing uncertainty", (d) => { dropPhysicsLimit(d, "D-phys-penning-image-charge-geometry", "10 micrometers"); }],
+    ["image-field convention loses the sign distinction", (d) => { dropPhysicsLimit(d, "D-phys-penning-image-charge", "footnote 2"); }],
+    ["image-charge result borrows an unrelated data replay", (d) => { claim(d, "C-phys-schuh-ics-comparison").checkIds = ["bell-event-table-2015"]; }],
+    ["geometry comparison becomes physical generation", (d) => { d.graph.relations.find((r) => r.id === "physics:schuh-geometry-response-schuh-ics-comparison").kind = "functional-support"; }],
+    ["shared mass input loses its primary publication", (d) => { const c = claim(d, "M-phys-schuh-image-charge"); c.citations = c.citations.filter((r) => r.sourceId !== "heisse2017"); }]
+  ]);
+});
+
+test("Penning controls preserve voltage, charge state and classical readout", () => {
+  rejects([
+    ["common-voltage experiment borrows unequal-voltage preparation", (d) => { d.physics.studies.find((s) => s.id === "natarajan1993-sof").preparation = d.physics.studies.find((s) => s.id === "natarajan1993-pnp").preparation; }],
+    ["control comparison loses the unequal-voltage arm", (d) => { claim(d, "C-phys-natarajan-voltage-control").contextIds = ["natarajan1993-sof"]; }],
+    ["double charge is interpreted as twice the ionic mass", (d) => { dropPhysicsLimit(d, "C-phys-natarajan-frequency-ratios", "Ar+/Ar++ entry requires the charge factor"); }],
+    ["classical amplitude is treated as a quantum state", (d) => { dropPhysicsLimit(d, "D-phys-penning-sof-protocol", "classical cyclotron amplitude"); }],
+    ["trap mode is used as the free cyclotron frequency", (d) => { dropPhysicsLimit(d, "D-phys-penning-cyclotron-ratio", "trap cyclotron mode alone"); }]
+  ]);
+});
+
+test("atomic masses retain carbon reference and electronic corrections", () => {
+  rejects([
+    ["carbon ion becomes exactly twelve atomic mass units", (d) => { dropPhysicsLimit(d, "C-phys-difilippo-hydrogen-masses", "carbon ion differs"); }],
+    ["neutral atoms become bare nuclei", (d) => { dropPhysicsLimit(d, "C-phys-natarajan-hydrogen-masses", "not a bare proton"); }],
+    ["chemical mass correction is disconnected", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:ion-atom-mass-correction-difilippo-hydrogen-masses"); }],
+    ["nano atomic mass units are silently treated as atomic mass units", (d) => { dropPhysicsLimit(d, "C-phys-natarajan-hydrogen-masses", "1e-9 u"); }],
+    ["published isotope mass changes sign", (d) => { const c = claim(d, "C-phys-difilippo-hydrogen-masses"); c.statement = c.statement.replace("1.0078250316(5)", "-1.0078250316(5)"); }]
+  ]);
+});
+
+test("isotope difference retains covariance and publication dependence", () => {
+  rejects([
+    ["marginal errors become sufficient for a mass difference", (d) => { dropPhysicsLimit(d, "D-phys-atomic-mass-covariance", "Cov(D,H)"); }],
+    ["unprinted covariance becomes reproduced data", (d) => { dropPhysicsLimit(d, "M-phys-difilippo-capture-input", "missing mass-fit covariance"); }],
+    ["overlapping reports become independent replications", (d) => { dropPhysicsLimit(d, "M-phys-difilippo-hydrogen-masses", "same MIT measurement program"); }],
+    ["internal consistency excludes every systematic", (d) => { dropPhysicsLimit(d, "C-phys-difilippo-hydrogen-masses", "every possible common systematic"); }],
+    ["mass fit acquires unrelated numerical reproduction", (d) => { claim(d, "C-phys-difilippo-hydrogen-masses").checkIds = ["bell-null-tail-2015"]; }]
+  ]);
+});
+
+test("capture mass input remains connected without circular confirmation", () => {
+  rejects([
+    ["capture inference loses its reviewed mass-spectrometry input", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:difilippo-capture-input-kessler-neutron-mass"); }],
+    ["mass-input trace becomes an independent neutron experiment", (d) => { d.physics.comparisons.find((c) => c.id === "difilippo-capture-input").result = "conditional-support"; }],
+    ["older neutron value loses its binding-energy input", (d) => { dropPhysicsLimit(d, "C-phys-difilippo-capture-input", "Greene1986"); }],
+    ["capture inference loses its primary isotope citation", (d) => { const c = claim(d, "M-phys-kessler-neutron-mass"); c.citations = c.citations.filter((x) => x.sourceId !== "difilippo1994"); }],
+    ["input dependency becomes physical formation", (d) => { d.graph.relations.find((r) => r.id === "physics:difilippo-capture-input-kessler-neutron-mass").kind = "functional-support"; }]
+  ]);
+});
+
+test("capture campaigns preserve their angle groups and correlated calibrations", () => {
+  for (const id of ["kessler1995-context", "kessler1998-context"]) {
+    assert.equal(data.readiness.nodeRoles.find((r) => r.nodeId === "phys:" + id).role, "experimental-context");
+  }
+  rejects([
+    ["1995 data acquire the 1998 preparation", (d) => { d.physics.studies.find((s) => s.id === "kessler1995").preparation = d.physics.studies.find((s) => s.id === "kessler1998").preparation; }],
+    ["campaign settings become independent experiments", (d) => { dropPhysicsLimit(d, "C-phys-kessler1995-angle", "not five independent"); }],
+    ["pooled angle omits the first campaign", (d) => { claim(d, "C-phys-kessler-combined-angle").contextIds = ["kessler1998"]; }],
+    ["combined result drops calibration covariance", (d) => { dropPhysicsLimit(d, "M-phys-kessler-combined-angle", "Within each campaign"); }],
+    ["table year inconsistency is concealed", (d) => { dropPhysicsLimit(d, "C-phys-kessler1998-angle", "final March 1995 result"); }]
+  ]);
+});
+
+test("capture photon and binding energy cannot lose recoil, units or crystal inputs", () => {
+  rejects([
+    ["wavelength loses lattice calibration", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:ill25-calibration-kessler-capture-wavelength"); }],
+    ["pressure correction vanishes", (d) => { dropPhysicsLimit(d, "C-phys-kessler-capture-wavelength", "factor 1-epsilon*p"); }],
+    ["binding energy loses nuclear recoil", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:capture-recoil-energy-kessler-binding-energy"); }],
+    ["atomic or molecular mass replaces nuclear recoil mass", (d) => { dropPhysicsLimit(d, "C-phys-kessler-binding-energy", "deuteron nuclear mass"); }],
+    ["published mass equivalent becomes energy without conversion", (d) => { const c = claim(d, "C-phys-kessler-binding-energy"); c.statement = c.statement.replace("2.38817007(42)e-3 u", "2.38817007(42)e-3 eV"); }],
+    ["modern constants silently replace the reported inputs", (d) => { dropPhysicsLimit(d, "D-phys-binding-unit-conversion", "modern SI constants"); }]
+  ]);
+});
+
+test("neutron mass retains upstream mass input and inference limits", () => {
+  rejects([
+    ["neutron mass loses external isotope masses", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:hydrogen-isotope-mass-input-kessler-neutron-mass"); }],
+    ["relative atomic mass acquires kilograms", (d) => { const c = claim(d, "D-phys-hydrogen-isotope-mass-input"); c.statement = c.statement.replace("dimensionless", "kilogram-valued"); }],
+    ["unreviewed mass spectrometry becomes verified", (d) => { dropPhysicsLimit(d, "C-phys-kessler-neutron-mass", "DiFilippo"); }],
+    ["capture becomes direct neutral-particle weighing", (d) => { dropPhysicsLimit(d, "C-phys-kessler-neutron-mass", "direct Penning-trap"); }],
+    ["mass inference proves stability or formation", (d) => { dropPhysicsLimit(d, "C-phys-kessler-neutron-mass", "free-neutron lifetime"); }],
+    ["Bell table reproduction certifies capture data", (d) => { claim(d, "C-phys-kessler-neutron-mass").checkIds = ["bell-event-table-2015"]; }]
+  ]);
+});
+
+test("capture recalibration preserves reused data and selected-source boundaries", () => {
+  rejects([
+    ["recalculation becomes independent replication", (d) => { d.physics.comparisons.find((c) => c.id === "kessler-recalibrated-wavelength").result = "conditional-support"; }],
+    ["selected adjustment becomes a fully read primary experiment", (d) => { d.graph.sources.find((s) => s.id === "mohr2025-neutron").review.extent = "full-primary-article"; }],
+    ["recalibration loses its author source", (d) => { const c = claim(d, "C-phys-kessler-recalibrated-wavelength"); c.citations = c.citations.filter((r) => r.sourceId !== "dewey2006-capture"); }],
+    ["adjusted result borrows original crystal calibration", (d) => { d.graph.relations.find((r) => r.id === "physics:ill25-adjusted-calibration-kessler-recalibrated-wavelength").source = "phys:ill25-calibration"; }],
+    ["dimensionless input loses printed unit conflict", (d) => { dropPhysicsLimit(d, "D-phys-ill25-adjusted-calibration", "Table XXV D14"); }],
+    ["calibration edge becomes physical generation", (d) => { d.graph.relations.find((r) => r.id === "physics:ill25-adjusted-calibration-kessler-recalibrated-wavelength").kind = "functional-support"; }]
+  ]);
+});
+
+function dropPhysicsLimit(d, id, fragment) {
+  const limits = claim(d, id).limitations;
+  const index = limits.findIndex((text) => text.includes(fragment));
+  assert.ok(index >= 0, `Missing mutation target: ${fragment}`);
+  limits.splice(index, 1);
+}
+
+test("isospin production and volume diagnostics retain their computational populations", () => {
+  for (const id of ["borsanyi2015-context", "borsanyi-volume-context"]) {
+    assert.equal(data.readiness.nodeRoles.find((r) => r.nodeId === "phys:" + id).role, "model-context");
+  }
+  rejects([
+    ["simulation becomes a detector experiment", (d) => { d.physics.studies.find((s) => s.id === "borsanyi2015").studyType = "primary-experiment"; }],
+    ["volume subset becomes the production population", (d) => { d.physics.studies.find((s) => s.id === "borsanyi2015").preparation = d.physics.studies.find((s) => s.id === "borsanyi2015-volume").preparation; }],
+    ["charged ensemble coverage gains a fourth spacing", (d) => { dropPhysicsLimit(d, "M-phys-borsanyi2015-context", "beta=3.4 is represented only"); }],
+    ["bare coupling census loses the table discrepancy", (d) => { dropPhysicsLimit(d, "C-phys-borsanyi-lattice-splittings", "additional 0.71 row"); }],
+    ["correlated gauge samples become independent sources", (d) => { dropPhysicsLimit(d, "M-phys-borsanyi2015-context", "50 trajectories"); }]
+  ]);
+});
+
+test("isospin predictions preserve calibration inputs and experimental reuse", () => {
+  rejects([
+    ["input masses become predicted masses", (d) => { dropPhysicsLimit(d, "C-phys-borsanyi-isospin-spectrum", "primary physical-point inputs"); }],
+    ["kaon squared-mass difference becomes a pure QCD parameter", (d) => { dropPhysicsLimit(d, "D-phys-qcd-qed-calibration", "not a pure strong contribution"); }],
+    ["spectrum omits mass and charge calibration", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:qcd-qed-calibration-borsanyi-isospin-spectrum"); }],
+    ["calibrated ratio becomes an independent prediction", (d) => { dropPhysicsLimit(d, "C-phys-borsanyi-calibrated-ratio", "additionally uses the experimental"); }],
+    ["ratio independently tests its experimental input", (d) => { d.physics.comparisons.find((c) => c.id === "borsanyi-calibrated-ratio").result = "conditional-support"; }],
+    ["ratio loses its additional experimental input", (d) => { d.graph.relations = d.graph.relations.filter((r) => r.id !== "physics:extra-mass-ratio-calibration"); }],
+    ["fit variants become independent replications", (d) => { dropPhysicsLimit(d, "M-phys-borsanyi-isospin-spectrum", "About 500 fit variants"); }]
+  ]);
+});
+
+test("mass components retain units, sign, correlation and separation convention", () => {
+  rejects([
+    ["neutron-proton mass ordering is reversed", (d) => { const c = claim(d, "C-phys-borsanyi-isospin-spectrum"); c.statement = c.statement.replace("n-p 1.51", "n-p -1.51"); }],
+    ["kaon squared-mass contribution becomes a mass", (d) => { const c = claim(d, "C-phys-borsanyi-qcd-qed-components"); c.statement = c.statement.replace("MeV^2", "MeV"); }],
+    ["Sigma electromagnetic zero becomes a measured null", (d) => { dropPhysicsLimit(d, "D-phys-qcd-qed-separation", "zero is a definition"); }],
+    ["rounded marginal components become independent exact sums", (d) => { dropPhysicsLimit(d, "C-phys-borsanyi-qcd-qed-components", "separately rounded and correlated"); }],
+    ["auxiliary assumed relation independently verifies itself", (d) => { dropPhysicsLimit(d, "M-phys-borsanyi-isospin-spectrum", "auxiliary cross-check assumes"); }],
+    ["published fits borrow Bell reproduction status", (d) => { claim(d, "C-phys-borsanyi-isospin-spectrum").checkIds = ["bell-null-tail-2015"]; }]
+  ]);
+});
+
+test("QED volume corrections cannot become universal physical generation rules", () => {
+  rejects([
+    ["enhanced-coupling volume response becomes a physical-point result", (d) => { claim(d, "C-phys-borsanyi-kaon-volume").contextIds = ["borsanyi2015"]; }],
+    ["neutral leading null erases all finite-volume effects", (d) => { dropPhysicsLimit(d, "D-phys-qedl-volume-correction", "absence of all finite-volume effects"); }],
+    ["QED cutoff extrapolation becomes an exact zero-cutoff construction", (d) => { dropPhysicsLimit(d, "M-phys-borsanyi-kaon-volume", "QED triviality"); }],
+    ["mass calculation proves weak-decay stability", (d) => { dropPhysicsLimit(d, "C-phys-borsanyi-isospin-spectrum", "Weak decays"); }],
+    ["diagnostic relation becomes measured physical causation", (d) => { d.graph.relations.find((r) => r.id === "physics:borsanyi-kaon-volume-borsanyi-isospin-spectrum").kind = "functional-support"; }],
+    ["unreviewed draft replaces the reviewed article", (d) => { d.graph.sources.find((s) => s.id === "borsanyi2015").url = "https://arxiv.org/abs/1406.4088v1"; }]
+  ]);
+});
+
 test("neutron production and diagnostic preparations cannot be merged", () => {
   for (const id of ["ucn2017-context", "ucn2018-context", "ucn-al-control-context", "ucn2018-uncleaned-context", "ucn2020-context", "ucn2021-context", "ucn2022-context", "ucn2022-uncleaned-context"]) {
     assert.equal(data.readiness.nodeRoles.find((r) => r.nodeId === "phys:" + id).role, "experimental-context");

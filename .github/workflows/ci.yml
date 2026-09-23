@@ -8,6 +8,11 @@ on:
 permissions:
   contents: read
 
+env:
+  # JSON files and Node/Python pipes use UTF-8 on every runner.
+  PYTHONUTF8: '1'
+  PYTHONIOENCODING: utf-8
+
 jobs:
   ollivier-reference:
     runs-on: ubuntu-latest

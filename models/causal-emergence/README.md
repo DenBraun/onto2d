@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.09.14.31`: 826 records, 356 connections,
-749 claims and 294 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.09.23.7`: 938 records, 566 connections,
+908 claims and 314 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -15,7 +15,14 @@ responses and visual pathways retain their own preparations and boundaries.
 Particle evidence separates measured electron spectra, jet shapes and muon
 lifetimes from their conditional theoretical interpretations. Neutron survival
 measurements distinguish production years, loss diagnostics and combined
-lifetime estimates with shared-data and systematic-error limits.
+lifetime estimates with shared-data and systematic-error limits. Four-flavor
+QCD+QED mass splittings retain calibration inputs, volume corrections and
+convention-dependent components.
+Capture spectroscopy keeps its two campaigns, crystal calibration, recoil and
+external atomic-mass input explicit; recalibration reuses the original data.
+LIONTRAP distinguishes original acquisition, experimental reanalysis,
+shared-data controls and electrode-geometry predictions with explicit
+correction and covariance limits.
 The Level-0 mathematical findings are described in the
 [foundation analysis](reconstruction/README.md).
 

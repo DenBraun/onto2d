@@ -17,14 +17,14 @@ import { buildCanonicalRelease } from "../../models/causal-emergence/canonical/b
 test("the root facade loads the exact bundled Causal Emergence Model Pack", async () => {
   const onto = await Onto2D.create();
   assert.equal(onto.model.name, "Causal Emergence — Canonical Reconstruction");
-  assert.equal(onto.model.version, "2026.09.14.31");
+  assert.equal(onto.model.version, "2026.09.23.7");
   assert.equal(onto.modelResolution.requested, "causal-emergence@stable");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.09.14.31");
-  assert.equal(onto.model.nodes().length, 826);
-  assert.equal(onto.model.edges().length, 356);
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.09.23.7");
+  assert.equal(onto.model.nodes().length, 938);
+  assert.equal(onto.model.edges().length, 566);
   assert.equal(onto.model.get("l0:crt-node").name, "CRT carrier class — no admitted instance");
   assert.equal(onto.model.get("R-object").parents().length, 5);
-  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 176);
+  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 386);
   assert.ok(onto.model.query({ level: 0, typeRole: "construction-rule" }).length > 0);
   assert.ok(onto.model.paths({ from: "l0:oscillatory-mode", to: "l0:crt-node" }).length > 0);
   assert.deepEqual(await buildCanonicalRelease(), bundledCausalEmergenceModelPack);
@@ -60,7 +60,7 @@ test("the historical release is an exact reproduction of preserved source bytes"
 test("the Node loader accepts the current release with an explicit 32 MiB file budget", async () => {
   const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
   const loaded = await loadModelPackDirectory(
-    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.09.14.31"),
+    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.09.23.7"),
     { maxFileBytes: 32 * 1024 * 1024 }
   );
   assert.equal(loaded.manifest.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);

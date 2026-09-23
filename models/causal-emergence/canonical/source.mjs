@@ -14,6 +14,8 @@ import { validateOpticalReview } from "./optics.mjs";
 import { validateNeuralReview } from "./neural.mjs";
 import { validateVisualReview } from "./visual.mjs";
 import { BELL_CHECKS, validatePhysicsDefinitions } from "./physics.mjs";
+import { DEUTERON_CHECKS } from "./deuteron.mjs";
+import { MASS_CONSTRAINT_CHECKS } from "./mass-constraints.mjs";
 import { verifyOpticalWitnesses } from "./optical-witnesses.mjs";
 import { loadGeometricModelData, verifyGeometricModelData } from "./geometric-model-data.mjs";
 
@@ -24,7 +26,7 @@ const validate = new Ajv({ allErrors: true, strict: true }).compile(schema);
 const proposalText = await readFile(path.join(ROOT, "docs/ONTO2D_FORMAL_CORE.md"), "utf8");
 const CHECK_IDS = new Set([
   "operator-sign", "stationarity-not-minimum", "simple-cycle-minimum",
-  "balance-not-localization", "objecthood-negative", ...BELL_CHECKS.keys()
+  "balance-not-localization", "objecthood-negative", ...BELL_CHECKS.keys(), ...DEUTERON_CHECKS.keys(), ...MASS_CONSTRAINT_CHECKS.keys()
 ]);
 
 function index(records, subject) {
@@ -58,6 +60,8 @@ export function validateCanonicalSource(data) {
     for (const check of claim.checkIds) {
       assert.ok(CHECK_IDS.has(check), `Unknown check ${check}`);
       if (BELL_CHECKS.has(check)) assert.equal(BELL_CHECKS.get(check), claim.id, "Bell arithmetic attached to an unverified claim");
+      if (DEUTERON_CHECKS.has(check)) assert.equal(DEUTERON_CHECKS.get(check), claim.id, "Grouped or rounded mass arithmetic attached to an unverified claim");
+      if (MASS_CONSTRAINT_CHECKS.has(check)) assert.equal(MASS_CONSTRAINT_CHECKS.get(check), claim.id, "Conditional mass arithmetic attached to an unverified claim");
     }
     if (claim.status === "analytically-checked") {
       assert.ok(claim.checkIds.some((id) => id !== "objecthood-negative"), `Analytical claim lacks a witness: ${claim.id}`);
@@ -125,6 +129,10 @@ export async function loadCanonicalSource() {
 }
 
 export async function verifyCanonicalEvidence() {
+  const massConstraints = spawnSync("python3", ["models/causal-emergence/canonical/verify-mass-constraints.py"], { cwd: ROOT, encoding: "utf8", maxBuffer: 1024 * 1024 });
+  assert.equal(massConstraints.status, 0, `Conditional mass arithmetic failed: ${massConstraints.error ?? massConstraints.stderr}`);
+  const deuteron = spawnSync("python3", ["models/causal-emergence/canonical/verify-deuteron-data.py"], { cwd: ROOT, encoding: "utf8", maxBuffer: 1024 * 1024 });
+  assert.equal(deuteron.status, 0, `Deuteron figure/arithmetic checks failed: ${deuteron.error ?? deuteron.stderr}`);
   const bell = spawnSync("python3", ["models/causal-emergence/canonical/verify-bell-data.py"], { cwd: ROOT, encoding: "utf8", maxBuffer: 1024 * 1024 });
   assert.equal(bell.status, 0, `Bell event-table checks failed: ${bell.error ?? bell.stderr}`);
   const neurogenesis = spawnSync("python3", ["models/causal-emergence/canonical/verify-neurogenesis-data.py"], { cwd: ROOT, encoding: "utf8", maxBuffer: 1024 * 1024 });
@@ -139,6 +147,8 @@ export async function verifyCanonicalEvidence() {
   assert.equal(artifact.conclusion.empiricalValidationClaimed, false);
   assert.equal(artifact.conclusion.declaredCaseExecutionComplete, true);
   return {
+    massConstraintData: JSON.parse(massConstraints.stdout),
+    deuteronData: JSON.parse(deuteron.stdout),
     bellData: JSON.parse(bell.stdout),
     geometricModelData: verifyGeometricModelData(await loadGeometricModelData()),
     opticalWitnesses: verifyOpticalWitnesses(),
@@ -147,6 +157,6 @@ export async function verifyCanonicalEvidence() {
     neurogenesisData: JSON.parse(neurogenesis.stdout),
     mathematicalWitnesses: witnesses.mathematicalWitnesses,
     objecthoodConclusion: artifact.conclusion,
-    limit: "Replayed finite mathematical, vocabulary and optical witnesses, deposited Bell event-table filtering and conditional null-tail arithmetic, selected geometric-model readouts, published workbook cells and the bound case disposition. This build does not reproduce raw Bell acquisition, stopping decisions or RNG calibration, network inference or training, the nonlinear solver, sequencing analyses or biological experiments, or independently validate scientific prose."
+    limit: "Replayed finite mathematical, vocabulary and optical witnesses, deposited Bell event-table filtering and conditional null-tail arithmetic, selected geometric-model readouts, published workbook cells, grouped deuteron figure fits, rounded-input mass/recoil arithmetic, conditional molecular-state branch arithmetic and the bound case disposition. This build does not reproduce raw Bell acquisition, stopping decisions or RNG calibration, network inference or training, the nonlinear solver, sequencing analyses or biological experiments, original mass acquisition, state-assignment likelihoods, correlated mass adjustments, molecular theory, crystal calibration or the full CODATA adjustment, or independently validate scientific prose."
   };
 }

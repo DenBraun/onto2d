@@ -27,7 +27,7 @@ graph. The canonical data currently covers 52 of the 249 source cards. The
 [remaining 197 tasks](../references/canonical/pending-review.json) identify the
 source documents to review.
 
-The current graph contains 826 records, 356 connections, 749 claims and 294 sources.
+The current graph contains 938 records, 566 connections, 908 claims and 314 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -35,8 +35,17 @@ spectrum in their respective theories. Mass inputs, predicted values, omitted
 resonance points and uncertainty meanings remain explicit. UCN lifetime records
 separate five production years, three diagnostic preparations and shared-data
 combinations. Storage losses and published systematic corrections are explicit.
-Source conflicts,
-unreproduced analyses and untested stability or formation claims remain open.
+Four-flavor QCD+QED adds calibrated isospin mass differences, a finite-volume
+diagnostic and convention-dependent components. The experiment-constrained
+nucleon component ratio has a separate input boundary. Capture spectroscopy
+separates two campaigns, crystal calibration, recoil, conversion constants and
+the adopted isotope mass difference. Recalibration reuses the original data.
+The MIT Penning-trap inputs separate charge-aware frequency comparisons,
+voltage controls, electronic corrections and correlated neutral-atom fits.
+LIONTRAP separates original acquisition from experimental reanalysis,
+proton-referenced oxygen, same-cycle controls and image-charge geometry.
+Source conflicts, unreproduced analyses and untested stability or formation
+claims remain open.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,
@@ -68,8 +77,52 @@ belong to the current claims.
    independent materials. Confinement cards 1.7 and 1.15 remain open for hadron
    spectroscopy, generality and their claimed causal dependencies; the existing
    static spectra and charge null do not close those claims.
-   Continue cards 1.10-1.11 with proton-neutron mass splitting, independent
-   beam/bottle lifetime measurements and proton stability. Reproduce the
+   Continue cards 1.10-1.11 with independent nucleon-mass measurements,
+   beam/bottle lifetime measurements and proton stability. The next admission
+   target is the [Super-Kamiokande two-body decay search](https://doi.org/10.1103/PhysRevD.102.112011):
+   distinguish channel-specific partial-lifetime bounds, candidate counts,
+   detector selection and nuclear modeling. Its official release contains
+   figure files; confidence-limit reproduction still needs the numerical
+   likelihood inputs. Keep overlapping exposure and newer decay channels
+   separate. For mass provenance,
+   the Rau 2020 deuteron/HD+ author report, Fink/Myers 2020 main accepted
+   article, Korobov 2017 molecular calculation and Kessler 2017 ILL calibration
+   now have scoped records. The graph separates direct ratios, adjusted masses,
+   shared proton references and reused capture acquisition. The grouped figure
+   replay covers 27 means; its diagonal errors do not reproduce the original
+   fit uncertainties. Recover the Fink 2020 supplement, the full covariance and
+   adjustment code, and the ILL final uncertainty-combination rule. Review the
+   H2+ binding calculations used by Fink 2020 before claiming that conversion
+   is independently reproduced. The Fink/Myers 2021 main article now has
+   separate simultaneous-acquisition, drive-control and state-assignment
+   records. Recover its supplement, raw phases, discrete assignment search,
+   level/polarizability inputs and full systematic covariance. Three conditional
+   branches and the direct-deuteron proton reference remain explicit.
+   Selected CODATA 2022 mass and lattice constraints are traced without
+   claiming the full adjustment is reproduced. Reconcile Table XXVII E13,
+   labelled ILL/W04, with the WS1 and ILL paths in Kessler 2017 Tables 4–5
+   and the CODATA 2018 uncertainty treatment. No adjustment error is established.
+   Continue independent hydrogen-isotope measurements and HD+ spectroscopic
+   constraints, keeping theoretical and measured inputs separate.
+   The LIONTRAP graph distinguishes the
+   [original proton measurement](https://doi.org/10.1103/PhysRevLett.119.033001),
+   [2019 reanalysis](https://doi.org/10.1103/PhysRevA.100.022518) and the
+   [image-charge study](https://doi.org/10.1103/PhysRevA.100.023411).
+   Recover their raw data and numerical models, reconstruct pair-specific
+   correction aggregation and resolve the recorded uncertainty, sign and
+   table-conversion issues. Shared calibration and measurement inputs remain
+   explicit; no independent reproduction of those analyses is established.
+   The Natarajan 1993 and DiFilippo 1994 primary
+   articles are reviewed for hydrogen-isotope mass inputs. Recover their raw
+   frequency records, electronic corrections and mass-fit covariance; resolve
+   shared acquisition between reports. The detailed follow-up and original
+   thesis remain unreviewed. The Kessler capture paper is reviewed, with
+   selected Dewey recalibration and CODATA neutron-input passages. Reproduce
+   its profiles, angle calibrations, lattice comparisons and mass-input
+   uncertainties; retain the disclosed table-label and unit discrepancies.
+   Reproduce the
+   QCD+QED mass-splitting fits, covariance and physical-point calibration;
+   resolve the author report's bare-coupling census discrepancy. Reproduce the
    admitted UCN survival fits and their correction/covariance budgets; resolve
    the published detector-uniformity correction inconsistency. Review nucleon
    form factors, magnetic moments and nuclear stability separately. The calibrated

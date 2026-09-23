@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 826 records, 356 connections, 749 claims and 294 sources.
+The current graph contains 938 records, 566 connections, 908 claims and 314 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -214,6 +214,178 @@ physical lifetimes, and the isospin-symmetric spectrum does not resolve the
 proton-neutron mass difference. Source cards 1.10 and 1.11 remain open for
 formation dynamics, form factors, magnetic moments, weak-decay and nuclear
 stability, and their claimed constituent minima.
+
+## Isospin-breaking mass splittings
+
+The [Borsanyi four-flavor calculation](https://arxiv.org/abs/1406.4088v2)
+includes dynamical QCD and QED with nondegenerate up, down, strange and charm
+quarks. Its 41 ensembles, the four-volume kaon diagnostic, physical-point
+calibration and extrapolated spectrum have distinct records. The volume study
+uses a subset of the production ensembles at enhanced electromagnetic coupling.
+
+Charged-pion, charged/neutral-kaon and neutral-D masses are inputs; the Omega
+mass sets the scale. The reported neutron-proton difference is
+1.51 +/- 0.16 (statistical) +/- 0.23 (systematic) MeV. The other light/charm
+splittings and correlated Coleman-Glashow combination retain their table values,
+units and error convention. The approximately 500 fit variants and 2000 bootstrap
+samples characterize a shared-data analysis, rather than independent experiments.
+
+Separate QCD and QED contributions require a convention. This paper sets the
+Sigma electromagnetic splitting to zero at its working precision, yielding
+nucleon components of 2.52 and -1.00 MeV with their respective uncertainties.
+The zero is a convention; rounded, correlated components need not sum exactly
+to the rounded total. The reported component ratio -2.49 additionally uses the
+experimental neutron-proton difference. Its dependence on that input is explicit.
+
+QED_L zero-mode removal and inverse-volume corrections are part of the model.
+The charged-ensemble table covers three of the four overall lattice spacings.
+It also supplies four nonzero bare electromagnetic couplings, making five with
+zero, while the main text says four including zero. That census discrepancy is
+unresolved. Gauge configurations, correlators, fit covariances and the adopted
+experimental masses have not been independently reproduced. This calculation
+supports neither a weak-decay lifetime nor a universal stable-constituent minimum.
+
+## Capture-based neutron mass
+
+The [Kessler measurement](https://doi.org/10.1016/S0375-9601(99)00078-X)
+separates the February 1995 and March 1998 GAMS4 campaigns. The five diffraction
+configuration groups share calibration within each campaign. Their combination
+therefore retains two campaign estimates and the final systematic contributions.
+The reported first-order angle is 0.083202194(14) degrees.
+
+Separate records identify the crystal lattice input, atmospheric compression,
+photon wavelength, nuclear recoil, unit conversions and adopted hydrogen-isotope
+mass difference. The 1999 analysis reports a photon wavelength of
+5.57671299(99)e-13 m and a binding energy of 2224566.14(41) eV. Its neutron mass,
+1.00866491637(82) u, also requires an external mass-spectrometry input; capture
+spectroscopy alone does not determine it. These are that analysis's values,
+not current recommended constants.
+
+The selected [Dewey author-report passages](https://arxiv.org/abs/nucl-ex/0507011v1)
+use an adjusted crystal spacing to recalculate the same capture data. The graph
+retains that shared-data dependence. Selected [CODATA neutron-input passages](https://physics.nist.gov/cuu/pdf/RevModPhys.97.025002.pdf)
+separate the dimensionless diffraction ratio from the adjusted crystal length.
+The CODATA table prints a conflicting meter unit, and Kessler's Table 2 prints
+an inconsistent year on the second campaign's summary row. Both discrepancies
+remain visible. Neither the whole CODATA adjustment nor the other nuclei in
+the Dewey paper are admitted through these selected readings.
+
+Raw profiles, calibration records, upstream mass measurements and their
+covariances remain unreproduced. No lifetime, proton-stability or universal
+constituent-minimum conclusion follows from these mass inferences.
+
+## Penning-trap mass inputs
+
+The [Natarajan nondoublet experiment](https://doi.org/10.1103/PhysRevLett.71.1998)
+separates common-voltage SOF measurements from the unequal-voltage PNP control.
+Both are classical single-ion protocols. Charge state, three-mode frequency
+reconstruction and magnetic drift remain explicit; the Ar+/Ar++ comparison is
+a ratio of mass to charge, not simply the two ionic masses. The six reported
+ratios retain their uncertainties and measurement scope.
+
+Neutral H and D masses require electron, ionization and chemical-energy
+corrections, with neutral carbon-12 defining 12 u. The [DiFilippo global fit](https://doi.org/10.1103/PhysRevLett.73.1481)
+reports H 1.0078250316(5) u and D 2.0141017779(5) u from twenty pairwise
+comparisons. Its covariance controls uncertainties in mass differences; the
+short article does not print that matrix or all input ratios. Kessler's adopted
+relative difference 1.00627674630(71) is therefore traced to this experiment,
+while its uncertainty remains unreproduced.
+
+The neutron entries in the mass papers already require external deuteron
+binding energies. They cannot independently confirm the capture-based neutron
+inference. The two MIT reports also do not establish independent acquisition
+or cross-publication covariance. Raw records, fit reproduction and those shared
+inputs remain open; no present-day constant or independent replication is
+claimed by this review.
+
+## LIONTRAP mass and geometry evidence
+
+The [original proton measurement](https://doi.org/10.1103/PhysRevLett.119.033001)
+and [2019 reanalysis](https://doi.org/10.1103/PhysRevA.100.022518) share their
+acquisition. The graph and Model Studio distinguish experimental reanalysis
+from new acquisition. The revised mass retains its carbon nuclear reference,
+sixfold charge factor, electronic energies and thermal corrections. Extrapolating
+deliberate excitation to zero does not remove thermal motion.
+
+The double-dip comparison uses the same measurement cycles. Neutral oxygen
+depends on the adopted proton mass; its third uncertainty component records
+that input. The carbon charge-state control has a distinct doubled-voltage
+preparation. These checks do not establish independent proton-mass replication.
+The printed carbon-reference uncertainty, correction-table sign and
+pair-specific correction aggregation remain unresolved. Their presence does
+not justify silently changing the published mass.
+
+The [image-charge study](https://doi.org/10.1103/PhysRevA.100.023411) separates a
+dedicated magnetron experiment from finite-element geometry calculations.
+Its inference retains shared mass and axial-calibration inputs, correlated
+tilt corrections, numerical convergence and manufacturing tolerances.
+The conversion between its two experimental table entries remains open.
+Geometry supports a conditional correction for the specified electrodes;
+it supplies no universal construction rule for the central graph. Raw data,
+original numerical models and complete covariance remain unreproduced.
+
+## Deuteron, molecular-ion and capture constraints
+
+The [Rau deuteron and HD+ measurements](https://doi.org/10.1038/s41586-020-2628-7)
+have separate generator and molecular-ion preparations. The carbon ionic
+references, charge factors, thermal corrections and inferred molecular states
+remain attached to the results. The local mass adjustment and the joint fit
+with the [FSU ratio](https://doi.org/10.1103/PhysRevLett.124.013001) are derived
+results. FSU's absolute deuteron mass uses the earlier LIONTRAP proton mass;
+it cannot independently validate that shared absolute reference. The FSU
+supplement and its detailed selection and rotational fit remain unreviewed.
+
+The [HD+ NRQED energy](https://doi.org/10.1103/PhysRevLett.118.233001) is a
+calculation, with theoretical and constant uncertainties distinguished. Its
+primary table resolves the spurious energy multiplier in the accessible Rau
+author version. Vibrational ground state alone does not establish rotational
+ground state. State assignments inferred from cooling retain that assumption.
+
+The [ILL silicon calibration](https://doi.org/10.6028/jres.122.024) retains its
+two transfer paths, shared absolute reference, specimen variability and
+22.5 C vacuum boundary. The complete final uncertainty combination remains
+unrecovered. Rescaling the existing capture wavelength gives a revised binding
+energy; its combination with adjusted proton and deuteron masses gives a
+conditional neutron mass. This reuses the original capture acquisition.
+
+The [executable check](../../models/causal-emergence/canonical/verify-deuteron-data.py)
+fits 27 published grouped means from three named workbook panels with decimal
+arithmetic and diagonal weights. It also checks rounded molecular mass and
+capture-recoil arithmetic. The resulting grouped-fit errors differ from the
+published original fit errors. Incorrect species headers and the 18 versus
+17 pu figure/article uncertainty remain visible in the preserved workbook
+bytes and claim limitations. This replay does not reconstruct raw acquisition,
+original covariance, mass adjustments, molecular theory or crystal calibration.
+The build includes the bounded results in `dictionaries.evidence.deuteronData`.
+
+## Conditional mass ratios and adjustment inputs
+
+[Fink and Myers 2021](https://doi.org/10.1103/PhysRevLett.127.243001)
+measures two ions simultaneously in coupled magnetron orbits. Acquisition,
+state assignment and drive controls have distinct contexts. Eleven plateaus
+lead to five retained ratios within each of three possible state branches.
+The published mass ratio assumes the most probable branch; its single quoted
+uncertainty does not include the two alternatives. The derived proton mass
+uses Rau's direct deuteron measurement, with that shared absolute reference.
+
+The H2+ binding calculation has its own record and uncertainty boundary.
+The [arithmetic verifier](../../models/causal-emergence/canonical/verify-mass-constraints.py)
+preserves all three printed branches and checks their central mass conversion
+and the direct-deuteron quotient. It does not reconstruct state likelihoods,
+original phase acquisition or uncertainty propagation. The build exposes
+these bounded results in `dictionaries.evidence.massConstraintData`.
+
+Selected [CODATA 2022 passages](https://physics.nist.gov/cuu/pdf/RevModPhys.97.025002.pdf)
+identify the adopted frequency ratios, charge-aware observational equations
+and correlated carbon ionization inputs. These are adjustment constraints;
+adjusted masses are not additional independent observations. The later input
+selection does not rewrite the Fink 2020 constraint used in Rau's earlier fit.
+
+The E13 lattice-input identity remains unresolved between the 2018/2022
+adjustment tables and the cited Kessler WS1/ILL comparison paths. The graph
+records both source values without inventing a replacement calibration or
+claiming an error in the numerical adjustment. Printed equation and label
+conflicts are explicit. The whole CODATA adjustment remains unreproduced.
 
 ## Free-neutron lifetime
 

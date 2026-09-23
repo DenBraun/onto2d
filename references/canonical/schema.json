@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Canonical research source v18",
+  "title": "Canonical research source v19",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -31,7 +31,7 @@
       ],
       "properties": {
         "schemaVersion": {
-          "const": 18
+          "const": 19
         },
         "model": {
           "type": "object",
@@ -2787,7 +2787,8 @@
               "studyType": {
                 "enum": [
                   "primary-experiment",
-                  "computational-analysis"
+                  "computational-analysis",
+                  "experimental-reanalysis"
                 ]
               },
               "doi": {

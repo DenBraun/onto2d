@@ -83,7 +83,7 @@ test("switching models cannot reuse a node selection from another model", () => 
 });
 
 test("the explicit Studio default survives registry canonical sorting and respects exact historical URLs", () => {
-  const preferred = { modelId: "causal-emergence", version: "2026.09.14.31" };
+  const preferred = { modelId: "causal-emergence", version: "2026.09.23.7" };
   const sorted = [{ modelId: "airflow", version: "v1" }, entries[0], preferred];
   assert.equal(requestedRegistryEntry(sorted, new URLSearchParams(), preferred), preferred);
   assert.equal(requestedRegistryEntry(sorted, new URLSearchParams({ model: "causal-emergence", version: "2026.08.15" }), preferred), entries[0]);
