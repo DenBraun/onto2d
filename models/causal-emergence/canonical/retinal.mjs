@@ -1,4 +1,25 @@
+import { ACCELERATOR_NEUTRINO_ADMISSION } from "./accelerator-neutrino.mjs";
+import { WEAK_BOSON_ADMISSION } from "./weak-boson.mjs";
+import { HIGGS_COUPLING_ADMISSION } from "./higgs-coupling.mjs";
+import { SOLAR_NEUTRINO_ADMISSION } from "./solar-neutrino.mjs";
+import { ATMOSPHERIC_NEUTRINO_ADMISSION } from "./atmospheric-neutrino.mjs";
+import { MATTER_NEUTRINO_ADMISSION } from "./matter-neutrino.mjs";
+import { HIGGS_TAU_ADMISSION } from "./higgs-tau.mjs";
+import { FIELD_DYNAMICS_ADMISSION } from "./field-dynamics.mjs";
+import { ELECTROWEAK_ADMISSION } from "./electroweak.mjs";
+import { NEUTRINO_ADMISSION } from "./neutrino.mjs";
+import { HADRON_FAMILY_ADMISSION } from "./hadron-family.mjs";
+import { MESON_FAMILY_ADMISSION } from "./meson-family.mjs";
+import { VIRTUAL_PROCESS_ADMISSION } from "./virtual-process.mjs";
+import { PION_DECAY_ADMISSION } from "./pion-decay.mjs";
+import { ELECTRON_MOMENT_ADMISSION } from "./electron-moment.mjs";
+import { VACUUM_POLARIZATION_ADMISSION } from "./vacuum-polarization.mjs";
+import { NUCLEON_ALGEBRA_ADMISSION } from "./nucleon-algebra.mjs";
+import { NEUTRON_FORM_FACTOR_ADMISSION } from "./neutron-form-factor.mjs";
+import { NUCLEAR_ENERGETICS_ADMISSION } from "./nuclear-energetics.mjs";
+import { HADRON_PRODUCTION_ADMISSION } from "./hadron-production.mjs";
 import assert from "node:assert/strict";
+const localStudySources = new Map([...NUCLEON_ALGEBRA_ADMISSION.localStudySources, ...NEUTRON_FORM_FACTOR_ADMISSION.localStudySources, ...NUCLEAR_ENERGETICS_ADMISSION.localStudySources, ...HADRON_PRODUCTION_ADMISSION.localStudySources, ...PION_DECAY_ADMISSION.localStudySources, ...ELECTRON_MOMENT_ADMISSION.localStudySources, ...VACUUM_POLARIZATION_ADMISSION.localStudySources, ...HADRON_FAMILY_ADMISSION.localStudySources, ...MESON_FAMILY_ADMISSION.localStudySources, ...VIRTUAL_PROCESS_ADMISSION.localStudySources, ...FIELD_DYNAMICS_ADMISSION.localStudySources, ...ELECTROWEAK_ADMISSION.localStudySources, ...NEUTRINO_ADMISSION.localStudySources, ...SOLAR_NEUTRINO_ADMISSION.localStudySources, ...ATMOSPHERIC_NEUTRINO_ADMISSION.localStudySources, ...MATTER_NEUTRINO_ADMISSION.localStudySources, ...HIGGS_TAU_ADMISSION.localStudySources, ...ACCELERATOR_NEUTRINO_ADMISSION.localStudySources, ...WEAK_BOSON_ADMISSION.localStudySources, ...HIGGS_COUPLING_ADMISSION.localStudySources]);
 const sorted = (values) => [...values].sort();
 
 export function validateRetinalPilot({ graph, pilot, routing, optics, visual, neural, physics }, { sources, claims, entities, relations }) {
@@ -20,7 +41,16 @@ export function validateRetinalPilot({ graph, pilot, routing, optics, visual, ne
   assert.equal(studies.size, studyRecords.length, "Duplicate study");
   for (const s of studies.values()) {
     const source = sources.get(s.sourceId);
-    assert.equal(source?.kind, "research-publication", `Missing pilot publication ${s.id}`);
+    if (localStudySources.has(s.id)) {
+      assert.equal(s.sourceId, localStudySources.get(s.id), `Local calculation changed executable owner ${s.id}`);
+      assert.equal(source?.kind, "executable-check", `Local study lacks executable evidence ${s.id}`);
+      assert.equal(s.studyType, "computational-analysis", `Local calculation became an experiment ${s.id}`);
+      for (const key of ["journal", "volume", "pages", "doi", "metadataUrl"]) assert.equal(s[key], null, `Local calculation acquired publication metadata ${s.id}: ${key}`);
+      assert.equal(s.issue, "");
+    } else {
+      assert.equal(source?.kind, "research-publication", `Missing study publication ${s.id}`);
+      for (const key of ["journal", "volume", "pages"]) assert.ok(typeof s[key] === "string" && s[key].length, `Published study lacks metadata ${s.id}: ${key}`);
+    }
     assert.equal(source.doi, s.doi, `Study DOI differs ${s.id}`);
     assert.equal(source.review.extent, s.readExtent);
     if (s.id === s.sourceId) assert.deepEqual(source.review.locators, s.reviewedLocators);
@@ -33,7 +63,7 @@ export function validateRetinalPilot({ graph, pilot, routing, optics, visual, ne
     if (!c.contextIds) continue;
     for (const id of c.contextIds) {
       const s = studies.get(id);
-      assert.ok(s?.studyType === "computational-analysis" && ["pajot2026-quadrilaterals", "pajot2026-memory", "pajot2026-cross-format", "tan2024-decoder", "creutz1980", "bali2005", "durr2008", "borsanyi2015", "borsanyi2015-volume", "schuh2019-geometry", "korobov2017-hd", "rau2020-figure-replay", "korobov2017-h2", "mass-constraint-replay"].includes(id) || s?.studyType === "experimental-reanalysis" && ["liontrap2019-reanalysis", "liontrap2019-double-dip", "liontrap2019-oxygen", "rau2020-local-fit", "rau2020-joint-fit", "kessler2017-ill", "rau2020-capture-recalibration", "fink2021-state-fit", "codata2022-mass-inputs", "codata2022-lattice"].includes(id) || s?.studyType === "primary-experiment" || s?.studyType === "primary-observation" && ["witvliet2021", "disouky2026", "eriksson1998", "spalding2013", "kornack1999", "gould1999-primate", "rakic1985", "eckenhoff1988", "miller1996", "rose2016-pooled-behavior", "gallese1996-f5", "gallese1996-emg", "gallese1996-f1", "singer2004-partner-pain", "mukamel2010-action-units", "tan2024-ieeg", "tan2024-ratings"].includes(id), `Claim lacks reviewed primary evidence ${c.id}: ${id}`);
+      assert.ok(s?.studyType === "computational-analysis" && ["pajot2026-quadrilaterals", "pajot2026-memory", "pajot2026-cross-format", "tan2024-decoder", "creutz1980", "bali2005", "durr2008", "borsanyi2015", "borsanyi2015-volume", "schuh2019-geometry", "korobov2017-hd", "rau2020-figure-replay", "korobov2017-h2", "mass-constraint-replay", "takenaka2020-response", "proton-decay-replay", "takenaka2020-inference", "beam-neutron-replay", "yue2018-normalization", "alpha-gamma-replay", "bernauer2014-mainz-fit", "bernauer2014-rosenbluth", "bernauer-data-replay", "schneider2017-moment-inference", "proton-moment-replay", "afach2014-conversion", "neutron-moment-replay", "nucleon-algebra", "neutron-form-factor-replay", "lachniet2009-extraction", "riordan2010-extraction", "deuteron-beta-energetics", "sld1999-neutral-extrapolation", "hadron-production-replay", "pienu2015-timing-fit", "pienu2015-correction", "pion-decay-replay", "fan2023-moment-inference", "electron-moment-replay", "l3-2000-running-fit", "vacuum-polarization-replay", "barnes1964-reconstruction", "hadron-family-replay", "kloe2007-meson-response", "kloe2007-meson-mixing", "meson-family-replay", "virtual-process-replay", "field-dynamics-replay", "atlas2012-inference", "electroweak-replay", "kamland2005-response", "kamland2005-oscillation-fit", "neutrino-replay", "sno2002-response", "sno2002-channel-fit", "sno2002-flavor-fit", "superk1998-response", "superk1998-oscillation-fit", "cms2016-tau-rate-inference", "cms2016-tau-coupling-inference", "opera2015-response", "opera2015-inference", "ua1-1983-w-response", "ua1-1983-w-inference", "ua1-1983-z-response", "ua1-1983-z-inference"].includes(id) || s?.studyType === "experimental-reanalysis" && ["liontrap2019-reanalysis", "liontrap2019-double-dip", "liontrap2019-oxygen", "rau2020-local-fit", "rau2020-joint-fit", "kessler2017-ill", "rau2020-capture-recalibration", "fink2021-state-fit", "codata2022-mass-inputs", "codata2022-lattice", "yue2013-update"].includes(id) || s?.studyType === "primary-experiment" || s?.studyType === "primary-observation" && ["witvliet2021", "disouky2026", "eriksson1998", "spalding2013", "kornack1999", "gould1999-primate", "rakic1985", "eckenhoff1988", "miller1996", "rose2016-pooled-behavior", "gallese1996-f5", "gallese1996-emg", "gallese1996-f1", "singer2004-partner-pain", "mukamel2010-action-units", "tan2024-ieeg", "tan2024-ratings"].includes(id), `Claim lacks reviewed primary evidence ${c.id}: ${id}`);
       assert.ok(c.citations.some((ref) => ref.sourceId === s.sourceId && s.reviewedLocators.includes(ref.locator)), `Unreviewed or missing study locator ${c.id}: ${id}`);
     }
     if (admittedStatuses.has(c.status)) {

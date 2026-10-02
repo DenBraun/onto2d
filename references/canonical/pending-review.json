@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/0",
-      "title": "Quantum Field Architecture"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/1",
       "title": "Quarks"
     },
@@ -30,51 +25,6 @@
       "sourcePath": "references/level-1.json",
       "pointer": "/7",
       "title": "Confinement"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/8",
-      "title": "Electroweak Symmetry Breaking"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/9",
-      "title": "Higgs Mechanism"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/10",
-      "title": "Hadronization"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/11",
-      "title": "Protons and Neutrons"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/12",
-      "title": "Particle Decays"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/13",
-      "title": "Vacuum-Structure Influence on Particle Properties"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/14",
-      "title": "Elementary Particle Masses via Higgs Coupling"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/15",
-      "title": "Confinement as Macroscale Constraint"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/16",
-      "title": "Hadron Family Formation"
     },
     {
       "sourcePath": "references/level-1.json",
@@ -103,11 +53,6 @@
     },
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/22",
-      "title": "Virtual Excitations in Quantum Field Interactions"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/23",
       "title": "Photons"
     },
@@ -120,21 +65,6 @@
       "sourcePath": "references/level-1.json",
       "pointer": "/25",
       "title": "Nonzero Neutrino Mass and Flavor Mixing"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/26",
-      "title": "Quantum Field Dynamics"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/27",
-      "title": "Vacuum Configuration"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/28",
-      "title": "Higgs Vacuum Configuration"
     },
     {
       "sourcePath": "references/level-1.json",

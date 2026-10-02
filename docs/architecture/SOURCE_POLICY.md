@@ -11,6 +11,12 @@ sampling, observables and inference limits; their contexts have the model role.
 Unread sources and unresolved identities cannot
 silently supply support.
 
+A local analytical result identifies its executable source, exact inputs and
+owned check. Its computational study has no invented journal metadata, and
+`analytically-checked` certifies only the declared calculation. Replaying
+rounded published values does not reproduce their acquisition or inference.
+Descriptive input links preserve that distinction in the graph.
+
 An empirical relation requires a named preparation, compatible endpoints and
 the measured effect. Preserve intervention direction, species, stimulus,
 observable and outcome selection. Correlations, null findings and theoretical
@@ -28,6 +34,30 @@ Do not store canonical migration tables, editing chronologies, intermediate
 releases or full snapshots of previous source states. The remaining source task
 list records unfinished research only. Preserve supplied manuscripts and actual
 experimental inputs used by research cases.
+
+A source card leaves the pending list when its substantive assertions have
+been supported, qualified or excluded. This does not imply independent
+experimental reproduction. Missing raw data and unresolved source conflicts
+remain explicit limits of the affected claims.
+
+For decay measurements, distinguish a total lifetime, a partial-rate limit
+and a ratio of specified channels. Detector spectra, fitted intermediate
+quantities, auxiliary response measurements and corrected results keep their
+own roles even when they contribute to one analysis. Agreement of printed
+arithmetic does not certify the fit or its uncertainty model.
+
+For radiative corrections, keep the measured observable, fitted experimental
+corrections and theoretical expansion separate. A renormalized parameter or
+model-dependent loop decomposition is not a measurement of a bare parameter
+or a virtual-particle population. A normalized shape can constrain a coupling
+difference without independently determining its absolute scale.
+
+Representation labels, mass relations and mixing conventions require their
+symmetry, spin-space and approximation assumptions. A classification or a
+successful conditional event assignment does not establish formation dynamics
+or permanence. Internal propagators and external states retain the declared
+amplitude boundary; a synthetic kinematic check cannot certify a loop
+calculation or an observed population.
 
 The following contracts describe reusable source-analysis APIs used by other
 adapters and cases.

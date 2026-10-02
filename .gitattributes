@@ -9,3 +9,5 @@
 *.webp binary
 *.woff binary
 *.woff2 binary
+
+references/canonical/data/lachniet2009-e111m1.tsv -text

@@ -1,42 +1,43 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20260923.7";
+} from "../../packages/model-pack/src/browser.js?v=20261002.8";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20260923.7";
+} from "../../packages/model-pack/src/cache.js?v=20261002.8";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20260923.7";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20260923.7";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20260923.7";
+} from "../../packages/model-pack/src/registry.js?v=20261002.8";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261002.8";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261002.8";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20260923.7";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20260923.7";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20260923.7";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20260923.7";
-import { graphHighlight } from "./graph-interactions.js?v=20260923.7";
-import { citationLinks } from "./evidence-links.js?v=20260923.7";
+} from "../../packages/rdf-mapping/src/index.js?v=20261002.8";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261002.8";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261002.8";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261002.8";
+import { graphHighlight } from "./graph-interactions.js?v=20261002.8";
+import { citationLinks } from "./evidence-links.js?v=20261002.8";
+import { loadBrowseModel } from "./browse-data.js?v=20261002.8";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20260923.7";
+} from "./model-selection.js?v=20261002.8";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.09.23.7" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.02.8" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20260923.7",
+  "../../assets/js/model-pack-worker.js?v=20261002.8",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:36167084c78be0965122bd3fda7c3113cf7221d60659cbabf54f66100cb9d677";
+const EXPECTED_REGISTRY_HASH = "sha256:ac333a2b3e5c925ec775611925e26567e079724702f195e7f7deaed6e5fc7e54";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
@@ -87,6 +88,7 @@ const state = {
   selection: null,
   modelSource: null,
   presentation: null,
+  browse: null,
   presentationMetadata: null,
   manifest: null,
   focusId: null,
@@ -103,6 +105,10 @@ const state = {
 };
 let activeGraphProjection = null;
 let modelLoadSequence = 0;
+let pendingModelLoad = null;
+let pendingInspection = null;
+let inspectionSequence = 0;
+let eventsBound = false;
 
 function svgElement(name, attributes = {}) {
   const element = document.createElementNS(SVG_NAMESPACE, name);
@@ -127,8 +133,8 @@ function scalarLabel(value, fallback = "not declared") {
   return value === null || value === undefined || value === "" ? fallback : String(value);
 }
 
-function boundedLabel(value, fallback) {
-  return typeof value === "string" && value.length > 0 && value.length <= 240
+function boundedLabel(value, fallback, maximum = 240) {
+  return typeof value === "string" && value.length > 0 && value.length <= maximum
     ? value
     : fallback;
 }
@@ -170,7 +176,8 @@ function presentationMetadata(pack, { localRdf = false } = {}) {
       title: boundedLabel(boundary?.title, "Verified model boundary"),
       summary: boundedLabel(
         boundary?.summary,
-        "Record and relation semantics are those declared by this exact verified release."
+        "Record and relation semantics are those declared by this exact verified release.",
+        4000
       ),
       note: boundedLabel(
         boundary?.note,
@@ -494,9 +501,11 @@ function renderRelationList(container, nodes, emptyText) {
 }
 
 function renderInspector() {
+  pendingInspection?.abort();
+  pendingInspection = null;
+  const sequence = ++inspectionSequence;
   const detail = state.presentation.inspect(state.selectedId);
   const node = detail.node;
-  const record = detail.record;
   elements["selected-id"].textContent = node.id;
   elements["selected-coordinate"].textContent = coordinateText(node);
   elements["selected-name"].textContent = node.name;
@@ -505,11 +514,6 @@ function renderInspector() {
     tag(scalarLabel(node.scientificStatus), "status")
   );
   elements["selected-summary"].textContent = node.shortDescription || "No short description is declared for this record.";
-  elements["selected-description"].textContent = typeof record.description === "string"
-    ? record.description
-    : "No full description is declared for this record.";
-  elements["selected-record"].textContent = JSON.stringify(record, null, 2);
-  renderRationale(record);
   elements["parent-count"].textContent = String(node.parentCount);
   elements["child-count"].textContent = String(node.childCount);
   elements["degree-count"].textContent = String(node.degree);
@@ -517,6 +521,38 @@ function renderInspector() {
   elements["children-total"].textContent = String(detail.relationCounts.childCount);
   renderRelationList(elements["parent-list"], detail.relations.parents, "No direct parents in this release.");
   renderRelationList(elements["child-list"], detail.relations.children, "No direct children in this release.");
+  if (state.browse === null) {
+    renderInspectedRecord(detail.record);
+    return;
+  }
+  const controller = new AbortController();
+  pendingInspection = controller;
+  document.body.dataset.detailState = "loading";
+  elements["selected-description"].textContent = "Loading record...";
+  elements["selected-record"].textContent = "";
+  elements["selected-rationale"].replaceChildren(createElement("p", "", "Loading sources and limitations..."));
+  state.browse.inspect(node.id, { signal: controller.signal }).then((record) => {
+    if (sequence !== inspectionSequence || controller.signal.aborted) return;
+    renderInspectedRecord(record);
+  }).catch((error) => {
+    if (sequence !== inspectionSequence || controller.signal.aborted) return;
+    document.body.dataset.detailState = "error";
+    elements["selected-description"].textContent = "Record details could not be loaded.";
+    const retry = createElement("button", "", "Retry record details");
+    retry.type = "button";
+    retry.addEventListener("click", renderInspector, { once: true });
+    elements["selected-rationale"].replaceChildren(
+      createElement("p", "", `Could not verify record details: ${error.message}`), retry
+    );
+  });
+}
+
+function renderInspectedRecord(record) {
+  elements["selected-description"].textContent = typeof record.description === "string"
+    ? record.description : "No full description is declared for this record.";
+  elements["selected-record"].textContent = JSON.stringify(record, null, 2);
+  renderRationale(record);
+  document.body.dataset.detailState = "ready";
 }
 
 function renderRationale(record) {
@@ -664,7 +700,6 @@ function renderSourceReadiness(pack) {
   const review = pack.files["model/dictionaries.json"]?.sourceReadiness;
   const panel = elements["source-readiness-panel"];
   panel.hidden = !review;
-  panel.open = false;
   elements["source-readiness-records"].replaceChildren();
   elements["source-readiness-summary"].textContent = review
     ? `${review.nodeRoles.length} records with explicit representation roles. Roles describe what a record denotes; they do not establish a physical instance.` : "";
@@ -686,7 +721,6 @@ function renderSourceReview(pack, key, prefix) {
   const review = dictionaries?.[key];
   const panel = elements[`${prefix}-panel`];
   panel.hidden = !review;
-  panel.open = false;
   elements[`${prefix}-records`].replaceChildren();
   elements[`${prefix}-summary`].textContent = "";
   elements[`${prefix}-download`].onclick = null;
@@ -737,7 +771,6 @@ function renderVocabulary(pack) {
   const vocabulary = dictionaries?.vocabulary;
   const panel = elements["vocabulary-panel"];
   panel.hidden = !Array.isArray(vocabulary) || vocabulary.length === 0;
-  panel.open = false;
   const groupSelect = elements["vocabulary-group"];
   groupSelect.onchange = null;
   elements["vocabulary-records"].replaceChildren();
@@ -774,18 +807,79 @@ function renderVocabulary(pack) {
   renderGroup();
 }
 
+function configureReviewPanels(pack, browse) {
+  const presentation = state.presentation;
+  const dictionaries = pack.files["model/dictionaries.json"] ?? {};
+  elements["vocabulary-group"].onchange = null;
+  elements["vocabulary-group"].replaceChildren();
+  const reviews = [
+    ["vocabulary", "vocabulary", renderVocabulary],
+    ["sourceReadiness", "source-readiness", renderSourceReadiness],
+    ...[["optics", "optical-review"], ["visual", "visual-review"],
+      ["neural", "neural-review"], ["physics", "physics-review"]]
+      .map(([key, prefix]) => [key, prefix, (value) => renderSourceReview(value, key, prefix)])
+  ];
+  for (const [key, prefix, renderReview] of reviews) {
+    const panel = elements[`${prefix}-panel`];
+    const records = elements[`${prefix}-records`];
+    const summary = elements[`${prefix}-summary`] ?? elements["vocabulary-scope"];
+    const download = elements[`${prefix}-download`];
+    panel.ontoggle = null;
+    panel.open = false;
+    panel.hidden = browse ? !browse.reviews[key] : !dictionaries[key];
+    panel.dataset.state = "idle";
+    records.replaceChildren();
+    summary.textContent = "Open to review the evidence and its scope.";
+    if (download) { download.onclick = null; download.disabled = true; }
+    let loading = false;
+    const canRender = () => {
+      if (state.presentation !== presentation) return false;
+      if (panel.open) return true;
+      panel.dataset.state = "idle";
+      summary.textContent = "Open to review the evidence and its scope.";
+      return false;
+    };
+    const load = async () => {
+      if (!panel.open || loading || panel.dataset.state === "ready") return;
+      loading = true;
+      panel.dataset.state = "loading";
+      summary.textContent = "Loading review...";
+      try {
+        const subset = browse ? await browse.review(key) : dictionaries;
+        if (!canRender()) return;
+        renderReview({ files: { "model/dictionaries.json": subset } });
+        panel.dataset.state = "ready";
+        if (download) download.disabled = false;
+      } catch (error) {
+        if (!canRender()) return;
+        panel.dataset.state = "error";
+        summary.textContent = `Could not verify this review: ${error.message}`;
+        const retry = createElement("button", "", "Retry review");
+        retry.type = "button";
+        retry.addEventListener("click", () => { records.replaceChildren(); load(); }, { once: true });
+        records.replaceChildren(retry);
+      } finally {
+        loading = false;
+      }
+    };
+    panel.ontoggle = load;
+  }
+}
+
 function activateModelPack(pack, options = {}) {
   const presentationOptions = options.resolution
     ? { resolution: options.resolution, defaultCatalogPageSize: CATALOG_PAGE_SIZE }
     : { defaultCatalogPageSize: CATALOG_PAGE_SIZE };
-  const presentation = createVerifiedModelPresentation(pack, presentationOptions);
+  const presentation = options.browse?.presentation ?? createVerifiedModelPresentation(pack, presentationOptions);
   const manifest = pack.manifest;
   const descriptor = presentation.descriptor;
   const localRdf = options.modelSource === "local-rdf";
   const metadata = presentationMetadata(pack, { localRdf });
   const previousPresentation = state.presentation;
+  const previousBrowse = state.browse;
   state.manifest = manifest;
   state.presentation = presentation;
+  state.browse = options.browse ?? null;
   state.presentationMetadata = metadata;
   state.selection = options.resolution === undefined
     ? null
@@ -818,12 +912,7 @@ function activateModelPack(pack, options = {}) {
   elements["model-boundary-title"].textContent = metadata.boundary.title;
   elements["model-boundary-summary"].textContent = metadata.boundary.summary;
   elements["model-boundary-note"].textContent = metadata.boundary.note;
-  renderVocabulary(pack);
-  renderSourceReadiness(pack);
-  renderSourceReview(pack, "optics", "optical-review");
-  renderSourceReview(pack, "visual", "visual-review");
-  renderSourceReview(pack, "neural", "neural-review");
-  renderSourceReview(pack, "physics", "physics-review");
+  configureReviewPanels(pack, state.browse);
   configureFacet("level-filter", descriptor.facets.levels, "All levels", metadata.labels.levelFilter);
   configureFacet("role-filter", descriptor.facets.typeRoles, "All types", metadata.labels.typeFilter);
   configureFacet("phase-filter", descriptor.facets.phases, "All phases", metadata.labels.phaseFilter);
@@ -831,14 +920,19 @@ function activateModelPack(pack, options = {}) {
   if (state.selection === null) selectLocalOption(manifest);
   else selectRegisteredOption(state.selection);
   render();
-  previousPresentation?.close();
+  if (previousBrowse) previousBrowse.close();
+  else previousPresentation?.close();
   replaceLocationState();
-  document.body.dataset.presentation = "lazy";
+  document.body.dataset.presentation = state.browse ? "incremental" : "lazy";
   document.body.dataset.modelSource = options.modelSource ?? "registry";
   document.body.dataset.state = "ready";
   elements["load-state"].textContent = options.loadMessage ?? "Model verified";
   elements["rdf-import-open"].disabled = false;
   elements["model-selector"].disabled = false;
+  if (!eventsBound) {
+    bindEvents();
+    eventsBound = true;
+  }
 }
 
 function selectedFile(id, label) {
@@ -899,6 +993,8 @@ async function importRdfMapping() {
     status: "local-import"
   });
   modelLoadSequence += 1;
+  pendingModelLoad?.abort();
+  pendingModelLoad = null;
   activateModelPack(pack, {
     modelSource: "local-rdf",
     loadMessage: "Local RDF model verified"
@@ -959,6 +1055,16 @@ async function restoreLocationState() {
   ) {
     await openRegisteredModel(requestedEntry, { useLocation: true });
     return;
+  }
+  // Returning to the displayed release supersedes an in-flight model switch.
+  if (pendingModelLoad !== null) {
+    modelLoadSequence += 1;
+    pendingModelLoad.abort();
+    pendingModelLoad = null;
+    elements["model-selector"].disabled = false;
+    selectRegisteredOption(state.selection);
+    elements["load-state"].textContent = state.browse
+      ? "Graph verified / details on demand" : "Model verified";
   }
   const requested = requestedGraphState();
   state.depth = requested.depth;
@@ -1033,9 +1139,6 @@ function bindEvents() {
       displaySwitchError(error);
     }
   });
-  window.addEventListener("hashchange", () => {
-    restoreLocationState().catch(displaySwitchError);
-  });
 }
 
 function displayError(error) {
@@ -1071,7 +1174,7 @@ function isCacheStorageFailure(error) {
   );
 }
 
-async function loadThroughVerifiedCache(resolution, loader, verifyBundle = loadModelPackBundle) {
+async function loadThroughVerifiedCache(resolution, loader, verifyBundle = loadModelPackBundle, reportCache = () => {}) {
   const identity = Object.freeze({
     rootHash: resolution.rootHash,
     manifestHash: resolution.manifestHash
@@ -1097,32 +1200,38 @@ async function loadThroughVerifiedCache(resolution, loader, verifyBundle = loadM
     });
   } catch (error) {
     if (!isCacheStorageFailure(error)) throw error;
-    document.body.dataset.cache = "unavailable";
+    reportCache("unavailable");
     return loadBoundPack();
   }
 
   try {
     const result = await cache.load(identity, loadBoundPack);
-    document.body.dataset.cache = result.source === "cache"
+    reportCache(result.source === "cache"
       ? "hit"
-      : result.cacheState === "invalid" ? "recovered" : "miss";
+      : result.cacheState === "invalid" ? "recovered" : "miss");
     return result.pack;
   } catch (error) {
     if (!isCacheStorageFailure(error)) throw error;
-    document.body.dataset.cache = "unavailable";
+    reportCache("unavailable");
     return loadBoundPack();
   } finally {
     await cache.close();
   }
 }
 
-async function loadVerifiedModelPack(resolution) {
+async function loadVerifiedModelPack(resolution, { signal } = {}) {
+  let cache = "unavailable";
+  const loadCached = (loader, verifyBundle) => loadThroughVerifiedCache(
+    resolution, loader, verifyBundle, (value) => { cache = value; }
+  );
+  const fallback = async () => {
+    signal?.throwIfAborted();
+    const pack = await loadCached(() => loadModelPackHttpDirectory(resolution.baseUrl, { signal }));
+    signal?.throwIfAborted();
+    return { pack, cache, verifier: "main-thread-fallback" };
+  };
   if (typeof Worker !== "function") {
-    document.body.dataset.verifier = "main-thread-fallback";
-    return loadThroughVerifiedCache(
-      resolution,
-      () => loadModelPackHttpDirectory(resolution.baseUrl)
-    );
+    return fallback();
   }
 
   let worker = null;
@@ -1137,20 +1246,16 @@ async function loadVerifiedModelPack(resolution) {
       ownsWorker: true,
       requestTimeoutMs: 60_000
     });
-    const pack = await loadThroughVerifiedCache(
-      resolution,
-      () => client.loadHttpDirectory(resolution.baseUrl),
-      (source) => client.loadBundle(source, { transfer: "move" })
+    const pack = await loadCached(
+      () => client.loadHttpDirectory(resolution.baseUrl, { signal }),
+      (source) => client.loadBundle(source, { transfer: "move", signal })
     );
-    document.body.dataset.verifier = "worker";
-    return pack;
+    signal?.throwIfAborted();
+    return { pack, cache, verifier: "worker" };
   } catch (error) {
+    signal?.throwIfAborted();
     if (client !== null && !isWorkerOperationalFailure(error)) throw error;
-    document.body.dataset.verifier = "main-thread-fallback";
-    return loadThroughVerifiedCache(
-      resolution,
-      () => loadModelPackHttpDirectory(resolution.baseUrl)
-    );
+    return fallback();
   } finally {
     if (client !== null) {
       client.close();
@@ -1165,6 +1270,9 @@ async function openRegisteredModel(selection, { useLocation = false } = {}) {
     throw new Error("The verified Model Pack registry is not loaded.");
   }
   const sequence = ++modelLoadSequence;
+  pendingModelLoad?.abort();
+  const controller = new AbortController();
+  pendingModelLoad = controller;
   elements["model-selector"].disabled = true;
   elements["load-state"].textContent = "Verifying selected model";
   if (state.presentation === null) document.body.dataset.state = "loading";
@@ -1174,14 +1282,35 @@ async function openRegisteredModel(selection, { useLocation = false } = {}) {
     { modelId: selection.modelId, version: selection.version },
     { expectedRegistryHash: EXPECTED_REGISTRY_HASH }
   );
-  const pack = await loadVerifiedModelPack(resolution);
-  if (sequence !== modelLoadSequence) return false;
+  let browse;
+  let pack;
+  let verification;
+  try {
+    browse = await loadBrowseModel(resolution, { signal: controller.signal });
+    if (sequence !== modelLoadSequence) { browse?.close(); return false; }
+    if (browse) {
+      pack = { manifest: browse.manifest, files: { "model/dictionaries.json": browse.dictionaries } };
+      verification = { verifier: "projection-sha256", cache: "http" };
+    } else {
+      verification = await loadVerifiedModelPack(resolution, { signal: controller.signal });
+      pack = verification.pack;
+    }
+  } catch (error) {
+    if (sequence !== modelLoadSequence) { browse?.close(); return false; }
+    throw error;
+  } finally {
+    if (pendingModelLoad === controller) pendingModelLoad = null;
+  }
+  if (sequence !== modelLoadSequence) { browse?.close(); return false; }
+  document.body.dataset.verifier = verification.verifier;
+  document.body.dataset.cache = verification.cache;
   document.body.dataset.registry = resolution.registryTrust;
   activateModelPack(pack, {
     resolution,
+    browse,
     useLocation,
     modelSource: "registry",
-    loadMessage: document.body.dataset.cache === "hit"
+    loadMessage: browse ? "Graph verified / details on demand" : document.body.dataset.cache === "hit"
       ? "Cached model verified"
       : "Model verified"
   });
@@ -1189,6 +1318,9 @@ async function openRegisteredModel(selection, { useLocation = false } = {}) {
 }
 
 async function start() {
+  window.addEventListener("hashchange", () => {
+    restoreLocationState().catch(displaySwitchError);
+  });
   const snapshot = await loadModelPackRegistryHttp(
     MODEL_REGISTRY_URL,
     { expectedRegistryHash: EXPECTED_REGISTRY_HASH }
@@ -1202,7 +1334,6 @@ async function start() {
     DEFAULT_MODEL_SELECTION
   );
   await openRegisteredModel(selection, { useLocation: true });
-  bindEvents();
 }
 
 start().catch(displayError);

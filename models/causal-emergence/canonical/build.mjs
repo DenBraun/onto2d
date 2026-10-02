@@ -8,7 +8,12 @@ import { ROOT, loadCanonicalSource, verifyCanonicalEvidence } from "./source.mjs
 import { compileVocabulary } from "./dictionaries.mjs";
 import { compileSourceReadiness } from "./readiness.mjs";
 
-const serialize = (value) => `${JSON.stringify(value, null, 2)}\n`;
+// Generated semantic data uses compact transport; manifest and indexes remain
+// readable. The canonical source files retain their own readable formatting.
+const COMPACT_FILES = new Set([
+  "bundle.json", "model/nodes.json", "model/edges.json", "model/dictionaries.json"
+]);
+const serialize = (relative, value) => `${JSON.stringify(value, null, COMPACT_FILES.has(relative) ? undefined : 2)}\n`;
 
 export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics }, evidence, sourceFiles) {
   const sourceReadiness = compileSourceReadiness(readiness);
@@ -59,7 +64,7 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   return buildModelPack({
     model: { ...graph.model, description: graph.scope.summary },
-    source: { id: "canonical-research-source-v19", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
+    source: { id: "canonical-research-source-v20", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
     nodes, edges,
     dictionaries: {
       sources: graph.sources, claims: graph.claims, constructionRules: graph.rules,
@@ -93,6 +98,32 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/physics.mjs",
     "models/causal-emergence/canonical/deuteron.mjs",
     "models/causal-emergence/canonical/mass-constraints.mjs",
+    "models/causal-emergence/canonical/proton-decay.mjs",
+    "models/causal-emergence/canonical/beam-neutron.mjs",
+    "models/causal-emergence/canonical/alpha-gamma.mjs",
+    "models/causal-emergence/canonical/bernauer.mjs",
+    "models/causal-emergence/canonical/proton-moment.mjs",
+    "models/causal-emergence/canonical/neutron-moment.mjs",
+    "models/causal-emergence/canonical/nucleon-algebra.mjs",
+    "models/causal-emergence/canonical/neutron-form-factor.mjs",
+    "models/causal-emergence/canonical/nuclear-energetics.mjs",
+    "models/causal-emergence/canonical/hadron-production.mjs",
+    "models/causal-emergence/canonical/pion-decay.mjs",
+    "models/causal-emergence/canonical/electron-moment.mjs",
+    "models/causal-emergence/canonical/vacuum-polarization.mjs",
+    "models/causal-emergence/canonical/hadron-family.mjs",
+    "models/causal-emergence/canonical/meson-family.mjs",
+    "models/causal-emergence/canonical/virtual-process.mjs",
+    "models/causal-emergence/canonical/field-dynamics.mjs",
+    "models/causal-emergence/canonical/electroweak.mjs",
+    "models/causal-emergence/canonical/neutrino.mjs",
+    "models/causal-emergence/canonical/solar-neutrino.mjs",
+    "models/causal-emergence/canonical/atmospheric-neutrino.mjs",
+    "models/causal-emergence/canonical/matter-neutrino.mjs",
+    "models/causal-emergence/canonical/higgs-tau.mjs",
+    "models/causal-emergence/canonical/accelerator-neutrino.mjs",
+    "models/causal-emergence/canonical/weak-boson.mjs",
+    "models/causal-emergence/canonical/higgs-coupling.mjs",
     "models/causal-emergence/canonical/geometric-model-data.mjs",
     "models/causal-emergence/canonical/verify-neurogenesis-data.py",
     "packages/model-pack/src/canonical-options.js", "packages/model-pack/src/index.js",
@@ -123,7 +154,7 @@ export async function verifyCanonicalRelease(pack, directory = releaseDirectory(
   const expected = { "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack };
   assert.deepEqual(await collectFiles(directory), Object.keys(expected).sort(), "Release file inventory differs");
   for (const [relative, value] of Object.entries(expected)) {
-    assert.equal(await readFile(path.join(directory, relative), "utf8"), serialize(value), `Stale canonical derivative: ${relative}`);
+    assert.equal(await readFile(path.join(directory, relative), "utf8"), serialize(relative, value), `Stale canonical derivative: ${relative}`);
   }
   verifyModelPack(pack);
   return pack;
@@ -142,7 +173,7 @@ export async function writeCanonicalRelease(pack, directory = releaseDirectory(p
   for (const [relative, value] of Object.entries({ "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack })) {
     const target = path.join(directory, relative);
     await mkdir(path.dirname(target), { recursive: true });
-    await writeFile(target, serialize(value), { flag: "wx" });
+    await writeFile(target, serialize(relative, value), { flag: "wx" });
   }
   return verifyCanonicalRelease(pack, directory);
 }

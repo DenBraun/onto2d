@@ -42,6 +42,7 @@ case or app from the site navigation after the checks pass.
 | `npm run check:closure` | Kernel capability and closure evidence |
 | `npm run check:goldens` | Independent canonicalization and skeleton fixtures |
 | `npm run check:registry` | Model Pack registry and Studio pin |
+| `npm run model-studio:data:verify` | Exact browser projection, detail chunks, review files and their pinned index |
 | `npm run check:public-revisions` | Coherent public module revisions |
 | `npm run check:worker` | Reproducible browser worker bundle |
 | `npm run audit:catalogue` | Preserved source-catalogue audit |

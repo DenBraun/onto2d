@@ -1,4 +1,30 @@
+import { ACCELERATOR_NEUTRINO_ADMISSION, ACCELERATOR_NEUTRINO_CHECKS, ACCELERATOR_NEUTRINO_ANALYTICAL_SOURCES, validateAcceleratorNeutrinoContracts } from "./accelerator-neutrino.mjs";
+import { WEAK_BOSON_ADMISSION, WEAK_BOSON_CHECKS, WEAK_BOSON_ANALYTICAL_SOURCES, validateWeakBosonContracts } from "./weak-boson.mjs";
+import { HIGGS_COUPLING_ADMISSION, HIGGS_COUPLING_CHECKS, HIGGS_COUPLING_ANALYTICAL_SOURCES, validateHiggsCouplingContracts } from "./higgs-coupling.mjs";
+import { SOLAR_NEUTRINO_ADMISSION, SOLAR_NEUTRINO_CHECKS, SOLAR_NEUTRINO_ANALYTICAL_SOURCES, validateSolarNeutrinoContracts } from "./solar-neutrino.mjs";
+import { ATMOSPHERIC_NEUTRINO_ADMISSION, ATMOSPHERIC_NEUTRINO_CHECKS, ATMOSPHERIC_NEUTRINO_ANALYTICAL_SOURCES, validateAtmosphericNeutrinoContracts } from "./atmospheric-neutrino.mjs";
+import { MATTER_NEUTRINO_ADMISSION, MATTER_NEUTRINO_CHECKS, MATTER_NEUTRINO_ANALYTICAL_SOURCES, validateMatterNeutrinoContracts } from "./matter-neutrino.mjs";
+import { HIGGS_TAU_ADMISSION, HIGGS_TAU_CHECKS, HIGGS_TAU_ANALYTICAL_SOURCES, validateHiggsTauContracts } from "./higgs-tau.mjs";
+import { FIELD_DYNAMICS_ADMISSION, FIELD_DYNAMICS_CHECKS, FIELD_DYNAMICS_ANALYTICAL_SOURCES, validateFieldDynamicsContracts } from "./field-dynamics.mjs";
+import { ELECTROWEAK_ADMISSION, ELECTROWEAK_CHECKS, ELECTROWEAK_ANALYTICAL_SOURCES, validateElectroweakContracts } from "./electroweak.mjs";
+import { NEUTRINO_ADMISSION, NEUTRINO_CHECKS, NEUTRINO_ANALYTICAL_SOURCES, validateNeutrinoContracts } from "./neutrino.mjs";
+import { HADRON_FAMILY_ADMISSION, HADRON_FAMILY_CHECKS, HADRON_FAMILY_ANALYTICAL_SOURCES, validateHadronFamilyContracts } from "./hadron-family.mjs";
+import { MESON_FAMILY_ADMISSION, MESON_FAMILY_CHECKS, MESON_FAMILY_ANALYTICAL_SOURCES, validateMesonFamilyContracts } from "./meson-family.mjs";
+import { VIRTUAL_PROCESS_ADMISSION, VIRTUAL_PROCESS_CHECKS, VIRTUAL_PROCESS_ANALYTICAL_SOURCES, validateVirtualProcessContracts } from "./virtual-process.mjs";
+import { PION_DECAY_ADMISSION, PION_DECAY_CHECKS, PION_DECAY_ANALYTICAL_SOURCES, validatePionDecayContracts } from "./pion-decay.mjs";
+import { ELECTRON_MOMENT_ADMISSION, ELECTRON_MOMENT_CHECKS, ELECTRON_MOMENT_ANALYTICAL_SOURCES, validateElectronMomentContracts } from "./electron-moment.mjs";
+import { VACUUM_POLARIZATION_ADMISSION, VACUUM_POLARIZATION_CHECKS, VACUUM_POLARIZATION_ANALYTICAL_SOURCES, validateVacuumPolarizationContracts } from "./vacuum-polarization.mjs";
+import { NUCLEON_ALGEBRA_ADMISSION, NUCLEON_ALGEBRA_CHECKS, NUCLEON_ALGEBRA_ANALYTICAL_SOURCES, validateNucleonAlgebraContracts } from "./nucleon-algebra.mjs";
+import { NEUTRON_FORM_FACTOR_ADMISSION, NEUTRON_FORM_FACTOR_CHECKS, NEUTRON_FORM_FACTOR_ANALYTICAL_SOURCES, validateNeutronFormFactorContracts } from "./neutron-form-factor.mjs";
+import { NUCLEAR_ENERGETICS_ADMISSION, NUCLEAR_ENERGETICS_CHECKS, NUCLEAR_ENERGETICS_ANALYTICAL_SOURCES, validateNuclearEnergeticsContracts } from "./nuclear-energetics.mjs";
+import { HADRON_PRODUCTION_ADMISSION, HADRON_PRODUCTION_CHECKS, HADRON_PRODUCTION_ANALYTICAL_SOURCES, validateHadronProductionContracts } from "./hadron-production.mjs";
 import assert from "node:assert/strict";
+import { NEUTRON_MOMENT_ADMISSION, NEUTRON_MOMENT_CHECKS, validateNeutronMomentContracts } from "./neutron-moment.mjs";
+import { PROTON_MOMENT_ADMISSION, PROTON_MOMENT_CHECKS, validateProtonMomentContracts } from "./proton-moment.mjs";
+import { BERNAUER_ADMISSION, BERNAUER_CHECKS, validateBernauerContracts } from "./bernauer.mjs";
+import { ALPHA_GAMMA_ADMISSION, ALPHA_GAMMA_CHECKS, validateAlphaGammaContracts } from "./alpha-gamma.mjs";
+import { BEAM_NEUTRON_ADMISSION, BEAM_NEUTRON_CHECKS, validateBeamNeutronContracts } from "./beam-neutron.mjs";
+import { PROTON_DECAY_ADMISSION, PROTON_DECAY_CHECKS, validateProtonDecayContracts } from "./proton-decay.mjs";
 import { MASS_CONSTRAINT_CHECKS, validateMassConstraintContracts } from "./mass-constraints.mjs";
 import { DEUTERON_CHECKS, validateDeuteronContracts } from "./deuteron.mjs";
 
@@ -7,7 +33,35 @@ export const BELL_CHECKS = new Map([2015, 2016].flatMap((year) => [
   [`bell-null-tail-${year}`, `C-phys-hensen${year}-bell-test`]
 ]));
 
+const analyticalSources = new Map([...NUCLEON_ALGEBRA_ANALYTICAL_SOURCES, ...NEUTRON_FORM_FACTOR_ANALYTICAL_SOURCES, ...NUCLEAR_ENERGETICS_ANALYTICAL_SOURCES, ...HADRON_PRODUCTION_ANALYTICAL_SOURCES, ...PION_DECAY_ANALYTICAL_SOURCES, ...ELECTRON_MOMENT_ANALYTICAL_SOURCES, ...VACUUM_POLARIZATION_ANALYTICAL_SOURCES, ...HADRON_FAMILY_ANALYTICAL_SOURCES, ...MESON_FAMILY_ANALYTICAL_SOURCES, ...VIRTUAL_PROCESS_ANALYTICAL_SOURCES, ...FIELD_DYNAMICS_ANALYTICAL_SOURCES, ...ELECTROWEAK_ANALYTICAL_SOURCES, ...NEUTRINO_ANALYTICAL_SOURCES, ...SOLAR_NEUTRINO_ANALYTICAL_SOURCES, ...ATMOSPHERIC_NEUTRINO_ANALYTICAL_SOURCES, ...MATTER_NEUTRINO_ANALYTICAL_SOURCES, ...HIGGS_TAU_ANALYTICAL_SOURCES, ...ACCELERATOR_NEUTRINO_ANALYTICAL_SOURCES, ...WEAK_BOSON_ANALYTICAL_SOURCES, ...HIGGS_COUPLING_ANALYTICAL_SOURCES]);
+
 const definitions = new Map([
+  ...PROTON_DECAY_ADMISSION.definitions,
+  ...BEAM_NEUTRON_ADMISSION.definitions,
+  ...ALPHA_GAMMA_ADMISSION.definitions,
+  ...BERNAUER_ADMISSION.definitions,
+  ...PROTON_MOMENT_ADMISSION.definitions,
+  ...NEUTRON_MOMENT_ADMISSION.definitions,
+  ...NUCLEON_ALGEBRA_ADMISSION.definitions,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.definitions,
+  ...NUCLEAR_ENERGETICS_ADMISSION.definitions,
+  ...HADRON_PRODUCTION_ADMISSION.definitions,
+  ...PION_DECAY_ADMISSION.definitions,
+  ...ELECTRON_MOMENT_ADMISSION.definitions,
+  ...VACUUM_POLARIZATION_ADMISSION.definitions,
+  ...HADRON_FAMILY_ADMISSION.definitions,
+  ...MESON_FAMILY_ADMISSION.definitions,
+  ...VIRTUAL_PROCESS_ADMISSION.definitions,
+  ...FIELD_DYNAMICS_ADMISSION.definitions,
+  ...ELECTROWEAK_ADMISSION.definitions,
+  ...NEUTRINO_ADMISSION.definitions,
+  ...SOLAR_NEUTRINO_ADMISSION.definitions,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.definitions,
+  ...MATTER_NEUTRINO_ADMISSION.definitions,
+  ...HIGGS_TAU_ADMISSION.definitions,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.definitions,
+  ...WEAK_BOSON_ADMISSION.definitions,
+  ...HIGGS_COUPLING_ADMISSION.definitions,
   ["phys:quantum-field-framework", "D-phys-qft"],
   ["phys:free-scalar-quantization", "D-phys-free-scalar"],
   ["phys:standard-model", "D-phys-sm"],
@@ -134,6 +188,7 @@ const formalDependencies = new Map([
   ["rovibrational-state-boundary-state-conditional-mass", ["rovibrational-state-boundary", "state-conditional-mass"]],
   ["atomic-mass-covariance-mass-adjustment-constraint", ["atomic-mass-covariance", "mass-adjustment-constraint"]]
 ].map(([id, endpoints]) => [`physics:${id}`, endpoints.map((id) => `phys:${id}`)]));
+for (const [id, endpoints] of [...PROTON_DECAY_ADMISSION.formalDependencies, ...BEAM_NEUTRON_ADMISSION.formalDependencies, ...ALPHA_GAMMA_ADMISSION.formalDependencies, ...BERNAUER_ADMISSION.formalDependencies, ...PROTON_MOMENT_ADMISSION.formalDependencies, ...NEUTRON_MOMENT_ADMISSION.formalDependencies, ...NUCLEON_ALGEBRA_ADMISSION.formalDependencies, ...NEUTRON_FORM_FACTOR_ADMISSION.formalDependencies, ...NUCLEAR_ENERGETICS_ADMISSION.formalDependencies, ...HADRON_PRODUCTION_ADMISSION.formalDependencies, ...PION_DECAY_ADMISSION.formalDependencies, ...ELECTRON_MOMENT_ADMISSION.formalDependencies, ...VACUUM_POLARIZATION_ADMISSION.formalDependencies, ...HADRON_FAMILY_ADMISSION.formalDependencies, ...MESON_FAMILY_ADMISSION.formalDependencies, ...VIRTUAL_PROCESS_ADMISSION.formalDependencies, ...FIELD_DYNAMICS_ADMISSION.formalDependencies, ...ELECTROWEAK_ADMISSION.formalDependencies, ...NEUTRINO_ADMISSION.formalDependencies, ...SOLAR_NEUTRINO_ADMISSION.formalDependencies, ...ATMOSPHERIC_NEUTRINO_ADMISSION.formalDependencies, ...MATTER_NEUTRINO_ADMISSION.formalDependencies, ...HIGGS_TAU_ADMISSION.formalDependencies, ...ACCELERATOR_NEUTRINO_ADMISSION.formalDependencies, ...WEAK_BOSON_ADMISSION.formalDependencies, ...HIGGS_COUPLING_ADMISSION.formalDependencies]) formalDependencies.set(id, endpoints);
 const bellAssumptions = [
   "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
   "Condition on the prior trial sequence; require local responses, independent setting generators and independence of the herald from those settings within the stated predictability bounds.",
@@ -142,6 +197,32 @@ const bellAssumptions = [
 ];
 
 const observations = [
+  ...PROTON_DECAY_ADMISSION.observations,
+  ...BEAM_NEUTRON_ADMISSION.observations,
+  ...ALPHA_GAMMA_ADMISSION.observations,
+  ...BERNAUER_ADMISSION.observations,
+  ...PROTON_MOMENT_ADMISSION.observations,
+  ...NEUTRON_MOMENT_ADMISSION.observations,
+  ...NUCLEON_ALGEBRA_ADMISSION.observations,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.observations,
+  ...NUCLEAR_ENERGETICS_ADMISSION.observations,
+  ...HADRON_PRODUCTION_ADMISSION.observations,
+  ...PION_DECAY_ADMISSION.observations,
+  ...ELECTRON_MOMENT_ADMISSION.observations,
+  ...VACUUM_POLARIZATION_ADMISSION.observations,
+  ...HADRON_FAMILY_ADMISSION.observations,
+  ...MESON_FAMILY_ADMISSION.observations,
+  ...VIRTUAL_PROCESS_ADMISSION.observations,
+  ...FIELD_DYNAMICS_ADMISSION.observations,
+  ...ELECTROWEAK_ADMISSION.observations,
+  ...NEUTRINO_ADMISSION.observations,
+  ...SOLAR_NEUTRINO_ADMISSION.observations,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.observations,
+  ...MATTER_NEUTRINO_ADMISSION.observations,
+  ...HIGGS_TAU_ADMISSION.observations,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.observations,
+  ...WEAK_BOSON_ADMISSION.observations,
+  ...HIGGS_COUPLING_ADMISSION.observations,
   ["slac-spectrum", "C-phys-slac-spectrum", ["breidenbach1969"]],
   ["slac-scaling", "C-phys-slac-scaling", ["breidenbach1969"]],
   ["tasso-planarity", "C-phys-tasso-planarity", ["tasso1979"]],
@@ -243,6 +324,32 @@ const observations = [
   ["mass-constraint-arithmetic", "C-phys-mass-constraint-arithmetic", ["mass-constraint-replay"]]
 ];
 const contexts = [
+  ...PROTON_DECAY_ADMISSION.contexts,
+  ...BEAM_NEUTRON_ADMISSION.contexts,
+  ...ALPHA_GAMMA_ADMISSION.contexts,
+  ...BERNAUER_ADMISSION.contexts,
+  ...PROTON_MOMENT_ADMISSION.contexts,
+  ...NEUTRON_MOMENT_ADMISSION.contexts,
+  ...NUCLEON_ALGEBRA_ADMISSION.contexts,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.contexts,
+  ...NUCLEAR_ENERGETICS_ADMISSION.contexts,
+  ...HADRON_PRODUCTION_ADMISSION.contexts,
+  ...PION_DECAY_ADMISSION.contexts,
+  ...ELECTRON_MOMENT_ADMISSION.contexts,
+  ...VACUUM_POLARIZATION_ADMISSION.contexts,
+  ...HADRON_FAMILY_ADMISSION.contexts,
+  ...MESON_FAMILY_ADMISSION.contexts,
+  ...VIRTUAL_PROCESS_ADMISSION.contexts,
+  ...FIELD_DYNAMICS_ADMISSION.contexts,
+  ...ELECTROWEAK_ADMISSION.contexts,
+  ...NEUTRINO_ADMISSION.contexts,
+  ...SOLAR_NEUTRINO_ADMISSION.contexts,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.contexts,
+  ...MATTER_NEUTRINO_ADMISSION.contexts,
+  ...HIGGS_TAU_ADMISSION.contexts,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.contexts,
+  ...WEAK_BOSON_ADMISSION.contexts,
+  ...HIGGS_COUPLING_ADMISSION.contexts,
   ["slac-context", "M-phys-slac-readout", ["breidenbach1969"]],
   ["tasso-context", "M-phys-tasso-readout", ["tasso1979"]],
   ["mulan-r06-context", "M-phys-mulan-r06", ["webber2011-r06"]],
@@ -298,6 +405,32 @@ const contexts = [
   ["mass-constraint-replay-context", "M-phys-mass-constraint-replay-context", ["mass-constraint-replay"]]
 ];
 const dependencies = [
+  ...PROTON_DECAY_ADMISSION.dependencies,
+  ...BEAM_NEUTRON_ADMISSION.dependencies,
+  ...ALPHA_GAMMA_ADMISSION.dependencies,
+  ...BERNAUER_ADMISSION.dependencies,
+  ...PROTON_MOMENT_ADMISSION.dependencies,
+  ...NEUTRON_MOMENT_ADMISSION.dependencies,
+  ...NUCLEON_ALGEBRA_ADMISSION.dependencies,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.dependencies,
+  ...NUCLEAR_ENERGETICS_ADMISSION.dependencies,
+  ...HADRON_PRODUCTION_ADMISSION.dependencies,
+  ...PION_DECAY_ADMISSION.dependencies,
+  ...ELECTRON_MOMENT_ADMISSION.dependencies,
+  ...VACUUM_POLARIZATION_ADMISSION.dependencies,
+  ...HADRON_FAMILY_ADMISSION.dependencies,
+  ...MESON_FAMILY_ADMISSION.dependencies,
+  ...VIRTUAL_PROCESS_ADMISSION.dependencies,
+  ...FIELD_DYNAMICS_ADMISSION.dependencies,
+  ...ELECTROWEAK_ADMISSION.dependencies,
+  ...NEUTRINO_ADMISSION.dependencies,
+  ...SOLAR_NEUTRINO_ADMISSION.dependencies,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.dependencies,
+  ...MATTER_NEUTRINO_ADMISSION.dependencies,
+  ...HIGGS_TAU_ADMISSION.dependencies,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.dependencies,
+  ...WEAK_BOSON_ADMISSION.dependencies,
+  ...HIGGS_COUPLING_ADMISSION.dependencies,
   ["slac-readout", "slac-context", "slac-spectrum", "M-phys-slac-readout", "measurement-context"],
   ["tasso-planarity-readout", "tasso-context", "tasso-planarity", "M-phys-tasso-readout", "measurement-context"],
   ["tasso-jets-readout", "tasso-context", "tasso-three-jets", "M-phys-tasso-readout", "measurement-context"],
@@ -576,6 +709,32 @@ const dependencies = [
 ];
 
 const inferenceSources = new Map([
+  ...PROTON_DECAY_ADMISSION.inferenceSources,
+  ...BEAM_NEUTRON_ADMISSION.inferenceSources,
+  ...ALPHA_GAMMA_ADMISSION.inferenceSources,
+  ...BERNAUER_ADMISSION.inferenceSources,
+  ...PROTON_MOMENT_ADMISSION.inferenceSources,
+  ...NEUTRON_MOMENT_ADMISSION.inferenceSources,
+  ...NUCLEON_ALGEBRA_ADMISSION.inferenceSources,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.inferenceSources,
+  ...NUCLEAR_ENERGETICS_ADMISSION.inferenceSources,
+  ...HADRON_PRODUCTION_ADMISSION.inferenceSources,
+  ...PION_DECAY_ADMISSION.inferenceSources,
+  ...ELECTRON_MOMENT_ADMISSION.inferenceSources,
+  ...VACUUM_POLARIZATION_ADMISSION.inferenceSources,
+  ...HADRON_FAMILY_ADMISSION.inferenceSources,
+  ...MESON_FAMILY_ADMISSION.inferenceSources,
+  ...VIRTUAL_PROCESS_ADMISSION.inferenceSources,
+  ...FIELD_DYNAMICS_ADMISSION.inferenceSources,
+  ...ELECTROWEAK_ADMISSION.inferenceSources,
+  ...NEUTRINO_ADMISSION.inferenceSources,
+  ...SOLAR_NEUTRINO_ADMISSION.inferenceSources,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.inferenceSources,
+  ...MATTER_NEUTRINO_ADMISSION.inferenceSources,
+  ...HIGGS_TAU_ADMISSION.inferenceSources,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.inferenceSources,
+  ...WEAK_BOSON_ADMISSION.inferenceSources,
+  ...HIGGS_COUPLING_ADMISSION.inferenceSources,
   [
     "C-phys-lamoreaux-casimir",
     [
@@ -4033,7 +4192,7 @@ const liontrapSources = [
 ];
 
 /** Enforce formal, computational and empirical boundaries; this does not verify physics. */
-export function validatePhysicsDefinitions({ graph, physics }, { sources, claims, entities, relations }) {
+export function validatePhysicsDefinitions({ graph, physics, readiness }, { sources, claims, entities, relations }) {
   const admitted = new Set([...definitions.keys(), ...observations.map(([id]) => `phys:${id}`), ...contexts.map(([id]) => `phys:${id}`)]);
   for (const entity of entities.values()) if (entity.id.startsWith("phys:")) {
     assert.ok(admitted.has(entity.id), `Physical record lacks a reviewed admission contract: ${entity.id}`);
@@ -4138,7 +4297,33 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   "korobov2017-h2",
   "codata2022-mass-inputs",
   "codata2022-lattice",
-  "mass-constraint-replay"
+  "mass-constraint-replay",
+  ...PROTON_DECAY_ADMISSION.studyIds,
+  ...BEAM_NEUTRON_ADMISSION.studyIds,
+  ...ALPHA_GAMMA_ADMISSION.studyIds,
+  ...BERNAUER_ADMISSION.studyIds,
+  ...PROTON_MOMENT_ADMISSION.studyIds,
+  ...NEUTRON_MOMENT_ADMISSION.studyIds,
+  ...NUCLEON_ALGEBRA_ADMISSION.studyIds,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.studyIds,
+  ...NUCLEAR_ENERGETICS_ADMISSION.studyIds,
+  ...HADRON_PRODUCTION_ADMISSION.studyIds,
+  ...PION_DECAY_ADMISSION.studyIds,
+  ...ELECTRON_MOMENT_ADMISSION.studyIds,
+  ...VACUUM_POLARIZATION_ADMISSION.studyIds,
+  ...HADRON_FAMILY_ADMISSION.studyIds,
+  ...MESON_FAMILY_ADMISSION.studyIds,
+  ...VIRTUAL_PROCESS_ADMISSION.studyIds,
+  ...FIELD_DYNAMICS_ADMISSION.studyIds,
+  ...ELECTROWEAK_ADMISSION.studyIds,
+  ...NEUTRINO_ADMISSION.studyIds,
+  ...SOLAR_NEUTRINO_ADMISSION.studyIds,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.studyIds,
+  ...MATTER_NEUTRINO_ADMISSION.studyIds,
+  ...HIGGS_TAU_ADMISSION.studyIds,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.studyIds,
+  ...WEAK_BOSON_ADMISSION.studyIds,
+  ...HIGGS_COUPLING_ADMISSION.studyIds
 ]);
   for (const [id, sourceId, doi, extent] of [
     ["breidenbach1969", "breidenbach1969", "10.1103/PhysRevLett.23.935", "full-primary-article"],
@@ -4211,7 +4396,7 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
     assert.equal(e.status, isContext ? "definition" : "evidence-scoped");
     assert.ok(e.claimIds.includes(cid));
     assert.deepEqual(c?.contextIds, scope, "Physical finding changed preparation or dropped a combined run");
-    assert.equal(c.status, isContext ? "method-contract" : scope.length > 1 ? "literature-synthesis" : "publication-supported");
+    assert.equal(c.status, isContext ? "method-contract" : analyticalSources.has(cid) ? "analytically-checked" : scope.length > 1 ? "literature-synthesis" : "publication-supported");
   }
   for (const [id, source, target, cid, role] of dependencies) {
     const r = relations.get(`physics:${id}`), c = claims.get(cid);
@@ -4230,7 +4415,7 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   }
   for (const c of claims.values()) if (c.id.startsWith("C-phys-") || c.id.startsWith("M-phys-")) {
     const check = reproductionClaims.get(c.id);
-    const deuteronCheck = [...DEUTERON_CHECKS, ...MASS_CONSTRAINT_CHECKS].find(([, id]) => id === c.id)?.[0];
+    const deuteronCheck = [...DEUTERON_CHECKS, ...MASS_CONSTRAINT_CHECKS, ...PROTON_DECAY_CHECKS, ...BEAM_NEUTRON_CHECKS, ...ALPHA_GAMMA_CHECKS, ...BERNAUER_CHECKS, ...PROTON_MOMENT_CHECKS, ...NEUTRON_MOMENT_CHECKS, ...NUCLEON_ALGEBRA_CHECKS, ...NEUTRON_FORM_FACTOR_CHECKS, ...NUCLEAR_ENERGETICS_CHECKS, ...HADRON_PRODUCTION_CHECKS, ...PION_DECAY_CHECKS, ...ELECTRON_MOMENT_CHECKS, ...VACUUM_POLARIZATION_CHECKS, ...HADRON_FAMILY_CHECKS, ...MESON_FAMILY_CHECKS, ...VIRTUAL_PROCESS_CHECKS, ...FIELD_DYNAMICS_CHECKS, ...ELECTROWEAK_CHECKS, ...NEUTRINO_CHECKS, ...SOLAR_NEUTRINO_CHECKS, ...ATMOSPHERIC_NEUTRINO_CHECKS, ...MATTER_NEUTRINO_CHECKS, ...HIGGS_TAU_CHECKS, ...ACCELERATOR_NEUTRINO_CHECKS, ...WEAK_BOSON_CHECKS, ...HIGGS_COUPLING_CHECKS].find(([, id]) => id === c.id)?.[0];
     assert.deepEqual(c.checkIds, check ? [check] : deuteronCheck ? [deuteronCheck] : [], "Physical reproduction changed its verified scope");
     if (c.id === "C-phys-l0-bridge") continue;
     const datasetId = check ? `${c.contextIds[0]}-data` : null;
@@ -4306,7 +4491,33 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
   "fink2021-proton-mass",
   "codata2022-frequency-inputs",
   "codata2022-ill-input",
-  "mass-constraint-arithmetic"
+  "mass-constraint-arithmetic",
+  ...PROTON_DECAY_ADMISSION.comparisonIds,
+  ...BEAM_NEUTRON_ADMISSION.comparisonIds,
+  ...ALPHA_GAMMA_ADMISSION.comparisonIds,
+  ...BERNAUER_ADMISSION.comparisonIds,
+  ...PROTON_MOMENT_ADMISSION.comparisonIds,
+  ...NEUTRON_MOMENT_ADMISSION.comparisonIds,
+  ...NUCLEON_ALGEBRA_ADMISSION.comparisonIds,
+  ...NEUTRON_FORM_FACTOR_ADMISSION.comparisonIds,
+  ...NUCLEAR_ENERGETICS_ADMISSION.comparisonIds,
+  ...HADRON_PRODUCTION_ADMISSION.comparisonIds,
+  ...PION_DECAY_ADMISSION.comparisonIds,
+  ...ELECTRON_MOMENT_ADMISSION.comparisonIds,
+  ...VACUUM_POLARIZATION_ADMISSION.comparisonIds,
+  ...HADRON_FAMILY_ADMISSION.comparisonIds,
+  ...MESON_FAMILY_ADMISSION.comparisonIds,
+  ...VIRTUAL_PROCESS_ADMISSION.comparisonIds,
+  ...FIELD_DYNAMICS_ADMISSION.comparisonIds,
+  ...ELECTROWEAK_ADMISSION.comparisonIds,
+  ...NEUTRINO_ADMISSION.comparisonIds,
+  ...SOLAR_NEUTRINO_ADMISSION.comparisonIds,
+  ...ATMOSPHERIC_NEUTRINO_ADMISSION.comparisonIds,
+  ...MATTER_NEUTRINO_ADMISSION.comparisonIds,
+  ...HIGGS_TAU_ADMISSION.comparisonIds,
+  ...ACCELERATOR_NEUTRINO_ADMISSION.comparisonIds,
+  ...WEAK_BOSON_ADMISSION.comparisonIds,
+  ...HIGGS_COUPLING_ADMISSION.comparisonIds
 ]);
   for (const [id, sourceId, claimId, methodId, result, assumptions] of [
     ["slac-scaling", "breidenbach1969", "C-phys-slac-scaling", "M-phys-slac-scaling", "conditional-support", [
@@ -4569,6 +4780,32 @@ export function validatePhysicsDefinitions({ graph, physics }, { sources, claims
 
   validateDeuteronContracts({ sources, claims, studies, comparisons });
   validateMassConstraintContracts({ sources, claims, studies, comparisons });
+  validateProtonDecayContracts({ sources, claims, studies, comparisons });
+  validateBeamNeutronContracts({ sources, claims, studies, comparisons });
+  validateAlphaGammaContracts({ sources, claims, studies, comparisons, relations, readiness });
+  validateNeutronMomentContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateProtonMomentContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateBernauerContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateNucleonAlgebraContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateNeutronFormFactorContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateNuclearEnergeticsContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateHadronProductionContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validatePionDecayContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateElectronMomentContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateVacuumPolarizationContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateHadronFamilyContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateMesonFamilyContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateVirtualProcessContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateFieldDynamicsContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateElectroweakContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateNeutrinoContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateSolarNeutrinoContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateAtmosphericNeutrinoContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateMatterNeutrinoContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateHiggsTauContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateAcceleratorNeutrinoContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateWeakBosonContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateHiggsCouplingContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
 
   const bridge = claims.get("C-phys-l0-bridge");
   assert.equal(bridge?.status, "unresolved", "Carrier promotion became a derivation of quantum field theory");

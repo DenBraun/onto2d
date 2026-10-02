@@ -16,6 +16,7 @@ const checks = [
   "check-structural-geometry.mjs",
   "check-structural-geometry-site.mjs",
   "check-model-pack-registry.mjs",
+  "build-model-studio-data.mjs",
   "check-canonical-source.mjs",
   "check-schemas.mjs",
   "check-kernel-closure.mjs",

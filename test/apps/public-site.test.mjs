@@ -958,7 +958,7 @@ test("Bootstrap Provenance Explorer keeps evidence and analysis visibly separate
   assert.equal(viewRevision, appRevision);
 });
 
-test("Model Studio fully verifies the real pack before using the shared view layer", () => {
+test("Model Studio binds incremental and full-pack views to exact verified releases", () => {
   assert.match(studioApp, /models\/registry\.json/);
   assert.match(studioApp, /packages\/model-pack\/src\/browser\.js/);
   assert.match(studioApp, /packages\/model-pack\/src\/cache\.js/);
@@ -973,13 +973,13 @@ test("Model Studio fully verifies the real pack before using the shared view lay
   assert.match(studioApp, /resolveModelPackRegistry/);
   assert.match(studioApp, /expectedRegistryHash: EXPECTED_REGISTRY_HASH/);
   assert.match(studioApp, /matchModelPackRegistryResolution/);
-  assert.match(studioApp, /client\.loadHttpDirectory\(resolution\.baseUrl\)/);
-  assert.match(studioApp, /client\.loadBundle\(source, \{ transfer: "move" \}\)/);
+  assert.match(studioApp, /client\.loadHttpDirectory\(resolution\.baseUrl, \{ signal \}\)/);
+  assert.match(studioApp, /client\.loadBundle\(source, \{ transfer: "move", signal \}\)/);
   assert.match(studioApp, /createIndexedDbModelPackCacheStorage/);
   assert.match(studioApp, /createVerifiedModelPackCache/);
   assert.match(studioApp, /cache\.load\(identity, loadBoundPack\)/);
   assert.match(studioApp, /MODEL_PACK_CACHE_STORAGE_/);
-  assert.match(studioApp, /dataset\.cache = "unavailable"/);
+  assert.match(studioApp, /reportCache\("unavailable"\)/);
   assert.match(studioApp, /"Cached model verified"/);
   const modelRegistry = JSON.parse(read("models/registry.json"));
   const firstRelease = modelRegistry.entries[0];
@@ -991,15 +991,16 @@ test("Model Studio fully verifies the real pack before using the shared view lay
   assert.match(studioApp, /type: "module"/);
   assert.match(studioApp, /ownsWorker: true/);
   assert.match(studioApp, /error\.code\.startsWith\("MODEL_PACK_WORKER_"\)/);
-  assert.match(studioApp, /loadModelPackHttpDirectory\(resolution\.baseUrl\)/);
+  assert.match(studioApp, /loadModelPackHttpDirectory\(resolution\.baseUrl, \{ signal \}\)/);
   assert.match(studioApp, /dataset\.registry = resolution\.registryTrust/);
-  assert.match(studioApp, /dataset\.verifier = "worker"/);
-  assert.match(studioApp, /dataset\.verifier = "main-thread-fallback"/);
+  assert.match(studioApp, /verifier: "worker"/);
+  assert.match(studioApp, /verifier: "main-thread-fallback"/);
   assert.match(studioApp, /createVerifiedModelPresentation\(pack, presentationOptions\)/);
   assert.match(studioApp, /state\.presentation\.catalog\(/);
   assert.match(studioApp, /state\.presentation\.inspect\(/);
   assert.match(studioApp, /state\.presentation\.neighborhood\(/);
-  assert.match(studioApp, /dataset\.presentation = "lazy"/);
+  assert.match(studioApp, /loadBrowseModel\(resolution/);
+  assert.match(studioApp, /dataset\.presentation = state\.browse \? "incremental" : "lazy"/);
   assert.doesNotMatch(studioApp, /pack\.files\["model\/(?:nodes|edges)\.json"\]/);
   assert.doesNotMatch(studioApp, /function fetchJson/);
   assert.doesNotMatch(studioApp, /if\s*\([^)]*modelId\s*===\s*["']/);

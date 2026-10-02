@@ -156,6 +156,8 @@
     "check:types": "node scripts/check-types.mjs",
     "check:workspace": "node scripts/check-workspace.mjs",
     "revision:model-studio": "node scripts/update-model-studio-revision.mjs",
+    "model-studio:data": "node scripts/build-model-studio-data.mjs --write",
+    "model-studio:data:verify": "node scripts/build-model-studio-data.mjs",
     "test": "node scripts/test.mjs",
     "test:live-bootstrap-trace": "node --test tools/live-bootstrap-trace/export.test.mjs",
     "test:kernel": "node scripts/test.mjs packages/kernel/test",

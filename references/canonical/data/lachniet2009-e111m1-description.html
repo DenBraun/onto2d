@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="en">
+<meta name="author" content="Vitaly Chesnokov">
+<meta name="description" content="CLAS Physics Database Measurement View">
+
+<title>Measurement E111M1 // CLAS Physics Database</title>
+
+<link rel="stylesheet" type="text/css" href="/jlab/common.css">
+<link rel="stylesheet" type="text/css" href="/jlab/msm.css">
+
+<script>
+
+
+function put_slice() {    var fixargnum = "";
+    var fixval = "";
+    var img = document.getElementById("plot");
+
+    img.src = "fp.cgi?eid=111&mid=1" + fixval + fixargnum;
+
+    // to fix: fixargnum
+}
+</script>
+
+</head>
+
+<body>
+<h1>CLAS Physics Database</h1>
+<noscript>
+<div>
+    Your browser does not support JavaScript
+    or JavaScript is turned off in your browser.
+    It is strongly recommended to turn JavaScript on
+    in order to view this page.
+    Some features may not work if JavaScript is turned off.
+</div>
+</noscript>
+
+
+<div class="top-menu">
+	<a href="https://www.jlab.org" title="Go to the JLab home page">JLab</a>
+	|
+	<a href="db.cgi" title="Search for specific parameters">Search</a>
+	|
+	<a href="view.cgi?mode=overview" title="List of all available experiments">Overview</a>
+	|
+	<a href="db.cgi?login=1&olduser=" title="Login as registered user">Login</a>
+	|
+	<a href="edit.cgi" title="Add new experiments/edit existing">Edit</a>
+	|
+	<a href="newuser.cgi" title="Register new user for adding experiments">Register</a>
+</div>
+
+
+<h2>Measurement E111M1</h2>
+
+<p>
+
+You are not logged in.
+<br>
+
+
+<p>
+<b>Experiment:</b>
+<a href="/cgi-bin/jlab/db.cgi?search=on&eid=111"
+   title="Click to see all available measurements of this experiment">
+    E5, 2000
+</a>
+</p>
+
+<p>
+<b>Spokespersons:</b> W. K. Brooks and M. F. Vineyard
+</p>
+
+
+<p><b>Experiment comment:</b> Data analysis done by J.D. Lachniet, a student at CMU.</p>
+
+
+
+
+<p>
+	<b>Publication:</b>
+</p>
+
+<ul>
+
+<li>
+	<em>J.Lachniet, A.Afanasev, H.Arenh?vel, W.K.Brooks, G.P.Gilfoyle, S.Jeschonnek, B.Quinn, M.F.Vineyard, et al (the CLAS Collaboration)</em>
+		<a href="/cgi-bin/jlab/publ.cgi?eid=111&pid=1"
+	   title="Click to download full text of the publication">
+	A Precise Measurement of the Neutron Magnetic Form Factor GMn in the Few-GeV2 Region
+	</a>
+		//    
+        PRL 102, 192001 (2009)
+	
+</li>
+
+</ul>
+
+
+<p>
+	<b>Quantity measured:</b> GMn<sub>reduced</sub>, 
+	<br>
+	<span style="padding-left: 2em; margin-top: 0; padding-top: 0; font-style: italic; font-size: 10px; font-family: verdana, sans-serif;">
+	Neutron magnetic form factor (GMn) divided by &mu;<sub>n</sub>*GD where &mu;<sub>n</sub> is neutron magnetic moment and GD is the dipole form factor.
+	</span>
+	<br>
+	<b>Beam:</b> e, <b>polarization:</b> polarized
+	<br>
+	<b>Target:</b> d (Z=1, A=2), <b>polarization:</b> none
+	<br>
+	<b>Final state:</b> p n, <b>polarization:</b> none
+	<br>
+</p>
+
+<table class="props" border="0">
+<tr title="Photon transferred momentum square">
+  <th align="right">Q<sup>2</sup>&nbsp;:</th>
+  <td>0.9848&nbsp;&mdash;&nbsp;4.7727 GeV<sup>2</sup></td>
+</tr>
+<tr title="Invariant mass of the final hadronic system">
+  <th align="right">W&nbsp;:</th>
+  <td>0&nbsp;&mdash;&nbsp;1.095445115 GeV</td>
+</tr>
+
+</table>
+
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+    
+
+    
+</td>
+<td align="center">
+    <b>Observable quantity measured (Y axis):</b> GMn<sub>reduced</sub>, 
+    <br>
+    <img id="plot"
+     alt="Plot measurement data"
+     src="/cgi-bin/jlab/fp.cgi?eid=111&mid=1">
+    <p>
+        <b>Parameter (X axis):</b>
+        
+            Q<sup>2</sup>, 
+        
+    </p> 
+</td>
+</tr>
+</table>
+
+
+
+<p>
+	Click <a href="/cgi-bin/jlab/msm.cgi?text=on&eid=111&mid=1">here</a>
+	to get data in text file, delimited with tabs.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+	<b>Measured data:</b>
+</p>
+
+<table class="data" border="1" cellspacing="1" cellpadding="0">
+<thead>
+<tr>
+<th>
+	Q<sup>2</sup>
+</th>
+<th>
+	GMn<sub>reduced</sub>
+</th>
+<th>
+	Stat. error
+</th>
+<th>
+	Syst. error
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+ <td>0.9848</td>
+ <td class="f">0.9953</td>
+ <td>0.008</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>1.1364</td>
+ <td class="f">1.0073</td>
+ <td>0.0079</td>
+ <td>0.025</td>
+</tr>
+<tr>
+ <td>1.2879</td>
+ <td class="f">1.0319</td>
+ <td>0.0072</td>
+ <td>0.022</td>
+</tr>
+<tr>
+ <td>1.4394</td>
+ <td class="f">1.0228</td>
+ <td>0.0067</td>
+ <td>0.02</td>
+</tr>
+<tr>
+ <td>1.5909</td>
+ <td class="f">1.0127</td>
+ <td>0.0065</td>
+ <td>0.019</td>
+</tr>
+<tr>
+ <td>1.7424</td>
+ <td class="f">1.0136</td>
+ <td>0.0066</td>
+ <td>0.019</td>
+</tr>
+<tr>
+ <td>1.8939</td>
+ <td class="f">1.0167</td>
+ <td>0.0064</td>
+ <td>0.019</td>
+</tr>
+<tr>
+ <td>2.0455</td>
+ <td class="f">1</td>
+ <td>0.0065</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>2.197</td>
+ <td class="f">0.9919</td>
+ <td>0.0071</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>2.3485</td>
+ <td class="f">1.0016</td>
+ <td>0.0084</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>2.5</td>
+ <td class="f">1.0212</td>
+ <td>0.0099</td>
+ <td>0.023</td>
+</tr>
+<tr>
+ <td>2.6515</td>
+ <td class="f">1.0344</td>
+ <td>0.0108</td>
+ <td>0.022</td>
+</tr>
+<tr>
+ <td>2.803</td>
+ <td class="f">1.0012</td>
+ <td>0.0113</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>2.9546</td>
+ <td class="f">0.9954</td>
+ <td>0.0123</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>3.1061</td>
+ <td class="f">1.0019</td>
+ <td>0.0142</td>
+ <td>0.021</td>
+</tr>
+<tr>
+ <td>3.2576</td>
+ <td class="f">0.9779</td>
+ <td>0.0154</td>
+ <td>0.02</td>
+</tr>
+<tr>
+ <td>3.4091</td>
+ <td class="f">0.9967</td>
+ <td>0.0172</td>
+ <td>0.02</td>
+</tr>
+<tr>
+ <td>3.5606</td>
+ <td class="f">0.9918</td>
+ <td>0.0184</td>
+ <td>0.018</td>
+</tr>
+<tr>
+ <td>3.7121</td>
+ <td class="f">0.9742</td>
+ <td>0.0203</td>
+ <td>0.018</td>
+</tr>
+<tr>
+ <td>3.8636</td>
+ <td class="f">0.9791</td>
+ <td>0.023</td>
+ <td>0.018</td>
+</tr>
+<tr>
+ <td>4.0152</td>
+ <td class="f">1.0285</td>
+ <td>0.0252</td>
+ <td>0.018</td>
+</tr>
+<tr>
+ <td>4.1667</td>
+ <td class="f">0.9193</td>
+ <td>0.0265</td>
+ <td>0.017</td>
+</tr>
+<tr>
+ <td>4.3182</td>
+ <td class="f">0.9079</td>
+ <td>0.0294</td>
+ <td>0.017</td>
+</tr>
+<tr>
+ <td>4.4697</td>
+ <td class="f">0.9903</td>
+ <td>0.0386</td>
+ <td>0.017</td>
+</tr>
+<tr>
+ <td>4.6212</td>
+ <td class="f">1.1074</td>
+ <td>0.0989</td>
+ <td>0.014</td>
+</tr>
+<tr>
+ <td>4.7727</td>
+ <td class="f">1.0921</td>
+ <td>0.1302</td>
+ <td>0.014</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</body>
+</html>

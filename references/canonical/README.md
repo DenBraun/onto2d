@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 938 records, 566 connections, 908 claims and 314 sources.
+The current graph contains 1166 records, 921 connections, 1232 claims and 385 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -52,6 +52,205 @@ specify particular fields and interactions. Each graph citation records the
 sections actually reviewed. Representation dimensions, occupations, physical
 states and stable constituents are distinct counting domains.
 
+Card 1.0 has this scoped framework and its specified model examples. Field
+content, quantum algebra and the chosen state representation are inputs to
+these constructions. They are not derived from the Level-0 effective carrier.
+That proposed bridge remains explicitly unresolved in `C-phys-l0-bridge`;
+its necessary-parent arrow, weight and unit minima are not admitted. SOMA
+level, phase and pattern labels do not establish a temporal emergence sequence.
+
+The free-field time-evolution contract specifies a time-independent Hamiltonian,
+canonical algebra and positive-frequency modes. The finite oscillator check
+separates preservation of that algebra from preservation of the ground-state
+covariance: squeezing can preserve the first without the second. Stationary
+states can have changing unequal-time correlations. Card 1.26 retains this
+scoped construction; interaction-amplitude vertices, renormalization-scale
+changes and numerical sampling do not supply a universal temporal process or
+maintenance cause.
+
+## Electroweak model and boson observation
+
+[Higgs's 1964 model](https://doi.org/10.1103/PhysRevLett.13.508) supplies a
+linearized scalar/vector example, with its explicit classical-theory boundary.
+[Weinberg's 1967 model](https://doi.org/10.1103/PhysRevLett.19.1264) supplies
+electron-type chiral representations, a scalar doublet and gauge/electron mass
+relations. The graph preserves each paper's normalization and field signs.
+Gauge and Yukawa couplings remain inputs; the relations do not predict their
+numerical values or the mass hierarchy. A chosen nonzero field component is
+not itself an observed gauge-invariant order parameter.
+
+The [ATLAS 2012 observation](https://arxiv.org/abs/1207.7214v2) separates
+acquisition, response, selected candidates and likelihood inference. Its
+four-lepton and diphoton channels determine the reported mass; the broader
+combination determines the excess and common signal strength. The WW table
+and likelihood use different final selections. Weighted plots reuse the same
+events, and reanalysed 2011 data are not independent replications. Local and
+global significance retain their different hypotheses and search ranges.
+
+The historical result supports a neutral boson compatible with the Standard
+Model Higgs hypothesis. It does not alone determine every coupling, unique
+spin-parity, the scalar potential or vacuum stability. Synthetic mass-matrix
+and Hessian checks do not reconstruct detector response or likelihoods.
+The selected PDG single-doublet construction specifies its potential convention,
+unitary-gauge background and tree-level gauge/scalar masses. In the charged
+fermion mass basis the one-Higgs coefficient is `m_i/v = y_i/sqrt(2)`.
+Masses or Yukawa parameters are supplied inputs; their hierarchy is not derived.
+The background differs from the propagating Higgs excitation, and a classical
+minimum does not establish absolute quantum-vacuum stability. The minimal
+charged-fermion formula supplies no neutrino-mass mechanism or composite-hadron
+mass sum.
+
+Cards 1.8, 1.9, 1.14 and 1.28 have this qualified formal and collider scope.
+Their claims of generated chirality, a predicted mass hierarchy, universal
+composite-matter stability, causal maintenance and a fixed temporal order are
+excluded. Parent weights, carrier minima and SOMA classifications receive no
+scientific validation. Species-specific coupling measurements and a cosmological
+transition require separately specified evidence.
+
+## Historical W and Z observations
+
+The [UA1 W report](https://doi.org/10.1016/0370-2693(83)91177-2) separates
+the 1982 acquisition, detector response, six displayed electron candidates and
+the final five-central-event subset. Its overlapping selection methods reuse
+the same data. The exact two-body transverse-mass inequality does not guarantee
+a bound for every reconstructed detector estimate. The reported 90% lower
+limit and the chosen mass fit are distinct inferences; the alternative QCD
+smearing fit is a dependent model comparison.
+
+The [UA1 Z report](https://doi.org/10.1016/0370-2693(83)90188-0) uses a separate
+1983 acquisition with four electron pairs and one dimuon. The electron mass
+summary retains the unfinished common electromagnetic calibration. The dimuon
+mass combines magnetic and transverse-recoil estimates under a no-neutrino
+assumption. These historical masses are not current precision values, and the
+discovery peak does not determine an intrinsic width or lifetime. The reviewed
+CERN preprints, selected visual checks and conflicting event identifier are
+explicit. Card 1.24 remains open for widths, lifetimes and branching fractions;
+stable persistent W/Z carriers are excluded.
+
+## Higgs decay to tau leptons
+
+The [CMS tau analysis](https://arxiv.org/abs/1708.00373v2) separates the
+2016 exposure, reconstructed decay distributions, response/control inputs
+and original likelihood. At the adopted mass 125.09 GeV, its 2016-only
+signal strength is `1.09 (+0.27/-0.26)` relative to the Standard Model rate,
+with local observed significance 4.9 standard deviations. The stronger
+Run1-plus-2016 combination reuses this exposure. Tau decay neutrinos remain
+unobserved; reconstructed hadronic tau objects are not stable tau tracks.
+Calibration samples can overlap the search, and fitted channel summaries
+share nuisance constraints.
+
+The [coupling framework](https://arxiv.org/abs/1307.1347v2) defines the
+production-times-partial-width rate divided by total width for a single
+narrow resonance. The common vector/fermion scan uses the
+[referenced CMS method](https://arxiv.org/abs/1401.5041v2), treating H-to-WW
+as signal; the tau-rate fit treats it as background. Its reported Standard
+Model compatibility depends on the implemented width/loop map, which is
+not fully specified in the reviewed passages. The generic framework does
+not supply those missing choices. A common fermion modifier is not an
+isolated tau Yukawa determination or a derivation of all fermion masses.
+
+Post-fit plots and the sensitive-bin Table 4 are dependent summaries.
+Some printed component totals remain unreconciled; no replacement totals
+or likelihood replay are claimed. These published outcomes receive no
+local executable certification. Their width/loop and unreconciled-table
+obligations remain attached to these records.
+
+## Reactor neutrino oscillations
+
+The [PDG mixing treatment](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf)
+defines flavor/mass bases and coherent vacuum phases within the declared
+unitary model. Oscillation phases constrain mass-squared differences; they
+do not determine absolute masses or a unique mass-generation mechanism.
+
+The [KamLAND 2005 study](https://arxiv.org/abs/hep-ex/0406035v3) supplies a
+reactor preparation and an [official selected-energy release](https://www.awa.tohoku.ac.jp/KamLAND/datarelease/2ndresult.html).
+Its 258 selected prompt candidates, no-oscillation expectation, backgrounds, average
+survival and rate-and-shape fit have separate records. The 2.6 MeV prompt
+threshold and approximately 3.4 MeV neutrino threshold concern different
+energy variables. Reactor histories, response and the revised alpha-neutron
+background remain inputs; the 180 km plotting baseline does not replace them.
+
+The local check binds the two unchanged source assets and verifies selected
+energy summaries, printed central arithmetic and synthetic phase identities.
+It does not reproduce the likelihood or its uncertainty. The earlier sample
+is part of this acquisition, and the solar-combined result is a different
+inference. Cards 1.17 and 1.25 remain open for their other source assertions,
+including transport, astrophysical-source and cosmological applications. The
+solar, atmospheric and accelerator results retain their own acquisition and
+interpretation scopes.
+
+## Accelerator tau-neutrino appearance
+
+The [OPERA appearance result](https://arxiv.org/abs/1507.01417v2) separates
+the 2008-2012 CNGS acquisition, 5408 analyzed selected events, reconstructed
+tau-decay candidates, modeled signal/background expectations and original
+inference. Five selected candidates across four channels are not a measured
+transition probability. The beam-composition and reconstruction conditions
+come from the selected [method passages](https://arxiv.org/abs/1308.2553v1),
+with their [publisher erratum](https://doi.org/10.1007/JHEP04(2014)014) retained.
+
+The reported 5.1-standard-deviation appearance result uses channel-specific
+backgrounds and pseudoexperiment calibration. A total-count Poisson tail does
+not reproduce it. The signal-strength and full-mixing mass-squared intervals
+are 90% confidence results from the same acquisition. Earlier candidate papers,
+the fifth-event display and alternative statistical implementations do not
+provide independent experiments. No absolute neutrino mass, unique mass origin,
+transport model or cosmological prediction follows from this finite admission.
+
+## Solar active-flavor evidence
+
+The [SNO neutral-current study](https://arxiv.org/abs/nucl-ex/0204008v2)
+separates its pure-heavy-water acquisition, 2928 selected events, calibration
+and background estimates, fitted channel yields and flux interpretation.
+Charged current selects electron flavor; neutral current has equal response
+to the three active flavors; elastic scattering has reduced non-electron
+sensitivity. Its channel-normalized elastic-scattering flux is therefore
+electron-equivalent, not the total active flux. Reconstructed energy,
+reaction threshold and neutron-capture gamma energy remain distinct.
+
+The same-data joint analysis reports a non-electron active component
+`3.41 (+/-0.45 statistical)(+0.48/-0.45 systematic) x 10^6 cm^-2 s^-1`,
+under the standard boron-8 shape and adopted weak-response model. This is
+a combined muon/tau component, not separately identified incoming flavors.
+Its inference is not subtraction of independent CC and NC measurements;
+the joint covariance and likelihood are unreproduced. The external
+Super-Kamiokande constraint and shape-relaxed extraction are separate analyses.
+The result supports flavor transformation without selecting a unique
+oscillation mechanism, absolute mass or matter-enhancement explanation.
+
+## Atmospheric disappearance
+
+The [Super-Kamiokande 1998 study](https://arxiv.org/abs/hep-ex/9807003v2)
+supplies a separate 535-day atmospheric acquisition. Reconstructed
+electron-like/muon-like counts, containment, the modeled no-oscillation
+response, double ratios and zenith asymmetry have distinct records.
+Visible energy and charged-lepton direction are imperfect proxies for
+neutrino energy and direction. The historical physical two-flavor fit
+reports `sin^2(2 theta)=1` and `Delta m^2=2.2 x 10^-3 eV^2`, conditional
+on its flux, interaction, detector and nuisance model.
+
+Version 2 retains corrected event weights and a freely fitted overall
+normalization. The fit, confidence region and reconstructed L/E display
+reuse the selected sample and are not locally reproduced. This acquisition
+does not distinguish tau from sterile disappearance or directly observe tau
+appearance; its mass-squared difference is not an absolute neutrino mass.
+
+## Coherent neutrino propagation in matter
+
+Selected [PDG matter-propagation equations](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf)
+specify a closed, coherent three-active-flavor model with prescribed vacuum
+masses, mixing, energy and ordinary-matter density. Antineutrinos conjugate
+the mixing matrix and reverse the potential. A common neutral-current
+term contributes only an overall phase within this model.
+
+The separate two-flavor approximation distinguishes instantaneous maximal
+mixing from adiabatic following: varying density introduces derivative
+coupling between instantaneous states. Neither resonance alone nor the
+formal equations establish complete conversion or reproduce a solar/Earth
+profile. Effective propagation eigenvalues do not generate vacuum masses.
+These definitions are not prerequisites for the SNO response comparison
+and do not turn that observation into a measured matter effect.
+
 ## Particle measurements
 
 [Breidenbach et al.](https://doi.org/10.1103/PhysRevLett.23.935) supplies
@@ -72,9 +271,9 @@ order. Jet multiplicity, detector counts and representation dimensions do not
 define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
-The first four physical source cards remain open for the remaining scattering,
-spectroscopy, lepton-specific and gluon-property evidence and their proposed
-dependencies. Lattice computations need computational evidence.
+Quark, lepton and gluon source cards 1.1-1.3 remain open for the remaining
+scattering, spectroscopy, species-specific evidence and proposed dependencies.
+Lattice computations need computational evidence.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
 
@@ -115,6 +314,14 @@ variance and chosen free-particle occupation are zero. Smeared free-field
 correlations and their spacelike commutator have separate meanings. These
 quantities do not specify ongoing particle creation or a universal carrier count.
 
+Card 1.27 retains this model-dependent state definition and the scoped force
+and spectral observations below. Stationarity does not require an additional
+maintenance cause or make unequal-time correlations constant. The free model
+does not establish a unique vacuum substance, absolute vacuum energy or an
+electroweak background. Interacting, symmetry-breaking and curved-spacetime
+states require separate constructions. The original physical parent weights,
+maintenance arrow and carrier minima are excluded.
+
 [Casimir's ideal-plate calculation](https://dwc.knaw.nl/DL/publications/PU00018547.pdf)
 defines an interaction-energy difference. Real measurements require material
 response, geometry and electrostatic calibration. The sphere-plane experiment
@@ -130,10 +337,66 @@ The [hydrogen microwave experiment](https://doi.org/10.1103/PhysRev.72.241)
 reports an approximate 1000 MHz level separation. The
 [Bethe model](https://doi.org/10.1103/PhysRev.72.339) estimates 1040 MHz under
 an assumed cutoff; measurement and theoretical compatibility have separate
-records. Neither experiment measures absolute vacuum energy. The
+records. Neither result measures absolute vacuum energy. The
 [external-source formulation](https://doi.org/10.1103/PhysRevD.72.021301)
 limits what a Casimir force uniquely identifies without denying quantum
 correlations. Acquisition and fit reproduction remain open research tasks.
+
+## Electron anomaly and electromagnetic running
+
+The [Fan et al. study](https://doi.org/10.1103/PhysRevLett.130.071801) measures a single
+trapped electron through quantum-jump spectra. Fitted anomaly and cyclotron
+frequencies, trap corrections and the cavity response condition the reported
+`g/2 = 1.00115965218059(13)`. The eleven magnetic-field settings belong to one
+determination; cavity uncertainties are correlated for nearby fields. The
+unexplained cyclotron-line broadening remains explicit. The authors advise
+against averaging this determination with their 2008 result because the
+uncertainty correlations are difficult to determine.
+
+[Schwinger's letter](https://doi.org/10.1103/PhysRev.73.416) supplies the leading
+electron anomaly `a_e = alpha/(2*pi)` and a renormalized mass/charge convention.
+That term is separate from the full Standard Model prediction and its external
+inputs. Neither the experimental moment nor a finite algebra check measures a
+bare mass or resolves separate virtual-particle contributions. The
+[electron-moment verifier](../../models/causal-emergence/canonical/verify-electron-moment.py)
+checks its declared arithmetic; it does not reproduce the spectra, cavity model
+or full radiative calculation.
+
+The [L3 small-angle analysis](https://doi.org/10.1016/S0370-2693(00)00122-2)
+uses 1993–1995 Bhabha-scattering data near the Z resonance. Because the sample
+also supplies the luminosity normalization, the inference uses angular shape.
+Its fitted deformation of nominal QED running and the resulting
+`alpha^-1(-2.1 GeV^2) - alpha^-1(-6.25 GeV^2) = 0.78 +/- 0.26`
+are interpretations of the same acquisition. A zero deformation preserves
+nominal running. The plotted lower endpoint is fixed to theory, and the
+opposite-side material discrepancy remains a systematic limit. The separate
+1998 large-angle acquisition is outside this admission.
+
+The [effective-alpha verifier](../../models/causal-emergence/canonical/verify-vacuum-polarization.py)
+checks synthetic normalization and the added deformation from the printed
+slope. It does not calculate the nominal vacuum polarization, reproduce the
+reported full difference or validate the likelihood. These records, together
+with the scoped Lamb/Bethe and QCD-running evidence, qualify source card 1.13.
+They support specific radiative corrections and scale-dependent descriptions,
+not a measured virtual-particle population, absolute vacuum energy or a
+universal construction rule. Arbitrary source-card parent weights and minima
+are excluded.
+
+Selected pages 769-776 of [Feynman's amplitude construction](https://doi.org/10.1103/PhysRev.76.769)
+give card 1.22 a scoped perturbative QED treatment. External states, internal
+propagators and the sum of interfering amplitudes have separate definitions.
+Four-momentum is conserved; internal momenta are not restricted to a free
+mass shell, and pole regions prevent identifying internal with always off
+shell. The ordering of matrices along a fermion line is distinct from measured
+chronology. The selected historical passages do not establish an all-orders
+construction or a universal particle population.
+
+The [kinematic verifier](../../models/causal-emergence/canonical/verify-virtual-process.py)
+checks exact synthetic external mass shells, momentum conservation, spacelike
+transfer, Lorentz boosts and generic interference. It calculates no spinor
+amplitude, loop integral or experimental cross section. Card 1.22's universal
+formation/maintenance dependencies, parent weights and carrier minima are
+excluded; the existing measured radiative effects keep their own model inputs.
 
 ## QCD running and its experimental interpretation
 
@@ -193,6 +456,15 @@ potential formula has an incorrect large-distance asymptote. Independent
 simulation replay, physical-mass extrapolation, continuum confinement and
 real-time hadronization remain separate obligations.
 
+Card 1.15 is reviewed with qualifications. These static-source and screening
+records, color-singlet algebra and charge-search limits do not establish its
+universal downward-causation mechanism or blanket composite stability. Those
+assertions and the arbitrary parent weights/minima are excluded. A distinct
+macroconstraint hypothesis needs a defined macrovariable, micro-to-macro map,
+effective dynamics and discriminating intervention or reduction predictions.
+General confinement card 1.7 retains its own unresolved scope; independent
+lattice replay is separate from the finite disposition of card 1.15.
+
 The [Dürr light-hadron calculation](https://arxiv.org/abs/0906.3599v1) uses
 two-plus-one-flavor QCD with degenerate up/down masses at three lattice spacings.
 The graph separates correlator energies, scale-setting inputs, finite-volume
@@ -211,9 +483,9 @@ The lightest rho and Delta points near a=0.085 fm are excluded because the
 lowest two-particle level is insufficiently sensitive to the resonance mass.
 This limitation has its own record. Finite-volume energies do not establish
 physical lifetimes, and the isospin-symmetric spectrum does not resolve the
-proton-neutron mass difference. Source cards 1.10 and 1.11 remain open for
-formation dynamics, form factors, magnetic moments, weak-decay and nuclear
-stability, and their claimed constituent minima.
+proton-neutron mass difference. Hadron production and nucleon properties have scoped evidence below.
+Their formal constituent labels and response measurements establish neither
+universal carrier minima nor a necessary construction order.
 
 ## Isospin-breaking mass splittings
 
@@ -414,6 +686,259 @@ Raw acquisition, fitted covariance and the complete systematic budget have not
 been independently reproduced. These storage results do not independently test
 a beam experiment, determine a unique decay mechanism or establish proton and
 nuclear stability.
+
+The [Nico beam measurement](https://doi.org/10.1103/PhysRevC.71.055502)
+counts protons from neutron beta decay and uses a downstream fluence monitor
+to infer the neutron population in a defined trap region.
+Its June 2000-February 2001 acquisition gave 886.3 +/- 1.2 (statistical)
++/- 3.2 (systematic) seconds. The
+[Yue calibration update](https://doi.org/10.1103/PhysRevLett.111.222501)
+applies a new absolute monitor calibration to that same acquisition. Its
+887.7 +/- 1.2 (statistical) +/- 1.9 (systematic) seconds is an updated
+inference, not a second neutron lifetime acquisition. Calibration, temporal
+stability assumptions, proton detection and trapping corrections remain
+separate dependencies. The graph does not average these dependent results
+or combine beam and storage measurements.
+
+The reviewed Yue author manuscript's Equation 2 reverses the wavelength
+ratio required by Equation 1 and the reported thermal efficiency. Both the
+printed conflict and the consistent conversion are explicit. This establishes
+a conflict in that manuscript, not an error in the published numerical analysis.
+The [beam arithmetic verifier](../../models/causal-emergence/canonical/verify-beam-neutron.py)
+checks this conversion, the 1.4-second recalibration and the rounded 2.3-second
+uncertainty budget. It does not reproduce the raw acquisition, calibration
+chain, proton-loss fit, deposit-stability model or full covariance.
+
+The [detailed AlphaGamma study](https://doi.org/10.1088/1681-7575/aac283)
+separates source-activity calibration, alpha-to-gamma count-rate transfer and
+thermal monitor normalization. The primary rate identity cancels a common
+gamma response and branching fraction; the full corrected experiment still
+depends on geometry, losses, transport and nuclear-data inputs. A total beam
+rate in inverse seconds is distinct from a fluence rate per unit area.
+Thermal efficiency additionally depends on wavelength, the inverse-velocity
+assumption and finite-beam corrections. Its reported 2018 efficiency remains
+distinct from the value used in the 2013 lifetime update.
+
+The 2011 dissertation's two-stack activity and the 2018 paper's activity are
+separate source-specific results. The
+[calibration arithmetic verifier](../../models/causal-emergence/canonical/verify-alpha-gamma.py)
+checks the thesis weighted mean and shared-error propagation under both
+conflicting printed common-error fractions. It also preserves the 2018
+activity-ratio discrepancy, missing factor in Equation 28 and absorption versus
+transmission label conflict. The measured efficiency is an input to the
+attenuation check. These checks establish bounded algebraic consistency or
+inconsistency of printed material; they do not reproduce the calibration,
+27-point fit, full covariance or lifetime analysis, or establish an error in
+the underlying experimental computation.
+
+## Elastic proton form factors
+
+The [A1 analysis](https://doi.org/10.1103/PhysRevC.90.015206) separates the
+MAMI scattering acquisition, corrected cross-section ratios, normalization
+and electric/magnetic form-factor extraction. The reviewed article is
+[arXiv:1307.6227v2](https://arxiv.org/abs/1307.6227v2); selected ancillary
+tables retain their exact deposited bytes and source descriptions.
+Its 1,422 cross-section entries reuse the acquisition previously reported in
+2010. Their spline normalization, scaled point uncertainties and shared
+normalization parameters are analysis inputs, not independent calibrations.
+
+The 77 Rosenbluth extractions and four additional constrained alternatives
+remain distinct. The separation uses normalization from the spline fit, so
+agreement between these methods is a dependent comparison. The selected
+1,000-point spline table describes a fitted curve with pointwise uncertainty
+bands; its grid points are not new measurements. Its magnetic column is
+`GM / mu_p`, while the Rosenbluth table supplies `GM`. Charge and magnetic
+normalizations are imposed reference conditions, not new moment measurements.
+
+The [table verifier](../../models/causal-emergence/canonical/verify-bernauer-data.py)
+checks the finite table census, normalization conventions, form-factor ratio
+identities and printed fit bookkeeping. A discrepant Friedrich-Walcher row in
+Table IV is preserved without diagnosing the original fitting computation.
+Raw event reduction, the fitted parameters, full covariance and uncertainty
+bands have not been independently reproduced. Radiative and two-photon
+corrections and model dependence remain part of the inference. These results
+do not establish a literal static three-dimensional charge map, an exact
+constituent count or hadron formation dynamics.
+
+## Nucleon magnetic moments
+
+[Mooser's proton measurement](https://arxiv.org/abs/1406.4888v1) and the
+[Schneider result](https://doi.org/10.1126/science.aan0207) retain separate
+double-trap campaigns. The latter's methods are reviewed through selected
+passages of the [original dissertation](https://doi.org/10.25358/openscience-4441);
+the journal reading is limited to its indexed abstract and metadata. The graph
+separates the frequency-ratio definition, spin-response inference, statistical
+center and corrected moment. The dissertation describes the same campaign,
+not another measurement. Its ratio, variance and likelihood-normalization
+print conflicts remain unresolved. The
+[proton verifier](../../models/causal-emergence/canonical/verify-proton-moment.py)
+checks bounded identities and printed arithmetic, retaining the linear
+systematic-error sum. A definition link identifies the nuclear-magneton units
+of the Sachs normalization without changing the historical fit's inputs.
+
+[Afach's neutron/mercury experiment](https://arxiv.org/abs/1410.8259v2) measures
+a positive precession-frequency ratio in a shared storage chamber. Different
+spatial sampling and magnetic responses require corrections. An absolute
+neutron gyromagnetic magnitude additionally uses the quoted external atomic
+mercury calibration; the ratio does not independently determine the sign.
+The [neutron verifier](../../models/causal-emergence/canonical/verify-neutron-moment.py)
+preserves the 16 grouped run entries, correction directions and the authors'
+maximum-directional-error rule. Neither verifier reproduces acquired signals,
+resonance fits, field maps or full covariance.
+
+## Neutron elastic response
+
+[Lachniet et al.](https://arxiv.org/abs/0811.1716v2) separates deuterium
+quasielastic event ratios from the magnetic form-factor extraction. The bound
+26-point table is checked against the versioned author figure. Its last two
+reported systematic fractions do not match the article's stated range; that
+conflict is retained without altering the data. Nuclear corrections and
+Fermi-motion acceptance factors are distinct inputs.
+
+[Riordan et al.](https://arxiv.org/abs/1008.1738v2) separates measured helium-3
+asymmetries, correction stages, the inferred ratio and its electric-response
+conversion. The versioned Table III values take precedence over the older
+abstract values. The conversion uses Lachniet magnetic data and the adopted
+neutron moment. Interpolation and rounded-table checks do not reproduce the
+nuclear response, acceptance simulation or covariance. The first electric
+central value is compatible with the printed ratio's rounding interval;
+central arithmetic alone does not exactly reproduce it.
+
+## Identified hadron production
+
+The selected [SLD analysis](https://arxiv.org/abs/hep-ex/9805029v1) supplies
+inclusive reconstructed neutral-kaon, Lambda, K-star and phi spectra in
+hadronic Z decays. The graph separates reconstruction, corrected differential
+yields, measured-range integrals and extrapolation into unmeasured momentum.
+A local check integrates the 44 transcribed bins and retains central-value
+rounding differences. The extrapolation uses the same acquisition and three
+fragmentation models; it is not an independent measurement or a unique
+hadron-formation mechanism. Resonance reconstruction does not imply stability.
+The later charged-particle result is recorded only as a scope boundary.
+
+## Light-flavor families and conditional identification
+
+Selected [PDG quark-model passages](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-model.pdf)
+distinguish approximate light-flavor SU(3) from color SU(3). The spatially
+symmetric ground-state baryon model contains the spin-one-half octet and
+spin-three-halves decuplet. The light meson convention separates singlet and
+octet components and physical isoscalar mixing. These assignments specify
+model states, without determining their complete quark/gluon populations.
+[Gell-Mann's Equation 8.1](https://doi.org/10.1103/PhysRev.125.1067) supplies
+a first-order octet mass relation. The
+[family verifier](../../models/causal-emergence/canonical/verify-hadron-family.py)
+checks supplied weights, synthetic mass-relation identities and historical
+spacing arithmetic; it does not derive symmetry breaking or fit measured masses.
+
+The [Barnes Omega report](https://www.osti.gov/servlets/purl/12491965)
+separates a decuplet expectation from one selected bubble-chamber event.
+Measured tracks and photon conversions feed a conditional neutral-cascade
+reconstruction and the reported mass `1686 +/- 12 MeV/c^2`. The predicted
+`J^P=3/2+` is not a spin measurement, and the reconstructed event time
+`0.7 x 10^-10 s` is not an ensemble lifetime. The authors defer a detailed
+mass discussion until further events and better-understood systematic errors.
+
+The [KLOE radiative-decay analysis](https://doi.org/10.1016/j.physletb.2007.03.032)
+separates selected candidates, modeled background subtraction, detector
+response and the inferred branching-fraction ratio of `phi -> eta' gamma`
+to `phi -> eta gamma`,
+`R_phi = (4.77 +/- 0.09 statistical +/- 0.19 systematic) x 10^-3`.
+Its pseudoscalar mixing angle in the quark-flavor basis,
+`phi_P = (41.4 +/- 0.3 statistical +/- 0.7 systematic +/- 0.6 theory) degrees`
+uses the same acquisition plus a no-gluonium assumption, constituent-mass,
+overlap, vector-angle and photon-momentum inputs. The angle is a conditional
+interpretation of the ratio; no independent confirmation or absolute decay
+width is inferred. The
+[meson verifier](../../models/causal-emergence/canonical/verify-meson-family.py)
+checks finite flavor algebra, synthetic response identities and printed
+subtraction, without reproducing the measured ratio, mixing fit or covariance.
+
+Card 1.16 has this finite classification, event-identification and transition
+treatment under the stated flavor, spin and spatial assumptions. It is not a
+complete hadron taxonomy or a confinement/formation mechanism. The measured
+free-neutron lifetime and channel-specific proton limits do not establish
+nucleon permanence. Universal stability, a necessary parent 1.10, parent weights
+and constituent minima are excluded; SOMA level/phase/type assignments gain no
+scientific validation from these results. Further spectroscopy and complete
+acquisition replay are separate scopes.
+
+## Nucleon labels and conditional nuclear energetics
+
+Selected [PDG quark-model passages](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-model.pdf)
+define net flavor, electric charge and baryon number. The
+[light-front review](https://arxiv.org/abs/hep-ph/9705477v1) describes a state
+expansion with different parton sectors. The local exact algebra checks charge
+bookkeeping, the antisymmetric color tensor and the SU(3) center obstruction
+for one or two fundamental factors. The restricted three-factor minimum
+excludes antiquark and adjoint factors by assumption. It establishes neither
+a general hadron minimum nor an observed three-particle population. Fock
+coefficients, color recoupling and QCD dynamics are not calculated.
+
+For a bare deuteron, the declared channel `d -> p + p + e- + antineutrino`
+has a conditional Q value near -1.44223 MeV using the scoped adjusted mass
+inputs. Positive on-shell final energies exclude that breakup channel for
+those inputs. Re-expressing the captured neutron mass cancels the shared
+binding energy exactly; it does not provide independent confirmation. The
+calculation retains the published mass correlation, atomic/bare-state
+boundary and rounded-input limits. It does not measure a lifetime or prove
+stability against other channels.
+
+Local calculations identify their executable sources and use
+`analytically-checked` claims. Their study records carry no journal metadata.
+Definitions, published measurements and bounded calculations retain distinct
+evidence roles.
+
+## Pion decay channels
+
+[PIENU](https://arxiv.org/abs/1506.05845v2) measures the ratio of electronic
+to muonic positive-pion partial decay rates, including associated radiative
+decays. Selected positron energy/time spectra, the simultaneous timing fit,
+response corrections and final ratio have separate records. The published
+result is `(1.2344 +/- 0.0023 statistical +/- 0.0019 systematic) x 10^-4`.
+It is neither an absolute branching fraction nor a new pion lifetime.
+
+The fitted and corrected ratios reuse the same pion acquisition. Dedicated
+positron-beam response measurements, stopped-muon controls and simulation
+supply additional correction inputs. The empirical upper/lower calorimeter-tail
+bounds are not independent Gaussian measurements. Detector histograms are
+not unfolded decay spectra, and the adopted lifetimes are not new measurements.
+
+The [local verifier](../../models/causal-emergence/canonical/verify-pion-decay.py)
+checks the printed correction product, display rounding and synthetic
+efficiency/exposure identities. It reproduces neither the timing fit nor the
+tail correction and covariance. The measured ratio does not acquire this
+local check's evidence status.
+
+Card 1.12 is covered by these branching data, the existing muon/neutron
+lifetime preparations, proton partial-lifetime searches and the conditional
+deuteron energy threshold. Universal daughter stability, cosmological
+population claims and the original parent weights/minima are excluded.
+Other decay families and complete experimental replay are separate research
+scopes, not prerequisites for this finite treatment.
+
+## Proton partial-lifetime searches
+
+The [Super-Kamiokande search](https://doi.org/10.1103/PhysRevD.102.112011)
+separates its shared SK-I-IV acquisition, modeled response, selected counts
+and Bayesian inference. It reports zero electron-channel candidates and one
+muon-channel candidate, consistent with modeled backgrounds. The published
+90% bounds concern `tau/B`: 2.4e34 years for `p -> e+ pi0` and 1.6e34 years
+for `p -> mu+ pi0`. Unknown branching fractions prevent treating these as the
+same bounds on total lifetime or as proof of eternal stability.
+
+The source retains detector phases, fiducial and kinematic cuts, imperfect
+neutron tagging, nuclear response and overlapping earlier exposure. The
+original inference uses the same acquisition; its numerical calculation is
+a model context. Its printed prior and normalization conventions, unrounded
+MC inputs and nuisance covariance require resolution before a likelihood
+replay can be claimed. Newer channels and independent experiments remain open.
+
+The [local verifier](../../models/causal-emergence/canonical/verify-proton-decay.py)
+checks hand-transcribed exposure and efficiency bookkeeping, background
+rounding intervals and the fixed-mean Poisson tail. It preserves censored
+entries and the distinction between nominal and summed printed exposure.
+It does not reproduce a lifetime bound. Its bounded output is available in
+`dictionaries.evidence.protonDecayData`.
 
 ## Fractional electric-charge searches
 

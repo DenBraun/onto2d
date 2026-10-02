@@ -77,7 +77,7 @@ child traversal, ancestors, descendants, bounded neighborhoods, and bounded
 all-shortest directed paths. It does not assign new scientific meaning to
 source relations.
 
-The current default is `causal-emergence@2026.09.23.7`, a partial research
+The current default is `causal-emergence@2026.10.02.5`, a partial research
 reconstruction. `stable` identifies the bundled software artifact, not
 scientific confirmation. Select `causal-emergence@2026.08.15` explicitly for
 the historical 249-record catalogue and its original source-parent semantics.
@@ -197,7 +197,7 @@ affect model identity. Concurrent loads for the same exact identity share one
 operation. Closing, clearing, and removing records wait for relevant active
 loads, and storage ownership is explicit.
 
-Model Studio uses the IndexedDB adapter as an optional performance layer. A
+Model Studio's full-pack path uses the IndexedDB adapter as an optional performance layer. A
 cached bundle is still sent through the worker verifier before presentation;
 the direct browser verifier remains the worker-transport fallback. IndexedDB
 availability or operational failure may bypass caching, but malformed Model
@@ -222,10 +222,18 @@ Model Pack. The separate matcher binds a previously verified pack to the
 resolved model ID, version, root hash, and manifest hash.
 
 Model Studio pins the committed registry hash, resolves its explicit release,
-then passes the resolution URL to the existing worker/cache composition. Both
-network candidates and cached records must match the complete resolution
-before storage or presentation. The repository registry check also verifies
-every indexed `bundle.json` and rejects a stale Studio pin.
+then selects its verified browsing projection when one is available. A
+separately pinned browser index binds the projection's graph, record chunks
+and review files to all four registry identity coordinates. Build validation
+regenerates those files from the fully verified release and checks their exact
+bytes and inventory. Runtime checks each fetched file's digest, decoded byte
+length and release identity. It loads the searchable topology first, selected
+records on demand and review panels when opened; it does not present this as
+full Model Pack verification. Other releases use the worker/cache composition,
+where network candidates and cached records must match the complete resolution
+before presentation. The registry check verifies every indexed `bundle.json`
+and rejects a stale Studio pin. See the [Studio guide](../../apps/model-studio/README.md)
+for generation and verification commands.
 
 `@onto2d/view/lazy` adds an exact-identity presentation session after full
 verification. Its descriptor, catalogue pages, node details, and neighborhood
@@ -240,9 +248,10 @@ artifacts or partial model executions.
 Model Pack, optionally matches all four coordinates of a registry resolution,
 then creates the presentation session from its canonical nodes and edges.
 `@onto2d/view` remains dependency-free and does not authenticate caller data.
-Model Studio composes the bridge only after registry, worker, and cache checks,
-initially materializes 60 catalogue rows, and requests later pages, bounded
-neighborhoods, and full node records separately.
+Model Studio's full-pack path composes the bridge after registry, worker and
+cache checks. Its incremental path authenticates a build-derived projection
+before using the same view session. Both initially materialize 60 catalogue
+rows and request later pages, bounded neighborhoods and node details separately.
 
 Model Pack v1 is not a chunked semantic format.
 The current split files are still all required for verification, and complete
@@ -526,8 +535,9 @@ rejected without invocation. The published entrypoint contains no Node
 transport dependency and exposes matching TypeScript declarations. It reaches
 identity primitives through the narrow `@onto2d/kernel/canonical` subpath,
 whose portable synchronous SHA-256 is checked against independent Node
-references and the frozen canonical fixtures. Model Studio now uses this
-adapter before constructing any presentation view.
+references and the frozen canonical fixtures. Model Studio uses this adapter
+for complete Model Pack loading; incremental browsing has its own pinned
+projection transport.
 
 <a id="browser-model-pack-worker-protocol"></a>
 
@@ -707,9 +717,9 @@ when supplied, matches the exact read-only registry resolution before creating
 the view session. The bridge then copies all four verified identity coordinates
 into every presentation response.
 
-Model Studio keeps registry resolution, worker verification, and verified
-cache reuse upstream. Only after those checks does it create the presentation
-session. Explorer initially materializes 60 lightweight rows and obtains later
+Model Studio authenticates either a complete Model Pack through the worker and
+cache path or an exact build-derived browsing projection through its pinned
+index. Explorer initially materializes 60 lightweight rows and obtains later
 pages through an explicit `Load next` action. Graph changes request a bounded
 neighborhood; node inspection requests the full record independently. A click
 still inspects and a double-click still changes graph focus.

@@ -23,11 +23,13 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. The canonical data currently covers 52 of the 249 source cards. The
-[remaining 197 tasks](../references/canonical/pending-review.json) identify the
-source documents to review.
+graph. Of the 249 original source cards, 183 remain on the
+[pending list](../references/canonical/pending-review.json). Its complement of
+66 cards is a source-review census, not a percentage of scientifically supported
+claims or independently reproduced experiments. Partially reviewed cards remain
+open until their substantive claims are supported, qualified or rejected.
 
-The current graph contains 938 records, 566 connections, 908 claims and 314 sources.
+The current graph contains 1166 records, 921 connections, 1232 claims and 385 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -35,6 +37,14 @@ spectrum in their respective theories. Mass inputs, predicted values, omitted
 resonance points and uncertainty meanings remain explicit. UCN lifetime records
 separate five production years, three diagnostic preparations and shared-data
 combinations. Storage losses and published systematic corrections are explicit.
+Beam lifetime records separate the original proton-counting acquisition, a new
+fluence-monitor calibration and the resulting same-data lifetime update.
+The author manuscript's wavelength-conversion conflict remains explicit;
+bounded arithmetic does not certify the calibration chain or loss corrections.
+Detailed AlphaGamma records separate source activity, rate transfer, thermal
+normalization and shared uncertainty. Elastic proton records separate released
+cross-section ratios, fitted form factors and dependent Rosenbluth extraction;
+selected author tables have reproducible finite checks.
 Four-flavor QCD+QED adds calibrated isospin mass differences, a finite-volume
 diagnostic and convention-dependent components. The experiment-constrained
 nucleon component ratio has a separate input boundary. Capture spectroscopy
@@ -44,8 +54,20 @@ The MIT Penning-trap inputs separate charge-aware frequency comparisons,
 voltage controls, electronic corrections and correlated neutral-atom fits.
 LIONTRAP separates original acquisition from experimental reanalysis,
 proton-referenced oxygen, same-cycle controls and image-charge geometry.
+The Super-Kamiokande two-body search separates shared exposure, selected
+candidate counts, simulated response and conditional partial-lifetime bounds.
+Printed-table arithmetic is reproducible within rounding and censoring limits;
+the confidence-limit analysis has not been independently reproduced.
 Source conflicts, unreproduced analyses and untested stability or formation
 claims remain open.
+
+Model Studio loads the searchable graph first, selected-record evidence in
+bounded chunks and reviews when opened. Its pinned browser projection is
+checked against the exact full release during build validation.
+The complete release uses compact JSON for its bundle and semantic model files,
+within the existing 32 MiB file and 64 MiB total transport budgets. Canonical
+inputs, manifest and indexes remain readable. Exact verification preserves the
+selected bytes, and published releases cannot be reformatted in place.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,
@@ -58,6 +80,36 @@ belong to the current claims.
    free scalar construction and Standard Model/QCD field definitions have scoped
    sources. Primary electron spectra, TASSO jet shapes and MuLan lifetime
    measurements have explicit contexts and conditional interpretations.
+   Framework card 1.0 is qualified to these declared models; the Level-0
+   bridge remains explicitly unresolved and supplies no necessary-parent
+   relation. Vacuum card 1.27 is qualified to a specified state, its
+   correlations and conditional response evidence. A universal background
+   substance, absolute energy measurement and maintenance cause are excluded.
+   Their original weights, minima and SOMA phase ordering are not established.
+   Card 1.26 has explicit free-field time evolution with a separate finite
+   oscillator witness; scale changes and numerical sampling are distinct.
+   Historical Higgs/Weinberg constructions and the ATLAS 2012 observation
+   separate model parameters, selected channels, response and fitted inferences.
+   CMS tau-pair evidence separates selected bins, the fixed-mass rate fit,
+   dependent post-fit summaries and a common vector/fermion coupling scan.
+   Its width and loop assumptions remain explicit review obligations.
+   Cards 1.8, 1.9, 1.14 and 1.28 are qualified to the single-doublet construction,
+   charged-fermion mass/coupling convention and separately scoped collider data.
+   Chirality and Yukawa parameters are inputs; a predicted hierarchy, universal
+   composite stability, absolute quantum-vacuum stability and causal maintenance
+   are excluded. Historical UA1 W/Z candidates, response and mass inferences
+   retain distinct acquisitions. Width, lifetime and branching-fraction evidence
+   remain pending for card 1.24. KamLAND's selected prompt-energy release has
+   finite checks, while its flux, background, response and likelihood remain
+   separate inputs. SNO solar channel response and direct joint active-flavor
+   inference are distinct; Super-Kamiokande atmospheric samples, angular
+   diagnostics and the conditional oscillation fit retain their shared exposure.
+   Matter propagation has an explicit active-sector Hamiltonian and a separate
+   two-flavor adiabatic approximation, with no inferred solar mechanism edge.
+   OPERA accelerator tau appearance retains its selected decay channels,
+   modeled expectations, calibrated significance and same-data 90% interval.
+   Transport, astrophysical-source and cosmological application claims remain
+   pending for neutrino cards 1.17 and 1.25.
    Finite bipartite definitions distinguish entanglement, projective Bell
    locality and unconditioned marginals. Two Delft Bell runs preserve separate
    preparation, scoring, stopping assumptions and null-test outcomes.
@@ -74,60 +126,62 @@ belong to the current claims.
    volumes and physical two-plus-one-flavor ensembles. Independently reproduce
    the static-energy fits and resolve the source's mixing-convention issues.
    Recover the electric-charge search's confidence construction and review
-   independent materials. Confinement cards 1.7 and 1.15 remain open for hadron
-   spectroscopy, generality and their claimed causal dependencies; the existing
-   static spectra and charge null do not close those claims.
-   Continue cards 1.10-1.11 with independent nucleon-mass measurements,
-   beam/bottle lifetime measurements and proton stability. The next admission
-   target is the [Super-Kamiokande two-body decay search](https://doi.org/10.1103/PhysRevD.102.112011):
-   distinguish channel-specific partial-lifetime bounds, candidate counts,
-   detector selection and nuclear modeling. Its official release contains
-   figure files; confidence-limit reproduction still needs the numerical
-   likelihood inputs. Keep overlapping exposure and newer decay channels
-   separate. For mass provenance,
-   the Rau 2020 deuteron/HD+ author report, Fink/Myers 2020 main accepted
-   article, Korobov 2017 molecular calculation and Kessler 2017 ILL calibration
-   now have scoped records. The graph separates direct ratios, adjusted masses,
-   shared proton references and reused capture acquisition. The grouped figure
-   replay covers 27 means; its diagonal errors do not reproduce the original
-   fit uncertainties. Recover the Fink 2020 supplement, the full covariance and
-   adjustment code, and the ILL final uncertainty-combination rule. Review the
-   H2+ binding calculations used by Fink 2020 before claiming that conversion
-   is independently reproduced. The Fink/Myers 2021 main article now has
-   separate simultaneous-acquisition, drive-control and state-assignment
-   records. Recover its supplement, raw phases, discrete assignment search,
-   level/polarizability inputs and full systematic covariance. Three conditional
-   branches and the direct-deuteron proton reference remain explicit.
-   Selected CODATA 2022 mass and lattice constraints are traced without
-   claiming the full adjustment is reproduced. Reconcile Table XXVII E13,
-   labelled ILL/W04, with the WS1 and ILL paths in Kessler 2017 Tables 4–5
-   and the CODATA 2018 uncertainty treatment. No adjustment error is established.
-   Continue independent hydrogen-isotope measurements and HD+ spectroscopic
-   constraints, keeping theoretical and measured inputs separate.
-   The LIONTRAP graph distinguishes the
-   [original proton measurement](https://doi.org/10.1103/PhysRevLett.119.033001),
-   [2019 reanalysis](https://doi.org/10.1103/PhysRevA.100.022518) and the
-   [image-charge study](https://doi.org/10.1103/PhysRevA.100.023411).
-   Recover their raw data and numerical models, reconstruct pair-specific
-   correction aggregation and resolve the recorded uncertainty, sign and
-   table-conversion issues. Shared calibration and measurement inputs remain
-   explicit; no independent reproduction of those analyses is established.
-   The Natarajan 1993 and DiFilippo 1994 primary
-   articles are reviewed for hydrogen-isotope mass inputs. Recover their raw
-   frequency records, electronic corrections and mass-fit covariance; resolve
-   shared acquisition between reports. The detailed follow-up and original
-   thesis remain unreviewed. The Kessler capture paper is reviewed, with
-   selected Dewey recalibration and CODATA neutron-input passages. Reproduce
-   its profiles, angle calibrations, lattice comparisons and mass-input
-   uncertainties; retain the disclosed table-label and unit discrepancies.
-   Reproduce the
-   QCD+QED mass-splitting fits, covariance and physical-point calibration;
-   resolve the author report's bare-coupling census discrepancy. Reproduce the
-   admitted UCN survival fits and their correction/covariance budgets; resolve
-   the published detector-uniformity correction inconsistency. Review nucleon
-   form factors, magnetic moments and nuclear stability separately. The calibrated
-   two-plus-one-flavor mass spectrum supplies neither those measurements nor
-   real-time hadron formation; independent spectrum replay remains open.
+   independent materials. General confinement card 1.7 retains its remaining
+   domain and dependency claims. Card 1.15 is reviewed with qualifications:
+   finite static-source and screening results retain their model boundaries;
+   the universal downward-causation assertion, blanket composite stability
+   and arbitrary parent weights/minima are excluded. A distinct macroconstraint
+   needs an operational variable, reduction or intervention and discriminating
+   predictions. Independent lattice replay is separate from this disposition.
+   Cards 1.10 and 1.11 have scoped treatments of hadron production and
+   nucleon properties. Identified neutral-hadron yields, same-acquisition
+   extrapolation, neutron electric/magnetic response and local table checks
+   retain separate contexts. Formal net-flavor labels and the restricted
+   color-singlet calculation do not establish an exact particle population.
+   The deuteron beta-breakup threshold is a conditional energy calculation,
+   not an all-channel lifetime result. Blanket stability, arbitrary parent
+   weights/minima and a universal construction order are excluded.
+   These cards are no longer pending: their substantive assertions are
+   supported, qualified or excluded. Independent experimental reproduction
+   remains a separate obligation. In particular, raw detector/monitor data,
+   resonance and lifetime likelihoods, nuclear-response models, correlated
+   mass adjustments, lattice-spectrum fits and full hadron-production
+   reconstruction have not been reproduced. Source-specific conflicts and
+   missing inputs remain attached to the corresponding claims and
+   [physics review](../references/canonical/physics-review.json).
+   Card 1.12 has a finite treatment of decay lifetimes, partial-rate searches,
+   channel energetics and the measured PIENU electronic/muonic pion ratio.
+   The selected spectra, timing fit, auxiliary response inputs and corrected
+   ratio remain distinct. Cosmological applications, universal daughter
+   stability and arbitrary parent weights/minima are excluded.
+   Card 1.13 has scoped electron-anomaly and electromagnetic-running evidence
+   alongside the Lamb/Bethe and QCD-running records. The electron spectra,
+   cavity-corrected moment, leading theoretical anomaly and L3 angular-shape
+   inference retain separate inputs and limits. These do not measure bare
+   parameters, virtual-particle populations or absolute vacuum energy, or
+   establish universal necessary formation rules.
+   Card 1.16 has a finite light-flavor classification and transition treatment:
+   baryon multiplets and meson mixing conventions, the conditional Barnes
+   Omega event and KLOE radiative-decay ratio. Measured tracks/candidates,
+   reconstruction and model-dependent interpretation remain separate.
+   Predicted spin is not an event spin measurement; the mixing angle reuses
+   the measured ratio with additional inputs. Local weight and response
+   checks do not reproduce spectroscopy, acquisition or full covariance.
+   This is a restricted classification, not a complete taxonomy or formation
+   mechanism. Free-neutron lifetimes and proton partial-lifetime limits do not
+   establish permanence. Universal stability, necessary parent 1.10 and numerical
+   parent/minimum rules are excluded; SOMA level/phase/type assignments gain no
+   scientific validation from these results.
+   Card 1.22 has selected Feynman perturbative-amplitude conventions and a
+   separate exact synthetic kinematic check. Conserved momentum, external
+   mass shells and internal propagators do not imply energy borrowing or
+   a virtual-particle census. No loop calculation or universal formation/
+   maintenance dependencies, weights or minima are admitted by this treatment.
+   Continue the remaining confinement and particle-property cards
+   with their own preparations and evidence. Do not expand a closed card
+   indefinitely to reconstruct every upstream instrument. A new claim about
+   formation dynamics, physical stability or a general constituent minimum
+   needs separate support.
 2. Work through the pending physical, chemical, cellular, organismal and social
    topics, including remaining Level-6 cards. Continue the open glial, gene
    regulation, neuroimmune, vascular, neurogenesis, memory, symbolic and social

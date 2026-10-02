@@ -22,6 +22,95 @@ Source records in [graph.json](../graph.json) bind local files by SHA-256 and
 identify the reviewed passages or cell ranges. Numerical values retain the
 measurement and replication limits of their original experiments.
 
+## Selected reactor-antineutrino energies
+
+[kamland2005-selected-energies.dat](kamland2005-selected-energies.dat) and
+[kamland2005-description.html](kamland2005-description.html) preserve the
+unchanged numeric list and official description from the
+[KamLAND second-result release](https://www.awa.tohoku.ac.jp/KamLAND/datarelease/2ndresult.html).
+Attribution: KamLAND Collaboration, *Measurement of Neutrino Oscillation with
+KamLAND: Evidence of Spectral Distortion*,
+[Physical Review Letters 94, 081801 (2005)](https://doi.org/10.1103/PhysRevLett.94.081801).
+The inspected description declares no additional open-content license;
+these source assets do not acquire the project's software license.
+
+The list contains 258 sorted, rounded prompt energies in MeV, including
+positron annihilation energy. Repeated values are retained. The
+[verifier](../../../models/causal-emergence/canonical/verify-neutrino.py)
+checks both files' bytes, energy summaries and printed central arithmetic,
+with separate synthetic phase examples. The files do not supply raw detector
+records, reactor histories, response covariance or a reproduced likelihood.
+The linked background-shape and chi-squared files are outside this extraction.
+
+## Printed pion-decay correction inputs
+
+The [PIENU verifier](../../../models/causal-emergence/canonical/verify-pion-decay.py)
+contains the selected printed values from Table I of the
+[versioned author manuscript](https://arxiv.org/pdf/1506.05845v2), published
+as [Physical Review Letters 115, 071801 (2015)](https://doi.org/10.1103/PhysRevLett.115.071801).
+It keeps ratio coefficients in units of `10^-4` distinct from dimensionless
+correction factors. This is a local transcription, not an author data release.
+
+The exact central product rounds to the reported result. Display-rounding
+bounds and synthetic exposure/efficiency checks do not reconstruct the
+experimental timing fit, auxiliary calibration, tail-bound combination or
+uncertainty covariance. The publication's energy/time figures are not digitized
+or represented as event-level data.
+
+## Printed electron-moment and effective-alpha inputs
+
+The [electron-moment verifier](../../../models/causal-emergence/canonical/verify-electron-moment.py)
+and [effective-alpha verifier](../../../models/causal-emergence/canonical/verify-vacuum-polarization.py)
+declare their selected printed inputs and synthetic witnesses in code. They
+are local calculations, not released detector tables or event data. The
+electron spectra, correlated cavity response, L3 angular fractions and
+likelihood are not reconstructed. L3's historical zero-momentum reference
+remains an adopted input to its own convention.
+
+## Finite family and scattering witnesses
+
+The [baryon-family verifier](../../../models/causal-emergence/canonical/verify-hadron-family.py)
+checks supplied flavor weights, synthetic mass-relation identities and printed
+historical mass spacing. The [meson-family verifier](../../../models/causal-emergence/canonical/verify-meson-family.py)
+checks trace projectors, synthetic cascade-response identities and printed
+background subtraction. Neither reconstructs particle discovery, physical
+mixing, an experimental transition ratio or hadron formation.
+
+The [scattering verifier](../../../models/causal-emergence/canonical/verify-virtual-process.py)
+uses synthetic rational momenta with conserved four-momentum and on-shell
+external legs. Its spacelike transfer, forward boundary and Lorentz-invariant
+checks do not calculate a QED amplitude, loop integral or measured event.
+These executable sources contain no released detector dataset.
+
+## Proton elastic form-factor tables
+
+The [versioned author archive](https://arxiv.org/src/1307.6227v2) for Bernauer
+et al., *The electric and magnetic form factors of the proton*,
+[Physical Review C 90, 015206](https://doi.org/10.1103/PhysRevC.90.015206),
+supplies these unchanged members:
+
+| Local file | Archive member | Scope |
+| --- | --- | --- |
+| [Cross-section ratios](bernauer2014-cross-sections.dat) | `aux/CrossSections/CrossSections.dat` | 1422 corrected, spline-normalized ratios with scaled point errors and shared normalization identifiers |
+| [Rosenbluth values](bernauer2014-rosenbluth.dat) | `aux/Rosenbluth/Rosenbluth.dat` | 77 unconstrained pairs and four additional constrained electric-form-factor ranges |
+| [Mainz-only spline](bernauer2014-mainz-spline.dat) | `aux/fits/MainzOnly/Spline.dat` | 1000 fitted grid evaluations with separate pointwise bands |
+| [Author column description](bernauer2014-ancillary-description.pdf) | `aux/explanation.pdf` | Five-page description dated 24 March 2014 |
+
+The [verifier](../../../models/causal-emergence/canonical/verify-bernauer-data.py)
+checks byte identity, finite-table conventions and normalized form-factor
+identities. The spline stores `GM/mu_p`; the Rosenbluth table stores `GM`.
+Constrained electric ranges are not paired with magnetic assumptions by endpoint
+and are not ordinary confidence intervals. Multiplying by the cross-section
+table's column 9 undoes the Coulomb correction. The central angle is descriptive;
+kinematics use the acceptance-averaged momentum transfer.
+
+The reports reuse the 2006-2007 acquisition, and the separated values reuse
+spline-fit normalization. Pointwise bands do not supply independent observations
+or full covariance. The Table IV Friedrich-Walcher parameter-count arithmetic
+does not reproduce its printed reduced chi-square within display rounding;
+the discrepancy remains explicit. No raw acquisition, acceptance simulation,
+optimization, covariance or radius extraction is reproduced.
+
 ## Deuteron and molecular-ion figure tables
 
 [Figure 3](rau2020-fig3.xlsx), [Extended Data Figure 1](rau2020-edfig1.xlsx)
@@ -169,3 +258,42 @@ Source citations: Hensen et al. (2015),
 [4TU dataset](https://doi.org/10.4121/uuid:6e19e9b2-4a2d-40b5-8dd3-a660bf3c0a31);
 Hensen et al. (2016),
 [4TU dataset](https://doi.org/10.4121/uuid:53644d31-d862-4f9f-9ad2-0b571874b829).
+
+## Selected neutron magnetic-response data
+
+[lachniet2009-e111m1.tsv](lachniet2009-e111m1.tsv) and
+[its description](lachniet2009-e111m1-description.html) preserve the downloaded
+26-point CLAS table and descriptive page from the
+[CLAS physics database mirror](https://clas.sinp.msu.ru/cgi-bin/jlab/msm.cgi?eid=111&mid=1&data=on).
+They are attributed to J. Lachniet et al., *Precise Measurement of the Neutron
+Magnetic Form Factor in the Few-GeV2 Region*,
+[Physical Review Letters 102, 192001 (2009)](https://doi.org/10.1103/PhysRevLett.102.192001).
+[lachniet2009-v2-figure3.eps](lachniet2009-v2-figure3.eps) is the unchanged
+selected figure from the [versioned author source](https://arxiv.org/src/0811.1716v2).
+No separate reuse license was declared in the inspected data description;
+these source assets do not acquire the project's software license.
+
+The [verifier](../../../models/causal-emergence/canonical/verify-neutron-form-factor.py)
+checks table order, units, normalization and the plotted centers against the
+versioned figure. It retains the final two systematic-error fractions even
+though they conflict with the article's stated range. The mirror description
+links an older manuscript, so version identity is checked against the final
+figure instead of inferred from that link. The selected tables do not contain
+raw event records, acceptance simulations or covariance.
+
+## Selected inclusive neutral-hadron yields
+
+[sld1998-neutral-production.json](sld1998-neutral-production.json) is a local
+transcription of 44 bins and the selected inclusive integral/extrapolation
+entries in Tables 6, 7 and 16 of the
+[SLD author manuscript](https://arxiv.org/pdf/hep-ex/9805029v1), published as
+[Physical Review D 59, 052001 (1999)](https://doi.org/10.1103/PhysRevD.59.052001).
+It retains the original species, momentum intervals, central values and
+uncertainty conventions. It contains neither event-level data nor a fitted
+fragmentation model.
+
+The [verifier](../../../models/causal-emergence/canonical/verify-hadron-production.py)
+checks these bound bytes, finite bin integrals, display-rounding intervals and
+printed acceptance arithmetic. Shared normalization and model extrapolation
+remain separate from independently measured yields. The selected charged
+spectra and flavor-tagged analyses are outside this transcription.

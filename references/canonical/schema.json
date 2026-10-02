@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Canonical research source v19",
+  "title": "Canonical research source v20",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -31,7 +31,7 @@
       ],
       "properties": {
         "schemaVersion": {
-          "const": 19
+          "const": 20
         },
         "model": {
           "type": "object",
@@ -2803,19 +2803,40 @@
                 ]
               },
               "journal": {
-                "type": "string",
-                "minLength": 1
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
               },
               "volume": {
-                "type": "string",
-                "minLength": 1
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
               },
               "issue": {
                 "type": "string"
               },
               "pages": {
-                "type": "string",
-                "minLength": 1
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
               },
               "preparation": {
                 "type": "string",

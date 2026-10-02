@@ -8796,6 +8796,2058 @@
       ]
     },
     {
+      "nodeId": "phys:partial-lifetime",
+      "role": "definition",
+      "denotes": "The inverse decay rate for a specified channel, tau/B, with its branching fraction distinguished from total lifetime.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-partial-lifetime"
+      ]
+    },
+    {
+      "nodeId": "phys:takenaka2020-search-context",
+      "role": "experimental-context",
+      "denotes": "The shared SK-I-IV acquisition and channel-specific selection defining the reported proton-decay candidate counts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-takenaka2020-search-context"
+      ]
+    },
+    {
+      "nodeId": "phys:takenaka2020-response-context",
+      "role": "model-context",
+      "denotes": "The simulated signal acceptance and atmospheric-neutrino background used in the two-channel search.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-takenaka2020-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:takenaka2020-inference-context",
+      "role": "model-context",
+      "denotes": "The eight-region Bayesian rate calculation and nuisance assumptions used to infer partial-lifetime bounds from the selected events.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-takenaka2020-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:proton-decay-replay-context",
+      "role": "model-context",
+      "denotes": "The local calculation of printed exposure and efficiency bookkeeping, censored background intervals and a fixed-mean Poisson tail.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-proton-decay-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:takenaka2020-counts",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported zero electron-channel and one muon-channel candidates after the specified SK-I-IV selection.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-takenaka2020-counts"
+      ]
+    },
+    {
+      "nodeId": "phys:takenaka2020-partial-bounds",
+      "role": "scoped-phenomenon",
+      "denotes": "The published conditional 90 percent lower bounds on the two channel-specific partial lifetimes.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-takenaka2020-partial-bounds"
+      ]
+    },
+    {
+      "nodeId": "phys:proton-decay-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The reproduced printed-table bookkeeping and fixed-mean tail, with no reproduction of the lifetime likelihood.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-proton-decay-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:beam-decay-ratio",
+      "role": "definition",
+      "denotes": "The conditional conversion between proton and neutron-monitor count rates and a decay time in a defined beam region.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-beam-decay-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:nico2005-beam-context",
+      "role": "experimental-context",
+      "denotes": "The 2000-2001 beam acquisition and its published rate-ratio, trap-length and detector-loss analysis.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-nico2005-beam-context"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2013-calibration-context",
+      "role": "experimental-context",
+      "denotes": "A new 2011 measurement of the earlier experiment's physical neutron-fluence monitor, including its temporal-transfer controls.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-yue2013-calibration-context"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2013-update-context",
+      "role": "experimental-context",
+      "denotes": "The 2013 recalibration of the 2000-2001 beam lifetime inference using the newly measured monitor response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-yue2013-update-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beam-neutron-replay-context",
+      "role": "model-context",
+      "denotes": "A local calculation restricted to printed monitor conversion, central rescaling and rounded diagonal error-budget arithmetic.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beam-neutron-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:nico2005-lifetime",
+      "role": "scoped-phenomenon",
+      "denotes": "The corrected lifetime inferred from the original beam count-rate data, with its published statistical and systematic uncertainty.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-nico2005-lifetime"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2013-efficiency",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported thermal monitor counting efficiency and the explicit assumptions for transfer to the earlier beam acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yue2013-efficiency"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2013-lifetime",
+      "role": "scoped-phenomenon",
+      "denotes": "The updated lifetime inferred from the original beam acquisition after replacement of its neutron-fluence calibration.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yue2013-lifetime"
+      ]
+    },
+    {
+      "nodeId": "phys:beam-neutron-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The bounded local arithmetic results, preserving the printed formula conflict and excluding reproduction of the experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-beam-neutron-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:alpha-gamma-transfer",
+      "role": "definition",
+      "denotes": "The conditional rate identity connecting an alpha-source standard to the neutron rate inferred from thin and thick boron targets.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-alpha-gamma-transfer"
+      ]
+    },
+    {
+      "nodeId": "phys:normalized-monitor-response",
+      "role": "definition",
+      "denotes": "A normalized monitor counting efficiency for a specified reference speed and idealized central beam geometry.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-normalized-monitor-response"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2011-source-context",
+      "role": "experimental-context",
+      "denotes": "The thesis source-activity measurement using two spacer heights and one shared precision aperture.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-yue2011-source-context"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2018-transfer-context",
+      "role": "experimental-context",
+      "denotes": "The measurement preparation reported in the detailed article, including its own source calibration and the earlier monitor campaign.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-yue2018-transfer-context"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2018-normalization-context",
+      "role": "model-context",
+      "denotes": "The article's conversion of acquired monitor ratios into a normalized efficiency and a shared-error estimate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-yue2018-normalization-context"
+      ]
+    },
+    {
+      "nodeId": "phys:alpha-gamma-replay-context",
+      "role": "model-context",
+      "denotes": "A local computation of declared identities and printed calibration inputs with source conflicts retained.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-alpha-gamma-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2011-source-activity",
+      "role": "scoped-phenomenon",
+      "denotes": "The activity reported for the thesis two-stack source calibration, retaining uncertainty and printed-input reconstruction limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yue2011-source-activity"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2018-source-activity",
+      "role": "scoped-phenomenon",
+      "denotes": "The alpha activity reported in the detailed article for its own source geometry and correction procedure.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yue2018-source-activity"
+      ]
+    },
+    {
+      "nodeId": "phys:yue2018-monitor-efficiency",
+      "role": "scoped-phenomenon",
+      "denotes": "The normalized monitor efficiency inferred in the detailed article after its experiment-specific corrections and uncertainty calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yue2018-monitor-efficiency"
+      ]
+    },
+    {
+      "nodeId": "phys:alpha-gamma-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The bounded local rate-identity and printed source-activity calculations, with conflicting conventions kept distinct.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-alpha-gamma-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:sachs-form-factors",
+      "role": "definition",
+      "denotes": "For unpolarized elastic electron-proton scattering in the ultrarelativistic one-photon approximation, the reduced cross section is epsilon*GE(Q^2)^2+tau*GM(Q^2)^2, where tau=Q^2/(4*m_p^2). GE(0)=1 and GM(0)=mu_p specify reference normalization; the measured cross section does not determine signs by itself.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-sachs-form-factors"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer2014-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Measure unpolarized electron scattering on liquid hydrogen at six beam energies with the three A1 spectrometers; extract acceptance-modeled ratios with the declared radiation, luminosity and normalization treatment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bernauer2014-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer2014-mainz-fit-context",
+      "role": "model-context",
+      "denotes": "Fit the reused MAMI cross-section ratios with the published Mainz-only models and shared normalization parameters, retaining squared-form-factor response, scaled errors and correction assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bernauer2014-mainz-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer2014-rosenbluth-context",
+      "role": "model-context",
+      "denotes": "Reuse the spline-fit normalization and project the same acceptance-averaged cross sections to fixed Q^2 values before the epsilon-linear separation; retain unconstrained results and constrained alternatives separately.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bernauer2014-rosenbluth-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer-data-replay-context",
+      "role": "model-context",
+      "denotes": "Parse the bound author tables under their distinct column conventions; check counts, shared-factor coverage, form-factor ratio identities and rounded Table IV arithmetic.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bernauer-data-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer2014-ratios",
+      "role": "scoped-phenomenon",
+      "denotes": "The bound MAMI table contains 1422 cross-section ratios at six incident energies from 180 to 855 MeV, with acceptance-averaged Q^2 from 0.003839 to 0.977245 GeV^2. The ratios already use the spline normalization and scaled point errors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bernauer2014-ratios"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer2014-form-factors",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected Mainz-only spline table gives GE, GM/mu_p and mu_p*GE/GM on 1000 Q^2 grid points from 0 to 0.998001 GeV^2, with separate pointwise bands. These are fitted elastic-response quantities conditional on shared normalization and the stated correction model.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bernauer2014-form-factors"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer2014-separated",
+      "role": "scoped-phenomenon",
+      "denotes": "The bound Rosenbluth table reports 77 unconstrained GE/GM pairs over Q^2=0.0152-0.5524 GeV^2, plus four low-Q^2 GE alternatives constrained by GM/(mu_p*G_dipole)=1 or 1.05. The separation uses the same acquisition and spline-fit normalization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bernauer2014-separated"
+      ]
+    },
+    {
+      "nodeId": "phys:bernauer-data-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The bound tables contain 1422 cross-section rows, 77 unconstrained plus four constrained Rosenbluth entries and 1000 spline evaluations. GE/(GM/mu_p) reproduces the tabulated normalized ratio within 1e-11. Nine Table IV rows admit their displayed reduced chi-square under rounding; the Friedrich-Walcher row does not.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bernauer-data-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:proton-moment-normalization",
+      "role": "definition",
+      "denotes": "For the positive spin-1/2 proton, mu_N=e*hbar/(2*m_p) and mu_p/mu_N=g_p/2. In the Sachs convention, GM(0) equals this dimensionless moment in nuclear-magneton units; this specifies normalization without supplying a measured numerical value.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-proton-moment-normalization"
+      ]
+    },
+    {
+      "nodeId": "phys:proton-moment-frequency-ratio",
+      "role": "definition",
+      "denotes": "For the stated same-field proton measurement, g_p/2=nu_L/nu_c and nu_c^2=nu_plus^2+nu_z^2+nu_minus^2. The ideal frequency ratio connects spin response to the free cyclotron motion; finite-trap corrections remain preparation dependent.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-proton-moment-frequency-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:mooser2014-moment-context",
+      "role": "experimental-context",
+      "denotes": "Transport a cooled single proton between a strongly inhomogeneous analysis trap for spin identification and a precision trap for sideband/cyclotron measurements and spin drive. Fit the unbinned normalized spin-response resonance and correct its induced frequency biases.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-mooser2014-moment-context"
+      ]
+    },
+    {
+      "nodeId": "phys:schneider2017-moment-context",
+      "role": "experimental-context",
+      "denotes": "Prepare three single protons sequentially, infer initial/final spin states from analysis-trap axial series, and reconstruct free cyclotron frequencies during precision-trap Larmor excitation. Retain selection and shared noise-model assumptions in the reported statistical resonance estimate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schneider2017-moment-context"
+      ]
+    },
+    {
+      "nodeId": "phys:schneider2017-moment-inference-context",
+      "role": "model-context",
+      "denotes": "Apply the signed preparation-specific corrections to the same campaign statistical center. Keep the linear systematic-bound aggregation separate from the reported statistical uncertainty and final total.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schneider2017-moment-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:proton-moment-replay-context",
+      "role": "model-context",
+      "denotes": "Evaluate formal free-frequency and same-clock identities, printed campaign counts, bias/correction directions, and rounded systematic/error sums without fitting experimental spectra.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-proton-moment-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:mooser2014-moment",
+      "role": "scoped-phenomenon",
+      "denotes": "The 2014 author report gives statistical mu_p/mu_N=2.792847348(7) and corrected mu_p/mu_N=2.792847350(7)(6), with statistical then systematic uncertainty on the final digits. Its abstract combines these as 2.792847350(9).",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-mooser2014-moment"
+      ]
+    },
+    {
+      "nodeId": "phys:schneider2017-moment-statistic",
+      "role": "scoped-phenomenon",
+      "denotes": "The thesis reports the selected-campaign statistical estimate mu_p/mu_N=2.79284734500(75), before systematic correction, from 1264 selected ratios. The quoted 268 ppt statistical precision is a source inference, not an independently reproduced likelihood result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schneider2017-moment-statistic"
+      ]
+    },
+    {
+      "nodeId": "phys:schneider2017-moment",
+      "role": "scoped-phenomenon",
+      "denotes": "The Science 2017 abstract reports mu_p/mu_N=2.79284734462+/-0.00000000082. The thesis identifies the same result as 2.79284734462(75)(34), with 68.3 percent statistical and separately stated systematic uncertainty, and total fractional precision 295 ppt.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schneider2017-moment"
+      ]
+    },
+    {
+      "nodeId": "phys:proton-moment-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The printed Schneider corrections sum to -133 ppt and their systematic uncertainty bounds sum linearly to 123 ppt. The quoted 75 and 34 final-digit errors combine quadratically to 82.3468... final-digit units, compatible with the abstract error 82. Central correction arithmetic does not exactly recover the final displayed digit, but conservative input-rounding bins overlap.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-proton-moment-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:frequency-moment-ratio",
+      "role": "definition",
+      "denotes": "In a common homogeneous static field, the positive neutron and 199Hg atomic precession-frequency ratio f_n/f_Hg equals |gamma_n|/|gamma_Hg|. Recovering that ratio from this experiment requires its stated field-sampling and frequency-shift corrections; the positive ratio alone carries no sign information.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-frequency-moment-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:afach2014-precession-context",
+      "role": "experimental-context",
+      "denotes": "Store polarized UCN and 199Hg atoms together, fit neutron Ramsey fringes against the optically read mercury frequency, and correct the selected field-up/down data for unequal field sampling and frequency shifts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-afach2014-precession-context"
+      ]
+    },
+    {
+      "nodeId": "phys:afach2014-conversion-context",
+      "role": "model-context",
+      "denotes": "Adopt the quoted external 199Hg atomic frequency-per-field magnitude and multiply it by the corrected PSI ratio; preserve its shielded-proton-in-water reference chain and the distinct alternative calibration direction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-afach2014-conversion-context"
+      ]
+    },
+    {
+      "nodeId": "phys:neutron-moment-replay-context",
+      "role": "model-context",
+      "denotes": "Check the 16 grouped run entries, printed directional correction arithmetic and the maximum-error rule; compare the adopted-reference product and explicitly conditional first-order uncertainty with the displayed result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-neutron-moment-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:afach2014-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected PSI analysis reports the positive neutron/199Hg frequency-ratio magnitude 3.8424574(30), or 0.78 ppm relative uncertainty, after the stated corrections. The final uncertainty is the larger of the field-up and field-down errors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-afach2014-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:afach2014-hg-reference",
+      "role": "scoped-phenomenon",
+      "denotes": "For the absolute conversion, Afach Equation 2 adopts gamma_Hg/(2*pi)=7.590118(13) MHz/T from an external Hg-to-shielded-proton-in-water calibration and reference value. This is a quoted input, not a new PSI measurement of that absolute reference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-afach2014-hg-reference"
+      ]
+    },
+    {
+      "nodeId": "phys:afach2014-neutron-frequency",
+      "role": "scoped-phenomenon",
+      "denotes": "Multiplying the corrected PSI ratio by the adopted Hg atomic reference gives the published |gamma_n|/(2*pi)=29.164705(55) MHz/T. The absolute scale therefore depends on the external reference as well as the measured ratio.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-afach2014-neutron-frequency"
+      ]
+    },
+    {
+      "nodeId": "phys:neutron-moment-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The 16 grouped table entries split into seven field-down and nine field-up cases. Subtracting the printed Table 1 shifts gives 3.8424583 and 3.8424562; the reported final error uses max(2.6,3.0)e-6. The adopted-reference product is 29.1647050759732 MHz/T, compatible with the displayed conditional result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-neutron-moment-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:nucleon-valence-numbers",
+      "role": "definition",
+      "denotes": "In the declared strong-interaction nucleon sectors, net flavor means quarks minus antiquarks: proton (N_u,N_d)=(2,1), neutron (1,2), with zero other net flavors. With B=sum_f N_f/3 and Q/e=sum_f q_f*N_f, these labels give B=1 and charges +1 and 0. Adding a same-flavor quark-antiquark pair or gluons preserves these additive labels without preserving total basis-particle count.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-nucleon-valence-numbers"
+      ]
+    },
+    {
+      "nodeId": "phys:fundamental-color-singlet",
+      "role": "definition",
+      "denotes": "For three fundamental SU(3) color indices, the normalized antisymmetric tensor epsilon_abc/sqrt(6) is invariant because U_ai*U_bj*U_ck*epsilon_ijk=det(U)*epsilon_abc and det(U)=1. A nontrivial center element acts as z or z^2 on one or two fundamental factors, excluding a singlet there. Three is therefore a restricted representation-theoretic minimum, not a measured particle population or sufficient formation condition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-fundamental-color-singlet"
+      ]
+    },
+    {
+      "nodeId": "phys:nucleon-fock-expansion",
+      "role": "definition",
+      "denotes": "In the specified light-front QCD framework, a proton eigenstate is expanded in quark-gluon Fock sectors with the same global quantum numbers, including uud and uudg sectors. The complete state sums amplitudes over sectors; restricting to a three-quark component is a truncation. Basis occupations, net flavor, color representation dimension and observed particles are different quantities.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-nucleon-fock-expansion"
+      ]
+    },
+    {
+      "nodeId": "phys:nucleon-algebra-context",
+      "role": "model-context",
+      "denotes": "Use exact rational charge assignments and symbolic polynomials in nine independent matrix entries. Check pair/gluon charge preservation, the full epsilon determinant identity, its normalization and the center obstruction for one and two fundamental factors. No amplitudes or physical state probabilities are supplied.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-nucleon-algebra-context"
+      ]
+    },
+    {
+      "nodeId": "phys:nucleon-algebra",
+      "role": "scoped-phenomenon",
+      "denotes": "The declared proton/neutron labels have charges +1/0 and baryon number 1; twelve pair insertions and two gluon insertions preserve their net labels while changing basis count. All 27 tensor components satisfy the determinant identity and the epsilon squared norm is 6. The first nonempty purely fundamental color-singlet tensor occurs at three factors within that restricted counting domain.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-nucleon-algebra"
+      ]
+    },
+    {
+      "nodeId": "phys:neutron-sachs-ratio",
+      "role": "definition",
+      "denotes": "In the one-photon framework the unpolarized neutron response contains GE_n^2 and GM_n^2, while Riordan defines gn=mu_n*GE_n/GM_n for the polarized response. CLAS tabulates GM_n/(mu_n*GD), with GD=(1+Q2/(0.71 GeV2))^-2. These are different normalized quantities; gn is not the magnetic g factor.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutron-sachs-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:lachniet2009-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Measure deuterium neutron/proton quasielastic coincidences at 2.6 and 4.2 GeV; use the simultaneous hydrogen target for detection-efficiency calibration and EC/TOF neutron detection with matched acceptance cuts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lachniet2009-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lachniet2009-extraction-context",
+      "role": "model-context",
+      "denotes": "Interpret corrected deuterium ratios through Equation 1 with adopted proton and neutron electric responses, AV18/PWIA/Glauber nuclear corrections and a separate Fermi-motion acceptance correction; combine overlapping EC/TOF and energy settings.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lachniet2009-extraction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:riordan2010-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Prepare polarized electrons and a polarized 3He gas target with N2 admixture; measure coincidence helicity yields and beam/target polarizations, then form the reported charge- and polarization-normalized Ameas.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-riordan2010-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:riordan2010-extraction-context",
+      "role": "model-context",
+      "denotes": "Apply the declared target, accidental, inelastic and proton-background treatment, compare corrected neutron asymmetries with GEA/AV18 calculations, and convert the inferred normalized ratio to GE using external linearly interpolated CLAS GMn.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-riordan2010-extraction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:neutron-form-factor-replay-context",
+      "role": "model-context",
+      "denotes": "Check exact selected-source bytes and table census, final vector-plot identity, Table III quadrature and normalization arithmetic, and interpolation compatibility under printed rounding; preserve explicit discrepancy diagnostics.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-neutron-form-factor-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lachniet2009-ratios",
+      "role": "scoped-phenomenon",
+      "denotes": "Figure 1 reports the cut- and efficiency-treated quasielastic ratio R=sigma[d(e,e'n)p]/sigma[d(e,e'p)n] separately for 2.6 and 4.2 GeV, combining EC/TOF observations within each beam energy.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lachniet2009-ratios"
+      ]
+    },
+    {
+      "nodeId": "phys:lachniet2009-magnetic-response",
+      "role": "scoped-phenomenon",
+      "denotes": "E111M1 releases 26 combined GMn/(mu_n*GD) values at Q2 centers 0.9848-4.7727 GeV2, with separate statistical and systematic error columns. These are original conditional inferences from corrected deuterium ratios, not free-neutron or magnetic-moment measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lachniet2009-magnetic-response"
+      ]
+    },
+    {
+      "nodeId": "phys:riordan2010-asymmetries",
+      "role": "scoped-phenomenon",
+      "denotes": "Table II reports Ameas=-0.136, -0.134 and -0.098 at acceptance-mean Q2=1.72, 2.48 and 3.41 GeV2, after the Equation 1 charge and beam/target polarization normalization. Corrected Aen endpoints are a separate computational outcome.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-riordan2010-asymmetries"
+      ]
+    },
+    {
+      "nodeId": "phys:riordan2010-corrected-asymmetries",
+      "role": "scoped-phenomenon",
+      "denotes": "Table II reports Aen|exp=-0.188, -0.175 and -0.134 after the stated dilution and background treatment of the same three measured asymmetries. Its intermediate Aphys values are -0.148, -0.145 and -0.109. These are correction stages from the same data; the final endpoints are compared with GEA calculations in the ratio extraction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-riordan2010-corrected-asymmetries"
+      ]
+    },
+    {
+      "nodeId": "phys:riordan2010-normalized-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "Table III reports gn=mu_n*GE_n/GM_n of 0.273 +/- 0.020(stat) +/- 0.030(syst), 0.412 +/- 0.048 +/- 0.036 and 0.496 +/- 0.067 +/- 0.046 at acceptance-mean Q2=1.72, 2.48 and 3.41 GeV2.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-riordan2010-normalized-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:riordan2010-electric-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Using linearly interpolated Lachniet GMn, Table III reports GE_n=0.0236 +/- 0.0017(stat) +/- 0.0026(syst), 0.0208 +/- 0.0024 +/- 0.0019 and 0.0147 +/- 0.0020 +/- 0.0014 at Q2=1.72, 2.48 and 3.41 GeV2.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-riordan2010-electric-response"
+      ]
+    },
+    {
+      "nodeId": "phys:neutron-form-factor-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "All 26 CLAS centers match the final-v2 vector figure within one plotting unit; the three Table III uncertainty decompositions reproduce their displayed totals. Literal GMn interpolation has a first-point central rounding mismatch but overlaps the reported GE display interval when gn rounding is retained. Two endpoint systematic errors remain inconsistent with the paper's stated relative range.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-neutron-form-factor-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:decay-energy-threshold",
+      "role": "definition",
+      "denotes": "For an isolated particle at rest and declared asymptotically free final particles with positive on-shell energies, energy conservation requires initial rest energy at least the sum of final rest energies. A negative Q=(M-sum(mi))*c^2 excludes that final state; a nonnegative Q alone supplies no decay amplitude or lifetime.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-decay-energy-threshold"
+      ]
+    },
+    {
+      "nodeId": "phys:deuteron-beta-context",
+      "role": "model-context",
+      "denotes": "Specify ground-state bare d -> free p+p+e-+electron-antineutrino, adopt the Rau joint adjusted proton/deuteron pair and CODATA 2018 electron and unit inputs, and evaluate the rest-energy excess with zero neutrino mass as the most permissive threshold.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-deuteron-beta-context"
+      ]
+    },
+    {
+      "nodeId": "phys:deuteron-beta-threshold",
+      "role": "scoped-phenomenon",
+      "denotes": "For the declared bare-deuteron channel, the local calculation gives Q0=(md-2mp-me)*c^2=-1.44223 MeV approximately. The printed-input rounding box remains negative, excluding this spontaneous final state under the stated kinematic conditions; the capture-derived neutron route cancels the shared binding input.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-deuteron-beta-threshold"
+      ]
+    },
+    {
+      "nodeId": "phys:hadron-production-yield",
+      "role": "definition",
+      "denotes": "Define xp=2p/Ecm and the inclusive differential multiplicity (1/N)dn/dxp per hadronic Z0 decay. Integrating a differential multiplicity over xp gives a mean count, which may exceed one; it is not an event probability.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hadron-production-yield"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1999-neutral-context",
+      "role": "experimental-context",
+      "denotes": "SLD uses approximately 150000 hadronic events acquired in 1993-1995. The inclusive event selection retains 90213 events; CRID analyses additionally require detector readiness, leaving 79711. K0S and Lambda use displaced charged vertices; K*0 and phi use charged-pair mass fits with kaon identification. The event denominator is corrected for trigger and selection efficiency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sld1999-neutral-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1999-extrapolation-context",
+      "role": "model-context",
+      "denotes": "The same measured spectra are integrated with correlated systematic errors, then extrapolated over unmeasured xp using the mean accepted fraction from three specified fragmentation generators. The assigned absolute accepted-fraction uncertainty is 0.01 for K0 and Lambda and 0.015 for K*0 and phi.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sld1999-extrapolation-context"
+      ]
+    },
+    {
+      "nodeId": "phys:hadron-production-replay-context",
+      "role": "model-context",
+      "denotes": "Check the local transcription of 44 neutral-hadron bins, integrals of the displayed densities, coherent display-rounding bounds, and synthetic branching/efficiency and shared-normalization identities.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-hadron-production-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1999-neutral-yields",
+      "role": "scoped-phenomenon",
+      "denotes": "Tables 6-7 report corrected differential yields in 44 bins. Measured-range integrals per hadronic Z0 decay are K0/K0bar 1.90 +/- 0.02 +/- 0.07, Lambda/Lambdabar 0.37 +/- 0.01 +/- 0.02, K*0/K*0bar 0.647 +/- 0.022 +/- 0.029 and phi 0.0985 +/- 0.0046 +/- 0.0055, with statistical then systematic errors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sld1999-neutral-yields"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1999-neutral-totals",
+      "role": "scoped-phenomenon",
+      "denotes": "Table 16 reports all-flavor full-range totals per hadronic Z0 decay: K0/K0bar 2.01 +/- 0.08, Lambda/Lambdabar 0.395 +/- 0.022, K*0/K*0bar 0.707 +/- 0.041 and phi 0.105 +/- 0.008. The quoted errors combine experimental and model-extrapolation contributions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sld1999-neutral-totals"
+      ]
+    },
+    {
+      "nodeId": "phys:hadron-production-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The 44 displayed differential bins integrate centrally to 1.89787 K0/K0bar, 0.36454 Lambda/Lambdabar, 0.645525 K*0/K*0bar and 0.0980933 phi per decay. These do not exactly equal the displayed measured-range centers, but coherent display-rounding enclosures overlap the reported bins. Synthetic count corrections preserve the once-only branching efficiency and separate neutral-kaon factor two.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-hadron-production-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:pion-inclusive-decay-ratio",
+      "role": "definition",
+      "denotes": "Define R_e/mu=Gamma(pi+ -> e+ nu(gamma))/Gamma(pi+ -> mu+ nu(gamma)), with associated radiative pion decays included in each partial rate. The dimensionless ratio compares two specified channels; a total decay rate is not measured by this ratio alone.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-pion-inclusive-decay-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:pienu2015-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Stop a 75 MeV/c positive-pion beam in the scintillator target. Use the stated positron triggers, extra-activity rejection and 60 mm tracking fiducial cut. The energy plot uses a 5-35 ns region; the low/high timing samples use their specified trigger streams and a 52 MeV split.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-pienu2015-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:pienu2015-fit-context",
+      "role": "model-context",
+      "denotes": "Fit the low/high timing samples together with L1-L3 and H1-H6 components, a common fixed time origin and the declared nuisance treatment. Use -290 to 520 ns while excluding -19 to 4 ns; preserve the same acquisition and pre-unblinding choice of cuts and corrections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-pienu2015-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:pienu2015-correction-context",
+      "role": "model-context",
+      "denotes": "Apply the Table I multiplicative factors to the raw fitted ratio: acceptance 0.9991 +/- 0.0003, tail 1.0316 +/- 0.0012 and other 1.0004 +/- 0.0008. Retain the empirical upper/lower tail construction and simulation dependence. A dedicated 70 MeV/c positron-beam sample in a simplified setup constrains the upper tail; 10-70 MeV/c positron-beam and stopped-muon controls constrain timing response. These auxiliary preparations supply response inputs rather than a new pion ratio.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-pienu2015-correction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:pienu2015-spectra",
+      "role": "scoped-phenomenon",
+      "denotes": "Figure 2 reports the selected calorimeter-energy distributions before and after background-suppression cuts. Figure 3 reports the low/high timing distributions separated at 52 MeV, with fitted component curves shown separately. These distinguish direct electronic-pion candidates from the pion-muon-positron chain within the declared response and background model.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-pienu2015-spectra"
+      ]
+    },
+    {
+      "nodeId": "phys:pienu2015-raw-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "The simultaneous timing fit reports R_raw=(1.1972 +/- 0.0022 statistical +/- 0.0005 systematic) x 10^-4, with chi-square per degree of freedom 1.02 for 673 degrees of freedom. It is a fitted same-acquisition intermediate result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-pienu2015-raw-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:pienu2015-corrected-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "After the published Table I corrections, PIENU reports R_e/mu=(1.2344 +/- 0.0023 statistical +/- 0.0019 systematic) x 10^-4 for the inclusive electronic-to-muonic pion partial-rate ratio.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-pienu2015-corrected-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:pion-decay-replay-context",
+      "role": "model-context",
+      "denotes": "Check the printed PIENU Table I correction product and its display-rounding bounds. Use synthetic forward signal counts to test common-exposure and efficiency cancellation and demonstrate that a two-channel rate ratio alone does not identify absolute branching fractions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-pion-decay-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:pion-decay-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The printed central correction gives 1.1972*0.9991*1.0316*1.0004=1.2344135596286528 in units of 10^-4, which rounds to the reported 1.2344. A positive-factor display-rounding box overlaps the reported display bin. Thirty-two synthetic efficiency/exposure witnesses preserve the ratio under common exposure, while unequal exposure does not cancel; distinct synthetic absolute branching allocations retain the same ratio.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-pion-decay-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:electron-moment-normalization",
+      "role": "definition",
+      "denotes": "For electron charge -e with e>0, mu_B=e*hbar/(2m)>0 and the spin operator relation is mu_vector=-g*mu_B*S_vector/hbar. Define a_e=g/2-1; the reported positive moment magnitude ratio is -mu/mu_B=g/2, with the signed spin projection kept explicit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-electron-moment-normalization"
+      ]
+    },
+    {
+      "nodeId": "phys:electron-moment-frequency-ratio",
+      "role": "definition",
+      "denotes": "For common B, nu_c=e*B/(2*pi*m), nu_s=(g/2)*nu_c and nu_a=nu_s-nu_c, hence g/2=1+nu_a/nu_c. The free cyclotron frequency is distinct from measured trap-modified line centers; Fan uses the invariance relation and its controlled expansion before adding the cavity shift.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-electron-moment-frequency-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:schwinger-leading-anomaly",
+      "role": "definition",
+      "denotes": "The 1948 letter gives delta_mu/mu=e^2/(2*pi*hbar*c)=0.001162 in its Gaussian-unit convention. With alpha=e^2/(hbar*c) this is the positive leading correction a_e^(1)=alpha/(2*pi), or g/2=1+a_e^(1) at that order, using renormalized experimental mass and charge.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-schwinger-leading-anomaly"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-moment-context",
+      "role": "experimental-context",
+      "denotes": "Prepare one electron in a cryogenic cylindrical Penning trap, alternate cyclotron and anomaly quantum-jump trials, and observe spin/cyclotron state changes through axial-frequency shifts; record the axial noise dip separately.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fan2023-moment-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-cavity-context",
+      "role": "experimental-context",
+      "denotes": "Determine cavity mode frequencies and Q values through parametrically pumped electrons, one-electron first-excited-state lifetimes and high-excitation electron decay; retain these calibration preparations separately from the precision jump trials.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fan2023-cavity-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-inference-context",
+      "role": "model-context",
+      "denotes": "Fit thermal cyclotron line shapes convolved with Gaussian broadening and the nearly symmetric anomaly lines to extract f_bar_c and nu_bar_a; use the measured axial frequency, Equation 5 trap/relativistic terms, calibrated cavity-shift calculation and an eleven-field weighted combination.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fan2023-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:electron-moment-replay-context",
+      "role": "model-context",
+      "denotes": "Evaluate exact g/2-to-anomaly and signed-spin conversions, a synthetic common-field cancellation and nonsimultaneous-field counterexample, a supplied leading-formula substitution, and display-resolution compatibility of Table I quadrature.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-electron-moment-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-frequency-lines",
+      "role": "scoped-phenomenon",
+      "denotes": "Figure 3 reports cyclotron and anomaly transition-probability line shapes from alternating quantum-jump trials and an axial Johnson-noise dip. These measured responses precede the separate fitted-frequency record; they are not numerical free-frequency triples.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fan2023-frequency-lines"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-cavity-calibration",
+      "role": "scoped-phenomenon",
+      "denotes": "The three distinct calibration methods report mutually consistent mode information; the moment correction uses measured frequencies and Q values for 72 observed cavity modes. No complete 72-row numerical calibration table is bound here.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fan2023-cavity-calibration"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-fitted-frequencies",
+      "role": "scoped-phenomenon",
+      "denotes": "The original thermal/Gaussian line analysis extracts f_bar_c and nu_bar_a and uses the axial-frequency measurement for Equation 5. Figure 3 illustrates the fits, while the rounded frequency scales do not supply all unrounded eleven-field estimates.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fan2023-fitted-frequencies"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-cavity-shift",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported renormalized cavity calculation replaces ideal contributions for 72 modes with contributions using measured frequencies and Q values, and gives different Delta_g_cav/2 corrections at eleven magnetic fields as shown in Figure 4.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fan2023-cavity-shift"
+      ]
+    },
+    {
+      "nodeId": "phys:fan2023-electron-moment",
+      "role": "scoped-phenomenon",
+      "denotes": "The eleven-field corrected inference reports -mu/mu_B=g/2=1.00115965218059(13), with one-standard-deviation absolute uncertainty 1.3e-13 (about 0.13 ppt relative). The reported quantity is g/2; g and its absolute uncertainty are twice those values. This is the 2022 Northwestern determination published in 2023 and is not combined with the 2008 determination.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-fan2023-electron-moment"
+      ]
+    },
+    {
+      "nodeId": "phys:electron-moment-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported g/2 gives a_e=0.00115965218059 with the same absolute 1.3e-13 uncertainty. The six Table I components have square-sum 1.8102 and RSS 1.3454367 in 10^-13 units, compatible with the printed total 1.3 under display rounding. Synthetic frequency witnesses distinguish common-field cancellation from anomaly-scaled nonsimultaneous-field bias; the leading formula is evaluated only as supplied algebra.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-electron-moment-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:qed-effective-coupling",
+      "role": "definition",
+      "denotes": "In the L3 QED convention alpha(Q^2)=alpha(0)/(1-DeltaAlpha(Q^2)), where DeltaAlpha parameterizes vacuum-polarization corrections. The Bhabha analysis uses signed Q^2=t=-s*(1-cos(theta))/2<0 in the spacelike region; this alpha is the electromagnetic coupling, not alpha_s.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qed-effective-coupling"
+      ]
+    },
+    {
+      "nodeId": "phys:l3-small-angle-context",
+      "role": "experimental-context",
+      "denotes": "Select L3 Bhabha events near the Z resonance in 1993-1995 with BGO energy thresholds of 0.8 and 0.4 times beam energy. Use silicon/BGO coordinates and the 32-54 mrad fiducial region with boundaries 32,35,40,46,54 mrad; enter four coordinates per event with weight 0.25. The retained sample is 6.7 million events, grouped into seven year/energy sets.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-l3-small-angle-context"
+      ]
+    },
+    {
+      "nodeId": "phys:l3-angular-shape",
+      "role": "scoped-phenomenon",
+      "denotes": "The analysis measures weighted four-bin angular fractions in seven 1993-1995 year/energy data sets after the stated detector corrections. Figure 1 displays the 1994 subset as ratios to the normal-running and no-running predictions: two theoretical denominators for the same subset, not independent measurements or absolute cross sections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-l3-angular-shape"
+      ]
+    },
+    {
+      "nodeId": "phys:l3-running-model",
+      "role": "model-context",
+      "denotes": "Use the corrected angular fractions and the multinomial shape likelihood of Equation 2 with modified BHLUMI 4.04. Equation 3 uses alpha(Q^2)=alpha(0)/(1-DeltaAlpha(Q^2)-S*(Q^2-Q0^2)), with Q0^2=-2.1 GeV^2, nominal running as the reference and unchanged timelike running.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-l3-running-model"
+      ]
+    },
+    {
+      "nodeId": "phys:l3-running-slope",
+      "role": "scoped-phenomenon",
+      "denotes": "The combined small-angle analysis reports S=(-3.6 +/- 2.7 statistical +/- 3.5 systematic)*10^-4 GeV^-2 in Equation 4. S is a fitted deformation of nominal spacelike running; zero slope does not mean a constant coupling.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-l3-running-slope"
+      ]
+    },
+    {
+      "nodeId": "phys:l3-running-difference",
+      "role": "scoped-phenomenon",
+      "denotes": "L3 interprets the same small-angle fit as alpha^-1(-2.1 GeV^2)-alpha^-1(-6.25 GeV^2)=0.78 +/- 0.26, with total experimental uncertainty. This is a conditional running-coupling difference, not an additional acquisition or two absolute coupling measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-l3-running-difference"
+      ]
+    },
+    {
+      "nodeId": "phys:vacuum-polarization-replay-context",
+      "role": "model-context",
+      "denotes": "Use exact rational arithmetic for synthetic four-bin cross-section integrals, common positive rescaling and Equation 3. Adopt only the printed central alpha^-1(0)=137.03599976, S=-0.00036 GeV^-2 and endpoints -2.1,-6.25 GeV^2 for the added-deformation calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-vacuum-polarization-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:vacuum-polarization-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "Nine synthetic common-scale checks preserve normalized four-bin fractions, while three nonuniform controls change the shape. Equation 3 gives an added inverse-alpha difference of 0.20473178364144 for the printed reference and slope; the nominal contribution and full reported difference are not calculated.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-vacuum-polarization-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:light-flavor-su3",
+      "role": "definition",
+      "denotes": "Use the approximate light-flavor SU(3) classification of u,d,s labels, distinct from local color SU(3). In this restricted sector Y=B+S and Q/e=I3+Y/2. The symmetry limit groups states with related quantum numbers; observed mass splittings do not disappear by a change of labels.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-light-flavor-su3"
+      ]
+    },
+    {
+      "nodeId": "phys:light-baryon-multiplets",
+      "role": "definition",
+      "denotes": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N,Lambda,Sigma,Xi and J^P=3/2+ decuplet Delta,Sigma*,Xi*,Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-light-baryon-multiplets"
+      ]
+    },
+    {
+      "nodeId": "phys:baryon-octet-mass-relation",
+      "role": "definition",
+      "denotes": "Gell-Mann Equation 8.1 states (m_N+m_Xi)/2=(3*m_Lambda+m_Sigma)/4 to first order in unitary-symmetry violation for the baryon octet with common spin and parity. This is a supplied approximate mass relation, not exact equality of all measured masses.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-baryon-octet-mass-relation"
+      ]
+    },
+    {
+      "nodeId": "phys:omega-decuplet-expectation",
+      "role": "model-context",
+      "denotes": "Keep the report's adopted missing decuplet slot separate from the selected event: I=0, Q=-1, S=-3, predicted J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 compares historical isomultiplet centers 1238,1385,1532 MeV/c^2 with that expectation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-omega-decuplet-expectation"
+      ]
+    },
+    {
+      "nodeId": "phys:barnes1964-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Expose the BNL 80-inch hydrogen bubble chamber to a mass-separated 5 GeV/c K- beam. The report describes about 100000 pictures and roughly 10^6 feet of kaon tracks, partially analyzed for characteristic Omega decays; this admission concerns its one selected event.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-barnes1964-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:barnes1964-tracks",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected event has charged-track directions and momenta listed in Table I, gap-density particle-identification information, displaced vertices and two photon conversions shown in Figure 2. These measured inputs precede the neutral cascade and parent-mass interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-barnes1964-tracks"
+      ]
+    },
+    {
+      "nodeId": "phys:barnes1964-reconstruction-context",
+      "role": "model-context",
+      "denotes": "Associate the fitted Lambda, two converted photons and the displaced neutral trajectory under Equation 1; use particle-mass hypotheses, transverse balance, production missing mass and alternative-channel tests to interpret the same event.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-barnes1964-reconstruction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:barnes1964-cascade",
+      "role": "scoped-phenomenon",
+      "denotes": "Under the stated assignments the report finds a Lambda-compatible p+pi- mass of 1116 +/- 2 MeV/c^2, a two-photon mass of 135.1 +/- 1.5 MeV/c^2, and a neutral Xi-compatible mass of 1316 +/- 4 MeV/c^2. Shared vertex geometry and transverse balance support the proposed Xi0+pi- parent decay.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-barnes1964-cascade"
+      ]
+    },
+    {
+      "nodeId": "phys:barnes1964-omega",
+      "role": "scoped-phenomenon",
+      "denotes": "The report conditionally identifies particle 3 with Omega- from Q=-1, inferred S=-3 and reconstructed mass 1686 +/- 12 MeV/c^2, with a production missing mass of 500 +/- 25 MeV/c^2 compatible with K0. The quoted event proper decay time is 0.7e-10 s; no spin/parity or ensemble-lifetime determination is supplied.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-barnes1964-omega"
+      ]
+    },
+    {
+      "nodeId": "phys:hadron-family-replay-context",
+      "role": "model-context",
+      "denotes": "Enumerate supplied light-baryon isospin/hypercharge weights and charges, compare degree-three symmetric flavor monomial weights, evaluate three synthetic positive-mass examples of the supplied octet relation, and compare the historical Figure 1 mass spacings.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-hadron-family-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:hadron-family-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The supplied octet has eight states at seven distinct (I3,Y) positions; the decuplet has ten weights, with Omega at I=I3=0,Y=-2,S=-3,Q=-1. Ten symmetric flavor monomials match the decuplet weights, and nine synthetic mass-relation checks pass. The printed centers give two 147 MeV spacings and continuation 1679 MeV, compared only with the approximate 1680 MeV expectation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-hadron-family-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:light-meson-nonets",
+      "role": "definition",
+      "denotes": "In the restricted u,d,s quark-antiquark model, 3 tensor 3bar decomposes as flavor 8 plus 1. The lightest L=0 pseudoscalar and vector assignments form separate nonets; spin/parity and physical state mixing remain part of their interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-light-meson-nonets"
+      ]
+    },
+    {
+      "nodeId": "phys:meson-isoscalar-mixing",
+      "role": "definition",
+      "denotes": "The flavor-octet and singlet isoscalar basis vectors are (|u ubar>+|d dbar>-2|s sbar>)/sqrt(6) and (|u ubar>+|d dbar>+|s sbar>)/sqrt(3). Physical eta and eta-prime are rotated combinations, not exact octet/singlet labels. In the restricted flavor basis |eta>=cos(phi_P)*|q qbar>-sin(phi_P)*|s sbar> and |eta-prime>=sin(phi_P)*|q qbar>+cos(phi_P)*|s sbar>, with |q qbar>=(|u ubar>+|d dbar>)/sqrt(2) and theta_P=phi_P-arctan(sqrt(2)). Each ket labels a quark-antiquark basis state, not a subtraction or a complete observed particle population.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-meson-isoscalar-mixing"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Use the 427 pb^-1 KLOE sample collected in 2001-2002 near sqrt(s)=1.02 GeV. Select seven prompt calorimeter photons with an opposite-charge track vertex for the combined two eta-prime cascades, and seven photons without interaction-region tracks for the eta normalization cascade; impose the stated energy, timing, vertex and kinematic-fit selections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kloe2007-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-response-context",
+      "role": "model-context",
+      "denotes": "Estimate residual kaon backgrounds using simulation and the acquisition normalization; obtain branching-weighted signal efficiency 23.45% and reference efficiency 33.66%, plus FLS efficiencies 97% and 97.88% from control data. Equation 7 multiplies the subtracted yield ratio by inverse signal/reference efficiencies, FLS ratio, daughter-branching ratio and K_rho=0.95 +/-0.01.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kloe2007-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-mixing-context",
+      "role": "model-context",
+      "denotes": "Use the same measured R_phi in the no-gluonium Equation 10: cot(phi_P)^2*[1-(m_s/m_bar)*(C_NS/C_S)*tan(phi_V)/sin(2phi_P)]^2*(p_eta-prime/p_eta)^3. Adopt the constituent-mass, overlap, vector-angle and phase-space inputs stated in the paper; keep the separate multi-source gluonium fit outside this inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kloe2007-mixing-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-selected-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected eta-prime cascade sample contains 3750 candidates before residual background subtraction. The eta normalization selection contains 1665000 events. The reported energy and invariant-mass plots display detector-level responses with modeled components.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kloe2007-selected-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-subtracted-yield",
+      "role": "scoped-phenomenon",
+      "denotes": "The residual background estimate 343 +/-43 is subtracted from 3750 candidates, giving N_eta-prime-gamma=3407 +/-61 statistical +/-43 systematic. The subtraction reuses the selected acquisition and treats background uncertainty as systematic.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kloe2007-subtracted-yield"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-radiative-ratio",
+      "role": "scoped-phenomenon",
+      "denotes": "After the Equation 7 response, daughter-branching and interference corrections, KLOE reports R_phi=BR(phi->eta-prime gamma)/BR(phi->eta gamma)=(4.77 +/-0.09 statistical +/-0.19 systematic)*10^-3.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kloe2007-radiative-ratio"
+      ]
+    },
+    {
+      "nodeId": "phys:kloe2007-pseudoscalar-angle",
+      "role": "scoped-phenomenon",
+      "denotes": "Under the specified zero-gluonium model, the same R_phi gives phi_P=(41.4 +/-0.3 statistical +/-0.7 systematic +/-0.6 theoretical) degrees, corresponding to the reported octet-singlet angle theta_P=(-13.3 +/-0.3 +/-0.7 +/-0.6) degrees. This is a conditional same-acquisition interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kloe2007-pseudoscalar-angle"
+      ]
+    },
+    {
+      "nodeId": "phys:meson-family-replay-context",
+      "role": "model-context",
+      "denotes": "Check rational trace/traceless projectors and nine declared flavor weights; use an explicitly synthetic two-cascade response model to test efficiency, daughter-branching and common-exposure cancellation. Check only the printed 343 background sum and 3750-343=3407 subtraction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-meson-family-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:meson-family-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "Three rational matrix witnesses preserve scalar-plus-traceless reconstruction, idempotence and orthogonality. Nine q-qbar basis labels include three coincident zero-weight vectors. Three synthetic exposure cases recover the declared ratio only with the branch-weighted response and proper correction direction; Table 1 backgrounds sum 343 and 3750-343=3407.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-meson-family-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:perturbative-amplitude",
+      "role": "definition",
+      "denotes": "In the selected QED scattering construction, a perturbative amplitude combines the required terms for specified external states and interaction order before a transition probability is formed. Alternatives can interfere; for identical electrons the direct and exchanged two-electron amplitudes are antisymmetrized.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-perturbative-amplitude"
+      ]
+    },
+    {
+      "nodeId": "phys:internal-propagator",
+      "role": "definition",
+      "denotes": "An internal line denotes a propagator kernel joining vertices in a specified perturbative amplitude. In the selected Fourier convention the photon includes (k^2+i0)^-1 and the electron an inverse Dirac operator. Vertex momentum conservation is imposed; loop four-momenta are integrated rather than individually restricted to a free mass shell.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-internal-propagator"
+      ]
+    },
+    {
+      "nodeId": "phys:external-scattering-state",
+      "role": "definition",
+      "denotes": "External states specify the initial and final boundary of the scattering calculation. In the stated free plane-wave convention external electron momenta satisfy p^2=m^2, while external photons and source normalization require their own prescribed state factors. This definition does not assert general nonperturbative asymptotic completeness.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-external-scattering-state"
+      ]
+    },
+    {
+      "nodeId": "phys:virtual-process-replay-context",
+      "role": "model-context",
+      "denotes": "Use exact rational four-vectors with metric +--- and c=1. Set synthetic mass m=4, incoming (5,3,0,0),(5,-3,0,0) and outgoing (5,9/5,12/5,0),(5,-9/5,-12/5,0); check conservation, external mass shells and s,t,u under two rational proper boosts. Include a forward-transfer boundary and generic complex-number interference controls.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-virtual-process-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:virtual-process-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "All four synthetic external momenta have p^2=16 and conserved total four-momentum. The exchange q=p1-p3=(0,6/5,-12/5,0) has q^2=t=-36/5, with s=100 and u=-144/5, so s+t+u=64=4m^2. Two rational boosts preserve these invariants. Forward scattering permits t=0; generic amplitudes 1 and -1 cancel before squaring.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-virtual-process-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:free-field-time-evolution",
+      "role": "definition",
+      "denotes": "Heisenberg time evolution within the specified free real scalar model, with declared distributional and boundary assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-free-field-time-evolution"
+      ]
+    },
+    {
+      "nodeId": "phys:field-dynamics-replay-context",
+      "role": "model-context",
+      "denotes": "An adopted infinite oscillator vacuum and a finite set of exact rational coefficient maps at positive frequencies and declared phases.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-field-dynamics-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:field-dynamics-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The finite exact mode identities and counterexamples, conditional on the oscillator algebra and chosen vacuum; no field measurement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-field-dynamics-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:higgs-abelian-linearization",
+      "role": "definition",
+      "denotes": "For the Higgs1964 U(1) model with real fields and rho=phi1^2+phi2^2, choose (phi1,phi2)=(0,phi0), V'(phi0^2)=0 and V''(phi0^2)>0. The linearized radial and vector squared masses are 4*phi0^2*V''(phi0^2) and e^2*phi0^2. The shifted vector in Equation 3 contains the scalar-gradient term.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-higgs-abelian-linearization"
+      ]
+    },
+    {
+      "nodeId": "phys:weinberg-electroweak-background",
+      "role": "definition",
+      "denotes": "Weinberg1967 specifies an electron-type chiral doublet/singlet, SU(2) and hypercharge gauge fields and a scalar doublet with kinetic term -1/2*|D_mu phi|^2. In its own convention choose <phi>=lambda_W*(1,0) real, and eliminate the stated scalar phase/charged fields by a gauge transformation before reading the quadratic mass terms.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-weinberg-electroweak-background"
+      ]
+    },
+    {
+      "nodeId": "phys:weinberg-gauge-mass-matrix",
+      "role": "definition",
+      "denotes": "In Weinberg1967 conventions the neutral squared-mass matrix in the (A3,B) basis is lambda_W^2/4 times [[g^2,g*gprime],[g*gprime,gprime^2]]. Its massive direction is (g,gprime), its massless photon direction is (-gprime,g), M_W=lambda_W*g/2, M_Z=lambda_W*sqrt(g^2+gprime^2)/2 and e=g*gprime/sqrt(g^2+gprime^2).",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-weinberg-gauge-mass-matrix"
+      ]
+    },
+    {
+      "nodeId": "phys:weinberg-electron-yukawa",
+      "role": "definition",
+      "denotes": "The separately specified real electron coupling G_e in Weinberg1967 multiplies the scalar-lepton term. Replacing the scalar by its chosen background gives M_e=lambda_W*G_e. Changing G_e changes this mass without fixing the gauge couplings or predicting the numerical mass hierarchy.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-weinberg-electron-yukawa"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Use the ATLAS pp data at 7 TeV in 2011 and 8 TeV in April-June 2012, with channel luminosities 4.6-4.8 and 5.8-5.9 fb^-1. Apply channel-specific lepton/photon triggers, object reconstruction, isolation, jet and missing-momentum selections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-atlas2012-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-response-context",
+      "role": "model-context",
+      "denotes": "Use simulated signal acceptance and mass response with data calibration/control corrections; constrain reducible and WW/top backgrounds through the stated control regions and diphoton backgrounds through category-specific mass fits. Retain control-transfer and shared calibration dependence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-atlas2012-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-four-lepton-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "The reanalysed 7 TeV and new 8 TeV four-lepton selections give the Figure 2 invariant-mass spectrum. In the Table 3 window 120-130 GeV, the reported observed counts are 6 four-muon, 5 mixed-electron/muon and 2 four-electron candidates; modeled signal and backgrounds are separate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atlas2012-four-lepton-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-diphoton-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected diphoton samples contain 23788 candidates at 7 TeV and 35251 at 8 TeV in 100-160 GeV, divided into ten categories per energy. Figure 4 shows inclusive and model-weighted views with fitted background residuals of these same samples.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atlas2012-diphoton-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-ww-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "The 8 TeV opposite-flavor dilepton selection supplies the Figure 6 transverse-mass distribution. Table 5 separately reports 185,38,0 observed events in the 0-,1-,2-jet categories after its extra mass window; the search likelihood uses a different mT selection.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atlas2012-ww-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-inference-context",
+      "role": "model-context",
+      "denotes": "Profile the stated signal/background likelihood with correlated nuisance parameters. Diphotons use unbinned category likelihoods; WW uses transverse-mass bins for 0/1 jet and an integrated 2-jet contribution. The full Table 6 combination also imports earlier 7 TeV channels, while the mass fit selects the four-lepton and diphoton channels only.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-atlas2012-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-boson-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "Using the four-lepton and diphoton channels with independently varying signal strengths, ATLAS reports a mass of 126.0 +/-0.4 statistical +/-0.4 systematic GeV for the new particle. This is the original 2012 fit result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atlas2012-boson-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-combined-excess",
+      "role": "scoped-phenomenon",
+      "denotes": "The full published combination reports local significance 5.9 standard deviations (p0=1.7e-9), and global significance about 5.1 (p0=1.7e-7) over 110-600 GeV. At mH=126 GeV the fitted common signal strength relative to the Standard Model is 1.4 +/-0.3.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atlas2012-combined-excess"
+      ]
+    },
+    {
+      "nodeId": "phys:atlas2012-higgs-compatibility",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported channels support a new neutral boson compatible with the Standard Model Higgs production/decay hypothesis. Diphoton observation disfavors spin one; the paper explicitly requires more information to determine the particle nature in detail.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atlas2012-higgs-compatibility"
+      ]
+    },
+    {
+      "nodeId": "phys:electroweak-replay-context",
+      "role": "model-context",
+      "denotes": "Choose three positive rational U(1) toy potentials V(rho)=kappa*(rho-a^2)^2/4, separately choose three Weinberg background/gauge/Yukawa tuples, and check the declared Hessian and quadratic identities exactly. None of these parameter choices is an experimental input.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-electroweak-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:electroweak-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "All three synthetic U(1) cases have the stated radial curvature and vector mass term. All three Weinberg matrices have zero determinant, the declared photon null direction and positive massive eigenvalue; the charged/neutral and electric-charge identities hold, while doubling the free electron coupling doubles its mass.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-electroweak-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-flavor-mixing",
+      "role": "definition",
+      "denotes": "Use |nu_alpha>=sum_i U_alpha,i* |nu_i> for flavor states produced or detected through charged-current interactions. A closed two- or three-state unitary mixing model connects these labels to propagation mass eigenstates; the minimal massless Standard Model lepton classification alone does not supply neutrino masses.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-flavor-mixing"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-vacuum-phase",
+      "role": "definition",
+      "denotes": "In the coherent ultrarelativistic vacuum approximation with hbar=c=1, A_alpha-to-beta=sum_i U_beta,i exp[-i m_i^2 L/(2E)] U_alpha,i* and P=|A|^2. Antineutrinos replace U by U*. Relative phases use Delta m^2 L/(2E); the effective two-flavor survival probability is 1-sin^2(2 theta) sin^2[Delta m^2 L/(4E)]. A common mass-squared shift changes only a common phase.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-vacuum-phase"
+      ]
+    },
+    {
+      "nodeId": "phys:reactor-antineutrino-readout",
+      "role": "definition",
+      "denotes": "KamLAND identifies electron-antineutrino candidates through inverse beta decay, antinu_e+p->e-plus+n. The prompt positron kinetic plus annihilation signal is followed by neutron-capture light, normally a 2.2 MeV gamma from hydrogen. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset; energy response and delayed-coincidence selection remain explicit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-reactor-antineutrino-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Use the 766 ton-year exposure from 9 March 2002 to 11 January 2004, with 515.1 days of livetime after muon cuts. Require prompt energy 2.6-8.5 MeV, delayed energy 1.8-2.6 MeV, both vertices within 5.5 m, separation below 2 m and delay 0.5-1000 microseconds. Retain the PMT upgrade and reported 89.8 +/- 1.5% selection efficiency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kamland2005-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-response-context",
+      "role": "model-context",
+      "denotes": "Construct the no-oscillation reactor expectation from time-dependent reactor histories, fission-spectrum and cross-section inputs, 4.61e31 target protons, livetime and response. Use calibrations and auxiliary controls for the accidental, lithium/helium and alpha-induced carbon-neutron components; retain the reported uncertainty treatment separately from selected counts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kamland2005-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-fit-context",
+      "role": "model-context",
+      "denotes": "Use the same selected prompt spectrum and rate in the reported unbinned two-flavor maximum-likelihood analysis. Include reactor histories, detector response and background nuisance treatment: float the alpha-neutron component near 6 MeV, constrain the 2.6 and 4.4 MeV components and retain their stated energy-scale uncertainty. Keep the separate solar combination outside this result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-kamland2005-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-selected-energies",
+      "role": "scoped-phenomenon",
+      "denotes": "The full selection yields 258 candidate events. The official release lists their rounded prompt energies in MeV, including annihilation energy; these selected energies supply the measured spectrum used by the same-acquisition analyses.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kamland2005-selected-energies"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-unoscillated-prediction",
+      "role": "scoped-phenomenon",
+      "denotes": "The source predicts 365.2 +/- 23.7 systematic reactor antineutrino events above the 2.6 MeV prompt threshold in the absence of disappearance. This is the reactor signal expectation before adding background, conditioned on flux, cross section, calibration and selection inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kamland2005-unoscillated-prediction"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-background-estimate",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported background above 2.6 MeV prompt energy is 17.8 +/- 7.3 events. Its central components are 2.69 +/- 0.02 accidental, 4.8 +/- 0.9 lithium/helium and 10.3 +/- 7.1 alpha-induced carbon-neutron events; the fast-neutron bound enters the uncertainty.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kamland2005-background-estimate"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-average-survival",
+      "role": "scoped-phenomenon",
+      "denotes": "From the same selected acquisition and the adopted reactor/background models, KamLAND reports average electron-antineutrino survival 0.658 +/- 0.044 statistical +/- 0.047 systematic. This is a period-averaged rate estimate, not an event-level probability measured at one baseline.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kamland2005-average-survival"
+      ]
+    },
+    {
+      "nodeId": "phys:kamland2005-oscillation-fit",
+      "role": "scoped-phenomenon",
+      "denotes": "The KamLAND-only two-flavor rate-and-shape analysis reports Delta m^2=7.9(+0.6/-0.5)e-5 eV^2 and best-fit tan^2(theta)=0.46, with a large uncertainty on the mixing parameter. The fitted spectral distortion is interpreted within the declared propagation, flux, response and nuisance model.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-kamland2005-oscillation-fit"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-replay-context",
+      "role": "model-context",
+      "denotes": "Bind the unchanged official data description and 258 prompt-energy rows; check their count, range and sum, printed background/survival arithmetic, and synthetic unitary two- and three-state vacuum phase identities in a declared convention. The executable owns only this finite calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-neutrino-replay-context"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-arithmetic",
+      "role": "scoped-phenomenon",
+      "denotes": "The 258 selected prompt energies span 2.61-7.95 MeV and sum to 1098.33 MeV; 61 entries are below 3.4 MeV prompt energy, consistently with the different neutrino-energy threshold. Printed background components sum to 17.79, and (258-17.8)/365.2=1201/1826 rounds to 0.658. Synthetic unitary witnesses preserve probability normalization, common-phase invariance and the two-flavor phase factor.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-neutrino-arithmetic"
+      ]
+    },
+    {
+      "nodeId": "phys:solar-neutrino-channel-response",
+      "role": "definition",
+      "denotes": "The declared weak reaction responses and reconstructed-observable convention used for SNO solar-flavor inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-solar-neutrino-channel-response"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The reported solar-neutrino exposure, reconstructed readout and event selection in the pure-D2O detector phase.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sno2002-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-response-context",
+      "role": "model-context",
+      "denotes": "The original analysis model using adopted auxiliary calibration, spectrum, cross-section and background inputs; no new calibration observation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sno2002-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-channel-fit-context",
+      "role": "model-context",
+      "denotes": "The reported three-channel likelihood and subsequent response-normalization procedure for the selected SNO sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sno2002-channel-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-flavor-fit-context",
+      "role": "model-context",
+      "denotes": "The SNO-only original joint likelihood interpretation in electron and muon-plus-tau flux variables, sharing the channel-analysis acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sno2002-flavor-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-selected-events",
+      "role": "scoped-phenomenon",
+      "denotes": "The published selected event count and reconstructed-observable domain, without channel or incoming-flavor labels for individual events.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sno2002-selected-events"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-background-estimate",
+      "role": "scoped-phenomenon",
+      "denotes": "The original analysis estimates of selected neutron and Cherenkov backgrounds from identified control and response inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sno2002-background-estimate"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-channel-yields",
+      "role": "scoped-phenomenon",
+      "denotes": "The jointly fitted CC, ES and NC template yields, distinguished from an exclusive classification of selected events.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sno2002-channel-yields"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-channel-fluxes",
+      "role": "scoped-phenomenon",
+      "denotes": "The response-normalized channel summaries, including electron-equivalent ES flux and shared statistical/systematic dependence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sno2002-channel-fluxes"
+      ]
+    },
+    {
+      "nodeId": "phys:sno2002-active-flavor-components",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-reported SNO-only joint electron and muon-plus-tau flux inference and conditional null-test result; no mass or oscillation-phase measurement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sno2002-active-flavor-components"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Use the reported 33.0 kiloton-year, 535-day exposure in the 22.5 kiloton fiducial volume, with reconstructed vertices more than 2 m from the inner photomultiplier wall. Separate fully contained (FC) from exiting, partially contained (PC) events; use single-ring FC electron-like and muon-like classifications and the stated visible-energy division.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-superk1998-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-response-context",
+      "role": "model-context",
+      "denotes": "Use the report's atmospheric-flux and full-detector Monte Carlo predictions with neutrino interactions, visible-energy response, ring classification and containment. Compare control and alternative-flux inputs; retain flavor contamination, geomagnetic effects and neutrino-lepton angular/energy correlations when interpreting selected ratios and zenith patterns.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-superk1998-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-fit-context",
+      "role": "model-context",
+      "denotes": "Compare the same selected samples with weighted Monte Carlo in five zenith bins and seven momentum bins for each of two particle-type samples. Minimize the 70-bin chi-squared over the oscillation parameters and eight normalization/shape nuisance parameters in corrected Equations 2-4, with alpha free and the seven other nuisance penalties specified in Table II.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-superk1998-fit-context"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-selected-samples",
+      "role": "scoped-phenomenon",
+      "denotes": "The report contains 4353 FC and 301 PC events. The FC single-ring samples used in the oscillation analysis contain 1231 electron-like and 1158 muon-like sub-GeV events, plus 290 electron-like and 230 muon-like multi-GeV events. All 301 PC candidates enter the mu-like class without a single-ring requirement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-superk1998-selected-samples"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-unoscillated-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Table I reports no-oscillation Monte Carlo expectations of 1049.1 electron-like and 1573.6 muon-like sub-GeV single-ring events, 236.0 electron-like and 295.7 muon-like multi-GeV single-ring events, and 371.6 PC events. These are predicted event means conditioned on the atmospheric flux and detector/interaction response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-superk1998-unoscillated-response"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-flavor-ratios",
+      "role": "scoped-phenomenon",
+      "denotes": "For R=(mu/e)_data/(mu/e)_MC, Table I reports sub-GeV R=0.63 +/- 0.03 statistical +/- 0.05 systematic and multi-GeV R_FC+PC=0.65 +/- 0.05 statistical +/- 0.08 systematic. The multi-GeV mu-like count includes the partially contained sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-superk1998-flavor-ratios"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-zenith-asymmetry",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected mu-like sample shows a zenith-dependent deficit while electron-like distributions are compatible with the no-oscillation expectation. For multi-GeV FC+PC mu-like events the paper reports A=(U-D)/(U+D)=-0.296 +/- 0.048 +/- 0.01, retaining its two quoted uncertainty components. The multi-GeV electron-like comparison is -0.036 +/- 0.067 +/- 0.02.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-superk1998-zenith-asymmetry"
+      ]
+    },
+    {
+      "nodeId": "phys:superk1998-oscillation-fit",
+      "role": "scoped-phenomenon",
+      "denotes": "Within the physical two-flavor nu_mu-to-nu_tau model, the reported best fit is sin^2(2 theta)=1.0 and Delta m^2=2.2e-3 eV^2, with chi-squared 65.2 for 67 degrees of freedom. The reported 90% confidence region has sin^2(2 theta)>0.82 and 5e-4<Delta m^2<6e-3 eV^2. These are conditional fit results from the same selected atmospheric acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-superk1998-oscillation-fit"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-matter-evolution",
+      "role": "definition",
+      "denotes": "For flavor amplitudes f, i*df/dx=H_f(x)*f with H_f=U diag(m_i^2) U-dagger/(2E)+diag(V_e(x),0,0), after removing a common identity term. For neutrinos V_e=sqrt(2)*G_F*n_e(x); for antineutrinos U is complex-conjugated and V_e changes sign. For neutrinos in neutral ordinary matter the active-sector neutral-current contribution is -G_F*n_n(x)/sqrt(2) times the identity and changes only a common phase; its sign also reverses for antineutrinos before removal.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-matter-evolution"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-matter-mixing",
+      "role": "definition",
+      "denotes": "In the declared two-flavor approximation set A=2E*(V_e-V_x) and Delta_m=sqrt[(Delta*cos(2 theta)-A)^2+(Delta*sin(2 theta))^2]. The eigenvalue gap is Delta_m/(2E), with cos(2 theta_m)=(Delta*cos(2 theta)-A)/Delta_m and sin(2 theta_m)=Delta*sin(2 theta)/Delta_m. Nonzero mixing is maximal at A=Delta*cos(2 theta). An instantaneous eigenbasis has the additional connection -i*R-dagger*dR/dx; adiabatic following is an approximation that neglects its inter-state coupling relative to the gap.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-matter-mixing"
+      ]
+    },
+    {
+      "nodeId": "phys:tau-pair-readout",
+      "role": "definition",
+      "denotes": "In the CMS tau-pair selection, tau_h denotes a reconstructed hadronic tau decay; leptonic tau decays supply electron/muon candidates and missing neutrinos. Visible decay products and missing transverse momentum supply distinct visible-mass and SVFIT tau-pair mass observables.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-tau-pair-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:higgs-rate-modifiers",
+      "role": "definition",
+      "denotes": "For a single narrow resonance, sigma(i to H to f)=sigma_i*Gamma_f/Gamma_H. Relative to the same fixed-mass Standard Model reference, mu_if=(sigma_i/sigma_i_SM)*(Gamma_f/Gamma_f_SM)/(Gamma_H/Gamma_H_SM). The common-modifier benchmark groups vector couplings into kappa_V and fermion couplings into kappa_f under explicit loop, tensor-structure and total-width assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-higgs-rate-modifiers"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Select the 2016 CMS pp exposure at 13 TeV, 35.9 fb^-1, into tau_h tau_h, mu-tau_h, e-tau_h and e-mu final states with exclusive 0-jet, VBF and boosted categories; apply the stated triggers, object, isolation and charge selections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2016-tau-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-response-context",
+      "role": "model-context",
+      "denotes": "Apply simulated templates with data-constrained tau/object and missing-momentum response; use Drell–Yan, W+jets, QCD and top control regions with their stated transfer assumptions and shared nuisance constraints. Preserve the partial overlap of tau energy-scale calibration and search selections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2016-tau-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-selected-distributions",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected data points in Figures 6–17 give channel/category reconstructed distributions for the 2016 exposure. The tau_h tau_h 0-jet input is one-dimensional; the remaining category inputs are two-dimensional. Simulated signal/background components and post-fit overlays are distinct from these observed bins.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cms2016-tau-selected-distributions"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-rate-context",
+      "role": "model-context",
+      "denotes": "Fit the selected category bins and control regions jointly with a common H-to-tau-tau signal strength at the adopted mass 125.09 GeV. Profile yield/shape and template-bin nuisances with their stated correlations; treat H-to-WW as background for this rate and significance inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2016-tau-rate-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-rate-excess",
+      "role": "scoped-phenomenon",
+      "denotes": "For the 2016-only analysis at fixed mH=125.09 GeV, CMS reports mu=1.09 (+0.27/-0.26) relative to the Standard Model tau-pair rate, with local observed significance 4.9 and expected significance 4.7 standard deviations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cms2016-tau-rate-excess"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-display-summary",
+      "role": "scoped-phenomenon",
+      "denotes": "Figure 18 regroups observed bins by the expected S/(S+B); Figure 19 displays S/(S+B)-weighted reconstructed-mass summaries of the same data and fitted components. In Table 4, the log10(S/(S+B))>-0.9 subset contains observed counts 11,54,91,207 for e-mu, e-tau_h, mu-tau_h and tau_h tau_h; expected component counts and totals remain reported post-fit quantities.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cms2016-tau-display-summary"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-coupling-context",
+      "role": "model-context",
+      "denotes": "Reuse the 2016 selections in the reported common kappa_V/kappa_f scan at mH=125.09 GeV, profile the nuisance parameters, and now include H-to-WW as signal. The cited CMS method and generic coupling framework delimit this interpretation without specifying a complete experiment-specific width/loop map.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2016-tau-coupling-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2016-tau-coupling-compatibility",
+      "role": "scoped-phenomenon",
+      "denotes": "CMS Figure 22 reports contours compatible with the Standard Model point (kappa_V,kappa_f)=(1,1) under the authors' implemented model. This is a conditional interpretation of the same 2016 data with a common fermion modifier, not a separately measured tau Yukawa or a new acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cms2016-tau-coupling-compatibility"
+      ]
+    },
+    {
+      "nodeId": "phys:tau-neutrino-appearance-readout",
+      "role": "definition",
+      "denotes": "The OPERA appearance readout identifies charged-current tau-neutrino interaction candidates through the topology and kinematics of the produced tau decay in an emulsion/lead detector. One-hadron, three-hadron, muon and electron decay selections are distinct channels with modeled backgrounds.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-tau-neutrino-appearance-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "Use the 2008–2012 CNGS exposure of 17.97e19 protons on target, with a predominantly muon-neutrino beam over 730 km and mean energy about 17 GeV. From target-fiducial interactions, analyze the first and second most probable bricks for 0-muon events and 1-muon events with p_mu<15 GeV/c under the stated timing, tracking and vertex procedures.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-opera2015-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-response-context",
+      "role": "model-context",
+      "denotes": "Use emulsion vertex/track reconstruction, multiple-scattering momentum estimates and muon identification with the stated scanning and decay-selection response. Model signal and charm, hadronic-reinteraction and large-angle-muon-scattering backgrounds using the reported simulation and auxiliary checks, normalized to detected muon-neutrino interactions. Preserve the earlier method erratum.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-opera2015-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-inference-context",
+      "role": "model-context",
+      "denotes": "Use four channel counts with independent Poisson means mu*s_i+beta_i and the Gaussian background factors of Equation 1. Compare Fisher-product and one-sided profile-likelihood statistics with their pseudoexperiment distributions for background-only mu=0. Use the same acquisition for nominal-signal compatibility and the full-mixing mass-squared interval.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-opera2015-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-analyzed-sample",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported exposure produces 19505 neutrino interactions in the target fiducial volume. Table I gives 5408 fully analyzed selected events: 1144 classified 0-muon and 4264 classified 1-muon with p_mu<15 GeV/c. These are the specified first/second-brick analysis samples.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opera2015-analyzed-sample"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-fifth-candidate",
+      "role": "scoped-phenomenon",
+      "denotes": "The 14 August 2012 event has a reconstructed 90 +/-2 mrad kink and flight length 960 +/-30 micrometers; the daughter undergoes a hadronic interaction. Its measured central kinematics satisfy the predefined tau-to-1h cuts, including daughter momentum 11(+14/-4) GeV/c and zdec=630 +/-30 micrometers. The stated secondary-vertex fragment and attached-photon searches find none.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opera2015-fifth-candidate"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-decay-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "For tau-to-1h, tau-to-3h, tau-to-muon and tau-to-electron, Table III reports candidate counts 3,1,1,0, respectively, totaling five. This includes the new fifth event and four previously reported candidates from the same accelerator campaign.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opera2015-decay-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-expected-counts",
+      "role": "scoped-phenomenon",
+      "denotes": "In the four-channel order, Table III gives signal expectations 0.52 +/-0.10, 0.73 +/-0.14, 0.61 +/-0.12, 0.78 +/-0.16, and background expectations 0.04 +/-0.01, 0.17 +/-0.03, 0.004 +/-0.001, 0.03 +/-0.01. Reported totals are 2.64 +/-0.53 signal and 0.25 +/-0.05 background, under the adopted response and nominal oscillation parameters.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opera2015-expected-counts"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-appearance-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "The original channel-based tests report a one-sided significance of 5.1 standard deviations, with the Fisher-method background-fluctuation probability 1.1e-7; the profile-likelihood implementations also report 5.1. Under the stated beam, response and background model, the selected decay candidates support tau-neutrino appearance in the CNGS beam.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opera2015-appearance-evidence"
+      ]
+    },
+    {
+      "nodeId": "phys:opera2015-parameter-compatibility",
+      "role": "scoped-phenomenon",
+      "denotes": "The same analysis reports signal strength mu=1.8(+1.8/-1.1) at 90% confidence, compatible with nominal mu=1. Assuming full mixing, it reports Delta m23^2=3.3e-3 eV^2 with 90% interval [2.0,5.0]e-3 eV^2; the three stated interval methods give negligible differences.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opera2015-parameter-compatibility"
+      ]
+    },
+    {
+      "nodeId": "phys:transverse-two-body-mass",
+      "role": "definition",
+      "denotes": "The declared massless two-body transverse-mass convention and its conditional lower-bound interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-transverse-two-body-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:dilepton-invariant-mass",
+      "role": "definition",
+      "denotes": "The declared four-vector mass convention for the source-reported dilepton reconstruction, distinct from transverse mass.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-dilepton-invariant-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The declared 1982 collider exposure, trigger and reconstruction preparation for the charged-boson search.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ua1-1983-w-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-response-context",
+      "role": "model-context",
+      "denotes": "The adopted detector response, calibrated selection and background conditions of the original W analysis.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ua1-1983-w-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-inference-context",
+      "role": "model-context",
+      "denotes": "The original lower-limit and conditional recoil/production mass-fit procedures, not a new acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ua1-1983-w-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-electron-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-selected electron candidates and explicit final-analysis subset, distinguished from raw collisions or direct W tracks.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-w-electron-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-selection-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported dependence and overlap of two selections on the same collider acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-w-selection-comparison"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-transverse-kinematics",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-computed transverse masses and recoil summaries, not eventwise parent invariant-mass measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-w-transverse-kinematics"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-mass-bound",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-reported conditional confidence limit; no local coverage or significance calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-w-mass-bound"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-w-mass-fit",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported chosen 1982-data mass fit, retaining the dependent alternate recoil treatment and historical convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-w-mass-fit"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-z-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The declared 1983 acquisition and data-selection preparation, distinct from the 1982 W discovery run.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ua1-1983-z-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-z-response-context",
+      "role": "model-context",
+      "denotes": "The distinct electron/muon detector response and calibration conditions constraining the dilepton interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ua1-1983-z-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-z-inference-context",
+      "role": "model-context",
+      "denotes": "The original electron and muon mass-inference conventions and conditional neutral-boson interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ua1-1983-z-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-z-pair-candidates",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported selected four electron pairs and one muon pair with their nested-cut and common-acquisition boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-z-pair-candidates"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-z-electron-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-reported electron-channel mass summary and limited neutral-boson interpretation, not a modern precision mass.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-z-electron-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:ua1-1983-z-dimuon-mass",
+      "role": "scoped-phenomenon",
+      "denotes": "The same-event mass inference using magnetic and conditional recoil information, not an independent second acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ua1-1983-z-dimuon-mass"
+      ]
+    },
+    {
+      "nodeId": "phys:higgs-doublet-background",
+      "role": "definition",
+      "denotes": "Write rho=phi-dagger*phi and V=mu2*rho+(lambda_P^2/2)*rho^2 with mu2<0 and lambda_P>0. In unitary gauge choose phi=(0,(v+H)/sqrt(2)), v^2=-2*mu2/lambda_P^2. The tree-level relations are M_H^2=lambda_P^2*v^2, M_W=g*v/2, M_Z=sqrt(g^2+gprime^2)*v/2 and M_photon=0.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-higgs-doublet-background"
+      ]
+    },
+    {
+      "nodeId": "phys:charged-fermion-higgs-coupling",
+      "role": "definition",
+      "denotes": "For each supplied charged-fermion mass m_i in the declared mass basis, the tree-level term is -m_i*psi-bar_i*psi_i-(m_i/v)*H*psi-bar_i*psi_i. Defining y_i=sqrt(2)*m_i/v gives m_i=y_i*v/sqrt(2) and the one-Higgs coefficient y_i/sqrt(2)=m_i/v. This reparametrizes independent mass/Yukawa inputs; it does not calculate their numerical hierarchy.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-charged-fermion-higgs-coupling"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",
