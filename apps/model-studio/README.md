@@ -33,7 +33,7 @@ does not branch on a model ID. Version comparison remains distinct from model
 selection and requires reviewed lineage.
 
 With no exact release in the URL, the Studio selects
-`causal-emergence@2026.10.02.8`, the current canonical model. The source panels
+`causal-emergence@2026.10.02.9`, the current canonical model. The source panels
 show study design, preparations, findings, citations, publication checks and
 interpretation tests. Edge labels and tooltips show the declared relation layer,
 meaning and assertion, including measurement and interpretation dependencies.

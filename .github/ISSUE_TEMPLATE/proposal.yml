@@ -1,0 +1,39 @@
+name: Proposal or source review
+description: Discuss a focused improvement, scientific source review or contract change.
+title: "[Proposal]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and Russian are welcome. Agree on substantial scope before implementing.
+        A source review must distinguish published evidence from project interpretation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or review question
+      description: Who needs this, or which specific claim needs examination? Link related issues.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope and completion criteria
+      description: Describe a bounded change, relevant files and how we would check the result.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources, alternatives and limitations
+      description: For source reviews, identify the card or claim, primary sources, exact locations and uncertainties.
+  - type: dropdown
+    id: participation
+    attributes:
+      label: Would you like to work on this?
+      options:
+        - I can contribute after scope is agreed
+        - I would like guidance for a first contribution
+        - I am proposing work for someone else
+    validations:
+      required: true

@@ -12,12 +12,7 @@ const checks = [
   "check-types.mjs",
   "check-model-pack-worker.mjs",
   "check-history-case-registry.mjs",
-  "check-history-benchmark.mjs",
-  "check-structural-geometry.mjs",
-  "check-structural-geometry-site.mjs",
   "check-model-pack-registry.mjs",
-  "build-model-studio-data.mjs",
-  "check-canonical-source.mjs",
   "check-schemas.mjs",
   "check-kernel-closure.mjs",
   "check-docs.mjs",
@@ -34,4 +29,4 @@ for (const script of checks) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
-console.log("All repository checks passed.");
+console.log("Source, schema and stored-artifact checks passed. Scientific replay is available through npm run check:research.");

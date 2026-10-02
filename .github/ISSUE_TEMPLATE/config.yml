@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/DenBraun/Onto2D/security/advisories/new
+    about: Use private vulnerability reporting; do not disclose exploits in public issues.
+  - name: Contribution and setup guide
+    url: https://github.com/DenBraun/Onto2D/blob/main/CONTRIBUTING.md
+    about: Find setup instructions, starter tasks, checks and the review process.
+  - name: Report a conduct concern privately
+    url: mailto:denbritov@gmail.com
+    about: Contact the maintainer privately about participant behavior.

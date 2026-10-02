@@ -7,10 +7,9 @@ the first release, the latest `0.1.x` version will receive security fixes.
 
 ## Reporting a vulnerability
 
-Please use GitHub's private vulnerability reporting when it is available. If
-it is unavailable, open a minimal public issue requesting a private contact
-channel without including exploit details. Do not publish those details before
-a fix is available.
+Use [GitHub's private vulnerability reporting](https://github.com/DenBraun/Onto2D/security/advisories/new).
+If that channel is unavailable, email **denbritov@gmail.com**. Do not include
+exploit details in public issues or publish them before a fix is available.
 
 Include the affected package and version, the smallest reproduction you can
 provide, the expected impact, and any suggested mitigation. This project does

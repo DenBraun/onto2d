@@ -10,6 +10,7 @@ working contracts and datasets; they are not a project release announcement.
 
 ## Start here
 
+- [Contributing](CONTRIBUTING.md): first tasks, pull requests and maintainer review.
 - [Documentation](docs/README.md): architecture, research, examples and development.
 - [Current roadmap](docs/ROADMAP.md): implemented capabilities and remaining work.
 - [Development guide](docs/DEVELOPMENT.md): setup, checks and local testing.
@@ -18,7 +19,7 @@ working contracts and datasets; they are not a project release announcement.
 
 ## Run locally
 
-Use Node.js 22+ and Python 3.9+.
+Use Node.js 22+. Python is needed only for optional research verification.
 
 ```sh
 npm ci
@@ -27,8 +28,10 @@ npm run build
 npm run dev:site
 ```
 
-The development server prints its local URL. `npm run build` includes repository
-checks. Independent NetworkX verification has a separate environment described
+The development server prints its local URL. `npm test` runs software tests;
+`npm run build` includes source and stored-artifact checks. Scientific replays
+are local opt-in commands described in [Development](docs/DEVELOPMENT.md#optional-research-verification).
+Independent NetworkX verification has a separate environment described
 in the [development guide](docs/DEVELOPMENT.md).
 
 ## What is implemented
@@ -69,7 +72,7 @@ the root `onto2d` package is private and has not been published to npm.
 
 ### Read a canonical construction rule and its premises
 
-`Onto2D.create()` loads the current Causal Emergence graph (`2026.10.02.8`).
+`Onto2D.create()` loads the current Causal Emergence graph (`2026.10.02.9`).
 The graph is being reconstructed; its scope and evidence are documented in the
 [source documentation](references/canonical/README.md).
 

@@ -7,6 +7,8 @@ describe current contracts, evidence and planned work.
 
 | Need | Guide |
 |---|---|
+| Make a first contribution or ask for help | [Contributing](../CONTRIBUTING.md) |
+| Review PRs, grant access or maintain GitHub settings | [Maintainers](MAINTAINERS.md) |
 | Install, run, test or review | [Development](DEVELOPMENT.md) |
 | Find current priorities and remaining work | [Roadmap](ROADMAP.md) |
 | Find the owning package or directory | [Project structure](PROJECT_STRUCTURE.md) |

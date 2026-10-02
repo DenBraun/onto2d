@@ -3,9 +3,10 @@
 ## Status of the supplied proposal
 
 [ONTO2D_FORMAL_CORE.md](../../docs/ONTO2D_FORMAL_CORE.md) was read in full:
-numbered sections 0 through 132 and both appendices. Its original bytes are
-preserved and bound as an author-supplied proposal. The source register records
-its SHA-256. The document's proposed freeze and FC-0 through FC-12 are not an
+numbered sections 0 through 132 and both appendices. Its text and equations are
+preserved, with GitHub-compatible delimiters for inline and display mathematics.
+It remains an author-supplied proposal; the source register records the SHA-256
+of the current formatted document. The document's proposed freeze and FC-0 through FC-12 are not an
 adopted instruction to stop source reconstruction. The user's sequence remains:
 update the central data and derivatives first; develop the proposed formal
 implementation afterwards.
