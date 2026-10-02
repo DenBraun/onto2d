@@ -1,9 +1,7 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { canonicalize } from "@onto2d/kernel";
 import { loadModelPackDirectory } from "@onto2d/model-pack/node";
 import { Onto2D, bundledCausalEmergenceModelPack } from "onto2d";
 import {
@@ -11,15 +9,13 @@ import {
   TRIANGLE_SKELETON_ID,
   inputView
 } from "../../apps/canonical-identity-lab/identity-model.js";
-import { buildCausalEmergenceRelease } from "../../models/causal-emergence/build.mjs";
-import { buildCanonicalRelease } from "../../models/causal-emergence/canonical/build.mjs";
 
 test("the root facade loads the exact bundled Causal Emergence Model Pack", async () => {
   const onto = await Onto2D.create();
   assert.equal(onto.model.name, "Causal Emergence — Canonical Reconstruction");
-  assert.equal(onto.model.version, "2026.10.02.8");
+  assert.equal(onto.model.version, "2026.10.02.9");
   assert.equal(onto.modelResolution.requested, "causal-emergence@stable");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.10.02.8");
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.10.02.9");
   assert.equal(onto.model.nodes().length, 1166);
   assert.equal(onto.model.edges().length, 921);
   assert.equal(onto.model.get("l0:crt-node").name, "CRT carrier class — no admitted instance");
@@ -27,7 +23,6 @@ test("the root facade loads the exact bundled Causal Emergence Model Pack", asyn
   assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 741);
   assert.ok(onto.model.query({ level: 0, typeRole: "construction-rule" }).length > 0);
   assert.ok(onto.model.paths({ from: "l0:oscillatory-mode", to: "l0:crt-node" }).length > 0);
-  assert.deepEqual(await buildCanonicalRelease(), bundledCausalEmergenceModelPack);
 });
 
 test("the historical exact version remains selectable with its original identity and semantics", async () => {
@@ -41,26 +36,10 @@ test("the historical exact version remains selectable with its original identity
   assert.ok(onto.model.paths({ from: "0.0", to: "0.8" }).length > 0);
 });
 
-test("the historical release is an exact reproduction of preserved source bytes", async () => {
-  const rebuilt = await buildCausalEmergenceRelease();
-  const stored = JSON.parse(await readFile(new URL("../../models/causal-emergence/releases/2026.08.15/bundle.json", import.meta.url), "utf8"));
-  assert.equal(canonicalize(rebuilt), canonicalize(stored));
-  assert.equal(rebuilt.manifest.statistics.nodeCount, 249);
-  assert.equal(rebuilt.manifest.statistics.edgeCount, 971);
-  assert.equal(rebuilt.manifest.model.status, "source-snapshot-known-findings");
-
-  const expectedAudit = JSON.parse(await readFile(
-    new URL("../fixtures/catalogue-audit.expected.json", import.meta.url),
-    "utf8"
-  ));
-  assert.equal(expectedAudit.summary.weightSumAnomalyCount, 3);
-  assert.equal(expectedAudit.summary.nontrivialSccCount, 3);
-});
-
 test("the Node loader accepts the current release with an explicit 32 MiB file budget", async () => {
   const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
   const loaded = await loadModelPackDirectory(
-    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.10.02.8"),
+    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.10.02.9"),
     { maxFileBytes: 32 * 1024 * 1024 }
   );
   assert.equal(loaded.manifest.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);

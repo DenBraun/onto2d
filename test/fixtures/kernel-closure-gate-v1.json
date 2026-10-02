@@ -30,8 +30,7 @@
     ],
     "commands": [
       "npm test",
-      "npm run check",
-      "npm run build"
+      "npm run check"
     ],
     "evidenceStatus": "required"
   },

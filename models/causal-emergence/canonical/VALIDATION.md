@@ -1,31 +1,31 @@
 # Current canonical validation
 
-Current graph: `2026.10.02.8`, checked locally on 2 October 2026.
+Current graph: `2026.10.02.9`, checked locally on 2 October 2026.
 
 The source contains 1166 records, 921 connections, 1232 claims and 385 sources.
 The output has 741 descriptive and 180 functional connections. Its physics
 review contains 132 study contexts and 122 comparisons. The artifact binds 145
 input files; all bound hashes and 95 local source hashes match current bytes.
 
-- All 29 focused tests pass: accelerator tau appearance, historical W/Z
-  observations, Higgs background and charged-fermion coupling, shared local-study
-  provenance and release serialization. Coverage includes missing dependencies,
-  scientific-boundary mutations, executable ownership and immutable output.
+- All 210 Formal Core expressions render with local MathJax 3.2.2: 118 inline
+  expressions and 92 display blocks. Reversing only the delimiter conversion
+  recovers the exact preceding document bytes, including every formula body,
+  section and existing code block.
+- The current source register binds the formatted proposal and its updated
+  readiness guide. Direct comparisons confirm unchanged nodes, edges, claims,
+  evidence and scientific interpretation; only the model version and those two
+  source hashes differ in the canonical inputs.
+- All 40 focused tests pass: documentation parsing, source and readiness
+  contracts, immutable release serialization, the default engine and Model
+  Studio browse artifacts. No failures, cancellations or skipped tests.
 - Canonical compilation and browser-projection generation pass: 85 browser
-  files derive from the exact full release. The registry has 21 entries;
-  Model Studio uses module revision `20261002.8` and the current graph.
-- Independent primary-source and dependency reviews cover the 28 records and
-  52 relations of the accelerator, weak-boson and Higgs-coupling admissions.
-  Published outcomes retain their original study contexts. Formal definitions
-  have no empirical status; these admissions claim no locally reproduced
-  experimental likelihood and borrow no executable checks.
-- Full `npm test` exits successfully: 2153 tests pass, with no failures,
-  cancellations or skipped tests.
-- Full `npm run build` exits successfully. All repository checks pass,
-  including exact registry, browser projection and canonical reconstruction,
-  217 versioned contracts and 185 Markdown files.
-- Only the current canonical output and the original `2026.08.15` catalogue
-  remain. Original research inputs and the Formal Core document are preserved.
+  files derive from the exact full release. The registry has 22 entries;
+  Model Studio uses module revision `20261002.9` and the current graph.
+- The preceding `2026.10.02.8` release and original `2026.08.15` catalogue
+  remain unchanged. The generated browser projection serves the current release.
+- Full `npm run build` passes, including all repository checks, 217 versioned
+  contracts and 188 Markdown files. This formatting change has not been
+  committed or sent to remote CI; the complete test suite has not been rerun.
 
 Model Studio initially loads the searchable catalogue and topology, followed
 by selected-record evidence in bounded chunks. The graph JSON is 870727 bytes
@@ -39,24 +39,24 @@ The complete bundle and three semantic model files use compact JSON. The bundle
 is 31367415 bytes and the release directory totals 62846290 bytes,
 within the explicitly selected 32 MiB file and default 64 MiB total budgets.
 The remaining total allowance is 4262574 bytes. Manifest, indexes
-and editable canonical inputs remain indented. Formatting alone preserves
-semantic hashes, while exact verification enforces the selected output bytes.
+and editable canonical inputs remain indented. Compact transport preserves
+canonical JSON semantic hashes, while exact verification enforces the selected
+output bytes. Source-document hashes independently bind raw document bytes.
 Serialization tests reject equivalent whitespace drift, tampering and attempts
 to reformat an existing immutable release. On identical pre-expansion data,
 compact split files save 6268071 bytes; that comparison does not measure browser
 latency. The original release was unchanged during that test.
 
-Validation uses macOS, Node.js 24.19.0 and Python 3.9.6 with `PYTHONUTF8=1`
-and `PYTHONIOENCODING=utf-8`. The current changes still require their own
+Validation uses macOS, Node.js 24.19.0 and Python 3.9.6. The current changes still require their own
 remote CI run after publication.
 
 Current artifact hashes:
 
 ```text
-rootHash: sha256:f0d024ac100e5eceffe95eb6fd27dd47464b16ce7667f7217069e8a85e02f15e
-manifestHash: sha256:19117fb28da5d3af3bf3c8fcfffb03ad7546f6bd21b3cd906a3bea4c568f7ee5
-registryHash: sha256:ac333a2b3e5c925ec775611925e26567e079724702f195e7f7deaed6e5fc7e54
-browseIndexHash: sha256:c8e1e47e4ef375d64f9a718d1675b96bef25167864ac46355d5161145ce50fbe
+rootHash: sha256:80ecd1bde619e81d49fabc05b7bd536aed9416fa8277749682a14a6e59641f0c
+manifestHash: sha256:ef15e6448f7a73d258b83f743311907ccf6cd3161d65a29177d3518fb121f9d2
+registryHash: sha256:4b457bca470b2e2a2e92dfd4ce1f0f9513ee0a07d536ed9ba890cc6e62e87919
+browseIndexHash: sha256:e434da798e95bef5c96aed4d30cc51446d36ff7040738ee3e7ca6553bfa46803
 ```
 
 Scientific review remains partial: 183 [source cards](../../../references/canonical/pending-review.json)

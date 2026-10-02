@@ -2,21 +2,8 @@
 
 ## Setup
 
-Use Node.js 22+ with npm, Git, and Python 3.9+. Normal tests and Structural
-Geometry checks invoke Python standard-library references. NetworkX belongs in
-a separate reference environment; it is not a JavaScript runtime dependency.
-CI tests Node.js 22 with Python 3.11 and Node.js 24 with Python 3.13 on Linux,
-macOS and Windows. Python versions are explicit rather than inherited from
-the runner image.
-
-Python file reads and Node/Python pipes must use UTF-8. CI sets `PYTHONUTF8=1`
-and `PYTHONIOENCODING=utf-8` for every job. In Windows PowerShell, set these
-before running the commands below:
-
-```powershell
-$env:PYTHONUTF8 = "1"
-$env:PYTHONIOENCODING = "utf-8"
-```
+Use Node.js 22+ with npm and Git. Ordinary tests and checks do not require
+Python. CI tests Node.js 22/24 on Linux, macOS and Windows.
 
 ```sh
 npm ci
@@ -25,11 +12,40 @@ npm run build
 npm run dev:site
 ```
 
-`npm test` runs the repository test suite. `npm run build` runs the repository
-checks and validates publishable source packages and the static worker asset;
-it includes `npm run check`, so running both consecutively is unnecessary.
+`npm test` runs software tests: package behavior, loaders, CLI, interface logic,
+small geometry controls and tooling. `npm run build` runs the source, schema,
+stored Model Pack and committed worker checks; it includes `npm run check`, so
+running both consecutively is unnecessary. CI runs `check` once, separately
+from the test matrix, and does not run the duplicate `build` command.
 The development server prints its address. For local browser testing, open the
 case or app from the site navigation after the checks pass.
+
+## Optional research verification
+
+Scientific reconstruction, whole-study replay, graph censuses and source-data
+validation are explicit local operations. They are not part of ordinary CI,
+`npm test`, `npm run check` or `npm run build`.
+
+- `npm run test:research` runs the research and reconstruction test suites.
+- `npm run check:research` verifies the History Matters and geometry studies,
+  geometry site data, Model Studio projection and canonical reconstruction.
+- `npm run test:all` runs both software and research tests, each file once.
+- Case-specific commands below select a single study rather than all research.
+- `node scripts/test.mjs --list` shows the ordinary suite without executing it;
+  add `--suite=research` to inspect the research suite.
+
+[Test suite selection](../scripts/test-suites.mjs) keeps study/model compiler
+tests, scientific source checks, exhaustive schema-generation integration and
+existing geometry replay suites in the research group. Their original paths
+remain available to evidence manifests. Geometry's ordinary tests use small
+hand-specified inputs and never load a study or invoke a solver. New software
+tests are included by default outside the research roots; use `.research.test.mjs`
+for a new expensive replay. This separation changes what automatic CI proves:
+passing CI is software validation, not fresh reproduction of scientific results.
+
+Research commands require Python 3.9+; independent NetworkX verification uses
+the separately pinned reference environment. Set `PYTHONUTF8=1` and
+`PYTHONIOENCODING=utf-8` for local Python commands, including on Windows.
 
 ## Check the relevant boundary
 
@@ -62,6 +78,10 @@ Use `npm run` or [package.json](../package.json) for the complete command list.
 
 ## Change and review workflow
 
+For the fork-to-PR process, communication and merge policy, start with
+[Contributing](../CONTRIBUTING.md). Directory ownership below means technical
+responsibility; reviewer ownership is declared in [CODEOWNERS](../.github/CODEOWNERS).
+
 1. Find the owner in [Project structure](PROJECT_STRUCTURE.md) and read its
    current contract. Preserve unrelated working-tree changes.
 2. For semantic behavior changes, add meaningful behavioral or independent
@@ -74,9 +94,10 @@ Use `npm run` or [package.json](../package.json) for the complete command list.
    exact arithmetic, browser/Node boundaries and artifact provenance affected by
    the change. A schema-valid or self-consistently hashed artifact still needs
    semantic verification.
-5. Run focused checks. For runtime/contract changes run the full tests and build;
-   for documentation-only changes run documentation and affected registry checks
-   plus build. Report what was actually run and any remaining verification.
+5. Run focused checks. For runtime/contract changes run ordinary tests and build;
+   for documentation-only changes run documentation checks. Run a study's local
+   research verification when reviewing its scientific inputs or results.
+   Report what was actually run and any remaining verification.
 
 The kernel fails closed. Incomplete evidence, unavailable observations,
 exhausted budgets, invalid inputs and negative scientific outcomes are distinct.

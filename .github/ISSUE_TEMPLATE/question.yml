@@ -1,0 +1,20 @@
+name: Question or onboarding help
+description: Ask about setup, choosing a task, project scope or a documented result.
+title: "[Question]: "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: English and Russian are welcome. You do not need write access to contribute.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Tell us what you want to understand or contribute.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What you have tried or read
+      description: Link the guide, command, page or issue. Include versions and output for setup problems.

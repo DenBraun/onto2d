@@ -160,28 +160,28 @@ These may exist in tools, but they must never silently enter the Formal Core.
 
 A Formal Core version is defined relative to a finite signature
 
-\[
+```math
 \Sigma =
 (\mathcal L,\Phi,\mathcal R,\mathcal I,\mathcal D,
 \mathcal Y,\mathcal N,\mathcal G,\mathcal C,\Theta)
-\]
+```
 
 where:
 
-- \(\mathcal L\) — organizational levels;
-- \(\Phi\) — level phases;
-- \(\mathcal R\) — node type roles;
-- \(\mathcal I\) — interaction modes;
-- \(\mathcal D\) — causal directions;
-- \(\mathcal Y\) — dependency types;
-- \(\mathcal N\) — necessity classes;
-- \(\mathcal G\) — ontological lifecycle roles;
-- \(\mathcal C\) — carrier ontology;
-- \(\Theta\) — exact thresholds and policy parameters used by the evaluator.
+- $`\mathcal L`$ — organizational levels;
+- $`\Phi`$ — level phases;
+- $`\mathcal R`$ — node type roles;
+- $`\mathcal I`$ — interaction modes;
+- $`\mathcal D`$ — causal directions;
+- $`\mathcal Y`$ — dependency types;
+- $`\mathcal N`$ — necessity classes;
+- $`\mathcal G`$ — ontological lifecycle roles;
+- $`\mathcal C`$ — carrier ontology;
+- $`\Theta`$ — exact thresholds and policy parameters used by the evaluator.
 
 The current theory supplies concrete vocabularies for all of these except that the final role of some fields in the minimal core still requires consolidation.
 
-A particular Formal Core release must freeze the admissible values of \(\Sigma\).
+A particular Formal Core release must freeze the admissible values of $`\Sigma`$.
 
 ---
 
@@ -201,9 +201,9 @@ Renaming identifiers must not change the mathematical meaning of a configuration
 
 A node is a finite formal position
 
-\[
+```math
 v \in V.
-\]
+```
 
 A node is not assumed to be a physical object.
 
@@ -211,10 +211,10 @@ Its semantics are provided by its typing.
 
 For the current core:
 
-\[
+```math
 \tau_V(v)=
 (L(v),\Phi(v),R(v)).
-\]
+```
 
 Optional implementation metadata such as labels, descriptions, source text, UI position, and display category are not part of mathematical node identity unless explicitly promoted into the signature.
 
@@ -224,11 +224,11 @@ Optional implementation metadata such as labels, descriptions, source text, UI p
 
 An edge is an ordered relation
 
-\[
+```math
 e=(u,v)\in E\subseteq V\times V.
-\]
+```
 
-The source \(u\) contributes to the structural status of target \(v\).
+The source $`u`$ contributes to the structural status of target $`v`$.
 
 The relation is not merely adjacency.
 
@@ -240,29 +240,29 @@ It is a typed operator.
 
 For the consolidated core, define
 
-\[
+```math
 \tau_E(e)=
 (I(e),D(e),Y(e),G(e),N(e),w(e),c(e),Q(e)).
-\]
+```
 
 Where:
 
-- \(I(e)\subseteq\mathcal I\): interaction modes;
-- \(D(e)\subseteq\mathcal D\): causal directions;
-- \(Y(e)\in\mathcal Y\): exactly one primary dependency type;
-- \(G(e)\in\mathcal G\): ontological role;
-- \(N(e)\in\mathcal N\): necessity;
-- \(w(e)\): structural contribution weight;
-- \(c(e)\): epistemic confidence;
-- \(Q(e)\): optional carrier/quantization specification.
+- $`I(e)\subseteq\mathcal I`$: interaction modes;
+- $`D(e)\subseteq\mathcal D`$: causal directions;
+- $`Y(e)\in\mathcal Y`$: exactly one primary dependency type;
+- $`G(e)\in\mathcal G`$: ontological role;
+- $`N(e)\in\mathcal N`$: necessity;
+- $`w(e)`$: structural contribution weight;
+- $`c(e)`$: epistemic confidence;
+- $`Q(e)`$: optional carrier/quantization specification.
 
 The Theory of Causal Arisings already treats these dimensions as semantically distinct. The Formal Core must preserve that orthogonality.
 
 ### Required separation
 
-\[
+```math
 w(e)\neq c(e).
-\]
+```
 
 Weight represents modeled structural contribution.
 
@@ -276,9 +276,9 @@ Combining the two is allowed in derived evidence-aware operators, but they must 
 
 An Onto2D configuration is
 
-\[
+```math
 M=(V,E,\tau_V,\tau_E).
-\]
+```
 
 This is the primary static object of the Formal Core.
 
@@ -290,13 +290,13 @@ Two configurations with identical adjacency but different typing may have differ
 
 ## 9. Primitive P6 — Transition type
 
-Let \(\mathcal T\) be a finite or bounded set of candidate transition types under an evaluation policy.
+Let $`\mathcal T`$ be a finite or bounded set of candidate transition types under an evaluation policy.
 
 A transition
 
-\[
+```math
 t\in\mathcal T
-\]
+```
 
 contains at least:
 
@@ -315,9 +315,9 @@ A transition must not exist only as prose attached to an analyzer.
 
 A structural predicate is a deterministic function over a configuration and a candidate transition:
 
-\[
+```math
 p(M,t)\in\{0,1\}.
-\]
+```
 
 Predicates may inspect only formally declared components of the model and policy.
 
@@ -333,15 +333,15 @@ Examples include:
 
 ## 11. Primitive P8 — Evaluation policy
 
-A policy \(\Theta\) contains all thresholds, bounded-search limits, normative profiles, and rule-version choices required for deterministic evaluation.
+A policy $`\Theta`$ contains all thresholds, bounded-search limits, normative profiles, and rule-version choices required for deterministic evaluation.
 
 No threshold may exist only in code.
 
 For an exact model and exact policy:
 
-\[
+```math
 (M,\Theta)\mapsto Result
-\]
+```
 
 must be deterministic.
 
@@ -353,27 +353,27 @@ must be deterministic.
 
 Configurations
 
-\[
+```math
 M_1=(V_1,E_1,\tau^1_V,\tau^1_E)
-\]
+```
 
 and
 
-\[
+```math
 M_2=(V_2,E_2,\tau^2_V,\tau^2_E)
-\]
+```
 
 are **typed-isomorphic**, written
 
-\[
+```math
 M_1\cong_\Sigma M_2,
-\]
+```
 
 if there exists a bijection
 
-\[
+```math
 f:V_1\rightarrow V_2
-\]
+```
 
 such that:
 
@@ -392,25 +392,25 @@ This relation defines the first and weakest notion of Onto2D structural equivale
 
 Let
 
-\[
+```math
 Can(M)
-\]
+```
 
-be a deterministic canonical representation of the typed-isomorphism class of \(M\).
+be a deterministic canonical representation of the typed-isomorphism class of $`M`$.
 
 Define canonical identity
 
-\[
+```math
 ID(M)=Hash(Can(M)).
-\]
+```
 
 The implementation requirement is:
 
-\[
+```math
 M_1\cong_\Sigma M_2
 \Rightarrow
 ID(M_1)=ID(M_2).
-\]
+```
 
 The converse is assumed only relative to the collision model of the chosen hash and canonical encoder.
 
@@ -420,32 +420,32 @@ The converse is assumed only relative to the collision model of the chosen hash 
 
 Define
 
-\[
+```math
 A_\Theta(M,t)\in\{0,1\}
-\]
+```
 
-as the conjunction of all mandatory formal predicates declared for transition \(t\) under policy \(\Theta\).
+as the conjunction of all mandatory formal predicates declared for transition $`t`$ under policy $`\Theta`$.
 
 A transition is **structurally admissible** iff
 
-\[
+```math
 A_\Theta(M,t)=1.
-\]
+```
 
-This definition consolidates the existing theory's use of \(A(cfg,t)\) and \(A(M,t)\).
+This definition consolidates the existing theory's use of $`A(cfg,t)`$ and $`A(M,t)`$.
 
 ---
 
 ## 15. Definition D4 — Admissible transition set
 
-\[
+```math
 P_\Theta(M)=
 \{t\in\mathcal T_\Theta\mid A_\Theta(M,t)=1\}.
-\]
+```
 
 This is a first-class Formal Core object.
 
-It represents the structural possibility landscape induced by \(M\) under \(\Theta\).
+It represents the structural possibility landscape induced by $`M`$ under $`\Theta`$.
 
 ---
 
@@ -453,9 +453,9 @@ It represents the structural possibility landscape induced by \(M\) under \(\The
 
 A candidate transition is structurally impossible relative to the model and policy iff
 
-\[
+```math
 t\notin P_\Theta(M).
-\]
+```
 
 This means only:
 
@@ -467,7 +467,7 @@ It must not be silently upgraded to a metaphysical or empirical impossibility cl
 
 ## 17. Definition D6 — Realization
 
-A realized transition is an empirical or simulation event corresponding to a transition type \(t\).
+A realized transition is an empirical or simulation event corresponding to a transition type $`t`$.
 
 `Realized` is not derivable from graph structure alone.
 
@@ -479,17 +479,17 @@ The Formal Core may model a realization event, but actual empirical realization 
 
 For transitions that modify the formal configuration, define a partial transformation
 
-\[
+```math
 T_t:M\mapsto M'.
-\]
+```
 
 It is partial because some formally described transition types may lack a unique successor configuration.
 
 Where the successor is unique and fully specified:
 
-\[
+```math
 M'=T_t(M).
-\]
+```
 
 ---
 
@@ -497,26 +497,26 @@ M'=T_t(M).
 
 For each target node or transition, define a requirement profile:
 
-\[
+```math
 Req =
 (R_{must},R_{should},R_{optional}).
-\]
+```
 
 Each set contains dependency categories or other formally declared requirement classes.
 
-Only \(R_{must}\) determines binary structural admissibility unless a rule explicitly declares otherwise.
+Only $`R_{must}`$ determines binary structural admissibility unless a rule explicitly declares otherwise.
 
 ---
 
 ## 20. Definition D9 — Evidence-aware coverage
 
-For node \(N\) and dependency category \(r\), define
+For node $`N`$ and dependency category $`r`$, define
 
-\[
+```math
 Cover_N(r)=
 \sum_{\substack{e=(p,N)\\Y(e)=r}}
 w(e)c(e).
-\]
+```
 
 This preserves the current Theory of Causal Arisings definition.
 
@@ -528,19 +528,19 @@ The current theory partially mixes structural and epistemic support in coverage.
 
 The Formal Core must expose two variants:
 
-\[
+```math
 Cover^{struct}_N(r)
 =
 \sum w(e),
-\]
+```
 
 and
 
-\[
+```math
 Cover^{evid}_N(r)
 =
 \sum w(e)c(e).
-\]
+```
 
 Structural admissibility and evidence sufficiency must be independently queryable.
 
@@ -550,50 +550,50 @@ This is a required refinement, not an optional feature.
 
 ## 21. Definition D10 — Mandatory category satisfaction
 
-For threshold \(T_{must}\),
+For threshold $`T_{must}`$,
 
-\[
+```math
 Satisfied_N(r)
 \iff
 Cover^{struct}_N(r)\ge T_{must}.
-\]
+```
 
 The evidence-aware analogue is
 
-\[
+```math
 Evidenced_N(r)
 \iff
 Cover^{evid}_N(r)\ge T^{evid}_{must}.
-\]
+```
 
-The exact thresholds belong to \(\Theta\).
+The exact thresholds belong to $`\Theta`$.
 
 ---
 
 ## 22. Definition D11 — Structural completeness
 
-A node \(N\) is structurally complete relative to its declared requirement profile iff
+A node $`N`$ is structurally complete relative to its declared requirement profile iff
 
-\[
+```math
 \forall r\in R_{must},
 \quad
 Satisfied_N(r).
-\]
+```
 
 Define
 
-\[
+```math
 Missing_N=
 \{r\in R_{must}\mid \neg Satisfied_N(r)\}.
-\]
+```
 
 Then
 
-\[
+```math
 StructurallyComplete(N)
 \iff
 Missing_N=\varnothing.
-\]
+```
 
 This preserves the core idea of the existing SCI machinery while separating binary closure from scoring.
 
@@ -603,12 +603,12 @@ This preserves the core idea of the existing SCI machinery while separating bina
 
 A scalar SCI may remain as a derived diagnostic:
 
-\[
+```math
 SCI_N
 =
 0.8\cdot MustScore+
 0.2\cdot ShouldScore
-\]
+```
 
 for the current policy.
 
@@ -630,12 +630,12 @@ It belongs to the formal software model but not to structural ontology itself.
 
 Any coefficients such as
 
-\[
+```math
 ECI_N=
 0.4 EdgeEvidence+
 0.4 NodeEvidence+
 0.2 StatusScore
-\]
+```
 
 are policy-level definitions, not universal laws.
 
@@ -643,12 +643,12 @@ are policy-level definitions, not universal laws.
 
 ## 25. Definition D14 — Ontological lifecycle role
 
-For parent relation \(e=(p,N)\), define
+For parent relation $`e=(p,N)`$, define
 
-\[
+```math
 G(e)\in
 \{arising,maintenance,modulation\}.
-\]
+```
 
 The semantics are:
 
@@ -656,11 +656,11 @@ The semantics are:
 
 Removal destroys first admissibility:
 
-\[
+```math
 Adm(N\mid M)=1
 \land
 Adm(N\mid M\setminus e)=0.
-\]
+```
 
 ### Maintenance
 
@@ -680,9 +680,9 @@ They must remain distinct from interaction mode, necessity, and dependency type.
 
 An intervention is an explicit configuration transformation
 
-\[
+```math
 I:M\mapsto M_I
-\]
+```
 
 that may:
 
@@ -703,14 +703,14 @@ An intervention record must preserve:
 
 ## 27. Definition D16 — Impact set
 
-For an intervention \(I\), define the transition-impact set
+For an intervention $`I`$, define the transition-impact set
 
-\[
+```math
 Impact_P(I,M)=
 P_\Theta(M)\triangle P_\Theta(I(M)),
-\]
+```
 
-where \(\triangle\) is symmetric difference.
+where $`\triangle`$ is symmetric difference.
 
 This is the exact set of transitions whose admissibility status changes.
 
@@ -722,15 +722,15 @@ For node-level status, an analogous impact set may be defined over derived node 
 
 A finite subconfiguration
 
-\[
+```math
 S\subseteq M
-\]
+```
 
-is a **sufficient support** for transition \(t\) iff:
+is a **sufficient support** for transition $`t`$ iff:
 
-\[
+```math
 A_\Theta(S,t)=1
-\]
+```
 
 under a declared support-local admissibility semantics.
 
@@ -738,10 +738,10 @@ A sufficient support is **minimal** iff no proper supported subconfiguration rem
 
 Define the family:
 
-\[
+```math
 \mathcal S_t(M)=
 \{S_1,\ldots,S_k\}.
-\]
+```
 
 This family is central to alternative-path and necessity analysis.
 
@@ -749,13 +749,13 @@ This family is central to alternative-path and necessity analysis.
 
 ## 29. Definition D18 — Structural cut set
 
-A set of model elements \(C\) is a cut set for transition \(t\) iff
+A set of model elements $`C`$ is a cut set for transition $`t`$ iff
 
-\[
+```math
 \forall S\in\mathcal S_t(M),
 \quad
 C\cap S\neq\varnothing.
-\]
+```
 
 A minimal cut set is a minimal hitting set of all sufficient supports.
 
@@ -767,9 +767,9 @@ This gives Onto2D a precise semantics for structural bottlenecks.
 
 Define
 
-\[
+```math
 Alt(t,M)=|\mathcal S^{min}_t(M)|
-\]
+```
 
 or, where supports differ only trivially, the number of equivalence classes of minimal supports.
 
@@ -783,11 +783,11 @@ It is not identical to graph path count.
 
 A projection is a policy-controlled mapping
 
-\[
+```math
 \pi_Q:M\mapsto M_Q
-\]
+```
 
-that selects a subconfiguration relevant to query \(Q\).
+that selects a subconfiguration relevant to query $`Q`$.
 
 A projection must record:
 
@@ -809,37 +809,37 @@ The current theory defines a potency subset of admissible transitions.
 
 For the Formal Core, define a transition-order function
 
-\[
+```math
 \Delta_\Omega(t)
-\]
+```
 
-over an explicit organizational order \(\Omega\).
+over an explicit organizational order $`\Omega`$.
 
 Then
 
-\[
+```math
 \Pi_\Theta(M)=
 \{t\in P_\Theta(M)\mid \Delta_\Omega(t)>0\}.
-\]
+```
 
 ### Required correction
 
-The current manuscript defines potency using \(\Delta L(t)>0\) but also treats certain phase upgrades as potency-producing transitions.
+The current manuscript defines potency using $`\Delta L(t)>0`$ but also treats certain phase upgrades as potency-producing transitions.
 
 The Formal Core must not leave this ambiguous.
 
 Either:
 
 1. potency is strictly level-raising; or
-2. organizational order \(\Omega\) includes level and phase.
+2. organizational order $`\Omega`$ includes level and phase.
 
 The recommended consolidation is option 2.
 
 For example:
 
-\[
+```math
 \Omega(v)=(L(v),\Phi(v))
-\]
+```
 
 with an explicitly declared partial or lexicographic order.
 
@@ -847,13 +847,13 @@ with an explicitly declared partial or lexicographic order.
 
 ## 33. Definition D22 — Local potency
 
-For a subconfiguration \(g\subseteq M\),
+For a subconfiguration $`g\subseteq M`$,
 
-\[
+```math
 \Pi_{loc}(g;M)
 =
 P_\Theta(g)\cap \Pi_\Theta(M)
-\]
+```
 
 only if local evaluation is semantically meaningful for the selected transition rules.
 
@@ -871,9 +871,9 @@ The term `closure` is currently overloaded and must be split.
 
 A fixpoint of candidate generation and admissibility under a rule system:
 
-\[
+```math
 Cl_R(M).
-\]
+```
 
 This is the kernel/engine notion.
 
@@ -887,9 +887,9 @@ This is measured by `Missing`, SCI, ECI, and related diagnostics.
 
 A domain-appropriate self-support or retention criterion:
 
-\[
+```math
 Q_{cl}(M)\ge Q_{crit}.
-\]
+```
 
 This appears in the generalized transition theory.
 
@@ -903,9 +903,9 @@ These are different mathematical concepts and must never share an unqualified id
 
 Every configuration evaluated by the reference kernel is finite:
 
-\[
+```math
 |V|<\infty,\qquad |E|<\infty.
-\]
+```
 
 Candidate generation and bounded analyses must terminate or return an explicit unavailable/budget-exhausted result.
 
@@ -929,7 +929,7 @@ Identifiers provide addressability, not meaning.
 
 ## 38. Axiom A4 — Type-semantic invariance
 
-Formal predicates may depend only on components explicitly declared as semantic in \(\Sigma\) and \(\Theta\).
+Formal predicates may depend only on components explicitly declared as semantic in $`\Sigma`$ and $`\Theta`$.
 
 UI position, textual order, JSON property order, temporary IDs, and presentation metadata must not affect formal results.
 
@@ -939,9 +939,9 @@ UI position, textual order, JSON property order, temporary IDs, and presentation
 
 For exact inputs:
 
-\[
+```math
 (M,\Theta,t)\mapsto A_\Theta(M,t)
-\]
+```
 
 is deterministic.
 
@@ -953,11 +953,11 @@ The same exact model and policy must return the same formal result.
 
 Inside the Onto2D model:
 
-\[
+```math
 Realizable_\Theta(t,M)
 \Rightarrow
 A_\Theta(M,t)=1.
-\]
+```
 
 This is a modeling axiom.
 
@@ -995,11 +995,11 @@ Negative influence must be represented through an operator designed for it, not 
 
 If
 
-\[
+```math
 M_1\cong_\Sigma M_2
-\]
+```
 
-and transition \(t\) is mapped consistently under the same isomorphism, then every Formal Core structural predicate has the same truth value on both configurations.
+and transition $`t`$ is mapped consistently under the same isomorphism, then every Formal Core structural predicate has the same truth value on both configurations.
 
 This is the core representation-invariance axiom.
 
@@ -1022,9 +1022,9 @@ A successor model without derivation provenance is not a formally traceable Onto
 
 ## 45. Operator O1 — Canonicalization
 
-\[
+```math
 Can(M)
-\]
+```
 
 produces a deterministic representative of the typed-isomorphism class.
 
@@ -1040,9 +1040,9 @@ Uses:
 
 ## 46. Operator O2 — Admissibility evaluation
 
-\[
+```math
 EvalAdm(M,t,\Theta)
-\]
+```
 
 returns one of:
 
@@ -1055,15 +1055,15 @@ INVALID
 BUDGET_EXHAUSTED
 ```
 
-The Boolean set \(P_\Theta(M)\) is constructed only from `ADMISSIBLE`.
+The Boolean set $`P_\Theta(M)`$ is constructed only from `ADMISSIBLE`.
 
 ---
 
 ## 47. Operator O3 — Admissible-set construction
 
-\[
+```math
 P_\Theta(M)
-\]
+```
 
 is computed over a bounded candidate transition set.
 
@@ -1106,11 +1106,11 @@ An intervention must never mutate the reference model without producing a new mo
 
 ## 51. Operator O7 — Impact closure
 
-Given intervention \(I\):
+Given intervention $`I`$:
 
-\[
+```math
 Impact_P(I,M)
-\]
+```
 
 and optional node-level impact closure are computed.
 
@@ -1120,11 +1120,11 @@ The engine should explain every changed result through a minimal changed-support
 
 ## 52. Operator O8 — Minimal-support extraction
 
-For a target transition \(t\), compute minimal sufficient supports
+For a target transition $`t`$, compute minimal sufficient supports
 
-\[
+```math
 \mathcal S^{min}_t(M)
-\]
+```
 
 within declared bounds.
 
@@ -1141,7 +1141,7 @@ This operator is the formal basis of:
 
 Compute minimal hitting sets of the minimal support family.
 
-These are semantic bottlenecks for \(t\).
+These are semantic bottlenecks for $`t`$.
 
 They need not coincide with topological articulation points.
 
@@ -1149,11 +1149,11 @@ They need not coincide with topological articulation points.
 
 ## 54. Operator O10 — Minimal repair
 
-Given inadmissible \(t\), search bounded modifications \(\Delta\) such that
+Given inadmissible $`t`$, search bounded modifications $`\Delta`$ such that
 
-\[
+```math
 A_\Theta(M\oplus\Delta,t)=1.
-\]
+```
 
 Return minimal repairs under an explicit cost ordering.
 
@@ -1178,7 +1178,7 @@ The output must include projection identity.
 
 ## 56. Operator O12 — Comparison
 
-For configurations \(M_1,M_2\), compute differences in:
+For configurations $`M_1,M_2`$, compute differences in:
 
 - typing;
 - support families;
@@ -1196,9 +1196,9 @@ This is more informative than raw graph diff.
 
 A composition operator
 
-\[
+```math
 M_1\oplus M_2
-\]
+```
 
 may be defined only when namespace, type, level, and relation semantics are compatible.
 
@@ -1210,17 +1210,17 @@ Composition semantics require a dedicated proof obligation and should not be tre
 
 A refinement
 
-\[
+```math
 Ref:M\rightarrow M'
-\]
+```
 
 introduces additional internal structure.
 
 A coarse-graining
 
-\[
+```math
 CG:M'\rightarrow M
-\]
+```
 
 suppresses internal structure.
 
@@ -1234,11 +1234,11 @@ They are priority Formal Core work.
 
 ## 59. Operator O15 — Quotient by structural equivalence
 
-Given an equivalence relation \(\sim\), construct
+Given an equivalence relation $`\sim`$, construct
 
-\[
+```math
 M/{\sim}.
-\]
+```
 
 The quotient is meaningful only if the operators of interest are well-defined on equivalence classes.
 
@@ -1252,35 +1252,35 @@ This creates a direct proof obligation:
 
 ## 60. Proposition P1 — Canonical renaming invariance
 
-If \(M'\) is obtained from \(M\) only by renaming identifiers, then
+If $`M'`$ is obtained from $`M`$ only by renaming identifiers, then
 
-\[
+```math
 M\cong_\Sigma M'
-\]
+```
 
 and therefore
 
-\[
+```math
 P_\Theta(M)=P_\Theta(M').
-\]
+```
 
 ### Proof
 
-A pure renaming defines a bijection \(f:V\to V'\) preserving incidence and all semantic typing. By Axiom A9, every structural predicate has identical truth value. Therefore every transition has the same admissibility value, hence the admissible sets are equal. ∎
+A pure renaming defines a bijection $`f:V\to V'`$ preserving incidence and all semantic typing. By Axiom A9, every structural predicate has identical truth value. Therefore every transition has the same admissibility value, hence the admissible sets are equal. ∎
 
 ---
 
 ## 61. Proposition P2 — Structural-coverage monotonicity
 
-Let \(M'\) be obtained from \(M\) by adding only non-negative supporting parent relations to node \(N\), without changing existing edges or thresholds.
+Let $`M'`$ be obtained from $`M`$ by adding only non-negative supporting parent relations to node $`N`$, without changing existing edges or thresholds.
 
-Then for every dependency category \(r\):
+Then for every dependency category $`r`$:
 
-\[
+```math
 Cover^{struct}_{N,M'}(r)
 \ge
 Cover^{struct}_{N,M}(r).
-\]
+```
 
 ### Proof
 
@@ -1290,11 +1290,11 @@ Structural coverage is a sum of non-negative edge contributions. Adding non-nega
 
 ## 62. Proposition P3 — Preservation of satisfied mandatory categories
 
-Under the assumptions of P2, any mandatory category satisfied in \(M\) remains satisfied in \(M'\).
+Under the assumptions of P2, any mandatory category satisfied in $`M`$ remains satisfied in $`M'`$.
 
 ### Proof
 
-By P2, coverage cannot decrease. If coverage was at least \(T_{must}\), it remains at least \(T_{must}\). ∎
+By P2, coverage cannot decrease. If coverage was at least $`T_{must}`$, it remains at least $`T_{must}`$. ∎
 
 ### Limitation
 
@@ -1306,19 +1306,19 @@ This does not imply global transition admissibility is monotone if additional ed
 
 For the definition
 
-\[
+```math
 Missing_N=
 \{r\in R_{must}\mid
 Cover^{struct}_N(r)<T_{must}\},
-\]
+```
 
 we have
 
-\[
+```math
 Missing_N=\varnothing
 \iff
 StructurallyComplete(N).
-\]
+```
 
 ### Proof
 
@@ -1330,7 +1330,7 @@ This is a definitional proposition, not a deep theorem.
 
 ## 64. Proposition P5 — Arising-role ablation consequence
 
-If relation \(e\) is classified as `arising` exactly by Definition D14, then removing \(e\) destroys first admissibility.
+If relation $`e`$ is classified as `arising` exactly by Definition D14, then removing $`e`$ destroys first admissibility.
 
 ### Proof
 
@@ -1344,11 +1344,11 @@ The manuscript currently presents closely related statements in theorem-like lan
 
 ## 65. Proposition P6 — Intervention identity stability
 
-If an intervention changes no semantic field of \(M\), then
+If an intervention changes no semantic field of $`M`$, then
 
-\[
+```math
 I(M)\cong_\Sigma M
-\]
+```
 
 and all Formal Core results remain unchanged.
 
@@ -1358,7 +1358,7 @@ This covers pure UI relocation, layout change, label formatting, and other non-s
 
 ## 66. Proposition P7 — Evidence does not alter bare structural topology
 
-Changing confidence \(c(e)\) without changing any structural semantic field leaves the typed topology unchanged.
+Changing confidence $`c(e)`$ without changing any structural semantic field leaves the typed topology unchanged.
 
 It may alter evidence-aware metrics, but must not alter purely structural operators unless the selected policy explicitly uses confidence as an admissibility condition.
 
@@ -1372,29 +1372,29 @@ This proposition enforces separation between structure and epistemic support.
 
 Let
 
-\[
+```math
 M_1\cong_\Sigma M_2.
-\]
+```
 
-Then, under the same policy \(\Theta\),
+Then, under the same policy $`\Theta`$,
 
-\[
+```math
 P_\Theta(M_1)
 \cong
 P_\Theta(M_2)
-\]
+```
 
 under the transition mapping induced by the isomorphism.
 
 ### Proof
 
-Let \(f\) be the typed isomorphism. By Axiom A9, every structural predicate used in \(A_\Theta\) is invariant under \(f\). Therefore for every corresponding candidate transition pair \(t_1,t_2\):
+Let $`f`$ be the typed isomorphism. By Axiom A9, every structural predicate used in $`A_\Theta`$ is invariant under $`f`$. Therefore for every corresponding candidate transition pair $`t_1,t_2`$:
 
-\[
+```math
 A_\Theta(M_1,t_1)
 =
 A_\Theta(M_2,t_2).
-\]
+```
 
 Thus membership in the admissible set is preserved under the induced transition mapping. ∎
 
@@ -1410,31 +1410,31 @@ It establishes that admissibility belongs to the structural configuration rather
 
 Let
 
-\[
+```math
 \mathcal S^{min}_t(M)
-\]
+```
 
-be the family of all minimal sufficient supports for transition \(t\).
+be the family of all minimal sufficient supports for transition $`t`$.
 
-Let \(C\) be a set of model elements.
+Let $`C`$ be a set of model elements.
 
 If
 
-\[
+```math
 \forall S\in\mathcal S^{min}_t(M),
 \quad
 C\cap S\neq\varnothing
-\]
+```
 
 and removal of elements cannot create new supports, then
 
-\[
+```math
 t\notin P_\Theta(M\setminus C).
-\]
+```
 
 ### Proof
 
-By assumption, every minimal sufficient support contains at least one element from \(C\). Removing \(C\) destroys every known sufficient support. Under the monotone-removal condition, removal cannot generate a new sufficient support not present before. Therefore no sufficient support remains, so \(A_\Theta(M\setminus C,t)=0\). Hence \(t\notin P_\Theta(M\setminus C)\). ∎
+By assumption, every minimal sufficient support contains at least one element from $`C`$. Removing $`C`$ destroys every known sufficient support. Under the monotone-removal condition, removal cannot generate a new sufficient support not present before. Therefore no sufficient support remains, so $`A_\Theta(M\setminus C,t)=0`$. Hence $`t\notin P_\Theta(M\setminus C)`$. ∎
 
 ### Interpretation
 
@@ -1446,29 +1446,29 @@ This is more meaningful for Onto2D than ordinary graph articulation because the 
 
 ## 69. Theorem T3 — Alternative-support survival theorem
 
-Let \(C\) be an intervention-removal set.
+Let $`C`$ be an intervention-removal set.
 
 If there exists at least one sufficient support
 
-\[
+```math
 S\in\mathcal S_t(M)
-\]
+```
 
 such that
 
-\[
+```math
 C\cap S=\varnothing,
-\]
+```
 
 and all predicates used by that support remain unchanged, then
 
-\[
+```math
 t\in P_\Theta(M\setminus C).
-\]
+```
 
 ### Proof
 
-The surviving support \(S\) remains a subconfiguration of \(M\setminus C\). By assumption its relevant predicates are unchanged. Since \(S\) was sufficient for \(t\), it remains sufficient. Therefore \(A_\Theta(M\setminus C,t)=1\). ∎
+The surviving support $`S`$ remains a subconfiguration of $`M\setminus C`$. By assumption its relevant predicates are unchanged. Since $`S`$ was sufficient for $`t`$, it remains sufficient. Therefore $`A_\Theta(M\setminus C,t)=1`$. ∎
 
 ### Interpretation
 
@@ -1478,27 +1478,27 @@ This is the formal basis of alternative-path robustness.
 
 ## 70. Theorem T4 — Support-family expansion cannot reduce cut size
 
-Let \(\mathcal S_1\subseteq\mathcal S_2\) be two support families over the same element universe.
+Let $`\mathcal S_1\subseteq\mathcal S_2`$ be two support families over the same element universe.
 
 Let
 
-\[
+```math
 \kappa(\mathcal S)
-\]
+```
 
-be the minimum size of a hitting set intersecting every support in \(\mathcal S\).
+be the minimum size of a hitting set intersecting every support in $`\mathcal S`$.
 
 Then
 
-\[
+```math
 \kappa(\mathcal S_2)
 \ge
 \kappa(\mathcal S_1).
-\]
+```
 
 ### Proof
 
-Any hitting set for \(\mathcal S_2\) must intersect every support in \(\mathcal S_1\), because \(\mathcal S_1\subseteq\mathcal S_2\). Therefore every hitting set of \(\mathcal S_2\) is also a hitting set of \(\mathcal S_1\). The minimum over the more constrained family cannot be smaller. ∎
+Any hitting set for $`\mathcal S_2`$ must intersect every support in $`\mathcal S_1`$, because $`\mathcal S_1\subseteq\mathcal S_2`$. Therefore every hitting set of $`\mathcal S_2`$ is also a hitting set of $`\mathcal S_1`$. The minimum over the more constrained family cannot be smaller. ∎
 
 ### Interpretation
 
@@ -1510,21 +1510,21 @@ This gives a clean structural robustness quantity.
 
 ## 71. Theorem T5 — Support-complete projection preservation
 
-Let projection \(\pi_Q(M)=M_Q\).
+Let projection $`\pi_Q(M)=M_Q`$.
 
-Suppose transition \(t\) is evaluated solely from a support \(S\subseteq M_Q\), and every predicate consulted by \(A_\Theta(\cdot,t)\) is support-local to \(S\).
+Suppose transition $`t`$ is evaluated solely from a support $`S\subseteq M_Q`$, and every predicate consulted by $`A_\Theta(\cdot,t)`$ is support-local to $`S`$.
 
 Then
 
-\[
+```math
 A_\Theta(M,t)=1
 \Rightarrow
 A_\Theta(M_Q,t)=1.
-\]
+```
 
 ### Proof
 
-Because \(S\subseteq M_Q\) and all predicates relevant to \(t\) depend only on \(S\), projection removes no information used by the admissibility proof. The same predicate evaluations therefore hold in \(M_Q\). ∎
+Because $`S\subseteq M_Q`$ and all predicates relevant to $`t`$ depend only on $`S`$, projection removes no information used by the admissibility proof. The same predicate evaluations therefore hold in $`M_Q`$. ∎
 
 ### Limitation
 
@@ -1538,21 +1538,21 @@ Therefore every projection-based analyzer must declare its preservation assumpti
 
 If
 
-\[
+```math
 M_1\cong_\Sigma M_2
-\]
+```
 
-and the organizational order \(\Omega\) is preserved by the typed isomorphism, then
+and the organizational order $`\Omega`$ is preserved by the typed isomorphism, then
 
-\[
+```math
 \Pi_\Theta(M_1)
 \cong
 \Pi_\Theta(M_2).
-\]
+```
 
 ### Proof
 
-By T1, admissible transition sets correspond. Because \(\Delta_\Omega(t)\) is preserved under the same typed mapping, the predicate \(\Delta_\Omega(t)>0\) has identical truth value for corresponding transitions. Restricting equal admissible sets by equal potency predicates yields corresponding potency sets. ∎
+By T1, admissible transition sets correspond. Because $`\Delta_\Omega(t)`$ is preserved under the same typed mapping, the predicate $`\Delta_\Omega(t)>0`$ has identical truth value for corresponding transitions. Restricting equal admissible sets by equal potency predicates yields corresponding potency sets. ∎
 
 ---
 
@@ -1560,19 +1560,19 @@ By T1, admissible transition sets correspond. Because \(\Delta_\Omega(t)\) is pr
 
 Let
 
-\[
+```math
 M_1\cong_\Sigma M_2
-\]
+```
 
-and let interventions \(I_1,I_2\) correspond under the same typed isomorphism.
+and let interventions $`I_1,I_2`$ correspond under the same typed isomorphism.
 
 Then
 
-\[
+```math
 Impact_P(I_1,M_1)
 \cong
 Impact_P(I_2,M_2).
-\]
+```
 
 ### Proof
 
@@ -1626,23 +1626,23 @@ Do not retain universal irreversibility as an axiom.
 
 Statements of the form
 
-\[
+```math
 T(v)\ge T_{crit}
 \Rightarrow
 \Pi_{loc}(g(v))\neq\varnothing
-\]
+```
 
-are not currently mathematical theorems if \(T(v)\) is a weighted heuristic built from feedback density, cross-level density, closure, and spectral terms.
+are not currently mathematical theorems if $`T(v)`$ is a weighted heuristic built from feedback density, cross-level density, closure, and spectral terms.
 
 ### Formal Core decision
 
-Move to empirical hypothesis unless \(T\) is redefined directly from the exact admissibility predicate.
+Move to empirical hypothesis unless $`T`$ is redefined directly from the exact admissibility predicate.
 
 ---
 
 ## 77. Structural transferability across real systems
 
-If structural equivalence is defined so strongly that it preserves all predicates of \(A_\Theta\), then transferability is a theorem by construction.
+If structural equivalence is defined so strongly that it preserves all predicates of $`A_\Theta`$, then transferability is a theorem by construction.
 
 But the stronger claim—
 
@@ -1684,11 +1684,11 @@ Keep phase labels in the signature, but treat cross-domain universality of the f
 
 The generalized form
 
-\[
+```math
 L_{tr}
 =
 D-C+K+F+I+R-S
-\]
+```
 
 is a major theoretical construct.
 
@@ -1742,19 +1742,19 @@ Without it, Onto2D cannot claim meaningful structural geometry across descriptiv
 
 There exists a distance or quasi-distance
 
-\[
+```math
 d_S(M_1,M_2)
-\]
+```
 
 over structural-equivalence classes that captures semantic change better than graph-edit distance.
 
 Candidate construction:
 
-\[
+```math
 d_S(M_1,M_2)
 =
 \min_\pi Cost(\pi)
-\]
+```
 
 over valid Onto2D transformations.
 
@@ -1796,11 +1796,11 @@ Two configurations may be identical in current structure while remaining non-equ
 
 The formal question is whether an augmented state
 
-\[
+```math
 (M,H)
-\]
+```
 
-admits invariants not recoverable from \(M\) alone.
+admits invariants not recoverable from $`M`$ alone.
 
 This is the proper formal home of Historical Load.
 
@@ -1925,7 +1925,7 @@ The Variational Extension determines, for eligible model classes:
 
 ## 96. Applicability classes
 
-Every attempt to construct \(L_{tr}\) must return one of:
+Every attempt to construct $`L_{tr}`$ must return one of:
 
 ```text
 DIRECT
@@ -2093,7 +2093,7 @@ Examples of expected reclassification:
 |---|---|
 | Configuration graph definition | `[DEF]` |
 | Node/edge typing | `[DEF]` |
-| \(P(cfg)\) admissible set | `[DEF]` |
+| $`P(cfg)`$ admissible set | `[DEF]` |
 | Structural admissibility implication | `[AX]` or definitional modeling rule |
 | Strong exclusion | `[COR]` relative to admissibility semantics |
 | Potency set | `[DEF]`, after phase/level ambiguity is fixed |
@@ -2106,7 +2106,7 @@ Examples of expected reclassification:
 | SCI/ECI coefficients | `[POL]` |
 | Generalized Lagrangian | Variational Extension |
 | Universal cross-domain Lagrangian usefulness | `[CONJ]` + `[EMP]` |
-| Closure threshold \(Q_{cl}\) | model-class definition / empirical parameter |
+| Closure threshold $`Q_{cl}`$ | model-class definition / empirical parameter |
 | Four-level-phase universality | `[EMP]` |
 
 This audit is mandatory before expanding the manuscript.
@@ -2638,7 +2638,7 @@ It is developed as a formal theory of structural admissibility.
 
 Its central object is:
 
-\[
+```math
 \boxed{
 \text{typed configuration}
 +
@@ -2646,7 +2646,7 @@ Its central object is:
 +
 \text{structure-preserving transformations}
 }
-\]
+```
 
 The universal ontology graph is a reference atlas.
 

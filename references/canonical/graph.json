@@ -3,7 +3,7 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.02.8",
+    "version": "2026.10.02.9",
     "status": "research-reconstruction-partial"
   },
   "scope": {
@@ -1025,7 +1025,7 @@
       "doi": null,
       "url": null,
       "path": "docs/ONTO2D_FORMAL_CORE.md",
-      "sha256": "86e53dae20c6aaf77fb3e1980cf5ccb70f680ef61166c05eabad3940dbe85e6b",
+      "sha256": "bcac6c4776d5ea136039ce8f0a0ce70d921f45ab7ce25c7299fb26d0a9c3d662",
       "review": {
         "extent": "complete-supplied-document",
         "locators": [
@@ -1064,7 +1064,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/SOURCE_READINESS.md",
-      "sha256": "7668a2c72e83d53f6e7b51e36ab02757f3928b52279069c694c4d1a50a460a2f",
+      "sha256": "5669439e47fb1111bcd50ccfaa8552071b14ddea500531c6ec71ef6d5a9fc3b8",
       "review": {
         "extent": "complete-internal-review",
         "locators": [

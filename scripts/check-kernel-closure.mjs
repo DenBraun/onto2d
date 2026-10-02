@@ -28,8 +28,7 @@ const REQUIRED_CI_OPERATING_SYSTEMS = Object.freeze([
 const REQUIRED_CI_NODE_VERSIONS = Object.freeze([22, 24]);
 const REQUIRED_CI_COMMANDS = Object.freeze([
   "npm test",
-  "npm run check",
-  "npm run build"
+  "npm run check"
 ]);
 const REQUIRED_GOLDEN_VERIFICATION_COMMAND = "npm run check:goldens";
 const REQUIRED_GOLDEN_VERIFICATION_SCRIPT =

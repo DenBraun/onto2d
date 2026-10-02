@@ -7,7 +7,9 @@ const REPOSITORY_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)
 const DOCUMENT_ROOTS = [
   "README.md",
   "CONTRIBUTING.md",
+  "CODE_OF_CONDUCT.md",
   "SECURITY.md",
+  ".github",
   "apps",
   "docs",
   "cases",
