@@ -58,11 +58,6 @@
     },
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/24",
-      "title": "W and Z Bosons"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/25",
       "title": "Nonzero Neutrino Mass and Flavor Mixing"
     },

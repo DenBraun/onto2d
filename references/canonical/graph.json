@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.02.9",
+    "version": "2026.10.04.1",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial source reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural records. Formal specifications, computational models, experimental preparations, reported observations and conditional interpretations have distinct meanings and evidence. Reviewed studies retain their own systems, selections, observables, uncertainty limits and unresolved contradictions. Physical records distinguish quantum-field definitions, scattering and decay measurements, Bell tests, vacuum quantities, QED and QCD running, lattice spectra and charge searches. Calibrated masses, detector unloading times, storage-loss rates and intrinsic-lifetime interpretations are separate quantities. Neutron survival studies retain production years, diagnostic controls, shared data and non-decay-loss corrections. Four-flavor QCD+QED mass splittings retain physical-point inputs, finite-volume prescriptions, convention-dependent components and the additional experimental input to a calibrated ratio. Capture-based neutron-mass inference distinguishes campaign angles, crystal calibration, nuclear recoil, unit conversions, adopted isotope masses and recalibration of shared data. Penning-trap inputs distinguish charge-normalized frequency ratios, voltage controls, neutral-atom corrections and correlated mass fits. LIONTRAP separates original acquisition, experimental reanalysis, shared-data controls and conditional electrode-geometry predictions. Proton-decay searches separate selected channel counts, nuclear and detector response, shared exposure, conditional partial-lifetime bounds and printed arithmetic. Magnetic-moment records distinguish electron and proton spin/cyclotron inference from neutron/mercury precession and its external absolute scale. Electron resonance fits, cavity calibration and radiative interpretations retain separate inputs and limits. Shared campaigns, source-specific correction conventions and uncertainty aggregation remain explicit. Cross-domain construction, universal carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Light-flavor families retain approximate representation conventions, a conditional historical Omega event and a response-corrected meson transition ratio; these do not establish real-time family formation. Perturbative amplitude and state-boundary conventions are separate from a synthetic kinematic check and from measured particle populations. No universal downward confinement mechanism is admitted. Free-field time evolution, historical electroweak mass relations and reactor-neutrino phase conventions retain specified models. Collider candidates and reactor signals are separated from response, backgrounds and fitted inferences; finite algebra does not reproduce those experiments. Solar active-flavor decomposition, atmospheric angular distributions and Higgs tau-pair evidence retain their original acquisitions and conditional fits. Matter evolution and coupling-rate definitions state their approximation boundaries; reused samples and post-fit displays are not independent experiments. Accelerator tau appearance and historical W/Z observations preserve selected candidates, adopted detector response and conditional original inferences. The single-doublet Higgs background and charged-fermion coupling are formal definitions with supplied parameters, distinct from a measured mass hierarchy or a universal stability mechanism.",
+    "summary": "Partial source reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural records. Formal specifications, computational models, experimental preparations, reported observations and conditional interpretations have distinct meanings and evidence. Reviewed studies retain their own systems, selections, observables, uncertainty limits and unresolved contradictions. Physical records distinguish quantum-field definitions, scattering and decay measurements, Bell tests, vacuum quantities, QED and QCD running, lattice spectra and charge searches. Calibrated masses, detector unloading times, storage-loss rates and intrinsic-lifetime interpretations are separate quantities. Neutron survival studies retain production years, diagnostic controls, shared data and non-decay-loss corrections. Four-flavor QCD+QED mass splittings retain physical-point inputs, finite-volume prescriptions, convention-dependent components and the additional experimental input to a calibrated ratio. Capture-based neutron-mass inference distinguishes campaign angles, crystal calibration, nuclear recoil, unit conversions, adopted isotope masses and recalibration of shared data. Penning-trap inputs distinguish charge-normalized frequency ratios, voltage controls, neutral-atom corrections and correlated mass fits. LIONTRAP separates original acquisition, experimental reanalysis, shared-data controls and conditional electrode-geometry predictions. Proton-decay searches separate selected channel counts, nuclear and detector response, shared exposure, conditional partial-lifetime bounds and printed arithmetic. Magnetic-moment records distinguish electron and proton spin/cyclotron inference from neutron/mercury precession and its external absolute scale. Electron resonance fits, cavity calibration and radiative interpretations retain separate inputs and limits. Shared campaigns, source-specific correction conventions and uncertainty aggregation remain explicit. Cross-domain construction, universal carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Light-flavor families retain approximate representation conventions, a conditional historical Omega event and a response-corrected meson transition ratio; these do not establish real-time family formation. Perturbative amplitude and state-boundary conventions are separate from a synthetic kinematic check and from measured particle populations. No universal downward confinement mechanism is admitted. Free-field time evolution, historical electroweak mass relations and reactor-neutrino phase conventions retain specified models. Collider candidates and reactor signals are separated from response, backgrounds and fitted inferences; finite algebra does not reproduce those experiments. Solar active-flavor decomposition, atmospheric angular distributions and Higgs tau-pair evidence retain their original acquisitions and conditional fits. Matter evolution and coupling-rate definitions state their approximation boundaries; reused samples and post-fit displays are not independent experiments. Accelerator tau appearance and historical W/Z observations preserve selected candidates, adopted detector response and conditional original inferences. The single-doublet Higgs background and charged-fermion coupling are formal definitions with supplied parameters, distinct from a measured mass hierarchy or a universal stability mechanism. Weak charged/neutral currents and low-energy exchange are formal model definitions. LEP Z scans, correlated line-shape parameters and derived inclusive widths/fractions remain distinct; W width and branching combinations retain separate campaigns and fit assumptions. Running-width, energy-pole and exponential-lifetime conventions are explicit, and no directly timed lifetime or stable weak-boson carrier is inferred.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "87411a3167894e1dae84c0d5ece30b137b1aea8b59e8d07e0fc2208c39be86ed",
+      "sha256": "080f55f1cbcde45906d8899762817d0b3eb5378f397b3611827e082433df5b34",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6553,9 +6553,12 @@
           "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary",
           "Section 10.4.7, page 31: color multiplicities in fermion decay channels",
           "Section 10.1, page 2, Equations 10.1 and 10.3-10.5: declared Higgs-doublet potential, unitary-gauge background and tree-level gauge/scalar masses",
-          "Section 10.1, pages 1-3, Equation 10.2 and fermion/neutrino paragraphs: mass-basis charged-fermion Higgs coupling and minimal-model neutrino boundary"
+          "Section 10.1, pages 1-3, Equation 10.2 and fermion/neutrino paragraphs: mass-basis charged-fermion Higgs coupling and minimal-model neutrino boundary",
+          "Section 10.1, pages 1-3, Equations 10.2-10.3 and 10.6-10.7: weak vector-field charges/polarizations, charged and neutral currents and the stated quark mixing basis",
+          "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization",
+          "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries"
         ],
-        "limit": "Revised November 2025; inspected PDF produced 15 April 2026. Pages 1-3 and 31 read and visually checked. Page 31 supplies the color convention only; its numerical predictions, global fits and cited experiments are not independently reviewed. The 2024 parent volume and this 2025 chapter update are distinct bibliographic scopes. No chapter-specific DOI is asserted."
+        "limit": "Revised November 2025; inspected PDF produced 15 April 2026. Pages 1-3 and 31 read and visually checked. Page 31 supplies the color convention only; its numerical predictions, global fits and cited experiments are not independently reviewed. The 2024 parent volume and this 2025 chapter update are distinct bibliographic scopes. No chapter-specific DOI is asserted. The weak-sector review additionally reads Section 10.2.4 on pages 9-11 and visually checks Equation 10.11-10.13 on page 10; pages 2-3 current and contact formulas were visually rechecked. Only these formal conventions are added: no global fit, quoted numerical mass/width or complete radiative/off-shell calculation is admitted."
       }
     },
     {
@@ -6727,7 +6730,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "5a1b036984a60f78e56950f9c8055cf5c157d164f8bd99273ef44ccbe8d12a10",
+      "sha256": "effe2c1c5424c8f1e5c8bd1578cf7b2f1ae95a3f9cca337527e77f63ac15ad31",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -9183,9 +9186,11 @@
         "extent": "selected-formal-passages",
         "locators": [
           "Pages 1-2, Sections 49.1 and 49.3, Equation 49.9: on-shell four-momentum, positive energy and c=1 convention",
-          "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space"
+          "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space",
+          "Page 2, Sections 49.3-49.4, Equations 49.10-49.12: narrow-width factorization, relative partial decay rates and rest-frame decay phase space",
+          "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units"
         ],
-        "limit": "Pages 1-2, Sections 49.1, 49.3 and 49.4 through Equation 49.12 were read. The chapter says reviewed August 2021 and written January 2000; the inspected 2025 edition has a 1 December 2025 footer. The parent Review of Particle Physics DOI is not assigned as a distinct chapter DOI. Remaining sections, decay amplitudes and experimental evidence are not reviewed. The deuteron Q sign is a local inference from these formal conditions, not an experimental result of this chapter."
+        "limit": "Pages 1-2 were read, including Sections 49.1,49.3,49.4 and 49.4.1 through Equation 49.15; page 2 formulas were visually checked. The chapter says reviewed August 2021 and written January 2000; the inspected 2025 edition has a 1 December 2025 footer. The parent Review of Particle Physics DOI is not assigned as a distinct chapter DOI. Only the selected kinematic, partial-decay and exponential-survival conventions are admitted; no decay amplitude, detector result or fit is reconstructed. The deuteron Q sign remains a separate local inference from formal threshold conditions."
       }
     },
     {
@@ -10204,6 +10209,90 @@
           "CERN-EP/83-73, Section 7 on printed pages 9-10 (PDF pages 13-14), Table 3 footnote (a), Figures 8-9 (PDF pages 35-36), and note 4 on printed page 12 (PDF page 16): reported mass, unfinished calibration, omitted radiative corrections and distinct contemporary W comparison"
         ],
         "limit": "Read the CERN-EP/83-73 author preprint dated 3 June 1983, a 36-PDF-page scan: cover, abstract, Sections 1-7, references and footnotes, Tables 1-3 and all figure captions. Visually checked PDF pages 1, 9-11, 13, 21-23, 26 and 35-36 (Tables 1-3 and Figures 1, 8-9). Other figure panels were not individually inspected. This is not the publisher typeset article, published 7 July 1983. The reviewed preprint prints the electron event D run as 7739 in Table 1 and 7339 in Table 3, both with event 1279. Run identifiers are not imported or silently repaired; the admitted count and mass summaries do not choose between those spellings. The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods."
+      }
+    },
+    {
+      "id": "pdg2025-resonances",
+      "kind": "research-publication",
+      "title": "Resonances: Review of Particle Physics, 2025 update",
+      "authors": [
+        "D. M. Asner",
+        "C. Hanhart",
+        "M. Mikhasenko"
+      ],
+      "year": 2025,
+      "doi": null,
+      "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-resonances.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-formal-passages",
+        "locators": [
+          "Page 1, Section 50.1: isolated narrow-resonance interpretation and limits from thresholds, backgrounds and broad resonances",
+          "Page 10, opening of Section 50.2, Equation 50.20 and the following two paragraphs: energy-plane pole mass/width, threshold-qualified lifetime relation and partial-width caution"
+        ],
+        "limit": "Read Section 50.1 on page1 and the opening of Section 50.2 on page 10 through the two paragraphs following Equation 50.20; visually checked the page 10 pole definition and qualifications. Revised August 2025; inspected edition footer 1 December 2025. No chapter-specific DOI is asserted. The remaining scattering theory, residues, coupled-channel constructions and example data analyses are not reviewed. The formal pole definition is not a W/Z line-shape or time-domain experimental reconstruction."
+      }
+    },
+    {
+      "id": "lep2006-z-lineshape",
+      "kind": "research-publication",
+      "title": "Precision Electroweak Measurements on the Z Resonance",
+      "authors": [
+        "ALEPH Collaboration",
+        "DELPHI Collaboration",
+        "L3 Collaboration",
+        "OPAL Collaboration",
+        "SLD Collaboration",
+        "LEP Electroweak Working Group",
+        "SLD Electroweak and Heavy Flavour Groups"
+      ],
+      "year": 2006,
+      "doi": "10.1016/j.physrep.2005.12.006",
+      "url": "https://arxiv.org/abs/hep-ex/0509008v3",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-primary-author-report-sections",
+        "locators": [
+          "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters",
+          "Author v3 PDF pages 14, 16 and 45-48, Sections 1.1 and 2.1-2.2.1: LEP-I acquisition, energy scans and selected final states",
+          "Author v3 PDF pages 39-41 and 49-60, Sections 1.5.4 and 2.2.2-2.2.5: measured acceptances, luminosity, selection, energy calibration and beam spread",
+          "Author v3 PDF pages 49-54, Sections 2.2.2-2.2.4 and Figure 2.3: corrected cross-sections and asymmetries versus energy, plotted data and dependent fitted bands",
+          "Author v3 PDF pages 60-62, Section 2.3 and Table 2.4: four experiment-specific nine-parameter fits, correlation coefficients and combination-specific updates",
+          "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch",
+          "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality",
+          "Author v3 PDF pages 31 and 34, Section 1.5.1, Equations 1.37 and 1.43-1.44; page 172, Section 7.2.1: inclusive total/partial widths and branching fractions"
+        ],
+        "limit": "Reviewed arXiv:hep-ex/0509008v3, revised 27 February 2006, the 302-page author journal version; the publisher PDF was not separately retrieved. Read the cover/contents and selected PDF pages 14, 16, 30-32, 34-35, 39-41, 45-76 and 172-174. Visually checked pages 30-31, 53, 61, 69-70, 75 and 173-174, including Figure 2.3 and Tables 2.4, 2.9-2.10, 2.13 and 7.1-7.2. Other figures and upstream papers are not independently reviewed. Heavy-flavor rows and the global electroweak, neutrino-count and Higgs-prediction branches are excluded. The report supplies the original combination and describes adopted detector, energy-calibration, luminosity and radiative-correction inputs. Their underlying data and programs are not replayed here; no new acquisition or fit reproduction is claimed."
+      }
+    },
+    {
+      "id": "lep2013-w-width-branching",
+      "kind": "research-publication",
+      "title": "Electroweak Measurements in Electron-Positron Collisions at W-Boson-Pair Energies at LEP",
+      "authors": [
+        "ALEPH Collaboration",
+        "DELPHI Collaboration",
+        "L3 Collaboration",
+        "OPAL Collaboration",
+        "LEP Electroweak Working Group"
+      ],
+      "year": 2013,
+      "doi": "10.1016/j.physrep.2013.07.004",
+      "url": "https://arxiv.org/pdf/1302.3415v4",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-full-text-passages",
+        "locators": [
+          "Sections 5.1-5.2.1, author pages 86-89, Table 5.1: WW signal convention, 1997-2000 exposures, channel selections and cross-section response",
+          "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality",
+          "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs",
+          "Section 7.3.5, author pages 134-138, Tables 7.3-7.4: detector, beam energy, hadronisation, radiation and final-state-interaction uncertainties",
+          "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention"
+        ],
+        "limit": "Read selected author-v4 passages on pages 86-89, 93-95, 129-138, 140-141 and 196, plus the Figure 7.3 caption on page 144; visually checked pages 88, 93, 94, 132, 140, 141 and 196. Version 4 is dated 19 September 2013; publisher typesetting and the complete 242-page report were not independently reviewed. The topology-fraction, correlation and OPAL uncertainty discrepancies remain explicit claim limits."
       }
     }
   ],
@@ -53092,6 +53181,830 @@
         "Quark mass parameters require their scale and renormalization convention beyond tree level. This formula is not an assertion that the mass of a composite hadron equals a sum of Higgs-generated constituent masses; QCD dynamics and separately reviewed hadron calculations retain their own definitions.",
         "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality, universal carrier minima, parent weights, SOMA phase order or a general stability/formation law for later composite matter."
       ]
+    },
+    {
+      "id": "D-phys-weak-gauge-currents",
+      "kind": "review-finding",
+      "statement": "In the declared broken-phase Standard Model, W-plus and W-minus are spin-one fields of electric charge +e and -e; Z is neutral and spin one. With J_W^mu=sum_l nu-bar_l*gamma^mu*(1-gamma5)*l+sum_ij u-bar_i*gamma^mu*(1-gamma5)*V_ij*d_j, L_CC=-g/(2*sqrt(2))*(W-plus_mu*J_W^mu+h.c.). The tree neutral term is L_NC=-g/(2*cos(theta_W))*Z_mu*sum_f f-bar*gamma^mu*(gV_f-gA_f*gamma5)*f, where gV_f=T3_f-2*Q_f*sin(theta_W)^2 and gA_f=T3_f; T3_f is the isospin of the left-handed partner. Thus the stated quark charged current contains CKM mixing, while the tree Z current is flavor diagonal in this minimal mass basis.",
+      "scope": "Formal definitions for the declared weak-sector model and unstable-resonance interpretation; experimental observations and fitted parameters remain separate records.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3, Equations 10.2-10.3 and 10.6-10.7: weak vector-field charges/polarizations, charged and neutral currents and the stated quark mixing basis",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Field assignments, spin-one and charge labels, chiral representations and the CKM matrix are model inputs. They are not independent spin or coupling measurements, a generated chirality or a derivation of the mass hierarchy. Neutrino mixing or masses require their separately specified extension; the minimal charged-current convention here does not supply that mechanism.",
+        "Massive vector fields have three physical polarizations in the stated broken-phase description. The absence of a tree-level flavor-changing Z vertex does not exclude loop-induced flavor-changing neutral processes or nonminimal interactions.",
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+      ]
+    },
+    {
+      "id": "D-phys-low-energy-weak-exchange",
+      "kind": "review-finding",
+      "statement": "For the leading scalar denominator of a massive weak propagator, 1/(q^2-M_V^2)=-M_V^(-2)*[1+O(q^2/M_V^2)] when |q^2| is much smaller than M_V^2. With the declared charged-current normalization this yields the tree relation G_F/sqrt(2)=g^2/(8*M_W^2)=1/(2*v^2) for a local four-fermion approximation. Charged and neutral weak amplitudes retain their different currents; the contact description is distinct from a resonant production and decay process.",
+      "scope": "Formal definitions for the declared weak-sector model and unstable-resonance interpretation; experimental observations and fitted parameters remain separate records.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Use the leading low-energy tree approximation with light external fermions and |q^2| much smaller than M_W^2 or M_Z^2, away from the resonance. The scalar denominator alone omits vector numerators, external currents, longitudinal/Goldstone terms and radiative corrections needed for a complete gauge-consistent amplitude. It is not a production cross section, an on-shell W/Z event or an instantaneous action rule.",
+        "Beta decay and charged-current flavor change use the charged current; neutral-current neutrino scattering uses the neutral current. Actual hadronic/nuclear matrix elements, flavor parameters, kinematic cuts and detector response are separate inputs. Short-range denotes this massive-exchange/low-energy description, not a universal sharp distance cutoff or a population of virtual mediator particles.",
+        "The Fermi relation is a tree-level parameter identity, not a fresh measurement of G_F or a precision electroweak input-scheme conversion. The formal expansion is not an executable scientific check.",
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+      ]
+    },
+    {
+      "id": "D-phys-inclusive-decay-width-branching",
+      "kind": "review-finding",
+      "statement": "In the adopted inclusive weak-resonance decay convention, define Gamma_tot=sum_f Gamma_f over a complete, mutually exclusive channel partition and B_f=Gamma_f/Gamma_tot. The Gamma_f and Gamma_tot use the same energy-width and radiation convention; B_f is dimensionless. The LEP Z convention includes final-state QED/QCD corrections and nonfactorisable contributions so that its specified partial widths sum to its total width.",
+      "scope": "Formal definitions for the declared weak-sector model and unstable-resonance interpretation; experimental observations and fitted parameters remain separate records.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Sections 49.3-49.4, Equations 49.10-49.12: narrow-width factorization, relative partial decay rates and rest-frame decay phase space",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 31 and 34, Section 1.5.1, Equations 1.37 and 1.43-1.44; page 172, Section 7.2.1: inclusive total/partial widths and branching fractions",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Gamma values here have energy units; the corresponding decay rate is Gamma/hbar in inverse time. This must not silently redefine the inverse-time channel rate in the existing partial-lifetime convention. Branching fractions are dimensionless and refer to the same inclusive channel partition and total-width convention.",
+        "Inclusive final states must specify their radiation and correction prescription and avoid double counting. A complete mutually exclusive set sums to the adopted total width; a selected visible sample need not be complete. Unseen channels, lepton universality and invisible-width subtraction are additional assumptions or inferences, not consequences of B_f=Gamma_f/Gamma_tot.",
+        "The LEP Z account explicitly includes final-state QED/QCD and nonfactorisable terms in its partial widths. This supplied inclusive convention does not identify arbitrary complex-pole residues with nonnegative additive decay probabilities for every broad or coupled-channel resonance. Selected counts and detector line spread are not partial or total widths.",
+        "These definitions do not reconstruct the source partial widths, total width, branching fractions, correlations or likelihood. Production-times-branching factorization requires its stated narrow-width approximation and selection treatment."
+      ]
+    },
+    {
+      "id": "D-phys-resonance-lifetime-convention",
+      "kind": "review-finding",
+      "statement": "Define the energy-plane resonance pole by sqrt(s_R)=M_E-i*Gamma_E/2 with positive M_E and Gamma_E. In the isolated-resonance exponential approximation, P(t_proper)=exp(-Gamma_E*t_proper/hbar) and tau_proper=hbar/Gamma_E. For fixed Lorentz factor gamma, the corresponding laboratory survival is exp(-Gamma_E*t_lab/(gamma*hbar)). This convention separates an inferred decay timescale from the reported line-shape parametrization.",
+      "scope": "Formal definitions for the declared weak-sector model and unstable-resonance interpretation; experimental observations and fitted parameters remain separate records.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-resonances",
+          "locator": "Page 10, opening of Section 50.2, Equation 50.20 and the following two paragraphs: energy-plane pole mass/width, threshold-qualified lifetime relation and partial-width caution",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        },
+        {
+          "sourceId": "pdg2025-resonances",
+          "locator": "Page 1, Section 50.1: isolated narrow-resonance interpretation and limits from thresholds, backgrounds and broad resonances",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and approximation boundary; no measurement or full amplitude is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The exponential rest-frame approximation applies to an isolated resonance with relevant thresholds well below it; it is not an exact survival law at every time or for broad/threshold-dominated states. A width-derived timescale is not a directly timed W/Z decay or an independent experiment.",
+        "The energy-plane width Gamma_E=-2*Im(sqrt(s_R)) is distinct from a constant squared-mass-pole parameter defined by s_R=Mbar^2-i*Mbar*Gammabar; identifying them uses a narrow-width approximation. A running-width line-shape parameter is another convention requiring an explicit conversion. No numerical lifetime, pole conversion or width extraction is performed here.",
+        "Gamma values here have energy units; the corresponding decay rate is Gamma/hbar in inverse time. This must not silently redefine the inverse-time channel rate in the existing partial-lifetime convention. Branching fractions are dimensionless and refer to the same inclusive channel partition and total-width convention.",
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+      ]
+    },
+    {
+      "id": "D-phys-z-line-shape-conventions",
+      "kind": "review-finding",
+      "statement": "In the report's c=hbar=1 convention, the Z propagator term has denominator s-mZ^2+i*s*GammaZ/mZ. The equivalent constant-width form uses s-mbarZ^2+i*mbarZ*GammabarZ, with mbarZ=mZ/sqrt(1+(GammaZ/mZ)^2) and GammabarZ=GammaZ/sqrt(1+(GammaZ/mZ)^2), together with the stated rescaling of Z exchange and gamma-Z interference. The observed cross-section also includes photon exchange/interference, QED radiator convolution and experimental response; it is not the bare denominator alone.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 39-41 and 49-60, Sections 1.5.4 and 2.2.2-2.2.5: measured acceptances, luminosity, selection, energy calibration and beam spread",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The reported mass and total width belong to the s-dependent Breit-Wigner convention. Detector/beam smearing and QED radiation are separate response effects. Neither a plotted peak width nor this parameter alone is a directly timed lifetime; spin-one and vector/axial couplings are framework assumptions of the parametrization.",
+        "Pseudo-observables retain QED treatment, fixed SM hadronic gamma-Z interference and small SM-remnant assumptions. This qualified parametrization is not theory-free extraction or a unique scalar-vacuum test."
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-acquisition-context",
+      "kind": "method",
+      "statement": "Use the ALEPH, DELPHI, L3 and OPAL LEP-I electron-positron data accumulated mainly in 1990-1995 around the Z resonance. Peak and off-peak energy scans supply hadronic and charged-lepton samples; 1993 and 1995 use precision three-point scans. Reconstruct selected final states and the channel-specific angular observables with the declared detector acceptances.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 14, 16 and 45-48, Sections 1.1 and 2.1-2.2.1: LEP-I acquisition, energy scans and selected final states",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 49-54, Sections 2.2.2-2.2.4 and Figure 2.3: corrected cross-sections and asymmetries versus energy, plotted data and dependent fitted bands",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This LEP-I combination uses the four LEP experiments; the separate SLD polarized sample, LEP-II W data and historical UA1 candidates are not additional observations in this fit.",
+        "The report supplies the original combination and describes adopted detector, energy-calibration, luminosity and radiative-correction inputs. Their underlying data and programs are not replayed here; no new acquisition or fit reproduction is claimed."
+      ],
+      "contextIds": [
+        "lep1-z-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-response-context",
+      "kind": "method",
+      "statement": "Correct selected event rates for efficiency and backgrounds, normalize by small-angle Bhabha luminosity and extrapolate to declared idealized acceptances. Adopt the beam-energy model, its spread and correlations, t-channel electron contributions and QED radiation. TOPAZ0 4.4 and ZFITTER 6.23 relate cross-sections and asymmetries to each experiment's nine pseudo-observables; preserve the combination-specific calibration and program updates.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 39-41 and 49-60, Sections 1.5.4 and 2.2.2-2.2.5: measured acceptances, luminosity, selection, energy calibration and beam spread",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 60-62, Section 2.3 and Table 2.4: four experiment-specific nine-parameter fits, correlation coefficients and combination-specific updates",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The report supplies the original combination and describes adopted detector, energy-calibration, luminosity and radiative-correction inputs. Their underlying data and programs are not replayed here; no new acquisition or fit reproduction is claimed.",
+        "Pseudo-observables retain QED treatment, fixed SM hadronic gamma-Z interference and small SM-remnant assumptions. This qualified parametrization is not theory-free extraction or a unique scalar-vacuum test.",
+        "Table 2.4 includes common energy and fit-program conventions, including the ALEPH update to ZFITTER 6.23. The fitted summaries are not raw measurements or independent replications of their combined result."
+      ],
+      "contextIds": [
+        "lep1-z-response"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-combination-context",
+      "kind": "method",
+      "statement": "Combine four sets of nine pseudo-observables by the reported chi-square minimization using the 36-by-36 covariance. Preserve common beam-energy, luminosity, t-channel and QED/parametrization contributions, including the common theory term also added to diagonal blocks. Use the no-lepton-universality result and propagate its dependent parameter transformations to inclusive widths and fractions.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The four nine-parameter fits share common errors. Tables 2.6, 2.7 and 2.9 encode signed square roots of covariance elements, not correlations. Published marginal errors cannot replace the full common covariance with independent diagonal errors.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch.",
+        "Table 2.13 excludes the stated parametric Higgs-mass dependence of mZ. No modern parameter update, direct SM global fit, or recombination of rounded inputs is performed."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "C-phys-lep1-z-scan-responses",
+      "kind": "review-finding",
+      "statement": "The report describes roughly 200 cross-section and forward-backward-asymmetry measurements per experiment. Corrected channel rates vary across the scan energy, and Figure 2.3 displays selected hadronic cross-sections around the three principal energies. These detector- and luminosity-corrected observables precede the nine fitted pseudo-observables; the plotted combination bands are fitted summaries of the same data.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 14, 16 and 45-48, Sections 1.1 and 2.1-2.2.1: LEP-I acquisition, energy scans and selected final states",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 49-54, Sections 2.2.2-2.2.4 and Figure 2.3: corrected cross-sections and asymmetries versus energy, plotted data and dependent fitted bands",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Cross-sections already use selection efficiency, backgrounds, acceptance and luminosity. Figure 2.3 data bars are statistical; its bands reuse the combined fit and common theory errors. No point digitization, raw-event table or complete scan-input replay is supplied.",
+        "This LEP-I combination uses the four LEP experiments; the separate SLD polarized sample, LEP-II W data and historical UA1 candidates are not additional observations in this fit."
+      ],
+      "contextIds": [
+        "lep1-z-acquisition"
+      ]
+    },
+    {
+      "id": "C-phys-lep1-z-experiment-parameters",
+      "kind": "review-finding",
+      "statement": "Table 2.4 reports four correlated nine-parameter fits: mZ, GammaZ, sigmaHad0, Re0, Rmu0, Rtau0 and three pole forward-backward asymmetries. The fitted total widths are ALEPH 2.4959 +/- 0.0043, DELPHI 2.4876 +/- 0.0041, L3 2.5025 +/- 0.0041 and OPAL 2.4948 +/- 0.0041 GeV. Their within-experiment matrices and shared uncertainties remain inputs to the combined result.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 60-62, Section 2.3 and Table 2.4: four experiment-specific nine-parameter fits, correlation coefficients and combination-specific updates",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Table 2.4 includes common energy and fit-program conventions, including the ALEPH update to ZFITTER 6.23. The fitted summaries are not raw measurements or independent replications of their combined result.",
+        "The four nine-parameter fits share common errors. Tables 2.6, 2.7 and 2.9 encode signed square roots of covariance elements, not correlations. Published marginal errors cannot replace the full common covariance with independent diagonal errors."
+      ],
+      "contextIds": [
+        "lep1-z-response"
+      ]
+    },
+    {
+      "id": "C-phys-lep1-z-line-shape",
+      "kind": "review-finding",
+      "statement": "The no-lepton-universality branch of Table 2.13 reports mZ=91.1876 +/- 0.0021 GeV, GammaZ=2.4952 +/- 0.0023 GeV and sigmaHad0=41.541 +/- 0.037 nb. The width ratios are Re0=20.804 +/- 0.050, Rmu0=20.785 +/- 0.033 and Rtau0=20.764 +/- 0.045. These are correlated pseudo-observables in the declared running-width convention, including the three asymmetry parameters in the joint fit.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The four nine-parameter fits share common errors. Tables 2.6, 2.7 and 2.9 encode signed square roots of covariance elements, not correlations. Published marginal errors cannot replace the full common covariance with independent diagonal errors.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch.",
+        "Table 2.13 excludes the stated parametric Higgs-mass dependence of mZ. No modern parameter update, direct SM global fit, or recombination of rounded inputs is performed.",
+        "The reported mass and total width belong to the s-dependent Breit-Wigner convention. Detector/beam smearing and QED radiation are separate response effects. Neither a plotted peak width nor this parameter alone is a directly timed lifetime; spin-one and vector/axial couplings are framework assumptions of the parametrization."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "C-phys-lep1-z-partial-widths",
+      "kind": "review-finding",
+      "statement": "In Table 7.1 without lepton universality, the reported inclusive partial widths are GammaHad=1745.8 +/- 2.7, Gammaee=83.92 +/- 0.12, Gammamumu=83.99 +/- 0.18 and Gammatautau=84.08 +/- 0.22 MeV. GammaInvisible=497.4 +/- 2.5 MeV is the total-width residual after those visible components. These are parameter transformations of the same LEP-I fit, retaining their reported correlations.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These widths and fractions transform the same fitted parameters and are correlated. The invisible component is a residual, not an independently counted invisible sample. Heavy-flavor subdivisions, neutrino counting and new invisible-channel limits are not admitted.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "C-phys-lep1-z-branching-fractions",
+      "kind": "review-finding",
+      "statement": "In Table 7.2 without lepton universality, the reported percentages are Bhad=69.967 +/- 0.093, Bee=3.3632 +/- 0.0042, Bmumu=3.3662 +/- 0.0066, Btautau=3.3696 +/- 0.0083 and Binvisible=19.934 +/- 0.098. Each visible fraction is its inclusive partial width divided by the common total width; the invisible fraction enforces the inclusive sum to one. These fractions and errors are dependent on the same fit and its correlations.",
+      "scope": "The declared LEP-I Z line-shape and selected inclusive decay parameters of the 2006 author report.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality",
+          "role": "supports",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These widths and fractions transform the same fitted parameters and are correlated. The invisible component is a residual, not an independently counted invisible sample. Heavy-flavor subdivisions, neutrino counting and new invisible-channel limits are not admitted.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-scan-responses",
+      "kind": "method",
+      "statement": "Select and correct the declared scan sample using the detector, background, luminosity and beam response; distinguish plotted observations from bands fitted to them.",
+      "scope": "The source-reported response, extraction or parameter-transformation stage.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 14, 16 and 45-48, Sections 1.1 and 2.1-2.2.1: LEP-I acquisition, energy scans and selected final states",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 49-54, Sections 2.2.2-2.2.4 and Figure 2.3: corrected cross-sections and asymmetries versus energy, plotted data and dependent fitted bands",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Cross-sections already use selection efficiency, backgrounds, acceptance and luminosity. Figure 2.3 data bars are statistical; its bands reuse the combined fit and common theory errors. No point digitization, raw-event table or complete scan-input replay is supplied.",
+        "This LEP-I combination uses the four LEP experiments; the separate SLD polarized sample, LEP-II W data and historical UA1 candidates are not additional observations in this fit."
+      ],
+      "contextIds": [
+        "lep1-z-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-experiment-parameters",
+      "kind": "method",
+      "statement": "Fit the corrected scan responses with the stated radiative/acceptance model and line-shape convention; retain the reported nine-parameter covariance and program updates.",
+      "scope": "The source-reported response, extraction or parameter-transformation stage.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 60-62, Section 2.3 and Table 2.4: four experiment-specific nine-parameter fits, correlation coefficients and combination-specific updates",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Table 2.4 includes common energy and fit-program conventions, including the ALEPH update to ZFITTER 6.23. The fitted summaries are not raw measurements or independent replications of their combined result.",
+        "The four nine-parameter fits share common errors. Tables 2.6, 2.7 and 2.9 encode signed square roots of covariance elements, not correlations. Published marginal errors cannot replace the full common covariance with independent diagonal errors."
+      ],
+      "contextIds": [
+        "lep1-z-response"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-line-shape",
+      "kind": "method",
+      "statement": "Combine the four fitted vectors with the declared full common covariance and running-width convention; neither independent scalar averaging nor a bare detector peak reproduces this result.",
+      "scope": "The source-reported response, extraction or parameter-transformation stage.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The four nine-parameter fits share common errors. Tables 2.6, 2.7 and 2.9 encode signed square roots of covariance elements, not correlations. Published marginal errors cannot replace the full common covariance with independent diagonal errors.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch.",
+        "Table 2.13 excludes the stated parametric Higgs-mass dependence of mZ. No modern parameter update, direct SM global fit, or recombination of rounded inputs is performed.",
+        "The reported mass and total width belong to the s-dependent Breit-Wigner convention. Detector/beam smearing and QED radiation are separate response effects. Neither a plotted peak width nor this parameter alone is a directly timed lifetime; spin-one and vector/axial couplings are framework assumptions of the parametrization."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-partial-widths",
+      "kind": "method",
+      "statement": "Transform the correlated line-shape parameters using the inclusive-width convention and reported analysis; keep the invisible component as a dependent residual.",
+      "scope": "The source-reported response, extraction or parameter-transformation stage.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These widths and fractions transform the same fitted parameters and are correlated. The invisible component is a residual, not an independently counted invisible sample. Heavy-flavor subdivisions, neutrino counting and new invisible-channel limits are not admitted.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "M-phys-lep1-z-branching-fractions",
+      "kind": "method",
+      "statement": "Divide the inclusive components by the shared total width within the same correlated fit; constrain the invisible residual and do not pool fit branches.",
+      "scope": "The source-reported response, extraction or parameter-transformation stage.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality",
+          "role": "method",
+          "note": "Supports the declared published LEP-I response or inference; no local likelihood replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These widths and fractions transform the same fitted parameters and are correlated. The invisible component is a residual, not an independently counted invisible sample. Heavy-flavor subdivisions, neutrino counting and new invisible-channel limits are not admitted.",
+        "Use the no-lepton-universality branch throughout. The constrained universal branch uses a massless reference lepton and a tau-mass correction; its entries must not be pooled with this branch."
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-width-acquisition-context",
+      "kind": "method",
+      "statement": "Use the four experiments direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ],
+      "contextIds": [
+        "lep2013-w-width-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-width-response-context",
+      "kind": "method",
+      "statement": "Adopt calibrated jet/lepton response, beam-energy constraints, radiative four-fermion signal and backgrounds, and hadronisation and final-state-interaction models. Kinematic mass estimators include response and unobserved-radiation corrections; the width analysis retains standard jet reconstruction.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 7.3.5, author pages 134-138, Tables 7.3-7.4: detector, beam energy, hadronisation, radiation and final-state-interaction uncertainties",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The width analysis does not use the modified jet reconstruction that suppresses final-state interactions in the mass analysis. Shared hadronisation, radiation, calibration and final-state-interaction uncertainties remain inputs.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ],
+      "contextIds": [
+        "lep2013-w-width-response"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-width-inference-context",
+      "kind": "method",
+      "statement": "Fit mass estimators by experiment-specific reweighting or response convolution, varying m_W and Gamma_W independently for width extraction. Combine experiment, channel and period results with BLUE and shared systematics, using a relativistic Breit-Wigner propagator with s-dependent width.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The quoted energy width uses the source s-dependent Breit-Wigner convention. It is not detector peak spread, a directly timed lifetime or automatically a constant-width pole parameter.",
+        "For width extraction both mass and width float; the separate mass-only fit imposes the Standard Model width-mass relation. Four rounded experiment summaries in Table 7.5 do not reconstruct the full period/channel combination."
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-branching-acquisition-context",
+      "kind": "method",
+      "statement": "Use the four experiments WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 5.1-5.2.1, author pages 86-89, Table 5.1: WW signal convention, 1997-2000 exposures, channel selections and cross-section response",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-branching-response-context",
+      "kind": "method",
+      "statement": "Relate selected channel yields to cross sections through luminosity, acceptance, signal efficiency and expected backgrounds. Retain the source CC03 diagrammatic WW signal convention, explicitly not gauge invariant by itself, and the shared detector and theory uncertainty categories.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 5.1-5.2.1, author pages 86-89, Table 5.1: WW signal convention, 1997-2000 exposures, channel selections and cross-section response",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
+        "Page 88 prints illustrative topology fractions 0.456, 0.349 and 0.105, summing to 0.910. They are not silently corrected or used as normalized input; this does not establish an error in the experimental fit.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-response"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-branching-inference-context",
+      "kind": "method",
+      "statement": "Combine experiment branching estimates with the full 12 by 12 covariance. Keep the fit without lepton universality separate from the fit with a common leptonic fraction and the sum-to-unity constraint; lepton-mass effects are neglected in the source treatment.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
+        "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "C-phys-lep2013-w-width",
+      "kind": "review-finding",
+      "statement": "The LEP combination reports Gamma_W = 2.195 +/- 0.063 statistical +/- 0.055 systematic GeV, with total uncertainty 0.083 GeV, in its declared s-dependent Breit-Wigner convention.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention",
+          "role": "supports",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs",
+          "role": "supports",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The quoted energy width uses the source s-dependent Breit-Wigner convention. It is not detector peak spread, a directly timed lifetime or automatically a constant-width pole parameter.",
+        "For width extraction both mass and width float; the separate mass-only fit imposes the Standard Model width-mass relation. Four rounded experiment summaries in Table 7.5 do not reconstruct the full period/channel combination.",
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here."
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-width",
+      "kind": "method",
+      "statement": "Interpret the published combined energy width with its response, freely fitted mass and width, and correlated combination inputs.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The quoted energy width uses the source s-dependent Breit-Wigner convention. It is not detector peak spread, a directly timed lifetime or automatically a constant-width pole parameter.",
+        "For width extraction both mass and width float; the separate mass-only fit imposes the Standard Model width-mass relation. Four rounded experiment summaries in Table 7.5 do not reconstruct the full period/channel combination.",
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here."
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "C-phys-lep2013-w-branching-nonuniversal",
+      "kind": "review-finding",
+      "statement": "Without lepton universality, LEP reports B_e = 10.71 +/- 0.16%, B_mu = 10.63 +/- 0.15% and B_tau = 11.38 +/- 0.21%, with correlated total uncertainties.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality",
+          "role": "supports",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
+        "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error.",
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-branching-nonuniversal",
+      "kind": "method",
+      "statement": "Interpret the three reported leptonic fractions from the covariance-aware fit without importing the separately constrained hadronic fraction.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
+        "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error.",
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "C-phys-lep2013-w-branching-universal",
+      "kind": "review-finding",
+      "statement": "Assuming lepton universality and neglecting lepton-mass effects, LEP reports B_had = 67.41 +/- 0.18 statistical +/- 0.20 systematic percent and each B_l = 10.86 +/- 0.06 statistical +/- 0.07 systematic percent, with their sum constrained to one.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality",
+          "role": "supports",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "M-phys-lep2013-w-branching-universal",
+      "kind": "method",
+      "statement": "Interpret the common-lepton and hadronic fractions under the stated universality and normalization constraints on the same experimental inputs.",
+      "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality",
+          "role": "method",
+          "note": "Supports this reported stage; no acquisition or fit replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
     }
   ],
   "entities": [
@@ -84616,6 +85529,536 @@
         "Quark mass parameters require their scale and renormalization convention beyond tree level. This formula is not an assertion that the mass of a composite hadron equals a sum of Higgs-generated constituent masses; QCD dynamics and separately reviewed hadron calculations retain their own definitions.",
         "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality, universal carrier minima, parent weights, SOMA phase order or a general stability/formation law for later composite matter."
       ]
+    },
+    {
+      "id": "phys:weak-gauge-currents",
+      "name": "Weak vector fields and fermion currents",
+      "kind": "definition",
+      "description": "In the declared broken-phase Standard Model, W-plus and W-minus are spin-one fields of electric charge +e and -e; Z is neutral and spin one. With J_W^mu=sum_l nu-bar_l*gamma^mu*(1-gamma5)*l+sum_ij u-bar_i*gamma^mu*(1-gamma5)*V_ij*d_j, L_CC=-g/(2*sqrt(2))*(W-plus_mu*J_W^mu+h.c.). The tree neutral term is L_NC=-g/(2*cos(theta_W))*Z_mu*sum_f f-bar*gamma^mu*(gV_f-gA_f*gamma5)*f, where gV_f=T3_f-2*Q_f*sin(theta_W)^2 and gA_f=T3_f; T3_f is the isospin of the left-handed partner. Thus the stated quark charged current contains CKM mixing, while the tree Z current is flavor diagonal in this minimal mass basis.",
+      "claimIds": [
+        "D-phys-weak-gauge-currents"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3, Equations 10.2-10.3 and 10.6-10.7: weak vector-field charges/polarizations, charged and neutral currents and the stated quark mixing basis"
+        }
+      ],
+      "openObligations": [
+        "Field assignments, spin-one and charge labels, chiral representations and the CKM matrix are model inputs. They are not independent spin or coupling measurements, a generated chirality or a derivation of the mass hierarchy. Neutrino mixing or masses require their separately specified extension; the minimal charged-current convention here does not supply that mechanism.",
+        "Massive vector fields have three physical polarizations in the stated broken-phase description. The absence of a tree-level flavor-changing Z vertex does not exclude loop-induced flavor-changing neutral processes or nonminimal interactions.",
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+      ]
+    },
+    {
+      "id": "phys:low-energy-weak-exchange",
+      "name": "Low-energy massive weak exchange",
+      "kind": "definition",
+      "description": "For the leading scalar denominator of a massive weak propagator, 1/(q^2-M_V^2)=-M_V^(-2)*[1+O(q^2/M_V^2)] when |q^2| is much smaller than M_V^2. With the declared charged-current normalization this yields the tree relation G_F/sqrt(2)=g^2/(8*M_W^2)=1/(2*v^2) for a local four-fermion approximation. Charged and neutral weak amplitudes retain their different currents; the contact description is distinct from a resonant production and decay process.",
+      "claimIds": [
+        "D-phys-low-energy-weak-exchange"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries"
+        }
+      ],
+      "openObligations": [
+        "Use the leading low-energy tree approximation with light external fermions and |q^2| much smaller than M_W^2 or M_Z^2, away from the resonance. The scalar denominator alone omits vector numerators, external currents, longitudinal/Goldstone terms and radiative corrections needed for a complete gauge-consistent amplitude. It is not a production cross section, an on-shell W/Z event or an instantaneous action rule.",
+        "Beta decay and charged-current flavor change use the charged current; neutral-current neutrino scattering uses the neutral current. Actual hadronic/nuclear matrix elements, flavor parameters, kinematic cuts and detector response are separate inputs. Short-range denotes this massive-exchange/low-energy description, not a universal sharp distance cutoff or a population of virtual mediator particles.",
+        "The Fermi relation is a tree-level parameter identity, not a fresh measurement of G_F or a precision electroweak input-scheme conversion. The formal expansion is not an executable scientific check.",
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+      ]
+    },
+    {
+      "id": "phys:inclusive-decay-width-branching",
+      "name": "Inclusive decay widths and branching fractions",
+      "kind": "definition",
+      "description": "In the adopted inclusive weak-resonance decay convention, define Gamma_tot=sum_f Gamma_f over a complete, mutually exclusive channel partition and B_f=Gamma_f/Gamma_tot. The Gamma_f and Gamma_tot use the same energy-width and radiation convention; B_f is dimensionless. The LEP Z convention includes final-state QED/QCD corrections and nonfactorisable contributions so that its specified partial widths sum to its total width.",
+      "claimIds": [
+        "D-phys-inclusive-decay-width-branching"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Sections 49.3-49.4, Equations 49.10-49.12: narrow-width factorization, relative partial decay rates and rest-frame decay phase space"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 31 and 34, Section 1.5.1, Equations 1.37 and 1.43-1.44; page 172, Section 7.2.1: inclusive total/partial widths and branching fractions"
+        }
+      ],
+      "openObligations": [
+        "Gamma values here have energy units; the corresponding decay rate is Gamma/hbar in inverse time. This must not silently redefine the inverse-time channel rate in the existing partial-lifetime convention. Branching fractions are dimensionless and refer to the same inclusive channel partition and total-width convention.",
+        "Inclusive final states must specify their radiation and correction prescription and avoid double counting. A complete mutually exclusive set sums to the adopted total width; a selected visible sample need not be complete. Unseen channels, lepton universality and invisible-width subtraction are additional assumptions or inferences, not consequences of B_f=Gamma_f/Gamma_tot.",
+        "The LEP Z account explicitly includes final-state QED/QCD and nonfactorisable terms in its partial widths. This supplied inclusive convention does not identify arbitrary complex-pole residues with nonnegative additive decay probabilities for every broad or coupled-channel resonance. Selected counts and detector line spread are not partial or total widths.",
+        "These definitions do not reconstruct the source partial widths, total width, branching fractions, correlations or likelihood. Production-times-branching factorization requires its stated narrow-width approximation and selection treatment."
+      ]
+    },
+    {
+      "id": "phys:resonance-lifetime-convention",
+      "name": "Energy-pole width and exponential proper lifetime",
+      "kind": "definition",
+      "description": "Define the energy-plane resonance pole by sqrt(s_R)=M_E-i*Gamma_E/2 with positive M_E and Gamma_E. In the isolated-resonance exponential approximation, P(t_proper)=exp(-Gamma_E*t_proper/hbar) and tau_proper=hbar/Gamma_E. For fixed Lorentz factor gamma, the corresponding laboratory survival is exp(-Gamma_E*t_lab/(gamma*hbar)). This convention separates an inferred decay timescale from the reported line-shape parametrization.",
+      "claimIds": [
+        "D-phys-resonance-lifetime-convention"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-resonances",
+          "locator": "Page 10, opening of Section 50.2, Equation 50.20 and the following two paragraphs: energy-plane pole mass/width, threshold-qualified lifetime relation and partial-width caution"
+        },
+        {
+          "sourceId": "pdg2025-resonances",
+          "locator": "Page 1, Section 50.1: isolated narrow-resonance interpretation and limits from thresholds, backgrounds and broad resonances"
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries"
+        }
+      ],
+      "openObligations": [
+        "The exponential rest-frame approximation applies to an isolated resonance with relevant thresholds well below it; it is not an exact survival law at every time or for broad/threshold-dominated states. A width-derived timescale is not a directly timed W/Z decay or an independent experiment.",
+        "The energy-plane width Gamma_E=-2*Im(sqrt(s_R)) is distinct from a constant squared-mass-pole parameter defined by s_R=Mbar^2-i*Mbar*Gammabar; identifying them uses a narrow-width approximation. A running-width line-shape parameter is another convention requiring an explicit conversion. No numerical lifetime, pole conversion or width extraction is performed here.",
+        "Gamma values here have energy units; the corresponding decay rate is Gamma/hbar in inverse time. This must not silently redefine the inverse-time channel rate in the existing partial-lifetime convention. Branching fractions are dimensionless and refer to the same inclusive channel partition and total-width convention.",
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+      ]
+    },
+    {
+      "id": "phys:z-line-shape-conventions",
+      "name": "Declared Z line-shape conventions",
+      "kind": "definition",
+      "description": "In the report's c=hbar=1 convention, the Z propagator term has denominator s-mZ^2+i*s*GammaZ/mZ. The equivalent constant-width form uses s-mbarZ^2+i*mbarZ*GammabarZ, with mbarZ=mZ/sqrt(1+(GammaZ/mZ)^2) and GammabarZ=GammaZ/sqrt(1+(GammaZ/mZ)^2), together with the stated rescaling of Z exchange and gamma-Z interference. The observed cross-section also includes photon exchange/interference, QED radiator convolution and experimental response; it is not the bare denominator alone.",
+      "claimIds": [
+        "D-phys-z-line-shape-conventions"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 39-41 and 49-60, Sections 1.5.4 and 2.2.2-2.2.5: measured acceptances, luminosity, selection, energy calibration and beam spread"
+        }
+      ],
+      "openObligations": [
+        "The reported mass and total width belong to the s-dependent Breit-Wigner convention. Detector/beam smearing and QED radiation are separate response effects. Neither a plotted peak width nor this parameter alone is a directly timed lifetime; spin-one and vector/axial couplings are framework assumptions of the parametrization."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-acquisition-context",
+      "name": "LEP-I Z scan acquisition",
+      "kind": "context",
+      "description": "Use the ALEPH, DELPHI, L3 and OPAL LEP-I electron-positron data accumulated mainly in 1990-1995 around the Z resonance. Peak and off-peak energy scans supply hadronic and charged-lepton samples; 1993 and 1995 use precision three-point scans. Reconstruct selected final states and the channel-specific angular observables with the declared detector acceptances.",
+      "claimIds": [
+        "M-phys-lep1-z-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 14, 16 and 45-48, Sections 1.1 and 2.1-2.2.1: LEP-I acquisition, energy scans and selected final states"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 49-54, Sections 2.2.2-2.2.4 and Figure 2.3: corrected cross-sections and asymmetries versus energy, plotted data and dependent fitted bands"
+        }
+      ],
+      "openObligations": [
+        "The report supplies the original combination and describes adopted detector, energy-calibration, luminosity and radiative-correction inputs. Their underlying data and programs are not replayed here; no new acquisition or fit reproduction is claimed."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-response-context",
+      "name": "LEP-I response and pseudo-observable extraction",
+      "kind": "context",
+      "description": "Correct selected event rates for efficiency and backgrounds, normalize by small-angle Bhabha luminosity and extrapolate to declared idealized acceptances. Adopt the beam-energy model, its spread and correlations, t-channel electron contributions and QED radiation. TOPAZ0 4.4 and ZFITTER 6.23 relate cross-sections and asymmetries to each experiment's nine pseudo-observables; preserve the combination-specific calibration and program updates.",
+      "claimIds": [
+        "M-phys-lep1-z-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 39-41 and 49-60, Sections 1.5.4 and 2.2.2-2.2.5: measured acceptances, luminosity, selection, energy calibration and beam spread"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 60-62, Section 2.3 and Table 2.4: four experiment-specific nine-parameter fits, correlation coefficients and combination-specific updates"
+        }
+      ],
+      "openObligations": [
+        "The report supplies the original combination and describes adopted detector, energy-calibration, luminosity and radiative-correction inputs. Their underlying data and programs are not replayed here; no new acquisition or fit reproduction is claimed."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-combination-context",
+      "name": "Correlated LEP-I Z combination",
+      "kind": "context",
+      "description": "Combine four sets of nine pseudo-observables by the reported chi-square minimization using the 36-by-36 covariance. Preserve common beam-energy, luminosity, t-channel and QED/parametrization contributions, including the common theory term also added to diagonal blocks. Use the no-lepton-universality result and propagate its dependent parameter transformations to inclusive widths and fractions.",
+      "claimIds": [
+        "M-phys-lep1-z-combination-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality"
+        }
+      ],
+      "openObligations": [
+        "The report supplies the original combination and describes adopted detector, energy-calibration, luminosity and radiative-correction inputs. Their underlying data and programs are not replayed here; no new acquisition or fit reproduction is claimed."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-scan-responses",
+      "name": "Selected LEP-I scan responses",
+      "kind": "scoped-process",
+      "description": "The report describes roughly 200 cross-section and forward-backward-asymmetry measurements per experiment. Corrected channel rates vary across the scan energy, and Figure 2.3 displays selected hadronic cross-sections around the three principal energies. These detector- and luminosity-corrected observables precede the nine fitted pseudo-observables; the plotted combination bands are fitted summaries of the same data.",
+      "claimIds": [
+        "C-phys-lep1-z-scan-responses"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 14, 16 and 45-48, Sections 1.1 and 2.1-2.2.1: LEP-I acquisition, energy scans and selected final states"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 49-54, Sections 2.2.2-2.2.4 and Figure 2.3: corrected cross-sections and asymmetries versus energy, plotted data and dependent fitted bands"
+        }
+      ],
+      "openObligations": [
+        "Cross-sections already use selection efficiency, backgrounds, acceptance and luminosity. Figure 2.3 data bars are statistical; its bands reuse the combined fit and common theory errors. No point digitization, raw-event table or complete scan-input replay is supplied."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-experiment-parameters",
+      "name": "Individual LEP-I Z parameter fits",
+      "kind": "scoped-process",
+      "description": "Table 2.4 reports four correlated nine-parameter fits: mZ, GammaZ, sigmaHad0, Re0, Rmu0, Rtau0 and three pole forward-backward asymmetries. The fitted total widths are ALEPH 2.4959 +/- 0.0043, DELPHI 2.4876 +/- 0.0041, L3 2.5025 +/- 0.0041 and OPAL 2.4948 +/- 0.0041 GeV. Their within-experiment matrices and shared uncertainties remain inputs to the combined result.",
+      "claimIds": [
+        "C-phys-lep1-z-experiment-parameters"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 60-62, Section 2.3 and Table 2.4: four experiment-specific nine-parameter fits, correlation coefficients and combination-specific updates"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch"
+        }
+      ],
+      "openObligations": [
+        "Table 2.4 includes common energy and fit-program conventions, including the ALEPH update to ZFITTER 6.23. The fitted summaries are not raw measurements or independent replications of their combined result."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-line-shape",
+      "name": "Combined LEP-I Z line shape",
+      "kind": "scoped-process",
+      "description": "The no-lepton-universality branch of Table 2.13 reports mZ=91.1876 +/- 0.0021 GeV, GammaZ=2.4952 +/- 0.0023 GeV and sigmaHad0=41.541 +/- 0.037 nb. The width ratios are Re0=20.804 +/- 0.050, Rmu0=20.785 +/- 0.033 and Rtau0=20.764 +/- 0.045. These are correlated pseudo-observables in the declared running-width convention, including the three asymmetry parameters in the joint fit.",
+      "claimIds": [
+        "C-phys-lep1-z-line-shape"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 64-75, Sections 2.4-2.6, Equation 2.2 and Tables 2.9-2.10 and 2.13: common covariance, fitted combination, hadronic interference assumption and nonuniversality branch"
+        }
+      ],
+      "openObligations": [
+        "The four nine-parameter fits share common errors. Tables 2.6, 2.7 and 2.9 encode signed square roots of covariance elements, not correlations. Published marginal errors cannot replace the full common covariance with independent diagonal errors."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-partial-widths",
+      "name": "Derived inclusive Z partial widths",
+      "kind": "scoped-process",
+      "description": "In Table 7.1 without lepton universality, the reported inclusive partial widths are GammaHad=1745.8 +/- 2.7, Gammaee=83.92 +/- 0.12, Gammamumu=83.99 +/- 0.18 and Gammatautau=84.08 +/- 0.22 MeV. GammaInvisible=497.4 +/- 2.5 MeV is the total-width residual after those visible components. These are parameter transformations of the same LEP-I fit, retaining their reported correlations.",
+      "claimIds": [
+        "C-phys-lep1-z-partial-widths"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 30-32 and 34-35, Section 1.5, Equations 1.34-1.47: running-width resonance convention, QED convolution and inclusive partial-width parameters"
+        },
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality"
+        }
+      ],
+      "openObligations": [
+        "These widths and fractions transform the same fitted parameters and are correlated. The invisible component is a residual, not an independently counted invisible sample. Heavy-flavor subdivisions, neutrino counting and new invisible-channel limits are not admitted."
+      ]
+    },
+    {
+      "id": "phys:lep1-z-branching-fractions",
+      "name": "Derived inclusive Z branching fractions",
+      "kind": "scoped-process",
+      "description": "In Table 7.2 without lepton universality, the reported percentages are Bhad=69.967 +/- 0.093, Bee=3.3632 +/- 0.0042, Bmumu=3.3662 +/- 0.0066, Btautau=3.3696 +/- 0.0083 and Binvisible=19.934 +/- 0.098. Each visible fraction is its inclusive partial width divided by the common total width; the invisible fraction enforces the inclusive sum to one. These fractions and errors are dependent on the same fit and its correlations.",
+      "claimIds": [
+        "C-phys-lep1-z-branching-fractions"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2006-z-lineshape",
+          "locator": "Author v3 PDF pages 172-174, Section 7.2 and Tables 7.1-7.2: same-data derived inclusive partial widths and branching fractions, without lepton universality"
+        }
+      ],
+      "openObligations": [
+        "These widths and fractions transform the same fitted parameters and are correlated. The invisible component is a residual, not an independently counted invisible sample. Heavy-flavor subdivisions, neutrino counting and new invisible-channel limits are not admitted."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-width-acquisition-context",
+      "name": "LEP W width data preparation",
+      "kind": "context",
+      "description": "Use the four experiments direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
+      "claimIds": [
+        "M-phys-lep2013-w-width-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs"
+        }
+      ],
+      "openObligations": [
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-width-response-context",
+      "name": "LEP W width response and corrections",
+      "kind": "context",
+      "description": "Adopt calibrated jet/lepton response, beam-energy constraints, radiative four-fermion signal and backgrounds, and hadronisation and final-state-interaction models. Kinematic mass estimators include response and unobserved-radiation corrections; the width analysis retains standard jet reconstruction.",
+      "claimIds": [
+        "M-phys-lep2013-w-width-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs"
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 7.3.5, author pages 134-138, Tables 7.3-7.4: detector, beam energy, hadronisation, radiation and final-state-interaction uncertainties"
+        }
+      ],
+      "openObligations": [
+        "The width analysis does not use the modified jet reconstruction that suppresses final-state interactions in the mass analysis. Shared hadronisation, radiation, calibration and final-state-interaction uncertainties remain inputs.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-width-inference-context",
+      "name": "LEP W width likelihood and combination",
+      "kind": "context",
+      "description": "Fit mass estimators by experiment-specific reweighting or response convolution, varying m_W and Gamma_W independently for width extraction. Combine experiment, channel and period results with BLUE and shared systematics, using a relativistic Breit-Wigner propagator with s-dependent width.",
+      "claimIds": [
+        "M-phys-lep2013-w-width-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs"
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention"
+        }
+      ],
+      "openObligations": [
+        "The quoted energy width uses the source s-dependent Breit-Wigner convention. It is not detector peak spread, a directly timed lifetime or automatically a constant-width pole parameter.",
+        "For width extraction both mass and width float; the separate mass-only fit imposes the Standard Model width-mass relation. Four rounded experiment summaries in Table 7.5 do not reconstruct the full period/channel combination."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-branching-acquisition-context",
+      "name": "LEP W branching data preparation",
+      "kind": "context",
+      "description": "Use the four experiments WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 5.1-5.2.1, author pages 86-89, Table 5.1: WW signal convention, 1997-2000 exposures, channel selections and cross-section response"
+        }
+      ],
+      "openObligations": [
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-branching-response-context",
+      "name": "LEP W branching response and signal convention",
+      "kind": "context",
+      "description": "Relate selected channel yields to cross sections through luminosity, acceptance, signal efficiency and expected backgrounds. Retain the source CC03 diagrammatic WW signal convention, explicitly not gauge invariant by itself, and the shared detector and theory uncertainty categories.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 5.1-5.2.1, author pages 86-89, Table 5.1: WW signal convention, 1997-2000 exposures, channel selections and cross-section response"
+        }
+      ],
+      "openObligations": [
+        "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
+        "Page 88 prints illustrative topology fractions 0.456, 0.349 and 0.105, summing to 0.910. They are not silently corrected or used as normalized input; this does not establish an error in the experimental fit.",
+        "The collaboration report supplies the selected reconstruction and combination account. Individual detector papers, raw events, calibrations, generator implementations and complete likelihoods are not independently reproduced."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-branching-inference-context",
+      "name": "LEP W branching correlated fits",
+      "kind": "context",
+      "description": "Combine experiment branching estimates with the full 12 by 12 covariance. Keep the fit without lepton universality separate from the fit with a common leptonic fraction and the sum-to-unity constraint; lepton-mass effects are neglected in the source treatment.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality"
+        }
+      ],
+      "openObligations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
+        "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-width",
+      "name": "LEP combined W decay width",
+      "kind": "scoped-process",
+      "description": "The LEP combination reports Gamma_W = 2.195 +/- 0.063 statistical +/- 0.055 systematic GeV, with total uncertainty 0.083 GeV, in its declared s-dependent Breit-Wigner convention.",
+      "claimIds": [
+        "C-phys-lep2013-w-width"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention"
+        },
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Sections 7.3.1-7.3.4, author pages 129-133: decay reconstruction, kinematic fits, radiative response, running-width likelihood and 1996-2000 combination inputs"
+        }
+      ],
+      "openObligations": [
+        "The quoted energy width uses the source s-dependent Breit-Wigner convention. It is not detector peak spread, a directly timed lifetime or automatically a constant-width pole parameter.",
+        "For width extraction both mass and width float; the separate mass-only fit imposes the Standard Model width-mass relation. Four rounded experiment summaries in Table 7.5 do not reconstruct the full period/channel combination.",
+        "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-branching-nonuniversal",
+      "name": "LEP W leptonic branching without universality",
+      "kind": "scoped-process",
+      "description": "Without lepton universality, LEP reports B_e = 10.71 +/- 0.16%, B_mu = 10.63 +/- 0.15% and B_tau = 11.38 +/- 0.21%, with correlated total uncertainties.",
+      "claimIds": [
+        "C-phys-lep2013-w-branching-nonuniversal"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality"
+        }
+      ],
+      "openObligations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
+        "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error.",
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ]
+    },
+    {
+      "id": "phys:lep2013-w-branching-universal",
+      "name": "LEP W branching with lepton universality",
+      "kind": "scoped-process",
+      "description": "Assuming lepton universality and neglecting lepton-mass effects, LEP reports B_had = 67.41 +/- 0.18 statistical +/- 0.20 systematic percent and each B_l = 10.86 +/- 0.06 statistical +/- 0.07 systematic percent, with their sum constrained to one.",
+      "claimIds": [
+        "C-phys-lep2013-w-branching-universal"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "lep2013-w-width-branching",
+          "locator": "Section 5.2.2, author pages 93-95, Table 5.5 and Figure 5.3; Table E.6 on author page 196: correlated branching fits with and without lepton universality"
+        }
+      ],
+      "openObligations": [
+        "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
+        "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ]
     }
   ],
   "rules": [
@@ -97588,6 +99031,461 @@
       "assertion": "Quark field assignments delimit the quark mass-basis term; the formula supplies neither a nonperturbative hadron mass nor a constituent-counting rule.",
       "claimIds": [
         "D-phys-charged-fermion-higgs-coupling"
+      ]
+    },
+    {
+      "id": "physics:standard-model-weak-gauge-currents",
+      "source": "phys:standard-model",
+      "target": "phys:weak-gauge-currents",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The declared electroweak field representations and coupling conventions define these currents; this is not a measured sector-formation process.",
+      "claimIds": [
+        "D-phys-weak-gauge-currents"
+      ]
+    },
+    {
+      "id": "physics:higgs-doublet-background-weak-gauge-currents",
+      "source": "phys:higgs-doublet-background",
+      "target": "phys:weak-gauge-currents",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The supplied broken-phase single-doublet construction specifies the massive weak-field basis used in these current assignments; it does not independently establish observed spin or production.",
+      "claimIds": [
+        "D-phys-weak-gauge-currents"
+      ]
+    },
+    {
+      "id": "physics:weak-gauge-currents-low-energy-weak-exchange",
+      "source": "phys:weak-gauge-currents",
+      "target": "phys:low-energy-weak-exchange",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The current and coupling normalization determines the stated leading contact interaction; no selected detector events are generated by this definitional relation.",
+      "claimIds": [
+        "D-phys-low-energy-weak-exchange"
+      ]
+    },
+    {
+      "id": "physics:higgs-doublet-background-low-energy-weak-exchange",
+      "source": "phys:higgs-doublet-background",
+      "target": "phys:low-energy-weak-exchange",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The tree mass relation M_W=g*v/2 supplies the equality between the two declared Fermi-constant expressions, without a fit or renormalized-parameter identification.",
+      "claimIds": [
+        "D-phys-low-energy-weak-exchange"
+      ]
+    },
+    {
+      "id": "physics:internal-propagator-low-energy-weak-exchange",
+      "source": "phys:internal-propagator",
+      "target": "phys:low-energy-weak-exchange",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The internal-kernel role distinguishes a low-momentum amplitude factor from an observed mediator population; its massive weak denominator is specified here.",
+      "claimIds": [
+        "D-phys-low-energy-weak-exchange"
+      ]
+    },
+    {
+      "id": "physics:inclusive-decay-width-branching-resonance-lifetime-convention",
+      "source": "phys:inclusive-decay-width-branching",
+      "target": "phys:resonance-lifetime-convention",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The energy-width versus inverse-time convention must be fixed before a width defines a decay timescale; inclusive fitted widths are not automatically the energy-plane pole width.",
+      "claimIds": [
+        "D-phys-resonance-lifetime-convention"
+      ]
+    },
+    {
+      "id": "physics:internal-propagator-resonance-lifetime-convention",
+      "source": "phys:internal-propagator",
+      "target": "phys:resonance-lifetime-convention",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The resonance pole belongs to an amplitude/kernel parametrization and does not supply a directly tracked unstable particle or a time-domain measurement.",
+      "claimIds": [
+        "D-phys-resonance-lifetime-convention"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-acquisition-context-lep1-z-scan-responses",
+      "source": "phys:lep1-z-acquisition-context",
+      "target": "phys:lep1-z-scan-responses",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The four LEP-I acquisitions supply the selected scan data.",
+      "claimIds": [
+        "M-phys-lep1-z-scan-responses"
+      ],
+      "contextIds": [
+        "lep1-z-acquisition"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-response-context-lep1-z-scan-responses",
+      "source": "phys:lep1-z-response-context",
+      "target": "phys:lep1-z-scan-responses",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Selection, background, luminosity and beam corrections determine the published response observables.",
+      "claimIds": [
+        "M-phys-lep1-z-scan-responses"
+      ],
+      "contextIds": [
+        "lep1-z-acquisition"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-scan-responses-lep1-z-experiment-parameters",
+      "source": "phys:lep1-z-scan-responses",
+      "target": "phys:lep1-z-experiment-parameters",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The experiment fits require the selected scan responses, adopted response model and declared line-shape convention.",
+      "claimIds": [
+        "M-phys-lep1-z-experiment-parameters"
+      ],
+      "contextIds": [
+        "lep1-z-response"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-response-context-lep1-z-experiment-parameters",
+      "source": "phys:lep1-z-response-context",
+      "target": "phys:lep1-z-experiment-parameters",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The experiment fits require the selected scan responses, adopted response model and declared line-shape convention.",
+      "claimIds": [
+        "M-phys-lep1-z-experiment-parameters"
+      ],
+      "contextIds": [
+        "lep1-z-response"
+      ]
+    },
+    {
+      "id": "physics:z-line-shape-conventions-lep1-z-experiment-parameters",
+      "source": "phys:z-line-shape-conventions",
+      "target": "phys:lep1-z-experiment-parameters",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The experiment fits require the selected scan responses, adopted response model and declared line-shape convention.",
+      "claimIds": [
+        "M-phys-lep1-z-experiment-parameters"
+      ],
+      "contextIds": [
+        "lep1-z-response"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-experiment-parameters-lep1-z-line-shape",
+      "source": "phys:lep1-z-experiment-parameters",
+      "target": "phys:lep1-z-line-shape",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The combination retains the fitted-vector inputs, common covariance and parameter convention.",
+      "claimIds": [
+        "M-phys-lep1-z-line-shape"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-combination-context-lep1-z-line-shape",
+      "source": "phys:lep1-z-combination-context",
+      "target": "phys:lep1-z-line-shape",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The combination retains the fitted-vector inputs, common covariance and parameter convention.",
+      "claimIds": [
+        "M-phys-lep1-z-line-shape"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:z-line-shape-conventions-lep1-z-line-shape",
+      "source": "phys:z-line-shape-conventions",
+      "target": "phys:lep1-z-line-shape",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The combination retains the fitted-vector inputs, common covariance and parameter convention.",
+      "claimIds": [
+        "M-phys-lep1-z-line-shape"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-line-shape-lep1-z-partial-widths",
+      "source": "phys:lep1-z-line-shape",
+      "target": "phys:lep1-z-partial-widths",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The partial widths derive from the same fitted parameters under the inclusive decay convention; the residual is not independent data.",
+      "claimIds": [
+        "M-phys-lep1-z-partial-widths"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-combination-context-lep1-z-partial-widths",
+      "source": "phys:lep1-z-combination-context",
+      "target": "phys:lep1-z-partial-widths",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The partial widths derive from the same fitted parameters under the inclusive decay convention; the residual is not independent data.",
+      "claimIds": [
+        "M-phys-lep1-z-partial-widths"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:inclusive-decay-width-branching-lep1-z-partial-widths",
+      "source": "phys:inclusive-decay-width-branching",
+      "target": "phys:lep1-z-partial-widths",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The partial widths derive from the same fitted parameters under the inclusive decay convention; the residual is not independent data.",
+      "claimIds": [
+        "M-phys-lep1-z-partial-widths"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-partial-widths-lep1-z-branching-fractions",
+      "source": "phys:lep1-z-partial-widths",
+      "target": "phys:lep1-z-branching-fractions",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The branching fractions use the correlated inclusive partial widths and shared total width, with the invisible sum constraint.",
+      "claimIds": [
+        "M-phys-lep1-z-branching-fractions"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-line-shape-lep1-z-branching-fractions",
+      "source": "phys:lep1-z-line-shape",
+      "target": "phys:lep1-z-branching-fractions",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The branching fractions use the correlated inclusive partial widths and shared total width, with the invisible sum constraint.",
+      "claimIds": [
+        "M-phys-lep1-z-branching-fractions"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep1-z-combination-context-lep1-z-branching-fractions",
+      "source": "phys:lep1-z-combination-context",
+      "target": "phys:lep1-z-branching-fractions",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The branching fractions use the correlated inclusive partial widths and shared total width, with the invisible sum constraint.",
+      "claimIds": [
+        "M-phys-lep1-z-branching-fractions"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:inclusive-decay-width-branching-lep1-z-branching-fractions",
+      "source": "phys:inclusive-decay-width-branching",
+      "target": "phys:lep1-z-branching-fractions",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The branching fractions use the correlated inclusive partial widths and shared total width, with the invisible sum constraint.",
+      "claimIds": [
+        "M-phys-lep1-z-branching-fractions"
+      ],
+      "contextIds": [
+        "lep1-z-combination"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-width-acquisition-context-lep2013-w-width",
+      "source": "phys:lep2013-w-width-acquisition-context",
+      "target": "phys:lep2013-w-width",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The stated LEP channel exposure is the experimental context of this reported result.",
+      "claimIds": [
+        "M-phys-lep2013-w-width"
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-width-response-context-lep2013-w-width",
+      "source": "phys:lep2013-w-width-response-context",
+      "target": "phys:lep2013-w-width",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The adopted detector and modeled channel response conditions this result; observed spread or event counts alone do not equal the quoted parameter.",
+      "claimIds": [
+        "M-phys-lep2013-w-width"
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-width-inference-context-lep2013-w-width",
+      "source": "phys:lep2013-w-width-inference-context",
+      "target": "phys:lep2013-w-width",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The corresponding source likelihood, covariance and constraints delimit the published inference.",
+      "claimIds": [
+        "M-phys-lep2013-w-width"
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "physics:inclusive-decay-width-branching-lep2013-w-width",
+      "source": "phys:inclusive-decay-width-branching",
+      "target": "phys:lep2013-w-width",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The width and branching convention defines this reported parameter. This formal edge supplies no Z dataset or calibration; adopted auxiliary inputs remain in the W response context.",
+      "claimIds": [
+        "M-phys-lep2013-w-width"
+      ],
+      "contextIds": [
+        "lep2013-w-width-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-branching-acquisition-context-lep2013-w-branching-nonuniversal",
+      "source": "phys:lep2013-w-branching-acquisition-context",
+      "target": "phys:lep2013-w-branching-nonuniversal",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The stated LEP channel exposure is the experimental context of this reported result.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-nonuniversal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-branching-response-context-lep2013-w-branching-nonuniversal",
+      "source": "phys:lep2013-w-branching-response-context",
+      "target": "phys:lep2013-w-branching-nonuniversal",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The adopted detector and modeled channel response conditions this result; observed spread or event counts alone do not equal the quoted parameter.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-nonuniversal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-branching-inference-context-lep2013-w-branching-nonuniversal",
+      "source": "phys:lep2013-w-branching-inference-context",
+      "target": "phys:lep2013-w-branching-nonuniversal",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The corresponding source likelihood, covariance and constraints delimit the published inference.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-nonuniversal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:inclusive-decay-width-branching-lep2013-w-branching-nonuniversal",
+      "source": "phys:inclusive-decay-width-branching",
+      "target": "phys:lep2013-w-branching-nonuniversal",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The width and branching convention defines this reported parameter. This formal edge supplies no Z dataset or calibration; adopted auxiliary inputs remain in the W response context.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-nonuniversal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-branching-acquisition-context-lep2013-w-branching-universal",
+      "source": "phys:lep2013-w-branching-acquisition-context",
+      "target": "phys:lep2013-w-branching-universal",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The stated LEP channel exposure is the experimental context of this reported result.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-universal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-branching-response-context-lep2013-w-branching-universal",
+      "source": "phys:lep2013-w-branching-response-context",
+      "target": "phys:lep2013-w-branching-universal",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The adopted detector and modeled channel response conditions this result; observed spread or event counts alone do not equal the quoted parameter.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-universal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:lep2013-w-branching-inference-context-lep2013-w-branching-universal",
+      "source": "phys:lep2013-w-branching-inference-context",
+      "target": "phys:lep2013-w-branching-universal",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The corresponding source likelihood, covariance and constraints delimit the published inference.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-universal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:inclusive-decay-width-branching-lep2013-w-branching-universal",
+      "source": "phys:inclusive-decay-width-branching",
+      "target": "phys:lep2013-w-branching-universal",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The width and branching convention defines this reported parameter. This formal edge supplies no Z dataset or calibration; adopted auxiliary inputs remain in the W response context.",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-universal"
+      ],
+      "contextIds": [
+        "lep2013-w-branching-inference"
       ]
     }
   ]

@@ -74,9 +74,12 @@ const contracts = {
           "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary",
           "Section 10.4.7, page 31: color multiplicities in fermion decay channels",
           "Section 10.1, page 2, Equations 10.1 and 10.3-10.5: declared Higgs-doublet potential, unitary-gauge background and tree-level gauge/scalar masses",
-          "Section 10.1, pages 1-3, Equation 10.2 and fermion/neutrino paragraphs: mass-basis charged-fermion Higgs coupling and minimal-model neutrino boundary"
+          "Section 10.1, pages 1-3, Equation 10.2 and fermion/neutrino paragraphs: mass-basis charged-fermion Higgs coupling and minimal-model neutrino boundary",
+          "Section 10.1, pages 1-3, Equations 10.2-10.3 and 10.6-10.7: weak vector-field charges/polarizations, charged and neutral currents and the stated quark mixing basis",
+          "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization",
+          "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries"
         ],
-        "limit": "Revised November 2025; inspected PDF produced 15 April 2026. Pages 1-3 and 31 read and visually checked. Page 31 supplies the color convention only; its numerical predictions, global fits and cited experiments are not independently reviewed. The 2024 parent volume and this 2025 chapter update are distinct bibliographic scopes. No chapter-specific DOI is asserted."
+        "limit": "Revised November 2025; inspected PDF produced 15 April 2026. Pages 1-3 and 31 read and visually checked. Page 31 supplies the color convention only; its numerical predictions, global fits and cited experiments are not independently reviewed. The 2024 parent volume and this 2025 chapter update are distinct bibliographic scopes. No chapter-specific DOI is asserted. The weak-sector review additionally reads Section 10.2.4 on pages 9-11 and visually checks Equation 10.11-10.13 on page 10; pages 2-3 current and contact formulas were visually rechecked. Only these formal conventions are added: no global fit, quoted numerical mass/width or complete radiative/off-shell calculation is admitted."
       }
     }
   ],

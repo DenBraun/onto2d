@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1166 records, 921 connections, 1232 claims and 385 sources.
+The current graph contains 1188 records, 955 connections, 1262 claims and 388 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -124,8 +124,47 @@ mass combines magnetic and transverse-recoil estimates under a no-neutrino
 assumption. These historical masses are not current precision values, and the
 discovery peak does not determine an intrinsic width or lifetime. The reviewed
 CERN preprints, selected visual checks and conflicting event identifier are
-explicit. Card 1.24 remains open for widths, lifetimes and branching fractions;
-stable persistent W/Z carriers are excluded.
+explicit. These discovery analyses retain their historical measurement scope.
+
+## Weak currents, resonance widths and decay fractions
+
+The [PDG electroweak treatment](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf)
+specifies charged and neutral currents in the declared broken-phase model.
+Spin, charge, chiral representations and couplings are supplied assignments;
+the tree neutral current is flavor diagonal in the minimal mass basis.
+Low-momentum massive exchange gives a contact approximation with its tree
+Fermi normalization. Beta decay and neutrino reactions additionally require
+their own external states, matrix elements and response; they do not require
+production of a real on-shell W or Z.
+
+The [LEP Z report](https://arxiv.org/abs/hep-ex/0509008v3) separates corrected
+scan observables, four experiment fits and their correlated combination.
+Its no-lepton-universality branch gives the running-width parameter
+`Gamma_Z = 2.4952 +/- 0.0023 GeV`. Inclusive partial widths and branching
+fractions transform the same fit; the invisible component is a residual.
+They are not independent confirmations of the total width. Common covariance,
+radiative corrections, interference assumptions and the adopted parameter
+convention remain explicit.
+
+The [LEP W report](https://arxiv.org/abs/1302.3415v4) separates the 1996-2000
+width inputs from the 1997-2000 branching inputs, with distinct acquisition,
+response and inference records. Its running-width result is
+`Gamma_W = 2.195 +/- 0.063 (stat.) +/- 0.055 (syst.) GeV`.
+Unconstrained leptonic fractions and the universality-constrained result
+remain separate. Total-production cross sections computed with assumed
+branching fractions do not supply independent branching evidence. Printed
+source discrepancies remain attached to the corresponding records; raw
+likelihoods and complete covariance are not locally reproduced.
+
+The [resonance pole convention](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-resonances.pdf)
+and [exponential survival approximation](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-kinematics.pdf)
+relate a proper lifetime to an energy-plane pole width. That width is distinct
+from an s-plane or running-width parameter without the stated conversion or
+approximation. No numerical lifetime or directly timed W/Z decay is admitted.
+Card 1.24 has this finite qualified scope, together with the existing Higgs
+mass definitions and historical UA1 observations. Stable bounded carriers,
+persistent classical identity, universal formation/maintenance, original
+parent weights, carrier minima and SOMA phase ordering are excluded.
 
 ## Higgs decay to tau leptons
 

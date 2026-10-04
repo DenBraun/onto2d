@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.02.9`: 1166 records, 921 connections,
-1232 claims and 385 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.04.1`: 1188 records, 955 connections,
+1262 claims and 388 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -57,7 +57,11 @@ total-width assumptions.
 OPERA distinguishes selected tau-decay channels from expected signal/background
 means and the original calibrated inference. UA1 W and Z discovery records keep
 their separate acquisitions, candidate selections and conditional historical
-mass estimates. The Higgs background and charged-fermion coupling definitions
+mass estimates. LEP Z line-shape and W width/branching records separate
+acquisition, response, correlated fitting and derived parameters. Weak currents,
+low-energy exchange and the width/lifetime relation retain their formal model
+and approximation boundaries; no stable W/Z carrier or directly timed decay
+is inferred. The Higgs background and charged-fermion coupling definitions
 retain supplied parameters; they do not predict the fermion mass hierarchy or
 establish absolute quantum-vacuum stability.
 The Level-0 mathematical findings are described in the
