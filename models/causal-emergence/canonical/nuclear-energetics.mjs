@@ -136,9 +136,11 @@ const contracts = {
         "extent": "selected-formal-passages",
         "locators": [
           "Pages 1-2, Sections 49.1 and 49.3, Equation 49.9: on-shell four-momentum, positive energy and c=1 convention",
-          "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space"
+          "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space",
+          "Page 2, Sections 49.3-49.4, Equations 49.10-49.12: narrow-width factorization, relative partial decay rates and rest-frame decay phase space",
+          "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units"
         ],
-        "limit": "Pages 1-2, Sections 49.1, 49.3 and 49.4 through Equation 49.12 were read. The chapter says reviewed August 2021 and written January 2000; the inspected 2025 edition has a 1 December 2025 footer. The parent Review of Particle Physics DOI is not assigned as a distinct chapter DOI. Remaining sections, decay amplitudes and experimental evidence are not reviewed. The deuteron Q sign is a local inference from these formal conditions, not an experimental result of this chapter."
+        "limit": "Pages 1-2 were read, including Sections 49.1,49.3,49.4 and 49.4.1 through Equation 49.15; page 2 formulas were visually checked. The chapter says reviewed August 2021 and written January 2000; the inspected 2025 edition has a 1 December 2025 footer. The parent Review of Particle Physics DOI is not assigned as a distinct chapter DOI. Only the selected kinematic, partial-decay and exponential-survival conventions are admitted; no decay amplitude, detector result or fit is reconstructed. The deuteron Q sign remains a separate local inference from formal threshold conditions."
       }
     },
     {

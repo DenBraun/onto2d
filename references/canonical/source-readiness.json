@@ -10848,6 +10848,204 @@
       ]
     },
     {
+      "nodeId": "phys:weak-gauge-currents",
+      "role": "definition",
+      "denotes": "In the declared broken-phase Standard Model, W-plus and W-minus are spin-one fields of electric charge +e and -e; Z is neutral and spin one. With J_W^mu=sum_l nu-bar_l*gamma^mu*(1-gamma5)*l+sum_ij u-bar_i*gamma^mu*(1-gamma5)*V_ij*d_j, L_CC=-g/(2*sqrt(2))*(W-plus_mu*J_W^mu+h.c.). The tree neutral term is L_NC=-g/(2*cos(theta_W))*Z_mu*sum_f f-bar*gamma^mu*(gV_f-gA_f*gamma5)*f, where gV_f=T3_f-2*Q_f*sin(theta_W)^2 and gA_f=T3_f; T3_f is the isospin of the left-handed partner. Thus the stated quark charged current contains CKM mixing, while the tree Z current is flavor diagonal in this minimal mass basis.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-weak-gauge-currents"
+      ]
+    },
+    {
+      "nodeId": "phys:low-energy-weak-exchange",
+      "role": "definition",
+      "denotes": "For the leading scalar denominator of a massive weak propagator, 1/(q^2-M_V^2)=-M_V^(-2)*[1+O(q^2/M_V^2)] when |q^2| is much smaller than M_V^2. With the declared charged-current normalization this yields the tree relation G_F/sqrt(2)=g^2/(8*M_W^2)=1/(2*v^2) for a local four-fermion approximation. Charged and neutral weak amplitudes retain their different currents; the contact description is distinct from a resonant production and decay process.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-low-energy-weak-exchange"
+      ]
+    },
+    {
+      "nodeId": "phys:inclusive-decay-width-branching",
+      "role": "definition",
+      "denotes": "In the adopted inclusive weak-resonance decay convention, define Gamma_tot=sum_f Gamma_f over a complete, mutually exclusive channel partition and B_f=Gamma_f/Gamma_tot. The Gamma_f and Gamma_tot use the same energy-width and radiation convention; B_f is dimensionless. The LEP Z convention includes final-state QED/QCD corrections and nonfactorisable contributions so that its specified partial widths sum to its total width.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-inclusive-decay-width-branching"
+      ]
+    },
+    {
+      "nodeId": "phys:resonance-lifetime-convention",
+      "role": "definition",
+      "denotes": "Define the energy-plane resonance pole by sqrt(s_R)=M_E-i*Gamma_E/2 with positive M_E and Gamma_E. In the isolated-resonance exponential approximation, P(t_proper)=exp(-Gamma_E*t_proper/hbar) and tau_proper=hbar/Gamma_E. For fixed Lorentz factor gamma, the corresponding laboratory survival is exp(-Gamma_E*t_lab/(gamma*hbar)). This convention separates an inferred decay timescale from the reported line-shape parametrization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-resonance-lifetime-convention"
+      ]
+    },
+    {
+      "nodeId": "phys:z-line-shape-conventions",
+      "role": "definition",
+      "denotes": "The specified energy-dependent versus constant-width Z parametrizations and the separate radiative/experimental response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-z-line-shape-conventions"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The four LEP-I campaigns and selected hadronic/leptonic energy-scan preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep1-z-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-response-context",
+      "role": "model-context",
+      "denotes": "The adopted detector, luminosity, beam and radiative inputs and original experiment-level parameter extraction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep1-z-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-combination-context",
+      "role": "model-context",
+      "denotes": "The original correlated parameter combination and same-data decay-parameter transformation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep1-z-combination-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-scan-responses",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported selected energy-dependent cross-section/asymmetry response summaries, not fitted width parameters or a released raw sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep1-z-scan-responses"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-experiment-parameters",
+      "role": "scoped-phenomenon",
+      "denotes": "The four reported fitted input vectors with their covariance conventions, not four independent width-only likelihoods.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep1-z-experiment-parameters"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-line-shape",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported correlated combined mass, total width, pole cross-section and ratios under the nonuniversal fit convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep1-z-line-shape"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-partial-widths",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected visible inclusive partial-width transformations and correlated invisible residual of the same fitted data.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep1-z-partial-widths"
+      ]
+    },
+    {
+      "nodeId": "phys:lep1-z-branching-fractions",
+      "role": "scoped-phenomenon",
+      "denotes": "The same-data correlated inclusive branching fractions; the invisible residual is not an additional observed sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep1-z-branching-fractions"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-width-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The declared LEP exposures and reconstructed channel preparation, not a released raw event sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep2013-w-width-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-width-response-context",
+      "role": "model-context",
+      "denotes": "The adopted detector, radiation and final-state response for the width estimators.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep2013-w-width-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-width-inference-context",
+      "role": "model-context",
+      "denotes": "The running-width likelihood and correlated combination, separate from acquisition and detector response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep2013-w-width-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-branching-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The declared channel-selection exposure for branching fits, distinct from the wider width data range.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-branching-response-context",
+      "role": "model-context",
+      "denotes": "Adopted channel efficiency, background and signal-definition inputs, not directly observed diagrams.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-branching-inference-context",
+      "role": "model-context",
+      "denotes": "Two conditional fits to shared channel inputs, not independent acquisitions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-lep2013-w-branching-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-width",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-reported conditional W energy width, not a decay-time observation or raw peak spread.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep2013-w-width"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-branching-nonuniversal",
+      "role": "scoped-phenomenon",
+      "denotes": "The correlated three-lepton result without universality, not raw decay counts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep2013-w-branching-nonuniversal"
+      ]
+    },
+    {
+      "nodeId": "phys:lep2013-w-branching-universal",
+      "role": "scoped-phenomenon",
+      "denotes": "The joint constrained branching result, not an independent channel count or proof of universality.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-lep2013-w-branching-universal"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

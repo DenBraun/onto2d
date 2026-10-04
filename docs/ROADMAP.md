@@ -23,13 +23,13 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 183 remain on the
+graph. Of the 249 original source cards, 182 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-66 cards is a source-review census, not a percentage of scientifically supported
+67 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 
-The current graph contains 1166 records, 921 connections, 1232 claims and 385 sources.
+The current graph contains 1188 records, 955 connections, 1262 claims and 388 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -98,8 +98,13 @@ belong to the current claims.
    Chirality and Yukawa parameters are inputs; a predicted hierarchy, universal
    composite stability, absolute quantum-vacuum stability and causal maintenance
    are excluded. Historical UA1 W/Z candidates, response and mass inferences
-   retain distinct acquisitions. Width, lifetime and branching-fraction evidence
-   remain pending for card 1.24. KamLAND's selected prompt-energy release has
+   retain distinct acquisitions. Card 1.24 is qualified to declared weak currents,
+   low-energy exchange and inclusive decay conventions, with separate LEP Z
+   line-shape and W width/branching inferences. Derived fractions reuse their
+   fit inputs; the lifetime relation is a pole/exponential convention, not a
+   timed observation. Stable carriers and original parent/minimum rules are
+   excluded; source discrepancies and unreproduced likelihoods remain explicit.
+   KamLAND's selected prompt-energy release has
    finite checks, while its flux, background, response and likelihood remain
    separate inputs. SNO solar channel response and direct joint active-flavor
    inference are distinct; Super-Kamiokande atmospheric samples, angular

@@ -76,8 +76,8 @@ test("context compatibility requires one shared complete protocol across the ent
 
 test("compiled endpoints expose experimental contexts, alternatives and exact source-cell provenance", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1166, edgeCount: 921 });
-  assert.equal(pack.manifest.source.files.length, 145);
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1188, edgeCount: 955 });
+  assert.equal(pack.manifest.source.files.length, 148);
   const node = pack.files["model/nodes.json"].find((n) => n.id === "ret:primate-off-readout");
   assert.equal(node.rationale.length, 3);
   const e = node.rationale[1].experimentalContexts[0];
@@ -88,6 +88,6 @@ test("compiled endpoints expose experimental contexts, alternatives and exact so
   assert.equal(node.rationale[1].citations.find((c) => c.sourceId === "grimes2018-fig6-data").source.doi, "10.7554/eLife.38281.019");
   const edges = pack.files["model/edges.json"];
   assert.equal(edges.filter((e) => e.relationLayer === "functional-support").length, 180);
-  assert.equal(edges.filter((e) => e.relationLayer === "descriptive").length, 741);
+  assert.equal(edges.filter((e) => e.relationLayer === "descriptive").length, 775);
   assert.deepEqual(pack.files["model/dictionaries.json"].routing, data.routing);
 });
