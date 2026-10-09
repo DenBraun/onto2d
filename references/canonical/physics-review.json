@@ -4644,6 +4644,162 @@
       "metadataCheckedAt": "2026-10-09",
       "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.202001",
       "correctionCheck": "Author v2 and publisher bibliographic metadata were checked. The earlier CDF result is a smaller overlapping sample; no exhaustive later-result or correction census is claimed."
+    },
+    {
+      "id": "belle2014-tau-acquisition",
+      "sourceId": "belle2014-tau-lifetime",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.112.031801",
+      "journal": "Physical Review Letters",
+      "volume": "112",
+      "issue": "3",
+      "pages": "031801",
+      "system": "Belle selected e+e-->tau+tau- with both candidates reconstructed as three-pion decays",
+      "preparation": "Use 711 fb^-1 of Belle e+e- collisions at the Upsilon(4S) and 60 MeV below it, with asymmetric 3.5 and 8 GeV beams. The SVD1/SVD2 subsets have 157/554 fb^-1. Select six charged pion candidates with total charge zero, three per thrust hemisphere, rejecting reconstructed K0S, Lambda and pi0 candidates and applying the stated photon, thrust, momentum, pseudomass, vertex and direction-solution cuts, including closest-line separation dl<0.03 cm.",
+      "observable": "Belle tau-pair acquisition",
+      "finding": "The collider exposure and selected paired-three-pion preparation.",
+      "limitations": [
+        "The two detector configurations and on/off-resonance subsets contribute to one combined analysis; they are not independent repeats of its final result. Exact acquisition calendar dates are not supplied here."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v1, pages 7-8: collider exposure, detector configurations, three-pion event selection and simulation",
+        "Author v1, pages 9-12, Equations 3-4 and Figures 2-3: response, fitted length distribution and generated-lifetime calibration"
+      ],
+      "metadataCheckedAt": "2026-10-09",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.031801",
+      "correctionCheck": "Checked the sole arXiv version and publisher metadata. No exhaustive later-measurement or correction census is claimed."
+    },
+    {
+      "id": "belle2014-tau-response",
+      "sourceId": "belle2014-tau-lifetime",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.112.031801",
+      "journal": "Physical Review Letters",
+      "volume": "112",
+      "issue": "3",
+      "pages": "031801",
+      "system": "Belle selected e+e-->tau+tau- with both candidates reconstructed as three-pion decays",
+      "preparation": "For the paired tau->3pi nu hypothesis, neglect neutrino mass and initially ISR/FSR when solving two possible CM tau directions; use their mean vector, adopted beam energy and tau mass to boost to the lab. Fit each three-track vertex, approximate each tau path as straight and use the closest points of the two paths as production estimates. Reconstruct t=l/(beta*gamma), a length equal to c times proper time. Signal/background simulation and separate dimuon control data inform response and systematic treatment.",
+      "observable": "Belle tau-length reconstruction and response",
+      "finding": "The kinematic and vertex reconstruction, simulation and auxiliary-control inputs.",
+      "limitations": [
+        "Beam energy and tau mass are reconstruction inputs; the adopted mass is 1776.82 +/- 0.16 MeV/c^2, not measured in this fit. ISR/FSR, momentum calibration and detector alignment enter systematic treatment.",
+        "The auxiliary e+e-->mu+mu- sample and MC response are distinct from the selected tau data. Figure 2 is a simulated reconstruction-minus-truth distribution, not a measured lifetime."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v1, pages 5-7, Equations 1-2 and Figure 1: paired tau directions, vertices and reconstructed proper lengths",
+        "Author v1, pages 7-8: collider exposure, detector configurations, three-pion event selection and simulation",
+        "Author v1, pages 12-14 and Table I: alignment, auxiliary dimuon control, fit-range, background and adopted-mass uncertainties"
+      ],
+      "metadataCheckedAt": "2026-10-09",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.031801",
+      "correctionCheck": "Checked the sole arXiv version and publisher metadata. No exhaustive later-measurement or correction census is claimed."
+    },
+    {
+      "id": "belle2014-tau-inference",
+      "sourceId": "belle2014-tau-lifetime",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.112.031801",
+      "journal": "Physical Review Letters",
+      "volume": "112",
+      "issue": "3",
+      "pages": "031801",
+      "system": "Belle selected e+e-->tau+tau- with both candidates reconstructed as three-pion decays",
+      "preparation": "Fit the reconstructed-length distribution with an exponential convolved with Equation 3 resolution plus fixed MC background shapes and normalizations. Float the signal normalization, exponential scale and five resolution parameters; fix asymmetry A=2.5 cm^-1. Calibrate the fitted scale with generated mean lengths 84, 87.11 and 90 micrometers. Apply the reported alignment, fixed-asymmetry, beam/radiation, fit-range, background and adopted-mass uncertainties before quoting the combined lifetime.",
+      "observable": "Belle tau-lifetime fit and calibration",
+      "finding": "The conditional exponential-response fit, MC calibration and systematic prescription.",
+      "limitations": [
+        "The source supplies a distribution fit and MC calibration, not a locally reproduced likelihood or covariance. Its fitted resolution asymmetry is fixed because of its lifetime correlation; simulated background yields/shapes remain model inputs.",
+        "The source uses length units for the fit variable and scale. Table I systematic errors are in micrometers; the reported total 0.101 micrometers is rounded to 0.10 in the final c*tau result."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v1, pages 9-12, Equations 3-4 and Figures 2-3: response, fitted length distribution and generated-lifetime calibration",
+        "Author v1, pages 12-14 and Table I: alignment, auxiliary dimuon control, fit-range, background and adopted-mass uncertainties"
+      ],
+      "metadataCheckedAt": "2026-10-09",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.031801",
+      "correctionCheck": "Checked the sole arXiv version and publisher metadata. No exhaustive later-measurement or correction census is claimed."
+    },
+    {
+      "id": "borexino2015-electron-acquisition",
+      "sourceId": "borexino2015-electron-decay",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.115.231802",
+      "journal": "Physical Review Letters",
+      "volume": "115",
+      "issue": "23",
+      "pages": "231802",
+      "system": "Borexino Phase-2 low-energy scintillator events",
+      "preparation": "Use 408 live days from January 2012 to May 2013 in the PC/PPO scintillator. The spectral selection uses a 75.5 t fiducial mass with R<3.02 m and |Z|<1.67 m. Count triggered PMTs in 230 ns; fit 62-220 hits, corresponding to 164-590 keV.",
+      "observable": "Borexino electron-decay search preparation",
+      "finding": "The specified exposure, scintillator and selection, not a lifetime observation.",
+      "limitations": [
+        "This is the January 2012-May 2013 Borexino Phase-2 sample. The analysis reuses its low-energy solar-neutrino response and pile-up treatment; it is not an independent replication of that detector sample."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Author v2, page 2: Phase-2 exposure, scintillator and measured spectrum",
+        "Author v2, pages 4-5: constrained spectral fit, fiducial selection and background inputs"
+      ],
+      "metadataCheckedAt": "2026-10-09",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.231802",
+      "correctionCheck": "Author v2 and publisher metadata were checked, with the published limit text cross-checked. The older CTF result is a distinct detector study; no exhaustive later-result or correction census is claimed."
+    },
+    {
+      "id": "borexino2015-electron-response",
+      "sourceId": "borexino2015-electron-decay",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.115.231802",
+      "journal": "Physical Review Letters",
+      "volume": "115",
+      "issue": "23",
+      "pages": "231802",
+      "system": "Borexino Phase-2 low-energy scintillator events",
+      "preparation": "Model a hypothetical 256 keV photon as a quenched 220 +/- 0.4 keV electron-equivalent response, using Birks quenching, a scaled-Poisson line shape and measured/simulated resolution inputs. Include data-driven synthetic pile-up. Simulation gives global photon efficiency 0.264, including the fiducial cut.",
+      "observable": "Borexino electron-decay response model",
+      "finding": "Calibration, simulated signal acceptance and spectral response inputs.",
+      "limitations": [
+        "The quenched visible signal and its efficiency depend on calibration and simulation. The full response code, event list and bin covariance are not supplied here; no acquisition or detector-response replay is claimed.",
+        "The efficiency 0.264 already includes the fiducial cut and multiplies the electron inventory of the entire 278 t inner vessel. Replacing that inventory with the 75.5 t fiducial inventory would apply the volume restriction twice. S=379 is a statistical upper limit, not an observed decay count."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Author v2, pages 3-4, Figure 1 and equations 1-5: quenching, pile-up and detector response",
+        "Author v2, page 5, equations 6-7: event-limit normalization and statistical lifetime bound"
+      ],
+      "metadataCheckedAt": "2026-10-09",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.231802",
+      "correctionCheck": "Author v2 and publisher metadata were checked, with the published limit text cross-checked. The older CTF result is a distinct detector study; no exhaustive later-result or correction census is claimed."
+    },
+    {
+      "id": "borexino2015-electron-inference",
+      "sourceId": "borexino2015-electron-decay",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.115.231802",
+      "journal": "Physical Review Letters",
+      "volume": "115",
+      "issue": "23",
+      "pages": "231802",
+      "system": "Borexino Phase-2 low-energy scintillator events",
+      "preparation": "Fit the low-energy spectrum with constrained pp and other solar/background components, free light yield and resolution parameters, and a hypothetical photon contribution. Normalize probability profiles over nonnegative signal counts; integrate to the stated 90% level and combine profiles over correlated systematic variations.",
+      "observable": "Borexino constrained decay-limit inference",
+      "finding": "The conditional spectral fit and physical-region limit construction.",
+      "limitations": [
+        "The pp-rate penalty adopts 134 cpd/100 t and uncertainty parameter 13.3 cpd/100 t from external radiochemical information. The separate fiducial term 2.7 represents the Borexino 2% mass uncertainty. The paper calls 13.3 a variance, but squares it in the penalty denominator. Other solar components retain their Borexino or SSM/MSW-LMA inputs; the whole fit is not assumption-free.",
+        "The final bound mixes physical-region-normalized probability profiles over correlated estimator, quenching and fiducial-volume variations. An independent quadrature sum or a fixed 8% arithmetic discount does not reconstruct this procedure or its confidence coverage."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Author v2, pages 4-5: constrained spectral fit, fiducial selection and background inputs",
+        "Author v2, page 5: correlated systematic profiles and final electron-decay channel bound",
+        "Author v2, page 5, equations 6-7: event-limit normalization and statistical lifetime bound"
+      ],
+      "metadataCheckedAt": "2026-10-09",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.231802",
+      "correctionCheck": "Author v2 and publisher metadata were checked, with the published limit text cross-checked. The older CTF result is a distinct detector study; no exhaustive later-result or correction census is claimed."
     }
   ],
   "comparisons": [
@@ -7671,11 +7827,49 @@
         "C-phys-cdf2013-top-sample",
         "C-phys-cdf2013-top-width-interval"
       ]
+    },
+    {
+      "id": "belle2014-tau-calibration",
+      "candidate": "The fitted exponential scale tracks the generated mean proper length under the Belle reconstruction and response model.",
+      "alternative": "Selection or response produces a bias between generated mean length and the fitted scale.",
+      "discriminator": "The authors fit MC samples generated at 84, 87.11 and 90 micrometers, including separate and combined detector configurations and before/after-selection controls. The reported linear slope is 0.97 +/- 0.03 and intercept 0.001 +/- 0.07 micrometers about an 87 micrometer pivot.",
+      "result": "conditional-support",
+      "limit": "This is a reported MC calibration and bias control, not an independent tau measurement or a local fit reproduction. Compatibility with unit slope and zero intercept does not prove that all detector/background modeling is exact.",
+      "assumptions": [
+        "The source supplies a distribution fit and MC calibration, not a locally reproduced likelihood or covariance. Its fitted resolution asymmetry is fixed because of its lifetime correlation; simulated background yields/shapes remain model inputs."
+      ],
+      "sourceIds": [
+        "belle2014-tau-lifetime"
+      ],
+      "claimIds": [
+        "M-phys-belle2014-tau-inference-context",
+        "C-phys-belle2014-tau-lifetime"
+      ]
+    },
+    {
+      "id": "borexino2015-electron-decay-boundary",
+      "candidate": "The selected spectrum bounds a hypothetical radiative electron-decay contribution.",
+      "alternative": "Different nonnegative signal strengths under the same constrained background and detector response.",
+      "discriminator": "Integrate the physical-region probability profile and retain the correlated systematic variations.",
+      "result": "conditional-support",
+      "limit": "This is a lower bound on the mean lifetime for the searched charge-violating e- -> gamma + nu channel. It neither measures an infinite lifetime nor excludes every electron-disappearance channel or determines a neutrino flavor or mass.",
+      "assumptions": [
+        "The pp-rate penalty adopts 134 cpd/100 t and uncertainty parameter 13.3 cpd/100 t from external radiochemical information. The separate fiducial term 2.7 represents the Borexino 2% mass uncertainty. The paper calls 13.3 a variance, but squares it in the penalty denominator. Other solar components retain their Borexino or SSM/MSW-LMA inputs; the whole fit is not assumption-free.",
+        "The efficiency 0.264 already includes the fiducial cut and multiplies the electron inventory of the entire 278 t inner vessel. Replacing that inventory with the 75.5 t fiducial inventory would apply the volume restriction twice. S=379 is a statistical upper limit, not an observed decay count.",
+        "The final bound mixes physical-region-normalized probability profiles over correlated estimator, quenching and fiducial-volume variations. An independent quadrature sum or a fixed 8% arithmetic discount does not reconstruct this procedure or its confidence coverage."
+      ],
+      "sourceIds": [
+        "borexino2015-electron-decay"
+      ],
+      "claimIds": [
+        "C-phys-borexino2015-electron-spectrum",
+        "C-phys-borexino2015-electron-decay-limit"
+      ]
     }
   ],
   "openObligations": [
     "Review independent jet experiments and gluon spin/color tests; a three-jet topology alone does not determine all QCD quantum numbers.",
-    "Review lepton-specific scattering, tau decay and electron stability constraints before generalizing across the lepton family. Reactor, solar, atmospheric and accelerator studies retain separate preparations, response models and fit boundaries; their scoped findings do not determine a universal mass-generation mechanism. Neutrino transport, astrophysical source and cosmological application models remain separate pending scopes.",
+    "Lepton labels retain species-specific scattering, finite muon/tau lifetimes and a channel-specific electron-decay bound. Raw event/response and full fit reconstructions remain unresolved. Reactor, solar, atmospheric and accelerator studies retain separate preparations and inference boundaries; their findings do not determine absolute neutrino masses or a universal mass-generation mechanism. Neutrino transport, astrophysical-source and cosmological applications remain separate pending scopes.",
     "Complete spectroscopy, confinement, lattice and all remaining source-card dependency reviews. No measured Level-0-to-quantum-field construction is established.",
     "For source card 1.4, review field-region/vacuum entanglement and specific quantum-information applications before extending the finite bipartite definitions. No QFT-to-entanglement formation edge or universal particle threshold is admitted.",
     "Verify the acquisition-to-table extraction, original stopping records and random-generator calibration for both Delft runs. Complete the supplementary proof review and compare independent experiments before stronger reproducibility or generality claims.",
@@ -7757,7 +7951,8 @@
     "Width inputs cover 1996-2000 at 172-209 GeV; branching inputs cover 1997-2000 at 183-207 GeV. Their data overlap, and no joint width/branching covariance is reviewed here.",
     "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred.",
     "The Bloom companion response and the Whitlow longitudinal/transverse reanalysis are reviewed; full raw-event, radiative-program and covariance replay remains outside this finite admission. The 1969 R=0 scaling extraction is not retrospectively a measured separation.",
-    "No event-level acquisition, calibration, template, likelihood or confidence-coverage replay is supplied; further claims require evidence for their stated species and observable."
+    "No event-level acquisition, calibration, template, likelihood or confidence-coverage replay is supplied; further claims require evidence for their stated species and observable.",
+    "Borexino electron-decay limits retain the searched channel, external solar constraints and simulated acceptance; raw spectra, response calibration and systematic probability profiles remain unreproduced."
   ],
   "checkIds": []
 }

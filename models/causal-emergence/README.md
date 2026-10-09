@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.09.2`: 1207 records, 983 connections,
-1289 claims and 392 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.09.4`: 1218 records, 997 connections,
+1304 claims and 395 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -27,6 +27,15 @@ retains the fixed mass, detector templates and confidence construction. Neither
 this interval nor its lifetime interpretation establishes stable quarks or a
 directly timed decay. Valence labels, color dimensions, parton distributions
 and detector counts remain different quantities.
+Lepton charge, chirality and flavor definitions retain their distinct model
+roles. Belle's tau lifetime is inferred from paired reconstructed proper lengths
+with simulated response and calibration. Borexino's electron-decay result is a
+conditional lower bound for one searched channel, with explicit exposure,
+acceptance and background inputs. Neither supplies universal lepton stability.
+Electron-proton scattering and hydrogen evidence retain their specified systems;
+lepton classification does not imply absence of hadronic scattering or establish
+atom formation. Existing precision and neutrino results retain their shared-data,
+radiative and flavor/mass-basis limitations.
 Capture spectroscopy keeps its two campaigns, crystal calibration, recoil and
 external atomic-mass input explicit; recalibration reuses the original data.
 LIONTRAP distinguishes original acquisition, experimental reanalysis,

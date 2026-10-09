@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1207 records, 983 connections, 1289 claims and 392 sources.
+The current graph contains 1218 records, 997 connections, 1304 claims and 395 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -310,8 +310,8 @@ order. Jet multiplicity, detector counts and representation dimensions do not
 define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
-Lepton and gluon source cards 1.2-1.3 remain open for their remaining
-species-specific evidence and proposed dependencies. Lattice computations
+Gluon source card 1.3 remains open for its remaining properties and proposed
+dependencies. Lattice computations
 retain their separate computational evidence.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
@@ -360,6 +360,46 @@ separate scope. Universal stable carriers, a later chronological confinement
 stage, arbitrary parent weights/minima and a SOMA objecthood proof are excluded.
 Framework and representation dependencies state the chosen model; they do not
 derive it from Level 0 or establish a necessary physical creation sequence.
+
+## Lepton labels and species-specific evidence
+
+Charged-lepton species, antiparticle charges, chirality and helicity are distinct
+labels. Neutrino production/detection flavors require a separately declared
+relation to propagation mass states. The minimal massless-neutrino field content
+does not derive that extension. The four admitted reactor, solar, atmospheric
+and accelerator preparations retain their own responses and inference limits;
+their findings do not fix absolute masses or a universal mass mechanism.
+
+Color singlets have no direct QCD color coupling in the declared model, but
+electromagnetic and weak scattering on hadronic matter remain possible. The
+existing MAMI electron-proton measurement supplies a specific example. Ordinary
+atomic organization is qualified to electrons in the specified electromagnetic
+hydrogen bound-state description. The hydrogen separation and approximate
+radiative correction do not reconstruct atom formation or give every lepton
+the same atomic role.
+
+[Belle's tau lifetime measurement](https://doi.org/10.1103/PhysRevLett.112.031801)
+separates a selected paired-three-pion sample, reconstructed proper lengths,
+simulated response and a calibrated exponential fit. The fit variable
+`t = l/(beta*gamma)` is a length, equal to proper time multiplied by `c`.
+Its charge-combined mean `290.17 +/- 0.53 (stat) +/- 0.33 (syst) fs` is a
+tau-specific inference; paired entries and calibration stages are not
+independent experimental replications.
+
+[Borexino's electron-decay search](https://doi.org/10.1103/PhysRevLett.115.231802)
+uses 408 live days and a constrained low-energy spectral fit. The hypothetical
+photon component plotted at the exclusion level is not an observed decay line.
+Its final `6.6e28 yr` lower bound at 90% confidence concerns `e- -> gamma + nu`;
+it does not establish eternal stability or exclude all disappearance channels.
+Global efficiency already includes fiducial selection and multiplies the
+full-vessel electron inventory. Solar/background constraints and correlated
+systematic profiles remain inputs, with no full analysis replay claimed.
+
+Existing MuLan, electron-moment, PIENU and W/Z records keep their radiative,
+channel-selection and covariance boundaries. A derived Fermi coupling and a
+universality-constrained branching fit do not provide independent confirmations.
+Field/framework dependencies supply no measured arising or maintenance law,
+numerical parent weights, universal carrier minima or proof of SOMA objecthood.
 
 ## Bipartite states and Bell tests
 
