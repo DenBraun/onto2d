@@ -23,13 +23,13 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 182 remain on the
+graph. Of the 249 original source cards, 181 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-67 cards is a source-review census, not a percentage of scientifically supported
+68 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 
-The current graph contains 1188 records, 955 connections, 1262 claims and 388 sources.
+The current graph contains 1207 records, 983 connections, 1289 claims and 392 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -121,7 +121,18 @@ belong to the current claims.
    Their deposited tables reproduce 245 and 300 accepted trials, the printed
    correlation counts and conditional null-tail arithmetic. Acquisition-to-table
    extraction, stopping decisions and RNG calibration still need verification.
-   Continue with separated structure functions, spectroscopy, gluon properties,
+   Card 1.1 is qualified to declared quark quantum numbers, mass conventions,
+   a charge-weighted parton response and existing valence/Fock, spectroscopy,
+   lattice and hadron-production evidence. Bloom's apparatus and correction
+   record shares the historical SLAC sample; Whitlow's longitudinal/transverse
+   separation is a correlated reanalysis of archived measurements. CDF's
+   species-specific top-width interval retains its fixed mass, detector response
+   and conditional lifetime interpretation. Universal stable carriers, a
+   chronological confinement stage and original weights/minima are excluded.
+   Full scattering and width analyses remain unreproduced; their reported
+   discrepancies and source limits stay explicit. General confinement remains
+   a separate open card.
+   Continue with independent structure-function tests, spectroscopy, gluon properties,
    lepton-specific evidence and the remaining dependency claims; a theory input
    to an interpretation does not establish a formation process. Field-region
    entanglement, specific quantum-information applications and independent

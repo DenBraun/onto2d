@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/1",
-      "title": "Quarks"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/2",
       "title": "Leptons"
     },
