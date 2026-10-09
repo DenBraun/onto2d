@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.04.1`: 1188 records, 955 connections,
-1262 claims and 388 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.09.2`: 1207 records, 983 connections,
+1289 claims and 392 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -18,6 +18,15 @@ measurements distinguish production years, loss diagnostics and combined
 lifetime estimates with shared-data and systematic-error limits. Four-flavor
 QCD+QED mass splittings retain calibration inputs, volume corrections and
 convention-dependent components.
+Quark records distinguish model quantum numbers and mass prescriptions from
+inclusive electron-scattering response and the conditional parton interpretation.
+The Bloom and Breidenbach reports share their SLAC sample; Whitlow's later
+longitudinal/transverse separation reanalyses archived cross sections with
+correlated normalization and radiative corrections. CDF's top-width interval
+retains the fixed mass, detector templates and confidence construction. Neither
+this interval nor its lifetime interpretation establishes stable quarks or a
+directly timed decay. Valence labels, color dimensions, parton distributions
+and detector counts remain different quantities.
 Capture spectroscopy keeps its two campaigns, crystal calibration, recoil and
 external atomic-mass input explicit; recalibration reuses the original data.
 LIONTRAP distinguishes original acquisition, experimental reanalysis,

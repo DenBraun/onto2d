@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1188 records, 955 connections, 1262 claims and 388 sources.
+The current graph contains 1207 records, 983 connections, 1289 claims and 392 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -310,11 +310,56 @@ order. Jet multiplicity, detector counts and representation dimensions do not
 define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
-Quark, lepton and gluon source cards 1.1-1.3 remain open for the remaining
-scattering, spectroscopy, species-specific evidence and proposed dependencies.
-Lattice computations need computational evidence.
+Lepton and gluon source cards 1.2-1.3 remain open for their remaining
+species-specific evidence and proposed dependencies. Lattice computations
+retain their separate computational evidence.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
+
+## Quark fields and inclusive scattering
+
+Quark spin, electric charge, flavor and color representation are declared model
+assignments. Three color components do not mean three constituent particles.
+Renormalized masses require a prescription and scale; a fitted top-mass input
+does not assign the same mass convention to every flavor. The electromagnetic
+current and leading charge-weighted parton response are formal definitions,
+with active flavors, approximation and factorization boundaries made explicit.
+Parton distributions, reconstructed jets and fragmentation are distinct from
+counts of isolated quarks.
+
+[Bloom et al.](https://doi.org/10.1103/PhysRevLett.23.930) supplies the
+apparatus, electron selection and radiative corrections for the historical
+SLAC sample also interpreted by Breidenbach. These papers do not supply
+independent replications. The small-angle scaling interpretation retains its
+transverse-dominance assumption.
+
+[Whitlow et al.](https://doi.org/10.1016/0370-2693(90)91176-C) separates the
+longitudinal and transverse response through a reanalysis of archived SLAC
+cross sections at different virtual-photon polarizations. Radiative corrections,
+relative normalization, bin centering and correlated fits are explicit inputs.
+The reported Rd-Rp difference is consistent with zero within its errors;
+it does not establish exact equality. Interpreting these responses in terms
+of partons requires the stated approximations; neither result by itself
+determines all six flavors or observes isolated colored particles. Printed formulas
+and normalization discrepancies in the selected author report remain explicit;
+the numerical fit and original acquisition are not reproduced.
+
+[CDF's top-width analysis](https://doi.org/10.1103/PhysRevLett.111.202001)
+separates selected event counts, simulated detector response, a joint width/jet
+calibration fit at fixed top mass and its reported confidence interval. Its width-to-lifetime
+interpretation and comparison with an adopted hadronization scale are
+species-specific and conditional; no directly timed decay is claimed.
+
+Card 1.1 is qualified to these model definitions and scoped evidence, together
+with the existing spectroscopy, valence/Fock, lattice and hadron-production
+records. Net valence numbers do not imply a permanent valence-only population;
+color-singlet algebra does not derive real-time hadron formation. The Lee
+fractional-electric-charge search constrains its selected material and is not
+a universal color-confinement test. General confinement remains card 1.7's
+separate scope. Universal stable carriers, a later chronological confinement
+stage, arbitrary parent weights/minima and a SOMA objecthood proof are excluded.
+Framework and representation dependencies state the chosen model; they do not
+derive it from Level 0 or establish a necessary physical creation sequence.
 
 ## Bipartite states and Bell tests
 

@@ -11046,6 +11046,177 @@
       ]
     },
     {
+      "nodeId": "phys:quark-mass-prescription",
+      "role": "definition",
+      "denotes": "The adopted scale and prescription of a quark mass parameter, distinct from a measured hadron or reconstructed-event mass.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-quark-mass-prescription"
+      ]
+    },
+    {
+      "nodeId": "phys:quark-electromagnetic-current",
+      "role": "definition",
+      "denotes": "The specified color-contracted, charge-weighted quark electromagnetic current, not an observed free-quark population.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-quark-electromagnetic-current"
+      ]
+    },
+    {
+      "nodeId": "phys:quark-parton-response",
+      "role": "definition",
+      "denotes": "A conditional charge-squared-weighted flavor response and massless leading Callan-Gross relation, distinct from measured structure functions or a free-particle count.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-quark-parton-response"
+      ]
+    },
+    {
+      "nodeId": "phys:inclusive-dis-response",
+      "role": "definition",
+      "denotes": "The one-photon inclusive response and longitudinal/transverse separation convention, not a separated measurement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-inclusive-dis-response"
+      ]
+    },
+    {
+      "nodeId": "phys:bloom1969-response-context",
+      "role": "experimental-context",
+      "denotes": "The detector/background response and two-stage radiative procedure applied to the shared 1969 electron sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bloom1969-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bloom1969-corrected-crosssections",
+      "role": "scoped-phenomenon",
+      "denotes": "The companion report's response-corrected electron continuum spectra/cross sections and their selected uncertainties.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bloom1969-corrected-crosssections"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-archive-context",
+      "role": "experimental-context",
+      "denotes": "The archived cross-section ensemble and kinematic coverage reused by the published global analysis.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-whitlow1990-archive-context"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-response-context",
+      "role": "experimental-context",
+      "denotes": "The adopted radiative model, correlated relative/absolute normalization anchors and bin-centering response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-whitlow1990-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-normalized-crosssections",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported fitted normalization factors and corrected cross-section ensemble used as the separation inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-whitlow1990-normalized-crosssections"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-separation-context",
+      "role": "model-context",
+      "denotes": "The correlated reduced-cross-section regressions and distinct Rp-model-dependent target-difference analysis.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-whitlow1990-separation-context"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-separated-r",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported kinematic longitudinal/transverse ratios, including the dependent within-bin proton/deuteron combination.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-whitlow1990-separated-r"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-target-difference",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported model-dependent target-response difference with separate statistical/systematic errors, not exact equality.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-whitlow1990-target-difference"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-comparison-context",
+      "role": "model-context",
+      "denotes": "The named historical model comparisons and an explicitly separate leading-parton interpretation convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-whitlow1990-comparison-context"
+      ]
+    },
+    {
+      "nodeId": "phys:whitlow1990-model-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "The published conditional disagreement/compatibility pattern for the selected response models, not a direct quark spin measurement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-whitlow1990-model-comparison"
+      ]
+    },
+    {
+      "nodeId": "phys:cdf2013-top-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The declared collider exposure, object selections and category assignment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cdf2013-top-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cdf2013-top-response-context",
+      "role": "model-context",
+      "denotes": "The detector, reconstruction, background and simulation inputs, including auxiliary calibration data.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cdf2013-top-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cdf2013-top-inference-context",
+      "role": "model-context",
+      "denotes": "The conditional unbinned fit and confidence-band inversion, separate from exposure and response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cdf2013-top-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cdf2013-top-sample",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported selected event sample, not pure signal or released event-level mass data.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cdf2013-top-sample"
+      ]
+    },
+    {
+      "nodeId": "phys:cdf2013-top-width-interval",
+      "role": "scoped-phenomenon",
+      "denotes": "The source-reported conditional top-width bounds, not a Gaussian width measurement or a measured decay time.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cdf2013-top-width-interval"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

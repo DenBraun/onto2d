@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.04.1",
+    "version": "2026.10.09.2",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial source reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural records. Formal specifications, computational models, experimental preparations, reported observations and conditional interpretations have distinct meanings and evidence. Reviewed studies retain their own systems, selections, observables, uncertainty limits and unresolved contradictions. Physical records distinguish quantum-field definitions, scattering and decay measurements, Bell tests, vacuum quantities, QED and QCD running, lattice spectra and charge searches. Calibrated masses, detector unloading times, storage-loss rates and intrinsic-lifetime interpretations are separate quantities. Neutron survival studies retain production years, diagnostic controls, shared data and non-decay-loss corrections. Four-flavor QCD+QED mass splittings retain physical-point inputs, finite-volume prescriptions, convention-dependent components and the additional experimental input to a calibrated ratio. Capture-based neutron-mass inference distinguishes campaign angles, crystal calibration, nuclear recoil, unit conversions, adopted isotope masses and recalibration of shared data. Penning-trap inputs distinguish charge-normalized frequency ratios, voltage controls, neutral-atom corrections and correlated mass fits. LIONTRAP separates original acquisition, experimental reanalysis, shared-data controls and conditional electrode-geometry predictions. Proton-decay searches separate selected channel counts, nuclear and detector response, shared exposure, conditional partial-lifetime bounds and printed arithmetic. Magnetic-moment records distinguish electron and proton spin/cyclotron inference from neutron/mercury precession and its external absolute scale. Electron resonance fits, cavity calibration and radiative interpretations retain separate inputs and limits. Shared campaigns, source-specific correction conventions and uncertainty aggregation remain explicit. Cross-domain construction, universal carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Light-flavor families retain approximate representation conventions, a conditional historical Omega event and a response-corrected meson transition ratio; these do not establish real-time family formation. Perturbative amplitude and state-boundary conventions are separate from a synthetic kinematic check and from measured particle populations. No universal downward confinement mechanism is admitted. Free-field time evolution, historical electroweak mass relations and reactor-neutrino phase conventions retain specified models. Collider candidates and reactor signals are separated from response, backgrounds and fitted inferences; finite algebra does not reproduce those experiments. Solar active-flavor decomposition, atmospheric angular distributions and Higgs tau-pair evidence retain their original acquisitions and conditional fits. Matter evolution and coupling-rate definitions state their approximation boundaries; reused samples and post-fit displays are not independent experiments. Accelerator tau appearance and historical W/Z observations preserve selected candidates, adopted detector response and conditional original inferences. The single-doublet Higgs background and charged-fermion coupling are formal definitions with supplied parameters, distinct from a measured mass hierarchy or a universal stability mechanism. Weak charged/neutral currents and low-energy exchange are formal model definitions. LEP Z scans, correlated line-shape parameters and derived inclusive widths/fractions remain distinct; W width and branching combinations retain separate campaigns and fit assumptions. Running-width, energy-pole and exponential-lifetime conventions are explicit, and no directly timed lifetime or stable weak-boson carrier is inferred.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "080f55f1cbcde45906d8899762817d0b3eb5378f397b3611827e082433df5b34",
+      "sha256": "5b832c0d23b2a37dbf6d7a6a759aa9522b0ef71b911f164f37e6bb9eb2211ee2",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6649,7 +6649,7 @@
           "Pages 936-937: R-dependent structure function and scaling; Figure 2",
           "Pages 937-939: competing models, sum rules and references"
         ],
-        "limit": "Primary article pages 935-939 read, including both figures and model discussion; pages 935-937 visually checked. Page 939 also begins an unrelated article, which supplies no evidence here. No underlying spectrum, detector simulation or sum-rule integral is independently reproduced. The companion apparatus/results article cited as reference 1 has not yet been read."
+        "limit": "Primary article pages 935-939 read, including both figures and model discussion; pages 935-937 visually checked. Page 939 also begins an unrelated article, which supplies no evidence here. No underlying spectrum, detector simulation or sum-rule integral is independently reproduced. The companion apparatus/results source is separately reviewed as bloom1969 using the complete SLAC-PUB-642 author report; its response corrections supply the same acquisition, not independent replication."
       }
     },
     {
@@ -6730,7 +6730,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "effe2c1c5424c8f1e5c8bd1578cf7b2f1ae95a3f9cca337527e77f63ac15ad31",
+      "sha256": "d85978a1c742f018de5bf991676236b7f0b999e3407eccc2c476c35a9fe4eb47",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -10293,6 +10293,113 @@
           "Sections 7.6-7.7, author pages 140-141, Table 7.5 and Equation 7.11; Figure 7.3 caption on author page 144: combined width and parameter convention"
         ],
         "limit": "Read selected author-v4 passages on pages 86-89, 93-95, 129-138, 140-141 and 196, plus the Figure 7.3 caption on page 144; visually checked pages 88, 93, 94, 132, 140, 141 and 196. Version 4 is dated 19 September 2013; publisher typesetting and the complete 242-page report were not independently reviewed. The topology-fraction, correlation and OPAL uncertainty discrepancies remain explicit claim limits."
+      }
+    },
+    {
+      "id": "pdg2025-structure-functions",
+      "kind": "research-publication",
+      "title": "Structure Functions: Review of Particle Physics, 2025 update",
+      "authors": [
+        "E. C. Aschenauer",
+        "R. S. Thorne",
+        "R. Yoshida"
+      ],
+      "year": 2025,
+      "doi": null,
+      "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-structure-functions.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-formal-passages",
+        "locators": [
+          "Pages 1-3, Sections 18.1-18.2, Equations 18.1-18.8: DIS kinematics, lepton/hadron tensors and unpolarized cross sections",
+          "Pages 4-5, Section 18.2.1, Equations 18.16-18.18 and the following Callan-Gross statement: negligible-target-mass convention and the electromagnetic quark-parton response",
+          "Pages 5-7, opening of Section 18.2.2 through Equation 18.23: QCD corrections, coefficient/PDF convolution, scale dependence and required initial distributions"
+        ],
+        "limit": "Revised August 2025; inspected PDF footer 1 December 2025. Read pages 1-7 for the listed kinematics, unpolarized response, leading electromagnetic parton expression and correction boundaries; visually checked pages 1, 3-5 and 7. Polarized and weak-current formulas on those pages were read as context but are not admitted here. Figure 18.2 and its fit discussion are not new experimental evidence; its upstream datasets, PDF fits, complete factorization proof and evolution kernels are not independently reviewed or replayed. No chapter-specific DOI is asserted. Only the listed formal passages support this block; later sections and their numerical combinations are outside its scope."
+      }
+    },
+    {
+      "id": "bloom1969",
+      "kind": "research-publication",
+      "title": "High-Energy Inelastic e-p Scattering at 6 Degrees and 10 Degrees",
+      "authors": [
+        "E. D. Bloom",
+        "D. H. Coward",
+        "H. DeStaebler",
+        "J. Drees",
+        "G. Miller",
+        "L. W. Mo",
+        "R. E. Taylor",
+        "M. Breidenbach",
+        "J. I. Friedman",
+        "G. C. Hartmann",
+        "H. W. Kendall"
+      ],
+      "year": 1969,
+      "doi": "10.1103/PhysRevLett.23.930",
+      "url": "https://www.slac.stanford.edu/pubs/slacpubs/0500/slac-pub-0642.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-author-report",
+        "locators": [
+          "SLAC-PUB-642 pages 2-4: electron-only acquisition, spectrometer response, target-density and background corrections",
+          "SLAC-PUB-642 pages 4-6: elastic radiative-tail subtraction, two-dimensional unfolding and error conventions",
+          "SLAC-PUB-642 pages 6-12, Table I and Figures 1-2: corrected spectra, differential cross sections and companion-paper provenance"
+        ],
+        "limit": "Read all 12 pages of the August 1969 SLAC-PUB-642 author report, including references, Table I and both figure captions. Visually checked pages 9-12, the table and both figures. Publisher metadata and companion-paper identity checked; the publisher PDF and upstream correction papers are not independently read. The abstract rounds incident energies to 7-17 GeV; the actual settings include 17.696 GeV. The uncorrected panel is already detector/background corrected and is only before radiative correction. Raw events, response calibration and radiative programs are not replayed."
+      }
+    },
+    {
+      "id": "whitlow1990-r",
+      "kind": "research-publication",
+      "title": "A Precise Extraction of R = sigma_L/sigma_T from a Global Analysis of the SLAC Deep Inelastic e-p and e-d Scattering Cross Sections",
+      "authors": [
+        "L. W. Whitlow",
+        "S. Rock",
+        "A. Bodek",
+        "E. M. Riordan",
+        "S. Dasu"
+      ],
+      "year": 1990,
+      "doi": "10.1016/0370-2693(90)91176-C",
+      "url": "https://www.slac.stanford.edu/pubs/slacpubs/5250/slac-pub-5284.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-author-report",
+        "locators": [
+          "SLAC-PUB-5284 pages 2-3 and 9-10: eight archived experiments, 5835 cross sections and response definitions",
+          "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits"
+        ],
+        "limit": "Read all 17 pages of the June 1990 SLAC-PUB-5284/UR-1102 author report, including references and captions; visually checked pages 3, 5, 7-8, 12-13 and 16-17. Figure 2 has scan defects; no point-by-point digitization is claimed. Publisher metadata checked; its PDF and the thesis numerical tables were not retrieved. Author order follows the inspected report (the publisher landing page reverses the last two names). The reviewed author report prints Equation 1 without the cos^2(theta/2) factor and its epsilon line without the factor 2. The declared response convention is the equivalent first-Born form derived from the separately cited PDG equations; this textual mismatch does not establish an error in the authors' numerical analysis. The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair. The report's Rfit is a dependent interpolation to 139 lepton-scattering measurements; it is not a new observation. The author report prints b1=0.635; that parameterization and the underlying numerical tables/covariance are not implemented or replayed here."
+      }
+    },
+    {
+      "id": "cdf2013-top-width",
+      "kind": "research-publication",
+      "title": "Direct Measurement of the Total Decay Width of the Top Quark",
+      "authors": [
+        "CDF Collaboration"
+      ],
+      "year": 2013,
+      "doi": "10.1103/PhysRevLett.111.202001",
+      "url": "https://arxiv.org/pdf/1308.4050v2",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-full-text-passages",
+        "locators": [
+          "Author v2, pages 3-4: full Run II exposure, lepton+jets channel, object selection and five exclusive tagging/jet categories",
+          "Author v2, pages 4-5, Table I: selected-category composition, observed counts and conditional signal/background expectations",
+          "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response",
+          "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion",
+          "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison"
+        ],
+        "limit": "Read the scientific abstract and body on author-v2 pages 3-6 and the referenced-method bibliography on page 7; visually checked pages 5-6, Tables I-II and Figures 1-2. The arXiv revision is 18 October 2013 and publisher metadata identifies PRL 111, 202001 (2013); the regenerated PDF date is not a new publication. The publisher PDF and cited detector, simulation and statistics papers were not independently reviewed. No event, detector-response, fit or confidence-coverage replay is claimed."
       }
     }
   ],
@@ -30779,13 +30886,20 @@
           "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions",
           "role": "limits",
           "note": "Supports the stated formal definition within the reviewed passage."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison",
+          "role": "limits",
+          "note": "Species-specific width inference and an adopted timescale qualify the stability claim; no direct timing is supplied."
         }
       ],
       "checkIds": [],
       "limitations": [
         "Three color components are a representation dimension, not three constituent objects or a minimum stable assembly.",
-        "Quarks are not universally stable free objects. The top quark decays before hadronization; confinement and flavor-changing interactions require their own scoped treatment.",
-        "Field labels do not establish individual trajectories, persistent flavor across all interactions or a unique generative route."
+        "Quark species labels do not imply universally stable free objects. The separate CDF top-width result is conditional on its fixed mass and detector/fit model; its decay-before-hadronization interpretation additionally adopts a hadronization timescale, with neither time directly measured. No top result is transferred to every flavor.",
+        "Field labels do not establish individual trajectories, persistent flavor across all interactions or a unique generative route.",
+        "Confinement is not a later temporal stage generated by these labels. A field or representation dependency supplies no universal arising/maintenance necessity, parent weight, carrier minimum or proof of SOMA objecthood."
       ]
     },
     {
@@ -54005,6 +54119,816 @@
       "contextIds": [
         "lep2013-w-branching-inference"
       ]
+    },
+    {
+      "id": "D-phys-quark-mass-prescription",
+      "kind": "review-finding",
+      "statement": "A renormalized quark mass requires a prescription. The modified-minimal-subtraction mass mbar_q(mu_R) depends on the renormalization scale mu_R; the referenced summary table quotes u,d,s at 2 GeV and c,b at a scale equal to the respective running mass. A perturbative pole-mass prescription is distinct and has an ambiguity of order the QCD scale when related to observables.",
+      "scope": "Specified quark-field parameters and electromagnetic scattering conventions; no isolated particle-instance admission or independent experimental extraction.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These are definitions and reporting conventions, not new numerical mass determinations. No current quark-mass average, loop conversion or renormalization-group evolution is reproduced.",
+        "A running mass, a perturbative pole mass, a constituent-model mass and a reconstructed hadron or top-event mass are not interchangeable without the relevant model and conversion. The direct top reconstruction in the referenced table is not silently identified with a specified short-distance mass.",
+        "Neglecting a quark mass compared with a hard momentum transfer is a stated approximation, not evidence that the physical mass parameter vanishes. Scale dependence is not a time evolution or a proof of stable colored particles."
+      ]
+    },
+    {
+      "id": "D-phys-quark-electromagnetic-current",
+      "kind": "review-finding",
+      "statement": "With e>0 the positron charge, define the quark contribution J_em,q^mu=sum_f Q_f*sum_a qbar_fa*gamma^mu*q_fa and L_em,q=-e*A_mu*J_em,q^mu. Here f labels the declared quark flavors, a is a contracted fundamental-color index, and Q_f is +2/3 for u,c,t or -1/3 for d,s,b. This electromagnetic vector current is flavor diagonal in the stated mass basis.",
+      "scope": "Specified quark-field parameters and electromagnetic scattering conventions; no isolated particle-instance admission or independent experimental extraction.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3, Equation 10.2 and fermion/neutrino paragraphs: mass-basis charged-fermion Higgs coupling and minimal-model neutrino boundary",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The charge assignments and current normalization are model inputs. The color contraction makes this current a color singlet; electric charge, color representation and flavor are different labels. A color-singlet hadron need not be electrically neutral.",
+        "Flavor diagonality of this electromagnetic current is not conservation of each flavor under every interaction: the separately specified weak charged current contains flavor mixing. It supplies no permanent individual trajectory or universal quark lifetime.",
+        "No isolated colored quark, direct charge measurement of a free quark or electromagnetic vertex calculation is admitted. A bulk-material null search for fractional electric charge is not a measurement of color charge or a universal proof of confinement."
+      ]
+    },
+    {
+      "id": "D-phys-quark-parton-response",
+      "kind": "review-finding",
+      "statement": "For unpolarized electromagnetic DIS in the leading massless collinear spin-one-half quark-parton model, use Q2=-q^2>0, x=Q2/(2*P.q), and F2_gamma=x*sum_f Q_f^2*(q_f+qbar_f). The flavor distributions are evaluated at the stated scale; their sum includes quarks and antiquarks rather than net valence alone. In the negligible-target-mass limit the same model gives 2*x*F1_gamma=F2_gamma, hence FL_gamma=F2_gamma-2*x*F1_gamma=0.",
+      "scope": "Specified quark-field parameters and electromagnetic scattering conventions; no isolated particle-instance admission or independent experimental extraction.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 1-3, Sections 18.1-18.2, Equations 18.1-18.8: DIS kinematics, lepton/hadron tensors and unpolarized cross sections",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 4-5, Section 18.2.1, Equations 18.16-18.18 and the following Callan-Gross statement: negligible-target-mass convention and the electromagnetic quark-parton response",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 5-7, opening of Section 18.2.2 through Equation 18.23: QCD corrections, coefficient/PDF convolution, scale dependence and required initial distributions",
+          "role": "supports",
+          "note": "Supports only the stated formal convention and its approximation boundaries; no independent measurement is supplied."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a leading electromagnetic, incoherent parton-response approximation with negligible quark masses and transverse momenta at large Q2, not an identity at every measured kinematic point. The target-mass-neglected FL convention must not be silently substituted into the finite-mass R relation. QCD radiation, finite masses and power corrections can change scaling and longitudinal response.",
+        "The Q_f^2 weights form one flavor-summed response: it does not by itself separate each flavor, determine charge signs, count exactly three constituents or establish six flavors experimentally. The flavor PDFs already include the color sum; no additional factor of three is applied to this DIS formula.",
+        "Beyond the leading model, structure functions involve coefficient/PDF convolutions; Bjorken x is then not an eventwise measured struck-parton momentum fraction. Factorization scale and the requisite distributions remain specified inputs. Evolution does not determine their initial functions here, and no PDF extraction or global fit is reproduced.",
+        "A small or nonzero measured longitudinal response is compared with a specified model; it is not forced by this definition. This node is not a premise of the historical electron-spectrum measurement or longitudinal/transverse separation. It admits no free colored trajectory, microscopic fragmentation history, carrier minimum or temporal construction rule."
+      ]
+    },
+    {
+      "id": "D-phys-inclusive-dis-response",
+      "kind": "review-finding",
+      "statement": "For unpolarized one-photon electron-nucleon scattering with negligible electron mass, use Q^2=4EEprime sin^2(theta/2)>0, nu=E-Eprime and x=Q^2/(2M nu). R=sigmaL/sigmaT=F2(1+4M^2*x^2/Q^2)/(2xF1)-1. The equivalent polarization convention is epsilon=[1+2(1+nu^2/Q^2)tan^2(theta/2)]^-1, Gamma=alpha*Eprime*(1/x-1)/[4*pi^2*M*E*(1-epsilon)], and Y=(d^2sigma/dOmega dEprime)/Gamma=sigmaT+epsilon*sigmaL. At fixed x,Q^2, the reduced-response intercept and slope determine R; nonzero intercept and a span in epsilon are required.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 1-3, Sections 18.1-18.2, Equations 18.1-18.8: DIS kinematics, lepton/hadron tensors and unpolarized cross sections",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 2-3 and 9-10: eight archived experiments, 5835 cross sections and response definitions",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The reviewed author report prints Equation 1 without the cos^2(theta/2) factor and its epsilon line without the factor 2. The declared response convention is the equivalent first-Born form derived from the separately cited PDG equations; this textual mismatch does not establish an error in the authors' numerical analysis.",
+        "Use hbar=c=1, the target-nucleon rest frame, inelastic 0<x<1, Eprime>0 and nonzero sigmaT; the Hand flux vanishes at the elastic endpoint x=1. This is a declared Born response, before the separately specified radiative and detector treatment. A finite-Q^2 response relation is not the massless leading-parton Callan-Gross limit or a theory-free gluon/quark census."
+      ]
+    },
+    {
+      "id": "M-phys-bloom1969-response-context",
+      "kind": "method",
+      "statement": "For the existing SLAC electron-only acquisition, Bloom describes a 7 cm liquid-hydrogen target, beam-current monitors, a magnetic spectrometer and electron/pion discrimination. Correct dead time, tracking and identification efficiency, target-density changes, empty-target yields and positron-estimated backgrounds. Subtract the calculated elastic radiative tail, then unfold all spectra at each angle in two dimensions using the peaking approximation, interpolation and some extrapolation. SLAC and MIT analyses of the same data are averaged.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 2-4: electron-only acquisition, spectrometer response, target-density and background corrections",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 4-6: elastic radiative-tail subtraction, two-dimensional unfolding and error conventions",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Only the scattered electron is selected; the hadronic recoil mass is inferred from electron kinematics. The corrected cross sections reuse the acquisition underlying the admitted Breidenbach spectrum/scaling, not an independent experiment.",
+        "Table I errors are one-standard-deviation counting and electron-detection uncertainties propagated through unfolding; combined systematic errors are excluded and estimated as 5% above scattered energy 5 GeV, rising to 10% near 3 GeV.",
+        "The uncorrected panel is already detector/background corrected and is only before radiative correction. Raw events, response calibration and radiative programs are not replayed."
+      ],
+      "contextIds": [
+        "bloom1969-response"
+      ]
+    },
+    {
+      "id": "C-phys-bloom1969-corrected-crosssections",
+      "kind": "review-finding",
+      "statement": "The report gives corrected d^2sigma/(dOmega dEprime) for W>=2 GeV at 6 and 10 degrees. Table I spans incident settings 7.000-17.696 GeV; its 6-degree and 10-degree columns use 10^-31 and 10^-32 cm^2/(sr GeV), respectively. Figure 1 separates pre-radiative spectra, the elastic tail and corrected spectra; Figure 2 shows the continuum changing much less with momentum transfer than the resonances. These are the companion data underlying the admitted Breidenbach interpretation.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 6-12, Table I and Figures 1-2: corrected spectra, differential cross sections and companion-paper provenance",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 4-6: elastic radiative-tail subtraction, two-dimensional unfolding and error conventions",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Only the scattered electron is selected; the hadronic recoil mass is inferred from electron kinematics. The corrected cross sections reuse the acquisition underlying the admitted Breidenbach spectrum/scaling, not an independent experiment.",
+        "Table I errors are one-standard-deviation counting and electron-detection uncertainties propagated through unfolding; combined systematic errors are excluded and estimated as 5% above scattered energy 5 GeV, rising to 10% near 3 GeV.",
+        "The uncorrected panel is already detector/background corrected and is only before radiative correction. Raw events, response calibration and radiative programs are not replayed."
+      ],
+      "contextIds": [
+        "bloom1969-response"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-archive-context",
+      "kind": "method",
+      "statement": "The 1990 analysis reuses 5835 electron-proton and electron-deuteron cross-section measurements from eight 1970-1985 SLAC experiments using the 1.6, 8 and 20 GeV spectrometers. The archive supplies varied beam/scattering settings spanning 0.1<=x<=0.9 and 0.6<=Q^2<=20 (GeV/c)^2; this record identifies the reused input sample, not a fresh 1990 exposure.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 2-3 and 9-10: eight archived experiments, 5835 cross sections and response definitions",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here."
+      ],
+      "contextIds": [
+        "whitlow1990-reanalysis"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-response-context",
+      "kind": "method",
+      "statement": "Recalculate internal Bardin and external Tsai radiative corrections with experiment-specific target models. Fit smooth cross-section models with floating relative normalizations anchored to E140; E89a instead uses elastic comparisons because its kinematics are disjoint. Anchor hydrogen through the assumed common E49b proton/deuteron normalization. Preserve normalization correlations, correction uncertainty versus epsilon, and bin-centering adjustments.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair."
+      ],
+      "contextIds": [
+        "whitlow1990-reanalysis"
+      ]
+    },
+    {
+      "id": "C-phys-whitlow1990-normalized-crosssections",
+      "kind": "review-finding",
+      "statement": "Table 1 reports fitted relative cross-section multipliers, not independent luminosity measurements: E139 deuterium is 1.008 +/-0.004 statistical +/-0.002 systematic relative to E140=1.000; E49b hydrogen uses the common 0.981 normalization fixed by its deuterium fit. The corrected, mutually normalized and bin-centered cross sections supply the subsequent separation; the complete input table and covariance are not reconstructed here.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair."
+      ],
+      "contextIds": [
+        "whitlow1990-reanalysis"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-separation-context",
+      "kind": "method",
+      "statement": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=1/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair.",
+        "The reviewed author report prints Equation 1 without the cos^2(theta/2) factor and its epsilon line without the factor 2. The declared response convention is the equivalent first-Born form derived from the separately cited PDG equations; this textual mismatch does not establish an error in the authors' numerical analysis."
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "C-phys-whitlow1990-separated-r",
+      "kind": "review-finding",
+      "statement": "The 176 regressions report mean chi^2 per degree of freedom 0.91 and nonconstant R values across the stated x,Q^2 range. After comparing target differences, the authors combine Rp and Rd within bins, respecting asymmetric parent distributions; Figure 2 displays these global results separately from improved E140 averages of Rd and RFe. A constant R=0 or R=0.18 is an adopted extraction approximation, not what all these separated data measure.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair.",
+        "No numerical point set, slope/intercept covariance, fit code or full likelihood has been replayed. The combined R points are dependent transformations, not additional acquisitions."
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "C-phys-whitlow1990-target-difference",
+      "kind": "review-finding",
+      "statement": "The separate 86 target-ratio regressions have reported mean chi^2 per degree of freedom 0.99. Their full-range average is Rd-Rp=-0.001 +/-0.009 statistical +/-0.009 systematic, compatible with zero over the reviewed kinematics. This finite-precision consistency result does not establish exact target equality or independently measure a free-neutron response.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair.",
+        "The target-difference regression adopts an Rp model; it is not a subtraction of independent already-combined R points. Converting deuteron response into a neutron equality additionally requires a nuclear treatment not admitted here."
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-comparison-context",
+      "kind": "method",
+      "statement": "Compare the separated R dependence with the report's specified perturbative-QCD curves using CDHS quark distributions, with and without kinematic target-mass contributions. Keep its spin-zero diquark alternatives and preliminary-data-fitted twist-4 phenomenology distinct. The separately declared leading charge-weighted parton response clarifies what a massless spin-one-half limit means; it is not a retroactive PDF input or a reconstruction of these historical curves.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 4-5, Section 18.2.1, Equations 18.16-18.18 and the following Callan-Gross statement: negligible-target-mass convention and the electromagnetic quark-parton response",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The compared curves adopt the cited perturbative calculation, CDHS quark distributions and optionally kinematic target-mass terms. These are specified model inputs, not a unique prediction of all QCD or a direct count/spin measurement of isolated quarks.",
+        "The twist-4 phenomenology had used preliminary Rd results; its agreement is not an independent prediction. No higher-twist parameter, primordial transverse momentum or universal exclusion of every diquark correlation is admitted.",
+        "The report's Rfit is a dependent interpolation to 139 lepton-scattering measurements; it is not a new observation. The author report prints b1=0.635; that parameterization and the underlying numerical tables/covariance are not implemented or replayed here."
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "C-phys-whitlow1990-model-comparison",
+      "kind": "review-finding",
+      "statement": "In the studied SLAC range the report finds R systematically above the displayed perturbative calculation, including its target-mass variant, while the selected spin-zero diquark curves disagree with the target/kinematic pattern. The finite-Q^2 longitudinal response therefore qualifies a strict zero-R picture. Higher-twist effects are a proposed explanation, not a uniquely identified microscopic constituent population or proof against complete QCD.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits",
+          "role": "supports",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The compared curves adopt the cited perturbative calculation, CDHS quark distributions and optionally kinematic target-mass terms. These are specified model inputs, not a unique prediction of all QCD or a direct count/spin measurement of isolated quarks.",
+        "The twist-4 phenomenology had used preliminary Rd results; its agreement is not an independent prediction. No higher-twist parameter, primordial transverse momentum or universal exclusion of every diquark correlation is admitted.",
+        "The report's Rfit is a dependent interpolation to 139 lepton-scattering measurements; it is not a new observation. The author report prints b1=0.635; that parameterization and the underlying numerical tables/covariance are not implemented or replayed here."
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "M-phys-bloom1969-corrected-crosssections",
+      "kind": "method",
+      "statement": "The corrected continuum cross sections use the existing 1969 SLAC acquisition and Bloom's detector/background and radiative treatment; both analysis teams process the same measured spectra.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 2-4: electron-only acquisition, spectrometer response, target-density and background corrections",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 4-6: elastic radiative-tail subtraction, two-dimensional unfolding and error conventions",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 6-12, Table I and Figures 1-2: corrected spectra, differential cross sections and companion-paper provenance",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Only the scattered electron is selected; the hadronic recoil mass is inferred from electron kinematics. The corrected cross sections reuse the acquisition underlying the admitted Breidenbach spectrum/scaling, not an independent experiment.",
+        "Table I errors are one-standard-deviation counting and electron-detection uncertainties propagated through unfolding; combined systematic errors are excluded and estimated as 5% above scattered energy 5 GeV, rising to 10% near 3 GeV.",
+        "The uncorrected panel is already detector/background corrected and is only before radiative correction. Raw events, response calibration and radiative programs are not replayed."
+      ],
+      "contextIds": [
+        "bloom1969-response"
+      ]
+    },
+    {
+      "id": "M-phys-bloom1969-slac-interpretation",
+      "kind": "method",
+      "statement": "Bloom's companion corrected cross sections supply the same-data experimental input to the admitted Breidenbach continuum/scaling interpretation. The historical transverse-dominance assumption remains conditional; the later global R analysis does not retrospectively supply an independently measured R for each 1969 point.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 6-12, Table I and Figures 1-2: corrected spectra, differential cross sections and companion-paper provenance",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "breidenbach1969",
+          "locator": "Pages 935-936: electron-only spectra and cross-section decomposition; Figure 1",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "breidenbach1969",
+          "locator": "Pages 936-937: R-dependent structure function and scaling; Figure 2",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Only the scattered electron is selected; the hadronic recoil mass is inferred from electron kinematics. The corrected cross sections reuse the acquisition underlying the admitted Breidenbach spectrum/scaling, not an independent experiment.",
+        "This is a same-acquisition evidence relation, not independent replication or a temporal formation requirement."
+      ],
+      "contextIds": [
+        "breidenbach1969"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-normalized-crosssections",
+      "kind": "method",
+      "statement": "The archived measurements and radiative/normalization model jointly determine the reported normalized separation inputs. The floating factors are fitted with shared anchors and correlations.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 2-3 and 9-10: eight archived experiments, 5835 cross sections and response definitions",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair."
+      ],
+      "contextIds": [
+        "whitlow1990-reanalysis"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-separated-r",
+      "kind": "method",
+      "statement": "The normalized cross-section ensemble, declared inclusive response and separation procedure determine the reported R ratios; the within-bin proton/deuteron average additionally uses the separately estimated target-difference compatibility.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair."
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-target-difference",
+      "kind": "method",
+      "statement": "The target-difference result uses the normalized proton/deuteron cross-section ratios and its Rp-model-dependent regression, not a difference of two independent final R averages.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a reanalysis of archived 1970-1985 SLAC measurements, not a new acquisition. The individual upstream experiments, target models and radiative programs are described inputs, not independently reconstructed here.",
+        "Relative normalizations and epsilon-dependent errors are correlated. E140 deuterium points are excluded from the global Rd regressions but E140 remains their normalization anchor; separately plotted points do not remove every shared calibration or correction dependence.",
+        "The plotted SLAC R errors exclude the additional +/-0.025 radiative-correction systematic. Absolute common normalization errors do not propagate into R; the report gives deuterium 1.7% in its body and 1.8% in the Table 1 caption, retained without choosing a repair."
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "M-phys-whitlow1990-model-comparison",
+      "kind": "method",
+      "statement": "The reported model comparison uses the separated R/target-difference results and the specified historical curves. The leading-parton definition supplies an interpretation boundary only, with no influence on the empirical separation inputs.",
+      "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 4-5, Section 18.2.1, Equations 18.16-18.18 and the following Callan-Gross statement: negligible-target-mass convention and the electromagnetic quark-parton response",
+          "role": "method",
+          "note": "Supports the specified response, convention or reported inference within the reviewed source extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The compared curves adopt the cited perturbative calculation, CDHS quark distributions and optionally kinematic target-mass terms. These are specified model inputs, not a unique prediction of all QCD or a direct count/spin measurement of isolated quarks.",
+        "The twist-4 phenomenology had used preliminary Rd results; its agreement is not an independent prediction. No higher-twist parameter, primordial transverse momentum or universal exclusion of every diquark correlation is admitted.",
+        "The report's Rfit is a dependent interpolation to 139 lepton-scattering measurements; it is not a new observation. The author report prints b1=0.635; that parameterization and the underlying numerical tables/covariance are not implemented or replayed here."
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "M-phys-cdf2013-top-acquisition-context",
+      "kind": "method",
+      "statement": "Use the full CDF II Run II proton-antiproton sample at sqrt(s)=1.96 TeV with integrated luminosity 8.7 fb^-1. Select one central electron or muon, missing transverse energy and at least four jets; separate zero, one and multiple b tags and tight/loose jet requirements into five exclusive categories.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 3-4: full Run II exposure, lepton+jets channel, object selection and five exclusive tagging/jet categories",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Table I: selected-category composition, observed counts and conditional signal/background expectations",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The reported categories are selected detector events, not raw acquisition, pure top decays or isolated quark observations. This full Run II analysis extends the earlier CDF sample and is not an independent replication of that sample."
+      ],
+      "contextIds": [
+        "cdf2013-top-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-cdf2013-top-response-context",
+      "kind": "method",
+      "statement": "Apply calibrated jet response, neural-network energy corrections and secondary-vertex b tagging. Under the top-pair lepton+jets hypothesis choose the lowest-chi^2 jet assignment for the reconstructed top mass; a separate non-b dijet mass uses the pair closest to the adopted W mass. Simulated signal/background templates, auxiliary photon+jet resolution control and generator variations model their response.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Reconstruction assigns selected events to the lepton+jets top-pair hypothesis and chooses jet assignments using a kinematic fit. Detector resolution, jet calibration, backgrounds, radiation and color reconnection affect the response; observed mass spread is not the intrinsic width."
+      ],
+      "contextIds": [
+        "cdf2013-top-response"
+      ]
+    },
+    {
+      "id": "M-phys-cdf2013-top-inference-context",
+      "kind": "method",
+      "statement": "Fit correlated reconstructed-top and dijet masses with two-dimensional kernel densities and interpolation in width and jet-energy scale. Multiply five category likelihoods, constrain expected backgrounds and leave signal yields free. Use a nonnegative width estimator, simulated Neyman confidence bands with likelihood-ratio ordering and the reported Gaussian systematic treatment.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The width templates fix the top mass to 172.5 GeV/c^2 and fit the jet-energy scale using the same sample with an adopted W mass of 80.4 GeV/c^2. The top mass and W reference are inputs, not new mass measurements.",
+        "The source adopts a 1.22 GeV Gaussian systematic smearing from its stated uncertainty procedure. The displayed Table II components do not reproduce the reported quadrature total; this source-accounting mismatch is retained without replacing the adopted total or recomputing the interval. Simulations, kernel estimates, interpolation and confidence coverage are not independently reconstructed; 1.22 GeV is not a symmetric error bar on the fitted estimator.",
+        "The 68% two-sided interval and 95% upper bound invert the same nonnegative-estimator confidence construction. They are not independent measurements or a Gaussian central-value error interval; the best-fit estimator is not substituted for either bound."
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
+      ]
+    },
+    {
+      "id": "C-phys-cdf2013-top-sample",
+      "kind": "review-finding",
+      "statement": "Table I reports 1627, 882, 997, 208 and 275 observed events in the 0-tag, 1-tagL, 1-tagT, 2-tagL and 2-tagT categories, respectively. These are selected signal-plus-background counts; the inference uses the corresponding reconstructed-event distributions rather than the five totals alone.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 3-4: full Run II exposure, lepton+jets channel, object selection and five exclusive tagging/jet categories",
+          "role": "supports",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Table I: selected-category composition, observed counts and conditional signal/background expectations",
+          "role": "supports",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Table I expected signal yields assume a top-pair cross section of 7.45 pb and top mass of 172.5 GeV/c^2; they are not observed counts. Figure 1 contains simulated templates, not measured spectra. Published category totals do not reconstruct the unbinned data.",
+        "The reported categories are selected detector events, not raw acquisition, pure top decays or isolated quark observations. This full Run II analysis extends the earlier CDF sample and is not an independent replication of that sample."
+      ],
+      "contextIds": [
+        "cdf2013-top-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-cdf2013-top-sample",
+      "kind": "method",
+      "statement": "Retain the source category definitions, selection and detector response when interpreting the observed counts; keep modeled composition and simulated shape illustrations separate.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 3-4: full Run II exposure, lepton+jets channel, object selection and five exclusive tagging/jet categories",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Table I: selected-category composition, observed counts and conditional signal/background expectations",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Table I expected signal yields assume a top-pair cross section of 7.45 pb and top mass of 172.5 GeV/c^2; they are not observed counts. Figure 1 contains simulated templates, not measured spectra. Published category totals do not reconstruct the unbinned data.",
+        "The reported categories are selected detector events, not raw acquisition, pure top decays or isolated quark observations. This full Run II analysis extends the earlier CDF sample and is not an independent replication of that sample."
+      ],
+      "contextIds": [
+        "cdf2013-top-acquisition"
+      ]
+    },
+    {
+      "id": "C-phys-cdf2013-top-width-interval",
+      "kind": "review-finding",
+      "statement": "For input top mass 172.5 GeV/c^2, CDF reports best-fit estimator Gamma_meas=1.63 GeV, a two-sided 68% confidence interval 1.10<Gamma_top<4.05 GeV and a 95% confidence upper bound Gamma_top<6.38 GeV. Both intervals include the source statistical and systematic treatment.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion",
+          "role": "supports",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response",
+          "role": "supports",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison",
+          "role": "supports",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The width templates fix the top mass to 172.5 GeV/c^2 and fit the jet-energy scale using the same sample with an adopted W mass of 80.4 GeV/c^2. The top mass and W reference are inputs, not new mass measurements.",
+        "The 68% two-sided interval and 95% upper bound invert the same nonnegative-estimator confidence construction. They are not independent measurements or a Gaussian central-value error interval; the best-fit estimator is not substituted for either bound.",
+        "The paper converts the width interval to a lifetime and compares it with an externally cited typical hadronization timescale. Neither time is directly measured in this acquisition; no lifetime conversion, hadronization measurement or all-flavor stability result is admitted here."
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
+      ]
+    },
+    {
+      "id": "M-phys-cdf2013-top-width-interval",
+      "kind": "method",
+      "statement": "Interpret the published bounds through the correlated two-observable fit, adopted response and source confidence construction. A finite decay width is a species-specific inference, not a directly timed lifetime or a general statement about all quark flavors.",
+      "scope": "The CDF 2013 lepton+jets top-width analysis under its declared reconstruction, mass input and confidence construction.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison",
+          "role": "method",
+          "note": "Supports this reported stage within the stated author-version scope."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The width templates fix the top mass to 172.5 GeV/c^2 and fit the jet-energy scale using the same sample with an adopted W mass of 80.4 GeV/c^2. The top mass and W reference are inputs, not new mass measurements.",
+        "The 68% two-sided interval and 95% upper bound invert the same nonnegative-estimator confidence construction. They are not independent measurements or a Gaussian central-value error interval; the best-fit estimator is not substituted for either bound.",
+        "The paper converts the width interval to a lifetime and compares it with an externally cited typical hadronization timescale. Neither time is directly measured in this acquisition; no lifetime conversion, hadronization measurement or all-flavor stability result is admitted here."
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
+      ]
     }
   ],
   "entities": [
@@ -73628,7 +74552,7 @@
         }
       ],
       "openObligations": [
-        "Review primary scattering, spectroscopy and decay evidence before attaching empirical relations to specific quark observables."
+        "Scattering, spectroscopy and decay records retain their own selected systems and model inputs. Independent detector/fit reconstruction, other flavor-specific observables and general confinement require separate evidence."
       ]
     },
     {
@@ -86058,6 +86982,463 @@
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
         "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+      ]
+    },
+    {
+      "id": "phys:quark-mass-prescription",
+      "name": "Quark mass prescription",
+      "kind": "definition",
+      "description": "A renormalized quark mass requires a prescription. The modified-minimal-subtraction mass mbar_q(mu_R) depends on the renormalization scale mu_R; the referenced summary table quotes u,d,s at 2 GeV and c,b at a scale equal to the respective running mass. A perturbative pole-mass prescription is distinct and has an ambiguity of order the QCD scale when related to observables.",
+      "claimIds": [
+        "D-phys-quark-mass-prescription"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions"
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions"
+        }
+      ],
+      "openObligations": [
+        "Any empirical extension requires its own preparation, response and inference scope; these formal conventions do not establish free colored particles or universal stability."
+      ]
+    },
+    {
+      "id": "phys:quark-electromagnetic-current",
+      "name": "Quark electromagnetic current",
+      "kind": "definition",
+      "description": "With e>0 the positron charge, define the quark contribution J_em,q^mu=sum_f Q_f*sum_a qbar_fa*gamma^mu*q_fa and L_em,q=-e*A_mu*J_em,q^mu. Here f labels the declared quark flavors, a is a contracted fundamental-color index, and Q_f is +2/3 for u,c,t or -1/3 for d,s,b. This electromagnetic vector current is flavor diagonal in the stated mass basis.",
+      "claimIds": [
+        "D-phys-quark-electromagnetic-current"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3, Equation 10.2 and fermion/neutrino paragraphs: mass-basis charged-fermion Higgs coupling and minimal-model neutrino boundary"
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions"
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices"
+        }
+      ],
+      "openObligations": [
+        "Any empirical extension requires its own preparation, response and inference scope; these formal conventions do not establish free colored particles or universal stability."
+      ]
+    },
+    {
+      "id": "phys:quark-parton-response",
+      "name": "Leading electromagnetic quark-parton response",
+      "kind": "definition",
+      "description": "For unpolarized electromagnetic DIS in the leading massless collinear spin-one-half quark-parton model, use Q2=-q^2>0, x=Q2/(2*P.q), and F2_gamma=x*sum_f Q_f^2*(q_f+qbar_f). The flavor distributions are evaluated at the stated scale; their sum includes quarks and antiquarks rather than net valence alone. In the negligible-target-mass limit the same model gives 2*x*F1_gamma=F2_gamma, hence FL_gamma=F2_gamma-2*x*F1_gamma=0.",
+      "claimIds": [
+        "D-phys-quark-parton-response"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 1-3, Sections 18.1-18.2, Equations 18.1-18.8: DIS kinematics, lepton/hadron tensors and unpolarized cross sections"
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 4-5, Section 18.2.1, Equations 18.16-18.18 and the following Callan-Gross statement: negligible-target-mass convention and the electromagnetic quark-parton response"
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 5-7, opening of Section 18.2.2 through Equation 18.23: QCD corrections, coefficient/PDF convolution, scale dependence and required initial distributions"
+        }
+      ],
+      "openObligations": [
+        "Any empirical extension requires its own preparation, response and inference scope; these formal conventions do not establish free colored particles or universal stability."
+      ]
+    },
+    {
+      "id": "phys:inclusive-dis-response",
+      "name": "Inclusive electromagnetic DIS response",
+      "kind": "definition",
+      "description": "For unpolarized one-photon electron-nucleon scattering with negligible electron mass, use Q^2=4EEprime sin^2(theta/2)>0, nu=E-Eprime and x=Q^2/(2M nu). R=sigmaL/sigmaT=F2(1+4M^2*x^2/Q^2)/(2xF1)-1. The equivalent polarization convention is epsilon=[1+2(1+nu^2/Q^2)tan^2(theta/2)]^-1, Gamma=alpha*Eprime*(1/x-1)/[4*pi^2*M*E*(1-epsilon)], and Y=(d^2sigma/dOmega dEprime)/Gamma=sigmaT+epsilon*sigmaL. At fixed x,Q^2, the reduced-response intercept and slope determine R; nonzero intercept and a span in epsilon are required.",
+      "claimIds": [
+        "D-phys-inclusive-dis-response"
+      ],
+      "status": "definition",
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 1-3, Sections 18.1-18.2, Equations 18.1-18.8: DIS kinematics, lepton/hadron tensors and unpolarized cross sections"
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 2-3 and 9-10: eight archived experiments, 5835 cross sections and response definitions"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:bloom1969-response-context",
+      "name": "SLAC 1969 response and radiative correction",
+      "kind": "context",
+      "description": "For the existing SLAC electron-only acquisition, Bloom describes a 7 cm liquid-hydrogen target, beam-current monitors, a magnetic spectrometer and electron/pion discrimination. Correct dead time, tracking and identification efficiency, target-density changes, empty-target yields and positron-estimated backgrounds. Subtract the calculated elastic radiative tail, then unfold all spectra at each angle in two dimensions using the peaking approximation, interpolation and some extrapolation. SLAC and MIT analyses of the same data are averaged.",
+      "claimIds": [
+        "M-phys-bloom1969-response-context"
+      ],
+      "status": "definition",
+      "sourceCoordinates": [
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 2-4: electron-only acquisition, spectrometer response, target-density and background corrections"
+        },
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 4-6: elastic radiative-tail subtraction, two-dimensional unfolding and error conventions"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:bloom1969-corrected-crosssections",
+      "name": "SLAC 1969 corrected continuum cross sections",
+      "kind": "scoped-process",
+      "description": "The report gives corrected d^2sigma/(dOmega dEprime) for W>=2 GeV at 6 and 10 degrees. Table I spans incident settings 7.000-17.696 GeV; its 6-degree and 10-degree columns use 10^-31 and 10^-32 cm^2/(sr GeV), respectively. Figure 1 separates pre-radiative spectra, the elastic tail and corrected spectra; Figure 2 shows the continuum changing much less with momentum transfer than the resonances. These are the companion data underlying the admitted Breidenbach interpretation.",
+      "claimIds": [
+        "C-phys-bloom1969-corrected-crosssections"
+      ],
+      "status": "evidence-scoped",
+      "sourceCoordinates": [
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 6-12, Table I and Figures 1-2: corrected spectra, differential cross sections and companion-paper provenance"
+        },
+        {
+          "sourceId": "bloom1969",
+          "locator": "SLAC-PUB-642 pages 4-6: elastic radiative-tail subtraction, two-dimensional unfolding and error conventions"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-archive-context",
+      "name": "SLAC archived DIS sample",
+      "kind": "context",
+      "description": "The 1990 analysis reuses 5835 electron-proton and electron-deuteron cross-section measurements from eight 1970-1985 SLAC experiments using the 1.6, 8 and 20 GeV spectrometers. The archive supplies varied beam/scattering settings spanning 0.1<=x<=0.9 and 0.6<=Q^2<=20 (GeV/c)^2; this record identifies the reused input sample, not a fresh 1990 exposure.",
+      "claimIds": [
+        "M-phys-whitlow1990-archive-context"
+      ],
+      "status": "definition",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 2-3 and 9-10: eight archived experiments, 5835 cross sections and response definitions"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-response-context",
+      "name": "SLAC correlated correction and normalization",
+      "kind": "context",
+      "description": "Recalculate internal Bardin and external Tsai radiative corrections with experiment-specific target models. Fit smooth cross-section models with floating relative normalizations anchored to E140; E89a instead uses elastic comparisons because its kinematics are disjoint. Anchor hydrogen through the assumed common E49b proton/deuteron normalization. Preserve normalization correlations, correction uncertainty versus epsilon, and bin-centering adjustments.",
+      "claimIds": [
+        "M-phys-whitlow1990-response-context"
+      ],
+      "status": "definition",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-normalized-crosssections",
+      "name": "SLAC normalized separation inputs",
+      "kind": "scoped-process",
+      "description": "Table 1 reports fitted relative cross-section multipliers, not independent luminosity measurements: E139 deuterium is 1.008 +/-0.004 statistical +/-0.002 systematic relative to E140=1.000; E49b hydrogen uses the common 0.981 normalization fixed by its deuterium fit. The corrected, mutually normalized and bin-centered cross sections supply the subsequent separation; the complete input table and covariance are not reconstructed here.",
+      "claimIds": [
+        "C-phys-whitlow1990-normalized-crosssections"
+      ],
+      "status": "evidence-scoped",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-separation-context",
+      "name": "SLAC longitudinal/transverse regressions",
+      "kind": "context",
+      "description": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=1/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
+      "claimIds": [
+        "M-phys-whitlow1990-separation-context"
+      ],
+      "status": "definition",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 3-5 and 12-13, Table 1: radiative corrections, correlated relative normalizations and absolute-scale limits"
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-separated-r",
+      "name": "Separated SLAC longitudinal/transverse response",
+      "kind": "scoped-process",
+      "description": "The 176 regressions report mean chi^2 per degree of freedom 0.91 and nonconstant R values across the stated x,Q^2 range. After comparing target differences, the authors combine Rp and Rd within bins, respecting asymmetric parent distributions; Figure 2 displays these global results separately from improved E140 averages of Rd and RFe. A constant R=0 or R=0.18 is an adopted extraction approximation, not what all these separated data measure.",
+      "claimIds": [
+        "C-phys-whitlow1990-separated-r"
+      ],
+      "status": "evidence-scoped",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points"
+        },
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-target-difference",
+      "name": "SLAC proton-deuteron response difference",
+      "kind": "scoped-process",
+      "description": "The separate 86 target-ratio regressions have reported mean chi^2 per degree of freedom 0.99. Their full-range average is Rd-Rp=-0.001 +/-0.009 statistical +/-0.009 systematic, compatible with zero over the reviewed kinematics. This finite-precision consistency result does not establish exact target equality or independently measure a free-neutron response.",
+      "claimIds": [
+        "C-phys-whitlow1990-target-difference"
+      ],
+      "status": "evidence-scoped",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 5-6 and 14-16, Equation 5 and Figures 1-2: epsilon regressions, target difference and separate E140 points"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-comparison-context",
+      "name": "SLAC conditional parton comparison",
+      "kind": "context",
+      "description": "Compare the separated R dependence with the report's specified perturbative-QCD curves using CDHS quark distributions, with and without kinematic target-mass contributions. Keep its spin-zero diquark alternatives and preliminary-data-fitted twist-4 phenomenology distinct. The separately declared leading charge-weighted parton response clarifies what a massless spin-one-half limit means; it is not a retroactive PDF input or a reconstruction of these historical curves.",
+      "claimIds": [
+        "M-phys-whitlow1990-comparison-context"
+      ],
+      "status": "definition",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits"
+        },
+        {
+          "sourceId": "pdg2025-structure-functions",
+          "locator": "Pages 4-5, Section 18.2.1, Equations 18.16-18.18 and the following Callan-Gross statement: negligible-target-mass convention and the electromagnetic quark-parton response"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:whitlow1990-model-comparison",
+      "name": "SLAC response versus selected parton calculations",
+      "kind": "scoped-process",
+      "description": "In the studied SLAC range the report finds R systematically above the displayed perturbative calculation, including its target-mass variant, while the selected spin-zero diquark curves disagree with the target/kinematic pattern. The finite-Q^2 longitudinal response therefore qualifies a strict zero-R picture. Higher-twist effects are a proposed explanation, not a uniquely identified microscopic constituent population or proof against complete QCD.",
+      "claimIds": [
+        "C-phys-whitlow1990-model-comparison"
+      ],
+      "status": "evidence-scoped",
+      "sourceCoordinates": [
+        {
+          "sourceId": "whitlow1990-r",
+          "locator": "SLAC-PUB-5284 pages 6-10 and 14-17, Figures 2-3: specified parton calculations, dependent phenomenology and interpolation limits"
+        }
+      ],
+      "openObligations": [
+        "Extend only with matched primary sources and the stated response, covariance and interpretation boundaries."
+      ],
+      "level": 1
+    },
+    {
+      "id": "phys:cdf2013-top-acquisition-context",
+      "name": "CDF top-width selected-event preparation",
+      "kind": "context",
+      "description": "Use the full CDF II Run II proton-antiproton sample at sqrt(s)=1.96 TeV with integrated luminosity 8.7 fb^-1. Select one central electron or muon, missing transverse energy and at least four jets; separate zero, one and multiple b tags and tight/loose jet requirements into five exclusive categories.",
+      "claimIds": [
+        "M-phys-cdf2013-top-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 3-4: full Run II exposure, lepton+jets channel, object selection and five exclusive tagging/jet categories"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Table I: selected-category composition, observed counts and conditional signal/background expectations"
+        }
+      ],
+      "openObligations": [
+        "The reported categories are selected detector events, not raw acquisition, pure top decays or isolated quark observations. This full Run II analysis extends the earlier CDF sample and is not an independent replication of that sample."
+      ]
+    },
+    {
+      "id": "phys:cdf2013-top-response-context",
+      "name": "CDF top-width reconstruction and response",
+      "kind": "context",
+      "description": "Apply calibrated jet response, neural-network energy corrections and secondary-vertex b tagging. Under the top-pair lepton+jets hypothesis choose the lowest-chi^2 jet assignment for the reconstructed top mass; a separate non-b dijet mass uses the pair closest to the adopted W mass. Simulated signal/background templates, auxiliary photon+jet resolution control and generator variations model their response.",
+      "claimIds": [
+        "M-phys-cdf2013-top-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion"
+        }
+      ],
+      "openObligations": [
+        "Reconstruction assigns selected events to the lepton+jets top-pair hypothesis and chooses jet assignments using a kinematic fit. Detector resolution, jet calibration, backgrounds, radiation and color reconnection affect the response; observed mass spread is not the intrinsic width."
+      ]
+    },
+    {
+      "id": "phys:cdf2013-top-inference-context",
+      "name": "CDF top-width likelihood and confidence construction",
+      "kind": "context",
+      "description": "Fit correlated reconstructed-top and dijet masses with two-dimensional kernel densities and interpolation in width and jet-energy scale. Multiply five category likelihoods, constrain expected backgrounds and leave signal yields free. Use a nonnegative width estimator, simulated Neyman confidence bands with likelihood-ratio ordering and the reported Gaussian systematic treatment.",
+      "claimIds": [
+        "M-phys-cdf2013-top-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison"
+        }
+      ],
+      "openObligations": [
+        "The width templates fix the top mass to 172.5 GeV/c^2 and fit the jet-energy scale using the same sample with an adopted W mass of 80.4 GeV/c^2. The top mass and W reference are inputs, not new mass measurements.",
+        "The source adopts a 1.22 GeV Gaussian systematic smearing from its stated uncertainty procedure. The displayed Table II components do not reproduce the reported quadrature total; this source-accounting mismatch is retained without replacing the adopted total or recomputing the interval. Simulations, kernel estimates, interpolation and confidence coverage are not independently reconstructed; 1.22 GeV is not a symmetric error bar on the fitted estimator.",
+        "The 68% two-sided interval and 95% upper bound invert the same nonnegative-estimator confidence construction. They are not independent measurements or a Gaussian central-value error interval; the best-fit estimator is not substituted for either bound."
+      ]
+    },
+    {
+      "id": "phys:cdf2013-top-sample",
+      "name": "CDF selected top-width categories",
+      "kind": "scoped-process",
+      "description": "Table I reports 1627, 882, 997, 208 and 275 observed events in the 0-tag, 1-tagL, 1-tagT, 2-tagL and 2-tagT categories, respectively. These are selected signal-plus-background counts; the inference uses the corresponding reconstructed-event distributions rather than the five totals alone.",
+      "claimIds": [
+        "C-phys-cdf2013-top-sample"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 3-4: full Run II exposure, lepton+jets channel, object selection and five exclusive tagging/jet categories"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Table I: selected-category composition, observed counts and conditional signal/background expectations"
+        }
+      ],
+      "openObligations": [
+        "Table I expected signal yields assume a top-pair cross section of 7.45 pb and top mass of 172.5 GeV/c^2; they are not observed counts. Figure 1 contains simulated templates, not measured spectra. Published category totals do not reconstruct the unbinned data.",
+        "The reported categories are selected detector events, not raw acquisition, pure top decays or isolated quark observations. This full Run II analysis extends the earlier CDF sample and is not an independent replication of that sample."
+      ]
+    },
+    {
+      "id": "phys:cdf2013-top-width-interval",
+      "name": "CDF conditional top-width interval",
+      "kind": "scoped-process",
+      "description": "For input top mass 172.5 GeV/c^2, CDF reports best-fit estimator Gamma_meas=1.63 GeV, a two-sided 68% confidence interval 1.10<Gamma_top<4.05 GeV and a 95% confidence upper bound Gamma_top<6.38 GeV. Both intervals include the source statistical and systematic treatment.",
+      "claimIds": [
+        "C-phys-cdf2013-top-width-interval"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 5-6, Table II and Figure 2: unbinned likelihood, nonnegative estimator, systematic treatment and confidence-band inversion"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, pages 4-5, Figure 1: jet calibration, kinematic reconstruction, simulated mass templates and correlated two-observable response"
+        },
+        {
+          "sourceId": "cdf2013-top-width",
+          "locator": "Author v2, page 6 conclusion and page 7 reference 43: reported width/lifetime intervals and adopted typical hadronization-timescale comparison"
+        }
+      ],
+      "openObligations": [
+        "The width templates fix the top mass to 172.5 GeV/c^2 and fit the jet-energy scale using the same sample with an adopted W mass of 80.4 GeV/c^2. The top mass and W reference are inputs, not new mass measurements.",
+        "The 68% two-sided interval and 95% upper bound invert the same nonnegative-estimator confidence construction. They are not independent measurements or a Gaussian central-value error interval; the best-fit estimator is not substituted for either bound.",
+        "The paper converts the width interval to a lifetime and compares it with an externally cited typical hadronization timescale. Neither time is directly measured in this acquisition; no lifetime conversion, hadronization measurement or all-flavor stability result is admitted here."
       ]
     }
   ],
@@ -99486,6 +100867,383 @@
       ],
       "contextIds": [
         "lep2013-w-branching-inference"
+      ]
+    },
+    {
+      "id": "physics:qcd-quark-mass-prescription",
+      "source": "phys:qcd",
+      "target": "phys:quark-mass-prescription",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The specified QCD model requires a quark-mass prescription; this relation does not determine numerical masses or create a particle.",
+      "claimIds": [
+        "D-phys-quark-mass-prescription"
+      ]
+    },
+    {
+      "id": "physics:quark-fields-quark-electromagnetic-current",
+      "source": "phys:quark-fields",
+      "target": "phys:quark-electromagnetic-current",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The declared flavor, charge and color labels specify the electromagnetic current; no current or field population is measured by this definitional relation.",
+      "claimIds": [
+        "D-phys-quark-electromagnetic-current"
+      ]
+    },
+    {
+      "id": "physics:quark-electromagnetic-current-quark-parton-response",
+      "source": "phys:quark-electromagnetic-current",
+      "target": "phys:quark-parton-response",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The specified electromagnetic charges provide the squared flavor weights of the leading response; this is not a free-quark charge measurement.",
+      "claimIds": [
+        "D-phys-quark-parton-response"
+      ]
+    },
+    {
+      "id": "physics:quark-mass-prescription-quark-parton-response",
+      "source": "phys:quark-mass-prescription",
+      "target": "phys:quark-parton-response",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The leading model neglects quark masses relative to its hard scale; a mass approximation is not a zero-mass determination or an all-scale identity.",
+      "claimIds": [
+        "D-phys-quark-parton-response"
+      ]
+    },
+    {
+      "id": "physics:inclusive-dis-response-quark-parton-response",
+      "source": "phys:inclusive-dis-response",
+      "target": "phys:quark-parton-response",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The inclusive response fixes which structure functions are interpreted by the leading model. The model does not supply the observed longitudinal/transverse separation or its fitted values.",
+      "claimIds": [
+        "D-phys-quark-parton-response"
+      ]
+    },
+    {
+      "id": "physics:slac-context-bloom1969-corrected-crosssections",
+      "source": "phys:slac-context",
+      "target": "phys:bloom1969-corrected-crosssections",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The existing SLAC electron-only preparation supplies the shared spectra corrected in the companion report.",
+      "claimIds": [
+        "M-phys-bloom1969-corrected-crosssections"
+      ],
+      "contextIds": [
+        "bloom1969-response"
+      ]
+    },
+    {
+      "id": "physics:bloom1969-response-context-bloom1969-corrected-crosssections",
+      "source": "phys:bloom1969-response-context",
+      "target": "phys:bloom1969-corrected-crosssections",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Detector/background response, elastic-tail subtraction and radiative unfolding condition these cross sections.",
+      "claimIds": [
+        "M-phys-bloom1969-corrected-crosssections"
+      ],
+      "contextIds": [
+        "bloom1969-response"
+      ]
+    },
+    {
+      "id": "physics:bloom1969-corrected-crosssections-slac-spectrum",
+      "source": "phys:bloom1969-corrected-crosssections",
+      "target": "phys:slac-spectrum",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The companion corrected cross sections underlie the Breidenbach continuum comparison from the same acquisition.",
+      "claimIds": [
+        "M-phys-bloom1969-slac-interpretation"
+      ],
+      "contextIds": [
+        "breidenbach1969"
+      ]
+    },
+    {
+      "id": "physics:bloom1969-corrected-crosssections-slac-scaling",
+      "source": "phys:bloom1969-corrected-crosssections",
+      "target": "phys:slac-scaling",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The companion data support the historical scaling extraction only with its separate transverse-dominance assumption.",
+      "claimIds": [
+        "M-phys-bloom1969-slac-interpretation"
+      ],
+      "contextIds": [
+        "breidenbach1969"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-archive-context-whitlow1990-normalized-crosssections",
+      "source": "phys:whitlow1990-archive-context",
+      "target": "phys:whitlow1990-normalized-crosssections",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The archived 1970-1985 measurements supply the reused cross-section inputs.",
+      "claimIds": [
+        "M-phys-whitlow1990-normalized-crosssections"
+      ],
+      "contextIds": [
+        "whitlow1990-reanalysis"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-response-context-whitlow1990-normalized-crosssections",
+      "source": "phys:whitlow1990-response-context",
+      "target": "phys:whitlow1990-normalized-crosssections",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Radiative treatment and correlated fitted normalization factors determine the adjusted separation inputs.",
+      "claimIds": [
+        "M-phys-whitlow1990-normalized-crosssections"
+      ],
+      "contextIds": [
+        "whitlow1990-reanalysis"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-normalized-crosssections-whitlow1990-target-difference",
+      "source": "phys:whitlow1990-normalized-crosssections",
+      "target": "phys:whitlow1990-target-difference",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The fitted target difference uses the normalized deuterium/proton cross-section ratios.",
+      "claimIds": [
+        "M-phys-whitlow1990-target-difference"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-separation-context-whitlow1990-target-difference",
+      "source": "phys:whitlow1990-separation-context",
+      "target": "phys:whitlow1990-target-difference",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The target-ratio regression adopts an Rp model and preserves its shared-error treatment.",
+      "claimIds": [
+        "M-phys-whitlow1990-target-difference"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:inclusive-dis-response-whitlow1990-target-difference",
+      "source": "phys:inclusive-dis-response",
+      "target": "phys:whitlow1990-target-difference",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The response convention defines the target ratio being separated; the fit remains conditional on its selected response model.",
+      "claimIds": [
+        "M-phys-whitlow1990-target-difference"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-normalized-crosssections-whitlow1990-separated-r",
+      "source": "phys:whitlow1990-normalized-crosssections",
+      "target": "phys:whitlow1990-separated-r",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The corrected and mutually normalized cross sections supply the reduced-response regressions.",
+      "claimIds": [
+        "M-phys-whitlow1990-separated-r"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-separation-context-whitlow1990-separated-r",
+      "source": "phys:whitlow1990-separation-context",
+      "target": "phys:whitlow1990-separated-r",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The correlated epsilon regressions determine the reported R values.",
+      "claimIds": [
+        "M-phys-whitlow1990-separated-r"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:inclusive-dis-response-whitlow1990-separated-r",
+      "source": "phys:inclusive-dis-response",
+      "target": "phys:whitlow1990-separated-r",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The stated Born convention fixes the separation meaning without imposing R=0.",
+      "claimIds": [
+        "M-phys-whitlow1990-separated-r"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-target-difference-whitlow1990-separated-r",
+      "source": "phys:whitlow1990-target-difference",
+      "target": "phys:whitlow1990-separated-r",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Compatibility of the separate target-difference result motivates combining Rp and Rd within bins; it does not create an independent measurement.",
+      "claimIds": [
+        "M-phys-whitlow1990-separated-r"
+      ],
+      "contextIds": [
+        "whitlow1990-separation"
+      ]
+    },
+    {
+      "id": "physics:quark-parton-response-whitlow1990-model-comparison",
+      "source": "phys:quark-parton-response",
+      "target": "phys:whitlow1990-model-comparison",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The leading electromagnetic parton definition clarifies the spin-one-half and finite-Q^2 interpretation boundary; it is not an input to the historical separation or a substitute for its CDHS distributions.",
+      "claimIds": [
+        "M-phys-whitlow1990-model-comparison"
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-separated-r-whitlow1990-model-comparison",
+      "source": "phys:whitlow1990-separated-r",
+      "target": "phys:whitlow1990-model-comparison",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The measured kinematic R pattern is the response compared with the specified theory curves.",
+      "claimIds": [
+        "M-phys-whitlow1990-model-comparison"
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-target-difference-whitlow1990-model-comparison",
+      "source": "phys:whitlow1990-target-difference",
+      "target": "phys:whitlow1990-model-comparison",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The separate target-difference result constrains only the named target-asymmetric alternatives.",
+      "claimIds": [
+        "M-phys-whitlow1990-model-comparison"
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "physics:whitlow1990-comparison-context-whitlow1990-model-comparison",
+      "source": "phys:whitlow1990-comparison-context",
+      "target": "phys:whitlow1990-model-comparison",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The interpretation retains the adopted model curves and their dependence on earlier data and PDFs.",
+      "claimIds": [
+        "M-phys-whitlow1990-model-comparison"
+      ],
+      "contextIds": [
+        "whitlow1990-comparison"
+      ]
+    },
+    {
+      "id": "physics:cdf2013-top-acquisition-context-cdf2013-top-sample",
+      "source": "phys:cdf2013-top-acquisition-context",
+      "target": "phys:cdf2013-top-sample",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The declared exposure, selection and mutually exclusive categories define this sample.",
+      "claimIds": [
+        "M-phys-cdf2013-top-sample"
+      ],
+      "contextIds": [
+        "cdf2013-top-acquisition"
+      ]
+    },
+    {
+      "id": "physics:cdf2013-top-response-context-cdf2013-top-sample",
+      "source": "phys:cdf2013-top-response-context",
+      "target": "phys:cdf2013-top-sample",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Calibrated jets and tagging enter the selected-category readout; modeled composition does not turn all selected events into signal.",
+      "claimIds": [
+        "M-phys-cdf2013-top-sample"
+      ],
+      "contextIds": [
+        "cdf2013-top-acquisition"
+      ]
+    },
+    {
+      "id": "physics:cdf2013-top-sample-cdf2013-top-width-interval",
+      "source": "phys:cdf2013-top-sample",
+      "target": "phys:cdf2013-top-width-interval",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The fit uses this same selected sample through unbinned reconstructed masses; the published five counts alone cannot reconstruct the width inference.",
+      "claimIds": [
+        "M-phys-cdf2013-top-width-interval"
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
+      ]
+    },
+    {
+      "id": "physics:cdf2013-top-response-context-cdf2013-top-width-interval",
+      "source": "phys:cdf2013-top-response-context",
+      "target": "phys:cdf2013-top-width-interval",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Detector resolution, calibration, backgrounds and simulated template response condition the inferred width.",
+      "claimIds": [
+        "M-phys-cdf2013-top-width-interval"
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
+      ]
+    },
+    {
+      "id": "physics:cdf2013-top-inference-context-cdf2013-top-width-interval",
+      "source": "phys:cdf2013-top-inference-context",
+      "target": "phys:cdf2013-top-width-interval",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The fixed mass input, simultaneous jet-energy fit and nonnegative confidence construction define the reported bounds.",
+      "claimIds": [
+        "M-phys-cdf2013-top-width-interval"
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
+      ]
+    },
+    {
+      "id": "physics:quark-fields-cdf2013-top-width-interval",
+      "source": "phys:quark-fields",
+      "target": "phys:cdf2013-top-width-interval",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The top-quark species supplies the named signal hypothesis; this is not an observation of an isolated stable quark or a measurement of all flavor lifetimes.",
+      "claimIds": [
+        "M-phys-cdf2013-top-width-interval"
+      ],
+      "contextIds": [
+        "cdf2013-top-inference"
       ]
     }
   ]
