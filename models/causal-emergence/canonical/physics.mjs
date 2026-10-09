@@ -1,3 +1,6 @@
+import { LEPTON_FORMAL_ADMISSION, LEPTON_FORMAL_CHECKS, LEPTON_FORMAL_ANALYTICAL_SOURCES, validateLeptonFormalContracts } from "./lepton-formal.mjs";
+import { LEPTON_TAU_ADMISSION, LEPTON_TAU_CHECKS, LEPTON_TAU_ANALYTICAL_SOURCES, validateLeptonTauContracts } from "./lepton-tau.mjs";
+import { LEPTON_ELECTRON_ADMISSION, LEPTON_ELECTRON_CHECKS, LEPTON_ELECTRON_ANALYTICAL_SOURCES, validateLeptonElectronContracts } from "./lepton-electron.mjs";
 import { QUARK_FORMAL_ADMISSION, QUARK_FORMAL_CHECKS, QUARK_FORMAL_ANALYTICAL_SOURCES, validateQuarkFormalContracts } from "./quark-formal.mjs";
 import { QUARK_DIS_ADMISSION, QUARK_DIS_CHECKS, QUARK_DIS_ANALYTICAL_SOURCES, validateQuarkDisContracts } from "./quark-dis.mjs";
 import { QUARK_TOP_WIDTH_ADMISSION, QUARK_TOP_WIDTH_CHECKS, QUARK_TOP_WIDTH_ANALYTICAL_SOURCES, validateQuarkTopWidthContracts } from "./quark-top-width.mjs";
@@ -39,7 +42,7 @@ export const BELL_CHECKS = new Map([2015, 2016].flatMap((year) => [
   [`bell-null-tail-${year}`, `C-phys-hensen${year}-bell-test`]
 ]));
 
-const analyticalSources = new Map([...NUCLEON_ALGEBRA_ANALYTICAL_SOURCES, ...NEUTRON_FORM_FACTOR_ANALYTICAL_SOURCES, ...NUCLEAR_ENERGETICS_ANALYTICAL_SOURCES, ...HADRON_PRODUCTION_ANALYTICAL_SOURCES, ...PION_DECAY_ANALYTICAL_SOURCES, ...ELECTRON_MOMENT_ANALYTICAL_SOURCES, ...VACUUM_POLARIZATION_ANALYTICAL_SOURCES, ...HADRON_FAMILY_ANALYTICAL_SOURCES, ...MESON_FAMILY_ANALYTICAL_SOURCES, ...VIRTUAL_PROCESS_ANALYTICAL_SOURCES, ...FIELD_DYNAMICS_ANALYTICAL_SOURCES, ...ELECTROWEAK_ANALYTICAL_SOURCES, ...NEUTRINO_ANALYTICAL_SOURCES, ...SOLAR_NEUTRINO_ANALYTICAL_SOURCES, ...ATMOSPHERIC_NEUTRINO_ANALYTICAL_SOURCES, ...MATTER_NEUTRINO_ANALYTICAL_SOURCES, ...HIGGS_TAU_ANALYTICAL_SOURCES, ...ACCELERATOR_NEUTRINO_ANALYTICAL_SOURCES, ...WEAK_BOSON_ANALYTICAL_SOURCES, ...HIGGS_COUPLING_ANALYTICAL_SOURCES, ...WEAK_SECTOR_ANALYTICAL_SOURCES, ...Z_LINESHAPE_ANALYTICAL_SOURCES, ...W_DECAY_ANALYTICAL_SOURCES, ...QUARK_FORMAL_ANALYTICAL_SOURCES, ...QUARK_DIS_ANALYTICAL_SOURCES, ...QUARK_TOP_WIDTH_ANALYTICAL_SOURCES]);
+const analyticalSources = new Map([...NUCLEON_ALGEBRA_ANALYTICAL_SOURCES, ...NEUTRON_FORM_FACTOR_ANALYTICAL_SOURCES, ...NUCLEAR_ENERGETICS_ANALYTICAL_SOURCES, ...HADRON_PRODUCTION_ANALYTICAL_SOURCES, ...PION_DECAY_ANALYTICAL_SOURCES, ...ELECTRON_MOMENT_ANALYTICAL_SOURCES, ...VACUUM_POLARIZATION_ANALYTICAL_SOURCES, ...HADRON_FAMILY_ANALYTICAL_SOURCES, ...MESON_FAMILY_ANALYTICAL_SOURCES, ...VIRTUAL_PROCESS_ANALYTICAL_SOURCES, ...FIELD_DYNAMICS_ANALYTICAL_SOURCES, ...ELECTROWEAK_ANALYTICAL_SOURCES, ...NEUTRINO_ANALYTICAL_SOURCES, ...SOLAR_NEUTRINO_ANALYTICAL_SOURCES, ...ATMOSPHERIC_NEUTRINO_ANALYTICAL_SOURCES, ...MATTER_NEUTRINO_ANALYTICAL_SOURCES, ...HIGGS_TAU_ANALYTICAL_SOURCES, ...ACCELERATOR_NEUTRINO_ANALYTICAL_SOURCES, ...WEAK_BOSON_ANALYTICAL_SOURCES, ...HIGGS_COUPLING_ANALYTICAL_SOURCES, ...WEAK_SECTOR_ANALYTICAL_SOURCES, ...Z_LINESHAPE_ANALYTICAL_SOURCES, ...W_DECAY_ANALYTICAL_SOURCES, ...QUARK_FORMAL_ANALYTICAL_SOURCES, ...QUARK_DIS_ANALYTICAL_SOURCES, ...QUARK_TOP_WIDTH_ANALYTICAL_SOURCES, ...LEPTON_FORMAL_ANALYTICAL_SOURCES, ...LEPTON_TAU_ANALYTICAL_SOURCES, ...LEPTON_ELECTRON_ANALYTICAL_SOURCES]);
 
 const definitions = new Map([
   ...PROTON_DECAY_ADMISSION.definitions,
@@ -73,7 +76,7 @@ const definitions = new Map([
   ...W_DECAY_ADMISSION.definitions,
   ...QUARK_FORMAL_ADMISSION.definitions,
   ...QUARK_DIS_ADMISSION.definitions,
-  ...QUARK_TOP_WIDTH_ADMISSION.definitions,
+  ...QUARK_TOP_WIDTH_ADMISSION.definitions, ...LEPTON_FORMAL_ADMISSION.definitions, ...LEPTON_TAU_ADMISSION.definitions, ...LEPTON_ELECTRON_ADMISSION.definitions,
   ["phys:quantum-field-framework", "D-phys-qft"],
   ["phys:free-scalar-quantization", "D-phys-free-scalar"],
   ["phys:standard-model", "D-phys-sm"],
@@ -200,7 +203,7 @@ const formalDependencies = new Map([
   ["rovibrational-state-boundary-state-conditional-mass", ["rovibrational-state-boundary", "state-conditional-mass"]],
   ["atomic-mass-covariance-mass-adjustment-constraint", ["atomic-mass-covariance", "mass-adjustment-constraint"]]
 ].map(([id, endpoints]) => [`physics:${id}`, endpoints.map((id) => `phys:${id}`)]));
-for (const [id, endpoints] of [...PROTON_DECAY_ADMISSION.formalDependencies, ...BEAM_NEUTRON_ADMISSION.formalDependencies, ...ALPHA_GAMMA_ADMISSION.formalDependencies, ...BERNAUER_ADMISSION.formalDependencies, ...PROTON_MOMENT_ADMISSION.formalDependencies, ...NEUTRON_MOMENT_ADMISSION.formalDependencies, ...NUCLEON_ALGEBRA_ADMISSION.formalDependencies, ...NEUTRON_FORM_FACTOR_ADMISSION.formalDependencies, ...NUCLEAR_ENERGETICS_ADMISSION.formalDependencies, ...HADRON_PRODUCTION_ADMISSION.formalDependencies, ...PION_DECAY_ADMISSION.formalDependencies, ...ELECTRON_MOMENT_ADMISSION.formalDependencies, ...VACUUM_POLARIZATION_ADMISSION.formalDependencies, ...HADRON_FAMILY_ADMISSION.formalDependencies, ...MESON_FAMILY_ADMISSION.formalDependencies, ...VIRTUAL_PROCESS_ADMISSION.formalDependencies, ...FIELD_DYNAMICS_ADMISSION.formalDependencies, ...ELECTROWEAK_ADMISSION.formalDependencies, ...NEUTRINO_ADMISSION.formalDependencies, ...SOLAR_NEUTRINO_ADMISSION.formalDependencies, ...ATMOSPHERIC_NEUTRINO_ADMISSION.formalDependencies, ...MATTER_NEUTRINO_ADMISSION.formalDependencies, ...HIGGS_TAU_ADMISSION.formalDependencies, ...ACCELERATOR_NEUTRINO_ADMISSION.formalDependencies, ...WEAK_BOSON_ADMISSION.formalDependencies, ...HIGGS_COUPLING_ADMISSION.formalDependencies, ...WEAK_SECTOR_ADMISSION.formalDependencies, ...Z_LINESHAPE_ADMISSION.formalDependencies, ...W_DECAY_ADMISSION.formalDependencies, ...QUARK_FORMAL_ADMISSION.formalDependencies, ...QUARK_DIS_ADMISSION.formalDependencies, ...QUARK_TOP_WIDTH_ADMISSION.formalDependencies]) formalDependencies.set(id, endpoints);
+for (const [id, endpoints] of [...PROTON_DECAY_ADMISSION.formalDependencies, ...BEAM_NEUTRON_ADMISSION.formalDependencies, ...ALPHA_GAMMA_ADMISSION.formalDependencies, ...BERNAUER_ADMISSION.formalDependencies, ...PROTON_MOMENT_ADMISSION.formalDependencies, ...NEUTRON_MOMENT_ADMISSION.formalDependencies, ...NUCLEON_ALGEBRA_ADMISSION.formalDependencies, ...NEUTRON_FORM_FACTOR_ADMISSION.formalDependencies, ...NUCLEAR_ENERGETICS_ADMISSION.formalDependencies, ...HADRON_PRODUCTION_ADMISSION.formalDependencies, ...PION_DECAY_ADMISSION.formalDependencies, ...ELECTRON_MOMENT_ADMISSION.formalDependencies, ...VACUUM_POLARIZATION_ADMISSION.formalDependencies, ...HADRON_FAMILY_ADMISSION.formalDependencies, ...MESON_FAMILY_ADMISSION.formalDependencies, ...VIRTUAL_PROCESS_ADMISSION.formalDependencies, ...FIELD_DYNAMICS_ADMISSION.formalDependencies, ...ELECTROWEAK_ADMISSION.formalDependencies, ...NEUTRINO_ADMISSION.formalDependencies, ...SOLAR_NEUTRINO_ADMISSION.formalDependencies, ...ATMOSPHERIC_NEUTRINO_ADMISSION.formalDependencies, ...MATTER_NEUTRINO_ADMISSION.formalDependencies, ...HIGGS_TAU_ADMISSION.formalDependencies, ...ACCELERATOR_NEUTRINO_ADMISSION.formalDependencies, ...WEAK_BOSON_ADMISSION.formalDependencies, ...HIGGS_COUPLING_ADMISSION.formalDependencies, ...WEAK_SECTOR_ADMISSION.formalDependencies, ...Z_LINESHAPE_ADMISSION.formalDependencies, ...W_DECAY_ADMISSION.formalDependencies, ...QUARK_FORMAL_ADMISSION.formalDependencies, ...QUARK_DIS_ADMISSION.formalDependencies, ...QUARK_TOP_WIDTH_ADMISSION.formalDependencies, ...LEPTON_FORMAL_ADMISSION.formalDependencies, ...LEPTON_TAU_ADMISSION.formalDependencies, ...LEPTON_ELECTRON_ADMISSION.formalDependencies]) formalDependencies.set(id, endpoints);
 const bellAssumptions = [
   "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
   "Condition on the prior trial sequence; require local responses, independent setting generators and independence of the herald from those settings within the stated predictability bounds.",
@@ -240,7 +243,7 @@ const observations = [
   ...W_DECAY_ADMISSION.observations,
   ...QUARK_FORMAL_ADMISSION.observations,
   ...QUARK_DIS_ADMISSION.observations,
-  ...QUARK_TOP_WIDTH_ADMISSION.observations,
+  ...QUARK_TOP_WIDTH_ADMISSION.observations, ...LEPTON_FORMAL_ADMISSION.observations, ...LEPTON_TAU_ADMISSION.observations, ...LEPTON_ELECTRON_ADMISSION.observations,
   ["slac-spectrum", "C-phys-slac-spectrum", ["breidenbach1969"]],
   ["slac-scaling", "C-phys-slac-scaling", ["breidenbach1969"]],
   ["tasso-planarity", "C-phys-tasso-planarity", ["tasso1979"]],
@@ -373,7 +376,7 @@ const contexts = [
   ...W_DECAY_ADMISSION.contexts,
   ...QUARK_FORMAL_ADMISSION.contexts,
   ...QUARK_DIS_ADMISSION.contexts,
-  ...QUARK_TOP_WIDTH_ADMISSION.contexts,
+  ...QUARK_TOP_WIDTH_ADMISSION.contexts, ...LEPTON_FORMAL_ADMISSION.contexts, ...LEPTON_TAU_ADMISSION.contexts, ...LEPTON_ELECTRON_ADMISSION.contexts,
   ["slac-context", "M-phys-slac-readout", ["breidenbach1969"]],
   ["tasso-context", "M-phys-tasso-readout", ["tasso1979"]],
   ["mulan-r06-context", "M-phys-mulan-r06", ["webber2011-r06"]],
@@ -460,7 +463,7 @@ const dependencies = [
   ...W_DECAY_ADMISSION.dependencies,
   ...QUARK_FORMAL_ADMISSION.dependencies,
   ...QUARK_DIS_ADMISSION.dependencies,
-  ...QUARK_TOP_WIDTH_ADMISSION.dependencies,
+  ...QUARK_TOP_WIDTH_ADMISSION.dependencies, ...LEPTON_FORMAL_ADMISSION.dependencies, ...LEPTON_TAU_ADMISSION.dependencies, ...LEPTON_ELECTRON_ADMISSION.dependencies,
   ["slac-readout", "slac-context", "slac-spectrum", "M-phys-slac-readout", "measurement-context"],
   ["tasso-planarity-readout", "tasso-context", "tasso-planarity", "M-phys-tasso-readout", "measurement-context"],
   ["tasso-jets-readout", "tasso-context", "tasso-three-jets", "M-phys-tasso-readout", "measurement-context"],
@@ -770,7 +773,7 @@ const inferenceSources = new Map([
   ...W_DECAY_ADMISSION.inferenceSources,
   ...QUARK_FORMAL_ADMISSION.inferenceSources,
   ...QUARK_DIS_ADMISSION.inferenceSources,
-  ...QUARK_TOP_WIDTH_ADMISSION.inferenceSources,
+  ...QUARK_TOP_WIDTH_ADMISSION.inferenceSources, ...LEPTON_FORMAL_ADMISSION.inferenceSources, ...LEPTON_TAU_ADMISSION.inferenceSources, ...LEPTON_ELECTRON_ADMISSION.inferenceSources,
   [
     "C-phys-lamoreaux-casimir",
     [
@@ -4365,7 +4368,7 @@ export function validatePhysicsDefinitions({ graph, physics, readiness }, { sour
   ...W_DECAY_ADMISSION.studyIds,
   ...QUARK_FORMAL_ADMISSION.studyIds,
   ...QUARK_DIS_ADMISSION.studyIds,
-  ...QUARK_TOP_WIDTH_ADMISSION.studyIds
+  ...QUARK_TOP_WIDTH_ADMISSION.studyIds, ...LEPTON_FORMAL_ADMISSION.studyIds, ...LEPTON_TAU_ADMISSION.studyIds, ...LEPTON_ELECTRON_ADMISSION.studyIds
 ]);
   for (const [id, sourceId, doi, extent] of [
     ["breidenbach1969", "breidenbach1969", "10.1103/PhysRevLett.23.935", "full-primary-article"],
@@ -4457,7 +4460,7 @@ export function validatePhysicsDefinitions({ graph, physics, readiness }, { sour
   }
   for (const c of claims.values()) if (c.id.startsWith("C-phys-") || c.id.startsWith("M-phys-")) {
     const check = reproductionClaims.get(c.id);
-    const deuteronCheck = [...DEUTERON_CHECKS, ...MASS_CONSTRAINT_CHECKS, ...PROTON_DECAY_CHECKS, ...BEAM_NEUTRON_CHECKS, ...ALPHA_GAMMA_CHECKS, ...BERNAUER_CHECKS, ...PROTON_MOMENT_CHECKS, ...NEUTRON_MOMENT_CHECKS, ...NUCLEON_ALGEBRA_CHECKS, ...NEUTRON_FORM_FACTOR_CHECKS, ...NUCLEAR_ENERGETICS_CHECKS, ...HADRON_PRODUCTION_CHECKS, ...PION_DECAY_CHECKS, ...ELECTRON_MOMENT_CHECKS, ...VACUUM_POLARIZATION_CHECKS, ...HADRON_FAMILY_CHECKS, ...MESON_FAMILY_CHECKS, ...VIRTUAL_PROCESS_CHECKS, ...FIELD_DYNAMICS_CHECKS, ...ELECTROWEAK_CHECKS, ...NEUTRINO_CHECKS, ...SOLAR_NEUTRINO_CHECKS, ...ATMOSPHERIC_NEUTRINO_CHECKS, ...MATTER_NEUTRINO_CHECKS, ...HIGGS_TAU_CHECKS, ...ACCELERATOR_NEUTRINO_CHECKS, ...WEAK_BOSON_CHECKS, ...HIGGS_COUPLING_CHECKS, ...WEAK_SECTOR_CHECKS, ...Z_LINESHAPE_CHECKS, ...W_DECAY_CHECKS, ...QUARK_FORMAL_CHECKS, ...QUARK_DIS_CHECKS, ...QUARK_TOP_WIDTH_CHECKS].find(([, id]) => id === c.id)?.[0];
+    const deuteronCheck = [...DEUTERON_CHECKS, ...MASS_CONSTRAINT_CHECKS, ...PROTON_DECAY_CHECKS, ...BEAM_NEUTRON_CHECKS, ...ALPHA_GAMMA_CHECKS, ...BERNAUER_CHECKS, ...PROTON_MOMENT_CHECKS, ...NEUTRON_MOMENT_CHECKS, ...NUCLEON_ALGEBRA_CHECKS, ...NEUTRON_FORM_FACTOR_CHECKS, ...NUCLEAR_ENERGETICS_CHECKS, ...HADRON_PRODUCTION_CHECKS, ...PION_DECAY_CHECKS, ...ELECTRON_MOMENT_CHECKS, ...VACUUM_POLARIZATION_CHECKS, ...HADRON_FAMILY_CHECKS, ...MESON_FAMILY_CHECKS, ...VIRTUAL_PROCESS_CHECKS, ...FIELD_DYNAMICS_CHECKS, ...ELECTROWEAK_CHECKS, ...NEUTRINO_CHECKS, ...SOLAR_NEUTRINO_CHECKS, ...ATMOSPHERIC_NEUTRINO_CHECKS, ...MATTER_NEUTRINO_CHECKS, ...HIGGS_TAU_CHECKS, ...ACCELERATOR_NEUTRINO_CHECKS, ...WEAK_BOSON_CHECKS, ...HIGGS_COUPLING_CHECKS, ...WEAK_SECTOR_CHECKS, ...Z_LINESHAPE_CHECKS, ...W_DECAY_CHECKS, ...QUARK_FORMAL_CHECKS, ...QUARK_DIS_CHECKS, ...QUARK_TOP_WIDTH_CHECKS, ...LEPTON_FORMAL_CHECKS, ...LEPTON_TAU_CHECKS, ...LEPTON_ELECTRON_CHECKS].find(([, id]) => id === c.id)?.[0];
     assert.deepEqual(c.checkIds, check ? [check] : deuteronCheck ? [deuteronCheck] : [], "Physical reproduction changed its verified scope");
     if (c.id === "C-phys-l0-bridge") continue;
     const datasetId = check ? `${c.contextIds[0]}-data` : null;
@@ -4565,7 +4568,7 @@ export function validatePhysicsDefinitions({ graph, physics, readiness }, { sour
   ...W_DECAY_ADMISSION.comparisonIds,
   ...QUARK_FORMAL_ADMISSION.comparisonIds,
   ...QUARK_DIS_ADMISSION.comparisonIds,
-  ...QUARK_TOP_WIDTH_ADMISSION.comparisonIds
+  ...QUARK_TOP_WIDTH_ADMISSION.comparisonIds, ...LEPTON_FORMAL_ADMISSION.comparisonIds, ...LEPTON_TAU_ADMISSION.comparisonIds, ...LEPTON_ELECTRON_ADMISSION.comparisonIds
 ]);
   for (const [id, sourceId, claimId, methodId, result, assumptions] of [
     ["slac-scaling", "breidenbach1969", "C-phys-slac-scaling", "M-phys-slac-scaling", "conditional-support", [
@@ -4857,6 +4860,9 @@ export function validatePhysicsDefinitions({ graph, physics, readiness }, { sour
   validateWeakSectorContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
   validateZLineshapeContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
   validateWDecayContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateLeptonFormalContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateLeptonTauContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
+  validateLeptonElectronContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
   validateQuarkFormalContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
   validateQuarkDisContracts({ sources, claims, studies, comparisons, entities, relations, readiness });
   validateQuarkTopWidthContracts({ sources, claims, studies, comparisons, entities, relations, readiness });

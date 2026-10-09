@@ -1,0 +1,6474 @@
+[
+  {
+    "id": "R-ensemble",
+    "nodes": [
+      "l0:ensemble",
+      "l0:synchronization"
+    ]
+  },
+  {
+    "id": "R-mode",
+    "nodes": [
+      "l0:oscillatory-mode"
+    ]
+  },
+  {
+    "id": "R-object",
+    "nodes": [
+      "l0:crt-node"
+    ]
+  },
+  {
+    "id": "R-promote",
+    "nodes": [
+      "l0:ensemble-quantum"
+    ]
+  },
+  {
+    "id": "R-select",
+    "nodes": []
+  },
+  {
+    "id": "R-triad",
+    "nodes": [
+      "l0:triad-configuration"
+    ]
+  },
+  {
+    "id": "l0:anisotropy",
+    "nodes": []
+  },
+  {
+    "id": "l0:carrier-promotion",
+    "nodes": [
+      "R-promote"
+    ]
+  },
+  {
+    "id": "l0:closure-parameter",
+    "nodes": [
+      "R-mode"
+    ]
+  },
+  {
+    "id": "l0:cohort-selection",
+    "nodes": [
+      "R-select"
+    ]
+  },
+  {
+    "id": "l0:compensation",
+    "nodes": []
+  },
+  {
+    "id": "l0:crt-node",
+    "nodes": [
+      "R-ensemble"
+    ]
+  },
+  {
+    "id": "l0:deformation",
+    "nodes": [
+      "R-object"
+    ]
+  },
+  {
+    "id": "l0:directional-gradient",
+    "nodes": []
+  },
+  {
+    "id": "l0:discrete-scale",
+    "nodes": []
+  },
+  {
+    "id": "l0:distinction",
+    "nodes": [
+      "l0:sequential-axis",
+      "l0:spatial-axis"
+    ]
+  },
+  {
+    "id": "l0:ensemble",
+    "nodes": [
+      "R-promote",
+      "l0:synchronization"
+    ]
+  },
+  {
+    "id": "l0:ensemble-action",
+    "nodes": [
+      "R-ensemble"
+    ]
+  },
+  {
+    "id": "l0:ensemble-quantum",
+    "nodes": []
+  },
+  {
+    "id": "l0:hyperbolic-frame",
+    "nodes": [
+      "R-mode",
+      "l0:cohort-selection"
+    ]
+  },
+  {
+    "id": "l0:integrated-density",
+    "nodes": [
+      "R-object"
+    ]
+  },
+  {
+    "id": "l0:local-density",
+    "nodes": [
+      "R-object",
+      "l0:integrated-density"
+    ]
+  },
+  {
+    "id": "l0:nonlinear-action",
+    "nodes": [
+      "R-object",
+      "l0:ensemble-action"
+    ]
+  },
+  {
+    "id": "l0:omega",
+    "nodes": [
+      "l0:distinction",
+      "l0:premetric-frame"
+    ]
+  },
+  {
+    "id": "l0:oscillatory-mode",
+    "nodes": [
+      "R-triad",
+      "l0:closure-parameter"
+    ]
+  },
+  {
+    "id": "l0:premetric-frame",
+    "nodes": [
+      "l0:sequential-axis",
+      "l0:spatial-axis"
+    ]
+  },
+  {
+    "id": "l0:quadratic-action",
+    "nodes": [
+      "R-mode",
+      "l0:closure-parameter",
+      "l0:nonlinear-action"
+    ]
+  },
+  {
+    "id": "l0:sequential-axis",
+    "nodes": [
+      "R-mode",
+      "l0:quadratic-action"
+    ]
+  },
+  {
+    "id": "l0:spatial-axis",
+    "nodes": [
+      "R-mode",
+      "l0:quadratic-action"
+    ]
+  },
+  {
+    "id": "l0:synchronization",
+    "nodes": [
+      "R-promote"
+    ]
+  },
+  {
+    "id": "l0:transport-bias",
+    "nodes": []
+  },
+  {
+    "id": "l0:triad-configuration",
+    "nodes": [
+      "R-object"
+    ]
+  },
+  {
+    "id": "l0:triadic-closure",
+    "nodes": [
+      "R-triad"
+    ]
+  },
+  {
+    "id": "l0:trial-field",
+    "nodes": [
+      "R-mode",
+      "l0:local-density",
+      "l0:quadratic-action"
+    ]
+  },
+  {
+    "id": "neur:accumulator-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:acute-avalanches",
+    "nodes": []
+  },
+  {
+    "id": "neur:adora1-cpa-rescue-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:adora1-d1-protocol",
+    "nodes": [
+      "neur:adora1-d1-seizures"
+    ]
+  },
+  {
+    "id": "neur:adora1-d1-seizures",
+    "nodes": []
+  },
+  {
+    "id": "neur:affective-property",
+    "nodes": []
+  },
+  {
+    "id": "neur:alpha1b-astro-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-capacitance-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-control-pip2-current-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-genetic-flow-protocol",
+    "nodes": [
+      "neur:arf6-genetic-hyperemia"
+    ]
+  },
+  {
+    "id": "neur:arf6-genetic-hyperemia",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-genetic-kir-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-genetic-patch-protocol",
+    "nodes": [
+      "neur:arf6-genetic-kir-current"
+    ]
+  },
+  {
+    "id": "neur:arf6-kinase-protocol",
+    "nodes": [
+      "neur:arf6-kinase-proxy"
+    ]
+  },
+  {
+    "id": "neur:arf6-kinase-proxy",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-nav-dilation",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-nav-flow-protocol",
+    "nodes": [
+      "neur:arf6-nav-hyperemia"
+    ]
+  },
+  {
+    "id": "neur:arf6-nav-hyperemia",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-nav-kir-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-nav-myography-protocol",
+    "nodes": [
+      "neur:arf6-nav-dilation"
+    ]
+  },
+  {
+    "id": "neur:arf6-nav-patch-protocol",
+    "nodes": [
+      "neur:arf6-nav-kir-current"
+    ]
+  },
+  {
+    "id": "neur:arf6-pip2-exclusive-mediation",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-pip2-flow-protocol",
+    "nodes": [
+      "neur:arf6-pip2-hyperemia"
+    ]
+  },
+  {
+    "id": "neur:arf6-pip2-hyperemia",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-pip2-kir-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-pip2-patch-protocol",
+    "nodes": [
+      "neur:arf6-pip2-kir-current"
+    ]
+  },
+  {
+    "id": "neur:arf6-tone-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:arf6-vehicle-hyperemia",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-ablation-control-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-ablation-passivity",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-gq-swimming",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-trpv1-passivity",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-vglut1-glutamate",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-vglut1-imaging",
+    "nodes": [
+      "neur:astro-vglut1-glutamate"
+    ]
+  },
+  {
+    "id": "neur:astro-vglut1-ltp",
+    "nodes": []
+  },
+  {
+    "id": "neur:astro-vglut1-ltp-protocol",
+    "nodes": [
+      "neur:astro-vglut1-ltp"
+    ]
+  },
+  {
+    "id": "neur:avar-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:avdr-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:aver-activation",
+    "nodes": [
+      "neur:avar-response"
+    ]
+  },
+  {
+    "id": "neur:avjr-activation",
+    "nodes": [
+      "neur:avdr-response"
+    ]
+  },
+  {
+    "id": "neur:bax-affect-nulls",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-bicuculline-ltp-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-brdu-retention",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-brdu-retention-protocol",
+    "nodes": [
+      "neur:bax-brdu-retention"
+    ]
+  },
+  {
+    "id": "neur:bax-context-discrimination",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-context-discrimination-protocol",
+    "nodes": [
+      "neur:bax-context-discrimination"
+    ]
+  },
+  {
+    "id": "neur:bax-context-recall-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-count-mediation",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-dcx-eightweek",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-dcx-eightweek-protocol",
+    "nodes": [
+      "neur:bax-dcx-eightweek"
+    ]
+  },
+  {
+    "id": "neur:bax-dcx-fourweek-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-discrimination-variants",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-other-task-nulls",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-proliferation-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-running-comparison-nulls",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-running-exploration",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-running-exploration-protocol",
+    "nodes": [
+      "neur:bax-running-exploration"
+    ]
+  },
+  {
+    "id": "neur:bax-weak-ltp",
+    "nodes": []
+  },
+  {
+    "id": "neur:bax-weak-ltp-protocol",
+    "nodes": [
+      "neur:bax-weak-ltp"
+    ]
+  },
+  {
+    "id": "neur:binary-alternate-bracketing-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-bracketing",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-description-fit",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-detection",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-detection-protocol",
+    "nodes": [
+      "neur:binary-detection"
+    ]
+  },
+  {
+    "id": "neur:binary-fmri-deviants",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-fmri-habituation",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-fmri-hit-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-fmri-localizer",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-fmri-standards",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-meg-decoding",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-meg-field-power",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-meg-position-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-meg-transition-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:binary-sequence-language",
+    "nodes": []
+  },
+  {
+    "id": "neur:bla-somatic-activation",
+    "nodes": [
+      "neur:somatic-exploration"
+    ]
+  },
+  {
+    "id": "neur:bla-terminal-activation",
+    "nodes": [
+      "neur:projection-exploration"
+    ]
+  },
+  {
+    "id": "neur:bla-terminal-inhibition",
+    "nodes": [
+      "neur:inhibited-projection-exploration"
+    ]
+  },
+  {
+    "id": "neur:c3-engulfment",
+    "nodes": []
+  },
+  {
+    "id": "neur:c3-engulfment-protocol",
+    "nodes": [
+      "neur:c3-engulfment"
+    ]
+  },
+  {
+    "id": "neur:ca1-astro-gq-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:ca1-ip3r2-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:ca1-potentiation-induction",
+    "nodes": []
+  },
+  {
+    "id": "neur:calca-activation-cytokines",
+    "nodes": []
+  },
+  {
+    "id": "neur:calca-activation-lps-protocol",
+    "nodes": [
+      "neur:calca-activation-cytokines"
+    ]
+  },
+  {
+    "id": "neur:calca-il10-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-arteriole-dilation",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-feed-diameter",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-feed-protocol",
+    "nodes": [
+      "neur:cap-k-feed-diameter"
+    ]
+  },
+  {
+    "id": "neur:cap-k-flux-protocol",
+    "nodes": [
+      "neur:cap-k-rbc-flux"
+    ]
+  },
+  {
+    "id": "neur:cap-k-high-dose-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-local-diameter-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-myography-protocol",
+    "nodes": [
+      "neur:cap-k-arteriole-dilation"
+    ]
+  },
+  {
+    "id": "neur:cap-k-pressure-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-rbc-flux",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-rbc-velocity",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-sm-voltage",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-ttx-flux",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-k-ttx-protocol",
+    "nodes": [
+      "neur:cap-k-ttx-flux"
+    ]
+  },
+  {
+    "id": "neur:cap-k-velocity-protocol",
+    "nodes": [
+      "neur:cap-k-rbc-velocity"
+    ]
+  },
+  {
+    "id": "neur:cap-k-voltage-protocol",
+    "nodes": [
+      "neur:cap-k-sm-voltage"
+    ]
+  },
+  {
+    "id": "neur:cap-severing-dilation",
+    "nodes": []
+  },
+  {
+    "id": "neur:cap-severing-protocol",
+    "nodes": [
+      "neur:cap-severing-dilation"
+    ]
+  },
+  {
+    "id": "neur:capillary-laser-protocol",
+    "nodes": [
+      "neur:microglial-injury-recruitment"
+    ]
+  },
+  {
+    "id": "neur:cd39-cpa-protocol",
+    "nodes": [
+      "neur:cd39-cpa-rescue"
+    ]
+  },
+  {
+    "id": "neur:cd39-cpa-rescue",
+    "nodes": []
+  },
+  {
+    "id": "neur:cd39-d1-protocol",
+    "nodes": [
+      "neur:cd39-d1-seizures"
+    ]
+  },
+  {
+    "id": "neur:cd39-d1-seizures",
+    "nodes": []
+  },
+  {
+    "id": "neur:cd39-microglial-density-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cd39-striatal-fluorescence",
+    "nodes": []
+  },
+  {
+    "id": "neur:cd39-tissue-assay",
+    "nodes": [
+      "neur:cd39-striatal-fluorescence"
+    ]
+  },
+  {
+    "id": "neur:cfos-knockdown-accessibility",
+    "nodes": []
+  },
+  {
+    "id": "neur:cfos-knockdown-protocol",
+    "nodes": [
+      "neur:cfos-knockdown-accessibility",
+      "neur:cfos-knockdown-transcripts"
+    ]
+  },
+  {
+    "id": "neur:cfos-knockdown-transcripts",
+    "nodes": []
+  },
+  {
+    "id": "neur:cfos-late-binding-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cfos-maintenance-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:cfos-overexpression-accessibility",
+    "nodes": []
+  },
+  {
+    "id": "neur:cfos-overexpression-protocol",
+    "nodes": [
+      "neur:cfos-overexpression-accessibility",
+      "neur:cfos-overexpression-transcripts"
+    ]
+  },
+  {
+    "id": "neur:cfos-overexpression-transcripts",
+    "nodes": []
+  },
+  {
+    "id": "neur:connectome-function-identity",
+    "nodes": []
+  },
+  {
+    "id": "neur:conscious-emergence",
+    "nodes": []
+  },
+  {
+    "id": "neur:cr3-contralateral-territory-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cr3-engulfment",
+    "nodes": []
+  },
+  {
+    "id": "neur:cr3-engulfment-protocol",
+    "nodes": [
+      "neur:cr3-engulfment"
+    ]
+  },
+  {
+    "id": "neur:cr3-eye-overlap",
+    "nodes": []
+  },
+  {
+    "id": "neur:cr3-puncta-protocol",
+    "nodes": [
+      "neur:cr3-synaptic-puncta"
+    ]
+  },
+  {
+    "id": "neur:cr3-segregation-protocol",
+    "nodes": [
+      "neur:cr3-eye-overlap"
+    ]
+  },
+  {
+    "id": "neur:cr3-synaptic-puncta",
+    "nodes": []
+  },
+  {
+    "id": "neur:criticality-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:culture-avalanches",
+    "nodes": []
+  },
+  {
+    "id": "neur:culture-picrotoxin",
+    "nodes": [
+      "neur:picrotoxin-event-distribution"
+    ]
+  },
+  {
+    "id": "neur:cx-aortic-electrical",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-aortic-electrical-protocol",
+    "nodes": [
+      "neur:cx-aortic-electrical"
+    ]
+  },
+  {
+    "id": "neur:cx-aortic-tracer",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-aortic-tracer-protocol",
+    "nodes": [
+      "neur:cx-aortic-tracer"
+    ]
+  },
+  {
+    "id": "neur:cx-diving-diameter-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-electrical-carrier",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-focal-diameter",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-focal-diameter-protocol",
+    "nodes": [
+      "neur:cx-focal-diameter"
+    ]
+  },
+  {
+    "id": "neur:cx-focal-hbt",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-focal-hbt-protocol",
+    "nodes": [
+      "neur:cx-focal-hbt"
+    ]
+  },
+  {
+    "id": "neur:cx-fullfield-far-peak-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-fullfield-hbt",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-fullfield-hbt-protocol",
+    "nodes": [
+      "neur:cx-fullfield-hbt"
+    ]
+  },
+  {
+    "id": "neur:cx-fullfield-peak",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-fullfield-peak-protocol",
+    "nodes": [
+      "neur:cx-fullfield-peak"
+    ]
+  },
+  {
+    "id": "neur:cx-opto-far-peak-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-opto-hbt",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-opto-hbt-protocol",
+    "nodes": [
+      "neur:cx-opto-hbt"
+    ]
+  },
+  {
+    "id": "neur:cx-opto-peak",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-opto-peak-protocol",
+    "nodes": [
+      "neur:cx-opto-peak"
+    ]
+  },
+  {
+    "id": "neur:cx-opto-propagation",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-opto-propagation-protocol",
+    "nodes": [
+      "neur:cx-opto-propagation"
+    ]
+  },
+  {
+    "id": "neur:cx-reporter-zonation",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-resting-diameter",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-resting-rbc-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-retinal-arterial-tracer",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-retinal-arterial-tracer-protocol",
+    "nodes": [
+      "neur:cx-retinal-arterial-tracer"
+    ]
+  },
+  {
+    "id": "neur:cx-retinal-small-tracer",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-tail-pressure-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:cx-zonation-routing",
+    "nodes": []
+  },
+  {
+    "id": "neur:cyclazosin-ne-mo-protocol",
+    "nodes": [
+      "neur:alpha1b-astro-calcium"
+    ]
+  },
+  {
+    "id": "neur:dbh-activation-cytokines",
+    "nodes": []
+  },
+  {
+    "id": "neur:dbh-activation-lps-protocol",
+    "nodes": [
+      "neur:dbh-activation-cytokines"
+    ]
+  },
+  {
+    "id": "neur:dbh-corticosterone-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:dbh-endotoxin-protocol",
+    "nodes": [
+      "neur:dbh-endotoxin-survival"
+    ]
+  },
+  {
+    "id": "neur:dbh-endotoxin-survival",
+    "nodes": []
+  },
+  {
+    "id": "neur:decision-correlations",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-adult-neuronal-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-committed-precursors",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-developmental-labeling",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-early-neuronal-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-gfap-composition",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-label-gfap-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-label-ultrastructure",
+    "nodes": []
+  },
+  {
+    "id": "neur:dentate-potentiation",
+    "nodes": []
+  },
+  {
+    "id": "neur:developmental-connectivity",
+    "nodes": []
+  },
+  {
+    "id": "neur:ecs-accessibility-1h",
+    "nodes": []
+  },
+  {
+    "id": "neur:ecs-accessibility-persistence",
+    "nodes": []
+  },
+  {
+    "id": "neur:ecs-accessibility-rna-association",
+    "nodes": []
+  },
+  {
+    "id": "neur:ecs-dentate-protocol",
+    "nodes": [
+      "neur:ecs-accessibility-1h",
+      "neur:ecs-accessibility-persistence",
+      "neur:ecs-transcripts-1h"
+    ]
+  },
+  {
+    "id": "neur:ecs-transcripts-1h",
+    "nodes": []
+  },
+  {
+    "id": "neur:empathy-functional-architecture",
+    "nodes": []
+  },
+  {
+    "id": "neur:empathy-measurement-boundary",
+    "nodes": []
+  },
+  {
+    "id": "neur:empathy-self-other",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-accessibility-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-chromatin-priming",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-compartment-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-context-colabels",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-context-freezing",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-context-reexposure",
+    "nodes": [
+      "neur:engram-context-colabels",
+      "neur:engram-context-freezing"
+    ]
+  },
+  {
+    "id": "neur:engram-context-tagged-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-eif4e-shaft",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-eif4e-soma-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-gria1-shaft",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-h3k4me1-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-histone-acetylation",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-labelled-populations",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-nuclear-rna-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:engram-promoter-contact-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:ensemble-control-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:ensemble-disrupt-context",
+    "nodes": [
+      "neur:ensemble-disrupted-performance"
+    ]
+  },
+  {
+    "id": "neur:ensemble-disrupted-performance",
+    "nodes": []
+  },
+  {
+    "id": "neur:ensemble-generalization",
+    "nodes": []
+  },
+  {
+    "id": "neur:ensemble-gray-selection",
+    "nodes": []
+  },
+  {
+    "id": "neur:ensemble-perception",
+    "nodes": []
+  },
+  {
+    "id": "neur:ensemble-recall-context",
+    "nodes": [
+      "neur:ensemble-recalled-performance"
+    ]
+  },
+  {
+    "id": "neur:ensemble-recalled-performance",
+    "nodes": []
+  },
+  {
+    "id": "neur:external-hand-forces",
+    "nodes": [
+      "neur:hand-localization"
+    ]
+  },
+  {
+    "id": "neur:feedback-astro-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:force-field-practice",
+    "nodes": [
+      "neur:reaching-adaptation"
+    ]
+  },
+  {
+    "id": "neur:force-field-removal",
+    "nodes": [
+      "neur:reaching-aftereffect"
+    ]
+  },
+  {
+    "id": "neur:forskolin-engulfment",
+    "nodes": []
+  },
+  {
+    "id": "neur:forskolin-retinal-protocol",
+    "nodes": [
+      "neur:forskolin-engulfment"
+    ]
+  },
+  {
+    "id": "neur:foster-gr-site16",
+    "nodes": []
+  },
+  {
+    "id": "neur:foster-gr-site17-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:fs-activation",
+    "nodes": [
+      "neur:gamma-response"
+    ]
+  },
+  {
+    "id": "neur:gamma-phase-input",
+    "nodes": [
+      "neur:sensory-response"
+    ]
+  },
+  {
+    "id": "neur:gamma-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-comparison-noise-ceiling",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-cross-format-rank",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-distraction-score",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-identity-benchmark",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-quadrilateral-rdm",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-quadrilateral-symbolic-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-shape-memory-fit",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-shape-memory-joint",
+    "nodes": []
+  },
+  {
+    "id": "neur:geom-training-associations",
+    "nodes": []
+  },
+  {
+    "id": "neur:glial-accumulation",
+    "nodes": []
+  },
+  {
+    "id": "neur:global-modulation",
+    "nodes": []
+  },
+  {
+    "id": "neur:glutamatergic-astro-transcripts",
+    "nodes": []
+  },
+  {
+    "id": "neur:gnwt-access",
+    "nodes": []
+  },
+  {
+    "id": "neur:gwt-blackboard",
+    "nodes": []
+  },
+  {
+    "id": "neur:hand-localization",
+    "nodes": []
+  },
+  {
+    "id": "neur:hcrt-antagonist-context",
+    "nodes": [
+      "neur:hcrt-antagonist-latency"
+    ]
+  },
+  {
+    "id": "neur:hcrt-antagonist-latency",
+    "nodes": []
+  },
+  {
+    "id": "neur:hcrt-awakening",
+    "nodes": []
+  },
+  {
+    "id": "neur:hcrt-duration-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:hcrt-low-frequency-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:hcrt-photostimulation",
+    "nodes": [
+      "neur:hcrt-awakening"
+    ]
+  },
+  {
+    "id": "neur:height-cue-combination",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-action-agency-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-action-matching",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-action-regional-reference",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-action-response-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-brdu-density-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-brdu-functional-integration",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-brdu-neuronal-colabels",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-brdu-staining-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-brdu-svz-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-ng-abundance",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-ng-annotation",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-ng-cohort-census",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-ng-sa-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-radiocarbon-neuronal-dna",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-radiocarbon-nonneuronal-dna",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-radiocarbon-renewal-model",
+    "nodes": []
+  },
+  {
+    "id": "neur:human-radiocarbon-survival-model",
+    "nodes": []
+  },
+  {
+    "id": "neur:iit-2004",
+    "nodes": []
+  },
+  {
+    "id": "neur:il34-cpa-protocol",
+    "nodes": [
+      "neur:il34-cpa-rescue"
+    ]
+  },
+  {
+    "id": "neur:il34-cpa-rescue",
+    "nodes": []
+  },
+  {
+    "id": "neur:il34-d1-protocol",
+    "nodes": [
+      "neur:il34-d1-seizures"
+    ]
+  },
+  {
+    "id": "neur:il34-d1-seizures",
+    "nodes": []
+  },
+  {
+    "id": "neur:il34-other-challenge-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:immune-cnst-transcripts",
+    "nodes": []
+  },
+  {
+    "id": "neur:immune-trap-colabels",
+    "nodes": []
+  },
+  {
+    "id": "neur:inhibited-projection-exploration",
+    "nodes": []
+  },
+  {
+    "id": "neur:injected-cytokine-imaging-protocol",
+    "nodes": [
+      "neur:injected-cytokine-nodose-calcium"
+    ]
+  },
+  {
+    "id": "neur:injected-cytokine-nodose-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:internal-model-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:irradiation-dcx",
+    "nodes": []
+  },
+  {
+    "id": "neur:irradiation-dcx-protocol",
+    "nodes": [
+      "neur:irradiation-dcx"
+    ]
+  },
+  {
+    "id": "neur:irradiation-discrimination-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-cec-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-dose-curve",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-lfp-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-patch-protocol",
+    "nodes": [
+      "neur:kir21-cec-current"
+    ]
+  },
+  {
+    "id": "neur:kir21-skik-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-sm-current-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-surface-k-hyperemia",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-whisker-hyperemia",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir21-whisker-protocol",
+    "nodes": [
+      "neur:kir21-whisker-hyperemia"
+    ]
+  },
+  {
+    "id": "neur:kir4-early-potentiation",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir4-glutamate-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir4-late-plasticity-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir4-potassium-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:kir4-tetanic-protocol",
+    "nodes": [
+      "neur:kir4-early-potentiation"
+    ]
+  },
+  {
+    "id": "neur:kir4-uptake-protocol",
+    "nodes": [
+      "neur:kir4-glutamate-current",
+      "neur:kir4-potassium-current"
+    ]
+  },
+  {
+    "id": "neur:lc-active-inhibition",
+    "nodes": [
+      "neur:lc-wake-maintenance"
+    ]
+  },
+  {
+    "id": "neur:lc-awakening",
+    "nodes": []
+  },
+  {
+    "id": "neur:lc-brief-activation",
+    "nodes": [
+      "neur:lc-awakening"
+    ]
+  },
+  {
+    "id": "neur:lc-inactive-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:lc-wake-maintenance",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-cue-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-delay-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-late-label-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-marker-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-place-protocol",
+    "nodes": [
+      "neur:learning-place-pyknosis",
+      "neur:learning-place-retained"
+    ]
+  },
+  {
+    "id": "neur:learning-place-pyknosis",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-place-retained",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-seven-day-retention",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-survival-mechanism",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-svz-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-swim-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-trace-protocol",
+    "nodes": [
+      "neur:learning-trace-pyknosis",
+      "neur:learning-trace-retained"
+    ]
+  },
+  {
+    "id": "neur:learning-trace-pyknosis",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-trace-retained",
+    "nodes": []
+  },
+  {
+    "id": "neur:learning-volume-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:lip-free-choice",
+    "nodes": []
+  },
+  {
+    "id": "neur:lip-inactivation-jeurissen",
+    "nodes": [
+      "neur:motion-bias-timecourse"
+    ]
+  },
+  {
+    "id": "neur:lip-inactivation-katz",
+    "nodes": [
+      "neur:lip-free-choice"
+    ]
+  },
+  {
+    "id": "neur:lip-microstimulation",
+    "nodes": [
+      "neur:motion-choice-rt"
+    ]
+  },
+  {
+    "id": "neur:lip-motion-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:lps-cnst-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:lps-cnst-fos",
+    "nodes": []
+  },
+  {
+    "id": "neur:lps-fos-protocol",
+    "nodes": [
+      "neur:lps-cnst-fos"
+    ]
+  },
+  {
+    "id": "neur:lps-photometry-protocol",
+    "nodes": [
+      "neur:lps-cnst-calcium"
+    ]
+  },
+  {
+    "id": "neur:macaque-brdu-neuronal-colabels",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-brdu-oligodendroglial-colabels",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-brdu-regional-labeling",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-brdu-staining-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-multipotent-progenitor",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-neurogenesis-rate-model",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-neuron-migration-model",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-neuron-replacement-model",
+    "nodes": []
+  },
+  {
+    "id": "neur:macaque-pcna-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:maternal-chromatin-mediation",
+    "nodes": []
+  },
+  {
+    "id": "neur:maternal-crossfoster-protocol",
+    "nodes": [
+      "neur:foster-gr-site16"
+    ]
+  },
+  {
+    "id": "neur:maternal-gr-chromatin-association",
+    "nodes": []
+  },
+  {
+    "id": "neur:maternal-gr-developmental-association",
+    "nodes": []
+  },
+  {
+    "id": "neur:maternal-gr-methylation-association",
+    "nodes": []
+  },
+  {
+    "id": "neur:mct2-antisense-protocol",
+    "nodes": [
+      "neur:mct2-retention"
+    ]
+  },
+  {
+    "id": "neur:mct2-rescue-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:mct2-retention",
+    "nodes": []
+  },
+  {
+    "id": "neur:mct2-short-retention-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:mct4-antisense-protocol",
+    "nodes": [
+      "neur:mct4-retention"
+    ]
+  },
+  {
+    "id": "neur:mct4-glucose-rescue-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:mct4-lactate-protocol",
+    "nodes": [
+      "neur:mct4-lactate-rescue"
+    ]
+  },
+  {
+    "id": "neur:mct4-lactate-rescue",
+    "nodes": []
+  },
+  {
+    "id": "neur:mct4-retention",
+    "nodes": []
+  },
+  {
+    "id": "neur:md-cell-count-protocol",
+    "nodes": [
+      "neur:md-oligodendrocytes"
+    ]
+  },
+  {
+    "id": "neur:md-conduction",
+    "nodes": []
+  },
+  {
+    "id": "neur:md-conduction-protocol",
+    "nodes": [
+      "neur:md-conduction"
+    ]
+  },
+  {
+    "id": "neur:md-internode-protocol",
+    "nodes": [
+      "neur:md-internodes"
+    ]
+  },
+  {
+    "id": "neur:md-internodes",
+    "nodes": []
+  },
+  {
+    "id": "neur:md-oligodendrocytes",
+    "nodes": []
+  },
+  {
+    "id": "neur:md-refractory-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:md-ultrastructure-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-constituent-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-location-decoding",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-matched-sequence-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-ordinal-grouping",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-primitive-behavior",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-primitive-pair-decoding",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-primitive-protocol",
+    "nodes": [
+      "neur:meg-primitive-behavior"
+    ]
+  },
+  {
+    "id": "neur:meg-primitive-transfer-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-sequence-anticipation",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-sequence-behavior",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-sequence-primitive-decoding",
+    "nodes": []
+  },
+  {
+    "id": "neur:meg-sequence-protocol",
+    "nodes": [
+      "neur:meg-sequence-behavior"
+    ]
+  },
+  {
+    "id": "neur:microglial-bouton-proximity",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-cd39-culture-ado",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-cd39-culture-ado-protocol",
+    "nodes": [
+      "neur:microglial-cd39-culture-ado"
+    ]
+  },
+  {
+    "id": "neur:microglial-cd73-culture-ado",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-cd73-culture-ado-protocol",
+    "nodes": [
+      "neur:microglial-cd73-culture-ado"
+    ]
+  },
+  {
+    "id": "neur:microglial-cd73-expression",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-cno-control-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-cortical-cno-protocol",
+    "nodes": [
+      "neur:microglial-bouton-proximity",
+      "neur:microglial-cortical-tip-velocity"
+    ]
+  },
+  {
+    "id": "neur:microglial-cortical-tip-velocity",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-injury-recruitment",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-process-motility",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-purinergic-feedback",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-rgc-material",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-soma-migration-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:microglial-surveillance-protection",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-dark-execution",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-emg-control",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-f1-control",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-f5-responses",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-recognition-mechanism",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-visual-only",
+    "nodes": []
+  },
+  {
+    "id": "neur:mirror-visuomotor-congruence",
+    "nodes": []
+  },
+  {
+    "id": "neur:motion-bias-timecourse",
+    "nodes": []
+  },
+  {
+    "id": "neur:motion-choice-rt",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-cross-spine-size-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-cross-training-turnover",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-cross-training-turnover-protocol",
+    "nodes": [
+      "neur:motor-cross-training-turnover"
+    ]
+  },
+  {
+    "id": "neur:motor-dendrite-tip-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-filopodia-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-first-session-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-functional-map",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-homeostatic-construction",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-maintenance-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-new-spine-retention",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-new-spine-retention-protocol",
+    "nodes": [
+      "neur:motor-new-spine-retention"
+    ]
+  },
+  {
+    "id": "neur:motor-novel-capellini-turnover",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-novel-capellini-turnover-protocol",
+    "nodes": [
+      "neur:motor-novel-capellini-turnover"
+    ]
+  },
+  {
+    "id": "neur:motor-novel-reaching-turnover",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-novel-reaching-turnover-protocol",
+    "nodes": [
+      "neur:motor-novel-reaching-turnover"
+    ]
+  },
+  {
+    "id": "neur:motor-region-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-retraining-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-spine-memory",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-spine-population-balance",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-success-association",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-young-turnover",
+    "nodes": []
+  },
+  {
+    "id": "neur:motor-young-turnover-protocol",
+    "nodes": [
+      "neur:motor-young-turnover"
+    ]
+  },
+  {
+    "id": "neur:mt-inactivation",
+    "nodes": [
+      "neur:mt-motion-sensitivity"
+    ]
+  },
+  {
+    "id": "neur:mt-motion-sensitivity",
+    "nodes": []
+  },
+  {
+    "id": "neur:ne-mo-activation",
+    "nodes": [
+      "neur:ne-mo-astro-calcium",
+      "neur:ne-mo-swimming"
+    ]
+  },
+  {
+    "id": "neur:ne-mo-astro-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:ne-mo-glia-ablated-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:ne-mo-swimming",
+    "nodes": []
+  },
+  {
+    "id": "neur:neural-gene-programming",
+    "nodes": []
+  },
+  {
+    "id": "neur:neural-information-identity",
+    "nodes": []
+  },
+  {
+    "id": "neur:neuroimmune-circuit-closure",
+    "nodes": []
+  },
+  {
+    "id": "neur:neuroimmune-generalization",
+    "nodes": []
+  },
+  {
+    "id": "neur:neuroligin-contact",
+    "nodes": [
+      "neur:presynaptic-differentiation"
+    ]
+  },
+  {
+    "id": "neur:neurovascular-complete-route",
+    "nodes": []
+  },
+  {
+    "id": "neur:neurovascular-neural-readout",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-current-spikes",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-current-spikes-protocol",
+    "nodes": [
+      "neur:ng-current-spikes"
+    ]
+  },
+  {
+    "id": "neur:ng-electrical-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-labeled-population",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-marker-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-memory-route",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-morphology-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-pattern-separation",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-perforant-input",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-perforant-input-protocol",
+    "nodes": [
+      "neur:ng-perforant-input"
+    ]
+  },
+  {
+    "id": "neur:ng-regulatory-geometry",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-running-brdu",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-running-brdu-protocol",
+    "nodes": [
+      "neur:ng-running-brdu"
+    ]
+  },
+  {
+    "id": "neur:ng-stage-framework",
+    "nodes": []
+  },
+  {
+    "id": "neur:ng-synaptic-contacts",
+    "nodes": []
+  },
+  {
+    "id": "neur:nmda-antagonism",
+    "nodes": [
+      "neur:ca1-potentiation-induction"
+    ]
+  },
+  {
+    "id": "neur:nodose-stimulus-overlap",
+    "nodes": []
+  },
+  {
+    "id": "neur:ollr-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:p2ry12-d1-protocol",
+    "nodes": [
+      "neur:p2ry12-d1-seizures"
+    ]
+  },
+  {
+    "id": "neur:p2ry12-d1-seizures",
+    "nodes": []
+  },
+  {
+    "id": "neur:partner-pain-self-contrast",
+    "nodes": []
+  },
+  {
+    "id": "neur:partner-pain-shared-affect-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:partner-pain-shared-bold",
+    "nodes": []
+  },
+  {
+    "id": "neur:partner-pain-trait-correlation",
+    "nodes": []
+  },
+  {
+    "id": "neur:perception-optimality",
+    "nodes": []
+  },
+  {
+    "id": "neur:perforant-conditioning",
+    "nodes": [
+      "neur:dentate-potentiation"
+    ]
+  },
+  {
+    "id": "neur:perfused-cytokine-imaging-protocol",
+    "nodes": [
+      "neur:perfused-cytokine-nodose-calcium"
+    ]
+  },
+  {
+    "id": "neur:perfused-cytokine-nodose-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:picrotoxin-event-distribution",
+    "nodes": []
+  },
+  {
+    "id": "neur:plasticity-learning",
+    "nodes": []
+  },
+  {
+    "id": "neur:plx-calcium-magnitude-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:plx-calcium-protocol",
+    "nodes": [
+      "neur:plx-striatal-synchrony"
+    ]
+  },
+  {
+    "id": "neur:plx-dialysis-protocol",
+    "nodes": [
+      "neur:plx-striatal-dialysate"
+    ]
+  },
+  {
+    "id": "neur:plx-rate-interaction-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:plx-striatal-dialysate",
+    "nodes": []
+  },
+  {
+    "id": "neur:plx-striatal-synchrony",
+    "nodes": []
+  },
+  {
+    "id": "neur:presynaptic-differentiation",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-aged-neuron-production",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-brdu-census",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-developmental-cessation",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-glucocorticoid-aging",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-neuronal-colabels",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-olfactory-route",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-rms-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:primate-toad-age-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:probabilistic-visual-feedback",
+    "nodes": [
+      "neur:feedback-astro-calcium"
+    ]
+  },
+  {
+    "id": "neur:projection-exploration",
+    "nodes": []
+  },
+  {
+    "id": "neur:pv-isolation-cycle-suppression",
+    "nodes": []
+  },
+  {
+    "id": "neur:pv-isolation-mcm-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:pv-isolation-protocol",
+    "nodes": [
+      "neur:pv-isolation-cycle-suppression",
+      "neur:pv-isolation-residual-edu"
+    ]
+  },
+  {
+    "id": "neur:pv-isolation-residual-edu",
+    "nodes": []
+  },
+  {
+    "id": "neur:pv-rgl-activation-protocol",
+    "nodes": [
+      "neur:pv-rgl-cycle-suppression"
+    ]
+  },
+  {
+    "id": "neur:pv-rgl-cycle-increase",
+    "nodes": []
+  },
+  {
+    "id": "neur:pv-rgl-cycle-suppression",
+    "nodes": []
+  },
+  {
+    "id": "neur:pv-rgl-inhibition-protocol",
+    "nodes": [
+      "neur:pv-rgl-cycle-increase"
+    ]
+  },
+  {
+    "id": "neur:pv-rgl-slice-protocol",
+    "nodes": [
+      "neur:pv-rgl-tonic-current"
+    ]
+  },
+  {
+    "id": "neur:pv-rgl-tonic-current",
+    "nodes": []
+  },
+  {
+    "id": "neur:radial-astro-ablation",
+    "nodes": [
+      "neur:astro-ablation-passivity"
+    ]
+  },
+  {
+    "id": "neur:radial-astro-gq-activation",
+    "nodes": [
+      "neur:astro-gq-swimming"
+    ]
+  },
+  {
+    "id": "neur:radial-astro-trpv1",
+    "nodes": [
+      "neur:astro-trpv1-passivity"
+    ]
+  },
+  {
+    "id": "neur:rapid-lps-nodose-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:reaching-adaptation",
+    "nodes": []
+  },
+  {
+    "id": "neur:reaching-aftereffect",
+    "nodes": []
+  },
+  {
+    "id": "neur:resting-attractor-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:rgl-diazepam-cycle-markers",
+    "nodes": []
+  },
+  {
+    "id": "neur:rgl-diazepam-genotype-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:rgl-diazepam-protocol",
+    "nodes": [
+      "neur:rgl-diazepam-cycle-markers"
+    ]
+  },
+  {
+    "id": "neur:rgl-gamma2-clone-activation",
+    "nodes": []
+  },
+  {
+    "id": "neur:rgl-gamma2-deletion-protocol",
+    "nodes": [
+      "neur:rgl-gamma2-clone-activation",
+      "neur:rgl-gamma2-late-composition"
+    ]
+  },
+  {
+    "id": "neur:rgl-gamma2-late-composition",
+    "nodes": []
+  },
+  {
+    "id": "neur:rgl-homeostatic-loop",
+    "nodes": []
+  },
+  {
+    "id": "neur:rgl-synaptic-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:rhesus-autoradiographic-neuronal-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:rhesus-glial-label-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:rhesus-juvenile-ambiguous-profiles",
+    "nodes": []
+  },
+  {
+    "id": "neur:rhesus-labeling-positive-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:rhythm-coding",
+    "nodes": []
+  },
+  {
+    "id": "neur:saadl-activation",
+    "nodes": [
+      "neur:ollr-response"
+    ]
+  },
+  {
+    "id": "neur:sensory-response",
+    "nodes": []
+  },
+  {
+    "id": "neur:sequence-algebraic-code",
+    "nodes": []
+  },
+  {
+    "id": "neur:sequence-chunk-code",
+    "nodes": []
+  },
+  {
+    "id": "neur:sequence-nested-code",
+    "nodes": []
+  },
+  {
+    "id": "neur:sequence-ordinal-code",
+    "nodes": []
+  },
+  {
+    "id": "neur:sequence-transition-code",
+    "nodes": []
+  },
+  {
+    "id": "neur:shared-manifold-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:signal-atlas",
+    "nodes": []
+  },
+  {
+    "id": "neur:sleep-homeostasis",
+    "nodes": []
+  },
+  {
+    "id": "neur:sleep-two-process",
+    "nodes": []
+  },
+  {
+    "id": "neur:somatic-exploration",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-clonal-selfrenewal",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-cluster-census",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-culture-expansion",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-culture-fates",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-lentiviral-specificity",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-mixed-clusters",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-population-fates",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-population-homeostasis",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-radial-lineage-loop",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-reporter-population",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-running-markers",
+    "nodes": []
+  },
+  {
+    "id": "neur:sox2-running-pool-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-adult-rectangle-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-adults-continuation",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-adults-protocol",
+    "nodes": [
+      "neur:spatial-adults-continuation"
+    ]
+  },
+  {
+    "id": "neur:spatial-child-complex-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-children-continuation",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-children-protocol",
+    "nodes": [
+      "neur:spatial-children-continuation"
+    ]
+  },
+  {
+    "id": "neur:spatial-fmri-complexity",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-fmri-localizer",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-fmri-memory-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-fmri-nesting",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-fmri-patterns",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-gaze-anticipation",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-gaze-boundaries",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-gaze-deep-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-gaze-index",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-gaze-protocol",
+    "nodes": [
+      "neur:spatial-gaze-anticipation"
+    ]
+  },
+  {
+    "id": "neur:spatial-munduruku-continuation",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-munduruku-crosses-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-munduruku-protocol",
+    "nodes": [
+      "neur:spatial-munduruku-continuation"
+    ]
+  },
+  {
+    "id": "neur:spatial-octagon-language",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-preview-benefit-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-preview-complex-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-preview-continuation",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-preview-protocol",
+    "nodes": [
+      "neur:spatial-preview-continuation"
+    ]
+  },
+  {
+    "id": "neur:spatial-resource-availability",
+    "nodes": []
+  },
+  {
+    "id": "neur:spatial-scanner-gaze",
+    "nodes": []
+  },
+  {
+    "id": "neur:sst-rgl-cycle-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-capillary-velocity-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-density-late-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-imaging-controls",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-infarct-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-near-far-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-neurovascular-geometry",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-optical-map",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-orientation-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-remodeling-function",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-spine-density-1w",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-spine-density-1w-protocol",
+    "nodes": [
+      "neur:stroke-spine-density-1w"
+    ]
+  },
+  {
+    "id": "neur:stroke-spine-elimination-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-spine-formation-1w",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-spine-formation-1w-protocol",
+    "nodes": [
+      "neur:stroke-spine-formation-1w"
+    ]
+  },
+  {
+    "id": "neur:stroke-spine-formation-2w",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-spine-formation-2w-protocol",
+    "nodes": [
+      "neur:stroke-spine-formation-2w"
+    ]
+  },
+  {
+    "id": "neur:stroke-spine-formation-6w",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-spine-formation-6w-protocol",
+    "nodes": [
+      "neur:stroke-spine-formation-6w"
+    ]
+  },
+  {
+    "id": "neur:stroke-vascular-fraction-6w",
+    "nodes": []
+  },
+  {
+    "id": "neur:stroke-vascular-fraction-6w-protocol",
+    "nodes": [
+      "neur:stroke-vascular-fraction-6w"
+    ]
+  },
+  {
+    "id": "neur:surface-k-flow-protocol",
+    "nodes": [
+      "neur:kir21-surface-k-hyperemia"
+    ]
+  },
+  {
+    "id": "neur:symbol-bootstrapping",
+    "nodes": []
+  },
+  {
+    "id": "neur:symbol-composition",
+    "nodes": []
+  },
+  {
+    "id": "neur:symbol-description-cost",
+    "nodes": []
+  },
+  {
+    "id": "neur:symbol-development-contrast",
+    "nodes": []
+  },
+  {
+    "id": "neur:symbol-program-induction",
+    "nodes": []
+  },
+  {
+    "id": "neur:symbol-role-filler-binding",
+    "nodes": []
+  },
+  {
+    "id": "neur:synchrony-criticality",
+    "nodes": []
+  },
+  {
+    "id": "neur:task-calcium-ensembles",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-bmi-response-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-ca3-bouton-profile",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-dcg-blockade",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-dcg-blockade-protocol",
+    "nodes": [
+      "neur:toni-dcg-blockade"
+    ]
+  },
+  {
+    "id": "neur:toni-hilar-bouton-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-kyn-blockade",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-kyn-blockade-protocol",
+    "nodes": [
+      "neur:toni-kyn-blockade"
+    ]
+  },
+  {
+    "id": "neur:toni-light-spikes",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-light-spikes-protocol",
+    "nodes": [
+      "neur:toni-light-spikes"
+    ]
+  },
+  {
+    "id": "neur:toni-response-classification",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-target-psc",
+    "nodes": []
+  },
+  {
+    "id": "neur:toni-target-psc-protocol",
+    "nodes": [
+      "neur:toni-target-psc"
+    ]
+  },
+  {
+    "id": "neur:toni-target-recruitment",
+    "nodes": []
+  },
+  {
+    "id": "neur:trap-activation-cytokines",
+    "nodes": []
+  },
+  {
+    "id": "neur:trap-activation-lps-protocol",
+    "nodes": [
+      "neur:trap-activation-cytokines"
+    ]
+  },
+  {
+    "id": "neur:trap-inhibition-cytokines",
+    "nodes": []
+  },
+  {
+    "id": "neur:trap-inhibition-lps-protocol",
+    "nodes": [
+      "neur:trap-inhibition-cytokines"
+    ]
+  },
+  {
+    "id": "neur:trap-saline-cytokine-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:trpa1-activation-cytokines",
+    "nodes": []
+  },
+  {
+    "id": "neur:trpa1-activation-lps-protocol",
+    "nodes": [
+      "neur:trpa1-activation-cytokines"
+    ]
+  },
+  {
+    "id": "neur:trpa1-corticosterone-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:trpa1-endotoxin-protocol",
+    "nodes": [
+      "neur:trpa1-endotoxin-survival"
+    ]
+  },
+  {
+    "id": "neur:trpa1-endotoxin-survival",
+    "nodes": []
+  },
+  {
+    "id": "neur:trpa1-salmonella-burden",
+    "nodes": []
+  },
+  {
+    "id": "neur:trpa1-salmonella-protocol",
+    "nodes": [
+      "neur:trpa1-salmonella-burden"
+    ]
+  },
+  {
+    "id": "neur:tsa-chromatin-protocol",
+    "nodes": [
+      "neur:tsa-h3k9-signal",
+      "neur:tsa-ngfia-binding"
+    ]
+  },
+  {
+    "id": "neur:tsa-gr-protein",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-gr-site16",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-gr-site17",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-h3k9-signal",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-high-care-corticosterone-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-methylation-protocol",
+    "nodes": [
+      "neur:tsa-gr-site16",
+      "neur:tsa-gr-site17"
+    ]
+  },
+  {
+    "id": "neur:tsa-ngfia-binding",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-protein-protocol",
+    "nodes": [
+      "neur:tsa-gr-protein"
+    ]
+  },
+  {
+    "id": "neur:tsa-restraint-corticosterone",
+    "nodes": []
+  },
+  {
+    "id": "neur:tsa-restraint-protocol",
+    "nodes": [
+      "neur:tsa-restraint-corticosterone"
+    ]
+  },
+  {
+    "id": "neur:ttx-engulfment",
+    "nodes": []
+  },
+  {
+    "id": "neur:ttx-retinal-protocol",
+    "nodes": [
+      "neur:ttx-engulfment"
+    ]
+  },
+  {
+    "id": "neur:vagal-cnst-tracing",
+    "nodes": []
+  },
+  {
+    "id": "neur:vagotomy-cnst-calcium",
+    "nodes": []
+  },
+  {
+    "id": "neur:vagotomy-lps-protocol",
+    "nodes": [
+      "neur:vagotomy-cnst-calcium"
+    ]
+  },
+  {
+    "id": "neur:vgat-lps-cytokine-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-detection-timing",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-feature-removal",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-neurodynamic-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-phase-amplitude",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-power-correlation",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-rating-associations",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-regional-power",
+    "nodes": []
+  },
+  {
+    "id": "neur:vicarious-transfer-entropy",
+    "nodes": []
+  },
+  {
+    "id": "neur:vip-rgl-cycle-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:visual-amplitude-connectivity",
+    "nodes": []
+  },
+  {
+    "id": "neur:visual-duration-readout",
+    "nodes": []
+  },
+  {
+    "id": "neur:visual-feature-decoding",
+    "nodes": []
+  },
+  {
+    "id": "neur:visual-haptic-protocol",
+    "nodes": [
+      "neur:height-cue-combination"
+    ]
+  },
+  {
+    "id": "neur:visual-phase-consistency",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-adaptive-gating",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-control-requirements",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-dms-sample",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-eeg-relevance-contrast",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-eeg-target-reactivation",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-episodic-buffer",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-fmri-priority",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-global-complexity-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-latent-synaptic-trace",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-lure-behavior",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-multicomponent-model",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pfc-delay-dynamics",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pfc-delay-selectivity",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pfc-guided-activation",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pfc-it-delay-comparison",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pfc-match-enhancement",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pfc-repetition-suppression",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-pooled-behavior-null",
+    "nodes": []
+  },
+  {
+    "id": "neur:wm-task-construct",
+    "nodes": []
+  },
+  {
+    "id": "opt:absorption-coefficient",
+    "nodes": [
+      "opt:water-absorption"
+    ]
+  },
+  {
+    "id": "opt:brdf",
+    "nodes": [
+      "opt:specular-response"
+    ]
+  },
+  {
+    "id": "opt:material-transmission",
+    "nodes": []
+  },
+  {
+    "id": "opt:measurement-context",
+    "nodes": [
+      "opt:material-transmission",
+      "opt:specular-response"
+    ]
+  },
+  {
+    "id": "opt:specular-response",
+    "nodes": []
+  },
+  {
+    "id": "opt:water-absorption",
+    "nodes": []
+  },
+  {
+    "id": "phys:afach2014-conversion-context",
+    "nodes": [
+      "phys:afach2014-hg-reference",
+      "phys:afach2014-neutron-frequency"
+    ]
+  },
+  {
+    "id": "phys:afach2014-hg-reference",
+    "nodes": [
+      "phys:afach2014-neutron-frequency",
+      "phys:neutron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:afach2014-neutron-frequency",
+    "nodes": [
+      "phys:neutron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:afach2014-precession-context",
+    "nodes": [
+      "phys:afach2014-ratio"
+    ]
+  },
+  {
+    "id": "phys:afach2014-ratio",
+    "nodes": [
+      "phys:afach2014-neutron-frequency",
+      "phys:neutron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:alpha-gamma-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:alpha-gamma-replay-context",
+    "nodes": [
+      "phys:alpha-gamma-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:alpha-gamma-transfer",
+    "nodes": [
+      "phys:alpha-gamma-arithmetic",
+      "phys:normalized-monitor-response",
+      "phys:yue2018-monitor-efficiency"
+    ]
+  },
+  {
+    "id": "phys:asymptotic-freedom",
+    "nodes": [
+      "phys:creutz-scaling"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-acquisition-context",
+    "nodes": [
+      "phys:atlas2012-diphoton-candidates",
+      "phys:atlas2012-four-lepton-candidates",
+      "phys:atlas2012-ww-candidates"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-boson-mass",
+    "nodes": [
+      "phys:atlas2012-higgs-compatibility"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-combined-excess",
+    "nodes": [
+      "phys:atlas2012-higgs-compatibility"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-diphoton-candidates",
+    "nodes": [
+      "phys:atlas2012-boson-mass",
+      "phys:atlas2012-combined-excess",
+      "phys:atlas2012-higgs-compatibility"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-four-lepton-candidates",
+    "nodes": [
+      "phys:atlas2012-boson-mass",
+      "phys:atlas2012-combined-excess"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-higgs-compatibility",
+    "nodes": []
+  },
+  {
+    "id": "phys:atlas2012-inference-context",
+    "nodes": [
+      "phys:atlas2012-boson-mass",
+      "phys:atlas2012-combined-excess",
+      "phys:atlas2012-higgs-compatibility"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-response-context",
+    "nodes": [
+      "phys:atlas2012-boson-mass",
+      "phys:atlas2012-combined-excess",
+      "phys:atlas2012-diphoton-candidates",
+      "phys:atlas2012-four-lepton-candidates",
+      "phys:atlas2012-ww-candidates"
+    ]
+  },
+  {
+    "id": "phys:atlas2012-ww-candidates",
+    "nodes": [
+      "phys:atlas2012-combined-excess"
+    ]
+  },
+  {
+    "id": "phys:atomic-mass-covariance",
+    "nodes": [
+      "phys:codata2022-ion-covariance",
+      "phys:difilippo-capture-input",
+      "phys:difilippo-hydrogen-masses",
+      "phys:fink2021-proton-mass",
+      "phys:mass-adjustment-constraint",
+      "phys:rau-joint-adjustment",
+      "phys:rau-local-adjustment"
+    ]
+  },
+  {
+    "id": "phys:bali-avoided-crossing",
+    "nodes": [
+      "phys:bali-mixing-coupling"
+    ]
+  },
+  {
+    "id": "phys:bali-correlator-matrix",
+    "nodes": [
+      "phys:bali-avoided-crossing"
+    ]
+  },
+  {
+    "id": "phys:bali-mixing-coupling",
+    "nodes": []
+  },
+  {
+    "id": "phys:bali-wilson-loop-null",
+    "nodes": []
+  },
+  {
+    "id": "phys:bali2005-context",
+    "nodes": [
+      "phys:bali-correlator-matrix",
+      "phys:bali-wilson-loop-null"
+    ]
+  },
+  {
+    "id": "phys:barnes1964-acquisition-context",
+    "nodes": [
+      "phys:barnes1964-tracks"
+    ]
+  },
+  {
+    "id": "phys:barnes1964-cascade",
+    "nodes": [
+      "phys:barnes1964-omega"
+    ]
+  },
+  {
+    "id": "phys:barnes1964-omega",
+    "nodes": []
+  },
+  {
+    "id": "phys:barnes1964-reconstruction-context",
+    "nodes": [
+      "phys:barnes1964-cascade",
+      "phys:barnes1964-omega"
+    ]
+  },
+  {
+    "id": "phys:barnes1964-tracks",
+    "nodes": [
+      "phys:barnes1964-cascade",
+      "phys:barnes1964-omega"
+    ]
+  },
+  {
+    "id": "phys:baryon-octet-mass-relation",
+    "nodes": [
+      "phys:hadron-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:beam-decay-ratio",
+    "nodes": [
+      "phys:alpha-gamma-transfer",
+      "phys:nico2005-lifetime"
+    ]
+  },
+  {
+    "id": "phys:beam-neutron-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:beam-neutron-replay-context",
+    "nodes": [
+      "phys:beam-neutron-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:belle2014-tau-acquisition-context",
+    "nodes": [
+      "phys:belle2014-tau-decay-lengths"
+    ]
+  },
+  {
+    "id": "phys:belle2014-tau-decay-lengths",
+    "nodes": [
+      "phys:belle2014-tau-lifetime"
+    ]
+  },
+  {
+    "id": "phys:belle2014-tau-inference-context",
+    "nodes": [
+      "phys:belle2014-tau-lifetime"
+    ]
+  },
+  {
+    "id": "phys:belle2014-tau-lifetime",
+    "nodes": []
+  },
+  {
+    "id": "phys:belle2014-tau-response-context",
+    "nodes": [
+      "phys:belle2014-tau-decay-lengths",
+      "phys:belle2014-tau-lifetime"
+    ]
+  },
+  {
+    "id": "phys:bernauer-data-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:bernauer-data-replay-context",
+    "nodes": [
+      "phys:bernauer-data-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:bernauer2014-acquisition-context",
+    "nodes": [
+      "phys:bernauer2014-ratios"
+    ]
+  },
+  {
+    "id": "phys:bernauer2014-form-factors",
+    "nodes": [
+      "phys:bernauer-data-arithmetic",
+      "phys:bernauer2014-separated"
+    ]
+  },
+  {
+    "id": "phys:bernauer2014-mainz-fit-context",
+    "nodes": [
+      "phys:bernauer2014-form-factors",
+      "phys:bernauer2014-ratios"
+    ]
+  },
+  {
+    "id": "phys:bernauer2014-ratios",
+    "nodes": [
+      "phys:bernauer-data-arithmetic",
+      "phys:bernauer2014-form-factors",
+      "phys:bernauer2014-separated"
+    ]
+  },
+  {
+    "id": "phys:bernauer2014-rosenbluth-context",
+    "nodes": [
+      "phys:bernauer2014-separated"
+    ]
+  },
+  {
+    "id": "phys:bernauer2014-separated",
+    "nodes": [
+      "phys:bernauer-data-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:bethe-radiative-shift",
+    "nodes": [
+      "phys:lamb-radiative-interpretation"
+    ]
+  },
+  {
+    "id": "phys:binding-unit-conversion",
+    "nodes": [
+      "phys:kessler-binding-energy",
+      "phys:neutron-mass-balance",
+      "phys:rau-capture-binding"
+    ]
+  },
+  {
+    "id": "phys:bipartite-entanglement",
+    "nodes": [
+      "phys:projective-bell-local-entanglement"
+    ]
+  },
+  {
+    "id": "phys:bipartite-state",
+    "nodes": [
+      "phys:bipartite-entanglement",
+      "phys:local-quantum-marginals"
+    ]
+  },
+  {
+    "id": "phys:bloom1969-corrected-crosssections",
+    "nodes": [
+      "phys:slac-scaling",
+      "phys:slac-spectrum"
+    ]
+  },
+  {
+    "id": "phys:bloom1969-response-context",
+    "nodes": [
+      "phys:bloom1969-corrected-crosssections"
+    ]
+  },
+  {
+    "id": "phys:borexino2015-electron-acquisition-context",
+    "nodes": [
+      "phys:borexino2015-electron-spectrum"
+    ]
+  },
+  {
+    "id": "phys:borexino2015-electron-decay-limit",
+    "nodes": []
+  },
+  {
+    "id": "phys:borexino2015-electron-inference-context",
+    "nodes": [
+      "phys:borexino2015-electron-decay-limit"
+    ]
+  },
+  {
+    "id": "phys:borexino2015-electron-response-context",
+    "nodes": [
+      "phys:borexino2015-electron-decay-limit",
+      "phys:borexino2015-electron-spectrum"
+    ]
+  },
+  {
+    "id": "phys:borexino2015-electron-spectrum",
+    "nodes": [
+      "phys:borexino2015-electron-decay-limit"
+    ]
+  },
+  {
+    "id": "phys:borsanyi-calibrated-ratio",
+    "nodes": []
+  },
+  {
+    "id": "phys:borsanyi-isospin-spectrum",
+    "nodes": [
+      "phys:borsanyi-qcd-qed-components"
+    ]
+  },
+  {
+    "id": "phys:borsanyi-kaon-volume",
+    "nodes": [
+      "phys:borsanyi-isospin-spectrum"
+    ]
+  },
+  {
+    "id": "phys:borsanyi-lattice-splittings",
+    "nodes": [
+      "phys:borsanyi-isospin-spectrum"
+    ]
+  },
+  {
+    "id": "phys:borsanyi-qcd-qed-components",
+    "nodes": [
+      "phys:borsanyi-calibrated-ratio"
+    ]
+  },
+  {
+    "id": "phys:borsanyi-volume-context",
+    "nodes": [
+      "phys:borsanyi-kaon-volume"
+    ]
+  },
+  {
+    "id": "phys:borsanyi2015-context",
+    "nodes": [
+      "phys:borsanyi-lattice-splittings"
+    ]
+  },
+  {
+    "id": "phys:bragg-wavelength",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:kessler-capture-wavelength",
+      "phys:kessler-recalibrated-wavelength",
+      "phys:rau-capture-binding",
+      "phys:silicon-lattice-transfer"
+    ]
+  },
+  {
+    "id": "phys:bressi-coefficient",
+    "nodes": []
+  },
+  {
+    "id": "phys:bressi-frequency",
+    "nodes": [
+      "phys:bressi-coefficient"
+    ]
+  },
+  {
+    "id": "phys:bressi2002-context",
+    "nodes": [
+      "phys:bressi-frequency"
+    ]
+  },
+  {
+    "id": "phys:capture-recoil-energy",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:kessler-binding-energy",
+      "phys:neutron-mass-balance",
+      "phys:rau-capture-binding",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:casimir-material-model",
+    "nodes": [
+      "phys:lamoreaux-casimir"
+    ]
+  },
+  {
+    "id": "phys:cdf2013-top-acquisition-context",
+    "nodes": [
+      "phys:cdf2013-top-sample"
+    ]
+  },
+  {
+    "id": "phys:cdf2013-top-inference-context",
+    "nodes": [
+      "phys:cdf2013-top-width-interval"
+    ]
+  },
+  {
+    "id": "phys:cdf2013-top-response-context",
+    "nodes": [
+      "phys:cdf2013-top-sample",
+      "phys:cdf2013-top-width-interval"
+    ]
+  },
+  {
+    "id": "phys:cdf2013-top-sample",
+    "nodes": [
+      "phys:cdf2013-top-width-interval"
+    ]
+  },
+  {
+    "id": "phys:cdf2013-top-width-interval",
+    "nodes": []
+  },
+  {
+    "id": "phys:charged-fermion-higgs-coupling",
+    "nodes": []
+  },
+  {
+    "id": "phys:chsh-local-model",
+    "nodes": [
+      "phys:hensen2015-bell-test",
+      "phys:hensen2016-bell-test",
+      "phys:projective-bell-local-entanglement"
+    ]
+  },
+  {
+    "id": "phys:cms-alpha-mz",
+    "nodes": [
+      "phys:cms-running-consistency"
+    ]
+  },
+  {
+    "id": "phys:cms-r32",
+    "nodes": [
+      "phys:cms-alpha-mz",
+      "phys:cms-running-consistency"
+    ]
+  },
+  {
+    "id": "phys:cms-running-consistency",
+    "nodes": []
+  },
+  {
+    "id": "phys:cms2013-r32-context",
+    "nodes": [
+      "phys:cms-r32"
+    ]
+  },
+  {
+    "id": "phys:cms2016-tau-acquisition-context",
+    "nodes": [
+      "phys:cms2016-tau-selected-distributions"
+    ]
+  },
+  {
+    "id": "phys:cms2016-tau-coupling-compatibility",
+    "nodes": []
+  },
+  {
+    "id": "phys:cms2016-tau-coupling-context",
+    "nodes": [
+      "phys:cms2016-tau-coupling-compatibility"
+    ]
+  },
+  {
+    "id": "phys:cms2016-tau-display-summary",
+    "nodes": []
+  },
+  {
+    "id": "phys:cms2016-tau-rate-context",
+    "nodes": [
+      "phys:cms2016-tau-display-summary",
+      "phys:cms2016-tau-rate-excess"
+    ]
+  },
+  {
+    "id": "phys:cms2016-tau-rate-excess",
+    "nodes": [
+      "phys:cms2016-tau-display-summary"
+    ]
+  },
+  {
+    "id": "phys:cms2016-tau-response-context",
+    "nodes": [
+      "phys:cms2016-tau-coupling-compatibility",
+      "phys:cms2016-tau-rate-excess",
+      "phys:cms2016-tau-selected-distributions"
+    ]
+  },
+  {
+    "id": "phys:cms2016-tau-selected-distributions",
+    "nodes": [
+      "phys:cms2016-tau-coupling-compatibility",
+      "phys:cms2016-tau-display-summary",
+      "phys:cms2016-tau-rate-excess"
+    ]
+  },
+  {
+    "id": "phys:codata2022-capture-equation",
+    "nodes": []
+  },
+  {
+    "id": "phys:codata2022-frequency-inputs",
+    "nodes": []
+  },
+  {
+    "id": "phys:codata2022-ill-input",
+    "nodes": []
+  },
+  {
+    "id": "phys:codata2022-ion-covariance",
+    "nodes": [
+      "phys:codata2022-frequency-inputs"
+    ]
+  },
+  {
+    "id": "phys:codata2022-lattice-context",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:codata2022-ill-input"
+    ]
+  },
+  {
+    "id": "phys:codata2022-mass-inputs-context",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:codata2022-ion-covariance"
+    ]
+  },
+  {
+    "id": "phys:coupled-cyclotron-readout",
+    "nodes": [
+      "phys:fink2021-drive-extrapolation",
+      "phys:fink2021-ground-ratio"
+    ]
+  },
+  {
+    "id": "phys:creutz-scaling",
+    "nodes": []
+  },
+  {
+    "id": "phys:creutz-string-fit",
+    "nodes": [
+      "phys:creutz-scaling"
+    ]
+  },
+  {
+    "id": "phys:creutz-wilson-loops",
+    "nodes": [
+      "phys:creutz-string-fit"
+    ]
+  },
+  {
+    "id": "phys:creutz1980-context",
+    "nodes": [
+      "phys:creutz-wilson-loops"
+    ]
+  },
+  {
+    "id": "phys:decay-energy-threshold",
+    "nodes": [
+      "phys:deuteron-beta-threshold"
+    ]
+  },
+  {
+    "id": "phys:deuteron-beta-context",
+    "nodes": [
+      "phys:deuteron-beta-threshold"
+    ]
+  },
+  {
+    "id": "phys:deuteron-beta-threshold",
+    "nodes": []
+  },
+  {
+    "id": "phys:difilippo-capture-input",
+    "nodes": [
+      "phys:kessler-neutron-mass"
+    ]
+  },
+  {
+    "id": "phys:difilippo-example-ratio",
+    "nodes": []
+  },
+  {
+    "id": "phys:difilippo-hydrogen-masses",
+    "nodes": [
+      "phys:difilippo-capture-input"
+    ]
+  },
+  {
+    "id": "phys:difilippo1994-context",
+    "nodes": [
+      "phys:difilippo-example-ratio",
+      "phys:difilippo-hydrogen-masses"
+    ]
+  },
+  {
+    "id": "phys:dilepton-invariant-mass",
+    "nodes": [
+      "phys:ua1-1983-z-dimuon-mass",
+      "phys:ua1-1983-z-electron-mass"
+    ]
+  },
+  {
+    "id": "phys:durr-hadron-spectrum",
+    "nodes": []
+  },
+  {
+    "id": "phys:durr-lattice-masses",
+    "nodes": [
+      "phys:durr-hadron-spectrum"
+    ]
+  },
+  {
+    "id": "phys:durr-resonance-exclusion",
+    "nodes": []
+  },
+  {
+    "id": "phys:durr2008-context",
+    "nodes": [
+      "phys:durr-lattice-masses",
+      "phys:durr-resonance-exclusion"
+    ]
+  },
+  {
+    "id": "phys:electron-moment-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:electron-moment-frequency-ratio",
+    "nodes": [
+      "phys:electron-moment-arithmetic",
+      "phys:fan2023-electron-moment"
+    ]
+  },
+  {
+    "id": "phys:electron-moment-normalization",
+    "nodes": [
+      "phys:electron-moment-arithmetic",
+      "phys:electron-moment-frequency-ratio",
+      "phys:fan2023-electron-moment",
+      "phys:schwinger-leading-anomaly"
+    ]
+  },
+  {
+    "id": "phys:electron-moment-replay-context",
+    "nodes": [
+      "phys:electron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:electroweak-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:electroweak-replay-context",
+    "nodes": [
+      "phys:electroweak-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:exponential-survival",
+    "nodes": [
+      "phys:beam-decay-ratio",
+      "phys:partial-lifetime",
+      "phys:ucn-storage-loss-model"
+    ]
+  },
+  {
+    "id": "phys:external-scattering-state",
+    "nodes": [
+      "phys:virtual-process-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:fan2023-cavity-calibration",
+    "nodes": [
+      "phys:fan2023-cavity-shift"
+    ]
+  },
+  {
+    "id": "phys:fan2023-cavity-context",
+    "nodes": [
+      "phys:fan2023-cavity-calibration"
+    ]
+  },
+  {
+    "id": "phys:fan2023-cavity-shift",
+    "nodes": [
+      "phys:fan2023-electron-moment"
+    ]
+  },
+  {
+    "id": "phys:fan2023-electron-moment",
+    "nodes": [
+      "phys:electron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:fan2023-fitted-frequencies",
+    "nodes": [
+      "phys:fan2023-electron-moment"
+    ]
+  },
+  {
+    "id": "phys:fan2023-frequency-lines",
+    "nodes": [
+      "phys:fan2023-fitted-frequencies"
+    ]
+  },
+  {
+    "id": "phys:fan2023-inference-context",
+    "nodes": [
+      "phys:fan2023-cavity-shift",
+      "phys:fan2023-electron-moment",
+      "phys:fan2023-fitted-frequencies"
+    ]
+  },
+  {
+    "id": "phys:fan2023-moment-context",
+    "nodes": [
+      "phys:fan2023-frequency-lines"
+    ]
+  },
+  {
+    "id": "phys:field-dynamics-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:field-dynamics-replay-context",
+    "nodes": [
+      "phys:field-dynamics-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:finite-volume-hadron-resonance",
+    "nodes": [
+      "phys:durr-hadron-spectrum",
+      "phys:durr-resonance-exclusion"
+    ]
+  },
+  {
+    "id": "phys:fink-deuteron-ratio",
+    "nodes": [
+      "phys:fink-proton-referenced-mass",
+      "phys:rau-joint-adjustment"
+    ]
+  },
+  {
+    "id": "phys:fink-proton-referenced-mass",
+    "nodes": []
+  },
+  {
+    "id": "phys:fink2020-ratio-context",
+    "nodes": [
+      "phys:fink-deuteron-ratio"
+    ]
+  },
+  {
+    "id": "phys:fink2021-deuteron-ratio",
+    "nodes": [
+      "phys:fink2021-proton-mass",
+      "phys:mass-constraint-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:fink2021-drive-control-context",
+    "nodes": [
+      "phys:fink2021-drive-extrapolation"
+    ]
+  },
+  {
+    "id": "phys:fink2021-drive-extrapolation",
+    "nodes": [
+      "phys:fink2021-ground-ratio"
+    ]
+  },
+  {
+    "id": "phys:fink2021-ground-ratio",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:fink2021-deuteron-ratio",
+      "phys:mass-constraint-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:fink2021-proton-mass",
+    "nodes": []
+  },
+  {
+    "id": "phys:fink2021-simultaneous-context",
+    "nodes": [
+      "phys:fink2021-drive-extrapolation",
+      "phys:fink2021-state-branches"
+    ]
+  },
+  {
+    "id": "phys:fink2021-state-branches",
+    "nodes": [
+      "phys:fink2021-ground-ratio"
+    ]
+  },
+  {
+    "id": "phys:fink2021-state-fit-context",
+    "nodes": [
+      "phys:fink2021-state-branches"
+    ]
+  },
+  {
+    "id": "phys:fractional-charge-residual",
+    "nodes": [
+      "phys:lee-charge-null"
+    ]
+  },
+  {
+    "id": "phys:free-field-time-evolution",
+    "nodes": [
+      "phys:field-dynamics-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:free-field-vacuum",
+    "nodes": [
+      "phys:field-dynamics-arithmetic",
+      "phys:vacuum-observable-variance",
+      "phys:vacuum-two-point-function"
+    ]
+  },
+  {
+    "id": "phys:free-scalar-quantization",
+    "nodes": [
+      "phys:free-field-time-evolution",
+      "phys:free-field-vacuum"
+    ]
+  },
+  {
+    "id": "phys:frequency-moment-ratio",
+    "nodes": [
+      "phys:afach2014-neutron-frequency",
+      "phys:afach2014-ratio"
+    ]
+  },
+  {
+    "id": "phys:fundamental-color-singlet",
+    "nodes": [
+      "phys:nucleon-algebra",
+      "phys:nucleon-fock-expansion"
+    ]
+  },
+  {
+    "id": "phys:gluon-fields",
+    "nodes": []
+  },
+  {
+    "id": "phys:hadron-correlator-mass",
+    "nodes": [
+      "phys:durr-lattice-masses",
+      "phys:finite-volume-hadron-resonance"
+    ]
+  },
+  {
+    "id": "phys:hadron-family-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:hadron-family-replay-context",
+    "nodes": [
+      "phys:hadron-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:hadron-mass-calibration",
+    "nodes": [
+      "phys:durr-hadron-spectrum"
+    ]
+  },
+  {
+    "id": "phys:hadron-production-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:hadron-production-replay-context",
+    "nodes": [
+      "phys:hadron-production-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:hadron-production-yield",
+    "nodes": [
+      "phys:hadron-production-arithmetic",
+      "phys:sld1999-neutral-yields"
+    ]
+  },
+  {
+    "id": "phys:hensen2015-bell-test",
+    "nodes": []
+  },
+  {
+    "id": "phys:hensen2015-context",
+    "nodes": [
+      "phys:hensen2015-correlations"
+    ]
+  },
+  {
+    "id": "phys:hensen2015-correlations",
+    "nodes": [
+      "phys:hensen2015-bell-test"
+    ]
+  },
+  {
+    "id": "phys:hensen2016-bell-test",
+    "nodes": []
+  },
+  {
+    "id": "phys:hensen2016-context",
+    "nodes": [
+      "phys:hensen2016-correlations"
+    ]
+  },
+  {
+    "id": "phys:hensen2016-correlations",
+    "nodes": [
+      "phys:hensen2016-bell-test"
+    ]
+  },
+  {
+    "id": "phys:higgs-abelian-linearization",
+    "nodes": [
+      "phys:electroweak-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:higgs-doublet-background",
+    "nodes": [
+      "phys:charged-fermion-higgs-coupling",
+      "phys:low-energy-weak-exchange",
+      "phys:weak-gauge-currents"
+    ]
+  },
+  {
+    "id": "phys:higgs-rate-modifiers",
+    "nodes": [
+      "phys:cms2016-tau-coupling-compatibility",
+      "phys:cms2016-tau-rate-excess"
+    ]
+  },
+  {
+    "id": "phys:hydrogen-isotope-mass-input",
+    "nodes": [
+      "phys:difilippo-capture-input",
+      "phys:kessler-neutron-mass",
+      "phys:neutron-mass-balance"
+    ]
+  },
+  {
+    "id": "phys:ideal-plate-casimir",
+    "nodes": [
+      "phys:bressi-coefficient"
+    ]
+  },
+  {
+    "id": "phys:ill2017-spacing",
+    "nodes": [
+      "phys:codata2022-ill-input",
+      "phys:rau-capture-binding",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:ill25-adjusted-calibration",
+    "nodes": [
+      "phys:kessler-recalibrated-wavelength"
+    ]
+  },
+  {
+    "id": "phys:ill25-calibration",
+    "nodes": [
+      "phys:kessler-capture-wavelength"
+    ]
+  },
+  {
+    "id": "phys:inclusive-decay-width-branching",
+    "nodes": [
+      "phys:lep1-z-branching-fractions",
+      "phys:lep1-z-partial-widths",
+      "phys:lep2013-w-branching-nonuniversal",
+      "phys:lep2013-w-branching-universal",
+      "phys:lep2013-w-width",
+      "phys:resonance-lifetime-convention"
+    ]
+  },
+  {
+    "id": "phys:inclusive-dis-response",
+    "nodes": [
+      "phys:quark-parton-response",
+      "phys:whitlow1990-separated-r",
+      "phys:whitlow1990-target-difference"
+    ]
+  },
+  {
+    "id": "phys:internal-propagator",
+    "nodes": [
+      "phys:low-energy-weak-exchange",
+      "phys:resonance-lifetime-convention",
+      "phys:virtual-process-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:ion-atom-mass-correction",
+    "nodes": [
+      "phys:atomic-mass-covariance",
+      "phys:codata2022-ion-covariance",
+      "phys:difilippo-hydrogen-masses",
+      "phys:liontrap-carbon-reference",
+      "phys:liontrap-oxygen",
+      "phys:molecular-ion-mass-balance",
+      "phys:natarajan-hydrogen-masses"
+    ]
+  },
+  {
+    "id": "phys:isospin-mass-splitting",
+    "nodes": [
+      "phys:borsanyi-isospin-spectrum",
+      "phys:borsanyi-lattice-splittings",
+      "phys:nucleon-ratio-calibration",
+      "phys:qcd-qed-separation"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-acquisition-context",
+    "nodes": [
+      "phys:kamland2005-selected-energies",
+      "phys:kamland2005-unoscillated-prediction"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-average-survival",
+    "nodes": [
+      "phys:neutrino-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-background-estimate",
+    "nodes": [
+      "phys:kamland2005-average-survival",
+      "phys:kamland2005-oscillation-fit",
+      "phys:neutrino-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-fit-context",
+    "nodes": [
+      "phys:kamland2005-oscillation-fit"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-oscillation-fit",
+    "nodes": []
+  },
+  {
+    "id": "phys:kamland2005-response-context",
+    "nodes": [
+      "phys:kamland2005-average-survival",
+      "phys:kamland2005-background-estimate",
+      "phys:kamland2005-unoscillated-prediction"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-selected-energies",
+    "nodes": [
+      "phys:kamland2005-average-survival",
+      "phys:kamland2005-oscillation-fit",
+      "phys:neutrino-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kamland2005-unoscillated-prediction",
+    "nodes": [
+      "phys:kamland2005-average-survival",
+      "phys:kamland2005-oscillation-fit",
+      "phys:neutrino-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kessler-binding-energy",
+    "nodes": [
+      "phys:kessler-neutron-mass"
+    ]
+  },
+  {
+    "id": "phys:kessler-capture-wavelength",
+    "nodes": [
+      "phys:kessler-binding-energy"
+    ]
+  },
+  {
+    "id": "phys:kessler-combined-angle",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:kessler-capture-wavelength",
+      "phys:kessler-recalibrated-wavelength"
+    ]
+  },
+  {
+    "id": "phys:kessler-neutron-mass",
+    "nodes": []
+  },
+  {
+    "id": "phys:kessler-recalibrated-wavelength",
+    "nodes": [
+      "phys:rau-capture-binding",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kessler1995-angle",
+    "nodes": [
+      "phys:kessler-combined-angle"
+    ]
+  },
+  {
+    "id": "phys:kessler1995-context",
+    "nodes": [
+      "phys:kessler1995-angle"
+    ]
+  },
+  {
+    "id": "phys:kessler1998-angle",
+    "nodes": [
+      "phys:kessler-combined-angle"
+    ]
+  },
+  {
+    "id": "phys:kessler1998-context",
+    "nodes": [
+      "phys:kessler1998-angle"
+    ]
+  },
+  {
+    "id": "phys:kessler2017-ill-context",
+    "nodes": [
+      "phys:ill2017-spacing"
+    ]
+  },
+  {
+    "id": "phys:kloe2007-acquisition-context",
+    "nodes": [
+      "phys:kloe2007-selected-candidates"
+    ]
+  },
+  {
+    "id": "phys:kloe2007-mixing-context",
+    "nodes": [
+      "phys:kloe2007-pseudoscalar-angle"
+    ]
+  },
+  {
+    "id": "phys:kloe2007-pseudoscalar-angle",
+    "nodes": []
+  },
+  {
+    "id": "phys:kloe2007-radiative-ratio",
+    "nodes": [
+      "phys:kloe2007-pseudoscalar-angle"
+    ]
+  },
+  {
+    "id": "phys:kloe2007-response-context",
+    "nodes": [
+      "phys:kloe2007-radiative-ratio",
+      "phys:kloe2007-subtracted-yield",
+      "phys:meson-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kloe2007-selected-candidates",
+    "nodes": [
+      "phys:kloe2007-radiative-ratio",
+      "phys:kloe2007-subtracted-yield",
+      "phys:meson-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:kloe2007-subtracted-yield",
+    "nodes": [
+      "phys:kloe2007-radiative-ratio",
+      "phys:meson-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:korobov-h2-energy",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:fink2021-deuteron-ratio",
+      "phys:mass-constraint-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:korobov-hd-energy",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:rau-hd-closure",
+      "phys:rau-joint-adjustment",
+      "phys:rau-local-adjustment",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:korobov2017-h2-context",
+    "nodes": [
+      "phys:korobov-h2-energy"
+    ]
+  },
+  {
+    "id": "phys:korobov2017-hd-context",
+    "nodes": [
+      "phys:korobov-hd-energy"
+    ]
+  },
+  {
+    "id": "phys:l3-angular-shape",
+    "nodes": [
+      "phys:l3-running-slope"
+    ]
+  },
+  {
+    "id": "phys:l3-running-difference",
+    "nodes": []
+  },
+  {
+    "id": "phys:l3-running-model",
+    "nodes": [
+      "phys:l3-angular-shape",
+      "phys:l3-running-difference",
+      "phys:l3-running-slope",
+      "phys:vacuum-polarization-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:l3-running-slope",
+    "nodes": [
+      "phys:l3-running-difference",
+      "phys:vacuum-polarization-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:l3-small-angle-context",
+    "nodes": [
+      "phys:l3-angular-shape"
+    ]
+  },
+  {
+    "id": "phys:lachniet2009-acquisition-context",
+    "nodes": [
+      "phys:lachniet2009-ratios"
+    ]
+  },
+  {
+    "id": "phys:lachniet2009-extraction-context",
+    "nodes": [
+      "phys:lachniet2009-magnetic-response",
+      "phys:lachniet2009-ratios"
+    ]
+  },
+  {
+    "id": "phys:lachniet2009-magnetic-response",
+    "nodes": [
+      "phys:neutron-form-factor-arithmetic",
+      "phys:riordan2010-electric-response"
+    ]
+  },
+  {
+    "id": "phys:lachniet2009-ratios",
+    "nodes": [
+      "phys:lachniet2009-magnetic-response"
+    ]
+  },
+  {
+    "id": "phys:lamb-radiative-interpretation",
+    "nodes": []
+  },
+  {
+    "id": "phys:lamb-resonance",
+    "nodes": [
+      "phys:lamb-separation"
+    ]
+  },
+  {
+    "id": "phys:lamb-separation",
+    "nodes": [
+      "phys:lamb-radiative-interpretation"
+    ]
+  },
+  {
+    "id": "phys:lamb1947-context",
+    "nodes": [
+      "phys:lamb-resonance"
+    ]
+  },
+  {
+    "id": "phys:lamoreaux-casimir",
+    "nodes": []
+  },
+  {
+    "id": "phys:lamoreaux-force",
+    "nodes": [
+      "phys:lamoreaux-casimir"
+    ]
+  },
+  {
+    "id": "phys:lamoreaux1997-context",
+    "nodes": [
+      "phys:lamoreaux-force"
+    ]
+  },
+  {
+    "id": "phys:lattice-continuum-limit",
+    "nodes": [
+      "phys:creutz-scaling",
+      "phys:durr-hadron-spectrum"
+    ]
+  },
+  {
+    "id": "phys:lattice-gauge-formulation",
+    "nodes": [
+      "phys:hadron-correlator-mass",
+      "phys:lattice-continuum-limit",
+      "phys:lattice-strong-coupling",
+      "phys:qedl-volume-correction",
+      "phys:static-light-string-basis",
+      "phys:wilson-loop"
+    ]
+  },
+  {
+    "id": "phys:lattice-strong-coupling",
+    "nodes": []
+  },
+  {
+    "id": "phys:lee-abundance-limit",
+    "nodes": []
+  },
+  {
+    "id": "phys:lee-charge-null",
+    "nodes": [
+      "phys:lee-abundance-limit"
+    ]
+  },
+  {
+    "id": "phys:lee2002-context",
+    "nodes": [
+      "phys:lee-charge-null"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-acquisition-context",
+    "nodes": [
+      "phys:lep1-z-scan-responses"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-branching-fractions",
+    "nodes": []
+  },
+  {
+    "id": "phys:lep1-z-combination-context",
+    "nodes": [
+      "phys:lep1-z-branching-fractions",
+      "phys:lep1-z-line-shape",
+      "phys:lep1-z-partial-widths"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-experiment-parameters",
+    "nodes": [
+      "phys:lep1-z-line-shape"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-line-shape",
+    "nodes": [
+      "phys:lep1-z-branching-fractions",
+      "phys:lep1-z-partial-widths"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-partial-widths",
+    "nodes": [
+      "phys:lep1-z-branching-fractions"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-response-context",
+    "nodes": [
+      "phys:lep1-z-experiment-parameters",
+      "phys:lep1-z-scan-responses"
+    ]
+  },
+  {
+    "id": "phys:lep1-z-scan-responses",
+    "nodes": [
+      "phys:lep1-z-experiment-parameters"
+    ]
+  },
+  {
+    "id": "phys:lep2013-w-branching-acquisition-context",
+    "nodes": [
+      "phys:lep2013-w-branching-nonuniversal",
+      "phys:lep2013-w-branching-universal"
+    ]
+  },
+  {
+    "id": "phys:lep2013-w-branching-inference-context",
+    "nodes": [
+      "phys:lep2013-w-branching-nonuniversal",
+      "phys:lep2013-w-branching-universal"
+    ]
+  },
+  {
+    "id": "phys:lep2013-w-branching-nonuniversal",
+    "nodes": []
+  },
+  {
+    "id": "phys:lep2013-w-branching-response-context",
+    "nodes": [
+      "phys:lep2013-w-branching-nonuniversal",
+      "phys:lep2013-w-branching-universal"
+    ]
+  },
+  {
+    "id": "phys:lep2013-w-branching-universal",
+    "nodes": []
+  },
+  {
+    "id": "phys:lep2013-w-width",
+    "nodes": []
+  },
+  {
+    "id": "phys:lep2013-w-width-acquisition-context",
+    "nodes": [
+      "phys:lep2013-w-width"
+    ]
+  },
+  {
+    "id": "phys:lep2013-w-width-inference-context",
+    "nodes": [
+      "phys:lep2013-w-width"
+    ]
+  },
+  {
+    "id": "phys:lep2013-w-width-response-context",
+    "nodes": [
+      "phys:lep2013-w-width"
+    ]
+  },
+  {
+    "id": "phys:lepton-charge-flavor",
+    "nodes": []
+  },
+  {
+    "id": "phys:lepton-fields",
+    "nodes": [
+      "phys:belle2014-tau-lifetime",
+      "phys:charged-fermion-higgs-coupling",
+      "phys:dilepton-invariant-mass",
+      "phys:lepton-charge-flavor",
+      "phys:neutrino-flavor-mixing",
+      "phys:reactor-antineutrino-readout",
+      "phys:solar-neutrino-channel-response",
+      "phys:tau-neutrino-appearance-readout",
+      "phys:tau-pair-readout",
+      "phys:transverse-two-body-mass",
+      "phys:weinberg-electroweak-background"
+    ]
+  },
+  {
+    "id": "phys:light-baryon-multiplets",
+    "nodes": [
+      "phys:baryon-octet-mass-relation",
+      "phys:hadron-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:light-flavor-su3",
+    "nodes": [
+      "phys:hadron-family-arithmetic",
+      "phys:light-baryon-multiplets",
+      "phys:light-meson-nonets"
+    ]
+  },
+  {
+    "id": "phys:light-meson-nonets",
+    "nodes": [
+      "phys:meson-family-arithmetic",
+      "phys:meson-isoscalar-mixing"
+    ]
+  },
+  {
+    "id": "phys:liontrap-carbon-control",
+    "nodes": []
+  },
+  {
+    "id": "phys:liontrap-carbon-reference",
+    "nodes": [
+      "phys:liontrap-carbon-control",
+      "phys:liontrap-double-dip",
+      "phys:liontrap2017-proton",
+      "phys:liontrap2019-proton"
+    ]
+  },
+  {
+    "id": "phys:liontrap-correction-budget",
+    "nodes": [
+      "phys:liontrap2019-proton"
+    ]
+  },
+  {
+    "id": "phys:liontrap-double-dip",
+    "nodes": []
+  },
+  {
+    "id": "phys:liontrap-oxygen",
+    "nodes": []
+  },
+  {
+    "id": "phys:liontrap2017-pna-context",
+    "nodes": [
+      "phys:liontrap-correction-budget",
+      "phys:liontrap2017-proton",
+      "phys:liontrap2019-proton"
+    ]
+  },
+  {
+    "id": "phys:liontrap2017-proton",
+    "nodes": [
+      "phys:schuh-image-charge"
+    ]
+  },
+  {
+    "id": "phys:liontrap2019-carbon-control-context",
+    "nodes": [
+      "phys:liontrap-carbon-control"
+    ]
+  },
+  {
+    "id": "phys:liontrap2019-double-dip-context",
+    "nodes": [
+      "phys:liontrap-double-dip"
+    ]
+  },
+  {
+    "id": "phys:liontrap2019-oxygen-context",
+    "nodes": [
+      "phys:liontrap-oxygen"
+    ]
+  },
+  {
+    "id": "phys:liontrap2019-proton",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:fink-proton-referenced-mass",
+      "phys:liontrap-double-dip",
+      "phys:liontrap-oxygen",
+      "phys:rau-hd-closure",
+      "phys:rau-joint-adjustment",
+      "phys:rau-local-adjustment",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:liontrap2019-reanalysis-context",
+    "nodes": [
+      "phys:liontrap-correction-budget",
+      "phys:liontrap2019-proton"
+    ]
+  },
+  {
+    "id": "phys:local-quantum-marginals",
+    "nodes": []
+  },
+  {
+    "id": "phys:low-energy-weak-exchange",
+    "nodes": []
+  },
+  {
+    "id": "phys:mass-adjustment-constraint",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:codata2022-frequency-inputs"
+    ]
+  },
+  {
+    "id": "phys:mass-constraint-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:mass-constraint-replay-context",
+    "nodes": [
+      "phys:mass-constraint-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:meson-family-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:meson-family-replay-context",
+    "nodes": [
+      "phys:meson-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:meson-isoscalar-mixing",
+    "nodes": [
+      "phys:kloe2007-pseudoscalar-angle"
+    ]
+  },
+  {
+    "id": "phys:molecular-ion-mass-balance",
+    "nodes": [
+      "phys:fink-deuteron-ratio",
+      "phys:fink2021-deuteron-ratio",
+      "phys:korobov-h2-energy",
+      "phys:korobov-hd-energy",
+      "phys:rau-hd-closure",
+      "phys:rovibrational-state-boundary"
+    ]
+  },
+  {
+    "id": "phys:mooser2014-moment",
+    "nodes": [
+      "phys:proton-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:mooser2014-moment-context",
+    "nodes": [
+      "phys:mooser2014-moment"
+    ]
+  },
+  {
+    "id": "phys:mulan-fermi-coupling",
+    "nodes": []
+  },
+  {
+    "id": "phys:mulan-lifetime-r06",
+    "nodes": [
+      "phys:muon-lifetime"
+    ]
+  },
+  {
+    "id": "phys:mulan-lifetime-r07",
+    "nodes": [
+      "phys:muon-lifetime"
+    ]
+  },
+  {
+    "id": "phys:mulan-r06-context",
+    "nodes": [
+      "phys:mulan-lifetime-r06"
+    ]
+  },
+  {
+    "id": "phys:mulan-r07-context",
+    "nodes": [
+      "phys:mulan-lifetime-r07"
+    ]
+  },
+  {
+    "id": "phys:muon-lifetime",
+    "nodes": [
+      "phys:mulan-fermi-coupling"
+    ]
+  },
+  {
+    "id": "phys:natarajan-frequency-ratios",
+    "nodes": [
+      "phys:natarajan-hydrogen-masses"
+    ]
+  },
+  {
+    "id": "phys:natarajan-hydrogen-masses",
+    "nodes": []
+  },
+  {
+    "id": "phys:natarajan-voltage-control",
+    "nodes": []
+  },
+  {
+    "id": "phys:natarajan1993-pnp-context",
+    "nodes": [
+      "phys:natarajan-voltage-control"
+    ]
+  },
+  {
+    "id": "phys:natarajan1993-sof-context",
+    "nodes": [
+      "phys:natarajan-frequency-ratios",
+      "phys:natarajan-voltage-control"
+    ]
+  },
+  {
+    "id": "phys:neutrino-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:neutrino-flavor-mixing",
+    "nodes": [
+      "phys:lepton-charge-flavor",
+      "phys:neutrino-matter-evolution",
+      "phys:neutrino-vacuum-phase",
+      "phys:superk1998-oscillation-fit"
+    ]
+  },
+  {
+    "id": "phys:neutrino-matter-evolution",
+    "nodes": [
+      "phys:neutrino-matter-mixing"
+    ]
+  },
+  {
+    "id": "phys:neutrino-matter-mixing",
+    "nodes": []
+  },
+  {
+    "id": "phys:neutrino-replay-context",
+    "nodes": [
+      "phys:neutrino-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:neutrino-vacuum-phase",
+    "nodes": [
+      "phys:kamland2005-oscillation-fit",
+      "phys:neutrino-arithmetic",
+      "phys:neutrino-matter-evolution",
+      "phys:superk1998-oscillation-fit"
+    ]
+  },
+  {
+    "id": "phys:neutron-form-factor-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:neutron-form-factor-replay-context",
+    "nodes": [
+      "phys:neutron-form-factor-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:neutron-mass-balance",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:deuteron-beta-threshold",
+      "phys:kessler-neutron-mass",
+      "phys:rau-neutron-mass"
+    ]
+  },
+  {
+    "id": "phys:neutron-moment-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:neutron-moment-replay-context",
+    "nodes": [
+      "phys:neutron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:neutron-sachs-ratio",
+    "nodes": [
+      "phys:lachniet2009-magnetic-response",
+      "phys:riordan2010-normalized-ratio"
+    ]
+  },
+  {
+    "id": "phys:nico2005-beam-context",
+    "nodes": [
+      "phys:nico2005-lifetime"
+    ]
+  },
+  {
+    "id": "phys:nico2005-lifetime",
+    "nodes": [
+      "phys:beam-neutron-arithmetic",
+      "phys:yue2013-lifetime"
+    ]
+  },
+  {
+    "id": "phys:normalized-monitor-response",
+    "nodes": [
+      "phys:alpha-gamma-arithmetic",
+      "phys:yue2018-monitor-efficiency"
+    ]
+  },
+  {
+    "id": "phys:nucleon-algebra",
+    "nodes": []
+  },
+  {
+    "id": "phys:nucleon-algebra-context",
+    "nodes": [
+      "phys:nucleon-algebra"
+    ]
+  },
+  {
+    "id": "phys:nucleon-fock-expansion",
+    "nodes": [
+      "phys:nucleon-algebra"
+    ]
+  },
+  {
+    "id": "phys:nucleon-ratio-calibration",
+    "nodes": [
+      "phys:borsanyi-calibrated-ratio"
+    ]
+  },
+  {
+    "id": "phys:nucleon-valence-numbers",
+    "nodes": [
+      "phys:nucleon-algebra",
+      "phys:nucleon-fock-expansion"
+    ]
+  },
+  {
+    "id": "phys:omega-decuplet-expectation",
+    "nodes": [
+      "phys:barnes1964-omega",
+      "phys:hadron-family-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:opera2015-acquisition-context",
+    "nodes": [
+      "phys:opera2015-analyzed-sample",
+      "phys:opera2015-appearance-evidence",
+      "phys:opera2015-decay-candidates",
+      "phys:opera2015-expected-counts",
+      "phys:opera2015-fifth-candidate"
+    ]
+  },
+  {
+    "id": "phys:opera2015-analyzed-sample",
+    "nodes": [
+      "phys:opera2015-decay-candidates"
+    ]
+  },
+  {
+    "id": "phys:opera2015-appearance-evidence",
+    "nodes": []
+  },
+  {
+    "id": "phys:opera2015-decay-candidates",
+    "nodes": [
+      "phys:opera2015-appearance-evidence",
+      "phys:opera2015-parameter-compatibility"
+    ]
+  },
+  {
+    "id": "phys:opera2015-expected-counts",
+    "nodes": [
+      "phys:opera2015-appearance-evidence",
+      "phys:opera2015-parameter-compatibility"
+    ]
+  },
+  {
+    "id": "phys:opera2015-fifth-candidate",
+    "nodes": [
+      "phys:opera2015-decay-candidates"
+    ]
+  },
+  {
+    "id": "phys:opera2015-inference-context",
+    "nodes": [
+      "phys:opera2015-appearance-evidence",
+      "phys:opera2015-parameter-compatibility"
+    ]
+  },
+  {
+    "id": "phys:opera2015-parameter-compatibility",
+    "nodes": []
+  },
+  {
+    "id": "phys:opera2015-response-context",
+    "nodes": [
+      "phys:opera2015-analyzed-sample",
+      "phys:opera2015-decay-candidates",
+      "phys:opera2015-expected-counts",
+      "phys:opera2015-fifth-candidate"
+    ]
+  },
+  {
+    "id": "phys:partial-lifetime",
+    "nodes": [
+      "phys:pion-inclusive-decay-ratio",
+      "phys:takenaka2020-partial-bounds"
+    ]
+  },
+  {
+    "id": "phys:penning-cyclotron-ratio",
+    "nodes": [
+      "phys:coupled-cyclotron-readout",
+      "phys:fink-deuteron-ratio",
+      "phys:ion-atom-mass-correction",
+      "phys:liontrap-carbon-reference",
+      "phys:natarajan-voltage-control",
+      "phys:penning-image-charge",
+      "phys:penning-magnetron-control",
+      "phys:penning-pna-fit",
+      "phys:penning-sof-protocol",
+      "phys:rau-carbon-reference"
+    ]
+  },
+  {
+    "id": "phys:penning-image-charge",
+    "nodes": [
+      "phys:liontrap-correction-budget",
+      "phys:liontrap2017-proton",
+      "phys:penning-image-charge-geometry",
+      "phys:rau-deuteron",
+      "phys:schuh-ics-comparison",
+      "phys:schuh-image-charge"
+    ]
+  },
+  {
+    "id": "phys:penning-image-charge-geometry",
+    "nodes": [
+      "phys:schuh-geometry-response"
+    ]
+  },
+  {
+    "id": "phys:penning-magnetron-control",
+    "nodes": [
+      "phys:schuh-magnetron-difference"
+    ]
+  },
+  {
+    "id": "phys:penning-pna-fit",
+    "nodes": [
+      "phys:liontrap2017-proton",
+      "phys:liontrap2019-proton",
+      "phys:rau-deuteron",
+      "phys:rau-grouped-replay",
+      "phys:rau-hd-mass"
+    ]
+  },
+  {
+    "id": "phys:penning-sof-protocol",
+    "nodes": [
+      "phys:natarajan-voltage-control"
+    ]
+  },
+  {
+    "id": "phys:perturbative-amplitude",
+    "nodes": [
+      "phys:external-scattering-state",
+      "phys:internal-propagator",
+      "phys:virtual-process-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:pienu2015-acquisition-context",
+    "nodes": [
+      "phys:pienu2015-spectra"
+    ]
+  },
+  {
+    "id": "phys:pienu2015-corrected-ratio",
+    "nodes": [
+      "phys:pion-decay-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:pienu2015-correction-context",
+    "nodes": [
+      "phys:pienu2015-corrected-ratio",
+      "phys:pion-decay-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:pienu2015-fit-context",
+    "nodes": [
+      "phys:pienu2015-raw-ratio"
+    ]
+  },
+  {
+    "id": "phys:pienu2015-raw-ratio",
+    "nodes": [
+      "phys:pienu2015-corrected-ratio",
+      "phys:pion-decay-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:pienu2015-spectra",
+    "nodes": [
+      "phys:pienu2015-raw-ratio"
+    ]
+  },
+  {
+    "id": "phys:pion-decay-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:pion-decay-replay-context",
+    "nodes": [
+      "phys:pion-decay-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:pion-inclusive-decay-ratio",
+    "nodes": [
+      "phys:pienu2015-corrected-ratio",
+      "phys:pienu2015-raw-ratio",
+      "phys:pion-decay-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:projective-bell-local-entanglement",
+    "nodes": []
+  },
+  {
+    "id": "phys:proton-decay-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:proton-decay-replay-context",
+    "nodes": [
+      "phys:proton-decay-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:proton-moment-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:proton-moment-frequency-ratio",
+    "nodes": [
+      "phys:mooser2014-moment",
+      "phys:proton-moment-arithmetic",
+      "phys:schneider2017-moment",
+      "phys:schneider2017-moment-statistic"
+    ]
+  },
+  {
+    "id": "phys:proton-moment-normalization",
+    "nodes": [
+      "phys:proton-moment-frequency-ratio",
+      "phys:sachs-form-factors"
+    ]
+  },
+  {
+    "id": "phys:proton-moment-replay-context",
+    "nodes": [
+      "phys:proton-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:qcd",
+    "nodes": [
+      "phys:cms-alpha-mz",
+      "phys:fundamental-color-singlet",
+      "phys:gluon-fields",
+      "phys:hadron-correlator-mass",
+      "phys:hadron-mass-calibration",
+      "phys:nucleon-fock-expansion",
+      "phys:qcd-qed-hadron-theory",
+      "phys:qcd-renormalization-scale",
+      "phys:quark-fields",
+      "phys:quark-mass-prescription",
+      "phys:sld1999-neutral-totals",
+      "phys:static-light-string-basis",
+      "phys:tasso-gluon-interpretation"
+    ]
+  },
+  {
+    "id": "phys:qcd-beta-function",
+    "nodes": [
+      "phys:asymptotic-freedom",
+      "phys:cms-running-consistency",
+      "phys:qcd-flavor-matching"
+    ]
+  },
+  {
+    "id": "phys:qcd-flavor-matching",
+    "nodes": []
+  },
+  {
+    "id": "phys:qcd-qed-calibration",
+    "nodes": [
+      "phys:borsanyi-calibrated-ratio",
+      "phys:borsanyi-isospin-spectrum",
+      "phys:borsanyi-qcd-qed-components"
+    ]
+  },
+  {
+    "id": "phys:qcd-qed-hadron-theory",
+    "nodes": [
+      "phys:isospin-mass-splitting",
+      "phys:qcd-qed-calibration",
+      "phys:qedl-volume-correction"
+    ]
+  },
+  {
+    "id": "phys:qcd-qed-separation",
+    "nodes": [
+      "phys:borsanyi-qcd-qed-components"
+    ]
+  },
+  {
+    "id": "phys:qcd-renormalization-scale",
+    "nodes": [
+      "phys:qcd-beta-function"
+    ]
+  },
+  {
+    "id": "phys:qed-effective-coupling",
+    "nodes": [
+      "phys:l3-running-difference",
+      "phys:l3-running-slope",
+      "phys:vacuum-polarization-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:qedl-volume-correction",
+    "nodes": [
+      "phys:borsanyi-isospin-spectrum",
+      "phys:borsanyi-kaon-volume"
+    ]
+  },
+  {
+    "id": "phys:quantum-field-framework",
+    "nodes": [
+      "phys:free-scalar-quantization",
+      "phys:lattice-gauge-formulation",
+      "phys:perturbative-amplitude",
+      "phys:standard-model"
+    ]
+  },
+  {
+    "id": "phys:quark-electromagnetic-current",
+    "nodes": [
+      "phys:quark-parton-response"
+    ]
+  },
+  {
+    "id": "phys:quark-fields",
+    "nodes": [
+      "phys:cdf2013-top-width-interval",
+      "phys:charged-fermion-higgs-coupling",
+      "phys:nucleon-valence-numbers",
+      "phys:qcd-flavor-matching",
+      "phys:quark-electromagnetic-current"
+    ]
+  },
+  {
+    "id": "phys:quark-mass-prescription",
+    "nodes": [
+      "phys:quark-parton-response"
+    ]
+  },
+  {
+    "id": "phys:quark-parton-response",
+    "nodes": [
+      "phys:whitlow1990-model-comparison"
+    ]
+  },
+  {
+    "id": "phys:rau-capture-binding",
+    "nodes": [
+      "phys:deuteron-beta-threshold",
+      "phys:rau-neutron-mass"
+    ]
+  },
+  {
+    "id": "phys:rau-carbon-reference",
+    "nodes": [
+      "phys:rau-deuteron",
+      "phys:rau-hd-mass"
+    ]
+  },
+  {
+    "id": "phys:rau-deuteron",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:fink2021-proton-mass",
+      "phys:mass-constraint-arithmetic",
+      "phys:rau-capture-binding",
+      "phys:rau-hd-closure",
+      "phys:rau-joint-adjustment",
+      "phys:rau-local-adjustment",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:rau-grouped-replay",
+    "nodes": []
+  },
+  {
+    "id": "phys:rau-hd-closure",
+    "nodes": []
+  },
+  {
+    "id": "phys:rau-hd-mass",
+    "nodes": [
+      "phys:codata2022-frequency-inputs",
+      "phys:rau-hd-closure",
+      "phys:rau-joint-adjustment",
+      "phys:rau-local-adjustment",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:rau-joint-adjustment",
+    "nodes": [
+      "phys:deuteron-beta-threshold",
+      "phys:rau-neutron-mass"
+    ]
+  },
+  {
+    "id": "phys:rau-local-adjustment",
+    "nodes": []
+  },
+  {
+    "id": "phys:rau-neutron-mass",
+    "nodes": [
+      "phys:deuteron-beta-threshold"
+    ]
+  },
+  {
+    "id": "phys:rau-printed-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:rau2020-awg1-context",
+    "nodes": [
+      "phys:rau-deuteron",
+      "phys:rau-grouped-replay"
+    ]
+  },
+  {
+    "id": "phys:rau2020-awg2-context",
+    "nodes": [
+      "phys:rau-deuteron",
+      "phys:rau-grouped-replay"
+    ]
+  },
+  {
+    "id": "phys:rau2020-capture-recalibration-context",
+    "nodes": [
+      "phys:rau-capture-binding"
+    ]
+  },
+  {
+    "id": "phys:rau2020-figure-replay-context",
+    "nodes": [
+      "phys:rau-grouped-replay",
+      "phys:rau-printed-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:rau2020-hd-context",
+    "nodes": [
+      "phys:rau-grouped-replay",
+      "phys:rau-hd-mass"
+    ]
+  },
+  {
+    "id": "phys:rau2020-joint-fit-context",
+    "nodes": [
+      "phys:rau-joint-adjustment"
+    ]
+  },
+  {
+    "id": "phys:rau2020-local-fit-context",
+    "nodes": [
+      "phys:rau-local-adjustment"
+    ]
+  },
+  {
+    "id": "phys:reactor-antineutrino-readout",
+    "nodes": [
+      "phys:kamland2005-selected-energies"
+    ]
+  },
+  {
+    "id": "phys:resonance-lifetime-convention",
+    "nodes": []
+  },
+  {
+    "id": "phys:riordan2010-acquisition-context",
+    "nodes": [
+      "phys:riordan2010-asymmetries"
+    ]
+  },
+  {
+    "id": "phys:riordan2010-asymmetries",
+    "nodes": [
+      "phys:neutron-form-factor-arithmetic",
+      "phys:riordan2010-corrected-asymmetries"
+    ]
+  },
+  {
+    "id": "phys:riordan2010-corrected-asymmetries",
+    "nodes": [
+      "phys:neutron-form-factor-arithmetic",
+      "phys:riordan2010-normalized-ratio"
+    ]
+  },
+  {
+    "id": "phys:riordan2010-electric-response",
+    "nodes": [
+      "phys:neutron-form-factor-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:riordan2010-extraction-context",
+    "nodes": [
+      "phys:riordan2010-corrected-asymmetries",
+      "phys:riordan2010-electric-response",
+      "phys:riordan2010-normalized-ratio"
+    ]
+  },
+  {
+    "id": "phys:riordan2010-normalized-ratio",
+    "nodes": [
+      "phys:neutron-form-factor-arithmetic",
+      "phys:riordan2010-electric-response"
+    ]
+  },
+  {
+    "id": "phys:rovibrational-state-boundary",
+    "nodes": [
+      "phys:fink-deuteron-ratio",
+      "phys:fink2021-state-branches",
+      "phys:rau-hd-mass",
+      "phys:state-conditional-mass"
+    ]
+  },
+  {
+    "id": "phys:sachs-form-factors",
+    "nodes": [
+      "phys:bernauer2014-form-factors",
+      "phys:bernauer2014-separated"
+    ]
+  },
+  {
+    "id": "phys:schneider2017-moment",
+    "nodes": [
+      "phys:proton-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:schneider2017-moment-context",
+    "nodes": [
+      "phys:schneider2017-moment",
+      "phys:schneider2017-moment-statistic"
+    ]
+  },
+  {
+    "id": "phys:schneider2017-moment-inference-context",
+    "nodes": [
+      "phys:schneider2017-moment"
+    ]
+  },
+  {
+    "id": "phys:schneider2017-moment-statistic",
+    "nodes": [
+      "phys:proton-moment-arithmetic",
+      "phys:schneider2017-moment"
+    ]
+  },
+  {
+    "id": "phys:schuh-geometry-response",
+    "nodes": [
+      "phys:schuh-ics-comparison"
+    ]
+  },
+  {
+    "id": "phys:schuh-ics-comparison",
+    "nodes": []
+  },
+  {
+    "id": "phys:schuh-image-charge",
+    "nodes": [
+      "phys:schuh-ics-comparison"
+    ]
+  },
+  {
+    "id": "phys:schuh-magnetron-difference",
+    "nodes": [
+      "phys:schuh-image-charge"
+    ]
+  },
+  {
+    "id": "phys:schuh2019-geometry-context",
+    "nodes": [
+      "phys:schuh-geometry-response"
+    ]
+  },
+  {
+    "id": "phys:schuh2019-magnetron-context",
+    "nodes": [
+      "phys:schuh-magnetron-difference"
+    ]
+  },
+  {
+    "id": "phys:schwinger-leading-anomaly",
+    "nodes": [
+      "phys:electron-moment-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:silicon-lattice-transfer",
+    "nodes": [
+      "phys:codata2022-capture-equation",
+      "phys:codata2022-ill-input",
+      "phys:ill2017-spacing"
+    ]
+  },
+  {
+    "id": "phys:slac-context",
+    "nodes": [
+      "phys:bloom1969-corrected-crosssections",
+      "phys:slac-spectrum"
+    ]
+  },
+  {
+    "id": "phys:slac-scaling",
+    "nodes": []
+  },
+  {
+    "id": "phys:slac-spectrum",
+    "nodes": [
+      "phys:slac-scaling"
+    ]
+  },
+  {
+    "id": "phys:sld1999-extrapolation-context",
+    "nodes": [
+      "phys:sld1999-neutral-totals"
+    ]
+  },
+  {
+    "id": "phys:sld1999-neutral-context",
+    "nodes": [
+      "phys:sld1999-neutral-yields"
+    ]
+  },
+  {
+    "id": "phys:sld1999-neutral-totals",
+    "nodes": [
+      "phys:hadron-production-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:sld1999-neutral-yields",
+    "nodes": [
+      "phys:hadron-production-arithmetic",
+      "phys:sld1999-neutral-totals"
+    ]
+  },
+  {
+    "id": "phys:sno2002-acquisition-context",
+    "nodes": [
+      "phys:sno2002-selected-events"
+    ]
+  },
+  {
+    "id": "phys:sno2002-active-flavor-components",
+    "nodes": []
+  },
+  {
+    "id": "phys:sno2002-background-estimate",
+    "nodes": [
+      "phys:sno2002-active-flavor-components",
+      "phys:sno2002-channel-yields"
+    ]
+  },
+  {
+    "id": "phys:sno2002-channel-fit-context",
+    "nodes": [
+      "phys:sno2002-channel-fluxes",
+      "phys:sno2002-channel-yields"
+    ]
+  },
+  {
+    "id": "phys:sno2002-channel-fluxes",
+    "nodes": []
+  },
+  {
+    "id": "phys:sno2002-channel-yields",
+    "nodes": [
+      "phys:sno2002-channel-fluxes"
+    ]
+  },
+  {
+    "id": "phys:sno2002-flavor-fit-context",
+    "nodes": [
+      "phys:sno2002-active-flavor-components"
+    ]
+  },
+  {
+    "id": "phys:sno2002-response-context",
+    "nodes": [
+      "phys:sno2002-active-flavor-components",
+      "phys:sno2002-background-estimate",
+      "phys:sno2002-channel-fluxes",
+      "phys:sno2002-channel-yields",
+      "phys:sno2002-selected-events"
+    ]
+  },
+  {
+    "id": "phys:sno2002-selected-events",
+    "nodes": [
+      "phys:sno2002-active-flavor-components",
+      "phys:sno2002-channel-yields"
+    ]
+  },
+  {
+    "id": "phys:solar-neutrino-channel-response",
+    "nodes": [
+      "phys:sno2002-active-flavor-components",
+      "phys:sno2002-channel-yields"
+    ]
+  },
+  {
+    "id": "phys:standard-model",
+    "nodes": [
+      "phys:higgs-doublet-background",
+      "phys:lepton-fields",
+      "phys:mulan-fermi-coupling",
+      "phys:qcd",
+      "phys:qcd-qed-hadron-theory",
+      "phys:weak-gauge-currents"
+    ]
+  },
+  {
+    "id": "phys:state-conditional-mass",
+    "nodes": [
+      "phys:fink2021-deuteron-ratio",
+      "phys:fink2021-ground-ratio",
+      "phys:fink2021-state-branches"
+    ]
+  },
+  {
+    "id": "phys:static-light-string-basis",
+    "nodes": [
+      "phys:bali-correlator-matrix",
+      "phys:two-state-string-mixing"
+    ]
+  },
+  {
+    "id": "phys:static-string-tension",
+    "nodes": [
+      "phys:creutz-string-fit"
+    ]
+  },
+  {
+    "id": "phys:superk1998-acquisition-context",
+    "nodes": [
+      "phys:superk1998-selected-samples",
+      "phys:superk1998-unoscillated-response"
+    ]
+  },
+  {
+    "id": "phys:superk1998-fit-context",
+    "nodes": [
+      "phys:superk1998-oscillation-fit"
+    ]
+  },
+  {
+    "id": "phys:superk1998-flavor-ratios",
+    "nodes": []
+  },
+  {
+    "id": "phys:superk1998-oscillation-fit",
+    "nodes": []
+  },
+  {
+    "id": "phys:superk1998-response-context",
+    "nodes": [
+      "phys:superk1998-flavor-ratios",
+      "phys:superk1998-oscillation-fit",
+      "phys:superk1998-selected-samples",
+      "phys:superk1998-unoscillated-response",
+      "phys:superk1998-zenith-asymmetry"
+    ]
+  },
+  {
+    "id": "phys:superk1998-selected-samples",
+    "nodes": [
+      "phys:superk1998-flavor-ratios",
+      "phys:superk1998-oscillation-fit",
+      "phys:superk1998-zenith-asymmetry"
+    ]
+  },
+  {
+    "id": "phys:superk1998-unoscillated-response",
+    "nodes": [
+      "phys:superk1998-flavor-ratios",
+      "phys:superk1998-oscillation-fit",
+      "phys:superk1998-zenith-asymmetry"
+    ]
+  },
+  {
+    "id": "phys:superk1998-zenith-asymmetry",
+    "nodes": []
+  },
+  {
+    "id": "phys:takenaka2020-counts",
+    "nodes": [
+      "phys:proton-decay-arithmetic",
+      "phys:takenaka2020-partial-bounds"
+    ]
+  },
+  {
+    "id": "phys:takenaka2020-inference-context",
+    "nodes": [
+      "phys:takenaka2020-partial-bounds"
+    ]
+  },
+  {
+    "id": "phys:takenaka2020-partial-bounds",
+    "nodes": []
+  },
+  {
+    "id": "phys:takenaka2020-response-context",
+    "nodes": [
+      "phys:takenaka2020-partial-bounds"
+    ]
+  },
+  {
+    "id": "phys:takenaka2020-search-context",
+    "nodes": [
+      "phys:takenaka2020-counts"
+    ]
+  },
+  {
+    "id": "phys:tasso-context",
+    "nodes": [
+      "phys:tasso-planarity",
+      "phys:tasso-three-jets"
+    ]
+  },
+  {
+    "id": "phys:tasso-gluon-interpretation",
+    "nodes": []
+  },
+  {
+    "id": "phys:tasso-planarity",
+    "nodes": [
+      "phys:tasso-gluon-interpretation"
+    ]
+  },
+  {
+    "id": "phys:tasso-three-jets",
+    "nodes": [
+      "phys:tasso-gluon-interpretation"
+    ]
+  },
+  {
+    "id": "phys:tau-neutrino-appearance-readout",
+    "nodes": [
+      "phys:opera2015-appearance-evidence",
+      "phys:opera2015-decay-candidates",
+      "phys:opera2015-fifth-candidate"
+    ]
+  },
+  {
+    "id": "phys:tau-pair-readout",
+    "nodes": [
+      "phys:cms2016-tau-selected-distributions"
+    ]
+  },
+  {
+    "id": "phys:transverse-two-body-mass",
+    "nodes": [
+      "phys:ua1-1983-w-transverse-kinematics"
+    ]
+  },
+  {
+    "id": "phys:two-state-string-mixing",
+    "nodes": [
+      "phys:bali-avoided-crossing",
+      "phys:bali-mixing-coupling"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-w-acquisition-context",
+    "nodes": [
+      "phys:ua1-1983-w-electron-candidates",
+      "phys:ua1-1983-w-selection-comparison"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-w-electron-candidates",
+    "nodes": [
+      "phys:ua1-1983-w-mass-fit",
+      "phys:ua1-1983-w-selection-comparison",
+      "phys:ua1-1983-w-transverse-kinematics"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-w-inference-context",
+    "nodes": [
+      "phys:ua1-1983-w-mass-bound",
+      "phys:ua1-1983-w-mass-fit"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-w-mass-bound",
+    "nodes": []
+  },
+  {
+    "id": "phys:ua1-1983-w-mass-fit",
+    "nodes": []
+  },
+  {
+    "id": "phys:ua1-1983-w-response-context",
+    "nodes": [
+      "phys:ua1-1983-w-electron-candidates",
+      "phys:ua1-1983-w-mass-bound",
+      "phys:ua1-1983-w-mass-fit",
+      "phys:ua1-1983-w-selection-comparison",
+      "phys:ua1-1983-w-transverse-kinematics"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-w-selection-comparison",
+    "nodes": []
+  },
+  {
+    "id": "phys:ua1-1983-w-transverse-kinematics",
+    "nodes": [
+      "phys:ua1-1983-w-mass-bound",
+      "phys:ua1-1983-w-mass-fit"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-z-acquisition-context",
+    "nodes": [
+      "phys:ua1-1983-z-pair-candidates"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-z-dimuon-mass",
+    "nodes": []
+  },
+  {
+    "id": "phys:ua1-1983-z-electron-mass",
+    "nodes": []
+  },
+  {
+    "id": "phys:ua1-1983-z-inference-context",
+    "nodes": [
+      "phys:ua1-1983-z-dimuon-mass",
+      "phys:ua1-1983-z-electron-mass"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-z-pair-candidates",
+    "nodes": [
+      "phys:ua1-1983-z-dimuon-mass",
+      "phys:ua1-1983-z-electron-mass"
+    ]
+  },
+  {
+    "id": "phys:ua1-1983-z-response-context",
+    "nodes": [
+      "phys:ua1-1983-z-dimuon-mass",
+      "phys:ua1-1983-z-electron-mass",
+      "phys:ua1-1983-z-pair-candidates"
+    ]
+  },
+  {
+    "id": "phys:ucn-al-control-context",
+    "nodes": [
+      "phys:ucn-al-loss"
+    ]
+  },
+  {
+    "id": "phys:ucn-al-loss",
+    "nodes": [
+      "phys:ucn2017-2018-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn-storage-loss-model",
+    "nodes": [
+      "phys:ucn-al-loss",
+      "phys:ucn2017-2018-lifetime",
+      "phys:ucn2017-fits",
+      "phys:ucn2018-fits",
+      "phys:ucn2018-uncleaned-loss",
+      "phys:ucn2020-2022-lifetime",
+      "phys:ucn2020-fits",
+      "phys:ucn2021-fits",
+      "phys:ucn2022-fits",
+      "phys:ucn2022-segment-response",
+      "phys:ucntau-global-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2017-2018-lifetime",
+    "nodes": [
+      "phys:ucn2020-2022-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2017-context",
+    "nodes": [
+      "phys:ucn2017-fits"
+    ]
+  },
+  {
+    "id": "phys:ucn2017-fits",
+    "nodes": [
+      "phys:ucn2017-2018-lifetime",
+      "phys:ucntau-global-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2018-context",
+    "nodes": [
+      "phys:ucn2018-fits"
+    ]
+  },
+  {
+    "id": "phys:ucn2018-fits",
+    "nodes": [
+      "phys:ucn2017-2018-lifetime",
+      "phys:ucntau-global-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2018-uncleaned-context",
+    "nodes": [
+      "phys:ucn2018-uncleaned-loss"
+    ]
+  },
+  {
+    "id": "phys:ucn2018-uncleaned-loss",
+    "nodes": [
+      "phys:ucn2017-2018-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2020-2022-lifetime",
+    "nodes": [
+      "phys:ucntau-global-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2020-context",
+    "nodes": [
+      "phys:ucn2020-fits"
+    ]
+  },
+  {
+    "id": "phys:ucn2020-fits",
+    "nodes": [
+      "phys:ucn2020-2022-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2021-context",
+    "nodes": [
+      "phys:ucn2021-fits"
+    ]
+  },
+  {
+    "id": "phys:ucn2021-fits",
+    "nodes": [
+      "phys:ucn2020-2022-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2022-cleaning-tail",
+    "nodes": [
+      "phys:ucn2020-2022-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2022-context",
+    "nodes": [
+      "phys:ucn2022-fits",
+      "phys:ucn2022-segment-response"
+    ]
+  },
+  {
+    "id": "phys:ucn2022-fits",
+    "nodes": [
+      "phys:ucn2020-2022-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2022-segment-response",
+    "nodes": [
+      "phys:ucn2020-2022-lifetime"
+    ]
+  },
+  {
+    "id": "phys:ucn2022-uncleaned-context",
+    "nodes": [
+      "phys:ucn2022-cleaning-tail"
+    ]
+  },
+  {
+    "id": "phys:ucntau-global-lifetime",
+    "nodes": []
+  },
+  {
+    "id": "phys:vacuum-observable-variance",
+    "nodes": [
+      "phys:field-dynamics-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:vacuum-polarization-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:vacuum-polarization-replay-context",
+    "nodes": [
+      "phys:vacuum-polarization-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:vacuum-two-point-function",
+    "nodes": []
+  },
+  {
+    "id": "phys:virtual-process-arithmetic",
+    "nodes": []
+  },
+  {
+    "id": "phys:virtual-process-replay-context",
+    "nodes": [
+      "phys:virtual-process-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:weak-gauge-currents",
+    "nodes": [
+      "phys:lepton-charge-flavor",
+      "phys:low-energy-weak-exchange"
+    ]
+  },
+  {
+    "id": "phys:weinberg-electron-yukawa",
+    "nodes": [
+      "phys:electroweak-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:weinberg-electroweak-background",
+    "nodes": [
+      "phys:electroweak-arithmetic",
+      "phys:weinberg-electron-yukawa",
+      "phys:weinberg-gauge-mass-matrix"
+    ]
+  },
+  {
+    "id": "phys:weinberg-gauge-mass-matrix",
+    "nodes": [
+      "phys:electroweak-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-archive-context",
+    "nodes": [
+      "phys:whitlow1990-normalized-crosssections"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-comparison-context",
+    "nodes": [
+      "phys:whitlow1990-model-comparison"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-model-comparison",
+    "nodes": []
+  },
+  {
+    "id": "phys:whitlow1990-normalized-crosssections",
+    "nodes": [
+      "phys:whitlow1990-separated-r",
+      "phys:whitlow1990-target-difference"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-response-context",
+    "nodes": [
+      "phys:whitlow1990-normalized-crosssections"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-separated-r",
+    "nodes": [
+      "phys:whitlow1990-model-comparison"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-separation-context",
+    "nodes": [
+      "phys:whitlow1990-separated-r",
+      "phys:whitlow1990-target-difference"
+    ]
+  },
+  {
+    "id": "phys:whitlow1990-target-difference",
+    "nodes": [
+      "phys:whitlow1990-model-comparison",
+      "phys:whitlow1990-separated-r"
+    ]
+  },
+  {
+    "id": "phys:wilson-loop",
+    "nodes": [
+      "phys:creutz-wilson-loops",
+      "phys:static-string-tension"
+    ]
+  },
+  {
+    "id": "phys:yue2011-source-activity",
+    "nodes": [
+      "phys:alpha-gamma-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:yue2011-source-context",
+    "nodes": [
+      "phys:yue2011-source-activity"
+    ]
+  },
+  {
+    "id": "phys:yue2013-calibration-context",
+    "nodes": [
+      "phys:yue2013-efficiency"
+    ]
+  },
+  {
+    "id": "phys:yue2013-efficiency",
+    "nodes": [
+      "phys:beam-neutron-arithmetic",
+      "phys:yue2013-lifetime"
+    ]
+  },
+  {
+    "id": "phys:yue2013-lifetime",
+    "nodes": [
+      "phys:beam-neutron-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:yue2013-update-context",
+    "nodes": [
+      "phys:yue2013-lifetime"
+    ]
+  },
+  {
+    "id": "phys:yue2018-monitor-efficiency",
+    "nodes": [
+      "phys:alpha-gamma-arithmetic"
+    ]
+  },
+  {
+    "id": "phys:yue2018-normalization-context",
+    "nodes": [
+      "phys:yue2018-monitor-efficiency"
+    ]
+  },
+  {
+    "id": "phys:yue2018-source-activity",
+    "nodes": [
+      "phys:alpha-gamma-arithmetic",
+      "phys:yue2018-monitor-efficiency"
+    ]
+  },
+  {
+    "id": "phys:yue2018-transfer-context",
+    "nodes": [
+      "phys:yue2018-monitor-efficiency",
+      "phys:yue2018-source-activity"
+    ]
+  },
+  {
+    "id": "phys:z-line-shape-conventions",
+    "nodes": [
+      "phys:lep1-z-experiment-parameters",
+      "phys:lep1-z-line-shape"
+    ]
+  },
+  {
+    "id": "ret:catalytic-machinery",
+    "nodes": [
+      "ret:rod-response"
+    ]
+  },
+  {
+    "id": "ret:cgmp-conductance",
+    "nodes": [
+      "ret:rod-response"
+    ]
+  },
+  {
+    "id": "ret:cone-drive",
+    "nodes": [
+      "ret:ganglion-spiking",
+      "ret:retinal-filtering"
+    ]
+  },
+  {
+    "id": "ret:excitable-membrane",
+    "nodes": [
+      "ret:ganglion-spiking"
+    ]
+  },
+  {
+    "id": "ret:ganglion-spiking",
+    "nodes": [
+      "vis:retinogeniculate-transfer"
+    ]
+  },
+  {
+    "id": "ret:incident-light",
+    "nodes": [
+      "ret:intrinsic-light-response",
+      "ret:photochemistry"
+    ]
+  },
+  {
+    "id": "ret:intrinsic-light-response",
+    "nodes": [
+      "ret:ganglion-spiking"
+    ]
+  },
+  {
+    "id": "ret:mouse-sustained-drive",
+    "nodes": [
+      "ret:mouse-sustained-readout"
+    ]
+  },
+  {
+    "id": "ret:mouse-sustained-readout",
+    "nodes": []
+  },
+  {
+    "id": "ret:mouse-transient-drive",
+    "nodes": [
+      "ret:mouse-transient-readout"
+    ]
+  },
+  {
+    "id": "ret:mouse-transient-readout",
+    "nodes": []
+  },
+  {
+    "id": "ret:ocular-optics",
+    "nodes": [
+      "ret:spatial-sampling"
+    ]
+  },
+  {
+    "id": "ret:photochemistry",
+    "nodes": [
+      "ret:rod-response"
+    ]
+  },
+  {
+    "id": "ret:photoreceptor-mosaic",
+    "nodes": [
+      "ret:spatial-sampling"
+    ]
+  },
+  {
+    "id": "ret:pigment-preparation",
+    "nodes": [
+      "ret:photochemistry"
+    ]
+  },
+  {
+    "id": "ret:primate-off-drive",
+    "nodes": [
+      "ret:primate-off-readout"
+    ]
+  },
+  {
+    "id": "ret:primate-off-readout",
+    "nodes": []
+  },
+  {
+    "id": "ret:recording-context",
+    "nodes": [
+      "ret:rod-response"
+    ]
+  },
+  {
+    "id": "ret:retinal-circuit",
+    "nodes": [
+      "ret:retinal-filtering"
+    ]
+  },
+  {
+    "id": "ret:retinal-filtering",
+    "nodes": [
+      "ret:ganglion-spiking"
+    ]
+  },
+  {
+    "id": "ret:rod-response",
+    "nodes": []
+  },
+  {
+    "id": "ret:spatial-sampling",
+    "nodes": []
+  },
+  {
+    "id": "vis:corticogeniculate-perturbation",
+    "nodes": [
+      "vis:dlgn-feedback-response"
+    ]
+  },
+  {
+    "id": "vis:dlgn-feedback-response",
+    "nodes": []
+  },
+  {
+    "id": "vis:fef-perturbation",
+    "nodes": [
+      "vis:v4-modulation"
+    ]
+  },
+  {
+    "id": "vis:geniculocortical-input",
+    "nodes": [
+      "vis:v1-simple-response"
+    ]
+  },
+  {
+    "id": "vis:predictive-coding-hypothesis",
+    "nodes": []
+  },
+  {
+    "id": "vis:primate-feature-organization",
+    "nodes": []
+  },
+  {
+    "id": "vis:rat-orientation-selectivity",
+    "nodes": []
+  },
+  {
+    "id": "vis:retinogeniculate-transfer",
+    "nodes": []
+  },
+  {
+    "id": "vis:v1-simple-response",
+    "nodes": []
+  },
+  {
+    "id": "vis:v4-modulation",
+    "nodes": []
+  }
+]

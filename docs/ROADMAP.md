@@ -23,13 +23,13 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 181 remain on the
+graph. Of the 249 original source cards, 180 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-68 cards is a source-review census, not a percentage of scientifically supported
+69 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 
-The current graph contains 1207 records, 983 connections, 1289 claims and 392 sources.
+The current graph contains 1218 records, 997 connections, 1304 claims and 395 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -132,8 +132,17 @@ belong to the current claims.
    Full scattering and width analyses remain unreproduced; their reported
    discrepancies and source limits stay explicit. General confinement remains
    a separate open card.
-   Continue with independent structure-function tests, spectroscopy, gluon properties,
-   lepton-specific evidence and the remaining dependency claims; a theory input
+   Card 1.2 is qualified to lepton charge, chirality and flavor conventions,
+   species-specific scattering and decay evidence, and a bounded electron role
+   in hydrogen. Belle's paired proper-length fit supplies a tau mean lifetime;
+   Borexino's constrained spectrum supplies a channel-specific electron-decay
+   limit. Their response models, shared data and systematic treatment remain
+   explicit. Existing precision and neutrino records keep their own inference
+   boundaries. Universal permanence, persistent neutrino flavor, all-lepton atom
+   construction and original parent weights/minima are excluded. Raw event,
+   detector-response and complete likelihood reconstruction remain open.
+   Continue with independent structure-function tests, spectroscopy, gluon properties
+   and the remaining dependency claims; a theory input
    to an interpretation does not establish a formation process. Field-region
    entanglement, specific quantum-information applications and independent
    experimental replication remain open.

@@ -11217,6 +11217,105 @@
       ]
     },
     {
+      "nodeId": "phys:lepton-charge-flavor",
+      "role": "definition",
+      "denotes": "The model charge assignments and distinct chiral, helicity, charged-species and neutrino-basis labels.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-lepton-charge-flavor"
+      ]
+    },
+    {
+      "nodeId": "phys:belle2014-tau-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The collider exposure and selected paired-three-pion preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-belle2014-tau-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:belle2014-tau-response-context",
+      "role": "model-context",
+      "denotes": "The kinematic and vertex reconstruction, simulation and auxiliary-control inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-belle2014-tau-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:belle2014-tau-inference-context",
+      "role": "model-context",
+      "denotes": "The conditional exponential-response fit, MC calibration and systematic prescription.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-belle2014-tau-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:belle2014-tau-decay-lengths",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected-candidate reconstructed proper-length distribution, with resolution and background.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-belle2014-tau-decay-lengths"
+      ]
+    },
+    {
+      "nodeId": "phys:belle2014-tau-lifetime",
+      "role": "scoped-phenomenon",
+      "denotes": "The publication-reported tau mean lifetime and its separate statistical/systematic uncertainties.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-belle2014-tau-lifetime"
+      ]
+    },
+    {
+      "nodeId": "phys:borexino2015-electron-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The specified exposure, scintillator and selection, not a lifetime observation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-borexino2015-electron-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:borexino2015-electron-response-context",
+      "role": "model-context",
+      "denotes": "Calibration, simulated signal acceptance and spectral response inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-borexino2015-electron-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:borexino2015-electron-inference-context",
+      "role": "model-context",
+      "denotes": "The conditional spectral fit and physical-region limit construction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-borexino2015-electron-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:borexino2015-electron-spectrum",
+      "role": "scoped-phenomenon",
+      "denotes": "The measured selected spectrum and its explicitly hypothetical signal illustration.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borexino2015-electron-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:borexino2015-electron-decay-limit",
+      "role": "scoped-phenomenon",
+      "denotes": "A reported conditional lower lifetime bound for one hypothetical decay channel.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-borexino2015-electron-decay-limit"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

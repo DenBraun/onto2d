@@ -1,0 +1,698 @@
+{
+  "compatibility": {
+    "engineApiVersion": "1",
+    "modelPackFormatVersion": "1"
+  },
+  "format": "onto2d-model-pack",
+  "formatVersion": "1",
+  "indexFiles": [
+    {
+      "hash": "sha256:bc4eb87f2dcf91b8d3dc59f5f79fafa05410abef36f9b6b30a2f63e10eaf95ba",
+      "id": "byId",
+      "path": "indexes/by-id.json"
+    },
+    {
+      "hash": "sha256:cf6b1bd91fea5f29eba64bdc353b32dd56c8037a0f43aa4adf285549a2179011",
+      "id": "parents",
+      "path": "indexes/parents.json"
+    },
+    {
+      "hash": "sha256:a1c1905cc5ffde3b06c4ab2f706c5fc15df2d527f69edce1c5ceb22a70863772",
+      "id": "children",
+      "path": "indexes/children.json"
+    },
+    {
+      "hash": "sha256:84ac36881c647237475611385eef055f5663da1a576a134e076ae2e50d7aeb76",
+      "id": "levels",
+      "path": "indexes/levels.json"
+    },
+    {
+      "hash": "sha256:a6e665f248bcdabdab9f74ff37023974dbdfd6681c94fb3680408c9c6d05db12",
+      "id": "phases",
+      "path": "indexes/phases.json"
+    },
+    {
+      "hash": "sha256:3af3a36f199805155383757dd871b626dbb2c45d0cef1568b56d7d7542c70f8e",
+      "id": "typeRoles",
+      "path": "indexes/type-roles.json"
+    },
+    {
+      "hash": "sha256:7b90153457977d7b7e7aa44a4505a5dbab29c6789452cd4e588af2d38a394a0c",
+      "id": "scientificStatus",
+      "path": "indexes/scientific-status.json"
+    }
+  ],
+  "manifestHash": "sha256:0cad9ba4f407d2c9069740b0246e2202367ae640436ee7a850451e9895ec7dff",
+  "model": {
+    "description": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Lepton charge, chirality and flavor conventions remain separate from species-specific evidence. Belle infers the tau mean lifetime from paired reconstructed proper lengths; Borexino bounds one electron-decay channel with detector response and external background inputs. Neither result establishes universal lepton stability. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
+    "id": "causal-emergence",
+    "name": "Causal Emergence — Canonical Reconstruction",
+    "status": "research-reconstruction-partial",
+    "version": "2026.10.09.4"
+  },
+  "rootHash": "sha256:7b1395d5669f75c6c5ba0cad79b8c625b7cdd8090f6dabbb56d8930a969445a3",
+  "schemaVersion": "1",
+  "semanticFiles": [
+    {
+      "hash": "sha256:76fd6a9736838ce4f009ba2c0807bc5fd48b490ec03425a6868c31217c34e24d",
+      "id": "nodes",
+      "path": "model/nodes.json"
+    },
+    {
+      "hash": "sha256:0d0027ab3387aee1966e41d8df97a6dfca0bed4b1ecb0ca707d80c6d8a0ec73d",
+      "id": "edges",
+      "path": "model/edges.json"
+    },
+    {
+      "hash": "sha256:3e50603c42bd67285c34cd2612bebcffeca08b8560d4ce13e3760b54b1fcca33",
+      "id": "dictionaries",
+      "path": "model/dictionaries.json"
+    }
+  ],
+  "source": {
+    "auditHash": "sha256:792a29ef7b7565d2f34ec78d37d432b955b17921973a36a0676c8d2a9b480ebd",
+    "files": [
+      {
+        "hash": "sha256:e7d8d1a41ee16fd7c4e639b0b6acc8f4f739ecb9ae90f4db866316374562f210",
+        "path": "cases/level-0-oscillator/artifacts/level-zero-validation-v3.json"
+      },
+      {
+        "hash": "sha256:86f155eb48f8292ff715e8757903e54ddfa1bebc8e8d97bcbebb9b5ef8f20bc0",
+        "path": "cases/level-0-oscillator/artifacts/reference-validation-v1.json"
+      },
+      {
+        "hash": "sha256:884369acfcfbe7cf5aa2f64ac1bc365841d8ab9499b106d32d9687834f2c9f76",
+        "path": "cases/level-0-oscillator/level-zero-validation-v3.json"
+      },
+      {
+        "hash": "sha256:0dd329510827adb6f68ce3a7455ce24c012646192948e2f21e2cc471842adbd2",
+        "path": "cases/level-0-oscillator/model-v1.json"
+      },
+      {
+        "hash": "sha256:36f1f84e067fa6d723b1bfaf2d6a4792a7b787853301356c07edaa1777f186da",
+        "path": "cases/level-0-oscillator/source-lock.json"
+      },
+      {
+        "hash": "sha256:bcac6c4776d5ea136039ce8f0a0ce70d921f45ab7ce25c7299fb26d0a9c3d662",
+        "path": "docs/ONTO2D_FORMAL_CORE.md"
+      },
+      {
+        "hash": "sha256:a560e969a514f0313ae943d63c2d5ff0e584060dab1e644b65cef00e4735aaf3",
+        "path": "models/causal-emergence/canonical/accelerator-neutrino.mjs"
+      },
+      {
+        "hash": "sha256:c4fd6e912383ae791a7392e4a2d41ffacbe787bb88e2d6b0c7ef54bad8dbad7d",
+        "path": "models/causal-emergence/canonical/alpha-gamma.mjs"
+      },
+      {
+        "hash": "sha256:06958c8cafb0e35908bb8aac5f5c325d237c60ba1f4e35a23566113ef0546427",
+        "path": "models/causal-emergence/canonical/atmospheric-neutrino.mjs"
+      },
+      {
+        "hash": "sha256:69bceb5641bf3d1942dbfbbffc54da0e4f483f51aa103929da251e533d31b39a",
+        "path": "models/causal-emergence/canonical/beam-neutron.mjs"
+      },
+      {
+        "hash": "sha256:4f7f8b4289aa66d2aab1541ac8d4eb2071ce77275554fc6d059cd3a72e9a3a2e",
+        "path": "models/causal-emergence/canonical/bernauer.mjs"
+      },
+      {
+        "hash": "sha256:38a79c9705c5de6d8c8f2094ae7935acd030c54477737011afb1dbeff59a8815",
+        "path": "models/causal-emergence/canonical/build.mjs"
+      },
+      {
+        "hash": "sha256:bf7b72dfeb5eb630e38642d8123c28d7d3c88384c4e51e1d766c507ec4cad9dc",
+        "path": "models/causal-emergence/canonical/deuteron.mjs"
+      },
+      {
+        "hash": "sha256:43308b108c7cb31383c9ba74aa34efe45b0a7743ae0cdd52866d84c4a84b8c52",
+        "path": "models/causal-emergence/canonical/dictionaries.mjs"
+      },
+      {
+        "hash": "sha256:0c661f82b3ce28f0bcd3940e38543b9fa2d73abf2b4b681ac3d51c054686d8d8",
+        "path": "models/causal-emergence/canonical/dictionary-witnesses.mjs"
+      },
+      {
+        "hash": "sha256:467792fb7c9be9c56025e3ecebefadcb9aac0d471b17373e647a9e1dffb236ce",
+        "path": "models/causal-emergence/canonical/electron-moment.mjs"
+      },
+      {
+        "hash": "sha256:6beefc0f7e569ec02e4f6f8d02a12d56da0417a312c1858c008df88a0b158255",
+        "path": "models/causal-emergence/canonical/electroweak.mjs"
+      },
+      {
+        "hash": "sha256:b49aeda000a61bd71447e55f6db53afd1881050c738a24d6075e39c60cafb3bc",
+        "path": "models/causal-emergence/canonical/field-dynamics.mjs"
+      },
+      {
+        "hash": "sha256:f9e6ed3a05e3d5aa5e431a86f5422e11b4a8e47ff734e64a23e78b954689e882",
+        "path": "models/causal-emergence/canonical/geometric-model-data.mjs"
+      },
+      {
+        "hash": "sha256:cbe9137048fd6e292e7504c8e50539f782b37e4aa940dcdc11dccf78a5a45e55",
+        "path": "models/causal-emergence/canonical/hadron-family.mjs"
+      },
+      {
+        "hash": "sha256:381785096795377c6afe17d16bce1daba2370722881a7cb51c9d0b7a91977884",
+        "path": "models/causal-emergence/canonical/hadron-production.mjs"
+      },
+      {
+        "hash": "sha256:14417ec4def3c992b13c740c75f3284d1c70bb1e8eae4308e3dbef3983c01c67",
+        "path": "models/causal-emergence/canonical/higgs-coupling.mjs"
+      },
+      {
+        "hash": "sha256:f2ec2e0cb93ecda6eae4379e7147836ff2889201319913a870f94825fc27917f",
+        "path": "models/causal-emergence/canonical/higgs-tau.mjs"
+      },
+      {
+        "hash": "sha256:be68039456375ec653a6609c36981cf1ed062995745aa7d141a5063a034dca94",
+        "path": "models/causal-emergence/canonical/lepton-electron.mjs"
+      },
+      {
+        "hash": "sha256:7332734b8994e546a0df31fcbd078b451f2501acf7aa92c48a61e39fe8a00a22",
+        "path": "models/causal-emergence/canonical/lepton-formal.mjs"
+      },
+      {
+        "hash": "sha256:f9c7ecca8d8975e6c6c4a3554533a3b0797506f40e64e767a42bd250fa092afa",
+        "path": "models/causal-emergence/canonical/lepton-tau.mjs"
+      },
+      {
+        "hash": "sha256:13875765e1fb59cff1aef78c3dde2ec9386d6f310805a2b7c947bb0813d1bc37",
+        "path": "models/causal-emergence/canonical/mass-constraints.mjs"
+      },
+      {
+        "hash": "sha256:9455c44921b4acd1cc1531fbd81d6762f25259cd0886159d3ffb9ec5c92b5afe",
+        "path": "models/causal-emergence/canonical/matter-neutrino.mjs"
+      },
+      {
+        "hash": "sha256:59c28a5dd46e80336ce30a98fac8fc7520dfbfc91d29d1559aa4b9d5c4d48a32",
+        "path": "models/causal-emergence/canonical/meson-family.mjs"
+      },
+      {
+        "hash": "sha256:aca8ace87cf8c7c40297857a14f98531071bac6cb431173624a95fbce5504621",
+        "path": "models/causal-emergence/canonical/neural.mjs"
+      },
+      {
+        "hash": "sha256:01b5b5451b1ac9ee04229739c046a602105984df50afd509f54fcd24b6e14b63",
+        "path": "models/causal-emergence/canonical/neutrino.mjs"
+      },
+      {
+        "hash": "sha256:ce76c215da12f91ca889f89737619ea32b6a84d4d17aea9000f4c43537150a70",
+        "path": "models/causal-emergence/canonical/neutron-form-factor.mjs"
+      },
+      {
+        "hash": "sha256:f6fd076b72e274ca6c4a712cbb7514c8c7e76dd0904ef532b19cf50f3e4262b7",
+        "path": "models/causal-emergence/canonical/neutron-moment.mjs"
+      },
+      {
+        "hash": "sha256:77865ae3d148b18f2edc3954fc4eeb99a30e5fa2d86940689fc075307c37888a",
+        "path": "models/causal-emergence/canonical/nuclear-energetics.mjs"
+      },
+      {
+        "hash": "sha256:82bd96c54a3f2545f9ae0e885457e8f39bc1d2eb4ca969a3be75f047a0c468f3",
+        "path": "models/causal-emergence/canonical/nucleon-algebra.mjs"
+      },
+      {
+        "hash": "sha256:67c7a344574dc0235a8fe3ebbf8e9c4ed825c3a1045a1eedd1c85441ea2159c9",
+        "path": "models/causal-emergence/canonical/optical-witnesses.mjs"
+      },
+      {
+        "hash": "sha256:1e53eb0786ed80575945415b2b4ed33fc99848ed49ed35bba7eb7ee84986636e",
+        "path": "models/causal-emergence/canonical/optics.mjs"
+      },
+      {
+        "hash": "sha256:9483ac80d71da078b367561d5bb04ba39d2be3481adcaefaf664fc64cef8e631",
+        "path": "models/causal-emergence/canonical/physics.mjs"
+      },
+      {
+        "hash": "sha256:b4183c34d5fb1be1fd4e266f08e2a8a29a49e2186d6c43c28a23b0c3f68586ee",
+        "path": "models/causal-emergence/canonical/pion-decay.mjs"
+      },
+      {
+        "hash": "sha256:4f2c8562b8ef73fdcdcd4ea29bde2d1ed4979c6802ca402cbf5bd51605e0774f",
+        "path": "models/causal-emergence/canonical/proton-decay.mjs"
+      },
+      {
+        "hash": "sha256:3131de58dbca2654e2d0bb7f8ec73b322575f636c27b88430594472ecde739ba",
+        "path": "models/causal-emergence/canonical/proton-moment.mjs"
+      },
+      {
+        "hash": "sha256:565ef1e6226533a48978df18baa6f1222c894b5dcc6594c8b12367e260f9b35f",
+        "path": "models/causal-emergence/canonical/quark-dis.mjs"
+      },
+      {
+        "hash": "sha256:012734d237c3e85dcfb93b8057b5b81be9c544d9d51262890ee451f4ec9348d0",
+        "path": "models/causal-emergence/canonical/quark-formal.mjs"
+      },
+      {
+        "hash": "sha256:802d7f7337d070a6b0be6f67512a6f34604b55e5acc6dcc20ea9611dbb45a807",
+        "path": "models/causal-emergence/canonical/quark-top-width.mjs"
+      },
+      {
+        "hash": "sha256:1a6b66195a4900754e74d9fded2af5585a54a49d1ac2d763fd7e55397c45ec8d",
+        "path": "models/causal-emergence/canonical/readiness.mjs"
+      },
+      {
+        "hash": "sha256:2c2de1a4962a849f027e5756e3f65295a3e56738920af2e21f9afbd195aa7275",
+        "path": "models/causal-emergence/canonical/retinal.mjs"
+      },
+      {
+        "hash": "sha256:47f2fecceeb8bf0e4a6fbff94b4d3381ad8088af83cd0e9bd7572faf670ac4f5",
+        "path": "models/causal-emergence/canonical/routing.mjs"
+      },
+      {
+        "hash": "sha256:b5426c58489f558b9891a8243d5763830215816c295b1f88c99b7d1b44222e25",
+        "path": "models/causal-emergence/canonical/solar-neutrino.mjs"
+      },
+      {
+        "hash": "sha256:a3b1c9bc0ad1050b79d2348c93db501a91868e0a7b5841b599669bc13e2506b9",
+        "path": "models/causal-emergence/canonical/source.mjs"
+      },
+      {
+        "hash": "sha256:4efc81ccd72f87b7ca0518bc65d3f4e199f13a25427929eaf1bb073ca4f6eead",
+        "path": "models/causal-emergence/canonical/vacuum-polarization.mjs"
+      },
+      {
+        "hash": "sha256:feb980a994305f3ac0d9e0ab34e877a012d0dbd387686f39f7c403823ac5f949",
+        "path": "models/causal-emergence/canonical/verify-alpha-gamma.py"
+      },
+      {
+        "hash": "sha256:3539057c2d4114a6675f03a372a64d84237c46083f3c49ea7c82ee08d6247911",
+        "path": "models/causal-emergence/canonical/verify-beam-neutron.py"
+      },
+      {
+        "hash": "sha256:0a322fa0b462167be60f1b897f0a86f8c74999ee838f1ae34c9ebccd51fd44d2",
+        "path": "models/causal-emergence/canonical/verify-bell-data.py"
+      },
+      {
+        "hash": "sha256:96a8608650d698113c3f7bbe9d6538cf4006e8c620f0261f4fdc7843b27d0b25",
+        "path": "models/causal-emergence/canonical/verify-bernauer-data.py"
+      },
+      {
+        "hash": "sha256:3d49b6075be0b24683ecdb7450e26e1fc572f793cb9fd2376c1910ada7d59042",
+        "path": "models/causal-emergence/canonical/verify-deuteron-data.py"
+      },
+      {
+        "hash": "sha256:10162e3f2fb1e4aad3bb25bba66b0c7c64c02f8615eee6e4973e581e9d8d5dca",
+        "path": "models/causal-emergence/canonical/verify-electron-moment.py"
+      },
+      {
+        "hash": "sha256:f61382fc94fe3d54fcbd9dfd0f958dc14b80c3f9a071f9d734c3f66c67905b9c",
+        "path": "models/causal-emergence/canonical/verify-electroweak.py"
+      },
+      {
+        "hash": "sha256:5c3810c51c4569725bab3c8a9be1d6b6ebfbca9c2c0ecb7df664aed43dc50cdc",
+        "path": "models/causal-emergence/canonical/verify-field-dynamics.py"
+      },
+      {
+        "hash": "sha256:7beb6c6ad51f2d0718c6cbde5a674716307516d00eb3d5c94e05647d96ca4859",
+        "path": "models/causal-emergence/canonical/verify-hadron-family.py"
+      },
+      {
+        "hash": "sha256:90396d72b3235c7b40d9b426c84ae91e52477976f87fec1b6d3cc908e42a6857",
+        "path": "models/causal-emergence/canonical/verify-hadron-production.py"
+      },
+      {
+        "hash": "sha256:4787cf2a8c2fe1d7e316c9e2237fae08d7f30052288a2652129a447802d69b3d",
+        "path": "models/causal-emergence/canonical/verify-mass-constraints.py"
+      },
+      {
+        "hash": "sha256:9773c66b62416a342f02cd1f5770f857dec40f879a67ca217ed9ffd57ba02dd6",
+        "path": "models/causal-emergence/canonical/verify-meson-family.py"
+      },
+      {
+        "hash": "sha256:7af6740f93376509693369dc3709785e15a1a4acdddad7ae18acc8467c61bed3",
+        "path": "models/causal-emergence/canonical/verify-neurogenesis-data.py"
+      },
+      {
+        "hash": "sha256:307cb2d3e0c0b0655f08683f719ee02761a61ab4c772d5a97576733651107fa8",
+        "path": "models/causal-emergence/canonical/verify-neutrino.py"
+      },
+      {
+        "hash": "sha256:355119dd963402a9d9e689e285cda0bfa55d24768b3b48b22e31d6790ac8fc5f",
+        "path": "models/causal-emergence/canonical/verify-neutron-form-factor.py"
+      },
+      {
+        "hash": "sha256:756bd3bbb2c7c11ad933c2d53e65a620a39605e7d843ea86dc3cc08193203c17",
+        "path": "models/causal-emergence/canonical/verify-neutron-moment.py"
+      },
+      {
+        "hash": "sha256:7d2cda4e343b38f09a43d099d3cc16b41234ffd277e08f318723d37f8f38cd53",
+        "path": "models/causal-emergence/canonical/verify-nuclear-energetics.py"
+      },
+      {
+        "hash": "sha256:0a0ece7f01d27de4cd305e2d9975501ea374b9ca59d860d9343c3acd8e396a2b",
+        "path": "models/causal-emergence/canonical/verify-nucleon-algebra.py"
+      },
+      {
+        "hash": "sha256:9055ef26ee697b8028deec194f5873039693b0bfd689ce429b2269fec4582b39",
+        "path": "models/causal-emergence/canonical/verify-pion-decay.py"
+      },
+      {
+        "hash": "sha256:6690c7acce318a9fd38cc8aab46575bcf00b778052a8f71da81c640af84e017a",
+        "path": "models/causal-emergence/canonical/verify-proton-decay.py"
+      },
+      {
+        "hash": "sha256:842834a0b215e3b4749b9fa2064e299b2719eec7f97793723cdf1d5f55e931f9",
+        "path": "models/causal-emergence/canonical/verify-proton-moment.py"
+      },
+      {
+        "hash": "sha256:9a3b3169167c8fdd02a16054616d5f69cb9f3d563c64bb63dd488191ea0297c1",
+        "path": "models/causal-emergence/canonical/verify-routing-data.py"
+      },
+      {
+        "hash": "sha256:9774d75a8e3275ac163a8699e9bfc96eeea52223103a8b00838152cbe661f46e",
+        "path": "models/causal-emergence/canonical/verify-vacuum-polarization.py"
+      },
+      {
+        "hash": "sha256:2fb8e99edc7ea7510b7d8d8375fc0e5d128e6d7b8a0eb4f6ec15a0092c0502a3",
+        "path": "models/causal-emergence/canonical/verify-virtual-process.py"
+      },
+      {
+        "hash": "sha256:4a0d8edf54745b4be12f8ca3fde698c80fb72430125ed5bd7ecaf8c82b290818",
+        "path": "models/causal-emergence/canonical/virtual-process.mjs"
+      },
+      {
+        "hash": "sha256:cf08363a675ecbe3a2332a14e1b4d658bc120b501a979cb69119fe6482660bef",
+        "path": "models/causal-emergence/canonical/visual.mjs"
+      },
+      {
+        "hash": "sha256:04e51603ab62c8ebc5c47e27377ba68194e30665ff36d8ca4ab942453ada7040",
+        "path": "models/causal-emergence/canonical/w-decay.mjs"
+      },
+      {
+        "hash": "sha256:52db0d091d2ee9634c524adc0fcb8c0b5f9817aa5d1d455fbfab52f45f8fa1c5",
+        "path": "models/causal-emergence/canonical/weak-boson.mjs"
+      },
+      {
+        "hash": "sha256:3b0c88cc4285752308b74a25454cd0dc9eb7c53433e0eb70b9a7adf316b81188",
+        "path": "models/causal-emergence/canonical/weak-sector.mjs"
+      },
+      {
+        "hash": "sha256:35dad45bc8e3343b20bd7537a5cfcf4ecbfa1f3e470c31f8aa98d771ff490378",
+        "path": "models/causal-emergence/canonical/z-lineshape.mjs"
+      },
+      {
+        "hash": "sha256:8471eb51e9930dad86f9558cc1134d8599b4650952267fbf2db130588516b743",
+        "path": "models/causal-emergence/reconstruction/README.md"
+      },
+      {
+        "hash": "sha256:6ef6ce3893ccdc5f2cb1422192e0f8b550cb23e3921b2f1de22182f3447d0331",
+        "path": "models/causal-emergence/reconstruction/source-review.json"
+      },
+      {
+        "hash": "sha256:faa6c36b0410d4703baa3c609b4be6a68778c60fb46b18ea1d3ec2c574585d41",
+        "path": "models/causal-emergence/reconstruction/verify.py"
+      },
+      {
+        "hash": "sha256:9aea67870a7913091276002986eba507dd800b86ac3c30c35f8222ec729eea93",
+        "path": "packages/model-pack/src/cache.js"
+      },
+      {
+        "hash": "sha256:f36bb36f8f498df3921d8cb9b8478e9dfe79ac30f33539e4d7b1a1528904f921",
+        "path": "packages/model-pack/src/canonical-options.js"
+      },
+      {
+        "hash": "sha256:1a9a17423effa144424804149303aea83b30de3c213574417023c1e6928f8717",
+        "path": "packages/model-pack/src/index.js"
+      },
+      {
+        "hash": "sha256:4c02f5bfc765abb5010f112e1a1f17f8e6c9efbb0881167f5a7bfd54cdf73590",
+        "path": "packages/model-pack/src/transport-layout.js"
+      },
+      {
+        "hash": "sha256:a1bb9939655652513ea4984bef8f1ba06c158f7472e548b1560654d6be438b00",
+        "path": "references/canonical/DICTIONARY_REVIEW.md"
+      },
+      {
+        "hash": "sha256:c1fa002c27b8cdd91117f296f268d0f618cf73e32481e7fa73863d285f0605e0",
+        "path": "references/canonical/NEURAL_REVIEW.md"
+      },
+      {
+        "hash": "sha256:69daf27d0de208d59638e7a5776d67b36ebcf44913bc001fa2a73bd526b2e608",
+        "path": "references/canonical/OPTICAL_REVIEW.md"
+      },
+      {
+        "hash": "sha256:5669439e47fb1111bcd50ccfaa8552071b14ddea500531c6ec71ef6d5a9fc3b8",
+        "path": "references/canonical/SOURCE_READINESS.md"
+      },
+      {
+        "hash": "sha256:8eb9a345ba2ccae7163d13215eec328fb092eb1923e743318a9668dd41169493",
+        "path": "references/canonical/VISUAL_REVIEW.md"
+      },
+      {
+        "hash": "sha256:5e9c3137adc3000a1fa7efd9d27bc70272e17157bfbd032b1044125378aed584",
+        "path": "references/canonical/data/41586_2020_2777_MOESM11_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:3d884c45108b09106f193de3406ee48c6bb5792faa5337b7af8f992d38e5895e",
+        "path": "references/canonical/data/41586_2023_6502_MOESM10_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:f167176638f83b9e24dedb5ca8b53c861922528382670a1704844bf43a9b49e9",
+        "path": "references/canonical/data/41586_2023_6502_MOESM11_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:e1df18d57dddae19ae2a8294ef44a969e2a26f681ae86ec02f4c18f85b31cf20",
+        "path": "references/canonical/data/41593_2017_BFnn4494_MOESM61_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:ce3501720e3f719f7cd901e8bd090d5009d59494e1c63b0739d815690c9794ed",
+        "path": "references/canonical/data/41593_2017_BFnn4494_MOESM62_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:b89ad90d7baf065d9c19d2dbce8b020ccf6080afc020b3246c75f9195bd7671f",
+        "path": "references/canonical/data/41593_2020_717_MOESM9_ESM.xlsx"
+      },
+      {
+        "hash": "sha256:9ff2481f8307a016f603b05f640f110551771dcfd8c771912f3a38b2f81d0385",
+        "path": "references/canonical/data/STable1_Human_cohorts_used_in_the_study.xlsx"
+      },
+      {
+        "hash": "sha256:b4cca76f8eaccb21fc1358da034e8e8bd712b5aca5e8fec65f41938e7c6a769a",
+        "path": "references/canonical/data/STable8_Cell_type_abundance_copy.xlsx"
+      },
+      {
+        "hash": "sha256:c4d7fa269f232dda704814886fa14f65b22cf903f9efa532e7eec733673dcda5",
+        "path": "references/canonical/data/amalric2017-syntax.pdf"
+      },
+      {
+        "hash": "sha256:a93252186568d231d986659598292beaa6e16db1f4450c8d26b39cd7adaf6555",
+        "path": "references/canonical/data/baars1988.pdf"
+      },
+      {
+        "hash": "sha256:328ed93f08b4381adb7e6fcc47a0f70f8c52b2112c347443f362b51d44276895",
+        "path": "references/canonical/data/bak1987.pdf"
+      },
+      {
+        "hash": "sha256:f0bbbbf21e503591dee1fc33a0424f0da574dfe087d7b430e4f173d76213adae",
+        "path": "references/canonical/data/bernauer2014-ancillary-description.pdf"
+      },
+      {
+        "hash": "sha256:18e63a8420a48f3fe68a490081766731618b2c5ed78030209612372f31ede03a",
+        "path": "references/canonical/data/bernauer2014-cross-sections.dat"
+      },
+      {
+        "hash": "sha256:a888833fa6194058e58ee54b99611f8db271707151537f4e2b7579b8d0ac51cf",
+        "path": "references/canonical/data/bernauer2014-mainz-spline.dat"
+      },
+      {
+        "hash": "sha256:22992d960a3aee71793b1644a229752b62f06132e08e5691ad433c8335147f19",
+        "path": "references/canonical/data/bernauer2014-rosenbluth.dat"
+      },
+      {
+        "hash": "sha256:0df50c9a8b5e3d6ba27800d1a3b906a398e57404a35016925f2210c34a269f4e",
+        "path": "references/canonical/data/cardin2009-supplement.pdf"
+      },
+      {
+        "hash": "sha256:30d9b09341642e25e182e0b5fcc77bb3b690c39d4532b9c3bb69e999189eeccd",
+        "path": "references/canonical/data/cogitate2025-supplement.pdf"
+      },
+      {
+        "hash": "sha256:01c6bab0ed80c9ff41d9f4d058d88533d549963930d9e886556e10cb8e73aa7b",
+        "path": "references/canonical/data/dehaene2011.pdf"
+      },
+      {
+        "hash": "sha256:9e11ef5b0e1d62f7cd005017da16c4d585f37b018c406086fae96d282904d0da",
+        "path": "references/canonical/data/elife-38281-fig6-data1-v2.xlsx"
+      },
+      {
+        "hash": "sha256:383cfa839d93bb25b202a02f95a22ef8c264dc791ac4d147818e9dd6be88c7da",
+        "path": "references/canonical/data/ernst2002.pdf"
+      },
+      {
+        "hash": "sha256:88e2fb26540cb075690607d37d38a498a1e7f19dca6639dd243672f962042e6a",
+        "path": "references/canonical/data/hanssen-2001.pdf"
+      },
+      {
+        "hash": "sha256:c28eb0f075759aef620a0b2e00a70fd675ce712bc8214d11c103f5a3d29492c0",
+        "path": "references/canonical/data/hensen2015-data.zip"
+      },
+      {
+        "hash": "sha256:876967e1cbe402b775d25392b773386325499b2343b18bf401d1825f2008a176",
+        "path": "references/canonical/data/hensen2016-data.zip"
+      },
+      {
+        "hash": "sha256:073e6de9a2dd1a75921e6616fd7d220b5f94636ecc7f99d94f3b75647128dab5",
+        "path": "references/canonical/data/kamland2005-description.html"
+      },
+      {
+        "hash": "sha256:3d58312c39ec487da2e43466eb67aa84e9766602dae8eb1607a8698a87845f24",
+        "path": "references/canonical/data/kamland2005-selected-energies.dat"
+      },
+      {
+        "hash": "sha256:c6c251614e94b6f994d9dd75ecf720e80d16badd90f4454ba9f43732f23a2e48",
+        "path": "references/canonical/data/lachniet2009-e111m1-description.html"
+      },
+      {
+        "hash": "sha256:1a624c5e49f39334dbd331dda4470e0a7a9de5e48c5cb85051149db9ba0d7129",
+        "path": "references/canonical/data/lachniet2009-e111m1.tsv"
+      },
+      {
+        "hash": "sha256:fb819bd18ce5f7116d8396ec707dffb63c7ab060e7d030da4bf9dc8aea987bdb",
+        "path": "references/canonical/data/lachniet2009-v2-figure3.eps"
+      },
+      {
+        "hash": "sha256:d1f8c489813f812b26c36c4a3b894fe0495b097d4a3e61c884fa816962012f20",
+        "path": "references/canonical/data/nicodemus-1977.pdf"
+      },
+      {
+        "hash": "sha256:f0301f4f31e36799c29cfca020e7da522139ee63dbe09ed7dd47556696aba817",
+        "path": "references/canonical/data/pajot2026-model-check.json"
+      },
+      {
+        "hash": "sha256:4f91de6e9c30266cbbd5633f2a154f4e8e4e04971f6c8339f3037e4f56939fe2",
+        "path": "references/canonical/data/pessoa2008.pdf"
+      },
+      {
+        "hash": "sha256:91606d7a5715cd0976e9eddaa0505a08b89f16121a707d4c6421f68e729aacfb",
+        "path": "references/canonical/data/rau2020-edfig1.xlsx"
+      },
+      {
+        "hash": "sha256:00e9607dde3aff425f3095afe1a19b77b9eec858d626aabf11d779ffe5630a4d",
+        "path": "references/canonical/data/rau2020-fig3.xlsx"
+      },
+      {
+        "hash": "sha256:d4769d63ae397dd4bda830246ed383860fe3793bf48ad3accaf436335aca4784",
+        "path": "references/canonical/data/rau2020-fig4.xlsx"
+      },
+      {
+        "hash": "sha256:fb5fb174215df021dc5ed32a43f55b539ddfd323b90486d277abacdb95990ac6",
+        "path": "references/canonical/data/shannon1948.pdf"
+      },
+      {
+        "hash": "sha256:94d6c887244528328b97e83e9f3971623972d95a69c1557557d97b8cc6b916aa",
+        "path": "references/canonical/data/sld1998-neutral-production.json"
+      },
+      {
+        "hash": "sha256:ec0b8c340525a55e9e6d64b3a41c93623aac91552fd16a64a7cf3faccd6abfea",
+        "path": "references/canonical/data/touboul2017.pdf"
+      },
+      {
+        "hash": "sha256:7cc771cf179933c2cf97bd37fa59fcf86d81cfd7f115af53d99b7e3bb872ef84",
+        "path": "references/canonical/data/usrey-1998.pdf"
+      },
+      {
+        "hash": "sha256:c4aa67a28dc945d839c43cd161ea178916616b1e12e5baa605c28c878e2ad2a0",
+        "path": "references/canonical/data/witvliet2021.pdf"
+      },
+      {
+        "hash": "sha256:f68df28398e410cce7a3002c9c10383781817b30667c88c8bbf0bb4ea8471825",
+        "path": "references/canonical/dictionary-review.json"
+      },
+      {
+        "hash": "sha256:4e72b8ca482d1c632051f0eaf8182316162b451dc210366d9bdbd7050d6f47af",
+        "path": "references/canonical/graph.json"
+      },
+      {
+        "hash": "sha256:847606dd32af74fc4b438d389f33fe39b3d6c975dbaa6eaa7d04d4e7954e0328",
+        "path": "references/canonical/neural-review.json"
+      },
+      {
+        "hash": "sha256:8589fc5e1f10ff884430e2d21592d716540cd2eb7cb313c2e149d9510b419bf7",
+        "path": "references/canonical/optical-review.json"
+      },
+      {
+        "hash": "sha256:9e9b970ff31fa4b6273157f13260807c40ffa6b785afd3cf32276dbcc822e4ef",
+        "path": "references/canonical/physics-review.json"
+      },
+      {
+        "hash": "sha256:9cdbbae62e075b793450ce7e8ea71547d5f74cfe0bc4d9fd2b2626e2ef4f0e65",
+        "path": "references/canonical/retinal-review.json"
+      },
+      {
+        "hash": "sha256:7ff4d768f63467e5553d6a4055ebe6db3986e4eea32bdf7184ed76ab6b993cf1",
+        "path": "references/canonical/routing-policy.json"
+      },
+      {
+        "hash": "sha256:6923602c97c46cf28ff0e59e07e4ab7e4e4baf5389bc145d6db0752dc8b9c564",
+        "path": "references/canonical/routing-review.json"
+      },
+      {
+        "hash": "sha256:3e62e3abbad8f685512d1a912ca08192c0631c807f8bfcd6be4263bb666ccd2c",
+        "path": "references/canonical/schema.json"
+      },
+      {
+        "hash": "sha256:457954372489d0e414aecaa3a0c31a09bde8d92262ac3c9e77b25eb83353b821",
+        "path": "references/canonical/source-readiness.json"
+      },
+      {
+        "hash": "sha256:ff160ba4d4a287f0fa0638a35739e4d23ed42e28b38279cb72712eba2619c8c9",
+        "path": "references/canonical/visual-review.json"
+      },
+      {
+        "hash": "sha256:f6fccc285b387097ec912cc9827e3eea45775cabf076ebc08adac8ce10b62ac6",
+        "path": "references/descriptions.json"
+      },
+      {
+        "hash": "sha256:761dab2265dd9e9275e8ff5feb8447eded7e5ed1fc42c9480e36a70cb8a59988",
+        "path": "references/level-0.json"
+      },
+      {
+        "hash": "sha256:b1bc5f0fe4b9741f57807d24b638b26a75b2b6e77a32c44b3f3711c8fd30a91a",
+        "path": "references/level-1.json"
+      },
+      {
+        "hash": "sha256:0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
+        "path": "references/level-2.json"
+      },
+      {
+        "hash": "sha256:baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
+        "path": "references/level-3.json"
+      },
+      {
+        "hash": "sha256:252bb941899fa2cdb8d42afb59823acb0a2dce84f028c2fcb354d0608e24163e",
+        "path": "references/level-4.json"
+      },
+      {
+        "hash": "sha256:b45a4fb9649b81a7ca4b5ebfe0211c8284497b75fcf968d8bb88efceb1c9c147",
+        "path": "references/level-5.json"
+      },
+      {
+        "hash": "sha256:da7e9afc05c0daf9cc958a67c3be16b0a7ff47fea6d863198710440ad8996d24",
+        "path": "references/level-6.json"
+      },
+      {
+        "hash": "sha256:10f91e78c279cc1fe83342b195702908c76ccdabbbc788a00d9f1142970fbfe6",
+        "path": "references/level-7.json"
+      },
+      {
+        "hash": "sha256:11945d9890881c3a4c0d791bf8c1842c29d593eeccd24e0720004779b333340a",
+        "path": "references/theory-of-causal-arisings.pdf"
+      },
+      {
+        "hash": "sha256:3992ae25c5e499842a57b07dea0d2f9d206ee3483d634fb9053af39dc260a8f7",
+        "path": "references/topology-of-arising.pdf"
+      },
+      {
+        "hash": "sha256:5e3ff386cb2165daefe3e1b4001ddeff894d116e2d37630892f8dd8d41773fbd",
+        "path": "references/Архив.zip"
+      }
+    ],
+    "id": "canonical-research-source-v20"
+  },
+  "statistics": {
+    "edgeCount": 997,
+    "nodeCount": 1218
+  }
+}
