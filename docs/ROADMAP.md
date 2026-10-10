@@ -23,13 +23,13 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 180 remain on the
+graph. Of the 249 original source cards, 179 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-69 cards is a source-review census, not a percentage of scientifically supported
+70 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 
-The current graph contains 1218 records, 997 connections, 1304 claims and 395 sources.
+The current graph contains 1235 records, 1018 connections, 1328 claims and 398 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -141,9 +141,18 @@ belong to the current claims.
    boundaries. Universal permanence, persistent neutrino flavor, all-lepton atom
    construction and original parent weights/minima are excluded. Raw event,
    detector-response and complete likelihood reconstruction remain open.
-   Continue with independent structure-function tests, spectroscopy, gluon properties
-   and the remaining dependency claims; a theory input
-   to an interpretation does not establish a formation process. Field-region
+   Card 1.3 has explicit non-Abelian field-strength and self-coupling terms.
+   SLD's selected three-jet shapes test specified spin models; OPAL's correlated
+   angular/rate fit tests color factors within its perturbative family. H1's
+   inclusive cross sections constrain a scheme-dependent gluon distribution
+   through NLO evolution. Corrections, shared data, fixed versus fitted coupling
+   and publication discrepancies remain explicit. Lattice examples retain their
+   different gauge groups, sea content and calibration. A universal process
+   classification, weighted necessary parents and one-carrier thresholds are
+   excluded. Full experimental and computational replay remains open.
+   Continue with independent structure-function tests, spectroscopy and the
+   remaining dependency claims; a theory input to an interpretation does not
+   establish a formation process. Field-region
    entanglement, specific quantum-information applications and independent
    experimental replication remain open.
    Extend the running-coupling evidence through independent DIS and collider

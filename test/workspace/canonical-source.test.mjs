@@ -42,10 +42,10 @@ test("joint rules require distinct multiplicities and cannot assert successful p
 
 test("the current output contains evidence and no graph migration history", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1218, edgeCount: 997 });
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1235, edgeCount: 1018 });
   const dictionaries = pack.files["model/dictionaries.json"];
-  assert.equal(dictionaries.claims.length, 1304);
-  assert.equal(dictionaries.sources.length, 395);
+  assert.equal(dictionaries.claims.length, 1328);
+  assert.equal(dictionaries.sources.length, 398);
   const census = dictionaries.evidence.neurogenesisData;
   assert.equal(census.sampleCount, 39);
   assert.equal(census.retainedNuclei, 153530);

@@ -11316,6 +11316,159 @@
       ]
     },
     {
+      "nodeId": "phys:gluon-self-coupling",
+      "role": "definition",
+      "denotes": "Specified gauge-field interaction terms, not an identified occurrence or an imaged vertex.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gluon-self-coupling"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1997-spin-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The 1993 SLC exposure and declared calorimeter/JADE selection.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sld1997-spin-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1997-spin-response-context",
+      "role": "model-context",
+      "denotes": "The cluster/jet reconstruction and successive detector/ISR and hadronization correction maps.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sld1997-spin-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1997-spin-inference-context",
+      "role": "model-context",
+      "denotes": "The restricted phase space and normalized vector/scalar/tensor prediction family.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-sld1997-spin-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1997-spin-readout",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected-event reconstructed jet-energy and Ellis-Karliner distributions before C_D and C_H correction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sld1997-spin-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1997-spin-corrected-shapes",
+      "role": "scoped-phenomenon",
+      "denotes": "The successive same-data hadron-level tables and model-conditioned parton-level shape estimates.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sld1997-spin-corrected-shapes"
+      ]
+    },
+    {
+      "nodeId": "phys:sld1997-spin-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported conditional discrimination among specified spin-dependent shapes.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-sld1997-spin-comparison"
+      ]
+    },
+    {
+      "nodeId": "phys:opal2001-color-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The selected Z-pole preparation and its clustered hadronic events.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-opal2001-color-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:opal2001-color-response-context",
+      "role": "model-context",
+      "denotes": "Simulation-based bin corrections between detector, hadron and parton conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-opal2001-color-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:opal2001-color-inference-context",
+      "role": "model-context",
+      "denotes": "The NLO and resummation-conditioned simultaneous parameter inference.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-opal2001-color-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:opal2001-color-distributions",
+      "role": "scoped-phenomenon",
+      "denotes": "Six same-sample corrected distributions, with normalization and bin dependence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opal2001-color-distributions"
+      ]
+    },
+    {
+      "nodeId": "phys:opal2001-color-factors",
+      "role": "scoped-phenomenon",
+      "denotes": "The conditional fitted ratios and their correlated conversion using T_R=1/2.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-opal2001-color-factors"
+      ]
+    },
+    {
+      "nodeId": "phys:h1-2001-dis-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The 1996/97 beam, exposure and selected inclusive preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-h1-2001-dis-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:h1-2001-dis-response-context",
+      "role": "model-context",
+      "denotes": "Detector and radiative corrections, auxiliary controls and the fitted longitudinal response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-h1-2001-dis-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:h1-2001-dis-evolution-context",
+      "role": "model-context",
+      "denotes": "Parameterized quark/gluon evolution and correlated inference with declared coupling and scale choices.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-h1-2001-dis-evolution-context"
+      ]
+    },
+    {
+      "nodeId": "phys:h1-2001-dis-crosssections",
+      "role": "scoped-phenomenon",
+      "denotes": "The published corrected inclusive response, distinct from its derived structure functions and PDFs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-h1-2001-dis-crosssections"
+      ]
+    },
+    {
+      "nodeId": "phys:h1-2001-dis-gluon-distribution",
+      "role": "scoped-phenomenon",
+      "denotes": "The publication-reported conditional gluon PDF and separate uncertainty components.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-h1-2001-dis-gluon-distribution"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",
