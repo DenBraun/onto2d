@@ -7448,7 +7448,7 @@
     {
       "nodeId": "phys:fractional-charge-residual",
       "role": "definition",
-      "denotes": "A specified mathematical object, study context or scoped reported result.",
+      "denotes": "The centered and modulo-one electric-charge residual definitions.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-fractional-charge-residual"
@@ -7466,7 +7466,7 @@
     {
       "nodeId": "phys:lee2002-context",
       "role": "experimental-context",
-      "denotes": "A specified mathematical object, study context or scoped reported result.",
+      "denotes": "The selected silicone-oil sample, trajectory calibration and overlapping acceptance cuts.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-phys-lee2002-context"
@@ -7511,7 +7511,7 @@
     {
       "nodeId": "phys:lee-charge-null",
       "role": "scoped-phenomenon",
-      "denotes": "A specified mathematical object, study context or scoped reported result.",
+      "denotes": "The observed integer-charge peaks and unoccupied residual window after selection.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-lee-charge-null"
@@ -7520,7 +7520,7 @@
     {
       "nodeId": "phys:lee-abundance-limit",
       "role": "scoped-phenomenon",
-      "denotes": "A specified mathematical object, study context or scoped reported result.",
+      "denotes": "The publication-reported abundance bound for the stated processed-oil sample and residual-charge window.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-lee-abundance-limit"
@@ -11592,6 +11592,114 @@
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-boschi1998-teleportation-score"
+      ]
+    },
+    {
+      "nodeId": "phys:confinement-criteria",
+      "role": "definition",
+      "denotes": "A scoped criterion and its non-equivalent applications.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "nodeId": "phys:confinement-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded interpretation of existing, separately prepared hadronic results; no new acquisition or pooled test.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-confinement-evidence-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:bulava2019-ensemble-context",
+      "role": "model-context",
+      "denotes": "The finite N200 sea-quark ensemble, common sampling and adopted lattice scale.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bulava2019-ensemble-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bulava2019-spectral-context",
+      "role": "model-context",
+      "denotes": "The extended operator basis, relative-energy observable and correlated Euclidean extraction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bulava2019-spectral-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bulava2019-relative-spectrum",
+      "role": "scoped-phenomenon",
+      "denotes": "The three reported static-energy levels relative to the common two-static-light threshold.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bulava2019-relative-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:bulava2019-mixing-context",
+      "role": "model-context",
+      "denotes": "The specified six-parameter model and its diagonal-crossing distance convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bulava2019-mixing-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bulava2019-string-breaking-scales",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported model parameters and light/strange crossing distances on the same ensemble.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bulava2019-string-breaking-scales"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2013-fcp-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The 2011 pp exposure, trigger and restricted track/event selection.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2013-fcp-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2013-fcp-response-context",
+      "role": "model-context",
+      "denotes": "The color-singlet production model, detector-scale lifetime assumption and conditional event efficiency.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2013-fcp-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2013-fcp-inference-context",
+      "role": "model-context",
+      "denotes": "The control-sample background extrapolation and publication-reported CLs/mass interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cms2013-fcp-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2013-fcp-selected-count",
+      "role": "scoped-phenomenon",
+      "denotes": "The observed zero selected events, distinct from predicted backgrounds and model limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cms2013-fcp-selected-count"
+      ]
+    },
+    {
+      "nodeId": "phys:cms2013-fcp-limits",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported production limits and extra model-dependent conversion into mass exclusions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cms2013-fcp-limits"
       ]
     },
     {

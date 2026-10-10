@@ -9,7 +9,8 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1249 records, 1035 connections, 1347 claims and 403 sources.
+The current graph contains 1261 records, 1058 connections, 1364 claims and 405 sources.
+The physics review contains 176 study contexts and 140 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -310,9 +311,8 @@ order. Jet multiplicity, detector counts and representation dimensions do not
 define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
-General confinement and universal self-organization remain separate open scopes.
-Lattice computations
-retain their separate computational evidence.
+Confinement has declared theory-specific criteria and separately scoped lattice
+and phenomenological evidence. Universal self-organization remains an open scope.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
 
@@ -355,9 +355,10 @@ with the existing spectroscopy, valence/Fock, lattice and hadron-production
 records. Net valence numbers do not imply a permanent valence-only population;
 color-singlet algebra does not derive real-time hadron formation. The Lee
 fractional-electric-charge search constrains its selected material and is not
-a universal color-confinement test. General confinement remains card 1.7's
-separate scope. Universal stable carriers, a later chronological confinement
-stage, arbitrary parent weights/minima and a SOMA objecthood proof are excluded.
+a universal color-confinement test. Card 1.7 separately qualifies the confinement
+criteria and their finite evidence. Universal stable carriers, a later
+chronological confinement stage, arbitrary parent weights/minima and a SOMA
+objecthood proof are excluded.
 Framework and representation dependencies state the chosen model; they do not
 derive it from Level 0 or establish a necessary physical creation sequence.
 
@@ -442,7 +443,7 @@ two-flavor SU(3) with external static sources, and calibrated isospin-symmetric
 physical gluon mass or real-time hadron formation history. Scale evolution is
 distinct from time evolution. Formal sector choices supply no measured
 necessary arising order, original 0.4/0.6 weights, one-carrier minima or
-universal SOMA process classification. General confinement, self-organization
+universal SOMA process classification. Confinement criteria, self-organization
 and broader running-coupling claims keep their separate scopes.
 
 ## Bipartite states and Bell tests
@@ -639,12 +640,22 @@ detector/fit reproduction and nonperturbative extensions remain open.
 
 ## Lattice gauge theory
 
+Confinement criteria declare the gauge theory, dynamical matter, operator,
+state and separation/time limits. A fundamental Wilson-loop area criterion in
+an unscreened pure-gauge theory differs from static-source screening with
+dynamical quarks and from phenomenological color-singlet final states. The
+screened ground-state energy need not grow without bound; an unbroken-string
+branch and the lowest state are distinct. Neither ultraviolet running nor a
+finite-loop fit proves physical continuum QCD confinement.
+
 [Wilson](https://doi.org/10.1103/PhysRevD.10.2445) supplies a regulated
 Euclidean construction and a leading strong-coupling surface argument. The
 lattice, Wilson-loop observable, static-source area criterion, continuum-limit
-prescription and surface expansion have separate definitions. Minimal
-plaquette area concerns that expansion; it does not establish a universal
-minimum for physical constituents or stable complexity.
+prescription and surface expansion have separate definitions. The detailed
+strong-coupling illustration is compact Abelian; its non-Abelian extension is
+not an all-orders physical SU(3) calculation. Minimal plaquette area concerns
+that expansion; it does not establish a universal minimum for physical
+constituents or stable complexity.
 
 [Creutz](https://doi.org/10.1103/PhysRevD.21.2308) supplies computational
 evidence in pure SU(2), without dynamical quarks. Square-loop expectations,
@@ -675,14 +686,32 @@ potential formula has an incorrect large-distance asymptote. Independent
 simulation replay, physical-mass extrapolation, continuum confinement and
 real-time hadronization remain separate obligations.
 
+[Bulava et al.](https://doi.org/10.1016/j.physletb.2019.05.018) report a
+separate 2+1-flavor calculation on one N200 ensemble with nonphysical quark
+masses. String, static-light and static-strange channels use four variational
+operators. Correlated fits extract three energies relative to twice the
+static-light energy; the later six-parameter spectral fit is uncorrelated.
+Its reported 1.224(15) fm and 1.293(16) fm distances use diagonal-branch
+crossings and an adopted scale. They are not Bali's minimum-gap distances,
+universal radii or observed real-time breaking rates. Separately estimated
+thresholds remain distinct from fitted asymptotic constants.
+
+Card 1.7 is qualified to these criteria, computational results and bounded
+hadronic and electric-charge evidence. The calibrated hadron spectrum, selected
+jet shapes and decay-reconstructed yields retain their distinct inputs; they
+are not pooled into an all-channel color exclusion. They do not derive nuclear
+or atomic stability. Nuclear binding, specific decay thresholds and electronic
+binding require their own systems. Original weighted parents, one-particle
+minima, temporal maintenance and universal downward causation are excluded.
+
 Card 1.15 is reviewed with qualifications. These static-source and screening
 records, color-singlet algebra and charge-search limits do not establish its
 universal downward-causation mechanism or blanket composite stability. Those
 assertions and the arbitrary parent weights/minima are excluded. A distinct
 macroconstraint hypothesis needs a defined macrovariable, micro-to-macro map,
 effective dynamics and discriminating intervention or reduction predictions.
-General confinement card 1.7 retains its own unresolved scope; independent
-lattice replay is separate from the finite disposition of card 1.15.
+Independent lattice replay and wider physical-mass/continuum coverage remain
+separate from the finite dispositions of cards 1.7 and 1.15.
 
 The [Dürr light-hadron calculation](https://arxiv.org/abs/0906.3599v1) uses
 two-plus-one-flavor QCD with degenerate up/down masses at three lattice spacings.
@@ -1172,7 +1201,23 @@ background subtraction.
 The published 95% upper bound is 1.17 x 10^-22 particles per nucleon. Its
 admitted modulo-one window is 0.18-0.82: the abstract and Introduction use that
 window, while the results section assigns the same bound to 0.15-0.85.
-Confidence-limit normalization and acquisition have not been independently
-reproduced. Processing and unknown natural concentration prevent generalizing
-this sample to all matter. Electric-charge non-detection does not measure color
-charge or establish a universal confinement or downward-causation law.
+The revised author report gives joint cut rejections of 22.3% and 8.7%,
+differing from the selected published values 21.0% and 9.4%; the versions are
+not mixed to recompute exposure. The reviewed author version supplies no
+confidence-construction formula or effective-exposure prescription. Its printed
+nucleon conversion is not used to invent a replay of the bound. Processing and
+unknown natural concentration prevent generalizing this sample to all matter.
+
+The [CMS 2011 collision search](https://arxiv.org/abs/1210.2311v2) uses a
+separate 5.0 fb^-1 pp acquisition at 7 TeV. Triggered tracks with at least six
+low-ionization measurements give zero selected events, distinct from the
+predicted background. Unit-charge momentum reconstruction, detector thresholds,
+control samples and signal efficiencies remain explicit. The reported 95% CLs
+cross-section limits are converted into 310 GeV and 140 GeV mass exclusions
+for charges of magnitude 2e/3 and e/3 under the stated production model.
+
+Those benchmark particles are spin-1/2 color and weak-isospin singlets, assumed
+to survive the detector. Their limits are neither quark-color bounds nor a
+permanent-stability measurement. CMS and Lee constrain different hypotheses;
+no combined abundance or significance is inferred. Electric-charge
+non-detection does not establish a universal confinement or downward-causation law.

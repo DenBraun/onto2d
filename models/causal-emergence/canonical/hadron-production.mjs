@@ -225,7 +225,7 @@ const contracts = {
           "arXiv:hep-ex/9805029v1 pages 18-23 and 25-28, Sections 4.2-4.4, Figures 7 and 11, Tables 6-7: decay reconstruction, efficiency/normalization corrections and inclusive spectra",
           "arXiv:hep-ex/9805029v1 page 46, Section 7 and Table 16, all-flavor column for K0, K*0, phi and Lambda: measured-range integrals and model-dependent extrapolation"
         ],
-        "limit": "Selected passages of the 24 May 1998 author v1 were read; Tables 6, 7 and 16 were visually inspected. The arXiv record identifies Physical Review D59, 052001 (1999). The publisher PDF and the complete 61-page analysis were not reviewed. Only the inclusive reconstructed K0/K0bar, Lambda/Lambdabar, K*0/K*0bar and phi results are admitted. Flavor-tagged spectra, leading-particle asymmetries and charged pi/K/p results are outside this block."
+        "limit": "Selected passages of the 24 May 1998 author v1 were read; Tables 6, 7 and 16 were visually inspected. The arXiv record identifies Physical Review D59, 052001 (1999). The publisher PDF and the complete 62-page analysis were not reviewed. Only the inclusive reconstructed K0/K0bar, Lambda/Lambdabar, K*0/K*0bar and phi results are admitted. Flavor-tagged spectra, leading-particle asymmetries and charged pi/K/p results are outside this block."
       }
     },
     {

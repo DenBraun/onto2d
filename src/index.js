@@ -1,7 +1,7 @@
 import { Onto2D as EngineOnto2D } from "@onto2d/engine";
 import { verifyModelPack } from "@onto2d/model-pack";
 import { canonicalIdentityAnalysis } from "@onto2d/canonical-identity-analysis";
-import bundledPackJson from "../models/causal-emergence/releases/2026.10.10.3/bundle.json" with { type: "json" };
+import bundledPackJson from "../models/causal-emergence/releases/2026.10.10.4/bundle.json" with { type: "json" };
 import legacyPackJson from "../models/causal-emergence/releases/2026.08.15/bundle.json" with { type: "json" };
 
 const CREATE_OPTION_FIELDS = new Set(["models", "aliases", "lineages", "model", "analyses"]);

@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.10.3`: 1249 records, 1035 connections,
-1347 claims and 403 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.10.4`: 1261 records, 1058 connections,
+1364 claims and 405 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -43,7 +43,16 @@ shared inputs and source discrepancies remain visible. The gluon distribution
 is scheme-dependent; fitted color factors do not image an elementary vertex.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
-confinement, temporal emergence or carrier-count minima.
+an all-channel confinement theorem, temporal emergence or carrier-count minima.
+Confinement records distinguish pure-gauge area criteria, dynamical screening
+and hadronic phenomenology. Wilson, Creutz and Bali retain their exact model,
+operator and fit boundaries. Bulava's single 2+1-flavor ensemble adds light and
+strange screening with conditional crossing distances. Lee's selected oil-drop
+bound retains its source-version and confidence-normalization gaps; CMS supplies
+a distinct collider limit for detector-stable color-singlet particles. Electric
+charge is not color charge, and these searches are not pooled. Hadron evidence
+does not establish nuclear or atomic stability, a temporal maintenance mechanism
+or the original weighted parent/minimum rules.
 Entanglement records retain subsystem choice, classical-correlation counterexamples
 and local reduced states. The regulated scalar-vacuum calculation specifies its
 radial cutoff, partial trace and conditional entropy scaling. Shalm's photonic
