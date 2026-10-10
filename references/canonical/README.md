@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1218 records, 997 connections, 1304 claims and 395 sources.
+The current graph contains 1235 records, 1018 connections, 1328 claims and 398 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -310,8 +310,8 @@ order. Jet multiplicity, detector counts and representation dimensions do not
 define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
-Gluon source card 1.3 remains open for its remaining properties and proposed
-dependencies. Lattice computations
+General confinement and universal self-organization remain separate open scopes.
+Lattice computations
 retain their separate computational evidence.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
@@ -400,6 +400,50 @@ channel-selection and covariance boundaries. A derived Fermi coupling and a
 universality-constrained branching fit do not provide independent confirmations.
 Field/framework dependencies supply no measured arising or maintenance law,
 numerical parent weights, universal carrier minima or proof of SOMA objecthood.
+
+## Gluon fields and conditional interaction tests
+
+The QCD field definition separates adjoint color, Lorentz components,
+spin/polarization and a theoretical massless parameter. In the cited PDG
+convention `F=K-g_s B`, the gauge Lagrangian expands as
+`-K.K/4+(g_s/2) K.B-(g_s^2/4) B.B`. The cubic and quartic terms specify
+self-coupling vertices; they do not constitute an observed free-gluon
+population or a complete gauge-fixed quantum calculation.
+
+[SLD's three-jet study](https://doi.org/10.1103/PhysRevD.55.2533) separates
+selected reconstructed distributions, hadron-level corrections and further
+parton estimates. Its Ellis-Karliner comparison favors the specified vector
+prediction over the tested scalar and tensor models under the stated response
+and hadronization assumptions. Energy ordering is not a gluon tag. This SLC
+sample is distinct from PETRA and LEP data, but independence from other
+1993-1995 SLD hadron measurements is not established.
+
+[OPAL's angular and rate analysis](https://doi.org/10.1007/s100520100699)
+fits correlated color-factor ratios and a coupling with NLO and resummed
+predictions. Standard-QCD simulations supply detector and hadronization
+corrections; `T_R=1/2` is adopted to convert ratios. Statistical and systematic
+correlations retain their own parameterization. Compatibility with SU(3) is
+conditional on this analysis, not a directly imaged vertex or a complete
+independent test of every gauge theory. The text/caption benchmark-coupling
+conflict remains separate from the fitted result.
+
+[H1's inclusive DIS analysis](https://doi.org/10.1007/s100520100720) separates
+corrected cross sections from the inferred gluon distribution. The standard
+H1-only extraction fixes the coupling; the joint H1+BCDMS fit supplies a
+separate coupling uncertainty. MSbar factorization, NLO evolution, heavy-flavor
+treatment and fitted correlations remain inputs. The quoted experimental
+precision is not total theory uncertainty; a PDF is not an observed gluon
+count. The author's scale definitions are retained alongside the reversed
+labels in a table caption.
+
+The existing lattice calculations retain their actual models: pure SU(2),
+two-flavor SU(3) with external static sources, and calibrated isospin-symmetric
+2+1-flavor SU(3). Their Euclidean loops, mixing and spectra do not give a
+physical gluon mass or real-time hadron formation history. Scale evolution is
+distinct from time evolution. Formal sector choices supply no measured
+necessary arising order, original 0.4/0.6 weights, one-carrier minima or
+universal SOMA process classification. General confinement, self-organization
+and broader running-coupling claims keep their separate scopes.
 
 ## Bipartite states and Bell tests
 

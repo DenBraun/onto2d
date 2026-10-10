@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.09.4`: 1218 records, 997 connections,
-1304 claims and 395 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.10.2`: 1235 records, 1018 connections,
+1328 claims and 398 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -36,6 +36,14 @@ Electron-proton scattering and hydrogen evidence retain their specified systems;
 lepton classification does not imply absence of hadronic scattering or establish
 atom formation. Existing precision and neutrino results retain their shared-data,
 radiative and flavor/mass-basis limitations.
+Gluon self-coupling terms are explicit formal definitions. SLD spin-sensitive
+shapes, OPAL color-factor fits and H1 DIS scaling evidence distinguish selected
+readouts, corrections and conditional interpretations. Their model choices,
+shared inputs and source discrepancies remain visible. The gluon distribution
+is scheme-dependent; fitted color factors do not image an elementary vertex.
+Lattice examples retain their specific theories and Euclidean scope. Neither
+formal terms nor these results establish universal process classification,
+confinement, temporal emergence or carrier-count minima.
 Capture spectroscopy keeps its two campaigns, crystal calibration, recoil and
 external atomic-mass input explicit; recalibration reuses the original data.
 LIONTRAP distinguishes original acquisition, experimental reanalysis,

@@ -6,6 +6,22 @@ const data = await loadCanonicalSource();
 const claim = (d, id) => d.graph.claims.find((c) => c.id === id);
 const entity = (d, id) => d.graph.entities.find((e) => e.id === id);
 
+test("physics comparisons reject duplicate IDs before indexing displayed records", () => {
+  for (const id of ["sld1997-vector-scalar-tensor", "h1-2001-heavy-flavor-prescription"]) {
+    for (const placement of ["before", "after"]) {
+      const changed = structuredClone(data);
+      const index = changed.physics.comparisons.findIndex((record) => record.id === id);
+      assert.notEqual(index, -1);
+      const duplicate = structuredClone(changed.physics.comparisons[index]);
+      duplicate.discriminator = "A complete independent measurement of every gluon property.";
+      duplicate.limit = "No model, correction or uncertainty conditions apply.";
+      changed.physics.comparisons.splice(index + (placement === "after" ? 1 : 0), 0, duplicate);
+      assert.throws(() => validateCanonicalSource(changed), /Duplicate physics comparison IDs/,
+        `${id}: an unreviewed duplicate ${placement} the reviewed record must not be displayed`);
+    }
+  }
+});
+
 test("LIONTRAP reanalysis preserves shared acquisition and distinct controls", () => {
   rejects([
     ["reanalysis becomes a new primary experiment", (d) => { d.physics.studies.find((s) => s.id === "liontrap2019-reanalysis").studyType = "primary-experiment"; }],
