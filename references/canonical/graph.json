@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.10.3",
+    "version": "2026.10.10.4",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Lepton charge, chirality and flavor conventions remain separate from species-specific evidence. Belle infers the tau mean lifetime from paired reconstructed proper lengths; Borexino bounds one electron-decay channel with detector response and external background inputs. Neither result establishes universal lepton stability. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Gluon self-coupling has an explicit gauge-sector convention. SLD spin-sensitive shapes, OPAL color-factor fits and H1 scaling-violation analyses separate measured distributions, correction models and conditional inferences. Field labels and scale evolution supply no universal process, temporal arising order or carrier threshold. Entanglement uses declared subsystem partitions: regulated scalar-region entropy, independent photonic Bell evidence and a selected teleportation protocol retain separate criteria. Correlation, Bell nonlocality, local reduced states and communication are distinct; no temporal firstness or elementary-particle minimum is inferred.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Lepton charge, chirality and flavor conventions remain separate from species-specific evidence. Belle infers the tau mean lifetime from paired reconstructed proper lengths; Borexino bounds one electron-decay channel with detector response and external background inputs. Neither result establishes universal lepton stability. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Gluon self-coupling has an explicit gauge-sector convention. SLD spin-sensitive shapes, OPAL color-factor fits and H1 scaling-violation analyses separate measured distributions, correction models and conditional inferences. Field labels and scale evolution supply no universal process, temporal arising order or carrier threshold. Entanglement uses declared subsystem partitions: regulated scalar-region entropy, independent photonic Bell evidence and a selected teleportation protocol retain separate criteria. Correlation, Bell nonlocality, local reduced states and communication are distinct; no temporal firstness or elementary-particle minimum is inferred. Confinement criteria separate unscreened pure-gauge area laws, dynamical-quark static screening and scoped hadronic interpretations. Two-plus-one-flavor screening retains its finite nonphysical ensemble; independent material and collider fractional-charge searches constrain different preparations, not universal free-color absence. None of these results derives nuclear or atomic stability.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "830bbc3d02562724e83577b08157c01643305daa2641d485aeae5db44a5d40a3",
+      "sha256": "d9f550a64ca2921efe228fe7a31a4495e7c1815a1f26d0b9c91aa656cde55906",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6663,18 +6663,21 @@
       ],
       "year": 1979,
       "doi": "10.1016/0370-2693(79)90830-X",
-      "url": "https://lib-extopc.kek.jp/preprints/PDF/1979/7909/7909123.pdf",
+      "url": "https://www-library.desy.de/preparch/desy/postpr/1979/desy79-053.pdf",
       "path": null,
       "sha256": null,
       "review": {
-        "extent": "full-primary-author-report",
+        "extent": "full-primary-author-report-and-published-article",
         "locators": [
           "DESY 79/53, PDF page 4: printed pages 2-3, selection and jet definitions",
           "DESY 79/53, PDF pages 5-6: printed pages 4-7, transverse broadening and planarity tests",
           "DESY 79/53, PDF page 7: printed pages 8-9, three-jet interpretation and conclusion",
-          "DESY 79/53, PDF pages 9-15: captions and Figures 1-6"
+          "DESY 79/53, PDF pages 9-15: captions and Figures 1-6",
+          "Published pages 244-245: PETRA charged-track selection, detector simulation checks, jet axes and transverse broadening",
+          "Published pages 246-248, Figures 3-6: charged-momentum tensor, planarity selection and collinear-fragmentation comparisons",
+          "Published pages 248-249, Figure 6 and conclusion: three-jet interpretation and deferred quantitative QCD comparison"
         ],
-        "limit": "DESY 79/53 (August 1979), the public 15-page KEK scan linked by the DESY report catalogue, read in full; Figures 1-6 and selection/count passages visually checked. Journal identity and abstract checked against the publisher and DESY record 322261; the restricted journal PDF was not read or compared line by line. Locators refer to the report. Detector Monte Carlo, event tracks and reported significance are not independently reproduced."
+        "limit": "The full 15-page DESY 79/53 author report (https://lib-extopc.kek.jp/preprints/PDF/1979/7909/7909123.pdf) and the open DESY copy of the final published article, pages 243-249, have been read. Report and published locators identify their respective versions. Published pages 246-247 and 249 were visually checked; a line-by-line comparison of the two versions is not supplied. Detector Monte Carlo, event tracks, significance and the deferred quantitative first-order QCD comparison are not independently reproduced."
       }
     },
     {
@@ -6731,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "5e577b279fb3affde0cab3480cd4c86282d000eeac7f3609daaa4be4dbeadf98",
+      "sha256": "dc60cfad768e98afb9e562e29bb4658aac0ea64c60f95c44aae5f1b99ed016b6",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -7340,9 +7343,10 @@
         "locators": [
           "Published pages 012002-1 to 012002-6, Sections I-III: electric-charge readout, oil preparation, integer-peak calibration and trajectory covariance; Equations 1-11 and Table I",
           "Published pages 012002-6 to 012002-8, Section IV: selection, final sample, centered and modulo-one residuals, null result and reported limit; Table II, Figures 7-9 and Equations 12-16",
-          "Published pages 012002-1 and 012002-9, abstract, Introduction and Section V A: quoted charge window and abundance limit, material-processing restriction and limits of comparison; Table III"
+          "Published pages 012002-1 and 012002-9, abstract, Introduction and Section V A: quoted charge window and abundance limit, material-processing restriction and limits of comparison; Table III",
+          "Author arXiv:hep-ex/0204003v2 pages 1 and 6-10, Tables I-III and Section IV B: sample, overlapping cuts, residual-window inconsistency and reported confidence bound"
         ],
-        "limit": "Complete published ten-page article read, including appendix and references; pages 1, 5-6 and 8-9 visually checked. Figure 9 labels a modulo-one distribution q_c although the text defines q_r. The abstract/Introduction and Section IV B give different charge windows for the same upper limit; only their common 0.18-0.82 window is admitted for the reported bound. Raw trajectories, selection and confidence-limit normalization have not been independently reproduced."
+        "limit": "Complete published ten-page article read, including appendix and references; pages 1, 5-6 and 8-9 visually checked. Figure 9 labels a modulo-one distribution q_c although the text defines q_r. The abstract/Introduction and Section IV B give different charge windows for the same upper limit; only their common 0.18-0.82 window is admitted for the reported bound. Raw trajectories, selection and confidence-limit normalization have not been independently reproduced. Author v2 pages 1 and 6-10 were rechecked, with Tables II-III visually checked: cut totals differ from the published values retained here, and no explicit confidence construction is supplied. The author version does not replace the selected published sample."
       }
     },
     {
@@ -9257,7 +9261,7 @@
           "arXiv:hep-ex/9805029v1 pages 18-23 and 25-28, Sections 4.2-4.4, Figures 7 and 11, Tables 6-7: decay reconstruction, efficiency/normalization corrections and inclusive spectra",
           "arXiv:hep-ex/9805029v1 page 46, Section 7 and Table 16, all-flavor column for K0, K*0, phi and Lambda: measured-range integrals and model-dependent extrapolation"
         ],
-        "limit": "Selected passages of the 24 May 1998 author v1 were read; Tables 6, 7 and 16 were visually inspected. The arXiv record identifies Physical Review D59, 052001 (1999). The publisher PDF and the complete 61-page analysis were not reviewed. Only the inclusive reconstructed K0/K0bar, Lambda/Lambdabar, K*0/K*0bar and phi results are admitted. Flavor-tagged spectra, leading-particle asymmetries and charged pi/K/p results are outside this block."
+        "limit": "Selected passages of the 24 May 1998 author v1 were read; Tables 6, 7 and 16 were visually inspected. The arXiv record identifies Physical Review D59, 052001 (1999). The publisher PDF and the complete 62-page analysis were not reviewed. Only the inclusive reconstructed K0/K0bar, Lambda/Lambdabar, K*0/K*0bar and phi results are admitted. Flavor-tagged spectra, leading-particle asymmetries and charged pi/K/p results are outside this block."
       }
     },
     {
@@ -10731,6 +10735,57 @@
           "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation"
         ],
         "limit": "Read all five published pages, PRL 80, 1121-1125, including the Appendix; visually checked pages 1122-1125, formulas and Figures 1-3. The sole arXiv v1 posting is identified in metadata, but its text is not substituted for the published article. Upstream apparatus papers and event records are not independently reviewed. No acquisition, uncertainty or channel reconstruction is replayed."
+      }
+    },
+    {
+      "id": "bulava2019-string-breaking",
+      "kind": "research-publication",
+      "title": "String breaking by light and strange quarks in QCD",
+      "authors": [
+        "John Bulava",
+        "Ben Hörz",
+        "Francesco Knechtli",
+        "Vanessa Koch",
+        "Graham Moir",
+        "Colin Morningstar",
+        "Mike Peardon"
+      ],
+      "year": 2019,
+      "doi": "10.1016/j.physletb.2019.05.018",
+      "url": "https://findresearcher.sdu.dk/ws/portalfiles/portal/154786868/1_s2.0_S0370269319303284_main.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-published-article",
+        "locators": [
+          "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction",
+          "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations",
+          "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits"
+        ],
+        "limit": "Read all six published pages 493-498 in the SDU copy (PDF pages 2-7 after its cover); visually checked Equations 1-10, Table 1 and Figures 1-3 on pages 494-496. The quarkonium illustration is not admitted. Ensemble generation, adopted scale, upstream methods, configurations, correlators and analysis code are not independently reproduced. This is the 2019 single-ensemble result, not a review of later mass-dependence studies."
+      }
+    },
+    {
+      "id": "cms2013-fcp",
+      "kind": "research-publication",
+      "title": "Search for fractionally charged particles in pp collisions at sqrt(s) = 7 TeV",
+      "authors": [
+        "CMS Collaboration"
+      ],
+      "year": 2013,
+      "doi": "10.1103/PhysRevD.87.092008",
+      "url": "https://arxiv.org/abs/1210.2311v2",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-scientific-body",
+        "locators": [
+          "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection",
+          "Author v2 printed pages 1-3 and 5-9, Sections 2-4 and 6, Tables 1 and 3: modified Drell-Yan signal, detector response and mass/charge-dependent efficiency",
+          "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion",
+          "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions"
+        ],
+        "limit": "Read author v2 printed pages 1-11, including the complete scientific body and references; the collaboration roster is not evidence. Visually checked the selection, background formula, Tables 1-3 and Figure 3. ArXiv identifies v2 as replaced with the published version. No event records, detector simulation or CLs construction are replayed; this selected historical search is not a current-limit census."
       }
     }
   ],
@@ -33616,6 +33671,12 @@
           "locator": "Published pages 012002-6 to 012002-8, Section IV: selection, final sample, centered and modulo-one residuals, null result and reported limit; Table II, Figures 7-9 and Equations 12-16",
           "role": "method",
           "note": "Support is restricted to the declared theoretical model, computational ensemble or measured preparation."
+        },
+        {
+          "sourceId": "lee2002",
+          "locator": "Author arXiv:hep-ex/0204003v2 pages 1 and 6-10, Tables I-III and Section IV B: sample, overlapping cuts, residual-window inconsistency and reported confidence bound",
+          "role": "limits",
+          "note": "The author version is checked separately; source-version and confidence-normalization limits remain explicit."
         }
       ],
       "checkIds": [],
@@ -33624,7 +33685,8 @@
         "The complete trajectory fit retains the negative covariance between consecutive velocity estimates caused by shared position measurements. The central residual peak has width approximately 0.021 in units of e.",
         "Table I gives 3,377,477 drops and 12.1 mg in set 1, and 13,430,167 drops and 58.0 mg in set 2. Section IV B identifies the final sample after cuts; do not subtract the reported rejection fractions again.",
         "Selection restricts charge magnitude, charge error, trajectory fit, vertical velocity, horizontal position and interdrop separation. Table II joint rejections are 21.0% and 9.4%; individual cuts overlap and their percentages cannot be added.",
-        "The observable is electric charge in processed silicone oil, not color charge. Raw trajectories, hourly calibrations and acceptance have not been independently replayed."
+        "The observable is electric charge in processed silicone oil, not color charge. Raw trajectories, hourly calibrations and acceptance have not been independently replayed.",
+        "Author v2 Table II gives joint rejections 22.3% and 8.7%, differing from the selected published values 21.0% and 9.4%. These versions are not mixed to recompute the final 70.1 mg sample or acceptance."
       ],
       "contextIds": [
         "lee2002"
@@ -33750,6 +33812,12 @@
           "locator": "Published pages 012002-6 to 012002-8, Section IV: selection, final sample, centered and modulo-one residuals, null result and reported limit; Table II, Figures 7-9 and Equations 12-16",
           "role": "supports",
           "note": "Support is restricted to the declared theoretical model, computational ensemble or measured preparation."
+        },
+        {
+          "sourceId": "lee2002",
+          "locator": "Author arXiv:hep-ex/0204003v2 pages 1 and 6-10, Tables I-III and Section IV B: sample, overlapping cuts, residual-window inconsistency and reported confidence bound",
+          "role": "limits",
+          "note": "The author version is checked separately; source-version and confidence-normalization limits remain explicit."
         }
       ],
       "checkIds": [],
@@ -33760,7 +33828,8 @@
         "Selection restricts charge magnitude, charge error, trajectory fit, vertical velocity, horizontal position and interdrop separation. Table II joint rejections are 21.0% and 9.4%; individual cuts overlap and their percentages cannot be added.",
         "The observable is electric charge in processed silicone oil, not color charge. Raw trajectories, hourly calibrations and acceptance have not been independently replayed.",
         "Section IV B reports no accepted drop farther than 0.15 e from the nearest integer, with no background subtraction. The modulo-one gap is described as 0.15-0.85; the narrower 0.18-0.82 interval is used for the admitted published bound.",
-        "The earlier 17.4 mg experiment contained an anomalous drop that this search did not confirm. These samples are not pooled, and the earlier event is not established to be an artifact."
+        "The earlier 17.4 mg experiment contained an anomalous drop that this search did not confirm. These samples are not pooled, and the earlier event is not established to be an artifact.",
+        "Author v2 Table II gives joint rejections 22.3% and 8.7%, differing from the selected published values 21.0% and 9.4%. These versions are not mixed to recompute the final 70.1 mg sample or acceptance."
       ],
       "contextIds": [
         "lee2002"
@@ -33778,6 +33847,12 @@
           "locator": "Published pages 012002-1 and 012002-9, abstract, Introduction and Section V A: quoted charge window and abundance limit, material-processing restriction and limits of comparison; Table III",
           "role": "supports",
           "note": "Support is restricted to the declared theoretical model, computational ensemble or measured preparation."
+        },
+        {
+          "sourceId": "lee2002",
+          "locator": "Author arXiv:hep-ex/0204003v2 pages 1 and 6-10, Tables I-III and Section IV B: sample, overlapping cuts, residual-window inconsistency and reported confidence bound",
+          "role": "limits",
+          "note": "The author version is checked separately; source-version and confidence-normalization limits remain explicit."
         }
       ],
       "checkIds": [],
@@ -33785,7 +33860,8 @@
         "Report the published 95% confidence upper limit of 1.17 x 10^-22 particles per nucleon only for 0.18<=q_r<=0.82 in the analyzed silicone oil. Non-detection is not proof of zero abundance.",
         "The abstract and Introduction give the 0.18-0.82 window, whereas Section IV B assigns the same limit to 0.15-0.85. The observed gap and the admitted confidence-limit window remain distinct.",
         "The confidence construction and effective-exposure normalization have not been independently reproduced. The quoted mass and zero count alone do not recover the printed limit under a simple unit-efficiency Poisson model; no unreported efficiency or replacement limit is invented.",
-        "Processing may remove fractional-charge particles and their natural concentration is unknown. The authors expressly restrict generalization to other materials; this bound does not establish universal color confinement or the absence of every isolated quark species."
+        "Processing may remove fractional-charge particles and their natural concentration is unknown. The authors expressly restrict generalization to other materials; this bound does not establish universal color confinement or the absence of every isolated quark species.",
+        "The reviewed author v2 also states the bound without a confidence-construction formula or effective-exposure prescription. Its Table III caption quotes 6.4 x 10^20 nucleons per milligram; that printed conversion is not adopted to reconstruct the bound."
       ],
       "contextIds": [
         "lee2002"
@@ -33867,6 +33943,12 @@
           "locator": "Published pages 012002-6 to 012002-8, Section IV: selection, final sample, centered and modulo-one residuals, null result and reported limit; Table II, Figures 7-9 and Equations 12-16",
           "role": "method",
           "note": "The reviewed methods and result passage supplies the correlated readout and fitting context."
+        },
+        {
+          "sourceId": "lee2002",
+          "locator": "Author arXiv:hep-ex/0204003v2 pages 1 and 6-10, Tables I-III and Section IV B: sample, overlapping cuts, residual-window inconsistency and reported confidence bound",
+          "role": "limits",
+          "note": "The author version is checked separately; source-version and confidence-normalization limits remain explicit."
         }
       ],
       "checkIds": [],
@@ -33874,7 +33956,8 @@
         "Report the published 95% confidence upper limit of 1.17 x 10^-22 particles per nucleon only for 0.18<=q_r<=0.82 in the analyzed silicone oil. Non-detection is not proof of zero abundance.",
         "The abstract and Introduction give the 0.18-0.82 window, whereas Section IV B assigns the same limit to 0.15-0.85. The observed gap and the admitted confidence-limit window remain distinct.",
         "The confidence construction and effective-exposure normalization have not been independently reproduced. The quoted mass and zero count alone do not recover the printed limit under a simple unit-efficiency Poisson model; no unreported efficiency or replacement limit is invented.",
-        "Processing may remove fractional-charge particles and their natural concentration is unknown. The authors expressly restrict generalization to other materials; this bound does not establish universal color confinement or the absence of every isolated quark species."
+        "Processing may remove fractional-charge particles and their natural concentration is unknown. The authors expressly restrict generalization to other materials; this bound does not establish universal color confinement or the absence of every isolated quark species.",
+        "The reviewed author v2 also states the bound without a confidence-construction formula or effective-exposure prescription. Its Table III caption quotes 6.4 x 10^20 nucleons per milligram; that printed conversion is not adopted to reconstruct the bound."
       ],
       "contextIds": [
         "lee2002"
@@ -57224,6 +57307,616 @@
       "contextIds": [
         "boschi1998-teleportation-inference"
       ]
+    },
+    {
+      "id": "D-phys-confinement-criteria",
+      "kind": "review-finding",
+      "statement": "Confinement is specified relative to a theory and observable. In an unscreened pure-gauge theory, asymptotic fundamental Wilson-loop area behavior defines a static string-tension criterion. With dynamical quarks, the reviewed Euclidean static-source spectra instead include mixing and screening by color-singlet meson pairs. The QCD interpretation of hadronic final states is a separate phenomenological statement, not an equivalent finite-loop test or a proof that separation energy grows without bound.",
+      "scope": "Declared zero-temperature or low-temperature/vacuum static-source and hadronic regimes only; separate the unscreened pure-gauge criterion from dynamical-quark screening and scattering interpretations.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "creutz1980",
+          "locator": "Section III, pages 2311-2312: classical matching, fundamental Wilson loops, fixed-tension renormalization and coupling limits; Equations 3.1-3.24",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "wilson1974",
+          "locator": "Sections V-VI, pages 2455-2459: weak-coupling and continuum-limit obligations; correlation length versus lattice spacing",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "bali2005",
+          "locator": "Author report hep-lat/0505012v2, Sections IV-V A, pages 14-19: implicit mixing, Wilson-loop null result, spectral fits and basis convention; Figures 10-14, Table I and Equations 66-82",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "bali2005",
+          "locator": "Author report hep-lat/0505012v2, Section V B, pages 19-20: avoided crossing, mixing-angle parametrization and minimum-gap fit; Figures 15-17 and Equations 85-93",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction",
+          "role": "supports",
+          "note": "The reviewed two-plus-one-flavor calculation explicitly includes a static-strange pair channel; its finite-ensemble limitations remain separate."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection",
+          "role": "limits",
+          "note": "The fractional electric-charge search assumes a color-singlet signal; it cannot supply a free-color absence test."
+        },
+        {
+          "sourceId": "nuclear-energetics-verifier",
+          "locator": "verify(): bare-state Q, exact shared-binding cancellation, rounded neutron comparison, adjusted mass-pair covariance and display-rounding sign check",
+          "role": "limits",
+          "note": "The existing finite bare-deuteron energy check excludes one declared beta-breakup channel only; it is not a general nuclear or atomic stability result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A criterion must declare the gauge theory, dynamical matter, state or temperature regime, operator, separation/time limits and regulator. Pure-gauge fundamental Wilson-loop area law, screened static-source energies with dynamical quarks and phenomenological color-singlet final states are not interchangeable definitions.",
+        "The area-law criterion takes large contours and static-source limits in an unscreened theory. Wilson strong-coupling surfaces and Creutz finite SU(2) loops do not prove continuum SU(3) confinement with physical quark masses. Their finite-volume, finite-loop and extrapolation restrictions remain explicit.",
+        "Pair creation in the reviewed dynamical-quark calculations permits color-singlet static-light or static-strange channels. The screened ground-state energy need not grow indefinitely with separation. A metastable string branch, an operator overlap and the true ground state are different quantities; Euclidean mixing energies do not measure real-time hadronization rates.",
+        "Source card 1.31 supplies possible nonperturbative formulations, including a chosen lattice action and operator basis; it is not an observed universal organization stage. Source card 1.30 supplies a renormalization prescription and scale, not physical elapsed time or a demonstrated temporal maintenance cause. Source card 1.3 supplies the non-Abelian gluon sector within QCD, not an independently measured universal maintenance arrow.",
+        "The original parent weights 0.55, 0.20 and 0.25, N_min=N_crit=1 elementary-particle counts, necessary-parent labels, TypeRole/SOMA phase placement and macro-to-micro causal story are unsupported. They have no active scientific semantics. Classification as a regime-level pattern is descriptive, not a verified universal phase sequence or material carrier.",
+        "The excluded universal downward constraint from source card 1.15 remains excluded. No intervention, closed effective dynamics or universal generating rule is established by the static-source results.",
+        "Electrical fractional-charge bounds constrain a declared material or particle search. Electric charge is not color charge; a null result cannot establish absence of all free colored objects. In particular, the CMS fractional-charge benchmark explicitly uses color-singlet particles.",
+        "Color-singlet tensor algebra is a representation constraint, not a dynamical formation proof. Asymptotic freedom concerns ultraviolet running and does not prove the infrared criterion. The high-temperature phase diagram, physical-point continuum completion and a mathematical all-channel confinement theorem are outside this admission.",
+        "No universal nuclear or atomic stability follows from the definition or the selected hadron results. Nuclear binding, decay channels and electromagnetic atomic binding require distinct systems and inputs; the existing deuteron beta threshold excludes one specified bare-nucleus breakup channel, not all decays, nuclei or atomic states."
+      ]
+    },
+    {
+      "id": "C-phys-confinement-evidence-boundary",
+      "kind": "review-finding",
+      "statement": "The calibrated Durr light-hadron spectrum, TASSO charged-track jet interpretation and SLD reconstructed neutral-hadron yields are consistent with their stated QCD/hadronic descriptions. They test selected masses, event shapes and decay-reconstructed production observables under distinct assumptions. Together they delimit the phenomenological use of confinement; they do not form a single all-channel exclusion of free color or a derivation of nuclear and atomic stability.",
+      "scope": "Bounded cross-study interpretation of existing Durr, TASSO and flavor-inclusive SLD neutral-hadron records, preserving their separate preparations.",
+      "status": "literature-synthesis",
+      "citations": [
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "tasso1979",
+          "locator": "Published pages 248-249, Figure 6 and conclusion: three-jet interpretation and deferred quantitative QCD comparison",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "tasso1979",
+          "locator": "Published pages 246-248, Figures 3-6: charged-momentum tensor, planarity selection and collinear-fragmentation comparisons",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "sld1999-neutral-production",
+          "locator": "arXiv:hep-ex/9805029v1 pages 18-23 and 25-28, Sections 4.2-4.4, Figures 7 and 11, Tables 6-7: decay reconstruction, efficiency/normalization corrections and inclusive spectra",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "sld1999-neutral-production",
+          "locator": "arXiv:hep-ex/9805029v1 page 46, Section 7 and Table 16, all-flavor column for K0, K*0, phi and Lambda: measured-range integrals and model-dependent extrapolation",
+          "role": "supports",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a literature synthesis of already admitted records, not a new acquisition, a combined likelihood, a measured confidence level or an independent replication. The different calculations and experiments retain their own preparations and discriminators; they are not pooled.",
+        "The Durr spectrum uses two-plus-one-flavor isospin-symmetric QCD without QED. Pion/kaon masses and a Xi or Omega mass calibrate parameters; the two normalizations reuse configurations. Agreement in selected remaining channels, conditional on finite-volume, chiral and continuum treatment, is not a test of every color channel, a real-time formation history or a lifetime measurement.",
+        "TASSO uses selected charged tracks, detector/fragmentation assumptions and a specified collinear two-jet comparison. Planarity and the hard-gluon interpretation do not provide a complete final-state census, a free stable gluon observation or a universal confinement theorem.",
+        "SLD neutral-hadron results reconstruct specified decay channels through acceptance, branching and background models. Full-range totals reuse the measured spectra with fragmentation-model extrapolation; their shared normalization and covariance are retained. Reconstructed parents and daughters are not disjoint stable end products or feed-down-subtracted primary populations.",
+        "Neither a selected hadron spectrum nor inclusive jet/decay yields uniquely identify a microscopic hadronization mechanism or prove the absence of all colored final states. Fractional electric-charge searches are a distinct inference and are not pooled with these hadronic records.",
+        "Hadronic consistency does not establish stable nuclear matter or atomic structures. The admitted nuclear capture, mass and deuteron-threshold records have separate calibration and channel limits. Their bounded results do not supply an all-channel stability proof; atomic electronic binding lies outside the QCD-only spectrum."
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "M-phys-confinement-evidence-boundary",
+      "kind": "method",
+      "statement": "Interpret each admitted mass, event-shape or neutral-hadron production result within its own calculation, detector and inference contract; compare their scopes without combining data, likelihoods or significance. The confinement definition supplies a domain boundary, not an additional observation.",
+      "scope": "Bounded cross-study interpretation of existing Durr, TASSO and flavor-inclusive SLD neutral-hadron records, preserving their separate preparations.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands",
+          "role": "method",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "tasso1979",
+          "locator": "Published pages 248-249, Figure 6 and conclusion: three-jet interpretation and deferred quantitative QCD comparison",
+          "role": "method",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "tasso1979",
+          "locator": "Published pages 246-248, Figures 3-6: charged-momentum tensor, planarity selection and collinear-fragmentation comparisons",
+          "role": "limits",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "sld1999-neutral-production",
+          "locator": "arXiv:hep-ex/9805029v1 pages 18-23 and 25-28, Sections 4.2-4.4, Figures 7 and 11, Tables 6-7: decay reconstruction, efficiency/normalization corrections and inclusive spectra",
+          "role": "method",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        },
+        {
+          "sourceId": "sld1999-neutral-production",
+          "locator": "arXiv:hep-ex/9805029v1 page 46, Section 7 and Table 16, all-flavor column for K0, K*0, phi and Lambda: measured-range integrals and model-dependent extrapolation",
+          "role": "method",
+          "note": "Support is limited to the stated model, preparation and inference; this synthesis is not a new experiment."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a literature synthesis of already admitted records, not a new acquisition, a combined likelihood, a measured confidence level or an independent replication. The different calculations and experiments retain their own preparations and discriminators; they are not pooled.",
+        "The Durr spectrum uses two-plus-one-flavor isospin-symmetric QCD without QED. Pion/kaon masses and a Xi or Omega mass calibrate parameters; the two normalizations reuse configurations. Agreement in selected remaining channels, conditional on finite-volume, chiral and continuum treatment, is not a test of every color channel, a real-time formation history or a lifetime measurement.",
+        "TASSO uses selected charged tracks, detector/fragmentation assumptions and a specified collinear two-jet comparison. Planarity and the hard-gluon interpretation do not provide a complete final-state census, a free stable gluon observation or a universal confinement theorem.",
+        "SLD neutral-hadron results reconstruct specified decay channels through acceptance, branching and background models. Full-range totals reuse the measured spectra with fragmentation-model extrapolation; their shared normalization and covariance are retained. Reconstructed parents and daughters are not disjoint stable end products or feed-down-subtracted primary populations.",
+        "Neither a selected hadron spectrum nor inclusive jet/decay yields uniquely identify a microscopic hadronization mechanism or prove the absence of all colored final states. Fractional electric-charge searches are a distinct inference and are not pooled with these hadronic records.",
+        "Hadronic consistency does not establish stable nuclear matter or atomic structures. The admitted nuclear capture, mass and deuteron-threshold records have separate calibration and channel limits. Their bounded results do not supply an all-channel stability proof; atomic electronic binding lies outside the QCD-only spectrum."
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "M-phys-bulava2019-ensemble-context",
+      "kind": "method",
+      "statement": "Use the N200 CLS ensemble with Nf=2+1 nonperturbatively O(a)-improved Wilson sea quarks, 128 x 48^3 sites, m_pi=280 MeV and m_K=460 MeV. Open temporal boundaries restrict measurements to the central half. Wilson loops on 1664 configurations are averaged into 104 bins aligned with the 104-configuration subset carrying light/strange propagators. The adopted spacing is a=0.06426(76) fm.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is one finite lattice and mass point: light quarks are heavier and the strange quark lighter than in nature. No physical-mass, continuum or infinite-volume extrapolation is supplied.",
+        "The configurations, bins and propagator subset are shared inputs, not independent experiments. The quoted lattice scale is adopted from reference 29; its upstream determination is not replayed."
+      ],
+      "contextIds": [
+        "bulava2019-ensemble"
+      ]
+    },
+    {
+      "id": "M-phys-bulava2019-spectral-context",
+      "kind": "method",
+      "statement": "For external static Q and Qbar at fixed separation, combine a string interpolator, an I=0 two-static-light-meson interpolator and a two-static-strange-meson interpolator in the Sigma_g^+ sector after heavy-spin decoupling. Two string smearings (15 and 20 levels) make the variational matrix 4 x 4. HYP2 links and stochastic LapH quark propagators supply the correlators. With t0/a=5 and td/a=10, the fixed GEVP rotation gives C_hat_nn(t); correlated single-exponential fits to C_hat_nn(t)/C_B(t)^2 extract V_n(r)-2E_B.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The three physical channels in Equation 3 are not the four-operator numerical basis or four observed energy levels. Operator overlaps and smearing do not measure particle populations.",
+        "Subtracting twice the static-light energy removes the common divergent static-source mass contribution. The zero is a reference threshold, not an absolute static-quark mass.",
+        "The paper uses 800 bootstrap resamples and one fixed covariance estimate for these exponential fits. Basis/time variations probe residual excited-state effects; omitted states and the full correlator/covariance analysis are not independently reconstructed."
+      ],
+      "contextIds": [
+        "bulava2019-spectrum"
+      ]
+    },
+    {
+      "id": "C-phys-bulava2019-relative-spectrum",
+      "kind": "review-finding",
+      "statement": "Figures 1-2 report the lowest three relative static energies V_n(r)-2E_B, n=0,1,2. They display light- and strange-channel avoided crossings; beyond the breaking region the ground level approaches the two-static-light threshold. The separately estimated two-static-strange threshold is 2E_Bs-2E_B=0.028(5)/a=85(16) MeV. Off-axis separations resolve the narrow strange-channel mixing region.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction",
+          "role": "supports",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations",
+          "role": "supports",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits",
+          "role": "supports",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These are fitted Euclidean energies from one shared computational ensemble, with reported one-sigma bootstrap errors, not independent detector events or a locally reproduced numerical spectrum.",
+        "Threshold saturation describes screening of external sources by color-singlet meson pairs. It supplies no isolated colored asymptotic particle, real-time pair-production rate or proof of continuum confinement. A rising unbroken-string branch is not indefinite growth of the screened ground-state energy."
+      ],
+      "contextIds": [
+        "bulava2019-spectrum"
+      ]
+    },
+    {
+      "id": "M-phys-bulava2019-mixing-context",
+      "kind": "method",
+      "statement": "Fit the three extracted levels over 11<=r/a<=25 to eigenvalues of H(r)=[[V_hat0+sigma*r,g1,g2],[g1,E_hat1,0],[g2,0,E_hat2]], using an uncorrelated six-parameter fit. E_hat1, E_hat2, g1 and g2 are constant in r. Define r_c by V_hat0+sigma*r_c=E_hat1 and r_cs by V_hat0+sigma*r_cs=E_hat2; these are diagonal-branch crossing conventions.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This model fit is distinct from the preceding correlated exponential fits. Its basis convention sets direct light-pair/strange-pair mixing to zero; the energy spectrum alone cannot identify that matrix element as a physical absence of interaction.",
+        "The fitted diagonal constants approximate asymptotic levels; they are not replacements for the separately estimated two-meson thresholds. The linear string branch is fitted near breaking, not a small-distance potential or the full screened ground state.",
+        "A minimum of V_1-V_0 need not exist here. These distances cannot be substituted for the Bali two-flavor minimum-gap definition to infer sea-quark-mass dependence. No real-time decay width follows from g1 or g2."
+      ],
+      "contextIds": [
+        "bulava2019-mixing"
+      ]
+    },
+    {
+      "id": "C-phys-bulava2019-string-breaking-scales",
+      "kind": "review-finding",
+      "statement": "The three-state fit reports a*E_hat1=0.0019(2), a*E_hat2=0.0262(6), a*g1=0.0154(4), a*g2=0.0080(5), a^2*sigma=0.0229(3) and a*V_hat0=-0.434(5). Under its diagonal-crossing definition, r_c/a=19.053(82) and r_cs/a=20.114(87), converted to 1.224(15) fm and 1.293(16) fm using a=0.06426(76) fm.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits",
+          "role": "supports",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The quoted physical-distance errors include the adopted scale uncertainty; all levels, model parameters and distances reuse the same ensemble and fits. Rounded parameter values do not reproduce the fit or its covariance.",
+        "These are conditional 2019 single-ensemble scales, not universal confinement radii, particle-number minima or physical-mass/continuum predictions. The source does not provide a nuclear/atomic stability derivation, real-time string-breaking rate or unrestricted hadron-formation mechanism."
+      ],
+      "contextIds": [
+        "bulava2019-mixing"
+      ]
+    },
+    {
+      "id": "M-phys-bulava2019-relative-spectrum",
+      "kind": "method",
+      "statement": "The N200 sampling and extended static string/light/strange operator basis, followed by the stated variational ratio fits, define the three relative energy estimates and screening interpretation.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Publication-reported Euclidean calculation; no local ensemble, correlator, bootstrap or energy-fit replay."
+      ],
+      "contextIds": [
+        "bulava2019-spectrum"
+      ]
+    },
+    {
+      "id": "M-phys-bulava2019-string-breaking-scales",
+      "kind": "method",
+      "statement": "The relative spectrum and the declared three-state model define the fitted parameters and crossing distances; the adopted N200 spacing supplies the physical-unit conversion.",
+      "scope": "Publication-reported static-source energies and three-state interpretation on the single Nf=2+1 CLS N200 ensemble.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits",
+          "role": "method",
+          "note": "Supports this ensemble, extraction or conditional model result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The model and scale are explicit inputs. The distances are not additional experiments or minima of the observed ground-to-first energy gap."
+      ],
+      "contextIds": [
+        "bulava2019-mixing"
+      ]
+    },
+    {
+      "id": "M-phys-cms2013-fcp-acquisition-context",
+      "kind": "method",
+      "statement": "The search uses 5.0 fb^-1 of CMS pp collisions at sqrt(s)=7 TeV recorded in 2011. Single-muon triggering requires reconstructed pT>40 GeV and |eta|<2.1. Offline tracks matched to muon detectors require reconstructed pT>45 GeV, |eta|<1.5, track quality and isolation, at least six tracker ionization measurements including two pixel measurements, and collision-time/impact-parameter cuts.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Momentum is reconstructed assuming unit electric charge: pT_reco=pT_true/|q|. The 40 GeV trigger corresponds to about 27 GeV for |q|=2/3 and 13 GeV for |q|=1/3; the selected tracks are not an unbiased sample of produced particles.",
+        "The 80<m_LL<100 GeV two-candidate region is excluded from the search sample and used in a separate control selection. One-candidate events remain; events with more than two candidates are excluded.",
+        "This collider acquisition is distinct from Lee silicone oil. Other analyses of the 2011 CMS running period are not automatically independent replications; no samples or significances are pooled."
+      ],
+      "contextIds": [
+        "cms2013-fcp-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-cms2013-fcp-response-context",
+      "kind": "method",
+      "statement": "The benchmark is pair-produced spin-1/2 particles with electric charges +/-e/3 or +/-2e/3, singlets under SU(3)c and SU(2)L, assumed not to decay within the detector. Modified Drell-Yan photon/Z production is simulated with PYTHIA 6.422, leading-order CTEQ6L1 parton distributions and GEANT4 detector response for masses 100-600 GeV. At least six retained tracker measurements with dE/dx<2 MeV/cm define the signal region.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3 and 5-9, Sections 2-4 and 6, Tables 1 and 3: modified Drell-Yan signal, detector response and mass/charge-dependent efficiency",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Low ionization and finite hit thresholds make trigger, reconstruction and selected velocity distributions charge- and mass-dependent. Table 3 gives event efficiencies at 100 GeV of 0.341 +/- 0.026 for |q|=2/3 and 0.041 +/- 0.007 for |q|=1/3; neither is a universal charge acceptance.",
+        "Sensor-edge measurements are removed. Signal-region optimization uses simulated 100 and 400 GeV samples; simulated signal efficiencies are distinct from the data-driven background prediction.",
+        "Table 1 reports total signal-efficiency systematic uncertainties of 8% for |q|=2/3 and 18% for |q|=1/3. No simulation, nuisance covariance or detector response is independently reconstructed.",
+        "The benchmark particles have no QCD color charge. Detector-scale survival is assumed, not a measured lifetime or permanent stability; the result is not a search for arbitrary free colored quarks."
+      ],
+      "contextIds": [
+        "cms2013-fcp-response"
+      ]
+    },
+    {
+      "id": "M-phys-cms2013-fcp-inference-context",
+      "kind": "method",
+      "statement": "Cosmic-ray control selections with inverted impact parameters predict 0.007 +/- 0.006 events. A scaled Z-peak control sample is fitted in zero-to-five low-ionization measurements using a generalized binomial form and extrapolated to the signal region, predicting 0.005 +/- 0.004 pp events. The reported total is 0.012 +/- 0.007. The paper uses CLs for 95% production-cross-section upper limits and compares them with the benchmark leading-order cross section to obtain mass exclusions.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The extrapolation assumes that the control-sample ionization statistics describe the selected collision background; alternative functions, fitted-parameter uncertainty and search/control differences contribute to its uncertainty. Cosmic background is separately constrained.",
+        "The 2.2% luminosity uncertainty and charge-dependent signal-efficiency systematics accompany the background estimate. The paper identifies the CLs criterion but a local likelihood, nuisance treatment and confidence-calibration replay are not supplied.",
+        "The background prediction is not an observed fractional-charge count. A cross-section limit depends on selection and efficiency; a mass exclusion additionally depends on the specified production model."
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "C-phys-cms2013-fcp-selected-count",
+      "kind": "review-finding",
+      "statement": "CMS reports zero events in the signal region containing a selected track with at least six retained tracker measurements below 2 MeV/cm. Figure 2 also reports no search-sample track with five or more such measurements. This is the selected event count before a subtraction of the predicted 0.012 +/- 0.007 background.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion",
+          "role": "supports",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The observed event count and the number of low-ionization measurements on a track are different quantities. The absence of tracks with five or more measurements is not a replacement for the predefined six-measurement signal region.",
+        "The null is restricted to the trigger, reconstruction and event selection; it does not establish zero abundance or an absence of all fractional or color-charged particles."
+      ],
+      "contextIds": [
+        "cms2013-fcp-acquisition"
+      ]
+    },
+    {
+      "id": "C-phys-cms2013-fcp-limits",
+      "kind": "review-finding",
+      "statement": "For the stated detector-stable spin-1/2 SU(3)c/SU(2)L-singlet benchmark, CMS reports 95% CLs cross-section upper limits over masses 100-600 GeV: 1.7-2.3 fb for |q|=2/3 and 14-5.4 fb for |q|=1/3. Comparing with its modified Drell-Yan prediction excludes benchmark masses below 310 GeV and 140 GeV, respectively, at the reported 95% confidence level.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3 and 5-9, Sections 2-4 and 6, Tables 1 and 3: modified Drell-Yan signal, detector response and mass/charge-dependent efficiency",
+          "role": "supports",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion",
+          "role": "supports",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions",
+          "role": "supports",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The quoted ranges and charge ordering are retained as reported. The mass thresholds are model-conditional exclusions, not fitted particle masses, a lifetime measurement or model-independent limits at arbitrary charges.",
+        "The observed and expected curves in Figure 3 overlap in this zero-event search; they are not independent measurements or replications. No CLs or interpolation replay is claimed.",
+        "Lee constrains particles retained in processed silicone oil; CMS constrains collider production and acceptance for different hypotheses. These bounds are not pooled, converted into a common abundance, or treated as direct evidence of QCD color confinement."
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "M-phys-cms2013-fcp-selected-count",
+      "kind": "method",
+      "statement": "The observed count uses the specified trigger, track and low-ionization event selection; simulated efficiency is not an observed event.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "No detector, background-fit or confidence-limit replay is claimed."
+      ],
+      "contextIds": [
+        "cms2013-fcp-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-cms2013-fcp-limits",
+      "kind": "method",
+      "statement": "The selected count, exposure, signal response and control-sample background enter the published CLs interpretation; benchmark production supplies the additional mass conversion.",
+      "scope": "Fractional electric-charge searches in a selected silicone-oil sample and a specified CMS collider benchmark",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3 and 5-9, Sections 2-4 and 6, Tables 1 and 3: modified Drell-Yan signal, detector response and mass/charge-dependent efficiency",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions",
+          "role": "method",
+          "note": "Supports the stated selection, response or conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "No detector, background-fit or confidence-limit replay is claimed."
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
+      ]
     }
   ],
   "entities": [
@@ -78317,7 +79010,7 @@
         }
       ],
       "openObligations": [
-        "Extend only with reviewed evidence matching the stated model, preparation, observable and inference. No universal carrier count, generative ordering or downward causal constraint follows from this record."
+        "The modulo-one electric-charge residual is distinct from the centered residual and from QCD color charge."
       ]
     },
     {
@@ -78365,7 +79058,8 @@
         }
       ],
       "openObligations": [
-        "Extend only with reviewed evidence matching the stated model, preparation, observable and inference. No universal carrier count, generative ordering or downward causal constraint follows from this record."
+        "Author v2 Table II gives joint rejections 22.3% and 8.7%, differing from the selected published values 21.0% and 9.4%. These versions are not mixed to recompute the final 70.1 mg sample or acceptance.",
+        "The final sample already follows the overlapping cuts; raw trajectories and calibrations are not replayed."
       ]
     },
     {
@@ -78469,7 +79163,7 @@
         }
       ],
       "openObligations": [
-        "Extend only with reviewed evidence matching the stated model, preparation, observable and inference. No universal carrier count, generative ordering or downward causal constraint follows from this record."
+        "Keep the observed 0.15-0.85 gap distinct from the admitted 0.18-0.82 confidence-limit window; the earlier anomalous drop is neither pooled nor proved spurious."
       ]
     },
     {
@@ -78489,7 +79183,8 @@
         }
       ],
       "openObligations": [
-        "Extend only with reviewed evidence matching the stated model, preparation, observable and inference. No universal carrier count, generative ordering or downward causal constraint follows from this record."
+        "The reviewed author v2 also states the bound without a confidence-construction formula or effective-exposure prescription. Its Table III caption quotes 6.4 x 10^20 nucleons per milligram; that printed conversion is not adopted to reconstruct the bound.",
+        "The reported bound applies to the stated processed-oil sample and charge window; no universal abundance or color-confinement theorem follows."
       ]
     },
     {
@@ -90855,6 +91550,368 @@
         "The quoted uncertainty is retained as reported, without an independently reconstructed statistical/systematic decomposition or significance. It is not a fidelity claim for every input state or an all-trials detection-loophole-free test.",
         "This result uses the same two-photon apparatus and passive verification; it does not establish active recovery of an external unknown input, faster-than-classical communication or independent replication by the fringe illustrations."
       ]
+    },
+    {
+      "id": "phys:confinement-criteria",
+      "name": "Confinement criteria and their domains",
+      "kind": "definition",
+      "description": "Confinement is specified relative to a theory and observable. In an unscreened pure-gauge theory, asymptotic fundamental Wilson-loop area behavior defines a static string-tension criterion. With dynamical quarks, the reviewed Euclidean static-source spectra instead include mixing and screening by color-singlet meson pairs. The QCD interpretation of hadronic final states is a separate phenomenological statement, not an equivalent finite-loop test or a proof that separation energy grows without bound.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "creutz1980",
+          "locator": "Section III, pages 2311-2312: classical matching, fundamental Wilson loops, fixed-tension renormalization and coupling limits; Equations 3.1-3.24"
+        },
+        {
+          "sourceId": "wilson1974",
+          "locator": "Sections V-VI, pages 2455-2459: weak-coupling and continuum-limit obligations; correlation length versus lattice spacing"
+        },
+        {
+          "sourceId": "bali2005",
+          "locator": "Author report hep-lat/0505012v2, Sections IV-V A, pages 14-19: implicit mixing, Wilson-loop null result, spectral fits and basis convention; Figures 10-14, Table I and Equations 66-82"
+        },
+        {
+          "sourceId": "bali2005",
+          "locator": "Author report hep-lat/0505012v2, Section V B, pages 19-20: avoided crossing, mixing-angle parametrization and minimum-gap fit; Figures 15-17 and Equations 85-93"
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices"
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions"
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction"
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection"
+        },
+        {
+          "sourceId": "nuclear-energetics-verifier",
+          "locator": "verify(): bare-state Q, exact shared-binding cancellation, rounded neutron comparison, adjusted mass-pair covariance and display-rounding sign check"
+        }
+      ],
+      "openObligations": [
+        "A criterion must declare the gauge theory, dynamical matter, state or temperature regime, operator, separation/time limits and regulator. Pure-gauge fundamental Wilson-loop area law, screened static-source energies with dynamical quarks and phenomenological color-singlet final states are not interchangeable definitions.",
+        "The area-law criterion takes large contours and static-source limits in an unscreened theory. Wilson strong-coupling surfaces and Creutz finite SU(2) loops do not prove continuum SU(3) confinement with physical quark masses. Their finite-volume, finite-loop and extrapolation restrictions remain explicit.",
+        "Pair creation in the reviewed dynamical-quark calculations permits color-singlet static-light or static-strange channels. The screened ground-state energy need not grow indefinitely with separation. A metastable string branch, an operator overlap and the true ground state are different quantities; Euclidean mixing energies do not measure real-time hadronization rates.",
+        "Source card 1.31 supplies possible nonperturbative formulations, including a chosen lattice action and operator basis; it is not an observed universal organization stage. Source card 1.30 supplies a renormalization prescription and scale, not physical elapsed time or a demonstrated temporal maintenance cause. Source card 1.3 supplies the non-Abelian gluon sector within QCD, not an independently measured universal maintenance arrow.",
+        "The original parent weights 0.55, 0.20 and 0.25, N_min=N_crit=1 elementary-particle counts, necessary-parent labels, TypeRole/SOMA phase placement and macro-to-micro causal story are unsupported. They have no active scientific semantics. Classification as a regime-level pattern is descriptive, not a verified universal phase sequence or material carrier.",
+        "The excluded universal downward constraint from source card 1.15 remains excluded. No intervention, closed effective dynamics or universal generating rule is established by the static-source results.",
+        "Electrical fractional-charge bounds constrain a declared material or particle search. Electric charge is not color charge; a null result cannot establish absence of all free colored objects. In particular, the CMS fractional-charge benchmark explicitly uses color-singlet particles.",
+        "Color-singlet tensor algebra is a representation constraint, not a dynamical formation proof. Asymptotic freedom concerns ultraviolet running and does not prove the infrared criterion. The high-temperature phase diagram, physical-point continuum completion and a mathematical all-channel confinement theorem are outside this admission.",
+        "No universal nuclear or atomic stability follows from the definition or the selected hadron results. Nuclear binding, decay channels and electromagnetic atomic binding require distinct systems and inputs; the existing deuteron beta threshold excludes one specified bare-nucleus breakup channel, not all decays, nuclei or atomic states."
+      ]
+    },
+    {
+      "id": "phys:confinement-evidence-boundary",
+      "name": "Hadronic evidence and confinement limits",
+      "kind": "scoped-process",
+      "description": "The calibrated Durr light-hadron spectrum, TASSO charged-track jet interpretation and SLD reconstructed neutral-hadron yields are consistent with their stated QCD/hadronic descriptions. They test selected masses, event shapes and decay-reconstructed production observables under distinct assumptions. Together they delimit the phenomenological use of confinement; they do not form a single all-channel exclusion of free color or a derivation of nuclear and atomic stability.",
+      "claimIds": [
+        "C-phys-confinement-evidence-boundary"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits"
+        },
+        {
+          "sourceId": "tasso1979",
+          "locator": "Published pages 248-249, Figure 6 and conclusion: three-jet interpretation and deferred quantitative QCD comparison"
+        },
+        {
+          "sourceId": "tasso1979",
+          "locator": "Published pages 246-248, Figures 3-6: charged-momentum tensor, planarity selection and collinear-fragmentation comparisons"
+        },
+        {
+          "sourceId": "sld1999-neutral-production",
+          "locator": "arXiv:hep-ex/9805029v1 pages 18-23 and 25-28, Sections 4.2-4.4, Figures 7 and 11, Tables 6-7: decay reconstruction, efficiency/normalization corrections and inclusive spectra"
+        },
+        {
+          "sourceId": "sld1999-neutral-production",
+          "locator": "arXiv:hep-ex/9805029v1 page 46, Section 7 and Table 16, all-flavor column for K0, K*0, phi and Lambda: measured-range integrals and model-dependent extrapolation"
+        }
+      ],
+      "openObligations": [
+        "This is a literature synthesis of already admitted records, not a new acquisition, a combined likelihood, a measured confidence level or an independent replication. The different calculations and experiments retain their own preparations and discriminators; they are not pooled.",
+        "The Durr spectrum uses two-plus-one-flavor isospin-symmetric QCD without QED. Pion/kaon masses and a Xi or Omega mass calibrate parameters; the two normalizations reuse configurations. Agreement in selected remaining channels, conditional on finite-volume, chiral and continuum treatment, is not a test of every color channel, a real-time formation history or a lifetime measurement.",
+        "TASSO uses selected charged tracks, detector/fragmentation assumptions and a specified collinear two-jet comparison. Planarity and the hard-gluon interpretation do not provide a complete final-state census, a free stable gluon observation or a universal confinement theorem.",
+        "SLD neutral-hadron results reconstruct specified decay channels through acceptance, branching and background models. Full-range totals reuse the measured spectra with fragmentation-model extrapolation; their shared normalization and covariance are retained. Reconstructed parents and daughters are not disjoint stable end products or feed-down-subtracted primary populations.",
+        "Neither a selected hadron spectrum nor inclusive jet/decay yields uniquely identify a microscopic hadronization mechanism or prove the absence of all colored final states. Fractional electric-charge searches are a distinct inference and are not pooled with these hadronic records.",
+        "Hadronic consistency does not establish stable nuclear matter or atomic structures. The admitted nuclear capture, mass and deuteron-threshold records have separate calibration and channel limits. Their bounded results do not supply an all-channel stability proof; atomic electronic binding lies outside the QCD-only spectrum."
+      ]
+    },
+    {
+      "id": "phys:bulava2019-ensemble-context",
+      "name": "Bulava N200 static-source ensemble",
+      "kind": "context",
+      "description": "Use the N200 CLS ensemble with Nf=2+1 nonperturbatively O(a)-improved Wilson sea quarks, 128 x 48^3 sites, m_pi=280 MeV and m_K=460 MeV. Open temporal boundaries restrict measurements to the central half. Wilson loops on 1664 configurations are averaged into 104 bins aligned with the 104-configuration subset carrying light/strange propagators. The adopted spacing is a=0.06426(76) fm.",
+      "claimIds": [
+        "M-phys-bulava2019-ensemble-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction"
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits"
+        }
+      ],
+      "openObligations": [
+        "This is one finite lattice and mass point: light quarks are heavier and the strange quark lighter than in nature. No physical-mass, continuum or infinite-volume extrapolation is supplied.",
+        "The configurations, bins and propagator subset are shared inputs, not independent experiments. The quoted lattice scale is adopted from reference 29; its upstream determination is not replayed."
+      ]
+    },
+    {
+      "id": "phys:bulava2019-spectral-context",
+      "name": "Bulava variational static-energy extraction",
+      "kind": "context",
+      "description": "For external static Q and Qbar at fixed separation, combine a string interpolator, an I=0 two-static-light-meson interpolator and a two-static-strange-meson interpolator in the Sigma_g^+ sector after heavy-spin decoupling. Two string smearings (15 and 20 levels) make the variational matrix 4 x 4. HYP2 links and stochastic LapH quark propagators supply the correlators. With t0/a=5 and td/a=10, the fixed GEVP rotation gives C_hat_nn(t); correlated single-exponential fits to C_hat_nn(t)/C_B(t)^2 extract V_n(r)-2E_B.",
+      "claimIds": [
+        "M-phys-bulava2019-spectral-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction"
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations"
+        }
+      ],
+      "openObligations": [
+        "The three physical channels in Equation 3 are not the four-operator numerical basis or four observed energy levels. Operator overlaps and smearing do not measure particle populations.",
+        "Subtracting twice the static-light energy removes the common divergent static-source mass contribution. The zero is a reference threshold, not an absolute static-quark mass.",
+        "The paper uses 800 bootstrap resamples and one fixed covariance estimate for these exponential fits. Basis/time variations probe residual excited-state effects; omitted states and the full correlator/covariance analysis are not independently reconstructed."
+      ]
+    },
+    {
+      "id": "phys:bulava2019-relative-spectrum",
+      "name": "Bulava light and strange screening spectrum",
+      "kind": "scoped-process",
+      "description": "Figures 1-2 report the lowest three relative static energies V_n(r)-2E_B, n=0,1,2. They display light- and strange-channel avoided crossings; beyond the breaking region the ground level approaches the two-static-light threshold. The separately estimated two-static-strange threshold is 2E_Bs-2E_B=0.028(5)/a=85(16) MeV. Off-axis separations resolve the narrow strange-channel mixing region.",
+      "claimIds": [
+        "C-phys-bulava2019-relative-spectrum"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 493-495, Sections 1-3, Equations 1-6 and Table 1: static sources, operator basis, N200 ensemble, sampling and spectral extraction"
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations"
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits"
+        }
+      ],
+      "openObligations": [
+        "These are fitted Euclidean energies from one shared computational ensemble, with reported one-sigma bootstrap errors, not independent detector events or a locally reproduced numerical spectrum.",
+        "Threshold saturation describes screening of external sources by color-singlet meson pairs. It supplies no isolated colored asymptotic particle, real-time pair-production rate or proof of continuum confinement. A rising unbroken-string branch is not indefinite growth of the screened ground-state energy."
+      ]
+    },
+    {
+      "id": "phys:bulava2019-mixing-context",
+      "name": "Bulava three-state mixing model",
+      "kind": "context",
+      "description": "Fit the three extracted levels over 11<=r/a<=25 to eigenvalues of H(r)=[[V_hat0+sigma*r,g1,g2],[g1,E_hat1,0],[g2,0,E_hat2]], using an uncorrelated six-parameter fit. E_hat1, E_hat2, g1 and g2 are constant in r. Define r_c by V_hat0+sigma*r_c=E_hat1 and r_cs by V_hat0+sigma*r_cs=E_hat2; these are diagonal-branch crossing conventions.",
+      "claimIds": [
+        "M-phys-bulava2019-mixing-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published page 495, Section 3 and Figure 1: three relative energy levels, two-meson thresholds and variational limitations"
+        },
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits"
+        }
+      ],
+      "openObligations": [
+        "This model fit is distinct from the preceding correlated exponential fits. Its basis convention sets direct light-pair/strange-pair mixing to zero; the energy spectrum alone cannot identify that matrix element as a physical absence of interaction.",
+        "The fitted diagonal constants approximate asymptotic levels; they are not replacements for the separately estimated two-meson thresholds. The linear string branch is fitted near breaking, not a small-distance potential or the full screened ground state.",
+        "A minimum of V_1-V_0 need not exist here. These distances cannot be substituted for the Bali two-flavor minimum-gap definition to infer sea-quark-mass dependence. No real-time decay width follows from g1 or g2."
+      ]
+    },
+    {
+      "id": "phys:bulava2019-string-breaking-scales",
+      "name": "Bulava conditional string-breaking scales",
+      "kind": "scoped-process",
+      "description": "The three-state fit reports a*E_hat1=0.0019(2), a*E_hat2=0.0262(6), a*g1=0.0154(4), a*g2=0.0080(5), a^2*sigma=0.0229(3) and a*V_hat0=-0.434(5). Under its diagonal-crossing definition, r_c/a=19.053(82) and r_cs/a=20.114(87), converted to 1.224(15) fm and 1.293(16) fm using a=0.06426(76) fm.",
+      "claimIds": [
+        "C-phys-bulava2019-string-breaking-scales"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "bulava2019-string-breaking",
+          "locator": "Published pages 495-497, Section 4, Equations 7-10 and Figures 2-3; Section 5: three-state fit, crossing-distance convention, scale and physical limits"
+        }
+      ],
+      "openObligations": [
+        "The quoted physical-distance errors include the adopted scale uncertainty; all levels, model parameters and distances reuse the same ensemble and fits. Rounded parameter values do not reproduce the fit or its covariance.",
+        "These are conditional 2019 single-ensemble scales, not universal confinement radii, particle-number minima or physical-mass/continuum predictions. The source does not provide a nuclear/atomic stability derivation, real-time string-breaking rate or unrestricted hadron-formation mechanism."
+      ]
+    },
+    {
+      "id": "phys:cms2013-fcp-acquisition-context",
+      "name": "CMS fractionally charged search preparation",
+      "kind": "context",
+      "description": "The search uses 5.0 fb^-1 of CMS pp collisions at sqrt(s)=7 TeV recorded in 2011. Single-muon triggering requires reconstructed pT>40 GeV and |eta|<2.1. Offline tracks matched to muon detectors require reconstructed pT>45 GeV, |eta|<1.5, track quality and isolation, at least six tracker ionization measurements including two pixel measurements, and collision-time/impact-parameter cuts.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection"
+        }
+      ],
+      "openObligations": [
+        "Momentum is reconstructed assuming unit electric charge: pT_reco=pT_true/|q|. The 40 GeV trigger corresponds to about 27 GeV for |q|=2/3 and 13 GeV for |q|=1/3; the selected tracks are not an unbiased sample of produced particles.",
+        "The 80<m_LL<100 GeV two-candidate region is excluded from the search sample and used in a separate control selection. One-candidate events remain; events with more than two candidates are excluded.",
+        "This collider acquisition is distinct from Lee silicone oil. Other analyses of the 2011 CMS running period are not automatically independent replications; no samples or significances are pooled."
+      ]
+    },
+    {
+      "id": "phys:cms2013-fcp-response-context",
+      "name": "CMS low-ionization signal response",
+      "kind": "context",
+      "description": "The benchmark is pair-produced spin-1/2 particles with electric charges +/-e/3 or +/-2e/3, singlets under SU(3)c and SU(2)L, assumed not to decay within the detector. Modified Drell-Yan photon/Z production is simulated with PYTHIA 6.422, leading-order CTEQ6L1 parton distributions and GEANT4 detector response for masses 100-600 GeV. At least six retained tracker measurements with dE/dx<2 MeV/cm define the signal region.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3, Sections 1-4: signal quantum numbers and lifetime assumption, 2011 acquisition, unit-charge momentum convention and event selection"
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3 and 5-9, Sections 2-4 and 6, Tables 1 and 3: modified Drell-Yan signal, detector response and mass/charge-dependent efficiency"
+        }
+      ],
+      "openObligations": [
+        "Low ionization and finite hit thresholds make trigger, reconstruction and selected velocity distributions charge- and mass-dependent. Table 3 gives event efficiencies at 100 GeV of 0.341 +/- 0.026 for |q|=2/3 and 0.041 +/- 0.007 for |q|=1/3; neither is a universal charge acceptance.",
+        "Sensor-edge measurements are removed. Signal-region optimization uses simulated 100 and 400 GeV samples; simulated signal efficiencies are distinct from the data-driven background prediction.",
+        "Table 1 reports total signal-efficiency systematic uncertainties of 8% for |q|=2/3 and 18% for |q|=1/3. No simulation, nuisance covariance or detector response is independently reconstructed.",
+        "The benchmark particles have no QCD color charge. Detector-scale survival is assumed, not a measured lifetime or permanent stability; the result is not a search for arbitrary free colored quarks."
+      ]
+    },
+    {
+      "id": "phys:cms2013-fcp-inference-context",
+      "name": "CMS fractional-charge limit inference",
+      "kind": "context",
+      "description": "Cosmic-ray control selections with inverted impact parameters predict 0.007 +/- 0.006 events. A scaled Z-peak control sample is fitted in zero-to-five low-ionization measurements using a generalized binomial form and extrapolated to the signal region, predicting 0.005 +/- 0.004 pp events. The reported total is 0.012 +/- 0.007. The paper uses CLs for 95% production-cross-section upper limits and compares them with the benchmark leading-order cross section to obtain mass exclusions.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion"
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions"
+        }
+      ],
+      "openObligations": [
+        "The extrapolation assumes that the control-sample ionization statistics describe the selected collision background; alternative functions, fitted-parameter uncertainty and search/control differences contribute to its uncertainty. Cosmic background is separately constrained.",
+        "The 2.2% luminosity uncertainty and charge-dependent signal-efficiency systematics accompany the background estimate. The paper identifies the CLs criterion but a local likelihood, nuisance treatment and confidence-calibration replay are not supplied.",
+        "The background prediction is not an observed fractional-charge count. A cross-section limit depends on selection and efficiency; a mass exclusion additionally depends on the specified production model."
+      ]
+    },
+    {
+      "id": "phys:cms2013-fcp-selected-count",
+      "name": "CMS selected fractional-charge candidate count",
+      "kind": "scoped-process",
+      "description": "CMS reports zero events in the signal region containing a selected track with at least six retained tracker measurements below 2 MeV/cm. Figure 2 also reports no search-sample track with five or more such measurements. This is the selected event count before a subtraction of the predicted 0.012 +/- 0.007 background.",
+      "claimIds": [
+        "C-phys-cms2013-fcp-selected-count"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion"
+        }
+      ],
+      "openObligations": [
+        "The observed event count and the number of low-ionization measurements on a track are different quantities. The absence of tracks with five or more measurements is not a replacement for the predefined six-measurement signal region.",
+        "The null is restricted to the trigger, reconstruction and event selection; it does not establish zero abundance or an absence of all fractional or color-charged particles."
+      ]
+    },
+    {
+      "id": "phys:cms2013-fcp-limits",
+      "name": "CMS conditional fractional-charge limits",
+      "kind": "scoped-process",
+      "description": "For the stated detector-stable spin-1/2 SU(3)c/SU(2)L-singlet benchmark, CMS reports 95% CLs cross-section upper limits over masses 100-600 GeV: 1.7-2.3 fb for |q|=2/3 and 14-5.4 fb for |q|=1/3. Comparing with its modified Drell-Yan prediction excludes benchmark masses below 310 GeV and 140 GeV, respectively, at the reported 95% confidence level.",
+      "claimIds": [
+        "C-phys-cms2013-fcp-limits"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 1-3 and 5-9, Sections 2-4 and 6, Tables 1 and 3: modified Drell-Yan signal, detector response and mass/charge-dependent efficiency"
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 4-8, Sections 5-7, Figure 2 and Table 2: disjoint control selection, background extrapolation, zero selected events and CLs criterion"
+        },
+        {
+          "sourceId": "cms2013-fcp",
+          "locator": "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions"
+        }
+      ],
+      "openObligations": [
+        "The quoted ranges and charge ordering are retained as reported. The mass thresholds are model-conditional exclusions, not fitted particle masses, a lifetime measurement or model-independent limits at arbitrary charges.",
+        "The observed and expected curves in Figure 3 overlap in this zero-event search; they are not independent measurements or replications. No CLs or interpolation replay is claimed.",
+        "Lee constrains particles retained in processed silicone oil; CMS constrains collider production and acceptance for different hypotheses. These bounds are not pooled, converted into a common abundance, or treated as direct evidence of QCD color confinement."
+      ]
     }
   ],
   "rules": [
@@ -95345,7 +96402,7 @@
       "target": "phys:lee-charge-null",
       "kind": "descriptive",
       "role": "measurement-context",
-      "assertion": "The reported output or inference depends on this declared context, observable or model; no physical generative necessity is asserted.",
+      "assertion": "The selected oil-drop preparation and calibrated trajectory readout supply the observed electric-charge distribution.",
       "claimIds": [
         "M-phys-lee2002-context"
       ],
@@ -95359,7 +96416,7 @@
       "target": "phys:lee-charge-null",
       "kind": "descriptive",
       "role": "measurement-context",
-      "assertion": "The reported output or inference depends on this declared context, observable or model; no physical generative necessity is asserted.",
+      "assertion": "The centered and modulo-one residual definitions identify the integer peaks and intervening observed gap; neither residual denotes QCD color charge.",
       "claimIds": [
         "M-phys-lee2002-context"
       ],
@@ -95373,7 +96430,7 @@
       "target": "phys:lee-abundance-limit",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The reported output or inference depends on this declared context, observable or model; no physical generative necessity is asserted.",
+      "assertion": "The selected null distribution supplies the observational input to the published sample-conditional bound; the confidence normalization is not independently reconstructed.",
       "claimIds": [
         "M-phys-lee-abundance-limit"
       ],
@@ -105366,6 +106423,325 @@
       ],
       "contextIds": [
         "boschi1998-teleportation-inference"
+      ]
+    },
+    {
+      "id": "physics:qcd-confinement-criteria",
+      "source": "phys:qcd",
+      "target": "phys:confinement-criteria",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The gauge group and matter content specify which confinement question is being asked.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "id": "physics:lattice-gauge-formulation-confinement-criteria",
+      "source": "phys:lattice-gauge-formulation",
+      "target": "phys:confinement-criteria",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "A chosen regulator and action define a nonperturbative calculation, not a universally necessary temporal stage.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "id": "physics:static-string-tension-confinement-criteria",
+      "source": "phys:static-string-tension",
+      "target": "phys:confinement-criteria",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The asymptotic area-law specification supplies the unscreened static-source criterion.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "id": "physics:static-light-string-basis-confinement-criteria",
+      "source": "phys:static-light-string-basis",
+      "target": "phys:confinement-criteria",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The reviewed variational extraction of screening uses the declared string and meson-pair operator sectors.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "id": "physics:qcd-renormalization-scale-confinement-criteria",
+      "source": "phys:qcd-renormalization-scale",
+      "target": "phys:confinement-criteria",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "A renormalization convention defines the coupling scale; it is not elapsed time or a maintenance process.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "id": "physics:gluon-self-coupling-confinement-criteria",
+      "source": "phys:gluon-self-coupling",
+      "target": "phys:confinement-criteria",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Non-Abelian gauge interactions belong to the QCD model specification; they do not certify a universal causal parent weight.",
+      "claimIds": [
+        "D-phys-confinement-criteria"
+      ]
+    },
+    {
+      "id": "physics:confinement-criteria-confinement-evidence-boundary",
+      "source": "phys:confinement-criteria",
+      "target": "phys:confinement-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared criteria restrict the interpretation of these hadronic results without equating them to an area-law or free-color null test.",
+      "claimIds": [
+        "M-phys-confinement-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "physics:durr-hadron-spectrum-confinement-evidence-boundary",
+      "source": "phys:durr-hadron-spectrum",
+      "target": "phys:confinement-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The calibrated selected spectrum contributes its QCD consistency result with the same mass inputs and extrapolation limits.",
+      "claimIds": [
+        "M-phys-confinement-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "physics:tasso-gluon-interpretation-confinement-evidence-boundary",
+      "source": "phys:tasso-gluon-interpretation",
+      "target": "phys:confinement-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The charged-track jet interpretation contributes a conditional comparison with the specified fragmentation alternative.",
+      "claimIds": [
+        "M-phys-confinement-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "physics:sld1999-neutral-yields-confinement-evidence-boundary",
+      "source": "phys:sld1999-neutral-yields",
+      "target": "phys:confinement-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The selected decay-reconstructed spectra contribute their detector, branching and common-normalization boundaries.",
+      "claimIds": [
+        "M-phys-confinement-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "physics:sld1999-neutral-totals-confinement-evidence-boundary",
+      "source": "phys:sld1999-neutral-totals",
+      "target": "phys:confinement-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The full-range totals contribute only a dependent model extrapolation of the same SLD spectra.",
+      "claimIds": [
+        "M-phys-confinement-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "tasso1979",
+        "sld1999-neutral-acquisition",
+        "sld1999-neutral-extrapolation"
+      ]
+    },
+    {
+      "id": "physics:bulava2019-ensemble-context-bulava2019-relative-spectrum",
+      "source": "phys:bulava2019-ensemble-context",
+      "target": "phys:bulava2019-relative-spectrum",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared common ensemble and aligned correlation-function sampling supply this finite-lattice spectrum.",
+      "claimIds": [
+        "M-phys-bulava2019-relative-spectrum"
+      ],
+      "contextIds": [
+        "bulava2019-spectrum"
+      ]
+    },
+    {
+      "id": "physics:bulava2019-spectral-context-bulava2019-relative-spectrum",
+      "source": "phys:bulava2019-spectral-context",
+      "target": "phys:bulava2019-relative-spectrum",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The four-operator rotation and correlated ratio fits extract energies relative to twice the static-light meson energy.",
+      "claimIds": [
+        "M-phys-bulava2019-relative-spectrum"
+      ],
+      "contextIds": [
+        "bulava2019-spectrum"
+      ]
+    },
+    {
+      "id": "physics:static-light-string-basis-bulava2019-relative-spectrum",
+      "source": "phys:static-light-string-basis",
+      "target": "phys:bulava2019-relative-spectrum",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The static string/two-light-meson construction is extended here by a strange-meson pair and a second string smearing; the old two-flavor spectrum is not reused as numerical input.",
+      "claimIds": [
+        "M-phys-bulava2019-relative-spectrum"
+      ],
+      "contextIds": [
+        "bulava2019-spectrum"
+      ]
+    },
+    {
+      "id": "physics:bulava2019-relative-spectrum-bulava2019-string-breaking-scales",
+      "source": "phys:bulava2019-relative-spectrum",
+      "target": "phys:bulava2019-string-breaking-scales",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The same three extracted levels are inputs to the later six-parameter model fit.",
+      "claimIds": [
+        "M-phys-bulava2019-string-breaking-scales"
+      ],
+      "contextIds": [
+        "bulava2019-mixing"
+      ]
+    },
+    {
+      "id": "physics:bulava2019-mixing-context-bulava2019-string-breaking-scales",
+      "source": "phys:bulava2019-mixing-context",
+      "target": "phys:bulava2019-string-breaking-scales",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared model and diagonal-crossing convention define these conditional scales.",
+      "claimIds": [
+        "M-phys-bulava2019-string-breaking-scales"
+      ],
+      "contextIds": [
+        "bulava2019-mixing"
+      ]
+    },
+    {
+      "id": "physics:bulava2019-ensemble-context-bulava2019-string-breaking-scales",
+      "source": "phys:bulava2019-ensemble-context",
+      "target": "phys:bulava2019-string-breaking-scales",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The adopted N200 spacing and its uncertainty convert fitted lattice-unit distances to femtometres.",
+      "claimIds": [
+        "M-phys-bulava2019-string-breaking-scales"
+      ],
+      "contextIds": [
+        "bulava2019-mixing"
+      ]
+    },
+    {
+      "id": "physics:cms2013-fcp-acquisition-context-cms2013-fcp-selected-count",
+      "source": "phys:cms2013-fcp-acquisition-context",
+      "target": "phys:cms2013-fcp-selected-count",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The exposure and trigger/track cuts define the events included in the observed count.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-selected-count"
+      ],
+      "contextIds": [
+        "cms2013-fcp-acquisition"
+      ]
+    },
+    {
+      "id": "physics:cms2013-fcp-response-context-cms2013-fcp-selected-count",
+      "source": "phys:cms2013-fcp-response-context",
+      "target": "phys:cms2013-fcp-selected-count",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared low-ionization readout and signal-region definition specify the selected count; simulated signal efficiencies do not generate observed events.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-selected-count"
+      ],
+      "contextIds": [
+        "cms2013-fcp-acquisition"
+      ]
+    },
+    {
+      "id": "physics:cms2013-fcp-acquisition-context-cms2013-fcp-limits",
+      "source": "phys:cms2013-fcp-acquisition-context",
+      "target": "phys:cms2013-fcp-limits",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The 5.0 fb^-1 exposure and selected event preparation enter the production-limit interpretation.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-limits"
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "physics:cms2013-fcp-response-context-cms2013-fcp-limits",
+      "source": "phys:cms2013-fcp-response-context",
+      "target": "phys:cms2013-fcp-limits",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Charge- and mass-dependent event efficiencies connect a candidate production cross section to the expected selected signal; the benchmark prediction additionally supplies the mass exclusion.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-limits"
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "physics:cms2013-fcp-inference-context-cms2013-fcp-limits",
+      "source": "phys:cms2013-fcp-inference-context",
+      "target": "phys:cms2013-fcp-limits",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The control-sample background and published CLs construction supply the conditional confidence interpretation.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-limits"
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "physics:cms2013-fcp-selected-count-cms2013-fcp-limits",
+      "source": "phys:cms2013-fcp-selected-count",
+      "target": "phys:cms2013-fcp-limits",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The same observed zero count enters the reported limits; the limits are not a new acquisition.",
+      "claimIds": [
+        "M-phys-cms2013-fcp-limits"
+      ],
+      "contextIds": [
+        "cms2013-fcp-inference"
       ]
     }
   ]

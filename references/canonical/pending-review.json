@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/7",
-      "title": "Confinement"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/17",
       "title": "Neutrino Oscillations"
     },

@@ -23,13 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 178 remain on the
+graph. Of the 249 original source cards, 177 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-71 cards is a source-review census, not a percentage of scientifically supported
+72 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
+Eleven Level-1 cards remain pending.
 
-The current graph contains 1249 records, 1035 connections, 1347 claims and 403 sources.
+The current graph contains 1261 records, 1058 connections, 1364 claims and 405 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -141,8 +142,8 @@ belong to the current claims.
    and conditional lifetime interpretation. Universal stable carriers, a
    chronological confinement stage and original weights/minima are excluded.
    Full scattering and width analyses remain unreproduced; their reported
-   discrepancies and source limits stay explicit. General confinement remains
-   a separate open card.
+   discrepancies and source limits stay explicit. Confinement criteria and evidence
+   retain the separate qualified scope of card 1.7.
    Card 1.2 is qualified to lepton charge, chirality and flavor conventions,
    species-specific scattering and decay evidence, and a bounded electron role
    in hydrogen. Belle's paired proper-length fit supplies a tau mean lifetime;
@@ -167,13 +168,21 @@ belong to the current claims.
    applications require their own criteria. The selected entropy computation,
    Bell acquisition/calibration and teleportation response analyses remain
    unreproduced; their published results retain their declared scope.
-   Extend the running-coupling evidence through independent DIS and collider
-   analyses. Extend the lattice review across sea-quark masses, lattice spacings,
-   volumes and physical two-plus-one-flavor ensembles. Independently reproduce
-   the static-energy fits and resolve the source's mixing-convention issues.
-   Recover the electric-charge search's confidence construction and review
-   independent materials. General confinement card 1.7 retains its remaining
-   domain and dependency claims. Card 1.15 is reviewed with qualifications:
+   Card 1.7 is qualified to explicit pure-gauge area, dynamical-screening and
+   phenomenological confinement criteria. Wilson, Creutz and Bali retain their
+   regulator, matter, operator and fit limits. Bulava's separate 2+1-flavor
+   ensemble adds strange-channel screening with diagonal-crossing scales;
+   correlated energy extraction and the uncorrelated spectral model remain
+   distinct. Lee's source-version and confidence-normalization gaps stay
+   explicit. CMS supplies a separate collider search for detector-stable
+   color-singlet fractional electric charge, not direct color-confinement proof.
+   Hadron spectra, jet shapes and reconstructed yields are not pooled into a
+   universal color exclusion or nuclear/atomic stability derivation. Original
+   weights, carrier minima, temporal maintenance and downward-causation claims
+   are excluded. Physical-mass/continuum coverage, real-time dynamics and full
+   computational or detector replay require their own evidence; they do not
+   prevent this finite qualified disposition. Card 1.15 is reviewed with
+   qualifications:
    finite static-source and screening results retain their model boundaries;
    the universal downward-causation assertion, blanket composite stability
    and arbitrary parent weights/minima are excluded. A distinct macroconstraint
@@ -223,7 +232,7 @@ belong to the current claims.
    mass shells and internal propagators do not imply energy borrowing or
    a virtual-particle census. No loop calculation or universal formation/
    maintenance dependencies, weights or minima are admitted by this treatment.
-   Continue the remaining confinement and particle-property cards
+   Continue the remaining particle-property and field-organization cards
    with their own preparations and evidence. Do not expand a closed card
    indefinitely to reconstruct every upstream instrument. A new claim about
    formation dynamics, physical stability or a general constituent minimum
