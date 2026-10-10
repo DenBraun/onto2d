@@ -139,7 +139,12 @@
         "S=2.42 and I=8(196/245-1/2)=2.40 are distinct finite-sample summaries. The quoted 0.20 uncertainty belongs to the conventional analysis.",
         "The complete analysis permits memory and bounded setting predictability; its stopping and timing conditions require the original records for independent verification.",
         "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis.",
+        "Eligibility uses the predeclared herald-photon windows, absence of invalid markers in the preceding 250 attempts and no local excitation-window click. These conditions precede or are spacelike separated from the basis choices; a missing spin-readout click remains outcome -1.",
+        "The adopted tau=1.08e-5 comes from supplementary section I: external QRNG characterization, k=4 tests and a stated two-sigma finite-test estimate, applied to k=32 spacelike raw bits. It is an assumed conditional predictability bound, not inferred from the 245 Bell trials or certified by their table replay; its calibration uncertainty is not separately included in the quoted tail.",
+        "The admitted numerical replay uses the stated Equation 7 tail and Equation 8 bound. Supplementary Equation 83 prints equality after the inequality in Equations 75-77; the induction also has inconsistent n versus n-1 subscripts. These printed proof steps are not independently certified by the table calculation."
       ],
       "readExtent": "full-primary-article-and-selected-supplement",
       "reviewedLocators": [
@@ -147,7 +152,8 @@
         "Pages 684-686: characterization, Bell results and interpretation limits; Figures 3-4",
         "Supplementary pages 1-11: sections A-K, preparation, filtering, timing and recording",
         "Supplementary pages 13-16: statistical introduction and sections N-P, score and null assumptions",
-        "Supplementary pages 21 and 24-26: Lemma 3 statement, sections R-S and references"
+        "Supplementary pages 21 and 24-26: Lemma 3 statement, sections R-S and references",
+        "Supplementary pages 17-23: section Q, single-attempt bound, history conditioning and binomial-tail induction; Equations 21-86"
       ],
       "metadataCheckedAt": "2026-09-14",
       "metadataUrl": "https://www.nature.com/articles/nature15759",
@@ -170,7 +176,10 @@
         "The same group and apparatus supply both runs; the second run has changed heralding windows, psi-minus/psi-plus tags and a replaced detector with recalibrated timing.",
         "The second-run complete P=0.061 does not reject the specified null at 0.05. Nonrejection does not establish a local model.",
         "Combined-run P-values depend on the combination assumptions; they are not a third independent experiment. Post hoc window scans do not yield global significance.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis.",
+        "The replay retains the deposited state-tagged scoring and original conditional xi bound; the later theoretical RNG extension and settings diagnostics are not a new calibration or an independent run."
       ],
       "readExtent": "full-primary-article",
       "reviewedLocators": [
@@ -5039,6 +5048,189 @@
       "metadataCheckedAt": "2026-10-10",
       "metadataUrl": "https://link.springer.com/article/10.1007/s100520100720",
       "correctionCheck": "Checked arXiv sole-v1 identity and publisher metadata, including the later journal revision date; revised publisher content was not independently compared. No latest-result or exhaustive-correction claim."
+    },
+    {
+      "id": "srednicki1993-region-entropy",
+      "sourceId": "srednicki1993-region-entropy",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.71.666",
+      "journal": "Physical Review Letters",
+      "volume": "71",
+      "issue": "5",
+      "pages": "666-669",
+      "system": "Radially regulated massless real scalar field in three spatial dimensions",
+      "preparation": "Choose the pure Gaussian ground state, spacing a, outer boundary L=(N+1)a and inside sites j<=n; apply the stated partial trace and angular-mode sum.",
+      "observable": "Dimensionless von Neumann entropy of the outside reduced state",
+      "finding": "Srednicki reports S approximately 0.30(R/a)^2 for N=60 and 1<=n<=30, proportional to sphere area A=4*pi*R^2. At fixed n<=N/2, the reported N=20,40,60 results agree within 0.5% in the worst case. The nonzero reduced entropy of this declared pure state means it does not factorize across the chosen inside/outside partition.",
+      "limitations": [
+        "The coefficient is regulator-dependent: 0.30 multiplies R^2/a^2, not A/a^2. The finite-box comparison is not exact infrared independence; S falls near the outer wall and is zero when all N sites are traced.",
+        "The criterion uses the pure state and specified tensor factors/trace, not an ordinary two-point correlation alone. It establishes no Bell violation, controllable signal, particle population, universal continuum entropy or temporal entanglement-creation mechanism.",
+        "This is a publication-reported numerical result, not an experiment or local replay. No continuum-limit finite value, universal area coefficient or black-hole entropy identification is inferred."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy",
+        "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum",
+        "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.71.666",
+      "correctionCheck": "Checked author v2 and publisher metadata; v2 replaces the withdrawn v1 and adds a reference/corrects minor typos. No exhaustive later-correction census."
+    },
+    {
+      "id": "shalm2015-acquisition",
+      "sourceId": "shalm2015-bell",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.115.250402",
+      "journal": "Physical Review Letters",
+      "volume": "115",
+      "issue": "25",
+      "pages": "250402",
+      "system": "The Shalm Classical XOR3 photonic Bell run",
+      "preparation": "Prepare nonmaximally polarization-entangled 1550 nm photon pairs by pulsed downconversion and distribute them to separate Alice/Bob stations. Each local 99.1 kHz trial records a setting and + for a detection in the accepted window or 0 otherwise. Settings combine phase-diffusion, photon-sampling and predetermined pseudorandom bits by XOR. The selected Classical XOR3 run lasted 30 minutes.",
+      "observable": "Shalm photonic Bell acquisition",
+      "finding": "The selected photonic run and local setting/outcome acquisition.",
+      "limitations": [
+        "The final run is one of six analyzed configurations over two days; a separate blind run was not analyzed. Pulse groupings reuse the same events and are not independent experiments. This photonic sample is distinct from the Delft spin runs; no joint p-value is formed."
+      ],
+      "readExtent": "full-publisher-primary-article",
+      "reviewedLocators": [
+        "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+        "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://doi.org/10.1103/PhysRevLett.115.250402",
+      "correctionCheck": "Actual published article and linked supplement read; nominal p-value printing discrepancy retained. No exhaustive correction census or independent calibration/null-test replay."
+    },
+    {
+      "id": "shalm2015-response",
+      "sourceId": "shalm2015-bell",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.115.250402",
+      "journal": "Physical Review Letters",
+      "volume": "115",
+      "issue": "25",
+      "pages": "250402",
+      "system": "The Shalm Classical XOR3 photonic Bell run",
+      "preparation": "Local arrival windows and the timing/calibration model determine the accepted binary outcomes and spacelike-separation claim. Published system efficiencies are 74.7 +/- 0.3% and 75.6 +/- 0.3%; five-pulse timing margin is 38.3 +/- 3.7 ns. The analysis assumes outcomes are fixed at the time taggers and reliable measured positions/delays.",
+      "observable": "Shalm detection and timing boundary",
+      "finding": "The detection-window, spacetime and RNG interpretation using reported calibrations.",
+      "limitations": [
+        "No fair-sampling assumption is used to discard nondetections; local trial/window definitions and the complete outcomes remain operative. Spacelike timing does not prove absolute freedom of settings or complete device correctness.",
+        "RNG models and post-acquisition synchronization-board tests motivate the conservative epsilon=0.003 bound; output randomness tests do not certify unpredictability. Conditional independence of the two setting choices given the permitted predictability remains an assumption."
+      ],
+      "readExtent": "full-publisher-primary-article",
+      "reviewedLocators": [
+        "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+        "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://doi.org/10.1103/PhysRevLett.115.250402",
+      "correctionCheck": "Actual published article and linked supplement read; nominal p-value printing discrepancy retained. No exhaustive correction census or independent calibration/null-test replay."
+    },
+    {
+      "id": "shalm2015-inference",
+      "sourceId": "shalm2015-bell",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.115.250402",
+      "journal": "Physical Review Letters",
+      "volume": "115",
+      "issue": "25",
+      "pages": "250402",
+      "system": "The Shalm Classical XOR3 photonic Bell run",
+      "preparation": "Test P(++|ab)<=P(+0|ab')+P(0+|a'b)+P(++|a'b'). The statistic N_S counts ++ab among the first N_chi events in those four settings/outcome classes. A disjoint initial training segment estimates f and fixes N_chi=0.9*r*f for the remaining r trials. Per trial, epsilon bounds each maximum setting probability: max(P(a),P(a')) and max(P(b),P(b'))<=(1+epsilon)/2. Use the reported memory-robust binomial-tail bound, with success bound 1/2 for equiprobable choices or 1/2+epsilon/(1+epsilon^2) for bounded predictability.",
+      "observable": "Shalm memory-robust Bell inference",
+      "finding": "The chosen local null, training/cut rule and predictability-conditioned tail procedure.",
+      "limitations": [
+        "The Bell bound allows memory without iid trials. Training is excluded from the tested suffix; later events beyond the relevant-event cut are discarded. Stopping at the most favorable fluctuation would invalidate this procedure.",
+        "The main text highlights the most stable, best-aligned run and reports several overlapping pulse groupings. These reported per-analysis values are not a newly established global or multiple-selection-adjusted p-value. The iid-based diagnostic tests are separate."
+      ],
+      "readExtent": "full-publisher-primary-article",
+      "reviewedLocators": [
+        "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+        "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://doi.org/10.1103/PhysRevLett.115.250402",
+      "correctionCheck": "Actual published article and linked supplement read; nominal p-value printing discrepancy retained. No exhaustive correction census or independent calibration/null-test replay."
+    },
+    {
+      "id": "boschi1998-teleportation-acquisition",
+      "sourceId": "boschi1998-teleportation",
+      "studyType": "primary-experiment",
+      "doi": "10.1103/PhysRevLett.80.1121",
+      "journal": "Physical Review Letters",
+      "volume": "80",
+      "issue": "6",
+      "pages": "1121-1125",
+      "system": "Two-photon path/polarization teleportation with passive conditional verification",
+      "preparation": "The BBO down-conversion source supplies 702.2 nm photon pairs. Calcite paths and polarization rotations prepare (|a1 a2>+|b1 b2>)/sqrt(2), with the input alpha|v>+beta|h> encoded in the polarization of Alice's resource photon. The stations are about 2.5 m apart; the coincidence window is 1.6 ns and runs last 10 s, typically yielding about 500 coincidences.",
+      "observable": "Two-photon teleportation preparation",
+      "finding": "The two-photon preparation, selected input settings and coincidence acquisition.",
+      "limitations": [
+        "The input is prepared on one of the resource photons; an independently supplied external input and the proposed local swap are not implemented. A two-photon realization uses distinct path and polarization factors, not three independently arriving photons."
+      ],
+      "readExtent": "full-primary-published-article",
+      "reviewedLocators": [
+        "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer",
+        "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.80.1121",
+      "correctionCheck": "Publisher identity and the sole arXiv v1 posting were checked. The published article supplies these results; no exhaustive correction or latest-experiment census is claimed."
+    },
+    {
+      "id": "boschi1998-teleportation-response",
+      "sourceId": "boschi1998-teleportation",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.80.1121",
+      "journal": "Physical Review Letters",
+      "volume": "80",
+      "issue": "6",
+      "pages": "1121-1125",
+      "system": "Two-photon path/polarization teleportation with passive conditional verification",
+      "preparation": "Alice's path-polarization analyzer identifies four Bell-basis outcomes using a 50:50 beam splitter, polarizing beam splitters and four detector channels. Bob converts paths to polarization and sets the verification analyzer for each outcome according to Equation 11. The experiment uses passive outcome-dependent verification rather than active conditional correction. I_parallel and I_perpendicular are coincidences with the same Bob detector at orthogonal analyzer settings.",
+      "observable": "Passive teleportation verification",
+      "finding": "The outcome-to-polarization mapping, analyzer response and conditional detection normalization.",
+      "limitations": [
+        "The paper relates orthogonal rates to projection probabilities through a common efficiency-dependent normalization k. The other Bob detector is used only for alignment; no simultaneous two-detector or all-emitted-pair efficiency certification is supplied.",
+        "Alice outcome labels and coincidence comparison are classical information needed to interpret the conditional output. No active arbitrary-input receiver channel, spacelike-signaling test or complete process tomography is demonstrated."
+      ],
+      "readExtent": "full-primary-published-article",
+      "reviewedLocators": [
+        "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer",
+        "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+        "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.80.1121",
+      "correctionCheck": "Publisher identity and the sole arXiv v1 posting were checked. The published article supplies these results; no exhaustive correction or latest-experiment census is claimed."
+    },
+    {
+      "id": "boschi1998-teleportation-inference",
+      "sourceId": "boschi1998-teleportation",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevLett.80.1121",
+      "journal": "Physical Review Letters",
+      "volume": "80",
+      "issue": "6",
+      "pages": "1121-1125",
+      "system": "Two-photon path/polarization teleportation with passive conditional verification",
+      "preparation": "For linear inputs at 0, +120 and -120 degrees, each with prior probability 1/3, define S as I_parallel/(I_parallel+I_perpendicular), averaged with weights 1/3 over the inputs and 1/4 over the four Alice outcomes. Equations 1-3 and the Appendix bound S<=3/4 for single-copy measurement by Alice followed only by classical communication and state preparation by Bob. The verifier projects onto the corresponding prepared state after accounting for the outcome-dependent rotation.",
+      "observable": "Three-state teleportation criterion",
+      "finding": "The declared input prior, equal outcome weighting and classical measure-and-prepare comparison.",
+      "limitations": [
+        "The 3/4 bound belongs to this three-state ensemble and task, not the 2/3 uniform-qubit benchmark or a Bell-locality test. Its application here retains the published coincidence normalization and conditioning.",
+        "The source reports an uncertainty on S without a locally reconstructed error model; no covariance, confidence calibration or complete channel-fidelity reconstruction is claimed."
+      ],
+      "readExtent": "full-primary-published-article",
+      "reviewedLocators": [
+        "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result",
+        "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+      ],
+      "metadataCheckedAt": "2026-10-10",
+      "metadataUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.80.1121",
+      "correctionCheck": "Publisher identity and the sole arXiv v1 posting were checked. The published article supplies these results; no exhaustive correction or latest-experiment census is claimed."
     }
   ],
   "comparisons": [
@@ -5107,7 +5299,7 @@
       ],
       "discriminator": "The declared event-tagged CHSH win count and complete finite-sample null test.",
       "result": "specified-alternative-disfavored",
-      "limit": "With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.039174643558790. The published 0.039 is rounded. This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+      "limit": "With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.039174643558790. The published 0.039 is rounded. This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced. The fixed-n stopping and conditional setting-predictability assumptions are external to the deposited-table replay; a reported null tail is not the probability that local realism is true or a universal entanglement detector.",
       "assumptions": [
         "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
         "Condition on the prior trial sequence; require local responses, independent setting generators and independence of the herald from those settings within the stated predictability bounds.",
@@ -5127,7 +5319,7 @@
       ],
       "discriminator": "The declared event-tagged CHSH win count and complete finite-sample null test.",
       "result": "inconclusive",
-      "limit": "With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.060727644566033. At 0.05 the result is inconclusive. This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+      "limit": "With the declared fixed-n null, tau=0.0000108 and single-trial bound 0.75003240034992, the recomputed binomial upper tail is 0.060727644566033. At 0.05 the result is inconclusive. This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced. The fixed-n stopping and conditional setting-predictability assumptions are external to the deposited-table replay; a reported null tail is not the probability that local realism is true or a universal entanglement detector.",
       "assumptions": [
         "Use the declared event-ready selection, complete binary readout and spacetime timing conditions.",
         "Condition on the prior trial sequence; require local responses, independent setting generators and independence of the herald from those settings within the stated predictability bounds.",
@@ -8160,14 +8352,52 @@
         "M-phys-h1-2001-dis-evolution-context",
         "C-phys-h1-2001-dis-gluon-distribution"
       ]
+    },
+    {
+      "id": "shalm2015-local-null",
+      "candidate": "The selected quantum-compatible photonic correlations violate the stated local-model constraint.",
+      "alternative": "Local hidden-variable responses with memory, the declared timing boundary and bounded setting predictability.",
+      "discriminator": "The specified relevant-event statistic and reported predictability-adjusted p=2.3e-7 for Classical XOR3, pulses 4-8.",
+      "result": "specified-alternative-disfavored",
+      "limit": "This is a publication-supported, per-analysis null test, not a posterior probability of locality, universal entanglement test, faster-than-light mechanism or combined Delft result.",
+      "assumptions": [
+        "RNG models and post-acquisition synchronization-board tests motivate the conservative epsilon=0.003 bound; output randomness tests do not certify unpredictability. Conditional independence of the two setting choices given the permitted predictability remains an assumption.",
+        "The Bell bound allows memory without iid trials. Training is excluded from the tested suffix; later events beyond the relevant-event cut are discarded. Stopping at the most favorable fluctuation would invalidate this procedure."
+      ],
+      "sourceIds": [
+        "shalm2015-bell",
+        "shalm2015-bell-supplement"
+      ],
+      "claimIds": [
+        "C-phys-shalm2015-trial-records",
+        "C-phys-shalm2015-bell-test"
+      ]
+    },
+    {
+      "id": "boschi1998-teleportation-classical-channel",
+      "candidate": "An entanglement-assisted realization yields a conditional score above the classical measure-and-prepare bound for the declared input ensemble.",
+      "alternative": "Alice measures one copy and Bob prepares an output using only classical communication for the same three equally likely inputs.",
+      "discriminator": "The equally weighted conditional projection score S=0.853 +/- 0.012 is compared with the published S<=3/4 benchmark.",
+      "result": "conditional-support",
+      "limit": "The comparison retains coincidence selection, passive verification and common rate normalization; it is not a Bell test, a universal-qubit fidelity benchmark or an active external-input channel demonstration.",
+      "assumptions": [
+        "Three specified inputs, equal input/outcome weights and the paper's common-efficiency projection model."
+      ],
+      "sourceIds": [
+        "boschi1998-teleportation"
+      ],
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-inference-context",
+        "C-phys-boschi1998-teleportation-score"
+      ]
     }
   ],
   "openObligations": [
     "Gluon spin, color-factor and DIS results retain their selected samples, reconstruction, shared inputs and model assumptions. Full detector, hadronization, covariance and QCD-fit replay remains unresolved. These conditional comparisons do not identify every quantum number, image a vertex or prove general confinement, universal hadron formation or self-organization.",
     "Lepton labels retain species-specific scattering, finite muon/tau lifetimes and a channel-specific electron-decay bound. Raw event/response and full fit reconstructions remain unresolved. Reactor, solar, atmospheric and accelerator studies retain separate preparations and inference boundaries; their findings do not determine absolute neutrino masses or a universal mass-generation mechanism. Neutrino transport, astrophysical-source and cosmological applications remain separate pending scopes.",
     "Complete spectroscopy, confinement, lattice and all remaining source-card dependency reviews. No measured Level-0-to-quantum-field construction is established.",
-    "For source card 1.4, review field-region/vacuum entanglement and specific quantum-information applications before extending the finite bipartite definitions. No QFT-to-entanglement formation edge or universal particle threshold is admitted.",
-    "Verify the acquisition-to-table extraction, original stopping records and random-generator calibration for both Delft runs. Complete the supplementary proof review and compare independent experiments before stronger reproducibility or generality claims.",
+    "Entanglement is relative to the declared subsystem model. The regulated scalar entropy, independent photonic Bell test and selected teleportation realization retain their computational, acquisition and inference limits. Numerical field-region replay, full photonic acquisition/statistical replay and teleportation event/response replay remain unresolved; no generic continuum factorization, universal detector, creation arrow or particle minimum follows.",
+    "Delft score/null methods and the narrowly relevant supplementary proof passages are reviewed. Their printed induction inconsistencies, acquisition-to-table extraction, original stopping decisions and conditional random-generator calibration remain outside the bounded table replay. Independent Shalm evidence has its own preparation and null model; the results are not pooled.",
     "Resolve the printed Bressi voltage-sign conflict and obtain acquisition/calibration data before reproducing the resonance and force fits. Keep the main selected-point estimate separate from the drift model.",
     "Review modern material-response, thermal and surface-systematic tests before extending the historical Casimir comparisons; the 1997 systematic-error assessment was limited.",
     "Review modern hydrogen precision measurements and complete radiative contributions before extending the approximate 1947 Lamb/Bethe comparison.",

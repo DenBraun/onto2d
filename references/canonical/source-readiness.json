@@ -11469,6 +11469,132 @@
       ]
     },
     {
+      "nodeId": "phys:regulated-scalar-region-state",
+      "role": "definition",
+      "denotes": "The specified massless scalar ground state, radial regulator and inside/outside oscillator factors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-regulated-scalar-region-state"
+      ]
+    },
+    {
+      "nodeId": "phys:srednicki1993-region-entropy-context",
+      "role": "model-context",
+      "denotes": "The declared reduced-state spectrum, entropy functional and convergent partial-wave sum.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-srednicki1993-region-entropy-context"
+      ]
+    },
+    {
+      "nodeId": "phys:srednicki1993-area-entropy",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported cutoff-dependent reduced entropy and conditional nonfactorization of a pure vacuum state.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-srednicki1993-area-entropy"
+      ]
+    },
+    {
+      "nodeId": "phys:shalm2015-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The selected photonic run and local setting/outcome acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-shalm2015-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:shalm2015-response-context",
+      "role": "model-context",
+      "denotes": "The detection-window, spacetime and RNG interpretation using reported calibrations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-shalm2015-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:shalm2015-inference-context",
+      "role": "model-context",
+      "denotes": "The chosen local null, training/cut rule and predictability-conditioned tail procedure.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-shalm2015-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:shalm2015-trial-records",
+      "role": "scoped-phenomenon",
+      "denotes": "The published setting/outcome counts after the declared relevant-event stopping selection.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-shalm2015-trial-records"
+      ]
+    },
+    {
+      "nodeId": "phys:shalm2015-bell-test",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported nominal and predictability-adjusted null bounds for one pulse grouping.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-shalm2015-bell-test"
+      ]
+    },
+    {
+      "nodeId": "phys:qubit-teleportation-protocol",
+      "role": "definition",
+      "denotes": "The ideal shared-singlet, Bell-measurement and two-bit conditional-recovery protocol.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qubit-teleportation"
+      ]
+    },
+    {
+      "nodeId": "phys:boschi1998-teleportation-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "The two-photon preparation, selected input settings and coincidence acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:boschi1998-teleportation-response-context",
+      "role": "model-context",
+      "denotes": "The outcome-to-polarization mapping, analyzer response and conditional detection normalization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:boschi1998-teleportation-inference-context",
+      "role": "model-context",
+      "denotes": "The declared input prior, equal outcome weighting and classical measure-and-prepare comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:boschi1998-teleportation-fringes",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported outcome-conditioned coincidence scans for the selected illustrative input states.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-boschi1998-teleportation-fringes"
+      ]
+    },
+    {
+      "nodeId": "phys:boschi1998-teleportation-score",
+      "role": "scoped-phenomenon",
+      "denotes": "The publication-reported three-state conditional score and its specific classical benchmark.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-boschi1998-teleportation-score"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

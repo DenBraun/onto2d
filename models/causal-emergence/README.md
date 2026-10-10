@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.10.2`: 1235 records, 1018 connections,
-1328 claims and 398 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.10.3`: 1249 records, 1035 connections,
+1347 claims and 403 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -44,6 +44,16 @@ is scheme-dependent; fitted color factors do not image an elementary vertex.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 confinement, temporal emergence or carrier-count minima.
+Entanglement records retain subsystem choice, classical-correlation counterexamples
+and local reduced states. The regulated scalar-vacuum calculation specifies its
+radial cutoff, partial trace and conditional entropy scaling. Shalm's photonic
+Bell sample has its own response, setting assumptions and statistical test;
+it is separate from the two Delft runs. Delft's deposited-table replay preserves
+external predictability and stopping assumptions after supplementary-method review.
+Bennett's ideal teleportation protocol and Boschi's passive conditional realization
+retain the shared resource, classical outcome and ensemble-specific benchmark.
+Neither generic vacuum coherence nor a first organizational stage, necessary
+QFT creation arrow or elementary-particle minimum is admitted.
 Capture spectroscopy keeps its two campaigns, crystal calibration, recoil and
 external atomic-mass input explicit; recalibration reuses the original data.
 LIONTRAP distinguishes original acquisition, experimental reanalysis,
@@ -97,6 +107,12 @@ The Level-0 mathematical findings are described in the
 npm run model:causal-emergence
 npm run model:causal-emergence:verify
 ```
+
+Compiled relations retain their complete source fields and refer to evidence
+through `claimIds`. The full claims, sources and study contexts reside in the
+pack dictionaries. Selected nodes retain expanded rationale for inspection;
+relations do not duplicate those publication and context objects. This keeps
+the current release within the existing transport limits.
 
 For direct Node directory loading, pass `{ maxFileBytes: 32 * 1024 * 1024 }`
 to `loadModelPackDirectory`. The complete bundle exceeds its default 16 MiB

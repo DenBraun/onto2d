@@ -23,13 +23,13 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 179 remain on the
+graph. Of the 249 original source cards, 178 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-70 cards is a source-review census, not a percentage of scientifically supported
+71 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 
-The current graph contains 1235 records, 1018 connections, 1328 claims and 398 sources.
+The current graph contains 1249 records, 1035 connections, 1347 claims and 403 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -68,6 +68,9 @@ The complete release uses compact JSON for its bundle and semantic model files,
 within the existing 32 MiB file and 64 MiB total transport budgets. Canonical
 inputs, manifest and indexes remain readable. Exact verification preserves the
 selected bytes, and published releases cannot be reformatted in place.
+Relations reference complete dictionary claims through `claimIds`; their
+sources and contexts are stored once in those dictionaries instead of being
+expanded again on every edge. Selected-node evidence remains self-contained.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,
@@ -119,8 +122,16 @@ belong to the current claims.
    locality and unconditioned marginals. Two Delft Bell runs preserve separate
    preparation, scoring, stopping assumptions and null-test outcomes.
    Their deposited tables reproduce 245 and 300 accepted trials, the printed
-   correlation counts and conditional null-tail arithmetic. Acquisition-to-table
-   extraction, stopping decisions and RNG calibration still need verification.
+   correlation counts and conditional null-tail arithmetic. The relevant
+   supplementary selection, score and null-model sections are reviewed;
+   acquisition-to-table extraction, stopping decisions and RNG calibration
+   remain outside that replay. Printed proof inconsistencies stay explicit.
+   Card 1.4 also has a regulated scalar-region entropy construction, independent
+   photonic Bell evidence from Shalm and a specified Bennett/Boschi teleportation
+   protocol and realization. Their cutoffs, complete outcomes, training/stopping
+   rules, passive correction and ensemble-specific benchmark remain explicit.
+   Arbitrary continuum factorization, generic vacuum coherence, firstness,
+   necessary QFT creation and elementary-particle minimum claims are excluded.
    Card 1.1 is qualified to declared quark quantum numbers, mass conventions,
    a charge-weighted parton response and existing valence/Fock, spectroscopy,
    lattice and hadron-production evidence. Bloom's apparatus and correction
@@ -152,9 +163,10 @@ belong to the current claims.
    excluded. Full experimental and computational replay remains open.
    Continue with independent structure-function tests, spectroscopy and the
    remaining dependency claims; a theory input to an interpretation does not
-   establish a formation process. Field-region
-   entanglement, specific quantum-information applications and independent
-   experimental replication remain open.
+   establish a formation process. Wider field-region models and information
+   applications require their own criteria. The selected entropy computation,
+   Bell acquisition/calibration and teleportation response analyses remain
+   unreproduced; their published results retain their declared scope.
    Extend the running-coupling evidence through independent DIS and collider
    analyses. Extend the lattice review across sea-quark masses, lattice spacings,
    volumes and physical two-plus-one-flavor ensembles. Independently reproduce

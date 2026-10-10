@@ -1,43 +1,43 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20261010.2";
+} from "../../packages/model-pack/src/browser.js?v=20261010.3";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20261010.2";
+} from "../../packages/model-pack/src/cache.js?v=20261010.3";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20261010.2";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261010.2";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261010.2";
+} from "../../packages/model-pack/src/registry.js?v=20261010.3";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261010.3";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261010.3";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20261010.2";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261010.2";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261010.2";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261010.2";
-import { graphHighlight } from "./graph-interactions.js?v=20261010.2";
-import { citationLinks } from "./evidence-links.js?v=20261010.2";
-import { loadBrowseModel } from "./browse-data.js?v=20261010.2";
+} from "../../packages/rdf-mapping/src/index.js?v=20261010.3";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261010.3";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261010.3";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261010.3";
+import { graphHighlight } from "./graph-interactions.js?v=20261010.3";
+import { citationLinks } from "./evidence-links.js?v=20261010.3";
+import { loadBrowseModel } from "./browse-data.js?v=20261010.3";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20261010.2";
+} from "./model-selection.js?v=20261010.3";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.10.2" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.10.3" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20261010.2",
+  "../../assets/js/model-pack-worker.js?v=20261010.3",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:3d863a3027319e254de5c6b2c30b028e8367c0d202902d7189fbf0ee5dcb5fc2";
+const EXPECTED_REGISTRY_HASH = "sha256:f87be0c8a3b71bd1588ea2a71bb7633520eefe1c06f63ac08e822f910cbd7a3a";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
