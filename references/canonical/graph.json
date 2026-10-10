@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.10.2",
+    "version": "2026.10.10.3",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Lepton charge, chirality and flavor conventions remain separate from species-specific evidence. Belle infers the tau mean lifetime from paired reconstructed proper lengths; Borexino bounds one electron-decay channel with detector response and external background inputs. Neither result establishes universal lepton stability. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Gluon self-coupling has an explicit gauge-sector convention. SLD spin-sensitive shapes, OPAL color-factor fits and H1 scaling-violation analyses separate measured distributions, correction models and conditional inferences. Field labels and scale evolution supply no universal process, temporal arising order or carrier threshold.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Lepton charge, chirality and flavor conventions remain separate from species-specific evidence. Belle infers the tau mean lifetime from paired reconstructed proper lengths; Borexino bounds one electron-decay channel with detector response and external background inputs. Neither result establishes universal lepton stability. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Gluon self-coupling has an explicit gauge-sector convention. SLD spin-sensitive shapes, OPAL color-factor fits and H1 scaling-violation analyses separate measured distributions, correction models and conditional inferences. Field labels and scale evolution supply no universal process, temporal arising order or carrier threshold. Entanglement uses declared subsystem partitions: regulated scalar-region entropy, independent photonic Bell evidence and a selected teleportation protocol retain separate criteria. Correlation, Bell nonlocality, local reduced states and communication are distinct; no temporal firstness or elementary-particle minimum is inferred.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "ec9d536b3f17addc8eafba6effc9e5daf7c6fee402bf88675845cd1a01f626fa",
+      "sha256": "830bbc3d02562724e83577b08157c01643305daa2641d485aeae5db44a5d40a3",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6731,7 +6731,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "f1848d5cdb7456044f3a95e4f2522c791ea1399ed5a780bd65eafa3101f2f821",
+      "sha256": "5e577b279fb3affde0cab3480cd4c86282d000eeac7f3609daaa4be4dbeadf98",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6847,9 +6847,10 @@
           "Pages 684-686: characterization, Bell results and interpretation limits; Figures 3-4",
           "Supplementary pages 1-11: sections A-K, preparation, filtering, timing and recording",
           "Supplementary pages 13-16: statistical introduction and sections N-P, score and null assumptions",
-          "Supplementary pages 21 and 24-26: Lemma 3 statement, sections R-S and references"
+          "Supplementary pages 21 and 24-26: Lemma 3 statement, sections R-S and references",
+          "Supplementary pages 17-23: section Q, single-attempt bound, history conditioning and binomial-tail induction; Equations 21-86"
         ],
-        "limit": "Published five-page PDF read from https://qoqi.nju.edu.cn/njdx/DFS/file/2020/06/16/20200616150559143pjf2jp.pdf?iid=13054; Figures 2-4 visually checked. Publisher supplement https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature15759/MediaObjects/41586_2015_BFnature15759_MOESM113_ESM.pdf read at pages 1-11, 13-16, 21 and 24-26; pages 1, 4, 11, 14 and 15 visually checked. Remaining supplementary proof steps, original acquisition and instrument calibrations are not independently verified. The 0.92 fidelity estimate uses a model whose interference input comes from another NV pair; it is not tomography of the Bell-trial sample. Deposited event-table calculations are separately checked through the linked dataset and executable source."
+        "limit": "Published five-page PDF and supplementary pages 1-11 and 13-26 read. The narrowly relevant statistical sections N-S are fully read; score/null Equations 5-13, recording section K and the page-23 induction were visually checked. Publisher supplement: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature15759/MediaObjects/41586_2015_BFnature15759_MOESM113_ESM.pdf. The admitted numerical replay uses the stated Equation 7 tail and Equation 8 bound. Supplementary Equation 83 prints equality after the inequality in Equations 75-77; the induction also has inconsistent n versus n-1 subscripts. These printed proof steps are not independently certified by the table calculation. Acquisition, stopping decisions and instrument/RNG calibration are not independently verified. The 0.92 fidelity estimate uses an interference input from another NV pair, not tomography of the Bell-trial sample. The deposited preselected-table replay retains its separate extent."
       }
     },
     {
@@ -10545,6 +10546,191 @@
           "Author v1, printed pages 22-25 and 56, Section 7.3, Equation 20 and Figure 23: reused H1+BCDMS data, simultaneous coupling fit and scale uncertainty"
         ],
         "limit": "Read the abstract and scientific text on author-v1 printed pages 4-31 (PDF pages 5-32), Table 9 and captions of Tables 10-12 and Figures 12, 18-19, 21 and 23; visually checked Equations 1-2 and 18-19, scale conventions and Figures 18-19. The sole arXiv version is dated 21 December 2000; journal metadata is EPJ C 21, 33-61 (2001), with revision 10 May 2001. The revised publisher PDF, upstream H1 high-Q2/BCDMS articles and fit files were not independently reviewed. Scale notation follows the explicit definitions on printed page 24; the Table 7 caption reverses the mr/mf labels. No detector, covariance, DGLAP or PDF-fit replay, current-best claim or exhaustive correction census is made."
+      }
+    },
+    {
+      "id": "srednicki1993-region-entropy",
+      "kind": "research-publication",
+      "title": "Entropy and Area",
+      "authors": [
+        "Mark Srednicki"
+      ],
+      "year": 1993,
+      "doi": "10.1103/PhysRevLett.71.666",
+      "url": "https://arxiv.org/pdf/hep-th/9303048v2",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-author-article",
+        "locators": [
+          "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy",
+          "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum",
+          "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations"
+        ],
+        "limit": "Read all ten author-v2 PDF pages, including references and Figure 1; visually checked Equations 1-22 and Figure 1. Version 2 is dated 20 March 1993; publisher metadata identifies PRL 71, 666-669 (2 August 1993). The published-layout PDF and numerical code/data were not obtained. The reported entropy calculation and fit are not independently reproduced; black-hole analogies and other-dimensional results are not admitted."
+      }
+    },
+    {
+      "id": "shalm2015-bell",
+      "kind": "research-publication",
+      "title": "Strong Loophole-Free Test of Local Realism",
+      "authors": [
+        "Lynden K. Shalm",
+        "Evan Meyer-Scott",
+        "Bradley G. Christensen",
+        "Peter Bierhorst",
+        "Michael A. Wayne",
+        "Martin J. Stevens",
+        "Thomas Gerrits",
+        "Scott Glancy",
+        "Deny R. Hamel",
+        "Michael S. Allman",
+        "Kevin J. Coakley",
+        "Shellee D. Dyer",
+        "Carson Hodge",
+        "Adriana E. Lita",
+        "Varun B. Verma",
+        "Camilla Lambrocco",
+        "Edward Tortorici",
+        "Alan L. Migdall",
+        "Yanbao Zhang",
+        "Daniel R. Kumor",
+        "William H. Farr",
+        "Francesco Marsili",
+        "Matthew D. Shaw",
+        "Jeffrey A. Stern",
+        "Carlos Abellan",
+        "Waldimar Amaya",
+        "Valerio Pruneri",
+        "Thomas Jennewein",
+        "Morgan W. Mitchell",
+        "Paul G. Kwiat",
+        "Joshua C. Bienfang",
+        "Richard P. Mirin",
+        "Emanuel Knill",
+        "Sae Woo Nam"
+      ],
+      "year": 2015,
+      "doi": "10.1103/PhysRevLett.115.250402",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=919674",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-publisher-primary-article",
+        "locators": [
+          "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+          "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+        ],
+        "limit": "Read the complete published ten-page PRL PDF from NIST; visually checked Equations 1-2, Figure 3 and Table I. The APS supplement was separately read. Table I and the abstract give 5.9e-9 while nearby text gives 5.8e-9; supplement Table S-I gives 5.85e-9. These printed values are preserved without repairing the source. Deposited time tags/software (10.5060/D2JW8BTT), upstream device papers and the statistical proof are not replayed; no raw acquisition, RNG or timing calibration is independently reproduced."
+      }
+    },
+    {
+      "id": "shalm2015-bell-supplement",
+      "kind": "research-publication",
+      "title": "Supplemental Material: A strong loophole-free test of local realism",
+      "authors": [
+        "Lynden K. Shalm",
+        "Evan Meyer-Scott",
+        "Bradley G. Christensen",
+        "Peter Bierhorst",
+        "Michael A. Wayne",
+        "Martin J. Stevens",
+        "Thomas Gerrits",
+        "Scott Glancy",
+        "Deny R. Hamel",
+        "Michael S. Allman",
+        "Kevin J. Coakley",
+        "Shellee D. Dyer",
+        "Carson Hodge",
+        "Adriana E. Lita",
+        "Varun B. Verma",
+        "Camilla Lambrocco",
+        "Edward Tortorici",
+        "Alan L. Migdall",
+        "Yanbao Zhang",
+        "Daniel R. Kumor",
+        "William H. Farr",
+        "Francesco Marsili",
+        "Matthew D. Shaw",
+        "Jeffrey A. Stern",
+        "Carlos Abellan",
+        "Waldimar Amaya",
+        "Valerio Pruneri",
+        "Thomas Jennewein",
+        "Morgan W. Mitchell",
+        "Paul G. Kwiat",
+        "Joshua C. Bienfang",
+        "Richard P. Mirin",
+        "Emanuel Knill",
+        "Sae Woo Nam"
+      ],
+      "year": 2015,
+      "doi": "10.1103/PhysRevLett.115.250402",
+      "url": "https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.115.250402/LHFSupplementary.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-publisher-supplement",
+        "locators": [
+          "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null",
+          "Supplement pages 4-7, Section II and Figure S2: measured timing paths, uncertainties and spatial bounds",
+          "Supplement pages 8-13, Section III and Figures S3-S6: random-setting generation, metrology and synchronization bias",
+          "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions"
+        ],
+        "limit": "Read all sixteen pages of the APS supplement dated 21 November 2015, including statistical, timing, RNG and run-selection methods; visually checked Equations S2-S4, Figure S2 and Tables S-I/S-II. This is the supplement served with the published article, not a review of the later arXiv-v2 main text. Calibration/model assumptions remain external inputs. The four pulse groupings reuse one run; no global selection-adjusted or pooled p-value is supplied here. Diagnostic independence/no-signalling tests assume iid behavior, unlike the reported memory-robust Bell null test."
+      }
+    },
+    {
+      "id": "bennett1993-teleportation",
+      "kind": "research-publication",
+      "title": "Teleporting an Unknown Quantum State via Dual Classical and Einstein-Podolsky-Rosen Channels",
+      "authors": [
+        "Charles H. Bennett",
+        "Gilles Brassard",
+        "Claude Crépeau",
+        "Richard Jozsa",
+        "Asher Peres",
+        "William K. Wootters"
+      ],
+      "year": 1993,
+      "doi": "10.1103/PhysRevLett.70.1895",
+      "url": "https://people.disim.univaq.it/~serva/teaching/Bennet.1993.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-published-article",
+        "locators": [
+          "Published pages 1895-1897, Equations 1-6: unknown input, shared singlet, Bell measurement and outcome-dependent recovery",
+          "Published page 1897: two classical bits, unconditioned maximally mixed receiver and no superluminal information transfer"
+        ],
+        "limit": "Read the complete published scan, PRL 70, 1895-1899; visually checked the qubit formulas on pages 1896-1897. The admission uses the ideal qubit protocol only; higher-dimensional and dense-coding constructions are not admitted. No experiment or local executable proof is claimed."
+      }
+    },
+    {
+      "id": "boschi1998-teleportation",
+      "kind": "research-publication",
+      "title": "Experimental Realization of Teleporting an Unknown Pure Quantum State via Dual Classical and Einstein-Podolsky-Rosen Channels",
+      "authors": [
+        "D. Boschi",
+        "S. Branca",
+        "F. De Martini",
+        "L. Hardy",
+        "S. Popescu"
+      ],
+      "year": 1998,
+      "doi": "10.1103/PhysRevLett.80.1121",
+      "url": "https://painterlab.caltech.edu/wp-content/uploads/2019/06/iqd_experimental_realization_teleporting_pure_quantum_state.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-published-article",
+        "locators": [
+          "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer",
+          "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result",
+          "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation"
+        ],
+        "limit": "Read all five published pages, PRL 80, 1121-1125, including the Appendix; visually checked pages 1122-1125, formulas and Figures 1-3. The sole arXiv v1 posting is identified in metadata, but its text is not substituted for the published article. Upstream apparatus papers and event records are not independently reviewed. No acquisition, uncertainty or channel reconstruction is replayed."
       }
     }
   ],
@@ -31698,7 +31884,8 @@
       "checkIds": [],
       "limitations": [
         "The subsystem partition is part of the model. It does not assert a particle census or temporal formation order.",
-        "A finite subsystem model does not require a quantum-field construction as its mathematical premise. Field-region algebras and identical-particle partitions need separate treatment."
+        "A finite subsystem model does not require a quantum-field construction as its mathematical premise. Field-region algebras and identical-particle partitions need separate treatment.",
+        "Local reduced states rho_A=tr_B(rho) and rho_B=tr_A(rho) exist in this finite tensor-product model even when rho is entangled; their product need not reconstruct the joint state."
       ]
     },
     {
@@ -31725,7 +31912,10 @@
       "limitations": [
         "Nonproduct mixed states can be separable: rho = (|00><00| + |11><11|)/2 has marginals I/2 but differs from their product I/4. This is a direct example of the definition.",
         "Two nontrivial subsystem factors are required for bipartite entanglement. This is not a universal minimum of two elementary particles, a stability threshold or a graph-generation rule.",
-        "Display level 1 supplies no physical firstness. Vacuum coherence and quantum-information applications require specific additional models and evidence."
+        "For the displayed classical mixture, <Z_A Z_B>=1 while <Z_A>=<Z_B>=0. Correlation or failure to factorize a mixed density operator alone does not establish entanglement.",
+        "Display level, SOMA pattern/phase labels and requirement lists are editorial. No first nonlocal organizational stage, measured QFT-to-entanglement creation, necessary maintenance cause or parent weight 1.0 is established.",
+        "The original N_min=N_crit=2 elementary particles is excluded. The prerequisite is a specified subsystem partition, not a universal particle population or stability threshold.",
+        "Unspecified vacuum-linked coherence supplies no entanglement criterion and is excluded. A regulated vacuum-region entropy and a particular teleportation protocol require their separately declared models and evidence."
       ]
     },
     {
@@ -31833,7 +32023,9 @@
         "The Bell trial uses two levels of each spin-1 NV ground state, not a census of two isolated spin-half particles.",
         "S=2.42 and I=8(196/245-1/2)=2.40 are distinct finite-sample summaries. The quoted 0.20 uncertainty belongs to the conventional analysis.",
         "The complete analysis permits memory and bounded setting predictability; its stopping and timing conditions require the original records for independent verification.",
-        "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum."
+        "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum.",
+        "Eligibility uses the predeclared herald-photon windows, absence of invalid markers in the preceding 250 attempts and no local excitation-window click. These conditions precede or are spacelike separated from the basis choices; a missing spin-readout click remains outcome -1.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record."
       ],
       "contextIds": [
         "hensen2015"
@@ -31873,7 +32065,8 @@
         "S=2.42 and I=8(196/245-1/2)=2.40 are distinct finite-sample summaries. The quoted 0.20 uncertainty belongs to the conventional analysis.",
         "The complete analysis permits memory and bounded setting predictability; its stopping and timing conditions require the original records for independent verification.",
         "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record."
       ],
       "contextIds": [
         "hensen2015"
@@ -31913,7 +32106,11 @@
         "S=2.42 and I=8(196/245-1/2)=2.40 are distinct finite-sample summaries. The quoted 0.20 uncertainty belongs to the conventional analysis.",
         "The complete analysis permits memory and bounded setting predictability; its stopping and timing conditions require the original records for independent verification.",
         "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis.",
+        "The adopted tau=1.08e-5 comes from supplementary section I: external QRNG characterization, k=4 tests and a stated two-sigma finite-test estimate, applied to k=32 spacelike raw bits. It is an assumed conditional predictability bound, not inferred from the 245 Bell trials or certified by their table replay; its calibration uncertainty is not separately included in the quoted tail.",
+        "The admitted numerical replay uses the stated Equation 7 tail and Equation 8 bound. Supplementary Equation 83 prints equality after the inequality in Equations 75-77; the induction also has inconsistent n versus n-1 subscripts. These printed proof steps are not independently certified by the table calculation."
       ],
       "contextIds": [
         "hensen2015"
@@ -31922,7 +32119,7 @@
     {
       "id": "M-phys-hensen2015-bell-test",
       "kind": "method",
-      "statement": "The local-model test uses the declared win score and finite-sample null bound under the stated assumptions.",
+      "statement": "Count wins with (-1)^(a*b)*x*y=1 for psi-minus heralds. At fixed accepted-trial n, bound the specified local-model tail by sum(j=k..n) binom(n,j)*xi^j*(1-xi)^(n-j), with xi=3/4+3*(tau+tau^2) and adopted tau=1.08e-5. The Bernoulli tail is a domination bound allowing device memory, not an assertion of independent observed trials.",
       "scope": "specified-Bell-test",
       "status": "method-contract",
       "citations": [
@@ -31931,6 +32128,12 @@
           "locator": "Supplementary pages 13-16: statistical introduction and sections N-P, score and null assumptions",
           "role": "method",
           "note": "Supports the scoped assertion in the reviewed passage."
+        },
+        {
+          "sourceId": "hensen2015",
+          "locator": "Supplementary pages 17-23: section Q, single-attempt bound, history conditioning and binomial-tail induction; Equations 21-86",
+          "role": "method",
+          "note": "Reviewed proof and its printed limitations for the existing bounded table replay."
         }
       ],
       "checkIds": [],
@@ -31942,7 +32145,11 @@
         "The Bell trial uses two levels of each spin-1 NV ground state, not a census of two isolated spin-half particles.",
         "S=2.42 and I=8(196/245-1/2)=2.40 are distinct finite-sample summaries. The quoted 0.20 uncertainty belongs to the conventional analysis.",
         "The complete analysis permits memory and bounded setting predictability; its stopping and timing conditions require the original records for independent verification.",
-        "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum."
+        "A Bell violation supports entanglement within the quantum measurement model. It does not establish superluminal communication, a unique preparation mechanism or a universal carrier minimum.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "The adopted tau=1.08e-5 comes from supplementary section I: external QRNG characterization, k=4 tests and a stated two-sigma finite-test estimate, applied to k=32 spacelike raw bits. It is an assumed conditional predictability bound, not inferred from the 245 Bell trials or certified by their table replay; its calibration uncertainty is not separately included in the quoted tail.",
+        "The admitted numerical replay uses the stated Equation 7 tail and Equation 8 bound. Supplementary Equation 83 prints equality after the inequality in Equations 75-77; the induction also has inconsistent n versus n-1 subscripts. These printed proof steps are not independently certified by the table calculation."
       ],
       "contextIds": [
         "hensen2015"
@@ -31967,7 +32174,10 @@
         "The same group and apparatus supply both runs; the second run has changed heralding windows, psi-minus/psi-plus tags and a replaced detector with recalibrated timing.",
         "The second-run complete P=0.061 does not reject the specified null at 0.05. Nonrejection does not establish a local model.",
         "Combined-run P-values depend on the combination assumptions; they are not a third independent experiment. Post hoc window scans do not yield global significance.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The published sequence delays the readout pulse by 70 ns after XOR processing while retaining its end time. The deposited script uses 10620<t<=14320 ns relative to recorded sync pulses; replay follows those coordinates without independently reconstructing pulse or clock alignment.",
+        "The stored Twitter bits provide no fresh spacelike randomness by themselves. Settings uniformity tests do not prove independence from an unobserved local hidden state.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record."
       ],
       "contextIds": [
         "hensen2016"
@@ -32006,7 +32216,8 @@
         "The same group and apparatus supply both runs; the second run has changed heralding windows, psi-minus/psi-plus tags and a replaced detector with recalibrated timing.",
         "The second-run complete P=0.061 does not reject the specified null at 0.05. Nonrejection does not establish a local model.",
         "Combined-run P-values depend on the combination assumptions; they are not a third independent experiment. Post hoc window scans do not yield global significance.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record."
       ],
       "contextIds": [
         "hensen2016"
@@ -32045,7 +32256,9 @@
         "The same group and apparatus supply both runs; the second run has changed heralding windows, psi-minus/psi-plus tags and a replaced detector with recalibrated timing.",
         "The second-run complete P=0.061 does not reject the specified null at 0.05. Nonrejection does not establish a local model.",
         "Combined-run P-values depend on the combination assumptions; they are not a third independent experiment. Post hoc window scans do not yield global significance.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ],
       "contextIds": [
         "hensen2016"
@@ -32054,7 +32267,7 @@
     {
       "id": "M-phys-hensen2016-bell-test",
       "kind": "method",
-      "statement": "The local-model test uses the declared win score and finite-sample null bound under the stated assumptions.",
+      "statement": "Count wins with (-1)^(a*b)*x*y=1 for psi-minus heralds and (-1)^(a*(b+1))*x*y=1 for psi-plus heralds. At fixed accepted-trial n, bound the specified local-model tail by sum(j=k..n) binom(n,j)*xi^j*(1-xi)^(n-j), with xi=3/4+3*(tau+tau^2) and adopted tau=1.08e-5. The Bernoulli tail is a domination bound allowing device memory, not an assertion of independent observed trials.",
       "scope": "specified-Bell-test",
       "status": "method-contract",
       "citations": [
@@ -32063,6 +32276,12 @@
           "locator": "Pages 1-3: second-run preparation, state-specific scores and results; Figures 1-2",
           "role": "method",
           "note": "Supports the scoped assertion in the reviewed passage."
+        },
+        {
+          "sourceId": "hensen2016",
+          "locator": "Pages 6-10: conditional local-model assumptions, RNG analysis and conclusion",
+          "role": "limits",
+          "note": "The later mathematical extension does not replace the bound used by the deposited replay."
         }
       ],
       "checkIds": [],
@@ -32074,7 +32293,11 @@
         "The same group and apparatus supply both runs; the second run has changed heralding windows, psi-minus/psi-plus tags and a replaced detector with recalibrated timing.",
         "The second-run complete P=0.061 does not reject the specified null at 0.05. Nonrejection does not establish a local model.",
         "Combined-run P-values depend on the combination assumptions; they are not a third independent experiment. Post hoc window scans do not yield global significance.",
-        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced."
+        "This checks the deposited table calculations. Original acquisition, marker construction, clock synchronization, the stopping rule and the RNG calibration are not independently reproduced.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis.",
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "The second experiment states n=300 before reporting its outcome. The two archived detector periods, herald-state scores and wider predefined windows retain their own selection; they are one run, not independent replications.",
+        "The 2016 theoretical extension permits distributions of bias and early settings under its conditional independence assumptions; it is not a new empirical RNG calibration. The stored replay deliberately retains the older xi=3/4+3*(tau+tau^2) bound used by the deposited script."
       ],
       "contextIds": [
         "hensen2016"
@@ -56374,6 +56597,633 @@
       "contextIds": [
         "h1-2001-dis-evolution"
       ]
+    },
+    {
+      "id": "D-phys-regulated-scalar-region-state",
+      "kind": "review-finding",
+      "statement": "Use hbar=c=1 and H=(1/2) integral d^3x [pi^2+|grad phi|^2]. Expand in real spherical harmonics and discretize radius at j*a, j=1,...,N, with phi_(l,m,N+1)=0 at L=(N+1)a. Equation 18 defines the radial oscillator couplings. The state is the pure Gaussian ground state, with Omega=sqrt(K) for each positive oscillator matrix K. Split each partial wave into inside sites j<=n and outside sites j>n, with R=(n+1/2)a.",
+      "scope": "The stated radially regulated 3+1-dimensional free massless real scalar vacuum and its inside/outside partition.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy",
+          "role": "supports",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum",
+          "role": "supports",
+          "note": "Supports this regulated construction or its reported calculation."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Each partial wave has N oscillator factors, each infinite-dimensional; the angular sum remains unbounded. This construction does not assert finite-qubit or arbitrary continuum/gauge-region factorization.",
+        "The chosen sphere is a partition, not a new physical wall at R. The outer Dirichlet boundary and spacing a are part of the model; neither N nor n counts elementary particles."
+      ]
+    },
+    {
+      "id": "M-phys-srednicki1993-region-entropy-context",
+      "kind": "method",
+      "statement": "Trace the inside oscillators from the pure ground-state density operator. For Omega blocks A,B,C, the reduced Gaussian has beta=B^T A^-1 B/2 and gamma=C-beta. Diagonalization gives mode parameters xi_i and S_l=sum_i[-log(1-xi_i)-xi_i*log(xi_i)/(1-xi_i)]. Sum S=sum_l(2l+1)S_l; the large-l expressions in Equations 20-21 control convergence in three spatial dimensions.",
+      "scope": "The stated radially regulated 3+1-dimensional free massless real scalar vacuum and its inside/outside partition.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy",
+          "role": "method",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum",
+          "role": "method",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations",
+          "role": "method",
+          "note": "Supports this regulated construction or its reported calculation."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "S=-Tr(rho_out log rho_out) uses natural logarithms and is dimensionless. This is a reduced-state entropy, not a thermodynamic temperature or entropy of the full pure vacuum.",
+        "The numerical matrices, partial-wave truncation/tail implementation and fit data are not reproduced. Equal inside/outside spectra for a pure state do not alone prove an area law."
+      ],
+      "contextIds": [
+        "srednicki1993-region-entropy"
+      ]
+    },
+    {
+      "id": "C-phys-srednicki1993-area-entropy",
+      "kind": "review-finding",
+      "statement": "Srednicki reports S approximately 0.30(R/a)^2 for N=60 and 1<=n<=30, proportional to sphere area A=4*pi*R^2. At fixed n<=N/2, the reported N=20,40,60 results agree within 0.5% in the worst case. The nonzero reduced entropy of this declared pure state means it does not factorize across the chosen inside/outside partition.",
+      "scope": "The stated radially regulated 3+1-dimensional free massless real scalar vacuum and its inside/outside partition.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy",
+          "role": "supports",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum",
+          "role": "supports",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations",
+          "role": "supports",
+          "note": "Supports this regulated construction or its reported calculation."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The coefficient is regulator-dependent: 0.30 multiplies R^2/a^2, not A/a^2. The finite-box comparison is not exact infrared independence; S falls near the outer wall and is zero when all N sites are traced.",
+        "The criterion uses the pure state and specified tensor factors/trace, not an ordinary two-point correlation alone. It establishes no Bell violation, controllable signal, particle population, universal continuum entropy or temporal entanglement-creation mechanism.",
+        "This is a publication-reported numerical result, not an experiment or local replay. No continuum-limit finite value, universal area coefficient or black-hole entropy identification is inferred."
+      ],
+      "contextIds": [
+        "srednicki1993-region-entropy"
+      ]
+    },
+    {
+      "id": "M-phys-srednicki1993-area-entropy",
+      "kind": "method",
+      "statement": "The chosen free-vacuum ground state, regulated inside/outside factors and Gaussian partial trace condition the reported entropy. Pure-state nonfactorization interprets its positive value; the finite bipartite baseline does not supply a theorem for arbitrary continuum local algebras.",
+      "scope": "The stated radially regulated 3+1-dimensional free massless real scalar vacuum and its inside/outside partition.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy",
+          "role": "method",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum",
+          "role": "method",
+          "note": "Supports this regulated construction or its reported calculation."
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations",
+          "role": "method",
+          "note": "Supports this regulated construction or its reported calculation."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "No two-point value, Bell dataset or field-creation history is substituted for this state/partition calculation."
+      ],
+      "contextIds": [
+        "srednicki1993-region-entropy"
+      ]
+    },
+    {
+      "id": "M-phys-shalm2015-acquisition-context",
+      "kind": "method",
+      "statement": "Prepare nonmaximally polarization-entangled 1550 nm photon pairs by pulsed downconversion and distribute them to separate Alice/Bob stations. Each local 99.1 kHz trial records a setting and + for a detection in the accepted window or 0 otherwise. Settings combine phase-diffusion, photon-sampling and predetermined pseudorandom bits by XOR. The selected Classical XOR3 run lasted 30 minutes.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The final run is one of six analyzed configurations over two days; a separate blind run was not analyzed. Pulse groupings reuse the same events and are not independent experiments. This photonic sample is distinct from the Delft spin runs; no joint p-value is formed."
+      ],
+      "contextIds": [
+        "shalm2015-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-shalm2015-response-context",
+      "kind": "method",
+      "statement": "Local arrival windows and the timing/calibration model determine the accepted binary outcomes and spacelike-separation claim. Published system efficiencies are 74.7 +/- 0.3% and 75.6 +/- 0.3%; five-pulse timing margin is 38.3 +/- 3.7 ns. The analysis assumes outcomes are fixed at the time taggers and reliable measured positions/delays.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 4-7, Section II and Figure S2: measured timing paths, uncertainties and spatial bounds",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 8-13, Section III and Figures S3-S6: random-setting generation, metrology and synchronization bias",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "No fair-sampling assumption is used to discard nondetections; local trial/window definitions and the complete outcomes remain operative. Spacelike timing does not prove absolute freedom of settings or complete device correctness.",
+        "RNG models and post-acquisition synchronization-board tests motivate the conservative epsilon=0.003 bound; output randomness tests do not certify unpredictability. Conditional independence of the two setting choices given the permitted predictability remains an assumption."
+      ],
+      "contextIds": [
+        "shalm2015-response"
+      ]
+    },
+    {
+      "id": "M-phys-shalm2015-inference-context",
+      "kind": "method",
+      "statement": "Test P(++|ab)<=P(+0|ab')+P(0+|a'b)+P(++|a'b'). The statistic N_S counts ++ab among the first N_chi events in those four settings/outcome classes. A disjoint initial training segment estimates f and fixes N_chi=0.9*r*f for the remaining r trials. Per trial, epsilon bounds each maximum setting probability: max(P(a),P(a')) and max(P(b),P(b'))<=(1+epsilon)/2. Use the reported memory-robust binomial-tail bound, with success bound 1/2 for equiprobable choices or 1/2+epsilon/(1+epsilon^2) for bounded predictability.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The Bell bound allows memory without iid trials. Training is excluded from the tested suffix; later events beyond the relevant-event cut are discarded. Stopping at the most favorable fluctuation would invalidate this procedure.",
+        "The main text highlights the most stable, best-aligned run and reports several overlapping pulse groupings. These reported per-analysis values are not a newly established global or multiple-selection-adjusted p-value. The iid-based diagnostic tests are separate."
+      ],
+      "contextIds": [
+        "shalm2015-inference"
+      ]
+    },
+    {
+      "id": "C-phys-shalm2015-trial-records",
+      "kind": "review-finding",
+      "statement": "For Classical XOR3 with pulses 4-8 aggregated, Table I reports 177358351 total trials through the selected stopping point, N_chi=12127 relevant events and N_S=6378 ++ab events. Supplement Table S-II retains all four outcomes, including 00, for each setting pair. These are stopping-selected counts from one recorded run.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Relevant-event thinning belongs to the declared null test, not a detected-pair fair-sampling assumption. N_chi is not the total trial count, and the full-run N_Total=182137032 in Table S-I is not the stopping-selected count. No event table, trial selection or timing data are locally replayed."
+      ],
+      "contextIds": [
+        "shalm2015-acquisition"
+      ]
+    },
+    {
+      "id": "C-phys-shalm2015-bell-test",
+      "kind": "review-finding",
+      "statement": "For that five-pulse analysis, Table I reports nominal p=5.9e-9 and predictability-adjusted p=2.3e-7 using epsilon=0.003. These are conditional tail bounds against the specified local model; the adjusted result permits the declared limited setting predictability.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 8-13, Section III and Figures S3-S6: random-setting generation, metrology and synchronization bias",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions",
+          "role": "supports",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Table I/abstract print 5.9e-9, nearby text 5.8e-9 and supplement Table S-I 5.85e-9 for the nominal case; the discrepancy is retained. The adjusted value is distinct from the nominal one.",
+        "A p-value is not the probability that locality is true. Conditional rejection does not certify every entangled state, superluminal signalling, ontological nonlocal causation or independence of all device assumptions. No published null calculation or experiment is reproduced here."
+      ],
+      "contextIds": [
+        "shalm2015-inference"
+      ]
+    },
+    {
+      "id": "M-phys-shalm2015-trial-records",
+      "kind": "method",
+      "statement": "Local acquisition, detection windows and the training-fixed cut jointly define the published counts. A selected count table is not the full time-tag stream.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Relevant-event thinning belongs to the declared null test, not a detected-pair fair-sampling assumption. N_chi is not the total trial count, and the full-run N_Total=182137032 in Table S-I is not the stopping-selected count. No event table, trial selection or timing data are locally replayed."
+      ],
+      "contextIds": [
+        "shalm2015-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-shalm2015-bell-test",
+      "kind": "method",
+      "statement": "The selected counts, declared apparatus/RNG boundary and memory-robust inference jointly support this conditional test. Nominal and adjusted tails reuse the same data.",
+      "scope": "The published Classical XOR3 photonic Bell run and its pulse-4-to-8 analysis, under the declared apparatus and local-model assumptions.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 8-13, Section III and Figures S3-S6: random-setting generation, metrology and synchronization bias",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions",
+          "role": "method",
+          "note": "Supports the declared experimental stage and its limits."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A p-value is not the probability that locality is true. Conditional rejection does not certify every entangled state, superluminal signalling, ontological nonlocal causation or independence of all device assumptions. No published null calculation or experiment is reproduced here."
+      ],
+      "contextIds": [
+        "shalm2015-inference"
+      ]
+    },
+    {
+      "id": "D-phys-qubit-teleportation",
+      "kind": "review-finding",
+      "statement": "For an unknown pure qubit initially independent of a shared singlet, Alice jointly measures the input and her resource qubit in the Bell basis. Each of four outcomes has probability 1/4. Two classical bits identify the outcome; Bob applies the corresponding identity or Pauli-equivalent rotation to recover the input state, up to a global phase. Averaging over the unreceived outcome gives Bob I/2, independent of the input.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "bennett1993-teleportation",
+          "locator": "Published pages 1895-1897, Equations 1-6: unknown input, shared singlet, Bell measurement and outcome-dependent recovery",
+          "role": "supports",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "bennett1993-teleportation",
+          "locator": "Published page 1897: two classical bits, unconditioned maximally mixed receiver and no superluminal information transfer",
+          "role": "supports",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This ideal protocol assumes a maximally entangled resource, complete Bell measurement and correct conditional operations. Its unit success probability is not an experimental detection efficiency.",
+        "Recovery requires the classical outcome. The original input is not retained as an independent copy; neither particle transport nor useful information faster than the classical channel follows."
+      ]
+    },
+    {
+      "id": "M-phys-boschi1998-teleportation-acquisition-context",
+      "kind": "method",
+      "statement": "The BBO down-conversion source supplies 702.2 nm photon pairs. Calcite paths and polarization rotations prepare (|a1 a2>+|b1 b2>)/sqrt(2), with the input alpha|v>+beta|h> encoded in the polarization of Alice's resource photon. The stations are about 2.5 m apart; the coincidence window is 1.6 ns and runs last 10 s, typically yielding about 500 coincidences.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The input is prepared on one of the resource photons; an independently supplied external input and the proposed local swap are not implemented. A two-photon realization uses distinct path and polarization factors, not three independently arriving photons."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-boschi1998-teleportation-response-context",
+      "kind": "method",
+      "statement": "Alice's path-polarization analyzer identifies four Bell-basis outcomes using a 50:50 beam splitter, polarizing beam splitters and four detector channels. Bob converts paths to polarization and sets the verification analyzer for each outcome according to Equation 11. The experiment uses passive outcome-dependent verification rather than active conditional correction. I_parallel and I_perpendicular are coincidences with the same Bob detector at orthogonal analyzer settings.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The paper relates orthogonal rates to projection probabilities through a common efficiency-dependent normalization k. The other Bob detector is used only for alignment; no simultaneous two-detector or all-emitted-pair efficiency certification is supplied.",
+        "Alice outcome labels and coincidence comparison are classical information needed to interpret the conditional output. No active arbitrary-input receiver channel, spacelike-signaling test or complete process tomography is demonstrated."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-response"
+      ]
+    },
+    {
+      "id": "M-phys-boschi1998-teleportation-inference-context",
+      "kind": "method",
+      "statement": "For linear inputs at 0, +120 and -120 degrees, each with prior probability 1/3, define S as I_parallel/(I_parallel+I_perpendicular), averaged with weights 1/3 over the inputs and 1/4 over the four Alice outcomes. Equations 1-3 and the Appendix bound S<=3/4 for single-copy measurement by Alice followed only by classical communication and state preparation by Bob. The verifier projects onto the corresponding prepared state after accounting for the outcome-dependent rotation.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The 3/4 bound belongs to this three-state ensemble and task, not the 2/3 uniform-qubit benchmark or a Bell-locality test. Its application here retains the published coincidence normalization and conditioning.",
+        "The source reports an uncertainty on S without a locally reconstructed error model; no covariance, confidence calibration or complete channel-fidelity reconstruction is claimed."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
+      ]
+    },
+    {
+      "id": "C-phys-boschi1998-teleportation-fringes",
+      "kind": "review-finding",
+      "statement": "Figure 2 shows four outcome-conditioned coincidence curves versus Bob's analyzer angle for a 22.5 degree linear input, with maxima at 22.5, 67.5, -67.5 and -22.5 degrees as predicted by Equation 11. Figure 3 displays the corresponding verification for an elliptical input prepared with a 20 degree quarter-wave plate, using an outcome-dependent quarter-wave setting at Bob.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "supports",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation",
+          "role": "supports",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These detected-coincidence scans are illustrative linear and elliptical settings, distinct from the three linear inputs used for S. They do not supply full state/process tomography or an unconditional success probability."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-acquisition"
+      ]
+    },
+    {
+      "id": "C-phys-boschi1998-teleportation-score",
+      "kind": "review-finding",
+      "statement": "For the three equally weighted linear inputs and four equally weighted Bell outcomes, the source reports S=0.853 +/- 0.012, exceeding its classical-channel bound 3/4. This is the reported average projection score inferred from normalized conditional coincidences under the stated response and benchmark assumptions.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result",
+          "role": "supports",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "supports",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The quoted uncertainty is retained as reported, without an independently reconstructed statistical/systematic decomposition or significance. It is not a fidelity claim for every input state or an all-trials detection-loophole-free test.",
+        "This result uses the same two-photon apparatus and passive verification; it does not establish active recovery of an external unknown input, faster-than-classical communication or independent replication by the fringe illustrations."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
+      ]
+    },
+    {
+      "id": "M-phys-boschi1998-teleportation-fringes",
+      "kind": "method",
+      "statement": "Interpret the displayed coincidence scans with the selected input preparation, Alice outcome labeling and Bob's Equation 11 analyzer mapping.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Publication-reported interpretation; no event, detector-response or uncertainty replay."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-acquisition"
+      ]
+    },
+    {
+      "id": "M-phys-boschi1998-teleportation-score",
+      "kind": "method",
+      "statement": "Infer the reported score from the separate three-input coincidence measurements using the declared orthogonal-rate normalization, equal input/outcome weights and classical benchmark.",
+      "scope": "Ideal qubit teleportation and the conditional two-photon Boschi 1998 realization",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result",
+          "role": "method",
+          "note": "Supports this scoped protocol or experimental statement."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Publication-reported interpretation; no event, detector-response or uncertainty replay."
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
+      ]
     }
   ],
   "entities": [
@@ -76385,7 +77235,7 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "Extensions require a specified partition, entanglement criterion and measurement or computational model; no universal generation or carrier-count rule is admitted."
       ]
     },
     {
@@ -76481,7 +77331,8 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ]
     },
     {
@@ -76509,7 +77360,8 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ]
     },
     {
@@ -76537,7 +77389,8 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ]
     },
     {
@@ -76557,7 +77410,8 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ]
     },
     {
@@ -76585,7 +77439,8 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ]
     },
     {
@@ -76613,7 +77468,8 @@
         }
       ],
       "openObligations": [
-        "Any extension requires its own state space, measurement domain and evidence."
+        "The deposited archives provide broad two-photon-preselected rows, settings and their times, first readout/excitation clicks, validity-marker ages, day/run labels, column definitions and analysis scripts. They do not provide all failed attempts, full acquisition streams, calibration logs, the long QRNG test files or a complete stopping-decision record.",
+        "Sections N-Q require fixed accepted-trial n chosen independently of the observed outcomes. The 45-minute hardware runs, fault stops and stored day/run labels do not prove that the overall stopping decision obeyed this requirement; stopping below a desired p-value would require a different analysis."
       ]
     },
     {
@@ -89616,6 +90472,389 @@
         "The 3% figure is experimental precision in the stated range, not total theory uncertainty. The borrowed H1+BCDMS coupling fit separately quotes asymmetric model errors and an additional estimated scale uncertainty about +/-0.005, not a stated confidence interval; none is absorbed into a universal 3% error.",
         "The analysis cannot reliably determine the xg shape for x>0.1. The source explicitly treats xg as nonobservable; heavy-flavor treatment changes it. It does not determine gluon spin, color factors, isolated particles or universal hadron formation."
       ]
+    },
+    {
+      "id": "phys:regulated-scalar-region-state",
+      "name": "Regulated scalar vacuum region partition",
+      "kind": "definition",
+      "description": "Use hbar=c=1 and H=(1/2) integral d^3x [pi^2+|grad phi|^2]. Expand in real spherical harmonics and discretize radius at j*a, j=1,...,N, with phi_(l,m,N+1)=0 at L=(N+1)a. Equation 18 defines the radial oscillator couplings. The state is the pure Gaussian ground state, with Omega=sqrt(K) for each positive oscillator matrix K. Split each partial wave into inside sites j<=n and outside sites j>n, with R=(n+1/2)a.",
+      "claimIds": [
+        "D-phys-regulated-scalar-region-state"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy"
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum"
+        }
+      ],
+      "openObligations": [
+        "Each partial wave has N oscillator factors, each infinite-dimensional; the angular sum remains unbounded. This construction does not assert finite-qubit or arbitrary continuum/gauge-region factorization.",
+        "The chosen sphere is a partition, not a new physical wall at R. The outer Dirichlet boundary and spacing a are part of the model; neither N nor n counts elementary particles."
+      ]
+    },
+    {
+      "id": "phys:srednicki1993-region-entropy-context",
+      "name": "Srednicki Gaussian partial-trace calculation",
+      "kind": "context",
+      "description": "Trace the inside oscillators from the pure ground-state density operator. For Omega blocks A,B,C, the reduced Gaussian has beta=B^T A^-1 B/2 and gamma=C-beta. Diagonalization gives mode parameters xi_i and S_l=sum_i[-log(1-xi_i)-xi_i*log(xi_i)/(1-xi_i)]. Sum S=sum_l(2l+1)S_l; the large-l expressions in Equations 20-21 control convergence in three spatial dimensions.",
+      "claimIds": [
+        "M-phys-srednicki1993-region-entropy-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy"
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum"
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations"
+        }
+      ],
+      "openObligations": [
+        "S=-Tr(rho_out log rho_out) uses natural logarithms and is dimensionless. This is a reduced-state entropy, not a thermodynamic temperature or entropy of the full pure vacuum.",
+        "The numerical matrices, partial-wave truncation/tail implementation and fit data are not reproduced. Equal inside/outside spectra for a pure state do not alone prove an area law."
+      ]
+    },
+    {
+      "id": "phys:srednicki1993-area-entropy",
+      "name": "Srednicki regulated vacuum area entropy",
+      "kind": "scoped-process",
+      "description": "Srednicki reports S approximately 0.30(R/a)^2 for N=60 and 1<=n<=30, proportional to sphere area A=4*pi*R^2. At fixed n<=N/2, the reported N=20,40,60 results agree within 0.5% in the worst case. The nonzero reduced entropy of this declared pure state means it does not factorize across the chosen inside/outside partition.",
+      "claimIds": [
+        "C-phys-srednicki1993-area-entropy"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 1-4 (PDF 3-6), Equations 1-13; printed page 7, reference 1: pure Gaussian state, partial trace, reduced spectrum and entropy"
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 4-5 (PDF 6-7), Equations 14-21: massless scalar partial waves, radial regulator, outer boundary and convergent entropy sum"
+        },
+        {
+          "sourceId": "srednicki1993-region-entropy",
+          "locator": "Author v2, printed pages 5-6 (PDF 7-8), Equation 22; printed page 8, Figure 1: numerical area scaling, finite-box comparisons and limitations"
+        }
+      ],
+      "openObligations": [
+        "The coefficient is regulator-dependent: 0.30 multiplies R^2/a^2, not A/a^2. The finite-box comparison is not exact infrared independence; S falls near the outer wall and is zero when all N sites are traced.",
+        "The criterion uses the pure state and specified tensor factors/trace, not an ordinary two-point correlation alone. It establishes no Bell violation, controllable signal, particle population, universal continuum entropy or temporal entanglement-creation mechanism.",
+        "This is a publication-reported numerical result, not an experiment or local replay. No continuum-limit finite value, universal area coefficient or black-hole entropy identification is inferred."
+      ]
+    },
+    {
+      "id": "phys:shalm2015-acquisition-context",
+      "name": "Shalm photonic Bell acquisition",
+      "kind": "context",
+      "description": "Prepare nonmaximally polarization-entangled 1550 nm photon pairs by pulsed downconversion and distribute them to separate Alice/Bob stations. Each local 99.1 kHz trial records a setting and + for a detection in the accepted window or 0 otherwise. Settings combine phase-diffusion, photon-sampling and predetermined pseudorandom bits by XOR. The selected Classical XOR3 run lasted 30 minutes.",
+      "claimIds": [
+        "M-phys-shalm2015-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions"
+        }
+      ],
+      "openObligations": [
+        "The final run is one of six analyzed configurations over two days; a separate blind run was not analyzed. Pulse groupings reuse the same events and are not independent experiments. This photonic sample is distinct from the Delft spin runs; no joint p-value is formed."
+      ]
+    },
+    {
+      "id": "phys:shalm2015-response-context",
+      "name": "Shalm detection and timing boundary",
+      "kind": "context",
+      "description": "Local arrival windows and the timing/calibration model determine the accepted binary outcomes and spacelike-separation claim. Published system efficiencies are 74.7 +/- 0.3% and 75.6 +/- 0.3%; five-pulse timing margin is 38.3 +/- 3.7 ns. The analysis assumes outcomes are fixed at the time taggers and reliable measured positions/delays.",
+      "claimIds": [
+        "M-phys-shalm2015-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection"
+        },
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 4-7, Section II and Figure S2: measured timing paths, uncertainties and spatial bounds"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 8-13, Section III and Figures S3-S6: random-setting generation, metrology and synchronization bias"
+        }
+      ],
+      "openObligations": [
+        "No fair-sampling assumption is used to discard nondetections; local trial/window definitions and the complete outcomes remain operative. Spacelike timing does not prove absolute freedom of settings or complete device correctness.",
+        "RNG models and post-acquisition synchronization-board tests motivate the conservative epsilon=0.003 bound; output randomness tests do not certify unpredictability. Conditional independence of the two setting choices given the permitted predictability remains an assumption."
+      ]
+    },
+    {
+      "id": "phys:shalm2015-inference-context",
+      "name": "Shalm memory-robust Bell inference",
+      "kind": "context",
+      "description": "Test P(++|ab)<=P(+0|ab')+P(0+|a'b)+P(++|a'b'). The statistic N_S counts ++ab among the first N_chi events in those four settings/outcome classes. A disjoint initial training segment estimates f and fixes N_chi=0.9*r*f for the remaining r trials. Per trial, epsilon bounds each maximum setting probability: max(P(a),P(a')) and max(P(b),P(b'))<=(1+epsilon)/2. Use the reported memory-robust binomial-tail bound, with success bound 1/2 for equiprobable choices or 1/2+epsilon/(1+epsilon^2) for bounded predictability.",
+      "claimIds": [
+        "M-phys-shalm2015-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions"
+        }
+      ],
+      "openObligations": [
+        "The Bell bound allows memory without iid trials. Training is excluded from the tested suffix; later events beyond the relevant-event cut are discarded. Stopping at the most favorable fluctuation would invalidate this procedure.",
+        "The main text highlights the most stable, best-aligned run and reports several overlapping pulse groupings. These reported per-analysis values are not a newly established global or multiple-selection-adjusted p-value. The iid-based diagnostic tests are separate."
+      ]
+    },
+    {
+      "id": "phys:shalm2015-trial-records",
+      "name": "Shalm stopping-selected trial counts",
+      "kind": "scoped-process",
+      "description": "For Classical XOR3 with pulses 4-8 aggregated, Table I reports 177358351 total trials through the selected stopping point, N_chi=12127 relevant events and N_S=6378 ++ab events. Supplement Table S-II retains all four outcomes, including 00, for each setting pair. These are stopping-selected counts from one recorded run.",
+      "claimIds": [
+        "C-phys-shalm2015-trial-records"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions"
+        }
+      ],
+      "openObligations": [
+        "Relevant-event thinning belongs to the declared null test, not a detected-pair fair-sampling assumption. N_chi is not the total trial count, and the full-run N_Total=182137032 in Table S-I is not the stopping-selected count. No event table, trial selection or timing data are locally replayed."
+      ]
+    },
+    {
+      "id": "phys:shalm2015-bell-test",
+      "name": "Shalm conditional photonic Bell test",
+      "kind": "scoped-process",
+      "description": "For that five-pulse analysis, Table I reports nominal p=5.9e-9 and predictability-adjusted p=2.3e-7 using epsilon=0.003. These are conditional tail bounds against the specified local model; the adjusted result permits the declared limited setting predictability.",
+      "claimIds": [
+        "C-phys-shalm2015-bell-test"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "shalm2015-bell",
+          "locator": "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 1-4, Sections I.A-I.C and Equations S1-S4: relevant trials, training, stopping and predictability-adjusted null"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 8-13, Section III and Figures S3-S6: random-setting generation, metrology and synchronization bias"
+        },
+        {
+          "sourceId": "shalm2015-bell-supplement",
+          "locator": "Supplement pages 13-16, Section IV and Tables S-I to S-III: run selection, stopping counts, outcome table and diagnostic assumptions"
+        }
+      ],
+      "openObligations": [
+        "Table I/abstract print 5.9e-9, nearby text 5.8e-9 and supplement Table S-I 5.85e-9 for the nominal case; the discrepancy is retained. The adjusted value is distinct from the nominal one.",
+        "A p-value is not the probability that locality is true. Conditional rejection does not certify every entangled state, superluminal signalling, ontological nonlocal causation or independence of all device assumptions. No published null calculation or experiment is reproduced here."
+      ]
+    },
+    {
+      "id": "phys:qubit-teleportation-protocol",
+      "name": "Ideal qubit teleportation",
+      "kind": "definition",
+      "description": "For an unknown pure qubit initially independent of a shared singlet, Alice jointly measures the input and her resource qubit in the Bell basis. Each of four outcomes has probability 1/4. Two classical bits identify the outcome; Bob applies the corresponding identity or Pauli-equivalent rotation to recover the input state, up to a global phase. Averaging over the unreceived outcome gives Bob I/2, independent of the input.",
+      "claimIds": [
+        "D-phys-qubit-teleportation"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "bennett1993-teleportation",
+          "locator": "Published pages 1895-1897, Equations 1-6: unknown input, shared singlet, Bell measurement and outcome-dependent recovery"
+        },
+        {
+          "sourceId": "bennett1993-teleportation",
+          "locator": "Published page 1897: two classical bits, unconditioned maximally mixed receiver and no superluminal information transfer"
+        }
+      ],
+      "openObligations": [
+        "This ideal protocol assumes a maximally entangled resource, complete Bell measurement and correct conditional operations. Its unit success probability is not an experimental detection efficiency.",
+        "Recovery requires the classical outcome. The original input is not retained as an independent copy; neither particle transport nor useful information faster than the classical channel follows."
+      ]
+    },
+    {
+      "id": "phys:boschi1998-teleportation-acquisition-context",
+      "name": "Two-photon teleportation preparation",
+      "kind": "context",
+      "description": "The BBO down-conversion source supplies 702.2 nm photon pairs. Calcite paths and polarization rotations prepare (|a1 a2>+|b1 b2>)/sqrt(2), with the input alpha|v>+beta|h> encoded in the polarization of Alice's resource photon. The stations are about 2.5 m apart; the coincidence window is 1.6 ns and runs last 10 s, typically yielding about 500 coincidences.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-acquisition-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer"
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+        }
+      ],
+      "openObligations": [
+        "The input is prepared on one of the resource photons; an independently supplied external input and the proposed local swap are not implemented. A two-photon realization uses distinct path and polarization factors, not three independently arriving photons."
+      ]
+    },
+    {
+      "id": "phys:boschi1998-teleportation-response-context",
+      "name": "Passive teleportation verification",
+      "kind": "context",
+      "description": "Alice's path-polarization analyzer identifies four Bell-basis outcomes using a 50:50 beam splitter, polarizing beam splitters and four detector channels. Bob converts paths to polarization and sets the verification analyzer for each outcome according to Equation 11. The experiment uses passive outcome-dependent verification rather than active conditional correction. I_parallel and I_perpendicular are coincidences with the same Bob detector at orthogonal analyzer settings.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1121-1123, Figure 1 and Equations 4-10: two-photon path resource, locally encoded polarization input and Bell-state analyzer"
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation"
+        }
+      ],
+      "openObligations": [
+        "The paper relates orthogonal rates to projection probabilities through a common efficiency-dependent normalization k. The other Bob detector is used only for alignment; no simultaneous two-detector or all-emitted-pair efficiency certification is supplied.",
+        "Alice outcome labels and coincidence comparison are classical information needed to interpret the conditional output. No active arbitrary-input receiver channel, spacelike-signaling test or complete process tomography is demonstrated."
+      ]
+    },
+    {
+      "id": "phys:boschi1998-teleportation-inference-context",
+      "name": "Three-state teleportation criterion",
+      "kind": "context",
+      "description": "For linear inputs at 0, +120 and -120 degrees, each with prior probability 1/3, define S as I_parallel/(I_parallel+I_perpendicular), averaged with weights 1/3 over the inputs and 1/4 over the four Alice outcomes. Equations 1-3 and the Appendix bound S<=3/4 for single-copy measurement by Alice followed only by classical communication and state preparation by Bob. The verifier projects onto the corresponding prepared state after accounting for the outcome-dependent rotation.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result"
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+        }
+      ],
+      "openObligations": [
+        "The 3/4 bound belongs to this three-state ensemble and task, not the 2/3 uniform-qubit benchmark or a Bell-locality test. Its application here retains the published coincidence normalization and conditioning.",
+        "The source reports an uncertainty on S without a locally reconstructed error model; no covariance, confidence calibration or complete channel-fidelity reconstruction is claimed."
+      ]
+    },
+    {
+      "id": "phys:boschi1998-teleportation-fringes",
+      "name": "Conditional teleportation fringes",
+      "kind": "scoped-process",
+      "description": "Figure 2 shows four outcome-conditioned coincidence curves versus Bob's analyzer angle for a 22.5 degree linear input, with maxima at 22.5, 67.5, -67.5 and -22.5 degrees as predicted by Equation 11. Figure 3 displays the corresponding verification for an elliptical input prepared with a 20 degree quarter-wave plate, using an outcome-dependent quarter-wave setting at Bob.",
+      "claimIds": [
+        "C-phys-boschi1998-teleportation-fringes"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published page 1124, Figures 2-3 and Equation 12: linear and elliptical input coincidence fringes and active-correction limitation"
+        }
+      ],
+      "openObligations": [
+        "These detected-coincidence scans are illustrative linear and elliptical settings, distinct from the three linear inputs used for S. They do not supply full state/process tomography or an unconditional success probability."
+      ]
+    },
+    {
+      "id": "phys:boschi1998-teleportation-score",
+      "name": "Three-state teleportation score",
+      "kind": "scoped-process",
+      "description": "For the three equally weighted linear inputs and four equally weighted Bell outcomes, the source reports S=0.853 +/- 0.012, exceeding its classical-channel bound 3/4. This is the reported average projection score inferred from normalized conditional coincidences under the stated response and benchmark assumptions.",
+      "claimIds": [
+        "C-phys-boschi1998-teleportation-score"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1122-1123 and 1125, Equations 1-3 and Appendix: three-state classical benchmark, equally weighted score and reported result"
+        },
+        {
+          "sourceId": "boschi1998-teleportation",
+          "locator": "Published pages 1123-1124, Equation 11 and apparatus paragraphs: passive outcome-dependent verification, coincidence window and detector normalization"
+        }
+      ],
+      "openObligations": [
+        "The quoted uncertainty is retained as reported, without an independently reconstructed statistical/systematic decomposition or significance. It is not a fidelity claim for every input state or an all-trials detection-loophole-free test.",
+        "This result uses the same two-photon apparatus and passive verification; it does not establish active recovery of an external unknown input, faster-than-classical communication or independent replication by the fringe illustrations."
+      ]
     }
   ],
   "rules": [
@@ -93440,7 +94679,7 @@
       "target": "phys:hensen2015-bell-test",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The local-model test uses the declared win score and finite-sample null bound under the stated assumptions.",
+      "assertion": "Count wins with (-1)^(a*b)*x*y=1 for psi-minus heralds. At fixed accepted-trial n, bound the specified local-model tail by sum(j=k..n) binom(n,j)*xi^j*(1-xi)^(n-j), with xi=3/4+3*(tau+tau^2) and adopted tau=1.08e-5. The Bernoulli tail is a domination bound allowing device memory, not an assertion of independent observed trials.",
       "claimIds": [
         "M-phys-hensen2015-bell-test"
       ],
@@ -93454,7 +94693,7 @@
       "target": "phys:hensen2015-bell-test",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The local-model test uses the declared win score and finite-sample null bound under the stated assumptions.",
+      "assertion": "Count wins with (-1)^(a*b)*x*y=1 for psi-minus heralds. At fixed accepted-trial n, bound the specified local-model tail by sum(j=k..n) binom(n,j)*xi^j*(1-xi)^(n-j), with xi=3/4+3*(tau+tau^2) and adopted tau=1.08e-5. The Bernoulli tail is a domination bound allowing device memory, not an assertion of independent observed trials.",
       "claimIds": [
         "M-phys-hensen2015-bell-test"
       ],
@@ -93482,7 +94721,7 @@
       "target": "phys:hensen2016-bell-test",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The local-model test uses the declared win score and finite-sample null bound under the stated assumptions.",
+      "assertion": "Count wins with (-1)^(a*b)*x*y=1 for psi-minus heralds and (-1)^(a*(b+1))*x*y=1 for psi-plus heralds. At fixed accepted-trial n, bound the specified local-model tail by sum(j=k..n) binom(n,j)*xi^j*(1-xi)^(n-j), with xi=3/4+3*(tau+tau^2) and adopted tau=1.08e-5. The Bernoulli tail is a domination bound allowing device memory, not an assertion of independent observed trials.",
       "claimIds": [
         "M-phys-hensen2016-bell-test"
       ],
@@ -93496,7 +94735,7 @@
       "target": "phys:hensen2016-bell-test",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The local-model test uses the declared win score and finite-sample null bound under the stated assumptions.",
+      "assertion": "Count wins with (-1)^(a*b)*x*y=1 for psi-minus heralds and (-1)^(a*(b+1))*x*y=1 for psi-plus heralds. At fixed accepted-trial n, bound the specified local-model tail by sum(j=k..n) binom(n,j)*xi^j*(1-xi)^(n-j), with xi=3/4+3*(tau+tau^2) and adopted tau=1.08e-5. The Bernoulli tail is a domination bound allowing device memory, not an assertion of independent observed trials.",
       "claimIds": [
         "M-phys-hensen2016-bell-test"
       ],
@@ -103895,6 +105134,238 @@
       ],
       "contextIds": [
         "h1-2001-dis-evolution"
+      ]
+    },
+    {
+      "id": "physics:free-field-vacuum-regulated-scalar-region-state",
+      "source": "phys:free-field-vacuum",
+      "target": "phys:regulated-scalar-region-state",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The free-field ground-state convention is specialized by the stated Hamiltonian, radial regulator and boundary; it supplies no generic continuum subsystem factorization.",
+      "claimIds": [
+        "D-phys-regulated-scalar-region-state"
+      ]
+    },
+    {
+      "id": "physics:regulated-scalar-region-state-srednicki1993-area-entropy",
+      "source": "phys:regulated-scalar-region-state",
+      "target": "phys:srednicki1993-area-entropy",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The regulated pure state and explicit inside/outside factors define which degrees of freedom are traced.",
+      "claimIds": [
+        "M-phys-srednicki1993-area-entropy"
+      ],
+      "contextIds": [
+        "srednicki1993-region-entropy"
+      ]
+    },
+    {
+      "id": "physics:srednicki1993-region-entropy-context-srednicki1993-area-entropy",
+      "source": "phys:srednicki1993-region-entropy-context",
+      "target": "phys:srednicki1993-area-entropy",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared Gaussian reduction and partial-wave entropy calculation produce the reported numerical result.",
+      "claimIds": [
+        "M-phys-srednicki1993-area-entropy"
+      ],
+      "contextIds": [
+        "srednicki1993-region-entropy"
+      ]
+    },
+    {
+      "id": "physics:bipartite-entanglement-srednicki1993-area-entropy",
+      "source": "phys:bipartite-entanglement",
+      "target": "phys:srednicki1993-area-entropy",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The pure-state factorization criterion is instantiated for the declared oscillator factors; the finite-state baseline alone is not a continuum-region factorization theorem.",
+      "claimIds": [
+        "M-phys-srednicki1993-area-entropy"
+      ],
+      "contextIds": [
+        "srednicki1993-region-entropy"
+      ]
+    },
+    {
+      "id": "physics:shalm2015-acquisition-context-shalm2015-trial-records",
+      "source": "phys:shalm2015-acquisition-context",
+      "target": "phys:shalm2015-trial-records",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The local preparation and measurement procedure supplies the recorded settings and binary outcomes.",
+      "claimIds": [
+        "M-phys-shalm2015-trial-records"
+      ],
+      "contextIds": [
+        "shalm2015-acquisition"
+      ]
+    },
+    {
+      "id": "physics:shalm2015-response-context-shalm2015-trial-records",
+      "source": "phys:shalm2015-response-context",
+      "target": "phys:shalm2015-trial-records",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The local detection windows and timing interpretation define the accepted outcomes.",
+      "claimIds": [
+        "M-phys-shalm2015-trial-records"
+      ],
+      "contextIds": [
+        "shalm2015-acquisition"
+      ]
+    },
+    {
+      "id": "physics:shalm2015-inference-context-shalm2015-trial-records",
+      "source": "phys:shalm2015-inference-context",
+      "target": "phys:shalm2015-trial-records",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The training-fixed relevant-event cut defines which recorded trials enter the published count table.",
+      "claimIds": [
+        "M-phys-shalm2015-trial-records"
+      ],
+      "contextIds": [
+        "shalm2015-acquisition"
+      ]
+    },
+    {
+      "id": "physics:shalm2015-trial-records-shalm2015-bell-test",
+      "source": "phys:shalm2015-trial-records",
+      "target": "phys:shalm2015-bell-test",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The selected setting/outcome counts supply this null-test statistic.",
+      "claimIds": [
+        "M-phys-shalm2015-bell-test"
+      ],
+      "contextIds": [
+        "shalm2015-inference"
+      ]
+    },
+    {
+      "id": "physics:shalm2015-response-context-shalm2015-bell-test",
+      "source": "phys:shalm2015-response-context",
+      "target": "phys:shalm2015-bell-test",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "Timing, outcome-fixation and predictability assumptions condition the local-model rejection.",
+      "claimIds": [
+        "M-phys-shalm2015-bell-test"
+      ],
+      "contextIds": [
+        "shalm2015-inference"
+      ]
+    },
+    {
+      "id": "physics:shalm2015-inference-context-shalm2015-bell-test",
+      "source": "phys:shalm2015-inference-context",
+      "target": "phys:shalm2015-bell-test",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared memory-robust tail and stopping protocol give the reported nominal and adjusted bounds.",
+      "claimIds": [
+        "M-phys-shalm2015-bell-test"
+      ],
+      "contextIds": [
+        "shalm2015-inference"
+      ]
+    },
+    {
+      "id": "physics:bipartite-entanglement-qubit-teleportation-protocol",
+      "source": "phys:bipartite-entanglement",
+      "target": "phys:qubit-teleportation-protocol",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "A maximally entangled pair across the declared sender/receiver factors supplies this ideal protocol resource; generic entanglement alone does not certify an implementation.",
+      "claimIds": [
+        "D-phys-qubit-teleportation"
+      ]
+    },
+    {
+      "id": "physics:boschi1998-teleportation-acquisition-context-boschi1998-teleportation-fringes",
+      "source": "phys:boschi1998-teleportation-acquisition-context",
+      "target": "phys:boschi1998-teleportation-fringes",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The preparation and coincidence acquisition supply the selected linear and elliptical scans.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-fringes"
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-acquisition"
+      ]
+    },
+    {
+      "id": "physics:boschi1998-teleportation-response-context-boschi1998-teleportation-fringes",
+      "source": "phys:boschi1998-teleportation-response-context",
+      "target": "phys:boschi1998-teleportation-fringes",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The Bell-outcome map and passive analyzer settings interpret the observed scan peaks.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-fringes"
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-acquisition"
+      ]
+    },
+    {
+      "id": "physics:boschi1998-teleportation-acquisition-context-boschi1998-teleportation-score",
+      "source": "phys:boschi1998-teleportation-acquisition-context",
+      "target": "phys:boschi1998-teleportation-score",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "Separate settings of the same apparatus supply the three-input coincidences used for S; the illustrative fringe plots are not those data.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-score"
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
+      ]
+    },
+    {
+      "id": "physics:boschi1998-teleportation-response-context-boschi1998-teleportation-score",
+      "source": "phys:boschi1998-teleportation-response-context",
+      "target": "phys:boschi1998-teleportation-score",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The orthogonal-rate normalization and outcome-dependent verification condition the score.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-score"
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
+      ]
+    },
+    {
+      "id": "physics:boschi1998-teleportation-inference-context-boschi1998-teleportation-score",
+      "source": "phys:boschi1998-teleportation-inference-context",
+      "target": "phys:boschi1998-teleportation-score",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The input prior and four-outcome averaging specify this score and its 3/4 classical comparison.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-score"
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
+      ]
+    },
+    {
+      "id": "physics:qubit-teleportation-protocol-boschi1998-teleportation-score",
+      "source": "phys:qubit-teleportation-protocol",
+      "target": "phys:boschi1998-teleportation-score",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The ideal protocol supplies the transfer task; this passive, locally encoded-input experiment tests a restricted realization, not every operation of an active external-input channel.",
+      "claimIds": [
+        "M-phys-boschi1998-teleportation-score"
+      ],
+      "contextIds": [
+        "boschi1998-teleportation-inference"
       ]
     }
   ]

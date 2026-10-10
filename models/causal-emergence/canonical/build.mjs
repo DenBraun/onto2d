@@ -41,7 +41,10 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
     ...entity, typeRole: entity.kind, scientificStatus: entity.status,
     shortDescription: entity.description, rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id)
   }));
-  const edges = graph.relations.map(({ kind, ...relation }) => ({ ...relation, relationLayer: kind, rationale: rationale(relation.claimIds) }));
+  // Relations reference the complete claims in dictionaries.claims. Expanding
+  // their sources and study contexts again on every edge duplicates evidence
+  // without adding information; selected nodes keep self-contained rationale.
+  const edges = graph.relations.map(({ kind, ...relation }) => ({ ...relation, relationLayer: kind }));
   for (const rule of graph.rules) {
     nodes.push({
       ...rule, level: 0, typeRole: "construction-rule", scientificStatus: "proposed-rule",
@@ -131,6 +134,10 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/gluon-spin.mjs",
     "models/causal-emergence/canonical/gluon-color.mjs",
     "models/causal-emergence/canonical/gluon-dis.mjs",
+    "models/causal-emergence/canonical/entanglement-formal.mjs",
+    "models/causal-emergence/canonical/entanglement-vacuum.mjs",
+    "models/causal-emergence/canonical/entanglement-bell.mjs",
+    "models/causal-emergence/canonical/entanglement-teleportation.mjs",
     "models/causal-emergence/canonical/lepton-formal.mjs",
     "models/causal-emergence/canonical/lepton-tau.mjs",
     "models/causal-emergence/canonical/lepton-electron.mjs",

@@ -42,10 +42,10 @@ test("joint rules require distinct multiplicities and cannot assert successful p
 
 test("the current output contains evidence and no graph migration history", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1235, edgeCount: 1018 });
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1249, edgeCount: 1035 });
   const dictionaries = pack.files["model/dictionaries.json"];
-  assert.equal(dictionaries.claims.length, 1328);
-  assert.equal(dictionaries.sources.length, 398);
+  assert.equal(dictionaries.claims.length, 1347);
+  assert.equal(dictionaries.sources.length, 403);
   const census = dictionaries.evidence.neurogenesisData;
   assert.equal(census.sampleCount, 39);
   assert.equal(census.retainedNuclei, 153530);
@@ -62,6 +62,27 @@ test("the current output contains evidence and no graph migration history", asyn
   };
   inspect(pack.files);
   assert.ok(pack.files["model/nodes.json"].every((n) => n.rationale.length));
+  const edges = new Map(pack.files["model/edges.json"].map((edge) => [edge.id, edge]));
+  const claims = new Map(dictionaries.claims.map((claim) => [claim.id, claim]));
+  const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
+  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics"]
+    .flatMap((key) => dictionaries[key].studies).map((study) => [study.id, study]));
+  for (const { kind, ...relation } of data.graph.relations) {
+    const edge = edges.get(relation.id);
+    assert.deepEqual(edge, { ...relation, relationLayer: kind }, "All relation fields survive normalization");
+    for (const id of edge.claimIds) {
+      const claim = claims.get(id);
+      assert.deepEqual(claim, data.graph.claims.find((item) => item.id === id), "Complete edge evidence remains in the dictionary");
+      for (const citation of claim.citations) {
+        assert.deepEqual(sources.get(citation.sourceId), data.graph.sources.find((source) => source.id === citation.sourceId));
+      }
+      for (const contextId of claim.contextIds ?? []) assert.ok(studies.has(contextId), `Missing study ${contextId}`);
+      for (const contextId of claim.experimentalContextIds ?? []) {
+        assert.ok(dictionaries.routing.contexts.some((context) => context.id === contextId));
+        assert.ok(dictionaries.routing.reviews.some((review) => review.contextId === contextId));
+      }
+    }
+  }
   assert.ok(!pack.manifest.source.files.some((f) => /source-snapshots|migration\.json/.test(f.path)));
 });
 

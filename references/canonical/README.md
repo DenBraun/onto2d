@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1235 records, 1018 connections, 1328 claims and 398 sources.
+The current graph contains 1249 records, 1035 connections, 1347 claims and 403 sources.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -453,7 +453,11 @@ state is entangled when it has no convex decomposition into product states;
 being nonproduct alone is insufficient. The subsystem partition is explicit.
 It supplies neither a universal two-particle minimum nor a physical formation
 order. Local unconditioned marginals follow from the declared Born measurement
-model and completeness of its projectors.
+model and completeness of its projectors. Entangled states still have local
+reduced density operators. The classical mixture of `|00>` and `|11>` has
+correlations and nonproduct form while remaining separable. The original
+weighted necessary QFT parent, firstness, maintenance and elementary-particle
+minimum claims are excluded.
 
 The [CHSH bound](https://doi.org/10.1103/PhysRevLett.23.880) specifies a local
 model under setting-independence assumptions. The Delft
@@ -470,8 +474,55 @@ checks all 8664 exported rows, state-specific scoring and the detector change.
 The deposited tables contain preselected events and derived fields; original
 acquisition, stopping decisions and RNG calibration remain unverified.
 
-Source card 1.4 remains open for field-region and vacuum entanglement,
-quantum-information applications and further experimental reproducibility.
+The relevant Delft supplementary score, selection and statistical proof
+sections have been reviewed. Their binomial tail allows memory under a
+conditional single-trial bound; it does not assert independent observed trials.
+The adopted predictability bound comes from external QRNG characterization,
+not the small Bell sample. Printed induction inconsistencies remain recorded;
+recomputing a tail does not certify every proof step or the stopping decision.
+
+[Shalm's photonic Bell experiment](https://doi.org/10.1103/PhysRevLett.115.250402)
+supplies an independent optical sample with its own preparation, response and
+null model. The selected five-pulse analysis reports nominal `p=5.9e-9` and
+predictability-adjusted `p=2.3e-7`. Its training-based relevant-event cut,
+complete outcome alphabet, overlapping pulse analyses and conditional setting
+independence remain explicit. The source's nominal-value discrepancy is
+preserved. No combined Delft/photonic significance is inferred.
+
+## Regulated vacuum-region entanglement
+
+[Srednicki's calculation](https://doi.org/10.1103/PhysRevLett.71.666) uses a free
+massless scalar ground state, radial spacing `a`, an outer Dirichlet boundary
+and an explicit inside/outside oscillator partition. Tracing the inside sites
+gives nonzero reduced entropy, so this pure state does not factorize across
+that partition. The reported fit is `S≈0.30(R/a)^2`; its coefficient depends on
+the regulator, and finite-box comparisons apply away from the outer wall.
+Finite radial size does not make each oscillator a qubit.
+
+This construction gives the vacuum-region claim a specific state and entropy
+criterion. Ordinary two-point correlation alone supplies no general
+entanglement criterion or arbitrary continuum-region factorization theorem.
+No particle population, physical boundary at the partition or temporal creation
+mechanism is inferred. The numerical calculation has not been independently
+replayed; unspecified vacuum-linked coherence is excluded.
+
+## A bounded teleportation protocol and realization
+
+[Bennett's ideal protocol](https://doi.org/10.1103/PhysRevLett.70.1895) requires
+a shared entangled pair, a Bell measurement, two classical bits and conditional
+recovery. [Boschi's implementation](https://doi.org/10.1103/PhysRevLett.80.1121)
+encodes the input on Alice's resource photon and verifies Bob's conditional
+state through passive analyzer settings. Its score `S=0.853±0.012` is compared
+with the `3/4` classical bound for three specified equally likely linear inputs.
+The separate fringe illustrations use different inputs and do not supply this
+score's data.
+
+The realization retains coincidence selection and detector/response limits.
+It does not establish active transfer of an external unknown input, universal
+channel fidelity or useful information transfer without the classical outcome.
+Card 1.4 is qualified to these declared definitions, constructions and selected
+experiments; wider applications and independent acquisition/analysis replay
+remain separate work.
 
 
 ## Vacuum quantities and electromagnetic measurements
