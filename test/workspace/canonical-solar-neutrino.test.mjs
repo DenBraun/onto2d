@@ -120,14 +120,14 @@ test("solar-neutrino canonical contracts reject added subtraction or unreviewed 
   ]);
 });
 
-test("solar-neutrino canonical review preserves SNO-only inference and unresolved wider neutrino scopes", async () => {
+test("solar-neutrino canonical review preserves SNO-only inference and the unresolved mass scope", async () => {
   await rejectMutations([
     ["SNO-only result does not include SK constraint", (d) => { claim(d, "C-phys-sno2002-active-flavor-components").statement = "The independent SNO-only flux is 3.45 with 5.5-sigma significance."; }],
     ["shape-relaxed alternative is not the principal precision", (d) => { d.physics.comparisons.find((c) => c.id === "sno2002-shape-and-external-input-boundary").limit = "The principal result is fully shape independent."; }],
     ["mass and mechanism are not measured by this flux decomposition", (d) => { claim(d, "C-phys-sno2002-active-flavor-components").limitations = []; }]
   ]);
   const pending = JSON.parse(await readFile(new URL("../../references/canonical/pending-review.json", import.meta.url), "utf8"));
-  for (const pointer of ["/17", "/25"]) assert.ok(pending.cards.some((c) =>
+  for (const pointer of ["/25"]) assert.ok(pending.cards.some((c) =>
     c.sourcePath === "references/level-1.json" && c.pointer === pointer), `SNO alone must not close ${pointer}`);
 });
 

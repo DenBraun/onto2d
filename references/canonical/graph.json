@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.10.4",
+    "version": "2026.10.11",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jet, resonance, decay, Bell, vacuum, form-factor and magnetic-moment findings retain their own preparation and response. Mass prescriptions, calibration inputs, corrected readouts, fitted estimates and dependent combinations are separate quantities. Published fits preserve their model assumptions, common exposure, normalization and covariance limits. Nuclear capture and Penning-trap results retain external scales and shared-data recalibration; neutron storage losses and monitor response are distinct from inferred intrinsic decay. Lattice spectra, static-source screening and finite-volume diagnostics retain their action, ensemble and extrapolation boundaries. Quark quantum numbers, mass conventions and leading parton response are model definitions. The Bloom and Breidenbach reports share a historical SLAC sample; later longitudinal/transverse separation is an archived-data reanalysis with radiative and normalization corrections. The CDF top-width interval is conditional on fixed mass, detector response and confidence construction, with no directly timed decay. Electroweak currents, Higgs parameters and neutrino propagation conventions remain distinct from collider candidates, response-corrected rates and oscillation fits. Width and lifetime conventions do not define stable universal carriers. Lepton charge, chirality and flavor conventions remain separate from species-specific evidence. Belle infers the tau mean lifetime from paired reconstructed proper lengths; Borexino bounds one electron-decay channel with detector response and external background inputs. Neither result establishes universal lepton stability. Optical, retinal and neural studies distinguish measured responses from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared released data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced analysis stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causal rules and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed. Gluon self-coupling has an explicit gauge-sector convention. SLD spin-sensitive shapes, OPAL color-factor fits and H1 scaling-violation analyses separate measured distributions, correction models and conditional inferences. Field labels and scale evolution supply no universal process, temporal arising order or carrier threshold. Entanglement uses declared subsystem partitions: regulated scalar-region entropy, independent photonic Bell evidence and a selected teleportation protocol retain separate criteria. Correlation, Bell nonlocality, local reduced states and communication are distinct; no temporal firstness or elementary-particle minimum is inferred. Confinement criteria separate unscreened pure-gauge area laws, dynamical-quark static screening and scoped hadronic interpretations. Two-plus-one-flavor screening retains its finite nonphysical ensemble; independent material and collider fractional-charge searches constrain different preparations, not universal free-color absence. None of these results derives nuclear or atomic stability.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra and static-source screening retain their action, ensemble and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "d9f550a64ca2921efe228fe7a31a4495e7c1815a1f26d0b9c91aa656cde55906",
+      "sha256": "ed71a76402347920f17b62af0c2a8277145e762834eee12ecdaf34b609e3c2e4",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "dc60cfad768e98afb9e562e29bb4658aac0ea64c60f95c44aae5f1b99ed016b6",
+      "sha256": "0c2c29e98779afe6a8445d9d7eb7a788ed57c511b53186f223a03ad3de6e4c05",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -9895,9 +9895,10 @@
           "2025 review pages 6-8, Section 14.3 and Equations 14.33-14.35: charged-current mixing, rectangular versus closed unitary matrices and flavor-state convention",
           "2025 review pages 8-10, Section 14.4 and Equations 14.35-14.43: coherent vacuum amplitudes, mass-squared phase differences, antineutrino conjugation, detector averaging and effective two-flavor limit",
           "2025 review pages 10-12, Section 14.5 and Equations 14.49-14.58: coherent forward potentials, neutral matter, propagation basis and particle-sign conventions",
-          "2025 review pages 12-13, Equations 14.59-14.65 before Section 14.5.1: instantaneous two-flavor mixing, resonance and derivative coupling in an inhomogeneous medium"
+          "2025 review pages 12-13, Equations 14.59-14.65 before Section 14.5.1: instantaneous two-flavor mixing, resonance and derivative coupling in an inhomogeneous medium",
+          "2025 review pages 13-15, Section 14.5.1 and Equations 14.66-14.70, ending before Section 14.6: approximate solar electron density, adiabatic phase-averaged survival and limiting regimes"
         ],
-        "limit": "Sections 14.3-14.4 on pages 6-10 and Section 14.5 on pages 10-13, ending before Section 14.5.1, were read; pages 8-10 and 12-13 were visually checked. These passages supply formal conventions and approximations. The solar density profile/application, experimental review, current global fits, numerical mass limits and the full underlying derivations are not admitted. The graph states its flavor-basis convention explicitly and restricts removal of the neutral-current potential to a common identity term in the active sector. Finite reactor phase checks remain separate from matter propagation; no matter-profile integration or detector likelihood is reproduced."
+        "limit": "Sections 14.3-14.4 on pages 6-10 and Section 14.5 including 14.5.1 on pages 10-15, ending before Section 14.6, were read; pages 8-10 and 12-15 were visually checked. These are selected formal conventions and approximate solar applications, not a review of experimental results or current global fits. The solar exponential profile has a stated radial domain and an externally supplied central density; production and detector weights are supplied inputs, not reconstructed distributions. Page 14 prints A0=2 E G_F n_e,0 without the sqrt(2) in the charged-current potential of Equation 14.53, and also prints the dimensionally inconsistent Delta m^2/E >> L_Sun-Earth. The graph instead uses A=2E V_e with V_e=sqrt(2)G_F n_e and the dimensionless phase/smearing convention of Equations 14.40-14.42. The sin^2(theta) limit in Equation 14.70 is restricted to the preceding high-density and adiabatic assumptions. No matter-profile integration, solar production calculation, numerical global fit, detector likelihood or unique empirical MSW mechanism is reproduced."
       }
     },
     {
@@ -10786,6 +10787,54 @@
           "Author v2 printed pages 8-9, Sections 7-8, Table 3 and Figure 3: cross-section upper limits and model-conditional mass exclusions"
         ],
         "limit": "Read author v2 printed pages 1-11, including the complete scientific body and references; the collaboration roster is not evidence. Visually checked the selection, background formula, Tables 1-3 and Figure 3. ArXiv identifies v2 as replaced with the published version. No event records, detector simulation or CLs construction are replayed; this selected historical search is not a current-limit census."
+      }
+    },
+    {
+      "id": "akhmedov2009-coherence",
+      "kind": "research-publication",
+      "title": "Paradoxes of neutrino oscillations",
+      "authors": [
+        "Evgeny Kh. Akhmedov",
+        "Alexei Yu. Smirnov"
+      ],
+      "year": 2009,
+      "doi": "10.1134/S1063778809080122",
+      "url": "https://arxiv.org/abs/0905.1903v2",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-primary-author-theory-passages",
+        "locators": [
+          "Author v2 pages 5-11, Sections 3.1-3.2, Equations 8-33: narrow vacuum packets, production/detection overlap and the coherent limit",
+          "Author v2 pages 19-28, Sections 5.1-5.4, Equations 58-71: intrinsic uncertainties, localization, packet separation and detection coherence",
+          "Author v2 pages 28-33, Sections 6-7, Equations 72-82: stationary-source averaging and production/detection dependence",
+          "Author v2 pages 36-40, Sections 9-10 and Equation 95: packet, observable and standard-probability limits"
+        ],
+        "limit": "Read the listed sections of arXiv:0905.1903v2 (20 June 2009), published in Physics of Atomic Nuclei 72, 1363-1381 (2009); visually checked pages 8, 10, 23-24, 27, 29 and 38. The accessed regenerated PDF has 46 pages and a 2024 title date, not a new publication year. No publisher-PDF, complete appendix or cited-source review is claimed. The admission is restricted to the stated vacuum approximations and observable averaging; no experimental coherence length, packet shape or likelihood is reproduced."
+      }
+    },
+    {
+      "id": "stirner2018-transport",
+      "kind": "research-publication",
+      "title": "Liouville term for neutrinos: Flavor structure and wave interpretation",
+      "authors": [
+        "Tobias Stirner",
+        "Guenter Sigl",
+        "Georg Raffelt"
+      ],
+      "year": 2018,
+      "doi": "10.1088/1475-7516/2018/05/016",
+      "url": "https://arxiv.org/pdf/1803.04693v1",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-author-manuscript-passages",
+        "locators": [
+          "arXiv:1803.04693v1 PDF pages 2-5 (printed pages 1-4), Section 1, Equations 1.1-1.4 and footnotes 4-5: trajectory coherence, ensemble occupations, collisional transport and cosmic expansion",
+          "arXiv:1803.04693v1 PDF page 7 (printed page 6), Section 2.1.3, Equation 2.5: bilinear Hamiltonian and explicit omission of neutrino-neutrino refraction",
+          "arXiv:1803.04693v1 PDF page 9 (printed page 8), Section 2.1.4: mean-field and slow-variation assumptions for the leading Liouville term"
+        ],
+        "limit": "The introduction on printed pages 1-4, the bilinear-Hamiltonian boundary on page 6 and the mean-field approximation on page 8 were read and visually checked in the 13 March 2018 author v1. Published front matter identifies JCAP 05 (2018) 016; the published body and complete derivation were not reviewed. These passages justify a boundary between coherent trajectory evolution and kinetic transport, not a reproduced collision kernel, self-refraction model, cosmological evolution or complete astrophysical solver. The selected Hamiltonian explicitly omits neutrino-neutrino refraction; the leading phase-space advection uses slow-variation assumptions. No universal Lindblad damping or entropy claim is admitted."
       }
     }
   ],
@@ -51315,7 +51364,7 @@
         "The non-electron result is a combined muon-plus-tau component. The response comparison supports solar flavor transformation compatible with oscillations; it does not separately identify those two flavors, measure an oscillation phase or mass splitting, fix absolute masses, prove matter enhancement or select a unique mass-generation mechanism.",
         "The pure-D2O acquisition updates earlier CC/ES results from the same phase. Selected events, channel fits, normalized fluxes and joint flavor inference reuse that acquisition. They are not independent experiments; the response includes separate auxiliary preparations and controls.",
         "The article also gives an SK-added solar-ES constraint and a shape-relaxed NC extraction that omits energy information. These are separate analyses, not the SNO-only principal result or new SNO acquisitions. The quoted standard-solar-model total flux is a comparison; agreement does not determine the conversion mechanism or replace the spectral-shape and response assumptions.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound.",
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound.",
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed."
       ],
       "contextIds": [
@@ -51482,7 +51531,7 @@
         "The non-electron result is a combined muon-plus-tau component. The response comparison supports solar flavor transformation compatible with oscillations; it does not separately identify those two flavors, measure an oscillation phase or mass splitting, fix absolute masses, prove matter enhancement or select a unique mass-generation mechanism.",
         "The pure-D2O acquisition updates earlier CC/ES results from the same phase. Selected events, channel fits, normalized fluxes and joint flavor inference reuse that acquisition. They are not independent experiments; the response includes separate auxiliary preparations and controls.",
         "The article also gives an SK-added solar-ES constraint and a shape-relaxed NC extraction that omits energy information. These are separate analyses, not the SNO-only principal result or new SNO acquisitions. The quoted standard-solar-model total flux is a comparison; agreement does not determine the conversion mechanism or replace the spectral-shape and response assumptions.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound.",
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound.",
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed."
       ],
       "contextIds": [
@@ -57916,6 +57965,411 @@
       ],
       "contextIds": [
         "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "D-phys-neutrino-production-detection-coherence",
+      "kind": "review-finding",
+      "statement": "Interfering neutrino mass alternatives must remain indistinguishable in the specified production and detection processes. In a declared apparatus frame, |Delta E_ik| << sigma_E and |Delta p_ik| << sigma_p describe a sufficient coherent regime within the reviewed localized-state treatment; the widths are intrinsic process uncertainties, not the beam energy spread or reconstructed-energy bin size.",
+      "scope": "Production/detection conditions for the declared closed, unitary vacuum flavor model; longitudinal momentum and hbar=c=1 conventions.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 19-28, Sections 5.1-5.4, Equations 58-71: intrinsic uncertainties, localization, packet separation and detection coherence",
+          "role": "supports",
+          "note": "Sections 5.2-5.3 distinguish intrinsic production/detection uncertainties and localization from the on-shell packet width."
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 28-33, Sections 6-7, Equations 72-82: stationary-source averaging and production/detection dependence",
+          "role": "limits",
+          "note": "Section 7 separates factorization of an event process from a universal oscillation probability."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Specify the external states and their localization, energy-momentum correlations and process-dependent widths. The two inequalities are a sufficient regime, not a universal necessary-and-sufficient or frame-independent numerical cut.",
+        "Do not replace source/absorber localization by a universal requirement that packet length be shorter than the oscillation length. The reviewed quasistationary case can violate that requirement; equal-energy and equal-momentum assignments are not fundamental postulates.",
+        "The standard unsuppressed coherent, production/detection-independent oscillation factor additionally needs negligible propagation separation and reaction energy release large compared with the relevant neutrino masses or mass differences. A fully averaged limit can also be universal; near-threshold process dependence is not removed by assuming unitary mixing."
+      ]
+    },
+    {
+      "id": "D-phys-neutrino-wave-packet-overlap",
+      "kind": "review-finding",
+      "statement": "For narrow, nondispersing vacuum packets, v_gi=p_i/E_i with E_i=sqrt(p_i^2+m_i^2). Interference involves the overlap of effective production/detection envelopes G_i(L-v_gi t). With v_g=(v_gi+v_gk)/2 and nonzero Delta v_g=|v_gi-v_gk|, l_coh approximately v_g sigma_x/Delta v_g is a separation scale: L << l_coh leaves that overlap unsuppressed, while substantial separation suppresses its interference term. The effective sigma_x includes both emission and detection coherence.",
+      "scope": "A packet-overlap scale estimate in the reviewed vacuum expansion, hbar=c=1; no specified experimental packet or measured coherence length.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 5-11, Sections 3.1-3.2, Equations 8-33: narrow vacuum packets, production/detection overlap and the coherent limit",
+          "role": "supports",
+          "note": "Equations 19-23 and 32 define the effective overlap and its separation condition."
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 19-28, Sections 5.1-5.4, Equations 58-71: intrinsic uncertainties, localization, packet separation and detection coherence",
+          "role": "supports",
+          "note": "Section 5.4 explains why detection coherence must be included even after the emitted packets separate."
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 36-40, Sections 9-10 and Equation 95: packet, observable and standard-probability limits",
+          "role": "limits",
+          "note": "The source confines its derivation to vacuum and distinguishes the packet and interaction coherence conditions."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The approximation linearizes the dispersion relation over a narrow momentum distribution and neglects packet spreading. The characteristic length is shape-dependent, not an exact universal damping law or sharp boundary; equal group velocities produce no separation by this mechanism.",
+        "A source-only packet width is insufficient. A sufficiently coherent detection process can allow separated emitted components to interfere; the effective overlap already incorporates this condition, not an ordinary detector energy-bin width.",
+        "Loss of a local interference term does not establish fundamental nonunitarity, collapse, absorption or neutrino decay. Propagation through varying matter, scattering and environmental dynamics require separately specified evolution and are not derived here."
+      ]
+    },
+    {
+      "id": "D-phys-neutrino-oscillation-averaging",
+      "kind": "review-finding",
+      "statement": "For a specified selected channel in a regime admitting a factored oscillation probability, define P_bar = integral dL dE w(L,E) P(L,E), with L>=0, E>0, w>=0 and integral w=1. The weight represents the stated source/baseline distribution and energy-dependent event response. Unresolved variation of the relative vacuum phase Delta m^2 L/(2E) can suppress the observed oscillatory pattern even when each production-propagation-detection contribution is coherent.",
+      "scope": "A normalized event-weight average and its coherence boundary, not an event count, fitted likelihood or experimentally determined weight.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 5-11, Sections 3.1-3.2, Equations 8-33: narrow vacuum packets, production/detection overlap and the coherent limit",
+          "role": "supports",
+          "note": "Page 9 describes folding the probability with source spectrum, cross section, efficiency, resolution and source/detector volumes; the normalized weight is an explicit graph convention."
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 28-33, Sections 6-7, Equations 72-82: stationary-source averaging and production/detection dependence",
+          "role": "supports",
+          "note": "Sections 6-7 delimit stationary-source equivalence and the process-independent probability approximation."
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 36-40, Sections 9-10 and Equation 95: packet, observable and standard-probability limits",
+          "role": "limits",
+          "note": "The summary distinguishes intrinsic packet coherence from spectrum integration in observable predictions."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Actual event predictions retain flux and exposure normalization, cross sections, efficiencies, backgrounds and reconstruction response. No experiment-specific w is supplied; channel-dependent weights cannot be silently used to infer a sum over detected flavors equal to one.",
+        "Macroscopic source/detector positions, ensemble energy spread and reconstruction resolution are distinct from intrinsic quantum widths. Distinct incoherent emissions are combined at the probability or event-rate level, not as one coherent amplitude.",
+        "The stationary-source equivalence requires absent or irrelevant time structure and the stated time integration. Equal-energy interference components in that calculation are not a universal preparation postulate.",
+        "Suppression by averaging or packet separation is not a measured fundamental decoherence mechanism. No universal packet width, new collapse law or claim that every experimental signal is phase averaged follows."
+      ]
+    },
+    {
+      "id": "D-phys-solar-matter-profile",
+      "kind": "review-finding",
+      "statement": "Use the review's approximate radial solar electron density n_e(R)=n_e(0)*exp(-R/r0) for 0<=R<0.9 R_sun, with r0=R_sun/10.54 (quoted approximately as 6.6e7 m or 3.3e14 eV^-1). In the declared ordinary-matter convention V_e(R)=sqrt(2)*G_F*n_e(R) and A(R,E)=2E*V_e(R). A neutrino produced at radius R_p samples n_e(R_p), which is generally different from the central normalization n_e(0).",
+      "scope": "Selected formal solar application of the coherent matter model; no new acquisition, numerical propagation or detector fit.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 10-12, Section 14.5 and Equations 14.49-14.58: coherent forward potentials, neutral matter, propagation basis and particle-sign conventions",
+          "role": "supports",
+          "note": "Supplies the declared model convention and its scoped approximation, not a new observed solar result."
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 13-15, Section 14.5.1 and Equations 14.66-14.70, ending before Section 14.6: approximate solar electron density, adiabatic phase-averaged survival and limiting regimes",
+          "role": "supports",
+          "note": "Supplies the declared model convention and its scoped approximation, not a new observed solar result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a prescribed smooth, spherically symmetric electron-density approximation within the coherent two-active-flavor solar model, with hbar=c=1, E>0 and an initially electron-flavor neutrino. The central density, solar radius and vacuum oscillation parameters are supplied inputs; no fitted central density or solar structure calculation is admitted.",
+        "The approximation is stated only for R<0.9 R_sun. It is not a measured density map, an exact full-Sun profile or a neutrino production distribution. A complete numerical trajectory would also require an outer-profile continuation and boundary conditions, neither of which is constructed here.",
+        "The solar discussion on page 14 omits sqrt(2) in its displayed A0 definition; the graph retains the charged-current potential from Equation 14.53 and A=2E V_e. This recorded printed inconsistency does not establish an error in any solar data analysis.",
+        "The profile is an input to propagation, not an origin of vacuum mass or proof that a particular SNO response uniquely selects this model. Solar and terrestrial preparations, neutrinos and antineutrinos, and coherent forward propagation and incoherent transport retain distinct scopes."
+      ]
+    },
+    {
+      "id": "D-phys-solar-adiabatic-survival",
+      "kind": "review-finding",
+      "statement": "For the declared two-flavor solar model, adiabatic propagation to a vacuum endpoint and sufficient relative-phase averaging give P_ee(E,r)=cos^2(theta_m,p)*cos^2(theta)+sin^2(theta_m,p)*sin^2(theta)=[1+cos(2 theta_m,p)*cos(2 theta)]/2, with theta_m,p evaluated at production position r. For a source component s define a supplied nonnegative production density f_s(r|E), integral d^3r f_s=1, and a supplied nonnegative normalized energy-response weight w_s(E), integral dE w_s=1. The averaged survival is <P_ee>_s=integral dE w_s(E) integral d^3r f_s(r|E) P_ee(E,r). For a specified electron-flavor charged-current response, w_s is proportional to the unoscillated differential neutrino number flux dPhi_s/dE at the detector times its cross section and detection efficiency, with any selected-bin response included and the finite nonzero normalization divided out. Here dPhi_s/dE counts neutrinos per unit area, time and neutrino energy; the transported energy flux E*dPhi_s/dE would introduce an extra energy factor and is not the event weight.",
+      "scope": "Selected formal solar application of the coherent matter model; no new acquisition, numerical propagation or detector fit.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 8-10, Section 14.4 and Equations 14.35-14.43: coherent vacuum amplitudes, mass-squared phase differences, antineutrino conjugation, detector averaging and effective two-flavor limit",
+          "role": "supports",
+          "note": "Supplies the declared model convention and its scoped approximation, not a new observed solar result."
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 12-13, Equations 14.59-14.65 before Section 14.5.1: instantaneous two-flavor mixing, resonance and derivative coupling in an inhomogeneous medium",
+          "role": "supports",
+          "note": "Supplies the declared model convention and its scoped approximation, not a new observed solar result."
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 13-15, Section 14.5.1 and Equations 14.66-14.70, ending before Section 14.6: approximate solar electron density, adiabatic phase-averaged survival and limiting regimes",
+          "role": "supports",
+          "note": "Supplies the declared model convention and its scoped approximation, not a new observed solar result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Use the existing closed nu_e/nu_x approximation with Delta=m2^2-m1^2>0 and 0<theta<pi/4; nu_x is the stated active mu/tau combination. The matter mixing and nonzero gap use A=2sqrt(2)E G_F n_e. This is a formal application, not a precision three-flavor fit or a new empirical survival curve.",
+        "Adiabaticity requires the off-diagonal basis-derivative coupling |d theta_m/dx| to be small compared with the instantaneous eigenvalue gap along the actual path, together with smooth evolution to the vacuum endpoint. The exponential profile by itself does not establish that condition. No numerical check over a solar path is claimed.",
+        "The interference terms must be sufficiently smeared by the actual source, baseline and detector resolution/weights. A long baseline alone is not a replacement for this averaging condition, and averaged probabilities do not mean that the local forward-scattering Hamiltonian is incoherent. Page 14 prints Delta m^2/E >> L_Sun-Earth; this dimensionally inconsistent statement is not used. The relevant phase is dimensionless Delta m^2 L/(4E), with averaging as in Equations 14.40-14.42.",
+        "At fixed mixing angle the low-density limit A_p/Delta -> 0 gives P_ee -> 1-sin^2(2 theta)/2, while A_p/Delta -> infinity gives P_ee -> sin^2(theta) under the same adiabatic and phase-averaging conditions. Merely crossing resonance, A_p>Delta cos(2 theta), does not make the high-density limit exact and does not guarantee adiabaticity.",
+        "The production density includes the spatial measure as written, is source-component dependent and may depend on energy; it is not n_e(R), a delta function at the solar center or a fitted distribution in this graph. The source spectrum, production distribution, density normalization and detector weights are all external inputs. No actual production/energy integral, event spectrum, covariance or fit is evaluated.",
+        "The endpoint is the exposed Earth surface before terrestrial matter propagation. Earth regeneration, nonadiabatic jump probabilities, absorption, neutrino-neutrino refraction, sterile states and nonstandard interactions require additional models. For elastic scattering or neutral-current channels, the corresponding flavor-dependent response must be folded explicitly; a single electron-flavor charged-current weight is not a universal event-rate formula.",
+        "The model is not inferred by subtracting SNO fluxes or by pooling solar, reactor and accelerator acquisitions. It does not establish an absolute mass, mass-generation mechanism, flavor-object identity, necessary formation order, universal parent weight or carrier minimum."
+      ]
+    },
+    {
+      "id": "D-phys-neutrino-propagation-scope",
+      "kind": "review-finding",
+      "statement": "In the declared coherent ultrarelativistic vacuum model, flavor-sensitive preparation and readout are related by interference between distinct mass propagation components. Their relative phases change transition probabilities as L/E varies; a probability is not a continuously measured sequence of flavor jumps. Oscillation is a conditional propagation phenomenon, not an additional bounded object or a universal property of every neutrino state.",
+      "scope": "Flavor preparation/readout and conditional coherent propagation; no universal ontological class, formation order or mass-origin inference.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 6-8, Section 14.3 and Equations 14.33-14.35: charged-current mixing, rectangular versus closed unitary matrices and flavor-state convention",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 8-10, Section 14.4 and Equations 14.35-14.43: coherent vacuum amplitudes, mass-squared phase differences, antineutrino conjugation, detector averaging and effective two-flavor limit",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Use the closed unitary active two- or three-state convention already declared. Oscillatory flavor probabilities require both mixing of contributing components and nonzero relative mass-squared differences, together with the stated production/detection and propagation coherence conditions. A degenerate pair, unmixed channel or suppressed interference need not show an oscillatory signal.",
+        "A single vacuum mass eigenstate acquires only a phase in its internal state; its flavor-readout probabilities |U_alpha,i|^2 do not oscillate. An incoherent density matrix diagonal in the vacuum mass basis also has constant vacuum flavor probabilities. These are not statements that vacuum mass states remain instantaneous eigenstates in arbitrary varying matter, or that packet position is stationary.",
+        "Leptonic charged-current flavor labels specify preparation/readout; mass differences and mixing specify model inputs. They do not establish necessary physical parents, an arising chronology, weights 0.3/0.7, N_min=N_crit=1, a SOMA phase/type or the claim that flavor identity can never be dynamically autonomous. No causal maintenance or downward constraint is inferred from these definition dependencies.",
+        "Within this oscillation model, mass-squared differences constrain differences only. They do not determine the absolute mass scale, require every individual mass to be nonzero, select Dirac versus Majorana character or supply a unique mass-generation extension. Mass origin remains a separate scope.",
+        "Continuous weak scattering or repeated projective collapse is not the coherent phase mechanism. A specified source, medium and detector determine which probability or weighted response is appropriate; transport and cosmological claims need additional inputs."
+      ]
+    },
+    {
+      "id": "D-phys-neutrino-transport-boundary",
+      "kind": "review-finding",
+      "statement": "Flavor evolution can affect the interpretation of an astrophysical neutrino signal, but a source-to-detector prediction also needs the emitted flavor composition and spectrum, propagation environment and flavor-dependent detector response. A prescribed coherent trajectory Hamiltonian alone does not supply collisional, absorptive, self-refracting or expanding-universe transport. This graph admits the propagation implication and explicitly excludes quantitative astrophysical transport and cosmological predictions from this reconstruction.",
+      "scope": "Qualitative flavor-interpretation implication and explicit boundary of the selected kinetic discussion; no astrophysical or cosmological prediction.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "stirner2018-transport",
+          "locator": "arXiv:1803.04693v1 PDF pages 2-5 (printed pages 1-4), Section 1, Equations 1.1-1.4 and footnotes 4-5: trajectory coherence, ensemble occupations, collisional transport and cosmic expansion",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "stirner2018-transport",
+          "locator": "arXiv:1803.04693v1 PDF page 7 (printed page 6), Section 2.1.3, Equation 2.5: bilinear Hamiltonian and explicit omission of neutrino-neutrino refraction",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "stirner2018-transport",
+          "locator": "arXiv:1803.04693v1 PDF page 9 (printed page 8), Section 2.1.4: mean-field and slow-variation assumptions for the leading Liouville term",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The reviewed kinetic discussion distinguishes a normalized single-particle flavor density matrix from momentum-dependent occupation matrices. Emission, absorption, scattering and mode coupling require process kernels, occupation information and initial/boundary conditions; their normalization is not a universal trace-one probability. No collision coefficients, source spectrum, astrophysical flavor ratio or cosmological initial condition are supplied here.",
+        "The selected source describes cosmological expansion through momentum redshift and illustrates why collision integrals couple momentum modes. It does not justify obtaining a cosmological history by reusing a single vacuum L/E probability or a solar density profile. No expansion rate, decoupling prediction, abundance or mass constraint is inferred.",
+        "The bilinear Hamiltonian in Equation 2.5 explicitly leaves out neutrino-neutrino refraction. A self-consistent dense-neutrino medium would require additional interaction and angular/occupation inputs. The reviewed leading Liouville term also assumes slow phase-space variation; it is not an unrestricted exact kinetic solver.",
+        "Macroscopic phase averaging does not by itself establish environmental scattering, repeated collapse or a universal decoherence rate. Coherent forward matter effects, wave-packet overlap, unresolved-event averaging and collision-induced evolution are different mechanisms and retain their own conditions.",
+        "The present exclusions are finite limits of this admission, not a claim that such transport cannot be modeled. No new empirical acquisition, transport simulation, helicity-conversion model, universal thermalization theorem or source-detector fit is admitted."
+      ]
+    },
+    {
+      "id": "C-phys-neutrino-experiment-boundary",
+      "kind": "review-finding",
+      "statement": "The reviewed KamLAND reactor disappearance, SNO active-flavor transformation, Super-Kamiokande atmospheric disappearance and OPERA accelerator tau-appearance results support flavor change compatible with their declared oscillation models across different preparations and responses. Their counts, fluxes, averaged probabilities and conditional fit parameters are distinct observables. This synthesis preserves those boundaries and supplies neither a pooled transition probability nor a new global fit.",
+      "scope": "Bounded synthesis of four publication-specific experimental chains with shared-data stages kept explicit.",
+      "status": "literature-synthesis",
+      "citations": [
+        {
+          "sourceId": "kamland2005",
+          "locator": "Author version 3 pages 2-3, Table I and Figure 1: reactor histories and spectrum inputs, calibration and response, background estimates, no-oscillation prediction and average survival",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "kamland2005",
+          "locator": "Author version 3 pages 4-5, Figures 2-4: unbinned two-flavor rate-and-shape fit, constrained backgrounds, display baseline, goodness-of-fit procedure and separate solar combination",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF pages 4-5, channel-flux equations, Table II and note 7: electron-neutrino cross-section normalization, adopted B8 spectrum and systematic/cross-section inputs",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF page 5, direct electron/non-electron flux equations and Figure 3; page 6 note 13: SNO-only joint inference, reported null test and correlated flux-region interpretation",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF page 5: separately added Super-Kamiokande solar ES constraint, shape-relaxed NC extraction using only angle and radius, and separate standard-solar-model comparison",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 pages 4-6, Equations 1-4, Table II and Figure 2 on page 7: corrected event weights, 70-bin fit, nuisance parameters, bounded physical region and conditional oscillation result",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 pages 4-5, Figure 1 on page 7 and corrected Figure 3 on page 8: reconstructed directions, asymmetry definition and measured zenith distributions",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 page 5 and Figure 4 on page 9: reconstructed L/E cross-check, same acquisition, lepton-neutrino correlations and tau-versus-sterile ambiguity",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Pages 5–6, Results and Equation 1: channel Poisson model, Gaussian background terms, pseudoexperiment-calibrated statistics and original appearance significance",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Page 6, signal-strength compatibility and full-mixing mass-squared interval: same-data interpretation and conclusion",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Pages 3–5, signal/background section and Figure 3: simulated beam flux, detected-muon-neutrino normalization, efficiencies, cross section, charm controls, hadronic interactions and revised muon scattering",
+          "role": "supports",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a literature synthesis of already admitted results. Each chain retains its acquisition, selection, adopted flux/cross sections, detector response, backgrounds and inference contexts. Counts are not event-level oscillation probabilities. Reused events, multiple summaries and alternative fits within an acquisition are dependent; this synthesis is not another independent experiment or combined significance.",
+        "KamLAND reactor antineutrinos involve changing reactor histories and baselines. The reported period-averaged survival and historical two-flavor rate-and-shape fit use response and background models; the 180 km display baseline is not a single experimental baseline. Shape-only, KamLAND-only and solar-combined fits are distinct, and the solar combination adds a CPT assumption.",
+        "SNO reports a joint electron versus combined muon-plus-tau active-flux inference under its B8-shape and weak-response assumptions. This is not a measured oscillation phase, separate muon/tau identification or unique proof of adiabatic MSW conversion. Subtracting channel-flux centers does not reproduce its covariance, joint result or significance; the SK-added and shape-relaxed analyses remain separate.",
+        "Super-Kamiokande uses atmospheric flux, zenith distributions and detector/kinematic proxies with a historical two-flavor fit. The 1998 disappearance analysis does not directly identify tau appearance or distinguish its tau interpretation from the stated sterile alternative. Its L/E cross-check reuses the sample and does not resolve an oscillation dip.",
+        "OPERA reconstructs tau candidates in a primarily muon-neutrino beam using channel-dependent efficiencies and backgrounds. Its calibrated channel-combination significance, signal strength and full-mixing mass-squared compatibility reuse the same candidate sample. Dividing five candidates by an interaction total does not produce an oscillation probability, and the Fisher-product statistic is not the calibrated tail probability.",
+        "Historical effective two-flavor parameters, confidence constructions and adopted external inputs retain their publication-specific meanings; no current three-flavor global fit is inferred. These results do not establish absolute neutrino masses, every individual mass to be nonzero, Dirac/Majorana character, a unique mass-generation mechanism or quantitative astrophysical/cosmological transport."
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "M-phys-neutrino-experiment-boundary",
+      "kind": "method",
+      "statement": "Compare the stated disappearance, active-flavor and appearance interpretations only through their existing response and inference contexts. Retain neutrino/antineutrino preparation, acquisition overlap and historical model assumptions; do not pool counts, infer a common unaveraged probability, combine significances or refit the parameters.",
+      "scope": "Bounded synthesis of four publication-specific experimental chains with shared-data stages kept explicit.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "kamland2005",
+          "locator": "Author version 3 pages 2-3, Table I and Figure 1: reactor histories and spectrum inputs, calibration and response, background estimates, no-oscillation prediction and average survival",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "kamland2005",
+          "locator": "Author version 3 pages 4-5, Figures 2-4: unbinned two-flavor rate-and-shape fit, constrained backgrounds, display baseline, goodness-of-fit procedure and separate solar combination",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF pages 4-5, channel-flux equations, Table II and note 7: electron-neutrino cross-section normalization, adopted B8 spectrum and systematic/cross-section inputs",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF page 5, direct electron/non-electron flux equations and Figure 3; page 6 note 13: SNO-only joint inference, reported null test and correlated flux-region interpretation",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF page 5: separately added Super-Kamiokande solar ES constraint, shape-relaxed NC extraction using only angle and radius, and separate standard-solar-model comparison",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 pages 4-6, Equations 1-4, Table II and Figure 2 on page 7: corrected event weights, 70-bin fit, nuisance parameters, bounded physical region and conditional oscillation result",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 pages 4-5, Figure 1 on page 7 and corrected Figure 3 on page 8: reconstructed directions, asymmetry definition and measured zenith distributions",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 page 5 and Figure 4 on page 9: reconstructed L/E cross-check, same acquisition, lepton-neutrino correlations and tau-versus-sterile ambiguity",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Pages 5–6, Results and Equation 1: channel Poisson model, Gaussian background terms, pseudoexperiment-calibrated statistics and original appearance significance",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Page 6, signal-strength compatibility and full-mixing mass-squared interval: same-data interpretation and conclusion",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Pages 3–5, signal/background section and Figure 3: simulated beam flux, detected-muon-neutrino normalization, efficiencies, cross section, charm controls, hadronic interactions and revised muon scattering",
+          "role": "method",
+          "note": "Supports only the declared formal scope or publication-specific inference; no new experimental or kinetic calculation is reproduced."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This is a literature synthesis of already admitted results. Each chain retains its acquisition, selection, adopted flux/cross sections, detector response, backgrounds and inference contexts. Counts are not event-level oscillation probabilities. Reused events, multiple summaries and alternative fits within an acquisition are dependent; this synthesis is not another independent experiment or combined significance.",
+        "KamLAND reactor antineutrinos involve changing reactor histories and baselines. The reported period-averaged survival and historical two-flavor rate-and-shape fit use response and background models; the 180 km display baseline is not a single experimental baseline. Shape-only, KamLAND-only and solar-combined fits are distinct, and the solar combination adds a CPT assumption.",
+        "SNO reports a joint electron versus combined muon-plus-tau active-flux inference under its B8-shape and weak-response assumptions. This is not a measured oscillation phase, separate muon/tau identification or unique proof of adiabatic MSW conversion. Subtracting channel-flux centers does not reproduce its covariance, joint result or significance; the SK-added and shape-relaxed analyses remain separate.",
+        "Super-Kamiokande uses atmospheric flux, zenith distributions and detector/kinematic proxies with a historical two-flavor fit. The 1998 disappearance analysis does not directly identify tau appearance or distinguish its tau interpretation from the stated sterile alternative. Its L/E cross-check reuses the sample and does not resolve an oscillation dip.",
+        "OPERA reconstructs tau candidates in a primarily muon-neutrino beam using channel-dependent efficiencies and backgrounds. Its calibrated channel-combination significance, signal strength and full-mixing mass-squared compatibility reuse the same candidate sample. Dividing five candidates by an interaction total does not produce an oscillation probability, and the Fisher-product statistic is not the calibrated tail probability.",
+        "Historical effective two-flavor parameters, confidence constructions and adopted external inputs retain their publication-specific meanings; no current three-flavor global fit is inferred. These results do not establish absolute neutrino masses, every individual mass to be nonzero, Dirac/Majorana character, a unique mass-generation mechanism or quantitative astrophysical/cosmological transport."
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
       ]
     }
   ],
@@ -87920,7 +88374,7 @@
       ],
       "openObligations": [
         "The non-electron result is a combined muon-plus-tau component. The response comparison supports solar flavor transformation compatible with oscillations; it does not separately identify those two flavors, measure an oscillation phase or mass splitting, fix absolute masses, prove matter enhancement or select a unique mass-generation mechanism.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -87949,7 +88403,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -87978,7 +88432,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88003,7 +88457,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88036,7 +88490,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88061,7 +88515,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88086,7 +88540,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88111,7 +88565,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88136,7 +88590,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -88165,7 +88619,7 @@
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -91911,6 +92365,279 @@
         "The quoted ranges and charge ordering are retained as reported. The mass thresholds are model-conditional exclusions, not fitted particle masses, a lifetime measurement or model-independent limits at arbitrary charges.",
         "The observed and expected curves in Figure 3 overlap in this zero-event search; they are not independent measurements or replications. No CLs or interpolation replay is claimed.",
         "Lee constrains particles retained in processed silicone oil; CMS constrains collider production and acceptance for different hypotheses. These bounds are not pooled, converted into a common abundance, or treated as direct evidence of QCD color confinement."
+      ]
+    },
+    {
+      "id": "phys:neutrino-production-detection-coherence",
+      "name": "Neutrino production and detection coherence",
+      "kind": "definition",
+      "description": "Interfering neutrino mass alternatives must remain indistinguishable in the specified production and detection processes. In a declared apparatus frame, |Delta E_ik| << sigma_E and |Delta p_ik| << sigma_p describe a sufficient coherent regime within the reviewed localized-state treatment; the widths are intrinsic process uncertainties, not the beam energy spread or reconstructed-energy bin size.",
+      "claimIds": [
+        "D-phys-neutrino-production-detection-coherence"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 19-28, Sections 5.1-5.4, Equations 58-71: intrinsic uncertainties, localization, packet separation and detection coherence"
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 28-33, Sections 6-7, Equations 72-82: stationary-source averaging and production/detection dependence"
+        }
+      ],
+      "openObligations": [
+        "Specify the external states and their localization, energy-momentum correlations and process-dependent widths. The two inequalities are a sufficient regime, not a universal necessary-and-sufficient or frame-independent numerical cut.",
+        "Do not replace source/absorber localization by a universal requirement that packet length be shorter than the oscillation length. The reviewed quasistationary case can violate that requirement; equal-energy and equal-momentum assignments are not fundamental postulates.",
+        "The standard unsuppressed coherent, production/detection-independent oscillation factor additionally needs negligible propagation separation and reaction energy release large compared with the relevant neutrino masses or mass differences. A fully averaged limit can also be universal; near-threshold process dependence is not removed by assuming unitary mixing."
+      ]
+    },
+    {
+      "id": "phys:neutrino-wave-packet-overlap",
+      "name": "Neutrino wave-packet overlap",
+      "kind": "definition",
+      "description": "For narrow, nondispersing vacuum packets, v_gi=p_i/E_i with E_i=sqrt(p_i^2+m_i^2). Interference involves the overlap of effective production/detection envelopes G_i(L-v_gi t). With v_g=(v_gi+v_gk)/2 and nonzero Delta v_g=|v_gi-v_gk|, l_coh approximately v_g sigma_x/Delta v_g is a separation scale: L << l_coh leaves that overlap unsuppressed, while substantial separation suppresses its interference term. The effective sigma_x includes both emission and detection coherence.",
+      "claimIds": [
+        "D-phys-neutrino-wave-packet-overlap"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 5-11, Sections 3.1-3.2, Equations 8-33: narrow vacuum packets, production/detection overlap and the coherent limit"
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 19-28, Sections 5.1-5.4, Equations 58-71: intrinsic uncertainties, localization, packet separation and detection coherence"
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 36-40, Sections 9-10 and Equation 95: packet, observable and standard-probability limits"
+        }
+      ],
+      "openObligations": [
+        "The approximation linearizes the dispersion relation over a narrow momentum distribution and neglects packet spreading. The characteristic length is shape-dependent, not an exact universal damping law or sharp boundary; equal group velocities produce no separation by this mechanism.",
+        "A source-only packet width is insufficient. A sufficiently coherent detection process can allow separated emitted components to interfere; the effective overlap already incorporates this condition, not an ordinary detector energy-bin width.",
+        "Loss of a local interference term does not establish fundamental nonunitarity, collapse, absorption or neutrino decay. Propagation through varying matter, scattering and environmental dynamics require separately specified evolution and are not derived here."
+      ]
+    },
+    {
+      "id": "phys:neutrino-oscillation-averaging",
+      "name": "Neutrino oscillation averaging",
+      "kind": "definition",
+      "description": "For a specified selected channel in a regime admitting a factored oscillation probability, define P_bar = integral dL dE w(L,E) P(L,E), with L>=0, E>0, w>=0 and integral w=1. The weight represents the stated source/baseline distribution and energy-dependent event response. Unresolved variation of the relative vacuum phase Delta m^2 L/(2E) can suppress the observed oscillatory pattern even when each production-propagation-detection contribution is coherent.",
+      "claimIds": [
+        "D-phys-neutrino-oscillation-averaging"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 5-11, Sections 3.1-3.2, Equations 8-33: narrow vacuum packets, production/detection overlap and the coherent limit"
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 28-33, Sections 6-7, Equations 72-82: stationary-source averaging and production/detection dependence"
+        },
+        {
+          "sourceId": "akhmedov2009-coherence",
+          "locator": "Author v2 pages 36-40, Sections 9-10 and Equation 95: packet, observable and standard-probability limits"
+        }
+      ],
+      "openObligations": [
+        "Actual event predictions retain flux and exposure normalization, cross sections, efficiencies, backgrounds and reconstruction response. No experiment-specific w is supplied; channel-dependent weights cannot be silently used to infer a sum over detected flavors equal to one.",
+        "Macroscopic source/detector positions, ensemble energy spread and reconstruction resolution are distinct from intrinsic quantum widths. Distinct incoherent emissions are combined at the probability or event-rate level, not as one coherent amplitude.",
+        "The stationary-source equivalence requires absent or irrelevant time structure and the stated time integration. Equal-energy interference components in that calculation are not a universal preparation postulate.",
+        "Suppression by averaging or packet separation is not a measured fundamental decoherence mechanism. No universal packet width, new collapse law or claim that every experimental signal is phase averaged follows."
+      ]
+    },
+    {
+      "id": "phys:solar-matter-profile",
+      "name": "Approximate solar electron-density input",
+      "kind": "definition",
+      "description": "Use the review's approximate radial solar electron density n_e(R)=n_e(0)*exp(-R/r0) for 0<=R<0.9 R_sun, with r0=R_sun/10.54 (quoted approximately as 6.6e7 m or 3.3e14 eV^-1). In the declared ordinary-matter convention V_e(R)=sqrt(2)*G_F*n_e(R) and A(R,E)=2E*V_e(R). A neutrino produced at radius R_p samples n_e(R_p), which is generally different from the central normalization n_e(0).",
+      "claimIds": [
+        "D-phys-solar-matter-profile"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 10-12, Section 14.5 and Equations 14.49-14.58: coherent forward potentials, neutral matter, propagation basis and particle-sign conventions"
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 13-15, Section 14.5.1 and Equations 14.66-14.70, ending before Section 14.6: approximate solar electron density, adiabatic phase-averaged survival and limiting regimes"
+        }
+      ],
+      "openObligations": [
+        "This is a prescribed smooth, spherically symmetric electron-density approximation within the coherent two-active-flavor solar model, with hbar=c=1, E>0 and an initially electron-flavor neutrino. The central density, solar radius and vacuum oscillation parameters are supplied inputs; no fitted central density or solar structure calculation is admitted.",
+        "The approximation is stated only for R<0.9 R_sun. It is not a measured density map, an exact full-Sun profile or a neutrino production distribution. A complete numerical trajectory would also require an outer-profile continuation and boundary conditions, neither of which is constructed here.",
+        "The solar discussion on page 14 omits sqrt(2) in its displayed A0 definition; the graph retains the charged-current potential from Equation 14.53 and A=2E V_e. This recorded printed inconsistency does not establish an error in any solar data analysis.",
+        "The profile is an input to propagation, not an origin of vacuum mass or proof that a particular SNO response uniquely selects this model. Solar and terrestrial preparations, neutrinos and antineutrinos, and coherent forward propagation and incoherent transport retain distinct scopes."
+      ]
+    },
+    {
+      "id": "phys:solar-adiabatic-survival",
+      "name": "Adiabatic solar survival and source averaging",
+      "kind": "definition",
+      "description": "For the declared two-flavor solar model, adiabatic propagation to a vacuum endpoint and sufficient relative-phase averaging give P_ee(E,r)=cos^2(theta_m,p)*cos^2(theta)+sin^2(theta_m,p)*sin^2(theta)=[1+cos(2 theta_m,p)*cos(2 theta)]/2, with theta_m,p evaluated at production position r. For a source component s define a supplied nonnegative production density f_s(r|E), integral d^3r f_s=1, and a supplied nonnegative normalized energy-response weight w_s(E), integral dE w_s=1. The averaged survival is <P_ee>_s=integral dE w_s(E) integral d^3r f_s(r|E) P_ee(E,r). For a specified electron-flavor charged-current response, w_s is proportional to the unoscillated differential neutrino number flux dPhi_s/dE at the detector times its cross section and detection efficiency, with any selected-bin response included and the finite nonzero normalization divided out. Here dPhi_s/dE counts neutrinos per unit area, time and neutrino energy; the transported energy flux E*dPhi_s/dE would introduce an extra energy factor and is not the event weight.",
+      "claimIds": [
+        "D-phys-solar-adiabatic-survival"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 8-10, Section 14.4 and Equations 14.35-14.43: coherent vacuum amplitudes, mass-squared phase differences, antineutrino conjugation, detector averaging and effective two-flavor limit"
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 12-13, Equations 14.59-14.65 before Section 14.5.1: instantaneous two-flavor mixing, resonance and derivative coupling in an inhomogeneous medium"
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 13-15, Section 14.5.1 and Equations 14.66-14.70, ending before Section 14.6: approximate solar electron density, adiabatic phase-averaged survival and limiting regimes"
+        }
+      ],
+      "openObligations": [
+        "Use the existing closed nu_e/nu_x approximation with Delta=m2^2-m1^2>0 and 0<theta<pi/4; nu_x is the stated active mu/tau combination. The matter mixing and nonzero gap use A=2sqrt(2)E G_F n_e. This is a formal application, not a precision three-flavor fit or a new empirical survival curve.",
+        "Adiabaticity requires the off-diagonal basis-derivative coupling |d theta_m/dx| to be small compared with the instantaneous eigenvalue gap along the actual path, together with smooth evolution to the vacuum endpoint. The exponential profile by itself does not establish that condition. No numerical check over a solar path is claimed.",
+        "The interference terms must be sufficiently smeared by the actual source, baseline and detector resolution/weights. A long baseline alone is not a replacement for this averaging condition, and averaged probabilities do not mean that the local forward-scattering Hamiltonian is incoherent. Page 14 prints Delta m^2/E >> L_Sun-Earth; this dimensionally inconsistent statement is not used. The relevant phase is dimensionless Delta m^2 L/(4E), with averaging as in Equations 14.40-14.42.",
+        "At fixed mixing angle the low-density limit A_p/Delta -> 0 gives P_ee -> 1-sin^2(2 theta)/2, while A_p/Delta -> infinity gives P_ee -> sin^2(theta) under the same adiabatic and phase-averaging conditions. Merely crossing resonance, A_p>Delta cos(2 theta), does not make the high-density limit exact and does not guarantee adiabaticity.",
+        "The production density includes the spatial measure as written, is source-component dependent and may depend on energy; it is not n_e(R), a delta function at the solar center or a fitted distribution in this graph. The source spectrum, production distribution, density normalization and detector weights are all external inputs. No actual production/energy integral, event spectrum, covariance or fit is evaluated.",
+        "The endpoint is the exposed Earth surface before terrestrial matter propagation. Earth regeneration, nonadiabatic jump probabilities, absorption, neutrino-neutrino refraction, sterile states and nonstandard interactions require additional models. For elastic scattering or neutral-current channels, the corresponding flavor-dependent response must be folded explicitly; a single electron-flavor charged-current weight is not a universal event-rate formula.",
+        "The model is not inferred by subtracting SNO fluxes or by pooling solar, reactor and accelerator acquisitions. It does not establish an absolute mass, mass-generation mechanism, flavor-object identity, necessary formation order, universal parent weight or carrier minimum."
+      ]
+    },
+    {
+      "id": "phys:neutrino-propagation-scope",
+      "name": "Neutrino oscillation propagation scope",
+      "kind": "definition",
+      "description": "In the declared coherent ultrarelativistic vacuum model, flavor-sensitive preparation and readout are related by interference between distinct mass propagation components. Their relative phases change transition probabilities as L/E varies; a probability is not a continuously measured sequence of flavor jumps. Oscillation is a conditional propagation phenomenon, not an additional bounded object or a universal property of every neutrino state.",
+      "claimIds": [
+        "D-phys-neutrino-propagation-scope"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 6-8, Section 14.3 and Equations 14.33-14.35: charged-current mixing, rectangular versus closed unitary matrices and flavor-state convention"
+        },
+        {
+          "sourceId": "pdg2025-neutrino-mixing",
+          "locator": "2025 review pages 8-10, Section 14.4 and Equations 14.35-14.43: coherent vacuum amplitudes, mass-squared phase differences, antineutrino conjugation, detector averaging and effective two-flavor limit"
+        }
+      ],
+      "openObligations": [
+        "Use the closed unitary active two- or three-state convention already declared. Oscillatory flavor probabilities require both mixing of contributing components and nonzero relative mass-squared differences, together with the stated production/detection and propagation coherence conditions. A degenerate pair, unmixed channel or suppressed interference need not show an oscillatory signal.",
+        "A single vacuum mass eigenstate acquires only a phase in its internal state; its flavor-readout probabilities |U_alpha,i|^2 do not oscillate. An incoherent density matrix diagonal in the vacuum mass basis also has constant vacuum flavor probabilities. These are not statements that vacuum mass states remain instantaneous eigenstates in arbitrary varying matter, or that packet position is stationary.",
+        "Leptonic charged-current flavor labels specify preparation/readout; mass differences and mixing specify model inputs. They do not establish necessary physical parents, an arising chronology, weights 0.3/0.7, N_min=N_crit=1, a SOMA phase/type or the claim that flavor identity can never be dynamically autonomous. No causal maintenance or downward constraint is inferred from these definition dependencies.",
+        "Within this oscillation model, mass-squared differences constrain differences only. They do not determine the absolute mass scale, require every individual mass to be nonzero, select Dirac versus Majorana character or supply a unique mass-generation extension. Mass origin remains a separate scope.",
+        "Continuous weak scattering or repeated projective collapse is not the coherent phase mechanism. A specified source, medium and detector determine which probability or weighted response is appropriate; transport and cosmological claims need additional inputs."
+      ]
+    },
+    {
+      "id": "phys:neutrino-transport-boundary",
+      "name": "Astrophysical and cosmological transport boundary",
+      "kind": "definition",
+      "description": "Flavor evolution can affect the interpretation of an astrophysical neutrino signal, but a source-to-detector prediction also needs the emitted flavor composition and spectrum, propagation environment and flavor-dependent detector response. A prescribed coherent trajectory Hamiltonian alone does not supply collisional, absorptive, self-refracting or expanding-universe transport. This graph admits the propagation implication and explicitly excludes quantitative astrophysical transport and cosmological predictions from this reconstruction.",
+      "claimIds": [
+        "D-phys-neutrino-transport-boundary"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "stirner2018-transport",
+          "locator": "arXiv:1803.04693v1 PDF pages 2-5 (printed pages 1-4), Section 1, Equations 1.1-1.4 and footnotes 4-5: trajectory coherence, ensemble occupations, collisional transport and cosmic expansion"
+        },
+        {
+          "sourceId": "stirner2018-transport",
+          "locator": "arXiv:1803.04693v1 PDF page 7 (printed page 6), Section 2.1.3, Equation 2.5: bilinear Hamiltonian and explicit omission of neutrino-neutrino refraction"
+        },
+        {
+          "sourceId": "stirner2018-transport",
+          "locator": "arXiv:1803.04693v1 PDF page 9 (printed page 8), Section 2.1.4: mean-field and slow-variation assumptions for the leading Liouville term"
+        }
+      ],
+      "openObligations": [
+        "The reviewed kinetic discussion distinguishes a normalized single-particle flavor density matrix from momentum-dependent occupation matrices. Emission, absorption, scattering and mode coupling require process kernels, occupation information and initial/boundary conditions; their normalization is not a universal trace-one probability. No collision coefficients, source spectrum, astrophysical flavor ratio or cosmological initial condition are supplied here.",
+        "The selected source describes cosmological expansion through momentum redshift and illustrates why collision integrals couple momentum modes. It does not justify obtaining a cosmological history by reusing a single vacuum L/E probability or a solar density profile. No expansion rate, decoupling prediction, abundance or mass constraint is inferred.",
+        "The bilinear Hamiltonian in Equation 2.5 explicitly leaves out neutrino-neutrino refraction. A self-consistent dense-neutrino medium would require additional interaction and angular/occupation inputs. The reviewed leading Liouville term also assumes slow phase-space variation; it is not an unrestricted exact kinetic solver.",
+        "Macroscopic phase averaging does not by itself establish environmental scattering, repeated collapse or a universal decoherence rate. Coherent forward matter effects, wave-packet overlap, unresolved-event averaging and collision-induced evolution are different mechanisms and retain their own conditions.",
+        "The present exclusions are finite limits of this admission, not a claim that such transport cannot be modeled. No new empirical acquisition, transport simulation, helicity-conversion model, universal thermalization theorem or source-detector fit is admitted."
+      ]
+    },
+    {
+      "id": "phys:neutrino-experiment-boundary",
+      "name": "Neutrino oscillation evidence across preparations",
+      "kind": "scoped-process",
+      "description": "The reviewed KamLAND reactor disappearance, SNO active-flavor transformation, Super-Kamiokande atmospheric disappearance and OPERA accelerator tau-appearance results support flavor change compatible with their declared oscillation models across different preparations and responses. Their counts, fluxes, averaged probabilities and conditional fit parameters are distinct observables. This synthesis preserves those boundaries and supplies neither a pooled transition probability nor a new global fit.",
+      "claimIds": [
+        "C-phys-neutrino-experiment-boundary"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "kamland2005",
+          "locator": "Author version 3 pages 2-3, Table I and Figure 1: reactor histories and spectrum inputs, calibration and response, background estimates, no-oscillation prediction and average survival"
+        },
+        {
+          "sourceId": "kamland2005",
+          "locator": "Author version 3 pages 4-5, Figures 2-4: unbinned two-flavor rate-and-shape fit, constrained backgrounds, display baseline, goodness-of-fit procedure and separate solar combination"
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF pages 4-5, channel-flux equations, Table II and note 7: electron-neutrino cross-section normalization, adopted B8 spectrum and systematic/cross-section inputs"
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF page 5, direct electron/non-electron flux equations and Figure 3; page 6 note 13: SNO-only joint inference, reported null test and correlated flux-region interpretation"
+        },
+        {
+          "sourceId": "sno2002-nc",
+          "locator": "Author v2 PDF page 5: separately added Super-Kamiokande solar ES constraint, shape-relaxed NC extraction using only angle and radius, and separate standard-solar-model comparison"
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 pages 4-6, Equations 1-4, Table II and Figure 2 on page 7: corrected event weights, 70-bin fit, nuisance parameters, bounded physical region and conditional oscillation result"
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 pages 4-5, Figure 1 on page 7 and corrected Figure 3 on page 8: reconstructed directions, asymmetry definition and measured zenith distributions"
+        },
+        {
+          "sourceId": "superk1998-atmospheric",
+          "locator": "Author version 2 page 5 and Figure 4 on page 9: reconstructed L/E cross-check, same acquisition, lepton-neutrino correlations and tau-versus-sterile ambiguity"
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Pages 5–6, Results and Equation 1: channel Poisson model, Gaussian background terms, pseudoexperiment-calibrated statistics and original appearance significance"
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Page 6, signal-strength compatibility and full-mixing mass-squared interval: same-data interpretation and conclusion"
+        },
+        {
+          "sourceId": "opera2015-appearance",
+          "locator": "Pages 3–5, signal/background section and Figure 3: simulated beam flux, detected-muon-neutrino normalization, efficiencies, cross section, charm controls, hadronic interactions and revised muon scattering"
+        }
+      ],
+      "openObligations": [
+        "This is a literature synthesis of already admitted results. Each chain retains its acquisition, selection, adopted flux/cross sections, detector response, backgrounds and inference contexts. Counts are not event-level oscillation probabilities. Reused events, multiple summaries and alternative fits within an acquisition are dependent; this synthesis is not another independent experiment or combined significance.",
+        "KamLAND reactor antineutrinos involve changing reactor histories and baselines. The reported period-averaged survival and historical two-flavor rate-and-shape fit use response and background models; the 180 km display baseline is not a single experimental baseline. Shape-only, KamLAND-only and solar-combined fits are distinct, and the solar combination adds a CPT assumption.",
+        "SNO reports a joint electron versus combined muon-plus-tau active-flux inference under its B8-shape and weak-response assumptions. This is not a measured oscillation phase, separate muon/tau identification or unique proof of adiabatic MSW conversion. Subtracting channel-flux centers does not reproduce its covariance, joint result or significance; the SK-added and shape-relaxed analyses remain separate.",
+        "Super-Kamiokande uses atmospheric flux, zenith distributions and detector/kinematic proxies with a historical two-flavor fit. The 1998 disappearance analysis does not directly identify tau appearance or distinguish its tau interpretation from the stated sterile alternative. Its L/E cross-check reuses the sample and does not resolve an oscillation dip.",
+        "OPERA reconstructs tau candidates in a primarily muon-neutrino beam using channel-dependent efficiencies and backgrounds. Its calibrated channel-combination significance, signal strength and full-mixing mass-squared compatibility reuse the same candidate sample. Dividing five candidates by an interaction total does not produce an oscillation probability, and the Fisher-product statistic is not the calibrated tail probability.",
+        "Historical effective two-flavor parameters, confidence constructions and adopted external inputs retain their publication-specific meanings; no current three-flavor global fit is inferred. These results do not establish absolute neutrino masses, every individual mass to be nonzero, Dirac/Majorana character, a unique mass-generation mechanism or quantitative astrophysical/cosmological transport."
       ]
     }
   ],
@@ -106742,6 +107469,308 @@
       ],
       "contextIds": [
         "cms2013-fcp-inference"
+      ]
+    },
+    {
+      "id": "physics:neutrino-flavor-mixing-neutrino-production-detection-coherence",
+      "source": "phys:neutrino-flavor-mixing",
+      "target": "phys:neutrino-production-detection-coherence",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The declared flavor/mass superposition supplies the alternatives whose production and detection must not distinguish their masses.",
+      "claimIds": [
+        "D-phys-neutrino-production-detection-coherence"
+      ]
+    },
+    {
+      "id": "physics:neutrino-vacuum-phase-neutrino-wave-packet-overlap",
+      "source": "phys:neutrino-vacuum-phase",
+      "target": "phys:neutrino-wave-packet-overlap",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The plane-wave relative phase is retained within overlapping effective packets; its usual probability requires the stated coherence limits.",
+      "claimIds": [
+        "D-phys-neutrino-wave-packet-overlap"
+      ]
+    },
+    {
+      "id": "physics:neutrino-production-detection-coherence-neutrino-wave-packet-overlap",
+      "source": "phys:neutrino-production-detection-coherence",
+      "target": "phys:neutrino-wave-packet-overlap",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Coherent production and detection and continued packet overlap are separate conditions; emission coherence alone does not ensure a propagation interference signal.",
+      "claimIds": [
+        "D-phys-neutrino-wave-packet-overlap"
+      ]
+    },
+    {
+      "id": "physics:neutrino-vacuum-phase-neutrino-oscillation-averaging",
+      "source": "phys:neutrino-vacuum-phase",
+      "target": "phys:neutrino-oscillation-averaging",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The relative L/E-dependent phase is the quantity averaged with a specified event weight; the phase formula does not determine that weight.",
+      "claimIds": [
+        "D-phys-neutrino-oscillation-averaging"
+      ]
+    },
+    {
+      "id": "physics:neutrino-wave-packet-overlap-neutrino-oscillation-averaging",
+      "source": "phys:neutrino-wave-packet-overlap",
+      "target": "phys:neutrino-oscillation-averaging",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Intrinsic loss of packet overlap and averaging over unresolved event variables are distinct routes to a suppressed interference pattern, not independent measured decoherence processes.",
+      "claimIds": [
+        "D-phys-neutrino-oscillation-averaging"
+      ]
+    },
+    {
+      "id": "physics:neutrino-matter-evolution-solar-matter-profile",
+      "source": "phys:neutrino-matter-evolution",
+      "target": "phys:solar-matter-profile",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The approximate solar density supplies the prescribed-medium input under the existing coherent weak-potential convention; it is not a mass-generation mechanism.",
+      "claimIds": [
+        "D-phys-solar-matter-profile"
+      ]
+    },
+    {
+      "id": "physics:solar-matter-profile-solar-adiabatic-survival",
+      "source": "phys:solar-matter-profile",
+      "target": "phys:solar-adiabatic-survival",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The production-point density enters the instantaneous mixing angle; the approximate profile does not supply the source production weights or establish adiabaticity.",
+      "claimIds": [
+        "D-phys-solar-adiabatic-survival"
+      ]
+    },
+    {
+      "id": "physics:neutrino-matter-mixing-solar-adiabatic-survival",
+      "source": "phys:neutrino-matter-mixing",
+      "target": "phys:solar-adiabatic-survival",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The survival prescription uses the declared matter-angle branch, nonzero gap and derivative-coupling condition before neglecting transitions between instantaneous eigenstates.",
+      "claimIds": [
+        "D-phys-solar-adiabatic-survival"
+      ]
+    },
+    {
+      "id": "physics:neutrino-vacuum-phase-solar-adiabatic-survival",
+      "source": "phys:neutrino-vacuum-phase",
+      "target": "phys:solar-adiabatic-survival",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The endpoint probability additionally assumes sufficient relative-phase averaging with the supplied source and detector weights; it is not obtained by setting the vacuum phase to zero.",
+      "claimIds": [
+        "D-phys-solar-adiabatic-survival"
+      ]
+    },
+    {
+      "id": "physics:lepton-charge-flavor-neutrino-propagation-scope",
+      "source": "phys:lepton-charge-flavor",
+      "target": "phys:neutrino-propagation-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Charged-current flavor labels define preparation and readout, rather than a necessary material parent or an electric-charge identity.",
+      "claimIds": [
+        "D-phys-neutrino-propagation-scope"
+      ]
+    },
+    {
+      "id": "physics:neutrino-flavor-mixing-neutrino-propagation-scope",
+      "source": "phys:neutrino-flavor-mixing",
+      "target": "phys:neutrino-propagation-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Mass/mixing assumptions define the model relation between flavor and propagation bases; they do not supply a mass-generation mechanism.",
+      "claimIds": [
+        "D-phys-neutrino-propagation-scope"
+      ]
+    },
+    {
+      "id": "physics:neutrino-vacuum-phase-neutrino-propagation-scope",
+      "source": "phys:neutrino-vacuum-phase",
+      "target": "phys:neutrino-propagation-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The relative-phase convention bounds the propagation claim and its stationary-state exceptions.",
+      "claimIds": [
+        "D-phys-neutrino-propagation-scope"
+      ]
+    },
+    {
+      "id": "physics:neutrino-production-detection-coherence-neutrino-propagation-scope",
+      "source": "phys:neutrino-production-detection-coherence",
+      "target": "phys:neutrino-propagation-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "A coherent superposition requires indistinguishable production and detection alternatives in the declared process.",
+      "claimIds": [
+        "D-phys-neutrino-propagation-scope"
+      ]
+    },
+    {
+      "id": "physics:neutrino-propagation-scope-neutrino-transport-boundary",
+      "source": "phys:neutrino-propagation-scope",
+      "target": "phys:neutrino-transport-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The conditional propagation interpretation does not determine a source flux, medium evolution or detector signal.",
+      "claimIds": [
+        "D-phys-neutrino-transport-boundary"
+      ]
+    },
+    {
+      "id": "physics:neutrino-matter-evolution-neutrino-transport-boundary",
+      "source": "phys:neutrino-matter-evolution",
+      "target": "phys:neutrino-transport-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The prescribed coherent weak potential omits the kinetic inputs required for collisions, absorption and a self-consistent evolving medium.",
+      "claimIds": [
+        "D-phys-neutrino-transport-boundary"
+      ]
+    },
+    {
+      "id": "physics:neutrino-oscillation-averaging-neutrino-transport-boundary",
+      "source": "phys:neutrino-oscillation-averaging",
+      "target": "phys:neutrino-transport-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "A suppressed interference pattern does not identify a collision kernel or justify replacing transport by universal decoherence.",
+      "claimIds": [
+        "D-phys-neutrino-transport-boundary"
+      ]
+    },
+    {
+      "id": "physics:neutrino-propagation-scope-neutrino-experiment-boundary",
+      "source": "phys:neutrino-propagation-scope",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared propagation scope bounds interpretation of the experimental synthesis.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:kamland2005-average-survival-neutrino-experiment-boundary",
+      "source": "phys:kamland2005-average-survival",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This already admitted result contributes its own preparation, response and inference limits; it is not an independent new acquisition or a pooled probability.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:kamland2005-oscillation-fit-neutrino-experiment-boundary",
+      "source": "phys:kamland2005-oscillation-fit",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This already admitted result contributes its own preparation, response and inference limits; it is not an independent new acquisition or a pooled probability.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:sno2002-active-flavor-components-neutrino-experiment-boundary",
+      "source": "phys:sno2002-active-flavor-components",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This already admitted result contributes its own preparation, response and inference limits; it is not an independent new acquisition or a pooled probability.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:superk1998-oscillation-fit-neutrino-experiment-boundary",
+      "source": "phys:superk1998-oscillation-fit",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This already admitted result contributes its own preparation, response and inference limits; it is not an independent new acquisition or a pooled probability.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:opera2015-appearance-evidence-neutrino-experiment-boundary",
+      "source": "phys:opera2015-appearance-evidence",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This already admitted result contributes its own preparation, response and inference limits; it is not an independent new acquisition or a pooled probability.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:opera2015-parameter-compatibility-neutrino-experiment-boundary",
+      "source": "phys:opera2015-parameter-compatibility",
+      "target": "phys:neutrino-experiment-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This already admitted result contributes its own preparation, response and inference limits; it is not an independent new acquisition or a pooled probability.",
+      "claimIds": [
+        "M-phys-neutrino-experiment-boundary"
+      ],
+      "contextIds": [
+        "kamland2005-response",
+        "kamland2005-oscillation-fit",
+        "sno2002-flavor-fit",
+        "superk1998-oscillation-fit",
+        "opera2015-inference"
       ]
     }
   ]

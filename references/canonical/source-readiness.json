@@ -11703,6 +11703,78 @@
       ]
     },
     {
+      "nodeId": "phys:neutrino-production-detection-coherence",
+      "role": "definition",
+      "denotes": "Indistinguishability and intrinsic uncertainty conditions for the mass alternatives in a specified production/detection process.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-production-detection-coherence"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-wave-packet-overlap",
+      "role": "definition",
+      "denotes": "The effective overlap of mass-component packets and its conditional vacuum separation scale, rather than a measured decoherence rate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-wave-packet-overlap"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-oscillation-averaging",
+      "role": "definition",
+      "denotes": "A declared normalized selected-channel average over unresolved baseline and energy, distinct from intrinsic loss of packet overlap.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-oscillation-averaging"
+      ]
+    },
+    {
+      "nodeId": "phys:solar-matter-profile",
+      "role": "definition",
+      "denotes": "A supplied radial electron-density approximation with a stated domain, distinct from the neutrino production distribution.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-solar-matter-profile"
+      ]
+    },
+    {
+      "nodeId": "phys:solar-adiabatic-survival",
+      "role": "definition",
+      "denotes": "A conditional two-flavor survival and averaging prescription; no computed solar distribution or new measured survival probability.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-solar-adiabatic-survival"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-propagation-scope",
+      "role": "definition",
+      "denotes": "Neutrino oscillation propagation scope within its explicit preparation, model and evidence limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-propagation-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-transport-boundary",
+      "role": "definition",
+      "denotes": "Astrophysical and cosmological transport boundary within its explicit preparation, model and evidence limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-transport-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-experiment-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "Neutrino oscillation evidence across preparations within its explicit preparation, model and evidence limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-neutrino-experiment-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

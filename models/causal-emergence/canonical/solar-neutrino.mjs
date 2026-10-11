@@ -672,7 +672,7 @@ const contracts = {
         "The non-electron result is a combined muon-plus-tau component. The response comparison supports solar flavor transformation compatible with oscillations; it does not separately identify those two flavors, measure an oscillation phase or mass splitting, fix absolute masses, prove matter enhancement or select a unique mass-generation mechanism.",
         "The pure-D2O acquisition updates earlier CC/ES results from the same phase. Selected events, channel fits, normalized fluxes and joint flavor inference reuse that acquisition. They are not independent experiments; the response includes separate auxiliary preparations and controls.",
         "The article also gives an SK-added solar-ES constraint and a shape-relaxed NC extraction that omits energy information. These are separate analyses, not the SNO-only principal result or new SNO acquisitions. The quoted standard-solar-model total flux is a comparison; agreement does not determine the conversion mechanism or replace the spectral-shape and response assumptions.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound.",
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound.",
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed."
       ],
       "contextIds": [
@@ -839,7 +839,7 @@ const contracts = {
         "The non-electron result is a combined muon-plus-tau component. The response comparison supports solar flavor transformation compatible with oscillations; it does not separately identify those two flavors, measure an oscillation phase or mass splitting, fix absolute masses, prove matter enhancement or select a unique mass-generation mechanism.",
         "The pure-D2O acquisition updates earlier CC/ES results from the same phase. Selected events, channel fits, normalized fluxes and joint flavor inference reuse that acquisition. They are not independent experiments; the response includes separate auxiliary preparations and controls.",
         "The article also gives an SK-added solar-ES constraint and a shape-relaxed NC extraction that omits energy information. These are separate analyses, not the SNO-only principal result or new SNO acquisitions. The quoted standard-solar-model total flux is a comparison; agreement does not determine the conversion mechanism or replace the spectral-shape and response assumptions.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound.",
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound.",
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed."
       ],
       "contextIds": [
@@ -874,7 +874,7 @@ const contracts = {
       ],
       "openObligations": [
         "The non-electron result is a combined muon-plus-tau component. The response comparison supports solar flavor transformation compatible with oscillations; it does not separately identify those two flavors, measure an oscillation phase or mass splitting, fix absolute masses, prove matter enhancement or select a unique mass-generation mechanism.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -903,7 +903,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -932,7 +932,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -957,7 +957,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -990,7 +990,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -1015,7 +1015,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -1040,7 +1040,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -1065,7 +1065,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -1090,7 +1090,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     },
     {
@@ -1119,7 +1119,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited apparatus, calibration, nuclear cross-section, B8 spectrum, solar-model and earlier SNO/Super-Kamiokande articles are adopted inputs described by this primary account; their bodies and underlying calculations were not independently reviewed here. No complete acquisition, detector simulation, calibration or likelihood reproduction is claimed.",
-        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block; source cards 1.17 and 1.25 remain pending. The invisible-proton-decay footnote is not a new admitted bound."
+        "The original parent weights, carrier minima and fixed arising order are not admitted. Atmospheric and accelerator evidence, a matter-evolution construction and the separate application claims remain outside this SNO block. The invisible-proton-decay footnote is not a new admitted bound."
       ]
     }
   ],
