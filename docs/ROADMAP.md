@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 177 remain on the
+graph. Of the 249 original source cards, 176 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-72 cards is a source-review census, not a percentage of scientifically supported
+73 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Eleven Level-1 cards remain pending.
+Ten Level-1 cards remain pending.
 
-The current graph contains 1261 records, 1058 connections, 1364 claims and 405 sources.
+The current graph contains 1269 records, 1081 connections, 1373 claims and 407 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -117,8 +117,15 @@ belong to the current claims.
    two-flavor adiabatic approximation, with no inferred solar mechanism edge.
    OPERA accelerator tau appearance retains its selected decay channels,
    modeled expectations, calibrated significance and same-data 90% interval.
-   Transport, astrophysical-source and cosmological application claims remain
-   pending for neutrino cards 1.17 and 1.25.
+   Card 1.17 is qualified to these experimental scopes and to explicit
+   production/detection coherence, packet overlap and unresolved-event averaging.
+   A prescribed solar density and conditional adiabatic survival expression
+   keep production and response weights external; resonance alone does not
+   establish conversion. The qualitative astrophysical propagation implication
+   is retained, while quantitative transport and cosmological predictions are
+   excluded without their additional inputs. Card 1.25 remains pending for mass
+   origin and its remaining assertions. Original weights, minima, SOMA ordering
+   and universal flavor-instability claims are not admitted.
    Finite bipartite definitions distinguish entanglement, projective Bell
    locality and unconditioned marginals. Two Delft Bell runs preserve separate
    preparation, scoring, stopping assumptions and null-test outcomes.

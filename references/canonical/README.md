@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1261 records, 1058 connections, 1364 claims and 405 sources.
+The current graph contains 1269 records, 1081 connections, 1373 claims and 407 sources.
 The physics review contains 176 study contexts and 140 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -195,6 +195,49 @@ or likelihood replay are claimed. These published outcomes receive no
 local executable certification. Their width/loop and unreconciled-table
 obligations remain attached to these records.
 
+## Neutrino propagation and its limits
+
+Card 1.17 is scoped to conditional propagation between flavor-sensitive
+preparation and readout. Leptonic flavor labels specify the preparation and
+measurement basis; mass differences and mixing specify model inputs. Relative
+phases are not continuously measured flavor jumps. A vacuum mass eigenstate
+or a mixture diagonal in the vacuum mass basis has constant flavor-readout
+probabilities. Necessary parents, weights 0.3/0.7, unit carrier minima, SOMA
+phase/type and universal flavor non-autonomy are excluded. Card 1.25 retains
+its separate mass-origin and remaining source-review obligations.
+
+[Akhmedov and Smirnov](https://arxiv.org/abs/0905.1903v2) supply scoped
+production/detection indistinguishability, effective packet overlap and
+unresolved-event averaging. Intrinsic quantum widths differ from detector
+resolution and beam spread. The vacuum separation scale assumes narrow,
+nondispersing effective packets; it is not a measured universal coherence
+length. A normalized selected-channel average requires its own source,
+baseline and response weights. Loss of an observed interference pattern does
+not establish masslessness, repeated collapse or a universal decoherence rate.
+
+The [PDG solar application](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf)
+uses a prescribed exponential electron density for R<0.9 R_sun and a conditional
+two-flavor adiabatic survival expression. Production density and energy-response
+weights are supplied separately. Event weights use differential neutrino number
+flux with the selected cross section and detector response; energy flux would
+add an incorrect factor of neutrino energy. The profile alone establishes neither
+adiabaticity nor sufficient phase averaging; crossing resonance is distinct
+from the asymptotic high-density limit. The review's page-14 potential
+normalization and dimensionally inconsistent phase condition are recorded;
+the graph uses the consistent charged-current potential and dimensionless
+phase. No numerical solar path, production integral or likelihood is reproduced,
+and SNO's active-flavor result does not uniquely establish that mechanism.
+
+[Stirner, Sigl and Raffelt](https://arxiv.org/abs/1803.04693v1) delimit coherent
+trajectory evolution from phase-space occupation transport. Flavor propagation
+can affect astrophysical signal interpretation, but quantitative astrophysical
+and cosmological predictions are excluded here. Source spectra/composition,
+collisions, absorption, evolving media, self-refraction and detector responses
+require additional inputs. The reviewed bilinear Hamiltonian omits
+neutrino-neutrino refraction, and its leading Liouville treatment assumes slow
+variation. No transport solver, cosmological history, absolute mass scale or
+unique mass-generation mechanism is supplied by the oscillation records.
+
 ## Reactor neutrino oscillations
 
 The [PDG mixing treatment](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf)
@@ -214,10 +257,10 @@ The local check binds the two unchanged source assets and verifies selected
 energy summaries, printed central arithmetic and synthetic phase identities.
 It does not reproduce the likelihood or its uncertainty. The earlier sample
 is part of this acquisition, and the solar-combined result is a different
-inference. Cards 1.17 and 1.25 remain open for their other source assertions,
-including transport, astrophysical-source and cosmological applications. The
-solar, atmospheric and accelerator results retain their own acquisition and
-interpretation scopes.
+inference. Solar, atmospheric and accelerator results retain their own
+acquisition and interpretation scopes. Their common literature synthesis
+preserves the four distinct preparations and dependent stages; it does not
+supply a pooled probability, combined significance or new global fit.
 
 ## Accelerator tau-neutrino appearance
 

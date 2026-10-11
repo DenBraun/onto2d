@@ -1,52 +1,52 @@
 # Current canonical validation
 
-Current graph: `2026.10.10.4`, checked locally on 10 October 2026.
+Current graph: `2026.10.11`, checked locally on 11 October 2026.
 
-The source contains 1261 records, 1058 connections, 1364 claims and 405 sources.
-The output has 878 descriptive and 180 functional connections. Its physics
-review contains 176 study contexts and 140 comparisons. All 166 bound input
+The source contains 1269 records, 1081 connections, 1373 claims and 407 sources.
+The output has 901 descriptive and 180 functional connections. Its physics
+review contains 176 study contexts and 140 comparisons. All 169 bound input
 hashes and 95 local source hashes match current bytes.
 
 - `npm test` passes all 787 ordinary tests with no failures, cancellations or
   skips. Canonical source tests belong to the separate research suite.
-- All 157 focused canonical tests pass, including 24 confinement tests and the
-  affected source, physics, routing, readiness, serialization, field, gluon,
-  entanglement, hadron-production and nuclear-energetics boundaries. Mutations
-  protect complete scientific records, source versions, uncertainty limits and
-  the separation of definitions, computations, observations and interpretations.
+- All 121 focused canonical tests pass, including 19 new oscillation tests and
+  the affected reactor, solar, atmospheric, matter, accelerator, lepton,
+  source, physics, routing, readiness and serialization contracts. Mutations
+  protect scientific scope, source passages, stationary vacuum exceptions,
+  normalized averaging, solar assumptions, shared-data interpretation and
+  exclusion of unsupported parent rules or transport predictions.
 - `npm run model:causal-emergence:verify` passes exact source compilation and
-  release verification. No complete lattice or detector replay is claimed.
-- `npm run model-studio:data:verify` validates all 90 browser files against the
-  exact release. The registry has 28 entries; Model Studio uses module revision
-  `20261010.4` and the current graph.
+  release verification. No complete detector or transport replay is claimed.
+- `npm run model-studio:data:verify` validates all 91 browser files against the
+  exact release. The registry has 29 entries; Model Studio uses module revision
+  `20261011.1` and the current graph.
 - `npm run build` passes all repository checks, including 217 versioned
   contracts and 188 Markdown files.
 - Original catalogues and existing frozen releases remain unchanged. Only
-  `references/level-1.json#/7` leaves the pending source list.
+  `references/level-1.json#/17` leaves the pending source list.
 
-The focused commands used locally were:
+The focused command used locally was:
 
 ```sh
-node --test --test-concurrency=4 test/workspace/canonical-confinement-{formal,lattice,string-breaking,charge-search}.test.mjs
-node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,release-serialization,field-dynamics,gluon-formal,gluon-spin,gluon-color,gluon-dis,entanglement-formal,entanglement-vacuum,entanglement-bell,entanglement-teleportation,hadron-production,nuclear-energetics,nuclear-energetics-arithmetic}.test.mjs
+node --test --test-concurrency=4 test/workspace/canonical-{oscillation-coherence,oscillation-solar,oscillation-formal,neutrino,solar-neutrino,atmospheric-neutrino,matter-neutrino,accelerator-neutrino,lepton-formal,source,physics,routing,readiness,release-serialization}.test.mjs
 ```
 
-The production browse loader starts with two HTTP requests totaling 978384
-bytes. Four selected confinement, screening and charge-search records load
-exact details from three chunks; the physics review is fetched separately.
-Cache reuse, closed sessions, identity mismatch, graph/detail tamper rejection
-and clean retry pass. The current full-pack HTTP fallback loads all 11 split
-files within the default limits; a smaller budget is rejected. Historical
-fallback preserves its original identity and expanded edge evidence.
-All 1058 edges resolve their 1125 claim references, and all 1261 nodes retain
-their 1369 expanded rationales. This was a Node Fetch integration probe, not a
+The production browse loader starts with two HTTP requests totaling 991651
+bytes. Four selected coherence, solar, transport-boundary and evidence-synthesis
+records load exact details from three chunks; the physics review is fetched
+separately. Cache reuse, closed sessions, identity mismatch, graph/detail tamper
+rejection and clean retry pass. The current full-pack HTTP fallback loads all
+11 split files within the default limits; a smaller budget is rejected.
+Historical fallback preserves its original identity and expanded edge evidence.
+All 1081 edges resolve their 1148 claim references, and all 1269 nodes retain
+their 1377 expanded rationales. This was a Node Fetch integration probe, not a
 rendered-browser timing or visual check.
 
-The initial graph JSON is 977903 bytes before compression. The compact bundle
-is 22164287 bytes and the release totals 44450411 bytes, within the unchanged
-32 MiB file and 64 MiB total budgets. Remaining allowances are 11390145 bytes
-for the bundle and 22658453 bytes for the total release. The largest semantic
-split is 15510410 bytes, within the browser fallback's 16 MiB file limit.
+The initial graph JSON is 991174 bytes before compression. The compact bundle
+is 22362859 bytes and the release totals 44848679 bytes, within the unchanged
+32 MiB file and 64 MiB total budgets. Remaining allowances are 11191573 bytes
+for the bundle and 22260185 bytes for the total release. The largest semantic
+split is 15653904 bytes, within the browser fallback's 16 MiB file limit.
 Relations retain all source fields and reference complete dictionary evidence
 through claim IDs. Selected nodes retain expanded rationale for inspection.
 Transport budgets and public schemas are unchanged.
@@ -57,36 +57,38 @@ own run after publication. Unrelated research replays were not run.
 Current artifact hashes:
 
 ```text
-rootHash: sha256:c3a36b15b5c7c45aa43f6a387dea2f4b60ef01c3b6a5a6b779af2fbadf5f0dc0
-manifestHash: sha256:290e402ca7b877ba7fbd1df5fdf7027229fe9000e7556edc671fe3583c6c839c
-registryHash: sha256:76529592336df34556299486ec3d9015ccc3e27b4b67a643c713436e4261bcbe
-browseIndexHash: sha256:4635aa5cb0be25ccbde52886c20ae9179057cddcfc7da9df1bf17362f1b3d198
+rootHash: sha256:6f280e59eff6dd39e8b9d5c6f9c7d8ab7e5581cfdac446a5d30a470173138053
+manifestHash: sha256:d9686c86674cecbe0a3cc37f251cc01fda89cd4d039d21ebb24d782422f4b447
+registryHash: sha256:ce653df6b719dc0553fb12c8974d1e5729e8c5f0c0cc696f411e6f295bf7417c
+browseIndexHash: sha256:798966473c59843b05ac7810ee0198b602bbb76c6c631eab1c567645e94a1bb0
 ```
 
-Scientific review remains partial: 177 [source cards](../../../references/canonical/pending-review.json)
-are unfinished, including 11 at Level 1. The other 72 cards have substantive
+Scientific review remains partial: 176 [source cards](../../../references/canonical/pending-review.json)
+are unfinished, including 10 at Level 1. The other 73 cards have substantive
 assertions supported, qualified or excluded; this census does not measure
 scientific validity or independent reproduction. The Level-0 bridge remains
-unresolved.
+unresolved, and card 1.25 retains its separate mass-origin review scope.
 
-Confinement criteria distinguish unscreened pure-gauge area laws, dynamical-quark
-screening and hadronic interpretations. Wilson and Creutz retain finite-cutoff,
-strong-coupling and continuum limits. Bali retains its basis-summary,
-equal-mixing and auxiliary-asymptote conflicts. Bulava uses one nonphysical
-2+1-flavor ensemble, correlated relative-energy extraction and a later
-uncorrelated three-state model. Its diagonal crossings do not establish a
-universal breaking radius or a real-time rate; no raw simulation replay is
-supplied.
+Neutrino oscillation records distinguish coherent production/detection,
+effective wave-packet overlap and unresolved-event averaging. Quantum widths,
+macroscopic resolution and beam spread are different inputs. The standard
+coherent probability is conditional; a vacuum mass eigenstate or a mixture
+diagonal in the vacuum mass basis has constant flavor-readout probabilities.
+Original weights, necessary parents, carrier minima and SOMA ordering are
+excluded rather than inferred from the formal dependencies.
 
-Lee's reported material bound retains different charge-window statements,
-source-version cut differences and the unreproduced confidence/exposure
-construction. The independent CMS acquisition constrains detector-stable,
-color-singlet fractional-electric-charge particles under a stated production
-model. Neither result supplies a universal free-color null or a pooled bound.
+The solar application supplies a declared radial density approximation and
+conditional adiabatic, phase-averaged survival expression. Production and
+detector weights remain external; no numerical trajectory or response is
+reproduced. Event weights use differential neutrino number flux, with explicit
+units and response factors, rather than transported energy flux. The two printed PDG formula inconsistencies are recorded with the
+consistent potential and phase conventions. Resonance alone does not establish
+adiabatic conversion or the exact high-density limit.
 
-Selected Durr spectra, TASSO jet interpretations and SLD neutral-hadron yields
-retain their calibration, detector, decay and extrapolation assumptions. They
-do not provide a unique hadronization mechanism, all-channel confinement proof
-or nuclear/atomic stability derivation. Original weighted parents, universal
-carrier minima, temporal maintenance and downward causation are excluded.
+KamLAND, SNO, Super-Kamiokande and OPERA retain their distinct preparations,
+responses, historical models and shared-data stages. The synthesis is not a
+pooled probability, combined significance or new global fit. Quantitative
+astrophysical transport and cosmological predictions are explicitly excluded
+without their additional source, medium and kinetic inputs. Absolute masses,
+Dirac/Majorana character and a unique mass-generation mechanism are not inferred.
 Passing software checks does not independently validate these interpretations.

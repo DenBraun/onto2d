@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.10.4`: 1261 records, 1058 connections,
-1364 claims and 405 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.11`: 1269 records, 1081 connections,
+1373 claims and 407 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -93,6 +93,12 @@ QED amplitude conventions have a separate synthetic kinematic witness;
 classification and internal propagators do not establish formation mechanisms
 or observed constituent populations.
 Neutrino records keep reactor, solar, atmospheric and accelerator preparations separate.
+Production/detection coherence, effective packet overlap and unresolved-event
+averaging have separate definitions. A prescribed solar density and conditional
+adiabatic survival retain externally supplied production and response weights.
+A vacuum mass eigenstate and a diagonal mass mixture need not show oscillatory
+flavor probabilities. Astrophysical flavor interpretation is qualitative here;
+quantitative transport and cosmological predictions require separate inputs.
 Solar response-channel fits and joint flavor inference share one acquisition;
 atmospheric angular diagnostics and oscillation fits retain their model inputs.
 Matter propagation is a formal approximation, not an observed mass-generation
