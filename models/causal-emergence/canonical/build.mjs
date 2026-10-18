@@ -162,6 +162,8 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/gauge-sector-model.mjs",
     "models/causal-emergence/canonical/gauge-sector-boundary.mjs",
     "models/causal-emergence/canonical/gauge-sector-scope.mjs",
+    "models/causal-emergence/canonical/scalar-dispersion-isotropy.mjs",
+    "models/causal-emergence/canonical/field-anisotropy-boundary.mjs",
     "models/causal-emergence/canonical/entanglement-formal.mjs",
     "models/causal-emergence/canonical/entanglement-vacuum.mjs",
     "models/causal-emergence/canonical/entanglement-bell.mjs",

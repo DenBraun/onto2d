@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 169 remain on the
+graph. Of the 249 original source cards, 168 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-80 cards is a source-review census, not a percentage of scientifically supported
+81 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Three Level-1 cards remain pending.
+Two Level-1 cards remain pending.
 
-The current graph contains 1328 records, 1216 connections, 1448 claims and 422 sources.
+The current graph contains 1330 records, 1223 connections, 1450 claims and 422 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -99,6 +99,11 @@ belong to the current claims.
    OPAL and historical UA1 inferences retain their conditional process scope.
    Universal differentiation, autonomous sectors and parent/maintenance rules
    are excluded.
+   Card 1.32 defines a fixed-preparation rotational comparison using the
+   isotropic free scalar dispersion as a formal null. Coordinate changes do
+   not select a physical axis. Unsupported vacuum/admissibility assertions,
+   parent weights and carrier minima are excluded; polarization and directional
+   excitation stability remain separate unresolved cards.
    Card 1.23 separates Maxwell gauge/Fock definitions, normalized one-photon
    states, triggered optical counts and response-conditioned anticorrelation.
    The counting and inference records share data; separate same-source

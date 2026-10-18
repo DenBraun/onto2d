@@ -12306,6 +12306,24 @@
       ]
     },
     {
+      "nodeId": "phys:scalar-dispersion-isotropy",
+      "role": "definition",
+      "denotes": "The isotropic energy-versus-direction null of a specified free scalar model, with active and passive rotations distinguished.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-scalar-dispersion-isotropy"
+      ]
+    },
+    {
+      "nodeId": "phys:field-anisotropy-boundary",
+      "role": "definition",
+      "denotes": "A scoped interpretation boundary for directional field claims, preserving the supplied isotropic scalar comparison and excluding unsupported universal vacuum or admissibility assertions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

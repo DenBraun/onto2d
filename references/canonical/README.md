@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1328 records, 1216 connections, 1448 claims and 422 sources.
+The current graph contains 1330 records, 1223 connections, 1450 claims and 422 sources.
 The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -68,6 +68,43 @@ states can have changing unequal-time correlations. Card 1.26 retains this
 scoped construction; interaction-amplitude vertices, renormalization-scale
 changes and numerical sampling do not supply a universal temporal process or
 maintenance cause.
+
+## Directional field claims and an isotropic null
+
+Card 1.32 is qualified to a defined rotation comparison and an explicit
+source-support boundary. The selected domain is the frequency of a free real
+scalar excitation in infinite flat space, with a time-independent Hamiltonian,
+positive mass, a chosen Fock vacuum and no imposed directional background.
+[Tong's reviewed scalar construction](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S2.html)
+gives `E(k)=sqrt(k dot k+m^2)` in `hbar=c=1`. For `R` in `SO(3)`,
+`E(Rk)=E(k)` because a rotation preserves the scalar product. Compare nonzero
+wave vectors at fixed magnitude, mass and preparation. Equal energies do not
+identify the momentum states, and changing magnitude is not a directional test.
+
+A passive coordinate rotation transforms all vector components and any physical
+axis together. An active test changes momentum relative to a fixed physical
+axis and preparation. The chosen model supplies no preferred axis or measured
+anisotropic response. A finite cubic box or an anisotropic cutoff cannot inherit
+its unrestricted rotation symmetry. Stationarity under time translation alone
+does not determine rotational symmetry.
+
+Propagation, coupling, localization and response require different observables.
+A medium response tensor, imposed-field dispersion, directional boundary and
+empty-space symmetry hypothesis cannot substitute for one another. Polarization,
+parity violation, nonreciprocity, momentum-transfer running and time evolution
+also require their own definitions. Directional BRDF geometry does not by itself
+identify an intrinsic material or vacuum axis.
+
+The generic field framework, free scalar evolution and chosen vacuum supply no
+necessary maintenance or modulation cause for anisotropy. Parent 0.22 still
+lacks an admissibility functional, gradient definition, units, field-observable
+map and discriminating prediction; the Level-0 F12 finding remains unresolved.
+Original weights `0.30/0.25/0.20/0.25`, unit minima and SOMA property/phase labels
+do not establish physical thresholds. The original conceptual and theoretical
+placeholders supply no identifiable anisotropy publication. No experiment or
+universal vacuum-anisotropy law is admitted. Cards 1.33 and 1.34 remain pending;
+their speculative names cannot validate one another or establish polarization,
+excitation stability or transport.
 
 ## Gauge and matter sector decomposition
 

@@ -1,56 +1,53 @@
 # Current canonical validation
 
-Current graph: `2026.10.18.6`, checked locally on 18 October 2026.
+Current graph: `2026.10.18.7`, checked locally on 18 October 2026.
 
-The source contains 1328 records, 1216 connections, 1448 claims and 422 sources.
-The output has 1036 descriptive and 180 functional connections. Its physics
-review retains 188 study contexts and 142 comparisons. All 190 bound input
+The source contains 1330 records, 1223 connections, 1450 claims and 422 sources.
+The output has 1043 descriptive and 180 functional connections. Its physics
+review retains 188 study contexts and 142 comparisons. All 192 bound input
 hashes and 95 local source hashes match current bytes.
 
 - `npm test` passes all 787 ordinary tests with no failures, cancellations or
   skips. Canonical source tests belong to the separate research suite.
-- All 135 distinct focused canonical tests pass, including 18 new gauge-sector
-  groups. Coverage includes chiral representations, hypercharge normalization,
-  scalar/gauge distinctions, shared interactions, conditional electroweak field
-  combinations, gauge redundancy and physical counting, framework/evolution
-  boundaries, source-specific collider inference and unsupported formation
-  claims. Coordinated claim/display/source changes cannot silently broaden the
-  reviewed scope.
+- All 107 distinct focused canonical tests pass, including 12 new scalar
+  isotropy and field-anisotropy boundary groups. Coverage protects the scalar
+  norm and rotation convention, fixed momentum magnitude and preparation,
+  active/passive distinctions, state and regulator limits, descriptive inputs,
+  source ownership and unsupported vacuum, parent and Level-0 claims.
+  Coordinated claim/display changes cannot silently broaden the reviewed scope.
 - `npm run model:causal-emergence:verify` passes exact source compilation and
   release verification. Existing bounded checks retain their original scope;
-  no new gauge construction, global fit or experimental likelihood is replayed.
+  no new anisotropy experiment, response fit or numerical study is replayed.
 - `npm run model-studio:data:verify` validates all 97 browser files against the
-  exact release. The registry has 36 entries; Model Studio uses module revision
-  `20261018.7` and the current graph.
-- `npm run build` passes all repository checks, including 217 versioned
-  contracts and 188 Markdown files.
-- Original catalogues and existing frozen releases remain unchanged. Only
-  `references/level-1.json#/29` leaves the pending source list. All prior
-  scientific entities, claims, relations, rules, study contexts and comparisons
-  retain their existing contents and scopes.
+  exact release. The registry has 37 entries; Model Studio uses module revision
+  `20261018.8` and the current graph.
+- `npm run build` passes source, module revision, workspace, declaration,
+  worker, registry, schema, kernel, documentation and stored-catalogue checks.
+  All 217 public schemas and 188 Markdown files pass their checks.
 
-The focused command used locally was:
+The focused commands used locally were:
 
 ```sh
-node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,release-serialization,quark-formal,lepton-formal,gluon-formal,gluon-color,weak-boson,higgs-coupling,photon-formal,field-dynamics,gauge-sector-model,gauge-sector-boundary,gauge-sector-scope}.test.mjs
+node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,release-serialization,field-dynamics,gauge-sector-model,gauge-sector-boundary,gauge-sector-scope,scalar-dispersion-isotropy,field-anisotropy-boundary}.test.mjs
+node --test test/workspace/canonical-routing.test.mjs
 ```
 
-The production browse loader starts with two HTTP requests totaling 1092622
-bytes. All three new records load exact details from two chunks; the physics
-review is fetched separately. All 1328 full node details match the release
+The production browse loader starts with two HTTP requests totaling 1096534
+bytes. Both new definitions load exact details from two chunks; the physics
+review is fetched separately. All 1330 full node details match the release
 through the lazy loader and actual local HTTP transport. Cache reuse,
 cancellation, closed sessions, identity mismatch, graph/detail tamper rejection
 and clean retry pass. The current full-pack HTTP fallback loads all 11 split
-files within default limits; a smaller budget is rejected. The previous release
-retains its exact identity through HTTP fallback. All 1216 edges resolve their
-1283 claim references, and all 1328 nodes retain their 1436 expanded rationales.
-These were Fetch integration probes, not rendered-browser timing or visual checks.
+files within default limits; a smaller budget is rejected. Registered historical
+fallback retains its exact identity. All 1223 edges resolve their 1290 claim
+references, and all 1330 nodes retain their 1438 expanded rationales. These
+were Fetch integration probes, not rendered-browser timing or visual checks.
 
-The initial graph JSON is 1092140 bytes before compression. The compact bundle
-is 23914086 bytes and the release totals 47958672 bytes, within the unchanged
-32 MiB file and 64 MiB total budgets. Remaining allowances are 9640346 bytes
-for the bundle and 19150192 bytes for the total release. The largest semantic
-split is 16734301 bytes, leaving 42915 bytes within the browser fallback's
+The initial graph JSON is 1096052 bytes before compression. The compact bundle
+is 23954313 bytes and the release totals 48039457 bytes, within the unchanged
+32 MiB file and 64 MiB total budgets. Remaining allowances are 9600119 bytes
+for the bundle and 19069407 bytes for the total release. The largest semantic
+split is 16760740 bytes, leaving 16476 bytes within the browser fallback's
 16 MiB file limit. Transport budgets and public schemas are unchanged.
 
 Validation uses macOS, Node.js 24.19.0 and Python 3.9.6. Remote CI requires its
@@ -59,37 +56,36 @@ own run after publication. Unrelated research replays were not run.
 Current artifact hashes:
 
 ```text
-rootHash: sha256:3bef311776441b855633a60a435bb6607388e669903770154910be56a73d8156
-manifestHash: sha256:6170147ccc9c76d9c0632577f3f730ffd2d8090e93d9567f6cdfe2e8d6631398
-registryHash: sha256:39e3ac4e454375c943c7c6917ed00c670ce6e68b5103e676f179aa15fa07e318
-browseIndexHash: sha256:0eca8e8d7c03ccced3c0f37e13702fcfc39db58bcf0a87e55acff37360afdeda
+rootHash: sha256:bd60eee30891bd7ae9d36246201c158a76bd26e7175483c75c0e9ed14307dd31
+manifestHash: sha256:54fa9b8d92f0aedf5db654a6181e52ee4484d0e014b6ec86b014f5aed94ec667
+registryHash: sha256:e81a6571e85df279efca018316cc97e369cffed6b3d29b49775faca06fd4d150
+browseIndexHash: sha256:5c0e083fbc4fdda94598e8ac6f20d305b6900b21e3f3c9eef6c3411e28b0b47e
 ```
 
-Scientific review remains partial: 169 [source cards](../../../references/canonical/pending-review.json)
-are unfinished, including 3 at Level 1. The other 80 cards have substantive
+Scientific review remains partial: 168 [source cards](../../../references/canonical/pending-review.json)
+are unfinished, including 2 at Level 1. The other 81 cards have substantive
 assertions supported, qualified or excluded; this census does not measure
-scientific validity or independent reproduction. The Level-0 bridge remains
-unresolved. Qualified neighboring cards retain their existing scopes.
+scientific validity or independent reproduction. Qualified neighboring cards
+retain their existing scopes; all registered frozen releases and original
+source catalogues retain their exact bytes.
 
-The selected PDG QCD/electroweak and quark-charge passages were read, with the
-electroweak formulas visually checked. The decomposition declares a local gauge
-algebra, chiral representations and Higgs scalar. Its hypercharge normalization
-is explicitly converted from the reviewed convention. A specified background
-reorganizes electroweak fields without deriving gauge factors, representations,
-chirality, generations or numerical couplings. Generator dimensions do not
-count physical polarizations, persistent particles or detector candidates.
+Card 1.32 is qualified to a rotational comparison and a source-support boundary.
+The selected Tong scalar, vacuum and Heisenberg passages were read. Their
+positive-mass free scalar model supplies E(k)=sqrt(k dot k+m^2) in hbar=c=1:
+proper rotations preserve that energy at fixed momentum magnitude. This is an
+isotropic model null, not observed anisotropy or an experiment on empty-space
+symmetry. Rotation-related momenta need not identify the same quantum state.
+A passive coordinate change rotates all components together; an active test
+compares momentum with a fixed physical axis and preparation. An anisotropic
+regulator cannot inherit unrestricted rotation symmetry from this model.
 
-Gauge symmetry identifies redundant descriptions under stated constraints;
-representation roles do not imply autonomous interacting sectors. Repeated
-representations can mix under their couplings. Generic QFT and a chosen free
-Hamiltonian do not dynamically select or maintain the Standard Model partition.
-No universal organizational attractor, formation order or carrier minimum follows.
-
-The selected OPAL color-factor inference and historical UA1 W/Z mass inferences
-retain three existing contexts. OPAL ratios and converted factors are dependent;
-the W alternatives retain V-A and recoil assumptions; the Z summary retains
-unfinished calibration and omitted radiation. These results do not uniquely
-reconstruct the full gauge group or independently measure every chiral
-assignment. No new acquisition, likelihood, covariance, perturbative calculation
-or joint theory exclusion is reproduced. Passing software checks does not
-independently validate these interpretations.
+A chosen stationary vacuum, ordinary time evolution and the field framework
+supply no anisotropy formation or maintenance cause. Source-card weights, unit
+minima and SOMA classifications are not physical thresholds. The unresolved
+Level-0 directional gradient still needs a functional, domain, operator, units,
+map and discriminating prediction. Polarization, parity, nonreciprocity,
+momentum-transfer running and BRDF geometry do not replace a specified spatial
+anisotropy observable. Cards 1.33 and 1.34 remain pending and supply no mutual
+validation. No anisotropic medium, response tensor, vacuum axis, directional
+stability law or new primary experiment is admitted. Passing software checks
+does not independently validate a physical anisotropy hypothesis.

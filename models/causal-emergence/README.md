@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.6`: 1328 records, 1216 connections,
-1448 claims and 422 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.7`: 1330 records, 1223 connections,
+1450 claims and 422 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -43,6 +43,11 @@ The chosen Higgs background reorganizes electroweak fields without deriving
 chirality, generations or numerical couplings. Selected OPAL and historical
 UA1 inferences constrain their declared processes; they do not uniquely
 reconstruct every gauge sector or establish a formation/maintenance sequence.
+Directional field claims use a specified observable, state and rotation
+comparison. The chosen free scalar dispersion gives an isotropic formal null,
+with passive coordinate changes distinct from rotating momentum relative to a
+physical axis. No anisotropic vacuum, universal admissibility gradient or
+directional stability law is established by this comparison.
 Gluon self-coupling terms are explicit formal definitions. SLD spin-sensitive
 shapes, OPAL color-factor fits and H1 DIS scaling evidence distinguish selected
 readouts, corrections and conditional interpretations. Their model choices,

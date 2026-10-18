@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.18.6",
+    "version": "2026.10.18.7",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. Neutrino mass/flavor structure separates conditional splitting evidence from absolute masses and unknown mass generation. Closed-sector phase and mass-shift invariances do not establish a unique extension. Gauge sectors are a chosen coupled-model decomposition, not a measured formation event. No whole-graph scientific validation is claimed.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. Neutrino mass/flavor structure separates conditional splitting evidence from absolute masses and unknown mass generation. Closed-sector phase and mass-shift invariances do not establish a unique extension. Gauge sectors are a chosen coupled-model decomposition, not a measured formation event. No vacuum anisotropy is established here. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "83b7809c7766a6b26ad192aa1ba9d096ae7e508d2ba166ca3377c8472f327899",
+      "sha256": "11ef0cefae667225f88a2fcf485b9a9bbe86457ddf1ff5bc29c974edf88b8f2c",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "b197427b7f70969f839f87b4430863547608fac98eda11353419b6704842f27b",
+      "sha256": "20b0435be3412d875f145c7271c8ead84e991e975b3ac5cf129db714d23f6fda",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -62426,6 +62426,102 @@
         "ua1-1983-w-inference",
         "ua1-1983-z-inference"
       ]
+    },
+    {
+      "id": "D-phys-scalar-dispersion-isotropy",
+      "kind": "review-finding",
+      "statement": "For the chosen free real scalar model in infinite flat space, use hbar=c=1, m>0 and the Fock vacuum. Its positive energy is E(k)=sqrt(k dot k+m^2). A proper spatial rotation R obeys R^T R=I and det(R)=+1, hence E(Rk)=E(k). Comparing nonzero wave vectors of fixed magnitude at fixed mass, state preparation and model gives an isotropic dispersion null. This is a formal prediction of the supplied model, not an observed anisotropic response.",
+      "scope": "Formal isotropic dispersion comparison in a chosen free real scalar model; no empirical field anisotropy.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field",
+          "role": "supports",
+          "note": "The positive scalar dispersion supplies the model used in the rotation-invariance deduction; no measured directional response."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.3 opening: vacuum and normal ordering",
+          "role": "supports",
+          "note": "The annihilation condition specifies the chosen free-field vacuum, not every physical state."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "The time-independent free scalar evolution fixes the model boundary; it does not establish an anisotropic mechanism."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The Hamiltonian is time independent, with no external directional background or physical boundary axis. An anisotropic box or cutoff can break rotational symmetry; no all-rotation claim is made for such a regulator. The selected Fock vacuum does not imply that every excited state, interacting theory or physical vacuum is isotropic.",
+        "A passive orthogonal change of spatial components transforms every vector and any physical axis together and preserves scalar products. An active directional test instead rotates k relative to a fixed physical axis and preparation. This scalar model supplies no such axis or anisotropic dispersion to measure; k=0 has no direction.",
+        "E(Rk)=E(k) expresses equal energies of rotation-related momenta, not equality of the momentum labels or quantum states. Hold |k|, mass and controls fixed: changing |k| tests momentum dependence rather than orientation. No directional coupling, polarization tensor, localization time or stability law follows from the dispersion relation.",
+        "The canonical field specification, chosen vacuum and Heisenberg evolution are descriptive inputs. Their presence does not generate anisotropy, prove a physical arising or maintenance relation, or supply a Level-0 admissibility-gradient mechanism. No response experiment, numerical reproduction or universal empty-space symmetry test is admitted."
+      ]
+    },
+    {
+      "id": "D-phys-field-anisotropy-boundary",
+      "kind": "review-finding",
+      "statement": "A field-anisotropy assertion must identify a model, state or preparation, directional comparison, observable and transformation of the setup. Propagation, coupling, localization and response are different possible questions, not one interchangeable observable. The supplied free real scalar dispersion is an isotropic comparison within its assumptions; no anisotropic field regime, intrinsic vacuum axis or universal directional-admissibility law is admitted.",
+      "scope": "Interpretation and source-support boundaries for source-card 1.32; no observed anisotropic regime or universal vacuum-admissibility law.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-introduction",
+          "locator": "Section 0: field-theory framework and interaction principles",
+          "role": "supports",
+          "note": "Supports the model-framework boundary only, not the proposed directional-admissibility mechanism."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field",
+          "role": "supports",
+          "note": "Supports the chosen free scalar model and frequency comparison, not an anisotropic medium or vacuum."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.3 opening: vacuum and normal ordering",
+          "role": "supports",
+          "note": "Supports the chosen Fock-vacuum definition only; no universal rotational-symmetry conclusion is inferred."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "Supports the declared free-field evolution boundary; no directional response is measured."
+        },
+        {
+          "sourceId": "legacy-1",
+          "locator": "/",
+          "role": "provenance",
+          "note": "Original source card /32 and its parents and placeholders; source metadata do not establish physical support."
+        },
+        {
+          "sourceId": "legacy-0",
+          "locator": "/",
+          "role": "provenance",
+          "note": "Original directional-gradient card /22; the author proposal does not specify a field-theory prediction."
+        },
+        {
+          "sourceId": "review",
+          "locator": "F01–F12; What the sources contribute; proposed representation",
+          "role": "limits",
+          "note": "Internal review records the unresolved F12 support boundary; it is not independent experimental evidence."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A directional comparison must specify what rotates relative to what, the frame, held-fixed conditions and the measured or calculated quantity. Propagation frequency, a coupling coefficient, localization and a response function require distinct definitions and protocols. No bounded excitation, standalone dynamical process, realized transport effect or measured field anisotropy is supplied by the original property label.",
+        "The chosen scalar frequency comparison contains no anisotropic medium, external field, directional boundary or demonstrated anisotropic vacuum. Its isotropic dispersion cannot establish the response of a different model or every state. A stationary density operator concerns time translation; stationarity alone proves neither rotational invariance of all states nor rotational asymmetry of any vacuum.",
+        "Original parent 1.0 supplies only the quantum-field framework. Parent 1.26 supplies free real scalar Heisenberg evolution within an already chosen Hamiltonian. Parent 1.27 supplies a chosen free-field Fock vacuum and its stationarity, not a physical vacuum substance or a universal claim about all interacting, curved-spacetime or symmetry-breaking vacua. These are descriptive definition dependencies, not necessary maintenance or modulation causes.",
+        "Parent 0.22 remains the unresolved directional-gradient proposal: no admissibility functional, domain, gradient operator, units, map to a specified field observable or testable anisotropy prediction is supplied. The Level-0 F12 support finding remains unresolved. A gradient name cannot bridge Level 0 to quantum fields; no such physical construction or cross-domain causal edge is admitted.",
+        "The original weights 0.30, 0.25, 0.20 and 0.25, all Nmin=Ncrit=1, necessary/enabling and maintenance/modulation/arising labels, carrier codes and direction/interaction-mode codes have no admitted quantitative or causal force. SOMA phase 2, property/type-role 3 and the hypothesized label organize the source card; they do not supply physical evidence, a formation law or a measured universal threshold.",
+        "The original conceptual and theoretical evidence placeholders identify no retrievable publication or reviewed anisotropy prediction. No primary source for the proposed vacuum-sensitive anisotropy is supplied in this card; this is a limit of the supplied record, not a claim that no anisotropy literature or models exist. No new empirical source, observation, experiment, numerical replay or computational study is admitted.",
+        "Polarization, parity violation, nonreciprocity, dependence on the scalar momentum-transfer scale Q squared and ordinary time evolution are not interchangeable definitions or independent evidence of spatial anisotropy. Directional radiometric or BRDF measurement geometry alone does not identify an intrinsic material axis or vacuum axis. Each proposed equivalence needs its own model, observable and source.",
+        "Source cards 1.33 and 1.34 remain pending. Their proposed polarization response and directional excitation stability, localization or transport cannot validate this card through reciprocal labels, and this definition cannot establish their realizations. A future anisotropy claim needs a specified action or constitutive response, state, background, directional protocol and discriminating mathematical or empirical evidence."
+      ]
     }
   ],
   "entities": [
@@ -98849,6 +98945,88 @@
         "The selected color-sensitive and weak-channel results are compatible with specified predictions, not direct observation of a universal sector-differentiation event or a proof of every field representation, gauge-group global form, generation, coupling or particle lineage. Other species and decay studies retain their existing scopes; generic collider/scattering placeholders do not admit unreviewed data.",
         "The gauge/matter/Higgs decomposition is a declared model input. A general QFT framework, a chosen Hamiltonian and electroweak symmetry breaking do not dynamically derive that content or establish the original necessary/enabling parents, 0.6/0.4 weights, Nmin=Ncrit=1, temporal arising/maintenance or SOMA pattern authority. Distinct gauge factors do not imply isolated physical sectors."
       ]
+    },
+    {
+      "id": "phys:scalar-dispersion-isotropy",
+      "name": "Isotropic free scalar dispersion",
+      "kind": "definition",
+      "description": "For the chosen free real scalar model in infinite flat space, use hbar=c=1, m>0 and the Fock vacuum. Its positive energy is E(k)=sqrt(k dot k+m^2). A proper spatial rotation R obeys R^T R=I and det(R)=+1, hence E(Rk)=E(k). Comparing nonzero wave vectors of fixed magnitude at fixed mass, state preparation and model gives an isotropic dispersion null. This is a formal prediction of the supplied model, not an observed anisotropic response.",
+      "claimIds": [
+        "D-phys-scalar-dispersion-isotropy"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.3 opening: vacuum and normal ordering"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        }
+      ],
+      "openObligations": [
+        "The Hamiltonian is time independent, with no external directional background or physical boundary axis. An anisotropic box or cutoff can break rotational symmetry; no all-rotation claim is made for such a regulator. The selected Fock vacuum does not imply that every excited state, interacting theory or physical vacuum is isotropic.",
+        "A passive orthogonal change of spatial components transforms every vector and any physical axis together and preserves scalar products. An active directional test instead rotates k relative to a fixed physical axis and preparation. This scalar model supplies no such axis or anisotropic dispersion to measure; k=0 has no direction.",
+        "E(Rk)=E(k) expresses equal energies of rotation-related momenta, not equality of the momentum labels or quantum states. Hold |k|, mass and controls fixed: changing |k| tests momentum dependence rather than orientation. No directional coupling, polarization tensor, localization time or stability law follows from the dispersion relation.",
+        "The canonical field specification, chosen vacuum and Heisenberg evolution are descriptive inputs. Their presence does not generate anisotropy, prove a physical arising or maintenance relation, or supply a Level-0 admissibility-gradient mechanism. No response experiment, numerical reproduction or universal empty-space symmetry test is admitted."
+      ]
+    },
+    {
+      "id": "phys:field-anisotropy-boundary",
+      "name": "Field anisotropy interpretation boundary",
+      "kind": "definition",
+      "description": "A field-anisotropy assertion must identify a model, state or preparation, directional comparison, observable and transformation of the setup. Propagation, coupling, localization and response are different possible questions, not one interchangeable observable. The supplied free real scalar dispersion is an isotropic comparison within its assumptions; no anisotropic field regime, intrinsic vacuum axis or universal directional-admissibility law is admitted.",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-introduction",
+          "locator": "Section 0: field-theory framework and interaction principles"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.3 opening: vacuum and normal ordering"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        },
+        {
+          "sourceId": "legacy-1",
+          "locator": "/"
+        },
+        {
+          "sourceId": "legacy-0",
+          "locator": "/"
+        },
+        {
+          "sourceId": "review",
+          "locator": "F01–F12; What the sources contribute; proposed representation"
+        }
+      ],
+      "openObligations": [
+        "A directional comparison must specify what rotates relative to what, the frame, held-fixed conditions and the measured or calculated quantity. Propagation frequency, a coupling coefficient, localization and a response function require distinct definitions and protocols. No bounded excitation, standalone dynamical process, realized transport effect or measured field anisotropy is supplied by the original property label.",
+        "The chosen scalar frequency comparison contains no anisotropic medium, external field, directional boundary or demonstrated anisotropic vacuum. Its isotropic dispersion cannot establish the response of a different model or every state. A stationary density operator concerns time translation; stationarity alone proves neither rotational invariance of all states nor rotational asymmetry of any vacuum.",
+        "Original parent 1.0 supplies only the quantum-field framework. Parent 1.26 supplies free real scalar Heisenberg evolution within an already chosen Hamiltonian. Parent 1.27 supplies a chosen free-field Fock vacuum and its stationarity, not a physical vacuum substance or a universal claim about all interacting, curved-spacetime or symmetry-breaking vacua. These are descriptive definition dependencies, not necessary maintenance or modulation causes.",
+        "Parent 0.22 remains the unresolved directional-gradient proposal: no admissibility functional, domain, gradient operator, units, map to a specified field observable or testable anisotropy prediction is supplied. The Level-0 F12 support finding remains unresolved. A gradient name cannot bridge Level 0 to quantum fields; no such physical construction or cross-domain causal edge is admitted.",
+        "The original weights 0.30, 0.25, 0.20 and 0.25, all Nmin=Ncrit=1, necessary/enabling and maintenance/modulation/arising labels, carrier codes and direction/interaction-mode codes have no admitted quantitative or causal force. SOMA phase 2, property/type-role 3 and the hypothesized label organize the source card; they do not supply physical evidence, a formation law or a measured universal threshold.",
+        "The original conceptual and theoretical evidence placeholders identify no retrievable publication or reviewed anisotropy prediction. No primary source for the proposed vacuum-sensitive anisotropy is supplied in this card; this is a limit of the supplied record, not a claim that no anisotropy literature or models exist. No new empirical source, observation, experiment, numerical replay or computational study is admitted.",
+        "Polarization, parity violation, nonreciprocity, dependence on the scalar momentum-transfer scale Q squared and ordinary time evolution are not interchangeable definitions or independent evidence of spatial anisotropy. Directional radiometric or BRDF measurement geometry alone does not identify an intrinsic material axis or vacuum axis. Each proposed equivalence needs its own model, observable and source.",
+        "Source cards 1.33 and 1.34 remain pending. Their proposed polarization response and directional excitation stability, localization or transport cannot validate this card through reciprocal labels, and this definition cannot establish their realizations. A future anisotropy claim needs a specified action or constitutive response, state, background, directional protocol and discriminating mathematical or empirical evidence."
+      ]
     }
   ],
   "rules": [
@@ -115827,6 +116005,83 @@
         "opal2001-color-inference",
         "ua1-1983-w-inference",
         "ua1-1983-z-inference"
+      ]
+    },
+    {
+      "id": "physics:free-scalar-quantization-scalar-dispersion-isotropy",
+      "source": "phys:free-scalar-quantization",
+      "target": "phys:scalar-dispersion-isotropy",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The free scalar construction fixes E(k), mass and conventions; it is a descriptive model input, not a cause of measured anisotropy.",
+      "claimIds": [
+        "D-phys-scalar-dispersion-isotropy"
+      ]
+    },
+    {
+      "id": "physics:free-field-vacuum-scalar-dispersion-isotropy",
+      "source": "phys:free-field-vacuum",
+      "target": "phys:scalar-dispersion-isotropy",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The selected Fock vacuum fixes the state used for this formal comparison; no universal vacuum or directional background is inferred.",
+      "claimIds": [
+        "D-phys-scalar-dispersion-isotropy"
+      ]
+    },
+    {
+      "id": "physics:free-field-time-evolution-scalar-dispersion-isotropy",
+      "source": "phys:free-field-time-evolution",
+      "target": "phys:scalar-dispersion-isotropy",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The time-independent free scalar Hamiltonian supplies evolution within the chosen isotropic model, not a directional modulation or maintenance law.",
+      "claimIds": [
+        "D-phys-scalar-dispersion-isotropy"
+      ]
+    },
+    {
+      "id": "physics:scalar-dispersion-isotropy-field-anisotropy-boundary",
+      "source": "phys:scalar-dispersion-isotropy",
+      "target": "phys:field-anisotropy-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The specified free scalar frequency supplies an isotropic comparison, not an anisotropic field realization or universal statement about vacua.",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
+      ]
+    },
+    {
+      "id": "physics:quantum-field-framework-field-anisotropy-boundary",
+      "source": "phys:quantum-field-framework",
+      "target": "phys:field-anisotropy-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The framework leaves the action, state, background and observable to a specified model; it does not predict directional asymmetry by itself.",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
+      ]
+    },
+    {
+      "id": "physics:free-field-time-evolution-field-anisotropy-boundary",
+      "source": "phys:free-field-time-evolution",
+      "target": "phys:field-anisotropy-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The chosen free real scalar Heisenberg evolution does not measure directional response, create an anisotropic medium or establish a modulation cause.",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
+      ]
+    },
+    {
+      "id": "physics:free-field-vacuum-field-anisotropy-boundary",
+      "source": "phys:free-field-vacuum",
+      "target": "phys:field-anisotropy-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The chosen stationary free-field Fock vacuum does not establish rotational invariance or anisotropy for every possible vacuum and observable.",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
       ]
     }
   ]

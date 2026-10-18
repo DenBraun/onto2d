@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/32",
-      "title": "Effective Field Anisotropy"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/33",
       "title": "Field Polarization Anisotropy"
     },
