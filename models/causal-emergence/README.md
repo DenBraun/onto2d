@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.3`: 1310 records, 1167 connections,
-1425 claims and 419 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.4`: 1320 records, 1185 connections,
+1438 claims and 421 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -60,6 +60,15 @@ running and physical time. Its Gaussian scaling example, operator expansion and
 weak tree matching retain their approximation and coefficient assumptions.
 Existing CMS and L3 results provide limited running evidence; no universal EFT
 validation or new condensed-matter scaling measurement follows.
+The photon branch separates free Maxwell gauge/Fock states, a normalized
+one-photon state and actual heralded optical detection. The published coincidence
+summary and inferred anticorrelation reuse one acquisition and retain their
+response assumptions; same-source interference uses a changed configuration.
+Reported significance is not an exact likelihood replay. Capture wavelength
+and meson radiative-ratio evidence retain distinct calibration and analysis
+boundaries. Model masslessness, neutrality and an internal Coulomb propagator
+do not supply empirical exact zeros, permanent carrier identity, a real-photon
+static flux or quantitative atomic binding.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 an all-channel confinement theorem, temporal emergence or carrier-count minima.

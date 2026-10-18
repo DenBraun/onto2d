@@ -9,8 +9,8 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1310 records, 1167 connections, 1425 claims and 419 sources.
-The physics review contains 186 study contexts and 142 comparisons.
+The current graph contains 1320 records, 1185 connections, 1438 claims and 421 sources.
+The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -68,6 +68,37 @@ states can have changing unequal-time correlations. Card 1.26 retains this
 scoped construction; interaction-amplitude vertices, renormalization-scale
 changes and numerical sampling do not supply a universal temporal process or
 maintenance cause.
+
+## Photon states and counting evidence
+
+Card 1.23 separates free electromagnetic gauge modes, normalized one-photon states,
+response-dependent detections and conditional counting inference.
+[Tong's selected gauge-field/QED treatment](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S6.html)
+supplies Maxwell constraints, two transverse bosonic polarizations and the
+normalization used by the declared finite-energy wavepacket. Model masslessness
+and neutral transformation laws are not empirical upper bounds. The selected
+leading Coulomb potential uses an internal propagator; it is not a measured
+population of real photons or a quantitative atomic-binding construction.
+
+[Grangier, Roger and Aspect](https://doi.org/10.1209/0295-5075/1/4/004)
+supply an actual heralded radiative-cascade preparation, timing gates, output
+singles and coincidences. The selected point reports 9 coincidences in about
+5 hours and alpha = 0.18 +/- 0.06. The classical bound alpha >= 1 requires the
+stated common-intensity, linear and factorized detection model. Counts and the
+statistic inferred from them share an acquisition; the source-reported
+significance is not an independently replayed likelihood. The complete
+transmitted count, event stream and detector calibration are not provided in
+the reviewed article.
+The same-source Mach-Zehnder comparison uses a separate configuration, with
+gated visibility above 98 percent; it does not show simultaneous which-path
+information or a persistent distinguishable photon trajectory.
+
+Existing capture-wavelength and corrected meson radiative-ratio evidence retain
+their own preparations, calibration versions and response assumptions. These
+observables cannot be pooled into a universal photon census. Generic Compton,
+photoelectric and precision-QED placeholders do not admit unread experiments.
+Original parent weights, unit minima, universal formation/maintenance,
+preferred-vacuum direction and biological-organization claims are excluded.
 
 ## Effective theories and renormalization-group flow
 

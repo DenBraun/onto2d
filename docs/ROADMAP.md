@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 172 remain on the
+graph. Of the 249 original source cards, 171 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-77 cards is a source-review census, not a percentage of scientifically supported
+78 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Six Level-1 cards remain pending.
+Five Level-1 cards remain pending.
 
-The current graph contains 1310 records, 1167 connections, 1425 claims and 419 sources.
+The current graph contains 1320 records, 1185 connections, 1438 claims and 421 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -92,6 +92,13 @@ belong to the current claims.
    Their original weights, minima and SOMA phase ordering are not established.
    Card 1.26 has explicit free-field time evolution with a separate finite
    oscillator witness; scale changes and numerical sampling are distinct.
+   Card 1.23 separates Maxwell gauge/Fock definitions, normalized one-photon
+   states, triggered optical counts and response-conditioned anticorrelation.
+   The counting and inference records share data; separate same-source
+   interference is not independent replication. Selected radiative observables
+   retain their calibration and analysis boundaries. Empirical mass/charge
+   bounds, permanent identity, atomic binding and universal parent rules are
+   not established by this finite scope.
    Historical Higgs/Weinberg constructions and the ATLAS 2012 observation
    separate model parameters, selected channels, response and fitted inferences.
    CMS tau-pair evidence separates selected bins, the fixed-mass rate fit,

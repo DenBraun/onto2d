@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.18.3",
+    "version": "2026.10.18.4",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. No whole-graph scientific validation is claimed.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "6af76b7a2abab038b5e4cab8916b1c659d4a58725b54904c289921314685c6a5",
+      "sha256": "ba00122293cfdefdc20c20254dfd1733bec028a02dcca3060d2b8ecda72955d9",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "bcd2b55e5af9f2aa87b896d9f1e923132c7e5a13dec4c0e373a305b4f831ecb2",
+      "sha256": "ad9294c3b6cbb7f2fdd6ab4546739c8e125840cc8c413672b554ab92f79aa9c6",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -11134,6 +11134,55 @@
           "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions"
         ],
         "limit": "Read the complete indicated author-review pages 7-8, 16-19, 20-27 and 28-29; also read pages 5-6 for the matching overview and visually checked pages 7-8, 22-23 and 25-27. The 47-page HUTP-93/A003 author review is dated January 1993 and identifies the forthcoming Annual Review of Nuclear and Particle Science article; publisher metadata identifies volume 43, 209-252 (1993) and the stated DOI. It is a formal review with explicit matching derivations, not primary experimental evidence or an independent reading of the Appelquist-Carazzone proof. The publisher layout and the rest of the review are not independently reviewed. Historical neutrino statements, numerical bounds, model-building predictions and the speculative nonperturbative section are not admitted. The notation d below is operator mass dimension; it is not a literal reuse of the review's shifted dimension index."
+      }
+    },
+    {
+      "id": "tong-qft-free-maxwell",
+      "kind": "research-publication",
+      "title": "Quantum Field Theory: selected electromagnetic gauge-field and QED sections (2021 HTML edition)",
+      "authors": [
+        "David Tong"
+      ],
+      "year": 2021,
+      "doi": null,
+      "url": "https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S6.html",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-full-text-passages",
+        "locators": [
+          "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
+          "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter",
+          "Section 6.6.1 through Equation 6.591: leading nonrelativistic Coulomb potential from electron/positron scattering and the time-component internal propagator"
+        ],
+        "limit": "Author lecture notes for the Cambridge 2006-2007 course, in the HTML edition generated on 15 October 2021. Only the listed body passages were reviewed for this admission. This is an instructional formal source, not a primary photon experiment. The graph declares a smeared one-photon state using the reviewed mode algebra and a fixed-frame normalization; it does not report a new numerical replay, experimental preparation, mass/charge bound, interacting-field construction or all-orders QED result. Scalar-field sections are not substituted for the gauge-field constraint analysis. The additional Coulomb passage is a leading nonrelativistic scattering calculation, not a static-force experiment or evidence for a population of real exchanged photons."
+      }
+    },
+    {
+      "id": "grangier1986-optical-anticorrelation",
+      "kind": "research-publication",
+      "title": "Experimental Evidence for a Photon Anticorrelation Effect on a Beam Splitter: A New Light on Single-Photon Interferences",
+      "authors": [
+        "P. Grangier",
+        "G. Roger",
+        "A. Aspect"
+      ],
+      "year": 1986,
+      "doi": "10.1209/0295-5075/1/4/004",
+      "url": "https://www.cpt.univ-mrs.fr/~verga/pdfs/Grangier-1986.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-article",
+        "locators": [
+          "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+          "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+          "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+        ],
+        "limit": "All seven printed pages 173-179 read and visually checked, including every equation and figure. This is the 15 February 1986 journal scan, not the 1991 reprint or the longer conference article. No complete event stream, selected-point transmitted singles count, full detector calibration or statistical likelihood is supplied. The referenced source-construction article is not read; atomic species, wavelengths and level identities are not inferred."
       }
     }
   ],
@@ -61015,6 +61064,662 @@
         "cms2013-r32",
         "l3-2000-running-fit"
       ]
+    },
+    {
+      "id": "D-phys-electromagnetic-photon-field",
+      "kind": "review-finding",
+      "statement": "In Minkowski spacetime with hbar=c=1 and metric (+---), adopt the source-free Maxwell action S=-(1/4)integral d^4x F_mu_nu F^mu_nu, with F_mu_nu=partial_mu A_nu-partial_nu A_mu and A_mu identified with A_mu+partial_mu lambda under the stated boundary conditions. In this unbroken Abelian U(1) electromagnetic model there is no mass term. A constant gauge parameter leaves A_mu unchanged, giving its neutral transformation law in this model rather than a measured zero-charge result.",
+      "scope": "A selected massless Abelian vector-field definition; not an experimental inference of exact photon mass or charge.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "role": "supports",
+          "note": "Supports this formal definition within the selected gauge-field reading extent."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter",
+          "role": "supports",
+          "note": "Supports this formal definition within the selected gauge-field reading extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Gauge equivalence removes redundant potential descriptions; A_mu is not four independent physical photon polarizations. In source-free radiation gauge, Gauss law and suitable vanishing boundary conditions permit A_0=0 and div A=0. Charged sources or different boundaries require their own constraint solution.",
+        "The Maxwell action and unbroken U(1) regime are supplied assumptions, not a derivation of electroweak symmetry breaking, a measured upper bound on photon mass/charge, or proof that every gauge-invariant extension must be massless.",
+        "The free field is a controlled description before an explicit interaction is added; its action does not specify an emission mechanism, detector response, static-force measurement or a persistent photon identity through interactions. No interacting charged-sector infrared dressing or asymptotic completeness is constructed."
+      ]
+    },
+    {
+      "id": "D-phys-transverse-photon-fock-state",
+      "kind": "review-finding",
+      "statement": "For nonzero three-momentum p, choose two real orthonormal transverse vectors epsilon_r(p), r=1,2, with p dot epsilon_r=0. Using dPi_p=d^3p/(2pi)^3, the free-field modes obey [a_r(p),a_s_dagger(q)]=(2pi)^3 delta_rs delta^3(p-q), with creation-creation and annihilation-annihilation commutators zero. Define a_r(p)|0>=0 and the normal-ordered Hamiltonian H_0=sum_r integral dPi_p |p| a_r_dagger(p)a_r(p). These are the two physical photon polarization modes of the selected free Maxwell field.",
+      "scope": "Bosonic transverse modes in a fixed inertial-frame normalization, with zero-point energy subtracted by the stated convention.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "role": "supports",
+          "note": "Supports this formal definition within the selected gauge-field reading extent."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
+          "role": "supports",
+          "note": "Supports this formal definition within the selected gauge-field reading extent."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The two-polarization result uses the Maxwell gauge constraint, not a scalar Fock construction or a count of all four potential components. A time-like or longitudinal internal propagator component is not an additional physical free-photon polarization.",
+        "The polarization basis depends on p and can be chosen in momentum-space patches; no single globally continuous real transverse basis is assumed. A chosen polarization of an excitation is not a preferred direction of the vacuum. Zero-momentum and boundary modes are outside this nonzero-momentum sector.",
+        "Plane-wave creation operators are operator-valued distributions; a sharp-momentum vector is delta-normalized, not a normalizable localized photon. Normal ordering is an energy convention, not a measurement of absolute vacuum energy."
+      ]
+    },
+    {
+      "id": "D-phys-one-photon-wavepacket-boundary",
+      "kind": "review-finding",
+      "statement": "In the declared transverse-mode convention, let sum_r integral dPi_p |f_r(p)|^2=1 and sum_r integral dPi_p |p| |f_r(p)|^2 be finite. Define |1_f>=sum_r integral dPi_p f_r(p)a_r_dagger(p)|0>. The reviewed mode algebra gives unit norm and one quantum of N_0=sum_r integral dPi_p a_r_dagger(p)a_r(p). Free evolution replaces f_r(p) by exp(-i|p|t)f_r(p); it conserves N_0 within this supplied free Hamiltonian.",
+      "scope": "A formal finite-energy momentum-space one-photon state; its algebra does not supply an experimental preparation or detection claim.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
+          "role": "supports",
+          "note": "The normalized smeared state and free phase follow from the cited bosonic algebra and Hamiltonian in the explicitly declared convention; no independent replay is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The f_r components refer to the selected transverse basis and must transform with it; normalization uses the declared dPi_p measure, not an unstated covariant measure. This wavepacket definition makes no position-eigenstate, sharply localized trajectory or universal photon position-operator claim.",
+        "A normalized one-photon state is an ideal input. A real source needs its conditional preparation, multi-photon contamination and losses, while an observed detector click needs an instrument model; none is inferred from N_0=1 alone.",
+        "Free number conservation is not photon-number conservation in interacting QED. Absorption and emission require the coupled matter-field description; identical bosons do not acquire distinguishable identities that this free formula tracks through those processes."
+      ]
+    },
+    {
+      "id": "M-phys-heralded-optical-counting-context",
+      "kind": "method",
+      "statement": "A two-photon-excited radiative cascade emits distinct frequencies nu_1 and nu_2. Detecting nu_1 triggers a gate for photomultipliers at the transmitted and reflected nu_2 outputs of a beam splitter. The intermediate lifetime is 4.7 ns; the selected gate is approximately 9 ns. The counters register gates, each output and joint output detections. This is a conditional detection preparation, not an ideal deterministic source in a single spatial mode.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The named article refers source construction to an earlier paper. Atomic species, transition wavelengths, collection geometry in full detail and a complete state tomography are not supplied here. The authors explicitly distinguish their preparation from an ideal shuttered, fully collected single-photon source.",
+        "Multiple cascades, finite collection, detector inefficiency and dark triggers remain possible. A herald does not guarantee that an emitted nu_2 photon reaches or is detected at either output."
+      ],
+      "contextIds": [
+        "grangier1986-counting"
+      ]
+    },
+    {
+      "id": "M-phys-optical-counting-response-context",
+      "kind": "method",
+      "statement": "Time-to-amplitude converters and thresholds select output detections after a trigger; the two gates are superimposed within 0.1 ns and monitored by a third converter. The source excitation rate is stabilized within a few percent. Collection solid angle, optical transmission and detector efficiency enter the global efficiencies. In the published cascade model, f(w) combines 1-exp(-w/tau_s) with an angular-correlation factor, while N*w accounts for other cascades within the gate.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The paper describes f(w) as close to one, not exactly one. The selected gate maximizes a source-reported counting-error criterion; that optimization, full efficiency calibration, dead-time response and timing records are not independently replayed.",
+        "Selected trigger and reflected-output dark rates are reported with the counts. The complete coincidence-background correction and covariance are not specified. The separate interference dark correction must not be applied to the anticorrelation counts by assumption."
+      ],
+      "contextIds": [
+        "grangier1986-counting"
+      ]
+    },
+    {
+      "id": "C-phys-triggered-optical-coincidences",
+      "kind": "review-finding",
+      "statement": "At the selected low-excitation setting, the paper reports 9 joint-output coincidences in approximately 5 hours. The gate rate N_1 is approximately 8800 s^-1, including a 300 s^-1 dark rate; the reflected singles rate N_r is approximately 5 s^-1 with dark rate 0.02 s^-1. N_t, N_r and N_c denote gated transmitted singles, reflected singles and coincidences, and the observed probabilities are p_t=N_t/N_1, p_r=N_r/N_1 and p_c=N_c/N_1.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+          "role": "supports",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "role": "supports",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "supports",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These are printed selected-point summaries, not a complete event table. The selected transmitted rate N_t, exact exposure, joint calibration and event stream are absent, so alpha and its uncertainty cannot be exactly reconstructed locally from these rounded values.",
+        "The reported dark-rate inclusions do not specify an exhaustive background-subtraction procedure. Nine detections do not imply ideal zero coincidences, unit efficiency or a measured particle trajectory."
+      ],
+      "contextIds": [
+        "grangier1986-counting"
+      ]
+    },
+    {
+      "id": "M-phys-optical-anticorrelation-inference-context",
+      "kind": "method",
+      "statement": "The estimator is alpha=p_c/(p_t*p_r)=N_c*N_1/(N_t*N_r). For the same ensemble of gates, the tested semiclassical model uses a nonnegative gate-averaged incident intensity, fixed splitter/output efficiencies and the linear low-detection-probability response p_t=a_t*w*<i>, p_r=a_r*w*<i>, p_c=a_t*a_r*w^2*<i^2>. Cauchy-Schwarz gives alpha>=1. The published quantum cascade model instead gives alpha=[2*f(w)*N*w+(N*w)^2]/[f(w)+N*w]^2, including accidental cascades.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The classical bound is conditional on this common-intensity, fixed-response photodetection model, including the factorized conditional output response in its coincidence formula. It does not exclude every imaginable classical detector model. Saturated, nonlinear or spuriously correlated detector responses require separate validation.",
+        "N is the cascade-excitation rate, not the trigger rate N_1; the model relates them by N_1=epsilon_1*N. No exact f(w), source intensity, all efficiencies or full likelihood are reconstructed. The published comparison uses the same counted data, not an independent experiment."
+      ],
+      "contextIds": [
+        "grangier1986-anticorrelation-inference"
+      ]
+    },
+    {
+      "id": "C-phys-triggered-optical-anticorrelation",
+      "kind": "review-finding",
+      "statement": "The selected experiment reports alpha=0.18 +/- 0.06, below the stated semiclassical bound 1; Figure 2 error bars denote one standard deviation. For that setting the publication gives a classical expected coincidence count of at least 50 versus the 9 observed and reports a separation exceeding 13 standard deviations. A pulsed-diode control matched trigger and singles probabilities and satisfied the classical inequality. This supports nonclassical optical counting within the declared response assumptions.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "role": "supports",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "supports",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction",
+          "role": "supports",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The error distance is source-reported, not an independently recomputed Gaussian tail, exact small-count likelihood, trial-corrected significance or proof of zero systematic error. Rounded 9-versus-at-least-50 counts do not reproduce the full comparison or an uncertainty model.",
+        "Using the same source and trigger, a separately configured Mach-Zehnder experiment gave gated fringe visibility above 98 percent, with a dark-count correction below 0.3 percent. The 98.7 +/- 0.5 percent value is its ungated calibration. The arrangements are mutually exclusive; their shared source is not independent replication or a simultaneous which-path/interference measurement.",
+        "The result is compatible with a near-single-photon preparation, not proof of a literal unsplit trajectory, a deterministic photon source, electromagnetic-field quantization in every regime, all photon properties or a complete QED-to-macroscopic-light chain."
+      ],
+      "contextIds": [
+        "grangier1986-anticorrelation-inference"
+      ]
+    },
+    {
+      "id": "M-phys-triggered-optical-coincidences",
+      "kind": "method",
+      "statement": "Use the actual heralded source, matched gates and measured detector-response boundaries to identify the printed count summary. Gate normalization preserves failed detections and dark triggers; it is not a count of all emitted photons.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These descriptive measurement dependencies preserve preparation and response provenance without asserting causation between records."
+      ],
+      "contextIds": [
+        "grangier1986-counting"
+      ]
+    },
+    {
+      "id": "M-phys-triggered-optical-anticorrelation",
+      "kind": "method",
+      "statement": "Interpret the same gated coincidence and singles data using the stated estimator, intensity-model inequality and finite-response boundaries. Keep the reported uncertainty and classical reference separate from measured counts and from the idealized quantum-source prediction.",
+      "scope": "The Grangier-Roger-Aspect 1986 triggered radiative-cascade beam-splitter experiment and its separately configured interference comparison.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "method",
+          "note": "Supports this named counting experiment, response model or reported inference; no independent acquisition or exact local replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These descriptive interpretation links add no independent acquisition, universal ontology or exact local statistical replay."
+      ],
+      "contextIds": [
+        "grangier1986-anticorrelation-inference"
+      ]
+    },
+    {
+      "id": "D-phys-photon-evidence-scope",
+      "kind": "review-finding",
+      "statement": "In the declared unbroken electromagnetic U(1) gauge model, constrained free Maxwell modes define two transverse bosonic photon polarizations, formal zero mass and neutral gauge-field transformation. A one-photon wavepacket additionally requires a specified free-state normalization and preparation boundary. Optical counting, radiation observables and internal electromagnetic mediation are distinct evidence and description roles.",
+      "scope": "Formal photon-state conventions and the bounded interpretation of original source-card 1.23; no universal photon construction or experimentally exact mass/charge assignment.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.6.1 through Equation 6.591: leading nonrelativistic Coulomb potential from electron/positron scattering and the time-component internal propagator",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "weinberg1967-leptons",
+          "locator": "Publisher page 1265, Equations 7-15: charged/neutral gauge masses, historical field-sign convention and electric charge",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 774-776, Section 4, Equations 10-14 and Figure 3; page 775 footnote 12: Fourier kernels, four-momentum integration, pole prescription and matrix ordering",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 771 and 773-776, Sections 2-4, Equations 8-9 and 15: separated external states, free plane waves and external-photon scattering convention",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Masslessness and electric neutrality are properties of the declared unbroken Abelian electromagnetic gauge model. The historical Weinberg mass-matrix null direction is a formal model assignment, not an experimental upper bound. No photon-mass or photon-charge limit, source version or new confidence level is admitted without a separately reviewed bound experiment.",
+        "A bosonic one-photon occupation or normalized wavepacket is not a distinguishable permanent carrier with an identity label through arbitrary interactions. Preparation, free propagation, emission, absorption and a response-dependent detector click have different boundaries; a click is not a complete photon-number measurement or trajectory.",
+        "The earlier free-field evolution construction is explicitly a real scalar model. It supplies a framework comparison, not electromagnetic gauge constraints, two photon polarizations, a universal formation or maintenance law, or measured photon dynamics. Its finite oscillator check is not photon data.",
+        "The reviewed leading nonrelativistic Coulomb calculation uses the time-component internal propagator to obtain a static effective potential. Atomic binding is not a measured flux of real on-shell photons; an internal line is not a measured particle population. No quantitative atomic binding spectrum, bound-state formation or universal long-range-force measurement is constructed here.",
+        "Prepared transverse polarization is defined relative to each nonzero momentum and a basis choice; it does not select a preferred vacuum axis. This does not establish physical field anisotropy or a joint-state entanglement claim; those analyses require their own preparations and evidence.",
+        "The source-card parent links to the electromagnetic framework and field dynamics are retained only as scoped definition dependencies. The weights 0.55 and 0.45, necessary/enabling arising/maintenance codes, Nmin=Ncrit=1 and phase/type-role labels are not measured formation thresholds or causal laws.",
+        "Radiation and radiative transitions are represented only by the named capture-wavelength and meson radiative-ratio evidence below. Generic Compton, photoelectric and precision-QED placeholders do not admit unreviewed experiments. Aggregate material-optics or retinal response cannot supply single-photon statistics or a universal biological bridge."
+      ]
+    },
+    {
+      "id": "C-phys-photon-evidence-boundary",
+      "kind": "review-finding",
+      "statement": "The triggered optical coincidence summary and response-conditioned anticorrelation support nonclassical counting in one named preparation. Capture-photon wavelength and the corrected meson radiative ratio separately constrain their declared emission observables. This comparison preserves formal photon-state conventions, detector response and dependent analysis stages instead of treating them as one universal photon-property measurement.",
+      "scope": "Literature comparison of Grangier-Roger-Aspect 1986, the scoped Kessler capture measurements and the KLOE radiative-ratio response; formal descriptions remain conditional inputs.",
+      "status": "literature-synthesis",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kessler1999",
+          "locator": "Pages 224-225, Section 3 and Tables 2-3: correlated run combination, systematic errors and crystal lattice calibration",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kessler1999",
+          "locator": "Pages 225-226, Section 3 and Equations 1-7: pressure correction, photon wavelength, recoil, conversion constants and adopted atomic-mass difference",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "dewey2006-capture",
+          "locator": "Author report nucl-ex/0507011v1, pages 3-5, Section III.C and Table IV: adjusted ILL2.5 lattice spacing and its enlarged uncertainty",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "mohr2025-neutron",
+          "locator": "Page 025002-6, Section II.B and Equations 6-7: dimensionless diffraction input, recoil and neutron-mass adjustment",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "mohr2025-neutron",
+          "locator": "Page 025002-39, Table XXV entry D14: the printed meter unit conflicts with the dimensionless definition in Section II.B",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kloe2007-meson-ratio",
+          "locator": "Publisher pages 269 and 271, Equation 7, footnote 2 and Table 2: branching-weighted efficiencies, FLS controls, daughter branches, interference and ratio uncertainties",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kloe2007-meson-ratio",
+          "locator": "Publisher page 271, Equation 8: corrected radiative branching-ratio ratio and separate statistical/systematic uncertainties",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.6.1 through Equation 6.591: leading nonrelativistic Coulomb potential from electron/positron scattering and the time-component internal propagator",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "weinberg1967-leptons",
+          "locator": "Publisher page 1265, Equations 7-15: charged/neutral gauge masses, historical field-sign convention and electric charge",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 774-776, Section 4, Equations 10-14 and Figure 3; page 775 footnote 12: Fourier kernels, four-momentum integration, pole prescription and matrix ordering",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 771 and 773-776, Sections 2-4, Equations 8-9 and 15: separated external states, free plane waves and external-photon scattering convention",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The optical count summary and its inferred alpha statistic reuse the same acquisition. Their two study records distinguish measurement from interpretation, not independent replications. The same-source Mach-Zehnder visibility uses a changed configuration and cannot demonstrate simultaneous which-path information, a permanent trajectory or independent source confirmation.",
+        "The printed Grangier selected point lacks the transmitted singles rate, complete event stream, efficiency calibration and full likelihood. Its alpha uncertainty and greater-than-13-standard-deviation comparison remain publication reports, not an exact replay, trial-corrected significance or a general exclusion of all classical detector models.",
+        "The capture wavelength retains the 1999 crystal calibration and the explicitly identified later calibration/adjustment limits. The corrected KLOE radiative branching-ratio ratio retains its efficiency, daughter-branch, interference and statistical/systematic assumptions; it is not an absolute decay width or the conditional pseudoscalar mixing angle.",
+        "Optical coincidences, gamma-ray diffraction wavelength and a corrected meson decay ratio have different preparations, response models, units and inference stages. They are not one pooled photon-count sample or joint significance test. No new acquisition, independent raw-data fit, model discrimination beyond the declared counting assumptions or complete QED-to-macroscopic-light chain is claimed.",
+        "The measurements do not establish exactly zero photon mass or charge, distinguishable persistent identity, a static Coulomb photon flux, atomic binding, an oriented vacuum or universal photon-driven biological organization. These boundaries remain those of the formal scope definition."
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
+      ]
+    },
+    {
+      "id": "M-phys-photon-evidence-boundary",
+      "kind": "method",
+      "statement": "Compare the actual study contexts of each admitted outcome, retaining shared optical acquisition, selected calibration versions and detector/analysis assumptions. Use the formal scope only to delimit interpretation; do not pool heterogeneous data, infer unmeasured photon properties or promote an internal amplitude role into observed real-photon flux.",
+      "scope": "Literature comparison of Grangier-Roger-Aspect 1986, the scoped Kessler capture measurements and the KLOE radiative-ratio response; formal descriptions remain conditional inputs.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kessler1999",
+          "locator": "Pages 224-225, Section 3 and Tables 2-3: correlated run combination, systematic errors and crystal lattice calibration",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kessler1999",
+          "locator": "Pages 225-226, Section 3 and Equations 1-7: pressure correction, photon wavelength, recoil, conversion constants and adopted atomic-mass difference",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "dewey2006-capture",
+          "locator": "Author report nucl-ex/0507011v1, pages 3-5, Section III.C and Table IV: adjusted ILL2.5 lattice spacing and its enlarged uncertainty",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "mohr2025-neutron",
+          "locator": "Page 025002-6, Section II.B and Equations 6-7: dimensionless diffraction input, recoil and neutron-mass adjustment",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "mohr2025-neutron",
+          "locator": "Page 025002-39, Table XXV entry D14: the printed meter unit conflicts with the dimensionless definition in Section II.B",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kloe2007-meson-ratio",
+          "locator": "Publisher pages 269 and 271, Equation 7, footnote 2 and Table 2: branching-weighted efficiencies, FLS controls, daughter branches, interference and ratio uncertainties",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "kloe2007-meson-ratio",
+          "locator": "Publisher page 271, Equation 8: corrected radiative branching-ratio ratio and separate statistical/systematic uncertainties",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.6.1 through Equation 6.591: leading nonrelativistic Coulomb potential from electron/positron scattering and the time-component internal propagator",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "weinberg1967-leptons",
+          "locator": "Publisher page 1265, Equations 7-15: charged/neutral gauge masses, historical field-sign convention and electric charge",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 774-776, Section 4, Equations 10-14 and Figure 3; page 775 footnote 12: Fourier kernels, four-momentum integration, pole prescription and matrix ordering",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 771 and 773-776, Sections 2-4, Equations 8-9 and 15: separated external states, free plane waves and external-photon scattering convention",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal photon-property inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The optical count summary and its inferred alpha statistic reuse the same acquisition. Their two study records distinguish measurement from interpretation, not independent replications. The same-source Mach-Zehnder visibility uses a changed configuration and cannot demonstrate simultaneous which-path information, a permanent trajectory or independent source confirmation.",
+        "The printed Grangier selected point lacks the transmitted singles rate, complete event stream, efficiency calibration and full likelihood. Its alpha uncertainty and greater-than-13-standard-deviation comparison remain publication reports, not an exact replay, trial-corrected significance or a general exclusion of all classical detector models.",
+        "The capture wavelength retains the 1999 crystal calibration and the explicitly identified later calibration/adjustment limits. The corrected KLOE radiative branching-ratio ratio retains its efficiency, daughter-branch, interference and statistical/systematic assumptions; it is not an absolute decay width or the conditional pseudoscalar mixing angle.",
+        "Optical coincidences, gamma-ray diffraction wavelength and a corrected meson decay ratio have different preparations, response models, units and inference stages. They are not one pooled photon-count sample or joint significance test. No new acquisition, independent raw-data fit, model discrimination beyond the declared counting assumptions or complete QED-to-macroscopic-light chain is claimed.",
+        "The measurements do not establish exactly zero photon mass or charge, distinguishable persistent identity, a static Coulomb photon flux, atomic binding, an oriented vacuum or universal photon-driven biological organization. These boundaries remain those of the formal scope definition."
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
+      ]
     }
   ],
   "entities": [
@@ -96705,6 +97410,372 @@
         "There is no new condensed-matter scaling measurement, EFT coefficient extraction, interacting fixed-point test or cross-domain universality analysis. The formal Gaussian scaling example and tree weak contact relation are definitions, not independent experimental corroborations of these running fits.",
         "No local CMS/L3 event, detector, PDF, likelihood or covariance replay is claimed. Neither an effective fit nor a reduced description supplies universal stable low-energy laws, microscopic causal erasure, a temporal emergence sequence or downward causation."
       ]
+    },
+    {
+      "id": "phys:electromagnetic-photon-field",
+      "name": "Free electromagnetic photon field",
+      "kind": "definition",
+      "description": "In Minkowski spacetime with hbar=c=1 and metric (+---), adopt the source-free Maxwell action S=-(1/4)integral d^4x F_mu_nu F^mu_nu, with F_mu_nu=partial_mu A_nu-partial_nu A_mu and A_mu identified with A_mu+partial_mu lambda under the stated boundary conditions. In this unbroken Abelian U(1) electromagnetic model there is no mass term. A constant gauge parameter leaves A_mu unchanged, giving its neutral transformation law in this model rather than a measured zero-charge result.",
+      "claimIds": [
+        "D-phys-electromagnetic-photon-field"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter"
+        }
+      ],
+      "openObligations": [
+        "Gauge equivalence removes redundant potential descriptions; A_mu is not four independent physical photon polarizations. In source-free radiation gauge, Gauss law and suitable vanishing boundary conditions permit A_0=0 and div A=0. Charged sources or different boundaries require their own constraint solution.",
+        "The Maxwell action and unbroken U(1) regime are supplied assumptions, not a derivation of electroweak symmetry breaking, a measured upper bound on photon mass/charge, or proof that every gauge-invariant extension must be massless.",
+        "The free field is a controlled description before an explicit interaction is added; its action does not specify an emission mechanism, detector response, static-force measurement or a persistent photon identity through interactions. No interacting charged-sector infrared dressing or asymptotic completeness is constructed."
+      ]
+    },
+    {
+      "id": "phys:transverse-photon-fock-state",
+      "name": "Transverse photon Fock construction",
+      "kind": "definition",
+      "description": "For nonzero three-momentum p, choose two real orthonormal transverse vectors epsilon_r(p), r=1,2, with p dot epsilon_r=0. Using dPi_p=d^3p/(2pi)^3, the free-field modes obey [a_r(p),a_s_dagger(q)]=(2pi)^3 delta_rs delta^3(p-q), with creation-creation and annihilation-annihilation commutators zero. Define a_r(p)|0>=0 and the normal-ordered Hamiltonian H_0=sum_r integral dPi_p |p| a_r_dagger(p)a_r(p). These are the two physical photon polarization modes of the selected free Maxwell field.",
+      "claimIds": [
+        "D-phys-transverse-photon-fock-state"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian"
+        }
+      ],
+      "openObligations": [
+        "The two-polarization result uses the Maxwell gauge constraint, not a scalar Fock construction or a count of all four potential components. A time-like or longitudinal internal propagator component is not an additional physical free-photon polarization.",
+        "The polarization basis depends on p and can be chosen in momentum-space patches; no single globally continuous real transverse basis is assumed. A chosen polarization of an excitation is not a preferred direction of the vacuum. Zero-momentum and boundary modes are outside this nonzero-momentum sector.",
+        "Plane-wave creation operators are operator-valued distributions; a sharp-momentum vector is delta-normalized, not a normalizable localized photon. Normal ordering is an energy convention, not a measurement of absolute vacuum energy."
+      ]
+    },
+    {
+      "id": "phys:one-photon-wavepacket-boundary",
+      "name": "Normalized one-photon wavepacket boundary",
+      "kind": "definition",
+      "description": "In the declared transverse-mode convention, let sum_r integral dPi_p |f_r(p)|^2=1 and sum_r integral dPi_p |p| |f_r(p)|^2 be finite. Define |1_f>=sum_r integral dPi_p f_r(p)a_r_dagger(p)|0>. The reviewed mode algebra gives unit norm and one quantum of N_0=sum_r integral dPi_p a_r_dagger(p)a_r(p). Free evolution replaces f_r(p) by exp(-i|p|t)f_r(p); it conserves N_0 within this supplied free Hamiltonian.",
+      "claimIds": [
+        "D-phys-one-photon-wavepacket-boundary"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian"
+        }
+      ],
+      "openObligations": [
+        "The f_r components refer to the selected transverse basis and must transform with it; normalization uses the declared dPi_p measure, not an unstated covariant measure. This wavepacket definition makes no position-eigenstate, sharply localized trajectory or universal photon position-operator claim.",
+        "A normalized one-photon state is an ideal input. A real source needs its conditional preparation, multi-photon contamination and losses, while an observed detector click needs an instrument model; none is inferred from N_0=1 alone.",
+        "Free number conservation is not photon-number conservation in interacting QED. Absorption and emission require the coupled matter-field description; identical bosons do not acquire distinguishable identities that this free formula tracks through those processes."
+      ]
+    },
+    {
+      "id": "phys:heralded-optical-counting-context",
+      "name": "Herald-triggered optical counting",
+      "kind": "context",
+      "description": "A two-photon-excited radiative cascade emits distinct frequencies nu_1 and nu_2. Detecting nu_1 triggers a gate for photomultipliers at the transmitted and reflected nu_2 outputs of a beam splitter. The intermediate lifetime is 4.7 ns; the selected gate is approximately 9 ns. The counters register gates, each output and joint output detections. This is a conditional detection preparation, not an ideal deterministic source in a single spatial mode.",
+      "claimIds": [
+        "M-phys-heralded-optical-counting-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+        }
+      ],
+      "openObligations": [
+        "The named article refers source construction to an earlier paper. Atomic species, transition wavelengths, collection geometry in full detail and a complete state tomography are not supplied here. The authors explicitly distinguish their preparation from an ideal shuttered, fully collected single-photon source.",
+        "Multiple cascades, finite collection, detector inefficiency and dark triggers remain possible. A herald does not guarantee that an emitted nu_2 photon reaches or is detected at either output."
+      ]
+    },
+    {
+      "id": "phys:optical-counting-response-context",
+      "name": "Optical gate and detector response",
+      "kind": "context",
+      "description": "Time-to-amplitude converters and thresholds select output detections after a trigger; the two gates are superimposed within 0.1 ns and monitored by a third converter. The source excitation rate is stabilized within a few percent. Collection solid angle, optical transmission and detector efficiency enter the global efficiencies. In the published cascade model, f(w) combines 1-exp(-w/tau_s) with an angular-correlation factor, while N*w accounts for other cascades within the gate.",
+      "claimIds": [
+        "M-phys-optical-counting-response-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+        }
+      ],
+      "openObligations": [
+        "The paper describes f(w) as close to one, not exactly one. The selected gate maximizes a source-reported counting-error criterion; that optimization, full efficiency calibration, dead-time response and timing records are not independently replayed.",
+        "Selected trigger and reflected-output dark rates are reported with the counts. The complete coincidence-background correction and covariance are not specified. The separate interference dark correction must not be applied to the anticorrelation counts by assumption."
+      ]
+    },
+    {
+      "id": "phys:triggered-optical-coincidences",
+      "name": "Selected triggered coincidence counts",
+      "kind": "scoped-process",
+      "description": "At the selected low-excitation setting, the paper reports 9 joint-output coincidences in approximately 5 hours. The gate rate N_1 is approximately 8800 s^-1, including a 300 s^-1 dark rate; the reflected singles rate N_r is approximately 5 s^-1 with dark rate 0.02 s^-1. N_t, N_r and N_c denote gated transmitted singles, reflected singles and coincidences, and the observed probabilities are p_t=N_t/N_1, p_r=N_r/N_1 and p_c=N_c/N_1.",
+      "claimIds": [
+        "C-phys-triggered-optical-coincidences"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control"
+        }
+      ],
+      "openObligations": [
+        "These are printed selected-point summaries, not a complete event table. The selected transmitted rate N_t, exact exposure, joint calibration and event stream are absent, so alpha and its uncertainty cannot be exactly reconstructed locally from these rounded values.",
+        "The reported dark-rate inclusions do not specify an exhaustive background-subtraction procedure. Nine detections do not imply ideal zero coincidences, unit efficiency or a measured particle trajectory."
+      ]
+    },
+    {
+      "id": "phys:optical-anticorrelation-inference-context",
+      "name": "Conditional optical anticorrelation criterion",
+      "kind": "context",
+      "description": "The estimator is alpha=p_c/(p_t*p_r)=N_c*N_1/(N_t*N_r). For the same ensemble of gates, the tested semiclassical model uses a nonnegative gate-averaged incident intensity, fixed splitter/output efficiencies and the linear low-detection-probability response p_t=a_t*w*<i>, p_r=a_r*w*<i>, p_c=a_t*a_r*w^2*<i^2>. Cauchy-Schwarz gives alpha>=1. The published quantum cascade model instead gives alpha=[2*f(w)*N*w+(N*w)^2]/[f(w)+N*w]^2, including accidental cascades.",
+      "claimIds": [
+        "M-phys-optical-anticorrelation-inference-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors"
+        }
+      ],
+      "openObligations": [
+        "The classical bound is conditional on this common-intensity, fixed-response photodetection model, including the factorized conditional output response in its coincidence formula. It does not exclude every imaginable classical detector model. Saturated, nonlinear or spuriously correlated detector responses require separate validation.",
+        "N is the cascade-excitation rate, not the trigger rate N_1; the model relates them by N_1=epsilon_1*N. No exact f(w), source intensity, all efficiencies or full likelihood are reconstructed. The published comparison uses the same counted data, not an independent experiment."
+      ]
+    },
+    {
+      "id": "phys:triggered-optical-anticorrelation",
+      "name": "Reported optical anticorrelation",
+      "kind": "scoped-process",
+      "description": "The selected experiment reports alpha=0.18 +/- 0.06, below the stated semiclassical bound 1; Figure 2 error bars denote one standard deviation. For that setting the publication gives a classical expected coincidence count of at least 50 versus the 9 observed and reports a separation exceeding 13 standard deviations. A pulsed-diode control matched trigger and singles probabilities and satisfied the classical inequality. This supports nonclassical optical counting within the declared response assumptions.",
+      "claimIds": [
+        "C-phys-triggered-optical-anticorrelation"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+        }
+      ],
+      "openObligations": [
+        "The error distance is source-reported, not an independently recomputed Gaussian tail, exact small-count likelihood, trial-corrected significance or proof of zero systematic error. Rounded 9-versus-at-least-50 counts do not reproduce the full comparison or an uncertainty model.",
+        "Using the same source and trigger, a separately configured Mach-Zehnder experiment gave gated fringe visibility above 98 percent, with a dark-count correction below 0.3 percent. The 98.7 +/- 0.5 percent value is its ungated calibration. The arrangements are mutually exclusive; their shared source is not independent replication or a simultaneous which-path/interference measurement.",
+        "The result is compatible with a near-single-photon preparation, not proof of a literal unsplit trajectory, a deterministic photon source, electromagnetic-field quantization in every regime, all photon properties or a complete QED-to-macroscopic-light chain."
+      ]
+    },
+    {
+      "id": "phys:photon-evidence-scope",
+      "name": "Photon state and evidence scope",
+      "kind": "definition",
+      "description": "In the declared unbroken electromagnetic U(1) gauge model, constrained free Maxwell modes define two transverse bosonic photon polarizations, formal zero mass and neutral gauge-field transformation. A one-photon wavepacket additionally requires a specified free-state normalization and preparation boundary. Optical counting, radiation observables and internal electromagnetic mediation are distinct evidence and description roles.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.6.1 through Equation 6.591: leading nonrelativistic Coulomb potential from electron/positron scattering and the time-component internal propagator"
+        },
+        {
+          "sourceId": "weinberg1967-leptons",
+          "locator": "Publisher page 1265, Equations 7-15: charged/neutral gauge masses, historical field-sign convention and electric charge"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 774-776, Section 4, Equations 10-14 and Figure 3; page 775 footnote 12: Fourier kernels, four-momentum integration, pole prescription and matrix ordering"
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 771 and 773-776, Sections 2-4, Equations 8-9 and 15: separated external states, free plane waves and external-photon scattering convention"
+        }
+      ],
+      "openObligations": [
+        "Masslessness and electric neutrality are properties of the declared unbroken Abelian electromagnetic gauge model. The historical Weinberg mass-matrix null direction is a formal model assignment, not an experimental upper bound. No photon-mass or photon-charge limit, source version or new confidence level is admitted without a separately reviewed bound experiment.",
+        "A bosonic one-photon occupation or normalized wavepacket is not a distinguishable permanent carrier with an identity label through arbitrary interactions. Preparation, free propagation, emission, absorption and a response-dependent detector click have different boundaries; a click is not a complete photon-number measurement or trajectory.",
+        "The earlier free-field evolution construction is explicitly a real scalar model. It supplies a framework comparison, not electromagnetic gauge constraints, two photon polarizations, a universal formation or maintenance law, or measured photon dynamics. Its finite oscillator check is not photon data.",
+        "The reviewed leading nonrelativistic Coulomb calculation uses the time-component internal propagator to obtain a static effective potential. Atomic binding is not a measured flux of real on-shell photons; an internal line is not a measured particle population. No quantitative atomic binding spectrum, bound-state formation or universal long-range-force measurement is constructed here.",
+        "Prepared transverse polarization is defined relative to each nonzero momentum and a basis choice; it does not select a preferred vacuum axis. This does not establish physical field anisotropy or a joint-state entanglement claim; those analyses require their own preparations and evidence.",
+        "The source-card parent links to the electromagnetic framework and field dynamics are retained only as scoped definition dependencies. The weights 0.55 and 0.45, necessary/enabling arising/maintenance codes, Nmin=Ncrit=1 and phase/type-role labels are not measured formation thresholds or causal laws.",
+        "Radiation and radiative transitions are represented only by the named capture-wavelength and meson radiative-ratio evidence below. Generic Compton, photoelectric and precision-QED placeholders do not admit unreviewed experiments. Aggregate material-optics or retinal response cannot supply single-photon statistics or a universal biological bridge."
+      ]
+    },
+    {
+      "id": "phys:photon-evidence-boundary",
+      "name": "Scoped photon evidence comparison",
+      "kind": "scoped-process",
+      "description": "The triggered optical coincidence summary and response-conditioned anticorrelation support nonclassical counting in one named preparation. Capture-photon wavelength and the corrected meson radiative ratio separately constrain their declared emission observables. This comparison preserves formal photon-state conventions, detector response and dependent analysis stages instead of treating them as one universal photon-property measurement.",
+      "claimIds": [
+        "C-phys-photon-evidence-boundary"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control"
+        },
+        {
+          "sourceId": "grangier1986-optical-anticorrelation",
+          "locator": "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+        },
+        {
+          "sourceId": "kessler1999",
+          "locator": "Pages 224-225, Section 3 and Tables 2-3: correlated run combination, systematic errors and crystal lattice calibration"
+        },
+        {
+          "sourceId": "kessler1999",
+          "locator": "Pages 225-226, Section 3 and Equations 1-7: pressure correction, photon wavelength, recoil, conversion constants and adopted atomic-mass difference"
+        },
+        {
+          "sourceId": "dewey2006-capture",
+          "locator": "Author report nucl-ex/0507011v1, pages 3-5, Section III.C and Table IV: adjusted ILL2.5 lattice spacing and its enlarged uncertainty"
+        },
+        {
+          "sourceId": "mohr2025-neutron",
+          "locator": "Page 025002-6, Section II.B and Equations 6-7: dimensionless diffraction input, recoil and neutron-mass adjustment"
+        },
+        {
+          "sourceId": "mohr2025-neutron",
+          "locator": "Page 025002-39, Table XXV entry D14: the printed meter unit conflicts with the dimensionless definition in Section II.B"
+        },
+        {
+          "sourceId": "kloe2007-meson-ratio",
+          "locator": "Publisher pages 269 and 271, Equation 7, footnote 2 and Table 2: branching-weighted efficiencies, FLS controls, daughter branches, interference and ratio uncertainties"
+        },
+        {
+          "sourceId": "kloe2007-meson-ratio",
+          "locator": "Publisher page 271, Equation 8: corrected radiative branching-ratio ratio and separate statistical/systematic uncertainties"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.3.1 through Equation 6.561: Abelian gauge transformation of the potential and charged matter"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Section 6.6.1 through Equation 6.591: leading nonrelativistic Coulomb potential from electron/positron scattering and the time-component internal propagator"
+        },
+        {
+          "sourceId": "weinberg1967-leptons",
+          "locator": "Publisher page 1265, Equations 7-15: charged/neutral gauge masses, historical field-sign convention and electric charge"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 774-776, Section 4, Equations 10-14 and Figure 3; page 775 footnote 12: Fourier kernels, four-momentum integration, pole prescription and matrix ordering"
+        },
+        {
+          "sourceId": "feynman1949-amplitudes",
+          "locator": "Printed pages 771 and 773-776, Sections 2-4, Equations 8-9 and 15: separated external states, free plane waves and external-photon scattering convention"
+        }
+      ],
+      "openObligations": [
+        "The optical count summary and its inferred alpha statistic reuse the same acquisition. Their two study records distinguish measurement from interpretation, not independent replications. The same-source Mach-Zehnder visibility uses a changed configuration and cannot demonstrate simultaneous which-path information, a permanent trajectory or independent source confirmation.",
+        "The printed Grangier selected point lacks the transmitted singles rate, complete event stream, efficiency calibration and full likelihood. Its alpha uncertainty and greater-than-13-standard-deviation comparison remain publication reports, not an exact replay, trial-corrected significance or a general exclusion of all classical detector models.",
+        "The capture wavelength retains the 1999 crystal calibration and the explicitly identified later calibration/adjustment limits. The corrected KLOE radiative branching-ratio ratio retains its efficiency, daughter-branch, interference and statistical/systematic assumptions; it is not an absolute decay width or the conditional pseudoscalar mixing angle.",
+        "Optical coincidences, gamma-ray diffraction wavelength and a corrected meson decay ratio have different preparations, response models, units and inference stages. They are not one pooled photon-count sample or joint significance test. No new acquisition, independent raw-data fit, model discrimination beyond the declared counting assumptions or complete QED-to-macroscopic-light chain is claimed.",
+        "The measurements do not establish exactly zero photon mass or charge, distinguishable persistent identity, a static Coulomb photon flux, atomic binding, an oriented vacuum or universal photon-driven biological organization. These boundaries remain those of the formal scope definition."
+      ]
     }
   ],
   "rules": [
@@ -113033,6 +114104,254 @@
       "contextIds": [
         "cms2013-r32",
         "l3-2000-running-fit"
+      ]
+    },
+    {
+      "id": "physics:electromagnetic-photon-field-transverse-photon-fock-state",
+      "source": "phys:electromagnetic-photon-field",
+      "target": "phys:transverse-photon-fock-state",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The Maxwell gauge constraint fixes the two transverse modes admitted to this free Fock construction; it is a formal dependency, not a measured formation event.",
+      "claimIds": [
+        "D-phys-transverse-photon-fock-state"
+      ]
+    },
+    {
+      "id": "physics:transverse-photon-fock-state-one-photon-wavepacket-boundary",
+      "source": "phys:transverse-photon-fock-state",
+      "target": "phys:one-photon-wavepacket-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The normalized smeared state uses the declared transverse bosonic algebra and free Hamiltonian; this does not establish a prepared or detected photon.",
+      "claimIds": [
+        "D-phys-one-photon-wavepacket-boundary"
+      ]
+    },
+    {
+      "id": "physics:heralded-optical-counting-context-triggered-optical-coincidences",
+      "source": "phys:heralded-optical-counting-context",
+      "target": "phys:triggered-optical-coincidences",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The named herald, gate and output counters select the measured events; no photon-number or trajectory guarantee is imposed.",
+      "claimIds": [
+        "M-phys-triggered-optical-coincidences"
+      ],
+      "contextIds": [
+        "grangier1986-counting"
+      ]
+    },
+    {
+      "id": "physics:optical-counting-response-context-triggered-optical-coincidences",
+      "source": "phys:optical-counting-response-context",
+      "target": "phys:triggered-optical-coincidences",
+      "kind": "descriptive",
+      "role": "measurement-context",
+      "assertion": "The reported timing, dark rates and incomplete calibration bound the interpretation of the selected count summary.",
+      "claimIds": [
+        "M-phys-triggered-optical-coincidences"
+      ],
+      "contextIds": [
+        "grangier1986-counting"
+      ]
+    },
+    {
+      "id": "physics:triggered-optical-coincidences-triggered-optical-anticorrelation",
+      "source": "phys:triggered-optical-coincidences",
+      "target": "phys:triggered-optical-anticorrelation",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The same counts supply the reported normalized statistic; this interpretation is not independent evidence or a recreated likelihood.",
+      "claimIds": [
+        "M-phys-triggered-optical-anticorrelation"
+      ],
+      "contextIds": [
+        "grangier1986-anticorrelation-inference"
+      ]
+    },
+    {
+      "id": "physics:optical-counting-response-context-triggered-optical-anticorrelation",
+      "source": "phys:optical-counting-response-context",
+      "target": "phys:triggered-optical-anticorrelation",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The inequality test retains the actual detector-response boundary and does not borrow the interferometer dark correction.",
+      "claimIds": [
+        "M-phys-triggered-optical-anticorrelation"
+      ],
+      "contextIds": [
+        "grangier1986-anticorrelation-inference"
+      ]
+    },
+    {
+      "id": "physics:optical-anticorrelation-inference-context-triggered-optical-anticorrelation",
+      "source": "phys:optical-anticorrelation-inference-context",
+      "target": "phys:triggered-optical-anticorrelation",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The classical bound and quantum-source comparison require their stated common-intensity, efficiency and counting assumptions.",
+      "claimIds": [
+        "M-phys-triggered-optical-anticorrelation"
+      ],
+      "contextIds": [
+        "grangier1986-anticorrelation-inference"
+      ]
+    },
+    {
+      "id": "physics:weinberg-gauge-mass-matrix-photon-evidence-scope",
+      "source": "phys:weinberg-gauge-mass-matrix",
+      "target": "phys:photon-evidence-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "This scoped formal input constrains the photon description; it does not establish a measured formation threshold, detector identity or universal maintenance process.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "id": "physics:free-field-time-evolution-photon-evidence-scope",
+      "source": "phys:free-field-time-evolution",
+      "target": "phys:photon-evidence-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "This scoped formal input constrains the photon description; it does not establish a measured formation threshold, detector identity or universal maintenance process.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "id": "physics:electromagnetic-photon-field-photon-evidence-scope",
+      "source": "phys:electromagnetic-photon-field",
+      "target": "phys:photon-evidence-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "This scoped formal input constrains the photon description; it does not establish a measured formation threshold, detector identity or universal maintenance process.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "id": "physics:one-photon-wavepacket-boundary-photon-evidence-scope",
+      "source": "phys:one-photon-wavepacket-boundary",
+      "target": "phys:photon-evidence-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "This scoped formal input constrains the photon description; it does not establish a measured formation threshold, detector identity or universal maintenance process.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "id": "physics:internal-propagator-photon-evidence-scope",
+      "source": "phys:internal-propagator",
+      "target": "phys:photon-evidence-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "This scoped formal input constrains the photon description; it does not establish a measured formation threshold, detector identity or universal maintenance process.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "id": "physics:external-scattering-state-photon-evidence-scope",
+      "source": "phys:external-scattering-state",
+      "target": "phys:photon-evidence-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "This scoped formal input constrains the photon description; it does not establish a measured formation threshold, detector identity or universal maintenance process.",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "id": "physics:photon-evidence-scope-photon-evidence-boundary",
+      "source": "phys:photon-evidence-scope",
+      "target": "phys:photon-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This bounded input supplies a definition boundary or its own prepared observable; the descriptive comparison supplies neither independent replication nor pooled photon-property inference.",
+      "claimIds": [
+        "M-phys-photon-evidence-boundary"
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
+      ]
+    },
+    {
+      "id": "physics:triggered-optical-coincidences-photon-evidence-boundary",
+      "source": "phys:triggered-optical-coincidences",
+      "target": "phys:photon-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This bounded input supplies a definition boundary or its own prepared observable; the descriptive comparison supplies neither independent replication nor pooled photon-property inference.",
+      "claimIds": [
+        "M-phys-photon-evidence-boundary"
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
+      ]
+    },
+    {
+      "id": "physics:triggered-optical-anticorrelation-photon-evidence-boundary",
+      "source": "phys:triggered-optical-anticorrelation",
+      "target": "phys:photon-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This bounded input supplies a definition boundary or its own prepared observable; the descriptive comparison supplies neither independent replication nor pooled photon-property inference.",
+      "claimIds": [
+        "M-phys-photon-evidence-boundary"
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
+      ]
+    },
+    {
+      "id": "physics:kessler-capture-wavelength-photon-evidence-boundary",
+      "source": "phys:kessler-capture-wavelength",
+      "target": "phys:photon-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This bounded input supplies a definition boundary or its own prepared observable; the descriptive comparison supplies neither independent replication nor pooled photon-property inference.",
+      "claimIds": [
+        "M-phys-photon-evidence-boundary"
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
+      ]
+    },
+    {
+      "id": "physics:kloe2007-radiative-ratio-photon-evidence-boundary",
+      "source": "phys:kloe2007-radiative-ratio",
+      "target": "phys:photon-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This bounded input supplies a definition boundary or its own prepared observable; the descriptive comparison supplies neither independent replication nor pooled photon-property inference.",
+      "claimIds": [
+        "M-phys-photon-evidence-boundary"
+      ],
+      "contextIds": [
+        "grangier1986-counting",
+        "grangier1986-anticorrelation-inference",
+        "kessler1995",
+        "kessler1998",
+        "kloe2007-meson-response"
       ]
     }
   ]

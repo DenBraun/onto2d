@@ -5695,6 +5695,68 @@
       "metadataCheckedAt": "2026-10-18",
       "metadataUrl": "https://arxiv.org/abs/1807.06209v4",
       "correctionCheck": "Exact author version and journal DOI checked. Author v4 incorporates the page 59 early-reionization percentile corrigendum; those outputs are outside this base-model admission."
+    },
+    {
+      "id": "grangier1986-counting",
+      "sourceId": "grangier1986-optical-anticorrelation",
+      "studyType": "primary-experiment",
+      "doi": "10.1209/0295-5075/1/4/004",
+      "journal": "Europhysics Letters",
+      "volume": "1",
+      "issue": "4",
+      "pages": "173-179",
+      "system": "Triggered radiative-cascade beam-splitter counting",
+      "preparation": "A two-photon-excited radiative cascade emits distinct frequencies nu_1 and nu_2. Detecting nu_1 triggers a gate for photomultipliers at the transmitted and reflected nu_2 outputs of a beam splitter. The intermediate lifetime is 4.7 ns; the selected gate is approximately 9 ns. The counters register gates, each output and joint output detections. This is a conditional detection preparation, not an ideal deterministic source in a single spatial mode.",
+      "observable": "Herald gates, transmitted/reflected singles and joint-output coincidence counts",
+      "finding": "At the selected low-excitation setting, the paper reports 9 joint-output coincidences in approximately 5 hours. The gate rate N_1 is approximately 8800 s^-1, including a 300 s^-1 dark rate; the reflected singles rate N_r is approximately 5 s^-1 with dark rate 0.02 s^-1. N_t, N_r and N_c denote gated transmitted singles, reflected singles and coincidences, and the observed probabilities are p_t=N_t/N_1, p_r=N_r/N_1 and p_c=N_c/N_1.",
+      "limitations": [
+        "Partial printed rates and exposure do not provide a complete event stream, full source-state characterization or independent detector calibration.",
+        "The named article refers source construction to an earlier paper. Atomic species, transition wavelengths, collection geometry in full detail and a complete state tomography are not supplied here. The authors explicitly distinguish their preparation from an ideal shuttered, fully collected single-photon source.",
+        "Multiple cascades, finite collection, detector inefficiency and dark triggers remain possible. A herald does not guarantee that an emitted nu_2 photon reaches or is detected at either output.",
+        "These are printed selected-point summaries, not a complete event table. The selected transmitted rate N_t, exact exposure, joint calibration and event stream are absent, so alpha and its uncertainty cannot be exactly reconstructed locally from these rounded values.",
+        "The reported dark-rate inclusions do not specify an exhaustive background-subtraction procedure. Nine detections do not imply ideal zero coincidences, unit efficiency or a measured particle trajectory."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+        "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+        "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://doi.org/10.1209/0295-5075/1/4/004",
+      "correctionCheck": "The journal scan identifies 15 February 1986, volume 1(4), pages 173-179 and the three authors; DOI metadata agrees. No linked correction was found in the checked DOI/title search. The seven-page paper, not the later reprint or longer conference account, supplies this bounded reading."
+    },
+    {
+      "id": "grangier1986-anticorrelation-inference",
+      "sourceId": "grangier1986-optical-anticorrelation",
+      "studyType": "computational-analysis",
+      "doi": "10.1209/0295-5075/1/4/004",
+      "journal": "Europhysics Letters",
+      "volume": "1",
+      "issue": "4",
+      "pages": "173-179",
+      "system": "Triggered radiative-cascade beam-splitter counting",
+      "preparation": "The estimator is alpha=p_c/(p_t*p_r)=N_c*N_1/(N_t*N_r). For the same ensemble of gates, the tested semiclassical model uses a nonnegative gate-averaged incident intensity, fixed splitter/output efficiencies and the linear low-detection-probability response p_t=a_t*w*<i>, p_r=a_r*w*<i>, p_c=a_t*a_r*w^2*<i^2>. Cauchy-Schwarz gives alpha>=1. The published quantum cascade model instead gives alpha=[2*f(w)*N*w+(N*w)^2]/[f(w)+N*w]^2, including accidental cascades.",
+      "observable": "Count-normalized alpha compared with the specified classical bound and quantum cascade model",
+      "finding": "The selected experiment reports alpha=0.18 +/- 0.06, below the stated semiclassical bound 1; Figure 2 error bars denote one standard deviation. For that setting the publication gives a classical expected coincidence count of at least 50 versus the 9 observed and reports a separation exceeding 13 standard deviations. A pulsed-diode control matched trigger and singles probabilities and satisfied the classical inequality. This supports nonclassical optical counting within the declared response assumptions.",
+      "limitations": [
+        "The same source, acquisition and gate selection underlie both study records. No independent replication, exact statistical replay or proof of all photon properties is supplied.",
+        "The classical bound is conditional on this common-intensity, fixed-response photodetection model, including the factorized conditional output response in its coincidence formula. It does not exclude every imaginable classical detector model. Saturated, nonlinear or spuriously correlated detector responses require separate validation.",
+        "N is the cascade-excitation rate, not the trigger rate N_1; the model relates them by N_1=epsilon_1*N. No exact f(w), source intensity, all efficiencies or full likelihood are reconstructed. The published comparison uses the same counted data, not an independent experiment.",
+        "The error distance is source-reported, not an independently recomputed Gaussian tail, exact small-count likelihood, trial-corrected significance or proof of zero systematic error. Rounded 9-versus-at-least-50 counts do not reproduce the full comparison or an uncertainty model.",
+        "Using the same source and trigger, a separately configured Mach-Zehnder experiment gave gated fringe visibility above 98 percent, with a dark-count correction below 0.3 percent. The 98.7 +/- 0.5 percent value is its ungated calibration. The arrangements are mutually exclusive; their shared source is not independent replication or a simultaneous which-path/interference measurement.",
+        "The result is compatible with a near-single-photon preparation, not proof of a literal unsplit trajectory, a deterministic photon source, electromagnetic-field quantization in every regime, all photon properties or a complete QED-to-macroscopic-light chain."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+        "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+        "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+        "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://doi.org/10.1209/0295-5075/1/4/004",
+      "correctionCheck": "The journal scan identifies 15 February 1986, volume 1(4), pages 173-179 and the three authors; DOI metadata agrees. No linked correction was found in the checked DOI/title search. The seven-page paper, not the later reprint or longer conference account, supplies this bounded reading."
     }
   ],
   "comparisons": [
@@ -9022,7 +9084,8 @@
     "Gauge-field spatial structure retains a specified source-conditioned observable, theory and ensemble. The Bali-Schilling-Schlichter pure-SU(2) profiles are distinct from static-potential fits and dynamical-quark screening. Published scale/width conventions, finite-cutoff effects, operator normalization and tail-model uncertainty remain explicit. No condensate extraction, autonomous real-time feedback, universal stable-matter law, necessary parent or carrier threshold is admitted. Configurations, full covariance and complete lattice analysis are not independently replayed.",
     "The QCD-to-nuclear bridge retains one heavy flavor-symmetric input point, source-specific threshold masses, finite-volume levels and conditional state assignments. Renormalized quark-mass sensitivity, physical-mass/continuum nuclear predictions and complete correlator/fit replay remain open. Current state-identification alternatives do not silently resolve the historical binding claim. No reviewed bulk density, compressibility, material response or astrophysical equation of state is supplied; these require separate many-body models and electromagnetic/electronic/environmental inputs.",
     "The selected canonical single-field primordial model retains its supplied background, potential, quantum state and linear/slow-roll limits. Long-wave conservation and stochastic interpretation require their stated dominant-mode conditions. Planck TT,TE,EE+lowE supplies a conditional scalar-power inference through a shared-data response and base-LambdaCDM likelihood, not a direct quantum-origin measurement. Reheating/matching, alternative-origin model comparison, large-scale-structure data and complete numerical likelihood replay remain outside this finite application.",
-    "The Wilsonian scalar transformation, fixed-point linearization and Gaussian engineering dimensions are formal constructions, not a universal interacting scaling law or a measured coarse-graining process. The EFT expansion and weak tree contact example retain matching, coefficient, power-counting and nondecoupling limits. Higher-order weak matching, actual interacting universality basins, condensed-matter scaling data and full numerical RG or experimental-fit replay require separate scoped work; existing CMS and L3 evidence tests only their declared running descriptions."
+    "The Wilsonian scalar transformation, fixed-point linearization and Gaussian engineering dimensions are formal constructions, not a universal interacting scaling law or a measured coarse-graining process. The EFT expansion and weak tree contact example retain matching, coefficient, power-counting and nondecoupling limits. Higher-order weak matching, actual interacting universality basins, condensed-matter scaling data and full numerical RG or experimental-fit replay require separate scoped work; existing CMS and L3 evidence tests only their declared running descriptions.",
+    "The photon admission separates a free electromagnetic gauge/Fock construction, one named triggered optical count acquisition and its conditional anticorrelation inference. The reported significance and separate interferometer visibility are not raw-data replay or independent replication. Photon mass/charge bounds, quantitative atomic binding and universal photon-mediated organization require separately scoped sources and evidence."
   ],
   "checkIds": []
 }

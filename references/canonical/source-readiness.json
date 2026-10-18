@@ -12144,6 +12144,96 @@
       ]
     },
     {
+      "nodeId": "phys:electromagnetic-photon-field",
+      "role": "definition",
+      "denotes": "The selected free Maxwell gauge field and its neutral Abelian transformation law, with a declared spacetime and action.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-electromagnetic-photon-field"
+      ]
+    },
+    {
+      "nodeId": "phys:transverse-photon-fock-state",
+      "role": "definition",
+      "denotes": "A bosonic Fock construction for the two transverse modes of a specified free Maxwell field, without an observed photon occurrence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-transverse-photon-fock-state"
+      ]
+    },
+    {
+      "nodeId": "phys:one-photon-wavepacket-boundary",
+      "role": "definition",
+      "denotes": "A normalized finite-energy one-photon input in the specified mode convention, with preparation, interaction and measurement left to separate contexts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-one-photon-wavepacket-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:heralded-optical-counting-context",
+      "role": "experimental-context",
+      "denotes": "The actual source, herald, gate and output counters of one named quantum-optical experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-heralded-optical-counting-context"
+      ]
+    },
+    {
+      "nodeId": "phys:optical-counting-response-context",
+      "role": "experimental-context",
+      "denotes": "Reported hardware timing and source/detector-response boundaries, not a new observation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-optical-counting-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:triggered-optical-coincidences",
+      "role": "scoped-phenomenon",
+      "denotes": "A finite measured coincidence and singles-count summary under a declared herald and response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-triggered-optical-coincidences"
+      ]
+    },
+    {
+      "nodeId": "phys:optical-anticorrelation-inference-context",
+      "role": "model-context",
+      "denotes": "The count normalization and classical/quantum comparison under declared intensity and detector assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-optical-anticorrelation-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:triggered-optical-anticorrelation",
+      "role": "scoped-phenomenon",
+      "denotes": "A published response-conditioned rejection of the stated semiclassical counting bound, with a separate same-source interference comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-triggered-optical-anticorrelation"
+      ]
+    },
+    {
+      "nodeId": "phys:photon-evidence-scope",
+      "role": "definition",
+      "denotes": "A definition boundary separating free photon states, source/detector events and electromagnetic mediation; not an observed universal formation mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:photon-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A comparison of named optical and radiative evidence with distinct measurement and inference stages, not a new experiment or combined fit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-photon-evidence-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

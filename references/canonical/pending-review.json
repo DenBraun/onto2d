@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/23",
-      "title": "Photons"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/25",
       "title": "Nonzero Neutrino Mass and Flavor Mixing"
     },
