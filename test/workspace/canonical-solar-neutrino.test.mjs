@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { SOLAR_NEUTRINO_ADMISSION, SOLAR_NEUTRINO_CHECKS,
   SOLAR_NEUTRINO_ANALYTICAL_SOURCES, validateSolarNeutrinoContracts } from "../../models/causal-emergence/canonical/solar-neutrino.mjs";
@@ -120,15 +119,21 @@ test("solar-neutrino canonical contracts reject added subtraction or unreviewed 
   ]);
 });
 
-test("solar-neutrino canonical review preserves SNO-only inference and the unresolved mass scope", async () => {
+test("solar-neutrino canonical review preserves SNO-only inference and its mass-identifiability limits", async () => {
   await rejectMutations([
     ["SNO-only result does not include SK constraint", (d) => { claim(d, "C-phys-sno2002-active-flavor-components").statement = "The independent SNO-only flux is 3.45 with 5.5-sigma significance."; }],
     ["shape-relaxed alternative is not the principal precision", (d) => { d.physics.comparisons.find((c) => c.id === "sno2002-shape-and-external-input-boundary").limit = "The principal result is fully shape independent."; }],
     ["mass and mechanism are not measured by this flux decomposition", (d) => { claim(d, "C-phys-sno2002-active-flavor-components").limitations = []; }]
   ]);
-  const pending = JSON.parse(await readFile(new URL("../../references/canonical/pending-review.json", import.meta.url), "utf8"));
-  for (const pointer of ["/25"]) assert.ok(pending.cards.some((c) =>
-    c.sourcePath === "references/level-1.json" && c.pointer === pointer), `SNO alone must not close ${pointer}`);
+  const data = await source();
+  const sno = claim(data, "C-phys-sno2002-active-flavor-components");
+  assert.deepEqual(sno.contextIds, ["sno2002-flavor-fit"]);
+  assert.ok(sno.limitations.some((limit) => limit.includes("measure an oscillation phase or mass splitting")),
+    "The SNO joint flux result does not become a mass-splitting measurement");
+  const comparison = claim(data, "C-phys-neutrino-mass-mixing-evidence");
+  assert.ok(comparison.contextIds.includes("sno2002-flavor-fit"));
+  assert.ok(comparison.contextIds.some((id) => id !== "sno2002-flavor-fit"),
+    "The mass/mixing comparison requires evidence beyond the SNO flux inference");
 });
 
 test("solar-neutrino canonical original analyses cannot acquire unrelated local check ownership", async () => {

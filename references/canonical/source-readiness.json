@@ -12234,6 +12234,51 @@
       ]
     },
     {
+      "nodeId": "phys:neutrino-mixing-parameterization",
+      "role": "definition",
+      "denotes": "A formal three-state mixing matrix and its rephasing conventions, without a fitted parameter point or observed CP result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-mixing-parameterization"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mass-model-boundary",
+      "role": "definition",
+      "denotes": "Alternative formal ways to extend the specified massless neutrino sector, with no observed mass-generation event or selected mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-mass-model-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:oscillation-mass-identifiability",
+      "role": "definition",
+      "denotes": "A conditional algebraic boundary between oscillation squared-mass differences and the unmeasured absolute mass offset, without an observed occurrence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-oscillation-mass-identifiability"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mass-mixing-scope",
+      "role": "definition",
+      "denotes": "A definition boundary for neutrino mass/mixing structure and its identifiable quantities, not a new mechanism or a universal formation rule.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-mass-mixing-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mass-mixing-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped comparison of named flavor and conditional mass-splitting evidence; not a combined likelihood or an independently reproduced experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-neutrino-mass-mixing-evidence"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

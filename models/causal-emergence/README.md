@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.4`: 1320 records, 1185 connections,
-1438 claims and 421 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.5`: 1325 records, 1202 connections,
+1444 claims and 422 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -120,6 +120,13 @@ mass and mixing interpretations retain the required model inputs. Perturbative
 QED amplitude conventions have a separate synthetic kinematic witness;
 classification and internal propagators do not establish formation mechanisms
 or observed constituent populations.
+Neutrino mass/mixing structure has explicit phase-redefinition and mass-offset
+identifiability boundaries. Alternative mass terms extend the minimal
+renormalizable model; the selected evidence does not choose a mechanism.
+Two unequal nonzero differences require at least two nonzero masses within
+the supplied three-state description, while one zero mass remains possible.
+Historical fits retain their effective conventions and dependent analyses;
+there is no new global likelihood, absolute mass or Dirac/Majorana determination.
 Neutrino records keep reactor, solar, atmospheric and accelerator preparations separate.
 Production/detection coherence, effective packet overlap and unresolved-event
 averaging have separate definitions. A prescribed solar density and conditional

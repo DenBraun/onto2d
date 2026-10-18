@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1320 records, 1185 connections, 1438 claims and 421 sources.
+The current graph contains 1325 records, 1202 connections, 1444 claims and 422 sources.
 The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -293,6 +293,46 @@ or likelihood replay are claimed. These published outcomes receive no
 local executable certification. Their width/loop and unreconciled-table
 obligations remain attached to these records.
 
+## Neutrino mass and mixing structure
+
+Card 1.25 distinguishes a neutrino mass/mixing description from its unknown
+origin. The [selected PDG mass and lepton-mixing sections](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf)
+supply the minimal renormalizable Standard Model boundary and alternative
+massive-neutrino constructions. Its charged-fermion Yukawa terms do not
+automatically generate neutrino masses. Added singlet fields or a higher-dimension
+Majorana operator are formal alternatives, without a measured mechanism choice.
+
+A supplied closed three-active model has three angles and a generic Dirac phase;
+the two additional Majorana column phases cancel from ordinary flavor-oscillation
+probabilities. Row/column phase invariance of those probabilities does not
+permit arbitrary Majorana field rephasings in a real-mass Lagrangian. Degeneracies,
+zero masses and vanishing angles can reduce physical parameter counts.
+Closed three-active unitarity is a declared restriction, not a universal theorem
+excluding additional states or nonunitary effective mixing.
+
+At fixed mixing, baseline and energy, an allowed common mass-squared shift
+changes only a common phase in the leading ultrarelativistic vacuum model.
+Two nonzero, unequal differences from one reference require three distinct
+squared masses and at least two nonzero masses. They allow one mass to vanish;
+equal nonzero differences alone do not imply that conclusion. No absolute scale
+or quantitative mass-ordering inference follows from this formal identity.
+
+The existing KamLAND reactor and historical Super-Kamiokande atmospheric fits
+retain their effective two-flavor conventions. SNO's joint non-electron active
+solar component is not a mass-splitting measurement. OPERA appearance and its
+full-mixing parameter comparison share one inference context. These five outcomes
+supply four named contexts, without a new combined likelihood, modern eigenpair
+assignment or extra independent replication. Source-specific confidence and
+response assumptions remain with each result.
+
+Absolute mass, Dirac/Majorana nature, Majorana phases, sterile content and
+parameter origin remain unresolved by this selected evidence. Beta-endpoint,
+neutrinoless-double-beta and cosmological mass limits are outside this scope.
+The matter potential uses vacuum masses/mixing as inputs; it does not create them.
+Propagation and transport applications retain card 1.17's existing boundaries.
+The original necessary parent, weight, carrier minima and SOMA classification
+supply no measured formation or maintenance law.
+
 ## Neutrino propagation and its limits
 
 Card 1.17 is scoped to conditional propagation between flavor-sensitive
@@ -301,8 +341,9 @@ measurement basis; mass differences and mixing specify model inputs. Relative
 phases are not continuously measured flavor jumps. A vacuum mass eigenstate
 or a mixture diagonal in the vacuum mass basis has constant flavor-readout
 probabilities. Necessary parents, weights 0.3/0.7, unit carrier minima, SOMA
-phase/type and universal flavor non-autonomy are excluded. Card 1.25 retains
-its separate mass-origin and remaining source-review obligations.
+phase/type and universal flavor non-autonomy are excluded. Card 1.25 separately
+defines mass/mixing identifiability while leaving the mass-generation mechanism
+unspecified.
 
 [Akhmedov and Smirnov](https://arxiv.org/abs/0905.1903v2) supply scoped
 production/detection indistinguishability, effective packet overlap and

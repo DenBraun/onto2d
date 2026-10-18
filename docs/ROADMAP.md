@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 171 remain on the
+graph. Of the 249 original source cards, 170 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-78 cards is a source-review census, not a percentage of scientifically supported
+79 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Five Level-1 cards remain pending.
+Four Level-1 cards remain pending.
 
-The current graph contains 1320 records, 1185 connections, 1438 claims and 421 sources.
+The current graph contains 1325 records, 1202 connections, 1444 claims and 422 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -124,14 +124,20 @@ belong to the current claims.
    two-flavor adiabatic approximation, with no inferred solar mechanism edge.
    OPERA accelerator tau appearance retains its selected decay channels,
    modeled expectations, calibrated significance and same-data 90% interval.
+   Card 1.25 has explicit mixing/rephasing and mass-identifiability boundaries.
+   A common squared-mass offset remains unidentifiable in the supplied leading
+   vacuum phase; two unequal nonzero differences imply at least two massive
+   states conditionally. The four historical inference contexts retain their
+   model and shared-data limits. Absolute mass, mass ordering, Majorana nature,
+   additional states and a unique mass-generation mechanism are not established.
    Card 1.17 is qualified to these experimental scopes and to explicit
    production/detection coherence, packet overlap and unresolved-event averaging.
    A prescribed solar density and conditional adiabatic survival expression
    keep production and response weights external; resonance alone does not
    establish conversion. The qualitative astrophysical propagation implication
    is retained, while quantitative transport and cosmological predictions are
-   excluded without their additional inputs. Card 1.25 remains pending for mass
-   origin and its remaining assertions. Original weights, minima, SOMA ordering
+   excluded without their additional inputs. Mass origin remains unspecified
+   within the qualified scope of card 1.25. Original weights, minima, SOMA ordering
    and universal flavor-instability claims are not admitted.
    Finite bipartite definitions distinguish entanglement, projective Bell
    locality and unconditioned marginals. Two Delft Bell runs preserve separate
