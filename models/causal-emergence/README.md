@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.11`: 1269 records, 1081 connections,
-1373 claims and 407 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18`: 1278 records, 1102 connections,
+1385 claims and 408 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -41,6 +41,12 @@ shapes, OPAL color-factor fits and H1 DIS scaling evidence distinguish selected
 readouts, corrections and conditional interpretations. Their model choices,
 shared inputs and source discrepancies remain visible. The gluon distribution
 is scheme-dependent; fitted color factors do not image an elementary vertex.
+Source-conditioned field profiles add a local plaquette observable in pure
+SU(2), with explicit vacuum subtraction, ground-state extraction and adopted
+scale. Inferred transverse widths retain tail-model uncertainty and their
+width convention. Local profiles, static potentials and screened energy levels
+are distinct; they supply no vacuum-condensate extraction, autonomous real-time
+feedback or universal stability/maintenance rule.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 an all-channel confinement theorem, temporal emergence or carrier-count minima.

@@ -5400,6 +5400,90 @@
       "metadataCheckedAt": "2026-10-10",
       "metadataUrl": "https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-11-074/index.html",
       "correctionCheck": "Official CMS publication and arXiv v2 metadata checked; v2 is identified as the published version. This is a selected 2011 sample, not the later combined 7/8 TeV search or an exhaustive correction/latest-result survey."
+    },
+    {
+      "id": "bali1995-flux-ensemble",
+      "sourceId": "bali1995-flux",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.51.5165",
+      "journal": "Physical Review D",
+      "volume": "51",
+      "issue": "",
+      "pages": "5165-5198",
+      "system": "Pure-SU(2) gauge ensembles with external static fundamental sources",
+      "preparation": "Simulate pure SU(2) Wilson gauge theory without sea quarks, with periodic boundaries and external static fundamental Q and Qbar. Table 1 specifies beta=2.5 on 16^4 and 32^4 sites, beta=2.635 on 48^3 x 64, and beta=2.74 on 32^4. The printed spacings are a=0.0826(5), 0.0826(14), 0.0541(2) and 0.0408(2) fm in that order. Field measurements number 8680, 2046, 248 and 670 respectively; Wilson-loop and vacuum-plaquette sample counts can differ. Spatial source smearing and time-link integration improve overlap and noise. With dimensionless fitted tension K=a^2 kappa, the adopted sqrt(kappa)=440 MeV supplies only an orientation for physical units.",
+      "observable": "Finite pure-SU(2) static-source ensembles and scale convention",
+      "finding": "The computational preparation used by the field and potential analyses.",
+      "limitations": [
+        "These are quenched two-color finite ensembles, not physical SU(3) QCD with dynamical quarks. Monte Carlo updates and Euclidean source preparation do not simulate real-time self-organization.",
+        "Table 1 prints sqrt(K)*a=440 MeV and printed page 4 prints kappa=K*a^2; printed page 23 instead uses the dimensionally consistent a^2=K/kappa. The graph uses the latter convention, preserving the author-version conflict without claiming a numerical error in the original fits. The quoted spacings are table inputs, not an independent reconciliation of its reciprocal-scale columns.",
+        "The adopted real-world scale and the beta-function interpolation, partly using earlier studies, are not independently reconstructed. Finite lattice spacings, volumes and source separations do not constitute a physical-QCD or continuum extrapolation."
+      ],
+      "readExtent": "selected-primary-author-report-passages",
+      "reviewedLocators": [
+        "Author v1 printed pages 2-12 (PDF 3-13), Sections 2.1-2.5, Equations 1-30 and Table 1: ensembles, static sources and vacuum-subtracted plaquette field operators",
+        "Author v1 printed pages 16-24 (PDF 17-25), Sections 3.3 and 4.1, Equations 39-52 and Tables 5-7: potential, scale setting and action-density normalization"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/9409005v1",
+      "correctionCheck": "Primary author-v1 metadata and selected body checked. Published-version differences, later corrections and upstream analyses are not exhaustively reviewed; printed scale and FWHM conflicts remain explicit."
+    },
+    {
+      "id": "bali1995-field-extraction",
+      "sourceId": "bali1995-flux",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.51.5165",
+      "journal": "Physical Review D",
+      "volume": "51",
+      "issue": "",
+      "pages": "5165-5198",
+      "system": "Pure-SU(2) gauge ensembles with external static fundamental sources",
+      "preparation": "Form the vacuum-subtracted Wilson-loop/plaquette contrasts with local spatial averaging and time insertions nearest the Wilson-loop midpoint. Extrapolate electric and magnetic components separately in Euclidean T before combining them; integrated observables are integrated at fixed T before extrapolation. Excited-state contamination of a field insertion can decrease as exp[-Delta V(T/2-S)], more slowly than for the Wilson potential. Independently fit the same ensembles' Wilson-loop ratios to the static potential; its fitted tension fixes relative lattice scales and its differences enter the later geometric-width method.",
+      "observable": "Source-conditioned squared-field profiles and shared-ensemble static potential",
+      "finding": "The reported local contrasts show an elongated action-density distribution between fixed sources. Figure 12 compares R=20 at beta=2.5 with R=30 at beta=2.635, described by the authors as approximately 1.7 fm under their adopted scale; the plotted action normalization is adjusted between couplings. The selected spacing, volume and T comparisons support this finite-lattice profile extraction within their uncertainties. Energy and action contrasts are separate reported observables.",
+      "limitations": [
+        "The source uses finite-T fit variations and bootstrap errors, not a directly observed exact ground-state field. A potential plateau alone does not certify the field plateau; the correlators, fits and covariance are not replayed.",
+        "Near-source self-energy peaks and sites excluded by time-link integration are subject to lattice artifacts. Spacing and 16^4/32^4 volume comparisons test selected profiles at their reported precision, not every tail, separation or infinite-volume limit.",
+        "Action-profile comparisons account for the anomalous normalization and retain scale uncertainty. The potential and field profiles share gauge ensembles and scale inputs, so their sum-rule comparison is not independent experimental confirmation."
+      ],
+      "readExtent": "selected-primary-author-report-passages",
+      "reviewedLocators": [
+        "Author v1 printed pages 2-12 (PDF 3-13), Sections 2.1-2.5, Equations 1-30 and Table 1: ensembles, static sources and vacuum-subtracted plaquette field operators",
+        "Author v1 printed pages 16-24 (PDF 17-25), Sections 3.3 and 4.1, Equations 39-52 and Tables 5-7: potential, scale setting and action-density normalization",
+        "Author v1 printed pages 25-36 (PDF 26-37), Section 4.2, Figures 8-19 and Equation 58: field profiles, spacing/volume comparisons and Euclidean-time extraction",
+        "Author v1 printed pages 47-53 (PDF 48-54), Sections 5.3-5.4 and selected summary, Equations 63-73 and Figures 26-29: sum-rule inputs, tail sensitivity and width inference"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/9409005v1",
+      "correctionCheck": "Primary author-v1 metadata and selected body checked. Published-version differences, later corrections and upstream analyses are not exhaustively reviewed; printed scale and FWHM conflicts remain explicit."
+    },
+    {
+      "id": "bali1995-profile-inference",
+      "sourceId": "bali1995-flux",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.51.5165",
+      "journal": "Physical Review D",
+      "volume": "51",
+      "issue": "",
+      "pages": "5165-5198",
+      "system": "Pure-SU(2) gauge ensembles with external static fundamental sources",
+      "preparation": "For beta=2.5 and 2.635, compare Gaussian and dipole interpolations of the central action profile, direct cutoff-dependent moment integrals, and the geometric estimate delta_geom^2=gamma A/(pi h), where h is the central height and A the transverse profile integral. The geometric A uses the differential action sum rule, the same-ensemble potential differences and the adopted beta-function factor. The method assumes that aligned static differences sigma_R-sigma_(R-2) are localized near the center plane and that transverse shapes at different R differ by amplitude and length rescalings. For infinite-plane Gaussian and dipole profiles gamma is 1 and 2.",
+      "observable": "Conditional transverse rms/FWHM and separation dependence",
+      "finding": "For source separations above approximately 1 fm at beta=2.5 and 2.635, the reported geometric action rms estimate is a delta_geom approximately 0.52 fm sqrt(gamma). The authors' plausible-profile estimate spans approximately 0.5-0.75 fm, and the physical FWHM a rho plateaus at approximately 0.7 fm under their formulas. The data are compatible with a constant width and also with logarithmic broadening; the calculation does not select between them.",
+      "limitations": [
+        "The aligned differences compare separate fixed-source configurations; their localization near r approximately 0.75 fm is a smooth, resolution-limited diagnostic, not real-time pulling, a phase transition or a minimum formation size.",
+        "The geometric method is applied above its stated approximately 0.75 fm range. Tail contributions, finite volume, rotational symmetry and the profile family remain inputs. Good fits over the measured transverse window do not determine the unmeasured tails.",
+        "The Gaussian fit can describe central data while underestimating the sum-rule area; dipole tails are also not established throughout the separation range. The sum rule and potential are reused constraints, not an independent derivation of the profile or a measured vacuum condensate."
+      ],
+      "readExtent": "selected-primary-author-report-passages",
+      "reviewedLocators": [
+        "Author v1 printed pages 16-24 (PDF 17-25), Sections 3.3 and 4.1, Equations 39-52 and Tables 5-7: potential, scale setting and action-density normalization",
+        "Author v1 printed pages 40-46 (PDF 41-47), Sections 5.1-5.2, Equations 59-62 and Figures 23-25: transverse profile models and aligned static-separation differences",
+        "Author v1 printed pages 47-53 (PDF 48-54), Sections 5.3-5.4 and selected summary, Equations 63-73 and Figures 26-29: sum-rule inputs, tail sensitivity and width inference"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/9409005v1",
+      "correctionCheck": "Primary author-v1 metadata and selected body checked. Published-version differences, later corrections and upstream analyses are not exhaustively reviewed; printed scale and FWHM conflicts remain explicit."
     }
   ],
   "comparisons": [
@@ -8594,6 +8678,24 @@
       "claimIds": [
         "C-phys-cms2013-fcp-limits"
       ]
+    },
+    {
+      "id": "bali1995-width-dependence",
+      "candidate": "A constant action-profile width over the reported large-separation range.",
+      "alternative": "Logarithmic broadening within the reviewed effective-string parametrization.",
+      "sourceIds": [
+        "bali1995-flux"
+      ],
+      "claimIds": [
+        "M-phys-bali1995-profile-inference-context",
+        "C-phys-bali1995-profile-widths"
+      ],
+      "discriminator": "Figures 28-29 and the width discussion compare separation dependence; both behaviors remain compatible at the reported precision and model uncertainty.",
+      "result": "inconclusive",
+      "limit": "No preferred asymptotic width law, exact physical-QCD scale or universal tail shape follows from this finite-lattice comparison.",
+      "assumptions": [
+        "Use the same extracted profiles, potential constraints, adopted scale and geometric/tail assumptions."
+      ]
     }
   ],
   "openObligations": [
@@ -8685,7 +8787,8 @@
     "Confinement criteria remain specific to gauge theory, matter, state, regulator and observable. Finite pure-gauge Wilson loops, dynamical-quark screening and selected hadronic consistency are not equivalent tests or a continuum all-channel theorem. Original parent weights, minima and SOMA/maintenance order are excluded; nuclear and atomic stability require their own systems and evidence.",
     "Obtain Bulava correlators, covariance, configurations and analysis code for independent spectrum/model replay. Its relative-energy fit is correlated; its later three-state model fit is uncorrelated. Crossing distances are model conventions, not minimum-gap estimates or directly measured real-time rates.",
     "Recover CMS fractional-charge acquisition, detector/trigger response, control-sample likelihood and signal simulation before independent CLs or benchmark-mass reproduction. The color-singlet benchmark and specified charges restrict the interpretation; it is not a theory-independent fractional-charge or QCD confinement test.",
-    "Coherence conditions depend on production and detection, while wave-packet separation and unresolved-event averaging retain distinct meanings. The approximate solar profile does not establish adiabaticity or supply production/response weights; no solar trajectory, spectrum or likelihood is numerically reproduced. Four experimental chains retain separate observables and shared-data stages, without a pooled probability or new global fit."
+    "Coherence conditions depend on production and detection, while wave-packet separation and unresolved-event averaging retain distinct meanings. The approximate solar profile does not establish adiabaticity or supply production/response weights; no solar trajectory, spectrum or likelihood is numerically reproduced. Four experimental chains retain separate observables and shared-data stages, without a pooled probability or new global fit.",
+    "Gauge-field spatial structure retains a specified source-conditioned observable, theory and ensemble. The Bali-Schilling-Schlichter pure-SU(2) profiles are distinct from static-potential fits and dynamical-quark screening. Published scale/width conventions, finite-cutoff effects, operator normalization and tail-model uncertainty remain explicit. No condensate extraction, autonomous real-time feedback, universal stable-matter law, necessary parent or carrier threshold is admitted. Configurations, full covariance and complete lattice analysis are not independently replayed."
   ],
   "checkIds": []
 }

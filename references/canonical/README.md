@@ -9,8 +9,8 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1269 records, 1081 connections, 1373 claims and 407 sources.
-The physics review contains 176 study contexts and 140 comparisons.
+The current graph contains 1278 records, 1102 connections, 1385 claims and 408 sources.
+The physics review contains 179 study contexts and 141 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -355,7 +355,8 @@ define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
 Confinement has declared theory-specific criteria and separately scoped lattice
-and phenomenological evidence. Universal self-organization remains an open scope.
+and phenomenological evidence. Source-conditioned spatial profiles retain their
+operator and theory; no universal autonomous self-organization is established.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
 
@@ -488,6 +489,52 @@ distinct from time evolution. Formal sector choices supply no measured
 necessary arising order, original 0.4/0.6 weights, one-carrier minima or
 universal SOMA process classification. Confinement criteria, self-organization
 and broader running-coupling claims keep their separate scopes.
+
+## Source-conditioned gauge-field structure
+
+Card 1.18 is qualified to non-Abelian interaction definitions and specified
+source-conditioned lattice observables. The QCD self-coupling convention is
+SU(3); the newly reviewed profile calculation is pure SU(2) with external
+fundamental static sources and no sea quarks. A diagram loop, Wilson contour,
+Monte Carlo update or Euclidean projection does not establish feedback through
+physical time, an autonomous formation process or causal maintenance.
+
+[Bali, Schilling and Schlichter](https://arxiv.org/abs/hep-lat/9409005v1)
+provide Wilson-loop-normalized, vacuum-subtracted plaquette contrasts. Smeared
+source operators improve ground-state overlap while the local probe remains
+unsmeared. The mapped quantities are expectations of squared field components,
+not signed color vectors or directly imaged gluon populations. Their finite-cutoff
+energy/action conventions, normalization and source-region artifacts remain
+explicit. Finite-volume and spacing comparisons do not complete a physical
+SU(3) continuum calculation.
+
+The four preparations retain their different volumes, spacings and sampling.
+Physical units use an adopted square-root string tension of 440 MeV as an
+orientation for pure SU(2), with dimensionless K=a^2*kappa. The report's Table 1
+caption and adjoining scale statement contain inconsistent powers of a;
+the consistent conversion and printed discrepancy are recorded. The potential
+used for that scale and the local field profiles reuse configurations, but
+they are different observables.
+
+Spatial profiles and inferred widths have separate records. The transverse
+root-mean-square width depends strongly on unmeasured tails; the quoted
+0.5-0.75 fm range is a model range, not a confidence interval. The report calls
+rho a half width, while its defining formulas give the full span at half maximum.
+The physical FWHM a*rho is approximately 0.7 fm under that convention and scale.
+Constant width and logarithmic broadening remain compatible with the reported
+data.
+Changes between aligned static-source separations do not measure temporal
+field growth or a universal critical formation distance.
+
+The synthesis reuses Creutz's finite pure-SU(2) loops and the different Bali
+and Bulava dynamical-quark SU(3) spectra without pooling their theories or
+samples. A profile does not determine a renormalized vacuum condensate;
+condensate-like organization is excluded without its operator, prescription
+and reviewed extraction. Universal matter stability, original weights 0.6/0.4,
+necessary arising/maintenance parents, unit carrier minima and SOMA phase/type
+authority are excluded. Configurations, full covariance and the complete
+simulation/analysis chain remain unreproduced. Qualified neighboring cards
+retain their own scopes.
 
 ## Bipartite states and Bell tests
 

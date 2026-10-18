@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/18",
-      "title": "Gluon Field Self-Organization"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/19",
       "title": "Quark Influence on Macroscale Matter Properties"
     },

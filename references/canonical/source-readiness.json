@@ -11775,6 +11775,87 @@
       ]
     },
     {
+      "nodeId": "phys:static-source-plaquette-density",
+      "role": "definition",
+      "denotes": "A vacuum-subtracted, Wilson-source-conditioned expectation of color-contracted squared fields, with explicit finite-lattice matching.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-static-source-plaquette-density"
+      ]
+    },
+    {
+      "nodeId": "phys:transverse-flux-width",
+      "role": "definition",
+      "denotes": "Specified radial rms and full half-maximum widths of a central scalar profile, rather than a formation threshold or universal tube size.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-transverse-flux-width"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-flux-ensemble-context",
+      "role": "model-context",
+      "denotes": "The four finite pure-gauge ensembles, their static-source preparation and adopted scale convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bali1995-flux-ensemble-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-field-extraction-context",
+      "role": "model-context",
+      "denotes": "The specified Euclidean extraction of squared-field contrasts and the shared-ensemble potential used in later normalization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bali1995-field-extraction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-field-profiles",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported finite-lattice action/energy contrasts; especially the long action profile in the common source geometry.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bali1995-field-profiles"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-profile-inference-context",
+      "role": "model-context",
+      "denotes": "The conditional central-profile fits and geometric width construction using shared potential and normalization inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bali1995-profile-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-profile-widths",
+      "role": "scoped-phenomenon",
+      "denotes": "Published model-conditioned action rms/FWHM estimates and their unresolved constant-versus-logarithmic dependence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bali1995-profile-widths"
+      ]
+    },
+    {
+      "nodeId": "phys:source-conditioned-field-structure",
+      "role": "definition",
+      "denotes": "An observable-dependent gauge-field scope; no autonomous formation or maintenance stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-source-conditioned-field-structure"
+      ]
+    },
+    {
+      "nodeId": "phys:gauge-field-structure-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison of distinct lattice observables and theories; no pooled experiment or universal confinement/stability result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-gauge-field-structure-evidence"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

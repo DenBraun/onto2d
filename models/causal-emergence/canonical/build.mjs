@@ -141,6 +141,8 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/oscillation-coherence.mjs",
     "models/causal-emergence/canonical/oscillation-solar.mjs",
     "models/causal-emergence/canonical/oscillation-formal.mjs",
+    "models/causal-emergence/canonical/gluon-flux.mjs",
+    "models/causal-emergence/canonical/gluon-structure.mjs",
     "models/causal-emergence/canonical/entanglement-formal.mjs",
     "models/causal-emergence/canonical/entanglement-vacuum.mjs",
     "models/causal-emergence/canonical/entanglement-bell.mjs",

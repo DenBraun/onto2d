@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 176 remain on the
+graph. Of the 249 original source cards, 175 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-73 cards is a source-review census, not a percentage of scientifically supported
+74 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Ten Level-1 cards remain pending.
+Nine Level-1 cards remain pending.
 
-The current graph contains 1269 records, 1081 connections, 1373 claims and 407 sources.
+The current graph contains 1278 records, 1102 connections, 1385 claims and 408 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -169,6 +169,16 @@ belong to the current claims.
    different gauge groups, sea content and calibration. A universal process
    classification, weighted necessary parents and one-carrier thresholds are
    excluded. Full experimental and computational replay remains open.
+   Card 1.18 is qualified to source-conditioned gauge-field structure. A pure-SU(2)
+   Wilson-loop/plaquette calculation supplies explicit vacuum subtraction,
+   operator conventions, finite-volume/spacing controls and a separate width
+   inference. Adopted scale, printed scale/width conventions, shared sampling
+   and tail-model uncertainty remain attached to those records. The data allow
+   both constant width and logarithmic broadening. Formal self-coupling, local
+   profiles and dynamical-quark screening are distinct; no renormalized vacuum
+   condensate, real-time feedback, universal stable-matter law, necessary parent,
+   carrier minimum or SOMA phase/type authority follows. No full lattice replay
+   or physical-SU(3) continuum profile is claimed.
    Continue with independent structure-function tests, spectroscopy and the
    remaining dependency claims; a theory input to an interpretation does not
    establish a formation process. Wider field-region models and information
