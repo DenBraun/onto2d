@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.1`: 1288 records, 1127 connections,
-1399 claims and 411 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.2`: 1301 records, 1148 connections,
+1415 claims and 417 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -50,6 +50,11 @@ feedback or universal stability/maintenance rule.
 The nuclear bridge separates fixed-input heavy-flavor two-nucleon energy
 shifts, conditional binding assignments and current state-identification
 limits. It supplies no quark-mass derivative or bulk equation of state.
+The primordial branch separates an assumed scalar/background/state model,
+conditional curvature power and its restricted stochastic interpretation from
+Planck angular-spectrum response and base-model parameter inference. A compatible
+CMB fit does not directly observe an initial quantum state or identify a unique
+origin. Large-scale-structure evidence and complete likelihood replay remain open.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 an all-channel confinement theorem, temporal emergence or carrier-count minima.

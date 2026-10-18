@@ -11946,6 +11946,123 @@
       ]
     },
     {
+      "nodeId": "phys:single-field-cosmology",
+      "role": "definition",
+      "denotes": "The supplied canonical scalar/Einstein action, flat expanding background and reduced-Planck-mass convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-single-field-cosmology"
+      ]
+    },
+    {
+      "nodeId": "phys:canonical-curvature-mode",
+      "role": "definition",
+      "denotes": "The constrained scalar perturbation Q, canonical variable v and comoving-curvature R, including their gauge and nonzero-background conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-canonical-curvature-mode"
+      ]
+    },
+    {
+      "nodeId": "phys:primordial-curvature-spectrum",
+      "role": "definition",
+      "denotes": "The dimensionless two-point power of the declared R operator and state, plus its conditional leading slow-roll normalization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-primordial-curvature-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:superhorizon-curvature-evolution",
+      "role": "definition",
+      "denotes": "The constant and integral long-wave curvature solutions and the explicit conditions for neglecting the second mode.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-superhorizon-curvature-evolution"
+      ]
+    },
+    {
+      "nodeId": "phys:gaussian-cosmological-mode-statistics",
+      "role": "definition",
+      "denotes": "A Gaussian equal-time amplitude representation conditional on the supplied free-field state and normalization, not a measured classicalization event.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gaussian-cosmological-mode-statistics"
+      ]
+    },
+    {
+      "nodeId": "phys:cosmological-growing-mode-classical-limit",
+      "role": "definition",
+      "denotes": "A conditional dominant-mode stochastic interpretation with explicit approximation and decoherence boundaries, not a unique empirical origin mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-cosmological-growing-mode-classical-limit"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-cmb-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "A named astronomical observation and map selection, not a controlled intervention on primordial conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-planck2018-cmb-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-cmb-response-context",
+      "role": "model-context",
+      "denotes": "The reported map-to-spectrum response, foreground and calibration treatment; no new independent acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-planck2018-cmb-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-angular-spectra",
+      "role": "scoped-phenomenon",
+      "denotes": "Processed angular-correlation estimates of the observed CMB sky, distinct from an inferred primordial spectrum.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-planck2018-angular-spectra"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-primordial-inference-context",
+      "role": "model-context",
+      "denotes": "The adopted base-model transfer, likelihood, nuisance treatment and priors that connect spectra to conditional primordial parameters.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-planck2018-primordial-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-scalar-spectrum",
+      "role": "scoped-phenomenon",
+      "denotes": "A reported conditional posterior for scalar amplitude and tilt, not a direct observation of a quantum origin.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-planck2018-scalar-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:primordial-origin-scope",
+      "role": "definition",
+      "denotes": "A declared conditional model and evidence boundary, not an observed initial quantum preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-primordial-origin-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:primordial-cmb-model-compatibility",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison of one CMB inference with conditional primordial theory, preserving shared data and origin ambiguity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-primordial-cmb-model-compatibility"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

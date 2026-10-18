@@ -9,8 +9,8 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1288 records, 1127 connections, 1399 claims and 411 sources.
-The physics review contains 183 study contexts and 142 comparisons.
+The current graph contains 1301 records, 1148 connections, 1415 claims and 417 sources.
+The physics review contains 186 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -68,6 +68,40 @@ states can have changing unequal-time correlations. Card 1.26 retains this
 scoped construction; interaction-amplitude vertices, renormalization-scale
 changes and numerical sampling do not supply a universal temporal process or
 maintenance cause.
+
+## Primordial curvature and CMB inference
+
+Card 1.20 has a conditional single-field construction, distinct from the
+flat-space vacuum of card 1.5. [Mukhanov's constrained scalar action](https://jetp.ras.ru/cgi-bin/dn/e_067_07_1297.pdf)
+and the [canonical limit of Garriga and Mukhanov](https://arxiv.org/abs/hep-th/9904176v1)
+define the background, gauge-invariant mode, normalization and curvature power.
+The potential, background and initial state are inputs. The leading slow-roll
+amplitude labels the late growing mode by Hubble crossing; it is not the exact
+power at crossing. Turning points, non-attractor evolution and later matching
+retain their stated limitations.
+
+[Polarski and Starobinsky](https://arxiv.org/abs/gr-qc/9504030v2) distinguish an
+equal-time Gaussian amplitude distribution from a stronger stochastic
+trajectory approximation that neglects a subleading solution. Their free scalar
+is not silently equated with the constrained curvature variable. Neither
+description establishes a universal decoherence mechanism, removes the exact
+commutator or identifies a unique quantum origin.
+
+The Planck 2018 chain separates [observed maps and spectrum response](https://arxiv.org/abs/1907.12875v2)
+from the [base-LambdaCDM transfer, priors and posterior](https://arxiv.org/abs/1807.06209v4).
+The selected TT,TE,EE+lowE combination yields `n_s=0.9649 +/- 0.0044` and
+`ln(10^10 A_s)=3.045 +/- 0.016`, marginalized 68% intervals at
+`k_*=0.05 Mpc^-1`. [The inflation analysis](https://arxiv.org/abs/1807.06211v2)
+reports the same joint result using the same data; it is not an independent
+replication. Physical lensing of the angular spectra remains in the model;
+the separate lensing-reconstruction likelihood and external datasets are excluded.
+Coadded display curves retain their different nuisance and error conventions.
+
+Measured angular correlations are distinct from inferred primordial parameters.
+A compatible power law does not measure an initial vacuum or an inflaton
+potential. Large-scale-structure data and matter evolution are outside this
+finite CMB application. No Planck likelihood replay, universal formation rule,
+necessary parent, original weight, carrier minimum or SOMA stage is admitted.
 
 ## Electroweak model and boson observation
 

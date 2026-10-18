@@ -5605,6 +5605,96 @@
       "metadataCheckedAt": "2026-10-18",
       "metadataUrl": "https://arxiv.org/abs/2601.22272v1",
       "correctionCheck": "Checked the actual arXiv v1 preprint and its version metadata; no journal publication or later revision is listed. Companion 2601.22273v1 is the same analysis. Earlier papers are not retroactively corrected by this record; statistical and spectral assumptions remain explicit."
+    },
+    {
+      "id": "planck2018-cmb-acquisition",
+      "sourceId": "planck2018-cmb-likelihoods",
+      "studyType": "primary-observation",
+      "doi": "10.1051/0004-6361/201936386",
+      "journal": "Astronomy & Astrophysics",
+      "volume": "641",
+      "issue": "",
+      "pages": "A5",
+      "system": "Planck selected CMB temperature and E-polarization analysis",
+      "preparation": "The 2018 release reprocesses full-mission Planck intensity and linear-polarization maps. The selected high-multipole sample uses 100, 143 and 217 GHz HFI half-mission cross-spectra; low-E uses the 100 x 143 GHz full-mission polarization cross-spectrum, with low-temperature Commander estimates. The low-E cleaning uses 353 GHz dust templates and a 30 GHz synchrotron template at 100 GHz. This is selection from an existing sky observation, not a new 2018 experimental preparation.",
+      "observable": "Selected Planck map frequencies and half-mission/full-mission data combinations",
+      "finding": "An existing sky observation selected for the specified temperature and E-polarization likelihood.",
+      "limitations": [
+        "Frequency pairs and half missions sample the same CMB sky and share calibration and foreground inputs. Papers V, VI and X are linked analyses of that acquisition; they are not independent replications or independent universes.",
+        "The selected branch excludes low-multipole TE, BB, the LFI lowTEB alternative, a separate lensing-reconstruction likelihood, BAO and BICEP/Keck. Detailed timelines, detector operation and the complete upstream LFI/HFI instrument papers are not independently reviewed."
+      ],
+      "readExtent": "selected-primary-author-passages",
+      "reviewedLocators": [
+        "Author v2 pages 2-4, Sections 1-2.1: full-mission maps, likelihood naming and Commander component separation",
+        "Author v2 pages 8-10, Sections 2.2.1-2.2.3: polarization cleaning, cross-spectrum estimation, simulations and low-TE exclusion",
+        "Author v2 pages 25-26 and 28, Sections 3.1-3.2.4, Equations 20-21 and Table 13: half-mission spectra, covariance, beam response and multipole cuts"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/1907.12875v2",
+      "correctionCheck": "Exact author version and journal DOI checked. Author v2 matches the published likelihood report; selected printed multipole cuts are retained without substituting the inflation-paper summary."
+    },
+    {
+      "id": "planck2018-cmb-response",
+      "sourceId": "planck2018-cmb-likelihoods",
+      "studyType": "computational-analysis",
+      "doi": "10.1051/0004-6361/201936386",
+      "journal": "Astronomy & Astrophysics",
+      "volume": "641",
+      "issue": "",
+      "pages": "A5",
+      "system": "Planck selected CMB temperature and E-polarization analysis",
+      "preparation": "Commander jointly models low-temperature foregrounds and the CMB. SimAll uses foreground-cleaned 100 x 143 GHz quasi-QML polarization estimates and simulation-based probabilities. High-multipole Plik uses masked, beam-corrected half-mission cross-spectra with noise/covariance models and foreground, calibration, polarization-efficiency and temperature-to-polarization leakage treatment. Its covariance retains correlations between frequency pairs and TT, TE and EE using a fiducial model. Cross-spectra reduce additive noise bias only insofar as the split-map noises are uncorrelated.",
+      "observable": "Response-conditioned angular spectra and their joint statistical/nuisance treatment",
+      "finding": "The reported data products are angular temperature and E-polarization spectrum estimates: Commander TT and SimAll EE for 2 <= ell <= 29, and Plik per-frequency half-mission TT, TE and EE cross-spectra at higher multipoles. The high-multipole union is TT 30-2508 and TE/EE 30-1996, with narrower pair-specific cuts. These response-conditioned angular correlations are distinct from a primordial curvature spectrum or an observed quantum-vacuum realization.",
+      "limitations": [
+        "Not all corrections are freely fitted: the baseline fixes EE dust amplitudes, polarization-efficiency corrections and several residual templates, while fitting selected foreground/calibration parameters with priors. Shared scanning systematics can remain correlated between half missions.",
+        "Simulations and fiducial covariance approximate noise, foregrounds, sample variance and residual systematics. The source reports finite-simulation and fixed-sky limitations; validation is not proof that all calibration, foreground or likelihood errors vanish. No maps, templates, covariance or end-to-end simulation are locally reconstructed.",
+        "The actual Plik data vector keeps frequency-pair spectra; it is not the frequency-coadded curve in Figures 57-59. Those displays fix foreground/nuisance parameters to a best fit including lensing reconstruction, and their high-multipole diagonal error bars omit foreground-model uncertainty. Displayed low-TE points are not used in the chosen inference.",
+        "The sky is one finite, masked realization: multipoles and cross-spectra have correlated sample variance and instrumental/foreground uncertainty. Angular spectra are processed estimates, not independent raw event counts or a direct time series of primordial fluctuations."
+      ],
+      "readExtent": "selected-primary-author-passages",
+      "reviewedLocators": [
+        "Author v2 pages 8-10, Sections 2.2.1-2.2.3: polarization cleaning, cross-spectrum estimation, simulations and low-TE exclusion",
+        "Author v2 pages 25-26 and 28, Sections 3.1-3.2.4, Equations 20-21 and Table 13: half-mission spectra, covariance, beam response and multipole cuts",
+        "Author v2 pages 51-53, Section 3.4: Plik foreground, calibration, polarization-efficiency and residual-systematics treatment",
+        "Author v2 pages 59-61, Figures 57-59 and their captions: coadded display conventions and covariance limitations",
+        "Author v2 pages 86-88, Sections 3.12.3-4 and Table 23: simulation limits, hybrid likelihood and omitted correlations"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/1907.12875v2",
+      "correctionCheck": "Exact author version and journal DOI checked. Author v2 matches the published likelihood report; selected printed multipole cuts are retained without substituting the inflation-paper summary."
+    },
+    {
+      "id": "planck2018-primordial-inference",
+      "sourceId": "planck2018-cosmological-parameters",
+      "studyType": "computational-analysis",
+      "doi": "10.1051/0004-6361/201833910",
+      "journal": "Astronomy & Astrophysics",
+      "volume": "641",
+      "issue": "",
+      "pages": "A6",
+      "system": "Planck selected CMB temperature and E-polarization analysis",
+      "preparation": "The selected analysis assumes spatially flat base LambdaCDM with purely adiabatic scalar P_R(k)=A_s*(k/k_*)^(n_s-1), k_*=0.05 Mpc^-1. CAMB (August 2017) maps this prescribed initial spectrum and the adopted background, matter and thermal history to lensed CMB spectra; CosmoMC (July 2018) samples the six-parameter posterior. The base parameters are baryon and cold-dark-matter densities, theta_MC, tau, ln(10^10 A_s) and n_s, with flat base priors; the amplitude prior is 1.61 < ln(10^10 A_s) < 3.91. The adopted neutrino model has two massless states and one 0.06 eV state, BBN-predicted helium and the stated tanh reionization history. The likelihood multiplies Commander low-T, SimAll low-E and high-multipole Plik, exploring the allowed nuisance parameters jointly.",
+      "observable": "Marginalized primordial log-amplitude and scalar spectral index",
+      "finding": "For TT,TE,EE+lowE in that base model, Planck reports n_s=0.9649 +/- 0.0044 and ln(10^10 A_s)=3.045 +/- 0.016, each as a marginalized 68 percent interval at k_*=0.05 Mpc^-1. These are the selected joint column of VI Table 2 and X Table 2, with the tilt also stated in X Equation 10. The amplitude and tilt are inferred primordial-spectrum parameters, conditional on the specified transfer model, likelihood and priors.",
+      "limitations": [
+        "This transfer/likelihood model includes physical lensing of TT/TE/EE but not the separate lensing-reconstruction likelihood. No BAO, BK15 or large-scale-structure likelihood is added. A power-law adiabatic initial spectrum is an assumption of this fit, not a derivation of inflation or of its quantum origin.",
+        "The hybrid likelihood neglects low/high-multipole correlations and low-T/low-E correlations; low-TE is excluded. Its high-multipole Gaussian approximation and fixed corrections carry stated limits. High-multipole amplitude is degenerate with tau through A_s*exp(-2*tau); low-E supplies conditional information on tau.",
+        "Inherited prior bounds beyond the quoted amplitude range and the full recombination, BBN, nonlinear-lensing, sampler and covariance implementations are not independently reconstructed. Other cosmologies or nuisance choices can change the posterior; no full numerical replay or unique origin mechanism is claimed.",
+        "These two marginal intervals do not specify their joint posterior or covariance and are not independent detections. The +/-0.0042 tilt uncertainty belongs to the different TT,TE,EE+lowE+lensing combination; it must not replace this result.",
+        "The source-reported posterior is neither a local refit nor direct proof of a quantum-vacuum origin, a unique inflationary potential, reheating, primordial tensors, dark-matter microphysics or the construction of late-time structure. Other initial-condition and cosmological models require their own evidence and likelihood comparison.",
+        "Papers V, VI and X share the Planck acquisition and analysis chain. Their agreement is a provenance/consistency check, not a statistical multiplication of independent evidence."
+      ],
+      "readExtent": "selected-primary-author-passages",
+      "reviewedLocators": [
+        "Author v4 pages 4-5, Sections 2.1-2.2.1: base model, priors, CAMB/CosmoMC, map response and Plik cuts",
+        "Author v4 page 11, Sections 2.2.3-2.2.4: exact TT,TE,EE+lowE definition, excluded low-TE and amplitude-optical-depth degeneracy",
+        "Author v4 page 16, Table 2, TT,TE,EE+lowE column and caption: 68 percent base-parameter intervals and adopted BBN/reionization assumptions",
+        "Author v4 page 59, footnote 44 and Equations 87a-87b: incorporated early-reionization percentile corrigendum, outside the selected base-model result"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/1807.06209v4",
+      "correctionCheck": "Exact author version and journal DOI checked. Author v4 incorporates the page 59 early-reionization percentile corrigendum; those outputs are outside this base-model admission."
     }
   ],
   "comparisons": [
@@ -8930,7 +9020,8 @@
     "Recover CMS fractional-charge acquisition, detector/trigger response, control-sample likelihood and signal simulation before independent CLs or benchmark-mass reproduction. The color-singlet benchmark and specified charges restrict the interpretation; it is not a theory-independent fractional-charge or QCD confinement test.",
     "Coherence conditions depend on production and detection, while wave-packet separation and unresolved-event averaging retain distinct meanings. The approximate solar profile does not establish adiabaticity or supply production/response weights; no solar trajectory, spectrum or likelihood is numerically reproduced. Four experimental chains retain separate observables and shared-data stages, without a pooled probability or new global fit.",
     "Gauge-field spatial structure retains a specified source-conditioned observable, theory and ensemble. The Bali-Schilling-Schlichter pure-SU(2) profiles are distinct from static-potential fits and dynamical-quark screening. Published scale/width conventions, finite-cutoff effects, operator normalization and tail-model uncertainty remain explicit. No condensate extraction, autonomous real-time feedback, universal stable-matter law, necessary parent or carrier threshold is admitted. Configurations, full covariance and complete lattice analysis are not independently replayed.",
-    "The QCD-to-nuclear bridge retains one heavy flavor-symmetric input point, source-specific threshold masses, finite-volume levels and conditional state assignments. Renormalized quark-mass sensitivity, physical-mass/continuum nuclear predictions and complete correlator/fit replay remain open. Current state-identification alternatives do not silently resolve the historical binding claim. No reviewed bulk density, compressibility, material response or astrophysical equation of state is supplied; these require separate many-body models and electromagnetic/electronic/environmental inputs."
+    "The QCD-to-nuclear bridge retains one heavy flavor-symmetric input point, source-specific threshold masses, finite-volume levels and conditional state assignments. Renormalized quark-mass sensitivity, physical-mass/continuum nuclear predictions and complete correlator/fit replay remain open. Current state-identification alternatives do not silently resolve the historical binding claim. No reviewed bulk density, compressibility, material response or astrophysical equation of state is supplied; these require separate many-body models and electromagnetic/electronic/environmental inputs.",
+    "The selected canonical single-field primordial model retains its supplied background, potential, quantum state and linear/slow-roll limits. Long-wave conservation and stochastic interpretation require their stated dominant-mode conditions. Planck TT,TE,EE+lowE supplies a conditional scalar-power inference through a shared-data response and base-LambdaCDM likelihood, not a direct quantum-origin measurement. Reheating/matching, alternative-origin model comparison, large-scale-structure data and complete numerical likelihood replay remain outside this finite application."
   ],
   "checkIds": []
 }

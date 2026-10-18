@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/20",
-      "title": "Quantum Fluctuations as Source of Primordial Cosmological Perturbations"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/21",
       "title": "Effective Theories and RG Flow"
     },

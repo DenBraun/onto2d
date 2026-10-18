@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 174 remain on the
+graph. Of the 249 original source cards, 173 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-75 cards is a source-review census, not a percentage of scientifically supported
+76 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Eight Level-1 cards remain pending.
+Seven Level-1 cards remain pending.
 
-The current graph contains 1288 records, 1127 connections, 1399 claims and 411 sources.
+The current graph contains 1301 records, 1148 connections, 1415 claims and 417 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -188,6 +188,16 @@ belong to the current claims.
    remain distinct. Bulk density, compressibility and astrophysical equations
    of state require separate many-body models and are not admitted here.
    No original parent weights, necessary maintenance or carrier minima follow.
+   Card 1.20 is qualified to a linear canonical single-field model and one
+   Planck 2018 TT,TE,EE+lowE application. Gauge-invariant curvature power,
+   conditional long-wave conservation and a restricted stochastic approximation
+   are separate from observed angular statistics, response and a primordial
+   amplitude/tilt posterior. The background, state, transfer model and priors
+   remain declared assumptions. Shared sky data are not independent replications;
+   the selected fit does not measure an initial vacuum or uniquely establish
+   quantum generation. Large-scale-structure evidence, later matching and full
+   likelihood replay require their own review. Original necessary parents,
+   weights, carrier minima and SOMA phase/type authority are excluded.
    Continue with independent structure-function tests, spectroscopy and the
    remaining dependency claims; a theory input to an interpretation does not
    establish a formation process. Wider field-region models and information
