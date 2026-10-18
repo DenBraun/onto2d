@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1330 records, 1223 connections, 1450 claims and 422 sources.
+The current graph contains 1331 records, 1228 connections, 1451 claims and 422 sources.
 The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -102,9 +102,47 @@ map and discriminating prediction; the Level-0 F12 finding remains unresolved.
 Original weights `0.30/0.25/0.20/0.25`, unit minima and SOMA property/phase labels
 do not establish physical thresholds. The original conceptual and theoretical
 placeholders supply no identifiable anisotropy publication. No experiment or
-universal vacuum-anisotropy law is admitted. Cards 1.33 and 1.34 remain pending;
-their speculative names cannot validate one another or establish polarization,
-excitation stability or transport.
+universal vacuum-anisotropy law is admitted. Polarization and directional
+excitation stability require separate definitions and evidence; their names
+alone establish neither anisotropy nor transport.
+
+## Photon polarization and response scope
+
+Card 1.33 uses one finite meaning of polarization: the transverse state of a
+photon in the specified free Maxwell model. It extends the existing photon
+state definitions rather than supplying another required anisotropic regime.
+[Tong's selected Coulomb-gauge construction](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S6.html)
+supplies a real orthonormal transverse basis and two equal free-mode frequencies.
+
+In the fixed-frame convention, write the normalized finite-energy one-photon
+wavepacket components as `f(p)=g(p)c(p)`, with `c_dagger c=1` on the nonzero
+support of `g`. For the local transverse basis matrix `E`, its polarization
+amplitude is `e=E c`. This amplitude is distinct from the mean electric field,
+which vanishes in a one-photon number state. A passive real `O` in `SO(2)` gives
+`E'=E O`, `c'=O^T c` and `f'=O^T f`; the mode operators transform consistently.
+The polarization amplitude and quantum state then stay the same. An active
+polarization comparison keeps the basis and apparatus fixed while varying
+relative coefficients. Zero momentum, a globally continuous real basis and
+normalizable sharp-momentum states are not assumed.
+
+Both transverse modes have frequency `|p|` in this free model. A prepared
+polarization or the momentum-dependent transverse plane supplies no intrinsic
+vacuum axis or measured birefringence. Induced material polarization and
+magnetization, a loop-polarization correction and the photon state are separate
+meanings. The existing effective-alpha inference concerns scalar momentum
+transfer, while optical radiometry retains its own illumination and collection
+geometry; neither is a polarization-resolved constitutive measurement here.
+
+A response claim needs a specified model, state, background, physical rotation,
+held-fixed controls and polarization-resolved observable. No calibrated
+analyzer, material-response tensor, response experiment or numerical replay is
+admitted. The original `0.50/0.25/0.15/0.10` parent weights, unit minima and
+SOMA classifications have no physical causal force. The scalar vacuum and
+scalar time-evolution definitions do not supply electromagnetic polarizability,
+and the Level-0 gradient still lacks its field-response map. The original
+placeholders supply no identifiable supporting anisotropic-response publication.
+Card 1.34 remains pending; polarization supplies no necessary stability,
+localization or transport mechanism.
 
 ## Gauge and matter sector decomposition
 

@@ -12324,6 +12324,15 @@
       ]
     },
     {
+      "nodeId": "phys:photon-polarization-scope",
+      "role": "definition",
+      "denotes": "A normalized transverse free-photon polarization convention with explicit limits on anisotropic response, causal parents and vacuum interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-photon-polarization-scope"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

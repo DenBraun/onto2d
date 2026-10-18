@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/33",
-      "title": "Field Polarization Anisotropy"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/34",
       "title": "Directional Stability Asymmetry of Excitations"
     },

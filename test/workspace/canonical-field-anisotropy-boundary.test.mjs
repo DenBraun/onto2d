@@ -117,8 +117,8 @@ test("the unresolved directional gradient and neighboring source cards cannot mu
   await rejects([
     ["an undefined gradient cannot become a field observable or prediction", (copy) =>
       dropLimit(copy, /Parent 0\.22 remains/)],
-    ["pending polarization and excitation cards cannot provide reciprocal support", (copy) =>
-      dropLimit(copy, /Source cards 1\.33 and 1\.34 remain/)],
+    ["polarization and excitation labels cannot provide reciprocal support", (copy) =>
+      dropLimit(copy, /Polarization response and directional excitation stability/)],
     ["the Fock vacuum dependency cannot be replaced by an unreviewed physical gradient", (copy) => {
       copy.graph.relations.find((record) => record.target === nodeId
         && record.source === "phys:free-field-vacuum").source = "l0:directional-gradient";
