@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1325 records, 1202 connections, 1444 claims and 422 sources.
+The current graph contains 1328 records, 1216 connections, 1448 claims and 422 sources.
 The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -68,6 +68,43 @@ states can have changing unequal-time correlations. Card 1.26 retains this
 scoped construction; interaction-amplitude vertices, renormalization-scale
 changes and numerical sampling do not supply a universal temporal process or
 maintenance cause.
+
+## Gauge and matter sector decomposition
+
+Card 1.29 defines an adopted Standard Model field decomposition, with the local
+algebra su(3)c + su(2)L + u(1)Y. The conventional product-group notation does
+not determine its global quotient. The selected
+[QCD](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf) and
+[electroweak](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf)
+passages specify the gauge fields, chiral matter representations and Higgs
+scalar. The declared hypercharge is Y = Y_PDG/2, so Q = T3 + Y. Fundamental
+color representations, weak doublets and singlets are representation labels;
+they are not counts of detector events or independently observable particles.
+The Higgs scalar is a boson without being a gauge vector mediator.
+
+The covariant derivative and Yukawa interactions couple the assigned fields.
+Commuting gauge factors do not isolate the interacting sectors. Chirality,
+generations, representations and couplings are supplied before choosing a
+single-doublet Higgs background. The photon/Z and charged W field combinations
+then use the declared coupling and background conventions. This change of
+description does not derive the original field content, a cosmological origin
+or a universal sequence of particle lineages. Repeated representations may mix
+subject to their couplings; a representation alone does not identify a species.
+
+The selected OPAL color-factor inference and historical UA1 W/Z mass inferences
+retain three existing contexts. OPAL ratios and converted factors share a fit,
+with the latter using T_R = 1/2. The W mass alternatives retain the assumed V-A
+structure and different recoil treatments; the Z mass retains unfinished
+calibration and omitted radiative corrections. These results constrain selected
+model-conditioned quantities; they do not uniquely reconstruct the full gauge
+group, measure all chiral representations or observe a sector-formation event.
+
+Generic QFT supplies a framework, and a Hamiltonian evolves a specified model.
+Neither provides a universal origin or maintenance law for its sectors.
+Original parent weights 0.6/0.4, unit minima and SOMA pattern/phase authority
+are excluded from active scientific semantics. The organizational description
+is a finite model convention; no dynamical attractor or persistence time is
+measured by calling it a stable pattern.
 
 ## Photon states and counting evidence
 

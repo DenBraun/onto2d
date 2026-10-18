@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/29",
-      "title": "Gauge Sector Differentiation"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/32",
       "title": "Effective Field Anisotropy"
     },

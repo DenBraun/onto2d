@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 170 remain on the
+graph. Of the 249 original source cards, 169 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-79 cards is a source-review census, not a percentage of scientifically supported
+80 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Four Level-1 cards remain pending.
+Three Level-1 cards remain pending.
 
-The current graph contains 1325 records, 1202 connections, 1444 claims and 422 sources.
+The current graph contains 1328 records, 1216 connections, 1448 claims and 422 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -92,6 +92,13 @@ belong to the current claims.
    Their original weights, minima and SOMA phase ordering are not established.
    Card 1.26 has explicit free-field time evolution with a separate finite
    oscillator witness; scale changes and numerical sampling are distinct.
+   Card 1.29 defines a chosen gauge/matter/Higgs decomposition with explicit
+   chiral representations, hypercharge normalization and cross-sector coupling.
+   Gauge indices and field components are distinct from physical excitations;
+   the selected Higgs background does not generate the original field content.
+   OPAL and historical UA1 inferences retain their conditional process scope.
+   Universal differentiation, autonomous sectors and parent/maintenance rules
+   are excluded.
    Card 1.23 separates Maxwell gauge/Fock definitions, normalized one-photon
    states, triggered optical counts and response-conditioned anticorrelation.
    The counting and inference records share data; separate same-source

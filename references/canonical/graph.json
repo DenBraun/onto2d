@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.18.5",
+    "version": "2026.10.18.6",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. Neutrino mass/flavor structure separates conditional splitting evidence from absolute masses and unknown mass generation. Closed-sector phase and mass-shift invariances do not establish a unique extension. No whole-graph scientific validation is claimed.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. Neutrino mass/flavor structure separates conditional splitting evidence from absolute masses and unknown mass generation. Closed-sector phase and mass-shift invariances do not establish a unique extension. Gauge sectors are a chosen coupled-model decomposition, not a measured formation event. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "7cf1d9510f60ee54be6b7d291a8c8f7cd5c467bfde16b146440fb5f6e2303c2b",
+      "sha256": "83b7809c7766a6b26ad192aa1ba9d096ae7e508d2ba166ca3377c8472f327899",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "b7258c0ecd07c81cc572d602368e0798b1b9c27a11eb4404f099ccf5465f73aa",
+      "sha256": "b197427b7f70969f839f87b4430863547608fac98eda11353419b6704842f27b",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -62175,6 +62175,257 @@
         "sno2002-flavor-fit",
         "opera2015-inference"
       ]
+    },
+    {
+      "id": "D-phys-standard-model-sector-decomposition",
+      "kind": "review-finding",
+      "statement": "Adopt the local gauge algebra su(3)c plus su(2)L plus u(1)Y, conventionally written SU(3)c x SU(2)L x U(1)Y, with Q=T3+Y. For each of three generations, the pre-Higgs-background chiral assignments are Q_L=(u_L,dprime_L)~(3,2,1/6), u_R~(3,1,2/3), d_R~(3,1,-1/3), L_L=(nu_L,l_L)~(1,2,-1/2) and l_R~(1,1,-1). The single complex Higgs scalar is phi~(1,2,1/2). Each tuple gives the color representation, weak representation and declared hypercharge: 3 means the color fundamental, 2 the weak doublet and 1 a singlet. The gauge potentials are G_mu^a (a=1,...,8), W_mu^i (i=1,2,3) and B_mu, with couplings gs, g and gprime. This is a chosen interacting field specification; the scalar is a boson without being a gauge vector mediator.",
+      "scope": "Declared minimal Standard Model sector and representation bookkeeping; no empirical selection or derivation of the field content.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "supports",
+          "note": "Supplies color representations and non-Abelian interactions within the existing reviewed extent; this is a field-definition premise, not a new observed population."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary",
+          "role": "supports",
+          "note": "Supplies chiral weak assignments, the PDG hypercharge convention, scalar doublet, tree-level field combinations and minimal neutrino boundary; the displayed Y is Y_PDG/2."
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions",
+          "role": "supports",
+          "note": "Supplies the adopted quark charges; the displayed hypercharges are derived in the explicitly declared normalization, not quoted from a representation table."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Here Y=Y_PDG/2: the reviewed electroweak chapter writes Q=T3+Y_PDG/2. The tuples use Y=Q-T3, the adopted quark charges +2/3 and -1/3, lepton charges 0 and -1, and weak doublet T3=+1/2,-1/2 or singlet T3=0. They state the converted convention, not a verbatim PDG tuple table. Right-handed entries denote right-handed fermion fields, not their left-handed charge conjugates; dprime is a weak-interaction basis component.",
+        "Choose D_mu=partial_mu+i*gs*t^a*G_mu^a+i*g*T^i*W_mu^i+i*gprime*Y*B_mu, with generators in the representation of the field and zero action for a trivial factor. The Q_L multiplet is charged under all three factors; the Higgs doublet has weak and hypercharge interactions, and Yukawa terms couple the declared multiplets. Commuting gauge factors do not make the full interacting sectors dynamically isolated or independently generated systems.",
+        "The 8+3+1 vector-potential species count follows from the chosen generator dimensions; it is neither a total physical-polarization count nor an observed particle population. Gauge redundancy, physical free excitations, unstable W/Z resonances, confined colored fields and detector candidates have different meanings. The four real components of phi do not add four gauge-vector species.",
+        "With a supplied single-doublet background in the usual unitary-gauge tree convention, thetaW=arctan(gprime/g), A_mu=B_mu*cos(thetaW)+W_mu^3*sin(thetaW), Z_mu=-B_mu*sin(thetaW)+W_mu^3*cos(thetaW), and W_mu^plus/minus=(W_mu^1 minus/plus i*W_mu^2)/sqrt(2). These coupling-dependent combinations and the supplied Higgs background reorganize the chosen electroweak fields; they do not derive the original gauge factors, representation content or a cosmological field-formation sequence. No all-orders mixing or mass fit is supplied.",
+        "This minimal renormalizable field content contains no nu_R. Its neutrino masslessness is the minimal-model boundary, while the separately specified neutrino mass/mixing alternatives change field, operator or symmetry assumptions. This card selects no Dirac/Majorana mechanism or ultraviolet origin.",
+        "The local algebra, representations, chirality, three-generation repetition and coupling parameters are adopted model premises. No global gauge-group quotient, unified group, derivation of those assignments, independent measurement of the gauge group, universal carrier minimum, arising/maintenance law or SOMA phase order follows. The selected review passages supply formal conventions, not a new primary acquisition, global fit or executable verification."
+      ]
+    },
+    {
+      "id": "D-phys-gauge-sector-interpretation-boundary",
+      "kind": "review-finding",
+      "statement": "Gauge-sector differentiation denotes a chosen decomposition of a specified quantum field model by its gauge, matter and scalar transformation roles. It is a model description, not an observed event that partitions one undifferentiated field into permanent particle lineages. Representation labels, redundant field components and physical excitations require separate interpretation; distinct sectors remain coupled by the declared interactions.",
+      "scope": "Interpretation and parent boundaries for source-card 1.29 within the supplied model; no observed sector-partition event or universal causal rule.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-introduction",
+          "locator": "Section 0: field-theory framework and interaction principles",
+          "role": "supports",
+          "note": "Supports the declared framework, gauge constraint or interaction boundary within the recorded reading extent; no new experimental result."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "Supports the declared framework, gauge constraint or interaction boundary within the recorded reading extent; no new experimental result."
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom",
+          "role": "supports",
+          "note": "Supports the declared framework, gauge constraint or interaction boundary within the recorded reading extent; no new experimental result."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "supports",
+          "note": "Supports the declared framework, gauge constraint or interaction boundary within the recorded reading extent; no new experimental result."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary",
+          "role": "supports",
+          "note": "Supports the declared framework, gauge constraint or interaction boundary within the recorded reading extent; no new experimental result."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A representation index labels transformation components, not a directly observed particle population. Gauge-equivalent potential configurations describe the same physical state under the stated boundary conditions. The free Maxwell example requires its Gauss constraint and gauge choice to identify two transverse physical polarizations; counting four potential components cannot replace that analysis. No universal excitation count follows from a representation dimension alone.",
+        "Bare quark color components are gauge covariant, not individually gauge-invariant observed particles. The reviewed QCD convention uses fundamental quarks and adjoint gluons; neither is observed as an isolated free colored particle. The component decomposition is not a confinement proof or a measurement of individual color states.",
+        "The Higgs field is a scalar doublet in the selected model, not a gauge-boson mediator. Matter, gauge and Higgs labels do not define mutually noninteracting subsystems: the reviewed QCD quark-gluon vertex and electroweak fermion currents and Higgs couplings connect those classifications. Inequivalent transformation assignments cannot be arbitrarily swapped at fixed action. Repeated representation copies admit field-basis mixing with corresponding coupling transformations; a shared gauge representation does not identify a unique physical species or universally forbid interchange.",
+        "The electroweak field assignments precede a chosen broken-background description. Electroweak symmetry breaking does not derive the adopted chiral representations, number of generations, gauge couplings or Yukawa parameters. Its unitary-gauge reorganization of scalar/vector components is not a separate creation of every quark, lepton, photon, gluon and weak-boson lineage; no thermal transition or universal temporal order is inferred.",
+        "The original parent 1.0 supplies a quantum-field framework that leaves fields, interactions and parameters to the chosen model. Parent 1.26 supplies explicitly free real scalar Heisenberg evolution; it does not construct gauge constraints, generate Standard Model field content or establish universal maintenance of a sector decomposition. These are descriptive model dependencies, not measured causal necessities.",
+        "Original weights 0.6 and 0.4, Nmin=Ncrit=1, necessary/enabling and arising/maintenance labels, direction/interaction codes, SOMA phase 0, pattern/type-role 2 and the established label do not establish quantitative thresholds or scientific evidence. A stable organizational pattern here means consistent adopted assignments, not a tested dynamical attractor or persistence time. No Level-0 construction, universal sector-formation rule or particle-lineage causal hierarchy is admitted.",
+        "The original generic collider/scattering placeholder is restricted to the separately named finite inference contexts in the gauge-sector evidence comparison. A selected color-factor or weak-channel fit constrains its declared model quantities; it does not observe a universal physical partition event, independently prove the complete gauge group, or validate every sector and interaction. No grand unification, exhaustive classification or unreviewed precision fit is supplied."
+      ]
+    },
+    {
+      "id": "C-phys-gauge-sector-evidence-boundary",
+      "kind": "review-finding",
+      "statement": "The selected OPAL multijet fit constrains conditional color-factor ratios, while the historical UA1 W and Z analyses infer channel-dependent resonance masses. They test selected predictions of their adopted strong and electroweak descriptions. This comparison preserves those distinct response and model assumptions; it does not infer the Standard Model gauge/matter decomposition as a unique physical formation event.",
+      "scope": "Literature comparison of the admitted OPAL 2001 color-factor inference and separate historical UA1 W/Z mass inferences, under a declared gauge-sector model.",
+      "status": "literature-synthesis",
+      "citations": [
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 11-12, Sections 3.4-3.5, Equation 7 and Table 2: correlated simultaneous fit",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 12-17, Section 4 and Tables 3-7: model variations and systematic correlations",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 18-19, Sections 5-6; page 29, Figure 4: color-factor results and conditional SU(3) comparison",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 19-22, Appendix, Equations 8-29: perturbative order, matching and color normalization",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-w-discovery",
+          "locator": "CERN-EP/83-13, Section 10 on printed page 10 (PDF page 12), Figure 10 (PDF page 33) and caption: transverse lower limit, V-A hypothesis, recoil and QCD-smearing choices, and conditional mass fits",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-w-discovery",
+          "locator": "CERN-EP/83-13, Sections 2-4 and 8-9, printed pages 1-4 and 7-9 (PDF pages 3-6 and 9-11): detector response, electron identification, transverse imbalance, event B and background evaluations",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-z-discovery",
+          "locator": "CERN-EP/83-73, Section 4 on printed page 6 (PDF page 10), Tables 1 and 3 on printed pages 17 and 19 (PDF pages 21 and 23), Figure 8 (PDF page 35): electron-pair mass summary and calibration conventions",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-z-discovery",
+          "locator": "CERN-EP/83-73, Section 7 on printed pages 9-10 (PDF pages 13-14), Table 3 footnote (a), Figures 8-9 (PDF pages 35-36), and note 4 on printed page 12 (PDF page 16): reported mass, unfinished calibration, omitted radiative corrections and distinct contemporary W comparison",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "OPAL fits correlated color-factor ratios within its specified non-Abelian perturbative family, with standard-QCD detector/hadronization correction models. Converted C_A,C_F and alpha_s additionally use T_R=1/2 and reuse the same fit. This is not a direct vertex image, independent T_R measurement, complete retuned competing-model exclusion or unique reconstruction of the full gauge group.",
+        "The historical W inference adopts the V-A hypothesis and its production/recoil model. Its chosen corrected-transverse-motion fit and full-QCD-smearing alternative share the selected 1982 sample and cannot be pooled. Its lower confidence limit is a separate inference. These channel-conditioned mass fits do not independently measure chirality, every weak coupling or the origin of the Higgs background.",
+        "The historical Z electron-pair mass retains unfinished electromagnetic calibration and omitted radiative corrections; correlated scale uncertainty is not a set of independent event errors. The April-May 1983 Z exposure and its contemporary W comparison are distinct from the 1982 W discovery sample. No intrinsic Z width, lifetime, modern pole mass or new W/weak-angle fit is admitted here.",
+        "These three owning inference contexts retain separate observables, selections, response and confidence assumptions. Within-campaign alternative fits, transformed parameters and displayed events are dependent outputs. No raw events, covariance, detector response, perturbative calculation, likelihood or joint model comparison is newly reproduced.",
+        "The selected color-sensitive and weak-channel results are compatible with specified predictions, not direct observation of a universal sector-differentiation event or a proof of every field representation, gauge-group global form, generation, coupling or particle lineage. Other species and decay studies retain their existing scopes; generic collider/scattering placeholders do not admit unreviewed data.",
+        "The gauge/matter/Higgs decomposition is a declared model input. A general QFT framework, a chosen Hamiltonian and electroweak symmetry breaking do not dynamically derive that content or establish the original necessary/enabling parents, 0.6/0.4 weights, Nmin=Ncrit=1, temporal arising/maintenance or SOMA pattern authority. Distinct gauge factors do not imply isolated physical sectors."
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
+      ]
+    },
+    {
+      "id": "M-phys-gauge-sector-evidence-boundary",
+      "kind": "method",
+      "statement": "Relate each existing fitted result to its own model, preparation and source conventions. Preserve OPAL correlations and normalization, W recoil/V-A assumptions and Z calibration/radiative limits. Use the declared model and interpretation boundary to restrict conclusions; do not pool dependent outputs, infer all representations or promote the order of definitions into a formation or maintenance process.",
+      "scope": "Literature comparison of the admitted OPAL 2001 color-factor inference and separate historical UA1 W/Z mass inferences, under a declared gauge-sector model.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 11-12, Sections 3.4-3.5, Equation 7 and Table 2: correlated simultaneous fit",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 12-17, Section 4 and Tables 3-7: model variations and systematic correlations",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 18-19, Sections 5-6; page 29, Figure 4: color-factor results and conditional SU(3) comparison",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 19-22, Appendix, Equations 8-29: perturbative order, matching and color normalization",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-w-discovery",
+          "locator": "CERN-EP/83-13, Section 10 on printed page 10 (PDF page 12), Figure 10 (PDF page 33) and caption: transverse lower limit, V-A hypothesis, recoil and QCD-smearing choices, and conditional mass fits",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-w-discovery",
+          "locator": "CERN-EP/83-13, Sections 2-4 and 8-9, printed pages 1-4 and 7-9 (PDF pages 3-6 and 9-11): detector response, electron identification, transverse imbalance, event B and background evaluations",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-z-discovery",
+          "locator": "CERN-EP/83-73, Section 4 on printed page 6 (PDF page 10), Tables 1 and 3 on printed pages 17 and 19 (PDF pages 21 and 23), Figure 8 (PDF page 35): electron-pair mass summary and calibration conventions",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "ua1-1983-z-discovery",
+          "locator": "CERN-EP/83-73, Section 7 on printed pages 9-10 (PDF pages 13-14), Table 3 footnote (a), Figures 8-9 (PDF pages 35-36), and note 4 on printed page 12 (PDF page 16): reported mass, unfinished calibration, omitted radiative corrections and distinct contemporary W comparison",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or universal gauge-architecture inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "OPAL fits correlated color-factor ratios within its specified non-Abelian perturbative family, with standard-QCD detector/hadronization correction models. Converted C_A,C_F and alpha_s additionally use T_R=1/2 and reuse the same fit. This is not a direct vertex image, independent T_R measurement, complete retuned competing-model exclusion or unique reconstruction of the full gauge group.",
+        "The historical W inference adopts the V-A hypothesis and its production/recoil model. Its chosen corrected-transverse-motion fit and full-QCD-smearing alternative share the selected 1982 sample and cannot be pooled. Its lower confidence limit is a separate inference. These channel-conditioned mass fits do not independently measure chirality, every weak coupling or the origin of the Higgs background.",
+        "The historical Z electron-pair mass retains unfinished electromagnetic calibration and omitted radiative corrections; correlated scale uncertainty is not a set of independent event errors. The April-May 1983 Z exposure and its contemporary W comparison are distinct from the 1982 W discovery sample. No intrinsic Z width, lifetime, modern pole mass or new W/weak-angle fit is admitted here.",
+        "These three owning inference contexts retain separate observables, selections, response and confidence assumptions. Within-campaign alternative fits, transformed parameters and displayed events are dependent outputs. No raw events, covariance, detector response, perturbative calculation, likelihood or joint model comparison is newly reproduced.",
+        "The selected color-sensitive and weak-channel results are compatible with specified predictions, not direct observation of a universal sector-differentiation event or a proof of every field representation, gauge-group global form, generation, coupling or particle lineage. Other species and decay studies retain their existing scopes; generic collider/scattering placeholders do not admit unreviewed data.",
+        "The gauge/matter/Higgs decomposition is a declared model input. A general QFT framework, a chosen Hamiltonian and electroweak symmetry breaking do not dynamically derive that content or establish the original necessary/enabling parents, 0.6/0.4 weights, Nmin=Ncrit=1, temporal arising/maintenance or SOMA pattern authority. Distinct gauge factors do not imply isolated physical sectors."
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
+      ]
     }
   ],
   "entities": [
@@ -98462,6 +98713,142 @@
         "Within a supplied common three-state mass-induced interpretation, distinct nonzero splitting scales motivate the formal identifiability consequence of at least two nonzero masses. This comparison does not independently establish all assumptions of that embedding or measure all three masses, an absolute scale, Dirac/Majorana nature, Majorana phases, sterile content or a unique mechanism. The formal common-shift invariance is not a new experimental bound.",
         "Generic solar, atmospheric, reactor and accelerator evidence placeholders are restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal parent/formation/maintenance claims remain excluded from this finite evidence comparison."
       ]
+    },
+    {
+      "id": "phys:standard-model-sector-decomposition",
+      "name": "Declared Standard Model sector decomposition",
+      "kind": "definition",
+      "description": "Adopt the local gauge algebra su(3)c plus su(2)L plus u(1)Y, conventionally written SU(3)c x SU(2)L x U(1)Y, with Q=T3+Y. For each of three generations, the pre-Higgs-background chiral assignments are Q_L=(u_L,dprime_L)~(3,2,1/6), u_R~(3,1,2/3), d_R~(3,1,-1/3), L_L=(nu_L,l_L)~(1,2,-1/2) and l_R~(1,1,-1). The single complex Higgs scalar is phi~(1,2,1/2). Each tuple gives the color representation, weak representation and declared hypercharge: 3 means the color fundamental, 2 the weak doublet and 1 a singlet. The gauge potentials are G_mu^a (a=1,...,8), W_mu^i (i=1,2,3) and B_mu, with couplings gs, g and gprime. This is a chosen interacting field specification; the scalar is a boson without being a gauge vector mediator.",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary"
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions"
+        }
+      ],
+      "openObligations": [
+        "Here Y=Y_PDG/2: the reviewed electroweak chapter writes Q=T3+Y_PDG/2. The tuples use Y=Q-T3, the adopted quark charges +2/3 and -1/3, lepton charges 0 and -1, and weak doublet T3=+1/2,-1/2 or singlet T3=0. They state the converted convention, not a verbatim PDG tuple table. Right-handed entries denote right-handed fermion fields, not their left-handed charge conjugates; dprime is a weak-interaction basis component.",
+        "Choose D_mu=partial_mu+i*gs*t^a*G_mu^a+i*g*T^i*W_mu^i+i*gprime*Y*B_mu, with generators in the representation of the field and zero action for a trivial factor. The Q_L multiplet is charged under all three factors; the Higgs doublet has weak and hypercharge interactions, and Yukawa terms couple the declared multiplets. Commuting gauge factors do not make the full interacting sectors dynamically isolated or independently generated systems.",
+        "The 8+3+1 vector-potential species count follows from the chosen generator dimensions; it is neither a total physical-polarization count nor an observed particle population. Gauge redundancy, physical free excitations, unstable W/Z resonances, confined colored fields and detector candidates have different meanings. The four real components of phi do not add four gauge-vector species.",
+        "With a supplied single-doublet background in the usual unitary-gauge tree convention, thetaW=arctan(gprime/g), A_mu=B_mu*cos(thetaW)+W_mu^3*sin(thetaW), Z_mu=-B_mu*sin(thetaW)+W_mu^3*cos(thetaW), and W_mu^plus/minus=(W_mu^1 minus/plus i*W_mu^2)/sqrt(2). These coupling-dependent combinations and the supplied Higgs background reorganize the chosen electroweak fields; they do not derive the original gauge factors, representation content or a cosmological field-formation sequence. No all-orders mixing or mass fit is supplied.",
+        "This minimal renormalizable field content contains no nu_R. Its neutrino masslessness is the minimal-model boundary, while the separately specified neutrino mass/mixing alternatives change field, operator or symmetry assumptions. This card selects no Dirac/Majorana mechanism or ultraviolet origin.",
+        "The local algebra, representations, chirality, three-generation repetition and coupling parameters are adopted model premises. No global gauge-group quotient, unified group, derivation of those assignments, independent measurement of the gauge group, universal carrier minimum, arising/maintenance law or SOMA phase order follows. The selected review passages supply formal conventions, not a new primary acquisition, global fit or executable verification."
+      ]
+    },
+    {
+      "id": "phys:gauge-sector-interpretation-boundary",
+      "name": "Gauge-sector interpretation boundary",
+      "kind": "definition",
+      "description": "Gauge-sector differentiation denotes a chosen decomposition of a specified quantum field model by its gauge, matter and scalar transformation roles. It is a model description, not an observed event that partitions one undifferentiated field into permanent particle lineages. Representation labels, redundant field components and physical excitations require separate interpretation; distinct sectors remain coupled by the declared interactions.",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-introduction",
+          "locator": "Section 0: field-theory framework and interaction principles"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        },
+        {
+          "sourceId": "tong-qft-free-maxwell",
+          "locator": "Sections 6.1 and 6.1.1: source-free Maxwell action, gauge equivalence, Gauss constraint and two radiation-gauge degrees of freedom"
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary"
+        }
+      ],
+      "openObligations": [
+        "A representation index labels transformation components, not a directly observed particle population. Gauge-equivalent potential configurations describe the same physical state under the stated boundary conditions. The free Maxwell example requires its Gauss constraint and gauge choice to identify two transverse physical polarizations; counting four potential components cannot replace that analysis. No universal excitation count follows from a representation dimension alone.",
+        "Bare quark color components are gauge covariant, not individually gauge-invariant observed particles. The reviewed QCD convention uses fundamental quarks and adjoint gluons; neither is observed as an isolated free colored particle. The component decomposition is not a confinement proof or a measurement of individual color states.",
+        "The Higgs field is a scalar doublet in the selected model, not a gauge-boson mediator. Matter, gauge and Higgs labels do not define mutually noninteracting subsystems: the reviewed QCD quark-gluon vertex and electroweak fermion currents and Higgs couplings connect those classifications. Inequivalent transformation assignments cannot be arbitrarily swapped at fixed action. Repeated representation copies admit field-basis mixing with corresponding coupling transformations; a shared gauge representation does not identify a unique physical species or universally forbid interchange.",
+        "The electroweak field assignments precede a chosen broken-background description. Electroweak symmetry breaking does not derive the adopted chiral representations, number of generations, gauge couplings or Yukawa parameters. Its unitary-gauge reorganization of scalar/vector components is not a separate creation of every quark, lepton, photon, gluon and weak-boson lineage; no thermal transition or universal temporal order is inferred.",
+        "The original parent 1.0 supplies a quantum-field framework that leaves fields, interactions and parameters to the chosen model. Parent 1.26 supplies explicitly free real scalar Heisenberg evolution; it does not construct gauge constraints, generate Standard Model field content or establish universal maintenance of a sector decomposition. These are descriptive model dependencies, not measured causal necessities.",
+        "Original weights 0.6 and 0.4, Nmin=Ncrit=1, necessary/enabling and arising/maintenance labels, direction/interaction codes, SOMA phase 0, pattern/type-role 2 and the established label do not establish quantitative thresholds or scientific evidence. A stable organizational pattern here means consistent adopted assignments, not a tested dynamical attractor or persistence time. No Level-0 construction, universal sector-formation rule or particle-lineage causal hierarchy is admitted.",
+        "The original generic collider/scattering placeholder is restricted to the separately named finite inference contexts in the gauge-sector evidence comparison. A selected color-factor or weak-channel fit constrains its declared model quantities; it does not observe a universal physical partition event, independently prove the complete gauge group, or validate every sector and interaction. No grand unification, exhaustive classification or unreviewed precision fit is supplied."
+      ]
+    },
+    {
+      "id": "phys:gauge-sector-evidence-boundary",
+      "name": "Scoped gauge-sector evidence comparison",
+      "kind": "scoped-process",
+      "description": "The selected OPAL multijet fit constrains conditional color-factor ratios, while the historical UA1 W and Z analyses infer channel-dependent resonance masses. They test selected predictions of their adopted strong and electroweak descriptions. This comparison preserves those distinct response and model assumptions; it does not infer the Standard Model gauge/matter decomposition as a unique physical formation event.",
+      "claimIds": [
+        "C-phys-gauge-sector-evidence-boundary"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 11-12, Sections 3.4-3.5, Equation 7 and Table 2: correlated simultaneous fit"
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 12-17, Section 4 and Tables 3-7: model variations and systematic correlations"
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 18-19, Sections 5-6; page 29, Figure 4: color-factor results and conditional SU(3) comparison"
+        },
+        {
+          "sourceId": "opal2001-colour-factors",
+          "locator": "Author v1, pages 19-22, Appendix, Equations 8-29: perturbative order, matching and color normalization"
+        },
+        {
+          "sourceId": "ua1-1983-w-discovery",
+          "locator": "CERN-EP/83-13, Section 10 on printed page 10 (PDF page 12), Figure 10 (PDF page 33) and caption: transverse lower limit, V-A hypothesis, recoil and QCD-smearing choices, and conditional mass fits"
+        },
+        {
+          "sourceId": "ua1-1983-w-discovery",
+          "locator": "CERN-EP/83-13, Sections 2-4 and 8-9, printed pages 1-4 and 7-9 (PDF pages 3-6 and 9-11): detector response, electron identification, transverse imbalance, event B and background evaluations"
+        },
+        {
+          "sourceId": "ua1-1983-z-discovery",
+          "locator": "CERN-EP/83-73, Section 4 on printed page 6 (PDF page 10), Tables 1 and 3 on printed pages 17 and 19 (PDF pages 21 and 23), Figure 8 (PDF page 35): electron-pair mass summary and calibration conventions"
+        },
+        {
+          "sourceId": "ua1-1983-z-discovery",
+          "locator": "CERN-EP/83-73, Section 7 on printed pages 9-10 (PDF pages 13-14), Table 3 footnote (a), Figures 8-9 (PDF pages 35-36), and note 4 on printed page 12 (PDF page 16): reported mass, unfinished calibration, omitted radiative corrections and distinct contemporary W comparison"
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, pages 1-3: fields, electroweak interactions and minimal neutrino-mass boundary"
+        }
+      ],
+      "openObligations": [
+        "OPAL fits correlated color-factor ratios within its specified non-Abelian perturbative family, with standard-QCD detector/hadronization correction models. Converted C_A,C_F and alpha_s additionally use T_R=1/2 and reuse the same fit. This is not a direct vertex image, independent T_R measurement, complete retuned competing-model exclusion or unique reconstruction of the full gauge group.",
+        "The historical W inference adopts the V-A hypothesis and its production/recoil model. Its chosen corrected-transverse-motion fit and full-QCD-smearing alternative share the selected 1982 sample and cannot be pooled. Its lower confidence limit is a separate inference. These channel-conditioned mass fits do not independently measure chirality, every weak coupling or the origin of the Higgs background.",
+        "The historical Z electron-pair mass retains unfinished electromagnetic calibration and omitted radiative corrections; correlated scale uncertainty is not a set of independent event errors. The April-May 1983 Z exposure and its contemporary W comparison are distinct from the 1982 W discovery sample. No intrinsic Z width, lifetime, modern pole mass or new W/weak-angle fit is admitted here.",
+        "These three owning inference contexts retain separate observables, selections, response and confidence assumptions. Within-campaign alternative fits, transformed parameters and displayed events are dependent outputs. No raw events, covariance, detector response, perturbative calculation, likelihood or joint model comparison is newly reproduced.",
+        "The selected color-sensitive and weak-channel results are compatible with specified predictions, not direct observation of a universal sector-differentiation event or a proof of every field representation, gauge-group global form, generation, coupling or particle lineage. Other species and decay studies retain their existing scopes; generic collider/scattering placeholders do not admit unreviewed data.",
+        "The gauge/matter/Higgs decomposition is a declared model input. A general QFT framework, a chosen Hamiltonian and electroweak symmetry breaking do not dynamically derive that content or establish the original necessary/enabling parents, 0.6/0.4 weights, Nmin=Ncrit=1, temporal arising/maintenance or SOMA pattern authority. Distinct gauge factors do not imply isolated physical sectors."
+      ]
     }
   ],
   "rules": [
@@ -115261,6 +115648,185 @@
         "superk1998-oscillation-fit",
         "sno2002-flavor-fit",
         "opera2015-inference"
+      ]
+    },
+    {
+      "id": "physics:standard-model-standard-model-sector-decomposition",
+      "source": "phys:standard-model",
+      "target": "phys:standard-model-sector-decomposition",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The specified Standard Model field content is made explicit as a chosen local gauge and representation decomposition; the link supplies no derivation or independent test of that choice.",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ]
+    },
+    {
+      "id": "physics:qcd-standard-model-sector-decomposition",
+      "source": "phys:qcd",
+      "target": "phys:standard-model-sector-decomposition",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The reviewed QCD field definition supplies the color representation and shared quark-gluon interaction conventions, not a dynamically isolated strong subsystem or an observed generator count.",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ]
+    },
+    {
+      "id": "physics:weak-gauge-currents-standard-model-sector-decomposition",
+      "source": "phys:weak-gauge-currents",
+      "target": "phys:standard-model-sector-decomposition",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The weak current definition supplies the chiral electroweak representation context; a formal representation assignment is not a separate measurement of chirality or generation number.",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ]
+    },
+    {
+      "id": "physics:higgs-doublet-background-standard-model-sector-decomposition",
+      "source": "phys:higgs-doublet-background",
+      "target": "phys:standard-model-sector-decomposition",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The separately declared Higgs doublet and background fix the tree-level electroweak field-combination context; choosing that background does not generate the original gauge algebra or multiplet content.",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ]
+    },
+    {
+      "id": "physics:quantum-field-framework-gauge-sector-interpretation-boundary",
+      "source": "phys:quantum-field-framework",
+      "target": "phys:gauge-sector-interpretation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The framework requires a chosen field model; this descriptive input is not a measured necessary formation cause.",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "id": "physics:free-field-time-evolution-gauge-sector-interpretation-boundary",
+      "source": "phys:free-field-time-evolution",
+      "target": "phys:gauge-sector-interpretation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The free real scalar law illustrates evolution within a supplied model; it cannot establish gauge-sector formation or maintenance.",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "id": "physics:standard-model-sector-decomposition-gauge-sector-interpretation-boundary",
+      "source": "phys:standard-model-sector-decomposition",
+      "target": "phys:gauge-sector-interpretation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The supplied field and representation decomposition fixes the model under discussion, not a physical partition event or universal particle genealogy.",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "id": "physics:electromagnetic-photon-field-gauge-sector-interpretation-boundary",
+      "source": "phys:electromagnetic-photon-field",
+      "target": "phys:gauge-sector-interpretation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The Maxwell gauge constraint distinguishes redundant components from physical polarizations in its stated free-field regime only.",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "id": "physics:weinberg-electroweak-background-gauge-sector-interpretation-boundary",
+      "source": "phys:weinberg-electroweak-background",
+      "target": "phys:gauge-sector-interpretation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The chosen electroweak background reorganizes fields within a supplied theory; it does not derive its chiral matter content or parameters.",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "id": "physics:standard-model-sector-decomposition-gauge-sector-evidence-boundary",
+      "source": "phys:standard-model-sector-decomposition",
+      "target": "phys:gauge-sector-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This declared model boundary or selected inference constrains only its stated content; the descriptive comparison is not a unique gauge-architecture reconstruction or universal sector-formation mechanism.",
+      "claimIds": [
+        "M-phys-gauge-sector-evidence-boundary"
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
+      ]
+    },
+    {
+      "id": "physics:gauge-sector-interpretation-boundary-gauge-sector-evidence-boundary",
+      "source": "phys:gauge-sector-interpretation-boundary",
+      "target": "phys:gauge-sector-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This declared model boundary or selected inference constrains only its stated content; the descriptive comparison is not a unique gauge-architecture reconstruction or universal sector-formation mechanism.",
+      "claimIds": [
+        "M-phys-gauge-sector-evidence-boundary"
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
+      ]
+    },
+    {
+      "id": "physics:opal2001-color-factors-gauge-sector-evidence-boundary",
+      "source": "phys:opal2001-color-factors",
+      "target": "phys:gauge-sector-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This declared model boundary or selected inference constrains only its stated content; the descriptive comparison is not a unique gauge-architecture reconstruction or universal sector-formation mechanism.",
+      "claimIds": [
+        "M-phys-gauge-sector-evidence-boundary"
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
+      ]
+    },
+    {
+      "id": "physics:ua1-1983-w-mass-fit-gauge-sector-evidence-boundary",
+      "source": "phys:ua1-1983-w-mass-fit",
+      "target": "phys:gauge-sector-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This declared model boundary or selected inference constrains only its stated content; the descriptive comparison is not a unique gauge-architecture reconstruction or universal sector-formation mechanism.",
+      "claimIds": [
+        "M-phys-gauge-sector-evidence-boundary"
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
+      ]
+    },
+    {
+      "id": "physics:ua1-1983-z-electron-mass-gauge-sector-evidence-boundary",
+      "source": "phys:ua1-1983-z-electron-mass",
+      "target": "phys:gauge-sector-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This declared model boundary or selected inference constrains only its stated content; the descriptive comparison is not a unique gauge-architecture reconstruction or universal sector-formation mechanism.",
+      "claimIds": [
+        "M-phys-gauge-sector-evidence-boundary"
+      ],
+      "contextIds": [
+        "opal2001-color-inference",
+        "ua1-1983-w-inference",
+        "ua1-1983-z-inference"
       ]
     }
   ]

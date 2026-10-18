@@ -1,56 +1,56 @@
 # Current canonical validation
 
-Current graph: `2026.10.18.5`, checked locally on 18 October 2026.
+Current graph: `2026.10.18.6`, checked locally on 18 October 2026.
 
-The source contains 1325 records, 1202 connections, 1444 claims and 422 sources.
-The output has 1022 descriptive and 180 functional connections. Its physics
-review retains 188 study contexts and 142 comparisons. All 187 bound input
+The source contains 1328 records, 1216 connections, 1448 claims and 422 sources.
+The output has 1036 descriptive and 180 functional connections. Its physics
+review retains 188 study contexts and 142 comparisons. All 190 bound input
 hashes and 95 local source hashes match current bytes.
 
 - `npm test` passes all 787 ordinary tests with no failures, cancellations or
   skips. Canonical source tests belong to the separate research suite.
-- All 120 distinct focused canonical tests pass, including 16 new mass/mixing
-  groups. Coverage includes PMNS rotation and phase conventions, restricted
-  rephasing invariance, minimal-model versus mass-extension assumptions,
-  common mass-squared shifts, unequal-splitting and nonnegative-mass conditions,
-  one-zero-mass counterexamples, source-specific historical inferences and
-  exclusion of unsupported absolute-mass or mechanism claims. Coordinated
-  claim/display/source changes cannot silently broaden the reviewed scope.
+- All 135 distinct focused canonical tests pass, including 18 new gauge-sector
+  groups. Coverage includes chiral representations, hypercharge normalization,
+  scalar/gauge distinctions, shared interactions, conditional electroweak field
+  combinations, gauge redundancy and physical counting, framework/evolution
+  boundaries, source-specific collider inference and unsupported formation
+  claims. Coordinated claim/display/source changes cannot silently broaden the
+  reviewed scope.
 - `npm run model:causal-emergence:verify` passes exact source compilation and
   release verification. Existing bounded checks retain their original scope;
-  no new global fit, numerical mass spectrum or experimental likelihood is replayed.
-- `npm run model-studio:data:verify` validates all 96 browser files against the
-  exact release. The registry has 35 entries; Model Studio uses module revision
-  `20261018.6` and the current graph.
+  no new gauge construction, global fit or experimental likelihood is replayed.
+- `npm run model-studio:data:verify` validates all 97 browser files against the
+  exact release. The registry has 36 entries; Model Studio uses module revision
+  `20261018.7` and the current graph.
 - `npm run build` passes all repository checks, including 217 versioned
   contracts and 188 Markdown files.
 - Original catalogues and existing frozen releases remain unchanged. Only
-  `references/level-1.json#/25` leaves the pending source list. All prior
+  `references/level-1.json#/29` leaves the pending source list. All prior
   scientific entities, claims, relations, rules, study contexts and comparisons
   retain their existing contents and scopes.
 
 The focused command used locally was:
 
 ```sh
-node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,release-serialization,neutrino,solar-neutrino,atmospheric-neutrino,accelerator-neutrino,matter-neutrino,oscillation-formal,neutrino-mass-formal,neutrino-mass-identifiability,neutrino-mass-scope}.test.mjs
+node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,release-serialization,quark-formal,lepton-formal,gluon-formal,gluon-color,weak-boson,higgs-coupling,photon-formal,field-dynamics,gauge-sector-model,gauge-sector-boundary,gauge-sector-scope}.test.mjs
 ```
 
-The production browse loader starts with two HTTP requests totaling 1084186
-bytes. All five new records load exact details from three chunks; the physics
-review is fetched separately. All 1325 full node details match the release
-through the lazy loader. Cache reuse, cancellation, closed sessions, identity
-mismatch, graph/detail tamper rejection and clean retry pass. The current full-pack
-HTTP fallback loads all 11 split files within default limits; a smaller budget
-is rejected. The previous release retains its exact identity through HTTP
-fallback. All 1202 edges resolve their 1269 claim references, and all 1325
-nodes retain their 1433 expanded rationales. These were Fetch integration
-probes, not rendered-browser timing or visual checks.
+The production browse loader starts with two HTTP requests totaling 1092622
+bytes. All three new records load exact details from two chunks; the physics
+review is fetched separately. All 1328 full node details match the release
+through the lazy loader and actual local HTTP transport. Cache reuse,
+cancellation, closed sessions, identity mismatch, graph/detail tamper rejection
+and clean retry pass. The current full-pack HTTP fallback loads all 11 split
+files within default limits; a smaller budget is rejected. The previous release
+retains its exact identity through HTTP fallback. All 1216 edges resolve their
+1283 claim references, and all 1328 nodes retain their 1436 expanded rationales.
+These were Fetch integration probes, not rendered-browser timing or visual checks.
 
-The initial graph JSON is 1083704 bytes before compression. The compact bundle
-is 23805333 bytes and the release totals 47740603 bytes, within the unchanged
-32 MiB file and 64 MiB total budgets. Remaining allowances are 9749099 bytes
-for the bundle and 19368261 bytes for the total release. The largest semantic
-split is 16660086 bytes, leaving 117130 bytes within the browser fallback's
+The initial graph JSON is 1092140 bytes before compression. The compact bundle
+is 23914086 bytes and the release totals 47958672 bytes, within the unchanged
+32 MiB file and 64 MiB total budgets. Remaining allowances are 9640346 bytes
+for the bundle and 19150192 bytes for the total release. The largest semantic
+split is 16734301 bytes, leaving 42915 bytes within the browser fallback's
 16 MiB file limit. Transport budgets and public schemas are unchanged.
 
 Validation uses macOS, Node.js 24.19.0 and Python 3.9.6. Remote CI requires its
@@ -59,36 +59,37 @@ own run after publication. Unrelated research replays were not run.
 Current artifact hashes:
 
 ```text
-rootHash: sha256:321b3404da656a84bafafab8c3f198faaf2bdcc42e0e39e3dcdf245b66e54387
-manifestHash: sha256:6119173346b3b62330a4f54b6494d2138cdc5b299ba2336829cebe5851eed392
-registryHash: sha256:ff576d26917b2b9e2e6739b44fd685c699dcdcae6c63d10306383f0363a3192f
-browseIndexHash: sha256:a4b40c11a8bd976b7bb973c95a7e648a9a85a7436bffa461aa659028731501d9
+rootHash: sha256:3bef311776441b855633a60a435bb6607388e669903770154910be56a73d8156
+manifestHash: sha256:6170147ccc9c76d9c0632577f3f730ffd2d8090e93d9567f6cdfe2e8d6631398
+registryHash: sha256:39e3ac4e454375c943c7c6917ed00c670ce6e68b5103e676f179aa15fa07e318
+browseIndexHash: sha256:0eca8e8d7c03ccced3c0f37e13702fcfc39db58bcf0a87e55acff37360afdeda
 ```
 
-Scientific review remains partial: 170 [source cards](../../../references/canonical/pending-review.json)
-are unfinished, including 4 at Level 1. The other 79 cards have substantive
+Scientific review remains partial: 169 [source cards](../../../references/canonical/pending-review.json)
+are unfinished, including 3 at Level 1. The other 80 cards have substantive
 assertions supported, qualified or excluded; this census does not measure
 scientific validity or independent reproduction. The Level-0 bridge remains
 unresolved. Qualified neighboring cards retain their existing scopes.
 
-The selected PDG mass/mixing sections were read with their actual matrix and
-mass-term passages visually checked. The closed unitary three-active model is
-supplied, not a universal exclusion of extra states or nonunitary effective
-submatrices. Ordinary oscillation phase cancellation does not make Majorana
-phases unphysical in every process. Minimal renormalizable field content and
-possible massive-neutrino extensions are different formal assumptions.
+The selected PDG QCD/electroweak and quark-charge passages were read, with the
+electroweak formulas visually checked. The decomposition declares a local gauge
+algebra, chiral representations and Higgs scalar. Its hypercharge normalization
+is explicitly converted from the reviewed convention. A specified background
+reorganizes electroweak fields without deriving gauge factors, representations,
+chirality, generations or numerical couplings. Generator dimensions do not
+count physical polarizations, persistent particles or detector candidates.
 
-A common mass-squared shift is an invariance of the leading coherent
-ultrarelativistic vacuum probability, with nonnegative masses and approximation
-validity retained. The at-least-two-massive-states implication additionally
-requires unequal nonzero differences in a common three-state interpretation.
-It permits one zero mass and does not measure an absolute scale or ordering.
+Gauge symmetry identifies redundant descriptions under stated constraints;
+representation roles do not imply autonomous interacting sectors. Repeated
+representations can mix under their couplings. Generic QFT and a chosen free
+Hamiltonian do not dynamically select or maintain the Standard Model partition.
+No universal organizational attractor, formation order or carrier minimum follows.
 
-The five selected outcomes retain four existing historical inference contexts.
-KamLAND and Super-Kamiokande effective two-flavor fits do not become exact
-modern eigenpair measurements or a new global likelihood. SNO's joint active
-flavor result is not a mass-splitting measurement. OPERA appearance and its
-full-mixing compatibility interval share an acquisition and analysis context.
-No new confidence coverage, Dirac/Majorana determination, unique mass mechanism,
-sterile census or quantitative astrophysical/cosmological constraint follows.
-Passing software checks does not independently validate these interpretations.
+The selected OPAL color-factor inference and historical UA1 W/Z mass inferences
+retain three existing contexts. OPAL ratios and converted factors are dependent;
+the W alternatives retain V-A and recoil assumptions; the Z summary retains
+unfinished calibration and omitted radiation. These results do not uniquely
+reconstruct the full gauge group or independently measure every chiral
+assignment. No new acquisition, likelihood, covariance, perturbative calculation
+or joint theory exclusion is reproduced. Passing software checks does not
+independently validate these interpretations.

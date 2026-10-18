@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.5`: 1325 records, 1202 connections,
-1444 claims and 422 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.6`: 1328 records, 1216 connections,
+1448 claims and 422 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -36,6 +36,13 @@ Electron-proton scattering and hydrogen evidence retain their specified systems;
 lepton classification does not imply absence of hadronic scattering or establish
 atom formation. Existing precision and neutrino results retain their shared-data,
 radiative and flavor/mass-basis limitations.
+The gauge/matter/Higgs decomposition is an adopted interacting model, with
+explicit representations and hypercharge normalization. Generator indices,
+field components and physical excitations retain different counting meanings.
+The chosen Higgs background reorganizes electroweak fields without deriving
+chirality, generations or numerical couplings. Selected OPAL and historical
+UA1 inferences constrain their declared processes; they do not uniquely
+reconstruct every gauge sector or establish a formation/maintenance sequence.
 Gluon self-coupling terms are explicit formal definitions. SLD spin-sensitive
 shapes, OPAL color-factor fits and H1 DIS scaling evidence distinguish selected
 readouts, corrections and conditional interpretations. Their model choices,

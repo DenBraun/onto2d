@@ -12279,6 +12279,33 @@
       ]
     },
     {
+      "nodeId": "phys:standard-model-sector-decomposition",
+      "role": "definition",
+      "denotes": "The adopted local Standard Model gauge and chiral representation decomposition, with declared hypercharge normalization and coupled-sector boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ]
+    },
+    {
+      "nodeId": "phys:gauge-sector-interpretation-boundary",
+      "role": "definition",
+      "denotes": "A model interpretation boundary separating sector labels and gauge descriptions from physical excitation counts, finite evidence and universal formation claims.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:gauge-sector-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A comparison of selected color-sensitive and weak-channel evidence, not a new experiment, joint fit or observed origin of gauge sectors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-gauge-sector-evidence-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",
