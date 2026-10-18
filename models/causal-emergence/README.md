@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18`: 1278 records, 1102 connections,
-1385 claims and 408 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.1`: 1288 records, 1127 connections,
+1399 claims and 411 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -47,6 +47,9 @@ scale. Inferred transverse widths retain tail-model uncertainty and their
 width convention. Local profiles, static potentials and screened energy levels
 are distinct; they supply no vacuum-condensate extraction, autonomous real-time
 feedback or universal stability/maintenance rule.
+The nuclear bridge separates fixed-input heavy-flavor two-nucleon energy
+shifts, conditional binding assignments and current state-identification
+limits. It supplies no quark-mass derivative or bulk equation of state.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 an all-channel confinement theorem, temporal emergence or carrier-count minima.

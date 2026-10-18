@@ -11856,6 +11856,96 @@
       ]
     },
     {
+      "nodeId": "phys:nuclear-lattice-energy-shift",
+      "role": "definition",
+      "denotes": "A rest-frame finite-volume energy difference and sign convention relative to the same-ensemble two-baryon threshold.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-nuclear-lattice-energy-shift"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-nuclear-ensemble-context",
+      "role": "model-context",
+      "denotes": "The fixed action, flavor-degenerate bare masses, three finite volumes, common sampling and adopted physical scale.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-ensemble-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-nuclear-extraction-context",
+      "role": "model-context",
+      "denotes": "The restricted two-nucleon operators, correlated energy fits and shared single-baryon threshold.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-extraction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-two-nucleon-shifts",
+      "role": "scoped-phenomenon",
+      "denotes": "Published rest-frame fitted two-nucleon deficits on each finite lattice, before the separate infinite-volume binding interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-beane2013-two-nucleon-shifts"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-nuclear-binding-context",
+      "role": "model-context",
+      "denotes": "The original finite-volume and moving-system reasoning used to interpret fitted shifts as a two-nucleon binding estimate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-binding-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-two-nucleon-binding",
+      "role": "scoped-phenomenon",
+      "denotes": "The historical, source-reported two-nucleon binding interpretation at one unphysical mass point, with its finite-state and extrapolation assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-beane2013-two-nucleon-binding"
+      ]
+    },
+    {
+      "nodeId": "phys:detmold2026-state-identification-context",
+      "role": "model-context",
+      "denotes": "The source-reported 2026 lattice calculation and its explicit state-identification assumptions, not a local numerical replay.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-detmold2026-state-identification-context"
+      ]
+    },
+    {
+      "nodeId": "phys:two-nucleon-state-identification-review",
+      "role": "scoped-phenomenon",
+      "denotes": "A literature synthesis of unresolved heavy-mass bound-state identification; neither proof of binding nor proof of its absence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-two-nucleon-state-identification-review"
+      ]
+    },
+    {
+      "nodeId": "phys:qcd-nuclear-energy-bridge",
+      "role": "definition",
+      "denotes": "A declared conditional map from specified QCD inputs to a nuclear energy observable; no universal bulk-property effect.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ]
+    },
+    {
+      "nodeId": "phys:qcd-nuclear-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison preserving distinct theories, inputs and state-identification limits; no bulk-material prediction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-qcd-nuclear-evidence-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

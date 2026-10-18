@@ -9,8 +9,8 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1278 records, 1102 connections, 1385 claims and 408 sources.
-The physics review contains 179 study contexts and 141 comparisons.
+The current graph contains 1288 records, 1127 connections, 1399 claims and 411 sources.
+The physics review contains 183 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -1225,6 +1225,46 @@ Local calculations identify their executable sources and use
 `analytically-checked` claims. Their study records carry no journal metadata.
 Definitions, published measurements and bounded calculations retain distinct
 evidence roles.
+
+## Specified QCD-to-nuclear-energy bridge
+
+Card 1.19 is qualified to declared QCD inputs and a two-nucleon energy
+observable. Existing calibrated hadron spectra and convention-dependent
+isospin components retain their own theories and inputs. Measured deuteron
+binding and mass-adjustment results are separate evidence; they are not
+outputs of the new heavy-quark calculation.
+
+[Beane et al.](https://arxiv.org/abs/1206.5219v2) use three degenerate flavors
+near the strange mass, without QED, on three volumes at one lattice spacing.
+Flavor symmetry is distinct from QCD's color gauge symmetry. The bare mass
+parameter is not a renormalized MSbar mass. Conversion to MeV adopts an
+Upsilon-spectrum scale whose upstream determination is not reproduced.
+
+At rest, the finite-volume observable is DeltaE=E_NN-2*M_B from the compatible
+ensemble. Its negative sign does not alone establish binding in infinite
+volume. Operator choices, Euclidean-time fits and the shared baryon threshold
+remain attached to the reported shifts. The authors' largest-volume rest/boost
+averages give conditional binding estimates of 19.5 and 15.9 MeV for the
+deuteron and dineutron channels, with separate statistical, fit and scale
+uncertainties. These are not measured physical nuclear binding energies.
+
+The paired [2026 methodological preprints](https://arxiv.org/abs/2601.22272v1)
+and [summary](https://arxiv.org/abs/2601.22273v1) compare spectral estimators and
+two-sided constraints under explicit assumptions. They reuse a subset of the
+earlier gauge fields with new correlators and operators. The two reports are
+one analysis, not independent replications. Unresolved states and finite-volume
+interpretation remain material limits; this graph does not settle whether the
+heavy-mass two-nucleon ground states are bound. The sources remain preprints
+with archival identifiers and no invented journal metadata.
+
+A fixed quark-mass point does not determine a response derivative. Controlled
+sensitivity requires an input variation and a declaration of what is held
+fixed, including scale and calibration. Bulk density, compressibility and
+astrophysical matter require a reviewed many-body model, composition and state
+variables. No such prediction or direct quark-to-material-property edge is
+admitted. A later material model must also state its electromagnetic, electronic
+and environmental assumptions. Original parent weights, arising/maintenance
+necessity, unit carrier minima and SOMA phase/type authority are excluded.
 
 ## Pion decay channels
 

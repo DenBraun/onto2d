@@ -4,6 +4,13 @@
   "entries": [
     {
       "modelId": "causal-emergence",
+      "version": "2026.10.18.1",
+      "rootHash": "sha256:a2217dbd9e44ad8a341b7afe6ae0dd5e95ffc583de22a8c7ccfe04df71ecaa09",
+      "manifestHash": "sha256:6d79293a879bf60b9a09aab7b5480046547661d0a34cc09053221b278884a469",
+      "packPath": "causal-emergence/releases/2026.10.18.1/"
+    },
+    {
+      "modelId": "causal-emergence",
       "version": "2026.10.18",
       "rootHash": "sha256:1d989ba05625df0beba88dfafd88c29a95e0c60ac49efedfc0d844bd0a57144c",
       "manifestHash": "sha256:13a0d03f9119caf8d28eb32512b6ff2ab65809e4ee024ac3dda1c94989a1edcb",

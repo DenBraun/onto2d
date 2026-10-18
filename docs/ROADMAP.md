@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 175 remain on the
+graph. Of the 249 original source cards, 174 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-74 cards is a source-review census, not a percentage of scientifically supported
+75 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Nine Level-1 cards remain pending.
+Eight Level-1 cards remain pending.
 
-The current graph contains 1278 records, 1102 connections, 1385 claims and 408 sources.
+The current graph contains 1288 records, 1127 connections, 1399 claims and 411 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -179,6 +179,15 @@ belong to the current claims.
    condensate, real-time feedback, universal stable-matter law, necessary parent,
    carrier minimum or SOMA phase/type authority follows. No full lattice replay
    or physical-SU(3) continuum profile is claimed.
+   Card 1.19 is qualified to specified QCD-to-nuclear-energy calculations.
+   A three-flavor heavy-mass lattice study separates ensemble/scale inputs,
+   finite-volume two-nucleon shifts and conditional binding assignments.
+   The paired 2026 state-identification preprints preserve spectral assumptions,
+   a shared gauge-field subset and an unresolved bound/unbound verdict.
+   Fixed-input calculations, quark-mass sensitivity and measured nuclear masses
+   remain distinct. Bulk density, compressibility and astrophysical equations
+   of state require separate many-body models and are not admitted here.
+   No original parent weights, necessary maintenance or carrier minima follow.
    Continue with independent structure-function tests, spectroscopy and the
    remaining dependency claims; a theory input to an interpretation does not
    establish a formation process. Wider field-region models and information

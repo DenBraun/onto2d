@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.18",
+    "version": "2026.10.18.1",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "8c3b3bff744bfa9b30fe3684c89dbe8339e6cf20b013b8353c04005d86a20aa2",
+      "sha256": "a6c18022ca7287b4602bbdfd08c908739cff62e35253a92c1d21b7f69d990760",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "17fa0d740e264c01c7252687a92e75dbf7481b4802d072e02c74780030c94c4b",
+      "sha256": "fb9398b0d329320825b98c3fbab11e9295e90edf05040f2865dfe188ab2d7378",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -10861,6 +10861,95 @@
           "Author v1 printed pages 47-53 (PDF 48-54), Sections 5.3-5.4 and selected summary, Equations 63-73 and Figures 26-29: sum-rule inputs, tail sensitivity and width inference"
         ],
         "limit": "Read the listed scientific passages of the 66-page extended author report hep-lat/9409005v1 (7 September 1994), published in Physical Review D 51, 5165-5198 (1995). Visually checked PDF pages 4-5, 10-12, 17, 30, 36, 47 and 49-53. The publisher text, appendices and upstream scale/beta-function determinations are not fully reviewed. The selected author version has conflicting scale expressions and names an FWHM formula a half width; those discrepancies are retained. No configurations, covariance fits, tail extrapolations or continuum result are independently reproduced."
+      }
+    },
+    {
+      "id": "beane2013-nuclei",
+      "kind": "research-publication",
+      "title": "Light Nuclei and Hypernuclei from Quantum Chromodynamics in the Limit of SU(3) Flavor Symmetry",
+      "authors": [
+        "S. R. Beane",
+        "E. Chang",
+        "S. D. Cohen",
+        "W. Detmold",
+        "H. W. Lin",
+        "T. C. Luu",
+        "K. Orginos",
+        "A. Parreño",
+        "M. J. Savage",
+        "A. Walker-Loud"
+      ],
+      "year": 2013,
+      "doi": "10.1103/PhysRevD.87.034506",
+      "url": "https://arxiv.org/abs/1206.5219v2",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "full-primary-author-article",
+        "locators": [
+          "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+          "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "Author v2 pages 32-35, Appendix B, Equations B1-B2 and references 30-32: noninteracting cluster estimates and unpublished scale/tuning provenance"
+        ],
+        "limit": "Read all 35 pages of author v2, revised 20 November 2012; visually checked pages 4, 6, 10-11, 13, 15-16, 23, 29 and 32-33. The regenerated PDF title date is 27 November 2024, not a new research version. APS metadata identifies publication on 11 February 2013 in Physical Review D 87, 034506; selected accepted-manuscript metadata and two-body passages were also checked, not the complete publisher text. Admission is restricted to the deuteron/dineutron channels. Higher-body claims, including the inconsistent 3He per-baryon prose, are not imported. Configurations, correlators, covariance, scale setting and fits are not independently reproduced; this is the original conditional result, not a current consensus determination."
+      }
+    },
+    {
+      "id": "detmold2026-state-bounds",
+      "kind": "research-publication",
+      "title": "Excited-state uncertainties in lattice-QCD calculations of multi-hadron systems",
+      "authors": [
+        "William Detmold",
+        "Anthony V. Grebe",
+        "Daniel C. Hackett",
+        "Marc Illa",
+        "Robert J. Perry",
+        "Phiala E. Shanahan",
+        "Michael L. Wagman"
+      ],
+      "year": 2026,
+      "doi": "10.48550/arXiv.2601.22272",
+      "url": "https://arxiv.org/abs/2601.22272v1",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-primary-preprint-passages",
+        "locators": [
+          "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption",
+          "Author v1 pages 22-25, Sections VI-VII; page 58, reference 10: ensemble, operator choices, reused gauge fields and spectral-gap inputs",
+          "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference",
+          "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions",
+          "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation"
+        ],
+        "limit": "Read the listed passages of the 62-page arXiv:2601.22272v1 preprint submitted 29 January 2026; visually checked pages 22, 37, 44, 50 and 53-54. Its archival DOI is not a journal-publication claim. Metadata checked 18 October 2026 shows this version and no journal reference. The complete bound derivations, solvable-field-theory tests, all operator-by-operator tables and appendices are not reviewed. No gauge configurations, correlators, covariance, gap construction or phase analysis are independently reproduced. The companion 2601.22273v1 summarizes the same analysis."
+      }
+    },
+    {
+      "id": "detmold2026-state-summary",
+      "kind": "research-publication",
+      "title": "Excited-state uncertainties in lattice-QCD calculations of hadron masses and scattering phase shifts",
+      "authors": [
+        "William Detmold",
+        "Anthony V. Grebe",
+        "Daniel C. Hackett",
+        "Marc Illa",
+        "Robert J. Perry",
+        "Phiala E. Shanahan",
+        "Michael L. Wagman"
+      ],
+      "year": 2026,
+      "doi": "10.48550/arXiv.2601.22273",
+      "url": "https://arxiv.org/abs/2601.22273v1",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-primary-preprint-passages",
+        "locators": [
+          "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions"
+        ],
+        "limit": "Read the five-page scientific main text of the 12-page arXiv:2601.22273v1 preprint submitted 29 January 2026 and visually checked pages 4-5. Its archival DOI is not a journal-publication claim; metadata checked 18 October 2026 shows no journal reference. References and the near-physical-mass appendix are not independently reviewed. This is a companion account of 2601.22272v1, not independent sampling or replication. No numerical replay or physical-mass conclusion is admitted."
       }
     }
   ],
@@ -58869,6 +58958,808 @@
         "bali1995-field-extraction",
         "bali1995-profile-inference"
       ]
+    },
+    {
+      "id": "D-phys-nuclear-lattice-energy-shift",
+      "kind": "review-finding",
+      "statement": "At total momentum P=0 on a declared lattice, define DeltaE_X(L)=E_X(L)-2M_B(L), where E_X is the extracted energy in a specified two-nucleon channel and M_B is the rest energy of the degenerate octet baryon from the same theory and ensemble. Define the threshold deficit B_L=-DeltaE_X(L). The dimensionless lattice result b*DeltaE is converted to energy using the adopted lattice spacing; b is a length, not a baryon count.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "supports",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "supports",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A negative finite-volume shift is an energy difference relative to the noninteracting two-baryon threshold, not an absolute nuclear mass, a binding proof, a lifetime or a bulk-matter equation of state. Ground-state isolation and infinite-volume interpretation are additional conditions.",
+        "The subtraction uses shared gauge configurations and baryon inputs; threshold and channel uncertainties cannot be propagated as independent measurements by default. Moving-frame energies require their own threshold/dispersion treatment and are not defined by substituting E_X(P,L) into this rest-frame formula."
+      ]
+    },
+    {
+      "id": "M-phys-beane2013-nuclear-ensemble-context",
+      "kind": "method",
+      "statement": "Use nf=3 degenerate dynamical quarks in SU(3) color gauge theory without electromagnetism, with tadpole-improved Luscher-Weisz gauge action and isotropic clover fermions. Table I specifies beta=6.1 and bare b*m_q=-0.2450 on 24^3 x 48, 32^3 x 48 and 48^3 x 64 lattices. The reported configuration counts are 3822, 3050 and 1905, with mean source counts per configuration 72, 48 and 54. The adopted Upsilon-spectrum spacing is b=0.1453(16) fm. The degenerate pseudoscalar mass is approximately 806 MeV, with common quark masses described as tuned near the physical strange mass.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 32-35, Appendix B, Equations B1-B2 and references 30-32: noninteracting cluster estimates and unpublished scale/tuning provenance",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Flavor SU(3) degeneracy is distinct from the SU(3) color gauge symmetry. The up/down masses are unphysical; exact isospin and omitted QED prevent direct identification with measured physical nuclei.",
+        "The negative quoted mass is the chosen bare Wilson/clover parameter, not a negative physical quark mass or an MSbar value at a specified renormalization scale. No such renormalized mass or detailed tuning reconstruction is provided here.",
+        "The Upsilon scale is adopted from reference 32, a private communication; action tuning in reference 30 was in preparation. Their determinations are not independently reviewed. All channels share scale uncertainty; source locations on one configuration are not independent gauge ensembles. No physical-mass or continuum extrapolation is performed."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-ensemble"
+      ]
+    },
+    {
+      "id": "M-phys-beane2013-nuclear-extraction-context",
+      "kind": "method",
+      "statement": "Construct Gaussian-smeared quark sources and point/smeared sinks, baryon blocks projected to sink momentum, and multibaryon operators localized at one source point with upper Dirac components. The deuteron channel has I=0, J^P=1+ and flavor irrep 10bar; the dineutron channel has I=1, J^P=0+ and irrep 27. Fit effective-energy plateaus by correlated constant fits and correlators by exponential fits, using jackknife or bootstrap covariance. Vary accepted fit intervals to estimate fitting systematics. The finite-volume octet-baryon energies supply the shared threshold subtraction.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These are restricted interpolating operators and finite Euclidean-time fits, not direct detector energies or a complete variational determination of every state. SP/SS choices and plateau stability do not independently prove asymptotic ground-state isolation.",
+        "The same correlators, configurations, threshold and scale are reused across energy shifts and the later binding interpretation. The original fit windows, full covariance, overlap amplitudes and boosted-subtraction implementation are not independently reconstructed.",
+        "The reported errors separate statistical, fit-interval systematic and scale contributions. They do not constitute a complete physical-mass, continuum, operator-completeness or excited-state error budget."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-extraction"
+      ]
+    },
+    {
+      "id": "C-phys-beane2013-two-nucleon-shifts",
+      "kind": "review-finding",
+      "statement": "For P=0 and the volumes 24^3 x 48, 32^3 x 48 and 48^3 x 64 in that order, Tables V-VII report B_L=-DeltaE_L of 25.4(2.6)(4.7)(0.3), 22.5(2.3)(2.6)(0.2) and 19.7(3.1)(4.1)(0.2) MeV in the deuteron channel, and 17.8(1.7)(2.8)(0.2), 15.1(2.0)(2.0)(0.2) and 13.1(2.8)(4.3)(0.2) MeV in the dineutron channel. Parentheses give statistical, fitting systematic and scale errors respectively.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "supports",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "These positive deficits denote reported negative rest-frame energy shifts; they are not three independent physical binding measurements. The two channels share ensemble, baryon-threshold and scale inputs.",
+        "The channel labels specify quantum numbers in this heavy flavor-symmetric theory. They do not establish a physical bound dineutron, measured deuteron binding or exact asymptotic levels. No raw-correlator or covariance replay is claimed."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-extraction"
+      ]
+    },
+    {
+      "id": "M-phys-beane2013-nuclear-binding-context",
+      "kind": "method",
+      "statement": "Compare rest and moving systems across volumes, using the separately fitted single-baryon dispersion as a control. For an assumed two-body bound state at sufficiently large L, Equation 5 gives kappa(L)=kappa_0+6Z_psi^2 exp(-kappa_0 L)/L+..., with nonrelativistic kappa_0 approximately sqrt(M_B B). The authors find no statistically resolved volume dependence between the two largest boxes and adopt the average of the largest-volume rest and two boosted determinations as their infinite-volume estimate; they do not obtain a refined extrapolation by fitting Equation 5.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The bound-state finite-volume form presupposes the relevant pole and ground-state identification; lack of resolved volume dependence alone is not a proof of binding. A finite operator set and Euclidean-time range can leave unresolved excited-state or scattering contributions.",
+        "The moving-system determinations share configurations and thresholds with the rest result. Single-hadron dispersion is a control, not a complete moving-frame multibaryon or spectral replay. Neither independent averaging nor an unpublished covariance model is supplied by the graph.",
+        "This is the original conditional interpretation, not a consensus determination of the two-nucleon ground state. The later methodological/variational review remains a separate comparison and cannot be treated as an additional fit input to the 2013 analysis."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "C-phys-beane2013-two-nucleon-binding",
+      "kind": "review-finding",
+      "statement": "Table VII reports the original largest-volume rest/boost averages B_d=19.5(3.6)(3.1)(0.2) MeV and B_nn=15.9(2.7)(2.7)(0.2) MeV as estimates of infinite-volume binding at this flavor-symmetric parameter point. Their reported kappa_0 L values on the largest box are 6.3 and 5.7. These are the authors' conditional bound-state assignments, distinct from the finite-volume rest-frame shifts.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "supports",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "role": "supports",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The three uncertainties are statistical, fitting systematic and lattice-scale contributions, not a complete error budget. The original analysis and averaging covariance are not reproduced; common thresholds and scale prohibit treating channels or boosts as independent confirmation.",
+        "These values do not establish current consensus, physical deuteron or dineutron binding, a continuum limit, quark-mass derivatives, nuclear lifetimes, saturation density or compressibility. One heavy-mass point cannot determine a universal quark-to-bulk response.",
+        "Higher-body and hypernuclear channels are outside this admission. The original paper itself identifies unresolved cluster-state ambiguities for several such channels; their stronger summary language is not transferred to these records."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "M-phys-beane2013-two-nucleon-shifts",
+      "kind": "method",
+      "statement": "The finite deficits require the declared action/masses/volumes and common scale, the specified two-nucleon operators and fits, and the rest-frame subtraction from twice the same-ensemble octet-baryon energy.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A reported negative energy shift is not by itself an independently verified infinite-volume bound state."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-extraction"
+      ]
+    },
+    {
+      "id": "M-phys-beane2013-two-nucleon-binding",
+      "kind": "method",
+      "statement": "The original binding estimates reuse the finite-volume deficits and additional moving-system fits, the shared baryon threshold and dispersion control, the common scale, and the authors' conditional finite-volume interpretation.",
+      "scope": "Reported two-nucleon energies in the Beane nf=3 flavor-SU(3)-symmetric, no-QED calculation at one heavy-quark parameter point and one lattice spacing.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "role": "method",
+          "note": "Supports the specified computational input, energy convention or original conditional inference."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Preserve source-reported status, shared uncertainties and unresolved spectral/extrapolation assumptions; no later result is a retrospective numerical input."
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "M-phys-detmold2026-state-identification-context",
+      "kind": "method",
+      "statement": "The reported calculation uses a 24^3 x 48 lattice, a=0.145 fm, three degenerate clover flavors and a tree-level-improved Luscher-Weisz gauge action at pion mass approximately 800 MeV. It analyzes 16,368 configurations from 17 streams, bins 50 saved configurations for residual autocorrelation, and computes approximately 2.12 x 10^7 sparse-source propagators. A subset of gauge fields was also used in Beane2013. Zero-total-momentum dibaryon and local hexaquark operators probe I=1 A1+ and I=0 T1+ sectors. The source compares GEVP, symmetric/block Lanczos and asymmetric-correlator analyses of these related correlators.",
+      "scope": "Two-nucleon state identification in the reported single-spacing, single-volume heavy-mass SU(3)-flavor calculation; literature review, not a new simulation.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 22-25, Sections VI-VII; page 58, reference 10: ensemble, operator choices, reused gauge fields and spectral-gap inputs",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The 2026 calculation is not a new independent repeat of all three 2013 volumes. Shared gauge fields, action and scale coexist with changed propagator sampling, operators and analysis. Configurations and propagators are not independent experimental events.",
+        "Treating finite-time energy estimators as eigenvalues requires the stated N-state-saturation assumption. Symmetric variational upper bounds do not exclude missed lower levels. Residual bounds require a Hermitian transfer matrix and delimit a window containing some eigenvalue, not necessarily the ground state; for this improved action the source restricts Hermiticity to its low-energy sector, E much less than 1/a.",
+        "Tighter gap bounds require the stated no-missing-states threshold and negligible thermal effects. Estimates based on noninteracting NN level counts below NDelta or DeltaDelta thresholds can fail if extra low states are present. Source errors and bound widths are distinct; one-sided upper bounds cannot supply two-sided phase errors.",
+        "The selected phase comparison truncates to the lowest S wave, neglects lattice artifacts and does not determine a complete coupled-channel amplitude. Raw correlators, residual/gap calculations, operator completeness, continuum/infinite-volume extrapolations and physical-mass nuclear binding are not reproduced here."
+      ],
+      "contextIds": [
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "C-phys-two-nucleon-state-identification-review",
+      "kind": "review-finding",
+      "statement": "The paired 2026 preprints leave the nature of the lowest I=1 and I=0 two-nucleon states at these heavy-mass action parameters unresolved without additional spectral assumptions. GEVP and Lanczos agree for the same correlator data, while different operator choices under N-state saturation yield inconsistent energy estimates; the wider two-sided bounds remain compatible. The authors find no positive I=1 bound-state evidence from those bounds, and the I=0 level is too near the bound-state threshold to settle its nature from this one volume. This does not exclude a missed bound state or validate the earlier binding assignment as consensus.",
+      "scope": "Two-nucleon state identification in the reported single-spacing, single-volume heavy-mass SU(3)-flavor calculation; literature review, not a new simulation.",
+      "status": "publication-supported",
+      "citations": [
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption",
+          "role": "supports",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference",
+          "role": "supports",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions",
+          "role": "supports",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation",
+          "role": "supports",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-summary",
+          "locator": "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions",
+          "role": "supports",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "This record synthesizes the reported primary numerical analysis and its methodological conclusion. It is neither a new measured energy nor an independent simulation; the two preprints describe the same work and are not pooled confirmations.",
+        "A negative finite-volume energy shift relative to two nucleons is not by itself an infinite-volume bound-state determination. Residual/gap intervals can contain an eigenvalue without establishing its ground-state index or excluding additional levels outside the interval. The source tables distinguish statistical confidence from assumption-dependent spectral windows.",
+        "The asymmetric-correlator diagnostics show changing left/right state overlaps over accessible Euclidean times. They question the eigenstate interpretation of apparently stable estimators without proving that every such energy estimate is wrong or that a bound state cannot exist.",
+        "The reported synthetic small-gap examples use chosen spectra, overlaps and a noise model related to the lattice data. Their statistically similar bound/scattering outputs illustrate an inverse-problem ambiguity; they are not additional QCD measurements or a unique reconstruction of the true spectrum.",
+        "Neither the single-volume 2026 analysis nor the conditional 2013 interpretation establishes continuum physical-mass nuclear binding, all nuclei, atomic binding, a real-time formation rate or permanent matter stability."
+      ],
+      "contextIds": [
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "M-phys-two-nucleon-state-identification-review",
+      "kind": "method",
+      "statement": "Interpret the historical Beane2013 two-nucleon binding assignment alongside the later spectral-assumption analysis. The historical outcome is the comparison target, not a numerical input to the later correlator estimators. The later context supplies its own ensemble, operator and inference limits; the paired summary supplies no independent evidence.",
+      "scope": "Two-nucleon state identification in the reported single-spacing, single-volume heavy-mass SU(3)-flavor calculation; literature review, not a new simulation.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 22-25, Sections VI-VII; page 58, reference 10: ensemble, operator choices, reused gauge fields and spectral-gap inputs",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        },
+        {
+          "sourceId": "detmold2026-state-summary",
+          "locator": "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions",
+          "role": "method",
+          "note": "Supports only the stated source-specific spectral analysis or interpretation boundary; no local numerical replay."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The descriptive links preserve different calculations and their shared-subset provenance. They establish neither a causal influence between publications nor numerical agreement, a refit of the 2013 dataset or a resolved bound/unbound verdict."
+      ],
+      "contextIds": [
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "D-phys-qcd-nuclear-energy-bridge",
+      "kind": "review-finding",
+      "statement": "A QCD-to-nuclear-energy calculation declares its color gauge theory, quark-mass parameters, regulator, scale calibration, interpolating operators and energy-extraction procedure. Binding compares a specified nuclear channel with its compatible hadronic threshold, after state and volume inference. A calculation at one input point is a conditional result, not a measured derivative with respect to a renormalized quark mass or a complete prediction for bulk matter.",
+      "scope": "Operational scope of the finite nuclear bridge admitted for source card 1.19; levels are display groups.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 1-6: two-plus-one-flavor QCD, three physical inputs, ensembles, extrapolation and spectrum interpretation",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A renormalized quark mass needs a prescription and scale. The new flavor-symmetric calculation specifies one action-dependent bare mass; it does not determine an MSbar mass or its response derivative. Flavor SU(3), with degenerate up, down and strange masses, is distinct from the SU(3) color gauge symmetry of QCD.",
+        "Controlled quark-mass sensitivity requires a defined input variation or derivative and a declaration of what is held fixed, including the gauge coupling or QCD scale, cutoff, strange/sea masses and unit calibration. A comparison with physical nuclear data alone is not such a controlled calculation. An input hadron mass used to set the scale cannot simultaneously count as an independent prediction.",
+        "Hadron masses, nuclear binding differences, bulk density, compressibility and astrophysical matter are different observables. No reviewed many-body equation of state, composition, thermodynamic state, pressure response or astrophysical inference is supplied here. Direct quark-to-density/compressibility edges and a demonstrated uninterrupted chain to macroscopic materials are excluded, without asserting that the underlying physical influence is zero.",
+        "A later material model must declare how it treats electromagnetic, electronic and environmental inputs as well as its nuclear interactions and calibration. Neither a QCD-only two-nucleon spectrum nor a hadron mass table specifies atomic bonding, material phase or mechanical response.",
+        "The original 1.1 and 1.11 parents supply field/parameter and nucleon concepts, not experimentally established arising or maintenance interventions. Their equal 0.5 weights, necessary-parent labels, interaction/causal-direction codes and N_min=N_crit=1 are excluded as scientific results. Color, flavor, baryon number and sample count are distinct quantities, not universal carrier minima.",
+        "The original SOMA phase 2, effect TypeRole 4 and well-supported label do not establish a universal temporal stage or empirical cross-scale law. Generic nuclear-model, observation and astrophysical evidence placeholders identify no preparation or discriminator and supply no additional evidence. Qualified neighboring cards keep their existing scopes."
+      ]
+    },
+    {
+      "id": "C-phys-qcd-nuclear-evidence-boundary",
+      "kind": "review-finding",
+      "statement": "The calibrated hadron spectra, convention-dependent isospin components, measured-input deuteron energetics and the new nonphysical-mass two-nucleon calculation address different stages of nuclear-energy reasoning. The latter reports finite-volume shifts and a conditional bound-state interpretation at one flavor-symmetric input point. State-identification limitations remain explicit. This finite evidence does not supply a controlled quark-mass sensitivity, ordinary-matter density, compressibility or an astrophysical equation of state.",
+      "scope": "Literature synthesis of specified computational results and existing measured-input nuclear energetics; no pooled experiment or new numerical replay.",
+      "status": "literature-synthesis",
+      "citations": [
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 11-13 and 21, Figure S4: finite-volume corrections, elastic resonance model and omitted rho/Delta lightest point",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 4 and 9-11, Figures 2-3 and Table 1: total mass splittings, convention-dependent components and experiment-calibrated ratio",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 33-35, Sections 10.1-10.4 and Equations S37-S40: physical inputs, QCD/QED convention and Coleman-Glashow fit",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 32 and 35-37, Sections 9 and 11-12, pages 51-52 and 57, Figures S11-S12 and Table S5: time windows, AIC weighting, bootstrap and analysis variants",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 8, 15, 18-27 and 42-46, Figure 1, Sections 3-5 and Equation S26: finite-volume prescriptions, point-particle controls and composite-particle corrections",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "rau2020",
+          "locator": "Author manuscript pages 4-7, Table 2 and Methods: local and joint mass adjustments, correlations and remaining mass-combination tension",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "fink2020",
+          "locator": "Accepted manuscript article pages 1-5, Figures 1-2 and Tables I-III: ion preparation, vibrational selection, rotational correction, frequency ratio and derived masses",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "rau2020",
+          "locator": "Author manuscript page 7, Methods: ILL lattice rescaling, capture wavelength, recoil and binding-energy conversion",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "kessler2017",
+          "locator": "Pages 7-9 and 22-23, Section 5, Tables 4-5 and 16: two ILL calibration paths, shared standards, sample variability and final adopted spacing",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Pages 1-2, Sections 49.1 and 49.3, Equation 49.9: on-shell four-momentum, positive energy and c=1 convention",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "codata2018-constants",
+          "locator": "Page 2, Electron section: adopted 2018 electron mass in u and its standard uncertainty",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "codata2018-constants",
+          "locator": "Page 6, atomic mass constant entries and footnote: adopted 2018 u*c^2 in MeV and relative-mass convention",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "nuclear-energetics-verifier",
+          "locator": "verify(): bare-state Q, exact shared-binding cancellation, rounded neutron comparison, adjusted mass-pair covariance and display-rounding sign check",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-summary",
+          "locator": "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions",
+          "role": "supports",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Dürr uses physical hadronic calibration and extrapolation in two-plus-one-flavor QCD. Borsanyi adds QED and convention-dependent isospin components. Their hadron results do not determine a nuclear binding observable, an exhaustive visible-matter mass decomposition or a unique contribution of quark masses.",
+        "The newly reviewed nuclear calculation uses three degenerate heavy flavors without QED, one spacing and its own scale and threshold masses. These are different from the physical masses in the Rau adjustment and capture analysis; numerical inputs and uncertainties cannot be transferred between the theories as though they were one ensemble.",
+        "Published finite-volume energy shifts and their binding interpretation reuse the same correlators, baryon thresholds and scale. They are not independent evidence. A plateau or a subthreshold finite-volume level is not by itself a proven infinite-volume bound state; the reviewed methodological alternatives keep their stated assumptions.",
+        "Rau joint masses and capture binding reuse specified calibration and adjustment inputs. The beta-threshold witness uses those published masses and excludes one declared final state; it does not derive binding from quark masses, measure a nuclear lifetime or independently corroborate the shared binding input.",
+        "No complete lattice or experimental replay, renormalized mass scan, physical-light-mass nuclear extrapolation, continuum nuclear calculation or common cross-study covariance is supplied. The comparison is not a pooled significance, an all-channel stability law, a universal formation/maintenance rule or a validated quarks-to-macroscopic-matter chain."
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "M-phys-qcd-nuclear-evidence-boundary",
+      "kind": "method",
+      "statement": "Compare each result only with its declared theory, mass regime, operators, threshold, calibration and uncertainty. Keep fixed-input spectra separate from controlled sensitivity calculations, measured nuclear masses and later many-body material models. Do not pool shared observations or promote a conditional level assignment to a universal formation, maintenance or bulk-property law.",
+      "scope": "Literature synthesis of specified computational results and existing measured-input nuclear energetics; no pooled experiment or new numerical replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 11-13 and 21, Figure S4: finite-volume corrections, elastic resonance model and omitted rho/Delta lightest point",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 4 and 9-11, Figures 2-3 and Table 1: total mass splittings, convention-dependent components and experiment-calibrated ratio",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 33-35, Sections 10.1-10.4 and Equations S37-S40: physical inputs, QCD/QED convention and Coleman-Glashow fit",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 32 and 35-37, Sections 9 and 11-12, pages 51-52 and 57, Figures S11-S12 and Table S5: time windows, AIC weighting, bootstrap and analysis variants",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 8, 15, 18-27 and 42-46, Figure 1, Sections 3-5 and Equation S26: finite-volume prescriptions, point-particle controls and composite-particle corrections",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "rau2020",
+          "locator": "Author manuscript pages 4-7, Table 2 and Methods: local and joint mass adjustments, correlations and remaining mass-combination tension",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "fink2020",
+          "locator": "Accepted manuscript article pages 1-5, Figures 1-2 and Tables I-III: ion preparation, vibrational selection, rotational correction, frequency ratio and derived masses",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "rau2020",
+          "locator": "Author manuscript page 7, Methods: ILL lattice rescaling, capture wavelength, recoil and binding-energy conversion",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "kessler2017",
+          "locator": "Pages 7-9 and 22-23, Section 5, Tables 4-5 and 16: two ILL calibration paths, shared standards, sample variability and final adopted spacing",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Pages 1-2, Sections 49.1 and 49.3, Equation 49.9: on-shell four-momentum, positive energy and c=1 convention",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "codata2018-constants",
+          "locator": "Page 2, Electron section: adopted 2018 electron mass in u and its standard uncertainty",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "codata2018-constants",
+          "locator": "Page 6, atomic mass constant entries and footnote: adopted 2018 u*c^2 in MeV and relative-mass convention",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "nuclear-energetics-verifier",
+          "locator": "verify(): bare-state Q, exact shared-binding cancellation, rounded neutron comparison, adjusted mass-pair covariance and display-rounding sign check",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        },
+        {
+          "sourceId": "detmold2026-state-summary",
+          "locator": "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions",
+          "role": "method",
+          "note": "Supports the stated formal scope or source-specific inference; no new simulation, experimental acquisition or cross-scale material prediction is claimed."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Dürr uses physical hadronic calibration and extrapolation in two-plus-one-flavor QCD. Borsanyi adds QED and convention-dependent isospin components. Their hadron results do not determine a nuclear binding observable, an exhaustive visible-matter mass decomposition or a unique contribution of quark masses.",
+        "The newly reviewed nuclear calculation uses three degenerate heavy flavors without QED, one spacing and its own scale and threshold masses. These are different from the physical masses in the Rau adjustment and capture analysis; numerical inputs and uncertainties cannot be transferred between the theories as though they were one ensemble.",
+        "Published finite-volume energy shifts and their binding interpretation reuse the same correlators, baryon thresholds and scale. They are not independent evidence. A plateau or a subthreshold finite-volume level is not by itself a proven infinite-volume bound state; the reviewed methodological alternatives keep their stated assumptions.",
+        "Rau joint masses and capture binding reuse specified calibration and adjustment inputs. The beta-threshold witness uses those published masses and excludes one declared final state; it does not derive binding from quark masses, measure a nuclear lifetime or independently corroborate the shared binding input.",
+        "No complete lattice or experimental replay, renormalized mass scan, physical-light-mass nuclear extrapolation, continuum nuclear calculation or common cross-study covariance is supplied. The comparison is not a pooled significance, an all-channel stability law, a universal formation/maintenance rule or a validated quarks-to-macroscopic-matter chain."
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
     }
   ],
   "entities": [
@@ -93421,6 +94312,416 @@
         "A flux profile in the reviewed pure-gauge calculation and a screened dynamical-quark ground state are different observables in different theories. None of these finite results proves continuum physical-mass confinement, real-time hadronization, stable nuclear/atomic matter, or a universal downward-causation constraint. The qualified confinement and nonperturbative-framework scopes retain their existing boundaries.",
         "No additional meaning is assigned to the original evidence placeholders, SOMA phase/type, weighted necessary parents or unit carrier thresholds. Unavailable configurations, correlators, covariance and complete analysis pipelines remain source-specific limits; no local numerical replay or new experimental certification is claimed."
       ]
+    },
+    {
+      "id": "phys:nuclear-lattice-energy-shift",
+      "name": "Finite-volume two-nucleon energy shift",
+      "kind": "definition",
+      "description": "At total momentum P=0 on a declared lattice, define DeltaE_X(L)=E_X(L)-2M_B(L), where E_X is the extracted energy in a specified two-nucleon channel and M_B is the rest energy of the degenerate octet baryon from the same theory and ensemble. Define the threshold deficit B_L=-DeltaE_X(L). The dimensionless lattice result b*DeltaE is converted to energy using the adopted lattice spacing; b is a length, not a baryon count.",
+      "claimIds": [
+        "D-phys-nuclear-lattice-energy-shift"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        }
+      ],
+      "openObligations": [
+        "A negative finite-volume shift is an energy difference relative to the noninteracting two-baryon threshold, not an absolute nuclear mass, a binding proof, a lifetime or a bulk-matter equation of state. Ground-state isolation and infinite-volume interpretation are additional conditions.",
+        "The subtraction uses shared gauge configurations and baryon inputs; threshold and channel uncertainties cannot be propagated as independent measurements by default. Moving-frame energies require their own threshold/dispersion treatment and are not defined by substituting E_X(P,L) into this rest-frame formula."
+      ]
+    },
+    {
+      "id": "phys:beane2013-nuclear-ensemble-context",
+      "name": "Beane flavor-symmetric nuclear ensembles",
+      "kind": "context",
+      "description": "Use nf=3 degenerate dynamical quarks in SU(3) color gauge theory without electromagnetism, with tadpole-improved Luscher-Weisz gauge action and isotropic clover fermions. Table I specifies beta=6.1 and bare b*m_q=-0.2450 on 24^3 x 48, 32^3 x 48 and 48^3 x 64 lattices. The reported configuration counts are 3822, 3050 and 1905, with mean source counts per configuration 72, 48 and 54. The adopted Upsilon-spectrum spacing is b=0.1453(16) fm. The degenerate pseudoscalar mass is approximately 806 MeV, with common quark masses described as tuned near the physical strange mass.",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-ensemble-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 32-35, Appendix B, Equations B1-B2 and references 30-32: noninteracting cluster estimates and unpublished scale/tuning provenance"
+        }
+      ],
+      "openObligations": [
+        "Flavor SU(3) degeneracy is distinct from the SU(3) color gauge symmetry. The up/down masses are unphysical; exact isospin and omitted QED prevent direct identification with measured physical nuclei.",
+        "The negative quoted mass is the chosen bare Wilson/clover parameter, not a negative physical quark mass or an MSbar value at a specified renormalization scale. No such renormalized mass or detailed tuning reconstruction is provided here.",
+        "The Upsilon scale is adopted from reference 32, a private communication; action tuning in reference 30 was in preparation. Their determinations are not independently reviewed. All channels share scale uncertainty; source locations on one configuration are not independent gauge ensembles. No physical-mass or continuum extrapolation is performed."
+      ]
+    },
+    {
+      "id": "phys:beane2013-nuclear-extraction-context",
+      "name": "Beane two-nucleon spectral extraction",
+      "kind": "context",
+      "description": "Construct Gaussian-smeared quark sources and point/smeared sinks, baryon blocks projected to sink momentum, and multibaryon operators localized at one source point with upper Dirac components. The deuteron channel has I=0, J^P=1+ and flavor irrep 10bar; the dineutron channel has I=1, J^P=0+ and irrep 27. Fit effective-energy plateaus by correlated constant fits and correlators by exponential fits, using jackknife or bootstrap covariance. Vary accepted fit intervals to estimate fitting systematics. The finite-volume octet-baryon energies supply the shared threshold subtraction.",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-extraction-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        }
+      ],
+      "openObligations": [
+        "These are restricted interpolating operators and finite Euclidean-time fits, not direct detector energies or a complete variational determination of every state. SP/SS choices and plateau stability do not independently prove asymptotic ground-state isolation.",
+        "The same correlators, configurations, threshold and scale are reused across energy shifts and the later binding interpretation. The original fit windows, full covariance, overlap amplitudes and boosted-subtraction implementation are not independently reconstructed.",
+        "The reported errors separate statistical, fit-interval systematic and scale contributions. They do not constitute a complete physical-mass, continuum, operator-completeness or excited-state error budget."
+      ]
+    },
+    {
+      "id": "phys:beane2013-two-nucleon-shifts",
+      "name": "Beane finite-volume two-nucleon deficits",
+      "kind": "scoped-process",
+      "description": "For P=0 and the volumes 24^3 x 48, 32^3 x 48 and 48^3 x 64 in that order, Tables V-VII report B_L=-DeltaE_L of 25.4(2.6)(4.7)(0.3), 22.5(2.3)(2.6)(0.2) and 19.7(3.1)(4.1)(0.2) MeV in the deuteron channel, and 17.8(1.7)(2.8)(0.2), 15.1(2.0)(2.0)(0.2) and 13.1(2.8)(4.3)(0.2) MeV in the dineutron channel. Parentheses give statistical, fitting systematic and scale errors respectively.",
+      "claimIds": [
+        "C-phys-beane2013-two-nucleon-shifts"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        }
+      ],
+      "openObligations": [
+        "These positive deficits denote reported negative rest-frame energy shifts; they are not three independent physical binding measurements. The two channels share ensemble, baryon-threshold and scale inputs.",
+        "The channel labels specify quantum numbers in this heavy flavor-symmetric theory. They do not establish a physical bound dineutron, measured deuteron binding or exact asymptotic levels. No raw-correlator or covariance replay is claimed."
+      ]
+    },
+    {
+      "id": "phys:beane2013-nuclear-binding-context",
+      "name": "Beane conditional bound-state interpretation",
+      "kind": "context",
+      "description": "Compare rest and moving systems across volumes, using the separately fitted single-baryon dispersion as a control. For an assumed two-body bound state at sufficiently large L, Equation 5 gives kappa(L)=kappa_0+6Z_psi^2 exp(-kappa_0 L)/L+..., with nonrelativistic kappa_0 approximately sqrt(M_B B). The authors find no statistically resolved volume dependence between the two largest boxes and adopt the average of the largest-volume rest and two boosted determinations as their infinite-volume estimate; they do not obtain a refined extrapolation by fitting Equation 5.",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-binding-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits"
+        }
+      ],
+      "openObligations": [
+        "The bound-state finite-volume form presupposes the relevant pole and ground-state identification; lack of resolved volume dependence alone is not a proof of binding. A finite operator set and Euclidean-time range can leave unresolved excited-state or scattering contributions.",
+        "The moving-system determinations share configurations and thresholds with the rest result. Single-hadron dispersion is a control, not a complete moving-frame multibaryon or spectral replay. Neither independent averaging nor an unpublished covariance model is supplied by the graph.",
+        "This is the original conditional interpretation, not a consensus determination of the two-nucleon ground state. The later methodological/variational review remains a separate comparison and cannot be treated as an additional fit input to the 2013 analysis."
+      ]
+    },
+    {
+      "id": "phys:beane2013-two-nucleon-binding",
+      "name": "Beane conditional two-nucleon binding estimates",
+      "kind": "scoped-process",
+      "description": "Table VII reports the original largest-volume rest/boost averages B_d=19.5(3.6)(3.1)(0.2) MeV and B_nn=15.9(2.7)(2.7)(0.2) MeV as estimates of infinite-volume binding at this flavor-symmetric parameter point. Their reported kappa_0 L values on the largest box are 6.3 and 5.7. These are the authors' conditional bound-state assignments, distinct from the finite-volume rest-frame shifts.",
+      "claimIds": [
+        "C-phys-beane2013-two-nucleon-binding"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits"
+        }
+      ],
+      "openObligations": [
+        "The three uncertainties are statistical, fitting systematic and lattice-scale contributions, not a complete error budget. The original analysis and averaging covariance are not reproduced; common thresholds and scale prohibit treating channels or boosts as independent confirmation.",
+        "These values do not establish current consensus, physical deuteron or dineutron binding, a continuum limit, quark-mass derivatives, nuclear lifetimes, saturation density or compressibility. One heavy-mass point cannot determine a universal quark-to-bulk response.",
+        "Higher-body and hypernuclear channels are outside this admission. The original paper itself identifies unresolved cluster-state ambiguities for several such channels; their stronger summary language is not transferred to these records."
+      ]
+    },
+    {
+      "id": "phys:detmold2026-state-identification-context",
+      "name": "Detmold heavy-mass state-identification analysis",
+      "kind": "context",
+      "description": "The reported calculation uses a 24^3 x 48 lattice, a=0.145 fm, three degenerate clover flavors and a tree-level-improved Luscher-Weisz gauge action at pion mass approximately 800 MeV. It analyzes 16,368 configurations from 17 streams, bins 50 saved configurations for residual autocorrelation, and computes approximately 2.12 x 10^7 sparse-source propagators. A subset of gauge fields was also used in Beane2013. Zero-total-momentum dibaryon and local hexaquark operators probe I=1 A1+ and I=0 T1+ sectors. The source compares GEVP, symmetric/block Lanczos and asymmetric-correlator analyses of these related correlators.",
+      "claimIds": [
+        "M-phys-detmold2026-state-identification-context"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 22-25, Sections VI-VII; page 58, reference 10: ensemble, operator choices, reused gauge fields and spectral-gap inputs"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions"
+        }
+      ],
+      "openObligations": [
+        "The 2026 calculation is not a new independent repeat of all three 2013 volumes. Shared gauge fields, action and scale coexist with changed propagator sampling, operators and analysis. Configurations and propagators are not independent experimental events.",
+        "Treating finite-time energy estimators as eigenvalues requires the stated N-state-saturation assumption. Symmetric variational upper bounds do not exclude missed lower levels. Residual bounds require a Hermitian transfer matrix and delimit a window containing some eigenvalue, not necessarily the ground state; for this improved action the source restricts Hermiticity to its low-energy sector, E much less than 1/a.",
+        "Tighter gap bounds require the stated no-missing-states threshold and negligible thermal effects. Estimates based on noninteracting NN level counts below NDelta or DeltaDelta thresholds can fail if extra low states are present. Source errors and bound widths are distinct; one-sided upper bounds cannot supply two-sided phase errors.",
+        "The selected phase comparison truncates to the lowest S wave, neglects lattice artifacts and does not determine a complete coupled-channel amplitude. Raw correlators, residual/gap calculations, operator completeness, continuum/infinite-volume extrapolations and physical-mass nuclear binding are not reproduced here."
+      ]
+    },
+    {
+      "id": "phys:two-nucleon-state-identification-review",
+      "name": "Unresolved heavy-mass two-nucleon state identification",
+      "kind": "scoped-process",
+      "description": "The paired 2026 preprints leave the nature of the lowest I=1 and I=0 two-nucleon states at these heavy-mass action parameters unresolved without additional spectral assumptions. GEVP and Lanczos agree for the same correlator data, while different operator choices under N-state saturation yield inconsistent energy estimates; the wider two-sided bounds remain compatible. The authors find no positive I=1 bound-state evidence from those bounds, and the I=0 level is too near the bound-state threshold to settle its nature from this one volume. This does not exclude a missed bound state or validate the earlier binding assignment as consensus.",
+      "claimIds": [
+        "C-phys-two-nucleon-state-identification-review"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation"
+        },
+        {
+          "sourceId": "detmold2026-state-summary",
+          "locator": "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions"
+        }
+      ],
+      "openObligations": [
+        "This record synthesizes the reported primary numerical analysis and its methodological conclusion. It is neither a new measured energy nor an independent simulation; the two preprints describe the same work and are not pooled confirmations.",
+        "A negative finite-volume energy shift relative to two nucleons is not by itself an infinite-volume bound-state determination. Residual/gap intervals can contain an eigenvalue without establishing its ground-state index or excluding additional levels outside the interval. The source tables distinguish statistical confidence from assumption-dependent spectral windows.",
+        "The asymmetric-correlator diagnostics show changing left/right state overlaps over accessible Euclidean times. They question the eigenstate interpretation of apparently stable estimators without proving that every such energy estimate is wrong or that a bound state cannot exist.",
+        "The reported synthetic small-gap examples use chosen spectra, overlaps and a noise model related to the lattice data. Their statistically similar bound/scattering outputs illustrate an inverse-problem ambiguity; they are not additional QCD measurements or a unique reconstruction of the true spectrum.",
+        "Neither the single-volume 2026 analysis nor the conditional 2013 interpretation establishes continuum physical-mass nuclear binding, all nuclei, atomic binding, a real-time formation rate or permanent matter stability."
+      ]
+    },
+    {
+      "id": "phys:qcd-nuclear-energy-bridge",
+      "name": "Specified QCD-to-nuclear-energy map",
+      "kind": "definition",
+      "description": "A QCD-to-nuclear-energy calculation declares its color gauge theory, quark-mass parameters, regulator, scale calibration, interpolating operators and energy-extraction procedure. Binding compares a specified nuclear channel with its compatible hadronic threshold, after state and volume inference. A calculation at one input point is a conditional result, not a measured derivative with respect to a renormalized quark mass or a complete prediction for bulk matter.",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Section 9.1, pages 1-2: QCD Lagrangian, representations and vertices"
+        },
+        {
+          "sourceId": "pdg2025-qcd",
+          "locator": "Sections 9.1.1-9.1.2, pages 2-4: running coupling and quark-mass prescriptions"
+        },
+        {
+          "sourceId": "pdg2025-quarks",
+          "locator": "Page 1: six quark flavors, spin, electric charge and mass conventions"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 1-6: two-plus-one-flavor QCD, three physical inputs, ensembles, extrapolation and spectrum interpretation"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        }
+      ],
+      "openObligations": [
+        "A renormalized quark mass needs a prescription and scale. The new flavor-symmetric calculation specifies one action-dependent bare mass; it does not determine an MSbar mass or its response derivative. Flavor SU(3), with degenerate up, down and strange masses, is distinct from the SU(3) color gauge symmetry of QCD.",
+        "Controlled quark-mass sensitivity requires a defined input variation or derivative and a declaration of what is held fixed, including the gauge coupling or QCD scale, cutoff, strange/sea masses and unit calibration. A comparison with physical nuclear data alone is not such a controlled calculation. An input hadron mass used to set the scale cannot simultaneously count as an independent prediction.",
+        "Hadron masses, nuclear binding differences, bulk density, compressibility and astrophysical matter are different observables. No reviewed many-body equation of state, composition, thermodynamic state, pressure response or astrophysical inference is supplied here. Direct quark-to-density/compressibility edges and a demonstrated uninterrupted chain to macroscopic materials are excluded, without asserting that the underlying physical influence is zero.",
+        "A later material model must declare how it treats electromagnetic, electronic and environmental inputs as well as its nuclear interactions and calibration. Neither a QCD-only two-nucleon spectrum nor a hadron mass table specifies atomic bonding, material phase or mechanical response.",
+        "The original 1.1 and 1.11 parents supply field/parameter and nucleon concepts, not experimentally established arising or maintenance interventions. Their equal 0.5 weights, necessary-parent labels, interaction/causal-direction codes and N_min=N_crit=1 are excluded as scientific results. Color, flavor, baryon number and sample count are distinct quantities, not universal carrier minima.",
+        "The original SOMA phase 2, effect TypeRole 4 and well-supported label do not establish a universal temporal stage or empirical cross-scale law. Generic nuclear-model, observation and astrophysical evidence placeholders identify no preparation or discriminator and supply no additional evidence. Qualified neighboring cards keep their existing scopes."
+      ]
+    },
+    {
+      "id": "phys:qcd-nuclear-evidence-boundary",
+      "name": "Conditional QCD and nuclear-energy evidence",
+      "kind": "scoped-process",
+      "description": "The calibrated hadron spectra, convention-dependent isospin components, measured-input deuteron energetics and the new nonphysical-mass two-nucleon calculation address different stages of nuclear-energy reasoning. The latter reports finite-volume shifts and a conditional bound-state interpretation at one flavor-symmetric input point. State-identification limitations remain explicit. This finite evidence does not supply a controlled quark-mass sensitivity, ordinary-matter density, compressibility or an astrophysical equation of state.",
+      "claimIds": [
+        "C-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, pages 7-8, Table 1 and Figure 3: input masses, predicted spectrum, isospin averages, uncertainties and resonance-width bands"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 14-16: calibration, pion-mass ranges, chiral/Taylor fits and correlated continuum extrapolations"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 16-18 and 21, Table S2 and Figure S5: 432 analysis variants, bootstrap, uncertainty fractions and electromagnetic/isospin limits"
+        },
+        {
+          "sourceId": "durr2008",
+          "locator": "Author report 0906.3599v1, Supporting Online Material, pages 11-13 and 21, Figure S4: finite-volume corrections, elastic resonance model and omitted rho/Delta lightest point"
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 4 and 9-11, Figures 2-3 and Table 1: total mass splittings, convention-dependent components and experiment-calibrated ratio"
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 33-35, Sections 10.1-10.4 and Equations S37-S40: physical inputs, QCD/QED convention and Coleman-Glashow fit"
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 32 and 35-37, Sections 9 and 11-12, pages 51-52 and 57, Figures S11-S12 and Table S5: time windows, AIC weighting, bootstrap and analysis variants"
+        },
+        {
+          "sourceId": "borsanyi2015",
+          "locator": "Author report 1406.4088v2, pages 8, 15, 18-27 and 42-46, Figure 1, Sections 3-5 and Equation S26: finite-volume prescriptions, point-particle controls and composite-particle corrections"
+        },
+        {
+          "sourceId": "rau2020",
+          "locator": "Author manuscript pages 4-7, Table 2 and Methods: local and joint mass adjustments, correlations and remaining mass-combination tension"
+        },
+        {
+          "sourceId": "fink2020",
+          "locator": "Accepted manuscript article pages 1-5, Figures 1-2 and Tables I-III: ion preparation, vibrational selection, rotational correction, frequency ratio and derived masses"
+        },
+        {
+          "sourceId": "rau2020",
+          "locator": "Author manuscript page 7, Methods: ILL lattice rescaling, capture wavelength, recoil and binding-energy conversion"
+        },
+        {
+          "sourceId": "kessler2017",
+          "locator": "Pages 7-9 and 22-23, Section 5, Tables 4-5 and 16: two ILL calibration paths, shared standards, sample variability and final adopted spacing"
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Pages 1-2, Sections 49.1 and 49.3, Equation 49.9: on-shell four-momentum, positive energy and c=1 convention"
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4 and Equations 49.11-49.12: n-body decay rate and energy-momentum-conserving phase space"
+        },
+        {
+          "sourceId": "codata2018-constants",
+          "locator": "Page 2, Electron section: adopted 2018 electron mass in u and its standard uncertainty"
+        },
+        {
+          "sourceId": "codata2018-constants",
+          "locator": "Page 6, atomic mass constant entries and footnote: adopted 2018 u*c^2 in MeV and relative-mass convention"
+        },
+        {
+          "sourceId": "nuclear-energetics-verifier",
+          "locator": "verify(): bare-state Q, exact shared-binding cancellation, rounded neutron comparison, adjusted mass-pair covariance and display-rounding sign check"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+        },
+        {
+          "sourceId": "beane2013-nuclei",
+          "locator": "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions"
+        },
+        {
+          "sourceId": "detmold2026-state-bounds",
+          "locator": "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation"
+        },
+        {
+          "sourceId": "detmold2026-state-summary",
+          "locator": "Author v1 pages 1-5, main text, Table I and Figures 1-2: paired summary of the same spectral-bound analysis and its assumptions"
+        }
+      ],
+      "openObligations": [
+        "Dürr uses physical hadronic calibration and extrapolation in two-plus-one-flavor QCD. Borsanyi adds QED and convention-dependent isospin components. Their hadron results do not determine a nuclear binding observable, an exhaustive visible-matter mass decomposition or a unique contribution of quark masses.",
+        "The newly reviewed nuclear calculation uses three degenerate heavy flavors without QED, one spacing and its own scale and threshold masses. These are different from the physical masses in the Rau adjustment and capture analysis; numerical inputs and uncertainties cannot be transferred between the theories as though they were one ensemble.",
+        "Published finite-volume energy shifts and their binding interpretation reuse the same correlators, baryon thresholds and scale. They are not independent evidence. A plateau or a subthreshold finite-volume level is not by itself a proven infinite-volume bound state; the reviewed methodological alternatives keep their stated assumptions.",
+        "Rau joint masses and capture binding reuse specified calibration and adjustment inputs. The beta-threshold witness uses those published masses and excludes one declared final state; it does not derive binding from quark masses, measure a nuclear lifetime or independently corroborate the shared binding input.",
+        "No complete lattice or experimental replay, renormalized mass scan, physical-light-mass nuclear extrapolation, continuum nuclear calculation or common cross-study covariance is supplied. The comparison is not a pooled significance, an all-channel stability law, a universal formation/maintenance rule or a validated quarks-to-macroscopic-matter chain."
+      ]
     }
   ],
   "rules": [
@@ -108850,6 +110151,411 @@
         "bulava2019-spectrum",
         "bali1995-field-extraction",
         "bali1995-profile-inference"
+      ]
+    },
+    {
+      "id": "physics:lattice-gauge-formulation-nuclear-lattice-energy-shift",
+      "source": "phys:lattice-gauge-formulation",
+      "target": "phys:nuclear-lattice-energy-shift",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The declared finite lattice, action and ensemble specify the regulator and common theory in which the channel energy and baryon threshold are compared.",
+      "claimIds": [
+        "D-phys-nuclear-lattice-energy-shift"
+      ]
+    },
+    {
+      "id": "physics:beane2013-nuclear-ensemble-context-beane2013-two-nucleon-shifts",
+      "source": "phys:beane2013-nuclear-ensemble-context",
+      "target": "phys:beane2013-two-nucleon-shifts",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The fixed bare masses, action, volumes, configurations and adopted scale supply these same-theory finite-energy results.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-shifts"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-extraction"
+      ]
+    },
+    {
+      "id": "physics:beane2013-nuclear-extraction-context-beane2013-two-nucleon-shifts",
+      "source": "phys:beane2013-nuclear-extraction-context",
+      "target": "phys:beane2013-two-nucleon-shifts",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The declared operators, correlated fits and common baryon threshold determine the reported rest-frame energy deficits.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-shifts"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-extraction"
+      ]
+    },
+    {
+      "id": "physics:nuclear-lattice-energy-shift-beane2013-two-nucleon-shifts",
+      "source": "phys:nuclear-lattice-energy-shift",
+      "target": "phys:beane2013-two-nucleon-shifts",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The rest-frame threshold convention fixes the sign and distinguishes the deficit from an absolute mass or an established bound state.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-shifts"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-extraction"
+      ]
+    },
+    {
+      "id": "physics:beane2013-two-nucleon-shifts-beane2013-two-nucleon-binding",
+      "source": "phys:beane2013-two-nucleon-shifts",
+      "target": "phys:beane2013-two-nucleon-binding",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "These finite rest-frame deficits are among the shared inputs to the later binding interpretation; the largest-volume average also uses the declared boosted determinations.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-binding"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "physics:beane2013-nuclear-binding-context-beane2013-two-nucleon-binding",
+      "source": "phys:beane2013-nuclear-binding-context",
+      "target": "phys:beane2013-two-nucleon-binding",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The assumed spectral identification and finite-volume/moving-system reasoning define the conditional original binding estimate.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-binding"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "physics:beane2013-nuclear-extraction-context-beane2013-two-nucleon-binding",
+      "source": "phys:beane2013-nuclear-extraction-context",
+      "target": "phys:beane2013-two-nucleon-binding",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The same fit procedure, baryon threshold and dispersion control supply the boosted and rest inputs, not an independent acquisition.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-binding"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "physics:beane2013-nuclear-ensemble-context-beane2013-two-nucleon-binding",
+      "source": "phys:beane2013-nuclear-ensemble-context",
+      "target": "phys:beane2013-two-nucleon-binding",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The common action and heavy-mass parameter point delimit this estimate; the adopted spacing supplies its correlated physical-unit conversion.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-binding"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "physics:nuclear-lattice-energy-shift-beane2013-two-nucleon-binding",
+      "source": "phys:nuclear-lattice-energy-shift",
+      "target": "phys:beane2013-two-nucleon-binding",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The reference threshold and sign convention keep a finite deficit distinct from the additional infinite-volume binding interpretation.",
+      "claimIds": [
+        "M-phys-beane2013-two-nucleon-binding"
+      ],
+      "contextIds": [
+        "beane2013-nuclear-binding"
+      ]
+    },
+    {
+      "id": "physics:detmold2026-state-identification-context-two-nucleon-state-identification-review",
+      "source": "phys:detmold2026-state-identification-context",
+      "target": "phys:two-nucleon-state-identification-review",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The reported ensemble, correlators, operator choices and spectral assumptions delimit the later state-identification conclusion.",
+      "claimIds": [
+        "M-phys-two-nucleon-state-identification-review"
+      ],
+      "contextIds": [
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:beane2013-two-nucleon-binding-two-nucleon-state-identification-review",
+      "source": "phys:beane2013-two-nucleon-binding",
+      "target": "phys:two-nucleon-state-identification-review",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "The historical conditional binding assignment is the interpretation being qualified by the later review, not an independent datum or numerical input to its new correlator analysis.",
+      "claimIds": [
+        "M-phys-two-nucleon-state-identification-review"
+      ],
+      "contextIds": [
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:qcd-qcd-nuclear-energy-bridge",
+      "source": "phys:qcd",
+      "target": "phys:qcd-nuclear-energy-bridge",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The color gauge theory and declared parameter convention define a calculation, not a measured upward causal intervention.",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ]
+    },
+    {
+      "id": "physics:quark-mass-prescription-qcd-nuclear-energy-bridge",
+      "source": "phys:quark-mass-prescription",
+      "target": "phys:qcd-nuclear-energy-bridge",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "A renormalized mass, an action-dependent bare parameter and a constituent mass are distinct inputs; a fixed-point spectrum does not provide their derivative.",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ]
+    },
+    {
+      "id": "physics:hadron-mass-calibration-qcd-nuclear-energy-bridge",
+      "source": "phys:hadron-mass-calibration",
+      "target": "phys:qcd-nuclear-energy-bridge",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The existing calibration definition illustrates the distinction between inputs and predictions; its numerical Dürr inputs are not imported into the separate nuclear ensembles.",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ]
+    },
+    {
+      "id": "physics:nuclear-lattice-energy-shift-qcd-nuclear-energy-bridge",
+      "source": "phys:nuclear-lattice-energy-shift",
+      "target": "phys:qcd-nuclear-energy-bridge",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The compatible threshold and state/volume limits specify the nuclear observable; finite negative energy alone does not establish an infinite-volume bound state.",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ]
+    },
+    {
+      "id": "physics:qcd-nuclear-energy-bridge-qcd-nuclear-evidence-boundary",
+      "source": "phys:qcd-nuclear-energy-bridge",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:durr-hadron-spectrum-qcd-nuclear-evidence-boundary",
+      "source": "phys:durr-hadron-spectrum",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:borsanyi-isospin-spectrum-qcd-nuclear-evidence-boundary",
+      "source": "phys:borsanyi-isospin-spectrum",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:borsanyi-qcd-qed-components-qcd-nuclear-evidence-boundary",
+      "source": "phys:borsanyi-qcd-qed-components",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:rau-joint-adjustment-qcd-nuclear-evidence-boundary",
+      "source": "phys:rau-joint-adjustment",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:rau-capture-binding-qcd-nuclear-evidence-boundary",
+      "source": "phys:rau-capture-binding",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:deuteron-beta-threshold-qcd-nuclear-evidence-boundary",
+      "source": "phys:deuteron-beta-threshold",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:beane2013-two-nucleon-shifts-qcd-nuclear-evidence-boundary",
+      "source": "phys:beane2013-two-nucleon-shifts",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:beane2013-two-nucleon-binding-qcd-nuclear-evidence-boundary",
+      "source": "phys:beane2013-two-nucleon-binding",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
+      ]
+    },
+    {
+      "id": "physics:two-nucleon-state-identification-review-qcd-nuclear-evidence-boundary",
+      "source": "phys:two-nucleon-state-identification-review",
+      "target": "phys:qcd-nuclear-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This is an interpretation input with its own scope, calibration and uncertainty; it is not a numerical transfer between theories or an empirical maintenance arrow.",
+      "claimIds": [
+        "M-phys-qcd-nuclear-evidence-boundary"
+      ],
+      "contextIds": [
+        "durr2008",
+        "borsanyi2015",
+        "rau2020-joint-fit",
+        "rau2020-capture-recalibration",
+        "deuteron-beta-energetics",
+        "beane2013-nuclear-extraction",
+        "beane2013-nuclear-binding",
+        "detmold2026-state-identification"
       ]
     }
   ]
