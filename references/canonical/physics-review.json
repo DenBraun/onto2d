@@ -5400,6 +5400,363 @@
       "metadataCheckedAt": "2026-10-10",
       "metadataUrl": "https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-11-074/index.html",
       "correctionCheck": "Official CMS publication and arXiv v2 metadata checked; v2 is identified as the published version. This is a selected 2011 sample, not the later combined 7/8 TeV search or an exhaustive correction/latest-result survey."
+    },
+    {
+      "id": "bali1995-flux-ensemble",
+      "sourceId": "bali1995-flux",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.51.5165",
+      "journal": "Physical Review D",
+      "volume": "51",
+      "issue": "",
+      "pages": "5165-5198",
+      "system": "Pure-SU(2) gauge ensembles with external static fundamental sources",
+      "preparation": "Simulate pure SU(2) Wilson gauge theory without sea quarks, with periodic boundaries and external static fundamental Q and Qbar. Table 1 specifies beta=2.5 on 16^4 and 32^4 sites, beta=2.635 on 48^3 x 64, and beta=2.74 on 32^4. The printed spacings are a=0.0826(5), 0.0826(14), 0.0541(2) and 0.0408(2) fm in that order. Field measurements number 8680, 2046, 248 and 670 respectively; Wilson-loop and vacuum-plaquette sample counts can differ. Spatial source smearing and time-link integration improve overlap and noise. With dimensionless fitted tension K=a^2 kappa, the adopted sqrt(kappa)=440 MeV supplies only an orientation for physical units.",
+      "observable": "Finite pure-SU(2) static-source ensembles and scale convention",
+      "finding": "The computational preparation used by the field and potential analyses.",
+      "limitations": [
+        "These are quenched two-color finite ensembles, not physical SU(3) QCD with dynamical quarks. Monte Carlo updates and Euclidean source preparation do not simulate real-time self-organization.",
+        "Table 1 prints sqrt(K)*a=440 MeV and printed page 4 prints kappa=K*a^2; printed page 23 instead uses the dimensionally consistent a^2=K/kappa. The graph uses the latter convention, preserving the author-version conflict without claiming a numerical error in the original fits. The quoted spacings are table inputs, not an independent reconciliation of its reciprocal-scale columns.",
+        "The adopted real-world scale and the beta-function interpolation, partly using earlier studies, are not independently reconstructed. Finite lattice spacings, volumes and source separations do not constitute a physical-QCD or continuum extrapolation."
+      ],
+      "readExtent": "selected-primary-author-report-passages",
+      "reviewedLocators": [
+        "Author v1 printed pages 2-12 (PDF 3-13), Sections 2.1-2.5, Equations 1-30 and Table 1: ensembles, static sources and vacuum-subtracted plaquette field operators",
+        "Author v1 printed pages 16-24 (PDF 17-25), Sections 3.3 and 4.1, Equations 39-52 and Tables 5-7: potential, scale setting and action-density normalization"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/9409005v1",
+      "correctionCheck": "Primary author-v1 metadata and selected body checked. Published-version differences, later corrections and upstream analyses are not exhaustively reviewed; printed scale and FWHM conflicts remain explicit."
+    },
+    {
+      "id": "bali1995-field-extraction",
+      "sourceId": "bali1995-flux",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.51.5165",
+      "journal": "Physical Review D",
+      "volume": "51",
+      "issue": "",
+      "pages": "5165-5198",
+      "system": "Pure-SU(2) gauge ensembles with external static fundamental sources",
+      "preparation": "Form the vacuum-subtracted Wilson-loop/plaquette contrasts with local spatial averaging and time insertions nearest the Wilson-loop midpoint. Extrapolate electric and magnetic components separately in Euclidean T before combining them; integrated observables are integrated at fixed T before extrapolation. Excited-state contamination of a field insertion can decrease as exp[-Delta V(T/2-S)], more slowly than for the Wilson potential. Independently fit the same ensembles' Wilson-loop ratios to the static potential; its fitted tension fixes relative lattice scales and its differences enter the later geometric-width method.",
+      "observable": "Source-conditioned squared-field profiles and shared-ensemble static potential",
+      "finding": "The reported local contrasts show an elongated action-density distribution between fixed sources. Figure 12 compares R=20 at beta=2.5 with R=30 at beta=2.635, described by the authors as approximately 1.7 fm under their adopted scale; the plotted action normalization is adjusted between couplings. The selected spacing, volume and T comparisons support this finite-lattice profile extraction within their uncertainties. Energy and action contrasts are separate reported observables.",
+      "limitations": [
+        "The source uses finite-T fit variations and bootstrap errors, not a directly observed exact ground-state field. A potential plateau alone does not certify the field plateau; the correlators, fits and covariance are not replayed.",
+        "Near-source self-energy peaks and sites excluded by time-link integration are subject to lattice artifacts. Spacing and 16^4/32^4 volume comparisons test selected profiles at their reported precision, not every tail, separation or infinite-volume limit.",
+        "Action-profile comparisons account for the anomalous normalization and retain scale uncertainty. The potential and field profiles share gauge ensembles and scale inputs, so their sum-rule comparison is not independent experimental confirmation."
+      ],
+      "readExtent": "selected-primary-author-report-passages",
+      "reviewedLocators": [
+        "Author v1 printed pages 2-12 (PDF 3-13), Sections 2.1-2.5, Equations 1-30 and Table 1: ensembles, static sources and vacuum-subtracted plaquette field operators",
+        "Author v1 printed pages 16-24 (PDF 17-25), Sections 3.3 and 4.1, Equations 39-52 and Tables 5-7: potential, scale setting and action-density normalization",
+        "Author v1 printed pages 25-36 (PDF 26-37), Section 4.2, Figures 8-19 and Equation 58: field profiles, spacing/volume comparisons and Euclidean-time extraction",
+        "Author v1 printed pages 47-53 (PDF 48-54), Sections 5.3-5.4 and selected summary, Equations 63-73 and Figures 26-29: sum-rule inputs, tail sensitivity and width inference"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/9409005v1",
+      "correctionCheck": "Primary author-v1 metadata and selected body checked. Published-version differences, later corrections and upstream analyses are not exhaustively reviewed; printed scale and FWHM conflicts remain explicit."
+    },
+    {
+      "id": "bali1995-profile-inference",
+      "sourceId": "bali1995-flux",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.51.5165",
+      "journal": "Physical Review D",
+      "volume": "51",
+      "issue": "",
+      "pages": "5165-5198",
+      "system": "Pure-SU(2) gauge ensembles with external static fundamental sources",
+      "preparation": "For beta=2.5 and 2.635, compare Gaussian and dipole interpolations of the central action profile, direct cutoff-dependent moment integrals, and the geometric estimate delta_geom^2=gamma A/(pi h), where h is the central height and A the transverse profile integral. The geometric A uses the differential action sum rule, the same-ensemble potential differences and the adopted beta-function factor. The method assumes that aligned static differences sigma_R-sigma_(R-2) are localized near the center plane and that transverse shapes at different R differ by amplitude and length rescalings. For infinite-plane Gaussian and dipole profiles gamma is 1 and 2.",
+      "observable": "Conditional transverse rms/FWHM and separation dependence",
+      "finding": "For source separations above approximately 1 fm at beta=2.5 and 2.635, the reported geometric action rms estimate is a delta_geom approximately 0.52 fm sqrt(gamma). The authors' plausible-profile estimate spans approximately 0.5-0.75 fm, and the physical FWHM a rho plateaus at approximately 0.7 fm under their formulas. The data are compatible with a constant width and also with logarithmic broadening; the calculation does not select between them.",
+      "limitations": [
+        "The aligned differences compare separate fixed-source configurations; their localization near r approximately 0.75 fm is a smooth, resolution-limited diagnostic, not real-time pulling, a phase transition or a minimum formation size.",
+        "The geometric method is applied above its stated approximately 0.75 fm range. Tail contributions, finite volume, rotational symmetry and the profile family remain inputs. Good fits over the measured transverse window do not determine the unmeasured tails.",
+        "The Gaussian fit can describe central data while underestimating the sum-rule area; dipole tails are also not established throughout the separation range. The sum rule and potential are reused constraints, not an independent derivation of the profile or a measured vacuum condensate."
+      ],
+      "readExtent": "selected-primary-author-report-passages",
+      "reviewedLocators": [
+        "Author v1 printed pages 16-24 (PDF 17-25), Sections 3.3 and 4.1, Equations 39-52 and Tables 5-7: potential, scale setting and action-density normalization",
+        "Author v1 printed pages 40-46 (PDF 41-47), Sections 5.1-5.2, Equations 59-62 and Figures 23-25: transverse profile models and aligned static-separation differences",
+        "Author v1 printed pages 47-53 (PDF 48-54), Sections 5.3-5.4 and selected summary, Equations 63-73 and Figures 26-29: sum-rule inputs, tail sensitivity and width inference"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/hep-lat/9409005v1",
+      "correctionCheck": "Primary author-v1 metadata and selected body checked. Published-version differences, later corrections and upstream analyses are not exhaustively reviewed; printed scale and FWHM conflicts remain explicit."
+    },
+    {
+      "id": "beane2013-nuclear-ensemble",
+      "sourceId": "beane2013-nuclei",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.87.034506",
+      "journal": "Physical Review D",
+      "volume": "87",
+      "issue": "3",
+      "pages": "034506",
+      "system": "Three finite-volume nf=3 ensembles at one flavor-SU(3)-symmetric heavy-quark point",
+      "preparation": "Use nf=3 degenerate dynamical quarks in SU(3) color gauge theory without electromagnetism, with tadpole-improved Luscher-Weisz gauge action and isotropic clover fermions. Table I specifies beta=6.1 and bare b*m_q=-0.2450 on 24^3 x 48, 32^3 x 48 and 48^3 x 64 lattices. The reported configuration counts are 3822, 3050 and 1905, with mean source counts per configuration 72, 48 and 54. The adopted Upsilon-spectrum spacing is b=0.1453(16) fm. The degenerate pseudoscalar mass is approximately 806 MeV, with common quark masses described as tuned near the physical strange mass.",
+      "observable": "Shared gauge ensembles, bare mass and adopted scale",
+      "finding": "The specified nf=3 heavy flavor-symmetric preparation at three volumes and one spacing.",
+      "limitations": [
+        "Flavor SU(3) degeneracy is distinct from the SU(3) color gauge symmetry. The up/down masses are unphysical; exact isospin and omitted QED prevent direct identification with measured physical nuclei.",
+        "The negative quoted mass is the chosen bare Wilson/clover parameter, not a negative physical quark mass or an MSbar value at a specified renormalization scale. No such renormalized mass or detailed tuning reconstruction is provided here.",
+        "The Upsilon scale is adopted from reference 32, a private communication; action tuning in reference 30 was in preparation. Their determinations are not independently reviewed. All channels share scale uncertainty; source locations on one configuration are not independent gauge ensembles. No physical-mass or continuum extrapolation is performed."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+        "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+        "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits",
+        "Author v2 pages 32-35, Appendix B, Equations B1-B2 and references 30-32: noninteracting cluster estimates and unpublished scale/tuning provenance"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://link.aps.org/accepted/10.1103/PhysRevD.87.034506",
+      "correctionCheck": "Latest arXiv version history and APS accepted-manuscript metadata checked. The distinct later variational review does not correct or reproduce this original fit; no exhaustive correction census or upstream scale/tuning replay is claimed."
+    },
+    {
+      "id": "beane2013-nuclear-extraction",
+      "sourceId": "beane2013-nuclei",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.87.034506",
+      "journal": "Physical Review D",
+      "volume": "87",
+      "issue": "3",
+      "pages": "034506",
+      "system": "Three finite-volume nf=3 ensembles at one flavor-SU(3)-symmetric heavy-quark point",
+      "preparation": "Construct Gaussian-smeared quark sources and point/smeared sinks, baryon blocks projected to sink momentum, and multibaryon operators localized at one source point with upper Dirac components. The deuteron channel has I=0, J^P=1+ and flavor irrep 10bar; the dineutron channel has I=1, J^P=0+ and irrep 27. Fit effective-energy plateaus by correlated constant fits and correlators by exponential fits, using jackknife or bootstrap covariance. Vary accepted fit intervals to estimate fitting systematics. The finite-volume octet-baryon energies supply the shared threshold subtraction.",
+      "observable": "Rest-frame channel energy deficits and dispersion inputs",
+      "finding": "For P=0 and the volumes 24^3 x 48, 32^3 x 48 and 48^3 x 64 in that order, Tables V-VII report B_L=-DeltaE_L of 25.4(2.6)(4.7)(0.3), 22.5(2.3)(2.6)(0.2) and 19.7(3.1)(4.1)(0.2) MeV in the deuteron channel, and 17.8(1.7)(2.8)(0.2), 15.1(2.0)(2.0)(0.2) and 13.1(2.8)(4.3)(0.2) MeV in the dineutron channel. Parentheses give statistical, fitting systematic and scale errors respectively.",
+      "limitations": [
+        "These are restricted interpolating operators and finite Euclidean-time fits, not direct detector energies or a complete variational determination of every state. SP/SS choices and plateau stability do not independently prove asymptotic ground-state isolation.",
+        "The same correlators, configurations, threshold and scale are reused across energy shifts and the later binding interpretation. The original fit windows, full covariance, overlap amplitudes and boosted-subtraction implementation are not independently reconstructed.",
+        "The reported errors separate statistical, fit-interval systematic and scale contributions. They do not constitute a complete physical-mass, continuum, operator-completeness or excited-state error budget."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v2 pages 3-6, Section II, Equation 1 and Tables I-II: flavor-symmetric ensembles, scale, sources and two-nucleon operators",
+        "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+        "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://link.aps.org/accepted/10.1103/PhysRevD.87.034506",
+      "correctionCheck": "Latest arXiv version history and APS accepted-manuscript metadata checked. The distinct later variational review does not correct or reproduce this original fit; no exhaustive correction census or upstream scale/tuning replay is claimed."
+    },
+    {
+      "id": "beane2013-nuclear-binding",
+      "sourceId": "beane2013-nuclei",
+      "studyType": "computational-analysis",
+      "doi": "10.1103/PhysRevD.87.034506",
+      "journal": "Physical Review D",
+      "volume": "87",
+      "issue": "3",
+      "pages": "034506",
+      "system": "Three finite-volume nf=3 ensembles at one flavor-SU(3)-symmetric heavy-quark point",
+      "preparation": "Compare rest and moving systems across volumes, using the separately fitted single-baryon dispersion as a control. For an assumed two-body bound state at sufficiently large L, Equation 5 gives kappa(L)=kappa_0+6Z_psi^2 exp(-kappa_0 L)/L+..., with nonrelativistic kappa_0 approximately sqrt(M_B B). The authors find no statistically resolved volume dependence between the two largest boxes and adopt the average of the largest-volume rest and two boosted determinations as their infinite-volume estimate; they do not obtain a refined extrapolation by fitting Equation 5.",
+      "observable": "Conditional infinite-volume two-nucleon binding estimate",
+      "finding": "Table VII reports the original largest-volume rest/boost averages B_d=19.5(3.6)(3.1)(0.2) MeV and B_nn=15.9(2.7)(2.7)(0.2) MeV as estimates of infinite-volume binding at this flavor-symmetric parameter point. Their reported kappa_0 L values on the largest box are 6.3 and 5.7. These are the authors' conditional bound-state assignments, distinct from the finite-volume rest-frame shifts.",
+      "limitations": [
+        "The bound-state finite-volume form presupposes the relevant pole and ground-state identification; lack of resolved volume dependence alone is not a proof of binding. A finite operator set and Euclidean-time range can leave unresolved excited-state or scattering contributions.",
+        "The moving-system determinations share configurations and thresholds with the rest result. Single-hadron dispersion is a control, not a complete moving-frame multibaryon or spectral replay. Neither independent averaging nor an unpublished covariance model is supplied by the graph.",
+        "This is the original conditional interpretation, not a consensus determination of the two-nucleon ground state. The later methodological/variational review remains a separate comparison and cannot be treated as an additional fit input to the 2013 analysis."
+      ],
+      "readExtent": "full-primary-author-article",
+      "reviewedLocators": [
+        "Author v2 pages 7-9, Section III, Equations 2-3 and Tables III-IV: shared single-hadron masses and dispersion fits",
+        "Author v2 pages 9-13, Section IV, Equations 4-5, Tables V-VIII and Figures 4-5: two-baryon extraction, finite-volume shifts and binding estimates",
+        "Author v2 pages 28-31, Section VIII and Table XVIII: stated quark-mass, continuum, operator and interpretation limits"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://link.aps.org/accepted/10.1103/PhysRevD.87.034506",
+      "correctionCheck": "Latest arXiv version history and APS accepted-manuscript metadata checked. The distinct later variational review does not correct or reproduce this original fit; no exhaustive correction census or upstream scale/tuning replay is claimed."
+    },
+    {
+      "id": "detmold2026-state-identification",
+      "sourceId": "detmold2026-state-bounds",
+      "studyType": "computational-analysis",
+      "doi": "10.48550/arXiv.2601.22272",
+      "journal": null,
+      "volume": null,
+      "issue": "",
+      "pages": null,
+      "system": "Heavy-mass three-degenerate-flavor lattice QCD; I=1 and I=0 two-nucleon sectors at one spacing and volume",
+      "preparation": "The reported calculation uses a 24^3 x 48 lattice, a=0.145 fm, three degenerate clover flavors and a tree-level-improved Luscher-Weisz gauge action at pion mass approximately 800 MeV. It analyzes 16,368 configurations from 17 streams, bins 50 saved configurations for residual autocorrelation, and computes approximately 2.12 x 10^7 sparse-source propagators. A subset of gauge fields was also used in Beane2013. Zero-total-momentum dibaryon and local hexaquark operators probe I=1 A1+ and I=0 T1+ sectors. The source compares GEVP, symmetric/block Lanczos and asymmetric-correlator analyses of these related correlators.",
+      "observable": "Source-reported correlator-dependent energy estimators, spectral-bound windows and state-identification diagnostics",
+      "finding": "The paired 2026 preprints leave the nature of the lowest I=1 and I=0 two-nucleon states at these heavy-mass action parameters unresolved without additional spectral assumptions. GEVP and Lanczos agree for the same correlator data, while different operator choices under N-state saturation yield inconsistent energy estimates; the wider two-sided bounds remain compatible. The authors find no positive I=1 bound-state evidence from those bounds, and the I=0 level is too near the bound-state threshold to settle its nature from this one volume. This does not exclude a missed bound state or validate the earlier binding assignment as consensus.",
+      "limitations": [
+        "The 2026 calculation is not a new independent repeat of all three 2013 volumes. Shared gauge fields, action and scale coexist with changed propagator sampling, operators and analysis. Configurations and propagators are not independent experimental events.",
+        "Treating finite-time energy estimators as eigenvalues requires the stated N-state-saturation assumption. Symmetric variational upper bounds do not exclude missed lower levels. Residual bounds require a Hermitian transfer matrix and delimit a window containing some eigenvalue, not necessarily the ground state; for this improved action the source restricts Hermiticity to its low-energy sector, E much less than 1/a.",
+        "Tighter gap bounds require the stated no-missing-states threshold and negligible thermal effects. Estimates based on noninteracting NN level counts below NDelta or DeltaDelta thresholds can fail if extra low states are present. Source errors and bound widths are distinct; one-sided upper bounds cannot supply two-sided phase errors.",
+        "The selected phase comparison truncates to the lowest S wave, neglects lattice artifacts and does not determine a complete coupled-channel amplitude. Raw correlators, residual/gap calculations, operator completeness, continuum/infinite-volume extrapolations and physical-mass nuclear binding are not reproduced here.",
+        "This record synthesizes the reported primary numerical analysis and its methodological conclusion. It is neither a new measured energy nor an independent simulation; the two preprints describe the same work and are not pooled confirmations.",
+        "A negative finite-volume energy shift relative to two nucleons is not by itself an infinite-volume bound-state determination. Residual/gap intervals can contain an eigenvalue without establishing its ground-state index or excluding additional levels outside the interval. The source tables distinguish statistical confidence from assumption-dependent spectral windows.",
+        "The asymmetric-correlator diagnostics show changing left/right state overlaps over accessible Euclidean times. They question the eigenstate interpretation of apparently stable estimators without proving that every such energy estimate is wrong or that a bound state cannot exist.",
+        "The reported synthetic small-gap examples use chosen spectra, overlaps and a noise model related to the lattice data. Their statistically similar bound/scattering outputs illustrate an inverse-problem ambiguity; they are not additional QCD measurements or a unique reconstruction of the true spectrum.",
+        "Neither the single-volume 2026 analysis nor the conditional 2013 interpretation establishes continuum physical-mass nuclear binding, all nuclei, atomic binding, a real-time formation rate or permanent matter stability."
+      ],
+      "readExtent": "selected-primary-preprint-passages",
+      "reviewedLocators": [
+        "Author v1 pages 2-5, Sections I-II: N-state saturation, variational/residual bounds and the no-missing-states assumption",
+        "Author v1 pages 22-25, Sections VI-VII; page 58, reference 10: ensemble, operator choices, reused gauge fields and spectral-gap inputs",
+        "Author v1 pages 37-39, Tables III-V, Section IX and Figure 27: statistical versus spectral bounds and S-wave-truncated phase inference",
+        "Author v1 pages 42-46, Sections X C-E and Figures 30-35: asymmetric correlator diagnostics and alternative gap assumptions",
+        "Author v1 pages 48-54, Sections XI B-C and XII, Table VIII, Figures 37-38 and Tables IX-XIII: synthetic ambiguity examples and unresolved ground-state interpretation"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/2601.22272v1",
+      "correctionCheck": "Checked the actual arXiv v1 preprint and its version metadata; no journal publication or later revision is listed. Companion 2601.22273v1 is the same analysis. Earlier papers are not retroactively corrected by this record; statistical and spectral assumptions remain explicit."
+    },
+    {
+      "id": "planck2018-cmb-acquisition",
+      "sourceId": "planck2018-cmb-likelihoods",
+      "studyType": "primary-observation",
+      "doi": "10.1051/0004-6361/201936386",
+      "journal": "Astronomy & Astrophysics",
+      "volume": "641",
+      "issue": "",
+      "pages": "A5",
+      "system": "Planck selected CMB temperature and E-polarization analysis",
+      "preparation": "The 2018 release reprocesses full-mission Planck intensity and linear-polarization maps. The selected high-multipole sample uses 100, 143 and 217 GHz HFI half-mission cross-spectra; low-E uses the 100 x 143 GHz full-mission polarization cross-spectrum, with low-temperature Commander estimates. The low-E cleaning uses 353 GHz dust templates and a 30 GHz synchrotron template at 100 GHz. This is selection from an existing sky observation, not a new 2018 experimental preparation.",
+      "observable": "Selected Planck map frequencies and half-mission/full-mission data combinations",
+      "finding": "An existing sky observation selected for the specified temperature and E-polarization likelihood.",
+      "limitations": [
+        "Frequency pairs and half missions sample the same CMB sky and share calibration and foreground inputs. Papers V, VI and X are linked analyses of that acquisition; they are not independent replications or independent universes.",
+        "The selected branch excludes low-multipole TE, BB, the LFI lowTEB alternative, a separate lensing-reconstruction likelihood, BAO and BICEP/Keck. Detailed timelines, detector operation and the complete upstream LFI/HFI instrument papers are not independently reviewed."
+      ],
+      "readExtent": "selected-primary-author-passages",
+      "reviewedLocators": [
+        "Author v2 pages 2-4, Sections 1-2.1: full-mission maps, likelihood naming and Commander component separation",
+        "Author v2 pages 8-10, Sections 2.2.1-2.2.3: polarization cleaning, cross-spectrum estimation, simulations and low-TE exclusion",
+        "Author v2 pages 25-26 and 28, Sections 3.1-3.2.4, Equations 20-21 and Table 13: half-mission spectra, covariance, beam response and multipole cuts"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/1907.12875v2",
+      "correctionCheck": "Exact author version and journal DOI checked. Author v2 matches the published likelihood report; selected printed multipole cuts are retained without substituting the inflation-paper summary."
+    },
+    {
+      "id": "planck2018-cmb-response",
+      "sourceId": "planck2018-cmb-likelihoods",
+      "studyType": "computational-analysis",
+      "doi": "10.1051/0004-6361/201936386",
+      "journal": "Astronomy & Astrophysics",
+      "volume": "641",
+      "issue": "",
+      "pages": "A5",
+      "system": "Planck selected CMB temperature and E-polarization analysis",
+      "preparation": "Commander jointly models low-temperature foregrounds and the CMB. SimAll uses foreground-cleaned 100 x 143 GHz quasi-QML polarization estimates and simulation-based probabilities. High-multipole Plik uses masked, beam-corrected half-mission cross-spectra with noise/covariance models and foreground, calibration, polarization-efficiency and temperature-to-polarization leakage treatment. Its covariance retains correlations between frequency pairs and TT, TE and EE using a fiducial model. Cross-spectra reduce additive noise bias only insofar as the split-map noises are uncorrelated.",
+      "observable": "Response-conditioned angular spectra and their joint statistical/nuisance treatment",
+      "finding": "The reported data products are angular temperature and E-polarization spectrum estimates: Commander TT and SimAll EE for 2 <= ell <= 29, and Plik per-frequency half-mission TT, TE and EE cross-spectra at higher multipoles. The high-multipole union is TT 30-2508 and TE/EE 30-1996, with narrower pair-specific cuts. These response-conditioned angular correlations are distinct from a primordial curvature spectrum or an observed quantum-vacuum realization.",
+      "limitations": [
+        "Not all corrections are freely fitted: the baseline fixes EE dust amplitudes, polarization-efficiency corrections and several residual templates, while fitting selected foreground/calibration parameters with priors. Shared scanning systematics can remain correlated between half missions.",
+        "Simulations and fiducial covariance approximate noise, foregrounds, sample variance and residual systematics. The source reports finite-simulation and fixed-sky limitations; validation is not proof that all calibration, foreground or likelihood errors vanish. No maps, templates, covariance or end-to-end simulation are locally reconstructed.",
+        "The actual Plik data vector keeps frequency-pair spectra; it is not the frequency-coadded curve in Figures 57-59. Those displays fix foreground/nuisance parameters to a best fit including lensing reconstruction, and their high-multipole diagonal error bars omit foreground-model uncertainty. Displayed low-TE points are not used in the chosen inference.",
+        "The sky is one finite, masked realization: multipoles and cross-spectra have correlated sample variance and instrumental/foreground uncertainty. Angular spectra are processed estimates, not independent raw event counts or a direct time series of primordial fluctuations."
+      ],
+      "readExtent": "selected-primary-author-passages",
+      "reviewedLocators": [
+        "Author v2 pages 8-10, Sections 2.2.1-2.2.3: polarization cleaning, cross-spectrum estimation, simulations and low-TE exclusion",
+        "Author v2 pages 25-26 and 28, Sections 3.1-3.2.4, Equations 20-21 and Table 13: half-mission spectra, covariance, beam response and multipole cuts",
+        "Author v2 pages 51-53, Section 3.4: Plik foreground, calibration, polarization-efficiency and residual-systematics treatment",
+        "Author v2 pages 59-61, Figures 57-59 and their captions: coadded display conventions and covariance limitations",
+        "Author v2 pages 86-88, Sections 3.12.3-4 and Table 23: simulation limits, hybrid likelihood and omitted correlations"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/1907.12875v2",
+      "correctionCheck": "Exact author version and journal DOI checked. Author v2 matches the published likelihood report; selected printed multipole cuts are retained without substituting the inflation-paper summary."
+    },
+    {
+      "id": "planck2018-primordial-inference",
+      "sourceId": "planck2018-cosmological-parameters",
+      "studyType": "computational-analysis",
+      "doi": "10.1051/0004-6361/201833910",
+      "journal": "Astronomy & Astrophysics",
+      "volume": "641",
+      "issue": "",
+      "pages": "A6",
+      "system": "Planck selected CMB temperature and E-polarization analysis",
+      "preparation": "The selected analysis assumes spatially flat base LambdaCDM with purely adiabatic scalar P_R(k)=A_s*(k/k_*)^(n_s-1), k_*=0.05 Mpc^-1. CAMB (August 2017) maps this prescribed initial spectrum and the adopted background, matter and thermal history to lensed CMB spectra; CosmoMC (July 2018) samples the six-parameter posterior. The base parameters are baryon and cold-dark-matter densities, theta_MC, tau, ln(10^10 A_s) and n_s, with flat base priors; the amplitude prior is 1.61 < ln(10^10 A_s) < 3.91. The adopted neutrino model has two massless states and one 0.06 eV state, BBN-predicted helium and the stated tanh reionization history. The likelihood multiplies Commander low-T, SimAll low-E and high-multipole Plik, exploring the allowed nuisance parameters jointly.",
+      "observable": "Marginalized primordial log-amplitude and scalar spectral index",
+      "finding": "For TT,TE,EE+lowE in that base model, Planck reports n_s=0.9649 +/- 0.0044 and ln(10^10 A_s)=3.045 +/- 0.016, each as a marginalized 68 percent interval at k_*=0.05 Mpc^-1. These are the selected joint column of VI Table 2 and X Table 2, with the tilt also stated in X Equation 10. The amplitude and tilt are inferred primordial-spectrum parameters, conditional on the specified transfer model, likelihood and priors.",
+      "limitations": [
+        "This transfer/likelihood model includes physical lensing of TT/TE/EE but not the separate lensing-reconstruction likelihood. No BAO, BK15 or large-scale-structure likelihood is added. A power-law adiabatic initial spectrum is an assumption of this fit, not a derivation of inflation or of its quantum origin.",
+        "The hybrid likelihood neglects low/high-multipole correlations and low-T/low-E correlations; low-TE is excluded. Its high-multipole Gaussian approximation and fixed corrections carry stated limits. High-multipole amplitude is degenerate with tau through A_s*exp(-2*tau); low-E supplies conditional information on tau.",
+        "Inherited prior bounds beyond the quoted amplitude range and the full recombination, BBN, nonlinear-lensing, sampler and covariance implementations are not independently reconstructed. Other cosmologies or nuisance choices can change the posterior; no full numerical replay or unique origin mechanism is claimed.",
+        "These two marginal intervals do not specify their joint posterior or covariance and are not independent detections. The +/-0.0042 tilt uncertainty belongs to the different TT,TE,EE+lowE+lensing combination; it must not replace this result.",
+        "The source-reported posterior is neither a local refit nor direct proof of a quantum-vacuum origin, a unique inflationary potential, reheating, primordial tensors, dark-matter microphysics or the construction of late-time structure. Other initial-condition and cosmological models require their own evidence and likelihood comparison.",
+        "Papers V, VI and X share the Planck acquisition and analysis chain. Their agreement is a provenance/consistency check, not a statistical multiplication of independent evidence."
+      ],
+      "readExtent": "selected-primary-author-passages",
+      "reviewedLocators": [
+        "Author v4 pages 4-5, Sections 2.1-2.2.1: base model, priors, CAMB/CosmoMC, map response and Plik cuts",
+        "Author v4 page 11, Sections 2.2.3-2.2.4: exact TT,TE,EE+lowE definition, excluded low-TE and amplitude-optical-depth degeneracy",
+        "Author v4 page 16, Table 2, TT,TE,EE+lowE column and caption: 68 percent base-parameter intervals and adopted BBN/reionization assumptions",
+        "Author v4 page 59, footnote 44 and Equations 87a-87b: incorporated early-reionization percentile corrigendum, outside the selected base-model result"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://arxiv.org/abs/1807.06209v4",
+      "correctionCheck": "Exact author version and journal DOI checked. Author v4 incorporates the page 59 early-reionization percentile corrigendum; those outputs are outside this base-model admission."
+    },
+    {
+      "id": "grangier1986-counting",
+      "sourceId": "grangier1986-optical-anticorrelation",
+      "studyType": "primary-experiment",
+      "doi": "10.1209/0295-5075/1/4/004",
+      "journal": "Europhysics Letters",
+      "volume": "1",
+      "issue": "4",
+      "pages": "173-179",
+      "system": "Triggered radiative-cascade beam-splitter counting",
+      "preparation": "A two-photon-excited radiative cascade emits distinct frequencies nu_1 and nu_2. Detecting nu_1 triggers a gate for photomultipliers at the transmitted and reflected nu_2 outputs of a beam splitter. The intermediate lifetime is 4.7 ns; the selected gate is approximately 9 ns. The counters register gates, each output and joint output detections. This is a conditional detection preparation, not an ideal deterministic source in a single spatial mode.",
+      "observable": "Herald gates, transmitted/reflected singles and joint-output coincidence counts",
+      "finding": "At the selected low-excitation setting, the paper reports 9 joint-output coincidences in approximately 5 hours. The gate rate N_1 is approximately 8800 s^-1, including a 300 s^-1 dark rate; the reflected singles rate N_r is approximately 5 s^-1 with dark rate 0.02 s^-1. N_t, N_r and N_c denote gated transmitted singles, reflected singles and coincidences, and the observed probabilities are p_t=N_t/N_1, p_r=N_r/N_1 and p_c=N_c/N_1.",
+      "limitations": [
+        "Partial printed rates and exposure do not provide a complete event stream, full source-state characterization or independent detector calibration.",
+        "The named article refers source construction to an earlier paper. Atomic species, transition wavelengths, collection geometry in full detail and a complete state tomography are not supplied here. The authors explicitly distinguish their preparation from an ideal shuttered, fully collected single-photon source.",
+        "Multiple cascades, finite collection, detector inefficiency and dark triggers remain possible. A herald does not guarantee that an emitted nu_2 photon reaches or is detected at either output.",
+        "These are printed selected-point summaries, not a complete event table. The selected transmitted rate N_t, exact exposure, joint calibration and event stream are absent, so alpha and its uncertainty cannot be exactly reconstructed locally from these rounded values.",
+        "The reported dark-rate inclusions do not specify an exhaustive background-subtraction procedure. Nine detections do not imply ideal zero coincidences, unit efficiency or a measured particle trajectory."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 173-174 and Figure 1: radiative cascade, herald detection, 4.7 ns intermediate lifetime and triggered counters",
+        "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+        "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://doi.org/10.1209/0295-5075/1/4/004",
+      "correctionCheck": "The journal scan identifies 15 February 1986, volume 1(4), pages 173-179 and the three authors; DOI metadata agrees. No linked correction was found in the checked DOI/title search. The seven-page paper, not the later reprint or longer conference account, supplies this bounded reading."
+    },
+    {
+      "id": "grangier1986-anticorrelation-inference",
+      "sourceId": "grangier1986-optical-anticorrelation",
+      "studyType": "computational-analysis",
+      "doi": "10.1209/0295-5075/1/4/004",
+      "journal": "Europhysics Letters",
+      "volume": "1",
+      "issue": "4",
+      "pages": "173-179",
+      "system": "Triggered radiative-cascade beam-splitter counting",
+      "preparation": "The estimator is alpha=p_c/(p_t*p_r)=N_c*N_1/(N_t*N_r). For the same ensemble of gates, the tested semiclassical model uses a nonnegative gate-averaged incident intensity, fixed splitter/output efficiencies and the linear low-detection-probability response p_t=a_t*w*<i>, p_r=a_r*w*<i>, p_c=a_t*a_r*w^2*<i^2>. Cauchy-Schwarz gives alpha>=1. The published quantum cascade model instead gives alpha=[2*f(w)*N*w+(N*w)^2]/[f(w)+N*w]^2, including accidental cascades.",
+      "observable": "Count-normalized alpha compared with the specified classical bound and quantum cascade model",
+      "finding": "The selected experiment reports alpha=0.18 +/- 0.06, below the stated semiclassical bound 1; Figure 2 error bars denote one standard deviation. For that setting the publication gives a classical expected coincidence count of at least 50 versus the 9 observed and reports a separation exceeding 13 standard deviations. A pulsed-diode control matched trigger and singles probabilities and satisfied the classical inequality. This supports nonclassical optical counting within the declared response assumptions.",
+      "limitations": [
+        "The same source, acquisition and gate selection underlie both study records. No independent replication, exact statistical replay or proof of all photon properties is supplied.",
+        "The classical bound is conditional on this common-intensity, fixed-response photodetection model, including the factorized conditional output response in its coincidence formula. It does not exclude every imaginable classical detector model. Saturated, nonlinear or spuriously correlated detector responses require separate validation.",
+        "N is the cascade-excitation rate, not the trigger rate N_1; the model relates them by N_1=epsilon_1*N. No exact f(w), source intensity, all efficiencies or full likelihood are reconstructed. The published comparison uses the same counted data, not an independent experiment.",
+        "The error distance is source-reported, not an independently recomputed Gaussian tail, exact small-count likelihood, trial-corrected significance or proof of zero systematic error. Rounded 9-versus-at-least-50 counts do not reproduce the full comparison or an uncertainty model.",
+        "Using the same source and trigger, a separately configured Mach-Zehnder experiment gave gated fringe visibility above 98 percent, with a dark-count correction below 0.3 percent. The 98.7 +/- 0.5 percent value is its ungated calibration. The arrangements are mutually exclusive; their shared source is not independent replication or a simultaneous which-path/interference measurement.",
+        "The result is compatible with a near-single-photon preparation, not proof of a literal unsplit trajectory, a deterministic photon source, electromagnetic-field quantization in every regime, all photon properties or a complete QED-to-macroscopic-light chain."
+      ],
+      "readExtent": "full-primary-article",
+      "reviewedLocators": [
+        "Pages 174-175, Equations 1-7: gate-normalized probabilities, linear semiclassical detector model and classical anticorrelation bound",
+        "Page 176, Equations 7a-8 and Figure 2: collection/detection efficiencies, finite-gate overlap, accidental cascades, timing and reported statistical errors",
+        "Page 177, first paragraph and footnote 2: selected coincidence counts, rates, dark counts, reported alpha and pulsed-diode control",
+        "Pages 177-179, Figures 3-5 and footnotes 3-4: separate Mach-Zehnder configuration, ungated calibration, gated visibility and dark correction"
+      ],
+      "metadataCheckedAt": "2026-10-18",
+      "metadataUrl": "https://doi.org/10.1209/0295-5075/1/4/004",
+      "correctionCheck": "The journal scan identifies 15 February 1986, volume 1(4), pages 173-179 and the three authors; DOI metadata agrees. No linked correction was found in the checked DOI/title search. The seven-page paper, not the later reprint or longer conference account, supplies this bounded reading."
     }
   ],
   "comparisons": [
@@ -8594,6 +8951,44 @@
       "claimIds": [
         "C-phys-cms2013-fcp-limits"
       ]
+    },
+    {
+      "id": "bali1995-width-dependence",
+      "candidate": "A constant action-profile width over the reported large-separation range.",
+      "alternative": "Logarithmic broadening within the reviewed effective-string parametrization.",
+      "sourceIds": [
+        "bali1995-flux"
+      ],
+      "claimIds": [
+        "M-phys-bali1995-profile-inference-context",
+        "C-phys-bali1995-profile-widths"
+      ],
+      "discriminator": "Figures 28-29 and the width discussion compare separation dependence; both behaviors remain compatible at the reported precision and model uncertainty.",
+      "result": "inconclusive",
+      "limit": "No preferred asymptotic width law, exact physical-QCD scale or universal tail shape follows from this finite-lattice comparison.",
+      "assumptions": [
+        "Use the same extracted profiles, potential constraints, adopted scale and geometric/tail assumptions."
+      ]
+    },
+    {
+      "id": "detmold2026-bound-state-identification",
+      "candidate": "A low-lying heavy-mass two-nucleon bound state compatible with the earlier asymmetric-correlator interpretation.",
+      "alternative": "A near-threshold scattering spectrum, or additional unresolved near-threshold states, compatible with the reviewed finite data under different spectral assumptions.",
+      "sourceIds": [
+        "detmold2026-state-bounds",
+        "detmold2026-state-summary"
+      ],
+      "claimIds": [
+        "M-phys-detmold2026-state-identification-context",
+        "C-phys-two-nucleon-state-identification-review"
+      ],
+      "discriminator": "The source compares operator-dependent estimators, residual and gap windows, asymmetric state overlaps and deliberately constructed small-gap synthetic examples.",
+      "result": "inconclusive",
+      "limit": "This selected analysis does not choose a unique bound/unbound ground-state spectrum; the synthetic examples and companion report are not independent QCD acquisitions.",
+      "assumptions": [
+        "Retain the declared heavy-mass action, single spacing/volume and shared gauge-field subset.",
+        "Distinguish N-state saturation from no-missing-states gap assumptions and from bounds requiring only the stated Hermiticity/thermal conditions."
+      ]
     }
   ],
   "openObligations": [
@@ -8685,7 +9080,17 @@
     "Confinement criteria remain specific to gauge theory, matter, state, regulator and observable. Finite pure-gauge Wilson loops, dynamical-quark screening and selected hadronic consistency are not equivalent tests or a continuum all-channel theorem. Original parent weights, minima and SOMA/maintenance order are excluded; nuclear and atomic stability require their own systems and evidence.",
     "Obtain Bulava correlators, covariance, configurations and analysis code for independent spectrum/model replay. Its relative-energy fit is correlated; its later three-state model fit is uncorrelated. Crossing distances are model conventions, not minimum-gap estimates or directly measured real-time rates.",
     "Recover CMS fractional-charge acquisition, detector/trigger response, control-sample likelihood and signal simulation before independent CLs or benchmark-mass reproduction. The color-singlet benchmark and specified charges restrict the interpretation; it is not a theory-independent fractional-charge or QCD confinement test.",
-    "Coherence conditions depend on production and detection, while wave-packet separation and unresolved-event averaging retain distinct meanings. The approximate solar profile does not establish adiabaticity or supply production/response weights; no solar trajectory, spectrum or likelihood is numerically reproduced. Four experimental chains retain separate observables and shared-data stages, without a pooled probability or new global fit."
+    "Coherence conditions depend on production and detection, while wave-packet separation and unresolved-event averaging retain distinct meanings. The approximate solar profile does not establish adiabaticity or supply production/response weights; no solar trajectory, spectrum or likelihood is numerically reproduced. Four experimental chains retain separate observables and shared-data stages, without a pooled probability or new global fit.",
+    "Gauge-field spatial structure retains a specified source-conditioned observable, theory and ensemble. The Bali-Schilling-Schlichter pure-SU(2) profiles are distinct from static-potential fits and dynamical-quark screening. Published scale/width conventions, finite-cutoff effects, operator normalization and tail-model uncertainty remain explicit. No condensate extraction, autonomous real-time feedback, universal stable-matter law, necessary parent or carrier threshold is admitted. Configurations, full covariance and complete lattice analysis are not independently replayed.",
+    "The QCD-to-nuclear bridge retains one heavy flavor-symmetric input point, source-specific threshold masses, finite-volume levels and conditional state assignments. Renormalized quark-mass sensitivity, physical-mass/continuum nuclear predictions and complete correlator/fit replay remain open. Current state-identification alternatives do not silently resolve the historical binding claim. No reviewed bulk density, compressibility, material response or astrophysical equation of state is supplied; these require separate many-body models and electromagnetic/electronic/environmental inputs.",
+    "The selected canonical single-field primordial model retains its supplied background, potential, quantum state and linear/slow-roll limits. Long-wave conservation and stochastic interpretation require their stated dominant-mode conditions. Planck TT,TE,EE+lowE supplies a conditional scalar-power inference through a shared-data response and base-LambdaCDM likelihood, not a direct quantum-origin measurement. Reheating/matching, alternative-origin model comparison, large-scale-structure data and complete numerical likelihood replay remain outside this finite application.",
+    "The Wilsonian scalar transformation, fixed-point linearization and Gaussian engineering dimensions are formal constructions, not a universal interacting scaling law or a measured coarse-graining process. The EFT expansion and weak tree contact example retain matching, coefficient, power-counting and nondecoupling limits. Higher-order weak matching, actual interacting universality basins, condensed-matter scaling data and full numerical RG or experimental-fit replay require separate scoped work; existing CMS and L3 evidence tests only their declared running descriptions.",
+    "The photon admission separates a free electromagnetic gauge/Fock construction, one named triggered optical count acquisition and its conditional anticorrelation inference. The reported significance and separate interferometer visibility are not raw-data replay or independent replication. Photon mass/charge bounds, quantitative atomic binding and universal photon-mediated organization require separately scoped sources and evidence.",
+    "Neutrino mass/mixing structure retains closed-sector, rephasing and leading phase-identifiability assumptions. The named reactor, atmospheric, solar and accelerator inferences are not a new combined likelihood or absolute-mass determination. Dirac/Majorana nature, a unique mass-generation mechanism, additional states and quantitative astrophysical/cosmological constraints remain separately sourced questions; two unequal nonzero splitting scales imply at least two nonzero masses only within the supplied common three-state interpretation.",
+    "Gauge-sector differentiation denotes an adopted Standard Model gauge/matter/Higgs decomposition, not an observed formation event or autonomous partition. Selected OPAL color-factor and historical UA1 W/Z inferences retain their own models and calibration limits; they do not determine the complete group, representations, chirality, generations or coupling origin. Generic QFT and a specified free Hamiltonian supply no universal sector-generation or maintenance mechanism.",
+    "Directional frequency dependence requires a specified model, state, physical axis and fixed-preparation rotation comparison. The selected free scalar dispersion is an isotropic formal null, not a measurement of empty-space symmetry or an anisotropic medium. No directional response, polarization tensor, excitation lifetime or Level-0 admissibility bridge is established by the source-card names, parent weights or minima.",
+    "The admitted polarization meaning is a normalized transverse photon state in a specified free Maxwell model. A passive basis change preserves that state only with the corresponding coefficient and mode transformation; changing prepared polarization alone does not identify a directional property of the environment. Material response and loop polarization, birefringence, analyzer calibration, vacuum anisotropy and excitation stability need their own models, preparations and evidence. No universal parent or Level-0 mechanism follows.",
+    "The selected free scalar model gives an isotropic dispersion and a narrow-packet group velocity, not directional damping, localization, decay or transport evidence. Single-mode phase modulus and free particle-sector conservation have their own scope; global norm conservation does not preclude an unstable subspace decay in another model. Material attenuation, response poles, proper/laboratory survival and net flux require separate definitions and measurements. No parent weights, carrier minima, polarization-to-scalar coupling or Level-0 transport/admissibility mechanism is admitted."
   ],
   "checkIds": []
 }

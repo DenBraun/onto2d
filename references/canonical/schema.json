@@ -2788,6 +2788,7 @@
                 "enum": [
                   "primary-experiment",
                   "computational-analysis",
+                  "primary-observation",
                   "experimental-reanalysis"
                 ]
               },

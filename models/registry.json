@@ -4,6 +4,76 @@
   "entries": [
     {
       "modelId": "causal-emergence",
+      "version": "2026.10.18.9",
+      "rootHash": "sha256:264bd655081ba6186c18c4d117a69a15a0b6cbf95e88e1f91416d8830a8e99c3",
+      "manifestHash": "sha256:ec2e1cdd7f684cee25ab5bcc2f9e94e5a123cfe2b5253897435a202984c50f7c",
+      "packPath": "causal-emergence/releases/2026.10.18.9/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.8",
+      "rootHash": "sha256:fd1055e2b138748ba98985bd5e4d0be56062d8a82db9c2460df9277d41cddb41",
+      "manifestHash": "sha256:1037bc31ed3553de0295ba8d336c3e2e724afad05e39953fcd183590f273f0a1",
+      "packPath": "causal-emergence/releases/2026.10.18.8/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.7",
+      "rootHash": "sha256:bd60eee30891bd7ae9d36246201c158a76bd26e7175483c75c0e9ed14307dd31",
+      "manifestHash": "sha256:54fa9b8d92f0aedf5db654a6181e52ee4484d0e014b6ec86b014f5aed94ec667",
+      "packPath": "causal-emergence/releases/2026.10.18.7/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.6",
+      "rootHash": "sha256:3bef311776441b855633a60a435bb6607388e669903770154910be56a73d8156",
+      "manifestHash": "sha256:6170147ccc9c76d9c0632577f3f730ffd2d8090e93d9567f6cdfe2e8d6631398",
+      "packPath": "causal-emergence/releases/2026.10.18.6/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.5",
+      "rootHash": "sha256:321b3404da656a84bafafab8c3f198faaf2bdcc42e0e39e3dcdf245b66e54387",
+      "manifestHash": "sha256:6119173346b3b62330a4f54b6494d2138cdc5b299ba2336829cebe5851eed392",
+      "packPath": "causal-emergence/releases/2026.10.18.5/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.4",
+      "rootHash": "sha256:eecf71785a3e8524c93719b104f2a4963f0ea85c94546889e2b432a254dc1f6b",
+      "manifestHash": "sha256:1ed42595d93613481201da6238169822d62703b427aa245d66bf296e4a9eb75a",
+      "packPath": "causal-emergence/releases/2026.10.18.4/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.3",
+      "rootHash": "sha256:aff5b97e8e6b8cb33571c533fa94885f0de056ba50a145a4f8ca593a3f634fb3",
+      "manifestHash": "sha256:52f56f879f9ce9b136284f7f1c3bfe0cfeb75c7c87b28dd62258aecab6756748",
+      "packPath": "causal-emergence/releases/2026.10.18.3/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.2",
+      "rootHash": "sha256:36beacafb8b61715790b61535bc960873884d0f39b44a37785fbb636ef0e3c6b",
+      "manifestHash": "sha256:140fd6f0696204c2a72f338aeb627a002dc7342a7c572914c54240630ead85f0",
+      "packPath": "causal-emergence/releases/2026.10.18.2/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18.1",
+      "rootHash": "sha256:a2217dbd9e44ad8a341b7afe6ae0dd5e95ffc583de22a8c7ccfe04df71ecaa09",
+      "manifestHash": "sha256:6d79293a879bf60b9a09aab7b5480046547661d0a34cc09053221b278884a469",
+      "packPath": "causal-emergence/releases/2026.10.18.1/"
+    },
+    {
+      "modelId": "causal-emergence",
+      "version": "2026.10.18",
+      "rootHash": "sha256:1d989ba05625df0beba88dfafd88c29a95e0c60ac49efedfc0d844bd0a57144c",
+      "manifestHash": "sha256:13a0d03f9119caf8d28eb32512b6ff2ab65809e4ee024ac3dda1c94989a1edcb",
+      "packPath": "causal-emergence/releases/2026.10.18/"
+    },
+    {
+      "modelId": "causal-emergence",
       "version": "2026.10.11",
       "rootHash": "sha256:6f280e59eff6dd39e8b9d5c6f9c7d8ab7e5581cfdac446a5d30a470173138053",
       "manifestHash": "sha256:d9686c86674cecbe0a3cc37f251cc01fda89cd4d039d21ebb24d782422f4b447",

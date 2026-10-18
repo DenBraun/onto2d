@@ -9,8 +9,8 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1269 records, 1081 connections, 1373 claims and 407 sources.
-The physics review contains 176 study contexts and 140 comparisons.
+The current graph contains 1333 records, 1235 connections, 1453 claims and 422 sources.
+The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
@@ -68,6 +68,259 @@ states can have changing unequal-time correlations. Card 1.26 retains this
 scoped construction; interaction-amplitude vertices, renormalization-scale
 changes and numerical sampling do not supply a universal temporal process or
 maintenance cause.
+
+## Directional field claims and an isotropic null
+
+Card 1.32 is qualified to a defined rotation comparison and an explicit
+source-support boundary. The selected domain is the frequency of a free real
+scalar excitation in infinite flat space, with a time-independent Hamiltonian,
+positive mass, a chosen Fock vacuum and no imposed directional background.
+[Tong's reviewed scalar construction](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S2.html)
+gives `E(k)=sqrt(k dot k+m^2)` in `hbar=c=1`. For `R` in `SO(3)`,
+`E(Rk)=E(k)` because a rotation preserves the scalar product. Compare nonzero
+wave vectors at fixed magnitude, mass and preparation. Equal energies do not
+identify the momentum states, and changing magnitude is not a directional test.
+
+A passive coordinate rotation transforms all vector components and any physical
+axis together. An active test changes momentum relative to a fixed physical
+axis and preparation. The chosen model supplies no preferred axis or measured
+anisotropic response. A finite cubic box or an anisotropic cutoff cannot inherit
+its unrestricted rotation symmetry. Stationarity under time translation alone
+does not determine rotational symmetry.
+
+Propagation, coupling, localization and response require different observables.
+A medium response tensor, imposed-field dispersion, directional boundary and
+empty-space symmetry hypothesis cannot substitute for one another. Polarization,
+parity violation, nonreciprocity, momentum-transfer running and time evolution
+also require their own definitions. Directional BRDF geometry does not by itself
+identify an intrinsic material or vacuum axis.
+
+The generic field framework, free scalar evolution and chosen vacuum supply no
+necessary maintenance or modulation cause for anisotropy. Parent 0.22 still
+lacks an admissibility functional, gradient definition, units, field-observable
+map and discriminating prediction; the Level-0 F12 finding remains unresolved.
+Original weights `0.30/0.25/0.20/0.25`, unit minima and SOMA property/phase labels
+do not establish physical thresholds. The original conceptual and theoretical
+placeholders supply no identifiable anisotropy publication. No experiment or
+universal vacuum-anisotropy law is admitted. Polarization and directional
+excitation stability require separate definitions and evidence; their names
+alone establish neither anisotropy nor transport.
+
+## Photon polarization and response scope
+
+Card 1.33 uses one finite meaning of polarization: the transverse state of a
+photon in the specified free Maxwell model. It extends the existing photon
+state definitions rather than supplying another required anisotropic regime.
+[Tong's selected Coulomb-gauge construction](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S6.html)
+supplies a real orthonormal transverse basis and two equal free-mode frequencies.
+
+In the fixed-frame convention, write the normalized finite-energy one-photon
+wavepacket components as `f(p)=g(p)c(p)`, with `c_dagger c=1` on the nonzero
+support of `g`. For the local transverse basis matrix `E`, its polarization
+amplitude is `e=E c`. This amplitude is distinct from the mean electric field,
+which vanishes in a one-photon number state. A passive real `O` in `SO(2)` gives
+`E'=E O`, `c'=O^T c` and `f'=O^T f`; the mode operators transform consistently.
+The polarization amplitude and quantum state then stay the same. An active
+polarization comparison keeps the basis and apparatus fixed while varying
+relative coefficients. Zero momentum, a globally continuous real basis and
+normalizable sharp-momentum states are not assumed.
+
+Both transverse modes have frequency `|p|` in this free model. A prepared
+polarization or the momentum-dependent transverse plane supplies no intrinsic
+vacuum axis or measured birefringence. Induced material polarization and
+magnetization, a loop-polarization correction and the photon state are separate
+meanings. The existing effective-alpha inference concerns scalar momentum
+transfer, while optical radiometry retains its own illumination and collection
+geometry; neither is a polarization-resolved constitutive measurement here.
+
+A response claim needs a specified model, state, background, physical rotation,
+held-fixed controls and polarization-resolved observable. No calibrated
+analyzer, material-response tensor, response experiment or numerical replay is
+admitted. The original `0.50/0.25/0.15/0.10` parent weights, unit minima and
+SOMA classifications have no physical causal force. The scalar vacuum and
+scalar time-evolution definitions do not supply electromagnetic polarizability,
+and the Level-0 gradient still lacks its field-response map. The original
+placeholders supply no identifiable supporting anisotropic-response publication.
+Polarization supplies no necessary stability, localization or transport mechanism;
+each requires its own dynamical model and evidence.
+
+## Propagation, loss and directional excitation scope
+
+Card 1.34 separates dispersion and envelope velocity, attenuation or damping,
+localization and intrinsic decay. Its finite model comparison uses the existing
+free real scalar field in infinite homogeneous flat space, positive mass and
+no imposed material, external-field or boundary axis.
+[Tong's selected free-field passages](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S2.html)
+supply `E(k)=sqrt(k dot k+m^2)`, mode phases and conserved free number sectors.
+For a smooth narrow positive-frequency envelope around nonzero `k0`, first-order
+dispersion gives `v_g=grad_k E=k/E`. A proper rotation gives
+`v_g(Rk)=R v_g(k)`, with equal speed at fixed momentum magnitude and mass.
+`E(-k)=E(k)` while the velocity reverses. A prepared packet can select its
+propagation direction without selecting a vacuum axis.
+
+Higher dispersion terms can spread or reshape the packet. Its envelope is not
+a universal position probability density, and group velocity is neither a
+signal front nor an integrated flux. A mode's unit-modulus phase does not prove
+persistent localization or retention within a detector. The chosen free number
+sector is conserved, but unitary conservation of the full state norm alone does
+not forbid amplitude leaving a selected unstable subspace in another model.
+
+Intrinsic lifetime and width retain the separate
+[PDG exponential-survival convention](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-kinematics.pdf),
+including proper versus laboratory time and the fixed Lorentz factor. Detector
+linewidth, path attenuation, scattering loss and an inferred energy width
+cannot substitute for one another. No new complex response pole, damping rate,
+localization length, lifetime or response experiment is admitted here.
+
+Axis-dependent response and opposite-direction nonreciprocity are different
+comparisons; neither alone establishes a preferred drift, net current or
+propulsion. A physical directional comparison needs its state, frame, apparatus,
+background and held-fixed controls. Anisotropy and photon polarization definitions
+supply no scalar coupling or necessary modulation of excitation persistence.
+Parent 0.23 remains an unresolved transport-bias proposal requiring an actual
+field-observable map, displacement or flux model and discriminating evidence.
+
+Original weights `0.40/0.30/0.20/0.10`, unit minima, carrier/direction codes and
+SOMA phase/property labels have no physical causal authority. Both evidence
+placeholders lack an identifiable supporting directional-stability publication.
+The original universal chain is excluded; the Level-0 F12 finding remains
+unresolved. Completing review of the 35 Level-1 cards does not establish their
+unsupported physical claims or independently reproduce their experiments.
+
+## Gauge and matter sector decomposition
+
+Card 1.29 defines an adopted Standard Model field decomposition, with the local
+algebra su(3)c + su(2)L + u(1)Y. The conventional product-group notation does
+not determine its global quotient. The selected
+[QCD](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf) and
+[electroweak](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf)
+passages specify the gauge fields, chiral matter representations and Higgs
+scalar. The declared hypercharge is Y = Y_PDG/2, so Q = T3 + Y. Fundamental
+color representations, weak doublets and singlets are representation labels;
+they are not counts of detector events or independently observable particles.
+The Higgs scalar is a boson without being a gauge vector mediator.
+
+The covariant derivative and Yukawa interactions couple the assigned fields.
+Commuting gauge factors do not isolate the interacting sectors. Chirality,
+generations, representations and couplings are supplied before choosing a
+single-doublet Higgs background. The photon/Z and charged W field combinations
+then use the declared coupling and background conventions. This change of
+description does not derive the original field content, a cosmological origin
+or a universal sequence of particle lineages. Repeated representations may mix
+subject to their couplings; a representation alone does not identify a species.
+
+The selected OPAL color-factor inference and historical UA1 W/Z mass inferences
+retain three existing contexts. OPAL ratios and converted factors share a fit,
+with the latter using T_R = 1/2. The W mass alternatives retain the assumed V-A
+structure and different recoil treatments; the Z mass retains unfinished
+calibration and omitted radiative corrections. These results constrain selected
+model-conditioned quantities; they do not uniquely reconstruct the full gauge
+group, measure all chiral representations or observe a sector-formation event.
+
+Generic QFT supplies a framework, and a Hamiltonian evolves a specified model.
+Neither provides a universal origin or maintenance law for its sectors.
+Original parent weights 0.6/0.4, unit minima and SOMA pattern/phase authority
+are excluded from active scientific semantics. The organizational description
+is a finite model convention; no dynamical attractor or persistence time is
+measured by calling it a stable pattern.
+
+## Photon states and counting evidence
+
+Card 1.23 separates free electromagnetic gauge modes, normalized one-photon states,
+response-dependent detections and conditional counting inference.
+[Tong's selected gauge-field/QED treatment](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S6.html)
+supplies Maxwell constraints, two transverse bosonic polarizations and the
+normalization used by the declared finite-energy wavepacket. Model masslessness
+and neutral transformation laws are not empirical upper bounds. The selected
+leading Coulomb potential uses an internal propagator; it is not a measured
+population of real photons or a quantitative atomic-binding construction.
+
+[Grangier, Roger and Aspect](https://doi.org/10.1209/0295-5075/1/4/004)
+supply an actual heralded radiative-cascade preparation, timing gates, output
+singles and coincidences. The selected point reports 9 coincidences in about
+5 hours and alpha = 0.18 +/- 0.06. The classical bound alpha >= 1 requires the
+stated common-intensity, linear and factorized detection model. Counts and the
+statistic inferred from them share an acquisition; the source-reported
+significance is not an independently replayed likelihood. The complete
+transmitted count, event stream and detector calibration are not provided in
+the reviewed article.
+The same-source Mach-Zehnder comparison uses a separate configuration, with
+gated visibility above 98 percent; it does not show simultaneous which-path
+information or a persistent distinguishable photon trajectory.
+
+Existing capture-wavelength and corrected meson radiative-ratio evidence retain
+their own preparations, calibration versions and response assumptions. These
+observables cannot be pooled into a universal photon census. Generic Compton,
+photoelectric and precision-QED placeholders do not admit unread experiments.
+Original parent weights, unit minima, universal formation/maintenance,
+preferred-vacuum direction and biological-organization claims are excluded.
+
+## Effective theories and renormalization-group flow
+
+Card 1.21 distinguishes a Wilsonian cutoff transformation, a subtraction-scale
+RG equation, an experimental hard scale and physical time.
+[Wilson and Kogut](https://doi.org/10.1016/0370-1573(74)90023-4) supply the
+selected scalar shell/rescaling and fixed-point passages. The retained-mode
+generating-functional identity requires its regulated model and source range;
+it does not identify a Wilsonian action with the one-particle-irreducible action.
+For the declared infrared coordinate, positive scaling eigenvalues are relevant,
+negative ones irrelevant and zero only linearly marginal. The Gaussian example
+illustrates engineering dimensions; operator mixing, subtractions and nonlinear
+flow prevent treating it as a universal interacting-theory eigenbasis.
+
+[Georgi's formal EFT review](https://doi.org/10.1146/annurev.ns.43.120193.001233)
+supplies a local operator expansion, coefficient assumptions and perturbative
+matching logic. The existing weak contact limit provides a bounded tree example.
+Matching coefficients are boundary inputs to running, with consistent schemes,
+operators and matrix elements; a beta function alone does not determine them.
+Heavy effects remain in light parameters and higher operators. Controlled
+suppression requires the stated hierarchy, coupling and power-counting conditions;
+it is neither automatic MSbar decoupling nor a claim that microscopic physics
+disappears. No full Appelquist-Carazzone proof or loop matching is claimed.
+
+The existing [CMS jet-ratio comparison](https://arxiv.org/abs/1304.7498v2) and
+[L3 small-angle fit](https://arxiv.org/abs/hep-ex/0002035v1) retain their own
+response, coupling conventions, shared data and uncertainty. L3's slope and
+inverse-coupling difference reuse one fit, and its zero deformation means
+nominal running. These results test their declared parameter-running descriptions;
+they do not directly observe Wilsonian elimination or establish every universality
+class. Condensed-matter scaling data and a general theorem about stable low-energy laws
+are outside this finite scope. Original necessary parents, weights, carrier
+minima, SOMA phase/type authority and temporal/downward-causation claims are excluded.
+
+## Primordial curvature and CMB inference
+
+Card 1.20 has a conditional single-field construction, distinct from the
+flat-space vacuum of card 1.5. [Mukhanov's constrained scalar action](https://jetp.ras.ru/cgi-bin/dn/e_067_07_1297.pdf)
+and the [canonical limit of Garriga and Mukhanov](https://arxiv.org/abs/hep-th/9904176v1)
+define the background, gauge-invariant mode, normalization and curvature power.
+The potential, background and initial state are inputs. The leading slow-roll
+amplitude labels the late growing mode by Hubble crossing; it is not the exact
+power at crossing. Turning points, non-attractor evolution and later matching
+retain their stated limitations.
+
+[Polarski and Starobinsky](https://arxiv.org/abs/gr-qc/9504030v2) distinguish an
+equal-time Gaussian amplitude distribution from a stronger stochastic
+trajectory approximation that neglects a subleading solution. Their free scalar
+is not silently equated with the constrained curvature variable. Neither
+description establishes a universal decoherence mechanism, removes the exact
+commutator or identifies a unique quantum origin.
+
+The Planck 2018 chain separates [observed maps and spectrum response](https://arxiv.org/abs/1907.12875v2)
+from the [base-LambdaCDM transfer, priors and posterior](https://arxiv.org/abs/1807.06209v4).
+The selected TT,TE,EE+lowE combination yields `n_s=0.9649 +/- 0.0044` and
+`ln(10^10 A_s)=3.045 +/- 0.016`, marginalized 68% intervals at
+`k_*=0.05 Mpc^-1`. [The inflation analysis](https://arxiv.org/abs/1807.06211v2)
+reports the same joint result using the same data; it is not an independent
+replication. Physical lensing of the angular spectra remains in the model;
+the separate lensing-reconstruction likelihood and external datasets are excluded.
+Coadded display curves retain their different nuisance and error conventions.
+
+Measured angular correlations are distinct from inferred primordial parameters.
+A compatible power law does not measure an initial vacuum or an inflaton
+potential. Large-scale-structure data and matter evolution are outside this
+finite CMB application. No Planck likelihood replay, universal formation rule,
+necessary parent, original weight, carrier minimum or SOMA stage is admitted.
 
 ## Electroweak model and boson observation
 
@@ -195,6 +448,46 @@ or likelihood replay are claimed. These published outcomes receive no
 local executable certification. Their width/loop and unreconciled-table
 obligations remain attached to these records.
 
+## Neutrino mass and mixing structure
+
+Card 1.25 distinguishes a neutrino mass/mixing description from its unknown
+origin. The [selected PDG mass and lepton-mixing sections](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf)
+supply the minimal renormalizable Standard Model boundary and alternative
+massive-neutrino constructions. Its charged-fermion Yukawa terms do not
+automatically generate neutrino masses. Added singlet fields or a higher-dimension
+Majorana operator are formal alternatives, without a measured mechanism choice.
+
+A supplied closed three-active model has three angles and a generic Dirac phase;
+the two additional Majorana column phases cancel from ordinary flavor-oscillation
+probabilities. Row/column phase invariance of those probabilities does not
+permit arbitrary Majorana field rephasings in a real-mass Lagrangian. Degeneracies,
+zero masses and vanishing angles can reduce physical parameter counts.
+Closed three-active unitarity is a declared restriction, not a universal theorem
+excluding additional states or nonunitary effective mixing.
+
+At fixed mixing, baseline and energy, an allowed common mass-squared shift
+changes only a common phase in the leading ultrarelativistic vacuum model.
+Two nonzero, unequal differences from one reference require three distinct
+squared masses and at least two nonzero masses. They allow one mass to vanish;
+equal nonzero differences alone do not imply that conclusion. No absolute scale
+or quantitative mass-ordering inference follows from this formal identity.
+
+The existing KamLAND reactor and historical Super-Kamiokande atmospheric fits
+retain their effective two-flavor conventions. SNO's joint non-electron active
+solar component is not a mass-splitting measurement. OPERA appearance and its
+full-mixing parameter comparison share one inference context. These five outcomes
+supply four named contexts, without a new combined likelihood, modern eigenpair
+assignment or extra independent replication. Source-specific confidence and
+response assumptions remain with each result.
+
+Absolute mass, Dirac/Majorana nature, Majorana phases, sterile content and
+parameter origin remain unresolved by this selected evidence. Beta-endpoint,
+neutrinoless-double-beta and cosmological mass limits are outside this scope.
+The matter potential uses vacuum masses/mixing as inputs; it does not create them.
+Propagation and transport applications retain card 1.17's existing boundaries.
+The original necessary parent, weight, carrier minima and SOMA classification
+supply no measured formation or maintenance law.
+
 ## Neutrino propagation and its limits
 
 Card 1.17 is scoped to conditional propagation between flavor-sensitive
@@ -203,8 +496,9 @@ measurement basis; mass differences and mixing specify model inputs. Relative
 phases are not continuously measured flavor jumps. A vacuum mass eigenstate
 or a mixture diagonal in the vacuum mass basis has constant flavor-readout
 probabilities. Necessary parents, weights 0.3/0.7, unit carrier minima, SOMA
-phase/type and universal flavor non-autonomy are excluded. Card 1.25 retains
-its separate mass-origin and remaining source-review obligations.
+phase/type and universal flavor non-autonomy are excluded. Card 1.25 separately
+defines mass/mixing identifiability while leaving the mass-generation mechanism
+unspecified.
 
 [Akhmedov and Smirnov](https://arxiv.org/abs/0905.1903v2) supply scoped
 production/detection indistinguishability, effective packet overlap and
@@ -355,7 +649,8 @@ define universal carrier minima. Published values retain their publication date
 and uncertainty meaning; no detector analysis is independently reproduced.
 
 Confinement has declared theory-specific criteria and separately scoped lattice
-and phenomenological evidence. Universal self-organization remains an open scope.
+and phenomenological evidence. Source-conditioned spatial profiles retain their
+operator and theory; no universal autonomous self-organization is established.
 The Level-0 carrier-promotion hypothesis also needs a derived quantum algebra,
 state space, dynamics and observable map before it can connect to this branch.
 
@@ -488,6 +783,52 @@ distinct from time evolution. Formal sector choices supply no measured
 necessary arising order, original 0.4/0.6 weights, one-carrier minima or
 universal SOMA process classification. Confinement criteria, self-organization
 and broader running-coupling claims keep their separate scopes.
+
+## Source-conditioned gauge-field structure
+
+Card 1.18 is qualified to non-Abelian interaction definitions and specified
+source-conditioned lattice observables. The QCD self-coupling convention is
+SU(3); the newly reviewed profile calculation is pure SU(2) with external
+fundamental static sources and no sea quarks. A diagram loop, Wilson contour,
+Monte Carlo update or Euclidean projection does not establish feedback through
+physical time, an autonomous formation process or causal maintenance.
+
+[Bali, Schilling and Schlichter](https://arxiv.org/abs/hep-lat/9409005v1)
+provide Wilson-loop-normalized, vacuum-subtracted plaquette contrasts. Smeared
+source operators improve ground-state overlap while the local probe remains
+unsmeared. The mapped quantities are expectations of squared field components,
+not signed color vectors or directly imaged gluon populations. Their finite-cutoff
+energy/action conventions, normalization and source-region artifacts remain
+explicit. Finite-volume and spacing comparisons do not complete a physical
+SU(3) continuum calculation.
+
+The four preparations retain their different volumes, spacings and sampling.
+Physical units use an adopted square-root string tension of 440 MeV as an
+orientation for pure SU(2), with dimensionless K=a^2*kappa. The report's Table 1
+caption and adjoining scale statement contain inconsistent powers of a;
+the consistent conversion and printed discrepancy are recorded. The potential
+used for that scale and the local field profiles reuse configurations, but
+they are different observables.
+
+Spatial profiles and inferred widths have separate records. The transverse
+root-mean-square width depends strongly on unmeasured tails; the quoted
+0.5-0.75 fm range is a model range, not a confidence interval. The report calls
+rho a half width, while its defining formulas give the full span at half maximum.
+The physical FWHM a*rho is approximately 0.7 fm under that convention and scale.
+Constant width and logarithmic broadening remain compatible with the reported
+data.
+Changes between aligned static-source separations do not measure temporal
+field growth or a universal critical formation distance.
+
+The synthesis reuses Creutz's finite pure-SU(2) loops and the different Bali
+and Bulava dynamical-quark SU(3) spectra without pooling their theories or
+samples. A profile does not determine a renormalized vacuum condensate;
+condensate-like organization is excluded without its operator, prescription
+and reviewed extraction. Universal matter stability, original weights 0.6/0.4,
+necessary arising/maintenance parents, unit carrier minima and SOMA phase/type
+authority are excluded. Configurations, full covariance and the complete
+simulation/analysis chain remain unreproduced. Qualified neighboring cards
+retain their own scopes.
 
 ## Bipartite states and Bell tests
 
@@ -1178,6 +1519,46 @@ Local calculations identify their executable sources and use
 `analytically-checked` claims. Their study records carry no journal metadata.
 Definitions, published measurements and bounded calculations retain distinct
 evidence roles.
+
+## Specified QCD-to-nuclear-energy bridge
+
+Card 1.19 is qualified to declared QCD inputs and a two-nucleon energy
+observable. Existing calibrated hadron spectra and convention-dependent
+isospin components retain their own theories and inputs. Measured deuteron
+binding and mass-adjustment results are separate evidence; they are not
+outputs of the new heavy-quark calculation.
+
+[Beane et al.](https://arxiv.org/abs/1206.5219v2) use three degenerate flavors
+near the strange mass, without QED, on three volumes at one lattice spacing.
+Flavor symmetry is distinct from QCD's color gauge symmetry. The bare mass
+parameter is not a renormalized MSbar mass. Conversion to MeV adopts an
+Upsilon-spectrum scale whose upstream determination is not reproduced.
+
+At rest, the finite-volume observable is DeltaE=E_NN-2*M_B from the compatible
+ensemble. Its negative sign does not alone establish binding in infinite
+volume. Operator choices, Euclidean-time fits and the shared baryon threshold
+remain attached to the reported shifts. The authors' largest-volume rest/boost
+averages give conditional binding estimates of 19.5 and 15.9 MeV for the
+deuteron and dineutron channels, with separate statistical, fit and scale
+uncertainties. These are not measured physical nuclear binding energies.
+
+The paired [2026 methodological preprints](https://arxiv.org/abs/2601.22272v1)
+and [summary](https://arxiv.org/abs/2601.22273v1) compare spectral estimators and
+two-sided constraints under explicit assumptions. They reuse a subset of the
+earlier gauge fields with new correlators and operators. The two reports are
+one analysis, not independent replications. Unresolved states and finite-volume
+interpretation remain material limits; this graph does not settle whether the
+heavy-mass two-nucleon ground states are bound. The sources remain preprints
+with archival identifiers and no invented journal metadata.
+
+A fixed quark-mass point does not determine a response derivative. Controlled
+sensitivity requires an input variation and a declaration of what is held
+fixed, including scale and calibration. Bulk density, compressibility and
+astrophysical matter require a reviewed many-body model, composition and state
+variables. No such prediction or direct quark-to-material-property edge is
+admitted. A later material model must also state its electromagnetic, electronic
+and environmental assumptions. Original parent weights, arising/maintenance
+necessity, unit carrier minima and SOMA phase/type authority are excluded.
 
 ## Pion decay channels
 

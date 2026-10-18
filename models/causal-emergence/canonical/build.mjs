@@ -39,8 +39,10 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   const nodes = graph.entities.map((entity) => ({
     ...entity, typeRole: entity.kind, scientificStatus: entity.status,
-    shortDescription: entity.description, rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id)
+    rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id)
   }));
+  // Entity summaries derive from description at presentation time. Keep that
+  // source text once; construction rules below retain their distinct summary.
   // Relations reference the complete claims in dictionaries.claims. Expanding
   // their sources and study contexts again on every edge duplicates evidence
   // without adding information; selected nodes keep self-contained rationale.
@@ -141,6 +143,32 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/oscillation-coherence.mjs",
     "models/causal-emergence/canonical/oscillation-solar.mjs",
     "models/causal-emergence/canonical/oscillation-formal.mjs",
+    "models/causal-emergence/canonical/gluon-flux.mjs",
+    "models/causal-emergence/canonical/gluon-structure.mjs",
+    "models/causal-emergence/canonical/nuclear-lattice.mjs",
+    "models/causal-emergence/canonical/nuclear-state-review.mjs",
+    "models/causal-emergence/canonical/nuclear-bridge.mjs",
+    "models/causal-emergence/canonical/cosmology-formal.mjs",
+    "models/causal-emergence/canonical/cosmology-classical.mjs",
+    "models/causal-emergence/canonical/cosmology-cmb.mjs",
+    "models/causal-emergence/canonical/cosmology-scope.mjs",
+    "models/causal-emergence/canonical/rg-formal.mjs",
+    "models/causal-emergence/canonical/eft-matching.mjs",
+    "models/causal-emergence/canonical/rg-scope.mjs",
+    "models/causal-emergence/canonical/photon-formal.mjs",
+    "models/causal-emergence/canonical/photon-anticorrelation.mjs",
+    "models/causal-emergence/canonical/photon-scope.mjs",
+    "models/causal-emergence/canonical/neutrino-mass-formal.mjs",
+    "models/causal-emergence/canonical/neutrino-mass-identifiability.mjs",
+    "models/causal-emergence/canonical/neutrino-mass-scope.mjs",
+    "models/causal-emergence/canonical/gauge-sector-model.mjs",
+    "models/causal-emergence/canonical/gauge-sector-boundary.mjs",
+    "models/causal-emergence/canonical/gauge-sector-scope.mjs",
+    "models/causal-emergence/canonical/scalar-dispersion-isotropy.mjs",
+    "models/causal-emergence/canonical/field-anisotropy-boundary.mjs",
+    "models/causal-emergence/canonical/polarization-state-scope.mjs",
+    "models/causal-emergence/canonical/scalar-propagation.mjs",
+    "models/causal-emergence/canonical/directional-stability-scope.mjs",
     "models/causal-emergence/canonical/entanglement-formal.mjs",
     "models/causal-emergence/canonical/entanglement-vacuum.mjs",
     "models/causal-emergence/canonical/entanglement-bell.mjs",

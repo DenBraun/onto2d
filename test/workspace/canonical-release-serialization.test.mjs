@@ -7,6 +7,7 @@ import { buildModelPack, verifyModelPack } from "@onto2d/model-pack";
 import { loadModelPackDirectory } from "@onto2d/model-pack/node";
 import { hashArtifactBytes } from "@onto2d/kernel";
 import {
+  compileCanonicalGraph,
   verifyCanonicalRelease,
   writeCanonicalRelease
 } from "../../models/causal-emergence/canonical/build.mjs";
@@ -43,6 +44,36 @@ async function snapshot(directory, pack) {
     return { relative, bytes: await readFile(filename), modified: (await stat(filename, { bigint: true })).mtimeNs };
   }));
 }
+
+test("canonical entities retain source descriptions and evidence without generated duplicate summaries", () => {
+  const publication = { id: "publication", title: "Scoped evidence" };
+  const claim = { id: "claim", statement: "A scoped definition", citations: [{ sourceId: "publication", locator: "Definition 1" }] };
+  const entity = { id: "entity", name: "Entity", kind: "definition", status: "definition", level: 1,
+    description: "A source description with its explicit evidence boundary", claimIds: ["claim"] };
+  const rule = { id: "rule", name: "Conditional rule", conditions: ["A declared gate", "A second gate"],
+    inputs: [], outputEntityIds: [], claimIds: ["claim"] };
+  const data = {
+    graph: { model: { id: "projection-fixture", name: "Projection fixture", version: "1" },
+      scope: { summary: "A scoped presentation fixture" }, entities: [entity], rules: [rule],
+      relations: [], sources: [publication], claims: [claim] },
+    readiness: { nodeRoles: [{ nodeId: "entity", role: "definition" }, { nodeId: "rule", role: "rule-specification" }] },
+    dictionaryReview: { records: [] }, pilot: { studies: [] },
+    routing: { studies: [], contexts: [], reviews: [], measurements: [], routes: [] }, routingPolicy: {},
+    optics: { studies: [] }, visual: { studies: [] }, neural: { studies: [] }, physics: { studies: [] }
+  };
+  const before = structuredClone(data);
+  const pack = compileCanonicalGraph(data, {}, [{ path: "source.json", hash: hashArtifactBytes(new TextEncoder().encode("fixture")) }]);
+  const [compiledEntity, compiledRule] = pack.files["model/nodes.json"];
+  assert.equal(compiledEntity.description, entity.description);
+  assert.equal(Object.hasOwn(compiledEntity, "shortDescription"), false);
+  assert.deepEqual(compiledEntity.rationale, [{ ...claim, contexts: [], experimentalContexts: [],
+    citations: [{ ...claim.citations[0], source: publication }] }]);
+  assert.equal(compiledRule.shortDescription, "A declared gate; A second gate");
+  assert.notEqual(compiledRule.shortDescription, compiledRule.description, "Rule-specific summaries remain distinct");
+  assert.deepEqual(pack.files["model/dictionaries.json"].claims, [claim]);
+  assert.deepEqual(data, before, "Compaction changes the generated projection only");
+  assert.deepEqual(verifyModelPack(pack), pack);
+});
 
 test("canonical compact bundle and semantic splits preserve loader identity and readable metadata", async () => {
   await withDirectory(async (directory) => {

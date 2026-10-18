@@ -18,7 +18,7 @@ const identity = Object.freeze({
   manifestHash: hash("b")
 });
 const nodes = [
-  { id: "a", name: "Alpha", description: "Heavy alpha record", evidence: [{ source: "fixture" }] },
+  { id: "a", name: "Alpha", shortDescription: "Brief alpha summary", description: "Heavy alpha record", evidence: [{ source: "fixture" }] },
   { id: "b", name: "Beta", level: 1 },
   { id: "c", name: "Gamma", level: 1 },
   { id: "d", name: "Delta", level: 2 }
@@ -48,6 +48,7 @@ test("lazy presentation pages lightweight records under one exact model identity
   assert.equal(first.nextOffset, 2);
   assert.equal(second.nextOffset, null);
   assert.equal(Object.hasOwn(first.items[0], "data"), false);
+  assert.equal(first.items[0].shortDescription, "Brief alpha summary");
   assert.equal(JSON.stringify(first).includes("Heavy alpha record"), false);
   assert.deepEqual(first.identity, second.identity);
   assert.ok(Object.isFrozen(first.items[0]));

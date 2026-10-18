@@ -10,7 +10,7 @@ const pack = buildModelPack({
   model: { id: "fixture", name: "Fixture", version: "1" },
   source: { id: "fixture-source", files: [{ path: "fixture.json", hash: sourceHash }] },
   nodes: [
-    { id: "a", name: "Alpha", description: "Only explicit inspection should expose this." },
+    { id: "a", name: "Alpha", shortDescription: "Brief alpha summary", description: "Only explicit inspection should expose this." },
     { id: "b", name: "Beta" }
   ],
   edges: [{ id: "a-b", source: "a", target: "b" }],
@@ -41,6 +41,8 @@ test("engine creates an identity-bound lazy presentation only from a fully verif
   });
   assert.equal(presentation.catalog().items.length, 1);
   assert.equal(presentation.catalog().items[0].description, undefined);
+  assert.equal(presentation.catalog().items[0].shortDescription, "Brief alpha summary");
+  assert.equal(JSON.stringify(presentation.catalog()).includes("Only explicit inspection should expose this."), false);
   assert.equal(presentation.inspect("a").record.description, "Only explicit inspection should expose this.");
 });
 

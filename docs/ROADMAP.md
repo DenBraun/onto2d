@@ -23,14 +23,16 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 176 remain on the
+graph. Of the 249 original source cards, 166 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-73 cards is a source-review census, not a percentage of scientifically supported
+83 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Ten Level-1 cards remain pending.
+All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
+assertions remain excluded or explicitly limited; this is not independent
+validation of the physical branch.
 
-The current graph contains 1269 records, 1081 connections, 1373 claims and 407 sources.
+The current graph contains 1333 records, 1235 connections, 1453 claims and 422 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -72,6 +74,9 @@ selected bytes, and published releases cannot be reformatted in place.
 Relations reference complete dictionary claims through `claimIds`; their
 sources and contexts are stored once in those dictionaries instead of being
 expanded again on every edge. Selected-node evidence remains self-contained.
+Entity descriptions are stored once; full and lazy catalogues derive their
+summaries consistently. Explicit short summaries and the distinct construction
+rule summaries remain authoritative. Source descriptions and evidence are retained.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,
@@ -92,6 +97,34 @@ belong to the current claims.
    Their original weights, minima and SOMA phase ordering are not established.
    Card 1.26 has explicit free-field time evolution with a separate finite
    oscillator witness; scale changes and numerical sampling are distinct.
+   Card 1.29 defines a chosen gauge/matter/Higgs decomposition with explicit
+   chiral representations, hypercharge normalization and cross-sector coupling.
+   Gauge indices and field components are distinct from physical excitations;
+   the selected Higgs background does not generate the original field content.
+   OPAL and historical UA1 inferences retain their conditional process scope.
+   Universal differentiation, autonomous sectors and parent/maintenance rules
+   are excluded.
+   Card 1.32 defines a fixed-preparation rotational comparison using the
+   isotropic free scalar dispersion as a formal null. Coordinate changes do
+   not select a physical axis. Unsupported vacuum/admissibility assertions,
+   parent weights and carrier minima are excluded; polarization and directional
+   excitation stability require separately scoped models and evidence.
+   Card 1.33 uses a normalized transverse photon state and a local polarization
+   basis. Passive coefficient/mode changes preserve the same state; preparing
+   polarization is distinct from a material or loop response and supplies no
+   vacuum axis, birefringence or directional stability mechanism.
+   Card 1.34 separates free scalar envelope propagation from damping, localization,
+   intrinsic decay and transport. Its group velocity is a model deduction, not a
+   directional lifetime or drift measurement. Pole/ensemble decay conventions
+   retain their own scope; no universal stability or Level-0 transport bridge
+   follows from anisotropy, polarization or unitary norm conservation.
+   Card 1.23 separates Maxwell gauge/Fock definitions, normalized one-photon
+   states, triggered optical counts and response-conditioned anticorrelation.
+   The counting and inference records share data; separate same-source
+   interference is not independent replication. Selected radiative observables
+   retain their calibration and analysis boundaries. Empirical mass/charge
+   bounds, permanent identity, atomic binding and universal parent rules are
+   not established by this finite scope.
    Historical Higgs/Weinberg constructions and the ATLAS 2012 observation
    separate model parameters, selected channels, response and fitted inferences.
    CMS tau-pair evidence separates selected bins, the fixed-mass rate fit,
@@ -117,14 +150,20 @@ belong to the current claims.
    two-flavor adiabatic approximation, with no inferred solar mechanism edge.
    OPERA accelerator tau appearance retains its selected decay channels,
    modeled expectations, calibrated significance and same-data 90% interval.
+   Card 1.25 has explicit mixing/rephasing and mass-identifiability boundaries.
+   A common squared-mass offset remains unidentifiable in the supplied leading
+   vacuum phase; two unequal nonzero differences imply at least two massive
+   states conditionally. The four historical inference contexts retain their
+   model and shared-data limits. Absolute mass, mass ordering, Majorana nature,
+   additional states and a unique mass-generation mechanism are not established.
    Card 1.17 is qualified to these experimental scopes and to explicit
    production/detection coherence, packet overlap and unresolved-event averaging.
    A prescribed solar density and conditional adiabatic survival expression
    keep production and response weights external; resonance alone does not
    establish conversion. The qualitative astrophysical propagation implication
    is retained, while quantitative transport and cosmological predictions are
-   excluded without their additional inputs. Card 1.25 remains pending for mass
-   origin and its remaining assertions. Original weights, minima, SOMA ordering
+   excluded without their additional inputs. Mass origin remains unspecified
+   within the qualified scope of card 1.25. Original weights, minima, SOMA ordering
    and universal flavor-instability claims are not admitted.
    Finite bipartite definitions distinguish entanglement, projective Bell
    locality and unconditioned marginals. Two Delft Bell runs preserve separate
@@ -169,6 +208,43 @@ belong to the current claims.
    different gauge groups, sea content and calibration. A universal process
    classification, weighted necessary parents and one-carrier thresholds are
    excluded. Full experimental and computational replay remains open.
+   Card 1.18 is qualified to source-conditioned gauge-field structure. A pure-SU(2)
+   Wilson-loop/plaquette calculation supplies explicit vacuum subtraction,
+   operator conventions, finite-volume/spacing controls and a separate width
+   inference. Adopted scale, printed scale/width conventions, shared sampling
+   and tail-model uncertainty remain attached to those records. The data allow
+   both constant width and logarithmic broadening. Formal self-coupling, local
+   profiles and dynamical-quark screening are distinct; no renormalized vacuum
+   condensate, real-time feedback, universal stable-matter law, necessary parent,
+   carrier minimum or SOMA phase/type authority follows. No full lattice replay
+   or physical-SU(3) continuum profile is claimed.
+   Card 1.19 is qualified to specified QCD-to-nuclear-energy calculations.
+   A three-flavor heavy-mass lattice study separates ensemble/scale inputs,
+   finite-volume two-nucleon shifts and conditional binding assignments.
+   The paired 2026 state-identification preprints preserve spectral assumptions,
+   a shared gauge-field subset and an unresolved bound/unbound verdict.
+   Fixed-input calculations, quark-mass sensitivity and measured nuclear masses
+   remain distinct. Bulk density, compressibility and astrophysical equations
+   of state require separate many-body models and are not admitted here.
+   No original parent weights, necessary maintenance or carrier minima follow.
+   Card 1.20 is qualified to a linear canonical single-field model and one
+   Planck 2018 TT,TE,EE+lowE application. Gauge-invariant curvature power,
+   conditional long-wave conservation and a restricted stochastic approximation
+   are separate from observed angular statistics, response and a primordial
+   amplitude/tilt posterior. The background, state, transfer model and priors
+   remain declared assumptions. Shared sky data are not independent replications;
+   the selected fit does not measure an initial vacuum or uniquely establish
+   quantum generation. Large-scale-structure evidence, later matching and full
+   likelihood replay require their own review. Original necessary parents,
+   weights, carrier minima and SOMA phase/type authority are excluded.
+   Card 1.21 has scoped Wilsonian and subtraction-scale definitions, local
+   fixed-point classification and a finite Gaussian engineering-dimension example.
+   An EFT operator expansion and the existing weak contact limit retain matching
+   inputs, truncation order and nondecoupling conditions. CMS and L3 supply only
+   their reviewed running comparisons, preserving shared data and distinct
+   coupling conventions. No new condensed-matter scaling evidence or general
+   universality theorem is claimed. Original necessary parents, weights, carrier
+   minima, physical-time flow and universal downward causation are excluded.
    Continue with independent structure-function tests, spectroscopy and the
    remaining dependency claims; a theory input to an interpretation does not
    establish a formation process. Wider field-region models and information

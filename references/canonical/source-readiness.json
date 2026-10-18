@@ -11775,6 +11775,582 @@
       ]
     },
     {
+      "nodeId": "phys:static-source-plaquette-density",
+      "role": "definition",
+      "denotes": "A vacuum-subtracted, Wilson-source-conditioned expectation of color-contracted squared fields, with explicit finite-lattice matching.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-static-source-plaquette-density"
+      ]
+    },
+    {
+      "nodeId": "phys:transverse-flux-width",
+      "role": "definition",
+      "denotes": "Specified radial rms and full half-maximum widths of a central scalar profile, rather than a formation threshold or universal tube size.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-transverse-flux-width"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-flux-ensemble-context",
+      "role": "model-context",
+      "denotes": "The four finite pure-gauge ensembles, their static-source preparation and adopted scale convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bali1995-flux-ensemble-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-field-extraction-context",
+      "role": "model-context",
+      "denotes": "The specified Euclidean extraction of squared-field contrasts and the shared-ensemble potential used in later normalization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bali1995-field-extraction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-field-profiles",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported finite-lattice action/energy contrasts; especially the long action profile in the common source geometry.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bali1995-field-profiles"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-profile-inference-context",
+      "role": "model-context",
+      "denotes": "The conditional central-profile fits and geometric width construction using shared potential and normalization inputs.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bali1995-profile-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bali1995-profile-widths",
+      "role": "scoped-phenomenon",
+      "denotes": "Published model-conditioned action rms/FWHM estimates and their unresolved constant-versus-logarithmic dependence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bali1995-profile-widths"
+      ]
+    },
+    {
+      "nodeId": "phys:source-conditioned-field-structure",
+      "role": "definition",
+      "denotes": "An observable-dependent gauge-field scope; no autonomous formation or maintenance stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-source-conditioned-field-structure"
+      ]
+    },
+    {
+      "nodeId": "phys:gauge-field-structure-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison of distinct lattice observables and theories; no pooled experiment or universal confinement/stability result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-gauge-field-structure-evidence"
+      ]
+    },
+    {
+      "nodeId": "phys:nuclear-lattice-energy-shift",
+      "role": "definition",
+      "denotes": "A rest-frame finite-volume energy difference and sign convention relative to the same-ensemble two-baryon threshold.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-nuclear-lattice-energy-shift"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-nuclear-ensemble-context",
+      "role": "model-context",
+      "denotes": "The fixed action, flavor-degenerate bare masses, three finite volumes, common sampling and adopted physical scale.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-ensemble-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-nuclear-extraction-context",
+      "role": "model-context",
+      "denotes": "The restricted two-nucleon operators, correlated energy fits and shared single-baryon threshold.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-extraction-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-two-nucleon-shifts",
+      "role": "scoped-phenomenon",
+      "denotes": "Published rest-frame fitted two-nucleon deficits on each finite lattice, before the separate infinite-volume binding interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-beane2013-two-nucleon-shifts"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-nuclear-binding-context",
+      "role": "model-context",
+      "denotes": "The original finite-volume and moving-system reasoning used to interpret fitted shifts as a two-nucleon binding estimate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-beane2013-nuclear-binding-context"
+      ]
+    },
+    {
+      "nodeId": "phys:beane2013-two-nucleon-binding",
+      "role": "scoped-phenomenon",
+      "denotes": "The historical, source-reported two-nucleon binding interpretation at one unphysical mass point, with its finite-state and extrapolation assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-beane2013-two-nucleon-binding"
+      ]
+    },
+    {
+      "nodeId": "phys:detmold2026-state-identification-context",
+      "role": "model-context",
+      "denotes": "The source-reported 2026 lattice calculation and its explicit state-identification assumptions, not a local numerical replay.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-detmold2026-state-identification-context"
+      ]
+    },
+    {
+      "nodeId": "phys:two-nucleon-state-identification-review",
+      "role": "scoped-phenomenon",
+      "denotes": "A literature synthesis of unresolved heavy-mass bound-state identification; neither proof of binding nor proof of its absence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-two-nucleon-state-identification-review"
+      ]
+    },
+    {
+      "nodeId": "phys:qcd-nuclear-energy-bridge",
+      "role": "definition",
+      "denotes": "A declared conditional map from specified QCD inputs to a nuclear energy observable; no universal bulk-property effect.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-qcd-nuclear-energy-bridge"
+      ]
+    },
+    {
+      "nodeId": "phys:qcd-nuclear-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison preserving distinct theories, inputs and state-identification limits; no bulk-material prediction.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-qcd-nuclear-evidence-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:single-field-cosmology",
+      "role": "definition",
+      "denotes": "The supplied canonical scalar/Einstein action, flat expanding background and reduced-Planck-mass convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-single-field-cosmology"
+      ]
+    },
+    {
+      "nodeId": "phys:canonical-curvature-mode",
+      "role": "definition",
+      "denotes": "The constrained scalar perturbation Q, canonical variable v and comoving-curvature R, including their gauge and nonzero-background conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-canonical-curvature-mode"
+      ]
+    },
+    {
+      "nodeId": "phys:primordial-curvature-spectrum",
+      "role": "definition",
+      "denotes": "The dimensionless two-point power of the declared R operator and state, plus its conditional leading slow-roll normalization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-primordial-curvature-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:superhorizon-curvature-evolution",
+      "role": "definition",
+      "denotes": "The constant and integral long-wave curvature solutions and the explicit conditions for neglecting the second mode.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-superhorizon-curvature-evolution"
+      ]
+    },
+    {
+      "nodeId": "phys:gaussian-cosmological-mode-statistics",
+      "role": "definition",
+      "denotes": "A Gaussian equal-time amplitude representation conditional on the supplied free-field state and normalization, not a measured classicalization event.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gaussian-cosmological-mode-statistics"
+      ]
+    },
+    {
+      "nodeId": "phys:cosmological-growing-mode-classical-limit",
+      "role": "definition",
+      "denotes": "A conditional dominant-mode stochastic interpretation with explicit approximation and decoherence boundaries, not a unique empirical origin mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-cosmological-growing-mode-classical-limit"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-cmb-acquisition-context",
+      "role": "experimental-context",
+      "denotes": "A named astronomical observation and map selection, not a controlled intervention on primordial conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-planck2018-cmb-acquisition-context"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-cmb-response-context",
+      "role": "model-context",
+      "denotes": "The reported map-to-spectrum response, foreground and calibration treatment; no new independent acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-planck2018-cmb-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-angular-spectra",
+      "role": "scoped-phenomenon",
+      "denotes": "Processed angular-correlation estimates of the observed CMB sky, distinct from an inferred primordial spectrum.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-planck2018-angular-spectra"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-primordial-inference-context",
+      "role": "model-context",
+      "denotes": "The adopted base-model transfer, likelihood, nuisance treatment and priors that connect spectra to conditional primordial parameters.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-planck2018-primordial-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:planck2018-scalar-spectrum",
+      "role": "scoped-phenomenon",
+      "denotes": "A reported conditional posterior for scalar amplitude and tilt, not a direct observation of a quantum origin.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-planck2018-scalar-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:primordial-origin-scope",
+      "role": "definition",
+      "denotes": "A declared conditional model and evidence boundary, not an observed initial quantum preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-primordial-origin-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:primordial-cmb-model-compatibility",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison of one CMB inference with conditional primordial theory, preserving shared data and origin ambiguity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-primordial-cmb-model-compatibility"
+      ]
+    },
+    {
+      "nodeId": "phys:wilsonian-effective-action",
+      "role": "definition",
+      "denotes": "An explicitly regulated integration over short-wavelength variables, retaining the normalized low-mode source functional.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-wilsonian-effective-action"
+      ]
+    },
+    {
+      "nodeId": "phys:renormalization-group-flow",
+      "role": "definition",
+      "denotes": "A dimensionless transformation of effective descriptions toward smaller physical cutoff, distinct from mu-running, external Q and elapsed time.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-renormalization-group-flow"
+      ]
+    },
+    {
+      "nodeId": "phys:fixed-point-scaling-fields",
+      "role": "definition",
+      "denotes": "The fixed point and linear scaling fields of a declared infrared flow, with full operator dimensions and explicit marginal and domain limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-fixed-point-scaling-fields"
+      ]
+    },
+    {
+      "nodeId": "phys:gaussian-scaling-example",
+      "role": "definition",
+      "denotes": "The explicitly normalized free-scalar rescaling and three finite engineering-dimension examples, with mixing and interacting-theory boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gaussian-scaling-example"
+      ]
+    },
+    {
+      "nodeId": "phys:effective-operator-expansion",
+      "role": "definition",
+      "denotes": "A local operator expansion and conditional power counting for specified light fields; no observed microscopic completion.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-effective-operator-expansion"
+      ]
+    },
+    {
+      "nodeId": "phys:threshold-matching",
+      "role": "definition",
+      "denotes": "Renormalized light-amplitude matching and the coefficient boundary input required in addition to an RG equation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-threshold-matching"
+      ]
+    },
+    {
+      "nodeId": "phys:decoupling-validity",
+      "role": "definition",
+      "denotes": "Conditional omission of explicit heavy degrees of freedom with their matched low-energy effects retained.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-decoupling-validity"
+      ]
+    },
+    {
+      "nodeId": "phys:effective-description-scope",
+      "role": "definition",
+      "denotes": "A declared model, approximation and observable boundary, without empirical formation or universal ontology.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:running-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison of existing running inferences, without a universal EFT or condensed-matter evidence claim.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-running-evidence-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:electromagnetic-photon-field",
+      "role": "definition",
+      "denotes": "The selected free Maxwell gauge field and its neutral Abelian transformation law, with a declared spacetime and action.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-electromagnetic-photon-field"
+      ]
+    },
+    {
+      "nodeId": "phys:transverse-photon-fock-state",
+      "role": "definition",
+      "denotes": "A bosonic Fock construction for the two transverse modes of a specified free Maxwell field, without an observed photon occurrence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-transverse-photon-fock-state"
+      ]
+    },
+    {
+      "nodeId": "phys:one-photon-wavepacket-boundary",
+      "role": "definition",
+      "denotes": "A normalized finite-energy one-photon input in the specified mode convention, with preparation, interaction and measurement left to separate contexts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-one-photon-wavepacket-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:heralded-optical-counting-context",
+      "role": "experimental-context",
+      "denotes": "The actual source, herald, gate and output counters of one named quantum-optical experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-heralded-optical-counting-context"
+      ]
+    },
+    {
+      "nodeId": "phys:optical-counting-response-context",
+      "role": "experimental-context",
+      "denotes": "Reported hardware timing and source/detector-response boundaries, not a new observation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-optical-counting-response-context"
+      ]
+    },
+    {
+      "nodeId": "phys:triggered-optical-coincidences",
+      "role": "scoped-phenomenon",
+      "denotes": "A finite measured coincidence and singles-count summary under a declared herald and response.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-triggered-optical-coincidences"
+      ]
+    },
+    {
+      "nodeId": "phys:optical-anticorrelation-inference-context",
+      "role": "model-context",
+      "denotes": "The count normalization and classical/quantum comparison under declared intensity and detector assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-optical-anticorrelation-inference-context"
+      ]
+    },
+    {
+      "nodeId": "phys:triggered-optical-anticorrelation",
+      "role": "scoped-phenomenon",
+      "denotes": "A published response-conditioned rejection of the stated semiclassical counting bound, with a separate same-source interference comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-triggered-optical-anticorrelation"
+      ]
+    },
+    {
+      "nodeId": "phys:photon-evidence-scope",
+      "role": "definition",
+      "denotes": "A definition boundary separating free photon states, source/detector events and electromagnetic mediation; not an observed universal formation mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-photon-evidence-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:photon-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A comparison of named optical and radiative evidence with distinct measurement and inference stages, not a new experiment or combined fit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-photon-evidence-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mixing-parameterization",
+      "role": "definition",
+      "denotes": "A formal three-state mixing matrix and its rephasing conventions, without a fitted parameter point or observed CP result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-mixing-parameterization"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mass-model-boundary",
+      "role": "definition",
+      "denotes": "Alternative formal ways to extend the specified massless neutrino sector, with no observed mass-generation event or selected mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-mass-model-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:oscillation-mass-identifiability",
+      "role": "definition",
+      "denotes": "A conditional algebraic boundary between oscillation squared-mass differences and the unmeasured absolute mass offset, without an observed occurrence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-oscillation-mass-identifiability"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mass-mixing-scope",
+      "role": "definition",
+      "denotes": "A definition boundary for neutrino mass/mixing structure and its identifiable quantities, not a new mechanism or a universal formation rule.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-neutrino-mass-mixing-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:neutrino-mass-mixing-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "A scoped comparison of named flavor and conditional mass-splitting evidence; not a combined likelihood or an independently reproduced experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-neutrino-mass-mixing-evidence"
+      ]
+    },
+    {
+      "nodeId": "phys:standard-model-sector-decomposition",
+      "role": "definition",
+      "denotes": "The adopted local Standard Model gauge and chiral representation decomposition, with declared hypercharge normalization and coupled-sector boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-standard-model-sector-decomposition"
+      ]
+    },
+    {
+      "nodeId": "phys:gauge-sector-interpretation-boundary",
+      "role": "definition",
+      "denotes": "A model interpretation boundary separating sector labels and gauge descriptions from physical excitation counts, finite evidence and universal formation claims.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gauge-sector-interpretation-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:gauge-sector-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A comparison of selected color-sensitive and weak-channel evidence, not a new experiment, joint fit or observed origin of gauge sectors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-gauge-sector-evidence-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:scalar-dispersion-isotropy",
+      "role": "definition",
+      "denotes": "The isotropic energy-versus-direction null of a specified free scalar model, with active and passive rotations distinguished.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-scalar-dispersion-isotropy"
+      ]
+    },
+    {
+      "nodeId": "phys:field-anisotropy-boundary",
+      "role": "definition",
+      "denotes": "A scoped interpretation boundary for directional field claims, preserving the supplied isotropic scalar comparison and excluding unsupported universal vacuum or admissibility assertions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-field-anisotropy-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:photon-polarization-scope",
+      "role": "definition",
+      "denotes": "A normalized transverse free-photon polarization convention with explicit limits on anisotropic response, causal parents and vacuum interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-photon-polarization-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:free-scalar-propagation",
+      "role": "definition",
+      "denotes": "The formally deduced group velocity, rotation covariance and conserved free number sector of the specified scalar model, without an observed stability or transport instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-free-scalar-propagation"
+      ]
+    },
+    {
+      "nodeId": "phys:directional-excitation-boundary",
+      "role": "definition",
+      "denotes": "A scoped boundary separating directional propagation, attenuation, localization and intrinsic decay while excluding unsupported source-card causes and the unresolved Level-0 transport bridge.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.11`: 1269 records, 1081 connections,
-1373 claims and 407 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.9`: 1333 records, 1235 connections,
+1453 claims and 422 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -36,11 +36,61 @@ Electron-proton scattering and hydrogen evidence retain their specified systems;
 lepton classification does not imply absence of hadronic scattering or establish
 atom formation. Existing precision and neutrino results retain their shared-data,
 radiative and flavor/mass-basis limitations.
+The gauge/matter/Higgs decomposition is an adopted interacting model, with
+explicit representations and hypercharge normalization. Generator indices,
+field components and physical excitations retain different counting meanings.
+The chosen Higgs background reorganizes electroweak fields without deriving
+chirality, generations or numerical couplings. Selected OPAL and historical
+UA1 inferences constrain their declared processes; they do not uniquely
+reconstruct every gauge sector or establish a formation/maintenance sequence.
+Directional field claims use a specified observable, state and rotation
+comparison. The chosen free scalar dispersion gives an isotropic formal null,
+with passive coordinate changes distinct from rotating momentum relative to a
+physical axis. No anisotropic vacuum, universal admissibility gradient or
+directional stability law is established by this comparison.
+The polarization branch specifies normalized transverse photon amplitudes and
+passive basis changes within the free Maxwell model. Equal free-mode frequencies
+do not supply a polarization-dependent response tensor, calibrated analyzer or
+anisotropic vacuum. Material polarization, loop corrections and excitation
+stability retain separate definitions and evidence requirements.
+The free scalar propagation comparison derives a narrow-envelope group velocity
+and rotational covariance. Mode phase, free particle-sector conservation,
+packet spreading and local retention have different meanings. Damping,
+localization and intrinsic decay require their own observables; no directional
+stability, flux, propulsion or Level-0 transport mechanism is established.
 Gluon self-coupling terms are explicit formal definitions. SLD spin-sensitive
 shapes, OPAL color-factor fits and H1 DIS scaling evidence distinguish selected
 readouts, corrections and conditional interpretations. Their model choices,
 shared inputs and source discrepancies remain visible. The gluon distribution
 is scheme-dependent; fitted color factors do not image an elementary vertex.
+Source-conditioned field profiles add a local plaquette observable in pure
+SU(2), with explicit vacuum subtraction, ground-state extraction and adopted
+scale. Inferred transverse widths retain tail-model uncertainty and their
+width convention. Local profiles, static potentials and screened energy levels
+are distinct; they supply no vacuum-condensate extraction, autonomous real-time
+feedback or universal stability/maintenance rule.
+The nuclear bridge separates fixed-input heavy-flavor two-nucleon energy
+shifts, conditional binding assignments and current state-identification
+limits. It supplies no quark-mass derivative or bulk equation of state.
+The primordial branch separates an assumed scalar/background/state model,
+conditional curvature power and its restricted stochastic interpretation from
+Planck angular-spectrum response and base-model parameter inference. A compatible
+CMB fit does not directly observe an initial quantum state or identify a unique
+origin. Large-scale-structure evidence and complete likelihood replay remain open.
+The RG branch distinguishes Wilsonian resolution changes, renormalized parameter
+running and physical time. Its Gaussian scaling example, operator expansion and
+weak tree matching retain their approximation and coefficient assumptions.
+Existing CMS and L3 results provide limited running evidence; no universal EFT
+validation or new condensed-matter scaling measurement follows.
+The photon branch separates free Maxwell gauge/Fock states, a normalized
+one-photon state and actual heralded optical detection. The published coincidence
+summary and inferred anticorrelation reuse one acquisition and retain their
+response assumptions; same-source interference uses a changed configuration.
+Reported significance is not an exact likelihood replay. Capture wavelength
+and meson radiative-ratio evidence retain distinct calibration and analysis
+boundaries. Model masslessness, neutrality and an internal Coulomb propagator
+do not supply empirical exact zeros, permanent carrier identity, a real-photon
+static flux or quantitative atomic binding.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 an all-channel confinement theorem, temporal emergence or carrier-count minima.
@@ -92,6 +142,13 @@ mass and mixing interpretations retain the required model inputs. Perturbative
 QED amplitude conventions have a separate synthetic kinematic witness;
 classification and internal propagators do not establish formation mechanisms
 or observed constituent populations.
+Neutrino mass/mixing structure has explicit phase-redefinition and mass-offset
+identifiability boundaries. Alternative mass terms extend the minimal
+renormalizable model; the selected evidence does not choose a mechanism.
+Two unequal nonzero differences require at least two nonzero masses within
+the supplied three-state description, while one zero mass remains possible.
+Historical fits retain their effective conventions and dependent analyses;
+there is no new global likelihood, absolute mass or Dirac/Majorana determination.
 Neutrino records keep reactor, solar, atmospheric and accelerator preparations separate.
 Production/detection coherence, effective packet overlap and unresolved-event
 averaging have separate definitions. A prescribed solar density and conditional

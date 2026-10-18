@@ -1,55 +1,66 @@
 # Current canonical validation
 
-Current graph: `2026.10.11`, checked locally on 11 October 2026.
+Current graph: `2026.10.18.9`, checked locally on 18 October 2026.
 
-The source contains 1269 records, 1081 connections, 1373 claims and 407 sources.
-The output has 901 descriptive and 180 functional connections. Its physics
-review contains 176 study contexts and 140 comparisons. All 169 bound input
+The source contains 1333 records, 1235 connections, 1453 claims and 422 sources.
+The output has 1055 descriptive and 180 functional connections. Its physics
+review retains 188 study contexts and 142 comparisons. All 195 bound input
 hashes and 95 local source hashes match current bytes.
 
-- `npm test` passes all 787 ordinary tests with no failures, cancellations or
+- `npm test` passes all 788 ordinary tests with no failures, cancellations or
   skips. Canonical source tests belong to the separate research suite.
-- All 121 focused canonical tests pass, including 19 new oscillation tests and
-  the affected reactor, solar, atmospheric, matter, accelerator, lepton,
-  source, physics, routing, readiness and serialization contracts. Mutations
-  protect scientific scope, source passages, stationary vacuum exceptions,
-  normalized averaging, solar assumptions, shared-data interpretation and
-  exclusion of unsupported parent rules or transport predictions.
+- All 127 focused canonical tests pass, including 12 new propagation and
+  directional-excitation groups and the compiler projection contract. Coverage
+  protects rotation covariance, phase/sector limits, packet interpretation,
+  decay conventions and unsupported parent, threshold and transport claims.
+- All 40 focused presentation/browse/serialization tests and 22 focused
+  view/lazy/engine tests pass. They protect summary precedence, empty strings,
+  search parity, full-record inspection, tamper rejection and release immutability.
 - `npm run model:causal-emergence:verify` passes exact source compilation and
-  release verification. No complete detector or transport replay is claimed.
-- `npm run model-studio:data:verify` validates all 91 browser files against the
-  exact release. The registry has 29 entries; Model Studio uses module revision
-  `20261011.1` and the current graph.
-- `npm run build` passes all repository checks, including 217 versioned
-  contracts and 188 Markdown files.
-- Original catalogues and existing frozen releases remain unchanged. Only
-  `references/level-1.json#/17` leaves the pending source list.
+  release verification. Existing bounded checks retain their original scope;
+  no new response experiment, lifetime fit or numerical study is replayed.
+- `npm run model-studio:data:verify` validates all 95 browser files against the
+  exact release. The registry has 39 entries; Model Studio uses module revision
+  `20261018.10` and the current graph.
+- `npm run build` passes source, module revision, workspace, declaration,
+  worker, registry, schema, kernel, documentation and stored-catalogue checks.
+  All 217 public schemas and 188 Markdown files pass their checks.
 
-The focused command used locally was:
+The focused commands used locally were:
 
 ```sh
-node --test --test-concurrency=4 test/workspace/canonical-{oscillation-coherence,oscillation-solar,oscillation-formal,neutrino,solar-neutrino,atmospheric-neutrino,matter-neutrino,accelerator-neutrino,lepton-formal,source,physics,routing,readiness,release-serialization}.test.mjs
+node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,release-serialization,field-dynamics,weak-sector,photon-formal,photon-scope,vacuum-polarization,scalar-dispersion-isotropy,field-anisotropy-boundary,polarization-state-scope,scalar-propagation,directional-stability-scope}.test.mjs
+node --test packages/view/test/view.test.mjs test/workspace/model-studio-browse.test.mjs test/workspace/canonical-release-serialization.test.mjs
+node --test packages/view/test/{view,lazy}.test.mjs packages/engine/test/presentation.test.mjs
 ```
 
-The production browse loader starts with two HTTP requests totaling 991651
-bytes. Four selected coherence, solar, transport-boundary and evidence-synthesis
-records load exact details from three chunks; the physics review is fetched
-separately. Cache reuse, closed sessions, identity mismatch, graph/detail tamper
-rejection and clean retry pass. The current full-pack HTTP fallback loads all
-11 split files within the default limits; a smaller budget is rejected.
-Historical fallback preserves its original identity and expanded edge evidence.
-All 1081 edges resolve their 1148 claim references, and all 1269 nodes retain
-their 1377 expanded rationales. This was a Node Fetch integration probe, not a
-rendered-browser timing or visual check.
+The production browse loader starts with two HTTP requests totaling 1103454
+bytes. Both new definitions load exact details from two chunks; the physics
+review is fetched separately. All 1333 full node details match the release
+through the lazy loader and actual local HTTP transport. Full and lazy
+catalogues agree across every page, search and level-filter comparison in the
+integration probe. Cache reuse, cancellation, closed sessions, identity
+mismatch, graph/detail tamper rejection and clean retry pass. A rehashed detail
+cannot change the source description behind a pinned derived summary.
 
-The initial graph JSON is 991174 bytes before compression. The compact bundle
-is 22362859 bytes and the release totals 44848679 bytes, within the unchanged
-32 MiB file and 64 MiB total budgets. Remaining allowances are 11191573 bytes
-for the bundle and 22260185 bytes for the total release. The largest semantic
-split is 15653904 bytes, within the browser fallback's 16 MiB file limit.
-Relations retain all source fields and reference complete dictionary evidence
-through claim IDs. Selected nodes retain expanded rationale for inspection.
-Transport budgets and public schemas are unchanged.
+The current full-pack HTTP fallback loads all 11 split files within default
+limits; a smaller budget is rejected. Registered historical fallback retains
+its exact identity. All 1235 edges resolve their 1302 claim references, and all
+1333 nodes retain their 1441 expanded rationales. These were Fetch integration
+probes, not rendered-browser timing or visual checks.
+
+Generated entity summaries derive from the retained description. Explicit short
+summaries, including empty strings, keep precedence; construction rules retain
+their distinct summaries. Raw inspected records, source descriptions, claim
+contexts, citations and evidence remain intact. This affects the current
+projection only; registered frozen releases retain their exact bytes.
+
+The initial graph JSON is 1102972 bytes before compression. The compact bundle
+is 23642162 bytes and the release totals 47415685 bytes, within the unchanged
+32 MiB file and 64 MiB total budgets. Remaining allowances are 9912270 bytes
+for the bundle and 19693179 bytes for the total release. The largest semantic
+split is 16425474 bytes, leaving 351742 bytes within the browser fallback's
+16 MiB file limit. Transport budgets and public schemas are unchanged.
 
 Validation uses macOS, Node.js 24.19.0 and Python 3.9.6. Remote CI requires its
 own run after publication. Unrelated research replays were not run.
@@ -57,38 +68,44 @@ own run after publication. Unrelated research replays were not run.
 Current artifact hashes:
 
 ```text
-rootHash: sha256:6f280e59eff6dd39e8b9d5c6f9c7d8ab7e5581cfdac446a5d30a470173138053
-manifestHash: sha256:d9686c86674cecbe0a3cc37f251cc01fda89cd4d039d21ebb24d782422f4b447
-registryHash: sha256:ce653df6b719dc0553fb12c8974d1e5729e8c5f0c0cc696f411e6f295bf7417c
-browseIndexHash: sha256:798966473c59843b05ac7810ee0198b602bbb76c6c631eab1c567645e94a1bb0
+rootHash: sha256:264bd655081ba6186c18c4d117a69a15a0b6cbf95e88e1f91416d8830a8e99c3
+manifestHash: sha256:ec2e1cdd7f684cee25ab5bcc2f9e94e5a123cfe2b5253897435a202984c50f7c
+registryHash: sha256:8a804c8996d03ea9e3e8810f86468d54299289854d8a30c4221875b49c634a2d
+browseIndexHash: sha256:ecdd405d6fba309292ab9b5db067873269aa91049ac2af3e3aec9ff83c077372
 ```
 
-Scientific review remains partial: 176 [source cards](../../../references/canonical/pending-review.json)
-are unfinished, including 10 at Level 1. The other 73 cards have substantive
-assertions supported, qualified or excluded; this census does not measure
-scientific validity or independent reproduction. The Level-0 bridge remains
-unresolved, and card 1.25 retains its separate mass-origin review scope.
+Scientific review remains partial: 166 [source cards](../../../references/canonical/pending-review.json)
+are unfinished. All 35 Level-1 cards have scoped dispositions; the complement
+of 83 cards across the source catalogue has substantive assertions supported,
+qualified or excluded. This census does not establish a universal physical
+hierarchy or independent experimental reproduction. Original catalogues and
+registered frozen releases retain their exact bytes.
 
-Neutrino oscillation records distinguish coherent production/detection,
-effective wave-packet overlap and unresolved-event averaging. Quantum widths,
-macroscopic resolution and beam spread are different inputs. The standard
-coherent probability is conditional; a vacuum mass eigenstate or a mixture
-diagonal in the vacuum mass basis has constant flavor-readout probabilities.
-Original weights, necessary parents, carrier minima and SOMA ordering are
-excluded rather than inferred from the formal dependencies.
+Card 1.34 separates the free scalar propagation comparison from directional
+stability, damping, localization and transport claims. Actual Tong free-field,
+free-number-sector and Heisenberg passages supply the declared scalar model.
+The group velocity k/E is a formal derivative of its positive dispersion for
+a smooth narrow positive-frequency envelope. Rotation changes its vector
+components covariantly and preserves its speed at fixed momentum magnitude;
+opposite momentum reverses velocity without unequal free energies. These are
+model properties, not an observed anisotropic regime or directional lifetime.
 
-The solar application supplies a declared radial density approximation and
-conditional adiabatic, phase-averaged survival expression. Production and
-detector weights remain external; no numerical trajectory or response is
-reproduced. Event weights use differential neutrino number flux, with explicit
-units and response factors, rather than transported energy flux. The two printed PDG formula inconsistencies are recorded with the
-consistent potential and phase conventions. Resonance alone does not establish
-adiabatic conversion or the exact high-density limit.
+A real mode phase has unit modulus and the free Hamiltonian preserves its
+particle-number sector. Neither guarantees fixed packet shape, detector
+retention or persistent localization. Unitary norm conservation alone does
+not exclude decay of a selected unstable subspace in another model. Group
+velocity supplies no signal-front theorem, integrated flux, drift or propulsion.
+The actual PDG exponential-survival passage retains its approximation, natural
+units and proper/laboratory-time distinction; no width extraction, complex
+response pole or new lifetime measurement is admitted.
 
-KamLAND, SNO, Super-Kamiokande and OPERA retain their distinct preparations,
-responses, historical models and shared-data stages. The synthesis is not a
-pooled probability, combined significance or new global fit. Quantitative
-astrophysical transport and cosmological predictions are explicitly excluded
-without their additional source, medium and kinetic inputs. Absolute masses,
-Dirac/Majorana character and a unique mass-generation mechanism are not inferred.
-Passing software checks does not independently validate these interpretations.
+Material attenuation, response broadening, localization and intrinsic decay
+need their own compatible observables and models. Comparing axes and comparing
+opposite wave vectors are distinct directional tests. The original four parent
+roles, weights 0.40/0.30/0.20/0.10, unit minima, carrier/direction codes and SOMA
+classifications have no physical causal authority. Photon polarization supplies
+no scalar polarization branch or modulation law. Parent 0.23 and F12 retain
+the unresolved transport/admissibility bridge and its required field-observable
+map and discriminating evidence. The source-card placeholders establish no
+universal stability or transport chain. Passing software checks does not
+independently validate directional excitation asymmetry.

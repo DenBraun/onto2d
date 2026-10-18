@@ -178,7 +178,8 @@ function summary(node, incoming, outgoing) {
     phase: node.phase ?? null,
     typeRole: node.typeRole ?? null,
     scientificStatus: node.scientificStatus ?? null,
-    shortDescription: typeof node.shortDescription === "string" ? node.shortDescription : "",
+    shortDescription: typeof node.shortDescription === "string" ? node.shortDescription
+      : typeof node.description === "string" ? node.description : "",
     parentCount: parentIds.size,
     childCount: childIds.size,
     incomingEdgeCount: incoming.length,

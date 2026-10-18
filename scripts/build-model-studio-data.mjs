@@ -16,6 +16,14 @@ const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
 const pick = (value, fields) => Object.fromEntries(fields.filter((field) => Object.hasOwn(value, field)).map((field) => [field, value[field]]));
 
+function nodeProjection(node) {
+  return {
+    ...pick(node, NODE_FIELDS),
+    ...(typeof node.shortDescription !== "string" && typeof node.description === "string"
+      ? { shortDescription: node.description } : {})
+  };
+}
+
 function referencedSources(value, result = new Set()) {
   if (Array.isArray(value)) for (const child of value) referencedSources(child, result);
   else if (value !== null && typeof value === "object") {
@@ -89,7 +97,7 @@ export function buildBrowseArtifacts(input) {
   }
   const graph = add(`${prefix}/graph.json`, envelope("onto2d-studio-browse-graph", {
     model,
-    nodes: sourceNodes.map((node) => pick(node, NODE_FIELDS)),
+    nodes: sourceNodes.map(nodeProjection),
     edges: pack.files["model/edges.json"].map((edge) => pick(edge, EDGE_FIELDS)),
     presentation: dictionaries.presentation ?? {},
     reviews,

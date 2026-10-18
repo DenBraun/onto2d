@@ -22,7 +22,7 @@ function hash(value) {
   return `sha256:${createHash("sha256").update(value).digest("hex")}`;
 }
 
-function fixture() {
+function fixture(additionalNodes = []) {
   return buildModelPack({
     model: { id: "browse-fixture", name: "Browse Fixture", version: "1" },
     source: {
@@ -41,7 +41,8 @@ function fixture() {
         shortDescription: "Observed response", evidence: { scope: "One detector", values: [3, 4] }
       },
       { id: "c", name: "Gamma", level: 2, shortDescription: "Conditional estimate" },
-      { id: "isolated", name: "Isolated", level: 2, scientificStatus: "unresolved" }
+      { id: "isolated", name: "Isolated", level: 2, scientificStatus: "unresolved" },
+      ...additionalNodes
     ],
     edges: [
       { id: "ab", source: "a", target: "b", relationLayer: "descriptive", role: "context", assertion: "scoped" },
@@ -204,6 +205,55 @@ test("browse loading fetches only the compact graph and preserves catalogue and 
     assert.equal(call.init.credentials, "same-origin");
   }
   complete.close();
+  session.close();
+});
+
+test("description-backed summaries preserve full and lazy catalogues, searches and original details", async () => {
+  const records = [
+    { id: "fallback", description: "Searchable source description" },
+    { id: "distinct", description: "Hidden detailed explanation", shortDescription: "Chosen summary" },
+    { id: "empty", description: "Suppressed detailed explanation", shortDescription: "" },
+    { id: "absent" },
+    { id: "non-string", description: "Replacement summary", shortDescription: null }
+  ];
+  const pack = fixture(records);
+  const artifacts = buildBrowseArtifacts(pack);
+  const { load, mock } = loaderFor(artifacts);
+  const session = await load(resolution(pack));
+  const complete = createVerifiedModelPresentation(pack);
+  for (const search of ["", "searchable", "chosen", "replacement", "hidden detailed", "suppressed detailed"]) {
+    assert.deepEqual(session.presentation.catalog({ search }), complete.catalog({ search }));
+  }
+  const summaries = new Map(session.presentation.catalog().items.map((node) => [node.id, node]));
+  assert.equal(summaries.get("fallback").shortDescription, "Searchable source description");
+  assert.equal(summaries.get("distinct").shortDescription, "Chosen summary");
+  assert.equal(summaries.get("empty").shortDescription, "");
+  assert.equal(summaries.get("absent").shortDescription, "");
+  assert.equal(summaries.get("non-string").shortDescription, "Replacement summary");
+  assert.equal(mock.calls.length, 2, "Description-backed search needs no detail requests");
+  const graph = JSON.parse(decoder.decode(artifacts.files.get(artifacts.index.entries[0].graph.path)));
+  assert.ok(graph.nodes.every((node) => !Object.hasOwn(node, "description")));
+  assert.equal(Object.hasOwn(graph.nodes.find((node) => node.id === "absent"), "shortDescription"), false);
+  for (const record of records) {
+    assert.deepEqual(await session.inspect(record.id), record, "Lazy inspection must retain each raw source record");
+    assert.deepEqual(complete.inspect(record.id).record, record);
+  }
+  complete.close();
+  session.close();
+});
+
+test("a rehashed detail cannot change the description behind a pinned fallback summary", async () => {
+  const pack = fixture([{ id: "fallback", description: "Pinned source description" }]);
+  const original = buildBrowseArtifacts(pack);
+  const altered = editedArtifacts(original, ({ graph, rewrite }) => {
+    const chunk = graph.chunks.find((item) => item.nodeIds.includes("fallback"));
+    rewrite(chunk.descriptor, (data) => {
+      data.records.find((node) => node.id === "fallback").description = "Changed source description";
+    });
+  });
+  const { load } = loaderFor(altered);
+  const session = await load(resolution(pack));
+  await assert.rejects(() => session.inspect("fallback"), { code: "STUDIO_BROWSE_DETAIL_INVALID" });
   session.close();
 });
 

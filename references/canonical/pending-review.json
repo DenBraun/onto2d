@@ -2,56 +2,6 @@
   "scope": "Remaining source cards requiring scientific review.",
   "cards": [
     {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/18",
-      "title": "Gluon Field Self-Organization"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/19",
-      "title": "Quark Influence on Macroscale Matter Properties"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/20",
-      "title": "Quantum Fluctuations as Source of Primordial Cosmological Perturbations"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/21",
-      "title": "Effective Theories and RG Flow"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/23",
-      "title": "Photons"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/25",
-      "title": "Nonzero Neutrino Mass and Flavor Mixing"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/29",
-      "title": "Gauge Sector Differentiation"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/32",
-      "title": "Effective Field Anisotropy"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/33",
-      "title": "Field Polarization Anisotropy"
-    },
-    {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/34",
-      "title": "Directional Stability Asymmetry of Excitations"
-    },
-    {
       "sourcePath": "references/level-2.json",
       "pointer": "/0",
       "title": "Primordial Light-Nucleus Nucleosynthesis"
