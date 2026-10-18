@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1301 records, 1148 connections, 1415 claims and 417 sources.
+The current graph contains 1310 records, 1167 connections, 1425 claims and 419 sources.
 The physics review contains 186 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -68,6 +68,39 @@ states can have changing unequal-time correlations. Card 1.26 retains this
 scoped construction; interaction-amplitude vertices, renormalization-scale
 changes and numerical sampling do not supply a universal temporal process or
 maintenance cause.
+
+## Effective theories and renormalization-group flow
+
+Card 1.21 distinguishes a Wilsonian cutoff transformation, a subtraction-scale
+RG equation, an experimental hard scale and physical time.
+[Wilson and Kogut](https://doi.org/10.1016/0370-1573(74)90023-4) supply the
+selected scalar shell/rescaling and fixed-point passages. The retained-mode
+generating-functional identity requires its regulated model and source range;
+it does not identify a Wilsonian action with the one-particle-irreducible action.
+For the declared infrared coordinate, positive scaling eigenvalues are relevant,
+negative ones irrelevant and zero only linearly marginal. The Gaussian example
+illustrates engineering dimensions; operator mixing, subtractions and nonlinear
+flow prevent treating it as a universal interacting-theory eigenbasis.
+
+[Georgi's formal EFT review](https://doi.org/10.1146/annurev.ns.43.120193.001233)
+supplies a local operator expansion, coefficient assumptions and perturbative
+matching logic. The existing weak contact limit provides a bounded tree example.
+Matching coefficients are boundary inputs to running, with consistent schemes,
+operators and matrix elements; a beta function alone does not determine them.
+Heavy effects remain in light parameters and higher operators. Controlled
+suppression requires the stated hierarchy, coupling and power-counting conditions;
+it is neither automatic MSbar decoupling nor a claim that microscopic physics
+disappears. No full Appelquist-Carazzone proof or loop matching is claimed.
+
+The existing [CMS jet-ratio comparison](https://arxiv.org/abs/1304.7498v2) and
+[L3 small-angle fit](https://arxiv.org/abs/hep-ex/0002035v1) retain their own
+response, coupling conventions, shared data and uncertainty. L3's slope and
+inverse-coupling difference reuse one fit, and its zero deformation means
+nominal running. These results test their declared parameter-running descriptions;
+they do not directly observe Wilsonian elimination or establish every universality
+class. Condensed-matter scaling data and a general theorem about stable low-energy laws
+are outside this finite scope. Original necessary parents, weights, carrier
+minima, SOMA phase/type authority and temporal/downward-causation claims are excluded.
 
 ## Primordial curvature and CMB inference
 

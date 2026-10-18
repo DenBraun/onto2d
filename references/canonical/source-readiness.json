@@ -12063,6 +12063,87 @@
       ]
     },
     {
+      "nodeId": "phys:wilsonian-effective-action",
+      "role": "definition",
+      "denotes": "An explicitly regulated integration over short-wavelength variables, retaining the normalized low-mode source functional.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-wilsonian-effective-action"
+      ]
+    },
+    {
+      "nodeId": "phys:renormalization-group-flow",
+      "role": "definition",
+      "denotes": "A dimensionless transformation of effective descriptions toward smaller physical cutoff, distinct from mu-running, external Q and elapsed time.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-renormalization-group-flow"
+      ]
+    },
+    {
+      "nodeId": "phys:fixed-point-scaling-fields",
+      "role": "definition",
+      "denotes": "The fixed point and linear scaling fields of a declared infrared flow, with full operator dimensions and explicit marginal and domain limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-fixed-point-scaling-fields"
+      ]
+    },
+    {
+      "nodeId": "phys:gaussian-scaling-example",
+      "role": "definition",
+      "denotes": "The explicitly normalized free-scalar rescaling and three finite engineering-dimension examples, with mixing and interacting-theory boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-gaussian-scaling-example"
+      ]
+    },
+    {
+      "nodeId": "phys:effective-operator-expansion",
+      "role": "definition",
+      "denotes": "A local operator expansion and conditional power counting for specified light fields; no observed microscopic completion.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-effective-operator-expansion"
+      ]
+    },
+    {
+      "nodeId": "phys:threshold-matching",
+      "role": "definition",
+      "denotes": "Renormalized light-amplitude matching and the coefficient boundary input required in addition to an RG equation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-threshold-matching"
+      ]
+    },
+    {
+      "nodeId": "phys:decoupling-validity",
+      "role": "definition",
+      "denotes": "Conditional omission of explicit heavy degrees of freedom with their matched low-energy effects retained.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-decoupling-validity"
+      ]
+    },
+    {
+      "nodeId": "phys:effective-description-scope",
+      "role": "definition",
+      "denotes": "A declared model, approximation and observable boundary, without empirical formation or universal ontology.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:running-evidence-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "A bounded comparison of existing running inferences, without a universal EFT or condensed-matter evidence claim.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-running-evidence-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

@@ -3,11 +3,6 @@
   "cards": [
     {
       "sourcePath": "references/level-1.json",
-      "pointer": "/21",
-      "title": "Effective Theories and RG Flow"
-    },
-    {
-      "sourcePath": "references/level-1.json",
       "pointer": "/23",
       "title": "Photons"
     },

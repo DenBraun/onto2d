@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.2`: 1301 records, 1148 connections,
-1415 claims and 417 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.3`: 1310 records, 1167 connections,
+1425 claims and 419 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -55,6 +55,11 @@ conditional curvature power and its restricted stochastic interpretation from
 Planck angular-spectrum response and base-model parameter inference. A compatible
 CMB fit does not directly observe an initial quantum state or identify a unique
 origin. Large-scale-structure evidence and complete likelihood replay remain open.
+The RG branch distinguishes Wilsonian resolution changes, renormalized parameter
+running and physical time. Its Gaussian scaling example, operator expansion and
+weak tree matching retain their approximation and coefficient assumptions.
+Existing CMS and L3 results provide limited running evidence; no universal EFT
+validation or new condensed-matter scaling measurement follows.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
 an all-channel confinement theorem, temporal emergence or carrier-count minima.

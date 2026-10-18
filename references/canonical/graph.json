@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.18.2",
+    "version": "2026.10.18.3",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. No whole-graph scientific validation is claimed.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "fac56d4efc89e22516a0c6f6811e3e84d58c0359a9ff35b31b5fcab139c107ff",
+      "sha256": "6af76b7a2abab038b5e4cab8916b1c659d4a58725b54904c289921314685c6a5",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "c2cf961a7c6fc81d439af8e4345638b36a767907ffe0609501294560cd1cb2b9",
+      "sha256": "bcd2b55e5af9f2aa87b896d9f1e923132c7e5a13dec4c0e373a305b4f831ecb2",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -11086,6 +11086,54 @@
           "Author v2 pages 9-10, Section 3.1, Equation 10 and selected TT,TE,EE+lowE column of Table 2: conditional scalar tilt and amplitude"
         ],
         "limit": "Read the listed passages of the 67-page author v2, dated 2 August 2019, of A&A 641 A10; visually checked Table 2 on page 10. Only the power-law convention and TT,TE,EE+lowE scalar result are admitted. Other inflation models, BK15, BAO and primordial-tensor claims are outside scope. The unselected TE-only log-amplitude errors differ from VI Table 2; the selected joint column agrees. These reports reuse the same Planck data, not independent acquisitions."
+      }
+    },
+    {
+      "id": "wilson-kogut1974-rg",
+      "kind": "research-publication",
+      "title": "The renormalization group and the epsilon expansion",
+      "authors": [
+        "Kenneth G. Wilson",
+        "J. Kogut"
+      ],
+      "year": 1974,
+      "doi": "10.1016/0370-1573(74)90023-4",
+      "url": "https://www.researchgate.net/profile/John-Kogut/publication/255306347_The_renormalization_group_and_the_epsilon_expansion/links/5e53d4a3299bf18082de3b1a/The-renormalization-group-and-the-epsilon-expansion.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-published-theory-passages",
+        "locators": [
+          "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff",
+          "Published pages 168-170, Section 12.3, fixed-point stability and domains: conditional universality within a specified attraction domain",
+          "Published pages 172-176, Section 12.4, Equations 12.7-12.30: linearized local operators, scaling indices and the marginal higher-order qualification",
+          "Published pages 192-193, Appendix, Equations A.39-A.45 and following paragraphs: Gaussian operator dimensions and redundant operators"
+        ],
+        "limit": "Reviewed the listed body passages in the author-uploaded publisher scan, not the entire 125-page article. Physics Reports 12(2), 75-199 (1974) and the DOI are confirmed by publisher/INSPIRE metadata; the scan issue heading instead prints 75-200. This published theory review supplies formal constructions and explicitly conditional examples, not a primary experiment. The graph uses exp(-S), ell and full scaling dimension Delta in place of the source's exp(H), t and d_m notation. No unreviewed numerical exponents, universal fixed-point existence theorem, or experimental universality claim is imported."
+      }
+    },
+    {
+      "id": "georgi1993-effective-field-theory",
+      "kind": "research-publication",
+      "title": "Effective Field Theory",
+      "authors": [
+        "Howard Georgi"
+      ],
+      "year": 1993,
+      "doi": "10.1146/annurev.ns.43.120193.001233",
+      "url": "https://members.ift.uam-csic.es/jmoreno/BSM/docs/georgi_effective_field_theory.pdf",
+      "path": null,
+      "sha256": null,
+      "review": {
+        "extent": "selected-author-review-formal-derivation",
+        "locators": [
+          "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy",
+          "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling",
+          "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion",
+          "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions"
+        ],
+        "limit": "Read the complete indicated author-review pages 7-8, 16-19, 20-27 and 28-29; also read pages 5-6 for the matching overview and visually checked pages 7-8, 22-23 and 25-27. The 47-page HUTP-93/A003 author review is dated January 1993 and identifies the forthcoming Annual Review of Nuclear and Particle Science article; publisher metadata identifies volume 43, 209-252 (1993) and the stated DOI. It is a formal review with explicit matching derivations, not primary experimental evidence or an independent reading of the Appelquist-Carazzone proof. The publisher layout and the rest of the review are not independently reviewed. Historical neutrino statements, numerical bounds, model-building predictions and the speculative nonperturbative section are not admitted. The notation d below is operator mass dimension; it is not a literal reuse of the review's shifted dimension index."
       }
     }
   ],
@@ -60542,6 +60590,431 @@
         "planck2018-cmb-response",
         "planck2018-primordial-inference"
       ]
+    },
+    {
+      "id": "D-phys-wilsonian-effective-action",
+      "kind": "review-finding",
+      "statement": "For a well-defined regulated Euclidean real-scalar functional integral with ultraviolet momentum cutoff Lambda, split phi=phi_<+phi_> at Lambda_prime=Lambda/b with b>1. Define exp(-S_Lambda_prime[phi_<])=integral Dphi_> exp(-S_Lambda[phi_<+phi_>]), integrating only Lambda_prime<|p|<=Lambda. For sources supported below Lambda_prime, integrating the retained fields gives the same normalized low-mode generating functional as the original integral. Field-independent normalization factors cancel in that normalized functional.",
+      "scope": "A formal integration within a supplied regulated scalar model; no measured coarse-graining process or universal microscopic action.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "role": "supports",
+          "note": "Section 3 explicitly integrates high momentum modes and retains low-momentum correlators. The displayed general functional identity declares Euclidean action sign and b rather than the source's factor two."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff",
+          "role": "supports",
+          "note": "Section 12.1 explains cutoff interactions and the associated physical scale; a continuum theory, where available, requires a separate limit."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The field content, interaction, regulator, measure, boundary conditions and any needed infrared regulator must be supplied. The equality is an identity of that specified integral, not an existence or convergence theorem for every field theory.",
+        "The result can contain infinitely many interactions and nonlocal momentum dependence. A local derivative expansion and a finite operator truncation need their own momentum range and error control; they are not consequences of discarding high modes alone.",
+        "A Wilsonian action for retained modes is not the one-particle-irreducible effective action. Integrating out variables changes the description; it does not assert that physical constituents disappear or that microscopic information is uniquely reconstructible."
+      ]
+    },
+    {
+      "id": "D-phys-renormalization-group-flow",
+      "kind": "review-finding",
+      "statement": "After the shell step, use p_prime=b p, x_prime=x/b and a stated field normalization to restore the reference cutoff in dimensionless variables. Write the transformed action in dimensionless coupling coordinates g_i(ell), with ell=ln b and d g_i/d ell=F_i(g); increasing ell means a smaller physical cutoff Lambda_0 exp(-ell) and longer resolved lengths. Separately, a renormalized coupling g_R(mu) in a chosen subtraction scheme obeys mu d g_R/d mu=beta_R. The cutoff Lambda, subtraction scale mu and external physical momentum Q have distinct roles.",
+      "scope": "Definitions of Wilsonian scale change and subtraction-scale running; no identification with physical time or a detector setting.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "role": "supports",
+          "note": "The source separates integration from momentum and field rescaling; field normalization is part of the construction."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff",
+          "role": "supports",
+          "note": "Equation 12.1 uses dimensionless interaction flow while the physical cutoff is Lambda_0 exp(-t). Here ell replaces the source's t; beta_R is an explicitly declared subtraction-scale convention."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "ell is a resolution parameter, not physical time, a duration, a cosmological history or an intervention on an observed system. A hard process momentum Q can motivate choosing mu near Q, but that choice does not identify their physical roles.",
+        "Flow functions and coupling coordinates depend on regulator, normalization, operator basis and subtraction scheme. Wilsonian coefficients and subtraction-scheme couplings cannot be equated without a specified matching relation.",
+        "If the same dimensionless coordinate is parametrized by mu=Lambda_0 exp(-ell), its derivative mu d/dmu is -d/dell. This sign relation alone does not equate F_i with a different scheme's beta_R. Consistent observables require corresponding parameter/operator transformations; a finite truncation can retain scale dependence."
+      ]
+    },
+    {
+      "id": "D-phys-fixed-point-scaling-fields",
+      "kind": "review-finding",
+      "statement": "For the declared infrared flow F(g), a fixed point g_* satisfies F_i(g_*)=0. Near it, d(delta g_i)/d ell=B_ij delta g_j+O(delta g^2), where B_ij=partial F_i/partial g_j at g_*. For an admitted eigen-direction with real eigenvalue y_a, its linear scaling field obeys u_a(ell)=exp(y_a ell)u_a(0). A nonredundant local operator of full fixed-point scaling dimension Delta_a coupled homogeneously in d dimensions has y_a=d-Delta_a. With ell increasing toward the infrared, y_a>0 is relevant, y_a<0 irrelevant and y_a=0 linearly marginal.",
+      "scope": "A local linear classification in a specified theory space and fixed-point neighborhood; not a general global convergence theorem.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 172-176, Section 12.4, Equations 12.7-12.30: linearized local operators, scaling indices and the marginal higher-order qualification",
+          "role": "supports",
+          "note": "Equation 12.8 linearizes the flow; Equation 12.30 gives homogeneous perturbations proportional to exp[(d-d_m)t]. Its following paragraph requires higher order to classify d_m=d."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 168-170, Section 12.3, fixed-point stability and domains: conditional universality within a specified attraction domain",
+          "role": "supports",
+          "note": "Section 12.3 defines a domain by approach to a particular fixed point and makes stability depend on the permitted interaction space."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The displayed exponential applies to an eigen-direction in the linear regime. Operator mixing, non-diagonalizable blocks, redundant field redefinitions, symmetry restrictions and departures from the fixed-point neighborhood require explicit treatment; a complete diagonal basis is not assumed for arbitrary models. The displayed inequalities cover real eigenvalues; complex pairs need a real-part stability analysis outside this example.",
+        "Delta_a is the full scaling dimension, including anomalous contributions, not automatically the engineering dimension. A marginal direction needs higher-order flow or an additional exact argument to distinguish marginally relevant, marginally irrelevant and exactly marginal behavior.",
+        "An irrelevant perturbation decreases relative to the fixed point in this direction; its coefficient need not vanish at finite resolution or be negligible for every observable. Relevant does not mean more ontologically real, and marginal does not mean experimentally constant.",
+        "A fixed point, its attraction domain and any associated universality class must be established for the selected action, symmetries and approximation. This classification neither ensures that every flow reaches a fixed point nor proves universal autonomous higher-level laws."
+      ]
+    },
+    {
+      "id": "D-phys-gaussian-scaling-example",
+      "kind": "review-finding",
+      "statement": "For the massless Gaussian scalar kinetic action S_*=(1/2)integral d^d x (partial phi)^2 with fixed kinetic normalization, x_prime=x/b and phi_prime(x_prime)=b^((d-2)/2)phi(b x_prime) keep that term invariant. Thus [phi]_engineering=(d-2)/2 and an operator containing n fields and r derivatives has engineering dimension Delta_eng=n(d-2)/2+r. In d=4 with phi->-phi symmetry, the monomials phi^2, phi^4 and phi^6 have dimensions 2, 4 and 6, giving engineering values y=2, 0 and -2 under the stated infrared convention.",
+      "scope": "A finite formal power-counting example about a Gaussian scalar point; no fitted critical exponent, QCD fixed point or numerical replay.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "role": "supports",
+          "note": "The Gaussian shell/rescaling example keeps the quadratic momentum coefficient fixed and yields r_prime=4r for a factor-two step, consistent with the mass-squared engineering value y=2."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 192-193, Appendix, Equations A.39-A.45 and following paragraphs: Gaussian operator dimensions and redundant operators",
+          "role": "supports",
+          "note": "The Appendix gives Gaussian canonical dimensions from fields and momenta, allows mixing into lower field orders, and warns about operators equivalent to zero."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A finite volume or another infrared prescription must handle the massless zero mode when defining the Gaussian integral. The displayed local scaling identity does not by itself make that zero-mode integral normalizable.",
+        "These monomials illustrate engineering dimensions, not an assertion that unsubtracted cutoff monomials are unmixed eigenoperators. Shell contractions can generate lower-field terms; eigenoperator identification needs suitable subtractions, operator mixing and removal of redundant operators.",
+        "The quartic value y=0 is only linear marginality; its nonlinear flow is not determined by power counting. At interacting fixed points, anomalous dimensions can change this classification. No scalar example supplies a quantitative QED/QCD running prediction or empirical proof of universality."
+      ]
+    },
+    {
+      "id": "D-phys-effective-operator-expansion",
+      "kind": "review-finding",
+      "statement": "For specified light fields and realized Lorentz/internal symmetries in four spacetime dimensions, choose a local operator basis and write L_EFT=L_(d<=4)+sum_(d>4,i) C_i^(d)(mu) O_i^(d)/M^(d-4). Here d is operator mass dimension, M is the heavy scale and the displayed C_i are dimensionless. At light scales E and masses small compared with M, a declared perturbative power counting orders amplitudes in E/M and couplings. With bounded coefficients and controlled loop/logarithmic corrections, finitely many operators contribute at a chosen order.",
+      "scope": "A local relativistic EFT parametrization with its field content, symmetries, operator normalization, coefficient assumptions and approximation order supplied.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy",
+          "role": "supports",
+          "note": "The displayed d-dimensional basis notation makes the coefficient and perturbative power-counting assumptions explicit."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions",
+          "role": "supports",
+          "note": "Use only the structural dependence of allowed interactions on the specified light fields and realized symmetries; historical empirical statements on these pages are excluded."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Symmetries restrict allowed operators; they do not fix every coefficient or select a unique ultraviolet theory. Explicit symmetry breaking, field redefinitions and redundant operators must be handled consistently in the chosen basis. No particular complete operator list is supplied.",
+        "The d<=4 sector retains the canonically renormalizable interactions and heavy threshold corrections to their parameters; canonical dimension here does not classify scaling eigenfields at an arbitrary interacting fixed point. Higher operator dimension alone is not a universal numerical error bound: enhanced coefficients, strong coupling, large logarithms or extra small scales can require a different power counting or resummation.",
+        "An application must state the retained operator and loop orders and the first omitted contributions. This definition supplies no fitted coefficients, measured truncation error, all-orders convergence proof or validity at E comparable to M."
+      ]
+    },
+    {
+      "id": "D-phys-threshold-matching",
+      "kind": "review-finding",
+      "statement": "In the selected continuum convention use dimensional regularization with modified minimal subtraction (MSbar). At a matching scale mu_t of order M, determine EFT coefficients by equating renormalized full-theory and EFT light-particle amplitudes through the chosen momentum and loop orders, with compatible external-field and infrared conventions. At loop order n, subtract EFT contributions containing the lower-order matched coefficients from the full result; their common infrared physics cancels in a consistent matching calculation. The resulting C_i(mu_t) are boundary data; RG evolution below the threshold does not determine them without those data. A finite tree example uses J^mu=bar(e) gamma^mu (1-gamma5) nu_e and O6=J_mu^dagger J^mu, with L_eff,CC=-(G_F/sqrt(2)) O6=-g^2 O6/(8 M_W^2). Match at mu_t of order M_W for light external fermions with m_light^2 and |q^2| much smaller than M_W^2, retaining this dimension-six contact operator at tree level.",
+      "scope": "Perturbative matching between a supplied heavy/light theory and its finite local low-energy description; no new numerical threshold calculation.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling",
+          "role": "supports",
+          "note": "Use dimensional regularization with modified minimal subtraction as a declared continuum-EFT convention, not automatic removal of a heavy field from a full-theory beta function."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion",
+          "role": "supports",
+          "note": "The derivation matches light-particle physics, including lower-order EFT contributions in loop differences; no numerical matching calculation is supplied here."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization",
+          "role": "supports",
+          "note": "The electron-neutrino charged current has the displayed (1-gamma5), not P_L, normalization. Algebraically eliminating the massive W at tree level yields the stated negative contact coefficient; the low-momentum propagator expansion supplies the derivative order only."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "If the ultraviolet theory is known, matching uses its supplied masses and couplings; otherwise coefficients require phenomenological constraints or remain undetermined. A beta function fixes scale evolution, not the missing integration constants or unknown ultraviolet physics.",
+        "The matching scale, subtraction scheme, field normalization and operator basis are conventions that must be used consistently in coefficients and matrix elements. Finite-order residual scale dependence remains; individual Wilson coefficients are not scheme-independent observables.",
+        "A tree expansion of a heavy propagator is a bounded leading example, not a complete loop matching calculation. For the selected weak-current example, expanding the scalar propagator denominator gives the next derivative dimension-eight term with relative order q^2/M_W^2. This is not a bound on the complete amplitude error: longitudinal/current-mass terms, additional channels and electroweak/QED loops require their stated operators and orders. Its tree Fermi relation is not a precision measurement or new fit.",
+        "The exact heavy-field functional integral is generally nonlocal. A finite local expansion and the required light-field loop subtractions cannot be replaced by simply deleting heavy lines or Taylor-expanding an already integrated loop outside its region of validity."
+      ]
+    },
+    {
+      "id": "D-phys-decoupling-validity",
+      "kind": "review-finding",
+      "statement": "For light-particle processes below the heavy production thresholds, a consistently matched EFT can omit the heavy field as an explicit low-energy degree of freedom while retaining its virtual effects in local coefficients and renormalized light parameters. In a controlled expansion with light scales E much smaller than M and non-growing dimensionless matching coefficients, higher-dimensional contributions are suppressed by powers of E/M. This conditional suppression does not erase heavy-field effects in the relevant or marginal sector.",
+      "scope": "The bounded decoupling interpretation of the declared local expansion and weak-contact example, rather than a universal heavy-mass theorem.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling",
+          "role": "supports",
+          "note": "Use dimensional regularization with modified minimal subtraction as a declared continuum-EFT convention, not automatic removal of a heavy field from a full-theory beta function."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion",
+          "role": "supports",
+          "note": "The derivation matches light-particle physics, including lower-order EFT contributions in loop differences; no numerical matching calculation is supplied here."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "MSbar beta functions of the full theory do not automatically discard a massive field when mu passes its mass. One changes the field content and matches at the threshold before applying the lower-energy RG evolution.",
+        "Taking a heavy mass large while its coupling also grows, including masses tied to symmetry breaking, need not satisfy the stated suppression assumptions. The review's top-loop discussion is a formal warning, not an admitted numerical Zbb calculation or independent experimental test of nondecoupling.",
+        "Near a production threshold or resonance, or without the stated scale separation and power counting, the local truncation need not apply. Integrating out a heavy degree of freedom does not make the full theory physically disappear or create a sharp universal spatial cutoff.",
+        "No new observed composite, stable carrier, time-directed formation process or universal minimal number of constituents follows from changing an effective description. Internal heavy propagation is an amplitude contribution, not a counted population of virtual particles."
+      ]
+    },
+    {
+      "id": "D-phys-effective-description-scope",
+      "kind": "review-finding",
+      "statement": "An effective description declares its retained fields, symmetries, operator basis, hierarchy of scales and target observables. Wilsonian elimination of short-distance modes, renormalized-parameter running with mu and the hard scale of a measurement are distinct operations or variables. Matching coefficients and boundary conditions are additional inputs to an RG equation. Approximate low-energy agreement retains heavy-field effects in parameters and higher operators; it does not remove microscopic causes or establish a physical-time process.",
+      "scope": "Operational scope of the selected Wilsonian scalar construction, EFT logic and existing weak contact example for source card 1.21.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 172-176, Section 12.4, Equations 12.7-12.30: linearized local operators, scaling indices and the marginal higher-order qualification",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 168-170, Section 12.3, fixed-point stability and domains: conditional universality within a specified attraction domain",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "Structurally significant means contributions retained by declared power counting for specified observables and accuracy. It does not select a universal ontology or prove that eliminated fields cease to matter. Suppression requires its hierarchy, coefficient and perturbative assumptions; a higher canonical dimension alone is not a numerical error certificate.",
+        "The massive weak-exchange example is the existing leading low-momentum tree approximation with light external fermions. Its Fermi relation is a parameter identity, not loop matching, a measured coefficient, a complete gauge-consistent amplitude or a precision electroweak scheme conversion. Threshold matching, radiative mixing and nondecoupling need their own declared conventions and validity.",
+        "A fixed point and its linearized scaling fields define relevance only with a chosen scale-flow direction. Marginal directions require higher-order analysis. The finite Gaussian example does not prove an interacting universality class, its basin or all critical exponents; no general stable low-energy-laws theorem across physics is admitted.",
+        "No condensed-matter acquisition, scaling dataset or fitted critical exponent is selected here. The original generic particle-physics and condensed-matter empirical sentence is narrowed to the separately reviewed QCD and QED running extractions, not used as evidence for all EFTs or universality classes.",
+        "The original necessary QFT parent 1.0, weight 1, N_min=N_crit=1 and causal/interaction codes have no admitted scientific quantitative meaning. The SOMA phase 2, property TypeRole 3 and established label do not specify a universal arising stage, formation/maintenance law or downward-causation mechanism. Generic evidence placeholders add no independent source."
+      ]
+    },
+    {
+      "id": "C-phys-running-evidence-boundary",
+      "kind": "review-finding",
+      "statement": "The reviewed CMS jet-ratio analysis supplies a correlated, theory/PDF-conditioned strong-coupling scale comparison. The reviewed L3 angular-shape analysis supplies a conditional electromagnetic running deformation and a dependent inverse-coupling difference. These are distinct observable/model chains. Their limited scale-dependence findings are compatible with the declared parameter-running descriptions; they do not directly measure Wilsonian mode elimination, establish fixed-point universality or validate every effective theory.",
+      "scope": "Literature synthesis of the existing selected CMS and L3 analyses; no new experiment, pooled coupling estimate, fit or numerical RG replay.",
+      "status": "literature-synthesis",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "cms2013-r32",
+          "locator": "Author report arXiv:1304.7498v2, Sections 5-6, pages 9-11: separate scale fits and RGE comparison; Tables 3-4 and Figure 3",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 3-4, Equations 2-3, and page 11, References 13-14: normalized BHLUMI fractions, detector corrections, fixed timelike running and slope parameterization",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 4 and 6, small-angle systematic assessment and Equation 4: shared correction errors, opposite-side material discrepancy and fitted slope",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 page 2, Introduction and Equation 1: effective alpha, adopted alpha(0), vacuum polarization and signed spacelike momentum transfer",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 7 and 9-10, Interpretation of Results and Figure 3: small-angle inverse-alpha difference and theoretical lower-scale anchor",
+          "role": "supports",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "CMS scale-region points and its combined curve share the selected jet data and NLO/PDF/RGE construction. Experimental uncertainties are correlated. The running comparison does not independently measure a beta function or supply a reviewed constant-coupling rejection statistic.",
+        "L3 slope and inverse-alpha difference reuse one small-angle fit. Its S=0 reference is nominal running, not constant coupling. The displayed lower-scale anchor is fixed to theory, not an independent absolute-alpha measurement; the detector-material systematic and covariance limits remain attached to the existing records.",
+        "QCD alpha_s and QED alpha have different definitions, kinematic regions, radiative conventions and inference inputs. They are not pooled as one coupling or interchangeable trajectory. Neither the source-specific experimental uncertainty nor agreement with a running equation measures a Wilsonian truncation error.",
+        "There is no new condensed-matter scaling measurement, EFT coefficient extraction, interacting fixed-point test or cross-domain universality analysis. The formal Gaussian scaling example and tree weak contact relation are definitions, not independent experimental corroborations of these running fits.",
+        "No local CMS/L3 event, detector, PDF, likelihood or covariance replay is claimed. Neither an effective fit nor a reduced description supplies universal stable low-energy laws, microscopic causal erasure, a temporal emergence sequence or downward causation."
+      ],
+      "contextIds": [
+        "cms2013-r32",
+        "l3-2000-running-fit"
+      ]
+    },
+    {
+      "id": "M-phys-running-evidence-boundary",
+      "kind": "method",
+      "statement": "Retain each existing acquisition, response, coupling convention, scale prescription and uncertainty. Keep CMS correlated scale regions separate from L3 same-fit slope/difference and theory-fixed display anchor. Compare only the declared parameter-running descriptions; do not count either experiment as a direct measurement of Wilsonian integration, a universal matching coefficient or all universality classes.",
+      "scope": "Literature synthesis of the existing selected CMS and L3 analyses; no new experiment, pooled coupling estimate, fit or numerical RG replay.",
+      "status": "method-contract",
+      "citations": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "cms2013-r32",
+          "locator": "Author report arXiv:1304.7498v2, Sections 5-6, pages 9-11: separate scale fits and RGE comparison; Tables 3-4 and Figure 3",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 3-4, Equations 2-3, and page 11, References 13-14: normalized BHLUMI fractions, detector corrections, fixed timelike running and slope parameterization",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 4 and 6, small-angle systematic assessment and Equation 4: shared correction errors, opposite-side material discrepancy and fitted slope",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 page 2, Introduction and Equation 1: effective alpha, adopted alpha(0), vacuum polarization and signed spacelike momentum transfer",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 7 and 9-10, Interpretation of Results and Figure 3: small-angle inverse-alpha difference and theoretical lower-scale anchor",
+          "role": "method",
+          "note": "Supports this conditional model or interpretation boundary; no new acquisition, numerical replay or experimental universality theorem."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "CMS scale-region points and its combined curve share the selected jet data and NLO/PDF/RGE construction. Experimental uncertainties are correlated. The running comparison does not independently measure a beta function or supply a reviewed constant-coupling rejection statistic.",
+        "L3 slope and inverse-alpha difference reuse one small-angle fit. Its S=0 reference is nominal running, not constant coupling. The displayed lower-scale anchor is fixed to theory, not an independent absolute-alpha measurement; the detector-material systematic and covariance limits remain attached to the existing records.",
+        "QCD alpha_s and QED alpha have different definitions, kinematic regions, radiative conventions and inference inputs. They are not pooled as one coupling or interchangeable trajectory. Neither the source-specific experimental uncertainty nor agreement with a running equation measures a Wilsonian truncation error.",
+        "There is no new condensed-matter scaling measurement, EFT coefficient extraction, interacting fixed-point test or cross-domain universality analysis. The formal Gaussian scaling example and tree weak contact relation are definitions, not independent experimental corroborations of these running fits.",
+        "No local CMS/L3 event, detector, PDF, likelihood or covariance replay is claimed. Neither an effective fit nor a reduced description supplies universal stable low-energy laws, microscopic causal erasure, a temporal emergence sequence or downward causation."
+      ],
+      "contextIds": [
+        "cms2013-r32",
+        "l3-2000-running-fit"
+      ]
     }
   ],
   "entities": [
@@ -95927,6 +96400,311 @@
         "Near scale invariance and a compatible Gaussian adiabatic spectrum do not uniquely determine a quantum origin. Other initial states, classical stochastic descriptions and alternative generation histories are not ruled out solely by the selected two-point fit. No unreviewed alternative model is claimed to fit equally well.",
         "There is no local Planck likelihood/sky-map replay or new cosmological simulation. Uncertainty and model compatibility are those of the reviewed analyses; no independent likelihood ratio, combined significance, initial-state measurement, particle-survival claim or universal formation/maintenance law is supplied."
       ]
+    },
+    {
+      "id": "phys:wilsonian-effective-action",
+      "name": "Regulated Wilsonian effective action",
+      "kind": "definition",
+      "description": "For a well-defined regulated Euclidean real-scalar functional integral with ultraviolet momentum cutoff Lambda, split phi=phi_<+phi_> at Lambda_prime=Lambda/b with b>1. Define exp(-S_Lambda_prime[phi_<])=integral Dphi_> exp(-S_Lambda[phi_<+phi_>]), integrating only Lambda_prime<|p|<=Lambda. For sources supported below Lambda_prime, integrating the retained fields gives the same normalized low-mode generating functional as the original integral. Field-independent normalization factors cancel in that normalized functional.",
+      "claimIds": [
+        "D-phys-wilsonian-effective-action"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff"
+        }
+      ],
+      "openObligations": [
+        "The field content, interaction, regulator, measure, boundary conditions and any needed infrared regulator must be supplied. The equality is an identity of that specified integral, not an existence or convergence theorem for every field theory.",
+        "The result can contain infinitely many interactions and nonlocal momentum dependence. A local derivative expansion and a finite operator truncation need their own momentum range and error control; they are not consequences of discarding high modes alone.",
+        "A Wilsonian action for retained modes is not the one-particle-irreducible effective action. Integrating out variables changes the description; it does not assert that physical constituents disappear or that microscopic information is uniquely reconstructible."
+      ]
+    },
+    {
+      "id": "phys:renormalization-group-flow",
+      "name": "Scale flow with declared infrared direction",
+      "kind": "definition",
+      "description": "After the shell step, use p_prime=b p, x_prime=x/b and a stated field normalization to restore the reference cutoff in dimensionless variables. Write the transformed action in dimensionless coupling coordinates g_i(ell), with ell=ln b and d g_i/d ell=F_i(g); increasing ell means a smaller physical cutoff Lambda_0 exp(-ell) and longer resolved lengths. Separately, a renormalized coupling g_R(mu) in a chosen subtraction scheme obeys mu d g_R/d mu=beta_R. The cutoff Lambda, subtraction scale mu and external physical momentum Q have distinct roles.",
+      "claimIds": [
+        "D-phys-renormalization-group-flow"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff"
+        }
+      ],
+      "openObligations": [
+        "ell is a resolution parameter, not physical time, a duration, a cosmological history or an intervention on an observed system. A hard process momentum Q can motivate choosing mu near Q, but that choice does not identify their physical roles.",
+        "Flow functions and coupling coordinates depend on regulator, normalization, operator basis and subtraction scheme. Wilsonian coefficients and subtraction-scheme couplings cannot be equated without a specified matching relation.",
+        "If the same dimensionless coordinate is parametrized by mu=Lambda_0 exp(-ell), its derivative mu d/dmu is -d/dell. This sign relation alone does not equate F_i with a different scheme's beta_R. Consistent observables require corresponding parameter/operator transformations; a finite truncation can retain scale dependence."
+      ]
+    },
+    {
+      "id": "phys:fixed-point-scaling-fields",
+      "name": "Local fixed-point scaling classification",
+      "kind": "definition",
+      "description": "For the declared infrared flow F(g), a fixed point g_* satisfies F_i(g_*)=0. Near it, d(delta g_i)/d ell=B_ij delta g_j+O(delta g^2), where B_ij=partial F_i/partial g_j at g_*. For an admitted eigen-direction with real eigenvalue y_a, its linear scaling field obeys u_a(ell)=exp(y_a ell)u_a(0). A nonredundant local operator of full fixed-point scaling dimension Delta_a coupled homogeneously in d dimensions has y_a=d-Delta_a. With ell increasing toward the infrared, y_a>0 is relevant, y_a<0 irrelevant and y_a=0 linearly marginal.",
+      "claimIds": [
+        "D-phys-fixed-point-scaling-fields"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 172-176, Section 12.4, Equations 12.7-12.30: linearized local operators, scaling indices and the marginal higher-order qualification"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 168-170, Section 12.3, fixed-point stability and domains: conditional universality within a specified attraction domain"
+        }
+      ],
+      "openObligations": [
+        "The displayed exponential applies to an eigen-direction in the linear regime. Operator mixing, non-diagonalizable blocks, redundant field redefinitions, symmetry restrictions and departures from the fixed-point neighborhood require explicit treatment; a complete diagonal basis is not assumed for arbitrary models. The displayed inequalities cover real eigenvalues; complex pairs need a real-part stability analysis outside this example.",
+        "Delta_a is the full scaling dimension, including anomalous contributions, not automatically the engineering dimension. A marginal direction needs higher-order flow or an additional exact argument to distinguish marginally relevant, marginally irrelevant and exactly marginal behavior.",
+        "An irrelevant perturbation decreases relative to the fixed point in this direction; its coefficient need not vanish at finite resolution or be negligible for every observable. Relevant does not mean more ontologically real, and marginal does not mean experimentally constant.",
+        "A fixed point, its attraction domain and any associated universality class must be established for the selected action, symmetries and approximation. This classification neither ensures that every flow reaches a fixed point nor proves universal autonomous higher-level laws."
+      ]
+    },
+    {
+      "id": "phys:gaussian-scaling-example",
+      "name": "Gaussian scalar engineering-dimension example",
+      "kind": "definition",
+      "description": "For the massless Gaussian scalar kinetic action S_*=(1/2)integral d^d x (partial phi)^2 with fixed kinetic normalization, x_prime=x/b and phi_prime(x_prime)=b^((d-2)/2)phi(b x_prime) keep that term invariant. Thus [phi]_engineering=(d-2)/2 and an operator containing n fields and r derivatives has engineering dimension Delta_eng=n(d-2)/2+r. In d=4 with phi->-phi symmetry, the monomials phi^2, phi^4 and phi^6 have dimensions 2, 4 and 6, giving engineering values y=2, 0 and -2 under the stated infrared convention.",
+      "claimIds": [
+        "D-phys-gaussian-scaling-example"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 192-193, Appendix, Equations A.39-A.45 and following paragraphs: Gaussian operator dimensions and redundant operators"
+        }
+      ],
+      "openObligations": [
+        "A finite volume or another infrared prescription must handle the massless zero mode when defining the Gaussian integral. The displayed local scaling identity does not by itself make that zero-mode integral normalizable.",
+        "These monomials illustrate engineering dimensions, not an assertion that unsubtracted cutoff monomials are unmixed eigenoperators. Shell contractions can generate lower-field terms; eigenoperator identification needs suitable subtractions, operator mixing and removal of redundant operators.",
+        "The quartic value y=0 is only linear marginality; its nonlinear flow is not determined by power counting. At interacting fixed points, anomalous dimensions can change this classification. No scalar example supplies a quantitative QED/QCD running prediction or empirical proof of universality."
+      ]
+    },
+    {
+      "id": "phys:effective-operator-expansion",
+      "name": "Scoped local effective-operator expansion",
+      "kind": "definition",
+      "description": "For specified light fields and realized Lorentz/internal symmetries in four spacetime dimensions, choose a local operator basis and write L_EFT=L_(d<=4)+sum_(d>4,i) C_i^(d)(mu) O_i^(d)/M^(d-4). Here d is operator mass dimension, M is the heavy scale and the displayed C_i are dimensionless. At light scales E and masses small compared with M, a declared perturbative power counting orders amplitudes in E/M and couplings. With bounded coefficients and controlled loop/logarithmic corrections, finitely many operators contribute at a chosen order.",
+      "claimIds": [
+        "D-phys-effective-operator-expansion"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions"
+        }
+      ],
+      "openObligations": [
+        "Symmetries restrict allowed operators; they do not fix every coefficient or select a unique ultraviolet theory. Explicit symmetry breaking, field redefinitions and redundant operators must be handled consistently in the chosen basis. No particular complete operator list is supplied.",
+        "The d<=4 sector retains the canonically renormalizable interactions and heavy threshold corrections to their parameters; canonical dimension here does not classify scaling eigenfields at an arbitrary interacting fixed point. Higher operator dimension alone is not a universal numerical error bound: enhanced coefficients, strong coupling, large logarithms or extra small scales can require a different power counting or resummation.",
+        "An application must state the retained operator and loop orders and the first omitted contributions. This definition supplies no fitted coefficients, measured truncation error, all-orders convergence proof or validity at E comparable to M."
+      ]
+    },
+    {
+      "id": "phys:threshold-matching",
+      "name": "Threshold matching and coefficient boundary data",
+      "kind": "definition",
+      "description": "In the selected continuum convention use dimensional regularization with modified minimal subtraction (MSbar). At a matching scale mu_t of order M, determine EFT coefficients by equating renormalized full-theory and EFT light-particle amplitudes through the chosen momentum and loop orders, with compatible external-field and infrared conventions. At loop order n, subtract EFT contributions containing the lower-order matched coefficients from the full result; their common infrared physics cancels in a consistent matching calculation. The resulting C_i(mu_t) are boundary data; RG evolution below the threshold does not determine them without those data. A finite tree example uses J^mu=bar(e) gamma^mu (1-gamma5) nu_e and O6=J_mu^dagger J^mu, with L_eff,CC=-(G_F/sqrt(2)) O6=-g^2 O6/(8 M_W^2). Match at mu_t of order M_W for light external fermions with m_light^2 and |q^2| much smaller than M_W^2, retaining this dimension-six contact operator at tree level.",
+      "claimIds": [
+        "D-phys-threshold-matching"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization"
+        }
+      ],
+      "openObligations": [
+        "If the ultraviolet theory is known, matching uses its supplied masses and couplings; otherwise coefficients require phenomenological constraints or remain undetermined. A beta function fixes scale evolution, not the missing integration constants or unknown ultraviolet physics.",
+        "The matching scale, subtraction scheme, field normalization and operator basis are conventions that must be used consistently in coefficients and matrix elements. Finite-order residual scale dependence remains; individual Wilson coefficients are not scheme-independent observables.",
+        "A tree expansion of a heavy propagator is a bounded leading example, not a complete loop matching calculation. For the selected weak-current example, expanding the scalar propagator denominator gives the next derivative dimension-eight term with relative order q^2/M_W^2. This is not a bound on the complete amplitude error: longitudinal/current-mass terms, additional channels and electroweak/QED loops require their stated operators and orders. Its tree Fermi relation is not a precision measurement or new fit.",
+        "The exact heavy-field functional integral is generally nonlocal. A finite local expansion and the required light-field loop subtractions cannot be replaced by simply deleting heavy lines or Taylor-expanding an already integrated loop outside its region of validity."
+      ]
+    },
+    {
+      "id": "phys:decoupling-validity",
+      "name": "Conditional heavy-field decoupling",
+      "kind": "definition",
+      "description": "For light-particle processes below the heavy production thresholds, a consistently matched EFT can omit the heavy field as an explicit low-energy degree of freedom while retaining its virtual effects in local coefficients and renormalized light parameters. In a controlled expansion with light scales E much smaller than M and non-growing dimensionless matching coefficients, higher-dimensional contributions are suppressed by powers of E/M. This conditional suppression does not erase heavy-field effects in the relevant or marginal sector.",
+      "claimIds": [
+        "D-phys-decoupling-validity"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion"
+        }
+      ],
+      "openObligations": [
+        "MSbar beta functions of the full theory do not automatically discard a massive field when mu passes its mass. One changes the field content and matches at the threshold before applying the lower-energy RG evolution.",
+        "Taking a heavy mass large while its coupling also grows, including masses tied to symmetry breaking, need not satisfy the stated suppression assumptions. The review's top-loop discussion is a formal warning, not an admitted numerical Zbb calculation or independent experimental test of nondecoupling.",
+        "Near a production threshold or resonance, or without the stated scale separation and power counting, the local truncation need not apply. Integrating out a heavy degree of freedom does not make the full theory physically disappear or create a sharp universal spatial cutoff.",
+        "No new observed composite, stable carrier, time-directed formation process or universal minimal number of constituents follows from changing an effective description. Internal heavy propagation is an amplitude contribution, not a counted population of virtual particles."
+      ]
+    },
+    {
+      "id": "phys:effective-description-scope",
+      "name": "Scoped effective-description construction",
+      "kind": "definition",
+      "description": "An effective description declares its retained fields, symmetries, operator basis, hierarchy of scales and target observables. Wilsonian elimination of short-distance modes, renormalized-parameter running with mu and the hard scale of a measurement are distinct operations or variables. Matching coefficients and boundary conditions are additional inputs to an RG equation. Approximate low-energy agreement retains heavy-field effects in parameters and higher operators; it does not remove microscopic causes or establish a physical-time process.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 172-176, Section 12.4, Equations 12.7-12.30: linearized local operators, scaling indices and the marginal higher-order qualification"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 168-170, Section 12.3, fixed-point stability and domains: conditional universality within a specified attraction domain"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 16-19, Sections 2.4-2.5: dimensional regularization, mass-independent subtraction and threshold decoupling"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 20-27, Section 3, Equations 3.15-3.34 and Figures 2-6: light-field matching, loop subtraction and finite local expansion"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.1, page 3, Equation 10.6 and the following low-momentum paragraph: effective four-fermion interaction and tree-level Fermi-constant normalization"
+        },
+        {
+          "sourceId": "pdg2025-electroweak",
+          "locator": "Section 10.2.4, pages 9-11, Equations 10.11-10.13: momentum-dependent width, complex squared-mass pole, LEP mass/width convention and finite-width approximation boundaries"
+        }
+      ],
+      "openObligations": [
+        "Structurally significant means contributions retained by declared power counting for specified observables and accuracy. It does not select a universal ontology or prove that eliminated fields cease to matter. Suppression requires its hierarchy, coefficient and perturbative assumptions; a higher canonical dimension alone is not a numerical error certificate.",
+        "The massive weak-exchange example is the existing leading low-momentum tree approximation with light external fermions. Its Fermi relation is a parameter identity, not loop matching, a measured coefficient, a complete gauge-consistent amplitude or a precision electroweak scheme conversion. Threshold matching, radiative mixing and nondecoupling need their own declared conventions and validity.",
+        "A fixed point and its linearized scaling fields define relevance only with a chosen scale-flow direction. Marginal directions require higher-order analysis. The finite Gaussian example does not prove an interacting universality class, its basin or all critical exponents; no general stable low-energy-laws theorem across physics is admitted.",
+        "No condensed-matter acquisition, scaling dataset or fitted critical exponent is selected here. The original generic particle-physics and condensed-matter empirical sentence is narrowed to the separately reviewed QCD and QED running extractions, not used as evidence for all EFTs or universality classes.",
+        "The original necessary QFT parent 1.0, weight 1, N_min=N_crit=1 and causal/interaction codes have no admitted scientific quantitative meaning. The SOMA phase 2, property TypeRole 3 and established label do not specify a universal arising stage, formation/maintenance law or downward-causation mechanism. Generic evidence placeholders add no independent source."
+      ]
+    },
+    {
+      "id": "phys:running-evidence-boundary",
+      "name": "Scope of QCD and QED running evidence",
+      "kind": "scoped-process",
+      "description": "The reviewed CMS jet-ratio analysis supplies a correlated, theory/PDF-conditioned strong-coupling scale comparison. The reviewed L3 angular-shape analysis supplies a conditional electromagnetic running deformation and a dependent inverse-coupling difference. These are distinct observable/model chains. Their limited scale-dependence findings are compatible with the declared parameter-running descriptions; they do not directly measure Wilsonian mode elimination, establish fixed-point universality or validate every effective theory.",
+      "claimIds": [
+        "C-phys-running-evidence-boundary"
+      ],
+      "status": "evidence-scoped",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 98-101, Section 3, Equations 3.30-3.41: Gaussian momentum-shell integration, field/momentum rescaling and transformed mass parameter"
+        },
+        {
+          "sourceId": "wilson-kogut1974-rg",
+          "locator": "Published pages 160-161, Section 12.1, Equations 12.1-12.3 and surrounding paragraphs: dimensionless interactions and decreasing physical cutoff"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 7-8, Section 1.1, Equations 1.1-1.3: operator tower, coefficient assumptions and finite-order accuracy"
+        },
+        {
+          "sourceId": "georgi1993-effective-field-theory",
+          "locator": "Author review HUTP-93/A003, pages 28-29, Section 4.1: light fields, realized gauge symmetry and allowed low-energy interactions"
+        },
+        {
+          "sourceId": "cms2013-r32",
+          "locator": "Author report arXiv:1304.7498v2, Sections 5-6, pages 9-11: separate scale fits and RGE comparison; Tables 3-4 and Figure 3"
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 3-4, Equations 2-3, and page 11, References 13-14: normalized BHLUMI fractions, detector corrections, fixed timelike running and slope parameterization"
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 4 and 6, small-angle systematic assessment and Equation 4: shared correction errors, opposite-side material discrepancy and fitted slope"
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 page 2, Introduction and Equation 1: effective alpha, adopted alpha(0), vacuum polarization and signed spacelike momentum transfer"
+        },
+        {
+          "sourceId": "l3-2000-running",
+          "locator": "arXiv:hep-ex/0002035v1 pages 7 and 9-10, Interpretation of Results and Figure 3: small-angle inverse-alpha difference and theoretical lower-scale anchor"
+        }
+      ],
+      "openObligations": [
+        "CMS scale-region points and its combined curve share the selected jet data and NLO/PDF/RGE construction. Experimental uncertainties are correlated. The running comparison does not independently measure a beta function or supply a reviewed constant-coupling rejection statistic.",
+        "L3 slope and inverse-alpha difference reuse one small-angle fit. Its S=0 reference is nominal running, not constant coupling. The displayed lower-scale anchor is fixed to theory, not an independent absolute-alpha measurement; the detector-material systematic and covariance limits remain attached to the existing records.",
+        "QCD alpha_s and QED alpha have different definitions, kinematic regions, radiative conventions and inference inputs. They are not pooled as one coupling or interchangeable trajectory. Neither the source-specific experimental uncertainty nor agreement with a running equation measures a Wilsonian truncation error.",
+        "There is no new condensed-matter scaling measurement, EFT coefficient extraction, interacting fixed-point test or cross-domain universality analysis. The formal Gaussian scaling example and tree weak contact relation are definitions, not independent experimental corroborations of these running fits.",
+        "No local CMS/L3 event, detector, PDF, likelihood or covariance replay is claimed. Neither an effective fit nor a reduced description supplies universal stable low-energy laws, microscopic causal erasure, a temporal emergence sequence or downward causation."
+      ]
     }
   ],
   "rules": [
@@ -112030,6 +112808,231 @@
         "planck2018-cmb-acquisition",
         "planck2018-cmb-response",
         "planck2018-primordial-inference"
+      ]
+    },
+    {
+      "id": "physics:wilsonian-effective-action-renormalization-group-flow",
+      "source": "phys:wilsonian-effective-action",
+      "target": "phys:renormalization-group-flow",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The integration and declared rescaling define the flow of effective descriptions; this dependency is not a measured temporal mechanism.",
+      "claimIds": [
+        "D-phys-renormalization-group-flow"
+      ]
+    },
+    {
+      "id": "physics:renormalization-group-flow-fixed-point-scaling-fields",
+      "source": "phys:renormalization-group-flow",
+      "target": "phys:fixed-point-scaling-fields",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The stated infrared coordinate and coupling flow fix the sign convention for local stability and scaling dimensions.",
+      "claimIds": [
+        "D-phys-fixed-point-scaling-fields"
+      ]
+    },
+    {
+      "id": "physics:fixed-point-scaling-fields-gaussian-scaling-example",
+      "source": "phys:fixed-point-scaling-fields",
+      "target": "phys:gaussian-scaling-example",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The Gaussian power-counting example uses the declared infrared classification; it supplies no universal interacting-theory eigenbasis or observed fixed point.",
+      "claimIds": [
+        "D-phys-gaussian-scaling-example"
+      ]
+    },
+    {
+      "id": "physics:effective-operator-expansion-threshold-matching",
+      "source": "phys:effective-operator-expansion",
+      "target": "phys:threshold-matching",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The chosen local operator basis and normalization define which coefficient boundary conditions the matching calculation must determine.",
+      "claimIds": [
+        "D-phys-threshold-matching"
+      ]
+    },
+    {
+      "id": "physics:low-energy-weak-exchange-threshold-matching",
+      "source": "phys:low-energy-weak-exchange",
+      "target": "phys:threshold-matching",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The existing leading weak contact relation supplies one bounded tree matching example; its amplitude, current and precision limitations remain in force.",
+      "claimIds": [
+        "D-phys-threshold-matching"
+      ]
+    },
+    {
+      "id": "physics:effective-operator-expansion-decoupling-validity",
+      "source": "phys:effective-operator-expansion",
+      "target": "phys:decoupling-validity",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Higher-dimensional suppression uses the stated scale separation, coefficient assumptions and power counting, rather than operator labels alone.",
+      "claimIds": [
+        "D-phys-decoupling-validity"
+      ]
+    },
+    {
+      "id": "physics:threshold-matching-decoupling-validity",
+      "source": "phys:threshold-matching",
+      "target": "phys:decoupling-validity",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Removing explicit heavy fields retains matched threshold corrections and coefficient boundary data; a mass-independent beta function alone does not implement decoupling.",
+      "claimIds": [
+        "D-phys-decoupling-validity"
+      ]
+    },
+    {
+      "id": "physics:quantum-field-framework-effective-description-scope",
+      "source": "phys:quantum-field-framework",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The selected field-theory framework supplies an adopted model vocabulary, not a necessary universal creation parent for RG or low-energy laws.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:qcd-renormalization-scale-effective-description-scope",
+      "source": "phys:qcd-renormalization-scale",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Renormalized QCD scale variation provides a comparison with the distinct Wilsonian cutoff; the hard experimental scale and physical time remain different.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:wilsonian-effective-action-effective-description-scope",
+      "source": "phys:wilsonian-effective-action",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The chosen cutoff transformation preserves its specified low-momentum generating functional; no empirical microscopic-erasure claim follows.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:fixed-point-scaling-fields-effective-description-scope",
+      "source": "phys:fixed-point-scaling-fields",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Fixed-point relevance and universality reasoning retain the declared IR direction, linearization and domain conditions.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:effective-operator-expansion-effective-description-scope",
+      "source": "phys:effective-operator-expansion",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The retained light-field operators and power counting define low-energy accuracy, rather than universal structural importance.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:threshold-matching-effective-description-scope",
+      "source": "phys:threshold-matching",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Matching and boundary coefficients retain the specified full/effective theories, prescriptions, orders and low-energy comparison.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:decoupling-validity-effective-description-scope",
+      "source": "phys:decoupling-validity",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Suppression of heavy effects retains scale-separation and coupling assumptions; nondecoupling is not silently excluded.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:low-energy-weak-exchange-effective-description-scope",
+      "source": "phys:low-energy-weak-exchange",
+      "target": "phys:effective-description-scope",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The existing weak contact limit is one tree-level example with its original currents and exclusions, not a new extraction or higher-order EFT calculation.",
+      "claimIds": [
+        "D-phys-effective-description-scope"
+      ]
+    },
+    {
+      "id": "physics:effective-description-scope-running-evidence-boundary",
+      "source": "phys:effective-description-scope",
+      "target": "phys:running-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This scoped interpretation input retains its own preparation, definition and uncertainty; it does not add an independent acquisition, universal RG proof or physical-time causal arrow.",
+      "claimIds": [
+        "M-phys-running-evidence-boundary"
+      ],
+      "contextIds": [
+        "cms2013-r32",
+        "l3-2000-running-fit"
+      ]
+    },
+    {
+      "id": "physics:cms-running-consistency-running-evidence-boundary",
+      "source": "phys:cms-running-consistency",
+      "target": "phys:running-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This scoped interpretation input retains its own preparation, definition and uncertainty; it does not add an independent acquisition, universal RG proof or physical-time causal arrow.",
+      "claimIds": [
+        "M-phys-running-evidence-boundary"
+      ],
+      "contextIds": [
+        "cms2013-r32",
+        "l3-2000-running-fit"
+      ]
+    },
+    {
+      "id": "physics:l3-running-slope-running-evidence-boundary",
+      "source": "phys:l3-running-slope",
+      "target": "phys:running-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This scoped interpretation input retains its own preparation, definition and uncertainty; it does not add an independent acquisition, universal RG proof or physical-time causal arrow.",
+      "claimIds": [
+        "M-phys-running-evidence-boundary"
+      ],
+      "contextIds": [
+        "cms2013-r32",
+        "l3-2000-running-fit"
+      ]
+    },
+    {
+      "id": "physics:l3-running-difference-running-evidence-boundary",
+      "source": "phys:l3-running-difference",
+      "target": "phys:running-evidence-boundary",
+      "kind": "descriptive",
+      "role": "interpretation-dependency",
+      "assertion": "This scoped interpretation input retains its own preparation, definition and uncertainty; it does not add an independent acquisition, universal RG proof or physical-time causal arrow.",
+      "claimIds": [
+        "M-phys-running-evidence-boundary"
+      ],
+      "contextIds": [
+        "cms2013-r32",
+        "l3-2000-running-fit"
       ]
     }
   ]

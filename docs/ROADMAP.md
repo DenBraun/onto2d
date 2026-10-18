@@ -23,14 +23,14 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 173 remain on the
+graph. Of the 249 original source cards, 172 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-76 cards is a source-review census, not a percentage of scientifically supported
+77 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-Seven Level-1 cards remain pending.
+Six Level-1 cards remain pending.
 
-The current graph contains 1301 records, 1148 connections, 1415 claims and 417 sources.
+The current graph contains 1310 records, 1167 connections, 1425 claims and 419 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -198,6 +198,14 @@ belong to the current claims.
    quantum generation. Large-scale-structure evidence, later matching and full
    likelihood replay require their own review. Original necessary parents,
    weights, carrier minima and SOMA phase/type authority are excluded.
+   Card 1.21 has scoped Wilsonian and subtraction-scale definitions, local
+   fixed-point classification and a finite Gaussian engineering-dimension example.
+   An EFT operator expansion and the existing weak contact limit retain matching
+   inputs, truncation order and nondecoupling conditions. CMS and L3 supply only
+   their reviewed running comparisons, preserving shared data and distinct
+   coupling conventions. No new condensed-matter scaling evidence or general
+   universality theorem is claimed. Original necessary parents, weights, carrier
+   minima, physical-time flow and universal downward causation are excluded.
    Continue with independent structure-function tests, spectroscopy and the
    remaining dependency claims; a theory input to an interpretation does not
    establish a formation process. Wider field-region models and information
