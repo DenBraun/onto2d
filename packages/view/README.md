@@ -27,6 +27,11 @@ const label = wrapGraphNodeLabel(neighborhood.focus.name, {
 });
 ```
 
+Summaries use a string `shortDescription`, including an empty string, before
+falling back to a string `description` or an empty string. This summary also
+participates in catalogue search. Supply `shortDescription` to choose different
+text or keep the full description out of summaries. Source records stay unchanged.
+
 `nodeWidth` and `nodeHeight` are maximum card dimensions. Dense layouts may
 reduce card width deterministically to keep lanes separated. The returned
 dimensions are the exact values to render and route against.

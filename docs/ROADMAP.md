@@ -23,14 +23,16 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 167 remain on the
+graph. Of the 249 original source cards, 166 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-82 cards is a source-review census, not a percentage of scientifically supported
+83 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
-One Level-1 card remains pending: directional excitation stability (1.34).
+All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
+assertions remain excluded or explicitly limited; this is not independent
+validation of the physical branch.
 
-The current graph contains 1331 records, 1228 connections, 1451 claims and 422 sources.
+The current graph contains 1333 records, 1235 connections, 1453 claims and 422 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -72,6 +74,9 @@ selected bytes, and published releases cannot be reformatted in place.
 Relations reference complete dictionary claims through `claimIds`; their
 sources and contexts are stored once in those dictionaries instead of being
 expanded again on every edge. Selected-node evidence remains self-contained.
+Entity descriptions are stored once; full and lazy catalogues derive their
+summaries consistently. Explicit short summaries and the distinct construction
+rule summaries remain authoritative. Source descriptions and evidence are retained.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,
@@ -108,6 +113,11 @@ belong to the current claims.
    basis. Passive coefficient/mode changes preserve the same state; preparing
    polarization is distinct from a material or loop response and supplies no
    vacuum axis, birefringence or directional stability mechanism.
+   Card 1.34 separates free scalar envelope propagation from damping, localization,
+   intrinsic decay and transport. Its group velocity is a model deduction, not a
+   directional lifetime or drift measurement. Pole/ensemble decay conventions
+   retain their own scope; no universal stability or Level-0 transport bridge
+   follows from anisotropy, polarization or unitary norm conservation.
    Card 1.23 separates Maxwell gauge/Fock definitions, normalized one-photon
    states, triggered optical counts and response-conditioned anticorrelation.
    The counting and inference records share data; separate same-source

@@ -39,6 +39,30 @@ test("ModelView validates and freezes a deterministic catalogue projection", () 
   assert.deepEqual(nodes.map((node) => node.id), ["d", "a", "c", "b"]);
 });
 
+test("catalogue summaries fall back to descriptions while preserving explicit short text", () => {
+  const records = [
+    { id: "fallback", description: "Searchable source description" },
+    { id: "distinct", description: "Hidden detailed explanation", shortDescription: "Chosen summary" },
+    { id: "empty", description: "Suppressed detailed explanation", shortDescription: "" },
+    { id: "absent" },
+    { id: "non-string", description: "Replacement summary", shortDescription: null }
+  ];
+  const before = structuredClone(records);
+  const view = createModelView({ nodes: records, edges: [] });
+  assert.deepEqual(records, before, "Presentation must not fill fields in source records");
+  assert.deepEqual(Object.fromEntries(records.map(({ id }) => [id, view.get(id).shortDescription])), {
+    fallback: "Searchable source description", distinct: "Chosen summary", empty: "", absent: "",
+    "non-string": "Replacement summary"
+  });
+  for (const [search, ids] of [
+    ["searchable", ["fallback"]], ["chosen", ["distinct"]], ["replacement", ["non-string"]],
+    ["hidden detailed", []], ["suppressed detailed", []]
+  ]) {
+    assert.deepEqual(view.catalog({ search }).items.map((node) => node.id), ids);
+  }
+  assert.deepEqual(view.get("fallback").data, before[0], "Inspection keeps the original description-only record");
+});
+
 test("neighborhood projection respects direction, depth, and deterministic limits", () => {
   const view = createModelView({ nodes, edges });
   const full = view.neighborhood({ focusId: "c", depth: 2, direction: "both" });

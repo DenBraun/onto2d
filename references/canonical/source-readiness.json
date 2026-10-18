@@ -12333,6 +12333,24 @@
       ]
     },
     {
+      "nodeId": "phys:free-scalar-propagation",
+      "role": "definition",
+      "denotes": "The formally deduced group velocity, rotation covariance and conserved free number sector of the specified scalar model, without an observed stability or transport instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-free-scalar-propagation"
+      ]
+    },
+    {
+      "nodeId": "phys:directional-excitation-boundary",
+      "role": "definition",
+      "denotes": "A scoped boundary separating directional propagation, attenuation, localization and intrinsic decay while excluding unsupported source-card causes and the unresolved Level-0 transport bridge.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

@@ -2,7 +2,7 @@ import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:4ed2013602fbbf7c0058470709cf8d82599a4b7be5e3caef23a57780542e1867";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:ecdd405d6fba309292ab9b5db067873269aa91049ac2af3e3aec9ff83c077372";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,
@@ -155,7 +155,11 @@ async function readJson(url, expected, maximum, fetchImplementation, signal, cac
 }
 
 function nodeProjection(record) {
-  return Object.fromEntries(NODE_FIELDS.filter((key) => Object.hasOwn(record, key)).map((key) => [key, record[key]]));
+  return {
+    ...Object.fromEntries(NODE_FIELDS.filter((key) => Object.hasOwn(record, key)).map((key) => [key, record[key]])),
+    ...(typeof record.shortDescription !== "string" && typeof record.description === "string"
+      ? { shortDescription: record.description } : {})
+  };
 }
 
 function matchingProjection(left, right) {

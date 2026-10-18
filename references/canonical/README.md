@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1331 records, 1228 connections, 1451 claims and 422 sources.
+The current graph contains 1333 records, 1235 connections, 1453 claims and 422 sources.
 The physics review contains 188 study contexts and 142 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 Open neural work concerns glial functions, gene regulation, neuroimmune
@@ -141,8 +141,51 @@ SOMA classifications have no physical causal force. The scalar vacuum and
 scalar time-evolution definitions do not supply electromagnetic polarizability,
 and the Level-0 gradient still lacks its field-response map. The original
 placeholders supply no identifiable supporting anisotropic-response publication.
-Card 1.34 remains pending; polarization supplies no necessary stability,
-localization or transport mechanism.
+Polarization supplies no necessary stability, localization or transport mechanism;
+each requires its own dynamical model and evidence.
+
+## Propagation, loss and directional excitation scope
+
+Card 1.34 separates dispersion and envelope velocity, attenuation or damping,
+localization and intrinsic decay. Its finite model comparison uses the existing
+free real scalar field in infinite homogeneous flat space, positive mass and
+no imposed material, external-field or boundary axis.
+[Tong's selected free-field passages](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S2.html)
+supply `E(k)=sqrt(k dot k+m^2)`, mode phases and conserved free number sectors.
+For a smooth narrow positive-frequency envelope around nonzero `k0`, first-order
+dispersion gives `v_g=grad_k E=k/E`. A proper rotation gives
+`v_g(Rk)=R v_g(k)`, with equal speed at fixed momentum magnitude and mass.
+`E(-k)=E(k)` while the velocity reverses. A prepared packet can select its
+propagation direction without selecting a vacuum axis.
+
+Higher dispersion terms can spread or reshape the packet. Its envelope is not
+a universal position probability density, and group velocity is neither a
+signal front nor an integrated flux. A mode's unit-modulus phase does not prove
+persistent localization or retention within a detector. The chosen free number
+sector is conserved, but unitary conservation of the full state norm alone does
+not forbid amplitude leaving a selected unstable subspace in another model.
+
+Intrinsic lifetime and width retain the separate
+[PDG exponential-survival convention](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-kinematics.pdf),
+including proper versus laboratory time and the fixed Lorentz factor. Detector
+linewidth, path attenuation, scattering loss and an inferred energy width
+cannot substitute for one another. No new complex response pole, damping rate,
+localization length, lifetime or response experiment is admitted here.
+
+Axis-dependent response and opposite-direction nonreciprocity are different
+comparisons; neither alone establishes a preferred drift, net current or
+propulsion. A physical directional comparison needs its state, frame, apparatus,
+background and held-fixed controls. Anisotropy and photon polarization definitions
+supply no scalar coupling or necessary modulation of excitation persistence.
+Parent 0.23 remains an unresolved transport-bias proposal requiring an actual
+field-observable map, displacement or flux model and discriminating evidence.
+
+Original weights `0.40/0.30/0.20/0.10`, unit minima, carrier/direction codes and
+SOMA phase/property labels have no physical causal authority. Both evidence
+placeholders lack an identifiable supporting directional-stability publication.
+The original universal chain is excluded; the Level-0 F12 finding remains
+unresolved. Completing review of the 35 Level-1 cards does not establish their
+unsupported physical claims or independently reproduce their experiments.
 
 ## Gauge and matter sector decomposition
 

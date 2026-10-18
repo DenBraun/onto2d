@@ -3,13 +3,13 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.10.18.8",
+    "version": "2026.10.18.9",
     "status": "research-reconstruction-partial"
   },
   "scope": {
     "empiricalValidationClaimed": false,
     "independentScientificReviewComplete": false,
-    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. Neutrino mass/flavor structure separates conditional splitting evidence from absolute masses and unknown mass generation. Closed-sector phase and mass-shift invariances do not establish a unique extension. Gauge sectors specify a chosen coupled model, not a formation event. Photon polarization does not establish vacuum anisotropy. No whole-graph scientific validation is claimed.",
+    "summary": "Partial reconstruction of Level-0 definitions and scoped physical, optical, retinal, visual and neural evidence. Levels organize the display; they do not establish a universal emergence order. Formal specifications, computational models, experimental preparations, observations and conditional interpretations have distinct roles. Each scientific claim retains its reviewed sources, selected system, observable, uncertainty and unresolved limitations. Physical records distinguish field and representation definitions from detector data, lattice computations and inferred parameters. Scattering, jets, resonances, decay, form factors and magnetic moments retain their preparation, calibration and response. Nuclear and atomic mass inputs, corrected readouts and dependent combinations preserve external scales, common exposure and covariance limits. Lattice spectra, local source-conditioned field profiles and static-source screening retain their action, ensemble, operator and extrapolation boundaries; pure-gauge criteria, dynamical screening and hadronic interpretations are distinct. Profile shape and fitted width do not identify a vacuum condensate, real-time self-organization or universal stable matter. A fixed-input nuclear lattice calculation is distinct from controlled quark-mass sensitivity, physical binding measurements and a many-body material or astrophysical equation of state. Finite-volume shifts and bound-state assignments retain their state-identification limits. Material and collider charge searches do not establish universal free-color absence. Entanglement, regulated vacuum entropy, Bell tests and teleportation retain their subsystem, measurement and communication assumptions. Electroweak parameters and lepton flavor conventions remain separate from collider rates and species-specific decay evidence. Neutrino oscillations distinguish production/detection coherence, effective packet overlap and unresolved-event averaging. A conditional solar application keeps production and detector weights external; reactor, solar, atmospheric and accelerator findings retain distinct preparations and historical inference models. Quantitative astrophysical/cosmological transport and mass origin lie outside that oscillation scope. A separate linear single-field cosmological model defines conditional primordial curvature power, with restricted conservation and stochastic interpretation. Selected Planck angular statistics constrain a scalar power-law spectrum through declared transfer, foreground and likelihood assumptions; they do not measure an initial quantum state or uniquely prove its origin. Large-scale-structure evidence is outside that CMB application. Optical, retinal and neural studies distinguish measured response from anatomy, intervention and theoretical interpretation. Behavioral success and fitted models do not identify a unique mechanism. Finite checks reproduce only their declared data or mathematical witnesses, not entire experiments. Source discrepancies and unreproduced stages remain explicit. Cross-domain construction, universal parent weights and carrier minima, downward causation and a derivation of quantum theory from Level 0 remain unestablished. Wilsonian transformations, parameter running and physical time remain distinct. Effective operator expansions retain matching and truncation assumptions; Gaussian scaling and selected running fits do not establish universal low-energy laws or condensed-matter critical behavior. Photon gauge states, triggered detector counts and conditional anticorrelation are distinct. Selected radiative observations do not establish empirical mass/charge zeros, persistent identity or static real-photon flux. Neutrino mass/flavor structure separates conditional splitting evidence from absolute masses and unknown mass generation. Closed-sector phase and mass-shift invariances do not establish a unique extension. Gauge sectors are adopted models. Polarization and free propagation do not establish vacuum anisotropy or directional stability. No whole-graph scientific validation is claimed.",
     "levelInterpretation": "Display groups inherited from the catalogue; no universal hierarchy, developmental order or derivation from Level 0 is inferred."
   },
   "sources": [
@@ -1045,7 +1045,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/source-readiness.json",
-      "sha256": "1ae9a71fa46a8bd13ae5d6e04361ea461e40949498a8a64947463757623f46e3",
+      "sha256": "cb3f75235043114455e6bfad6aff92349ddd506ea909f188ceb2fa7dfdf5e41c",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -6734,7 +6734,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/physics-review.json",
-      "sha256": "e64d1064f59520f8a145c2e8805ea7874b175a1e5a7c84377230e90ba033a9b0",
+      "sha256": "bcbbab72bb83c4d06c1d0fd3f2ce41473face2e575786eb6535d34afcea3ee60",
       "review": {
         "extent": "complete-internal-record",
         "locators": [
@@ -62556,7 +62556,104 @@
         "A response claim must specify its action or constitutive model, state, background, what rotates relative to what, held-fixed controls and polarization-resolved observable. No anisotropic medium, external directional background, calibrated analyzer, response experiment or numerical replay is admitted; equal free-mode frequencies do not establish every vacuum or material response.",
         "Original parent 1.32 supplies the scoped anisotropy comparison, not a realized anisotropic regime. Parents 1.27 and 1.26 concern a chosen scalar Fock vacuum and free scalar evolution, not electromagnetic polarizability or causal modulation. Parent 0.22 has no admitted functional, domain, gradient operator, units or map to a field response; the Level-0 F12 support finding remains unresolved.",
         "The source weights 0.50, 0.25, 0.15 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier and direction/mode codes have no quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the proposal; they supply no universal threshold, physical occurrence or vacuum/admissibility law.",
-        "The conceptual and theoretical placeholders in source card 1.33 identify no retrievable supporting publication or reviewed anisotropic-response prediction. The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process or transport effect is inferred; card 1.34 remains pending for directional excitation stability, localization and transport."
+        "The conceptual and theoretical placeholders in source card 1.33 identify no retrievable supporting publication or reviewed anisotropic-response prediction. The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process, directional excitation stability, localization or transport mechanism is inferred from this polarization definition."
+      ]
+    },
+    {
+      "id": "D-phys-free-scalar-propagation",
+      "kind": "review-finding",
+      "statement": "For the chosen free real scalar field in infinite homogeneous flat space, use hbar=c=1, m>0 and no material, external or boundary axis. The positive-frequency branch has E(k)=sqrt(k dot k+m^2). For an envelope narrowly concentrated around k0!=0, first-order dispersion and stationary phase give v_g(k0)=grad_k E|k0=k0/E(k0). A proper rotation R satisfies R^T R=I and det(R)=+1, giving v_g(Rk)=R v_g(k) and equal speed at fixed |k| and mass. E(-k)=E(k), while v_g(-k)=-v_g(k). Each free mode has |exp(-i E(k)t)|=1, and [N,H]=0 preserves the specified free Fock number sector. These are formal properties of this model, not an observed directional stability asymmetry.",
+      "scope": "Formal dispersion, narrow-envelope velocity and free number-sector conservation; no observed localization, attenuation or directional decay effect.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field",
+          "role": "supports",
+          "note": "The positive free scalar frequency is the input to the declared group-velocity and rotation deductions; no propagation experiment is claimed."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.3 opening: vacuum and normal ordering",
+          "role": "supports",
+          "note": "The normal-ordered Hamiltonian fixes the free model; it does not establish a physical vacuum medium."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions",
+          "role": "supports",
+          "note": "The free number operator, conserved Fock sectors and smeared states support the stated sector and wavepacket limits."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "The reviewed evolution phases support the single-mode unit-modulus statement; group velocity is deduced from the specified dispersion."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "The envelope must be smooth and sufficiently narrow in momentum for expansion about k0 over the stated propagation interval. Higher dispersion derivatives can spread or reshape it; this velocity approximation does not assert exact rigid translation. A changing local amplitude or escape from a finite region is not by itself intrinsic decay.",
+        "A sharp momentum eigenstate is delta-normalized and not a bounded localized object. Use suitably smeared, normalized finite-energy states. The positive-frequency envelope is a mode-superposition description, not a universal relativistic position probability density or proof of persistent localization.",
+        "Rotation covariance changes the velocity vector components; it does not make rotation-related momentum labels or states identical. Equal speed compares fixed |k|, mass and model with the preparation rotated consistently. A chosen packet momentum can select a propagation direction without introducing an intrinsic vacuum axis; k=0 has no momentum direction.",
+        "This is a closed free model with a time-independent Hamiltonian, without interaction-induced transitions, dissipation or an imposed directional environment. Conservation of its free number sector and a mode phase do not establish the persistence of all interacting excitations, every quantum state or an open subsystem. Physical boundaries or anisotropic regulators require a separate symmetry analysis.",
+        "Group velocity is the local narrow-envelope velocity derived here. It is not an integrated particle or energy flux, a signal-front speed, detector retention, a net directed current or propulsion. No transport measurement, decay width, localization length, damping rate, numerical replay or universal stability threshold is admitted."
+      ]
+    },
+    {
+      "id": "D-phys-directional-excitation-boundary",
+      "kind": "review-finding",
+      "statement": "A directional excitation claim must distinguish dispersion and envelope velocity, damping or attenuation, a localization criterion and intrinsic decay lifetime. They are different observables and require a specified model, state, environment, frame, held-fixed controls and directional comparison. The supplied free scalar propagation and photon polarization definitions establish no anisotropic environment or unequal directional persistence. No measured directional stability, localized transport bias or Level-0-to-field mechanism is admitted.",
+      "scope": "Interpretation boundary for source-card 1.34, its proposed parents and conflated directional excitation observables; no observed asymmetry or transport mechanism.",
+      "status": "definition",
+      "citations": [
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field",
+          "role": "supports",
+          "note": "The specified free scalar dispersion supports the model comparison only, not a universal directional persistence law."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions",
+          "role": "supports",
+          "note": "Conserved free number sectors and the distinction between sharp momenta and smeared states limit persistence and localization claims."
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
+          "role": "supports",
+          "note": "Free evolution and spacelike commutators do not identify group velocity with a signal front or establish an anisotropic response."
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units",
+          "role": "supports",
+          "note": "The reviewed exponential proper-lifetime and laboratory survival convention supplies a contrast with packet motion; no new width or measurement is inferred."
+        },
+        {
+          "sourceId": "legacy-1",
+          "locator": "/",
+          "role": "provenance",
+          "note": "Original source card /34, including its four proposed parents, numerical defaults and unsupported evidence placeholders."
+        },
+        {
+          "sourceId": "legacy-0",
+          "locator": "/",
+          "role": "provenance",
+          "note": "Original localized-transport-bias proposal /23; its author classification is not physical evidence."
+        }
+      ],
+      "checkIds": [],
+      "limitations": [
+        "A dispersion relation specifies frequency versus momentum; it is not a damping law, attenuation length, localization length or intrinsic decay width. Each quantity needs its own definition and compatible observable. Packet spreading, redistribution or escape from an observation region can change a detected amplitude or count without particle decay; no localization or retention criterion is supplied by the original property label.",
+        "Only within the declared exponential-survival approximation does the PDG convention give tau_proper=1/Gamma and P(t_lab)=exp(-Gamma*t_lab/gamma) in hbar=c=1, with Gamma an energy width and gamma the fixed Lorentz factor. This is a formal decay convention, not an exact survival law at every time, a new complex-pole calculation or a measured lifetime. Detector linewidth, instrumental broadening, scattering and path attenuation cannot automatically become intrinsic decay width.",
+        "A unit-modulus free-mode phase and conservation of the full state norm do not alone establish persistence of a selected unstable component or spatially localized packet. Unitary evolution can transfer amplitude out of a selected subspace. The supplied free model preserves its Fock number sector, but this does not freeze the packet shape or generalize to interacting or open subsystems.",
+        "Comparing different axes at fixed momentum magnitude is distinct from comparing opposite directions in one specified apparatus. Spatial anisotropy does not by itself establish opposite-direction nonreciprocity, a preferred drift or net transport. A directional comparison must hold the model, frame, preparation and apparatus controls appropriately fixed; no selected anisotropic environment or response protocol is supplied here.",
+        "Original parent 1.32 supplies a scoped field-anisotropy interpretation, not a realized anisotropic regime. Parent 1.33 supplies a transverse free-photon polarization state, not a scalar polarization branch or a universal modulation of excitation persistence. Parent 1.26 supplies evolution in an already specified free scalar model, not an enabling causal intervention. These are descriptive definition dependencies; their labels do not establish necessary arising or modulation relations.",
+        "Parent 0.23 remains an author-supplied methodological transport-bias proposal without a specified admissibility functional, domain, physical units, map to a field observable or testable drift or transfer prediction. The Level-0 F12 support finding remains unresolved. Neither a localized-bias label nor the neighboring anisotropy and polarization proposals supply the missing physical bridge; no Level-0 causal or construction edge is admitted.",
+        "The original weights 0.40, 0.30, 0.20 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier codes, dependency types and direction/interaction-mode codes have no admitted quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the source proposal; they do not supply a universal threshold, formation mechanism or physical occurrence.",
+        "The conceptual and theoretical evidence placeholders identify no retrievable supporting publication or reviewed direction-dependent persistence, localization or transport prediction. This limits the supplied record, not the existence of anisotropic models elsewhere. No primary experiment, anisotropic-vacuum realization, carrier population, numerical replay or new computational study is admitted."
       ]
     }
   ],
@@ -99094,7 +99191,90 @@
         "A response claim must specify its action or constitutive model, state, background, what rotates relative to what, held-fixed controls and polarization-resolved observable. No anisotropic medium, external directional background, calibrated analyzer, response experiment or numerical replay is admitted; equal free-mode frequencies do not establish every vacuum or material response.",
         "Original parent 1.32 supplies the scoped anisotropy comparison, not a realized anisotropic regime. Parents 1.27 and 1.26 concern a chosen scalar Fock vacuum and free scalar evolution, not electromagnetic polarizability or causal modulation. Parent 0.22 has no admitted functional, domain, gradient operator, units or map to a field response; the Level-0 F12 support finding remains unresolved.",
         "The source weights 0.50, 0.25, 0.15 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier and direction/mode codes have no quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the proposal; they supply no universal threshold, physical occurrence or vacuum/admissibility law.",
-        "The conceptual and theoretical placeholders in source card 1.33 identify no retrievable supporting publication or reviewed anisotropic-response prediction. The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process or transport effect is inferred; card 1.34 remains pending for directional excitation stability, localization and transport."
+        "The conceptual and theoretical placeholders in source card 1.33 identify no retrievable supporting publication or reviewed anisotropic-response prediction. The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process, directional excitation stability, localization or transport mechanism is inferred from this polarization definition."
+      ]
+    },
+    {
+      "id": "phys:free-scalar-propagation",
+      "name": "Free scalar envelope propagation",
+      "kind": "definition",
+      "description": "For the chosen free real scalar field in infinite homogeneous flat space, use hbar=c=1, m>0 and no material, external or boundary axis. The positive-frequency branch has E(k)=sqrt(k dot k+m^2). For an envelope narrowly concentrated around k0!=0, first-order dispersion and stationary phase give v_g(k0)=grad_k E|k0=k0/E(k0). A proper rotation R satisfies R^T R=I and det(R)=+1, giving v_g(Rk)=R v_g(k) and equal speed at fixed |k| and mass. E(-k)=E(k), while v_g(-k)=-v_g(k). Each free mode has |exp(-i E(k)t)|=1, and [N,H]=0 preserves the specified free Fock number sector. These are formal properties of this model, not an observed directional stability asymmetry.",
+      "claimIds": [
+        "D-phys-free-scalar-propagation"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.3 opening: vacuum and normal ordering"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        }
+      ],
+      "openObligations": [
+        "The envelope must be smooth and sufficiently narrow in momentum for expansion about k0 over the stated propagation interval. Higher dispersion derivatives can spread or reshape it; this velocity approximation does not assert exact rigid translation. A changing local amplitude or escape from a finite region is not by itself intrinsic decay.",
+        "A sharp momentum eigenstate is delta-normalized and not a bounded localized object. Use suitably smeared, normalized finite-energy states. The positive-frequency envelope is a mode-superposition description, not a universal relativistic position probability density or proof of persistent localization.",
+        "Rotation covariance changes the velocity vector components; it does not make rotation-related momentum labels or states identical. Equal speed compares fixed |k|, mass and model with the preparation rotated consistently. A chosen packet momentum can select a propagation direction without introducing an intrinsic vacuum axis; k=0 has no momentum direction.",
+        "This is a closed free model with a time-independent Hamiltonian, without interaction-induced transitions, dissipation or an imposed directional environment. Conservation of its free number sector and a mode phase do not establish the persistence of all interacting excitations, every quantum state or an open subsystem. Physical boundaries or anisotropic regulators require a separate symmetry analysis.",
+        "Group velocity is the local narrow-envelope velocity derived here. It is not an integrated particle or energy flux, a signal-front speed, detector retention, a net directed current or propulsion. No transport measurement, decay width, localization length, damping rate, numerical replay or universal stability threshold is admitted."
+      ]
+    },
+    {
+      "id": "phys:directional-excitation-boundary",
+      "name": "Directional excitation interpretation boundary",
+      "kind": "definition",
+      "description": "A directional excitation claim must distinguish dispersion and envelope velocity, damping or attenuation, a localization criterion and intrinsic decay lifetime. They are different observables and require a specified model, state, environment, frame, held-fixed controls and directional comparison. The supplied free scalar propagation and photon polarization definitions establish no anisotropic environment or unequal directional persistence. No measured directional stability, localized transport bias or Level-0-to-field mechanism is admitted.",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ],
+      "status": "definition",
+      "level": 1,
+      "sourceCoordinates": [
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Sections 2.1-2.2: canonical quantization and free real scalar field"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions"
+        },
+        {
+          "sourceId": "tong-qft-free-fields",
+          "locator": "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators"
+        },
+        {
+          "sourceId": "pdg2025-kinematics",
+          "locator": "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units"
+        },
+        {
+          "sourceId": "legacy-1",
+          "locator": "/"
+        },
+        {
+          "sourceId": "legacy-0",
+          "locator": "/"
+        }
+      ],
+      "openObligations": [
+        "A dispersion relation specifies frequency versus momentum; it is not a damping law, attenuation length, localization length or intrinsic decay width. Each quantity needs its own definition and compatible observable. Packet spreading, redistribution or escape from an observation region can change a detected amplitude or count without particle decay; no localization or retention criterion is supplied by the original property label.",
+        "Only within the declared exponential-survival approximation does the PDG convention give tau_proper=1/Gamma and P(t_lab)=exp(-Gamma*t_lab/gamma) in hbar=c=1, with Gamma an energy width and gamma the fixed Lorentz factor. This is a formal decay convention, not an exact survival law at every time, a new complex-pole calculation or a measured lifetime. Detector linewidth, instrumental broadening, scattering and path attenuation cannot automatically become intrinsic decay width.",
+        "A unit-modulus free-mode phase and conservation of the full state norm do not alone establish persistence of a selected unstable component or spatially localized packet. Unitary evolution can transfer amplitude out of a selected subspace. The supplied free model preserves its Fock number sector, but this does not freeze the packet shape or generalize to interacting or open subsystems.",
+        "Comparing different axes at fixed momentum magnitude is distinct from comparing opposite directions in one specified apparatus. Spatial anisotropy does not by itself establish opposite-direction nonreciprocity, a preferred drift or net transport. A directional comparison must hold the model, frame, preparation and apparatus controls appropriately fixed; no selected anisotropic environment or response protocol is supplied here.",
+        "Original parent 1.32 supplies a scoped field-anisotropy interpretation, not a realized anisotropic regime. Parent 1.33 supplies a transverse free-photon polarization state, not a scalar polarization branch or a universal modulation of excitation persistence. Parent 1.26 supplies evolution in an already specified free scalar model, not an enabling causal intervention. These are descriptive definition dependencies; their labels do not establish necessary arising or modulation relations.",
+        "Parent 0.23 remains an author-supplied methodological transport-bias proposal without a specified admissibility functional, domain, physical units, map to a field observable or testable drift or transfer prediction. The Level-0 F12 support finding remains unresolved. Neither a localized-bias label nor the neighboring anisotropy and polarization proposals supply the missing physical bridge; no Level-0 causal or construction edge is admitted.",
+        "The original weights 0.40, 0.30, 0.20 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier codes, dependency types and direction/interaction-mode codes have no admitted quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the source proposal; they do not supply a universal threshold, formation mechanism or physical occurrence.",
+        "The conceptual and theoretical evidence placeholders identify no retrievable supporting publication or reviewed direction-dependent persistence, localization or transport prediction. This limits the supplied record, not the existence of anisotropic models elsewhere. No primary experiment, anisotropic-vacuum realization, carrier population, numerical replay or new computational study is admitted."
       ]
     }
   ],
@@ -116206,6 +116386,83 @@
       "assertion": "Free scalar Heisenberg evolution is a separate definition, not a polarization-response mechanism or causal parent.",
       "claimIds": [
         "D-phys-photon-polarization-scope"
+      ]
+    },
+    {
+      "id": "physics:scalar-dispersion-isotropy-free-scalar-propagation",
+      "source": "phys:scalar-dispersion-isotropy",
+      "target": "phys:free-scalar-propagation",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The existing positive scalar dispersion supplies the energy function differentiated here; its rotational symmetry remains a chosen model property.",
+      "claimIds": [
+        "D-phys-free-scalar-propagation"
+      ]
+    },
+    {
+      "id": "physics:free-field-time-evolution-free-scalar-propagation",
+      "source": "phys:free-field-time-evolution",
+      "target": "phys:free-scalar-propagation",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The specified free Hamiltonian supplies mode phases and number-sector conservation, not a physical maintenance cause or a directional damping mechanism.",
+      "claimIds": [
+        "D-phys-free-scalar-propagation"
+      ]
+    },
+    {
+      "id": "physics:free-scalar-propagation-directional-excitation-boundary",
+      "source": "phys:free-scalar-propagation",
+      "target": "phys:directional-excitation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The supplied free scalar envelope has scoped rotation covariance and number-sector conservation, without a directional stability or localization observation.",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ]
+    },
+    {
+      "id": "physics:field-anisotropy-boundary-directional-excitation-boundary",
+      "source": "phys:field-anisotropy-boundary",
+      "target": "phys:directional-excitation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The field-anisotropy boundary specifies controlled directional questions; it does not establish an anisotropic regime or unequal persistence.",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ]
+    },
+    {
+      "id": "physics:photon-polarization-scope-directional-excitation-boundary",
+      "source": "phys:photon-polarization-scope",
+      "target": "phys:directional-excitation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The photon-state polarization definition is distinct from material response, scalar dynamics and an observed directional lifetime effect.",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ]
+    },
+    {
+      "id": "physics:free-field-time-evolution-directional-excitation-boundary",
+      "source": "phys:free-field-time-evolution",
+      "target": "phys:directional-excitation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "Time evolution is defined inside the chosen free scalar model and is not a causal modulation or maintenance link.",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
+      ]
+    },
+    {
+      "id": "physics:resonance-lifetime-convention-directional-excitation-boundary",
+      "source": "phys:resonance-lifetime-convention",
+      "target": "phys:directional-excitation-boundary",
+      "kind": "descriptive",
+      "role": "definition-dependency",
+      "assertion": "The existing scoped width and proper-lifetime convention distinguishes intrinsic decay from envelope motion and experimental broadening; no new resonance or width is inferred.",
+      "claimIds": [
+        "D-phys-directional-excitation-boundary"
       ]
     }
   ]

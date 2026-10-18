@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.8`: 1331 records, 1228 connections,
-1451 claims and 422 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.18.9`: 1333 records, 1235 connections,
+1453 claims and 422 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -53,6 +53,11 @@ passive basis changes within the free Maxwell model. Equal free-mode frequencies
 do not supply a polarization-dependent response tensor, calibrated analyzer or
 anisotropic vacuum. Material polarization, loop corrections and excitation
 stability retain separate definitions and evidence requirements.
+The free scalar propagation comparison derives a narrow-envelope group velocity
+and rotational covariance. Mode phase, free particle-sector conservation,
+packet spreading and local retention have different meanings. Damping,
+localization and intrinsic decay require their own observables; no directional
+stability, flux, propulsion or Level-0 transport mechanism is established.
 Gluon self-coupling terms are explicit formal definitions. SLD spin-sensitive
 shapes, OPAL color-factor fits and H1 DIS scaling evidence distinguish selected
 readouts, corrections and conditional interpretations. Their model choices,

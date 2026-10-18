@@ -39,8 +39,10 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   const nodes = graph.entities.map((entity) => ({
     ...entity, typeRole: entity.kind, scientificStatus: entity.status,
-    shortDescription: entity.description, rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id)
+    rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id)
   }));
+  // Entity summaries derive from description at presentation time. Keep that
+  // source text once; construction rules below retain their distinct summary.
   // Relations reference the complete claims in dictionaries.claims. Expanding
   // their sources and study contexts again on every edge duplicates evidence
   // without adding information; selected nodes keep self-contained rationale.
@@ -165,6 +167,8 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/scalar-dispersion-isotropy.mjs",
     "models/causal-emergence/canonical/field-anisotropy-boundary.mjs",
     "models/causal-emergence/canonical/polarization-state-scope.mjs",
+    "models/causal-emergence/canonical/scalar-propagation.mjs",
+    "models/causal-emergence/canonical/directional-stability-scope.mjs",
     "models/causal-emergence/canonical/entanglement-formal.mjs",
     "models/causal-emergence/canonical/entanglement-vacuum.mjs",
     "models/causal-emergence/canonical/entanglement-bell.mjs",

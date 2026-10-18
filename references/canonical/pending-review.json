@@ -2,11 +2,6 @@
   "scope": "Remaining source cards requiring scientific review.",
   "cards": [
     {
-      "sourcePath": "references/level-1.json",
-      "pointer": "/34",
-      "title": "Directional Stability Asymmetry of Excitations"
-    },
-    {
       "sourcePath": "references/level-2.json",
       "pointer": "/0",
       "title": "Primordial Light-Nucleus Nucleosynthesis"
