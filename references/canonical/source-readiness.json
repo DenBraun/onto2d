@@ -12351,6 +12351,1314 @@
       ]
     },
     {
+      "nodeId": "phys:primordial-nuclear-network",
+      "role": "definition",
+      "denotes": "Specified primordial nuclear reaction network; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-primordial-nuclear-network"
+      ]
+    },
+    {
+      "nodeId": "phys:bbn-recombination-boundary",
+      "role": "definition",
+      "denotes": "Nuclear synthesis and atomic recombination boundary; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-bbn-recombination-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:bbn-source-scope",
+      "role": "definition",
+      "denotes": "Primordial nucleosynthesis source boundary; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-bbn-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:bbn2018-network-context",
+      "role": "model-context",
+      "denotes": "Historical BBN prediction context; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bbn2018-network-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cooke2018-absorption-context",
+      "role": "experimental-context",
+      "denotes": "Q1243+307 absorption observation context; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cooke2018-absorption-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cooke2018-column-context",
+      "role": "model-context",
+      "denotes": "Absorption response and column-density inference; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cooke2018-column-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cooke2018-pooling-context",
+      "role": "experimental-context",
+      "denotes": "Seven-absorber primordial deuterium inference; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-cooke2018-pooling-context"
+      ]
+    },
+    {
+      "nodeId": "phys:aver2015-helium-context",
+      "role": "experimental-context",
+      "denotes": "Helium line-response and metallicity extrapolation; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-aver2015-helium-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cooke2018-absorption-readout",
+      "role": "scoped-phenomenon",
+      "denotes": "Selected neutral-deuterium absorption profiles; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cooke2018-absorption-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:cooke2018-deuterium-column",
+      "role": "scoped-phenomenon",
+      "denotes": "Model-conditioned deuterium column ratio; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cooke2018-deuterium-column"
+      ]
+    },
+    {
+      "nodeId": "phys:cooke2018-primordial-deuterium",
+      "role": "scoped-phenomenon",
+      "denotes": "Seven-system primordial deuterium estimate; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cooke2018-primordial-deuterium"
+      ]
+    },
+    {
+      "nodeId": "phys:aver2015-primordial-helium",
+      "role": "scoped-phenomenon",
+      "denotes": "Selected zero-metallicity helium estimate; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-aver2015-primordial-helium"
+      ]
+    },
+    {
+      "nodeId": "phys:bbn2018-abundance-compatibility",
+      "role": "scoped-phenomenon",
+      "denotes": "Historical conditional light-element comparison; the record does not assert a universal construction stage or an independently reproduced instance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bbn2018-abundance-compatibility"
+      ]
+    },
+    {
+      "nodeId": "phys:charged-matter-electromagnetic-regime",
+      "role": "definition",
+      "denotes": "The specified Maxwell-Dirac charged-matter model, without a newly derived material state.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-charged-matter-electromagnetic-regime"
+      ]
+    },
+    {
+      "nodeId": "phys:coulomb-effective-potential",
+      "role": "definition",
+      "denotes": "A leading nonrelativistic pair-potential definition, not a force acquisition or real-photon count.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-coulomb-effective-potential"
+      ]
+    },
+    {
+      "nodeId": "phys:electromagnetic-material-scope",
+      "role": "definition",
+      "denotes": "An interpretation boundary separating recurring electromagnetic descriptions from universal material formation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-electromagnetic-material-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:electromagnetic-material-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "A literature synthesis of different atomic, molecular and optical preparations, without a common causal experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-electromagnetic-material-evidence"
+      ]
+    },
+    {
+      "nodeId": "phys:static-nucleus-hydrogen-binding",
+      "role": "definition",
+      "denotes": "Specified one-electron hydrogen bound-state model in the stated finite model or source-reported comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-static-nucleus-hydrogen-binding"
+      ]
+    },
+    {
+      "nodeId": "phys:atomic-binding-formation-distinction",
+      "role": "definition",
+      "denotes": "Atomic binding, spectroscopy and formation distinction in the stated finite model or source-reported comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-atomic-binding-formation-distinction"
+      ]
+    },
+    {
+      "nodeId": "phys:atomic-structure-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "A literature comparison of a specified bound-state model, prepared-atom spectroscopy and a separate computational formation history.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-atomic-structure-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:seager1999-hydrogen-formation-context",
+      "role": "model-context",
+      "denotes": "Historical hydrogen recombination model context in the stated finite model or source-reported comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-seager1999-hydrogen-formation-context"
+      ]
+    },
+    {
+      "nodeId": "phys:seager1999-hydrogen-neutralization",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported hydrogen neutralization history in the stated finite model or source-reported comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-seager1999-hydrogen-neutralization"
+      ]
+    },
+    {
+      "nodeId": "phys:two-center-molecular-ion-model",
+      "role": "definition",
+      "denotes": "Specified two-center one-electron molecular model under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-two-center-molecular-ion-model"
+      ]
+    },
+    {
+      "nodeId": "phys:molecular-binding-channel-boundary",
+      "role": "definition",
+      "denotes": "Molecular state, dissociation channel and formation distinction under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-molecular-binding-channel-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:liu2009-h2-context",
+      "role": "experimental-context",
+      "denotes": "Prepared H2 optical-transition acquisition context under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-liu2009-h2-context"
+      ]
+    },
+    {
+      "nodeId": "phys:liu-h2-transition",
+      "role": "scoped-phenomenon",
+      "denotes": "Measured prepared-H2 EF-to-Rydberg interval under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liu-h2-transition"
+      ]
+    },
+    {
+      "nodeId": "phys:liu-h2-ionization",
+      "role": "scoped-phenomenon",
+      "denotes": "Assembled state-specific H2 ionization thresholds under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liu-h2-ionization"
+      ]
+    },
+    {
+      "nodeId": "phys:liu-h2-dissociation",
+      "role": "scoped-phenomenon",
+      "denotes": "Hybrid ground-state H2 dissociation energy under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liu-h2-dissociation"
+      ]
+    },
+    {
+      "nodeId": "phys:molecular-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped molecular binding and spectroscopy evidence under the specified source, state and channel conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-molecular-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:ionic-charge-state",
+      "role": "definition",
+      "denotes": "Atomic and molecular ion charge-state convention; a scoped description rather than an independently identified universal physical stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ionic-charge-state"
+      ]
+    },
+    {
+      "nodeId": "phys:ion-formation-interaction-boundary",
+      "role": "definition",
+      "denotes": "Ion formation, binding and electrostatic interaction distinction; a scoped description rather than an independently identified universal physical stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ion-formation-interaction-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:dilute-electrolyte-screening",
+      "role": "definition",
+      "denotes": "Equilibrium dilute-electrolyte screened-potential model; a scoped description rather than an independently identified universal physical stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-dilute-electrolyte-screening"
+      ]
+    },
+    {
+      "nodeId": "phys:liu2009-pfi-ion-readout",
+      "role": "scoped-phenomenon",
+      "denotes": "H2+ readout after prepared-Rydberg field ionization; a scoped description rather than an independently identified universal physical stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liu2009-pfi-ion-readout"
+      ]
+    },
+    {
+      "nodeId": "phys:ionic-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped ion preparation and electrolyte interaction evidence; a scoped description rather than an independently identified universal physical stage.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ionic-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:stationary-vb-resonance-representation",
+      "role": "definition",
+      "denotes": "Stationary many-electron valence-bond representation in the declared six-electron benzene model and reference convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-stationary-vb-resonance-representation"
+      ]
+    },
+    {
+      "nodeId": "phys:resonance-energy-reference-boundary",
+      "role": "definition",
+      "denotes": "Reference-defined resonance energy and observable boundary in the declared six-electron benzene model and reference convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-resonance-energy-reference-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:pauling1933-benzene-context",
+      "role": "model-context",
+      "denotes": "Historical six-electron benzene calculation context in the declared six-electron benzene model and reference convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-pauling1933-benzene-context"
+      ]
+    },
+    {
+      "nodeId": "phys:pauling-benzene-vb-lowering",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-reported finite benzene valence-bond energy lowering in the declared six-electron benzene model and reference convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-pauling-benzene-vb-lowering"
+      ]
+    },
+    {
+      "nodeId": "phys:resonance-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped many-electron molecular resonance model evidence in the declared six-electron benzene model and reference convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-resonance-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:ground-state-dispersion-limits",
+      "role": "definition",
+      "denotes": "Specified ground-state atom-pair and ideal-wall dispersion limits in the declared atomic state, distance, geometry and source interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ground-state-dispersion-limits"
+      ]
+    },
+    {
+      "nodeId": "phys:dispersion-material-observable-boundary",
+      "role": "definition",
+      "denotes": "Dispersion, material response and measured-observable boundary in the declared atomic state, distance, geometry and source interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-dispersion-material-observable-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:perreault2005-phase-context",
+      "role": "experimental-context",
+      "denotes": "Na/silicon-nitride relative-phase acquisition context in the declared atomic state, distance, geometry and source interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-perreault2005-phase-context"
+      ]
+    },
+    {
+      "nodeId": "phys:perreault-atom-surface-phase",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported arm-dependent Na atom-surface fringe phase in the declared atomic state, distance, geometry and source interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-perreault-atom-surface-phase"
+      ]
+    },
+    {
+      "nodeId": "phys:perreault-nonretarded-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional nonretarded Na/surface phase comparison in the declared atomic state, distance, geometry and source interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-perreault-nonretarded-comparison"
+      ]
+    },
+    {
+      "nodeId": "phys:dispersion-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped ground-state dispersion and atom-surface evidence in the declared atomic state, distance, geometry and source interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-dispersion-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:hydrogen-bond-evidence-definition",
+      "role": "definition",
+      "denotes": "Evidence-based intra/intermolecular hydrogen-bond classification under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hydrogen-bond-evidence-definition"
+      ]
+    },
+    {
+      "nodeId": "phys:hydrogen-bond-state-energy-boundary",
+      "role": "definition",
+      "denotes": "Hydrogen-bond state, fragment and energy-convention boundary under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hydrogen-bond-state-energy-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:rocher2011-water-dimer-context",
+      "role": "experimental-context",
+      "denotes": "Cold water-dimer vibrational-predissociation measurement context under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rocher2011-water-dimer-context"
+      ]
+    },
+    {
+      "nodeId": "phys:water-dimer-dissociation",
+      "role": "scoped-phenomenon",
+      "denotes": "Cold neutral-water-dimer source-reported dissociation energy under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-water-dimer-dissociation"
+      ]
+    },
+    {
+      "nodeId": "phys:altun2018-water-dimer-context",
+      "role": "model-context",
+      "denotes": "Isolated water-dimer geometry and DLPNO-CCSD(T)/LED model context under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-altun2018-water-dimer-context"
+      ]
+    },
+    {
+      "nodeId": "phys:water-dimer-model",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite water-dimer model geometry and interaction-energy analysis under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-water-dimer-model"
+      ]
+    },
+    {
+      "nodeId": "phys:hydrogen-bond-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped hydrogen-bond definition, cold-dimer energy and model evidence under the reviewed source and finite-system boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-hydrogen-bond-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:molecular-dipole-response",
+      "role": "definition",
+      "denotes": "Neutral finite molecule, specified state/frame and locally linear electric response; SI convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-molecular-dipole-response"
+      ]
+    },
+    {
+      "nodeId": "phys:point-dipole-interaction",
+      "role": "definition",
+      "denotes": "Fixed-pair nonretarded electrostatic multipole term; supplied dipoles and separation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-point-dipole-interaction"
+      ]
+    },
+    {
+      "nodeId": "phys:dipole-ensemble-dielectric-boundary",
+      "role": "definition",
+      "denotes": "Microscopic moment, ensemble angular statistics and an explicitly conditional macroscopic constitutive relation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-dipole-ensemble-dielectric-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:ni2008-krb-stark-context",
+      "role": "experimental-context",
+      "denotes": "One Ni 2008 acquisition and its author-thesis calibration correction; selected singlet states.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ni2008-krb-stark-context"
+      ]
+    },
+    {
+      "nodeId": "phys:ni2008-krb-stark-shifts",
+      "role": "scoped-phenomenon",
+      "denotes": "Published Figure 6 and associated selected-state spectroscopy, sharing one apparatus and field calibration.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ni2008-krb-stark-shifts"
+      ]
+    },
+    {
+      "nodeId": "phys:ni2008-krb-dipole",
+      "role": "scoped-phenomenon",
+      "denotes": "Historical source-reported selected-state moment, with an explicit author correction rather than a current recommended molecular constant.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-ni2008-krb-dipole",
+        "M-phys-ni2008-krb-dipole"
+      ]
+    },
+    {
+      "nodeId": "phys:yang2016-n2-alignment-context",
+      "role": "experimental-context",
+      "denotes": "Yang 2016 gas-jet pump-probe acquisition, not a condensed sample or static-field permittivity measurement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-yang2016-n2-alignment-context"
+      ]
+    },
+    {
+      "nodeId": "phys:yang2016-n2-diffraction-anisotropy",
+      "role": "scoped-phenomenon",
+      "denotes": "Published diffraction response and its stated preprocessing within one acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yang2016-n2-diffraction-anisotropy"
+      ]
+    },
+    {
+      "nodeId": "phys:yang2016-n2-angular-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Published Figure 5 and dependent model/image extraction, with the original acquisition and fitted baseline retained.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-yang2016-n2-angular-inference",
+        "M-phys-yang2016-n2-angular-inference"
+      ]
+    },
+    {
+      "nodeId": "phys:molecular-polarization-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped replacement for the broad molecular polarization/dipole source card, preserving positive observations and their limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-molecular-polarization-source-scope",
+        "M-phys-molecular-polarization-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:spatial-order-symmetry-boundary",
+      "role": "definition",
+      "denotes": "Specified spatial order, symmetry and finite-size boundary under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-spatial-order-symmetry-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:hard-disk-equilibrium-model",
+      "role": "definition",
+      "denotes": "Two-dimensional hard-disk equilibrium model under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hard-disk-equilibrium-model"
+      ]
+    },
+    {
+      "nodeId": "phys:shechtman1984-alloy-context",
+      "role": "experimental-context",
+      "denotes": "Al-Mn diffraction, imaging and annealing context under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-shechtman1984-alloy-context"
+      ]
+    },
+    {
+      "nodeId": "phys:bernard2011-hard-disk-context",
+      "role": "model-context",
+      "denotes": "Hard-disk equilibrium sampling and correlation context under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-bernard2011-hard-disk-context"
+      ]
+    },
+    {
+      "nodeId": "phys:shechtman-icosahedral-order",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite icosahedral Al-Mn order and reported metastability under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-shechtman-icosahedral-order"
+      ]
+    },
+    {
+      "nodeId": "phys:bernard-hard-disk-ordering",
+      "role": "scoped-phenomenon",
+      "denotes": "Entropic hard-disk ordering and distinct transitions under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-bernard-hard-disk-ordering"
+      ]
+    },
+    {
+      "nodeId": "phys:crystal-order-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped spatial ordering and structural-transition evidence under the explicitly declared finite study, model and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-crystal-order-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:conjugation-aromaticity-boundary",
+      "role": "definition",
+      "denotes": "Conjugation and criterion-specific aromaticity distinction under the named finite criteria and source/model boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-conjugation-aromaticity-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:ring-center-nics-criterion",
+      "role": "definition",
+      "denotes": "Method-defined ring-center NICS magnetic criterion under the named finite criteria and source/model boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ring-center-nics-criterion"
+      ]
+    },
+    {
+      "nodeId": "phys:schleyer1996-nics-context",
+      "role": "model-context",
+      "denotes": "Schleyer ring-center shielding computation context under the named finite criteria and source/model boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schleyer1996-nics-context"
+      ]
+    },
+    {
+      "nodeId": "phys:benzene-ring-center-nics",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite benzene ring-center NICS with saturated control under the named finite criteria and source/model boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-benzene-ring-center-nics"
+      ]
+    },
+    {
+      "nodeId": "phys:aromatic-conjugation-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped conjugation and benzene energetic/magnetic criteria under the named finite criteria and source/model boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-aromatic-conjugation-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:reaction-path-quantum-model",
+      "role": "definition",
+      "denotes": "Working model definition for the specific singlet hydroxymethylene rearrangement; supplied potential and reduced-coordinate dynamics, not a universal reaction generator.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-reaction-path-quantum-model"
+      ]
+    },
+    {
+      "nodeId": "phys:isotope-kinetics-evidence-boundary",
+      "role": "definition",
+      "denotes": "Evidence and interpretation boundary for the reviewed matrix experiment and its associated isotope calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-isotope-kinetics-evidence-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:schreiner2008-matrix-context",
+      "role": "experimental-context",
+      "denotes": "Publication-specific mixed-product cryogenic matrix preparation and dark infrared acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schreiner2008-matrix-context"
+      ]
+    },
+    {
+      "nodeId": "phys:schreiner2008-matrix-decay",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported H-C-OH dark first-order infrared decay at the seven stated matrix/temperature settings and qualitative H-C-OD non-decay.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schreiner2008-matrix-decay"
+      ]
+    },
+    {
+      "nodeId": "phys:schreiner2008-reaction-path-context",
+      "role": "model-context",
+      "denotes": "Supplied ground-singlet molecular channel, electronic-structure approximations and reduced barrier-transmission calculation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-schreiner2008-reaction-path-context"
+      ]
+    },
+    {
+      "nodeId": "phys:schreiner2008-reaction-path-prediction",
+      "role": "scoped-phenomenon",
+      "denotes": "Publication-reported reduced-model H/D lifetimes and separately labelled Figure 4 and Eckart energy conventions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-schreiner2008-reaction-path-prediction"
+      ]
+    },
+    {
+      "nodeId": "phys:quantum-reaction-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped replacement for original Level 2 card /11, with one publication-specific experiment and a distinct computational analysis.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-quantum-reaction-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:liquid-correlation-observable-boundary",
+      "role": "definition",
+      "denotes": "Static liquid pair structure and dynamic-correlation boundary under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-liquid-correlation-observable-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:spce-water-reorientation-model",
+      "role": "definition",
+      "denotes": "Finite rigid-SPC/E water-reorientation model under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-spce-water-reorientation-model"
+      ]
+    },
+    {
+      "nodeId": "phys:skinner2013-water-context",
+      "role": "experimental-context",
+      "denotes": "Common ambient-water X-ray reanalysis context under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-skinner2013-water-context"
+      ]
+    },
+    {
+      "nodeId": "phys:laage2006-water-context",
+      "role": "model-context",
+      "denotes": "SPC/E switch and orientational-correlation context under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-laage2006-water-context"
+      ]
+    },
+    {
+      "nodeId": "phys:skinner-water-pair-order",
+      "role": "scoped-phenomenon",
+      "denotes": "Ambient-water radial shell correlations and cutoff-dependent coordination under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-skinner-water-pair-order"
+      ]
+    },
+    {
+      "nodeId": "phys:laage-water-reorientation",
+      "role": "scoped-phenomenon",
+      "denotes": "Computed water acceptor exchange and orientational reconfiguration under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-laage-water-reorientation"
+      ]
+    },
+    {
+      "nodeId": "phys:liquid-organization-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped liquid-water structure and dynamical-organization evidence under the stated finite model, reanalysis and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-liquid-organization-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:colloid-interface-stability-boundary",
+      "role": "definition",
+      "denotes": "Preparation- and time-specific colloid stability and interface boundary under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-colloid-interface-stability-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:screened-colloid-pair-model",
+      "role": "definition",
+      "denotes": "Finite-sphere screened repulsive pair model under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-screened-colloid-pair-model"
+      ]
+    },
+    {
+      "nodeId": "phys:crocker1994-colloid-pair-context",
+      "role": "experimental-context",
+      "denotes": "Crocker-Grier isolated-pair release context under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-crocker1994-colloid-pair-context"
+      ]
+    },
+    {
+      "nodeId": "phys:colloid-pair-repulsion",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional isolated-colloid screened pair repulsion under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-colloid-pair-repulsion"
+      ]
+    },
+    {
+      "nodeId": "phys:gasser2001-colloid-context",
+      "role": "experimental-context",
+      "denotes": "Gasser post-shear colloidal crystallization context under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-gasser2001-colloid-context"
+      ]
+    },
+    {
+      "nodeId": "phys:colloid-nucleus-growth",
+      "role": "scoped-phenomenon",
+      "denotes": "Post-shear colloidal nucleus growth and critical range under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-colloid-nucleus-growth"
+      ]
+    },
+    {
+      "nodeId": "phys:colloid-interface-free-energy",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional colloid crystal-fluid interface free energy under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-colloid-interface-free-energy"
+      ]
+    },
+    {
+      "nodeId": "phys:colloid-interface-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped colloid pair interactions and evolving crystal-fluid interfaces under the declared finite system, preparation and inference conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-colloid-interface-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:metal-cohesion-reference",
+      "role": "definition",
+      "denotes": "Declared neutral-atom reference and equation-of-state convention for a finite selected metallic sodium DFT model.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-metal-cohesion-reference"
+      ]
+    },
+    {
+      "nodeId": "phys:metal-spectral-transport-boundary",
+      "role": "definition",
+      "denotes": "Working evidence boundary for the selected Na film ARPES experiment and its source band interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-metal-spectral-transport-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:gaissmaier2020-na-bulk-context",
+      "role": "model-context",
+      "denotes": "Selected Na bcc periodic bulk-energy calculation and equation-of-state fitting protocol.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-gaissmaier2020-na-bulk-context"
+      ]
+    },
+    {
+      "nodeId": "phys:gaissmaier2020-na-cohesion",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-predicted Na bcc cohesion and static equilibrium parameters for two declared electronic approximations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-gaissmaier2020-na-cohesion"
+      ]
+    },
+    {
+      "nodeId": "phys:potorochin2022-na-film-context",
+      "role": "experimental-context",
+      "denotes": "Publication-specific Na(110)/W film, optical excitation, finite-resolution photoelectron detection and momentum assignment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-potorochin2022-na-film-context"
+      ]
+    },
+    {
+      "nodeId": "phys:potorochin2022-na-spectrum",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-reported Na film photoemission map and declared near-Fermi momentum cuts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-potorochin2022-na-spectrum"
+      ]
+    },
+    {
+      "nodeId": "phys:potorochin2022-na-band-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Source fitted occupied dispersion and reference-dependent mass estimate from the same selected ARPES acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-potorochin2022-na-band-inference"
+      ]
+    },
+    {
+      "nodeId": "phys:metallic-bonding-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped replacement for original Level 2 card /14 with separate computational binding and experimental spectral evidence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-metallic-bonding-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:bulk-equilibrium-phase-conditions",
+      "role": "definition",
+      "denotes": "Constrained bulk equilibrium, coexistence and phase-rule conditions under the selected formal constraints and finite reused study boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-bulk-equilibrium-phase-conditions"
+      ]
+    },
+    {
+      "nodeId": "phys:phase-regime-stability-observable-boundary",
+      "role": "definition",
+      "denotes": "Phase stability, criticality, kinetics and observable boundary under the selected formal constraints and finite reused study boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-phase-regime-stability-observable-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:phase-regime-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped thermodynamic phase-regime organization under the selected formal constraints and finite reused study boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-phase-regime-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:piezoelectric-tensor-conventions",
+      "role": "definition",
+      "denotes": "State- and boundary-specific piezoelectric tensor convention under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-piezoelectric-tensor-conventions"
+      ]
+    },
+    {
+      "nodeId": "phys:ferroelectric-switching-boundary",
+      "role": "definition",
+      "denotes": "Spontaneous polarization and demonstrated switching distinction under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ferroelectric-switching-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:ogi2006-quartz-context",
+      "role": "experimental-context",
+      "denotes": "Ogi quartz resonance and mode-identification context under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-ogi2006-quartz-context"
+      ]
+    },
+    {
+      "nodeId": "phys:quartz-piezoelectric-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional quartz piezoelectric tensor inference under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-quartz-piezoelectric-response"
+      ]
+    },
+    {
+      "nodeId": "phys:fichtner2019-alscn-context",
+      "role": "experimental-context",
+      "denotes": "Fichtner AlScN prepared-capacitor switching context under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-fichtner2019-alscn-context"
+      ]
+    },
+    {
+      "nodeId": "phys:alscn-switching-evidence",
+      "role": "scoped-phenomenon",
+      "denotes": "Prepared AlScN switching with polarity-sensitive controls under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-alscn-switching-evidence"
+      ]
+    },
+    {
+      "nodeId": "phys:alscn-piezoelectric-inversion",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional AlScN transverse piezoelectric sign reversal under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-alscn-piezoelectric-inversion"
+      ]
+    },
+    {
+      "nodeId": "phys:piezoelectric-ferroelectric-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped piezoelectric response and demonstrated ferroelectric switching under specified state, tensor convention and finite experimental preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-piezoelectric-ferroelectric-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:recoilless-nuclear-transition",
+      "role": "definition",
+      "denotes": "Bound-body recoil and zero-phonon nuclear transition under the declared finite primary-source and spectral/model conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-recoilless-nuclear-transition"
+      ]
+    },
+    {
+      "nodeId": "phys:mossbauer-observable-model-boundary",
+      "role": "definition",
+      "denotes": "Mossbauer spectral observable and vibrational-model boundary under the declared finite primary-source and spectral/model conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-mossbauer-observable-model-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:dubiel2020-fe-gluconate-context",
+      "role": "experimental-context",
+      "denotes": "Amorphous Fe-gluconate diffraction and Fe-57 transmission context under the declared finite primary-source and spectral/model conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-dubiel2020-fe-gluconate-context"
+      ]
+    },
+    {
+      "nodeId": "phys:dubiel-fe-gluconate-transmission",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite-temperature Fe-57 transmission in amorphous Fe-gluconate under the declared finite primary-source and spectral/model conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-dubiel-fe-gluconate-transmission"
+      ]
+    },
+    {
+      "nodeId": "phys:dubiel-fe-gluconate-spectral-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Fe-gluconate fitted spectral and relative vibrational response under the declared finite primary-source and spectral/model conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-dubiel-fe-gluconate-spectral-inference"
+      ]
+    },
+    {
+      "nodeId": "phys:mossbauer-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped bound-solid Mossbauer regime and evidence under the declared finite primary-source and spectral/model conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-mossbauer-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:orbital-ec-channel-boundary",
+      "role": "definition",
+      "denotes": "Isotope-, channel- and electronic-occupancy definition for the selected storage-ring orbital EC experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-orbital-ec-channel-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:ec-population-loss-model",
+      "role": "definition",
+      "denotes": "Declared population-analysis convention for loss-corrected Pr/Ce beam intensities; constant rates and common time frame.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-ec-population-loss-model"
+      ]
+    },
+    {
+      "nodeId": "phys:litvinov2007-pr-context",
+      "role": "experimental-context",
+      "denotes": "Publication-specific Pr140 charge-state preparation, cooled storage and non-destructive Schottky acquisition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-litvinov2007-pr-context"
+      ]
+    },
+    {
+      "nodeId": "phys:litvinov2007-pr-schottky",
+      "role": "scoped-phenomenon",
+      "denotes": "Assigned Pr/Ce Schottky peak evolution for the supplied stored H-like parent sample.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-litvinov2007-pr-schottky"
+      ]
+    },
+    {
+      "nodeId": "phys:litvinov2007-pr-ec-rates",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-fitted rest-frame Pr140 EC/beta+ partial rates and the reported H-like/He-like comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-litvinov2007-pr-ec-rates"
+      ]
+    },
+    {
+      "nodeId": "phys:litvinov2007-pr-hyperfine-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Source conditional hyperfine-state interpretation of the fitted Pr140 H-like/He-like EC contrast.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-litvinov2007-pr-hyperfine-inference"
+      ]
+    },
+    {
+      "nodeId": "phys:electronic-decay-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped replacement for original Level 2 card /18 using one isotope-specific primary charge-state experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-electronic-decay-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:casimir-observable-boundary",
+      "role": "definition",
+      "denotes": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy or the original ontology of its parents.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-casimir-observable-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:casimir-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The existing corrected sphere-plane study supports an attractive residual force under its torsion-balance preparation and response assumptions. A separate parallel-surface study supports a conditional pressure coefficient inferred from a calibrated residual resonance-frequency shift. Together with the ideal-plate and material-response definitions, these provide bounded positive evidence for geometry- and material-conditioned electromagnetic interactions; they are not direct measurements of one universal vacuum substance, all force signs or a cross-level emergence law.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-casimir-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:hyperfine-state-parameters",
+      "role": "definition",
+      "denotes": "Isotope- and state-specific hyperfine frequency parameters under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hyperfine-state-parameters"
+      ]
+    },
+    {
+      "nodeId": "phys:hyperfine-clock-definition",
+      "role": "definition",
+      "denotes": "Assigned Cs133 hyperfine reference and finite clock realization distinction under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-hyperfine-clock-definition"
+      ]
+    },
+    {
+      "nodeId": "phys:rahaman2024-cs-hyperfine-context",
+      "role": "experimental-context",
+      "denotes": "Rahaman Cs133 optical-fluorescence hyperfine context under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-rahaman2024-cs-hyperfine-context"
+      ]
+    },
+    {
+      "nodeId": "phys:cs133-hyperfine-intervals",
+      "role": "scoped-phenomenon",
+      "denotes": "Corrected Cs1337d3/2 hyperfine spectral intervals under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cs133-hyperfine-intervals"
+      ]
+    },
+    {
+      "nodeId": "phys:cs133-hyperfine-couplings",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional corrected Cs133 hyperfine coupling inference under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-cs133-hyperfine-couplings"
+      ]
+    },
+    {
+      "nodeId": "phys:marion2003-rb-cs-context",
+      "role": "experimental-context",
+      "denotes": "Marion Cs/Rb ground-state fountain comparison context under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-marion2003-rb-cs-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rb87-hyperfine-clock-frequency",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite Rb87 hyperfine clock-frequency comparison under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rb87-hyperfine-clock-frequency"
+      ]
+    },
+    {
+      "nodeId": "phys:hyperfine-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped hyperfine spectral coupling and clock realization under the declared isotope, atomic state, frequency convention and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-hyperfine-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:angular-surface-radiometry",
+      "role": "definition",
+      "denotes": "For the selected uniform-sample radiometry, distinguish specular reflected/incident flux ratio, directional BRDF f_r in sr^-1, dimensionless reflectance factor R=pi*f_r and directional-hemispherical reflectance integrated over outgoing directions at fixed incidence. In ROSI under-illumination, f_r equals the corrected reflected/incident flux ratio divided by the effective projected solid angle Omega_prime=(A/D^2)*C_f*C_e*cos(theta_r). Geometry, incident polarization, wavelength and illuminated position are part of the declared observable.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-angular-surface-radiometry"
+      ]
+    },
+    {
+      "nodeId": "phys:patrick2021-rosi-context",
+      "role": "experimental-context",
+      "denotes": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth180 degrees and incident polar angles70 to0 degrees; the actual viewing polar angle is45 degrees with azimuth90 or135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances99 and10 percent, not prescribed constant bidirectional factors.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-phys-patrick2021-rosi-context"
+      ]
+    },
+    {
+      "nodeId": "phys:rosi-ptfe-angular-response",
+      "role": "scoped-phenomenon",
+      "denotes": "At550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding30 percent. The source roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray in this scan; these are not universal instrument limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-rosi-ptfe-angular-response"
+      ]
+    },
+    {
+      "nodeId": "phys:surface-scattering-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Existing specified IR samples have an aggregate reflected-light response under their collection setup. The separate PTFE study supplies a finite angular example in which outgoing reflectance factors depend on the stated illumination and viewing geometry. Together with scoped radiometry, these support sample- and geometry-conditioned optical redistribution, while preserving the distinction between an integrated signal, an angular measurement and an unsolved inverse surface/scene problem.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-surface-scattering-source-scope"
+      ]
+    },
+    {
+      "nodeId": "phys:linear-optical-propagation",
+      "role": "definition",
+      "denotes": "In the selected homogeneous isotropic linear medium, use the convention E(z,t)=Re[E0(omega)*exp(i*k(omega)*z-i*omega*t)] with k(omega)=omega*sqrt(epsilon(omega)*mu(omega)) in absolute SI constitutive units. Writing k=k_real+i*k_imag gives amplitude attenuation exp(-k_imag*z) and phase accumulation k_real*z. For the passive forward branch, k_imag>=0; the corresponding fixed-medium intensity attenuation coefficient is alpha_int=2*k_imag in m^-1. Nonlinear real propagation phase across a pulse bandwidth can produce dispersive waveform deformation, whereas a real phase linear in frequency supplies a delay. A wave number proportional to frequency at fixed speed is not by itself dispersive deformation. These phase effects are distinct from imaginary-part attenuation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-linear-optical-propagation"
+      ]
+    },
+    {
+      "nodeId": "phys:optical-channel-observable-boundary",
+      "role": "definition",
+      "denotes": "Specify a channel input, medium, path/boundaries and receiver acceptance before interpreting transmitted optical flux. Separate a complex field transfer and its phase from an aggregate transmission measurement; separate intensity attenuation in m^-1 from dimensionless transmission and absorptance. Refractive redirection, absorption, angular redistribution, dispersion, diffraction and statistical coherence require their own stated variables and approximations rather than one universal medium-transformation label.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-phys-optical-channel-observable-boundary"
+      ]
+    },
+    {
+      "nodeId": "phys:optical-propagation-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The existing IR-window experiment supplies a finite measured transmission response under its stated sample and collection conditions. A separately declared homogeneous linear field model makes attenuation and phase conventions explicit and distinguishes dispersive response from absorption. This supports a bounded optical-channel description while retaining the gap between aggregate flux and a uniquely identified bulk propagation, scattering, imaging or coherence operator.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-phys-optical-propagation-source-scope"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

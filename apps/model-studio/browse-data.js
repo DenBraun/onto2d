@@ -2,7 +2,7 @@ import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:ecdd405d6fba309292ab9b5db067873269aa91049ac2af3e3aec9ff83c077372";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:4dbeaa6e5f73a336e898c1cc6137309d6880d6e5cdd0c232406b88d122ee45fc";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,

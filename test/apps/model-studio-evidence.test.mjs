@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { citationLinks } from "../../apps/model-studio/evidence-links.js";
+import vm from "node:vm";
+import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
 
 const base = "https://example.org/Onto2D/";
 
@@ -31,4 +33,71 @@ test("imported evidence cannot create executable, credentialed or escaping links
     assert.deepEqual(citationLinks({ source: { path } }, base), []);
   }
   assert.deepEqual(citationLinks({}, base), []);
+});
+
+test("citation resolution stays within one claim and preserves fully expanded historical fields", () => {
+  const source = { id: "source", title: "Original publication", year: 2020,
+    doi: "10.1234/original", review: { limit: "A scoped result." } };
+  const inline = { ...source, title: "Explicit historical metadata" };
+  const claim = Object.freeze({ citations: Object.freeze([
+    Object.freeze({ sourceId: "source", locator: "Methods", source }),
+    Object.freeze({ sourceId: "source", locator: "Figure 1", role: "supports", note: "Same source, different passage." }),
+    Object.freeze({ sourceId: "source", locator: "Historical passage", source: inline }),
+    Object.freeze({ sourceId: "source", locator: "Explicit null", source: null })
+  ]) });
+  const before = structuredClone(claim);
+  const citations = resolveClaimCitations(claim);
+  assert.equal(citations[0], claim.citations[0]);
+  assert.deepEqual(citations[1], { ...claim.citations[1], source });
+  assert.equal(citations[2], claim.citations[2], "Explicit historical metadata wins over fallback");
+  assert.equal(citations[3], claim.citations[3], "Explicit optional source fields are not rewritten");
+  assert.deepEqual(claim, before, "Verified frozen records are not modified");
+  assert.deepEqual(resolveClaimCitations({ citations: [{ sourceId: "source", locator: "Unresolved in this claim" }] }),
+    [{ sourceId: "source", locator: "Unresolved in this claim" }], "No source is borrowed from a previous claim");
+  assert.deepEqual(resolveClaimCitations({}), []);
+});
+
+test("the actual inspector renders every compact citation with the same title, year, passage and links", async () => {
+  const appUrl = new URL("../../apps/model-studio/model-studio.js", import.meta.url);
+  const sourceText = await readFile(appUrl, "utf8");
+  const start = sourceText.indexOf("function renderRationale(record) {");
+  const end = sourceText.indexOf("\nfunction updateControls()", start);
+  assert.ok(start >= 0 && end > start);
+  const render = sourceText.slice(start, end).replaceAll("import.meta.url", JSON.stringify(appUrl.href));
+  const publication = { id: "publication", title: "Measured response", year: 2026,
+    doi: "10.1234/response", url: "https://example.org/response.pdf", path: "references/response.pdf",
+    review: { extent: "full-article", locators: ["Methods", "Figure 1"], limit: "Shared calibration." } };
+  const citations = [
+    { sourceId: publication.id, locator: "Methods", role: "method", note: "The preparation.", source: publication },
+    { sourceId: publication.id, locator: "Figure 1", role: "supports", note: "The measured endpoint." },
+    { sourceId: publication.id, locator: "Discussion", role: "limits", note: "A dependent inference." }
+  ];
+  const compactRecord = { rationale: [{ id: "claim", status: "publication-supported", statement: "An observed response",
+    scope: "One specified preparation", contexts: [], experimentalContexts: [], limitations: ["No universal claim."], citations }] };
+  const before = structuredClone(compactRecord);
+  const expandedRecord = structuredClone(compactRecord);
+  expandedRecord.rationale[0].citations = citations.map((citation) => ({ ...citation, source: publication }));
+  function rendered(record) {
+    const element = (tag, className = "", textContent = "") => ({ tag, className, textContent, children: [],
+      append(...children) { this.children.push(...children); },
+      replaceChildren(...children) { this.children = children; } });
+    const container = element("div");
+    vm.runInNewContext(`${render}\nrenderRationale(record);`, {
+      record, URL, citationLinks, resolveClaimCitations,
+      createElement: element, elements: { "selected-rationale": container },
+      document: { createTextNode: (textContent) => ({ textContent }) }
+    });
+    return JSON.parse(JSON.stringify(container));
+  }
+  const compactView = rendered(compactRecord);
+  assert.deepEqual(compactView, rendered(expandedRecord));
+  const anchors = [];
+  const collect = (element) => { if (element.tag === "a") anchors.push(element); for (const child of element.children ?? []) collect(child); };
+  collect(compactView);
+  assert.equal(anchors.length, citations.length * 3, "Every passage retains DOI, reviewed source and repository links");
+  for (let index = 0; index < citations.length; index += 1) {
+    assert.deepEqual(anchors.slice(index * 3, index * 3 + 3).map((anchor) => anchor.href),
+      citationLinks({ source: publication }, new URL("../../", appUrl)).map((link) => link.href));
+  }
+  assert.deepEqual(compactRecord, before, "Rendering leaves the raw release representation intact");
 });

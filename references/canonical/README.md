@@ -9,9 +9,12 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1333 records, 1235 connections, 1453 claims and 422 sources.
-The physics review contains 188 study contexts and 142 comparisons.
+The current graph contains 1478 records, 1462 connections, 1653 claims and 468 sources.
+The physics review contains 219 study contexts and 143 comparisons.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
+The [Level-2 work queue](LEVEL_2_REVIEW.md) covers all 23 physical, chemical and
+material source cards. All have scoped dispositions; surface radiometry and
+propagation retain their finite model and measurement boundaries.
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
 
@@ -38,7 +41,164 @@ npm run model:causal-emergence:verify
 Original manuscripts and source catalogues remain research inputs. Formal Core
 implementation follows the data review.
 
+## Primordial nuclear synthesis and abundance inference
+
+Card 2.0 uses a specified expanding nuclear reaction network, separate from
+later atomic recombination. The selected
+[Pitrou model](https://doi.org/10.1016/j.physrep.2018.04.005) supplies weak-rate,
+thermal and nuclear inputs, deuterium photodissociation and light-isotope flow.
+Unstable intermediates and later beryllium-7 conversion cannot be omitted from
+the eventual lithium bookkeeping. The original confinement/electroweak parent
+weights and two-carrier minima supply no BBN threshold or measured causal chain.
+
+[Cooke's selected HIRES observations](https://doi.org/10.3847/1538-4357/aaab53)
+provide absorption profiles. A response and component model yields a fitted
+neutral-column ratio; an ionization assumption identifies it with D/H. A
+separate seven-system analysis supplies the reported primordial estimate.
+The selected absorber is part of that sample. Pixel correlations, model
+variations and the internal new-exposure date/duration discrepancy remain
+explicit; the analysis has not been independently refitted.
+
+[Aver's helium reanalysis](https://doi.org/10.1088/1475-7516/2015/07/011)
+retains its emissivities, infrared scaling, weak temperature prior and
+zero-metallicity regression. Sixteen qualifying observations correspond to
+15 distinct objects. The inferred helium mass fraction is neither a direct
+BBN-era measurement nor a helium number ratio.
+
+Astrophysical primordial-abundance estimates do not require adopting the BBN
+model. Comparing them with its predictions adds cosmological and reaction
+inputs. Pitrou reuses the Cooke and Aver results; this supplies no independent
+replication. Its historical Table VIII values retain their source-specific
+uncertainty procedure, table/prose discrepancies and lithium mismatch. No
+local network calculation or unique resolution of that mismatch is claimed.
+
 ## Quantum field definitions
+
+The Level-2 electromagnetic regime specifies a charged-matter Maxwell-Dirac
+model and a leading nonrelativistic Coulomb potential. Atomic, molecular-ion
+and bulk optical observations retain different preparations and response
+models; recurring use of electromagnetism supplies no universal formation or
+maintenance stage. The dependent HD+ closure retains its nuclear-mass and
+binding-theory inputs rather than becoming an independent observation.
+
+The atomic-structure case uses
+[Schrodinger's selected one-body construction](https://doi.org/10.1103/PhysRev.28.1049),
+a static point nucleus and one electron with
+`Z=1`. Its negative Coulomb energies describe possible bound states, not
+capture rates, hard-edged objects or all many-electron shells. Prepared-hydrogen
+Lamb spectroscopy and the conditional Bethe correction remain distinct from
+the historical [Seager population calculation](https://doi.org/10.1086/312250).
+That model's residual-electron
+comparison is a calculation under supplied cosmological and atomic inputs,
+not a measured formation history or an updated cosmological fit.
+
+The molecular case keeps [Liu’s prepared-H2 optical interval](https://doi.org/10.1063/1.3120443),
+assembled ionization thresholds and hybrid dissociation energy separate. The
+energy cycle retains its historical atomic/molecular-ion inputs. Existing HD+
+mass closure retains both deuteron generators and shared mass/theory inputs;
+it is not an association measurement. The one-electron two-center model is
+also distinct from neutral two-electron H2.
+
+Ionic charge bookkeeping, the delayed field-ionization readout and the
+[Debye–Huckel dilute equilibrium model](https://knowledge.electrochem.org/estir/hist/hist-12-Debye-1.pdf)
+address different quantities. Screening uses the source electrostatic-cgs
+convention and does not derive a crystal, conductivity or a charge-transfer rate.
+The [selected benzene valence-bond calculation](https://doi.org/10.1063/1.1749304)
+retains nonorthogonal stationary functions, a negative exchange-energy parameter
+and a specified energy reference. Its [linked erratum](https://doi.org/10.1063/1.1749514)
+concerns other results. Expansion coefficients are not observed structure
+probabilities; no full aromaticity, optical or reaction mechanism is inferred.
+
+The [ground-state dispersion limits](https://doi.org/10.1103/PhysRev.73.360)
+distinguish atom-pair and ideal-wall geometry, retardation and polarizability
+units. The [Na/surface phase experiment](https://doi.org/10.1103/PhysRevLett.95.133201)
+uses an adopted material coefficient and retains corrected diffraction-order
+systematics; it is not a new coefficient fit or a direct fluctuation measurement.
+The [hydrogen-bond definition](https://doi.org/10.1351/PAC-REC-10-01-02) permits
+intra- and intermolecular cases with qualified diagnostics. The
+[water-dimer dissociation experiment](https://doi.org/10.1063/1.3598339) retains
+its fit/adopted-value distinction and printed uncertainty conflict, while the
+[separate geometry/energy calculation](https://doi.org/10.3762/bjoc.14.79)
+retains optimized coordinates, method-dependent energy components and inherited
+zero-point inputs. These cases do not establish every liquid, crystal or
+cooperative network mechanism.
+
+Molecular polarization separates a body-fixed permanent-moment magnitude,
+electronic response, rotational orientation and axis alignment. The
+[KRb Stark analysis](https://doi.org/10.1126/science.1163861) retains its
+author-thesis calibration correction and unresolved field-uncertainty limits.
+The [nitrogen diffraction response](https://doi.org/10.1038/ncomms11232)
+retains its common fitted overlap, image preprocessing and model assumptions;
+axis alignment supplies neither net vector orientation nor a measured bulk
+dielectric constant.
+
+The [icosahedral alloy observations](https://doi.org/10.1103/PhysRevLett.53.1951)
+retain finite grain size, alternative-structure tests and timed annealing;
+they do not fix an equilibrium transition temperature or unique atom arrangement.
+The [separate hard-disk calculation](https://doi.org/10.1103/PhysRevLett.107.155704)
+retains entropy-driven ordering, distinct transition characters, finite-size
+correlations and an algorithmic clock. Its mechanism and density thresholds
+are not transferred to the alloy.
+
+Conjugation and aromaticity retain separate criteria. The existing benzene
+valence-bond energy and the [ring-center NICS calculation](https://doi.org/10.1021/ja960582d)
+answer different questions. Computed magnetic shielding depends on geometry,
+basis and probe location; a negative saturated control rules out using sign
+alone as a universal classifier. These records supply no measured proton NMR,
+conductivity, optical spectrum or independent second benzene energy calculation.
+
+## Material response and optical channels
+
+[Matrix-isolated hydroxymethylene](https://doi.org/10.1038/nature07010) separates
+host-specific dark reaction kinetics from reduced-path tunnelling predictions.
+The [water radial-distribution reanalysis](https://doi.org/10.1063/1.4790861)
+and [SPC/E dynamics](https://doi.org/10.1126/science.1122154) have distinct static
+and temporal observables; a coordination integral is not a hydrogen-bond lifetime.
+[Screened colloidal-pair inference](https://doi.org/10.1103/PhysRevLett.73.352)
+and [PMMA nucleus/interface analysis](https://doi.org/10.1126/science.1058457)
+retain separate preparations, estimators and finite-sample limits.
+
+[Sodium cohesion calculations](https://doi.org/10.1002/cssc.201902860) use a
+neutral-atom energy reference, while [film photoemission](https://doi.org/10.1103/PhysRevB.106.125138)
+measures a different response. Neither determines a universal transport law.
+[Gibbs's selected equilibrium exposition](https://doi.org/10.2475/ajs.s3-16.96.441)
+separates constrained bulk coexistence, local stability and kinetic persistence;
+its phase count is not a count of specimens or constituents.
+
+[Quartz resonance inversion](https://doi.org/10.1063/1.2335684) retains inherited
+dielectric inputs and specimen variation. [AlScN film switching](https://doi.org/10.1063/1.5084945)
+retains leakage correction, polarity controls and finite retention. Piezoelectric
+symmetry alone does not establish ferroelectric switching or a Curie temperature.
+
+The [finite amorphous-host Mossbauer case](https://doi.org/10.1016/j.ica.2020.119760)
+separates zero-phonon events, momentum transfer, fitted spectra and alternative
+Debye interpretations. [Highly ionized Pr electron capture](https://doi.org/10.1103/PhysRevLett.99.262501)
+separates charge preparation, Schottky populations, loss-corrected partial rates
+and conditional hyperfine interpretation. These are not generic crystal,
+chemical-environment or all-decay laws. Casimir records reuse the existing
+corrected force and frequency-gradient experiments with their original geometry,
+calibration disputes and limits on vacuum interpretation.
+
+[Corrected Cs hyperfine spectroscopy](https://doi.org/10.1103/PhysRevA.109.042820)
+uses the [actual replacement tables](https://doi.org/10.1103/PhysRevA.109.049904),
+preserving optical-interference and inherited-correction assumptions. Its
+line-shape model uses the measured splittings rather than independently predicting
+them. [Rb/Cs fountain operation](https://doi.org/10.1103/PhysRevLett.90.150801)
+retains a separate ground-state preparation, shared frequency reference and
+statistical/systematic budget. The exact SI frequency assignment is a definition,
+not an uncertainty-free clock realization.
+
+[ROSI angular radiometry](https://doi.org/10.1364/AO.435117) adds a finite PTFE
+response with flux normalization, aperture corrections and actual viewing
+geometry. A directional reflectance factor differs from hemispherical
+reflectance; the selected figure leaves its polarization state unspecified.
+Existing IR-window evidence is reused with its complete preparation. A separate
+homogeneous linear propagation model distinguishes phase, amplitude attenuation
+and intensity attenuation. Aggregate transmission does not uniquely determine
+complex refractive index, scattering, delay, imaging response or coherence.
+These optical cases establish no universal crystal or permanent-dipole prerequisite.
+
+## Field models and their evidence
 
 The physical branch organizes a quantum-field framework, a free scalar
 construction, the Standard Model specification and its QCD, quark, lepton and
