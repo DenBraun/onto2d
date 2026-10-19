@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.18.9`: 1333 records, 1235 connections,
-1453 claims and 422 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.19.0`: 1478 records, 1462 connections,
+1653 claims and 468 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records

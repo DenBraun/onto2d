@@ -1,3 +1,21 @@
+/** Resolve repeated source metadata locally, without changing verified records. */
+export function resolveClaimCitations(claim) {
+  const citations = Array.isArray(claim?.citations) ? claim.citations : [];
+  const sources = new Map();
+  for (const citation of citations) {
+    if (typeof citation?.sourceId === "string"
+        && citation.source !== null && typeof citation.source === "object"
+        && !Array.isArray(citation.source) && !sources.has(citation.sourceId)) {
+      sources.set(citation.sourceId, citation.source);
+    }
+  }
+  return citations.map((citation) => {
+    if (!citation || typeof citation !== "object" || Object.hasOwn(citation, "source")) return citation;
+    const source = sources.get(citation.sourceId);
+    return source ? { ...citation, source } : citation;
+  });
+}
+
 /** Links are optional presentation of declared evidence, never proof of support. */
 export function citationLinks(citation, repositoryBase) {
   const source = citation?.source;

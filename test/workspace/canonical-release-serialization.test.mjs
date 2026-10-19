@@ -6,6 +6,7 @@ import test from "node:test";
 import { buildModelPack, verifyModelPack } from "@onto2d/model-pack";
 import { loadModelPackDirectory } from "@onto2d/model-pack/node";
 import { hashArtifactBytes } from "@onto2d/kernel";
+import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
 import {
   compileCanonicalGraph,
   verifyCanonicalRelease,
@@ -73,6 +74,81 @@ test("canonical entities retain source descriptions and evidence without generat
   assert.deepEqual(pack.files["model/dictionaries.json"].claims, [claim]);
   assert.deepEqual(data, before, "Compaction changes the generated projection only");
   assert.deepEqual(verifyModelPack(pack), pack);
+});
+
+test("repeated passage citations retain complete claim-local evidence after serialization and resolution", () => {
+  const publication = {
+    id: "publication", title: "A scoped measurement", authors: ["A. Researcher"], year: 2026,
+    doi: "10.1234/measurement", url: "https://example.org/measurement.pdf",
+    path: "references/measurement.pdf", sha256: "a".repeat(64),
+    review: { extent: "selected-passages", locators: ["Methods", "Figure 1", "Discussion"],
+      limit: "Calibration and raw acquisition were not reproduced." }
+  };
+  const alternative = { id: "alternative", title: "A competing interpretation", year: 2025,
+    url: "https://example.org/alternative", review: { extent: "full-article", locators: ["Section 2"],
+      limit: "A model comparison rather than a second acquisition." } };
+  const first = { id: "first", statement: "A conditional observation", scope: "The named preparation",
+    status: "publication-supported", limitations: ["Shared calibration is retained."], checkIds: [], contextIds: ["study"],
+    citations: [
+      { sourceId: publication.id, locator: "Methods", role: "method", note: "The actual preparation." },
+      { sourceId: alternative.id, locator: "Section 2", role: "limits", note: "A distinct explanation." },
+      { sourceId: publication.id, locator: "Figure 1", role: "supports", note: "The measured endpoint." },
+      { sourceId: publication.id, locator: "Discussion", role: "limits", note: "The authors' uncertainty." }
+    ] };
+  const second = { id: "second", statement: "A separate claim", scope: "A separate interpretation",
+    status: "definition", limitations: ["No additional experiment."], checkIds: [],
+    citations: [first.citations[2], first.citations[3]] };
+  const study = { id: "study", sourceId: publication.id, preparation: "A declared specimen and stimulus",
+    observable: "Calibrated response", limitations: ["The original covariance is unavailable."] };
+  const entity = { id: "entity", name: "Measured record", kind: "scoped-process", status: "evidence-scoped",
+    level: 1, description: "The complete source description", claimIds: [first.id, second.id],
+    sourceCoordinates: [{ sourceId: publication.id, locator: "Figure 1" }],
+    openObligations: ["Preserve calibration dependence."] };
+  const data = {
+    graph: { model: { id: "citation-projection", name: "Citation projection", version: "1" },
+      scope: { summary: "A claim-local projection fixture" }, entities: [entity], rules: [], relations: [],
+      sources: [publication, alternative], claims: [first, second] },
+    readiness: { nodeRoles: [{ nodeId: entity.id, role: "scoped-phenomenon", denotes: entity.description,
+      instanceAdmission: "none", claimIds: entity.claimIds }] },
+    dictionaryReview: { records: [] }, pilot: { studies: [study] },
+    routing: { studies: [], contexts: [], reviews: [], measurements: [], routes: [] }, routingPolicy: {},
+    optics: { studies: [] }, visual: { studies: [] }, neural: { studies: [] }, physics: { studies: [] }
+  };
+  const before = structuredClone(data);
+  const pack = compileCanonicalGraph(data, {}, []);
+  const compiled = JSON.parse(compact(pack.files["model/nodes.json"]))[0];
+  const [projectedFirst, projectedSecond] = compiled.rationale;
+  assert.deepEqual(projectedFirst.citations[0].source, publication);
+  assert.deepEqual(projectedFirst.citations[1].source, alternative);
+  assert.equal(Object.hasOwn(projectedFirst.citations[2], "source"), false);
+  assert.equal(Object.hasOwn(projectedFirst.citations[3], "source"), false);
+  assert.deepEqual(projectedSecond.citations[0].source, publication, "Each claim carries its own complete source");
+  assert.equal(Object.hasOwn(projectedSecond.citations[1], "source"), false);
+  assert.deepEqual(projectedFirst.contexts, [study], "Preparation and study limits remain fully expanded");
+
+  const expected = [first, second].map((claim) => ({ ...claim,
+    contexts: claim.contextIds ? [study] : [], experimentalContexts: [],
+    citations: claim.citations.map((citation) => ({ ...citation,
+      source: data.graph.sources.find((source) => source.id === citation.sourceId) })) }));
+  const restored = compiled.rationale.map((claim) => ({ ...claim, citations: resolveClaimCitations(claim) }));
+  assert.deepEqual(restored, expected, "Every citation, complete source, reading limit and study reconstructs exactly");
+  assert.ok(Buffer.byteLength(compact(compiled.rationale)) < Buffer.byteLength(compact(expected)));
+  for (const [index, claim] of restored.entries()) {
+    for (const [citationIndex, citation] of claim.citations.entries()) {
+      assert.deepEqual(citationLinks(citation, "https://example.org/Onto2D/"),
+        citationLinks(expected[index].citations[citationIndex], "https://example.org/Onto2D/"));
+    }
+  }
+  assert.deepEqual(pack.files["model/dictionaries.json"].claims, [first, second]);
+  assert.deepEqual(data, before, "Only the generated projection changes");
+  assert.deepEqual(verifyModelPack(pack), pack);
+
+  const conflicting = structuredClone(data);
+  conflicting.graph.sources.push({ ...publication, title: "Conflicting source identity" });
+  assert.throws(() => compileCanonicalGraph(conflicting, {}, []), /Citation source IDs must be unique/);
+  const missing = structuredClone(data);
+  missing.graph.claims[0].citations[0].sourceId = "unresolved";
+  assert.throws(() => compileCanonicalGraph(missing, {}, []), /Missing citation source: unresolved/);
 });
 
 test("canonical compact bundle and semantic splits preserve loader identity and readable metadata", async () => {

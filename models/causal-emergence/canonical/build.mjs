@@ -20,11 +20,13 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   const nodeRoles = new Map(readiness.nodeRoles.map((r) => [r.nodeId, r]));
   const claims = new Map(graph.claims.map((c) => [c.id, c]));
   const sources = new Map(graph.sources.map((s) => [s.id, s]));
+  assert.equal(sources.size, graph.sources.length, "Citation source IDs must be unique before projection");
   const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies].map((s) => [s.id, s]));
   const experiments = new Map(routing.contexts.map((c) => [c.id, c]));
   function rationale(ids) {
     return ids.map((id) => {
       const claim = claims.get(id);
+      const citedSources = new Set();
       return {
         ...claim, contexts: (claim.contextIds ?? []).map((id) => studies.get(id)),
         experimentalContexts: (claim.experimentalContextIds ?? []).map((id) => ({
@@ -33,7 +35,16 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
           measurement: routing.measurements.find((m) => m.contextId === id) ?? null,
           routes: routing.routes
         })),
-        citations: claim.citations.map((c) => ({ ...c, source: sources.get(c.sourceId) }))
+        // Every claim remains self-contained. Repeated passage citations keep
+        // their sourceId, locator, role and note without copying the same full
+        // publication metadata again; the inspector resolves it within this claim.
+        citations: claim.citations.map((c) => {
+          const source = sources.get(c.sourceId);
+          assert.ok(source, `Missing citation source: ${c.sourceId}`);
+          if (citedSources.has(c.sourceId)) return { ...c };
+          citedSources.add(c.sourceId);
+          return { ...c, source };
+        })
       };
     });
   }
@@ -169,6 +180,30 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/polarization-state-scope.mjs",
     "models/causal-emergence/canonical/scalar-propagation.mjs",
     "models/causal-emergence/canonical/directional-stability-scope.mjs",
+    "models/causal-emergence/canonical/level-two.mjs",
+    "models/causal-emergence/canonical/optical-propagation.mjs",
+    "models/causal-emergence/canonical/surface-scattering.mjs",
+    "models/causal-emergence/canonical/hyperfine.mjs",
+    "models/causal-emergence/canonical/casimir-scope.mjs",
+    "models/causal-emergence/canonical/electronic-decay.mjs",
+    "models/causal-emergence/canonical/mossbauer.mjs",
+    "models/causal-emergence/canonical/piezoelectric-ferroelectric.mjs",
+    "models/causal-emergence/canonical/phase-regime.mjs",
+    "models/causal-emergence/canonical/metallic-bonding.mjs",
+    "models/causal-emergence/canonical/colloid-interface.mjs",
+    "models/causal-emergence/canonical/liquid-organization.mjs",
+    "models/causal-emergence/canonical/quantum-reaction.mjs",
+    "models/causal-emergence/canonical/aromatic-conjugation.mjs",
+    "models/causal-emergence/canonical/crystal-order.mjs",
+    "models/causal-emergence/canonical/molecular-polarization.mjs",
+    "models/causal-emergence/canonical/hydrogen-bond.mjs",
+    "models/causal-emergence/canonical/dispersion.mjs",
+    "models/causal-emergence/canonical/bbn.mjs",
+    "models/causal-emergence/canonical/em-regime.mjs",
+    "models/causal-emergence/canonical/atomic-structure.mjs",
+    "models/causal-emergence/canonical/molecular-binding.mjs",
+    "models/causal-emergence/canonical/ionic-interactions.mjs",
+    "models/causal-emergence/canonical/molecular-resonance.mjs",
     "models/causal-emergence/canonical/entanglement-formal.mjs",
     "models/causal-emergence/canonical/entanglement-vacuum.mjs",
     "models/causal-emergence/canonical/entanglement-bell.mjs",

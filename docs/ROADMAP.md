@@ -23,16 +23,24 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 166 remain on the
+graph. Of the 249 original source cards, 145 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-83 cards is a source-review census, not a percentage of scientifically supported
+104 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
 assertions remain excluded or explicitly limited; this is not independent
 validation of the physical branch.
 
-The current graph contains 1333 records, 1235 connections, 1453 claims and 422 sources.
+All 23 Level-2 cards have scoped dispositions in the
+[Level-2 review](../references/canonical/LEVEL_2_REVIEW.md): primordial nuclear
+synthesis, atomic and molecular models, finite material response and optical
+channels. Each retains its own system, observable, sources and interpretation
+limits. Unsupported universal parent chains, weights and minima remain excluded;
+completion of source disposition is not independent experimental validation.
+Further source work follows the remaining cards in the pending list.
+
+The current graph contains 1478 records, 1462 connections, 1653 claims and 468 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -77,6 +85,9 @@ expanded again on every edge. Selected-node evidence remains self-contained.
 Entity descriptions are stored once; full and lazy catalogues derive their
 summaries consistently. Explicit short summaries and the distinct construction
 rule summaries remain authoritative. Source descriptions and evidence are retained.
+Within each attached claim, full publication metadata is stored once per source;
+repeated passage citations retain their locators, roles and notes. The inspector
+resolves that metadata within the same claim without another request.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,
@@ -315,8 +326,8 @@ belong to the current claims.
    mass shells and internal propagators do not imply energy borrowing or
    a virtual-particle census. No loop calculation or universal formation/
    maintenance dependencies, weights or minima are admitted by this treatment.
-   Continue the remaining particle-property and field-organization cards
-   with their own preparations and evidence. Do not expand a closed card
+   Review newly scoped physical questions with their own preparations and
+   evidence. Do not expand a closed card
    indefinitely to reconstruct every upstream instrument. A new claim about
    formation dynamics, physical stability or a general constituent minimum
    needs separate support.
