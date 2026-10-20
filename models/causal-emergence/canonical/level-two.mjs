@@ -308,7 +308,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence; other Level-2 cards remain pending."
+        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -334,7 +334,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence; other Level-2 cards remain pending."
+        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -365,7 +365,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence; other Level-2 cards remain pending."
+        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -399,7 +399,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence; other Level-2 cards remain pending."
+        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },

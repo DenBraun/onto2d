@@ -23,9 +23,9 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 145 remain on the
+graph. Of the 249 original source cards, 96 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-104 cards is a source-review census, not a percentage of scientifically supported
+153 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
@@ -38,9 +38,38 @@ synthesis, atomic and molecular models, finite material response and optical
 channels. Each retains its own system, observable, sources and interpretation
 limits. Unsupported universal parent chains, weights and minima remain excluded;
 completion of source disposition is not independent experimental validation.
-Further source work follows the remaining cards in the pending list.
+All 50 Level-3 cards have scoped dispositions in the
+[Level-3 source review](../references/canonical/LEVEL_3_REVIEW.md), including
+genetic information, prepared reaction networks/cycles, condensate and lipid
+assays, benign-phage observations and existing retinal photochemistry.
+No Level-3 cards remain pending. Maturation, full infection, complete entry,
+host-expression reprogramming, biochemical electron-capture effects and primitive
+chemiosmotic coupling retain explicit unresolved hypotheses. These are scientific
+limits, not unfinished source tasks. Biochemical preparations and interpretations
+have a separate evidence ledger; completed disposition does not mean that all
+original assertions are supported or the experiments independently reproduced.
 
-The current graph contains 1478 records, 1462 connections, 1653 claims and 468 sources.
+The immediate comparative focus is the
+[fourteen-case interaction pilot](../cases/canonical-interactions/README.md).
+Its scientific cases, typed properties and proposed correspondences are stored
+in the canonical graph; the pilot retains selection and comparison criteria.
+Model Studio exposes source-bound anchor evidence and separate System, Evidence
+and Hypotheses views without adding physical edges between analogous cases. Three candidate families concern condition-selected
+regimes, bounded persistence and organization-associated response. Ten development
+and four challenge publication groups remain disjoint, including their dependent
+preparations and analyses. This is a retrospective contrast sample with explicit
+contrary and inconclusive outcomes; unseen-study testing and independent scientific
+review remain unperformed. Three additional primary-source readings, absent from
+the canonical source inventory, check the operational distinctions for regime
+selection, supplied-resource persistence and RNA catalytic response. Their search
+exposure, supplementary-access limits and lack of canonical admission remain explicit;
+they are not blind predictions or experimental replications.
+The next scientific checks must record a case-specific
+prediction and failure criterion before reading new source outcomes.
+[CETCH issue #32](https://github.com/DenBraun/onto2d/issues/32) covers deeper main/supplement
+failure analysis and a later evidence-backed case page.
+
+The current graph contains 1705 records, 1704 connections, 1921 claims and 501 sources.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -74,11 +103,14 @@ claims remain open.
 
 Model Studio loads the searchable graph first, selected-record evidence in
 bounded chunks and reviews when opened. Its pinned browser projection is
-checked against the exact full release during build validation.
-The complete release uses compact JSON for its bundle and semantic model files,
-within the existing 32 MiB file and 64 MiB total transport budgets. Canonical
-inputs, manifest and indexes remain readable. Exact verification preserves the
-selected bytes, and published releases cannot be reformatted in place.
+checked against the exact full release by the explicit
+`npm run model-studio:data:verify` command.
+The current canonical writer uses lossless JSON value tables for complete
+bundles and node files, restoring every field before semantic verification.
+Physical and expanded content remain bounded, with no increase to transport
+limits. Canonical inputs, manifest and indexes remain readable. Exact replay
+preserves the selected bytes, and published releases cannot be reformatted in
+place. Model Studio's selected-record chunks retain their existing format.
 Relations reference complete dictionary claims through `claimIds`; their
 sources and contexts are stored once in those dictionaries instead of being
 expanded again on every edge. Selected-node evidence remains self-contained.

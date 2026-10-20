@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Canonical research source v20",
+  "title": "Canonical research source v22",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -13,7 +13,8 @@
     "optics",
     "visual",
     "neural",
-    "physics"
+    "physics",
+    "biochemistry"
   ],
   "properties": {
     "graph": {
@@ -27,11 +28,13 @@
         "claims",
         "entities",
         "rules",
-        "relations"
+        "relations",
+        "interactionCases",
+        "interactionAnalogies"
       ],
       "properties": {
         "schemaVersion": {
-          "const": 20
+          "const": 22
         },
         "model": {
           "type": "object",
@@ -748,6 +751,18 @@
           },
           "minItems": 0,
           "uniqueItems": true
+        },
+        "interactionCases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/canonicalInteractionCase"
+          }
+        },
+        "interactionAnalogies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/canonicalInteractionAnalogy"
+          }
         }
       }
     },
@@ -2989,6 +3004,858 @@
         },
         "checkIds": {
           "const": []
+        }
+      }
+    },
+    "biochemistry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "independentScientificReviewComplete",
+        "studies",
+        "comparisons",
+        "openObligations",
+        "checkIds"
+      ],
+      "properties": {
+        "id": {
+          "const": "biochemistry-evidence"
+        },
+        "independentScientificReviewComplete": {
+          "const": false
+        },
+        "studies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "sourceId",
+              "studyType",
+              "doi",
+              "journal",
+              "volume",
+              "issue",
+              "pages",
+              "preparation",
+              "observable",
+              "finding",
+              "limitations",
+              "readExtent",
+              "reviewedLocators",
+              "metadataCheckedAt",
+              "metadataUrl",
+              "correctionCheck",
+              "system"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "studyType": {
+                "enum": [
+                  "primary-experiment",
+                  "computational-analysis",
+                  "primary-observation",
+                  "experimental-reanalysis"
+                ]
+              },
+              "doi": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^10\\.\\d{4,9}/\\S+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "journal": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "volume": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "issue": {
+                "type": "string"
+              },
+              "pages": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "preparation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "observable": {
+                "type": "string",
+                "minLength": 1
+              },
+              "finding": {
+                "type": "string",
+                "minLength": 1
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "readExtent": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewedLocators": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "metadataCheckedAt": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "metadataUrl": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^https://[^\\s]+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "correctionCheck": {
+                "type": "string",
+                "minLength": 1
+              },
+              "system": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "comparisons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "candidate",
+              "alternative",
+              "sourceIds",
+              "discriminator",
+              "result",
+              "limit",
+              "assumptions",
+              "claimIds"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "candidate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "alternative": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "discriminator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "result": {
+                "enum": [
+                  "conditional-support",
+                  "specified-alternative-disfavored",
+                  "not-tested",
+                  "inconclusive"
+                ]
+              },
+              "limit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assumptions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            }
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "openObligations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "checkIds": {
+          "const": []
+        }
+      }
+    }
+  },
+  "definitions": {
+    "canonicalInteractionCase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "domain",
+        "entityIds",
+        "claimIds",
+        "studyIds",
+        "evidenceMode",
+        "fields",
+        "observations",
+        "limitations",
+        "anchorEntityId",
+        "sourceIds",
+        "facets",
+        "views"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "enum": [
+            "physics",
+            "chemistry",
+            "biochemistry"
+          ]
+        },
+        "entityIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "studyIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidenceMode": {
+          "enum": [
+            "experiment",
+            "computation",
+            "mixed"
+          ]
+        },
+        "fields": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "participants",
+            "changedFactor",
+            "observable",
+            "response",
+            "conditions",
+            "resources",
+            "boundary",
+            "timeScale",
+            "controls",
+            "interpretation",
+            "uncertainty"
+          ],
+          "properties": {
+            "participants": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "changedFactor": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "observable": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "response": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "conditions": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "resources": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "boundary": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "timeScale": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "controls": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "interpretation": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            },
+            "uncertainty": {
+              "$ref": "#/definitions/canonicalInteractionField"
+            }
+          }
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "kind",
+              "statement",
+              "claimIds",
+              "studyIds"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "reported-observation",
+                  "measurement-inference",
+                  "model-result",
+                  "source-interpretation",
+                  "not-established"
+                ]
+              },
+              "statement": {
+                "type": "string",
+                "minLength": 1
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "studyIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "anchorEntityId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "facets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/canonicalInteractionFacet"
+          }
+        },
+        "views": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "system",
+            "evidence",
+            "hypotheses"
+          ],
+          "properties": {
+            "system": {
+              "$ref": "#/definitions/canonicalInteractionView"
+            },
+            "evidence": {
+              "$ref": "#/definitions/canonicalInteractionView"
+            },
+            "hypotheses": {
+              "$ref": "#/definitions/canonicalInteractionView"
+            }
+          }
+        }
+      }
+    },
+    "canonicalInteractionField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "missingReason",
+        "claimIds"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "missingReason": {
+          "enum": [
+            null,
+            "not-reported",
+            "not-reviewed",
+            "not-applicable"
+          ]
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "missingReason": {
+                "enum": [
+                  "not-reported",
+                  "not-reviewed",
+                  "not-applicable"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "missingReason": {
+                "type": "null"
+              },
+              "claimIds": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "canonicalInteractionFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "value",
+        "statement",
+        "observationIds",
+        "claimIds",
+        "studyIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "regime",
+            "persistence",
+            "operation",
+            "resource",
+            "composition"
+          ]
+        },
+        "status": {
+          "enum": [
+            "reported",
+            "inferred",
+            "not-established"
+          ]
+        },
+        "value": {
+          "enum": [
+            "condition-dependent",
+            "model-regime",
+            "unestablished",
+            "finite-retention",
+            "finite-operation",
+            "kinetic-inference",
+            "observed-loss",
+            "increased",
+            "decreased",
+            "sign-reversal",
+            "different-response",
+            "no-detected-response",
+            "unmeasured",
+            "unisolated-mechanism",
+            "supplied",
+            "supply-varied",
+            "necessity-unestablished",
+            "reported-failure",
+            "operation-plateau"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "studyIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "regime"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "condition-dependent",
+                  "model-regime",
+                  "unestablished"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "persistence"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "finite-retention",
+                  "finite-operation",
+                  "kinetic-inference",
+                  "observed-loss",
+                  "unestablished",
+                  "operation-plateau"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "operation"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "increased",
+                  "decreased",
+                  "sign-reversal",
+                  "different-response",
+                  "no-detected-response",
+                  "unmeasured",
+                  "unisolated-mechanism"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "resource"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "supplied",
+                  "supply-varied",
+                  "necessity-unestablished"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "composition"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "reported-failure",
+                  "finite-operation",
+                  "unestablished"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "canonicalInteractionView": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nodeIds",
+        "edgeIds"
+      ],
+      "properties": {
+        "nodeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "edgeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      }
+    },
+    "canonicalInteractionAnalogy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "familyId",
+        "caseIds",
+        "fields",
+        "correspondence",
+        "breakdownConditions",
+        "status",
+        "physicalCausalClaim"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "familyId": {
+          "enum": [
+            "regime-selection",
+            "persistence",
+            "organization-operation"
+          ]
+        },
+        "caseIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "participants",
+              "changedFactor",
+              "observable",
+              "response",
+              "conditions",
+              "resources",
+              "boundary",
+              "timeScale",
+              "controls",
+              "interpretation",
+              "uncertainty"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "correspondence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "breakdownConditions": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "hypothesis"
+        },
+        "physicalCausalClaim": {
+          "const": false
         }
       }
     }

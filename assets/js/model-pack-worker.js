@@ -632,6 +632,378 @@ var MODEL_PACK_CANONICAL_OPTIONS = Object.freeze({
   limits: Object.freeze({ maxEntries: 1e6 })
 });
 
+// packages/model-pack/src/model-pack-error.js
+var ModelPackError = class extends Error {
+  constructor(code, message, details = {}) {
+    super(message);
+    this.name = "ModelPackError";
+    this.code = code;
+    this.details = Object.freeze({ ...details });
+  }
+};
+
+// packages/model-pack/src/json-value-table.js
+var FORMAT = "onto2d-json-value-table";
+var VERSION = "1";
+var DEFAULT_LIMITS2 = Object.freeze({
+  maxBytes: 64 * 1024 * 1024,
+  maxEntries: 1e6,
+  maxDepth: 64,
+  maxStringBytes: 1024 * 1024
+});
+var OPTION_FIELDS = new Set(Object.keys(DEFAULT_LIMITS2));
+var ENVELOPE_FIELDS = ["format", "formatVersion", "root", "table"];
+var FORBIDDEN_KEYS2 = /* @__PURE__ */ new Set(["__proto__", "constructor", "prototype"]);
+var PREFIX = "MODEL_PACK_JSON_VALUE_TABLE_";
+var codecErrors = /* @__PURE__ */ new WeakSet();
+var compareText = (left, right) => left < right ? -1 : left > right ? 1 : 0;
+function fail2(code, message, details = {}) {
+  const error = new ModelPackError(`${PREFIX}${code}`, message, details);
+  codecErrors.add(error);
+  throw error;
+}
+function guarded(action) {
+  try {
+    return action();
+  } catch (error) {
+    if (error !== null && typeof error === "object" && codecErrors.has(error)) throw error;
+    fail2("INPUT_INVALID", "The JSON value cannot be inspected safely.", {
+      cause: typeof error
+    });
+  }
+}
+function plainObject(value) {
+  if (value === null || typeof value !== "object" || Array.isArray(value)) return false;
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === Object.prototype || prototype === null;
+}
+function normalizeOptions(options) {
+  if (!plainObject(options)) fail2("OPTIONS_INVALID", "Codec options must be a plain data object.");
+  const descriptors = Object.getOwnPropertyDescriptors(options);
+  const limits = { ...DEFAULT_LIMITS2 };
+  for (const key of Reflect.ownKeys(descriptors)) {
+    const descriptor = descriptors[key];
+    if (typeof key !== "string" || !OPTION_FIELDS.has(key) || !Object.hasOwn(descriptor, "value") || !descriptor.enumerable || !Number.isSafeInteger(descriptor.value) || descriptor.value < 1) {
+      fail2("OPTIONS_INVALID", "Codec limits must be known positive safe integers.");
+    }
+    limits[key] = descriptor.value;
+  }
+  return limits;
+}
+function add(current, amount, maximum, field, subject) {
+  if (amount > maximum - current) {
+    fail2("LIMIT_EXCEEDED", "The JSON value exceeds its codec limit.", {
+      field,
+      maximum,
+      subject
+    });
+  }
+  return current + amount;
+}
+function stringSizes(value, maximum, subject) {
+  let bytes = 0;
+  let jsonBytes = 2;
+  for (let index = 0; index < value.length; index += 1) {
+    const code = value.charCodeAt(index);
+    let size;
+    if (code >= 55296 && code <= 56319) {
+      const next = value.charCodeAt(index + 1);
+      if (!(next >= 56320 && next <= 57343)) {
+        fail2("INPUT_INVALID", "Unpaired Unicode surrogates are not canonical JSON.", { subject });
+      }
+      index += 1;
+      size = 4;
+    } else if (code >= 56320 && code <= 57343) {
+      fail2("INPUT_INVALID", "Unpaired Unicode surrogates are not canonical JSON.", { subject });
+    } else {
+      size = code < 128 ? 1 : code < 2048 ? 2 : 3;
+    }
+    bytes = add(bytes, size, maximum, "maxStringBytes", subject);
+    if (code === 34 || code === 92) jsonBytes += 2;
+    else if (code < 32) jsonBytes += [8, 9, 10, 12, 13].includes(code) ? 2 : 6;
+    else jsonBytes += size;
+  }
+  return { bytes, jsonBytes };
+}
+function scalar(value, limits, subject) {
+  if (value === null) return { value, bytes: 4, entries: 1, depth: 0 };
+  if (typeof value === "boolean") return { value, bytes: value ? 4 : 5, entries: 1, depth: 0 };
+  if (typeof value === "string") {
+    return { value, bytes: stringSizes(value, limits.maxStringBytes, subject).jsonBytes, entries: 1, depth: 0 };
+  }
+  if (typeof value === "number" && Number.isFinite(value)) {
+    const normalized = Object.is(value, -0) ? 0 : value;
+    return { value: normalized, bytes: JSON.stringify(normalized).length, entries: 1, depth: 0 };
+  }
+  fail2("INPUT_INVALID", "Only finite JSON scalars and plain JSON containers are supported.", { subject });
+}
+function inspectContainer(value, budget, limits, subject) {
+  const array = Array.isArray(value);
+  if (!array && !plainObject(value)) {
+    fail2("INPUT_INVALID", "Only plain JSON objects and arrays are supported.", { subject });
+  }
+  if (array) {
+    const length = Object.getOwnPropertyDescriptor(value, "length")?.value;
+    if (!Number.isSafeInteger(length) || length < 0) {
+      fail2("INPUT_INVALID", "A JSON array requires a valid own length.", { subject });
+    }
+    if (length > limits.maxEntries - budget.entries) {
+      fail2("LIMIT_EXCEEDED", "The JSON array exceeds its codec entry limit.", {
+        field: "maxEntries",
+        maximum: limits.maxEntries,
+        subject
+      });
+    }
+  }
+  const descriptors = Object.getOwnPropertyDescriptors(value);
+  const keys = Reflect.ownKeys(descriptors);
+  for (const key of keys) {
+    const descriptor = descriptors[key];
+    if (typeof key !== "string" || !Object.hasOwn(descriptor, "value") || !descriptor.enumerable && !(array && key === "length")) {
+      fail2("INPUT_INVALID", "JSON containers require enumerable string data properties.", { subject });
+    }
+    if (FORBIDDEN_KEYS2.has(key)) {
+      fail2("INPUT_INVALID", "Prototype-sensitive JSON keys are forbidden.", { subject, key });
+    }
+  }
+  if (array) {
+    const length = descriptors.length.value;
+    if (keys.length !== length + 1) {
+      fail2("INPUT_INVALID", "JSON arrays must be dense and have no named properties.", { subject });
+    }
+    const indexes = [];
+    for (let index = 0; index < length; index += 1) {
+      if (!Object.hasOwn(descriptors, String(index))) {
+        fail2("INPUT_INVALID", "Sparse JSON arrays are forbidden.", { subject });
+      }
+      indexes.push(String(index));
+    }
+    return { kind: "a", keys: indexes, descriptors };
+  }
+  return { kind: "o", keys: keys.sort(compareText), descriptors };
+}
+function walkJson(input, limits, finish, subject) {
+  const budget = { bytes: 0, entries: 0 };
+  const ancestors = /* @__PURE__ */ new WeakSet();
+  const stack = [];
+  let result;
+  const deliver = (value) => {
+    if (stack.length === 0) result = value;
+    else stack[stack.length - 1].children.push(value);
+  };
+  function begin(value, depth) {
+    budget.entries = add(budget.entries, 1, limits.maxEntries, "maxEntries", subject);
+    if (depth > limits.maxDepth) {
+      fail2("LIMIT_EXCEEDED", "The JSON value exceeds its codec depth limit.", {
+        field: "maxDepth",
+        maximum: limits.maxDepth,
+        subject
+      });
+    }
+    if (value === null || typeof value !== "object") {
+      const item = scalar(value, limits, subject);
+      budget.bytes = add(budget.bytes, item.bytes, limits.maxBytes, "maxBytes", subject);
+      deliver(item.value);
+      return;
+    }
+    if (ancestors.has(value)) fail2("INPUT_INVALID", "Cyclic values are not JSON.", { subject });
+    const container = inspectContainer(value, budget, limits, subject);
+    let overhead = 2 + Math.max(0, container.keys.length - 1);
+    if (container.kind === "o") {
+      for (const key of container.keys) {
+        overhead = add(
+          overhead,
+          stringSizes(key, limits.maxStringBytes, subject).jsonBytes + 1,
+          limits.maxBytes,
+          "maxBytes",
+          subject
+        );
+      }
+    }
+    budget.bytes = add(budget.bytes, overhead, limits.maxBytes, "maxBytes", subject);
+    ancestors.add(value);
+    stack.push({ ...container, input: value, depth, next: 0, children: [] });
+  }
+  begin(input, 0);
+  while (stack.length > 0) {
+    const frame = stack[stack.length - 1];
+    if (frame.next < frame.keys.length) {
+      const key = frame.keys[frame.next++];
+      begin(frame.descriptors[key].value, frame.depth + 1);
+    } else {
+      stack.pop();
+      ancestors.delete(frame.input);
+      deliver(finish(frame.kind, frame.keys, frame.children));
+    }
+  }
+  return result;
+}
+function wireLimits(limits) {
+  return {
+    ...limits,
+    maxEntries: limits.maxEntries > (Number.MAX_SAFE_INTEGER - 32) / 12 ? Number.MAX_SAFE_INTEGER : limits.maxEntries * 12 + 32,
+    maxDepth: 8,
+    maxStringBytes: Math.max(64, limits.maxStringBytes)
+  };
+}
+function snapshotWire(value, limits) {
+  return walkJson(value, wireLimits(limits), (kind, keys, children) => kind === "a" ? children : Object.fromEntries(keys.map((key, index) => [key, children[index]])), "wire");
+}
+function encode(value, limits) {
+  const table = [];
+  const interned = /* @__PURE__ */ new Map();
+  let tableBytes = 2;
+  const root = walkJson(value, limits, (kind, keys, children) => {
+    const entry = [kind, kind === "a" ? children : keys.map((key, index2) => [key, children[index2]])];
+    const text = JSON.stringify(entry);
+    if (interned.has(text)) return ["ref", interned.get(text)];
+    const bytes = stringSizes(text, limits.maxBytes, "encoded table").bytes;
+    tableBytes = add(tableBytes, bytes + (table.length > 0 ? 1 : 0), limits.maxBytes, "maxBytes", "wire");
+    const index = table.length;
+    table.push(entry);
+    interned.set(text, index);
+    return ["ref", index];
+  }, "expanded value");
+  const envelope = { format: FORMAT, formatVersion: VERSION, root, table };
+  snapshotWire(envelope, limits);
+  return envelope;
+}
+function isJsonValueTable(value) {
+  if (value === null || typeof value !== "object") return false;
+  try {
+    const descriptor = Object.getOwnPropertyDescriptor(value, "format");
+    return descriptor !== void 0 && Object.hasOwn(descriptor, "value") && descriptor.value === FORMAT;
+  } catch {
+    return false;
+  }
+}
+function reference(value, maximum) {
+  if (!Array.isArray(value) || value.length !== 2 || value[0] !== "ref" || !Number.isSafeInteger(value[1]) || value[1] < 0 || value[1] >= maximum) {
+    fail2("REFERENCE_INVALID", "A table reference must name an earlier container.");
+  }
+  return value[1];
+}
+function expandedMetrics(value, available, metrics, limits) {
+  if (Array.isArray(value)) return metrics[reference(value, available)];
+  if (value !== null && typeof value === "object") {
+    fail2("INPUT_INVALID", "Encoded values must be scalars or reference tuples.");
+  }
+  const item = scalar(value, limits, "expanded value");
+  if (item.bytes > limits.maxBytes) {
+    fail2("LIMIT_EXCEEDED", "The expanded scalar exceeds its codec byte limit.", {
+      field: "maxBytes",
+      maximum: limits.maxBytes,
+      subject: "expanded value"
+    });
+  }
+  return item;
+}
+function preflight(envelope, limits) {
+  if (!plainObject(envelope) || Object.keys(envelope).join("\0") !== ENVELOPE_FIELDS.join("\0") || envelope.format !== FORMAT || !Array.isArray(envelope.table)) {
+    fail2("FORMAT_INVALID", "The JSON value-table envelope has an invalid field set or format.");
+  }
+  if (envelope.formatVersion !== VERSION) {
+    fail2("FORMAT_UNSUPPORTED", "The JSON value-table version is unsupported.");
+  }
+  const metrics = [];
+  for (const [index, entry] of envelope.table.entries()) {
+    if (!Array.isArray(entry) || entry.length !== 2 || !["a", "o"].includes(entry[0]) || !Array.isArray(entry[1])) {
+      fail2("INPUT_INVALID", "A table entry must contain an array or object payload.", { index });
+    }
+    const [kind, payload] = entry;
+    const result = { bytes: 2, entries: 1, depth: 0 };
+    let previous = null;
+    for (const [position, item] of payload.entries()) {
+      let value = item;
+      if (position > 0) result.bytes = add(result.bytes, 1, limits.maxBytes, "maxBytes", "expanded value");
+      if (kind === "o") {
+        if (!Array.isArray(item) || item.length !== 2 || typeof item[0] !== "string" || FORBIDDEN_KEYS2.has(item[0])) {
+          fail2("INPUT_INVALID", "Object payloads require safe string-key/value pairs.", { index });
+        }
+        const [key, child2] = item;
+        if (previous !== null && compareText(previous, key) >= 0) {
+          fail2("NON_CANONICAL", "Object payload keys must be unique and sorted.", { index });
+        }
+        previous = key;
+        result.bytes = add(
+          result.bytes,
+          stringSizes(key, limits.maxStringBytes, "expanded key").jsonBytes + 1,
+          limits.maxBytes,
+          "maxBytes",
+          "expanded value"
+        );
+        value = child2;
+      }
+      const child = expandedMetrics(value, index, metrics, limits);
+      result.bytes = add(result.bytes, child.bytes, limits.maxBytes, "maxBytes", "expanded value");
+      result.entries = add(result.entries, child.entries, limits.maxEntries, "maxEntries", "expanded value");
+      result.depth = Math.max(result.depth, child.depth + 1);
+      if (result.depth > limits.maxDepth) {
+        fail2("LIMIT_EXCEEDED", "The expanded value exceeds its codec depth limit.", {
+          field: "maxDepth",
+          maximum: limits.maxDepth,
+          subject: "expanded value"
+        });
+      }
+    }
+    if (result.bytes > limits.maxBytes) {
+      fail2("LIMIT_EXCEEDED", "The expanded container exceeds its codec byte limit.", {
+        field: "maxBytes",
+        maximum: limits.maxBytes,
+        subject: "expanded value"
+      });
+    }
+    metrics.push(result);
+  }
+  expandedMetrics(envelope.root, metrics.length, metrics, limits);
+}
+function materialize(envelope) {
+  let result;
+  const stack = [];
+  const deliver = (value) => {
+    if (stack.length === 0) result = value;
+    else {
+      const frame = stack[stack.length - 1];
+      const position = frame.next - 1;
+      if (frame.kind === "a") frame.value.push(value);
+      else frame.value[frame.payload[position][0]] = value;
+    }
+  };
+  function begin(encoded) {
+    if (!Array.isArray(encoded)) {
+      deliver(Object.is(encoded, -0) ? 0 : encoded);
+      return;
+    }
+    const [kind, payload] = envelope.table[encoded[1]];
+    stack.push({ kind, payload, next: 0, value: kind === "a" ? [] : {} });
+  }
+  begin(envelope.root);
+  while (stack.length > 0) {
+    const frame = stack[stack.length - 1];
+    if (frame.next < frame.payload.length) {
+      const item = frame.payload[frame.next++];
+      begin(frame.kind === "a" ? item : item[1]);
+    } else {
+      stack.pop();
+      deliver(frame.value);
+    }
+  }
+  return result;
+}
+function decodeJsonValueTable(value, options = {}) {
+  return guarded(() => {
+    const limits = normalizeOptions(options);
+    const envelope = snapshotWire(value, limits);
+    preflight(envelope, limits);
+    const restored = materialize(envelope);
+    const expected = encode(restored, limits);
+    if (JSON.stringify(expected) !== JSON.stringify(envelope)) {
+      fail2("NON_CANONICAL", "The table must use exact first-occurrence postorder interning with no unused entries.");
+    }
+    return restored;
+  });
+}
+
 // packages/model-pack/src/index.js
 var MODEL_PACK_FORMAT = "onto2d-model-pack";
 var MODEL_PACK_FORMAT_VERSION = "1";
@@ -660,44 +1032,36 @@ var INDEX_FILE_IDS = Object.freeze([
   "scientificStatus"
 ]);
 var FORBIDDEN_IDENTIFIERS = /* @__PURE__ */ new Set(["__proto__", "constructor", "prototype"]);
-var ModelPackError = class extends Error {
-  constructor(code, message, details = {}) {
-    super(message);
-    this.name = "ModelPackError";
-    this.code = code;
-    this.details = Object.freeze({ ...details });
-  }
-};
-function fail2(code, message, details) {
+function fail3(code, message, details) {
   throw new ModelPackError(code, message, details);
 }
 function requirePlainObject(value, name) {
   if (value === null || typeof value !== "object" || Array.isArray(value)) {
-    fail2("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
+    fail3("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
   }
   const prototype = Object.getPrototypeOf(value);
   if (prototype !== Object.prototype && prototype !== null) {
-    fail2("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
+    fail3("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
   }
   return value;
 }
 function requireString(value, name, maximum = 1024) {
   if (typeof value !== "string" || value.length === 0 || value.length > maximum) {
-    fail2("MODEL_PACK_INPUT_INVALID", `${name} must be a non-empty bounded string.`, { name });
+    fail3("MODEL_PACK_INPUT_INVALID", `${name} must be a non-empty bounded string.`, { name });
   }
   return value;
 }
 function requireIdentifier(value, name) {
   const identifier = requireString(value, name);
   if (FORBIDDEN_IDENTIFIERS.has(identifier)) {
-    fail2("MODEL_PACK_IDENTIFIER_FORBIDDEN", `${name} uses a prototype-sensitive identifier.`, {
+    fail3("MODEL_PACK_IDENTIFIER_FORBIDDEN", `${name} uses a prototype-sensitive identifier.`, {
       name,
       identifier
     });
   }
   return identifier;
 }
-function compareText(left, right) {
+function compareText2(left, right) {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 function normalizeModel(value) {
@@ -718,35 +1082,35 @@ function normalizeModel(value) {
 function normalizeSource(value) {
   const source = requirePlainObject(value, "source");
   if (!Array.isArray(source.files)) {
-    fail2("MODEL_PACK_INPUT_INVALID", "source.files must be an array.");
+    fail3("MODEL_PACK_INPUT_INVALID", "source.files must be an array.");
   }
   const paths = /* @__PURE__ */ new Set();
   const files = source.files.map((entry, index) => {
     const file = requirePlainObject(entry, `source.files[${index}]`);
     const filePath = requireString(file.path, `source.files[${index}].path`);
     if (filePath.startsWith("/") || filePath.includes("\\") || filePath.split("/").some((segment) => segment === "" || segment === "." || segment === "..")) {
-      fail2("MODEL_PACK_SOURCE_PATH_INVALID", "Source paths must be normalized relative paths.", {
+      fail3("MODEL_PACK_SOURCE_PATH_INVALID", "Source paths must be normalized relative paths.", {
         path: filePath
       });
     }
     if (paths.has(filePath)) {
-      fail2("MODEL_PACK_SOURCE_PATH_DUPLICATE", "Source paths must be unique.", { path: filePath });
+      fail3("MODEL_PACK_SOURCE_PATH_DUPLICATE", "Source paths must be unique.", { path: filePath });
     }
     paths.add(filePath);
     if (!isContentHash(file.hash)) {
-      fail2("MODEL_PACK_SOURCE_HASH_INVALID", "Every source file requires a content hash.", {
+      fail3("MODEL_PACK_SOURCE_HASH_INVALID", "Every source file requires a content hash.", {
         path: filePath
       });
     }
     return { path: filePath, hash: file.hash };
-  }).sort((left, right) => compareText(left.path, right.path));
+  }).sort((left, right) => compareText2(left.path, right.path));
   const normalized = {
     id: requireIdentifier(source.id, "source.id"),
     files
   };
   if (source.auditHash !== void 0) {
     if (!isContentHash(source.auditHash)) {
-      fail2("MODEL_PACK_SOURCE_HASH_INVALID", "source.auditHash must be a content hash.");
+      fail3("MODEL_PACK_SOURCE_HASH_INVALID", "source.auditHash must be a content hash.");
     }
     normalized.auditHash = source.auditHash;
   }
@@ -754,21 +1118,21 @@ function normalizeSource(value) {
 }
 function normalizeNodes(value) {
   if (!Array.isArray(value) || value.length === 0) {
-    fail2("MODEL_PACK_NODES_INVALID", "nodes must be a non-empty array.");
+    fail3("MODEL_PACK_NODES_INVALID", "nodes must be a non-empty array.");
   }
   const identifiers = /* @__PURE__ */ new Set();
   return value.map((entry, index) => {
     const node = canonicalClone(requirePlainObject(entry, `nodes[${index}]`));
     const id = requireIdentifier(node.id, `nodes[${index}].id`);
     if (identifiers.has(id)) {
-      fail2("MODEL_PACK_NODE_DUPLICATE", "Model node identifiers must be unique.", { id });
+      fail3("MODEL_PACK_NODE_DUPLICATE", "Model node identifiers must be unique.", { id });
     }
     identifiers.add(id);
     return node;
-  }).sort((left, right) => compareText(left.id, right.id));
+  }).sort((left, right) => compareText2(left.id, right.id));
 }
 function normalizeEdges(value, nodeIds) {
-  if (!Array.isArray(value)) fail2("MODEL_PACK_EDGES_INVALID", "edges must be an array.");
+  if (!Array.isArray(value)) fail3("MODEL_PACK_EDGES_INVALID", "edges must be an array.");
   const identifiers = /* @__PURE__ */ new Set();
   return value.map((entry, index) => {
     const edge = canonicalClone(requirePlainObject(entry, `edges[${index}]`));
@@ -776,10 +1140,10 @@ function normalizeEdges(value, nodeIds) {
     const source = requireIdentifier(edge.source, `edges[${index}].source`);
     const target = requireIdentifier(edge.target, `edges[${index}].target`);
     if (identifiers.has(id)) {
-      fail2("MODEL_PACK_EDGE_DUPLICATE", "Model edge identifiers must be unique.", { id });
+      fail3("MODEL_PACK_EDGE_DUPLICATE", "Model edge identifiers must be unique.", { id });
     }
     if (!nodeIds.has(source) || !nodeIds.has(target)) {
-      fail2("MODEL_PACK_EDGE_ENDPOINT_MISSING", "Every edge endpoint must resolve to a model node.", {
+      fail3("MODEL_PACK_EDGE_ENDPOINT_MISSING", "Every edge endpoint must resolve to a model node.", {
         id,
         source,
         target
@@ -787,7 +1151,7 @@ function normalizeEdges(value, nodeIds) {
     }
     identifiers.add(id);
     return edge;
-  }).sort((left, right) => compareText(left.id, right.id));
+  }).sort((left, right) => compareText2(left.id, right.id));
 }
 function groupedIndex(nodes, field) {
   const groups = /* @__PURE__ */ new Map();
@@ -797,7 +1161,7 @@ function groupedIndex(nodes, field) {
     if (!groups.has(key)) groups.set(key, { value: node[field], nodes: [] });
     groups.get(key).nodes.push(node.id);
   }
-  return [...groups.values()].map((entry) => ({ ...entry, nodes: entry.nodes.sort(compareText) })).sort((left, right) => compareText(canonicalize(left.value), canonicalize(right.value)));
+  return [...groups.values()].map((entry) => ({ ...entry, nodes: entry.nodes.sort(compareText2) })).sort((left, right) => compareText2(canonicalize(left.value), canonicalize(right.value)));
 }
 function buildModelIndexes(nodesInput, edgesInput) {
   const nodes = normalizeNodes(nodesInput);
@@ -811,8 +1175,8 @@ function buildModelIndexes(nodesInput, edgesInput) {
   }
   const neighborIndex = (index) => [...index.entries()].map(([id, neighbors]) => ({
     id,
-    nodes: [...neighbors].sort(compareText)
-  })).sort((left, right) => compareText(left.id, right.id));
+    nodes: [...neighbors].sort(compareText2)
+  })).sort((left, right) => compareText2(left.id, right.id));
   return deepFreeze(canonicalClone({
     byId: nodes.map((node, index) => ({ id: node.id, index })),
     parents: neighborIndex(parents),
@@ -893,15 +1257,16 @@ function buildModelPack(input) {
   return deepFreeze(canonicalClone({ manifest, files }, MODEL_PACK_CANONICAL_OPTIONS));
 }
 function verifyModelPack(pack) {
-  const value = canonicalClone(requirePlainObject(pack, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
+  const decoded = isJsonValueTable(pack) ? decodeJsonValueTable(pack) : pack;
+  const value = canonicalClone(requirePlainObject(decoded, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
   const manifest = requirePlainObject(value.manifest, "pack.manifest");
   const files = requirePlainObject(value.files, "pack.files");
   if (manifest.format !== MODEL_PACK_FORMAT || manifest.formatVersion !== MODEL_PACK_FORMAT_VERSION || manifest.schemaVersion !== MODEL_PACK_SCHEMA_VERSION || manifest.compatibility?.engineApiVersion !== MODEL_PACK_ENGINE_API_VERSION || manifest.compatibility?.modelPackFormatVersion !== MODEL_PACK_FORMAT_VERSION) {
-    fail2("MODEL_PACK_COMPATIBILITY_UNSUPPORTED", "The Model Pack format is not supported.");
+    fail3("MODEL_PACK_COMPATIBILITY_UNSUPPORTED", "The Model Pack format is not supported.");
   }
   for (const filePath of Object.values(FILE_PATHS)) {
     if (!Object.hasOwn(files, filePath)) {
-      fail2("MODEL_PACK_FILE_MISSING", "The Model Pack is missing a required file.", {
+      fail3("MODEL_PACK_FILE_MISSING", "The Model Pack is missing a required file.", {
         path: filePath
       });
     }
@@ -914,7 +1279,7 @@ function verifyModelPack(pack) {
     dictionaries: files[FILE_PATHS.dictionaries]
   });
   if (canonicalize(value, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(expected, MODEL_PACK_CANONICAL_OPTIONS)) {
-    fail2("MODEL_PACK_VERIFICATION_FAILED", "Model Pack bytes, indexes, or identities differ from reconstruction.", {
+    fail3("MODEL_PACK_VERIFICATION_FAILED", "Model Pack bytes, indexes, or identities differ from reconstruction.", {
       model: manifest.model?.id,
       version: manifest.model?.version
     });
@@ -963,15 +1328,33 @@ function inspectTransportOptions(value, code, subject) {
   }
   return entries;
 }
-function verifyTransportFiles(values) {
-  const manifest = values.get("manifest.json");
+function verifyTransportFiles(values, { maxTotalBytes = 64 * 1024 * 1024 } = {}) {
+  let expandedBytes = 0;
+  function decoded(relative) {
+    const remaining = maxTotalBytes - expandedBytes;
+    if (remaining < 1) {
+      modelPackTransportFail("MODEL_PACK_TRANSPORT_LIMIT_EXCEEDED", "Expanded Model Pack files exceed maxTotalBytes.");
+    }
+    const input = values.get(relative);
+    const value = (relative === "model/nodes.json" || relative === "bundle.json") && isJsonValueTable(input) ? decodeJsonValueTable(input, { maxBytes: remaining }) : input;
+    const bytes = new TextEncoder().encode(canonicalize(value, MODEL_PACK_CANONICAL_OPTIONS)).byteLength;
+    if (bytes > remaining) {
+      modelPackTransportFail("MODEL_PACK_TRANSPORT_LIMIT_EXCEEDED", "Expanded Model Pack files exceed maxTotalBytes.", {
+        path: relative,
+        maxTotalBytes
+      });
+    }
+    expandedBytes += bytes;
+    return value;
+  }
+  const manifest = decoded("manifest.json");
   const packFiles = {};
   for (const relative of Object.values(modelPackFilePaths())) {
-    packFiles[relative] = values.get(relative);
+    packFiles[relative] = decoded(relative);
   }
   const verified = verifyModelPack({ manifest, files: packFiles });
   if (values.has("bundle.json")) {
-    const bundle = verifyModelPack(values.get("bundle.json"));
+    const bundle = verifyModelPack(decoded("bundle.json"));
     if (canonicalize(bundle, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(verified, MODEL_PACK_CANONICAL_OPTIONS)) {
       modelPackTransportFail(
         "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH",
@@ -1000,12 +1383,12 @@ var HTTP_OPTION_FIELDS = /* @__PURE__ */ new Set([
 var BUNDLE_OPTION_FIELDS = /* @__PURE__ */ new Set(["maxBundleBytes"]);
 var BUNDLE_POLICIES = /* @__PURE__ */ new Set(["omit", "required"]);
 var JSON_MEDIA_TYPE = /^application\/(?:[a-z0-9!#$&^_.+-]+\+)?json$/;
-function fail3(code, message, details = {}) {
+function fail4(code, message, details = {}) {
   modelPackTransportFail(code, message, details);
 }
 function requireInteger(value, field, maximum) {
   if (!Number.isSafeInteger(value) || value < 1 || value > maximum) {
-    fail3("MODEL_PACK_BROWSER_LIMIT_INVALID", `${field} is outside the supported range.`, {
+    fail4("MODEL_PACK_BROWSER_LIMIT_INVALID", `${field} is outside the supported range.`, {
       field
     });
   }
@@ -1022,7 +1405,7 @@ function normalizeHttpOptions(value) {
   );
   const unknown = [...entries.keys()].filter((field) => !HTTP_OPTION_FIELDS.has(field)).sort();
   if (unknown.length > 0) {
-    fail3("MODEL_PACK_BROWSER_OPTIONS_INVALID", "Browser HTTP loader options contain unknown fields.", {
+    fail4("MODEL_PACK_BROWSER_OPTIONS_INVALID", "Browser HTTP loader options contain unknown fields.", {
       unknown
     });
   }
@@ -1042,21 +1425,21 @@ function normalizeHttpOptions(value) {
     1024 * 1024
   );
   if (maxFileBytes > maxTotalBytes) {
-    fail3("MODEL_PACK_BROWSER_LIMIT_INVALID", "maxFileBytes cannot exceed maxTotalBytes.");
+    fail4("MODEL_PACK_BROWSER_LIMIT_INVALID", "maxFileBytes cannot exceed maxTotalBytes.");
   }
   const bundle = optionValue(entries, "bundle", "omit");
   if (!BUNDLE_POLICIES.has(bundle)) {
-    fail3("MODEL_PACK_BROWSER_OPTIONS_INVALID", "bundle must be omit or required.", {
+    fail4("MODEL_PACK_BROWSER_OPTIONS_INVALID", "bundle must be omit or required.", {
       field: "bundle"
     });
   }
   const fetchImplementation = entries.has("fetch") ? entries.get("fetch") : typeof globalThis.fetch === "function" ? globalThis.fetch.bind(globalThis) : void 0;
   if (typeof fetchImplementation !== "function") {
-    fail3("MODEL_PACK_BROWSER_FETCH_UNAVAILABLE", "A fetch implementation is required.");
+    fail4("MODEL_PACK_BROWSER_FETCH_UNAVAILABLE", "A fetch implementation is required.");
   }
   const signal = optionValue(entries, "signal", null);
   if (signal !== null && (typeof AbortSignal !== "function" || !(signal instanceof AbortSignal))) {
-    fail3("MODEL_PACK_BROWSER_OPTIONS_INVALID", "signal must be an AbortSignal or null.", {
+    fail4("MODEL_PACK_BROWSER_OPTIONS_INVALID", "signal must be an AbortSignal or null.", {
       field: "signal"
     });
   }
@@ -1077,7 +1460,7 @@ function normalizeBundleOptions(value) {
   );
   const unknown = [...entries.keys()].filter((field) => !BUNDLE_OPTION_FIELDS.has(field)).sort();
   if (unknown.length > 0) {
-    fail3("MODEL_PACK_BROWSER_OPTIONS_INVALID", "Browser bundle loader options contain unknown fields.", {
+    fail4("MODEL_PACK_BROWSER_OPTIONS_INVALID", "Browser bundle loader options contain unknown fields.", {
       unknown
     });
   }
@@ -1091,26 +1474,26 @@ function normalizeBundleOptions(value) {
 }
 function normalizeBaseUrl(value, maxUrlLength) {
   if (typeof value === "string" && value.length > maxUrlLength) {
-    fail3("MODEL_PACK_BROWSER_URL_INVALID", "The Model Pack base URL exceeds maxUrlLength.");
+    fail4("MODEL_PACK_BROWSER_URL_INVALID", "The Model Pack base URL exceeds maxUrlLength.");
   }
   if (typeof value !== "string" && !(value instanceof URL)) {
-    fail3("MODEL_PACK_BROWSER_URL_INVALID", "baseUrl must be an absolute URL or URL string.");
+    fail4("MODEL_PACK_BROWSER_URL_INVALID", "baseUrl must be an absolute URL or URL string.");
   }
   let url;
   try {
     url = new URL(value instanceof URL ? value.href : value);
   } catch {
-    fail3("MODEL_PACK_BROWSER_URL_INVALID", "baseUrl must be an absolute URL.");
+    fail4("MODEL_PACK_BROWSER_URL_INVALID", "baseUrl must be an absolute URL.");
   }
   if (url.protocol !== "http:" && url.protocol !== "https:" || url.username !== "" || url.password !== "" || url.search !== "" || url.hash !== "") {
-    fail3(
+    fail4(
       "MODEL_PACK_BROWSER_URL_INVALID",
       "baseUrl must be an HTTP(S) URL without credentials, query, or fragment."
     );
   }
   if (!url.pathname.endsWith("/")) url.pathname = `${url.pathname}/`;
   if (url.href.length > maxUrlLength) {
-    fail3("MODEL_PACK_BROWSER_URL_INVALID", "The normalized Model Pack base URL exceeds maxUrlLength.");
+    fail4("MODEL_PACK_BROWSER_URL_INVALID", "The normalized Model Pack base URL exceeds maxUrlLength.");
   }
   return url;
 }
@@ -1128,7 +1511,7 @@ function responseFields(response, relative) {
       body: response.body
     };
   } catch {
-    fail3("MODEL_PACK_BROWSER_RESPONSE_INVALID", "fetch returned an invalid response object.", {
+    fail4("MODEL_PACK_BROWSER_RESPONSE_INVALID", "fetch returned an invalid response object.", {
       path: relative
     });
   }
@@ -1136,17 +1519,17 @@ function responseFields(response, relative) {
 function inspectResponse(response, requestedUrl, relative, limits, budget) {
   const fields = responseFields(response, relative);
   if (fields.type === "opaque") {
-    fail3("MODEL_PACK_BROWSER_RESPONSE_INVALID", "Opaque fetch responses are not accepted.", {
+    fail4("MODEL_PACK_BROWSER_RESPONSE_INVALID", "Opaque fetch responses are not accepted.", {
       path: relative
     });
   }
   if (fields.redirected === true) {
-    fail3("MODEL_PACK_BROWSER_REDIRECT_REJECTED", "Redirected Model Pack responses are not accepted.", {
+    fail4("MODEL_PACK_BROWSER_REDIRECT_REJECTED", "Redirected Model Pack responses are not accepted.", {
       path: relative
     });
   }
   if (fields.ok !== true || fields.status !== 200) {
-    fail3("MODEL_PACK_BROWSER_HTTP_FAILED", "A Model Pack HTTP request did not return status 200.", {
+    fail4("MODEL_PACK_BROWSER_HTTP_FAILED", "A Model Pack HTTP request did not return status 200.", {
       path: relative,
       status: Number.isInteger(fields.status) ? fields.status : null
     });
@@ -1156,12 +1539,12 @@ function inspectResponse(response, requestedUrl, relative, limits, budget) {
     if (typeof fields.url !== "string" || fields.url === "") throw new TypeError();
     normalizedResponseUrl = new URL(fields.url).href;
   } catch {
-    fail3("MODEL_PACK_BROWSER_RESPONSE_INVALID", "A Model Pack response URL is missing or invalid.", {
+    fail4("MODEL_PACK_BROWSER_RESPONSE_INVALID", "A Model Pack response URL is missing or invalid.", {
       path: relative
     });
   }
   if (normalizedResponseUrl !== requestedUrl.href) {
-    fail3("MODEL_PACK_BROWSER_RESPONSE_URL_MISMATCH", "A Model Pack response came from a different URL.", {
+    fail4("MODEL_PACK_BROWSER_RESPONSE_URL_MISMATCH", "A Model Pack response came from a different URL.", {
       path: relative
     });
   }
@@ -1171,42 +1554,42 @@ function inspectResponse(response, requestedUrl, relative, limits, budget) {
     contentType = fields.headers.get("content-type");
     contentLength = fields.headers.get("content-length");
   } catch {
-    fail3("MODEL_PACK_BROWSER_RESPONSE_INVALID", "Model Pack response headers cannot be read.", {
+    fail4("MODEL_PACK_BROWSER_RESPONSE_INVALID", "Model Pack response headers cannot be read.", {
       path: relative
     });
   }
   const mediaType = typeof contentType === "string" ? contentType.split(";", 1)[0].trim().toLowerCase() : "";
   if (!JSON_MEDIA_TYPE.test(mediaType)) {
-    fail3("MODEL_PACK_BROWSER_CONTENT_TYPE_INVALID", "A Model Pack response is not JSON content.", {
+    fail4("MODEL_PACK_BROWSER_CONTENT_TYPE_INVALID", "A Model Pack response is not JSON content.", {
       path: relative
     });
   }
   if (contentLength !== null) {
     if (!/^(?:0|[1-9][0-9]*)$/.test(contentLength)) {
-      fail3("MODEL_PACK_BROWSER_CONTENT_LENGTH_INVALID", "Content-Length is not a valid byte count.", {
+      fail4("MODEL_PACK_BROWSER_CONTENT_LENGTH_INVALID", "Content-Length is not a valid byte count.", {
         path: relative
       });
     }
     const declared = Number(contentLength);
     if (!Number.isSafeInteger(declared)) {
-      fail3("MODEL_PACK_BROWSER_CONTENT_LENGTH_INVALID", "Content-Length exceeds the supported range.", {
+      fail4("MODEL_PACK_BROWSER_CONTENT_LENGTH_INVALID", "Content-Length exceeds the supported range.", {
         path: relative
       });
     }
     if (declared > limits.maxFileBytes) {
-      fail3("MODEL_PACK_BROWSER_FILE_LIMIT_EXCEEDED", "A Model Pack response exceeds maxFileBytes.", {
+      fail4("MODEL_PACK_BROWSER_FILE_LIMIT_EXCEEDED", "A Model Pack response exceeds maxFileBytes.", {
         path: relative,
         maxFileBytes: limits.maxFileBytes
       });
     }
     if (budget.bytes > limits.maxTotalBytes - declared) {
-      fail3("MODEL_PACK_BROWSER_TOTAL_LIMIT_EXCEEDED", "Model Pack responses exceed maxTotalBytes.", {
+      fail4("MODEL_PACK_BROWSER_TOTAL_LIMIT_EXCEEDED", "Model Pack responses exceed maxTotalBytes.", {
         maxTotalBytes: limits.maxTotalBytes
       });
     }
   }
   if (fields.body === null || typeof fields.body?.getReader !== "function") {
-    fail3("MODEL_PACK_BROWSER_STREAM_INVALID", "A Model Pack response requires a readable byte stream.", {
+    fail4("MODEL_PACK_BROWSER_STREAM_INVALID", "A Model Pack response requires a readable byte stream.", {
       path: relative
     });
   }
@@ -1217,7 +1600,7 @@ async function readBoundedStream(stream, maximum, budget, totalMaximum, relative
   try {
     reader = stream.getReader();
   } catch {
-    fail3(`${prefix}_STREAM_INVALID`, "The source byte stream cannot be read.", {
+    fail4(`${prefix}_STREAM_INVALID`, "The source byte stream cannot be read.", {
       path: relative
     });
   }
@@ -1227,25 +1610,25 @@ async function readBoundedStream(stream, maximum, budget, totalMaximum, relative
     while (true) {
       const result = await reader.read();
       if (result === null || typeof result !== "object" || typeof result.done !== "boolean") {
-        fail3(`${prefix}_STREAM_INVALID`, "The source byte stream returned an invalid chunk.", {
+        fail4(`${prefix}_STREAM_INVALID`, "The source byte stream returned an invalid chunk.", {
           path: relative
         });
       }
       if (result.done) break;
       if (!(result.value instanceof Uint8Array)) {
-        fail3(`${prefix}_STREAM_INVALID`, "The source byte stream must yield Uint8Array chunks.", {
+        fail4(`${prefix}_STREAM_INVALID`, "The source byte stream must yield Uint8Array chunks.", {
           path: relative
         });
       }
       const chunk = result.value;
       if (total > maximum - chunk.byteLength) {
-        fail3(`${prefix}_LIMIT_EXCEEDED`, "The source byte stream exceeds its byte limit.", {
+        fail4(`${prefix}_LIMIT_EXCEEDED`, "The source byte stream exceeds its byte limit.", {
           path: relative,
           maximum
         });
       }
       if (budget.bytes + total > totalMaximum - chunk.byteLength) {
-        fail3("MODEL_PACK_BROWSER_TOTAL_LIMIT_EXCEEDED", "Model Pack responses exceed maxTotalBytes.", {
+        fail4("MODEL_PACK_BROWSER_TOTAL_LIMIT_EXCEEDED", "Model Pack responses exceed maxTotalBytes.", {
           maxTotalBytes: totalMaximum
         });
       }
@@ -1259,7 +1642,7 @@ async function readBoundedStream(stream, maximum, budget, totalMaximum, relative
     } catch {
     }
     if (error instanceof ModelPackError) throw error;
-    fail3(`${prefix}_STREAM_FAILED`, "The source byte stream failed while being read.", {
+    fail4(`${prefix}_STREAM_FAILED`, "The source byte stream failed while being read.", {
       path: relative,
       cause: error instanceof Error ? error.name : typeof error
     });
@@ -1283,14 +1666,14 @@ function parseJson(bytes, relative, prefix = "MODEL_PACK_BROWSER") {
   try {
     text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
   } catch {
-    fail3(`${prefix}_UTF8_INVALID`, "Model Pack bytes are not valid UTF-8.", {
+    fail4(`${prefix}_UTF8_INVALID`, "Model Pack bytes are not valid UTF-8.", {
       path: relative
     });
   }
   try {
     return JSON.parse(text);
   } catch {
-    fail3(`${prefix}_JSON_INVALID`, "Model Pack bytes are not valid JSON.", {
+    fail4(`${prefix}_JSON_INVALID`, "Model Pack bytes are not valid JSON.", {
       path: relative
     });
   }
@@ -1308,7 +1691,7 @@ async function fetchJson(fetchImplementation, requestedUrl, relative, options, b
   try {
     response = await fetchImplementation(requestedUrl.href, request);
   } catch (error) {
-    fail3("MODEL_PACK_BROWSER_FETCH_FAILED", "A Model Pack HTTP request failed.", {
+    fail4("MODEL_PACK_BROWSER_FETCH_FAILED", "A Model Pack HTTP request failed.", {
       path: relative,
       cause: error instanceof Error ? error.name : typeof error
     });
@@ -1333,7 +1716,7 @@ async function loadModelPackHttpDirectory(baseUrl, options = {}) {
   for (const relative of paths) {
     const requestedUrl = new URL(relative, base);
     if (requestedUrl.origin !== base.origin || !requestedUrl.href.startsWith(base.href) || requestedUrl.href.length > normalized.maxUrlLength) {
-      fail3("MODEL_PACK_BROWSER_URL_INVALID", "A Model Pack entry URL escapes the bounded base URL.", {
+      fail4("MODEL_PACK_BROWSER_URL_INVALID", "A Model Pack entry URL escapes the bounded base URL.", {
         path: relative
       });
     }
@@ -1346,10 +1729,10 @@ async function loadModelPackHttpDirectory(baseUrl, options = {}) {
     ));
   }
   try {
-    return verifyTransportFiles(values);
+    return verifyTransportFiles(values, { maxTotalBytes: normalized.maxTotalBytes });
   } catch (error) {
     if (error instanceof ModelPackError && error.code === "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH") {
-      fail3("MODEL_PACK_BROWSER_BUNDLE_MISMATCH", error.message);
+      fail4("MODEL_PACK_BROWSER_BUNDLE_MISMATCH", error.message);
     }
     throw error;
   }
@@ -1363,14 +1746,14 @@ function byteView(source, maximum) {
     }
     if (view === null) return null;
     if (view.byteLength > maximum) {
-      fail3("MODEL_PACK_BROWSER_BUNDLE_LIMIT_EXCEEDED", "The bundle exceeds maxBundleBytes.", {
+      fail4("MODEL_PACK_BROWSER_BUNDLE_LIMIT_EXCEEDED", "The bundle exceeds maxBundleBytes.", {
         maxBundleBytes: maximum
       });
     }
     return view.slice();
   } catch (error) {
     if (error instanceof ModelPackError) throw error;
-    fail3("MODEL_PACK_BROWSER_BUNDLE_SOURCE_INVALID", "The bundle byte source is detached or invalid.");
+    fail4("MODEL_PACK_BROWSER_BUNDLE_SOURCE_INVALID", "The bundle byte source is detached or invalid.");
   }
 }
 async function loadModelPackBundle(source, options = {}) {
@@ -1378,13 +1761,13 @@ async function loadModelPackBundle(source, options = {}) {
   let bytes = byteView(source, normalized.maxBundleBytes);
   if (bytes === null) {
     if (typeof Blob === "undefined" || !(source instanceof Blob)) {
-      fail3(
+      fail4(
         "MODEL_PACK_BROWSER_BUNDLE_SOURCE_INVALID",
         "source must be a Blob, ArrayBuffer, or ArrayBuffer view."
       );
     }
     if (!Number.isSafeInteger(source.size) || source.size > normalized.maxBundleBytes) {
-      fail3("MODEL_PACK_BROWSER_BUNDLE_LIMIT_EXCEEDED", "The bundle exceeds maxBundleBytes.", {
+      fail4("MODEL_PACK_BROWSER_BUNDLE_LIMIT_EXCEEDED", "The bundle exceeds maxBundleBytes.", {
         maxBundleBytes: normalized.maxBundleBytes
       });
     }
@@ -1393,7 +1776,7 @@ async function loadModelPackBundle(source, options = {}) {
     try {
       stream = source.stream();
     } catch {
-      fail3("MODEL_PACK_BROWSER_BUNDLE_SOURCE_INVALID", "The Blob source cannot provide a byte stream.");
+      fail4("MODEL_PACK_BROWSER_BUNDLE_SOURCE_INVALID", "The Blob source cannot provide a byte stream.");
     }
     bytes = await readBoundedStream(
       stream,
@@ -1404,7 +1787,8 @@ async function loadModelPackBundle(source, options = {}) {
       "MODEL_PACK_BROWSER_BUNDLE"
     );
   }
-  return verifyModelPack(parseJson(bytes, "bundle.json", "MODEL_PACK_BROWSER_BUNDLE"));
+  const value = parseJson(bytes, "bundle.json", "MODEL_PACK_BROWSER_BUNDLE");
+  return verifyModelPack(isJsonValueTable(value) ? decodeJsonValueTable(value, { maxBytes: normalized.maxBundleBytes }) : value);
 }
 
 // packages/model-pack/src/worker.js
@@ -1437,7 +1821,7 @@ var CANCEL_FIELDS = /* @__PURE__ */ new Set(["protocol", "version", "kind", "id"
 var REQUEST_ID_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._:-]*$/;
 var ERROR_CODE_PATTERN = /^[A-Z][A-Z0-9_]*$/;
 var BUNDLE_POLICIES2 = /* @__PURE__ */ new Set(["omit", "required"]);
-function fail4(code, message, details = {}) {
+function fail5(code, message, details = {}) {
   throw new ModelPackError(code, message, details);
 }
 function exactEntries(value, fields, code, subject) {
@@ -1445,7 +1829,7 @@ function exactEntries(value, fields, code, subject) {
   const unknown = [...entries.keys()].filter((field) => !fields.has(field)).sort();
   const missing = [...fields].filter((field) => !entries.has(field)).sort();
   if (unknown.length > 0 || missing.length > 0) {
-    fail4(code, `${subject} has an invalid field set.`, { missing, unknown });
+    fail5(code, `${subject} has an invalid field set.`, { missing, unknown });
   }
   return entries;
 }
@@ -1457,7 +1841,7 @@ function optionEntries(value, fields, subject) {
   );
   const unknown = [...entries.keys()].filter((field) => !fields.has(field)).sort();
   if (unknown.length > 0) {
-    fail4("MODEL_PACK_WORKER_OPTIONS_INVALID", `${subject} contains unknown fields.`, {
+    fail5("MODEL_PACK_WORKER_OPTIONS_INVALID", `${subject} contains unknown fields.`, {
       unknown
     });
   }
@@ -1468,7 +1852,7 @@ function optionValue2(entries, field, fallback) {
 }
 function requireInteger2(value, field, maximum) {
   if (!Number.isSafeInteger(value) || value < 1 || value > maximum) {
-    fail4("MODEL_PACK_WORKER_LIMIT_INVALID", `${field} is outside the worker protocol limit.`, {
+    fail5("MODEL_PACK_WORKER_LIMIT_INVALID", `${field} is outside the worker protocol limit.`, {
       field,
       maximum
     });
@@ -1477,7 +1861,7 @@ function requireInteger2(value, field, maximum) {
 }
 function requireRequestId(value, field = "id") {
   if (typeof value !== "string" || value.length < 1 || value.length > MODEL_PACK_WORKER_LIMITS.maxRequestIdLength || !REQUEST_ID_PATTERN.test(value)) {
-    fail4("MODEL_PACK_WORKER_REQUEST_ID_INVALID", `${field} is not a bounded protocol identifier.`, {
+    fail5("MODEL_PACK_WORKER_REQUEST_ID_INVALID", `${field} is not a bounded protocol identifier.`, {
       field
     });
   }
@@ -1487,7 +1871,7 @@ function normalizeEndpointOptions(value) {
   const entries = optionEntries(value, ENDPOINT_OPTION_FIELDS, "Worker endpoint options");
   const fetchImplementation = entries.has("fetch") ? entries.get("fetch") : void 0;
   if (fetchImplementation !== void 0 && typeof fetchImplementation !== "function") {
-    fail4("MODEL_PACK_WORKER_OPTIONS_INVALID", "fetch must be a function when supplied.", {
+    fail5("MODEL_PACK_WORKER_OPTIONS_INVALID", "fetch must be a function when supplied.", {
       field: "fetch"
     });
   }
@@ -1504,7 +1888,7 @@ function normalizeHttpWireOptions(value) {
   const entries = optionEntries(value, HTTP_WIRE_OPTION_FIELDS, "Worker HTTP request options");
   const bundle = optionValue2(entries, "bundle", "omit");
   if (!BUNDLE_POLICIES2.has(bundle)) {
-    fail4("MODEL_PACK_WORKER_OPTIONS_INVALID", "bundle must be omit or required.", {
+    fail5("MODEL_PACK_WORKER_OPTIONS_INVALID", "bundle must be omit or required.", {
       field: "bundle"
     });
   }
@@ -1519,7 +1903,7 @@ function normalizeHttpWireOptions(value) {
     MODEL_PACK_WORKER_LIMITS.maxTotalBytes
   );
   if (maxFileBytes > maxTotalBytes) {
-    fail4("MODEL_PACK_WORKER_LIMIT_INVALID", "maxFileBytes cannot exceed maxTotalBytes.");
+    fail5("MODEL_PACK_WORKER_LIMIT_INVALID", "maxFileBytes cannot exceed maxTotalBytes.");
   }
   return Object.freeze({
     bundle,
@@ -1548,7 +1932,7 @@ function validateEndpointScope(scope) {
       throw new TypeError();
     }
   } catch {
-    fail4("MODEL_PACK_WORKER_PORT_INVALID", "scope must implement the worker-global message surface.");
+    fail5("MODEL_PACK_WORKER_PORT_INVALID", "scope must implement the worker-global message surface.");
   }
   return scope;
 }
@@ -1622,11 +2006,11 @@ function readEndpointMessage(value) {
     "Worker request message"
   );
   if (entries.get("kind") !== "request") {
-    fail4("MODEL_PACK_WORKER_PROTOCOL_INVALID", "The worker message kind is invalid.");
+    fail5("MODEL_PACK_WORKER_PROTOCOL_INVALID", "The worker message kind is invalid.");
   }
   const operation = entries.get("operation");
   if (operation !== "load-http-directory" && operation !== "load-bundle") {
-    fail4("MODEL_PACK_WORKER_OPERATION_UNSUPPORTED", "The worker operation is unsupported.");
+    fail5("MODEL_PACK_WORKER_OPERATION_UNSUPPORTED", "The worker operation is unsupported.");
   }
   return Object.freeze({
     kind: "request",
@@ -1642,7 +2026,7 @@ function requireProtocolIdentity(value) {
     "Worker protocol message"
   );
   if (entries.get("protocol") !== MODEL_PACK_WORKER_PROTOCOL.name || entries.get("version") !== MODEL_PACK_WORKER_PROTOCOL.version) {
-    fail4("MODEL_PACK_WORKER_VERSION_UNSUPPORTED", "The worker protocol identity is unsupported.");
+    fail5("MODEL_PACK_WORKER_VERSION_UNSUPPORTED", "The worker protocol identity is unsupported.");
   }
 }
 async function executeEndpointRequest(request, options, signal) {
@@ -1654,7 +2038,7 @@ async function executeEndpointRequest(request, options, signal) {
       "Worker HTTP input"
     );
     if (typeof entries2.get("baseUrl") !== "string") {
-      fail4("MODEL_PACK_WORKER_PROTOCOL_INVALID", "Worker HTTP baseUrl must be a string.");
+      fail5("MODEL_PACK_WORKER_PROTOCOL_INVALID", "Worker HTTP baseUrl must be a string.");
     }
     const wire2 = normalizeHttpWireOptions(entries2.get("options"));
     return loadModelPackHttpDirectory(entries2.get("baseUrl"), {
@@ -1671,11 +2055,11 @@ async function executeEndpointRequest(request, options, signal) {
   );
   const wire = normalizeBundleWireOptions(entries.get("options"));
   if (signal.aborted) {
-    fail4("MODEL_PACK_WORKER_ABORTED", "The Model Pack worker request was aborted.");
+    fail5("MODEL_PACK_WORKER_ABORTED", "The Model Pack worker request was aborted.");
   }
   const pack = await loadModelPackBundle(entries.get("source"), wire);
   if (signal.aborted) {
-    fail4("MODEL_PACK_WORKER_ABORTED", "The Model Pack worker request was aborted.");
+    fail5("MODEL_PACK_WORKER_ABORTED", "The Model Pack worker request was aborted.");
   }
   return pack;
 }

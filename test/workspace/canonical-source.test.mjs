@@ -42,10 +42,10 @@ test("joint rules require distinct multiplicities and cannot assert successful p
 
 test("the current output contains evidence and no graph migration history", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1478, edgeCount: 1462 });
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1705, edgeCount: 1704 });
   const dictionaries = pack.files["model/dictionaries.json"];
-  assert.equal(dictionaries.claims.length, 1653);
-  assert.equal(dictionaries.sources.length, 468);
+  assert.equal(dictionaries.claims.length, 1921);
+  assert.equal(dictionaries.sources.length, 501);
   const census = dictionaries.evidence.neurogenesisData;
   assert.equal(census.sampleCount, 39);
   assert.equal(census.retainedNuclei, 153530);
@@ -65,8 +65,30 @@ test("the current output contains evidence and no graph migration history", asyn
   const edges = new Map(pack.files["model/edges.json"].map((edge) => [edge.id, edge]));
   const claims = new Map(dictionaries.claims.map((claim) => [claim.id, claim]));
   const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
-  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics"]
+  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry"]
     .flatMap((key) => dictionaries[key].studies).map((study) => [study.id, study]));
+  assert.deepEqual(dictionaries.interactions.cases, data.graph.interactionCases);
+  assert.deepEqual(dictionaries.interactions.analogies, data.graph.interactionAnalogies);
+  const nodes = new Map(pack.files["model/nodes.json"].map((node) => [node.id, node]));
+  for (const record of data.graph.interactionCases) {
+    const detail = nodes.get(record.anchorEntityId).interactionCases.find((item) => item.id === record.id);
+    const { claims: selectedClaims, sources: selectedSources, studies: selectedStudies, ...passport } = detail;
+    assert.deepEqual(passport, record, "Inspected anchors retain every field, property, observation and unknown");
+    assert.deepEqual(selectedClaims, record.claimIds.map((id) => claims.get(id)),
+      "Case-local claims retain every citation and limitation");
+    assert.deepEqual(selectedSources.map((source) => source.id).sort(), [...record.sourceIds].sort());
+    for (const source of selectedSources) assert.deepEqual(source, sources.get(source.id),
+      "Selected records include complete publication metadata and reading boundaries");
+    assert.deepEqual(selectedStudies, record.studyIds.map((id) => studies.get(id)),
+      "Preparation records survive without conflating separate assays");
+    for (const id of record.entityIds) {
+      const member = nodes.get(id);
+      assert.ok(member.interactionCaseRefs.some((reference) => reference.id === record.id
+        && reference.anchorEntityId === record.anchorEntityId), "Every member resolves its case anchor");
+      if (id !== record.anchorEntityId) assert.ok(!member.interactionCases?.some((item) => item.id === record.id),
+        "Full case evidence is retained once on its anchor");
+    }
+  }
   for (const { kind, ...relation } of data.graph.relations) {
     const edge = edges.get(relation.id);
     assert.deepEqual(edge, { ...relation, relationLayer: kind }, "All relation fields survive normalization");

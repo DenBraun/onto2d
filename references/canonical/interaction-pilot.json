@@ -1,0 +1,857 @@
+{
+  "schemaVersion": 1,
+  "id": "canonical-interaction-pilot",
+  "date": "2026-10-20",
+  "question": "Under which declared conditions do interactions select an organizational regime, maintain a specified property, or change a measured operation, and where do these proposed correspondences fail?",
+  "scope": {
+    "kind": "retrospective-literature-comparison",
+    "caseSelection": "purposive-contrast-sample",
+    "physicalInstancesAdmitted": false,
+    "independentScientificReviewComplete": false,
+    "prospectiveValidation": "not-performed",
+    "universalLawClaimed": false
+  },
+  "sourceGroups": [
+    {
+      "id": "group:bernard2011-hard-disks",
+      "sourceIds": [
+        "bernard2011-hard-disks"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:shechtman1984-icosahedral",
+      "sourceIds": [
+        "shechtman1984-icosahedral"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:schreiner2008-hcoh-tunneling",
+      "sourceIds": [
+        "schreiner2008-hcoh-tunneling",
+        "schreiner2008-hcoh-supplement"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:crocker1994-colloid-pair",
+      "sourceIds": [
+        "crocker1994-colloid-pair"
+      ],
+      "split": "challenge",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:gasser2001-colloid-nucleation",
+      "sourceIds": [
+        "gasser2001-colloid-nucleation"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:fichtner2019-alscn-ferroelectric",
+      "sourceIds": [
+        "fichtner2019-alscn-ferroelectric"
+      ],
+      "split": "challenge",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:tuinstra2008-lymphotactin-folds",
+      "sourceIds": [
+        "tuinstra2008-lymphotactin-folds"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:sohl1998-alp-kinetic-stability",
+      "sourceIds": [
+        "sohl1998-alp-kinetic-stability"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:popovych2006-capn-allostery",
+      "sourceIds": [
+        "popovych2006-capn-allostery"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:zhao2016-dna-nanocaged-enzymes",
+      "sourceIds": [
+        "zhao2016-dna-nanocaged-enzymes"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:nott2015-ddx4-demixing",
+      "sourceIds": [
+        "nott2015-ddx4-demixing"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:schwander2016-cetch-cycle",
+      "sourceIds": [
+        "schwander2016-cetch-cycle"
+      ],
+      "split": "challenge",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:lincoln2009-cross-catalytic-rna",
+      "sourceIds": [
+        "lincoln2009-cross-catalytic-rna"
+      ],
+      "split": "development",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    },
+    {
+      "id": "group:mansy2008-model-protocell",
+      "sourceIds": [
+        "mansy2008-model-protocell"
+      ],
+      "split": "challenge",
+      "dependenceNote": "All selected preparations, observations, fitted or computational interpretations, main/supplement passages and versions from this publication remain one dependency group. They are not independent replications; cross-publication dependence still requires scientific review."
+    }
+  ],
+  "families": [
+    {
+      "id": "regime-selection",
+      "title": "Conditions and organizational regimes",
+      "eligibility": "A declared intervention or computational scan changes a specified condition and reports a discriminating structural/order observable. Keep model ensembles separate from physical preparations; distinguish jointly changed conditions from an isolated causal intervention.",
+      "scopedPrediction": "Within the specified comparison, the reported condition change selects distinguishable states under the stated organizational observable. This is a case-specific retrospective prediction; it assigns no universal threshold and predicts no unmeasured dynamics.",
+      "supportCriteria": [
+        {
+          "id": "regime-observed",
+          "text": "The source reports distinct organizational readouts under the declared conditions, with preparation and observation/model boundaries retained."
+        }
+      ],
+      "contraryCriteria": [
+        {
+          "id": "regime-unchanged",
+          "text": "Within an eligible matched test, the specified discriminator remains unchanged across the claimed switching range at the declared resolution. Such a result challenges that bounded prediction, not all possible condition dependence."
+        }
+      ],
+      "inconclusiveCriteria": [
+        {
+          "id": "regime-unisolated",
+          "text": "Readouts are absent, conditions/constructs change together, or a model-assisted classification does not isolate the proposed physical switching mechanism."
+        }
+      ],
+      "overextension": "A component list uniquely fixes organization, every environmental change induces a transition, or a phase label alone supplies physical kinetics."
+    },
+    {
+      "id": "persistence",
+      "title": "Persistence through barriers, exchange constraints and supplied resources",
+      "eligibility": "Specify what persists or recovers, its preparation, a perturbation/comparator if available, and a finite observation window. Separate measured durations, fitted/extrapolated rates and computational clocks. Barrier, exchange and replenishment hypotheses are different mechanisms.",
+      "scopedPrediction": "A specified target remains detectable or recurrently operational over the reported finite horizon under the stated boundary/resource conditions; loss or altered persistence in a relevant comparison constrains its maintenance requirements. Mechanism identification requires additional controls.",
+      "supportCriteria": [
+        {
+          "id": "persistence-bounded",
+          "text": "The source establishes finite retention, limited conversion, recovery or repeated operation under declared conditions, without converting non-detection or extrapolation into indefinite stability."
+        },
+        {
+          "id": "persistence-inferred-kinetics",
+          "text": "Data-dependent rate fits/extrapolations support a preparation-conditional kinetic persistence account with the measured input, model and uncertainty retained. This is evidence about inferred kinetics; no direct observation of the extrapolated lifetime is claimed."
+        }
+      ],
+      "contraryCriteria": [
+        {
+          "id": "persistence-loss",
+          "text": "An actually reported loss, stall or depletion contradicts the overextension from topology, structural order or individually working steps to unconditional persistent operation. Do not label missing measurements as observed loss."
+        }
+      ],
+      "inconclusiveCriteria": [
+        {
+          "id": "persistence-mechanism-unresolved",
+          "text": "Persistence horizon is unmeasured, the relevant control is missing, a lifetime is extrapolated, or the evidence does not isolate a claimed barrier, exchange or replenishment mechanism."
+        }
+      ],
+      "overextension": "A cycle is autonomous, every ordered structure persists indefinitely, a fitted extrapolation is an observed lifetime, or all persistence mechanisms share one numerical stability measure."
+    },
+    {
+      "id": "organization-operation",
+      "title": "Organization-associated changes in operation",
+      "eligibility": "Require a declared functional/response observable and a comparator. State the anticipated direction or qualitative discriminator for each case; preserve active fractions, preparation differences and possible common-environment explanations.",
+      "scopedPrediction": "In the selected matched comparison, the declared state/arrangement change is associated with its specified response difference (including sign reversal or suppression). Spatial proximity alone cannot identify a mechanism or predict improvement.",
+      "supportCriteria": [
+        {
+          "id": "operation-compared",
+          "text": "An actual comparison reports the named response difference under stated controls. This supports only that scoped response relation, not a unique pathway or universal benefit."
+        }
+      ],
+      "contraryCriteria": [
+        {
+          "id": "operation-no-universal-gain",
+          "text": "A measured suppressive, null or sign-changing response challenges a universal monotonic-gain extension. Do not treat a missing functional assay as a measured null."
+        },
+        {
+          "id": "operation-composition-failure",
+          "text": "The source reports successful individual transformations but incomplete operation when combined, challenging guaranteed composition of working steps. Keep the preparation and actual extent of failure/control review explicit."
+        }
+      ],
+      "inconclusiveCriteria": [
+        {
+          "id": "operation-unmeasured",
+          "text": "Only structure, partition, mobility or pair interaction is measured; the proposed functional benefit or assembly operation is not measured."
+        },
+        {
+          "id": "operation-mechanism-unresolved",
+          "text": "A response difference exists but alternative controls, unmatched active populations or multiple changed conditions prevent attribution to the proposed isolated mechanism."
+        },
+        {
+          "id": "operation-comparator-missing",
+          "text": "A functional outcome is measured, but no matched organizational comparator identifies an organization-specific change or benefit. Observed operation alone is insufficient for this candidate."
+        }
+      ],
+      "overextension": "More organization necessarily improves operation, co-localization proves substrate channeling, or partition alone demonstrates catalytic benefit."
+    }
+  ],
+  "cases": [
+    {
+      "id": "pilot:hard-disk-regimes",
+      "sourceGroupId": "group:bernard2011-hard-disks",
+      "assessments": [
+        {
+          "familyId": "regime-selection",
+          "criterionId": "regime-observed",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o1",
+            "o2",
+            "o3"
+          ],
+          "rationale": "A specified density range changes the source model organization diagnosed by declared observables; this supports a scoped computational example rather than a universal phase law."
+        }
+      ]
+    },
+    {
+      "id": "pilot:almn-anneal-persistence",
+      "sourceGroupId": "group:shechtman1984-icosahedral",
+      "assessments": [
+        {
+          "familyId": "regime-selection",
+          "criterionId": "regime-observed",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o2",
+            "o3"
+          ],
+          "rationale": "Declared thermal protocols have different observed structural outcomes; the comparison does not identify an exact equilibrium threshold."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-bounded",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o2",
+            "o3"
+          ],
+          "rationale": "Persistence is bounded by stated preparation, treatment and detection windows; another treatment yields conversion."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "o4",
+            "o5"
+          ],
+          "rationale": "Protocol-dependent metastability does not quantify the microscopic barrier or a kinetic law."
+        }
+      ]
+    },
+    {
+      "id": "pilot:hydroxymethylene-dark-kinetics",
+      "sourceGroupId": "group:schreiner2008-hcoh-tunneling",
+      "assessments": [
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-inferred-kinetics",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o1",
+            "o5"
+          ],
+          "rationale": "Measured H band loss and its source first-order fits support preparation-specific finite kinetic estimates. Deuterated non-decay is excluded from this positive assessment because its observation horizon is unspecified."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "rationale": "The D observation horizon is unspecified, so no numerical lower lifetime bound follows. The separate reduced WKB interpretation does not establish full-dimensional, matrix-specific dynamics reproducing all host effects."
+        }
+      ]
+    },
+    {
+      "id": "pilot:colloid-pair-null-attraction",
+      "sourceGroupId": "group:crocker1994-colloid-pair",
+      "assessments": [
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-mechanism-unresolved",
+          "verdict": "outside-scope",
+          "observationIds": [
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "rationale": "This challenge case supplies an inferred repulsive interaction and finite null-attraction result. It does not observe a persistent assembly, so it cannot be counted as positive persistence support or universal failure of assembly."
+        }
+      ]
+    },
+    {
+      "id": "pilot:colloid-nuclei-growth-shrink",
+      "sourceGroupId": "group:gasser2001-colloid-nucleation",
+      "assessments": [
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-loss",
+          "verdict": "contradicts-overextension",
+          "observationIds": [
+            "o1"
+          ],
+          "rationale": "Some classifier-defined ordered nuclei shrink under the stated preparation. This contradicts the overextension that formation of an ordered cluster guarantees its continued persistence; it does not deny larger-nucleus growth."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "o3",
+            "o4"
+          ],
+          "rationale": "The surface/volume framework and interface inference are conditional on shape, classifier and statistical assumptions; they do not independently measure a universal kinetic barrier."
+        }
+      ]
+    },
+    {
+      "id": "pilot:alscn-switching-response",
+      "sourceGroupId": "group:fichtner2019-alscn-ferroelectric",
+      "assessments": [
+        {
+          "familyId": "regime-selection",
+          "criterionId": "regime-observed",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o1",
+            "o3"
+          ],
+          "rationale": "The declared field preparation selects distinguishable film states with polarity-sensitive readouts, within the finite source interpretation."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-bounded",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o2"
+          ],
+          "rationale": "The short-circuit pulse-retention preparation supplies a finite no-resolved-back-switching result rather than an indefinite lifetime."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-compared",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "o1"
+          ],
+          "rationale": "The direct transverse response is compared before/after reversal under declared loading and axis conventions and changes sign; this is neither a universal gain claim nor a quantitative bulk coefficient."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "o3",
+            "o4"
+          ],
+          "rationale": "Multiple controls support state classification, but the complete atomistic causal pathway is not measured by these readouts."
+        }
+      ]
+    },
+    {
+      "id": "pilot:lymphotactin-conditional-folds",
+      "sourceGroupId": "group:tuinstra2008-lymphotactin-folds",
+      "assessments": [
+        {
+          "familyId": "regime-selection",
+          "criterionId": "regime-observed",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "ltn-populations",
+            "ltn-fold-assignment"
+          ],
+          "rationale": "Solution conditions alter the source-assigned structural population; this is a finite protein example."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-compared",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "ltn-variant-response",
+            "ltn-heparin-response"
+          ],
+          "rationale": "Specified preparation/ligand comparisons have measured responses; evidence is bounded by construct and downstream-assay conditions."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "ltn-pure-fold-causation"
+          ],
+          "rationale": "Sequence, conformation and solution effects are not individually isolated; no universal structure-to-function rule follows."
+        }
+      ]
+    },
+    {
+      "id": "pilot:alpha-lytic-protease-conditional-metastability",
+      "sourceGroupId": "group:sohl1998-alp-kinetic-stability",
+      "assessments": [
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-inferred-kinetics",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "alp-fitted-rates",
+            "alp-metastability"
+          ],
+          "rationale": "Source-fitted rates support conditional kinetic persistence with explicit extrapolation/model limits; no centuries-long observation is claimed."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "alp-metastability"
+          ],
+          "rationale": "This source supports a conditional barrier account, but does not uniquely resolve all microscopic contributions or remove variant/model assumptions."
+        }
+      ]
+    },
+    {
+      "id": "pilot:capn-negative-cooperativity-distal-response",
+      "sourceGroupId": "group:popovych2006-capn-allostery",
+      "assessments": [
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-compared",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "capn-ligation-signals",
+            "capn-binding-fit"
+          ],
+          "rationale": "The same source construct has ligand-dependent binding and distal dynamic responses; operation here is molecular response, not catalytic performance."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-no-universal-gain",
+          "verdict": "contradicts-overextension",
+          "observationIds": [
+            "capn-binding-fit"
+          ],
+          "rationale": "The source second binding step is less favorable, providing a scoped counterexample to an assumed universally improving cooperative response."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "capn-unique-pathway"
+          ],
+          "rationale": "A response is measured, while the specific microscopic communication mechanism remains underdetermined."
+        }
+      ]
+    },
+    {
+      "id": "pilot:gox-hrp-nanocage-controls",
+      "sourceGroupId": "group:zhao2016-dna-nanocaged-enzymes",
+      "assessments": [
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-compared",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "cage-comparison",
+            "cage-signal"
+          ],
+          "rationale": "A specified preparation comparison has a measured finite coupled-signal difference; no isolated single-enzyme turnover or universal enhancement follows."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "cage-channeling"
+          ],
+          "rationale": "Control responses leave several preparation/environment mechanisms compatible with the signal."
+        }
+      ]
+    },
+    {
+      "id": "pilot:ddx4-demixing-partition-function-unknown",
+      "sourceGroupId": "group:nott2015-ddx4-demixing",
+      "assessments": [
+        {
+          "familyId": "regime-selection",
+          "criterionId": "regime-observed",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "ddx4-thermal"
+          ],
+          "rationale": "An imposed condition series changes the observed dense/dilute organization in this preparation; hysteresis limits equilibrium claims."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-unmeasured",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "ddx4-function"
+          ],
+          "rationale": "Spatial partition and tracer mobility are not a measured catalytic benefit. Unmeasured outcome is not a negative effect."
+        }
+      ]
+    },
+    {
+      "id": "pilot:cetch-composition-failure-and-finite-operation",
+      "sourceGroupId": "group:schwander2016-cetch-cycle",
+      "assessments": [
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-composition-failure",
+          "verdict": "contradicts-overextension",
+          "observationIds": [
+            "cetch10-stepwise",
+            "cetch10-combined-stall"
+          ],
+          "rationale": "The separately recorded main-text-only stepwise and combined preparations report different completion outcomes. Their full supplementary traces and controls remain unreviewed; no single redesign cause is established."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-mechanism-unresolved",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "cetch-unique-redesign-cause"
+          ],
+          "rationale": "Redesign effects are not single-variable controlled and underlying failure controls remain outside review."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-bounded",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "cetch-label-product",
+            "cetch-recurrence"
+          ],
+          "rationale": "Only externally resourced finite 90-minute operation is supported; no unbounded persistence or catalyst replacement."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-comparator-missing",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "cetch-label-product",
+            "cetch-recurrence"
+          ],
+          "rationale": "CETCH 5.4 operation is measured, but multiple changes across versions and the unread supplementary controls do not provide a matched isolation of organization as the cause of a response difference."
+        }
+      ]
+    },
+    {
+      "id": "pilot:reciprocal-rna-ligation-resource-dependent-amplification",
+      "sourceGroupId": "group:lincoln2009-cross-catalytic-rna",
+      "assessments": [
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-bounded",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "rna-depletion-transfer"
+          ],
+          "rationale": "Observed 30-hour operation is explicitly conditional on prepared activated fragments and external replenishment."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-comparator-missing",
+          "verdict": "inconclusive",
+          "observationIds": [
+            "rna-reciprocal-ligation",
+            "rna-depletion-transfer"
+          ],
+          "rationale": "Reciprocal ligation and supplied finite amplification are observed, but this selection does not retain a matched topology/organization comparator. Successful operation alone does not isolate an organization-specific benefit."
+        },
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-loss",
+          "verdict": "contradicts-overextension",
+          "observationIds": [
+            "rna-depletion-transfer"
+          ],
+          "rationale": "Actual batch growth levels off as substrates deplete, challenging the extension from reciprocal topology to resource-independent persistent amplification."
+        }
+      ]
+    },
+    {
+      "id": "pilot:vesicle-selective-exchange-retention-compatible-extension",
+      "sourceGroupId": "group:mansy2008-model-protocell",
+      "assessments": [
+        {
+          "familyId": "persistence",
+          "criterionId": "persistence-bounded",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "vesicle-retention",
+            "vesicle-nucleotide"
+          ],
+          "rationale": "Finite cargo retention and condition-dependent exchange are supported with explicit measurement/detection bounds."
+        },
+        {
+          "familyId": "organization-operation",
+          "criterionId": "operation-compared",
+          "verdict": "supports-scoped-instance",
+          "observationIds": [
+            "vesicle-extension"
+          ],
+          "rationale": "A specified membrane-composition comparison gives a measured fed-extension contrast; this is a finite assay-specific operation."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "retrospectiveExposure": "All selected publications and reported outcomes were available during source review and informed this purposive selection and protocol. No case in this pilot is a genuinely unseen prospective test. Case annotations are literature interpretations, not independent acquisition or numerical replay.",
+    "splitRationale": "Keep each primary publication and its preparation/readout/model records in one dependency group. Use AlScN switching, the isolated colloid-pair null, all CETCH versions and all selected Mansy vesicle preparations as retrospective challenge groups; the other ten publication groups develop the comparisons. Group disjointness is a leakage check, not proof that different publications have no shared assumptions or that the selection is representative.",
+    "independentReview": "not-performed",
+    "prospectiveEvaluation": "not-performed",
+    "currentConclusion": "The selected cases support several bounded distinctions rather than one universal organization law. Conditions discriminate organizational regimes in particular models/preparations; retention, kinetic resistance and supplied recurrent operation have different evidential requirements; state or arrangement changes can alter measured response without demonstrating a universal efficiency gain.\n\nContrary and unresolved cases are central results: CETCH 1.0 does not compose from working steps into a complete recurrent turn; batch RNA amplification depletes supplied substrates; negative CAPN cooperativity limits a universal amplification interpretation; isolated colloid data do not establish long-range attraction; Ddx4 partition does not measure catalytic benefit; and cage controls do not uniquely identify substrate channeling. These distinctions motivate conditional compatibility and maintenance hypotheses, not a new physical ancestry chain.\n\nRetrospective challenge cases expose limits of transfer: AlScN supplies a state-associated response sign change in a specific film preparation; CETCH contrasts designed topology with supplied finite operation and a reported earlier stall; vesicles separate exchange, retention and primer-extension assays; and the colloid-pair null prevents treating every interaction measurement as assembly evidence. No common numerical threshold, causal/emergence score, prospective generalization result or independently reviewed scientific conclusion follows.\n\nSeparate new-source readings of Banerjee2017, Boekhoven2015 and Drobot2018 test the operational distinctions outside the selected atlas publications. These checks retain the case-specific readout, comparator and limitations; their result-bearing titles/search exposure and retrospective target selection prevent a blind prospective validation claim. Full review records remain outside canonical physical-claim admission."
+  },
+  "transferChecks": [
+    {
+      "id": "transfer:regime-selection-banerjee2017",
+      "familyId": "regime-selection",
+      "developmentCaseIds": [
+        "pilot:ddx4-demixing-partition-function-unknown",
+        "pilot:lymphotactin-conditional-folds",
+        "pilot:hard-disk-regimes"
+      ],
+      "source": {
+        "id": "banerjee2017-rnp-reentrant-phase",
+        "title": "Reentrant Phase Transition Drives Dynamic Substructure Formation in Ribonucleoprotein Droplets",
+        "authors": [
+          "Priya R. Banerjee",
+          "Anthony N. Milin",
+          "Mahdi Muhammad Moosa",
+          "Paulo L. Onuchic",
+          "Ashok A. Deniz"
+        ],
+        "year": 2017,
+        "doi": "10.1002/anie.201703191",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5647147/",
+        "readExtent": "full-primary-main",
+        "locators": [
+          "PMC author manuscript, Figure 1a-c and accompanying Results paragraphs",
+          "PMC author manuscript, Figure 5a-c and accompanying Results paragraphs",
+          "PMC author manuscript, Results paragraph preceding Figure 1: fusion and FRAP"
+        ],
+        "readingLimit": "Read complete PMC author-manuscript main text and all main figure captions. Supplement, movies, raw data and figure images were not independently inspected."
+      },
+      "question": "Does a declared RNA/protein concentration series produce distinct measured organizational states, and what distinguishes that evidence from irreversible aggregation or changed visibility?",
+      "expectedDiscriminator": "A controlled concentration scan with distinguishable organizational readouts, supported by microscopy rather than turbidity alone. No transferred Ddx4 threshold, monotonic response or common microscopic mechanism is predicted.",
+      "contraryOutcome": "An unchanged organizational discriminator over the declared switching range would challenge the scoped prediction. Missing or uncontrolled readouts remain inconclusive.",
+      "observations": [
+        {
+          "kind": "reported-observation",
+          "statement": "At fixed 200 micromolar peptide, RNA titrations produced low/high/low turbidity regimes; confocal imaging distinguished RP3/polyU conditions with and without droplets.",
+          "locator": "PMC author manuscript, Figure 1a-c and accompanying Results paragraphs"
+        },
+        {
+          "kind": "reported-observation",
+          "statement": "FUS at 10 micromolar showed reentrant turbidity curves with polyU and U40; DIC/confocal images supported the droplet interpretation.",
+          "locator": "PMC author manuscript, Figure 5a-c and accompanying Results paragraphs"
+        },
+        {
+          "kind": "source-interpretation",
+          "statement": "Reported fusion and fluorescence recovery support fluidity; these observations do not exclude every aggregation pathway.",
+          "locator": "PMC author manuscript, Results paragraph preceding Figure 1: fusion and FRAP"
+        }
+      ],
+      "verdict": "supports-scoped-transfer",
+      "rationale": "Distinct organizational readouts support the narrow discriminator; stronger aggregation exclusion remains inconclusive without reviewed methods and controls.",
+      "limits": [
+        "Supplementary methods and controls remain unread after publisher/PMC download failures.",
+        "No new threshold, uncertainty reconstruction, equilibrium proof or cellular mechanism is established.",
+        "Agreement with a broad discriminator does not identify a universal phase mechanism."
+      ],
+      "dependencyNote": "The DOI and title are absent from canonical sources and both selected evidence ledgers. These peptide/FUS experiments are distinct from the selected Nott2015 Ddx4 acquisition; no shared acquisition was identified. Cross-publication statistical independence is not certified. All reported preparations here remain one publication group.",
+      "exposureNote": "The task supplied a result-bearing title and suggested this candidate; search snippets exposed its reported outcome before full-text reading. The broad discriminator was supplied before that reading, but selection and assessment are literature-assisted and not blinded, independently preregistered or free of prior domain familiarity.",
+      "canonicalAdmission": false,
+      "blindProspective": false
+    },
+    {
+      "id": "transfer:boekhoven2015-fueled-gel-persistence",
+      "familyId": "persistence",
+      "developmentCaseIds": [
+        "pilot:reciprocal-rna-ligation-resource-dependent-amplification"
+      ],
+      "source": {
+        "id": "boekhoven2015-fueled-transient-materials",
+        "title": "Transient assembly of active materials fueled by a chemical reaction",
+        "authors": [
+          "Job Boekhoven",
+          "Wouter E. Hendriksen",
+          "Ger J. M. Koper",
+          "Rienk Eelkema",
+          "Jan H. van Esch"
+        ],
+        "year": 2015,
+        "doi": "10.1126/science.aac6103",
+        "url": "https://www.sciencemagazinedigital.org/sciencemagazine/4_september_2015?pg=95",
+        "readExtent": "full-primary-main",
+        "locators": [
+          "Published p. 1077, Fig. 2B and fuel-dose/lifetime paragraph.",
+          "Published pp. 1077-1079, Fig. 3E and regeneration discussion.",
+          "Published p. 1079, persistent-rheology/activated-gelator paragraph."
+        ],
+        "readingLimit": "Publisher digital pages and author-uploaded journal text read; supplement, movies and raw data unreviewed; figures not visually inspected."
+      },
+      "question": "Does an actually measured organized target persist or recover within an explicit supplied-resource boundary and finite observation horizon, with resource variation or replenishment providing an observed discriminator?",
+      "expectedDiscriminator": "The question and criterion were assigned before full-text reading: a declared physical property has finite measured trajectories, and resource-dose, exhaustion or renewed-supply comparisons distinguish its maintenance or recovery. This does not predict an identical mechanism, threshold or timescale across cases.",
+      "contraryOutcome": "An eligible source-specific claim of maintenance fails within its stated supply conditions, or its predicted resource discriminator produces no corresponding difference in an eligible controlled comparison. Missing duration, unread controls or an unisolated microscopic mechanism remain inconclusive.",
+      "observations": [
+        {
+          "kind": "reported-observation",
+          "statement": "At initial pH 11 and 50 mM gelator precursor, reported rheology gives approximately 10 h lifetime at 200 mM dimethyl sulfate versus under 4 h at 175 mM.",
+          "locator": "Published p. 1077, Fig. 2B and fuel-dose/lifetime paragraph."
+        },
+        {
+          "kind": "reported-observation",
+          "statement": "Recovery weakens late in the batch; Figure 3E reports renewed mechanical recovery following 200 mM fuel addition at 5.5 h.",
+          "locator": "Published pp. 1077-1079, Fig. 3E and regeneration discussion."
+        },
+        {
+          "kind": "reported-observation",
+          "statement": "Gel rheology persists beyond substantial activated-gelator decline, so structural survival is not an instantaneous concentration threshold.",
+          "locator": "Published p. 1079, persistent-rheology/activated-gelator paragraph."
+        }
+      ],
+      "verdict": "supports-scoped-transfer",
+      "rationale": "Finite resource-dependent rheology and renewed recovery support the declared comparison; residual structural persistence limits stronger interpretations.",
+      "limits": [
+        "Initial pH drifts; residual fuel in regeneration correlations is model-estimated.",
+        "Supplementary protocols, uncertainty, replicate definitions and added-fuel vehicle controls were not reviewed.",
+        "The target is finite gel mechanics/recovery, not indefinite persistence or autonomous resource production.",
+        "This transfer compares a resource-boundary question; it establishes no common chemistry, catalyst identity or material assembly with the RNA case.",
+        "The continuous-flow result appears in unread supplemental Figure S22; no extended duration is admitted from it."
+      ],
+      "dependencyNote": "The DOI was absent from the canonical graph sources when checked. This is a different publication/acquisition from every selected pilot study; all of its preparation, rheology and kinetic interpretations remain one dependency group. No exhaustive cross-publication dependency audit or independent experiment was performed.",
+      "exposureNote": "The root assigned the question and decision boundary before this agent opened the new full text. The agent had general conceptual familiarity with chemically fueled assembly; bibliographic search exposed title/abstract outcomes before full-text reading. Selection favored the named fuel-transient topic, and the rheological target was operationalized retrospectively from the paper. New to this atlas does not mean blind prospective validation.",
+      "canonicalAdmission": false,
+      "blindProspective": false
+    },
+    {
+      "id": "transfer:drobot2018-coacervate-rna-operation",
+      "familyId": "organization-operation",
+      "developmentCaseIds": [
+        "pilot:ddx4-demixing-partition-function-unknown",
+        "pilot:gox-hrp-nanocage-controls",
+        "pilot:capn-negative-cooperativity-distal-response"
+      ],
+      "source": {
+        "id": "drobot2018-coacervate-rna-catalysis",
+        "title": "Compartmentalised RNA catalysis in membrane-free coacervate protocells",
+        "authors": [
+          "Björn Drobot",
+          "Juan M. Iglesias-Artola",
+          "Kristian Le Vay",
+          "Viktoria Mayr",
+          "Mrityunjoy Kar",
+          "Moritz Kreysing",
+          "Hannes Mutschler",
+          "T-Y Dora Tang"
+        ],
+        "year": 2018,
+        "doi": "10.1038/s41467-018-06072-w",
+        "url": "https://www.nature.com/articles/s41467-018-06072-w",
+        "readExtent": "full-primary-main",
+        "locators": [
+          "Main PDF pp.2–3, Fig.1b–d; Methods pp.6–7",
+          "Main PDF p.4, Fig.3b; Methods p.7",
+          "Main PDF p.4, partition/concentration and FRAP discussion",
+          "Main PDF pp.3–4, CD/FRAP interpretation; Discussion p.6"
+        ],
+        "readingLimit": "Read nine-page primary PDF at https://d-nb.info/1170313507/34, including Methods/captions. Supplementary retrieval and raster inspection failed. No raw-data/code replay or exhaustive correction search."
+      },
+      "question": "Does partition/co-localization correspond to a measured change in RNA catalytic operation under a stated comparator, and do controls identify the proposed mechanism?",
+      "expectedDiscriminator": "A functional comparison beyond partition is required. Record the observed direction and assay without predicting universal enhancement; distinguish response from mechanism identification.",
+      "contraryOutcome": "A matched null would challenge a specifically stated enhancement prediction only. Partition-only evidence or an inadequate functional comparator would be inconclusive; a slower measured operation can support a scoped response difference.",
+      "observations": [
+        {
+          "kind": "reported-observation",
+          "statement": "HH-min cleaves FRET substrate in CM-Dex:PLys at 25 C; mutant/no-ribozyme controls lack gel product.",
+          "locator": "Main PDF pp.2–3, Fig.1b–d; Methods pp.6–7"
+        },
+        {
+          "kind": "measurement-inference",
+          "statement": "Source-fitted cleavage is slower in bulk coacervate than buffer.",
+          "locator": "Main PDF pp.2–3, Fig.1b–d; Methods pp.6–7"
+        },
+        {
+          "kind": "measurement-inference",
+          "statement": "Source fits indicate faster cleavage in microdroplets than bulk coacervate.",
+          "locator": "Main PDF p.4, Fig.3b; Methods p.7"
+        },
+        {
+          "kind": "source-interpretation",
+          "statement": "Partition-derived local RNA concentrations differ approximately 50-fold. Comparable FRAP-inferred viscosities leave concentration/material effects unresolved.",
+          "locator": "Main PDF p.4, partition/concentration and FRAP discussion"
+        },
+        {
+          "kind": "not-established",
+          "statement": "CD uses inactive HH-mut; the active-ribozyme mechanistic pathway remains unresolved.",
+          "locator": "Main PDF pp.3–4, CD/FRAP interpretation; Discussion p.6"
+        }
+      ],
+      "verdict": "supports-scoped-transfer",
+      "rationale": "Functional comparisons support scoped transfer; a unique mechanism and automatic enhancement remain unsupported.",
+      "limits": [
+        "Single-turnover cleavage is not replication or autonomy.",
+        "pH 8.0/8.3 and local concentrations differ.",
+        "Source fits were not replayed; supplementary controls remain unverified.",
+        "Droplets are subsamples of one publication.",
+        "This checks an annotation criterion, not a quantitative prediction or universal mechanism."
+      ],
+      "dependencyNote": "DOI absent canonical graph sources before this check. Drobot2018 is a separate primary publication/acquisition from Nott2015 and Zhao2016; no reused raw dataset was identified in the inspected main paper. Main, supplement, fitting and related preparations remain one publication group. This is not an independent experimental replication or a guarantee against all shared assumptions.",
+      "exposureNote": "The root task supplied the title and fixed the question/discriminator before my first retrieval. I had not newly reviewed this paper in this task before that instruction; model prior familiarity cannot be excluded. Search snippets exposed findings before full-text reading. New means absent from this atlas, not blinded or prospectively unseen. No rule was changed to require enhancement after reading.",
+      "canonicalAdmission": false,
+      "blindProspective": false
+    }
+  ],
+  "analogyIds": [
+    "density-versus-temperature-regimes",
+    "externally-selected-states",
+    "finite-anneal-versus-fitted-kinetics",
+    "chemical-conversion-versus-folding-rates",
+    "retention-versus-replenished-operation",
+    "finite-supplied-cyclic-operation",
+    "arrangement-and-ligation-response",
+    "partition-does-not-identify-function",
+    "finite-order-versus-growth-dynamics",
+    "compatibility-needs-interface-evidence"
+  ]
+}

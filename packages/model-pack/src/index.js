@@ -6,6 +6,10 @@ import {
   isContentHash
 } from "@onto2d/kernel/canonical";
 import { MODEL_PACK_CANONICAL_OPTIONS } from "./canonical-options.js";
+import { ModelPackError } from "./model-pack-error.js";
+import { decodeJsonValueTable, isJsonValueTable } from "./json-value-table.js";
+
+export { ModelPackError };
 
 export const MODEL_PACK_FORMAT = "onto2d-model-pack";
 export const MODEL_PACK_FORMAT_VERSION = "1";
@@ -36,15 +40,6 @@ const INDEX_FILE_IDS = Object.freeze([
   "scientificStatus"
 ]);
 const FORBIDDEN_IDENTIFIERS = new Set(["__proto__", "constructor", "prototype"]);
-
-export class ModelPackError extends Error {
-  constructor(code, message, details = {}) {
-    super(message);
-    this.name = "ModelPackError";
-    this.code = code;
-    this.details = Object.freeze({ ...details });
-  }
-}
 
 function fail(code, message, details) {
   throw new ModelPackError(code, message, details);
@@ -296,7 +291,8 @@ export function buildModelPack(input) {
 }
 
 export function verifyModelPack(pack) {
-  const value = canonicalClone(requirePlainObject(pack, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
+  const decoded = isJsonValueTable(pack) ? decodeJsonValueTable(pack) : pack;
+  const value = canonicalClone(requirePlainObject(decoded, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
   const manifest = requirePlainObject(value.manifest, "pack.manifest");
   const files = requirePlainObject(value.files, "pack.files");
   if (

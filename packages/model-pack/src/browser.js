@@ -1,4 +1,5 @@
 import { ModelPackError, verifyModelPack } from "./index.js";
+import { decodeJsonValueTable, isJsonValueTable } from "./json-value-table.js";
 import {
   MODEL_PACK_REQUIRED_PATHS,
   inspectTransportOptions,
@@ -404,7 +405,7 @@ export async function loadModelPackHttpDirectory(baseUrl, options = {}) {
     ));
   }
   try {
-    return verifyTransportFiles(values);
+    return verifyTransportFiles(values, { maxTotalBytes: normalized.maxTotalBytes });
   } catch (error) {
     if (error instanceof ModelPackError && error.code === "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH") {
       fail("MODEL_PACK_BROWSER_BUNDLE_MISMATCH", error.message);
@@ -464,5 +465,7 @@ export async function loadModelPackBundle(source, options = {}) {
       "MODEL_PACK_BROWSER_BUNDLE"
     );
   }
-  return verifyModelPack(parseJson(bytes, "bundle.json", "MODEL_PACK_BROWSER_BUNDLE"));
+  const value = parseJson(bytes, "bundle.json", "MODEL_PACK_BROWSER_BUNDLE");
+  return verifyModelPack(isJsonValueTable(value)
+    ? decodeJsonValueTable(value, { maxBytes: normalized.maxBundleBytes }) : value);
 }

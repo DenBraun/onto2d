@@ -33,11 +33,29 @@ does not branch on a model ID. Version comparison remains distinct from model
 selection and requires reviewed lineage.
 
 With no exact release in the URL, the Studio selects
-`causal-emergence@2026.10.02.9`, the current canonical model. The source panels
+`causal-emergence@2026.10.20.2`, the current canonical model. The source panels
 show study design, preparations, findings, citations, publication checks and
 interpretation tests. Edge labels and tooltips show the declared relation layer,
 meaning and assertion, including measurement and interpretation dependencies.
 Record-level evidence and representation roles are available in the inspector.
+
+Releases with an interaction atlas expose **View** and **Case** controls. System,
+Evidence and Hypotheses views use explicit release memberships; they do not
+derive meaning from record kinds or add causal edges. A selected case displays
+its existing relations and disconnected records together. Context cards use
+neutral styling, and their positions assert no interaction. Disconnected case
+cards retain their size and scroll vertically when the viewport is too short.
+The full catalogue
+and original record inspector remain available. View and case URL parameters
+are bound to the exact model and release.
+
+Each case anchor provides comparable interaction properties, findings,
+limitations and the source passages supporting them. Other case records link
+to that anchor. Missing quantities retain their declared missing reason.
+Proposed cross-case comparisons expose their breakdown conditions and link to
+the other anchors; these comparisons never create physical causal relations.
+Passports and their supporting claims, sources and studies load with the
+selected record rather than the initial graph.
 
 The current canonical projection stores complete publication metadata once per
 source ID within each claim. Later citations in that claim retain their own
@@ -53,7 +71,8 @@ case inputs keep their explicit identities.
 
 After generating and registering a new canonical release, run
 `npm run model-studio:data` to regenerate the browser data and its pin, then
-update the module revision. `npm run model-studio:data:verify` checks the
-derivation and runs as part of `npm run build`. Failed detail loads offer a
+update the module revision. Run `npm run model-studio:data:verify` explicitly
+to check the derivation; ordinary build and CI checks do not run this replay.
+Failed detail loads offer a
 retry; model and record changes cancel obsolete requests and discard late
 responses. Cached details are bounded and disposed when the model closes.

@@ -4,7 +4,9 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { hashArtifactBytes, hashCanonical } from "@onto2d/kernel";
 import { buildModelPack, verifyModelPack } from "@onto2d/model-pack";
+import { encodeJsonValueTable } from "../../../packages/model-pack/src/json-value-table.js";
 import { ROOT, loadCanonicalSource, verifyCanonicalEvidence } from "./source.mjs";
+import { projectCanonicalInteractions } from "./interactions.mjs";
 import { compileVocabulary } from "./dictionaries.mjs";
 import { compileSourceReadiness } from "./readiness.mjs";
 
@@ -13,16 +15,51 @@ import { compileSourceReadiness } from "./readiness.mjs";
 const COMPACT_FILES = new Set([
   "bundle.json", "model/nodes.json", "model/edges.json", "model/dictionaries.json"
 ]);
-const serialize = (relative, value) => `${JSON.stringify(value, null, COMPACT_FILES.has(relative) ? undefined : 2)}\n`;
+const ENCODINGS = new Set(["plain", "value-table-v1"]);
+function serialize(relative, value, transportEncoding) {
+  const encoded = transportEncoding === "value-table-v1" && ["model/nodes.json", "bundle.json"].includes(relative)
+    ? encodeJsonValueTable(value) : value;
+  return `${JSON.stringify(encoded, null, COMPACT_FILES.has(relative) ? undefined : 2)}\n`;
+}
 
-export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics }, evidence, sourceFiles) {
+export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics, biochemistry }, evidence, sourceFiles) {
   const sourceReadiness = compileSourceReadiness(readiness);
   const nodeRoles = new Map(readiness.nodeRoles.map((r) => [r.nodeId, r]));
   const claims = new Map(graph.claims.map((c) => [c.id, c]));
   const sources = new Map(graph.sources.map((s) => [s.id, s]));
   assert.equal(sources.size, graph.sources.length, "Citation source IDs must be unique before projection");
-  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies].map((s) => [s.id, s]));
+  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? [])].map((s) => [s.id, s]));
   const experiments = new Map(routing.contexts.map((c) => [c.id, c]));
+  const interactions = projectCanonicalInteractions(graph, { studies: [...studies.values()] });
+  const caseSummaries = new Map(interactions.cases.map((record) => [record.id, {
+    id: record.id, title: record.title, anchorEntityId: record.anchorEntityId
+  }]));
+  const anchoredCases = new Map();
+  const caseRefs = new Map();
+  const anchorAnalogies = new Map();
+  for (const record of interactions.cases) {
+    const citedSources = new Set(record.sourceIds);
+    for (const id of record.claimIds) for (const citation of claims.get(id).citations) citedSources.add(citation.sourceId);
+    const detail = {
+      ...record,
+      claims: record.claimIds.map((id) => claims.get(id)),
+      sources: [...citedSources].map((id) => sources.get(id)),
+      studies: record.studyIds.map((id) => studies.get(id))
+    };
+    if (!anchoredCases.has(record.anchorEntityId)) anchoredCases.set(record.anchorEntityId, []);
+    anchoredCases.get(record.anchorEntityId).push(detail);
+    for (const id of record.entityIds) {
+      if (!caseRefs.has(id)) caseRefs.set(id, []);
+      caseRefs.get(id).push(caseSummaries.get(record.id));
+    }
+  }
+  for (const analogy of interactions.analogies) {
+    const related = analogy.caseIds.map((id) => caseSummaries.get(id));
+    for (const record of related) {
+      if (!anchorAnalogies.has(record.anchorEntityId)) anchorAnalogies.set(record.anchorEntityId, []);
+      anchorAnalogies.get(record.anchorEntityId).push({ ...analogy, cases: related });
+    }
+  }
   function rationale(ids) {
     return ids.map((id) => {
       const claim = claims.get(id);
@@ -50,7 +87,10 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   const nodes = graph.entities.map((entity) => ({
     ...entity, typeRole: entity.kind, scientificStatus: entity.status,
-    rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id)
+    rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id),
+    ...(caseRefs.has(entity.id) ? { interactionCaseRefs: caseRefs.get(entity.id) } : {}),
+    ...(anchoredCases.has(entity.id) ? { interactionCases: anchoredCases.get(entity.id) } : {}),
+    ...(anchorAnalogies.has(entity.id) ? { interactionAnalogies: anchorAnalogies.get(entity.id) } : {})
   }));
   // Entity summaries derive from description at presentation time. Keep that
   // source text once; construction rules below retain their distinct summary.
@@ -80,12 +120,13 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   return buildModelPack({
     model: { ...graph.model, description: graph.scope.summary },
-    source: { id: "canonical-research-source-v20", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
+    source: { id: "canonical-research-source-v22", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
     nodes, edges,
     dictionaries: {
-      sources: graph.sources, claims: graph.claims, constructionRules: graph.rules,
+      sources: graph.sources, claims: graph.claims, constructionRules: graph.rules, interactions,
       scope: graph.scope, evidence, pilot, routing, routingPolicy,
       dictionaryReview, vocabulary: compileVocabulary(dictionaryReview, graph.sources), sourceReadiness, optics, visual, neural, physics,
+      ...(biochemistry ? { biochemistry } : {}),
       presentation: {
         labels: { catalogTitle: "Canonical reconstruction", searchPlaceholder: "Find a concept or construction rule", typeFilter: "Record kind", statusFilter: "Evidence status", parents: "Premises / incoming", children: "Consequences / outgoing" },
         boundary: {
@@ -104,6 +145,7 @@ export async function buildCanonicalRelease() {
   const paths = [...new Set([
     "references/canonical/graph.json", "references/canonical/schema.json",
     "models/causal-emergence/canonical/source.mjs", "models/causal-emergence/canonical/build.mjs",
+    "models/causal-emergence/canonical/interactions.mjs",
     "models/causal-emergence/canonical/retinal.mjs",
     "models/causal-emergence/canonical/routing.mjs", "models/causal-emergence/canonical/verify-routing-data.py",
     "models/causal-emergence/canonical/dictionaries.mjs",
@@ -112,6 +154,27 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/visual.mjs",
     "models/causal-emergence/canonical/neural.mjs",
     "models/causal-emergence/canonical/physics.mjs",
+    "models/causal-emergence/canonical/biochemistry.mjs",
+    "models/causal-emergence/canonical/level-three.mjs",
+    "models/causal-emergence/canonical/condensate-lipid.mjs",
+    "models/causal-emergence/canonical/phage-scope.mjs",
+    "models/causal-emergence/canonical/genetic-information.mjs",
+    "models/causal-emergence/canonical/network-cycle.mjs",
+    "models/causal-emergence/canonical/chromatin-protein-modification.mjs",
+    "models/causal-emergence/canonical/channels-complex.mjs",
+    "models/causal-emergence/canonical/template-chemistry.mjs",
+    "models/causal-emergence/canonical/redox-ph.mjs",
+    "models/causal-emergence/canonical/biochemical-source-reuse.mjs",
+    "models/causal-emergence/canonical/bioenergetics.mjs",
+    "models/causal-emergence/canonical/model-vesicles.mjs",
+    "models/causal-emergence/canonical/recognition-hydration.mjs",
+    "models/causal-emergence/canonical/protein-folding.mjs",
+    "models/causal-emergence/canonical/enzyme-catalysis.mjs",
+    "models/causal-emergence/canonical/protein-allostery.mjs",
+    "models/causal-emergence/canonical/rna-catalysis.mjs",
+    "models/causal-emergence/canonical/biochemical-transfer.mjs",
+    "models/causal-emergence/canonical/protein-quality-control.mjs",
+    "models/causal-emergence/canonical/biochemical-kinetics.mjs",
     "models/causal-emergence/canonical/deuteron.mjs",
     "models/causal-emergence/canonical/mass-constraints.mjs",
     "models/causal-emergence/canonical/proton-decay.mjs",
@@ -218,6 +281,7 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/verify-neurogenesis-data.py",
     "packages/model-pack/src/canonical-options.js", "packages/model-pack/src/index.js",
     "packages/model-pack/src/transport-layout.js", "packages/model-pack/src/cache.js",
+    "packages/model-pack/src/json-value-table.js", "packages/model-pack/src/model-pack-error.js",
     "cases/level-0-oscillator/model-v1.json", "cases/level-0-oscillator/level-zero-validation-v3.json",
     "cases/level-0-oscillator/source-lock.json",
     ...data.graph.sources.filter((s) => s.path).map((s) => s.path)
@@ -240,38 +304,45 @@ async function collectFiles(directory, prefix = "") {
   return result.sort();
 }
 
-export async function verifyCanonicalRelease(pack, directory = releaseDirectory(pack)) {
+export async function verifyCanonicalRelease(pack, directory = releaseDirectory(pack), { transportEncoding = "plain" } = {}) {
+  assert.ok(ENCODINGS.has(transportEncoding), "Unknown canonical transport encoding");
   const expected = { "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack };
   assert.deepEqual(await collectFiles(directory), Object.keys(expected).sort(), "Release file inventory differs");
   for (const [relative, value] of Object.entries(expected)) {
-    assert.equal(await readFile(path.join(directory, relative), "utf8"), serialize(relative, value), `Stale canonical derivative: ${relative}`);
+    assert.equal(await readFile(path.join(directory, relative), "utf8"), serialize(relative, value, transportEncoding), `Stale canonical derivative: ${relative}`);
   }
   verifyModelPack(pack);
   return pack;
 }
 
 /** Existing releases may only be replayed byte-for-byte, never replaced. */
-export async function writeCanonicalRelease(pack, directory = releaseDirectory(pack)) {
+export async function writeCanonicalRelease(pack, directory = releaseDirectory(pack), { transportEncoding = "plain" } = {}) {
+  assert.ok(ENCODINGS.has(transportEncoding), "Unknown canonical transport encoding");
   verifyModelPack(pack);
   let exists = false;
   try { await readdir(directory); exists = true; } catch (error) { if (error.code !== "ENOENT") throw error; }
   if (exists) {
-    try { return await verifyCanonicalRelease(pack, directory); }
+    try { return await verifyCanonicalRelease(pack, directory, { transportEncoding }); }
     catch (error) { throw new Error(`Refusing to overwrite release ${pack.manifest.model.version}; choose a new source version. ${error.message}`); }
   }
+  // Encoding can reject a valid semantic pack at its transport limit. Check
+  // every output before creating an immutable version directory.
+  const serialized = new Map(Object.entries({ "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack })
+    .map(([relative, value]) => [relative, serialize(relative, value, transportEncoding)]));
   await mkdir(directory, { recursive: true });
-  for (const [relative, value] of Object.entries({ "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack })) {
+  for (const [relative, bytes] of serialized) {
     const target = path.join(directory, relative);
     await mkdir(path.dirname(target), { recursive: true });
-    await writeFile(target, serialize(relative, value), { flag: "wx" });
+    await writeFile(target, bytes, { flag: "wx" });
   }
-  return verifyCanonicalRelease(pack, directory);
+  return verifyCanonicalRelease(pack, directory, { transportEncoding });
 }
 
 export async function run({ verify = false } = {}) {
   const pack = await buildCanonicalRelease();
-  if (verify) await verifyCanonicalRelease(pack);
-  else await writeCanonicalRelease(pack);
+  const options = { transportEncoding: "value-table-v1" };
+  if (verify) await verifyCanonicalRelease(pack, undefined, options);
+  else await writeCanonicalRelease(pack, undefined, options);
   console.log(`${verify ? "Verified" : "Built"} canonical reconstruction ${pack.manifest.model.version}: ${pack.manifest.statistics.nodeCount} records, ${pack.manifest.statistics.edgeCount} scoped connections; ${pack.manifest.rootHash}`);
   return pack;
 }

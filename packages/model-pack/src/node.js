@@ -241,7 +241,7 @@ export async function loadModelPackDirectory(directory, options = {}) {
   }
   let verified;
   try {
-    verified = verifyTransportFiles(values);
+    verified = verifyTransportFiles(values, { maxTotalBytes: limits.maxTotalBytes });
   } catch (error) {
     if (error instanceof ModelPackError && error.code === "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH") {
       fail("MODEL_PACK_DIRECTORY_BUNDLE_MISMATCH", error.message);

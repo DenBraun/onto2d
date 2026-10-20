@@ -522,7 +522,7 @@ export async function loadModelPackArchive(archive, options = {}) {
   localEntries(bytes, entries, centralOffset, limits);
   const values = await extractJsonValues(bytes, entries);
   try {
-    return verifyTransportFiles(values);
+    return verifyTransportFiles(values, { maxTotalBytes: limits.maxTotalUncompressedBytes });
   } catch (error) {
     if (error instanceof ModelPackError && error.code === "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH") {
       fail("MODEL_PACK_ARCHIVE_BUNDLE_MISMATCH", error.message);

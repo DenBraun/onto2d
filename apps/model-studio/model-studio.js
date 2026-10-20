@@ -1,43 +1,45 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20261019.1";
+} from "../../packages/model-pack/src/browser.js?v=20261020.3";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20261019.1";
+} from "../../packages/model-pack/src/cache.js?v=20261020.3";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20261019.1";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261019.1";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261019.1";
+} from "../../packages/model-pack/src/registry.js?v=20261020.3";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261020.3";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261020.3";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20261019.1";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261019.1";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261019.1";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261019.1";
-import { graphHighlight } from "./graph-interactions.js?v=20261019.1";
-import { citationLinks, resolveClaimCitations } from "./evidence-links.js?v=20261019.1";
-import { loadBrowseModel } from "./browse-data.js?v=20261019.1";
+} from "../../packages/rdf-mapping/src/index.js?v=20261020.3";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261020.3";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261020.3";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261020.3";
+import { createLazyModelPresentation } from "@onto2d/view/lazy";
+import { graphHighlight } from "./graph-interactions.js?v=20261020.3";
+import { interactionViewCatalog, selectInteractionGraph, interactionCaseOverview, layoutIsolatedCaseCards } from "./interaction-views.js?v=20261020.3";
+import { citationLinks, resolveClaimCitations } from "./evidence-links.js?v=20261020.3";
+import { loadBrowseModel } from "./browse-data.js?v=20261020.3";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20261019.1";
+} from "./model-selection.js?v=20261020.3";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.19.0" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.20.2" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20261019.1",
+  "../../assets/js/model-pack-worker.js?v=20261020.3",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:534d4d158475607548792727f91409d6eb7476bab0efc5c97575716fe5fc790e";
+const EXPECTED_REGISTRY_HASH = "sha256:8128fecb495c5f959c608761d8a941e7e4533c56d04dddcacee1b90f5216428f";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
@@ -76,7 +78,10 @@ const ids = [
   "optical-review-records", "optical-review-download",
   "visual-review-panel", "visual-review-summary", "visual-review-records", "visual-review-download",
   "neural-review-panel", "neural-review-summary", "neural-review-records", "neural-review-download",
-  "physics-review-panel", "physics-review-summary", "physics-review-records", "physics-review-download"
+  "physics-review-panel", "physics-review-summary", "physics-review-records", "physics-review-download",
+  "biochemistry-review-panel", "biochemistry-review-summary", "biochemistry-review-records", "biochemistry-review-download",
+  "interaction-view-controls", "interaction-perspective", "interaction-case", "direction-depth-separator",
+  "interaction-cases-panel", "interaction-cases-records", "graph-parent-key", "graph-child-key", "graph-case-key"
 ];
 const elements = Object.fromEntries(ids.map((id) => [id, document.getElementById(id)]));
 for (const [id, element] of Object.entries(elements)) {
@@ -95,6 +100,10 @@ const state = {
   selectedId: null,
   direction: "both",
   depth: 1,
+  interactionViews: null,
+  interactionGraphInput: null,
+  interactionPerspectiveId: "",
+  interactionCaseId: "",
   catalog: {
     key: null,
     items: [],
@@ -257,6 +266,11 @@ function inspectNode(id) {
 
 function focusNode(id, updateLocation = true) {
   if (!state.presentation?.has(id)) return;
+  const selectedCase = state.interactionViews?.cases.find((record) => record.id === state.interactionCaseId);
+  if (selectedCase && !selectedCase.entityIds.includes(id)) {
+    state.interactionCaseId = "";
+    elements["interaction-case"].value = "";
+  }
   state.focusId = id;
   state.selectedId = id;
   if (updateLocation) replaceLocationState();
@@ -356,19 +370,37 @@ function bindGraphHighlight(element, target) {
 }
 
 function renderGraph() {
-  const projection = state.presentation.neighborhood({
-    focusId: state.focusId,
-    depth: state.depth,
-    direction: state.direction,
-    ...GRAPH_LIMITS
-  });
-  const layout = layoutNeighborhood(projection, {
+  const selection = state.interactionViews && (state.interactionPerspectiveId || state.interactionCaseId)
+    ? selectInteractionGraph(state.interactionGraphInput, state.interactionViews, {
+      perspectiveId: state.interactionPerspectiveId, caseId: state.interactionCaseId, focusId: state.focusId
+    }) : null;
+  const presentation = selection ? createLazyModelPresentation(selection.input) : state.presentation;
+  const neighborhoodOptions = {
+    focusId: state.focusId, depth: state.depth, direction: state.direction, ...GRAPH_LIMITS
+  };
+  const projection = selection?.selectedCase
+    ? interactionCaseOverview(presentation, selection, state.focusId, GRAPH_LIMITS)
+    : selection ? presentation.neighborhood(neighborhoodOptions)
+      : state.presentation.neighborhood(neighborhoodOptions);
+  if (selection) presentation.close();
+  const isolatedCase = Boolean(selection?.selectedCase && projection.edges.length === 0);
+  const graph = elements["neighborhood-graph"];
+  const stage = graph.closest(".graph-stage");
+  stage.dataset.isolatedCase = String(isolatedCase);
+  const dimensions = isolatedCase ? {
+    width: Math.max(320, stage.clientWidth),
+    height: Math.max(240, stage.clientHeight)
+  } : { width: 1040, height: 680 };
+  const layout = isolatedCase ? layoutIsolatedCaseCards(projection, dimensions) : layoutNeighborhood(projection, {
     width: 1040,
     height: 680,
     padding: 42,
     nodeWidth: GRAPH_NODE.width,
     nodeHeight: GRAPH_NODE.height
   });
+  graph.style.height = isolatedCase ? `${layout.height}px` : "";
+  graph.setAttribute("viewBox", `0 0 ${layout.width} ${layout.height}`);
+  if (!isolatedCase) stage.scrollTop = 0;
   activeGraphProjection = projection;
   elements["graph-title"].textContent = projection.focus.name;
   elements["editor-tab-label"].textContent = `${projection.focus.id} ${projection.focus.name}`;
@@ -416,9 +448,9 @@ function renderGraph() {
       transform: `translate(${node.x} ${node.y})`,
       tabindex: "0",
       role: "button",
-      "aria-label": `${node.name}, node ${node.id}, ${node.relation}. Enter inspects; Shift Enter or Space focuses.`,
+      "aria-label": `${node.name}, node ${node.id}, ${node.caseContext ? "case record" : node.relation}${node.caseIsolate ? ", no displayed incident relation" : ""}. Enter inspects; Shift Enter or Space focuses.`,
       "data-node-id": node.id,
-      "data-relation": relationClass(node.relation),
+      "data-relation": node.caseContext && node.id !== state.focusId ? "context" : relationClass(node.relation),
       "data-focus": node.id === state.focusId ? "true" : "false",
       "data-selected": node.id === state.selectedId ? "true" : "false"
     });
@@ -431,16 +463,18 @@ function renderGraph() {
       ry: GRAPH_NODE.radius
     });
     const label = svgElement("text", { "aria-hidden": "true" });
+    if (isolatedCase) label.style.fontSize = "14px";
+    const lineHeight = isolatedCase ? 16 : GRAPH_NODE.lineHeight;
     const wrapped = wrapGraphNodeLabel(node.name, {
       maxCharacters: Math.max(8, Math.min(
         GRAPH_NODE.maxCharacters,
-        Math.floor((layout.nodeWidth - 24) / 7.25)
+        Math.floor((layout.nodeWidth - 24) / (isolatedCase ? 8.4 : 7.25))
       )),
       maxLines: GRAPH_NODE.maxLines
     });
-    const firstLineY = -((wrapped.lines.length - 1) * GRAPH_NODE.lineHeight) / 2 + 4;
+    const firstLineY = -((wrapped.lines.length - 1) * lineHeight) / 2 + 4;
     label.append(...wrapped.lines.map((line, index) => {
-      const span = svgElement("tspan", { x: 0, y: firstLineY + index * GRAPH_NODE.lineHeight });
+      const span = svgElement("tspan", { x: 0, y: firstLineY + index * lineHeight });
       span.textContent = line;
       return span;
     }));
@@ -466,11 +500,27 @@ function renderGraph() {
   elements["graph-nodes"].replaceChildren(...nodeNodes);
 
   const hidden = projection.counts.hiddenNodeCount + projection.counts.hiddenEdgeCount;
-  elements["graph-message"].hidden = hidden === 0;
-  elements["graph-message"].textContent = hidden === 0
-    ? ""
-    : `Bounded view: ${projection.counts.hiddenNodeCount} nodes and ${projection.counts.hiddenEdgeCount} edges omitted.`;
-  elements["graph-counts"].textContent = `${projection.counts.displayedNodeCount} nodes | ${projection.counts.displayedEdgeCount} edges | depth ${state.depth}`;
+  const messages = [];
+  if (selection?.perspective) messages.push(selection.perspective.boundary);
+  if (selection?.selectedCase) messages.push("Case overview includes disconnected records. Card position does not establish an interaction.");
+  if (selection?.focusOutsideView) messages.push(selection.memberNodeIds.length
+    ? "The focus is outside this view and is retained without relations for context."
+    : "This case has no records in the selected perspective. Its focus is shown only for context.");
+  if (hidden) messages.push(`Bounded view: ${projection.counts.hiddenNodeCount} nodes and ${projection.counts.hiddenEdgeCount} edges omitted.`);
+  elements["graph-message"].hidden = messages.length === 0;
+  elements["graph-message"].dataset.caseOverview = String(Boolean(selection?.selectedCase));
+  if (selection?.selectedCase) {
+    const scope = createElement("details");
+    scope.append(createElement("summary", "", selection.memberNodeIds.length ? "View scope" : "No records in this view"));
+    scope.append(createElement("p", "", messages.join(" ")));
+    elements["graph-message"].replaceChildren(scope);
+  } else elements["graph-message"].textContent = messages.join(" ");
+  elements["graph-counts"].textContent = `${projection.counts.displayedNodeCount} nodes | ${projection.counts.displayedEdgeCount} edges | ${selection?.selectedCase ? "case overview" : `depth ${state.depth}`}`;
+  for (const id of ["direction-controls", "depth-controls", "direction-depth-separator"]) {
+    elements[id].hidden = Boolean(selection?.selectedCase);
+  }
+  for (const id of ["graph-parent-key", "graph-child-key"]) elements[id].hidden = Boolean(selection?.selectedCase);
+  elements["graph-case-key"].hidden = !selection?.selectedCase;
 }
 
 function tag(text, tone) {
@@ -505,6 +555,8 @@ function renderInspector() {
   pendingInspection = null;
   const sequence = ++inspectionSequence;
   const detail = state.presentation.inspect(state.selectedId);
+  elements["interaction-cases-panel"].hidden = true;
+  elements["interaction-cases-records"].replaceChildren();
   const node = detail.node;
   elements["selected-id"].textContent = node.id;
   elements["selected-coordinate"].textContent = coordinateText(node);
@@ -552,7 +604,113 @@ function renderInspectedRecord(record) {
     ? record.description : "No full description is declared for this record.";
   elements["selected-record"].textContent = JSON.stringify(record, null, 2);
   renderRationale(record);
+  renderInteractionCases(record);
   document.body.dataset.detailState = "ready";
+}
+
+function renderInteractionCases(record) {
+  const cases = Array.isArray(record.interactionCases) ? record.interactionCases : [];
+  const references = Array.isArray(record.interactionCaseRefs) ? record.interactionCaseRefs : [];
+  const analogies = Array.isArray(record.interactionAnalogies) ? record.interactionAnalogies : [];
+  const sections = [];
+  const anchorButton = (reference) => {
+    const button = createElement("button", "relation-item", reference.title ?? reference.id);
+    button.type = "button";
+    button.title = `Open interaction properties: ${reference.anchorEntityId}`;
+    button.addEventListener("click", () => focusNode(reference.anchorEntityId));
+    return button;
+  };
+  const provenance = (container, item) => {
+    if (item.claimIds?.length) container.append(createElement("p", "", `Claims: ${item.claimIds.join("; ")}`));
+    if (item.studyIds?.length) container.append(createElement("p", "", `Studies: ${item.studyIds.join("; ")}`));
+  };
+  for (const interaction of cases) {
+    const section = createElement("section");
+    section.append(createElement("h5", "", interaction.title));
+    section.append(createElement("p", "", `${interaction.domain} \u00b7 ${interaction.evidenceMode}`));
+    for (const facet of interaction.facets ?? []) {
+      const finding = createElement("details");
+      finding.open = true;
+      finding.append(createElement("summary", "", `${facet.kind}: ${facet.value} \u00b7 ${facet.status}`));
+      finding.append(createElement("p", "", facet.statement));
+      provenance(finding, facet);
+      section.append(finding);
+    }
+    for (const [key, field] of Object.entries(interaction.fields ?? {})) {
+      const label = key.replace(/([a-z])([A-Z])/g, "$1 $2");
+      const property = createElement("details");
+      property.append(createElement("summary", "", label.charAt(0).toUpperCase() + label.slice(1)));
+      const missing = {
+        "not-applicable": "Not applicable to this comparison (not-applicable).",
+        "not-reviewed": "Not reviewed; no value is asserted (not-reviewed)."
+      }[field.missingReason] ?? `No value is asserted (${field.missingReason}).`;
+      property.append(createElement("p", "", field.value === null ? missing : field.value));
+      provenance(property, field);
+      section.append(property);
+    }
+    for (const observation of interaction.observations ?? []) {
+      const finding = createElement("details");
+      finding.append(createElement("summary", "", `Finding: ${observation.kind}`));
+      finding.append(createElement("p", "", observation.statement));
+      provenance(finding, observation);
+      section.append(finding);
+    }
+    const sources = new Map((interaction.sources ?? []).map((source) => [source.id, source]));
+    const studies = new Map((interaction.studies ?? []).map((study) => [study.id, study]));
+    for (const claim of interaction.claims ?? []) {
+      const support = createElement("details");
+      support.append(createElement("summary", "", `Evidence: ${claim.id} \u00b7 ${claim.status}`));
+      support.append(createElement("p", "", claim.statement));
+      if (claim.scope) support.append(createElement("p", "", `Scope: ${claim.scope}`));
+      for (const id of claim.contextIds ?? []) {
+        const study = studies.get(id);
+        if (!study) continue;
+        support.append(createElement("p", "", `Study ${id}: ${study.preparation}`));
+        support.append(createElement("p", "", `Observable: ${study.observable}`));
+        support.append(createElement("p", "", `Reviewed: ${study.readExtent}. ${(study.reviewedLocators ?? []).join("; ")}`));
+        for (const limit of study.limitations ?? []) support.append(createElement("p", "", `Study limit: ${limit}`));
+      }
+      for (const citation of resolveClaimCitations(claim)) {
+        const source = citation.source ?? sources.get(citation.sourceId);
+        const paragraph = createElement("p", "", `${citation.role}: ${source?.title ?? citation.sourceId} \u2014 ${citation.locator}. ${citation.note ?? ""} `);
+        for (const link of citationLinks({ ...citation, source }, new URL("../../", import.meta.url))) {
+          const anchor = createElement("a", "evidence-link", link.label);
+          anchor.href = link.href;
+          anchor.target = "_blank";
+          anchor.rel = "noopener noreferrer";
+          paragraph.append(anchor, document.createTextNode(" "));
+        }
+        support.append(paragraph);
+        if (source?.review) support.append(createElement("p", "", `Source review: ${source.review.extent}. ${source.review.limit}`));
+      }
+      for (const limit of claim.limitations ?? []) support.append(createElement("p", "", `Limit: ${limit}`));
+      section.append(support);
+    }
+    for (const limit of interaction.limitations ?? []) section.append(createElement("p", "", `Case limit: ${limit}`));
+    sections.push(section);
+  }
+  const localCases = new Set(cases.map((interaction) => interaction.id));
+  for (const reference of references) {
+    if (localCases.has(reference.id)) continue;
+    const section = createElement("section");
+    section.append(createElement("p", "", "Interaction conditions, findings and supporting evidence are available on the case anchor."));
+    section.append(anchorButton(reference));
+    sections.push(section);
+  }
+  for (const analogy of analogies) {
+    const section = createElement("details");
+    section.append(createElement("summary", "", `Proposed comparison: ${analogy.id}`));
+    section.append(createElement("p", "", "Hypothesis for comparison; no physical causal relation between cases is asserted."));
+    section.append(createElement("p", "", analogy.correspondence));
+    if (analogy.fields?.length) section.append(createElement("p", "", `Compared properties: ${analogy.fields.join("; ")}`));
+    const boundaries = typeof analogy.breakdownConditions === "string"
+      ? [analogy.breakdownConditions] : analogy.breakdownConditions ?? [];
+    for (const limit of boundaries) section.append(createElement("p", "", `Comparison boundary: ${limit}`));
+    for (const reference of analogy.cases ?? []) section.append(anchorButton(reference));
+    sections.push(section);
+  }
+  elements["interaction-cases-panel"].hidden = sections.length === 0;
+  elements["interaction-cases-records"].replaceChildren(...sections);
 }
 
 function renderRationale(record) {
@@ -816,7 +974,7 @@ function configureReviewPanels(pack, browse) {
     ["vocabulary", "vocabulary", renderVocabulary],
     ["sourceReadiness", "source-readiness", renderSourceReadiness],
     ...[["optics", "optical-review"], ["visual", "visual-review"],
-      ["neural", "neural-review"], ["physics", "physics-review"]]
+      ["neural", "neural-review"], ["physics", "physics-review"], ["biochemistry", "biochemistry-review"]]
       .map(([key, prefix]) => [key, prefix, (value) => renderSourceReview(value, key, prefix)])
   ];
   for (const [key, prefix, renderReview] of reviews) {
@@ -875,12 +1033,35 @@ function activateModelPack(pack, options = {}) {
   const descriptor = presentation.descriptor;
   const localRdf = options.modelSource === "local-rdf";
   const metadata = presentationMetadata(pack, { localRdf });
+  const interactionGraphInput = options.browse?.graphInput ?? {
+    identity: descriptor.identity, nodes: pack.files["model/nodes.json"], edges: pack.files["model/edges.json"]
+  };
+  const interactionViews = interactionViewCatalog(options.browse?.interactionViews
+    ?? pack.files["model/dictionaries.json"]?.interactions, interactionGraphInput);
   const previousPresentation = state.presentation;
   const previousBrowse = state.browse;
   state.manifest = manifest;
   state.presentation = presentation;
   state.browse = options.browse ?? null;
   state.presentationMetadata = metadata;
+  state.interactionGraphInput = interactionViews ? interactionGraphInput : null;
+  state.interactionViews = interactionViews;
+  state.interactionPerspectiveId = "";
+  state.interactionCaseId = "";
+  document.body.dataset.interactionViews = String(Boolean(interactionViews));
+  elements["interaction-view-controls"].hidden = !interactionViews;
+  for (const [id, records, empty] of [
+    ["interaction-perspective", interactionViews?.perspectives ?? [], "All records"],
+    ["interaction-case", interactionViews?.cases ?? [], "All cases"]
+  ]) {
+    const first = createElement("option", "", empty);
+    first.value = "";
+    elements[id].replaceChildren(first, ...records.map((record) => {
+      const option = createElement("option", "", record.label ?? record.title);
+      option.value = record.id;
+      return option;
+    }));
+  }
   state.selection = options.resolution === undefined
     ? null
     : Object.freeze({ modelId: options.resolution.modelId, version: options.resolution.version });
@@ -898,6 +1079,7 @@ function activateModelPack(pack, options = {}) {
   state.selectedId = requested.focusId;
   state.depth = requested.depth;
   state.direction = requested.direction;
+  if (interactionViews && options.useLocation === true) restoreInteractionLocationState(requested.focusId);
   elements["window-model-id"].textContent = manifest.model.id;
   elements["model-name"].textContent = manifest.model.name;
   elements["model-version"].textContent = manifest.model.version;
@@ -1037,8 +1219,23 @@ function replaceLocationState() {
     depth: String(state.depth),
     direction: state.direction
   });
+  if (state.interactionPerspectiveId) parameters.set("view", state.interactionPerspectiveId);
+  if (state.interactionCaseId) parameters.set("case", state.interactionCaseId);
   const nextHash = parameters.toString();
   if (location.hash.slice(1) !== nextHash) history.replaceState(null, "", `#${nextHash}`);
+}
+
+function restoreInteractionLocationState(focusId) {
+  const parameters = new URLSearchParams(location.hash.slice(1));
+  const identity = state.selection ?? { modelId: state.manifest.model.id, version: state.manifest.model.version };
+  const bound = parameters.get("model") === identity.modelId && parameters.get("version") === identity.version;
+  const perspective = bound && state.interactionViews?.perspectives.find((record) => record.id === parameters.get("view"));
+  const selectedCase = bound && state.interactionViews?.cases.find((record) => record.id === parameters.get("case")
+    && record.entityIds.includes(focusId));
+  state.interactionPerspectiveId = perspective?.id ?? "";
+  state.interactionCaseId = selectedCase?.id ?? "";
+  elements["interaction-perspective"].value = state.interactionPerspectiveId;
+  elements["interaction-case"].value = state.interactionCaseId;
 }
 
 async function restoreLocationState() {
@@ -1067,12 +1264,38 @@ async function restoreLocationState() {
       ? "Graph verified / details on demand" : "Model verified";
   }
   const requested = requestedGraphState();
+  if (state.interactionViews) restoreInteractionLocationState(requested.focusId);
   state.depth = requested.depth;
   state.direction = requested.direction;
   focusNode(requested.focusId, false);
 }
 
 function bindEvents() {
+  window.addEventListener("resize", () => {
+    if (state.presentation && state.interactionCaseId) renderGraph();
+  });
+  for (const id of ["interaction-perspective", "interaction-case"]) {
+    elements[id].addEventListener("change", () => {
+      state.interactionPerspectiveId = elements["interaction-perspective"].value;
+      state.interactionCaseId = elements["interaction-case"].value;
+      const selectedCase = state.interactionViews?.cases.find((record) => record.id === state.interactionCaseId);
+      if (selectedCase) {
+        const selection = selectInteractionGraph(state.interactionGraphInput, state.interactionViews, {
+          perspectiveId: state.interactionPerspectiveId, caseId: state.interactionCaseId
+        });
+        focusNode(selection.memberNodeIds.includes(selectedCase.anchorEntityId)
+          ? selectedCase.anchorEntityId : selection.memberNodeIds[0] ?? selectedCase.anchorEntityId);
+      } else if (state.interactionPerspectiveId) {
+        const selection = selectInteractionGraph(state.interactionGraphInput, state.interactionViews, {
+          perspectiveId: state.interactionPerspectiveId
+        });
+        if (selection.memberNodeIds.length && !selection.memberNodeIds.includes(state.focusId)) {
+          focusNode(selection.memberNodeIds[0]);
+        } else renderGraph();
+      } else renderGraph();
+      replaceLocationState();
+    });
+  }
   for (const id of ["catalog-search", "level-filter", "role-filter", "phase-filter", "status-filter", "catalog-sort"]) {
     const eventName = id === "catalog-search" ? "input" : "change";
     elements[id].addEventListener(eventName, () => renderCatalog({ reset: true }));
@@ -1101,6 +1324,10 @@ function bindEvents() {
     state.direction = "both";
     state.depth = 1;
     state.catalog.key = null;
+    state.interactionPerspectiveId = "";
+    state.interactionCaseId = "";
+    elements["interaction-perspective"].value = "";
+    elements["interaction-case"].value = "";
     focusNode(defaultFocusId());
   });
   elements["rdf-import-open"].addEventListener("click", () => {

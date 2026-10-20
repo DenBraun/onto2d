@@ -1,14 +1,17 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { spawnSync } from "node:child_process";
+import { mkdtemp, mkdir, readFile, rm, symlink, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import { brotliCompressSync, gzipSync } from "node:zlib";
 import { buildModelPack } from "@onto2d/model-pack";
 import { createVerifiedModelPresentation } from "@onto2d/engine/presentation";
 import { createBrowseModelLoader } from "../../apps/model-studio/browse-data.js";
 import { buildBrowseArtifacts, checkBrowseArtifacts } from "../../scripts/build-model-studio-data.mjs";
+import { encodeJsonValueTable } from "../../packages/model-pack/src/json-value-table.js";
 
 const BASE_URL = "https://example.test/Onto2D/apps/model-studio/data/";
 const encoder = new TextEncoder();
@@ -77,6 +80,45 @@ function resolution(pack) {
     manifestHash: pack.manifest.manifestHash
   };
 }
+
+test("the browse CLI writes and verifies plain and value-table registered bundles", async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "onto2d-browse-cli-"));
+  const root = new URL("../../", import.meta.url);
+  try {
+    await writeFile(path.join(directory, "package.json"), JSON.stringify({ type: "module" }));
+    for (const relative of ["scripts", "apps/model-studio", "references/canonical", "models/fixture"]) {
+      await mkdir(path.join(directory, relative), { recursive: true });
+    }
+    const linkType = process.platform === "win32" ? "junction" : "dir";
+    for (const relative of ["node_modules", "packages"]) {
+      await symlink(fileURLToPath(new URL(relative, root)), path.join(directory, relative), linkType);
+    }
+    await writeFile(path.join(directory, "scripts/build-model-studio-data.mjs"),
+      await readFile(new URL("scripts/build-model-studio-data.mjs", root)));
+    const loader = await readFile(new URL("apps/model-studio/browse-data.js", root));
+    const pack = fixture();
+    const expected = buildBrowseArtifacts(pack);
+    await writeFile(path.join(directory, "references/canonical/graph.json"), JSON.stringify({ model: pack.manifest.model }));
+    await writeFile(path.join(directory, "models/registry.json"), JSON.stringify({ entries: [{
+      ...resolution(pack), packPath: "fixture"
+    }] }));
+    for (const encoded of [false, true]) {
+      await writeFile(path.join(directory, "apps/model-studio/browse-data.js"), loader);
+      await writeFile(path.join(directory, "models/fixture/bundle.json"),
+        JSON.stringify(encoded ? encodeJsonValueTable(pack) : pack));
+      for (const args of [["--write"], []]) {
+        const result = spawnSync(process.execPath, ["scripts/build-model-studio-data.mjs", ...args], {
+          cwd: directory, encoding: "utf8", timeout: 30000
+        });
+        assert.equal(result.status, 0, `${encoded ? "value-table" : "plain"} ${args}: ${result.stderr}`);
+      }
+      assert.deepEqual(await readFile(path.join(directory, "apps/model-studio/data/index.json")),
+        Buffer.from(expected.files.get("index.json")));
+    }
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
 
 function transport(files, override) {
   const calls = [];

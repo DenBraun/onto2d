@@ -1,5 +1,6 @@
 import { canonicalize } from "@onto2d/kernel/canonical";
 import { MODEL_PACK_CANONICAL_OPTIONS } from "./canonical-options.js";
+import { decodeJsonValueTable, isJsonValueTable } from "./json-value-table.js";
 import {
   ModelPackError,
   modelPackFilePaths,
@@ -51,15 +52,35 @@ export function inspectTransportOptions(value, code, subject) {
   return entries;
 }
 
-export function verifyTransportFiles(values) {
-  const manifest = values.get("manifest.json");
+export function verifyTransportFiles(values, { maxTotalBytes = 64 * 1024 * 1024 } = {}) {
+  let expandedBytes = 0;
+  function decoded(relative) {
+    const remaining = maxTotalBytes - expandedBytes;
+    if (remaining < 1) {
+      modelPackTransportFail("MODEL_PACK_TRANSPORT_LIMIT_EXCEEDED", "Expanded Model Pack files exceed maxTotalBytes.");
+    }
+    const input = values.get(relative);
+    const value = (relative === "model/nodes.json" || relative === "bundle.json") && isJsonValueTable(input)
+      ? decodeJsonValueTable(input, { maxBytes: remaining }) : input;
+    // Canonical inspection rejects accessors and non-JSON values before counting.
+    // Raw stream limits remain separate; repeated bundle content counts again.
+    const bytes = new TextEncoder().encode(canonicalize(value, MODEL_PACK_CANONICAL_OPTIONS)).byteLength;
+    if (bytes > remaining) {
+      modelPackTransportFail("MODEL_PACK_TRANSPORT_LIMIT_EXCEEDED", "Expanded Model Pack files exceed maxTotalBytes.", {
+        path: relative, maxTotalBytes
+      });
+    }
+    expandedBytes += bytes;
+    return value;
+  }
+  const manifest = decoded("manifest.json");
   const packFiles = {};
   for (const relative of Object.values(modelPackFilePaths())) {
-    packFiles[relative] = values.get(relative);
+    packFiles[relative] = decoded(relative);
   }
   const verified = verifyModelPack({ manifest, files: packFiles });
   if (values.has("bundle.json")) {
-    const bundle = verifyModelPack(values.get("bundle.json"));
+    const bundle = verifyModelPack(decoded("bundle.json"));
     if (canonicalize(bundle, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(verified, MODEL_PACK_CANONICAL_OPTIONS)) {
       modelPackTransportFail(
         "MODEL_PACK_TRANSPORT_BUNDLE_MISMATCH",

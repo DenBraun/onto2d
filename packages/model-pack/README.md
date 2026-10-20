@@ -20,6 +20,22 @@ individual-record budget remain 100,000. Depth (64), per-string byte limits
 is shared by construction, verification, transport comparison and cache writes;
 it does not alter canonical bytes or existing content hashes.
 
+Split `model/nodes.json` and complete `bundle.json` may use the version-1
+`onto2d-json-value-table` transport envelope. It interns repeated JSON containers
+and restores every field before normal Model Pack reconstruction. Semantic v1,
+file paths, hashes and returned records remain unchanged. Ordinary arrays and
+bundles remain supported; older loaders need an update to read encoded files.
+Use the supported loaders, or `verifyModelPack` for a parsed complete bundle,
+rather than treating a physical encoded node file as the semantic node array.
+
+The codec rejects malformed or noncanonical tables, unsafe keys, accessors,
+invalid Unicode and forward/cyclic references. Before expansion it bounds the
+exact logical bytes, entries and depth, including repeated references. Raw file
+budgets still apply. Directory, archive and HTTP loaders also charge expanded
+content against their configured total limit; a required bundle counts again.
+The bundle loader applies `maxBundleBytes` to both physical and expanded content.
+See the [transport contract](../../docs/architecture/ENGINE.md#bounded-json-value-table-transport).
+
 The package is model-neutral. It does not know the Causal Emergence Catalogue,
 network aliases, UI layout, or adapter semantics. Separate Node.js and browser
 subpaths load the same transparent format without moving filesystem or network
