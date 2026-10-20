@@ -539,6 +539,51 @@ references and the frozen canonical fixtures. Model Studio uses this adapter
 for complete Model Pack loading; incremental browsing has its own pinned
 projection transport.
 
+<a id="bounded-json-value-table-transport"></a>
+
+## Bounded JSON value-table transport
+
+Node, ZIP and HTTP split loaders accept an optional lossless representation in
+`model/nodes.json`, and complete bundle loading accepts the same representation
+for the entire pack. `verifyModelPack` also recognizes a parsed encoded bundle.
+Decoding precedes the unchanged semantic v1 reconstruction, file/index hashes
+and complete identity comparison. Returned packs contain ordinary JSON values;
+lazy Model Studio detail files retain their existing complete-record format.
+
+The envelope has exactly `format: "onto2d-json-value-table"`,
+`formatVersion: "1"`, `root` and `table`. Scalars are inline. Containers use
+`["ref", index]`; table entries are `["a", values]` or
+`["o", [[key, value], ...]]`. Object keys use canonical text order. A reference
+inside entry i must point to a lower index. The encoder interns exact entries
+at their first postorder occurrence. Decoding requires the same deterministic
+table, with no duplicate, unreachable, reordered or unused entries. A scalar
+root has an empty table. Unknown fields, versions and tags fail closed.
+
+Descriptor-only inspection rejects accessors, unsupported prototypes, sparse
+arrays, unsafe keys and invalid Unicode without invoking application code.
+Dynamic programming counts expanded compact UTF-8 bytes, values and depth with
+reference multiplicity before allocating the restored tree. A small doubling
+table cannot bypass the normal entry or byte limits. Wire scaffolding has its
+own bounded structural allowance; the semantic limits remain 1,000,000 values,
+depth 64 and 1 MiB per string. Ordinary Model Pack inputs keep their existing
+validation path.
+
+Physical stream/file budgets and logical expansion budgets both apply. The
+split loaders charge each expanded file to the active aggregate byte limit,
+including duplicate content in a required bundle. The bundle loader applies its
+active bundle limit to expansion. Direct encoded-bundle verification has a
+64 MiB default expansion limit. Limits are checked before materialization and
+semantic verification; they do not change model identity or scientific scope.
+
+Canonical release writing explicitly selects `plain` or `value-table-v1`.
+Direct writer/replay calls default to plain; the current canonical CLI selects
+the table format for nodes and bundle. Exact replay checks the selected bytes,
+and an existing release cannot be converted in place. Registered frozen
+releases stay intact. All output encodings are checked before creating a new
+version directory, so codec-limit rejection cannot strand a partial release.
+Compatibility with loaders predating this transport is
+not claimed for new encoded files.
+
 <a id="browser-model-pack-worker-protocol"></a>
 
 ## Browser Model Pack worker protocol

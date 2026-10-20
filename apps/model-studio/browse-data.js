@@ -2,7 +2,7 @@ import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:4dbeaa6e5f73a336e898c1cc6137309d6880d6e5cdd0c232406b88d122ee45fc";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:7a758960994782483abf4690b3c46e8eefd53f889ee84b638be67f11fbc5c367";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,
@@ -18,7 +18,7 @@ export const BROWSE_LIMITS = Object.freeze({
 const HASH = /^sha256:[0-9a-f]{64}$/;
 const IDENTIFIER = /^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/;
 const PATH = /^(?:[A-Za-z0-9][A-Za-z0-9._-]*\/)*[A-Za-z0-9][A-Za-z0-9._-]*\.json$/;
-const REVIEW_KEYS = new Set(["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics"]);
+const REVIEW_KEYS = new Set(["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry"]);
 const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
 
 function fail(code, message) {
@@ -203,7 +203,8 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
     const graph = await readJson(new URL(entry.graph.path, base), entry.graph,
       BROWSE_LIMITS.graphBytes, fetchImplementation, signal);
     envelope(graph, "onto2d-studio-browse-graph", expectedIdentity);
-    exactFields(graph, ["format", "formatVersion", "identity", "model", "nodes", "edges", "presentation", "reviews", "chunks"], "Browse graph");
+    exactFields(graph, ["format", "formatVersion", "identity", "model", "nodes", "edges", "presentation", "reviews", "chunks",
+      ...(Object.hasOwn(graph, "interactionViews") ? ["interactionViews"] : [])], "Browse graph");
     if (!object(graph.model) || graph.model.id !== expectedIdentity.modelId
       || graph.model.version !== expectedIdentity.modelVersion || !Array.isArray(graph.nodes)
       || graph.nodes.length > BROWSE_LIMITS.nodes || !Array.isArray(graph.edges)
@@ -282,6 +283,8 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
     return Object.freeze({
       manifest: freeze({ model: graph.model, rootHash: graph.identity.rootHash, manifestHash: graph.identity.manifestHash }),
       presentation,
+      graphInput: freeze({ identity: graph.identity, nodes: graph.nodes, edges: graph.edges }),
+      interactionViews: freeze(graph.interactionViews ?? null),
       dictionaries: freeze({ presentation: graph.presentation }),
       reviews: freeze(reviews),
       async inspect(id, { signal: requestSignal } = {}) {

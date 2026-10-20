@@ -11,7 +11,7 @@ const DATA = path.join(ROOT, "apps/model-studio/data");
 const LOADER = path.join(ROOT, "apps/model-studio/browse-data.js");
 const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
 const EDGE_FIELDS = ["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight"];
-const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics"];
+const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry"];
 const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
 const pick = (value, fields) => Object.fromEntries(fields.filter((field) => Object.hasOwn(value, field)).map((field) => [field, value[field]]));
@@ -76,6 +76,10 @@ export function buildBrowseArtifacts(input) {
   }
   flush();
   const dictionaries = pack.files["model/dictionaries.json"];
+  const interactionViews = dictionaries.interactions ? {
+    cases: dictionaries.interactions.cases.map(({ id, title, entityIds, anchorEntityId }) => ({ id, title, entityIds, anchorEntityId })),
+    perspectives: dictionaries.interactions.perspectives
+  } : null;
   const reviews = {};
   for (const key of REVIEW_KEYS) {
     const value = dictionaries[key];
@@ -100,6 +104,7 @@ export function buildBrowseArtifacts(input) {
     nodes: sourceNodes.map(nodeProjection),
     edges: pack.files["model/edges.json"].map((edge) => pick(edge, EDGE_FIELDS)),
     presentation: dictionaries.presentation ?? {},
+    ...(interactionViews ? { interactionViews } : {}),
     reviews,
     chunks
   }), BROWSE_LIMITS.graphBytes);
@@ -143,7 +148,7 @@ async function main() {
   assert.ok(entry, "The requested canonical release must be registered before building browse artifacts");
   const release = path.resolve(ROOT, "models", entry.packPath);
   assert.ok(release.startsWith(path.join(ROOT, "models") + path.sep), "Registry pack path escapes models");
-  const pack = JSON.parse(await readFile(path.join(release, "bundle.json"), "utf8"));
+  const pack = verifyModelPack(JSON.parse(await readFile(path.join(release, "bundle.json"), "utf8")));
   assert.equal(pack.manifest.model.id, entry.modelId);
   assert.equal(pack.manifest.model.version, entry.version);
   assert.equal(pack.manifest.rootHash, entry.rootHash);

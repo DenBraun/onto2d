@@ -94,5 +94,6 @@ export function buildModelIndexes(
   edges: ModelPackEdge[]
 ): Readonly<ModelPackIndexes>;
 export function buildModelPack(input: BuildModelPackInput): Readonly<ModelPack>;
-export function verifyModelPack(pack: ModelPack): Readonly<ModelPack>;
+/** Verify a semantic pack or a supported bounded JSON value-table bundle. */
+export function verifyModelPack(pack: unknown): Readonly<ModelPack>;
 export function modelPackFilePaths(): Readonly<Record<string, string>>;

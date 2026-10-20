@@ -7,6 +7,7 @@ import { buildModelPack, verifyModelPack } from "@onto2d/model-pack";
 import { loadModelPackDirectory } from "@onto2d/model-pack/node";
 import { hashArtifactBytes } from "@onto2d/kernel";
 import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
+import { decodeJsonValueTable, isJsonValueTable } from "../../packages/model-pack/src/json-value-table.js";
 import {
   compileCanonicalGraph,
   verifyCanonicalRelease,
@@ -56,7 +57,7 @@ test("canonical entities retain source descriptions and evidence without generat
   const data = {
     graph: { model: { id: "projection-fixture", name: "Projection fixture", version: "1" },
       scope: { summary: "A scoped presentation fixture" }, entities: [entity], rules: [rule],
-      relations: [], sources: [publication], claims: [claim] },
+      relations: [], sources: [publication], claims: [claim], interactionCases: [], interactionAnalogies: [] },
     readiness: { nodeRoles: [{ nodeId: "entity", role: "definition" }, { nodeId: "rule", role: "rule-specification" }] },
     dictionaryReview: { records: [] }, pilot: { studies: [] },
     routing: { studies: [], contexts: [], reviews: [], measurements: [], routes: [] }, routingPolicy: {},
@@ -107,7 +108,7 @@ test("repeated passage citations retain complete claim-local evidence after seri
   const data = {
     graph: { model: { id: "citation-projection", name: "Citation projection", version: "1" },
       scope: { summary: "A claim-local projection fixture" }, entities: [entity], rules: [], relations: [],
-      sources: [publication, alternative], claims: [first, second] },
+      sources: [publication, alternative], claims: [first, second], interactionCases: [], interactionAnalogies: [] },
     readiness: { nodeRoles: [{ nodeId: entity.id, role: "scoped-phenomenon", denotes: entity.description,
       instanceAdmission: "none", claimIds: entity.claimIds }] },
     dictionaryReview: { records: [] }, pilot: { studies: [study] },
@@ -185,6 +186,40 @@ test("canonical compact bundle and semantic splits preserve loader identity and 
     assert.deepEqual(parsedCompact.manifest.semanticFiles, pack.manifest.semanticFiles);
     assert.deepEqual(parsedCompact.manifest.indexFiles, pack.manifest.indexFiles);
     assert.notEqual(hashArtifactBytes(new TextEncoder().encode(bundle)), hashArtifactBytes(new TextEncoder().encode(pretty(pack))), "Transport bytes differ while semantic hashes agree");
+  });
+});
+
+test("explicit value-table release transport restores the same semantic pack and exact byte replay", async () => {
+  await withDirectory(async (directory) => {
+    const pack = fixture();
+    const options = { transportEncoding: "value-table-v1" };
+    await writeCanonicalRelease(pack, directory, options);
+    const nodes = JSON.parse(await readFile(path.join(directory, "model/nodes.json"), "utf8"));
+    const bundle = JSON.parse(await readFile(path.join(directory, "bundle.json"), "utf8"));
+    assert.equal(isJsonValueTable(nodes), true);
+    assert.equal(isJsonValueTable(bundle), true);
+    assert.deepEqual(decodeJsonValueTable(nodes), pack.files["model/nodes.json"]);
+    assert.deepEqual(verifyModelPack(bundle), pack);
+    assert.deepEqual(await loadModelPackDirectory(directory), pack);
+    const before = await snapshot(directory, pack);
+    await verifyCanonicalRelease(pack, directory, options);
+    await writeCanonicalRelease(pack, directory, options);
+    assert.deepEqual(await snapshot(directory, pack), before, "Exact replay does not rewrite bytes or timestamps");
+    await assert.rejects(() => writeCanonicalRelease(pack, directory), /Refusing to overwrite release/);
+    assert.deepEqual(await snapshot(directory, pack), before, "Plain conversion is refused in place");
+  });
+});
+
+test("value-table transport cannot reformat an existing plain release or accept an unknown encoding", async () => {
+  await withDirectory(async (directory) => {
+    const pack = fixture();
+    await writeCanonicalRelease(pack, directory);
+    const before = await snapshot(directory, pack);
+    await assert.rejects(() => writeCanonicalRelease(pack, directory, { transportEncoding: "value-table-v1" }),
+      /Refusing to overwrite release/);
+    await assert.rejects(() => verifyCanonicalRelease(pack, directory, { transportEncoding: "unknown" }),
+      /Unknown canonical transport encoding/);
+    assert.deepEqual(await snapshot(directory, pack), before);
   });
 });
 
@@ -296,5 +331,23 @@ test("canonical release inventory and invalid-pack failures do not repair immuta
     const newDirectory = path.join(temporary, "invalid-release");
     await assert.rejects(() => writeCanonicalRelease(invalid, newDirectory));
     await assert.rejects(() => stat(newDirectory), (error) => error.code === "ENOENT", "Invalid pack creates no release directory");
+  });
+});
+
+test("transport encoding failures leave no immutable release directory", async () => {
+  await withDirectory(async (directory) => {
+    // Each scalar is canonical JSON; their escaped expansion exceeds the
+    // codec's 64 MiB bound even though semantic pack validation succeeds.
+    const pack = buildModelPack({
+      model: { id: "encoding-preflight", name: "Encoding preflight", version: "1" },
+      source: { id: "fixture-source", files: [] },
+      nodes: [{ id: "a", evidence: Array(11).fill("\u0000".repeat(1_048_576)) }],
+      edges: [], dictionaries: {}
+    });
+    await assert.rejects(() => writeCanonicalRelease(pack, directory, { transportEncoding: "value-table-v1" }),
+      (error) => error.code === "MODEL_PACK_JSON_VALUE_TABLE_LIMIT_EXCEEDED");
+    await assert.rejects(() => stat(directory), (error) => error.code === "ENOENT",
+      "A codec rejection must not strand a partial immutable version");
+    await writeCanonicalRelease(fixture(), directory, { transportEncoding: "value-table-v1" });
   });
 });

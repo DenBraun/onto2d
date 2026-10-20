@@ -13659,6 +13659,2097 @@
       ]
     },
     {
+      "nodeId": "bio:folding-readout-boundary",
+      "role": "definition",
+      "denotes": "Protein folding, structural inference and functional assay boundary within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-folding-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:anfinsen1961-refolding-context",
+      "role": "experimental-context",
+      "denotes": "Prepared RNase chemical refolding context within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-anfinsen1961-refolding-context"
+      ]
+    },
+    {
+      "nodeId": "bio:rnase-refolding-readouts",
+      "role": "scoped-phenomenon",
+      "denotes": "Separate RNase reoxidation and functional readouts within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rnase-refolding-readouts"
+      ]
+    },
+    {
+      "nodeId": "bio:rnase-reshuffling-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Tentative RNase disulfide-reshuffling interpretation within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rnase-reshuffling-inference"
+      ]
+    },
+    {
+      "nodeId": "bio:tuinstra2008-lymphotactin-context",
+      "role": "experimental-context",
+      "denotes": "Lymphotactin NMR, engineered-variant and heparin-control context within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-tuinstra2008-lymphotactin-context"
+      ]
+    },
+    {
+      "nodeId": "bio:lymphotactin-nmr-folds",
+      "role": "scoped-phenomenon",
+      "denotes": "Condition-dependent lymphotactin spectra and alternative fold inference within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-lymphotactin-nmr-folds"
+      ]
+    },
+    {
+      "nodeId": "bio:lymphotactin-functional-readouts",
+      "role": "scoped-phenomenon",
+      "denotes": "Lymphotactin variant-dependent XCR1 and heparin readouts within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-lymphotactin-functional-readouts"
+      ]
+    },
+    {
+      "nodeId": "bio:lymphotactin-heparin-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Controlled heparin-dependent lymphotactin signaling change within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-lymphotactin-heparin-response"
+      ]
+    },
+    {
+      "nodeId": "bio:sohl1998-alp-context",
+      "role": "experimental-context",
+      "denotes": "Alpha-lytic protease activity, spectroscopy and conditional rate context within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-sohl1998-alp-context"
+      ]
+    },
+    {
+      "nodeId": "bio:alp-folding-unfolding-rates",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-fitted alpha-lytic protease folding/unfolding rates within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-alp-folding-unfolding-rates"
+      ]
+    },
+    {
+      "nodeId": "bio:alp-metastability-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional alpha-lytic protease kinetic-metastability inference within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-alp-metastability-inference"
+      ]
+    },
+    {
+      "nodeId": "bio:protein-folding-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped folding, functional readout and kinetic-stability evidence within the declared protein, preparation, readout and interpretation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-protein-folding-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-initial-rate-parameters",
+      "role": "quantity-definition",
+      "denotes": "Initial-rate kinetic parameters for the selected KSI assay within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-ksi-initial-rate-parameters"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-kinetic-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared pKSI variants and 5(10)-EST initial-rate assay within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-ksi-kinetic-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-variant-turnover",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-fitted pKSI Y16 variant turnover within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ksi-variant-turnover"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-analogue-crystal-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared pKSI Y16S/D40N equilenin crystal within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-ksi-analogue-crystal-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-local-analogue-geometry",
+      "role": "scoped-phenomenon",
+      "denotes": "Localized pKSI analogue-binding geometry within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ksi-local-analogue-geometry"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-phenolate-probe-context",
+      "role": "experimental-context",
+      "denotes": "Prepared KSI fluorophenolate and solvent controls within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-ksi-phenolate-probe-context"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-local-probe-response",
+      "role": "scoped-phenomenon",
+      "denotes": "KSI-bound phenolate environment-sensitive spectrum within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ksi-local-probe-response"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-solvation-interpretation",
+      "role": "hypothesis",
+      "denotes": "Conditional KSI mutation and solvation interpretation within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ksi-solvation-interpretation",
+        "M-bio-ksi-solvation-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:t4-product-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared T4 lysozyme product-selection assay within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-t4-product-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:t4-transglycosylation-products",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite T26H longer-glycan product formation within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-t4-transglycosylation-products"
+      ]
+    },
+    {
+      "nodeId": "bio:t4-local-mechanistic-interpretation",
+      "role": "hypothesis",
+      "denotes": "Conditional T4 residue and reaction-channel interpretation within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-t4-local-mechanistic-interpretation",
+        "M-bio-t4-local-mechanistic-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:enzyme-assay-and-active-site-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped enzyme transformation and localized active-site evidence within the declared protein variant, substrate/probe, preparation, measured response and source interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-enzyme-assay-and-active-site-scope",
+        "M-bio-enzyme-assay-and-active-site-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:popovych2006-capn-nmr-context",
+      "role": "experimental-context",
+      "denotes": "CAPN ligand-series NMR and exchange context in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-popovych2006-capn-nmr-context"
+      ]
+    },
+    {
+      "nodeId": "bio:popovych2006-capn-itc-context",
+      "role": "experimental-context",
+      "denotes": "CAPN sequential-binding calorimetry context in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-popovych2006-capn-itc-context"
+      ]
+    },
+    {
+      "nodeId": "bio:cooperativity-fit-boundary",
+      "role": "definition",
+      "denotes": "Cooperativity, sequential binding and site-count boundary in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-cooperativity-fit-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:allostery-response-boundary",
+      "role": "definition",
+      "denotes": "Distal allostery and local chemical-readout boundary in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-allostery-response-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:capn-ligation-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Prepared CAPN ligation-state comparison in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-capn-ligation-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:capn-sequential-binding",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-fitted CAPN sequential binding and thermodynamics in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-capn-sequential-binding"
+      ]
+    },
+    {
+      "nodeId": "bio:capn-distal-nmr-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Ligand-dependent distal CAPN relaxation response in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-capn-distal-nmr-response"
+      ]
+    },
+    {
+      "nodeId": "bio:capn-amide-exchange-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Ligand-dependent CAPN amide H/D exchange protection in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-capn-amide-exchange-response"
+      ]
+    },
+    {
+      "nodeId": "bio:capn-entropic-interpretation",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional CAPN conformational-entropy interpretation in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-capn-entropic-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:cooperativity-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped CAPN binding cooperativity in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cooperativity-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:protein-allostery-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped distal CAPN allosteric response in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-protein-allostery-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:allosteric-local-response-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Scoped allosteric binding and amide-exchange modulation in the declared CAPN, ligand and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-allosteric-local-response-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:rna-folding-cleavage-observables",
+      "role": "quantity-definition",
+      "denotes": "Global RNA conformation proxies and cleavage-response parameters under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-rna-folding-cleavage-observables"
+      ]
+    },
+    {
+      "nodeId": "bio:penedo-hammerhead-fret-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared noncleavable hammerhead I-III FRET titration under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-penedo-hammerhead-fret-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:penedo-hammerhead-fret-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Loop-dependent hammerhead global FRET transitions under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-penedo-hammerhead-fret-response"
+      ]
+    },
+    {
+      "nodeId": "bio:penedo-hammerhead-cleavage-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared synthetic-RNA hammerhead cleavage assay under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-penedo-hammerhead-cleavage-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:penedo-hammerhead-cleavage-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite RNA-catalyzed substrate cleavage under supplied ions under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-penedo-hammerhead-cleavage-response"
+      ]
+    },
+    {
+      "nodeId": "bio:boots-hammerhead-fret-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared hammerhead I-II FRET and ion controls under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-boots-hammerhead-fret-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:boots-hammerhead-global-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Similar global folding responses despite different ion identities under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-boots-hammerhead-global-response"
+      ]
+    },
+    {
+      "nodeId": "bio:boots-hammerhead-cleavage-preparation",
+      "role": "experimental-context",
+      "denotes": "Prepared hammerhead ion-series cleavage and controls under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-boots-hammerhead-cleavage-preparation"
+      ]
+    },
+    {
+      "nodeId": "bio:boots-hammerhead-ion-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Metal-dependent apparent hammerhead reaction rates under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-boots-hammerhead-ion-response"
+      ]
+    },
+    {
+      "nodeId": "bio:hammerhead-folding-catalysis-boundary",
+      "role": "hypothesis",
+      "denotes": "Conditional separation of global RNA folding and catalytic response under the declared strand sequence, chemical modification, ion, concentration, temperature, optical or cleavage response and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-hammerhead-folding-catalysis-boundary",
+        "M-bio-hammerhead-folding-catalysis-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:biochemical-ec-hypothesis",
+      "role": "hypothesis",
+      "denotes": "An unsupported biochemical extension of an existing electronic-state nuclear-decay result; no biochemical preparation or physical instance is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-biochemical-ec-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:photopigment-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "A preparation-aware interpretation of existing rhodopsin observations and their transfer limits, not a newly identified photochemical occurrence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-photopigment-source-scope",
+        "M-bio-photopigment-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:biochemical-ec-transfer-boundary",
+      "role": "definition",
+      "denotes": "Methodological evidence-admission boundary; no positive biochemical decay observation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-biochemical-ec-transfer-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:apetri2008-rubisco-refolding-context",
+      "role": "experimental-context",
+      "denotes": "Purified Rubisco chaperonin refolding context within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-apetri2008-rubisco-refolding-context"
+      ]
+    },
+    {
+      "nodeId": "bio:apetri2008-mbp-refolding-context",
+      "role": "experimental-context",
+      "denotes": "Purified DM-MBP refolding and aggregation context within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-apetri2008-mbp-refolding-context"
+      ]
+    },
+    {
+      "nodeId": "bio:prakash2004-substrate-degradation-context",
+      "role": "experimental-context",
+      "denotes": "Defined-substrate lysate degradation context within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prakash2004-substrate-degradation-context"
+      ]
+    },
+    {
+      "nodeId": "bio:prakash2004-substrate-ubiquitination-context",
+      "role": "experimental-context",
+      "denotes": "Separate lysate ubiquitination-control context within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prakash2004-substrate-ubiquitination-context"
+      ]
+    },
+    {
+      "nodeId": "bio:prakash2004-substrate-unfolding-control-context",
+      "role": "experimental-context",
+      "denotes": "Separate cpLys38 global-unfolding control context within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prakash2004-substrate-unfolding-control-context"
+      ]
+    },
+    {
+      "nodeId": "bio:chaperone-readout-boundary",
+      "role": "definition",
+      "denotes": "Chaperone activity, proxy and aggregation boundary within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-chaperone-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-step-boundary",
+      "role": "definition",
+      "denotes": "Proteasome tagging, initiation and proteolysis boundary within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-proteasome-step-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:rubisco-chaperonin-protocol-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Controlled Rubisco refolding-protocol comparison within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rubisco-chaperonin-protocol-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rubisco-activity-recovery",
+      "role": "scoped-phenomenon",
+      "denotes": "Protocol-dependent recovery of Rubisco catalytic activity within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rubisco-activity-recovery"
+      ]
+    },
+    {
+      "nodeId": "bio:rubisco-solution-association",
+      "role": "scoped-phenomenon",
+      "denotes": "Rubisco solution association during activity recovery within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rubisco-solution-association"
+      ]
+    },
+    {
+      "nodeId": "bio:mbp-chaperonin-protocol-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Controlled MBP refolding-protocol comparisons within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-mbp-chaperonin-protocol-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:mbp-fluorescence-and-scattering",
+      "role": "scoped-phenomenon",
+      "denotes": "DM-MBP fluorescence recovery and solution scattering within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-mbp-fluorescence-and-scattering"
+      ]
+    },
+    {
+      "nodeId": "bio:chaperonin-aggregation-account",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional aggregation-prevention account of refolding assistance within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-chaperonin-aggregation-account"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-defined-substrate-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Controlled tag, tail and folded-domain substrate series within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-proteasome-defined-substrate-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-tail-dependent-degradation",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-attributed tail-dependent substrate degradation in lysate within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-proteasome-tail-dependent-degradation"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-stabilized-domain-clipping",
+      "role": "scoped-phenomenon",
+      "denotes": "C-terminal clipping without complete stabilized-DHFR destruction within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-proteasome-stabilized-domain-clipping"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-tagging-control",
+      "role": "scoped-phenomenon",
+      "denotes": "Ubiquitination control for the shortened N-end-rule linker within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-proteasome-tagging-control"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-unfolding-control",
+      "role": "scoped-phenomenon",
+      "denotes": "Tail and cpLys38 global-unfolding control within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-proteasome-unfolding-control"
+      ]
+    },
+    {
+      "nodeId": "bio:proteasome-initiation-account",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional separation of targeting and degradation initiation within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-proteasome-initiation-account"
+      ]
+    },
+    {
+      "nodeId": "bio:chaperone-quality-control-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite chaperone and quality-control source scope within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-chaperone-quality-control-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:selective-proteasome-degradation-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite selective proteasome-degradation source scope within its stated client/substrate and assay boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-selective-proteasome-degradation-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:reaction-gibbs-equilibrium",
+      "role": "quantity-definition",
+      "denotes": "Definitions of reaction Gibbs energy, reaction quotient and equilibrium constant under a specified reaction equation and reference state.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-reaction-gibbs-equilibrium"
+      ]
+    },
+    {
+      "nodeId": "bio:elementary-rate-conventions",
+      "role": "quantity-definition",
+      "denotes": "Conventions that separate observed concentration change, reaction rate, reaction order and elementary-step molecularity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-elementary-rate-conventions"
+      ]
+    },
+    {
+      "nodeId": "bio:activation-gibbs-convention",
+      "role": "quantity-definition",
+      "denotes": "Activation Gibbs energy and its rate relation under the stated elementary-rate and standard-state convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-activation-gibbs-convention"
+      ]
+    },
+    {
+      "nodeId": "bio:catalysis-equilibrium-boundary",
+      "role": "definition",
+      "denotes": "The definitional boundary between catalytic rate changes and the net reaction equilibrium at fixed conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-catalysis-equilibrium-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:ksi-catalytic-energy-identifiability",
+      "role": "hypothesis",
+      "denotes": "A bounded interpretation of the admitted KSI variant, analogue-structure and probe records, retaining their separate preparations and solvation assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ksi-catalytic-energy-identifiability",
+        "M-bio-ksi-solvation-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:amit1986-hewl-d13-crystallography-context",
+      "role": "experimental-context",
+      "denotes": "HEWL-D1.3 crystallographic context within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-amit1986-hewl-d13-crystallography-context"
+      ]
+    },
+    {
+      "nodeId": "bio:modig2004-bpti-supercooled-mrd-context",
+      "role": "experimental-context",
+      "denotes": "Supercooled BPTI water-relaxation context within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-modig2004-bpti-supercooled-mrd-context"
+      ]
+    },
+    {
+      "nodeId": "bio:antibody-recognition-measurement-boundary",
+      "role": "definition",
+      "denotes": "Antibody interface versus binding-mechanism boundary within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-antibody-recognition-measurement-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:hydration-mrd-interpretation-boundary",
+      "role": "definition",
+      "denotes": "Hydration relaxation versus structure and ion-distribution boundary within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-hydration-mrd-interpretation-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:hewl-d13-crystallographic-model",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-refined HEWL-D1.3 structural model within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-hewl-d13-crystallographic-model"
+      ]
+    },
+    {
+      "nodeId": "bio:hewl-d13-interface-geometry",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite HEWL-D1.3 interface geometry within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-hewl-d13-interface-geometry"
+      ]
+    },
+    {
+      "nodeId": "bio:hewl-d13-conformational-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Resolution-limited HEWL conformational comparison within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-hewl-d13-conformational-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:bpti-water-relaxation-observation",
+      "role": "scoped-phenomenon",
+      "denotes": "BPTI water relaxation dispersion within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-bpti-water-relaxation-observation"
+      ]
+    },
+    {
+      "nodeId": "bio:bpti-mrd-source-fit",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-fitted BPTI MRD parameters within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-bpti-mrd-source-fit"
+      ]
+    },
+    {
+      "nodeId": "bio:bpti-hydration-dynamics-interpretation",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional heterogeneous BPTI hydration dynamics within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-bpti-hydration-dynamics-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:antigen-antibody-recognition-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite antigen-antibody recognition source scope within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-antigen-antibody-recognition-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:protein-hydration-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite protein hydration and ionic-microenvironment source scope within the declared structural or solvent-relaxation measurement boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-protein-hydration-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:model-vesicle-readout-boundary",
+      "role": "definition",
+      "denotes": "For these model-vesicle records, define membrane assembly/enclosure, solute permeation, polymer retention, template-directed primer extension, supplied-lipid membrane growth, shear-associated fission and competitive membrane-area redistribution as distinct response categories. A source comparison must identify its membrane composition, cargo, medium, timescale, readout and external input before a broader biochemical or population interpretation is made.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-model-vesicle-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:zhu2009-oleate-assembly-context",
+      "role": "experimental-context",
+      "denotes": "The source makes aqueous oleate vesicles from supplied oleic-acid film in buffered solution, and selects approximately 4 micrometre multilamellar compartments. HPTS reports enclosed aqueous space in epifluorescence; a separate membrane-labelled confocal preparation resolves lamellar structure. The main oleate imaging regime is room temperature and sodium bicine pH 8.5. Subsequent micelle feeding is a separate experimental input.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-zhu2009-oleate-assembly-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-assembly-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Prepared supplied-amphiphile vesicles enclose fluorescent aqueous material; confocal images support multilamellar membrane organization before and after the source growth/division operation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-assembly-scope",
+        "M-bio-vesicle-assembly-scope-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:mansy2008-ribose-context",
+      "role": "experimental-context",
+      "denotes": "Compare the source myristoleate-based and other prepared amphiphile vesicles with encapsulated calcein. Ribose addition produces an osmotic volume response recorded by stopped-flow fluorescence at 23 C in POPSO pH 8.2, with the stated EDTA or magnesium alternative. The apparent solute permeability comes from slower volume recovery after initial water efflux; retain membrane composition, vesicle size and sugar-pulse assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-mansy2008-ribose-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-ribose-permeability",
+      "role": "scoped-phenomenon",
+      "denotes": "For the selected Table S1 comparison, ribose permeability is reported as 24 for myristoleate and 87 for 2:1 myristoleate:monomyristolein, in units 10^-8 cm/s. Other composition/solute comparisons show conditional variation rather than a universal permeability constant.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-ribose-permeability"
+      ]
+    },
+    {
+      "nodeId": "bio:mansy2008-nucleotide-context",
+      "role": "experimental-context",
+      "denotes": "The source examines nucleotide release from prepared approximately 100 nm fatty-acid-based vesicles in sodium bicine pH 8.5 at 23 C, using gel filtration followed by radioactivity or UV absorbance. Retain 2:1 myristoleate:monomyristolein as the selected preparation and distinguish nucleotide activation state and the presence or absence of magnesium.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-mansy2008-nucleotide-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-nucleotide-permeability",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected membrane shows little AMP/ADP/ATP leakage over 24 hours without magnesium; AMP and ADP can permeate slowly with magnesium. Singly charged phosphorimidazolide-activated nucleotides cross more readily, with source-reported equilibration half-time approximately 12 hours under the approximately 100 nm conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-nucleotide-permeability"
+      ]
+    },
+    {
+      "nodeId": "bio:mansy2008-retention-context",
+      "role": "experimental-context",
+      "denotes": "The source incorporates supplied fluorescein-labelled dA10 into prepared amphiphile vesicles, removes exterior oligonucleotide by size-exclusion separation and follows released versus vesicle-associated fluorescence. The stability assay is sodium bicine pH 8.5 at 23 C with a 24-hour observation; Figure S6 reports the same retention result for the tested membrane compositions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-mansy2008-retention-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-oligonucleotide-retention",
+      "role": "scoped-phenomenon",
+      "denotes": "Figure S6 shows approximately 100% vesicle-associated fluorescent dA10 over the displayed 24-hour window in the source assay. This supports finite polymer retention alongside separate small-solute permeability observations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-oligonucleotide-retention"
+      ]
+    },
+    {
+      "nodeId": "bio:mansy2008-primer-context",
+      "role": "experimental-context",
+      "denotes": "The source preloads and purifies 2:1 myristoleate:monomyristolein vesicles containing a modified DNA primer annealed to a dC15-bearing template. Externally supplied activated amino-guanosine initiates nonenzymatic extension at 4 C in the declared bicine/imidazole medium. Size-exclusion purification separates any exterior primer-template, and denaturing gel electrophoresis reads product length. A POPC preparation provides a separate membrane-composition comparison at 4 C.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-mansy2008-primer-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-template-extension",
+      "role": "scoped-phenomenon",
+      "denotes": "In the selected fatty-acid vesicles, gel products extend substantially by 3 hours and full-length product accumulates through 24 hours after externally supplied activated monomer. POPC vesicles show no detectable corresponding extension in the source assay. This demonstrates finite transport/retention/chemistry compatibility, not a completed genome-replication cycle.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-template-extension"
+      ]
+    },
+    {
+      "nodeId": "bio:zhu2009-fed-cycle-context",
+      "role": "experimental-context",
+      "denotes": "The source labels prepared approximately 4 micrometre multilamellar oleate membranes with a donor/acceptor FRET pair in bicine pH 8.5 at room temperature. Two externally supplied micelle-feed rounds are followed with FRET and separate microscopy, with externally applied agitation between growth rounds. Retain this membrane-area acquisition apart from RNA-cargo and glycine volume-recovery assays.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-zhu2009-fed-cycle-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-fed-membrane-growth",
+      "role": "scoped-phenomenon",
+      "denotes": "After the first feed the source FRET response corresponds to approximately 3.7-fold membrane-area growth by approximately 25 minutes, with thread-like shape formation. A second feed produces another area-growth response; microscopy follows division after applied agitation in the cycle experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-fed-membrane-growth"
+      ]
+    },
+    {
+      "nodeId": "bio:zhu2009-rna-partition-context",
+      "role": "experimental-context",
+      "denotes": "The source encapsulates supplied fluorescent A10 RNA in approximately 4 micrometre multilamellar oleate vesicles in bicine pH 8.5. Following externally supplied oleate-micelle growth and applied agitation, fluorescence microscopy counts RNA-bearing daughter compartments; filtrate fluorescence measures release, with intact and detergent-lysed reference signals. The selected result is Figure 3A-D oleate, not the separate decanoate mixture.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-zhu2009-rna-partition-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-short-rna-partition",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports approximately sixfold more detectable RNA-containing oleate vesicles after one fed/agitated division operation, with only trace RNA leakage; extrusion releases much more RNA in the separate comparison. Retained short cargo is partitioned into daughter compartments without demonstrated RNA replication.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-short-rna-partition"
+      ]
+    },
+    {
+      "nodeId": "bio:chen2004-trna-competition-context",
+      "role": "experimental-context",
+      "denotes": "The source compares prepared 2:1 myristoleate:glycerol-monomyristoleate vesicles with supplied tRNA as an internal osmolyte against low-osmolarity vesicles of the same membrane composition. Main text reports tRNA at 83 mg/ml, approximately 0.26 M nucleotide equivalents. Alternate FRET labelling follows relative membrane area in separate comparison arms. Detailed recipe and calibration remain outside the unread Supporting Online Material.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-chen2004-trna-competition-context"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-competition-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "For the tRNA competition arms, Table 1 reports approximately 21% area gain in the swollen labelled preparation and 23% area loss in the low-osmolarity labelled preparation; source-fitted response rates are about 0.1 per minute. This is finite differential membrane-area growth under an imposed osmolyte contrast, without a measured heritable genotype-frequency change.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-competition-scope",
+        "M-bio-vesicle-competition-scope-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-permeability-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected prepared fatty-acid membranes pass different small solutes at composition- and nucleotide-dependent rates while retaining a separate supplied oligonucleotide over its finite assay. These observations support selective passive exchange in model membranes; they do not establish active control, maintained metabolism or universal import/export requirements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-permeability-scope",
+        "M-bio-vesicle-permeability-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-encapsulation-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Prepared lipid vesicles retain supplied short oligonucleotides; a separately prepared encapsulated DNA primer-template supports externally fed modified-nucleotide extension, and another vesicle study partitions supplied short RNA into daughters. This preserves positive confinement and reaction compatibility while leaving general catalyst/network intensification, genotype-phenotype coupling and coacervate alternatives outside the admitted result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-encapsulation-scope",
+        "M-bio-vesicle-encapsulation-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:vesicle-growth-division-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected oleate experiments couple externally supplied membrane growth to shapes that divide under applied fluid agitation, and a separate cargo preparation retains and partitions short supplied RNA. This is positive finite growth/division and cargo redistribution, with supplied feed and force explicit; internally synthesized membranes, replenished genomes, accurate nonrandom segregation and autonomous reproduction are not demonstrated.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-vesicle-growth-division-scope",
+        "M-bio-vesicle-growth-division-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:electrochemical-gradient-coupling",
+      "role": "quantity-definition",
+      "denotes": "Thermodynamic bookkeeping convention, distinct from an experimental gradient or energy-yield measurement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-electrochemical-gradient-coupling"
+      ]
+    },
+    {
+      "nodeId": "bio:racker-bioenergetic-readouts",
+      "role": "quantity-definition",
+      "denotes": "Declared observable identities for the two source preparations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-racker-bioenergetic-readouts"
+      ]
+    },
+    {
+      "nodeId": "bio:racker-proton-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative assay and control contract; no new operating recipe.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-racker-proton-response"
+      ]
+    },
+    {
+      "nodeId": "bio:racker-proton-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite calibrated bulk-pH response and source pump/leak interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-racker-proton-response"
+      ]
+    },
+    {
+      "nodeId": "bio:racker-phosphorylation-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative endpoint phosphorylation-reporter contract, separate from the pH assay.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-racker-phosphorylation-response"
+      ]
+    },
+    {
+      "nodeId": "bio:racker-phosphorylation-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite source-reported phosphate-to-trapped-product response with controlled omissions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-racker-phosphorylation-response"
+      ]
+    },
+    {
+      "nodeId": "bio:racker-coupling-interpretation",
+      "role": "hypothesis",
+      "denotes": "Published model interpretation bounded by the source observations and preparations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-racker-coupling-interpretation",
+        "M-bio-racker-coupling-interpretation"
+      ]
+    },
+    {
+      "nodeId": "bio:primitive-chemiosmotic-coupling-open",
+      "role": "hypothesis",
+      "denotes": "Explicit unresolved interpretation of original card 3.47, not a claim that such coupling is impossible.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-primitive-chemiosmotic-coupling-open"
+      ]
+    },
+    {
+      "nodeId": "bio:signal-response-boundary",
+      "role": "definition",
+      "denotes": "Distinguish a supplied biochemical pathway preparation, input-dependent molecular activation, downstream enzyme response and any separate electrical readout. One local response does not identify an entire network or a universal transfer gain.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-signal-response-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:fung-signal-context",
+      "role": "experimental-context",
+      "denotes": "Reuse only the recorded Fung abstract, preparation and two biochemical observables. Preserve the original reading limit and separate molecular activity from electrical response and any larger pathway model.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-fung-signal-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:signal-transduction-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The existing Fung preparation supports a finite light-dependent transducin/PDE biochemical response. This is a local signal-transduction example; network topology, universal amplification and adaptive control are separate unmeasured claims.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-signal-transduction-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:sequence-fold-function-boundary",
+      "role": "definition",
+      "denotes": "Distinguish polymer sequence, environment-conditioned conformations, source structural models and functional response assays. A construct comparison can change both sequence and conformation; inherited sequence, catalytic persistence and selective amplification require their own measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-sequence-fold-function-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:sequence-dependent-folding-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The reused lymphotactin study links named WT/engineered constructs, condition-sensitive NMR folds and distinct calcium/heparin responses. This supports a bounded sequence/structure/function association with environment and partners explicit; neither unique-fold determinism nor selective inheritance follows.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-sequence-dependent-folding-scope",
+        "M-bio-sequence-fold-function-reuse"
+      ]
+    },
+    {
+      "nodeId": "bio:grx-redox-reporter",
+      "role": "quantity-definition",
+      "denotes": "Declared reporter and inference distinctions for the selected redox study.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-grx-redox-reporter"
+      ]
+    },
+    {
+      "nodeId": "bio:grx-sensor-characterization",
+      "role": "experimental-context",
+      "denotes": "Qualitative sensor-characterization contract, separate from living-cell observations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-grx-sensor-characterization"
+      ]
+    },
+    {
+      "nodeId": "bio:grx-sensor-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite purified-reporter response and specificity comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-grx-sensor-characterization"
+      ]
+    },
+    {
+      "nodeId": "bio:hela-redox-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative live-cell perturbation and response contract for the specified sensor-accessible region.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-hela-redox-response"
+      ]
+    },
+    {
+      "nodeId": "bio:hela-redox-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-reported intracellular optical oxidation/reduction time courses.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-hela-redox-response"
+      ]
+    },
+    {
+      "nodeId": "bio:intracellular-ph-reporter",
+      "role": "quantity-definition",
+      "denotes": "Declared pH sensor and physiological-inference convention.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-intracellular-ph-reporter"
+      ]
+    },
+    {
+      "nodeId": "bio:yeast-glucose-ph-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative intracellular-pH perturbation, time-course and genetic-control contract.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-yeast-glucose-ph-response"
+      ]
+    },
+    {
+      "nodeId": "bio:yeast-glucose-ph-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite calibrated intracellular-pH trajectories and selected genetic contrasts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-yeast-glucose-ph-response"
+      ]
+    },
+    {
+      "nodeId": "bio:redox-recovery-inference",
+      "role": "hypothesis",
+      "denotes": "Published reporter-based redox interpretation conditional on sensor and compartment assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-redox-recovery-inference",
+        "M-bio-redox-recovery-inference"
+      ]
+    },
+    {
+      "nodeId": "bio:template-chemistry-readout-boundary",
+      "role": "definition",
+      "denotes": "In these selected reactions, an activated nucleotide is a supplied chemically modified substrate with a leaving group. Separate downstream activated oligomers can accelerate primer extension under the source comparison. Define kobs as the source pseudo-first-order primer-loss fit, and fN as the matched-addition rate divided by the sum of matched and mismatched rates on that template in the declared separate-assay convention. Neither fN nor its mean is an independently measured all-context copying accuracy or a genome-replication result.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-template-chemistry-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:prywes2016-activation-context",
+      "role": "experimental-context",
+      "denotes": "The source prepares monophosphorylated RNA monomers/oligomers and converts their5-prime phosphates to2-methylimidazolides using supplied laboratory reagents, then purifies products chromatographically. Its worked AGC example is checked by negative-mode electrospray MS and UV-based concentration estimation. These prepared stocks are supplied to the extension assays; their continuing reactivation is not part of those reactions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prywes2016-activation-context"
+      ]
+    },
+    {
+      "nodeId": "bio:prepared-nucleotide-activation",
+      "role": "scoped-phenomenon",
+      "denotes": "The Methods report an isolated activated AGC helper preparation with negative-mode ESI/MS m/z996 and spectrophotometric stock concentration. This is a concrete laboratory activated-substrate/intermediate preparation, without a measured universal energy-rich state or autonomous activation supply.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-prepared-nucleotide-activation"
+      ]
+    },
+    {
+      "nodeId": "bio:prywes2016-helper-context",
+      "role": "experimental-context",
+      "denotes": "Use the source prepared RNA primer/template with activated G monomer and compare no downstream helper against AGC bearing5-prime OH, phosphate or2-methylimidazole activation. The selected Figure1 reaction is buffered with CHES pH9 and magnesium; gel fluorescence measures remaining primer over time and the source fits pseudo-first-order kobs. The differing template arrangements and monomer/oligomer reactions remain labelled rather than treated as one identical binding geometry.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prywes2016-helper-context"
+      ]
+    },
+    {
+      "nodeId": "bio:activated-helper-extension-effect",
+      "role": "scoped-phenomenon",
+      "denotes": "For the selected downstream-helper comparison, the source reports that activated AGC increases single-G primer-extension rate by more than two orders of magnitude relative to its unactivated helper variants. Product-length gels and primer-loss fits support a finite helper-dependent nonenzymatic extension effect, while the microscopic catalytic mechanism remains conditional.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-activated-helper-extension-effect"
+      ]
+    },
+    {
+      "nodeId": "bio:prywes2016-discrimination-context",
+      "role": "experimental-context",
+      "denotes": "The source combines the same RNA primer and activated AGC helper with four short templates differing at the next copying position, and separately assays each of the four2-methylimidazole activated canonical monomers. Denaturing-gel primer conversion gives apparent kobs for16template/monomer combinations. Retain the Figure2/3caption versus Methods monomer-concentration discrepancy and the unreported unique reaction temperature.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prywes2016-discrimination-context"
+      ]
+    },
+    {
+      "nodeId": "bio:template-dependent-rate-discrimination",
+      "role": "scoped-phenomenon",
+      "denotes": "The source table reports matched U-on-A,A-on-U,G-on-C andC-on-G kobs central values1,6,26 and44per hour respectively; the G-on-U mismatch is0.3per hour,about5%of the matched A-on-U response. Other mismatches are slower but nonzero. The source averages its separate-assay discrimination fractions to report98%,with no claim here of universal or mixed-pool copying fidelity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-template-dependent-rate-discrimination"
+      ]
+    },
+    {
+      "nodeId": "bio:prywes2016-mixed-context",
+      "role": "experimental-context",
+      "denotes": "The source assays a prepared short RNA template with a simultaneous mixture of activated A,G,C and2-thiouridine monomers,plus selected activated helper trimers. It compares absent versus added helper sets and follows denaturing-gel extension lengths over time. Preserve the differing Figure4caption and Methods preparation descriptions rather than pool them into a corrected protocol.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-prywes2016-mixed-context"
+      ]
+    },
+    {
+      "nodeId": "bio:short-mixed-nonenzymatic-extension",
+      "role": "scoped-phenomenon",
+      "denotes": "Figure4shows finite multi-step primer extension in the helper-containing mixed-monomer preparation,including products extended by four nucleotides,where the corresponding helper-absent lane shows little extension. This is source-specific qualitative chain growth,without a repaired exact yield/time value,all-sequence fidelity or autonomous replication claim.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-short-mixed-nonenzymatic-extension"
+      ]
+    },
+    {
+      "nodeId": "bio:activated-nucleotide-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports prepared activated RNA species and helper-dependent extension;the existing Mansy context supplies a different externally provided activated amino-nucleotide in a vesicle assay. These retain concrete activation chemistry and reactive substrates without deriving a universal chemical energy,prebiotic supply route or self-renewing biochemical organization.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-activated-nucleotide-source-scope",
+        "M-bio-activated-nucleotide-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:template-complementarity-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected RNA experiment shows matched additions faster than mismatched additions under defined separate assays. It supports finite template-dependent kinetic discrimination;source-derived fidelity averages and error-threshold interpretations remain conditional rather than all-context pairing rules,stable-association energetics or demonstrated inherited information.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-template-complementarity-source-scope",
+        "M-bio-template-complementarity-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:nonenzymatic-extension-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Selected prepared RNA experiments show helper-dependent single additions and finite mixed-monomer chain extension;the unchanged Mansy preparation shows a different externally fed modified-DNA template extension inside vesicles. Together these establish finite nonenzymatic template-guided growth while retaining supplied activation,condition discrepancies and the absence of complete renewable genome replication.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-nonenzymatic-extension-source-scope",
+        "M-bio-nonenzymatic-extension-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:fesenko-rod-patch-context",
+      "role": "experimental-context",
+      "denotes": "Reused cGMP rod-patch context within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-fesenko-rod-patch-context"
+      ]
+    },
+    {
+      "nodeId": "bio:zhao2016-cage-characterization-context",
+      "role": "experimental-context",
+      "denotes": "DNA-cage enzyme characterization context within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-zhao2016-cage-characterization-context"
+      ]
+    },
+    {
+      "nodeId": "bio:zhao2016-gox-hrp-cascade-context",
+      "role": "experimental-context",
+      "denotes": "GOx-HRP cage comparison activity context within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-zhao2016-gox-hrp-cascade-context"
+      ]
+    },
+    {
+      "nodeId": "bio:ion-channel-structure-measurement-boundary",
+      "role": "definition",
+      "denotes": "Channel conductance versus transport-object boundary within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-ion-channel-structure-measurement-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:enzyme-assembly-channeling-boundary",
+      "role": "definition",
+      "denotes": "Enzyme assembly, coupled activity and channeling boundary within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-enzyme-assembly-channeling-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:gox-hrp-cage-association",
+      "role": "scoped-phenomenon",
+      "denotes": "Source-supported GOx-HRP cage association within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-gox-hrp-cage-association",
+        "M-bio-zhao2016-cage-characterization-context"
+      ]
+    },
+    {
+      "nodeId": "bio:gox-hrp-cage-protocol-comparison",
+      "role": "scoped-phenomenon",
+      "denotes": "Controlled GOx-HRP cage preparation comparison within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-gox-hrp-cage-protocol-comparison",
+        "M-bio-zhao2016-gox-hrp-cascade-context"
+      ]
+    },
+    {
+      "nodeId": "bio:gox-hrp-coupled-activity-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Preparation-dependent coupled GOx-HRP activity within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-gox-hrp-coupled-activity-response",
+        "M-bio-zhao2016-gox-hrp-cascade-context"
+      ]
+    },
+    {
+      "nodeId": "bio:gox-hrp-compartment-account",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional finite enzyme-compartment account within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-gox-hrp-compartment-account",
+        "M-bio-gox-hrp-compartment-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:ion-channel-transport-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite channel and membrane-transport source scope within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ion-channel-transport-source-scope",
+        "M-bio-ion-channel-scope-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:enzymatic-complex-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite enzymatic-complex source scope within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-enzymatic-complex-source-scope",
+        "M-bio-gox-hrp-compartment-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:metabolic-compartment-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite metabolic-compartment source scope within the declared preparation and measurement/interpretation boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-metabolic-compartment-source-scope",
+        "M-bio-gox-hrp-compartment-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:chromatin-assay-boundary",
+      "role": "definition",
+      "denotes": "Distinguish locus bisulfite and histone/factor-associated ChIP, transposase accessibility, population contact profiles, nuclear RNA abundance and protein output. Correlation, broad perturbation, cohort persistence and inherited causal memory are separate claims.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-chromatin-assay-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:epigenetic-regulation-source-scope-context",
+      "role": "experimental-context",
+      "denotes": "Reuse only the named original assay contexts and complete source limits. Keep bulk/cohort sampling, drug/genetic perturbations, separate molecular profiles and unresolved source discrepancies explicit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-epigenetic-regulation-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:epigenetic-regulation-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The reused rat study reports locus-specific methylation/chromatin contrasts and broad TSA-associated molecular responses. These support finite environmentally responsive chromatin observations, while causal mediation, general sequence independence and inherited regulatory memory remain unestablished.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-epigenetic-regulation-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:chromatin-packaging-source-scope-context",
+      "role": "experimental-context",
+      "denotes": "Reuse only the named original assay contexts and complete source limits. Keep bulk/cohort sampling, drug/genetic perturbations, separate molecular profiles and unresolved source discrepancies explicit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-chromatin-packaging-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:chromatin-packaging-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The reused mouse studies report accessibility, population contact and RNA-profile differences in their own selected preparations. These supply bounded organization/expression associations and perturbation responses, not a unique physical packing geometry or a demonstrated packaging-to-expression causal mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-chromatin-packaging-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:protein-modification-readout-boundary",
+      "role": "definition",
+      "denotes": "Distinguish post-synthesis substrate conjugate accumulation, an engineered genetic fusion, targeting, initiation and later functional/degradation outcomes. An accumulating ubiquitin-associated band is not an isolated modification rate or a universal reversible protein-control mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-protein-modification-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:protein-modification-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The reused lysate control reports ubiquitinated-form accumulation for full and shortened N-end-rule DHFR constructs at similar source rates and extents. This is a finite protein-modification readout; it does not make every modification fast, reversible, site-resolved or sufficient for degradation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-protein-modification-source-scope",
+        "M-bio-protein-modification-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:lincoln2009-pair-serial-transfer-context",
+      "role": "experimental-context",
+      "denotes": "RNA cross-catalytic pair transfer context within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-lincoln2009-pair-serial-transfer-context"
+      ]
+    },
+    {
+      "nodeId": "bio:schwander2016-cetch54-isotope-product-context",
+      "role": "experimental-context",
+      "denotes": "CETCH finite isotope/product context within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-schwander2016-cetch54-isotope-product-context"
+      ]
+    },
+    {
+      "nodeId": "bio:autocatalytic-network-measurement-boundary",
+      "role": "definition",
+      "denotes": "Catalytic closure and resource boundary within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-autocatalytic-network-measurement-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:metabolic-cycle-measurement-boundary",
+      "role": "definition",
+      "denotes": "Cyclic regeneration and flux boundary within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-metabolic-cycle-measurement-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:rna-reciprocal-catalyst-production",
+      "role": "scoped-phenomenon",
+      "denotes": "Reciprocal RNA catalyst production within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rna-reciprocal-catalyst-production",
+        "M-bio-rna-network-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:rna-finite-serial-amplification",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite RNA serial amplification within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rna-finite-serial-amplification",
+        "M-bio-rna-network-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:cetch-intermediate-product-observation",
+      "role": "scoped-phenomenon",
+      "denotes": "CETCH labeling and coupled output within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cetch-intermediate-product-observation",
+        "M-bio-cetch-cycle-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:cetch-finite-cyclic-operation",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite supplied CETCH cyclic operation within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cetch-finite-cyclic-operation",
+        "M-bio-cetch-cycle-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:autocatalytic-network-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite cross-catalytic network scope within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-autocatalytic-network-source-scope",
+        "M-bio-rna-network-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:metabolic-cycle-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite metabolic-cycle scope within the stated finite preparation and inference boundary.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-metabolic-cycle-source-scope",
+        "M-bio-cetch-cycle-interpretation-method",
+        "C-bio-cetch-composition-nonsufficiency"
+      ]
+    },
+    {
+      "nodeId": "bio:genetic-information-readout-boundary",
+      "role": "definition",
+      "denotes": "For these selected studies, a density-band position reports nitrogen-isotope composition under the source buoyant-density assumptions; acid-insoluble nucleotide incorporation with chemical/enzyme tests reports a qualified RNA product; and acid-precipitable amino-acid radioactivity with product tests reports qualified polypeptide synthesis. Bulk isotope or base composition, product solubility and incorporated radioactivity do not by themselves measure complete sequence, copying error frequency, codon length, molecular machine structure or inherited functional continuity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-genetic-information-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:meselson1958-nitrogen-transfer-context",
+      "role": "experimental-context",
+      "denotes": "The source grew E. coli B with heavy nitrogen and shifted the supplied nitrogen substrates to lighter isotopic composition. DNA-containing lysates collected across estimated population generations were analysed by equilibrium CsCl density-gradient centrifugation, ultraviolet absorption and microdensitometry; heavy, light and mixed reference preparations defined relative band positions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-meselson1958-nitrogen-transfer-context"
+      ]
+    },
+    {
+      "nodeId": "bio:dna-isotope-partition-response",
+      "role": "scoped-phenomenon",
+      "denotes": "After the heavy-to-light nitrogen shift, intermediate-density DNA accumulates as the initially heavy band declines. Around one population generation the principal band is intermediate; later light and intermediate bands coexist with changing proportions. The source interprets this pattern as equal partition and conservation of parental nitrogen-bearing subunits during DNA duplication, consistent with semiconservative copying under the declared model and preparation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-dna-isotope-partition-response"
+      ]
+    },
+    {
+      "nodeId": "bio:meselson1958-heat-subunit-context",
+      "role": "experimental-context",
+      "denotes": "The source compared heated and unheated E. coli DNA-containing lysates carrying heavy, light or hybrid nitrogen labels. Equilibrium CsCl ultraviolet density profiles after the reported heat treatment were compared with separately heated heavy/light mixtures, while band-width-based apparent molecular-weight interpretations retained the source solvation caveat.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-meselson1958-heat-subunit-context"
+      ]
+    },
+    {
+      "nodeId": "bio:dna-heat-subunit-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Heating the hybrid-labelled E. coli DNA preparation replaces its intermediate-density band with two separated species comparable to the heated heavy and light references. Together with the source apparent molecular-weight response, this supports physically separable conserved nitrogen-bearing subunits, without direct chemical identification of every subunit or a measured in-vivo separation pathway.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-dna-heat-subunit-response"
+      ]
+    },
+    {
+      "nodeId": "bio:chamberlin1962-rna-incorporation-context",
+      "role": "experimental-context",
+      "denotes": "The source purified an RNA-synthesizing fraction from E. coli B and assayed labelled ribonucleoside-triphosphate incorporation into acid-insoluble material with supplied DNA, other triphosphates, divalent cations and buffer. Matched component omissions and chemical/RNase/DNase product tests distinguish the selected preparation and its RNA-product interpretation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-chamberlin1962-rna-incorporation-context"
+      ]
+    },
+    {
+      "nodeId": "bio:dna-dependent-rna-product",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected E. coli enzyme-fraction assay gives DNA- and divalent-ion-dependent labelled CMP incorporation, strongly reduced by the declared component omissions. The product is alkali-sensitive and largely RNase-sensitive. These results support finite enzyme-fraction-dependent RNA synthesis from supplied inputs, rather than a complete sequence-resolved or physiologically regulated transcription cycle.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-dna-dependent-rna-product"
+      ]
+    },
+    {
+      "nodeId": "bio:chamberlin1962-dna-rna-composition-context",
+      "role": "experimental-context",
+      "denotes": "The source compared nucleotide composition of RNA synthesized by the purified E. coli fraction with supplied natural DNA or synthetic alternating DNA copolymers. Selected radiolabel/alkaline-degradation methods and the single- versus double-stranded phiX174 DNA comparison test bulk compositional correspondence while retaining strand and sequence limitations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-chamberlin1962-dna-rna-composition-context"
+      ]
+    },
+    {
+      "nodeId": "bio:dna-rna-composition-response",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports RNA-product base-composition changes with different supplied DNA preparations and complementary composition for the selected single-stranded DNA input. This supports a finite DNA-dependent compositional constraint on RNA synthesis, without direct sequence fidelity, unique strand choice or complete in-vivo transcription regulation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-dna-rna-composition-response"
+      ]
+    },
+    {
+      "nodeId": "bio:nirenberg1961-polyu-incorporation-context",
+      "role": "experimental-context",
+      "denotes": "The source supplied synthetic polyuridylic acid to a prepared cell-free E. coli W3100 system and measured labelled phenylalanine recovered in acid-precipitable product. Other supplied polynucleotides/uridine compounds and component/inhibitor comparisons bound the response; partial product characterization used extraction, solubility and hydrolysis comparisons with authentic poly-L-phenylalanine.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-nirenberg1961-polyu-incorporation-context"
+      ]
+    },
+    {
+      "nodeId": "bio:polyu-phenylalanine-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Supplied polyU strongly increases labelled-phenylalanine incorporation in the declared cell-free E. coli preparation, whereas the selected alternative polynucleotides/uridine compounds do not replace it. Ribosome/soluble-fraction and energy-system comparisons constrain the preparation. The isolated product has several properties of poly-L-phenylalanine, supporting finite RNA-dependent polypeptide synthesis without a complete codon/frame/fidelity mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-polyu-phenylalanine-response"
+      ]
+    },
+    {
+      "nodeId": "bio:replication-transcription-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Selected bacterial isotope-transfer and heat-subunit observations support qualified semiconservative DNA partition; separate E. coli enzyme-fraction experiments support supplied-DNA-dependent RNA-product synthesis and bulk composition. These finite results retain copying and expression while leaving complete sequence fidelity, regulated end-to-end machinery and universal inherited continuity outside the admitted measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-replication-transcription-source-scope",
+        "M-bio-replication-transcription-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:translation-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "The selected supplied-polyU cell-free E. coli experiment supports RNA-dependent phenylalanine incorporation and a product with several poly-L-phenylalanine properties. It retains finite template-associated polypeptide production without attributing a complete codon/adaptor/frame/translocation/fidelity mechanism or recursive functional-protein production to this source.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-translation-source-scope",
+        "M-bio-translation-source-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-readout-boundary",
+      "role": "definition",
+      "denotes": "Declared source/readout distinction and exclusion of mechanisms beyond the original experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-rnai-readout-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-phenotype-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative preparation/comparison contract for introduced RNA and finite C. elegans phenotype readouts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-rnai-phenotype-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-phenotype-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite double-strand versus single-strand functional comparison in the specified worm preparations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rnai-phenotype-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-dual-gfp-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative dual-reporter optical comparison with target/control and preparation boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-rnai-dual-gfp-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-dual-gfp-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite reporter fluorescence and target-related selectivity comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rnai-dual-gfp-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-mex3-context",
+      "role": "experimental-context",
+      "denotes": "Qualitative endogenous-transcript detection contract, separate from phenotype and fluorescence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-rnai-mex3-transcript-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-mex3-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite endogenous-transcript staining comparison with detection limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rnai-mex3-transcript-comparison"
+      ]
+    },
+    {
+      "nodeId": "bio:rnai-source-inference",
+      "role": "hypothesis",
+      "denotes": "Bounded original-publication interpretation of the three separate readout contexts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-rnai-source-inference",
+        "M-bio-rnai-source-inference"
+      ]
+    },
+    {
+      "nodeId": "bio:phage-observation-boundaries",
+      "role": "definition",
+      "denotes": "Declared cross-card readout and inference boundaries for the six reviewed viral catalogue cards.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-phage-observation-boundaries"
+      ]
+    },
+    {
+      "nodeId": "bio:ms2-optical-assembly-context",
+      "role": "experimental-context",
+      "denotes": "High-level optical assembly/readout contract; no procedure or optimized conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-ms2-optical-assembly"
+      ]
+    },
+    {
+      "nodeId": "bio:ms2-optical-assembly-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite source optical assembly trajectories and a separately reported morphology comparison.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ms2-optical-assembly"
+      ]
+    },
+    {
+      "nodeId": "bio:ms2-asymmetric-genome-context",
+      "role": "experimental-context",
+      "denotes": "High-level structural reconstruction and model-assignment contract; preparation/propagation procedures excluded.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-ms2-asymmetric-genome"
+      ]
+    },
+    {
+      "nodeId": "bio:ms2-asymmetric-genome-structure",
+      "role": "scoped-phenomenon",
+      "denotes": "Bounded MS2 genome-conformation and RNA-capsid density correspondence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ms2-asymmetric-genome"
+      ]
+    },
+    {
+      "nodeId": "bio:ms2-isolated-receptor-context",
+      "role": "experimental-context",
+      "denotes": "High-level isolated-receptor structural-association contract; preparation/binding recipes excluded.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-ms2-isolated-receptor"
+      ]
+    },
+    {
+      "nodeId": "bio:ms2-isolated-receptor-association",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite isolated-receptor association and explicit separation from cellular entry.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ms2-isolated-receptor"
+      ]
+    },
+    {
+      "nodeId": "bio:viral-card-9-scope",
+      "role": "definition",
+      "denotes": "Definition of the admitted/restricted scope for original card 3.9.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-viral-card-9-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:viral-card-10-scope",
+      "role": "hypothesis",
+      "denotes": "Definition of the admitted/restricted scope for original card 3.10.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-viral-card-10-scope",
+        "C-bio-viral-card-10-unresolved"
+      ]
+    },
+    {
+      "nodeId": "bio:viral-card-16-scope",
+      "role": "hypothesis",
+      "denotes": "Definition of the admitted/restricted scope for original card 3.16.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-viral-card-16-scope",
+        "C-bio-viral-card-16-unresolved"
+      ]
+    },
+    {
+      "nodeId": "bio:viral-card-29-scope",
+      "role": "definition",
+      "denotes": "Definition of the admitted/restricted scope for original card 3.29.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-viral-card-29-scope"
+      ]
+    },
+    {
+      "nodeId": "bio:viral-card-30-scope",
+      "role": "hypothesis",
+      "denotes": "Definition of the admitted/restricted scope for original card 3.30.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-viral-card-30-scope",
+        "C-bio-viral-card-30-unresolved"
+      ]
+    },
+    {
+      "nodeId": "bio:viral-card-35-scope",
+      "role": "hypothesis",
+      "denotes": "Definition of the admitted/restricted scope for original card 3.35.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-viral-card-35-scope",
+        "C-bio-viral-card-35-unresolved"
+      ]
+    },
+    {
+      "nodeId": "bio:nott2015-ddx4-thermal-demixing-context",
+      "role": "experimental-context",
+      "denotes": "Ddx4 thermal demixing context within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-nott2015-ddx4-thermal-demixing-context"
+      ]
+    },
+    {
+      "nodeId": "bio:nott2015-ddx4-frap-context",
+      "role": "experimental-context",
+      "denotes": "Ddx4 qualitative FRAP context within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-nott2015-ddx4-frap-context"
+      ]
+    },
+    {
+      "nodeId": "bio:nott2015-ddx4-dna-partition-context",
+      "role": "experimental-context",
+      "denotes": "Ddx4 labeled-DNA partition context within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-nott2015-ddx4-dna-partition-context"
+      ]
+    },
+    {
+      "nodeId": "bio:exterkate2018-pa-time-course-context",
+      "role": "experimental-context",
+      "denotes": "Supplied PA synthesis context within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-exterkate2018-pa-time-course-context"
+      ]
+    },
+    {
+      "nodeId": "bio:exterkate2018-r18-lipid-dilution-context",
+      "role": "experimental-context",
+      "denotes": "Membrane R18 dye-dilution context within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-exterkate2018-r18-lipid-dilution-context"
+      ]
+    },
+    {
+      "nodeId": "bio:exterkate2018-membrane-morphology-context",
+      "role": "experimental-context",
+      "denotes": "Membrane morphology context within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-exterkate2018-membrane-morphology-context"
+      ]
+    },
+    {
+      "nodeId": "bio:condensate-demixing-measurement-boundary",
+      "role": "definition",
+      "denotes": "Demixing, mobility and partition boundary within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-condensate-demixing-measurement-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:lipid-synthesis-membrane-growth-boundary",
+      "role": "definition",
+      "denotes": "Lipid synthesis and boundary readout boundary within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-bio-lipid-synthesis-membrane-growth-boundary"
+      ]
+    },
+    {
+      "nodeId": "bio:ddx4-reversible-demixing",
+      "role": "scoped-phenomenon",
+      "denotes": "Reversible Ddx4 terminal-region demixing within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ddx4-reversible-demixing",
+        "M-bio-nott2015-ddx4-thermal-demixing-context"
+      ]
+    },
+    {
+      "nodeId": "bio:ddx4-qualitative-droplet-mobility",
+      "role": "scoped-phenomenon",
+      "denotes": "Qualitative Ddx4 droplet fluorescence recovery within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ddx4-qualitative-droplet-mobility",
+        "M-bio-nott2015-ddx4-frap-context"
+      ]
+    },
+    {
+      "nodeId": "bio:ddx4-labeled-dna-partition",
+      "role": "scoped-phenomenon",
+      "denotes": "Ddx4 labeled-DNA partition proxy within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-ddx4-labeled-dna-partition",
+        "M-bio-nott2015-ddx4-dna-partition-context"
+      ]
+    },
+    {
+      "nodeId": "bio:condensate-phase-separation-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite Ddx4 condensate scope within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-condensate-phase-separation-source-scope",
+        "M-bio-ddx4-condensate-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:supplied-pa-chemical-conversion",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite supplied phosphatidic-acid production within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-supplied-pa-chemical-conversion",
+        "M-bio-exterkate2018-pa-time-course-context"
+      ]
+    },
+    {
+      "nodeId": "bio:fatty-acid-r18-dequenching",
+      "role": "scoped-phenomenon",
+      "denotes": "Fatty-acid-associated R18 dequenching within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-fatty-acid-r18-dequenching",
+        "M-bio-exterkate2018-r18-lipid-dilution-context"
+      ]
+    },
+    {
+      "nodeId": "bio:phospholipid-preparation-morphology",
+      "role": "scoped-phenomenon",
+      "denotes": "Preparation-dependent membrane morphology within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-phospholipid-preparation-morphology",
+        "M-bio-exterkate2018-membrane-morphology-context"
+      ]
+    },
+    {
+      "nodeId": "bio:supplied-lipid-membrane-account",
+      "role": "scoped-phenomenon",
+      "denotes": "Conditional supplied lipid-membrane account within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-supplied-lipid-membrane-account",
+        "M-bio-lipid-membrane-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:lipid-biosynthesis-membrane-source-scope",
+      "role": "scoped-phenomenon",
+      "denotes": "Finite lipid biosynthesis and membrane scope within the declared preparation, proxy and inference limits.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-lipid-biosynthesis-membrane-source-scope",
+        "M-bio-lipid-membrane-interpretation-method"
+      ]
+    },
+    {
+      "nodeId": "bio:schwander2016-cetch10-stepwise-context",
+      "role": "experimental-context",
+      "denotes": "CETCH 1.0 stepwise-addition context within its source-reported preparation or explicitly unresolved interpretation boundary; no physical token or completed construction rule is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-schwander2016-cetch10-stepwise-context"
+      ]
+    },
+    {
+      "nodeId": "bio:schwander2016-cetch10-combined-context",
+      "role": "experimental-context",
+      "denotes": "CETCH 1.0 combined-operation context within its source-reported preparation or explicitly unresolved interpretation boundary; no physical token or completed construction rule is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-bio-schwander2016-cetch10-combined-context"
+      ]
+    },
+    {
+      "nodeId": "bio:cetch10-stepwise-conversion",
+      "role": "scoped-phenomenon",
+      "denotes": "CETCH 1.0 reported stepwise conversion within its source-reported preparation or explicitly unresolved interpretation boundary; no physical token or completed construction rule is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cetch10-stepwise-conversion"
+      ]
+    },
+    {
+      "nodeId": "bio:cetch10-combined-stall",
+      "role": "scoped-phenomenon",
+      "denotes": "CETCH 1.0 reported incomplete combined turn within its source-reported preparation or explicitly unresolved interpretation boundary; no physical token or completed construction rule is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cetch10-combined-stall"
+      ]
+    },
+    {
+      "nodeId": "bio:cetch10-electron-acceptor-attribution",
+      "role": "hypothesis",
+      "denotes": "CETCH 1.0 proposed electron-acceptor bottleneck within its source-reported preparation or explicitly unresolved interpretation boundary; no physical token or completed construction rule is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cetch10-electron-acceptor-attribution"
+      ]
+    },
+    {
+      "nodeId": "bio:cetch54-supplied-assembly",
+      "role": "scoped-phenomenon",
+      "denotes": "CETCH 5.4 supplied enzyme and resource assembly within its source-reported preparation or explicitly unresolved interpretation boundary; no physical token or completed construction rule is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-bio-cetch54-supplied-assembly"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

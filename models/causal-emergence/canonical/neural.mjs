@@ -1,4 +1,8 @@
 import assert from "node:assert/strict";
+import { BIOCHEMISTRY_CLAIM_IDS } from "./level-three.mjs";
+
+const isReviewedBiochemicalReuse = (claim) =>
+  BIOCHEMISTRY_CLAIM_IDS.has(claim.id) && /^[DCM]-bio-/.test(claim.id);
 
 const effects = [
   ["neural:neuroligin-contact-presynaptic-differentiation", "neuroligin-contact", "presynaptic-differentiation", "scheiffele2000", "C-neural-neuroligin-contact-presynaptic-differentiation"],
@@ -430,7 +434,10 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.equal(sources.get(sid).doi, doi, "Gene-regulation source identity changed");
   }
   for (const sid of ["su2017", "weaver2004"]) {
-    for (const c of graph.claims.filter((c) => c.contextIds?.includes(sid))) {
+    // Exact biochemical reuse contracts separately admit methods and synthesis
+    // across these preparations; the original neural findings retain this check.
+    for (const c of graph.claims.filter((c) => c.contextIds?.includes(sid)
+        && !isReviewedBiochemicalReuse(c))) {
       assert.equal(c.status, "publication-supported");
       assert.deepEqual(c.contextIds, [sid], "Unmatched gene-regulation preparations pooled");
       assert.deepEqual(c.checkIds, [], "Source reading became independent sequencing or biological reproduction");
@@ -477,7 +484,8 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     "Maternal-care result lost its reviewed assay or foster-control methods");
   assert.equal(sources.get("marco2020").year, 2020);
   assert.equal(sources.get("marco2020").doi, "10.1038/s41593-020-00717-0", "Engram study identity changed");
-  for (const c of graph.claims.filter((c) => c.contextIds?.includes("marco2020"))) {
+  for (const c of graph.claims.filter((c) => c.contextIds?.includes("marco2020")
+      && !isReviewedBiochemicalReuse(c))) {
     assert.equal(c.status, "publication-supported");
     assert.deepEqual(c.contextIds, ["marco2020"], "Conditioning and induced-activation preparations pooled");
     assert.deepEqual(c.checkIds, [], "Engram source inspection became independent biological reproduction");

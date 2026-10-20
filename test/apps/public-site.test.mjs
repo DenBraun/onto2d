@@ -1001,7 +1001,10 @@ test("Model Studio binds incremental and full-pack views to exact verified relea
   assert.match(studioApp, /state\.presentation\.neighborhood\(/);
   assert.match(studioApp, /loadBrowseModel\(resolution/);
   assert.match(studioApp, /dataset\.presentation = state\.browse \? "incremental" : "lazy"/);
-  assert.doesNotMatch(studioApp, /pack\.files\["model\/(?:nodes|edges)\.json"\]/);
+  // Explicit interaction lenses may select the topology of an already verified
+  // full pack. Incremental releases use their pinned lightweight graph instead.
+  assert.match(studioApp, /options\.browse\?\.graphInput/);
+  assert.match(studioApp, /selectInteractionGraph\(state\.interactionGraphInput/);
   assert.doesNotMatch(studioApp, /function fetchJson/);
   assert.doesNotMatch(studioApp, /if\s*\([^)]*modelId\s*===\s*["']/);
   assert.match(studioApp, /Model verified/);

@@ -264,7 +264,9 @@
     "structural-geometry:site:build": "node apps/structural-geometry-lab/build.mjs --write",
     "structural-geometry:site:check": "node apps/structural-geometry-lab/build.mjs --check",
     "model:causal-emergence:legacy:verify": "node models/causal-emergence/build.mjs --verify",
-    "check:canonical": "node scripts/check-canonical-source.mjs"
+    "check:canonical": "node scripts/check-canonical-source.mjs",
+    "case:canonical-interactions": "node scripts/check-interaction-pilot.mjs --write",
+    "case:canonical-interactions:verify": "node scripts/check-interaction-pilot.mjs --verify"
   },
   "dependencies": {
     "@onto2d/canonical-identity-analysis": "0.1.0",

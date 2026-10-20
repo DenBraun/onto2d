@@ -9,12 +9,17 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1478 records, 1462 connections, 1653 claims and 468 sources.
+The current graph contains 1705 records, 1704 connections, 1921 claims and 501 sources.
 The physics review contains 219 study contexts and 143 comparisons.
+The biochemistry review contains 61 preparation contexts from 31 publications.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 The [Level-2 work queue](LEVEL_2_REVIEW.md) covers all 23 physical, chemical and
 material source cards. All have scoped dispositions; surface radiometry and
 propagation retain their finite model and measurement boundaries.
+The [Level-3 source review](LEVEL_3_REVIEW.md) gives scoped dispositions for all
+50 biochemical cards, including existing retinal photochemistry. No Level-3
+cards remain pending. Explicit unresolved hypotheses remain scientific limits,
+not unfinished source tasks; completed disposition does not reproduce experiments.
 Open neural work concerns glial functions, gene regulation, neuroimmune
 interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
 
@@ -27,8 +32,28 @@ interactions, neurovascular coupling, adult neurogenesis, working memory, symbol
 | [visual-review.json](visual-review.json) | Visual relay, cortical organization and feedback |
 | [neural-review.json](neural-review.json) | Neural preparations and interpretation tests |
 | [physics-review.json](physics-review.json) | Physical experiments, computational contexts and conditional interpretations |
+| [biochemistry-review.json](biochemistry-review.json) | Biochemical preparations, measured responses and conditional mechanisms |
 | [dictionary-review.json](dictionary-review.json) | Scoped vocabulary and mathematical checks |
 | [source-readiness.json](source-readiness.json) | Representation roles and Formal Core requirements |
+| [interaction-pilot.json](interaction-pilot.json) | Case selections, candidate tests and separate-publication transfer checks |
+
+The graph stores fourteen source-bound `interactionCases`, thirty-two typed
+properties and ten proposed `interactionAnalogies`. Case records bind conditions,
+resources, responses, finite observation/inference horizons and unknowns to their
+existing claims and preparation identities. Model Studio exposes System, Evidence
+and Hypotheses views, a case selector and complete case evidence at each anchor.
+Related records link to that anchor. Supplied inputs remain distinct from tested
+necessity, inferred kinetics from observed durations, and product plateaus from
+loss of materials or function.
+
+The [interaction comparison](../../cases/canonical-interactions/README.md) selects
+these canonical records without storing a second scientific case catalogue. It compares
+conditions, persistence and operation across existing physics, chemistry and
+biochemistry records. The selection is retrospective; no new physical relation,
+prospective validation or universal organization law is admitted.
+Three separate primary studies test transfer of the comparison criteria; their
+reading limits and source records remain in the pilot rather than becoming
+canonical physical claims.
 
 The [construction policy](../../docs/architecture/SOURCE_POLICY.md) explains how
 evidence enters the graph. The [validation record](../../models/causal-emergence/canonical/VALIDATION.md)
@@ -40,6 +65,127 @@ npm run model:causal-emergence:verify
 
 Original manuscripts and source catalogues remain research inputs. Formal Core
 implementation follows the data review.
+
+## Protein folding and enzyme assays
+
+The [RNase refolding experiment](https://doi.org/10.1073/pnas.47.9.1309)
+separates chemical and spectral changes from substrate-dependent recovered
+activity. Its disulfide-interchange explanation remains tentative. The
+[lymphotactin study](https://doi.org/10.1073/pnas.0709518105) distinguishes
+alternative restrained folds, engineered variants and ligand-sensitive response
+assays. The unresolved construct identity and unread supplement remain explicit.
+The [alpha-lytic protease study](https://doi.org/10.1038/27470) infers kinetic
+metastability from fitted rates and extrapolation; it does not directly sample
+equilibrium populations or observe millennial folding times. These preparations
+do not support a universal unique native fold or a universal free-energy minimum.
+
+The [KSI study](https://doi.org/10.1073/pnas.0911168107) separates initial-rate
+fits, a double-mutant analogue crystal and fluorophenolate spectroscopy. Its
+Table S2 arithmetic conflict is retained. Mutation effects do not isolate one
+hydrogen-bond energy, and the spectra do not measure a local dielectric constant.
+The [T4 lysozyme study](https://doi.org/10.1073/pnas.96.16.8949) separates
+endpoint products, qualitative activity and conditional structural mechanisms.
+Its product ratio is not an initial-rate enhancement; inherited controls,
+unrefined double-mutant datasets and conflicting peak labels retain their limits.
+These same acquisitions support the catalysis and active-site scopes without
+creating independent replications. No universal parent weights or carrier
+thresholds are admitted.
+
+The [CAPN study](https://doi.org/10.1038/nsmb1132) supplies a finite negative
+cooperativity case, with distinct NMR and calorimetric preparations. Distal
+motion and amide-exchange responses do not measure intrinsic bond strength or
+identify one communication pathway. Model-based conformational entropy is an
+upper bound and differs from total calorimetric entropy. The isolated protein
+fragment supplies no transcription or catalytic-turnover assay.
+
+The hammerhead studies by [Penedo](https://doi.org/10.1261/rna.5268404) and
+[Boots](https://doi.org/10.1261/rna.1010808) separate global FRET titrations from
+reaction progress in differently prepared strands. A global proximity response
+does not identify catalytic competence. Cleavage-plus-ligation equilibration,
+active fractions, ion backgrounds, source extrapolation and the unresolved
+calcium table/prose conflict retain their own limits. Supplied synthetic RNA
+demonstrates finite reaction functionality; it does not establish autonomous
+RNA manufacture, repeated turnover, inheritance or early-life history.
+
+## Recognition, hydration and protein quality control
+
+The [HEWL-D1.3 crystal](https://doi.org/10.1126/science.2426778) supplies a
+resolution-limited bound interface. Unbound D1.3, quantitative affinity and a
+binding route are outside its admitted evidence. The
+[BPTI hydration study](https://doi.org/10.1021/ja038325d) separates water
+relaxation, source fits and conditional surface-water assignments. Apparent
+populations, excluded data and the unresolved W111 interpretation remain explicit;
+no ionic shell or universal long-range solvent ordering follows.
+
+The [chaperonin comparison](https://doi.org/10.1073/pnas.0809794105) distinguishes
+client recovery after release from fluorescence and aggregation proxies.
+The [proteasome study](https://doi.org/10.1038/nsmb814) separates tagging,
+initiation, unfolding, clipping and degradation in lysate. Neither supplies a
+measured universal chaperone-to-proteasome routing system.
+
+## Reaction energy and regulated cellular responses
+
+Selected [IUPAC conventions](https://doi.org/10.1039/9781847557889) distinguish
+activity-based equilibrium, elementary activation quantities and composite
+turnover. The [reconstituted energy-transduction study](https://doi.org/10.1016/S0021-9258(19)43080-9)
+keeps external-pH traces separate from a phosphorylation-trapping reporter.
+Modern protein machinery does not instantiate protein-free primitive coupling.
+
+The [glutathione-linked reporter](https://doi.org/10.1038/nmeth.1212) separates
+purified-sensor characterization, intracellular ratios, imposed reduction and
+finite recovery. It does not directly measure every redox couple or recycling
+flux. The [yeast pH study](https://doi.org/10.1074/jbc.RA117.000422) supplies
+source-calibrated glucose/genotype responses; incomplete calibration transfer,
+essential-gene exclusions and the proposed feedback mechanism retain their limits.
+
+## Model membranes and nonenzymatic template chemistry
+
+The [Mansy vesicle study](https://doi.org/10.1038/nature07018) separates solute
+permeation, short-polymer retention and externally fed modified-DNA extension.
+[Zhu and Szostak](https://doi.org/10.1021/ja900919c) distinguish supplied-lipid
+growth, externally forced division and short-RNA redistribution. The
+[osmotic competition study](https://doi.org/10.1126/science.1100757) measures
+membrane-area redistribution, not heritable genotype-frequency selection.
+
+The [Prywes RNA study](https://doi.org/10.7554/eLife.17756) distinguishes prepared
+activation, helper-dependent extension, separate match/mismatch rates and mixed
+short-template growth. Its reported discrimination average is not measured
+genome-copying fidelity. Caption/Methods condition conflicts remain unresolved;
+supplied substrates and external inputs do not establish autonomous reproduction.
+
+## Genetic information, networks and membrane chemistry
+
+[DNA isotope partition](https://doi.org/10.1073/pnas.44.7.671) supports a
+qualified semiconservative-copying interpretation; separate
+[RNA synthesis](https://doi.org/10.1073/pnas.48.1.81) and
+[polyU-dependent peptide assays](https://doi.org/10.1073/pnas.47.10.1588)
+retain finite product and composition evidence rather than complete sequence
+fidelity or expression machinery. The [worm RNA-interference study](https://doi.org/10.1038/35888)
+keeps phenotypes, fluorescent reporters and transcript staining distinct;
+it does not identify the complete modern silencing mechanism or permanent inheritance.
+
+[Reciprocal RNA ligation](https://doi.org/10.1126/science.1167856) demonstrates
+finite amplification with supplied substrates and replenishment. The separate
+[CETCH assay](https://doi.org/10.1126/science.aah5237) combines intermediate
+isotope labeling with a coupled product trap. Neither establishes complete
+resource autonomy, indefinite persistence or adaptive metabolic control.
+
+[Ddx4 terminal-region droplets](https://doi.org/10.1016/j.molcel.2015.01.013)
+have distinct demixing, tracer-mobility and DNA-partition preparations.
+[Phospholipid synthesis](https://doi.org/10.1021/acssynbio.7b00265) occurs in
+pre-existing liposomes; dye response precedes conversion, and morphology
+comparisons change multiple conditions. No universal condensate mechanism,
+de novo boundary origin or self-maintaining cell follows.
+
+## Benign-phage evidence boundaries
+
+The MS2 studies separate [optical assembly trajectories](https://doi.org/10.1073/pnas.1909223116),
+[asymmetric genome density](https://doi.org/10.1038/ncomms12524) and
+[association with isolated pili](https://doi.org/10.1016/j.str.2013.05.012).
+Their calibration, resolution and reading limits remain attached to each
+context. They do not demonstrate maturation to infectious competence,
+complete cellular entry, a full infection cycle or host-expression reprogramming;
+those broader hypotheses remain unresolved.
 
 ## Primordial nuclear synthesis and abundance inference
 

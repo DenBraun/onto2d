@@ -1,80 +1,80 @@
 # Current canonical validation
 
-Current graph: `2026.10.19.0`, checked locally on 19 October 2026.
+Current graph: `2026.10.20.2`, checked locally on 20 October 2026.
+It contains 1705 records, 1704 connections, 1921 claims and 501 sources:
+1517 descriptive and 187 functional connections. The biochemical ledger has
+61 preparation contexts from 31 publications. All 244 bound input hashes and
+96 local source hashes match current bytes.
 
-The source contains 1478 records, 1462 connections, 1653 claims and 468 sources.
-There are 1282 descriptive and 180 functional connections. The physics review
-contains 219 study contexts and 143 comparisons. All 219 bound input hashes and
-95 local source hashes match current bytes.
+The canonical graph contains 14 interaction cases, 32 source-bound properties
+and 10 proposed correspondences. Each case retains participants, changed factor,
+observable, response, conditions, resources, boundary, time scale, controls,
+interpretation and uncertainty. Unreported fields remain unknown. Case anchors
+carry the selected claims, publication metadata and study records; other member
+records link to those anchors. The comparison protocol selects canonical cases
+and records evaluation judgments without maintaining another scientific catalogue.
 
-- `npm test` passes all 790 ordinary tests with no failures, cancellations or
-  skips, including citation resolution and actual inspector rendering.
-- The 244 focused canonical tests pass, including 173 groups for Level-2
-  scientific boundaries and source admission, routing and serialization checks.
-- `npm run build` passes, including 217 schema and 189 Markdown checks,
-  declarations, workspace boundaries, worker and registry verification.
-- `npm run model:causal-emergence:verify` passes exact source compilation and
-  current-release verification. Existing finite witnesses retain their scope;
-  no new BBN network, spectroscopy fit, molecular/solid-state calculation,
-  liquid trajectory or experimental analysis is independently reproduced.
-- `npm run model-studio:data:verify` verifies all 92 browser files. The registry
-  has 40 entries; Model Studio uses revision `20261019.1` and the current graph.
+CETCH 1.0 sequential conversion into key intermediates and its reported combined
+stall have separate preparation records. Their complete protocol and reaction
+duration remain unknown; no values are inherited from the later 5.4 preparation.
+Electron-acceptor attribution remains an unresolved hypothesis. Finite supplied
+5.4 operation establishes neither autonomy nor the necessity of each supplied
+input. RNA batch-product plateau establishes stopped net accumulation, without
+establishing destruction of components or irreversible functional loss.
 
-The focused canonical command is:
+Local verification covers:
 
-```sh
-node --test --test-concurrency=4 test/workspace/canonical-{source,physics,routing,readiness,bbn,em-regime,atomic-structure,molecular-chemistry,dispersion,hydrogen-bond,molecular-polarization,crystal-order,aromaticity,quantum-reaction,liquid-organization,colloid-interface,metallic-bonding,phase-regime,piezoelectric-ferroelectric,mossbauer,electronic-decay,casimir-scope,hyperfine,surface-scattering,optical-propagation,level-two-reuse,release-serialization}.test.mjs
-```
+- `npm test`: 835 ordinary software tests, including default release loading.
+- `node --test --test-concurrency=4 test/workspace/canonical-*.test.mjs`:
+  846 checks of canonical source, scientific admission boundaries, finite witnesses
+  and serialization; source/projection, routing and serialization suites also
+  pass in focused runs.
+- `node --test test/workspace/model-studio-browse.test.mjs`: 22 tests of incremental
+  browsing, integrity limits and real CLI execution with plain and encoded bundles.
+- `npm run build`: source syntax, declarations, schemas, documentation,
+  workspace boundaries, worker, registry and stored comparison artifacts.
+- `npm run model:causal-emergence:verify`: exact current-source compilation
+  and release bytes, within the scope of the declared finite checks.
+- `npm run model-studio:data:verify`: all 125 browser artifacts.
 
-A current-artifact integration probe checks exact compilation, bound sources,
-registry preservation, every browser detail and catalogue/search/level-filter
-parity across all pages. All 1478 selected records match the release. Initial
-browsing uses two requests totaling 1299625 bytes; details remain lazy.
-Production HTTP-directory loading reconstructs the current and previous exact
-release in 11 requests each within default budgets. These use file-backed Fetch
-responses, not a rendered browser, live network timings or a visual check.
+Lossless value tables preserve complete nodes and the optional bundle. Physical
+release files total 30304872 bytes; the largest file is the 11916684-byte bundle,
+within the unchanged 16 MiB individual limit. Expanded compact JSON totals
+63233448 bytes, including the repeated optional bundle, leaving 3875416 bytes
+below the unchanged 64 MiB aggregate bound. Default Node directory loading and
+whole-pack integrity verification accept the actual release. All selected
+encodings are checked before a new release directory is created; codec-limit
+failures leave no partial version. Scientific semantic files match `2026.10.20.1`.
 
-Complete publication metadata is stored once per source within each attached
-claim. Every passage citation retains its source ID, locator, role and note;
-claim-local resolution reconstructs all source metadata and links exactly.
-All 4212 citations in 1589 attached rationale entries
-round-trip, with 1543 repeated metadata copies omitted. Study
-contexts remain complete. The current raw records show this compact
-representation; original catalogues and registered frozen releases are intact.
+Initial browser data uses two requests totaling 1552693 bytes: index and graph.
+The selected record's detail chunk loads separately; other details and reviews
+load on demand. System, Evidence and Hypotheses views use the compact projection
+without requesting the complete pack. They preserve existing scientific roles;
+proposed correspondences do not introduce physical graph edges. Rendered Chrome
+checks cover all 14 cases in all three views, source links and reading boundaries,
+CETCH hypothesis status, URL restoration, desktop/mobile layouts, access to
+all cards through vertical scrolling at 950 by 600 pixels, and switching
+between the current incremental release and the earlier complete pack.
 
-The node split is 15963756 bytes, leaving 813460 bytes
-under its 16 MiB browser fallback limit. The bundle is 24288072 bytes
-and the release totals 48723474 bytes, within the unchanged 32 MiB file and
-64 MiB total budgets. The node split saves 2825844 bytes relative to
-the same graph with repeated citation metadata. The initial graph is
-1299143 bytes before compression.
+The registry contains 43 entries. All 42 earlier entries retain their exact
+identities. Baseline hashes confirm that the frozen `2026.10.20.0` and `2026.10.20.1` releases,
+original top-level reference files and root README are unchanged. Model Studio
+uses revision `20261020.3` with 28 aligned module dependencies.
 
 Current artifact identities:
 
 ```text
-rootHash: sha256:40c90e7c612042817f82ee1454880fe4db3b458cab8f8a84e93dba0a6fbc8a09
-manifestHash: sha256:b68cd24f2c999433dd38f5d8354af364c12a1c6c2c51f881751d2ff2394be1b2
-registryHash: sha256:534d4d158475607548792727f91409d6eb7476bab0efc5c97575716fe5fc790e
-browseIndexHash: sha256:4dbeaa6e5f73a336e898c1cc6137309d6880d6e5cdd0c232406b88d122ee45fc
+rootHash: sha256:17eead3395e85ac8000eb5386acd641798233d7816d9f0ac8bfe5df65a16e2d8
+manifestHash: sha256:17c3a65ea2413e58421479f7a6f324bbe77c8560eca616b562664243b463a732
+registryHash: sha256:8128fecb495c5f959c608761d8a941e7e4533c56d04dddcacee1b90f5216428f
+browseIndexHash: sha256:7a758960994782483abf4690b3c46e8eefd53f889ee84b638be67f11fbc5c367
 ```
 
-Validation uses macOS, Node.js 24.19.0 and Python 3.9.6. Remote CI and rendered
-browser checks have not run. Unrelated research replays were not run.
-
-Scientific review remains partial: 145 [source cards](../../../references/canonical/pending-review.json)
-are unfinished. The complement of 104 cards has scoped assertions supported,
-qualified or excluded. All 35 Level-1 cards and all 23 Level-2 cards have scoped
-dispositions in the [source review](../../../references/canonical/LEVEL_2_REVIEW.md).
-This census is not a percentage of scientifically validated claims.
-
-Primordial abundance inference, static and dynamical atomic/molecular models,
-finite material response and optical channels retain their own preparations,
-observables and uncertainties. Static organization does not establish temporal
-persistence; fitted parameters do not uniquely identify microscopic mechanisms.
-Corrections and dependent outputs remain linked to the actual acquisition.
-Exact SI definitions, publication-supported results and conditional models have
-distinct roles. Reused physical and optical inputs retain complete preparations, observables,
-claims and representation roles. Validation rejects substituted evidence, lost
-reading limits and invented replications. Original parent weights, carrier defaults
-and SOMA labels establish no universal causal hierarchy. Software verification
-does not independently validate the entire graph or reproduce the experiments.
+Validation uses macOS, Node.js 24.19.0 and Python 3.9.6. The comparison is
+retrospective; its challenge groups are not unseen prospective tests. Independent
+scientific review and complete CETCH supplementary-control review remain open.
+No biochemical experiment or raw acquisition is independently reproduced here.
+The [pending list](../../../references/canonical/pending-review.json) contains
+96 other source cards. Software checks establish consistency and reproducibility
+within their declared scope, not scientific validation of the entire graph.
+Remote CI and unrelated research replays have not run.

@@ -1,13 +1,20 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.19.0`: 1478 records, 1462 connections,
-1653 claims and 468 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.20.2`: 1705 records, 1704 connections,
+1921 claims and 501 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
 what is asserted, its publication or formal basis, the relevant reading and its
 experimental scope. Proposed construction rules require their joint premises
 and gates; a rule specification does not establish an actual physical instance.
+
+All 50 [Level-3 source cards](../../references/canonical/LEVEL_3_REVIEW.md) have
+scoped dispositions. The biochemical ledger contains 61 preparations from
+31 publications, with exact reuse of existing evidence across dependent cards.
+Definitions, supplied materials, measured responses and conditional mechanisms
+remain separate. Unmatched lifecycle, biochemical-decay and primitive-coupling
+claims remain hypotheses; published findings are not independent reproductions.
 
 The current neural data distinguishes measured propagation from anatomical
 connectivity and information-theoretic interpretation. Material optics, retinal
@@ -186,10 +193,13 @@ pack dictionaries. Selected nodes retain expanded rationale for inspection;
 relations do not duplicate those publication and context objects. This keeps
 the current release within the existing transport limits.
 
-For direct Node directory loading, pass `{ maxFileBytes: 32 * 1024 * 1024 }`
-to `loadModelPackDirectory`. The complete bundle exceeds its default 16 MiB
-per-file budget; the loader still enforces the 64 MiB total budget. Generated
-semantic files use compact JSON; editable canonical inputs remain indented.
+The current release loads through `loadModelPackDirectory` with default limits.
+Lossless JSON value tables encode complete nodes and the optional bundle;
+decoding restores the ordinary semantic records before hash verification.
+Physical files stay below 16 MiB, and expanded files including the repeated
+bundle stay below the 64 MiB aggregate limit. Editable canonical inputs remain
+indented; Model Studio initially requests only its graph projection and loads
+complete record details and evidence reviews on demand.
 
 Only the current canonical output is maintained. The original `2026.08.15`
 catalogue remains an input pinned by existing research cases.

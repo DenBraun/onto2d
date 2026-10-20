@@ -15,6 +15,7 @@ const checks = [
   "check-model-pack-registry.mjs",
   "check-schemas.mjs",
   "check-kernel-closure.mjs",
+  "check-interaction-pilot.mjs",
   "check-docs.mjs",
   "audit-catalogue.mjs"
 ];
