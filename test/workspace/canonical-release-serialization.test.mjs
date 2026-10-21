@@ -6,13 +6,15 @@ import test from "node:test";
 import { buildModelPack, verifyModelPack } from "@onto2d/model-pack";
 import { loadModelPackDirectory } from "@onto2d/model-pack/node";
 import { hashArtifactBytes } from "@onto2d/kernel";
-import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
+import { citationLinks } from "../../apps/model-studio/evidence-links.js";
 import { decodeJsonValueTable, isJsonValueTable } from "../../packages/model-pack/src/json-value-table.js";
 import {
   compileCanonicalGraph,
   verifyCanonicalRelease,
   writeCanonicalRelease
 } from "../../models/causal-emergence/canonical/build.mjs";
+
+import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 
 const pretty = (value) => `${JSON.stringify(value, null, 2)}\n`;
 const compact = (value) => `${JSON.stringify(value)}\n`;
@@ -68,8 +70,9 @@ test("canonical entities retain source descriptions and evidence without generat
   const [compiledEntity, compiledRule] = pack.files["model/nodes.json"];
   assert.equal(compiledEntity.description, entity.description);
   assert.equal(Object.hasOwn(compiledEntity, "shortDescription"), false);
-  assert.deepEqual(compiledEntity.rationale, [{ ...claim, contexts: [], experimentalContexts: [],
-    citations: [{ ...claim.citations[0], source: publication }] }]);
+  assert.deepEqual(compiledEntity.rationale, [claim]);
+  assert.deepEqual(resolveRecordEvidence(compiledEntity, recordEvidenceContext([compiledEntity], pack.files["model/dictionaries.json"])),
+    [{ ...claim, contexts: [], experimentalContexts: [], citations: [{ ...claim.citations[0], source: publication }] }]);
   assert.equal(compiledRule.shortDescription, "A declared gate; A second gate");
   assert.notEqual(compiledRule.shortDescription, compiledRule.description, "Rule-specific summaries remain distinct");
   assert.deepEqual(pack.files["model/dictionaries.json"].claims, [claim]);
@@ -118,20 +121,13 @@ test("repeated passage citations retain complete claim-local evidence after seri
   const before = structuredClone(data);
   const pack = compileCanonicalGraph(data, {}, []);
   const compiled = JSON.parse(compact(pack.files["model/nodes.json"]))[0];
-  const [projectedFirst, projectedSecond] = compiled.rationale;
-  assert.deepEqual(projectedFirst.citations[0].source, publication);
-  assert.deepEqual(projectedFirst.citations[1].source, alternative);
-  assert.equal(Object.hasOwn(projectedFirst.citations[2], "source"), false);
-  assert.equal(Object.hasOwn(projectedFirst.citations[3], "source"), false);
-  assert.deepEqual(projectedSecond.citations[0].source, publication, "Each claim carries its own complete source");
-  assert.equal(Object.hasOwn(projectedSecond.citations[1], "source"), false);
-  assert.deepEqual(projectedFirst.contexts, [study], "Preparation and study limits remain fully expanded");
+  assert.deepEqual(compiled.rationale, [first, second], "Raw claims retain exact references without repeated publication copies");
 
   const expected = [first, second].map((claim) => ({ ...claim,
     contexts: claim.contextIds ? [study] : [], experimentalContexts: [],
     citations: claim.citations.map((citation) => ({ ...citation,
       source: data.graph.sources.find((source) => source.id === citation.sourceId) })) }));
-  const restored = compiled.rationale.map((claim) => ({ ...claim, citations: resolveClaimCitations(claim) }));
+  const restored = resolveRecordEvidence(compiled, recordEvidenceContext([compiled], pack.files["model/dictionaries.json"]));
   assert.deepEqual(restored, expected, "Every citation, complete source, reading limit and study reconstructs exactly");
   assert.ok(Buffer.byteLength(compact(compiled.rationale)) < Buffer.byteLength(compact(expected)));
   for (const [index, claim] of restored.entries()) {

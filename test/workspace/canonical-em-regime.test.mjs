@@ -1,3 +1,4 @@
+import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { hashArtifactBytes } from "@onto2d/kernel";
@@ -219,7 +220,8 @@ test("Hanssen stays one optical study whose context resolves in the compiled lit
   const pack = compileCanonicalGraph(data, {}, [{ path: "em-regime-context-fixture.json",
     hash: hashArtifactBytes(new TextEncoder().encode(JSON.stringify(data.graph))) }]);
   const compiled = pack.files["model/nodes.json"].find((record) => record.id === outcome);
-  const contexts = compiled.rationale.find((record) => record.id === synthesis).contexts;
+  const contexts = resolveRecordEvidence(compiled, recordEvidenceContext([compiled], pack.files["model/dictionaries.json"]))
+    .find((record) => record.id === synthesis).contexts;
   assert.deepEqual(new Set(contexts.map((record) => record.id)), new Set(evidenceContexts));
   assert.deepEqual(contexts.find((record) => record.id === "hanssen2001"),
     data.optics.studies.find((record) => record.id === "hanssen2001"));

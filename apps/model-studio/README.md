@@ -33,7 +33,7 @@ does not branch on a model ID. Version comparison remains distinct from model
 selection and requires reviewed lineage.
 
 With no exact release in the URL, the Studio selects
-`causal-emergence@2026.10.20.2`, the current canonical model. The source panels
+`causal-emergence@2026.10.21.0`, the current canonical model. The source panels
 show study design, preparations, findings, citations, publication checks and
 interpretation tests. Edge labels and tooltips show the declared relation layer,
 meaning and assertion, including measurement and interpretation dependencies.
@@ -57,14 +57,14 @@ the other anchors; these comparisons never create physical causal relations.
 Passports and their supporting claims, sources and studies load with the
 selected record rather than the initial graph.
 
-The current canonical projection stores complete publication metadata once per
-source ID within each claim. Later citations in that claim retain their own
-source ID, passage locator, evidence role and note. The inspector resolves the
-metadata from the same claim for every citation title and link; it needs no
-additional request or dictionary lookup. Each claim retains the full source
-reading extent and limits. Older records with metadata on every citation render
-unchanged. The raw record panel shows the verified release representation,
-including this omission of duplicate metadata copies.
+Canonical claims retain source and preparation IDs, passage locators, evidence
+roles and limitations. Complete publications and study contexts reside in the
+verified release dictionaries. A lazy detail chunk includes the referenced
+evidence once in a shared context; the full inspector resolves the same records
+from its verified dictionaries. Both retain complete reading extents and limits
+without an additional request. Missing or invalid evidence fails before display.
+Historical inline evidence keeps its existing interpretation. The raw record
+panel shows the exact verified release representation.
 
 The registry also serves independently scoped research-case models. Existing
 case inputs keep their explicit identities.

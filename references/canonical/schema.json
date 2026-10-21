@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Canonical research source v22",
+  "title": "Canonical research source v23",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -14,7 +14,8 @@
     "visual",
     "neural",
     "physics",
-    "biochemistry"
+    "biochemistry",
+    "cellular"
   ],
   "properties": {
     "graph": {
@@ -34,7 +35,7 @@
       ],
       "properties": {
         "schemaVersion": {
-          "const": 22
+          "const": 23
         },
         "model": {
           "type": "object",
@@ -182,7 +183,7 @@
                 "anyOf": [
                   {
                     "type": "string",
-                    "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9_./Архив-]+$"
+                    "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9_./\u0410\u0440\u0445\u0438\u0432-]+$"
                   },
                   {
                     "type": "null"
@@ -3021,6 +3022,266 @@
       "properties": {
         "id": {
           "const": "biochemistry-evidence"
+        },
+        "independentScientificReviewComplete": {
+          "const": false
+        },
+        "studies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "sourceId",
+              "studyType",
+              "doi",
+              "journal",
+              "volume",
+              "issue",
+              "pages",
+              "preparation",
+              "observable",
+              "finding",
+              "limitations",
+              "readExtent",
+              "reviewedLocators",
+              "metadataCheckedAt",
+              "metadataUrl",
+              "correctionCheck",
+              "system"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "studyType": {
+                "enum": [
+                  "primary-experiment",
+                  "computational-analysis",
+                  "primary-observation",
+                  "experimental-reanalysis"
+                ]
+              },
+              "doi": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^10\\.\\d{4,9}/\\S+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "journal": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "volume": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "issue": {
+                "type": "string"
+              },
+              "pages": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "preparation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "observable": {
+                "type": "string",
+                "minLength": 1
+              },
+              "finding": {
+                "type": "string",
+                "minLength": 1
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "readExtent": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewedLocators": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "metadataCheckedAt": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "metadataUrl": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^https://[^\\s]+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "correctionCheck": {
+                "type": "string",
+                "minLength": 1
+              },
+              "system": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "comparisons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "candidate",
+              "alternative",
+              "sourceIds",
+              "discriminator",
+              "result",
+              "limit",
+              "assumptions",
+              "claimIds"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "candidate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "alternative": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "discriminator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "result": {
+                "enum": [
+                  "conditional-support",
+                  "specified-alternative-disfavored",
+                  "not-tested",
+                  "inconclusive"
+                ]
+              },
+              "limit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assumptions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            }
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "openObligations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "checkIds": {
+          "const": []
+        }
+      }
+    },
+    "cellular": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "independentScientificReviewComplete",
+        "studies",
+        "comparisons",
+        "openObligations",
+        "checkIds"
+      ],
+      "properties": {
+        "id": {
+          "const": "cellular-evidence"
         },
         "independentScientificReviewComplete": {
           "const": false

@@ -1,3 +1,4 @@
+import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
@@ -779,7 +780,7 @@ test("phage optical assembly, genome density and isolated-receptor association d
     assert.equal(node.status, "hypothesis");
     assert.ok(node.rationale.some((record) => record.id.startsWith("D-bio-")));
     assert.ok(node.rationale.some((record) => record.id === hypothesis.id));
-    for (const rationale of node.rationale) {
+    for (const rationale of resolveRecordEvidence(node, recordEvidenceContext([node], pack.files["model/dictionaries.json"]))) {
       assert.match(rationale.id, /^[DC]-bio-/);
       assert.equal(rationale.contextIds, undefined,
         `${rationale.id}: neither the definition nor hypothesis inherits a structural preparation`);

@@ -1,7 +1,7 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.20.2`: 1705 records, 1704 connections,
-1921 claims and 501 sources. It is a partial research reconstruction with explicit
+The current canonical graph is `2026.10.21.0`: 1960 records, 2101 connections,
+2149 claims and 549 sources. It is a partial research reconstruction with explicit
 evidence limits, not a validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
@@ -15,6 +15,12 @@ scoped dispositions. The biochemical ledger contains 61 preparations from
 Definitions, supplied materials, measured responses and conditional mechanisms
 remain separate. Unmatched lifecycle, biochemical-decay and primitive-coupling
 claims remain hypotheses; published findings are not independent reproductions.
+
+All 33 [Level-4 source cards](../../references/canonical/LEVEL_4_REVIEW.md) have
+scoped dispositions: 70 study contexts from 44 publications. Cellular
+organization, transport, regulation, fate, phototransduction and immune responses
+retain their preparation and reading limits. Partial rescue, state recovery,
+source corrections and contrary outcomes constrain stronger generalizations.
 
 The current neural data distinguishes measured propagation from anatomical
 connectivity and information-theoretic interpretation. Material optics, retinal
@@ -189,8 +195,9 @@ npm run model:causal-emergence:verify
 
 Compiled relations retain their complete source fields and refer to evidence
 through `claimIds`. The full claims, sources and study contexts reside in the
-pack dictionaries. Selected nodes retain expanded rationale for inspection;
-relations do not duplicate those publication and context objects. This keeps
+pack dictionaries. Node rationale retains exact claims and their citation and
+preparation references. The inspector resolves complete evidence from the same
+verified release; lazy detail chunks share the referenced metadata. This keeps
 the current release within the existing transport limits.
 
 The current release loads through `loadModelPackDirectory` with default limits.

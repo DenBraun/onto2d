@@ -1,3 +1,4 @@
+import { validateCellularReview } from "./cellular.mjs";
 import { validateBiochemistryReview } from "./biochemistry.mjs";
 import { validateCanonicalInteractions } from "./interactions.mjs";
 import { LEVEL_TWO_CHECKS, LEVEL_TWO_ANALYTICAL_SOURCES } from "./level-two.mjs";
@@ -196,6 +197,7 @@ export function validateCanonicalSource(data) {
   const context = { sources, claims, entities, relations };
   validatePhysicsDefinitions(data, context);
   validateBiochemistryReview(data, context);
+  validateCellularReview(data, context);
   validateRetinalPilot(data, context);
   validateOpticalReview(data, context);
   validateVisualReview(data, context);
@@ -204,14 +206,14 @@ export function validateCanonicalSource(data) {
   validateDictionaryReview(data);
   validateSourceReadiness(data, null, proposalText);
   validateCanonicalInteractions(graph, { studies: [data.pilot, data.routing, data.optics, data.visual,
-    data.neural, data.physics, data.biochemistry].flatMap((review) => review.studies) });
+    data.neural, data.physics, data.biochemistry, data.cellular].flatMap((review) => review.studies) });
   return data;
 }
 
 export async function loadCanonicalSource() {
   const fields = {
     graph: "graph", pilot: "retinal-review", routing: "routing-review", routingPolicy: "routing-policy",
-    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review"
+    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review"
   };
   const data = validateCanonicalSource(Object.fromEntries(await Promise.all(Object.entries(fields).map(async ([key, file]) => [key, await json(`references/canonical/${file}.json`)]))));
   await Promise.all(data.graph.sources.filter((s) => s.path).map(async (source) => {

@@ -29,6 +29,13 @@ graph supplies valid new dynamics. Competing constructions need discriminating
 tests. The Level-0 manuscript analysis and existing case results remain bounded
 by their stated assumptions.
 
+Canonical record claims retain citation and preparation IDs. Complete publication
+and study records are stored once in the verified release dictionaries. The full
+inspector resolves these references from that release; lazy detail chunks carry
+the same complete evidence as a shared chunk context. Raw record JSON remains
+exact. Missing references fail instead of borrowing a different preparation.
+Historical releases with inline evidence retain their existing representation.
+
 Store publications, evidence limits and current test obligations with the data.
 Do not store canonical migration tables, editing chronologies, intermediate
 releases or full snapshots of previous source states. The remaining source task

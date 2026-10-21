@@ -96,6 +96,8 @@ test("the browse CLI writes and verifies plain and value-table registered bundle
     await writeFile(path.join(directory, "scripts/build-model-studio-data.mjs"),
       await readFile(new URL("scripts/build-model-studio-data.mjs", root)));
     const loader = await readFile(new URL("apps/model-studio/browse-data.js", root));
+    await writeFile(path.join(directory, "apps/model-studio/record-evidence.js"),
+      await readFile(new URL("apps/model-studio/record-evidence.js", root)));
     const pack = fixture();
     const expected = buildBrowseArtifacts(pack);
     await writeFile(path.join(directory, "references/canonical/graph.json"), JSON.stringify({ model: pack.manifest.model }));
@@ -602,4 +604,69 @@ test("the completed detail cache evicts the oldest chunks when their total byte 
   await session.inspect("record-0");
   assert.equal(mock.calls.length, 13, "The oldest chunk must be fetched after exceeding the aggregate budget");
   session.close();
+});
+
+test("dictionary-backed details preserve exact raw nodes and resolve complete evidence in one lazy chunk", async () => {
+  const source = { id: "paper", title: "A shared acquisition", review: { extent: "selected-main", limit: "No raw replay" } };
+  const study = { id: "assay", sourceId: "paper", preparation: "Matched sample", limitations: ["Finite observation"] };
+  const claim = { id: "finding", contextIds: [study.id], limitations: ["No unique mechanism"],
+    citations: [{ sourceId: source.id, locator: "Methods", role: "method" },
+      { sourceId: source.id, locator: "Figure 1", role: "supports" }] };
+  const original = fixture();
+  const nodes = original.files["model/nodes.json"].map((node) => ({ ...node, rationale: [claim] }));
+  const pack = buildModelPack({ model: original.manifest.model, source: original.manifest.source,
+    nodes, edges: original.files["model/edges.json"], dictionaries: {
+      recordEvidence: { format: "dictionary-references-v1" }, sources: [source], cellular: { studies: [study] }
+    } });
+  const artifacts = buildBrowseArtifacts(pack);
+  const { load, mock } = loaderFor(artifacts);
+  const browse = await load(resolution(pack));
+  try {
+    assert.equal(mock.calls.length, 2, "Only index and graph load initially");
+    const raw = await browse.inspect("a");
+    assert.deepEqual(raw, nodes[0], "Raw JSON is exactly the verified release node");
+    const detail = await browse.inspectWithEvidence("a");
+    assert.deepEqual(detail.record, raw);
+    assert.deepEqual(detail.rationale, [{ ...claim, contexts: [study], experimentalContexts: [],
+      citations: claim.citations.map((citation) => ({ ...citation, source })) }]);
+    assert.equal(mock.calls.length, 3, "Evidence and raw records share one cached detail request");
+    const chunk = JSON.parse(decoder.decode(artifacts.files.get(mock.calls[2].path)));
+    const graph = JSON.parse(decoder.decode(artifacts.files.get(artifacts.index.entries[0].graph.path)));
+    assert.deepEqual(graph.recordEvidence, { format: "dictionary-references-v1" });
+    assert.deepEqual(chunk.evidence.sources, [source]);
+    assert.deepEqual(chunk.evidence.studies, [study]);
+    assert.equal(chunk.records.length, nodes.length, "Several nodes reuse one complete metadata copy");
+    assert.ok(chunk.records.every((node) => !Object.hasOwn(node.rationale[0].citations[0], "source")));
+  } finally { browse.close(); }
+
+  const broken = editedArtifacts(artifacts, ({ graph, rewrite }) => {
+    rewrite(graph.chunks[0].descriptor, (chunk) => { chunk.evidence.studies = []; });
+  });
+  const invalid = await loaderFor(broken).load(resolution(pack));
+  try {
+    await assert.rejects(invalid.inspectWithEvidence("a"), { code: "STUDIO_BROWSE_DETAIL_INVALID" });
+  } finally { invalid.close(); }
+
+  for (const evidence of [null, false, 0, ""]) {
+    const missing = editedArtifacts(artifacts, ({ graph, rewrite }) => {
+      rewrite(graph.chunks[0].descriptor, (chunk) => { chunk.evidence = evidence; });
+    });
+    const malformed = await loaderFor(missing).load(resolution(pack));
+    try {
+      await assert.rejects(malformed.inspectWithEvidence("a"), { code: "STUDIO_BROWSE_DETAIL_INVALID" });
+    } finally { malformed.close(); }
+  }
+
+  const missing = editedArtifacts(artifacts, ({ graph, rewrite }) => {
+    rewrite(graph.chunks[0].descriptor, (chunk) => { delete chunk.evidence; });
+  });
+  const incomplete = await loaderFor(missing).load(resolution(pack));
+  try {
+    await assert.rejects(incomplete.inspectWithEvidence("a"), { code: "STUDIO_BROWSE_DETAIL_INVALID" });
+  } finally { incomplete.close(); }
+
+  const unsupported = editedArtifacts(artifacts, ({ graph }) => {
+    graph.recordEvidence = { format: "future-format" };
+  });
+  await assert.rejects(loaderFor(unsupported).load(resolution(pack)), { code: "STUDIO_BROWSE_GRAPH_INVALID" });
 });
