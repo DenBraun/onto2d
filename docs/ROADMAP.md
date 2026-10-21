@@ -69,7 +69,11 @@ prediction and failure criterion before reading new source outcomes.
 [CETCH issue #32](https://github.com/DenBraun/onto2d/issues/32) covers deeper main/supplement
 failure analysis and a later evidence-backed case page.
 
-The current graph contains 1705 records, 1704 connections, 1921 claims and 501 sources.
+The current graph contains 1960 records, 2101 connections, 2149 claims and 549 sources.
+All 33 Level-4 cellular cards have scoped source dispositions, with 70
+study contexts from 44 publications. Model-inferred flux, measured response,
+cell-fate interpretation and cross-system mechanism transfer remain distinct.
+Independent scientific review and unresolved mechanisms remain open.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -110,16 +114,17 @@ bundles and node files, restoring every field before semantic verification.
 Physical and expanded content remain bounded, with no increase to transport
 limits. Canonical inputs, manifest and indexes remain readable. Exact replay
 preserves the selected bytes, and published releases cannot be reformatted in
-place. Model Studio's selected-record chunks retain their existing format.
+place. Model Studio's selected-record chunks include a shared evidence context.
 Relations reference complete dictionary claims through `claimIds`; their
 sources and contexts are stored once in those dictionaries instead of being
-expanded again on every edge. Selected-node evidence remains self-contained.
+expanded again on every edge. Node rationale retains exact claim references;
+the inspector resolves their full publication and preparation records from the
+same verified release or its selected detail chunk.
 Entity descriptions are stored once; full and lazy catalogues derive their
 summaries consistently. Explicit short summaries and the distinct construction
 rule summaries remain authoritative. Source descriptions and evidence are retained.
-Within each attached claim, full publication metadata is stored once per source;
-repeated passage citations retain their locators, roles and notes. The inspector
-resolves that metadata within the same claim without another request.
+Every passage citation retains its locator, role and note. The inspector
+resolves shared metadata without another request and rejects missing evidence.
 
 This is partial source review, not independent scientific validation. Node and
 relation selection must follow an explicit definition, scoped experiment,

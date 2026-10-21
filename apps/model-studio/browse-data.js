@@ -1,8 +1,9 @@
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
+import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261021.1";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:7a758960994782483abf4690b3c46e8eefd53f889ee84b638be67f11fbc5c367";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:c608e96881c660ed50e524e8a7ce47aca6658d06167fa4288061389e9d5f59ff";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,
@@ -18,7 +19,7 @@ export const BROWSE_LIMITS = Object.freeze({
 const HASH = /^sha256:[0-9a-f]{64}$/;
 const IDENTIFIER = /^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/;
 const PATH = /^(?:[A-Za-z0-9][A-Za-z0-9._-]*\/)*[A-Za-z0-9][A-Za-z0-9._-]*\.json$/;
-const REVIEW_KEYS = new Set(["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry"]);
+const REVIEW_KEYS = new Set(["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular"]);
 const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
 
 function fail(code, message) {
@@ -204,7 +205,8 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       BROWSE_LIMITS.graphBytes, fetchImplementation, signal);
     envelope(graph, "onto2d-studio-browse-graph", expectedIdentity);
     exactFields(graph, ["format", "formatVersion", "identity", "model", "nodes", "edges", "presentation", "reviews", "chunks",
-      ...(Object.hasOwn(graph, "interactionViews") ? ["interactionViews"] : [])], "Browse graph");
+      ...(Object.hasOwn(graph, "interactionViews") ? ["interactionViews"] : []),
+      ...(Object.hasOwn(graph, "recordEvidence") ? ["recordEvidence"] : [])], "Browse graph");
     if (!object(graph.model) || graph.model.id !== expectedIdentity.modelId
       || graph.model.version !== expectedIdentity.modelVersion || !Array.isArray(graph.nodes)
       || graph.nodes.length > BROWSE_LIMITS.nodes || !Array.isArray(graph.edges)
@@ -212,6 +214,9 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       || graph.chunks.length > graph.nodes.length || !object(graph.reviews) || !object(graph.presentation)) {
       fail("GRAPH_INVALID", "The browsing projection is inconsistent or exceeds its record budget.");
     }
+    let sharedEvidence;
+    try { sharedEvidence = usesDictionaryEvidence(graph); }
+    catch { fail("GRAPH_INVALID", "The browsing projection has an unsupported evidence representation."); }
     const nodeIds = new Set(graph.nodes.map((node) => node.id));
     const nodesById = new Map(graph.nodes.map((node) => [node.id, node]));
     const chunksById = new Map();
@@ -280,6 +285,38 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       }
       return data;
     }
+    async function detail(id, { signal: requestSignal } = {}) {
+      requireOpen(requestSignal);
+      const chunk = chunksById.get(id);
+      if (!chunk) fail("NODE_MISSING", "The requested record is absent from this release.");
+      const data = await cached(chunk.descriptor, BROWSE_LIMITS.detailBytes, requestSignal, (value) => {
+        envelope(value, "onto2d-studio-node-details", expectedIdentity);
+        if (sharedEvidence && !Object.hasOwn(value, "evidence")) {
+          fail("DETAIL_INVALID", "A detail chunk is missing its declared evidence envelope.");
+        }
+        exactFields(value, ["format", "formatVersion", "identity", "records",
+          ...(Object.hasOwn(value, "evidence") ? ["evidence"] : [])], "Node details");
+        if (!Array.isArray(value.records) || value.records.length !== chunk.nodeIds.length) {
+          fail("DETAIL_INVALID", "A detail chunk has an unexpected record count.");
+        }
+        if (Object.hasOwn(value, "evidence") && !object(value.evidence)) {
+          fail("DETAIL_INVALID", "A detail chunk has an invalid evidence envelope.");
+        }
+        const observed = new Set();
+        for (const record of value.records) {
+          if (!object(record) || observed.has(record.id) || chunksById.get(record.id) !== chunk
+            || !matchingProjection(nodeProjection(record), nodesById.get(record.id))) {
+            fail("DETAIL_INVALID", "A detail record differs from its pinned graph summary or chunk assignment.");
+          }
+          observed.add(record.id);
+          if (Object.hasOwn(value, "evidence")) {
+            try { resolveRecordEvidence(record, value.evidence); }
+            catch { fail("DETAIL_INVALID", "A detail chunk has unresolved evidence references."); }
+          }
+        }
+      });
+      return { record: data.records.find((record) => record.id === id), evidence: data.evidence ?? null };
+    }
     return Object.freeze({
       manifest: freeze({ model: graph.model, rootHash: graph.identity.rootHash, manifestHash: graph.identity.manifestHash }),
       presentation,
@@ -287,26 +324,12 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       interactionViews: freeze(graph.interactionViews ?? null),
       dictionaries: freeze({ presentation: graph.presentation }),
       reviews: freeze(reviews),
-      async inspect(id, { signal: requestSignal } = {}) {
-        requireOpen(requestSignal);
-        const chunk = chunksById.get(id);
-        if (!chunk) fail("NODE_MISSING", "The requested record is absent from this release.");
-        const data = await cached(chunk.descriptor, BROWSE_LIMITS.detailBytes, requestSignal, (value) => {
-          envelope(value, "onto2d-studio-node-details", expectedIdentity);
-          exactFields(value, ["format", "formatVersion", "identity", "records"], "Node details");
-          if (!Array.isArray(value.records) || value.records.length !== chunk.nodeIds.length) {
-            fail("DETAIL_INVALID", "A detail chunk has an unexpected record count.");
-          }
-          const observed = new Set();
-          for (const record of value.records) {
-            if (!object(record) || observed.has(record.id) || chunksById.get(record.id) !== chunk
-              || !matchingProjection(nodeProjection(record), nodesById.get(record.id))) {
-              fail("DETAIL_INVALID", "A detail record differs from its pinned graph summary or chunk assignment.");
-            }
-            observed.add(record.id);
-          }
-        });
-        return data.records.find((record) => record.id === id);
+      async inspect(id, options) {
+        return (await detail(id, options)).record;
+      },
+      async inspectWithEvidence(id, options) {
+        const { record, evidence } = await detail(id, options);
+        return { record, rationale: resolveRecordEvidence(record, evidence) };
       },
       async review(key, { signal: requestSignal } = {}) {
         requireOpen(requestSignal);

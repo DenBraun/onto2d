@@ -1,3 +1,4 @@
+import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
@@ -42,10 +43,10 @@ test("joint rules require distinct multiplicities and cannot assert successful p
 
 test("the current output contains evidence and no graph migration history", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1705, edgeCount: 1704 });
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1960, edgeCount: 2101 });
   const dictionaries = pack.files["model/dictionaries.json"];
-  assert.equal(dictionaries.claims.length, 1921);
-  assert.equal(dictionaries.sources.length, 501);
+  assert.equal(dictionaries.claims.length, 2149);
+  assert.equal(dictionaries.sources.length, 549);
   const census = dictionaries.evidence.neurogenesisData;
   assert.equal(census.sampleCount, 39);
   assert.equal(census.retainedNuclei, 153530);
@@ -65,8 +66,20 @@ test("the current output contains evidence and no graph migration history", asyn
   const edges = new Map(pack.files["model/edges.json"].map((edge) => [edge.id, edge]));
   const claims = new Map(dictionaries.claims.map((claim) => [claim.id, claim]));
   const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
-  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry"]
+  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry", "cellular"]
     .flatMap((key) => dictionaries[key].studies).map((study) => [study.id, study]));
+  for (const node of pack.files["model/nodes.json"]) {
+    const resolved = resolveRecordEvidence(node, recordEvidenceContext([node], dictionaries));
+    assert.deepEqual(node.rationale, node.claimIds.map((id) => claims.get(id)), "Raw claims remain identical to editable scientific data");
+    for (const [index, claim] of resolved.entries()) {
+      const raw = claims.get(node.claimIds[index]);
+      assert.deepEqual(claim.contexts, (raw.contextIds ?? []).map((id) => studies.get(id)),
+        "Every original preparation, method and limitation survives dictionary resolution");
+      assert.deepEqual(claim.citations, raw.citations.map((citation) => ({ ...citation, source: sources.get(citation.sourceId) })),
+        "Every citation resolves its complete actual source without dropping repeated locators");
+      assert.deepEqual(claim.limitations, raw.limitations);
+    }
+  }
   assert.deepEqual(dictionaries.interactions.cases, data.graph.interactionCases);
   assert.deepEqual(dictionaries.interactions.analogies, data.graph.interactionAnalogies);
   const nodes = new Map(pack.files["model/nodes.json"].map((node) => [node.id, node]));

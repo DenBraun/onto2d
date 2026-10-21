@@ -12,12 +12,12 @@ test("comparison loads every evidence ledger when the canonical atlas gains an u
   const [graphBytes, protocolBytes, ...ledgerBytes] = await Promise.all([
     read("graph"), read("interaction-pilot"),
     ...["retinal-review", "routing-review", "optical-review", "visual-review", "neural-review",
-      "physics-review", "biochemistry-review"].map(read)
+      "physics-review", "biochemistry-review", "cellular-review"].map(read)
   ]);
   const graph = JSON.parse(graphBytes);
   const protocol = JSON.parse(protocolBytes);
   const ledgerNames = ["retinal-review", "routing-review", "optical-review", "visual-review", "neural-review",
-    "physics-review", "biochemistry-review"];
+    "physics-review", "biochemistry-review", "cellular-review"];
   const inputs = new Map(ledgerNames.map((name, n) => [`references/canonical/${name}.json`, ledgerBytes[n]]));
   const studies = readComparisonStudies(inputs);
   const claimId = "O-reflection", studyId = "hanssen2001", entityId = "opt:specular-response";

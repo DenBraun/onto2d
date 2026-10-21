@@ -22,14 +22,13 @@ function serialize(relative, value, transportEncoding) {
   return `${JSON.stringify(encoded, null, COMPACT_FILES.has(relative) ? undefined : 2)}\n`;
 }
 
-export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics, biochemistry }, evidence, sourceFiles) {
+export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics, biochemistry, cellular }, evidence, sourceFiles) {
   const sourceReadiness = compileSourceReadiness(readiness);
   const nodeRoles = new Map(readiness.nodeRoles.map((r) => [r.nodeId, r]));
   const claims = new Map(graph.claims.map((c) => [c.id, c]));
   const sources = new Map(graph.sources.map((s) => [s.id, s]));
   assert.equal(sources.size, graph.sources.length, "Citation source IDs must be unique before projection");
-  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? [])].map((s) => [s.id, s]));
-  const experiments = new Map(routing.contexts.map((c) => [c.id, c]));
+  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? []), ...(cellular?.studies ?? [])].map((s) => [s.id, s]));
   const interactions = projectCanonicalInteractions(graph, { studies: [...studies.values()] });
   const caseSummaries = new Map(interactions.cases.map((record) => [record.id, {
     id: record.id, title: record.title, anchorEntityId: record.anchorEntityId
@@ -63,26 +62,8 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   function rationale(ids) {
     return ids.map((id) => {
       const claim = claims.get(id);
-      const citedSources = new Set();
-      return {
-        ...claim, contexts: (claim.contextIds ?? []).map((id) => studies.get(id)),
-        experimentalContexts: (claim.experimentalContextIds ?? []).map((id) => ({
-          ...experiments.get(id),
-          review: routing.reviews.find((r) => r.contextId === id),
-          measurement: routing.measurements.find((m) => m.contextId === id) ?? null,
-          routes: routing.routes
-        })),
-        // Every claim remains self-contained. Repeated passage citations keep
-        // their sourceId, locator, role and note without copying the same full
-        // publication metadata again; the inspector resolves it within this claim.
-        citations: claim.citations.map((c) => {
-          const source = sources.get(c.sourceId);
-          assert.ok(source, `Missing citation source: ${c.sourceId}`);
-          if (citedSources.has(c.sourceId)) return { ...c };
-          citedSources.add(c.sourceId);
-          return { ...c, source };
-        })
-      };
+      for (const citation of claim.citations) assert.ok(sources.has(citation.sourceId), `Missing citation source: ${citation.sourceId}`);
+      return claim;
     });
   }
   const nodes = graph.entities.map((entity) => ({
@@ -96,7 +77,8 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   // source text once; construction rules below retain their distinct summary.
   // Relations reference the complete claims in dictionaries.claims. Expanding
   // their sources and study contexts again on every edge duplicates evidence
-  // without adding information; selected nodes keep self-contained rationale.
+  // without adding information. Detail projections resolve their complete
+  // publications and preparation contexts from the same verified dictionary.
   const edges = graph.relations.map(({ kind, ...relation }) => ({ ...relation, relationLayer: kind }));
   for (const rule of graph.rules) {
     nodes.push({
@@ -120,13 +102,14 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   return buildModelPack({
     model: { ...graph.model, description: graph.scope.summary },
-    source: { id: "canonical-research-source-v22", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
+    source: { id: "canonical-research-source-v23", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
     nodes, edges,
     dictionaries: {
       sources: graph.sources, claims: graph.claims, constructionRules: graph.rules, interactions,
+      recordEvidence: { format: "dictionary-references-v1" },
       scope: graph.scope, evidence, pilot, routing, routingPolicy,
       dictionaryReview, vocabulary: compileVocabulary(dictionaryReview, graph.sources), sourceReadiness, optics, visual, neural, physics,
-      ...(biochemistry ? { biochemistry } : {}),
+      ...(biochemistry ? { biochemistry } : {}), ...(cellular ? { cellular } : {}),
       presentation: {
         labels: { catalogTitle: "Canonical reconstruction", searchPlaceholder: "Find a concept or construction rule", typeFilter: "Record kind", statusFilter: "Evidence status", parents: "Premises / incoming", children: "Consequences / outgoing" },
         boundary: {
@@ -155,6 +138,13 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/neural.mjs",
     "models/causal-emergence/canonical/physics.mjs",
     "models/causal-emergence/canonical/biochemistry.mjs",
+    "models/causal-emergence/canonical/cellular.mjs",
+    "models/causal-emergence/canonical/level-four.mjs",
+    "models/causal-emergence/canonical/cell-structure.mjs",
+    "models/causal-emergence/canonical/cell-regulation.mjs",
+    "models/causal-emergence/canonical/cell-immunity.mjs",
+    "models/causal-emergence/canonical/cell-phototransduction.mjs",
+    "references/canonical/cellular-review.json",
     "models/causal-emergence/canonical/level-three.mjs",
     "models/causal-emergence/canonical/condensate-lipid.mjs",
     "models/causal-emergence/canonical/phage-scope.mjs",

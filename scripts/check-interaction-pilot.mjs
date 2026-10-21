@@ -16,7 +16,8 @@ const STUDY_INPUTS = [
   "references/canonical/visual-review.json",
   "references/canonical/neural-review.json",
   "references/canonical/physics-review.json",
-  "references/canonical/biochemistry-review.json"
+  "references/canonical/biochemistry-review.json",
+  "references/canonical/cellular-review.json"
 ];
 const INPUTS = [
   "references/canonical/interaction-pilot.json",

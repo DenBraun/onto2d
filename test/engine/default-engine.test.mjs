@@ -13,14 +13,14 @@ import {
 test("the root facade loads the exact bundled Causal Emergence Model Pack", async () => {
   const onto = await Onto2D.create();
   assert.equal(onto.model.name, "Causal Emergence — Canonical Reconstruction");
-  assert.equal(onto.model.version, "2026.10.20.2");
+  assert.equal(onto.model.version, "2026.10.21.0");
   assert.equal(onto.modelResolution.requested, "causal-emergence@stable");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.10.20.2");
-  assert.equal(onto.model.nodes().length, 1705);
-  assert.equal(onto.model.edges().length, 1704);
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.10.21.0");
+  assert.equal(onto.model.nodes().length, 1960);
+  assert.equal(onto.model.edges().length, 2101);
   assert.equal(onto.model.get("l0:crt-node").name, "CRT carrier class — no admitted instance");
   assert.equal(onto.model.get("R-object").parents().length, 5);
-  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 1517);
+  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 1885);
   assert.ok(onto.model.query({ level: 0, typeRole: "construction-rule" }).length > 0);
   assert.ok(onto.model.paths({ from: "l0:oscillatory-mode", to: "l0:crt-node" }).length > 0);
 });
@@ -39,7 +39,7 @@ test("the historical exact version remains selectable with its original identity
 test("the Node loader accepts the current release within default transport budgets", async () => {
   const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
   const loaded = await loadModelPackDirectory(
-    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.10.20.2")
+    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.10.21.0")
   );
   assert.equal(loaded.manifest.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
   assert.equal(loaded.manifest.manifestHash, bundledCausalEmergenceModelPack.manifest.manifestHash);

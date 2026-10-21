@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import vm from "node:vm";
 import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
+import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 
 const base = "https://example.org/Onto2D/";
 
@@ -91,9 +92,24 @@ test("the actual inspector renders every compact citation with the same title, y
   }
   const compactView = rendered(compactRecord);
   assert.deepEqual(compactView, rendered(expandedRecord));
+  const dictionaryRecord = structuredClone(compactRecord);
+  dictionaryRecord.rationale[0].citations = citations.map(({ source, ...citation }) => citation);
+  const rawDictionaryRecord = structuredClone(dictionaryRecord);
+  const dictionaries = { recordEvidence: { format: "dictionary-references-v1" }, sources: [publication] };
+  const resolved = resolveRecordEvidence(dictionaryRecord, recordEvidenceContext([dictionaryRecord], dictionaries));
+  assert.deepEqual(rendered({ ...dictionaryRecord, rationale: resolved }), compactView,
+    "Dictionary-backed sources retain the same visible source review boundaries as inline evidence");
+  assert.deepEqual(dictionaryRecord, rawDictionaryRecord);
   const anchors = [];
-  const collect = (element) => { if (element.tag === "a") anchors.push(element); for (const child of element.children ?? []) collect(child); };
+  const reviewLines = [];
+  const collect = (element) => {
+    if (element.tag === "a") anchors.push(element);
+    if (element.textContent.startsWith("Source review:")) reviewLines.push(element.textContent);
+    for (const child of element.children ?? []) collect(child);
+  };
   collect(compactView);
+  assert.deepEqual(reviewLines, ["Source review: full-article. Shared calibration."],
+    "Reading extent and its limit remain visible once per source without repeating them for each passage");
   assert.equal(anchors.length, citations.length * 3, "Every passage retains DOI, reviewed source and repository links");
   for (let index = 0; index < citations.length; index += 1) {
     assert.deepEqual(anchors.slice(index * 3, index * 3 + 3).map((anchor) => anchor.href),

@@ -9,9 +9,12 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1705 records, 1704 connections, 1921 claims and 501 sources.
+The current graph contains 1960 records, 2101 connections, 2149 claims and 549 sources.
 The physics review contains 219 study contexts and 143 comparisons.
 The biochemistry review contains 61 preparation contexts from 31 publications.
+The [Level-4 source review](LEVEL_4_REVIEW.md) covers all 33 cellular cards, with
+70 study contexts from 44 publications. Observations, interventions,
+model-based inferences and unresolved transfers retain their own boundaries.
 Unfinished source work is listed in [pending-review.json](pending-review.json).
 The [Level-2 work queue](LEVEL_2_REVIEW.md) covers all 23 physical, chemical and
 material source cards. All have scoped dispositions; surface radiometry and
@@ -33,6 +36,7 @@ interactions, neurovascular coupling, adult neurogenesis, working memory, symbol
 | [neural-review.json](neural-review.json) | Neural preparations and interpretation tests |
 | [physics-review.json](physics-review.json) | Physical experiments, computational contexts and conditional interpretations |
 | [biochemistry-review.json](biochemistry-review.json) | Biochemical preparations, measured responses and conditional mechanisms |
+| [cellular-review.json](cellular-review.json) | Cellular organization, regulation and immune preparations with scoped interpretation limits |
 | [dictionary-review.json](dictionary-review.json) | Scoped vocabulary and mathematical checks |
 | [source-readiness.json](source-readiness.json) | Representation roles and Formal Core requirements |
 | [interaction-pilot.json](interaction-pilot.json) | Case selections, candidate tests and separate-publication transfer checks |

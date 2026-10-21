@@ -8,25 +8,25 @@
     <title>Model Studio - Onto2D</title>
     <link rel="icon" href="../../assets/icons/favicon.ico?v=20260816.10" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/ui-icons.css?v=20260816.10">
-    <link rel="stylesheet" href="../../assets/css/model-studio-workbench.css?v=20261020.3">
+    <link rel="stylesheet" href="../../assets/css/model-studio-workbench.css?v=20261021.1">
     <script type="importmap">
       {"imports":{
-        "@onto2d/kernel/canonical":"../../packages/kernel/src/canonical-entry.js?v=20261020.3",
-        "@onto2d/model-pack":"../../packages/model-pack/src/index.js?v=20261020.3",
-        "@onto2d/model-pack/registry":"../../packages/model-pack/src/registry.js?v=20261020.3",
-        "@onto2d/rdf-import":"../../packages/rdf-import/src/index.js?v=20261020.3",
-        "@onto2d/rdf-mapping":"../../packages/rdf-mapping/src/index.js?v=20261020.3",
-        "@onto2d/shacl-validation":"../../packages/shacl-validation/src/index.js?v=20261020.3",
-        "@onto2d/view":"../../packages/view/src/index.js?v=20261020.3",
-        "@onto2d/view/lazy":"../../packages/view/src/lazy.js?v=20261020.3",
-        "../../packages/model-pack/src/index.js":"../../packages/model-pack/src/index.js?v=20261020.3",
-        "../../packages/model-pack/src/browser.js":"../../packages/model-pack/src/browser.js?v=20261020.3",
-        "../../packages/model-pack/src/transport-layout.js":"../../packages/model-pack/src/transport-layout.js?v=20261020.3",
-        "../../packages/model-pack/src/json-value-table.js":"../../packages/model-pack/src/json-value-table.js?v=20261020.3",
-        "../../packages/model-pack/src/model-pack-error.js":"../../packages/model-pack/src/model-pack-error.js?v=20261020.3"
+        "@onto2d/kernel/canonical":"../../packages/kernel/src/canonical-entry.js?v=20261021.1",
+        "@onto2d/model-pack":"../../packages/model-pack/src/index.js?v=20261021.1",
+        "@onto2d/model-pack/registry":"../../packages/model-pack/src/registry.js?v=20261021.1",
+        "@onto2d/rdf-import":"../../packages/rdf-import/src/index.js?v=20261021.1",
+        "@onto2d/rdf-mapping":"../../packages/rdf-mapping/src/index.js?v=20261021.1",
+        "@onto2d/shacl-validation":"../../packages/shacl-validation/src/index.js?v=20261021.1",
+        "@onto2d/view":"../../packages/view/src/index.js?v=20261021.1",
+        "@onto2d/view/lazy":"../../packages/view/src/lazy.js?v=20261021.1",
+        "../../packages/model-pack/src/index.js":"../../packages/model-pack/src/index.js?v=20261021.1",
+        "../../packages/model-pack/src/browser.js":"../../packages/model-pack/src/browser.js?v=20261021.1",
+        "../../packages/model-pack/src/transport-layout.js":"../../packages/model-pack/src/transport-layout.js?v=20261021.1",
+        "../../packages/model-pack/src/json-value-table.js":"../../packages/model-pack/src/json-value-table.js?v=20261021.1",
+        "../../packages/model-pack/src/model-pack-error.js":"../../packages/model-pack/src/model-pack-error.js?v=20261021.1"
       }}
     </script>
-    <script type="module" src="./model-studio.js?v=20261020.3"></script>
+    <script type="module" src="./model-studio.js?v=20261021.1"></script>
   </head>
   <body data-state="loading">
     <a class="skip-link" href="#studio">Skip to graph editor</a>
@@ -102,6 +102,7 @@
             <details id="visual-review-panel" class="record-details" hidden><summary>Visual relay, cortical organization and feedback</summary><p id="visual-review-summary"></p><div id="visual-review-records"></div><button id="visual-review-download" type="button">Download complete visual review</button></details>
             <details id="neural-review-panel" class="record-details" hidden><summary>Neural observations and interpretations</summary><p id="neural-review-summary"></p><div id="neural-review-records"></div><button id="neural-review-download" type="button">Download complete neural review</button></details>
             <details id="physics-review-panel" class="record-details" hidden><summary>Particle measurements and interpretations</summary><p id="physics-review-summary"></p><div id="physics-review-records"></div><button id="physics-review-download" type="button">Download particle evidence</button></details>
+            <details id="cellular-review-panel" class="record-details" hidden><summary>Cellular preparations, state and immune responses</summary><p id="cellular-review-summary"></p><div id="cellular-review-records"></div><button id="cellular-review-download" type="button">Download cellular evidence</button></details>
             <details id="biochemistry-review-panel" class="record-details" hidden><summary>Biochemical preparations and interpretations</summary><p id="biochemistry-review-summary"></p><div id="biochemistry-review-records"></div><button id="biochemistry-review-download" type="button">Download biochemical evidence</button></details>
             <section class="source-boundary" aria-label="Evidence boundary"><h4 id="model-boundary-title">Verified model boundary</h4><p id="model-boundary-summary">Record and relation semantics are those declared by this exact verified release.</p><p id="model-boundary-note">The Studio does not add dependency or causal meaning beyond the selected Model Pack.</p></section>
           </div>

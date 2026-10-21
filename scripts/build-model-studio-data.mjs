@@ -5,13 +5,14 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { verifyModelPack } from "@onto2d/model-pack";
 import { BROWSE_LIMITS } from "../apps/model-studio/browse-data.js";
+import { recordEvidenceContext, usesDictionaryEvidence } from "../apps/model-studio/record-evidence.js";
 
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const DATA = path.join(ROOT, "apps/model-studio/data");
 const LOADER = path.join(ROOT, "apps/model-studio/browse-data.js");
 const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
 const EDGE_FIELDS = ["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight"];
-const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry"];
+const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular"];
 const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
 const pick = (value, fields) => Object.fromEntries(fields.filter((field) => Object.hasOwn(value, field)).map((field) => [field, value[field]]));
@@ -55,6 +56,12 @@ export function buildBrowseArtifacts(input) {
     return { path: relative, hash: hashArtifactBytes(bytes), byteLength: bytes.byteLength };
   }
   const sourceNodes = pack.files["model/nodes.json"];
+  const dictionaries = pack.files["model/dictionaries.json"];
+  const sharedEvidence = usesDictionaryEvidence(dictionaries);
+  const detailPayload = (values) => envelope("onto2d-studio-node-details", {
+    records: values,
+    ...(sharedEvidence ? { evidence: recordEvidenceContext(values, dictionaries) } : {})
+  });
   const chunks = [];
   let records = [];
   let recordsBytes = 0;
@@ -62,7 +69,7 @@ export function buildBrowseArtifacts(input) {
     if (records.length === 0) return;
     const relative = `${prefix}/nodes-${String(chunks.length).padStart(4, "0")}.json`;
     chunks.push({
-      descriptor: add(relative, envelope("onto2d-studio-node-details", { records }), BROWSE_LIMITS.detailBytes),
+      descriptor: add(relative, detailPayload(records), BROWSE_LIMITS.detailBytes),
       nodeIds: records.map((record) => record.id)
     });
     records = [];
@@ -70,12 +77,13 @@ export function buildBrowseArtifacts(input) {
   }
   for (const node of sourceNodes) {
     const bytes = serialize(node).byteLength;
-    if (records.length > 0 && recordsBytes + bytes > CHUNK_TARGET) flush();
+    if (records.length > 0 && (sharedEvidence
+      ? serialize(detailPayload([...records, node])).byteLength > CHUNK_TARGET
+      : recordsBytes + bytes > CHUNK_TARGET)) flush();
     records.push(node);
     recordsBytes += bytes;
   }
   flush();
-  const dictionaries = pack.files["model/dictionaries.json"];
   const interactionViews = dictionaries.interactions ? {
     cases: dictionaries.interactions.cases.map(({ id, title, entityIds, anchorEntityId }) => ({ id, title, entityIds, anchorEntityId })),
     perspectives: dictionaries.interactions.perspectives
@@ -104,6 +112,7 @@ export function buildBrowseArtifacts(input) {
     nodes: sourceNodes.map(nodeProjection),
     edges: pack.files["model/edges.json"].map((edge) => pick(edge, EDGE_FIELDS)),
     presentation: dictionaries.presentation ?? {},
+    ...(sharedEvidence ? { recordEvidence: dictionaries.recordEvidence } : {}),
     ...(interactionViews ? { interactionViews } : {}),
     reviews,
     chunks
