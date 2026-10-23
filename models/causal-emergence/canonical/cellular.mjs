@@ -28,7 +28,7 @@ export function validateCellularReview(data, context) {
   assert.equal(cellular.independentScientificReviewComplete, false);
   assert.deepEqual(cellular.checkIds, [], "No cellular numerical replay has been admitted");
   const ledgers = [data.pilot, data.routing, data.optics, data.visual, data.neural,
-    data.physics, data.biochemistry, cellular];
+    data.physics, data.biochemistry, cellular, ...(data.organismal ? [data.organismal] : [])];
   const studies = index(ledgers.flatMap((review) => review.studies), "study");
   const records = {
     ...context,

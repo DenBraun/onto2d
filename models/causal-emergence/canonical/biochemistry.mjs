@@ -7,7 +7,7 @@ const sorted = (values) => [...values].sort();
 /** A closed source-admission contract; it does not evaluate biochemical truth. */
 export function validateBiochemistryReview(data, context) {
   const { graph, biochemistry, readiness } = data;
-  const reviews = [data.pilot, data.routing, data.optics, data.visual, data.neural, data.physics, biochemistry, ...(data.cellular ? [data.cellular] : [])];
+  const reviews = [data.pilot, data.routing, data.optics, data.visual, data.neural, data.physics, biochemistry, ...(data.cellular ? [data.cellular] : []), ...(data.organismal ? [data.organismal] : [])];
   const allStudyRows = reviews.flatMap((review) => review.studies);
   const allStudies = new Map(allStudyRows.map((study) => [study.id, study]));
   assert.equal(allStudies.size, allStudyRows.length, "Duplicate study IDs across evidence ledgers");

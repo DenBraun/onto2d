@@ -23,9 +23,9 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 96 remain on the
+graph. Of the 249 original source cards, 34 remain on the
 [pending list](../references/canonical/pending-review.json). Its complement of
-153 cards is a source-review census, not a percentage of scientifically supported
+215 cards is a source-review census, not a percentage of scientifically supported
 claims or independently reproduced experiments. Partially reviewed cards remain
 open until their substantive claims are supported, qualified or rejected.
 All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
@@ -69,10 +69,21 @@ prediction and failure criterion before reading new source outcomes.
 [CETCH issue #32](https://github.com/DenBraun/onto2d/issues/32) covers deeper main/supplement
 failure analysis and a later evidence-backed case page.
 
-The current graph contains 1960 records, 2101 connections, 2149 claims and 549 sources.
-All 33 Level-4 cellular cards have scoped source dispositions, with 70
-study contexts from 44 publications. Model-inferred flux, measured response,
+The current graph contains 2344 records, 2600 connections, 2527 claims and 603 sources.
+All 33 [Level-4 cellular cards](../references/canonical/LEVEL_4_REVIEW.md) have
+scoped source dispositions, with 70 study contexts from 44 publications.
+Model-inferred flux, measured response,
 cell-fate interpretation and cross-system mechanism transfer remain distinct.
+All 34 [Level-5 organismal cards](../references/canonical/LEVEL_5_REVIEW.md) have
+scoped dispositions: 384 entities, 378 claims, 499 relations, 129 study contexts
+and 26 comparisons, using 51 main publications and two correction notices.
+Morphogenesis, matrix/niche support, organ physiology, metabolic supply, tissue
+inflammation, clinical outcomes and retinal computation retain their actual
+preparations. Structural markers differ from mature function, finite persistence
+from hysteresis, and neural activity from measured hormonal/organ output.
+Contrary and partial-rescue outcomes constrain universal dependencies. Immune
+set points, conserved allocation optima and global self-maintaining inflammatory
+regimes remain unestablished; completing card disposition does not establish them.
 Independent scientific review and unresolved mechanisms remain open.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
@@ -368,8 +379,8 @@ belong to the current claims.
    indefinitely to reconstruct every upstream instrument. A new claim about
    formation dynamics, physical stability or a general constituent minimum
    needs separate support.
-2. Work through the pending physical, chemical, cellular, organismal and social
-   topics, including remaining Level-6 cards. Continue the open glial, gene
+2. Work through the nine pending Level-6 and 25 pending Level-7 cards and their
+   source-specific dependencies. Continue the open glial, gene
    regulation, neuroimmune, vascular, neurogenesis, memory, symbolic and social
    questions in the [neural task list](../references/canonical/NEURAL_NEXT_REVIEW.md).
    Review all associated evidence and dependencies; rebuild where required.

@@ -47,3 +47,21 @@ test("bare and relative Model Pack imports share the current cache revision", as
   }
   assert.ok(checked >= helpers.length, "Check the actual transitive helper imports, including cache/worker paths");
 });
+
+test("the app and lazy browse loader resolve the same current record evidence module", async () => {
+  const [app, browse] = await Promise.all([
+    readFile(new URL("../../apps/model-studio/model-studio.js", import.meta.url), "utf8"),
+    readFile(new URL("../../apps/model-studio/browse-data.js", import.meta.url), "utf8")
+  ]);
+  const specifier = (source, filename) => {
+    const match = source.match(new RegExp(`\\bfrom\\s*["'](\\./${filename}\\.js[^"']*)["']`, "u"));
+    assert.ok(match, `Missing actual ${filename} import`);
+    return match[1];
+  };
+  const appUrl = new URL(`./model-studio.js?v=${revision}`, documentUrl);
+  const browseUrl = effectiveUrl(specifier(app, "browse-data"), appUrl);
+  const expected = new URL(`./record-evidence.js?v=${revision}`, documentUrl).href;
+  assert.equal(effectiveUrl(specifier(app, "record-evidence"), appUrl), expected);
+  assert.equal(effectiveUrl(specifier(browse, "record-evidence"), browseUrl), expected,
+    "Lazy inspection must not retain a previous deployment's evidence resolver");
+});

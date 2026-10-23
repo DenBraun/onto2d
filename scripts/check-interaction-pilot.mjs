@@ -17,7 +17,8 @@ const STUDY_INPUTS = [
   "references/canonical/neural-review.json",
   "references/canonical/physics-review.json",
   "references/canonical/biochemistry-review.json",
-  "references/canonical/cellular-review.json"
+  "references/canonical/cellular-review.json",
+  "references/canonical/organismal-review.json"
 ];
 const INPUTS = [
   "references/canonical/interaction-pilot.json",
@@ -202,7 +203,7 @@ function renderReport(pilot, artifact) {
     `4. Complete [the detailed CETCH study and later case page](${CETCH_ISSUE}) before strengthening its electron-transfer mechanism claim.`,
     "",
     "## Reproduction boundary", "",
-    "The generated JSON binds the current graph, all seven canonical study ledgers, selection, schema and projector/checker code. "
+    "The generated JSON binds the current graph, all canonical study ledgers, selection, schema and projector/checker code. "
       + "Reproduction checks exact representation and provenance. It does not reproduce the experiments, fitted models "
       + "or scientific correctness of the published interpretations.", "");
   return lines.join("\n");

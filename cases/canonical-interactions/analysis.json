@@ -13,7 +13,7 @@
     },
     {
       "path": "references/canonical/graph.json",
-      "sha256": "38c40829c1ee2921bf0d514af470b2bfb92c466c035eabe939011f36a9c5bb99"
+      "sha256": "00eb52991227fa8227d701420a0e4210e6db681168c9d19c62a4475fc329a39f"
     },
     {
       "path": "references/canonical/retinal-review.json",
@@ -48,8 +48,12 @@
       "sha256": "a0589610513d5813030e9e64c7e62ec4e5afa95fe8ebcdb62529f34ff94e8649"
     },
     {
+      "path": "references/canonical/organismal-review.json",
+      "sha256": "607bdede63088d6315ea803e15812a09fc6ee587037cbd22ac361b9c624c8de1"
+    },
+    {
       "path": "references/canonical/schema.json",
-      "sha256": "d6bb17e7deb51da397d121bdbf7fb4abb2ba77bdcc17437ca0c5cf3d26040a53"
+      "sha256": "39a7700d6223778e61b515c79aa6540bee9987d26e87f986f3414f56bf3f4448"
     },
     {
       "path": "models/causal-emergence/canonical/interactions.mjs",
@@ -61,7 +65,7 @@
     },
     {
       "path": "scripts/check-interaction-pilot.mjs",
-      "sha256": "22841a9aa6782c5a31409b2bf6b85751293ad0331d7f0ade20375b339f0f754d"
+      "sha256": "1be72cff64454991964cac774a16cb82dc5668cbf640f1f6de0d4f51a1e073e1"
     }
   ],
   "system": {

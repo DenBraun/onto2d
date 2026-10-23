@@ -9,17 +9,22 @@ import {
 
 test("comparison loads every evidence ledger when the canonical atlas gains an unselected optical case", async () => {
   const read = (name) => readFile(new URL(`../../references/canonical/${name}.json`, import.meta.url));
+  const ledgerNames = ["retinal-review", "routing-review", "optical-review", "visual-review", "neural-review",
+    "physics-review", "biochemistry-review", "cellular-review", "organismal-review"];
   const [graphBytes, protocolBytes, ...ledgerBytes] = await Promise.all([
     read("graph"), read("interaction-pilot"),
-    ...["retinal-review", "routing-review", "optical-review", "visual-review", "neural-review",
-      "physics-review", "biochemistry-review", "cellular-review"].map(read)
+    ...ledgerNames.map(read)
   ]);
   const graph = JSON.parse(graphBytes);
   const protocol = JSON.parse(protocolBytes);
-  const ledgerNames = ["retinal-review", "routing-review", "optical-review", "visual-review", "neural-review",
-    "physics-review", "biochemistry-review", "cellular-review"];
   const inputs = new Map(ledgerNames.map((name, n) => [`references/canonical/${name}.json`, ledgerBytes[n]]));
   const studies = readComparisonStudies(inputs);
+  const organismal = JSON.parse(inputs.get("references/canonical/organismal-review.json")).studies;
+  assert.ok(organismal.length && organismal.every((record) => studies.some((study) => study.id === record.id)),
+    "The complete organismal ledger remains available even outside the selected comparison cases");
+  const missingOrganismal = new Map(inputs);
+  missingOrganismal.delete("references/canonical/organismal-review.json");
+  assert.throws(() => readComparisonStudies(missingOrganismal), /missing bound study ledger/);
   const claimId = "O-reflection", studyId = "hanssen2001", entityId = "opt:specular-response";
   const record = {
     id: "test:unselected-optical-case", title: "Unselected optical provenance fixture", domain: "physics",

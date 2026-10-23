@@ -8,13 +8,15 @@ import { inspectModelStudioRevisionGraph } from "./public-module-revisions.mjs";
 const REPOSITORY_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const INDEX_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "index.html");
 const APP_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "model-studio.js");
+const BROWSE_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "browse-data.js");
 
 export async function run() {
-  const [indexSource, appSource] = await Promise.all([
+  const [indexSource, appSource, browseSource] = await Promise.all([
     readFile(INDEX_PATH, "utf8"),
-    readFile(APP_PATH, "utf8")
+    readFile(APP_PATH, "utf8"),
+    readFile(BROWSE_PATH, "utf8")
   ]);
-  const inspection = inspectModelStudioRevisionGraph(indexSource, appSource);
+  const inspection = inspectModelStudioRevisionGraph(indexSource, appSource, { "browse-data.js": browseSource });
   if (inspection.errors.length > 0) {
     const revision = inspection.revision ?? "YYYYMMDD.N";
     throw new Error(

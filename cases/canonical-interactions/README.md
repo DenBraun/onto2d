@@ -715,4 +715,4 @@ A scoped transfer means that the operational distinction remains useful in anoth
 
 ## Reproduction boundary
 
-The generated JSON binds the current graph, all seven canonical study ledgers, selection, schema and projector/checker code. Reproduction checks exact representation and provenance. It does not reproduce the experiments, fitted models or scientific correctness of the published interpretations.
+The generated JSON binds the current graph, all canonical study ledgers, selection, schema and projector/checker code. Reproduction checks exact representation and provenance. It does not reproduce the experiments, fitted models or scientific correctness of the published interpretations.
