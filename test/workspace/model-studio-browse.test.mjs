@@ -334,6 +334,44 @@ test("vocabulary lazy loading retains its scope and cited source without fetchin
   session.close();
 });
 
+test("organismal reviews and inspected evidence load separately without merging cellular preparations", async () => {
+  const original = fixture();
+  const source = { id: "organism-paper", title: "Two distinct preparations",
+    review: { extent: "selected-primary-results", limit: "Supplement and raw data unread." } };
+  const cellular = { id: "cell-assay", sourceId: source.id, preparation: "Isolated-cell preparation",
+    readExtent: "selected-primary-results", reviewedLocators: ["Figure 1"], limitations: ["No organismal transfer."] };
+  const organismal = { id: "organism-assay", sourceId: source.id, preparation: "Matched organism intervention",
+    readExtent: "selected-primary-results", reviewedLocators: ["Figure 2"], limitations: ["Finite endpoint."] };
+  const claim = { id: "organism-finding", contextIds: [organismal.id, cellular.id],
+    citations: [{ sourceId: source.id, locator: "Figure 2", role: "supports" }] };
+  const nodes = [{ id: "org:record", name: "Scoped organismal response", level: 5, rationale: [claim] }];
+  const review = { studies: [organismal], comparisons: [] };
+  const pack = buildModelPack({ model: original.manifest.model, source: original.manifest.source, nodes, edges: [],
+    dictionaries: { recordEvidence: { format: "dictionary-references-v1" },
+      sources: [source, { id: "unrelated", title: "Unrelated publication" }],
+      cellular: { studies: [cellular] }, organismal: review } });
+  const artifacts = buildBrowseArtifacts(pack);
+  const { load, mock } = loaderFor(artifacts);
+  const session = await load(resolution(pack));
+  try {
+    assert.equal(mock.calls.length, 2, "Index and graph load without scientific details");
+    assert.deepEqual(session.reviews.organismal, { count: 1, studyCount: 1, comparisonCount: 0 });
+    const subset = await session.review("organismal");
+    assert.deepEqual(subset, { sources: [source], organismal: review });
+    assert.equal(mock.calls.length, 3);
+    assert.ok(mock.calls.at(-1).path.endsWith("review-organismal.json"));
+    const inspected = await session.inspectWithEvidence("org:record");
+    assert.deepEqual(inspected.record, nodes[0], "Raw node references remain exact");
+    assert.deepEqual(inspected.rationale, [{ ...claim, contexts: [organismal, cellular], experimentalContexts: [],
+      citations: claim.citations.map((citation) => ({ ...citation, source })) }]);
+    assert.equal(mock.calls.length, 4, "Inspection uses one detail request without loading the cellular review");
+    assert.ok(mock.calls.at(-1).path.includes("/nodes-"));
+    assert.deepEqual(await session.review("organismal"), subset);
+    await session.inspectWithEvidence("org:record");
+    assert.equal(mock.calls.length, 4, "Each verified payload is reused independently");
+  } finally { session.close(); }
+});
+
 test("unknown releases fall back explicitly while known release hash mismatches fail closed", async () => {
   const { pack, mock, load } = await prepared();
   assert.equal(await load({ ...resolution(pack), version: "missing" }), null);

@@ -9,13 +9,20 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 1960 records, 2101 connections, 2149 claims and 549 sources.
+The current graph contains 2344 records, 2600 connections, 2527 claims and 603 sources.
 The physics review contains 219 study contexts and 143 comparisons.
 The biochemistry review contains 61 preparation contexts from 31 publications.
 The [Level-4 source review](LEVEL_4_REVIEW.md) covers all 33 cellular cards, with
 70 study contexts from 44 publications. Observations, interventions,
 model-based inferences and unresolved transfers retain their own boundaries.
-Unfinished source work is listed in [pending-review.json](pending-review.json).
+The [Level-5 source review](LEVEL_5_REVIEW.md) covers all 34 organismal cards,
+with 129 study contexts from 51 main publications and two correction notices.
+Morphogenesis, organ function, local inflammatory responses, clinical outcomes
+and retinal computations retain distinct preparations and limits. Global immune
+hysteresis, a common immune set point and universal surveillance/repair allocation
+remain unestablished hypotheses.
+Unfinished source work is listed in [pending-review.json](pending-review.json):
+34 cards remain, comprising nine Level-6 and 25 Level-7 cards.
 The [Level-2 work queue](LEVEL_2_REVIEW.md) covers all 23 physical, chemical and
 material source cards. All have scoped dispositions; surface radiometry and
 propagation retain their finite model and measurement boundaries.
@@ -37,6 +44,7 @@ interactions, neurovascular coupling, adult neurogenesis, working memory, symbol
 | [physics-review.json](physics-review.json) | Physical experiments, computational contexts and conditional interpretations |
 | [biochemistry-review.json](biochemistry-review.json) | Biochemical preparations, measured responses and conditional mechanisms |
 | [cellular-review.json](cellular-review.json) | Cellular organization, regulation and immune preparations with scoped interpretation limits |
+| [organismal-review.json](organismal-review.json) | Tissue, organ, physiological, inflammatory and retinal preparations with scoped comparisons |
 | [dictionary-review.json](dictionary-review.json) | Scoped vocabulary and mathematical checks |
 | [source-readiness.json](source-readiness.json) | Representation roles and Formal Core requirements |
 | [interaction-pilot.json](interaction-pilot.json) | Case selections, candidate tests and separate-publication transfer checks |

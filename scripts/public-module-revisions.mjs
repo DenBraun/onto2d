@@ -90,7 +90,7 @@ function replaceResources(source, resources, revision) {
   return updated;
 }
 
-export function inspectModelStudioRevisionGraph(indexSource, appSource) {
+export function inspectModelStudioRevisionGraph(indexSource, appSource, moduleSources = {}) {
   const errors = [];
   const entries = modelStudioEntryResources(indexSource);
   if (entries.length !== 1) {
@@ -105,7 +105,9 @@ export function inspectModelStudioRevisionGraph(indexSource, appSource) {
 
   const references = [
     ...modelStudioImportMapResources(indexSource, errors),
-    ...modelStudioAppResources(appSource)
+    ...modelStudioAppResources(appSource),
+    ...Object.entries(moduleSources).flatMap(([filename, source]) => modelStudioAppResources(source)
+      .map(({ label, resource }) => ({ label: `${filename} ${label}`, resource })))
   ];
   if (references.length === 0) errors.push("Model Studio module graph has no versioned dependencies");
 
@@ -121,7 +123,7 @@ export function inspectModelStudioRevisionGraph(indexSource, appSource) {
   return { revision, references, errors };
 }
 
-export function synchronizeModelStudioRevision(indexSource, appSource, revision) {
+export function synchronizeModelStudioRevision(indexSource, appSource, revision, moduleSources = {}) {
   if (!CACHE_REVISION_PATTERN.test(revision)) {
     throw new Error(`Model Studio cache revision must match YYYYMMDD.N; received ${JSON.stringify(revision)}`);
   }
@@ -149,9 +151,11 @@ export function synchronizeModelStudioRevision(indexSource, appSource, revision)
     appReferences.map(({ resource }) => resource),
     revision
   );
-  const inspection = inspectModelStudioRevisionGraph(updatedIndex, updatedApp);
+  const updatedModules = Object.fromEntries(Object.entries(moduleSources).map(([filename, source]) => [filename,
+    replaceResources(source, modelStudioAppResources(source).map(({ resource }) => resource), revision)]));
+  const inspection = inspectModelStudioRevisionGraph(updatedIndex, updatedApp, updatedModules);
   if (inspection.errors.length > 0) {
     throw new Error(`Synchronized Model Studio graph is invalid:\n- ${inspection.errors.join("\n- ")}`);
   }
-  return { indexSource: updatedIndex, appSource: updatedApp };
+  return { indexSource: updatedIndex, appSource: updatedApp, moduleSources: updatedModules };
 }

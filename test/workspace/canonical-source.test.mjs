@@ -43,10 +43,10 @@ test("joint rules require distinct multiplicities and cannot assert successful p
 
 test("the current output contains evidence and no graph migration history", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1960, edgeCount: 2101 });
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 2344, edgeCount: 2600 });
   const dictionaries = pack.files["model/dictionaries.json"];
-  assert.equal(dictionaries.claims.length, 2149);
-  assert.equal(dictionaries.sources.length, 549);
+  assert.equal(dictionaries.claims.length, 2527);
+  assert.equal(dictionaries.sources.length, 603);
   const census = dictionaries.evidence.neurogenesisData;
   assert.equal(census.sampleCount, 39);
   assert.equal(census.retainedNuclei, 153530);
@@ -66,7 +66,7 @@ test("the current output contains evidence and no graph migration history", asyn
   const edges = new Map(pack.files["model/edges.json"].map((edge) => [edge.id, edge]));
   const claims = new Map(dictionaries.claims.map((claim) => [claim.id, claim]));
   const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
-  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry", "cellular"]
+  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal"]
     .flatMap((key) => dictionaries[key].studies).map((study) => [study.id, study]));
   for (const node of pack.files["model/nodes.json"]) {
     const resolved = resolveRecordEvidence(node, recordEvidenceContext([node], dictionaries));

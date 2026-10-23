@@ -78,8 +78,8 @@ test("context compatibility requires one shared complete protocol across the ent
 
 test("compiled endpoints expose experimental contexts, alternatives and exact source-cell provenance", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 1960, edgeCount: 2101 });
-  assert.equal(pack.manifest.source.files.length, 251);
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 2344, edgeCount: 2600 });
+  assert.equal(pack.manifest.source.files.length, 258);
   const node = pack.files["model/nodes.json"].find((n) => n.id === "ret:primate-off-readout");
   assert.equal(node.rationale.length, 3);
   const rationale = resolveRecordEvidence(node, recordEvidenceContext([node], pack.files["model/dictionaries.json"]));
@@ -90,7 +90,7 @@ test("compiled endpoints expose experimental contexts, alternatives and exact so
   assert.equal(e.measurement.responseRatio, 0.18);
   assert.equal(rationale[1].citations.find((c) => c.sourceId === "grimes2018-fig6-data").source.doi, "10.7554/eLife.38281.019");
   const edges = pack.files["model/edges.json"];
-  assert.equal(edges.filter((e) => e.relationLayer === "functional-support").length, 216);
-  assert.equal(edges.filter((e) => e.relationLayer === "descriptive").length, 1885);
+  assert.equal(edges.filter((e) => e.relationLayer === "functional-support").length, 287);
+  assert.equal(edges.filter((e) => e.relationLayer === "descriptive").length, 2313);
   assert.deepEqual(pack.files["model/dictionaries.json"].routing, data.routing);
 });

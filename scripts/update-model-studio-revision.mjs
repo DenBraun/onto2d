@@ -8,6 +8,7 @@ import { synchronizeModelStudioRevision } from "./public-module-revisions.mjs";
 const REPOSITORY_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const INDEX_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "index.html");
 const APP_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "model-studio.js");
+const BROWSE_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "browse-data.js");
 const revision = process.argv[2];
 
 if (!revision || process.argv.length !== 3) {
@@ -15,14 +16,16 @@ if (!revision || process.argv.length !== 3) {
   process.exitCode = 1;
 } else {
   try {
-    const [indexSource, appSource] = await Promise.all([
+    const [indexSource, appSource, browseSource] = await Promise.all([
       readFile(INDEX_PATH, "utf8"),
-      readFile(APP_PATH, "utf8")
+      readFile(APP_PATH, "utf8"),
+      readFile(BROWSE_PATH, "utf8")
     ]);
-    const updated = synchronizeModelStudioRevision(indexSource, appSource, revision);
+    const updated = synchronizeModelStudioRevision(indexSource, appSource, revision, { "browse-data.js": browseSource });
     const writes = [];
     if (updated.indexSource !== indexSource) writes.push(writeFile(INDEX_PATH, updated.indexSource));
     if (updated.appSource !== appSource) writes.push(writeFile(APP_PATH, updated.appSource));
+    if (updated.moduleSources["browse-data.js"] !== browseSource) writes.push(writeFile(BROWSE_PATH, updated.moduleSources["browse-data.js"]));
     await Promise.all(writes);
     console.log(
       writes.length === 0
