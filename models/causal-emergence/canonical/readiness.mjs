@@ -25,7 +25,7 @@ export function validateSourceReadiness(data, dictionaries, proposalText) {
   assert.equal(new Set(readiness.proposal.findings.map((f) => f.id)).size, readiness.proposal.findings.length, "Duplicate proposal finding");
   for (const f of readiness.proposal.findings) for (const section of f.sections) assert.ok(sections.includes(section), `Unknown proposal section: ${section}`);
 
-  const computationalStudies = new Set([...data.neural.studies, ...data.physics.studies, ...data.biochemistry.studies, ...(data.cellular?.studies ?? []), ...(data.organismal?.studies ?? [])]
+  const computationalStudies = new Set([...data.neural.studies, ...data.physics.studies, ...data.biochemistry.studies, ...(data.cellular?.studies ?? []), ...(data.organismal?.studies ?? []), ...(data.neuralSystems?.studies ?? [])]
     .filter((study) => study.studyType === "computational-analysis").map((study) => study.id));
   const claims = new Map(graph.claims.map((claim) => [claim.id, claim]));
   const modelContext = (node) => node.kind === "context" && node.claimIds.some((id) =>
@@ -36,7 +36,7 @@ export function validateSourceReadiness(data, dictionaries, proposalText) {
     const node = nodes[i];
     const expected = i >= graph.entities.length ? "rule-specification"
       : modelContext(node) ? "model-context"
-      : (node.id.startsWith("ret:") || node.id.startsWith("opt:") || node.id.startsWith("vis:") || node.id.startsWith("neur:") || node.id.startsWith("phys:") || node.id.startsWith("bio:") || node.id.startsWith("cell:") || node.id.startsWith("org:")) && node.kind === "context" ? "experimental-context" : roles[node.kind];
+      : (node.id.startsWith("ret:") || node.id.startsWith("opt:") || node.id.startsWith("vis:") || node.id.startsWith("neur:") || node.id.startsWith("phys:") || node.id.startsWith("bio:") || node.id.startsWith("cell:") || node.id.startsWith("org:") || node.id.startsWith("cog:")) && node.kind === "context" ? "experimental-context" : roles[node.kind];
     assert.ok(expected, `Unreviewed atlas kind: ${node.kind}`);
     assert.equal(record.role, expected, `Role contradicts source kind: ${node.id}`);
     assert.deepEqual(record.claimIds, node.claimIds, `Role lost claim scope: ${node.id}`);

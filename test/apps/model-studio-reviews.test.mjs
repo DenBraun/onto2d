@@ -26,7 +26,7 @@ function element(tag, className = "", textContent = "") {
 
 function setup(presentation = null) {
   const markup = new Map([...html.matchAll(/\bid="([^"]+)"/g)].map((match) => [match[1], element("div")]));
-  const state = { presentation: null }, downloads = [];
+  const state = { presentation: null }, downloads = [], inspections = [];
   // Initialize the app's actual element registry against its actual markup.
   const initialization = source.slice(source.indexOf("const ids = ["), source.indexOf("\nconst state = {"));
   const app = vm.runInNewContext(`${initialization}\n${[
@@ -43,9 +43,10 @@ function setup(presentation = null) {
     defaultFocusId: () => "org:record", configureFacet() {}, selectLocalOption() {}, replaceLocationState() {},
     coordinateText: () => "Level 5", scalarLabel: (value) => String(value ?? ""), tag: (text) => element("span", "", text),
     renderRelationList() {}, renderInteractionCases() {},
-    downloadRecord: (value, filename) => downloads.push({ value, filename })
+    downloadRecord: (value, filename) => downloads.push({ value, filename }),
+    inspectNode: (id) => inspections.push(id)
   });
-  return { ...app, state, downloads };
+  return { ...app, state, downloads, inspections };
 }
 
 function lines(element) {
@@ -58,6 +59,41 @@ const study = { id: "organism-preparation", sourceId: publication.id, studyType:
   system: "One specified organism", preparation: "Matched intervention and control", observable: "Finite response",
   finding: "A bounded effect", readExtent: "selected-primary-results", reviewedLocators: ["Results", "Figure 2"],
   limitations: ["No universal operating dependency."], correctionCheck: "Publication metadata checked." };
+
+test("Level-6 decisions load on demand, retain contrary parent decisions and open the actual scope record", async () => {
+  const { configureReviewPanels, elements, downloads, inspections } = setup();
+  const review = { studies: [study], comparisons: [], cards: [{ code: "6.16", originalName: "Neurovascular Coupling",
+    scope: "Vascular response is distinct from immune regulation and from neural activity itself.",
+    nodeIds: ["neur:source-readout", "cog:vascular-scope"],
+    assertions: [{ topic: "A measured vascular change", disposition: "qualified", reason: "One preparation and endpoint only." }],
+    parentDispositions: [{ parentCode: "5.9", disposition: "excluded", reason: "This immune dependency is not a general vascular necessity." }],
+    excludedDefaults: ["No inherited parent weight."], unresolved: ["The complete neuronal-to-vascular route is unmeasured."] }] };
+  const dictionaries = { sources: [publication], neuralSystems: review };
+  const before = structuredClone(dictionaries), requests = [];
+  configureReviewPanels({ files: { "model/dictionaries.json": {} } }, {
+    reviews: { neuralSystems: { count: 2 } }, review: async (key) => { requests.push(key); return dictionaries; }
+  });
+  const panel = elements["neural-systems-review-panel"];
+  assert.equal(panel.hidden, false);
+  assert.deepEqual(requests, []);
+  panel.open = true;
+  await panel.ontoggle();
+  assert.deepEqual(requests, ["neuralSystems"]);
+  const records = elements["neural-systems-review-records"];
+  for (const expected of ["6.16: Neurovascular Coupling", "A measured vascular change: qualified", "5.9: excluded",
+    "This immune dependency is not a general vascular necessity.", "Excluded default: No inherited parent weight.",
+    "Open question: The complete neuronal-to-vascular route is unmeasured."]) assert.ok(lines(records).includes(expected), expected);
+  assert.match(elements["neural-systems-review-summary"].textContent, /1 reviewed topics and 1 additional study contexts/);
+  records.children[0].children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
+  assert.deepEqual(inspections, ["cog:vascular-scope"]);
+  elements["neural-systems-review-download"].onclick();
+  assert.deepEqual(downloads, [{ value: review, filename: "neuralSystems-evidence.json" }]);
+  assert.deepEqual(dictionaries, before);
+  configureReviewPanels({ files: { "model/dictionaries.json": {} } }, null);
+  assert.equal(panel.hidden, true);
+  assert.equal(records.children.length, 0);
+  assert.equal(elements["neural-systems-review-download"].onclick, null);
+});
 
 test("the organismal panel loads on opening, retains reading boundaries and downloads its exact review", async () => {
   const { configureReviewPanels, elements, state, downloads } = setup();

@@ -1,46 +1,46 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20261022.1";
+} from "../../packages/model-pack/src/browser.js?v=20261024.1";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20261022.1";
+} from "../../packages/model-pack/src/cache.js?v=20261024.1";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20261022.1";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261022.1";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261022.1";
+} from "../../packages/model-pack/src/registry.js?v=20261024.1";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261024.1";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261024.1";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20261022.1";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261022.1";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261022.1";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261022.1";
+} from "../../packages/rdf-mapping/src/index.js?v=20261024.1";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261024.1";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261024.1";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261024.1";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
-import { graphHighlight } from "./graph-interactions.js?v=20261022.1";
-import { interactionViewCatalog, selectInteractionGraph, interactionCaseOverview, layoutIsolatedCaseCards } from "./interaction-views.js?v=20261022.1";
-import { citationLinks, resolveClaimCitations } from "./evidence-links.js?v=20261022.1";
-import { recordEvidenceContext, resolveRecordEvidence } from "./record-evidence.js?v=20261022.1";
-import { loadBrowseModel } from "./browse-data.js?v=20261022.1";
+import { graphHighlight } from "./graph-interactions.js?v=20261024.1";
+import { interactionViewCatalog, selectInteractionGraph, interactionCaseOverview, layoutIsolatedCaseCards } from "./interaction-views.js?v=20261024.1";
+import { citationLinks, resolveClaimCitations } from "./evidence-links.js?v=20261024.1";
+import { recordEvidenceContext, resolveRecordEvidence } from "./record-evidence.js?v=20261024.1";
+import { loadBrowseModel } from "./browse-data.js?v=20261024.1";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20261022.1";
+} from "./model-selection.js?v=20261024.1";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.22.0" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.10.24.0" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20261022.1",
+  "../../assets/js/model-pack-worker.js?v=20261024.1",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:a18ac926cc2484fb5f3a0f36685fc8d07e275c8b55d4d5ed2c790c7ba1772164";
+const EXPECTED_REGISTRY_HASH = "sha256:2fd1b83566587d95089762078b718afca1308b390aa64dfea9ef40ef13b7d26c";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
@@ -82,6 +82,7 @@ const ids = [
   "physics-review-panel", "physics-review-summary", "physics-review-records", "physics-review-download",
   "cellular-review-panel", "cellular-review-summary", "cellular-review-records", "cellular-review-download",
   "organismal-review-panel", "organismal-review-summary", "organismal-review-records", "organismal-review-download",
+  "neural-systems-review-panel", "neural-systems-review-summary", "neural-systems-review-records", "neural-systems-review-download",
   "biochemistry-review-panel", "biochemistry-review-summary", "biochemistry-review-records", "biochemistry-review-download",
   "interaction-view-controls", "interaction-perspective", "interaction-case", "direction-depth-separator",
   "interaction-cases-panel", "interaction-cases-records", "graph-parent-key", "graph-child-key", "graph-case-key"
@@ -896,7 +897,10 @@ function renderSourceReview(pack, key, prefix) {
   elements[`${prefix}-summary`].textContent = "";
   elements[`${prefix}-download`].onclick = null;
   if (!review) return;
-  elements[`${prefix}-summary`].textContent = `${review.studies.length} study contexts. Measurements, interventions and interpretations retain their stated scope. Independent scientific review remains open.`;
+  const coverage = Array.isArray(review.cards)
+    ? `${review.cards.length} reviewed topics and ${review.studies.length} additional study contexts. Existing evidence retains its original study records.`
+    : `${review.studies.length} study contexts.`;
+  elements[`${prefix}-summary`].textContent = `${coverage} Measurements, interventions and interpretations retain their stated scope. Independent scientific review remains open.`;
   const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
   const appendSource = (section, id) => {
     const source = sources.get(id);
@@ -929,6 +933,32 @@ function renderSourceReview(pack, key, prefix) {
     appendSource(section, study.sourceId);
     return section;
   });
+  const cardSections = (review.cards ?? []).map((card) => {
+    const section = createElement("details", "record-details");
+    section.append(createElement("summary", "", `${card.code}: ${card.originalName}`));
+    section.append(createElement("p", "", card.scope));
+    const scopeId = card.nodeIds.find((id) => id.startsWith("cog:"));
+    if (scopeId) {
+      const inspect = createElement("button", "", "Inspect reviewed scope");
+      inspect.type = "button";
+      inspect.onclick = () => inspectNode(scopeId);
+      section.append(inspect);
+    }
+    for (const [label, entries, name] of [["Assertions", card.assertions, "topic"],
+      ["Proposed dependencies", card.parentDispositions, "parentCode"]]) {
+      section.append(createElement("p", "", label));
+      for (const entry of entries) {
+        const detail = createElement("details", "record-details");
+        detail.append(createElement("summary", "", `${entry[name]}: ${entry.disposition}`));
+        detail.append(createElement("p", "", entry.reason));
+        section.append(detail);
+      }
+    }
+    for (const limit of card.excludedDefaults) section.append(createElement("p", "", `Excluded default: ${limit}`));
+    for (const limit of card.unresolved) section.append(createElement("p", "", `Open question: ${limit}`));
+    return section;
+  });
+  sections.unshift(...cardSections);
   for (const comparison of review.comparisons ?? []) {
     const section = createElement("details", "record-details");
     section.append(createElement("summary", "", `Interpretation: ${comparison.id}`));
@@ -995,7 +1025,7 @@ function configureReviewPanels(pack, browse) {
     ["sourceReadiness", "source-readiness", renderSourceReadiness],
     ...[["optics", "optical-review"], ["visual", "visual-review"],
       ["neural", "neural-review"], ["physics", "physics-review"], ["biochemistry", "biochemistry-review"], ["cellular", "cellular-review"],
-      ["organismal", "organismal-review"]]
+      ["organismal", "organismal-review"], ["neuralSystems", "neural-systems-review"]]
       .map(([key, prefix]) => [key, prefix, (value) => renderSourceReview(value, key, prefix)])
   ];
   for (const [key, prefix, renderReview] of reviews) {

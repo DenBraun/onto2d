@@ -1,15 +1,13 @@
-# Next neural source work
+# Neural scientific obligations
 
-Open neural source work concerns glial functions, activity-dependent gene
-regulation, neuroimmune and neurovascular interactions, adult neurogenesis,
-working memory, symbolic representations and social cognition
-(`references/level-6.json`, entries 13-20). Their original cards and evidence
-lists have been read. These topics
-remain unfinished.
+All 25 Level-6 source cards have explicit [scope decisions](LEVEL_6_REVIEW.md).
+The following items concern independent scientific review, unread material,
+measurement identity, numerical reconstruction and competing mechanisms. They
+remain scientific obligations; they do not denote undisposed catalogue cards.
 
 ## Social recognition and empathy
 
-Source card 6.20 remains unfinished. Distinguish action observation, action
+For source card 6.20, distinguish action observation, action
 recognition, affect sharing, perspective taking and helping. The reviewed F5
 responses do not jointly establish these outcomes or a minimal social circuit.
 
@@ -71,7 +69,7 @@ responses do not jointly establish these outcomes or a minimal social circuit.
 
 ## Glial functions
 
-The source card remains unfinished. Selected glial experiments are represented
+Selected glial experiments are represented
 in the current graph, with their reading limits in [neural-review.json](neural-review.json).
 Remaining work is to:
 
@@ -180,10 +178,10 @@ intervention on an abstract neural state or a unique downward-causation rule.
 
 ## Neurovascular coupling
 
-Source card 6.16 remains unfinished. Its vascular topic requires direct support
-for each candidate dependency; the thirteen proposed incoming assertions have
-no matched vascular evidence in the reviewed sources. Default weights and
-carrier minima are unmeasured.
+Source card 6.16 has vascular evidence for selected preparations, while its
+thirteen proposed incoming dependencies lack matched evidence of universal
+vascular necessity. Its immune description does not supply vascular mechanisms.
+Default weights and carrier minima are unmeasured.
 
 - Longden et al. (2017), DOI `10.1038/nn.4533`: obtain animal-identified recordings
   and custom LFP code. Resolve the Methods/Table 2 age discrepancy, control-line
@@ -218,7 +216,7 @@ carrier minima are unmeasured.
 
 ## Adult neurogenesis and circuit remodeling
 
-Source card 6.17 remains unfinished. Neuron production, functional integration
+For source card 6.17, neuron production, functional integration
 and remodeling of existing circuits need separate evidence. The three proposed
 incoming dependencies have no matched necessity test or measured weights and
 carrier minima. Learning can modulate selected stages in selected tasks; it is
@@ -376,8 +374,8 @@ neurogenesis does not require an injury-repair event.
 
 ## Working memory and executive control
 
-The card remains unfinished. The two central theoretical reviews and the
-Miller et al. (1996) and Rose et al. (2016) primary scientific texts and figures
+The two central theoretical reviews and the Miller et al. (1996) and
+Rose et al. (2016) primary scientific texts and figures
 are reviewed, including Rose's complete supplementary methods, figures and table.
 Definitions, observational readouts, task interventions and storage hypotheses
 retain separate scientific roles.
@@ -415,7 +413,7 @@ retain separate scientific roles.
 
 ## Symbolic representations
 
-Source card 6.19 remains unfinished. Definitions of sequence codes, composition,
+For source card 6.19, definitions of sequence codes, composition,
 description cost and developmental contrast have scoped sources; vector binding,
 mental program induction and conceptual bootstrapping remain hypotheses.
 
@@ -519,3 +517,17 @@ mental program induction and conceptual bootstrapping remain hypotheses.
   ensembles under matched tasks. Weights and carrier minima are unmeasured.
   An ordering of representational descriptions does not establish a construction
   chain; a minimum program does not establish minimum physical resources.
+
+## Contextual treatment and psychophysiology
+
+For card 6.21, independently review the primary pain, motor, hormonal, immune and
+airway comparisons in [neural-systems-review.json](neural-systems-review.json).
+Obtain participant-level allocation, raw observations and separate supplements
+before numerical replay. Distinguish treatment-group change from a placebo
+effect against an appropriate control, subjective report from measured peripheral
+function, and source nulls from demonstrated equivalence. Resolve the immune
+protocol timing and prior-data provenance, compare matched conditioning schedules
+and unpaired cue/drug controls, and directly assess expectation before assigning
+a unique associative or conscious-state mechanism. Complete neural/autonomic
+mediation, durable set points, disease modification and universal carrier minima
+remain unestablished.

@@ -47,6 +47,23 @@ been supported, qualified or excluded. This does not imply independent
 experimental reproduction. Missing raw data and unresolved source conflicts
 remain explicit limits of the affected claims.
 
+A speculative assertion can receive an explicit unresolved disposition when
+the missing observations, competing interpretations and withheld conclusions
+are recorded. This completes its scope assessment while leaving the scientific
+question open. A reviewed topic definition can organize positive findings,
+nulls and hypotheses through descriptive links. Such a link is admitted only
+as the exact reviewed representation; it cannot establish a physical dependency,
+pool preparations or become a construction-rule premise. Level-6 topic decisions
+are stored with the canonical review and remain available in the selected
+release's on-demand evidence panel.
+
+Source admission preserves query fields that identify distinct catalogue entries;
+tracking parameters alone do not create a new publication. Comparison admission
+checks both publication and acquisition identifiers according to the ledger's
+contract. Reusing reviewed evidence does not authorize a new interpretation in
+another ledger; existing reused comparisons retain their reviewed content and
+owning ledger.
+
 For decay measurements, distinguish a total lifetime, a partial-rate limit
 and a ratio of specified channels. Detector spectra, fitted intermediate
 quantities, auxiliary response measurements and corrected results keep their

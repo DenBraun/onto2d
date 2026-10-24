@@ -10,7 +10,7 @@ import {
 test("comparison loads every evidence ledger when the canonical atlas gains an unselected optical case", async () => {
   const read = (name) => readFile(new URL(`../../references/canonical/${name}.json`, import.meta.url));
   const ledgerNames = ["retinal-review", "routing-review", "optical-review", "visual-review", "neural-review",
-    "physics-review", "biochemistry-review", "cellular-review", "organismal-review"];
+    "physics-review", "biochemistry-review", "cellular-review", "organismal-review", "neural-systems-review"];
   const [graphBytes, protocolBytes, ...ledgerBytes] = await Promise.all([
     read("graph"), read("interaction-pilot"),
     ...ledgerNames.map(read)

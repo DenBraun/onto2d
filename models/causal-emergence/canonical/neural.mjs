@@ -1,3 +1,4 @@
+import { isReviewedNeuralSystemsDescription, isReviewedNeuralSystemsRecord } from "./level-six.mjs";
 import assert from "node:assert/strict";
 import { BIOCHEMISTRY_CLAIM_IDS } from "./level-three.mjs";
 
@@ -173,6 +174,7 @@ const effects = [
 
 /** Enforce current evidence roles, preparation and interpretation boundaries. */
 export function validateNeuralReview({ graph, neural }, { sources, claims, entities, relations }) {
+  const otherRelations = graph.relations.filter((relation) => !isReviewedNeuralSystemsDescription(relation));
   const studies = new Map(neural.studies.map((s) => [s.id, s]));
   assert.deepEqual([...studies.keys()], ["witvliet2021", "scheiffele2000", "bliss1973", "collingridge1983", "cardin2009", "hanks2006", "katz2016", "jeurissen2022", "ernst2002", "wolpert1995", "shadmehr1994", "tye2011", "carter2010", "beggs2003", "cogitate2025", "adamantidis2007", "carrilloreid2019", "randi2023", "mu2019", "agulhon2010", "deceglia2023", "djukic2007", "suzuki2011", "etxeberria2016", "schafer2012", "nimmerjahn2005", "badimon2020", "su2017", "weaver2004", "marco2020", "jin2024", "longden2017", "noterman2026", "krolak2025", "vanpraag2002", "disouky2026", "toni2008", "sahay2011", "xu2009", "brown2007", "eriksson1998", "spalding2013", "kornack1999", "gould1999-primate", "gould1999-learning", "rakic1985", "eckenhoff1988", "song2012", "suh2007", "miller1996", "rose2016-fmri", "rose2016-eeg-targets", "rose2016-eeg-priority", "rose2016-behavior", "rose2016-pooled-behavior", "amalric2017-adults", "amalric2017-children", "amalric2017-preview", "amalric2017-munduruku", "alroumi2021-sequences", "alroumi2021-primitives", "wang2019-behavior", "wang2019-scanner", "alroumi2023-behavior", "alroumi2023-fmri", "alroumi2023-meg", "pajot2026-quadrilaterals", "pajot2026-memory", "pajot2026-cross-format", "gallese1996-f5", "gallese1996-emg", "gallese1996-f1", "singer2004-partner-pain", "mukamel2010-action-units", "tan2024-ieeg", "tan2024-ratings", "tan2024-decoder"]);
   for (const s of studies.values()) assert.equal(s.studyType, ["pajot2026-quadrilaterals", "pajot2026-memory", "pajot2026-cross-format", "tan2024-decoder"].includes(s.id) ? "computational-analysis" : ["witvliet2021", "disouky2026", "eriksson1998", "spalding2013", "kornack1999", "gould1999-primate", "rakic1985", "eckenhoff1988", "miller1996", "rose2016-pooled-behavior", "gallese1996-f5", "gallese1996-emg", "gallese1996-f1", "singer2004-partner-pain", "mukamel2010-action-units", "tan2024-ieeg", "tan2024-ratings"].includes(s.id) ? "primary-observation" : "primary-experiment", "Observation promoted to intervention");
@@ -236,17 +238,18 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(claims.get(cid).contextIds, [sid]);
   }
   for (const id of ["lc-inactive-null", "culture-avalanches", "acute-avalanches", "visual-feature-decoding", "visual-duration-readout", "visual-phase-consistency", "visual-amplitude-connectivity", "hcrt-low-frequency-null", "hcrt-duration-null", "task-calcium-ensembles", "ensemble-control-null", "ensemble-gray-selection", "signal-atlas", "astro-ablation-control-null", "ne-mo-glia-ablated-null", "ca1-astro-gq-null", "ca1-ip3r2-null", "glutamatergic-astro-transcripts"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${id}` || r.target === `neur:${id}`), "Null or observational event record acquired a causal edge");
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${id}` || r.target === `neur:${id}`), "Null or observational event record acquired a causal edge");
   }
   for (const id of ["deco2012", "bak1987", "touboul2017"]) {
     assert.ok(!studies.has(id), "Computational paper became an experimental preparation");
-    for (const c of graph.claims.filter((c) => c.citations.some((x) => x.sourceId === id))) {
+    for (const c of graph.claims.filter((c) => !isReviewedNeuralSystemsRecord("claims", c)
+      && c.citations.some((x) => x.sourceId === id))) {
       assert.equal(c.status, "unresolved", "Unreproduced model acquired active scientific support");
       assert.deepEqual(c.checkIds, [], "Model reading became an executable witness");
       assert.ok(c.citations.filter((x) => x.sourceId === id).every((x) => ["provenance", "limits"].includes(x.role)));
     }
   }
-  const domainRelations = graph.relations.filter((r) => r.id.startsWith("neural:") || r.source.startsWith("neur:") || r.target.startsWith("neur:"));
+  const domainRelations = otherRelations.filter((r) => r.id.startsWith("neural:") || r.source.startsWith("neur:") || r.target.startsWith("neur:"));
   assert.deepEqual(domainRelations.map((r) => r.id), effects.map((e) => e[0]), "Unreviewed neural connection or observational causation");
   for (const [id, src, tgt, context, cid] of effects) {
     const r = relations.get(id);
@@ -406,7 +409,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
   for (const [eid, sid, cid] of [["kir4-late-plasticity-null", "djukic2007", "C-kir4-late-plasticity-null"], ["mct4-glucose-rescue-null", "suzuki2011", "C-mct4-glucose-rescue-null"], ["mct2-rescue-null", "suzuki2011", "C-mct2-rescue-null"], ["mct2-short-retention-null", "suzuki2011", "C-mct2-short-retention-null"], ["md-ultrastructure-null", "etxeberria2016", "C-md-ultrastructure-null"], ["md-refractory-null", "etxeberria2016", "C-md-refractory-null"], ["microglial-rgc-material", "schafer2012", "C-microglial-rgc-material"], ["cr3-contralateral-territory-null", "schafer2012", "C-cr3-contralateral-territory-null"], ["microglial-process-motility", "nimmerjahn2005", "C-microglial-process-motility"], ["microglial-soma-migration-null", "nimmerjahn2005", "C-microglial-soma-migration-null"], ["plx-calcium-magnitude-null", "badimon2020", "C-plx-calcium-magnitude-null"], ["plx-rate-interaction-null", "badimon2020", "C-plx-rate-interaction-null"], ["cd39-microglial-density-null", "badimon2020", "C-cd39-microglial-density-null"], ["adora1-cpa-rescue-null", "badimon2020", "C-adora1-cpa-rescue-null"], ["il34-other-challenge-null", "badimon2020", "C-il34-other-challenge-null"], ["microglial-cno-control-null", "badimon2020", "C-microglial-cno-control-null"], ["microglial-cd73-expression", "badimon2020", "C-microglial-cd73-expression"]]) {
     assert.deepEqual(claims.get(cid).contextIds, [sid]);
     assert.equal(claims.get(cid).status, "publication-supported");
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${eid}` || r.target === `neur:${eid}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${eid}` || r.target === `neur:${eid}`),
       "Glial null or anatomical observation acquired a causal edge");
   }
   assert.ok(claims.get("C-astro-vglut1-ltp").citations.some((c) => c.sourceId === "deceglia2023-fig3-data" && c.locator === "Fig3!AR3:AS21"), "Missing paired LTP source data");
@@ -453,7 +456,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
   ]) {
     assert.deepEqual(claims.get(`C-${eid}`).contextIds, [sid]);
     assert.equal(claims.get(`C-${eid}`).status, "publication-supported");
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${eid}` || r.target === `neur:${eid}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${eid}` || r.target === `neur:${eid}`),
       "Gene-regulation association or null acquired a causal edge");
   }
   for (const sid of ["sweatt2013", "meaney2005-environment", "meaney2005-chromatin", "noble2006"]) {
@@ -495,10 +498,10 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
   for (const key of ["engram-context-tagged-null", "engram-labelled-populations", "engram-accessibility-profile", "engram-histone-acetylation", "engram-h3k4me1-null", "engram-compartment-profile", "engram-promoter-contact-profile", "engram-nuclear-rna-profile", "engram-eif4e-shaft", "engram-eif4e-soma-null", "engram-gria1-shaft"]) {
     assert.equal(claims.get(`C-${key}`).status, "publication-supported");
     assert.deepEqual(claims.get(`C-${key}`).contextIds, ["marco2020"]);
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "Engram population profile or null acquired a causal edge");
   }
-  assert.ok(!graph.relations.some((r) => r.source === "neur:engram-chromatin-priming" || r.target === "neur:engram-chromatin-priming"),
+  assert.ok(!otherRelations.some((r) => r.source === "neur:engram-chromatin-priming" || r.target === "neur:engram-chromatin-priming"),
     "Chromatin priming acquired an experimentally supported mechanism edge");
   for (const [key, sid, locators, role] of [
     ["engram-nuclear-rna-profile", "marco2020-table8", ["Basal_vs_Early!A1:G93", "Early_vs_Late!A1:G975", "Late_vs_Reactivated!A1:G517"], "supports"],
@@ -639,7 +642,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
       "Neuroimmune claim lost its assay-specific primary passage");
   }
   for (const key of ["immune-trap-colabels", "immune-cnst-transcripts", "trap-saline-cytokine-null", "vgat-lps-cytokine-null", "calca-il10-null", "rapid-lps-nodose-null", "nodose-stimulus-overlap", "vagal-cnst-tracing", "dbh-corticosterone-null", "trpa1-corticosterone-null", "neuroimmune-circuit-closure", "neuroimmune-generalization"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "Neuroimmune observation, null or untested mechanism acquired a causal edge");
   }
   for (const [sid, year, doi] of [
@@ -725,7 +728,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     }
   }
   for (const key of ["kir21-skik-null", "cap-k-high-dose-response", "cap-k-local-diameter-null", "cap-k-pressure-null", "kir21-lfp-null", "kir21-sm-current-null", "kir21-dose-curve", "arf6-tone-null", "arf6-control-pip2-current-null", "arf6-capacitance-null", "arf6-vehicle-hyperemia", "neurovascular-complete-route", "neurovascular-neural-readout", "arf6-pip2-exclusive-mediation", "cx-reporter-zonation", "cx-retinal-small-tracer", "cx-diving-diameter-null", "cx-resting-diameter", "cx-resting-rbc-null", "cx-tail-pressure-null", "cx-opto-far-peak-null", "cx-fullfield-far-peak-null", "cx-electrical-carrier", "cx-zonation-routing"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "Vascular null, observation or incomplete mechanism acquired a causal edge");
   }
   for (const [sid, year, doi] of [
@@ -774,7 +777,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.checkIds, [], "RGL publication reading became independent reproduction");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages,
       "RGL endpoint lost its specific assay, comparator or method limits");
-    if (hypothesis) assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+    if (hypothesis) assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
       "Circuit schematic became measured feedback closure");
   }
   assert.equal(sources.get("suh2007").doi, "10.1016/j.stem.2007.09.002");
@@ -806,7 +809,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.checkIds, [], "Publication reading became independent lineage reproduction");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages,
       "Sox2 assay lost its specific source, control or sampling limits");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
       "Sox2 profile or conditional lineage model acquired an unreviewed transition");
   }
   for (const [sid, doi, extent] of [
@@ -839,7 +842,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.checkIds, [], "Source reading became independent model reproduction");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages,
       "A construct lost its source-specific definition or theoretical boundary");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
       "A working-memory schematic acquired an unreviewed physical dependency");
   }
   for (const [sid, sourceId, doi] of [
@@ -880,7 +883,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.checkIds, [], "Published working-memory results became independent reproduction");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages,
       "A working-memory readout lost its assay-specific methods or interpretation limits");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
       "Working-memory readouts acquired an untested carrier or feedback connection");
   }
   for (const [sid, doi, extent] of [
@@ -918,7 +921,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.checkIds, [], "Source reading became independent model reproduction");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages,
       "A symbolic construct lost its definition or theoretical boundary");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
       "A taxonomy or program schematic acquired an unreviewed physical dependency");
   }
   for (const sid of ["aimone2014", "kempermann2015"]) {
@@ -945,7 +948,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.checkIds, [], "Reading became an independent biological witness");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages,
       "Staging or function terminology lost its source boundaries");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
       "Review scheme acquired an untested transition or functional edge");
   }
   for (const [key, sid, passages] of [
@@ -977,7 +980,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     }
   }
   for (const key of ["ng-marker-profile", "ng-morphology-profile", "ng-synaptic-contacts", "ng-electrical-profile", "ng-labeled-population", "human-ng-annotation", "human-ng-cohort-census", "human-ng-abundance", "human-ng-sa-null", "ng-memory-route", "ng-regulatory-geometry"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "Neurogenesis observation, null or hypothesis acquired a causal edge");
   }
   for (const [sid, year, doi] of [["toni2008", 2008, "10.1038/nn.2156"], ["sahay2011", 2011, "10.1038/nature09817"]]) {
@@ -1024,7 +1027,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     }
   }
   for (const key of ["toni-ca3-bouton-profile", "toni-hilar-bouton-null", "toni-bmi-response-profile", "toni-response-classification", "bax-proliferation-null", "bax-dcx-fourweek-profile", "bax-bicuculline-ltp-null", "bax-context-recall-null", "bax-other-task-nulls", "bax-affect-nulls", "bax-running-comparison-nulls", "irradiation-discrimination-profile", "bax-discrimination-variants", "toni-target-recruitment", "bax-count-mediation"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "A route classification, null or mediation hypothesis acquired a causal edge");
   }
   assert.equal(sources.get("xu2009").year, 2009);
@@ -1062,7 +1065,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     }
   }
   for (const key of ["motor-first-session-profile", "motor-region-controls", "motor-success-association", "motor-spine-population-balance", "motor-retraining-null", "motor-filopodia-null", "motor-maintenance-null", "motor-dendrite-tip-null", "motor-cross-spine-size-null", "motor-functional-map", "motor-spine-memory", "motor-homeostatic-construction"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "Motor association, null or construction hypothesis acquired a causal edge");
   }
   assert.equal(sources.get("brown2007").year, 2007);
@@ -1097,7 +1100,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     }
   }
   for (const key of ["stroke-spine-elimination-null", "stroke-density-late-null", "stroke-near-far-profile", "stroke-orientation-profile", "stroke-capillary-velocity-null", "stroke-optical-map", "stroke-imaging-controls", "stroke-infarct-profile", "stroke-remodeling-function", "stroke-neurovascular-geometry"]) {
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "An injury null, spatial comparison or recovery hypothesis acquired a causal edge");
   }
   assert.equal(sources.get("eriksson1998").year, 1998);
@@ -1120,7 +1123,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
       assert.equal(c.status, "publication-supported");
       assert.deepEqual(c.contextIds, [sid], "Human birth labels inherited a different preparation");
     }
-    assert.ok(!graph.relations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
+    assert.ok(!otherRelations.some((r) => r.source === `neur:${key}` || r.target === `neur:${key}`),
       "Human histology or untested function acquired a causal edge");
   }
   assert.equal(sources.get("spalding2013").year, 2013);
@@ -1147,7 +1150,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
       assert.equal(c.status, "publication-supported");
       assert.deepEqual(c.contextIds, ["spalding2013"], "Human isotope fractions inherited another assay");
     }
-    assert.ok(!graph.relations.some((edge) => edge.source === e.id || edge.target === e.id),
+    assert.ok(!otherRelations.some((edge) => edge.source === e.id || edge.target === e.id),
       "Observational isotope data or a population model acquired a causal edge");
   }
   assert.equal(sources.get("kornack1999").year, 1999);
@@ -1313,7 +1316,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
       assert.equal(c.status, "publication-supported");
       assert.deepEqual(c.contextIds, ["kornack1999"], "Macaque histology inherited another preparation");
     }
-    assert.ok(!graph.relations.some((edge) => edge.source === e.id || edge.target === e.id),
+    assert.ok(!otherRelations.some((edge) => edge.source === e.id || edge.target === e.id),
       "Macaque marker observation or untested construction acquired a causal edge");
   }
   for (const [sid, doi] of [["gould1999-primate", "10.1073/pnas.96.9.5263"], ["gould1999-learning", "10.1038/6365"]]) {
@@ -1357,7 +1360,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
       assert.deepEqual(c.contextIds, [sid], "Macaque observation and rat training preparations were pooled");
     }
     if (!effects.some(([, src, tgt]) => src === key || tgt === key)) {
-      assert.ok(!graph.relations.some((edge) => edge.source === e.id || edge.target === e.id),
+      assert.ok(!otherRelations.some((edge) => edge.source === e.id || edge.target === e.id),
         "Marker observation, null or hypothesis acquired a causal edge");
     }
   }
@@ -1389,7 +1392,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.equal(c.status, status === "hypothesis" ? "unresolved" : "publication-supported");
     assert.deepEqual(c.contextIds, status === "hypothesis" ? undefined : [sid],
       "Cessation interpretation or cross-study evidence became a single observed preparation");
-    assert.ok(!graph.relations.some((edge) => edge.source === e.id || edge.target === e.id),
+    assert.ok(!otherRelations.some((edge) => edge.source === e.id || edge.target === e.id),
       "Autoradiographic null, phenotype or untested lineage acquired a causal edge");
   }
 
@@ -1475,7 +1478,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.citations.map((x) => [x.sourceId, x.locator, x.role]), passages,
       "Spatial result lost its methods or formal interpretation boundary");
     if (!effects.some(([, src, tgt]) => src === key || tgt === key)) {
-      assert.ok(!graph.relations.some((edge) => edge.source === e.id || edge.target === e.id),
+      assert.ok(!otherRelations.some((edge) => edge.source === e.id || edge.target === e.id),
         "Spatial null, cross-cohort comparison or model acquired a causal edge");
     }
   }
@@ -1518,7 +1521,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.citations.map((x) => [x.sourceId, x.locator, x.role]), passages,
       "MEG claim lost its assay, null or interpretation boundary");
     if (!effects.some(([, src, tgt]) => src === key || tgt === key)) {
-      assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+      assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
         "MEG decoder or null result became a causal construction edge");
     }
   }
@@ -1561,7 +1564,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.citations.map((x) => [x.sourceId, x.locator, x.role]), passages,
       "Spatial result lost its measurement or interpretation boundary");
     if (!effects.some(([, src, tgt]) => src === key || tgt === key)) {
-      assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+      assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
         "Spatial definition, neural correlation or null became a causal construction edge");
     }
   }
@@ -1612,7 +1615,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.deepEqual(c.citations.map((x) => [x.sourceId, x.locator, x.role]), passages,
       "Binary result lost its protocol, code or interpretation boundary");
     if (!effects.some(([, src, tgt]) => src === key || tgt === key)) {
-      assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id),
+      assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id),
         "Binary model, association, decoder or null became a causal construction edge");
     }
   }
@@ -1628,7 +1631,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.equal(c.status, status); assert.deepEqual(c.contextIds, contextIds ?? undefined);
     assert.deepEqual(c.checkIds, [], "Deposited numeric readouts became a physical construction witness");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages, "Geometric comparison lost its data or selection boundary");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id), "Model fit acquired an untested physical dependency");
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id), "Model fit acquired an untested physical dependency");
   }
   assert.equal(sources.get("pajot2026-metrics").kind, "research-publication");
   assert.equal(sources.get("pajot2026-metrics").review.extent, "complete-supplement");
@@ -1659,7 +1662,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.equal(c.status, status); assert.deepEqual(c.contextIds, contextIds ?? undefined);
     assert.deepEqual(c.checkIds, [], "Read action responses became reproduced experiments");
     assert.deepEqual(c.citations.map((r) => [r.sourceId, r.locator, r.role]), passages, "Social claim lost its assay or interpretation boundary");
-    assert.ok(!graph.relations.some((r) => r.source === e.id || r.target === e.id), "Action observation or empathy theory acquired an untested dependency");
+    assert.ok(!otherRelations.some((r) => r.source === e.id || r.target === e.id), "Action observation or empathy theory acquired an untested dependency");
   }
   assert.equal(sources.get("gallese1996").doi, "10.1093/brain/119.2.593");
   assert.equal(sources.get("gallese1996").review.extent, "selected-main-text-and-figures");
@@ -1678,7 +1681,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.equal(claim.status, status); assert.deepEqual(claim.contextIds, contextIds ?? undefined);
     assert.deepEqual(claim.checkIds, [], "Human source reading became independent reproduction");
     assert.deepEqual(claim.citations.map((r) => [r.sourceId, r.locator, r.role]), passages, "Human social evidence lost its method or interpretation boundary");
-    assert.ok(!graph.relations.some((r) => r.source === entity.id || r.target === entity.id), "Human task association acquired an untested dependency");
+    assert.ok(!otherRelations.some((r) => r.source === entity.id || r.target === entity.id), "Human task association acquired an untested dependency");
   }
   assert.equal(sources.get("singer2004").doi, "10.1126/science.1093535");
   assert.equal(sources.get("singer2004").review.extent, "main-text-and-figures");
@@ -1699,7 +1702,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
     assert.equal(claim.status, status); assert.deepEqual(claim.contextIds, contextIds ?? undefined);
     assert.deepEqual(claim.checkIds, [], "Selected iEEG source inspection became full numerical reproduction");
     assert.deepEqual(claim.citations.map((r) => [r.sourceId, r.locator, r.role]), passages, "iEEG finding lost its inspected evidence or analysis boundary");
-    assert.ok(!graph.relations.some((r) => r.source === entity.id || r.target === entity.id), "iEEG association or virtual feature removal became a neural dependency");
+    assert.ok(!otherRelations.some((r) => r.source === entity.id || r.target === entity.id), "iEEG association or virtual feature removal became a neural dependency");
   }
   assert.equal(sources.get("tan2024").review.extent, "main-text-and-figures");
   assert.equal(sources.get("tan2024-supplement").review.extent, "supplementary-text-and-selected-figures");
@@ -1716,7 +1719,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
   assert.deepEqual(sharedManifold.checkIds, [], "Conceptual manifold became computational reproduction");
   assert.equal(entities.get("neur:shared-manifold-hypothesis").kind, "hypothesis");
   assert.equal(entities.get("neur:shared-manifold-hypothesis").status, "hypothesis");
-  assert.ok(!graph.relations.some((r) => r.source === "neur:shared-manifold-hypothesis" || r.target === "neur:shared-manifold-hypothesis"), "Shared-manifold proposal acquired an empirical dependency");
+  assert.ok(!otherRelations.some((r) => r.source === "neur:shared-manifold-hypothesis" || r.target === "neur:shared-manifold-hypothesis"), "Shared-manifold proposal acquired an empirical dependency");
   assert.deepEqual(sharedManifold.citations.map((r) => [r.sourceId, r.locator, r.role]), [["gallese2003-roots", "Pages 175-177: broadened empathy, three descriptive levels, self-other distinction and untested hypothesis", "provenance"], ["gallese2003-manifold", "Pages 524-525: empathy, Section 8 shared manifold and Section 9 conclusions", "provenance"]]);
   assert.equal(sources.get("gallese2003-roots").doi, "10.1159/000072786", "Distinct shared-manifold publications were merged");
   assert.equal(sources.get("gallese2003-roots").review.extent, "main-text-and-references");
@@ -1729,7 +1732,7 @@ export function validateNeuralReview({ graph, neural }, { sources, claims, entit
   assert.deepEqual(empathyMeasure.checkIds, [], "Instrument description became psychometric reproduction");
   assert.equal(entities.get("neur:empathy-measurement-boundary").kind, "definition");
   assert.equal(sources.get("mehrabian1996-bees").review.extent, "selected-author-documentation");
-  assert.ok(!graph.relations.some((r) => r.source === "neur:empathy-measurement-boundary" || r.target === "neur:empathy-measurement-boundary"), "Measurement distinction became a neural dependency");
+  assert.ok(!otherRelations.some((r) => r.source === "neur:empathy-measurement-boundary" || r.target === "neur:empathy-measurement-boundary"), "Measurement distinction became a neural dependency");
   assert.deepEqual(empathyMeasure.citations.map((r) => [r.sourceId, r.locator, r.role]), [["decety2004", "Pages 88-91; Box 1: different outcome instruments, lesion-study limits and nonprimitive constructs", "supports"], ["mehrabian1996-bees", "Scale Description and Test Features: thirty-item questionnaire with nine-point responses", "supports"], ["mehrabian1996-bees", "Background literature, Reliability and Validity Data and References: earlier 1972 scale and 1996 BEES manual identity", "limits"]]);
   assert.equal(sources.get("morales2026").url, "https://arxiv.org/abs/2601.05021v1");
   assert.ok(!graph.claims.some((c) => c.citations.some((x) => x.sourceId === "morales2026")), "Unreproduced generator acquired active graph semantics");

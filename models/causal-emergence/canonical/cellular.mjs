@@ -1,3 +1,4 @@
+import { isReviewedNeuralSystemsDescription } from "./level-six.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
@@ -28,7 +29,7 @@ export function validateCellularReview(data, context) {
   assert.equal(cellular.independentScientificReviewComplete, false);
   assert.deepEqual(cellular.checkIds, [], "No cellular numerical replay has been admitted");
   const ledgers = [data.pilot, data.routing, data.optics, data.visual, data.neural,
-    data.physics, data.biochemistry, cellular, ...(data.organismal ? [data.organismal] : [])];
+    data.physics, data.biochemistry, cellular, ...(data.organismal ? [data.organismal] : []), ...(data.neuralSystems ? [data.neuralSystems] : [])];
   const studies = index(ledgers.flatMap((review) => review.studies), "study");
   const records = {
     ...context,
@@ -136,6 +137,7 @@ export function validateCellularReview(data, context) {
       .includes(coordinate.locator), `Cellular coordinate exceeds reading ${entity.id}`);
   }
   for (const relation of graph.relations) {
+    if (isReviewedNeuralSystemsDescription(relation)) continue;
     if (!relation.id.startsWith("cellular:") && !relation.source.startsWith("cell:")
       && !relation.target.startsWith("cell:")) continue;
     assert.ok(admitted.relations.has(relation.id), `Unreviewed cellular relation or domain bridge ${relation.id}`);

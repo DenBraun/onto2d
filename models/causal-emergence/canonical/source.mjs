@@ -1,3 +1,4 @@
+import { validateNeuralSystemsReview } from "./neural-systems.mjs";
 import { validateCellularReview } from "./cellular.mjs";
 import { validateOrganismalReview } from "./organismal.mjs";
 import { validateBiochemistryReview } from "./biochemistry.mjs";
@@ -202,6 +203,7 @@ export function validateCanonicalSource(data) {
   validateBiochemistryReview(data, context);
   validateCellularReview(data, context);
   validateOrganismalReview(data, context);
+  validateNeuralSystemsReview(data, context);
   validateRetinalPilot(data, context);
   validateOpticalReview(data, context);
   validateVisualReview(data, context);
@@ -210,14 +212,14 @@ export function validateCanonicalSource(data) {
   validateDictionaryReview(data);
   validateSourceReadiness(data, null, proposalText);
   validateCanonicalInteractions(graph, { studies: [data.pilot, data.routing, data.optics, data.visual,
-    data.neural, data.physics, data.biochemistry, data.cellular, data.organismal].flatMap((review) => review.studies) });
+    data.neural, data.physics, data.biochemistry, data.cellular, data.organismal, data.neuralSystems].flatMap((review) => review.studies) });
   return data;
 }
 
 export async function loadCanonicalSource() {
   const fields = {
     graph: "graph", pilot: "retinal-review", routing: "routing-review", routingPolicy: "routing-policy",
-    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review", organismal: "organismal-review"
+    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review", organismal: "organismal-review", neuralSystems: "neural-systems-review"
   };
   const data = validateCanonicalSource(Object.fromEntries(await Promise.all(Object.entries(fields).map(async ([key, file]) => [key, await json(`references/canonical/${file}.json`)]))));
   await Promise.all(data.graph.sources.filter((s) => s.path).map(async (source) => {

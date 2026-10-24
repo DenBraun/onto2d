@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 2344 records, 2600 connections, 2527 claims and 603 sources.
+The current graph contains 2413 records, 3296 connections, 2596 claims and 612 sources.
 The physics review contains 219 study contexts and 143 comparisons.
 The biochemistry review contains 61 preparation contexts from 31 publications.
 The [Level-4 source review](LEVEL_4_REVIEW.md) covers all 33 cellular cards, with
@@ -21,8 +21,11 @@ Morphogenesis, organ function, local inflammatory responses, clinical outcomes
 and retinal computations retain distinct preparations and limits. Global immune
 hysteresis, a common immune set point and universal surveillance/repair allocation
 remain unestablished hypotheses.
-Unfinished source work is listed in [pending-review.json](pending-review.json):
-34 cards remain, comprising nine Level-6 and 25 Level-7 cards.
+The [Level-6 source review](LEVEL_6_REVIEW.md) covers all 25 neural-system cards,
+237 substantive assertion decisions and 99 ordered parent occurrences. Existing
+experiments retain their identities; twelve additional placebo preparation/readout
+contexts distinguish pain, motor, hormonal, immune, airway and subjective outcomes.
+The [pending source list](pending-review.json) contains only the 25 Level-7 cards.
 The [Level-2 work queue](LEVEL_2_REVIEW.md) covers all 23 physical, chemical and
 material source cards. All have scoped dispositions; surface radiometry and
 propagation retain their finite model and measurement boundaries.
@@ -30,8 +33,9 @@ The [Level-3 source review](LEVEL_3_REVIEW.md) gives scoped dispositions for all
 50 biochemical cards, including existing retinal photochemistry. No Level-3
 cards remain pending. Explicit unresolved hypotheses remain scientific limits,
 not unfinished source tasks; completed disposition does not reproduce experiments.
-Open neural work concerns glial functions, gene regulation, neuroimmune
-interactions, neurovascular coupling, adult neurogenesis, working memory, symbolic representations and social cognition.
+Source-specific [neural scientific obligations](NEURAL_NEXT_REVIEW.md) retain
+unread controls, reporting conflicts, raw-data work and competing mechanisms.
+They remain open scientific questions after complete source-card disposition.
 
 | Data | Purpose |
 | --- | --- |
@@ -41,6 +45,7 @@ interactions, neurovascular coupling, adult neurogenesis, working memory, symbol
 | [optical-review.json](optical-review.json) | Material response and measurement boundaries |
 | [visual-review.json](visual-review.json) | Visual relay, cortical organization and feedback |
 | [neural-review.json](neural-review.json) | Neural preparations and interpretation tests |
+| [neural-systems-review.json](neural-systems-review.json) | Complete Level-6 topic, assertion and parent decisions, plus additional contextual-treatment preparations |
 | [physics-review.json](physics-review.json) | Physical experiments, computational contexts and conditional interpretations |
 | [biochemistry-review.json](biochemistry-review.json) | Biochemical preparations, measured responses and conditional mechanisms |
 | [cellular-review.json](cellular-review.json) | Cellular organization, regulation and immune preparations with scoped interpretation limits |
