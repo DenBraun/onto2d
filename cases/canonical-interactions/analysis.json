@@ -13,7 +13,7 @@
     },
     {
       "path": "references/canonical/graph.json",
-      "sha256": "00eb52991227fa8227d701420a0e4210e6db681168c9d19c62a4475fc329a39f"
+      "sha256": "2206000a4a34efacd2a5a7f69ea8994048b89886197732e644655b1453d8b7b3"
     },
     {
       "path": "references/canonical/retinal-review.json",
@@ -29,7 +29,7 @@
     },
     {
       "path": "references/canonical/visual-review.json",
-      "sha256": "ff160ba4d4a287f0fa0638a35739e4d23ed42e28b38279cb72712eba2619c8c9"
+      "sha256": "710f07d5687315c8e68c5a55ec6d703716af55f6edd6248c5bae5d476ed211a4"
     },
     {
       "path": "references/canonical/neural-review.json",
@@ -52,8 +52,12 @@
       "sha256": "607bdede63088d6315ea803e15812a09fc6ee587037cbd22ac361b9c624c8de1"
     },
     {
+      "path": "references/canonical/neural-systems-review.json",
+      "sha256": "db94a726d933709d63f855adc1c554e48a72f96cf6615e04ca2bae8c2967df02"
+    },
+    {
       "path": "references/canonical/schema.json",
-      "sha256": "39a7700d6223778e61b515c79aa6540bee9987d26e87f986f3414f56bf3f4448"
+      "sha256": "b42b86a9907e4c961e5cb5ed32d774f9e4b3964ffd6a4cd422162c9f406b5aed"
     },
     {
       "path": "models/causal-emergence/canonical/interactions.mjs",
@@ -65,7 +69,7 @@
     },
     {
       "path": "scripts/check-interaction-pilot.mjs",
-      "sha256": "1be72cff64454991964cac774a16cb82dc5668cbf640f1f6de0d4f51a1e073e1"
+      "sha256": "45c5f66b8e6c62639417a68e69d83f0d420f4d05f19b649a3baa96a924608111"
     }
   ],
   "system": {

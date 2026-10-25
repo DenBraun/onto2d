@@ -1,88 +1,98 @@
 # Current canonical validation
 
-Current graph: `2026.10.22.0`, checked locally on 22 October 2026 with Node.js 24.
-It contains 2344 records, 2600 connections, 2527 claims and 603 sources:
-2313 descriptive and 287 functional connections. All 258 bound input hashes
-and 98 local source hashes match current bytes.
+Current graph: `2026.10.24.0`, checked locally on 24 October 2026 with Node.js 24.
+It contains 2413 records, 3296 connections, 2596 claims and 612 sources:
+3001 descriptive and 295 functional connections. All 264 bound input hashes
+and 99 local source hashes match current bytes.
 
-All 34 Level-5 cards have explicit assertion, ordered-parent and default
-dispositions. The organismal contribution contains 384 entities, 378 claims,
-499 relations, 129 study contexts and 26 comparisons. Its 53 publication records
-comprise 51 main papers and two corrections. Preparations from the same paper,
-shared clinical trials and corrected panels are not independent replications.
-The 236 assertion dispositions and 167 ordered-parent dispositions retain their
-individual reasons in the source contracts. Other levels retain 34 pending
-cards: nine in Level 6 and twenty-five in Level 7.
+All 25 Level-6 cards have explicit decisions for 237 substantive assertions and
+99 ordered parent occurrences. Assertion dispositions comprise 31 supported,
+114 qualified, 44 excluded and 48 unresolved. Parent dispositions comprise
+39 qualified, one excluded and 59 unresolved; no original parent is admitted
+as a universally necessary weighted physical dependency. The complete decisions,
+evidence references, excluded defaults and open questions reside in the canonical
+neural-system review. Only the 25 Level-7 source cards remain pending.
 
-The review separates culture support from universal necessity, growth from
-architecture, closure from regeneration, measured neural activity from
-unmeasured hormonal/organ output, and labeling fractions from absolute flux.
-Muir's tumor measurement is one terminal endpoint, distinct from the plasma
-time course and hypothetical trajectories. Its conflicting timing descriptions
-remain unresolved. Thevaranjan's anti-TNF dose/duration conflict, corrected
-permeability reporting and null barrier response remain explicit. Artal's
-registration descriptions conflict; Hofer's corrected figure identities do not
-supply new acquisitions. Jopling's displayed lineage series labels cardiomyocytes
-at 48 hpf before adult injury; the general embryo/adult induction method and
-unread validation controls remain distinct. Negative clinical endpoints, partial recoveries,
-abstract-only readings and unread controls remain bounded. Organism-wide
-hysteresis, immune set points, resource optima and construction rules are not
-established by these records.
+The Level-6 contribution contains 69 entities, 69 claims and 696 relations:
+688 descriptive and eight preparation-bound functional links. Existing evidence
+retains its study identities. Twelve additional preparation/readout contexts
+come from four primary placebo-related papers, with five comparisons. Eight new
+publication records comprise those four papers, a secondary framework, two books
+with bibliographic-only scope and an abstract-level conceptual medical article.
+Metadata and secondary interpretation do not become primary experiments.
 
-Organismal admission follows source and preparation provenance as well as names.
-Normalized publication identities and local file paths cannot introduce source
-aliases. Renamed claims, Level-0 entity copies, foreign-ledger preparations and
-comparisons cannot bypass the reviewed inventory. Organismal findings cannot
-become construction-rule rationales or premises through relabeling.
+Card 6.16's vascular title and evidence are distinguished from its immune prose
+and proposed dependencies. Glial regulation, neural gene responses, immune
+signaling, perfusion, neurogenesis, memory tasks, formal description costs and
+social readouts retain their different preparations and uncertainties. Placebo
+records separate participant-controlled pain tolerance, asymmetric motor effects,
+conditioned hormones, stimulated immune-cell assays, subjective asthma improvement
+and airflow. Source nulls are not equivalence, and repeated immune observations
+are not independent replication. A shortest description or finite decoder does
+not establish a minimum physical circuit or universal conscious mechanism.
+
+Denman's selected preparation Methods identify acute anesthetized adult GN220
+Ntsr1-Cre mouse recordings. The current visual study records the adjusted
+isoflurane preparation and expanded reading boundary; its original response
+finding is unchanged. An activated LFP pattern does not establish an awake
+attention assay. Fodor's original-work bibliography is explicitly reachable from
+the symbolic scope while its chapters remain unread.
+
+Admission follows source identities, preparations and exact reviewed records.
+Normalized publication/file aliases, renamed findings, new acquisitions borrowing
+reviewed papers and construction rules using reused neural hypotheses or
+catalogue-only rationale are rejected. Institutional bibliography identities
+preserve resource query fields while ignoring tracking parameters. Cross-ledger
+comparisons cannot borrow new or reused study/publication identities to admit
+unreviewed interpretations; 100 existing comparisons retain their exact content
+and owning ledgers. Earlier domain inventories allow only
+exact registered descriptive scope links; relabeling one as physical support
+invalidates it. Scope definitions and interpretation comparisons are not
+independent scientific confirmation.
 
 Local verification:
 
-- `npm test`: all 846 ordinary software tests passed on the final working tree.
-- Targeted canonical organismal, cellular, source/compiler, routing and
-  biochemistry suites: all 107 tests passed, including 34 organismal regressions.
-- `npm run build`: source syntax, declarations, schemas, documentation, all 45
+- `npm test`: all 847 ordinary software tests passed.
+- Final targeted canonical/source/compiler/routing/interaction integration:
+  all 46 tests passed, including 18 Level-6 regressions.
+- Neural, visual, cellular and organismal domain checks: 117 tests passed.
+- Focused interface, evidence, browse and public revision checks: 51 tests passed.
+- `npm run build`: source syntax, declarations, schemas, documentation, all 46
   registry releases, stored comparison artifacts and worker checks passed.
-- `npm run model:causal-emergence:verify`: exact current release compilation and
-  stored bytes passed within the declared finite-witness scope.
-- `npm run model-studio:data:verify`: all 118 current browse artifacts passed.
-- The 34 organismal regression tests cover all original cards, source/preparation
-  distinctions, contrary results and admission mutations.
-- The final focused interface, evidence, browse and revision checks passed
-  50 tests, including historical full-pack inspection and nested module revisions.
-- The current root facade and default Node directory loader passed five tests;
-  the interaction comparison passed eighteen tests.
+- `npm run model:causal-emergence:verify`: exact current compilation and stored
+  release bytes passed, including the existing declared finite witnesses.
+- `npm run model-studio:data:verify`: all 123 current browse artifacts passed.
+- Nine additional admission probes rejected reused-paper findings, neural
+  hypotheses as rules, renamed clones and publication aliases.
 
-Raw node claims retain exact citation/preparation references. Complete sources
-and studies reside in release dictionaries and selected detail chunks. Full
-and lazy evidence resolution agree for all 2344 records, including 7566 citations,
-2830 study references and 13962 claim limitations. Raw inspection also agrees
-exactly. Missing or malformed declared evidence and unknown encodings fail
-before partial evidence is displayed. Each source-review block appears once
-per claim. Study panels omit an exact duplicate of the separately displayed
-source-review limit; raw and downloaded evidence remains unchanged.
+Full and lazy inspection agree for all 2413 records, including 7943 resolved
+citations, 2949 study references and 14732 retained claim limitations. Raw records,
+complete source identities and preparation boundaries survive both paths.
+Initial browsing uses two requests totaling 2605209 bytes; inspection fetches
+each of 111 detail chunks once. Reviews remain closed and unfetched until opened.
 
-Physical release files total 35115409 bytes; the largest file is the
-13390570-byte bundle. Expanded compact JSON totals 53855558 bytes, including
-the repeated optional bundle. These fit the unchanged 16 MiB individual and
-64 MiB aggregate transport budgets. The actual default Node loader accepts
-the current release.
+Rendered Chrome checks passed for thirteen selected records, all 25 topic scopes,
+237 assertion reasons, 99 parent reasons, twelve additional studies and five
+comparisons. The scope-navigation button and exact review download work.
+Desktop/mobile screenshots have no horizontal overflow. Historical
+`2026.10.22.0` inspection uses that pack's own evidence and hides the absent
+neural-system panel. No uncaught browser exceptions, HTTP errors or unexpected
+request failures occurred. Superseded requests were canceled normally.
+Model Studio uses revision `20261024.1` with 30 aligned module dependencies.
 
-The initial browse projection uses two requests totaling 2219636 bytes. Details
-and reviews load on demand. Sequential inspection fetches each of 107 detail
-chunks once. Rendered Chrome checks passed for eight selected records across the
-new domains and reused retinal evidence, the 129-study organismal panel,
-reviewed passages, exact JSON download, desktop/mobile screenshots and historical
-`2026.10.21.0` selection. No uncaught exceptions, HTTP errors or unexpected
-request failures occurred; superseded requests were canceled normally.
-Historical inspection now uses the selected pack's evidence. Model Studio uses
-revision `20261022.1` with 30 aligned module dependencies, including the nested
-browse/evidence import.
+Physical release files total 37490665 bytes; the largest is the 14448557-byte
+bundle. Expanded compact JSON totals 56950174 bytes, including the repeated
+optional bundle. These fit the unchanged 16 MiB individual and 64 MiB aggregate
+transport budgets. The default Node directory loader accepts the current release.
 
-All 542 protected frozen-release/reference/root-README files match their
-pre-change hashes; the 44 prior registry entries retain their identities.
-All previously admitted entities, claims, relations, rules, fourteen interaction
-cases and ten analogies retain their scientific content.
+All 554 protected frozen-release/reference/root-README files match their
+pre-change hashes; all 45 prior registry entries retain their identities.
+Previously admitted entities, claims, relations, six rules, fourteen interaction
+cases and ten analogies retain their scientific content. The current Denman
+preparation/read-extent update is distinct from its unchanged historical releases.
 
-Software consistency checks and finite witnesses do not establish biological
-truth, reproduce whole experiments, identify unique mechanisms or prove a
-universal emergence hierarchy. Independent scientific review remains open.
+Software consistency and finite witnesses do not reproduce whole experiments,
+establish biological truth, identify unique mechanisms or prove universal
+construction rules. Independent scientific review, raw-data work and the
+source-specific obligations remain open. Full research-suite replay and remote
+CI were not run as part of this local verification.

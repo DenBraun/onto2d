@@ -1,3 +1,4 @@
+import { isReviewedNeuralSystemsRecord, isReviewedNeuralSystemsDescription } from "./level-six.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -46,7 +47,7 @@ export function validateOrganismalReview(data, context) {
   assert.equal(organismal.independentScientificReviewComplete, false);
   assert.deepEqual(organismal.checkIds, [], "No organismal numerical replay has been admitted");
   const ledgers = [data.pilot, data.routing, data.optics, data.visual, data.neural,
-    data.physics, data.biochemistry, data.cellular, organismal];
+    data.physics, data.biochemistry, data.cellular, organismal, ...(data.neuralSystems ? [data.neuralSystems] : [])];
   const studies = index(ledgers.flatMap((review) => review.studies), "study");
   const records = {
     ...context,
@@ -105,10 +106,10 @@ export function validateOrganismalReview(data, context) {
         `Unreviewed organismal comparison or cross-ledger inference ${comparison.id}`);
     }
   }
-  assert.deepEqual(sorted(graph.entities.filter((record) => record.id.startsWith("org:")
-    || usesClaims(record) || record.sourceCoordinates.some((coordinate) => ownedSources.has(coordinate.sourceId)))
+  assert.deepEqual(sorted(graph.entities.filter((record) => !isReviewedNeuralSystemsRecord("entities", record) && (record.id.startsWith("org:")
+    || usesClaims(record) || record.sourceCoordinates.some((coordinate) => ownedSources.has(coordinate.sourceId))))
     .map((record) => record.id)), sorted(admitted.entities), "Unreviewed organismal node");
-  assert.deepEqual(sorted(graph.claims.filter((record) => /^[^-]+-org-/.test(record.id) || usesEvidence(record))
+  assert.deepEqual(sorted(graph.claims.filter((record) => !isReviewedNeuralSystemsRecord("claims", record) && (/^[^-]+-org-/.test(record.id) || usesEvidence(record)))
     .map((record) => record.id)), sorted(admitted.claims), "Unreviewed organismal claim");
   assert.deepEqual(sorted(organismal.studies.map((record) => record.id)), sorted(ORGANISMAL_OWN_STUDY_IDS),
     "Unreviewed organismal study or moved acquisition");
@@ -201,6 +202,7 @@ export function validateOrganismalReview(data, context) {
       .includes(coordinate.locator), `Organismal coordinate exceeds reading ${entity.id}`);
   }
   for (const relation of graph.relations) {
+    if (isReviewedNeuralSystemsDescription(relation)) continue;
     if (!relation.id.startsWith("organismal:") && !relation.source.startsWith("org:")
       && !relation.target.startsWith("org:") && !usesClaims(relation) && !usesEvidence(relation)
       && !(relation.carrier && usesEvidence(relation.carrier))) continue;

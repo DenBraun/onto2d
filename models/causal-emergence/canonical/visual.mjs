@@ -1,3 +1,4 @@
+import { isReviewedNeuralSystemsDescription } from "./level-six.mjs";
 import assert from "node:assert/strict";
 
 const effects = [
@@ -22,7 +23,8 @@ export function validateVisualReview({ graph, visual }, { sources, claims, entit
   assert.equal(claims.get("V-predictive").status, "unresolved", "Predictive interpretation promoted without a discriminating experiment");
   assert.equal(claims.get("V-predictive").contextIds, undefined);
   assert.deepEqual(claims.get("V-predictive").citations.map((c) => [c.sourceId, c.role]), [["rao1999", "provenance"], ["friston2005", "provenance"], ["clark2013", "provenance"]]);
-  const visualRelations = graph.relations.filter((r) => r.id.startsWith("visual:") || r.source.startsWith("vis:") || r.target.startsWith("vis:"));
+  const visualRelations = graph.relations.filter((r) => !isReviewedNeuralSystemsDescription(r)
+    && (r.id.startsWith("visual:") || r.source.startsWith("vis:") || r.target.startsWith("vis:")));
   assert.deepEqual(visualRelations.map((r) => r.id), effects.map((e) => e[0]), "Unreviewed visual relation or cross-preparation bridge");
   for (const [id, source, target, context, claimId] of effects) {
     const r = relations.get(id);

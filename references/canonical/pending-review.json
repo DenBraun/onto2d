@@ -2,51 +2,6 @@
   "scope": "Remaining source cards requiring scientific review.",
   "cards": [
     {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/13",
-      "title": "Glial Regulation of Neural Activity"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/14",
-      "title": "Neural-State-Dependent Epigenetic and Transcriptional Modulation"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/15",
-      "title": "Neuro–Immune Interactions"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/16",
-      "title": "Neurovascular Coupling"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/17",
-      "title": "Restricted Adult Neurogenesis and Circuit Remodeling"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/18",
-      "title": "Working Memory and Executive Functions"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/19",
-      "title": "Neural Mechanisms of Symbolic Representation"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/20",
-      "title": "Neural Mechanisms of Social Recognition and Empathy"
-    },
-    {
-      "sourcePath": "references/level-6.json",
-      "pointer": "/21",
-      "title": "Placebo Responses and Psychosomatic Modulation"
-    },
-    {
       "sourcePath": "references/level-7.json",
       "pointer": "/0",
       "title": "Social Organization of Animals"

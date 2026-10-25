@@ -118,22 +118,24 @@
       "volume": "35",
       "issue": "25",
       "pages": "9265-9280",
-      "organism": "GN220-Ntsr1 Cre mouse",
-      "preparation": "Selective optogenetic manipulation of layer 6 corticogeniculate projections; behavioral/anesthetic state not verified in the read passages.",
+      "organism": "Adult GN220 Ntsr1-Cre mice; animals of either sex in the opsin-expression protocol",
+      "preparation": "Selectively activate or inhibit cortical layer-6 Ntsr1 projections while recording dLGN visual responses in acute experiments. At least two weeks separate viral injection from recording. Initial 2% isoflurane is reduced to approximately 1.2% after electrode placement and adjusted using local-field-potential synchrony. This anesthetized preparation is distinct from awake behavior.",
       "observable": "dLGN visually evoked responses under projection manipulation",
       "finding": "Removing cortical input produces increases or decreases depending on cell and contrast; driving input reduces evoked counts.",
       "limitations": [
         "No universal positive gain or necessary rhythm mechanism is established.",
-        "Feedback is cortex to thalamus; this does not establish the historical reverse dependency."
+        "Feedback is cortex to thalamus; this does not establish the historical reverse dependency.",
+        "An activated local-field-potential pattern under anesthesia does not establish awake equivalence or measure attention and perceptual experience."
       ],
-      "readExtent": "abstract-metadata-and-selected-figure-legends",
+      "readExtent": "abstract-selected-figure-legends-and-acquisition-preparation-methods",
       "reviewedLocators": [
         "Abstract",
-        "Figure legends 1-3"
+        "Figure legends 1-3",
+        "Materials and Methods: Procedures, Expression of opsins and Acute experiment preparation"
       ],
-      "metadataCheckedAt": "2026-09-13",
-      "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/26109652/",
-      "correctionCheck": "Primary publication and/or PubMed metadata checked; no exhaustive correction/retraction search."
+      "metadataCheckedAt": "2026-10-24",
+      "metadataUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4478248/",
+      "correctionCheck": "Primary article identifiers and selected preparation Methods checked on 2026-10-24; no exhaustive correction or retraction audit."
     },
     {
       "id": "moore2003",

@@ -12,7 +12,7 @@ const DATA = path.join(ROOT, "apps/model-studio/data");
 const LOADER = path.join(ROOT, "apps/model-studio/browse-data.js");
 const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
 const EDGE_FIELDS = ["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight"];
-const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal"];
+const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems"];
 const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
 const pick = (value, fields) => Object.fromEntries(fields.filter((field) => Object.hasOwn(value, field)).map((field) => [field, value[field]]));
@@ -103,7 +103,8 @@ export function buildBrowseArtifacts(input) {
     reviews[key] = {
       descriptor,
       count: Array.isArray(value) ? value.length : Array.isArray(value.nodeRoles) ? value.nodeRoles.length
-        : (value.studies?.length ?? 0) + (value.comparisons?.length ?? 0),
+        : (value.studies?.length ?? 0) + (value.comparisons?.length ?? 0) + (value.cards?.length ?? 0),
+      ...(Array.isArray(value.cards) ? { cardCount: value.cards.length } : {}),
       ...(Array.isArray(value.studies) ? { studyCount: value.studies.length, comparisonCount: value.comparisons?.length ?? 0 } : {})
     };
   }

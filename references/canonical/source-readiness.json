@@ -22108,6 +22108,732 @@
       ]
     },
     {
+      "nodeId": "cog:neural-network-formation-scope",
+      "role": "definition",
+      "denotes": "Neural network formation is reconstructed through anatomical developmental comparisons in different C. elegans individuals and an axon-contact coculture intervention. Similar neurite geometry can coexist with changing chemical connectivity, while neuroligin-expressing nonneuronal contacts can induce local presynaptic differentiation. These are different species/preparations and different endpoints; neither establishes a complete persistent network, its physiological coupling weights, a universal modular architecture or a developmental hierarchy. A structural connection, local differentiation and measured effective propagation remain distinct evidence types.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neural-network-formation-scope-scope",
+        "N-witvliet2021",
+        "N-scheiffele2000",
+        "C-neural-neuroligin-contact-presynaptic-differentiation",
+        "C-signal-atlas",
+        "C-connectome-function-identity"
+      ]
+    },
+    {
+      "nodeId": "cog:synaptic-plasticity-learning-scope",
+      "role": "definition",
+      "denotes": "Activity-dependent plasticity is represented by persistent dentate population-response changes after perforant-path conditioning and NMDA-antagonist sensitivity of CA1 potentiation induction. Behavioral force-field adaptation and aftereffects provide a separate learning-related trajectory, without a directly measured bridge to those hippocampal synapses. Potentiation induction, basal transmission, excitability, behavioral retention and structural remodeling are not interchangeable. The general claim that synaptic history implements learning remains a hypothesis requiring task-specific causal tests.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-synaptic-plasticity-learning-scope-scope",
+        "N-bliss1973",
+        "N-collingridge1983",
+        "C-neural-nmda-antagonism-ca1-potentiation-induction",
+        "N-plasticity-learning",
+        "C-shadmehr-adaptation",
+        "C-shadmehr-aftereffect"
+      ]
+    },
+    {
+      "nodeId": "cog:brain-rhythms-scope",
+      "role": "definition",
+      "denotes": "Rhythmic organization is reconstructed through fast-spiking-cell activation that amplifies local gamma and a phase-sensitive whisker-response assay in barrel cortex. Local field potential, sorted unit response and stimulation timing remain distinct observables. The results support a preparation-bound intervention on temporal organization; they do not establish every frequency band, cross-frequency coupling, whole-brain synchrony, semantic code or universal prerequisite for cognition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-brain-rhythms-scope-scope",
+        "N-cardin2009",
+        "N-cardin2009-phase",
+        "N-rhythm-coding"
+      ]
+    },
+    {
+      "nodeId": "cog:decision-making-scope",
+      "role": "definition",
+      "denotes": "Decision making is reconstructed through task-specific macaque motion choices, reaction times, spatial free choices and perturbation time courses. LIP stimulation alters choices and response times, while one verified LIP-silencing design shows no detected motion deficit despite strong decision-related correlations; a different design reports early bias with attenuation. MT silencing and spatial control tasks give further contrasts. Evidence accumulation, competitive thresholds and compensation are candidate explanations, not a uniquely identified universal cognitive architecture.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-decision-making-scope-scope",
+        "C-hanks-choice",
+        "C-katz-correlations",
+        "C-katz-lip-null",
+        "C-katz-free-choice",
+        "C-katz-mt",
+        "C-jeurissen-motion",
+        "C-accumulator"
+      ]
+    },
+    {
+      "nodeId": "cog:sensory-integration-scope",
+      "role": "definition",
+      "denotes": "Sensory integration is represented by a visual-haptic height-discrimination experiment in four adult observers. Manipulated visual reliability and small cue discrepancies alter combined judgments and thresholds in a way resembling a declared maximum-likelihood comparison. The model assumes aligned cues, independent Gaussian estimator noise and a uniform prior. This is bounded behavioral cue combination, not a directly identified neural implementation, every multisensory operation or proof of universally optimal or consciously unified perception.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-sensory-integration-scope-scope",
+        "C-ernst-height",
+        "C-perception-optimality"
+      ]
+    },
+    {
+      "nodeId": "cog:motor-control-scope",
+      "role": "definition",
+      "denotes": "Motor control is reconstructed through force-dependent hand-localization judgments, force-field reaching adaptation and field-removal aftereffects. The localization experiment contrasts assistive, resistive and null forces during constrained movement without arm vision; its tuned state-estimator account remains separate from the measured biases. Reaching adaptation supplies a different behavioral preparation with only abstract-level inherited reading. These examples do not identify one neural Kalman filter, all feedback/gain operations or a complete distributed movement-control circuit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-motor-control-scope-scope",
+        "C-wolpert-localization",
+        "C-internal-model",
+        "C-shadmehr-adaptation",
+        "C-shadmehr-aftereffect"
+      ]
+    },
+    {
+      "nodeId": "cog:affective-processing-scope",
+      "role": "definition",
+      "denotes": "Affective processing is represented by projection-specific changes in mouse open-arm/center exploration under distinct BLA-to-CeA activation and inhibition preparations. Terminal activation and direct BLA somatic activation produce contrasting exploration outcomes; inhibition uses a separate low-stress bilateral preparation. These assays support bounded circuit effects on behavioral proxies. They do not measure subjective feeling, a single system-wide evaluative property or simultaneous control of valence, salience, cognition, perception, learning and motor readiness.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-affective-processing-scope-scope",
+        "C-tye-projection",
+        "C-tye-somata",
+        "C-tye-inhibition",
+        "C-affective-property"
+      ]
+    },
+    {
+      "nodeId": "cog:neuromodulatory-state-scope",
+      "role": "definition",
+      "denotes": "Neuromodulation is reconstructed through optogenetic LC manipulations and EEG/EMG-defined mouse sleep/wake endpoints. Brief activation promotes awakening; prolonged active-period inhibition reduces wake duration but leaves awakenings possible; inactive-period inhibition has no detected duration effect. These schedule- and state-dependent results support a particular noradrenergic circuit contribution. They do not establish a spatially uniform global transmitter state, identical effects of dopamine/serotonin/acetylcholine or unchanged anatomical topology.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neuromodulatory-state-scope-scope",
+        "C-carter-awakening",
+        "C-carter-wake-maintenance",
+        "C-carter-inactive-null",
+        "C-global-modulation"
+      ]
+    },
+    {
+      "nodeId": "cog:synchrony-criticality-scope",
+      "role": "definition",
+      "denotes": "Collective dynamics are reconstructed through sampled LFP event cascades in cortical cultures, separate drug-activated acute slices and the distributional response to culture picrotoxin. Event threshold, sampling and binning define an avalanche; phase synchronization and criticality at a specified transition require additional observables. Recovery of an event-size distribution after washout supports a bounded reversible perturbation. Scale-like statistics alone do not prove self-organized criticality, optimal information processing or a necessary organizational condition for cognition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-synchrony-criticality-scope-scope",
+        "C-beggs-culture",
+        "C-beggs-acute",
+        "C-beggs-picrotoxin",
+        "C-neural-criticality",
+        "C-synchrony-criticality",
+        "C-resting-attractor"
+      ]
+    },
+    {
+      "nodeId": "cog:conscious-experience-scope",
+      "role": "hypothesis",
+      "denotes": "Conscious experience remains an explicitly unresolved theoretical scope. IIT, GNWT and conceptual global-workspace architecture are distinct versioned proposals, not one combined physiological rule. The COGITATE visual-task data provide region/feature/modality-dependent decoding, duration-related activity and differing preregistered phase versus exploratory amplitude connectivity results. These recordings neither causally generate experience nor measure Phi or establish a unique necessary integration threshold. Reportable access, neural content readout and subjective experience remain distinct explanatory targets.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-conscious-experience-scope-scope",
+        "C-cogitate-decoding",
+        "C-cogitate-duration",
+        "C-cogitate-ppc",
+        "C-cogitate-dfc",
+        "C-conscious-emergence",
+        "C-iit-2004",
+        "C-gnwt-access",
+        "C-gwt-blackboard"
+      ]
+    },
+    {
+      "nodeId": "cog:sleep-wake-regulation-scope",
+      "role": "definition",
+      "denotes": "Sleep/wake regulation is reconstructed through EEG/EMG-defined mouse transition and duration endpoints under distinct Hcrt and LC interventions. Hcrt stimulation shortens post-stimulation wake latency under specified trains, with low-frequency and total-duration nulls and receptor-blockade contrasts. LC activation and inhibition have schedule- and circadian-period-dependent effects. Transition probability/latency, wake duration and sleep function are separate; two-process and synaptic-homeostasis accounts remain interpretations rather than experimentally closed universal state-control laws.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-sleep-wake-regulation-scope-scope",
+        "C-hcrt-awakening",
+        "C-hcrt-low-frequency-null",
+        "C-hcrt-duration-null",
+        "C-hcrt-antagonist",
+        "C-carter-awakening",
+        "C-carter-wake-maintenance",
+        "C-carter-inactive-null",
+        "C-sleep-two-process",
+        "C-sleep-homeostasis"
+      ]
+    },
+    {
+      "nodeId": "cog:neural-ensemble-specialization-scope",
+      "role": "definition",
+      "denotes": "Functional ensembles are reconstructed as operational calcium co-activation groups in a learned visual licking task. Selected stimulation can disrupt or improve task-associated ensemble recruitment and measured performance, while non-pattern-completion controls do not show the same improvement. Gray-screen behavioral comparisons condition on a small successful-recall subset. These results support task- and selection-specific participation; they do not establish fixed anatomical modules, universal division of labor, minimum functional units or the subjective percept caused by stimulation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neural-ensemble-specialization-scope-scope",
+        "C-ensemble-observation",
+        "C-ensemble-disruption",
+        "C-ensemble-recall",
+        "C-ensemble-control-null",
+        "C-ensemble-gray-selection",
+        "C-ensemble-generalization",
+        "C-ensemble-perception"
+      ]
+    },
+    {
+      "nodeId": "cog:connectome-information-processing-scope",
+      "role": "definition",
+      "denotes": "Connectomic processing is reconstructed through targeted neural stimulation and downstream calcium responses in immobilized C. elegans. AVJR-to-AVDR and AVER-to-AVAR increases and a SAADL-to-OLLR decrease are preparation-bound effective responses, potentially including indirect routes. An anatomical connectome, a perturbation-response atlas, a statistical dependency and a Shannon communication model are distinct objects. The evidence does not identify every path, hub operation, recurrent computation, semantic content or a universal mapping from wiring to function.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-connectome-information-processing-scope-scope",
+        "C-signal-atlas",
+        "C-avjr-avdr",
+        "C-aver-avar",
+        "C-saadl-ollr",
+        "C-connectome-function-identity",
+        "C-neural-information-identity"
+      ]
+    },
+    {
+      "nodeId": "cog:thalamic-visual-relay-scope",
+      "role": "definition",
+      "denotes": "Thalamic visual transfer is reconstructed through paired-spike retinal efficacy and separate corticogeniculate perturbation results. Closely spaced retinal spikes differ in conditional transfer efficacy; removing layer-6 cortical input can increase or decrease dLGN responses depending on cell and contrast, while driving input reduces evoked counts in the read source. The feedback preparation uses adult GN220 Ntsr1-Cre mice during acute isoflurane-anesthetized recordings, with concentration adjusted around 1.2% using cortical LFP state. These observations distinguish retinal transmission from cortical feedback and exclude one universal positive-gain sign. They do not identify the transfer's unique cellular mechanism or jointly establish awake attention, neuromodulation, noise suppression and oscillatory routing.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-thalamic-visual-relay-scope-scope",
+        "V-usrey1998",
+        "C-visual-ganglion-spiking-retinogeniculate-transfer",
+        "V-denman2015"
+      ]
+    },
+    {
+      "nodeId": "cog:visual-cortical-feature-organization-scope",
+      "role": "definition",
+      "denotes": "Visual feature organization is reconstructed through a primate striate-cortex column report, rat V1 orientation selectivity without discernible local orientation organization and a separate cat area-18 comparison. Feature selectivity and spatial maps are distinct; a selective population need not display a locally ordered map at the sampled scale. Functionally assigned thalamocortical connections favor matching contrast sign and receptive-field alignment, but correlation-based assignment does not establish map development. The original 1962 cat reference and 1968 monkey study retain their distinct identities.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-visual-cortical-feature-organization-scope-scope",
+        "V-hubel1968",
+        "V-ohki2005",
+        "V-reid1995",
+        "C-visual-geniculocortical-input-v1-simple-response"
+      ]
+    },
+    {
+      "nodeId": "cog:top-down-visual-modulation-scope",
+      "role": "definition",
+      "denotes": "Top-down visual modulation is reconstructed through sub-saccadic-threshold FEF stimulation and V4 response changes, complemented by a separate corticogeniculate feedback assay. Retinotopically corresponding FEF stimulation enhances responses while noncorresponding stimulation can suppress them, with dependence on stimulus configuration. This supports a bounded intervention on visual response gain. Predictive coding, expectation comparison, error signals and iterative internal-world-model control remain explicit interpretations requiring task-matched alternatives; top-down modulation and prediction are not synonymous measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-top-down-visual-modulation-scope-scope",
+        "V-moore2003",
+        "V-denman2015",
+        "V-predictive"
+      ]
+    },
+    {
+      "nodeId": "cog:glial-regulation-scope",
+      "role": "definition",
+      "denotes": "Glial regulation is a family of source-specific interactions involving astrocytic ionic/uptake currents, lactate-related retention effects, myelin/conduction associations, developmental microglial engulfment, adult process responses and purinergic perturbations. These are not one homogeneous stabilizing property. Larval radial-astrocyte feedback and behavior oppose an absolute exclusion of glia from task-related information processing. Positive, negative and null outcomes retain cell class, age, region, manipulation and endpoint identity; no all-glia algorithm or universal regulatory architecture is admitted.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-glial-regulation-scope-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:glial-regulation-scope-assay-boundary",
+      "role": "definition",
+      "denotes": "Keep electrical uptake proxies, astrocyte calcium, extracellular glutamate sensors, myelin anatomy, compound conduction, engulfed material, tissue fluorescence, dialysate concentration and behavior separate. Distinguish developmental deletion, adult perturbation, acute stimulation and anatomical observation. A morphological contact or colocalization is not direct inhibitory transmission; a partial behavioral effect is not an all-glia information-processing law.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-glial-regulation-scope-assay-boundary"
+      ]
+    },
+    {
+      "nodeId": "cog:neural-gene-regulation-scope",
+      "role": "definition",
+      "denotes": "The reconstructed scope separates acute ECS-associated dentate accessibility/RNA responses, maternal-environment and broad TSA-associated hippocampal molecular/endocrine contrasts, and five-day activity-tagged hippocampal population profiles. These sources support finite activity/environment-responsive regulation with distinct molecular assays. They do not establish one sustained abstract neural state, a unique chromatin-to-behavior chain, permanent reprogramming, inherited memory or a substrate-independent downward causal law.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neural-gene-regulation-scope-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:neural-gene-regulation-scope-assay-boundary",
+      "role": "definition",
+      "denotes": "Separate environmental manipulation, neural stimulation, reporter-based selection and molecular perturbation. Accessibility, DNA modification, histone association, contact frequency, RNA abundance, protein puncta and endocrine/behavioral responses retain different units and cohorts. Population overlaps through 24 hours or five days are not same-cell trajectories; a chromatin-associated model is not an experimentally identified unique generative mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neural-gene-regulation-scope-assay-boundary"
+      ]
+    },
+    {
+      "nodeId": "cog:neuroimmune-interactions-scope",
+      "role": "definition",
+      "denotes": "Neuroimmune interactions are represented by distinct mouse immune-to-neural and neural-to-circulating-cytokine assays, including LPS/cytokine challenges, vagotomy, cNST/nodose targeting and endpoint-specific controls. Reciprocal influences are supported in bounded preparations, while the complete descending route, immune effector cells and direct cytokine-receptor mediation remain unresolved. Reduced inflammation, endotoxin survival and control of live infection are different outcomes: improved endotoxin survival cannot override increased Salmonella tissue burden under another neural-activation protocol.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neuroimmune-interactions-scope-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:neuroimmune-interactions-scope-assay-boundary",
+      "role": "definition",
+      "denotes": "Distinguish FOS, population photometry, single-cell calcium, transcript clusters, retrograde tracing, circulating cytokines, corticosterone, endotoxin survival and live-infection colony counts. Vagotomy, chemogenetic population activation, an immune challenge and direct cytokine delivery are different interventions. Reciprocal findings across assays constrain a candidate circuit; they do not identify a complete matched feedback path or a universal benefit of inflammation suppression.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neuroimmune-interactions-scope-assay-boundary"
+      ]
+    },
+    {
+      "nodeId": "cog:neurovascular-coupling-scope",
+      "role": "definition",
+      "denotes": "The reconstructed vascular scope concerns activity-associated vascular responses, capillary potassium-sensitive signaling and arterial connexin-dependent response propagation. It separates isolated-cell current, ex vivo diameter/membrane potential, in vivo RBC flux, relative perfusion and optical HbT-related signals. Neural-to-vascular segments are experimentally constrained, but the physiological potassium source, segment transitions, full signal carrier and inverse neural readout remain unresolved. The original immune-topic short/long descriptions do not define vascular coupling; their immune assertions are not admitted as vascular findings.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neurovascular-coupling-scope-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:neurovascular-coupling-scope-assay-boundary",
+      "role": "definition",
+      "denotes": "Keep capillary endothelial patch-clamp current, upstream smooth-muscle voltage, pressurized diameter, RBC flux, relative laser-Doppler perfusion, retinal tracer spread, aortic electrical coupling and cortical HbT-related optical response as separate preparations and observables. Inverse onset-time/distance fits describe optical response spread, not directly recorded cerebral electrical conduction. Stimulation and response profiles constrain a candidate route without uniquely constructing it or proving bidirectional neural-immune regulation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-neurovascular-coupling-scope-assay-boundary"
+      ]
+    },
+    {
+      "nodeId": "cog:adult-neurogenesis-remodeling-scope",
+      "role": "definition",
+      "denotes": "Adult neuron production and remodeling of existing circuits are distinct source-scoped processes. Selected mouse birth-label, electrophysiological and optogenetic assays support maturation and circuit participation in restricted dentate preparations; task, running, niche and injury effects concern separate stages and cohorts. Primate histology, human BrdU, radiocarbon models and transcript-based annotation have different inferential reach. Mature-spine remodeling need not entail neuron birth, normal adult neurogenesis need not follow injury, and no universal learning prerequisite, human cognitive mechanism or uniquely minimal construction rule is established.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-adult-neurogenesis-remodeling-scope-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:adult-neurogenesis-remodeling-scope-assay-boundary",
+      "role": "definition",
+      "denotes": "Distinguish cell-cycle entry, birth-label retention, neuronal/glial markers, static morphology, clonal ancestry, synaptic contact, recorded input/output, mature-neuron spine turnover and behavioral performance. Each stage uses its own age and exposure window. Human transcript annotation, BrdU colabeling and radiocarbon model fits do not substitute for each other or for functional lineage tracing; endpoint population balance is not proof of feedback control or individual asymmetric division.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-adult-neurogenesis-remodeling-scope-assay-boundary"
+      ]
+    },
+    {
+      "nodeId": "cog:amanzio1999-expectation-antagonism-context",
+      "role": "experimental-context",
+      "denotes": "Use tourniquet-induced ischemic arm pain and the participant's time to intolerable pain. Compare repeated no-treatment days, hidden naloxone, an openly administered saline injection described as an analgesic and an openly administered naloxone injection given the same analgesic description. Retain separate groups and pre/post no-treatment days; the 229 analyzed people across twelve groups are not 229 independent replications of each contrast.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-amanzio1999-expectation-antagonism"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-expectation-intervention",
+      "role": "scoped-phenomenon",
+      "denotes": "The experimental input combines analgesic verbal framing with an open injection, against no-treatment baseline and a hidden-naloxone control. Naloxone is an active antagonist used to test the framing-associated response, not an inert placebo ingredient.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-expectation-intervention",
+        "M-cog-amanzio1999-expectation-antagonism"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-opioid-sensitive-tolerance",
+      "role": "scoped-phenomenon",
+      "denotes": "Analgesic-described saline increases tourniquet pain-tolerance duration; the corresponding naloxone condition does not retain that increase. Hidden naloxone alone gives no significant baseline change. This supports an opioid-receptor contribution to the tested response without directly measuring opioid release or proving a single universal placebo mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-opioid-sensitive-tolerance",
+        "M-cog-amanzio1999-expectation-antagonism"
+      ]
+    },
+    {
+      "nodeId": "cog:amanzio1999-conditioning-specificity-context",
+      "role": "experimental-context",
+      "denotes": "Pair analgesic-described morphine or ketorolac with the pain test on two days. On the test day substitute saline or naloxone and describe the injection either as the earlier analgesic or as a neutral antibiotic. Keep eight conditioning groups, their prior drugs, verbal cues and pre/post untreated days separate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-amanzio1999-conditioning-specificity"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-conditioning-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The source contrasts morphine versus ketorolac preconditioning, analgesic versus antibiotic test descriptions and saline versus naloxone substitution. These are distinct group-level interventions rather than one pooled expectancy dose.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-conditioning-input",
+        "M-cog-amanzio1999-conditioning-specificity"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-conditioning-opioid-dissociation",
+      "role": "scoped-phenomenon",
+      "denotes": "Morphine-conditioned tolerance responses are naloxone-sensitive under either tested description. Ketorolac-conditioned responses with analgesic cues are partly naloxone-sensitive; under antibiotic description the source reports a residual naloxone-insensitive response. The ketorolac difference between descriptions is not conventionally significant in the reported comparison, so no measured additive expectation effect is inferred there.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-conditioning-opioid-dissociation",
+        "M-cog-amanzio1999-conditioning-specificity"
+      ]
+    },
+    {
+      "nodeId": "cog:benedetti2003-pain-suggestions-context",
+      "role": "experimental-context",
+      "denotes": "Compare untreated repeated pain tests with analgesic or hyperalgesic descriptions of saline. In separate groups give ketorolac for two conditioning days and saline on the next test day with analgesic versus opposite hyperalgesic instructions. Measure time from the last standardized hand squeeze until the participant stops because pain is intolerable.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-benedetti2003-pain-suggestions"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-nocebo-pain-input",
+      "role": "scoped-phenomenon",
+      "denotes": "Saline is described as analgesic or pain-increasing, either without new preconditioning or after the same two-day ketorolac procedure. Untreated days and a no-treatment group constrain change unrelated to the test description.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-nocebo-pain-input",
+        "M-cog-benedetti2003-pain-suggestions"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-nocebo-pain-direction",
+      "role": "scoped-phenomenon",
+      "denotes": "Analgesic suggestions increase and hyperalgesic suggestions decrease measured tolerance in their tested groups. After ketorolac preconditioning, the opposite hyperalgesic description prevents the usual positive test-day response and yields lower tolerance. This does not show that verbal expectation controls every physiological endpoint.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-nocebo-pain-direction",
+        "M-cog-benedetti2003-pain-suggestions"
+      ]
+    },
+    {
+      "nodeId": "cog:benedetti2003-motor-suggestions-context",
+      "role": "experimental-context",
+      "denotes": "Keep the active stimulation setting unchanged on three ordered-varied test days. Compare no new instruction with a sham switch-off description and a sham intensity-increase description. Measure right-hand directional-choice movement velocity immediately before and thirty minutes after instructions, averaging fifteen reaches per test; earlier actual switch-off observations are historical conditioning context, not concurrent randomized active-stimulation controls.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-benedetti2003-motor-suggestions"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-motor-instruction-input",
+      "role": "scoped-phenomenon",
+      "denotes": "Patients receive no new instruction, a claimed switch-off or a claimed intensity increase while their subthalamic stimulation actually remains on at the same setting.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-motor-instruction-input",
+        "M-cog-benedetti2003-motor-suggestions"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-motor-asymmetric-response",
+      "role": "scoped-phenomenon",
+      "denotes": "The sham switch-off description is followed by slower instrumented hand movement, whereas the sham-increase and no-treatment pre/post comparisons are nonsignificant. The source supports instruction-sensitive behavior under ongoing treatment; it does not demonstrate that the positive description improves movement beyond baseline.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-motor-asymmetric-response",
+        "M-cog-benedetti2003-motor-suggestions"
+      ]
+    },
+    {
+      "nodeId": "cog:benedetti2003-gh-conditioning-context",
+      "role": "experimental-context",
+      "denotes": "GH groups separately receive suggested increase/decrease, with or without two previous days of subcutaneous sumatriptan. Compare serial blood measurements before and through seventy-five minutes after the test injection, with the source's untreated serial-sampling group. The ninety-five-person hormone sample is distributed over nine groups; GH and cortisol intervention groups are not identical participant cohorts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-benedetti2003-gh-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-gh-conditioning-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The source contrasts saline test instructions in opposite directions, with versus without two previous sumatriptan exposures, retaining separate untreated sampling controls.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-gh-conditioning-input",
+        "M-cog-benedetti2003-gh-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-gh-suggestion-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Opposite verbal suggestions without sumatriptan preconditioning produce no significant reported gh concentration change in this sampling window. This is a scoped null with finite group size, not proof of exact equality or universal incapacity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-gh-suggestion-null",
+        "M-cog-benedetti2003-gh-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-gh-conditioned-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Following sumatriptan conditioning, test-day saline is associated with increased GH despite either direction of verbal suggestion.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-gh-conditioned-response",
+        "M-cog-benedetti2003-gh-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:benedetti2003-cortisol-conditioning-context",
+      "role": "experimental-context",
+      "denotes": "Cortisol groups separately receive suggested decrease/increase, with or without two previous days of subcutaneous sumatriptan. Compare serial blood measurements before and through seventy-five minutes after the test injection, with the source's untreated serial-sampling group. The ninety-five-person hormone sample is distributed over nine groups; GH and cortisol intervention groups are not identical participant cohorts.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-benedetti2003-cortisol-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-cortisol-conditioning-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The source contrasts saline test instructions in opposite directions, with versus without two previous sumatriptan exposures, retaining separate untreated sampling controls.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-cortisol-conditioning-input",
+        "M-cog-benedetti2003-cortisol-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-cortisol-suggestion-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Opposite verbal suggestions without sumatriptan preconditioning produce no significant reported cortisol concentration change in this sampling window. This is a scoped null with finite group size, not proof of exact equality or universal incapacity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-cortisol-suggestion-null",
+        "M-cog-benedetti2003-cortisol-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-cortisol-conditioned-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Following sumatriptan conditioning, test-day saline is associated with decreased cortisol despite either direction of verbal suggestion.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-cortisol-conditioned-response",
+        "M-cog-benedetti2003-cortisol-conditioning"
+      ]
+    },
+    {
+      "nodeId": "cog:wechsler2011-airway-function-context",
+      "role": "experimental-context",
+      "denotes": "At twelve visits compare randomized within-block albuterol inhaler, placebo inhaler, sham acupuncture and no intervention, each repeated in three blocks. Measure baseline and twenty-minute-interval spirometry for two hours and summarize maximum FEV1 improvement. Participants are screened for at least twelve-percent reversibility to open albuterol; results do not characterize all asthma patients.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-wechsler2011-airway-function"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-airway-control-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The same crossover design separates active bronchodilator exposure from placebo inhaler, sham acupuncture and a no-intervention visit, retaining their unequal blinding conditions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-airway-control-input",
+        "M-cog-wechsler2011-airway-function"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-airway-physiology-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Measured maximum FEV1 improves substantially more with albuterol; the placebo inhaler and sham-acupuncture contrasts against no intervention are nonsignificant. Improvement relative to each visit's baseline alone therefore does not identify a placebo-caused bronchodilator effect.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-airway-physiology-null",
+        "M-cog-wechsler2011-airway-function"
+      ]
+    },
+    {
+      "nodeId": "cog:wechsler2011-perceived-improvement-context",
+      "role": "experimental-context",
+      "denotes": "Collect perceived symptom improvement on an improvement-only zero-to-ten visual scale after each condition in the twelve-visit crossover. Rescaling these scores as percentages does not transform them into measured percent FEV1. Keep placebo-versus-no-intervention symptom contrasts separate from the same participants' spirometric endpoint.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-wechsler2011-perceived-improvement"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-symptom-report-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The source compares improvement-only symptom reports after active inhaler, inactive inhaler, sham acupuncture and no intervention in the same repeated-visit design.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-symptom-report-input",
+        "M-cog-wechsler2011-perceived-improvement"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-symptom-report-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Participants report greater improvement after either sham intervention than after no intervention. The active-versus-placebo report contrast is nonsignificant despite the separate active-drug spirometric benefit. Reported relief and measured airway caliber must not be merged, and nonsignificance does not prove equal subjective experience.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-symptom-report-response",
+        "M-cog-wechsler2011-perceived-improvement"
+      ]
+    },
+    {
+      "nodeId": "cog:albring2012-four-reexposures-context",
+      "role": "experimental-context",
+      "denotes": "Pair four oral cyclosporine exposures with a novel drink during acquisition, then after washout pair the drink with placebo capsules on four evocation occasions. The control cohort receives placebo throughout. Compare baseline, active-drug, washout and final blood draws; stimulate isolated PBMC with anti-CD3 for twenty-four hours and quantify culture-supernatant IL-2.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-albring2012-four-reexposures"
+      ]
+    },
+    {
+      "nodeId": "cog:immune-four-reexposures-input",
+      "role": "scoped-phenomenon",
+      "denotes": "Repeated drink/placebo evocation after cyclosporine versus placebo-only acquisition",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-immune-four-reexposures-input",
+        "M-cog-albring2012-four-reexposures"
+      ]
+    },
+    {
+      "nodeId": "cog:immune-four-reexposures-response",
+      "role": "scoped-phenomenon",
+      "denotes": "Previously published experiment-A observations, re-expressed as baseline-relative change here, show lower stimulated IL-2 output after conditioned evocation than in the source control. Reduced ex-vivo stimulated IL-2 release after the declared repeated-evocation protocol.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-immune-four-reexposures-response",
+        "M-cog-albring2012-four-reexposures"
+      ]
+    },
+    {
+      "nodeId": "cog:albring2012-one-reexposure-context",
+      "role": "experimental-context",
+      "denotes": "Use the same acquisition drug/drink pairing but one drink/placebo evocation on day ten, with a corresponding placebo-only acquisition control. Sample blood two hours later and measure anti-CD3-stimulated PBMC culture IL-2. Keep this cohort and its final evocation-to-sampling interval distinct from experiment A.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-albring2012-one-reexposure"
+      ]
+    },
+    {
+      "nodeId": "cog:immune-one-reexposure-input",
+      "role": "scoped-phenomenon",
+      "denotes": "Single drink/placebo evocation after cyclosporine versus placebo-only acquisition",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-immune-one-reexposure-input",
+        "M-cog-albring2012-one-reexposure"
+      ]
+    },
+    {
+      "nodeId": "cog:immune-one-reexposure-response",
+      "role": "scoped-phenomenon",
+      "denotes": "A single evocation produces no significant IL-2 suppression relative to its own control in the reported comparison. No significant conditioned suppression of stimulated IL-2 in this cohort.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-immune-one-reexposure-response",
+        "M-cog-albring2012-one-reexposure"
+      ]
+    },
+    {
+      "nodeId": "cog:albring2012-expectation-release-context",
+      "role": "experimental-context",
+      "denotes": "Assign declared probabilities of twenty-five, fifty, seventy-five or one hundred percent of receiving cyclosporine, with eight or nine participants per group. All capsules are placebo and are taken four times across three days; no cyclosporine conditioning is performed. Compare pre/post anti-CD3-stimulated PBMC supernatant IL-2 by group and time.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-albring2012-expectation-release"
+      ]
+    },
+    {
+      "nodeId": "cog:immune-expectation-release-null",
+      "role": "scoped-phenomenon",
+      "denotes": "The all-placebo, unconditioned probability groups show no significant reported suppression pattern in stimulated supernatant IL-2. This does not identify a universal cognitive/immune barrier or supply a zero-expectation control.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-immune-expectation-release-null",
+        "M-cog-albring2012-expectation-release"
+      ]
+    },
+    {
+      "nodeId": "cog:albring2012-expectation-intracellular-context",
+      "role": "experimental-context",
+      "denotes": "Use blood before and after the same declared-probability capsule procedure, but activate cells with PMA/ionomycin and brefeldin A and quantify the percentage of intracellular IL-2-positive CD4 T cells by flow cytometry. This is a different stimulation/readout from anti-CD3 culture-supernatant concentration, reusing participants rather than independently replicating them.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-cog-albring2012-expectation-intracellular"
+      ]
+    },
+    {
+      "nodeId": "cog:immune-expectation-intracellular-null",
+      "role": "scoped-phenomenon",
+      "denotes": "The separate intracellular CD4-cell assay also gives nonsignificant reported group and interaction results. Concordant nulls remain dependent endpoints of the same finite expectation experiment, not proof of precise equality or impossibility.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-immune-expectation-intracellular-null",
+        "M-cog-albring2012-expectation-intracellular"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-effect-measurement",
+      "role": "definition",
+      "denotes": "A placebo effect requires a specified intervention and comparator. Improvement within a placebo arm can include time course, regression, repeated measurement and report effects. Symptom reports, task behavior, objective peripheral assays and pathophysiology are different observables; changing one does not establish change in all others.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-placebo-effect-measurement"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-context-pathways",
+      "role": "hypothesis",
+      "denotes": "Wager and Atlas propose interacting conceptual processes, learned associations and affective/motivational states with outcome-dependent neurophysiological mediation. This is a candidate framework, not a measured single route from higher-order meaning to every autonomic, endocrine, immune and symptom endpoint.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-placebo-context-pathways"
+      ]
+    },
+    {
+      "nodeId": "cog:conscious-conditioning-partition",
+      "role": "hypothesis",
+      "denotes": "Benedetti and colleagues interpret instruction-sensitive pain/motor responses and conditioning-sensitive hormone responses in terms of conscious versus unconscious processes. The observed endpoint contrast motivates this interpretation but does not establish a universal boundary between classes of physiological functions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-cog-conscious-conditioning-partition"
+      ]
+    },
+    {
+      "nodeId": "cog:working-memory-executive-scope",
+      "role": "definition",
+      "denotes": "Working memory is represented by specified delayed-task maintenance and interference/priority readouts, with storage, rehearsal, binding, control and updating as distinct functional constructs. Macaque PF recordings and human fMRI/TMS-EEG/behavior contexts support bounded observations without identifying a unique continuous-firing or silent-synaptic mechanism. Guided activation, episodic buffering and adaptive gating remain attributed proposals. A process classification does not establish a complete executive architecture, universal time window or mandatory cognitive-control/plasticity/rhythm construction chain.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-working-memory-executive-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:symbolic-representation-scope",
+      "role": "definition",
+      "denotes": "Symbolic representation is a family of operational definitions and hypotheses concerning reference, composition, transfer and internal use beyond a present stimulus. Sequence continuation, eye movements, fMRI/MEG and neural-network embedding analyses provide distinct bounded tests; they do not jointly demonstrate a complete neural language of thought or one necessary physical construction. Fixed-language description costs, proposed vector binding, program induction and conceptual bootstrapping remain separate from measured circuits, universal minimum resources and a general-purpose stable cognitive capacity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-symbolic-representation-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:social-recognition-empathy-scope",
+      "role": "definition",
+      "denotes": "Social recognition, action observation, self-other distinction, affect sharing, mental-state attribution and helping are distinct constructs and outcomes. Macaque F5 recordings, clinical human action units, cued partner-pain fMRI and clinical pain-picture iEEG/ratings support their own sampled responses, not one necessary mirror/empathy circuit. Proposed shared representations and shared-manifold/neurodynamic mechanisms remain hypotheses, with instrument identity, spatial-overlap, statistical-directionality and clinical-sampling boundaries explicit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-social-recognition-empathy-scope"
+      ]
+    },
+    {
+      "nodeId": "cog:placebo-psychophysiology-scope",
+      "role": "definition",
+      "denotes": "Treatment descriptions, conditioning history and contextual procedures can change specific pain-tolerance, motor, hormone, immune-cell or symptom-report outcomes in existing participants. These endpoints have different mechanisms and controls: opioid-sensitive versus opioid-insensitive conditioned pain, nocebo slowing without proven positive motor gain, conditioned hormone/IL-2 changes with suggestion-only nulls, and perceived asthma relief without demonstrated sham bronchodilation. This is a bounded family of psychophysiological/context effects, not a universal downward-causation law, belief-only cure, complete autonomic-neuroendocrine-immune route or durable regulatory set-point reset.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-cog-placebo-psychophysiology-scope"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",
