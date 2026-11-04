@@ -22834,6 +22834,1304 @@
       ]
     },
     {
+      "nodeId": "soc:chase2002-rank-reassembly-context",
+      "role": "experimental-context",
+      "denotes": "Isolate fish for two weeks, assemble 22 four-fish groups, score aggression after 24 hours, isolate the same individuals for two more weeks and reassemble them. A group relationship is scored after six consecutive unretaliated aggressive acts. Compare each individual's rank and the group's linearity across the two assemblies.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-chase2002-rank-reassembly"
+      ]
+    },
+    {
+      "nodeId": "soc:fish-rank-reassembly",
+      "role": "scoped-phenomenon",
+      "denotes": "The same weight-matched female cichlids usually form linear hierarchies in repeated assemblies, yet only 27.3% of the 22 groups retain an identical rank ordering. Both persistent structural form and variable individual placement matter; rank is not a fixed intrinsic label.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-fish-rank-reassembly",
+        "M-soc-chase2002-rank-reassembly"
+      ]
+    },
+    {
+      "nodeId": "soc:chase2002-social-protocol-context",
+      "role": "experimental-context",
+      "denotes": "Compare isolated pairwise round-robin encounters with simultaneous group assembly after two weeks of isolation. Four- and five-fish cohorts are weight matched. Round-robin dominance uses 15 consecutive acts in small encounter tanks; assembled-group scoring uses six acts after 24 hours in a larger tank. Preserve group-size-specific cohorts and repeated encounter histories.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-chase2002-social-protocol"
+      ]
+    },
+    {
+      "nodeId": "soc:fish-social-protocol",
+      "role": "scoped-phenomenon",
+      "denotes": "Social access is changed through isolated round-robin encounters versus simultaneous group assembly, with different timing, tanks and dominance criteria retained as part of each protocol.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-fish-social-protocol",
+        "M-soc-chase2002-social-protocol"
+      ]
+    },
+    {
+      "nodeId": "soc:fish-hierarchy-context",
+      "role": "scoped-phenomenon",
+      "denotes": "Assemblies of four and five cichlids yield substantially more linear hierarchies than the corresponding isolated pairwise protocols. Prior-attribute variation remains present, so this does not show that interaction alone is sufficient or identify the unique winner, loser or bystander pathway.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-fish-hierarchy-context",
+        "M-soc-chase2002-social-protocol"
+      ]
+    },
+    {
+      "nodeId": "soc:carter2013-social-sharing-context",
+      "role": "experimental-context",
+      "denotes": "Fast one of 20 tested bats for 24 hours, return it to fed cage-mates and record two hours of behavior and mass change. Across 48 trial days over two years, score directed mouth-licking bouts, independent-day grooming and microsatellite relatedness. Compare dyadic transfer predictors and recurring network ties; preserve repeated bats and dyads.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-carter2013-social-sharing"
+      ]
+    },
+    {
+      "nodeId": "soc:bat-partner-sharing",
+      "role": "scoped-phenomenon",
+      "denotes": "In the captive mixed-relatedness preparation, food received from a partner predicts food donated to that partner, alongside grooming and donor-sex effects. This is an association in repeated dyads, not a randomized test of partner reciprocity or a human contract.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bat-partner-sharing",
+        "M-soc-carter2013-social-sharing"
+      ]
+    },
+    {
+      "nodeId": "soc:bat-sharing-persistence",
+      "role": "scoped-phenomenon",
+      "denotes": "Sharing networks are more similar than the randomized comparison across eight-day and six-month separations. This supports bounded persistence of relationships within the tested colony, without demonstrating independence from all current members or survival after complete replacement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bat-sharing-persistence",
+        "M-soc-carter2013-social-sharing"
+      ]
+    },
+    {
+      "nodeId": "soc:bat-generalized-sharing-null",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported within-round and previous-day comparisons find no significant general increase in donating after a bat has itself been fed. Exact absolute amounts given and received across trials are not significantly correlated; this is not strict short-term tit-for-tat matching or equivalence of every reciprocity account.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bat-generalized-sharing-null",
+        "M-soc-carter2013-social-sharing"
+      ]
+    },
+    {
+      "nodeId": "soc:bat-harassment-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "Donors initiate most classified non-maternal sharing bouts; recipient age/forearm size do not significantly predict donations. These outcomes constrain harassment as a sole explanation in this colony, without excluding every solicitation process or directly measuring reproductive benefit.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bat-harassment-boundary",
+        "M-soc-carter2013-social-sharing"
+      ]
+    },
+    {
+      "nodeId": "soc:aplin2015-diffusion-context",
+      "role": "experimental-context",
+      "denotes": "Train two resident males in each of five subpopulations to open one physical side of a food puzzle, retaining three untrained-demonstrator controls. Release demonstrators and log RFID visits and door-direction solutions over 20 exposure days. Both techniques remain available and equally rewarded; independently sampled feeder associations enter network-diffusion analyses.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-aplin2015-diffusion"
+      ]
+    },
+    {
+      "nodeId": "soc:bird-demonstrator-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The experimental input introduces two resident demonstrators trained on blue/right or red/left food-puzzle opening, compared with pairs given no technique training; both opening directions then remain available.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bird-demonstrator-input",
+        "M-soc-aplin2015-diffusion"
+      ]
+    },
+    {
+      "nodeId": "soc:bird-tradition-diffusion",
+      "role": "scoped-phenomenon",
+      "denotes": "Local uptake is faster and greater in seeded areas, and solutions preferentially use the introduced physical technique; controls show no consistent side bias. This supports a preparation-bound effect of demonstrator seeding, with geographic control placement retained as a design limitation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bird-tradition-diffusion",
+        "M-soc-aplin2015-diffusion"
+      ]
+    },
+    {
+      "nodeId": "soc:bird-conformity-inference",
+      "role": "scoped-phenomenon",
+      "denotes": "Observed associations and acquisition order favor the fitted social-transmission model; first techniques disproportionately match the locally common variant. Conformist copying is a source-supported statistical interpretation, rather than direct measurement of belief, sanctions or a uniquely identified learning algorithm.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bird-conformity-inference",
+        "M-soc-aplin2015-diffusion"
+      ]
+    },
+    {
+      "nodeId": "soc:aplin2015-persistence-context",
+      "role": "experimental-context",
+      "denotes": "Reinstall food puzzles for five days at T1, T3 and C1 after nine months without apparatus access and without training new demonstrators. Distinguish birds previously present or previously solving from new participants. Approximately 40% of each subpopulation were present in the previous year; retain limited surviving sites and a device failure affecting one site.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-aplin2015-persistence"
+      ]
+    },
+    {
+      "nodeId": "soc:bird-tradition-retention",
+      "role": "scoped-phenomenon",
+      "denotes": "After nine months, the two revisited seeded sites retain their earlier technique bias while both prior and inexperienced birds solve the reintroduced puzzle. Surviving trained/knowledgeable birds and a supplied reward remain available; memory and social transmission are compatible explanations, not proven member-independent persistence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-bird-tradition-retention",
+        "M-soc-aplin2015-persistence"
+      ]
+    },
+    {
+      "nodeId": "soc:greene2013-cue-outflow-context",
+      "role": "experimental-context",
+      "denotes": "Introduce alumina mimics bearing blank solvent treatment, seed-associated oleic acid, colony-matched forager hydrocarbons or both odor classes. Compare three-minute outgoing trail counts before and after addition, excluding an immediate transient decline and using the reported multiple-testing correction. Preserve within-colony repeated treatments and the two field seasons.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-greene2013-cue-outflow"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-combined-cue-input",
+      "role": "scoped-phenomenon",
+      "denotes": "Field nests receive the same type of inert mimic with combined forager/seed-associated odor, isolated odor classes or blank treatment; outgoing traffic is measured after the immediate handling transient.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-combined-cue-input",
+        "M-soc-greene2013-cue-outflow"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-combined-cue-outflow",
+      "role": "scoped-phenomenon",
+      "denotes": "Combined forager and seed-associated odor mimics increase outgoing trail counts in the reported field assay. This is a task-specific response to the supplied combination, not proof of a universal colony computation or receptor-level chemical mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-combined-cue-outflow",
+        "M-soc-greene2013-cue-outflow"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-single-cue-null",
+      "role": "scoped-phenomenon",
+      "denotes": "The blank, seed-odor-only and forager-odor-only treatments have no significant measured pre/post outflow increase. Finite nulls constrain the tested combination account without establishing exact zero effects, biochemical synergy or universally necessary cue classes.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-single-cue-null",
+        "M-soc-greene2013-cue-outflow"
+      ]
+    },
+    {
+      "nodeId": "soc:greene2013-mimic-interaction-context",
+      "role": "experimental-context",
+      "denotes": "Observe unobstructed trajectories beneath a transparent entrance ceiling before and after blank mimics, then at least an hour later combined-odor mimics. Score contacts within an antenna length and distinguish contacts with ants versus mimics. Twenty focal foragers per treatment/colony are sampled before or after; preserve the fixed blank-before-combination order.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-greene2013-mimic-interaction"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-mimic-interaction",
+      "role": "scoped-phenomenon",
+      "denotes": "Foragers contact combined-odor mimics more than blank mimics, while contacts with ants decrease and total ant-plus-mimic contacts show no significant pre/post change. The response concerns contact composition and cannot be reduced to a universal increase in interaction rate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-mimic-interaction",
+        "M-soc-greene2013-mimic-interaction"
+      ]
+    },
+    {
+      "nodeId": "soc:pinter2013-seed-activation-context",
+      "role": "experimental-context",
+      "denotes": "Add seeds near a foraging trail and select low- and high-return-rate windows. Track unobstructed outgoing ants through the vestibule, score encounters and fit pooled changes in encounter frequency before each departure. Compare colonies and interaction classes while retaining that every focal ant eventually leaves the nest.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-pinter2013-seed-activation"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-departure-association",
+      "role": "scoped-phenomenon",
+      "denotes": "Among observed ants that leave the nest, interaction frequency rises during the seconds preceding departure, with colony- and return-rate-dependent magnitudes. These selected trajectories support temporal association, while threshold necessity requires observing comparably exposed ants that do not depart.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-departure-association",
+        "M-soc-pinter2013-seed-activation"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-timing-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Reported low/high return-rate comparisons do not significantly change the interaction change-point time; density-normalized rate changes are also not significant in one colony. A common all-colony numerical activation threshold is not established.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-timing-null",
+        "M-soc-pinter2013-seed-activation"
+      ]
+    },
+    {
+      "nodeId": "soc:pinter2013-return-removal-context",
+      "role": "experimental-context",
+      "denotes": "Prevent incoming foragers from reaching the nest for three or ten minutes, retaining 22 trials after two technical exclusions and repeated observations per colony. Count returning/outgoing trail traffic and vestibule occupants every 30 seconds before, during and after interruption. Removed ants are released after the experiment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-pinter2013-return-removal"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-return-interruption",
+      "role": "scoped-phenomenon",
+      "denotes": "The source interrupts returning foragers for three versus ten minutes in repeated field-colony trials, retaining both trail-flow and vestibule-occupancy measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-return-interruption",
+        "M-soc-pinter2013-return-removal"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-recovery-duration",
+      "role": "scoped-phenomenon",
+      "denotes": "After the longer interruption, outgoing foraging resumes more slowly and vestibule depletion persists longer than after the shorter interruption. This is finite recovery in an existing colony; neither a universal resilience optimum nor irreversible regime change is measured.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-recovery-duration",
+        "M-soc-pinter2013-return-removal"
+      ]
+    },
+    {
+      "nodeId": "soc:ant-availability-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Minimum vestibule occupancy does not significantly differ between three- and ten-minute interruption conditions; the reported post-interruption occupancy increase rates also do not significantly differ. Different recovery readouts must remain separate and nonsignificance is not equivalence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-ant-availability-null",
+        "M-soc-pinter2013-return-removal"
+      ]
+    },
+    {
+      "nodeId": "soc:couzin2011-fish-choice-context",
+      "role": "experimental-context",
+      "denotes": "Train separate fish sets to blue or yellow targets; combine six trained fish for one target with five for the other and add zero, five or ten untrained fish. Randomize blocks and majority-target identity, retain spontaneous yellow preference and repeated use of fish across days. No food is present during tests. Score the first fish arriving within two body lengths of a target as the shoal's operational choice.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-couzin2011-fish-choice"
+      ]
+    },
+    {
+      "nodeId": "soc:fish-untrained-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The experiment holds the six-versus-five trained target groups fixed while adding zero, five or ten untrained fish, separately testing whether the spontaneous yellow preference belongs to the minority or majority.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-fish-untrained-input",
+        "M-soc-couzin2011-fish-choice"
+      ]
+    },
+    {
+      "nodeId": "soc:fish-majority-switch",
+      "role": "scoped-phenomenon",
+      "denotes": "When five yellow-trained fish oppose six blue-trained fish, added untrained fish increase the frequency of first arrivals at the blue majority target. This is a conditional shoal-choice result, not evidence that ignorance improves truth, welfare or human democratic institutions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-fish-majority-switch",
+        "M-soc-couzin2011-fish-choice"
+      ]
+    },
+    {
+      "nodeId": "soc:fish-majority-null",
+      "role": "scoped-phenomenon",
+      "denotes": "When yellow-trained fish already form the numerical majority, the reported added-untrained-fish effect is nonsignificant. The contrast excludes an unconditional rule that adding untrained participants always improves majority alignment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-fish-majority-null",
+        "M-soc-couzin2011-fish-choice"
+      ]
+    },
+    {
+      "nodeId": "soc:couzin2011-spatial-model-context",
+      "role": "model-context",
+      "denotes": "Read the source's defined attraction/alignment/repulsion model and adaptive-network overview, with fixed informational subpopulations and differing preference strengths. Keep published simulations and bifurcation interpretation separate from fish trials; no parameter sweep, code execution or analytic derivation is independently replayed.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-couzin2011-spatial-model"
+      ]
+    },
+    {
+      "nodeId": "soc:collective-choice-model",
+      "role": "scoped-phenomenon",
+      "denotes": "The published models yield a preference- and composition-dependent shift between minority and majority target control. Excessive uncommitted membership can weaken that effect as noise dominates. These are unreplayed model results with assumed local rules, distinct from measured fish behavior.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-collective-choice-model",
+        "M-soc-couzin2011-spatial-model"
+      ]
+    },
+    {
+      "nodeId": "soc:animal-social-interpretation",
+      "role": "definition",
+      "denotes": "Association, aggression-defined rank, voluntarily conferred prestige, task specialization, recurring technique and explicit obligation denote different relations. Their shared placement in a social catalogue does not establish common mechanisms or a universal individual-to-collective ontological transition.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:animal-social-organization-scope",
+      "role": "definition",
+      "denotes": "Animal social organization is represented through finite, species-specific relational observations and interventions: cichlid aggression-defined hierarchy, vampire-bat sharing ties, bird foraging traditions, fish target choices and harvester-ant foraging regulation. These differ in membership, history, resources and observed times. Group structure and individual differences can both matter, while a common emergent substance, universal neural prerequisite, purely decentralized architecture and member-independent persistence are not established.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-animal-social-organization-scope-scope",
+        "C-soc-fish-rank-reassembly",
+        "C-soc-fish-hierarchy-context",
+        "C-soc-bat-sharing-persistence",
+        "C-soc-bird-tradition-retention",
+        "C-soc-ant-combined-cue-outflow",
+        "C-soc-fish-majority-switch",
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:social-roles-stratification-scope",
+      "role": "definition",
+      "denotes": "Aggression-defined dominance, influence, learned competence, worker task and voluntarily conferred human prestige are distinguished rather than treated as interchangeable rank. Cichlid experiments support context-sensitive hierarchy formation and changing individual positions. They do not establish human authority, obligation, responsibility, durable positions surviving complete occupant replacement or one hierarchy required by all social coordination.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-social-roles-stratification-scope-scope",
+        "C-soc-fish-rank-reassembly",
+        "C-soc-fish-social-protocol",
+        "C-soc-fish-hierarchy-context",
+        "C-soc-ant-combined-cue-outflow",
+        "C-soc-bat-partner-sharing",
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:recurrent-social-practices-scope",
+      "role": "definition",
+      "denotes": "Repeated social practice is a descriptive category for temporally recurring coordinated actions, with experimentally seeded bird foraging techniques and recurring bat-sharing ties as bounded animal examples. Technique transmission and nine-month retention do not establish every human practice, explicit expectations, automatic conflict reduction or universal dependence on hierarchy. Original practice-theory books remain attributed as unread conceptual sources.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-recurrent-social-practices-scope-scope",
+        "C-soc-bird-demonstrator-input",
+        "C-soc-bird-tradition-diffusion",
+        "C-soc-bird-conformity-inference",
+        "C-soc-bird-tradition-retention",
+        "C-soc-bat-sharing-persistence",
+        "C-soc-bat-generalized-sharing-null",
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:social-resource-exchange-scope",
+      "role": "definition",
+      "denotes": "Physical resource transfer, task-specific food acquisition and normative human exchange are represented separately. Captive bat studies provide observed food-sharing relationships and competing explanations; ant studies provide supplied-cue and return-flow interventions, not measurements of a complete social metabolism. Redistribution, obligations, institutions, queueing and scalability remain conceptual or unresolved unless their own source-bound observations support them.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-social-resource-exchange-scope-scope",
+        "C-soc-bat-partner-sharing",
+        "C-soc-bat-sharing-persistence",
+        "C-soc-bat-generalized-sharing-null",
+        "C-soc-bat-harassment-boundary",
+        "C-soc-ant-combined-cue-outflow",
+        "C-soc-ant-recovery-duration",
+        "C-soc-ant-availability-null",
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:collective-decision-scope",
+      "role": "definition",
+      "denotes": "Collective choice is operationalized by a declared group endpoint rather than a single universal aggregation rule. Golden-shiner experiments vary untrained membership against fixed, conflicting target-training groups and distinguish a preference-dependent effect from a reversed-target null. Published spatial/network models and social-choice concepts remain separate from fish observations. First arrival, majority alignment, consensus, truth, legitimacy and future group coordination are different quantities.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-collective-decision-scope-scope",
+        "C-soc-fish-untrained-input",
+        "C-soc-fish-majority-switch",
+        "C-soc-fish-majority-null",
+        "C-soc-collective-choice-model",
+        "C-soc-ant-departure-association",
+        "C-soc-ant-recovery-duration",
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:insect-colony-behavior-scope",
+      "role": "definition",
+      "denotes": "The colony category organizes experimentally perturbed harvester-ant foraging, local cue composition, observed departure timing and duration-dependent recovery. It does not combine all insect taxa, castes, task types and times into one measured colony organism. Foraging traffic, contacts and vestibule occupancy retain their own endpoints and nulls; chemical dose, necessary encounter threshold, complete feedback closure, construction, reproduction and colony-level irreducibility remain unestablished by these preparations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-insect-colony-behavior-scope-scope",
+        "C-soc-ant-combined-cue-input",
+        "C-soc-ant-combined-cue-outflow",
+        "C-soc-ant-single-cue-null",
+        "C-soc-ant-mimic-interaction",
+        "C-soc-ant-departure-association",
+        "C-soc-ant-timing-null",
+        "C-soc-ant-return-interruption",
+        "C-soc-ant-recovery-duration",
+        "C-soc-ant-availability-null",
+        "D-soc-animal-social-interpretation"
+      ]
+    },
+    {
+      "nodeId": "soc:woolley2010-three-person-context",
+      "role": "experimental-context",
+      "denotes": "Forty randomly assembled three-person teams complete sampled group tasks and a checkers criterion during sessions lasting up to five hours; individual reasoning is measured separately.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-woolley2010-three-person"
+      ]
+    },
+    {
+      "nodeId": "soc:woolley2010-three-person-factor",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports correlated task performance and a dominant extracted factor predicting a separate criterion; this is a fitted psychometric pattern, not proof of an irreducible group mind.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-woolley2010-three-person-factor",
+        "M-soc-woolley2010-three-person"
+      ]
+    },
+    {
+      "nodeId": "soc:woolley2010-variable-groups-context",
+      "role": "experimental-context",
+      "denotes": "The second study recruits 579 participants in 152 teams, with group sizes two to five, a broader task sample and an architectural-design criterion. Measures and site/task subsets remain distinct from the first study.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-woolley2010-variable-groups"
+      ]
+    },
+    {
+      "nodeId": "soc:woolley2010-variable-groups-factor",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports a dominant fitted factor and criterion prediction across these sampled teams; modest pooled individual-IQ associations and correlational social-sensitivity results prevent independence-from-individuals or causal sex-composition claims.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-woolley2010-variable-groups-factor",
+        "M-soc-woolley2010-variable-groups"
+      ]
+    },
+    {
+      "nodeId": "soc:lorenz2011-feedback-estimates-context",
+      "role": "experimental-context",
+      "denotes": "Twelve sessions of twelve participants answer six factual questions over five estimation rounds, comparing no-feedback, aggregate-feedback and full-estimate feedback conditions with accuracy incentives and no reward for agreement.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-lorenz2011-feedback-estimates"
+      ]
+    },
+    {
+      "nodeId": "soc:feedback-estimation-input",
+      "role": "scoped-phenomenon",
+      "denotes": "Participants revise factual estimates with aggregate feedback, full feedback or no feedback, while rewards favor accuracy rather than matching peers.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-feedback-estimation-input",
+        "M-soc-lorenz2011-feedback-estimates"
+      ]
+    },
+    {
+      "nodeId": "soc:feedback-diversity-confidence",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported feedback contrasts combine reduced diversity with no matching collective-error improvement and increased subjective confidence. A slight error decline, particularly with aggregate feedback, is also reported: this is not a zero-effect or universally harmful-influence result. These endpoints are not interchangeable.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-feedback-diversity-confidence",
+        "M-soc-lorenz2011-feedback-estimates"
+      ]
+    },
+    {
+      "nodeId": "soc:centola2018-naming-minority-context",
+      "role": "experimental-context",
+      "denotes": "Participants coordinate on a face name through repeated random pairings with financial matching incentives; after a convention forms, introduce a committed minority promoting an alternative and compare five pairs of groups with different minority fractions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-centola2018-naming-minority"
+      ]
+    },
+    {
+      "nodeId": "soc:naming-minority-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The source varies the fraction of committed confederates after an experimentally established naming convention, retaining a pairwise matching-payoff procedure.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-naming-minority-input",
+        "M-soc-centola2018-naming-minority"
+      ]
+    },
+    {
+      "nodeId": "soc:naming-convention-transition",
+      "role": "scoped-phenomenon",
+      "denotes": "Larger committed minorities overturn the established name in the tested matched trial pairs, while smaller ones fail within the observation window. The approximately 25% transition is not a universal social constant.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-naming-convention-transition",
+        "M-soc-centola2018-naming-minority"
+      ]
+    },
+    {
+      "nodeId": "soc:smith1962-classroom-auctions-context",
+      "role": "experimental-context",
+      "denotes": "Assign buyer and seller roles randomly, give private value/cost cards, permit public verbal bids/offers and acceptances during repeated short trading periods, and record executed contract prices and quantities under stated rule/schedule variants.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-smith1962-classroom-auctions"
+      ]
+    },
+    {
+      "nodeId": "soc:auction-rule-sensitive-coordination",
+      "role": "scoped-phenomenon",
+      "denotes": "The article reports conditional convergence and rule/schedule-sensitive prices in constructed classroom auctions. Decentralized bids operate inside researcher-defined institutions; they do not establish organization-free or universally stable markets.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-auction-rule-sensitive-coordination",
+        "M-soc-smith1962-classroom-auctions"
+      ]
+    },
+    {
+      "nodeId": "soc:ostrom1992-communication-designs-context",
+      "role": "experimental-context",
+      "denotes": "Subjects privately allocate integer tokens between a fixed-return market and a group-dependent CPR, receiving cash earnings. After an initial block without communication, the high-endowment one-shot design permits one ten-minute discussion; distinct repeated-communication designs permit discussion after subsequent rounds in low- and high-endowment environments. Individual investments remain anonymous and only aggregate investments reveal defections.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-ostrom1992-communication-designs"
+      ]
+    },
+    {
+      "nodeId": "soc:covenants-external-enforcer-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "The final article reports improved CPR yields and agreements during communication phases without an external participant-enforcement authority. One-shot gains decay; repeated-discussion results depend on endowment and retain verbal reproach. This establishes a bounded possibility, not guaranteed governance or absence of every enforcement mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-covenants-external-enforcer-boundary",
+        "M-soc-ostrom1992-communication-designs"
+      ]
+    },
+    {
+      "nodeId": "soc:ostrom1992-sanction-only-context",
+      "role": "experimental-context",
+      "denotes": "Unlike the anonymous-investment communication design, individual decisions are displayed under subject numbers throughout. After ten initial rounds introduce a costly option to fine another participant, varying fee/fine schedules across experiments; experimenters privately account for fees and fines.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-ostrom1992-sanction-only"
+      ]
+    },
+    {
+      "nodeId": "soc:sanction-cost-accounting",
+      "role": "scoped-phenomenon",
+      "denotes": "The final article's sanction-only designs distinguish higher CPR yield from earnings after fees and fines; costly and misdirected sanctions substantially reduce the apparent gain. Monitoring, sanction availability, sanction targeting and cost accounting are separate features, not a universally effective enforcement mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-sanction-cost-accounting",
+        "M-soc-ostrom1992-sanction-only"
+      ]
+    },
+    {
+      "nodeId": "soc:ostrom1992-imposed-combination-context",
+      "role": "experimental-context",
+      "denotes": "After ten initial rounds, impose one ten-minute discussion and the opportunity to fine peers. Retain each group's stated strategy, subsequent investments and sanction costs as distinct trajectories.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-ostrom1992-imposed-combination"
+      ]
+    },
+    {
+      "nodeId": "soc:combined-institution-trajectories",
+      "role": "scoped-phenomenon",
+      "denotes": "Three groups with discussion and fines show different strategy, compliance and cost outcomes. One maintains its agreement without exercising fines, while a group without a clear agreement spends heavily on them. Nominal availability of the same components does not guarantee equivalent whole-group performance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-combined-institution-trajectories",
+        "M-soc-ostrom1992-imposed-combination"
+      ]
+    },
+    {
+      "nodeId": "soc:ostrom1992-endogenous-selection-context",
+      "role": "experimental-context",
+      "denotes": "Recruit from the prior imposed-sanction pool. In four experiments permit discussion and majority choice of a sanction mechanism after an initial block; in two additional experiments provide that opportunity at the outset. Track choices, prior fee/fine experience and later yields separately.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-ostrom1992-endogenous-selection"
+      ]
+    },
+    {
+      "nodeId": "soc:institution-choice-history",
+      "role": "scoped-phenomenon",
+      "denotes": "The source's voluntarily chosen sanction institutions coexist with high reported yields in selected groups, but adoption correlates with prior institutional experience and differs by timing. This is evidence for historical and selection boundaries, not a randomized theorem that chosen sanctions cause cooperation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-institution-choice-history",
+        "M-soc-ostrom1992-endogenous-selection"
+      ]
+    },
+    {
+      "nodeId": "soc:bettencourt2007-aggregate-indicators-context",
+      "role": "experimental-context",
+      "denotes": "Compare reported city-level social, economic and infrastructure indicators with population under the source's urban delineations. The selected reading does not reconstruct sampling years, boundary harmonization or regression fitting.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-bettencourt2007-aggregate-indicators"
+      ]
+    },
+    {
+      "nodeId": "soc:urban-reported-scaling",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports different aggregate scaling patterns for urban socioeconomic and infrastructure measures. The selected passages support a source-specific statistical report, without universal exponent, causal necessity or autonomous-city claims.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-urban-reported-scaling",
+        "M-soc-bettencourt2007-aggregate-indicators"
+      ]
+    },
+    {
+      "nodeId": "soc:arcaute2015-boundary-sensitivity-context",
+      "role": "experimental-context",
+      "denotes": "Reaggregate small statistical units into settlements and functional areas using alternative density/commuting thresholds; compare fitted urban-indicator relationships and patent population-cutoff sensitivity.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-arcaute2015-boundary-sensitivity"
+      ]
+    },
+    {
+      "nodeId": "soc:urban-boundary-sensitive-exponents",
+      "role": "scoped-phenomenon",
+      "denotes": "The source finds that several urban scaling conclusions change with city demarcation and patent population cutoff; many indicators are near-linear. A single population count therefore does not identify a universal urban mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-urban-boundary-sensitive-exponents",
+        "M-soc-arcaute2015-boundary-sensitivity"
+      ]
+    },
+    {
+      "nodeId": "soc:herrmann2008-fixed-group-games-context",
+      "role": "experimental-context",
+      "denotes": "Use the same monetary public-goods rules across pools: twenty-token individual endowment and return of 0.4 tokens to each member per contributed token. Compare ten fixed-group rounds without punishment with ten rounds permitting simultaneous peer deduction points after contribution feedback; each point costs the punisher one token and reduces its target's earnings by three.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-herrmann2008-fixed-group-games"
+      ]
+    },
+    {
+      "nodeId": "soc:antisocial-punishment-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "The main article reports variable antisocial punishment, defined relative to the punisher's contribution, and variable contribution gains when punishment is available: eleven pools have at least weakly significant gains and five lack significant gains. Antisocial punishment is associated with weaker gains; nonsignificance does not establish a zero effect or a uniquely proven motive.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-antisocial-punishment-boundary",
+        "M-soc-herrmann2008-fixed-group-games"
+      ]
+    },
+    {
+      "nodeId": "soc:herrmann2008-country-associations-context",
+      "role": "experimental-context",
+      "denotes": "Relate laboratory punishment expenditures to externally compiled World Values Survey civic-cooperation measures and a rule-of-law indicator, adjusting for stated contributions, period and participant characteristics in source-reported regressions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-herrmann2008-country-associations"
+      ]
+    },
+    {
+      "nodeId": "soc:punishment-country-association",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports lower antisocial punishment in participant pools from countries with stronger measured civic-cooperation norms and rule of law. These contextual associations do not establish a randomized cultural cause or representative societal behavior.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-punishment-country-association",
+        "M-soc-herrmann2008-country-associations"
+      ]
+    },
+    {
+      "nodeId": "soc:dispersed-knowledge-argument",
+      "role": "definition",
+      "denotes": "Hayek's selected argument distinguishes dispersed local knowledge from a planner's fully given data. This is a conceptual account of the coordination problem, not experimental proof that every market is efficient or every centralized institution impossible.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-dispersed-knowledge-argument"
+      ]
+    },
+    {
+      "nodeId": "soc:un-charter-organs",
+      "role": "definition",
+      "denotes": "The 1945 Charter constitutes named organs and distinguishes the General Assembly's deliberative/recommendation functions and voting procedure. These are documentary rule definitions, not observed governance performance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-un-charter-organs"
+      ]
+    },
+    {
+      "nodeId": "soc:un-charter-authority-asymmetry",
+      "role": "definition",
+      "denotes": "The selected 1945 Charter articles distinguish Security Council responsibility, voting arrangements and contemplated measures. Transnational institutional design can contain asymmetric authority and enforcement powers; it is not simply decentralized voluntary consensus.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-un-charter-authority-asymmetry"
+      ]
+    },
+    {
+      "nodeId": "soc:human-societal-structures-scope",
+      "role": "definition",
+      "denotes": "Human societal structures are a representation of specified relations, institutions and spatial aggregations, not one experimentally isolated ordering substance. Historical constitutive rules and observational urban indicators offer different evidence. Persistence across office holders, generations, territories and social strata needs its own longitudinal sampling; none is proved merely by calling society a pattern.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-human-societal-structures-scope-scope",
+        "D-soc-un-charter-organs",
+        "D-soc-un-charter-authority-asymmetry",
+        "C-soc-urban-boundary-sensitive-exponents"
+      ]
+    },
+    {
+      "nodeId": "soc:collective-intelligence-scope",
+      "role": "definition",
+      "denotes": "Collective intelligence denotes task-bound group-performance structure or accuracy under specified aggregation, not a single group mind. The two Woolley laboratory cohorts supply fitted cross-task patterns; Lorenz's feedback experiment supplies a contrary case where convergence and confidence do not deliver matching collective improvement. Group composition, interaction, aggregation and inference metrics remain separate.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-collective-intelligence-scope-scope",
+        "C-soc-woolley2010-three-person-factor",
+        "C-soc-woolley2010-variable-groups-factor",
+        "C-soc-feedback-estimation-input",
+        "C-soc-feedback-diversity-confidence"
+      ]
+    },
+    {
+      "nodeId": "soc:social-norms-conventions-scope",
+      "role": "definition",
+      "denotes": "A convention is represented through the particular coordination and incentive setting in which it is observed; a moral or prescriptive norm is not identical to naming agreement. The naming experiment supplies finite adoption successes/failures after a committed minority is introduced, while punishment records show that sanctions need not improve cooperation. Shared expectations, reputation, exclusion and moral obligation need separate measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-social-norms-conventions-scope-scope",
+        "C-soc-naming-minority-input",
+        "C-soc-naming-convention-transition",
+        "C-soc-antisocial-punishment-boundary"
+      ]
+    },
+    {
+      "nodeId": "soc:economic-market-dynamics-scope",
+      "role": "definition",
+      "denotes": "Market dynamics are reconstructed as transactions under explicitly supplied trading rules, values and information. Smith's classroom auctions provide conditional price/volume behavior; Hayek supplies a separate conceptual dispersed-knowledge argument. Neither is a complete model of production, financial crisis, trust, macroeconomic stability or a universal decentralized social regime.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-economic-market-dynamics-scope-scope",
+        "C-soc-auction-rule-sensitive-coordination",
+        "D-soc-dispersed-knowledge-argument"
+      ]
+    },
+    {
+      "nodeId": "soc:political-governance-structures-scope",
+      "role": "definition",
+      "denotes": "Governance structures are represented as named constitutive offices, decision procedures and specified powers, separately from measured cooperation or realized authority. The original Charter supplies a documentary institutional example; common-pool experiments distinguish communication, monitoring, sanction costs, combined institutional trajectories and historically selected sanction choices. Definitions of jurisdiction or legitimacy do not themselves establish effective compliance or a universal route from informal norms to states.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-political-governance-structures-scope-scope",
+        "D-soc-un-charter-organs",
+        "D-soc-un-charter-authority-asymmetry",
+        "C-soc-covenants-external-enforcer-boundary",
+        "C-soc-sanction-cost-accounting",
+        "C-soc-combined-institution-trajectories",
+        "C-soc-institution-choice-history"
+      ]
+    },
+    {
+      "nodeId": "soc:institutional-change-scope",
+      "role": "definition",
+      "denotes": "Institutional change is a source-bounded historical question about specified rules, offices, practices and their alteration. A constitutive document defines continuity and powers; short laboratory treatments reveal different outcomes under nominally similar institutions, sanction costs and prior-experience-dependent selection. These supply neither intergenerational reproduction, universal path dependence, an autonomous institutional force nor one constructor for law, religion, education, science and finance.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-institutional-change-scope-scope",
+        "D-soc-un-charter-organs",
+        "C-soc-covenants-external-enforcer-boundary",
+        "C-soc-combined-institution-trajectories",
+        "C-soc-institution-choice-history",
+        "C-soc-sanction-cost-accounting",
+        "C-soc-antisocial-punishment-boundary"
+      ]
+    },
+    {
+      "nodeId": "soc:urban-morphogenesis-scope",
+      "role": "definition",
+      "denotes": "Cities are operational spatial/population aggregations whose observed indicators and scaling depend on the national system, boundary, cutoff and proxy. Source-reported urban regularities are retained together with boundary-sensitive contrary evidence. Morphological formation, transport, segregation, infrastructure inertia and causal urban feedback need distinct data; no autonomous urban attractor, biological identity or universal growth law is inferred from aggregate correlations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-urban-morphogenesis-scope-scope",
+        "C-soc-urban-reported-scaling",
+        "C-soc-urban-boundary-sensitive-exponents"
+      ]
+    },
+    {
+      "nodeId": "soc:cooperation-conflict-scope",
+      "role": "definition",
+      "denotes": "Cooperation, sanctions, organized conflict and violence are distinct observables. Selected published public-goods/common-pool results constrain universal enforcement stories: communication can support bounded agreements, fines have costs and variable outcomes, institutional choices retain prior experience and antisocial punishment accompanies weaker contribution gains. Country background is observational. These games do not reconstruct wars, large alliances, political mobilization, intergenerational rivalry or a common society-wide regulatory dynamic.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-cooperation-conflict-scope-scope",
+        "C-soc-covenants-external-enforcer-boundary",
+        "C-soc-sanction-cost-accounting",
+        "C-soc-combined-institution-trajectories",
+        "C-soc-institution-choice-history",
+        "C-soc-antisocial-punishment-boundary",
+        "C-soc-punishment-country-association",
+        "D-soc-un-charter-authority-asymmetry"
+      ]
+    },
+    {
+      "nodeId": "soc:transnational-governance-scope",
+      "role": "definition",
+      "denotes": "Transnational governance is reconstructed through specific historical constitutive organs, procedures and powers, rather than an undifferentiated global object. The 1945 Charter distinguishes organizational design, sovereign-member principles and asymmetric decision/enforcement provisions. These definitions differ from current amended rules, observed compliance, legitimacy, democratic authority and causal effectiveness; the original interdependence/regime works retain their actual reading boundaries.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-transnational-governance-scope-scope",
+        "D-soc-un-charter-organs",
+        "D-soc-un-charter-authority-asymmetry"
+      ]
+    },
+    {
+      "nodeId": "soc:watts2007-diffusion-model-scope-context",
+      "role": "model-context",
+      "denotes": "Compare the authors' stated rationale and summary for diffusion models with heterogeneous influence and susceptibility. Complete network generation, parameter sweeps and numerical results remain outside this selected reading.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-watts2007-diffusion-model-scope"
+      ]
+    },
+    {
+      "nodeId": "soc:influentials-model-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "The authors report that highly influential individuals dominate only under selected model conditions; other modeled cascades depend mainly on the availability of susceptible ordinary individuals. This is conditional computational evidence, not a measured universal elite or an identified human transmission mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-influentials-model-boundary",
+        "M-soc-watts2007-diffusion-model-scope"
+      ]
+    },
+    {
+      "nodeId": "soc:kirby2008-unfiltered-chain-context",
+      "role": "experimental-context",
+      "denotes": "Participants learn written labels for 27 color/shape/motion pictures and produce labels for seen and unseen items. A learner's final output supplies the next learner's language. The seen set is sampled without the later ambiguity-removal filter.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-kirby2008-unfiltered-chain"
+      ]
+    },
+    {
+      "nodeId": "soc:language-unfiltered-compression",
+      "role": "scoped-phenomenon",
+      "denotes": "Repeated transmission becomes more learnable while labels collapse onto multiple meanings.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-language-unfiltered-compression",
+        "M-soc-kirby2008-unfiltered-chain"
+      ]
+    },
+    {
+      "nodeId": "soc:kirby2008-filtered-chain-context",
+      "role": "experimental-context",
+      "denotes": "Participants learn written labels for 27 color/shape/motion pictures and produce labels for seen and unseen items. A learner's final output supplies the next learner's language. Before each learner is trained, duplicate labels are restricted to one pictured meaning in the seen set.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-kirby2008-filtered-chain"
+      ]
+    },
+    {
+      "nodeId": "soc:language-filtered-structure",
+      "role": "scoped-phenomenon",
+      "denotes": "Removing ambiguous training pairs changes the emerging structure: improved transmission coexists with more systematic signal-meaning correspondences.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-language-filtered-structure",
+        "M-soc-kirby2008-filtered-chain"
+      ]
+    },
+    {
+      "nodeId": "soc:bond2012-direct-message-contrast-context",
+      "role": "experimental-context",
+      "denotes": "Randomly assign a message displaying friends' voting faces, an informational message without those faces, or no message. Compare clicks between the two message arms; compare validated turnout in the voter-record-matched subset. The no-message group lacks both clickable response options.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-bond2012-direct-message-contrast"
+      ]
+    },
+    {
+      "nodeId": "soc:voting-social-cue-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The two message arms share the voting invitation, polling link and voting button; one additionally displays sampled profile pictures of friends who clicked the button.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-voting-social-cue-input",
+        "M-soc-bond2012-direct-message-contrast"
+      ]
+    },
+    {
+      "nodeId": "soc:voting-direct-response",
+      "role": "scoped-phenomenon",
+      "denotes": "The social message produces larger button/link responses and greater validated turnout than the informational-only arm in the source comparisons. Platform expression, information seeking and matched-record turnout remain separate measurements.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-voting-direct-response",
+        "M-soc-bond2012-direct-message-contrast"
+      ]
+    },
+    {
+      "nodeId": "soc:voting-information-turnout-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Informational-only versus no-message turnout is not significantly different in the reported matched-record comparison; this finite null is not equivalence or proof that every information campaign is ineffective.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-voting-information-turnout-null",
+        "M-soc-bond2012-direct-message-contrast"
+      ]
+    },
+    {
+      "nodeId": "soc:muchnik2013-randomized-comment-score-context",
+      "role": "experimental-context",
+      "denotes": "At comment creation, randomly add one up-vote, one down-vote or no vote. Track first-viewer voting and accumulated scores; user impressions include the current score and comments are not sorted by popularity. The same users can contribute multiple outcomes.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-muchnik2013-randomized-comment-score"
+      ]
+    },
+    {
+      "nodeId": "soc:rating-initial-vote-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The website randomly changes a comment's initial visible rating by plus one, minus one or zero while content quality is balanced in expectation.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-rating-initial-vote-input",
+        "M-soc-muchnik2013-randomized-comment-score"
+      ]
+    },
+    {
+      "nodeId": "soc:rating-positive-herding",
+      "role": "scoped-phenomenon",
+      "denotes": "Positive score seeding increases first-viewer approval and later mean ratings in the reported contrasts; effects differ by content topic.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-rating-positive-herding",
+        "M-soc-muchnik2013-randomized-comment-score"
+      ]
+    },
+    {
+      "nodeId": "soc:rating-negative-final-null",
+      "role": "scoped-phenomenon",
+      "denotes": "Downward seeding elicits both negative responses and offsetting positive votes; the source reports no significant final-mean score difference from control. Some topic-specific positive-treatment contrasts also show no detected herding.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-rating-negative-final-null",
+        "M-soc-muchnik2013-randomized-comment-score"
+      ]
+    },
+    {
+      "nodeId": "soc:tajfel1971-abstract-allocation-context",
+      "role": "experimental-context",
+      "denotes": "Use comparatively irrelevant classifications to distinguish in-group and out-group in allocations of rewards/penalties. Only the abstract's experimental description is available here; exact cohorts, schedules and allocation rules are unknown within this reading.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-tajfel1971-abstract-allocation"
+      ]
+    },
+    {
+      "nodeId": "soc:minimal-group-allocation",
+      "role": "scoped-phenomenon",
+      "denotes": "The abstract reports in-group favoritism under minimal categorization. This supplies a bounded behavioral contrast with explicit access limits, not evidence that all affiliation produces conflict or persists across generations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-minimal-group-allocation",
+        "M-soc-tajfel1971-abstract-allocation"
+      ]
+    },
+    {
+      "nodeId": "soc:eisenberger2003-cyberball-sequence-context",
+      "role": "experimental-context",
+      "denotes": "Participants believe two computer-controlled players are real. Scans always proceed from watching because of a stated technical problem, to inclusion, to explicit exclusion after seven throws; explicit exclusion occurs only once. Measure BOLD and post-exclusion distress, with no distress report after the first scan.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-eisenberger2003-cyberball-sequence"
+      ]
+    },
+    {
+      "nodeId": "soc:social-exclusion-bold-association",
+      "role": "scoped-phenomenon",
+      "denotes": "The paper reports larger ACC response during explicit exclusion than inclusion and a positive distress association; RVPFC response is negatively associated with distress. These are ordered-task imaging contrasts and correlations, with the source's stated control limitations.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-social-exclusion-bold-association",
+        "M-soc-eisenberger2003-cyberball-sequence"
+      ]
+    },
+    {
+      "nodeId": "soc:social-exclusion-mechanism-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "The reported ACC mediation concerns statistical relations among imaging and distress measures. No selective ACC/RVPFC intervention, matched physical-pain task or chronic institutional manipulation identifies a unique social-to-neural causal mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-social-exclusion-mechanism-boundary",
+        "M-soc-eisenberger2003-cyberball-sequence"
+      ]
+    },
+    {
+      "nodeId": "soc:mccombs1972-chapel-hill-agenda-context",
+      "role": "experimental-context",
+      "denotes": "Interview 100 not-yet-committed registered voters in five precincts during September-October 1968; compare stated important issues with categorized contemporaneous local/national news emphasis. Exposure and issue salience are observed rather than randomly assigned.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-mccombs1972-chapel-hill-agenda"
+      ]
+    },
+    {
+      "nodeId": "soc:agenda-salience-association",
+      "role": "scoped-phenomenon",
+      "denotes": "Aggregate issue priorities in selected media and the restricted voter sample correspond strongly in the source analysis. This observational association does not alone identify media-to-public causation, a universal information environment or an opinion/accuracy effect.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-agenda-salience-association",
+        "M-soc-mccombs1972-chapel-hill-agenda"
+      ]
+    },
+    {
+      "nodeId": "soc:mesoudi2016-east-london-profiles-context",
+      "role": "experimental-context",
+      "denotes": "Compare task/questionnaire measures of social orientation and cognitive style among three sampled groups; fit separate cultural/demographic and proposed transmission models, retaining cross-sectional sampling and exploratory analyses.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-mesoudi2016-east-london-profiles"
+      ]
+    },
+    {
+      "nodeId": "soc:migrant-measure-specific-profile",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports distinct group patterns across collectivism, closeness and attribution measures rather than one uniform shift; some second-generation measures are intermediate, others align with one comparator. The corrected closeness-table identity is retained.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-migrant-measure-specific-profile",
+        "M-soc-mesoudi2016-east-london-profiles"
+      ]
+    },
+    {
+      "nodeId": "soc:migrant-cognitive-group-nulls",
+      "role": "scoped-phenomenon",
+      "denotes": "Self-enhancement, categorization and the drawing task show no detected cultural-group difference in the source analysis. These finite nulls oppose a blanket all-trait shift, without establishing equivalence or cultural immutability.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-migrant-cognitive-group-nulls",
+        "M-soc-mesoudi2016-east-london-profiles"
+      ]
+    },
+    {
+      "nodeId": "soc:vosoughi2018-factchecked-cascades-context",
+      "role": "experimental-context",
+      "denotes": "Link fact-checker-veracity labels to reconstructed retweet cascades and compare depth, breadth, size and spread times, with reported covariate/bot sensitivity analyses. Truth labels and content are not randomly assigned.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-vosoughi2018-factchecked-cascades"
+      ]
+    },
+    {
+      "nodeId": "soc:veracity-diffusion-association",
+      "role": "scoped-phenomenon",
+      "denotes": "False-classified rumors have faster and broader sampled diffusion than true-classified rumors in the source's reported comparisons. This is an observational difference with an explicit external veracity criterion, not a law that falsehood always wins.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-veracity-diffusion-association",
+        "M-soc-vosoughi2018-factchecked-cascades"
+      ]
+    },
+    {
+      "nodeId": "soc:diffusion-belief-mechanism-boundary",
+      "role": "scoped-phenomenon",
+      "denotes": "Novelty/topic-distance and reply-word emotion measures accompany the cascade differences. They do not directly measure each sharer's belief, conscious motive or an isolated novelty-mediated causal pathway; removing classified bots is a sensitivity analysis, not randomized bot exposure.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-diffusion-belief-mechanism-boundary",
+        "M-soc-vosoughi2018-factchecked-cascades"
+      ]
+    },
+    {
+      "nodeId": "soc:bail2018-republican-exposure-context",
+      "role": "experimental-context",
+      "denotes": "Within the Republican experiment, use blocked random assignment to an offer of financial incentives to follow a bot carrying opposing-party messages for one month, versus control. Re-survey policy attitudes and monitor imperfect compliance; intent-to-treat and model-based complier estimates differ.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-bail2018-republican-exposure"
+      ]
+    },
+    {
+      "nodeId": "soc:bail2018-democratic-exposure-context",
+      "role": "experimental-context",
+      "denotes": "Within the Democratic experiment, use blocked random assignment to an offer of financial incentives to follow a bot carrying opposing-party messages for one month, versus control. Re-survey policy attitudes and monitor imperfect compliance; intent-to-treat and model-based complier estimates differ.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "M-soc-bail2018-democratic-exposure"
+      ]
+    },
+    {
+      "nodeId": "soc:opposing-view-exposure-input",
+      "role": "scoped-phenomenon",
+      "denotes": "The Republican cohort is randomly offered incentives to follow a bot distributing liberal opinion-leader content; the actual exposure/compliance is imperfect and postassignment.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-opposing-view-exposure-input",
+        "M-soc-bail2018-republican-exposure"
+      ]
+    },
+    {
+      "nodeId": "soc:opposing-view-republican-shift",
+      "role": "scoped-phenomenon",
+      "denotes": "The source reports a conservative-direction intent-to-treat effect on the policy scale for the Republican cohort after the month; causal interpretation concerns the randomized incentivized offer, with stronger complier estimates requiring additional assumptions.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-opposing-view-republican-shift",
+        "M-soc-bail2018-republican-exposure"
+      ]
+    },
+    {
+      "nodeId": "soc:opposing-view-democratic-null",
+      "role": "scoped-phenomenon",
+      "denotes": "The Democratic cohort has a nonsignificant liberal-direction estimate in the source's reported exposure comparison. This is a finite null, not equality or a universal partisan asymmetry.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "C-soc-opposing-view-democratic-null",
+        "M-soc-bail2018-democratic-exposure"
+      ]
+    },
+    {
+      "nodeId": "soc:cultural-linguistic-change-scope",
+      "role": "definition",
+      "denotes": "Cultural change is represented through finite learner-to-learner language experiments and measure-specific migrant profiles, with historical cultural theory retained as bibliographic context. Transmission fidelity, structural alignment, task expressivity, cohort association and conditional transmission-model fit are different observables. These cases do not establish one historical evolutionary regime, a universal cultural replicator or an inevitable progression from institutions to language.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-cultural-linguistic-change-scope-scope",
+        "C-soc-language-unfiltered-compression",
+        "C-soc-language-filtered-structure",
+        "C-soc-migrant-measure-specific-profile",
+        "C-soc-migrant-cognitive-group-nulls"
+      ]
+    },
+    {
+      "nodeId": "soc:digital-social-networks-scope",
+      "role": "definition",
+      "denotes": "Digital-network evidence separates randomized platform messages and score displays from observational rumor diffusion and conditional diffusion models. A site definition, one platform's experimental effect, a reconstructed retweet cascade and an inferred influence mechanism remain distinct. No universal recommendation algorithm, self-stabilizing digital regime or necessary cognitive hierarchy is established.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-digital-social-networks-scope-scope",
+        "C-soc-voting-direct-response",
+        "C-soc-voting-information-turnout-null",
+        "C-soc-rating-positive-herding",
+        "C-soc-rating-negative-final-null",
+        "C-soc-veracity-diffusion-association"
+      ]
+    },
+    {
+      "nodeId": "soc:influence-network-scope",
+      "role": "definition",
+      "denotes": "Influence is represented through specific randomized exposure effects and a separately declared diffusion-model report. A following/friendship link, visible popularity, an estimated treatment effect and a persistent directed influence coefficient are not interchangeable. Network stabilization, generalized brokerage advantage and a universal influential elite remain unestablished.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-influence-network-scope-scope",
+        "C-soc-influentials-model-boundary",
+        "C-soc-voting-direct-response",
+        "C-soc-rating-positive-herding",
+        "C-soc-rating-negative-final-null"
+      ]
+    },
+    {
+      "nodeId": "soc:knowledge-valuation-scope",
+      "role": "definition",
+      "denotes": "Knowledge valuation is a declared scope for attention, assessment and credibility processes, illustrated here by randomized public-rating effects and externally fact-checked diffusion. Approval, visibility, reputation, truth and evidential warrant remain distinct. Historical sociology/philosophy is bibliographic context; a common decentralized market mechanism across science, media, education and policy is not measured.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-knowledge-valuation-scope-scope",
+        "C-soc-rating-positive-herding",
+        "C-soc-rating-negative-final-null",
+        "C-soc-veracity-diffusion-association",
+        "C-soc-diffusion-belief-mechanism-boundary"
+      ]
+    },
+    {
+      "nodeId": "soc:cultural-variant-propagation-scope",
+      "role": "definition",
+      "denotes": "Cultural propagation is represented through changing laboratory language outputs and fact-checked platform cascades. A chosen content variant, its observable transmission, a reconstructed cascade and the hypothesis of a self-replicating meme retain separate roles. Variation and retention can be studied without admitting a universal memetic unit, fixed cultural fitness or source-independent replication mechanism.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-cultural-variant-propagation-scope-scope",
+        "C-soc-language-unfiltered-compression",
+        "C-soc-language-filtered-structure",
+        "C-soc-veracity-diffusion-association",
+        "C-soc-diffusion-belief-mechanism-boundary"
+      ]
+    },
+    {
+      "nodeId": "soc:social-identity-scope",
+      "role": "definition",
+      "denotes": "Social identity is represented through a bounded minimal-categorization allocation report, differentiated migrant affiliation/orientation profiles and an acute exclusion imaging task. Behavioral allocation, questionnaire affiliation, cultural-group classification and distress/BOLD are different measurements. These sources do not establish one persistent social-system identity property, necessary national symbolism or unavoidable out-group conflict.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-social-identity-scope-scope",
+        "C-soc-minimal-group-allocation",
+        "C-soc-migrant-measure-specific-profile",
+        "C-soc-migrant-cognitive-group-nulls",
+        "C-soc-social-exclusion-bold-association"
+      ]
+    },
+    {
+      "nodeId": "soc:social-neural-feedback-scope",
+      "role": "definition",
+      "denotes": "The proposed societal-to-neural link is bounded here by acute ordered social-exclusion imaging and already admitted rat maternal-environment observations. Social context, reported distress, BOLD, chromatin profiles and long-term neural plasticity retain different populations, times and evidence types. No direct universal downward/diagonal causal law, chronic institutional control variable or minimum neural carrier is established.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-social-neural-feedback-scope-scope",
+        "C-soc-social-exclusion-bold-association",
+        "C-soc-social-exclusion-mechanism-boundary",
+        "C-maternal-gr-developmental-association",
+        "C-maternal-chromatin-mediation"
+      ]
+    },
+    {
+      "nodeId": "soc:shared-information-environments-scope",
+      "role": "definition",
+      "denotes": "Shared information environments are represented as source-specific distributions of media salience, visible platform cues and fact-checked rumor exposure. The Chapel Hill media/public correlation, randomized platform response and observational diffusion are different preparations. A societal attractor, common credibility field, centralized-control independence or fixed sociogenetic construction order remains a hypothesis rather than a measured system state.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-shared-information-environments-scope-scope",
+        "C-soc-agenda-salience-association",
+        "C-soc-voting-direct-response",
+        "C-soc-rating-positive-herding",
+        "C-soc-veracity-diffusion-association"
+      ]
+    },
+    {
+      "nodeId": "soc:transculturation-scope",
+      "role": "definition",
+      "denotes": "Transculturation is a declared historical-cultural research scope, illustrated by heterogeneous migrant-group profiles and bounded laboratory reorganization of transmitted labels. A mixed or intermediate measurement does not alone prove reciprocal historical transformation, creation of a novel tradition or irreducibility to cultural sources. Colonial power, unequal contact and adaptation claims require separately identified historical evidence.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-transculturation-scope-scope",
+        "C-soc-migrant-measure-specific-profile",
+        "C-soc-migrant-cognitive-group-nulls",
+        "C-soc-language-filtered-structure"
+      ]
+    },
+    {
+      "nodeId": "soc:collective-distortion-scope",
+      "role": "definition",
+      "denotes": "The proposed mass-distortion regime remains a hypothesis bounded by fact-check-defined diffusion, randomized rating bias, a numerical-estimation feedback experiment and partisan attitude responses. A factual error, preference, ideological extremity, approval score, retweet and confidence judgment are distinct. No persistent societal attractor, common cognitive pathology or universal network-amplification mechanism is established.",
+      "instanceAdmission": "none",
+      "claimIds": [
+        "D-soc-collective-distortion-scope-scope",
+        "C-soc-veracity-diffusion-association",
+        "C-soc-diffusion-belief-mechanism-boundary",
+        "C-soc-rating-positive-herding",
+        "C-soc-rating-negative-final-null",
+        "C-soc-opposing-view-republican-shift",
+        "C-soc-opposing-view-democratic-null",
+        "C-soc-feedback-diversity-confidence"
+      ]
+    },
+    {
       "nodeId": "R-mode",
       "role": "rule-specification",
       "denotes": "A specification with jointly required premises and gates; no executed transition or output instance.",

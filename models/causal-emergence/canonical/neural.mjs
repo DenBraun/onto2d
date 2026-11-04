@@ -1,4 +1,5 @@
 import { isReviewedNeuralSystemsDescription, isReviewedNeuralSystemsRecord } from "./level-six.mjs";
+import { isReviewedSocialSystemsDescription } from "./level-seven.mjs";
 import assert from "node:assert/strict";
 import { BIOCHEMISTRY_CLAIM_IDS } from "./level-three.mjs";
 
@@ -174,7 +175,7 @@ const effects = [
 
 /** Enforce current evidence roles, preparation and interpretation boundaries. */
 export function validateNeuralReview({ graph, neural }, { sources, claims, entities, relations }) {
-  const otherRelations = graph.relations.filter((relation) => !isReviewedNeuralSystemsDescription(relation));
+  const otherRelations = graph.relations.filter((relation) => !isReviewedNeuralSystemsDescription(relation) && !isReviewedSocialSystemsDescription(relation));
   const studies = new Map(neural.studies.map((s) => [s.id, s]));
   assert.deepEqual([...studies.keys()], ["witvliet2021", "scheiffele2000", "bliss1973", "collingridge1983", "cardin2009", "hanks2006", "katz2016", "jeurissen2022", "ernst2002", "wolpert1995", "shadmehr1994", "tye2011", "carter2010", "beggs2003", "cogitate2025", "adamantidis2007", "carrilloreid2019", "randi2023", "mu2019", "agulhon2010", "deceglia2023", "djukic2007", "suzuki2011", "etxeberria2016", "schafer2012", "nimmerjahn2005", "badimon2020", "su2017", "weaver2004", "marco2020", "jin2024", "longden2017", "noterman2026", "krolak2025", "vanpraag2002", "disouky2026", "toni2008", "sahay2011", "xu2009", "brown2007", "eriksson1998", "spalding2013", "kornack1999", "gould1999-primate", "gould1999-learning", "rakic1985", "eckenhoff1988", "song2012", "suh2007", "miller1996", "rose2016-fmri", "rose2016-eeg-targets", "rose2016-eeg-priority", "rose2016-behavior", "rose2016-pooled-behavior", "amalric2017-adults", "amalric2017-children", "amalric2017-preview", "amalric2017-munduruku", "alroumi2021-sequences", "alroumi2021-primitives", "wang2019-behavior", "wang2019-scanner", "alroumi2023-behavior", "alroumi2023-fmri", "alroumi2023-meg", "pajot2026-quadrilaterals", "pajot2026-memory", "pajot2026-cross-format", "gallese1996-f5", "gallese1996-emg", "gallese1996-f1", "singer2004-partner-pain", "mukamel2010-action-units", "tan2024-ieeg", "tan2024-ratings", "tan2024-decoder"]);
   for (const s of studies.values()) assert.equal(s.studyType, ["pajot2026-quadrilaterals", "pajot2026-memory", "pajot2026-cross-format", "tan2024-decoder"].includes(s.id) ? "computational-analysis" : ["witvliet2021", "disouky2026", "eriksson1998", "spalding2013", "kornack1999", "gould1999-primate", "rakic1985", "eckenhoff1988", "miller1996", "rose2016-pooled-behavior", "gallese1996-f5", "gallese1996-emg", "gallese1996-f1", "singer2004-partner-pain", "mukamel2010-action-units", "tan2024-ieeg", "tan2024-ratings"].includes(s.id) ? "primary-observation" : "primary-experiment", "Observation promoted to intervention");

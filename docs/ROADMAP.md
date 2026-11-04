@@ -23,11 +23,11 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. Of the 249 original source cards, 25 remain on the
-[pending list](../references/canonical/pending-review.json). Its complement of
-224 cards is a source-review census, not a percentage of scientifically supported
-claims or independently reproduced experiments. Partially reviewed cards remain
-open until their substantive claims are supported, qualified or rejected.
+graph. All 249 original source cards now have scoped decisions; the
+[pending list](../references/canonical/pending-review.json) is empty. This is a
+source-review census, not a percentage of scientifically supported claims or
+independently reproduced experiments. Supported, qualified, excluded and explicitly
+unresolved assertions retain their evidence and open obligations.
 All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
 assertions remain excluded or explicitly limited; this is not independent
 validation of the physical branch.
@@ -69,7 +69,7 @@ prediction and failure criterion before reading new source outcomes.
 [CETCH issue #32](https://github.com/DenBraun/onto2d/issues/32) covers deeper main/supplement
 failure analysis and a later evidence-backed case page.
 
-The current graph contains 2413 records, 3296 connections, 2596 claims and 612 sources.
+The current graph contains 2537 records, 3488 connections, 2720 claims and 707 sources.
 All 33 [Level-4 cellular cards](../references/canonical/LEVEL_4_REVIEW.md) have
 scoped source dispositions, with 70 study contexts from 44 publications.
 Model-inferred flux, measured response,
@@ -92,6 +92,12 @@ hypotheses without admitting universal neural dependencies. Twelve additional
 preparation/readout contexts and five comparisons distinguish pain, motor, hormone,
 immune, subjective and airway responses. The source-specific neural obligations
 remain scientific questions, rather than undisposed catalogue cards.
+All 25 [Level-7 social-system cards](../references/canonical/LEVEL_7_REVIEW.md)
+have 244 assertion decisions, 131 ordered parent decisions and 75 original
+bibliography dispositions. Thirty-six study/model contexts and seventeen comparisons
+separate animal interactions, human tasks, population associations, cultural models
+and constitutive documents. No universal social threshold, necessary weighted chain
+or society-wide neural mechanism is admitted.
 Physical records distinguish quantum definitions, detector measurements,
 computational ensembles and conditional inferences. Lattice calculations cover
 pure-gauge area fits, static-source screening and a calibrated light-hadron
@@ -386,11 +392,12 @@ belong to the current claims.
    indefinitely to reconstruct every upstream instrument. A new claim about
    formation dynamics, physical stability or a general constituent minimum
    needs separate support.
-2. Work through the 25 pending Level-7 cards and their source-specific
-   dependencies. Continue the separately identified mechanisms, unread controls
-   and raw-data checks in the [neural scientific obligations](../references/canonical/NEURAL_NEXT_REVIEW.md).
-   Complete Level-6 disposition does not establish a unique mechanism or close
-   those empirical questions.
+2. Select bounded follow-up questions from the completed
+   [Level-7 review](../references/canonical/LEVEL_7_REVIEW.md) and the
+   [neural scientific obligations](../references/canonical/NEURAL_NEXT_REVIEW.md).
+   Prioritize independent source readings, unread controls and eligible raw-data
+   checks. Complete catalogue disposition does not establish unique mechanisms
+   or close those empirical questions.
 3. Check cross-domain links with matched evidence. Proposed levels, minimum
    carrier counts and generative rules require their own tests.
 4. Keep the current graph, its derivatives and interface consistent. Maintain

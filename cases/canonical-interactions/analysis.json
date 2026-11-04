@@ -13,7 +13,7 @@
     },
     {
       "path": "references/canonical/graph.json",
-      "sha256": "2206000a4a34efacd2a5a7f69ea8994048b89886197732e644655b1453d8b7b3"
+      "sha256": "f611c663b7d4474a6e8245317b10c7a175833ca4ea38d9b02fef0a3a21950734"
     },
     {
       "path": "references/canonical/retinal-review.json",
@@ -56,8 +56,12 @@
       "sha256": "db94a726d933709d63f855adc1c554e48a72f96cf6615e04ca2bae8c2967df02"
     },
     {
+      "path": "references/canonical/social-systems-review.json",
+      "sha256": "5e32271fc4768b0ecdfbe4e579cab91e7ddd5211cb243289e9d36a679c95e4cc"
+    },
+    {
       "path": "references/canonical/schema.json",
-      "sha256": "b42b86a9907e4c961e5cb5ed32d774f9e4b3964ffd6a4cd422162c9f406b5aed"
+      "sha256": "3bcabefaa328097cab82f30c724a3056cb396f240ae2a436972ea10c2c128687"
     },
     {
       "path": "models/causal-emergence/canonical/interactions.mjs",
@@ -69,7 +73,7 @@
     },
     {
       "path": "scripts/check-interaction-pilot.mjs",
-      "sha256": "45c5f66b8e6c62639417a68e69d83f0d420f4d05f19b649a3baa96a924608111"
+      "sha256": "ef48dfbb4ea8d41ab9c85c467608e1d0b2974ab09505c1ade98efb6cafae8b6c"
     }
   ],
   "system": {

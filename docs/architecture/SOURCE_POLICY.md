@@ -58,11 +58,30 @@ are stored with the canonical review and remain available in the selected
 release's on-demand evidence panel.
 
 Source admission preserves query fields that identify distinct catalogue entries;
-tracking parameters alone do not create a new publication. Comparison admission
+tracking parameters alone do not create a new publication. Declared DOI fields
+and DOI-based source URLs share one publication identity, including when another
+record points to a mirror URL. Comparison admission
 checks both publication and acquisition identifiers according to the ledger's
 contract. Reusing reviewed evidence does not authorize a new interpretation in
 another ledger; existing reused comparisons retain their reviewed content and
 owning ledger.
+
+Level-7 catalogue provenance belongs to the reviewed social domain even when a record
+uses another domain's identifier or mixes catalogue assertions with an unrelated
+experiment. Renaming a node or borrowing a preparation cannot admit an additional
+unreviewed social claim or physical dependency.
+
+Social-source reviews distinguish sampled interactions, randomized interventions,
+observational associations, specified simulations and constitutive documents.
+A primary document can support a definition of its stated rules, not an
+experimental claim about implementation, compliance or effectiveness. Verified
+historical publication years are permitted; original editions, translations and
+later reprints remain distinct. Each original bibliographic entry has an explicit
+reading disposition. Metadata for an unread book supplies attribution, not a
+mechanism. Laboratory group size, sample size and model parameters are not
+universal social carrier minima or weights. Completing scope decisions for all
+catalogue cards does not close unresolved empirical questions or validate a
+universal sequence of organizational levels.
 
 For decay measurements, distinguish a total lifetime, a partial-rate limit
 and a ratio of specified channels. Detector spectra, fitted intermediate

@@ -9,7 +9,7 @@ its limitations. Experimental claims also identify a preparation and observable.
 A mathematical definition, an observation, an intervention and a hypothesis
 have separate roles. Published results are not independent reproductions.
 
-The current graph contains 2413 records, 3296 connections, 2596 claims and 612 sources.
+The current graph contains 2537 records, 3488 connections, 2720 claims and 707 sources.
 The physics review contains 219 study contexts and 143 comparisons.
 The biochemistry review contains 61 preparation contexts from 31 publications.
 The [Level-4 source review](LEVEL_4_REVIEW.md) covers all 33 cellular cards, with
@@ -25,7 +25,12 @@ The [Level-6 source review](LEVEL_6_REVIEW.md) covers all 25 neural-system cards
 237 substantive assertion decisions and 99 ordered parent occurrences. Existing
 experiments retain their identities; twelve additional placebo preparation/readout
 contexts distinguish pain, motor, hormonal, immune, airway and subjective outcomes.
-The [pending source list](pending-review.json) contains only the 25 Level-7 cards.
+The [Level-7 source review](LEVEL_7_REVIEW.md) covers all 25 social-system cards,
+244 assertion decisions, 131 ordered proposed parents and 75 original bibliographic
+positions. Experiments, observations, simulations and constitutive documents retain
+separate roles. All 249 source cards now have scoped decisions; the
+[pending source list](pending-review.json) is empty. Open empirical questions and
+unread materials remain attached to their sources.
 The [Level-2 work queue](LEVEL_2_REVIEW.md) covers all 23 physical, chemical and
 material source cards. All have scoped dispositions; surface radiometry and
 propagation retain their finite model and measurement boundaries.
@@ -46,6 +51,7 @@ They remain open scientific questions after complete source-card disposition.
 | [visual-review.json](visual-review.json) | Visual relay, cortical organization and feedback |
 | [neural-review.json](neural-review.json) | Neural preparations and interpretation tests |
 | [neural-systems-review.json](neural-systems-review.json) | Complete Level-6 topic, assertion and parent decisions, plus additional contextual-treatment preparations |
+| [social-systems-review.json](social-systems-review.json) | Level-7 topic, assertion, parent and bibliography decisions with distinct social preparations and models |
 | [physics-review.json](physics-review.json) | Physical experiments, computational contexts and conditional interpretations |
 | [biochemistry-review.json](biochemistry-review.json) | Biochemical preparations, measured responses and conditional mechanisms |
 | [cellular-review.json](cellular-review.json) | Cellular organization, regulation and immune preparations with scoped interpretation limits |

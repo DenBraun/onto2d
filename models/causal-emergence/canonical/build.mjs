@@ -22,13 +22,13 @@ function serialize(relative, value, transportEncoding) {
   return `${JSON.stringify(encoded, null, COMPACT_FILES.has(relative) ? undefined : 2)}\n`;
 }
 
-export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics, biochemistry, cellular, organismal, neuralSystems }, evidence, sourceFiles) {
+export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics, biochemistry, cellular, organismal, neuralSystems, socialSystems }, evidence, sourceFiles) {
   const sourceReadiness = compileSourceReadiness(readiness);
   const nodeRoles = new Map(readiness.nodeRoles.map((r) => [r.nodeId, r]));
   const claims = new Map(graph.claims.map((c) => [c.id, c]));
   const sources = new Map(graph.sources.map((s) => [s.id, s]));
   assert.equal(sources.size, graph.sources.length, "Citation source IDs must be unique before projection");
-  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? []), ...(cellular?.studies ?? []), ...(organismal?.studies ?? []), ...(neuralSystems?.studies ?? [])].map((s) => [s.id, s]));
+  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? []), ...(cellular?.studies ?? []), ...(organismal?.studies ?? []), ...(neuralSystems?.studies ?? []), ...(socialSystems?.studies ?? [])].map((s) => [s.id, s]));
   const interactions = projectCanonicalInteractions(graph, { studies: [...studies.values()] });
   const caseSummaries = new Map(interactions.cases.map((record) => [record.id, {
     id: record.id, title: record.title, anchorEntityId: record.anchorEntityId
@@ -102,14 +102,14 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   }
   return buildModelPack({
     model: { ...graph.model, description: graph.scope.summary },
-    source: { id: "canonical-research-source-v25", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
+    source: { id: "canonical-research-source-v26", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
     nodes, edges,
     dictionaries: {
       sources: graph.sources, claims: graph.claims, constructionRules: graph.rules, interactions,
       recordEvidence: { format: "dictionary-references-v1" },
       scope: graph.scope, evidence, pilot, routing, routingPolicy,
       dictionaryReview, vocabulary: compileVocabulary(dictionaryReview, graph.sources), sourceReadiness, optics, visual, neural, physics,
-      ...(biochemistry ? { biochemistry } : {}), ...(cellular ? { cellular } : {}), ...(organismal ? { organismal } : {}), ...(neuralSystems ? { neuralSystems } : {}),
+      ...(biochemistry ? { biochemistry } : {}), ...(cellular ? { cellular } : {}), ...(organismal ? { organismal } : {}), ...(neuralSystems ? { neuralSystems } : {}), ...(socialSystems ? { socialSystems } : {}),
       presentation: {
         labels: { catalogTitle: "Canonical reconstruction", searchPlaceholder: "Find a concept or construction rule", typeFilter: "Record kind", statusFilter: "Evidence status", parents: "Premises / incoming", children: "Consequences / outgoing" },
         boundary: {
@@ -142,6 +142,14 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/neural-biology.mjs",
     "models/causal-emergence/canonical/neural-cognition.mjs",
     "references/canonical/neural-systems-review.json",
+    "models/causal-emergence/canonical/social-systems.mjs",
+    "models/causal-emergence/canonical/publication-identity.mjs",
+    "models/causal-emergence/canonical/level-seven.mjs",
+    "models/causal-emergence/canonical/social-common.mjs",
+    "models/causal-emergence/canonical/social-animals.mjs",
+    "models/causal-emergence/canonical/social-institutions.mjs",
+    "models/causal-emergence/canonical/social-information.mjs",
+    "references/canonical/social-systems-review.json",
     "models/causal-emergence/canonical/physics.mjs",
     "models/causal-emergence/canonical/biochemistry.mjs",
     "models/causal-emergence/canonical/cellular.mjs",

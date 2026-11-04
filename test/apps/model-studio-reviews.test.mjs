@@ -60,6 +60,40 @@ const study = { id: "organism-preparation", sourceId: publication.id, studyType:
   finding: "A bounded effect", readExtent: "selected-primary-results", reviewedLocators: ["Results", "Figure 2"],
   limitations: ["No universal operating dependency."], correctionCheck: "Publication metadata checked." };
 
+test("social decisions expose bibliography corrections on demand and navigate the actual topic scope", async () => {
+  const { configureReviewPanels, elements, downloads, inspections } = setup();
+  const book = { id: "book", title: "Verified historical publication", year: 1776, url: "https://example.test/book",
+    review: { extent: "bibliographic-metadata-only", limit: "Original chapters unread; metadata is not experimental evidence." } };
+  const review = { studies: [], comparisons: [], cards: [{ code: "7.9", originalName: "Dynamics of Economic Markets",
+    scope: "Market outcomes retain their specified institutions, endowments and tested protocols.", nodeIds: ["soc:market-scope"],
+    assertions: [{ topic: "Universal optimality", disposition: "excluded", reason: "A selected auction does not test every market." }],
+    parentDispositions: [{ parentCode: "6.8", disposition: "unresolved", reason: "No neural criticality mediator was measured." }],
+    bibliography: [{ sourceIndex: 0, sourceId: "book", disposition: "metadata-only", reason: "The original publication year is 1776; chapters remain unread." }],
+    excludedDefaults: ["No universal market minimum."], unresolved: ["External validity remains limited."] }] };
+  const dictionaries = { sources: [book], socialSystems: review }, before = structuredClone(dictionaries), requests = [];
+  configureReviewPanels({ files: { "model/dictionaries.json": {} } }, {
+    reviews: { socialSystems: { count: 1 } }, review: async (key) => { requests.push(key); return dictionaries; }
+  });
+  const panel = elements["social-systems-review-panel"], records = elements["social-systems-review-records"];
+  assert.equal(panel.hidden, false);
+  assert.deepEqual(requests, []);
+  panel.open = true;
+  await panel.ontoggle();
+  assert.deepEqual(requests, ["socialSystems"]);
+  for (const expected of ["Universal optimality: excluded", "6.8: unresolved", "Original bibliography: reviewed identities and reading limits",
+    "1. metadata-only: The original publication year is 1776; chapters remain unread.",
+    "Source review: bibliographic-metadata-only. Original chapters unread; metadata is not experimental evidence."]) assert.ok(lines(records).includes(expected), expected);
+  records.children[0].children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
+  assert.deepEqual(inspections, ["soc:market-scope"]);
+  elements["social-systems-review-download"].onclick();
+  assert.deepEqual(downloads, [{ value: review, filename: "socialSystems-evidence.json" }]);
+  assert.deepEqual(dictionaries, before);
+  configureReviewPanels({ files: { "model/dictionaries.json": {} } }, null);
+  assert.equal(panel.hidden, true);
+  assert.equal(records.children.length, 0);
+  assert.equal(elements["social-systems-review-download"].onclick, null);
+});
+
 test("Level-6 decisions load on demand, retain contrary parent decisions and open the actual scope record", async () => {
   const { configureReviewPanels, elements, downloads, inspections } = setup();
   const review = { studies: [study], comparisons: [], cards: [{ code: "6.16", originalName: "Neurovascular Coupling",

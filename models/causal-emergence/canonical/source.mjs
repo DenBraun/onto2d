@@ -88,6 +88,7 @@ import { verifyDictionaryWitnesses } from "./dictionary-witnesses.mjs";
 import { validateSourceReadiness } from "./readiness.mjs";
 import { validateOpticalReview } from "./optics.mjs";
 import { validateNeuralReview } from "./neural.mjs";
+import { validateSocialSystemsReview } from "./social-systems.mjs";
 import { validateVisualReview } from "./visual.mjs";
 import { BELL_CHECKS, validatePhysicsDefinitions } from "./physics.mjs";
 import { DEUTERON_CHECKS } from "./deuteron.mjs";
@@ -138,6 +139,7 @@ export function validateCanonicalSource(data) {
     assert.equal(source.path === null, source.sha256 === null, `Unbound source ${source.id}`);
     assert.ok(source.path || source.url, `Source has no retrievable location: ${source.id}`);
     const unsignedNotice = source.id === "naccache2026-correction" && source.doi === "10.1093/nc/niag020"
+      || source.id === "kirby2017-language-si-correction" && source.doi === "10.1073/pnas.1702129114"
       || source.id === "hofer2006-mosaic-erratum" && source.doi === null
         && source.url === "https://pmc.ncbi.nlm.nih.gov/articles/PMC6674404/";
     if (source.kind === "research-publication") assert.ok(source.url && (source.authors.length || unsignedNotice) && Number.isInteger(source.year), `Missing publication metadata: ${source.id}`);
@@ -204,6 +206,7 @@ export function validateCanonicalSource(data) {
   validateCellularReview(data, context);
   validateOrganismalReview(data, context);
   validateNeuralSystemsReview(data, context);
+  validateSocialSystemsReview(data, context);
   validateRetinalPilot(data, context);
   validateOpticalReview(data, context);
   validateVisualReview(data, context);
@@ -212,14 +215,14 @@ export function validateCanonicalSource(data) {
   validateDictionaryReview(data);
   validateSourceReadiness(data, null, proposalText);
   validateCanonicalInteractions(graph, { studies: [data.pilot, data.routing, data.optics, data.visual,
-    data.neural, data.physics, data.biochemistry, data.cellular, data.organismal, data.neuralSystems].flatMap((review) => review.studies) });
+    data.neural, data.physics, data.biochemistry, data.cellular, data.organismal, data.neuralSystems, data.socialSystems].flatMap((review) => review.studies) });
   return data;
 }
 
 export async function loadCanonicalSource() {
   const fields = {
     graph: "graph", pilot: "retinal-review", routing: "routing-review", routingPolicy: "routing-policy",
-    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review", organismal: "organismal-review", neuralSystems: "neural-systems-review"
+    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review", organismal: "organismal-review", neuralSystems: "neural-systems-review", socialSystems: "social-systems-review"
   };
   const data = validateCanonicalSource(Object.fromEntries(await Promise.all(Object.entries(fields).map(async ([key, file]) => [key, await json(`references/canonical/${file}.json`)]))));
   await Promise.all(data.graph.sources.filter((s) => s.path).map(async (source) => {
