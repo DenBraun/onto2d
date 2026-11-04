@@ -14,6 +14,7 @@ const dispositions = new Set(["supported", "qualified", "excluded", "unresolved"
 const sorted = (values) => [...values].sort();
 const claimContexts = (claim) => claim.contextIds ?? [];
 
+
 function publicationUrlIdentity(value) {
   if (!value) return null;
   let url;
@@ -47,7 +48,7 @@ export function validateOrganismalReview(data, context) {
   assert.equal(organismal.independentScientificReviewComplete, false);
   assert.deepEqual(organismal.checkIds, [], "No organismal numerical replay has been admitted");
   const ledgers = [data.pilot, data.routing, data.optics, data.visual, data.neural,
-    data.physics, data.biochemistry, data.cellular, organismal, ...(data.neuralSystems ? [data.neuralSystems] : [])];
+    data.physics, data.biochemistry, data.cellular, organismal, ...(data.neuralSystems ? [data.neuralSystems] : []), ...(data.socialSystems ? [data.socialSystems] : [])];
   const studies = index(ledgers.flatMap((review) => review.studies), "study");
   const records = {
     ...context,

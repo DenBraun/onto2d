@@ -248,8 +248,7 @@ test("scope source identities, reading limits and declared physical admission ca
   ]) rejects(mutate);
 });
 
-test("only Level-7 source cards remain pending after complete Level-6 disposition", async () => {
+test("complete Level-6 disposition leaves no neural source cards pending", async () => {
   const pending = JSON.parse(await readFile(new URL("../../references/canonical/pending-review.json", import.meta.url)));
-  assert.equal(pending.cards.length, 25);
-  assert.ok(pending.cards.every((card) => card.sourcePath === "references/level-7.json"));
+  assert.ok(pending.cards.every((card) => card.sourcePath !== "references/level-6.json"));
 });

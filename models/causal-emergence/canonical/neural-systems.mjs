@@ -1,3 +1,4 @@
+import { publicationIdentity } from "./publication-identity.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -147,27 +148,6 @@ function index(rows, label, idKey = "id") {
   return result;
 }
 
-function publicationIdentity(value) {
-  if (!value) return null;
-  let url;
-  try { url = new URL(value); } catch { return null; }
-  let pathname;
-  try { pathname = decodeURIComponent(url.pathname); } catch { pathname = url.pathname; }
-  pathname = path.posix.normalize(pathname).replace(/\/+$/, "");
-  if (["doi.org", "dx.doi.org"].includes(url.hostname)) return `doi:${pathname.slice(1).toLowerCase()}`;
-  if (["pmc.ncbi.nlm.nih.gov", "www.ncbi.nlm.nih.gov", "ncbi.nlm.nih.gov", "europepmc.org", "www.europepmc.org"].includes(url.hostname)) {
-    const pmcid = pathname.match(/\/(?:pmc\/)?articles\/(PMC\d+)(?:\/|$)/i)?.[1];
-    if (pmcid) return `pmc:${pmcid.toUpperCase()}`;
-  }
-  // Institutional catalogues can identify different works through query fields.
-  // Ignore only known tracking parameters; preserve and order the resource keys.
-  for (const key of [...url.searchParams.keys()]) {
-    if (/^utm_/i.test(key) || /^(fbclid|gclid|msclkid)$/i.test(key)) url.searchParams.delete(key);
-  }
-  url.searchParams.sort();
-  const query = url.searchParams.toString();
-  return `${url.host}${pathname}${query ? `?${query}` : ""}`;
-}
 
 /** Admission and evidence accounting; passing this contract is not scientific reproduction. */
 export function validateNeuralSystemsReview(data, context) {
@@ -177,7 +157,7 @@ export function validateNeuralSystemsReview(data, context) {
   assert.deepEqual(neuralSystems.checkIds, []);
   assert.deepEqual(neuralSystems.openObligations, NEURAL_SYSTEMS_OBLIGATIONS);
   const ledgers = [data.pilot, data.routing, data.optics, data.visual, data.neural,
-    data.physics, data.biochemistry, data.cellular, data.organismal, neuralSystems];
+    data.physics, data.biochemistry, data.cellular, data.organismal, neuralSystems, ...(data.socialSystems ? [data.socialSystems] : [])];
   const inheritedLedgerIds = new Map([[data.neural, "neural"], [data.visual, "visual"], [data.organismal, "organismal"]]);
   const studies = index(ledgers.flatMap((ledger) => ledger.studies), "study");
   const records = { ...context, studies,
@@ -213,14 +193,15 @@ export function validateNeuralSystemsReview(data, context) {
     assert.equal(context.sources.get(owner.id)?.kind, owner.kind, `Neural-systems source role changed ${owner.id}`);
   }
   const ownedDois = new Set(publicationSources.filter((source) => source.doi).map((source) => source.doi.toLowerCase()));
-  const ownedUrls = new Set([...publicationSources.map((source) => publicationIdentity(source.url)),
+  const ownedIdentities = new Set([...publicationSources.map((source) => publicationIdentity(source.url)),
     ...[...ownedDois].map((doi) => `doi:${doi}`)].filter(Boolean));
   const ownedPaths = new Map([...ownedFiles].map(([file, owner]) => [path.resolve(root, file), owner.id]));
   const usesEvidence = (record) => record.contextIds?.some((id) => admitted.studies.has(id))
     || record.citations?.some((citation) => ownedSources.has(citation.sourceId));
   const usesClaims = (record) => record.claimIds?.some((id) => admitted.claims.has(id));
   for (const source of graph.sources) {
-    if (ownedDois.has(source.doi?.toLowerCase()) || ownedUrls.has(publicationIdentity(source.url))) {
+    const doiIdentity = source.doi ? `doi:${source.doi.toLowerCase()}` : null;
+    if (ownedIdentities.has(doiIdentity) || ownedIdentities.has(publicationIdentity(source.url))) {
       assert.ok(admitted.sources.has(source.id) || reusedSources.has(source.id), `Unreviewed neural-systems publication alias ${source.id}`);
     }
     if (source.path && ownedPaths.has(path.resolve(root, source.path))) {
