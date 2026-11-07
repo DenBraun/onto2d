@@ -47,8 +47,11 @@ export function controls() {
 
 export async function fixtures() {
   const values = controls().map(({ graph, input }) => ({ id: graph.id, pack: packFor(graph), input }));
+  // The Level-0 rule fragment runs the largest step count within the policy's exact rational digit bound: a fifth exceeds it.
+  const iterations = { "causal-emergence-level-zero-rules": 4 };
   for (const entry of (await ollivierFixtures()).filter((f) => f.id.startsWith("causal-emergence-") && f.id.endsWith("-half"))) {
-    values.push({ id: entry.id.replace(/-half$/, ""), pack: entry.pack, input: { scope: entry.input.scope, maxIterations: 6 } });
+    const id = entry.id.replace(/-half$/, "");
+    values.push({ id, pack: entry.pack, input: { scope: entry.input.scope, maxIterations: iterations[id] ?? 6 } });
   }
   return values;
 }

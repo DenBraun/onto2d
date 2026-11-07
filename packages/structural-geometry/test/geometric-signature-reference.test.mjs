@@ -5,7 +5,7 @@ import test from "node:test";
 import { run, verifyReferenceSources } from "../../../cases/structural-geometry/geometric-signatures/build.mjs";
 import { readJson } from "../../../cases/structural-geometry/geometric-signatures/fixtures.mjs";
 test("all geometric goldens replay against independent source measurements, extrema and threshold profiles", async () => {
-  const suite = await run(); assert.equal(suite.runs.length, 25); assert.equal(suite.properties.intervalExtrema.profiles, 781); assert.equal(suite.properties.thresholdTraces.profiles, 820);
+  const suite = await run(); assert.equal(suite.runs.length, 23); assert.equal(suite.properties.intervalExtrema.profiles, 781); assert.equal(suite.properties.thresholdTraces.profiles, 820);
 });
 test("independent source bindings reject omitted, changed or extra controls and helper dependencies", async () => {
   const reference = await readJson("reference.json"), measurements = await readJson("measurements.json");
@@ -18,5 +18,5 @@ test("independent source bindings reject omitted, changed or extra controls and 
 test("independent Python replays every geometric descriptor and provenance set including unavailable future frames", () => {
   const cwd = fileURLToPath(new URL("../../../", import.meta.url));
   const output = execFileSync("python3", ["-B", "cases/structural-geometry/geometric-signatures/reference.py", "--verify-artifacts"], { cwd, encoding: "utf8" });
-  assert.match(output, /25 cases/); assert.match(output, /781 interval profiles/); assert.match(output, /820 threshold traces/);
+  assert.match(output, /23 cases/); assert.match(output, /781 interval profiles/); assert.match(output, /820 threshold traces/);
 });

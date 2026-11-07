@@ -1,7 +1,7 @@
 import { canonicalClone, canonicalize, deepFreeze, hashCanonical } from "@onto2d/kernel/canonical";
 import { EngineError } from "@onto2d/engine";
 import { defineScientificAdapter } from "@onto2d/scientific-adapter";
-import { projectStructuralGeometry } from "./index.js";
+import { projectStructuralGeometryForScope } from "./index.js";
 import { packFromEngineModel } from "./engine-model.js";
 import { add, encodedFraction, fraction } from "./rational.js";
 import { OLLIVIER_POLICY, OLLIVIER_SOLVER } from "./ollivier-policy.js";
@@ -75,7 +75,7 @@ function distances(source, outgoing) {
 export function prepareOllivierRequest(pack, input) {
   const parameters = normalizeInput(input);
   // Validate the complete source before any fragment selection can hide a finding.
-  const full = projectStructuralGeometry(pack);
+  const full = projectStructuralGeometryForScope(pack, parameters.scope);
   const selected = parameters.scope.kind === "full" ? new Set(full.nodes.map((n) => n.id)) : new Set(parameters.scope.nodeIds);
   const nodes = full.nodes.filter((node) => selected.has(node.id)).map(({ id, sourceRecordHash }) => ({ id, sourceRecordHash }));
   if (nodes.length !== selected.size) fail("SCOPE_INVALID", "The induced scope contains unknown source nodes.");

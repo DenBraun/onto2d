@@ -26,13 +26,13 @@ Source identity used for this analysis:
 This document explains how the paper constrains the Onto2D kernel, which claims can be represented directly, which require external numerical or analytical evidence, and which remain research hypotheses rather than software facts.
 
 The [2026-09-11 foundation review](../../models/causal-emergence/reconstruction/README.md#mathematical-findings-that-change-representation)
-adds a source-to-catalogue proposal and concrete mathematical findings. In
+adds a source-to-graph proposal and concrete mathematical findings. In
 particular, PDF equations (24)–(26) have an operator/mass sign inconsistency;
 stationarity is not a minimum/stability certificate, and resonance balance plus
 `|Psi|^2` does not establish localization or irreducible closure. The Phase-B
 case uses a separately declared consistent operator convention. Read the
 paper-derived claims below as claims being encoded, subject to that review,
-not as accepted proofs. Historical source and case artifacts remain unchanged.
+not as accepted proofs. Historical case artifacts remain unchanged.
 
 <a id="foundations-and-scientific-interpretation--1-epistemic-scope-of-the-paper"></a>
 
@@ -75,30 +75,11 @@ derivationDepth     minimum number of kernel closure transitions
 
 Conflating any two of these axes would make the computational ladder scientifically uninterpretable.
 
-<a id="foundations-and-scientific-interpretation--21-alignment-with-the-existing-level-0json-catalogue"></a>
+<a id="foundations-and-scientific-interpretation--21-alignment-with-the-canonical-level-0-records"></a>
 
-#### 2.1 Alignment with the existing `level-0.json` catalogue
+#### 2.1 Alignment with the canonical Level-0 records
 
-The current catalogue already mirrors much of the paper. `references/descriptions.json` maps numeric phases `0–3` to A–D as Differentiation, Integration, Self-organization, and Threshold transition. All 24 Level-0 records currently have `ScientificStatus: "methodological-placeholder"`, which is consistent with the paper's non-empirical admissibility-formalism status.
-
-| Catalogue IDs | Catalogue concepts | Catalogue phase | Paper alignment | Required treatment |
-|---|---|---:|---|---|
-| `0.15`, `0.16`, `0.0–0.3` | Proto-field, minimal geometry, distinguishability, temporal/spatial distinction, compensation energy | A | Phase A, pages 3–5, plus geometry developed on pages 6–10 | Preserve source metadata; encode assumptions and derived quantities separately |
-| `0.4`, `0.5`, `0.17–0.19` | Wave coherence, variational functional, discrete scale, configurational mass, frame-stable selection | B | Oscillatory segment of Phase B, pages 5–15 and selection on page 34 | Map to mode eligibility, evidence, and cohort selection |
-| `0.6` | Triadic Resonant Closure | B | Resonant Phase B, pages 15–20 | Map to composite triadic-closure predicate |
-| `0.7`, `0.8` | Configurational Density and CRT-Node | C | The paper derives `Gamma` and objecthood before declaring Phase B complete on page 24 | Phase mismatch; require an explicit mapping policy, never silently rewrite source data |
-| `0.9` | Nonlinear CRT Variational Functional | C | Phase C, pages 25–26 | External nonlinear evidence plus local structural claims |
-| `0.10–0.12` | CRT ensemble, ensemble functional, synchronization mode | C | Collective regime and meta-Lagrangian, pages 27–32 | Map to coupling, novelty/non-additivity, stability, and selection |
-| `0.13`, `0.14` | Ensemble-scale quantum seed and bridge to effective Level-1 field | D | Ensemble-quantum and Level-1 threshold, pages 32–36 | Map to admitted ensemble and explicit carrier promotion |
-| `0.20–0.23` | Anisotropy, closure-preserving deformation, directional gradient, transport bias | C/D | Deformation is related to perturbative persistence; the other named properties are not specified directly enough in the paper | Keep as catalogue claims; require separate definitions/evidence before kernel predicates |
-
-The paper and catalogue therefore cannot share one implicit phase field. At minimum, converted records need both `cataloguePhase` and `paperCoordinate`, plus a mapping provenance record.
-
-The catalogue also supplies type-role distinctions that align well with the paper: wave coherence is a process, the triadic condition and variational functionals are patterns, configurational quantities are properties, CRT-node/ensemble/quantum seed are objects, and the Level-1 bridge is an effect. These roles are useful `typeTags`, but their IDs remain catalogue metadata until a rule package declares identity and predicate semantics.
-
-The current parent graph also contains a Level-0 strongly connected component `{0.8 CRT-Node, 0.21 Closure-Preserving Deformation, 0.22 Directional Admissibility Gradient}`. Its mutual support is a legitimate candidate for joint constitution or for one closure-bearing structure distributed across three cards. This could be structurally analogous to the paper's claim that an irreducible loop has no internally prior member. It is not direct textual confirmation: the paper's triad consists of resonant modes, while the catalogue component names a node and two persistence/directionality concepts. Treating them as the same triad without a mapping rule would be a category error.
-
-The hypothesis must therefore be tested through a frozen relation classifier and general node-resolution criteria, without showing eligible annotators SCC membership or whether a label removes a cycle. Because this document publishes the component, prospective blindness requires fresh annotators or a deterministic-precommitted classifier; otherwise the result is marked historically exposed. The source component is then merged or condensed as one depth vertex with undefined internal order, or retained as an explicitly unresolved cluster. Every original relation remains in a typed explanation layer. This preserves the possible joint-arising signal without manufacturing agreement with the paper.
+The canonical Level-0 entities mirror much of the paper. Each has status `definition`, `assumption`, `hypothesis` or `class-uninstantiated`, which is consistent with the paper's non-empirical admissibility-formalism status.
 
 <a id="foundations-and-scientific-interpretation--3-formal-claims-and-computational-disposition"></a>
 
@@ -464,7 +445,7 @@ Rule packages need claim references and evidence states such as:
 
 #### 4.8 Source-graph condensation and joint arising
 
-Catalogue migration needs a typed source-graph protocol in addition to the paper-derived candidate graph. Generative, constitutive, intra-closure-support, evidential, descriptive, and regulatory-feedback relations remain distinct. Classification rules and exposure status are frozen before topology-aware resolution. Nontrivial formation-support SCCs become cluster vertices with undefined internal precedence; condensation supplies the depth DAG without deleting source edges.
+Source migration needs a typed source-graph protocol in addition to the paper-derived candidate graph. Generative, constitutive, intra-closure-support, evidential, descriptive, and regulatory-feedback relations remain distinct. Classification rules and exposure status are frozen before topology-aware resolution. Nontrivial formation-support SCCs become cluster vertices with undefined internal precedence; condensation supplies the depth DAG without deleting source edges.
 
 Cluster count and size are scientific outputs. They measure where the source ontology encodes joint rather than sequential arising. Their distribution across depth transitions is compared with a bottleneck definition frozen from the Boolean/variational selectivity profile before cluster locations are inspected.
 
@@ -574,28 +555,6 @@ Acceptance:
 - the profile is deterministic and passes bounded profile-collapse testing;
 - promotion to a Level-1 carrier is explicit and traceable.
 
-<a id="foundations-and-scientific-interpretation--65-catalogue-scc-and-joint-arising-gate"></a>
-
-#### 6.5 Catalogue SCC and joint-arising gate
-
-Required frozen inputs:
-
-- relation-category decision rules and examples;
-- blinded annotation and conflict-adjudication protocol;
-- distributed-structure versus constitutive-cluster criteria;
-- post-unblinding change approval policy;
-- thresholds for descriptive resolution, disagreement, and reclassification warnings;
-- bottleneck definition and cluster-concentration statistic.
-
-Acceptance:
-
-- all three raw catalogue SCCs receive complete, edge-preserving dispositions;
-- the quotient graph is a DAG and no member is assigned internal precedence;
-- the `{0.8,0.21,0.22}` result is reported without forcing analogy to the paper's resonant triad;
-- evidential/descriptive/dynamic layers remain traversable in explanations;
-- merge, condensation, layer separation, and reclassification shares reconcile numerically;
-- concentration, uniformity, and depletion are all reportable terminal outcomes.
-
 <a id="foundations-and-scientific-interpretation--7-what-the-supplied-paper-does-not-specify-computationally"></a>
 
 ### 7. What the supplied paper does not specify computationally
@@ -616,8 +575,6 @@ The following are necessary before a fully executable scientific case can exist:
 - the contested support/resource equivalence rule that defines each competition cohort;
 - the unit and value of the degeneracy epsilon;
 - the partial-convergence policy for external numerical work;
-- semantic rules for mapping catalogue parent relations to source-relation layers;
-- criteria for deciding whether several catalogue cards are one distributed structure;
 - a fully covariant selection formalism—the paper explicitly defers Lorentz-covariant derivation;
 - an algorithmic criterion for effective higher-level redescription;
 - empirical datasets or citations for external validation.

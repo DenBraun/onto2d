@@ -123,7 +123,7 @@ test("the parallel-surface result retains the selected estimator, voltage-sign c
   ]);
 });
 
-test("finite attractive results cannot supply repulsion, absolute vacuum ontology, original minima or cross-level causation", async () => {
+test("finite attractive results cannot supply repulsion, absolute vacuum ontology, universal geometric minima or cross-level causation", async () => {
   const data = await source();
   for (const id of [boundary, synthesis, method]) assert.deepEqual(claim(data, id).checkIds, []);
   assert.equal(publication(data, "casimir1948").doi, null, "The original paper does not inherit a later reprint DOI");
@@ -135,11 +135,11 @@ test("finite attractive results cannot supply repulsion, absolute vacuum ontolog
       dropLimit(changed, synthesis, "do not measure repulsion")],
     ["force measurements cannot uniquely establish absolute or cosmological vacuum energy", (changed) =>
       dropLimit(changed, synthesis, "No unique measurement of absolute vacuum energy")],
-    ["the original parent fractions cannot become measured causal weights", (changed) =>
-      dropLimit(changed, synthesis, "weights 0.55/0.45")],
-    ["two boundaries cannot become a universal emergence carrier minimum", (changed) =>
-      dropLimit(changed, synthesis, "group0/type2 resonant-mode count1")],
-    ["a display group cannot verify SOMA downward causation", (changed) =>
-      dropLimit(changed, synthesis, "SOMA downward causation")]
+    ["supplied electromagnetic response cannot prove a prior ontological vacuum stage", (changed) =>
+      dropLimit(changed, synthesis, "not proof of a prior ontological vacuum stage")],
+    ["two surfaces define the selected geometry rather than a universal minimum", (changed) =>
+      dropLimit(changed, synthesis, "Two surfaces define the selected geometry rather than a universal minimum")],
+    ["boundary sensitivity cannot verify universal constraint propagation or new cross-level rules", (changed) =>
+      dropLimit(changed, synthesis, "Macroscopic boundary sensitivity does not by itself verify")]
   ]);
 });

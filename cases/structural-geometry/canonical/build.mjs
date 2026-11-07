@@ -9,8 +9,7 @@ import { verifyCensus, verifySixNodeRelabelings } from "./census.mjs";
 
 const encoded = (value) => `${JSON.stringify(canonicalClone(value), null, 2)}\n`;
 export async function verifyReferenceSources(reference) {
-  for (const [file, expected] of [["controls.json", reference.controlsFileSha256],
-    ["../../../models/causal-emergence/releases/2026.08.15/bundle.json", reference.causalFileSha256]]) {
+  for (const [file, expected] of [["controls.json", reference.controlsFileSha256]]) {
     const actual = createHash("sha256").update(await readFile(new URL(file, directory))).digest("hex");
     assert.equal(actual, expected, `Independent reference source binding differs: ${file}`);
   }
@@ -24,7 +23,6 @@ export async function run({ write = false, report = false } = {}) {
   for (const f of await fixtures()) {
     const artifact = observeCanonicalStructure(f.pack, f.input);
     verifyCanonicalStructureObservation(artifact, f.pack, f.input);
-    if (f.id === "causal-fragment") assert.deepEqual(artifact.preparation.context.model, await readJson("../causal-emergence/source-lock.json"));
     const file = `artifacts/${f.id}.json`;
     outputs.push([file, encoded(artifact)]);
     values.set(f.id, canonicalize(artifact.observation.value));
@@ -44,7 +42,7 @@ export async function run({ write = false, report = false } = {}) {
     else if (await readFile(new URL(file, directory), "utf8") !== bytes) throw new Error(`Canonical observation replay differs: ${file}`);
   }
   if (report) { console.table(census.rows); console.table(runs.map(({ id, nodes, edges, valueHash }) => ({ id, nodes, edges, valueHash }))); }
-  console.log(`Canonical observations ${write ? "written" : "verified"}: 17 artifacts, 4165 exhaustive small graphs / 238 classes, 720 six-node relabelings.`);
+  console.log(`Canonical observations ${write ? "written" : "verified"}: ${runs.length} artifacts, 4165 exhaustive small graphs / 238 classes, 720 six-node relabelings.`);
   return suite;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

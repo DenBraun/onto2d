@@ -114,7 +114,7 @@ def main():
         (HERE / "measurements.json").write_text(text, encoding="utf-8")
     else:
         assert (HERE / "measurements.json").read_text(encoding="utf-8") == text, "Independent geometric measurements differ"
-    print("Independent source measurements {}: 25 requests.".format("written" if args.write else "verified"))
+    print("Independent source measurements {}: {} requests.".format("written" if args.write else "verified", len(value["cases"])))
 
 
 if __name__ == "__main__":

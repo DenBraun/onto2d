@@ -135,7 +135,7 @@ const contracts = {
       "id": "D-phys-effective-description-scope",
       "kind": "review-finding",
       "statement": "An effective description declares its retained fields, symmetries, operator basis, hierarchy of scales and target observables. Wilsonian elimination of short-distance modes, renormalized-parameter running with mu and the hard scale of a measurement are distinct operations or variables. Matching coefficients and boundary conditions are additional inputs to an RG equation. Approximate low-energy agreement retains heavy-field effects in parameters and higher operators; it does not remove microscopic causes or establish a physical-time process.",
-      "scope": "Operational scope of the selected Wilsonian scalar construction, EFT logic and existing weak contact example for source card 1.21.",
+      "scope": "Operational scope of the selected Wilsonian scalar construction, EFT logic and existing weak contact example.",
       "status": "definition",
       "citations": [
         {
@@ -204,8 +204,7 @@ const contracts = {
         "Structurally significant means contributions retained by declared power counting for specified observables and accuracy. It does not select a universal ontology or prove that eliminated fields cease to matter. Suppression requires its hierarchy, coefficient and perturbative assumptions; a higher canonical dimension alone is not a numerical error certificate.",
         "The massive weak-exchange example is the existing leading low-momentum tree approximation with light external fermions. Its Fermi relation is a parameter identity, not loop matching, a measured coefficient, a complete gauge-consistent amplitude or a precision electroweak scheme conversion. Threshold matching, radiative mixing and nondecoupling need their own declared conventions and validity.",
         "A fixed point and its linearized scaling fields define relevance only with a chosen scale-flow direction. Marginal directions require higher-order analysis. The finite Gaussian example does not prove an interacting universality class, its basin or all critical exponents; no general stable low-energy-laws theorem across physics is admitted.",
-        "No condensed-matter acquisition, scaling dataset or fitted critical exponent is selected here. The original generic particle-physics and condensed-matter empirical sentence is narrowed to the separately reviewed QCD and QED running extractions, not used as evidence for all EFTs or universality classes.",
-        "The original necessary QFT parent 1.0, weight 1, N_min=N_crit=1 and causal/interaction codes have no admitted scientific quantitative meaning. The SOMA phase 2, property TypeRole 3 and established label do not specify a universal arising stage, formation/maintenance law or downward-causation mechanism. Generic evidence placeholders add no independent source."
+        "No condensed-matter acquisition, scaling dataset or fitted critical exponent is selected here. Particle-physics evidence is limited to the separately reviewed QCD and QED running extractions, not used as evidence for all EFTs or universality classes."
       ]
     },
     {
@@ -416,8 +415,7 @@ const contracts = {
         "Structurally significant means contributions retained by declared power counting for specified observables and accuracy. It does not select a universal ontology or prove that eliminated fields cease to matter. Suppression requires its hierarchy, coefficient and perturbative assumptions; a higher canonical dimension alone is not a numerical error certificate.",
         "The massive weak-exchange example is the existing leading low-momentum tree approximation with light external fermions. Its Fermi relation is a parameter identity, not loop matching, a measured coefficient, a complete gauge-consistent amplitude or a precision electroweak scheme conversion. Threshold matching, radiative mixing and nondecoupling need their own declared conventions and validity.",
         "A fixed point and its linearized scaling fields define relevance only with a chosen scale-flow direction. Marginal directions require higher-order analysis. The finite Gaussian example does not prove an interacting universality class, its basin or all critical exponents; no general stable low-energy-laws theorem across physics is admitted.",
-        "No condensed-matter acquisition, scaling dataset or fitted critical exponent is selected here. The original generic particle-physics and condensed-matter empirical sentence is narrowed to the separately reviewed QCD and QED running extractions, not used as evidence for all EFTs or universality classes.",
-        "The original necessary QFT parent 1.0, weight 1, N_min=N_crit=1 and causal/interaction codes have no admitted scientific quantitative meaning. The SOMA phase 2, property TypeRole 3 and established label do not specify a universal arising stage, formation/maintenance law or downward-causation mechanism. Generic evidence placeholders add no independent source."
+        "No condensed-matter acquisition, scaling dataset or fitted critical exponent is selected here. Particle-physics evidence is limited to the separately reviewed QCD and QED running extractions, not used as evidence for all EFTs or universality classes."
       ]
     },
     {
@@ -484,7 +482,7 @@ const contracts = {
       "target": "phys:effective-description-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The selected field-theory framework supplies an adopted model vocabulary, not a necessary universal creation parent for RG or low-energy laws.",
+      "assertion": "The selected field-theory framework supplies an adopted model vocabulary, not a necessary universal origin of RG or low-energy laws.",
       "claimIds": [
         "D-phys-effective-description-scope"
       ]

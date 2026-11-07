@@ -820,7 +820,7 @@ const contracts = {
         "Equation 1 uses independent channel Poisson factors and Gaussian background nuisance terms as the authors' statistical model. The rounded table does not fully specify nuisance domains, unrounded inputs or pseudoexperiment construction. Neither the likelihood, significance calibration nor confidence coverage is locally reproduced.",
         "The Fisher product of channel tail probabilities is a test statistic, not the final calibrated p value. A total-count Poisson tail with background mean 0.25 is not the reported channel-aware 1.1e-7 result. Significance is a background-hypothesis tail comparison, not a posterior probability that oscillations are true.",
         "Earlier OPERA candidate publications use subsets of this same 2008–2012 exposure. The fifth event contributes to the four-channel total; candidate displays, significance, strength and mass-squared interval are dependent results. The two statistical implementations are not independent experiments.",
-        "These source-specific appearance results supply no universal carrier minimum, weighted parent necessity, temporal emergence ordering or SOMA property/level validation. They do not by themselves establish astrophysical transport or cosmological predictions."
+        "These source-specific appearance results supply no temporal emergence ordering. They do not by themselves establish astrophysical transport or cosmological predictions."
       ],
       "contextIds": [
         "opera2015-inference"
@@ -858,7 +858,7 @@ const contracts = {
         "Equation 1 uses independent channel Poisson factors and Gaussian background nuisance terms as the authors' statistical model. The rounded table does not fully specify nuisance domains, unrounded inputs or pseudoexperiment construction. Neither the likelihood, significance calibration nor confidence coverage is locally reproduced.",
         "The Fisher product of channel tail probabilities is a test statistic, not the final calibrated p value. A total-count Poisson tail with background mean 0.25 is not the reported channel-aware 1.1e-7 result. Significance is a background-hypothesis tail comparison, not a posterior probability that oscillations are true.",
         "Earlier OPERA candidate publications use subsets of this same 2008–2012 exposure. The fifth event contributes to the four-channel total; candidate displays, significance, strength and mass-squared interval are dependent results. The two statistical implementations are not independent experiments.",
-        "These source-specific appearance results supply no universal carrier minimum, weighted parent necessity, temporal emergence ordering or SOMA property/level validation. They do not by themselves establish astrophysical transport or cosmological predictions."
+        "These source-specific appearance results supply no temporal emergence ordering. They do not by themselves establish astrophysical transport or cosmological predictions."
       ],
       "contextIds": [
         "opera2015-inference"
@@ -896,7 +896,7 @@ const contracts = {
         "The reported 2.64 +/-0.53 expected signal adopts Delta m23^2=2.44e-3 eV^2 and sin^2(2 theta23)=1. Its quoted uncertainty includes model and efficiency inputs. These nominal parameters are not independently determined by the expectation and are not retroactively replaced by the fitted interval.",
         "Equation 1 uses independent channel Poisson factors and Gaussian background nuisance terms as the authors' statistical model. The rounded table does not fully specify nuisance domains, unrounded inputs or pseudoexperiment construction. Neither the likelihood, significance calibration nor confidence coverage is locally reproduced.",
         "Earlier OPERA candidate publications use subsets of this same 2008–2012 exposure. The fifth event contributes to the four-channel total; candidate displays, significance, strength and mass-squared interval are dependent results. The two statistical implementations are not independent experiments.",
-        "These source-specific appearance results supply no universal carrier minimum, weighted parent necessity, temporal emergence ordering or SOMA property/level validation. They do not by themselves establish astrophysical transport or cosmological predictions."
+        "These source-specific appearance results supply no temporal emergence ordering. They do not by themselves establish astrophysical transport or cosmological predictions."
       ],
       "contextIds": [
         "opera2015-inference"
@@ -934,7 +934,7 @@ const contracts = {
         "The reported 2.64 +/-0.53 expected signal adopts Delta m23^2=2.44e-3 eV^2 and sin^2(2 theta23)=1. Its quoted uncertainty includes model and efficiency inputs. These nominal parameters are not independently determined by the expectation and are not retroactively replaced by the fitted interval.",
         "Equation 1 uses independent channel Poisson factors and Gaussian background nuisance terms as the authors' statistical model. The rounded table does not fully specify nuisance domains, unrounded inputs or pseudoexperiment construction. Neither the likelihood, significance calibration nor confidence coverage is locally reproduced.",
         "Earlier OPERA candidate publications use subsets of this same 2008–2012 exposure. The fifth event contributes to the four-channel total; candidate displays, significance, strength and mass-squared interval are dependent results. The two statistical implementations are not independent experiments.",
-        "These source-specific appearance results supply no universal carrier minimum, weighted parent necessity, temporal emergence ordering or SOMA property/level validation. They do not by themselves establish astrophysical transport or cosmological predictions."
+        "These source-specific appearance results supply no temporal emergence ordering. They do not by themselves establish astrophysical transport or cosmological predictions."
       ],
       "contextIds": [
         "opera2015-inference"
@@ -1574,7 +1574,7 @@ const contracts = {
         "The Fisher product of channel tail probabilities is a test statistic, not the final calibrated p value. A total-count Poisson tail with background mean 0.25 is not the reported channel-aware 1.1e-7 result. Significance is a background-hypothesis tail comparison, not a posterior probability that oscillations are true.",
         "The signal-strength errors are a 90% confidence interval, not one-standard-deviation errors. The mass-squared result additionally assumes full mixing and reuses the selected data/model. It is not an absolute mass, a complete three-flavor global fit, a Dirac/Majorana test or a unique mass-generation mechanism.",
         "Earlier OPERA candidate publications use subsets of this same 2008–2012 exposure. The fifth event contributes to the four-channel total; candidate displays, significance, strength and mass-squared interval are dependent results. The two statistical implementations are not independent experiments.",
-        "These source-specific appearance results supply no universal carrier minimum, weighted parent necessity, temporal emergence ordering or SOMA property/level validation. They do not by themselves establish astrophysical transport or cosmological predictions."
+        "These source-specific appearance results supply no temporal emergence ordering. They do not by themselves establish astrophysical transport or cosmological predictions."
       ],
       "readExtent": "full-primary-author-version",
       "reviewedLocators": [
@@ -1623,7 +1623,7 @@ const contracts = {
         "The reported 2.64 +/-0.53 expected signal adopts Delta m23^2=2.44e-3 eV^2 and sin^2(2 theta23)=1. Its quoted uncertainty includes model and efficiency inputs. These nominal parameters are not independently determined by the expectation and are not retroactively replaced by the fitted interval.",
         "Equation 1 uses independent channel Poisson factors and Gaussian background nuisance terms as the authors' statistical model. The rounded table does not fully specify nuisance domains, unrounded inputs or pseudoexperiment construction. Neither the likelihood, significance calibration nor confidence coverage is locally reproduced.",
         "Earlier OPERA candidate publications use subsets of this same 2008–2012 exposure. The fifth event contributes to the four-channel total; candidate displays, significance, strength and mass-squared interval are dependent results. The two statistical implementations are not independent experiments.",
-        "These source-specific appearance results supply no universal carrier minimum, weighted parent necessity, temporal emergence ordering or SOMA property/level validation. They do not by themselves establish astrophysical transport or cosmological predictions."
+        "These source-specific appearance results supply no temporal emergence ordering. They do not by themselves establish astrophysical transport or cosmological predictions."
       ],
       "sourceIds": [
         "opera2015-appearance"

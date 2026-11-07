@@ -480,7 +480,7 @@ const contracts = {
         "locators": [
           "Unchanged sort_energy.dat: all 258 sorted prompt energies in MeV, including repeated rounded values"
         ],
-        "limit": "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them. Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records."
+        "limit": "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them. Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records."
       }
     },
     {
@@ -571,7 +571,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records."
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records."
       ]
     },
     {
@@ -602,7 +602,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample.",
         "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them."
       ],
@@ -712,7 +712,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample.",
         "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them."
       ],
@@ -754,7 +754,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample.",
         "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them."
       ],
@@ -785,7 +785,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The no-oscillation reactor expectation requires individual reactor power/fuel histories, external fission spectra and cross sections, target protons, livetime, response and selection efficiency; it is not computed from 258 observed candidates. The full reactor prediction, calibration, response correlations and Monte Carlo are not reconstructed.",
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample."
       ],
       "contextIds": [
@@ -815,7 +815,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The no-oscillation reactor expectation requires individual reactor power/fuel histories, external fission spectra and cross sections, target protons, livetime, response and selection efficiency; it is not computed from 258 observed candidates. The full reactor prediction, calibration, response correlations and Monte Carlo are not reconstructed.",
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample."
       ],
       "contextIds": [
@@ -1214,7 +1214,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records."
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records."
       ]
     },
     {
@@ -1242,7 +1242,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample.",
         "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them."
       ]
@@ -1334,7 +1334,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample.",
         "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them."
       ]
@@ -1361,7 +1361,7 @@ const contracts = {
       ],
       "openObligations": [
         "The no-oscillation reactor expectation requires individual reactor power/fuel histories, external fission spectra and cross sections, target protons, livetime, response and selection efficiency; it is not computed from 258 observed candidates. The full reactor prediction, calibration, response correlations and Monte Carlo are not reconstructed.",
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample."
       ]
     },
@@ -1851,7 +1851,7 @@ const contracts = {
       "observable": "KamLAND selected prompt-energy sample",
       "finding": "The full selection yields 258 candidate events. The official release lists their rounded prompt energies in MeV, including annihilation energy; these selected energies supply the measured spectrum used by the same-acquisition analyses.",
       "limitations": [
-        "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+        "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
         "The 9 March 2002-11 January 2004 acquisition includes the reanalyzed earlier sample and a February 2003 PMT upgrade. The selected list, rate estimate and fitted spectrum reuse that acquisition; they are not independent replications. Special background/control measurements and simulation supply auxiliary inputs. Figure 2a omits the delayed-energy cut and is not the fully selected 258-event sample.",
         "The complete 258-value official list is a rounded, sorted selected prompt-energy release, without times, vertices, detector waveforms, nuisance parameters or covariance. Duplicated rounded energies must be preserved. The unchanged HTML and numeric bytes retain KamLAND attribution; no explicit additional open-content license or project software license is assigned to them."
       ],
@@ -1974,7 +1974,7 @@ const contracts = {
       "alternative": "258 selected candidates are raw acquisition or the no-oscillation prediction.",
       "discriminator": "Keep prompt and neutrino variables, response assumptions and same-acquisition reuse explicit.",
       "result": "conditional-support",
-      "limit": "Prompt energy contains positron kinetic and annihilation energy; The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
+      "limit": "Prompt energy contains positron kinetic and annihilation energy. The approximate relation E_antineutrino=E_prompt+T_neutron+0.8 MeV uses neutron recoil kinetic energy and a rounded kinematic offset. The prompt cut at 2.6 MeV and the abstract neutrino-energy threshold near 3.4 MeV concern different variables. Selected prompt energies are not exact event-by-event true neutrino energies or original photomultiplier records.",
       "assumptions": [
         "The plane-wave, coherent, ultrarelativistic vacuum approximation uses hbar=c=1. An experiment averages with flux, cross section, efficiency and resolution; a single vacuum phase is not a detector likelihood. Oscillation differences do not determine absolute masses, every individual mass to be nonzero, Dirac versus Majorana character or a unique mass-generation mechanism. Matter propagation and solar, atmospheric and accelerator acquisitions remain outside this finite reactor block.",
         "The local executable checks two unchanged assets, the selected prompt-energy count/range/sum, 2.69+4.8+10.3=17.79 rounding to 17.8, and (258-17.8)/365.2 rounding to 0.658. Its unitary phase witnesses use synthetic parameters. It does not replay acquisition, reactor prediction, background/response models, likelihood, uncertainties, significance, solar combination or mass generation."

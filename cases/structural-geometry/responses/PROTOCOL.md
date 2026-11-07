@@ -80,11 +80,11 @@ a partial target set. At most 65 observation evaluations and 130 individually
 bounded canonicalizer calls are allowed. Canonical serialization allows 500,000
 entries and 4 MiB cumulative/final output; inherited string/depth limits apply.
 
-Freeze controls for a chain, directed cycle, reciprocal pair, diamond,
+Freeze synthetic controls for a chain, directed cycle, reciprocal pair, diamond,
 transitive triangle, typed necessary/enabling/contextual/optional dependencies,
-missing necessity and other typed fields, isolates, boundary edges, opaque IDs,
-and an explicitly scoped Causal Emergence fragment. Include a 32-edge cycle
-with 32 additional isolates: 64 targets and 2,048 transformation edge visits.
+missing necessity and other typed fields, isolates, boundary edges and opaque
+IDs. Include a 32-edge cycle with 32 additional isolates: 64 targets and 2,048
+transformation edge visits.
 Include rejection, unchanged direction response, target absence, mixed complete
 and missing diagnostics and graph-regime distinctions. Controls are selected
 before any measured outcome.

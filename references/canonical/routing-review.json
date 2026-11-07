@@ -442,7 +442,7 @@
         "Figure 6F spreadsheet contains summary amplitudes, not individual samples or SEM.",
         "The modulation frequency of the six Figure 6F summary rows is not resolved by the reviewed metadata. Do not import 2 Hz from the separate A-C or supplement experiment; no fully specified replication protocol is claimed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:grimes-primate-20",
@@ -481,7 +481,7 @@
         "Figure 6F spreadsheet contains summary amplitudes, not individual samples or SEM.",
         "The modulation frequency of the six Figure 6F summary rows is not resolved by the reviewed metadata. Do not import 2 Hz from the separate A-C or supplement experiment; no fully specified replication protocol is claimed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:grimes-primate-200",
@@ -520,7 +520,7 @@
         "Figure 6F spreadsheet contains summary amplitudes, not individual samples or SEM.",
         "The modulation frequency of the six Figure 6F summary rows is not resolved by the reviewed metadata. Do not import 2 Hz from the separate A-C or supplement experiment; no fully specified replication protocol is claimed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:grimes-mouse-0p5",
@@ -559,7 +559,7 @@
         "Figure 6F spreadsheet contains summary amplitudes, not individual samples or SEM.",
         "The modulation frequency of the six Figure 6F summary rows is not resolved by the reviewed metadata. Do not import 2 Hz from the separate A-C or supplement experiment; no fully specified replication protocol is claimed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:grimes-mouse-5",
@@ -598,7 +598,7 @@
         "Figure 6F spreadsheet contains summary amplitudes, not individual samples or SEM.",
         "The modulation frequency of the six Figure 6F summary rows is not resolved by the reviewed metadata. Do not import 2 Hz from the separate A-C or supplement experiment; no fully specified replication protocol is claimed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:grimes-mouse-50",
@@ -637,7 +637,7 @@
         "Figure 6F spreadsheet contains summary amplitudes, not individual samples or SEM.",
         "The modulation frequency of the six Figure 6F summary rows is not resolved by the reviewed metadata. Do not import 2 Hz from the separate A-C or supplement experiment; no fully specified replication protocol is claimed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:jin-cone-cx36",
@@ -675,7 +675,7 @@
         "Fully dark-adapted flash measurements in B6-background transient OFF alpha cells do not transfer to sustained OFF alpha cells or adapting sinusoidal backgrounds.",
         "Supplementary files and original electrophysiology traces were not independently reanalysed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     },
     {
       "id": "review:jin-rod-cx36",
@@ -713,7 +713,7 @@
         "Fully dark-adapted flash measurements in B6-background transient OFF alpha cells do not transfer to sustained OFF alpha cells or adapting sinusoidal backgrounds.",
         "Supplementary files and original electrophysiology traces were not independently reanalysed."
       ],
-      "quantitativeInference": "No pathway weights, uncertainty estimates, necessity threshold or N_crit are inferred from these summaries."
+      "quantitativeInference": "No pathway weights, uncertainty estimates or necessity threshold are inferred from these summaries."
     }
   ],
   "measurements": [

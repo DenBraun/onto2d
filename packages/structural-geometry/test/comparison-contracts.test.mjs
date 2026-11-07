@@ -18,7 +18,7 @@ for (const [name, url] of Object.entries(schemaUrls).filter(([name]) => name.sta
 const validate = (name, value) => ajv.validate(ids.get(name), value);
 const examples = await fixtures(), artifacts = await Promise.all(examples.map(f => readJson(`artifacts/${f.id}.json`)));
 
-test("closed comparison schemas accept all 43 regime requests and complete/incomplete results", () => {
+test("closed comparison schemas accept all 37 regime requests and complete/incomplete results", () => {
   for (const [i, f] of examples.entries()) {
     assert.equal(validate("structuralComparisonInput", f.input), true, `${f.id}: ${ajv.errorsText()}`);
     assert.equal(validate("structuralComparisonArtifact", artifacts[i]), true, `${f.id}: ${ajv.errorsText()}`);
@@ -81,7 +81,7 @@ test("uncovered vocabulary values are bounded by the artifact budget, not the ma
   assert.equal(validate("structuralComparisonArtifact", a), true, ajv.errorsText());
 });
 
-test("the browser bundle reproduces all 43 exact comparison artifacts and independently verifies expected inputs", async () => {
+test("the browser bundle reproduces all 37 exact comparison artifacts and independently verifies expected inputs", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/comparison.js", import.meta.url))], bundle: true,
     platform: "browser", format: "iife", globalName: "Comparison", write: false, logLevel: "silent" });
   const output = runInNewContext(`${bundle.outputFiles[0].text}\nconst fixtures = JSON.parse(fixturesText);

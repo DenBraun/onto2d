@@ -124,7 +124,9 @@ const contracts = {
           "Section 2.3 opening: vacuum and normal ordering",
           "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions",
           "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
-          "Section 2.7 opening before 2.7.1: vacuum two-point function"
+          "Section 2.7 opening before 2.7.1: vacuum two-point function",
+          "Section 2.3.2: Casimir plates, boundary-quantized momentum and regulated 1+1 energy sum",
+          "Section 2.5: complex scalar Lagrangian, equations of motion, particle and antiparticle operators and conserved charge"
         ],
         "limit": "Author lecture notes for the 2006-2007 course, in the HTML edition dated 15 October 2021. Only the listed sections supply support; no complete interacting or gauge-field quantization is reviewed. Formula locators use section names because HTML and PDF equation numbering differ. The separately bound field-dynamics verifier checks finite formal oscillator-mode algebra under declared assumptions; no complete continuum or interacting construction, or experimental reproduction, is claimed."
       }
@@ -182,7 +184,7 @@ const contracts = {
         "This is a free real scalar field in flat spacetime with time-independent Hamiltonian and hbar=c=1. The displayed Heisenberg derivative applies to operators without additional explicit time dependence. It does not construct an interacting or gauge theory, specify Standard Model field content, or derive quantum algebra from a classical carrier.",
         "Continuum fields and equal-time commutators are operator-valued distributions, not pointwise finite operators. Use suitable smearing and operator domains; a finite periodic box and momentum cutoff may regulate the free mode expansion and its vacuum-energy sum. Integration by parts requires compatible periodic or vanishing boundary terms. No cutoff removal, rigorous continuum domain construction or regulator-independent interacting limit is checked here.",
         "An additive vacuum-energy constant or normal-ordering subtraction does not change the Heisenberg commutators. The finite mode uses H=omega*(N+1/2), whose vacuum energy is omega/2; this is not a gravitational vacuum-energy calculation or an assertion that continuum zero-point energy is finite.",
-        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, parent weight, carrier-count minimum, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
+        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
       ]
     },
     {
@@ -274,7 +276,7 @@ const contracts = {
         "Stationary vacuum density and equal-time covariance do not require a time-independent unequal-time correlator. Vacuum occupation and energy variance are calculated from the adopted ladder vacuum, not inferred from covariance alone. Nonzero q or p variance is not a measured population, an energy source or repeated vacuum creation.",
         "A symplectic squeeze preserves the canonical commutator but changes this Hamiltonian and vacuum covariance. Attenuation without added operators fails a closed canonical map; this does not exclude physical open-system channels with environmental or noise degrees of freedom. A one-mode unequal-time commutator proves no spacelike microcausality or signal-propagation theorem.",
         "Continuum fields and equal-time commutators are operator-valued distributions, not pointwise finite operators. Use suitable smearing and operator domains; a finite periodic box and momentum cutoff may regulate the free mode expansion and its vacuum-energy sum. Integration by parts requires compatible periodic or vanishing boundary terms. No cutoff removal, rigorous continuum domain construction or regulator-independent interacting limit is checked here.",
-        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, parent weight, carrier-count minimum, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
+        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
       ],
       "contextIds": [
         "field-dynamics-replay"
@@ -351,7 +353,7 @@ const contracts = {
       ],
       "openObligations": [
         "Continuum fields and equal-time commutators are operator-valued distributions, not pointwise finite operators. Use suitable smearing and operator domains; a finite periodic box and momentum cutoff may regulate the free mode expansion and its vacuum-energy sum. Integration by parts requires compatible periodic or vanishing boundary terms. No cutoff removal, rigorous continuum domain construction or regulator-independent interacting limit is checked here.",
-        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, parent weight, carrier-count minimum, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
+        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
       ]
     },
     {
@@ -388,7 +390,7 @@ const contracts = {
       ],
       "openObligations": [
         "Two rational positive frequencies and five rational unit-circle phases give ten exact mode checks and fifty composition/common-shift checks. A phase pair denotes cos(omega*t), sin(omega*t); no rational elapsed time is assigned and no arbitrary-time numerical integration or continuum field evolution is reproduced.",
-        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, parent weight, carrier-count minimum, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
+        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
       ]
     },
     {
@@ -421,7 +423,7 @@ const contracts = {
       ],
       "openObligations": [
         "Two rational positive frequencies and five rational unit-circle phases give ten exact mode checks and fifty composition/common-shift checks. A phase pair denotes cos(omega*t), sin(omega*t); no rational elapsed time is assigned and no arbitrary-time numerical integration or continuum field evolution is reproduced.",
-        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, parent weight, carrier-count minimum, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
+        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
       ]
     }
   ],
@@ -537,7 +539,7 @@ const contracts = {
         "Stationary vacuum density and equal-time covariance do not require a time-independent unequal-time correlator. Vacuum occupation and energy variance are calculated from the adopted ladder vacuum, not inferred from covariance alone. Nonzero q or p variance is not a measured population, an energy source or repeated vacuum creation.",
         "A symplectic squeeze preserves the canonical commutator but changes this Hamiltonian and vacuum covariance. Attenuation without added operators fails a closed canonical map; this does not exclude physical open-system channels with environmental or noise degrees of freedom. A one-mode unequal-time commutator proves no spacelike microcausality or signal-propagation theorem.",
         "Continuum fields and equal-time commutators are operator-valued distributions, not pointwise finite operators. Use suitable smearing and operator domains; a finite periodic box and momentum cutoff may regulate the free mode expansion and its vacuum-energy sum. Integration by parts requires compatible periodic or vanishing boundary terms. No cutoff removal, rigorous continuum domain construction or regulator-independent interacting limit is checked here.",
-        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, parent weight, carrier-count minimum, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
+        "Real Hamiltonian time is not a renormalization scale, a Euclidean coordinate or a Monte Carlo iteration. No universal formation or maintenance dependency, physical vacuum substance or Level-0-to-quantum-field derivation follows from this scoped free-field construction."
       ],
       "sourceIds": [
         "tong-qft-free-fields",

@@ -187,7 +187,7 @@ const contracts = {
       "limitations": [
         "Use the closed unitary active two- or three-state convention already declared. Oscillatory flavor probabilities require both mixing of contributing components and nonzero relative mass-squared differences, together with the stated production/detection and propagation coherence conditions. A degenerate pair, unmixed channel or suppressed interference need not show an oscillatory signal.",
         "A single vacuum mass eigenstate acquires only a phase in its internal state; its flavor-readout probabilities |U_alpha,i|^2 do not oscillate. An incoherent density matrix diagonal in the vacuum mass basis also has constant vacuum flavor probabilities. These are not statements that vacuum mass states remain instantaneous eigenstates in arbitrary varying matter, or that packet position is stationary.",
-        "Leptonic charged-current flavor labels specify preparation/readout; mass differences and mixing specify model inputs. They do not establish necessary physical parents, an arising chronology, weights 0.3/0.7, N_min=N_crit=1, a SOMA phase/type or the claim that flavor identity can never be dynamically autonomous. No causal maintenance or downward constraint is inferred from these definition dependencies.",
+        "Leptonic charged-current flavor labels specify preparation/readout; mass differences and mixing specify model inputs. They do not establish an arising chronology or the claim that flavor identity can never be dynamically autonomous. No causal maintenance or downward constraint is inferred from these definition dependencies.",
         "Within this oscillation model, mass-squared differences constrain differences only. They do not determine the absolute mass scale, require every individual mass to be nonzero, select Dirac versus Majorana character or supply a unique mass-generation extension. Mass origin remains a separate scope.",
         "Continuous weak scattering or repeated projective collapse is not the coherent phase mechanism. A specified source, medium and detector determine which probability or weighted response is appropriate; transport and cosmological claims need additional inputs."
       ]
@@ -434,7 +434,7 @@ const contracts = {
       "openObligations": [
         "Use the closed unitary active two- or three-state convention already declared. Oscillatory flavor probabilities require both mixing of contributing components and nonzero relative mass-squared differences, together with the stated production/detection and propagation coherence conditions. A degenerate pair, unmixed channel or suppressed interference need not show an oscillatory signal.",
         "A single vacuum mass eigenstate acquires only a phase in its internal state; its flavor-readout probabilities |U_alpha,i|^2 do not oscillate. An incoherent density matrix diagonal in the vacuum mass basis also has constant vacuum flavor probabilities. These are not statements that vacuum mass states remain instantaneous eigenstates in arbitrary varying matter, or that packet position is stationary.",
-        "Leptonic charged-current flavor labels specify preparation/readout; mass differences and mixing specify model inputs. They do not establish necessary physical parents, an arising chronology, weights 0.3/0.7, N_min=N_crit=1, a SOMA phase/type or the claim that flavor identity can never be dynamically autonomous. No causal maintenance or downward constraint is inferred from these definition dependencies.",
+        "Leptonic charged-current flavor labels specify preparation/readout; mass differences and mixing specify model inputs. They do not establish an arising chronology or the claim that flavor identity can never be dynamically autonomous. No causal maintenance or downward constraint is inferred from these definition dependencies.",
         "Within this oscillation model, mass-squared differences constrain differences only. They do not determine the absolute mass scale, require every individual mass to be nonzero, select Dirac versus Majorana character or supply a unique mass-generation extension. Mass origin remains a separate scope.",
         "Continuous weak scattering or repeated projective collapse is not the coherent phase mechanism. A specified source, medium and detector determine which probability or weighted response is appropriate; transport and cosmological claims need additional inputs."
       ]
@@ -544,7 +544,7 @@ const contracts = {
       "target": "phys:neutrino-propagation-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "Charged-current flavor labels define preparation and readout, rather than a necessary material parent or an electric-charge identity.",
+      "assertion": "Charged-current flavor labels define preparation and readout, rather than a necessary material precursor or an electric-charge identity.",
       "claimIds": [
         "D-phys-neutrino-propagation-scope"
       ]

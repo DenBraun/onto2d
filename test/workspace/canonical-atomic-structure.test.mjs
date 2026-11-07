@@ -210,16 +210,16 @@ test("the ten-percent residual-x_e comparison is one historical modelling progra
   ]);
 });
 
-test("catalogue ancestry, equal parent weights and carrier minima remain excluded scientific defaults", async () => {
+test("a BBN formation history, equal-strength Coulomb ancestry and constituent counts remain excluded from the atomic scope", async () => {
   await rejects([
     ["the static atom need not inherit the selected BBN calculation as its actual history", (data) =>
-      dropLimit(data, synthesis, "Original parent 2.0 is primordial")],
+      dropLimit(data, synthesis, "do not require the selected BBN calculation as their formation history")],
     ["an effective Coulomb input is not an equal-strength causal ancestry estimate", (data) =>
-      dropLimit(data, synthesis, "original weights 0.5/0.5")],
-    ["one nucleus and one electron are not one BBN body and two resonant modes", (data) =>
-      dropLimit(data, synthesis, "physical-body N_min=N_crit=1")],
-    ["generic Schrodinger/Dirac and spectroscopy paragraphs cannot prove all-element taxonomy", (data) =>
-      dropLimit(data, synthesis, "unnamed Schrodinger/Dirac")],
+      dropLimit(data, synthesis, "not establish equal causal strength with nuclear ancestry")],
+    ["one nucleus and one electron are a model constituent count, not a measured critical threshold", (data) =>
+      dropLimit(data, synthesis, "A model constituent count is not a measured critical threshold")],
+    ["a one-electron result cannot derive many-electron filling, bonding or all-element taxonomy", (data) =>
+      dropLimit(data, synthesis, "excludes a derivation of many-electron Pauli filling")],
     ["the synthesis cannot claim a shared formation experiment or many-electron stability theorem", (data) => {
       claim(data, method).limitations = [
         "The combined evidence independently measures one shared formation experiment and proves many-electron stability."
@@ -251,9 +251,6 @@ test("the expanded Seager reading retains its original boundary source and admit
     }, /Unreviewed physics passage/],
     ["the recombination context cannot borrow primary experimental ownership from Lamb", (changed) => {
       study(changed).sourceId = "lamb1947";
-    }, /Atomic structure|source|publication/i],
-    ["source-card ancestry remains provenance rather than scientific support", (changed) => {
-      claim(changed, synthesis).citations.find((citation) => citation.sourceId === "legacy-2").role = "supports";
-    }, /Atomic structure|primary particle evidence/]
+    }, /Atomic structure|source|publication/i]
   ]);
 });

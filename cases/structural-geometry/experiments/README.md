@@ -1,70 +1,47 @@
-# Stage 3: typed and local-weight experiments
+# Stage 3: typed and local-weight experiment controls
 
-Status: reproducible descriptive experiments; no default metric promotion.
-Date: 2026-09-06.
+Status: reproducible synthetic controls; no default metric promotion.
 
-The full Causal Emergence source lock from the foundation is reused unchanged.
-[suite.json](suite.json) freezes 72 exact experiment hashes and summaries:
-two metrics across all edges, four necessity regimes, seven role subsets and
-24 observed dictionary-code channels (13 dependency types, 5 interaction modes
-and 6 causal directions). All 249 nodes remain in every run. Channel membership
-can overlap and is never pooled into an aggregate score.
+[controls.json](controls.json) declares five small graphs for the typed
+selections and the optional `inverse-target-share-v1` metric. Their edges,
+weights and typed fields are constructed controls, not observations:
 
-Each full experiment is recomputed and hash-checked separately by the builder;
-the suite avoids duplicating all per-edge results for every selection. The
-[full weighted artifact](weighted-full.json) and
-[source weight audit](weight-audit.json) are also frozen in full. The builder
-never rewrites the original source lock, unit artifacts or source Model Pack.
+| Control | Purpose |
+|---|---|
+| `typed-diamond` | Four nested necessity stages, overlapping role and channel memberships, and incoming weights 0.25/0.75 at `d` |
+| `rational-root` | Exact perfect-square length ratios and an exact zero curvature |
+| `irrational-feedback` | A directed cycle with irrational length ratios, so bounds remain intervals |
+| `non-unit-sums` | Incoming source weights that do not sum to one |
+| `isolated` | A single vertex with no edges |
+
+The [Python reference](reference.py) uses Fraction arithmetic and Decimal square
+roots at 100 digits; [expected.json](expected.json) freezes its outward bounds
+for the weighted metric on every control. The JavaScript runtime uses BigInt
+integer square roots. The package tests compare both implementations across
+filtered selections, both metrics and Unicode identifiers, and separately
+check weight audits, invalid weights and unresolved signs.
+These are separate implementations in the repository, not independent review.
+The suite contains synthetic controls only; no real-source experiment is frozen.
 
 ```sh
 npm run structural-geometry:experiments:check
-npm run structural-geometry:experiments:report
 ```
 
-The first command verifies all 72 runs, the six necessity transitions, frozen
-Python reference controls and the focused API/schema tests. The second prints
-a verified comparison table. Both are read-only. Regeneration is explicit with
-`npm run structural-geometry:experiments:build`; inspect the resulting diff.
-To regenerate only reference arithmetic controls, use
-`python3 cases/structural-geometry/experiments/reference.py --write`.
+The check verifies the frozen reference controls and runs the focused API,
+schema and browser-bundle tests. It is read-only. To regenerate the reference
+controls deliberately, run
+`python3 cases/structural-geometry/experiments/reference.py --write` and inspect
+the resulting diff.
 
-## What the current result says
-
-| Necessity endpoint | Edges | Strong components | Nodes in directed cycles |
-|---|---:|---:|---:|
-| necessary | 613 | 244 | 8 |
-| + enabling | 863 | 223 | 29 |
-| + contextual | 958 | 214 | 38 |
-| + optional | 971 | 214 | 38 |
-
-These connectivity counts are shared by both metrics, since changing lengths
-does not change which edges the selection contains. Every regime remains one
-weak component and has no isolated nodes in this particular source snapshot.
-In other models, isolated nodes remain visible and are counted explicitly.
-
-Incoming source weights sum to 0.9 at `0.18`, 1.9 at `0.2`, and 0.9 at `0.9`.
-All current weights fall inside the experimental positive-weight bounds. The
-inverse-share hypothesis normalizes in a separate full-source metric context;
-it does not repair these findings in source data or re-normalize each filtered
-graph. In the full graph, 491 edge curvatures are lower than the unit baseline,
-479 higher and one equal. This is sensitivity to a metric hypothesis, not proof
-of increased robustness or usefulness. Unit remains the default.
-
-## Controls and precision
-
-[controls.json](controls.json) supplies typed diamond, exact-root, irrational
-feedback, non-unit-sum and isolated-node controls. The separate
-[Python reference](reference.py) uses Fraction arithmetic and Decimal square
-roots at 100 digits; [expected.json](expected.json) freezes its outward bounds.
-The JavaScript runtime uses BigInt integer square roots. Tests compare both
-implementations across filtered selections and the complete weighted graph.
-These are separate implementations in the repository, not independent review.
+## Precision
 
 Curvature values are intervals in integer ticks, where one tick is 10^-12.
 `lowerTicks`/`upperTicks` are decimal strings. An interval touching zero is not
 declared positive or negative unless its entire range permits that conclusion;
 exact [0,0] is distinguished from unresolved sign. They are computational bounds
 under the declared metric, not confidence intervals or measured precision.
+The inverse-share hypothesis normalizes over the full incoming source
+population, not over each filtered selection. Unit remains the default.
 
 Read the [experiment contract](../../../docs/structural-geometry/GEOMETRY.md#typed-filtration-and-local-weight-experiments)
 for selection, normalization, arithmetic, identity and resource limits.

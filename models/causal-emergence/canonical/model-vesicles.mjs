@@ -21,11 +21,11 @@ export const MODEL_VESICLES_RECORDS = {
       "review": {
         "extent": "complete-main-scientific-text-methods-captions-and-ten-page-supplement",
         "locators": [
-          "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
-          "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
-          "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
-          "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
-          "Nature 454(7200),122-125, Figure 1 conceptual-model caption; final main-text autotrophic/heterotrophic interpretation; Supplementary Information page 6 Figure S5 mechanism schematic"
+          "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
+          "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
+          "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
+          "Nature 454(7200), 122-125, Figure 1 conceptual-model caption; final main-text autotrophic/heterotrophic interpretation; Supplementary Information page 6 Figure S5 mechanism schematic"
         ],
         "limit": "Original PMC author-manuscript scientific text, full Methods and figure captions were read. The complete ten-page publisher supplement was acquired at https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature07018/MediaObjects/41586_2008_BFnature07018_MOESM14_ESM.pdf; Figures S1-S7 captions, Table S1 and Supporting Online Text were read. Rendered Figure S6, Figure S7 and Table S1 were visually checked. No raw stopped-flow traces, permeability refit, gel densitometry or independent synthesis was performed. The original PMC author display misspells Sylvia as Slvia; publisher and registry agree on Sylvia Tobé. Online publication was 4 June 2008; issue date was 3 July 2008. Main-text indefinite-retention wording is bounded by the actually displayed 24-hour Figure S6 and the 24-hour Methods assay. The generic Figure 1 complete-replication/division cycle is a conceptual model, not an experiment completed in this paper. Metadata and limited correction search checked 2026-10-20 against the original article and DOI registry. Title, authors, journal, volume, issue, pages and DOI agree. The DOI registry lists a linked review, not an erratum. No correction, erratum or retraction surfaced in the limited exact-DOI/title searches, and no update-to/updated-by entry was supplied in the retrieved registry record. This does not establish the absence of later corrections or exhaustive literature coverage."
       }
@@ -46,10 +46,10 @@ export const MODEL_VESICLES_RECORDS = {
       "review": {
         "extent": "complete-main-scientific-text-methods-captions-and-fourteen-page-supplement",
         "locators": [
-          "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
-          "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
-          "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
-          "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
+          "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
+          "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
+          "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
         ],
         "limit": "Complete original main scientific text, Methods and figure captions were read from Europe PMC JATS at https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2669828/fullTextXML. Complete fourteen-page ACS Supporting Information was acquired from https://ndownloader.figshare.com/files/3582252, bound by official ACS/Figshare resource DOI 10.1021/ja900919c; title and authors agree. That repository calls the PDF ja900919c_si_002.pdf, while the PMC/publisher listing calls the text PDF ja900919c_si_001.pdf. Text S1, equations and Figures S1-S6 captions were read; rendered Figures S3, S4 and S6 were visually checked. The QuickTime movies were not watched; raw uncropped movies and underlying images were not acquired, digitized or refitted. Online publication was 26 March 2009; issue date was 22 April 2009. FRET, microscopic estimates and the dependent cylinder model are one publication/data lineage, not independent laboratories. Only the declared oleate preparations below are admitted as study contexts; other compositions, glycine recovery, three-cycle dye counting and ammonium-acetate controls remain read source boundaries, not additional duplicate studies. Metadata and limited correction search checked 2026-10-20 against the original article and DOI registry. Title, authors, journal, volume, issue, pages and DOI agree. The DOI registry relation object is empty. No correction, erratum or retraction surfaced in the limited exact-DOI/title searches, and no update-to/updated-by entry was supplied in the retrieved registry record. This does not establish the absence of later corrections or exhaustive literature coverage."
       }
@@ -71,28 +71,10 @@ export const MODEL_VESICLES_RECORDS = {
       "review": {
         "extent": "complete-main-scientific-text-table-and-figure-captions; supporting-information-unread",
         "locators": [
-          "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
-          "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
+          "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
+          "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
         ],
         "limit": "The complete original PMC author-manuscript main scientific text, Table 1 and footnote and Figures 1-3 captions were read. Supporting Online Material was identified but its publisher/PMC download endpoints were inaccessible; its methods, equations and controls were not read. Consequently the admitted tRNA comparison is restricted to the qualitative preparation and quantities actually specified in the main text. Do not borrow the oleate/sucrose Figure 1 buffer as an independently verified MA:GMM tRNA recipe; exact MA:GMM buffer, temperature, absolute FRET label concentrations, purification and full error model remain unresolved here. No raw FRET data, membrane-area calibration or exponential fit was replayed. Article date was 3 September 2004; the 2015 PMC availability date is not a new experiment. The abstract and final paragraphs propose a connection from RNA replication to cellular evolution; the actual experiments use prepared nonreplicating osmolytes and do not compare replicase genotypes or measure genetic inheritance. Metadata and limited correction search checked 2026-10-20 against the original article and DOI registry. Title, authors, journal, volume, issue, pages and DOI agree. The DOI registry lists a linked review, not an erratum. No correction, erratum or retraction surfaced in the limited exact-DOI/title searches, and no update-to/updated-by entry was supplied in the retrieved registry record. This does not establish the absence of later corrections or exhaustive literature coverage."
-      }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
       }
     }
   ],
@@ -106,19 +88,19 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, Figure 1 conceptual-model caption; final main-text autotrophic/heterotrophic interpretation; Supplementary Information page 6 Figure S5 mechanism schematic",
+          "locator": "Nature 454(7200), 122-125, Figure 1 conceptual-model caption; final main-text autotrophic/heterotrophic interpretation; Supplementary Information page 6 Figure S5 mechanism schematic",
           "role": "limits",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
           "role": "limits",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs",
+          "locator": "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs",
           "role": "limits",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -139,7 +121,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -163,7 +145,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -174,12 +156,11 @@ export const MODEL_VESICLES_RECORDS = {
         "Fluorescent enclosure and membrane images support a bounded vesicle preparation, not an independently fitted hydrophobic free energy, curvature-elasticity law, universal equilibrium stability, size threshold or single molecular closure trajectory.",
         "The HPTS epifluorescence and membrane-labelled confocal images are distinct readout variants within this source preparation. Do not relabel all material as one unilamellar phospholipid membrane or infer a precise number of lamellae from an epifluorescence sphere.",
         "The selected result supports enclosure from supplied amphiphiles under the source preparation. It does not provide a thermodynamic formation-rate model, exhaustive bilayer/vesicle phase diagram or universal hydrophobic/packing/curvature energy decomposition.",
-        "Original parent 3.27 combines lipid biosynthesis and membrane formation, whereas these papers supply the amphiphiles. Biosynthesis is not a necessary process demonstrated by these vesicle experiments.",
-        "Original parents 2.13 colloids, 2.12 liquid organization and 2.6 dispersion now have finite, different canonical preparations. Their colloid nuclei, ambient-water correlations and atom-surface phase result are not evidence for this membrane preparation or universal prerequisites of its assembly.",
-        "Original parent declarations 2.13 weight 0.35 necessary, directions [0], modes [0, 1], dependency 10 Constraint; 2.12 weight 0.3 necessary, directions [0], modes [0], dependency 12 Environment; 2.6 weight 0.25 enabling, directions [0], modes [0, 1], dependency 10 Constraint; 3.27 weight 0.1 contextual, directions [0], modes [0, 2], dependency 3 Catalyst; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(2, 10), (2, 10), (2, 10), (1, 2)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], established status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "These papers supply the amphiphiles. Biosynthesis is not a necessary process demonstrated by these vesicle experiments.",
+        "Colloids, liquid organization and dispersion now have finite, different canonical preparations. Their colloid nuclei, ambient-water correlations and atom-surface phase result are not evidence for this membrane preparation or universal prerequisites of its assembly.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -195,7 +176,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -220,7 +201,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -245,7 +226,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -270,7 +251,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -295,7 +276,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -319,7 +300,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -343,7 +324,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -369,7 +350,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -395,7 +376,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -422,7 +403,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -449,7 +430,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -475,7 +456,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -501,7 +482,7 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
+          "locator": "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -528,13 +509,13 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
+          "locator": "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs",
+          "locator": "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         }
@@ -547,13 +528,12 @@ export const MODEL_VESICLES_RECORDS = {
         "The observed changes are approximately 21% area gain for swollen labelled vesicles and 23% loss for low-osmolarity labelled vesicles in the Table 1 tRNA arms. These are source-reported membrane-area responses, not growth of vesicle number, survival, persistence time or genotype-frequency enrichment.",
         "Bulk hydrolysed RNA oligomers and UMP are other source osmolytes; the source warns that oligomer-associated salts or minor components may affect transfer. Those arms are not independent replications or pooled as one universal RNA effect.",
         "A proposed link from faster RNA replication to cellular evolution remains conditional. No sustained heritable Darwinian evolution, adaptation, lineage selection coefficient or autonomous life cycle follows from this prepared-vesicle contrast.",
-        "The source provides a concrete differential membrane-growth effect under a prepared osmotic contrast, rather than the original generic simulation evidence. No agent-based or reaction-diffusion model, heterogeneous catalytic network, survival selection coefficient or simulated frequency trajectory is admitted.",
+        "The source provides a concrete differential membrane-growth effect under a prepared osmotic contrast. No agent-based or reaction-diffusion model, heterogeneous catalytic network, survival selection coefficient or simulated frequency trajectory is admitted.",
         "Relative membrane area, compartment number, persistence and genotype frequency count different domains. The measured tRNA-area contrast does not establish enrichment of compartment types, heritable Darwinian evolution or mature cellular selection.",
-        "Original parent 3.46 growth/division is not run in the Chen competition assay; parent 3.45 supplied RNA retention does not supply replication; parent 3.13 catalytic closure is absent. Their necessary/enabling labels do not become a measured common causal system.",
-        "Original parent declarations 3.46 weight 0.4 necessary, directions [0, 3], modes [2, 4], dependency 8 Selection; 3.45 weight 0.35 necessary, directions [0], modes [0, 4], dependency 6 Compartment; 3.13 weight 0.25 enabling, directions [0], modes [2], dependency 8 Selection; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(2, 10), (1, 2), (1, 2)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 4 Effect, Science [1, 2, 3], hypothesized status and requirements {\"MustCover\": [\"Constraint\"], \"ShouldCover\": [\"Resource\", \"Transport\"], \"OptionalCover\": [\"Selection\", \"Environment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Growth/division is not run in the Chen competition assay; supplied RNA retention does not supply replication; catalytic closure is absent.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -569,26 +549,19 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /43 is a research input; its generic evidence and defaults are not independent science."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The selected result supports enclosure from supplied amphiphiles under the source preparation. It does not provide a thermodynamic formation-rate model, exhaustive bilayer/vesicle phase diagram or universal hydrophobic/packing/curvature energy decomposition.",
-        "Original parent 3.27 combines lipid biosynthesis and membrane formation, whereas these papers supply the amphiphiles. Biosynthesis is not a necessary process demonstrated by these vesicle experiments.",
-        "Original parents 2.13 colloids, 2.12 liquid organization and 2.6 dispersion now have finite, different canonical preparations. Their colloid nuclei, ambient-water correlations and atom-surface phase result are not evidence for this membrane preparation or universal prerequisites of its assembly.",
-        "Original parent declarations 2.13 weight 0.35 necessary, directions [0], modes [0, 1], dependency 10 Constraint; 2.12 weight 0.3 necessary, directions [0], modes [0], dependency 12 Environment; 2.6 weight 0.25 enabling, directions [0], modes [0, 1], dependency 10 Constraint; 3.27 weight 0.1 contextual, directions [0], modes [0, 2], dependency 3 Catalyst; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(2, 10), (2, 10), (2, 10), (1, 2)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], established status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "These papers supply the amphiphiles. Biosynthesis is not a necessary process demonstrated by these vesicle experiments.",
+        "Colloids, liquid organization and dispersion now have finite, different canonical preparations. Their colloid nuclei, ambient-water correlations and atom-surface phase result are not evidence for this membrane preparation or universal prerequisites of its assembly.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -604,32 +577,25 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
+          "locator": "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs",
+          "locator": "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /48 is a research input; its generic evidence and defaults are not independent science."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "The source provides a concrete differential membrane-growth effect under a prepared osmotic contrast, rather than the original generic simulation evidence. No agent-based or reaction-diffusion model, heterogeneous catalytic network, survival selection coefficient or simulated frequency trajectory is admitted.",
+        "The source provides a concrete differential membrane-growth effect under a prepared osmotic contrast. No agent-based or reaction-diffusion model, heterogeneous catalytic network, survival selection coefficient or simulated frequency trajectory is admitted.",
         "Relative membrane area, compartment number, persistence and genotype frequency count different domains. The measured tRNA-area contrast does not establish enrichment of compartment types, heritable Darwinian evolution or mature cellular selection.",
-        "Original parent 3.46 growth/division is not run in the Chen competition assay; parent 3.45 supplied RNA retention does not supply replication; parent 3.13 catalytic closure is absent. Their necessary/enabling labels do not become a measured common causal system.",
-        "Original parent declarations 3.46 weight 0.4 necessary, directions [0, 3], modes [2, 4], dependency 8 Selection; 3.45 weight 0.35 necessary, directions [0], modes [0, 4], dependency 6 Compartment; 3.13 weight 0.25 enabling, directions [0], modes [2], dependency 8 Selection; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(2, 10), (1, 2), (1, 2)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 4 Effect, Science [1, 2, 3], hypothesized status and requirements {\"MustCover\": [\"Constraint\"], \"ShouldCover\": [\"Resource\", \"Transport\"], \"OptionalCover\": [\"Selection\", \"Environment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Growth/division is not run in the Chen competition assay; supplied RNA retention does not supply replication; catalytic closure is absent.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -645,38 +611,31 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /44 supplies the draft scope and defaults, not an independent experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The selected evidence concerns passive solute-specific exchange through prepared membranes. It does not establish active regulation, waste efflux, sustained proto-metabolism, every retained reactive intermediate or a universal homeostatic state.",
-        "Prepared solution pH and magnesium conditions delimit these assays. They are not evidence that parent 3.28 actively regulates pH/ionic balance or a demonstration of feedback control.",
-        "Original parent 3.43 supplies the relevant membrane preparation here. The existing 2.4 ion and 2.12 ambient-water scopes do not supply a measured ion-formation or water-organization mediator, and no necessary ancestral chain is inferred.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [1, 4], dependency 10 Constraint; 2.4 weight 0.3 necessary, directions [0], modes [1], dependency 10 Constraint; 3.28 weight 0.2 enabling, directions [3], modes [2], dependency 4 Regulation; 2.12 weight 0.1 contextual, directions [0], modes [0], dependency 12 Environment; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 1), (1, 1), (1, 1), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 3 Property, Science [1, 2, 3], well-supported status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Regulation\", \"Environment\"], \"OptionalCover\": [\"Gradient\", \"Information\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Prepared solution pH and magnesium conditions delimit these assays. They are not evidence of active pH/ionic-balance regulation or a demonstration of feedback control.",
+        "The amphiphile self-assembly scope supplies the relevant membrane preparation here. The existing ion and ambient-water scopes do not supply a measured ion-formation or water-organization mediator, and no necessary ancestral chain is inferred.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -694,38 +653,31 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /44 supplies the draft scope and defaults, not an independent experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The selected evidence concerns passive solute-specific exchange through prepared membranes. It does not establish active regulation, waste efflux, sustained proto-metabolism, every retained reactive intermediate or a universal homeostatic state.",
-        "Prepared solution pH and magnesium conditions delimit these assays. They are not evidence that parent 3.28 actively regulates pH/ionic balance or a demonstration of feedback control.",
-        "Original parent 3.43 supplies the relevant membrane preparation here. The existing 2.4 ion and 2.12 ambient-water scopes do not supply a measured ion-formation or water-organization mediator, and no necessary ancestral chain is inferred.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [1, 4], dependency 10 Constraint; 2.4 weight 0.3 necessary, directions [0], modes [1], dependency 10 Constraint; 3.28 weight 0.2 enabling, directions [3], modes [2], dependency 4 Regulation; 2.12 weight 0.1 contextual, directions [0], modes [0], dependency 12 Environment; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 1), (1, 1), (1, 1), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 3 Property, Science [1, 2, 3], well-supported status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Regulation\", \"Environment\"], \"OptionalCover\": [\"Gradient\", \"Information\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Prepared solution pH and magnesium conditions delimit these assays. They are not evidence of active pH/ionic-balance regulation or a demonstration of feedback control.",
+        "The amphiphile self-assembly scope supplies the relevant membrane preparation here. The existing ion and ambient-water scopes do not supply a measured ion-formation or water-organization mediator, and no necessary ancestral chain is inferred.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -743,44 +695,37 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /45 supplies the draft scope and defaults, not an independent experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Vesicles and coacervate droplets are alternative compartment examples, not joint necessities. This admission concerns prepared lipid vesicles and does not import a coacervate/LLPS experiment, fusion criterion or condensate threshold from parent 3.18.",
+        "Vesicles and coacervate droplets are alternative compartment examples, not joint necessities. This admission concerns prepared lipid vesicles and does not import a coacervate/LLPS experiment, fusion criterion or condensate threshold.",
         "The positive scope is supplied-polymer retention, a finite externally fed template reaction and short-RNA partition. No retained peptide/enzyme, general catalytic enhancement, autocatalytic closure, co-stabilized network, genotype-phenotype coupling or persistent amplification relative to a matched unconfined network is established.",
-        "Parent 3.13 autocatalytic networks is not instantiated by passive RNA cargo or homopolymer primer extension. Parent 3.44 passive permeability and parent 3.43 enclosure have named finite contexts rather than universal necessity.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [0, 4], dependency 6 Compartment; 3.18 weight 0.3 enabling, directions [0], modes [0, 1], dependency 6 Compartment; 3.13 weight 0.2 enabling, directions [0], modes [0, 2], dependency 4 Regulation; 3.44 weight 0.1 contextual, directions [1], modes [2], dependency 4 Regulation; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 1), (1, 1), (1, 2), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], well-supported status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Autocatalytic networks are not instantiated by passive RNA cargo or homopolymer primer extension. Passive permeability and enclosure have named finite contexts rather than universal necessity.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -798,44 +743,37 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /45 supplies the draft scope and defaults, not an independent experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Vesicles and coacervate droplets are alternative compartment examples, not joint necessities. This admission concerns prepared lipid vesicles and does not import a coacervate/LLPS experiment, fusion criterion or condensate threshold from parent 3.18.",
+        "Vesicles and coacervate droplets are alternative compartment examples, not joint necessities. This admission concerns prepared lipid vesicles and does not import a coacervate/LLPS experiment, fusion criterion or condensate threshold.",
         "The positive scope is supplied-polymer retention, a finite externally fed template reaction and short-RNA partition. No retained peptide/enzyme, general catalytic enhancement, autocatalytic closure, co-stabilized network, genotype-phenotype coupling or persistent amplification relative to a matched unconfined network is established.",
-        "Parent 3.13 autocatalytic networks is not instantiated by passive RNA cargo or homopolymer primer extension. Parent 3.44 passive permeability and parent 3.43 enclosure have named finite contexts rather than universal necessity.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [0, 4], dependency 6 Compartment; 3.18 weight 0.3 enabling, directions [0], modes [0, 1], dependency 6 Compartment; 3.13 weight 0.2 enabling, directions [0], modes [0, 2], dependency 4 Regulation; 3.44 weight 0.1 contextual, directions [1], modes [2], dependency 4 Regulation; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 1), (1, 1), (1, 2), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], well-supported status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Autocatalytic networks are not instantiated by passive RNA cargo or homopolymer primer extension. Passive permeability and enclosure have named finite contexts rather than universal necessity.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -853,38 +791,31 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
           "role": "supports",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /46 supplies the draft scope and defaults, not an independent experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The source demonstrates externally fed membrane growth and externally forced fission operations under specified conditions. It does not demonstrate coupled internal biosynthesis, self-maintenance, internally powered division or autonomous protocell reproduction.",
         "The source describes random short-RNA distribution with daughter volume, rather than the original non-random inheritance claim. RNA is supplied and nonreplicating; indefinitely renewable populations and sustained genetic transmission are excluded from the positive finding.",
-        "Original parent 3.27 lipid biosynthesis is not necessary in this supplied-lipid system. Original parent 2.15 phase regimes supplies a separate bulk/model scope and does not measure this membrane instability or fission threshold. Parent 3.45 cargo retention is a separate RNA context.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [0, 3, 4], dependency 6 Compartment; 3.27 weight 0.35 necessary, directions [0], modes [0, 4], dependency 3 Catalyst; 2.15 weight 0.15 enabling, directions [3], modes [3, 1], dependency 10 Constraint; 3.45 weight 0.1 contextual, directions [1], modes [2], dependency 4 Regulation; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 2), (1, 2), (1, 2), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], hypothesized status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Lipid biosynthesis is not necessary in this supplied-lipid system. Phase-regime organization supplies a separate bulk/model scope and does not measure this membrane instability or fission threshold. Cargo retention is a separate RNA context.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -901,38 +832,31 @@ export const MODEL_VESICLES_RECORDS = {
       "citations": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6",
           "role": "method",
           "note": "Original primary passage actually read; source-reported result or interpretation under its stated preparation. No independent experiment, numerical replay or global mechanism is claimed."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /46 supplies the draft scope and defaults, not an independent experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The source demonstrates externally fed membrane growth and externally forced fission operations under specified conditions. It does not demonstrate coupled internal biosynthesis, self-maintenance, internally powered division or autonomous protocell reproduction.",
         "The source describes random short-RNA distribution with daughter volume, rather than the original non-random inheritance claim. RNA is supplied and nonreplicating; indefinitely renewable populations and sustained genetic transmission are excluded from the positive finding.",
-        "Original parent 3.27 lipid biosynthesis is not necessary in this supplied-lipid system. Original parent 2.15 phase regimes supplies a separate bulk/model scope and does not measure this membrane instability or fission threshold. Parent 3.45 cargo retention is a separate RNA context.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [0, 3, 4], dependency 6 Compartment; 3.27 weight 0.35 necessary, directions [0], modes [0, 4], dependency 3 Catalyst; 2.15 weight 0.15 enabling, directions [3], modes [3, 1], dependency 10 Constraint; 3.45 weight 0.1 contextual, directions [1], modes [2], dependency 4 Regulation; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 2), (1, 2), (1, 2), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], hypothesized status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Lipid biosynthesis is not necessary in this supplied-lipid system. Phase-regime organization supplies a separate bulk/model scope and does not measure this membrane instability or fission threshold. Cargo retention is a separate RNA context.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ],
       "contextIds": [
@@ -955,15 +879,15 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, Figure 1 conceptual-model caption; final main-text autotrophic/heterotrophic interpretation; Supplementary Information page 6 Figure S5 mechanism schematic"
+          "locator": "Nature 454(7200), 122-125, Figure 1 conceptual-model caption; final main-text autotrophic/heterotrophic interpretation; Supplementary Information page 6 Figure S5 mechanism schematic"
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
         },
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
+          "locator": "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
         }
       ],
       "openObligations": [
@@ -985,7 +909,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions"
         }
       ],
       "openObligations": [
@@ -1008,11 +932,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions"
         }
       ],
       "openObligations": [
@@ -1020,12 +940,11 @@ export const MODEL_VESICLES_RECORDS = {
         "Fluorescent enclosure and membrane images support a bounded vesicle preparation, not an independently fitted hydrophobic free energy, curvature-elasticity law, universal equilibrium stability, size threshold or single molecular closure trajectory.",
         "The HPTS epifluorescence and membrane-labelled confocal images are distinct readout variants within this source preparation. Do not relabel all material as one unilamellar phospholipid membrane or infer a precise number of lamellae from an epifluorescence sphere.",
         "The selected result supports enclosure from supplied amphiphiles under the source preparation. It does not provide a thermodynamic formation-rate model, exhaustive bilayer/vesicle phase diagram or universal hydrophobic/packing/curvature energy decomposition.",
-        "Original parent 3.27 combines lipid biosynthesis and membrane formation, whereas these papers supply the amphiphiles. Biosynthesis is not a necessary process demonstrated by these vesicle experiments.",
-        "Original parents 2.13 colloids, 2.12 liquid organization and 2.6 dispersion now have finite, different canonical preparations. Their colloid nuclei, ambient-water correlations and atom-surface phase result are not evidence for this membrane preparation or universal prerequisites of its assembly.",
-        "Original parent declarations 2.13 weight 0.35 necessary, directions [0], modes [0, 1], dependency 10 Constraint; 2.12 weight 0.3 necessary, directions [0], modes [0], dependency 12 Environment; 2.6 weight 0.25 enabling, directions [0], modes [0, 1], dependency 10 Constraint; 3.27 weight 0.1 contextual, directions [0], modes [0, 2], dependency 3 Catalyst; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(2, 10), (2, 10), (2, 10), (1, 2)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], established status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "These papers supply the amphiphiles. Biosynthesis is not a necessary process demonstrated by these vesicle experiments.",
+        "Colloids, liquid organization and dispersion now have finite, different canonical preparations. Their colloid nuclei, ambient-water correlations and atom-surface phase result are not evidence for this membrane preparation or universal prerequisites of its assembly.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ]
     },
@@ -1042,7 +961,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
         }
       ],
       "openObligations": [
@@ -1065,7 +984,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
         }
       ],
       "openObligations": [
@@ -1088,7 +1007,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
         }
       ],
       "openObligations": [
@@ -1111,7 +1030,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
         }
       ],
       "openObligations": [
@@ -1134,7 +1053,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
         }
       ],
       "openObligations": [
@@ -1156,7 +1075,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
         }
       ],
       "openObligations": [
@@ -1178,7 +1097,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
         }
       ],
       "openObligations": [
@@ -1202,7 +1121,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
         }
       ],
       "openObligations": [
@@ -1226,7 +1145,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
         }
       ],
       "openObligations": [
@@ -1251,7 +1170,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
         }
       ],
       "openObligations": [
@@ -1276,7 +1195,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
         }
       ],
       "openObligations": [
@@ -1300,7 +1219,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
         }
       ],
       "openObligations": [
@@ -1324,7 +1243,7 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption"
+          "locator": "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption"
         }
       ],
       "openObligations": [
@@ -1350,15 +1269,11 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption"
+          "locator": "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption"
         },
         {
           "sourceId": "chen2004-vesicle-competition",
-          "locator": "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
+          "locator": "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
         }
       ],
       "openObligations": [
@@ -1368,13 +1283,12 @@ export const MODEL_VESICLES_RECORDS = {
         "The observed changes are approximately 21% area gain for swollen labelled vesicles and 23% loss for low-osmolarity labelled vesicles in the Table 1 tRNA arms. These are source-reported membrane-area responses, not growth of vesicle number, survival, persistence time or genotype-frequency enrichment.",
         "Bulk hydrolysed RNA oligomers and UMP are other source osmolytes; the source warns that oligomer-associated salts or minor components may affect transfer. Those arms are not independent replications or pooled as one universal RNA effect.",
         "A proposed link from faster RNA replication to cellular evolution remains conditional. No sustained heritable Darwinian evolution, adaptation, lineage selection coefficient or autonomous life cycle follows from this prepared-vesicle contrast.",
-        "The source provides a concrete differential membrane-growth effect under a prepared osmotic contrast, rather than the original generic simulation evidence. No agent-based or reaction-diffusion model, heterogeneous catalytic network, survival selection coefficient or simulated frequency trajectory is admitted.",
+        "The source provides a concrete differential membrane-growth effect under a prepared osmotic contrast. No agent-based or reaction-diffusion model, heterogeneous catalytic network, survival selection coefficient or simulated frequency trajectory is admitted.",
         "Relative membrane area, compartment number, persistence and genotype frequency count different domains. The measured tRNA-area contrast does not establish enrichment of compartment types, heritable Darwinian evolution or mature cellular selection.",
-        "Original parent 3.46 growth/division is not run in the Chen competition assay; parent 3.45 supplied RNA retention does not supply replication; parent 3.13 catalytic closure is absent. Their necessary/enabling labels do not become a measured common causal system.",
-        "Original parent declarations 3.46 weight 0.4 necessary, directions [0, 3], modes [2, 4], dependency 8 Selection; 3.45 weight 0.35 necessary, directions [0], modes [0, 4], dependency 6 Compartment; 3.13 weight 0.25 enabling, directions [0], modes [2], dependency 8 Selection; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(2, 10), (1, 2), (1, 2)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 4 Effect, Science [1, 2, 3], hypothesized status and requirements {\"MustCover\": [\"Constraint\"], \"ShouldCover\": [\"Resource\", \"Transport\"], \"OptionalCover\": [\"Selection\", \"Environment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Growth/division is not run in the Chen competition assay; supplied RNA retention does not supply replication; catalytic closure is absent.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ]
     },
@@ -1392,29 +1306,24 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
+          "locator": "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
+          "locator": "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
         }
       ],
       "openObligations": [
         "The selected evidence concerns passive solute-specific exchange through prepared membranes. It does not establish active regulation, waste efflux, sustained proto-metabolism, every retained reactive intermediate or a universal homeostatic state.",
-        "Prepared solution pH and magnesium conditions delimit these assays. They are not evidence that parent 3.28 actively regulates pH/ionic balance or a demonstration of feedback control.",
-        "Original parent 3.43 supplies the relevant membrane preparation here. The existing 2.4 ion and 2.12 ambient-water scopes do not supply a measured ion-formation or water-organization mediator, and no necessary ancestral chain is inferred.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [1, 4], dependency 10 Constraint; 2.4 weight 0.3 necessary, directions [0], modes [1], dependency 10 Constraint; 3.28 weight 0.2 enabling, directions [3], modes [2], dependency 4 Regulation; 2.12 weight 0.1 contextual, directions [0], modes [0], dependency 12 Environment; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 1), (1, 1), (1, 1), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 3 Property, Science [1, 2, 3], well-supported status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Regulation\", \"Environment\"], \"OptionalCover\": [\"Gradient\", \"Information\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Prepared solution pH and magnesium conditions delimit these assays. They are not evidence of active pH/ionic-balance regulation or a demonstration of feedback control.",
+        "The amphiphile self-assembly scope supplies the relevant membrane preparation here. The existing ion and ambient-water scopes do not supply a measured ion-formation or water-organization mediator, and no necessary ancestral chain is inferred.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ]
     },
@@ -1432,33 +1341,28 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
+          "locator": "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
         },
         {
           "sourceId": "mansy2008-model-protocell",
-          "locator": "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
+          "locator": "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
         }
       ],
       "openObligations": [
-        "Vesicles and coacervate droplets are alternative compartment examples, not joint necessities. This admission concerns prepared lipid vesicles and does not import a coacervate/LLPS experiment, fusion criterion or condensate threshold from parent 3.18.",
+        "Vesicles and coacervate droplets are alternative compartment examples, not joint necessities. This admission concerns prepared lipid vesicles and does not import a coacervate/LLPS experiment, fusion criterion or condensate threshold.",
         "The positive scope is supplied-polymer retention, a finite externally fed template reaction and short-RNA partition. No retained peptide/enzyme, general catalytic enhancement, autocatalytic closure, co-stabilized network, genotype-phenotype coupling or persistent amplification relative to a matched unconfined network is established.",
-        "Parent 3.13 autocatalytic networks is not instantiated by passive RNA cargo or homopolymer primer extension. Parent 3.44 passive permeability and parent 3.43 enclosure have named finite contexts rather than universal necessity.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [0, 4], dependency 6 Compartment; 3.18 weight 0.3 enabling, directions [0], modes [0, 1], dependency 6 Compartment; 3.13 weight 0.2 enabling, directions [0], modes [0, 2], dependency 4 Regulation; 3.44 weight 0.1 contextual, directions [1], modes [2], dependency 4 Regulation; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 1), (1, 1), (1, 2), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], well-supported status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Autocatalytic networks are not instantiated by passive RNA cargo or homopolymer primer extension. Passive permeability and enclosure have named finite contexts rather than universal necessity.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ]
     },
@@ -1476,29 +1380,24 @@ export const MODEL_VESICLES_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
+          "locator": "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
         },
         {
           "sourceId": "zhu2009-growth-division",
-          "locator": "JACS 131(15),5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
+          "locator": "JACS 131(15), 5705-5713, Results: Mechanism of Initiation of Filamentous Vesicle Growth, Figures 5-6; Discussion; Supporting Information pages S5-S6 Critical Shear Rate for Vesicle Division, page S10 Figure S3, page S11 Figure S4 and page S13 Figure S6"
         }
       ],
       "openObligations": [
         "The source demonstrates externally fed membrane growth and externally forced fission operations under specified conditions. It does not demonstrate coupled internal biosynthesis, self-maintenance, internally powered division or autonomous protocell reproduction.",
         "The source describes random short-RNA distribution with daughter volume, rather than the original non-random inheritance claim. RNA is supplied and nonreplicating; indefinitely renewable populations and sustained genetic transmission are excluded from the positive finding.",
-        "Original parent 3.27 lipid biosynthesis is not necessary in this supplied-lipid system. Original parent 2.15 phase regimes supplies a separate bulk/model scope and does not measure this membrane instability or fission threshold. Parent 3.45 cargo retention is a separate RNA context.",
-        "Original parent declarations 3.43 weight 0.4 necessary, directions [0], modes [0, 3, 4], dependency 6 Compartment; 3.27 weight 0.35 necessary, directions [0], modes [0, 4], dependency 3 Catalyst; 2.15 weight 0.15 enabling, directions [3], modes [3, 1], dependency 10 Constraint; 3.45 weight 0.1 contextual, directions [1], modes [2], dependency 4 Regulation; all OntologicalRole arising, are uncalibrated catalogue assertions, not measured causal fractions, construction rules or universal necessity.",
-        "Original carrier group 2 Functional material/type 7 Macromolecular complex, per-parent minimum/critical pairs [(1, 2), (1, 2), (1, 2), (1, 1)] and null saturation are not verified vesicle, lipid, polymer or population thresholds. Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
-        "Original Level 3, Phase 3 Threshold transition, TypeRole 0 Process, Science [1, 2, 3], hypothesized status and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are display/coverage choices, not measured historical stages or biochemical necessities. Named reagents, imposed medium, feed and shear are actual preparation inputs; the categories add no independently verified catalyst, regulator, transport or selective resource requirement.",
-        "Both original Evidence placeholders have null DOI/Link. They are replaced only by the named finite observations actually read; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
+        "Lipid biosynthesis is not necessary in this supplied-lipid system. Phase-regime organization supplies a separate bulk/model scope and does not measure this membrane instability or fission threshold. Cargo retention is a separate RNA context.",
+        "Vesicle diameter, lipid equivalents, nucleotide-equivalent concentration, FRET area and fluorescent compartment counts have different units and domains.",
+        "Named reagents, imposed medium, feed and shear are actual preparation inputs.",
+        "Only the named finite observations actually read are admitted; generic thermodynamic, mechanical, diffusion, reaction-network or population-model assertions are not additional reviewed sources.",
         "Results are source-reported. No raw-data refit, transport simulation, new experimental reproduction or completed living-cell reconstruction is admitted."
       ]
     }
@@ -1915,7 +1814,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-fourteen-page-supplement",
       "reviewedLocators": [
-        "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions"
+        "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Adding Micelles and Imaging; Results: Vesicle Growth and Division; Figure 1A-B and Figure 5B-D captions"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1021/ja900919c",
@@ -1942,7 +1841,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-ten-page-supplement",
       "reviewedLocators": [
-        "Nature 454(7200),122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
+        "Nature 454(7200), 122-125, main text on composition-dependent ribose permeation and Figure 2A-D; Methods: Sugar permeability; Supplementary Information page 9 Table S1 and page 4 Figure S3"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1038/nature07018",
@@ -1969,7 +1868,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-ten-page-supplement",
       "reviewedLocators": [
-        "Nature 454(7200),122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
+        "Nature 454(7200), 122-125, nucleotide-permeation main text and Figure 3A-D; Methods: Nucleotide permeability; Supplementary Information pages 2-3 Figures S1-S2, page 5 Figure S4 and pages 9-10 Supporting Online Text"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1038/nature07018",
@@ -1995,7 +1894,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-ten-page-supplement",
       "reviewedLocators": [
-        "Nature 454(7200),122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
+        "Nature 454(7200), 122-125, main-text oligonucleotide-retention paragraph; Methods: Vesicle preparation and Vesicle stability; Supplementary Information page 7 Figure S6"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1038/nature07018",
@@ -2023,7 +1922,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-ten-page-supplement",
       "reviewedLocators": [
-        "Nature 454(7200),122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
+        "Nature 454(7200), 122-125, main-text primer-extension and encapsulated-template paragraphs, Figure 4A and 4D; Methods: Vesicle preparation and Primer Extension Reactions; Supplementary Information page 8 Figure S7"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1038/nature07018",
@@ -2052,7 +1951,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-fourteen-page-supplement",
       "reviewedLocators": [
-        "JACS 131(15),5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
+        "JACS 131(15), 5705-5713, Materials and Methods: FRET Assay and Vesicle Growth and Division; Results: Vesicle Growth and Division and Cycles of Growth and Division; Figure 2A; Supporting Information pages S2-S4 Model for Vesicle Shape Transformations"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1021/ja900919c",
@@ -2080,7 +1979,7 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-methods-captions-and-fourteen-page-supplement",
       "reviewedLocators": [
-        "JACS 131(15),5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
+        "JACS 131(15), 5705-5713, Materials and Methods: Preparation of Large Monodisperse Multilamellar Vesicles, Vesicle Counting and Measuring RNA Leakage; Results: Growth and Division of RNA-containing Model Protocells; Figure 3A-D"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1021/ja900919c",
@@ -2109,8 +2008,8 @@ export const MODEL_VESICLES_RECORDS = {
       ],
       "readExtent": "complete-main-scientific-text-table-and-figure-captions; supporting-information-unread",
       "reviewedLocators": [
-        "Science 305(5689),1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
-        "Science 305(5689),1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
+        "Science 305(5689), 1474-1476, main-text MA:GMM nucleic-acid competition paragraphs; Table 1 with oligomer-composition footnote; Figure 3A-B caption",
+        "Science 305(5689), 1474-1476, opening RNA-replication/osmotic-pressure hypothesis; main-text sucrose/POPC competition and Figure 1; final genome/replicase/Darwinian interpretation paragraphs"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1126/science.1100757",

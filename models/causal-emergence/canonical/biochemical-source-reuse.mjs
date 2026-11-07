@@ -2,24 +2,6 @@
 export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
   "sources": [
     {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "fung1981",
       "kind": "research-publication",
       "title": "Flow of information in the light-triggered cyclic nucleotide cascade of vision",
@@ -89,8 +71,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "The source remains abstract-and-bibliographic-metadata only. Rod species, full concentrations, preparation controls, complete kinetics and uncertainty are not resolved here.",
         "The admitted observations are the existing light-dependent transducin activation and activated-subunit PDE stimulation. They do not measure a complete electrical response, universal gain, branching topology, input integration or adaptive feedback.",
         "Separate spectroscopy, rod electrical recordings, cGMP patch conductance and modern vesicle-energy experiments are not one matched end-to-end preparation. No proto-cellular signalling system, general information channel, reversible-modification cycle or complete regulatory motif is established.",
-        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. The original folding/catalysis parents do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. Folding and catalysis do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation."
       ]
     },
     {
@@ -112,8 +93,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "The source remains abstract-and-bibliographic-metadata only. Rod species, full concentrations, preparation controls, complete kinetics and uncertainty are not resolved here.",
         "The admitted observations are the existing light-dependent transducin activation and activated-subunit PDE stimulation. They do not measure a complete electrical response, universal gain, branching topology, input integration or adaptive feedback.",
         "Separate spectroscopy, rod electrical recordings, cGMP patch conductance and modern vesicle-energy experiments are not one matched end-to-end preparation. No proto-cellular signalling system, general information channel, reversible-modification cycle or complete regulatory motif is established.",
-        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. The original folding/catalysis parents do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. Folding and catalysis do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation."
       ],
       "contextIds": [
         "fung1981"
@@ -138,8 +118,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "The source remains abstract-and-bibliographic-metadata only. Rod species, full concentrations, preparation controls, complete kinetics and uncertainty are not resolved here.",
         "The admitted observations are the existing light-dependent transducin activation and activated-subunit PDE stimulation. They do not measure a complete electrical response, universal gain, branching topology, input integration or adaptive feedback.",
         "Separate spectroscopy, rod electrical recordings, cGMP patch conductance and modern vesicle-energy experiments are not one matched end-to-end preparation. No proto-cellular signalling system, general information channel, reversible-modification cycle or complete regulatory motif is established.",
-        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. The original folding/catalysis parents do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. Folding and catalysis do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation."
       ],
       "contextIds": [
         "fung1981"
@@ -182,8 +161,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "WT sequence supports alternative condition-dependent folds; sequence alone is not a guarantee of one native structure. Temperature, salt, ligand, partner and engineered construct context jointly condition the observations.",
         "CC3 and W55D change sequence and conformation together. These comparisons support finite construct/structure/function associations, not an isolated quantitative sequence-to-fold causal law, a universal prediction bound or every protein/RNA sequence.",
         "No sequence replication, transmission, mutation-rate estimate, heritable biochemical role, repeated selective amplification or prebiotic population is measured. Functional assay differences are not organismal fitness or inherited information.",
-        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold."
       ]
     },
     {
@@ -223,8 +201,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "WT sequence supports alternative condition-dependent folds; sequence alone is not a guarantee of one native structure. Temperature, salt, ligand, partner and engineered construct context jointly condition the observations.",
         "CC3 and W55D change sequence and conformation together. These comparisons support finite construct/structure/function associations, not an isolated quantitative sequence-to-fold causal law, a universal prediction bound or every protein/RNA sequence.",
         "No sequence replication, transmission, mutation-rate estimate, heritable biochemical role, repeated selective amplification or prebiotic population is measured. Functional assay differences are not organismal fitness or inherited information.",
-        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold."
       ],
       "contextIds": [
         "tuinstra2008-lymphotactin-folds"
@@ -267,8 +244,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "WT sequence supports alternative condition-dependent folds; sequence alone is not a guarantee of one native structure. Temperature, salt, ligand, partner and engineered construct context jointly condition the observations.",
         "CC3 and W55D change sequence and conformation together. These comparisons support finite construct/structure/function associations, not an isolated quantitative sequence-to-fold causal law, a universal prediction bound or every protein/RNA sequence.",
         "No sequence replication, transmission, mutation-rate estimate, heritable biochemical role, repeated selective amplification or prebiotic population is measured. Functional assay differences are not organismal fitness or inherited information.",
-        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold."
       ],
       "contextIds": [
         "tuinstra2008-lymphotactin-folds"
@@ -470,8 +446,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "The source remains abstract-and-bibliographic-metadata only. Rod species, full concentrations, preparation controls, complete kinetics and uncertainty are not resolved here.",
         "The admitted observations are the existing light-dependent transducin activation and activated-subunit PDE stimulation. They do not measure a complete electrical response, universal gain, branching topology, input integration or adaptive feedback.",
         "Separate spectroscopy, rod electrical recordings, cGMP patch conductance and modern vesicle-energy experiments are not one matched end-to-end preparation. No proto-cellular signalling system, general information channel, reversible-modification cycle or complete regulatory motif is established.",
-        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. The original folding/catalysis parents do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. Folding and catalysis do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation."
       ],
       "level": 3
     },
@@ -494,8 +469,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "The source remains abstract-and-bibliographic-metadata only. Rod species, full concentrations, preparation controls, complete kinetics and uncertainty are not resolved here.",
         "The admitted observations are the existing light-dependent transducin activation and activated-subunit PDE stimulation. They do not measure a complete electrical response, universal gain, branching topology, input integration or adaptive feedback.",
         "Separate spectroscopy, rod electrical recordings, cGMP patch conductance and modern vesicle-energy experiments are not one matched end-to-end preparation. No proto-cellular signalling system, general information channel, reversible-modification cycle or complete regulatory motif is established.",
-        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. The original folding/catalysis parents do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. Folding and catalysis do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation."
       ],
       "level": 3
     },
@@ -510,10 +484,6 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
       "status": "evidence-scoped",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-3",
-          "locator": "/15"
-        },
-        {
           "sourceId": "fung1981",
           "locator": "Abstract"
         }
@@ -522,8 +492,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "The source remains abstract-and-bibliographic-metadata only. Rod species, full concentrations, preparation controls, complete kinetics and uncertainty are not resolved here.",
         "The admitted observations are the existing light-dependent transducin activation and activated-subunit PDE stimulation. They do not measure a complete electrical response, universal gain, branching topology, input integration or adaptive feedback.",
         "Separate spectroscopy, rod electrical recordings, cGMP patch conductance and modern vesicle-energy experiments are not one matched end-to-end preparation. No proto-cellular signalling system, general information channel, reversible-modification cycle or complete regulatory motif is established.",
-        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. The original folding/catalysis parents do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Folded components and biochemical activity occur in the supplied preparation; their formation is not measured. Folding and catalysis do not become universal prerequisites. Metabolic cycles and the separate CAPN allosteric experiments supply no measured mediating pathway in this retinal preparation."
       ],
       "level": 3
     },
@@ -552,8 +521,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "WT sequence supports alternative condition-dependent folds; sequence alone is not a guarantee of one native structure. Temperature, salt, ligand, partner and engineered construct context jointly condition the observations.",
         "CC3 and W55D change sequence and conformation together. These comparisons support finite construct/structure/function associations, not an isolated quantitative sequence-to-fold causal law, a universal prediction bound or every protein/RNA sequence.",
         "No sequence replication, transmission, mutation-rate estimate, heritable biochemical role, repeated selective amplification or prebiotic population is measured. Functional assay differences are not organismal fitness or inherited information.",
-        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold."
       ],
       "level": 3
     },
@@ -569,10 +537,6 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
       "status": "evidence-scoped",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-3",
-          "locator": "/42"
-        },
-        {
           "sourceId": "tuinstra2008-lymphotactin-folds",
           "locator": "Published pages 5058-5060, Figures 3-4 and Results: alternative structural contacts, CC3/W55D variants, XCR1 calcium-flux readouts, heparin interactions and WT/CC3 heparin controls"
         }
@@ -587,8 +551,7 @@ export const BIOCHEMICAL_SOURCE_REUSE_RECORDS = {
         "WT sequence supports alternative condition-dependent folds; sequence alone is not a guarantee of one native structure. Temperature, salt, ligand, partner and engineered construct context jointly condition the observations.",
         "CC3 and W55D change sequence and conformation together. These comparisons support finite construct/structure/function associations, not an isolated quantitative sequence-to-fold causal law, a universal prediction bound or every protein/RNA sequence.",
         "No sequence replication, transmission, mutation-rate estimate, heritable biochemical role, repeated selective amplification or prebiotic population is measured. Functional assay differences are not organismal fitness or inherited information.",
-        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold.",
-        "Catalogue level, phase, type/science/status and requirement codes are representation choices. Parent weights, necessity, directions/modes, carrier counts/minima and null saturation are not measured causal fractions, universal thresholds or a verified construction sequence. Generic evidence placeholders supply no additional publication or independent replication."
+        "Template complementarity concerns a separate nucleic-acid preparation and is not a necessary precursor for protein folding. The separate atom/surface dispersion and reaction-energy conventions do not supply matched causal ancestors or measured contributions to this sequence-conditioned fold."
       ],
       "level": 3
     },

@@ -6,7 +6,12 @@
   "additionalProperties": false,
   "properties": {
     "projectionPolicyId": {
-      "const": "source-parent-directed-v1"
+      "enum": [
+        "source-parent-directed-v1",
+        "canonical-relation-directed-v1",
+        "canonical-arising-causal-v1",
+        "canonical-technical-directed-v1"
+      ]
     },
     "metricPolicyId": {
       "const": "unit-v1"

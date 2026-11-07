@@ -68,7 +68,6 @@ test("lepton classification retains finite decay, hadronic scattering and bound-
     ["color singlet cannot become no interaction with hadronic matter", (d) => removeLimit(d, "lepton", "no direct QCD color coupling")],
     ["a channel lifetime bound cannot become eternal stability", (d) => removeLimit(d, "lepton", "searched channel")],
     ["the hydrogen example cannot become a construction by every lepton", (d) => removeLimit(d, "lepton", "ordinary atomic example")],
-    ["catalogue weights and minima cannot return as measured constraints", (d) => removeLimit(d, "lepton", "0.7/0.3")],
     ["the scattering qualifier keeps its primary account", (d) => { claim(d, "lepton").citations = claim(d, "lepton").citations.filter((r) => r.sourceId !== "bernauer2014"); }],
     ["the hydrogen qualifier keeps the adopted bound-state model", (d) => { claim(d, "lepton").citations = claim(d, "lepton").citations.filter((r) => r.sourceId !== "bethe1947"); }]
   ]);

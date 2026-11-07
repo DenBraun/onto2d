@@ -1,7 +1,7 @@
 // Optical, sampling, circuit and output evidence retain distinct preparations.
 const sources = [], entities = [], claims = [], relations = [], studies = [], comparisons = [], readiness = [];
 const publications = new Map(), acquisitions = new Map();
-const commonLimit = "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted.";
+const commonLimit = "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted.";
 const extent = "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread";
 const cite = (sourceId, locator, role = "supports") => ({ sourceId, locator, role,
   note: "Only the named primary passage and preparation support this statement; shared publication or acquisition does not create independent replication." });
@@ -126,11 +126,11 @@ publication({ id: "berry1997-retinal-spike-trains", title: "The structure and pr
   "Selected primary Methods and Analysis, Results, Discussion and figure legends were read in PMC HTML. Raw spike trains and event parsing were not independently replayed. Salamander and rabbit preparations are separate; contrast groups contain different numbers of cells and retinas. First-event timing, count variance, firing fraction and model-derived information are different observables. The paper explicitly leaves whether the brain uses the estimated information unanswered.", limitedCorrectionCheck);
 
 study("artal2001-wavefronts", "artal2001-ocular-compensation", "primary-observation", "Six young subjects with normal corrected vision",
-  "Measure anterior corneal topography and whole-eye Hartmann-Shack wavefronts in the six-subject comparison. Subjects are 24-38 years old; accommodation is paralyzed with 1 percent cyclopentholate, sensing uses 780 nm light and the comparison uses a 5.9 mm pupil. Methods names the pupil geometric center for registration, whereas Discussion describes corneal-pole referencing and argues that the centers are close; no unique registration is reconstructed here. Remove defocus for the reported RMS comparison.",
+  "Measure anterior corneal topography and whole-eye Hartmann-Shack wavefronts in the six-subject comparison. Subjects are 24-38 years old; accommodation is paralyzed with 1 percent cyclopentolate, sensing uses 780 nm light and the comparison uses a 5.9 mm pupil. Methods names the pupil geometric center for registration, whereas Discussion describes corneal-pole referencing and argues that the centers are close; no unique registration is reconstructed here. Remove defocus for the reported RMS comparison.",
   "Corneal and whole-eye wavefront coefficients; internal-component and point-spread estimates are separate model outputs",
   "In the six-eye comparison, the reconstructed corneal component has larger aberration than the complete eye after the stated defocus removal; the assembled optical response is not determined by isolated-component optical quality alone.",
   ["These are supplied adult eyes, not organogenesis or direct observations of an active compensation controller.",
-    "The internal component is partly obtained by subtracting the complete-eye estimate; component correlations are not independent causal measurements of lens alignment.",
+    "The internal component is partly obtained by subtracting the corneal estimate from the complete-eye estimate; component correlations are not independent causal measurements of lens alignment.",
     "The preparation does not measure full spectral transfer, accommodation dynamics, retinal transduction or perceived image quality."], [0, 1, 2]);
 study("artal2001-saline", "artal2001-ocular-compensation", "primary-experiment", "Five young subjects in the saline-goggle preparation",
   "Neutralize the anterior corneal refracting surface using saline-filled goggles and measure wavefronts with accommodation paralyzed, infrared sensing, a Badal optometer and the specified apparatus/reference and window corrections. The goggle estimate uses a 4.7 mm pupil; corneal topography is additionally available in two validation subjects.",
@@ -287,116 +287,36 @@ node("hofer-corrected-figures", "Corrected cone-mosaic figure identities", "defi
   claims.at(-1).statement, [correctionClaim], [{ sourceId: "hofer2006-mosaic-erratum",
     locator: "J Neurosci. 2006;26(2):722, complete correction text and corrected Figures 6 and 9 with legends" }], [], "definition");
 
-function scope(card, slug, name, statement, studyIds, gap, reusedClaims = []) {
+function topic(slug, name, statement, studyIds, gap, reusedClaims = []) {
   const definitionId = `D-org-${slug}`, unknownId = `C-org-${slug}-unresolved`;
-  const sourceCoordinates = [{ sourceId: "legacy-5", locator: `/${card}` }];
   const support = studyIds.flatMap((id) => [acquisitions.get(id).findingId, acquisitions.get(id).methodId]);
-  const citations = [cite("legacy-5", `/${card}`, "provenance"), ...studyIds.map((id) => {
+  const citations = [...studyIds.map((id) => {
     const context = acquisitions.get(id);
     return cite(context.record.sourceId, context.record.reviewedLocators[0], "method");
-  })];
+  })].filter((entry, index, all) => all.findIndex((other) => other.sourceId === entry.sourceId
+    && other.locator === entry.locator && other.role === entry.role) === index);
+  const sourceCoordinates = citations.map(({ sourceId, locator }) => ({ sourceId, locator }))
+    .filter((entry, index, all) => all.findIndex((other) => other.sourceId === entry.sourceId && other.locator === entry.locator) === index);
   claims.push({ id: definitionId, kind: "review-finding", status: "definition", statement,
     scope: "A source-bound topic definition, not a universal arising or generative law", citations,
     checkIds: [], limitations: [gap, commonLimit] });
   claims.push({ id: unknownId, kind: "review-finding", status: "unresolved", statement: gap,
     scope: "Unestablished mechanisms and transfer beyond the admitted preparations", citations,
-    checkIds: [], limitations: ["Definitions and source examples do not establish universal necessity, full quantitative transfer or original SOMA ontology.", commonLimit] });
+    checkIds: [], limitations: ["Definitions and source examples do not establish universal necessity or full quantitative transfer.", commonLimit] });
   node(slug, name, "definition", statement, [definitionId, ...support, ...reusedClaims, unknownId], sourceCoordinates, [gap], "definition");
   node(`${slug}-unresolved`, `${name}: unresolved transfer`, "hypothesis", gap, [unknownId], sourceCoordinates, [], "hypothesis");
   for (const id of studyIds) relations.push({ id: `organismal:${id}-scope-${slug}`,
     source: `org:${id}-response`, target: `org:${slug}`, kind: "descriptive", role: "definition-dependency",
-    assertion: "This preparation-specific finding constrains the scope of the topic; it is not a developmental or necessary-parent link.",
+    assertion: "This preparation-specific finding constrains the scope of the topic; it is not a developmental link.",
     claimIds: [definitionId, acquisitions.get(id).findingId, acquisitions.get(id).methodId], contextIds: [id] });
   relations.push({ id: `organismal:${slug}-unresolved`, source: `org:${slug}`, target: `org:${slug}-unresolved`,
     kind: "descriptive", role: "definition-dependency", assertion: "The definition retains the named unestablished transfer and mechanism questions.", claimIds: [definitionId, unknownId] });
-  return { code: `5.${card}`, sourceIndex: card, originalName: name, scope: statement,
-    nodeIds: [`org:${slug}`, `org:${slug}-unresolved`, ...studyIds.flatMap((id) => [`org:${id}-context`, `org:${id}-response`])],
-    claimIds: [definitionId, ...support, ...reusedClaims, unknownId], assertions: [], parentDispositions: [],
-    excludedDefaults: ["Catalogue Phase, TypeRole, Science, Requirements and established status do not establish a scientific ontology or experimental result.",
-      "All original parent weights, necessary/enabling labels, causal-direction and interaction codes, carrier codes and N_min/N_crit/N_sat values are excluded from physical semantics."], unresolved: [gap] };
 }
-const optical = scope(18, "ocular-optical-interface", "Eye Optical Interface",
-  "A supplied ocular optical interface is described through whole-eye wavefront measurement, anterior-boundary manipulation and a separate component model. These constrain image-forming optics without establishing organogenesis, every enabling tissue function or an active alignment controller.",
-  ["artal2001-wavefronts", "artal2001-saline", "artal2001-component-model"],
-  "The reviewed optical measurements do not reconstruct transparency maintenance, pupil-control dynamics, accommodation, developmental assembly, a unique compensation mechanism or a complete spectral-to-neural transfer function.", ["P-liang1997"]);
-const sampling = scope(19, "retinal-sampling-organization", "Retinal Sampling Geometry and Ordered Visual Mapping",
-  "Retinal sampling is separated into local photoreceptor-class geometry, measurement/classification uncertainty and an independently prepared retinal-to-collicular projection. A registered sampling representation, anatomical topography and visual performance are different claims.",
-  ["hofer2005-local-mosaic", "hofer2005-mosaic-analysis", "hofer2005-erg-comparison", "triplett2011-collicular-projection", "triplett2011-retrograde-tracing", "triplett2011-map-model"],
-  "Whole-field receptor-density/anisotropy maps, matched local convergence ratios, perceptual acuity and a unique developmental mechanism are not jointly measured in these preparations. Local adult mosaics and developing mouse central projections cannot be combined into one complete visual map.",
-  ["P-curcio1990", "D-retinal-sampling", "C-retinal-ocular-optics-spatial-sampling", correctionClaim]);
-const circuit = scope(20, "retinal-processing-organization", "Retinal Circuit Preprocessing",
-  "Circuit preprocessing is reconstructed through reversible surround/opponency interventions already admitted in primate tissue and new mouse direction/polarity experiments. Stimulus history, cell class, spectral access, readout and model assumptions constrain which transformation is actually supported.",
-  ["rivlin2012-adaptation", "rivlin2012-on-blockade", "vlasits2014-silencing", "vlasits2014-polarity", "vlasits2014-phase-model"],
-  "The reviewed cases do not identify every preprocessing mechanism, quantify a universal noise/redundancy reduction or establish that anatomy uniquely fixes a stable filter. The proposed phase/crossover implementation and ecological downstream use remain discriminating-test obligations.",
-  ["P-crook2011", "C-retinal-cone-drive-retinal-filtering"]);
-const encoding = scope(21, "retinal-spike-encoding", "Retinal Ganglion Spike Encoding",
-  "Retinal spike encoding is described by measured input-dependent spike timing/counts and separate analytical interpretations. Natural synaptic input, somatic injection, intrinsic ganglion photoreception, downstream relay and hypothetical code use retain their distinct preparations.",
-  ["murphy2006-light-response", "murphy2006-conductance-clamp", "berry1997-salamander", "berry1997-rabbit", "berry1997-information"],
-  "The admitted retinal measurements do not establish a universal analog-to-digital threshold law, noise-resistant communication guarantee, optimal multiplexing code or complete downstream use of inferred information. Supplied cells and measured conductances are not a de novo spike-generator construction.",
-  ["P-do2009", "P-fohlmeister1997", "V-usrey1998", "C-retinal-retinal-filtering-ganglion-spiking", "C-retinal-excitable-membrane-ganglion-spiking"]);
+topic("ocular-optical-interface", "Eye Optical Interface", "A supplied ocular optical interface is described through whole-eye wavefront measurement, anterior-boundary manipulation and a separate component model. These constrain image-forming optics without establishing organogenesis, every enabling tissue function or an active alignment controller.", ["artal2001-wavefronts", "artal2001-saline", "artal2001-component-model"], "The reviewed optical measurements do not reconstruct transparency maintenance, pupil-control dynamics, accommodation, developmental assembly, a unique compensation mechanism or a complete spectral-to-neural transfer function.", ["P-liang1997"]);
+topic("retinal-sampling-organization", "Retinal Sampling Geometry and Ordered Visual Mapping", "Retinal sampling is separated into local photoreceptor-class geometry, measurement/classification uncertainty and an independently prepared retinal-to-collicular projection. A registered sampling representation, anatomical topography and visual performance are different claims.", ["hofer2005-local-mosaic", "hofer2005-mosaic-analysis", "hofer2005-erg-comparison", "triplett2011-collicular-projection", "triplett2011-retrograde-tracing", "triplett2011-map-model"], "Whole-field receptor-density/anisotropy maps, matched local convergence ratios, perceptual acuity and a unique developmental mechanism are not jointly measured in these preparations. Local adult mosaics and developing mouse central projections cannot be combined into one complete visual map.", ["P-curcio1990", "D-retinal-sampling", "C-retinal-ocular-optics-spatial-sampling", correctionClaim]);
+topic("retinal-processing-organization", "Retinal Circuit Preprocessing", "Circuit preprocessing is reconstructed through reversible surround/opponency interventions already admitted in primate tissue and new mouse direction/polarity experiments. Stimulus history, cell class, spectral access, readout and model assumptions constrain which transformation is actually supported.", ["rivlin2012-adaptation", "rivlin2012-on-blockade", "vlasits2014-silencing", "vlasits2014-polarity", "vlasits2014-phase-model"], "The reviewed cases do not identify every preprocessing mechanism, quantify a universal noise/redundancy reduction or establish that anatomy uniquely fixes a stable filter. The proposed phase/crossover implementation and ecological downstream use remain discriminating-test obligations.", ["P-crook2011", "C-retinal-cone-drive-retinal-filtering"]);
+topic("retinal-spike-encoding", "Retinal Ganglion Spike Encoding", "Retinal spike encoding is described by measured input-dependent spike timing/counts and separate analytical interpretations. Natural synaptic input, somatic injection, intrinsic ganglion photoreception, downstream relay and hypothetical code use retain their distinct preparations.", ["murphy2006-light-response", "murphy2006-conductance-clamp", "berry1997-salamander", "berry1997-rabbit", "berry1997-information"], "The admitted retinal measurements do not establish a universal analog-to-digital threshold law, noise-resistant communication guarantee, optimal multiplexing code or complete downstream use of inferred information. Supplied cells and measured conductances are not a de novo spike-generator construction.", ["P-do2009", "P-fohlmeister1997", "V-usrey1998", "C-retinal-retinal-filtering-ganglion-spiking", "C-retinal-excitable-membrane-ganglion-spiking"]);
 
-const decision = (topic, disposition, claimIds, reason) => ({ topic, disposition, claimIds, reason });
-const parent = (parentCode, disposition, claimIds, reason) => ({ parentCode, disposition, claimIds, reason });
-optical.assertions = [
-  decision("Integrated refraction and image-forming ocular optics", "qualified", ["C-org-artal2001-wavefronts", "C-org-artal2001-saline"], "Whole-eye and neutralized-boundary measurements provide a specified adult optical preparation, not a reconstruction of every component or species."),
-  decision("Cornea, lens and chamber media as one component decomposition", "qualified", ["C-org-artal2001-component-model"], "Internal optics includes posterior cornea and media; subtraction and approximate common-plane assumptions prevent attribution to the lens alone."),
-  decision("Focusing, pupil control, transparency and axis stabilization", "unresolved", ["C-org-ocular-optical-interface-unresolved"], "The selected study fixes accommodation/pupil conditions and does not dynamically perturb or measure all these physiological functions."),
-  decision("Coupling can improve performance relative to isolated components", "supported", ["C-org-artal2001-wavefronts", "C-org-artal2001-component-model"], "The measured and reconstructed optical comparison supports bounded component compensation, with model dependence and the goggle cross-check retained."),
-  decision("An identified developmental or active alignment mechanism", "unresolved", ["C-org-artal2001-component-model", "C-org-ocular-optical-interface-unresolved"], "The paper itself leaves active/passive origin and detailed alignment mechanisms unsettled."),
-  decision("Optics supplies retinal illumination without itself proving neural computation", "qualified", ["D-org-ocular-optical-interface", "P-liang1997"], "Optical and tested visual improvements are kept within their own source reading; retinal transduction is not inferred from a wavefront."),
-  decision("Universal organ-level object arising and necessary developmental order", "excluded", ["D-org-ocular-optical-interface"], "The supplied anatomical eye and catalogue object label do not establish a universal construction or necessity theorem.")
-];
-optical.parentDispositions = [
-  parent("5.1", "qualified", ["D-org-ocular-optical-interface"], "Existing eyes supply the optical preparation; general organogenesis is not experimentally established as a single necessary parent."),
-  parent("5.0", "unresolved", ["C-org-ocular-optical-interface-unresolved"], "These adult measurements do not reconstruct morphogenetic precision or a developmental dependency."),
-  parent("4.7", "unresolved", ["C-org-ocular-optical-interface-unresolved"], "Adhesion/contact mechanisms are not independently manipulated in the admitted ocular experiment; the original generic requirement and counts are not retained.")
-];
-sampling.assertions = [
-  decision("Retinal density gradients, anisotropy and individual variation", "qualified", ["P-curcio1990", "C-org-hofer2005-local-mosaic"], "The older Curcio statement remains abstract-only; the new detailed observations are local near-foveal patches, not a new complete density map."),
-  decision("Geometric packing differs from a regular cone-class lattice", "supported", ["C-org-hofer2005-local-mosaic", "C-org-hofer2005-mosaic-analysis", correctionClaim], "Class labels and spatial statistics vary; corrected S versus L/M comparisons and blur-sensitive assignments are explicit."),
-  decision("Relative cone composition determines visual precision or normal color vision uniquely", "excluded", ["C-org-hofer2005-local-mosaic", "C-org-hofer2005-erg-comparison"], "Selected observers retain normal test scores across markedly different ratios; association and model-derived gain do not uniquely specify performance."),
-  decision("Layered circuitry, local convergence ratios and region-specific acuity", "unresolved", ["C-org-retinal-sampling-organization-unresolved"], "These new contexts do not jointly quantify layer organization, local convergence and behavioral acuity at each sampled location."),
-  decision("Ordered visual mapping equals photoreceptor geometry", "excluded", ["D-retinal-sampling", "C-org-triplett2011-retrograde-tracing"], "A sampling representation and a central anatomical projection are different measured or defined objects."),
-  decision("Retinocollicular order depends on the specified developmental preparation", "supported", ["C-org-triplett2011-collicular-projection", "C-org-triplett2011-retrograde-tracing"], "Genotype and tracing comparisons retain target compression, dispersed origins, ages and assay boundaries."),
-  decision("Competition is a uniquely established general map constructor", "unresolved", ["C-org-triplett2011-map-model", "C-org-retinal-sampling-organization-unresolved"], "The mutation is not selective scalar competition control; model assumptions, mismatch and unread SI prevent universal identification."),
-  decision("Optical input generates receptor positions or retinal map order", "excluded", ["C-retinal-ocular-optics-spatial-sampling"], "The existing explicit boundary distinguishes an incident field from receptor placement."),
-  decision("SOMA pattern identity supplies a stable generative law", "excluded", ["D-org-retinal-sampling-organization"], "The topic definition supplies no independent experimental authority to phase/type or parent-count codes.")
-];
-sampling.parentDispositions = [
-  parent("5.18", "qualified", ["C-retinal-ocular-optics-spatial-sampling"], "Optical transfer can supply an irradiance field to sampling; it does not form the receptor mosaic or determine a central projection."),
-  parent("5.10", "qualified", ["D-org-retinal-sampling-organization", "C-org-hofer2005-local-mosaic"], "Named differentiated cone classes are present, but a necessary universal tissue-specialization construction is not tested."),
-  parent("4.7", "unresolved", ["C-org-retinal-sampling-organization-unresolved"], "No matched contact/adhesion intervention establishes the inherited necessity or numerical carrier thresholds.")
-];
-circuit.assertions = [
-  decision("Retinal circuits transform photoreceptor-derived responses", "qualified", ["C-retinal-cone-drive-retinal-filtering", "C-org-vlasits2014-polarity"], "Specified primate and mouse preparations support different transformations; they are not pooled into one transfer function."),
-  decision("Center-surround and color opponency require generic inhibitory transmitters", "excluded", ["P-crook2011"], "The retained primate pharmacology separates HEPES-sensitive surround from GABA/glycine blockade; lateral inhibition cannot be reduced to one generic transmitter arrow."),
-  decision("Anatomical organization fixes a stable direction-selective filter", "excluded", ["C-org-rivlin2012-adaptation", "C-org-vlasits2014-silencing"], "Selected circuits change tuning after stimulation or targeted conductance manipulation, with stable and ambiguous outcomes retained."),
-  decision("Temporal response and inhibitory/excitatory interaction are preparation-specific", "supported", ["C-org-rivlin2012-on-blockade", "C-org-vlasits2014-polarity"], "Pathway blockade, response timing and polarity experiments constrain functional organization without identifying every synapse."),
-  decision("Gain adjustment, contrast enhancement and noise/redundancy suppression are guaranteed", "unresolved", ["C-org-retinal-processing-organization-unresolved"], "These studies do not measure every proposed gain/noise quantity or a universal efficient-code objective."),
-  decision("The phase-shift model establishes the unique biological reversal mechanism", "excluded", ["C-org-vlasits2014-phase-model"], "The model supplies a conditional mechanism and omits the full circuit; it is not another physiological acquisition."),
-  decision("Retinal preprocessing establishes cortical interpretation or downstream benefit", "unresolved", ["C-org-retinal-processing-organization-unresolved"], "Ecological and higher-center use is not jointly tested with the retained retinal perturbations."),
-  decision("Universal pattern arising and all necessary parent relations", "excluded", ["D-org-retinal-processing-organization"], "A scoped circuit topic does not establish a universal SOMA pattern or construction order.")
-];
-circuit.parentDispositions = [
-  parent("5.19", "qualified", ["D-org-retinal-processing-organization", "C-org-vlasits2014-polarity"], "Spatial and spectral sampling conditions constrain specific responses, but geometric sampling alone does not fix the filter."),
-  parent("5.10", "qualified", ["D-org-retinal-processing-organization", "C-org-vlasits2014-silencing"], "Identified cell populations are supplied; necessity and development of all layered tissue types are not reconstructed."),
-  parent("4.3", "qualified", ["C-org-vlasits2014-silencing", "C-org-rivlin2012-on-blockade"], "Named conductance and pathway interventions support local effects, not the inherited abstract signaling necessity or weights.")
-];
-encoding.assertions = [
-  decision("Graded input is converted into ganglion action-potential sequences", "qualified", ["C-org-murphy2006-conductance-clamp", "C-retinal-excitable-membrane-ganglion-spiking"], "Controlled input changes measured spike output, while membrane state alone is not a complete spike-generator specification."),
-  decision("Every ganglion spike requires preceding retinal circuit preprocessing", "excluded", ["P-do2009", "C-retinal-retinal-filtering-ganglion-spiking"], "Existing intrinsic ganglion photoreception and persistent spiking after surround removal refute that universal necessity."),
-  decision("Timing, rate/count and synchrony carry a uniquely identified code", "qualified", ["C-org-berry1997-salamander", "C-org-berry1997-rabbit", "C-org-berry1997-information"], "Timing and count statistics are measured or inferred separately; synchrony and actual decoding need additional population/readout tests."),
-  decision("Spike generation makes output universally noise-resistant", "excluded", ["C-org-murphy2006-light-response", "C-org-murphy2006-conductance-clamp", "C-org-berry1997-salamander"], "Input variability, cell selection, contrast and analysis definitions change precision; low-contrast count variability can exceed Poisson."),
-  decision("Fine spike timing is limited by an unavoidable fixed intrinsic noise floor", "excluded", ["C-org-murphy2006-conductance-clamp"], "Fixed injected conductances yield greater precision than natural input under the tested blocker conditions; this is a bounded counterexample, not proof of zero intrinsic noise."),
-  decision("Axonal propagation and conditional downstream efficacy follow one invariant symbol", "qualified", ["V-usrey1998", "C-org-retinal-spike-encoding-unresolved"], "The existing retinal/thalamic paired-spike association has its own preparation and unidentified mechanism; retinal recordings do not prove an invariant downstream code."),
-  decision("Temporal multiplexing, optimality and complete brain use of inferred information", "unresolved", ["C-org-berry1997-information", "C-org-retinal-spike-encoding-unresolved"], "The source information estimate depends on ensemble and independence assumptions and explicitly leaves biological readout open."),
-  decision("A universal analog-to-discrete process or numeric threshold construction", "excluded", ["D-org-retinal-spike-encoding"], "The studies use existing cells and preparation-specific dynamics; they do not validate original ontology, universal threshold counts or a general construction recipe.")
-];
-encoding.parentDispositions = [
-  parent("5.20", "qualified", ["C-retinal-retinal-filtering-ganglion-spiking", "P-do2009"], "Preprocessing shapes specified cone-driven responses but is not necessary for every ganglion spike."),
-  parent("4.21", "qualified", ["C-retinal-excitable-membrane-ganglion-spiking", "C-org-murphy2006-conductance-clamp"], "Membrane excitability is a scoped context, not a sufficient potential-only generator or an admitted inherited threshold."),
-  parent("4.3", "qualified", ["C-org-murphy2006-light-response", "P-do2009"], "Specific synaptic drives modulate output; intrinsic light responses prevent a universal upstream signaling necessity.")
-];
 
 for (const [local, external] of [["ocular-optical-interface", "ocular-optics"], ["retinal-sampling-organization", "spatial-sampling"],
   ["retinal-processing-organization", "retinal-filtering"], ["retinal-spike-encoding", "ganglion-spiking"]]) {
@@ -437,4 +357,3 @@ testAlternative("organismal-universal-retinal-code", "Every retinal output is sp
   "The narrow empirical counterexamples do not identify a unique code or quantify natural-scene communication performance.", ["C-org-berry1997-salamander", "C-org-berry1997-rabbit", "C-org-berry1997-information", "C-org-retinal-spike-encoding-unresolved"]);
 
 export const ORGANISM_RETINAL_RECORDS = { sources, entities, claims, relations, studies, comparisons, readiness };
-export const CARD_SCOPES = [optical, sampling, circuit, encoding];

@@ -150,7 +150,7 @@ test("the reduced ground-singlet model preserves dimensional zero-point and dist
   ]);
 });
 
-test("finite tunnelling evidence cannot supply universal ancestry, carrier minima, reaction theories or SOMA laws", async () => {
+test("finite tunnelling evidence cannot supply universal reaction mechanisms, resource thresholds or replayed reaction theories", async () => {
   const data = await source();
   assert.equal(claim(data, model).status, "definition");
   assert.equal(claim(data, boundary).status, "definition");
@@ -163,16 +163,12 @@ test("finite tunnelling evidence cannot supply universal ancestry, carrier minim
   assert.ok(data.graph.relations.filter((record) => names.has(record.source) || names.has(record.target))
     .every((record) => record.kind === "descriptive"));
   await rejects([
-    ["old necessary parents and two-body counts cannot become measured thresholds", (changed) =>
-      dropLimit(changed, synthesis, "weights 0.40/0.35/0.25")],
     ["a ground-singlet case cannot establish every electronic quantum-reaction mechanism", (changed) =>
       dropLimit(changed, synthesis, "electronic nonadiabatic coupling")],
     ["finite kinetics cannot establish that all transition-state models fail", (changed) =>
       dropLimit(changed, boundary, "every transition-state model")],
     ["hot preparation and assignment illumination cannot become a sustained cause of dark decay", (changed) =>
       dropLimit(changed, synthesis, "sustained external resource threshold")],
-    ["display and SOMA classification cannot create a physical law", (changed) =>
-      dropLimit(changed, synthesis, "SOMA propagation")],
     ["a named source model cannot acquire an independent raw-data replay", (changed) =>
       dropLimit(changed, synthesis, "independent numerical replay")]
   ]);

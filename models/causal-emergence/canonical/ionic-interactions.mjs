@@ -161,7 +161,7 @@ const contracts = {
       "id": "D-phys-ionic-charge-state",
       "kind": "review-finding",
       "statement": "Define an atomic or molecular ion by nonzero net species charge q=z*e, with e>0 the positive elementary-charge magnitude and signed integer charge state z. Given supplied nuclear charge numbers Z_a and electron inventory N_e, z=sum_a(Z_a)-N_e is charge bookkeeping for the chosen isolated species. Positive z labels a cation and negative z an anion. In the stated two-center one-electron cases H2+ and HD+, two Z=1 nuclei and one electron give z=+1. Charge state, isotope composition, internal quantum state and preparation are different descriptors.",
-      "scope": "Atomic and molecular ion charge-state convention within the selected primary source and stated model/preparation limits.",
+      "scope": "Atomic and molecular ion charge-state convention within the selected sources and stated model/preparation limits.",
       "status": "definition",
       "citations": [
         {
@@ -194,7 +194,7 @@ const contracts = {
       "id": "D-phys-ion-formation-interaction-boundary",
       "kind": "review-finding",
       "statement": "Changing the charge state of a selected atomic or molecular subsystem requires electron removal, attachment or redistribution under a specified channel and preparation. Donor-acceptor electron transfer is one possible process, distinct from direct above-threshold photoionization, electron-impact ionization and electric-field ionization of a prepared Rydberg state. These channel labels do not themselves supply a rate. Once charge states are specified, the leading vacuum Coulomb pair model distinguishes like-sign repulsion from opposite-sign attraction; a many-ion medium response is a further model. A bound-state energy, ion signal, formation rate and screened interaction are separate quantities.",
-      "scope": "Ion formation, binding and electrostatic interaction distinction within the selected primary source and stated model/preparation limits.",
+      "scope": "Ion formation, binding and electrostatic interaction distinction within the selected sources and stated model/preparation limits.",
       "status": "definition",
       "citations": [
         {
@@ -287,7 +287,7 @@ const contracts = {
       "id": "C-phys-ionic-source-scope",
       "kind": "review-finding",
       "statement": "The selected literature supplies a prepared-H2 field-ionization ion readout, a stored charged HD+ mass/state preparation, calculated molecular-ion binding quantities and an equilibrium screened-electrolyte model. These retain real atomic/molecular ions and collective ionic interactions under different conditions. Ion production, persistence in a trap, bound-state energetics and statistical solution screening are not one common formation or maintenance experiment.",
-      "scope": "Scoped ion preparation and electrolyte interaction evidence within the selected primary source and stated model/preparation limits.",
+      "scope": "Scoped ion preparation and electrolyte interaction evidence within the selected sources and stated model/preparation limits.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -319,22 +319,15 @@ const contracts = {
           "locator": "Printed pages 204-205, Section 10: statistical ion-atmosphere order versus a literal crystal lattice and concentrated-solvent limitations",
           "role": "supports",
           "note": "Supports only the declared charge-state, preparation, source-reported result or finite model; no independent replay or universal ion-formation law."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Supports only the declared charge-state, preparation, source-reported result or finite model; no independent replay or universal ion-formation law."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original parent 2.2 supplies atomic electronic/nuclear concepts but its selected static Z=1 atom or cosmological formation history is not a necessary ancestry for every ion. Original parent 2.3 supplies relevant molecular structure for H2+/HD+, but atomic ions and bare nuclei do not require a previously formed molecule.",
-        "Original equal weights 0.5/0.5, lateral direction [2], cooperation/constraint modes [0,1], necessary/dependency-10/arising labels have no matched causal estimator or universal necessity authority.",
-        "Original parent 2.2 carrier 1/0 N_min=N_crit=1 and parent 2.3 carrier 1/0 N_min=N_crit=2, with N_sat=null, are not measured ion-formation or screening thresholds. Species electron/nucleus counts, detector signals and bulk number densities are separate counting domains.",
-        "Pattern, Phase 1, TypeRole 2, Level 2, Science [0,1,2], established status and MustCover/ShouldCover codes are catalogue/display classifications. Recurring use of ionic descriptions does not establish an autonomous physical emergence stage or universal ionic permanence.",
+        "A selected static Z=1 atom or cosmological formation history is not a necessary ancestry for every ion; atomic ions and bare nuclei do not require a previously formed molecule.",
+        "Species electron/nucleus counts, detector signals and bulk number densities are separate counting domains.",
+        "Recurring use of ionic descriptions does not establish an autonomous physical emergence stage or universal ionic permanence.",
         "Electron-transfer chemistry, solvation, salts and ionic crystals are real distinct domains, but the selected field/trap records and dilute continuum model do not derive their complete mechanisms. Microscopic donor-acceptor kinetics, detailed solvent coordination, crystal structure, transport, phase behavior and reactivity need their own specified states and evidence.",
-        "Generic theoretical and empirical source-card paragraphs with null DOI/URL are not publications. No unnamed electrolysis, ion-lattice, solvation or charge-transfer observation is admitted as independent support.",
+        "No unnamed electrolysis, ion-lattice, solvation or charge-transfer observation is admitted as independent support.",
         "Liu ion signal and threshold assembly share the same measurement chain. Rau mass/state evidence is reused from its existing acquisition; the molecular mass-closure output is not an input here. Korobov total ionization energy remains a theoretical state quantity with its existing approximations and omitted constant uncertainties.",
         "No new acquisition, common likelihood, molecular-ion solver, equilibrium solution calculation, independent reproduction or universal electromagnetic-only organization law is introduced."
       ],
@@ -370,7 +363,7 @@ const contracts = {
       "id": "M-phys-ionic-source-scope",
       "kind": "method",
       "statement": "Compare the specified charged-species definitions, Liu field-ionization readout, Rau stored-ion preparation, Korobov state-energy calculation and Debye-Huckel equilibrium model within their original units, preparations and shared-source limits. Use model definitions to delimit interpretation rather than treating them as measured universal physical causes.",
-      "scope": "Separate ion charge, preparation, state energy and medium response within the selected primary source and stated model/preparation limits.",
+      "scope": "Separate ion charge, preparation, state energy and medium response within the selected sources and stated model/preparation limits.",
       "status": "method-contract",
       "citations": [
         {
@@ -561,19 +554,14 @@ const contracts = {
         {
           "sourceId": "debye-huckel1923-electrolytes",
           "locator": "Printed pages 204-205, Section 10: statistical ion-atmosphere order versus a literal crystal lattice and concentrated-solvent limitations"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original parent 2.2 supplies atomic electronic/nuclear concepts but its selected static Z=1 atom or cosmological formation history is not a necessary ancestry for every ion. Original parent 2.3 supplies relevant molecular structure for H2+/HD+, but atomic ions and bare nuclei do not require a previously formed molecule.",
-        "Original equal weights 0.5/0.5, lateral direction [2], cooperation/constraint modes [0,1], necessary/dependency-10/arising labels have no matched causal estimator or universal necessity authority.",
-        "Original parent 2.2 carrier 1/0 N_min=N_crit=1 and parent 2.3 carrier 1/0 N_min=N_crit=2, with N_sat=null, are not measured ion-formation or screening thresholds. Species electron/nucleus counts, detector signals and bulk number densities are separate counting domains.",
-        "Pattern, Phase 1, TypeRole 2, Level 2, Science [0,1,2], established status and MustCover/ShouldCover codes are catalogue/display classifications. Recurring use of ionic descriptions does not establish an autonomous physical emergence stage or universal ionic permanence.",
+        "A selected static Z=1 atom or cosmological formation history is not a necessary ancestry for every ion; atomic ions and bare nuclei do not require a previously formed molecule.",
+        "Species electron/nucleus counts, detector signals and bulk number densities are separate counting domains.",
+        "Recurring use of ionic descriptions does not establish an autonomous physical emergence stage or universal ionic permanence.",
         "Electron-transfer chemistry, solvation, salts and ionic crystals are real distinct domains, but the selected field/trap records and dilute continuum model do not derive their complete mechanisms. Microscopic donor-acceptor kinetics, detailed solvent coordination, crystal structure, transport, phase behavior and reactivity need their own specified states and evidence.",
-        "Generic theoretical and empirical source-card paragraphs with null DOI/URL are not publications. No unnamed electrolysis, ion-lattice, solvation or charge-transfer observation is admitted as independent support.",
+        "No unnamed electrolysis, ion-lattice, solvation or charge-transfer observation is admitted as independent support.",
         "Liu ion signal and threshold assembly share the same measurement chain. Rau mass/state evidence is reused from its existing acquisition; the molecular mass-closure output is not an input here. Korobov total ionization energy remains a theoretical state quantity with its existing approximations and omitted constant uncertainties.",
         "No new acquisition, common likelihood, molecular-ion solver, equilibrium solution calculation, independent reproduction or universal electromagnetic-only organization law is introduced."
       ]
@@ -790,24 +778,6 @@ const contracts = {
   "studies": [],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "rau2020",
       "kind": "research-publication",

@@ -104,7 +104,7 @@ const contracts = {
     {
       "id": "D-phys-casimir-observable-boundary",
       "kind": "review-finding",
-      "statement": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy or the original ontology of its parents.",
+      "statement": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy.",
       "scope": "Specified electromagnetic boundary models and original experiment-specific observables; no universal hierarchy.",
       "status": "definition",
       "citations": [
@@ -131,12 +131,6 @@ const contracts = {
           "locator": "Pages 041804-1 to 041804-3: parallel surfaces, voltage calibration and frequency readout; Figures 1-3",
           "role": "limits",
           "note": "Reuse the exact reviewed passage and its original scope; no new acquisition or expanded reading is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /19. Numerical parent/ontology defaults are provenance, not evidence."
         },
         {
           "sourceId": "lamoreaux1998-note",
@@ -224,12 +218,6 @@ const contracts = {
           "note": "Reuse the exact reviewed passage and its original scope; no new acquisition or expanded reading is claimed."
         },
         {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /19. Numerical parent/ontology defaults are provenance, not evidence."
-        },
-        {
           "sourceId": "jaffe2005",
           "locator": "Section IV: interpretation limits and unresolved gravitational vacuum energy",
           "role": "limits",
@@ -245,10 +233,10 @@ const contracts = {
         "The selected cases concern attraction. They do not measure repulsion, every geometry/material/separation/temperature, all surface patches or a universal Casimir force independent of material response. Such extensions need their own declared models and evidence.",
         "Nominally neutral surfaces can retain a fitted electrostatic background; neutrality does not establish vanishing contact potentials or perfect subtraction. The original experimental limits remain attached rather than replaced by a precision label.",
         "Boundary-mode and material-response formulations delimit what the force identifies. No unique measurement of absolute vacuum energy, cosmological energy density, particles from nothing, or one privileged vacuum ontology follows. The material-source formulation does not disprove quantum correlations.",
-        "Original necessary parents 2.1 and 1.5, weights 0.55/0.45, downward direction[1], constraint modes[1], dependency10 and arising roles are not measured causal fractions or a universal formation/maintenance recipe. Supplied electromagnetic response is not proof of a prior ontological vacuum stage.",
-        "Original carrier group1/type0 minimum/critical count2 for parent2.1 and group0/type2 resonant-mode count1 for parent1.5, with null saturation, are unsupported thresholds. Two surfaces define the selected geometry rather than a universal minimum for all electromagnetic fluctuation forces.",
-        "Original Level2, Phase2, TypeRole4 Effect, science tags, established status, MustCover[10], ShouldCover[9] and Optional[] remain display/ontology choices. Macroscopic boundary sensitivity does not by itself verify SOMA downward causation, universal constraint propagation or new cross-level rules.",
-        "The generic theoretical and precision-measurement Evidence entries have null DOI/URL. This admission reuses only the already reviewed ideal model, interpretive limits, actual experiments and linked corrections; no comprehensive literature survey, new force experiment or raw numerical/calibration replay is claimed."
+        "Supplied electromagnetic response is not proof of a prior ontological vacuum stage.",
+        "Two surfaces define the selected geometry rather than a universal minimum for all electromagnetic fluctuation forces.",
+        "Macroscopic boundary sensitivity does not by itself verify universal constraint propagation or new cross-level rules.",
+        "This admission reuses only the already reviewed ideal model, interpretive limits, actual experiments and linked corrections; no comprehensive literature survey, new force experiment or raw numerical/calibration replay is claimed."
       ],
       "contextIds": [
         "lamoreaux1997",
@@ -305,12 +293,6 @@ const contracts = {
           "note": "Reuse the exact reviewed passage and its original scope; no new acquisition or expanded reading is claimed."
         },
         {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /19. Numerical parent/ontology defaults are provenance, not evidence."
-        },
-        {
           "sourceId": "jaffe2005",
           "locator": "Section IV: interpretation limits and unresolved gravitational vacuum energy",
           "role": "limits",
@@ -326,10 +308,10 @@ const contracts = {
         "The selected cases concern attraction. They do not measure repulsion, every geometry/material/separation/temperature, all surface patches or a universal Casimir force independent of material response. Such extensions need their own declared models and evidence.",
         "Nominally neutral surfaces can retain a fitted electrostatic background; neutrality does not establish vanishing contact potentials or perfect subtraction. The original experimental limits remain attached rather than replaced by a precision label.",
         "Boundary-mode and material-response formulations delimit what the force identifies. No unique measurement of absolute vacuum energy, cosmological energy density, particles from nothing, or one privileged vacuum ontology follows. The material-source formulation does not disprove quantum correlations.",
-        "Original necessary parents 2.1 and 1.5, weights 0.55/0.45, downward direction[1], constraint modes[1], dependency10 and arising roles are not measured causal fractions or a universal formation/maintenance recipe. Supplied electromagnetic response is not proof of a prior ontological vacuum stage.",
-        "Original carrier group1/type0 minimum/critical count2 for parent2.1 and group0/type2 resonant-mode count1 for parent1.5, with null saturation, are unsupported thresholds. Two surfaces define the selected geometry rather than a universal minimum for all electromagnetic fluctuation forces.",
-        "Original Level2, Phase2, TypeRole4 Effect, science tags, established status, MustCover[10], ShouldCover[9] and Optional[] remain display/ontology choices. Macroscopic boundary sensitivity does not by itself verify SOMA downward causation, universal constraint propagation or new cross-level rules.",
-        "The generic theoretical and precision-measurement Evidence entries have null DOI/URL. This admission reuses only the already reviewed ideal model, interpretive limits, actual experiments and linked corrections; no comprehensive literature survey, new force experiment or raw numerical/calibration replay is claimed."
+        "Supplied electromagnetic response is not proof of a prior ontological vacuum stage.",
+        "Two surfaces define the selected geometry rather than a universal minimum for all electromagnetic fluctuation forces.",
+        "Macroscopic boundary sensitivity does not by itself verify universal constraint propagation or new cross-level rules.",
+        "This admission reuses only the already reviewed ideal model, interpretive limits, actual experiments and linked corrections; no comprehensive literature survey, new force experiment or raw numerical/calibration replay is claimed."
       ],
       "contextIds": [
         "lamoreaux1997",
@@ -342,7 +324,7 @@ const contracts = {
       "id": "phys:casimir-observable-boundary",
       "name": "Geometry, response and force-observable boundary for Casimir claims",
       "kind": "definition",
-      "description": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy or the original ontology of its parents.",
+      "description": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy.",
       "claimIds": [
         "D-phys-casimir-observable-boundary"
       ],
@@ -404,10 +386,10 @@ const contracts = {
         "The selected cases concern attraction. They do not measure repulsion, every geometry/material/separation/temperature, all surface patches or a universal Casimir force independent of material response. Such extensions need their own declared models and evidence.",
         "Nominally neutral surfaces can retain a fitted electrostatic background; neutrality does not establish vanishing contact potentials or perfect subtraction. The original experimental limits remain attached rather than replaced by a precision label.",
         "Boundary-mode and material-response formulations delimit what the force identifies. No unique measurement of absolute vacuum energy, cosmological energy density, particles from nothing, or one privileged vacuum ontology follows. The material-source formulation does not disprove quantum correlations.",
-        "Original necessary parents 2.1 and 1.5, weights 0.55/0.45, downward direction[1], constraint modes[1], dependency10 and arising roles are not measured causal fractions or a universal formation/maintenance recipe. Supplied electromagnetic response is not proof of a prior ontological vacuum stage.",
-        "Original carrier group1/type0 minimum/critical count2 for parent2.1 and group0/type2 resonant-mode count1 for parent1.5, with null saturation, are unsupported thresholds. Two surfaces define the selected geometry rather than a universal minimum for all electromagnetic fluctuation forces.",
-        "Original Level2, Phase2, TypeRole4 Effect, science tags, established status, MustCover[10], ShouldCover[9] and Optional[] remain display/ontology choices. Macroscopic boundary sensitivity does not by itself verify SOMA downward causation, universal constraint propagation or new cross-level rules.",
-        "The generic theoretical and precision-measurement Evidence entries have null DOI/URL. This admission reuses only the already reviewed ideal model, interpretive limits, actual experiments and linked corrections; no comprehensive literature survey, new force experiment or raw numerical/calibration replay is claimed."
+        "Supplied electromagnetic response is not proof of a prior ontological vacuum stage.",
+        "Two surfaces define the selected geometry rather than a universal minimum for all electromagnetic fluctuation forces.",
+        "Macroscopic boundary sensitivity does not by itself verify universal constraint propagation or new cross-level rules.",
+        "This admission reuses only the already reviewed ideal model, interpretive limits, actual experiments and linked corrections; no comprehensive literature survey, new force experiment or raw numerical/calibration replay is claimed."
       ]
     }
   ],
@@ -514,7 +496,7 @@ const contracts = {
     {
       "nodeId": "phys:casimir-observable-boundary",
       "role": "definition",
-      "denotes": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy or the original ontology of its parents.",
+      "denotes": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-casimir-observable-boundary"
@@ -533,24 +515,6 @@ const contracts = {
   "studies": [],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "casimir1948",
       "kind": "research-publication",

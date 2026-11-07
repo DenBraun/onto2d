@@ -118,8 +118,8 @@ test("intra/intermolecular evidence criteria cannot become universal red-shift, 
       dropLimit(changed, definition, "Cooperative networks are possible")],
     ["a fixed strength ranking cannot be derived from the definition", (changed) =>
       dropLimit(changed, definition, "fixed intermediate-strength band")],
-    ["an evidence classification cannot establish a carrier threshold or SOMA stage", (changed) =>
-      dropLimit(changed, definition, "measured critical count")]
+    ["an evidence classification cannot supply a measured formation rate or recognition selectivity", (changed) =>
+      dropLimit(changed, definition, "measured formation rate or recognition selectivity")]
   ]);
 });
 
@@ -207,7 +207,7 @@ test("hybrid ZPE agreement and LED/SAPT partitions do not become independent pur
   ]);
 });
 
-test("the synthesis retains both preparations and excludes universal ancestry, minima and catalogue ontology", async () => {
+test("the synthesis retains both preparations and excludes formation histories, universal minima and autonomous stages", async () => {
   const data = await source();
   for (const id of [synthesis, synthesisMethod]) assert.deepEqual(claim(data, id).contextIds, contexts);
   const incoming = data.graph.relations.filter((record) => record.target === "phys:hydrogen-bond-source-scope");
@@ -225,24 +225,25 @@ test("the synthesis retains both preparations and excludes universal ancestry, m
     ["a dependency into the synthesis must preserve the full output context", (changed) => {
       edge(changed, "water-dimer-model", "hydrogen-bond-source-scope").contextIds = [model];
     }],
-    ["the covalent donor does not validate the original 0.4 molecular ancestry or Ncrit2", (changed) =>
-      dropLimit(changed, synthesis, "Original parent2.3")],
-    ["neutral water does not require free-ion formation, weight0.3 or Ncrit1", (changed) =>
-      dropLimit(changed, synthesis, "Original parent2.4")],
-    ["dispersion as a component is not an earlier physical stage with weight0.3 or Ncrit2", (changed) =>
-      dropLimit(changed, synthesis, "Original parent2.6")],
+    ["a covalent donor is a structural definition rather than a full molecular-formation history", (changed) =>
+      dropLimit(changed, synthesis, "A covalent donor is a structural definition")],
+    ["neutral dimer binding cannot acquire a necessary chemical, ionic or dispersion emergence chain", (changed) =>
+      replaceStatement(changed, synthesis, "without a universal strength hierarchy, network-cooperativity requirement or necessary chemical/ionic/dispersion emergence chain",
+        "through a necessary free-ion formation and dispersion emergence chain")],
+    ["a dispersion contribution in a joint energy model is not an earlier physical stage", (changed) =>
+      dropLimit(changed, synthesis, "not a distinct earlier physical stage")],
     ["dimer composition is not a universal minimum for intramolecular cases", (changed) =>
       dropLimit(changed, synthesis, "Two monomers in the selected dimer")],
-    ["SOMA pattern and display codes do not establish a new autonomous physical stage", (changed) =>
-      dropLimit(changed, synthesis, "SOMA pattern labels")],
+    ["repeated terminology does not establish an autonomous physical arising", (changed) =>
+      dropLimit(changed, synthesis, "Repeated terminology does not establish an autonomous physical arising")],
     ["qualifying unreviewed applications cannot become denying their existence", (changed) =>
       dropLimit(changed, synthesis, "real application domains")],
-    ["null-DOI evidence prose cannot acquire experimental publication authority", (changed) =>
-      dropLimit(changed, synthesis, "null DOI/URL")]
+    ["no unnamed crystallographic, calorimetric or cooperative-network acquisition is admitted", (changed) =>
+      dropLimit(changed, synthesis, "No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition")]
   ]);
 });
 
-test("source reviews preserve actual passages and cannot turn catalogue provenance into scientific support", async () => {
+test("source reviews preserve actual passages and cannot acquire unread support or borrowed acquisitions", async () => {
   const data = await source();
   const iupac = publication(data, "arunan2011-hbond-definition");
   assert.equal(iupac.review.extent, "selected-published-definition-passages");
@@ -252,7 +253,7 @@ test("source reviews preserve actual passages and cannot turn catalogue provenan
     assert.equal(data.physics.studies.filter((item) => item.sourceId === id).length, 1);
   }
   for (const id of [measured, calculated, synthesis]) {
-    for (const citation of claim(data, id).citations.filter((item) => item.sourceId !== "legacy-2")) {
+    for (const citation of claim(data, id).citations) {
       assert.ok(publication(data, citation.sourceId).review.locators.includes(citation.locator));
     }
   }
@@ -265,10 +266,6 @@ test("source reviews preserve actual passages and cannot turn catalogue provenan
     }, /Unreviewed physics passage|Hydrogen|hydrogen/],
     ["an experimental study cannot borrow the model publication as its acquisition", (changed) => {
       study(changed, experiment).sourceId = model;
-    }, /Hydrogen|hydrogen|publication|source/],
-    ["source-card provenance cannot become primary hydrogen-bond evidence", (changed) => {
-      claim(changed, synthesis).citations.push({ sourceId: "legacy-2", locator: "/7",
-        role: "supports", note: "The original catalogue is primary experimental authority for hydrogen bonds." });
-    }, /Hydrogen|hydrogen|Unreviewed physics passage|primary particle evidence/]
+    }, /Hydrogen|hydrogen|publication|source/]
   ]);
 });

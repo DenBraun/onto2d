@@ -10,9 +10,9 @@ import { recordEvidenceContext, usesDictionaryEvidence } from "../apps/model-stu
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const DATA = path.join(ROOT, "apps/model-studio/data");
 const LOADER = path.join(ROOT, "apps/model-studio/browse-data.js");
-const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
-const EDGE_FIELDS = ["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight"];
-const REVIEW_KEYS = ["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"];
+const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain", "shortDescription"];
+const EDGE_FIELDS = ["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight", "status"];
+const REVIEW_KEYS = ["sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"];
 const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
 const pick = (value, fields) => Object.fromEntries(fields.filter((field) => Object.hasOwn(value, field)).map((field) => [field, value[field]]));
@@ -95,16 +95,14 @@ export function buildBrowseArtifacts(input) {
     const sourceIds = referencedSources(value);
     const subset = {
       sources: (dictionaries.sources ?? []).filter((source) => sourceIds.has(source.id)),
-      [key]: value,
-      ...(key === "vocabulary" && typeof dictionaries.dictionaryReview?.scope === "string"
-        ? { dictionaryReview: { scope: dictionaries.dictionaryReview.scope } } : {})
+      [key]: value
     };
     const descriptor = add(`${prefix}/review-${key}.json`, envelope("onto2d-studio-review", { key, dictionaries: subset }), BROWSE_LIMITS.reviewBytes);
     reviews[key] = {
       descriptor,
       count: Array.isArray(value) ? value.length : Array.isArray(value.nodeRoles) ? value.nodeRoles.length
-        : (value.studies?.length ?? 0) + (value.comparisons?.length ?? 0) + (value.cards?.length ?? 0),
-      ...(Array.isArray(value.cards) ? { cardCount: value.cards.length } : {}),
+        : (value.studies?.length ?? 0) + (value.comparisons?.length ?? 0) + (value.scopes?.length ?? 0),
+      ...(Array.isArray(value.scopes) ? { scopeCount: value.scopes.length } : {}),
       ...(Array.isArray(value.studies) ? { studyCount: value.studies.length, comparisonCount: value.comparisons?.length ?? 0 } : {})
     };
   }

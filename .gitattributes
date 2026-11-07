@@ -11,3 +11,22 @@
 *.woff2 binary
 
 references/canonical/data/lachniet2009-e111m1.tsv -text
+
+# Build outputs, written by the build and research scripts rather than by hand.
+# GitHub collapses them in diffs and leaves them out of language statistics.
+models/*/releases/** linguist-generated=true
+apps/model-studio/data/** linguist-generated=true
+assets/js/model-pack-worker.js linguist-generated=true
+apps/structural-geometry-lab/worker.js linguist-generated=true
+apps/structural-geometry-lab/release.js linguist-generated=true
+apps/structural-geometry-lab/evidence.json linguist-generated=true
+apps/structural-geometry-lab/controls.json linguist-generated=true
+cases/canonical-interactions/analysis.json linguist-generated=true
+cases/structural-geometry/causal-emergence/artifact.json linguist-generated=true
+cases/structural-geometry/causal-emergence/projection.json linguist-generated=true
+cases/structural-geometry/causal-emergence/technical-artifact.json linguist-generated=true
+cases/structural-geometry/causal-emergence/technical-projection.json linguist-generated=true
+cases/structural-geometry/**/artifacts/** linguist-generated=true
+cases/structural-geometry/**/suite.json linguist-generated=true
+cases/structural-geometry/**/reference.json linguist-generated=true
+cases/structural-geometry/**/networkx-expected.json linguist-generated=true

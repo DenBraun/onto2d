@@ -66,7 +66,6 @@ test("directional excitation admits only a sourced interpretation boundary", asy
     const publication = data.graph.sources.find((record) => record.id === citation.sourceId);
     assert.ok(publication.review.locators.includes(citation.locator),
       "Each citation remains within an actual reviewed source extent");
-    if (publication.kind === "legacy-catalogue") assert.equal(citation.role, "provenance");
   }
 });
 
@@ -101,16 +100,14 @@ test("spatial axes, opposite directions and preparation controls cannot imply dr
   ]);
 });
 
-test("all proposed parents retain descriptive roles without weights or universal carrier thresholds", async () => {
+test("anisotropy, polarization, evolution and lifetime dependencies retain descriptive roles without modulating persistence", async () => {
   assert.deepEqual(admission.formalDependencies.map(([, [from]]) => from), [
     "phys:free-scalar-propagation", "phys:field-anisotropy-boundary", "phys:photon-polarization-scope",
     "phys:free-field-time-evolution", "phys:resonance-lifetime-convention"
   ]);
   await rejects([
     ["photon polarization and free evolution do not modulate scalar persistence", (data) =>
-      dropLimit(data, /Original parent 1\.32 supplies/)],
-    ["source weights, minima and SOMA codes have no physical authority", (data) =>
-      dropLimit(data, /original weights 0\.40/)],
+      dropLimit(data, /effective-field-anisotropy dependency supplies/)],
     ...admission.formalDependencies.flatMap(([id]) => [
       [`definition input ${id} is not a causal intervention`, (data) => {
         data.graph.relations.find((record) => record.id === id).kind = "functional";
@@ -122,22 +119,19 @@ test("all proposed parents retain descriptive roles without weights or universal
   ]);
 });
 
-test("the unresolved Level-0 transport proposal and unnamed publications cannot validate a physical bridge", async () => {
+test("the unresolved Level-0 transport proposal and absent primary evidence cannot validate a physical bridge", async () => {
   assert.ok(admission.formalDependencies.every(([, endpoints]) =>
     endpoints.every((id) => !id.startsWith("l0:"))), "No Level-0 physical construction edge is admitted");
   const data = await source();
   assert.equal(data.graph.claims.find((record) => record.id === "F12").status, "unresolved");
   await rejects([
     ["a bias label cannot replace a field-observable map or testable prediction", (copy) =>
-      dropLimit(copy, /Parent 0\.23 remains/)],
-    ["unsupported evidence placeholders cannot become a primary result", (copy) =>
-      dropLimit(copy, /conceptual and theoretical evidence placeholders/)],
+      dropLimit(copy, /Localized transport bias remains an author-supplied/)],
+    ["no primary experiment, anisotropic-vacuum realization or numerical replay is admitted", (copy) =>
+      dropLimit(copy, /No primary experiment, anisotropic-vacuum realization/)],
     ["the inherited unresolved transport proposal cannot replace a formal input", (copy) => {
       copy.graph.relations.find((record) => record.target === nodeId
         && record.source === "phys:free-scalar-propagation").source = "l0:localized-transport-bias";
-    }],
-    ["catalogue provenance cannot silently become scientific support", (copy) => {
-      claim(copy).citations.find((record) => record.sourceId === "legacy-0").role = "supports";
     }],
     ["a definition cannot silently acquire a response experiment", (copy) => {
       claim(copy).contextIds = ["phys:directional-stability-experiment"];

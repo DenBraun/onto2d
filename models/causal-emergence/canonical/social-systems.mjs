@@ -1,31 +1,28 @@
+import { isReviewedBridgeRelation, isReviewedBridgeClaim, withBridgeReadings } from "./bridges.mjs";
+import { isCauseEvidenceClaim } from "./cause-evidence.mjs";
 import { publicationIdentity } from "./publication-identity.mjs";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { SOCIAL_SYSTEMS_RECORDS, SOCIAL_SYSTEMS_CARD_SCOPES } from "./level-seven.mjs";
+import { SOCIAL_SYSTEMS_RECORDS, SOCIAL_SYSTEMS_SCOPES } from "./level-seven.mjs";
 
-const originals = JSON.parse(readFileSync(new URL("../../../references/level-7.json", import.meta.url), "utf8"));
 const root = fileURLToPath(new URL("../../../", import.meta.url));
 const published = new Set(["publication-supported", "literature-synthesis"]);
-const dispositions = new Set(["supported", "qualified", "excluded", "unresolved"]);
-const bibliographyRoles = new Set(["metadata-only", "reviewed-conceptual", "selected-review", "primary-evidence", "computational-model"]);
 const sorted = (values) => [...values].sort();
 export const SOCIAL_SYSTEMS_OBLIGATIONS = [
   "Obtain independent scientific review of the source readings, bibliographic corrections and unresolved reporting conflicts.",
   "Test proposed mediation, persistence, cross-population transfer and causal necessities with matched controls; document definitions and observed associations do not establish them.",
   "Reproduce selected original data and analysis before admitting numerical replay, universal social minima, weighted dependencies or a construction rule."
 ];
-export function socialSystemsCards(graph) {
+export function socialSystemsScopes(graph) {
   const claims = new Map(graph.claims.map((claim) => [claim.id, claim]));
-  return SOCIAL_SYSTEMS_CARD_SCOPES.map((card) => {
-    const ids = new Set([...card.claimIds, ...card.assertions.flatMap((entry) => entry.claimIds), ...card.parentDispositions.flatMap((entry) => entry.claimIds)]);
-    const sourceIds = new Set(card.bibliography.map((entry) => entry.sourceId));
-    for (const id of ids) {
-      assert.ok(claims.has(id), `Unknown Level-7 card claim ${card.code}: ${id}`);
+  return SOCIAL_SYSTEMS_SCOPES.map((scope) => {
+    const sourceIds = new Set();
+    for (const id of scope.claimIds) {
+      assert.ok(claims.has(id), `Unknown Level-7 scope claim ${scope.id}: ${id}`);
       for (const citation of claims.get(id).citations) sourceIds.add(citation.sourceId);
     }
-    return { ...card, sourceIds: sorted(sourceIds) };
+    return { ...scope, sourceIds: sorted(sourceIds) };
   });
 }
 function index(rows, label, key = "id") {
@@ -53,17 +50,16 @@ export function validateSocialSystemsReview(data, context) {
     const key = kind === "readiness" ? "nodeId" : "id";
     admitted[kind] = new Set();
     for (const record of expected) {
-      assert.deepEqual(records[kind].get(record[key]), record, `Social-systems ${kind} changed ${record[key]}: preserve reviewed preparation and scope`);
+      assert.deepEqual(records[kind].get(record[key]), kind === "sources" ? withBridgeReadings(record) : record, `Social-systems ${kind} changed ${record[key]}: preserve reviewed preparation and scope`);
       admitted[kind].add(record[key]);
     }
   }
-  // Catalogue provenance remains in this inventory even when IDs are relabeled
+  // Owned sources remain in this inventory even when IDs are relabeled
   // or unrelated primary evidence is added to an unreviewed social claim.
-  const ownedSources = new Set([...admitted.sources, "legacy-7", "social-systems-review"]);
+  const ownedSources = new Set([...admitted.sources, "social-systems-review"]);
   const ownedDois = new Set(SOCIAL_SYSTEMS_RECORDS.sources.filter((source) => source.doi).map((source) => source.doi.toLowerCase()));
   const ownedIdentities = new Set([...SOCIAL_SYSTEMS_RECORDS.sources.map((source) => publicationIdentity(source.url)), ...[...ownedDois].map((doi) => `doi:${doi}`)].filter(Boolean));
-  const files = new Map([["references/level-7.json", { id: "legacy-7", kind: "legacy-catalogue" }],
-    ["references/canonical/social-systems-review.json", { id: "social-systems-review", kind: "internal-review" }]]);
+  const files = new Map([["references/canonical/social-systems-review.json", { id: "social-systems-review", kind: "internal-review" }]]);
   for (const [file, owner] of files) {
     assert.equal(context.sources.get(owner.id)?.path, file, `Social-systems source binding changed ${owner.id}`);
     assert.equal(context.sources.get(owner.id)?.kind, owner.kind, `Social-systems source role changed ${owner.id}`);
@@ -85,31 +81,16 @@ export function validateSocialSystemsReview(data, context) {
   }
   assert.deepEqual(sorted(graph.entities.filter((record) => record.id.startsWith("soc:") || usesClaims(record)
     || record.sourceCoordinates.some((coordinate) => ownedSources.has(coordinate.sourceId))).map((record) => record.id)), sorted(admitted.entities), "Unreviewed social-systems entity");
-  assert.deepEqual(sorted(graph.claims.filter((record) => /^[^-]+-soc-/.test(record.id) || usesEvidence(record)).map((record) => record.id)), sorted(admitted.claims), "Unreviewed social-systems claim");
+  assert.deepEqual(sorted(graph.claims.filter((record) => !isReviewedBridgeClaim(record) && !isCauseEvidenceClaim(record) && (/^[^-]+-soc-/.test(record.id) || usesEvidence(record))).map((record) => record.id)), sorted(admitted.claims), "Unreviewed social-systems claim");
   assert.deepEqual(sorted(socialSystems.studies.map((record) => record.id)), sorted(admitted.studies), "Unreviewed social-systems acquisition inventory");
   assert.deepEqual(sorted(socialSystems.comparisons.map((record) => record.id)), sorted(admitted.comparisons), "Unreviewed social-systems comparison inventory");
-  assert.deepEqual(socialSystems.cards, socialSystemsCards(graph), "Level-7 source decisions differ from reviewed contracts");
-  assert.equal(SOCIAL_SYSTEMS_CARD_SCOPES.length, originals.length, "Incomplete Level-7 card coverage");
-  assert.deepEqual(SOCIAL_SYSTEMS_CARD_SCOPES.map((card) => card.sourceIndex), originals.map((card) => card.Id));
-  for (const card of SOCIAL_SYSTEMS_CARD_SCOPES) {
-    const original = originals[card.sourceIndex];
-    assert.equal(card.code, `7.${original.Id}`);
-    assert.equal(card.originalName, original.Name);
-    assert.ok(card.scope.length && card.nodeIds.length && card.claimIds.length && card.assertions.length && card.excludedDefaults.length);
-    assert.deepEqual(card.parentDispositions.map((entry) => entry.parentCode), original.Parents.map((entry) => entry.ParentCode), `Level-7 parent inventory/order changed ${card.code}`);
-    assert.equal(card.bibliography.length, original.Evidence.length, `Level-7 bibliography coverage changed ${card.code}`);
-    assert.deepEqual(card.bibliography.map((entry) => entry.sourceIndex), original.Evidence.map((_, i) => i));
-    for (const entry of card.bibliography) {
-      assert.ok(bibliographyRoles.has(entry.disposition) && entry.reason.length && context.sources.has(entry.sourceId));
-      assert.ok(context.sources.get(entry.sourceId).review.locators.includes(entry.locator), `Level-7 bibliography reading changed ${card.code}`);
-    }
-    for (const id of card.nodeIds) assert.ok(context.entities.has(id), `Unknown Level-7 node ${card.code}: ${id}`);
-    for (const id of card.claimIds) assert.ok(context.claims.has(id), `Unknown Level-7 claim ${card.code}: ${id}`);
-    for (const entry of [...card.assertions, ...card.parentDispositions]) {
-      assert.ok(dispositions.has(entry.disposition) && entry.reason.length && entry.claimIds.length, `Incomplete Level-7 disposition ${card.code}`);
-      for (const id of entry.claimIds) assert.ok(context.claims.has(id), `Unknown Level-7 evidence ${card.code}: ${id}`);
-    }
-    assert.ok(card.nodeIds.some((id) => context.entities.get(id).sourceCoordinates.some((coordinate) => coordinate.sourceId === "legacy-7" && coordinate.locator === `/${original.Id}`)));
+  assert.deepEqual(socialSystems.scopes, socialSystemsScopes(graph), "Level-7 topic scopes differ from reviewed contracts");
+  for (const scope of SOCIAL_SYSTEMS_SCOPES) {
+    assert.ok(scope.scope.length && scope.nodeIds.length && scope.claimIds.length, `Empty Level-7 scope ${scope.id}`);
+    assert.equal(scope.nodeIds[0], scope.id, `Level-7 scope node changed ${scope.id}`);
+    assert.equal(context.entities.get(scope.id)?.name, `${scope.name}: reviewed scope`, `Level-7 scope name changed ${scope.id}`);
+    for (const id of scope.nodeIds) assert.ok(context.entities.has(id), `Unknown Level-7 node ${scope.id}: ${id}`);
+    for (const id of scope.claimIds) assert.ok(context.claims.has(id), `Unknown Level-7 claim ${scope.id}: ${id}`);
   }
   for (const study of SOCIAL_SYSTEMS_RECORDS.studies) {
     const source = context.sources.get(study.sourceId);
@@ -143,6 +124,7 @@ export function validateSocialSystemsReview(data, context) {
     for (const coordinate of entity.sourceCoordinates) assert.ok(context.sources.get(coordinate.sourceId)?.review.locators.includes(coordinate.locator), `Social coordinate exceeds reading ${entity.id}`);
   }
   for (const relation of graph.relations) {
+    if (isReviewedBridgeRelation(relation)) continue;
     if (!relation.id.startsWith("social-systems:") && !relation.source.startsWith("soc:") && !relation.target.startsWith("soc:")
       && !usesClaims(relation) && !usesEvidence(relation) && !(relation.carrier && usesEvidence(relation.carrier))) continue;
     assert.ok(admitted.relations.has(relation.id), `Unreviewed social-systems relation or domain bridge ${relation.id}`);
@@ -163,7 +145,7 @@ export function validateSocialSystemsReview(data, context) {
     for (const id of comparison.claimIds) assert.ok(context.claims.has(id));
   }
   const usesSocialClaims = (record) => record.claimIds?.some((id) => admitted.claims.has(id)
-    || context.claims.get(id)?.citations.some((citation) => citation.sourceId === "legacy-7" || ownedSources.has(citation.sourceId)));
+    || context.claims.get(id)?.citations.some((citation) => ownedSources.has(citation.sourceId)));
   for (const rule of graph.rules) assert.ok(!usesSocialClaims(rule)
     && ![...rule.inputs.map((input) => input.entityId), ...rule.outputEntityIds].some((id) => id.startsWith("soc:") || usesSocialClaims(context.entities.get(id))),
   "Social source records do not establish construction rules");

@@ -2930,7 +2930,7 @@
       "limitations": [
         "Primary main Methods, selected Results and displayed Figures 1-4 captions were read in Europe PMC XML. Supplementary appendix, raw trial data and all assay-level calibration were not read. Phase 2b/phase 3 differ in population, countries and endpoint definition; a negative phase 3 primary endpoint is retained. Biomarker induction does not establish reduced respiratory illness or a universal gain in immune function.",
         "A positive unadjusted exploratory comparison does not override the stopped gatekeeping analysis.",
-        "Regimens, sites, risk groups and endpoint definitions differ from phase3; no universal improvement in all immune objectives is admitted.",
+        "Regimens, sites, risk groups and endpoint definitions differ from phase 3; no universal improvement in all immune objectives is admitted.",
         "Primary-source interpretation only: no raw-data replay, laboratory reproduction, independent scientific review, universal causal weight, minimal organism or numerical construction rule is admitted."
       ],
       "readExtent": "selected-primary-results-methods-and-figure-legends-supplement-unread",
@@ -2950,13 +2950,13 @@
       "volume": "2",
       "issue": "5",
       "pages": "e250-e262",
-      "system": "Independent phase3 randomized older-adult RTB101 clinical trial",
-      "preparation": "1,024 adults aged at least65 in New Zealand/Australia were randomized to RTB101 10mg once daily or placebo for sixteen weeks, with four-week off-drug follow-up. Unlike phase2b, smokers/COPD were excluded and the primary endpoint was clinically symptomatic respiratory illness irrespective of laboratory confirmation.",
+      "system": "Independent phase 3 randomized older-adult RTB101 clinical trial",
+      "preparation": "1,024 adults aged at least 65 in New Zealand/Australia were randomized to RTB101 10mg once daily or placebo for sixteen weeks, with four-week off-drug follow-up. Unlike phase 2b, smokers/COPD were excluded and the primary endpoint was clinically symptomatic respiratory illness irrespective of laboratory confirmation.",
       "observable": "Clinically symptomatic respiratory illness under intention-to-treat analysis",
       "finding": "The primary clinical endpoint did not improve; formal testing of subsequent endpoints stopped under gatekeeping.",
       "limitations": [
         "Primary main Methods, selected Results and displayed Figures 1-4 captions were read in Europe PMC XML. Supplementary appendix, raw trial data and all assay-level calibration were not read. Phase 2b/phase 3 differ in population, countries and endpoint definition; a negative phase 3 primary endpoint is retained. Biomarker induction does not establish reduced respiratory illness or a universal gain in immune function.",
-        "Changed population and ascertainment prevent treating phase2b and phase3 as identical assays; the negative primary result still limits broad efficacy claims.",
+        "Changed population and ascertainment prevent treating phase 2b and phase 3 as identical assays; the negative primary result still limits broad efficacy claims.",
         "Nominal secondary or virus-specific trends are not confirmed clinical efficacy after gatekeeping failed.",
         "Primary-source interpretation only: no raw-data replay, laboratory reproduction, independent scientific review, universal causal weight, minimal organism or numerical construction rule is admitted."
       ],
@@ -2977,13 +2977,13 @@
       "volume": "2",
       "issue": "5",
       "pages": "e250-e262",
-      "system": "Selected phase3 whole-blood biomarker sample",
-      "preparation": "Baseline/week16 RNA from180 treated and180 placebo participants was analyzed for twenty IFN-induced antiviral genes. Sampling first included eligible laboratory-confirmed cases then randomly filled noncases with paired blood, subject to available budget.",
+      "system": "Selected phase 3 whole-blood biomarker sample",
+      "preparation": "Baseline/week16 RNA from 180 treated and 180 placebo participants was analyzed for twenty IFN-induced antiviral genes. Sampling first included eligible laboratory-confirmed cases then randomly filled noncases with paired blood, subject to available budget.",
       "observable": "Paired whole-blood antiviral gene-expression changes",
       "finding": "The study reports greater IFN-induced gene upregulation in the treated sample despite the separate null primary clinical endpoint.",
       "limitations": [
         "Primary main Methods, selected Results and displayed Figures 1-4 captions were read in Europe PMC XML. Supplementary appendix, raw trial data and all assay-level calibration were not read. Phase 2b/phase 3 differ in population, countries and endpoint definition; a negative phase 3 primary endpoint is retained. Biomarker induction does not establish reduced respiratory illness or a universal gain in immune function.",
-        "This sample is selected and dependent on phase3 participants, not an independent trial or proof that each gene causes protection.",
+        "This sample is selected and dependent on phase 3 participants, not an independent trial or proof that each gene causes protection.",
         "Gene-expression induction is not pathogen clearance, clinical benefit, a quantified activation threshold or complete innate immune competence.",
         "Primary-source interpretation only: no raw-data replay, laboratory reproduction, independent scientific review, universal causal weight, minimal organism or numerical construction rule is admitted."
       ],
@@ -3005,15 +3005,15 @@
       "issue": "1",
       "pages": "1-8",
       "system": "Six young subjects with normal corrected vision",
-      "preparation": "Measure anterior corneal topography and whole-eye Hartmann-Shack wavefronts in the six-subject comparison. Subjects are 24-38 years old; accommodation is paralyzed with 1 percent cyclopentholate, sensing uses 780 nm light and the comparison uses a 5.9 mm pupil. Methods names the pupil geometric center for registration, whereas Discussion describes corneal-pole referencing and argues that the centers are close; no unique registration is reconstructed here. Remove defocus for the reported RMS comparison.",
+      "preparation": "Measure anterior corneal topography and whole-eye Hartmann-Shack wavefronts in the six-subject comparison. Subjects are 24-38 years old; accommodation is paralyzed with 1 percent cyclopentolate, sensing uses 780 nm light and the comparison uses a 5.9 mm pupil. Methods names the pupil geometric center for registration, whereas Discussion describes corneal-pole referencing and argues that the centers are close; no unique registration is reconstructed here. Remove defocus for the reported RMS comparison.",
       "observable": "Corneal and whole-eye wavefront coefficients; internal-component and point-spread estimates are separate model outputs",
       "finding": "In the six-eye comparison, the reconstructed corneal component has larger aberration than the complete eye after the stated defocus removal; the assembled optical response is not determined by isolated-component optical quality alone.",
       "limitations": [
         "These are supplied adult eyes, not organogenesis or direct observations of an active compensation controller.",
-        "The internal component is partly obtained by subtracting the complete-eye estimate; component correlations are not independent causal measurements of lens alignment.",
+        "The internal component is partly obtained by subtracting the corneal estimate from the complete-eye estimate; component correlations are not independent causal measurements of lens alignment.",
         "The preparation does not measure full spectral transfer, accommodation dynamics, retinal transduction or perceived image quality.",
         "The scientific main text, Methods, Results, Discussion and figure legends were read in the eight-page published PDF hosted by an author institution. Images and raw wavefronts were not digitized or replayed. The main six-subject comparison and five-subject saline preparation are distinct, with two validation subjects. Internal optics includes posterior cornea and ocular media as well as the lens. Methods names the pupil geometric center for registration whereas Discussion says corneal measurements reference the corneal pole and argues the centers are close; that unresolved reference difference constrains component attribution. Crossref supplies page/article number 1; the printed paper and NLM give pages 1-8.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3043,7 +3043,7 @@
         "Optometer, window aberrations, pupil registration and the posterior cornea constrain the internal-optics attribution.",
         "The five-subject goggle group and the six-subject main comparison are not one eleven-eye matched decomposition.",
         "The scientific main text, Methods, Results, Discussion and figure legends were read in the eight-page published PDF hosted by an author institution. Images and raw wavefronts were not digitized or replayed. The main six-subject comparison and five-subject saline preparation are distinct, with two validation subjects. Internal optics includes posterior cornea and ocular media as well as the lens. Methods names the pupil geometric center for registration whereas Discussion says corneal measurements reference the corneal pole and argues the centers are close; that unresolved reference difference constrains component attribution. Crossref supplies page/article number 1; the printed paper and NLM give pages 1-8.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3071,7 +3071,7 @@
         "Calculated point-spread functions are not independently captured retinal images, and negative component correlations reuse subtraction inputs.",
         "Mechanisms involving lens tilt, decentration and posterior cornea are proposed alternatives rather than an experimentally identified universal control law.",
         "The scientific main text, Methods, Results, Discussion and figure legends were read in the eight-page published PDF hosted by an author institution. Images and raw wavefronts were not digitized or replayed. The main six-subject comparison and five-subject saline preparation are distinct, with two validation subjects. Internal optics includes posterior cornea and ocular media as well as the lens. Methods names the pupil geometric center for registration whereas Discussion says corneal measurements reference the corneal pole and argues the centers are close; that unresolved reference difference constrains component attribution. Crossref supplies page/article number 1; the printed paper and NLM give pages 1-8.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3101,7 +3101,7 @@
         "Nine patches are not nine independent participants, and this selected adult sample is not a prevalence or developmental study.",
         "Normal performance on these tests does not establish equal acuity, equal chromatic sensitivity or a uniquely compensating downstream circuit.",
         "Selected primary main Methods, Results, Discussion, tables and figure legends were read in PMC HTML. Supplementary blur analyses, raw images and cone assignments were not replayed. The official 2006 erratum and its corrected Figures 6 and 9 were read and visually inspected separately; a duplicated original figure is not counted as independent evidence. Nine retinal patches come from eight selected observers, with seven men and one protan carrier. These are local adult observations, not a developmental intervention or population prevalence sample.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3130,7 +3130,7 @@
         "The supplementary blur correction is described in main text but its full analysis was not inspected or reproduced.",
         "Failure to distinguish a mosaic from the chosen random-label ensemble does not prove exact randomness or independence of developmental mechanisms.",
         "Selected primary main Methods, Results, Discussion, tables and figure legends were read in PMC HTML. Supplementary blur analyses, raw images and cone assignments were not replayed. The official 2006 erratum and its corrected Figures 6 and 9 were read and visually inspected separately; a duplicated original figure is not counted as independent evidence. Nine retinal patches come from eight selected observers, with seven men and one protan carrier. These are local adult observations, not a developmental intervention or population prevalence sample.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3159,7 +3159,7 @@
         "The primary mechanism of the discrepancy remains unresolved; the comparison does not directly measure a full spatial acuity map or cognitive normalization.",
         "Shared observers, classification fits and pigment templates do not supply independent replication.",
         "Selected primary main Methods, Results, Discussion, tables and figure legends were read in PMC HTML. Supplementary blur analyses, raw images and cone assignments were not replayed. The official 2006 erratum and its corrected Figures 6 and 9 were read and visually inspected separately; a duplicated original figure is not counted as independent evidence. Nine retinal patches come from eight selected observers, with seven men and one protan carrier. These are local adult observations, not a developmental intervention or population prevalence sample.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3188,7 +3188,7 @@
         "Fluorescence distribution is not a complete synapse count, functional visual map or behavioral acuity measurement.",
         "Some expression, wave-activity and double-mutant controls are summarized in the main text but their SI evidence remains unread.",
         "Selected primary main Results, Methods, Discussion and figure legends were read in PMC HTML. The SI Appendix, detailed simulation parameters, deposited images and numerical fits were not inspected or replayed. Math5/Atoh7 mutation changes development and surviving input populations; it is not a selective manipulation of an otherwise fixed competition parameter. Collicular projections are distinct from photoreceptor sampling geometry and from direct behavioral acuity.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3216,7 +3216,7 @@
         "The assay is distinct from whole-eye fluorescence, photoreceptor sampling and a simultaneous receptive-field or acuity map.",
         "No new tracing image quantification or full supplementary control review is claimed.",
         "Selected primary main Results, Methods, Discussion and figure legends were read in PMC HTML. The SI Appendix, detailed simulation parameters, deposited images and numerical fits were not inspected or replayed. Math5/Atoh7 mutation changes development and surviving input populations; it is not a selective manipulation of an otherwise fixed competition parameter. Collicular projections are distinct from photoreceptor sampling geometry and from direct behavioral acuity.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3244,7 +3244,7 @@
         "Uniform modeled deletion and biological Math5 loss are different interventions.",
         "The source describes mismatches near boundaries and posterior widening; numerical SI fits and cross-species single-axon tests are not independently verified here.",
         "Selected primary main Results, Methods, Discussion and figure legends were read in PMC HTML. The SI Appendix, detailed simulation parameters, deposited images and numerical fits were not inspected or replayed. Math5/Atoh7 mutation changes development and surviving input populations; it is not a selective manipulation of an otherwise fixed competition parameter. Collicular projections are distinct from photoreceptor sampling geometry and from direct behavioral acuity.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3273,7 +3273,7 @@
         "The 10 and 23 minute persistence examples are recording-limited histories, not proof of permanent memory, recovery kinetics or a hysteresis loop.",
         "Exact supplementary grating/calibration controls remain unread; light-response reversal does not identify a unique crossover circuit or demonstrate downstream behavioral use.",
         "Selected primary main Results, Experimental procedures, Discussion and figure legends were read in the PMC author manuscript. Supplementary grating details, figures, tables, recording traces and source data were not inspected. Selected mouse On-Off direction-selective cells can reverse, lose sharp tuning or remain stable; the result does not establish every retinal computation, enduring memory or ecological use. Anatomical wiring and an inferred functional pathway are distinct.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3301,7 +3301,7 @@
         "The source's Figure 4 timing curves are separately normalized before and after adaptation and cannot establish preserved absolute firing rate.",
         "Subset attrition and unread supplementary traces remain part of the uncertainty.",
         "Selected primary main Results, Experimental procedures, Discussion and figure legends were read in the PMC author manuscript. Supplementary grating details, figures, tables, recording traces and source data were not inspected. Selected mouse On-Off direction-selective cells can reverse, lose sharp tuning or remain stable; the result does not establish every retinal computation, enduring memory or ecological use. Anatomical wiring and an inferred functional pathway are distinct.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3330,7 +3330,7 @@
         "Cells nested in five retinas are not 68 independent animals, and supplementary WT controls were not independently inspected.",
         "The source intervention supports a preparation-specific role for starburst signaling without proving that wiring alone fixes computation.",
         "Selected main Results, Experimental Procedures, Discussion and figure legends were read in the PMC author manuscript. Extended Experimental Procedures, supplementary tables/figures and raw recordings were not inspected. Main text summarizes a wild-type ligand control whose full supplementary evidence remains unread. Silencing calcium imaging, patch-clamp polarity measurements and the simplified phase simulation are separate contexts. Modeled reversal does not establish a unique biological implementation.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3358,7 +3358,7 @@
         "Extended methods and supplementary sample/control tables remain unread; dorsal versus ventral location cannot be replaced by an unconditional species-wide response rule.",
         "A starburst polarity response and ganglion directional reversal are distinct readouts; their mechanistic relation requires the separate model and additional discrimination.",
         "Selected main Results, Experimental Procedures, Discussion and figure legends were read in the PMC author manuscript. Extended Experimental Procedures, supplementary tables/figures and raw recordings were not inspected. Main text summarizes a wild-type ligand control whose full supplementary evidence remains unread. Silencing calcium imaging, patch-clamp polarity measurements and the simplified phase simulation are separate contexts. Modeled reversal does not establish a unique biological implementation.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3386,7 +3386,7 @@
         "No source simulation, parameter sensitivity or stochastic spike ensemble is replayed here.",
         "The calculation cannot be counted as an independent physiological observation or a universal circuit generator.",
         "Selected main Results, Experimental Procedures, Discussion and figure legends were read in the PMC author manuscript. Extended Experimental Procedures, supplementary tables/figures and raw recordings were not inspected. Main text summarizes a wild-type ligand control whose full supplementary evidence remains unread. Silencing calcium imaging, patch-clamp polarity measurements and the simplified phase simulation are separate contexts. Modeled reversal does not establish a unique biological implementation.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3414,7 +3414,7 @@
         "Different precision metrics, pairing windows and sampled cells cannot be pooled into a universal timing constant.",
         "The experiment supplies an existing retina and does not measure end-to-end human perception or general noise-resistant communication.",
         "Selected primary main Results, Experimental Procedures, Discussion and figure legends were read in PMC HTML. Supplementary filters, raw traces and the MATLAB analysis were not replayed. Functionally classified On, Off transient and Off sustained mouse cells, light-evoked recordings, voltage-clamp extraction and somatic conductance injection remain distinct preparations. Somatic injection does not reproduce spatial dendritic input; precision depends on the stimulus and comparison metric.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3443,7 +3443,7 @@
         "The source uses representative measured input waveforms and pharmacological assumptions; the comparison does not identify all upstream sources of variability.",
         "Repeated-light, voltage-clamp and conductance-injection acquisitions share publication and preparation history; they are not independent replications.",
         "Selected primary main Results, Experimental Procedures, Discussion and figure legends were read in PMC HTML. Supplementary filters, raw traces and the MATLAB analysis were not replayed. Functionally classified On, Off transient and Off sustained mouse cells, light-evoked recordings, voltage-clamp extraction and somatic conductance injection remain distinct preparations. Somatic injection does not reproduce spatial dendritic input; precision depends on the stimulus and comparison metric.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3472,7 +3472,7 @@
         "A short event jitter is not a direct measurement of phototransduction speed, an information rate or downstream decoding.",
         "The analyzed contrast populations have unequal cell/retina counts; artificial flicker is not a complete natural-scene ensemble.",
         "Selected primary Methods and Analysis, Results, Discussion and figure legends were read in PMC HTML. Raw spike trains and event parsing were not independently replayed. Salamander and rabbit preparations are separate; contrast groups contain different numbers of cells and retinas. First-event timing, count variance, firing fraction and model-derived information are different observables. The paper explicitly leaves whether the brain uses the estimated information unanswered.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3501,7 +3501,7 @@
         "Two retinas do not establish population-wide invariance; cell counts and within-retina repeated trials are not independent animal replication.",
         "Behavioral use of timing or count information is not assayed.",
         "Selected primary Methods and Analysis, Results, Discussion and figure legends were read in PMC HTML. Raw spike trains and event parsing were not independently replayed. Salamander and rabbit preparations are separate; contrast groups contain different numbers of cells and retinas. First-event timing, count variance, firing fraction and model-derived information are different observables. The paper explicitly leaves whether the brain uses the estimated information unanswered.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3529,7 +3529,7 @@
         "No new entropy estimator, neural decoder or raw-event analysis is reproduced.",
         "The inferred information measure is distinct from physical spike timing and from a demonstrated biological communication function.",
         "Selected primary Methods and Analysis, Results, Discussion and figure legends were read in PMC HTML. Raw spike trains and event parsing were not independently replayed. Salamander and rabbit preparations are separate; contrast groups contain different numbers of cells and retinas. First-event timing, count variance, firing fraction and model-derived information are different observables. The paper explicitly leaves whether the brain uses the estimated information unanswered.",
-        "Published source interpretation; no independent experiment, raw-data replay, universal organism construction rule, carrier minimum or causal weight is admitted."
+        "Published source interpretation; no independent experiment, raw-data replay or universal organism construction rule is admitted."
       ],
       "readExtent": "selected-primary-main-methods-results-discussion-and-figure-legends-supplements-unread",
       "reviewedLocators": [
@@ -3874,9 +3874,9 @@
         "everett2018-cantos-diabetes",
         "mannick2021-torc1-respiratory-trials"
       ],
-      "discriminator": "Retain randomized clinical endpoints, safety/neutral outcomes, null diabetes prevention and the phase3 clinical/gene-expression dissociation.",
+      "discriminator": "Retain randomized clinical endpoints, safety/neutral outcomes, null diabetes prevention and the phase 3 clinical/gene-expression dissociation.",
       "result": "conditional-support",
-      "limit": "Ridker/Everett are one CANTOS trial; phase3 clinical and biomarker rows are also dependent, and the Everett acquisition is abstract-only.",
+      "limit": "Ridker/Everett are one CANTOS trial; phase 3 clinical and biomarker rows are also dependent, and the Everett acquisition is abstract-only.",
       "assumptions": [
         "Preserve species, compartment, intervention, endpoint, duration and reading-extent boundaries.",
         "Shared trial/cohort/panel data are dependent; publication count is not independent replication count.",

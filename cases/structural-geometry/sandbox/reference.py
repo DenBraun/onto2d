@@ -6,8 +6,7 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-FILES = ["controls.json", "PROTOCOL.md", "../canonical/controls.json", "../typed/controls.json",
-         "../../../models/causal-emergence/releases/2026.08.15/bundle.json"]
+FILES = ["controls.json", "PROTOCOL.md", "../canonical/controls.json", "../typed/controls.json"]
 FIELDS = ["dependencyTypeId", "interactionModeIds", "ontologicalRole", "necessity", "causalDirectionIds"]
 SETS = ["interactionModeIds", "causalDirectionIds"]
 
@@ -33,9 +32,6 @@ def sources(document):
     typed = read("../typed/controls.json")
     result.update({"typed/" + g["id"]: graph_records(g, True) for g in typed["controls"]})
     result.update({"local/" + g["id"]: graph_records(g, True) for g in document["graphs"]})
-    pack = read(FILES[-1])["files"]
-    result["typed/causal-fragment"] = {"nodes": [n["id"] for n in pack["model/nodes.json"]],
-                                       "edges": pack["model/edges.json"], "scope": typed["causalScope"]}
     return result
 
 

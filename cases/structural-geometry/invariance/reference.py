@@ -9,8 +9,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 FILES = ["controls.json", "PROTOCOL.md", "../sandbox/controls.json", "../canonical/controls.json", "../typed/controls.json",
-         "../sandbox/reference.py", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py",
-         "../../../models/causal-emergence/releases/2026.08.15/bundle.json"]
+         "../sandbox/reference.py", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py"]
 REGIMES = ["canonical-structure-v1", "topology-only-v1", "typed-relations-v1"]
 TRANSFORMS = ["record-order", "bijective-node-id-renaming", "bijective-edge-id-renaming", "presentation-only-changes"]
 OBSERVABLES = [["canonical-directed-structure-v1"], ["node-count-v1", "edge-count-v1", "weak-component-sizes-v1",
@@ -184,7 +183,8 @@ def main():
         if args.verify_artifacts:
             for case in value["cases"]:
                 assert actual_summary(case["id"], read("artifacts/" + case["id"] + ".json")) == case, case["id"]
-    print("Independent invariance {}: 13 controls, 207 requests / 828 probes, 3280 profiles, 3 negative controls.".format("written" if args.write else "verified"))
+    print("Independent invariance {}: {} controls, 207 requests / 828 probes, 3280 profiles, 3 negative controls.".format(
+        "written" if args.write else "verified", len(value["cases"])))
 
 
 if __name__ == "__main__":

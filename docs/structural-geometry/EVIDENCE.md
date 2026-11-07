@@ -10,8 +10,9 @@
 The computational implementation establishes that the declared directed statistic was
 computed reproducibly from an exact, verified source graph under a disclosed
 unit metric. Synthetic controls and separate reference code check arithmetic
-and interpretation of direction. Full-model results describe this catalogue
-snapshot, including its source classifications and known findings.
+and interpretation of direction. Full-model results describe one verified
+snapshot of the canonical Causal Emergence graph, including its recorded relation
+layers and roles; they do not re-review its evidence.
 
 It cannot establish causal validity, generative admissibility, scientific
 significance, improved prediction, emergence, cross-domain equivalence or a
@@ -302,8 +303,5 @@ independent NetworkX checks use the isolated version documented by the cases.
 | Response and geometric descriptors, distances | [Signatures](../../cases/structural-geometry/signatures/README.md), [pseudometric](../../cases/structural-geometry/pseudometric/README.md), [geometric signatures](../../cases/structural-geometry/geometric-signatures/README.md) |
 | Finite synthetic zero-gain study | [Added value](../../cases/structural-geometry/added-value/README.md) |
 
-The [compatibility inventory](baselines/pre-regime-v1.json) is a pinned earlier
-computational input. Run `python3 docs/structural-geometry/baselines/verify_baseline.py --compatibility`
-for its retained compatibility subset. Its full inventory is not the current
-repository census. Frozen protocols are evidence inputs; their hashes and the
-negative results remain authoritative for those studies.
+Frozen protocols are evidence inputs; their hashes and the negative results
+remain authoritative for those studies.

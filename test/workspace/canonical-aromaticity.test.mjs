@@ -186,7 +186,7 @@ test("the aromaticity synthesis reuses Pauling once with its correction and reta
     ["the same benzene VB model cannot become an independent second calculation", (changed) =>
       dropLimit(changed, synthesis, "without cloning a new independent")],
     ["the linked erratum cannot disappear or become a second replication", (changed) =>
-      dropLimit(changed, synthesis, "linked1934 erratum")],
+      dropLimit(changed, synthesis, "linked 1934 erratum")],
     ["the VB context cannot be discarded because the new descriptor is magnetic", (changed) => {
       claim(changed, synthesis).contextIds = [magneticStudy];
     }],
@@ -198,20 +198,18 @@ test("the aromaticity synthesis reuses Pauling once with its correction and reta
   ]);
 });
 
-test("original 0.45/0.55 weights, three-carrier minima and Phase2 ontology remain excluded", async () => {
+test("benzene models exclude a necessary H2 history, merged counting domains and a stage beyond resonance", async () => {
   await rejects([
-    ["the original necessary parents and carrier minima are not measured causal fractions", (changed) =>
-      dropLimit(changed, synthesis, "Original parent2.3 weight0.45")],
     ["a supplied benzene framework does not require the earlier H2 acquisition as its history", (changed) =>
       dropLimit(changed, synthesis, "earlier H2 formation/spectroscopy")],
     ["electrons, carbon centers, basis functions and one probe are distinct counting domains", (changed) =>
       dropLimit(changed, synthesis, "different supplied counting domains")],
-    ["Phase2 and SOMA classification do not measure a new stage beyond resonance", (changed) =>
-      dropLimit(changed, synthesis, "Phase2")],
+    ["recurring representations do not establish an autonomous physical stage beyond local resonance", (changed) =>
+      dropLimit(changed, synthesis, "autonomous physical stage beyond local resonance")],
     ["unreviewed optical and transport applications remain qualified real domains", (changed) =>
       dropLimit(changed, synthesis, "their existence is not blanket-excluded")],
-    ["generic null-DOI evidence prose cannot become a measured ring-current or transport study", (changed) =>
-      dropLimit(changed, synthesis, "null DOI/URL")]
+    ["no unread Huckel derivation or observed ring-current or transport experiment is manufactured", (changed) =>
+      dropLimit(changed, synthesis, "No unread primary Huckel derivation")]
   ]);
 });
 
@@ -222,7 +220,7 @@ test("the selected glossary and historical model reviews do not acquire unread p
   assert.equal(publication(data, "iupac2022-pi-conjugation-aromaticity").review.extent,
     "selected-published-terminology-entries");
   for (const id of [criterion, result, synthesis]) {
-    for (const citation of claim(data, id).citations.filter((item) => item.sourceId !== "legacy-2")) {
+    for (const citation of claim(data, id).citations) {
       assert.ok(publication(data, citation.sourceId).review.locators.includes(citation.locator));
     }
   }
@@ -239,10 +237,6 @@ test("the selected glossary and historical model reviews do not acquire unread p
     }, /Aromatic|aromatic|publication|source/],
     ["a source-reported model cannot acquire an independent raw-output reproduction extent", (changed) => {
       study(changed, magneticStudy).readExtent = "independent-full-Gaussian-output-reproduction";
-    }, /Aromatic|aromatic|reading|extent/],
-    ["original catalogue provenance cannot become primary magnetic evidence", (changed) => {
-      claim(changed, synthesis).citations.push({ sourceId: "legacy-2", locator: "/10", role: "supports",
-        note: "The original catalogue independently measures benzene magnetic response." });
-    }, /Aromatic|aromatic|Unreviewed physics passage|primary particle evidence/]
+    }, /Aromatic|aromatic|reading|extent/]
   ]);
 });

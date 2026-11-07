@@ -34,7 +34,7 @@ test("large evidence survives construction, split/bundle verification and a real
 });
 
 test("the aggregate budget remains bounded and preserves depth, string and accessor guards", () => {
-  assert.throws(() => buildModelPack(input(Array(1_000_000).fill(0))), { code: "CANONICALIZATION_LIMIT_EXCEEDED" });
+  assert.throws(() => buildModelPack(input(Array(4_000_000).fill(0))), { code: "CANONICALIZATION_LIMIT_EXCEEDED" });
   let deep = null;
   for (let i = 0; i < 65; i += 1) deep = [deep];
   assert.throws(() => buildModelPack(input(deep)), { code: "CANONICALIZATION_LIMIT_EXCEEDED" });

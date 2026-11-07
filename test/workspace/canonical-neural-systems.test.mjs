@@ -1,12 +1,10 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { loadCanonicalSource, validateCanonicalSource } from "../../models/causal-emergence/canonical/source.mjs";
-import { NEURAL_SYSTEMS_RECORDS, NEURAL_SYSTEMS_CARD_SCOPES, isReviewedNeuralSystemsDescription } from "../../models/causal-emergence/canonical/level-six.mjs";
-import { neuralSystemsCards } from "../../models/causal-emergence/canonical/neural-systems.mjs";
+import { NEURAL_SYSTEMS_RECORDS, NEURAL_SYSTEMS_SCOPES, isReviewedNeuralSystemsDescription } from "../../models/causal-emergence/canonical/level-six.mjs";
+import { neuralSystemsScopes } from "../../models/causal-emergence/canonical/neural-systems.mjs";
 
 const data = await loadCanonicalSource();
-const originals = JSON.parse(await readFile(new URL("../../references/level-6.json", import.meta.url)));
 const published = new Set(["publication-supported", "literature-synthesis"]);
 const claims = new Map(data.graph.claims.map((claim) => [claim.id, claim]));
 const sources = new Map(data.graph.sources.map((source) => [source.id, source]));
@@ -18,22 +16,19 @@ function rejects(mutate, pattern) {
   assert.throws(() => validateCanonicalSource(changed), pattern);
 }
 
-test("all 25 Level-6 cards retain substantive decisions and all 99 ordered parent occurrences", () => {
-  assert.equal(originals.length, 25);
-  assert.deepEqual(NEURAL_SYSTEMS_CARD_SCOPES.map((card) => card.sourceIndex), originals.map((card) => card.Id));
-  assert.equal(NEURAL_SYSTEMS_CARD_SCOPES.reduce((sum, card) => sum + card.parentDispositions.length, 0), 99);
-  for (const card of NEURAL_SYSTEMS_CARD_SCOPES) {
-    assert.equal(card.originalName, originals[card.sourceIndex].Name);
-    assert.deepEqual(card.parentDispositions.map((parent) => parent.parentCode), originals[card.sourceIndex].Parents.map((parent) => parent.ParentCode));
-    assert.ok(card.assertions.length && card.excludedDefaults.length);
-    for (const entry of [...card.assertions, ...card.parentDispositions]) {
-      assert.ok(entry.reason.length && entry.claimIds.every((id) => claims.has(id)));
-    }
+test("all 25 Level-6 topic scopes name their scope node, claims and open questions", () => {
+  assert.equal(NEURAL_SYSTEMS_SCOPES.length, 25);
+  const entities = new Map(data.graph.entities.map((entity) => [entity.id, entity]));
+  for (const scope of NEURAL_SYSTEMS_SCOPES) {
+    assert.equal(scope.nodeIds[0], scope.id);
+    assert.equal(entities.get(scope.id).name, `${scope.name}: reviewed scope`);
+    assert.ok(scope.scope.length && scope.claimIds.every((id) => claims.has(id)));
+    assert.ok(Array.isArray(scope.unresolved));
   }
 });
 
-test("complete decisions persist in canonical evidence while reused studies keep a single identity", () => {
-  assert.deepEqual(data.neuralSystems.cards, neuralSystemsCards(data.graph));
+test("topic scopes persist in canonical evidence while reused studies keep a single identity", () => {
+  assert.deepEqual(data.neuralSystems.scopes, neuralSystemsScopes(data.graph));
   assert.equal(data.neuralSystems.independentScientificReviewComplete, false);
   assert.deepEqual(data.neuralSystems.checkIds, []);
   const ledgers = Object.values(data).filter((ledger) => Array.isArray(ledger?.studies));
@@ -41,28 +36,18 @@ test("complete decisions persist in canonical evidence while reused studies keep
   assert.equal(new Set(ids).size, ids.length);
   assert.ok(data.neural.studies.some((study) => study.id === "nimmerjahn2005"));
   assert.ok(!data.neuralSystems.studies.some((study) => study.id === "nimmerjahn2005"));
-  for (const card of data.neuralSystems.cards) assert.ok(card.sourceIds.every((id) => sources.has(id)));
+  for (const scope of data.neuralSystems.scopes) assert.ok(scope.sourceIds.every((id) => sources.has(id)));
 });
 
-test("card, assertion and parent decisions cannot disappear or be silently promoted", () => {
+test("topic scopes cannot disappear or be silently altered", () => {
   for (const mutate of [
-    (d) => d.neuralSystems.cards.pop(),
-    (d) => d.neuralSystems.cards[0].assertions.pop(),
-    (d) => d.neuralSystems.cards[0].parentDispositions.reverse(),
-    (d) => { d.neuralSystems.cards[0].parentDispositions[0].disposition = "supported"; },
-    (d) => { d.neuralSystems.cards[0].excludedDefaults = []; }
+    (d) => d.neuralSystems.scopes.pop(),
+    (d) => d.neuralSystems.scopes[0].claimIds.pop(),
+    (d) => { d.neuralSystems.scopes[0].scope = "A universal neural construction law."; },
+    (d) => { d.neuralSystems.scopes[0].unresolved = []; }
   ]) rejects(mutate);
 });
 
-test("the vascular card distinguishes its named topic from copied immune prose and dependencies", () => {
-  const card = NEURAL_SYSTEMS_CARD_SCOPES.find((card) => card.code === "6.16");
-  assert.equal(originals[16].Name, "Neurovascular Coupling");
-  assert.match(originals[16].Description, /^Neuro–Immune Interactions/);
-  assert.match(card.scope, /vascular|blood flow/i);
-  assert.ok(card.assertions.some((assertion) => /immune|description|title|copy/i.test(assertion.topic + assertion.reason)));
-  assert.equal(card.parentDispositions.length, 13);
-  assert.ok(card.parentDispositions.every((parent) => parent.disposition !== "supported"));
-});
 
 test("scope links organize evidence without converting nulls, hypotheses or observations to physical support", () => {
   const descriptions = NEURAL_SYSTEMS_RECORDS.relations.filter((relation) => relation.role === "definition-dependency");
@@ -103,12 +88,12 @@ test("new primary findings cite the actual preparation and do not claim numerica
   }
 });
 
-test("symbolic scope exposes the actual Fodor bibliography without claiming to have read its chapters", () => {
-  const card = data.neuralSystems.cards.find((card) => card.code === "6.19");
-  assert.ok(card.sourceIds.includes("fodor1975-language-thought"));
+test("symbolic scope exposes the actual Fodor reference without claiming to have read its chapters", () => {
+  const scope = data.neuralSystems.scopes.find((record) => record.id === "cog:symbolic-representation-scope");
+  assert.ok(scope.sourceIds.includes("fodor1975-language-thought"));
   const source = sources.get("fodor1975-language-thought");
   assert.match(source.review.extent, /bibliographic-metadata-only/);
-  assert.ok(card.claimIds.some((id) => claims.get(id).citations.some((citation) =>
+  assert.ok(scope.claimIds.some((id) => claims.get(id).citations.some((citation) =>
     citation.sourceId === source.id && citation.role === "provenance" && source.review.locators.includes(citation.locator))));
 });
 
@@ -125,13 +110,13 @@ test("empirical placebo nulls retain publication support rather than a synthetic
 });
 
 test("asthma symptom reports, airflow and conditioned immune responses remain distinct endpoints", () => {
-  const card = NEURAL_SYSTEMS_CARD_SCOPES.find((card) => card.code === "6.21");
-  const text = card.assertions.map((entry) => entry.topic + " " + entry.reason).join(" ");
+  const scope = NEURAL_SYSTEMS_SCOPES.find((record) => record.id === "cog:placebo-psychophysiology-scope");
+  const text = scope.claimIds.map((id) => claims.get(id)).map((record) => `${record.statement} ${record.limitations.join(" ")}`).join(" ");
   assert.match(text, /FEV1|spirometr|airflow/i);
   assert.match(text, /condition/i);
   assert.match(text, /expectation/i);
   assert.match(text, /immune/i);
-  assert.ok(card.assertions.some((entry) => entry.disposition === "excluded" || entry.disposition === "unresolved"));
+  assert.ok(scope.unresolved.length);
   const contexts = data.neuralSystems.studies.filter((study) => study.sourceId.includes("wechsler"));
   assert.ok(contexts.length >= 2);
   assert.ok(new Set(contexts.map((study) => study.observable)).size >= 2);
@@ -220,7 +205,7 @@ test("institutional bibliography identities preserve resource query fields and r
   ]) rejects((d) => d.graph.sources.push({ ...bibliography, id: "aliased-institutional-bibliography", url }), /publication alias/);
 });
 
-test("neural findings, hypotheses and catalogue-only rationale cannot become construction rules", () => {
+test("neural findings, hypotheses and relabeled Level-0 records cannot become construction rules", () => {
   const scope = NEURAL_SYSTEMS_RECORDS.entities[0];
   for (const id of [scope.claimIds[0], "C-ng-memory-route"]) rejects((d) => { d.graph.rules[0].claimIds = [id]; }, /do not prove construction rules/);
   rejects((d) => { d.graph.rules[0].inputs[0].entityId = "neur:ng-memory-route"; }, /do not prove construction rules/);
@@ -232,11 +217,6 @@ test("neural findings, hypotheses and catalogue-only rationale cannot become con
     d.readiness.nodeRoles.splice(d.graph.entities.length - 1, 0, { ...role, nodeId: clone.id });
     d.graph.rules[0].inputs[0].entityId = clone.id;
   }, /do not prove construction rules/);
-  rejects((d) => {
-    const definition = { ...d.graph.claims.find((claim) => claim.id === scope.claimIds[0]), id: "catalogue-only-rule-rationale",
-      citations: [{ sourceId: "legacy-6", locator: "/0", role: "provenance", note: "A catalogue assertion is not empirical support." }] };
-    d.graph.claims.push(definition); d.graph.rules[0].claimIds = [definition.id];
-  }, /do not prove construction rules/);
 });
 
 test("scope source identities, reading limits and declared physical admission cannot drift", () => {
@@ -244,11 +224,7 @@ test("scope source identities, reading limits and declared physical admission ca
     (d) => { d.graph.sources.find((source) => source.id === "neural-systems-review").kind = "research-publication"; },
     (d) => { d.neuralSystems.independentScientificReviewComplete = true; },
     (d) => { d.neuralSystems.studies[0].readExtent = "complete-raw-data-reproduction"; },
-    (d) => { d.graph.entities.find((entity) => entity.id.startsWith("cog:")).Weight = 0.5; }
+    (d) => { d.graph.entities.find((entity) => entity.id.startsWith("cog:")).causalWeight = 0.5; }
   ]) rejects(mutate);
 });
 
-test("complete Level-6 disposition leaves no neural source cards pending", async () => {
-  const pending = JSON.parse(await readFile(new URL("../../references/canonical/pending-review.json", import.meta.url)));
-  assert.ok(pending.cards.every((card) => card.sourcePath !== "references/level-6.json"));
-});

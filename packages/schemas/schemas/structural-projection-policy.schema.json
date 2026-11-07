@@ -5,91 +5,444 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "id": {
-      "const": "source-parent-directed-v1"
-    },
-    "version": {
-      "const": "1"
-    },
-    "scope": {
-      "const": "full-model"
-    },
-    "direction": {
-      "const": "native"
-    },
-    "relationLayer": {
-      "const": "source-parent"
-    },
-    "includedOntologicalRoles": {
-      "const": "all"
-    },
-    "includedNecessities": {
-      "const": "all"
-    },
-    "includedDependencyTypes": {
-      "const": "all"
-    },
-    "includeQuantization": {
-      "const": true
-    },
-    "higherOrderPolicy": {
-      "const": "none"
-    },
-    "selfLoops": {
-      "const": "reject"
-    },
-    "parallelEdges": {
-      "const": "reject"
-    },
-    "nodeAttributes": {
-      "const": [
-        "level",
-        "phase",
-        "phaseId",
-        "typeRole",
-        "typeRoleId",
-        "scienceIds",
-        "scientificStatus",
-        "requirements"
-      ]
-    },
-    "edgeAttributes": {
-      "const": [
+    "id": {},
+    "version": {},
+    "scope": {},
+    "direction": {},
+    "relationLayer": {},
+    "includedOntologicalRoles": {},
+    "includedNecessities": {},
+    "includedDependencyTypes": {},
+    "includeQuantization": {},
+    "higherOrderPolicy": {},
+    "selfLoops": {},
+    "parallelEdges": {},
+    "nodeAttributes": {},
+    "edgeAttributes": {},
+    "limits": {},
+    "relationLayers": {},
+    "nodeLayer": {},
+    "excludedRelationLayers": {}
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "id": {
+          "const": "source-parent-directed-v1"
+        },
+        "version": {
+          "const": "1"
+        },
+        "scope": {
+          "const": "full-model"
+        },
+        "direction": {
+          "const": "native"
+        },
+        "relationLayer": {
+          "const": "source-parent"
+        },
+        "includedOntologicalRoles": {
+          "const": "all"
+        },
+        "includedNecessities": {
+          "const": "all"
+        },
+        "includedDependencyTypes": {
+          "const": "all"
+        },
+        "includeQuantization": {
+          "const": true
+        },
+        "higherOrderPolicy": {
+          "const": "none"
+        },
+        "selfLoops": {
+          "const": "reject"
+        },
+        "parallelEdges": {
+          "const": "reject"
+        },
+        "nodeAttributes": {
+          "const": [
+            "level",
+            "phase",
+            "phaseId",
+            "typeRole",
+            "typeRoleId",
+            "scienceIds",
+            "scientificStatus",
+            "requirements"
+          ]
+        },
+        "edgeAttributes": {
+          "const": [
+            "relationLayer",
+            "causalDirections",
+            "causalDirectionIds",
+            "interactionModes",
+            "interactionModeIds",
+            "weight",
+            "necessity",
+            "dependencyType",
+            "dependencyTypeId",
+            "ontologicalRole",
+            "quantization"
+          ]
+        },
+        "limits": {
+          "const": {
+            "maxNodes": 4096,
+            "maxEdges": 16384
+          }
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "scope",
+        "direction",
         "relationLayer",
-        "causalDirections",
-        "causalDirectionIds",
-        "interactionModes",
-        "interactionModeIds",
-        "weight",
-        "necessity",
-        "dependencyType",
-        "dependencyTypeId",
-        "ontologicalRole",
-        "quantization"
-      ]
+        "includedOntologicalRoles",
+        "includedNecessities",
+        "includedDependencyTypes",
+        "includeQuantization",
+        "higherOrderPolicy",
+        "selfLoops",
+        "parallelEdges",
+        "nodeAttributes",
+        "edgeAttributes",
+        "limits"
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "relationLayers"
+            ]
+          },
+          {
+            "required": [
+              "nodeLayer"
+            ]
+          },
+          {
+            "required": [
+              "excludedRelationLayers"
+            ]
+          }
+        ]
+      }
     },
-    "limits": {
-      "const": {
-        "maxNodes": 4096,
-        "maxEdges": 16384
+    {
+      "properties": {
+        "id": {
+          "const": "canonical-relation-directed-v1"
+        },
+        "version": {
+          "const": "1"
+        },
+        "scope": {
+          "const": "full-model"
+        },
+        "direction": {
+          "const": "native"
+        },
+        "relationLayers": {
+          "const": [
+            "descriptive",
+            "functional-support"
+          ]
+        },
+        "higherOrderPolicy": {
+          "const": "none"
+        },
+        "selfLoops": {
+          "const": "reject"
+        },
+        "parallelEdges": {
+          "const": "reject"
+        },
+        "nodeAttributes": {
+          "const": [
+            "level",
+            "typeRole",
+            "scientificStatus"
+          ]
+        },
+        "edgeAttributes": {
+          "const": [
+            "relationLayer",
+            "role"
+          ]
+        },
+        "limits": {
+          "const": {
+            "maxNodes": 4096,
+            "maxEdges": 16384
+          }
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "scope",
+        "direction",
+        "relationLayers",
+        "higherOrderPolicy",
+        "selfLoops",
+        "parallelEdges",
+        "nodeAttributes",
+        "edgeAttributes",
+        "limits"
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "relationLayer"
+            ]
+          },
+          {
+            "required": [
+              "includedOntologicalRoles"
+            ]
+          },
+          {
+            "required": [
+              "includedNecessities"
+            ]
+          },
+          {
+            "required": [
+              "includedDependencyTypes"
+            ]
+          },
+          {
+            "required": [
+              "includeQuantization"
+            ]
+          },
+          {
+            "required": [
+              "nodeLayer"
+            ]
+          },
+          {
+            "required": [
+              "excludedRelationLayers"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "properties": {
+        "id": {
+          "const": "canonical-arising-causal-v1"
+        },
+        "version": {
+          "const": "1"
+        },
+        "scope": {
+          "const": "arising-layer"
+        },
+        "direction": {
+          "const": "native"
+        },
+        "nodeLayer": {
+          "const": "arising"
+        },
+        "relationLayers": {
+          "const": [
+            "causal"
+          ]
+        },
+        "excludedRelationLayers": {
+          "const": [
+            "descriptive",
+            "functional-support"
+          ]
+        },
+        "higherOrderPolicy": {
+          "const": "none"
+        },
+        "selfLoops": {
+          "const": "reject"
+        },
+        "parallelEdges": {
+          "const": "reject"
+        },
+        "nodeAttributes": {
+          "const": [
+            "level",
+            "phase",
+            "typeRole",
+            "scientificStatus"
+          ]
+        },
+        "edgeAttributes": {
+          "const": [
+            "relationLayer",
+            "dependencyType",
+            "necessity",
+            "ontologicalRole",
+            "status"
+          ]
+        },
+        "limits": {
+          "const": {
+            "maxNodes": 4096,
+            "maxEdges": 16384
+          }
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "scope",
+        "direction",
+        "nodeLayer",
+        "relationLayers",
+        "excludedRelationLayers",
+        "higherOrderPolicy",
+        "selfLoops",
+        "parallelEdges",
+        "nodeAttributes",
+        "edgeAttributes",
+        "limits"
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "relationLayer"
+            ]
+          },
+          {
+            "required": [
+              "includedOntologicalRoles"
+            ]
+          },
+          {
+            "required": [
+              "includedNecessities"
+            ]
+          },
+          {
+            "required": [
+              "includedDependencyTypes"
+            ]
+          },
+          {
+            "required": [
+              "includeQuantization"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "properties": {
+        "id": {
+          "const": "canonical-technical-directed-v1"
+        },
+        "version": {
+          "const": "1"
+        },
+        "scope": {
+          "const": "technical-layer"
+        },
+        "direction": {
+          "const": "native"
+        },
+        "nodeLayer": {
+          "const": "technical"
+        },
+        "relationLayers": {
+          "const": [
+            "descriptive",
+            "functional-support"
+          ]
+        },
+        "excludedRelationLayers": {
+          "const": [
+            "causal"
+          ]
+        },
+        "higherOrderPolicy": {
+          "const": "none"
+        },
+        "selfLoops": {
+          "const": "reject"
+        },
+        "parallelEdges": {
+          "const": "reject"
+        },
+        "nodeAttributes": {
+          "const": [
+            "level",
+            "typeRole",
+            "scientificStatus"
+          ]
+        },
+        "edgeAttributes": {
+          "const": [
+            "relationLayer",
+            "role"
+          ]
+        },
+        "limits": {
+          "const": {
+            "maxNodes": 4096,
+            "maxEdges": 16384
+          }
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "scope",
+        "direction",
+        "nodeLayer",
+        "relationLayers",
+        "excludedRelationLayers",
+        "higherOrderPolicy",
+        "selfLoops",
+        "parallelEdges",
+        "nodeAttributes",
+        "edgeAttributes",
+        "limits"
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "relationLayer"
+            ]
+          },
+          {
+            "required": [
+              "includedOntologicalRoles"
+            ]
+          },
+          {
+            "required": [
+              "includedNecessities"
+            ]
+          },
+          {
+            "required": [
+              "includedDependencyTypes"
+            ]
+          },
+          {
+            "required": [
+              "includeQuantization"
+            ]
+          }
+        ]
       }
     }
-  },
-  "required": [
-    "id",
-    "version",
-    "scope",
-    "direction",
-    "relationLayer",
-    "includedOntologicalRoles",
-    "includedNecessities",
-    "includedDependencyTypes",
-    "includeQuantization",
-    "higherOrderPolicy",
-    "selfLoops",
-    "parallelEdges",
-    "nodeAttributes",
-    "edgeAttributes",
-    "limits"
   ]
 }

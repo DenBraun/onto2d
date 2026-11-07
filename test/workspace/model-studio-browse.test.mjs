@@ -55,11 +55,6 @@ function fixture(additionalNodes = []) {
     ],
     dictionaries: {
       presentation: { recordLabel: "Records" },
-      dictionaryReview: { scope: "Definitions are scoped vocabulary, not formation evidence.", findings: ["Separate review content"] },
-      vocabulary: [{
-        id: "sample", name: "Sample", group: "measurement", definition: "A specified preparation",
-        citations: [{ sourceId: "used-source", role: "supports", locator: "Definition 1" }]
-      }],
       sources: [
         { id: "used-source", title: "Scoped observation", url: "https://example.test/paper" },
         { id: "unrelated-source", title: "Unrelated paper" }
@@ -318,19 +313,6 @@ test("record evidence and review sources load only on request and preserve exact
   await assert.rejects(() => session.inspect("absent"), { code: "STUDIO_BROWSE_NODE_MISSING" });
   await assert.rejects(() => session.review("unavailable"), { code: "STUDIO_BROWSE_REVIEW_MISSING" });
   assert.equal(mock.calls.length, 4, "Missing items do not trigger network requests");
-  session.close();
-});
-
-test("vocabulary lazy loading retains its scope and cited source without fetching unrelated reviews", async () => {
-  const { pack, mock, load } = await prepared();
-  const session = await load(resolution(pack));
-  const review = await session.review("vocabulary");
-  const dictionaries = pack.files["model/dictionaries.json"];
-  assert.deepEqual(review.vocabulary, dictionaries.vocabulary);
-  assert.deepEqual(review.dictionaryReview, { scope: dictionaries.dictionaryReview.scope });
-  assert.deepEqual(review.sources, [dictionaries.sources[0]]);
-  assert.equal(mock.calls.length, 3);
-  assert.ok(mock.calls.at(-1).path.endsWith("review-vocabulary.json"));
   session.close();
 });
 

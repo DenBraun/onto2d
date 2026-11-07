@@ -8,6 +8,8 @@ import { build } from "esbuild";
 import { schemaUrls } from "@onto2d/schemas";
 import { buildModelPack } from "@onto2d/model-pack";
 import {
+  CANONICAL_ARISING_CAUSAL_POLICY,
+  CANONICAL_TECHNICAL_DIRECTED_POLICY,
   SOURCE_PARENT_DIRECTED_POLICY,
   UNIT_METRIC_POLICY,
   analyzeStructuralGeometry,
@@ -37,6 +39,13 @@ test("closed schema policies agree with runtime constants and reject silent metr
   assert.equal(validate("structuralMetricPolicy", UNIT_METRIC_POLICY), true, ajv.errorsText());
   assert.equal(validate("structuralProjectionPolicy", { ...SOURCE_PARENT_DIRECTED_POLICY, direction: "symmetrized" }), false);
   assert.equal(validate("structuralProjectionPolicy", { ...SOURCE_PARENT_DIRECTED_POLICY, includeQuantization: false }), false);
+  for (const policy of [CANONICAL_ARISING_CAUSAL_POLICY, CANONICAL_TECHNICAL_DIRECTED_POLICY]) {
+    assert.equal(validate("structuralProjectionPolicy", policy), true, ajv.errorsText());
+    assert.equal(validate("structuralGeometryRequest", { projectionPolicyId: policy.id }), true);
+  }
+  assert.equal(validate("structuralProjectionPolicy", { ...CANONICAL_ARISING_CAUSAL_POLICY, nodeLayer: "technical" }), false);
+  assert.equal(validate("structuralProjectionPolicy", { ...CANONICAL_TECHNICAL_DIRECTED_POLICY, excludedRelationLayers: [] }), false);
+  assert.equal(validate("structuralProjectionPolicy", { ...SOURCE_PARENT_DIRECTED_POLICY, nodeLayer: "arising" }), false);
   assert.equal(validate("structuralMetricPolicy", { ...UNIT_METRIC_POLICY, edgeWeight: 0.5 }), false);
   assert.equal(validate("structuralMetricPolicy", { ...UNIT_METRIC_POLICY, extra: true }), false);
   assert.equal(validate("structuralGeometryRequest", {}), true);
@@ -56,7 +65,8 @@ test("schemas cover synthetic, isolated and full-model artifacts and projections
     assert.equal(validate("structuralProjection", projectStructuralGeometry(pack)), true, ajv.errorsText());
     assert.equal(validate("structuralGeometryArtifact", analyzeStructuralGeometry(pack)), true, ajv.errorsText());
   }
-  for (const [name, filename] of [["structuralProjection", "projection"], ["structuralGeometryArtifact", "artifact"]]) {
+  for (const [name, filename] of [["structuralProjection", "projection"], ["structuralGeometryArtifact", "artifact"],
+    ["structuralProjection", "technical-projection"], ["structuralGeometryArtifact", "technical-artifact"]]) {
     const value = JSON.parse(await readFile(new URL(`../../../cases/structural-geometry/causal-emergence/${filename}.json`, import.meta.url), "utf8"));
     assert.equal(validate(name, value), true, ajv.errorsText());
   }

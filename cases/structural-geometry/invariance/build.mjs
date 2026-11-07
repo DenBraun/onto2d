@@ -9,8 +9,7 @@ import { packFor } from "../typed/fixtures.mjs";
 import { directory, fixtures, readJson } from "./fixtures.mjs";
 
 const referenceFiles = ["controls.json", "PROTOCOL.md", "../sandbox/controls.json", "../canonical/controls.json", "../typed/controls.json",
-  "../sandbox/reference.py", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py",
-  "../../../models/causal-emergence/releases/2026.08.15/bundle.json"];
+  "../sandbox/reference.py", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py"];
 const encoded = value => JSON.stringify(canonicalClone(value, INVARIANCE_CODEC), null, 2) + "\n";
 const digest = value => createHash("sha256").update(canonicalize(value, INVARIANCE_CODEC)).digest("hex");
 export async function verifyReferenceSources(reference) {
@@ -103,7 +102,7 @@ export async function run({ write = false, report = false } = {}) {
   }
   if (report) console.table(runs.map(r => ({ case: r.id, regime: r.regimeId, status: r.summary.status,
     observed: r.summary.coverage.numerator, required: r.summary.coverage.denominator })));
-  console.log(`Invariance suite ${write ? "written" : "verified"}: 13 controls, 207 independently checked requests / 828 probes.`);
+  console.log(`Invariance suite ${write ? "written" : "verified"}: ${runs.length} controls, 207 independently checked requests / 828 probes.`);
   return suite;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

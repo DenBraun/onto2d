@@ -155,7 +155,7 @@ test("the same ARPES map supports a model-dependent band inference without becom
   ]);
 });
 
-test("metallic source scope excludes universal property chains, parent counts and unsupported replication", async () => {
+test("metallic source scope excludes universal property chains, mobility-caused cohesion and unsupported replication", async () => {
   const data = await source();
   assert.equal(claim(data, cohesion).status, "definition");
   assert.equal(claim(data, boundary).status, "definition");
@@ -164,14 +164,10 @@ test("metallic source scope excludes universal property chains, parent counts an
   assert.match(study(data, calculation).correctionCheck, /accepted manuscript online 5 December 2019.*version of record online 21 January 2020/);
   assert.match(publication(data, "potorochin2022-na-arpes").review.limit, /no visual inspection of the final layout/);
   await rejects([
-    ["three-body parent counts cannot become a measured metallicity onset", (changed) =>
-      dropLimit(changed, synthesis, "three-body N_min/N_crit")],
     ["a spectral band cannot establish every metal's mechanical and transport properties", (changed) =>
       dropLimit(changed, synthesis, "No measured conductivity")],
     ["electron mobility cannot become a measured cause of cohesive binding", (changed) =>
       dropLimit(changed, synthesis, "mobility alone causes cohesion")],
-    ["display grouping cannot create a SOMA developmental law", (changed) =>
-      dropLimit(changed, synthesis, "SOMA transition")],
     ["supplied preparations cannot become universal resource thresholds", (changed) =>
       dropLimit(changed, synthesis, "sustained resource cause")]
   ]);

@@ -1,12 +1,11 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { loadCanonicalSource, validateCanonicalSource } from "../../models/causal-emergence/canonical/source.mjs";
 import { validateOrganismalReview } from "../../models/causal-emergence/canonical/organismal.mjs";
-import { ORGANISMAL_RECORDS, ORGANISMAL_CARD_SCOPES } from "../../models/causal-emergence/canonical/level-five.mjs";
+import { ORGANISMAL_RECORDS } from "../../models/causal-emergence/canonical/level-five.mjs";
+import { withBridgeReadings } from "../../models/causal-emergence/canonical/bridges.mjs";
 
 const source = await loadCanonicalSource();
-const originals = JSON.parse(await readFile(new URL("../../references/level-5.json", import.meta.url), "utf8"));
 const published = new Set(["publication-supported", "literature-synthesis"]);
 const ctx = (data) => Object.fromEntries(["sources", "claims", "entities", "relations"]
   .map((key) => [key, new Map(data.graph[key].map((record) => [record.id, record]))]));
@@ -29,31 +28,14 @@ const text = (record) => [record.system, record.preparation, record.observable, 
   record.statement, ...(record.limitations ?? [])].filter(Boolean).join(" ");
 
 // These checks preserve scientific admission boundaries. They do not reproduce the experiments.
-test("every original Level-5 card has explicit assertion decisions and every ordered parent occurrence", () => {
-  assert.equal(originals.length, 34);
-  assert.deepEqual(ORGANISMAL_CARD_SCOPES.map((card) => card.sourceIndex), originals.map((card) => card.Id));
-  for (const [i, card] of ORGANISMAL_CARD_SCOPES.entries()) {
-    assert.equal(card.code, `5.${i}`);
-    assert.equal(card.originalName, originals[i].Name);
-    assert.deepEqual(card.parentDispositions.map((parent) => parent.parentCode),
-      originals[i].Parents.map((parent) => parent.ParentCode));
-    assert.ok(card.assertions.length && card.excludedDefaults.length);
-    for (const entry of [...card.assertions, ...card.parentDispositions]) {
-      assert.ok(["supported", "qualified", "excluded", "unresolved"].includes(entry.disposition));
-      assert.ok(entry.reason.length && entry.claimIds.length);
-      assert.ok(entry.claimIds.every((id) => context.claims.has(id)));
-    }
-    assert.ok(card.nodeIds.some((id) => context.entities.get(id).sourceCoordinates.some((coordinate) =>
-      coordinate.sourceId === "legacy-5" && coordinate.locator === `/${i}`)));
-  }
-});
 
 test("organismal records are integrated into the current graph, ledger and readiness with review obligations open", () => {
   const actual = { ...context, studies,
     comparisons: new Map(source.organismal.comparisons.map((record) => [record.id, record])),
     readiness: new Map(source.readiness.nodeRoles.map((record) => [record.nodeId, record])) };
   for (const [key, records] of Object.entries(ORGANISMAL_RECORDS)) for (const expected of records) {
-    assert.deepEqual(actual[key].get(key === "readiness" ? expected.nodeId : expected.id), expected);
+    // Bridge readings extend a source's reviewed passages without changing this ledger's preparations.
+    assert.deepEqual(actual[key].get(key === "readiness" ? expected.nodeId : expected.id), key === "sources" ? withBridgeReadings(expected) : expected);
   }
   assert.equal(source.organismal.independentScientificReviewComplete, false);
   assert.deepEqual(source.organismal.checkIds, []);
@@ -159,14 +141,6 @@ test("Thevaranjan correction, anti-TNF dose-duration conflict and absence of dem
   assert.match(correction.statement, /80 mg\/mL/);
   assert.match(correction.statement, /shared|simultaneous/i);
   assert.ok(![...studies.values()].some((record) => record.sourceId === "thevaranjan2018-permeability-correction"));
-  for (const code of ["5.23", "5.31"]) {
-    const scope = ORGANISMAL_CARD_SCOPES.find((card) => card.code === code);
-    assert.ok(scope.assertions.some((entry) => /anti-TNF/i.test(entry.reason)));
-    for (const entry of scope.assertions.filter((item) => /anti-TNF/i.test(item.reason))) {
-      assert.doesNotMatch(entry.reason, /two-week|three-week/i,
-        "A scope interpretation cannot select one of the source's conflicting durations");
-    }
-  }
 });
 
 test("displayed cardiac lineage tracing preserves embryonic induction before adult injury", () => {
@@ -189,8 +163,6 @@ test("Paneth culture support and genetically qualified Paneth-loss renewal are d
   assert.match(pulse.preparation, /day 14/);
   assert.match(text(inVivo), /Atoh1.*Notch|Notch.*Atoh1/i);
   assert.match(claim("C-org-paneth-independent-renewal").statement, /without Paneth|Paneth-depleted/);
-  const scope = ORGANISMAL_CARD_SCOPES.find((card) => card.code === "5.11");
-  assert.ok(scope.assertions.some((entry) => entry.disposition === "excluded" && /abolishes identity/i.test(entry.topic)));
 });
 
 test("patient observation, controlled RNAi and selected-cell re-expression are separate organoid contexts", () => {
@@ -326,8 +298,8 @@ test("new identifiers cannot alias an owned publication by DOI or primary URL", 
   }
 });
 
-test("catalogue and review files cannot acquire aliases or different source roles", () => {
-  for (const id of ["legacy-5", "organismal-review"]) {
+test("review files cannot acquire aliases or different source roles", () => {
+  for (const id of ["organismal-review"]) {
     const original = context.sources.get(id);
     for (const pathname of [original.path, `./${original.path}`, original.path.replace("/", "/./"),
       original.path.replace("/", "//")]) {
@@ -337,7 +309,7 @@ test("catalogue and review files cannot acquire aliases or different source role
     }
   }
   const changed = structuredClone(source);
-  changed.graph.sources.find((record) => record.id === "legacy-5").kind = "internal-review";
+  changed.graph.sources.find((record) => record.id === "organismal-review").kind = "research-dataset";
   assert.throws(() => validateCanonicalSource(changed), /Organismal source role changed/);
 });
 

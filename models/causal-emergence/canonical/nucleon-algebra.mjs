@@ -189,7 +189,10 @@ const contracts = {
         "locators": [
           "arXiv:hep-ph/9705477v1 pages 5-7: constituent-quark approximation, variable particle number and truncation limits",
           "arXiv:hep-ph/9705477v1 pages 36-39, Section 3A, Equations 3.4-3.16 and Figure 2: Fock basis, regulated coupled equations and zero-mode caveat",
-          "arXiv:hep-ph/9705477v1 page 99, Section 5A and Equation 5.2: proton expansion in sectors with the same global quantum numbers"
+          "arXiv:hep-ph/9705477v1 page 99, Section 5A and Equation 5.2: proton expansion in sectors with the same global quantum numbers",
+          "arXiv:hep-ph/9705477v1 pages 9-10, Section 1: form factors as hadronic current matrix elements and light-cone wavefunction overlaps",
+          "arXiv:hep-ph/9705477v1 pages 40-41, Section 3B, Equations 3.21-3.24 and Figure 3: free quark current at x+=0, Drell-frame J+ matrix elements and Fock-state overlap sum weighted by struck-quark charge",
+          "arXiv:hep-ph/9705477v1 pages 106-107, Section 5B, Equations 5.15-5.16: nucleon Dirac and Pauli form factors as vector-current matrix elements in an effective three-quark light-cone description"
         ],
         "limit": "Selected passages of the 1997 author v1 were read; page 99 and Equation 5.2 were visually checked. The arXiv record identifies Physics Reports 301, 299-486 (1998). This theoretical formalism is not an experimental constituent count; the other chapters, complete QCD solution and publisher bytes are not claimed reviewed."
       }

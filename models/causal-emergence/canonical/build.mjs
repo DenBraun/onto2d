@@ -7,8 +7,8 @@ import { buildModelPack, verifyModelPack } from "@onto2d/model-pack";
 import { encodeJsonValueTable } from "../../../packages/model-pack/src/json-value-table.js";
 import { ROOT, loadCanonicalSource, verifyCanonicalEvidence } from "./source.mjs";
 import { projectCanonicalInteractions } from "./interactions.mjs";
-import { compileVocabulary } from "./dictionaries.mjs";
 import { compileSourceReadiness } from "./readiness.mjs";
+import { ARISING_ROOT, PENDING_ARISING_QUESTIONS, causalCompleteness } from "./arisings.mjs";
 
 // Generated semantic data uses compact transport; manifest and indexes remain
 // readable. The canonical source files retain their own readable formatting.
@@ -16,19 +16,20 @@ const COMPACT_FILES = new Set([
   "bundle.json", "model/nodes.json", "model/edges.json", "model/dictionaries.json"
 ]);
 const ENCODINGS = new Set(["plain", "value-table-v1"]);
-function serialize(relative, value, transportEncoding) {
+// Callers may pass value-table codec limits, for example a lower byte bound to test a rejection.
+function serialize(relative, value, transportEncoding, transportLimits = {}) {
   const encoded = transportEncoding === "value-table-v1" && ["model/nodes.json", "bundle.json"].includes(relative)
-    ? encodeJsonValueTable(value) : value;
+    ? encodeJsonValueTable(value, transportLimits) : value;
   return `${JSON.stringify(encoded, null, COMPACT_FILES.has(relative) ? undefined : 2)}\n`;
 }
 
-export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, dictionaryReview, readiness, optics, visual, neural, physics, biochemistry, cellular, organismal, neuralSystems, socialSystems }, evidence, sourceFiles) {
+export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, readiness, optics, visual, neural, physics, biochemistry, cellular, organismal, neuralSystems, socialSystems, arisingVocabulary, arisingCatalogue, causeEvidence }, evidence, sourceFiles) {
   const sourceReadiness = compileSourceReadiness(readiness);
   const nodeRoles = new Map(readiness.nodeRoles.map((r) => [r.nodeId, r]));
   const claims = new Map(graph.claims.map((c) => [c.id, c]));
   const sources = new Map(graph.sources.map((s) => [s.id, s]));
   assert.equal(sources.size, graph.sources.length, "Citation source IDs must be unique before projection");
-  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? []), ...(cellular?.studies ?? []), ...(organismal?.studies ?? []), ...(neuralSystems?.studies ?? []), ...(socialSystems?.studies ?? [])].map((s) => [s.id, s]));
+  const studies = new Map([...pilot.studies, ...routing.studies, ...optics.studies, ...visual.studies, ...neural.studies, ...physics.studies, ...(biochemistry?.studies ?? []), ...(cellular?.studies ?? []), ...(organismal?.studies ?? []), ...(neuralSystems?.studies ?? []), ...(socialSystems?.studies ?? []), ...(causeEvidence?.studies ?? [])].map((s) => [s.id, s]));
   const interactions = projectCanonicalInteractions(graph, { studies: [...studies.values()] });
   const caseSummaries = new Map(interactions.cases.map((record) => [record.id, {
     id: record.id, title: record.title, anchorEntityId: record.anchorEntityId
@@ -66,8 +67,10 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
       return claim;
     });
   }
+  const homeOf = new Map((graph.arisings ?? []).flatMap((arising) => arising.memberIds.map((id) => [id, arising.id])));
   const nodes = graph.entities.map((entity) => ({
     ...entity, typeRole: entity.kind, scientificStatus: entity.status,
+    ...(homeOf.has(entity.id) ? { layer: "technical", arisingId: homeOf.get(entity.id) } : {}),
     rationale: rationale(entity.claimIds), representation: nodeRoles.get(entity.id),
     ...(caseRefs.has(entity.id) ? { interactionCaseRefs: caseRefs.get(entity.id) } : {}),
     ...(anchoredCases.has(entity.id) ? { interactionCases: anchoredCases.get(entity.id) } : {}),
@@ -83,6 +86,7 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
   for (const rule of graph.rules) {
     nodes.push({
       ...rule, level: 0, typeRole: "construction-rule", scientificStatus: "proposed-rule",
+      ...(homeOf.has(rule.id) ? { layer: "technical", arisingId: homeOf.get(rule.id) } : {}),
       shortDescription: rule.conditions.join("; "),
       description: `${rule.name}. ALL declared premises and conditions are jointly required. No successful instance is asserted by this rule specification.`,
       rationale: rationale(rule.claimIds), representation: nodeRoles.get(rule.id)
@@ -100,22 +104,64 @@ export function compileCanonicalGraph({ graph, pilot, routing, routingPolicy, di
       assertion: "This is the proposed output class if every rule gate passes; existence is not established."
     });
   }
+  // Ontological layer: arisings with their technical subgraph, and the causes between them.
+  // Display names come from the author's vocabulary so that viewers need not load it.
+  const names = (key) => new Map((arisingVocabulary?.[key] ?? []).map((entry) => [entry.Id, entry.Name]));
+  const levelNames = names("complexityLevels"), phaseNames = names("levelPhases"), roleNames = names("typeRoles");
+  const dependencyNames = names("dependencyTypes");
+  for (const arising of graph.arisings ?? []) {
+    const { status, typeRole, ...record } = arising;
+    const completeness = causalCompleteness(arising, graph.causes);
+    nodes.push({
+      ...record, layer: "arising", typeRole: (roleNames.get(typeRole) ?? String(typeRole)).toLowerCase(), typeRoleId: typeRole, scientificStatus: status,
+      levelName: levelNames.get(arising.level) ?? null, phaseName: phaseNames.get(arising.phase) ?? null,
+      shortDescription: arising.summary,
+      completeness: { ...completeness, openSlotNames: completeness.openSlots.map((id) => dependencyNames.get(id) ?? String(id)),
+        beyondGraphNames: completeness.beyondGraph.map((id) => dependencyNames.get(id) ?? String(id)) },
+      rationale: rationale(arising.claimIds)
+    });
+  }
+  for (const cause of graph.causes ?? []) {
+    const { parent, child, ontologicalRole, ...record } = cause;
+    edges.push({ ...record, source: parent, target: child, relationLayer: "causal", role: ontologicalRole, ontologicalRole });
+  }
+  const arisingDeclarations = arisingCatalogue ? { root: arisingCatalogue.root, principles: arisingCatalogue.principles ?? [],
+    coArisingLoops: arisingCatalogue.coArisingLoops ?? [], pendingQuestions: PENDING_ARISING_QUESTIONS } : null;
+  const rootNote = arisingCatalogue?.root?.statement ?? null;
+  const arisingCount = (graph.arisings ?? []).length;
+  const technicalCount = graph.entities.length + graph.rules.length;
+  const recordNote = arisingCount
+    ? `${arisingCount} arisings joined by ${(graph.causes ?? []).length} causes; ${technicalCount} technical records with explicit representation roles, source citations and evidence limits.`
+    : `${technicalCount} records with explicit representation roles, source citations and evidence limits.`;
   return buildModelPack({
     model: { ...graph.model, description: graph.scope.summary },
-    source: { id: "canonical-research-source-v26", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
+    source: { id: "canonical-research-source-v27", files: sourceFiles, auditHash: hashCanonical("onto2d:canonical-reconstruction-evidence:v1", evidence) },
     nodes, edges,
     dictionaries: {
       sources: graph.sources, claims: graph.claims, constructionRules: graph.rules, interactions,
       recordEvidence: { format: "dictionary-references-v1" },
       scope: graph.scope, evidence, pilot, routing, routingPolicy,
-      dictionaryReview, vocabulary: compileVocabulary(dictionaryReview, graph.sources), sourceReadiness, optics, visual, neural, physics,
-      ...(biochemistry ? { biochemistry } : {}), ...(cellular ? { cellular } : {}), ...(organismal ? { organismal } : {}), ...(neuralSystems ? { neuralSystems } : {}), ...(socialSystems ? { socialSystems } : {}),
+      sourceReadiness, optics, visual, neural, physics,
+      ...(biochemistry ? { biochemistry } : {}), ...(cellular ? { cellular } : {}), ...(organismal ? { organismal } : {}), ...(neuralSystems ? { neuralSystems } : {}), ...(socialSystems ? { socialSystems } : {}), ...(causeEvidence ? { causeEvidence } : {}),
+      ...(arisingDeclarations ? { arisingDeclarations } : {}),
       presentation: {
-        labels: { catalogTitle: "Canonical reconstruction", searchPlaceholder: "Find a concept or construction rule", typeFilter: "Record kind", statusFilter: "Evidence status", parents: "Premises / incoming", children: "Consequences / outgoing" },
+        labels: { catalogTitle: "Ontology of arisings", searchPlaceholder: "Find an arising or a technical record", typeFilter: "Type", statusFilter: "Status", layerFilter: "Layer", parents: "Causes / premises", children: "Conditioned arisings / dependents" },
+        ...(arisingCount ? { defaults: { layer: "arising", focusId: ARISING_ROOT } } : {}),
+        ...(arisingVocabulary ? { arisingTable: {
+          layer: "arising",
+          levels: arisingVocabulary.complexityLevels.map((entry) => ({ value: entry.Id, name: entry.Name })),
+          phases: arisingVocabulary.levelPhases.map((entry) => ({ value: entry.Id, name: entry.Name })),
+          dependencyTypes: arisingVocabulary.dependencyTypes.map((entry) => ({ value: entry.Id, name: entry.Name })),
+          causalDirections: arisingVocabulary.causalDirections.map((entry) => ({ value: entry.Id, name: entry.Name })),
+          interactionModes: arisingVocabulary.interactionModes.map((entry) => ({ value: entry.Id, name: entry.Name })),
+          ...(rootNote ? { rootNote } : {}),
+          ...(arisingCatalogue?.domains ? { domains: arisingCatalogue.domains.map((domain) => ({ value: domain.id, name: domain.name, definition: domain.definition })) } : {}),
+          ...(arisingCatalogue?.clusters ? { clusters: arisingCatalogue.clusters.map((cluster) => ({ value: cluster.id, name: cluster.name, domain: cluster.domain, level: cluster.level })) } : {})
+        } } : {}),
         boundary: {
-          title: "Canonical reconstruction · Evidence and construction rules",
-          summary: "The graph separates definitions, scoped observations, computational results, experimental interventions and hypotheses. Each scientific claim records the passages read, the preparation and the limits of its evidence. Behavioral success and fitted models do not identify a unique neural mechanism; mathematical specifications do not establish physical instances or universal minima. Levels organize the display. Review of the source catalogue and cross-domain dependencies remains incomplete.",
-          note: `${nodes.length} records with explicit representation roles, source citations and evidence limits. Levels are display groups. Formal Core implementation is deferred.`
+          title: "Ontology of causal arisings · Arisings, causes and their evidence",
+          summary: "The outer layer records arisings and the causes between them in the author's table of complexity levels and phases; each cause is an author hypothesis until evidence supports it. Inside every arising, the technical layer separates definitions, scoped observations, computational results, experimental interventions and hypotheses. Each scientific claim records the passages read, the preparation and the limits of its evidence. Behavioral success and fitted models do not identify a unique neural mechanism; mathematical specifications do not establish physical instances or universal minima. Levels organize the display. Review of the source catalogue and cross-domain dependencies remains incomplete.",
+          note: `${recordNote} Levels are display groups. Formal Core implementation is deferred.`
         }
       }
     }
@@ -131,7 +177,6 @@ export async function buildCanonicalRelease() {
     "models/causal-emergence/canonical/interactions.mjs",
     "models/causal-emergence/canonical/retinal.mjs",
     "models/causal-emergence/canonical/routing.mjs", "models/causal-emergence/canonical/verify-routing-data.py",
-    "models/causal-emergence/canonical/dictionaries.mjs",
     "models/causal-emergence/canonical/readiness.mjs",
     "models/causal-emergence/canonical/optics.mjs",
     "models/causal-emergence/canonical/visual.mjs",
@@ -144,12 +189,17 @@ export async function buildCanonicalRelease() {
     "references/canonical/neural-systems-review.json",
     "models/causal-emergence/canonical/social-systems.mjs",
     "models/causal-emergence/canonical/publication-identity.mjs",
+    "models/causal-emergence/canonical/bridges.mjs",
+    "models/causal-emergence/canonical/bridge-records.mjs",
+    "models/causal-emergence/canonical/arisings.mjs",
+    "models/causal-emergence/canonical/cause-evidence.mjs",
     "models/causal-emergence/canonical/level-seven.mjs",
     "models/causal-emergence/canonical/social-common.mjs",
     "models/causal-emergence/canonical/social-animals.mjs",
     "models/causal-emergence/canonical/social-institutions.mjs",
     "models/causal-emergence/canonical/social-information.mjs",
     "references/canonical/social-systems-review.json",
+    "references/canonical/cause-evidence-review.json",
     "models/causal-emergence/canonical/physics.mjs",
     "models/causal-emergence/canonical/biochemistry.mjs",
     "models/causal-emergence/canonical/cellular.mjs",
@@ -315,38 +365,38 @@ async function collectFiles(directory, prefix = "") {
   return result.sort();
 }
 
-export async function verifyCanonicalRelease(pack, directory = releaseDirectory(pack), { transportEncoding = "plain" } = {}) {
+export async function verifyCanonicalRelease(pack, directory = releaseDirectory(pack), { transportEncoding = "plain", transportLimits = {} } = {}) {
   assert.ok(ENCODINGS.has(transportEncoding), "Unknown canonical transport encoding");
   const expected = { "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack };
   assert.deepEqual(await collectFiles(directory), Object.keys(expected).sort(), "Release file inventory differs");
   for (const [relative, value] of Object.entries(expected)) {
-    assert.equal(await readFile(path.join(directory, relative), "utf8"), serialize(relative, value, transportEncoding), `Stale canonical derivative: ${relative}`);
+    assert.equal(await readFile(path.join(directory, relative), "utf8"), serialize(relative, value, transportEncoding, transportLimits), `Stale canonical derivative: ${relative}`);
   }
   verifyModelPack(pack);
   return pack;
 }
 
 /** Existing releases may only be replayed byte-for-byte, never replaced. */
-export async function writeCanonicalRelease(pack, directory = releaseDirectory(pack), { transportEncoding = "plain" } = {}) {
+export async function writeCanonicalRelease(pack, directory = releaseDirectory(pack), { transportEncoding = "plain", transportLimits = {} } = {}) {
   assert.ok(ENCODINGS.has(transportEncoding), "Unknown canonical transport encoding");
   verifyModelPack(pack);
   let exists = false;
   try { await readdir(directory); exists = true; } catch (error) { if (error.code !== "ENOENT") throw error; }
   if (exists) {
-    try { return await verifyCanonicalRelease(pack, directory, { transportEncoding }); }
+    try { return await verifyCanonicalRelease(pack, directory, { transportEncoding, transportLimits }); }
     catch (error) { throw new Error(`Refusing to overwrite release ${pack.manifest.model.version}; choose a new source version. ${error.message}`); }
   }
   // Encoding can reject a valid semantic pack at its transport limit. Check
   // every output before creating an immutable version directory.
   const serialized = new Map(Object.entries({ "manifest.json": pack.manifest, ...pack.files, "bundle.json": pack })
-    .map(([relative, value]) => [relative, serialize(relative, value, transportEncoding)]));
+    .map(([relative, value]) => [relative, serialize(relative, value, transportEncoding, transportLimits)]));
   await mkdir(directory, { recursive: true });
   for (const [relative, bytes] of serialized) {
     const target = path.join(directory, relative);
     await mkdir(path.dirname(target), { recursive: true });
     await writeFile(target, bytes, { flag: "wx" });
   }
-  return verifyCanonicalRelease(pack, directory, { transportEncoding });
+  return verifyCanonicalRelease(pack, directory, { transportEncoding, transportLimits });
 }
 
 export async function run({ verify = false } = {}) {

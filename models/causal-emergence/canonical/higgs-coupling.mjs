@@ -103,7 +103,7 @@ const contracts = {
         "This is the minimal single-doublet model at tree level with supplied mu2<0, lambda_P>0 and positive gauge couplings, in units hbar=c=1. lambda_P denotes the PDG parameter whose square enters the quartic term; it is not the background lambda_W used in the historical Weinberg1967 convention.",
         "The chosen doublet orientation and unitary-gauge coordinates are model conventions. The scalar background is distinct from the propagating H excitation; would-be Goldstone components supply longitudinal vector polarizations rather than additional physical particles. A gauge choice or scalar minimum is not an independently measured spatial medium, an additional particle population or a causal maintenance process.",
         "The specified classical potential has a nonzero minimum and positive radial curvature. This does not establish absolute stability of the interacting quantum vacuum, a cosmological transition history or continuous physical regeneration. Radiative corrections, renormalization prescription and possible extra fields require separate treatment; these tree-level parameters are not silently equated with fitted resonance masses.",
-        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality, universal carrier minima, parent weights, SOMA phase order or a general stability/formation law for later composite matter."
+        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality or a general stability/formation law for later composite matter."
       ]
     },
     {
@@ -126,7 +126,7 @@ const contracts = {
         "This is the minimal single-doublet model at tree level with supplied mu2<0, lambda_P>0 and positive gauge couplings, in units hbar=c=1. lambda_P denotes the PDG parameter whose square enters the quartic term; it is not the background lambda_W used in the historical Weinberg1967 convention.",
         "The minimal field content has no right-handed neutrinos and no renormalizable neutrino mass term. Its charged-fermion formula must not be used as a demonstrated neutrino-mass mechanism. Nonminimal flavor structures, neutrino-mass extensions and additional scalar states need explicit specifications.",
         "Quark mass parameters require their scale and renormalization convention beyond tree level. This formula is not an assertion that the mass of a composite hadron equals a sum of Higgs-generated constituent masses; QCD dynamics and separately reviewed hadron calculations retain their own definitions.",
-        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality, universal carrier minima, parent weights, SOMA phase order or a general stability/formation law for later composite matter."
+        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality or a general stability/formation law for later composite matter."
       ]
     }
   ],
@@ -151,7 +151,7 @@ const contracts = {
         "This is the minimal single-doublet model at tree level with supplied mu2<0, lambda_P>0 and positive gauge couplings, in units hbar=c=1. lambda_P denotes the PDG parameter whose square enters the quartic term; it is not the background lambda_W used in the historical Weinberg1967 convention.",
         "The chosen doublet orientation and unitary-gauge coordinates are model conventions. The scalar background is distinct from the propagating H excitation; would-be Goldstone components supply longitudinal vector polarizations rather than additional physical particles. A gauge choice or scalar minimum is not an independently measured spatial medium, an additional particle population or a causal maintenance process.",
         "The specified classical potential has a nonzero minimum and positive radial curvature. This does not establish absolute stability of the interacting quantum vacuum, a cosmological transition history or continuous physical regeneration. Radiative corrections, renormalization prescription and possible extra fields require separate treatment; these tree-level parameters are not silently equated with fitted resonance masses.",
-        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality, universal carrier minima, parent weights, SOMA phase order or a general stability/formation law for later composite matter."
+        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality or a general stability/formation law for later composite matter."
       ]
     },
     {
@@ -175,7 +175,7 @@ const contracts = {
         "This is the minimal single-doublet model at tree level with supplied mu2<0, lambda_P>0 and positive gauge couplings, in units hbar=c=1. lambda_P denotes the PDG parameter whose square enters the quartic term; it is not the background lambda_W used in the historical Weinberg1967 convention.",
         "The minimal field content has no right-handed neutrinos and no renormalizable neutrino mass term. Its charged-fermion formula must not be used as a demonstrated neutrino-mass mechanism. Nonminimal flavor structures, neutrino-mass extensions and additional scalar states need explicit specifications.",
         "Quark mass parameters require their scale and renormalization convention beyond tree level. This formula is not an assertion that the mass of a composite hadron equals a sum of Higgs-generated constituent masses; QCD dynamics and separately reviewed hadron calculations retain their own definitions.",
-        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality, universal carrier minima, parent weights, SOMA phase order or a general stability/formation law for later composite matter."
+        "Field assignments, gauge couplings and model parameters are premises of this construction. They do not derive chirality or a general stability/formation law for later composite matter."
       ]
     }
   ],

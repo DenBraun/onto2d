@@ -7,7 +7,7 @@ import { verifyOpticalWitnesses } from "../../models/causal-emergence/canonical/
 
 const data = await loadCanonicalSource();
 
-test("optical validation rejects lost provenance, promoted placeholders and unsupported cross-preparation claims", () => {
+test("optical validation rejects lost provenance, untested empirical rankings and unsupported cross-preparation claims", () => {
   const claim = (d, id) => d.graph.claims.find((c) => c.id === id);
   for (const [label, mutate] of [
     ["unread locator", (d) => { claim(d, "O-water").citations[0].locator = "Full text"; }],

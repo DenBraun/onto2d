@@ -226,13 +226,7 @@ const contracts = {
           "sourceId": "weinberg1967-leptons",
           "locator": "Publisher page 1266, concluding renormalizability question: restriction of the historical model and unproved quantum extension",
           "role": "limits",
-          "note": "Supports only the declared model or source-specific observable; no cross-scale formation or stability inference."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original card /1 supplies the proposal and unsupported parent/weight/minimum claims under assessment; it is not scientific support."
+          "note": "Delimits the historical model: its renormalizability and quantum extension remain unproved; no cross-scale formation or stability inference."
         }
       ],
       "checkIds": [],
@@ -240,11 +234,10 @@ const contracts = {
         "Persistent pattern is retained only as a description of a recurring interaction framework under stated conditions. It is not a demonstrated new physical stage, cosmological chronology, temporal stability theorem or autonomous maintenance process.",
         "Atomic and molecular quantum states, kinetics and stability require specified nuclei, electrons, masses, statistics, preparation and environment. A Hamiltonian interaction term alone does not establish bound-state existence or lifetime. A bulk optical spectrum does not independently determine cohesion, crystalline organization, dielectric tensors or a microscopic Hamiltonian.",
         "The limited model and observations preserve real electromagnetic, atomic, molecular and optical phenomena. They do not show that electromagnetism alone is sufficient for all organization of matter or that nuclear, statistical and environmental inputs can be omitted.",
-        "Original necessary parent 1.5 Vacuum Fluctuations does not supply the charged-matter current or a two-resonant-mode threshold. Ground-state variance, radiative corrections and material response retain their separate definitions.",
-        "Original necessary parent 1.6 Asymptotic Freedom is a QCD scale property, not a premise of the specified Abelian Maxwell-Dirac construction. Its omission from that construction is not a claim that strong interactions have no role in nuclear structure.",
-        "Original parent 1.8 Electroweak Symmetry Breaking supplies a conditional model origin for a massless electromagnetic field combination and its charge coupling. It does not establish a measured temporal emergence of the interaction law or a one-mode physical carrier minimum.",
-        "Original weights 0.30, 0.30 and 0.40; necessary arising roles; resonant-mode Nmin=Ncrit of 2, 2 and 1; diagonal/constraint labels; Level 2, Phase 1, pattern role and established catalogue status have no admitted quantitative, causal or physical-stage authority.",
-        "The original generic theoretical and empirical evidence paragraphs have no identified publication, preparation or locator. Their mentions of Coulomb-law tests, dielectric response and collective organization are qualified to the actual scoped records; no unreviewed universal result is inferred."
+        "Vacuum fluctuations do not supply the charged-matter current. Ground-state variance, radiative corrections and material response retain their separate definitions.",
+        "Asymptotic freedom is a QCD scale property, not a premise of the specified Abelian Maxwell-Dirac construction. Its omission from that construction is not a claim that strong interactions have no role in nuclear structure.",
+        "Electroweak symmetry breaking supplies a conditional model origin for a massless electromagnetic field combination and its charge coupling. It does not establish a measured temporal emergence of the interaction law.",
+        "Coulomb-law tests, dielectric response and collective organization are qualified to the actual scoped records; no unreviewed universal result is inferred."
       ]
     },
     {
@@ -315,7 +308,7 @@ const contracts = {
         "The Lamb level separation is approximate; its radiative interpretation and the approximate Bethe model are distinct from the measured microwave-quenching current. No cosmic atomic-formation history is measured.",
         "The HD+ mass and its molecular closure share nuclear/electronic mass references and theoretical binding inputs. The inferred rovibrational state, preparation-dependent corrections, source-version conflicts and unreproduced covariance remain as stated in the existing HD+ records.",
         "Hanssen measures reflectance and transmittance in its specified sphere geometry and derives absorptance by balance. Sample thickness, spectral range, surface contaminants, instrument throughput and calibration limits remain attached; the optical spectra are not digitized or fitted here.",
-        "No new acquisition, numerical replay, joint likelihood, common response calibration, universal carrier minimum, independently reproduced experiment or electromagnetic-only formation/maintenance law is admitted."
+        "No new acquisition, numerical replay, joint likelihood, common response calibration, independently reproduced experiment or electromagnetic-only formation/maintenance law is admitted."
       ],
       "contextIds": [
         "lamb1947",
@@ -393,7 +386,7 @@ const contracts = {
         "The Lamb level separation is approximate; its radiative interpretation and the approximate Bethe model are distinct from the measured microwave-quenching current. No cosmic atomic-formation history is measured.",
         "The HD+ mass and its molecular closure share nuclear/electronic mass references and theoretical binding inputs. The inferred rovibrational state, preparation-dependent corrections, source-version conflicts and unreproduced covariance remain as stated in the existing HD+ records.",
         "Hanssen measures reflectance and transmittance in its specified sphere geometry and derives absorptance by balance. Sample thickness, spectral range, surface contaminants, instrument throughput and calibration limits remain attached; the optical spectra are not digitized or fitted here.",
-        "No new acquisition, numerical replay, joint likelihood, common response calibration, universal carrier minimum, independently reproduced experiment or electromagnetic-only formation/maintenance law is admitted."
+        "No new acquisition, numerical replay, joint likelihood, common response calibration, independently reproduced experiment or electromagnetic-only formation/maintenance law is admitted."
       ],
       "contextIds": [
         "lamb1947",
@@ -426,10 +419,6 @@ const contracts = {
         {
           "sourceId": "feynman1949-amplitudes",
           "locator": "Printed pages 769-773, introduction and Sections 1-2, Equation 4 and Figure 1: perturbation amplitudes, summed alternatives and antisymmetrized two-electron amplitude"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -456,10 +445,6 @@ const contracts = {
         {
           "sourceId": "feynman1949-amplitudes",
           "locator": "Printed pages 769-773, introduction and Sections 1-2, Equation 4 and Figure 1: perturbation amplitudes, summed alternatives and antisymmetrized two-electron amplitude"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -494,21 +479,16 @@ const contracts = {
         {
           "sourceId": "weinberg1967-leptons",
           "locator": "Publisher page 1266, concluding renormalizability question: restriction of the historical model and unproved quantum extension"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "Persistent pattern is retained only as a description of a recurring interaction framework under stated conditions. It is not a demonstrated new physical stage, cosmological chronology, temporal stability theorem or autonomous maintenance process.",
         "Atomic and molecular quantum states, kinetics and stability require specified nuclei, electrons, masses, statistics, preparation and environment. A Hamiltonian interaction term alone does not establish bound-state existence or lifetime. A bulk optical spectrum does not independently determine cohesion, crystalline organization, dielectric tensors or a microscopic Hamiltonian.",
         "The limited model and observations preserve real electromagnetic, atomic, molecular and optical phenomena. They do not show that electromagnetism alone is sufficient for all organization of matter or that nuclear, statistical and environmental inputs can be omitted.",
-        "Original necessary parent 1.5 Vacuum Fluctuations does not supply the charged-matter current or a two-resonant-mode threshold. Ground-state variance, radiative corrections and material response retain their separate definitions.",
-        "Original necessary parent 1.6 Asymptotic Freedom is a QCD scale property, not a premise of the specified Abelian Maxwell-Dirac construction. Its omission from that construction is not a claim that strong interactions have no role in nuclear structure.",
-        "Original parent 1.8 Electroweak Symmetry Breaking supplies a conditional model origin for a massless electromagnetic field combination and its charge coupling. It does not establish a measured temporal emergence of the interaction law or a one-mode physical carrier minimum.",
-        "Original weights 0.30, 0.30 and 0.40; necessary arising roles; resonant-mode Nmin=Ncrit of 2, 2 and 1; diagonal/constraint labels; Level 2, Phase 1, pattern role and established catalogue status have no admitted quantitative, causal or physical-stage authority.",
-        "The original generic theoretical and empirical evidence paragraphs have no identified publication, preparation or locator. Their mentions of Coulomb-law tests, dielectric response and collective organization are qualified to the actual scoped records; no unreviewed universal result is inferred."
+        "Vacuum fluctuations do not supply the charged-matter current. Ground-state variance, radiative corrections and material response retain their separate definitions.",
+        "Asymptotic freedom is a QCD scale property, not a premise of the specified Abelian Maxwell-Dirac construction. Its omission from that construction is not a claim that strong interactions have no role in nuclear structure.",
+        "Electroweak symmetry breaking supplies a conditional model origin for a massless electromagnetic field combination and its charge coupling. It does not establish a measured temporal emergence of the interaction law.",
+        "Coulomb-law tests, dielectric response and collective organization are qualified to the actual scoped records; no unreviewed universal result is inferred."
       ],
       "level": 2
     },
@@ -557,10 +537,6 @@ const contracts = {
         {
           "sourceId": "rau2020",
           "locator": "Author manuscript pages 1-4, Equation 1, Figures 1-4 and Table 1: deuteron preparation, two excitation generators, ratio fits and corrections"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -568,7 +544,7 @@ const contracts = {
         "The Lamb level separation is approximate; its radiative interpretation and the approximate Bethe model are distinct from the measured microwave-quenching current. No cosmic atomic-formation history is measured.",
         "The HD+ mass and its molecular closure share nuclear/electronic mass references and theoretical binding inputs. The inferred rovibrational state, preparation-dependent corrections, source-version conflicts and unreproduced covariance remain as stated in the existing HD+ records.",
         "Hanssen measures reflectance and transmittance in its specified sphere geometry and derives absorptance by balance. Sample thickness, spectral range, surface contaminants, instrument throughput and calibration limits remain attached; the optical spectra are not digitized or fitted here.",
-        "No new acquisition, numerical replay, joint likelihood, common response calibration, universal carrier minimum, independently reproduced experiment or electromagnetic-only formation/maintenance law is admitted."
+        "No new acquisition, numerical replay, joint likelihood, common response calibration, independently reproduced experiment or electromagnetic-only formation/maintenance law is admitted."
       ],
       "level": 2
     }
@@ -718,10 +694,10 @@ const contracts = {
     {
       "id": "electromagnetic-material-cross-scale",
       "candidate": "A declared electromagnetic charged-matter framework interpreted through separate source-specific atomic, molecular and infrared material observations.",
-      "alternative": "One universal electromagnetic-only formation/maintenance mechanism or physical SOMA stage inferred from the same heterogeneous observations.",
+      "alternative": "One universal electromagnetic-only formation/maintenance mechanism inferred from the same heterogeneous observations.",
       "discriminator": "A common cross-scale construction model with compatible states, controlled variation and matched response is needed to test the stronger claim; the current ledger instead preserves the actual preparation and inference boundaries.",
       "result": "not-tested",
-      "limit": "The reviewed observations remain admitted on their original scopes; this literature comparison performs no joint causal or stability test and supplies no universal carrier threshold.",
+      "limit": "The reviewed observations remain admitted on their original scopes; this literature comparison performs no joint causal or stability test.",
       "assumptions": [
         "Preserve hydrogen microwave, trapped HD+ and FTIR sample preparations and their separate derived quantities.",
         "The Hanssen optical results reuse the same published specimens and response analysis, without an additional acquisition."
@@ -777,24 +753,6 @@ const contracts = {
   ],
   "sources": [
     {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "hanssen2001",
       "kind": "research-publication",
       "title": "Integrating-sphere system and method for absolute measurement of transmittance, reflectance, and absorptance of specular samples",
@@ -814,7 +772,7 @@ const contracts = {
           "Section 6, pp. 3201-3203, Figures 6-8: results and limitations",
           "Section 7, pp. 3203-3204: discussion and scope"
         ],
-        "limit": "Specified IR samples and collection geometry; no full angular inversion, universal precision or carrier minimum."
+        "limit": "Specified IR samples and collection geometry; no full angular inversion or universal precision."
       }
     },
     {

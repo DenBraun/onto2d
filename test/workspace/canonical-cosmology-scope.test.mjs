@@ -74,17 +74,15 @@ test("primordial-CMB compatibility reuses the three Planck contexts without inve
   }
 });
 
-test("flat-space variance and the original necessary-parent metadata cannot supply a cosmological model", async () => {
+test("flat-space variance and the vacuum-correlator dependency cannot supply a cosmological model", async () => {
   await rejects([
     ["the old oscillator supplies the inflationary background and initial state", (data) =>
       dropLimit(data, definition, "No old oscillator replay")],
-    ["unreviewed weights and minima regain quantitative scientific meaning", (data) =>
-      dropLimit(data, definition, "N_min=N_crit=1")],
     ["the vacuum-correlator comparison becomes a numerical CMB input", (data) => {
       edge(data, "vacuum-two-point-function", "primordial-origin-scope").assertion =
         "The flat-space vacuum correlator determines the CMB spectrum without any cosmological background or initial-state input.";
     }],
-    ["the original parent replaces the reviewed curvature-spectrum dependency", (data) => {
+    ["the flat-space vacuum correlator replaces the reviewed curvature-spectrum dependency", (data) => {
       edge(data, "primordial-curvature-spectrum", "primordial-origin-scope").source = "phys:vacuum-two-point-function";
     }]
   ]);
@@ -154,7 +152,7 @@ test("interpretation dependencies and evidence ownership remain explicit and can
     }],
     ["an interpretation edge becomes physical production of the observed sky", (data) => {
       edge(data, "planck2018-scalar-spectrum", "primordial-cmb-model-compatibility").assertion =
-        "The inferred primordial parameters generate the acquired Planck sky as a verified necessary-parent construction.";
+        "The inferred primordial parameters generate the acquired Planck sky as a verified necessary construction.";
     }],
     ["acquisition provenance is removed from the synthesis graph", (data) => {
       data.graph.relations = data.graph.relations.filter((record) =>

@@ -71,11 +71,12 @@ test("vacuum stationary states and conditional mass implications survive the ful
   ]);
 });
 
-test("formal inputs cannot recover original parent necessity, weights, minima or arising order", () => {
+test("formal inputs cannot acquire material necessity, causal weights, carrier counts or an arising order", () => {
   rejects([
-    ["old parent weights and one-carrier minima become meaningful", (d) => dropLimit(d, scopeId, "weights 0.3/0.7")],
-    ["flavor labels acquire necessary material parent semantics", (d) => {
-      edge(d, "lepton-charge-flavor-neutrino-propagation-scope").assertion = "Lepton flavor is a necessary material parent that causes oscillations after its formation.";
+    ["flavor labels and mixing inputs establish an arising chronology or causal maintenance", (d) =>
+      dropLimit(d, scopeId, "do not establish an arising chronology")],
+    ["flavor labels acquire necessary material-cause semantics", (d) => {
+      edge(d, "lepton-charge-flavor-neutrino-propagation-scope").assertion = "Lepton flavor is a necessary material precursor that causes oscillations after its formation.";
     }],
     ["mixing relation gains weighted causal maintenance", (d) => {
       const relation = edge(d, "neutrino-flavor-mixing-neutrino-propagation-scope");

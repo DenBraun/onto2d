@@ -1,6 +1,6 @@
 {
-  "artifactHash": "sha256:13203d479b53fd3bddc5f10585bced5d889894109995b17c51bfae0f9a35d313",
-  "edgeCalculations": 1089,
+  "artifactHash": "sha256:ce06d81b482196ba3bd542037ef7370b53912c3211564414c4c15f448ec32aa5",
+  "edgeCalculations": 1233,
   "runs": [
     {
       "artifactHash": "sha256:9af88d552bb3569335e85dc4a9db4d84370edc7959a0cc940a6e474758c6152a",
@@ -653,58 +653,58 @@
       ]
     },
     {
-      "artifactHash": "sha256:7741c6c883f70b7fc4ad175391be4beb21da9fbacc39c284239ef0abf364dba6",
-      "boundaryEdgeCount": 27,
-      "edgeCount": 18,
-      "file": "artifacts/causal-emergence-seed.json",
+      "artifactHash": "sha256:1a65355e7a6f68fc6648b7085371e763f71d99f6502726df60183be068c7467e",
+      "boundaryEdgeCount": 40,
+      "edgeCount": 22,
+      "file": "artifacts/causal-emergence-level-zero-definitions.json",
       "finalSummary": {
         "curvatureSum": {
-          "denominator": "1193765239190790469767423952880409843301591933008522290732623294695270990850692559399713600",
-          "numerator": "-13872046775139889757173540110472369822144964004151296567889453966641662547730124068983210067"
+          "denominator": "101430463268299725086178057480613575101807522705585119871092409363418860160",
+          "numerator": "-1506027077149282682053954473238719261138047044313592316787395107441294963011"
         },
         "lengthSum": {
           "denominator": "1",
-          "numerator": "18"
+          "numerator": "22"
         },
         "maxCurvatureChange": {
-          "denominator": "20564203993416",
-          "numerator": "735511204049"
+          "denominator": "4047410605",
+          "numerator": "159575513"
         },
         "maxLengthChange": {
-          "denominator": "110439491456318393",
-          "numerator": "6073944170070114"
+          "denominator": "988674844668985",
+          "numerator": "64092062280928"
         },
         "maximumCurvature": {
-          "denominator": "8229249",
-          "numerator": "-3807460"
+          "denominator": "1",
+          "numerator": "0"
         },
         "maximumLength": {
-          "denominator": "2651846627",
-          "numerator": "3766266396"
+          "denominator": "311834345",
+          "numerator": "494589216"
         },
         "maximumLengthEdgeIds": [
-          "0.1->0.5",
-          "0.2->0.5"
+          "description:sequential-axis-quadratic-action",
+          "description:spatial-axis-quadratic-action"
         ],
         "minimumCurvature": {
-          "denominator": "248023620",
-          "numerator": "-171276593"
+          "denominator": "2810166",
+          "numerator": "-2354143"
         },
         "minimumLength": {
-          "denominator": "2651846627",
-          "numerator": "1571746248"
+          "denominator": "311834345",
+          "numerator": "51904512"
         },
         "signs": {
-          "negative": 18,
+          "negative": 21,
           "positive": 0,
-          "zero": 0
+          "zero": 1
         },
         "stableStepCount": 0
       },
-      "id": "causal-emergence-seed",
-      "nodeCount": 10,
+      "id": "causal-emergence-level-zero-definitions",
+      "nodeCount": 28,
       "removedEdgeIds": [],
-      "requestHash": "sha256:3c647c21ad6c4dd65c31ba1bbd92a4fcb1f811ecaf9cea21a211a10c6584d073",
+      "requestHash": "sha256:c92a700cbac36275d1265d076e6c9c1a212e36f3761d77d3b4a474591d672447",
       "stateCount": 7,
       "termination": {
         "cyclePeriod": null,
@@ -715,96 +715,165 @@
       },
       "weakComponents": [
         [
-          "0.0",
-          "0.1",
-          "0.2",
-          "0.3",
-          "0.4",
-          "0.5",
-          "0.6",
-          "0.7",
-          "0.8",
-          "0.9"
+          "l0:anisotropy"
+        ],
+        [
+          "l0:carrier-promotion"
+        ],
+        [
+          "l0:closure-parameter",
+          "l0:cohort-selection",
+          "l0:compensation",
+          "l0:discrete-scale",
+          "l0:distinction",
+          "l0:ensemble-action",
+          "l0:hyperbolic-frame",
+          "l0:integrated-density",
+          "l0:local-density",
+          "l0:nonlinear-action",
+          "l0:omega",
+          "l0:oscillatory-mode",
+          "l0:premetric-frame",
+          "l0:quadratic-action",
+          "l0:sequential-axis",
+          "l0:spatial-axis",
+          "l0:trial-field"
+        ],
+        [
+          "l0:crt-node"
+        ],
+        [
+          "l0:deformation"
+        ],
+        [
+          "l0:directional-gradient"
+        ],
+        [
+          "l0:ensemble",
+          "l0:synchronization"
+        ],
+        [
+          "l0:ensemble-quantum"
+        ],
+        [
+          "l0:transport-bias"
+        ],
+        [
+          "l0:triad-configuration"
+        ],
+        [
+          "l0:triadic-closure"
         ]
       ]
     },
     {
-      "artifactHash": "sha256:5ce7b800320b847895569d34830be5a3c3beb8f9fd063b53290530618ae84ef2",
-      "boundaryEdgeCount": 43,
-      "edgeCount": 17,
-      "file": "artifacts/causal-emergence-admissibility.json",
+      "artifactHash": "sha256:a02d1829e79d473e8d5aa12b7b339fe68cdbffa13bf917a03141463c08514b63",
+      "boundaryEdgeCount": 15,
+      "edgeCount": 47,
+      "file": "artifacts/causal-emergence-level-zero-rules.json",
       "finalSummary": {
         "curvatureSum": {
-          "denominator": "4182312486778831709936464557102839739061203551234130091969065700845088654982362932494087615144088703569324736699748151710902919009279765367260200",
-          "numerator": "-45005174265506691144179019385443280243949516613889368439820580867128919543468284593219108257175310464105985673621026539677533154020340604256102947"
+          "denominator": "1299956724389010452443568283263778341099824602631034927225115603586548712456791664560755023378292115102366009976331644939175772303983485837253773637944013843527283549834309482730341134071437440",
+          "numerator": "-44731630636986316666478649465616056022312971175007786247157163498664099762061037104556111039855284547570711504367384275359552186211920701515738738501211747733113860723241831725333904526192154033"
         },
         "lengthSum": {
           "denominator": "1",
-          "numerator": "17"
+          "numerator": "47"
         },
         "maxCurvatureChange": {
-          "denominator": "34551638529525280",
-          "numerator": "1100410627768513"
+          "denominator": "24318672",
+          "numerator": "2420701"
         },
         "maxLengthChange": {
-          "denominator": "14846547344200024611067",
-          "numerator": "596540036573461223472"
+          "denominator": "756421647476295676",
+          "numerator": "71853448056948875"
         },
         "maximumCurvature": {
-          "denominator": "12222678696",
-          "numerator": "-6527386955"
+          "denominator": "618672",
+          "numerator": "-285559"
         },
         "maximumLength": {
-          "denominator": "969946093717",
-          "numerator": "1574525139144"
+          "denominator": "16777916198",
+          "numerator": "23852066895"
         },
         "maximumLengthEdgeIds": [
-          "0.16->0.19"
+          "l0:triad-configuration->R-object"
         ],
         "minimumCurvature": {
-          "denominator": "3406614744",
-          "numerator": "-2379601327"
+          "denominator": "54119580",
+          "numerator": "-51043397"
         },
         "minimumLength": {
-          "denominator": "969946093717",
-          "numerator": "554094767552"
+          "denominator": "8388958099",
+          "numerator": "3486577500"
         },
         "signs": {
-          "negative": 17,
+          "negative": 47,
           "positive": 0,
           "zero": 0
         },
         "stableStepCount": 0
       },
-      "id": "causal-emergence-admissibility",
-      "nodeCount": 9,
+      "id": "causal-emergence-level-zero-rules",
+      "nodeCount": 34,
       "removedEdgeIds": [],
-      "requestHash": "sha256:9a1a9a0fc46b9a78ae9d489465f101be17ce7babdb1b847cffe36ff4df6c9767",
-      "stateCount": 7,
+      "requestHash": "sha256:ab396ffac7d6135f7cdd43086c04c71bfa76b29d22c76df9b11a210b20acc8c1",
+      "stateCount": 5,
       "termination": {
         "cyclePeriod": null,
         "cycleStart": null,
         "edgeIds": [],
-        "iteration": 6,
+        "iteration": 4,
         "reason": "iteration-limit"
       },
       "weakComponents": [
         [
-          "0.15",
-          "0.16",
-          "0.17",
-          "0.18",
-          "0.19",
-          "0.20",
-          "0.21",
-          "0.22",
-          "0.23"
+          "R-ensemble",
+          "R-mode",
+          "R-object",
+          "R-promote",
+          "R-select",
+          "R-triad",
+          "l0:carrier-promotion",
+          "l0:closure-parameter",
+          "l0:cohort-selection",
+          "l0:compensation",
+          "l0:crt-node",
+          "l0:deformation",
+          "l0:discrete-scale",
+          "l0:distinction",
+          "l0:ensemble",
+          "l0:ensemble-action",
+          "l0:ensemble-quantum",
+          "l0:hyperbolic-frame",
+          "l0:integrated-density",
+          "l0:local-density",
+          "l0:nonlinear-action",
+          "l0:omega",
+          "l0:oscillatory-mode",
+          "l0:premetric-frame",
+          "l0:quadratic-action",
+          "l0:sequential-axis",
+          "l0:spatial-axis",
+          "l0:synchronization",
+          "l0:triad-configuration",
+          "l0:triadic-closure",
+          "l0:trial-field"
+        ],
+        [
+          "l0:anisotropy"
+        ],
+        [
+          "l0:directional-gradient"
+        ],
+        [
+          "l0:transport-bias"
         ]
       ]
     }
   ],
   "schemaVersion": "1",
-  "stateCount": 68,
+  "stateCount": 66,
   "status": "computational-agreement-only",
   "suiteId": "structural-shadow-flow-reference-v1"
 }

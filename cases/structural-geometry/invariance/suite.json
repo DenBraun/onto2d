@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:3276ba16846267e60171367882753b8405325457dddf4bacc646d20770b1f004",
+  "artifactHash": "sha256:f822c2b52cc6e86c164372d6f9031d870e05d901dc83a553d621e27f5deabb07",
   "census": {
     "aggregationProfiles": 3280,
     "graphs": 69,
@@ -64,7 +64,7 @@
       "id": "remove-edge-with-missing-types"
     }
   ],
-  "referenceHash": "sha256:1907f5df0045d7ebc06627a5292f1a0fdd76ad789bd391c48f58f36e301822e6",
+  "referenceHash": "sha256:4c6481fafd82a5af1ac5545c42e31914db713d9aca26fb6ca0949484c1dc73fc",
   "runs": [
     {
       "artifactHash": "sha256:ca44dcdf0a14a82f70d7e5356b0d235d074ac736d02e94990e13ba48c66b4546",
@@ -179,19 +179,6 @@
         "coverage": {
           "denominator": 4,
           "numerator": 4
-        },
-        "status": "passed"
-      }
-    },
-    {
-      "artifactHash": "sha256:9800b60ac5431ff1918b01de53808c736a26fd3f8695393360158359656560d7",
-      "file": "artifacts/causal.json",
-      "id": "causal",
-      "regimeId": "typed-relations-v1",
-      "summary": {
-        "coverage": {
-          "denominator": 8,
-          "numerator": 8
         },
         "status": "passed"
       }

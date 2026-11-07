@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import * as cli from "@onto2d/cli";
-import * as catalogAdapter from "@onto2d/catalog-adapter";
 import * as canonicalIdentityAnalysis from "@onto2d/canonical-identity-analysis";
 import * as historyBenchmark from "@onto2d/history-benchmark";
 import * as historyRegression from "@onto2d/history-benchmark/predictive";
@@ -110,11 +109,6 @@ const PACKAGE_SURFACES = Object.freeze([
     declarations: new URL("../../packages/schemas/src/index.d.ts", import.meta.url)
   }),
   Object.freeze({
-    name: "catalog-adapter",
-    runtime: catalogAdapter,
-    declarations: new URL("../../packages/catalog-adapter/src/index.d.ts", import.meta.url)
-  }),
-  Object.freeze({
     name: "scientific-adapter",
     runtime: scientificAdapter,
     declarations: new URL("../../packages/scientific-adapter/src/index.d.ts", import.meta.url)
@@ -170,7 +164,6 @@ test("published workspace names resolve through their export maps", () => {
   assert.equal(typeof kernelCanonical.hashArtifactBytes, "function");
   assert.equal(schemas.SCHEMA_VERSION, "1");
   assert.ok(schemas.schemaUrls.candidate instanceof URL);
-  assert.equal(typeof catalogAdapter.auditSourceCatalogue, "function");
   assert.equal(typeof runStore.writePackageRunArtifactBundle, "function");
   assert.equal(typeof cli.runCli, "function");
   assert.equal(cli.CLI_EXIT_CODES.data, 3);
@@ -180,7 +173,7 @@ test("published workspace names resolve through their export maps", () => {
   assert.equal(typeof modelPack.verifyModelPack, "function");
   assert.equal(typeof modelPackBrowser.loadModelPackHttpDirectory, "function");
   assert.equal(typeof modelPackBrowser.loadModelPackBundle, "function");
-  assert.equal(modelPackBrowser.MODEL_PACK_BROWSER_LIMITS.maxFileBytes, 16 * 1024 * 1024);
+  assert.equal(modelPackBrowser.MODEL_PACK_BROWSER_LIMITS.maxFileBytes, 64 * 1024 * 1024);
   assert.equal(typeof modelPackCache.createVerifiedModelPackCache, "function");
   assert.equal(typeof modelPackCache.createMemoryModelPackCacheStorage, "function");
   assert.equal(typeof modelPackCache.createIndexedDbModelPackCacheStorage, "function");

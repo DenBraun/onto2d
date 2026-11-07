@@ -516,7 +516,7 @@ const contracts = {
       "id": "M-phys-crystal-order-source-scope",
       "kind": "method",
       "statement": "Synthesize the finite physical alloy evidence and the separately specified hard-disk equilibrium model while preserving their distinct preparation, dimensionality, readout, uncertainty and interpretation boundaries. Use the alloy study for finite non-Bravais-periodic icosahedral order and protocol-dependent metastability, and the computational study for a positive entropic ordering mechanism with distinct first-order and continuous transitions. Do not transfer the model mechanism, transition densities, symmetry or kinetic clock to the alloy.",
-      "scope": "Two-context literature-synthesis method for original card 2.9.",
+      "scope": "Two-context literature-synthesis method for crystalline structures and phase transitions.",
       "status": "method-contract",
       "citations": [
         {
@@ -572,12 +572,6 @@ const contracts = {
           "locator": "Supplement dated 25 August 2011 pages 10-12, Section V: positional-correlation program and declared configuration-file inputs; read without execution",
           "role": "method",
           "note": "Actually reviewed primary passage; no independent data reconstruction or simulation replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original Level 2 card /9 delimits reconstruction; its labels and defaults are not independent scientific evidence."
         }
       ],
       "checkIds": [],
@@ -587,12 +581,10 @@ const contracts = {
         "Temperature enters the alloy annealing protocols and pressure/density enter the hard-disk equilibrium model. A universal response to arbitrary temperature, pressure, composition or external fields, and a complete phase map, are not established here.",
         "Order parameters and different transition characters are retained positively in the hard-disk study. First-order coexistence is distinct from the continuous hexatic-solid transition; critical behavior and symmetry breaking/restoration are not mandatory for every structural transition.",
         "Elasticity, conductivity, anisotropic transport and other symmetry-governed material responses are not measured by these selected records. The hard-disk discussion of entropic elastic effects is not a new measured material constitutive law.",
-        "Original necessary parents 2.4 ionic interactions, 2.6 dispersion and 2.8 molecular polarization are not universal requirements for the selected hard-disk ordering model. The model does not establish which microscopic contributions stabilize the real Al-Mn alloy.",
-        "Original weights 0.4/0.35/0.25, directions [3], interaction modes [0,1]/[0,1]/[1], dependency type 10 and arising roles have no admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, N_min=N_crit=2 for all parents and null N_sat are catalogue provenance. A disk pair, finite grain or chosen simulation size does not establish a critical number of ions, dispersion carriers, molecular dipoles or a two-unit crystallization threshold.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2,41], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display choices. The SOMA pattern-level/higher-order label is not an independently observed physical entity or causal law.",
-        "Generic original diffraction/neutron/calorimetry/growth and statistical-mechanical placeholders are replaced only by the actual reviewed diffraction/imaging/annealing study and hard-disk calculation. No neutron experiment, latent-heat measurement, all-crystal growth proof or new mathematical universality theorem is supplied.",
-        "Future card 2.15 may reuse these exact source and study records for a bounded phase-regime discussion. This reconstruction does not pre-admit its general coexistence/metastability/critical-point/kinetic-pathway claims.",
+        "Ionic interactions, dispersion and molecular polarization are not universal requirements for the selected hard-disk ordering model. The model does not establish which microscopic contributions stabilize the real Al-Mn alloy.",
+        "A disk pair, finite grain or chosen simulation size does not establish a critical number of ions, dispersion carriers, molecular dipoles or a two-unit crystallization threshold.",
+        "Only the reviewed diffraction/imaging/annealing study and hard-disk calculation are admitted. No neutron experiment, latent-heat measurement, all-crystal growth proof or new mathematical universality theorem is supplied.",
+        "The phase-regime organization scope reuses these exact source and study records for a bounded phase-regime discussion. This reconstruction does not pre-admit its general coexistence/metastability/critical-point/kinetic-pathway claims.",
         "No raw-data refit, diffraction digitization, new alloy growth, atom-coordinate solution, Monte Carlo execution, configuration-file analysis, physical rate inference or independently reproduced experiment is claimed."
       ],
       "contextIds": [
@@ -604,7 +596,7 @@ const contracts = {
       "id": "C-phys-crystal-order-source-scope",
       "kind": "review-finding",
       "statement": "The selected primary diffraction study supports finite icosahedral Al-Mn order that is not explained as a conventional periodic Bravais crystal or its multiple twins, together with protocol-dependent metastability. A separate periodic-box hard-disk study supplies a positive, purely entropic model of collective spatial ordering, first-order liquid-hexatic coexistence and a continuous hexatic-solid transition. These bounded cases support structural ordering and transition distinctions without a universal periodic-lattice requirement, universal critical behavior or a necessary ionic/dispersion/dipole precursor chain.",
-      "scope": "Literature synthesis of two distinct primary contexts, with original card /9 fully dispositioned.",
+      "scope": "Literature synthesis of two distinct primary contexts.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -660,12 +652,6 @@ const contracts = {
           "locator": "Supplement dated 25 August 2011 pages 10-12, Section V: positional-correlation program and declared configuration-file inputs; read without execution",
           "role": "supports",
           "note": "Actually reviewed primary passage; no independent data reconstruction or simulation replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original Level 2 card /9 delimits reconstruction; its labels and defaults are not independent scientific evidence."
         }
       ],
       "checkIds": [],
@@ -675,12 +661,10 @@ const contracts = {
         "Temperature enters the alloy annealing protocols and pressure/density enter the hard-disk equilibrium model. A universal response to arbitrary temperature, pressure, composition or external fields, and a complete phase map, are not established here.",
         "Order parameters and different transition characters are retained positively in the hard-disk study. First-order coexistence is distinct from the continuous hexatic-solid transition; critical behavior and symmetry breaking/restoration are not mandatory for every structural transition.",
         "Elasticity, conductivity, anisotropic transport and other symmetry-governed material responses are not measured by these selected records. The hard-disk discussion of entropic elastic effects is not a new measured material constitutive law.",
-        "Original necessary parents 2.4 ionic interactions, 2.6 dispersion and 2.8 molecular polarization are not universal requirements for the selected hard-disk ordering model. The model does not establish which microscopic contributions stabilize the real Al-Mn alloy.",
-        "Original weights 0.4/0.35/0.25, directions [3], interaction modes [0,1]/[0,1]/[1], dependency type 10 and arising roles have no admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, N_min=N_crit=2 for all parents and null N_sat are catalogue provenance. A disk pair, finite grain or chosen simulation size does not establish a critical number of ions, dispersion carriers, molecular dipoles or a two-unit crystallization threshold.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2,41], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display choices. The SOMA pattern-level/higher-order label is not an independently observed physical entity or causal law.",
-        "Generic original diffraction/neutron/calorimetry/growth and statistical-mechanical placeholders are replaced only by the actual reviewed diffraction/imaging/annealing study and hard-disk calculation. No neutron experiment, latent-heat measurement, all-crystal growth proof or new mathematical universality theorem is supplied.",
-        "Future card 2.15 may reuse these exact source and study records for a bounded phase-regime discussion. This reconstruction does not pre-admit its general coexistence/metastability/critical-point/kinetic-pathway claims.",
+        "Ionic interactions, dispersion and molecular polarization are not universal requirements for the selected hard-disk ordering model. The model does not establish which microscopic contributions stabilize the real Al-Mn alloy.",
+        "A disk pair, finite grain or chosen simulation size does not establish a critical number of ions, dispersion carriers, molecular dipoles or a two-unit crystallization threshold.",
+        "Only the reviewed diffraction/imaging/annealing study and hard-disk calculation are admitted. No neutron experiment, latent-heat measurement, all-crystal growth proof or new mathematical universality theorem is supplied.",
+        "The phase-regime organization scope reuses these exact source and study records for a bounded phase-regime discussion. This reconstruction does not pre-admit its general coexistence/metastability/critical-point/kinetic-pathway claims.",
         "No raw-data refit, diffraction digitization, new alloy growth, atom-coordinate solution, Monte Carlo execution, configuration-file analysis, physical rate inference or independently reproduced experiment is claimed."
       ],
       "contextIds": [
@@ -942,10 +926,6 @@ const contracts = {
         {
           "sourceId": "bernard2011-hard-disks",
           "locator": "Supplement dated 25 August 2011 pages 10-12, Section V: positional-correlation program and declared configuration-file inputs; read without execution"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -954,12 +934,10 @@ const contracts = {
         "Temperature enters the alloy annealing protocols and pressure/density enter the hard-disk equilibrium model. A universal response to arbitrary temperature, pressure, composition or external fields, and a complete phase map, are not established here.",
         "Order parameters and different transition characters are retained positively in the hard-disk study. First-order coexistence is distinct from the continuous hexatic-solid transition; critical behavior and symmetry breaking/restoration are not mandatory for every structural transition.",
         "Elasticity, conductivity, anisotropic transport and other symmetry-governed material responses are not measured by these selected records. The hard-disk discussion of entropic elastic effects is not a new measured material constitutive law.",
-        "Original necessary parents 2.4 ionic interactions, 2.6 dispersion and 2.8 molecular polarization are not universal requirements for the selected hard-disk ordering model. The model does not establish which microscopic contributions stabilize the real Al-Mn alloy.",
-        "Original weights 0.4/0.35/0.25, directions [3], interaction modes [0,1]/[0,1]/[1], dependency type 10 and arising roles have no admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, N_min=N_crit=2 for all parents and null N_sat are catalogue provenance. A disk pair, finite grain or chosen simulation size does not establish a critical number of ions, dispersion carriers, molecular dipoles or a two-unit crystallization threshold.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2,41], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display choices. The SOMA pattern-level/higher-order label is not an independently observed physical entity or causal law.",
-        "Generic original diffraction/neutron/calorimetry/growth and statistical-mechanical placeholders are replaced only by the actual reviewed diffraction/imaging/annealing study and hard-disk calculation. No neutron experiment, latent-heat measurement, all-crystal growth proof or new mathematical universality theorem is supplied.",
-        "Future card 2.15 may reuse these exact source and study records for a bounded phase-regime discussion. This reconstruction does not pre-admit its general coexistence/metastability/critical-point/kinetic-pathway claims.",
+        "Ionic interactions, dispersion and molecular polarization are not universal requirements for the selected hard-disk ordering model. The model does not establish which microscopic contributions stabilize the real Al-Mn alloy.",
+        "A disk pair, finite grain or chosen simulation size does not establish a critical number of ions, dispersion carriers, molecular dipoles or a two-unit crystallization threshold.",
+        "Only the reviewed diffraction/imaging/annealing study and hard-disk calculation are admitted. No neutron experiment, latent-heat measurement, all-crystal growth proof or new mathematical universality theorem is supplied.",
+        "The phase-regime organization scope reuses these exact source and study records for a bounded phase-regime discussion. This reconstruction does not pre-admit its general coexistence/metastability/critical-point/kinetic-pathway claims.",
         "No raw-data refit, diffraction digitization, new alloy growth, atom-coordinate solution, Monte Carlo execution, configuration-file analysis, physical rate inference or independently reproduced experiment is claimed."
       ]
     }
@@ -1232,24 +1210,6 @@ const contracts = {
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "shechtman1984-icosahedral",
       "kind": "research-publication",

@@ -20,8 +20,8 @@ export { MODEL_PACK_ARCHIVE_LIMITS, loadModelPackArchive };
 
 export const MODEL_PACK_DIRECTORY_LIMITS = Object.freeze({
   maxFileCount: 32,
-  maxFileBytes: 16 * 1024 * 1024,
-  maxTotalBytes: 64 * 1024 * 1024
+  maxFileBytes: 64 * 1024 * 1024,
+  maxTotalBytes: 256 * 1024 * 1024
 });
 
 function fail(code, message, details = {}) {

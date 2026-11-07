@@ -33,7 +33,18 @@ does not branch on a model ID. Version comparison remains distinct from model
 selection and requires reviewed lineage.
 
 With no exact release in the URL, the Studio selects
-`causal-emergence@2026.11.04.0`, the current canonical model. The source panels
+`causal-emergence@2026.11.05.0`, the current canonical model. It opens on the
+outer layer of the [arising model](../../docs/architecture/ARISING_MODEL.md):
+
+- The layer filter defaults to arisings, and the focus to the root arising 0.15.
+- The arising table lays out levels by phases. Its domain legend dims the
+  arisings of the other domains.
+- Selecting an arising shows its cell, status, evidence coverage, open cause
+  slots, causes and dependents, technical subgraph and obligations.
+- A technical record links back to the arising that owns it.
+
+These views come from the pack's presentation metadata: the opening layer and
+record, the arising table and the layer facet. The source panels
 show study design, preparations, findings, citations, publication checks and
 interpretation tests. Edge labels and tooltips show the declared relation layer,
 meaning and assertion, including measurement and interpretation dependencies.
@@ -63,8 +74,7 @@ verified release dictionaries. A lazy detail chunk includes the referenced
 evidence once in a shared context; the full inspector resolves the same records
 from its verified dictionaries. Both retain complete reading extents and limits
 without an additional request. Missing or invalid evidence fails before display.
-Historical inline evidence keeps its existing interpretation. The raw record
-panel shows the exact verified release representation.
+The raw record panel shows the exact verified release representation.
 
 The registry also serves independently scoped research-case models. Existing
 case inputs keep their explicit identities.

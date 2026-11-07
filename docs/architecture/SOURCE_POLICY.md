@@ -34,18 +34,14 @@ and study records are stored once in the verified release dictionaries. The full
 inspector resolves these references from that release; lazy detail chunks carry
 the same complete evidence as a shared chunk context. Raw record JSON remains
 exact. Missing references fail instead of borrowing a different preparation.
-Historical releases with inline evidence retain their existing representation.
 
 Store publications, evidence limits and current test obligations with the data.
 Do not store canonical migration tables, editing chronologies, intermediate
-releases or full snapshots of previous source states. The remaining source task
-list records unfinished research only. Preserve supplied manuscripts and actual
-experimental inputs used by research cases.
+releases or full snapshots of previous source states. Preserve supplied
+manuscripts and actual experimental inputs used by research cases.
 
-A source card leaves the pending list when its substantive assertions have
-been supported, qualified or excluded. This does not imply independent
-experimental reproduction. Missing raw data and unresolved source conflicts
-remain explicit limits of the affected claims.
+Missing raw data and unresolved source conflicts remain explicit limits of the
+affected claims.
 
 A speculative assertion can receive an explicit unresolved disposition when
 the missing observations, competing interpretations and withheld conclusions
@@ -57,6 +53,51 @@ pool preparations or become a construction-rule premise. Level-6 topic decisions
 are stored with the canonical review and remain available in the selected
 release's on-demand evidence panel.
 
+A reviewed bridge joins records that separate reviews built apart, inside a
+level or across levels. It is one descriptive relation with its own claim: a
+definition or topic scope that a record uses, a measurement principle that a
+preparation's readout relies on, or a model, result or evaluation boundary
+that a finding is read with. The claim cites the passage actually read; a
+bridge that names a preparation also cites that preparation's own reviewed
+passage. A passage read only for a bridge extends the source's reviewed
+passages without changing the owning ledger's preparations. Bridges are
+admitted only as the exact records of the
+[bridge ledger](../../references/canonical/BRIDGES.md); other ledgers reject
+any further cross-domain relation. A bridge never establishes arising,
+causation, necessity, a construction order between levels, a carrier minimum
+or a weight, and it does not pool preparations. Level-0 bridges keep internal
+definitions, evaluations of a Level-0 hypothesis by a physical record, formal
+identities of a declared equation and the author's proposed correspondences
+apart; a correspondence records the manuscript's reading of a physical notion
+and is not a derivation. A component without a supported bridge stays separate.
+
+The outer layer of the graph is the [arising model](ARISING_MODEL.md). Its
+arisings and causes mirror the author's catalogue, which holds the current state
+only. The vocabulary and the catalogue are bound author sources, and they
+organize the ontology without serving as empirical evidence:
+
+- **Arisings.** Each technical record belongs to the subgraph of exactly one
+  arising on its own level. An arising keeps the author's scientific status, and
+  its evidence coverage is computed from the claims in its subgraph.
+- **Causes.** Each cause enters as an author hypothesis with an obligation drawn
+  from the counterfactual definition of its ontological role. A cause becomes
+  model-supported only by citing a specified model, and supported only by
+  citing published evidence for the stated role. A cause that evidence
+  contradicts leaves the ontology.
+- **Quantities.** Weights and carrier counts stay null until quantitative
+  evidence supports them.
+
+A technical relation, including a bridge, never joins two arisings directly. It
+can serve only as evidence of a cause.
+
+Evidence for a cause comes from a primary study, recorded in the cause evidence
+ledger or in a domain ledger, with the passages actually read. The claim states
+the dependency in the cause's ontological role and the limits of the
+preparation. A correlation, a co-occurrence or a textbook assertion without an
+experiment does not support a cause. Evidence from a model is a method contract
+that cites its method publication, or a derivation checked by bound executable
+code.
+
 Source admission preserves query fields that identify distinct catalogue entries;
 tracking parameters alone do not create a new publication. Declared DOI fields
 and DOI-based source URLs share one publication identity, including when another
@@ -66,8 +107,8 @@ contract. Reusing reviewed evidence does not authorize a new interpretation in
 another ledger; existing reused comparisons retain their reviewed content and
 owning ledger.
 
-Level-7 catalogue provenance belongs to the reviewed social domain even when a record
-uses another domain's identifier or mixes catalogue assertions with an unrelated
+Level-7 source provenance belongs to the reviewed social domain even when a record
+uses another domain's identifier or mixes social-source assertions with an unrelated
 experiment. Renaming a node or borrowing a preparation cannot admit an additional
 unreviewed social claim or physical dependency.
 
@@ -76,12 +117,11 @@ observational associations, specified simulations and constitutive documents.
 A primary document can support a definition of its stated rules, not an
 experimental claim about implementation, compliance or effectiveness. Verified
 historical publication years are permitted; original editions, translations and
-later reprints remain distinct. Each original bibliographic entry has an explicit
-reading disposition. Metadata for an unread book supplies attribution, not a
-mechanism. Laboratory group size, sample size and model parameters are not
-universal social carrier minima or weights. Completing scope decisions for all
-catalogue cards does not close unresolved empirical questions or validate a
-universal sequence of organizational levels.
+later reprints remain distinct. Metadata for an unread book supplies
+attribution, not a mechanism. Laboratory group size, sample size and model
+parameters are not universal social carrier minima or weights. Completing scope
+decisions does not close unresolved empirical questions or validate a universal
+sequence of organizational levels.
 
 For decay measurements, distinguish a total lifetime, a partial-rate limit
 and a ratio of specified channels. Detector spectra, fitted intermediate
@@ -102,8 +142,7 @@ or permanence. Internal propagators and external states retain the declared
 amplitude boundary; a synthetic kinematic check cannot certify a loop
 calculation or an observed population.
 
-The following contracts describe reusable source-analysis APIs used by other
-adapters and cases.
+The following contracts describe reusable source-analysis APIs.
 
 ## Source relation classification policy
 
@@ -125,7 +164,7 @@ acyclicity, or the effect of a label on the quotient graph.
 ## Source node resolution policy
 
 Define general merge and cluster criteria with positive and negative examples.
-The following criterion is forbidden: “merge these cards because doing so
+The following criterion is forbidden: “merge these records because doing so
 removes a cycle.” Component size and resemblance to the foundational paper are
 diagnostics only.
 
@@ -248,143 +287,6 @@ Annotation freeze, adjudication freeze, and unblinding instants must be in that
 order. Timestamps use canonical UTC milliseconds and are caller-supplied
 provenance, not a trusted clock attestation.
 
-<a id="classified-relations-and-scc-projections"></a>
-
-## Classified relations and SCC projections
-
-The catalogue adapter exposes two content-addressed constructors.
-
-<a id="classified-relations-and-scc-projections--classification-view"></a>
-
-#### Classification view
-
-`createSourceClassificationView`, versioned as
-`source-classification-view-v1`, creates the only relation payload eligible for
-annotation. It reproduces the frozen classification policy and requires:
-
-- a unique relation ID and normalized source/target endpoint for every entry;
-- exactly the policy's visible local fields and no additional fields;
-- membership of every field name in the kernel's closed visible-field
-  vocabulary;
-- explicit `source` and `target` visibility in the policy;
-- equality between visible endpoint fields and the structural endpoints;
-- canonical relation/field ordering before hashing in
-  `onto2d:source-classification-view:v1`.
-
-This makes endpoint substitution or hidden SCC/cycle fields change or fail the
-view identity. The adapter constructs the payload; authenticating users and
-delivering it through an access-controlled UI remain application concerns.
-
-<a id="classified-relations-and-scc-projections--classified-relations-and-sccs"></a>
-
-#### Classified relations and SCCs
-
-`buildSourceClassifiedRelations`, versioned as
-`source-classified-relations-v1`, accepts only a reproducible policy, view,
-annotation artifact, and adjudication artifact. Every upstream hash and the
-complete canonical content are rechecked.
-
-The output contains every view relation exactly once with its source, target,
-final kind, agreement/adjudication status, and preserved raw kinds. It computes
-two directed partitions over every endpoint in the relation inventory:
-
-- `generative`, containing only `generative` relations;
-- `formation-support`, containing `generative`, `constitutive`, and
-  `intra-closure-support` relations.
-
-SCC traversal order, relation order, annotation order, and decision order do
-not affect the result. Every component records sorted members, sorted internal
-relation IDs, and whether it is cyclic. A singleton with a projected self-loop
-is cyclic. Component identity is hashed in
-`onto2d:source-scc-component:v1` over the projection name, members, and complete
-internal typed endpoint relations, not merely over relation IDs. The complete
-artifact is hashed in `onto2d:source-classified-relations:v1`.
-
-<a id="reviewed-source-resolution-and-lossless-condensation"></a>
-
-## Reviewed source resolution and lossless condensation
-
-`@onto2d/catalog-adapter` implements two fully replayable artifacts:
-
-- `source-node-resolution-v1`;
-- `source-condensation-v1`.
-
-Resolution first reproduces the complete classification policy, visible view,
-annotations, adjudication, and classified-relation projection. It also
-reproduces the frozen node-resolution policy. The caller must provide:
-
-- a complete source-node inventory, including isolated records, with one
-  normalized identity hash and source `ArtifactRef` per record;
-- exactly one reviewed disposition and rationale artifact for every
-  multi-member cyclic formation-support component;
-- exactly one reviewed destination for every classified relation.
-
-The adapter derives the partition; callers cannot submit arbitrary cluster
-members. Every multi-member cyclic component becomes one content-addressed
-cluster vertex. A projected singleton self-loop remains one source vertex but
-has undefined internal order. Every other source record maps to one individual
-vertex, including records absent from all relation endpoints.
-
-Relation destinations are checked against typed endpoints:
-
-- a formation-support relation whose endpoints resolve to one vertex is
-  `internal`;
-- an inter-vertex `generative` relation is `inter-cluster`;
-- every other relation is `typed-explanation`.
-
-This check prevents a reviewed destination from hiding a generative dependency
-or converting a non-generative relation into stratification precedence. The
-resolution records every relation exactly once and reconciles every source
-node exactly once.
-
-Condensation retains all six relation-kind layers, including internal and
-nonformation relations. Its quotient contains only inter-vertex generative
-edges and must admit a deterministic complete topological order. A cyclic
-quotient fails closed. Vertex identities bind normalized member identities,
-complete internal typed relations, disposition, and node-resolution policy;
-artifact timestamps and reviewer identities remain provenance.
-
-Both artifacts use separate hash domains and exact serialized replay. Input
-ordering, SCC traversal order, decision order, and relation order cannot change
-their identities. JSON Schemas and TypeScript declarations cover both results.
-
-<a id="source-migration-reconciliation-diagnostics"></a>
-
-## Source migration reconciliation diagnostics
-
-`@onto2d/catalog-adapter` implements
-`source-migration-reconciliation-v1`. It fully replays the policy, view,
-annotations, adjudication, classified relations, node-resolution policy,
-resolution, and condensation before deriving any diagnostic.
-
-The report records:
-
-- raw all-relation nontrivial SCC membership, relation references, complete
-  size histogram, largest size, and reciprocal-dyad count;
-- the six classified edge counts, blindness status, disagreement statistics,
-  and generative/formation-support cyclic-component counts;
-- resolved vertex/cluster counts, constitutive-cluster sizes, clustered source
-  share, and exact relation-destination counts;
-- the share of raw SCCs that no longer remain one strongly connected component
-  in the formation-support projection, including the stricter share restored
-  by adding only descriptive edges;
-- available precommitted risk-threshold comparisons;
-- explicit true node/edge/quotient reconciliation invariants.
-
-A raw SCC counts as descriptively resolved only when its exact member set is
-strongly connected in the raw graph and in the formation-plus-descriptive
-projection, but not in formation support alone. Smaller surviving formation
-SCCs do not cause the original raw component to be mislabeled as unchanged.
-Singleton self-loops are preserved elsewhere but are not included in the raw
-“nontrivial SCC” histogram, matching the repository catalogue audit.
-
-The report uses a dedicated hash domain and exact serialized replay. A verified
-amendment-log snapshot and its frozen post-unblinding threshold signal are
-mandatory. A non-empty log requires a new effective
-projection and is rejected rather than paired with stale resolution artifacts;
-Effective source-classification reprojection provides that projection and amendment-aware downstream replay.
-The report still cannot be presented as the complete migration result.
-
 <a id="post-unblinding-classification-amendments"></a>
 
 ## Post-unblinding classification amendments
@@ -411,137 +313,7 @@ The freezer:
 7. hashes the complete amendment snapshot under its own domain.
 
 An empty log is meaningful: it attests that no post-unblinding changes were
-recorded through its `frozenAt` instant. Source reconciliation diagnostics now
-require such a verified log. A non-empty log cannot be paired with a
-condensation made from the old kinds; it fails with
-`SOURCE_MIGRATION_REPROJECTION_REQUIRED`. Effective source-classification reprojection supplies the separately
-versioned effective projection; callers must still supply reviewed downstream
-decisions for any changed SCC identities or destinations.
-
-<a id="effective-source-classification-reprojection"></a>
-
-## Effective source-classification reprojection
-
-`@onto2d/catalog-adapter` implements
-`source-effective-classified-relations-v1`. Its constructor exactly replays:
-
-1. the frozen policy, visible classification view, annotations, and
-   adjudication;
-2. the original `source-classified-relations-v1` projection;
-3. the immutable amendment log and every per-relation state chain.
-
-For every source relation the effective artifact retains the frozen kind,
-blind decision status, raw classifier kinds, final state hash, and ordered
-change identities while exposing the effective kind used downstream. The
-artifact binds the original projection and amendment-log hashes, recomputes
-the generative and formation-support SCCs from effective kinds, records
-effective counts, and receives a separate content identity under
-`onto2d:source-effective-classified-relations:v1`.
-
-The existing reviewed resolution and condensation algorithms may consume
-either the frozen projection or the effective projection. An effective
-projection requires its amendment log during exact replay. Conversely, a
-non-empty log cannot accompany the frozen projection. Any changed SCC
-identities, component membership, relation destinations, vertices, quotient,
-or topological order therefore require new reviewed downstream inputs and
-produce new hashes. Empty amendment logs remain compatible with the original
-projection and may also be represented by an effective projection.
-
-Migration reconciliation accepts effective projections, verifies the full
-amendment-aware chain, and reports metrics over current effective kinds. If a
-non-empty log is paired with the frozen projection, it still fails explicitly
-with `SOURCE_MIGRATION_REPROJECTION_REQUIRED`.
-
-<a id="complete-source-migration-metrics"></a>
-
-## Complete source-migration metrics
-
-`@onto2d/catalog-adapter` implements `source-migration-metrics-v1`. The
-constructor exactly verifies the complete reconciliation report and all of its
-upstream policy, annotation, amendment, projection, resolution, and
-condensation inputs. The caller then supplies:
-
-- exactly one primary-resolution record and rationale `ArtifactRef` for every
-  raw nontrivial SCC in the verified report;
-- exactly one non-negative source-catalogue level for every reconciled source
-  node, including isolated records.
-
-Raw-component members and edge identities are always derived from the report;
-callers cannot replace them. If all members resolve into one reviewed cluster,
-the primary resolution and `resultingCluster` must exactly match the cluster's
-reviewed disposition. If members resolve to multiple vertices, the record must
-state nonformation-layer separation, except when replay proves that a
-post-unblinding change converted a formerly strongly connected formation
-projection into a separated effective projection. In that case the primary
-resolution must explicitly state post-unblinding reclassification.
-
-The adapter derives the full architecture metric set, including raw counts and
-histograms, all six effective edge counts, blindness/disagreement/change
-signals, complete dispositions, resolution shares, cluster counts,
-cross-catalogue-level clusters, clustered-source share, and fitting-risk
-reasons. It hashes the frozen risk-policy subset separately and hashes the
-complete artifact under `onto2d:source-migration-metrics:v1`.
-
-<a id="source-migration-explanation-index"></a>
-
-## Source-migration explanation indexing
-
-`@onto2d/catalog-adapter` implements
-`source-migration-explanation-index-v1`. Construction exactly replays the
-complete source-migration metric chain and binds the policy, amendments, projection,
-resolution, condensation, reconciliation, and metrics identities.
-
-The index contains:
-
-- one record per source node with normalized source identity/artifact, source
-  catalogue level, resolved vertex and cluster disposition, all co-members,
-  raw-SCC membership, and sorted incoming/outgoing source relations;
-- one record per source relation with endpoints, frozen and effective kinds,
-  blind decision status and raw kinds, amendment state/change identities,
-  resolved endpoint vertices, typed destination, and raw-SCC membership;
-- every complete raw-SCC disposition and rationale already verified by the
-  migration metrics artifact.
-
-All inventories and statistics are derived from verified upstream artifacts,
-sorted canonically, and hashed under
-`onto2d:source-migration-explanation-index:v1`.
-
-Serialized indexes must be replayed before lookup. The adapter exposes a bound
-in-memory session which performs that replay once and then accepts only exact
-queries for `source-node`, `source-relation`, or `raw-component`. Every result
-binds the index hash and query and is independently content-addressed under
-`onto2d:source-migration-explanation:v1`. Missing or malformed queries fail
-explicitly.
-
-<a id="source-cluster-concentration"></a>
-
-## Source-cluster concentration
-
-`@onto2d/catalog-adapter` implements `source-cluster-concentration-v1`. It
-first exactly replays the complete migration-metrics chain. The caller then
-supplies:
-
-- a versioned bottleneck definition, canonical freeze time, statement,
-  exposure declaration, content-addressed definition artifact, and explicit
-  concentrated/depleted enrichment thresholds that bracket one;
-- an assertion that cluster locations were not inspected before the
-  definition was frozen;
-- one unique point per kernel depth with its `depthBasis`, total
-  stratification-vertex count, bottleneck label, and the complete subset of
-  reviewed source-resolution vertex IDs mapped to that depth.
-
-Every reviewed source vertex must occur at exactly one point. The declared
-stratification population must be at least as large as its source-vertex
-subset. The adapter derives, per point, the constitutive-cluster count/density,
-source-record count, constitutive-member count/share, and then pools member
-shares over bottleneck versus non-bottleneck depths.
-
-`enrichmentRatio` is bottleneck share divided by non-bottleneck share. A zero
-or missing denominator produces `null` and `indeterminate`, never infinity.
-Otherwise the independently frozen thresholds select `concentrated`,
-`depleted`, or `uniform`. The result records `nullModel.status = "not-run"`;
-it does not fabricate the optional seeded permutation baseline. The definition
-and complete result receive separate content identities.
+recorded through its `frozenAt` instant.
 
 <a id="closed-source-migration-package-and-run-binding"></a>
 
@@ -576,37 +348,14 @@ and add `normalized-input/source-migration.json` as a sixteenth input artifact;
 packages without a migration retain the original fifteen-input manifest.
 
 The loader does not claim that an `ArtifactRef` proves the scientific content
-of unavailable bytes. The catalogue adapter remains responsible for exact
-upstream replay and node/edge conservation before an application constructs
-this package manifest. Authorship, access-controlled annotation, reviewed
-dispositions, and application to the current catalogue remain external
-research/application inputs rather than pending kernel algorithms.
+of unavailable bytes. Exact upstream replay and node/edge conservation remain
+the responsibility of the application that constructs this package manifest.
+Authorship, access-controlled annotation, and reviewed dispositions remain
+external research/application inputs rather than pending kernel algorithms.
 
-<a id="adapter-owned-source-explanations-and-closed-kernel-registry"></a>
+<a id="candidate-explanations-and-closed-kernel-registry"></a>
 
-## Adapter-owned source explanations and closed kernel registry
-
-Source-migration explanation construction, verification, and lookup remain
-owned by `@onto2d/catalog-adapter`:
-
-```js
-const session = createSourceMigrationExplanationSession(
-  classificationPolicy,
-  classificationView,
-  annotations,
-  adjudication,
-  amendments,
-  classifiedRelations,
-  nodeResolutionPolicy,
-  resolution,
-  condensation,
-  reconciliation,
-  metrics,
-  explanationIndex
-);
-
-const explanation = session.explain({ kind: "source-node", id: sourceId });
-```
+## Candidate explanations and closed kernel registry
 
 Candidate explanation lookup uses a kernel instance because its complete
 semantic inputs and explanation indexes are embedded in a verified kernel
@@ -615,5 +364,5 @@ run-artifact store. Unsupported inputs produce stage-specific errors.
 The kernel capability registry excludes adapter algorithms and authored
 research/application inputs as pending kernel work. Its pending list is empty.
 This means the published schema-v1 kernel API has no known placeholder
-operation; it does not claim that current-catalogue research inputs, remote
+operation; it does not claim that source-migration research inputs, remote
 stores, user interfaces, or deployment applications already exist.

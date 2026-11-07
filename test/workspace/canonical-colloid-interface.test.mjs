@@ -131,7 +131,7 @@ test("screened pair energy retains finite-sphere amplitude, separation, charge a
 
 test("release trajectories stay distinct from stationary-distribution and potential inference", async () => {
   const data = await source();
-  assert.match(claim(data, pairContext).statement, /radius326 nm.*796 pair trajectories/);
+  assert.match(claim(data, pairContext).statement, /radius 326 nm.*796 pair trajectories/);
   assert.match(claim(data, pairContext).statement, /57 nm bins.*1\/30 s.*6502 initial\/final separation samples/);
   assert.match(claim(data, pairMethod).statement, /stationary probability vector.*U=-kB\*T\*log\(p_eq\)/);
   await rejects([
@@ -172,15 +172,15 @@ test("effective-charge and screening fits preserve uncertainty, shared data and 
 test("PMMA preparation and local-order connections do not become exact hard spheres or chemical bonds", async () => {
   const data = await source();
   assert.match(claim(data, nucleusContext).statement, /sterically stabilized.*a=1\.26 micrometres.*small charge/);
-  assert.match(claim(data, nucleusContext).statement, /Shear melt.*50 microlitre.*58 by55 by20.*4000/);
+  assert.match(claim(data, nucleusContext).statement, /Shear melt.*50 microlitre.*58 by 55 by 20.*4000/);
   await rejects([
     ["the dye-associated charge cannot be erased by declaring an exact hard-sphere experiment", (changed) =>
       replaceStatement(changed, nucleusContext, "nearly hard spheres rather than an exact hard-sphere model",
         "an exact uncharged hard-sphere model")],
     ["packing-reference calibration is not an independent absolute radius measurement", (changed) =>
-      dropLimit(changed, nucleusContext, "assigned random-close-packed0.64 and rhcp0.74")],
-    ["l6 neighbor thresholds and8 connections cannot become chemical bonds or universal minima", (changed) =>
-      dropLimit(changed, nucleusContext, "at least8 crystal-like bonds")],
+      dropLimit(changed, nucleusContext, "assigned random-close-packed 0.64 and rhcp 0.74")],
+    ["l6 neighbor thresholds and 8 connections cannot become chemical bonds or universal minima", (changed) =>
+      dropLimit(changed, nucleusContext, "at least 8 crystal-like bonds")],
     ["the critical nucleus cannot borrow the dilute water-pair preparation", (changed) => {
       claim(changed, nucleusResult).contextIds = [pairStudy];
     }],
@@ -191,18 +191,18 @@ test("PMMA preparation and local-order connections do not become exact hard sphe
 
 test("finite nucleus tracking preserves its unspecified sampling denominator and post-shear limits", async () => {
   const data = await source();
-  const sampling = claim(data, nucleusContext).limitations.find((limit) => limit.includes("note27"));
+  const sampling = claim(data, nucleusContext).limitations.find((limit) => limit.includes("note 27"));
   assert.match(sampling, /1500-2500 fully visible tracked nuclei per typical measurement/);
   assert.match(sampling, /without specifying its duration, frame count or unique-track\/repeated-observation accounting/);
   assert.match(sampling, /not a simultaneous population or a known number of independent events/);
-  assert.match(claim(data, nucleusResult).statement, /fraction0\.47.*60<M<160.*spherical-equivalent/);
-  assert.match(claim(data, nucleusResult).statement, /20,43,66 and89 minutes after shear melting/);
+  assert.match(claim(data, nucleusResult).statement, /fraction 0\.47.*60<M<160.*spherical-equivalent/);
+  assert.match(claim(data, nucleusResult).statement, /20, 43, 66 and 89 minutes after shear melting/);
   await rejects([
     ["the source nucleus count cannot become a simultaneous population or known independent sample size", (changed) =>
       dropLimit(changed, nucleusContext, "unique-track/repeated-observation accounting")],
     ["immediate post-shear growth cannot establish globally equilibrated nucleation", (changed) =>
       dropLimit(changed, nucleusContext, "little equilibration time")],
-    ["the finite critical range is not a universal2-particle carrier threshold", (changed) =>
+    ["the finite critical range is not a universal 2-particle carrier threshold", (changed) =>
       replaceStatement(changed, nucleusResult, "60<M<160 particles", "M=2 particles for all colloidal systems")],
     ["visibility and local classifier are essential to the reported critical range", (changed) =>
       dropLimit(changed, nucleusResult, "conditional on the local-order classifier")],
@@ -217,7 +217,7 @@ test("interfacial free energy remains a small-nucleus statistical fit with diffu
   const data = await source();
   assert.match(claim(data, stability).statement, /4\*pi\*r\^2\*gamma-\(4\*pi\/3\)\*r\^3\*n\*DeltaMu/);
   assert.match(claim(data, interfaceMethod).statement, /r much less than rc.*exp\[-A\*gamma\/\(kB\*T\)\].*ellipsoidal geometry/);
-  assert.match(claim(data, interfaceResult).statement, /0\.027\*kB\*T\/a\^2.*fraction0\.445.*0\.026\*kB\*T\/a\^2/);
+  assert.match(claim(data, interfaceResult).statement, /0\.027\*kB\*T\/a\^2.*fraction 0\.445.*0\.026\*kB\*T\/a\^2/);
   await rejects([
     ["surface cost competes with rather than reinforces the bulk growth term", (changed) =>
       replaceStatement(changed, stability, "gamma-(4*pi/3)", "gamma+(4*pi/3)")],
@@ -269,29 +269,20 @@ test("joint interpretation retains both full contexts and one shared Gasser acqu
   ]);
 });
 
-test("original defaults and reading provenance cannot acquire scientific authority", async () => {
+test("precursor, counting-domain and source-reading limits cannot acquire scientific authority", async () => {
   const data = await source();
-  const legacy = claim(data, synthesis).citations.find((item) => item.sourceId === "legacy-2");
-  assert.equal(legacy.role, "provenance");
-  assert.equal(legacy.locator, "/");
-  assert.match(legacy.note, /Original catalogue JSON pointer: \/13/);
   assert.match(publication(data, pairStudy).review.extent, /full-published-scientific-main-text/);
   assert.match(publication(data, pairStudy).review.limit, /private communications.*complete DLVO/);
   assert.match(publication(data, nucleusStudy).review.limit, /Unrelated preceding references.*following photoexcited-molecule/);
   await rejects([
-    ["original parent fractions are not measured causal weights", (changed) =>
-      dropLimit(changed, synthesis, "not measured causal fractions")],
-    ["original carrier minima are not validated critical populations", (changed) =>
-      dropLimit(changed, synthesis, "N_min=N_crit=2")],
-    ["catalogue SOMA labels are not independently measured physical stages", (changed) =>
-      dropLimit(changed, synthesis, "catalogue classifications")],
+    ["neither molecular dipoles nor pre-existing crystallinity is necessary for every dispersion or interface", (changed) =>
+      dropLimit(changed, synthesis, "Neither permanent molecular dipoles nor pre-existing crystallinity")],
+    ["pair, bond, imaged-particle and critical-nucleus counts remain different domains", (changed) =>
+      dropLimit(changed, synthesis, "60<M<160 critical nuclei count different domains")],
     ["real emulsions and transport cannot be derived merely from a pair force", (changed) =>
       dropLimit(changed, synthesis, "Real droplets, controlled emulsions")],
     ["unread historical originals and private communications cannot silently become primary evidence", (changed) =>
-      dropLimit(changed, synthesis, "original1941/1948 DLVO works")],
-    ["legacy catalogue vocabulary is provenance rather than experimental support", (changed) => {
-      claim(changed, synthesis).citations.find((item) => item.sourceId === "legacy-2").role = "supports";
-    }, /Colloid|colloid|provenance|Catalogue|catalogue|primary particle evidence/],
+      dropLimit(changed, synthesis, "original 1941/1948 DLVO works")],
     ["the selected source reading cannot silently become a locally reproduced dataset", (changed) => {
       publication(changed, nucleusStudy).review.extent = "raw-confocal-data-independent-reproduction";
     }]

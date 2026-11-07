@@ -67,7 +67,13 @@ export function calculateDirectedUnitForman(projection) {
     nodes,
     edges,
     summary,
-    groups: {
+    // Policies that type edges by relation role summarize roles; the others summarize dependency typing.
+    groups: projection.policy.edgeAttributes.includes("role") ? {
+      bySourceLevel: group(edges, (edge) => nodeAttributes.get(edge.source), "level"),
+      byTargetLevel: group(edges, (edge) => nodeAttributes.get(edge.target), "level"),
+      byRelationLayer: group(edges, (edge) => edgeAttributes.get(edge.id), "relationLayer"),
+      byRole: group(edges, (edge) => edgeAttributes.get(edge.id), "role")
+    } : {
       bySourceLevel: group(edges, (edge) => nodeAttributes.get(edge.source), "level"),
       byTargetLevel: group(edges, (edge) => nodeAttributes.get(edge.target), "level"),
       byDependencyType: group(edges, (edge) => edgeAttributes.get(edge.id), "dependencyType"),

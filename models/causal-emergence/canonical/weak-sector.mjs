@@ -103,7 +103,7 @@ const contracts = {
           "Page 1, Section 50.1: isolated narrow-resonance interpretation and limits from thresholds, backgrounds and broad resonances",
           "Page 10, opening of Section 50.2, Equation 50.20 and the following two paragraphs: energy-plane pole mass/width, threshold-qualified lifetime relation and partial-width caution"
         ],
-        "limit": "Read Section 50.1 on page1 and the opening of Section 50.2 on page 10 through the two paragraphs following Equation 50.20; visually checked the page 10 pole definition and qualifications. Revised August 2025; inspected edition footer 1 December 2025. No chapter-specific DOI is asserted. The remaining scattering theory, residues, coupled-channel constructions and example data analyses are not reviewed. The formal pole definition is not a W/Z line-shape or time-domain experimental reconstruction."
+        "limit": "Read Section 50.1 on page 1 and the opening of Section 50.2 on page 10 through the two paragraphs following Equation 50.20; visually checked the page 10 pole definition and qualifications. Revised August 2025; inspected edition footer 1 December 2025. No chapter-specific DOI is asserted. The remaining scattering theory, residues, coupled-channel constructions and example data analyses are not reviewed. The formal pole definition is not a W/Z line-shape or time-domain experimental reconstruction."
       }
     },
     {
@@ -179,7 +179,7 @@ const contracts = {
       "limitations": [
         "Field assignments, spin-one and charge labels, chiral representations and the CKM matrix are model inputs. They are not independent spin or coupling measurements, a generated chirality or a derivation of the mass hierarchy. Neutrino mixing or masses require their separately specified extension; the minimal charged-current convention here does not supply that mechanism.",
         "Massive vector fields have three physical polarizations in the stated broken-phase description. The absence of a tree-level flavor-changing Z vertex does not exclude loop-induced flavor-changing neutral processes or nonminimal interactions.",
-        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Generic arising or maintenance necessity is not admitted."
       ]
     },
     {
@@ -207,7 +207,7 @@ const contracts = {
         "Use the leading low-energy tree approximation with light external fermions and |q^2| much smaller than M_W^2 or M_Z^2, away from the resonance. The scalar denominator alone omits vector numerators, external currents, longitudinal/Goldstone terms and radiative corrections needed for a complete gauge-consistent amplitude. It is not a production cross section, an on-shell W/Z event or an instantaneous action rule.",
         "Beta decay and charged-current flavor change use the charged current; neutral-current neutrino scattering uses the neutral current. Actual hadronic/nuclear matrix elements, flavor parameters, kinematic cuts and detector response are separate inputs. Short-range denotes this massive-exchange/low-energy description, not a universal sharp distance cutoff or a population of virtual mediator particles.",
         "The Fermi relation is a tree-level parameter identity, not a fresh measurement of G_F or a precision electroweak input-scheme conversion. The formal expansion is not an executable scientific check.",
-        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Generic arising or maintenance necessity is not admitted."
       ]
     },
     {
@@ -275,7 +275,7 @@ const contracts = {
         "The exponential rest-frame approximation applies to an isolated resonance with relevant thresholds well below it; it is not an exact survival law at every time or for broad/threshold-dominated states. A width-derived timescale is not a directly timed W/Z decay or an independent experiment.",
         "The energy-plane width Gamma_E=-2*Im(sqrt(s_R)) is distinct from a constant squared-mass-pole parameter defined by s_R=Mbar^2-i*Mbar*Gammabar; identifying them uses a narrow-width approximation. A running-width line-shape parameter is another convention requiring an explicit conversion. No numerical lifetime, pole conversion or width extraction is performed here.",
         "Gamma values here have energy units; the corresponding decay rate is Gamma/hbar in inverse time. This must not silently redefine the inverse-time channel rate in the existing partial-lifetime convention. Branching fractions are dimensionless and refer to the same inclusive channel partition and total-width convention.",
-        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Generic arising or maintenance necessity is not admitted."
       ]
     }
   ],
@@ -299,7 +299,7 @@ const contracts = {
       "openObligations": [
         "Field assignments, spin-one and charge labels, chiral representations and the CKM matrix are model inputs. They are not independent spin or coupling measurements, a generated chirality or a derivation of the mass hierarchy. Neutrino mixing or masses require their separately specified extension; the minimal charged-current convention here does not supply that mechanism.",
         "Massive vector fields have three physical polarizations in the stated broken-phase description. The absence of a tree-level flavor-changing Z vertex does not exclude loop-induced flavor-changing neutral processes or nonminimal interactions.",
-        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Generic arising or maintenance necessity is not admitted."
       ]
     },
     {
@@ -326,7 +326,7 @@ const contracts = {
         "Use the leading low-energy tree approximation with light external fermions and |q^2| much smaller than M_W^2 or M_Z^2, away from the resonance. The scalar denominator alone omits vector numerators, external currents, longitudinal/Goldstone terms and radiative corrections needed for a complete gauge-consistent amplitude. It is not a production cross section, an on-shell W/Z event or an instantaneous action rule.",
         "Beta decay and charged-current flavor change use the charged current; neutral-current neutrino scattering uses the neutral current. Actual hadronic/nuclear matrix elements, flavor parameters, kinematic cuts and detector response are separate inputs. Short-range denotes this massive-exchange/low-energy description, not a universal sharp distance cutoff or a population of virtual mediator particles.",
         "The Fermi relation is a tree-level parameter identity, not a fresh measurement of G_F or a precision electroweak input-scheme conversion. The formal expansion is not an executable scientific check.",
-        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Generic arising or maintenance necessity is not admitted."
       ]
     },
     {
@@ -388,7 +388,7 @@ const contracts = {
         "The exponential rest-frame approximation applies to an isolated resonance with relevant thresholds well below it; it is not an exact survival law at every time or for broad/threshold-dominated states. A width-derived timescale is not a directly timed W/Z decay or an independent experiment.",
         "The energy-plane width Gamma_E=-2*Im(sqrt(s_R)) is distinct from a constant squared-mass-pole parameter defined by s_R=Mbar^2-i*Mbar*Gammabar; identifying them uses a narrow-width approximation. A running-width line-shape parameter is another convention requiring an explicit conversion. No numerical lifetime, pole conversion or width extraction is performed here.",
         "Gamma values here have energy units; the corresponding decay rate is Gamma/hbar in inverse time. This must not silently redefine the inverse-time channel rate in the existing partial-lifetime convention. Branching fractions are dimensionless and refer to the same inclusive channel partition and total-width convention.",
-        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Original parent weights, universal carrier minima, SOMA type/phase order and generic arising or maintenance necessity are not admitted."
+        "W/Z denote unstable resonance species or field excitations in these descriptions, not stable asymptotic carrier units, bounded objects with persistent classical tracks or an observed field-formation sequence. Generic arising or maintenance necessity is not admitted."
       ]
     }
   ],

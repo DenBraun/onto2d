@@ -64,7 +64,6 @@ test("field anisotropy admits an interpretation boundary without a new empirical
     const publication = data.graph.sources.find((record) => record.id === citation.sourceId);
     assert.ok(publication.review.locators.includes(citation.locator),
       "Every interpretation citation remains within its explicitly reviewed source extent");
-    if (publication.kind === "legacy-catalogue") assert.equal(citation.role, "provenance");
     if (publication.kind === "internal-review") assert.equal(citation.role, "limits");
   }
 });
@@ -87,15 +86,13 @@ test("directional field questions retain their observable, preparation and model
   ]);
 });
 
-test("framework, evolution and vacuum parents do not become anisotropy causes or carrier thresholds", async () => {
+test("framework, evolution and vacuum dependencies do not become anisotropy causes", async () => {
   const inputs = admission.formalDependencies.map(([, [from]]) => from);
   assert.deepEqual(inputs, ["scalar-dispersion-isotropy", "quantum-field-framework",
     "free-field-time-evolution", "free-field-vacuum"].map((id) => `phys:${id}`));
   await rejects([
     ["free field stationarity cannot establish every vacuum rotational symmetry", (data) =>
-      dropLimit(data, /Original parent 1\.0 supplies/)],
-    ["source-card weights, minima and organizational codes lack physical authority", (data) =>
-      dropLimit(data, /original weights 0\.30/)],
+      dropLimit(data, /quantum-field-architecture dependency supplies only/)],
     ...admission.formalDependencies.flatMap(([id]) => [
       [`formal input ${id} is not a causal intervention`, (data) => {
         data.graph.relations.find((record) => record.id === id).kind = "functional";
@@ -107,7 +104,7 @@ test("framework, evolution and vacuum parents do not become anisotropy causes or
   ]);
 });
 
-test("the unresolved directional gradient and neighboring source cards cannot mutually validate a physical bridge", async () => {
+test("the unresolved directional gradient and neighboring polarization or excitation labels cannot mutually validate a physical bridge", async () => {
   assert.ok(admission.formalDependencies.every(([, endpoints]) =>
     endpoints.every((id) => !id.startsWith("l0:"))), "No Level-0 physical construction edge is admitted");
   const data = await source();
@@ -116,7 +113,7 @@ test("the unresolved directional gradient and neighboring source cards cannot mu
     "hypothesis");
   await rejects([
     ["an undefined gradient cannot become a field observable or prediction", (copy) =>
-      dropLimit(copy, /Parent 0\.22 remains/)],
+      dropLimit(copy, /directional-gradient proposal remains unresolved/)],
     ["polarization and excitation labels cannot provide reciprocal support", (copy) =>
       dropLimit(copy, /Polarization response and directional excitation stability/)],
     ["the Fock vacuum dependency cannot be replaced by an unreviewed physical gradient", (copy) => {
@@ -126,15 +123,12 @@ test("the unresolved directional gradient and neighboring source cards cannot mu
   ]);
 });
 
-test("evidence placeholders and unrelated directional phenomena cannot establish vacuum anisotropy", async () => {
+test("absent primary sources and unrelated directional phenomena cannot establish vacuum anisotropy", async () => {
   await rejects([
-    ["unnamed theoretical placeholders cannot become a primary experimental source", (data) =>
-      dropLimit(data, /original conceptual and theoretical evidence placeholders/)],
+    ["the record supplies no primary source or experiment for vacuum-sensitive anisotropy", (data) =>
+      dropLimit(data, /No primary source for the proposed vacuum-sensitive anisotropy/)],
     ["polarization, parity, nonreciprocity and scale running do not automatically identify spatial anisotropy", (data) =>
       dropLimit(data, /Polarization, parity violation, nonreciprocity/)],
-    ["provenance cannot be upgraded to scientific confirmation", (data) => {
-      claim(data).citations.find((record) => record.sourceId === "legacy-0").role = "supports";
-    }],
     ["source reading cannot acquire an invented experimental preparation", (data) => {
       claim(data).contextIds = ["phys:field-anisotropy-experiment"];
     }]

@@ -6,7 +6,7 @@ import { run, verifyReferenceSources } from "../../../cases/structural-geometry/
 import { readJson } from "../../../cases/structural-geometry/responses/fixtures.mjs";
 
 test("all response goldens replay after independent exhaustive targets, graph effects and 341 aggregation profiles", async () => {
-  const suite = await run(); assert.equal(suite.runs.length, 16); assert.equal(suite.census.targets, 1438);
+  const suite = await run(); assert.equal(suite.runs.length, 15); assert.equal(suite.census.targets, 1438);
 });
 test("response reference verification rejects omitted or changed source and dependency bindings", async () => {
   const original = await readJson("reference.json");

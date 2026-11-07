@@ -96,61 +96,6 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       }
     },
     {
-      "id": "legacy-1",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 1 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-1.json",
-      "sha256": "b1bc5f0fe4b9741f57807d24b638b26a75b2b6e77a32c44b3f3711c8fd30a91a",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/",
-          "/0/Description"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "litvinov2007-pr-ec",
       "kind": "research-publication",
       "title": "Measurement of the beta+ and Orbital Electron-Capture Decay Rates in Fully Ionized, Hydrogenlike, and Heliumlike 140Pr Ions",
@@ -211,7 +156,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "Author manuscript arXiv:0711.3709v1 page 3, Table I and adjoining rate-comparison paragraphs: charge-state-specific rest-frame beta+/EC constants, reported 1.49(8) ratio and mean loss term",
           "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor"
         ],
-        "limit": "Actual four-page author manuscript arXiv:0711.3709v1 dated 23 November 2007, linked by the repository and author institution GSI record 54473 to Phys. Rev. Lett. 99(26),262501. Read scientific text on pages 1-4, Figures 1-3, Equations 1-2 and Table I; visually checked manuscript pages 3-4 including the rate table, population equations and hyperfine diagram. Publisher title/DOI/date/authors/abstract and Crossref metadata were checked; final publisher full text was not accessible, so no page-for-page final-version identity is claimed. The references on other isotopes, neutral-atom X-ray experiments, hyperfine lifetimes and general stellar applications are not separately admitted primary studies. No raw Schottky time series, new rate fit, hyperfine population measurement, nuclear magnetic-moment measurement or numerical replay was performed."
+        "limit": "Actual four-page author manuscript arXiv:0711.3709v1 dated 23 November 2007, linked by the repository and author institution GSI record 54473 to Phys. Rev. Lett. 99(26), 262501. Read scientific text on pages 1-4, Figures 1-3, Equations 1-2 and Table I; visually checked manuscript pages 3-4 including the rate table, population equations and hyperfine diagram. Publisher title/DOI/date/authors/abstract and Crossref metadata were checked; final publisher full text was not accessible, so no page-for-page final-version identity is claimed. The references on other isotopes, neutral-atom X-ray experiments, hyperfine lifetimes and general stellar applications are not separately admitted primary studies. No raw Schottky time series, new rate fit, hyperfine population measurement, nuclear magnetic-moment measurement or numerical replay was performed."
       }
     },
     {
@@ -433,7 +378,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "id": "C-phys-electronic-decay-source-scope",
       "kind": "review-finding",
       "statement": "The reviewed primary experiment supports a finite electronic-state sensitivity of one nuclear channel: fitted orbital EC of stored H-like 140Pr58+ is faster than He-like 140Pr57+, while the measured beta+ partial rates agree within their reported errors. The Schottky acquisition, loss-corrected nuclear-rate inference and conditional hyperfine explanation remain separate roles within the same publication. This positive case constrains an occupancy-only story and does not extend to every nuclear decay or ordinary chemical environment.",
-      "scope": "Scoped replacement for original Level 2 card /18 using one isotope-specific primary charge-state experiment.",
+      "scope": "Scope for electronic-environment sensitivity of selected nuclear decay channels using one isotope-specific primary charge-state experiment.",
       "status": "publication-supported",
       "citations": [
         {
@@ -459,30 +404,17 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor",
           "role": "supports",
           "note": "Supports the declared source-reported preparation, population fit or conditional interpretation only; no independent replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original card /18 supplies draft scope and asserted metadata only; it is not empirical support."
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original parent catalogue JSON pointer: /12, Particle Decays. The broad draft category and its metadata do not supply an empirical Pr140 channel, rate or causal weight."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.2 and 1.12, weights 0.35/0.65, downward-causation/constraint codes and carrier group1/type1 N_min=N_crit=1 and N_sat=null are not established causal or numerical thresholds. The catalogue group/type pairing is inconsistent with the carrier dictionary and is not resolved as a physical particle type. The prose diagonal/SOMA label does not resolve or validate those coded directions.",
         "Ionization preserves the prepared parent isotope, but EC itself converts Pr to Ce. No invariant nuclear identity through decay, changed intrinsic nuclear matrix element, universal nuclear-electronic coupling law or newly generated cross-level rule is demonstrated.",
         "This finite highly ionized EC comparison does not establish molecular, chemical-bonding or solid-state/lattice effects, a universal density-at-the-nucleus coefficient, or how most ordinary decay modes respond to chemistry. Other isotopes and bound-beta cases cited in the source introduction are outside the primary admission.",
         "Orbital occupancy, nuclear/lepton angular momentum and assumed hyperfine populations are distinct dependencies; fewer electrons do not imply a universally slower EC rate. The source beta+ agreement is limited by its reported precision and is not proof that all beta, alpha or gamma rates are exactly environment-independent.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 3 Property, science tags, well-supported status and SOMA diagonal linkage supply no measured developmental phase, carrier minimum or universal causal hierarchy.",
-        "Theoretical and empirical Evidence placeholders have null publication identifiers. Replace them with the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
-        "Constraint/resource requirement codes do not supply physical thresholds. The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
-        "Original parent 1.12, Particle Decays, is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no measured 0.65 causal weight, unit carrier minimum, universal daughter stability or general cosmological population law."
+        "Level 2 is a display grouping.",
+        "This admission uses the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
+        "The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
+        "Particle decay is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no universal daughter stability or general cosmological population law."
       ],
       "contextIds": [
         "litvinov2007-pr-charge-states"
@@ -630,7 +562,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
     {
       "id": "M-phys-electronic-decay-source-scope",
       "kind": "method",
-      "statement": "Join the source Schottky intensities, fitted EC/beta+ partial rates and conditional hyperfine interpretation only within the same Pr140 charge-state experiment. Retain loss and time-frame conventions, initial isotope versus daughter identity, magnetic-moment/population assumptions and finite precision. Do not convert one acquisition into multiple confirmations or infer generic chemical effects, universal decay control, old parent weights or particle minima.",
+      "statement": "Join the source Schottky intensities, fitted EC/beta+ partial rates and conditional hyperfine interpretation only within the same Pr140 charge-state experiment. Retain loss and time-frame conventions, initial isotope versus daughter identity, magnetic-moment/population assumptions and finite precision. Do not convert one acquisition into multiple confirmations or infer generic chemical effects or universal decay control.",
       "scope": "Interpretation dependencies for the finite Pr140 electronic-environment decay case.",
       "status": "method-contract",
       "citations": [
@@ -657,24 +589,17 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor",
           "role": "method",
           "note": "Supports the declared source-reported preparation, population fit or conditional interpretation only; no independent replay."
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original parent catalogue JSON pointer: /12, Particle Decays. The broad draft category and its metadata do not supply an empirical Pr140 channel, rate or causal weight."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.2 and 1.12, weights 0.35/0.65, downward-causation/constraint codes and carrier group1/type1 N_min=N_crit=1 and N_sat=null are not established causal or numerical thresholds. The catalogue group/type pairing is inconsistent with the carrier dictionary and is not resolved as a physical particle type. The prose diagonal/SOMA label does not resolve or validate those coded directions.",
         "Ionization preserves the prepared parent isotope, but EC itself converts Pr to Ce. No invariant nuclear identity through decay, changed intrinsic nuclear matrix element, universal nuclear-electronic coupling law or newly generated cross-level rule is demonstrated.",
         "This finite highly ionized EC comparison does not establish molecular, chemical-bonding or solid-state/lattice effects, a universal density-at-the-nucleus coefficient, or how most ordinary decay modes respond to chemistry. Other isotopes and bound-beta cases cited in the source introduction are outside the primary admission.",
         "Orbital occupancy, nuclear/lepton angular momentum and assumed hyperfine populations are distinct dependencies; fewer electrons do not imply a universally slower EC rate. The source beta+ agreement is limited by its reported precision and is not proof that all beta, alpha or gamma rates are exactly environment-independent.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 3 Property, science tags, well-supported status and SOMA diagonal linkage supply no measured developmental phase, carrier minimum or universal causal hierarchy.",
-        "Theoretical and empirical Evidence placeholders have null publication identifiers. Replace them with the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
-        "Constraint/resource requirement codes do not supply physical thresholds. The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
-        "Original parent 1.12, Particle Decays, is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no measured 0.65 causal weight, unit carrier minimum, universal daughter stability or general cosmological population law."
+        "Level 2 is a display grouping.",
+        "This admission uses the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
+        "The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
+        "Particle decay is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no universal daughter stability or general cosmological population law."
       ],
       "contextIds": [
         "litvinov2007-pr-charge-states"
@@ -852,7 +777,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "id": "C-phys-quantum-reaction-source-scope",
       "kind": "review-finding",
       "statement": "The reviewed primary publication supports a finite positive quantum-reaction case: cryogenic matrix-isolated trans-H-C-OH shows dark first-order infrared loss, with weak temperature dependence over the reported 11-20 K noble-gas points, a slower nitrogen host and qualitatively stable H-C-OD. The associated ground-singlet reaction-path/WKB calculation supplies a hydrogen-tunnelling interpretation and a source-predicted H/D lifetime contrast. Observation, mechanism inference and model prediction remain separate; the primary supplement is part of the same publication rather than a second confirmation.",
-      "scope": "Scoped replacement for original Level 2 card /11, with one publication-specific experiment and a distinct computational analysis.",
+      "scope": "Scoped replacement for claims about quantum effects in chemical reactions, with one publication-specific experiment and a distinct computational analysis.",
       "status": "publication-supported",
       "citations": [
         {
@@ -884,21 +809,14 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "locator": "Supplementary Information pages 9-12, selected Supplementary Table 5 rows and Supplementary Table 6: harmonic/anharmonic zero-point conventions and relative energy references for the printed Figure 4 scheme",
           "role": "supports",
           "note": "Supports only the selected reported preparation, result or declared interpretation boundary; no local numerical replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original card /11 supplies the draft vocabulary and asserted metadata only; it is not empirical support."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.3/2.5/2.8, weights 0.40/0.35/0.25, all two-body minima and critical counts, diagonal-causation code 3 and the cooperation/constraint modes are not established by the selected spectra or computation. A supplied molecular reaction channel is not a measured minimal carrier recipe; no alternative numerical minimum is invented.",
         "The source positively supports nuclear hydrogen-transfer tunnelling as the interpretation of this specific low-temperature ground-singlet rearrangement. It does not establish electronic nonadiabatic coupling, universal reaction-path selection, a universal non-Arrhenius curve, every isotope effect or all proposed quantum chemistry mechanisms.",
-        "Constraint and resource categories do not provide measured causal edges: the actual matrix, state, temperature and preparation are recorded as context. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 4 Effect, science tags, well-supported status and SOMA propagation/irreducibility language are draft classification rather than demonstrated developmental phases, cross-level laws or newly generated rules.",
-        "The original theoretical and empirical Evidence entries contain no publication identifiers and do not establish a bibliography or executable quantum-transition-state/path-integral model. The replacement admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
+        "The actual matrix, state, temperature and preparation are recorded as context, not as measured causal edges. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
+        "Level 2 is a display grouping.",
+        "This record admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
       ],
       "contextIds": [
         "schreiner2008-matrix",
@@ -935,23 +853,15 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "locator": "Published page 482, upper Pauling/Wheland erratum: corrections to radical Tables III-IV on original pages 370-371 and radical dissociation discussion on 373; selected benzene Table I unchanged",
           "role": "supports",
           "note": "The attached primary correction was read: it corrects radical results and leaves the selected benzene result unchanged; it is not a second study."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "The complete original catalogue card 2.5 is scope provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The retained result concerns one six-electron benzene VB model. It is not a one-electron H2+/HD+ result, and those existing molecular-ion calculations cannot substitute for every many-electron resonance claim.",
         "No new empirical acquisition is admitted. The reviewed passages do not supply a fitted charge density, spectroscopic response, magnetic ring current, reaction rate, optical spectrum or transport function. Observable inference needs a named response model and matched experiment.",
-        "The future aromaticity card may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
-        "Original parent 2.3 can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require original parent 2.4 ionic interaction/ion formation as a universal prerequisite.",
-        "Original parent weights 0.6/0.4, directions [2], modes [0,1], necessary, dependency type 10 and role arising have no matched quantitative causal estimator. No such weight or necessity is promoted to the graph.",
-        "Original carrier group 1/type 0, parent counts 2 and 1 for N_min=N_crit and null saturation are catalogue provenance. Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9], Optional [] and generic theoretical/empirical placeholders remain catalogue choices. They do not admit all charge, conjugation, response, optical, reactivity or transport claims.",
+        "The future aromaticity scope may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
+        "Chemical bonding and molecular formation can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require ionic interaction/ion formation as a universal prerequisite.",
+        "Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
         "No broad chemical transformation rule or all-system stabilization theorem follows. The source historical aromatic language is not used as an independent operational aromaticity measurement."
       ],
       "contextIds": [
@@ -1070,16 +980,10 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
     {
       "id": "C-bio-biochemical-ec-boundary",
       "kind": "review-finding",
-      "statement": "Biochemical or enzymatic modulation of a specified electron-capture channel remains an unsupported hypothesis within this review. The existing isotope-specific Pr140 storage-ring result establishes an electronic-state dependence in highly stripped ions; it does not establish the biochemical intervention asserted by original card 3.37. The draft empirical extension is excluded from the admitted findings without claiming that all biochemical electron-capture effects are absent.",
-      "scope": "Unsupported biochemical extension of original Level 3 card /37; existing ion evidence is cited only as a limit of transfer.",
+      "statement": "Biochemical or enzymatic modulation of a specified electron-capture channel remains an unsupported hypothesis within this review. The existing isotope-specific Pr140 storage-ring result establishes an electronic-state dependence in highly stripped ions; it does not establish the asserted biochemical intervention. The draft empirical extension is excluded from the admitted findings without claiming that all biochemical electron-capture effects are absent.",
+      "scope": "Unsupported biochemical extension to selected electron-capture decays; existing ion evidence is cited only as a limit of transfer.",
       "status": "unresolved",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 JSON pointer /37 supplies the proposed biochemical hypothesis and unidentified Evidence placeholders, not an admitted experiment."
-        },
         {
           "sourceId": "litvinov2007-pr-ec",
           "locator": "Author manuscript arXiv:0711.3709v1 pages 1-2: isotope-specific orbital EC and beta+ channels, selected Pr charge states, SIS/FRS/ESR production, cooling and Schottky readout",
@@ -1102,21 +1006,18 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "checkIds": [],
       "limitations": [
         "The existing reviewed positive case concerns highly ionized stored 140Pr charge states in a high-vacuum storage ring, not biochemical coordination, enzymes, cells or a matched chemical intervention. Its Schottky populations, loss-corrected partial rates and conditional hyperfine explanation cannot serve as positive evidence for this biochemical extension.",
-        "The original theoretical and empirical placeholders have null DOI and Link. They identify no biochemical isotope, substrate or enzyme preparation, decay-channel readout, comparison or uncertainty model. The asserted chemical/enzymatic experimental support is excluded from this admission; the broader biochemical dependence remains explicitly unsupported here.",
+        "The asserted chemical/enzymatic experimental support is excluded from this admission; the broader biochemical dependence remains explicitly unsupported here.",
         "This is a statement about what the present review has admitted. No comprehensive search of chemical or biochemical electron-capture literature has been performed, and no absence of such effects throughout the literature or in nature is asserted.",
         "Electronic occupancy, electron density at the nucleus, nuclear/electronic angular momentum and state populations are distinct dependencies. The selected Pr140 H-like/He-like contrast does not supply a universal electron-density coefficient or monotonic electron-count law. A biochemical binding-context mechanism would require its own specified channel and comparison.",
-        "The source does not demonstrate altered underlying nuclear forces or an enzyme-catalyzed nuclear reaction. Ionization preserves which parent isotope is prepared; the subsequent EC transition changes the nuclear charge and element. Do not inherit the original parent prose as nuclear identity invariance through decay.",
-        "Original parent 2.18 has a finite isotope- and channel-specific disposition. Its necessary label, weight 1.0, CausalDirections [1], InteractionModes [1], DependencyType 10 and OntologicalRole arising do not establish a biochemical causal relation or downward-causation mechanism.",
-        "The original carrier group 1/type 1, N_min=N_crit=1 and N_sat=null are catalogue codes, not a calibrated nuclear-particle or biochemical threshold. No replacement minimum or operational carrier count is inferred.",
-        "Level 3, Phase 2, TypeRole 3 Property, Science [1,2,3], hypothesized status and Requirements MustCover [0,10], ShouldCover [4,12], OptionalCover [5,7] are draft classification and coverage choices. They establish no measured formation stage, persistent biological property, material resource threshold or universal hierarchy.",
+        "The source does not demonstrate altered underlying nuclear forces or an enzyme-catalyzed nuclear reaction. Ionization preserves which parent isotope is prepared; the subsequent EC transition changes the nuclear charge and element.",
         "A stronger admission would need an identified isotope and EC channel, a specified biochemical/electronic preparation and matched control, a channel-specific rate observable with background/loss separation, and stated inference uncertainties. Those are open obligations rather than results of the current ion experiment."
       ]
     },
     {
       "id": "C-bio-photopigment-source-scope",
       "kind": "review-finding",
-      "statement": "Existing reviewed rhodopsin spectroscopy, wavelength-dependent photolysis and bovine laser-pump structural observations support early light-associated retinal conversion and protein/retinal changes within their separate preparations. Conversion is probabilistic, and the high-fluence structural result retains its multiphoton limit. This is a finite interpretation of original card 3.49, distinct from a folding event, a complete native single-photon mechanism or a later biochemical, electrical or neural response.",
-      "scope": "Literature synthesis reusing three existing retinal-pilot study contexts to disposition original Level 3 card /49, with no new acquisition or increased source reading.",
+      "statement": "Existing reviewed rhodopsin spectroscopy, wavelength-dependent photolysis and bovine laser-pump structural observations support early light-associated retinal conversion and protein/retinal changes within their separate preparations. Conversion is probabilistic, and the high-fluence structural result retains its multiphoton limit. This is a finite interpretation of photopigment photon absorption and isomerization, distinct from a folding event, a complete native single-photon mechanism or a later biochemical, electrical or neural response.",
+      "scope": "Literature synthesis reusing three existing retinal-pilot study contexts for photopigment photon absorption and isomerization, with no new acquisition or increased source reading.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -1142,35 +1043,21 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "locator": "Methods: Rhodopsin extraction from retinae and purification (Sec7)",
           "role": "method",
           "note": "The already prepared bovine protein/chromophore is the assay context, not a measured folding event."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 JSON pointer /49 supplies the draft scope, parent assertions and defaults, not independent scientific evidence."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original parent cards /5 and /11 are research inputs; their scoped canonical model evidence is not a rhodopsin mechanism."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Photon absorption, a successful isomerization and a later electrical or biochemical response are different events. The reviewed Kim yield is below unity and wavelength dependent; no deterministic conversion of every absorbed photon, universal quantum yield or calibrated N_min=N_crit=1 gate is admitted.",
+        "Photon absorption, a successful isomerization and a later electrical or biochemical response are different events. The reviewed Kim yield is below unity and wavelength dependent; no deterministic conversion of every absorbed photon or universal quantum yield is admitted.",
         "The Gruhl preparation is purified bovine rhodopsin crystals under a room-temperature laser pump and serial X-ray readout. Multiphoton influence cannot be excluded. Its early structural intermediate cannot be relabeled as a verified native isolated-single-photon trajectory or the later G-protein-binding state.",
         "Peteanu is retained at abstract-and-bibliographic-metadata reading, Kim at abstract-and-figure-caption reading, and Gruhl at its existing selected-full-text reading. No additional passages, mutation experiments, raw spectra, structural refinement or yield fit have been reviewed or replayed by this reuse audit. Species unresolved by the two abstracts remain unresolved.",
         "The sources supply study-scoped spectral conversion, source-reported early structural changes and a separate wavelength-dependent yield. They do not identify each individual chemical occurrence, derive a universal quantization rule, or provide a shared excitation/response model across their different preparations.",
-        "An already prepared protein/chromophore is an assay input. Original parent 3.0 protein folding is not a folding event measured in these assays, a developmental history of the pigment or a demonstrated necessary formation mechanism.",
-        "Original parent 2.11 is now scoped to cryogenic matrix-isolated ground-singlet H-C-OH dark loss and a distinct reduced reaction-path/WKB interpretation. That experiment/model cannot establish rhodopsin excited-state dynamics, photoisomerization pathways or a necessary tunnelling mechanism.",
-        "Original parent 2.5 is now scoped to a stationary six-electron benzene valence-bond model and its reference-defined energy lowering. It supplies no retinal absorption spectrum, excited-state path, dynamic hopping among resonance drawings or quantitative rhodopsin delocalization mediator.",
-        "The generic transition-state-stabilization parent 3.32 supplies no matched calculation or intervention for this photochemical pathway. A thermal enzyme-barrier description cannot substitute for a specified excited-state pigment model or make the biochemical photoproduct an enzyme-catalytic turnover.",
-        "The generic hydration and ionic-microenvironment parent 3.31 supplies no measured hydration-mediated effect in these selected pigment assays. Protein/solvent context does not by itself identify a causal solvent mediator, quantitative energy transfer or measured necessity.",
-        "The original parent weights 0.30/0.25/0.20/0.15/0.10, directions [0], modes [0,1], [3] or [1], necessity labels, dependency codes 0/3/10/12 and OntologicalRole arising have no matched causal estimator. No associated empirical or generative parent edge is adopted.",
-        "Original carrier group 2/type 4 and group 0/type 1 labels, all unit N_min/N_crit values and null saturation retain no quantitative threshold authority. Level 3, Phase 1, TypeRole 0 Process, Science [2,3], established status and requirement categories classify the draft and do not establish developmental order, counting domain or a universal source-to-signal law.",
+        "An already prepared protein/chromophore is an assay input. The protein-folding scope is not a folding event measured in these assays, a developmental history of the pigment or a demonstrated necessary formation mechanism.",
+        "Quantum effects in chemical reactions are now scoped to cryogenic matrix-isolated ground-singlet H-C-OH dark loss and a distinct reduced reaction-path/WKB interpretation. That experiment/model cannot establish rhodopsin excited-state dynamics, photoisomerization pathways or a necessary tunnelling mechanism.",
+        "Molecular resonance is now scoped to a stationary six-electron benzene valence-bond model and its reference-defined energy lowering. It supplies no retinal absorption spectrum, excited-state path, dynamic hopping among resonance drawings or quantitative rhodopsin delocalization mediator.",
+        "Generic transition-state stabilization supplies no matched calculation or intervention for this photochemical pathway. A thermal enzyme-barrier description cannot substitute for a specified excited-state pigment model or make the biochemical photoproduct an enzyme-catalytic turnover.",
+        "Generic hydration and ionic-microenvironment descriptions supply no measured hydration-mediated effect in these selected pigment assays. Protein/solvent context does not by itself identify a causal solvent mediator, quantitative energy transfer or measured necessity.",
         "Early photochemistry can be placed beside existing rod-current and transducin/PDE observations only as a preparation-aware literature interpretation. The current separate assays do not provide an end-to-end matched cascade, universal amplification factor, regulation/integration mechanism, electrical sufficiency, spike response or sensory/neural outcome.",
-        "The original generic theoretical placeholder is not an executable excited-state model; the empirical placeholder is restricted to the named existing studies. Its generic mutation and single-photon language does not create additional reviewed experiments. No new independent replication or whole-graph validation is claimed."
+        "No new independent replication or whole-graph validation is claimed."
       ],
       "contextIds": [
         "peteanu1993",
@@ -1182,7 +1069,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "id": "M-bio-photopigment-source-scope",
       "kind": "method",
       "statement": "Interpret the three existing rhodopsin studies together while preserving their separate preparations, actual reading extents, probabilistic yield and high-fluence structural limits. This is source comparison, not an end-to-end matched phototransduction experiment.",
-      "scope": "Literature synthesis reusing three existing retinal-pilot study contexts to disposition original Level 3 card /49, with no new acquisition or increased source reading.",
+      "scope": "Literature synthesis reusing three existing retinal-pilot study contexts for photopigment photon absorption and isomerization, with no new acquisition or increased source reading.",
       "status": "method-contract",
       "citations": [
         {
@@ -1208,35 +1095,21 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
           "locator": "Methods: Rhodopsin extraction from retinae and purification (Sec7)",
           "role": "method",
           "note": "The already prepared bovine protein/chromophore is the assay context, not a measured folding event."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 JSON pointer /49 supplies the draft scope, parent assertions and defaults, not independent scientific evidence."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original parent cards /5 and /11 are research inputs; their scoped canonical model evidence is not a rhodopsin mechanism."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Photon absorption, a successful isomerization and a later electrical or biochemical response are different events. The reviewed Kim yield is below unity and wavelength dependent; no deterministic conversion of every absorbed photon, universal quantum yield or calibrated N_min=N_crit=1 gate is admitted.",
+        "Photon absorption, a successful isomerization and a later electrical or biochemical response are different events. The reviewed Kim yield is below unity and wavelength dependent; no deterministic conversion of every absorbed photon or universal quantum yield is admitted.",
         "The Gruhl preparation is purified bovine rhodopsin crystals under a room-temperature laser pump and serial X-ray readout. Multiphoton influence cannot be excluded. Its early structural intermediate cannot be relabeled as a verified native isolated-single-photon trajectory or the later G-protein-binding state.",
         "Peteanu is retained at abstract-and-bibliographic-metadata reading, Kim at abstract-and-figure-caption reading, and Gruhl at its existing selected-full-text reading. No additional passages, mutation experiments, raw spectra, structural refinement or yield fit have been reviewed or replayed by this reuse audit. Species unresolved by the two abstracts remain unresolved.",
         "The sources supply study-scoped spectral conversion, source-reported early structural changes and a separate wavelength-dependent yield. They do not identify each individual chemical occurrence, derive a universal quantization rule, or provide a shared excitation/response model across their different preparations.",
-        "An already prepared protein/chromophore is an assay input. Original parent 3.0 protein folding is not a folding event measured in these assays, a developmental history of the pigment or a demonstrated necessary formation mechanism.",
-        "Original parent 2.11 is now scoped to cryogenic matrix-isolated ground-singlet H-C-OH dark loss and a distinct reduced reaction-path/WKB interpretation. That experiment/model cannot establish rhodopsin excited-state dynamics, photoisomerization pathways or a necessary tunnelling mechanism.",
-        "Original parent 2.5 is now scoped to a stationary six-electron benzene valence-bond model and its reference-defined energy lowering. It supplies no retinal absorption spectrum, excited-state path, dynamic hopping among resonance drawings or quantitative rhodopsin delocalization mediator.",
-        "The generic transition-state-stabilization parent 3.32 supplies no matched calculation or intervention for this photochemical pathway. A thermal enzyme-barrier description cannot substitute for a specified excited-state pigment model or make the biochemical photoproduct an enzyme-catalytic turnover.",
-        "The generic hydration and ionic-microenvironment parent 3.31 supplies no measured hydration-mediated effect in these selected pigment assays. Protein/solvent context does not by itself identify a causal solvent mediator, quantitative energy transfer or measured necessity.",
-        "The original parent weights 0.30/0.25/0.20/0.15/0.10, directions [0], modes [0,1], [3] or [1], necessity labels, dependency codes 0/3/10/12 and OntologicalRole arising have no matched causal estimator. No associated empirical or generative parent edge is adopted.",
-        "Original carrier group 2/type 4 and group 0/type 1 labels, all unit N_min/N_crit values and null saturation retain no quantitative threshold authority. Level 3, Phase 1, TypeRole 0 Process, Science [2,3], established status and requirement categories classify the draft and do not establish developmental order, counting domain or a universal source-to-signal law.",
+        "An already prepared protein/chromophore is an assay input. The protein-folding scope is not a folding event measured in these assays, a developmental history of the pigment or a demonstrated necessary formation mechanism.",
+        "Quantum effects in chemical reactions are now scoped to cryogenic matrix-isolated ground-singlet H-C-OH dark loss and a distinct reduced reaction-path/WKB interpretation. That experiment/model cannot establish rhodopsin excited-state dynamics, photoisomerization pathways or a necessary tunnelling mechanism.",
+        "Molecular resonance is now scoped to a stationary six-electron benzene valence-bond model and its reference-defined energy lowering. It supplies no retinal absorption spectrum, excited-state path, dynamic hopping among resonance drawings or quantitative rhodopsin delocalization mediator.",
+        "Generic transition-state stabilization supplies no matched calculation or intervention for this photochemical pathway. A thermal enzyme-barrier description cannot substitute for a specified excited-state pigment model or make the biochemical photoproduct an enzyme-catalytic turnover.",
+        "Generic hydration and ionic-microenvironment descriptions supply no measured hydration-mediated effect in these selected pigment assays. Protein/solvent context does not by itself identify a causal solvent mediator, quantitative energy transfer or measured necessity.",
         "Early photochemistry can be placed beside existing rod-current and transducin/PDE observations only as a preparation-aware literature interpretation. The current separate assays do not provide an end-to-end matched cascade, universal amplification factor, regulation/integration mechanism, electrical sufficiency, spike response or sensory/neural outcome.",
-        "The original generic theoretical placeholder is not an executable excited-state model; the empirical placeholder is restricted to the named existing studies. Its generic mutation and single-photon language does not create additional reviewed experiments. No new independent replication or whole-graph validation is claimed."
+        "No new independent replication or whole-graph validation is claimed."
       ],
       "contextIds": [
         "peteanu1993",
@@ -1251,12 +1124,6 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "scope": "Evidence-admission boundary for a biochemical extension, not a new nuclear or biochemical observation.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 JSON pointer /37 supplies the proposed biochemical hypothesis and unidentified Evidence placeholders, not an admitted experiment."
-        },
         {
           "sourceId": "litvinov2007-pr-ec",
           "locator": "Author manuscript arXiv:0711.3709v1 pages 1-2: isotope-specific orbital EC and beta+ channels, selected Pr charge states, SIS/FRS/ESR production, cooling and Schottky readout",
@@ -1279,7 +1146,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "checkIds": [],
       "limitations": [
         "These admission requirements are a methodological definition. They neither establish a positive biochemical decay effect nor prove that such effects are absent in other preparations or throughout the literature.",
-        "A supplied author hypothesis and catalogue thresholds do not constitute measured rate changes, enzyme action or a universal hierarchy."
+        "A supplied author hypothesis does not constitute measured rate changes, enzyme action or a universal hierarchy."
       ]
     }
   ],
@@ -1447,25 +1314,16 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
         {
           "sourceId": "litvinov2007-pr-ec",
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original necessary parents 2.2 and 1.12, weights 0.35/0.65, downward-causation/constraint codes and carrier group1/type1 N_min=N_crit=1 and N_sat=null are not established causal or numerical thresholds. The catalogue group/type pairing is inconsistent with the carrier dictionary and is not resolved as a physical particle type. The prose diagonal/SOMA label does not resolve or validate those coded directions.",
         "Ionization preserves the prepared parent isotope, but EC itself converts Pr to Ce. No invariant nuclear identity through decay, changed intrinsic nuclear matrix element, universal nuclear-electronic coupling law or newly generated cross-level rule is demonstrated.",
         "This finite highly ionized EC comparison does not establish molecular, chemical-bonding or solid-state/lattice effects, a universal density-at-the-nucleus coefficient, or how most ordinary decay modes respond to chemistry. Other isotopes and bound-beta cases cited in the source introduction are outside the primary admission.",
         "Orbital occupancy, nuclear/lepton angular momentum and assumed hyperfine populations are distinct dependencies; fewer electrons do not imply a universally slower EC rate. The source beta+ agreement is limited by its reported precision and is not proof that all beta, alpha or gamma rates are exactly environment-independent.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 3 Property, science tags, well-supported status and SOMA diagonal linkage supply no measured developmental phase, carrier minimum or universal causal hierarchy.",
-        "Theoretical and empirical Evidence placeholders have null publication identifiers. Replace them with the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
-        "Constraint/resource requirement codes do not supply physical thresholds. The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
-        "Original parent 1.12, Particle Decays, is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no measured 0.65 causal weight, unit carrier minimum, universal daughter stability or general cosmological population law."
+        "Level 2 is a display grouping.",
+        "This admission uses the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
+        "The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
+        "Particle decay is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no universal daughter stability or general cosmological population law."
       ]
     },
     {
@@ -1549,18 +1407,13 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
         {
           "sourceId": "schreiner2008-hcoh-supplement",
           "locator": "Supplementary Information pages 9-12, selected Supplementary Table 5 rows and Supplementary Table 6: harmonic/anharmonic zero-point conventions and relative energy references for the printed Figure 4 scheme"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original necessary parents 2.3/2.5/2.8, weights 0.40/0.35/0.25, all two-body minima and critical counts, diagonal-causation code 3 and the cooperation/constraint modes are not established by the selected spectra or computation. A supplied molecular reaction channel is not a measured minimal carrier recipe; no alternative numerical minimum is invented.",
         "The source positively supports nuclear hydrogen-transfer tunnelling as the interpretation of this specific low-temperature ground-singlet rearrangement. It does not establish electronic nonadiabatic coupling, universal reaction-path selection, a universal non-Arrhenius curve, every isotope effect or all proposed quantum chemistry mechanisms.",
-        "Constraint and resource categories do not provide measured causal edges: the actual matrix, state, temperature and preparation are recorded as context. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 4 Effect, science tags, well-supported status and SOMA propagation/irreducibility language are draft classification rather than demonstrated developmental phases, cross-level laws or newly generated rules.",
-        "The original theoretical and empirical Evidence entries contain no publication identifiers and do not establish a bibliography or executable quantum-transition-state/path-integral model. The replacement admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
+        "The actual matrix, state, temperature and preparation are recorded as context, not as measured causal edges. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
+        "Level 2 is a display grouping.",
+        "This record admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
       ]
     },
     {
@@ -1589,20 +1442,14 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
         {
           "sourceId": "pauling1934-resonance-erratum",
           "locator": "Published page 482, upper Pauling/Wheland erratum: corrections to radical Tables III-IV on original pages 370-371 and radical dissociation discussion on 373; selected benzene Table I unchanged"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "The retained result concerns one six-electron benzene VB model. It is not a one-electron H2+/HD+ result, and those existing molecular-ion calculations cannot substitute for every many-electron resonance claim.",
         "No new empirical acquisition is admitted. The reviewed passages do not supply a fitted charge density, spectroscopic response, magnetic ring current, reaction rate, optical spectrum or transport function. Observable inference needs a named response model and matched experiment.",
-        "The future aromaticity card may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
-        "Original parent 2.3 can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require original parent 2.4 ionic interaction/ion formation as a universal prerequisite.",
-        "Original parent weights 0.6/0.4, directions [2], modes [0,1], necessary, dependency type 10 and role arising have no matched quantitative causal estimator. No such weight or necessity is promoted to the graph.",
-        "Original carrier group 1/type 0, parent counts 2 and 1 for N_min=N_crit and null saturation are catalogue provenance. Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9], Optional [] and generic theoretical/empirical placeholders remain catalogue choices. They do not admit all charge, conjugation, response, optical, reactivity or transport claims.",
+        "The future aromaticity scope may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
+        "Chemical bonding and molecular formation can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require ionic interaction/ion formation as a universal prerequisite.",
+        "Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
         "No broad chemical transformation rule or all-system stabilization theorem follows. The source historical aromatic language is not used as an independent operational aromaticity measurement."
       ]
     },
@@ -1666,7 +1513,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "id": "bio:biochemical-ec-hypothesis",
       "name": "Biochemical electron-capture modulation: unsupported hypothesis",
       "kind": "hypothesis",
-      "description": "Biochemical or enzymatic modulation of a specified electron-capture channel remains an unsupported hypothesis within this review. The existing isotope-specific Pr140 storage-ring result establishes an electronic-state dependence in highly stripped ions; it does not establish the biochemical intervention asserted by original card 3.37. The draft empirical extension is excluded from the admitted findings without claiming that all biochemical electron-capture effects are absent.",
+      "description": "Biochemical or enzymatic modulation of a specified electron-capture channel remains an unsupported hypothesis within this review. The existing isotope-specific Pr140 storage-ring result establishes an electronic-state dependence in highly stripped ions; it does not establish the asserted biochemical intervention. The draft empirical extension is excluded from the admitted findings without claiming that all biochemical electron-capture effects are absent.",
       "claimIds": [
         "C-bio-biochemical-ec-boundary"
       ],
@@ -1684,21 +1531,14 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
         {
           "sourceId": "litvinov2007-pr-ec",
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/37"
         }
       ],
       "openObligations": [
         "The existing reviewed positive case concerns highly ionized stored 140Pr charge states in a high-vacuum storage ring, not biochemical coordination, enzymes, cells or a matched chemical intervention. Its Schottky populations, loss-corrected partial rates and conditional hyperfine explanation cannot serve as positive evidence for this biochemical extension.",
-        "The original theoretical and empirical placeholders have null DOI and Link. They identify no biochemical isotope, substrate or enzyme preparation, decay-channel readout, comparison or uncertainty model. The asserted chemical/enzymatic experimental support is excluded from this admission; the broader biochemical dependence remains explicitly unsupported here.",
+        "The asserted chemical/enzymatic experimental support is excluded from this admission; the broader biochemical dependence remains explicitly unsupported here.",
         "This is a statement about what the present review has admitted. No comprehensive search of chemical or biochemical electron-capture literature has been performed, and no absence of such effects throughout the literature or in nature is asserted.",
         "Electronic occupancy, electron density at the nucleus, nuclear/electronic angular momentum and state populations are distinct dependencies. The selected Pr140 H-like/He-like contrast does not supply a universal electron-density coefficient or monotonic electron-count law. A biochemical binding-context mechanism would require its own specified channel and comparison.",
-        "The source does not demonstrate altered underlying nuclear forces or an enzyme-catalyzed nuclear reaction. Ionization preserves which parent isotope is prepared; the subsequent EC transition changes the nuclear charge and element. Do not inherit the original parent prose as nuclear identity invariance through decay.",
-        "Original parent 2.18 has a finite isotope- and channel-specific disposition. Its necessary label, weight 1.0, CausalDirections [1], InteractionModes [1], DependencyType 10 and OntologicalRole arising do not establish a biochemical causal relation or downward-causation mechanism.",
-        "The original carrier group 1/type 1, N_min=N_crit=1 and N_sat=null are catalogue codes, not a calibrated nuclear-particle or biochemical threshold. No replacement minimum or operational carrier count is inferred.",
-        "Level 3, Phase 2, TypeRole 3 Property, Science [1,2,3], hypothesized status and Requirements MustCover [0,10], ShouldCover [4,12], OptionalCover [5,7] are draft classification and coverage choices. They establish no measured formation stage, persistent biological property, material resource threshold or universal hierarchy.",
+        "The source does not demonstrate altered underlying nuclear forces or an enzyme-catalyzed nuclear reaction. Ionization preserves which parent isotope is prepared; the subsequent EC transition changes the nuclear charge and element.",
         "A stronger admission would need an identified isotope and EC channel, a specified biochemical/electronic preparation and matched control, a channel-specific rate observable with background/loss separation, and stated inference uncertainties. Those are open obligations rather than results of the current ion experiment."
       ]
     },
@@ -1706,7 +1546,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "id": "bio:photopigment-source-scope",
       "name": "Rhodopsin photoisomerization and evidence boundary",
       "kind": "scoped-process",
-      "description": "Existing reviewed rhodopsin spectroscopy, wavelength-dependent photolysis and bovine laser-pump structural observations support early light-associated retinal conversion and protein/retinal changes within their separate preparations. Conversion is probabilistic, and the high-fluence structural result retains its multiphoton limit. This is a finite interpretation of original card 3.49, distinct from a folding event, a complete native single-photon mechanism or a later biochemical, electrical or neural response.",
+      "description": "Existing reviewed rhodopsin spectroscopy, wavelength-dependent photolysis and bovine laser-pump structural observations support early light-associated retinal conversion and protein/retinal changes within their separate preparations. Conversion is probabilistic, and the high-fluence structural result retains its multiphoton limit. This is a finite interpretation of photopigment photon absorption and isomerization, distinct from a folding event, a complete native single-photon mechanism or a later biochemical, electrical or neural response.",
       "claimIds": [
         "C-bio-photopigment-source-scope",
         "M-bio-photopigment-source-scope"
@@ -1729,30 +1569,20 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
         {
           "sourceId": "gruhl2023",
           "locator": "Methods: Rhodopsin extraction from retinae and purification (Sec7)"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/49"
         }
       ],
       "openObligations": [
-        "Photon absorption, a successful isomerization and a later electrical or biochemical response are different events. The reviewed Kim yield is below unity and wavelength dependent; no deterministic conversion of every absorbed photon, universal quantum yield or calibrated N_min=N_crit=1 gate is admitted.",
+        "Photon absorption, a successful isomerization and a later electrical or biochemical response are different events. The reviewed Kim yield is below unity and wavelength dependent; no deterministic conversion of every absorbed photon or universal quantum yield is admitted.",
         "The Gruhl preparation is purified bovine rhodopsin crystals under a room-temperature laser pump and serial X-ray readout. Multiphoton influence cannot be excluded. Its early structural intermediate cannot be relabeled as a verified native isolated-single-photon trajectory or the later G-protein-binding state.",
         "Peteanu is retained at abstract-and-bibliographic-metadata reading, Kim at abstract-and-figure-caption reading, and Gruhl at its existing selected-full-text reading. No additional passages, mutation experiments, raw spectra, structural refinement or yield fit have been reviewed or replayed by this reuse audit. Species unresolved by the two abstracts remain unresolved.",
         "The sources supply study-scoped spectral conversion, source-reported early structural changes and a separate wavelength-dependent yield. They do not identify each individual chemical occurrence, derive a universal quantization rule, or provide a shared excitation/response model across their different preparations.",
-        "An already prepared protein/chromophore is an assay input. Original parent 3.0 protein folding is not a folding event measured in these assays, a developmental history of the pigment or a demonstrated necessary formation mechanism.",
-        "Original parent 2.11 is now scoped to cryogenic matrix-isolated ground-singlet H-C-OH dark loss and a distinct reduced reaction-path/WKB interpretation. That experiment/model cannot establish rhodopsin excited-state dynamics, photoisomerization pathways or a necessary tunnelling mechanism.",
-        "Original parent 2.5 is now scoped to a stationary six-electron benzene valence-bond model and its reference-defined energy lowering. It supplies no retinal absorption spectrum, excited-state path, dynamic hopping among resonance drawings or quantitative rhodopsin delocalization mediator.",
-        "The generic transition-state-stabilization parent 3.32 supplies no matched calculation or intervention for this photochemical pathway. A thermal enzyme-barrier description cannot substitute for a specified excited-state pigment model or make the biochemical photoproduct an enzyme-catalytic turnover.",
-        "The generic hydration and ionic-microenvironment parent 3.31 supplies no measured hydration-mediated effect in these selected pigment assays. Protein/solvent context does not by itself identify a causal solvent mediator, quantitative energy transfer or measured necessity.",
-        "The original parent weights 0.30/0.25/0.20/0.15/0.10, directions [0], modes [0,1], [3] or [1], necessity labels, dependency codes 0/3/10/12 and OntologicalRole arising have no matched causal estimator. No associated empirical or generative parent edge is adopted.",
-        "Original carrier group 2/type 4 and group 0/type 1 labels, all unit N_min/N_crit values and null saturation retain no quantitative threshold authority. Level 3, Phase 1, TypeRole 0 Process, Science [2,3], established status and requirement categories classify the draft and do not establish developmental order, counting domain or a universal source-to-signal law.",
+        "An already prepared protein/chromophore is an assay input. The protein-folding scope is not a folding event measured in these assays, a developmental history of the pigment or a demonstrated necessary formation mechanism.",
+        "Quantum effects in chemical reactions are now scoped to cryogenic matrix-isolated ground-singlet H-C-OH dark loss and a distinct reduced reaction-path/WKB interpretation. That experiment/model cannot establish rhodopsin excited-state dynamics, photoisomerization pathways or a necessary tunnelling mechanism.",
+        "Molecular resonance is now scoped to a stationary six-electron benzene valence-bond model and its reference-defined energy lowering. It supplies no retinal absorption spectrum, excited-state path, dynamic hopping among resonance drawings or quantitative rhodopsin delocalization mediator.",
+        "Generic transition-state stabilization supplies no matched calculation or intervention for this photochemical pathway. A thermal enzyme-barrier description cannot substitute for a specified excited-state pigment model or make the biochemical photoproduct an enzyme-catalytic turnover.",
+        "Generic hydration and ionic-microenvironment descriptions supply no measured hydration-mediated effect in these selected pigment assays. Protein/solvent context does not by itself identify a causal solvent mediator, quantitative energy transfer or measured necessity.",
         "Early photochemistry can be placed beside existing rod-current and transducin/PDE observations only as a preparation-aware literature interpretation. The current separate assays do not provide an end-to-end matched cascade, universal amplification factor, regulation/integration mechanism, electrical sufficiency, spike response or sensory/neural outcome.",
-        "The original generic theoretical placeholder is not an executable excited-state model; the empirical placeholder is restricted to the named existing studies. Its generic mutation and single-photon language does not create additional reviewed experiments. No new independent replication or whole-graph validation is claimed."
+        "No new independent replication or whole-graph validation is claimed."
       ]
     },
     {
@@ -1777,15 +1607,11 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
         {
           "sourceId": "litvinov2007-pr-ec",
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/37"
         }
       ],
       "openObligations": [
         "These admission requirements are a methodological definition. They neither establish a positive biochemical decay effect nor prove that such effects are absent in other preparations or throughout the literature.",
-        "A supplied author hypothesis and catalogue thresholds do not constitute measured rate changes, enzyme action or a universal hierarchy."
+        "A supplied author hypothesis does not constitute measured rate changes, enzyme action or a universal hierarchy."
       ]
     }
   ],
@@ -1924,7 +1750,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       "target": "bio:photopigment-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Reuse the existing photochemical observations and their distinct preparations without creating another acquisition, deterministic photon gate or universal parent chain.",
+      "assertion": "Reuse the existing photochemical observations and their distinct preparations without creating another acquisition, deterministic photon gate or universal precursor chain.",
       "claimIds": [
         "C-bio-photopigment-source-scope",
         "M-bio-photopigment-source-scope"
@@ -2082,7 +1908,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1063/1.1749304",
-      "correctionCheck": "Read the institution-linked Pauling/Wheland erratum, JCP 2(8),482 (1934), DOI 10.1063/1.1749514. It corrects radical Tables III-IV and discussion on original 370-373, not selected benzene Table I. Crossref relation metadata alone did not expose the correction; no exhaustive later assessment search is claimed."
+      "correctionCheck": "Read the institution-linked Pauling/Wheland erratum, JCP 2(8), 482 (1934), DOI 10.1063/1.1749514. It corrects radical Tables III-IV and discussion on original 370-373, not selected benzene Table I. Crossref relation metadata alone did not expose the correction; no exhaustive later assessment search is claimed."
     },
     {
       "id": "schreiner2008-matrix",
@@ -2111,7 +1937,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://www.nature.com/articles/nature07010",
-      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197),906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
+      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197), 906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
     },
     {
       "id": "schreiner2008-reaction-path",
@@ -2140,7 +1966,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://www.nature.com/articles/nature07010",
-      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197),906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
+      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197), 906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
     },
     {
       "id": "baylor1979",
@@ -2293,7 +2119,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
     {
       "nodeId": "phys:electronic-decay-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /18 using one isotope-specific primary charge-state experiment.",
+      "denotes": "Scope for electronic-environment sensitivity of selected nuclear decay channels using one isotope-specific primary charge-state experiment.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-electronic-decay-source-scope"
@@ -2323,7 +2149,7 @@ export const BIOCHEMICAL_TRANSFER_RECORDS = {
     {
       "nodeId": "phys:quantum-reaction-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /11, with one publication-specific experiment and a distinct computational analysis.",
+      "denotes": "Scoped replacement for claims about quantum effects in chemical reactions, with one publication-specific experiment and a distinct computational analysis.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-quantum-reaction-source-scope"

@@ -20,17 +20,13 @@ const pack = (graph) => buildModelPack({ model: { id: graph.id, version: "1", na
   nodes: graph.nodes, edges: graph.edges.map((edge) => ({ relationLayer: "source-parent", ...edge })), dictionaries: {} });
 const weighted = { metricPolicyId: "inverse-target-share-v1" };
 
-test("experimental schemas cover all controls, full results, source audit and suite", async () => {
+test("experimental schemas cover every control experiment and weight audit", () => {
   for (const graph of controls) {
     const source = pack(graph);
     for (const request of [{}, weighted]) {
       assert.equal(validate("structuralMetricExperiment", analyzeStructuralMetricExperiment(source, request)), true, ajv.errorsText());
     }
     assert.equal(validate("structuralWeightAudit", auditStructuralWeights(source)), true, ajv.errorsText());
-  }
-  for (const [name, file] of [["structuralMetricExperiment", "weighted-full"], ["structuralWeightAudit", "weight-audit"], ["structuralMetricSuite", "suite"]]) {
-    const value = JSON.parse(await readFile(new URL(`../../../cases/structural-geometry/experiments/${file}.json`, import.meta.url), "utf8"));
-    assert.equal(validate(name, value), true, ajv.errorsText());
   }
   const extreme = structuredClone(controls[0]); extreme.edges[0].weight = 1e308;
   assert.equal(validate("structuralWeightAudit", auditStructuralWeights(pack(extreme))), true, ajv.errorsText());

@@ -170,7 +170,7 @@ const contracts = {
           "Author v1 printed pages 40-46 (PDF 41-47), Sections 5.1-5.2, Equations 59-62 and Figures 23-25: transverse profile models and aligned static-separation differences",
           "Author v1 printed pages 47-53 (PDF 48-54), Sections 5.3-5.4 and selected summary, Equations 63-73 and Figures 26-29: sum-rule inputs, tail sensitivity and width inference"
         ],
-        "limit": "Read the listed scientific passages of the 66-page extended author report hep-lat/9409005v1 (7 September 1994), published in Physical Review D 51, 5165-5198 (1995). Visually checked PDF pages 4-5, 10-12, 17, 30, 36, 47 and 49-53. The publisher text, appendices and upstream scale/beta-function determinations are not fully reviewed. The selected author version has conflicting scale expressions and names an FWHM formula a half width; those discrepancies are retained. No configurations, covariance fits, tail extrapolations or continuum result are independently reproduced."
+        "limit": "Read the listed scientific passages of the 66-page extended author report hep-lat/9409005v1 (7 September 1994), published in Physical Review D 51, 5165-5198 (1995). Visually checked PDF pages 4-5, 10-12, 17, 30, 36, 47 and 49-53. The publisher text, appendices and upstream scale/beta-function determinations are not fully reviewed. The selected author version has conflicting scale expressions and names an FWHM formula a half width; those discrepancies are retained. No configurations, covariance fits, tail extrapolations or continuum result are independently reproduced. Author order follows the inspected arXiv v1 report; the Physical Review D record lists G. S. Bali, C. Schlichter and K. Schilling."
       }
     }
   ],

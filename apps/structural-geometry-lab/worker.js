@@ -698,8 +698,380 @@ function engineFail(code, message, details) {
 
 // packages/model-pack/src/canonical-options.js
 var MODEL_PACK_CANONICAL_OPTIONS = Object.freeze({
-  limits: Object.freeze({ maxEntries: 1e6 })
+  limits: Object.freeze({ maxEntries: 4e6 })
 });
+
+// packages/model-pack/src/model-pack-error.js
+var ModelPackError = class extends Error {
+  constructor(code, message, details = {}) {
+    super(message);
+    this.name = "ModelPackError";
+    this.code = code;
+    this.details = Object.freeze({ ...details });
+  }
+};
+
+// packages/model-pack/src/json-value-table.js
+var FORMAT = "onto2d-json-value-table";
+var VERSION = "1";
+var DEFAULT_LIMITS2 = Object.freeze({
+  maxBytes: 256 * 1024 * 1024,
+  maxEntries: 4e6,
+  maxDepth: 64,
+  maxStringBytes: 1024 * 1024
+});
+var OPTION_FIELDS = new Set(Object.keys(DEFAULT_LIMITS2));
+var ENVELOPE_FIELDS = ["format", "formatVersion", "root", "table"];
+var FORBIDDEN_KEYS2 = /* @__PURE__ */ new Set(["__proto__", "constructor", "prototype"]);
+var PREFIX = "MODEL_PACK_JSON_VALUE_TABLE_";
+var codecErrors = /* @__PURE__ */ new WeakSet();
+var compareText = (left, right) => left < right ? -1 : left > right ? 1 : 0;
+function fail2(code, message, details = {}) {
+  const error = new ModelPackError(`${PREFIX}${code}`, message, details);
+  codecErrors.add(error);
+  throw error;
+}
+function guarded(action) {
+  try {
+    return action();
+  } catch (error) {
+    if (error !== null && typeof error === "object" && codecErrors.has(error)) throw error;
+    fail2("INPUT_INVALID", "The JSON value cannot be inspected safely.", {
+      cause: typeof error
+    });
+  }
+}
+function plainObject(value) {
+  if (value === null || typeof value !== "object" || Array.isArray(value)) return false;
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === Object.prototype || prototype === null;
+}
+function normalizeOptions(options) {
+  if (!plainObject(options)) fail2("OPTIONS_INVALID", "Codec options must be a plain data object.");
+  const descriptors = Object.getOwnPropertyDescriptors(options);
+  const limits4 = { ...DEFAULT_LIMITS2 };
+  for (const key of Reflect.ownKeys(descriptors)) {
+    const descriptor3 = descriptors[key];
+    if (typeof key !== "string" || !OPTION_FIELDS.has(key) || !Object.hasOwn(descriptor3, "value") || !descriptor3.enumerable || !Number.isSafeInteger(descriptor3.value) || descriptor3.value < 1) {
+      fail2("OPTIONS_INVALID", "Codec limits must be known positive safe integers.");
+    }
+    limits4[key] = descriptor3.value;
+  }
+  return limits4;
+}
+function add(current, amount, maximum2, field, subject) {
+  if (amount > maximum2 - current) {
+    fail2("LIMIT_EXCEEDED", "The JSON value exceeds its codec limit.", {
+      field,
+      maximum: maximum2,
+      subject
+    });
+  }
+  return current + amount;
+}
+function stringSizes(value, maximum2, subject) {
+  let bytes = 0;
+  let jsonBytes = 2;
+  for (let index = 0; index < value.length; index += 1) {
+    const code = value.charCodeAt(index);
+    let size;
+    if (code >= 55296 && code <= 56319) {
+      const next = value.charCodeAt(index + 1);
+      if (!(next >= 56320 && next <= 57343)) {
+        fail2("INPUT_INVALID", "Unpaired Unicode surrogates are not canonical JSON.", { subject });
+      }
+      index += 1;
+      size = 4;
+    } else if (code >= 56320 && code <= 57343) {
+      fail2("INPUT_INVALID", "Unpaired Unicode surrogates are not canonical JSON.", { subject });
+    } else {
+      size = code < 128 ? 1 : code < 2048 ? 2 : 3;
+    }
+    bytes = add(bytes, size, maximum2, "maxStringBytes", subject);
+    if (code === 34 || code === 92) jsonBytes += 2;
+    else if (code < 32) jsonBytes += [8, 9, 10, 12, 13].includes(code) ? 2 : 6;
+    else jsonBytes += size;
+  }
+  return { bytes, jsonBytes };
+}
+function scalar(value, limits4, subject) {
+  if (value === null) return { value, bytes: 4, entries: 1, depth: 0 };
+  if (typeof value === "boolean") return { value, bytes: value ? 4 : 5, entries: 1, depth: 0 };
+  if (typeof value === "string") {
+    return { value, bytes: stringSizes(value, limits4.maxStringBytes, subject).jsonBytes, entries: 1, depth: 0 };
+  }
+  if (typeof value === "number" && Number.isFinite(value)) {
+    const normalized = Object.is(value, -0) ? 0 : value;
+    return { value: normalized, bytes: JSON.stringify(normalized).length, entries: 1, depth: 0 };
+  }
+  fail2("INPUT_INVALID", "Only finite JSON scalars and plain JSON containers are supported.", { subject });
+}
+function inspectContainer(value, budget, limits4, subject) {
+  const array3 = Array.isArray(value);
+  if (!array3 && !plainObject(value)) {
+    fail2("INPUT_INVALID", "Only plain JSON objects and arrays are supported.", { subject });
+  }
+  if (array3) {
+    const length = Object.getOwnPropertyDescriptor(value, "length")?.value;
+    if (!Number.isSafeInteger(length) || length < 0) {
+      fail2("INPUT_INVALID", "A JSON array requires a valid own length.", { subject });
+    }
+    if (length > limits4.maxEntries - budget.entries) {
+      fail2("LIMIT_EXCEEDED", "The JSON array exceeds its codec entry limit.", {
+        field: "maxEntries",
+        maximum: limits4.maxEntries,
+        subject
+      });
+    }
+  }
+  const descriptors = Object.getOwnPropertyDescriptors(value);
+  const keys = Reflect.ownKeys(descriptors);
+  for (const key of keys) {
+    const descriptor3 = descriptors[key];
+    if (typeof key !== "string" || !Object.hasOwn(descriptor3, "value") || !descriptor3.enumerable && !(array3 && key === "length")) {
+      fail2("INPUT_INVALID", "JSON containers require enumerable string data properties.", { subject });
+    }
+    if (FORBIDDEN_KEYS2.has(key)) {
+      fail2("INPUT_INVALID", "Prototype-sensitive JSON keys are forbidden.", { subject, key });
+    }
+  }
+  if (array3) {
+    const length = descriptors.length.value;
+    if (keys.length !== length + 1) {
+      fail2("INPUT_INVALID", "JSON arrays must be dense and have no named properties.", { subject });
+    }
+    const indexes = [];
+    for (let index = 0; index < length; index += 1) {
+      if (!Object.hasOwn(descriptors, String(index))) {
+        fail2("INPUT_INVALID", "Sparse JSON arrays are forbidden.", { subject });
+      }
+      indexes.push(String(index));
+    }
+    return { kind: "a", keys: indexes, descriptors };
+  }
+  return { kind: "o", keys: keys.sort(compareText), descriptors };
+}
+function walkJson(input, limits4, finish2, subject) {
+  const budget = { bytes: 0, entries: 0 };
+  const ancestors = /* @__PURE__ */ new WeakSet();
+  const stack = [];
+  let result;
+  const deliver = (value) => {
+    if (stack.length === 0) result = value;
+    else stack[stack.length - 1].children.push(value);
+  };
+  function begin(value, depth) {
+    budget.entries = add(budget.entries, 1, limits4.maxEntries, "maxEntries", subject);
+    if (depth > limits4.maxDepth) {
+      fail2("LIMIT_EXCEEDED", "The JSON value exceeds its codec depth limit.", {
+        field: "maxDepth",
+        maximum: limits4.maxDepth,
+        subject
+      });
+    }
+    if (value === null || typeof value !== "object") {
+      const item = scalar(value, limits4, subject);
+      budget.bytes = add(budget.bytes, item.bytes, limits4.maxBytes, "maxBytes", subject);
+      deliver(item.value);
+      return;
+    }
+    if (ancestors.has(value)) fail2("INPUT_INVALID", "Cyclic values are not JSON.", { subject });
+    const container = inspectContainer(value, budget, limits4, subject);
+    let overhead = 2 + Math.max(0, container.keys.length - 1);
+    if (container.kind === "o") {
+      for (const key of container.keys) {
+        overhead = add(
+          overhead,
+          stringSizes(key, limits4.maxStringBytes, subject).jsonBytes + 1,
+          limits4.maxBytes,
+          "maxBytes",
+          subject
+        );
+      }
+    }
+    budget.bytes = add(budget.bytes, overhead, limits4.maxBytes, "maxBytes", subject);
+    ancestors.add(value);
+    stack.push({ ...container, input: value, depth, next: 0, children: [] });
+  }
+  begin(input, 0);
+  while (stack.length > 0) {
+    const frame = stack[stack.length - 1];
+    if (frame.next < frame.keys.length) {
+      const key = frame.keys[frame.next++];
+      begin(frame.descriptors[key].value, frame.depth + 1);
+    } else {
+      stack.pop();
+      ancestors.delete(frame.input);
+      deliver(finish2(frame.kind, frame.keys, frame.children));
+    }
+  }
+  return result;
+}
+function wireLimits(limits4) {
+  return {
+    ...limits4,
+    maxEntries: limits4.maxEntries > (Number.MAX_SAFE_INTEGER - 32) / 12 ? Number.MAX_SAFE_INTEGER : limits4.maxEntries * 12 + 32,
+    maxDepth: 8,
+    maxStringBytes: Math.max(64, limits4.maxStringBytes)
+  };
+}
+function snapshotWire(value, limits4) {
+  return walkJson(value, wireLimits(limits4), (kind, keys, children) => kind === "a" ? children : Object.fromEntries(keys.map((key, index) => [key, children[index]])), "wire");
+}
+function encode(value, limits4) {
+  const table = [];
+  const interned = /* @__PURE__ */ new Map();
+  let tableBytes = 2;
+  const root = walkJson(value, limits4, (kind, keys, children) => {
+    const entry = [kind, kind === "a" ? children : keys.map((key, index2) => [key, children[index2]])];
+    const text = JSON.stringify(entry);
+    if (interned.has(text)) return ["ref", interned.get(text)];
+    const bytes = stringSizes(text, limits4.maxBytes, "encoded table").bytes;
+    tableBytes = add(tableBytes, bytes + (table.length > 0 ? 1 : 0), limits4.maxBytes, "maxBytes", "wire");
+    const index = table.length;
+    table.push(entry);
+    interned.set(text, index);
+    return ["ref", index];
+  }, "expanded value");
+  const envelope = { format: FORMAT, formatVersion: VERSION, root, table };
+  snapshotWire(envelope, limits4);
+  return envelope;
+}
+function isJsonValueTable(value) {
+  if (value === null || typeof value !== "object") return false;
+  try {
+    const descriptor3 = Object.getOwnPropertyDescriptor(value, "format");
+    return descriptor3 !== void 0 && Object.hasOwn(descriptor3, "value") && descriptor3.value === FORMAT;
+  } catch {
+    return false;
+  }
+}
+function reference(value, maximum2) {
+  if (!Array.isArray(value) || value.length !== 2 || value[0] !== "ref" || !Number.isSafeInteger(value[1]) || value[1] < 0 || value[1] >= maximum2) {
+    fail2("REFERENCE_INVALID", "A table reference must name an earlier container.");
+  }
+  return value[1];
+}
+function expandedMetrics(value, available, metrics, limits4) {
+  if (Array.isArray(value)) return metrics[reference(value, available)];
+  if (value !== null && typeof value === "object") {
+    fail2("INPUT_INVALID", "Encoded values must be scalars or reference tuples.");
+  }
+  const item = scalar(value, limits4, "expanded value");
+  if (item.bytes > limits4.maxBytes) {
+    fail2("LIMIT_EXCEEDED", "The expanded scalar exceeds its codec byte limit.", {
+      field: "maxBytes",
+      maximum: limits4.maxBytes,
+      subject: "expanded value"
+    });
+  }
+  return item;
+}
+function preflight(envelope, limits4) {
+  if (!plainObject(envelope) || Object.keys(envelope).join("\0") !== ENVELOPE_FIELDS.join("\0") || envelope.format !== FORMAT || !Array.isArray(envelope.table)) {
+    fail2("FORMAT_INVALID", "The JSON value-table envelope has an invalid field set or format.");
+  }
+  if (envelope.formatVersion !== VERSION) {
+    fail2("FORMAT_UNSUPPORTED", "The JSON value-table version is unsupported.");
+  }
+  const metrics = [];
+  for (const [index, entry] of envelope.table.entries()) {
+    if (!Array.isArray(entry) || entry.length !== 2 || !["a", "o"].includes(entry[0]) || !Array.isArray(entry[1])) {
+      fail2("INPUT_INVALID", "A table entry must contain an array or object payload.", { index });
+    }
+    const [kind, payload] = entry;
+    const result = { bytes: 2, entries: 1, depth: 0 };
+    let previous = null;
+    for (const [position, item] of payload.entries()) {
+      let value = item;
+      if (position > 0) result.bytes = add(result.bytes, 1, limits4.maxBytes, "maxBytes", "expanded value");
+      if (kind === "o") {
+        if (!Array.isArray(item) || item.length !== 2 || typeof item[0] !== "string" || FORBIDDEN_KEYS2.has(item[0])) {
+          fail2("INPUT_INVALID", "Object payloads require safe string-key/value pairs.", { index });
+        }
+        const [key, child2] = item;
+        if (previous !== null && compareText(previous, key) >= 0) {
+          fail2("NON_CANONICAL", "Object payload keys must be unique and sorted.", { index });
+        }
+        previous = key;
+        result.bytes = add(
+          result.bytes,
+          stringSizes(key, limits4.maxStringBytes, "expanded key").jsonBytes + 1,
+          limits4.maxBytes,
+          "maxBytes",
+          "expanded value"
+        );
+        value = child2;
+      }
+      const child = expandedMetrics(value, index, metrics, limits4);
+      result.bytes = add(result.bytes, child.bytes, limits4.maxBytes, "maxBytes", "expanded value");
+      result.entries = add(result.entries, child.entries, limits4.maxEntries, "maxEntries", "expanded value");
+      result.depth = Math.max(result.depth, child.depth + 1);
+      if (result.depth > limits4.maxDepth) {
+        fail2("LIMIT_EXCEEDED", "The expanded value exceeds its codec depth limit.", {
+          field: "maxDepth",
+          maximum: limits4.maxDepth,
+          subject: "expanded value"
+        });
+      }
+    }
+    if (result.bytes > limits4.maxBytes) {
+      fail2("LIMIT_EXCEEDED", "The expanded container exceeds its codec byte limit.", {
+        field: "maxBytes",
+        maximum: limits4.maxBytes,
+        subject: "expanded value"
+      });
+    }
+    metrics.push(result);
+  }
+  expandedMetrics(envelope.root, metrics.length, metrics, limits4);
+}
+function materialize(envelope) {
+  let result;
+  const stack = [];
+  const deliver = (value) => {
+    if (stack.length === 0) result = value;
+    else {
+      const frame = stack[stack.length - 1];
+      const position = frame.next - 1;
+      if (frame.kind === "a") frame.value.push(value);
+      else frame.value[frame.payload[position][0]] = value;
+    }
+  };
+  function begin(encoded4) {
+    if (!Array.isArray(encoded4)) {
+      deliver(Object.is(encoded4, -0) ? 0 : encoded4);
+      return;
+    }
+    const [kind, payload] = envelope.table[encoded4[1]];
+    stack.push({ kind, payload, next: 0, value: kind === "a" ? [] : {} });
+  }
+  begin(envelope.root);
+  while (stack.length > 0) {
+    const frame = stack[stack.length - 1];
+    if (frame.next < frame.payload.length) {
+      const item = frame.payload[frame.next++];
+      begin(frame.kind === "a" ? item : item[1]);
+    } else {
+      stack.pop();
+      deliver(frame.value);
+    }
+  }
+  return result;
+}
+function decodeJsonValueTable(value, options = {}) {
+  return guarded(() => {
+    const limits4 = normalizeOptions(options);
+    const envelope = snapshotWire(value, limits4);
+    preflight(envelope, limits4);
+    const restored = materialize(envelope);
+    const expected = encode(restored, limits4);
+    if (JSON.stringify(expected) !== JSON.stringify(envelope)) {
+      fail2("NON_CANONICAL", "The table must use exact first-occurrence postorder interning with no unused entries.");
+    }
+    return restored;
+  });
+}
 
 // packages/model-pack/src/index.js
 var MODEL_PACK_FORMAT = "onto2d-model-pack";
@@ -729,44 +1101,36 @@ var INDEX_FILE_IDS = Object.freeze([
   "scientificStatus"
 ]);
 var FORBIDDEN_IDENTIFIERS = /* @__PURE__ */ new Set(["__proto__", "constructor", "prototype"]);
-var ModelPackError = class extends Error {
-  constructor(code, message, details = {}) {
-    super(message);
-    this.name = "ModelPackError";
-    this.code = code;
-    this.details = Object.freeze({ ...details });
-  }
-};
-function fail2(code, message, details) {
+function fail3(code, message, details) {
   throw new ModelPackError(code, message, details);
 }
 function requirePlainObject(value, name) {
   if (value === null || typeof value !== "object" || Array.isArray(value)) {
-    fail2("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
+    fail3("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
   }
   const prototype = Object.getPrototypeOf(value);
   if (prototype !== Object.prototype && prototype !== null) {
-    fail2("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
+    fail3("MODEL_PACK_INPUT_INVALID", `${name} must be a plain object.`, { name });
   }
   return value;
 }
 function requireString(value, name, maximum2 = 1024) {
   if (typeof value !== "string" || value.length === 0 || value.length > maximum2) {
-    fail2("MODEL_PACK_INPUT_INVALID", `${name} must be a non-empty bounded string.`, { name });
+    fail3("MODEL_PACK_INPUT_INVALID", `${name} must be a non-empty bounded string.`, { name });
   }
   return value;
 }
 function requireIdentifier(value, name) {
   const identifier = requireString(value, name);
   if (FORBIDDEN_IDENTIFIERS.has(identifier)) {
-    fail2("MODEL_PACK_IDENTIFIER_FORBIDDEN", `${name} uses a prototype-sensitive identifier.`, {
+    fail3("MODEL_PACK_IDENTIFIER_FORBIDDEN", `${name} uses a prototype-sensitive identifier.`, {
       name,
       identifier
     });
   }
   return identifier;
 }
-function compareText(left, right) {
+function compareText2(left, right) {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 function normalizeModel(value) {
@@ -787,35 +1151,35 @@ function normalizeModel(value) {
 function normalizeSource(value) {
   const source = requirePlainObject(value, "source");
   if (!Array.isArray(source.files)) {
-    fail2("MODEL_PACK_INPUT_INVALID", "source.files must be an array.");
+    fail3("MODEL_PACK_INPUT_INVALID", "source.files must be an array.");
   }
   const paths = /* @__PURE__ */ new Set();
   const files = source.files.map((entry, index) => {
     const file = requirePlainObject(entry, `source.files[${index}]`);
     const filePath = requireString(file.path, `source.files[${index}].path`);
     if (filePath.startsWith("/") || filePath.includes("\\") || filePath.split("/").some((segment) => segment === "" || segment === "." || segment === "..")) {
-      fail2("MODEL_PACK_SOURCE_PATH_INVALID", "Source paths must be normalized relative paths.", {
+      fail3("MODEL_PACK_SOURCE_PATH_INVALID", "Source paths must be normalized relative paths.", {
         path: filePath
       });
     }
     if (paths.has(filePath)) {
-      fail2("MODEL_PACK_SOURCE_PATH_DUPLICATE", "Source paths must be unique.", { path: filePath });
+      fail3("MODEL_PACK_SOURCE_PATH_DUPLICATE", "Source paths must be unique.", { path: filePath });
     }
     paths.add(filePath);
     if (!isContentHash(file.hash)) {
-      fail2("MODEL_PACK_SOURCE_HASH_INVALID", "Every source file requires a content hash.", {
+      fail3("MODEL_PACK_SOURCE_HASH_INVALID", "Every source file requires a content hash.", {
         path: filePath
       });
     }
     return { path: filePath, hash: file.hash };
-  }).sort((left, right) => compareText(left.path, right.path));
+  }).sort((left, right) => compareText2(left.path, right.path));
   const normalized = {
     id: requireIdentifier(source.id, "source.id"),
     files
   };
   if (source.auditHash !== void 0) {
     if (!isContentHash(source.auditHash)) {
-      fail2("MODEL_PACK_SOURCE_HASH_INVALID", "source.auditHash must be a content hash.");
+      fail3("MODEL_PACK_SOURCE_HASH_INVALID", "source.auditHash must be a content hash.");
     }
     normalized.auditHash = source.auditHash;
   }
@@ -823,21 +1187,21 @@ function normalizeSource(value) {
 }
 function normalizeNodes(value) {
   if (!Array.isArray(value) || value.length === 0) {
-    fail2("MODEL_PACK_NODES_INVALID", "nodes must be a non-empty array.");
+    fail3("MODEL_PACK_NODES_INVALID", "nodes must be a non-empty array.");
   }
   const identifiers = /* @__PURE__ */ new Set();
   return value.map((entry, index) => {
     const node = canonicalClone(requirePlainObject(entry, `nodes[${index}]`));
     const id = requireIdentifier(node.id, `nodes[${index}].id`);
     if (identifiers.has(id)) {
-      fail2("MODEL_PACK_NODE_DUPLICATE", "Model node identifiers must be unique.", { id });
+      fail3("MODEL_PACK_NODE_DUPLICATE", "Model node identifiers must be unique.", { id });
     }
     identifiers.add(id);
     return node;
-  }).sort((left, right) => compareText(left.id, right.id));
+  }).sort((left, right) => compareText2(left.id, right.id));
 }
 function normalizeEdges(value, nodeIds) {
-  if (!Array.isArray(value)) fail2("MODEL_PACK_EDGES_INVALID", "edges must be an array.");
+  if (!Array.isArray(value)) fail3("MODEL_PACK_EDGES_INVALID", "edges must be an array.");
   const identifiers = /* @__PURE__ */ new Set();
   return value.map((entry, index) => {
     const edge = canonicalClone(requirePlainObject(entry, `edges[${index}]`));
@@ -845,10 +1209,10 @@ function normalizeEdges(value, nodeIds) {
     const source = requireIdentifier(edge.source, `edges[${index}].source`);
     const target = requireIdentifier(edge.target, `edges[${index}].target`);
     if (identifiers.has(id)) {
-      fail2("MODEL_PACK_EDGE_DUPLICATE", "Model edge identifiers must be unique.", { id });
+      fail3("MODEL_PACK_EDGE_DUPLICATE", "Model edge identifiers must be unique.", { id });
     }
     if (!nodeIds.has(source) || !nodeIds.has(target)) {
-      fail2("MODEL_PACK_EDGE_ENDPOINT_MISSING", "Every edge endpoint must resolve to a model node.", {
+      fail3("MODEL_PACK_EDGE_ENDPOINT_MISSING", "Every edge endpoint must resolve to a model node.", {
         id,
         source,
         target
@@ -856,7 +1220,7 @@ function normalizeEdges(value, nodeIds) {
     }
     identifiers.add(id);
     return edge;
-  }).sort((left, right) => compareText(left.id, right.id));
+  }).sort((left, right) => compareText2(left.id, right.id));
 }
 function groupedIndex(nodes, field) {
   const groups = /* @__PURE__ */ new Map();
@@ -866,7 +1230,7 @@ function groupedIndex(nodes, field) {
     if (!groups.has(key)) groups.set(key, { value: node[field], nodes: [] });
     groups.get(key).nodes.push(node.id);
   }
-  return [...groups.values()].map((entry) => ({ ...entry, nodes: entry.nodes.sort(compareText) })).sort((left, right) => compareText(canonicalize(left.value), canonicalize(right.value)));
+  return [...groups.values()].map((entry) => ({ ...entry, nodes: entry.nodes.sort(compareText2) })).sort((left, right) => compareText2(canonicalize(left.value), canonicalize(right.value)));
 }
 function buildModelIndexes(nodesInput, edgesInput) {
   const nodes = normalizeNodes(nodesInput);
@@ -880,8 +1244,8 @@ function buildModelIndexes(nodesInput, edgesInput) {
   }
   const neighborIndex = (index) => [...index.entries()].map(([id, neighbors]) => ({
     id,
-    nodes: [...neighbors].sort(compareText)
-  })).sort((left, right) => compareText(left.id, right.id));
+    nodes: [...neighbors].sort(compareText2)
+  })).sort((left, right) => compareText2(left.id, right.id));
   return deepFreeze(canonicalClone({
     byId: nodes.map((node, index) => ({ id: node.id, index })),
     parents: neighborIndex(parents),
@@ -962,15 +1326,16 @@ function buildModelPack(input) {
   return deepFreeze(canonicalClone({ manifest, files }, MODEL_PACK_CANONICAL_OPTIONS));
 }
 function verifyModelPack(pack) {
-  const value = canonicalClone(requirePlainObject(pack, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
+  const decoded = isJsonValueTable(pack) ? decodeJsonValueTable(pack) : pack;
+  const value = canonicalClone(requirePlainObject(decoded, "pack"), MODEL_PACK_CANONICAL_OPTIONS);
   const manifest = requirePlainObject(value.manifest, "pack.manifest");
   const files = requirePlainObject(value.files, "pack.files");
   if (manifest.format !== MODEL_PACK_FORMAT || manifest.formatVersion !== MODEL_PACK_FORMAT_VERSION || manifest.schemaVersion !== MODEL_PACK_SCHEMA_VERSION || manifest.compatibility?.engineApiVersion !== MODEL_PACK_ENGINE_API_VERSION || manifest.compatibility?.modelPackFormatVersion !== MODEL_PACK_FORMAT_VERSION) {
-    fail2("MODEL_PACK_COMPATIBILITY_UNSUPPORTED", "The Model Pack format is not supported.");
+    fail3("MODEL_PACK_COMPATIBILITY_UNSUPPORTED", "The Model Pack format is not supported.");
   }
   for (const filePath of Object.values(FILE_PATHS)) {
     if (!Object.hasOwn(files, filePath)) {
-      fail2("MODEL_PACK_FILE_MISSING", "The Model Pack is missing a required file.", {
+      fail3("MODEL_PACK_FILE_MISSING", "The Model Pack is missing a required file.", {
         path: filePath
       });
     }
@@ -983,7 +1348,7 @@ function verifyModelPack(pack) {
     dictionaries: files[FILE_PATHS.dictionaries]
   });
   if (canonicalize(value, MODEL_PACK_CANONICAL_OPTIONS) !== canonicalize(expected, MODEL_PACK_CANONICAL_OPTIONS)) {
-    fail2("MODEL_PACK_VERIFICATION_FAILED", "Model Pack bytes, indexes, or identities differ from reconstruction.", {
+    fail3("MODEL_PACK_VERIFICATION_FAILED", "Model Pack bytes, indexes, or identities differ from reconstruction.", {
       model: manifest.model?.id,
       version: manifest.model?.version
     });
@@ -995,7 +1360,7 @@ function modelPackFilePaths() {
 }
 
 // packages/engine/src/model.js
-function compareText2(left, right) {
+function compareText3(left, right) {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 function requireIdentifier2(value, name) {
@@ -1087,7 +1452,7 @@ var Model = class {
       this.#children.get(edge.source).push(edge);
     }
     for (const index of [this.#parents, this.#children]) {
-      for (const edges of index.values()) edges.sort((left, right) => compareText2(left.id, right.id));
+      for (const edges of index.values()) edges.sort((left, right) => compareText3(left.id, right.id));
     }
     Object.freeze(this);
   }
@@ -1144,7 +1509,7 @@ var Model = class {
     const identifier = this.require(id).id;
     const normalized = requirePlainQuery(selector, "selector");
     const relatedIds = new Set(index.get(identifier).filter((edge) => matches(edge, normalized)).map((edge) => edge[endpoint]));
-    const result = [...relatedIds].sort(compareText2).map((relatedId) => this.get(relatedId));
+    const result = [...relatedIds].sort(compareText3).map((relatedId) => this.get(relatedId));
     return Object.freeze(result);
   }
   parents(id, selector = {}) {
@@ -1207,7 +1572,7 @@ var Model = class {
       }
     }
     if (!distance.has(to)) return Object.freeze([]);
-    for (const values of predecessors.values()) values.sort(compareText2);
+    for (const values of predecessors.values()) values.sort(compareText3);
     const paths = [];
     const build = (current, suffix) => {
       if (current === from) {
@@ -1247,14 +1612,14 @@ var Model = class {
       const related = [];
       if (direction !== "children") related.push(...this.parents(current, selector));
       if (direction !== "parents") related.push(...this.children(current, selector));
-      for (const node of related.sort((left, right) => compareText2(left.id, right.id))) {
+      for (const node of related.sort((left, right) => compareText3(left.id, right.id))) {
         if (distance.has(node.id)) continue;
         distance.set(node.id, currentDepth + 1);
         queue.push(node.id);
       }
     }
     const identifiers = new Set(distance.keys());
-    const nodes = [...identifiers].sort(compareText2).map((nodeId) => this.get(nodeId));
+    const nodes = [...identifiers].sort(compareText3).map((nodeId) => this.get(nodeId));
     const edges = this.#edges.filter((edge) => identifiers.has(edge.source) && identifiers.has(edge.target) && matches(edge, selector));
     return deepFreeze({ nodes, edges, distance: [...distance.entries()].sort() });
   }
@@ -1302,6 +1667,96 @@ var SOURCE_PARENT_DIRECTED_POLICY = deepFreeze({
     "maxEdges": 16384
   }
 });
+var CANONICAL_RELATION_DIRECTED_POLICY = deepFreeze({
+  "id": "canonical-relation-directed-v1",
+  "version": "1",
+  "scope": "full-model",
+  "direction": "native",
+  "relationLayers": [
+    "descriptive",
+    "functional-support"
+  ],
+  "higherOrderPolicy": "none",
+  "selfLoops": "reject",
+  "parallelEdges": "reject",
+  "nodeAttributes": [
+    "level",
+    "typeRole",
+    "scientificStatus"
+  ],
+  "edgeAttributes": [
+    "relationLayer",
+    "role"
+  ],
+  "limits": {
+    "maxNodes": 4096,
+    "maxEdges": 16384
+  }
+});
+var CANONICAL_ARISING_CAUSAL_POLICY = deepFreeze({
+  "id": "canonical-arising-causal-v1",
+  "version": "1",
+  "scope": "arising-layer",
+  "direction": "native",
+  "nodeLayer": "arising",
+  "relationLayers": [
+    "causal"
+  ],
+  "excludedRelationLayers": [
+    "descriptive",
+    "functional-support"
+  ],
+  "higherOrderPolicy": "none",
+  "selfLoops": "reject",
+  "parallelEdges": "reject",
+  "nodeAttributes": [
+    "level",
+    "phase",
+    "typeRole",
+    "scientificStatus"
+  ],
+  "edgeAttributes": [
+    "relationLayer",
+    "dependencyType",
+    "necessity",
+    "ontologicalRole",
+    "status"
+  ],
+  "limits": {
+    "maxNodes": 4096,
+    "maxEdges": 16384
+  }
+});
+var CANONICAL_TECHNICAL_DIRECTED_POLICY = deepFreeze({
+  "id": "canonical-technical-directed-v1",
+  "version": "1",
+  "scope": "technical-layer",
+  "direction": "native",
+  "nodeLayer": "technical",
+  "relationLayers": [
+    "descriptive",
+    "functional-support"
+  ],
+  "excludedRelationLayers": [
+    "causal"
+  ],
+  "higherOrderPolicy": "none",
+  "selfLoops": "reject",
+  "parallelEdges": "reject",
+  "nodeAttributes": [
+    "level",
+    "typeRole",
+    "scientificStatus"
+  ],
+  "edgeAttributes": [
+    "relationLayer",
+    "role"
+  ],
+  "limits": {
+    "maxNodes": 4096,
+    "maxEdges": 16384
+  }
+});
 var UNIT_METRIC_POLICY = deepFreeze({
   "id": "unit-v1",
   "version": "1",
@@ -1312,7 +1767,7 @@ var UNIT_METRIC_POLICY = deepFreeze({
 });
 
 // packages/structural-geometry/src/forman.js
-var compareText3 = (left, right) => left < right ? -1 : left > right ? 1 : 0;
+var compareText4 = (left, right) => left < right ? -1 : left > right ? 1 : 0;
 function summarize(values) {
   let sum2 = 0;
   let minimum2 = null;
@@ -1342,7 +1797,7 @@ function group(edges, attributeRecord, field) {
     if (!groups.has(serialized)) groups.set(serialized, { key, values: [] });
     groups.get(serialized).values.push(edge.curvature);
   }
-  return [...groups].sort(([a], [b]) => compareText3(a, b)).map(([, entry]) => ({
+  return [...groups].sort(([a], [b]) => compareText4(a, b)).map(([, entry]) => ({
     key: entry.key,
     summary: summarize(entry.values)
   }));
@@ -1377,7 +1832,13 @@ function calculateDirectedUnitForman(projection) {
     nodes,
     edges,
     summary,
-    groups: {
+    // Policies that type edges by relation role summarize roles; the others summarize dependency typing.
+    groups: projection.policy.edgeAttributes.includes("role") ? {
+      bySourceLevel: group(edges, (edge) => nodeAttributes.get(edge.source), "level"),
+      byTargetLevel: group(edges, (edge) => nodeAttributes.get(edge.target), "level"),
+      byRelationLayer: group(edges, (edge) => edgeAttributes.get(edge.id), "relationLayer"),
+      byRole: group(edges, (edge) => edgeAttributes.get(edge.id), "role")
+    } : {
       bySourceLevel: group(edges, (edge) => nodeAttributes.get(edge.source), "level"),
       byTargetLevel: group(edges, (edge) => nodeAttributes.get(edge.target), "level"),
       byDependencyType: group(edges, (edge) => edgeAttributes.get(edge.id), "dependencyType"),
@@ -1392,7 +1853,7 @@ function calculateDirectedUnitForman(projection) {
 }
 
 // packages/structural-geometry/src/engine-model.js
-function fail3(code, message) {
+function fail4(code, message) {
   throw new EngineError(`STRUCTURAL_GEOMETRY_${code}`, message);
 }
 function packFromEngineModel(model) {
@@ -1400,7 +1861,7 @@ function packFromEngineModel(model) {
   try {
     manifest = Object.getOwnPropertyDescriptor(Model.prototype, "manifest").get.call(model);
   } catch {
-    fail3("MODEL_REQUIRED", "The engine analysis requires a verified engine Model.");
+    fail4("MODEL_REQUIRED", "The engine analysis requires a verified engine Model.");
   }
   const pack = buildModelPack({
     model: manifest.model,
@@ -1410,7 +1871,7 @@ function packFromEngineModel(model) {
     dictionaries: model.dictionaries
   });
   if (canonicalize(pack.manifest) !== canonicalize(manifest)) {
-    fail3("MODEL_BINDING_MISMATCH", "Engine record views differ from their verified Model Pack.");
+    fail4("MODEL_BINDING_MISMATCH", "Engine record views differ from their verified Model Pack.");
   }
   return pack;
 }
@@ -1420,31 +1881,30 @@ var STRUCTURAL_GEOMETRY_ANALYSIS_ID = "structural-geometry";
 var STRUCTURAL_GEOMETRY_ANALYSIS_VERSION = "1";
 var STRUCTURAL_GEOMETRY_REQUEST_SCHEMA = "https://onto2d.dev/schemas/v1/structural-geometry-request.schema.json";
 var STRUCTURAL_GEOMETRY_ARTIFACT_SCHEMA = "https://onto2d.dev/schemas/v1/structural-geometry-artifact.schema.json";
-var PROJECTION_POLICY_HASH = hashCanonical(
-  "onto2d:structural-projection-policy:v1",
-  SOURCE_PARENT_DIRECTED_POLICY
-);
+var PROJECTION_POLICIES = new Map([SOURCE_PARENT_DIRECTED_POLICY, CANONICAL_RELATION_DIRECTED_POLICY, CANONICAL_ARISING_CAUSAL_POLICY, CANONICAL_TECHNICAL_DIRECTED_POLICY].map((policy4) => [policy4.id, { policy: policy4, hash: hashCanonical("onto2d:structural-projection-policy:v1", policy4) }]));
+var LAYER_POLICY_IDS = new Map([...PROJECTION_POLICIES.values()].filter(({ policy: policy4 }) => policy4.nodeLayer).map(({ policy: policy4 }) => [policy4.nodeLayer, policy4.id]));
 var METRIC_POLICY_HASH = hashCanonical("onto2d:structural-metric-policy:v1", UNIT_METRIC_POLICY);
 var PARAMETERS = Object.freeze({});
 var PARAMETERS_HASH = hashCanonical("onto2d:structural-geometry-parameters:v1", PARAMETERS);
-function fail4(code, message, details = {}) {
+function fail5(code, message, details = {}) {
   throw new EngineError(`STRUCTURAL_GEOMETRY_${code}`, message, details);
 }
 function normalizeRequest(input) {
   if (input === null || typeof input !== "object" || Array.isArray(input)) {
-    fail4("INPUT_INVALID", "The structural geometry request must be a plain object.");
+    fail5("INPUT_INVALID", "The structural geometry request must be a plain object.");
   }
   const value = canonicalClone(input);
   const unknown = Object.keys(value).filter((key) => !["projectionPolicyId", "metricPolicyId"].includes(key));
   if (unknown.length > 0) {
-    fail4("INPUT_INVALID", "The request contains unsupported fields.", { unknown });
+    fail5("INPUT_INVALID", "The request contains unsupported fields.", { unknown });
   }
-  if (Object.hasOwn(value, "projectionPolicyId") && value.projectionPolicyId !== SOURCE_PARENT_DIRECTED_POLICY.id) {
-    fail4("POLICY_UNSUPPORTED", "The projection policy is unsupported.");
+  if (Object.hasOwn(value, "projectionPolicyId") && !PROJECTION_POLICIES.has(value.projectionPolicyId)) {
+    fail5("POLICY_UNSUPPORTED", "The projection policy is unsupported.");
   }
   if (Object.hasOwn(value, "metricPolicyId") && value.metricPolicyId !== UNIT_METRIC_POLICY.id) {
-    fail4("POLICY_UNSUPPORTED", "The metric policy is unsupported.");
+    fail5("POLICY_UNSUPPORTED", "The metric policy is unsupported.");
   }
+  return value;
 }
 function attributes(record, fields2) {
   return Object.fromEntries(fields2.filter((field) => Object.hasOwn(record, field)).map((field) => [field, record[field]]));
@@ -1460,34 +1920,53 @@ function binding(manifest) {
 function seal(body, field, domain) {
   return deepFreeze({ ...body, [field]: hashCanonical(domain, body) });
 }
-function projectVerifiedPack(pack) {
-  const policy4 = SOURCE_PARENT_DIRECTED_POLICY;
+function selectPolicy(sourceEdges, requestedId) {
+  if (requestedId) return PROJECTION_POLICIES.get(requestedId);
+  const layers = new Set(sourceEdges.map((edge) => edge.relationLayer));
+  if (layers.has("causal")) return PROJECTION_POLICIES.get(CANONICAL_ARISING_CAUSAL_POLICY.id);
+  const canonical = layers.size > 0 && [...layers].every((layer) => CANONICAL_RELATION_DIRECTED_POLICY.relationLayers.includes(layer));
+  return PROJECTION_POLICIES.get(canonical ? CANONICAL_RELATION_DIRECTED_POLICY.id : SOURCE_PARENT_DIRECTED_POLICY.id);
+}
+function projectVerifiedPack(pack, request = {}) {
   const paths = modelPackFilePaths();
-  const sourceNodes = pack.files[paths.nodes];
-  const sourceEdges = pack.files[paths.edges];
-  if (sourceNodes.length > policy4.limits.maxNodes || sourceEdges.length > policy4.limits.maxEdges) {
-    fail4("LIMIT_EXCEEDED", "The complete graph exceeds the projection count bounds.", {
-      nodeCount: sourceNodes.length,
-      edgeCount: sourceEdges.length,
+  const allNodes = pack.files[paths.nodes];
+  const allEdges = pack.files[paths.edges];
+  const { policy: policy4, hash: policyHash } = selectPolicy(allEdges, request.projectionPolicyId);
+  const layers = policy4.relationLayers ?? [policy4.relationLayer];
+  if (allNodes.length > policy4.limits.maxNodes || allEdges.length > policy4.limits.maxEdges) {
+    fail5("LIMIT_EXCEEDED", "The complete graph exceeds the projection count bounds.", {
+      nodeCount: allNodes.length,
+      edgeCount: allEdges.length,
       limits: policy4.limits
     });
   }
+  const layered = Object.hasOwn(policy4, "nodeLayer");
+  const sourceNodes = layered ? allNodes.filter((node) => node.layer === policy4.nodeLayer) : allNodes;
+  if (layered && allNodes.some((node) => !LAYER_POLICY_IDS.has(node.layer))) {
+    fail5("NODE_LAYER_UNSUPPORTED", "Every node of a layered pack must declare a known layer.", { policyId: policy4.id, layers: [...LAYER_POLICY_IDS.keys()] });
+  }
+  const layerIds = new Set(sourceNodes.map((node) => node.id));
+  const sourceEdges = layered ? allEdges.filter((edge) => !policy4.excludedRelationLayers.includes(edge.relationLayer)) : allEdges;
   const pairs = /* @__PURE__ */ new Map();
   for (const edge of sourceEdges) {
-    if (edge.relationLayer !== policy4.relationLayer) {
-      fail4("RELATION_LAYER_UNSUPPORTED", "Every projected edge must be a source-parent relation.", {
-        edgeId: edge.id
+    if (layered && (!layerIds.has(edge.source) || !layerIds.has(edge.target))) {
+      fail5("LAYER_ENDPOINT_UNSUPPORTED", "A projected edge must join two nodes of the projected layer.", { edgeId: edge.id, policyId: policy4.id });
+    }
+    if (!layers.includes(edge.relationLayer)) {
+      fail5("RELATION_LAYER_UNSUPPORTED", "Every projected edge must use a relation layer of the projection policy.", {
+        edgeId: edge.id,
+        policyId: policy4.id
       });
     }
     if (edge.source === edge.target) {
-      fail4("SELF_LOOP_UNSUPPORTED", "The initial projection policy rejects self-loops.", {
+      fail5("SELF_LOOP_UNSUPPORTED", "The initial projection policy rejects self-loops.", {
         edgeId: edge.id
       });
     }
     if (!pairs.has(edge.source)) pairs.set(edge.source, /* @__PURE__ */ new Set());
     const targets = pairs.get(edge.source);
     if (targets.has(edge.target)) {
-      fail4("PARALLEL_EDGE_UNSUPPORTED", "The initial projection policy rejects parallel directed edges.", {
+      fail5("PARALLEL_EDGE_UNSUPPORTED", "The initial projection policy rejects parallel directed edges.", {
         edgeId: edge.id,
         source: edge.source,
         target: edge.target
@@ -1511,14 +1990,30 @@ function projectVerifiedPack(pack) {
     schemaVersion: "1",
     model: binding(pack.manifest),
     policy: policy4,
-    policyHash: PROJECTION_POLICY_HASH,
+    policyHash,
     nodes,
     edges
   }, "projectionHash", "onto2d:structural-projection:v1");
 }
+function layerPolicyForVerifiedNodes(pack, nodeIds) {
+  const nodes = pack.files[modelPackFilePaths().nodes];
+  if (!nodes.some((node) => node.layer)) return null;
+  const layer = new Map(nodes.map((node) => [node.id, node.layer]));
+  const found = new Set([...nodeIds].filter((id) => layer.has(id)).map((id) => layer.get(id)));
+  if (found.size === 0) return null;
+  if (found.size !== 1 || !LAYER_POLICY_IDS.has([...found][0])) {
+    fail5("LAYER_SCOPE_UNSUPPORTED", "An induced scope must lie within one layer of a layered pack.", { layers: [...found] });
+  }
+  return LAYER_POLICY_IDS.get([...found][0]);
+}
+function projectStructuralGeometryForScope(pack, scope) {
+  const verified = verifyModelPack(pack);
+  const policyId = scope?.kind === "induced" ? layerPolicyForVerifiedNodes(verified, scope.nodeIds) : null;
+  return projectVerifiedPack(verified, normalizeRequest(policyId ? { projectionPolicyId: policyId } : {}));
+}
 function projectStructuralGeometry(pack, request = {}) {
-  normalizeRequest(request);
-  return projectVerifiedPack(verifyModelPack(pack));
+  const value = normalizeRequest(request);
+  return projectVerifiedPack(verifyModelPack(pack), value);
 }
 function analyzeStructuralGeometry(pack, request = {}) {
   const projection = projectStructuralGeometry(pack, request);
@@ -1609,7 +2104,7 @@ function decimalFraction(value) {
   const n = BigInt(`${match[1]}${match[2]}${match[3] ?? ""}`);
   return places >= 0 ? fraction(n, 10n ** BigInt(places)) : fraction(n * 10n ** BigInt(-places));
 }
-var add = (a, b) => fraction(a.n * b.d + b.n * a.d, a.d * b.d);
+var add2 = (a, b) => fraction(a.n * b.d + b.n * a.d, a.d * b.d);
 var divide = (a, b) => fraction(a.n * b.d, a.d * b.n);
 var encodedFraction = (value) => ({ numerator: String(value.n), denominator: String(value.d) });
 var encodedInterval = (lower, upper = lower) => ({ lowerTicks: String(lower), upperTicks: String(upper) });
@@ -1694,18 +2189,18 @@ function connectivity(nodes, edges) {
 }
 
 // packages/structural-geometry/src/experiment-core.js
-function fail5(code, message, details = {}) {
+function fail6(code, message, details = {}) {
   throw new EngineError(`STRUCTURAL_EXPERIMENT_${code}`, message, details);
 }
 var hash = (name, value) => hashCanonical(`onto2d:${name}:v1`, value);
 var seal2 = (name, body) => deepFreeze({ ...body, artifactHash: hash(name, body) });
 function object(value, fields2, label) {
   if (value === null || typeof value !== "object" || Array.isArray(value)) {
-    fail5("INPUT_INVALID", `${label} must be a plain object.`);
+    fail6("INPUT_INVALID", `${label} must be a plain object.`);
   }
   const result = canonicalClone(value);
   if (Object.keys(result).some((field) => !fields2.includes(field))) {
-    fail5("INPUT_INVALID", `${label} contains unsupported fields.`);
+    fail6("INPUT_INVALID", `${label} contains unsupported fields.`);
   }
   return result;
 }
@@ -1713,10 +2208,10 @@ function normalize(input) {
   const value = object(input, ["selection", "metricPolicyId"], "request");
   const metricPolicyId = value.metricPolicyId ?? "unit-v1";
   if (value.metricPolicyId === null || !["unit-v1", "inverse-target-share-v1"].includes(metricPolicyId)) {
-    fail5("METRIC_UNSUPPORTED", "The requested experimental metric is unsupported.");
+    fail6("METRIC_UNSUPPORTED", "The requested experimental metric is unsupported.");
   }
   const raw = value.selection === void 0 ? { kind: "all" } : value.selection;
-  if (raw === null || typeof raw !== "object" || Array.isArray(raw)) fail5("INPUT_INVALID", "selection must be a plain object.");
+  if (raw === null || typeof raw !== "object" || Array.isArray(raw)) fail6("INPUT_INVALID", "selection must be a plain object.");
   const allowed = {
     all: ["kind"],
     necessity: ["kind", "through"],
@@ -1724,20 +2219,20 @@ function normalize(input) {
     channel: ["kind", "field", "value"]
   };
   if (typeof raw.kind !== "string" || !Object.hasOwn(allowed, raw.kind)) {
-    fail5("SELECTION_UNSUPPORTED", "The selection kind must be a supported string.");
+    fail6("SELECTION_UNSUPPORTED", "The selection kind must be a supported string.");
   }
   const selection2 = object(raw, allowed[raw.kind], "selection");
   if (selection2.kind === "necessity" && !TYPED_SELECTION_POLICY.necessityOrder.includes(selection2.through)) {
-    fail5("SELECTION_UNSUPPORTED", "Necessity selections require a supported endpoint.");
+    fail6("SELECTION_UNSUPPORTED", "Necessity selections require a supported endpoint.");
   }
   if (selection2.kind === "roles") {
     if (!Array.isArray(selection2.roles) || selection2.roles.length === 0 || selection2.roles.length > 3 || selection2.roles.some((role) => !TYPED_SELECTION_POLICY.roleUniverse.includes(role)) || new Set(selection2.roles).size !== selection2.roles.length) {
-      fail5("SELECTION_UNSUPPORTED", "Role selections require a nonempty unique subset of supported roles.");
+      fail6("SELECTION_UNSUPPORTED", "Role selections require a nonempty unique subset of supported roles.");
     }
     selection2.roles.sort();
   }
   if (selection2.kind === "channel" && (!TYPED_SELECTION_POLICY.channels.includes(selection2.field) || !Number.isSafeInteger(selection2.value) || selection2.value < 0)) {
-    fail5("SELECTION_UNSUPPORTED", "Channel selections require a supported field and nonnegative integer code.");
+    fail6("SELECTION_UNSUPPORTED", "Channel selections require a supported field and nonnegative integer code.");
   }
   return { selection: selection2, metricPolicyId };
 }
@@ -1749,11 +2244,11 @@ function select(projection, selection2) {
     let included = true;
     if (selection2.kind === "necessity") {
       const index = TYPED_SELECTION_POLICY.necessityOrder.indexOf(edge.attributes.necessity);
-      if (index < 0) fail5("CATEGORY_INVALID", "Every source edge requires a known necessity for this selection.", { edgeId: edge.id });
+      if (index < 0) fail6("CATEGORY_INVALID", "Every source edge requires a known necessity for this selection.", { edgeId: edge.id });
       included = index <= TYPED_SELECTION_POLICY.necessityOrder.indexOf(selection2.through);
     } else if (selection2.kind === "roles") {
       const role = edge.attributes.ontologicalRole;
-      if (!TYPED_SELECTION_POLICY.roleUniverse.includes(role)) fail5("CATEGORY_INVALID", "Every source edge requires a known ontological role for this selection.", { edgeId: edge.id });
+      if (!TYPED_SELECTION_POLICY.roleUniverse.includes(role)) fail6("CATEGORY_INVALID", "Every source edge requires a known ontological role for this selection.", { edgeId: edge.id });
       included = selection2.roles.includes(role);
     } else if (selection2.kind === "channel") {
       if (!Object.hasOwn(edge.attributes, selection2.field)) {
@@ -1763,7 +2258,7 @@ function select(projection, selection2) {
         const attribute = edge.attributes[selection2.field];
         const values = selection2.field === "dependencyTypeId" ? [attribute] : attribute;
         if (!Array.isArray(values) || values.some((v) => !Number.isSafeInteger(v) || v < 0) || new Set(values).size !== values.length) {
-          fail5("CHANNEL_INVALID", "Present channel values must be nonnegative integer codes without duplicates.", { edgeId: edge.id });
+          fail6("CHANNEL_INVALID", "Present channel values must be nonnegative integer codes without duplicates.", { edgeId: edge.id });
         }
         included = values.includes(selection2.value);
       }
@@ -1807,7 +2302,7 @@ function weightAudit(projection) {
   const targets = projection.nodes.map((node) => {
     const entries = incoming.get(node.id);
     const numeric = entries.every(({ edge }) => typeof edge.attributes.weight === "number");
-    const sum2 = numeric ? entries.reduce((total, { edge }) => add(total, decimalFraction(edge.attributes.weight)), fraction(0n)) : null;
+    const sum2 = numeric ? entries.reduce((total, { edge }) => add2(total, decimalFraction(edge.attributes.weight)), fraction(0n)) : null;
     const disposition = entries.length === 0 ? "no-parents" : entries.some((entry) => entry.invalid) ? "invalid" : sum2.n === sum2.d ? "normalized" : "non-unit-sum";
     return {
       nodeId: node.id,
@@ -1838,7 +2333,7 @@ function metric(projection, metricPolicyId) {
     for (const edge of projection.edges) lengths.set(edge.id, fraction(1n));
   } else {
     const audit = weightAudit(projection);
-    if (!audit.eligibleForInverseShare) fail5("WEIGHTS_INVALID", "The full source contains weights outside the inverse-share metric profile.", { invalidWeights: audit.invalidWeights });
+    if (!audit.eligibleForInverseShare) fail6("WEIGHTS_INVALID", "The full source contains weights outside the inverse-share metric profile.", { invalidWeights: audit.invalidWeights });
     auditHash = audit.artifactHash;
     const sums = new Map(audit.targets.map((target) => [target.nodeId, target.sourceWeightSum]));
     for (const edge of projection.edges) {
@@ -1858,9 +2353,10 @@ function metric(projection, metricPolicyId) {
 // packages/structural-geometry/src/experiments.js
 var STRUCTURAL_EXPERIMENT_REQUEST_SCHEMA = "https://onto2d.dev/schemas/v1/structural-metric-experiment-request.schema.json";
 var STRUCTURAL_EXPERIMENT_ARTIFACT_SCHEMA = "https://onto2d.dev/schemas/v1/structural-metric-experiment.schema.json";
-function fail6(code, message, details = {}) {
+function fail7(code, message, details = {}) {
   throw new EngineError(`STRUCTURAL_EXPERIMENT_${code}`, message, details);
 }
+var SOURCE_PARENT = Object.freeze({ projectionPolicyId: SOURCE_PARENT_DIRECTED_POLICY.id });
 var hash2 = (name, value) => hashCanonical(`onto2d:${name}:v1`, value);
 var seal3 = (name, body) => deepFreeze({ ...body, artifactHash: hash2(name, body) });
 function results(nodes, edges, lengths) {
@@ -1871,7 +2367,7 @@ function results(nodes, edges, lengths) {
     outgoing.get(edge.source).push(edge);
   }
   const incidenceCount = edges.reduce((count, edge) => count + incoming.get(edge.source).length + outgoing.get(edge.target).length, 0);
-  if (incidenceCount > STRUCTURAL_INTERVAL_POLICY.maxIncidences) fail6("LIMIT_EXCEEDED", "The selected incidence population exceeds the experiment budget.", { incidenceCount });
+  if (incidenceCount > STRUCTURAL_INTERVAL_POLICY.maxIncidences) fail7("LIMIT_EXCEEDED", "The selected incidence population exceeds the experiment budget.", { incidenceCount });
   const totals = new Map(nodes.map((node) => [node.id, { inLo: 0n, inHi: 0n, outLo: 0n, outHi: 0n }]));
   const signs = { negative: 0, zero: 0, positive: 0, unresolved: 0 };
   const unitComparison = { lower: 0, equal: 0, higher: 0, overlapping: 0 };
@@ -1951,7 +2447,7 @@ function results(nodes, edges, lengths) {
 }
 function analyzeStructuralMetricExperiment(pack, input = {}) {
   const request = normalize(input);
-  const projection = projectStructuralGeometry(pack);
+  const projection = projectStructuralGeometry(pack, SOURCE_PARENT);
   const selected = select(projection, request.selection);
   const context = metric(projection, request.metricPolicyId);
   return seal3("structural-metric-experiment", {
@@ -1993,6 +2489,7 @@ function createStructuralMetricExperimentAnalysis() {
 var structuralMetricExperimentAnalysis = createStructuralMetricExperimentAnalysis();
 
 // packages/structural-geometry/src/providers.js
+var SOURCE_PARENT2 = Object.freeze({ projectionPolicyId: SOURCE_PARENT_DIRECTED_POLICY.id });
 var LIMITS = {
   maxNodes: 4096,
   maxEdges: 16384,
@@ -2005,12 +2502,12 @@ var CODEC = { limits: { maxEntries: LIMITS.maxCanonicalEntries } };
 var ONE = Object.freeze({ numerator: "1", denominator: "1" });
 var contexts = /* @__PURE__ */ new WeakMap();
 var hash3 = (name, value) => hashCanonical(`onto2d:structural-provider-${name}:v1`, value, CODEC);
-function fail7(code, message) {
+function fail8(code, message) {
   throw new EngineError(`STRUCTURAL_PROVIDER_${code}`, message);
 }
 function encoded(value) {
   const text = canonicalize(value, CODEC);
-  if (new TextEncoder().encode(text).length > LIMITS.maxArtifactBytes) fail7("LIMIT_EXCEEDED", "Provider artifact exceeds its byte budget.");
+  if (new TextEncoder().encode(text).length > LIMITS.maxArtifactBytes) fail8("LIMIT_EXCEEDED", "Provider artifact exceeds its byte budget.");
   return text;
 }
 function seal4(name, body) {
@@ -2021,7 +2518,7 @@ function seal4(name, body) {
 function object2(value, allowed, required = []) {
   const result = canonicalClone(value);
   if (result === null || typeof result !== "object" || Array.isArray(result) || Object.keys(result).some((key) => !allowed.includes(key)) || required.some((key) => !Object.hasOwn(result, key))) {
-    fail7("INPUT_INVALID", "Provider input must be a closed object with the required fields.");
+    fail8("INPUT_INVALID", "Provider input must be a closed object with the required fields.");
   }
   return result;
 }
@@ -2044,7 +2541,7 @@ var STRUCTURAL_METRIC_PROVIDER_DESCRIPTORS = deepFreeze([
 })));
 function descriptor(id) {
   const value = STRUCTURAL_METRIC_PROVIDER_DESCRIPTORS.find((p) => p.id === id);
-  if (!value) fail7("UNSUPPORTED", "The provider ID is not implemented.");
+  if (!value) fail8("UNSUPPORTED", "The provider ID is not implemented.");
   return value;
 }
 function normalizeInput(input) {
@@ -2058,7 +2555,7 @@ function normalizeInput(input) {
   } else if (provider.id === "typed-channel-v1") {
     const value = object2(parameters2, ["field", "values"], ["field", "values"]);
     if (!TYPED_SELECTION_POLICY.channels.includes(value.field) || !Array.isArray(value.values) || value.values.length < 1 || value.values.length > LIMITS.maxViews || value.values.some((v) => !Number.isSafeInteger(v) || v < 0) || new Set(value.values).size !== value.values.length) {
-      fail7("INPUT_INVALID", "Typed channels require one supported field and 1\u201332 distinct nonnegative integer codes.");
+      fail8("INPUT_INVALID", "Typed channels require one supported field and 1\u201332 distinct nonnegative integer codes.");
     }
     normalized = { field: value.field, values: value.values.sort((a, b) => a - b) };
   } else normalized = object2(parameters2, []);
@@ -2066,7 +2563,7 @@ function normalizeInput(input) {
 }
 function createStructuralMetricContext(pack) {
   const source = verifyModelPack(pack);
-  const projection = projectStructuralGeometry(source);
+  const projection = projectStructuralGeometry(source, SOURCE_PARENT2);
   const body = {
     schemaVersion: "1",
     model: projection.model,
@@ -2082,13 +2579,13 @@ function createStructuralMetricContext(pack) {
 }
 function contextSource(context) {
   const state = contexts.get(context);
-  if (!state) fail7("CONTEXT_REQUIRED", "Recreate a verified metric context from the expected Model Pack.");
+  if (!state) fail8("CONTEXT_REQUIRED", "Recreate a verified metric context from the expected Model Pack.");
   return state.source;
 }
 function buildFromContext(projection, context, request) {
   contextSource(context);
   if (canonicalize(projection) !== canonicalize(context.projection)) {
-    fail7("PROJECTION_MISMATCH", "Provider projection differs from its complete verified source context.");
+    fail8("PROJECTION_MISMATCH", "Provider projection differs from its complete verified source context.");
   }
   projection = context.projection;
   const provider = descriptor(request.providerId);
@@ -2112,7 +2609,7 @@ function buildFromContext(projection, context, request) {
     const view = (selection2) => {
       const selected = select(projection, selection2);
       occurrences += selected.edges.length;
-      if (occurrences > LIMITS.maxTotalViewEdges) fail7("LIMIT_EXCEEDED", "Provider views exceed the total selected-edge budget.");
+      if (occurrences > LIMITS.maxTotalViewEdges) fail8("LIMIT_EXCEEDED", "Provider views exceed the total selected-edge budget.");
       return {
         selection: selection2,
         projectionHash: selected.projectionHash,
@@ -2149,14 +2646,14 @@ function buildFromContext(projection, context, request) {
 }
 function normalizeAnalysis(input) {
   const raw = object2(input, ["analysis", "metricProviderId", "selection"], ["analysis", "metricProviderId"]);
-  if (descriptor(raw.metricProviderId).kind !== "metric-values") fail7("CAPABILITY_UNSUPPORTED", "The requested analysis requires a metric-values provider.");
+  if (descriptor(raw.metricProviderId).kind !== "metric-values") fail8("CAPABILITY_UNSUPPORTED", "The requested analysis requires a metric-values provider.");
   if (raw.analysis === "structural-geometry") {
     if (raw.metricProviderId !== "unit-v1" || Object.hasOwn(raw, "selection")) {
-      fail7("CAPABILITY_UNSUPPORTED", "The original unit Forman analysis requires unit-v1 and the full projection.");
+      fail8("CAPABILITY_UNSUPPORTED", "The original unit Forman analysis requires unit-v1 and the full projection.");
     }
     return raw;
   }
-  if (raw.analysis !== "structural-metric-experiment") fail7("ANALYSIS_UNSUPPORTED", "The requested provider analysis is unsupported.");
+  if (raw.analysis !== "structural-metric-experiment") fail8("ANALYSIS_UNSUPPORTED", "The requested provider analysis is unsupported.");
   const legacyInput = { metricPolicyId: raw.metricProviderId };
   if (Object.hasOwn(raw, "selection")) legacyInput.selection = raw.selection;
   return { analysis: raw.analysis, metricProviderId: raw.metricProviderId, selection: normalize(legacyInput).selection };
@@ -2175,7 +2672,7 @@ function analyzeStructuralGeometryWithProvider(pack, input) {
   } else if (selection2?.kind === "channel") {
     viewArtifact = buildFromContext(context.projection, context, normalizeInput({ providerId: "typed-channel-v1", parameters: { field: selection2.field, values: [selection2.value] } }));
   }
-  const legacyArtifact = request.analysis === "structural-geometry" ? analyzeStructuralGeometry(source) : analyzeStructuralMetricExperiment(source, { metricPolicyId: request.metricProviderId, selection: selection2 });
+  const legacyArtifact = request.analysis === "structural-geometry" ? analyzeStructuralGeometry(source, SOURCE_PARENT2) : analyzeStructuralMetricExperiment(source, { metricPolicyId: request.metricProviderId, selection: selection2 });
   return seal4("analysis", {
     schemaVersion: "1",
     analysis: { id: "structural-provider-analysis", version: "1" },
@@ -2227,18 +2724,18 @@ var OLLIVIER_ANALYSIS_ID = "structural-ollivier";
 var ANALYSIS = Object.freeze({ id: OLLIVIER_ANALYSIS_ID, version: "1" });
 var LIMITS2 = OLLIVIER_POLICY.limits;
 var POLICY_HASH = hashCanonical("onto2d:structural-ollivier-policy:v1", OLLIVIER_POLICY);
-var fail8 = (code, message) => {
+var fail9 = (code, message) => {
   throw new EngineError(`STRUCTURAL_OLLIVIER_${code}`, message);
 };
 var seal5 = (body, field, domain) => deepFreeze({ ...body, [field]: hashCanonical(domain, body) });
 function exactFields(value, fields2, required = fields2) {
   if (value === null || typeof value !== "object" || Array.isArray(value) || Object.keys(value).some((key) => !fields2.includes(key)) || required.some((key) => !Object.hasOwn(value, key))) {
-    fail8("INPUT_INVALID", "Object fields differ from the closed Ollivier contract.");
+    fail9("INPUT_INVALID", "Object fields differ from the closed Ollivier contract.");
   }
 }
 function ids(value, maximum2, minimum2 = 1) {
   if (!Array.isArray(value) || value.length < minimum2 || value.length > maximum2 || value.some((id) => typeof id !== "string" || id.length === 0 || id.length > 1024) || new Set(value).size !== value.length) {
-    fail8("INPUT_INVALID", "IDs must be unique, nonempty strings within the declared count bounds.");
+    fail9("INPUT_INVALID", "IDs must be unique, nonempty strings within the declared count bounds.");
   }
   return [...value].sort();
 }
@@ -2251,9 +2748,9 @@ function normalizeInput2(input) {
   else if (scope.kind === "induced") {
     exactFields(scope, ["kind", "nodeIds"]);
     scope.nodeIds = ids(scope.nodeIds, LIMITS2.maxNodes, 2);
-  } else fail8("INPUT_INVALID", "Choose full scope or an explicit induced node set.");
+  } else fail9("INPUT_INVALID", "Choose full scope or an explicit induced node set.");
   const idleness = Object.hasOwn(value, "idleness") ? value.idleness : OLLIVIER_POLICY.defaultIdleness;
-  if (!OLLIVIER_POLICY.idleness.includes(idleness)) fail8("INPUT_INVALID", "Unsupported idleness.");
+  if (!OLLIVIER_POLICY.idleness.includes(idleness)) fail9("INPUT_INVALID", "Unsupported idleness.");
   return { scope, edgeIds: ids(value.edgeIds, LIMITS2.maxAnalyzedEdges), idleness };
 }
 var gcd2 = (a, b) => b === 0 ? a : gcd2(b, a % b);
@@ -2264,7 +2761,7 @@ function measure(endpoint, neighbors, idleness) {
   const values = neighbors.map((nodeId) => ({ nodeId, n: 1, d: neighbors.length * (half ? 2 : 1) }));
   if (half) values.push({ nodeId: endpoint, n: 1, d: 2 });
   values.sort((a, b) => a.nodeId < b.nodeId ? -1 : a.nodeId > b.nodeId ? 1 : 0);
-  if (values.length > LIMITS2.maxSupportSize) fail8("LIMIT_EXCEEDED", "A measure exceeds the support bound.");
+  if (values.length > LIMITS2.maxSupportSize) fail9("LIMIT_EXCEEDED", "A measure exceeds the support bound.");
   return values;
 }
 function distances(source, outgoing) {
@@ -2282,13 +2779,13 @@ function distances(source, outgoing) {
 }
 function prepareOllivierRequest(pack, input) {
   const parameters2 = normalizeInput2(input);
-  const full = projectStructuralGeometry(pack);
+  const full = projectStructuralGeometryForScope(pack, parameters2.scope);
   const selected = parameters2.scope.kind === "full" ? new Set(full.nodes.map((n) => n.id)) : new Set(parameters2.scope.nodeIds);
   const nodes = full.nodes.filter((node) => selected.has(node.id)).map(({ id, sourceRecordHash }) => ({ id, sourceRecordHash }));
-  if (nodes.length !== selected.size) fail8("SCOPE_INVALID", "The induced scope contains unknown source nodes.");
+  if (nodes.length !== selected.size) fail9("SCOPE_INVALID", "The induced scope contains unknown source nodes.");
   const edges = full.edges.filter((edge) => selected.has(edge.source) && selected.has(edge.target)).map(({ id, source, target, sourceRecordHash }) => ({ id, source, target, sourceRecordHash }));
   if (nodes.length > LIMITS2.maxNodes || edges.length > LIMITS2.maxEdges) {
-    fail8("LIMIT_EXCEEDED", "Choose an explicit smaller induced scope; graphs are never truncated automatically.");
+    fail9("LIMIT_EXCEEDED", "Choose an explicit smaller induced scope; graphs are never truncated automatically.");
   }
   const graph = { nodes, edges };
   const scope = {
@@ -2313,31 +2810,31 @@ function prepareOllivierRequest(pack, input) {
   let cells = 0;
   const problems = parameters2.edgeIds.map((id) => {
     const edge = byId.get(id);
-    if (!edge) fail8("SCOPE_INVALID", "Every requested edge must belong to the scoped graph.");
+    if (!edge) fail9("SCOPE_INVALID", "Every requested edge must belong to the scoped graph.");
     const from = measure(edge.source, incoming.get(edge.source), parameters2.idleness);
     const to = measure(edge.target, outgoing.get(edge.target), parameters2.idleness);
     const denominator = [...from, ...to].reduce((d, entry) => lcm(d, entry.d), 1);
     cells += from.length * to.length;
     if (denominator > LIMITS2.maxMassDenominator || from.length * to.length > LIMITS2.maxTransportCells || cells > LIMITS2.maxTotalTransportCells) {
-      fail8("LIMIT_EXCEEDED", "The exact transport request exceeds its bounded profile.");
+      fail9("LIMIT_EXCEEDED", "The exact transport request exceeds its bounded profile.");
     }
     const costs = from.map(({ nodeId }) => {
       if (!distanceCache.has(nodeId)) distanceCache.set(nodeId, distances(nodeId, outgoing));
       return to.map((target) => {
         const distance = distanceCache.get(nodeId).get(target.nodeId);
-        if (distance === void 0) fail8("UNREACHABLE_SUPPORT", "A directed support pair is unreachable.");
+        if (distance === void 0) fail9("UNREACHABLE_SUPPORT", "A directed support pair is unreachable.");
         return distance;
       });
     });
-    const encode3 = (values) => values.map(({ nodeId, n, d }) => ({ nodeId, units: n * denominator / d }));
+    const encode4 = (values) => values.map(({ nodeId, n, d }) => ({ nodeId, units: n * denominator / d }));
     return {
       edgeId: id,
       source: edge.source,
       target: edge.target,
       distance: 1,
       massDenominator: denominator,
-      sourceMeasure: encode3(from),
-      targetMeasure: encode3(to),
+      sourceMeasure: encode4(from),
+      targetMeasure: encode4(to),
       costs
     };
   });
@@ -2355,24 +2852,24 @@ function prepareOllivierRequest(pack, input) {
     solver: OLLIVIER_SOLVER,
     problems
   }, "requestHash", "onto2d:structural-ollivier-request:v1");
-  if (new TextEncoder().encode(canonicalize(request)).length > LIMITS2.maxTransportBytes) fail8("LIMIT_EXCEEDED", "The request exceeds its byte bound.");
+  if (new TextEncoder().encode(canonicalize(request)).length > LIMITS2.maxTransportBytes) fail9("LIMIT_EXCEEDED", "The request exceeds its byte bound.");
   return request;
 }
 function integer(value, minimum2, maximum2) {
   if (!Number.isSafeInteger(value) || value < minimum2 || value > maximum2) {
-    fail8("CERTIFICATE_INVALID", "Certificate integers are outside their exact bounds.");
+    fail9("CERTIFICATE_INVALID", "Certificate integers are outside their exact bounds.");
   }
   return BigInt(value);
 }
 function array(value, length) {
-  if (!Array.isArray(value) || value.length !== length) fail8("CERTIFICATE_INVALID", "Certificate dimensions differ from the request.");
+  if (!Array.isArray(value) || value.length !== length) fail9("CERTIFICATE_INVALID", "Certificate dimensions differ from the request.");
 }
 function acceptPrepared(response, request) {
   const value = canonicalClone(response);
-  if (new TextEncoder().encode(canonicalize(value)).length > LIMITS2.maxTransportBytes) fail8("LIMIT_EXCEEDED", "The response exceeds its byte bound.");
+  if (new TextEncoder().encode(canonicalize(value)).length > LIMITS2.maxTransportBytes) fail9("LIMIT_EXCEEDED", "The response exceeds its byte bound.");
   exactFields(value, ["schemaVersion", "requestHash", "solver", "solutions"]);
   if (value.schemaVersion !== "1" || value.requestHash !== request.requestHash || canonicalize(value.solver) !== canonicalize(request.solver)) {
-    fail8("RESPONSE_BINDING_MISMATCH", "The response is not bound to this exact request and solver.");
+    fail9("RESPONSE_BINDING_MISMATCH", "The response is not bound to this exact request and solver.");
   }
   array(value.solutions, request.problems.length);
   let total = fraction(0n);
@@ -2380,7 +2877,7 @@ function acceptPrepared(response, request) {
   const results2 = request.problems.map((problem, index) => {
     const solution = value.solutions[index];
     exactFields(solution, ["edgeId", "flow", "sourcePotentials", "targetPotentials", "costNumerator"]);
-    if (solution.edgeId !== problem.edgeId) fail8("CERTIFICATE_INVALID", "Solution edge order differs from the request.");
+    if (solution.edgeId !== problem.edgeId) fail9("CERTIFICATE_INVALID", "Solution edge order differs from the request.");
     const m = problem.sourceMeasure.length;
     const n = problem.targetMeasure.length;
     array(solution.flow, m);
@@ -2397,23 +2894,23 @@ function acceptPrepared(response, request) {
       for (let j = 0; j < n; j += 1) {
         const mass = integer(solution.flow[i][j], 0, problem.massDenominator);
         const cost = BigInt(problem.costs[i][j]);
-        if (a[i] + b[j] > cost) fail8("CERTIFICATE_INVALID", "Transport dual constraints are violated.");
+        if (a[i] + b[j] > cost) fail9("CERTIFICATE_INVALID", "Transport dual constraints are violated.");
         row += mass;
         columns[j] += mass;
         primal += mass * cost;
       }
-      if (row !== BigInt(problem.sourceMeasure[i].units)) fail8("CERTIFICATE_INVALID", "Source mass is not conserved.");
+      if (row !== BigInt(problem.sourceMeasure[i].units)) fail9("CERTIFICATE_INVALID", "Source mass is not conserved.");
       dual += a[i] * row;
     }
     for (let j = 0; j < n; j += 1) {
-      if (columns[j] !== BigInt(problem.targetMeasure[j].units)) fail8("CERTIFICATE_INVALID", "Target mass is not conserved.");
+      if (columns[j] !== BigInt(problem.targetMeasure[j].units)) fail9("CERTIFICATE_INVALID", "Target mass is not conserved.");
       dual += b[j] * columns[j];
     }
     if (primal !== dual || primal !== integer(solution.costNumerator, 0, 3 * problem.massDenominator)) {
-      fail8("CERTIFICATE_INVALID", "The transport plan does not prove an exact optimum.");
+      fail9("CERTIFICATE_INVALID", "The transport plan does not prove an exact optimum.");
     }
     const curvature = fraction(BigInt(problem.massDenominator) - primal, BigInt(problem.massDenominator));
-    total = add(total, curvature);
+    total = add2(total, curvature);
     const sign = curvature.n < 0n ? "negative" : curvature.n > 0n ? "positive" : "zero";
     signs[sign] += 1;
     return {
@@ -2445,7 +2942,7 @@ function acceptOllivierResponse(response, pack, input) {
 function verifyOllivierArtifact(artifact, pack, input) {
   const value = canonicalClone(artifact);
   const expected = acceptOllivierResponse(value?.response, pack, input);
-  if (canonicalize(value) !== canonicalize(expected)) fail8("ARTIFACT_VERIFICATION_FAILED", "The artifact differs from source replay and certificate verification.");
+  if (canonicalize(value) !== canonicalize(expected)) fail9("ARTIFACT_VERIFICATION_FAILED", "The artifact differs from source replay and certificate verification.");
   return expected;
 }
 
@@ -2498,14 +2995,14 @@ var STRUCTURAL_FLOW_SOLVER = deepFreeze({
 });
 
 // packages/structural-geometry/src/flow-math.js
-var fail9 = (code, message) => {
+var fail10 = (code, message) => {
   throw new EngineError(`STRUCTURAL_FLOW_${code}`, message);
 };
 var limits = STRUCTURAL_FLOW_POLICY.limits;
 var ZERO = Object.freeze(fraction(0n));
 var ONE2 = Object.freeze(fraction(1n));
 var F = (value) => fraction(BigInt(value));
-var plus = add;
+var plus = add2;
 var div = divide;
 var sub = (a, b) => fraction(a.n * b.d - b.n * a.d, a.d * b.d);
 var mul = (a, b) => fraction(a.n * b.n, a.d * b.d);
@@ -2516,35 +3013,35 @@ var maximum = (values) => values.reduce((a, b) => compare(a, b) > 0 ? a : b);
 var minimum = (values) => values.reduce((a, b) => compare(a, b) < 0 ? a : b);
 function fields(value, allowed, required = allowed) {
   if (!value || typeof value !== "object" || Array.isArray(value) || Object.keys(value).some((key) => !allowed.includes(key)) || required.some((key) => !Object.hasOwn(value, key))) {
-    fail9("INPUT_INVALID", "Object fields differ from the closed structural flow contract.");
+    fail10("INPUT_INVALID", "Object fields differ from the closed structural flow contract.");
   }
 }
-function encode(value) {
+function encode2(value) {
   const output = encodedFraction(value);
   if (Object.values(output).some((text) => text.replace("-", "").length > limits.maxRationalDigits)) {
-    fail9("NUMERIC_LIMIT", "Exact rational arithmetic exceeds the declared digit bound.");
+    fail10("NUMERIC_LIMIT", "Exact rational arithmetic exceeds the declared digit bound.");
   }
   return output;
 }
 function rational(value, positive = false) {
   fields(value, ["numerator", "denominator"]);
   if (typeof value.numerator !== "string" || typeof value.denominator !== "string" || value.numerator.length > limits.maxRationalDigits + 1 || value.denominator.length > limits.maxRationalDigits || !/^(0|-?[1-9][0-9]*)$/.test(value.numerator) || !/^[1-9][0-9]*$/.test(value.denominator)) {
-    fail9("INPUT_INVALID", "Expected bounded reduced rational integer strings.");
+    fail10("INPUT_INVALID", "Expected bounded reduced rational integer strings.");
   }
   const result = fraction(BigInt(value.numerator), BigInt(value.denominator));
-  const encoded4 = encode(result);
+  const encoded4 = encode2(result);
   if (encoded4.numerator !== value.numerator || encoded4.denominator !== value.denominator || positive && result.n <= 0n) {
-    fail9("INPUT_INVALID", "Rational values must be reduced and satisfy the requested sign.");
+    fail10("INPUT_INVALID", "Rational values must be reduced and satisfy the requested sign.");
   }
   return result;
 }
 function integer2(value, low, high) {
-  if (!Number.isSafeInteger(value) || value < low || value > high) fail9("INPUT_INVALID", "Integer is outside the flow profile bounds.");
+  if (!Number.isSafeInteger(value) || value < low || value > high) fail10("INPUT_INVALID", "Integer is outside the flow profile bounds.");
   return value;
 }
 function ids2(value, low, high) {
   if (!Array.isArray(value) || value.length < low || value.length > high || value.some((id) => typeof id !== "string" || !id || id.length > 1024) || new Set(value).size !== value.length) {
-    fail9("INPUT_INVALID", "IDs must be bounded unique nonempty strings.");
+    fail10("INPUT_INVALID", "IDs must be bounded unique nonempty strings.");
   }
   return [...value].sort();
 }
@@ -2573,9 +3070,9 @@ function normalizeMetric(graph, raw) {
   const factor = div(F(graph.edges.length), closedSum);
   const lengths = closed.map((length) => mul(length, factor));
   return { lengths, normalization: {
-    rawSum: encode(rawSum),
-    closureSum: encode(closedSum),
-    factor: encode(factor),
+    rawSum: encode2(rawSum),
+    closureSum: encode2(closedSum),
+    factor: encode2(factor),
     shortenedEdgeIds: graph.edges.filter((_, i) => compare(closed[i], raw[i]) < 0).map((edge) => edge.id)
   } };
 }
@@ -2595,14 +3092,14 @@ function flowMeasures(graph, idleness) {
     if (!neighbors.length) return [{ nodeId: endpoint, denominator: 1 }];
     const values = neighbors.map((nodeId) => ({ nodeId, denominator: neighbors.length * (idleness === "half" ? 2 : 1) }));
     if (idleness === "half") values.push({ nodeId: endpoint, denominator: 2 });
-    if (values.length > limits.maxSupportSize) fail9("LIMIT_EXCEEDED", "Flow transport support exceeds the declared bound.");
+    if (values.length > limits.maxSupportSize) fail10("LIMIT_EXCEEDED", "Flow transport support exceeds the declared bound.");
     return values.sort(order);
   }
   return graph.edges.map((edge) => {
     const left = measure2(edge.source, incoming.get(edge.source));
     const right = measure2(edge.target, outgoing.get(edge.target));
     const denominator = [...left, ...right].reduce((d, value) => lcm2(d, value.denominator), 1);
-    if (denominator > limits.maxMassDenominator) fail9("LIMIT_EXCEEDED", "Flow mass denominator exceeds the declared bound.");
+    if (denominator > limits.maxMassDenominator) fail10("LIMIT_EXCEEDED", "Flow mass denominator exceeds the declared bound.");
     const encodeMeasure = (values) => values.map(({ nodeId, denominator: d }) => ({ nodeId, units: denominator / d }));
     return { sourceMeasure: encodeMeasure(left), targetMeasure: encodeMeasure(right), massDenominator: denominator };
   });
@@ -2611,17 +3108,17 @@ function prepareTransport(request, lengths, iteration, previousStateHash) {
   const graph = request.graph;
   const distances2 = allDistances(graph, lengths);
   const measures = flowMeasures(graph, request.parameters.idleness);
-  const metricHash = hashCanonical("onto2d:structural-flow-metric:v1", { flowRequestHash: request.requestHash, lengths: lengths.map(encode) });
+  const metricHash = hashCanonical("onto2d:structural-flow-metric:v1", { flowRequestHash: request.requestHash, lengths: lengths.map(encode2) });
   const problems = graph.edges.map((edge, i) => ({
     edgeId: edge.id,
     source: edge.source,
     target: edge.target,
-    distance: encode(distances2(edge.source, edge.target)),
+    distance: encode2(distances2(edge.source, edge.target)),
     ...measures[i],
     costs: measures[i].sourceMeasure.map((a) => measures[i].targetMeasure.map((b) => {
       const distance = distances2(a.nodeId, b.nodeId);
-      if (distance === null) fail9("UNREACHABLE_SUPPORT", "Flow transport requires an unreachable directed support pair.");
-      return encode(distance);
+      if (distance === null) fail10("UNREACHABLE_SUPPORT", "Flow transport requires an unreachable directed support pair.");
+      return encode2(distance);
     }))
   }));
   const body = {
@@ -2634,24 +3131,24 @@ function prepareTransport(request, lengths, iteration, previousStateHash) {
     problems
   };
   const result = deepFreeze({ ...body, requestHash: hashCanonical("onto2d:structural-flow-transport:v1", body) });
-  if (new TextEncoder().encode(canonicalize(result)).length > limits.maxTransportBytes) fail9("LIMIT_EXCEEDED", "Flow transport request exceeds its byte bound.");
+  if (new TextEncoder().encode(canonicalize(result)).length > limits.maxTransportBytes) fail10("LIMIT_EXCEEDED", "Flow transport request exceeds its byte bound.");
   return result;
 }
 function array2(value, length) {
-  if (!Array.isArray(value) || value.length !== length) fail9("CERTIFICATE_INVALID", "Flow certificate dimensions differ from the exact request.");
+  if (!Array.isArray(value) || value.length !== length) fail10("CERTIFICATE_INVALID", "Flow certificate dimensions differ from the exact request.");
 }
 function verifyTransport(response, request) {
   const value = canonicalClone(response);
-  if (new TextEncoder().encode(canonicalize(value)).length > limits.maxTransportBytes) fail9("LIMIT_EXCEEDED", "Flow transport response exceeds its byte bound.");
+  if (new TextEncoder().encode(canonicalize(value)).length > limits.maxTransportBytes) fail10("LIMIT_EXCEEDED", "Flow transport response exceeds its byte bound.");
   fields(value, ["schemaVersion", "requestHash", "solver", "solutions"]);
   if (value.schemaVersion !== "1" || value.requestHash !== request.requestHash || canonicalize(value.solver) !== canonicalize(request.solver)) {
-    fail9("RESPONSE_BINDING_MISMATCH", "Flow transport response differs from the expected request/solver identity.");
+    fail10("RESPONSE_BINDING_MISMATCH", "Flow transport response differs from the expected request/solver identity.");
   }
   array2(value.solutions, request.problems.length);
   const edges = request.problems.map((problem, index) => {
     const solution = value.solutions[index];
     fields(solution, ["edgeId", "flow", "sourcePotentials", "targetPotentials", "costNumerator"]);
-    if (solution.edgeId !== problem.edgeId) fail9("CERTIFICATE_INVALID", "Flow certificate edge order differs.");
+    if (solution.edgeId !== problem.edgeId) fail10("CERTIFICATE_INVALID", "Flow certificate edge order differs.");
     const m = problem.sourceMeasure.length;
     const n = problem.targetMeasure.length;
     array2(solution.flow, m);
@@ -2668,22 +3165,22 @@ function verifyTransport(response, request) {
       for (let j = 0; j < n; j += 1) {
         const mass = integer2(solution.flow[i][j], 0, problem.massDenominator);
         const cost = rational(problem.costs[i][j]);
-        if (compare(plus(a[i], b[j]), cost) > 0) fail9("CERTIFICATE_INVALID", "Flow dual feasibility is violated.");
+        if (compare(plus(a[i], b[j]), cost) > 0) fail10("CERTIFICATE_INVALID", "Flow dual feasibility is violated.");
         row += mass;
         columns[j] += mass;
         primalTerms.push(mul(F(mass), cost));
       }
-      if (row !== problem.sourceMeasure[i].units) fail9("CERTIFICATE_INVALID", "Flow source mass is not conserved.");
+      if (row !== problem.sourceMeasure[i].units) fail10("CERTIFICATE_INVALID", "Flow source mass is not conserved.");
       dualTerms.push(mul(a[i], F(row)));
     }
     columns.forEach((mass, j) => {
-      if (mass !== problem.targetMeasure[j].units) fail9("CERTIFICATE_INVALID", "Flow target mass is not conserved.");
+      if (mass !== problem.targetMeasure[j].units) fail10("CERTIFICATE_INVALID", "Flow target mass is not conserved.");
       dualTerms.push(mul(b[j], F(mass)));
     });
     const primal = sum(primalTerms);
     const dual = sum(dualTerms);
     if (compare(primal, dual) !== 0 || compare(primal, rational(solution.costNumerator)) !== 0) {
-      fail9("CERTIFICATE_INVALID", "Flow transport does not prove exact primal/dual equality.");
+      fail10("CERTIFICATE_INVALID", "Flow transport does not prove exact primal/dual equality.");
     }
     const wasserstein = div(primal, F(problem.massDenominator));
     return { id: problem.edgeId, wasserstein, curvature: sub(ONE2, div(wasserstein, rational(problem.distance, true))) };
@@ -2708,47 +3205,47 @@ function prepareStructuralFlow(pack, input = {}) {
   else if (scope.kind === "induced") {
     fields(scope, ["kind", "nodeIds"]);
     scope.nodeIds = ids2(scope.nodeIds, 2, limits.maxNodes);
-  } else fail9("INPUT_INVALID", "Flow scope must be full or an explicit induced node set.");
+  } else fail10("INPUT_INVALID", "Flow scope must be full or an explicit induced node set.");
   const maxIterations = integer2(supplied(value, "maxIterations", defaults.maxIterations), 1, limits.maxIterations);
   const stableSteps = integer2(supplied(value, "stableSteps", defaults.stableSteps), 1, limits.maxStableSteps);
   const step = supplied(value, "step", defaults.step);
   const idleness = supplied(value, "idleness", defaults.idleness);
-  if (!["half", "one"].includes(step) || !["zero", "half"].includes(idleness)) fail9("INPUT_INVALID", "Unsupported step or idleness.");
+  if (!["half", "one"].includes(step) || !["zero", "half"].includes(idleness)) fail10("INPUT_INVALID", "Unsupported step or idleness.");
   const tolerance = rational(supplied(value, "tolerance", defaults.tolerance), true);
-  if (compare(tolerance, ONE2) > 0) fail9("INPUT_INVALID", "Convergence tolerance must be at most one.");
+  if (compare(tolerance, ONE2) > 0) fail10("INPUT_INVALID", "Convergence tolerance must be at most one.");
   const cut = supplied(value, "cut", defaults.cut);
   fields(cut, ["kind", "threshold"], ["kind"]);
   if (cut.kind === "none") fields(cut, ["kind"]);
   else if (cut.kind === "final-length") {
     fields(cut, ["kind", "threshold"]);
     rational(cut.threshold, true);
-  } else fail9("INPUT_INVALID", "Unsupported analytical cut policy.");
-  const projection = projectStructuralGeometry(pack);
+  } else fail10("INPUT_INVALID", "Unsupported analytical cut policy.");
+  const projection = projectStructuralGeometryForScope(pack, scope);
   const selected = new Set(scope.kind === "full" ? projection.nodes.map((n) => n.id) : scope.nodeIds);
   const nodes = projection.nodes.filter((n) => selected.has(n.id)).map(({ id, sourceRecordHash }) => ({ id, sourceRecordHash }));
-  if (nodes.length !== selected.size) fail9("SCOPE_INVALID", "Unknown node in flow scope.");
+  if (nodes.length !== selected.size) fail10("SCOPE_INVALID", "Unknown node in flow scope.");
   const edges = projection.edges.filter((e) => selected.has(e.source) && selected.has(e.target)).map(({ id, source, target, sourceRecordHash }) => ({ id, source, target, sourceRecordHash }));
   if (nodes.length > limits.maxNodes || edges.length > limits.maxEdges || edges.length === 0) {
-    fail9("LIMIT_EXCEEDED", "Flow requires a bounded explicit graph with at least one edge; no truncation is performed.");
+    fail10("LIMIT_EXCEEDED", "Flow requires a bounded explicit graph with at least one edge; no truncation is performed.");
   }
   const graph = { nodes, edges };
   const measures = flowMeasures(graph, idleness);
   const cells = measures.reduce((total, m) => total + m.sourceMeasure.length * m.targetMeasure.length, 0);
   if (cells > limits.maxTransportCells || cells * (maxIterations + 1) > limits.maxHistoryTransportCells) {
-    fail9("LIMIT_EXCEEDED", "Requested flow history exceeds its transport-cell budget.");
+    fail10("LIMIT_EXCEEDED", "Requested flow history exceeds its transport-cell budget.");
   }
-  let initialLengths = edges.map((e) => ({ edgeId: e.id, length: encode(ONE2) }));
+  let initialLengths = edges.map((e) => ({ edgeId: e.id, length: encode2(ONE2) }));
   if (Object.hasOwn(value, "initialLengths")) {
-    if (!Array.isArray(value.initialLengths) || value.initialLengths.length !== edges.length) fail9("INPUT_INVALID", "Initial lengths must cover every scoped edge exactly once.");
+    if (!Array.isArray(value.initialLengths) || value.initialLengths.length !== edges.length) fail10("INPUT_INVALID", "Initial lengths must cover every scoped edge exactly once.");
     const byId = /* @__PURE__ */ new Map();
     for (const entry of value.initialLengths) {
       fields(entry, ["edgeId", "length"]);
       ids2([entry.edgeId], 1, 1);
-      if (byId.has(entry.edgeId)) fail9("INPUT_INVALID", "Duplicate initial edge length.");
-      byId.set(entry.edgeId, encode(rational(entry.length, true)));
+      if (byId.has(entry.edgeId)) fail10("INPUT_INVALID", "Duplicate initial edge length.");
+      byId.set(entry.edgeId, encode2(rational(entry.length, true)));
     }
     initialLengths = edges.map((e) => {
-      if (!byId.has(e.id)) fail9("INPUT_INVALID", "Initial lengths differ from scoped edge IDs.");
+      if (!byId.has(e.id)) fail10("INPUT_INVALID", "Initial lengths differ from scoped edge IDs.");
       return { edgeId: e.id, length: byId.get(e.id) };
     });
   }
@@ -2768,15 +3265,15 @@ function prepareStructuralFlow(pack, input = {}) {
     scope: annotatedScope,
     policy: STRUCTURAL_FLOW_POLICY,
     policyHash: POLICY_HASH2,
-    parameters: { scope, initialLengths, maxIterations, step, idleness, tolerance: encode(tolerance), stableSteps, cut }
+    parameters: { scope, initialLengths, maxIterations, step, idleness, tolerance: encode2(tolerance), stableSteps, cut }
   }, "requestHash", "onto2d:structural-flow-request:v1");
 }
 function stateFor(request, metric2, transport, verified, previous) {
   const edges = verified.edges.map((edge, i) => ({
     id: edge.id,
-    length: encode(metric2.lengths[i]),
-    wasserstein: encode(edge.wasserstein),
-    curvature: encode(edge.curvature)
+    length: encode2(metric2.lengths[i]),
+    wasserstein: encode2(edge.wasserstein),
+    curvature: encode2(edge.curvature)
   }));
   const curvatures = verified.edges.map((e) => e.curvature);
   const maxLengthChange = previous ? maximum(edges.map((e, i) => absolute(sub(metric2.lengths[i], rational(previous.edges[i].length))))) : null;
@@ -2796,16 +3293,16 @@ function stateFor(request, metric2, transport, verified, previous) {
     normalization: metric2.normalization,
     edges,
     summary: {
-      lengthSum: encode(sum(metric2.lengths)),
-      minimumLength: encode(minimumLength),
-      maximumLength: encode(maximumLength),
-      minimumCurvature: encode(minimum(curvatures)),
-      maximumCurvature: encode(maximum(curvatures)),
-      curvatureSum: encode(sum(curvatures)),
+      lengthSum: encode2(sum(metric2.lengths)),
+      minimumLength: encode2(minimumLength),
+      maximumLength: encode2(maximumLength),
+      minimumCurvature: encode2(minimum(curvatures)),
+      maximumCurvature: encode2(maximum(curvatures)),
+      curvatureSum: encode2(sum(curvatures)),
       signs,
       maximumLengthEdgeIds: edges.filter((_, i) => compare(metric2.lengths[i], maximumLength) === 0).map((e) => e.id),
-      maxLengthChange: maxLengthChange && encode(maxLengthChange),
-      maxCurvatureChange: maxCurvatureChange && encode(maxCurvatureChange),
+      maxLengthChange: maxLengthChange && encode2(maxLengthChange),
+      maxCurvatureChange: maxCurvatureChange && encode2(maxCurvatureChange),
       stableStepCount: stable ? previous.summary.stableStepCount + 1 : 0
     },
     transportResponse: verified.response
@@ -2876,14 +3373,14 @@ function finish(request, states, termination) {
     "artifactHash",
     "onto2d:structural-flow-artifact:v1"
   );
-  if (new TextEncoder().encode(canonicalize(artifact, CODEC2)).length > limits.maxArtifactBytes) fail9("LIMIT_EXCEEDED", "Flow artifact exceeds its byte bound.");
+  if (new TextEncoder().encode(canonicalize(artifact, CODEC2)).length > limits.maxArtifactBytes) fail10("LIMIT_EXCEEDED", "Flow artifact exceeds its byte bound.");
   return artifact;
 }
 function verifyStructuralFlowArtifact(artifact, pack, input = {}) {
   const value = canonicalClone(artifact, CODEC2);
   const request = prepareStructuralFlow(pack, input);
   if (!Array.isArray(value?.states) || value.states.length === 0 || value.states.length > request.parameters.maxIterations + 1) {
-    fail9("ARTIFACT_VERIFICATION_FAILED", "Flow history length is outside the expected request.");
+    fail10("ARTIFACT_VERIFICATION_FAILED", "Flow history length is outside the expected request.");
   }
   let metric2 = normalizeMetric(request.graph, request.parameters.initialLengths.map((e) => rational(e.length, true)));
   const states = [];
@@ -2897,13 +3394,13 @@ function verifyStructuralFlowArtifact(artifact, pack, input = {}) {
     const next = nextAction(request, metric2, state, previous, seen);
     if (next.termination) {
       const expected = finish(request, states, next.termination);
-      if (canonicalize(value, CODEC2) !== canonicalize(expected, CODEC2)) fail9("ARTIFACT_VERIFICATION_FAILED", "Flow history differs from exact source, update or stopping replay.");
+      if (canonicalize(value, CODEC2) !== canonicalize(expected, CODEC2)) fail10("ARTIFACT_VERIFICATION_FAILED", "Flow history differs from exact source, update or stopping replay.");
       return expected;
     }
     seen.set(state.metricHash, iteration);
     metric2 = next.metric;
   }
-  fail9("ARTIFACT_VERIFICATION_FAILED", "Flow history stops before a valid termination condition.");
+  fail10("ARTIFACT_VERIFICATION_FAILED", "Flow history stops before a valid termination condition.");
 }
 
 // packages/structural-geometry/src/geometric-signature-core.js
@@ -3327,7 +3824,7 @@ var aggregation = policy("exact-profile-equality-v1", {
   intervals: "unsupported",
   distanceConstruction: "deferred-to-comparison-contract"
 });
-var reference = ({ id, version, contentHash }) => ({ id, version, contentHash });
+var reference2 = ({ id, version, contentHash }) => ({ id, version, contentHash });
 function observable(id, valueType, units, definition3, supplier, evidence = ["verified-scoped-directed-projection"]) {
   const body = {
     schemaVersion: "1",
@@ -3383,7 +3880,7 @@ var DISTINGUISHABILITY_REGIMES = deepFreeze([
     scopePolicy,
     matchingPolicy,
     vocabularyPolicy,
-    observables: indices.map((index) => reference(STRUCTURAL_OBSERVABLE_SPECS[index])),
+    observables: indices.map((index) => reference2(STRUCTURAL_OBSERVABLE_SPECS[index])),
     invariancePolicy: invariance,
     probeSets,
     missingnessPolicy: missingness,
@@ -3402,18 +3899,18 @@ var DISTINGUISHABILITY_REGIMES = deepFreeze([
 }));
 
 // packages/structural-geometry/src/regimes.js
-function fail10(code, message) {
+function fail11(code, message) {
   throw new EngineError(`STRUCTURAL_REGIME_${code}`, message);
 }
 function object3(value, allowed, required) {
   if (value === null || typeof value !== "object" || Array.isArray(value) || Object.keys(value).some((key) => !allowed.includes(key)) || required.some((key) => !Object.hasOwn(value, key))) {
-    fail10("INPUT_INVALID", "Regime input must be a closed object with its required fields.");
+    fail11("INPUT_INVALID", "Regime input must be a closed object with its required fields.");
   }
   return value;
 }
 function lookup(entries, id) {
   const result = entries.find((entry) => entry.id === id);
-  if (!result) fail10("UNSUPPORTED", "The requested regime or observable contract is unsupported.");
+  if (!result) fail11("UNSUPPORTED", "The requested regime or observable contract is unsupported.");
   return result;
 }
 function getDistinguishabilityRegime(id) {
@@ -3428,10 +3925,10 @@ function normalize2(input) {
   else if (scope.kind === "induced") {
     const ids3 = scope.nodeIds;
     if (!Array.isArray(ids3) || ids3.length < regime2.limits.minNodes || ids3.length > regime2.limits.maxNodes || ids3.some((id) => typeof id !== "string" || !id.length) || new Set(ids3).size !== ids3.length) {
-      fail10("INPUT_INVALID", "An induced scope requires distinct source node IDs within the regime node bounds.");
+      fail11("INPUT_INVALID", "An induced scope requires distinct source node IDs within the regime node bounds.");
     }
     ids3.sort();
-  } else fail10("INPUT_INVALID", "Scope must be full or an explicit induced node set.");
+  } else fail11("INPUT_INVALID", "Scope must be full or an explicit induced node set.");
   return { regimeId: raw.regimeId, scope };
 }
 function prepareStructuralRegime(pack, input) {
@@ -3441,9 +3938,9 @@ function prepareStructuralRegime(pack, input) {
   const { projection } = context;
   const allIds = new Set(projection.nodes.map((node) => node.id));
   const nodeIds = request.scope.kind === "full" ? [...allIds] : request.scope.nodeIds;
-  if (nodeIds.some((id) => !allIds.has(id))) fail10("SCOPE_INVALID", "Induced scope contains a node absent from the verified source.");
+  if (nodeIds.some((id) => !allIds.has(id))) fail11("SCOPE_INVALID", "Induced scope contains a node absent from the verified source.");
   if (nodeIds.length < regime2.limits.minNodes || nodeIds.length > regime2.limits.maxNodes) {
-    fail10("LIMIT_EXCEEDED", "Scoped node count exceeds the declared matching bounds; select an explicit smaller induced scope.");
+    fail11("LIMIT_EXCEEDED", "Scoped node count exceeds the declared matching bounds; select an explicit smaller induced scope.");
   }
   const nodes = new Set(nodeIds);
   const edgeIds = [], incomingBoundaryEdgeIds = [], outgoingBoundaryEdgeIds = [], externalEdgeIds = [];
@@ -3451,7 +3948,7 @@ function prepareStructuralRegime(pack, input) {
     const from = nodes.has(edge.source), to = nodes.has(edge.target);
     (from && to ? edgeIds : from ? outgoingBoundaryEdgeIds : to ? incomingBoundaryEdgeIds : externalEdgeIds).push(edge.id);
   }
-  if (edgeIds.length > regime2.limits.maxEdges) fail10("LIMIT_EXCEEDED", "Scoped edge count exceeds the declared matching bounds.");
+  if (edgeIds.length > regime2.limits.maxEdges) fail11("LIMIT_EXCEEDED", "Scoped edge count exceeds the declared matching bounds.");
   const scopeBody = {
     kind: request.scope.kind,
     sourceProjectionHash: projection.projectionHash,
@@ -3475,12 +3972,12 @@ function prepareStructuralRegime(pack, input) {
     observableSpecs: regime2.observables.map(({ id }) => lookup(STRUCTURAL_OBSERVABLE_SPECS, id))
   };
   const artifact = { ...body, artifactHash: regimeHash("preparation", body) };
-  encode2(artifact, regime2);
+  encode3(artifact, regime2);
   return deepFreeze(artifact);
 }
-function encode2(value, regime2) {
+function encode3(value, regime2) {
   const text = canonicalize(value);
-  if (new TextEncoder().encode(text).length > regime2.limits.maxArtifactBytes) fail10("LIMIT_EXCEEDED", "Regime preparation exceeds its artifact byte budget.");
+  if (new TextEncoder().encode(text).length > regime2.limits.maxArtifactBytes) fail11("LIMIT_EXCEEDED", "Regime preparation exceeds its artifact byte budget.");
   return text;
 }
 
@@ -3498,7 +3995,7 @@ var DECIMAL_LIMITS = deepFreeze({
 });
 var DECIMAL_VALUE_FIELDS = /* @__PURE__ */ new Set(["arithmetic", "coefficient", "scale", "canonical"]);
 var DECIMAL_PATTERN = /^(-)?(0|[1-9][0-9]*)(?:\.([0-9]+))?(?:[eE]([+-]?(?:0|[1-9][0-9]*)))?$/;
-function fail11(code, message, details = {}) {
+function fail12(code, message, details = {}) {
   throw new KernelError({ code, stage: "DECIMAL", message, details });
 }
 function isObject(value) {
@@ -3530,21 +4027,21 @@ function normalizeParts(coefficient, scale) {
 }
 function assertPartsWithinLimits(coefficient, scale) {
   if (!Number.isSafeInteger(scale) || Math.abs(scale) > DECIMAL_LIMITS.maxAbsoluteScale) {
-    fail11("DECIMAL_LIMIT_EXCEEDED", "Decimal scale exceeds the resource limit.", {
+    fail12("DECIMAL_LIMIT_EXCEEDED", "Decimal scale exceeds the resource limit.", {
       scale,
       maximumAbsoluteScale: DECIMAL_LIMITS.maxAbsoluteScale
     });
   }
   const significantDigits = (coefficient < 0n ? -coefficient : coefficient).toString().length;
   if (significantDigits > DECIMAL_LIMITS.maxResultSignificantDigits) {
-    fail11("DECIMAL_LIMIT_EXCEEDED", "Decimal coefficient exceeds the significant-digit limit.", {
+    fail12("DECIMAL_LIMIT_EXCEEDED", "Decimal coefficient exceeds the significant-digit limit.", {
       significantDigits,
       maximum: DECIMAL_LIMITS.maxResultSignificantDigits
     });
   }
   const canonical = canonicalString(coefficient, scale);
   if (canonical.length > DECIMAL_LIMITS.maxCanonicalCharacters) {
-    fail11("DECIMAL_LIMIT_EXCEEDED", "Canonical decimal exceeds the character limit.", {
+    fail12("DECIMAL_LIMIT_EXCEEDED", "Canonical decimal exceeds the character limit.", {
       characters: canonical.length,
       maximum: DECIMAL_LIMITS.maxCanonicalCharacters
     });
@@ -3563,26 +4060,26 @@ function createDecimalValue(coefficient, scale) {
 }
 function parseText(text) {
   if (text.length === 0 || text.length > DECIMAL_LIMITS.maxInputCharacters || text !== text.trim()) {
-    fail11("DECIMAL_INPUT_INVALID", "Decimal input must be normalized and within the character limit.", {
+    fail12("DECIMAL_INPUT_INVALID", "Decimal input must be normalized and within the character limit.", {
       input: text,
       maximumCharacters: DECIMAL_LIMITS.maxInputCharacters
     });
   }
   const match = DECIMAL_PATTERN.exec(text);
   if (!match) {
-    fail11("DECIMAL_INPUT_INVALID", "Decimal input does not match the supported grammar.", { input: text });
+    fail12("DECIMAL_INPUT_INVALID", "Decimal input does not match the supported grammar.", { input: text });
   }
   const [, negative, integer3, fraction2 = "", exponentText = "0"] = match;
   const digits = `${integer3}${fraction2}`;
   if (digits.length > DECIMAL_LIMITS.maxInputSignificantDigits) {
-    fail11("DECIMAL_LIMIT_EXCEEDED", "Decimal input exceeds the significant-digit limit.", {
+    fail12("DECIMAL_LIMIT_EXCEEDED", "Decimal input exceeds the significant-digit limit.", {
       significantDigits: digits.length,
       maximum: DECIMAL_LIMITS.maxInputSignificantDigits
     });
   }
   const exponentBigInt = BigInt(exponentText.startsWith("+") ? exponentText.slice(1) : exponentText);
   if (exponentBigInt > BigInt(DECIMAL_LIMITS.maxAbsoluteScale) || exponentBigInt < BigInt(-DECIMAL_LIMITS.maxAbsoluteScale)) {
-    fail11("DECIMAL_LIMIT_EXCEEDED", "Decimal exponent exceeds the resource limit.", {
+    fail12("DECIMAL_LIMIT_EXCEEDED", "Decimal exponent exceeds the resource limit.", {
       exponent: exponentText,
       maximumAbsoluteScale: DECIMAL_LIMITS.maxAbsoluteScale
     });
@@ -3596,13 +4093,13 @@ function parseText(text) {
 function decimalText(input) {
   if (typeof input === "number") {
     if (!Number.isFinite(input)) {
-      fail11("DECIMAL_INPUT_INVALID", "Numeric decimal input must be finite.", { input });
+      fail12("DECIMAL_INPUT_INVALID", "Numeric decimal input must be finite.", { input });
     }
     return Object.is(input, -0) ? "0" : input.toString();
   }
   if (typeof input === "bigint") return input.toString();
   if (typeof input === "string") return input;
-  fail11("DECIMAL_INPUT_INVALID", "Decimal input must be a number, bigint, string, or parsed DecimalValue.", {
+  fail12("DECIMAL_INPUT_INVALID", "Decimal input must be a number, bigint, string, or parsed DecimalValue.", {
     inputType: typeof input
   });
 }
@@ -3613,14 +4110,14 @@ function parsedParts(value) {
 function validateDecimalValue(value) {
   const fields2 = Object.keys(value);
   if (fields2.some((field) => !DECIMAL_VALUE_FIELDS.has(field)) || [...DECIMAL_VALUE_FIELDS].some((field) => !fields2.includes(field)) || value.arithmetic !== DECIMAL_ARITHMETIC_VERSION || typeof value.coefficient !== "string" || !/^-?(?:0|[1-9][0-9]*)$/.test(value.coefficient) || !Number.isSafeInteger(value.scale) || typeof value.canonical !== "string") {
-    fail11("DECIMAL_VALUE_INVALID", "Parsed DecimalValue does not match the public contract.", {
+    fail12("DECIMAL_VALUE_INVALID", "Parsed DecimalValue does not match the public contract.", {
       fields: fields2,
       arithmetic: value.arithmetic
     });
   }
   const reconstructed = createDecimalValue(BigInt(value.coefficient), value.scale);
   if (reconstructed.coefficient !== value.coefficient || reconstructed.scale !== value.scale || reconstructed.canonical !== value.canonical) {
-    fail11("DECIMAL_VALUE_INVALID", "Parsed DecimalValue is not canonical.", {
+    fail12("DECIMAL_VALUE_INVALID", "Parsed DecimalValue is not canonical.", {
       coefficient: value.coefficient,
       scale: value.scale,
       canonical: value.canonical
@@ -3644,12 +4141,12 @@ function decimalToNumber(value) {
   const parsed = parseDecimal(value);
   const result = Number(parsed.canonical);
   if (!Number.isFinite(result)) {
-    fail11("DECIMAL_NUMBER_OVERFLOW", "Decimal value cannot be represented as finite binary64.", {
+    fail12("DECIMAL_NUMBER_OVERFLOW", "Decimal value cannot be represented as finite binary64.", {
       canonical: parsed.canonical
     });
   }
   if (result === 0 && parsed.coefficient !== "0") {
-    fail11("DECIMAL_NUMBER_UNDERFLOW", "Non-zero decimal value underflows the finite binary64 range.", {
+    fail12("DECIMAL_NUMBER_UNDERFLOW", "Non-zero decimal value underflows the finite binary64 range.", {
       canonical: parsed.canonical
     });
   }
@@ -3731,14 +4228,14 @@ var PREFIXES = Object.freeze([
   ["z", "1e-21"],
   ["y", "1e-24"]
 ]);
-function fail12(code, message, details = {}) {
+function fail13(code, message, details = {}) {
   throw new KernelError({ code, stage: "QUANTITY", message, details });
 }
 function isObject2(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 function normalizeFinite(value, code, message, details = {}) {
-  if (!Number.isFinite(value)) fail12(code, message, { ...details, value });
+  if (!Number.isFinite(value)) fail13(code, message, { ...details, value });
   return Object.is(value, -0) ? 0 : value;
 }
 function greatestCommonDivisor(left, right) {
@@ -3813,7 +4310,7 @@ function resolveSymbol(symbol) {
       };
     }
   }
-  fail12("QUANTITY_UNIT_UNSUPPORTED", "Unit symbol is not supported by the active grammar.", {
+  fail13("QUANTITY_UNIT_UNSUPPORTED", "Unit symbol is not supported by the active grammar.", {
     grammar: UNIT_GRAMMAR_VERSION,
     symbol
   });
@@ -3832,10 +4329,10 @@ function dimensionSignature(unitDimensions) {
 }
 function parseUnitExpressionInternal(expression) {
   if (typeof expression !== "string" || expression.length === 0) {
-    fail12("QUANTITY_UNIT_INVALID", "Unit expression must be a non-empty string.", { expression });
+    fail13("QUANTITY_UNIT_INVALID", "Unit expression must be a non-empty string.", { expression });
   }
   if (expression !== expression.trim() || /\s/.test(expression) || expression.length > MAX_UNIT_EXPRESSION_LENGTH) {
-    fail12("QUANTITY_UNIT_INVALID", "Unit expression is not normalized or exceeds the grammar limit.", {
+    fail13("QUANTITY_UNIT_INVALID", "Unit expression is not normalized or exceeds the grammar limit.", {
       expression,
       maximumLength: MAX_UNIT_EXPRESSION_LENGTH
     });
@@ -3848,7 +4345,7 @@ function parseUnitExpressionInternal(expression) {
   while (index < expression.length) {
     const symbolMatch = /^(?:1|[A-Za-z][A-Za-z0-9]*)/.exec(expression.slice(index));
     if (!symbolMatch) {
-      fail12("QUANTITY_UNIT_INVALID", "Expected a unit symbol.", { expression, index });
+      fail13("QUANTITY_UNIT_INVALID", "Expected a unit symbol.", { expression, index });
     }
     const symbol = symbolMatch[0];
     index += symbol.length;
@@ -3857,7 +4354,7 @@ function parseUnitExpressionInternal(expression) {
       index += 1;
       const exponentMatch = /^-?(?:[1-9][0-9]*)/.exec(expression.slice(index));
       if (!exponentMatch) {
-        fail12("QUANTITY_UNIT_INVALID", "Unit exponent must be a non-zero integer without leading zeroes.", {
+        fail13("QUANTITY_UNIT_INVALID", "Unit exponent must be a non-zero integer without leading zeroes.", {
           expression,
           index
         });
@@ -3865,7 +4362,7 @@ function parseUnitExpressionInternal(expression) {
       exponent = Number(exponentMatch[0]);
       index += exponentMatch[0].length;
       if (!Number.isSafeInteger(exponent) || Math.abs(exponent) > MAX_UNIT_EXPONENT) {
-        fail12("QUANTITY_UNIT_INVALID", "Unit exponent exceeds the grammar limit.", {
+        fail13("QUANTITY_UNIT_INVALID", "Unit exponent exceeds the grammar limit.", {
           expression,
           exponent,
           maximumAbsoluteExponent: MAX_UNIT_EXPONENT
@@ -3878,7 +4375,7 @@ function parseUnitExpressionInternal(expression) {
     const nextScaleRatio = multiplyScaleRatios(scaleRatio, scaleFactor);
     const nextScale = scaleRatioToNumber(nextScaleRatio);
     if (!Number.isFinite(nextScale) || nextScale === 0) {
-      fail12("QUANTITY_UNIT_INVALID", "Unit scale is outside the supported finite non-zero range.", {
+      fail13("QUANTITY_UNIT_INVALID", "Unit scale is outside the supported finite non-zero range.", {
         expression,
         scale: nextScale
       });
@@ -3887,7 +4384,7 @@ function parseUnitExpressionInternal(expression) {
     for (const [base, baseExponent] of Object.entries(definition3.dimensions)) {
       const combined = (resultDimensions[base] || 0) + baseExponent * exponent;
       if (Math.abs(combined) > MAX_COMBINED_EXPONENT) {
-        fail12("QUANTITY_UNIT_INVALID", "Combined unit exponent exceeds the grammar limit.", {
+        fail13("QUANTITY_UNIT_INVALID", "Combined unit exponent exceeds the grammar limit.", {
           expression,
           base,
           exponent: combined,
@@ -3899,7 +4396,7 @@ function parseUnitExpressionInternal(expression) {
     }
     factorCount += 1;
     if (factorCount > MAX_UNIT_FACTORS) {
-      fail12("QUANTITY_UNIT_INVALID", "Unit expression has too many factors.", {
+      fail13("QUANTITY_UNIT_INVALID", "Unit expression has too many factors.", {
         expression,
         maximumFactors: MAX_UNIT_FACTORS
       });
@@ -3907,7 +4404,7 @@ function parseUnitExpressionInternal(expression) {
     if (index === expression.length) break;
     const operator = expression[index];
     if (operator !== "*" && operator !== "/") {
-      fail12("QUANTITY_UNIT_INVALID", "Expected '*' or '/' between unit factors.", {
+      fail13("QUANTITY_UNIT_INVALID", "Expected '*' or '/' between unit factors.", {
         expression,
         index
       });
@@ -3915,7 +4412,7 @@ function parseUnitExpressionInternal(expression) {
     operatorSign = operator === "/" ? -1 : 1;
     index += 1;
     if (index === expression.length) {
-      fail12("QUANTITY_UNIT_INVALID", "Unit expression cannot end with an operator.", {
+      fail13("QUANTITY_UNIT_INVALID", "Unit expression cannot end with an operator.", {
         expression,
         index: index - 1
       });
@@ -3942,18 +4439,18 @@ function parseUnitExpression(expression) {
 }
 function normalizeTolerance(tolerance) {
   if (!isObject2(tolerance)) {
-    fail12("QUANTITY_TOLERANCE_INVALID", "Quantity tolerance must be an object.", { tolerance });
+    fail13("QUANTITY_TOLERANCE_INVALID", "Quantity tolerance must be an object.", { tolerance });
   }
   const keys = Object.keys(tolerance);
   if (keys.length === 0 || keys.some((key) => key !== "absolute" && key !== "relative")) {
-    fail12("QUANTITY_TOLERANCE_INVALID", "Tolerance needs an absolute or relative bound and no unknown fields.", {
+    fail13("QUANTITY_TOLERANCE_INVALID", "Tolerance needs an absolute or relative bound and no unknown fields.", {
       fields: keys
     });
   }
   const normalized = {};
   if (tolerance.absolute !== void 0) {
     if (!Number.isFinite(tolerance.absolute) || tolerance.absolute < 0) {
-      fail12("QUANTITY_TOLERANCE_INVALID", "Absolute tolerance must be finite and non-negative.", {
+      fail13("QUANTITY_TOLERANCE_INVALID", "Absolute tolerance must be finite and non-negative.", {
         value: tolerance.absolute
       });
     }
@@ -3961,14 +4458,14 @@ function normalizeTolerance(tolerance) {
   }
   if (tolerance.relative !== void 0) {
     if (!Number.isFinite(tolerance.relative) || tolerance.relative < 0) {
-      fail12("QUANTITY_TOLERANCE_INVALID", "Relative tolerance must be finite and non-negative.", {
+      fail13("QUANTITY_TOLERANCE_INVALID", "Relative tolerance must be finite and non-negative.", {
         value: tolerance.relative
       });
     }
     normalized.relative = Object.is(tolerance.relative, -0) ? 0 : tolerance.relative;
   }
   if (Object.keys(normalized).length === 0) {
-    fail12("QUANTITY_TOLERANCE_INVALID", "Tolerance needs a defined absolute or relative bound.", {
+    fail13("QUANTITY_TOLERANCE_INVALID", "Tolerance needs a defined absolute or relative bound.", {
       fields: keys
     });
   }
@@ -3976,17 +4473,17 @@ function normalizeTolerance(tolerance) {
 }
 function copyProvenance(provenance) {
   if (!isObject2(provenance)) {
-    fail12("QUANTITY_PROVENANCE_INVALID", "Quantity provenance must be an object.", { provenance });
+    fail13("QUANTITY_PROVENANCE_INVALID", "Quantity provenance must be an object.", { provenance });
   }
   const allowed = PROVENANCE_FIELDS[provenance.kind];
   if (!allowed) {
-    fail12("QUANTITY_PROVENANCE_INVALID", "Unknown quantity provenance kind.", {
+    fail13("QUANTITY_PROVENANCE_INVALID", "Unknown quantity provenance kind.", {
       kind: provenance.kind
     });
   }
   const fields2 = Object.keys(provenance);
   if (fields2.some((field) => !allowed.has(field)) || [...allowed].some((field) => !fields2.includes(field))) {
-    fail12("QUANTITY_PROVENANCE_INVALID", "Quantity provenance fields do not match its kind.", {
+    fail13("QUANTITY_PROVENANCE_INVALID", "Quantity provenance fields do not match its kind.", {
       kind: provenance.kind,
       fields: fields2
     });
@@ -3994,17 +4491,17 @@ function copyProvenance(provenance) {
   if (!Array.isArray(provenance.evidence) || provenance.evidence.some(
     (entry) => typeof entry !== "string" || entry.trim().length === 0 || entry !== entry.trim()
   ) || new Set(provenance.evidence).size !== provenance.evidence.length) {
-    fail12("QUANTITY_PROVENANCE_INVALID", "Quantity evidence must contain unique normalized non-empty identifiers.", {
+    fail13("QUANTITY_PROVENANCE_INVALID", "Quantity evidence must contain unique normalized non-empty identifiers.", {
       evidence: provenance.evidence
     });
   }
   if ((provenance.kind === "computed" || provenance.kind === "oracle") && (typeof provenance.method !== "string" || provenance.method.trim().length === 0 || provenance.method !== provenance.method.trim())) {
-    fail12("QUANTITY_PROVENANCE_INVALID", "Computed and Oracle quantities require a normalized method identifier.", {
+    fail13("QUANTITY_PROVENANCE_INVALID", "Computed and Oracle quantities require a normalized method identifier.", {
       method: provenance.method
     });
   }
   if (provenance.kind === "oracle" && !CONTENT_HASH.test(provenance.source)) {
-    fail12("QUANTITY_PROVENANCE_INVALID", "Oracle quantity provenance requires a content hash source.", {
+    fail13("QUANTITY_PROVENANCE_INVALID", "Oracle quantity provenance requires a content hash source.", {
       source: provenance.source
     });
   }
@@ -4017,11 +4514,11 @@ function copyProvenance(provenance) {
 }
 function normalizeQuantityInput(quantity) {
   if (!isObject2(quantity)) {
-    fail12("QUANTITY_VALUE_INVALID", "Quantity must be an object.", { quantity });
+    fail13("QUANTITY_VALUE_INVALID", "Quantity must be an object.", { quantity });
   }
   const fields2 = Object.keys(quantity);
   if (fields2.some((field) => !QUANTITY_FIELDS.has(field)) || [...QUANTITY_FIELDS].some((field) => !fields2.includes(field))) {
-    fail12("QUANTITY_VALUE_INVALID", "Quantity fields do not match the public contract.", { fields: fields2 });
+    fail13("QUANTITY_VALUE_INVALID", "Quantity fields do not match the public contract.", { fields: fields2 });
   }
   const value = normalizeFinite(
     quantity.value,
@@ -4029,7 +4526,7 @@ function normalizeQuantityInput(quantity) {
     "Quantity value must be finite."
   );
   if (typeof quantity.semantic !== "string" || quantity.semantic.trim().length === 0 || quantity.semantic !== quantity.semantic.trim()) {
-    fail12("QUANTITY_SEMANTIC_INVALID", "Quantity semantic must be a normalized non-empty string.", {
+    fail13("QUANTITY_SEMANTIC_INVALID", "Quantity semantic must be a normalized non-empty string.", {
       semantic: quantity.semantic
     });
   }
@@ -4082,14 +4579,14 @@ function scaledFinite(value, ratio, details) {
   } catch (error) {
     if (!(error instanceof KernelError)) throw error;
     if (error.code === "DECIMAL_NUMBER_UNDERFLOW") {
-      fail12("QUANTITY_CONVERSION_UNDERFLOW", "Non-zero quantity conversion underflowed to zero.", {
+      fail13("QUANTITY_CONVERSION_UNDERFLOW", "Non-zero quantity conversion underflowed to zero.", {
         ...details,
         value,
         multiplier
       });
     }
     if (error.code === "DECIMAL_NUMBER_OVERFLOW") {
-      fail12("QUANTITY_CONVERSION_OVERFLOW", "Unit conversion produced a non-finite value.", {
+      fail13("QUANTITY_CONVERSION_OVERFLOW", "Unit conversion produced a non-finite value.", {
         ...details,
         value,
         multiplier
@@ -4102,7 +4599,7 @@ function convertQuantity(quantity, targetUnit) {
   const source = normalizeQuantityInput(quantity);
   const target = parseUnitExpressionInternal(targetUnit);
   if (source.unit.dimensionSignature !== target.parsed.dimensionSignature) {
-    fail12("QUANTITY_UNIT_INCOMPATIBLE", "Quantity units have different dimensions.", {
+    fail13("QUANTITY_UNIT_INCOMPATIBLE", "Quantity units have different dimensions.", {
       sourceUnit: source.unit.expression,
       sourceDimensions: source.unit.dimensions,
       targetUnit: target.parsed.expression,
@@ -4112,14 +4609,14 @@ function convertQuantity(quantity, targetUnit) {
   const multiplierRatio = divideScaleRatios(source.unit.scaleRatio, target.scaleRatio);
   const multiplier = scaleRatioToNumber(multiplierRatio);
   if (!Number.isFinite(multiplier)) {
-    fail12("QUANTITY_CONVERSION_OVERFLOW", "Unit conversion factor is outside the supported finite non-zero range.", {
+    fail13("QUANTITY_CONVERSION_OVERFLOW", "Unit conversion factor is outside the supported finite non-zero range.", {
       sourceUnit: source.unit.expression,
       targetUnit: target.parsed.expression,
       multiplier
     });
   }
   if (multiplier === 0) {
-    fail12("QUANTITY_CONVERSION_UNDERFLOW", "Non-zero unit conversion factor underflowed to zero.", {
+    fail13("QUANTITY_CONVERSION_UNDERFLOW", "Non-zero unit conversion factor underflowed to zero.", {
       sourceUnit: source.unit.expression,
       targetUnit: target.parsed.expression
     });
@@ -4239,7 +4736,7 @@ function normalizeStringSet(value, path, issues) {
   });
   return normalized.sort(compareStrings);
 }
-function normalizeOptions(options, issues) {
+function normalizeOptions2(options, issues) {
   if (!isObject3(options)) {
     addIssue(issues, "GRAPH_OPTIONS_INVALID", "$options", "Graph canonicalization options must be an object.");
     return {
@@ -4960,7 +5457,7 @@ function canonicalizeCandidate(input, options = {}) {
   const safeInput = canonicalClone(input);
   const safeOptions = canonicalClone(options);
   const issues = [];
-  const { policy: policy4, limits: limits4 } = normalizeOptions(safeOptions, issues);
+  const { policy: policy4, limits: limits4 } = normalizeOptions2(safeOptions, issues);
   const candidate = normalizeCandidate(safeInput, policy4, limits4, issues);
   validateConnectivity(candidate, policy4, issues);
   if (issues.length > 0) {
@@ -5011,21 +5508,21 @@ var regime = getDistinguishabilityRegime("canonical-structure-v1");
 var { candidateTranslation: translation, graphPolicy: policy2 } = regime.matchingPolicy;
 var limits2 = { maxNodes: regime.limits.maxNodes, maxEdges: regime.limits.maxEdges, maxSearchStates: regime.limits.maxSearchStates };
 var compare2 = (a, b) => a < b ? -1 : a > b ? 1 : 0;
-function fail13(code, message) {
+function fail14(code, message) {
   throw new EngineError(`STRUCTURAL_CANONICAL_${code}`, message);
 }
 function canonicalizeDirectedStructure(nodeIds, edges) {
   if (nodeIds.length < 1 || nodeIds.length > limits2.maxNodes || edges.length > limits2.maxEdges) {
-    fail13("LIMIT_EXCEEDED", "Canonical structure requires 1\u20136 nodes and at most 30 directed edges.");
+    fail14("LIMIT_EXCEEDED", "Canonical structure requires 1\u20136 nodes and at most 30 directed edges.");
   }
   const ids3 = [...nodeIds].sort(compare2), orderedEdges = [...edges].sort((a, b) => compare2(a.id, b.id));
   const index = new Map(ids3.map((id, i) => [id, i]));
   const edgeIds = /* @__PURE__ */ new Set(), pairs = /* @__PURE__ */ new Set();
-  if (index.size !== ids3.length) fail13("GRAPH_INVALID", "Canonical node IDs must be distinct.");
+  if (index.size !== ids3.length) fail14("GRAPH_INVALID", "Canonical node IDs must be distinct.");
   const candidateEdges = orderedEdges.map((edge) => {
     const from = index.get(edge.source), to = index.get(edge.target), pair = `${from}:${to}`;
     if (from === void 0 || to === void 0 || from === to || edgeIds.has(edge.id) || pairs.has(pair)) {
-      fail13("GRAPH_INVALID", "Canonical edges require distinct IDs and loopless, nonparallel directed endpoints in scope.");
+      fail14("GRAPH_INVALID", "Canonical edges require distinct IDs and loopless, nonparallel directed endpoints in scope.");
     }
     edgeIds.add(edge.id);
     pairs.add(pair);
@@ -5054,7 +5551,7 @@ function canonicalizeDirectedStructure(nodeIds, edges) {
 
 // packages/structural-geometry/src/canonical.js
 var hash4 = (kind, value) => hashCanonical(`onto2d:structural-canonical-${kind}:v1`, value);
-var reference2 = ({ id, version, contentHash }) => ({ id, version, contentHash });
+var reference3 = ({ id, version, contentHash }) => ({ id, version, contentHash });
 var implementation = {
   id: "canonical-directed-observation-v1",
   version: "1",
@@ -5066,31 +5563,31 @@ var implementation = {
   attributes: "excluded"
 };
 var CANONICAL_STRUCTURE_IMPLEMENTATION = deepFreeze({ ...implementation, contentHash: hash4("implementation", implementation) });
-function fail14(code, message) {
+function fail15(code, message) {
   throw new EngineError(`STRUCTURAL_CANONICAL_${code}`, message);
 }
 function encoded2(value) {
   const text = canonicalize(value);
   if (new TextEncoder().encode(text).length > getDistinguishabilityRegime("canonical-structure-v1").limits.maxArtifactBytes) {
-    fail14("LIMIT_EXCEEDED", "Canonical observation exceeds its artifact byte budget.");
+    fail15("LIMIT_EXCEEDED", "Canonical observation exceeds its artifact byte budget.");
   }
   return text;
 }
 function observeCanonicalStructure(pack, input) {
   const request = canonicalClone(input);
   if (request === null || typeof request !== "object" || Array.isArray(request) || !Object.hasOwn(request, "regimeId")) {
-    fail14("INPUT_INVALID", "Canonical observation requires an explicit regime request.");
+    fail15("INPUT_INVALID", "Canonical observation requires an explicit regime request.");
   }
-  if (request.regimeId !== "canonical-structure-v1") fail14("REGIME_UNSUPPORTED", "This evaluator implements only canonical-structure-v1.");
+  if (request.regimeId !== "canonical-structure-v1") fail15("REGIME_UNSUPPORTED", "This evaluator implements only canonical-structure-v1.");
   const source = verifyModelPack(pack);
   const preparation = prepareStructuralRegime(source, request);
   const selected = new Set(preparation.scope.edgeIds);
   const edges = source.files[modelPackFilePaths().edges].filter((edge) => selected.has(edge.id));
   const { value, witness } = canonicalizeDirectedStructure(preparation.scope.nodeIds, edges);
   const valueBinding = {
-    regime: reference2(preparation.regime),
+    regime: reference3(preparation.regime),
     observable: preparation.regime.observables[0],
-    implementation: reference2(CANONICAL_STRUCTURE_IMPLEMENTATION),
+    implementation: reference3(CANONICAL_STRUCTURE_IMPLEMENTATION),
     value
   };
   const observation = { ...valueBinding, valueHash: hash4("value", valueBinding) };
@@ -5109,17 +5606,17 @@ function observeCanonicalStructure(pack, input) {
 }
 
 // packages/structural-geometry/src/topology-core.js
-function fail15(message) {
+function fail16(message) {
   throw new EngineError("STRUCTURAL_TOPOLOGY_GRAPH_INVALID", message);
 }
 function measureDirectedTopology(nodeIds, edges) {
   const limits4 = getDistinguishabilityRegime("topology-only-v1").limits;
-  if (!Array.isArray(nodeIds) || !Array.isArray(edges) || nodeIds.length < limits4.minNodes || nodeIds.length > limits4.maxNodes || edges.length > limits4.maxEdges) fail15("Topology exceeds its fixed graph bounds.");
-  if (nodeIds.some((id) => typeof id !== "string" || !id.length) || new Set(nodeIds).size !== nodeIds.length) fail15("Node IDs must be distinct nonempty strings.");
+  if (!Array.isArray(nodeIds) || !Array.isArray(edges) || nodeIds.length < limits4.minNodes || nodeIds.length > limits4.maxNodes || edges.length > limits4.maxEdges) fail16("Topology exceeds its fixed graph bounds.");
+  if (nodeIds.some((id) => typeof id !== "string" || !id.length) || new Set(nodeIds).size !== nodeIds.length) fail16("Node IDs must be distinct nonempty strings.");
   const nodes = [...nodeIds].sort(), outgoing = new Map(nodes.map((id) => [id, /* @__PURE__ */ new Set()]));
   const incoming = new Map(nodes.map((id) => [id, /* @__PURE__ */ new Set()])), edgeIds = /* @__PURE__ */ new Set();
   for (const e of edges) {
-    if (!e || typeof e.id !== "string" || !e.id.length || edgeIds.has(e.id) || !outgoing.has(e.source) || !incoming.has(e.target) || e.source === e.target || outgoing.get(e.source).has(e.target)) fail15("Expected distinct loopless directed edges with scoped endpoints.");
+    if (!e || typeof e.id !== "string" || !e.id.length || edgeIds.has(e.id) || !outgoing.has(e.source) || !incoming.has(e.target) || e.source === e.target || outgoing.get(e.source).has(e.target)) fail16("Expected distinct loopless directed edges with scoped endpoints.");
     outgoing.get(e.source).add(e.target);
     incoming.get(e.target).add(e.source);
     edgeIds.add(e.id);
@@ -5188,7 +5685,7 @@ function measureDirectedTopology(nodeIds, edges) {
 
 // packages/structural-geometry/src/topology.js
 var hash5 = (kind, value) => hashCanonical(`onto2d:structural-topology-${kind}:v1`, value);
-var reference3 = ({ id, version, contentHash }) => ({ id, version, contentHash });
+var reference4 = ({ id, version, contentHash }) => ({ id, version, contentHash });
 var implementation2 = {
   id: "directed-topology-observation-v1",
   version: "1",
@@ -5212,31 +5709,31 @@ var implementation2 = {
   ]
 };
 var TOPOLOGY_OBSERVATION_IMPLEMENTATION = deepFreeze({ ...implementation2, contentHash: hash5("implementation", implementation2) });
-function fail16(code, message) {
+function fail17(code, message) {
   throw new EngineError(`STRUCTURAL_TOPOLOGY_${code}`, message);
 }
 function encoded3(value) {
   const text = canonicalize(value);
   if (new TextEncoder().encode(text).length > getDistinguishabilityRegime("topology-only-v1").limits.maxArtifactBytes) {
-    fail16("LIMIT_EXCEEDED", "Topology observation exceeds its artifact byte budget.");
+    fail17("LIMIT_EXCEEDED", "Topology observation exceeds its artifact byte budget.");
   }
   return text;
 }
 function observeStructuralTopology(pack, input) {
   const request = canonicalClone(input);
   if (request === null || typeof request !== "object" || Array.isArray(request) || !Object.hasOwn(request, "regimeId")) {
-    fail16("INPUT_INVALID", "Topology observation requires an explicit regime request.");
+    fail17("INPUT_INVALID", "Topology observation requires an explicit regime request.");
   }
-  if (request.regimeId !== "topology-only-v1") fail16("REGIME_UNSUPPORTED", "This evaluator implements only topology-only-v1.");
+  if (request.regimeId !== "topology-only-v1") fail17("REGIME_UNSUPPORTED", "This evaluator implements only topology-only-v1.");
   const source = verifyModelPack(pack);
   const preparation = prepareStructuralRegime(source, request);
   const selected = new Set(preparation.scope.edgeIds);
   const edges = source.files[modelPackFilePaths().edges].filter((edge) => selected.has(edge.id));
   const { value, diagnostics } = measureDirectedTopology(preparation.scope.nodeIds, edges);
   const valueBinding = {
-    regime: reference3(preparation.regime),
+    regime: reference4(preparation.regime),
     observables: preparation.regime.observables,
-    implementation: reference3(TOPOLOGY_OBSERVATION_IMPLEMENTATION),
+    implementation: reference4(TOPOLOGY_OBSERVATION_IMPLEMENTATION),
     value
   };
   const observation = { ...valueBinding, valueHash: hash5("value", valueBinding) };
@@ -6034,7 +6531,7 @@ function planResponseTargets(baseline, profile) {
   }
   const plans = [];
   for (const probe of STRUCTURAL_RESPONSE_REGISTRY.probes.filter((p) => profile.probeIds.includes(p.id))) {
-    let add2 = function(path, kind = "edge") {
+    let add3 = function(path, kind = "edge") {
       targets.push(target(path, kind));
       path.forEach((e) => known.add(sourceEdges.get(e.id)));
       total += 1;
@@ -6050,7 +6547,7 @@ function planResponseTargets(baseline, profile) {
         else if (edge.types.necessity === value) known.add(sourceEdges.get(edge.id));
       }
       if (!unknown.length) {
-        for (const edge of edges) if (edge.types.necessity === value) add2([edge]);
+        for (const edge of edges) if (edge.types.necessity === value) add3([edge]);
       }
     } else if (probe.selector === "simple-path-with-edge-disjoint-alternative") {
       let extend = function(root, current, path, seen) {
@@ -6059,13 +6556,13 @@ function planResponseTargets(baseline, profile) {
           work.pathExtensions += 1;
           if (work.pathExtensions > limits3.maxPathExtensions) responseFail("LIMIT_EXCEEDED", "Exhaustive simple-path discovery exceeds its budget.");
           const next = [...path, edge];
-          if (reaches(root, edge.target, new Set(next.map((e) => e.id)))) add2(next, "simple-directed-path");
+          if (reaches(root, edge.target, new Set(next.map((e) => e.id)))) add3(next, "simple-directed-path");
           extend(root, edge.target, next, /* @__PURE__ */ new Set([...seen, edge.target]));
         }
       };
       for (const root of nodes) extend(root, root, [], /* @__PURE__ */ new Set([root]));
     } else {
-      for (const edge of edges) if (probe.selector === "each-internal-edge" || reaches(edge.target, edge.source)) add2([edge]);
+      for (const edge of edges) if (probe.selector === "each-internal-edge" || reaches(edge.target, edge.source)) add3([edge]);
     }
     targets.sort((a, b) => {
       const left = responseEncoded(a.sourceEdgeIds), right = responseEncoded(b.sourceEdgeIds);

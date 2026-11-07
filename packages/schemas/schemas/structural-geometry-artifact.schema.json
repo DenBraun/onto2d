@@ -168,246 +168,446 @@
           "$ref": "#/$defs/summary"
         },
         "groups": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "bySourceLevel": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "key": {
-                    "oneOf": [
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": false
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "bySourceLevel": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
                           }
-                        },
-                        "required": [
-                          "present"
                         ]
                       },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": true
-                          },
-                          "value": {}
-                        },
-                        "required": [
-                          "present",
-                          "value"
-                        ]
+                      "summary": {
+                        "$ref": "#/$defs/summary"
                       }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
                     ]
-                  },
-                  "summary": {
-                    "$ref": "#/$defs/summary"
                   }
                 },
-                "required": [
-                  "key",
-                  "summary"
-                ]
-              }
+                "byTargetLevel": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
+                          }
+                        ]
+                      },
+                      "summary": {
+                        "$ref": "#/$defs/summary"
+                      }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
+                    ]
+                  }
+                },
+                "byDependencyType": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
+                          }
+                        ]
+                      },
+                      "summary": {
+                        "$ref": "#/$defs/summary"
+                      }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
+                    ]
+                  }
+                },
+                "byNecessity": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
+                          }
+                        ]
+                      },
+                      "summary": {
+                        "$ref": "#/$defs/summary"
+                      }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
+                    ]
+                  }
+                },
+                "byOntologicalRole": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
+                          }
+                        ]
+                      },
+                      "summary": {
+                        "$ref": "#/$defs/summary"
+                      }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "bySourceLevel",
+                "byTargetLevel",
+                "byDependencyType",
+                "byNecessity",
+                "byOntologicalRole"
+              ]
             },
-            "byTargetLevel": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "key": {
-                    "oneOf": [
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": false
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "bySourceLevel": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
                           }
-                        },
-                        "required": [
-                          "present"
                         ]
                       },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": true
-                          },
-                          "value": {}
-                        },
-                        "required": [
-                          "present",
-                          "value"
-                        ]
+                      "summary": {
+                        "$ref": "#/$defs/summary"
                       }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
                     ]
-                  },
-                  "summary": {
-                    "$ref": "#/$defs/summary"
                   }
                 },
-                "required": [
-                  "key",
-                  "summary"
-                ]
-              }
-            },
-            "byDependencyType": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "key": {
-                    "oneOf": [
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": false
+                "byTargetLevel": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
                           }
-                        },
-                        "required": [
-                          "present"
                         ]
                       },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": true
-                          },
-                          "value": {}
-                        },
-                        "required": [
-                          "present",
-                          "value"
-                        ]
+                      "summary": {
+                        "$ref": "#/$defs/summary"
                       }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
                     ]
-                  },
-                  "summary": {
-                    "$ref": "#/$defs/summary"
                   }
                 },
-                "required": [
-                  "key",
-                  "summary"
-                ]
-              }
-            },
-            "byNecessity": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "key": {
-                    "oneOf": [
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": false
+                "byRelationLayer": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
                           }
-                        },
-                        "required": [
-                          "present"
                         ]
                       },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": true
-                          },
-                          "value": {}
-                        },
-                        "required": [
-                          "present",
-                          "value"
-                        ]
+                      "summary": {
+                        "$ref": "#/$defs/summary"
                       }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
                     ]
-                  },
-                  "summary": {
-                    "$ref": "#/$defs/summary"
                   }
                 },
-                "required": [
-                  "key",
-                  "summary"
-                ]
-              }
-            },
-            "byOntologicalRole": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "key": {
-                    "oneOf": [
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": false
+                "byRole": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": false
+                              }
+                            },
+                            "required": [
+                              "present"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "present": {
+                                "const": true
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "present",
+                              "value"
+                            ]
                           }
-                        },
-                        "required": [
-                          "present"
                         ]
                       },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "present": {
-                            "const": true
-                          },
-                          "value": {}
-                        },
-                        "required": [
-                          "present",
-                          "value"
-                        ]
+                      "summary": {
+                        "$ref": "#/$defs/summary"
                       }
+                    },
+                    "required": [
+                      "key",
+                      "summary"
                     ]
-                  },
-                  "summary": {
-                    "$ref": "#/$defs/summary"
                   }
-                },
-                "required": [
-                  "key",
-                  "summary"
-                ]
-              }
+                }
+              },
+              "required": [
+                "bySourceLevel",
+                "byTargetLevel",
+                "byRelationLayer",
+                "byRole"
+              ]
             }
-          },
-          "required": [
-            "bySourceLevel",
-            "byTargetLevel",
-            "byDependencyType",
-            "byNecessity",
-            "byOntologicalRole"
           ]
         },
         "extrema": {

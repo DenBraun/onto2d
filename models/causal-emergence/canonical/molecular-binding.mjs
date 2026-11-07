@@ -438,7 +438,7 @@ const contracts = {
       "id": "M-phys-molecular-source-scope",
       "kind": "method",
       "statement": "Compare the distinct two-center model, prepared-H2 interval/threshold/energy-cycle chain and already admitted HD+ mass/ionization records while retaining their separate species, quantities, states and shared inputs. This is a scoped literature synthesis, not a joint likelihood, neutral-H2 electronic solution, independent replication count or local numerical replay.",
-      "scope": "Interpretation boundary for the finite reconstruction of original card 2.3.",
+      "scope": "Interpretation boundary for the finite reconstruction of chemical bonding and molecular formation.",
       "status": "method-contract",
       "citations": [
         {
@@ -478,12 +478,6 @@ const contracts = {
           "note": "Reviewed primary passage supports this finite statement; no new numerical or experimental replay."
         },
         {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original catalogue card 2.3 is provenance for the scope being reconstructed, not independent scientific evidence."
-        },
-        {
           "sourceId": "heisse2019",
           "locator": "Pages 022518-13-15, Table VIII, Equations 21-36 and Section V: systematic corrections, proton reanalysis, double-dip check, oxygen input and carbon charge-state control",
           "role": "method",
@@ -500,10 +494,8 @@ const contracts = {
       "limitations": [
         "The one-electron H2+/HD+ model and the two-electron neutral-H2 spectroscopic study are distinct systems. Their comparison does not solve neutral-H2 binding from the displayed one-electron Hamiltonian.",
         "The existing Rau mass closure shares the AWG1/AWG2 deuteron acquisitions, the supplied proton/electron mass references and calculated binding corrections with its modelling program. The two generators are retained separately, not pooled into independent molecular-formation confirmations. The closure is not independent evidence for every theoretical input or a measurement of molecular assembly.",
-        "Original claims about all bond types, electron sharing/transfer/delocalization classes, polarity, bond architecture, crystallographic geometry, reactivity and biochemical/material substrates exceed these selected passages. They remain open scientific obligations rather than admitted generic conclusions.",
-        "Original parent 2.2 can supply atomic constituents and a previous effective Coulomb description, but its selected static hydrogen, Lamb spectrum or cosmological formation model is not a unique molecular formation history. Parent weight 1, necessary, direction 0, modes [0,1], dependency 10 and role arising have no matched quantitative estimator here.",
-        "Original CarrierGroup 1, CarrierType 0, N_min=N_crit=2 and N_sat=null are catalogue choices. Two nuclear centers are a chosen composition, not a measured critical count of previously formed neutral atoms or a saturation law.",
-        "Original Level 2, Phase 1, TypeRole 1, Science [0,1,2], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display provenance. The generic MO/VB, crystallography and reproducible-synthesis placeholders identify no independently reviewed experiment.",
+        "Claims about all bond types, electron sharing/transfer/delocalization classes, polarity, bond architecture, crystallographic geometry, reactivity and biochemical/material substrates exceed these selected passages. They remain open scientific obligations rather than admitted generic conclusions.",
+        "Two nuclear centers are a chosen composition, not a measured critical count of previously formed neutral atoms or a saturation law.",
         "No molecular association kinetics, formation yield, lifetime in all environments, compact boundary, universal molecule definition or all-scale substrate claim is admitted. Positive formation-kinetics evidence would require identified initial/product populations and explicit competing channels."
       ],
       "contextIds": [
@@ -559,12 +551,6 @@ const contracts = {
           "note": "Reviewed primary passage supports this finite statement; no new numerical or experimental replay."
         },
         {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original catalogue card 2.3 is provenance for the scope being reconstructed, not independent scientific evidence."
-        },
-        {
           "sourceId": "heisse2019",
           "locator": "Pages 022518-13-15, Table VIII, Equations 21-36 and Section V: systematic corrections, proton reanalysis, double-dip check, oxygen input and carbon charge-state control",
           "role": "supports",
@@ -581,10 +567,8 @@ const contracts = {
       "limitations": [
         "The one-electron H2+/HD+ model and the two-electron neutral-H2 spectroscopic study are distinct systems. Their comparison does not solve neutral-H2 binding from the displayed one-electron Hamiltonian.",
         "The existing Rau mass closure shares the AWG1/AWG2 deuteron acquisitions, the supplied proton/electron mass references and calculated binding corrections with its modelling program. The two generators are retained separately, not pooled into independent molecular-formation confirmations. The closure is not independent evidence for every theoretical input or a measurement of molecular assembly.",
-        "Original claims about all bond types, electron sharing/transfer/delocalization classes, polarity, bond architecture, crystallographic geometry, reactivity and biochemical/material substrates exceed these selected passages. They remain open scientific obligations rather than admitted generic conclusions.",
-        "Original parent 2.2 can supply atomic constituents and a previous effective Coulomb description, but its selected static hydrogen, Lamb spectrum or cosmological formation model is not a unique molecular formation history. Parent weight 1, necessary, direction 0, modes [0,1], dependency 10 and role arising have no matched quantitative estimator here.",
-        "Original CarrierGroup 1, CarrierType 0, N_min=N_crit=2 and N_sat=null are catalogue choices. Two nuclear centers are a chosen composition, not a measured critical count of previously formed neutral atoms or a saturation law.",
-        "Original Level 2, Phase 1, TypeRole 1, Science [0,1,2], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display provenance. The generic MO/VB, crystallography and reproducible-synthesis placeholders identify no independently reviewed experiment.",
+        "Claims about all bond types, electron sharing/transfer/delocalization classes, polarity, bond architecture, crystallographic geometry, reactivity and biochemical/material substrates exceed these selected passages. They remain open scientific obligations rather than admitted generic conclusions.",
+        "Two nuclear centers are a chosen composition, not a measured critical count of previously formed neutral atoms or a saturation law.",
         "No molecular association kinetics, formation yield, lifetime in all environments, compact boundary, universal molecule definition or all-scale substrate claim is admitted. Positive formation-kinetics evidence would require identified initial/product populations and explicit competing channels."
       ],
       "contextIds": [
@@ -782,10 +766,6 @@ const contracts = {
           "locator": "Author manuscript pages 4 and 6-10, Methods, Extended Data Figure 1 and Tables 1-2: HD+ preparation, molecular inputs, mass closure and grouped data"
         },
         {
-          "sourceId": "legacy-2",
-          "locator": "/"
-        },
-        {
           "sourceId": "heisse2019",
           "locator": "Pages 022518-13-15, Table VIII, Equations 21-36 and Section V: systematic corrections, proton reanalysis, double-dip check, oxygen input and carbon charge-state control"
         },
@@ -797,10 +777,8 @@ const contracts = {
       "openObligations": [
         "The one-electron H2+/HD+ model and the two-electron neutral-H2 spectroscopic study are distinct systems. Their comparison does not solve neutral-H2 binding from the displayed one-electron Hamiltonian.",
         "The existing Rau mass closure shares the AWG1/AWG2 deuteron acquisitions, the supplied proton/electron mass references and calculated binding corrections with its modelling program. The two generators are retained separately, not pooled into independent molecular-formation confirmations. The closure is not independent evidence for every theoretical input or a measurement of molecular assembly.",
-        "Original claims about all bond types, electron sharing/transfer/delocalization classes, polarity, bond architecture, crystallographic geometry, reactivity and biochemical/material substrates exceed these selected passages. They remain open scientific obligations rather than admitted generic conclusions.",
-        "Original parent 2.2 can supply atomic constituents and a previous effective Coulomb description, but its selected static hydrogen, Lamb spectrum or cosmological formation model is not a unique molecular formation history. Parent weight 1, necessary, direction 0, modes [0,1], dependency 10 and role arising have no matched quantitative estimator here.",
-        "Original CarrierGroup 1, CarrierType 0, N_min=N_crit=2 and N_sat=null are catalogue choices. Two nuclear centers are a chosen composition, not a measured critical count of previously formed neutral atoms or a saturation law.",
-        "Original Level 2, Phase 1, TypeRole 1, Science [0,1,2], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display provenance. The generic MO/VB, crystallography and reproducible-synthesis placeholders identify no independently reviewed experiment.",
+        "Claims about all bond types, electron sharing/transfer/delocalization classes, polarity, bond architecture, crystallographic geometry, reactivity and biochemical/material substrates exceed these selected passages. They remain open scientific obligations rather than admitted generic conclusions.",
+        "Two nuclear centers are a chosen composition, not a measured critical count of previously formed neutral atoms or a saturation law.",
         "No molecular association kinetics, formation yield, lifetime in all environments, compact boundary, universal molecule definition or all-scale substrate claim is admitted. Positive formation-kinetics evidence would require identified initial/product populations and explicit competing channels."
       ]
     }
@@ -1135,24 +1113,6 @@ const contracts = {
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "heisse2019",
       "kind": "research-publication",

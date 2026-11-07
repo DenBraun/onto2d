@@ -123,8 +123,7 @@ within the same process without repeating replay. This optimization uses
 object identity only; parsed, cloned, or otherwise external objects always
 undergo complete reproduction before entering the trusted set.
 
-Run bundles bind candidate explanation lookup to a verified run. Source-migration
-explanations require a complete verified migration chain and its separate index.
+Run bundles bind candidate explanation lookup to a verified run.
 
 <a id="verified-run-directory-persistence"></a>
 

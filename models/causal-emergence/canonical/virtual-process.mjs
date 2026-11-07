@@ -313,7 +313,7 @@ const contracts = {
         "The witness uses c=1, a synthetic external mass 4 and common arbitrary energy/momentum units. It demonstrates on-shell external legs, conserved total momentum and a spacelike exchange transfer; it is not actual electron-mass data, a spinor amplitude, loop integral, gauge cancellation, cross section or event reconstruction.",
         "The t and u invariants label the two exchange channels in this equal-mass witness. For identical electrons the full amplitude needs fermionic antisymmetry; the local check calculates no such amplitude. Its complex-number interference control is generic algebra only.",
         "Internal four-momenta are not constrained to a free on-shell relation, but an integration includes pole regions: internal does not mean always off shell. Four-momentum conservation is retained. Matrix ordering along a fermion line is not a measured chronology or a license to borrow energy temporarily.",
-        "Existing line, magnetic-moment and scattering results support their specified observable models; none counts virtual particles or uniquely establishes a vacuum substance. The original card supplies no derived universal formation/maintenance arrow, parent weights or carrier-count minima."
+        "Existing line, magnetic-moment and scattering results support their specified observable models; none counts virtual particles or uniquely establishes a vacuum substance."
       ],
       "contextIds": [
         "virtual-process-replay"
@@ -619,7 +619,7 @@ const contracts = {
         "Internal four-momenta are not constrained to a free on-shell relation, but an integration includes pole regions: internal does not mean always off shell. Four-momentum conservation is retained. Matrix ordering along a fermion line is not a measured chronology or a license to borrow energy temporarily.",
         "External and internal are roles in a declared amplitude calculation. Changing the included sources and detectors changes the boundary; this is not a universal particle census. No individual diagram is automatically gauge independent, separately observable or an independently measured alternative.",
         "The t and u invariants label the two exchange channels in this equal-mass witness. For identical electrons the full amplitude needs fermionic antisymmetry; the local check calculates no such amplitude. Its complex-number interference control is generic algebra only.",
-        "Existing line, magnetic-moment and scattering results support their specified observable models; none counts virtual particles or uniquely establishes a vacuum substance. The original card supplies no derived universal formation/maintenance arrow, parent weights or carrier-count minima."
+        "Existing line, magnetic-moment and scattering results support their specified observable models; none counts virtual particles or uniquely establishes a vacuum substance."
       ],
       "sourceIds": [
         "feynman1949-amplitudes",

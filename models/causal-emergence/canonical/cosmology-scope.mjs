@@ -112,7 +112,7 @@ const contracts = {
       "id": "D-phys-primordial-origin-scope",
       "kind": "review-finding",
       "statement": "A primordial quantum-origin model supplies a curved cosmological background, field/gravity action, canonical scalar mode, initial state and validity regime. The admitted linear single-field construction predicts a conditional curvature two-point function, with restricted long-wave conservation and stochastic interpretation. Testing its primordial power against CMB statistics additionally requires a postinflationary transfer model, instrument/foreground response and cosmological likelihood. Compatibility of that chain is not a direct measurement of the assumed initial vacuum or a unique origin mechanism.",
-      "scope": "Operational boundary of the selected scalar-perturbation and CMB application for source card 1.20; no universal cross-scale construction rule.",
+      "scope": "Operational boundary of the selected scalar-perturbation and CMB application; no universal cross-scale construction rule.",
       "status": "definition",
       "citations": [
         {
@@ -154,11 +154,10 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "The original 1.5 flat-space vacuum parent supplies a separate free-field concept. Its stationary variance and two-point function do not select a cosmological background, curvature variable, potential or initial state. No old oscillator replay is numerical evidence for the CMB chain.",
+        "The flat-space vacuum is a separate free-field concept. Its stationary variance and two-point function do not select a cosmological background, curvature variable, potential or initial state. No old oscillator replay is numerical evidence for the CMB chain.",
         "The scalar field perturbation delta(phi), gauge-invariant primordial R, later metric/density perturbations and measured angular CMB statistics are different observables. Their connection requires the stated constraints and transfer model; density also needs an epoch and gauge convention.",
         "Hubble-radius exit alone supplies neither universal freezing nor classicalization. Conservation requires the specified regular background and dominant long-wave solution. A Gaussian amplitude marginal or a restricted stochastic trajectory approximation does not select a realized outcome or remove the exact canonical commutator.",
-        "Matter spectra and large-scale structure are explicitly outside this CMB application: no independent survey sample, bias/redshift response, nonlinear matter evolution or large-scale-structure likelihood is reviewed. No uninterrupted quantum-fluctuation-to-galaxy construction is established.",
-        "The original parent weight 1, necessary arising relation, causal/interaction codes and N_min=N_crit=1 have no admitted quantitative scientific meaning. The SOMA phase 2, effect TypeRole 4, well-supported label and generic theoretical/CMB/structure placeholders supply no independent evidence or universal temporal order."
+        "Matter spectra and large-scale structure are explicitly outside this CMB application: no independent survey sample, bias/redshift response, nonlinear matter evolution or large-scale-structure likelihood is reviewed. No uninterrupted quantum-fluctuation-to-galaxy construction is established."
       ]
     },
     {
@@ -352,11 +351,10 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "The original 1.5 flat-space vacuum parent supplies a separate free-field concept. Its stationary variance and two-point function do not select a cosmological background, curvature variable, potential or initial state. No old oscillator replay is numerical evidence for the CMB chain.",
+        "The flat-space vacuum is a separate free-field concept. Its stationary variance and two-point function do not select a cosmological background, curvature variable, potential or initial state. No old oscillator replay is numerical evidence for the CMB chain.",
         "The scalar field perturbation delta(phi), gauge-invariant primordial R, later metric/density perturbations and measured angular CMB statistics are different observables. Their connection requires the stated constraints and transfer model; density also needs an epoch and gauge convention.",
         "Hubble-radius exit alone supplies neither universal freezing nor classicalization. Conservation requires the specified regular background and dominant long-wave solution. A Gaussian amplitude marginal or a restricted stochastic trajectory approximation does not select a realized outcome or remove the exact canonical commutator.",
-        "Matter spectra and large-scale structure are explicitly outside this CMB application: no independent survey sample, bias/redshift response, nonlinear matter evolution or large-scale-structure likelihood is reviewed. No uninterrupted quantum-fluctuation-to-galaxy construction is established.",
-        "The original parent weight 1, necessary arising relation, causal/interaction codes and N_min=N_crit=1 have no admitted quantitative scientific meaning. The SOMA phase 2, effect TypeRole 4, well-supported label and generic theoretical/CMB/structure placeholders supply no independent evidence or universal temporal order."
+        "Matter spectra and large-scale structure are explicitly outside this CMB application: no independent survey sample, bias/redshift response, nonlinear matter evolution or large-scale-structure likelihood is reviewed. No uninterrupted quantum-fluctuation-to-galaxy construction is established."
       ]
     },
     {
@@ -467,7 +465,7 @@ const contracts = {
       "target": "phys:primordial-cmb-model-compatibility",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is neither an independent acquisition nor an empirical necessary-parent arrow.",
+      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is not an independent acquisition.",
       "claimIds": [
         "M-phys-primordial-cmb-model-compatibility"
       ],
@@ -483,7 +481,7 @@ const contracts = {
       "target": "phys:primordial-cmb-model-compatibility",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is neither an independent acquisition nor an empirical necessary-parent arrow.",
+      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is not an independent acquisition.",
       "claimIds": [
         "M-phys-primordial-cmb-model-compatibility"
       ],
@@ -499,7 +497,7 @@ const contracts = {
       "target": "phys:primordial-cmb-model-compatibility",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is neither an independent acquisition nor an empirical necessary-parent arrow.",
+      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is not an independent acquisition.",
       "claimIds": [
         "M-phys-primordial-cmb-model-compatibility"
       ],
@@ -515,7 +513,7 @@ const contracts = {
       "target": "phys:primordial-cmb-model-compatibility",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is neither an independent acquisition nor an empirical necessary-parent arrow.",
+      "assertion": "This scoped interpretation input retains its own model, observable, response and uncertainty; it is not an independent acquisition.",
       "claimIds": [
         "M-phys-primordial-cmb-model-compatibility"
       ],

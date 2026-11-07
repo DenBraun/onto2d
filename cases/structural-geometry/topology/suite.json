@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:5dcfd0ff8312235810521b429a9cf248d39289b410e5db7e3648538cc6b91950",
+  "artifactHash": "sha256:0f514c1161313647ee9a24436643bbc812cb6e3b90ca754da4bec5b84a9de933",
   "census": {
     "censusHash": "sha256:cdb24fd58ae955dd9e8a2b53be3e84835448b8e13163e24496fb79dc291744ce",
     "rows": [
@@ -76,7 +76,7 @@
       ]
     ]
   },
-  "referenceHash": "sha256:98f8991fd5095601f208246a268acfb5bdb6920c250e28b2f77b8b4adb006263",
+  "referenceHash": "sha256:1a7a3161268432a7e075846d69a6ab306518e5af6fbb9ea50121010eb38d5b76",
   "runs": [
     {
       "artifactHash": "sha256:55e6b64421aafb71545c8a9a53c49ca0baa78f3572eedddc89c1f7309814e817",
@@ -762,136 +762,6 @@
         ]
       },
       "valueHash": "sha256:9044a42b72d361d76d04e6179ec7d75032486afbbe56e0e6b633670fd807365f"
-    },
-    {
-      "artifactHash": "sha256:ab6e3983e01df7a0048a4fe98e09c4c921c26adc07b86479467a15b0c6f20c95",
-      "file": "artifacts/causal-fragment.json",
-      "id": "causal-fragment",
-      "input": {
-        "regimeId": "topology-only-v1",
-        "scope": {
-          "kind": "induced",
-          "nodeIds": [
-            "0.0",
-            "0.1",
-            "0.2",
-            "0.3",
-            "0.4",
-            "0.5"
-          ]
-        }
-      },
-      "value": {
-        "cyclicNodeCount": 0,
-        "edgeCount": 11,
-        "isolatedNodeCount": 0,
-        "nodeCount": 6,
-        "reachableOrderedPairCount": 14,
-        "strongComponentSizes": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        "weakComponentSizes": [
-          6
-        ]
-      },
-      "valueHash": "sha256:492f1bf7a13f4274f70d561b3bd2583c70692bbaa0a5209c024f4459b84eeee3"
-    },
-    {
-      "artifactHash": "sha256:2e199cf586c7d551c28b03dab92fd82381180efd51c2a652e2bcac1274f1b04c",
-      "file": "artifacts/causal-fragment-32.json",
-      "id": "causal-fragment-32",
-      "input": {
-        "regimeId": "topology-only-v1",
-        "scope": {
-          "kind": "induced",
-          "nodeIds": [
-            "0.0",
-            "0.1",
-            "0.10",
-            "0.11",
-            "0.12",
-            "0.13",
-            "0.14",
-            "0.15",
-            "0.16",
-            "0.17",
-            "0.18",
-            "0.19",
-            "0.2",
-            "0.20",
-            "0.21",
-            "0.22",
-            "0.23",
-            "0.3",
-            "0.4",
-            "0.5",
-            "0.6",
-            "0.7",
-            "0.8",
-            "0.9",
-            "1.0",
-            "1.1",
-            "1.10",
-            "1.11",
-            "1.12",
-            "1.13",
-            "1.14",
-            "1.15"
-          ]
-        }
-      },
-      "value": {
-        "cyclicNodeCount": 3,
-        "edgeCount": 88,
-        "isolatedNodeCount": 4,
-        "nodeCount": 32,
-        "reachableOrderedPairCount": 377,
-        "strongComponentSizes": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          3
-        ],
-        "weakComponentSizes": [
-          1,
-          1,
-          1,
-          1,
-          28
-        ]
-      },
-      "valueHash": "sha256:9e88bd5c61a8074e6e310e5e50bb00ded5efecaffdbf0e5403b08f78a0206caa"
     }
   ],
   "schemaVersion": "1",

@@ -197,7 +197,7 @@ const contracts = {
         "Muon and tau lifetimes are finite. An electron lifetime lower bound applies to its searched channel and statistical/response assumptions; it is not a measured infinite lifetime. No species result establishes a universal lifetime for all leptons.",
         "A field or flavor label is not a permanent classical identity across propagation and interactions. Chirality is distinct from massive-particle helicity; neutrino flavor/mass labels require their separately stated extension and evidence.",
         "The ordinary atomic example is an electron in the specified electromagnetic hydrogen bound-state description. The admitted hydrogen separation and approximate radiative model do not establish that all leptons build ordinary atoms, exclude other bound systems or reconstruct atom formation.",
-        "Quantization, gauge representation and renormalizable interactions do not prove stable individual carriers. The original 0.7/0.3 weights, necessary arising/maintenance, one-carrier minima and SOMA object classification have no scientific admission."
+        "Quantization, gauge representation and renormalizable interactions do not prove stable individual carriers."
       ]
     },
     {
@@ -242,7 +242,7 @@ const contracts = {
       "limitations": [
         "These charge, spinor and field assignments specify a model, not independent measurements of every species, a numerical charge-conjugation test or universal lepton stability. Massive Dirac fields contain both chiral components; a chiral interaction does not assert an exactly polarized massive beam. No Tong/PDG gamma5 sign identification is made.",
         "Minimal massless Standard Model fields do not generate the separately declared neutrino mass/mixing extension. A flavor readout does not track persistent flavor in flight. The admitted oscillation interpretation does not determine absolute masses, require each individual mass to be nonzero, decide Dirac versus Majorana character or prove separate antiparticle species for a Majorana field.",
-        "Representation components, particle species and detector candidates are different counting domains. No universal one-carrier minimum, parent weight, necessary arising/maintenance process or SOMA objecthood follows."
+        "Representation components, particle species and detector candidates are different counting domains. No necessary arising/maintenance process follows."
       ]
     }
   ],

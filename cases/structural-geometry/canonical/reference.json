@@ -2,7 +2,6 @@
   "schemaVersion": "1",
   "method": "minimum-off-diagonal-bitmask-over-all-node-permutations",
   "controlsFileSha256": "fdd7e3996c729407ec236ceed372adcc48637f49cd4ea11d151d1057efbfaf2b",
-  "causalFileSha256": "8aaf04c157d4b303f499d35516611fc9aa69aa8c9829621ca0dbb93de36e0c29",
   "census": [
     {
       "nodes": 1,
@@ -4294,12 +4293,6 @@
       "nodes": 6,
       "edges": 30,
       "key": 1073741823
-    },
-    {
-      "id": "causal-fragment",
-      "nodes": 6,
-      "edges": 11,
-      "key": 3691222
     }
   ]
 }

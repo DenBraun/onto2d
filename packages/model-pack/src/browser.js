@@ -8,8 +8,8 @@ import {
 } from "./transport-layout.js";
 
 export const MODEL_PACK_BROWSER_LIMITS = Object.freeze({
-  maxFileBytes: 16 * 1024 * 1024,
-  maxTotalBytes: 64 * 1024 * 1024,
+  maxFileBytes: 64 * 1024 * 1024,
+  maxTotalBytes: 256 * 1024 * 1024,
   maxBundleBytes: 64 * 1024 * 1024,
   maxUrlLength: 16_384
 });

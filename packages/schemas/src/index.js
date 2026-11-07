@@ -56,7 +56,6 @@ export const schemaUrls = Object.freeze({
   structuralMetricExperimentRequest: schema("structural-metric-experiment-request"),
   structuralMetricExperiment: schema("structural-metric-experiment"),
   structuralWeightAudit: schema("structural-weight-audit"),
-  structuralMetricSuite: schema("structural-metric-suite"),
   structuralProjectionPolicy: schema("structural-projection-policy"),
   structuralMetricPolicy: schema("structural-metric-policy"),
   structuralProjection: schema("structural-projection"),

@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   [process.execPath, ["cases/structural-geometry/regimes/build.mjs", "--verify"]],
   [process.execPath, ["--test", "packages/structural-geometry/test/regimes.test.mjs", "packages/structural-geometry/test/regime-contracts.test.mjs"]]
 ]) {

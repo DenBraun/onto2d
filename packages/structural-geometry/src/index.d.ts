@@ -7,9 +7,9 @@ export type StructuralNodeAttribute = "level" | "phase" | "phaseId" | "typeRole"
   "typeRoleId" | "scienceIds" | "scientificStatus" | "requirements";
 export type StructuralEdgeAttribute = "relationLayer" | "causalDirections" |
   "causalDirectionIds" | "interactionModes" | "interactionModeIds" | "weight" |
-  "necessity" | "dependencyType" | "dependencyTypeId" | "ontologicalRole" | "quantization";
+  "necessity" | "dependencyType" | "dependencyTypeId" | "ontologicalRole" | "quantization" | "role" | "status";
 
-export interface StructuralProjectionPolicy {
+export interface SourceParentProjectionPolicy {
   readonly id: "source-parent-directed-v1";
   readonly version: "1";
   readonly scope: "full-model";
@@ -27,6 +27,58 @@ export interface StructuralProjectionPolicy {
   readonly limits: { readonly maxNodes: 4096; readonly maxEdges: 16384 };
 }
 
+/** Canonical premise-to-dependent relations; joint rule premises stay pairwise incidences. */
+export interface CanonicalRelationProjectionPolicy {
+  readonly id: "canonical-relation-directed-v1";
+  readonly version: "1";
+  readonly scope: "full-model";
+  readonly direction: "native";
+  readonly relationLayers: readonly ["descriptive", "functional-support"];
+  readonly higherOrderPolicy: "none";
+  readonly selfLoops: "reject";
+  readonly parallelEdges: "reject";
+  readonly nodeAttributes: readonly ["level", "typeRole", "scientificStatus"];
+  readonly edgeAttributes: readonly ["relationLayer", "role"];
+  readonly limits: { readonly maxNodes: 4096; readonly maxEdges: 16384 };
+}
+
+/** Layered canonical packs: the ontological layer of arisings joined by causes. */
+export interface CanonicalArisingCausalProjectionPolicy {
+  readonly id: "canonical-arising-causal-v1";
+  readonly version: "1";
+  readonly scope: "arising-layer";
+  readonly direction: "native";
+  readonly nodeLayer: "arising";
+  readonly relationLayers: readonly ["causal"];
+  readonly excludedRelationLayers: readonly ["descriptive", "functional-support"];
+  readonly higherOrderPolicy: "none";
+  readonly selfLoops: "reject";
+  readonly parallelEdges: "reject";
+  readonly nodeAttributes: readonly ["level", "phase", "typeRole", "scientificStatus"];
+  readonly edgeAttributes: readonly ["relationLayer", "dependencyType", "necessity", "ontologicalRole", "status"];
+  readonly limits: { readonly maxNodes: 4096; readonly maxEdges: 16384 };
+}
+
+/** Layered canonical packs: the technical layer of evidence records inside arisings. */
+export interface CanonicalTechnicalProjectionPolicy {
+  readonly id: "canonical-technical-directed-v1";
+  readonly version: "1";
+  readonly scope: "technical-layer";
+  readonly direction: "native";
+  readonly nodeLayer: "technical";
+  readonly relationLayers: readonly ["descriptive", "functional-support"];
+  readonly excludedRelationLayers: readonly ["causal"];
+  readonly higherOrderPolicy: "none";
+  readonly selfLoops: "reject";
+  readonly parallelEdges: "reject";
+  readonly nodeAttributes: readonly ["level", "typeRole", "scientificStatus"];
+  readonly edgeAttributes: readonly ["relationLayer", "role"];
+  readonly limits: { readonly maxNodes: 4096; readonly maxEdges: 16384 };
+}
+
+export type StructuralProjectionPolicy = SourceParentProjectionPolicy | CanonicalRelationProjectionPolicy
+  | CanonicalArisingCausalProjectionPolicy | CanonicalTechnicalProjectionPolicy;
+
 export interface StructuralMetricPolicy {
   readonly id: "unit-v1";
   readonly version: "1";
@@ -37,7 +89,7 @@ export interface StructuralMetricPolicy {
 }
 
 export interface StructuralGeometryRequest {
-  projectionPolicyId?: "source-parent-directed-v1";
+  projectionPolicyId?: "source-parent-directed-v1" | "canonical-relation-directed-v1" | "canonical-arising-causal-v1" | "canonical-technical-directed-v1";
   metricPolicyId?: "unit-v1";
 }
 
@@ -60,7 +112,7 @@ export interface StructuralProjectionEdge {
   readonly target: string;
   readonly sourceRecordHash: ContentHash;
   readonly attributes: Readonly<Partial<Record<StructuralEdgeAttribute, StructuralValue>>> & {
-    readonly relationLayer: "source-parent";
+    readonly relationLayer: "source-parent" | "descriptive" | "functional-support" | "causal";
   };
 }
 
@@ -112,6 +164,11 @@ export interface StructuralGeometryResult {
     readonly byDependencyType: readonly StructuralCurvatureGroup[];
     readonly byNecessity: readonly StructuralCurvatureGroup[];
     readonly byOntologicalRole: readonly StructuralCurvatureGroup[];
+  } | {
+    readonly bySourceLevel: readonly StructuralCurvatureGroup[];
+    readonly byTargetLevel: readonly StructuralCurvatureGroup[];
+    readonly byRelationLayer: readonly StructuralCurvatureGroup[];
+    readonly byRole: readonly StructuralCurvatureGroup[];
   };
   readonly extrema: {
     readonly minimumEdgeIds: readonly string[];
@@ -145,7 +202,14 @@ export interface StructuralGeometryAnalysisDefinition {
   run(context: { readonly model: Model }, input?: StructuralGeometryRequest): StructuralGeometryArtifact;
 }
 
-export const SOURCE_PARENT_DIRECTED_POLICY: StructuralProjectionPolicy;
+export const SOURCE_PARENT_DIRECTED_POLICY: SourceParentProjectionPolicy;
+export const CANONICAL_RELATION_DIRECTED_POLICY: CanonicalRelationProjectionPolicy;
+export const CANONICAL_ARISING_CAUSAL_POLICY: CanonicalArisingCausalProjectionPolicy;
+export const CANONICAL_TECHNICAL_DIRECTED_POLICY: CanonicalTechnicalProjectionPolicy;
+/** The projection policy of a layered pack that contains every requested node; null for an unlayered pack. */
+export function layerPolicyForNodes(pack: ModelPack, nodeIds: readonly string[]): "canonical-arising-causal-v1" | "canonical-technical-directed-v1" | null;
+/** The projection that a full or induced scope reads, from one verification of the pack; an induced scope of a layered pack uses the policy of its layer. */
+export function projectStructuralGeometryForScope(pack: ModelPack, scope: { readonly kind: "full" } | { readonly kind: "induced"; readonly nodeIds: readonly string[] }): StructuralProjection;
 export const UNIT_METRIC_POLICY: StructuralMetricPolicy;
 export const STRUCTURAL_GEOMETRY_ANALYSIS_ID: "structural-geometry";
 export const STRUCTURAL_GEOMETRY_ANALYSIS_VERSION: "1";

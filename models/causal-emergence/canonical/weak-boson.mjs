@@ -808,7 +808,7 @@ const contracts = {
         "The 90 percent lower-limit construction and the fitted central mass are different inferences. The chosen 81 +/- 5 result and the 74 +/- 4 full-QCD-smearing alternative reuse the same selected data with different recoil/production treatments; they must not be pooled. The quoted fit includes allowance for systematic errors without a released full likelihood here.",
         "Tables 2-3 and Figures 8-9 retain six electron candidates A-F, including endcap event B. Because B has possible conversion and opposite muon activity, the source restricts final analysis to the five central-gondola events. Table 2 candidate G and additional tau-compatible events are not further confirmed electron-neutrino candidates.",
         "The historical predicted mass and rate are comparisons using adopted electroweak parameters, efficiencies and production inputs. Agreement is not a direct determination of the scalar vacuum, a unique Higgs-mechanism test, or an independent absolute cross-section measurement.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "contextIds": [
         "ua1-1983-w-inference"
@@ -988,7 +988,7 @@ const contracts = {
         "The source explicitly states that final electromagnetic calibration is still in progress, possible scale shifts can affect W and Z masses together, and electromagnetic radiative corrections have not been applied to the masses. These are historical results under that convention, not current precision values or a modern pole-mass extraction.",
         "The source compares the electron-pair mass spread with detector resolution and an adopted natural-width expectation. No intrinsic width, lifetime or branching-fraction measurement is admitted from this discovery peak; instrumental spread is not automatically a decay width.",
         "This Z report uses the April-May 1983 sample. Its contemporary W comparison and preliminary 81 +/- 2 mass reference are distinct from the November-December 1982 W discovery sample and 81 +/- 5 result. The 1983 W comparison, weak-angle/rho extraction and rate predictions are not new admitted outcomes here.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "contextIds": [
         "ua1-1983-z-inference"
@@ -1171,7 +1171,7 @@ const contracts = {
         "The 90 percent lower-limit construction and the fitted central mass are different inferences. The chosen 81 +/- 5 result and the 74 +/- 4 full-QCD-smearing alternative reuse the same selected data with different recoil/production treatments; they must not be pooled. The quoted fit includes allowance for systematic errors without a released full likelihood here.",
         "Tables 2-3 and Figures 8-9 retain six electron candidates A-F, including endcap event B. Because B has possible conversion and opposite muon activity, the source restricts final analysis to the five central-gondola events. Table 2 candidate G and additional tau-compatible events are not further confirmed electron-neutrino candidates.",
         "The historical predicted mass and rate are comparisons using adopted electroweak parameters, efficiencies and production inputs. Agreement is not a direct determination of the scalar vacuum, a unique Higgs-mechanism test, or an independent absolute cross-section measurement.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "contextIds": [
         "ua1-1983-w-inference"
@@ -1239,7 +1239,7 @@ const contracts = {
         "The source explicitly states that final electromagnetic calibration is still in progress, possible scale shifts can affect W and Z masses together, and electromagnetic radiative corrections have not been applied to the masses. These are historical results under that convention, not current precision values or a modern pole-mass extraction.",
         "The source compares the electron-pair mass spread with detector resolution and an adopted natural-width expectation. No intrinsic width, lifetime or branching-fraction measurement is admitted from this discovery peak; instrumental spread is not automatically a decay width.",
         "This Z report uses the April-May 1983 sample. Its contemporary W comparison and preliminary 81 +/- 2 mass reference are distinct from the November-December 1982 W discovery sample and 81 +/- 5 result. The 1983 W comparison, weak-angle/rho extraction and rate predictions are not new admitted outcomes here.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "contextIds": [
         "ua1-1983-z-inference"
@@ -1348,7 +1348,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1377,7 +1377,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1402,7 +1402,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1431,7 +1431,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1452,7 +1452,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1477,7 +1477,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1502,7 +1502,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1527,7 +1527,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1552,7 +1552,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1585,7 +1585,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1614,7 +1614,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1643,7 +1643,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1668,7 +1668,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     },
     {
@@ -1693,7 +1693,7 @@ const contracts = {
       ],
       "openObligations": [
         "The cited detector technical publications, test-beam data, radiative-correction calculations, parton distributions, production models and QCD simulations are adopted as described by the reviewed primary account. Their underlying records and calculations were not independently reproduced; this review does not replay acquisition, calibration, event selection, backgrounds or likelihoods.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ]
     }
   ],
@@ -2198,7 +2198,7 @@ const contracts = {
       "system": "The declared UA1 historical collider preparation and its original response or inference stage",
       "preparation": "Adopt the central track, electromagnetic shower and penetrating-muon response, test-beam and source calibration, cosmic-muon alignment checks and background estimates described in the report. Preserve electron radiation and geometric response limitations, the unfinished electromagnetic energy calibration and the different magnetic/recoil inputs used for the dimuon.",
       "observable": "UA1 dilepton response and calibration",
-      "finding": "Adopt the central track, electromagnetic shower and penetrating-muon response, test-beam and source calibration, cosmic-muon alignment checks and background estimates described in the report. Preserve electron radiation and geometric response limitations, the unfinished electromagnetic energy calibration and the different magnetic/recoil inputs used for the dimuon.",
+      "finding": "The adopted electron and muon response, calibration and background inputs, including the unfinished electromagnetic energy calibration and the separate magnetic/recoil inputs used for the dimuon.",
       "limitations": [
         "The electron and muon channels have distinct response and calibration procedures. Cosmic-ray muons, test beams, source scans, detector events and simulated backgrounds are auxiliary inputs, not extra Z signal events. The hard-radiation interpretation of one electron track is not a new measured radiation probability.",
         "Table 3 footnote (a) says electron mass errors were scaled up to 5 GeV to represent the unfinished overall electromagnetic calibration; that scale factor is omitted from Figure 8 error bars. Figure 9 omits correlated energy-scale error. Preserve the reported 95.2 +/- 2.5 summary without recomputing it from rounded event masses or treating calibration contributions as independent errors.",
@@ -2280,7 +2280,7 @@ const contracts = {
         "Tables 2-3 and Figures 8-9 retain six electron candidates A-F, including endcap event B. Because B has possible conversion and opposite muon activity, the source restricts final analysis to the five central-gondola events. Table 2 candidate G and additional tau-compatible events are not further confirmed electron-neutrino candidates.",
         "Table 3 contains computed transverse masses and recoil momenta, not directly measured W invariant masses. Rounded event inputs are insufficient to reproduce every printed center or the error covariance exactly. No local table arithmetic, confidence limit or final fit is certified.",
         "The historical predicted mass and rate are comparisons using adopted electroweak parameters, efficiencies and production inputs. Agreement is not a direct determination of the scalar vacuum, a unique Higgs-mechanism test, or an independent absolute cross-section measurement.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "sourceIds": [
         "ua1-1983-w-discovery"
@@ -2302,7 +2302,7 @@ const contracts = {
         "The four electron pairs and single dimuon are selected, reconstructed candidates, not raw trigger counts or stable objects tracked as Z bosons. Figure 1 displays nested cuts on one electron sample; its stages are not independent acquisitions. A jet veto from the W search must not be imposed on Z events: the dimuon and electron event B have visible jet structure.",
         "The electron and muon channels have distinct response and calibration procedures. Cosmic-ray muons, test beams, source scans, detector events and simulated backgrounds are auxiliary inputs, not extra Z signal events. The hard-radiation interpretation of one electron track is not a new measured radiation probability.",
         "The source explicitly states that final electromagnetic calibration is still in progress, possible scale shifts can affect W and Z masses together, and electromagnetic radiative corrections have not been applied to the masses. These are historical results under that convention, not current precision values or a modern pole-mass extraction.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "sourceIds": [
         "ua1-1983-z-discovery"
@@ -2324,7 +2324,7 @@ const contracts = {
         "The source explicitly states that final electromagnetic calibration is still in progress, possible scale shifts can affect W and Z masses together, and electromagnetic radiative corrections have not been applied to the masses. These are historical results under that convention, not current precision values or a modern pole-mass extraction.",
         "The source compares the electron-pair mass spread with detector resolution and an adopted natural-width expectation. No intrinsic width, lifetime or branching-fraction measurement is admitted from this discovery peak; instrumental spread is not automatically a decay width.",
         "This Z report uses the April-May 1983 sample. Its contemporary W comparison and preliminary 81 +/- 2 mass reference are distinct from the November-December 1982 W discovery sample and 81 +/- 5 result. The 1983 W comparison, weak-angle/rho extraction and rate predictions are not new admitted outcomes here.",
-        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. Universal parent weights, carrier minima, fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
+        "These are channel-conditioned production and decay interpretations of unstable weak-boson resonances, not stable persistent carrier units or a measurement of every weak interaction property. A fixed arising order and an internal-propagator formation prerequisite are excluded. Scalar-vacuum uniqueness, Yukawa hierarchy, absolute vacuum stability and a cosmological transition are not inferred."
       ],
       "sourceIds": [
         "ua1-1983-z-discovery"

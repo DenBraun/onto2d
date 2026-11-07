@@ -597,9 +597,9 @@ Limits:
 
 - Cannot isolate a unique causal contribution of electron-acceptor replacement or each redesign change without supplementary analysis
 - No full methods/rawMS/replicate reconstruction; source normalization uses core proteins only
-- Malate includes externally supplied acetyl-CoA carbon;not all fixedCO2 product
-- Finite recurring activity does not establish global steady state,complete mass balance,energy autonomy,enzyme synthesis or adaptive regulation
-- Allversions and readouts belong to one publication group; do not split1.0discovery/5.4holdout
+- Malate includes externally supplied acetyl-CoA carbon; not all fixedCO2 product
+- Finite recurring activity does not establish global steady state, complete mass balance, energy autonomy, enzyme synthesis or adaptive regulation
+- Allversions and readouts belong to one publication group; do not split 1.0 discovery/5.4 holdout
 - CETCH 1.0 preparations and reported results now have explicit main-text-only contexts. Full supplementary protocols, timing, failure controls and a uniquely identified electron-acceptor mechanism remain unverified.
 
 ### Reciprocal RNA ligation: finite replenishment-dependent amplification
@@ -635,9 +635,9 @@ Comparison judgments:
 Limits:
 
 - Ligation of prepared fragments is not nucleotide-by-nucleotide arbitrary genome copying
-- No all-resource self-production,formalRAF theorem,unbounded persistence or compartment requirement
-- Logistic fit and topology share data;not separate validation
-- Supporting methods unread;publishedFigure2 andauthorFigure2 mappings retained
+- No all-resource self-production, formal RAF theorem, unbounded persistence or compartment requirement
+- Logistic fit and topology share data; not separate validation
+- Supporting methods unread; published Figure 2 and author Figure 2 mappings retained
 
 ### Model vesicles: selective exchange, finite retention and fed extension
 
@@ -674,8 +674,8 @@ Limits:
 
 - Finitepassiveselectivity isnotactivecontrol ormaintainedmetabolism
 - Fluorescentassociationdoesnotprovezeroleakageforever
-- Differentcargo,temperatureandpreparationscannotcomposeautomaticallyintoasingleprotocell
-- Extensionisnotcompletegenomereplication,daughterinheritanceorautonomousgrowth
+- Different cargo, temperature and preparations cannot compose automatically into a single protocell
+- Extension is not complete genome replication, daughter inheritance or autonomous growth
 
 ## Proposed cross-case correspondences
 

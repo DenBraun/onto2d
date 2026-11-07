@@ -3,7 +3,7 @@
     "id": "structural-comparison",
     "version": "1"
   },
-  "artifactHash": "sha256:937eef63ca7d5900056d28c984b1f4f62e20b03874908f82be1ca3084d7d1dfb",
+  "artifactHash": "sha256:28eae0316f7d81ff8564b0efc2005ee7c792f89b726837200f381ab40fed9e3a",
   "components": [
     {
       "family": "structure",
@@ -63,7 +63,7 @@
         },
         {
           "code": "evidence-rejected",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -110,7 +110,7 @@
         "id": "structural-typed-alignment",
         "version": "1"
       },
-      "artifactHash": "sha256:96aaff73674e7dd3f4922699ab5d00633a8997f971b19f893e48ab3e366e90c8",
+      "artifactHash": "sha256:6c5e52ac2f054eae3c1228626dcc7ff483e05dd061b9925694e61d23ad127b29",
       "compatibility": {
         "basis": null,
         "reasons": [
@@ -122,7 +122,7 @@
         "state": "unresolved"
       },
       "mapping": {
-        "artifactHash": "sha256:5a1f433fca981a6ffc1086b1d9e531899b0a87db0d9b1130690e60be3ddd5e50",
+        "artifactHash": "sha256:836aa6c3214728d10b8b1fc1d65a611e27fb7506a263230c34bd98980b7d2cc9",
         "declaration": {
           "fields": {
             "causalDirectionIds": [
@@ -202,7 +202,7 @@
           },
           "id": "comparison-missing-and-rejected",
           "reviewEvidence": {
-            "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+            "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
             "reference": "cases/structural-geometry/comparison/PROTOCOL.md"
           },
           "version": "1"
@@ -282,7 +282,7 @@
         "version": "1"
       },
       "request": {
-        "approvedMappingHash": "sha256:5a1f433fca981a6ffc1086b1d9e531899b0a87db0d9b1130690e60be3ddd5e50"
+        "approvedMappingHash": "sha256:836aa6c3214728d10b8b1fc1d65a611e27fb7506a263230c34bd98980b7d2cc9"
       },
       "schemaVersion": "1",
       "sources": {
@@ -1175,7 +1175,7 @@
   "request": {
     "evidenceGaps": [
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "rejected",
         "observableId": "canonical-typed-directed-structure-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
@@ -1190,8 +1190,8 @@
       "kind": "full"
     },
     "vocabulary": {
-      "approvedMappingHash": "sha256:5a1f433fca981a6ffc1086b1d9e531899b0a87db0d9b1130690e60be3ddd5e50",
-      "mappingHash": "sha256:5a1f433fca981a6ffc1086b1d9e531899b0a87db0d9b1130690e60be3ddd5e50"
+      "approvedMappingHash": "sha256:836aa6c3214728d10b8b1fc1d65a611e27fb7506a263230c34bd98980b7d2cc9",
+      "mappingHash": "sha256:836aa6c3214728d10b8b1fc1d65a611e27fb7506a263230c34bd98980b7d2cc9"
     }
   },
   "schemaVersion": "1",

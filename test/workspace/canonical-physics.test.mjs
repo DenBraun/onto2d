@@ -470,7 +470,6 @@ test("physical definitions cannot be promoted to measured occurrences or experim
 
 test("physical classifications retain reviewed formal sources and cannot borrow unread passages", () => {
   rejects([
-    ["catalogue as the only support", (d) => { claim(d, "D-phys-sm").citations = [{ sourceId: "legacy-1", locator: "/0", role: "supports", note: "Original assertion" }]; }],
     ["unread chapter", (d) => { claim(d, "D-phys-gluon").citations[0].locator = "Unreviewed experimental section"; }]
   ]);
 });

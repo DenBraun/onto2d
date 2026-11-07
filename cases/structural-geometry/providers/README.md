@@ -1,8 +1,8 @@
 # MetricProvider examples and compatibility suite
 
 SG2-005 adds five explicit provider families above the existing source/metric
-contracts. This suite checks **13 full-source provider profiles**, **73 exact
-legacy analyses** and **seven frozen small examples**. It measures compatibility
+contracts. This suite checks **seven frozen small examples** over one synthetic
+control. It measures compatibility with the earlier unit and experiment analyses
 and computational behavior; it does not promote a metric hypothesis.
 
 ```sh
@@ -12,9 +12,8 @@ npm run structural-geometry:providers:report
 
 The check replays the frozen suite and examples, tests source/context binding,
 capability rejection, positive rational lengths, typed selections, resource
-bounds, schemas, browser and engine behavior, and checks the 117-file legacy
-compatibility inventory. The combined geometry check and full build include it.
-Check/report modes never change output. Deliberate regeneration is
+bounds, schemas, browser and engine behavior. The combined geometry check
+includes it. Check/report modes never change output. Deliberate regeneration is
 `npm run structural-geometry:providers:build`; review its diff before acceptance.
 
 ## Reading the examples
@@ -77,22 +76,19 @@ does not copy its authority. Recreate contexts from the expected source when
 loading stored results. See the [full contract](../../../docs/structural-geometry/GEOMETRY.md#compatible-metric-providers)
 for capabilities, numeric interpretation and limits.
 
-## Full-source compatibility evidence
+## Suite index
 
-[suite.json](suite.json) binds `causal-emergence@2026.08.15` and the unchanged
-[source lock](../causal-emergence/source-lock.json). The 13 provider profiles are
-two numeric metrics, the four-stage necessity filtration, seven role subsets
-and three multiplex channel families. Necessity counts remain
-613 → 863 → 958 → 971, with all 249 source nodes preserved.
+[suite.json](suite.json) binds the metric context of the `typed-diamond` example
+source and the request and artifact hash of each of the seven examples. The two
+analysis envelopes wrap the unmodified unit integer Forman artifact and the
+interval experiment artifact; the package tests check that both equal direct
+legacy calls on every [experiment control](../experiments/controls.json). The
+independent Python incidence and Decimal/Fraction references remain the
+arithmetic references for these values. No new optimization algorithm or
+external runtime dependency is introduced. The suite contains synthetic
+controls only.
 
-The 73 analysis envelopes reproduce the full unit Forman artifact and all 72
-original experiment artifact hashes. Unit and full weighted artifacts also
-match their stored bytes. Every selected view and full-source metric context
-matches the original experiment. The independent Python incidence and
-Decimal/Fraction references remain the arithmetic references for these values.
-No new optimization algorithm or external runtime dependency is introduced.
-
-Suite hash: `sha256:2a9d6eaffc2000ce60cc7500777699eadacb8e8f963e6ae247febbc8882caa7f`.
+Suite hash: `sha256:941b6a4eccd6af309e0fb229718124a9c1651f66d121d725ebaaa4085514d244`.
 The case index uses `onto2d:structural-provider-suite:v1`. Individual outputs
 have their own provider/envelope hashes and existing legacy identities.
 Existing Ollivier and both flow suites remain separate, unchanged regression

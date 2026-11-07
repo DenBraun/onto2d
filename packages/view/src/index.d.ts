@@ -30,6 +30,10 @@ export interface ViewNodeSummary {
   phase: JsonValue;
   typeRole: JsonValue;
   scientificStatus: JsonValue;
+  layer: JsonValue;
+  arisingId: JsonValue;
+  cluster: JsonValue;
+  domain: JsonValue;
   shortDescription: string;
   parentCount: number;
   childCount: number;
@@ -49,6 +53,7 @@ export interface CatalogOptions {
   phases?: JsonPrimitive[];
   typeRoles?: JsonPrimitive[];
   scientificStatuses?: JsonPrimitive[];
+  layers?: JsonPrimitive[];
   sort?: CatalogSort;
   order?: SortOrder;
   offset?: number;
@@ -170,6 +175,7 @@ export class ModelView {
     phases: readonly Readonly<FacetEntry>[];
     typeRoles: readonly Readonly<FacetEntry>[];
     scientificStatuses: readonly Readonly<FacetEntry>[];
+    layers: readonly Readonly<FacetEntry>[];
   }>;
   get(id: string): Readonly<ViewNodeSummary> | undefined;
   catalog(options?: CatalogOptions): Readonly<CatalogProjection>;

@@ -206,7 +206,7 @@ const contracts = {
       "id": "M-phys-phase-regime-source-scope",
       "kind": "method",
       "statement": "Use the selected Gibbs bulk equilibrium criteria to distinguish thermodynamic constraints, local/new-phase stability and phase-rule variables. Reuse the existing hard-disk equilibrium scan for a bounded positive phase organization, the alloy anneal result for protocol-dependent persistence/conversion, and the liquid scope as a boundary on what single-regime spatial and molecular-dynamic information establishes. Preserve the original four study contexts; do not pool their controls or transfer model densities, thermal protocols or microscopic clocks between systems.",
-      "scope": "Four-context literature-synthesis method for complete original card /15.",
+      "scope": "Four-context literature-synthesis method.",
       "status": "method-contract",
       "citations": [
         {
@@ -262,12 +262,6 @@ const contracts = {
           "locator": "Published pages 833-834, Equations 1-3, Figure 4 caption and Table 1: absorbing-condition switch correlation, jump/frame model, orientational correlation ranks and distinct relaxation times",
           "role": "method",
           "note": "Actually reviewed selected primary passage; reused study remains the same acquisition or calculation, without new replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original card /15 is catalogue provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
@@ -277,11 +271,9 @@ const contracts = {
         "The liquid-water structure reanalysis and reorientation model supply positive single-regime structural/dynamical information. They are not new phase-boundary acquisitions, direct measurements of network lifetimes or a validated common phase-transition model.",
         "Bulk equilibrium constraints delimit an interpretation; they do not derive all material regimes, determine an equation of state, or show that every stationary or long-lived state is globally stable.",
         "Critical endpoints, spinodal-like local-stability boundaries, coexistence conditions and kinetic pathways are distinct. No complete critical-point map, universal criticality, all-system symmetry-breaking rule, Landau theory or universality class is admitted.",
-        "Original necessary parents 2.9 crystals, 2.12 liquid molecular organization and 2.13 colloidal interfaces are not universal prerequisites of the thermodynamic formalism or every phase transition. The selected sources do not require simultaneous prior crystal, polar liquid and colloid formation.",
-        "Original weights 0.4/0.35/0.25, directions [3], modes [1], necessary, dependency type 10 and arising roles remain catalogue provenance without a matched causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, parent N_min=N_crit counts 2/3/3 and null N_sat are catalogue defaults. Gibbs independent-component/phase counts, hard-disk N, alloy grains and liquid coordination counts are different domains; none measures those carrier thresholds.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2,14], established, MustCover [10], ShouldCover [9] and Optional [] are ontology/display assignments. The SOMA global pattern/stability-map label is not an additional measured physical entity or universal causal hierarchy.",
-        "The original generic thermodynamics/Landau/critical-framework and calorimetry/diffraction/transport placeholders are replaced only by actually read formal equilibrium conditions and the existing bounded studies. No unread Landau derivation, calorimetric latent heat, transport phase boundary or all-material phase atlas is invented.",
+        "Crystals, liquid molecular organization and colloidal interfaces are not universal prerequisites of the thermodynamic formalism or every phase transition. The selected sources do not require simultaneous prior crystal, polar liquid and colloid formation.",
+        "Gibbs independent-component/phase counts, hard-disk N, alloy grains and liquid coordination counts are different domains.",
+        "Only actually read formal equilibrium conditions and the existing bounded studies are admitted. No unread Landau derivation, calorimetric latent heat, transport phase boundary or all-material phase atlas is invented.",
         "The existing studies and source scopes are reused without duplicate studies, another physical acquisition, a new joint likelihood or independent replication. Gibbs 1878 is a selected primary theoretical author summary, not a newly solved material phase diagram or a complete reading of the earlier treatise.",
         "No equation-of-state fit, free-energy reconstruction, phase-rule numerical replay, pressure-loop integration, simulation execution, atomic structural refinement, new anneal experiment or physical kinetic prediction is claimed."
       ],
@@ -352,12 +344,6 @@ const contracts = {
           "locator": "Published pages 833-834, Equations 1-3, Figure 4 caption and Table 1: absorbing-condition switch correlation, jump/frame model, orientational correlation ranks and distinct relaxation times",
           "role": "supports",
           "note": "Actually reviewed selected primary passage; reused study remains the same acquisition or calculation, without new replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original card /15 is catalogue provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
@@ -367,11 +353,9 @@ const contracts = {
         "The liquid-water structure reanalysis and reorientation model supply positive single-regime structural/dynamical information. They are not new phase-boundary acquisitions, direct measurements of network lifetimes or a validated common phase-transition model.",
         "Bulk equilibrium constraints delimit an interpretation; they do not derive all material regimes, determine an equation of state, or show that every stationary or long-lived state is globally stable.",
         "Critical endpoints, spinodal-like local-stability boundaries, coexistence conditions and kinetic pathways are distinct. No complete critical-point map, universal criticality, all-system symmetry-breaking rule, Landau theory or universality class is admitted.",
-        "Original necessary parents 2.9 crystals, 2.12 liquid molecular organization and 2.13 colloidal interfaces are not universal prerequisites of the thermodynamic formalism or every phase transition. The selected sources do not require simultaneous prior crystal, polar liquid and colloid formation.",
-        "Original weights 0.4/0.35/0.25, directions [3], modes [1], necessary, dependency type 10 and arising roles remain catalogue provenance without a matched causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, parent N_min=N_crit counts 2/3/3 and null N_sat are catalogue defaults. Gibbs independent-component/phase counts, hard-disk N, alloy grains and liquid coordination counts are different domains; none measures those carrier thresholds.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2,14], established, MustCover [10], ShouldCover [9] and Optional [] are ontology/display assignments. The SOMA global pattern/stability-map label is not an additional measured physical entity or universal causal hierarchy.",
-        "The original generic thermodynamics/Landau/critical-framework and calorimetry/diffraction/transport placeholders are replaced only by actually read formal equilibrium conditions and the existing bounded studies. No unread Landau derivation, calorimetric latent heat, transport phase boundary or all-material phase atlas is invented.",
+        "Crystals, liquid molecular organization and colloidal interfaces are not universal prerequisites of the thermodynamic formalism or every phase transition. The selected sources do not require simultaneous prior crystal, polar liquid and colloid formation.",
+        "Gibbs independent-component/phase counts, hard-disk N, alloy grains and liquid coordination counts are different domains.",
+        "Only actually read formal equilibrium conditions and the existing bounded studies are admitted. No unread Landau derivation, calorimetric latent heat, transport phase boundary or all-material phase atlas is invented.",
         "The existing studies and source scopes are reused without duplicate studies, another physical acquisition, a new joint likelihood or independent replication. Gibbs 1878 is a selected primary theoretical author summary, not a newly solved material phase diagram or a complete reading of the earlier treatise.",
         "No equation-of-state fit, free-energy reconstruction, phase-rule numerical replay, pressure-loop integration, simulation execution, atomic structural refinement, new anneal experiment or physical kinetic prediction is claimed."
       ],
@@ -514,10 +498,6 @@ const contracts = {
         {
           "sourceId": "laage-hynes2006-water-reorientation",
           "locator": "Published pages 833-834, Equations 1-3, Figure 4 caption and Table 1: absorbing-condition switch correlation, jump/frame model, orientational correlation ranks and distinct relaxation times"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -526,11 +506,9 @@ const contracts = {
         "The liquid-water structure reanalysis and reorientation model supply positive single-regime structural/dynamical information. They are not new phase-boundary acquisitions, direct measurements of network lifetimes or a validated common phase-transition model.",
         "Bulk equilibrium constraints delimit an interpretation; they do not derive all material regimes, determine an equation of state, or show that every stationary or long-lived state is globally stable.",
         "Critical endpoints, spinodal-like local-stability boundaries, coexistence conditions and kinetic pathways are distinct. No complete critical-point map, universal criticality, all-system symmetry-breaking rule, Landau theory or universality class is admitted.",
-        "Original necessary parents 2.9 crystals, 2.12 liquid molecular organization and 2.13 colloidal interfaces are not universal prerequisites of the thermodynamic formalism or every phase transition. The selected sources do not require simultaneous prior crystal, polar liquid and colloid formation.",
-        "Original weights 0.4/0.35/0.25, directions [3], modes [1], necessary, dependency type 10 and arising roles remain catalogue provenance without a matched causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, parent N_min=N_crit counts 2/3/3 and null N_sat are catalogue defaults. Gibbs independent-component/phase counts, hard-disk N, alloy grains and liquid coordination counts are different domains; none measures those carrier thresholds.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2,14], established, MustCover [10], ShouldCover [9] and Optional [] are ontology/display assignments. The SOMA global pattern/stability-map label is not an additional measured physical entity or universal causal hierarchy.",
-        "The original generic thermodynamics/Landau/critical-framework and calorimetry/diffraction/transport placeholders are replaced only by actually read formal equilibrium conditions and the existing bounded studies. No unread Landau derivation, calorimetric latent heat, transport phase boundary or all-material phase atlas is invented.",
+        "Crystals, liquid molecular organization and colloidal interfaces are not universal prerequisites of the thermodynamic formalism or every phase transition. The selected sources do not require simultaneous prior crystal, polar liquid and colloid formation.",
+        "Gibbs independent-component/phase counts, hard-disk N, alloy grains and liquid coordination counts are different domains.",
+        "Only actually read formal equilibrium conditions and the existing bounded studies are admitted. No unread Landau derivation, calorimetric latent heat, transport phase boundary or all-material phase atlas is invented.",
         "The existing studies and source scopes are reused without duplicate studies, another physical acquisition, a new joint likelihood or independent replication. Gibbs 1878 is a selected primary theoretical author summary, not a newly solved material phase diagram or a complete reading of the earlier treatise.",
         "No equation-of-state fit, free-energy reconstruction, phase-rule numerical replay, pressure-loop integration, simulation execution, atomic structural refinement, new anneal experiment or physical kinetic prediction is claimed."
       ]
@@ -667,24 +645,6 @@ const contracts = {
   "comparisons": [],
   "sources": [
     {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "shechtman1984-icosahedral",
       "kind": "research-publication",
       "title": "Metallic Phase with Long-Range Orientational Order and No Translational Symmetry",
@@ -762,7 +722,7 @@ const contracts = {
           "Published pages 074506-9 to 074506-11, Section VI Equations 14-15, Figures 9-11 captions and Table I: statistical/systematic uncertainty, three-dataset comparison, recommended peak and cutoff-dependent coordination",
           "Published page 074506-11, Section VII: finite-range ambient-water pair-correlation conclusions and supplementary-data statement"
         ],
-        "limit": "Actually read the declared published-page body passages and figure/table captions in the published-text copy uploaded by author Lawrie Skinner. Figures were not visually inspected, the publisher PDF was not obtained, and the supplement/numerical data were not downloaded. The exact analytical mapping was read as text but no full symbolic or raw-data replay is claimed. Selected Section III preparation and Figure 2 caption were read, not every apparatus paragraph in that section. Underlying acquisition/form-factor/neutron/comparison-model publications were not separately read. Publisher identity and Crossref metadata verified: JCP138(7),074506, online20 February2013 (print metadata21 February2013). No update-to/correction relation in the checked Crossref record and no linked correction found in the bounded DOI/title primary-record search; not an exhaustive absence claim."
+        "limit": "Actually read the declared published-page body passages and figure/table captions in the published-text copy uploaded by author Lawrie Skinner. Figures were not visually inspected, the publisher PDF was not obtained, and the supplement/numerical data were not downloaded. The exact analytical mapping was read as text but no full symbolic or raw-data replay is claimed. Selected Section III preparation and Figure 2 caption were read, not every apparatus paragraph in that section. Underlying acquisition/form-factor/neutron/comparison-model publications were not separately read. Publisher identity and Crossref metadata verified: JCP 138(7), 074506, online 20 February 2013 (print metadata 21 February 2013). No update-to/correction relation in the checked Crossref record and no linked correction found in the bounded DOI/title primary-record search; not an exhaustive absence claim."
       }
     },
     {
@@ -786,7 +746,7 @@ const contracts = {
           "Published pages 833-834, Equations 1-3, Figure 4 caption and Table 1: absorbing-condition switch correlation, jump/frame model, orientational correlation ranks and distinct relaxation times",
           "Published page 835, conclusion and Notes 21 and 27: conditional simulation support, experimental interpretation limits and distinction from unstable broken-bond endpoints"
         ],
-        "limit": "Read the complete scientific body on published pages832-835, Equations1-3 as text, Figures1-4/Table1 captions and entries, and selected Notes21/27 in the published-text copy uploaded by coauthor James Hynes. Figures were not visually inspected and the exact printed equation typography was not checked from an obtained PDF; no unverified closed-form jump formula is admitted. Exclude the unrelated turbulent-flow article following on page835. Publisher PDF and raw trajectories not obtained; no simulation/correlation replay or separately reviewed earlier experimental datasets. Crossref/published copy metadata agree on Science311(5762),832-835, issue10 February2006 and body says online26 January2006. Crossref has-review relation is an external appraisal, not a correction. No update-to/correction relation or explicit linked erratum found in the bounded check; not an exhaustive absence claim."
+        "limit": "Read the complete scientific body on published pages 832-835, Equations 1-3 as text, Figures 1-4/Table 1 captions and entries, and selected Notes 21/27 in the published-text copy uploaded by coauthor James Hynes. Figures were not visually inspected and the exact printed equation typography was not checked from an obtained PDF; no unverified closed-form jump formula is admitted. Exclude the unrelated turbulent-flow article following on page 835. Publisher PDF and raw trajectories not obtained; no simulation/correlation replay or separately reviewed earlier experimental datasets. Crossref/published copy metadata agree on Science 311(5762), 832-835, issue 10 February 2006 and body says online 26 January 2006. Crossref has-review relation is an external appraisal, not a correction. No update-to/correction relation or explicit linked erratum found in the bounded check; not an exhaustive absence claim."
       }
     },
     {
@@ -809,7 +769,7 @@ const contracts = {
           "Published pages 445-446, Coexistent phases: composition/state definition independent of specimen size, free coexistence and n+2-r intensive degrees of freedom",
           "Published pages 447-449, Equation 14, continuous-change stability and Critical phases, plus opening geometrical illustration: new-phase versus local stability and the selected fluid critical endpoint"
         ],
-        "limit": "Read published pages441-448 and the opening449 stability/geometrical passage from the18-page original AJS scan. Visually checked441,443-449;442 read as text. The title explicitly says Abstract by the author: this is Gibbs own18-page theoretical exposition, not a database abstract or a secondary review, and not a full reading of the much longer1876/1878 Transactions treatise cited on441. Pages450-458 and the ideal-gas extension beginning on449 are not admitted. Original symbols are rewritten explicitly; no closed-form critical derivative test, numerical phase calculation, kinetic model or primary experiment is replayed. Publisher and Crossref metadata checked: American Journal of Science third series volume16 (s3-16),issue96,441-458,December1878; registration assigns1December. No update-to or correction relation appears in the bounded publisher/DOI/title check. Earlier treatise errata noted in library metadata were not separately read; no exhaustive historical-correction or full-proof claim."
+        "limit": "Read published pages 441-448 and the opening 449 stability/geometrical passage from the 18-page original AJS scan. Visually checked 441, 443-449; 442 read as text. The title explicitly says Abstract by the author: this is Gibbs own 18-page theoretical exposition, not a database abstract or a secondary review, and not a full reading of the much longer 1876/1878 Transactions treatise cited on 441. Pages 450-458 and the ideal-gas extension beginning on 449 are not admitted. Original symbols are rewritten explicitly; no closed-form critical derivative test, numerical phase calculation, kinetic model or primary experiment is replayed. Publisher and Crossref metadata checked: American Journal of Science third series volume 16 (s3-16), issue 96, 441-458, December 1878; registration assigns 1 December. No update-to or correction relation appears in the bounded publisher/DOI/title check. Earlier treatise errata noted in library metadata were not separately read; no exhaustive historical-correction or full-proof claim."
       }
     }
   ]

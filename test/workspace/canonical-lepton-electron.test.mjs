@@ -101,7 +101,7 @@ test("electron-decay inference retains external solar inputs and correlated phys
   ]);
 });
 
-test("electron-decay cards bind visible text, evidence coordinates and actual source reading", async () => {
+test("electron-decay records bind visible text, evidence coordinates and actual source reading", async () => {
   const mutations = [...LEPTON_ELECTRON_ADMISSION.contexts, ...LEPTON_ELECTRON_ADMISSION.observations].flatMap(([short]) => [
     [`${short} cannot display unsupported stability`, (d) => {
       d.graph.entities.find((e) => e.id === `phys:${short}`).description = "Every lepton is eternally stable.";

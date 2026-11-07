@@ -150,7 +150,7 @@ const contracts = {
       "id": "D-phys-neutrino-mass-mixing-scope",
       "kind": "review-finding",
       "statement": "The massive-neutrino description distinguishes charged-current flavor labels from propagation mass eigenstates and supplies a mixing matrix and mass-squared differences. Oscillation probabilities identify only restricted combinations under their preparation, propagation and response assumptions. Their structure requires an extension of the minimal massless-neutrino Standard Model, while its deeper mass-generation mechanism and parameter origin remain unspecified.",
-      "scope": "Declared basis/parameter structure and finite evidence boundaries for source-card 1.25; propagation applications and quantitative absolute-mass or cosmological tests remain separately scoped.",
+      "scope": "Declared basis/parameter structure and finite evidence boundaries for nonzero neutrino mass and flavor mixing; propagation applications and quantitative absolute-mass or cosmological tests remain separately scoped.",
       "status": "definition",
       "citations": [
         {
@@ -208,8 +208,8 @@ const contracts = {
         "The minimal renormalizable Standard Model with its stated field content has no neutrino mass term. Charged-fermion Higgs/Yukawa relations do not automatically supply neutrino masses. Alternative massive-neutrino field/operator assignments are formal inputs, not a measured Dirac/Majorana choice, a unique origin or a prediction of mixing parameters.",
         "At fixed mixing, baseline and energy in the declared leading coherent ultrarelativistic vacuum phase, an admissible common mass-squared shift leaves oscillation probabilities unchanged. Two unequal nonzero mass-squared differences from a shared reference imply three distinct eigenvalues and at least two positive masses, not three positive masses. Equal nonzero differences are not sufficient for that conclusion. Selected effective two-flavor fits are not automatically exact three-state eigenpair measurements.",
         "Oscillation evidence here does not determine an absolute mass scale, the mass ordering beyond its selected conditional models, Dirac/Majorana character, Majorana phases, sterile content or the origin of the mixing/Yukawa parameters. No beta-endpoint, neutrinoless-double-beta, cosmological mass-sum or modern global-fit bounds are imported.",
-        "Propagation, coherence and applications retain the separate scope of card 1.17. The matter Hamiltonian uses vacuum masses/mixing as inputs; its medium potential does not generate those vacuum masses. Source composition, collisions, self-refraction, cosmic expansion and detector response require their own quantitative transport inputs. This admission supplies no astrophysical transport or cosmological prediction.",
-        "The original necessary lepton parent is retained only as a descriptive flavor-readout/model dependency. Weight 1, Nmin=Ncrit=1, arising/maintenance and direction/interaction codes do not establish a measured formation threshold, universal causal necessity or temporal emergence sequence. SOMA phase 1, property/type-role 3 and the established label are not scientific evidence.",
+        "Propagation, coherence and applications retain the separate scope of neutrino oscillations. The matter Hamiltonian uses vacuum masses/mixing as inputs; its medium potential does not generate those vacuum masses. Source composition, collisions, self-refraction, cosmic expansion and detector response require their own quantitative transport inputs. This admission supplies no astrophysical transport or cosmological prediction.",
+        "The lepton link is retained only as a descriptive flavor-readout/model dependency.",
         "The original refusal to specify a deeper mass-generation mechanism is preserved. Finite evidence for mass-induced mixing under declared assumptions does not require selecting a speculative mechanism; it also does not validate every flavor-transformation explanation or a universal sector-wide construction."
       ]
     },
@@ -348,7 +348,7 @@ const contracts = {
         "OPERA appearance significance, signal strength and its full-mixing mass-squared interval reuse the same 2008-2012 acquisition, channel counts and response. The compatibility result is not independent appearance replication or a third distinct oscillation frequency. Its adopted nominal splitting and full-mixing inputs are not additional fitted observations; the reported intervals and significance retain their original confidence construction.",
         "These are four named inference contexts and five outcomes, not five independent experiments or a global three-flavor fit. Event selections, intermediate summaries, alternative analysis implementations and fitted outputs within a campaign share data. No likelihood, nuisance covariance, combined parameter range, mass ordering or confidence coverage is newly reconstructed.",
         "Within a supplied common three-state mass-induced interpretation, distinct nonzero splitting scales motivate the formal identifiability consequence of at least two nonzero masses. This comparison does not independently establish all assumptions of that embedding or measure all three masses, an absolute scale, Dirac/Majorana nature, Majorana phases, sterile content or a unique mechanism. The formal common-shift invariance is not a new experimental bound.",
-        "Generic solar, atmospheric, reactor and accelerator evidence placeholders are restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal parent/formation/maintenance claims remain excluded from this finite evidence comparison."
+        "Solar, atmospheric, reactor and accelerator evidence is restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal formation/maintenance claims remain excluded from this finite evidence comparison."
       ],
       "contextIds": [
         "kamland2005-oscillation-fit",
@@ -492,7 +492,7 @@ const contracts = {
         "OPERA appearance significance, signal strength and its full-mixing mass-squared interval reuse the same 2008-2012 acquisition, channel counts and response. The compatibility result is not independent appearance replication or a third distinct oscillation frequency. Its adopted nominal splitting and full-mixing inputs are not additional fitted observations; the reported intervals and significance retain their original confidence construction.",
         "These are four named inference contexts and five outcomes, not five independent experiments or a global three-flavor fit. Event selections, intermediate summaries, alternative analysis implementations and fitted outputs within a campaign share data. No likelihood, nuisance covariance, combined parameter range, mass ordering or confidence coverage is newly reconstructed.",
         "Within a supplied common three-state mass-induced interpretation, distinct nonzero splitting scales motivate the formal identifiability consequence of at least two nonzero masses. This comparison does not independently establish all assumptions of that embedding or measure all three masses, an absolute scale, Dirac/Majorana nature, Majorana phases, sterile content or a unique mechanism. The formal common-shift invariance is not a new experimental bound.",
-        "Generic solar, atmospheric, reactor and accelerator evidence placeholders are restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal parent/formation/maintenance claims remain excluded from this finite evidence comparison."
+        "Solar, atmospheric, reactor and accelerator evidence is restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal formation/maintenance claims remain excluded from this finite evidence comparison."
       ],
       "contextIds": [
         "kamland2005-oscillation-fit",
@@ -552,8 +552,8 @@ const contracts = {
         "The minimal renormalizable Standard Model with its stated field content has no neutrino mass term. Charged-fermion Higgs/Yukawa relations do not automatically supply neutrino masses. Alternative massive-neutrino field/operator assignments are formal inputs, not a measured Dirac/Majorana choice, a unique origin or a prediction of mixing parameters.",
         "At fixed mixing, baseline and energy in the declared leading coherent ultrarelativistic vacuum phase, an admissible common mass-squared shift leaves oscillation probabilities unchanged. Two unequal nonzero mass-squared differences from a shared reference imply three distinct eigenvalues and at least two positive masses, not three positive masses. Equal nonzero differences are not sufficient for that conclusion. Selected effective two-flavor fits are not automatically exact three-state eigenpair measurements.",
         "Oscillation evidence here does not determine an absolute mass scale, the mass ordering beyond its selected conditional models, Dirac/Majorana character, Majorana phases, sterile content or the origin of the mixing/Yukawa parameters. No beta-endpoint, neutrinoless-double-beta, cosmological mass-sum or modern global-fit bounds are imported.",
-        "Propagation, coherence and applications retain the separate scope of card 1.17. The matter Hamiltonian uses vacuum masses/mixing as inputs; its medium potential does not generate those vacuum masses. Source composition, collisions, self-refraction, cosmic expansion and detector response require their own quantitative transport inputs. This admission supplies no astrophysical transport or cosmological prediction.",
-        "The original necessary lepton parent is retained only as a descriptive flavor-readout/model dependency. Weight 1, Nmin=Ncrit=1, arising/maintenance and direction/interaction codes do not establish a measured formation threshold, universal causal necessity or temporal emergence sequence. SOMA phase 1, property/type-role 3 and the established label are not scientific evidence.",
+        "Propagation, coherence and applications retain the separate scope of neutrino oscillations. The matter Hamiltonian uses vacuum masses/mixing as inputs; its medium potential does not generate those vacuum masses. Source composition, collisions, self-refraction, cosmic expansion and detector response require their own quantitative transport inputs. This admission supplies no astrophysical transport or cosmological prediction.",
+        "The lepton link is retained only as a descriptive flavor-readout/model dependency.",
         "The original refusal to specify a deeper mass-generation mechanism is preserved. Finite evidence for mass-induced mixing under declared assumptions does not require selecting a speculative mechanism; it also does not validate every flavor-transformation explanation or a universal sector-wide construction."
       ]
     },
@@ -655,7 +655,7 @@ const contracts = {
         "OPERA appearance significance, signal strength and its full-mixing mass-squared interval reuse the same 2008-2012 acquisition, channel counts and response. The compatibility result is not independent appearance replication or a third distinct oscillation frequency. Its adopted nominal splitting and full-mixing inputs are not additional fitted observations; the reported intervals and significance retain their original confidence construction.",
         "These are four named inference contexts and five outcomes, not five independent experiments or a global three-flavor fit. Event selections, intermediate summaries, alternative analysis implementations and fitted outputs within a campaign share data. No likelihood, nuisance covariance, combined parameter range, mass ordering or confidence coverage is newly reconstructed.",
         "Within a supplied common three-state mass-induced interpretation, distinct nonzero splitting scales motivate the formal identifiability consequence of at least two nonzero masses. This comparison does not independently establish all assumptions of that embedding or measure all three masses, an absolute scale, Dirac/Majorana nature, Majorana phases, sterile content or a unique mechanism. The formal common-shift invariance is not a new experimental bound.",
-        "Generic solar, atmospheric, reactor and accelerator evidence placeholders are restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal parent/formation/maintenance claims remain excluded from this finite evidence comparison."
+        "Solar, atmospheric, reactor and accelerator evidence is restricted to these actual admitted sources and analysis stages. Astrophysical/cosmological constraints, beta endpoints, neutrinoless double beta decay and universal formation/maintenance claims remain excluded from this finite evidence comparison."
       ]
     }
   ],
@@ -666,7 +666,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]
@@ -677,7 +677,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]
@@ -688,7 +688,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]
@@ -699,7 +699,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]
@@ -710,7 +710,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]
@@ -721,7 +721,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]
@@ -732,7 +732,7 @@ const contracts = {
       "target": "phys:neutrino-mass-mixing-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no measured parent necessity, carrier minimum or mass-generation mechanism.",
+      "assertion": "This declared basis, model or propagation boundary delimits interpretation; it supplies no mass-generation mechanism.",
       "claimIds": [
         "D-phys-neutrino-mass-mixing-scope"
       ]

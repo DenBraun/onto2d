@@ -73,7 +73,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -94,7 +94,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -109,13 +109,13 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "status": "definition",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22"
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits"
         }
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -136,7 +136,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -157,7 +157,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -172,13 +172,13 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "status": "definition",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22"
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits"
         }
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -199,13 +199,13 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
     {
       "id": "cell:mendez2001-gcap-current-response",
-      "name": "Dark-adapted single-rod current and incremental background response response",
+      "name": "Dark-adapted single-rod current and incremental background response",
       "kind": "scoped-process",
       "description": "GCAP knockout yields larger, slower dim-flash responses; GCAP2-only expression does not restore the early fast recovery even when maximal homogenate activity is restored. Bright-background incremental sensitivity falls sooner, while non-GCAP adaptation remains.",
       "claimIds": [
@@ -220,7 +220,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -235,13 +235,13 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "status": "definition",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22"
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits"
         }
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -249,7 +249,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "id": "cell:phototransduction-source-scope",
       "name": "Phototransduction cascade: observable boundaries",
       "kind": "definition",
-      "description": "The original card is reconstructed through distinct source-bound preparations; full end-to-end transfer remains unresolved.",
+      "description": "The phototransduction cascade is reconstructed through distinct source-bound preparations; full end-to-end transfer remains unresolved.",
       "claimIds": [
         "D-cell-phototransduction-scope",
         "D-cell-fung-correction"
@@ -257,13 +257,13 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "status": "definition",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22"
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits"
         }
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     },
@@ -278,13 +278,13 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "status": "hypothesis",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22"
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits"
         }
       ],
       "openObligations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "level": 4
     }
@@ -294,20 +294,20 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "id": "D-cell-phototransduction-scope",
       "kind": "review-finding",
       "statement": "Photochemistry, isolated biochemical activation, patch conductance, intact rod current, adaptive feedback, membrane voltage and downstream coding are distinct observables. Separate experiments cannot be concatenated into one measured complete cascade.",
-      "scope": "Admission boundary for source card 4.22 and the retained retinal pilot.",
+      "scope": "Admission boundary for phototransduction and the retained retinal pilot.",
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22",
-          "role": "provenance",
-          "note": "Only the declared source passage and preparation are admitted."
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits",
+          "role": "supports",
+          "note": "Internal review of the separately admitted phototransduction preparations; not independent scientific review."
         }
       ],
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ]
     },
     {
@@ -318,16 +318,16 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "status": "unresolved",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/22",
-          "role": "provenance",
-          "note": "Only the declared source passage and preparation are admitted."
+          "sourceId": "cellular-review",
+          "locator": "Study contexts, comparisons and scientific limits",
+          "role": "supports",
+          "note": "Internal review of the separately admitted phototransduction preparations; not independent scientific review."
         }
       ],
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "The original Burns/Pugh and Rieke/Baylor review references provide orientation rather than a newly reproduced experiment."
       ]
     },
@@ -348,7 +348,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ]
     },
     {
@@ -368,7 +368,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "contextIds": [
         "mendez2001-gcap-expression"
@@ -391,7 +391,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type."
       ],
       "contextIds": [
@@ -415,7 +415,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "contextIds": [
         "mendez2001-gcap-enzyme"
@@ -438,7 +438,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type."
       ],
       "contextIds": [
@@ -462,7 +462,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "checkIds": [],
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function."
+        "This preparation does not establish a full end-to-end cellular transfer function."
       ],
       "contextIds": [
         "mendez2001-gcap-current"
@@ -492,7 +492,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "limitations": [
         "Residual non-GCAP adaptation is inferred by comparing measured background sensitivity with the source's no-adaptation model; its molecular mechanism is not directly identified.",
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type."
       ],
       "contextIds": [
@@ -649,7 +649,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "finding": "Double knockout removes detectable GCAP1/2 expression; transgenic GCAP2 is expressed at about twice endogenous GCAP2, so downstream rescue is not a dose-matched single-variable control.",
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type.",
         "All three contexts share this one publication. Restoration of maximal bulk activity does not imply restoration of single-cell kinetics."
       ],
@@ -677,7 +677,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "finding": "Knockout removes detectable calcium dependence of GC activity, rather than removing the GC enzyme or all basal activity; GCAP2 transgene restores maximal homogenate activity and added recombinant GCAP1 restores calcium responsiveness in separate extracts.",
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type.",
         "All three contexts share this one publication. Restoration of maximal bulk activity does not imply restoration of single-cell kinetics."
       ],
@@ -705,7 +705,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
       "finding": "GCAP knockout yields larger, slower dim-flash responses; GCAP2-only expression does not restore the early fast recovery even when maximal homogenate activity is restored. Bright-background incremental sensitivity falls sooner, while non-GCAP adaptation remains.",
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type.",
         "All three contexts share this one publication. Restoration of maximal bulk activity does not imply restoration of single-cell kinetics."
       ],
@@ -825,7 +825,7 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
     {
       "nodeId": "cell:phototransduction-source-scope",
       "role": "definition",
-      "denotes": "The original card is reconstructed through distinct source-bound preparations; full end-to-end transfer remains unresolved.",
+      "denotes": "The phototransduction cascade is reconstructed through distinct source-bound preparations; full end-to-end transfer remains unresolved.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-cell-phototransduction-scope",
@@ -843,117 +843,3 @@ export const CELL_PHOTOTRANSDUCTION_RECORDS = {
     }
   ]
 };
-export const CARD_SCOPES = [
-  {
-    "sourceIndex": 22,
-    "originalName": "Phototransduction Cascade",
-    "scope": "Separate biochemical activation, channel, intact-current and GCAP-feedback preparations; no universal cascade reconstruction.",
-    "nodeIds": [
-      "cell:mendez2001-gcap-expression-preparation",
-      "cell:mendez2001-gcap-expression-response",
-      "cell:mendez2001-gcap-expression-scope",
-      "cell:mendez2001-gcap-enzyme-preparation",
-      "cell:mendez2001-gcap-enzyme-response",
-      "cell:mendez2001-gcap-enzyme-scope",
-      "cell:mendez2001-gcap-current-preparation",
-      "cell:mendez2001-gcap-current-response",
-      "cell:mendez2001-gcap-current-scope",
-      "cell:phototransduction-source-scope",
-      "cell:phototransduction-transfer-unresolved"
-    ],
-    "claimIds": [
-      "D-cell-phototransduction-scope",
-      "C-cell-phototransduction-transfer-unresolved",
-      "D-cell-fung-correction",
-      "M-cell-mendez2001-gcap-expression",
-      "C-cell-mendez2001-gcap-expression",
-      "M-cell-mendez2001-gcap-enzyme",
-      "C-cell-mendez2001-gcap-enzyme",
-      "M-cell-mendez2001-gcap-current",
-      "C-cell-mendez2001-gcap-current"
-    ],
-    "assertions": [
-      {
-        "topic": "Photochemical initiation, G-protein/enzyme amplification and cGMP conductance",
-        "disposition": "qualified",
-        "claimIds": [
-          "D-cell-phototransduction-scope",
-          "D-cell-fung-correction"
-        ],
-        "reason": "The retained Baylor, Fung and Fesenko pilot sources are abstract-only and arise from separate preparations; the Fung correction explicitly distinguishes reconstitution stages."
-      },
-      {
-        "topic": "Adaptive feedback, gain and temporal shaping",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-mendez2001-gcap-current"
-        ],
-        "reason": "Mouse GCAP knockout and non-dose-matched GCAP2 expression alter scoped current sensitivity and kinetics; residual adaptation remains."
-      },
-      {
-        "topic": "Noise suppression, membrane voltage, robust downstream coding and complete multistage transfer",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-phototransduction-transfer-unresolved"
-        ],
-        "reason": "Current recordings and the admitted separate component assays do not jointly establish these complete-system properties."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "3.49",
-        "disposition": "qualified",
-        "claimIds": [
-          "D-cell-phototransduction-scope",
-          "C-cell-phototransduction-transfer-unresolved"
-        ],
-        "reason": "A category-level necessary/enabling parent is not admitted. Related molecular functions have preparation-specific evidence; no universal necessity or inherited quantitative dependency follows."
-      },
-      {
-        "parentCode": "3.15",
-        "disposition": "qualified",
-        "claimIds": [
-          "D-cell-phototransduction-scope",
-          "C-cell-phototransduction-transfer-unresolved"
-        ],
-        "reason": "A category-level necessary/enabling parent is not admitted. Related molecular functions have preparation-specific evidence; no universal necessity or inherited quantitative dependency follows."
-      },
-      {
-        "parentCode": "3.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "D-cell-phototransduction-scope",
-          "C-cell-phototransduction-transfer-unresolved"
-        ],
-        "reason": "A category-level necessary/enabling parent is not admitted. Related molecular functions have preparation-specific evidence; no universal necessity or inherited quantitative dependency follows."
-      },
-      {
-        "parentCode": "3.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "D-cell-phototransduction-scope",
-          "C-cell-phototransduction-transfer-unresolved"
-        ],
-        "reason": "A category-level necessary/enabling parent is not admitted. Related molecular functions have preparation-specific evidence; no universal necessity or inherited quantitative dependency follows."
-      },
-      {
-        "parentCode": "4.21",
-        "disposition": "unresolved",
-        "claimIds": [
-          "D-cell-phototransduction-scope",
-          "C-cell-phototransduction-transfer-unresolved"
-        ],
-        "reason": "A category-level necessary/enabling parent is not admitted. Related molecular functions have preparation-specific evidence; no universal necessity or inherited quantitative dependency follows."
-      }
-    ],
-    "excludedDefaults": [
-      "Phase, role/science/requirement codes are catalogue metadata, not measured laws.",
-      "All inherited parent weights, causal-direction/interaction-mode codes, necessity/dependency labels, carrier codes and N_min/N_crit/N_sat defaults are excluded from active semantics.",
-      "Established status does not replace preparation-specific evidence."
-    ],
-    "unresolved": [
-      "Matched end-to-end gain/noise transfer, actual membrane-voltage and downstream coding outcomes.",
-      "Specific GCAP1 necessity requires further experiments; GCAP2-only rescue is not expression-matched."
-    ]
-  }
-];

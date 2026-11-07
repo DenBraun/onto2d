@@ -3,8 +3,8 @@ import { ModelPackError } from "./model-pack-error.js";
 const FORMAT = "onto2d-json-value-table";
 const VERSION = "1";
 const DEFAULT_LIMITS = Object.freeze({
-  maxBytes: 64 * 1024 * 1024,
-  maxEntries: 1_000_000,
+  maxBytes: 256 * 1024 * 1024,
+  maxEntries: 4_000_000,
   maxDepth: 64,
   maxStringBytes: 1024 * 1024
 });

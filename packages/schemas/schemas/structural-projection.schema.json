@@ -84,25 +84,61 @@
             "pattern": "^sha256:[0-9a-f]{64}$"
           },
           "attributes": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "relationLayer": {
-                "const": "source-parent"
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "relationLayer": {
+                    "const": "source-parent"
+                  },
+                  "causalDirections": {},
+                  "causalDirectionIds": {},
+                  "interactionModes": {},
+                  "interactionModeIds": {},
+                  "weight": {},
+                  "necessity": {},
+                  "dependencyType": {},
+                  "dependencyTypeId": {},
+                  "ontologicalRole": {},
+                  "quantization": {}
+                },
+                "required": [
+                  "relationLayer"
+                ]
               },
-              "causalDirections": {},
-              "causalDirectionIds": {},
-              "interactionModes": {},
-              "interactionModeIds": {},
-              "weight": {},
-              "necessity": {},
-              "dependencyType": {},
-              "dependencyTypeId": {},
-              "ontologicalRole": {},
-              "quantization": {}
-            },
-            "required": [
-              "relationLayer"
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "relationLayer": {
+                    "enum": [
+                      "descriptive",
+                      "functional-support"
+                    ]
+                  },
+                  "role": {}
+                },
+                "required": [
+                  "relationLayer"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "relationLayer": {
+                    "const": "causal"
+                  },
+                  "dependencyType": {},
+                  "necessity": {},
+                  "ontologicalRole": {},
+                  "status": {}
+                },
+                "required": [
+                  "relationLayer"
+                ]
+              }
             ]
           }
         },

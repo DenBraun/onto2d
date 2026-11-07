@@ -5,8 +5,8 @@ not observed scientific responses, invariance passes or empirical interventions.
 The sandbox contract and every earlier regime/observation/comparison suite remain
 separate. Do not change earlier graph declarations or accepted artifact bytes.
 
-Reuse declared canonical/typed fixtures for a path, reciprocal pair, outward star, edgeless
-graph, missing typed field, reordered typed sets and a source-bound Causal fragment.
+Reuse declared synthetic canonical/typed fixtures for a path, reciprocal pair,
+outward star, edgeless graph, missing typed field and reordered typed sets.
 Add a mixed reciprocal/path graph, a five-node boundary graph with an isolate,
 and a 32-node directed cycle exercising 32 exhaustive targets and 1,024 edge visits.
 

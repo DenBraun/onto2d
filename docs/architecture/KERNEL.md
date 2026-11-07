@@ -231,14 +231,12 @@ are represented explicitly; the kernel does not fabricate a Z-score.
 
 ### Source migration
 
-The catalogue adapter preserves source relations and applies only reviewed,
-content-addressed classification and node-resolution inputs. Policies must be
-frozen before topology-aware unblinding. Disagreement, amendments, SCC
-projections, condensation, metrics, and explanations remain replayable
-artifacts.
+Classification and node-resolution inputs are reviewed and content-addressed.
+Policies must be frozen before topology-aware unblinding. Disagreement and
+amendments remain replayable artifacts.
 
-The kernel and adapter do not author current-catalogue classifications or infer
-dispositions from a desired DAG. That scientific work remains external.
+The kernel does not author source classifications or infer dispositions from a
+desired DAG. That scientific work remains external.
 
 <a id="kernel-model-and-boundaries--artifacts-and-persistence"></a>
 
@@ -252,9 +250,8 @@ Execution records are append-only operational overlays bound to a run hash.
 They cannot modify semantic artifacts. Symbolic links, unexpected files,
 non-canonical bytes, stale bindings, and partial overwrites fail closed.
 
-Explanation indexes are generated only after replay of the complete level or
-source-migration chain. Presentation code queries them instead of reconstructing
-semantic joins.
+Explanation indexes are generated only after replay of the complete level chain.
+Presentation code queries them instead of reconstructing semantic joins.
 
 <a id="kernel-model-and-boundaries--security-and-resource-isolation"></a>
 

@@ -983,7 +983,7 @@
         "Peak RBC flux is the maximum one-second bin in an approximately seventeen-second post-stimulus interval relative to about three seconds of baseline. Velocity is sampled in the peak-flux bin, not an independently selected peak. Paired observations and nested capillaries are not independent mice.",
         "The Figure 4 diameter null concerns eighteen capillaries in seven mice; the authors state that sampled measurement sites lacked pericytes. Upstream diameter uses eight paired experiments in seven mice. The local null does not exclude pericyte effects at other segments or prove equivalence.",
         "Whisker responses persist after endothelial Kcnj2 deletion. Surface barium has a broader target range and leaves residual perfusion responses. The potassium source during neural activity and the complete intercellular route remain unresolved; potassium ejection bypasses the physiological release step.",
-        "Supplementary Figure 5 reports five preparations but paired t statistics with five degrees of freedom; Figure 7 reports group sizes inconsistent with its unpaired-test degrees of freedom. Supplementary Table 1 and Table 2 also reverse control-line sample counts for the flow comparisons. Exact quantitative calibration requires animal-identified measurements and resolution.",
+        "Supplementary Figure 5 reports five preparations but paired t statistics with five degrees of freedom; Supplementary Figure 7 reports group sizes inconsistent with its unpaired-test degrees of freedom. Supplementary Table 1 and Table 2 also reverse control-line sample counts for the flow comparisons. Exact quantitative calibration requires animal-identified measurements and resolution.",
         "Nonsignificance is not equivalence. The selected SK/IK activation protocols do not exclude every calcium-dependent endothelial channel. The LFP control tests selected spectral bands, not complete neural activity, and the TTX potassium experiment does not identify the physiological potassium-releasing cell.",
         "Raw recordings and custom MATLAB LFP software have not been obtained or reproduced. The reporting checklist and main text do not provide a resolved access route. No numerical edge weights, universal minimal carrier counts or independently validated full pathway are assigned."
       ],
@@ -1463,7 +1463,7 @@
         "The roughly tenfold rodent comparison uses a separate published mouse study and external denominators. The paper acknowledges unmatched age, species, environment, labeling and survival procedures. Absolute-age and relative-age hypotheses were not compared in one matched design, and this series supplies no invariant primate-to-human scaling.",
         "Bipolar morphology and radial or tangential orientation support a migration interpretation but do not track displacement, origin or a radial-glial guidance interaction. Nearby cells are not a clone, and anatomical resemblance to developing neurons is not an executed construction rule.",
         "The replacement interpretation draws on separate human neuron counts and macaque synapse counts. Synapse-count stability is not a matched neuron census. This experiment measures neither paired births and deaths, feedback of population state, replacement identity nor the fraction of older neurons ultimately renewed.",
-        "No electrical, synaptic-output, learning or memory assay was performed. A possible cognitive role, stable-memory benefit or recovery mechanism remains untested. Labeling in this study does not require an injury or learning manipulation and does not validate the source card's necessary incoming assertions, weights or minimum carrier counts.",
+        "No electrical, synaptic-output, learning or memory assay was performed. A possible cognitive role, stable-memory benefit or recovery mechanism remains untested. Labeling in this study does not require an injury or learning manipulation.",
         "All main scientific text, Materials and Methods, and the captions of Figures 1-3 were read in the PMC full text; all three archived figure images were visually inspected. The separate publisher PDF, animal-level manifest, raw histological counts, optical stacks and analysis files were not obtained or independently reproduced."
       ],
       "readExtent": "selected-full-text-passages",
@@ -1774,7 +1774,7 @@
       "observable": "Sample-dependent delay firing, temporal profiles, match enhancement and repetition suppression.",
       "finding": "PF sample selectivity can reappear between distractors, while match enhancement and repetition suppression have different task dependence. These observations do not establish a causal local storage or PF-to-IT route.",
       "limitations": [
-        "Two rhesus monkeys supplied 264 screened PF units; 145 task-responsive units were retained (98 in the ABBA-trained animal and 47 in the standard-task animal). The other 109 units were not studied further. Cells are nested within two animals; this is not an unbiased PF prevalence estimate. Sex and ages are unspecified.",
+        "Two rhesus monkeys supplied 264 screened PF units; 145 task-responsive units were retained (98 in the ABBA-trained animal and 47 in the standard-task animal). The source describes 109 completely unresponsive units as not studied further, although 264 recorded minus 145 retained gives 119; this printed count conflict is retained, not corrected by assumption. Cells are nested within two animals; this is not an unbiased PF prevalence estimate. Sex and ages are unspecified.",
         "The sample and test images last 500 ms with 1000-ms blank intervals and zero to four intervening nonmatches. ABBA trials repeat an irrelevant nonmatch; standard trials do not. Task/training differences are confounded with animal identity. PF visual responses use 90-290 ms after onset and delay activity the last 600 ms of each blank interval.",
         "The text reports forty delay-selective units, including 33/98 ABBA and 7/47 standard units; Table 1 instead lists 32/98 for ABBA. Match-enhancement counts also differ across the text and table, with mixed response types. No exact reconciled subgroup prevalence or exclusive partition is admitted.",
         "The 135 IT units were previously recorded in the ABBA animal and reanalyzed. They are not simultaneous paired PF-IT recordings or an independent replication. Figure 7 pools forty PF units across two animals against twenty-five IT units from one animal; selection and animal composition differ.",
@@ -1967,7 +1967,7 @@
       "observable": "Correct or incorrect next-location choice by sequence category and tested ordinal position",
       "finding": "Selected regular sequences have lower mean error than the irregular baseline, including positions 6-8 of the first presentation. Rectangle-boundary failures remain distinct.",
       "limitations": [
-        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory/control/ensemble parent.",
+        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory, control or ensemble precursor.",
         "After an error the correct prefix is shown again with the error corrected. Later guesses therefore depend on variable feedback and exposure. The irregular comparison is a selected task baseline, not a universal chance level; pattern boundaries also differ in frequency, spatial distance and memory demand.",
         "Participant-level trial data and runnable model code were not identified among the seven listed supporting files, which contain six figure images and S1 Text. Published statistical tests and fitted models have not been independently reproduced. Non-significance does not establish equivalence or absence of a cognitive resource."
       ],
@@ -1995,7 +1995,7 @@
       "observable": "Correct or incorrect next-location choice by sequence category and tested ordinal position",
       "finding": "Selected regular sequences improve continuation, while diagonal, rectangle and cross sequences show no significant overall advantage over the irregular baseline.",
       "limitations": [
-        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory/control/ensemble parent.",
+        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory, control or ensemble precursor.",
         "After an error the correct prefix is shown again with the error corrected. Later guesses therefore depend on variable feedback and exposure. The irregular comparison is a selected task baseline, not a universal chance level; pattern boundaries also differ in frequency, spatial distance and memory demand.",
         "Participant-level trial data and runnable model code were not identified among the seven listed supporting files, which contain six figure images and S1 Text. Published statistical tests and fitted models have not been independently reproduced. Non-significance does not establish equivalence or absence of a cognitive resource."
       ],
@@ -2023,7 +2023,7 @@
       "observable": "Correct or incorrect next-location choice by sequence category and tested ordinal position",
       "finding": "Repeat, repeat+2, two-arcs and four-segments patterns improve continuation. Two-squares and more complex patterns have null overall contrasts; the between-cohort preview comparison finds no significant improvement.",
       "limitations": [
-        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory/control/ensemble parent.",
+        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory, control or ensemble precursor.",
         "After an error the correct prefix is shown again with the error corrected. Later guesses therefore depend on variable feedback and exposure. The irregular comparison is a selected task baseline, not a universal chance level; pattern boundaries also differ in frequency, spatial distance and memory demand.",
         "Participant-level trial data and runnable model code were not identified among the seven listed supporting files, which contain six figure images and S1 Text. Published statistical tests and fitted models have not been independently reproduced. Non-significance does not establish equivalence or absence of a cognitive resource."
       ],
@@ -2052,7 +2052,7 @@
       "observable": "Correct or incorrect next-location choice by sequence category and tested ordinal position",
       "finding": "All tested regular categories except two-crosses have lower overall error than the irregular baseline. Individual diagonal-position contrasts and deeper-rule performance remain uneven.",
       "limitations": [
-        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory/control/ensemble parent.",
+        "These are behavioral sequence tasks, without neural recordings or selective carrier perturbations. A successful finite continuation does not uniquely identify a nested program, unbounded recursion, a physical resource minimum or a necessary working-memory, control or ensemble precursor.",
         "After an error the correct prefix is shown again with the error corrected. Later guesses therefore depend on variable feedback and exposure. The irregular comparison is a selected task baseline, not a universal chance level; pattern boundaries also differ in frequency, spatial distance and memory demand.",
         "Participant-level trial data and runnable model code were not identified among the seven listed supporting files, which contain six figure images and S1 Text. Published statistical tests and fitted models have not been independently reproduced. Non-significance does not establish equivalence or absence of a cognitive resource."
       ],
@@ -2410,7 +2410,7 @@
       "limitations": [
         "Two Macaca nemestrina supplied the study: both hemispheres of MK8 and the left hemisphere of MK9. Cells and trials are nested observations, not independent animals. Ages and sex are unspecified in the reviewed Methods.",
         "Histological localization is shown for MK8; MK9 localization relies on microstimulation and motor properties. Mapping stimulation is not a selective test of mirror-cell necessity for recognition.",
-        "No behavioral test of action understanding, empathy, helping or a complete social circuit is reported in these recordings. No general carrier minimum, dependency weight or physical construction rule is measured.",
+        "No behavioral test of action understanding, empathy, helping or a complete social circuit is reported in these recordings. No general dependency weight or physical construction rule is measured.",
         "Raw recordings and per-animal allocation of the control subsets are unavailable in the inspected material. The EMG and F1 controls are not simultaneous measurements for every F5 trial."
       ],
       "readExtent": "selected-main-text-and-figures",
@@ -2442,7 +2442,7 @@
       "limitations": [
         "Two Macaca nemestrina supplied the study: both hemispheres of MK8 and the left hemisphere of MK9. Cells and trials are nested observations, not independent animals. Ages and sex are unspecified in the reviewed Methods.",
         "Histological localization is shown for MK8; MK9 localization relies on microstimulation and motor properties. Mapping stimulation is not a selective test of mirror-cell necessity for recognition.",
-        "No behavioral test of action understanding, empathy, helping or a complete social circuit is reported in these recordings. No general carrier minimum, dependency weight or physical construction rule is measured.",
+        "No behavioral test of action understanding, empathy, helping or a complete social circuit is reported in these recordings. No general dependency weight or physical construction rule is measured.",
         "Raw recordings and per-animal allocation of the control subsets are unavailable in the inspected material. The EMG and F1 controls are not simultaneous measurements for every F5 trial."
       ],
       "readExtent": "selected-main-text-and-figures",
@@ -2471,7 +2471,7 @@
       "limitations": [
         "Two Macaca nemestrina supplied the study: both hemispheres of MK8 and the left hemisphere of MK9. Cells and trials are nested observations, not independent animals. Ages and sex are unspecified in the reviewed Methods.",
         "Histological localization is shown for MK8; MK9 localization relies on microstimulation and motor properties. Mapping stimulation is not a selective test of mirror-cell necessity for recognition.",
-        "No behavioral test of action understanding, empathy, helping or a complete social circuit is reported in these recordings. No general carrier minimum, dependency weight or physical construction rule is measured.",
+        "No behavioral test of action understanding, empathy, helping or a complete social circuit is reported in these recordings. No general dependency weight or physical construction rule is measured.",
         "Raw recordings and per-animal allocation of the control subsets are unavailable in the inspected material. The EMG and F1 controls are not simultaneous measurements for every F5 trial."
       ],
       "readExtent": "selected-main-text-and-figures",
@@ -2502,7 +2502,7 @@
         "Sixteen couples do not supply thirty-two scanned participants. Exact ages, exclusions, preprocessing and full statistical procedures require the unread supporting material.",
         "Post-scan unpleasantness has a reported pain main effect F(1,15)=19.93, P<0.001 and self/other main effect F(1,15)=0.12, P=0.73. The latter is not an equivalence test of experience.",
         "The design does not independently separate anticipation from stimulus receipt. BOLD peaks cannot identify a neural processing order or a directed circuit.",
-        "Coincident signal locations do not establish identical cells, coding or feelings. Pain specificity against matched salience and other aversive states is not established here. No selective neural necessity, helping outcome, carrier minimum or dependency weight is measured."
+        "Coincident signal locations do not establish identical cells, coding or feelings. Pain specificity against matched salience and other aversive states is not established here. No selective neural necessity, helping outcome or dependency weight is measured."
       ],
       "readExtent": "main-text-and-figures",
       "reviewedLocators": [
@@ -2783,7 +2783,7 @@
       ],
       "discriminator": "Replay alternative event/partition models on held-out trials and test matched selective perturbations, complete recall rates and published single-cell controls with an independent perceptual readout.",
       "result": "not-tested",
-      "limit": "Two selected cells do not calibrate N_min. Gray-screen behavior is conditioned on rare successful recall. CRF edges and macroscale communities are not measured synapses."
+      "limit": "Gray-screen behavior is conditioned on rare successful recall. CRF edges and macroscale communities are not measured synapses."
     },
     {
       "id": "neural-connectome-construction",
@@ -3241,7 +3241,7 @@
       ],
       "discriminator": "Measure identified births, deaths and population counts in the same macaque preparation, perturb population state and test matched circuit and memory consequences.",
       "result": "not-tested",
-      "limit": "The replacement interpretation draws on separate human neuron counts and macaque synapse counts. Synapse-count stability is not a matched neuron census. This experiment measures neither paired births and deaths, feedback of population state, replacement identity nor the fraction of older neurons ultimately renewed. No electrical, synaptic-output, learning or memory assay was performed. A possible cognitive role, stable-memory benefit or recovery mechanism remains untested. Labeling in this study does not require an injury or learning manipulation and does not validate the source card's necessary incoming assertions, weights or minimum carrier counts."
+      "limit": "The replacement interpretation draws on separate human neuron counts and macaque synapse counts. Synapse-count stability is not a matched neuron census. This experiment measures neither paired births and deaths, feedback of population state, replacement identity nor the fraction of older neurons ultimately renewed. No electrical, synaptic-output, learning or memory assay was performed. A possible cognitive role, stable-memory benefit or recovery mechanism remains untested. Labeling in this study does not require an injury or learning manipulation."
     },
     {
       "id": "neural-primate-aged-differentiation",
@@ -3928,13 +3928,13 @@
     "Match independent birthdating, neuronal identity and human functional evidence before a complete neuron-production-to-cognition mechanism.",
     "Reconcile the macaque animal-by-assay manifest and 72/75-day survival reporting before quantitative reproduction.",
     "Distinguish common progenitors, tracked migration, retained labeling, birth/death balance and cognitive function in matched primate preparations.",
-    "Resolve source card 6.19: identify its ambiguous 2015 citation, review primary symbol/number and composition experiments, and test each proposed incoming necessity independently. Taxonomy, program cost and conceptual-change proposals do not determine carrier minima, weights or biological construction rules.",
+    "For the symbolic-representation scope, review primary symbol/number and composition experiments. Taxonomy, program cost and conceptual-change proposals do not determine biological construction rules.",
     "Reconcile Amalric et al. (2017) S1 Text examples, costs, capacity-boundary handling and feedback semantics; locate trial data and code and test held-out constructions before interpreting group fits as identified cognitive resources.",
     "Reconcile the Al Roumi et al. (2021) grammar table and published GeomSeq pipeline with participant-identified recordings; distinguish timing from ordinal number and decode joint representations before a neural construction or minimum-resource claim.",
     "Recover Wang et al. participant/run membership, stationary-control normalization and fixed contrast-weight derivation; resolve statistic/threshold inconsistencies and test independent representational alternatives before quantitative or causal use.",
     "Reconcile binary sequence costs, AIC and coordinate reporting; recover imaging exclusion and MEG metadata, saved folds and missing-run handling; reproduce the publication from raw data before numerical calibration. Test held-out structures and selective neural necessity before any generative circuit claim.",
     "Reconcile the 330-versus-342 quadrilateral cohort, average-pair versus prototype distances, selected versus last layers, model metadata and cross-format model label. Recreate network outputs and minimum-program assignments; use nested selection and measured human matching before stronger geometric construction claims.",
-    "Complete social recognition and empathy source card 6.20: obtain Singer 2004 supporting methods and assess pain-specific versus general aversive alternatives; resolve Mukamel 2010 table, chi-square, null-model and normalization conflicts using patient-identified data and code. Review matched primary evidence for Decety and Jackson's perception, affect and executive-function proposals, and test the independently identified Gallese shared-manifold proposals. The original Gallese citation remains ambiguous. Keep outcome instruments and their versions distinct. Test each proposed perception, affect and working-memory dependency with matched outcomes; default weights and minima are unmeasured. For Tan 2024, resolve reference-sensitivity counts and obtain the complete participant-aware decoding and EEG pipeline; test salience alternatives and biological necessity separately from virtual feature removal."
+    "Complete the social recognition and empathy scope: obtain Singer 2004 supporting methods and assess pain-specific versus general aversive alternatives; resolve Mukamel 2010 table, chi-square, null-model and normalization conflicts using patient-identified data and code. Review matched primary evidence for Decety and Jackson's perception, affect and executive-function proposals, and test the independently identified Gallese shared-manifold proposals. Keep outcome instruments and their versions distinct. Test each proposed perception, affect and working-memory dependency with matched outcomes. For Tan 2024, resolve reference-sensitivity counts and obtain the complete participant-aware decoding and EEG pipeline; test salience alternatives and biological necessity separately from virtual feature removal."
   ],
   "checkIds": []
 }

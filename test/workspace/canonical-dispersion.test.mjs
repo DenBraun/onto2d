@@ -223,12 +223,11 @@ test("Figure 3 count statistics and Figure 4 corrected systematics remain distin
   ]);
 });
 
-test("finite dispersion evidence does not acquire universal cohesion, mandatory parents or carrier minima", async () => {
+test("finite dispersion evidence does not acquire universal cohesion, prerequisite stages or critical counts", async () => {
   const data = await source();
   for (const suffix of ["ground-state-dispersion-limits", "dispersion-material-observable-boundary",
     "perreault2005-phase-context", "perreault-atom-surface-phase", "perreault-nonretarded-comparison",
     "dispersion-source-scope"]) assert.equal(role(data, suffix).instanceAdmission, "none");
-  assert.equal(claim(data, synthesis).citations.find((citation) => citation.sourceId === "legacy-2").role, "provenance");
   for (const from of ["ideal-plate-casimir", "casimir-material-model"]) {
     const dependency = edge(data, from, "dispersion-source-scope");
     assert.equal(dependency.kind, "descriptive");
@@ -239,13 +238,11 @@ test("finite dispersion evidence does not acquire universal cohesion, mandatory 
     ["one ground-state experiment is not universal attraction", (changed) =>
       removeLimit(changed, synthesis, "does not establish universal attraction")],
     ["neutral atomic response does not require prior ionic and benzene-resonance stages", (changed) =>
-      removeLimit(changed, synthesis, "does not require the original 2.3")],
+      removeLimit(changed, synthesis, "ionic transfer and benzene resonance are separate descriptions")],
     ["the atom-surface phase cannot prove noble-gas cohesion or every condensed phase", (changed) =>
       removeLimit(changed, synthesis, "No noble-gas cohesion energy")],
-    ["catalogue parent weights are not fitted causal contributions", (changed) =>
-      removeLimit(changed, synthesis, "Original parent weights 0.4/0.3/0.3")],
-    ["a selected pair model does not measure catalogue critical carrier counts", (changed) =>
-      removeLimit(changed, synthesis, "parent minima/critical counts 2/1/2")],
+    ["a chosen two-atom model is not a measured critical molecule, ion, resonance or mode count", (changed) =>
+      removeLimit(changed, synthesis, "A chosen two-atom model is not a measured critical")],
     ["Casimir reuse cannot duplicate corrected macroscopic acquisitions", (changed) =>
       removeLimit(changed, synthesisMethod, "no Lamoreaux/Bressi measurement")],
     ["an evidence-scoped observation cannot become an independently reproduced instance", (changed) => {

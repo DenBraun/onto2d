@@ -104,17 +104,17 @@ test("an ideal photon state cannot acquire an exact empirical mass, charge or pe
   ]);
 });
 
-test("source-card parent metadata, scalar evolution and an ideal occupation do not establish photon formation", async () => {
+test("framework links, scalar evolution and an ideal occupation do not establish photon formation", async () => {
   await rejects([
-    ["the original weights and minima cannot regain scientific threshold status", (data) =>
-      dropLimit(data, definition, /weights 0\.55 and 0\.45/)],
+    ["electromagnetic framework and field-dynamics links remain scoped definition dependencies", (data) =>
+      dropLimit(data, definition, /retained only as scoped definition dependencies/)],
     ["the old scalar oscillator cannot supply photon gauge constraints or measured dynamics", (data) =>
       dropLimit(data, definition, /explicitly a real scalar model/)],
     ["free-state occupation cannot become a permanent distinguishable carrier", (data) =>
       dropLimit(data, definition, /distinguishable permanent carrier/)],
     ["model masslessness cannot become an experimentally exact parameter", (data) =>
       dropLimit(data, definition, /historical Weinberg mass-matrix null direction/)],
-    ["an unreviewed scalar parent cannot replace the Maxwell constraint input", (data) => {
+    ["an unreviewed scalar dependency cannot replace the Maxwell constraint input", (data) => {
       const record = data.graph.relations.find((item) => item.source === "phys:electromagnetic-photon-field"
         && item.target === "phys:photon-evidence-scope");
       assert.ok(record);
@@ -123,14 +123,14 @@ test("source-card parent metadata, scalar evolution and an ideal occupation do n
   ]);
 });
 
-test("static binding, polarization, aggregate optics and generic evidence placeholders retain their exclusions", async () => {
+test("static binding, polarization, aggregate optics and unnamed radiation experiments retain their exclusions", async () => {
   await rejects([
     ["a static Coulomb amplitude cannot become a measured real-photon flux", (data) =>
       dropLimit(data, definition, /static effective potential/)],
     ["prepared transverse polarization cannot orient the vacuum or close neighboring analyses", (data) =>
       dropLimit(data, definition, /preferred vacuum axis/)],
-    ["unspecified Compton and photoelectric examples cannot become reviewed primary experiments", (data) =>
-      dropLimit(data, definition, /Generic Compton, photoelectric and precision-QED placeholders/)],
+    ["radiation evidence stays limited to the named capture-wavelength and radiative-ratio records", (data) =>
+      dropLimit(data, definition, /represented only by the named capture-wavelength and meson radiative-ratio evidence/)],
     ["a detector statistic cannot establish arbitrary atomic or biological organization", (data) =>
       dropLimit(data, synthesis, /universal photon-driven biological organization/)],
     ["internal amplitude roles cannot acquire a transmitted real-photon interpretation", (data) => replaceStatement(data, method,

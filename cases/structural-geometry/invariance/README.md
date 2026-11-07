@@ -1,9 +1,9 @@
 # Structural invariance controls
 
 The [protocol](PROTOCOL.md) fixes four mandatory representation controls before
-result generation. The suite contains 13 source-bound artifacts: 12 passed and
-one indeterminate because typed evidence is absent. Its 52 probes contain
-48 passes and four indeterminate results.
+result generation. The suite contains 12 source-bound synthetic artifacts: 11
+passed and one indeterminate because typed evidence is absent. Its 48 probes
+contain 44 passes and four indeterminate results.
 
 The independent Python reference uses source records, exhaustive node bijections
 and Boolean transitive closure. It checks transformed payload data and mappings,

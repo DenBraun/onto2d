@@ -52,7 +52,7 @@ export function inspectTransportOptions(value, code, subject) {
   return entries;
 }
 
-export function verifyTransportFiles(values, { maxTotalBytes = 64 * 1024 * 1024 } = {}) {
+export function verifyTransportFiles(values, { maxTotalBytes = 256 * 1024 * 1024 } = {}) {
   let expandedBytes = 0;
   function decoded(relative) {
     const remaining = maxTotalBytes - expandedBytes;

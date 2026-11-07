@@ -104,10 +104,10 @@ test("the finite bridge does not certify bulk density, compressibility or atomic
   ]);
 });
 
-test("original parent weights, necessary maintenance and phase labels remain excluded scientific results", async () => {
+test("quark and nucleon inputs cannot become weighted necessary maintenance interventions", async () => {
   await rejects([
-    ["the supplied equal weights and carrier minima recover scientific meaning", (data) => dropLimit(data, definitionId, "equal 0.5 weights")],
-    ["the SOMA phase and evidence placeholders become empirical support", (data) => dropLimit(data, definitionId, "SOMA phase 2")],
+    ["quark and nucleon inputs become established arising or maintenance interventions", (data) =>
+      dropLimit(data, definitionId, "not experimentally established arising or maintenance interventions")],
     ["an input relation becomes a weighted necessary maintenance relation", (data) => {
       const edge = relation(data, "qcd-qcd-nuclear-energy-bridge");
       edge.weight = 0.5;

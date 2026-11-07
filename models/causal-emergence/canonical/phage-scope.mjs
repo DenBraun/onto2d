@@ -22,7 +22,7 @@ export const PHAGE_SCOPE_RECORDS = {
           "PNAS 116(45), 22489: Image Intensity and Microscope Calibration explanatory passages only",
           "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms"
         ],
-        "limit": "Selected original Results, Figure 1-2 captions, explanatory optical intensity/calibration passages and relevant Discussion limitations were read from the published PDF hosted by a Caltech academic reading collection, with selected indexed primary PMC text and primary publication metadata. No full visual figure audit or digitization, SI Appendix, supplementary movies, raw traces, independent calibration replay or fitted parameter reconstruction was completed. This acquisition retains qualitative cell-free optical assembly observations only. Only the listed qualitative optical observations and reconstruction/calibration limits are admitted; detailed preparation and sequence-level content are outside this review. No infectious competence was assayed by the admitted readout. Actual read route: https://www.rpgroup.caltech.edu/virus_bootcamp/assets/pdfs/garmann.pdf Original six-page published PDF header and indexed primary PMC/PubMed 31570619 metadata agree on the title, three authors, DOI 10.1073/pnas.1909223116 and PNAS 116(45),22485-22490. Online 30 September 2019 differs from issue date 5 November 2019. Direct PMC/PubMed opening returned a browser challenge or empty text; the actual PDF and selected indexed primary text were used. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
+        "limit": "Selected original Results, Figure 1-2 captions, explanatory optical intensity/calibration passages and relevant Discussion limitations were read from the published PDF hosted by a Caltech academic reading collection, with selected indexed primary PMC text and primary publication metadata. No full visual figure audit or digitization, SI Appendix, supplementary movies, raw traces, independent calibration replay or fitted parameter reconstruction was completed. This acquisition retains qualitative cell-free optical assembly observations only. Only the listed qualitative optical observations and reconstruction/calibration limits are admitted; detailed preparation and sequence-level content are outside this review. No infectious competence was assayed by the admitted readout. Actual read route: https://www.rpgroup.caltech.edu/virus_bootcamp/assets/pdfs/garmann.pdf Original six-page published PDF header and indexed primary PMC/PubMed 31570619 metadata agree on the title, three authors, DOI 10.1073/pnas.1909223116 and PNAS 116(45), 22485-22490. Online 30 September 2019 differs from issue date 5 November 2019. Direct PMC/PubMed opening returned a browser challenge or empty text; the actual PDF and selected indexed primary text were used. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
       }
     },
     {
@@ -78,25 +78,7 @@ export const PHAGE_SCOPE_RECORDS = {
           "Structure 21(7), 1227-1228: selected opening Results on isolated MS2-pilus complexes and asymmetric reconstruction, Figures 2-3 and captions",
           "Structure 21(7), 1227-1229: isolated pili separate initial binding from downstream rearrangement; limited resolution, averaging and flexible receptor-particle association"
         ],
-        "limit": "Selected original opening Results, Figure 2-3 captions and associated reconstruction/resolution/averaging caveats were read from the 11-page institutional PDF, whose first page is a repository cover. The admitted system is an MS2 particle associated with isolated bacterial pili rather than an intact infected cell. No full visual figure audit, raw tomogram reconstruction, supplementary movies, later release mechanism or lifecycle study was reviewed as an acquisition. Detailed preparation methods and sequence-level mechanisms are outside the admitted receptor-association scope. This is selected relevant-passage reading, not complete-article or complete-supplement review. Actual read route: https://eprints.whiterose.ac.uk/id/eprint/75973/1/Dent%202013%20Structure.pdf Original published-version PDF header, institutional deposit and indexed primary PubMed 23810697 agree on the title, seven authors, DOI 10.1016/j.str.2013.05.012 and Structure 21(7),1225-1234,2 July 2013. Direct PMC opening returned a browser challenge; the accessible original institutional PDF supplied the selected scientific text. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
-      }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
+        "limit": "Selected original opening Results, Figure 2-3 captions and associated reconstruction/resolution/averaging caveats were read from the 11-page institutional PDF, whose first page is a repository cover. The admitted system is an MS2 particle associated with isolated bacterial pili rather than an intact infected cell. No full visual figure audit, raw tomogram reconstruction, supplementary movies, later release mechanism or lifecycle study was reviewed as an acquisition. Detailed preparation methods and sequence-level mechanisms are outside the admitted receptor-association scope. This is selected relevant-passage reading, not complete-article or complete-supplement review. Actual read route: https://eprints.whiterose.ac.uk/id/eprint/75973/1/Dent%202013%20Structure.pdf Original published-version PDF header, institutional deposit and indexed primary PubMed 23810697 agree on the title, seven authors, DOI 10.1016/j.str.2013.05.012 and Structure 21(7), 1225-1234, 2 July 2013. Direct PMC opening returned a browser challenge; the accessible original institutional PDF supplied the selected scientific text. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
       }
     }
   ],
@@ -105,15 +87,9 @@ export const PHAGE_SCOPE_RECORDS = {
       "id": "D-bio-phage-observation-boundaries",
       "kind": "review-finding",
       "statement": "Within this review, assembly dynamics, capsid/genome structure, receptor association, maturation, complete cellular entry, productive infection and host-expression reprogramming are distinct observables or hypotheses. Evidence for one does not by definition establish the others.",
-      "scope": "Declared cross-card readout and inference boundaries for the six reviewed viral catalogue cards.",
+      "scope": "Declared readout and inference boundaries across the six reviewed viral scopes.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
@@ -139,8 +115,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -176,8 +151,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "contextIds": [
@@ -216,8 +190,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "contextIds": [
@@ -256,8 +229,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "contextIds": [
@@ -296,8 +268,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "contextIds": [
@@ -335,8 +306,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "contextIds": [
@@ -374,8 +344,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "contextIds": [
@@ -383,18 +352,12 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "D-bio-viral-card-9-scope",
+      "id": "D-bio-viral-capsid-assembly-scope",
       "kind": "review-finding",
-      "statement": "The canonical scope for original card 3.9 is finite cell-free MS2 assembly-associated optical dynamics, with approximate signal-to-protein interpretation and separately reported morphology. Free-energy minima, microscopic interface rules, universal cooperativity, shell protection and emergence remain unestablished.",
-      "scope": "Definition of the admitted/restricted scope for original card 3.9.",
+      "statement": "The canonical scope for viral-capsid self-organization is finite cell-free MS2 assembly-associated optical dynamics, with approximate signal-to-protein interpretation and separately reported morphology. Free-energy minima, microscopic interface rules, universal cooperativity, shell protection and emergence remain unestablished.",
+      "scope": "Definition of the admitted/restricted scope for viral-capsid self-organization.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22485-22487: selected Results on optical assembly traces, Figures 1-2 and captions, separate TEM comparison reported in main text",
@@ -420,30 +383,22 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "Retain finite cell-free MS2 assembly-associated optical changes. Do not infer a universal spontaneous assembly law, exact molecular interfaces, a free-energy minimum or functional particle competence.",
         "Optical dynamics and separate morphology support assembly in the selected preparation. Specific interaction compatibilities, free-energy guidance and a universal self-organization mechanism remain interpretations needing their own measurements.",
         "Delayed starts/growth are measured at optical resolution, while local interface rules, subunit matching, cooperative stabilization and exact shell-closure trajectories are not directly resolved. The prepared surface and supplied components bound the claim.",
         "Retain the observed assembly-associated transition only. Protection, globally integrated function, all assembly pathways and higher-order emergence are not measured.",
-        "The SOMA process/trajectory label is catalogue author organization, not experimentally established ontology or a count threshold.",
         "Capsid-like morphology and finite assembly dynamics are preparation-specific. Robust protection, universal symmetry-constrained packaging and emergence of functional information-bearing enclosures are not established."
       ]
     },
     {
-      "id": "D-bio-viral-card-10-scope",
+      "id": "D-bio-viral-maturation-scope",
       "kind": "review-finding",
-      "statement": "Original card 3.10 remains an unresolved assembly-to-maturation/infectious-competence hypothesis. None of the selected optical, mature-structure or isolated-receptor observations is a measured post-assembly maturation trajectory or a matched competence transition.",
-      "scope": "Definition of the admitted/restricted scope for original card 3.10.",
+      "statement": "The scope for viral assembly and maturation remains an unresolved assembly-to-maturation/infectious-competence hypothesis. None of the selected optical, mature-structure or isolated-receptor observations is a measured post-assembly maturation trajectory or a matched competence transition.",
+      "scope": "Definition of the admitted/restricted scope for viral assembly and maturation.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
@@ -469,8 +424,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No admitted source follows assembly through a post-assembly maturation transformation to infectious competence. A mature structure or named maturation protein is not that process.",
         "Structural co-occurrence and cell-free assembly traces do not establish coordination into a complete functionally competent particle followed by regulated maturation.",
@@ -481,18 +435,12 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "C-bio-viral-card-10-unresolved",
+      "id": "C-bio-viral-maturation-unresolved",
       "kind": "review-finding",
-      "statement": "Original card 3.10 remains an unresolved assembly-to-maturation/infectious-competence hypothesis. None of the selected optical, mature-structure or isolated-receptor observations is a measured post-assembly maturation trajectory or a matched competence transition.",
-      "scope": "Explicit unresolved disposition of original card 3.10; lack of support in the reviewed acquisition is not universal falsification.",
+      "statement": "The scope for viral assembly and maturation remains an unresolved assembly-to-maturation/infectious-competence hypothesis. None of the selected optical, mature-structure or isolated-receptor observations is a measured post-assembly maturation trajectory or a matched competence transition.",
+      "scope": "Explicit unresolved disposition for viral assembly and maturation; lack of support in the reviewed acquisition is not universal falsification.",
       "status": "unresolved",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
@@ -518,8 +466,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No admitted source follows assembly through a post-assembly maturation transformation to infectious competence. A mature structure or named maturation protein is not that process.",
         "Structural co-occurrence and cell-free assembly traces do not establish coordination into a complete functionally competent particle followed by regulated maturation.",
@@ -530,18 +477,12 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "D-bio-viral-card-16-scope",
+      "id": "D-bio-viral-infection-scope",
       "kind": "review-finding",
-      "statement": "Original card 3.16 remains an unresolved full-infection-program hypothesis in this review. Separate structural association, genome density and cell-free assembly are not a single host-entering, replicating, expressing and propagating system; host takeover and coordinated timing are not acquired.",
-      "scope": "Definition of the admitted/restricted scope for original card 3.16.",
+      "statement": "The scope for mechanisms of viral infection remains an unresolved full-infection-program hypothesis in this review. Separate structural association, genome density and cell-free assembly are not a single host-entering, replicating, expressing and propagating system; host takeover and coordinated timing are not acquired.",
+      "scope": "Definition of the admitted/restricted scope for mechanisms of viral infection.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
@@ -567,11 +508,10 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No single admitted preparation measures entry, host exploitation, replication, assembly and propagation as a coordinated full infection program.",
-        "An isolated-receptor association, a static structure and separate cell-free assembly do not jointly measure the catalogue attachment-to-propagation sequence.",
+        "An isolated-receptor association, a static structure and separate cell-free assembly do not jointly measure the attachment-to-propagation sequence.",
         "Transport, catalytic takeover, signaling and regulatory-environment exploitation are not measured by these selected high-level observations.",
         "No host-expression, genome amplification or particle-production comparison supports controlled host reprogramming here.",
         "The infection-program ontology is original classification, not a demonstrated multistage regime.",
@@ -579,19 +519,13 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "C-bio-viral-card-16-unresolved",
+      "id": "C-bio-viral-infection-unresolved",
       "kind": "review-finding",
-      "statement": "Original card 3.16 remains an unresolved full-infection-program hypothesis in this review. Separate structural association, genome density and cell-free assembly are not a single host-entering, replicating, expressing and propagating system; host takeover and coordinated timing are not acquired.",
-      "scope": "Explicit unresolved disposition of original card 3.16; lack of support in the reviewed acquisition is not universal falsification.",
+      "statement": "The scope for mechanisms of viral infection remains an unresolved full-infection-program hypothesis in this review. Separate structural association, genome density and cell-free assembly are not a single host-entering, replicating, expressing and propagating system; host takeover and coordinated timing are not acquired.",
+      "scope": "Explicit unresolved disposition of the full-infection-program hypothesis; lack of support in the reviewed acquisition is not universal falsification.",
       "status": "unresolved",
       "citations": [
         {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
-        {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
           "role": "limits",
@@ -616,11 +550,10 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No single admitted preparation measures entry, host exploitation, replication, assembly and propagation as a coordinated full infection program.",
-        "An isolated-receptor association, a static structure and separate cell-free assembly do not jointly measure the catalogue attachment-to-propagation sequence.",
+        "An isolated-receptor association, a static structure and separate cell-free assembly do not jointly measure the attachment-to-propagation sequence.",
         "Transport, catalytic takeover, signaling and regulatory-environment exploitation are not measured by these selected high-level observations.",
         "No host-expression, genome amplification or particle-production comparison supports controlled host reprogramming here.",
         "The infection-program ontology is original classification, not a demonstrated multistage regime.",
@@ -628,18 +561,12 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "D-bio-viral-card-29-scope",
+      "id": "D-bio-viral-genome-organization-scope",
       "kind": "review-finding",
-      "statement": "The canonical scope for original card 3.29 is source-specific ordered RNA density and asymmetric RNA-capsid spatial correspondence in MS2. Complete sequence assignment, packaging-signal functions, selective encapsidation, regulatory timing, replication/expression and whole-lifecycle coupling remain unestablished by the structure.",
-      "scope": "Definition of the admitted/restricted scope for original card 3.29.",
+      "statement": "The canonical scope for the structural organization of viral genomes is source-specific ordered RNA density and asymmetric RNA-capsid spatial correspondence in MS2. Complete sequence assignment, packaging-signal functions, selective encapsidation, regulatory timing, replication/expression and whole-lifecycle coupling remain unestablished by the structure.",
+      "scope": "Definition of the admitted/restricted scope for the structural organization of viral genomes.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "koning2016-ms2-asymmetric-genome",
           "locator": "Nature Communications 7, 12524: Results, Asymmetric structure, The RNA and RNA-protein interactions; Figure 1 and Figure 2b captions",
@@ -659,30 +586,22 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "Retain ordered RNA density and bounded RNA-capsid structural correspondence in the selected MS2 reconstruction. Replication, regulation and expression function are not measured.",
         "A finite conformation is observed; complete sequence architecture, regulatory motifs and causal support for replication/expression/encapsidation are not established by this structural experiment.",
         "The map supports some folding/contact correspondence but not complete length/segmentation/packaging-signal/accessibility architecture or sequence assignment to every density element.",
         "Structure-to-function coupling is a model interpretation. The source does not time particle formation, regulatory timing or acquisition of infectious competence.",
-        "Pattern-level SOMA organization remains the catalogue label; it does not supply an independent physical hierarchy.",
         "Retain finite RNA-capsid spatial correspondence. Selective encapsidation, regulated accessibility and whole-lifecycle coupling require separate reviewed observations."
       ]
     },
     {
-      "id": "D-bio-viral-card-30-scope",
+      "id": "D-bio-viral-entry-scope",
       "kind": "review-finding",
-      "statement": "Original card 3.30 remains an unresolved complete-cellular-entry hypothesis. Isolated-pilus association is a finite separate observation and does not establish boundary crossing, intracellular delivery, irreversibility, tropism, entry efficiency or replication initiation.",
-      "scope": "Definition of the admitted/restricted scope for original card 3.30.",
+      "statement": "The complete-cellular-entry hypothesis remains unresolved. Isolated-pilus association is a finite separate observation and does not establish boundary crossing, intracellular delivery, irreversibility, tropism, entry efficiency or replication initiation.",
+      "scope": "Definition of the admitted/restricted scope for viral entry into cells.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "dent2013-ms2-receptor-structure",
           "locator": "Structure 21(7), 1227-1228: selected opening Results on isolated MS2-pilus complexes and asymmetric reconstruction, Figures 2-3 and captions",
@@ -702,31 +621,23 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "The admitted isolated-pilus observation establishes association only, not host-boundary crossing or intracellular genome delivery.",
         "No actual cellular-boundary crossing or delivered intracellular genome is measured in the selected preparations.",
         "Receptor association must remain separate from penetration, fusion/endocytosis, uncoating and release. The listed alternatives are not universal stages and are not shown here.",
         "Neither a first irreversible event nor productive infection is established; a static bound complex does not measure irreversibility.",
-        "The ordered entry-regime ontology is a catalogue classification, not proof of genome delivery.",
         "Host specificity, tropism, efficiency, controlled uncoating and replication initiation are unmeasured by the selected isolated-receptor structure."
       ]
     },
     {
-      "id": "C-bio-viral-card-30-unresolved",
+      "id": "C-bio-viral-entry-unresolved",
       "kind": "review-finding",
-      "statement": "Original card 3.30 remains an unresolved complete-cellular-entry hypothesis. Isolated-pilus association is a finite separate observation and does not establish boundary crossing, intracellular delivery, irreversibility, tropism, entry efficiency or replication initiation.",
-      "scope": "Explicit unresolved disposition of original card 3.30; lack of support in the reviewed acquisition is not universal falsification.",
+      "statement": "The complete-cellular-entry hypothesis remains unresolved. Isolated-pilus association is a finite separate observation and does not establish boundary crossing, intracellular delivery, irreversibility, tropism, entry efficiency or replication initiation.",
+      "scope": "Explicit unresolved disposition of the complete-cellular-entry hypothesis; lack of support in the reviewed acquisition is not universal falsification.",
       "status": "unresolved",
       "citations": [
         {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
-        {
           "sourceId": "dent2013-ms2-receptor-structure",
           "locator": "Structure 21(7), 1227-1228: selected opening Results on isolated MS2-pilus complexes and asymmetric reconstruction, Figures 2-3 and captions",
           "role": "supports",
@@ -745,30 +656,22 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "The admitted isolated-pilus observation establishes association only, not host-boundary crossing or intracellular genome delivery.",
         "No actual cellular-boundary crossing or delivered intracellular genome is measured in the selected preparations.",
         "Receptor association must remain separate from penetration, fusion/endocytosis, uncoating and release. The listed alternatives are not universal stages and are not shown here.",
         "Neither a first irreversible event nor productive infection is established; a static bound complex does not measure irreversibility.",
-        "The ordered entry-regime ontology is a catalogue classification, not proof of genome delivery.",
         "Host specificity, tropism, efficiency, controlled uncoating and replication initiation are unmeasured by the selected isolated-receptor structure."
       ]
     },
     {
-      "id": "D-bio-viral-card-35-scope",
+      "id": "D-bio-viral-reprogramming-scope",
       "kind": "review-finding",
-      "statement": "Original card 3.35 remains an unsupported host-expression-reprogramming hypothesis within the selected evidence. No actual host transcription/translation comparison, polymerase/ribosome redirection, host shutoff or preferential viral production was acquired; structural contacts do not establish downward causal control.",
-      "scope": "Definition of the admitted/restricted scope for original card 3.35.",
+      "statement": "The host-expression-reprogramming hypothesis remains unsupported within the selected evidence. No actual host transcription/translation comparison, polymerase/ribosome redirection, host shutoff or preferential viral production was acquired; structural contacts do not establish downward causal control.",
+      "scope": "Definition of the admitted/restricted scope for viral reprogramming of the transcription–translation apparatus.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
@@ -794,30 +697,23 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No admitted host transcription/translation expression comparison measures selective redirection toward viral products.",
         "The selected structural/optical observations do not show infection-driven alteration of host expression logic.",
         "Polymerase usage, ribosome recruitment, initiation, processing and expression priorities are not measured. Structural RNA-protein contacts do not substitute for these functions.",
         "No downward regulatory constraint, host suppression/deprioritization or preferential viral synthesis is established by the selected evidence.",
-        "A persistent property of an infected system is the catalogue hypothesis; no such persistent reprogramming capability is observed here.",
+        "A persistent property of an infected system is hypothesized; no such persistent reprogramming capability is observed here.",
         "Host shutoff, preferential viral transcript utilization, infection-specific expression architecture and specialized production are unsupported by these acquisitions."
       ]
     },
     {
-      "id": "C-bio-viral-card-35-unresolved",
+      "id": "C-bio-viral-reprogramming-unresolved",
       "kind": "review-finding",
-      "statement": "Original card 3.35 remains an unsupported host-expression-reprogramming hypothesis within the selected evidence. No actual host transcription/translation comparison, polymerase/ribosome redirection, host shutoff or preferential viral production was acquired; structural contacts do not establish downward causal control.",
-      "scope": "Explicit unresolved disposition of original card 3.35; lack of support in the reviewed acquisition is not universal falsification.",
+      "statement": "The host-expression-reprogramming hypothesis remains unsupported within the selected evidence. No actual host transcription/translation comparison, polymerase/ribosome redirection, host shutoff or preferential viral production was acquired; structural contacts do not establish downward causal control.",
+      "scope": "Explicit unresolved disposition of the host-expression-reprogramming hypothesis; lack of support in the reviewed acquisition is not universal falsification.",
       "status": "unresolved",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Exact supplied original card and direct-parent records were read in full. Their generic scientific status, evidence, hierarchy and numerical defaults are not independently established by the catalogue."
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms",
@@ -843,14 +739,13 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No admitted host transcription/translation expression comparison measures selective redirection toward viral products.",
         "The selected structural/optical observations do not show infection-driven alteration of host expression logic.",
         "Polymerase usage, ribosome recruitment, initiation, processing and expression priorities are not measured. Structural RNA-protein contacts do not substitute for these functions.",
         "No downward regulatory constraint, host suppression/deprioritization or preferential viral synthesis is established by the selected evidence.",
-        "A persistent property of an infected system is the catalogue hypothesis; no such persistent reprogramming capability is observed here.",
+        "A persistent property of an infected system is hypothesized; no such persistent reprogramming capability is observed here.",
         "Host shutoff, preferential viral transcript utilization, infection-specific expression architecture and specialized production are unsupported by these acquisitions."
       ]
     }
@@ -867,10 +762,6 @@ export const PHAGE_SCOPE_RECORDS = {
         "D-bio-phage-observation-boundaries"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms"
@@ -889,8 +780,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -925,8 +815,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -961,8 +850,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -997,8 +885,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -1033,8 +920,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -1068,8 +954,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
@@ -1103,26 +988,21 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ]
     },
     {
-      "id": "bio:viral-card-9-scope",
-      "name": "Original card 3.9: bounded Self-Organization of Viral Capsids",
+      "id": "bio:viral-capsid-assembly-scope",
+      "name": "Viral capsid self-organization: bounded scope",
       "kind": "definition",
       "status": "definition",
       "level": 3,
-      "description": "The canonical scope for original card 3.9 is finite cell-free MS2 assembly-associated optical dynamics, with approximate signal-to-protein interpretation and separately reported morphology. Free-energy minima, microscopic interface rules, universal cooperativity, shell protection and emergence remain unestablished.",
+      "description": "The canonical scope for viral-capsid self-organization is finite cell-free MS2 assembly-associated optical dynamics, with approximate signal-to-protein interpretation and separately reported morphology. Free-energy minima, microscopic interface rules, universal cooperativity, shell protection and emergence remain unestablished.",
       "claimIds": [
-        "D-bio-viral-card-9-scope"
+        "D-bio-viral-capsid-assembly-scope"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22485-22487: selected Results on optical assembly traces, Figures 1-2 and captions, separate TEM comparison reported in main text"
@@ -1141,33 +1021,27 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "Retain finite cell-free MS2 assembly-associated optical changes. Do not infer a universal spontaneous assembly law, exact molecular interfaces, a free-energy minimum or functional particle competence.",
         "Optical dynamics and separate morphology support assembly in the selected preparation. Specific interaction compatibilities, free-energy guidance and a universal self-organization mechanism remain interpretations needing their own measurements.",
         "Delayed starts/growth are measured at optical resolution, while local interface rules, subunit matching, cooperative stabilization and exact shell-closure trajectories are not directly resolved. The prepared surface and supplied components bound the claim.",
         "Retain the observed assembly-associated transition only. Protection, globally integrated function, all assembly pathways and higher-order emergence are not measured.",
-        "The SOMA process/trajectory label is catalogue author organization, not experimentally established ontology or a count threshold.",
         "Capsid-like morphology and finite assembly dynamics are preparation-specific. Robust protection, universal symmetry-constrained packaging and emergence of functional information-bearing enclosures are not established."
       ]
     },
     {
-      "id": "bio:viral-card-10-scope",
-      "name": "Original card 3.10: bounded Viral Assembly and Maturation",
+      "id": "bio:viral-maturation-scope",
+      "name": "Viral assembly and maturation: bounded scope",
       "kind": "hypothesis",
       "status": "hypothesis",
       "level": 3,
-      "description": "Original card 3.10 remains an unresolved assembly-to-maturation/infectious-competence hypothesis. None of the selected optical, mature-structure or isolated-receptor observations is a measured post-assembly maturation trajectory or a matched competence transition.",
+      "description": "The scope for viral assembly and maturation remains an unresolved assembly-to-maturation/infectious-competence hypothesis. None of the selected optical, mature-structure or isolated-receptor observations is a measured post-assembly maturation trajectory or a matched competence transition.",
       "claimIds": [
-        "D-bio-viral-card-10-scope",
-        "C-bio-viral-card-10-unresolved"
+        "D-bio-viral-maturation-scope",
+        "C-bio-viral-maturation-unresolved"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms"
@@ -1186,8 +1060,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No admitted source follows assembly through a post-assembly maturation transformation to infectious competence. A mature structure or named maturation protein is not that process.",
         "Structural co-occurrence and cell-free assembly traces do not establish coordination into a complete functionally competent particle followed by regulated maturation.",
@@ -1198,21 +1071,17 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "bio:viral-card-16-scope",
-      "name": "Original card 3.16: bounded Mechanisms of Viral Infection",
+      "id": "bio:viral-infection-scope",
+      "name": "Viral infection mechanisms: bounded scope",
       "kind": "hypothesis",
       "status": "hypothesis",
       "level": 3,
-      "description": "Original card 3.16 remains an unresolved full-infection-program hypothesis in this review. Separate structural association, genome density and cell-free assembly are not a single host-entering, replicating, expressing and propagating system; host takeover and coordinated timing are not acquired.",
+      "description": "The scope for mechanisms of viral infection remains an unresolved full-infection-program hypothesis in this review. Separate structural association, genome density and cell-free assembly are not a single host-entering, replicating, expressing and propagating system; host takeover and coordinated timing are not acquired.",
       "claimIds": [
-        "D-bio-viral-card-16-scope",
-        "C-bio-viral-card-16-unresolved"
+        "D-bio-viral-infection-scope",
+        "C-bio-viral-infection-unresolved"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms"
@@ -1231,11 +1100,10 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No single admitted preparation measures entry, host exploitation, replication, assembly and propagation as a coordinated full infection program.",
-        "An isolated-receptor association, a static structure and separate cell-free assembly do not jointly measure the catalogue attachment-to-propagation sequence.",
+        "An isolated-receptor association, a static structure and separate cell-free assembly do not jointly measure the attachment-to-propagation sequence.",
         "Transport, catalytic takeover, signaling and regulatory-environment exploitation are not measured by these selected high-level observations.",
         "No host-expression, genome amplification or particle-production comparison supports controlled host reprogramming here.",
         "The infection-program ontology is original classification, not a demonstrated multistage regime.",
@@ -1243,20 +1111,16 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "bio:viral-card-29-scope",
-      "name": "Original card 3.29: bounded Structural Organization of Viral Genomes",
+      "id": "bio:viral-genome-organization-scope",
+      "name": "Viral genome structural organization: bounded scope",
       "kind": "definition",
       "status": "definition",
       "level": 3,
-      "description": "The canonical scope for original card 3.29 is source-specific ordered RNA density and asymmetric RNA-capsid spatial correspondence in MS2. Complete sequence assignment, packaging-signal functions, selective encapsidation, regulatory timing, replication/expression and whole-lifecycle coupling remain unestablished by the structure.",
+      "description": "The canonical scope for the structural organization of viral genomes is source-specific ordered RNA density and asymmetric RNA-capsid spatial correspondence in MS2. Complete sequence assignment, packaging-signal functions, selective encapsidation, regulatory timing, replication/expression and whole-lifecycle coupling remain unestablished by the structure.",
       "claimIds": [
-        "D-bio-viral-card-29-scope"
+        "D-bio-viral-genome-organization-scope"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "koning2016-ms2-asymmetric-genome",
           "locator": "Nature Communications 7, 12524: Results, Asymmetric structure, The RNA and RNA-protein interactions; Figure 1 and Figure 2b captions"
@@ -1271,33 +1135,27 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "Retain ordered RNA density and bounded RNA-capsid structural correspondence in the selected MS2 reconstruction. Replication, regulation and expression function are not measured.",
         "A finite conformation is observed; complete sequence architecture, regulatory motifs and causal support for replication/expression/encapsidation are not established by this structural experiment.",
         "The map supports some folding/contact correspondence but not complete length/segmentation/packaging-signal/accessibility architecture or sequence assignment to every density element.",
         "Structure-to-function coupling is a model interpretation. The source does not time particle formation, regulatory timing or acquisition of infectious competence.",
-        "Pattern-level SOMA organization remains the catalogue label; it does not supply an independent physical hierarchy.",
         "Retain finite RNA-capsid spatial correspondence. Selective encapsidation, regulated accessibility and whole-lifecycle coupling require separate reviewed observations."
       ]
     },
     {
-      "id": "bio:viral-card-30-scope",
-      "name": "Original card 3.30: bounded Mechanisms of Viral Entry into Cells",
+      "id": "bio:viral-entry-scope",
+      "name": "Viral entry into cells: bounded scope",
       "kind": "hypothesis",
       "status": "hypothesis",
       "level": 3,
-      "description": "Original card 3.30 remains an unresolved complete-cellular-entry hypothesis. Isolated-pilus association is a finite separate observation and does not establish boundary crossing, intracellular delivery, irreversibility, tropism, entry efficiency or replication initiation.",
+      "description": "The complete-cellular-entry hypothesis remains unresolved. Isolated-pilus association is a finite separate observation and does not establish boundary crossing, intracellular delivery, irreversibility, tropism, entry efficiency or replication initiation.",
       "claimIds": [
-        "D-bio-viral-card-30-scope",
-        "C-bio-viral-card-30-unresolved"
+        "D-bio-viral-entry-scope",
+        "C-bio-viral-entry-unresolved"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "dent2013-ms2-receptor-structure",
           "locator": "Structure 21(7), 1227-1228: selected opening Results on isolated MS2-pilus complexes and asymmetric reconstruction, Figures 2-3 and captions"
@@ -1312,33 +1170,27 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "The admitted isolated-pilus observation establishes association only, not host-boundary crossing or intracellular genome delivery.",
         "No actual cellular-boundary crossing or delivered intracellular genome is measured in the selected preparations.",
         "Receptor association must remain separate from penetration, fusion/endocytosis, uncoating and release. The listed alternatives are not universal stages and are not shown here.",
         "Neither a first irreversible event nor productive infection is established; a static bound complex does not measure irreversibility.",
-        "The ordered entry-regime ontology is a catalogue classification, not proof of genome delivery.",
         "Host specificity, tropism, efficiency, controlled uncoating and replication initiation are unmeasured by the selected isolated-receptor structure."
       ]
     },
     {
-      "id": "bio:viral-card-35-scope",
-      "name": "Original card 3.35: bounded Viral Reprogramming of the Transcription–Translation Apparatus",
+      "id": "bio:viral-reprogramming-scope",
+      "name": "Viral reprogramming of transcription and translation: bounded scope",
       "kind": "hypothesis",
       "status": "hypothesis",
       "level": 3,
-      "description": "Original card 3.35 remains an unsupported host-expression-reprogramming hypothesis within the selected evidence. No actual host transcription/translation comparison, polymerase/ribosome redirection, host shutoff or preferential viral production was acquired; structural contacts do not establish downward causal control.",
+      "description": "The host-expression-reprogramming hypothesis remains unsupported within the selected evidence. No actual host transcription/translation comparison, polymerase/ribosome redirection, host shutoff or preferential viral production was acquired; structural contacts do not establish downward causal control.",
       "claimIds": [
-        "D-bio-viral-card-35-scope",
-        "C-bio-viral-card-35-unresolved"
+        "D-bio-viral-reprogramming-scope",
+        "C-bio-viral-reprogramming-unresolved"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
-        },
         {
           "sourceId": "garmann2019-ms2-assembly-traces",
           "locator": "PNAS 116(45), 22487-22489: Discussion limits on in-vitro versus in-vivo inference, static structure versus dynamic pathways, and unresolved nucleus size/barrier and growth mechanisms"
@@ -1357,14 +1209,13 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule.",
         "No admitted host transcription/translation expression comparison measures selective redirection toward viral products.",
         "The selected structural/optical observations do not show infection-driven alteration of host expression logic.",
         "Polymerase usage, ribosome recruitment, initiation, processing and expression priorities are not measured. Structural RNA-protein contacts do not substitute for these functions.",
         "No downward regulatory constraint, host suppression/deprioritization or preferential viral synthesis is established by the selected evidence.",
-        "A persistent property of an infected system is the catalogue hypothesis; no such persistent reprogramming capability is observed here.",
+        "A persistent property of an infected system is hypothesized; no such persistent reprogramming capability is observed here.",
         "Host shutoff, preferential viral transcript utilization, infection-specific expression architecture and specialized production are unsupported by these acquisitions."
       ]
     }
@@ -1419,14 +1270,14 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "biochemistry:viral-card-9-optical-scope",
-      "source": "bio:viral-card-9-scope",
+      "id": "biochemistry:viral-capsid-assembly-optical-scope",
+      "source": "bio:viral-capsid-assembly-scope",
       "target": "bio:ms2-optical-assembly-response",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The original assembly card is narrowed to this source-specific optical observation and its explicit exclusions.",
+      "assertion": "The assembly scope is narrowed to this source-specific optical observation and its explicit exclusions.",
       "claimIds": [
-        "D-bio-viral-card-9-scope",
+        "D-bio-viral-capsid-assembly-scope",
         "M-bio-ms2-optical-assembly",
         "C-bio-ms2-optical-assembly"
       ],
@@ -1435,14 +1286,14 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "biochemistry:viral-card-29-structural-scope",
-      "source": "bio:viral-card-29-scope",
+      "id": "biochemistry:viral-genome-organization-structural-scope",
+      "source": "bio:viral-genome-organization-scope",
       "target": "bio:ms2-asymmetric-genome-structure",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The original genome-organization card is narrowed to this source-specific structural correspondence and its resolution limits.",
+      "assertion": "The genome-organization scope is narrowed to this source-specific structural correspondence and its resolution limits.",
       "claimIds": [
-        "D-bio-viral-card-29-scope",
+        "D-bio-viral-genome-organization-scope",
         "M-bio-ms2-asymmetric-genome",
         "C-bio-ms2-asymmetric-genome"
       ],
@@ -1451,45 +1302,45 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "id": "biochemistry:viral-card-10-observable-definition",
-      "source": "bio:viral-card-10-scope",
+      "id": "biochemistry:viral-maturation-observable-definition",
+      "source": "bio:viral-maturation-scope",
       "target": "bio:phage-observation-boundaries",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This unresolved card is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
+      "assertion": "This unresolved scope is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
       "claimIds": [
         "D-bio-phage-observation-boundaries"
       ]
     },
     {
-      "id": "biochemistry:viral-card-16-observable-definition",
-      "source": "bio:viral-card-16-scope",
+      "id": "biochemistry:viral-infection-observable-definition",
+      "source": "bio:viral-infection-scope",
       "target": "bio:phage-observation-boundaries",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This unresolved card is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
+      "assertion": "This unresolved scope is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
       "claimIds": [
         "D-bio-phage-observation-boundaries"
       ]
     },
     {
-      "id": "biochemistry:viral-card-30-observable-definition",
-      "source": "bio:viral-card-30-scope",
+      "id": "biochemistry:viral-entry-observable-definition",
+      "source": "bio:viral-entry-scope",
       "target": "bio:phage-observation-boundaries",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This unresolved card is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
+      "assertion": "This unresolved scope is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
       "claimIds": [
         "D-bio-phage-observation-boundaries"
       ]
     },
     {
-      "id": "biochemistry:viral-card-35-observable-definition",
-      "source": "bio:viral-card-35-scope",
+      "id": "biochemistry:viral-reprogramming-observable-definition",
+      "source": "bio:viral-reprogramming-scope",
       "target": "bio:phage-observation-boundaries",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This unresolved card is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
+      "assertion": "This unresolved scope is defined using the stated observable distinction; this formal scope relation is not evidence of a biological causal hierarchy.",
       "claimIds": [
         "D-bio-phage-observation-boundaries"
       ]
@@ -1520,8 +1371,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "readExtent": "selected-original-results-captions-and-readout-limits",
@@ -1532,7 +1382,7 @@ export const PHAGE_SCOPE_RECORDS = {
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/31570619/",
-      "correctionCheck": "Original six-page published PDF header and indexed primary PMC/PubMed 31570619 metadata agree on the title, three authors, DOI 10.1073/pnas.1909223116 and PNAS 116(45),22485-22490. Online 30 September 2019 differs from issue date 5 November 2019. Direct PMC/PubMed opening returned a browser challenge or empty text; the actual PDF and selected indexed primary text were used. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
+      "correctionCheck": "Original six-page published PDF header and indexed primary PMC/PubMed 31570619 metadata agree on the title, three authors, DOI 10.1073/pnas.1909223116 and PNAS 116(45), 22485-22490. Online 30 September 2019 differs from issue date 5 November 2019. Direct PMC/PubMed opening returned a browser challenge or empty text; the actual PDF and selected indexed primary text were used. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
     },
     {
       "id": "koning2016-ms2-genome-structure-context",
@@ -1558,8 +1408,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "readExtent": "selected-original-results-captions-and-readout-limits",
@@ -1595,8 +1444,7 @@ export const PHAGE_SCOPE_RECORDS = {
         "The three preparations are separate publications and separate contexts. Cell-free assembly dynamics, a reconstructed mature-particle structure and isolated-receptor association cannot be silently joined into one measured lifecycle.",
         "No selected observation establishes proteolytic maturation, acquisition of infectious competence, complete genome delivery across a cellular boundary, productive intracellular replication, propagation or host-expression reprogramming.",
         "A protein named maturation protein is a component label, not observation of the maturation process. A completed capsid or genome-containing structure is not a measured assembly trajectory; an optical assembly trajectory is not an infectious-competence assay.",
-        "No legacy parent strength, universal necessity, numerical direction/mode/dependency/carrier code, phase order, minimum/critical count, null-saturation interpretation or emergence hierarchy is admitted.",
-        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from the catalogue or from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
+        "No free-energy minimum, elementary rate constant, molecular critical-nucleus count or universal kinetic mechanism is inferred from a static structure. Reported finite optical changes remain conditional on the instrument/calibration and temporal resolution.",
         "No physical-instance admission is made. Structural stoichiometry, specimen count or image-particle count is not an emergence minimum or carrier-equivalence rule."
       ],
       "readExtent": "selected-original-results-captions-and-readout-limits",
@@ -1606,7 +1454,7 @@ export const PHAGE_SCOPE_RECORDS = {
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/23810697/",
-      "correctionCheck": "Original published-version PDF header, institutional deposit and indexed primary PubMed 23810697 agree on the title, seven authors, DOI 10.1016/j.str.2013.05.012 and Structure 21(7),1225-1234,2 July 2013. Direct PMC opening returned a browser challenge; the accessible original institutional PDF supplied the selected scientific text. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
+      "correctionCheck": "Original published-version PDF header, institutional deposit and indexed primary PubMed 23810697 agree on the title, seven authors, DOI 10.1016/j.str.2013.05.012 and Structure 21(7), 1225-1234, 2 July 2013. Direct PMC opening returned a browser challenge; the accessible original institutional PDF supplied the selected scientific text. Limited exact-DOI and title correction/erratum/retraction searches were performed on 2026-10-20. No explicit correction to this particular admitted article surfaced. This is not proof of absence, an exhaustive later-literature review or a DOI-registry relation audit. Corrections to other papers that cite the article are not corrections to it."
     }
   ],
   "comparisons": [],
@@ -1614,7 +1462,7 @@ export const PHAGE_SCOPE_RECORDS = {
     {
       "nodeId": "bio:phage-observation-boundaries",
       "role": "definition",
-      "denotes": "Declared cross-card readout and inference boundaries for the six reviewed viral catalogue cards.",
+      "denotes": "Declared readout and inference boundaries across the six reviewed viral scopes.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-bio-phage-observation-boundaries"
@@ -1675,61 +1523,61 @@ export const PHAGE_SCOPE_RECORDS = {
       ]
     },
     {
-      "nodeId": "bio:viral-card-9-scope",
+      "nodeId": "bio:viral-capsid-assembly-scope",
       "role": "definition",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.9.",
+      "denotes": "Definition of the admitted/restricted scope for viral-capsid self-organization.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-9-scope"
+        "D-bio-viral-capsid-assembly-scope"
       ]
     },
     {
-      "nodeId": "bio:viral-card-10-scope",
+      "nodeId": "bio:viral-maturation-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.10.",
+      "denotes": "Definition of the admitted/restricted scope for viral assembly and maturation.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-10-scope",
-        "C-bio-viral-card-10-unresolved"
+        "D-bio-viral-maturation-scope",
+        "C-bio-viral-maturation-unresolved"
       ]
     },
     {
-      "nodeId": "bio:viral-card-16-scope",
+      "nodeId": "bio:viral-infection-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.16.",
+      "denotes": "Definition of the admitted/restricted scope for mechanisms of viral infection.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-16-scope",
-        "C-bio-viral-card-16-unresolved"
+        "D-bio-viral-infection-scope",
+        "C-bio-viral-infection-unresolved"
       ]
     },
     {
-      "nodeId": "bio:viral-card-29-scope",
+      "nodeId": "bio:viral-genome-organization-scope",
       "role": "definition",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.29.",
+      "denotes": "Definition of the admitted/restricted scope for the structural organization of viral genomes.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-29-scope"
+        "D-bio-viral-genome-organization-scope"
       ]
     },
     {
-      "nodeId": "bio:viral-card-30-scope",
+      "nodeId": "bio:viral-entry-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.30.",
+      "denotes": "Definition of the admitted/restricted scope for viral entry into cells.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-30-scope",
-        "C-bio-viral-card-30-unresolved"
+        "D-bio-viral-entry-scope",
+        "C-bio-viral-entry-unresolved"
       ]
     },
     {
-      "nodeId": "bio:viral-card-35-scope",
+      "nodeId": "bio:viral-reprogramming-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.35.",
+      "denotes": "Definition of the admitted/restricted scope for viral reprogramming of the transcription–translation apparatus.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-35-scope",
-        "C-bio-viral-card-35-unresolved"
+        "D-bio-viral-reprogramming-scope",
+        "C-bio-viral-reprogramming-unresolved"
       ]
     }
   ]

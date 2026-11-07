@@ -167,10 +167,10 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Eight color components do not count eight constituents, polarization states or a minimum carrier group.",
+        "Eight color components do not count eight constituents, polarization states or a minimum carrier count.",
         "The listing labels zero gluon mass as theoretical. It does not report direct observation of a free massless gluon or a pooled spin measurement.",
         "A gauge field is not identical to a particular propagation, exchange, hadronization or confinement process.",
-        "The original process label does not make field existence conditional on universal ongoing self-organization. Gauge-sector differentiation (1.29) is retained as the chosen QCD field content, not a measured emergence event. The free-scalar construction under field dynamics (1.26) does not derive interacting QCD. Weights 0.4/0.6, necessary temporal arising or maintenance, one-carrier thresholds and SOMA process classification are excluded.",
+        "Gauge-sector differentiation is retained as the chosen QCD field content, not a measured emergence event. The free-scalar construction under field dynamics does not derive interacting QCD.",
         "Renormalization-scale evolution is not time evolution. Existing beta-function and collider records retain their matter content, perturbative range, PDF, unfolding and scale assumptions. Ultraviolet running does not by itself prove infrared confinement, real-time quark binding or every hadronization mechanism.",
         "The reused lattice examples compute different theories: Creutz uses pure SU(2) without sea quarks; Bali uses SU(3) with two degenerate sea quarks near the strange mass and external static sources; Durr uses calibrated isospin-symmetric two-plus-one-flavor SU(3) without QED. Their loop, mixing and hadron-spectrum results are not free-gluon masses or real-time creation histories. Existing finite-volume, continuum, fit and source-convention limits remain attached to those records."
       ]

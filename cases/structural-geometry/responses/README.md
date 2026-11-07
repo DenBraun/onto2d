@@ -2,9 +2,10 @@
 
 These SG2-022 controls implement the [fixed protocol](PROTOCOL.md) and
 [public contract](../../../docs/structural-geometry/SIGNATURES.md#graph-native-response-probes).
-`controls.json` was fixed before measured generation. Sixteen artifacts bind
-their sources, exhaustive targets, transformations, baseline/after observations,
-strict coverage and diagnostic effect histograms.
+`controls.json` was fixed before measured generation. Fifteen artifacts bind
+their synthetic sources, exhaustive targets, transformations, baseline/after
+observations, strict coverage and diagnostic effect histograms. The suite
+contains synthetic controls only.
 
 Run from the repository root:
 
@@ -22,17 +23,16 @@ the separate reference verification/generation commands.
 
 ## What the controls show
 
-There are 62 compatible probe results and 158 targets: 154 transformations apply
+There are 57 compatible probe results and 154 targets: 150 transformations apply
 and four reversals are rejected because they would create parallel edges.
 Chains, cycles, reciprocal edges, diamonds, transitive paths and mixed graphs
 exercise the four response families (five probes in the typed profile).
 Missing necessity leaves target selection unresolved; missing another typed
 field retains selected targets and explicit observation gaps. Additional controls
-cover isolates, opaque source IDs, induced boundary accounting and a verified
-Causal Emergence fragment.
+cover isolates, opaque source IDs and induced boundary accounting.
 
 The typed diamond with feedback observes all five compatible probes completely.
-The other 15 requests remain overall indeterminate because at least one mandatory
+The other 14 requests remain overall indeterminate because at least one mandatory
 probe has no target, missing evidence or a rejected transformation. These are
 expected disclosed outcomes, not failing implementation tests. Individual
 complete responses remain available. An absent target family is not a measured
@@ -63,5 +63,5 @@ adjacency scan counts are implementation diagnostics checked against bounds.
 Transport tests cover 393 requests across all small-graph node bijections plus
 24 relabelings of the typed diamond with feedback. They transport node and edge
 IDs, target paths, mappings, outcomes and histograms while reordering source
-records and changing presentation. All 16 artifacts also replay in the browser.
+records and changing presentation. All 15 artifacts also replay in the browser.
 See the [acceptance review](../../../docs/structural-geometry/EVIDENCE.md).

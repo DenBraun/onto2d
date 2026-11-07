@@ -467,7 +467,7 @@ const contracts = {
           "sourceId": "ni2009-polar-thesis",
           "locator": "Thesis printed pages 30-32, Section 3.2, Figure 3.2 and Equation 3.1: updated plate spacing, dielectric-wall/fringe correction and absent independent field calibration",
           "role": "limits",
-          "note": "Supports only the stated definition, preparation or source-reported result under the declared reading limits."
+          "note": "Delimits the corrected moment: Section 3.2 estimates 3-5% field uncertainty and reports no independent field calibration; not additional support for the value."
         }
       ],
       "checkIds": [],
@@ -571,7 +571,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "The 0.42 overlap parameter is fitted to this preparation, not a universal aligned fraction, carrier minimum, cooperative threshold or independent validation dataset.",
+        "The 0.42 overlap parameter is fitted to this preparation, not a universal aligned fraction, cooperative threshold or independent validation dataset.",
         "A second angular moment can be anisotropic while the first vector moment is zero; this is not evidence of a permanent nitrogen dipole or collective polar phase."
       ],
       "contextIds": [
@@ -582,7 +582,7 @@ const contracts = {
       "id": "C-phys-molecular-polarization-source-scope",
       "kind": "review-finding",
       "statement": "The reviewed sources support a selected KRb body-fixed moment with an explicit calibration correction, a distinct nitrogen pulse-driven angular response, and conditional molecular/ensemble definitions. These establish state- and preparation-specific dipolar response. The fixed-pair interaction and dilute constitutive law remain models; the selected experiments do not measure a collective dielectric curve, solvation structure, permanent field-free order or a universal emergence threshold.",
-      "scope": "Scoped replacement for the broad molecular polarization/dipole source card, preserving positive observations and their limits.",
+      "scope": "Scoped replacement for broad molecular polarization/dipole claims, preserving positive observations and their limits.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -614,21 +614,13 @@ const contracts = {
           "locator": "Section 3.3, Equations 3.43-3.50 and accompanying low-density/weak-field qualifications, plus final material-specific constitutive-relation paragraph: local versus macroscopic field and linear polarization",
           "role": "supports",
           "note": "Supports only the stated definition, preparation or source-reported result under the declared reading limits."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original draft vocabulary and asserted parents only; this catalogue is not empirical support."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original parents 2.3/2.4/2.6/2.7, weights 0.30/0.25/0.25/0.20, necessary labels, downward-causation/mode codes and physical-body counts 1/1/2/2 have no admitted causal or quantitative authority.",
         "An electric dipole is a charge-distribution moment, not a demonstrated pair of integer-charged regional ions. Polarizability does not require a permanent zero-field molecular vector, net sample orientation or stable field-free collective polarization. Solvation structure needs its own species-, phase-, temperature- and measurement-specific evidence.",
         "An isolated molecular observable and a macroscopic material response are separate scopes. A neutral molecule can respond without ion formation, a hydrogen bond or a prior van der Waals assembly.",
-        "Level 2 is a reviewed display grouping; Phase 2, property-role irreducibility and SOMA stabilization language do not supply a measured developmental sequence or new rule-generating law.",
-        "The theoretical and empirical Evidence placeholders have no publication identifiers and are replaced by the explicit primary citations and formal reading. No new numerical check, dielectric fit, solvation measurement or independent replay is claimed."
+        "No new numerical check, dielectric fit, solvation measurement or independent replay is claimed."
       ],
       "contextIds": [
         "ni2008-krb-stark",
@@ -681,7 +673,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "No universal inter-card causal ancestry, quantitative dielectric prediction, carrier threshold or independent-replication count is assigned."
+        "No quantitative dielectric prediction or independent-replication count is assigned."
       ],
       "contextIds": [
         "ni2008-krb-stark",
@@ -927,7 +919,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "The 0.42 overlap parameter is fitted to this preparation, not a universal aligned fraction, carrier minimum, cooperative threshold or independent validation dataset.",
+        "The 0.42 overlap parameter is fitted to this preparation, not a universal aligned fraction, cooperative threshold or independent validation dataset.",
         "A second angular moment can be anisotropic while the first vector moment is zero; this is not evidence of a permanent nitrogen dipole or collective polar phase."
       ]
     },
@@ -962,18 +954,12 @@ const contracts = {
         {
           "sourceId": "likharev2022-dipoles",
           "locator": "Section 3.3, Equations 3.43-3.50 and accompanying low-density/weak-field qualifications, plus final material-specific constitutive-relation paragraph: local versus macroscopic field and linear polarization"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original parents 2.3/2.4/2.6/2.7, weights 0.30/0.25/0.25/0.20, necessary labels, downward-causation/mode codes and physical-body counts 1/1/2/2 have no admitted causal or quantitative authority.",
         "An electric dipole is a charge-distribution moment, not a demonstrated pair of integer-charged regional ions. Polarizability does not require a permanent zero-field molecular vector, net sample orientation or stable field-free collective polarization. Solvation structure needs its own species-, phase-, temperature- and measurement-specific evidence.",
         "An isolated molecular observable and a macroscopic material response are separate scopes. A neutral molecule can respond without ion formation, a hydrogen bond or a prior van der Waals assembly.",
-        "Level 2 is a reviewed display grouping; Phase 2, property-role irreducibility and SOMA stabilization language do not supply a measured developmental sequence or new rule-generating law.",
-        "The theoretical and empirical Evidence placeholders have no publication identifiers and are replaced by the explicit primary citations and formal reading. No new numerical check, dielectric fit, solvation measurement or independent replay is claimed."
+        "No new numerical check, dielectric fit, solvation measurement or independent replay is claimed."
       ]
     }
   ],
@@ -1243,7 +1229,7 @@ const contracts = {
     {
       "nodeId": "phys:molecular-polarization-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for the broad molecular polarization/dipole source card, preserving positive observations and their limits.",
+      "denotes": "Scoped replacement for broad molecular polarization/dipole claims, preserving positive observations and their limits.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-molecular-polarization-source-scope",
@@ -1280,7 +1266,7 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1126/science.1163861",
-      "correctionCheck": "Read selected preparation and Stark passages in the published Science 322(5899),231-235 primary paper; visually checked published page 234/Figure 6 and surrounding text in the six-page author-hosted file (one cover plus five article pages). The primary thesis correction is separately cited; the 2008 value remains a historical result. No raw spectra, full covariance, independent electric-field calibration, new Stark fit or collective many-body experiment was reproduced. Crossref metadata shows no update-to record and an empty relation object; the actual author-thesis correction is retained rather than inferring no correction."
+      "correctionCheck": "Read selected preparation and Stark passages in the published Science 322(5899), 231-235 primary paper; visually checked published page 234/Figure 6 and surrounding text in the six-page author-hosted file (one cover plus five article pages). The primary thesis correction is separately cited; the 2008 value remains a historical result. No raw spectra, full covariance, independent electric-field calibration, new Stark fit or collective many-body experiment was reproduced. Crossref metadata shows no update-to record and an empty relation object; the actual author-thesis correction is retained rather than inferring no correction."
     },
     {
       "id": "yang2016-n2-alignment",
@@ -1300,7 +1286,7 @@ const contracts = {
         "The experiment is an axis-alignment response of supplied neutral molecules; it does not require hydrogen bonds or prior ionic charge transfer.",
         "Patterns are four-quadrant symmetrized. The stated anisotropy range 3-4.5 inverse Angstrom partly intersects the missing region below 3.5 inverse Angstrom, which the source extrapolates smoothly to zero.",
         "Diffraction anisotropy is not a directly measured permanent or induced electronic dipole magnitude.",
-        "The 0.42 overlap parameter is fitted to this preparation, not a universal aligned fraction, carrier minimum, cooperative threshold or independent validation dataset.",
+        "The 0.42 overlap parameter is fitted to this preparation, not a universal aligned fraction, cooperative threshold or independent validation dataset.",
         "A second angular moment can be anisotropic while the first vector moment is zero; this is not evidence of a permanent nitrogen dipole or collective polar phase."
       ],
       "readExtent": "full-published-scientific-main-text",
@@ -1316,24 +1302,6 @@ const contracts = {
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "likharev2022-dipoles",
       "kind": "research-publication",
@@ -1383,7 +1351,7 @@ const contracts = {
           "Published pages 231-234, Figures 1-2 and 5-6: supplied 40K87Rb Feshbach molecules, Raman spectroscopy and selected singlet rotational states",
           "Published pages 234-235, Figure 6 and adjacent Stark-spectroscopy text: singlet v=0 N=0/N=2 shifts, rotational constant, permanent-moment fit and field uncertainty"
         ],
-        "limit": "Read selected preparation and Stark passages in the published Science 322(5899),231-235 primary paper; visually checked published page 234/Figure 6 and surrounding text in the six-page author-hosted file (one cover plus five article pages). The primary thesis correction is separately cited; the 2008 value remains a historical result. No raw spectra, full covariance, independent electric-field calibration, new Stark fit or collective many-body experiment was reproduced. Crossref metadata shows no update-to record and an empty relation object; the actual author-thesis correction is retained rather than inferring no correction."
+        "limit": "Read selected preparation and Stark passages in the published Science 322(5899), 231-235 primary paper; visually checked published page 234/Figure 6 and surrounding text in the six-page author-hosted file (one cover plus five article pages). The primary thesis correction is separately cited; the 2008 value remains a historical result. No raw spectra, full covariance, independent electric-field calibration, new Stark fit or collective many-body experiment was reproduced. Crossref metadata shows no update-to record and an empty relation object; the actual author-thesis correction is retained rather than inferring no correction."
       }
     },
     {

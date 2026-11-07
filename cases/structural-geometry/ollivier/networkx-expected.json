@@ -2115,117 +2115,7 @@
             "denominator": "1",
             "numerator": "-1"
           },
-          "id": "0.0->0.1",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.0->0.2",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.1->0.3",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-3"
-          },
-          "id": "0.1->0.4",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-2"
-          },
-          "id": "0.1->0.5",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.2->0.3",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-3"
-          },
-          "id": "0.2->0.4",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-2"
-          },
-          "id": "0.2->0.5",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.3->0.4",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.3->0.5",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.4->0.5",
+          "id": "bridge:compensation-discrete-scale",
           "wasserstein": {
             "denominator": "1",
             "numerator": "2"
@@ -2236,297 +2126,10 @@
             "denominator": "1",
             "numerator": "-2"
           },
-          "id": "0.4->0.6",
+          "id": "bridge:compensation-hyperbolic-frame",
           "wasserstein": {
             "denominator": "1",
             "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-7"
-          },
-          "id": "0.5->0.6",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "11"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.5->0.9",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.6->0.7",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.6->0.8",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.7->0.8",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.8->0.9",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        }
-      ],
-      "id": "causal-emergence-seed-zero",
-      "requestHash": "sha256:f69b01d80d6b1102f3d25a62d199841e31f8b473ea23f159da2d41d9bbeee49d"
-    },
-    {
-      "edges": [
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.0->0.1",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.0->0.2",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.1->0.3",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-3"
-          },
-          "id": "0.1->0.4",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "7"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.1->0.5",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.2->0.3",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-3"
-          },
-          "id": "0.2->0.4",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "7"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.2->0.5",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-1"
-          },
-          "id": "0.3->0.4",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.3->0.5",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-1"
-          },
-          "id": "0.4->0.5",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.4->0.6",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "8",
-            "numerator": "-7"
-          },
-          "id": "0.5->0.6",
-          "wasserstein": {
-            "denominator": "8",
-            "numerator": "15"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.5->0.9",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.6->0.7",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-1"
-          },
-          "id": "0.6->0.8",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.7->0.8",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.8->0.9",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        }
-      ],
-      "id": "causal-emergence-seed-half",
-      "requestHash": "sha256:e53f847216a6e87e561874c9bfcea21ea813dac2fb431cda2287b82de291f4e7"
-    },
-    {
-      "edges": [
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.15->0.16",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
           }
         },
         {
@@ -2534,7 +2137,7 @@
             "denominator": "2",
             "numerator": "-3"
           },
-          "id": "0.16->0.17",
+          "id": "bridge:compensation-oscillatory-mode",
           "wasserstein": {
             "denominator": "2",
             "numerator": "5"
@@ -2543,290 +2146,9 @@
         {
           "curvature": {
             "denominator": "1",
-            "numerator": "-2"
-          },
-          "id": "0.16->0.19",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
             "numerator": "-1"
           },
-          "id": "0.17->0.18",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.17->0.19",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "6",
-            "numerator": "-5"
-          },
-          "id": "0.18->0.20",
-          "wasserstein": {
-            "denominator": "6",
-            "numerator": "11"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.18->0.21",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.19->0.18",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "3",
-            "numerator": "-4"
-          },
-          "id": "0.19->0.20",
-          "wasserstein": {
-            "denominator": "3",
-            "numerator": "7"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-3"
-          },
-          "id": "0.19->0.21",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-2"
-          },
-          "id": "0.19->0.22",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.20->0.21",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.20->0.22",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.20->0.23",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "3",
-            "numerator": "-2"
-          },
-          "id": "0.21->0.22",
-          "wasserstein": {
-            "denominator": "3",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "3",
-            "numerator": "-2"
-          },
-          "id": "0.21->0.23",
-          "wasserstein": {
-            "denominator": "3",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "3",
-            "numerator": "-1"
-          },
-          "id": "0.22->0.23",
-          "wasserstein": {
-            "denominator": "3",
-            "numerator": "4"
-          }
-        }
-      ],
-      "id": "causal-emergence-admissibility-zero",
-      "requestHash": "sha256:c75a242bf2a1fad21c058c5b845d38b5633b18587f3edcd0a054ad065d823eea"
-    },
-    {
-      "edges": [
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.15->0.16",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-3"
-          },
-          "id": "0.16->0.17",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "7"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.16->0.19",
-          "wasserstein": {
-            "denominator": "1",
-            "numerator": "2"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.17->0.18",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "8",
-            "numerator": "-3"
-          },
-          "id": "0.17->0.19",
-          "wasserstein": {
-            "denominator": "8",
-            "numerator": "11"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "12",
-            "numerator": "-5"
-          },
-          "id": "0.18->0.20",
-          "wasserstein": {
-            "denominator": "12",
-            "numerator": "17"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "2",
-            "numerator": "-1"
-          },
-          "id": "0.18->0.21",
-          "wasserstein": {
-            "denominator": "2",
-            "numerator": "3"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-1"
-          },
-          "id": "0.19->0.18",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "3",
-            "numerator": "-2"
-          },
-          "id": "0.19->0.20",
-          "wasserstein": {
-            "denominator": "3",
-            "numerator": "5"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "4",
-            "numerator": "-3"
-          },
-          "id": "0.19->0.21",
-          "wasserstein": {
-            "denominator": "4",
-            "numerator": "7"
-          }
-        },
-        {
-          "curvature": {
-            "denominator": "1",
-            "numerator": "-1"
-          },
-          "id": "0.19->0.22",
+          "id": "bridge:omega-compensation",
           "wasserstein": {
             "denominator": "1",
             "numerator": "2"
@@ -2837,7 +2159,7 @@
             "denominator": "1",
             "numerator": "0"
           },
-          "id": "0.20->0.21",
+          "id": "bridge:oscillatory-mode-discrete-scale",
           "wasserstein": {
             "denominator": "1",
             "numerator": "1"
@@ -2845,21 +2167,203 @@
         },
         {
           "curvature": {
-            "denominator": "4",
+            "denominator": "1",
             "numerator": "-1"
           },
-          "id": "0.20->0.22",
+          "id": "description:N-action-domain",
           "wasserstein": {
-            "denominator": "4",
-            "numerator": "5"
+            "denominator": "1",
+            "numerator": "2"
           }
         },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:N-density-domain",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:N-density-integral",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:distinction-sequential-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:distinction-spatial-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "description:ensemble-synchronization",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:hyperbolic-frame-cohort-selection",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:nonlinear-action-ensemble-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:omega-distinction",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:omega-premetric-frame",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:oscillatory-mode-closure-parameter",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:premetric-frame-sequential-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:premetric-frame-spatial-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:quadratic-action-closure-parameter",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:quadratic-action-nonlinear-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:sequential-axis-quadratic-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "description:spatial-axis-quadratic-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        }
+      ],
+      "id": "causal-emergence-level-zero-definitions-zero",
+      "requestHash": "sha256:2013616ebb132e197f3c8a78d74a8b761f47ca5580e8432af7f54d71109d152c"
+    },
+    {
+      "edges": [
         {
           "curvature": {
             "denominator": "2",
             "numerator": "-1"
           },
-          "id": "0.20->0.23",
+          "id": "bridge:compensation-discrete-scale",
           "wasserstein": {
             "denominator": "2",
             "numerator": "3"
@@ -2867,40 +2371,800 @@
         },
         {
           "curvature": {
-            "denominator": "6",
+            "denominator": "1",
             "numerator": "-1"
           },
-          "id": "0.21->0.22",
+          "id": "bridge:compensation-hyperbolic-frame",
           "wasserstein": {
-            "denominator": "6",
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "4",
+            "numerator": "-3"
+          },
+          "id": "bridge:compensation-oscillatory-mode",
+          "wasserstein": {
+            "denominator": "4",
             "numerator": "7"
           }
         },
         {
           "curvature": {
-            "denominator": "3",
+            "denominator": "2",
             "numerator": "-1"
           },
-          "id": "0.21->0.23",
+          "id": "bridge:omega-compensation",
           "wasserstein": {
-            "denominator": "3",
-            "numerator": "4"
+            "denominator": "2",
+            "numerator": "3"
           }
         },
         {
           "curvature": {
-            "denominator": "6",
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "bridge:oscillatory-mode-discrete-scale",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
             "numerator": "-1"
           },
-          "id": "0.22->0.23",
+          "id": "description:N-action-domain",
           "wasserstein": {
-            "denominator": "6",
-            "numerator": "7"
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:N-density-domain",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:N-density-integral",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:distinction-sequential-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:distinction-spatial-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "description:ensemble-synchronization",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:hyperbolic-frame-cohort-selection",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:nonlinear-action-ensemble-action",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:omega-distinction",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:omega-premetric-frame",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:oscillatory-mode-closure-parameter",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:premetric-frame-sequential-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:premetric-frame-spatial-axis",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "description:quadratic-action-closure-parameter",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:quadratic-action-nonlinear-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:sequential-axis-quadratic-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "description:spatial-axis-quadratic-action",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
           }
         }
       ],
-      "id": "causal-emergence-admissibility-half",
-      "requestHash": "sha256:968853249bad77ca652bac84a7806d3dd71451d68e5b8c2a9570786fa881cd0e"
+      "id": "causal-emergence-level-zero-definitions-half",
+      "requestHash": "sha256:8a3d952d9ce2be9fe0b776b1fe00a4abf6ab954caf75d1f949502d3e3176943b"
+    },
+    {
+      "edges": [
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-3"
+          },
+          "id": "R-ensemble->l0:ensemble",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "5"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "R-ensemble->l0:synchronization",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "6",
+            "numerator": "-7"
+          },
+          "id": "R-mode->l0:oscillatory-mode",
+          "wasserstein": {
+            "denominator": "6",
+            "numerator": "13"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "5",
+            "numerator": "-9"
+          },
+          "id": "R-object->l0:crt-node",
+          "wasserstein": {
+            "denominator": "5",
+            "numerator": "14"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "R-promote->l0:ensemble-quantum",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "R-triad->l0:triad-configuration",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:carrier-promotion->R-promote",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "l0:closure-parameter->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:cohort-selection->R-select",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:crt-node->R-ensemble",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:deformation->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:ensemble->R-promote",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:ensemble-action->R-ensemble",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "l0:hyperbolic-frame->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:integrated-density->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:local-density->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:nonlinear-action->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:oscillatory-mode->R-triad",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:quadratic-action->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:sequential-axis->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:spatial-axis->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-3"
+          },
+          "id": "l0:synchronization->R-promote",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "5"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-2"
+          },
+          "id": "l0:triad-configuration->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:triadic-closure->R-triad",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:trial-field->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        }
+      ],
+      "id": "causal-emergence-level-zero-rules-zero",
+      "requestHash": "sha256:64ba5a69fcb20a66f94169fc73244762fdf49f07f9e1258a471e0c3567351e1f"
+    },
+    {
+      "edges": [
+        {
+          "curvature": {
+            "denominator": "4",
+            "numerator": "-3"
+          },
+          "id": "R-ensemble->l0:ensemble",
+          "wasserstein": {
+            "denominator": "4",
+            "numerator": "7"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "R-ensemble->l0:synchronization",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "12",
+            "numerator": "-7"
+          },
+          "id": "R-mode->l0:oscillatory-mode",
+          "wasserstein": {
+            "denominator": "12",
+            "numerator": "19"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "10",
+            "numerator": "-9"
+          },
+          "id": "R-object->l0:crt-node",
+          "wasserstein": {
+            "denominator": "10",
+            "numerator": "19"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "R-promote->l0:ensemble-quantum",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "R-triad->l0:triad-configuration",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:carrier-promotion->R-promote",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "l0:closure-parameter->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:cohort-selection->R-select",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:crt-node->R-ensemble",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:deformation->R-object",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:ensemble->R-promote",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:ensemble-action->R-ensemble",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "0"
+          },
+          "id": "l0:hyperbolic-frame->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:integrated-density->R-object",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:local-density->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:nonlinear-action->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:oscillatory-mode->R-triad",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:quadratic-action->R-mode",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:sequential-axis->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:spatial-axis->R-mode",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "4",
+            "numerator": "-3"
+          },
+          "id": "l0:synchronization->R-promote",
+          "wasserstein": {
+            "denominator": "4",
+            "numerator": "7"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "1",
+            "numerator": "-1"
+          },
+          "id": "l0:triad-configuration->R-object",
+          "wasserstein": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:triadic-closure->R-triad",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        },
+        {
+          "curvature": {
+            "denominator": "2",
+            "numerator": "-1"
+          },
+          "id": "l0:trial-field->R-mode",
+          "wasserstein": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        }
+      ],
+      "id": "causal-emergence-level-zero-rules-half",
+      "requestHash": "sha256:47f1008741f4bf5f90dc87d9c7333c305dc1114355876a155295ba8d98006e04"
     }
   ],
   "reference": {

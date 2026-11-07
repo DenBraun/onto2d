@@ -68,7 +68,7 @@ test("opaque source IDs and explicit induced scopes agree across runtime and sch
   assert.equal(validate("structuralProbeSandboxArtifact", runStructuralProbeSandbox(f.pack, input)), true, ajv.errorsText());
 });
 
-test("the browser bundle reproduces and verifies all 51 source-bound sandbox artifacts", async () => {
+test("the browser bundle reproduces and verifies all 46 source-bound sandbox artifacts", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/sandbox.js", import.meta.url))], bundle: true,
     platform: "browser", format: "iife", globalName: "Sandbox", write: false, logLevel: "silent" });
   const output = runInNewContext(`${bundle.outputFiles[0].text}\nJSON.stringify(JSON.parse(fixturesText).map(({pack,input}) =>

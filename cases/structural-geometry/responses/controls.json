@@ -23,7 +23,6 @@
     {"id": "boundary", "nodes": 5, "edges": [[0, 1, "necessary"], [1, 2, "enabling"], [2, 3, "contextual"], [3, 0, "optional"]]}
   ],
   "maximumCycle": {"cycleNodes": 32, "isolates": 32, "type": "necessary"},
-  "causalScope": ["0.0", "0.1", "0.2"],
   "censusType": "necessary",
   "scenarios": [
     {"id": "chain-topology", "source": "chain", "regimeId": "topology-only-v1"},
@@ -40,7 +39,6 @@
     {"id": "isolates", "source": "isolates", "regimeId": "topology-only-v1"},
     {"id": "opaque", "source": "opaque", "regimeId": "typed-relations-v1"},
     {"id": "boundary", "source": "boundary", "regimeId": "topology-only-v1", "scope": {"kind": "induced", "nodeIds": ["n4", "n1", "n0"]}},
-    {"id": "causal", "source": "causal", "regimeId": "typed-relations-v1"},
     {"id": "maximum", "source": "maximum", "regimeId": "topology-only-v1"}
   ]
 }

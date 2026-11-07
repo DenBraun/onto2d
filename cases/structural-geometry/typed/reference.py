@@ -11,8 +11,6 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
-CAUSAL = ROOT / "models/causal-emergence/releases/2026.08.15/bundle.json"
 CANONICAL = HERE.parent / "canonical/reference.py"
 spec = importlib.util.spec_from_file_location("independent_permutations", CANONICAL)
 untyped = importlib.util.module_from_spec(spec)
@@ -43,13 +41,6 @@ def sources():
         records = [("e" + str(i), positions[all_labels[e["from"]]], positions[all_labels[e["to"]]], e["types"])
                    for i, e in enumerate(graph["edges"]) if all_labels[e["from"]] in positions and all_labels[e["to"]] in positions]
         result.append((graph["id"], labels, records))
-    pack = json.loads(CAUSAL.read_text(encoding="utf-8"))
-    labels = sorted(document["causalScope"])
-    assert set(labels) <= {n["id"] for n in pack["files"]["model/nodes.json"]}
-    positions = {label: i for i, label in enumerate(labels)}
-    records = [(e["id"], positions[e["source"]], positions[e["target"]], {f: e[f] for f in FIELDS if f in e})
-               for e in pack["files"]["model/edges.json"] if e["source"] in positions and e["target"] in positions]
-    result.append(("causal-fragment", labels, records))
     return result
 
 
@@ -112,7 +103,6 @@ def expected():
         alignments.append({"id": entry["id"], "compatible": aligned is not None, "equalAlignedValues": equal})
     return {"schemaVersion": "1", "method": "joint-five-field-node-permutation-enumeration",
             "controlsFileSha256": hashlib.sha256((HERE / "controls.json").read_bytes()).hexdigest(),
-            "causalFileSha256": hashlib.sha256(CAUSAL.read_bytes()).hexdigest(),
             "protocolFileSha256": hashlib.sha256((HERE / "PROTOCOL.md").read_bytes()).hexdigest(),
             "canonicalReferenceFileSha256": hashlib.sha256(CANONICAL.read_bytes()).hexdigest(),
             "census": census(), "controls": controls, "alignments": alignments}
@@ -167,7 +157,8 @@ def verify_artifacts():
             assert artifact["compatibility"]["state"] == "compatible"
             check_typed_result(artifact["aligned"]["left"], aligned[0], aligned[1])
             check_typed_result(artifact["aligned"]["right"], aligned[2], aligned[3])
-    print("Independent typed artifact replay passed: 26 observations and 8 vocabulary alignments.")
+    print("Independent typed artifact replay passed: {} observations and {} vocabulary alignments.".format(
+        len(graphs), len(document["alignments"])))
 
 
 def main():
@@ -187,8 +178,9 @@ def main():
             stream.write(text)
     else:
         assert path.read_text(encoding="utf-8") == text, "Independent typed expectations differ."
-    print("Independent typed reference {}: 739 labeled graphs, {} typed classes, 26 controls.".format(
-        "written" if args.write else "verified", sum(row["typedIsomorphismClasses"] for row in value["census"])))
+    print("Independent typed reference {}: 739 labeled graphs, {} typed classes, {} controls.".format(
+        "written" if args.write else "verified", sum(row["typedIsomorphismClasses"] for row in value["census"]),
+        len(value["controls"])))
 
 
 if __name__ == "__main__":

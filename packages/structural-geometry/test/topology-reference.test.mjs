@@ -17,7 +17,7 @@ test("all 4165 directed graphs agree with independent matrix closure and retain 
 test("independent matrix closure regenerates expectations, verifies artifacts and guards all frozen reference sources", async () => {
   const reference = await readJson("reference.json");
   await verifyReferenceSources(reference);
-  for (const field of ["controlsFileSha256", "causalFileSha256", "canonicalReferenceFileSha256"]) {
+  for (const field of ["controlsFileSha256", "canonicalReferenceFileSha256"]) {
     await assert.rejects(() => verifyReferenceSources({ ...reference, [field]: "0".repeat(64) }), /source binding differs/);
   }
   const script = fileURLToPath(new URL("../../../cases/structural-geometry/topology/reference.py", import.meta.url));

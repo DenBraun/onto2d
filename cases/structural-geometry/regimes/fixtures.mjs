@@ -13,11 +13,7 @@ export function controlPack({ dictionaries = {}, modelId = "regime-boundary-cont
     })) });
 }
 export async function fixtures() {
-  const causal = await readJson("../../../models/causal-emergence/releases/2026.08.15/bundle.json");
   const control = controlPack();
-  return ["canonical-structure-v1", "topology-only-v1", "typed-relations-v1"].flatMap((regimeId) => [
-    { id: `${regimeId}-control`, pack: control, input: { regimeId } },
-    { id: `${regimeId}-causal-fragment`, pack: causal, input: { regimeId,
-      scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2", "0.3", "0.4", "0.5"] } } }
-  ]);
+  return ["canonical-structure-v1", "topology-only-v1", "typed-relations-v1"].map((regimeId) =>
+    ({ id: `${regimeId}-control`, pack: control, input: { regimeId } }));
 }

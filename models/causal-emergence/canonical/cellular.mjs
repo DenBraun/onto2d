@@ -1,13 +1,11 @@
+import { isReviewedBridgeRelation, withBridgeReadings } from "./bridges.mjs";
 import { isReviewedNeuralSystemsDescription } from "./level-six.mjs";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import {
-  CELLULAR_RECORDS, CELLULAR_CARD_SCOPES, CELLULAR_OWN_STUDY_IDS
+  CELLULAR_RECORDS, CELLULAR_OWN_STUDY_IDS
 } from "./level-four.mjs";
 
-const sourceCards = JSON.parse(readFileSync(new URL("../../../references/level-4.json", import.meta.url), "utf8"));
 const published = new Set(["publication-supported", "literature-synthesis"]);
-const dispositions = new Set(["supported", "qualified", "excluded", "unresolved"]);
 const sorted = (values) => [...values].sort();
 const claimContexts = (claim) => claim.contextIds ?? [];
 
@@ -44,7 +42,7 @@ export function validateCellularReview(data, context) {
     assert.ok(records[kind] instanceof Map, `Unknown cellular inventory: ${kind}`);
     for (const expected of expectedRecords) {
       const id = expected[idKey];
-      assert.deepEqual(records[kind].get(id), expected,
+      assert.deepEqual(records[kind].get(id), kind === "sources" ? withBridgeReadings(expected) : expected,
         `Cellular ${kind} changed ${id}: preserve the reviewed preparation and scope`);
       admitted[kind].add(id);
     }
@@ -58,38 +56,6 @@ export function validateCellularReview(data, context) {
   assert.deepEqual(sorted(cellular.comparisons.map((record) => record.id)), sorted(admitted.comparisons),
     "Unreviewed cellular comparison");
 
-  assert.equal(CELLULAR_CARD_SCOPES.length, sourceCards.length, "Incomplete Level-4 card coverage");
-  const seenCards = new Set();
-  for (const card of CELLULAR_CARD_SCOPES) {
-    const original = sourceCards[card.sourceIndex];
-    assert.ok(original && original.Id === card.sourceIndex, "Unknown cellular source card");
-    assert.equal(card.code, `4.${original.Id}`);
-    assert.ok(!seenCards.has(card.code), `Duplicate cellular card ${card.code}`);
-    seenCards.add(card.code);
-    assert.equal(card.originalName, original.Name, `Cellular original name changed ${card.code}`);
-    assert.ok(typeof card.scope === "string" && card.scope.length, `Empty cellular scope ${card.code}`);
-    assert.ok(card.nodeIds.length && card.claimIds.length && card.assertions.length,
-      `Empty cellular admission contract ${card.code}`);
-    assert.equal(new Set(card.nodeIds).size, card.nodeIds.length, `Duplicate cellular card node ${card.code}`);
-    assert.equal(new Set(card.claimIds).size, card.claimIds.length, `Duplicate cellular card claim ${card.code}`);
-    for (const id of card.nodeIds) assert.ok(context.entities.has(id), `Unknown cellular scope node ${card.code}: ${id}`);
-    for (const id of card.claimIds) assert.ok(context.claims.has(id), `Unknown cellular scope claim ${card.code}: ${id}`);
-    assert.ok(card.nodeIds.some((id) => context.entities.get(id).sourceCoordinates.some((coordinate) =>
-      coordinate.sourceId === "legacy-4" && coordinate.locator === `/${original.Id}`)),
-    `Cellular card lost its actual source coordinate ${card.code}`);
-    assert.deepEqual(card.parentDispositions.map((parent) => parent.parentCode),
-      original.Parents.map((parent) => parent.ParentCode), `Cellular parent inventory/order changed ${card.code}`);
-    for (const entry of [...card.assertions, ...card.parentDispositions]) {
-      assert.ok(dispositions.has(entry.disposition), `Unknown cellular disposition ${card.code}`);
-      assert.ok(typeof entry.reason === "string" && entry.reason.length && entry.claimIds.length,
-        `Cellular disposition lacks its scientific reason/evidence ${card.code}`);
-      if (Object.hasOwn(entry, "topic")) assert.ok(entry.topic.length, `Unnamed cellular assertion ${card.code}`);
-      for (const id of entry.claimIds) assert.ok(context.claims.has(id), `Unknown cellular disposition claim ${id}`);
-    }
-    assert.ok(card.excludedDefaults.length, `Cellular card retains unreviewed catalogue defaults ${card.code}`);
-    assert.ok(Array.isArray(card.unresolved), `Cellular card lost uncertainty inventory ${card.code}`);
-  }
-  assert.deepEqual(sorted(seenCards), sorted(sourceCards.map((card) => `4.${card.Id}`)));
 
   for (const expected of CELLULAR_RECORDS.studies) {
     const source = context.sources.get(expected.sourceId);
@@ -137,7 +103,7 @@ export function validateCellularReview(data, context) {
       .includes(coordinate.locator), `Cellular coordinate exceeds reading ${entity.id}`);
   }
   for (const relation of graph.relations) {
-    if (isReviewedNeuralSystemsDescription(relation)) continue;
+    if (isReviewedNeuralSystemsDescription(relation) || isReviewedBridgeRelation(relation)) continue;
     if (!relation.id.startsWith("cellular:") && !relation.source.startsWith("cell:")
       && !relation.target.startsWith("cell:")) continue;
     assert.ok(admitted.relations.has(relation.id), `Unreviewed cellular relation or domain bridge ${relation.id}`);

@@ -30,11 +30,11 @@ are supported. Errors produce no partial artifact. Limits: five representations,
 five observation evaluations, at most ten bounded canonicalizer calls, 500,000
 canonical entries and 4 MiB cumulative/final output. Existing regime bounds apply.
 
-Controls reuse declared sandbox sources: chain, star, reciprocal typed pair,
-isolates, missing typed data, reordered type sets, mixed directed graph, induced
-boundary with isolate, opaque IDs and the six-node Causal Emergence scope. Add
-singleton, complete six-node typed graph, and the topology limit of 64 nodes and
-256 edges. No source or graph is chosen from a measured outcome.
+Controls reuse declared synthetic sandbox sources: chain, star, reciprocal typed
+pair, isolates, missing typed data, reordered type sets, mixed directed graph,
+induced boundary with isolate and opaque IDs. Add singleton, complete six-node
+typed graph, and the topology limit of 64 nodes and 256 edges. No source or
+graph is chosen from a measured outcome.
 
 Independent Python expectations use exhaustive bijections for untyped and joint
 typed equality, and Boolean transitive closure for topology. The reference reads

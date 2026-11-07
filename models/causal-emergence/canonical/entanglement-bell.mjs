@@ -194,7 +194,8 @@ const contracts = {
         "extent": "full-publisher-primary-article",
         "locators": [
           "Publisher pages 250402-3 to 250402-5, Equations 1-2 and Figures 1-3: source, local trials, settings and detection",
-          "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions"
+          "Publisher pages 250402-6 to 250402-8, Table I and Figures 4-5: selected run, p-values, timing and assumptions",
+          "Publisher pages 250402-1 to 250402-2: Bell's theorem, local realism and local hidden-variable theories, CHSH and Clauser-Horne forms, locality and freedom-of-choice requirements"
         ],
         "limit": "Read the complete published ten-page PRL PDF from NIST; visually checked Equations 1-2, Figure 3 and Table I. The APS supplement was separately read. Table I and the abstract give 5.9e-9 while nearby text gives 5.8e-9; supplement Table S-I gives 5.85e-9. These printed values are preserved without repairing the source. Deposited time tags/software (10.5060/D2JW8BTT), upstream device papers and the statistical proof are not replayed; no raw acquisition, RNG or timing calibration is independently reproduced."
       }

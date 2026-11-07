@@ -164,14 +164,13 @@ test("one primary experiment supports observed and fitted outputs without a lect
   ]);
 });
 
-test("actual primary reading, catalogue parents and carrier thresholds remain bounded", async () => {
+test("actual primary reading, crystal and nucleon prerequisites and unread sources remain bounded", async () => {
   const data = await source();
   assert.equal(publication(data, lecture).year, 1961);
   assert.equal(publication(data, lecture).doi, null);
   assert.equal(publication(data, paper).doi, "10.1016/j.ica.2020.119760");
-  assert.match(publication(data, lecture).review.limit, /Pages596-601 were not reviewed or admitted/);
-  assert.match(publication(data, paper).review.limit, /v1=6September2019, v2=5May2020/);
-  assert.equal(claim(data, scope).citations.find((item) => item.sourceId === "legacy-2").role, "provenance");
+  assert.match(publication(data, lecture).review.limit, /Pages 596-601 were not reviewed or admitted/);
+  assert.match(publication(data, paper).review.limit, /v1=6 September 2019, v2=5 May 2020/);
   for (const suffix of ["recoilless-nuclear-transition", "mossbauer-observable-model-boundary",
     "dubiel2020-fe-gluconate-context", "dubiel-fe-gluconate-transmission",
     "dubiel-fe-gluconate-spectral-inference", "mossbauer-source-scope"]) assert.equal(role(data, suffix).instanceAdmission, "none");
@@ -179,11 +178,8 @@ test("actual primary reading, catalogue parents and carrier thresholds remain bo
     ["the Nobel scan cannot acquire the unread 1959 journal article DOI", (d) => { publication(d, lecture).doi = "10.1515/zna-1959-0303"; }],
     ["selected preprint reading cannot become full publisher-article review", (d) => { publication(d, paper).review.extent = "full-publisher-article"; }],
     ["unread final lecture pages cannot become an admitted proof locator", (d) => { claim(d, recoil).citations[0].locator = "Printed pages 596-601: fully reviewed mathematical theorem and every experiment"; }],
+    ["crystal structure and nucleons do not become universal operational prerequisites", (d) => removeLimit(d, scope, "Crystalline structures and protons/neutrons are not transferred")],
     ["generic nucleon existence does not supply a resonance lifetime or overlap", (d) => removeLimit(d, scope, "Generic proton/neutron existence")],
-    ["crystal and nucleon source parents do not become universal operational prerequisites", (d) => removeLimit(d, scope, "Original necessary parents 2.9")],
-    ["parent weights are not measured causal fractions", (d) => removeLimit(d, scope, "Original parent weights 0.6/0.4")],
-    ["one or two carrier minima do not follow from nuclear or spectral counts", (d) => removeLimit(d, scope, "N_min=N_crit values 2 and 1")],
-    ["the SOMA effect label is not an extra measured carrier", (d) => removeLimit(d, scope, "SOMA effect-level/crystal-constraint label")],
     ["the contents-only anthology does not admit the original experiment paper", (d) => removeLimit(d, context, "seven-page anthology contents PDF")]
   ]);
 });

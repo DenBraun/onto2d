@@ -1,17 +1,16 @@
+import { isReviewedBridgeRelation, isReviewedBridgeClaim, withBridgeReadings } from "./bridges.mjs";
+import { isCauseEvidenceClaim } from "./cause-evidence.mjs";
 import { publicationIdentity } from "./publication-identity.mjs";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { hashCanonical } from "@onto2d/kernel";
-import { NEURAL_SYSTEMS_RECORDS, NEURAL_SYSTEMS_CARD_SCOPES } from "./level-six.mjs";
+import { NEURAL_SYSTEMS_RECORDS, NEURAL_SYSTEMS_SCOPES } from "./level-six.mjs";
 import { BIOCHEMISTRY_CLAIM_IDS } from "./level-three.mjs";
 import { ORGANISMAL_CLAIM_IDS } from "./level-five.mjs";
 
-const originals = JSON.parse(readFileSync(new URL("../../../references/level-6.json", import.meta.url), "utf8"));
 const root = fileURLToPath(new URL("../../../", import.meta.url));
 const published = new Set(["publication-supported", "literature-synthesis"]);
-const dispositions = new Set(["supported", "qualified", "excluded", "unresolved"]);
 const sorted = (values) => [...values].sort();
 const contexts = (claim) => claim.contextIds ?? [];
 // Current admission contracts of the reused comparisons, bound to their owning ledger.
@@ -27,7 +26,7 @@ const inheritedComparisonContracts = new Map([
   ["neural:neural-resting-model-identity", "sha256:d1efe4f1af17126e853fb0c57568cb73a130ddde21b22d9dae33ca99995b4e57"],
   ["neural:neural-conscious-predictions", "sha256:7f68902be32c6c065cbec62b0b9100b0e5457350db8df98fbd80e197b12959ab"],
   ["neural:neural-sleep-endpoints", "sha256:be9410f036cb099bd22fac493f098be3ff3ec93cb9fa9220fc3fbf726e3d7e96"],
-  ["neural:neural-ensemble-units", "sha256:b11fe17907cfe211e864962810ec5d51dd7c2bf447dac9f5a50e6f5014ecd824"],
+  ["neural:neural-ensemble-units", "sha256:3fb60dee3118ee785ab7d6cd6522889a50b84a8079797b24a9486bce46f7065b"],
   ["neural:neural-connectome-construction", "sha256:401d067e9d62be1936636e0640af3aa8125fdcdcfc4831eb1e6424976308b0ed"],
   ["neural:neural-information-mapping", "sha256:ab18b02356edfbad426ea082360790c1a005f21fb07c9ec13dcdbe51a436876c"],
   ["neural:glial-information-exclusion", "sha256:5abc03767ef74f309fbf88b271ded4e52eac2776cd4dbb39d0f6acb20c0c51f4"],
@@ -65,7 +64,7 @@ const inheritedComparisonContracts = new Map([
   ["neural:neural-macaque-rate-identification", "sha256:1422e4ba5dd71bbfd393a231110b9604a0d7d01a5d99364f2524615847de85be"],
   ["neural:neural-macaque-common-progenitor", "sha256:1d1d674523eae90e2a223ceeb671930f899ab46aa0851a3ded9a85b1e1bc198e"],
   ["neural:neural-macaque-migration", "sha256:9f23fa5cd410911d8d554d1228a2769a8ed107fb25ff4e60fb0950bc1b3aec6c"],
-  ["neural:neural-macaque-replacement", "sha256:a81884306708147ea829d99af31ae55f6f2013883cdd8de80256c3157aee74c4"],
+  ["neural:neural-macaque-replacement", "sha256:1b6b22579aaa5bd331e12d9de865b2d2cb75dce13295308388de1928a0e5bff9"],
   ["neural:neural-primate-aged-differentiation", "sha256:167469712feff65da22e3229b3260e171b939dd1469b50d06963160adc541088"],
   ["neural:neural-primate-labeling-agreement", "sha256:cf0a47cb06fde3e774f398c620fff86def895da037ca42318f3e0d5f200604e3"],
   ["neural:neural-primate-hormonal-aging", "sha256:eac9b37d946200823f557ad9c2c83b1cd3f285acdcc2669b0397f1f1d43bfdf3"],
@@ -125,17 +124,15 @@ export const NEURAL_SYSTEMS_OBLIGATIONS = [
   "Reproduce selected raw data and analysis pipelines before admitting numerical replay, universal minima or causal weights."
 ];
 
-/** Complete card decisions remain inspectable without duplicating existing studies. */
-export function neuralSystemsCards(graph) {
+/** Topic scopes remain inspectable without duplicating existing studies. */
+export function neuralSystemsScopes(graph) {
   const claims = new Map(graph.claims.map((claim) => [claim.id, claim]));
-  return NEURAL_SYSTEMS_CARD_SCOPES.map((card) => {
-    const ids = new Set([...card.claimIds, ...card.assertions.flatMap((entry) => entry.claimIds),
-      ...card.parentDispositions.flatMap((entry) => entry.claimIds)]);
-    const sourceIds = sorted(new Set([...ids].flatMap((id) => {
-      assert.ok(claims.has(id), `Unknown Level-6 card claim ${card.code}: ${id}`);
+  return NEURAL_SYSTEMS_SCOPES.map((scope) => {
+    const sourceIds = sorted(new Set(scope.claimIds.flatMap((id) => {
+      assert.ok(claims.has(id), `Unknown Level-6 scope claim ${scope.id}: ${id}`);
       return claims.get(id).citations.map((citation) => citation.sourceId);
     })));
-    return { ...card, sourceIds };
+    return { ...scope, sourceIds };
   });
 }
 
@@ -168,24 +165,20 @@ export function validateNeuralSystemsReview(data, context) {
     const idKey = kind === "readiness" ? "nodeId" : "id";
     admitted[kind] = new Set();
     for (const record of expected) {
-      assert.deepEqual(records[kind].get(record[idKey]), record,
+      assert.deepEqual(records[kind].get(record[idKey]), kind === "sources" ? withBridgeReadings(record) : record,
         `Neural-systems ${kind} changed ${record[idKey]}: preserve reviewed evidence and scope`);
       admitted[kind].add(record[idKey]);
     }
   }
   const ownedSources = new Set([...admitted.sources, "neural-systems-review"]);
-  const reviewedClaims = new Set(NEURAL_SYSTEMS_CARD_SCOPES.flatMap((card) => [
-    ...card.claimIds, ...card.assertions.flatMap((entry) => entry.claimIds),
-    ...card.parentDispositions.flatMap((entry) => entry.claimIds)
-  ]));
-  const reviewedEntities = new Set(NEURAL_SYSTEMS_CARD_SCOPES.flatMap((card) => card.nodeIds));
+  const reviewedClaims = new Set(NEURAL_SYSTEMS_SCOPES.flatMap((scope) => scope.claimIds));
+  const reviewedEntities = new Set(NEURAL_SYSTEMS_SCOPES.flatMap((scope) => scope.nodeIds));
   const reusedSources = new Set([...reviewedClaims].flatMap((id) => context.claims.get(id)?.citations ?? [])
     .map((citation) => citation.sourceId).filter((id) => context.sources.get(id)?.kind === "research-publication"));
   const knownClaims = new Set([...reviewedClaims, ...admitted.claims, ...BIOCHEMISTRY_CLAIM_IDS, ...ORGANISMAL_CLAIM_IDS]);
   const reviewedStudies = new Set([...reviewedClaims].flatMap((id) => contexts(context.claims.get(id) ?? {})));
   const publicationSources = [...new Set([...admitted.sources, ...reusedSources])].map((id) => context.sources.get(id));
   const ownedFiles = new Map([
-    ["references/level-6.json", { id: "legacy-6", kind: "legacy-catalogue" }],
     ["references/canonical/neural-systems-review.json", { id: "neural-systems-review", kind: "internal-review" }]
   ]);
   for (const [file, owner] of ownedFiles) {
@@ -227,37 +220,25 @@ export function validateNeuralSystemsReview(data, context) {
         `Unreviewed neural-systems comparison ${comparison.id}`);
     }
   }
-  for (const claim of graph.claims) if (claim.citations.some((citation) => reusedSources.has(citation.sourceId))) {
+  for (const claim of graph.claims) if (!isReviewedBridgeClaim(claim) && !isCauseEvidenceClaim(claim) && claim.citations.some((citation) => reusedSources.has(citation.sourceId))) {
     assert.ok(knownClaims.has(claim.id), `Unreviewed neural-systems reused-source claim ${claim.id}`);
   }
   assert.deepEqual(sorted(graph.entities.filter((entity) => entity.id.startsWith("cog:") || usesClaims(entity)
     || entity.sourceCoordinates.some((coordinate) => ownedSources.has(coordinate.sourceId))).map((entity) => entity.id)),
   sorted(admitted.entities), "Unreviewed neural-systems node");
-  assert.deepEqual(sorted(graph.claims.filter((claim) => /^[^-]+-cog-/.test(claim.id) || usesEvidence(claim)).map((claim) => claim.id)),
+  assert.deepEqual(sorted(graph.claims.filter((claim) => !isReviewedBridgeClaim(claim) && !isCauseEvidenceClaim(claim) && (/^[^-]+-cog-/.test(claim.id) || usesEvidence(claim))).map((claim) => claim.id)),
     sorted(admitted.claims), "Unreviewed neural-systems claim");
   assert.deepEqual(sorted(neuralSystems.studies.map((study) => study.id)), sorted(admitted.studies), "Unreviewed neural-systems acquisition inventory");
   assert.deepEqual(sorted(neuralSystems.comparisons.map((comparison) => comparison.id)), sorted(admitted.comparisons), "Unreviewed neural-systems comparison inventory");
-  assert.deepEqual(neuralSystems.cards, neuralSystemsCards(graph), "Level-6 scope decisions differ from reviewed contracts");
-  assert.equal(NEURAL_SYSTEMS_CARD_SCOPES.length, originals.length, "Incomplete Level-6 card coverage");
-  assert.deepEqual(NEURAL_SYSTEMS_CARD_SCOPES.map((card) => card.sourceIndex), originals.map((card) => card.Id));
-  for (const card of NEURAL_SYSTEMS_CARD_SCOPES) {
-    const original = originals[card.sourceIndex];
-    assert.equal(card.code, `6.${original.Id}`);
-    assert.equal(card.originalName, original.Name);
-    assert.ok(card.scope.length && card.nodeIds.length && card.claimIds.length && card.assertions.length && card.excludedDefaults.length);
-    assert.equal(new Set(card.nodeIds).size, card.nodeIds.length);
-    assert.equal(new Set(card.claimIds).size, card.claimIds.length);
-    assert.ok(card.nodeIds.some((id) => context.entities.get(id)?.sourceCoordinates.some((coordinate) =>
-      coordinate.sourceId === "legacy-6" && coordinate.locator === `/${original.Id}`)), `Level-6 card lost its source coordinate ${card.code}`);
-    for (const id of card.nodeIds) assert.ok(context.entities.has(id), `Unknown Level-6 scope node ${card.code}: ${id}`);
-    for (const id of card.claimIds) assert.ok(context.claims.has(id), `Unknown Level-6 scope claim ${card.code}: ${id}`);
-    assert.deepEqual(card.parentDispositions.map((parent) => parent.parentCode), original.Parents.map((parent) => parent.ParentCode),
-      `Level-6 parent inventory/order changed ${card.code}`);
-    for (const entry of [...card.assertions, ...card.parentDispositions]) {
-      assert.ok(dispositions.has(entry.disposition) && entry.reason.length && entry.claimIds.length,
-        `Level-6 disposition lacks reason or evidence ${card.code}`);
-      for (const id of entry.claimIds) assert.ok(context.claims.has(id), `Unknown Level-6 disposition claim ${card.code}: ${id}`);
-    }
+  assert.deepEqual(neuralSystems.scopes, neuralSystemsScopes(graph), "Level-6 topic scopes differ from reviewed contracts");
+  for (const scope of NEURAL_SYSTEMS_SCOPES) {
+    assert.ok(scope.scope.length && scope.nodeIds.length && scope.claimIds.length, `Empty Level-6 scope ${scope.id}`);
+    assert.equal(scope.nodeIds[0], scope.id, `Level-6 scope node changed ${scope.id}`);
+    assert.equal(context.entities.get(scope.id)?.name, `${scope.name}: reviewed scope`, `Level-6 scope name changed ${scope.id}`);
+    assert.equal(new Set(scope.nodeIds).size, scope.nodeIds.length);
+    assert.equal(new Set(scope.claimIds).size, scope.claimIds.length);
+    for (const id of scope.nodeIds) assert.ok(context.entities.has(id), `Unknown Level-6 scope node ${scope.id}: ${id}`);
+    for (const id of scope.claimIds) assert.ok(context.claims.has(id), `Unknown Level-6 scope claim ${scope.id}: ${id}`);
   }
   for (const study of NEURAL_SYSTEMS_RECORDS.studies) {
     const source = context.sources.get(study.sourceId);
@@ -290,6 +271,7 @@ export function validateNeuralSystemsReview(data, context) {
       `Neural-systems coordinate exceeds reading ${entity.id}`);
   }
   for (const relation of graph.relations) {
+    if (isReviewedBridgeRelation(relation)) continue;
     if (!relation.id.startsWith("neural-systems:") && !relation.source.startsWith("cog:") && !relation.target.startsWith("cog:")
       && !usesClaims(relation) && !usesEvidence(relation) && !(relation.carrier && usesEvidence(relation.carrier))) continue;
     assert.ok(admitted.relations.has(relation.id), `Unreviewed neural-systems relation or domain bridge ${relation.id}`);
@@ -308,8 +290,7 @@ export function validateNeuralSystemsReview(data, context) {
     for (const id of comparison.sourceIds) assert.equal(context.sources.get(id)?.kind, "research-publication");
     for (const id of comparison.claimIds) assert.ok(context.claims.has(id));
   }
-  const usesReviewedClaims = (record) => record.claimIds?.some((id) => reviewedClaims.has(id)
-    || context.claims.get(id)?.citations.some((citation) => citation.sourceId === "legacy-6"));
+  const usesReviewedClaims = (record) => record.claimIds?.some((id) => reviewedClaims.has(id));
   for (const rule of graph.rules) assert.ok(!usesClaims(rule) && !usesReviewedClaims(rule)
     && ![...rule.inputs.map((input) => input.entityId), ...rule.outputEntityIds].some((id) => id.startsWith("cog:")
       || admitted.entities.has(id) || reviewedEntities.has(id) || usesReviewedClaims(context.entities.get(id))),

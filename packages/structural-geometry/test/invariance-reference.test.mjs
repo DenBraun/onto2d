@@ -6,7 +6,7 @@ import { run, verifyReferenceSources } from "../../../cases/structural-geometry/
 import { readJson } from "../../../cases/structural-geometry/invariance/fixtures.mjs";
 
 test("all invariance goldens replay after independently measured census, negative and strict-profile controls", async () => {
-  const suite = await run(); assert.equal(suite.runs.length, 13); assert.equal(suite.census.probes, 828);
+  const suite = await run(); assert.equal(suite.runs.length, 12); assert.equal(suite.census.probes, 828);
 });
 test("reference verification rejects omitted and changed source or dependency bindings", async () => {
   const original = await readJson("reference.json");

@@ -155,19 +155,15 @@ test("the finite nuclear-channel case cannot acquire broad chemical, hierarchy o
   assert.match(publication(data).review.limit, /final publisher full text was not accessible/);
   assert.equal(publication(data).path, null);
   assert.equal(publication(data).sha256, null);
-  assert.ok(claim(data, synthesis).limitations.some((limit) => limit.includes("1.12, Particle Decays")));
+  assert.ok(claim(data, synthesis).limitations.some((limit) => limit.includes("Particle decay is a broad category")));
   await rejects([
-    ["parent weights and unit counts cannot become measured emergence thresholds", (changed) =>
-      dropLimit(changed, synthesis, "weights 0.35/0.65")],
-    ["the broad Particle Decays parent cannot determine this channel, preparation or population model", (changed) =>
-      dropLimit(changed, synthesis, "Original parent 1.12, Particle Decays")],
+    ["the broad particle-decay category cannot determine this channel, preparation or population model", (changed) =>
+      dropLimit(changed, synthesis, "Particle decay is a broad category")],
     ["the ion experiment cannot establish chemical or lattice effects", (changed) =>
       dropLimit(changed, synthesis, "solid-state/lattice effects")],
     ["source state assumptions cannot establish all ordinary decay responses", (changed) =>
       dropLimit(changed, synthesis, "all beta, alpha or gamma")],
-    ["SOMA classification cannot supply a developmental law", (changed) =>
-      dropLimit(changed, synthesis, "SOMA diagonal linkage")],
-    ["source placeholders cannot become a numerical replay or oscillation result", (changed) =>
+    ["the admission cannot claim a chemical intervention, literature survey, oscillation signal or numerical replay", (changed) =>
       dropLimit(changed, synthesis, "oscillation signal")]
   ]);
 });

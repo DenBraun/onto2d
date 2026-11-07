@@ -57,7 +57,7 @@
         ],
         "disposition": "requires-correction",
         "issue": "Different meanings of weight and confidence do not imply different numerical values; proposed coefficients are policy choices.",
-        "requiredResolution": "Define independent quantity contracts and calibration; admit no legacy numeric defaults."
+        "requiredResolution": "Define independent quantity contracts and calibration."
       },
       {
         "id": "unknown-not-impossible",
@@ -870,8 +870,7 @@
       "denotes": "A description of behavior or structure within the cited study boundaries; not an identified event occurrence.",
       "instanceAdmission": "none",
       "claimIds": [
-        "O-water",
-        "C-optical-measurement-context-material-transmission"
+        "O-water"
       ]
     },
     {
@@ -9815,7 +9814,7 @@
     {
       "nodeId": "phys:light-baryon-multiplets",
       "role": "definition",
-      "denotes": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N,Lambda,Sigma,Xi and J^P=3/2+ decuplet Delta,Sigma*,Xi*,Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
+      "denotes": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N, Lambda, Sigma, Xi and J^P=3/2+ decuplet Delta, Sigma*, Xi*, Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-light-baryon-multiplets"
@@ -12326,7 +12325,7 @@
     {
       "nodeId": "phys:photon-polarization-scope",
       "role": "definition",
-      "denotes": "A normalized transverse free-photon polarization convention with explicit limits on anisotropic response, causal parents and vacuum interpretation.",
+      "denotes": "A normalized transverse free-photon polarization convention with explicit limits on anisotropic response, causal precursors and vacuum interpretation.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-photon-polarization-scope"
@@ -12344,7 +12343,7 @@
     {
       "nodeId": "phys:directional-excitation-boundary",
       "role": "definition",
-      "denotes": "A scoped boundary separating directional propagation, attenuation, localization and intrinsic decay while excluding unsupported source-card causes and the unresolved Level-0 transport bridge.",
+      "denotes": "A scoped boundary separating directional propagation, attenuation, localization and intrinsic decay while excluding the unresolved Level-0 transport bridge.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-directional-excitation-boundary"
@@ -12904,7 +12903,7 @@
     {
       "nodeId": "phys:molecular-polarization-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for the broad molecular polarization/dipole source card, preserving positive observations and their limits.",
+      "denotes": "Scoped replacement for broad molecular polarization/dipole claims, preserving positive observations and their limits.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-molecular-polarization-source-scope",
@@ -13076,7 +13075,7 @@
     {
       "nodeId": "phys:quantum-reaction-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /11, with one publication-specific experiment and a distinct computational analysis.",
+      "denotes": "Scoped replacement for claims about quantum effects in chemical reactions, with one publication-specific experiment and a distinct computational analysis.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-quantum-reaction-source-scope"
@@ -13283,7 +13282,7 @@
     {
       "nodeId": "phys:metallic-bonding-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /14 with separate computational binding and experimental spectral evidence.",
+      "denotes": "Scope for metallic bonding and electron collectivization with separate computational binding and experimental spectral evidence.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-metallic-bonding-source-scope"
@@ -13499,7 +13498,7 @@
     {
       "nodeId": "phys:electronic-decay-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /18 using one isotope-specific primary charge-state experiment.",
+      "denotes": "Scope for electronic-environment sensitivity of selected nuclear decay channels using one isotope-specific primary charge-state experiment.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-electronic-decay-source-scope"
@@ -13508,7 +13507,7 @@
     {
       "nodeId": "phys:casimir-observable-boundary",
       "role": "definition",
-      "denotes": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy or the original ontology of its parents.",
+      "denotes": "Specify geometry, separation, material response, temperature and the actual readout before comparing a Casimir model with an experiment. Ideal interaction energy per area, conjugate pressure, a curved-body force and a resonance shift sensitive to a force gradient are different quantities. Residual-force attribution additionally retains electrostatic calibration and subtraction. A measured conditional interaction does not uniquely identify an absolute vacuum energy.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-casimir-observable-boundary"
@@ -13553,7 +13552,7 @@
     {
       "nodeId": "phys:cs133-hyperfine-intervals",
       "role": "scoped-phenomenon",
-      "denotes": "Corrected Cs1337d3/2 hyperfine spectral intervals under the declared isotope, atomic state, frequency convention and preparation.",
+      "denotes": "Corrected Cs133 7d3/2 hyperfine spectral intervals under the declared isotope, atomic state, frequency convention and preparation.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-cs133-hyperfine-intervals"
@@ -13607,7 +13606,7 @@
     {
       "nodeId": "phys:patrick2021-rosi-context",
       "role": "experimental-context",
-      "denotes": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth180 degrees and incident polar angles70 to0 degrees; the actual viewing polar angle is45 degrees with azimuth90 or135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances99 and10 percent, not prescribed constant bidirectional factors.",
+      "denotes": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth 180 degrees and incident polar angles 70 to 0 degrees; the actual viewing polar angle is 45 degrees with azimuth 90 or 135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances 99 and 10 percent, not prescribed constant bidirectional factors.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-phys-patrick2021-rosi-context"
@@ -13616,7 +13615,7 @@
     {
       "nodeId": "phys:rosi-ptfe-angular-response",
       "role": "scoped-phenomenon",
-      "denotes": "At550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding30 percent. The source roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray in this scan; these are not universal instrument limits.",
+      "denotes": "At 550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at 90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding 30 percent. The source roughly estimates relative expanded uncertainties k=2 of 1 percent for white and 2 percent for gray in this scan; these are not universal instrument limits.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-rosi-ptfe-angular-response"
@@ -14699,7 +14698,7 @@
     {
       "nodeId": "bio:primitive-chemiosmotic-coupling-open",
       "role": "hypothesis",
-      "denotes": "Explicit unresolved interpretation of original card 3.47, not a claim that such coupling is impossible.",
+      "denotes": "Explicit unresolved interpretation of chemiosmotic energy transduction in proto-membranes, not a claim that such coupling is impossible.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-primitive-chemiosmotic-coupling-open"
@@ -14845,7 +14844,7 @@
     {
       "nodeId": "bio:prywes2016-activation-context",
       "role": "experimental-context",
-      "denotes": "The source prepares monophosphorylated RNA monomers/oligomers and converts their5-prime phosphates to2-methylimidazolides using supplied laboratory reagents, then purifies products chromatographically. Its worked AGC example is checked by negative-mode electrospray MS and UV-based concentration estimation. These prepared stocks are supplied to the extension assays; their continuing reactivation is not part of those reactions.",
+      "denotes": "The source prepares monophosphorylated RNA monomers/oligomers and converts their 5-prime phosphates to 2-methylimidazolides using supplied laboratory reagents, then purifies products chromatographically. Its worked AGC example is checked by negative-mode electrospray MS and UV-based concentration estimation. These prepared stocks are supplied to the extension assays; their continuing reactivation is not part of those reactions.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-bio-prywes2016-activation-context"
@@ -14863,7 +14862,7 @@
     {
       "nodeId": "bio:prywes2016-helper-context",
       "role": "experimental-context",
-      "denotes": "Use the source prepared RNA primer/template with activated G monomer and compare no downstream helper against AGC bearing5-prime OH, phosphate or2-methylimidazole activation. The selected Figure1 reaction is buffered with CHES pH9 and magnesium; gel fluorescence measures remaining primer over time and the source fits pseudo-first-order kobs. The differing template arrangements and monomer/oligomer reactions remain labelled rather than treated as one identical binding geometry.",
+      "denotes": "Use the source prepared RNA primer/template with activated G monomer and compare no downstream helper against AGC bearing 5-prime OH, phosphate or 2-methylimidazole activation. The selected Figure 1 reaction is buffered with CHES pH 9 and magnesium; gel fluorescence measures remaining primer over time and the source fits pseudo-first-order kobs. The differing template arrangements and monomer/oligomer reactions remain labelled rather than treated as one identical binding geometry.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-bio-prywes2016-helper-context"
@@ -14881,7 +14880,7 @@
     {
       "nodeId": "bio:prywes2016-discrimination-context",
       "role": "experimental-context",
-      "denotes": "The source combines the same RNA primer and activated AGC helper with four short templates differing at the next copying position, and separately assays each of the four2-methylimidazole activated canonical monomers. Denaturing-gel primer conversion gives apparent kobs for16template/monomer combinations. Retain the Figure2/3caption versus Methods monomer-concentration discrepancy and the unreported unique reaction temperature.",
+      "denotes": "The source combines the same RNA primer and activated AGC helper with four short templates differing at the next copying position, and separately assays each of the four 2-methylimidazole activated canonical monomers. Denaturing-gel primer conversion gives apparent kobs for 16 template/monomer combinations. Retain the Figure 2/3 caption versus Methods monomer-concentration discrepancy and the unreported unique reaction temperature.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-bio-prywes2016-discrimination-context"
@@ -14890,7 +14889,7 @@
     {
       "nodeId": "bio:template-dependent-rate-discrimination",
       "role": "scoped-phenomenon",
-      "denotes": "The source table reports matched U-on-A,A-on-U,G-on-C andC-on-G kobs central values1,6,26 and44per hour respectively; the G-on-U mismatch is0.3per hour,about5%of the matched A-on-U response. Other mismatches are slower but nonzero. The source averages its separate-assay discrimination fractions to report98%,with no claim here of universal or mixed-pool copying fidelity.",
+      "denotes": "The source table reports matched U-on-A, A-on-U, G-on-C and C-on-G kobs central values 1, 6, 26 and 44 per hour respectively; the G-on-U mismatch is 0.3 per hour, about 5% of the matched A-on-U response. Other mismatches are slower but nonzero. The source averages its separate-assay discrimination fractions to report 98%, with no claim here of universal or mixed-pool copying fidelity.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-template-dependent-rate-discrimination"
@@ -14899,7 +14898,7 @@
     {
       "nodeId": "bio:prywes2016-mixed-context",
       "role": "experimental-context",
-      "denotes": "The source assays a prepared short RNA template with a simultaneous mixture of activated A,G,C and2-thiouridine monomers,plus selected activated helper trimers. It compares absent versus added helper sets and follows denaturing-gel extension lengths over time. Preserve the differing Figure4caption and Methods preparation descriptions rather than pool them into a corrected protocol.",
+      "denotes": "The source assays a prepared short RNA template with a simultaneous mixture of activated A,G,C and 2-thiouridine monomers, plus selected activated helper trimers. It compares absent versus added helper sets and follows denaturing-gel extension lengths over time. Preserve the differing Figure 4 caption and Methods preparation descriptions rather than pool them into a corrected protocol.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-bio-prywes2016-mixed-context"
@@ -14908,7 +14907,7 @@
     {
       "nodeId": "bio:short-mixed-nonenzymatic-extension",
       "role": "scoped-phenomenon",
-      "denotes": "Figure4shows finite multi-step primer extension in the helper-containing mixed-monomer preparation,including products extended by four nucleotides,where the corresponding helper-absent lane shows little extension. This is source-specific qualitative chain growth,without a repaired exact yield/time value,all-sequence fidelity or autonomous replication claim.",
+      "denotes": "Figure 4 shows finite multi-step primer extension in the helper-containing mixed-monomer preparation, including products extended by four nucleotides, where the corresponding helper-absent lane shows little extension. This is source-specific qualitative chain growth, without a repaired exact yield/time value, all-sequence fidelity or autonomous replication claim.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-short-mixed-nonenzymatic-extension"
@@ -14917,7 +14916,7 @@
     {
       "nodeId": "bio:activated-nucleotide-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "The source reports prepared activated RNA species and helper-dependent extension;the existing Mansy context supplies a different externally provided activated amino-nucleotide in a vesicle assay. These retain concrete activation chemistry and reactive substrates without deriving a universal chemical energy,prebiotic supply route or self-renewing biochemical organization.",
+      "denotes": "The source reports prepared activated RNA species and helper-dependent extension; the existing Mansy context supplies a different externally provided activated amino-nucleotide in a vesicle assay. These retain concrete activation chemistry and reactive substrates without deriving a universal chemical energy, prebiotic supply route or self-renewing biochemical organization.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-activated-nucleotide-source-scope",
@@ -14927,7 +14926,7 @@
     {
       "nodeId": "bio:template-complementarity-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "The selected RNA experiment shows matched additions faster than mismatched additions under defined separate assays. It supports finite template-dependent kinetic discrimination;source-derived fidelity averages and error-threshold interpretations remain conditional rather than all-context pairing rules,stable-association energetics or demonstrated inherited information.",
+      "denotes": "The selected RNA experiment shows matched additions faster than mismatched additions under defined separate assays. It supports finite template-dependent kinetic discrimination; source-derived fidelity averages and error-threshold interpretations remain conditional rather than all-context pairing rules, stable-association energetics or demonstrated inherited information.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-template-complementarity-source-scope",
@@ -14937,7 +14936,7 @@
     {
       "nodeId": "bio:nonenzymatic-extension-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Selected prepared RNA experiments show helper-dependent single additions and finite mixed-monomer chain extension;the unchanged Mansy preparation shows a different externally fed modified-DNA template extension inside vesicles. Together these establish finite nonenzymatic template-guided growth while retaining supplied activation,condition discrepancies and the absence of complete renewable genome replication.",
+      "denotes": "Selected prepared RNA experiments show helper-dependent single additions and finite mixed-monomer chain extension; the unchanged Mansy preparation shows a different externally fed modified-DNA template extension inside vesicles. Together these establish finite nonenzymatic template-guided growth while retaining supplied activation, condition discrepancies and the absence of complete renewable genome replication.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-nonenzymatic-extension-source-scope",
@@ -15415,7 +15414,7 @@
     {
       "nodeId": "bio:phage-observation-boundaries",
       "role": "definition",
-      "denotes": "Declared cross-card readout and inference boundaries for the six reviewed viral catalogue cards.",
+      "denotes": "Declared readout and inference boundaries across the six reviewed viral scopes.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-bio-phage-observation-boundaries"
@@ -15476,61 +15475,61 @@
       ]
     },
     {
-      "nodeId": "bio:viral-card-9-scope",
+      "nodeId": "bio:viral-capsid-assembly-scope",
       "role": "definition",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.9.",
+      "denotes": "Definition of the admitted/restricted scope for viral-capsid self-organization.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-9-scope"
+        "D-bio-viral-capsid-assembly-scope"
       ]
     },
     {
-      "nodeId": "bio:viral-card-10-scope",
+      "nodeId": "bio:viral-maturation-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.10.",
+      "denotes": "Definition of the admitted/restricted scope for viral assembly and maturation.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-10-scope",
-        "C-bio-viral-card-10-unresolved"
+        "D-bio-viral-maturation-scope",
+        "C-bio-viral-maturation-unresolved"
       ]
     },
     {
-      "nodeId": "bio:viral-card-16-scope",
+      "nodeId": "bio:viral-infection-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.16.",
+      "denotes": "Definition of the admitted/restricted scope for mechanisms of viral infection.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-16-scope",
-        "C-bio-viral-card-16-unresolved"
+        "D-bio-viral-infection-scope",
+        "C-bio-viral-infection-unresolved"
       ]
     },
     {
-      "nodeId": "bio:viral-card-29-scope",
+      "nodeId": "bio:viral-genome-organization-scope",
       "role": "definition",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.29.",
+      "denotes": "Definition of the admitted/restricted scope for the structural organization of viral genomes.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-29-scope"
+        "D-bio-viral-genome-organization-scope"
       ]
     },
     {
-      "nodeId": "bio:viral-card-30-scope",
+      "nodeId": "bio:viral-entry-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.30.",
+      "denotes": "Definition of the admitted/restricted scope for viral entry into cells.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-30-scope",
-        "C-bio-viral-card-30-unresolved"
+        "D-bio-viral-entry-scope",
+        "C-bio-viral-entry-unresolved"
       ]
     },
     {
-      "nodeId": "bio:viral-card-35-scope",
+      "nodeId": "bio:viral-reprogramming-scope",
       "role": "hypothesis",
-      "denotes": "Definition of the admitted/restricted scope for original card 3.35.",
+      "denotes": "Definition of the admitted/restricted scope for viral reprogramming of the transcription–translation apparatus.",
       "instanceAdmission": "none",
       "claimIds": [
-        "D-bio-viral-card-35-scope",
-        "C-bio-viral-card-35-unresolved"
+        "D-bio-viral-reprogramming-scope",
+        "C-bio-viral-reprogramming-unresolved"
       ]
     },
     {
@@ -18364,7 +18363,7 @@
     {
       "nodeId": "cell:phototransduction-source-scope",
       "role": "definition",
-      "denotes": "The original card is reconstructed through distinct source-bound preparations; full end-to-end transfer remains unresolved.",
+      "denotes": "The phototransduction cascade is reconstructed through distinct source-bound preparations; full end-to-end transfer remains unresolved.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-cell-phototransduction-scope",
@@ -18431,7 +18430,7 @@
     {
       "nodeId": "org:pattern-signaling-readout",
       "role": "scoped-phenomenon",
-      "denotes": "SB431542 removes BRA/SOX17 expression in the reported comparison, while CHORDIN/NOGGIN and LEFTY1/CER1 depletion expand fate territories in different ways. These interventions support source-specific signaling control, not universal necessity of one named ancestral card.",
+      "denotes": "SB431542 removes BRA/SOX17 expression in the reported comparison, while CHORDIN/NOGGIN and LEFTY1/CER1 depletion expand fate territories in different ways. These interventions support source-specific signaling control, not universal necessity.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-org-pattern-signaling-readout",
@@ -21399,7 +21398,7 @@
     {
       "nodeId": "org:infl-orginfl-mannick-phase3-context",
       "role": "experimental-context",
-      "denotes": "1,024 adults aged at least65 in New Zealand/Australia were randomized to RTB101 10mg once daily or placebo for sixteen weeks, with four-week off-drug follow-up. Unlike phase2b, smokers/COPD were excluded and the primary endpoint was clinically symptomatic respiratory illness irrespective of laboratory confirmation.",
+      "denotes": "1,024 adults aged at least 65 in New Zealand/Australia were randomized to RTB101 10mg once daily or placebo for sixteen weeks, with four-week off-drug follow-up. Unlike phase 2b, smokers/COPD were excluded and the primary endpoint was clinically symptomatic respiratory illness irrespective of laboratory confirmation.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-org-infl-orginfl-mannick-phase3"
@@ -21408,7 +21407,7 @@
     {
       "nodeId": "org:infl-torc1-phase3-null-clinical-endpoint",
       "role": "scoped-phenomenon",
-      "denotes": "RTB101 did not reduce the phase3 primary clinically symptomatic respiratory-illness endpoint; the reported odds ratio was near unity with uncertainty spanning benefit and harm. Molecular-response or phase2b signals cannot substitute for this clinical outcome.",
+      "denotes": "RTB101 did not reduce the phase 3 primary clinically symptomatic respiratory-illness endpoint; the reported odds ratio was near unity with uncertainty spanning benefit and harm. Molecular-response or phase 2b signals cannot substitute for this clinical outcome.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-org-infl-torc1-phase3-null-clinical-endpoint",
@@ -21418,7 +21417,7 @@
     {
       "nodeId": "org:infl-orginfl-mannick-phase3-biomarker-context",
       "role": "experimental-context",
-      "denotes": "Baseline/week16 RNA from180 treated and180 placebo participants was analyzed for twenty IFN-induced antiviral genes. Sampling first included eligible laboratory-confirmed cases then randomly filled noncases with paired blood, subject to available budget.",
+      "denotes": "Baseline/week16 RNA from 180 treated and 180 placebo participants was analyzed for twenty IFN-induced antiviral genes. Sampling first included eligible laboratory-confirmed cases then randomly filled noncases with paired blood, subject to available budget.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-org-infl-orginfl-mannick-phase3-biomarker"
@@ -21427,7 +21426,7 @@
     {
       "nodeId": "org:infl-torc1-gene-clinical-dissociation",
       "role": "scoped-phenomenon",
-      "denotes": "The selected phase3 blood sample showed treatment-associated antiviral gene upregulation, while the independently defined primary trial endpoint was null. Endpoint types and sampling cannot be merged into one favorable immune-age score.",
+      "denotes": "The selected phase 3 blood sample showed treatment-associated antiviral gene upregulation, while the independently defined primary trial endpoint was null. Endpoint types and sampling cannot be merged into one favorable immune-age score.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-org-infl-torc1-gene-clinical-dissociation",
@@ -21437,7 +21436,7 @@
     {
       "nodeId": "org:infl-immune-architecture-scope",
       "role": "definition",
-      "denotes": "Organism-scale defense is represented as a scoped organizational description of interacting tissue, barrier, recognition, effector and regulatory preparations. Mouse gut/community perturbations, local muscle recruitment/repair, macrophage killing and distinct clinical intervention outcomes establish different aspects of coordination. They do not reconstruct a minimal complete defense object, a unique bounded ontological unit, every adaptive/innate mechanism or a universal necessary-parent architecture. Surveillance, inflammatory amplitude, tissue compatibility and recovery must retain separate operational readouts.",
+      "denotes": "Organism-scale defense is represented as a scoped organizational description of interacting tissue, barrier, recognition, effector and regulatory preparations. Mouse gut/community perturbations, local muscle recruitment/repair, macrophage killing and distinct clinical intervention outcomes establish different aspects of coordination. They do not reconstruct a minimal complete defense object, a unique bounded ontological unit or every adaptive/innate mechanism. Surveillance, inflammatory amplitude, tissue compatibility and recovery must retain separate operational readouts.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-org-infl-immune-architecture-scope-scope"
@@ -21554,7 +21553,7 @@
     {
       "nodeId": "org:artal2001-wavefronts-context",
       "role": "experimental-context",
-      "denotes": "Measure anterior corneal topography and whole-eye Hartmann-Shack wavefronts in the six-subject comparison. Subjects are 24-38 years old; accommodation is paralyzed with 1 percent cyclopentholate, sensing uses 780 nm light and the comparison uses a 5.9 mm pupil. Methods names the pupil geometric center for registration, whereas Discussion describes corneal-pole referencing and argues that the centers are close; no unique registration is reconstructed here. Remove defocus for the reported RMS comparison.",
+      "denotes": "Measure anterior corneal topography and whole-eye Hartmann-Shack wavefronts in the six-subject comparison. Subjects are 24-38 years old; accommodation is paralyzed with 1 percent cyclopentolate, sensing uses 780 nm light and the comparison uses a 5.9 mm pupil. Methods names the pupil geometric center for registration, whereas Discussion describes corneal-pole referencing and argues that the centers are close; no unique registration is reconstructed here. Remove defocus for the reported RMS comparison.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-org-artal2001-wavefronts"
@@ -22267,7 +22266,7 @@
     {
       "nodeId": "cog:neural-ensemble-specialization-scope",
       "role": "definition",
-      "denotes": "Functional ensembles are reconstructed as operational calcium co-activation groups in a learned visual licking task. Selected stimulation can disrupt or improve task-associated ensemble recruitment and measured performance, while non-pattern-completion controls do not show the same improvement. Gray-screen behavioral comparisons condition on a small successful-recall subset. These results support task- and selection-specific participation; they do not establish fixed anatomical modules, universal division of labor, minimum functional units or the subjective percept caused by stimulation.",
+      "denotes": "Functional ensembles are reconstructed as operational calcium co-activation groups in a learned visual licking task. Nonselective stimulation can disrupt, and selected pattern-completion stimulation can improve, task-associated ensemble recruitment and measured performance, while non-pattern-completion controls do not show the same improvement. Gray-screen behavioral comparisons condition on a small successful-recall subset. These results support task- and selection-specific participation; they do not establish fixed anatomical modules, universal division of labor, minimum functional units or the subjective percept caused by stimulation.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-cog-neural-ensemble-specialization-scope-scope",
@@ -22560,7 +22559,7 @@
     {
       "nodeId": "cog:placebo-gh-suggestion-null",
       "role": "scoped-phenomenon",
-      "denotes": "Opposite verbal suggestions without sumatriptan preconditioning produce no significant reported gh concentration change in this sampling window. This is a scoped null with finite group size, not proof of exact equality or universal incapacity.",
+      "denotes": "Opposite verbal suggestions without sumatriptan preconditioning produce no significant reported GH concentration change in this sampling window. This is a scoped null with finite group size, not proof of exact equality or universal incapacity.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-cog-placebo-gh-suggestion-null",
@@ -22696,7 +22695,7 @@
     {
       "nodeId": "cog:immune-four-reexposures-response",
       "role": "scoped-phenomenon",
-      "denotes": "Previously published experiment-A observations, re-expressed as baseline-relative change here, show lower stimulated IL-2 output after conditioned evocation than in the source control. Reduced ex-vivo stimulated IL-2 release after the declared repeated-evocation protocol.",
+      "denotes": "Previously published experiment-A observations, re-expressed as baseline-relative change here, show lower stimulated IL-2 output after conditioned evocation than in the source control.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-cog-immune-four-reexposures-response",
@@ -22725,7 +22724,7 @@
     {
       "nodeId": "cog:immune-one-reexposure-response",
       "role": "scoped-phenomenon",
-      "denotes": "A single evocation produces no significant IL-2 suppression relative to its own control in the reported comparison. No significant conditioned suppression of stimulated IL-2 in this cohort.",
+      "denotes": "A single evocation produces no significant IL-2 suppression relative to its own control in the reported comparison.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-cog-immune-one-reexposure-response",
@@ -23175,7 +23174,7 @@
     {
       "nodeId": "soc:animal-social-interpretation",
       "role": "definition",
-      "denotes": "Association, aggression-defined rank, voluntarily conferred prestige, task specialization, recurring technique and explicit obligation denote different relations. Their shared placement in a social catalogue does not establish common mechanisms or a universal individual-to-collective ontological transition.",
+      "denotes": "Association, aggression-defined rank, voluntarily conferred prestige, task specialization, recurring technique and explicit obligation denote different relations. Their shared placement in a social category does not establish common mechanisms or a universal individual-to-collective ontological transition.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-soc-animal-social-interpretation"
@@ -24080,7 +24079,7 @@
     {
       "nodeId": "soc:social-neural-feedback-scope",
       "role": "definition",
-      "denotes": "The proposed societal-to-neural link is bounded here by acute ordered social-exclusion imaging and already admitted rat maternal-environment observations. Social context, reported distress, BOLD, chromatin profiles and long-term neural plasticity retain different populations, times and evidence types. No direct universal downward/diagonal causal law, chronic institutional control variable or minimum neural carrier is established.",
+      "denotes": "The proposed societal-to-neural link is bounded here by acute ordered social-exclusion imaging and an already admitted rat maternal-environment observation and mediation hypothesis. Social context, reported distress, BOLD, chromatin profiles and long-term neural plasticity retain different populations, times and evidence types. No direct universal downward/diagonal causal law, chronic institutional control variable or minimum neural carrier is established.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-soc-social-neural-feedback-scope-scope",

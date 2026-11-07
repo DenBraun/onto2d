@@ -57,7 +57,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "review": {
         "extent": "selected-primary-results-frap-methods-and-captions",
         "locators": [
-          "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+          "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
         ],
         "limit": "Original Europe PMC JATS read for Results Quantification of NPC permeability in vivo, A gradual and approximately cubic dependence on molecular mass, Passive transport rates decrease because of reduced translocation efficiency and Molecular shape has limited effect on passive diffusion, with Figures 2-3 captions; Methods FRAP assay of NPC permeability and Data integration for computing NPC permeability coefficients. The separately imported larger-cargo dataset, Brownian-dynamics simulation, FG-mutant experiments, supplementary figures and raw images were not newly reviewed or replayed. Only the directly acquired 27-67 kDa reporter series is admitted here; derivation, volume and pore-number assumptions remain attached. Metadata checked 2026-10-21 against the primary article and Crossref DOI record; title, authors, journal, volume and available issue/page or article-number fields agree. Limited exact-DOI/title searches for corrections, errata and retractions found no notice specific to this article. Crossref returned no update-to record; linked preprints or reviews are not corrections. This limited check does not establish absence of corrections or exhaustive literature coverage."
       }
@@ -107,8 +107,8 @@ export const CELL_STRUCTURE_RECORDS = {
       "review": {
         "extent": "main-results-discussion-experimental-methods-and-figures",
         "locators": [
-          "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
-          "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
+          "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
         ],
         "limit": "Published eight-page article obtained from a university course archive, identified against original DOI and PMC metadata. Main Results, Discussion, experimental Methods, model interpretation and Figures 1-6 captions were read; rendered Figures 4-5 were visually checked. Supplementary data, plasmid sequences, raw fluorescence images and mathematical/noise-model replay were not reviewed. Figure 5 caption gives 16 h for the off-cell-derived colony and 22 h for the on-cell-derived colony, whereas main prose describes the same period as 16 h; no exact relative division rate is inferred. The construction Methods label pBB240 as constitutive CMV although Results/Figure 1 distinguish constitutive pBB140 from autoregulated pBB240. Circuit labels follow Results/Figure 1 without independent sequence confirmation. Observed bimodality is separated from model-inferred dynamical bistability; inducer withdrawal is not an irreversible fate switch. Metadata checked 2026-10-21 against the primary article and Crossref DOI record; title, authors, journal, volume and available issue/page or article-number fields agree. Limited exact-DOI/title searches for corrections, errata and retractions found no notice specific to this article. Crossref returned no update-to record; linked preprints or reviews are not corrections. This limited check does not establish absence of corrections or exhaustive literature coverage."
       }
@@ -158,10 +158,10 @@ export const CELL_STRUCTURE_RECORDS = {
       "review": {
         "extent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
         "locators": [
-          "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
-          "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
-          "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
-          "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
+          "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
+          "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
+          "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
         ],
         "limit": "Original Europe PMC JATS read for Results Designing a regulatable fluorescent secretory cargo, Accelerating secretion with an ER export signal, Tracking the fluorescent secretory cargo after ER export, Visualizing the behavior during Golgi maturation, Probing the mechanism between cisternae, Visualizing departure from the Golgi, corresponding Figure 1-3 and 6-9 captions, Discussion, and Methods Yeast growth, Fluorescence microscopy and FRAP, Immunoblotting of cell lysate and secreted protein. ER-to-Golgi capture experiments, supplementary cargo checks, raw movies, sequence files, source images and simulation were not independently replayed. This is an engineered tetrameric fluorescent cargo in modified yeast; post-Golgi carriers and plasma-membrane fusion were not tracked by the source microscopy. Metadata checked 2026-10-21 against the primary article and Crossref DOI record; title, authors, journal, volume and available issue/page or article-number fields agree. Limited exact-DOI/title searches for corrections, errata and retractions found no notice specific to this article. Crossref returned no update-to record; linked preprints or reviews are not corrections. This limited check does not establish absence of corrections or exhaustive literature coverage."
       }
@@ -208,9 +208,9 @@ export const CELL_STRUCTURE_RECORDS = {
       "review": {
         "extent": "main-scientific-text-methods-and-figure-captions",
         "locators": [
-          "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
-          "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
-          "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+          "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
+          "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
+          "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
         ],
         "limit": "Complete original Europe PMC JATS main scientific text, Methods and Figure 1-6 captions were read. Supplemental descriptions were read, but supplementary images, raw videos and immunoblots were not independently acquired or replayed. Fluorescence overlap is bounded by optical resolution; different labels are measured in distinct cell preparations, not one simultaneous three-organelle acquisition. HDAC inhibitor experiments do not uniquely isolate tubulin acetylation from other HDAC6 substrates. No curvature value is newly admitted, because microscopic geometric estimates require original calibration rather than extracting potentially ambiguous XML units. Metadata checked 2026-10-21 against the primary article and Crossref DOI record; title, authors, journal, volume and available issue/page or article-number fields agree. Limited exact-DOI/title searches for corrections, errata and retractions found no notice specific to this article. Crossref returned no update-to record; linked preprints or reviews are not corrections. This limited check does not establish absence of corrections or exhaustive literature coverage."
       }
@@ -234,7 +234,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "review": {
         "extent": "primary-results-discussion-methods-and-caption-review",
         "locators": [
-          "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
+          "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
         ],
         "limit": "Original publisher HTML scientific Results, Discussion, Conclusions, Methods and Figure 1-5 captions were read; it was published 19 January and typeset 1 February 2022, which is not by itself an erratum. Supplemental tables/figures, PRIDE spectra PXD028527, transcriptome and protein-sequence searches were not independently replayed. N-terminome measurements use three independently cultured preparations, but all derive from one publication; older chromatophore proteomes/transcript models are dependencies. N-terminal cleavage and motif predictions do not directly image protein import, prove AP-1 binding or validate the proposed Golgi route. The actual cleavage peptidase and inner-membrane translocation apparatus remain unidentified. Metadata checked 2026-10-21 against the primary article and Crossref DOI record; title, authors, journal, volume and available issue/page or article-number fields agree. Limited exact-DOI/title searches for corrections, errata and retractions found no notice specific to this article. Crossref returned no update-to record; linked preprints or reviews are not corrections. This limited check does not establish absence of corrections or exhaustive literature coverage."
       }
@@ -283,9 +283,9 @@ export const CELL_STRUCTURE_RECORDS = {
       "review": {
         "extent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
         "locators": [
-          "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
-          "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread",
-          "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
+          "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
+          "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread",
+          "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
         ],
         "limit": "Primary author-hosted PDF reviewed only for the Kralj article on published pages 345-348; the preceding article fragment is excluded. Complete main text and Figure 1-4 captions were read; rendered Figures 2-4 were visually checked. Supporting Online Material, raw movies, strain/sensor calibrations and supplementary controls were not independently reviewed or replayed. Main-text strain JY29 for tethered-motor measurements is distinct from otherwise insufficiently specified PROPS imaging preparations. Illumination alters dynamics. pH co-measurement and motor slowdown support depolarization, whereas dye efflux is correlated and its unique transporter/channel mechanism remains unresolved. No universal resting potential or channel identity is admitted. Metadata checked 2026-10-21 against the primary article and Crossref DOI record; title, authors, journal, volume and available issue/page or article-number fields agree. Limited exact-DOI/title searches for corrections, errata and retractions found no notice specific to this article. Crossref returned no update-to record; linked preprints or reviews are not corrections. This limited check does not establish absence of corrections or exhaustive literature coverage."
       }
@@ -309,7 +309,7 @@ export const CELL_STRUCTURE_RECORDS = {
         }
       ],
       "openObligations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -332,7 +332,7 @@ export const CELL_STRUCTURE_RECORDS = {
         }
       ],
       "openObligations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -355,7 +355,7 @@ export const CELL_STRUCTURE_RECORDS = {
         }
       ],
       "openObligations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -378,7 +378,7 @@ export const CELL_STRUCTURE_RECORDS = {
         }
       ],
       "openObligations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -485,14 +485,14 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
         }
       ],
       "openObligations": [
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ]
     },
     {
@@ -508,14 +508,14 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
         }
       ],
       "openObligations": [
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ]
     },
     {
@@ -531,14 +531,14 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
         }
       ],
       "openObligations": [
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ]
     },
     {
@@ -667,7 +667,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
         }
       ],
       "openObligations": [
@@ -690,7 +690,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
         }
       ],
       "openObligations": [
@@ -713,7 +713,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
         }
       ],
       "openObligations": [
@@ -736,7 +736,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
         }
       ],
       "openObligations": [
@@ -759,7 +759,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
         }
       ],
       "openObligations": [
@@ -782,7 +782,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
+          "locator": "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
         }
       ],
       "openObligations": [
@@ -804,7 +804,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
+          "locator": "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
         }
       ],
       "openObligations": [
@@ -985,7 +985,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
         }
       ],
       "openObligations": [
@@ -1008,7 +1008,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
         }
       ],
       "openObligations": [
@@ -1031,7 +1031,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
         }
       ],
       "openObligations": [
@@ -1054,7 +1054,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
         }
       ],
       "openObligations": [
@@ -1077,7 +1077,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
         }
       ],
       "openObligations": [
@@ -1100,7 +1100,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
         }
       ],
       "openObligations": [
@@ -1123,7 +1123,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
         }
       ],
       "openObligations": [
@@ -1146,7 +1146,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
         }
       ],
       "openObligations": [
@@ -1169,7 +1169,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
         }
       ],
       "openObligations": [
@@ -1192,7 +1192,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
         }
       ],
       "openObligations": [
@@ -1215,7 +1215,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
         }
       ],
       "openObligations": [
@@ -1238,7 +1238,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
+          "locator": "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
         }
       ],
       "openObligations": [
@@ -1260,7 +1260,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
+          "locator": "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
         }
       ],
       "openObligations": [
@@ -1282,7 +1282,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
+          "locator": "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
         }
       ],
       "openObligations": [
@@ -1396,7 +1396,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
         }
       ],
       "openObligations": [
@@ -1418,7 +1418,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
         }
       ],
       "openObligations": [
@@ -1440,7 +1440,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
         }
       ],
       "openObligations": [
@@ -1462,7 +1462,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
         }
       ],
       "openObligations": [
@@ -1484,7 +1484,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
         }
       ],
       "openObligations": [
@@ -1506,7 +1506,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
         }
       ],
       "openObligations": [
@@ -1528,7 +1528,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
         }
       ],
       "openObligations": [
@@ -1551,7 +1551,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
         }
       ],
       "openObligations": [
@@ -1574,7 +1574,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
         }
       ],
       "openObligations": [
@@ -1597,7 +1597,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
         }
       ],
       "openObligations": [
@@ -1755,7 +1755,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
         }
       ],
       "openObligations": [
@@ -1778,7 +1778,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
         }
       ],
       "openObligations": [
@@ -1801,7 +1801,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
         }
       ],
       "openObligations": [
@@ -1824,7 +1824,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
         }
       ],
       "openObligations": [
@@ -1847,7 +1847,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
         }
       ],
       "openObligations": [
@@ -1870,7 +1870,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
         }
       ],
       "openObligations": [
@@ -1893,7 +1893,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
+          "locator": "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
         }
       ],
       "openObligations": [
@@ -1915,7 +1915,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
+          "locator": "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
         }
       ],
       "openObligations": [
@@ -1937,7 +1937,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
+          "locator": "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
         }
       ],
       "openObligations": [
@@ -1959,7 +1959,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
+          "locator": "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
         }
       ],
       "openObligations": [
@@ -1981,7 +1981,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
+          "locator": "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
         }
       ],
       "openObligations": [
@@ -2007,17 +2007,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/0"
+          "sourceId": "pelletier2021-minimal-cell-division",
+          "locator": "Author in-press PDF, printed main pages 2-4 and 7-8, Results Dynamic propagation and Discussion; Figures 1 and 3; STAR Methods e3-e4; appended Figure S1 caption"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"3.27\", 0.2], [\"3.44\", 0.1], [\"3.17\", 0.1], [\"3.13\", 0.15], [\"3.14\", 0.1], [\"3.24\", 0.1], [\"3.4\", 0.1], [\"3.22\", 0.07], [\"3.0\", 0.05], [\"3.28\", 0.03]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"3.27\", 1, 1, null], [\"3.44\", 1, 1, null], [\"3.17\", 1, 1, null], [\"3.13\", 1, 1, null], [\"3.14\", 1, 1, null], [\"3.24\", 1, 1, null], [\"3.4\", 1, 1, null], [\"3.22\", 1, 1, null], [\"3.0\", 1, 1, null], [\"3.28\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 0, TypeRole 1, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6, 7, 3], \"OptionalCover\": [10, 12], \"ShouldCover\": [4, 11, 5, 9]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Koonin 2011, The Logic of Chance\", \"G\\u00e1nti 2003, The Principles of Life\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The source does not identify a sufficient bottom-up recipe for life, universal bacterial minimum, complete physiological closure or a unique membrane-scission mechanism.",
         "Several gene-product roles remain unknown. Conditional loss/rescue of morphology must retain the exact genome background and expression context."
       ]
@@ -2043,17 +2039,21 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/1"
+          "sourceId": "timney2016-passive-nuclear-pore",
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+        },
+        {
+          "sourceId": "casler2019-golgi-cargo",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+        },
+        {
+          "sourceId": "friedman2010-er-microtubules",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.0\", 0.4], [\"3.27\", 0.2], [\"3.17\", 0.15], [\"3.4\", 0.15], [\"3.6\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.27\", 1, 2, null], [\"3.17\", 1, 2, null], [\"3.4\", 1, 1, null], [\"3.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 1, TypeRole 1, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6, 7], \"OptionalCover\": [9, 10, 12], \"ShouldCover\": [4, 11, 5]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"L\\u00f3pez-Garc\\u00eda and Moreira 2020, Cold Spring Harbor Perspectives in Biology\", \"Margulis 1970, Origin of Eukaryotic Cells\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Active nucleocytoplasmic import, all organelle maintenance pathways, information protection and the evolutionary order of compartment acquisition remain outside these reviewed preparations."
       ]
     },
@@ -2074,17 +2074,17 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/2"
+          "sourceId": "yaginuma2014-single-cell-atp",
+          "locator": "Scientific Reports 4,6522, Results In vitro characterization, Sensitivity to cell growth rate, In vivo quantitative capacity and Evaluation of precision; Figures 1-3; Methods Microscopic observation and Cell growth conditions"
+        },
+        {
+          "sourceId": "kralj2011-bacterial-voltage",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"3.1\", 0.2], [\"3.14\", 0.2], [\"3.24\", 0.2], [\"3.25\", 0.1], [\"3.28\", 0.1], [\"4.0\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"3.1\", 1, 10, null], [\"3.14\", 1, 2, null], [\"3.24\", 1, 2, null], [\"3.25\", 1, 1, null], [\"3.28\", 1, 1, null], [\"4.0\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 1, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [5, 4, 11], \"OptionalCover\": [9, 10, 12], \"ShouldCover\": [1, 6, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Nicholls and Ferguson 2013, Bioenergetics 4\", \"Lane 2015, The Vital Question\", \"Mitchell 1961, Chemiosmotic Coupling\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The cause and adaptive value of ATP heterogeneity remain unknown. No complete cellular free-energy, resource-allocation or flux balance has been measured in one admitted context."
       ]
     },
@@ -2104,17 +2104,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/8"
+          "sourceId": "becskei2001-positive-feedback",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"3.4\", 0.3], [\"3.5\", 0.2], [\"3.23\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.4\", 1, 1, null], [\"3.5\", 1, 2, null], [\"3.23\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [7, 4], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Ptashne 2004, A Genetic Switch\", \"Levine and Tjian 2003, Transcription regulation and animal diversity\", \"Jacob and Monod 1961, Genetic regulatory mechanisms in the synthesis of proteins\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Source timing and plasmid-label inconsistencies remain explicit. Natural chromatin/RNA regulation and a unique switching mechanism are not inferred from these engineered reporter distributions."
       ]
     },
@@ -2135,17 +2131,17 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/9"
+          "sourceId": "galli2017-dynamin-dynab",
+          "locator": "eLife 6,e25197, final Results transferrin-uptake and TfR-localization paragraphs; Figure 5A-C; Methods Transferrin and EGF internalization assay and TfR/EGFR immunofluorescence"
+        },
+        {
+          "sourceId": "casler2019-golgi-cargo",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"4.1\", 0.25], [\"4.3\", 0.25], [\"3.27\", 0.15], [\"4.6\", 0.05]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"4.1\", 1, 2, null], [\"4.3\", 1, 2, null], [\"3.27\", 1, 2, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Bonifacino and Glick 2004, The mechanisms of vesicle budding and fusion\", \"Palade 1975, Intracellular aspects of the process of protein secretion\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Unique endocytic molecular trigger, every cargo route and final exocytic targeting/fusion remain unestablished. The assays belong to distinct systems and are not merged into one observed cellular pathway."
       ]
     },
@@ -2163,17 +2159,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/10"
+          "sourceId": "zaboikin2017-dna-repair-assays",
+          "locator": "PLOS ONE 12(1),e0169931, PDF pages 3 and 5 Cells/Transfection and selection; pages 15-21 F8-S2 HRMA/TaqMan Results, Figures 4-6, Measurement of true HDR and Table 6"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"3.4\", 0.25], [\"4.8\", 0.25], [\"3.19\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.4\", 1, 1, null], [\"4.8\", 1, 1, null], [\"3.19\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29, 25] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [7, 4], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Lindahl and Barnes 2000, Repair of endogenous DNA damage\", \"Jackson and Bartek 2009, The DNA-damage response in human biology and disease\", \"Friedberg et al. 2006, DNA Repair and Mutagenesis\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The full endogenous lesion spectrum, repair accuracy, checkpoints, chromatin control, cell-death decisions and inheritance outcomes remain to be covered by additional primary preparations. Unknown coverage is not evidence that these established biological systems do not exist."
       ]
     },
@@ -2195,17 +2187,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/11"
+          "sourceId": "friedman2010-er-microtubules",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"4.1\", 0.25], [\"4.3\", 0.25], [\"3.20\", 0.1], [\"4.6\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"4.1\", 1, 2, null], [\"4.3\", 1, 2, null], [\"3.20\", 1, 1, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Vale 2003, The molecular motor toolbox for intracellular transport\", \"Pollard and Cooper 2009, Actin, a central player in cell shape and movement\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Motor/linker identity, all cargo routes, nanoscale contacts, completed delivery and inheritance of spatial organization remain unestablished by these source observations."
       ]
     },
@@ -2225,17 +2213,17 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/14"
+          "sourceId": "lhee2019-chromatophore-genomes",
+          "locator": "Scientific Reports 9,2560, Results Chromatophore genome structure, Table 1 and Genomic changes from cyanobacteria; Figures 1-3 captions; Methods sampling, sequencing/assembly/annotation and orthology"
+        },
+        {
+          "sourceId": "oberleitner2022-chromatophore-processing",
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.1\", 0.35], [\"4.2\", 0.35], [\"3.27\", 0.2], [\"4.13\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.1\", 1, 2, null], [\"4.2\", 2, 2, null], [\"3.27\", 2, 2, null], [\"4.13\", 2, 2, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 3, TypeRole 2, Science [3, 29] and ScientificStatus well-supported are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 5], \"OptionalCover\": [6, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Gray 2012, Mitochondrial evolution\", \"Lane and Martin 2010, The energetics of genome complexity\", \"Margulis 1970, Origin of Eukaryotic Cells\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The exact extinct donor, ancestral host state, organelle inheritance control, sufficient integration conditions and complete import apparatus are not established. Broad mitochondrial origins require distinct primary phylogenetic coverage."
       ]
     },
@@ -2259,17 +2247,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/15"
+          "sourceId": "casler2019-golgi-cargo",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.1\", 0.3], [\"4.9\", 0.3], [\"4.11\", 0.2], [\"3.20\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.1\", 1, 2, null], [\"4.9\", 1, 2, null], [\"4.11\", 1, 2, null], [\"3.20\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Palade 1975, Intracellular aspects of the process of protein secretion\", \"Bonifacino and Glick 2004, The mechanisms of vesicle budding and fusion\", \"Rothman 1994, Mechanisms of intracellular protein transport\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Post-Golgi carriers, terminal fusion, direct soluble-cargo capture, general quality-control benefit and transfer to all natural cargo proteins remain unresolved."
       ]
     },
@@ -2290,17 +2274,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/18"
+          "sourceId": "friedman2010-er-microtubules",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.11\", 0.45], [\"3.20\", 0.25], [\"3.0\", 0.3]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.11\", 1, 2, null], [\"3.20\", 1, 1, null], [\"3.0\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 3, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Li and Gundersen 2008, Beyond polymer polarity: how the cytoskeleton builds a polarized cell\", \"Ingber 2003, Mechanobiology and tensegrity\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Molecular tethers, force balance, gradient stabilization, division inheritance and signaling consequences remain unestablished by these microscopy/perturbation observations."
       ]
     },
@@ -2320,17 +2300,13 @@ export const CELL_STRUCTURE_RECORDS = {
       "level": 4,
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/21"
+          "sourceId": "kralj2011-bacterial-voltage",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
         }
       ],
       "openObligations": [
-        "Original numerical parent weights [[\"4.2\", 0.35], [\"4.3\", 0.25], [\"3.3\", 0.25], [\"4.6\", 0.15]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.2\", 1, 1, null], [\"4.3\", 1, 1, null], [\"3.3\", 1, 2, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 3, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [5, 4], \"OptionalCover\": [7, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Hodgkin and Huxley 1952, A quantitative description of membrane current\", \"Nicholls and Ferguson 2013, Bioenergetics 4\", \"Mitchell 1961, Chemiosmotic Coupling\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Unique channel/efflux identity, complete electrochemical budget, all secondary transport cycles and transfer from this bacterial preparation to neuronal or organelle membranes remain unresolved."
       ]
     }
@@ -2352,7 +2328,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -2377,7 +2353,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -2402,7 +2378,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -2427,7 +2403,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -2541,7 +2517,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2551,7 +2527,7 @@ export const CELL_STRUCTURE_RECORDS = {
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ],
       "contextIds": [
         "timney2016-passive-frap"
@@ -2566,7 +2542,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2576,7 +2552,7 @@ export const CELL_STRUCTURE_RECORDS = {
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ],
       "contextIds": [
         "timney2016-passive-frap"
@@ -2591,7 +2567,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2601,7 +2577,7 @@ export const CELL_STRUCTURE_RECORDS = {
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ],
       "contextIds": [
         "timney2016-passive-frap"
@@ -2739,7 +2715,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2764,7 +2740,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2789,7 +2765,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2814,7 +2790,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2839,7 +2815,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2864,7 +2840,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions",
+          "locator": "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -2888,7 +2864,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions",
+          "locator": "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3085,7 +3061,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3110,7 +3086,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3135,7 +3111,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3160,7 +3136,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3185,7 +3161,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3210,7 +3186,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3235,7 +3211,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3260,7 +3236,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3285,7 +3261,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3310,7 +3286,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3335,7 +3311,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
+          "locator": "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3360,7 +3336,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein",
+          "locator": "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3384,7 +3360,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein",
+          "locator": "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3408,7 +3384,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein",
+          "locator": "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3532,7 +3508,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3556,7 +3532,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3580,7 +3556,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3604,7 +3580,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3628,7 +3604,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3652,7 +3628,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
+          "locator": "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3676,7 +3652,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3701,7 +3677,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3726,7 +3702,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3751,7 +3727,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
+          "locator": "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3923,7 +3899,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3948,7 +3924,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3973,7 +3949,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -3998,7 +3974,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4023,7 +3999,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4048,7 +4024,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4073,7 +4049,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread",
+          "locator": "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4097,7 +4073,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread",
+          "locator": "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4121,7 +4097,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread",
+          "locator": "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread",
           "role": "method",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4145,7 +4121,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread",
+          "locator": "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4169,7 +4145,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "citations": [
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread",
+          "locator": "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread",
           "role": "supports",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
@@ -4192,12 +4168,6 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/0",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "pelletier2021-minimal-cell-division",
           "locator": "Author in-press PDF, printed main pages 2-4 and 7-8, Results Dynamic propagation and Discussion; Figures 1 and 3; STAR Methods e3-e4; appended Figure S1 caption",
           "role": "limits",
@@ -4206,12 +4176,8 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"3.27\", 0.2], [\"3.44\", 0.1], [\"3.17\", 0.1], [\"3.13\", 0.15], [\"3.14\", 0.1], [\"3.24\", 0.1], [\"3.4\", 0.1], [\"3.22\", 0.07], [\"3.0\", 0.05], [\"3.28\", 0.03]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"3.27\", 1, 1, null], [\"3.44\", 1, 1, null], [\"3.17\", 1, 1, null], [\"3.13\", 1, 1, null], [\"3.14\", 1, 1, null], [\"3.24\", 1, 1, null], [\"3.4\", 1, 1, null], [\"3.22\", 1, 1, null], [\"3.0\", 1, 1, null], [\"3.28\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 0, TypeRole 1, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6, 7, 3], \"OptionalCover\": [10, 12], \"ShouldCover\": [4, 11, 5, 9]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Koonin 2011, The Logic of Chance\", \"G\\u00e1nti 2003, The Principles of Life\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The source does not identify a sufficient bottom-up recipe for life, universal bacterial minimum, complete physiological closure or a unique membrane-scission mechanism.",
         "Several gene-product roles remain unknown. Conditional loss/rescue of morphology must retain the exact genome background and expression context."
       ]
@@ -4224,38 +4190,28 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/1",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "timney2016-passive-nuclear-pore",
-          "locator": "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
+          "locator": "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         },
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         },
         {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.0\", 0.4], [\"3.27\", 0.2], [\"3.17\", 0.15], [\"3.4\", 0.15], [\"3.6\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.27\", 1, 2, null], [\"3.17\", 1, 2, null], [\"3.4\", 1, 1, null], [\"3.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 1, TypeRole 1, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6, 7], \"OptionalCover\": [9, 10, 12], \"ShouldCover\": [4, 11, 5]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"L\\u00f3pez-Garc\\u00eda and Moreira 2020, Cold Spring Harbor Perspectives in Biology\", \"Margulis 1970, Origin of Eukaryotic Cells\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Active nucleocytoplasmic import, all organelle maintenance pathways, information protection and the evolutionary order of compartment acquisition remain outside these reviewed preparations."
       ]
     },
@@ -4267,12 +4223,6 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/2",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "yaginuma2014-single-cell-atp",
           "locator": "Scientific Reports 4,6522, Results In vitro characterization, Sensitivity to cell growth rate, In vivo quantitative capacity and Evaluation of precision; Figures 1-3; Methods Microscopic observation and Cell growth conditions",
           "role": "limits",
@@ -4280,19 +4230,15 @@ export const CELL_STRUCTURE_RECORDS = {
         },
         {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"3.1\", 0.2], [\"3.14\", 0.2], [\"3.24\", 0.2], [\"3.25\", 0.1], [\"3.28\", 0.1], [\"4.0\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"3.1\", 1, 10, null], [\"3.14\", 1, 2, null], [\"3.24\", 1, 2, null], [\"3.25\", 1, 1, null], [\"3.28\", 1, 1, null], [\"4.0\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 1, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [5, 4, 11], \"OptionalCover\": [9, 10, 12], \"ShouldCover\": [1, 6, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Nicholls and Ferguson 2013, Bioenergetics 4\", \"Lane 2015, The Vital Question\", \"Mitchell 1961, Chemiosmotic Coupling\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The cause and adaptive value of ATP heterogeneity remain unknown. No complete cellular free-energy, resource-allocation or flux balance has been measured in one admitted context."
       ]
     },
@@ -4304,26 +4250,16 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/8",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "becskei2001-positive-feedback",
-          "locator": "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
+          "locator": "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"3.4\", 0.3], [\"3.5\", 0.2], [\"3.23\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.4\", 1, 1, null], [\"3.5\", 1, 2, null], [\"3.23\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [7, 4], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Ptashne 2004, A Genetic Switch\", \"Levine and Tjian 2003, Transcription regulation and animal diversity\", \"Jacob and Monod 1961, Genetic regulatory mechanisms in the synthesis of proteins\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Source timing and plasmid-label inconsistencies remain explicit. Natural chromatin/RNA regulation and a unique switching mechanism are not inferred from these engineered reporter distributions."
       ]
     },
@@ -4335,12 +4271,6 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/9",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "galli2017-dynamin-dynab",
           "locator": "eLife 6,e25197, final Results transferrin-uptake and TfR-localization paragraphs; Figure 5A-C; Methods Transferrin and EGF internalization assay and TfR/EGFR immunofluorescence",
           "role": "limits",
@@ -4348,19 +4278,15 @@ export const CELL_STRUCTURE_RECORDS = {
         },
         {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"4.1\", 0.25], [\"4.3\", 0.25], [\"3.27\", 0.15], [\"4.6\", 0.05]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"4.1\", 1, 2, null], [\"4.3\", 1, 2, null], [\"3.27\", 1, 2, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Bonifacino and Glick 2004, The mechanisms of vesicle budding and fusion\", \"Palade 1975, Intracellular aspects of the process of protein secretion\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Unique endocytic molecular trigger, every cargo route and final exocytic targeting/fusion remain unestablished. The assays belong to distinct systems and are not merged into one observed cellular pathway."
       ]
     },
@@ -4372,12 +4298,6 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/10",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "zaboikin2017-dna-repair-assays",
           "locator": "PLOS ONE 12(1),e0169931, PDF pages 3 and 5 Cells/Transfection and selection; pages 15-21 F8-S2 HRMA/TaqMan Results, Figures 4-6, Measurement of true HDR and Table 6",
           "role": "limits",
@@ -4386,12 +4306,8 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"3.4\", 0.25], [\"4.8\", 0.25], [\"3.19\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.4\", 1, 1, null], [\"4.8\", 1, 1, null], [\"3.19\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29, 25] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [7, 4], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Lindahl and Barnes 2000, Repair of endogenous DNA damage\", \"Jackson and Bartek 2009, The DNA-damage response in human biology and disease\", \"Friedberg et al. 2006, DNA Repair and Mutagenesis\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The full endogenous lesion spectrum, repair accuracy, checkpoints, chromatin control, cell-death decisions and inheritance outcomes remain to be covered by additional primary preparations. Unknown coverage is not evidence that these established biological systems do not exist."
       ]
     },
@@ -4403,26 +4319,16 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/11",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.0\", 0.3], [\"4.1\", 0.25], [\"4.3\", 0.25], [\"3.20\", 0.1], [\"4.6\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"4.1\", 1, 2, null], [\"4.3\", 1, 2, null], [\"3.20\", 1, 1, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Vale 2003, The molecular motor toolbox for intracellular transport\", \"Pollard and Cooper 2009, Actin, a central player in cell shape and movement\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Motor/linker identity, all cargo routes, nanoscale contacts, completed delivery and inheritance of spatial organization remain unestablished by these source observations."
       ]
     },
@@ -4434,12 +4340,6 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/14",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "lhee2019-chromatophore-genomes",
           "locator": "Scientific Reports 9,2560, Results Chromatophore genome structure, Table 1 and Genomic changes from cyanobacteria; Figures 1-3 captions; Methods sampling, sequencing/assembly/annotation and orthology",
           "role": "limits",
@@ -4447,19 +4347,15 @@ export const CELL_STRUCTURE_RECORDS = {
         },
         {
           "sourceId": "oberleitner2022-chromatophore-processing",
-          "locator": "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
+          "locator": "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.1\", 0.35], [\"4.2\", 0.35], [\"3.27\", 0.2], [\"4.13\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.1\", 1, 2, null], [\"4.2\", 2, 2, null], [\"3.27\", 2, 2, null], [\"4.13\", 2, 2, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 3, TypeRole 2, Science [3, 29] and ScientificStatus well-supported are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 5], \"OptionalCover\": [6, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Gray 2012, Mitochondrial evolution\", \"Lane and Martin 2010, The energetics of genome complexity\", \"Margulis 1970, Origin of Eukaryotic Cells\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "The exact extinct donor, ancestral host state, organelle inheritance control, sufficient integration conditions and complete import apparatus are not established. Broad mitochondrial origins require distinct primary phylogenetic coverage."
       ]
     },
@@ -4471,26 +4367,16 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/15",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "casler2019-golgi-cargo",
-          "locator": "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
+          "locator": "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.1\", 0.3], [\"4.9\", 0.3], [\"4.11\", 0.2], [\"3.20\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.1\", 1, 2, null], [\"4.9\", 1, 2, null], [\"4.11\", 1, 2, null], [\"3.20\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Palade 1975, Intracellular aspects of the process of protein secretion\", \"Bonifacino and Glick 2004, The mechanisms of vesicle budding and fusion\", \"Rothman 1994, Mechanisms of intracellular protein transport\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Post-Golgi carriers, terminal fusion, direct soluble-cargo capture, general quality-control benefit and transfer to all natural cargo proteins remain unresolved."
       ]
     },
@@ -4502,26 +4388,16 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/18",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "friedman2010-er-microtubules",
-          "locator": "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
+          "locator": "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.11\", 0.45], [\"3.20\", 0.25], [\"3.0\", 0.3]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.11\", 1, 2, null], [\"3.20\", 1, 1, null], [\"3.0\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 3, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Li and Gundersen 2008, Beyond polymer polarity: how the cytoskeleton builds a polarized cell\", \"Ingber 2003, Mechanobiology and tensegrity\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Molecular tethers, force balance, gradient stabilization, division inheritance and signaling consequences remain unestablished by these microscopy/perturbation observations."
       ]
     },
@@ -4533,26 +4409,16 @@ export const CELL_STRUCTURE_RECORDS = {
       "status": "definition",
       "citations": [
         {
-          "sourceId": "legacy-4",
-          "locator": "/21",
-          "role": "provenance",
-          "note": "Original card wording, parents and defaults were inventoried in full. This provenance is not empirical confirmation."
-        },
-        {
           "sourceId": "kralj2011-bacterial-voltage",
-          "locator": "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
+          "locator": "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread",
           "role": "limits",
           "note": "Primary passage actually read; source-reported measurement or interpretation with the stated preparation and reading limit. No independent experimental reproduction or raw-data reanalysis is claimed."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original numerical parent weights [[\"4.2\", 0.35], [\"4.3\", 0.25], [\"3.3\", 0.25], [\"4.6\", 0.15]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-        "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.2\", 1, 1, null], [\"4.3\", 1, 1, null], [\"3.3\", 1, 2, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-        "Original Phase 2, TypeRole 3, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-        "Original Requirements {\"MustCover\": [5, 4], \"OptionalCover\": [7, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-        "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-        "Original Evidence entries [\"Hodgkin and Huxley 1952, A quantitative description of membrane current\", \"Nicholls and Ferguson 2013, Bioenergetics 4\", \"Mitchell 1961, Chemiosmotic Coupling\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence.",
+        "Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
+        "Only individually cited, preparation-bound evidence relations are admitted.",
         "Unique channel/efflux identity, complete electrochemical budget, all secondary transport cycles and transfer from this bacterial preparation to neuronal or organelle membranes remain unresolved."
       ]
     }
@@ -5425,7 +5291,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:prokaryotic-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-prokaryotic-organization-scope",
         "C-cell-minimal-cell-propagation"
@@ -5440,7 +5306,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:prokaryotic-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-prokaryotic-organization-scope",
         "C-cell-membrane-enclosure-without-reporter"
@@ -5455,7 +5321,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:prokaryotic-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-prokaryotic-organization-scope",
         "C-cell-minimal-cell-mechanism-gap"
@@ -5470,7 +5336,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:prokaryotic-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-prokaryotic-organization-scope",
         "C-cell-minimal-cell-gene-composition"
@@ -5485,7 +5351,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:prokaryotic-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-prokaryotic-organization-scope",
         "C-cell-minimal-cell-context-dependent-necessity"
@@ -5500,7 +5366,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:prokaryotic-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-prokaryotic-organization-scope",
         "C-cell-genetic-complement-condition"
@@ -5515,7 +5381,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-nuclear-pore-soft-barrier"
@@ -5530,7 +5396,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-nuclear-pore-measurement-model"
@@ -5545,7 +5411,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-er-signal-receptor-export"
@@ -5560,7 +5426,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-protein-glycosylation-readout"
@@ -5575,7 +5441,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-er-export-signal-condition"
@@ -5590,7 +5456,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-dynamic-compartment-identity"
@@ -5605,7 +5471,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-golgi-cargo-increase"
@@ -5620,7 +5486,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-organelle-specific-track-preference"
@@ -5635,7 +5501,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-er-organelle-contact-persistence"
@@ -5650,7 +5516,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:eukaryotic-compartmentalization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-eukaryotic-compartmentalization-scope",
         "C-cell-cytoskeleton-downward-mechanism-gap"
@@ -5665,7 +5531,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-metabolism",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-metabolism-scope",
         "C-cell-atp-reporter-calibration"
@@ -5680,7 +5546,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-metabolism",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-metabolism-scope",
         "C-cell-cellular-atp-heterogeneity"
@@ -5695,7 +5561,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-metabolism",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-metabolism-scope",
         "C-cell-atp-heterogeneity-mechanism"
@@ -5710,7 +5576,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-metabolism",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-metabolism-scope",
         "C-cell-bacterial-voltage-transients"
@@ -5725,7 +5591,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-metabolism",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-metabolism-scope",
         "C-cell-voltage-not-entire-gradient"
@@ -5740,7 +5606,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-metabolism",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-metabolism-scope",
         "C-cell-voltage-motility-coupling"
@@ -5755,7 +5621,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:gene-expression-regulation",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-gene-expression-regulation-scope",
         "C-cell-gene-expression-architecture-response"
@@ -5770,7 +5636,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:gene-expression-regulation",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-gene-expression-regulation-scope",
         "C-cell-gene-expression-finite-state-persistence"
@@ -5785,7 +5651,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:gene-expression-regulation",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-gene-expression-regulation-scope",
         "C-cell-gene-expression-bistability-boundary"
@@ -5800,7 +5666,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:gene-expression-regulation",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-gene-expression-regulation-scope",
         "C-cell-regulatory-architecture-condition"
@@ -5815,7 +5681,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:gene-expression-regulation",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-gene-expression-regulation-scope",
         "C-cell-gene-expression-lineage-switching"
@@ -5830,7 +5696,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:vesicular-exchange",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-vesicular-exchange-scope",
         "C-cell-transferrin-uptake-inhibition"
@@ -5845,7 +5711,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:vesicular-exchange",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-vesicular-exchange-scope",
         "C-cell-dynab-dynamin-transferrin-condition"
@@ -5860,7 +5726,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:vesicular-exchange",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-vesicular-exchange-scope",
         "C-cell-egf-cargo-selectivity"
@@ -5875,7 +5741,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:vesicular-exchange",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-vesicular-exchange-scope",
         "C-cell-pit-dynamics-not-uptake"
@@ -5890,7 +5756,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:vesicular-exchange",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-vesicular-exchange-scope",
         "C-cell-medium-secretion-boundary"
@@ -5905,7 +5771,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:vesicular-exchange",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-vesicular-exchange-scope",
         "C-cell-post-golgi-carrier-gap"
@@ -5920,7 +5786,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:genome-maintenance",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-genome-maintenance-scope",
         "C-cell-dna-repair-assay-dependence"
@@ -5935,7 +5801,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:genome-maintenance",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-genome-maintenance-scope",
         "C-cell-dna-repair-inferred-fractions"
@@ -5950,7 +5816,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:genome-maintenance",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-genome-maintenance-scope",
         "C-cell-genome-maintenance-coverage-gap"
@@ -5965,7 +5831,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-er-sliding-versus-tip-motion"
@@ -5980,7 +5846,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-er-sliding-treatment-response"
@@ -5995,7 +5861,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-er-geometry-not-unique-cause"
@@ -6010,7 +5876,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-hdac-treatment-condition"
@@ -6025,7 +5891,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-organelle-specific-track-preference"
@@ -6040,7 +5906,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-er-organelle-contact-persistence"
@@ -6055,7 +5921,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:intracellular-transport",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-intracellular-transport-scope",
         "C-cell-cytoskeleton-downward-mechanism-gap"
@@ -6070,7 +5936,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:endosymbiotic-integration",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-endosymbiotic-integration-scope",
         "C-cell-chromatophore-genomic-inventory"
@@ -6085,7 +5951,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:endosymbiotic-integration",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-endosymbiotic-integration-scope",
         "C-cell-chromatophore-metabolic-inference"
@@ -6100,7 +5966,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:endosymbiotic-integration",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-endosymbiotic-integration-scope",
         "C-cell-endosymbiotic-history-inference"
@@ -6115,7 +5981,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:endosymbiotic-integration",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-endosymbiotic-integration-scope",
         "C-cell-endosymbiotic-universal-route-gap"
@@ -6130,7 +5996,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:endosymbiotic-integration",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-endosymbiotic-integration-scope",
         "C-cell-chromatophore-nuclear-protein-processing"
@@ -6145,7 +6011,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:endosymbiotic-integration",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-endosymbiotic-integration-scope",
         "C-cell-chromatophore-import-route-hypothesis"
@@ -6160,7 +6026,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-er-signal-receptor-export"
@@ -6175,7 +6041,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-protein-glycosylation-readout"
@@ -6190,7 +6056,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-er-export-signal-condition"
@@ -6205,7 +6071,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-dynamic-compartment-identity"
@@ -6220,7 +6086,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-golgi-cargo-increase"
@@ -6235,7 +6101,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-golgi-ap1-recycling-response"
@@ -6250,7 +6116,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-golgi-recycling-mechanism"
@@ -6265,7 +6131,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-golgi-recycling-condition"
@@ -6280,7 +6146,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-medium-secretion-boundary"
@@ -6295,7 +6161,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:protein-sorting",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-protein-sorting-scope",
         "C-cell-post-golgi-carrier-gap"
@@ -6310,7 +6176,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cytoskeletal-spatial-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cytoskeletal-spatial-organization-scope",
         "C-cell-er-sliding-treatment-response"
@@ -6325,7 +6191,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cytoskeletal-spatial-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cytoskeletal-spatial-organization-scope",
         "C-cell-er-geometry-not-unique-cause"
@@ -6340,7 +6206,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cytoskeletal-spatial-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cytoskeletal-spatial-organization-scope",
         "C-cell-hdac-treatment-condition"
@@ -6355,7 +6221,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cytoskeletal-spatial-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cytoskeletal-spatial-organization-scope",
         "C-cell-organelle-specific-track-preference"
@@ -6370,7 +6236,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cytoskeletal-spatial-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cytoskeletal-spatial-organization-scope",
         "C-cell-er-organelle-contact-persistence"
@@ -6385,7 +6251,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cytoskeletal-spatial-organization",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cytoskeletal-spatial-organization-scope",
         "C-cell-cytoskeleton-downward-mechanism-gap"
@@ -6400,7 +6266,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-electrochemical-state",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-electrochemical-state-scope",
         "C-cell-bacterial-voltage-transients"
@@ -6415,7 +6281,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-electrochemical-state",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-electrochemical-state-scope",
         "C-cell-voltage-not-entire-gradient"
@@ -6430,7 +6296,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-electrochemical-state",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-electrochemical-state-scope",
         "C-cell-voltage-motility-coupling"
@@ -6445,7 +6311,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-electrochemical-state",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-electrochemical-state-scope",
         "C-cell-voltage-efflux-coincidence"
@@ -6460,7 +6326,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "target": "cell:cellular-electrochemical-state",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "This source-specific result or explicitly unresolved mechanism informs the card scope; the link does not assert a generative cellular parent or independent replication.",
+      "assertion": "This source-specific result or explicitly unresolved mechanism informs the scope; the link does not assert a generative cellular precursor or independent replication.",
       "claimIds": [
         "D-cell-cellular-electrochemical-state-scope",
         "C-cell-voltage-efflux-mechanism"
@@ -6485,7 +6351,7 @@ export const CELL_STRUCTURE_RECORDS = {
       "observable": "Time-lapse morphology; fluorescence localization; bulk cell/form area distributions.",
       "finding": "In the source microfluidic setting, JCVI-syn3.0 and RGD6 propagate as irregular, branching or pearled cellular forms, whereas JCVI-syn1.0 is predominantly small and round. Growth and shape change are not equated with complete daughter-cell scission. Selected RGD6 vesicles have membrane staining and exclude external fluorescent dextran yet lack detectable constitutive mCherry. Enclosure alone therefore does not establish possession of the source cytoplasmic reporter or a complete self-maintaining cell.",
       "limitations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -6541,11 +6407,11 @@ export const CELL_STRUCTURE_RECORDS = {
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ],
       "readExtent": "selected-primary-results-frap-methods-and-captions",
       "reviewedLocators": [
-        "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+        "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201601004",
@@ -6625,7 +6491,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "main-results-discussion-experimental-methods-and-figures",
       "reviewedLocators": [
-        "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+        "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1093/emboj/20.10.2528",
@@ -6651,7 +6517,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "main-results-discussion-experimental-methods-and-figures",
       "reviewedLocators": [
-        "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
+        "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1093/emboj/20.10.2528",
@@ -6758,7 +6624,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+        "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -6785,7 +6651,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
+        "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -6812,7 +6678,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
+        "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -6838,7 +6704,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
+        "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -6891,7 +6757,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "main-scientific-text-methods-and-figure-captions",
       "reviewedLocators": [
-        "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
+        "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.200911024",
@@ -6917,7 +6783,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "main-scientific-text-methods-and-figure-captions",
       "reviewedLocators": [
-        "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
+        "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.200911024",
@@ -6944,7 +6810,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "main-scientific-text-methods-and-figure-captions",
       "reviewedLocators": [
-        "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+        "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.200911024",
@@ -7024,7 +6890,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "primary-results-discussion-methods-and-caption-review",
       "reviewedLocators": [
-        "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
+        "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1093/plphys/kiac012",
@@ -7051,7 +6917,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
       "reviewedLocators": [
-        "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
+        "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1126/science.1204763",
@@ -7077,7 +6943,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
       "reviewedLocators": [
-        "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
+        "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1126/science.1204763",
@@ -7103,7 +6969,7 @@ export const CELL_STRUCTURE_RECORDS = {
       ],
       "readExtent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
       "reviewedLocators": [
-        "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
+        "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1126/science.1204763",
@@ -8046,1633 +7912,3 @@ export const CELL_STRUCTURE_RECORDS = {
   ]
 };
 
-export const CARD_SCOPES = [
-  {
-    "sourceIndex": 0,
-    "code": "4.0",
-    "originalName": "Prokaryotic Cell Organization",
-    "scope": "Reconstruct prokaryotic organization through existing genomically minimized mycoplasmas: separate membrane enclosure, population propagation, complete scission, reporter expression and genotype-dependent morphology. These supplied living-cell observations do not demonstrate origin, universal minimality or simultaneous closure of every cellular function.",
-    "nodeIds": [
-      "cell:prokaryotic-organization",
-      "cell:pelletier2021-propagation-context",
-      "cell:minimal-cell-propagation",
-      "cell:membrane-enclosure-without-reporter",
-      "cell:minimal-cell-mechanism-gap",
-      "cell:pelletier2021-morphology-rescue-context",
-      "cell:minimal-cell-gene-composition",
-      "cell:minimal-cell-context-dependent-necessity",
-      "cell:genetic-complement-condition"
-    ],
-    "claimIds": [
-      "D-cell-prokaryotic-organization-scope",
-      "M-cell-pelletier2021-propagation-context",
-      "C-cell-minimal-cell-propagation",
-      "C-cell-membrane-enclosure-without-reporter",
-      "C-cell-minimal-cell-mechanism-gap",
-      "M-cell-pelletier2021-morphology-rescue-context",
-      "C-cell-minimal-cell-gene-composition",
-      "C-cell-minimal-cell-context-dependent-necessity",
-      "C-cell-genetic-complement-condition"
-    ],
-    "assertions": [
-      {
-        "topic": "Bounded prokaryotic cellular organization",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-minimal-cell-propagation",
-          "C-cell-membrane-enclosure-without-reporter",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Existing bacterial cells show bounded cellular forms and source-specific propagation in a defined supplied environment; an enclosed vesicle can lack the reporter."
-      },
-      {
-        "topic": "Persistent structural identity through exchange, growth and division",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-minimal-cell-propagation",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "The source observes finite propagation/morphology; complete scission is explicitly distinct and persistent identity is not a separate conserved-structure metric."
-      },
-      {
-        "topic": "Integrated metabolism, energy transduction and physicochemical stabilization",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "This morphology study does not jointly measure all metabolic fluxes, ATP production, ionic balance and membrane renewal."
-      },
-      {
-        "topic": "Replication, transcription, translation, heredity and catalytic renewal",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-membrane-enclosure-without-reporter",
-          "C-cell-minimal-cell-propagation",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Nucleoids and reporter expression provide limited evidence of living-cell organization; no complete inheritance-fidelity or catalytic-renewal budget is established."
-      },
-      {
-        "topic": "Autocatalytic production and regulated resources as a complete architecture",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "A genome-bearing supplied organism is not an experimental reconstruction of all autocatalytic/network closure requirements."
-      },
-      {
-        "topic": "Minimal autonomous cellular object and repeatable division",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-minimal-cell-context-dependent-necessity",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Genome-context-dependent morphology requirements cannot establish a universal minimal autonomous object or prove that every propagated form is a dividing cell."
-      },
-      {
-        "topic": "Joint organization alters performance relative to individual components",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-minimal-cell-gene-composition",
-          "C-cell-minimal-cell-context-dependent-necessity",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "The source gene-combination contrast supports conditional composition effects and a direct limit to universal necessity."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "3.27",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-membrane-enclosure-without-reporter",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Membrane-bounded forms are observed, but lipid biosynthesis and all membrane-renewal pathways are not assayed as a necessary precursor."
-      },
-      {
-        "parentCode": "3.44",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-membrane-enclosure-without-reporter",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Dextran exclusion is a finite permeability observation, not proof that a Level-3 fatty-acid vesicle preparation constructs or maintains these bacterial cells."
-      },
-      {
-        "parentCode": "3.17",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-minimal-cell-propagation",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "A cellular boundary is present; source-specific coacervate/vesicle metabolic compartment preparations are not a measured parent of this strain."
-      },
-      {
-        "parentCode": "3.13",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Collective autocatalytic closure is not quantified or independently manipulated in this acquisition."
-      },
-      {
-        "parentCode": "3.14",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "No complete cycle flux or necessity of a particular previously reviewed metabolic cycle is tested."
-      },
-      {
-        "parentCode": "3.24",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "The study does not measure ATP-generation machinery as a selectively necessary causal input."
-      },
-      {
-        "parentCode": "3.4",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-minimal-cell-propagation",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Nucleoids and engineered genotypes occur in existing cells, without a complete sequence-fidelity or transcriptional-dependency experiment."
-      },
-      {
-        "parentCode": "3.22",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-membrane-enclosure-without-reporter",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Reporter expression bears on biosynthetic function, but translation necessity and all molecule-by-molecule contributions are not tested."
-      },
-      {
-        "parentCode": "3.0",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "No isolated protein-folding experiment establishes a necessary formation pathway for this complete organism."
-      },
-      {
-        "parentCode": "3.28",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-minimal-cell-mechanism-gap",
-          "D-cell-prokaryotic-organization-scope"
-        ],
-        "reason": "Intracellular pH/ion regulation and their causal contributions are not jointly measured in the morphology experiment."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"3.27\", 0.2], [\"3.44\", 0.1], [\"3.17\", 0.1], [\"3.13\", 0.15], [\"3.14\", 0.1], [\"3.24\", 0.1], [\"3.4\", 0.1], [\"3.22\", 0.07], [\"3.0\", 0.05], [\"3.28\", 0.03]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"3.27\", 1, 1, null], [\"3.44\", 1, 1, null], [\"3.17\", 1, 1, null], [\"3.13\", 1, 1, null], [\"3.14\", 1, 1, null], [\"3.24\", 1, 1, null], [\"3.4\", 1, 1, null], [\"3.22\", 1, 1, null], [\"3.0\", 1, 1, null], [\"3.28\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 0, TypeRole 1, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 6, 7, 3], \"OptionalCover\": [10, 12], \"ShouldCover\": [4, 11, 5, 9]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Koonin 2011, The Logic of Chance\", \"G\\u00e1nti 2003, The Principles of Life\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "The source does not identify a sufficient bottom-up recipe for life, universal bacterial minimum, complete physiological closure or a unique membrane-scission mechanism.",
-      "Several gene-product roles remain unknown. Conditional loss/rescue of morphology must retain the exact genome background and expression context."
-    ]
-  },
-  {
-    "sourceIndex": 1,
-    "code": "4.1",
-    "originalName": "Eukaryotic Cell Compartmentalization",
-    "scope": "Reconstruct compartmentalization as preparation-specific selective exchange and dynamic organelle identity in living yeast, with complementary cultured-cell spatial observations. Separate nuclear-pore transport, ER export, Golgi maturation and organelle contact from origin, universal organelle stability and complete cellular coordination.",
-    "nodeIds": [
-      "cell:eukaryotic-compartmentalization",
-      "cell:timney2016-passive-frap-context",
-      "cell:nuclear-pore-soft-barrier",
-      "cell:nuclear-pore-measurement-model",
-      "cell:casler2019-er-export-context",
-      "cell:er-signal-receptor-export",
-      "cell:protein-glycosylation-readout",
-      "cell:er-export-signal-condition",
-      "cell:casler2019-golgi-maturation-context",
-      "cell:dynamic-compartment-identity",
-      "cell:golgi-cargo-increase",
-      "cell:friedman2010-organelle-localization-context",
-      "cell:organelle-specific-track-preference",
-      "cell:er-organelle-contact-persistence",
-      "cell:cytoskeleton-downward-mechanism-gap"
-    ],
-    "claimIds": [
-      "D-cell-eukaryotic-compartmentalization-scope",
-      "M-cell-timney2016-passive-frap-context",
-      "C-cell-nuclear-pore-soft-barrier",
-      "C-cell-nuclear-pore-measurement-model",
-      "M-cell-casler2019-er-export-context",
-      "C-cell-er-signal-receptor-export",
-      "C-cell-protein-glycosylation-readout",
-      "C-cell-er-export-signal-condition",
-      "M-cell-casler2019-golgi-maturation-context",
-      "C-cell-dynamic-compartment-identity",
-      "C-cell-golgi-cargo-increase",
-      "M-cell-friedman2010-organelle-localization-context",
-      "C-cell-organelle-specific-track-preference",
-      "C-cell-er-organelle-contact-persistence",
-      "C-cell-cytoskeleton-downward-mechanism-gap"
-    ],
-    "assertions": [
-      {
-        "topic": "Membrane-bound compartments form separated domains",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-nuclear-pore-soft-barrier",
-          "C-cell-er-signal-receptor-export",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "The reviewed reporters show bounded nuclear/ER exchange under explicit transport/measurement assumptions."
-      },
-      {
-        "topic": "Persistent internal architecture and enduring organelle identity",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dynamic-compartment-identity",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "Golgi identity persists as an organized process while resident markers turn over; stable organization does not mean immutable compartment composition."
-      },
-      {
-        "topic": "Localization, diffusion constraints and regulated exchange",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-nuclear-pore-measurement-model",
-          "C-cell-er-signal-receptor-export",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "Source preparations distinguish passive pore permeation from signal/receptor-linked ER export."
-      },
-      {
-        "topic": "Information protection and parallel incompatible biochemical regimes",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-nuclear-pore-soft-barrier",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "The passive reporter study does not test protection of information, incompatible reaction isolation or a full parallel metabolic advantage."
-      },
-      {
-        "topic": "Nucleus, endomembranes, mitochondria and expanded complexity",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-organelle-contact-persistence",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "These are distinct extant cellular preparations; the results do not establish a universal complexity ranking or coordinated matter/energy/information flux across every organelle."
-      },
-      {
-        "topic": "Object-level formation from a prokaryotic-cell parent",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-dynamic-compartment-identity",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "The experiments begin with living eukaryotic cells; an extant prokaryotic cell is not a necessary operational input or a demonstrated construction stage."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-nuclear-pore-soft-barrier",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "Nuclear transport and Golgi maturation are measured in existing eukaryotes, not generated by adding the prokaryotic-card preparation."
-      },
-      {
-        "parentCode": "3.27",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-signal-receptor-export",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "Membranes are present, but biosynthesis and de novo compartment formation are not the experimentally isolated input."
-      },
-      {
-        "parentCode": "3.17",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-nuclear-pore-soft-barrier",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "Compartmentalization is a shared concept; distinct Level-3 metabolic compartments are not operational prerequisites of the observed nucleus or Golgi."
-      },
-      {
-        "parentCode": "3.4",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dynamic-compartment-identity",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "Reporter genes enable observation but do not separately establish nucleic-acid processing as a quantified generative parent for each compartment."
-      },
-      {
-        "parentCode": "3.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-nuclear-pore-measurement-model",
-          "D-cell-eukaryotic-compartmentalization-scope"
-        ],
-        "reason": "A pore is a multiprotein apparatus, but a different enzyme-complex preparation or global complex count is not a tested necessary cause."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.0\", 0.4], [\"3.27\", 0.2], [\"3.17\", 0.15], [\"3.4\", 0.15], [\"3.6\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.27\", 1, 2, null], [\"3.17\", 1, 2, null], [\"3.4\", 1, 1, null], [\"3.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 1, TypeRole 1, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 6, 7], \"OptionalCover\": [9, 10, 12], \"ShouldCover\": [4, 11, 5]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"L\\u00f3pez-Garc\\u00eda and Moreira 2020, Cold Spring Harbor Perspectives in Biology\", \"Margulis 1970, Origin of Eukaryotic Cells\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Active nucleocytoplasmic import, all organelle maintenance pathways, information protection and the evolutionary order of compartment acquisition remain outside these reviewed preparations."
-    ]
-  },
-  {
-    "sourceIndex": 2,
-    "code": "4.2",
-    "originalName": "Cellular Metabolism and Energy Transformation",
-    "scope": "Reconstruct cellular energy transformation through calibrated ATP heterogeneity and separate bacterial electrical/motor responses. Distinguish concentration, flux, ATP/ADP ratio, voltage, pH and mechanical work; no single scalar or merged cross-publication cell supplies the complete metabolic regime.",
-    "nodeIds": [
-      "cell:cellular-metabolism",
-      "cell:yaginuma2014-atp-calibration-context",
-      "cell:atp-reporter-calibration",
-      "cell:yaginuma2014-atp-population-context",
-      "cell:cellular-atp-heterogeneity",
-      "cell:atp-heterogeneity-mechanism",
-      "cell:kralj2011-voltage-dynamics-context",
-      "cell:bacterial-voltage-transients",
-      "cell:voltage-not-entire-gradient",
-      "cell:kralj2011-motor-proxy-context",
-      "cell:voltage-motility-coupling"
-    ],
-    "claimIds": [
-      "D-cell-cellular-metabolism-scope",
-      "M-cell-yaginuma2014-atp-calibration-context",
-      "C-cell-atp-reporter-calibration",
-      "M-cell-yaginuma2014-atp-population-context",
-      "C-cell-cellular-atp-heterogeneity",
-      "C-cell-atp-heterogeneity-mechanism",
-      "M-cell-kralj2011-voltage-dynamics-context",
-      "C-cell-bacterial-voltage-transients",
-      "C-cell-voltage-not-entire-gradient",
-      "M-cell-kralj2011-motor-proxy-context",
-      "C-cell-voltage-motility-coupling"
-    ],
-    "assertions": [
-      {
-        "topic": "Cellular biochemical energy conversion and ATP-linked coupling",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-atp-heterogeneity",
-          "C-cell-voltage-motility-coupling",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "ATP estimates and motor responses support specific energy-related readouts, not a full ATP-production/consumption flux map."
-      },
-      {
-        "topic": "Redox, pH, membrane transduction and transport integration",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "C-cell-voltage-not-entire-gradient",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "Respiratory perturbations and separate pH/voltage controls support condition-dependent electrochemical behavior, without simultaneous quantification of every pathway."
-      },
-      {
-        "topic": "Storage, expenditure and whole-cell allocation of energetic resources",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-atp-heterogeneity-mechanism",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "A single-cell ATP distribution does not measure production/consumption flux, stored free energy or adaptive allocation."
-      },
-      {
-        "topic": "Sustained nonequilibrium operation and cellular demand matching",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "Supplied culture and perturbation responses show finite ongoing operation; a complete demand-feedback/maintenance law is not established."
-      },
-      {
-        "topic": "Adaptive redistribution and uniform cellular energetic state",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-cellular-atp-heterogeneity",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "The source detects heterogeneity and leaves its physiological advantage unresolved; a universal uniform or adaptively optimized ATP state is not supported."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "3.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-atp-reporter-calibration",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "Enzymatic reporter calibration and living cells presuppose biochemical activity, but no universal enzymatic catalytic fraction or minimum is measured."
-      },
-      {
-        "parentCode": "3.14",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-atp-heterogeneity-mechanism",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "No complete cycle-flux comparison identifies a particular Level-3 metabolic cycle as the necessary parent."
-      },
-      {
-        "parentCode": "3.24",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "Energy-related respiratory/uncoupling perturbations are observed, but not a complete source-independent ATP-generation construction rule."
-      },
-      {
-        "parentCode": "3.25",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "Respiratory perturbations bear on electron transport, without full redox-state or reaction-flux identification."
-      },
-      {
-        "parentCode": "3.28",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-voltage-not-entire-gradient",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "pH and electrical signals are distinguished; neither is proof of every ionic homeostatic pathway."
-      },
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-cellular-atp-heterogeneity",
-          "D-cell-cellular-metabolism-scope"
-        ],
-        "reason": "Specific supplied E. coli assays are not causally generated by the distinct minimal-mycoplasma preparation in card 4.0."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"3.1\", 0.2], [\"3.14\", 0.2], [\"3.24\", 0.2], [\"3.25\", 0.1], [\"3.28\", 0.1], [\"4.0\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"3.1\", 1, 10, null], [\"3.14\", 1, 2, null], [\"3.24\", 1, 2, null], [\"3.25\", 1, 1, null], [\"3.28\", 1, 1, null], [\"4.0\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 1, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [5, 4, 11], \"OptionalCover\": [9, 10, 12], \"ShouldCover\": [1, 6, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Nicholls and Ferguson 2013, Bioenergetics 4\", \"Lane 2015, The Vital Question\", \"Mitchell 1961, Chemiosmotic Coupling\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "The cause and adaptive value of ATP heterogeneity remain unknown. No complete cellular free-energy, resource-allocation or flux balance has been measured in one admitted context."
-    ]
-  },
-  {
-    "sourceIndex": 8,
-    "code": "4.8",
-    "originalName": "Genetic Regulation and Gene Expression",
-    "scope": "Reconstruct gene regulation through source-designated synthetic yeast expression architectures, finite reporter-state persistence and lineage follow-up. Preserve experimental bimodality, model interpretation, reporter limitations and source inconsistencies; do not generalize to every natural regulatory layer or irreversible cell fate.",
-    "nodeIds": [
-      "cell:gene-expression-regulation",
-      "cell:becskei2001-response-distributions-context",
-      "cell:gene-expression-architecture-response",
-      "cell:gene-expression-finite-state-persistence",
-      "cell:gene-expression-bistability-boundary",
-      "cell:regulatory-architecture-condition",
-      "cell:becskei2001-lineage-followup-context",
-      "cell:gene-expression-lineage-switching"
-    ],
-    "claimIds": [
-      "D-cell-gene-expression-regulation-scope",
-      "M-cell-becskei2001-response-distributions-context",
-      "C-cell-gene-expression-architecture-response",
-      "C-cell-gene-expression-finite-state-persistence",
-      "C-cell-gene-expression-bistability-boundary",
-      "C-cell-regulatory-architecture-condition",
-      "M-cell-becskei2001-lineage-followup-context",
-      "C-cell-gene-expression-lineage-switching"
-    ],
-    "assertions": [
-      {
-        "topic": "Conditional transcriptional activation and suppression",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-gene-expression-architecture-response",
-          "C-cell-gene-expression-finite-state-persistence",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "Architecture and induction alter reporter response and withdrawal reduces expression in the specific engineered circuits."
-      },
-      {
-        "topic": "Promoter logic, activator feedback and cell-state dependence",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-gene-expression-architecture-response",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "The tested activator/feedback architectures support a local mechanism family, without a complete natural promoter/operator or genome-wide control network."
-      },
-      {
-        "topic": "Chromatin constraints, RNA-mediated and post-transcriptional control",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-gene-expression-bistability-boundary",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "These were not isolated in the chosen transcriptional-reporter experiments; circuit placement alone does not establish chromatin or RNA-interference mechanisms."
-      },
-      {
-        "topic": "Stable expression and cellular identity",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-gene-expression-finite-state-persistence",
-          "C-cell-gene-expression-lineage-switching",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "Persistence is finite and inducer-dependent; descendants can switch and high-expression growth differs."
-      },
-      {
-        "topic": "Universal programmable control and adaptive responsiveness",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-gene-expression-bistability-boundary",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "A synthetic conditional switch is not a universal program, irreversible differentiation or demonstrated adaptive advantage."
-      },
-      {
-        "topic": "Mathematical bistability is observed directly",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-gene-expression-bistability-boundary",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "Bimodal reporter distributions are observations; dynamical bistability and noise mechanisms require their model assumptions and further tests."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-gene-expression-architecture-response",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "The preparation is yeast, not an existing prokaryotic-cell input; no cell-type hierarchy is made a physical generation rule."
-      },
-      {
-        "parentCode": "3.4",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-gene-expression-architecture-response",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "Gene expression is involved, but reporter fluorescence does not isolate replication, transcript production and translation as independent parent contributions."
-      },
-      {
-        "parentCode": "3.5",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-gene-expression-bistability-boundary",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "The source model assumes cooperative activation, without an independent protein-complex cooperativity measurement for all circuit states."
-      },
-      {
-        "parentCode": "3.23",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-gene-expression-bistability-boundary",
-          "D-cell-gene-expression-regulation-scope"
-        ],
-        "reason": "RNA-interference/noncoding-RNA mechanisms are not tested in this chosen circuit family."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.0\", 0.3], [\"3.4\", 0.3], [\"3.5\", 0.2], [\"3.23\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.4\", 1, 1, null], [\"3.5\", 1, 2, null], [\"3.23\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [7, 4], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Ptashne 2004, A Genetic Switch\", \"Levine and Tjian 2003, Transcription regulation and animal diversity\", \"Jacob and Monod 1961, Genetic regulatory mechanisms in the synthesis of proteins\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Source timing and plasmid-label inconsistencies remain explicit. Natural chromatin/RNA regulation and a unique switching mechanism are not inferred from these engineered reporter distributions."
-    ]
-  },
-  {
-    "sourceIndex": 9,
-    "code": "4.9",
-    "originalName": "Endocytosis and Exocytosis",
-    "scope": "Reconstruct uptake and secretion as distinct cellular operations: cargo/isoform-dependent HeLa internalization, clathrin-event timing and engineered yeast release to medium. Keep receptor uptake, intracellular routing, periplasm retention and final fusion mechanisms separate.",
-    "nodeIds": [
-      "cell:vesicular-exchange",
-      "cell:galli2017-transferrin-uptake-context",
-      "cell:transferrin-uptake-inhibition",
-      "cell:dynab-dynamin-transferrin-condition",
-      "cell:galli2017-egf-uptake-context",
-      "cell:egf-cargo-selectivity",
-      "cell:galli2017-pit-lifetime-context",
-      "cell:pit-dynamics-not-uptake",
-      "cell:casler2019-medium-secretion-context",
-      "cell:medium-secretion-boundary",
-      "cell:post-golgi-carrier-gap"
-    ],
-    "claimIds": [
-      "D-cell-vesicular-exchange-scope",
-      "M-cell-galli2017-transferrin-uptake-context",
-      "C-cell-transferrin-uptake-inhibition",
-      "C-cell-dynab-dynamin-transferrin-condition",
-      "M-cell-galli2017-egf-uptake-context",
-      "C-cell-egf-cargo-selectivity",
-      "M-cell-galli2017-pit-lifetime-context",
-      "C-cell-pit-dynamics-not-uptake",
-      "M-cell-casler2019-medium-secretion-context",
-      "C-cell-medium-secretion-boundary",
-      "C-cell-post-golgi-carrier-gap"
-    ],
-    "assertions": [
-      {
-        "topic": "Endocytic uptake is regulated and cargo-specific",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-transferrin-uptake-inhibition",
-          "C-cell-egf-cargo-selectivity",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Matched-source expression perturbations affect transferrin and EGF differently; no universal all-cargo response is inferred."
-      },
-      {
-        "topic": "Budding and endocytic completion",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-pit-dynamics-not-uptake",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Coated-pit timing is visible but is insufficient to establish successful cargo internalization or a complete fission mechanism."
-      },
-      {
-        "topic": "Exocytosis and release of selected material",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-medium-secretion-boundary",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Extracellular reporter is detected in a distinct yeast preparation; medium recovery is not direct observation of every fusion step."
-      },
-      {
-        "topic": "Trafficking, targeting, docking and fusion as one complete pathway",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-post-golgi-carrier-gap",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Post-Golgi carriers and terminal fusion were not tracked, and receptor uptake does not establish the secretion sequence."
-      },
-      {
-        "topic": "Programmable cell boundary and global coordinated exchange",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-transferrin-uptake-inhibition",
-          "C-cell-medium-secretion-boundary",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Conditional routing is supported, while an all-purpose programmable interface and global throughput coordination are broader than the source measurements."
-      },
-      {
-        "topic": "A persistent timing marker certifies functional transport",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-pit-dynamics-not-uptake",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Unchanged clathrin-pit lifetime can accompany impaired uptake in a separate assay; proxy stability is not sufficient functional validation."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-transferrin-uptake-inhibition",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "HeLa and yeast are existing eukaryotic preparations, not generated or maintained by a separate minimal-prokaryotic-cell record."
-      },
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-medium-secretion-boundary",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Compartmental boundaries are part of the preparation; their universal numerical count or evolutionary prior is not tested."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-egf-cargo-selectivity",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "A receptor ligand is present, but a complete cell-signaling network is not independently demonstrated as necessary for every uptake route."
-      },
-      {
-        "parentCode": "3.27",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-transferrin-uptake-inhibition",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "Cellular membranes are present; no lipid-biosynthesis prerequisite or de novo membrane-formation experiment is isolated here."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-pit-dynamics-not-uptake",
-          "D-cell-vesicular-exchange-scope"
-        ],
-        "reason": "The cargo and proxy contrasts do not identify a general cellular homeostasis/stress controller as a causal parent."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.0\", 0.3], [\"4.1\", 0.25], [\"4.3\", 0.25], [\"3.27\", 0.15], [\"4.6\", 0.05]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"4.1\", 1, 2, null], [\"4.3\", 1, 2, null], [\"3.27\", 1, 2, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Bonifacino and Glick 2004, The mechanisms of vesicle budding and fusion\", \"Palade 1975, Intracellular aspects of the process of protein secretion\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Unique endocytic molecular trigger, every cargo route and final exocytic targeting/fusion remain unestablished. The assays belong to distinct systems and are not merged into one observed cellular pathway."
-    ]
-  },
-  {
-    "sourceIndex": 10,
-    "code": "4.10",
-    "originalName": "DNA Repair Mechanisms and Genome Stability",
-    "scope": "Reconstruct DNA repair with the source human-cell targeted-break assay, distinguishing repair-product detection, selection, donor-template effects and inferred pathway fractions. Retain broad lesion surveillance, endogenous fidelity, checkpoint/chromatin coordination and cell-fate control as separate unresolved coverage obligations.",
-    "nodeIds": [
-      "cell:genome-maintenance",
-      "cell:zaboikin2017-f8-repair-context",
-      "cell:dna-repair-assay-dependence",
-      "cell:dna-repair-inferred-fractions",
-      "cell:genome-maintenance-coverage-gap"
-    ],
-    "claimIds": [
-      "D-cell-genome-maintenance-scope",
-      "M-cell-zaboikin2017-f8-repair-context",
-      "C-cell-dna-repair-assay-dependence",
-      "C-cell-dna-repair-inferred-fractions",
-      "C-cell-genome-maintenance-coverage-gap"
-    ],
-    "assertions": [
-      {
-        "topic": "Cellular repair operates on damaged genetic material",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dna-repair-assay-dependence",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "The targeted human-cell break experiment supports repair-associated altered products under the named conditions, not every lesion class."
-      },
-      {
-        "topic": "Repair-pathway selection and donor/template availability",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-dna-repair-inferred-fractions",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "Source assay differences reveal conditional repair-product attribution; the measured fractions retain probe and normalization assumptions."
-      },
-      {
-        "topic": "Endogenous damage, replication errors and chemical modifications",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-genome-maintenance-coverage-gap",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "The selected engineered break does not provide primary coverage for all endogenous, mismatch, base-excision or nucleotide-excision pathways."
-      },
-      {
-        "topic": "Coordination with transcription, chromatin, checkpoints and apoptosis",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-genome-maintenance-coverage-gap",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "These operations were not measured as a complete coordinated response in the admitted assay."
-      },
-      {
-        "topic": "Genome stability, viability and faithful inheritance over time",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dna-repair-assay-dependence",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "A repaired or assay-invisible target may be sequence-altered; no complete long-term genome or lineage-fidelity guarantee follows."
-      },
-      {
-        "topic": "A universal HDR/NHEJ ratio defines the cellular maintenance regime",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-dna-repair-inferred-fractions",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "The reported ratio belongs to selected target/probe/cell conditions and is not a construction constant or pan-cellular probability."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-dna-repair-assay-dependence",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "The assay uses supplied human cells; a distinct extant prokaryotic-cell preparation is not its generative or maintenance input."
-      },
-      {
-        "parentCode": "3.4",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dna-repair-assay-dependence",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "A DNA target and repair templates are involved; a distinct replication/transcription preparation is not an independently calibrated necessary cause."
-      },
-      {
-        "parentCode": "4.8",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dna-repair-assay-dependence",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "Expression of engineered reagents is an experimental input, not proof of the full natural regulatory architecture or a universal regulatory prerequisite."
-      },
-      {
-        "parentCode": "3.19",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-genome-maintenance-coverage-gap",
-          "D-cell-genome-maintenance-scope"
-        ],
-        "reason": "Chromatin modification and epigenetic control are not isolated factors in the reviewed source repair fraction."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.0\", 0.3], [\"3.4\", 0.25], [\"4.8\", 0.25], [\"3.19\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"3.4\", 1, 1, null], [\"4.8\", 1, 1, null], [\"3.19\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 0, Science [3, 29, 25] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [7, 4], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Lindahl and Barnes 2000, Repair of endogenous DNA damage\", \"Jackson and Bartek 2009, The DNA-damage response in human biology and disease\", \"Friedberg et al. 2006, DNA Repair and Mutagenesis\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "The full endogenous lesion spectrum, repair accuracy, checkpoints, chromatin control, cell-death decisions and inheritance outcomes remain to be covered by additional primary preparations. Unknown coverage is not evidence that these established biological systems do not exist."
-    ]
-  },
-  {
-    "sourceIndex": 11,
-    "code": "4.11",
-    "originalName": "Intracellular Transport and Cytoskeletal Systems",
-    "scope": "Reconstruct intracellular transport through separate COS-7 ER movement modes, source intervention responses and organelle localization. Distinguish movement, track association, physical contact, motor identity, delivery function and cell-scale organization rather than treating cytoskeleton as one universal routing cause.",
-    "nodeIds": [
-      "cell:intracellular-transport",
-      "cell:friedman2010-er-motility-context",
-      "cell:er-sliding-versus-tip-motion",
-      "cell:friedman2010-er-acetylation-context",
-      "cell:er-sliding-treatment-response",
-      "cell:er-geometry-not-unique-cause",
-      "cell:hdac-treatment-condition",
-      "cell:friedman2010-organelle-localization-context",
-      "cell:organelle-specific-track-preference",
-      "cell:er-organelle-contact-persistence",
-      "cell:cytoskeleton-downward-mechanism-gap"
-    ],
-    "claimIds": [
-      "D-cell-intracellular-transport-scope",
-      "M-cell-friedman2010-er-motility-context",
-      "C-cell-er-sliding-versus-tip-motion",
-      "M-cell-friedman2010-er-acetylation-context",
-      "C-cell-er-sliding-treatment-response",
-      "C-cell-er-geometry-not-unique-cause",
-      "C-cell-hdac-treatment-condition",
-      "M-cell-friedman2010-organelle-localization-context",
-      "C-cell-organelle-specific-track-preference",
-      "C-cell-er-organelle-contact-persistence",
-      "C-cell-cytoskeleton-downward-mechanism-gap"
-    ],
-    "assertions": [
-      {
-        "topic": "Cytoskeletal tracks support directed intracellular movement",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-er-sliding-versus-tip-motion",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "ER movement follows shafts or microtubule tips under distinct operational definitions."
-      },
-      {
-        "topic": "Assembly, remodeling and coordination of a spatial framework",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-sliding-treatment-response",
-          "C-cell-er-geometry-not-unique-cause",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "Measured changes concern ER dynamics in supplied cultured cells; no complete cytoskeleton-assembly or cell-polarity-generation mechanism is reconstructed."
-      },
-      {
-        "topic": "Motors, cargo routing and force-coupled delivery",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-sliding-versus-tip-motion",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "The motions are observed, but the source does not identify every motor/linker or quantify force and completed delivery."
-      },
-      {
-        "topic": "Organelle and macromolecule positioning share one route",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-organelle-specific-track-preference",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "Mitochondria and Rab5-positive endosomes differ in acetylated-track preference; all proteins/organelles cannot be assigned one measured route."
-      },
-      {
-        "topic": "Spatial differentiation, growth, polarization and division",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "Those system-wide outcomes and inheritance rules were not tested by the chosen short-window movement and localization assays."
-      },
-      {
-        "topic": "Mechanical scaffold and cell-scale geometry constrain locality",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-organelle-contact-persistence",
-          "C-cell-er-geometry-not-unique-cause",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "Source spatial organization is supported, while static geometry is not identified as its unique or universal cause."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-er-sliding-versus-tip-motion",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "The COS-7 preparation is not causally formed from a supplied prokaryotic cell; this card is not an extant-cell ancestry ladder."
-      },
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-organelle-contact-persistence",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "Membrane-bound organelles are the measured system, without a necessary compartment count or a complete compartment-formation experiment."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "Cellular signaling is not independently isolated as the universal controller of every source movement."
-      },
-      {
-        "parentCode": "3.20",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-er-sliding-versus-tip-motion",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "No chaperone perturbation or protein-quality-control necessity is measured by the source motility comparison."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-intracellular-transport-scope"
-        ],
-        "reason": "A general homeostasis/stress-control cause is not identified by drug sensitivity or localization alone."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.0\", 0.3], [\"4.1\", 0.25], [\"4.3\", 0.25], [\"3.20\", 0.1], [\"4.6\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.0\", 1, 1, null], [\"4.1\", 1, 2, null], [\"4.3\", 1, 2, null], [\"3.20\", 1, 1, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Vale 2003, The molecular motor toolbox for intracellular transport\", \"Pollard and Cooper 2009, Actin, a central player in cell shape and movement\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Motor/linker identity, all cargo routes, nanoscale contacts, completed delivery and inheritance of spatial organization remain unestablished by these source observations."
-    ]
-  },
-  {
-    "sourceIndex": 14,
-    "code": "4.14",
-    "originalName": "Endosymbiotic Origin of Organelles",
-    "scope": "Reconstruct endosymbiotic organization through contemporary Paulinella chromatophore protein processing and comparative genome evidence. Distinguish extant host/organelle coordination, annotated functional dependence, historical reconstruction and proposed import mechanisms; do not turn evolutionary origin into a repeatable universal construction recipe.",
-    "nodeIds": [
-      "cell:endosymbiotic-integration",
-      "cell:lhee2019-chromatophore-sequence-context",
-      "cell:chromatophore-genomic-inventory",
-      "cell:chromatophore-metabolic-inference",
-      "cell:lhee2019-chromatophore-history-context",
-      "cell:endosymbiotic-history-inference",
-      "cell:endosymbiotic-universal-route-gap",
-      "cell:oberleitner2022-chromatophore-n-termini-context",
-      "cell:chromatophore-nuclear-protein-processing",
-      "cell:chromatophore-import-route-hypothesis"
-    ],
-    "claimIds": [
-      "D-cell-endosymbiotic-integration-scope",
-      "M-cell-lhee2019-chromatophore-sequence-context",
-      "C-cell-chromatophore-genomic-inventory",
-      "C-cell-chromatophore-metabolic-inference",
-      "M-cell-lhee2019-chromatophore-history-context",
-      "C-cell-endosymbiotic-history-inference",
-      "C-cell-endosymbiotic-universal-route-gap",
-      "M-cell-oberleitner2022-chromatophore-n-termini-context",
-      "C-cell-chromatophore-nuclear-protein-processing",
-      "C-cell-chromatophore-import-route-hypothesis"
-    ],
-    "assertions": [
-      {
-        "topic": "Cyanobacterial-derived internal organization and reduced genome",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-chromatophore-genomic-inventory",
-          "C-cell-endosymbiotic-history-inference",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "Extant genomic comparisons and source phylogenetic reconstruction support the bounded chromatophore case, with historical assumptions explicit."
-      },
-      {
-        "topic": "Host-genetic and organelle-protein coordination",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-chromatophore-nuclear-protein-processing",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "Detected nuclear-encoded protein processing supports contemporary integration; the detailed trafficking route remains inferential."
-      },
-      {
-        "topic": "Metabolic coupling and loss of complete autonomy",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-chromatophore-metabolic-inference",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "Gene/pathway annotation suggests dependence; each actual metabolite exchange and compensating host enzyme was not independently measured."
-      },
-      {
-        "topic": "Regulated inheritance and hierarchical host control",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-endosymbiotic-universal-route-gap",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "The reviewed acquisitions do not jointly perturb organelle inheritance or establish an exhaustive host controller."
-      },
-      {
-        "topic": "A reproducible general pattern rather than a historical event",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-endosymbiotic-history-inference",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "Comparative organization can be studied across extant lineages; a repeated sufficient acquisition process or universal event order is not demonstrated."
-      },
-      {
-        "topic": "All mitochondria and plastids follow the same formation route",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-endosymbiotic-universal-route-gap",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "The Paulinella history is not a primary reconstruction of every mitochondrial/plastid ancestor and cannot impose one construction sequence."
-      },
-      {
-        "topic": "Golgi/AP-1 import route is an established mechanism",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-chromatophore-import-route-hypothesis",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "The model is motivated by motifs and processing; direct pathway, peptidase and inner-membrane translocation remain unresolved."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-chromatophore-nuclear-protein-processing",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "An existing host and internal compartment are present; their inferred ancestral order and universal necessity are not an experimental input rule."
-      },
-      {
-        "parentCode": "4.2",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-chromatophore-metabolic-inference",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "Bioenergetic functional annotation supports possible coupling but not measured flux, all required exchanges or sufficient metabolic integration."
-      },
-      {
-        "parentCode": "3.27",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-chromatophore-import-route-hypothesis",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "Envelope membranes are relevant; no lipid-biosynthesis route, carrier count or full membrane integration mechanism is experimentally identified."
-      },
-      {
-        "parentCode": "4.13",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-endosymbiotic-universal-route-gap",
-          "D-cell-endosymbiotic-integration-scope"
-        ],
-        "reason": "A general cellular regulatory network is not isolated as a quantified modulating cause of this history or import process."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.1\", 0.35], [\"4.2\", 0.35], [\"3.27\", 0.2], [\"4.13\", 0.1]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.1\", 1, 2, null], [\"4.2\", 2, 2, null], [\"3.27\", 2, 2, null], [\"4.13\", 2, 2, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 3, TypeRole 2, Science [3, 29] and ScientificStatus well-supported are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 5], \"OptionalCover\": [6, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Gray 2012, Mitochondrial evolution\", \"Lane and Martin 2010, The energetics of genome complexity\", \"Margulis 1970, Origin of Eukaryotic Cells\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "The exact extinct donor, ancestral host state, organelle inheritance control, sufficient integration conditions and complete import apparatus are not established. Broad mitochondrial origins require distinct primary phylogenetic coverage."
-    ]
-  },
-  {
-    "sourceIndex": 15,
-    "code": "4.15",
-    "originalName": "Secretory Pathway and Intracellular Protein Sorting",
-    "scope": "Reconstruct the secretory pathway using distinguishable source observations in engineered yeast: signal/receptor-dependent ER exit, glycosylation, Golgi marker maturation, AP-1/glycosylation-dependent recovery and cargo collection outside the cell. Preserve the untracked late-carrier/fusion steps and the hypothetical soluble-cargo packaging mechanism.",
-    "nodeIds": [
-      "cell:protein-sorting",
-      "cell:casler2019-er-export-context",
-      "cell:er-signal-receptor-export",
-      "cell:protein-glycosylation-readout",
-      "cell:er-export-signal-condition",
-      "cell:casler2019-golgi-maturation-context",
-      "cell:dynamic-compartment-identity",
-      "cell:golgi-cargo-increase",
-      "cell:casler2019-golgi-recycling-context",
-      "cell:golgi-ap1-recycling-response",
-      "cell:golgi-recycling-mechanism",
-      "cell:golgi-recycling-condition",
-      "cell:casler2019-medium-secretion-context",
-      "cell:medium-secretion-boundary",
-      "cell:post-golgi-carrier-gap"
-    ],
-    "claimIds": [
-      "D-cell-protein-sorting-scope",
-      "M-cell-casler2019-er-export-context",
-      "C-cell-er-signal-receptor-export",
-      "C-cell-protein-glycosylation-readout",
-      "C-cell-er-export-signal-condition",
-      "M-cell-casler2019-golgi-maturation-context",
-      "C-cell-dynamic-compartment-identity",
-      "C-cell-golgi-cargo-increase",
-      "M-cell-casler2019-golgi-recycling-context",
-      "C-cell-golgi-ap1-recycling-response",
-      "C-cell-golgi-recycling-mechanism",
-      "C-cell-golgi-recycling-condition",
-      "M-cell-casler2019-medium-secretion-context",
-      "C-cell-medium-secretion-boundary",
-      "C-cell-post-golgi-carrier-gap"
-    ],
-    "assertions": [
-      {
-        "topic": "Targeting signals and receptors affect localization",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-er-signal-receptor-export",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "The source APV/Erv29 comparison supports conditional ER export of a specified reporter."
-      },
-      {
-        "topic": "Protein modification and quality control",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-protein-glycosylation-readout",
-          "C-cell-golgi-recycling-mechanism",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "Glycosylation has a measured mobility effect; its contribution to comprehensive quality control and the proposed binding mechanism remain unproven."
-      },
-      {
-        "topic": "Sequential routing through changing intracellular compartments",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-dynamic-compartment-identity",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "Cargo remains visible as individual cisternae exchange resident markers, supporting maturation-based transport in this source system."
-      },
-      {
-        "topic": "Packaging, intracellular recycling and delivery",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-golgi-ap1-recycling-response",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "Adapter/glycosylation contrasts support a specific recovery route, without directly tracing each carrier or final delivery step."
-      },
-      {
-        "topic": "Secretion outside the cell",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-medium-secretion-boundary",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "The source detects reporter in rich medium while separately identifying cell-wall/periplasm boundary effects."
-      },
-      {
-        "topic": "One coherent fully established universal transport architecture",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-post-golgi-carrier-gap",
-          "C-cell-golgi-recycling-mechanism",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "The tested pathway segments leave mechanism gaps; all protein destinations, all organelle identities and final fusion are not reconstructed by this cargo."
-      },
-      {
-        "topic": "Protein synthesis becomes spatially structured",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-signal-receptor-export",
-          "C-cell-dynamic-compartment-identity",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "The source reporter acquires distinct locations under sorting conditions, without measuring all newly synthesized cellular proteins."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-dynamic-compartment-identity",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "Existing compartments are the source setting; immutable architecture and an arbitrary number of compartments are not necessities."
-      },
-      {
-        "parentCode": "4.9",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-medium-secretion-boundary",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "Secretion and intracellular routing overlap, but the unrelated HeLa uptake perturbation is not a necessary precursor of yeast protein export."
-      },
-      {
-        "parentCode": "4.11",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-post-golgi-carrier-gap",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "The primary yeast cargo data do not establish the necessary motor/cytoskeletal route for every transport step."
-      },
-      {
-        "parentCode": "3.20",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-golgi-recycling-mechanism",
-          "D-cell-protein-sorting-scope"
-        ],
-        "reason": "Modification and a proposed quality-control role are relevant; no universal chaperone requirement or complete proteostasis system is isolated."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.1\", 0.3], [\"4.9\", 0.3], [\"4.11\", 0.2], [\"3.20\", 0.2]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.1\", 1, 2, null], [\"4.9\", 1, 2, null], [\"4.11\", 1, 2, null], [\"3.20\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 0, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Palade 1975, Intracellular aspects of the process of protein secretion\", \"Bonifacino and Glick 2004, The mechanisms of vesicle budding and fusion\", \"Rothman 1994, Mechanisms of intracellular protein transport\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Post-Golgi carriers, terminal fusion, direct soluble-cargo capture, general quality-control benefit and transfer to all natural cargo proteins remain unresolved."
-    ]
-  },
-  {
-    "sourceIndex": 18,
-    "code": "4.18",
-    "originalName": "Organizing Role of the Cytoskeleton in Protein and Organelle Distribution",
-    "scope": "Reconstruct cell-scale spatial organization as finite ER/mitochondrion/endosome localization and movement under specified microtubule-state perturbations. Distinguish persistent optical overlap and preferential routes from permanent anchoring, universal cell geometry, inherited spatial structure and an independently established downward causal law.",
-    "nodeIds": [
-      "cell:cytoskeletal-spatial-organization",
-      "cell:friedman2010-er-acetylation-context",
-      "cell:er-sliding-treatment-response",
-      "cell:er-geometry-not-unique-cause",
-      "cell:hdac-treatment-condition",
-      "cell:friedman2010-organelle-localization-context",
-      "cell:organelle-specific-track-preference",
-      "cell:er-organelle-contact-persistence",
-      "cell:cytoskeleton-downward-mechanism-gap"
-    ],
-    "claimIds": [
-      "D-cell-cytoskeletal-spatial-organization-scope",
-      "M-cell-friedman2010-er-acetylation-context",
-      "C-cell-er-sliding-treatment-response",
-      "C-cell-er-geometry-not-unique-cause",
-      "C-cell-hdac-treatment-condition",
-      "M-cell-friedman2010-organelle-localization-context",
-      "C-cell-organelle-specific-track-preference",
-      "C-cell-er-organelle-contact-persistence",
-      "C-cell-cytoskeleton-downward-mechanism-gap"
-    ],
-    "assertions": [
-      {
-        "topic": "Cytoskeleton biases subcellular distributions",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-organelle-specific-track-preference",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "Different organelles show different source colocalization fractions with acetylated tracks, within distinct preparations."
-      },
-      {
-        "topic": "Persistent spatial arrangement with dynamic movement",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-organelle-contact-persistence",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "Contacts remain visible during finite reorganization, without an indefinitely stable spatial arrangement or molecular tether identification."
-      },
-      {
-        "topic": "Structural geometry and mechanical state constrain locality",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-er-geometry-not-unique-cause",
-          "C-cell-er-sliding-treatment-response",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "Geometry correlates with untreated state, while treatment allows sliding on straighter tracks; geometry alone is not identified as the exclusive cause."
-      },
-      {
-        "topic": "Anchoring, stable gradients and polarity axes",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "The selected source does not directly measure anchoring forces, protein concentration gradients or polarity-axis formation."
-      },
-      {
-        "topic": "Inheritance of internal arrangements during division",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "No lineage/division inheritance acquisition is reviewed here."
-      },
-      {
-        "topic": "Downward causation determines molecular locality and signaling efficiency",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "Source localization does not isolate a downward causal parameter or measure downstream signaling performance."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.11",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-organelle-specific-track-preference",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "Movement and localization are related observations of one paper, not a necessary higher-to-lower edge or independent proof of a global spatial law."
-      },
-      {
-        "parentCode": "3.20",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "No chaperone or protein-quality-control perturbation establishes its claimed modulation of the spatial property."
-      },
-      {
-        "parentCode": "3.0",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cytoskeleton-downward-mechanism-gap",
-          "D-cell-cytoskeletal-spatial-organization-scope"
-        ],
-        "reason": "Folding of an isolated protein is not a measured necessary input or causal fraction for the observed cell-scale pattern."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.11\", 0.45], [\"3.20\", 0.25], [\"3.0\", 0.3]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.11\", 1, 2, null], [\"3.20\", 1, 1, null], [\"3.0\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 3, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [1, 6], \"OptionalCover\": [5, 9, 10, 12], \"ShouldCover\": [4, 7, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Alberts et al. 2015, Molecular Biology of the Cell\", \"Li and Gundersen 2008, Beyond polymer polarity: how the cytoskeleton builds a polarized cell\", \"Ingber 2003, Mechanobiology and tensegrity\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Molecular tethers, force balance, gradient stabilization, division inheritance and signaling consequences remain unestablished by these microscopy/perturbation observations."
-    ]
-  },
-  {
-    "sourceIndex": 21,
-    "code": "4.21",
-    "originalName": "Cellular Membrane Potential as a Driver of Molecular Gradients",
-    "scope": "Reconstruct the cellular electrochemical property through source optical voltage/pH controls, a separate tethered-motor preparation and dye-efflux observations. Separate voltage, concentration gradients, proton-motive force, ATP metabolism and mechanistic transport attribution; retain illumination and preparation boundaries.",
-    "nodeIds": [
-      "cell:cellular-electrochemical-state",
-      "cell:kralj2011-voltage-dynamics-context",
-      "cell:bacterial-voltage-transients",
-      "cell:voltage-not-entire-gradient",
-      "cell:kralj2011-motor-proxy-context",
-      "cell:voltage-motility-coupling",
-      "cell:kralj2011-dye-efflux-context",
-      "cell:voltage-efflux-coincidence",
-      "cell:voltage-efflux-mechanism"
-    ],
-    "claimIds": [
-      "D-cell-cellular-electrochemical-state-scope",
-      "M-cell-kralj2011-voltage-dynamics-context",
-      "C-cell-bacterial-voltage-transients",
-      "C-cell-voltage-not-entire-gradient",
-      "M-cell-kralj2011-motor-proxy-context",
-      "C-cell-voltage-motility-coupling",
-      "M-cell-kralj2011-dye-efflux-context",
-      "C-cell-voltage-efflux-coincidence",
-      "C-cell-voltage-efflux-mechanism"
-    ],
-    "assertions": [
-      {
-        "topic": "A transmembrane electrical state is a cell-scale variable",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "The source sees spatially coordinated optical transients within cells; a fixed scalar does not capture all temporal or subcellular regimes."
-      },
-      {
-        "topic": "Metabolism, pH and membrane state are conditionally coupled",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "C-cell-voltage-not-entire-gradient",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "Respiratory and uncoupling perturbations alter voltage-sensitive behavior while pH is independently monitored."
-      },
-      {
-        "topic": "Motility responds to electrochemical driving conditions",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-voltage-motility-coupling",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "Tethered-motor slowdown accompanies the transient in a distinct preparation, without complete mechanochemical calibration."
-      },
-      {
-        "topic": "Membrane potential drives all molecular gradients and equilibria",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-voltage-not-entire-gradient",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "An electrical potential contributes to electrochemical free energy but is not identical to every concentration gradient, ATP budget or reaction-equilibrium shift."
-      },
-      {
-        "topic": "Voltage regulates secondary active transport and signaling",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-voltage-efflux-coincidence",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "The dye coincidence supports conditional association; the unique transporter, secondary transport cycle and signaling network remain unknown."
-      },
-      {
-        "topic": "Stable maintained global property or universally necessary resting voltage",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "The source documents heterogeneous transient behaviors and imposed perturbations; no universal voltage value or permanent resting state is admitted."
-      },
-      {
-        "topic": "Unique causal mechanism of voltage-coupled efflux",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-voltage-efflux-mechanism",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "The model does not uniquely identify active export versus permeability change or passive redistribution."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.2",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "Respiration-related interventions support conditional coupling, not a universal cellular-energy parent or numerical contribution."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-voltage-efflux-mechanism",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "The source does not identify a complete signaling pathway as a necessary maintenance input."
-      },
-      {
-        "parentCode": "3.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-voltage-efflux-mechanism",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "Ion movement is physically relevant but no particular channel/transporter or universal count is identified as the necessary generative component."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-bacterial-voltage-transients",
-          "D-cell-cellular-electrochemical-state-scope"
-        ],
-        "reason": "Perturbation-associated pH/voltage behavior is observed; an exhaustive stress/homeostasis controller is not established."
-      }
-    ],
-    "excludedDefaults": [
-      "Original numerical parent weights [[\"4.2\", 0.35], [\"4.3\", 0.25], [\"3.3\", 0.25], [\"4.6\", 0.15]] are uncalibrated catalogue coefficients; no measured causal fraction, probability or active edge weight is admitted.",
-      "Original carrier group/type pairs [[2, 8]] and per-parent N_min/N_crit/N_sat [[\"4.2\", 1, 1, null], [\"4.3\", 1, 1, null], [\"3.3\", 1, 2, null], [\"4.6\", 1, 1, null]] are excluded from numerical semantics. Gene numbers, optical events, protein mass, concentrations, compartments and organism counts have distinct units and domains.",
-      "Original Phase 2, TypeRole 3, Science [3, 29] and ScientificStatus established are catalogue classifications, not measured temporal stages, universal objecthood criteria or evidence that the full prose is established.",
-      "Original Requirements {\"MustCover\": [5, 4], \"OptionalCover\": [7, 9, 10, 12], \"ShouldCover\": [1, 6, 11]} are coverage categories, not independently demonstrated sufficient construction conditions or necessary biochemical pathways.",
-      "Original per-parent CausalDirections, InteractionModes, Necessity, DependencyType and OntologicalRole are not inherited as empirical causal relations. Only individually cited, preparation-bound evidence relations are admitted.",
-      "Original Evidence entries [\"Hodgkin and Huxley 1952, A quantitative description of membrane current\", \"Nicholls and Ferguson 2013, Bioenergetics 4\", \"Mitchell 1961, Chemiosmotic Coupling\"] have null DOI/Link and mixed textbook/review/conceptual roles; their labels are not primary experiments. They are not newly admitted as read scientific evidence."
-    ],
-    "unresolved": [
-      "Unique channel/efflux identity, complete electrochemical budget, all secondary transport cycles and transfer from this bacterial preparation to neuronal or organelle membranes remain unresolved."
-    ]
-  }
-];

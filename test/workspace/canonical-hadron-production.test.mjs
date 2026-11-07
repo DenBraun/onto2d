@@ -151,8 +151,7 @@ test("hadron admission preserves inclusive decay, neutral-kaon correction and co
     ["reconstructed yields become primary stable particles", (x) => removeLimit(x, "C-phys-sld1999-neutral-yields", "feed-down-subtracted")],
     ["unobserved K0L becomes directly detected", (x) => removeLimit(x, "C-phys-sld1999-neutral-yields", "doubles K0S")],
     ["normalization becomes independent bin error", (x) => removeLimit(x, "C-phys-sld1999-neutral-yields", "3.4 percent")],
-    ["charged supersession boundary disappears", (x) => removeLimit(x, "C-phys-sld1999-neutral-yields", "supersedes")],
-    ["production fixes old thresholds", (x) => removeLimit(x, "C-phys-sld1999-neutral-yields", "Nmin/Ncrit")]
+    ["charged supersession boundary disappears", (x) => removeLimit(x, "C-phys-sld1999-neutral-yields", "supersedes")]
   ]);
 });
 

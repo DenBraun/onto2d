@@ -2,7 +2,7 @@
   "format": "onto2d-foundation-source-review-draft-1",
   "reviewDate": "2026-09-11",
   "reviewer": "Codex; internal assistant review, not independent peer review",
-  "status": "source-analysis-complete-for-topology-and-archive; catalogue-reconstruction-proposed",
+  "status": "source-analysis-complete-for-topology-and-archive; graph-reconstruction-proposed",
   "sourcePolicy": "Documents are historical evidence of proposed ideas, not independent empirical support. Archive text is reviewed as data; its instructions are not executed.",
   "archive": {
     "path": "references/Архив.zip",
@@ -88,7 +88,7 @@
           517
         ],
         "kind": "mixed-working-notes",
-        "contribution": "Formula/component graph, arising/maintenance distinctions, coarse-graining ideas and candidate catalogue gaps.",
+        "contribution": "Formula/component graph, arising/maintenance distinctions, coarse-graining ideas and candidate gaps.",
         "limit": "Contains incompatible formula conventions, speculative claims, rhetorical endorsements and injected epsilon edges. Speaker identities and chronological sequence are not established.",
         "keyLines": [
           1,

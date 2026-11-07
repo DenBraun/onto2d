@@ -274,22 +274,3 @@ test("the experimental engine analysis is opt-in and matches direct computation"
   assert.deepEqual(actual, analyzeStructuralMetricExperiment(source, weighted));
   assert.throws(() => structuralMetricExperimentAnalysis.run({ model: {} }, weighted));
 });
-
-test("the full weighted snapshot replays and agrees with the separate numeric reference", async () => {
-  const source = JSON.parse(await readFile(new URL("../../../models/causal-emergence/releases/2026.08.15/bundle.json", import.meta.url), "utf8"));
-  const artifact = await json("weighted-full.json"); const audit = await json("weight-audit.json");
-  assert.deepEqual(verifyStructuralMetricExperiment(artifact, source, weighted), artifact);
-  assert.deepEqual(verifyStructuralWeightAudit(audit, source), audit);
-  assert.deepEqual(audit.nonUnitTargetIds, ["0.18", "0.2", "0.9"]);
-  assert.deepEqual(audit.targets.filter((target) => target.disposition === "non-unit-sum").map((target) => target.sourceWeightSum), [
-    { numerator: "9", denominator: "10" }, { numerator: "19", denominator: "10" }, { numerator: "9", denominator: "10" }
-  ]);
-  assert.deepEqual(compact(artifact.result), oracle({ nodes: source.files["model/nodes.json"], edges: source.files["model/edges.json"] }, weighted));
-  const suite = await json("suite.json");
-  for (const metricPolicyId of ["unit-v1", "inverse-target-share-v1"]) {
-    const regimes = suite.runs.filter((run) => run.request.metricPolicyId === metricPolicyId && run.request.selection.kind === "necessity");
-    assert.deepEqual(regimes.map((run) => run.edgeCount), [613, 863, 958, 971]);
-    assert.ok(regimes.every((run) => run.nodeCount === 249));
-    assert.equal(new Set(regimes.map((run) => run.metricContextHash)).size, 1);
-  }
-});

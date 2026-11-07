@@ -20,7 +20,7 @@ sufficient. No web server is needed for this backend stage.
 [fixtures.mjs](fixtures.mjs) constructs nine synthetic controls and reuses two
 locked source fragments from the [Ollivier suite](../ollivier/README.md).
 [suite.json](suite.json) indexes all 11 artifacts, their identities, final
-summaries and stopping records: 68 states and 1089 exact edge calculations.
+summaries and stopping records: 66 states and 1233 exact edge calculations.
 
 | Control | Expected behavior |
 |---|---|
@@ -49,18 +49,28 @@ edge checks pass. After 16 transformations, lengths are approximately 2.960073,
 1.346642 and 0.000000096536 respectively. Removing the six arcs strictly longer
 than 2 recovers the three known groups. The stored reason is `iteration-limit`.
 
-The source examples both run six half steps at half idleness, starting at unit
-length and applying no cut:
+The source examples run half steps at half idleness, starting at unit length
+and applying no cut. The definition fragment runs six steps. The rule fragment
+runs four, the largest count within the policy's exact rational digit bound; a
+fifth step exceeds it:
 
 | Induced Causal Emergence fragment | Nodes / edges / boundary edges | Longest final links |
 |---|---|---|
-| Seed, `0.0`–`0.9` | 10 / 18 / 27 | `0.1->0.5`, `0.2->0.5`, length about 1.420243 |
-| Admissibility, `0.15`–`0.23` | 9 / 17 / 43 | `0.16->0.19`, length about 1.623312 |
+| Level-0 definitions | 28 / 22 / 40 | `description:sequential-axis-quadratic-action`, `description:spatial-axis-quadratic-action`, length about 1.586064 |
+| Level-0 definitions with rules | 34 / 47 / 15 | `l0:triad-configuration->R-object` and `l0:ensemble-action->R-ensemble`, lengths about 1.421635 and 1.421299 |
 
 Their average length remains exactly one; both end at their iteration limit.
+In the rule fragment the shortest final links are
+`description:oscillatory-mode-closure-parameter` (about 0.415615) and
+`l0:closure-parameter->R-mode` (about 0.419155), on the fragment's only directed
+cycle (`l0:closure-parameter -> R-mode -> l0:oscillatory-mode ->
+l0:closure-parameter`), followed by `l0:hyperbolic-frame->R-mode` (about 0.471449).
+In the definition fragment they are the isolated
+`description:ensemble-synchronization` (about 0.166449) and the compensation
+shortcut `bridge:oscillatory-mode-discrete-scale` (about 0.337143).
 These rankings describe relative separation under the selected transformation.
 They do not establish causal importance, full-model geometry or true communities.
-The source Model Pack and source Weight values remain unchanged.
+The source Model Pack remains unchanged.
 
 ## Independent execution and regeneration
 
@@ -88,4 +98,4 @@ agreement and the published recurrence before replacing its expected file.
 Then run the check and review the diff. Neither command rewrites source locks.
 
 Suite hash:
-`sha256:13203d479b53fd3bddc5f10585bced5d889894109995b17c51bfae0f9a35d313`.
+`sha256:ce06d81b482196ba3bd542037ef7370b53912c3211564414c4c15f448ec32aa5`.

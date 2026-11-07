@@ -3,7 +3,7 @@
     "id": "structural-comparison",
     "version": "1"
   },
-  "artifactHash": "sha256:6533faa1d4da3fb8f0520a7db9e5000601f342ce2e319dd566ebbe788cb6d244",
+  "artifactHash": "sha256:192ee8f103e5506bb4ed23fbc0ed9db928ce5ddd1a97b397f3bdad8b94f46e2d",
   "components": [
     {
       "family": "topology",
@@ -20,7 +20,7 @@
       "reasons": [
         {
           "code": "evidence-rejected",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "right"
         }
@@ -1235,7 +1235,7 @@
   "request": {
     "evidenceGaps": [
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "rejected",
         "observableId": "node-count-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",

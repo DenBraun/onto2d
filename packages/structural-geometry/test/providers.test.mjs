@@ -238,8 +238,16 @@ test("legacy root and experiment outputs replay exactly through provider envelop
   }
 });
 
-test("unit provider agrees with every existing Ollivier scoped edge without changing its scope or policy", async () => {
-  for (const f of await ollivierFixtures()) {
+test("unit provider agrees with every existing source-parent Ollivier scoped edge without changing its scope or policy", async () => {
+  const sourceParent = (pack) => pack.files["model/edges.json"].every((edge) => edge.relationLayer === "source-parent");
+  const fixtures = await ollivierFixtures();
+  // Providers declare the source-parent representation; canonical Causal Emergence fragments are rejected, not reinterpreted.
+  const canonical = fixtures.filter((f) => !sourceParent(f.pack));
+  assert.ok(canonical.length > 0);
+  for (const f of canonical) {
+    assert.throws(() => buildStructuralProvider(f.pack, unit), (error) => error.code === "STRUCTURAL_GEOMETRY_RELATION_LAYER_UNSUPPORTED");
+  }
+  for (const f of fixtures.filter((entry) => sourceParent(entry.pack))) {
     const a = await readOllivier(`artifacts/${f.id}.json`);
     const metric = buildStructuralProvider(f.pack, unit);
     assert.equal(metric.context.sourceProjectionHash, a.request.sourceProjectionHash);

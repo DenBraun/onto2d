@@ -1,10 +1,11 @@
 # Geometric signature controls
 
 The [protocol](PROTOCOL.md), [sources](sources.json) and [requests](controls.json)
-were fixed before signature generation. They cover 11 original flow cases,
-three supplemental star/bridge controls, five weighted Forman graphs, one
-weighted selection and five coverage/termination controls: 25 requests over
-18 verified source packs. Earlier source packs and scientific files remain intact.
+were fixed before signature generation. They cover nine synthetic original
+flow cases, three supplemental star/bridge controls, five weighted Forman
+graphs, one weighted selection and five coverage/termination controls: 23
+requests over 17 verified synthetic source packs. The suite contains synthetic
+controls only.
 
 ```sh
 npm run structural-geometry:geometric-signature:check
@@ -13,7 +14,7 @@ npm run structural-geometry:geometric-signature:report
 
 The report verifies source locks, certificates, all descriptors and the property
 matrices before printing outcomes. [suite.json](suite.json) records four complete
-and 21 indeterminate signatures. A valid early stop still leaves a partial
+and 19 indeterminate signatures. A valid early stop still leaves a partial
 fixed-horizon trace. Reaching a cap can give complete frame coverage without
 convergence. Weighted intervals, empty populations, missing receipts, partial
 Ollivier coverage, cycles and degenerate stops all remain explicit.
@@ -38,7 +39,7 @@ regenerated and verified for acceptance.
 
 Property controls enumerate 781 interval profiles, 820 short threshold traces
 (including exact threshold equality) and 40 observed/partial/unavailable coverage
-profiles. Tests replay every artifact in a browser and transport all 25 requests,
+profiles. Tests replay every artifact in a browser and transport all 23 requests,
 including source/edge IDs, induced scopes, initial lengths, presentation and
 record order. Expected-source/evidence replay rejects rehashed forgeries.
 

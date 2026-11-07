@@ -6,8 +6,8 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Receptor sensitivity in bacterial chemotaxis",
       "authors": [
-        "Sourjik V",
-        "Berg HC"
+        "Victor Sourjik",
+        "Howard C. Berg"
       ],
       "year": 2002,
       "doi": "10.1073/pnas.011589998",
@@ -27,10 +27,10 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "A systems-level analysis of perfect adaptation in yeast osmoregulation",
       "authors": [
-        "Muzzey D",
-        "G\u00f3mez-Uribe CA",
-        "Mettetal JT",
-        "van Oudenaarden A"
+        "Dale Muzzey",
+        "Carlos A. G\u00f3mez-Uribe",
+        "Jerome T. Mettetal",
+        "Alexander van Oudenaarden"
       ],
       "year": 2009,
       "doi": "10.1016/j.cell.2009.04.047",
@@ -51,15 +51,15 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Hsf1 and Hsp70 constitute a two-component feedback loop that regulates the yeast heat shock response",
       "authors": [
-        "Krakowiak J",
-        "Zheng X",
-        "Patel N",
-        "Feder ZA",
-        "Anandhakumar J",
-        "Valerius K",
-        "Gross DS",
-        "Khalil AS",
-        "Pincus D"
+        "Joanna Krakowiak",
+        "Xu Zheng",
+        "Nikit Patel",
+        "Zoë A. Feder",
+        "Jayamani Anandhakumar",
+        "Kendra Valerius",
+        "David S. Gross",
+        "Ahmad S. Khalil",
+        "David Pincus"
       ],
       "year": 2018,
       "doi": "10.7554/elife.31668",
@@ -80,12 +80,12 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "The proliferation-quiescence decision is controlled by a bifurcation in CDK2 activity at mitotic exit",
       "authors": [
-        "Spencer SL",
-        "Cappell SD",
-        "Tsai FC",
-        "Overton KW",
-        "Wang CL",
-        "Meyer T"
+        "Sabrina L. Spencer",
+        "Steven D. Cappell",
+        "Feng-Chiao Tsai",
+        "K. Wesley Overton",
+        "Clifford L. Wang",
+        "Tobias Meyer"
       ],
       "year": 2013,
       "doi": "10.1016/j.cell.2013.08.062",
@@ -106,9 +106,9 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Building a cell cycle oscillator: hysteresis and bistability in the activation of Cdc2",
       "authors": [
-        "Pomerening JR",
-        "Sontag ED",
-        "Ferrell JE"
+        "Joseph R. Pomerening",
+        "Eduardo D. Sontag",
+        "James E. Ferrell"
       ],
       "year": 2003,
       "doi": "10.1038/ncb954",
@@ -128,11 +128,11 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Modeling a snap-action, variable-delay switch controlling extrinsic cell death",
       "authors": [
-        "Albeck JG",
-        "Burke JM",
-        "Spencer SL",
-        "Lauffenburger DA",
-        "Sorger PK"
+        "John G. Albeck",
+        "John M. Burke",
+        "Sabrina L. Spencer",
+        "Douglas A. Lauffenburger",
+        "Peter K. Sorger"
       ],
       "year": 2008,
       "doi": "10.1371/journal.pbio.0060299",
@@ -153,11 +153,11 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Non-genetic origins of cell-to-cell variability in TRAIL-induced apoptosis",
       "authors": [
-        "Spencer SL",
-        "Gaudet S",
-        "Albeck JG",
-        "Burke JM",
-        "Sorger PK"
+        "Sabrina L. Spencer",
+        "Suzanne Gaudet",
+        "John G. Albeck",
+        "John M. Burke",
+        "Peter K. Sorger"
       ],
       "year": 2009,
       "doi": "10.1038/nature08012",
@@ -177,12 +177,12 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Direct conversion of fibroblasts to functional neurons by defined factors",
       "authors": [
-        "Vierbuchen T",
-        "Ostermeier A",
-        "Pang ZP",
-        "Kokubu Y",
-        "S\u00fcdhof TC",
-        "Wernig M"
+        "Thomas Vierbuchen",
+        "Austin Ostermeier",
+        "Zhiping P. Pang",
+        "Yuko Kokubu",
+        "Thomas C. S\u00fcdhof",
+        "Marius Wernig"
       ],
       "year": 2010,
       "doi": "10.1038/nature08797",
@@ -203,17 +203,17 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Cell-to-cell expression variability followed by signal reinforcement progressively segregates early mouse lineages",
       "authors": [
-        "Ohnishi Y",
-        "Huber W",
-        "Tsumura A",
-        "Kang M",
-        "Xenopoulos P",
-        "Kurimoto K",
-        "Ole\u015b AK",
-        "Ara\u00fazo-Bravo MJ",
-        "Saitou M",
-        "Hadjantonakis AK",
-        "Hiiragi T"
+        "Yusuke Ohnishi",
+        "Wolfgang Huber",
+        "Akiko Tsumura",
+        "Minjung Kang",
+        "Panagiotis Xenopoulos",
+        "Kazuki Kurimoto",
+        "Andrzej K. Ole\u015b",
+        "Marcos J. Ara\u00fazo-Bravo",
+        "Mitinori Saitou",
+        "Anna-Katerina Hadjantonakis",
+        "Takashi Hiiragi"
       ],
       "year": 2014,
       "doi": "10.1038/ncb2881",
@@ -234,11 +234,11 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Programming self-organizing multicellular structures with synthetic cell-cell signaling",
       "authors": [
-        "Toda S",
-        "Blauch LR",
-        "Tang SKY",
-        "Morsut L",
-        "Lim WA"
+        "Satoshi Toda",
+        "Lucas R. Blauch",
+        "Sindy K. Y. Tang",
+        "Leonardo Morsut",
+        "Wendell A. Lim"
       ],
       "year": 2018,
       "doi": "10.1126/science.aat0271",
@@ -259,14 +259,14 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Genome-wide analysis of intracellular pH reveals quantitative control of cell division rate by pH(c) in Saccharomyces cerevisiae",
       "authors": [
-        "Orij R",
-        "Urbanus ML",
-        "Vizeacoumar FJ",
-        "Giaever G",
-        "Boone C",
-        "Nislow C",
-        "Brul S",
-        "Smits GJ"
+        "Rick Orij",
+        "Malene L. Urbanus",
+        "Franco J. Vizeacoumar",
+        "Guri Giaever",
+        "Charles Boone",
+        "Corey Nislow",
+        "Stanley Brul",
+        "Gertien J. Smits"
       ],
       "year": 2012,
       "doi": "10.1186/gb-2012-13-9-r80",
@@ -287,16 +287,16 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Systems-level analysis of mechanisms regulating yeast metabolic flux",
       "authors": [
-        "Hackett SR",
-        "Zanotelli VRT",
-        "Xu W",
-        "Goya J",
-        "Park JO",
-        "Perlman DH",
-        "Gibney PA",
-        "Botstein D",
-        "Storey JD",
-        "Rabinowitz JD"
+        "Sean R. Hackett",
+        "Vito R. T. Zanotelli",
+        "Wenxin Xu",
+        "Jonathan Goya",
+        "Junyoung O. Park",
+        "David H. Perlman",
+        "Patrick A. Gibney",
+        "David Botstein",
+        "John D. Storey",
+        "Joshua D. Rabinowitz"
       ],
       "year": 2016,
       "doi": "10.1126/science.aaf2786",
@@ -317,10 +317,10 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1",
       "authors": [
-        "Kim J",
-        "Kundu M",
-        "Viollet B",
-        "Guan KL"
+        "Joungmok Kim",
+        "Mondira Kundu",
+        "Benoit Viollet",
+        "Kun-Liang Guan"
       ],
       "year": 2011,
       "doi": "10.1038/ncb2152",
@@ -341,11 +341,11 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "AMPK Inhibits ULK1-Dependent Autophagosome Formation and Lysosomal Acidification via Distinct Mechanisms",
       "authors": [
-        "Nwadike C",
-        "Williamson LE",
-        "Gallagher LE",
-        "Guan JL",
-        "Chan EYW"
+        "Chinwendu Nwadike",
+        "Leon E. Williamson",
+        "Laura E. Gallagher",
+        "Jun-Lin Guan",
+        "Edmond Y. W. Chan"
       ],
       "year": 2018,
       "doi": "10.1128/mcb.00023-18",
@@ -368,27 +368,27 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "MTOR regulates the pro-tumorigenic senescence-associated secretory phenotype by promoting IL1A translation",
       "authors": [
-        "Laberge RM",
-        "Sun Y",
-        "Orjalo AV",
-        "Patil CK",
-        "Freund A",
-        "Zhou L",
-        "Curran SC",
-        "Davalos AR",
-        "Wilson-Edell KA",
-        "Liu S",
-        "Limbad C",
-        "Demaria M",
-        "Li P",
-        "Hubbard GB",
-        "Ikeno Y",
-        "Javors M",
-        "Desprez PY",
-        "Benz CC",
-        "Kapahi P",
-        "Nelson PS",
-        "Campisi J"
+        "Remi-Martin Laberge",
+        "Yu Sun",
+        "Arturo V. Orjalo",
+        "Christopher K. Patil",
+        "Adam Freund",
+        "Lili Zhou",
+        "Samuel C. Curran",
+        "Albert R. Davalos",
+        "Kathleen A. Wilson-Edell",
+        "Su Liu",
+        "Chandani Limbad",
+        "Marco Demaria",
+        "Patrick Li",
+        "Gene B. Hubbard",
+        "Yuji Ikeno",
+        "Martin Javors",
+        "Pierre-Yves Desprez",
+        "Christopher C. Benz",
+        "Pankaj Kapahi",
+        "Peter S. Nelson",
+        "Judith Campisi"
       ],
       "year": 2015,
       "doi": "10.1038/ncb3195",
@@ -410,10 +410,10 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Parkin is recruited selectively to impaired mitochondria and promotes their autophagy",
       "authors": [
-        "Narendra D",
-        "Tanaka A",
-        "Suen DF",
-        "Youle RJ"
+        "Derek Narendra",
+        "Atsushi Tanaka",
+        "Der-Fen Suen",
+        "Richard J. Youle"
       ],
       "year": 2008,
       "doi": "10.1083/jcb.200809125",
@@ -434,20 +434,20 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Cell survival, DNA damage, and oncogenic transformation after a transient and reversible apoptotic response",
       "authors": [
-        "Tang HL",
-        "Tang HM",
-        "Mak KH",
-        "Hu S",
-        "Wang SS",
-        "Wong KM",
-        "Wong CST",
-        "Wu HY",
-        "Law HT",
-        "Liu K",
-        "Talbot CC Jr",
-        "Lau WK",
-        "Montell DJ",
-        "Fung MC"
+        "Ho Lam Tang",
+        "Ho Man Tang",
+        "Keng Hou Mak",
+        "Shaomin Hu",
+        "Shan Shan Wang",
+        "Kit Man Wong",
+        "Chung Sing Timothy Wong",
+        "Hoi Yan Wu",
+        "Hiu Tung Law",
+        "Kan Liu",
+        "C. Conover Talbot Jr.",
+        "Wan Keung Lau",
+        "Denise J. Montell",
+        "Ming Chiu Fung"
       ],
       "year": 2012,
       "doi": "10.1091/mbc.e11-11-0926",
@@ -468,12 +468,12 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "p53 dynamics control cell fate",
       "authors": [
-        "Purvis JE",
-        "Karhohs KW",
-        "Mock C",
-        "Batchelor E",
-        "Loewer A",
-        "Lahav G"
+        "Jeremy E. Purvis",
+        "Kyle W. Karhohs",
+        "Caroline Mock",
+        "Eric Batchelor",
+        "Alexander Loewer",
+        "Galit Lahav"
       ],
       "year": 2012,
       "doi": "10.1126/science.1218351",
@@ -494,18 +494,18 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Autophagy maintains stemness by preventing senescence",
       "authors": [
-        "Garc\u00eda-Prat L",
-        "Mart\u00ednez-Vicente M",
-        "Perdiguero E",
-        "Ortet L",
-        "Rodr\u00edguez-Ubreva J",
-        "Rebollo E",
-        "Ruiz-Bonilla V",
-        "Gutarra S",
-        "Ballestar E",
-        "Serrano AL",
-        "Sandri M",
-        "Mu\u00f1oz-C\u00e1noves P"
+        "Laura Garc\u00eda-Prat",
+        "Marta Mart\u00ednez-Vicente",
+        "Eusebio Perdiguero",
+        "Laura Ortet",
+        "Javier Rodr\u00edguez-Ubreva",
+        "Elena Rebollo",
+        "Vanessa Ruiz-Bonilla",
+        "Susana Gutarra",
+        "Esteban Ballestar",
+        "Antonio L. Serrano",
+        "Marco Sandri",
+        "Pura Mu\u00f1oz-C\u00e1noves"
       ],
       "year": 2016,
       "doi": "10.1038/nature16187",
@@ -526,27 +526,27 @@ export const CELL_REGULATION_RECORDS = {
       "kind": "research-publication",
       "title": "Author Correction: MTOR regulates the pro-tumorigenic senescence-associated secretory phenotype by promoting IL1A translation",
       "authors": [
-        "Laberge RM",
-        "Sun Y",
-        "Orjalo AV",
-        "Patil CK",
-        "Freund A",
-        "Zhou L",
-        "Curran SC",
-        "Davalos AR",
-        "Wilson-Edell KA",
-        "Liu S",
-        "Limbad C",
-        "Demaria M",
-        "Li P",
-        "Hubbard GB",
-        "Ikeno Y",
-        "Javors M",
-        "Desprez PY",
-        "Benz CC",
-        "Kapahi P",
-        "Nelson PS",
-        "Campisi J"
+        "Remi-Martin Laberge",
+        "Yu Sun",
+        "Arturo V. Orjalo",
+        "Christopher K. Patil",
+        "Adam Freund",
+        "Lili Zhou",
+        "Samuel C. Curran",
+        "Albert R. Davalos",
+        "Kathleen A. Wilson-Edell",
+        "Su Liu",
+        "Chandani Limbad",
+        "Marco Demaria",
+        "Patrick Li",
+        "Gene B. Hubbard",
+        "Yuji Ikeno",
+        "Martin Javors",
+        "Pierre-Yves Desprez",
+        "Christopher C. Benz",
+        "Pankaj Kapahi",
+        "Peter S. Nelson",
+        "Judith Campisi"
       ],
       "year": 2021,
       "doi": "10.1038/s41556-021-00655-4",
@@ -576,18 +576,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "sourjik2002-receptor-sensitivity",
           "locator": "Materials and Methods: Bacterial Strains, Preparation of Cells and Fluorescence Measurements; Figures 1-3 and Results on receptor modification and sensitivity"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -611,18 +599,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "sourjik2002-receptor-sensitivity",
           "locator": "Materials and Methods: Bacterial Strains, Preparation of Cells and Fluorescence Measurements; Figures 1-3 and Results on receptor modification and sensitivity"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -646,18 +622,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "sourjik2002-receptor-sensitivity",
           "locator": "Materials and Methods: Bacterial Strains, Preparation of Cells and Fluorescence Measurements; Figures 1-3 and Results on receptor modification and sensitivity"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -684,26 +648,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -731,26 +675,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -778,26 +702,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -824,22 +728,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -867,22 +755,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -910,22 +782,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -952,22 +808,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "krakowiak2018-hsf1-hsp70",
           "locator": "Results: CE2 is necessary for Hsf1 to bind to Hsp70; CE2 is sufficient to bind to Hsp70; Hsp70 affinity tunes the dynamics of the heat shock response; Figures 4-6; Materials and methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -995,22 +835,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "krakowiak2018-hsf1-hsp70",
           "locator": "Results: CE2 is necessary for Hsf1 to bind to Hsp70; CE2 is sufficient to bind to Hsp70; Hsp70 affinity tunes the dynamics of the heat shock response; Figures 4-6; Materials and methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -1038,22 +862,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "krakowiak2018-hsf1-hsp70",
           "locator": "Results: CE2 is necessary for Hsf1 to bind to Hsp70; CE2 is sufficient to bind to Hsp70; Hsp70 affinity tunes the dynamics of the heat shock response; Figures 4-6; Materials and methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -1080,18 +888,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "spencer2013-cdk2-bifurcation",
           "locator": "Results and Figures 4-7 on mitogen withdrawal, restriction window and p21 perturbation; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1119,18 +915,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "spencer2013-cdk2-bifurcation",
           "locator": "Results and Figures 4-7 on mitogen withdrawal, restriction window and p21 perturbation; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1158,18 +942,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "spencer2013-cdk2-bifurcation",
           "locator": "Results and Figures 4-7 on mitogen withdrawal, restriction window and p21 perturbation; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1192,18 +964,10 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "pomerening2003-cdc2-hysteresis",
           "locator": "Primary published article Figures 2-4 and accompanying Results on steady-state activation and history-dependent thresholds; Methods: recombinant delta65-cyclin B1 and Xenopus egg extracts"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -1223,18 +987,10 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "pomerening2003-cdc2-hysteresis",
           "locator": "Primary published article Figures 2-4 and accompanying Results on steady-state activation and history-dependent thresholds; Methods: recombinant delta65-cyclin B1 and Xenopus egg extracts"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -1254,18 +1010,10 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "pomerening2003-cdc2-hysteresis",
           "locator": "Primary published article Figures 2-4 and accompanying Results on steady-state activation and history-dependent thresholds; Methods: recombinant delta65-cyclin B1 and Xenopus egg extracts"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -1288,26 +1036,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "purvis2012-p53-dynamics",
           "locator": "Primary main Results and Figures 3-4: post-irradiation growth, senescence-associated staining and equal-cumulative-signal comparisons"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -1335,26 +1063,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "purvis2012-p53-dynamics",
           "locator": "Primary main Results and Figures 3-4: post-irradiation growth, senescence-associated staining and equal-cumulative-signal comparisons"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -1382,26 +1090,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "purvis2012-p53-dynamics",
           "locator": "Primary main Results and Figures 3-4: post-irradiation growth, senescence-associated staining and equal-cumulative-signal comparisons"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -1428,22 +1116,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "albeck2008-extrinsic-apoptosis-switch",
           "locator": "Results on pre-MOMP delay, Bcl-2-family regulation and snap-action switching; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1471,22 +1143,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "albeck2008-extrinsic-apoptosis-switch",
           "locator": "Results on pre-MOMP delay, Bcl-2-family regulation and snap-action switching; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1514,22 +1170,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "albeck2008-extrinsic-apoptosis-switch",
           "locator": "Results on pre-MOMP delay, Bcl-2-family regulation and snap-action switching; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1552,22 +1192,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "spencer2009-trail-variability",
           "locator": "Primary author main text and Figures 1-4: sister-cell death-time correlations, cycloheximide and Bid overexpression; Methods summary"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1591,22 +1215,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "spencer2009-trail-variability",
           "locator": "Primary author main text and Figures 1-4: sister-cell death-time correlations, cycloheximide and Bid overexpression; Methods summary"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1630,22 +1238,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "spencer2009-trail-variability",
           "locator": "Primary author main text and Figures 1-4: sister-cell death-time correlations, cycloheximide and Bid overexpression; Methods summary"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1672,18 +1264,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1711,18 +1291,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1750,18 +1318,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -1788,14 +1344,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "vierbuchen2010-induced-neurons",
           "locator": "Results on three-factor conversion and maturation; Figures 3-5; Methods Summary: fibroblast isolation, culture, FACS and electrophysiology"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1823,14 +1371,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "vierbuchen2010-induced-neurons",
           "locator": "Results on three-factor conversion and maturation; Figures 3-5; Methods Summary: fibroblast isolation, culture, FACS and electrophysiology"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1858,14 +1398,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "vierbuchen2010-induced-neurons",
           "locator": "Results on three-factor conversion and maturation; Figures 3-5; Methods Summary: fibroblast isolation, culture, FACS and electrophysiology"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1892,22 +1424,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "ohnishi2014-lineage-segregation",
           "locator": "Results: Fgf4 signalling drives lineage segregation; Figures 5-6 and accompanying Fgf4-null versus wild-type expression analyses"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1935,22 +1451,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "ohnishi2014-lineage-segregation",
           "locator": "Results: Fgf4 signalling drives lineage segregation; Figures 5-6 and accompanying Fgf4-null versus wild-type expression analyses"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1978,22 +1478,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "ohnishi2014-lineage-segregation",
           "locator": "Results: Fgf4 signalling drives lineage segregation; Figures 5-6 and accompanying Fgf4-null versus wild-type expression analyses"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -2020,22 +1504,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "toda2018-synthetic-contacts",
           "locator": "Using a bidirectional signaling cascade to engineer a self-organizing three-layer structure; Synthetic assembly is robust, reversible, and self-repairing; Figures 2-3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -2063,22 +1531,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "toda2018-synthetic-contacts",
           "locator": "Using a bidirectional signaling cascade to engineer a self-organizing three-layer structure; Synthetic assembly is robust, reversible, and self-repairing; Figures 2-3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -2106,22 +1558,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "toda2018-synthetic-contacts",
           "locator": "Using a bidirectional signaling cascade to engineer a self-organizing three-layer structure; Synthetic assembly is robust, reversible, and self-repairing; Figures 2-3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -2148,14 +1584,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "orij2012-cytosolic-ph-control",
           "locator": "Results on pHc-growth-rate relationships and PMA1 perturbation; Materials and methods: pHluorin fluorescence and pH calibration"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -2183,14 +1611,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "orij2012-cytosolic-ph-control",
           "locator": "Results on pHc-growth-rate relationships and PMA1 perturbation; Materials and methods: pHluorin fluorescence and pH calibration"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -2218,14 +1638,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "orij2012-cytosolic-ph-control",
           "locator": "Results on pHc-growth-rate relationships and PMA1 perturbation; Materials and methods: pHluorin fluorescence and pH calibration"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -2252,14 +1664,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "hackett2016-yeast-metabolic-flux",
           "locator": "Primary article: Novel allosteric regulation and metabolic control; Figures 4-6 and Methods Overview"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -2287,14 +1691,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "hackett2016-yeast-metabolic-flux",
           "locator": "Primary article: Novel allosteric regulation and metabolic control; Figures 4-6 and Methods Overview"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -2322,14 +1718,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "hackett2016-yeast-metabolic-flux",
           "locator": "Primary article: Novel allosteric regulation and metabolic control; Figures 4-6 and Methods Overview"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -2356,26 +1744,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "kim2011-ampk-mtor-ulk1",
           "locator": "Results: mTORC1 phosphorylates Ulk1 at Ser 757; Figures 5-7; Discussion and Methods on cell culture, kinase assays and immunoblotting"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2403,26 +1771,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "kim2011-ampk-mtor-ulk1",
           "locator": "Results: mTORC1 phosphorylates Ulk1 at Ser 757; Figures 5-7; Discussion and Methods on cell culture, kinase assays and immunoblotting"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2450,26 +1798,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "kim2011-ampk-mtor-ulk1",
           "locator": "Results: mTORC1 phosphorylates Ulk1 at Ser 757; Figures 5-7; Discussion and Methods on cell culture, kinase assays and immunoblotting"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2504,26 +1832,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "nwadike2018-ampk-autophagy-boundary",
           "locator": "Discussion: AMPK and glucose starvation signals can dominate and block autophagy; Materials and Methods: Cell culture and treatments, Autophagy assays and Lysosomal assays"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2559,26 +1867,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "nwadike2018-ampk-autophagy-boundary",
           "locator": "Discussion: AMPK and glucose starvation signals can dominate and block autophagy; Materials and Methods: Cell culture and treatments, Autophagy assays and Lysosomal assays"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2614,26 +1902,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "nwadike2018-ampk-autophagy-boundary",
           "locator": "Discussion: AMPK and glucose starvation signals can dominate and block autophagy; Materials and Methods: Cell culture and treatments, Autophagy assays and Lysosomal assays"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2664,22 +1932,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2713,22 +1965,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2762,22 +1998,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2810,14 +2030,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2851,14 +2063,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2892,14 +2096,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -2928,14 +2124,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "narendra2008-parkin-mitophagy",
           "locator": "Results on Parkin-driven mitochondrial elimination and ATG5/inhibitor controls; Figure 5; Materials and methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
         }
       ],
       "openObligations": [
@@ -2963,14 +2151,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "narendra2008-parkin-mitophagy",
           "locator": "Results on Parkin-driven mitochondrial elimination and ATG5/inhibitor controls; Figure 5; Materials and methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
         }
       ],
       "openObligations": [
@@ -2998,14 +2178,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "narendra2008-parkin-mitophagy",
           "locator": "Results on Parkin-driven mitochondrial elimination and ATG5/inhibitor controls; Figure 5; Materials and methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
         }
       ],
       "openObligations": [
@@ -3032,18 +2204,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -3071,18 +2231,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -3110,18 +2258,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -3148,22 +2284,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3191,22 +2311,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3234,22 +2338,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3276,22 +2364,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3319,22 +2391,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3362,22 +2418,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3404,26 +2444,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3435,7 +2455,7 @@ export const CELL_REGULATION_RECORDS = {
     },
     {
       "id": "cell:garciaprat2016-geriatric-redox-response",
-      "name": "Satellite-cell redox and chromatin response response",
+      "name": "Satellite-cell redox and chromatin response",
       "kind": "scoped-process",
       "description": "Trolox treatment changes redox-associated, autophagy and p16/chromatin readouts and improves reported geriatric satellite-cell function, constraining a source-proposed ROS\u2013INK4a connection.",
       "claimIds": [
@@ -3451,26 +2471,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3498,26 +2498,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -3544,14 +2524,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "hackett2016-yeast-metabolic-flux",
           "locator": "Primary article: Novel allosteric regulation and metabolic control; Figures 4-6 and Methods Overview"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -3579,14 +2551,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "hackett2016-yeast-metabolic-flux",
           "locator": "Primary article: Novel allosteric regulation and metabolic control; Figures 4-6 and Methods Overview"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -3614,14 +2578,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "hackett2016-yeast-metabolic-flux",
           "locator": "Primary article: Novel allosteric regulation and metabolic control; Figures 4-6 and Methods Overview"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -3742,10 +2698,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
         }
       ],
       "openObligations": [
@@ -3843,10 +2795,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
         }
       ],
       "openObligations": [
@@ -3933,10 +2881,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
         }
       ],
       "openObligations": [
@@ -4006,10 +2950,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
         }
       ],
       "openObligations": [
@@ -4077,10 +3017,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
         }
       ],
       "openObligations": [
@@ -4134,10 +3070,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5"
         }
       ],
       "openObligations": [
@@ -4252,10 +3184,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
         }
       ],
       "openObligations": [
@@ -4345,10 +3273,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
         }
       ],
       "openObligations": [
@@ -4386,10 +3310,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "toda2018-synthetic-contacts",
           "locator": "Using a bidirectional signaling cascade to engineer a self-organizing three-layer structure; Synthetic assembly is robust, reversible, and self-repairing; Figures 2-3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
         }
       ],
       "openObligations": [
@@ -4423,10 +3343,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "toda2018-synthetic-contacts",
           "locator": "Using a bidirectional signaling cascade to engineer a self-organizing three-layer structure; Synthetic assembly is robust, reversible, and self-repairing; Figures 2-3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7"
         }
       ],
       "openObligations": [
@@ -4601,10 +3517,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -4742,10 +3654,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2015-mtor-sasp",
           "locator": "Results: Rapamycin does not reverse cellular senescence; Figure 6; Methods on cell culture, senescence induction, ELISA and DNA synthesis"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -4802,10 +3710,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "purvis2012-p53-dynamics",
           "locator": "Primary main Results and Figures 3-4: post-irradiation growth, senescence-associated staining and equal-cumulative-signal comparisons"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -4851,10 +3755,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "purvis2012-p53-dynamics",
           "locator": "Primary main Results and Figures 3-4: post-irradiation growth, senescence-associated staining and equal-cumulative-signal comparisons"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
         }
       ],
       "openObligations": [
@@ -4962,10 +3862,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -5051,10 +3947,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -5100,10 +3992,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -5141,10 +4029,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "tang2012-apoptotic-recovery",
           "locator": "Results on post-recovery DNA damage and abnormal growth; Figures 3-4; Materials and Methods"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19"
         }
       ],
       "openObligations": [
@@ -5215,10 +4099,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
         }
       ],
       "openObligations": [
@@ -5276,10 +4156,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
         }
       ],
       "openObligations": [
@@ -5357,10 +4233,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -5422,10 +4294,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "garciaprat2016-satellite-autophagy",
           "locator": "Published main article Figures 5-6 and corresponding Results: Trolox, ROS readouts, INK4a H2A ubiquitination and regeneration; Extended Data Figures 2-5 captions"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -5450,22 +4318,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results on Hog1 kinase activity, new protein production, glycerol synthesis and ramp inputs; Figures 4-7; Experimental Procedures"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -5506,22 +4358,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "nwadike2018-ampk-autophagy-boundary",
           "locator": "Discussion: AMPK and glucose starvation signals can dominate and block autophagy; Materials and Methods: Cell culture and treatments, Autophagy assays and Lysosomal assays"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -5562,10 +4398,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "orij2012-cytosolic-ph-control",
           "locator": "Results on pHc-growth-rate relationships and PMA1 perturbation; Materials and methods: pHluorin fluorescence and pH calibration"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
         }
       ],
       "openObligations": [
@@ -5586,26 +4418,6 @@ export const CELL_REGULATION_RECORDS = {
         {
           "sourceId": "laberge2021-author-correction",
           "locator": "Author Correction, Nature Cell Biology 23, 564-565 (2021): complete relevant notice and original/corrected Figure 6e-h"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17"
-        },
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31"
         }
       ],
       "openObligations": [
@@ -5919,7 +4731,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -5943,7 +4755,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -7163,15 +5975,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-cellular-signaling-boundary",
       "kind": "author-definition",
       "statement": "A cell-wide interpretation is a synthesis over defined assays, not proof of complete integrated control, cellular understanding, adaptation optimality or a universal eukaryotic/prokaryotic prerequisite.",
-      "scope": "Scientific admission boundary for original card 4.3; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for cellular signaling and communication; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/3",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "sourjik2002-receptor-sensitivity",
           "locator": "Materials and Methods: Bacterial Strains, Preparation of Cells and Fluorescence Measurements; Figures 1-3 and Results on receptor modification and sensitivity",
@@ -7241,7 +6047,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue.",
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition.",
         "The 2021 correction adds GFP shRNA to Figure 6e and DMSO to Figure 6g. Figure 6g shRNA depletion is DMSO-treated, not an unreported rapamycin-plus-shRNA experiment; no such epistasis conclusion is admitted."
       ]
     },
@@ -7402,15 +6208,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-cycle-arrest-death-boundary",
       "kind": "author-definition",
       "statement": "Cell-cycle regulation and apoptosis are not one obligatory process shared by every cell. Neither prokaryotic ancestry, allostery in every control step nor a universal irreversible termination threshold is derived from these experiments.",
-      "scope": "Scientific admission boundary for original card 4.4; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for cell cycle regulation and apoptosis; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/4",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "spencer2013-cdk2-bifurcation",
           "locator": "Results: A Live-Cell Sensor for CDK2 Activity; Figures 1-3 on mitotic-exit bifurcation",
@@ -7462,7 +6262,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue.",
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition.",
         "The 2021 correction adds GFP shRNA to Figure 6e and DMSO to Figure 6g. Figure 6g shRNA depletion is DMSO-treated, not an unreported rapamycin-plus-shRNA experiment; no such epistasis conclusion is admitted."
       ]
     },
@@ -7579,15 +6379,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-cellular-specialization-boundary",
       "kind": "author-definition",
       "statement": "Shared lineage/genetic background does not prove complete sequence identity; lentiviral conversion explicitly changes the construct context. Persistent identity, epigenetic inheritance, metabolic specialization and signaling responsiveness require distinct endpoint evidence.",
-      "scope": "Scientific admission boundary for original card 4.5; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for cell differentiation and specialization; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/5",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "spencer2009-trail-variability",
           "locator": "Primary author main text and Figures 1-4: sister-cell death-time correlations, cycloheximide and Bid overexpression; Methods summary",
@@ -7621,7 +6415,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue."
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition."
       ]
     },
     {
@@ -7705,15 +6499,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-homeostasis-stress-boundary",
       "kind": "author-definition",
       "statement": "No unique fixed viable envelope, simultaneous stabilization of all variables, universally beneficial stress response or general recovery guarantee is measured. Redox and every ion-specific mechanism remain separate evidence obligations.",
-      "scope": "Scientific admission boundary for original card 4.6; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for cellular homeostasis and stress response; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/6",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results: Hog1 and Cell-Volume Dynamics After Hyperosmotic Shock; Perfect Adaptation; Figures 1-3",
@@ -7765,7 +6553,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue."
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition."
       ]
     },
     {
@@ -7908,15 +6696,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-contact-coordination-boundary",
       "kind": "author-definition",
       "statement": "An engineered aggregate is not a universal evolutionary prototissue stage. No gap-junction conductance, general neighbor synchronization, complete tissue function or universal two-cell critical number is measured.",
-      "scope": "Scientific admission boundary for original card 4.7; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for intercellular contacts and prototissue coordination; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/7",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "ohnishi2014-lineage-segregation",
           "locator": "Results: Single-cell expression profiling of lineage segregation within the ICM; Figure 1 and Methods on embryo collection and single-cell amplification",
@@ -7932,7 +6714,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue."
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition."
       ]
     },
     {
@@ -7981,15 +6763,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-regulatory-architecture-boundary",
       "kind": "author-definition",
       "statement": "A drawn motif alone does not establish its dynamic function. These local/mesoscopic network studies do not reconstruct one complete cell-wide controller, every coupling strength or a universal robustness theorem.",
-      "scope": "Scientific admission boundary for original card 4.13; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for cellular regulatory networks; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/13",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "sourjik2002-receptor-sensitivity",
           "locator": "Materials and Methods: Bacterial Strains, Preparation of Cells and Fluorescence Measurements; Figures 1-3 and Results on receptor modification and sensitivity",
@@ -8089,7 +6865,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue.",
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition.",
         "The 2021 correction adds GFP shRNA to Figure 6e and DMSO to Figure 6g. Figure 6g shRNA depletion is DMSO-treated, not an unreported rapamycin-plus-shRNA experiment; no such epistasis conclusion is admitted."
       ]
     },
@@ -8317,15 +7093,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-sensing-adaptation-boundary",
       "kind": "author-definition",
       "statement": "A sensory pathway can also change behavior, as in chemotaxis; excluding behavioral action is an editorial boundary, not a biological law. No universal optimization, toxin-sensing mechanism or perfect adaptation to arbitrary inputs is established.",
-      "scope": "Scientific admission boundary for original card 4.16; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for cellular sensory systems and environmental adaptation; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/16",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "sourjik2002-receptor-sensitivity",
           "locator": "Materials and Methods: Bacterial Strains, Preparation of Cells and Fluorescence Measurements; Figures 1-3 and Results on receptor modification and sensitivity",
@@ -8353,7 +7123,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue."
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition."
       ]
     },
     {
@@ -8423,15 +7193,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-state-dependent-biochemistry-boundary",
       "kind": "author-definition",
       "statement": "The cell-state description summarizes physically realized variables. The assays do not establish an additional irreducible downward force, coordinated purpose, universal metabolic-cycle necessity or causation from a global state label alone.",
-      "scope": "Scientific admission boundary for original card 4.17; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for regulation of enzymatic networks by cellular state; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/17",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "muzzey2009-osmotic-adaptation",
           "locator": "Results: Hog1 and Cell-Volume Dynamics After Hyperosmotic Shock; Perfect Adaptation; Figures 1-3",
@@ -8483,7 +7247,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue.",
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition.",
         "The 2021 correction adds GFP shRNA to Figure 6e and DMSO to Figure 6g. Figure 6g shRNA depletion is DMSO-treated, not an unreported rapamycin-plus-shRNA experiment; no such epistasis conclusion is admitted."
       ]
     },
@@ -8625,15 +7389,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-apoptotic-execution-boundary",
       "kind": "author-definition",
       "statement": "Molecules do not have autonomous survival goals. A whole-cell commitment label is not an extra intervention. Execution signs do not universally preclude recovery, and local viability/repair capability was not exhaustively measured before death.",
-      "scope": "Scientific admission boundary for original card 4.19; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for apoptosis control; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/19",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "albeck2008-extrinsic-apoptosis-switch",
           "locator": "Results: Modeling Extrinsic Apoptosis and Linking Models and Experiment Via Perturbation; Figures 1-5",
@@ -8655,7 +7413,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue."
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition."
       ]
     },
     {
@@ -8712,15 +7470,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-autophagy-turnover-boundary",
       "kind": "author-definition",
       "statement": "LC3/puncta are not alone completed flux. Chaperone participation, mTOR input and prokaryotic organization are not universal prerequisites for every degradation pathway. Direct atom-level recycling and every cargo-recognition mechanism remain unmeasured.",
-      "scope": "Scientific admission boundary for original card 4.20; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for autophagy and local degradation of subcellular components; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/20",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "kim2011-ampk-mtor-ulk1",
           "locator": "Results: Glucose starvation activates Ulk1 protein kinase through AMPK-dependent phosphorylation; AMPK activates Ulk1 by phosphorylating Ser 317 and Ser 777; Figures 1-3",
@@ -8748,7 +7500,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue."
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition."
       ]
     },
     {
@@ -8837,15 +7589,9 @@ export const CELL_REGULATION_RECORDS = {
       "id": "D-cell-mtor-autophagy-senescence-boundary",
       "kind": "author-definition",
       "statement": "Nutrient classes, cell backgrounds, serum and observation times change the autophagy outcome. Rapamycin-sensitive SASP does not demonstrate rejuvenation, recovery of division or a universal maintenance-versus-growth decision variable.",
-      "scope": "Scientific admission boundary for original card 4.31; not a claim that all excluded biological mechanisms are absent.",
+      "scope": "Scientific admission boundary for mTOR/nutrient-sensing control of autophagy and senescence; not a claim that all excluded biological mechanisms are absent.",
       "status": "definition",
       "citations": [
-        {
-          "sourceId": "legacy-4",
-          "locator": "/31",
-          "role": "provenance",
-          "note": "Original scope and unverified defaults are author-supplied; primary evidence below bounds the admitted reconstruction."
-        },
         {
           "sourceId": "kim2011-ampk-mtor-ulk1",
           "locator": "Results: Glucose starvation activates Ulk1 protein kinase through AMPK-dependent phosphorylation; AMPK activates Ulk1 by phosphorylating Ser 317 and Ser 777; Figures 1-3",
@@ -8879,7 +7625,7 @@ export const CELL_REGULATION_RECORDS = {
       ],
       "checkIds": [],
       "limitations": [
-        "No unsupported numerical default, universal prerequisite, implicit evolutionary order or causal direction is inherited from the original catalogue.",
+        "No universal prerequisite, implicit evolutionary order or causal direction is admitted by this definition.",
         "The 2021 correction adds GFP shRNA to Figure 6e and DMSO to Figure 6g. Figure 6g shRNA depletion is DMSO-treated, not an unreported rapamycin-plus-shRNA experiment; no such epistasis conclusion is admitted."
       ]
     },
@@ -9179,7 +7925,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Prepared E. coli receptor-modification strains in a flow cell",
           "input": "Change attractant/repellent concentration and compare receptor-modification backgrounds.",
           "observable": "Stimulus-dependent CheY/CheZ FRET and inferred pathway-activity dose response",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9241,7 +7987,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Hog1-YFP yeast with SHO1 deleted in a rapid-switch flow chamber",
           "input": "Apply a hyperosmotic step while retaining the defined growth medium and observation boundary.",
           "observable": "Hog1 nuclear enrichment, cell-volume dynamics and glycerol accumulation",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9346,7 +8092,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Wild-type and engineered Hsp70-feedback yeast strains",
           "input": "Disconnect Hsf1-to-Hsp70 transcriptional feedback or alter CE2-mediated Hsp70 binding.",
           "observable": "HSE-YFP dynamics, Hsf1-Hsp70 binding and Hsp104 foci",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9408,7 +8154,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "MCF10A cells with a DHB CDK2 activity reporter; additional cell backgrounds are source checks",
           "input": "Alter p21 or mitogen availability and follow individual subsequent CDK2 trajectories.",
           "observable": "Single-cell DHB translocation trajectories, p21 state and later S-phase entry",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9470,7 +8216,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Cell-free Xenopus egg extracts supplied with nondegradable cyclin B1",
           "input": "Vary supplied nondegradable cyclin and initial extract state.",
           "observable": "Cdc2 kinase activity versus supplied cyclin and preparation history",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9532,7 +8278,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Irradiated MCF7 cells with p53-Venus and temporally controlled MDM2 inhibition",
           "input": "Use timed MDM2 inhibition to change p53 waveform while retaining the damage comparison.",
           "observable": "p53 time course, CDKN1A/other transcripts, senescence-associated staining and later division",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9680,7 +8426,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Primary mouse liver cells with ethanol-washout imaging",
           "input": "Remove the defined apoptotic inducer and observe the same previously responding cells.",
           "observable": "Same-cell morphology and mitochondrial appearance after washout",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9742,7 +8488,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Mouse embryonic and postnatal fibroblasts transduced with neuronal factors",
           "input": "Supply the defined neuronal transcription factors and culture protocol.",
           "observable": "Neuronal markers, action potentials and synaptic responses in specified conversion assays",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9847,7 +8593,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Engineered mouse L929 sender and receiver fibroblasts in low-adhesion U-bottom wells",
           "input": "Provide the specified synthetic sender\u2013receiver contact and cadherin-output circuit.",
           "observable": "Contact-triggered reporter/cadherin expression and multilayer aggregate organization",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -9995,7 +8741,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "HEK293 and mouse embryonic fibroblast kinase, knockout and reconstitution assays",
           "input": "Change AMPK/mTOR activity or Ulk1 phosphorylation context under defined nutrient conditions.",
           "observable": "Ulk1 phosphorylation/activity, AMPK interaction and autophagy-associated readouts",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10057,7 +8803,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "MEF and HEK293-derived autophagy/lysosome preparations",
           "input": "Change the nutrient combination or activate AMPK with source-defined pharmacology.",
           "observable": "Autophagosome formation, autophagic flux and lysosomal acidification",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10119,7 +8865,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Senescent primary human fibroblasts including HCA2",
           "input": "Inhibit mTORC1 pharmacologically and compare the IL1A bypass condition.",
           "observable": "IL1A translational efficiency, IL6 secretion and NF-kappaB-associated output",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10224,7 +8970,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Depolarized-mitochondria preparations with endogenous or ectopic Parkin",
           "input": "Depolarize mitochondria and compare Parkin/autophagy competence within the stated preparations.",
           "observable": "Parkin recruitment, mitochondrial colocalization and later mitochondrial-marker elimination",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10286,7 +9032,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "HeLa cells with a cleavage-responsive caspase biosensor",
           "input": "Wash out ethanol after the defined reporter-positive response.",
           "observable": "Caspase-biosensor localization and same-cell post-washout morphology",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10348,7 +9094,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Young male mice with satellite-cell-specific constitutive or inducible Atg7 deletion",
           "input": "Delete Atg7 in the specified Pax7-expressing satellite-cell preparation.",
           "observable": "Satellite-cell counts, senescence-associated transcripts/staining, DNA-damage markers and regenerative response",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10410,7 +9156,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Isolated geriatric mouse satellite cells pretreated before transplantation",
           "input": "Pretreat geriatric donor cells with rapamycin or the separately defined Atg7-expression intervention.",
           "observable": "Autophagy-related flux readouts, donor-cell expansion and regenerative contribution",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10472,7 +9218,7 @@ export const CELL_REGULATION_RECORDS = {
           "bearer": "Geriatric mouse satellite cells with source-defined Trolox treatment",
           "input": "Apply the source-defined antioxidant treatment to the geriatric preparation.",
           "observable": "ROS-associated signal, locus-specific H2A ubiquitination, p16 and finite functional response",
-          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule, carrier minimum or independently quantified edge weight."
+          "limit": "Source-scoped intervention comparison only; no universal necessity, sufficient construction rule or independently quantified edge weight."
         },
         "countingStatus": "unoperationalized",
         "numericalAdmission": "none"
@@ -10527,7 +9273,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:cellular-signaling-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-cellular-signaling-boundary"
       ]
@@ -10698,7 +9444,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:cycle-arrest-death-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-cycle-arrest-death-boundary"
       ]
@@ -10837,7 +9583,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:cellular-specialization-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-cellular-specialization-boundary"
       ]
@@ -10960,7 +9706,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:homeostasis-stress-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-homeostasis-stress-boundary"
       ]
@@ -11163,7 +9909,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:contact-coordination-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-contact-coordination-boundary"
       ]
@@ -11206,7 +9952,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:regulatory-architecture-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-regulatory-architecture-boundary"
       ]
@@ -11489,7 +10235,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:sensing-adaptation-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-sensing-adaptation-boundary"
       ]
@@ -11580,7 +10326,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:state-dependent-biochemistry-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-state-dependent-biochemistry-boundary"
       ]
@@ -11735,7 +10481,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:apoptotic-execution-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-apoptotic-execution-boundary"
       ]
@@ -11810,7 +10556,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:autophagy-turnover-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-autophagy-turnover-boundary"
       ]
@@ -11917,7 +10663,7 @@ export const CELL_REGULATION_RECORDS = {
       "target": "cell:mtor-autophagy-senescence-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "The definition states what the card admits and separates stronger unestablished interpretations.",
+      "assertion": "The definition states what the scope admits and separates stronger unestablished interpretations.",
       "claimIds": [
         "D-cell-mtor-autophagy-senescence-boundary"
       ]
@@ -12347,7 +11093,7 @@ export const CELL_REGULATION_RECORDS = {
       "observable": "Cdc2 kinase activity versus supplied cyclin and preparation history",
       "finding": "Cdc2 activity exhibits different activation and inactivation thresholds with preparation history, consistent with bistability and hysteresis in the tested extract system.",
       "limitations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -12921,8 +11667,8 @@ export const CELL_REGULATION_RECORDS = {
     },
     {
       "id": "cellular-apoptosis-commitment-universality",
-      "candidate": "Execution-associated apoptotic signs always mark irreversible commitment.",
-      "alternative": "Some preparations can recover after inducer removal, with possible retained damage.",
+      "candidate": "Some preparations can recover after inducer removal, with possible retained damage.",
+      "alternative": "Execution-associated apoptotic signs always mark irreversible commitment.",
       "sourceIds": [
         "albeck2008-extrinsic-apoptosis-switch",
         "tang2012-apoptotic-recovery"
@@ -12941,8 +11687,8 @@ export const CELL_REGULATION_RECORDS = {
     },
     {
       "id": "cellular-sasp-versus-arrest",
-      "candidate": "Suppression of senescence-associated secretion implies reversal of proliferation arrest.",
-      "alternative": "Secretory output and persistent growth arrest are separable endpoints.",
+      "candidate": "Secretory output and persistent growth arrest are separable endpoints.",
+      "alternative": "Suppression of senescence-associated secretion implies reversal of proliferation arrest.",
       "sourceIds": [
         "laberge2015-mtor-sasp"
       ],
@@ -12960,8 +11706,8 @@ export const CELL_REGULATION_RECORDS = {
     },
     {
       "id": "cellular-state-marker-versus-function",
-      "candidate": "A changed lineage marker alone establishes complete differentiated cellular identity.",
-      "alternative": "Expression signatures, electrical function, temporal persistence and genome/epigenome identity require distinct tests.",
+      "candidate": "Expression signatures, electrical function, temporal persistence and genome/epigenome identity require distinct tests.",
+      "alternative": "A changed lineage marker alone establishes complete differentiated cellular identity.",
       "sourceIds": [
         "vierbuchen2010-induced-neurons",
         "ohnishi2014-lineage-segregation"
@@ -14141,1663 +12887,3 @@ export const CELL_REGULATION_RECORDS = {
   ]
 };
 
-export const CARD_SCOPES = {
-  "4.3": {
-    "sourceIndex": 3,
-    "originalName": "Cellular Signaling and Communication",
-    "scope": "Cellular signaling is reconstructed as stimulus-dependent molecular/cellular response in bacterial, yeast and mammalian preparations, with timing, amplification, attenuation and feedback measured separately.",
-    "nodeIds": [
-      "cell:cellular-signaling-scope",
-      "cell:cellular-signaling-boundary",
-      "cell:sourjik2002-chemotactic-fret-context",
-      "cell:sourjik2002-chemotactic-fret-input",
-      "cell:sourjik2002-chemotactic-fret-response",
-      "cell:muzzey2009-step-osmotic-response-context",
-      "cell:muzzey2009-step-osmotic-response-input",
-      "cell:muzzey2009-step-osmotic-response-response",
-      "cell:krakowiak2018-heat-feedback-context",
-      "cell:krakowiak2018-heat-feedback-input",
-      "cell:krakowiak2018-heat-feedback-response",
-      "cell:spencer2013-mitotic-exit-decision-context",
-      "cell:spencer2013-mitotic-exit-decision-input",
-      "cell:spencer2013-mitotic-exit-decision-response",
-      "cell:purvis2012-p53-dynamics-context",
-      "cell:purvis2012-p53-dynamics-input",
-      "cell:purvis2012-p53-dynamics-response",
-      "cell:albeck2008-trail-switch-context",
-      "cell:albeck2008-trail-switch-input",
-      "cell:albeck2008-trail-switch-response",
-      "cell:ohnishi2014-icm-lineage-context",
-      "cell:ohnishi2014-icm-lineage-input",
-      "cell:ohnishi2014-icm-lineage-response",
-      "cell:toda2018-contact-sorting-context",
-      "cell:toda2018-contact-sorting-input",
-      "cell:toda2018-contact-sorting-response",
-      "cell:kim2011-ulk1-phosphorylation-context",
-      "cell:kim2011-ulk1-phosphorylation-input",
-      "cell:kim2011-ulk1-phosphorylation-response",
-      "cell:laberge2015-sasp-translation-context",
-      "cell:laberge2015-sasp-translation-input",
-      "cell:laberge2015-sasp-translation-response",
-      "cell:laberge-corrected-controls"
-    ],
-    "claimIds": [
-      "C-cell-cellular-signaling-scope",
-      "D-cell-cellular-signaling-boundary",
-      "C-cell-sourjik2002-chemotactic-fret-response",
-      "C-cell-muzzey2009-step-osmotic-response-response",
-      "C-cell-krakowiak2018-heat-feedback-response",
-      "C-cell-spencer2013-mitotic-exit-decision-response",
-      "C-cell-purvis2012-p53-dynamics-response",
-      "C-cell-albeck2008-trail-switch-response",
-      "C-cell-ohnishi2014-icm-lineage-response",
-      "C-cell-toda2018-contact-sorting-response",
-      "C-cell-kim2011-ulk1-phosphorylation-response",
-      "C-cell-laberge2015-sasp-translation-response",
-      "M-cell-sourjik2002-chemotactic-fret-preparation",
-      "M-cell-muzzey2009-step-osmotic-response-preparation",
-      "M-cell-krakowiak2018-heat-feedback-preparation",
-      "M-cell-spencer2013-mitotic-exit-decision-preparation",
-      "M-cell-purvis2012-p53-dynamics-preparation",
-      "M-cell-albeck2008-trail-switch-preparation",
-      "M-cell-ohnishi2014-icm-lineage-preparation",
-      "M-cell-toda2018-contact-sorting-preparation",
-      "M-cell-kim2011-ulk1-phosphorylation-preparation",
-      "M-cell-laberge2015-sasp-translation-preparation",
-      "D-cell-laberge-corrected-controls"
-    ],
-    "assertions": [
-      {
-        "topic": "Propagation, amplification, attenuation and feedback",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-sourjik2002-chemotactic-fret-response",
-          "C-cell-muzzey2009-step-osmotic-response-response",
-          "C-cell-krakowiak2018-heat-feedback-response"
-        ],
-        "reason": "Bacterial FRET, Hog1 dynamics and engineered Hsf1 feedback supply different observable tests; amplification is not inferred merely from a pathway drawing."
-      },
-      {
-        "topic": "Coordination of metabolism, gene expression, transport and structure",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "Specific transcriptional, kinase, secretory and sorting outputs are supported; simultaneous complete cell-wide coordination and every transport mechanism are not measured."
-      },
-      {
-        "topic": "Sustained system-wide communication across compartments and timescales",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "Responses and durations belong to individual assays. No merged multi-publication network is admitted as one physically observed cell."
-      },
-      {
-        "topic": "Sensing, interpretation and adaptive control of cellular state",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "Sensing and response have operational readouts; interpretation is molecular transduction language, while optimal adaptation and an independent interpreting agent are not demonstrated."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "3.15",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "The bacterial pathway and named cellular circuits provide a mechanistic continuation of molecular signaling, not a universal two-carrier minimum."
-      },
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "Prokaryotic organization is one studied cellular context, not an obligatory immediate parent of all eukaryotic signaling."
-      },
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "Eukaryotic compartments matter in some mammalian/yeast assays; bacterial chemotaxis does not require a eukaryotic compartment regime."
-      },
-      {
-        "parentCode": "4.2",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-signaling-scope",
-          "D-cell-cellular-signaling-boundary"
-        ],
-        "reason": "Nutrient/kinase contexts connect metabolic inputs to responses, without proving a universal metabolic-cycle prerequisite or weight."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": []
-  },
-  "4.4": {
-    "sourceIndex": 4,
-    "originalName": "Cell Cycle Regulation and Apoptosis",
-    "scope": "Proliferation/quiescence control, cell-free mitotic switching, DNA-damage-dependent arrest and receptor-mediated apoptotic execution are distinct processes that can interact in particular cells.",
-    "nodeIds": [
-      "cell:cycle-arrest-death-scope",
-      "cell:cycle-arrest-death-boundary",
-      "cell:spencer2013-mitotic-exit-decision-context",
-      "cell:spencer2013-mitotic-exit-decision-input",
-      "cell:spencer2013-mitotic-exit-decision-response",
-      "cell:pomerening2003-cdc2-history-context",
-      "cell:pomerening2003-cdc2-history-input",
-      "cell:pomerening2003-cdc2-history-response",
-      "cell:purvis2012-p53-dynamics-context",
-      "cell:purvis2012-p53-dynamics-input",
-      "cell:purvis2012-p53-dynamics-response",
-      "cell:albeck2008-trail-switch-context",
-      "cell:albeck2008-trail-switch-input",
-      "cell:albeck2008-trail-switch-response",
-      "cell:spencer2009-sister-cell-variability-context",
-      "cell:spencer2009-sister-cell-variability-input",
-      "cell:spencer2009-sister-cell-variability-response",
-      "cell:tang2012-apoptotic-washout-context",
-      "cell:tang2012-apoptotic-washout-input",
-      "cell:tang2012-apoptotic-washout-response",
-      "cell:laberge2015-arrest-boundary-context",
-      "cell:laberge2015-arrest-boundary-input",
-      "cell:laberge2015-arrest-boundary-response",
-      "cell:tang2012-hela-execution-recovery-context",
-      "cell:tang2012-hela-execution-recovery-input",
-      "cell:tang2012-hela-execution-recovery-response",
-      "cell:laberge-corrected-controls"
-    ],
-    "claimIds": [
-      "C-cell-cycle-arrest-death-scope",
-      "D-cell-cycle-arrest-death-boundary",
-      "C-cell-spencer2013-mitotic-exit-decision-response",
-      "C-cell-pomerening2003-cdc2-history-response",
-      "C-cell-purvis2012-p53-dynamics-response",
-      "C-cell-albeck2008-trail-switch-response",
-      "C-cell-spencer2009-sister-cell-variability-response",
-      "C-cell-tang2012-apoptotic-washout-response",
-      "C-cell-laberge2015-arrest-boundary-response",
-      "C-cell-tang2012-hela-execution-recovery-response",
-      "M-cell-spencer2013-mitotic-exit-decision-preparation",
-      "M-cell-pomerening2003-cdc2-history-preparation",
-      "M-cell-purvis2012-p53-dynamics-preparation",
-      "M-cell-albeck2008-trail-switch-preparation",
-      "M-cell-spencer2009-sister-cell-variability-preparation",
-      "M-cell-tang2012-apoptotic-washout-preparation",
-      "M-cell-laberge2015-arrest-boundary-preparation",
-      "M-cell-tang2012-hela-execution-recovery-preparation",
-      "D-cell-laberge-corrected-controls"
-    ],
-    "assertions": [
-      {
-        "topic": "Proliferation, DNA replication timing, mitotic progression and checkpoint enforcement",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-spencer2013-mitotic-exit-decision-response",
-          "C-cell-pomerening2003-cdc2-history-response",
-          "C-cell-purvis2012-p53-dynamics-response"
-        ],
-        "reason": "CDK2 trajectories, S-phase-associated readouts, extract hysteresis and damage-dependent arrest address distinct controls; biomass accumulation and the complete set of checkpoints are not jointly reconstructed."
-      },
-      {
-        "topic": "Repair, transient arrest and programmed death alternatives",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-spencer2013-mitotic-exit-decision-response",
-          "C-cell-purvis2012-p53-dynamics-response",
-          "C-cell-albeck2008-trail-switch-response"
-        ],
-        "reason": "Quiescence, DNA-damage-associated arrest and TRAIL execution are represented with separate contexts and endpoints, without asserting one common universal decision process."
-      },
-      {
-        "topic": "Damage, metabolic, redox and extracellular input integration",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cycle-arrest-death-scope",
-          "D-cell-cycle-arrest-death-boundary"
-        ],
-        "reason": "Mitogens, DNA damage and receptor ligands are tested in distinct preparations. Simultaneous redox/metabolic integration into all cycle and death transitions is not established."
-      },
-      {
-        "topic": "Apoptosis embedded in the same broader cycle-control architecture",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cycle-arrest-death-scope",
-          "D-cell-cycle-arrest-death-boundary"
-        ],
-        "reason": "Cell-cycle control and apoptosis interact biologically but are represented separately. Their joint presence does not make one process a universal prerequisite for the other."
-      },
-      {
-        "topic": "Irreversible termination commitment",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-tang2012-apoptotic-washout-response"
-        ],
-        "reason": "The universal claim is not admitted: inducer-washout experiments report recovery after execution-associated signs, while continuous-inducer and other preparations can die."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-cycle-arrest-death-scope",
-          "D-cell-cycle-arrest-death-boundary"
-        ],
-        "reason": "Mammalian cycle/apoptosis and frog extracts do not establish prokaryotic organization as a necessary parent of this combined card."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cycle-arrest-death-scope",
-          "D-cell-cycle-arrest-death-boundary"
-        ],
-        "reason": "Defined mitogen, damage and death-receptor signals modulate particular outcomes; signaling as a broad category is not a sufficient universal construction rule."
-      },
-      {
-        "parentCode": "3.12",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cycle-arrest-death-scope",
-          "D-cell-cycle-arrest-death-boundary"
-        ],
-        "reason": "Regulatory protein interactions can contribute, but no source requires one universal allosteric mechanism or a two-protein critical count."
-      },
-      {
-        "parentCode": "3.25",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-cycle-arrest-death-scope",
-          "D-cell-cycle-arrest-death-boundary"
-        ],
-        "reason": "The admitted cell-cycle/death contexts do not independently establish a necessary redox-balance parent for every transition."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": []
-  },
-  "4.5": {
-    "sourceIndex": 5,
-    "originalName": "Cell Differentiation and Specialization",
-    "scope": "Natural embryonic lineage expression separation and engineered fibroblast-to-neuron functional conversion provide different evidence for cellular state diversification.",
-    "nodeIds": [
-      "cell:cellular-specialization-scope",
-      "cell:cellular-specialization-boundary",
-      "cell:spencer2009-sister-cell-variability-context",
-      "cell:spencer2009-sister-cell-variability-input",
-      "cell:spencer2009-sister-cell-variability-response",
-      "cell:vierbuchen2010-neuronal-conversion-context",
-      "cell:vierbuchen2010-neuronal-conversion-input",
-      "cell:vierbuchen2010-neuronal-conversion-response",
-      "cell:ohnishi2014-icm-lineage-context",
-      "cell:ohnishi2014-icm-lineage-input",
-      "cell:ohnishi2014-icm-lineage-response",
-      "cell:toda2018-contact-sorting-context",
-      "cell:toda2018-contact-sorting-input",
-      "cell:toda2018-contact-sorting-response",
-      "cell:garciaprat2016-young-atg7-loss-context",
-      "cell:garciaprat2016-young-atg7-loss-input",
-      "cell:garciaprat2016-young-atg7-loss-response",
-      "cell:garciaprat2016-geriatric-rescue-context",
-      "cell:garciaprat2016-geriatric-rescue-input",
-      "cell:garciaprat2016-geriatric-rescue-response",
-      "cell:garciaprat2016-geriatric-redox-context",
-      "cell:garciaprat2016-geriatric-redox-input",
-      "cell:garciaprat2016-geriatric-redox-response"
-    ],
-    "claimIds": [
-      "C-cell-cellular-specialization-scope",
-      "D-cell-cellular-specialization-boundary",
-      "C-cell-spencer2009-sister-cell-variability-response",
-      "C-cell-vierbuchen2010-neuronal-conversion-response",
-      "C-cell-ohnishi2014-icm-lineage-response",
-      "C-cell-toda2018-contact-sorting-response",
-      "C-cell-garciaprat2016-young-atg7-loss-response",
-      "C-cell-garciaprat2016-geriatric-rescue-response",
-      "C-cell-garciaprat2016-geriatric-redox-response",
-      "M-cell-spencer2009-sister-cell-variability-preparation",
-      "M-cell-vierbuchen2010-neuronal-conversion-preparation",
-      "M-cell-ohnishi2014-icm-lineage-preparation",
-      "M-cell-toda2018-contact-sorting-preparation",
-      "M-cell-garciaprat2016-young-atg7-loss-preparation",
-      "M-cell-garciaprat2016-geriatric-rescue-preparation",
-      "M-cell-garciaprat2016-geriatric-redox-preparation"
-    ],
-    "assertions": [
-      {
-        "topic": "Distinct functional states within genetically identical cells without sequence change",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-vierbuchen2010-neuronal-conversion-response",
-          "C-cell-ohnishi2014-icm-lineage-response"
-        ],
-        "reason": "Natural embryo lineage profiles and engineered neuronal function are independent cases. No whole-genome identity claim is inferred; the lentiviral assay explicitly modifies the construct context."
-      },
-      {
-        "topic": "Persistent specialized identity with expression, metabolism, signaling and structure",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-specialization-scope",
-          "D-cell-cellular-specialization-boundary"
-        ],
-        "reason": "Stage-specific expression and neuronal electrical/marker readouts support specialization. Complete metabolic reconfiguration, long-term resilience and altered responsiveness require separate tests."
-      },
-      {
-        "topic": "Regulatory topology and signaling history",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-vierbuchen2010-neuronal-conversion-response",
-          "C-cell-ohnishi2014-icm-lineage-response"
-        ],
-        "reason": "Defined factor combinations and Fgf4-null lineage comparisons constrain state induction and signal contribution; they do not reconstruct every regulatory edge."
-      },
-      {
-        "topic": "Epigenetic constraint and feedback stabilize all differentiated states",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-garciaprat2016-geriatric-redox-response"
-        ],
-        "reason": "The satellite-cell study measures INK4a-locus chromatin and p16 responses under redox perturbation. This is not a complete differentiated-state memory mechanism or proof of a universal feedback requirement."
-      },
-      {
-        "topic": "Cell-level property versus higher tissue organization",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-specialization-scope",
-          "D-cell-cellular-specialization-boundary"
-        ],
-        "reason": "Individual cell-state readouts are distinguished from aggregate/tissue architecture. The level assignment is a modeling convention, not a measured ontological boundary."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-specialization-scope",
-          "D-cell-cellular-specialization-boundary"
-        ],
-        "reason": "The lineage and neuronal preparations are eukaryotic; compartmentalization is context, not an experimentally isolated sufficient cause of differentiation."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-specialization-scope",
-          "D-cell-cellular-specialization-boundary"
-        ],
-        "reason": "Fgf4-null and factor-conversion studies constrain particular signaling/regulatory inputs, not all differentiation pathways."
-      },
-      {
-        "parentCode": "3.4",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-specialization-scope",
-          "D-cell-cellular-specialization-boundary"
-        ],
-        "reason": "Expression is directly profiled and factor supply is manipulated; DNA replication is not imposed as a universal requirement for every differentiated function."
-      },
-      {
-        "parentCode": "3.19",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-cellular-specialization-scope",
-          "D-cell-cellular-specialization-boundary"
-        ],
-        "reason": "A satellite-cell INK4a chromatin response is measured, but complete differentiated-state memory and universal chromatin necessity remain unestablished."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": []
-  },
-  "4.6": {
-    "sourceIndex": 6,
-    "originalName": "Cellular Homeostasis and Stress Response",
-    "scope": "Homeostasis is represented by named regulated variables and finite recovery responses: osmotic signaling/volume, cytosolic pH, heat-shock feedback and nutrient-dependent quality-control responses.",
-    "nodeIds": [
-      "cell:homeostasis-stress-scope",
-      "cell:homeostasis-stress-boundary",
-      "cell:muzzey2009-step-osmotic-response-context",
-      "cell:muzzey2009-step-osmotic-response-input",
-      "cell:muzzey2009-step-osmotic-response-response",
-      "cell:muzzey2009-ramp-feedback-constraint-context",
-      "cell:muzzey2009-ramp-feedback-constraint-input",
-      "cell:muzzey2009-ramp-feedback-constraint-response",
-      "cell:krakowiak2018-heat-feedback-context",
-      "cell:krakowiak2018-heat-feedback-input",
-      "cell:krakowiak2018-heat-feedback-response",
-      "cell:purvis2012-p53-dynamics-context",
-      "cell:purvis2012-p53-dynamics-input",
-      "cell:purvis2012-p53-dynamics-response",
-      "cell:tang2012-apoptotic-washout-context",
-      "cell:tang2012-apoptotic-washout-input",
-      "cell:tang2012-apoptotic-washout-response",
-      "cell:orij2012-ph-growth-context",
-      "cell:orij2012-ph-growth-input",
-      "cell:orij2012-ph-growth-response",
-      "cell:nwadike2018-nutrient-flux-contrast-context",
-      "cell:nwadike2018-nutrient-flux-contrast-input",
-      "cell:nwadike2018-nutrient-flux-contrast-response",
-      "cell:narendra2008-mitochondrial-turnover-context",
-      "cell:narendra2008-mitochondrial-turnover-input",
-      "cell:narendra2008-mitochondrial-turnover-response",
-      "cell:tang2012-hela-execution-recovery-context",
-      "cell:tang2012-hela-execution-recovery-input",
-      "cell:tang2012-hela-execution-recovery-response",
-      "cell:garciaprat2016-young-atg7-loss-context",
-      "cell:garciaprat2016-young-atg7-loss-input",
-      "cell:garciaprat2016-young-atg7-loss-response",
-      "cell:garciaprat2016-geriatric-rescue-context",
-      "cell:garciaprat2016-geriatric-rescue-input",
-      "cell:garciaprat2016-geriatric-rescue-response",
-      "cell:garciaprat2016-geriatric-redox-context",
-      "cell:garciaprat2016-geriatric-redox-input",
-      "cell:garciaprat2016-geriatric-redox-response",
-      "cell:hog1-integrator-implementation"
-    ],
-    "claimIds": [
-      "C-cell-homeostasis-stress-scope",
-      "D-cell-homeostasis-stress-boundary",
-      "C-cell-muzzey2009-step-osmotic-response-response",
-      "C-cell-muzzey2009-ramp-feedback-constraint-response",
-      "C-cell-krakowiak2018-heat-feedback-response",
-      "C-cell-purvis2012-p53-dynamics-response",
-      "C-cell-tang2012-apoptotic-washout-response",
-      "C-cell-orij2012-ph-growth-response",
-      "C-cell-nwadike2018-nutrient-flux-contrast-response",
-      "C-cell-narendra2008-mitochondrial-turnover-response",
-      "C-cell-tang2012-hela-execution-recovery-response",
-      "C-cell-garciaprat2016-young-atg7-loss-response",
-      "C-cell-garciaprat2016-geriatric-rescue-response",
-      "C-cell-garciaprat2016-geriatric-redox-response",
-      "M-cell-muzzey2009-step-osmotic-response-preparation",
-      "M-cell-muzzey2009-ramp-feedback-constraint-preparation",
-      "M-cell-krakowiak2018-heat-feedback-preparation",
-      "M-cell-purvis2012-p53-dynamics-preparation",
-      "M-cell-tang2012-apoptotic-washout-preparation",
-      "M-cell-orij2012-ph-growth-preparation",
-      "M-cell-nwadike2018-nutrient-flux-contrast-preparation",
-      "M-cell-narendra2008-mitochondrial-turnover-preparation",
-      "M-cell-tang2012-hela-execution-recovery-preparation",
-      "M-cell-garciaprat2016-young-atg7-loss-preparation",
-      "M-cell-garciaprat2016-geriatric-rescue-preparation",
-      "M-cell-garciaprat2016-geriatric-redox-preparation",
-      "C-cell-hog1-integrator-implementation"
-    ],
-    "assertions": [
-      {
-        "topic": "pH, osmotic pressure and temperature-response regulation",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-muzzey2009-step-osmotic-response-response",
-          "C-cell-krakowiak2018-heat-feedback-response",
-          "C-cell-orij2012-ph-growth-response"
-        ],
-        "reason": "pHluorin, osmotic signaling/volume and heat-shock-feedback readouts provide distinct regulated-variable cases. Turgor is inferred rather than directly measured."
-      },
-      {
-        "topic": "Ionic balance, redox and all macromolecular integrity",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-garciaprat2016-geriatric-redox-response"
-        ],
-        "reason": "Satellite-cell ROS-associated and antioxidant comparisons add a specific redox case. The assays do not cover every ion or molecular damage species; pH and Hsf1 are not substitutes for those measurements."
-      },
-      {
-        "topic": "Transient protective reconfiguration, repair and survival",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-krakowiak2018-heat-feedback-response",
-          "C-cell-tang2012-apoptotic-washout-response",
-          "C-cell-narendra2008-mitochondrial-turnover-response"
-        ],
-        "reason": "Response deactivation, turnover and some post-washout recovery are tested; a response need not always improve survival, and recovery can retain damage."
-      },
-      {
-        "topic": "Stable viability envelope under arbitrary fluctuation",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "No universal multidimensional viable envelope or guarantee of recoverability is extracted from a finite set of perturbations. Ramp failure and nutrient-specific flux explicitly limit transfer."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "Yeast and mammalian stress-response assays do not make prokaryotic organization a necessary immediate dependency."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "Measured HOG/Hsf1/nutrient signaling participates in particular responses, not every possible stability mechanism."
-      },
-      {
-        "parentCode": "3.28",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "The pH study supports regulated cytosolic pH in yeast, not every ionic variable or a universal stability threshold."
-      },
-      {
-        "parentCode": "3.20",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "The Hsf1-Hsp70 experiment directly tests chaperone feedback, but does not make that mechanism necessary for all homeostasis."
-      },
-      {
-        "parentCode": "3.25",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "Satellite-cell ROS/Trolox comparisons provide a specific redox case, without universal redox stability inferred from Hsf1 or pH."
-      },
-      {
-        "parentCode": "4.23",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "Innate inflammatory recognition is not a universal requirement for yeast heat/osmotic homeostasis; any mammalian-specific coupling needs its own context."
-      },
-      {
-        "parentCode": "4.31",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-homeostasis-stress-scope",
-          "D-cell-homeostasis-stress-boundary"
-        ],
-        "reason": "Nutrient/kinase/autophagy contexts supply a specific coupling, with no universal direction or beneficial effect."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": []
-  },
-  "4.7": {
-    "sourceIndex": 7,
-    "originalName": "Intercellular Contacts and Prototissue Coordination",
-    "scope": "Cell contact, engineered juxtacrine induction, differential adhesion and multicellular spatial sorting are separated from natural lineage signaling and from physiological tissue differentiation.",
-    "nodeIds": [
-      "cell:contact-coordination-scope",
-      "cell:contact-coordination-boundary",
-      "cell:ohnishi2014-icm-lineage-context",
-      "cell:ohnishi2014-icm-lineage-input",
-      "cell:ohnishi2014-icm-lineage-response",
-      "cell:toda2018-contact-sorting-context",
-      "cell:toda2018-contact-sorting-input",
-      "cell:toda2018-contact-sorting-response"
-    ],
-    "claimIds": [
-      "C-cell-contact-coordination-scope",
-      "D-cell-contact-coordination-boundary",
-      "C-cell-ohnishi2014-icm-lineage-response",
-      "C-cell-toda2018-contact-sorting-response",
-      "M-cell-ohnishi2014-icm-lineage-preparation",
-      "M-cell-toda2018-contact-sorting-preparation"
-    ],
-    "assertions": [
-      {
-        "topic": "Persistent physical adhesion and contact-mediated signaling",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-toda2018-contact-sorting-response"
-        ],
-        "reason": "The engineered L929 sender/receiver preparation tests contact-to-expression-to-sorting coupling under a specified synthetic circuit."
-      },
-      {
-        "topic": "Junctional communication, synchronization and neighbor alignment",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "No gap-junction conductance, generalized state synchronization or directional alignment assay is admitted from cadherin/synNotch sorting."
-      },
-      {
-        "topic": "Short-range cooperation below functional tissue differentiation",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "Synthetic aggregates and lineage-state signaling are distinct. Reporter/cadherin domains demonstrate spatial coordination but not physiological tissue function."
-      },
-      {
-        "topic": "Transitional stage from isolated autonomy to multicellular integration",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "The experiments do not reconstruct evolution or establish a mandatory developmental/ontological progression; synthetic design is not a historical ancestor."
-      },
-      {
-        "topic": "Two cells as universal minimum and critical coordination threshold",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "A pairwise interface requires distinct participants by definition, but no universal N_min=N_crit=2 threshold follows for aggregate sorting, junctions or tissue-like organization."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "The measured synthetic L929 contact program is mammalian; prokaryotic cellular organization is not its tested necessary dependency."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "Synthetic juxtacrine signaling is part of this constructed circuit; no general signaling requirement for every adhesion/contact interaction is inferred."
-      },
-      {
-        "parentCode": "4.5",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "Reporter/cadherin state divergence is part of the program, not proof that preexisting functional cell differentiation is necessary."
-      },
-      {
-        "parentCode": "3.27",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-contact-coordination-scope",
-          "D-cell-contact-coordination-boundary"
-        ],
-        "reason": "Existing membranes provide interfaces, but de-novo lipid synthesis and a universal count of membranes were not separately tested."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "Junctional communication, synchronization and neighbor alignment: No gap-junction conductance, generalized state synchronization or directional alignment assay is admitted from cadherin/synNotch sorting."
-    ]
-  },
-  "4.13": {
-    "sourceIndex": 13,
-    "originalName": "Cellular Regulatory Networks",
-    "scope": "Regulatory networks are represented by preparation-specific feedback, switching, input waveform and response constraints across Hsp70, Hog1, CDK2, apoptosis, transcription-factor and metabolic assays.",
-    "nodeIds": [
-      "cell:regulatory-architecture-scope",
-      "cell:regulatory-architecture-boundary",
-      "cell:sourjik2002-chemotactic-fret-context",
-      "cell:sourjik2002-chemotactic-fret-input",
-      "cell:sourjik2002-chemotactic-fret-response",
-      "cell:muzzey2009-step-osmotic-response-context",
-      "cell:muzzey2009-step-osmotic-response-input",
-      "cell:muzzey2009-step-osmotic-response-response",
-      "cell:muzzey2009-ramp-feedback-constraint-context",
-      "cell:muzzey2009-ramp-feedback-constraint-input",
-      "cell:muzzey2009-ramp-feedback-constraint-response",
-      "cell:krakowiak2018-heat-feedback-context",
-      "cell:krakowiak2018-heat-feedback-input",
-      "cell:krakowiak2018-heat-feedback-response",
-      "cell:spencer2013-mitotic-exit-decision-context",
-      "cell:spencer2013-mitotic-exit-decision-input",
-      "cell:spencer2013-mitotic-exit-decision-response",
-      "cell:pomerening2003-cdc2-history-context",
-      "cell:pomerening2003-cdc2-history-input",
-      "cell:pomerening2003-cdc2-history-response",
-      "cell:purvis2012-p53-dynamics-context",
-      "cell:purvis2012-p53-dynamics-input",
-      "cell:purvis2012-p53-dynamics-response",
-      "cell:albeck2008-trail-switch-context",
-      "cell:albeck2008-trail-switch-input",
-      "cell:albeck2008-trail-switch-response",
-      "cell:spencer2009-sister-cell-variability-context",
-      "cell:spencer2009-sister-cell-variability-input",
-      "cell:spencer2009-sister-cell-variability-response",
-      "cell:vierbuchen2010-neuronal-conversion-context",
-      "cell:vierbuchen2010-neuronal-conversion-input",
-      "cell:vierbuchen2010-neuronal-conversion-response",
-      "cell:ohnishi2014-icm-lineage-context",
-      "cell:ohnishi2014-icm-lineage-input",
-      "cell:ohnishi2014-icm-lineage-response",
-      "cell:toda2018-contact-sorting-context",
-      "cell:toda2018-contact-sorting-input",
-      "cell:toda2018-contact-sorting-response",
-      "cell:hackett2016-flux-inference-context",
-      "cell:hackett2016-flux-inference-input",
-      "cell:hackett2016-flux-inference-response",
-      "cell:kim2011-ulk1-phosphorylation-context",
-      "cell:kim2011-ulk1-phosphorylation-input",
-      "cell:kim2011-ulk1-phosphorylation-response",
-      "cell:nwadike2018-nutrient-flux-contrast-context",
-      "cell:nwadike2018-nutrient-flux-contrast-input",
-      "cell:nwadike2018-nutrient-flux-contrast-response",
-      "cell:laberge2015-sasp-translation-context",
-      "cell:laberge2015-sasp-translation-input",
-      "cell:laberge2015-sasp-translation-response",
-      "cell:hackett2016-chemostat-acquisition-context",
-      "cell:hackett2016-chemostat-acquisition-input",
-      "cell:hackett2016-chemostat-acquisition-response",
-      "cell:hog1-integrator-implementation",
-      "cell:ampk-autophagy-transfer",
-      "cell:laberge-corrected-controls"
-    ],
-    "claimIds": [
-      "C-cell-regulatory-architecture-scope",
-      "D-cell-regulatory-architecture-boundary",
-      "C-cell-sourjik2002-chemotactic-fret-response",
-      "C-cell-muzzey2009-step-osmotic-response-response",
-      "C-cell-muzzey2009-ramp-feedback-constraint-response",
-      "C-cell-krakowiak2018-heat-feedback-response",
-      "C-cell-spencer2013-mitotic-exit-decision-response",
-      "C-cell-pomerening2003-cdc2-history-response",
-      "C-cell-purvis2012-p53-dynamics-response",
-      "C-cell-albeck2008-trail-switch-response",
-      "C-cell-spencer2009-sister-cell-variability-response",
-      "C-cell-vierbuchen2010-neuronal-conversion-response",
-      "C-cell-ohnishi2014-icm-lineage-response",
-      "C-cell-toda2018-contact-sorting-response",
-      "C-cell-hackett2016-flux-inference-response",
-      "C-cell-kim2011-ulk1-phosphorylation-response",
-      "C-cell-nwadike2018-nutrient-flux-contrast-response",
-      "C-cell-laberge2015-sasp-translation-response",
-      "C-cell-hackett2016-chemostat-acquisition-response",
-      "M-cell-sourjik2002-chemotactic-fret-preparation",
-      "M-cell-muzzey2009-step-osmotic-response-preparation",
-      "M-cell-muzzey2009-ramp-feedback-constraint-preparation",
-      "M-cell-krakowiak2018-heat-feedback-preparation",
-      "M-cell-spencer2013-mitotic-exit-decision-preparation",
-      "M-cell-pomerening2003-cdc2-history-preparation",
-      "M-cell-purvis2012-p53-dynamics-preparation",
-      "M-cell-albeck2008-trail-switch-preparation",
-      "M-cell-spencer2009-sister-cell-variability-preparation",
-      "M-cell-vierbuchen2010-neuronal-conversion-preparation",
-      "M-cell-ohnishi2014-icm-lineage-preparation",
-      "M-cell-toda2018-contact-sorting-preparation",
-      "M-cell-hackett2016-flux-inference-preparation",
-      "M-cell-kim2011-ulk1-phosphorylation-preparation",
-      "M-cell-nwadike2018-nutrient-flux-contrast-preparation",
-      "M-cell-laberge2015-sasp-translation-preparation",
-      "M-cell-hackett2016-chemostat-acquisition-preparation",
-      "C-cell-hog1-integrator-implementation",
-      "C-cell-ampk-autophagy-transfer",
-      "D-cell-laberge-corrected-controls"
-    ],
-    "assertions": [
-      {
-        "topic": "Feedback, feedforward motifs, switches and multiple timescales",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "Feedback and switching are experimentally constrained in named circuits. Feedforward motifs and every timescale/coupling strength are not established by motif labels alone."
-      },
-      {
-        "topic": "Topology, coupling strength and dynamical state jointly govern function",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-muzzey2009-ramp-feedback-constraint-response",
-          "C-cell-krakowiak2018-heat-feedback-response",
-          "C-cell-pomerening2003-cdc2-history-response"
-        ],
-        "reason": "Disconnecting an Hsp70 feedback edge changes dynamics; extract history and osmotic input waveform alter outputs. These are finite circuit-specific demonstrations."
-      },
-      {
-        "topic": "Unified global cellular control architecture beyond isolated molecules",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "No complete integrated regulatory graph for one actual cell was measured. Distinct publications cannot be merged into one empirically validated controller by synthesis."
-      },
-      {
-        "topic": "Universal robustness, homeostasis and adaptation",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "Named response features can be robust within tested perturbations. Ramp inputs, nutrient changes and death/recovery comparisons limit generalized claims."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.8",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "Expression feedback and factor perturbations support specified control links, not a universal transcriptional requirement for every fast regulatory action."
-      },
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "Named kinase/signaling circuits support their own dynamic relations, not a global unified control graph."
-      },
-      {
-        "parentCode": "3.14",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "Metabolic flux can modulate or be regulated by local networks; the sources do not require every regulatory network to contain a complete metabolic cycle."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-regulatory-architecture-scope",
-          "D-cell-regulatory-architecture-boundary"
-        ],
-        "reason": "Adaptation and stress feedback contribute examples, but homeostasis is an endpoint and mechanism-dependent behavior, not an unexplained downward cause."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "Unified global cellular control architecture beyond isolated molecules: No complete integrated regulatory graph for one actual cell was measured. Distinct publications cannot be merged into one empirically validated controller by synthesis."
-    ]
-  },
-  "4.16": {
-    "sourceIndex": 16,
-    "originalName": "Cellular Sensory Systems and Environmental Adaptation",
-    "scope": "Sensing is represented by ligand-dependent bacterial pathway activity, yeast osmotic response and stress/nutrient-response signaling, with adaptation distinguished from initial detection and later viability.",
-    "nodeIds": [
-      "cell:sensing-adaptation-scope",
-      "cell:sensing-adaptation-boundary",
-      "cell:sourjik2002-chemotactic-fret-context",
-      "cell:sourjik2002-chemotactic-fret-input",
-      "cell:sourjik2002-chemotactic-fret-response",
-      "cell:muzzey2009-step-osmotic-response-context",
-      "cell:muzzey2009-step-osmotic-response-input",
-      "cell:muzzey2009-step-osmotic-response-response",
-      "cell:muzzey2009-ramp-feedback-constraint-context",
-      "cell:muzzey2009-ramp-feedback-constraint-input",
-      "cell:muzzey2009-ramp-feedback-constraint-response",
-      "cell:krakowiak2018-heat-feedback-context",
-      "cell:krakowiak2018-heat-feedback-input",
-      "cell:krakowiak2018-heat-feedback-response",
-      "cell:purvis2012-p53-dynamics-context",
-      "cell:purvis2012-p53-dynamics-input",
-      "cell:purvis2012-p53-dynamics-response",
-      "cell:hog1-integrator-implementation"
-    ],
-    "claimIds": [
-      "C-cell-sensing-adaptation-scope",
-      "D-cell-sensing-adaptation-boundary",
-      "C-cell-sourjik2002-chemotactic-fret-response",
-      "C-cell-muzzey2009-step-osmotic-response-response",
-      "C-cell-muzzey2009-ramp-feedback-constraint-response",
-      "C-cell-krakowiak2018-heat-feedback-response",
-      "C-cell-purvis2012-p53-dynamics-response",
-      "M-cell-sourjik2002-chemotactic-fret-preparation",
-      "M-cell-muzzey2009-step-osmotic-response-preparation",
-      "M-cell-muzzey2009-ramp-feedback-constraint-preparation",
-      "M-cell-krakowiak2018-heat-feedback-preparation",
-      "M-cell-purvis2012-p53-dynamics-preparation",
-      "C-cell-hog1-integrator-implementation"
-    ],
-    "assertions": [
-      {
-        "topic": "Detection and response to chemical and internal/environmental cues",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-sourjik2002-chemotactic-fret-response",
-          "C-cell-muzzey2009-step-osmotic-response-response",
-          "C-cell-krakowiak2018-heat-feedback-response",
-          "C-cell-kim2011-ulk1-phosphorylation-response"
-        ],
-        "reason": "Ligand steps, osmotic steps and heat/nutrient changes produce distinct measured signaling outputs."
-      },
-      {
-        "topic": "Toxin and all physical-parameter sensory mechanisms",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "No universal toxin sensor or complete mechanosensory/physical-parameter repertoire is reconstructed from these selected primary preparations."
-      },
-      {
-        "topic": "Amplification, interpretation and coherent adaptation",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "Amplification and endpoint-specific recovery have readouts; coherent global interpretation is not a separate measured entity. Perfect step adaptation does not extend to ramps."
-      },
-      {
-        "topic": "Adaptation excludes overt behavior",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "The boundary is not a biological universal: bacterial chemosensing can regulate locomotion. Signaling assays here are separated from motor/behavioral output rather than declaring it impossible."
-      },
-      {
-        "topic": "Sustained viability and functional optimization",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "Response control can support particular outcomes, but no optimization objective or global viability theorem is identified by these assays."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.3",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "Stimulus-to-pathway response is directly measured; no universal two-carrier sensory minimum follows."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "Adaptation is a separate response criterion; sensing can occur without perfect adaptation or successful recovery."
-      },
-      {
-        "parentCode": "3.15",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "Receptor/kinase transduction is explicit in bacterial and yeast cases; it is not a complete general sensory-system construction rule."
-      },
-      {
-        "parentCode": "4.13",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-sensing-adaptation-scope",
-          "D-cell-sensing-adaptation-boundary"
-        ],
-        "reason": "Feedback architecture constrains adaptation in specific cases, with no extra cause introduced by the network label."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "Toxin and all physical-parameter sensory mechanisms: No universal toxin sensor or complete mechanosensory/physical-parameter repertoire is reconstructed from these selected primary preparations."
-    ]
-  },
-  "4.17": {
-    "sourceIndex": 17,
-    "originalName": "Downward Regulation of Enzymatic Networks by Cellular State",
-    "scope": "Metabolite availability, pH, kinase state and compartment-associated signaling can condition biochemical activity and inferred pathway flux in specified cellular preparations.",
-    "nodeIds": [
-      "cell:state-dependent-biochemistry-scope",
-      "cell:state-dependent-biochemistry-boundary",
-      "cell:muzzey2009-step-osmotic-response-context",
-      "cell:muzzey2009-step-osmotic-response-input",
-      "cell:muzzey2009-step-osmotic-response-response",
-      "cell:muzzey2009-ramp-feedback-constraint-context",
-      "cell:muzzey2009-ramp-feedback-constraint-input",
-      "cell:muzzey2009-ramp-feedback-constraint-response",
-      "cell:orij2012-ph-growth-context",
-      "cell:orij2012-ph-growth-input",
-      "cell:orij2012-ph-growth-response",
-      "cell:hackett2016-flux-inference-context",
-      "cell:hackett2016-flux-inference-input",
-      "cell:hackett2016-flux-inference-response",
-      "cell:kim2011-ulk1-phosphorylation-context",
-      "cell:kim2011-ulk1-phosphorylation-input",
-      "cell:kim2011-ulk1-phosphorylation-response",
-      "cell:nwadike2018-nutrient-flux-contrast-context",
-      "cell:nwadike2018-nutrient-flux-contrast-input",
-      "cell:nwadike2018-nutrient-flux-contrast-response",
-      "cell:laberge2015-sasp-translation-context",
-      "cell:laberge2015-sasp-translation-input",
-      "cell:laberge2015-sasp-translation-response",
-      "cell:garciaprat2016-geriatric-redox-context",
-      "cell:garciaprat2016-geriatric-redox-input",
-      "cell:garciaprat2016-geriatric-redox-response",
-      "cell:hackett2016-chemostat-acquisition-context",
-      "cell:hackett2016-chemostat-acquisition-input",
-      "cell:hackett2016-chemostat-acquisition-response",
-      "cell:hog1-integrator-implementation",
-      "cell:ampk-autophagy-transfer",
-      "cell:cell-state-causal-identification",
-      "cell:laberge-corrected-controls"
-    ],
-    "claimIds": [
-      "C-cell-state-dependent-biochemistry-scope",
-      "D-cell-state-dependent-biochemistry-boundary",
-      "C-cell-muzzey2009-step-osmotic-response-response",
-      "C-cell-muzzey2009-ramp-feedback-constraint-response",
-      "C-cell-orij2012-ph-growth-response",
-      "C-cell-hackett2016-flux-inference-response",
-      "C-cell-kim2011-ulk1-phosphorylation-response",
-      "C-cell-nwadike2018-nutrient-flux-contrast-response",
-      "C-cell-laberge2015-sasp-translation-response",
-      "C-cell-garciaprat2016-geriatric-redox-response",
-      "C-cell-hackett2016-chemostat-acquisition-response",
-      "M-cell-muzzey2009-step-osmotic-response-preparation",
-      "M-cell-muzzey2009-ramp-feedback-constraint-preparation",
-      "M-cell-orij2012-ph-growth-preparation",
-      "M-cell-hackett2016-flux-inference-preparation",
-      "M-cell-kim2011-ulk1-phosphorylation-preparation",
-      "M-cell-nwadike2018-nutrient-flux-contrast-preparation",
-      "M-cell-laberge2015-sasp-translation-preparation",
-      "M-cell-garciaprat2016-geriatric-redox-preparation",
-      "M-cell-hackett2016-chemostat-acquisition-preparation",
-      "C-cell-hog1-integrator-implementation",
-      "C-cell-ampk-autophagy-transfer",
-      "C-cell-cell-state-causal-identification",
-      "D-cell-laberge-corrected-controls"
-    ],
-    "assertions": [
-      {
-        "topic": "Energy, pH, signaling and metabolite states condition reactions",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-orij2012-ph-growth-response",
-          "C-cell-hackett2016-flux-inference-response",
-          "C-cell-kim2011-ulk1-phosphorylation-response"
-        ],
-        "reason": "The flux study, pH perturbations and Ulk1 kinase assays constrain distinct physical routes by which cellular conditions affect biochemical rates."
-      },
-      {
-        "topic": "Redox and compartment variables as universal local-rate controls",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "Specific physical state variables may matter, but this reconstruction does not directly assay every redox/compartment mechanism or assign each a universal parent edge."
-      },
-      {
-        "topic": "Genuine irreducible downward cellular causation",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "A state variable or coarse-grained network description is not an experimentally isolated additional force. All admitted examples retain molecular mediators and model assumptions."
-      },
-      {
-        "topic": "Whole-cell state imposes a viability-directed admissibility regime",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "A causal claim at the chosen coarse-graining requires explicit interventions and alternatives. Purpose-directed global constraints are not demonstrated by nutrient-condition correlations."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.2",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "Nutrient and metabolite conditions constrain inferred fluxes; a global metabolic-state label is not itself an isolated causal agent."
-      },
-      {
-        "parentCode": "4.13",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "Ulk1 and HOG examples specify molecular feedback/kinase mediators; no irreducible downward force is inferred."
-      },
-      {
-        "parentCode": "3.14",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "Reaction-network flux is a source-model context; a complete metabolic cycle is not established as necessary for all cell-state-dependent enzymatic regulation."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-state-dependent-biochemistry-scope",
-          "D-cell-state-dependent-biochemistry-boundary"
-        ],
-        "reason": "pH and osmotic feedback provide physical state variables; viability-directed purpose is not an independently observed interaction."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "Whole-cell state imposes a viability-directed admissibility regime: A causal claim at the chosen coarse-graining requires explicit interventions and alternatives. Purpose-directed global constraints are not demonstrated by nutrient-condition correlations."
-    ]
-  },
-  "4.19": {
-    "sourceIndex": 19,
-    "originalName": "Cell-Level Suppression of Molecular Survival Programs via Apoptosis Control",
-    "scope": "Apoptotic execution is represented by molecular network perturbations, mitochondrial/caspase dynamics, response heterogeneity and a separate inducer-washout recovery counterexample.",
-    "nodeIds": [
-      "cell:apoptotic-execution-scope",
-      "cell:apoptotic-execution-boundary",
-      "cell:albeck2008-trail-switch-context",
-      "cell:albeck2008-trail-switch-input",
-      "cell:albeck2008-trail-switch-response",
-      "cell:spencer2009-sister-cell-variability-context",
-      "cell:spencer2009-sister-cell-variability-input",
-      "cell:spencer2009-sister-cell-variability-response",
-      "cell:tang2012-apoptotic-washout-context",
-      "cell:tang2012-apoptotic-washout-input",
-      "cell:tang2012-apoptotic-washout-response",
-      "cell:tang2012-hela-execution-recovery-context",
-      "cell:tang2012-hela-execution-recovery-input",
-      "cell:tang2012-hela-execution-recovery-response"
-    ],
-    "claimIds": [
-      "C-cell-apoptotic-execution-scope",
-      "D-cell-apoptotic-execution-boundary",
-      "C-cell-albeck2008-trail-switch-response",
-      "C-cell-spencer2009-sister-cell-variability-response",
-      "C-cell-tang2012-apoptotic-washout-response",
-      "C-cell-tang2012-hela-execution-recovery-response",
-      "M-cell-albeck2008-trail-switch-preparation",
-      "M-cell-spencer2009-sister-cell-variability-preparation",
-      "M-cell-tang2012-apoptotic-washout-preparation",
-      "M-cell-tang2012-hela-execution-recovery-preparation"
-    ],
-    "assertions": [
-      {
-        "topic": "Apoptotic commitment overrides all molecular survival and repair",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-albeck2008-trail-switch-response",
-          "C-cell-tang2012-apoptotic-washout-response"
-        ],
-        "reason": "Survival modules and repair competence are not exhaustively measured, and washout can permit recovery after execution-associated signs. The universal override statement is stronger than the evidence."
-      },
-      {
-        "topic": "Coordinated dismantling has molecular execution mechanisms",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-albeck2008-trail-switch-response",
-          "C-cell-spencer2009-sister-cell-variability-response"
-        ],
-        "reason": "TRAIL studies constrain mitochondrial/caspase execution and its variability. This is a physical molecular network account, without attributing independent agency to a cell label."
-      },
-      {
-        "topic": "Stable higher-level fate capacity and intact subordinate viability",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-apoptotic-execution-scope",
-          "D-cell-apoptotic-execution-boundary"
-        ],
-        "reason": "The selected sources do not independently test every local subsystem as otherwise viable or isolate cell-level state from its molecular implementation."
-      },
-      {
-        "topic": "Termination always protects system integrity",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-apoptotic-execution-scope",
-          "D-cell-apoptotic-execution-boundary"
-        ],
-        "reason": "Elimination can have organismal roles, but the selected cultured-cell assays do not prove a universal purpose, tissue benefit or optimal fate policy."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.4",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-apoptotic-execution-scope",
-          "D-cell-apoptotic-execution-boundary"
-        ],
-        "reason": "The broad combined cycle/apoptosis card is decomposed into source-specific execution and recovery observations, not treated as a higher-level agent."
-      },
-      {
-        "parentCode": "3.5",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-apoptotic-execution-scope",
-          "D-cell-apoptotic-execution-boundary"
-        ],
-        "reason": "Model-based threshold/multimerization mechanisms are distinct from demonstrated cooperative binding and universal two-carrier thresholds."
-      },
-      {
-        "parentCode": "3.25",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-apoptotic-execution-scope",
-          "D-cell-apoptotic-execution-boundary"
-        ],
-        "reason": "No universal redox parent or proof that local redox programs remain independently viable is supplied by the selected death/recovery assays."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "Stable higher-level fate capacity and intact subordinate viability: The selected sources do not independently test every local subsystem as otherwise viable or isolate cell-level state from its molecular implementation."
-    ]
-  },
-  "4.20": {
-    "sourceIndex": 20,
-    "originalName": "Autophagy and Local Degradation of Subcellular Components",
-    "scope": "Autophagy is represented by regulated initiation, lysosomal degradation/flux constraints and a selective mitochondrial-turnover preparation, with markers, cargo elimination and molecular reuse distinguished.",
-    "nodeIds": [
-      "cell:autophagy-turnover-scope",
-      "cell:autophagy-turnover-boundary",
-      "cell:kim2011-ulk1-phosphorylation-context",
-      "cell:kim2011-ulk1-phosphorylation-input",
-      "cell:kim2011-ulk1-phosphorylation-response",
-      "cell:nwadike2018-nutrient-flux-contrast-context",
-      "cell:nwadike2018-nutrient-flux-contrast-input",
-      "cell:nwadike2018-nutrient-flux-contrast-response",
-      "cell:narendra2008-mitochondrial-turnover-context",
-      "cell:narendra2008-mitochondrial-turnover-input",
-      "cell:narendra2008-mitochondrial-turnover-response",
-      "cell:garciaprat2016-young-atg7-loss-context",
-      "cell:garciaprat2016-young-atg7-loss-input",
-      "cell:garciaprat2016-young-atg7-loss-response",
-      "cell:garciaprat2016-geriatric-rescue-context",
-      "cell:garciaprat2016-geriatric-rescue-input",
-      "cell:garciaprat2016-geriatric-rescue-response",
-      "cell:garciaprat2016-geriatric-redox-context",
-      "cell:garciaprat2016-geriatric-redox-input",
-      "cell:garciaprat2016-geriatric-redox-response",
-      "cell:ampk-autophagy-transfer"
-    ],
-    "claimIds": [
-      "C-cell-autophagy-turnover-scope",
-      "D-cell-autophagy-turnover-boundary",
-      "C-cell-kim2011-ulk1-phosphorylation-response",
-      "C-cell-nwadike2018-nutrient-flux-contrast-response",
-      "C-cell-narendra2008-mitochondrial-turnover-response",
-      "C-cell-garciaprat2016-young-atg7-loss-response",
-      "C-cell-garciaprat2016-geriatric-rescue-response",
-      "C-cell-garciaprat2016-geriatric-redox-response",
-      "M-cell-kim2011-ulk1-phosphorylation-preparation",
-      "M-cell-nwadike2018-nutrient-flux-contrast-preparation",
-      "M-cell-narendra2008-mitochondrial-turnover-preparation",
-      "M-cell-garciaprat2016-young-atg7-loss-preparation",
-      "M-cell-garciaprat2016-geriatric-rescue-preparation",
-      "M-cell-garciaprat2016-geriatric-redox-preparation",
-      "C-cell-ampk-autophagy-transfer"
-    ],
-    "assertions": [
-      {
-        "topic": "Recognition, sequestration, degradation and component turnover",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-kim2011-ulk1-phosphorylation-response",
-          "C-cell-nwadike2018-nutrient-flux-contrast-response",
-          "C-cell-narendra2008-mitochondrial-turnover-response"
-        ],
-        "reason": "Parkin localization and mitochondrial elimination constrain selective turnover. Cargo recognition, autophagosome assembly and lysosomal completion are different steps and not all resolved by one marker."
-      },
-      {
-        "topic": "Regulated recycling rather than passive decay",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-nwadike2018-nutrient-flux-contrast-response",
-          "C-cell-narendra2008-mitochondrial-turnover-response"
-        ],
-        "reason": "Nutrient/kinase and ATG5/inhibitor comparisons demonstrate regulated degradative participation in the named preparations. This does not turn all degradation into one mechanism."
-      },
-      {
-        "topic": "Molecular reuse and resource reallocation",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "These selected experiments do not follow atoms from degraded cargo into new biosynthesis; reuse remains distinct from loss of mitochondrial/LC3 markers."
-      },
-      {
-        "topic": "Autophagy always increases upon nutrient shortage",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-nwadike2018-nutrient-flux-contrast-response"
-        ],
-        "reason": "Nutrient class, serum and timing can produce opposite initiation/flux effects; LC3 accumulation can accompany impaired clearance."
-      },
-      {
-        "topic": "Homeostatic benefit, adaptive renewal and universal quality control",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "Finite turnover and some survival contrasts are context-bound. No universal benefit, all-organelle selectivity or complete component-renewal architecture follows."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.0",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "Canonical macroautophagy contexts here are eukaryotic; prokaryotic organization is not an experimental parent requirement."
-      },
-      {
-        "parentCode": "4.1",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "Autophagosome/lysosome compartments are mechanistic context in these assays; the original count of two compartments is not a universal numerical threshold."
-      },
-      {
-        "parentCode": "3.20",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "Quality control and selective turnover are related, but no chaperone is shown necessary for all macroautophagy in the admitted preparations."
-      },
-      {
-        "parentCode": "3.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "Specific kinase/autophagy machinery and ATG5 controls support local mechanisms, not a generic enzymatic-complex carrier minimum."
-      },
-      {
-        "parentCode": "4.6",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "Nutrient/stress effects are context-dependent and can block flux; homeostatic labeling does not guarantee a beneficial outcome."
-      },
-      {
-        "parentCode": "4.31",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-autophagy-turnover-scope",
-          "D-cell-autophagy-turnover-boundary"
-        ],
-        "reason": "mTOR/AMPK affects Ulk1 and flux in selected preparations. Regulation is not universal necessity, and autophagy is not simply identical to its mTOR control."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "Molecular reuse and resource reallocation: These selected experiments do not follow atoms from degraded cargo into new biosynthesis; reuse remains distinct from loss of mitochondrial/LC3 markers."
-    ]
-  },
-  "4.31": {
-    "sourceIndex": 31,
-    "originalName": "mTOR/Nutrient-Sensing Control of Autophagy and Senescence",
-    "scope": "mTOR/AMPK regulation of Ulk1/autophagy and mTOR-sensitive senescent secretion are distinct preparation-specific regulatory processes; senescence growth arrest is an independent endpoint.",
-    "nodeIds": [
-      "cell:mtor-autophagy-senescence-scope",
-      "cell:mtor-autophagy-senescence-boundary",
-      "cell:kim2011-ulk1-phosphorylation-context",
-      "cell:kim2011-ulk1-phosphorylation-input",
-      "cell:kim2011-ulk1-phosphorylation-response",
-      "cell:nwadike2018-nutrient-flux-contrast-context",
-      "cell:nwadike2018-nutrient-flux-contrast-input",
-      "cell:nwadike2018-nutrient-flux-contrast-response",
-      "cell:laberge2015-sasp-translation-context",
-      "cell:laberge2015-sasp-translation-input",
-      "cell:laberge2015-sasp-translation-response",
-      "cell:laberge2015-arrest-boundary-context",
-      "cell:laberge2015-arrest-boundary-input",
-      "cell:laberge2015-arrest-boundary-response",
-      "cell:garciaprat2016-young-atg7-loss-context",
-      "cell:garciaprat2016-young-atg7-loss-input",
-      "cell:garciaprat2016-young-atg7-loss-response",
-      "cell:garciaprat2016-geriatric-rescue-context",
-      "cell:garciaprat2016-geriatric-rescue-input",
-      "cell:garciaprat2016-geriatric-rescue-response",
-      "cell:garciaprat2016-geriatric-redox-context",
-      "cell:garciaprat2016-geriatric-redox-input",
-      "cell:garciaprat2016-geriatric-redox-response",
-      "cell:ampk-autophagy-transfer",
-      "cell:laberge-corrected-controls"
-    ],
-    "claimIds": [
-      "C-cell-mtor-autophagy-senescence-scope",
-      "D-cell-mtor-autophagy-senescence-boundary",
-      "C-cell-kim2011-ulk1-phosphorylation-response",
-      "C-cell-nwadike2018-nutrient-flux-contrast-response",
-      "C-cell-laberge2015-sasp-translation-response",
-      "C-cell-laberge2015-arrest-boundary-response",
-      "C-cell-garciaprat2016-young-atg7-loss-response",
-      "C-cell-garciaprat2016-geriatric-rescue-response",
-      "C-cell-garciaprat2016-geriatric-redox-response",
-      "M-cell-kim2011-ulk1-phosphorylation-preparation",
-      "M-cell-nwadike2018-nutrient-flux-contrast-preparation",
-      "M-cell-laberge2015-sasp-translation-preparation",
-      "M-cell-laberge2015-arrest-boundary-preparation",
-      "M-cell-garciaprat2016-young-atg7-loss-preparation",
-      "M-cell-garciaprat2016-geriatric-rescue-preparation",
-      "M-cell-garciaprat2016-geriatric-redox-preparation",
-      "C-cell-ampk-autophagy-transfer",
-      "D-cell-laberge-corrected-controls"
-    ],
-    "assertions": [
-      {
-        "topic": "Nutrient/AMPK/mTOR control of autophagy",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-kim2011-ulk1-phosphorylation-response",
-          "C-cell-nwadike2018-nutrient-flux-contrast-response"
-        ],
-        "reason": "Kim2011 and Nwadike2018 constrain different nutrient/cell/assay conditions and outcomes. The graph retains their distinction rather than encoding one universal AMPK sign."
-      },
-      {
-        "topic": "Growth/maintenance balance and biosynthetic commitment",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Phosphorylation, initiation/flux and cytokine translation are measured; a scalar maintenance-versus-growth decision, repair permissiveness and complete biomass accounting are not."
-      },
-      {
-        "topic": "mTOR modulation of senescence-associated phenotype",
-        "disposition": "supported",
-        "claimIds": [
-          "C-cell-laberge2015-sasp-translation-response",
-          "C-cell-laberge2015-arrest-boundary-response"
-        ],
-        "reason": "Rapamycin changes IL1A translation and inflammatory output, while the same publication separately reports persistent arrest in primary fibroblasts."
-      },
-      {
-        "topic": "mTOR determines whether persistent stress resolves into senescence",
-        "disposition": "unresolved",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "The admitted assays do not identify a general probability-of-senescence law or track every stress trajectory. SASP change is not evidence of arrest reversal."
-      },
-      {
-        "topic": "Downward/diagonal control as independent mechanism",
-        "disposition": "excluded",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Direction labels do not establish additional causal machinery; molecular nutrient/kinase/translation mechanisms and their contexts are recorded explicitly."
-      },
-      {
-        "topic": "Autophagy-to-stemness link from Garcia-Prat2016 original citation",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-garciaprat2016-young-atg7-loss-response",
-          "C-cell-garciaprat2016-geriatric-rescue-response",
-          "C-cell-garciaprat2016-geriatric-redox-response"
-        ],
-        "reason": "The original review label is corrected: this is a primary study. Young satellite-cell Atg7 loss, geriatric rescue and redox/chromatin tests are distinct; finite muscle regeneration and marker recovery do not prove general organismal rejuvenation."
-      }
-    ],
-    "parentDispositions": [
-      {
-        "parentCode": "4.20",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Autophagy initiation and completed flux are separate regulated outputs; the output is not assumed to be a necessary upstream cause of its regulator."
-      },
-      {
-        "parentCode": "4.26",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Senescent fibroblast secretion is a defined context; rapamycin-sensitive SASP does not imply control of arrest in every senescence model."
-      },
-      {
-        "parentCode": "4.2",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Specified nutrient withdrawals and kinase states connect metabolism to autophagy, without a universal direction label or quantitative global growth/maintenance rule."
-      },
-      {
-        "parentCode": "3.24",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Energy availability is part of the preparation, but a particular ATP-generating cycle is not isolated as a necessary regulatory input."
-      },
-      {
-        "parentCode": "3.25",
-        "disposition": "qualified",
-        "claimIds": [
-          "C-cell-mtor-autophagy-senescence-scope",
-          "D-cell-mtor-autophagy-senescence-boundary"
-        ],
-        "reason": "Satellite-cell ROS/p16 experiments provide a finite redox coupling, without establishing its original optional/necessity label or numerical weight for all mTOR responses."
-      }
-    ],
-    "excludedDefaults": [
-      "Original Parents[].Weight values have no measurement/calibration and are not active graph weights.",
-      "Original N_min/N_crit/N_sat, CarrierGroupId/CarrierTypeId and scalar necessity labels are not universal biological thresholds.",
-      "Phase, TypeRole, Science and Requirements are catalogue classifications, not experimentally tested prerequisites.",
-      "CausalDirections, InteractionModes, DependencyType and OntologicalRole do not establish a mechanism, direction, universal necessity or a construction rule.",
-      "Original textbook/review/conceptual bibliography supplies topic provenance; it does not substitute for the named primary preparations or prove the broad prose."
-    ],
-    "unresolved": [
-      "mTOR determines whether persistent stress resolves into senescence: The admitted assays do not identify a general probability-of-senescence law or track every stress trajectory. SASP change is not evidence of arrest reversal."
-    ]
-  }
-};

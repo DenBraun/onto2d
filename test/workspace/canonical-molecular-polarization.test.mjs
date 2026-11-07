@@ -182,7 +182,7 @@ test("nitrogen angular reconstruction retains common-data fitting and separates 
   ]);
 });
 
-test("gas-state responses cannot acquire bulk dielectric, solvation, field-free order or original parent minima", async () => {
+test("gas-state responses cannot acquire bulk dielectric, solvation or field-free order", async () => {
   const data = await source();
   assert.match(claim(data, ensemble).statement, /P=n\*<p>/);
   assert.match(claim(data, ensemble).statement, /dilute independent-dipole approximation/);
@@ -196,11 +196,7 @@ test("gas-state responses cannot acquire bulk dielectric, solvation, field-free 
     ["a single-molecule response cannot establish dense-phase constitutive behavior", (changed) =>
       dropLimit(changed, ensemble, "Constitutive response is material-specific")],
     ["a molecular dipole cannot prove regional integer ions or a solvation structure", (changed) =>
-      dropLimit(changed, synthesis, "integer-charged regional ions")],
-    ["parent weights and body counts have no measured necessity authority", (changed) =>
-      dropLimit(changed, synthesis, "weights 0.30/0.25/0.25/0.20")],
-    ["SOMA and phase grouping cannot establish a new rule-generating physical law", (changed) =>
-      dropLimit(changed, synthesis, "SOMA stabilization")]
+      dropLimit(changed, synthesis, "integer-charged regional ions")]
   ]);
 });
 

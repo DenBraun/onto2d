@@ -47,13 +47,12 @@ interpersonal accuracy and helping require distinct outcome definitions.
 [Gallese's Roots of Empathy](https://doi.org/10.1159/000072786) and
 [Manifold Nature of Interpersonal Relations](https://doi.org/10.1098/rstb.2002.1234)
 are distinct 2003 publications. The first is read in full; the second has reviewed
-passages on pages 517-518 and 524-525. The original card's abbreviated citation
-does not uniquely identify either work. Their shared-manifold proposal is an
+passages on pages 517-518 and 524-525. Their shared-manifold proposal is an
 explicit hypothesis in the graph. Its three descriptive levels do not determine
-geometric dimension, a neural sequence or a carrier minimum. The first paper
-states that systematic testing had not occurred at publication; this is not a
-claim about all subsequent research. Common-mechanism and geometric-construction
-questions require separate discriminating tests.
+geometric dimension or a neural sequence. The first paper states that
+systematic testing had not occurred at publication; this is not a claim about
+all subsequent research. Common-mechanism and geometric-construction questions
+require separate discriminating tests.
 
 [Mukamel et al. (2010)](https://doi.org/10.1016/j.cub.2010.02.045) records
 human action responses in clinically selected medial frontal and temporal regions.
@@ -155,8 +154,8 @@ The [Araque et al. review](https://doi.org/10.1016/j.neuron.2014.02.007) supplie
 context for preparation-dependent gliotransmission. Fields' book and the fifth
 edition of *Principles of Neural Science* have bibliographic records with unread
 chapter limits. Neither metadata nor these astrocyte experiments establishes
-one general glial property, universal carrier counts, or necessary dependencies
-on synaptogenesis, neuromodulation and whole-organ coordination.
+one general glial property or necessary dependencies on synaptogenesis,
+neuromodulation and whole-organ coordination.
 
 [Djukic et al. (2007)](https://doi.org/10.1523/JNEUROSCI.0723-07.2007) reports
 reduced potassium- and glutamate-associated uptake currents after developmental
@@ -394,7 +393,7 @@ is a limited conceptual source. [Roy and Sherrington](https://doi.org/10.1113/jp
 used brain-volume and pressure measurements and proposed local metabolic
 regulation; the selected passages do not directly measure local firing-to-flow
 coupling. None establishes a universal inverse map from perfusion or BOLD to
-neural activity, a minimum carrier count or a unique physical graph geometry.
+neural activity or a unique physical graph geometry.
 
 ## Adult neurogenesis
 
@@ -525,10 +524,9 @@ All main text, Methods, figure captions and the three archived figure images
 were reviewed. Animal-level assignments, raw counts and optical stacks remain
 unverified. The separately reviewed Rakic (1985) and Eckenhoff–Rakic (1988)
 protocols have different detection thresholds and sampling. Their numerical
-results cannot be pooled without matched methods. The source card's learning,
-network-formation and injury
-necessities, weights and carrier minima are not established by this labeling
-study. A complete birth-to-memory route remains unresolved.
+results cannot be pooled without matched methods. This labeling study does not
+establish that learning, network formation or injury is necessary. A complete
+birth-to-memory route remains unresolved.
 
 ## Rhesus autoradiography and the limits of a negative finding
 
@@ -610,10 +608,10 @@ manipulate newborn neurons or directly test their necessity for memory.
 
 Enhanced survival is a plausible interpretation of the combined observations,
 but proliferation and alternate mediators are not excluded. Learning can be a
-stage- and task-specific modulator without becoming the source card's universal
-necessary parent. Conversely, labeled cells in controls do not prove that all
-unspecified natural learning is irrelevant. The complete birth-to-memory route,
-universal carrier minima and a constructive rule remain unresolved.
+stage- and task-specific modulator without becoming a universal prerequisite.
+Conversely, labeled cells in controls do not prove that all unspecified natural
+learning is irrelevant. The complete birth-to-memory route and a constructive
+rule remain unresolved.
 
 ## Human isotope observations and renewal models
 
@@ -686,8 +684,8 @@ RNA velocity, UMAP, regulatory trios and inferred ligand/receptor networks can
 constrain candidate constructions only with their model assumptions explicit.
 They do not identify a unique causal or spatial graph. The complete
 birth-to-memory route remains a hypothesis. Aimone and Kempermann provide
-selected review context; Rakic's primary report has an abstract-only reading
-limit and no admitted experimental record.
+selected review context; Rakic's three-page primary report is now read in
+full and retained as a bounded primary-observation record.
 
 The publisher's 18 March 2026 notice adds omitted funding acknowledgements to
 the Disouky article. It does not resolve the sample-count or text/caption
@@ -829,11 +827,9 @@ closure or a reproduced learning algorithm.
 
 [Fuster's fourth edition](https://www.sciencedirect.com/book/monograph/9780123736444/the-prefrontal-cortex)
 has verified publisher metadata; its chapters are unread. No book-specific
-mechanism is admitted. The source card's three mandatory parents, weights and
-minimum carrier counts lack support in the reviewed material. Functional
-constructs remain definitions and proposed mechanisms remain hypotheses.
-Primary assay records identify their own populations, measurements and limits.
-The source card remains unfinished: a complete maintenance, updating and
+mechanism is admitted. Functional constructs remain definitions and proposed
+mechanisms remain hypotheses. Primary assay records identify their own
+populations, measurements and limits. A complete maintenance, updating and
 learning construction is not established.
 
 
@@ -899,10 +895,10 @@ Movie S1 have not been independently reproduced or reviewed.
 
 ## Symbolic representations and construction
 
-The source card 6.19 combines reference, persistence, combinatorial manipulation
-and hypothetical reasoning. Its three proposed necessary parents (control,
-working memory and ensembles), numerical weights and carrier minima have no
-matched necessity evidence in the reviewed material. The card remains unfinished.
+The symbolic-representation scope combines reference, persistence,
+combinatorial manipulation and hypothetical reasoning. Control, working memory
+and ensembles have no matched necessity evidence in the reviewed material. The
+scope remains unfinished.
 
 [Dehaene et al. (2015)](https://doi.org/10.1016/j.neuron.2015.09.019)
 provides a useful sequence taxonomy: item transitions and timing, chunks,

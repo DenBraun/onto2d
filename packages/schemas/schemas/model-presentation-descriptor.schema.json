@@ -27,7 +27,8 @@
         "levels": { "$ref": "#/$defs/facet" },
         "phases": { "$ref": "#/$defs/facet" },
         "typeRoles": { "$ref": "#/$defs/facet" },
-        "scientificStatuses": { "$ref": "#/$defs/facet" }
+        "scientificStatuses": { "$ref": "#/$defs/facet" },
+        "layers": { "$ref": "#/$defs/facet" }
       }
     },
     "capabilities": {

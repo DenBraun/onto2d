@@ -396,7 +396,7 @@ const contracts = {
       "id": "M-phys-dispersion-source-scope",
       "kind": "method",
       "statement": "Keep the ideal ground-state atom-pair/atom-wall analytic limits distinct from the finite Na/silicon-nitride acquisition and its adopted nonretarded phase model. Use the phase observation and its dependent comparison as one experiment. Retain existing Casimir material-response boundaries without treating them as another atomic acquisition or a universal condensation/cohesion mechanism.",
-      "scope": "Scoped interpretation method for the finite reconstruction of original card 2.6.",
+      "scope": "Scoped interpretation method for the finite reconstruction of van der Waals interactions and dispersion forces.",
       "status": "method-contract",
       "citations": [
         {
@@ -446,23 +446,15 @@ const contracts = {
           "locator": "Pages 793-795: cavity comparison, cutoff, mode sum and ideal-plate force",
           "role": "method",
           "note": "Reviewed primary passage supports this finite model, preparation or response; no experimental or numerical replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original Level 2 catalogue card /6 delimits the scope being reconstructed; its labels and defaults are not independent scientific support."
         }
       ],
       "checkIds": [],
       "limitations": [
         "This finite scope retains a positive ground-state dispersion model and an interaction-sensitive atom-surface phase result. It does not establish universal attraction for every excited state, medium, material, orientation, temperature or separation.",
-        "Permanent dipoles, static-field induction, ionic transfer and benzene resonance are separate descriptions. The selected neutral atomic model does not require the original 2.3 molecular-formation case, the 2.4 ionic regime or the 2.5 molecular-resonance stage as universal prerequisites.",
+        "Permanent dipoles, static-field induction, ionic transfer and benzene resonance are separate descriptions. The selected neutral atomic model does not require molecular formation, an ionic regime or a molecular-resonance stage as universal prerequisites.",
         "No noble-gas cohesion energy, molecular-crystal packing, adsorption isotherm, nonideal-gas coefficient, soft-matter organization or condensed-phase stability is measured by these selected records. Ensemble accumulation and pair additivity need separate models.",
-        "Original parent weights 0.4/0.3/0.3, directions [2], interaction modes [0,1], necessary, dependency type 10 and arising roles have no admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, parent minima/critical counts 2/1/2 and null saturation are catalogue provenance. A chosen two-atom model is not a measured critical molecule, ion, resonance or mode count.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display choices. Generic theoretical and empirical placeholders identify no separately reviewed all-material proof.",
-        "The existing plate Casimir/material-response definitions delimit interpretation; no Lamoreaux/Bressi measurement or correction chain is duplicated. Future card 2.19 can reuse these exact records while retaining distinct geometry, material, temperature and readout assumptions.",
+        "A chosen two-atom model is not a measured critical molecule, ion, resonance or mode count.",
+        "The existing plate Casimir/material-response definitions delimit interpretation; no Lamoreaux/Bressi measurement or correction chain is duplicated. The macroscopic Casimir-effect scope reuses these exact records while retaining distinct geometry, material, temperature and readout assumptions.",
         "No raw-data refit, phase digitization, C3/atomic-polarizability fit, dielectric reconstruction, thermal prediction, full microscopic solver or independently reproduced experiment is claimed."
       ],
       "contextIds": [
@@ -523,23 +515,15 @@ const contracts = {
           "locator": "Pages 793-795: cavity comparison, cutoff, mode sum and ideal-plate force",
           "role": "supports",
           "note": "Reviewed primary passage supports this finite model, preparation or response; no experimental or numerical replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original Level 2 catalogue card /6 delimits the scope being reconstructed; its labels and defaults are not independent scientific support."
         }
       ],
       "checkIds": [],
       "limitations": [
         "This finite scope retains a positive ground-state dispersion model and an interaction-sensitive atom-surface phase result. It does not establish universal attraction for every excited state, medium, material, orientation, temperature or separation.",
-        "Permanent dipoles, static-field induction, ionic transfer and benzene resonance are separate descriptions. The selected neutral atomic model does not require the original 2.3 molecular-formation case, the 2.4 ionic regime or the 2.5 molecular-resonance stage as universal prerequisites.",
+        "Permanent dipoles, static-field induction, ionic transfer and benzene resonance are separate descriptions. The selected neutral atomic model does not require molecular formation, an ionic regime or a molecular-resonance stage as universal prerequisites.",
         "No noble-gas cohesion energy, molecular-crystal packing, adsorption isotherm, nonideal-gas coefficient, soft-matter organization or condensed-phase stability is measured by these selected records. Ensemble accumulation and pair additivity need separate models.",
-        "Original parent weights 0.4/0.3/0.3, directions [2], interaction modes [0,1], necessary, dependency type 10 and arising roles have no admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, parent minima/critical counts 2/1/2 and null saturation are catalogue provenance. A chosen two-atom model is not a measured critical molecule, ion, resonance or mode count.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display choices. Generic theoretical and empirical placeholders identify no separately reviewed all-material proof.",
-        "The existing plate Casimir/material-response definitions delimit interpretation; no Lamoreaux/Bressi measurement or correction chain is duplicated. Future card 2.19 can reuse these exact records while retaining distinct geometry, material, temperature and readout assumptions.",
+        "A chosen two-atom model is not a measured critical molecule, ion, resonance or mode count.",
+        "The existing plate Casimir/material-response definitions delimit interpretation; no Lamoreaux/Bressi measurement or correction chain is duplicated. The macroscopic Casimir-effect scope reuses these exact records while retaining distinct geometry, material, temperature and readout assumptions.",
         "No raw-data refit, phase digitization, C3/atomic-polarizability fit, dielectric reconstruction, thermal prediction, full microscopic solver or independently reproduced experiment is claimed."
       ],
       "contextIds": [
@@ -752,20 +736,14 @@ const contracts = {
         {
           "sourceId": "casimir1948",
           "locator": "Pages 793-795: cavity comparison, cutoff, mode sum and ideal-plate force"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "This finite scope retains a positive ground-state dispersion model and an interaction-sensitive atom-surface phase result. It does not establish universal attraction for every excited state, medium, material, orientation, temperature or separation.",
-        "Permanent dipoles, static-field induction, ionic transfer and benzene resonance are separate descriptions. The selected neutral atomic model does not require the original 2.3 molecular-formation case, the 2.4 ionic regime or the 2.5 molecular-resonance stage as universal prerequisites.",
+        "Permanent dipoles, static-field induction, ionic transfer and benzene resonance are separate descriptions. The selected neutral atomic model does not require molecular formation, an ionic regime or a molecular-resonance stage as universal prerequisites.",
         "No noble-gas cohesion energy, molecular-crystal packing, adsorption isotherm, nonideal-gas coefficient, soft-matter organization or condensed-phase stability is measured by these selected records. Ensemble accumulation and pair additivity need separate models.",
-        "Original parent weights 0.4/0.3/0.3, directions [2], interaction modes [0,1], necessary, dependency type 10 and arising roles have no admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, parent minima/critical counts 2/1/2 and null saturation are catalogue provenance. A chosen two-atom model is not a measured critical molecule, ion, resonance or mode count.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9] and Optional [] remain catalogue/display choices. Generic theoretical and empirical placeholders identify no separately reviewed all-material proof.",
-        "The existing plate Casimir/material-response definitions delimit interpretation; no Lamoreaux/Bressi measurement or correction chain is duplicated. Future card 2.19 can reuse these exact records while retaining distinct geometry, material, temperature and readout assumptions.",
+        "A chosen two-atom model is not a measured critical molecule, ion, resonance or mode count.",
+        "The existing plate Casimir/material-response definitions delimit interpretation; no Lamoreaux/Bressi measurement or correction chain is duplicated. The macroscopic Casimir-effect scope reuses these exact records while retaining distinct geometry, material, temperature and readout assumptions.",
         "No raw-data refit, phase digitization, C3/atomic-polarizability fit, dielectric reconstruction, thermal prediction, full microscopic solver or independently reproduced experiment is claimed."
       ]
     }
@@ -1002,24 +980,6 @@ const contracts = {
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "casimir1948",
       "kind": "research-publication",

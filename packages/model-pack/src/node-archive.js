@@ -27,11 +27,11 @@ const ZIP32_MAX_32 = 0xffffffff;
 const SUPPORTED_FLAGS = 0x0806;
 
 export const MODEL_PACK_ARCHIVE_LIMITS = Object.freeze({
-  maxArchiveBytes: 64 * 1024 * 1024,
+  maxArchiveBytes: 256 * 1024 * 1024,
   maxEntryCount: 32,
-  maxCompressedEntryBytes: 16 * 1024 * 1024,
-  maxUncompressedEntryBytes: 16 * 1024 * 1024,
-  maxTotalUncompressedBytes: 64 * 1024 * 1024,
+  maxCompressedEntryBytes: 64 * 1024 * 1024,
+  maxUncompressedEntryBytes: 64 * 1024 * 1024,
+  maxTotalUncompressedBytes: 256 * 1024 * 1024,
   maxCompressionRatio: 200
 });
 

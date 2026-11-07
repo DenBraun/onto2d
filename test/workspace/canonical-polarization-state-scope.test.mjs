@@ -62,7 +62,6 @@ test("photon polarization admits one scoped definition without a response experi
   for (const citation of claim(data).citations) {
     const publication = data.graph.sources.find((record) => record.id === citation.sourceId);
     assert.ok(publication.review.locators.includes(citation.locator));
-    if (publication.kind === "legacy-catalogue") assert.equal(citation.role, "provenance");
   }
 });
 
@@ -113,7 +112,7 @@ test("polarized states, material response and QED corrections keep separate evid
   ]);
 });
 
-test("source-card parents, thresholds and speculative labels do not gain causal or empirical authority", async () => {
+test("anisotropy, scalar-vacuum, evolution and Level-0 gradient dependencies do not gain causal or empirical authority", async () => {
   assert.deepEqual(admission.formalDependencies.map(([, [from]]) => from),
     ["transverse-photon-fock-state", "one-photon-wavepacket-boundary", "field-anisotropy-boundary",
       "free-field-vacuum", "free-field-time-evolution"].map((id) => `phys:${id}`));
@@ -122,15 +121,10 @@ test("source-card parents, thresholds and speculative labels do not gain causal 
   assert.ok(admission.formalDependencies.every(([, endpoints]) =>
     endpoints.every((id) => !id.startsWith("l0:"))));
   await rejects([
-    ["the anisotropy, scalar-vacuum, scalar-evolution and Level-0 parents retain their limits", (copy) =>
-      dropLimit(copy, /Original parent 1\.32 supplies/)],
-    ["weights, minima and organizational codes cannot become measured laws", (copy) =>
-      dropLimit(copy, /source weights 0\.50/)],
-    ["placeholders cannot establish mediation or downstream excitation stability", (copy) =>
-      dropLimit(copy, /conceptual and theoretical placeholders/)],
-    ["catalogue provenance is not scientific confirmation", (copy) => {
-      claim(copy).citations.find((record) => record.sourceId === "legacy-0").role = "supports";
-    }],
+    ["the anisotropy, scalar-vacuum, scalar-evolution and Level-0 dependencies retain their limits", (copy) =>
+      dropLimit(copy, /effective-field-anisotropy dependency supplies the scoped anisotropy comparison/)],
+    ["unsupported mediation cannot establish downstream excitation stability or transport", (copy) =>
+      dropLimit(copy, /redistribution of interaction influence and asymmetric mediation remain unsupported/)],
     ...admission.formalDependencies.map(([id]) =>
       [`definition input ${id} cannot become an intervention`, (copy) => {
         copy.graph.relations.find((record) => record.id === id).kind = "functional";

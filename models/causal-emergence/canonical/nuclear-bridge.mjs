@@ -161,7 +161,7 @@ const contracts = {
       "id": "D-phys-qcd-nuclear-energy-bridge",
       "kind": "review-finding",
       "statement": "A QCD-to-nuclear-energy calculation declares its color gauge theory, quark-mass parameters, regulator, scale calibration, interpolating operators and energy-extraction procedure. Binding compares a specified nuclear channel with its compatible hadronic threshold, after state and volume inference. A calculation at one input point is a conditional result, not a measured derivative with respect to a renormalized quark mass or a complete prediction for bulk matter.",
-      "scope": "Operational scope of the finite nuclear bridge admitted for source card 1.19; levels are display groups.",
+      "scope": "Operational scope of the finite nuclear bridge; levels are display groups.",
       "status": "definition",
       "citations": [
         {
@@ -219,8 +219,7 @@ const contracts = {
         "Controlled quark-mass sensitivity requires a defined input variation or derivative and a declaration of what is held fixed, including the gauge coupling or QCD scale, cutoff, strange/sea masses and unit calibration. A comparison with physical nuclear data alone is not such a controlled calculation. An input hadron mass used to set the scale cannot simultaneously count as an independent prediction.",
         "Hadron masses, nuclear binding differences, bulk density, compressibility and astrophysical matter are different observables. No reviewed many-body equation of state, composition, thermodynamic state, pressure response or astrophysical inference is supplied here. Direct quark-to-density/compressibility edges and a demonstrated uninterrupted chain to macroscopic materials are excluded, without asserting that the underlying physical influence is zero.",
         "A later material model must declare how it treats electromagnetic, electronic and environmental inputs as well as its nuclear interactions and calibration. Neither a QCD-only two-nucleon spectrum nor a hadron mass table specifies atomic bonding, material phase or mechanical response.",
-        "The original 1.1 and 1.11 parents supply field/parameter and nucleon concepts, not experimentally established arising or maintenance interventions. Their equal 0.5 weights, necessary-parent labels, interaction/causal-direction codes and N_min=N_crit=1 are excluded as scientific results. Color, flavor, baryon number and sample count are distinct quantities, not universal carrier minima.",
-        "The original SOMA phase 2, effect TypeRole 4 and well-supported label do not establish a universal temporal stage or empirical cross-scale law. Generic nuclear-model, observation and astrophysical evidence placeholders identify no preparation or discriminator and supply no additional evidence. Qualified neighboring cards keep their existing scopes."
+        "The quark and nucleon inputs supply field/parameter and nucleon concepts, not experimentally established arising or maintenance interventions. Color, flavor, baryon number and sample count are distinct quantities."
       ]
     },
     {
@@ -616,8 +615,7 @@ const contracts = {
         "Controlled quark-mass sensitivity requires a defined input variation or derivative and a declaration of what is held fixed, including the gauge coupling or QCD scale, cutoff, strange/sea masses and unit calibration. A comparison with physical nuclear data alone is not such a controlled calculation. An input hadron mass used to set the scale cannot simultaneously count as an independent prediction.",
         "Hadron masses, nuclear binding differences, bulk density, compressibility and astrophysical matter are different observables. No reviewed many-body equation of state, composition, thermodynamic state, pressure response or astrophysical inference is supplied here. Direct quark-to-density/compressibility edges and a demonstrated uninterrupted chain to macroscopic materials are excluded, without asserting that the underlying physical influence is zero.",
         "A later material model must declare how it treats electromagnetic, electronic and environmental inputs as well as its nuclear interactions and calibration. Neither a QCD-only two-nucleon spectrum nor a hadron mass table specifies atomic bonding, material phase or mechanical response.",
-        "The original 1.1 and 1.11 parents supply field/parameter and nucleon concepts, not experimentally established arising or maintenance interventions. Their equal 0.5 weights, necessary-parent labels, interaction/causal-direction codes and N_min=N_crit=1 are excluded as scientific results. Color, flavor, baryon number and sample count are distinct quantities, not universal carrier minima.",
-        "The original SOMA phase 2, effect TypeRole 4 and well-supported label do not establish a universal temporal stage or empirical cross-scale law. Generic nuclear-model, observation and astrophysical evidence placeholders identify no preparation or discriminator and supply no additional evidence. Qualified neighboring cards keep their existing scopes."
+        "The quark and nucleon inputs supply field/parameter and nucleon concepts, not experimentally established arising or maintenance interventions. Color, flavor, baryon number and sample count are distinct quantities."
       ]
     },
     {

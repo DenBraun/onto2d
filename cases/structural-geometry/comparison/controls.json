@@ -182,36 +182,6 @@
       ]
     },
     {
-      "id": "causal-self",
-      "left": "causal-fragment",
-      "right": "causal-fragment",
-      "regimes": [
-        "canonical-structure-v1",
-        "topology-only-v1",
-        "typed-relations-v1"
-      ]
-    },
-    {
-      "id": "causal-scopes",
-      "left": "causal-fragment",
-      "right": "causal-fragment",
-      "regimes": [
-        "canonical-structure-v1",
-        "topology-only-v1",
-        "typed-relations-v1"
-      ],
-      "rightScope": {
-        "kind": "induced",
-        "nodeIds": [
-          "0.0",
-          "0.1",
-          "0.2",
-          "0.3",
-          "0.4"
-        ]
-      }
-    },
-    {
       "id": "renumbered-approved",
       "left": "reciprocal-correlated",
       "right": "reciprocal-renumbered",

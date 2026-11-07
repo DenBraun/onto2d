@@ -1,8 +1,7 @@
 import { Onto2D as EngineOnto2D } from "@onto2d/engine";
 import { verifyModelPack } from "@onto2d/model-pack";
 import { canonicalIdentityAnalysis } from "@onto2d/canonical-identity-analysis";
-import bundledPackJson from "../models/causal-emergence/releases/2026.11.04.0/bundle.json" with { type: "json" };
-import legacyPackJson from "../models/causal-emergence/releases/2026.08.15/bundle.json" with { type: "json" };
+import bundledPackJson from "../models/causal-emergence/releases/2026.11.05.0/bundle.json" with { type: "json" };
 
 const CREATE_OPTION_FIELDS = new Set(["models", "aliases", "lineages", "model", "analyses"]);
 const FORBIDDEN_KEYS = new Set(["__proto__", "constructor", "prototype"]);
@@ -116,7 +115,6 @@ export {
 } from "@onto2d/view";
 
 export const bundledCausalEmergenceModelPack = verifyModelPack(bundledPackJson);
-const legacyCausalEmergenceModelPack = verifyModelPack(legacyPackJson);
 
 export class Onto2D {
   static async create(options = {}) {
@@ -135,7 +133,6 @@ export class Onto2D {
     return EngineOnto2D.create({
       models: [
         bundledCausalEmergenceModelPack,
-        legacyCausalEmergenceModelPack,
         ...arrayValues(suppliedModels, "Onto2D.create models")
       ],
       aliases,

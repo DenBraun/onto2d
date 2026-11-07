@@ -18,9 +18,9 @@ All enabled layers must address the exact same node/edge population. Ollivier's
 requested analyzed edges may be a subset, but its underlying scoped graph must
 match. Reject mismatched populations, rather than combine different objects.
 Existing Forman supports full-node populations and typed edge selections; it
-does not acquire an induced-scope adapter here. Forman can be disabled for the
-existing induced real-source flow/Ollivier examples. Bound the common population
-to 64 nodes and 64 edges; retain all upstream source and resource checks.
+does not acquire an induced-scope adapter here. Forman can be disabled for
+requests that use only Ollivier/flow evidence. Bound the common population to 64
+nodes and 64 edges; retain all upstream source and resource checks.
 
 ## Descriptors and provenance
 
@@ -81,11 +81,12 @@ throws without a partial success artifact.
 
 ## Frozen controls and independent evidence
 
-Use the 11 original flow sources/requests; three supplemental controls (inward
-half/half star, outward one/zero star, two-K4 bridge); all five experimental
-Forman graphs; one necessary-edge weighted selection; partial Ollivier edges,
-missing external evidence, all-disabled layers, one-step complete single-edge
-coverage, and a path with tolerance one/stableSteps one. This gives 25 requests.
+Use the nine synthetic original flow sources/requests; three supplemental
+controls (inward half/half star, outward one/zero star, two-K4 bridge); all five
+experimental Forman graphs; one necessary-edge weighted selection; partial
+Ollivier edges, missing external evidence, all-disabled layers, one-step
+complete single-edge coverage, and a path with tolerance one/stableSteps one.
+This gives 23 requests over synthetic sources only.
 Preserve source packs in sources.json and exact requests in controls.json before
 measuring signatures. Do not tune these after inspecting outcomes.
 

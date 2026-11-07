@@ -19,10 +19,10 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "review": {
         "extent": "complete-main-text-and-five-page-experimental-supplement",
         "locators": [
-          "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
-          "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
-          "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
-          "PNAS 107(5),1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls"
+          "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "PNAS 107(5), 1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls"
         ],
         "limit": "Complete original main scientific text and five-page author-hosted published Supporting Information were read. Table S2 and S3 were visually checked in rendered page 5. The supplement was acquired from the author-lab mirror https://static1.squarespace.com/static/5646260ce4b08fda5b792c61/t/56bbb55b27d4bd23c4d9e1a0/1455142236264/%23176SuppMat.pdf, whose internal DOI is the same. Main article online 11 January 2010; issue date 2 February 2010. Figure 2 and Table S2 are one acquisition lineage, not separate reproductions. Underlying raw time courses, fitted covariance, original diffraction frames, and prior literature cited by the paper were not independently reanalysed. Table S1 is a literature compilation and is not admitted as a set of newly reviewed primary experiments. The separate 2011 KSI paper was downloaded during discovery but is not an admitted source. Metadata and limited correction search checked 2026-10-20 against DOI registry and original PMC full text. Title, authors, DOI, journal, volume, issue and pages agree. Registry relation is empty and no explicit erratum/correction/retraction surfaced in the limited exact-title/DOI searches; this does not prove absence of corrections or complete later-literature coverage."
       }
@@ -44,29 +44,11 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "review": {
         "extent": "complete-main-text-tables-and-figure-captions",
         "locators": [
-          "PNAS 96(16),8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography",
-          "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
-          "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
+          "PNAS 96(16), 8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography",
+          "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
         ],
         "limit": "Complete main scientific text, Figures 1-4 captions and Tables 1-4/footnotes were read from original PMC HTML. No original chromatogram integration, MS calibration or crystallographic refinement was replayed. Figure 2b,c and the earlier T26H anomer/structure result are explicitly reused by the source from its cited 1995 paper; that upstream paper was not separately read and is not counted as an independent current study. The 60-min higher-concentration T26H run is distinct from those 5-min lower-concentration comparisons. Metadata and limited correction search checked 2026-10-20 against DOI registry and original PMC full text. Title, authors, DOI, journal, volume, issue and pages agree. Registry relation is empty and no explicit erratum/correction/retraction surfaced in the limited exact-title/DOI searches; this does not prove absence of corrections or complete later-literature coverage."
-      }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
       }
     }
   ],
@@ -80,7 +62,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -99,7 +81,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "method",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -126,7 +108,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -153,14 +135,14 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
           "role": "method",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "Table S3 gives 1.63 angstrom limiting resolution, 82.3% completeness, Rwork 20.7% and Rfree 24.5%. Four monomers in one asymmetric unit and their approximately 0.1 angstrom distance spread are not four independent crystals or a universal coordinate error.",
@@ -180,14 +162,14 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "Table S3 gives 1.63 angstrom limiting resolution, 82.3% completeness, Rwork 20.7% and Rfree 24.5%. Four monomers in one asymmetric unit and their approximately 0.1 angstrom distance spread are not four independent crystals or a universal coordinate error.",
@@ -201,13 +183,13 @@ export const ENZYME_CATALYSIS_RECORDS = {
     {
       "id": "M-bio-ksi-phenolate-probe-context",
       "kind": "method",
-      "statement": "Acquire 19F spectra at 20 C for1 mM 2-fluoro-4-nitrophenolate bound to 2 mM pKSI Y16S/D40N or Y16F/D40N in 40 mM potassium phosphate pH 7.2, 1 mM EDTA, 2 mM DTT and 10% D2O, referenced to external trifluoroacetic acid. Compare free probe in water and THF with base. UV-vis confirms bound ligand ionization; labelled-urea refolding/HSQC controls test whether diffuse crystal density is retained urea.",
+      "statement": "Acquire 19F spectra at 20 C for 1 mM 2-fluoro-4-nitrophenolate bound to 2 mM pKSI Y16S/D40N or Y16F/D40N in 40 mM potassium phosphate pH 7.2, 1 mM EDTA, 2 mM DTT and 10% D2O, referenced to external trifluoroacetic acid. Compare free probe in water and THF with base. UV-vis confirms bound ligand ionization; labelled-urea refolding/HSQC controls test whether diffuse crystal density is retained urea.",
       "scope": "Probe and solvent/control method separate from turnover and diffraction.",
       "status": "method-contract",
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
           "role": "method",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -232,7 +214,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -257,32 +239,32 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls",
+          "locator": "PNAS 107(5), 1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "supports",
           "note": "The actually read preparation-specific passage supplies this component of the conditional interpretation; it is not an additional experiment."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
           "role": "supports",
           "note": "The actually read preparation-specific passage supplies this component of the conditional interpretation; it is not an additional experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "The smaller 190-260-fold losses of Y16A/G/S/T versus the 19,000-fold Y16F loss do not isolate a single hydrogen bond. Mutations alter solvation, packing and potentially other energetic contributions; the source emphasizes that comparisons must specify the water-solvated reference reaction.",
@@ -299,19 +281,19 @@ export const ENZYME_CATALYSIS_RECORDS = {
     {
       "id": "M-bio-t4-product-preparation",
       "kind": "method",
-      "statement": "Incubate cysteine-free pseudo-WT-derived T26H T4 lysozyme with an E.coli cell-wall-derived peptide tetrasaccharide containing one reduced terminal NAM unit. For the higher-substrate experiment use80 micromolar substrate,0.5 micromolar enzyme,20 mM sodium acetate pH 5.0,0 C and 60 min. Resolve products by reversed-phase HPLC and assign masses by electrospray MS; maintain the source distinct lower-substrate5-min comparisons and qualitative halo assay as separate observations.",
+      "statement": "Incubate cysteine-free pseudo-WT-derived T26H T4 lysozyme with an E.coli cell-wall-derived peptide tetrasaccharide containing one reduced terminal NAM unit. For the higher-substrate experiment use 80 micromolar substrate, 0.5 micromolar enzyme, 20 mM sodium acetate pH 5.0, 0 C and 60 min. Resolve products by reversed-phase HPLC and assign masses by electrospray MS; maintain the source distinct lower-substrate 5-min comparisons and qualitative halo assay as separate observations.",
       "scope": "Finite prepared substrate/variant product assay; no single common rate comparison across runs.",
       "status": "method-contract",
       "citations": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography",
+          "locator": "PNAS 96(16), 8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography",
           "role": "method",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
           "role": "method",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -319,8 +301,8 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "checkIds": [],
       "limitations": [
         "T4 WT* denotes the cysteine-free pseudo-wild-type scaffold; the compared proteins are prepared mutants, not all natural lysozymes. Activity in the halo assay is qualitative (+++,++, + or -), not a measured kcat or numerical fractional activity.",
-        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate,5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from1995. No matched rate ratio is inferred across these runs.",
-        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
+        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate, 5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from 1995. No matched rate ratio is inferred across these runs.",
+        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after 60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
         "Higher-mass peaks support longer glycan products, but PMC Table 2 peak numbering(6, 7 for trimer/tetramer) conflicts with main-text assignments (5, 6). Preserve this discrepancy rather than silently changing labels. The probable pentamer is tentative.",
         "Mass assignment and product stereochemistry constrain a mechanism without directly observing a transient His26 covalent intermediate or transition state. A T26E adduct in this paper is inherited prior work; double-mutant adducts are only inferred from SDS/PAGE as explicitly noted.",
         "The 60-min T26H chromatogram and inherited lower-concentration WT*/T26H comparisons do not provide a fully matched quantitative causal comparison of transglycosylation rates or independent replication."
@@ -332,13 +314,13 @@ export const ENZYME_CATALYSIS_RECORDS = {
     {
       "id": "C-bio-t4-transglycosylation-products",
       "kind": "review-finding",
-      "statement": "The source 80 micromolar substrate T26H reaction yields higher-mass glycan products assigned as trimer and tetramer, with a tentative pentamer, and an estimated transglycosylation-to-hydrolysis product ratio about 10:1 after60 min. The lower-substrate inherited comparison gives different anomeric product assignments for WT* and T26H. These data support preparation-dependent product selection without supplying an initial-rate enhancement.",
+      "statement": "The source 80 micromolar substrate T26H reaction yields higher-mass glycan products assigned as trimer and tetramer, with a tentative pentamer, and an estimated transglycosylation-to-hydrolysis product ratio about 10:1 after 60 min. The lower-substrate inherited comparison gives different anomeric product assignments for WT* and T26H. These data support preparation-dependent product selection without supplying an initial-rate enhancement.",
       "scope": "Product observations with unmatched comparison conditions and source peak-label conflict retained.",
       "status": "publication-supported",
       "citations": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -346,8 +328,8 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "checkIds": [],
       "limitations": [
         "T4 WT* denotes the cysteine-free pseudo-wild-type scaffold; the compared proteins are prepared mutants, not all natural lysozymes. Activity in the halo assay is qualitative (+++,++, + or -), not a measured kcat or numerical fractional activity.",
-        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate,5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from1995. No matched rate ratio is inferred across these runs.",
-        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
+        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate, 5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from 1995. No matched rate ratio is inferred across these runs.",
+        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after 60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
         "Higher-mass peaks support longer glycan products, but PMC Table 2 peak numbering(6, 7 for trimer/tetramer) conflicts with main-text assignments (5, 6). Preserve this discrepancy rather than silently changing labels. The probable pentamer is tentative.",
         "Mass assignment and product stereochemistry constrain a mechanism without directly observing a transient His26 covalent intermediate or transition state. A T26E adduct in this paper is inherited prior work; double-mutant adducts are only inferred from SDS/PAGE as explicitly noted.",
         "The 60-min T26H chromatogram and inherited lower-concentration WT*/T26H comparisons do not provide a fully matched quantitative causal comparison of transglycosylation rates or independent replication."
@@ -365,13 +347,13 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
+          "locator": "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         }
@@ -394,36 +376,36 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "id": "C-bio-enzyme-assay-and-active-site-scope",
       "kind": "review-finding",
       "statement": "Selected KSI mutant assays provide source-fitted reaction turnover and a separate ligand-analogue structure/probe analysis; selected T4 lysozyme experiments provide preparation-dependent glycan products and qualified residue-mechanism interpretations. Together they support finite enzyme transformation and localized active-site functionality while keeping activity, fitted kinetic parameters, structure and mechanistic explanation distinct.",
-      "scope": "Finite common disposition of catalogue3.1 and 3.2; publications do not establish universal enzymology.",
+      "scope": "Finite common disposition for enzymatic catalysis and enzyme active sites; publications do not establish universal enzymology.",
       "status": "literature-synthesis",
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
+          "locator": "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported acquisition or inference with its stated finite boundary. No independent experimental reproduction or raw-data refit."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
           "role": "supports",
           "note": "The actually read preparation-specific passage supplies this component of the conditional interpretation; it is not an additional experiment."
         }
@@ -433,12 +415,11 @@ export const ENZYME_CATALYSIS_RECORDS = {
         "Enzymatic transformation is represented by declared prepared reaction assays and fitted or endpoint observables; an active site is a localized structural/functional description. Reusing these experiments for both descriptions does not create independent evidence.",
         "The selected studies test protein catalysts only. They do not define every biological catalyst as protein, make every folded protein catalytic, prove one universal fold or active-site architecture, or infer all turnover from static structure.",
         "Only the stated pH/temperature/substrate regimes are admitted. Regulation, cofactor/solvent necessity, conformational coupling, transition-state stabilization magnitude, metabolic-cycle maintenance, global pathway control and proto-life necessity require separate evidence.",
-        "Original catalogue level,phase,TypeRole,Science,requirements,established label,parent weights,necessity,causal/interaction codes,dependency types and unit carrier minima are provenance/classification defaults, not measured scientific laws or thresholds.",
         "The assays begin with prepared protein scaffolds and substrates. They do not observe folding, biochemical synthesis or a universal sequence from folded protein to every biological catalyst.",
         "Hydrogen-molecule bonding, the separate benzene resonance model, water-dimer hydrogen-bond energetics and gas-phase KRb/N2 polarization do not supply matched catalytic perturbations in these preparations. No cross-domain causal arrow or quantitative energetic transfer is admitted from those independent systems.",
         "Kinetic definitions constrain the interpretation of fitted rates; they are not an independently acting regulatory process. The source experiments supply no enzyme-free reference rate for an absolute enzyme-versus-water acceleration and no broad substrate-specificity panel or equilibrium binding constant.",
-        "Original substrate/constraint, catalyst/resource/transport, regulation/interaction, gradient/compartment and buffering requirement codes remain catalogue classifications. Declared solution and substrate conditions do not prove universal requirements for sustained flux, buffering, compartments or energy supply.",
-        "The unnamed theoretical and empirical catalogue paragraphs do not admit additional transition-state calculations, quantum-classical simulations, substrate-channeling, pre-steady-state, cryo-EM or NMR-structure acquisitions. Only the identified kinetics, product, X-ray and environment-sensitive spectroscopy are used."
+        "Declared solution and substrate conditions do not prove universal requirements for sustained flux, buffering, compartments or energy supply.",
+        "No additional transition-state calculations, quantum-classical simulations, substrate-channeling, pre-steady-state, cryo-EM or NMR-structure acquisitions are admitted. Only the identified kinetics, product, X-ray and environment-sensitive spectroscopy are used."
       ],
       "contextIds": [
         "kraut2010-ksi-kinetic-context",
@@ -457,32 +438,32 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls",
+          "locator": "PNAS 107(5), 1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "method",
           "note": "The actually read preparation-specific passage supplies this component of the conditional interpretation; it is not an additional experiment."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
           "role": "method",
           "note": "The actually read preparation-specific passage supplies this component of the conditional interpretation; it is not an additional experiment."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "The smaller 190-260-fold losses of Y16A/G/S/T versus the 19,000-fold Y16F loss do not isolate a single hydrogen bond. Mutations alter solvation, packing and potentially other energetic contributions; the source emphasizes that comparisons must specify the water-solvated reference reaction.",
@@ -505,13 +486,13 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "citations": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
+          "locator": "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         }
@@ -534,36 +515,36 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "id": "M-bio-enzyme-assay-and-active-site-scope",
       "kind": "method",
       "statement": "Interpret KSI kinetics, separate KSI analogue/probe observations and T4 product/structural comparisons together while retaining every preparation and original acquisition lineage. Treat reaction activity, fitted rate parameters, local structure and mechanistic explanation as separate evidence roles, and do not transfer them into universal catalyst, regulation, folding or carrier-threshold laws.",
-      "scope": "Finite common disposition of catalogue3.1 and 3.2; publications do not establish universal enzymology.",
+      "scope": "Finite common disposition for enzymatic catalysis and enzyme active sites; publications do not establish universal enzymology.",
       "status": "method-contract",
       "citations": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
+          "locator": "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4",
           "role": "method",
           "note": "Method for interpreting the actually read source comparisons while preserving their preparation and inference limits; this method contract is not an additional empirical finding."
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4",
           "role": "method",
           "note": "The actually read preparation-specific passage supplies this component of the conditional interpretation; it is not an additional experiment."
         }
@@ -573,12 +554,11 @@ export const ENZYME_CATALYSIS_RECORDS = {
         "Enzymatic transformation is represented by declared prepared reaction assays and fitted or endpoint observables; an active site is a localized structural/functional description. Reusing these experiments for both descriptions does not create independent evidence.",
         "The selected studies test protein catalysts only. They do not define every biological catalyst as protein, make every folded protein catalytic, prove one universal fold or active-site architecture, or infer all turnover from static structure.",
         "Only the stated pH/temperature/substrate regimes are admitted. Regulation, cofactor/solvent necessity, conformational coupling, transition-state stabilization magnitude, metabolic-cycle maintenance, global pathway control and proto-life necessity require separate evidence.",
-        "Original catalogue level,phase,TypeRole,Science,requirements,established label,parent weights,necessity,causal/interaction codes,dependency types and unit carrier minima are provenance/classification defaults, not measured scientific laws or thresholds.",
         "The assays begin with prepared protein scaffolds and substrates. They do not observe folding, biochemical synthesis or a universal sequence from folded protein to every biological catalyst.",
         "Hydrogen-molecule bonding, the separate benzene resonance model, water-dimer hydrogen-bond energetics and gas-phase KRb/N2 polarization do not supply matched catalytic perturbations in these preparations. No cross-domain causal arrow or quantitative energetic transfer is admitted from those independent systems.",
         "Kinetic definitions constrain the interpretation of fitted rates; they are not an independently acting regulatory process. The source experiments supply no enzyme-free reference rate for an absolute enzyme-versus-water acceleration and no broad substrate-specificity panel or equilibrium binding constant.",
-        "Original substrate/constraint, catalyst/resource/transport, regulation/interaction, gradient/compartment and buffering requirement codes remain catalogue classifications. Declared solution and substrate conditions do not prove universal requirements for sustained flux, buffering, compartments or energy supply.",
-        "The unnamed theoretical and empirical catalogue paragraphs do not admit additional transition-state calculations, quantum-classical simulations, substrate-channeling, pre-steady-state, cryo-EM or NMR-structure acquisitions. Only the identified kinetics, product, X-ray and environment-sensitive spectroscopy are used."
+        "Declared solution and substrate conditions do not prove universal requirements for sustained flux, buffering, compartments or energy supply.",
+        "No additional transition-state calculations, quantum-classical simulations, substrate-channeling, pre-steady-state, cryo-EM or NMR-structure acquisitions are admitted. Only the identified kinetics, product, X-ray and environment-sensitive spectroscopy are used."
       ],
       "contextIds": [
         "kraut2010-ksi-kinetic-context",
@@ -603,7 +583,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
         }
       ],
       "openObligations": [
@@ -623,7 +603,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
         }
       ],
       "openObligations": [
@@ -648,7 +628,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
         }
       ],
       "openObligations": [
@@ -673,11 +653,11 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
         }
       ],
       "openObligations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "Table S3 gives 1.63 angstrom limiting resolution, 82.3% completeness, Rwork 20.7% and Rfree 24.5%. Four monomers in one asymmetric unit and their approximately 0.1 angstrom distance spread are not four independent crystals or a universal coordinate error.",
@@ -698,11 +678,11 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
         }
       ],
       "openObligations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "Table S3 gives 1.63 angstrom limiting resolution, 82.3% completeness, Rwork 20.7% and Rfree 24.5%. Four monomers in one asymmetric unit and their approximately 0.1 angstrom distance spread are not four independent crystals or a universal coordinate error.",
@@ -714,7 +694,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "id": "bio:ksi-phenolate-probe-context",
       "name": "Prepared KSI fluorophenolate and solvent controls",
       "kind": "context",
-      "description": "Acquire 19F spectra at 20 C for1 mM 2-fluoro-4-nitrophenolate bound to 2 mM pKSI Y16S/D40N or Y16F/D40N in 40 mM potassium phosphate pH 7.2, 1 mM EDTA, 2 mM DTT and 10% D2O, referenced to external trifluoroacetic acid. Compare free probe in water and THF with base. UV-vis confirms bound ligand ionization; labelled-urea refolding/HSQC controls test whether diffuse crystal density is retained urea.",
+      "description": "Acquire 19F spectra at 20 C for 1 mM 2-fluoro-4-nitrophenolate bound to 2 mM pKSI Y16S/D40N or Y16F/D40N in 40 mM potassium phosphate pH 7.2, 1 mM EDTA, 2 mM DTT and 10% D2O, referenced to external trifluoroacetic acid. Compare free probe in water and THF with base. UV-vis confirms bound ligand ionization; labelled-urea refolding/HSQC controls test whether diffuse crystal density is retained urea.",
       "claimIds": [
         "M-bio-ksi-phenolate-probe-context"
       ],
@@ -723,7 +703,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
         }
       ],
       "openObligations": [
@@ -746,7 +726,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
         }
       ],
       "openObligations": [
@@ -770,15 +750,15 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls"
+          "locator": "PNAS 107(5), 1960-1965, Conclusions and Implications and Figure 5; Supporting Information page 1 energetic comparison and page 2 diffuse density and urea controls"
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
+          "locator": "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
         }
       ],
       "openObligations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "The smaller 190-260-fold losses of Y16A/G/S/T versus the 19,000-fold Y16F loss do not isolate a single hydrogen bond. Mutations alter solvation, packing and potentially other energetic contributions; the source emphasizes that comparisons must specify the water-solvated reference reaction.",
@@ -791,7 +771,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "id": "bio:t4-product-preparation",
       "name": "Prepared T4 lysozyme product-selection assay",
       "kind": "context",
-      "description": "Incubate cysteine-free pseudo-WT-derived T26H T4 lysozyme with an E.coli cell-wall-derived peptide tetrasaccharide containing one reduced terminal NAM unit. For the higher-substrate experiment use80 micromolar substrate,0.5 micromolar enzyme,20 mM sodium acetate pH 5.0,0 C and 60 min. Resolve products by reversed-phase HPLC and assign masses by electrospray MS; maintain the source distinct lower-substrate5-min comparisons and qualitative halo assay as separate observations.",
+      "description": "Incubate cysteine-free pseudo-WT-derived T26H T4 lysozyme with an E.coli cell-wall-derived peptide tetrasaccharide containing one reduced terminal NAM unit. For the higher-substrate experiment use 80 micromolar substrate, 0.5 micromolar enzyme, 20 mM sodium acetate pH 5.0, 0 C and 60 min. Resolve products by reversed-phase HPLC and assign masses by electrospray MS; maintain the source distinct lower-substrate 5-min comparisons and qualitative halo assay as separate observations.",
       "claimIds": [
         "M-bio-t4-product-preparation"
       ],
@@ -800,17 +780,17 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography"
+          "locator": "PNAS 96(16), 8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography"
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
         }
       ],
       "openObligations": [
         "T4 WT* denotes the cysteine-free pseudo-wild-type scaffold; the compared proteins are prepared mutants, not all natural lysozymes. Activity in the halo assay is qualitative (+++,++, + or -), not a measured kcat or numerical fractional activity.",
-        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate,5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from1995. No matched rate ratio is inferred across these runs.",
-        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
+        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate, 5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from 1995. No matched rate ratio is inferred across these runs.",
+        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after 60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
         "Higher-mass peaks support longer glycan products, but PMC Table 2 peak numbering(6, 7 for trimer/tetramer) conflicts with main-text assignments (5, 6). Preserve this discrepancy rather than silently changing labels. The probable pentamer is tentative.",
         "Mass assignment and product stereochemistry constrain a mechanism without directly observing a transient His26 covalent intermediate or transition state. A T26E adduct in this paper is inherited prior work; double-mutant adducts are only inferred from SDS/PAGE as explicitly noted.",
         "The 60-min T26H chromatogram and inherited lower-concentration WT*/T26H comparisons do not provide a fully matched quantitative causal comparison of transglycosylation rates or independent replication."
@@ -820,7 +800,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "id": "bio:t4-transglycosylation-products",
       "name": "Finite T26H longer-glycan product formation",
       "kind": "scoped-process",
-      "description": "The source 80 micromolar substrate T26H reaction yields higher-mass glycan products assigned as trimer and tetramer, with a tentative pentamer, and an estimated transglycosylation-to-hydrolysis product ratio about 10:1 after60 min. The lower-substrate inherited comparison gives different anomeric product assignments for WT* and T26H. These data support preparation-dependent product selection without supplying an initial-rate enhancement.",
+      "description": "The source 80 micromolar substrate T26H reaction yields higher-mass glycan products assigned as trimer and tetramer, with a tentative pentamer, and an estimated transglycosylation-to-hydrolysis product ratio about 10:1 after 60 min. The lower-substrate inherited comparison gives different anomeric product assignments for WT* and T26H. These data support preparation-dependent product selection without supplying an initial-rate enhancement.",
       "claimIds": [
         "C-bio-t4-transglycosylation-products"
       ],
@@ -829,13 +809,13 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
         }
       ],
       "openObligations": [
         "T4 WT* denotes the cysteine-free pseudo-wild-type scaffold; the compared proteins are prepared mutants, not all natural lysozymes. Activity in the halo assay is qualitative (+++,++, + or -), not a measured kcat or numerical fractional activity.",
-        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate,5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from1995. No matched rate ratio is inferred across these runs.",
-        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
+        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate, 5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from 1995. No matched rate ratio is inferred across these runs.",
+        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after 60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
         "Higher-mass peaks support longer glycan products, but PMC Table 2 peak numbering(6, 7 for trimer/tetramer) conflicts with main-text assignments (5, 6). Preserve this discrepancy rather than silently changing labels. The probable pentamer is tentative.",
         "Mass assignment and product stereochemistry constrain a mechanism without directly observing a transient His26 covalent intermediate or transition state. A T26E adduct in this paper is inherited prior work; double-mutant adducts are only inferred from SDS/PAGE as explicitly noted.",
         "The 60-min T26H chromatogram and inherited lower-concentration WT*/T26H comparisons do not provide a fully matched quantitative causal comparison of transglycosylation rates or independent replication."
@@ -855,11 +835,11 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
+          "locator": "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
         }
       ],
       "openObligations": [
@@ -885,39 +865,30 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "sourceCoordinates": [
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
         },
         {
           "sourceId": "kraut2010-ksi-oxyanion-mutations",
-          "locator": "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
+          "locator": "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
+          "locator": "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
         },
         {
           "sourceId": "kuroki1999-t4-active-site",
-          "locator": "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/1"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/2"
+          "locator": "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
         }
       ],
       "openObligations": [
         "Enzymatic transformation is represented by declared prepared reaction assays and fitted or endpoint observables; an active site is a localized structural/functional description. Reusing these experiments for both descriptions does not create independent evidence.",
         "The selected studies test protein catalysts only. They do not define every biological catalyst as protein, make every folded protein catalytic, prove one universal fold or active-site architecture, or infer all turnover from static structure.",
         "Only the stated pH/temperature/substrate regimes are admitted. Regulation, cofactor/solvent necessity, conformational coupling, transition-state stabilization magnitude, metabolic-cycle maintenance, global pathway control and proto-life necessity require separate evidence.",
-        "Original catalogue level,phase,TypeRole,Science,requirements,established label,parent weights,necessity,causal/interaction codes,dependency types and unit carrier minima are provenance/classification defaults, not measured scientific laws or thresholds.",
         "The assays begin with prepared protein scaffolds and substrates. They do not observe folding, biochemical synthesis or a universal sequence from folded protein to every biological catalyst.",
         "Hydrogen-molecule bonding, the separate benzene resonance model, water-dimer hydrogen-bond energetics and gas-phase KRb/N2 polarization do not supply matched catalytic perturbations in these preparations. No cross-domain causal arrow or quantitative energetic transfer is admitted from those independent systems.",
         "Kinetic definitions constrain the interpretation of fitted rates; they are not an independently acting regulatory process. The source experiments supply no enzyme-free reference rate for an absolute enzyme-versus-water acceleration and no broad substrate-specificity panel or equilibrium binding constant.",
-        "Original substrate/constraint, catalyst/resource/transport, regulation/interaction, gradient/compartment and buffering requirement codes remain catalogue classifications. Declared solution and substrate conditions do not prove universal requirements for sustained flux, buffering, compartments or energy supply.",
-        "The unnamed theoretical and empirical catalogue paragraphs do not admit additional transition-state calculations, quantum-classical simulations, substrate-channeling, pre-steady-state, cryo-EM or NMR-structure acquisitions. Only the identified kinetics, product, X-ray and environment-sensitive spectroscopy are used."
+        "Declared solution and substrate conditions do not prove universal requirements for sustained flux, buffering, compartments or energy supply.",
+        "No additional transition-state calculations, quantum-classical simulations, substrate-channeling, pre-steady-state, cryo-EM or NMR-structure acquisitions are admitted. Only the identified kinetics, product, X-ray and environment-sensitive spectroscopy are used."
       ]
     }
   ],
@@ -1143,7 +1114,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       ],
       "readExtent": "complete-main-text-and-five-page-experimental-supplement",
       "reviewedLocators": [
-        "PNAS 107(5),1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
+        "PNAS 107(5), 1960-1965, Results and Discussion: Rate Effects; Figure 2; Supporting Information pages 1-2 KSI Kinetics and page 5 Table S2"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1073/pnas.0911168107",
@@ -1163,7 +1134,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "observable": "Diffraction intensities and source-refined ligand/residue coordinates; localized diffuse electron density.",
       "finding": "The source-refined 1.63 angstrom pKSI Y16S/D40N-equilenin structure places Ser16 hydroxyl and equilenin oxygen 6.4 angstrom apart, with Ser16 directed toward Met13 backbone carbonyl. Asp103 remains close to the ligand oxygen. The overall backbone differs by about 0.4 angstrom RMSD from the inherited WT-analogue structure. Local diffuse density is compatible with cavity water, while a direct Ser16-to-ligand hydrogen bond is absent in this refined structure.",
       "limitations": [
-        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state ; transferring structural interpretation to catalysis is conditional.",
+        "The new crystal is the double mutant Y16S/D40N with an intermediate analogue, not the catalytically assayed Y16S single mutant with reacting 5(10)-EST. D40N is introduced to mimic the protonated general-base state; transferring structural interpretation to catalysis is conditional.",
         "Crystal data are collected at 100 K after crystallization at 20 C. The crystallization reservoir is pH 7.2 in SI, rounded to pH 7 in main text; neither equals a measured catalytic trajectory at room temperature.",
         "Distances are refined model quantities. The 6.4 angstrom Ser16-to-equilenin oxygen separation excludes that direct donor geometry in this crystal, but does not directly observe a transition state, proton transfer, electric field or hydrogen-bond energy.",
         "Table S3 gives 1.63 angstrom limiting resolution, 82.3% completeness, Rwork 20.7% and Rfree 24.5%. Four monomers in one asymmetric unit and their approximately 0.1 angstrom distance spread are not four independent crystals or a universal coordinate error.",
@@ -1172,7 +1143,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       ],
       "readExtent": "complete-main-text-and-five-page-experimental-supplement",
       "reviewedLocators": [
-        "PNAS 107(5),1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
+        "PNAS 107(5), 1960-1965, Results and Discussion: X-Ray Structure; Figure 3A-C; Methods; Supporting Information page 2 KSI X-ray Crystallography and page 5 Table S3"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1073/pnas.0911168107",
@@ -1188,7 +1159,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "issue": "5",
       "pages": "1960-1965",
       "system": "pKSI Y16S/D40N and Y16F/D40N fluorophenolate complexes and free-probe solvent controls",
-      "preparation": "Acquire 19F spectra at 20 C for1 mM 2-fluoro-4-nitrophenolate bound to 2 mM pKSI Y16S/D40N or Y16F/D40N in 40 mM potassium phosphate pH 7.2, 1 mM EDTA, 2 mM DTT and 10% D2O, referenced to external trifluoroacetic acid. Compare free probe in water and THF with base. UV-vis confirms bound ligand ionization; labelled-urea refolding/HSQC controls test whether diffuse crystal density is retained urea.",
+      "preparation": "Acquire 19F spectra at 20 C for 1 mM 2-fluoro-4-nitrophenolate bound to 2 mM pKSI Y16S/D40N or Y16F/D40N in 40 mM potassium phosphate pH 7.2, 1 mM EDTA, 2 mM DTT and 10% D2O, referenced to external trifluoroacetic acid. Compare free probe in water and THF with base. UV-vis confirms bound ligand ionization; labelled-urea refolding/HSQC controls test whether diffuse crystal density is retained urea.",
       "observable": "19F chemical shifts; UV-vis ionization checks;15N-urea HSQC control.",
       "finding": "The source reports 19F peaks at -134.7 ppm for phenolate bound to pKSI Y16F/D40N and -136.4 ppm for Y16S/D40N. The water-to-THF probe comparison shifts by 2.2 ppm. These finite spectra support differing local probe environments and enter the water-filled-cavity interpretation together with diffraction and mutation kinetics.",
       "limitations": [
@@ -1199,7 +1170,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       ],
       "readExtent": "complete-main-text-and-five-page-experimental-supplement",
       "reviewedLocators": [
-        "PNAS 107(5),1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
+        "PNAS 107(5), 1960-1965, Probing the Local Solvation Environment; Figure 4; Supporting Information page 2 NMR and UV-vis methods; Figures S1-S2 pages 3-4"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1073/pnas.0911168107",
@@ -1215,21 +1186,21 @@ export const ENZYME_CATALYSIS_RECORDS = {
       "issue": "16",
       "pages": "8949-8954",
       "system": "Cysteine-free pseudo-WT-derived T4 lysozyme variants with prepared peptidic tetrasaccharide",
-      "preparation": "Incubate cysteine-free pseudo-WT-derived T26H T4 lysozyme with an E.coli cell-wall-derived peptide tetrasaccharide containing one reduced terminal NAM unit. For the higher-substrate experiment use80 micromolar substrate,0.5 micromolar enzyme,20 mM sodium acetate pH 5.0,0 C and 60 min. Resolve products by reversed-phase HPLC and assign masses by electrospray MS; maintain the source distinct lower-substrate5-min comparisons and qualitative halo assay as separate observations.",
+      "preparation": "Incubate cysteine-free pseudo-WT-derived T26H T4 lysozyme with an E.coli cell-wall-derived peptide tetrasaccharide containing one reduced terminal NAM unit. For the higher-substrate experiment use 80 micromolar substrate, 0.5 micromolar enzyme, 20 mM sodium acetate pH 5.0, 0 C and 60 min. Resolve products by reversed-phase HPLC and assign masses by electrospray MS; maintain the source distinct lower-substrate 5-min comparisons and qualitative halo assay as separate observations.",
       "observable": "HPLC product profiles, electrospray masses and qualitative halo activity.",
-      "finding": "The source 80 micromolar substrate T26H reaction yields higher-mass glycan products assigned as trimer and tetramer, with a tentative pentamer, and an estimated transglycosylation-to-hydrolysis product ratio about 10:1 after60 min. The lower-substrate inherited comparison gives different anomeric product assignments for WT* and T26H. These data support preparation-dependent product selection without supplying an initial-rate enhancement.",
+      "finding": "The source 80 micromolar substrate T26H reaction yields higher-mass glycan products assigned as trimer and tetramer, with a tentative pentamer, and an estimated transglycosylation-to-hydrolysis product ratio about 10:1 after 60 min. The lower-substrate inherited comparison gives different anomeric product assignments for WT* and T26H. These data support preparation-dependent product selection without supplying an initial-rate enhancement.",
       "limitations": [
         "T4 WT* denotes the cysteine-free pseudo-wild-type scaffold; the compared proteins are prepared mutants, not all natural lysozymes. Activity in the halo assay is qualitative (+++,++, + or -), not a measured kcat or numerical fractional activity.",
-        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate,5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from1995. No matched rate ratio is inferred across these runs.",
-        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
+        "The 60-min T26H run uses 80 micromolar substrate and 0.5 micromolar enzyme at 0 C. Figure 2b,c use 2 micromolar substrate, 5 min 25 C and different WT*/T26H enzyme concentrations (0.08 versus 0.5 micromolar), and are inherited from 1995. No matched rate ratio is inferred across these runs.",
+        "The source estimated about 10:1 transglycosylation-to-hydrolysis products after 60 min; this is a product ratio at that time and substrate concentration, not an initial-rate constant, kinetic selectivity coefficient or general efficiency ratio. No complete integration uncertainty is supplied.",
         "Higher-mass peaks support longer glycan products, but PMC Table 2 peak numbering(6, 7 for trimer/tetramer) conflicts with main-text assignments (5, 6). Preserve this discrepancy rather than silently changing labels. The probable pentamer is tentative.",
         "Mass assignment and product stereochemistry constrain a mechanism without directly observing a transient His26 covalent intermediate or transition state. A T26E adduct in this paper is inherited prior work; double-mutant adducts are only inferred from SDS/PAGE as explicitly noted.",
         "The 60-min T26H chromatogram and inherited lower-concentration WT*/T26H comparisons do not provide a fully matched quantitative causal comparison of transglycosylation rates or independent replication."
       ],
       "readExtent": "complete-main-text-tables-and-figure-captions",
       "reviewedLocators": [
-        "PNAS 96(16),8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography",
-        "PNAS 96(16),8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
+        "PNAS 96(16), 8949-8954, Materials and Methods: Materials, Analysis of Enzymatic Products, Enzymatic Activity, X-Ray Crystallography",
+        "PNAS 96(16), 8949-8954, Results: Enzymatic Activities and Product Analysis; Tables 1-2 and Figure 2 with its preparation-specific caption"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1073/pnas.96.16.8949",
@@ -1258,7 +1229,7 @@ export const ENZYME_CATALYSIS_RECORDS = {
       ],
       "readExtent": "complete-main-text-tables-and-figure-captions",
       "reviewedLocators": [
-        "PNAS 96(16),8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
+        "PNAS 96(16), 8949-8954, Results: Structure Determination; Table 3 including double-mutant non-refinement footnote; Figure 3; Discussion and Figure 4"
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1073/pnas.96.16.8949",

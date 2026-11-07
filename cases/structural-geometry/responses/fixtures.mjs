@@ -14,10 +14,9 @@ export async function fixtures() {
   const graphs = [...controls.graphs, { id: "maximum", nodes: cycleNodes + isolates,
     edges: Array.from({ length: cycleNodes }, (_, i) => [i, (i + 1) % cycleNodes, type]) }];
   const sources = new Map(graphs.map(g => [g.id, packFor(graphFor(g, controls.types))]));
-  sources.set("causal", await readJson("../../../models/causal-emergence/releases/2026.08.15/bundle.json"));
   return controls.scenarios.map(s => {
     if (!sources.has(s.source)) throw new Error(`Unknown declared response source: ${s.source}`);
-    const scope = s.scope ?? (s.source === "causal" ? { kind: "induced", nodeIds: controls.causalScope } : null);
+    const scope = s.scope ?? null;
     return { id: s.id, pack: sources.get(s.source), input: { regimeId: s.regimeId, ...(scope ? { scope } : {}) } };
   });
 }

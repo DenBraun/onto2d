@@ -10,8 +10,6 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
-CAUSAL = ROOT / "models/causal-emergence/releases/2026.08.15/bundle.json"
 CANONICAL = HERE.parent / "canonical/reference.py"
 spec = importlib.util.spec_from_file_location("independent_permutations", CANONICAL)
 permutations = importlib.util.module_from_spec(spec)
@@ -75,13 +73,6 @@ def source_graphs():
     for g in document["controls"]:
         labels = g.get("labels", ["n" + str(i) for i in range(g["nodes"])])
         result.append((g["id"], labels, [("e" + str(i), labels[u], labels[v]) for i, (u, v) in enumerate(g["edges"])]))
-    pack = json.loads(CAUSAL.read_text(encoding="utf-8"))
-    for scope in document["causalScopes"]:
-        labels = scope["nodeIds"]
-        assert set(labels) <= {n["id"] for n in pack["files"]["model/nodes.json"]}
-        edges = [(e["id"], e["source"], e["target"]) for e in pack["files"]["model/edges.json"]
-                 if e["source"] in labels and e["target"] in labels]
-        result.append((scope["id"], labels, edges))
     return result
 
 
@@ -105,7 +96,6 @@ def expected():
     controls = [{"id": name, **measure(labels, records)} for name, labels, records in source_graphs()]
     return {"schemaVersion": "1", "method": "boolean-floyd-warshall-and-independent-permutation-orbits",
             "controlsFileSha256": hashlib.sha256((HERE / "controls.json").read_bytes()).hexdigest(),
-            "causalFileSha256": hashlib.sha256(CAUSAL.read_bytes()).hexdigest(),
             "canonicalReferenceFileSha256": hashlib.sha256(CANONICAL.read_bytes()).hexdigest(),
             "census": census, "controls": controls}
 

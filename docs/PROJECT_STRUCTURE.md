@@ -37,7 +37,6 @@ Causal Emergence graph.
 | `packages/rdf-import` | Bounded RDF 1.1 import artifacts and semantics-neutral graph projection |
 | `packages/shacl-validation` | Closed SHACL 1.0 Core validation plans and reports over exact RDF imports |
 | `packages/rdf-mapping` | Reviewed RDF-to-Onto2D policies, complete statement accounting, and Model Pack projection |
-| `packages/catalog-adapter` | Catalogue loading, audit, and reviewed migration replay |
 | `packages/scientific-adapter` | Interface for external numerical implementations |
 | `packages/level-zero-solver` | Bounded Phase-B numerical implementation outside the kernel |
 | `packages/run-store` | Filesystem persistence of verified run bundles and execution records |

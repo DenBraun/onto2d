@@ -23,7 +23,6 @@ Creating a mapping never supplies its approval. A partial mapping must remain
 unresolved even with test authorization. Recanonicalize after translation.
 
 Equal dictionary bytes across different source bindings do not authorize
-alignment. The unchanged Causal Emergence release contributes only the explicit
-six-node scope listed in controls.json. No cross-domain mapping or empirical
-result is inferred. No pairwise distance, final comparison status, probe or
-response signature is supplied by this stage.
+alignment. All sources are the synthetic graphs listed in controls.json. No
+cross-domain mapping or empirical result is inferred. No pairwise distance,
+final comparison status, probe or response signature is supplied by this stage.

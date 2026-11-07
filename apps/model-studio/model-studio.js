@@ -1,46 +1,46 @@
 import {
   loadModelPackBundle,
   loadModelPackHttpDirectory
-} from "../../packages/model-pack/src/browser.js?v=20261104.3";
+} from "../../packages/model-pack/src/browser.js?v=20261106.10";
 import {
   createIndexedDbModelPackCacheStorage,
   createVerifiedModelPackCache
-} from "../../packages/model-pack/src/cache.js?v=20261104.3";
+} from "../../packages/model-pack/src/cache.js?v=20261106.10";
 import {
   loadModelPackRegistryHttp,
   matchModelPackRegistryResolution,
   resolveModelPackRegistry
-} from "../../packages/model-pack/src/registry.js?v=20261104.3";
-import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261104.3";
-import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261104.3";
+} from "../../packages/model-pack/src/registry.js?v=20261106.10";
+import { createModelPackWorkerClient } from "../../packages/model-pack/src/worker.js?v=20261106.10";
+import { RDF_IMPORT_LIMITS, importNTriples } from "../../packages/rdf-import/src/index.js?v=20261106.10";
 import {
   buildRdfMappedModelPack,
   verifyRdfMappingPolicy
-} from "../../packages/rdf-mapping/src/index.js?v=20261104.3";
-import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261104.3";
-import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261104.3";
-import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261104.3";
+} from "../../packages/rdf-mapping/src/index.js?v=20261106.10";
+import { validateShacl } from "../../packages/shacl-validation/src/index.js?v=20261106.10";
+import { createVerifiedModelPresentation } from "../../packages/engine/src/presentation.js?v=20261106.10";
+import { layoutNeighborhood, wrapGraphNodeLabel } from "../../packages/view/src/index.js?v=20261106.10";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
-import { graphHighlight } from "./graph-interactions.js?v=20261104.3";
-import { interactionViewCatalog, selectInteractionGraph, interactionCaseOverview, layoutIsolatedCaseCards } from "./interaction-views.js?v=20261104.3";
-import { citationLinks, resolveClaimCitations } from "./evidence-links.js?v=20261104.3";
-import { recordEvidenceContext, resolveRecordEvidence } from "./record-evidence.js?v=20261104.3";
-import { loadBrowseModel } from "./browse-data.js?v=20261104.3";
+import { graphHighlight } from "./graph-interactions.js?v=20261106.10";
+import { interactionViewCatalog, selectInteractionGraph, interactionCaseOverview, layoutIsolatedCaseCards } from "./interaction-views.js?v=20261106.10";
+import { citationLinks, resolveClaimCitations } from "./evidence-links.js?v=20261106.10";
+import { recordEvidenceContext, resolveRecordEvidence } from "./record-evidence.js?v=20261106.10";
+import { loadBrowseModel } from "./browse-data.js?v=20261106.10";
 import {
   modelSelectionKey,
   modelSelectionLabel,
   registryEntryForKey,
   requestedRegistryEntry,
   requestedWorkspaceState
-} from "./model-selection.js?v=20261104.3";
+} from "./model-selection.js?v=20261106.10";
 
 const MODEL_REGISTRY_URL = new URL("../../models/registry.json", import.meta.url);
-const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.11.04.0" });
+const DEFAULT_MODEL_SELECTION = Object.freeze({ modelId: "causal-emergence", version: "2026.11.05.0" });
 const MODEL_PACK_WORKER_URL = new URL(
-  "../../assets/js/model-pack-worker.js?v=20261104.3",
+  "../../assets/js/model-pack-worker.js?v=20261106.10",
   import.meta.url
 );
-const EXPECTED_REGISTRY_HASH = "sha256:0e1b53b39dc34f83fe816fa456b6533bbbe6e4b577c251e39e8b90723cde58d5";
+const EXPECTED_REGISTRY_HASH = "sha256:0043116fedbcfb0ae3b50902b61686629904157ee3d9fa0557aa1dfe5be18298";
 const MODEL_CACHE_OPTIONS = Object.freeze({
   databaseName: "onto2d-model-studio-cache-v1",
   maxEntries: 4,
@@ -53,15 +53,15 @@ const CATALOG_PAGE_SIZE = 60;
 const MAX_POLICY_BYTES = 512 * 1024;
 const LOCAL_MODEL_OPTION = "local-rdf";
 const PRESENTATION_FIELDS = new Set([
-  "id", "name", "level", "phase", "typeRole", "scientificStatus",
+  "id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain",
   "shortDescription", "parentCount", "childCount", "incomingEdgeCount",
   "outgoingEdgeCount", "degree"
 ]);
 
 const ids = [
   "model-selector", "model-name", "model-version", "node-count", "edge-count", "root-hash", "load-state",
-  "catalog-count", "catalog-search", "level-filter", "role-filter", "phase-filter",
-  "status-filter", "catalog-sort", "catalog-list", "catalog-empty", "graph-title", "editor-tab-label",
+  "catalog-count", "catalog-search", "layer-filter", "level-filter", "role-filter", "phase-filter",
+  "status-filter", "catalog-sort", "catalog-list", "catalog-empty", "catalog-empty-hint", "graph-title", "editor-tab-label",
   "catalog-more", "window-model-id", "rdf-import-open", "rdf-import-dialog", "rdf-import-form",
   "rdf-import-close", "rdf-import-cancel", "rdf-import-submit", "rdf-data-file",
   "rdf-shapes-file", "rdf-policy-file", "rdf-import-status",
@@ -73,7 +73,7 @@ const ids = [
   "model-boundary-note", "records-title-label", "parents-title-label", "children-title-label",
   "level-filter-control", "role-filter-control", "phase-filter-control", "status-filter-control",
   "level-filter-label", "role-filter-label", "phase-filter-label", "status-filter-label",
-  "vocabulary-panel", "vocabulary-scope", "vocabulary-group", "vocabulary-records",
+  "layer-filter-control", "layer-filter-label", "arising-table-panel", "arising-table", "arising-panel", "arising-details",
   "source-readiness-panel", "source-readiness-summary",
   "source-readiness-records", "source-readiness-download", "optical-review-panel", "optical-review-summary",
   "optical-review-records", "optical-review-download",
@@ -104,6 +104,9 @@ const state = {
   manifest: null,
   focusId: null,
   selectedId: null,
+  domainFilter: null,
+  nodeNames: new Map(),
+  arisingTableFor: null,
   direction: "both",
   depth: 1,
   interactionViews: null,
@@ -154,6 +157,35 @@ function boundedLabel(value, fallback, maximum = 240) {
     : fallback;
 }
 
+function arisingTableMetadata(value) {
+  const axis = (entries) => (Array.isArray(entries) ? entries.slice(0, 32).filter((entry) => (
+    entry !== null && typeof entry === "object" && Number.isInteger(entry.value)
+    && typeof entry.name === "string" && entry.name.length > 0 && entry.name.length <= 80
+  )).map(({ value, name }) => Object.freeze({ value, name })) : []);
+  const levels = axis(value?.levels);
+  const phases = axis(value?.phases);
+  const names = (entries) => new Map(axis(entries).map(({ value: id, name }) => [id, name]));
+  const layer = typeof value?.layer === "string" && value.layer.length > 0 && value.layer.length <= 80 ? value.layer : null;
+  const rootNote = typeof value?.rootNote === "string" && value.rootNote.length > 0 && value.rootNote.length <= 800 ? value.rootNote : null;
+  const named = (entries, limit) => (Array.isArray(entries) ? entries.slice(0, limit).filter((entry) => (
+    entry !== null && typeof entry === "object" && typeof entry.value === "string" && entry.value.length > 0 && entry.value.length <= 80
+    && typeof entry.name === "string" && entry.name.length > 0 && entry.name.length <= 120
+  )) : []);
+  const domains = named(value?.domains, 12).map(({ value: id, name }, index) => Object.freeze({ value: id, name, index }));
+  const domainIds = new Set(domains.map((domain) => domain.value));
+  const clusters = named(value?.clusters, 400).filter((entry) => domainIds.has(entry.domain))
+    .map(({ value: id, name, domain }, index) => Object.freeze({ value: id, name, domain, index }));
+  return layer && levels.length && phases.length ? Object.freeze({ layer, levels, phases, rootNote,
+    domains: new Map(domains.map((domain) => [domain.value, domain])), clusters: new Map(clusters.map((cluster) => [cluster.value, cluster])),
+    dependencyTypes: names(value?.dependencyTypes), causalDirections: names(value?.causalDirections), interactionModes: names(value?.interactionModes) }) : null;
+}
+
+/** The layer and record a release opens on, when it declares them. */
+function presentationDefaults(value) {
+  const text = (entry) => (typeof entry === "string" && entry.length > 0 && entry.length <= 200 ? entry : null);
+  return Object.freeze({ layer: text(value?.layer), focusId: text(value?.focusId) });
+}
+
 function presentationMetadata(pack, { localRdf = false } = {}) {
   const dictionaries = pack.files["model/dictionaries.json"];
   const supplied = dictionaries?.presentation;
@@ -178,9 +210,12 @@ function presentationMetadata(pack, { localRdf = false } = {}) {
       typeFilter: boundedLabel(labels?.typeFilter, "Type"),
       phaseFilter: boundedLabel(labels?.phaseFilter, "Phase"),
       statusFilter: boundedLabel(labels?.statusFilter, "Status"),
+      layerFilter: boundedLabel(labels?.layerFilter, "Layer"),
       parents: boundedLabel(labels?.parents, "Direct parents"),
       children: boundedLabel(labels?.children, "Direct children")
     },
+    arisingTable: arisingTableMetadata(supplied?.arisingTable),
+    defaults: presentationDefaults(supplied?.defaults),
     coordinates: suppliedCoordinates.length > 0
       ? suppliedCoordinates.map(({ field, label }) => Object.freeze({ field, label }))
       : [
@@ -250,6 +285,7 @@ function currentCatalogQuery() {
   return {
     search: elements["catalog-search"].value,
     levels: selectFacetValue(elements["level-filter"]),
+    layers: selectFacetValue(elements["layer-filter"]),
     phases: selectFacetValue(elements["phase-filter"]),
     typeRoles: selectFacetValue(elements["role-filter"]),
     scientificStatuses: selectFacetValue(elements["status-filter"]),
@@ -265,6 +301,9 @@ function inspectNode(id) {
     element.setAttribute("aria-selected", String(element.dataset.nodeId === id));
   }
   for (const element of elements["graph-nodes"].querySelectorAll("[data-node-id]")) {
+    element.dataset.selected = String(element.dataset.nodeId === id);
+  }
+  for (const element of elements["arising-table"].querySelectorAll("[data-node-id]")) {
     element.dataset.selected = String(element.dataset.nodeId === id);
   }
   renderInspector();
@@ -328,6 +367,9 @@ function renderCatalog({ reset = false, loadMore = false } = {}) {
   });
   elements["catalog-list"].replaceChildren(...items);
   elements["catalog-empty"].hidden = items.length > 0;
+  elements["catalog-empty-hint"].textContent = query.layers.length
+    ? `The ${state.presentationMetadata.labels.layerFilter} filter limits the search to the selected layer; clear it to search every record.`
+    : "Clear a filter or shorten the search.";
   elements["catalog-more"].hidden = state.catalog.nextOffset === null;
   elements["catalog-more"].textContent = state.catalog.nextOffset === null
     ? "All matching records loaded"
@@ -606,7 +648,174 @@ function renderInspector() {
   });
 }
 
+function arisingButton(id, label, detail) {
+  const button = createElement("button", "relation-item");
+  button.type = "button";
+  button.title = id;
+  const identifier = createElement("code", "", id.replace(/^arising:/, ""));
+  const name = createElement("span", "", label ?? id);
+  button.append(identifier, name);
+  if (detail) button.append(createElement("small", "", detail));
+  button.addEventListener("click", () => inspectNode(id));
+  button.addEventListener("dblclick", () => focusNode(id));
+  return button;
+}
+
+function causeList(title, edges, endpoint, empty) {
+  const section = createElement("div", "arising-causes");
+  section.append(createElement("h5", "", `${title} (${edges.length})`));
+  if (edges.length === 0) section.append(createElement("p", "relation-empty", empty));
+  const dependencyNames = state.presentationMetadata?.arisingTable?.dependencyTypes;
+  for (const edge of edges) {
+    const id = edge[endpoint];
+    const name = state.nodeNames.get(id) ?? id;
+    const dependency = dependencyNames?.get(edge.dependencyType) ?? `dependency ${edge.dependencyType}`;
+    section.append(arisingButton(id, name, `${edge.role} | ${edge.necessity} | ${dependency} | ${edge.status}`));
+  }
+  return section;
+}
+
+/** The domain and cluster that organize an arising, when the release declares them. */
+function arisingOrganization(record) {
+  const table = state.presentationMetadata?.arisingTable;
+  const domain = table?.domains.get(record.domain);
+  const cluster = table?.clusters.get(record.cluster);
+  return domain || cluster ? [createElement("p", "", `Domain: ${domain?.name ?? record.domain}. Cluster: ${cluster?.name ?? record.cluster}.`)] : [];
+}
+
+/** Ontological context of the inspected record: an arising with its causes and subgraph, or the arising a record belongs to. */
+function renderArising(record) {
+  const panel = elements["arising-panel"];
+  const box = elements["arising-details"];
+  if (record.layer !== undefined && record.layer === state.presentationMetadata?.arisingTable?.layer) {
+    const completeness = record.completeness ?? { mustCover: [], covered: [], openSlotNames: [] };
+    const beyondGraph = Array.isArray(completeness.beyondGraphNames) ? completeness.beyondGraphNames : [];
+    const parts = [
+      createElement("p", "", `Cell ${record.code}: ${record.levelName ?? `level ${record.level}`} / ${record.phaseName ?? `phase ${record.phase}`}; ${record.typeRole}.`),
+      createElement("p", "", `Scientific status: ${record.scientificStatus}. Evidence in its subgraph: ${String(record.evidenceCoverage).replaceAll("-", " ")}.`),
+      ...arisingOrganization(record),
+      createElement("p", "", `Mandatory causal categories covered: ${completeness.covered.length} of ${completeness.mustCover.length}`
+        + (completeness.openSlotNames.length ? `; open: ${completeness.openSlotNames.join(", ")}` : "")
+        + (beyondGraph.length ? `; beyond the graph: ${beyondGraph.join(", ")}` : "") + ".")
+    ];
+    const members = Array.isArray(record.memberIds) ? record.memberIds : [];
+    const subgraph = createElement("div", "arising-members");
+    subgraph.append(createElement("h5", "", `Technical subgraph (${members.length} ${members.length === 1 ? "record" : "records"})`));
+    for (const id of members.slice(0, 80)) {
+      const button = createElement("button", "relation-item");
+      button.type = "button";
+      button.append(createElement("code", "", id), createElement("span", "", state.nodeNames.get(id) ?? id));
+      button.addEventListener("click", () => inspectNode(id));
+      button.addEventListener("dblclick", () => focusNode(id));
+      subgraph.append(button);
+    }
+    if (members.length > 80) subgraph.append(createElement("p", "relation-empty", `${members.length - 80} further records are listed in the record fields.`));
+    const obligations = createElement("ul", "arising-obligations");
+    for (const text of record.openObligations ?? []) obligations.append(createElement("li", "", text));
+    box.replaceChildren(...parts,
+      causeList("Causes", state.causes?.byChild.get(record.id) ?? [], "source",
+        state.presentationMetadata?.arisingTable?.rootNote ?? "No cause inside this graph."),
+      causeList("Arisings it conditions", state.causes?.byParent.get(record.id) ?? [], "target", "No arising lists this one as a parent."),
+      subgraph, ...(obligations.childElementCount ? [createElement("h5", "", "Open obligations"), obligations] : []));
+    panel.hidden = false;
+    return;
+  }
+  if (typeof record.arisingId === "string" && state.presentation.has(record.arisingId)) {
+    box.replaceChildren(createElement("p", "", "This technical record belongs to the subgraph of:"),
+      arisingButton(record.arisingId, state.nodeNames.get(record.arisingId) ?? record.arisingId));
+    panel.hidden = false;
+    return;
+  }
+  panel.hidden = true;
+  box.replaceChildren();
+}
+
+/**
+ * Periodic-table view of the arisings: complexity levels as rows, level phases as columns.
+ * The chips are built once per release; selection, focus and the domain filter update them in place.
+ */
+function renderArisingTable() {
+  const panel = elements["arising-table-panel"];
+  const table = state.presentationMetadata?.arisingTable;
+  const hasArisings = Boolean(table) && (state.presentation?.descriptor.facets.layers ?? []).some((entry) => entry.value === table.layer);
+  panel.hidden = !hasArisings;
+  if (!hasArisings) {
+    elements["arising-table"].replaceChildren();
+    state.arisingTableFor = null;
+    return;
+  }
+  if (state.arisingTableFor !== state.presentation) {
+    buildArisingTable(table);
+    state.arisingTableFor = state.presentation;
+  }
+  for (const item of elements["arising-table"].querySelectorAll(".arising-legend-item")) {
+    item.setAttribute("aria-pressed", String(state.domainFilter === item.dataset.domain));
+  }
+  for (const chip of elements["arising-table"].querySelectorAll(".arising-chip")) {
+    chip.dataset.selected = String(chip.dataset.nodeId === state.selectedId);
+    chip.dataset.focus = String(chip.dataset.nodeId === state.focusId);
+    chip.dataset.dimmed = String(Boolean(state.domainFilter && chip.dataset.domain !== state.domainFilter));
+  }
+}
+
+function buildArisingTable(table) {
+  const items = state.presentation.catalog({ layers: [table.layer], offset: 0, limit: 500, sort: "id", order: "asc" }).items;
+  const cells = new Map();
+  for (const node of items) {
+    const key = `${node.level}:${node.phase}`;
+    if (!cells.has(key)) cells.set(key, []);
+    cells.get(key).push(node);
+  }
+  const code = (id) => id.replace(/^arising:/, "");
+  const clusterIndex = (node) => table.clusters.get(node.cluster)?.index ?? Number.MAX_SAFE_INTEGER;
+  const order = (a, b) => clusterIndex(a) - clusterIndex(b) || code(a.id).split(".").map(Number)[1] - code(b.id).split(".").map(Number)[1];
+  const rows = [];
+  if (table.domains.size) {
+    const legend = createElement("div", "arising-legend");
+    legend.append(createElement("span", "arising-legend-title", "Domains"));
+    for (const domain of table.domains.values()) {
+      const item = createElement("button", "arising-legend-item", domain.name);
+      item.type = "button";
+      item.dataset.domain = domain.value;
+      item.dataset.domainIndex = String(domain.index);
+      item.addEventListener("click", () => {
+        state.domainFilter = state.domainFilter === domain.value ? null : domain.value;
+        renderArisingTable();
+      });
+      legend.append(item);
+    }
+    rows.push(legend);
+  }
+  rows.push(createElement("div", "arising-table-row arising-table-head"));
+  rows.at(-1).append(createElement("span", "arising-table-corner", "Level"), ...table.phases.map((phase) => createElement("span", "arising-table-phase", phase.name)));
+  for (const level of table.levels) {
+    const row = createElement("div", "arising-table-row");
+    row.append(createElement("span", "arising-table-level", `${level.value} ${level.name}`));
+    for (const phase of table.phases) {
+      const cell = createElement("div", "arising-table-cell");
+      for (const node of (cells.get(`${level.value}:${phase.value}`) ?? []).sort(order)) {
+        const chip = createElement("button", "arising-chip");
+        chip.type = "button";
+        chip.dataset.nodeId = node.id;
+        chip.dataset.status = String(node.scientificStatus);
+        const domain = table.domains.get(node.domain);
+        if (typeof node.domain === "string") chip.dataset.domain = node.domain;
+        if (domain) chip.dataset.domainIndex = String(domain.index);
+        chip.title = `${code(node.id)} ${node.name} (${node.scientificStatus}${domain ? `; ${domain.name}` : ""})`;
+        chip.append(createElement("code", "", code(node.id)), createElement("span", "", node.name));
+        chip.addEventListener("click", () => inspectNode(node.id));
+        chip.addEventListener("dblclick", () => focusNode(node.id));
+        cell.append(chip);
+      }
+      row.append(cell);
+    }
+    rows.push(row);
+  }
+  elements["arising-table"].replaceChildren(...rows);
+}
+
 function renderInspectedRecord(record, rationale = record.rationale) {
+  renderArising(record);
   elements["selected-description"].textContent = typeof record.description === "string"
     ? record.description : "No full description is declared for this record.";
   elements["selected-record"].textContent = JSON.stringify(record, null, 2);
@@ -822,6 +1031,7 @@ function updateControls() {
 function render() {
   if (!state.presentation) return;
   renderCatalog();
+  renderArisingTable();
   renderGraph();
   renderInspector();
   updateControls();
@@ -898,8 +1108,8 @@ function renderSourceReview(pack, key, prefix) {
   elements[`${prefix}-summary`].textContent = "";
   elements[`${prefix}-download`].onclick = null;
   if (!review) return;
-  const coverage = Array.isArray(review.cards)
-    ? `${review.cards.length} reviewed topics and ${review.studies.length} additional study contexts. Existing evidence retains its original study records.`
+  const coverage = Array.isArray(review.scopes)
+    ? `${review.scopes.length} reviewed topics and ${review.studies.length} additional study contexts. Existing evidence retains its original study records.`
     : `${review.studies.length} study contexts.`;
   elements[`${prefix}-summary`].textContent = `${coverage} Measurements, interventions and interpretations retain their stated scope. Independent scientific review remains open.`;
   const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
@@ -934,43 +1144,18 @@ function renderSourceReview(pack, key, prefix) {
     appendSource(section, study.sourceId);
     return section;
   });
-  const cardSections = (review.cards ?? []).map((card) => {
+  const scopeSections = (review.scopes ?? []).map((scope) => {
     const section = createElement("details", "record-details");
-    section.append(createElement("summary", "", `${card.code}: ${card.originalName}`));
-    section.append(createElement("p", "", card.scope));
-    const scopeId = card.nodeIds.find((id) => id.startsWith("cog:") || id.startsWith("soc:"));
-    if (scopeId) {
-      const inspect = createElement("button", "", "Inspect reviewed scope");
-      inspect.type = "button";
-      inspect.onclick = () => inspectNode(scopeId);
-      section.append(inspect);
-    }
-    for (const [label, entries, name] of [["Assertions", card.assertions, "topic"],
-      ["Proposed dependencies", card.parentDispositions, "parentCode"]]) {
-      section.append(createElement("p", "", label));
-      for (const entry of entries) {
-        const detail = createElement("details", "record-details");
-        detail.append(createElement("summary", "", `${entry[name]}: ${entry.disposition}`));
-        detail.append(createElement("p", "", entry.reason));
-        section.append(detail);
-      }
-    }
-    for (const limit of card.excludedDefaults) section.append(createElement("p", "", `Excluded default: ${limit}`));
-    for (const limit of card.unresolved) section.append(createElement("p", "", `Open question: ${limit}`));
-    if (Array.isArray(card.bibliography)) {
-      const bibliography = createElement("details", "record-details");
-      bibliography.append(createElement("summary", "", "Original bibliography: reviewed identities and reading limits"));
-      for (const entry of card.bibliography) {
-        const item = createElement("section");
-        item.append(createElement("p", "", `${entry.sourceIndex + 1}. ${entry.disposition}: ${entry.reason}`));
-        appendSource(item, entry.sourceId);
-        bibliography.append(item);
-      }
-      section.append(bibliography);
-    }
+    section.append(createElement("summary", "", scope.name));
+    section.append(createElement("p", "", scope.scope));
+    const inspect = createElement("button", "", "Inspect reviewed scope");
+    inspect.type = "button";
+    inspect.onclick = () => inspectNode(scope.id);
+    section.append(inspect);
+    for (const limit of scope.unresolved) section.append(createElement("p", "", `Open question: ${limit}`));
     return section;
   });
-  sections.unshift(...cardSections);
+  sections.unshift(...scopeSections);
   for (const comparison of review.comparisons ?? []) {
     const section = createElement("details", "record-details");
     section.append(createElement("summary", "", `Interpretation: ${comparison.id}`));
@@ -986,54 +1171,11 @@ function renderSourceReview(pack, key, prefix) {
   elements[`${prefix}-download`].onclick = () => downloadRecord(review, `${key}-evidence.json`);
 }
 
-function renderVocabulary(pack) {
-  const dictionaries = pack.files["model/dictionaries.json"];
-  const vocabulary = dictionaries?.vocabulary;
-  const panel = elements["vocabulary-panel"];
-  panel.hidden = !Array.isArray(vocabulary) || vocabulary.length === 0;
-  const groupSelect = elements["vocabulary-group"];
-  groupSelect.onchange = null;
-  elements["vocabulary-records"].replaceChildren();
-  groupSelect.replaceChildren();
-  if (panel.hidden) return;
-  elements["vocabulary-scope"].textContent = scalarLabel(dictionaries.dictionaryReview?.scope);
-  for (const group of new Set(vocabulary.map((r) => r.group))) {
-    const option = createElement("option", "", String(group).replace(/([a-z])([A-Z])/g, "$1 $2"));
-    option.value = group;
-    groupSelect.append(option);
-  }
-  const renderGroup = () => {
-    const sections = vocabulary.filter((r) => r.group === groupSelect.value).map((record) => {
-      const section = createElement("details", "record-details");
-      section.append(createElement("summary", "", record.name));
-      section.append(createElement("p", "", `${record.disposition} / ${record.status}`));
-      section.append(createElement("p", "", record.definition));
-      section.append(createElement("p", "", record.finding));
-      for (const citation of record.citations ?? []) {
-        const line = createElement("p", "", `${citation.role}: ${citation.locator}. `);
-        for (const link of citationLinks(citation, new URL("../../", import.meta.url))) {
-          const anchor = createElement("a", "evidence-link", link.label);
-          anchor.href = link.href;
-          anchor.rel = "noopener noreferrer";
-          line.append(anchor, document.createTextNode(" "));
-        }
-        section.append(line);
-      }
-      return section;
-    });
-    elements["vocabulary-records"].replaceChildren(...sections);
-  };
-  groupSelect.onchange = renderGroup;
-  renderGroup();
-}
 
 function configureReviewPanels(pack, browse) {
   const presentation = state.presentation;
   const dictionaries = pack.files["model/dictionaries.json"] ?? {};
-  elements["vocabulary-group"].onchange = null;
-  elements["vocabulary-group"].replaceChildren();
   const reviews = [
-    ["vocabulary", "vocabulary", renderVocabulary],
     ["sourceReadiness", "source-readiness", renderSourceReadiness],
     ...[["optics", "optical-review"], ["visual", "visual-review"],
       ["neural", "neural-review"], ["physics", "physics-review"], ["biochemistry", "biochemistry-review"], ["cellular", "cellular-review"],
@@ -1043,7 +1185,7 @@ function configureReviewPanels(pack, browse) {
   for (const [key, prefix, renderReview] of reviews) {
     const panel = elements[`${prefix}-panel`];
     const records = elements[`${prefix}-records`];
-    const summary = elements[`${prefix}-summary`] ?? elements["vocabulary-scope"];
+    const summary = elements[`${prefix}-summary`];
     const download = elements[`${prefix}-download`];
     panel.ontoggle = null;
     panel.open = false;
@@ -1103,6 +1245,19 @@ function activateModelPack(pack, options = {}) {
     ?? pack.files["model/dictionaries.json"]?.interactions, interactionGraphInput);
   const previousPresentation = state.presentation;
   const previousBrowse = state.browse;
+  // Causes between arisings, indexed for the inspector; the browse projection carries their typing.
+  const causalEdges = (options.browse?.graphInput?.edges ?? pack.files?.["model/edges.json"] ?? []).filter((edge) => edge.relationLayer === "causal");
+  const byChild = new Map(); const byParent = new Map();
+  for (const edge of causalEdges) {
+    if (!byChild.has(edge.target)) byChild.set(edge.target, []);
+    if (!byParent.has(edge.source)) byParent.set(edge.source, []);
+    byChild.get(edge.target).push(edge); byParent.get(edge.source).push(edge);
+  }
+  state.causes = { byChild, byParent };
+  state.nodeNames = new Map((options.browse?.graphInput?.nodes ?? pack.files?.["model/nodes.json"] ?? [])
+    .map((node) => [node.id, node.name]));
+  state.domainFilter = null;
+  state.arisingTableFor = null;
   state.pack = pack;
   state.manifest = manifest;
   state.presentation = presentation;
@@ -1137,8 +1292,8 @@ function activateModelPack(pack, options = {}) {
   }
   elements["catalog-sort"].value = "id:asc";
   const requested = options.useLocation === true
-    ? requestedGraphState(presentation, state.selection)
-    : { focusId: defaultFocusId(presentation), depth: 1, direction: "both" };
+    ? requestedGraphState(presentation, state.selection, metadata)
+    : { focusId: defaultFocusId(presentation, metadata), depth: 1, direction: "both" };
   state.focusId = requested.focusId;
   state.selectedId = requested.focusId;
   state.depth = requested.depth;
@@ -1159,6 +1314,9 @@ function activateModelPack(pack, options = {}) {
   elements["model-boundary-summary"].textContent = metadata.boundary.summary;
   elements["model-boundary-note"].textContent = metadata.boundary.note;
   configureReviewPanels(pack, state.browse);
+  configureFacet("layer-filter", descriptor.facets.layers ?? [], "All layers", metadata.labels.layerFilter);
+  // A release may open on one layer (an ontology of arisings opens on its arisings); other records stay one filter away.
+  elements["layer-filter"].value = defaultLayerValue(presentation, metadata);
   configureFacet("level-filter", descriptor.facets.levels, "All levels", metadata.labels.levelFilter);
   configureFacet("role-filter", descriptor.facets.typeRoles, "All types", metadata.labels.typeFilter);
   configureFacet("phase-filter", descriptor.facets.phases, "All phases", metadata.labels.phaseFilter);
@@ -1251,13 +1409,21 @@ async function importRdfMapping() {
   setImportStatus("");
 }
 
-function defaultFocusId(presentation = state.presentation) {
+/** The layer filter value a release opens on, when its catalog has that layer. */
+function defaultLayerValue(presentation = state.presentation, metadata = state.presentationMetadata) {
+  const layer = metadata?.defaults.layer;
+  return layer && (presentation?.descriptor.facets.layers ?? []).some((entry) => entry.value === layer) ? JSON.stringify(layer) : "";
+}
+
+function defaultFocusId(presentation = state.presentation, metadata = state.presentationMetadata) {
+  const declared = metadata?.defaults.focusId;
+  if (declared && presentation?.has(declared)) return declared;
   const first = presentation?.catalog({ offset: 0, limit: 1 }).items[0];
   if (!first) throw new Error("The verified Model Pack does not contain a graph node.");
   return first.id;
 }
 
-function requestedGraphState(presentation = state.presentation, selection = state.selection) {
+function requestedGraphState(presentation = state.presentation, selection = state.selection, metadata = state.presentationMetadata) {
   const parameters = new URLSearchParams(location.hash.slice(1));
   const identity = selection ?? {
     modelId: state.manifest.model.id,
@@ -1267,7 +1433,7 @@ function requestedGraphState(presentation = state.presentation, selection = stat
     parameters,
     identity,
     (id) => presentation.has(id),
-    defaultFocusId(presentation)
+    defaultFocusId(presentation, metadata)
   );
 }
 
@@ -1360,7 +1526,7 @@ function bindEvents() {
       replaceLocationState();
     });
   }
-  for (const id of ["catalog-search", "level-filter", "role-filter", "phase-filter", "status-filter", "catalog-sort"]) {
+  for (const id of ["catalog-search", "layer-filter", "level-filter", "role-filter", "phase-filter", "status-filter", "catalog-sort"]) {
     const eventName = id === "catalog-search" ? "input" : "change";
     elements[id].addEventListener(eventName, () => renderCatalog({ reset: true }));
   }
@@ -1384,6 +1550,8 @@ function bindEvents() {
   elements["reset-view"].addEventListener("click", () => {
     elements["catalog-search"].value = "";
     for (const id of ["level-filter", "role-filter", "phase-filter", "status-filter"]) elements[id].value = "";
+    elements["layer-filter"].value = defaultLayerValue();
+    state.domainFilter = null;
     elements["catalog-sort"].value = "id:asc";
     state.direction = "both";
     state.depth = 1;

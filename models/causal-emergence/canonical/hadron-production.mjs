@@ -347,8 +347,7 @@ const contracts = {
         "The charged channels are K0S to pi+pi-, Lambda/Lambdabar to p pi-/pbar pi+, K*0/K*0bar to K+pi-/K-pi+, and phi to K+K-. Branching fractions already enter simulated reconstruction efficiencies. The published K0/K0bar yield separately doubles K0S to account for the unobserved K0L component; it is not a direct K0L detection.",
         "The K*0 signal center and width are fixed to world-average inputs; these yields are not new mass, width or lifetime determinations. Fitted mass peaks, resonant reflections, combinatorial backgrounds, detector acceptance, efficiency and event selection corrections are source analysis inputs; raw spectra and original simulation are not replayed.",
         "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made."
       ],
       "contextIds": [
         "sld1999-neutral-acquisition"
@@ -371,8 +370,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The Table 16 totals reuse the same measured-range spectra and divide by the mean accepted fraction from JETSET 7.4, UCLA 4.1 and HERWIG 5.8. Experimental and extrapolation errors are combined in quadrature by the authors. These are not directly measured full-range counts, independent replications or a demonstrated unique fragmentation mechanism.",
-        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature."
       ],
       "contextIds": [
         "sld1999-neutral-extrapolation"
@@ -459,8 +457,7 @@ const contracts = {
         "The charged channels are K0S to pi+pi-, Lambda/Lambdabar to p pi-/pbar pi+, K*0/K*0bar to K+pi-/K-pi+, and phi to K+K-. Branching fractions already enter simulated reconstruction efficiencies. The published K0/K0bar yield separately doubles K0S to account for the unobserved K0L component; it is not a direct K0L detection.",
         "The K*0 signal center and width are fixed to world-average inputs; these yields are not new mass, width or lifetime determinations. Fitted mass peaks, resonant reflections, combinatorial backgrounds, detector acceptance, efficiency and event selection corrections are source analysis inputs; raw spectra and original simulation are not replayed.",
         "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made."
       ],
       "contextIds": [
         "sld1999-neutral-acquisition"
@@ -505,8 +502,7 @@ const contracts = {
         "The charged channels are K0S to pi+pi-, Lambda/Lambdabar to p pi-/pbar pi+, K*0/K*0bar to K+pi-/K-pi+, and phi to K+K-. Branching fractions already enter simulated reconstruction efficiencies. The published K0/K0bar yield separately doubles K0S to account for the unobserved K0L component; it is not a direct K0L detection.",
         "The K*0 signal center and width are fixed to world-average inputs; these yields are not new mass, width or lifetime determinations. Fitted mass peaks, resonant reflections, combinatorial backgrounds, detector acceptance, efficiency and event selection corrections are source analysis inputs; raw spectra and original simulation are not replayed.",
         "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made."
       ],
       "contextIds": [
         "sld1999-neutral-acquisition"
@@ -530,8 +526,7 @@ const contracts = {
       "limitations": [
         "The Table 16 totals reuse the same measured-range spectra and divide by the mean accepted fraction from JETSET 7.4, UCLA 4.1 and HERWIG 5.8. Experimental and extrapolation errors are combined in quadrature by the authors. These are not directly measured full-range counts, independent replications or a demonstrated unique fragmentation mechanism.",
         "Inclusive reconstructed yields are not feed-down-subtracted primary-hadron multiplicities. Daughter and parent species are not disjoint stable end products; a reconstructed unstable state does not establish persistent stability or its unique microscopic formation path.",
-        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature."
       ],
       "contextIds": [
         "sld1999-neutral-extrapolation"
@@ -555,8 +550,7 @@ const contracts = {
       "limitations": [
         "The Table 16 totals reuse the same measured-range spectra and divide by the mean accepted fraction from JETSET 7.4, UCLA 4.1 and HERWIG 5.8. Experimental and extrapolation errors are combined in quadrature by the authors. These are not directly measured full-range counts, independent replications or a demonstrated unique fragmentation mechanism.",
         "Inclusive reconstructed yields are not feed-down-subtracted primary-hadron multiplicities. Daughter and parent species are not disjoint stable end products; a reconstructed unstable state does not establish persistent stability or its unique microscopic formation path.",
-        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature."
       ],
       "contextIds": [
         "sld1999-neutral-extrapolation"
@@ -671,8 +665,7 @@ const contracts = {
         "The charged channels are K0S to pi+pi-, Lambda/Lambdabar to p pi-/pbar pi+, K*0/K*0bar to K+pi-/K-pi+, and phi to K+K-. Branching fractions already enter simulated reconstruction efficiencies. The published K0/K0bar yield separately doubles K0S to account for the unobserved K0L component; it is not a direct K0L detection.",
         "The K*0 signal center and width are fixed to world-average inputs; these yields are not new mass, width or lifetime determinations. Fitted mass peaks, resonant reflections, combinatorial backgrounds, detector acceptance, efficiency and event selection corrections are source analysis inputs; raw spectra and original simulation are not replayed.",
         "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 2003 author paper explicitly supersedes earlier charged pi/K/p measurements using 1996-1998 acquisition, distinct from the 1993-1995 data here. Its scope note supplies no new neutral/resonance measurement in this block. No claim of newest data or exhaustive later-correction search is made."
       ],
       "readExtent": "selected-author-manuscript-passages",
       "reviewedLocators": [
@@ -698,8 +691,7 @@ const contracts = {
       "finding": "Table 16 reports all-flavor full-range totals per hadronic Z0 decay: K0/K0bar 2.01 +/- 0.08, Lambda/Lambdabar 0.395 +/- 0.022, K*0/K*0bar 0.707 +/- 0.041 and phi 0.105 +/- 0.008. The quoted errors combine experimental and model-extrapolation contributions.",
       "limitations": [
         "The Table 16 totals reuse the same measured-range spectra and divide by the mean accepted fraction from JETSET 7.4, UCLA 4.1 and HERWIG 5.8. Experimental and extrapolation errors are combined in quadrature by the authors. These are not directly measured full-range counts, independent replications or a demonstrated unique fragmentation mechanism.",
-        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature.",
-        "The old card parent weights, Nmin/Ncrit values and fixed emergence order are unsupported by these inclusive production results and are not admitted."
+        "The 3.4 percent common normalization uncertainty is excluded from Table 6-7 differential-bin systematic errors and included in the measured-range total systematic errors. Correlated errors and the full integrated covariance are not reconstructed or replaced by independent-bin quadrature."
       ],
       "readExtent": "selected-author-manuscript-passages",
       "reviewedLocators": [

@@ -3,7 +3,7 @@
     "id": "structural-comparison",
     "version": "1"
   },
-  "artifactHash": "sha256:5366ef40361523e0a3d620d997af2ecaf75c5897c099ed79ec1469ea0e5df87a",
+  "artifactHash": "sha256:9da985614775ee00bd98af957dddfb28f68c693ffc19446c8208c21306e60be2",
   "components": [
     {
       "family": "structure",
@@ -359,14 +359,14 @@
         "id": "structural-typed-alignment",
         "version": "1"
       },
-      "artifactHash": "sha256:6e73f099b76b00509f3383160cc9536c29ff3e83ea082de7eeba93cd402c5574",
+      "artifactHash": "sha256:6e991202590e5ca193441f6c7aeeebf190674b14858f239ebbe994857b62f2db",
       "compatibility": {
         "basis": "approved-mapping",
         "reasons": [],
         "state": "compatible"
       },
       "mapping": {
-        "artifactHash": "sha256:590bfe5012f0c83e9e45e1478291dff8055a7cd7491165dd6651a13a4f76e96f",
+        "artifactHash": "sha256:4bc09d3875878d7355fffca5d90a959073b942bf7f548240ea1ead8a791d0a81",
         "declaration": {
           "fields": {
             "causalDirectionIds": [
@@ -446,7 +446,7 @@
           },
           "id": "comparison-renumbered-approved",
           "reviewEvidence": {
-            "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+            "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
             "reference": "cases/structural-geometry/comparison/PROTOCOL.md"
           },
           "version": "1"
@@ -526,7 +526,7 @@
         "version": "1"
       },
       "request": {
-        "approvedMappingHash": "sha256:590bfe5012f0c83e9e45e1478291dff8055a7cd7491165dd6651a13a4f76e96f"
+        "approvedMappingHash": "sha256:4bc09d3875878d7355fffca5d90a959073b942bf7f548240ea1ead8a791d0a81"
       },
       "schemaVersion": "1",
       "sources": {
@@ -1558,8 +1558,8 @@
       "kind": "full"
     },
     "vocabulary": {
-      "approvedMappingHash": "sha256:590bfe5012f0c83e9e45e1478291dff8055a7cd7491165dd6651a13a4f76e96f",
-      "mappingHash": "sha256:590bfe5012f0c83e9e45e1478291dff8055a7cd7491165dd6651a13a4f76e96f"
+      "approvedMappingHash": "sha256:4bc09d3875878d7355fffca5d90a959073b942bf7f548240ea1ead8a791d0a81",
+      "mappingHash": "sha256:4bc09d3875878d7355fffca5d90a959073b942bf7f548240ea1ead8a791d0a81"
     }
   },
   "schemaVersion": "1",

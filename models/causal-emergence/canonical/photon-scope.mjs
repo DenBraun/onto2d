@@ -139,7 +139,7 @@ const contracts = {
       "id": "D-phys-photon-evidence-scope",
       "kind": "review-finding",
       "statement": "In the declared unbroken electromagnetic U(1) gauge model, constrained free Maxwell modes define two transverse bosonic photon polarizations, formal zero mass and neutral gauge-field transformation. A one-photon wavepacket additionally requires a specified free-state normalization and preparation boundary. Optical counting, radiation observables and internal electromagnetic mediation are distinct evidence and description roles.",
-      "scope": "Formal photon-state conventions and the bounded interpretation of original source-card 1.23; no universal photon construction or experimentally exact mass/charge assignment.",
+      "scope": "Formal photon-state conventions and the bounded interpretation of photons; no universal photon construction or experimentally exact mass/charge assignment.",
       "status": "definition",
       "citations": [
         {
@@ -198,8 +198,8 @@ const contracts = {
         "The earlier free-field evolution construction is explicitly a real scalar model. It supplies a framework comparison, not electromagnetic gauge constraints, two photon polarizations, a universal formation or maintenance law, or measured photon dynamics. Its finite oscillator check is not photon data.",
         "The reviewed leading nonrelativistic Coulomb calculation uses the time-component internal propagator to obtain a static effective potential. Atomic binding is not a measured flux of real on-shell photons; an internal line is not a measured particle population. No quantitative atomic binding spectrum, bound-state formation or universal long-range-force measurement is constructed here.",
         "Prepared transverse polarization is defined relative to each nonzero momentum and a basis choice; it does not select a preferred vacuum axis. This does not establish physical field anisotropy or a joint-state entanglement claim; those analyses require their own preparations and evidence.",
-        "The source-card parent links to the electromagnetic framework and field dynamics are retained only as scoped definition dependencies. The weights 0.55 and 0.45, necessary/enabling arising/maintenance codes, Nmin=Ncrit=1 and phase/type-role labels are not measured formation thresholds or causal laws.",
-        "Radiation and radiative transitions are represented only by the named capture-wavelength and meson radiative-ratio evidence below. Generic Compton, photoelectric and precision-QED placeholders do not admit unreviewed experiments. Aggregate material-optics or retinal response cannot supply single-photon statistics or a universal biological bridge."
+        "The links to the electromagnetic framework and field dynamics are retained only as scoped definition dependencies.",
+        "Radiation and radiative transitions are represented only by the named capture-wavelength and meson radiative-ratio evidence below. No unreviewed Compton, photoelectric or precision-QED experiment is admitted. Aggregate material-optics or retinal response cannot supply single-photon statistics or a universal biological bridge."
       ]
     },
     {
@@ -530,8 +530,8 @@ const contracts = {
         "The earlier free-field evolution construction is explicitly a real scalar model. It supplies a framework comparison, not electromagnetic gauge constraints, two photon polarizations, a universal formation or maintenance law, or measured photon dynamics. Its finite oscillator check is not photon data.",
         "The reviewed leading nonrelativistic Coulomb calculation uses the time-component internal propagator to obtain a static effective potential. Atomic binding is not a measured flux of real on-shell photons; an internal line is not a measured particle population. No quantitative atomic binding spectrum, bound-state formation or universal long-range-force measurement is constructed here.",
         "Prepared transverse polarization is defined relative to each nonzero momentum and a basis choice; it does not select a preferred vacuum axis. This does not establish physical field anisotropy or a joint-state entanglement claim; those analyses require their own preparations and evidence.",
-        "The source-card parent links to the electromagnetic framework and field dynamics are retained only as scoped definition dependencies. The weights 0.55 and 0.45, necessary/enabling arising/maintenance codes, Nmin=Ncrit=1 and phase/type-role labels are not measured formation thresholds or causal laws.",
-        "Radiation and radiative transitions are represented only by the named capture-wavelength and meson radiative-ratio evidence below. Generic Compton, photoelectric and precision-QED placeholders do not admit unreviewed experiments. Aggregate material-optics or retinal response cannot supply single-photon statistics or a universal biological bridge."
+        "The links to the electromagnetic framework and field dynamics are retained only as scoped definition dependencies.",
+        "Radiation and radiative transitions are represented only by the named capture-wavelength and meson radiative-ratio evidence below. No unreviewed Compton, photoelectric or precision-QED experiment is admitted. Aggregate material-optics or retinal response cannot supply single-photon statistics or a universal biological bridge."
       ]
     },
     {

@@ -38,6 +38,10 @@ export interface LightweightNodeSummary {
   phase: JsonValue;
   typeRole: JsonValue;
   scientificStatus: JsonValue;
+  layer: JsonValue;
+  arisingId: JsonValue;
+  cluster: JsonValue;
+  domain: JsonValue;
   shortDescription: string;
   parentCount: number;
   childCount: number;
@@ -60,6 +64,7 @@ export interface ModelPresentationDescriptor extends ModelPresentationEnvelope {
     phases: readonly Readonly<FacetEntry>[];
     typeRoles: readonly Readonly<FacetEntry>[];
     scientificStatuses: readonly Readonly<FacetEntry>[];
+    layers: readonly Readonly<FacetEntry>[];
   }>;
   capabilities: Readonly<{
     catalogPaging: true;

@@ -185,7 +185,7 @@ const contracts = {
       "limitations": [
         "The named glossary entries are semantic authority, not newly observed linear-polyene spectra, a charge-density map or a universal measured stabilization law.",
         "Orbital symmetry requires a defining plane and orbital basis. Phase consistency of a stationary representation is not a measured coherence time, transport phase length or persistent dynamics in all environments.",
-        "The familiar Huckel electron-count statement has restricted monocyclic planar/almost-planar model conditions. No all-topology, all-state six-electron or4n+2 theorem is admitted here, and the original1931 paper has not been read.",
+        "The familiar Huckel electron-count statement has restricted monocyclic planar/almost-planar model conditions. No all-topology, all-state six-electron or 4n+2 theorem is admitted here, and the original 1931 paper has not been read.",
         "Real conjugated materials, pigments and conductive polymers require specified structure, state, environment and response evidence; their optical, transport and reactivity properties are not derived from this terminology."
       ]
     },
@@ -219,7 +219,7 @@ const contracts = {
     {
       "id": "M-phys-schleyer1996-nics-context",
       "kind": "method",
-      "statement": "Use the source neutral D6h benzene and saturated D3d cyclohexane geometries from Becke3LYP/6-31G*, as specified for these Table1 cases. Evaluate ring-center absolute magnetic shieldings with GIAO-SCF, taking the 6-31+G* column as the selected response basis. Reverse the shielding sign to report NICS in ppm. The source Gaussian94 calculation supplies a finite magnetic-response comparison; no new solver execution is performed.",
+      "statement": "Use the source neutral D6h benzene and saturated D3d cyclohexane geometries from Becke3LYP/6-31G*, as specified for these Table 1 cases. Evaluate ring-center absolute magnetic shieldings with GIAO-SCF, taking the 6-31+G* column as the selected response basis. Reverse the shielding sign to report NICS in ppm. The source Gaussian94 calculation supplies a finite magnetic-response comparison; no new solver execution is performed.",
       "scope": "Selected source computational preparation and response convention.",
       "status": "method-contract",
       "citations": [
@@ -239,7 +239,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "This is computational-analysis with a model-context, not an observed proton resonance, a sample preparation or an empirical ring-current measurement.",
-        "The table also reports a different6-31G* shielding column. Geometry method and response method/basis are distinct; columns are not repeat acquisitions or a statistical uncertainty estimate.",
+        "The table also reports a different 6-31G* shielding column. Geometry method and response method/basis are distinct; columns are not repeat acquisitions or a statistical uncertainty estimate.",
         "Only the named center descriptor and benzene/cyclohexane cases are admitted. The prior experimental NMR shifts, energetic calibration, other compounds and cited unpublished IGLO results are not separately reviewed or newly acquired evidence.",
         "No raw input deck, convergence study, magnetic-field scan, tensor decomposition, modern uncertainty or independent numerical reproduction is supplied."
       ],
@@ -278,7 +278,7 @@ const contracts = {
     {
       "id": "C-phys-benzene-ring-center-nics",
       "kind": "review-finding",
-      "statement": "Table1 reports ring-center NICS=-9.7 ppm for neutral D6h benzene and -2.2 ppm for saturated nonaromatic D3d cyclohexane in the selected GIAO-SCF/6-31+G* column. The distinct6-31G* column gives -11.5 and -2.1 ppm, respectively. The declared benzene response supplies a finite positive magnetic aromaticity-probe example, while the saturated control limits a sign-only classification.",
+      "statement": "Table 1 reports ring-center NICS=-9.7 ppm for neutral D6h benzene and -2.2 ppm for saturated nonaromatic D3d cyclohexane in the selected GIAO-SCF/6-31+G* column. The distinct 6-31G* column gives -11.5 and -2.1 ppm, respectively. The declared benzene response supplies a finite positive magnetic aromaticity-probe example, while the saturated control limits a sign-only classification.",
       "scope": "Selected historical source-reported point shielding values, with method/basis/geometry and ppm conventions.",
       "status": "publication-supported",
       "citations": [
@@ -303,8 +303,8 @@ const contracts = {
     {
       "id": "M-phys-aromatic-conjugation-source-scope",
       "kind": "method",
-      "statement": "Synthesize the conjugation/aromaticity terminology, the existing benzene VB reference comparison and the new method-specific ring-center shielding case. Retain both complete computational contexts and the linked erratum. Name energetic and magnetic criteria separately, and qualify original optical, transport, reactivity and SOMA assertions without presenting them as new observations.",
-      "scope": "Literature-synthesis method for original card2.10.",
+      "statement": "Synthesize the conjugation/aromaticity terminology, the existing benzene VB reference comparison and the new method-specific ring-center shielding case. Retain both complete computational contexts and the linked erratum. Name energetic and magnetic criteria separately, and qualify optical, transport and reactivity assertions without presenting them as new observations.",
+      "scope": "Literature-synthesis method for aromatic systems and π-conjugated structures.",
       "status": "method-contract",
       "citations": [
         {
@@ -352,15 +352,14 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Reuse the existing pauling1933-benzene model-context and pauling-benzene-vb-lowering output without cloning a new independent benzene calculation. Its nonorthogonal functions, unnormalized coefficients, negative exchange-energy convention and unreviewed thermochemical calibration limits remain.",
-        "The linked1934 erratum corrects original radical tables/discussion and leaves the selected benzene TableI unchanged. It remains part of the same study provenance, not a second replication or a new radical result.",
+        "Reuse the existing Pauling-Wheland 1933 benzene model context and its source-reported valence-bond energy-lowering result without cloning a new independent benzene calculation. Its nonorthogonal functions, unnormalized coefficients, negative exchange-energy convention and unreviewed thermochemical calibration limits remain.",
+        "The linked 1934 erratum corrects original radical tables/discussion and leaves the selected benzene Table I unchanged. It remains part of the same study provenance, not a second replication or a new radical result.",
         "Pauling-Wheland VB energy lowering and Schleyer GIAO-SCF shielding use different methods and response questions. No common fitted likelihood, universal equivalence, independent empirical agreement or newly measured charge-density/phase-coherence map is asserted.",
-        "Original parent2.3 weight0.45 and parent2.5 weight0.55, each direction[2], modes[0,1], necessary/dependency10/arising, carrier1/0 N_min=N_crit=3,N_sat=null, are not measured causal fractions, universal prerequisites or carrier thresholds. No replacement normalized weights are introduced.",
         "A supplied molecular framework is relevant, but the earlier H2 formation/spectroscopy experiment is not a necessary history for these benzene calculations. Reuse of the same resonance model is data dependence, not an observed later emergence stage.",
-        "Six carbon centers, six active electrons, five VB functions and a coordinate probe point are different supplied counting domains. They neither validate minima3 nor establish a universal six-electron or4n+2 criterion for all states and topologies.",
-        "Original Level2, Phase2, TypeRole2, Science[0,1,2], established, MustCover[10], ShouldCover[9], Optional[] and SOMA pattern/arising labels are catalogue/display classifications. Recurring representations do not establish an autonomous physical stage beyond local resonance or a universal object/event boundary.",
+        "Six carbon centers, six active electrons, five VB functions and a coordinate probe point are different supplied counting domains. They do not establish a universal six-electron or 4n+2 criterion for all states and topologies.",
+        "Recurring representations do not establish an autonomous physical stage beyond local resonance or a universal object/event boundary.",
         "Conjugation can be linear without satisfying a cyclic aromaticity criterion. Real pigments, polymers, conjugated materials, optical absorption, transport and reactivity require their own stated preparations, response models and evidence; their existence is not blanket-excluded, but those outputs are not inferred here.",
-        "Generic original Huckel/MO and spectroscopic/ring-current/stability/transport paragraphs have null DOI/URL and identify no reviewed publications. No unread primary Huckel derivation, observed ring current, optical or transport experiment is manufactured.",
+        "No unread primary Huckel derivation, observed ring current, optical or transport experiment is manufactured.",
         "The IUPAC reading is confined to named terminology entries, and later NICS tensor/scan papers were not read in full. No numerical scan, full-current-density reconstruction, modern all-criteria classifier or new experimental/numerical replay is supplied."
       ],
       "contextIds": [
@@ -372,7 +371,7 @@ const contracts = {
       "id": "C-phys-aromatic-conjugation-source-scope",
       "kind": "review-finding",
       "statement": "Aromatic-system description is retained through named finite criteria: the existing neutral-benzene VB state lowers the source model energy relative to its one-Kekule-function reference, while a separate GIAO-SCF calculation gives a specified ring-center magnetic shielding probe for benzene with a saturated control. Conjugation is broader than cyclic aromaticity. These model results do not establish universal electron-count thresholds, all-response equivalence or a new physical stage beyond resonance.",
-      "scope": "Complete finite disposition of references/level-2.json /10, preserving original parent and application boundaries.",
+      "scope": "Finite disposition of aromatic systems and π-conjugated structures, preserving application boundaries.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -420,15 +419,14 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Reuse the existing pauling1933-benzene model-context and pauling-benzene-vb-lowering output without cloning a new independent benzene calculation. Its nonorthogonal functions, unnormalized coefficients, negative exchange-energy convention and unreviewed thermochemical calibration limits remain.",
-        "The linked1934 erratum corrects original radical tables/discussion and leaves the selected benzene TableI unchanged. It remains part of the same study provenance, not a second replication or a new radical result.",
+        "Reuse the existing Pauling-Wheland 1933 benzene model context and its source-reported valence-bond energy-lowering result without cloning a new independent benzene calculation. Its nonorthogonal functions, unnormalized coefficients, negative exchange-energy convention and unreviewed thermochemical calibration limits remain.",
+        "The linked 1934 erratum corrects original radical tables/discussion and leaves the selected benzene Table I unchanged. It remains part of the same study provenance, not a second replication or a new radical result.",
         "Pauling-Wheland VB energy lowering and Schleyer GIAO-SCF shielding use different methods and response questions. No common fitted likelihood, universal equivalence, independent empirical agreement or newly measured charge-density/phase-coherence map is asserted.",
-        "Original parent2.3 weight0.45 and parent2.5 weight0.55, each direction[2], modes[0,1], necessary/dependency10/arising, carrier1/0 N_min=N_crit=3,N_sat=null, are not measured causal fractions, universal prerequisites or carrier thresholds. No replacement normalized weights are introduced.",
         "A supplied molecular framework is relevant, but the earlier H2 formation/spectroscopy experiment is not a necessary history for these benzene calculations. Reuse of the same resonance model is data dependence, not an observed later emergence stage.",
-        "Six carbon centers, six active electrons, five VB functions and a coordinate probe point are different supplied counting domains. They neither validate minima3 nor establish a universal six-electron or4n+2 criterion for all states and topologies.",
-        "Original Level2, Phase2, TypeRole2, Science[0,1,2], established, MustCover[10], ShouldCover[9], Optional[] and SOMA pattern/arising labels are catalogue/display classifications. Recurring representations do not establish an autonomous physical stage beyond local resonance or a universal object/event boundary.",
+        "Six carbon centers, six active electrons, five VB functions and a coordinate probe point are different supplied counting domains. They do not establish a universal six-electron or 4n+2 criterion for all states and topologies.",
+        "Recurring representations do not establish an autonomous physical stage beyond local resonance or a universal object/event boundary.",
         "Conjugation can be linear without satisfying a cyclic aromaticity criterion. Real pigments, polymers, conjugated materials, optical absorption, transport and reactivity require their own stated preparations, response models and evidence; their existence is not blanket-excluded, but those outputs are not inferred here.",
-        "Generic original Huckel/MO and spectroscopic/ring-current/stability/transport paragraphs have null DOI/URL and identify no reviewed publications. No unread primary Huckel derivation, observed ring current, optical or transport experiment is manufactured.",
+        "No unread primary Huckel derivation, observed ring current, optical or transport experiment is manufactured.",
         "The IUPAC reading is confined to named terminology entries, and later NICS tensor/scan papers were not read in full. No numerical scan, full-current-density reconstruction, modern all-criteria classifier or new experimental/numerical replay is supplied."
       ],
       "contextIds": [
@@ -461,7 +459,7 @@ const contracts = {
       "openObligations": [
         "The named glossary entries are semantic authority, not newly observed linear-polyene spectra, a charge-density map or a universal measured stabilization law.",
         "Orbital symmetry requires a defining plane and orbital basis. Phase consistency of a stationary representation is not a measured coherence time, transport phase length or persistent dynamics in all environments.",
-        "The familiar Huckel electron-count statement has restricted monocyclic planar/almost-planar model conditions. No all-topology, all-state six-electron or4n+2 theorem is admitted here, and the original1931 paper has not been read.",
+        "The familiar Huckel electron-count statement has restricted monocyclic planar/almost-planar model conditions. No all-topology, all-state six-electron or 4n+2 theorem is admitted here, and the original 1931 paper has not been read.",
         "Real conjugated materials, pigments and conductive polymers require specified structure, state, environment and response evidence; their optical, transport and reactivity properties are not derived from this terminology."
       ]
     },
@@ -495,7 +493,7 @@ const contracts = {
       "id": "phys:schleyer1996-nics-context",
       "name": "Schleyer ring-center shielding computation context",
       "kind": "context",
-      "description": "Use the source neutral D6h benzene and saturated D3d cyclohexane geometries from Becke3LYP/6-31G*, as specified for these Table1 cases. Evaluate ring-center absolute magnetic shieldings with GIAO-SCF, taking the 6-31+G* column as the selected response basis. Reverse the shielding sign to report NICS in ppm. The source Gaussian94 calculation supplies a finite magnetic-response comparison; no new solver execution is performed.",
+      "description": "Use the source neutral D6h benzene and saturated D3d cyclohexane geometries from Becke3LYP/6-31G*, as specified for these Table 1 cases. Evaluate ring-center absolute magnetic shieldings with GIAO-SCF, taking the 6-31+G* column as the selected response basis. Reverse the shielding sign to report NICS in ppm. The source Gaussian94 calculation supplies a finite magnetic-response comparison; no new solver execution is performed.",
       "claimIds": [
         "M-phys-schleyer1996-nics-context"
       ],
@@ -513,7 +511,7 @@ const contracts = {
       ],
       "openObligations": [
         "This is computational-analysis with a model-context, not an observed proton resonance, a sample preparation or an empirical ring-current measurement.",
-        "The table also reports a different6-31G* shielding column. Geometry method and response method/basis are distinct; columns are not repeat acquisitions or a statistical uncertainty estimate.",
+        "The table also reports a different 6-31G* shielding column. Geometry method and response method/basis are distinct; columns are not repeat acquisitions or a statistical uncertainty estimate.",
         "Only the named center descriptor and benzene/cyclohexane cases are admitted. The prior experimental NMR shifts, energetic calibration, other compounds and cited unpublished IGLO results are not separately reviewed or newly acquired evidence.",
         "No raw input deck, convergence study, magnetic-field scan, tensor decomposition, modern uncertainty or independent numerical reproduction is supplied."
       ]
@@ -522,7 +520,7 @@ const contracts = {
       "id": "phys:benzene-ring-center-nics",
       "name": "Finite benzene ring-center NICS with saturated control",
       "kind": "scoped-process",
-      "description": "Table1 reports ring-center NICS=-9.7 ppm for neutral D6h benzene and -2.2 ppm for saturated nonaromatic D3d cyclohexane in the selected GIAO-SCF/6-31+G* column. The distinct6-31G* column gives -11.5 and -2.1 ppm, respectively. The declared benzene response supplies a finite positive magnetic aromaticity-probe example, while the saturated control limits a sign-only classification.",
+      "description": "Table 1 reports ring-center NICS=-9.7 ppm for neutral D6h benzene and -2.2 ppm for saturated nonaromatic D3d cyclohexane in the selected GIAO-SCF/6-31+G* column. The distinct 6-31G* column gives -11.5 and -2.1 ppm, respectively. The declared benzene response supplies a finite positive magnetic aromaticity-probe example, while the saturated control limits a sign-only classification.",
       "claimIds": [
         "C-phys-benzene-ring-center-nics"
       ],
@@ -579,22 +577,17 @@ const contracts = {
         {
           "sourceId": "schleyer1996-nics",
           "locator": "Published page 6318, Table 1 benzene and cyclohexane rows and footnotes b-c: GIAO-SCF basis columns and Becke3LYP geometries; local sigma-shielding and off-center-maxima discussion"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Reuse the existing pauling1933-benzene model-context and pauling-benzene-vb-lowering output without cloning a new independent benzene calculation. Its nonorthogonal functions, unnormalized coefficients, negative exchange-energy convention and unreviewed thermochemical calibration limits remain.",
-        "The linked1934 erratum corrects original radical tables/discussion and leaves the selected benzene TableI unchanged. It remains part of the same study provenance, not a second replication or a new radical result.",
+        "Reuse the existing Pauling-Wheland 1933 benzene model context and its source-reported valence-bond energy-lowering result without cloning a new independent benzene calculation. Its nonorthogonal functions, unnormalized coefficients, negative exchange-energy convention and unreviewed thermochemical calibration limits remain.",
+        "The linked 1934 erratum corrects original radical tables/discussion and leaves the selected benzene Table I unchanged. It remains part of the same study provenance, not a second replication or a new radical result.",
         "Pauling-Wheland VB energy lowering and Schleyer GIAO-SCF shielding use different methods and response questions. No common fitted likelihood, universal equivalence, independent empirical agreement or newly measured charge-density/phase-coherence map is asserted.",
-        "Original parent2.3 weight0.45 and parent2.5 weight0.55, each direction[2], modes[0,1], necessary/dependency10/arising, carrier1/0 N_min=N_crit=3,N_sat=null, are not measured causal fractions, universal prerequisites or carrier thresholds. No replacement normalized weights are introduced.",
         "A supplied molecular framework is relevant, but the earlier H2 formation/spectroscopy experiment is not a necessary history for these benzene calculations. Reuse of the same resonance model is data dependence, not an observed later emergence stage.",
-        "Six carbon centers, six active electrons, five VB functions and a coordinate probe point are different supplied counting domains. They neither validate minima3 nor establish a universal six-electron or4n+2 criterion for all states and topologies.",
-        "Original Level2, Phase2, TypeRole2, Science[0,1,2], established, MustCover[10], ShouldCover[9], Optional[] and SOMA pattern/arising labels are catalogue/display classifications. Recurring representations do not establish an autonomous physical stage beyond local resonance or a universal object/event boundary.",
+        "Six carbon centers, six active electrons, five VB functions and a coordinate probe point are different supplied counting domains. They do not establish a universal six-electron or 4n+2 criterion for all states and topologies.",
+        "Recurring representations do not establish an autonomous physical stage beyond local resonance or a universal object/event boundary.",
         "Conjugation can be linear without satisfying a cyclic aromaticity criterion. Real pigments, polymers, conjugated materials, optical absorption, transport and reactivity require their own stated preparations, response models and evidence; their existence is not blanket-excluded, but those outputs are not inferred here.",
-        "Generic original Huckel/MO and spectroscopic/ring-current/stability/transport paragraphs have null DOI/URL and identify no reviewed publications. No unread primary Huckel derivation, observed ring current, optical or transport experiment is manufactured.",
+        "No unread primary Huckel derivation, observed ring current, optical or transport experiment is manufactured.",
         "The IUPAC reading is confined to named terminology entries, and later NICS tensor/scan papers were not read in full. No numerical scan, full-current-density reconstruction, modern all-criteria classifier or new experimental/numerical replay is supplied."
       ]
     }
@@ -803,12 +796,12 @@ const contracts = {
       "issue": "26",
       "pages": "6317-6318",
       "system": "Selected neutral-benzene and saturated-cyclohexane ring-center magnetic shielding model comparison",
-      "preparation": "Use the source neutral D6h benzene and saturated D3d cyclohexane geometries from Becke3LYP/6-31G*, as specified for these Table1 cases. Evaluate ring-center absolute magnetic shieldings with GIAO-SCF, taking the 6-31+G* column as the selected response basis. Reverse the shielding sign to report NICS in ppm. The source Gaussian94 calculation supplies a finite magnetic-response comparison; no new solver execution is performed.",
+      "preparation": "Use the source neutral D6h benzene and saturated D3d cyclohexane geometries from Becke3LYP/6-31G*, as specified for these Table 1 cases. Evaluate ring-center absolute magnetic shieldings with GIAO-SCF, taking the 6-31+G* column as the selected response basis. Reverse the shielding sign to report NICS in ppm. The source Gaussian94 calculation supplies a finite magnetic-response comparison; no new solver execution is performed.",
       "observable": "Computed sign-reversed ring-center absolute shieldings in ppm; no experimental acquisition.",
-      "finding": "Table1 reports ring-center NICS=-9.7 ppm for neutral D6h benzene and -2.2 ppm for saturated nonaromatic D3d cyclohexane in the selected GIAO-SCF/6-31+G* column. The distinct6-31G* column gives -11.5 and -2.1 ppm, respectively. The declared benzene response supplies a finite positive magnetic aromaticity-probe example, while the saturated control limits a sign-only classification.",
+      "finding": "Table 1 reports ring-center NICS=-9.7 ppm for neutral D6h benzene and -2.2 ppm for saturated nonaromatic D3d cyclohexane in the selected GIAO-SCF/6-31+G* column. The distinct 6-31G* column gives -11.5 and -2.1 ppm, respectively. The declared benzene response supplies a finite positive magnetic aromaticity-probe example, while the saturated control limits a sign-only classification.",
       "limitations": [
         "This is computational-analysis with a model-context, not an observed proton resonance, a sample preparation or an empirical ring-current measurement.",
-        "The table also reports a different6-31G* shielding column. Geometry method and response method/basis are distinct; columns are not repeat acquisitions or a statistical uncertainty estimate.",
+        "The table also reports a different 6-31G* shielding column. Geometry method and response method/basis are distinct; columns are not repeat acquisitions or a statistical uncertainty estimate.",
         "Only the named center descriptor and benzene/cyclohexane cases are admitted. The prior experimental NMR shifts, energetic calibration, other compounds and cited unpublished IGLO results are not separately reviewed or newly acquired evidence.",
         "No raw input deck, convergence study, magnetic-field scan, tensor decomposition, modern uncertainty or independent numerical reproduction is supplied.",
         "These are computed point shieldings on supplied model geometries, not measured proton chemical shifts, an observed ring-current trajectory or a newly measured stabilization energy.",
@@ -823,7 +816,7 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://pubs.acs.org/doi/pdf/10.1021/ja960582d",
-      "correctionCheck": "Title/authors/DOI/journal/volume/issue/pages checked against publisher and registry. Online3July1996 differs from registry print/general1January1996. Empty relation/no update-to item and limited title/DOI search found no explicit erratum; no exhaustive later assessment or modern tensor/scan review claimed."
+      "correctionCheck": "Title/authors/DOI/journal/volume/issue/pages checked against publisher and registry. Online 3 July 1996 differs from registry print/general 1 January 1996. Empty relation/no update-to item and limited title/DOI search found no explicit erratum; no exhaustive later assessment or modern tensor/scan review claimed."
     }
   ],
   "comparisons": [],
@@ -907,7 +900,7 @@ const contracts = {
           "Publisher primary-text entries conjugated system/conjugation, delocalization, orbital symmetry and sigma/pi: orbital coupling, linear examples and representation boundaries",
           "Publisher primary-text entries aromatic/aromaticity, Huckel (4n+2) rule and Huckel molecular orbital theory: cyclic reference criteria and restricted monocyclic model conditions"
         ],
-        "limit": "Read the named publisher-indexed primary glossary entries, not the entire182-page document or a full local PDF. Direct HTML access returned405 and the PDF endpoint returned an empty response. This is primary terminology authority, not experimental acquisition, a primary Huckel1931 reading or a reproduced HMO derivation. Title Recommendations2021 is distinguished from publication2022; DOI registry identity/authors match. Registry empty relation/no update-to plus limited correction search is not exhaustive."
+        "limit": "Read the named publisher-indexed primary glossary entries, not the entire 182-page document or a full local PDF. Direct HTML access returned 405 and the PDF endpoint returned an empty response. This is primary terminology authority, not experimental acquisition, a primary Huckel1931 reading or a reproduced HMO derivation. Title Recommendations 2021 is distinguished from publication 2022; DOI registry identity/authors match. Registry empty relation/no update-to plus limited correction search is not exhaustive."
       }
     },
     {
@@ -932,7 +925,7 @@ const contracts = {
           "Published page 6317, ring-center absolute-shielding proposal and sign convention: unweighted heavy-atom coordinate center, computed NICS and stated aromaticity probe",
           "Published page 6318, Table 1 benzene and cyclohexane rows and footnotes b-c: GIAO-SCF basis columns and Becke3LYP geometries; local sigma-shielding and off-center-maxima discussion"
         ],
-        "limit": "Read both scientific pages6317-6318 and visually checked the table, footnotes and local-shielding discussion. Admission is restricted to the ring-center descriptor and specified benzene/cyclohexane rows; no other primary experiment, five-membered calibration, fused-ring ranking or modern tensor/scan result is newly admitted. No Gaussian input/output replay or modern numerical uncertainty is supplied. Publisher title/authors/DOI/volume/issue/pages match DOI registration; online3July1996 differs from registry1January print/general date. Registry empty relation/no update item and limited correction search found no explicit erratum; not an exhaustive later-literature audit."
+        "limit": "Read both scientific pages 6317-6318 and visually checked the table, footnotes and local-shielding discussion. Admission is restricted to the ring-center descriptor and specified benzene/cyclohexane rows; no other primary experiment, five-membered calibration, fused-ring ranking or modern tensor/scan result is newly admitted. No Gaussian input/output replay or modern numerical uncertainty is supplied. Publisher title/authors/DOI/volume/issue/pages match DOI registration; online 3 July 1996 differs from registry 1 January print/general date. Registry empty relation/no update item and limited correction search found no explicit erratum; not an exhaustive later-literature audit."
       }
     }
   ]

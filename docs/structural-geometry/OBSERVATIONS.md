@@ -132,10 +132,10 @@ import {
 const regime = getDistinguishabilityRegime("canonical-structure-v1");
 const input = {
   regimeId: regime.id,
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] }
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] }
 };
-const preparation = prepareStructuralRegime(verifiedCausalPack, input);
-verifyStructuralRegimePreparation(preparation, verifiedCausalPack, input);
+const preparation = prepareStructuralRegime(verifiedPack, input);
+verifyStructuralRegimePreparation(preparation, verifiedPack, input);
 // preparation.evaluation === "not-run"
 ```
 
@@ -173,8 +173,10 @@ Readonly TypeScript declarations and browser bundles expose the same API.
 
 ### Reproducible examples
 
-The [six examples](../../cases/structural-geometry/regimes/README.md) bind each
-regime to a declared five-node control and a six-node Causal Emergence fragment.
+The [three examples](../../cases/structural-geometry/regimes/README.md) bind each
+regime to a declared five-node control. The regimes are defined for
+source-parent relations; a canonical Causal Emergence pack fails with
+`RELATION_LAYER_UNSUPPORTED` instead of being reinterpreted.
 
 ```sh
 npm run structural-geometry:regimes:check
@@ -227,17 +229,16 @@ import {
 
 const input = {
   regimeId: "canonical-structure-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] }
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] }
 };
-const artifact = observeCanonicalStructure(causalPack, input);
-verifyCanonicalStructureObservation(artifact, causalPack, input);
+const artifact = observeCanonicalStructure(pack, input);
+verifyCanonicalStructureObservation(artifact, pack, input);
 console.log(artifact.observation.value, artifact.observation.valueHash);
 ```
 
 The regime must be explicit. Omitting scope selects the full source. Supported
 scopes contain 1–6 nodes and at most 30 loopless, nonparallel directed edges.
-The full 249-node Causal Emergence release therefore requires an explicit induced
-fragment. Oversized graphs, invalid source records, unsupported regimes and
+Larger source graphs therefore require an explicit induced fragment. Oversized graphs, invalid source records, unsupported regimes and
 undeclared parameters raise errors; they do not yield a partial observation.
 
 The evaluator verifies and snapshots the complete Model Pack, then invokes the
@@ -345,10 +346,9 @@ every value and node mapping reconstruct the source's directed edges. All 720
 relabelings of a declared asymmetric six-node graph preserve the canonical
 value. This does not claim exhaustive enumeration of all five/six-node graphs.
 
-Seventeen frozen public observations include isolates, directed/reciprocal
+Sixteen frozen public observations include isolates, directed/reciprocal
 edges, opposite star orientations, cycles, disconnected graphs, six-node
-symmetry, relabeling/annotation controls and the six-node/11-edge real source
-fragment. Python independently checks their permutation orbits and complete
+symmetry and relabeling/annotation controls. Python independently checks their permutation orbits and complete
 mapping witnesses. Explicit UTF-8 I/O preserves Unicode controls across platforms.
 
 ```sh
@@ -426,7 +426,7 @@ import {
 
 const input = {
   regimeId: "topology-only-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2", "0.3", "0.4", "0.5"] }
+  scope: { kind: "induced", nodeIds: ["a", "b", "c", "d", "e", "f"] }
 };
 const result = observeStructuralTopology(pack, input);
 verifyStructuralTopologyObservation(result, pack, input);
@@ -494,7 +494,7 @@ shape; expected-source replay checks arithmetic, partitions and identities.
 
 ### Independent evidence
 
-The [case suite](../../cases/structural-geometry/topology/README.md) freezes 23
+The [case suite](../../cases/structural-geometry/topology/README.md) freezes 21
 artifacts. Python standard-library Boolean Floyd–Warshall closure independently
 computes all values, component memberships and analytic traversal totals.
 It does not import the production traversal. For every directed loopless graph
@@ -513,13 +513,6 @@ isomorphism class has one summary; different classes may merge as shown.
 Transposition equality is checked throughout this census. The outward/inward
 star control additionally runs both public evaluators and freezes their equal
 topology and unequal exact canonical value hashes.
-
-The Causal Emergence examples use the unchanged 2026.08.15 source lock. The
-six-node fragment has 11 edges and 14 reachable ordered pairs. The second
-fragment declares 32 explicit IDs in the fixture: 88 edges, 377 reachable pairs,
-four isolates and three cyclic nodes. It is a declared fragment, not a selected
-scientific finding or a full-model result. The complete 249-node source exceeds
-this regime's scope bound.
 
 ```sh
 npm run structural-geometry:topology:check
@@ -583,7 +576,7 @@ import { observeTypedRelations, verifyTypedRelationsObservation,
 
 const input = {
   regimeId: "typed-relations-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2", "0.3", "0.4", "0.5"] }
+  scope: { kind: "induced", nodeIds: ["a", "b", "c", "d", "e", "f"] }
 };
 const result = observeTypedRelations(pack, input);
 verifyTypedRelationsObservation(result, pack, input);
@@ -730,8 +723,8 @@ all of them. No existing hash domain or accepted artifact is rewritten.
 
 ### Independent controls
 
-The [case suite](../../cases/structural-geometry/typed/README.md) freezes 26
-observations (24 complete, two incomplete), five mappings and eight alignments
+The [case suite](../../cases/structural-geometry/typed/README.md) freezes 25
+observations (23 complete, two incomplete), five mappings and eight alignments
 (four compatible, four unresolved). Python independently enumerates all node
 permutations and checks graph orbits, complete original/remapped witnesses and
 evidence accounting. The exhaustive census uses absent/A/B edges with two fixed
@@ -746,9 +739,7 @@ five-field tuples:
 All 739 graphs agree without false merges/splits. All 720 relabelings of a
 six-node control retain its typed value. Additional controls exercise each
 field, joint correlations, sets, missing data, Unicode IDs, source/dictionary
-changes, complete six-node graphs and explicit vocabulary approval. The unchanged
-Causal Emergence release contributes its six-node/11-edge fragment with all
-55 scoped fields present. No cross-domain mapping is inferred for that source.
+changes, complete six-node graphs and explicit vocabulary approval.
 
 ```sh
 npm run structural-geometry:typed:check
@@ -883,7 +874,7 @@ No existing engine API or default analysis changes.
 ### Acceptance controls
 
 The [separate comparison protocol](../../cases/structural-geometry/comparison/PROTOCOL.md)
-was fixed before result generation using existing source controls. Its 43 runs
+was fixed before result generation using existing source controls. Its 37 runs
 check exact relabeling, topology-summary collisions, joint-type
 splits, approved renumbering, dictionary incompatibility, partial/unapproved
 mapping, missing fields, preserved differences despite gaps, caller evidence

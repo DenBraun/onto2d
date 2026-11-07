@@ -62,8 +62,8 @@ alone cannot authorize a value. All outputs are deeply immutable.
 
 ## Controls and independent acceptance
 
-Reuse all 16 source-defined response controls. Add canonical/topology versions
-of the typed diamond with feedback, and all three regimes for each of:
+Reuse all 15 synthetic source-defined response controls. Add canonical/topology
+versions of the typed diamond with feedback, and all three regimes for each of:
 
 - Subdivide its feedback edge 3→0 into 3→4→0 with the same necessary annotations.
   This is a structural negative expected to change complete response multisets.

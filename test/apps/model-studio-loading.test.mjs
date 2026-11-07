@@ -120,7 +120,7 @@ function reviewPanel(request) {
   const rendered = [];
   const configure = vm.runInNewContext(`${declaration("configureReviewPanels")}; configureReviewPanels;`, {
     elements, state,
-    renderVocabulary() {}, renderSourceReadiness() {},
+    renderSourceReadiness() {},
     renderSourceReview: (_pack, key, prefix) => {
       rendered.push(key);
       elements[`${prefix}-records`].replaceChildren(element());

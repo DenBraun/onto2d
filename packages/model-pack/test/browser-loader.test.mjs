@@ -390,6 +390,6 @@ test("the browser entrypoint contains no Node transport dependency", async () =>
     }
   }
   assert.ok([...visited].some((url) => url.endsWith("/packages/kernel/src/sha256.js")));
-  assert.equal(MODEL_PACK_BROWSER_LIMITS.maxFileBytes, 16 * 1024 * 1024);
-  assert.equal(MODEL_PACK_BROWSER_LIMITS.maxTotalBytes, 64 * 1024 * 1024);
+  assert.equal(MODEL_PACK_BROWSER_LIMITS.maxFileBytes, 64 * 1024 * 1024);
+  assert.equal(MODEL_PACK_BROWSER_LIMITS.maxTotalBytes, 256 * 1024 * 1024);
 });

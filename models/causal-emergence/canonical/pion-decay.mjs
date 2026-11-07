@@ -564,7 +564,7 @@ const contracts = {
         "The Table I factors correct acceptance, low-energy tail and other effects of the same fitted ratio. Their published uncertainties and total systematic uncertainty are retained without an independently reconstructed covariance or uncertainty combination.",
         "The published pion spectra, fitted ratio and corrected ratio reuse the same PIENU pion acquisition. Auxiliary positron-beam response measurements, stopped-muon controls and simulation enter the corrections; they are not extra independent pion branching-ratio measurements. The paper does not state the pion acquisition calendar dates. Approximately 400000 electronic-decay events refers to the specified selection stage, not an exact background-free census.",
         "The paper also gives an electron/muon universality comparison and a hypothetical-neutrino limit, but those require separate theoretical inputs and are not admitted in this block. No newest-data claim, pooling of later overlapping PIENU exposure or exhaustive later-correction search is made.",
-        "The old card numerical parent weights, Nmin/Ncrit values, necessary lepton/Higgs/EFT/virtual-excitation inputs and universal laboratory-to-cosmology population law are excluded from active semantics.",
+        "A universal laboratory-to-cosmology population law is excluded from active semantics.",
         "The inclusive convention is retained as stated in the paper. The implementation of inner-bremsstrahlung, structure-dependent and interference contributions is not independently reconstructed or narrowed to an IB-only definition."
       ],
       "contextIds": [
@@ -593,7 +593,7 @@ const contracts = {
         "The Table I factors correct acceptance, low-energy tail and other effects of the same fitted ratio. Their published uncertainties and total systematic uncertainty are retained without an independently reconstructed covariance or uncertainty combination.",
         "The published pion spectra, fitted ratio and corrected ratio reuse the same PIENU pion acquisition. Auxiliary positron-beam response measurements, stopped-muon controls and simulation enter the corrections; they are not extra independent pion branching-ratio measurements. The paper does not state the pion acquisition calendar dates. Approximately 400000 electronic-decay events refers to the specified selection stage, not an exact background-free census.",
         "The paper also gives an electron/muon universality comparison and a hypothetical-neutrino limit, but those require separate theoretical inputs and are not admitted in this block. No newest-data claim, pooling of later overlapping PIENU exposure or exhaustive later-correction search is made.",
-        "The old card numerical parent weights, Nmin/Ncrit values, necessary lepton/Higgs/EFT/virtual-excitation inputs and universal laboratory-to-cosmology population law are excluded from active semantics.",
+        "A universal laboratory-to-cosmology population law is excluded from active semantics.",
         "The inclusive convention is retained as stated in the paper. The implementation of inner-bremsstrahlung, structure-dependent and interference contributions is not independently reconstructed or narrowed to an IB-only definition."
       ],
       "contextIds": [

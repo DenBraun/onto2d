@@ -10,7 +10,7 @@
     "../experiments/reference.py": "1289d39136d8cffb8f7abf2386db9e6fbef8f697728223c35ca46077f36e42bd",
     "../flow/networkx_reference.py": "49195050d3127d08977186de754571d0664b59c8e55de49a83cf64cb57ed8f77",
     "../flow/paper_reference.py": "eb41b9ce59c7a3c943a8e68c4b64a457876bd0c70f9abedbbdc9b45ac085e30e",
-    "../geometric-signatures/measurements.py": "5569ee14e23360ccf47524a89017672e798a4a5e6d761996175b8a113a3a033f",
+    "../geometric-signatures/measurements.py": "1b76691a0aa6f547ef73ec7de5011a2258ba1448a2e9d99c145e2967fceccc90",
     "PROTOCOL.md": "afe4a84b41b63b5f10a0099c12f162f238e6afa0b978e7ba3df87eda5e56fc5b",
     "config.json": "8254ea548d1057a82371c66dfc413a4af72bed2b555d60b58d1f84060123658c",
     "measurements.py": "32ef619865482c49f171d7fa9978fd89dc0caf10f83cff915f316d668df76811",

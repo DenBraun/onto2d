@@ -10,11 +10,15 @@ import {
   SOURCE_PARENT_DIRECTED_POLICY,
   UNIT_METRIC_POLICY,
   analyzeStructuralGeometry,
+  layerPolicyForNodes,
   projectStructuralGeometry,
   structuralGeometryAnalysis,
   verifyStructuralGeometryArtifact,
   verifyStructuralProjection
 } from "@onto2d/structural-geometry";
+import { createStructuralMetricContext } from "@onto2d/structural-geometry/providers";
+import { prepareStructuralRegime } from "@onto2d/structural-geometry/regimes";
+import { auditStructuralWeights } from "@onto2d/structural-geometry/experiments";
 
 const directory = new URL("../../../cases/structural-geometry/", import.meta.url);
 const json = async (relative) => JSON.parse(await readFile(new URL(relative, directory), "utf8"));
@@ -249,6 +253,31 @@ test("projection rejects unsupported graph classes without silently dropping edg
   assert.throws(() => projectStructuralGeometry(buildModelPack(oversize)), code("LIMIT_EXCEEDED"));
 });
 
+test("canonical relation layers select their own projection; source-parent consumers reject them", () => {
+  const canonical = input(graph("path"));
+  canonical.edges = canonical.edges.map((edge, index) => ({ ...edge,
+    relationLayer: index === 0 ? "functional-support" : "descriptive",
+    role: index === 0 ? "scoped-operating-support" : "definition-dependency" }));
+  const pack = buildModelPack(canonical);
+  const projection = projectStructuralGeometry(pack);
+  assert.equal(projection.policy.id, "canonical-relation-directed-v1");
+  assert.deepEqual(projection.edges.map((edge) => edge.attributes),
+    canonical.edges.map(({ relationLayer, role }) => ({ relationLayer, role })));
+  const artifact = analyzeStructuralGeometry(pack);
+  assert.deepEqual(Object.keys(artifact.result.groups), ["bySourceLevel", "byTargetLevel", "byRelationLayer", "byRole"]);
+  assert.deepEqual(analyzeStructuralGeometry(pack, { projectionPolicyId: "canonical-relation-directed-v1" }), artifact);
+  assert.throws(() => projectStructuralGeometry(pack, { projectionPolicyId: SOURCE_PARENT_DIRECTED_POLICY.id }),
+    code("RELATION_LAYER_UNSUPPORTED"));
+  // A mixed source is never split into a partially projected graph.
+  const mixed = input(graph("path"));
+  mixed.edges[1] = { ...mixed.edges[1], relationLayer: "descriptive", role: "definition-dependency" };
+  assert.throws(() => projectStructuralGeometry(buildModelPack(mixed)), code("RELATION_LAYER_UNSUPPORTED"));
+  // Providers, regimes and typed experiments declare the source-parent representation.
+  assert.throws(() => createStructuralMetricContext(pack), code("RELATION_LAYER_UNSUPPORTED"));
+  assert.throws(() => prepareStructuralRegime(pack, { regimeId: "topology-only-v1" }), code("RELATION_LAYER_UNSUPPORTED"));
+  assert.throws(() => auditStructuralWeights(pack), code("RELATION_LAYER_UNSUPPORTED"));
+});
+
 test("pack integrity, missing endpoints and noncanonical inputs fail before analysis", () => {
   const pack = structuredClone(packFor(graph("single-edge")));
   pack.files[paths.edges][0].target = "missing";
@@ -369,16 +398,40 @@ test("separate Python incidence reference agrees on additional deterministic gra
 });
 
 test("the complete Causal Emergence census agrees with the separate incidence reference", async () => {
-  const pack = JSON.parse(await readFile(new URL("../../../models/causal-emergence/releases/2026.08.15/bundle.json", import.meta.url), "utf8"));
+  const pack = JSON.parse(await readFile(new URL("../../../models/causal-emergence/releases/2026.11.05.0/bundle.json", import.meta.url), "utf8"));
+  const lock = await json("causal-emergence/source-lock.json");
+  const technical = { projectionPolicyId: "canonical-technical-directed-v1" };
+  // Primary census: the ontological layer of arisings and the causes between them.
   const artifact = await json("causal-emergence/artifact.json");
   const projection = await json("causal-emergence/projection.json");
-  assert.equal(projection.nodes.length, 249);
-  assert.equal(projection.edges.length, 971);
-  assert.deepEqual(projection.model, await json("causal-emergence/source-lock.json"));
+  assert.equal(projection.nodes.length, 259);
+  assert.equal(projection.edges.length, 1085);
+  assert.equal(projection.policy.id, "canonical-arising-causal-v1");
+  assert.deepEqual(projection.model, lock);
   assert.deepEqual(verifyStructuralProjection(projection, pack), projection);
   assert.deepEqual(verifyStructuralGeometryArtifact(artifact, pack), artifact);
   assert.deepEqual(compact(artifact.result), oracle(projection));
-  assert.equal(artifact.result.summary.count, 971);
-  const expectedNecessities = { necessary: 613, enabling: 250, contextual: 95, optional: 13 };
-  assert.deepEqual(Object.fromEntries(artifact.result.groups.byNecessity.map((entry) => [entry.key.value, entry.summary.count])), expectedNecessities);
+  assert.deepEqual(Object.keys(artifact.result.groups), ["byDependencyType", "byNecessity", "byOntologicalRole", "bySourceLevel", "byTargetLevel"]);
+  // Secondary census: the technical layer of evidence records inside arisings.
+  const technicalArtifact = await json("causal-emergence/technical-artifact.json");
+  const technicalProjection = await json("causal-emergence/technical-projection.json");
+  assert.equal(technicalProjection.nodes.length, 2537);
+  assert.equal(technicalProjection.edges.length, 3683);
+  assert.equal(technicalProjection.policy.id, "canonical-technical-directed-v1");
+  assert.deepEqual(verifyStructuralProjection(technicalProjection, pack, technical), technicalProjection);
+  assert.deepEqual(verifyStructuralGeometryArtifact(technicalArtifact, pack, technical), technicalArtifact);
+  assert.deepEqual(compact(technicalArtifact.result), oracle(technicalProjection));
+  const expectedLayers = { descriptive: 3378, "functional-support": 305 };
+  assert.deepEqual(Object.fromEntries(technicalArtifact.result.groups.byRelationLayer.map((entry) => [entry.key.value, entry.summary.count])), expectedLayers);
+  // A mixed scope or an unlayered policy cannot hide one layer inside the other.
+  assert.throws(() => projectStructuralGeometry(pack, { projectionPolicyId: "canonical-relation-directed-v1" }), { code: "STRUCTURAL_GEOMETRY_RELATION_LAYER_UNSUPPORTED" });
+  assert.throws(() => layerPolicyForNodes(pack, ["arising:2.3", "phys:qcd"]), { code: "STRUCTURAL_GEOMETRY_LAYER_SCOPE_UNSUPPORTED" });
+  assert.equal(layerPolicyForNodes(pack, ["arising:2.3", "arising:2.2"]), "canonical-arising-causal-v1");
+  assert.equal(layerPolicyForNodes(pack, ["phys:qcd", "phys:quark-fields"]), "canonical-technical-directed-v1");
+  // Unknown ids stay for the caller's scope validation instead of reading as a second layer.
+  assert.equal(layerPolicyForNodes(pack, ["phys:qcd", "no-such-record"]), "canonical-technical-directed-v1");
+  assert.equal(layerPolicyForNodes(pack, ["no-such-record"]), null);
+  // A stored projection or artifact replays its own policy when no request is given.
+  assert.deepEqual(verifyStructuralProjection(technicalProjection, pack), technicalProjection);
+  assert.deepEqual(verifyStructuralGeometryArtifact(technicalArtifact, pack), technicalArtifact);
 });

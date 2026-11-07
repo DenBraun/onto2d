@@ -1,11 +1,11 @@
 import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { loadCanonicalSource, validateCanonicalSource } from "../../models/causal-emergence/canonical/source.mjs";
 import { compileCanonicalGraph } from "../../models/causal-emergence/canonical/build.mjs";
 import { validateBiochemistryReview } from "../../models/causal-emergence/canonical/biochemistry.mjs";
-import { BIOCHEMISTRY_CARDS } from "../../models/causal-emergence/canonical/level-three.mjs";
+import { PROTEIN_FOLDING_RECORDS } from "../../models/causal-emergence/canonical/protein-folding.mjs";
+import { ENZYME_CATALYSIS_RECORDS } from "../../models/causal-emergence/canonical/enzyme-catalysis.mjs";
 
 let sourcePromise;
 const source = () => sourcePromise ??= loadCanonicalSource();
@@ -25,11 +25,8 @@ async function rejects(mutations) {
   }
 }
 
-test("folding and enzyme cards share their original acquisitions without multiplying publications", async () => {
+test("folding and enzyme records share their original acquisitions without multiplying publications", async () => {
   const data = await source();
-  assert.ok([0, 1, 2].every((card) => BIOCHEMISTRY_CARDS.some((record) => record.card === card)));
-  assert.equal(BIOCHEMISTRY_CARDS.find((record) => record.card === 1).records,
-    BIOCHEMISTRY_CARDS.find((record) => record.card === 2).records);
   const ksi = ["kraut2010-ksi-kinetic-context", "kraut2010-ksi-structure-context", "kraut2010-ksi-probe-context"];
   assert.equal(new Set(ksi.map((id) => study(data, id).sourceId)).size, 1);
   assert.deepEqual(claim(data, "C-bio-ksi-solvation-interpretation").contextIds, ksi);
@@ -39,10 +36,6 @@ test("folding and enzyme cards share their original acquisitions without multipl
   assert.equal(data.biochemistry.independentScientificReviewComplete, false);
   assert.deepEqual(data.biochemistry.checkIds, []);
   assert.equal(new Set(data.biochemistry.studies.map((record) => record.id)).size, data.biochemistry.studies.length);
-  for (const card of [0, 1, 2]) {
-    assert.ok(data.graph.entities.some((record) => record.sourceCoordinates.some((coordinate) =>
-      coordinate.sourceId === "legacy-3" && coordinate.locator === `/${card}`)));
-  }
 });
 
 test("every empirical publication behind a positive biochemical claim has a supporting citation", async () => {
@@ -148,7 +141,7 @@ test("KSI turnover, analogue geometry and probe spectra retain separate preparat
 test("T4 product ratios retain endpoint timing, qualitative activity and inherited/unrefined structure limits", async () => {
   const data = await source();
   const products = claim(data, "C-bio-t4-transglycosylation-products");
-  assert.match(products.statement, /10:1 after60 min/);
+  assert.match(products.statement, /10:1 after 60 min/);
   assert.ok(products.limitations.some((limit) => /peak numbering.*conflicts/.test(limit)));
   assert.ok(claim(data, "C-bio-t4-local-mechanistic-interpretation").limitations.some((limit) => /were not refined/.test(limit)));
   await rejects([
@@ -166,14 +159,13 @@ test("T4 product ratios retain endpoint timing, qualitative activity and inherit
 
 test("new biochemical rules, carrier thresholds, bridge edges and evidence records require a reviewed admission", async () => {
   const data = await source();
-  const ids = new Set(BIOCHEMISTRY_CARDS.filter((card) => [0, 1, 2].includes(card.card))
-    .flatMap((card) => card.records.entities.map((record) => record.id)));
+  const ids = new Set([PROTEIN_FOLDING_RECORDS, ENZYME_CATALYSIS_RECORDS].flatMap((records) => records.entities.map((record) => record.id)));
   assert.ok(data.graph.relations.filter((record) => ids.has(record.source) || ids.has(record.target))
     .every((record) => record.kind === "descriptive" && !record.carrier));
   await rejects([
-    ["Catalogue minimum cannot become a physical threshold", (d) => {
+    ["An unreviewed carrier count cannot become a physical threshold", (d) => {
       const edge = d.graph.relations.find((record) => record.id.startsWith("biochemistry:"));
-      edge.carrier = { N_min: 1, N_crit: 1 };
+      edge.carrier = { minimumCount: 1, criticalCount: 1 };
     }],
     ["Separate physical source cannot become an unreviewed causal ancestor", (d) => {
       d.graph.relations.push({ ...d.graph.relations.find((record) => record.id.startsWith("biochemistry:")),
@@ -189,35 +181,13 @@ test("new biochemical rules, carrier thresholds, bridge edges and evidence recor
   assert.doesNotThrow(() => validateCanonicalSource(data));
 });
 
-test("reviewed biochemical cards leave the pending queue with complete scoped records", async () => {
-  const pending = JSON.parse(await readFile(new URL("../../references/canonical/pending-review.json", import.meta.url), "utf8"));
-  for (const { card } of BIOCHEMISTRY_CARDS) assert.equal(pending.cards.some((entry) =>
-    entry.sourcePath === "references/level-3.json" && entry.pointer === `/${card}`), false);
-});
 
-test("all fifty cards are required even when a missing card shares every scientific record", async () => {
-  const data = await source();
-  const expected = Array.from({ length: 50 }, (_, card) => card);
-  assert.deepEqual(BIOCHEMISTRY_CARDS.map(({ card }) => card).sort((a, b) => a - b), expected);
-  const index = BIOCHEMISTRY_CARDS.findIndex(({ card }) => card === 15);
-  const shared = BIOCHEMISTRY_CARDS.find(({ card }) => card === 42);
-  assert.equal(BIOCHEMISTRY_CARDS[index].records, shared.records);
-  const [removed] = BIOCHEMISTRY_CARDS.splice(index, 1);
-  try {
-    assert.ok(BIOCHEMISTRY_CARDS.includes(shared), "The remaining shared card still admits the same records");
-    assert.throws(() => validateBiochemistryReview(data, context(data)),
-      /Incomplete Level-3 source-card inventory/);
-  } finally {
-    BIOCHEMISTRY_CARDS.splice(index, 0, removed);
-  }
-  assert.deepEqual(BIOCHEMISTRY_CARDS.map(({ card }) => card).sort((a, b) => a - b), expected);
-});
 
 test("CAPN negative cooperativity does not become a positive Hill response or a universal site-count law", async () => {
   const data = await source();
   const binding = claim(data, "C-bio-capn-sequential-binding");
   assert.match(binding.statement, /negative cooperativity/);
-  assert.match(binding.statement, /0.04 and4micromolar/);
+  assert.match(binding.statement, /0.04 and 4 micromolar/);
   assert.ok(binding.limitations.some((limit) => /combinatorial\/state convention/.test(limit)));
   assert.equal(claim(data, "C-bio-capn-entropic-interpretation").status, "publication-supported");
   assert.equal(new Set(claim(data, "C-bio-capn-entropic-interpretation").contextIds
@@ -263,8 +233,6 @@ test("CAPN remote motion and exchange protection do not identify a unique pathwa
 
 test("hammerhead FRET titrations and catalytic progress curves retain their different strands and ion backgrounds", async () => {
   const data = await source();
-  assert.equal(BIOCHEMISTRY_CARDS.find((record) => record.card === 7).records,
-    BIOCHEMISTRY_CARDS.find((record) => record.card === 8).records);
   const fret = claim(data, "C-bio-penedo-hammerhead-fret-response");
   const cleavage = claim(data, "C-bio-penedo-hammerhead-cleavage-response");
   assert.match(fret.statement, /decrease in FRET/);
@@ -610,7 +578,7 @@ test("template-copying rates retain separate-assay discrimination, supplied acti
   assert.equal(copying.status, "literature-synthesis");
   assert.equal(data.biochemistry.studies.filter((record) => record.id === "mansy2008-encapsulated-primer-extension").length, 1);
   const paper = data.graph.sources.find((record) => record.id === "prywes2016-helper-rna-copying");
-  assert.match(paper.review.limit, /50mM.*25mM/);
+  assert.match(paper.review.limit, /50 mM.*25 mM/);
   await rejects([
     ["Separate matched/mismatched rate fractions are not mixed-pool genome accuracy", (d) => {
       claim(d, discrimination.id).statement = "Every mixed-sequence genome was directly copied with exactly 98 percent fidelity through unlimited generations.";
@@ -773,10 +741,10 @@ test("phage optical assembly, genome density and isolated-receptor association d
   assert.match(claim(data, "C-bio-ms2-asymmetric-genome").statement, /8.7 angstrom/);
   const contexts = ["garmann2019-ms2-optical-assembly-context", "koning2016-ms2-genome-structure-context", "dent2013-ms2-isolated-receptor-context"];
   assert.equal(new Set(contexts.map((id) => study(data, id).sourceId)).size, 3);
-  for (const card of [10, 16, 30, 35]) {
-    const hypothesis = claim(data, `C-bio-viral-card-${card}-unresolved`);
+  for (const topic of ["viral-maturation", "viral-infection", "viral-entry", "viral-reprogramming"]) {
+    const hypothesis = claim(data, `C-bio-${topic}-unresolved`);
     assert.equal(hypothesis.status, "unresolved");
-    const node = pack.files["model/nodes.json"].find((record) => record.id === `bio:viral-card-${card}-scope`);
+    const node = pack.files["model/nodes.json"].find((record) => record.id === `bio:${topic}-scope`);
     assert.equal(node.status, "hypothesis");
     assert.ok(node.rationale.some((record) => record.id.startsWith("D-bio-")));
     assert.ok(node.rationale.some((record) => record.id === hypothesis.id));
@@ -796,14 +764,14 @@ test("phage optical assembly, genome density and isolated-receptor association d
       claim(d, "C-bio-ms2-asymmetric-genome").statement = "Every nucleotide and the complete genome-folding pathway were directly filmed at atomic resolution.";
     }],
     ["Isolated receptor association does not establish complete cellular genome delivery", (d) => {
-      claim(d, "C-bio-viral-card-30-unresolved").status = "publication-supported";
-      claim(d, "C-bio-viral-card-30-unresolved").contextIds = [contexts[2]];
+      claim(d, "C-bio-viral-entry-unresolved").status = "publication-supported";
+      claim(d, "C-bio-viral-entry-unresolved").contextIds = [contexts[2]];
     }],
     ["A scope definition cannot acquire unmatched structural preparations either", (d) => {
-      claim(d, "D-bio-viral-card-10-scope").contextIds = contexts;
+      claim(d, "D-bio-viral-maturation-scope").contextIds = contexts;
     }],
     ["A structural contact does not measure host-expression reprogramming", (d) => {
-      claim(d, "C-bio-viral-card-35-unresolved").statement = "The structural map uniquely proves host shutoff and preferential viral translation.";
+      claim(d, "C-bio-viral-reprogramming-unresolved").statement = "The structural map uniquely proves host shutoff and preferential viral translation.";
     }]
   ]);
 });

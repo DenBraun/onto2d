@@ -27,7 +27,7 @@ export const REDOX_PH_RECORDS = {
           "Nature Methods 5(6), 553-559, Results: Grx1-roGFP2 facilitates imaging of intracellular redox changes, Figure 2a-c and caption; Methods: Cell culture and imaging of living cells",
           "Nature Methods 5(6), 553-559, Introduction: distinct redox couples and compartments; Discussion: glutathione-coupled versus direct H2O2 sensing; Methods: Additional methods pointer to unreviewed Supplementary Methods"
         ],
-        "limit": "Read selected original main scientific text, Results, Discussion, Methods and Figure 1-2 captions from the seven-page original Nature Methods PDF hosted as an author-profile mirror. The source also contains other applications; apoptosis, macrophage, T-cell and inferred disease claims are not admitted here. Supplementary Figures 1-10, Supplementary Methods, movies and raw data were not independently acquired. The main-text pH-insensitivity and additional-selectivity statements that point to supplements remain source reports, not separately audited calibration controls. Text extraction has micro-unit glyph artifacts; no doses, trace-digitized values, absolute potentials or numerical effect sizes are newly admitted. A full visual figure/equation audit and complete supplementary reading are not claimed. Actual mirror: https://www.researchgate.net/profile/Tobias-Dick/publication/5381370_Real-time_imaging_of_the_intracellular_glutathione_redox_potential/links/09e41508a77f5e0d27000000/Real-time-imaging-of-the-intracellular-glutathione-redox-potential.pdf Checked 2026-10-20 against original PDF header, primary Nature indexed publication record and PubMed 18469822. Title, eight authors, DOI 10.1038/nmeth.1212, Nature Methods 5(6),553-559 agree. Published online 11 May 2008 is distinct from June 2008 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this is not proof of absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed."
+        "limit": "Read selected original main scientific text, Results, Discussion, Methods and Figure 1-2 captions from the seven-page original Nature Methods PDF hosted as an author-profile mirror. The source also contains other applications; apoptosis, macrophage, T-cell and inferred disease claims are not admitted here. Supplementary Figures 1-10, Supplementary Methods, movies and raw data were not independently acquired. The main-text pH-insensitivity and additional-selectivity statements that point to supplements remain source reports, not separately audited calibration controls. Text extraction has micro-unit glyph artifacts; no doses, trace-digitized values, absolute potentials or numerical effect sizes are newly admitted. A full visual figure/equation audit and complete supplementary reading are not claimed. Actual mirror: https://www.researchgate.net/profile/Tobias-Dick/publication/5381370_Real-time_imaging_of_the_intracellular_glutathione_redox_potential/links/09e41508a77f5e0d27000000/Real-time-imaging-of-the-intracellular-glutathione-redox-potential.pdf Checked 2026-10-20 against original PDF header, primary Nature indexed publication record and PubMed 18469822. Title, eight authors, DOI 10.1038/nmeth.1212, Nature Methods 5(6), 553-559 agree. Published online 11 May 2008 is distinct from June 2008 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this is not proof of absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed."
       }
     },
     {
@@ -54,25 +54,7 @@ export const REDOX_PH_RECORDS = {
           "J. Biol. Chem. 293(7), 2318-2329, Results: Intracellular acidification in response to glucose stress; Figure 2A-C; Sugar sensors and G proteins couple carbon stress to intracellular acidity; Figure 5A-C and caption",
           "J. Biol. Chem. 293(7), 2318-2329, Discussion: proposed Gpa2 positive-feedback interpretation; Results and Methods: essential-gene exclusions, pH standard-curve reference and 30-second dead time"
         ],
-        "limit": "Read original PMC scientific text, Results, Discussion, Experimental procedures and Figure 1-5 captions, concentrating on intracellular pH time courses and genetic perturbations. The pH Methods explicitly uses a standard curve and cites its earlier detailed calibration procedure; that upstream procedure and raw calibration points were not newly acquired or independently replayed. Supplemental Tables S1-S4, raw fluorescence traces and source software were not independently reviewed. Structural informatics, purified Gpa2 unfolding, metabolite MS and broad inverse-agonism/feedback models are not newly admitted acquisitions. No absolute pH values or numerical effect-size fits are extracted from figure images. This is selected relevant-passage reading, not a claim that every source or supplement cited by the article has been reviewed. Checked 2026-10-20 against original PMC full-text metadata, primary indexed JBC PDF header and PubMed 29284676. Title, six authors, DOI 10.1074/jbc.RA117.000422, J. Biol. Chem. 293(7),2318-2329 agree. Papers-in-Press date 28 December 2017 is distinct from 16 February 2018 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this does not prove absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed."
-      }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
+        "limit": "Read original PMC scientific text, Results, Discussion, Experimental procedures and Figure 1-5 captions, concentrating on intracellular pH time courses and genetic perturbations. The pH Methods explicitly uses a standard curve and cites its earlier detailed calibration procedure; that upstream procedure and raw calibration points were not newly acquired or independently replayed. Supplemental Tables S1-S4, raw fluorescence traces and source software were not independently reviewed. Structural informatics, purified Gpa2 unfolding, metabolite MS and broad inverse-agonism/feedback models are not newly admitted acquisitions. No absolute pH values or numerical effect-size fits are extracted from figure images. This is selected relevant-passage reading, not a claim that every source or supplement cited by the article has been reviewed. Checked 2026-10-20 against original PMC full-text metadata, primary indexed JBC PDF header and PubMed 29284676. Title, six authors, DOI 10.1074/jbc.RA117.000422, J. Biol. Chem. 293(7), 2318-2329 agree. Papers-in-Press date 28 December 2017 is distinct from 16 February 2018 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this does not prove absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed."
       }
     }
   ],
@@ -303,8 +285,7 @@ export const REDOX_PH_RECORDS = {
         "The study reports typical assay uncertainty and independent-experiment summaries. These are source statements, not an independently replayed calibration or uncertainty budget; no absolute pH values or numerical effect sizes are newly extracted.",
         "The separate metabolite MS, purified Gpa2 unfolding and structural informatics are outside the admitted acquisition here. Total ATP abundance must not be treated as ATP production flux, free nucleotide potential or direct pump activity.",
         "The selected glucose/genotype comparison measures a regulated intracellular-pH response, not all ionic distributions, narrow-range invariance, enzyme/structural protection, equilibrium stability or pre-cellular physicochemical homeostasis.",
-        "Channels, metabolic cycles, redox control and bulk-water organization are separate original parent scopes, not jointly demonstrated necessary mediators in this yeast assay. Source-calibrated pH recovery does not identify their fluxes or a unique feedback architecture.",
-        "Catalogue classification, requirements and generic evidence placeholders are not independent empirical support. Original parent weights, directions/modes, necessity, carrier counts/minima and null saturation are not measured causal fractions, critical thresholds or a verified developmental sequence."
+        "Channels, metabolic cycles, redox control and bulk-water organization are separate scopes, not jointly demonstrated necessary mediators in this yeast assay. Source-calibrated pH recovery does not identify their fluxes or a unique feedback architecture."
       ],
       "contextIds": [
         "isom2018-yeast-ph-response-context"
@@ -393,8 +374,7 @@ export const REDOX_PH_RECORDS = {
         "The purified-sensor and living-cell contexts are linked measurements from one publication, not distinct publications or independent laboratories. The transfer of redox interpretation rests on the sensor mechanism and the stated cellular compartment boundary.",
         "No universal integrated redox network, cofactor recycling cycle, disease mechanism, proton homeostasis, historical primitive state or physical-instance threshold follows.",
         "The selected glutathione-coupled reporter experiment does not establish all NAD/FAD redox systems, a universal oxidative-stress defence circuit, integrated metabolic/bioenergetic control or guaranteed biochemical stability. Supplied cells and engineered sensor proteins are preparation inputs, not measured formation from folding, catalysis or metabolic cycles.",
-        "The separate modern light-driven phosphorylation assay does not supply a matched mediator for these intracellular redox trajectories. No universal necessary parent chain from folding, enzyme catalysis, metabolic cycles and ATP generation is inferred.",
-        "Catalogue classification, requirements and generic evidence placeholders are not independent empirical support. Original parent weights, directions/modes, necessity, carrier counts/minima and null saturation are not measured causal fractions, critical thresholds or a verified developmental sequence."
+        "The separate modern light-driven phosphorylation assay does not supply a matched mediator for these intracellular redox trajectories. No universal necessary chain from folding, enzyme catalysis, metabolic cycles and ATP generation is inferred."
       ],
       "contextIds": [
         "gutscher2008-grx-characterization-context",
@@ -601,10 +581,6 @@ export const REDOX_PH_RECORDS = {
         {
           "sourceId": "isom2018-yeast-glucose-ph",
           "locator": "J. Biol. Chem. 293(7), 2318-2329, Results: Intracellular acidification in response to glucose stress; Figure 2A-C; Sugar sensors and G proteins couple carbon stress to intracellular acidity; Figure 5A-C and caption"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/28"
         }
       ],
       "openObligations": [
@@ -616,15 +592,14 @@ export const REDOX_PH_RECORDS = {
         "The study reports typical assay uncertainty and independent-experiment summaries. These are source statements, not an independently replayed calibration or uncertainty budget; no absolute pH values or numerical effect sizes are newly extracted.",
         "The separate metabolite MS, purified Gpa2 unfolding and structural informatics are outside the admitted acquisition here. Total ATP abundance must not be treated as ATP production flux, free nucleotide potential or direct pump activity.",
         "The selected glucose/genotype comparison measures a regulated intracellular-pH response, not all ionic distributions, narrow-range invariance, enzyme/structural protection, equilibrium stability or pre-cellular physicochemical homeostasis.",
-        "Channels, metabolic cycles, redox control and bulk-water organization are separate original parent scopes, not jointly demonstrated necessary mediators in this yeast assay. Source-calibrated pH recovery does not identify their fluxes or a unique feedback architecture.",
-        "Catalogue classification, requirements and generic evidence placeholders are not independent empirical support. Original parent weights, directions/modes, necessity, carrier counts/minima and null saturation are not measured causal fractions, critical thresholds or a verified developmental sequence."
+        "Channels, metabolic cycles, redox control and bulk-water organization are separate scopes, not jointly demonstrated necessary mediators in this yeast assay. Source-calibrated pH recovery does not identify their fluxes or a unique feedback architecture."
       ]
     },
     {
       "id": "bio:redox-recovery-inference",
       "name": "Bounded glutathione-linked redox recovery interpretation",
       "kind": "hypothesis",
-      "status": "evidence-scoped",
+      "status": "hypothesis",
       "level": 3,
       "description": "Together the source characterization and intracellular trajectories support a bounded glutathione-linked oxidation/reduction interpretation for the sampled HeLa region. The data distinguish reversible sensor response and finite recovery without identifying a universal redox potential, cofactor-regeneration flux or specific feedback mechanism.",
       "claimIds": [
@@ -643,10 +618,6 @@ export const REDOX_PH_RECORDS = {
         {
           "sourceId": "gutscher2008-grx-rogfp2-redox",
           "locator": "Nature Methods 5(6), 553-559, Introduction: distinct redox couples and compartments; Discussion: glutathione-coupled versus direct H2O2 sensing; Methods: Additional methods pointer to unreviewed Supplementary Methods"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/25"
         }
       ],
       "openObligations": [
@@ -661,8 +632,7 @@ export const REDOX_PH_RECORDS = {
         "The purified-sensor and living-cell contexts are linked measurements from one publication, not distinct publications or independent laboratories. The transfer of redox interpretation rests on the sensor mechanism and the stated cellular compartment boundary.",
         "No universal integrated redox network, cofactor recycling cycle, disease mechanism, proton homeostasis, historical primitive state or physical-instance threshold follows.",
         "The selected glutathione-coupled reporter experiment does not establish all NAD/FAD redox systems, a universal oxidative-stress defence circuit, integrated metabolic/bioenergetic control or guaranteed biochemical stability. Supplied cells and engineered sensor proteins are preparation inputs, not measured formation from folding, catalysis or metabolic cycles.",
-        "The separate modern light-driven phosphorylation assay does not supply a matched mediator for these intracellular redox trajectories. No universal necessary parent chain from folding, enzyme catalysis, metabolic cycles and ATP generation is inferred.",
-        "Catalogue classification, requirements and generic evidence placeholders are not independent empirical support. Original parent weights, directions/modes, necessity, carrier counts/minima and null saturation are not measured causal fractions, critical thresholds or a verified developmental sequence."
+        "The separate modern light-driven phosphorylation assay does not supply a matched mediator for these intracellular redox trajectories. No universal necessary chain from folding, enzyme catalysis, metabolic cycles and ATP generation is inferred."
       ]
     }
   ],
@@ -737,7 +707,7 @@ export const REDOX_PH_RECORDS = {
       "target": "bio:redox-recovery-inference",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The intracellular reporter trajectories enters the joint redox interpretation only together with the other declared sensor/response context.",
+      "assertion": "The intracellular reporter trajectories enter the joint redox interpretation only together with the other declared sensor/response context.",
       "claimIds": [
         "M-bio-redox-recovery-inference",
         "C-bio-redox-recovery-inference"
@@ -760,7 +730,7 @@ export const REDOX_PH_RECORDS = {
       "readExtent": "selected-original-main-results-methods-and-figure-captions",
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/18469822/",
-      "correctionCheck": "Checked 2026-10-20 against original PDF header, primary Nature indexed publication record and PubMed 18469822. Title, eight authors, DOI 10.1038/nmeth.1212, Nature Methods 5(6),553-559 agree. Published online 11 May 2008 is distinct from June 2008 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this is not proof of absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed.",
+      "correctionCheck": "Checked 2026-10-20 against original PDF header, primary Nature indexed publication record and PubMed 18469822. Title, eight authors, DOI 10.1038/nmeth.1212, Nature Methods 5(6), 553-559 agree. Published online 11 May 2008 is distinct from June 2008 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this is not proof of absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed.",
       "id": "gutscher2008-grx-characterization-context",
       "system": "Purified engineered glutaredoxin/redox-sensitive GFP proteins in source redox-buffer comparisons",
       "preparation": "The source compared purified Grx1-roGFP2 with unfused and catalytic-control reporters using optical ratios during defined redox-buffer changes and glutathione-dependent oxidation controls.",
@@ -787,7 +757,7 @@ export const REDOX_PH_RECORDS = {
       "readExtent": "selected-original-main-results-methods-and-figure-captions",
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/18469822/",
-      "correctionCheck": "Checked 2026-10-20 against original PDF header, primary Nature indexed publication record and PubMed 18469822. Title, eight authors, DOI 10.1038/nmeth.1212, Nature Methods 5(6),553-559 agree. Published online 11 May 2008 is distinct from June 2008 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this is not proof of absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed.",
+      "correctionCheck": "Checked 2026-10-20 against original PDF header, primary Nature indexed publication record and PubMed 18469822. Title, eight authors, DOI 10.1038/nmeth.1212, Nature Methods 5(6), 553-559 agree. Published online 11 May 2008 is distinct from June 2008 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this is not proof of absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed.",
       "id": "gutscher2008-hela-redox-response-context",
       "system": "Prepared HeLa cultures expressing Grx1-roGFP2 or unfused reporter, sampled intracellular region",
       "preparation": "The source followed ratiometric fluorescence in Grx1-roGFP2-expressing HeLa cells during an oxidizing challenge, an externally imposed reducing reversal, and separate smaller-challenge time courses; unfused reporter behavior was compared.",
@@ -816,7 +786,7 @@ export const REDOX_PH_RECORDS = {
       "readExtent": "selected-original-main-results-methods-and-figure-captions",
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://pubmed.ncbi.nlm.nih.gov/29284676/",
-      "correctionCheck": "Checked 2026-10-20 against original PMC full-text metadata, primary indexed JBC PDF header and PubMed 29284676. Title, six authors, DOI 10.1074/jbc.RA117.000422, J. Biol. Chem. 293(7),2318-2329 agree. Papers-in-Press date 28 December 2017 is distinct from 16 February 2018 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this does not prove absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed.",
+      "correctionCheck": "Checked 2026-10-20 against original PMC full-text metadata, primary indexed JBC PDF header and PubMed 29284676. Title, six authors, DOI 10.1074/jbc.RA117.000422, J. Biol. Chem. 293(7), 2318-2329 agree. Papers-in-Press date 28 December 2017 is distinct from 16 February 2018 issue. Limited exact-DOI/title correction/retraction searches surfaced no explicit correction or retraction; this does not prove absence or exhaustive later-literature coverage. No DOI-registry relation audit is claimed.",
       "id": "isom2018-yeast-ph-response-context",
       "system": "Saccharomyces cerevisiae BY4741 and selected sugar-signaling derivative strains expressing pHluorin",
       "preparation": "The source measured standard-curve-converted pHluorin ratios after glucose removal and readdition, comparing yeast wild type with sugar-sensing deletions and selected rescue constructs over time and at declared response times.",

@@ -37,12 +37,12 @@ test("entanglement retains its partition, mixed-state counterexample and reduced
   ]);
 });
 
-test("the entanglement card excludes unsupported firstness, particle minima and necessary field creation", () => {
+test("entanglement excludes unsupported firstness, particle populations and necessary field creation", () => {
   rejects([
-    ["display order becomes physical firstness", (d) => dropLimit(d, "D-phys-entanglement", "SOMA pattern/phase")],
-    ["two subsystem factors become two elementary particles", (d) => dropLimit(d, "D-phys-entanglement", "N_min=N_crit=2")],
+    ["entanglement acquires a first nonlocal stage or measured QFT creation", (d) => dropLimit(d, "D-phys-entanglement", "No first nonlocal organizational stage")],
+    ["two subsystem factors become a universal particle population", (d) => dropLimit(d, "D-phys-entanglement", "prerequisite is a specified subsystem partition")],
     ["unqualified vacuum coherence becomes an entanglement criterion", (d) => dropLimit(d, "D-phys-entanglement", "Unspecified vacuum-linked")],
-    ["formal relation becomes a necessary weighted parent", (d) => {
+    ["formal relation becomes a necessary weighted dependency", (d) => {
       const relation = d.graph.relations.find((r) => r.id === "physics:state-entanglement");
       relation.necessity = "necessary";
       relation.weight = 1;

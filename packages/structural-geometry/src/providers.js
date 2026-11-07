@@ -2,11 +2,14 @@ import { canonicalClone, canonicalize, deepFreeze, hashCanonical } from "@onto2d
 import { EngineError } from "@onto2d/engine";
 import { modelPackFilePaths, verifyModelPack } from "@onto2d/model-pack";
 import { analyzeStructuralGeometry, projectStructuralGeometry } from "./index.js";
+import { SOURCE_PARENT_DIRECTED_POLICY } from "./policies.js";
 import { analyzeStructuralMetricExperiment } from "./experiments.js";
 import { TYPED_SELECTION_POLICY } from "./experiment-policies.js";
 import { metric, normalize, select } from "./experiment-core.js";
 import { encodedFraction } from "./rational.js";
 import { packFromEngineModel } from "./engine-model.js";
+
+const SOURCE_PARENT = Object.freeze({ projectionPolicyId: SOURCE_PARENT_DIRECTED_POLICY.id });
 
 export const STRUCTURAL_PROVIDER_DESCRIPTOR_SCHEMA = "https://onto2d.dev/schemas/v1/structural-provider-descriptor.schema.json";
 export const STRUCTURAL_METRIC_CONTEXT_SCHEMA = "https://onto2d.dev/schemas/v1/structural-metric-context.schema.json";
@@ -80,7 +83,8 @@ function normalizeInput(input) {
 
 export function createStructuralMetricContext(pack) {
   const source = verifyModelPack(pack);
-  const projection = projectStructuralGeometry(source);
+  // Providers declare the source-parent representation; other relation layers fail explicitly.
+  const projection = projectStructuralGeometry(source, SOURCE_PARENT);
   const body = { schemaVersion: "1", model: projection.model, sourceProjectionHash: projection.projectionHash,
     projectionPolicyHash: projection.policyHash, normalizationContext: "full-source-projection",
     dictionaryHash: hash("dictionaries", source.files[modelPackFilePaths().dictionaries]) };
@@ -195,7 +199,7 @@ export function analyzeStructuralGeometryWithProvider(pack, input) {
   } else if (selection?.kind === "channel") {
     viewArtifact = buildFromContext(context.projection, context, normalizeInput({ providerId: "typed-channel-v1", parameters: { field: selection.field, values: [selection.value] } }));
   }
-  const legacyArtifact = request.analysis === "structural-geometry" ? analyzeStructuralGeometry(source)
+  const legacyArtifact = request.analysis === "structural-geometry" ? analyzeStructuralGeometry(source, SOURCE_PARENT)
     : analyzeStructuralMetricExperiment(source, { metricPolicyId: request.metricProviderId, selection });
   return seal("analysis", { schemaVersion: "1", analysis: { id: "structural-provider-analysis", version: "1" },
     request, context: context.binding, metricArtifact, viewArtifact, legacyArtifact });

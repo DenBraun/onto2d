@@ -319,7 +319,8 @@ const contracts = {
           "Author June 25 2018 PDF, pages 6-7 and 10, Sections I.C-II.D, Equations 34-43; pages 16-17, Sections III.C-D, Equations 89-98: expansion, weak rates and freeze-out",
           "Author June 25 2018 PDF, pages 24-29, Sections IV.A-C and V.B, Equations 124 and 128-142, Table III and Figure 22: network, deuterium bottleneck, mass-seven flow and decay bookkeeping",
           "Author June 25 2018 PDF, pages 33-35, Sections V.E-F, Table VIII and Figure 26: source-specific uncertainty, predicted and adopted observed abundances",
-          "Author June 25 2018 PDF, page 52, Appendix C.2 and Appendix D, Table X: atomic-mass conversion and adopted cosmological and neutron-lifetime inputs"
+          "Author June 25 2018 PDF, page 52, Appendix C.2 and Appendix D, Table X: atomic-mass conversion and adopted cosmological and neutron-lifetime inputs",
+          "arXiv 1801.08023v2 (dated June 28, 2018), PDF page 24, Section IV.A, Equations 123-127: Maxwell-Boltzmann thermonuclear rate, Coulomb-plus-centrifugal barrier penetration, Sommerfeld parameter and astrophysical S-factor"
         ],
         "limit": "Selected model and abundance passages in the 56-page author manuscript dated 25 June 2018, not all weak-rate corrections or the complete PRIMAT implementation. Its adopted D/H and helium observations reuse Cooke 2018 and Aver 2015; they are not independent observations made by this calculation. Historical inputs and predictions are retained, not presented as a current global fit."
       }
@@ -420,7 +421,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "This is a specified reaction-network framework, not a locally integrated PRIMAT solution or direct observation of the early universe. Freeze-out is a competition of rates and expansion, not one universal sharp temperature or a minimum of two catalogue carriers.",
+        "This is a specified reaction-network framework, not a locally integrated PRIMAT solution or direct observation of the early universe. Freeze-out is a competition of rates and expansion, not one universal sharp temperature.",
         "The network includes unstable intermediates and destruction as well as formation. An eventual stable isotope abundance does not imply every intermediate persists. No elementary-particle permanence or universal firstness is inferred.",
         "Y_i is a number abundance per baryon, while Y_P denotes a helium mass fraction in the cited inference. D/H and Li/H are number ratios to hydrogen; these quantities cannot be interchanged."
       ]
@@ -448,13 +449,13 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "A dominant cosmological recombination epoch is not a universal prohibition of any earlier bound-electron population, nor a sharp date at which all atoms become stable. Ionization and recombination depend on density, temperature, radiation and rates.",
-        "No numerical recombination history, complete atomic-shell construction, molecular chemistry or universal SOMA order is established by this distinction."
+        "No numerical recombination history, complete atomic-shell construction or molecular chemistry is established by this distinction."
       ]
     },
     {
       "id": "D-phys-bbn-source-scope",
       "kind": "review-finding",
-      "statement": "Source card 2.0 is represented by a specified expanding nuclear network, selected absorption and helium-emission analyses, and conditional abundance comparisons. Spectra are not direct recordings of nuclear formation. Astrophysical primordial-abundance inferences depend on line response, chemical evolution and selection; comparison with BBN predictions additionally requires a supplied cosmological background and weak/nuclear inputs. The light-element comparison must retain the lithium discrepancy rather than asserting universal concordance.",
+      "statement": "Primordial light-nucleus nucleosynthesis is represented by a specified expanding nuclear network, selected absorption and helium-emission analyses, and conditional abundance comparisons. Spectra are not direct recordings of nuclear formation. Astrophysical primordial-abundance inferences depend on line response, chemical evolution and selection; comparison with BBN predictions additionally requires a supplied cosmological background and weak/nuclear inputs. The light-element comparison must retain the lithium discrepancy rather than asserting universal concordance.",
       "scope": "Primordial nucleosynthesis source boundary within the selected source reading and declared interpretation limits.",
       "status": "definition",
       "citations": [
@@ -481,19 +482,12 @@ const contracts = {
           "locator": "Author v1, printed pages 15-17, Sections 6-7, Equation 6.1, Figure 6 and Tables 4-5: zero-metallicity regression and emissivity/scaling limits",
           "role": "supports",
           "note": "Supports only this specified historical model, preparation or inference; no independent experimental replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original source card /0; parent metadata and evidence placeholders are author proposals, not independent scientific evidence."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original parents 1.7 (confinement) and 1.8 (electroweak symmetry breaking) are not two measured BBN inputs with equal causal strengths. A nuclear description and weak rates are model inputs here; neither parent label derives the reaction network, thermal history, observed abundances or its necessary arising chain.",
-        "The original weights 0.5/0.5, N_min=N_crit=2, carrier classes, direction/mode and dependency codes, phase 0, process/type-role 0 and requirements categories have no admitted physical threshold, estimator or causal authority. Level 2 is a display choice.",
-        "The supplied theoretical and empirical placeholders identify no publication. The selected named papers replace their generic support only within the recorded scopes. Deuterium and helium findings do not independently confirm every isotope, all thermal histories or a unique origin model.",
+        "Level 2 is a display choice.",
+        "The selected named papers provide support only within the recorded scopes. Deuterium and helium findings do not independently confirm every isotope, all thermal histories or a unique origin model.",
         "Helium-3 is a network product in this model, not a separately admitted pristine-abundance measurement. Mass-seven synthesis includes beryllium-7 and later lithium; the reviewed lithium mismatch remains unresolved. No quantitative chemical enrichment model, lithium-depletion mechanism, nonstandard BBN exclusion or universal stable-matter hierarchy is admitted."
       ]
     },
@@ -817,7 +811,7 @@ const contracts = {
     {
       "id": "M-phys-cooke2018-absorption-readout",
       "kind": "method",
-      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting Selected neutral-deuterium absorption profiles within the selected source reading and declared interpretation limits.",
+      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting the selected neutral-deuterium absorption profiles within the selected source reading and declared interpretation limits.",
       "scope": "Selected neutral-deuterium absorption profiles within the selected source reading and declared interpretation limits.",
       "status": "method-contract",
       "citations": [
@@ -845,7 +839,7 @@ const contracts = {
     {
       "id": "M-phys-cooke2018-deuterium-column",
       "kind": "method",
-      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting Model-conditioned deuterium column ratio within the selected source reading and declared interpretation limits.",
+      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting the model-conditioned deuterium column ratio within the selected source reading and declared interpretation limits.",
       "scope": "Model-conditioned deuterium column ratio within the selected source reading and declared interpretation limits.",
       "status": "method-contract",
       "citations": [
@@ -873,7 +867,7 @@ const contracts = {
     {
       "id": "M-phys-cooke2018-primordial-deuterium",
       "kind": "method",
-      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting Seven-system primordial deuterium estimate within the selected source reading and declared interpretation limits.",
+      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting the seven-system primordial deuterium estimate within the selected source reading and declared interpretation limits.",
       "scope": "Seven-system primordial deuterium estimate within the selected source reading and declared interpretation limits.",
       "status": "method-contract",
       "citations": [
@@ -895,7 +889,7 @@ const contracts = {
     {
       "id": "M-phys-aver2015-primordial-helium",
       "kind": "method",
-      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting Selected zero-metallicity helium estimate within the selected source reading and declared interpretation limits.",
+      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting the selected zero-metallicity helium estimate within the selected source reading and declared interpretation limits.",
       "scope": "Selected zero-metallicity helium estimate within the selected source reading and declared interpretation limits.",
       "status": "method-contract",
       "citations": [
@@ -929,7 +923,7 @@ const contracts = {
     {
       "id": "M-phys-bbn2018-abundance-compatibility",
       "kind": "method",
-      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting Historical conditional light-element comparison within the selected source reading and declared interpretation limits.",
+      "statement": "Preserve the specified input, preparation, response and shared-data boundaries when interpreting the historical conditional light-element comparison within the selected source reading and declared interpretation limits.",
       "scope": "Historical conditional light-element comparison within the selected source reading and declared interpretation limits.",
       "status": "method-contract",
       "citations": [
@@ -991,7 +985,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "This is a specified reaction-network framework, not a locally integrated PRIMAT solution or direct observation of the early universe. Freeze-out is a competition of rates and expansion, not one universal sharp temperature or a minimum of two catalogue carriers.",
+        "This is a specified reaction-network framework, not a locally integrated PRIMAT solution or direct observation of the early universe. Freeze-out is a competition of rates and expansion, not one universal sharp temperature.",
         "The network includes unstable intermediates and destruction as well as formation. An eventual stable isotope abundance does not imply every intermediate persists. No elementary-particle permanence or universal firstness is inferred.",
         "Y_i is a number abundance per baryon, while Y_P denotes a helium mass fraction in the cited inference. D/H and Li/H are number ratios to hydrogen; these quantities cannot be interchanged."
       ]
@@ -1018,14 +1012,14 @@ const contracts = {
       ],
       "openObligations": [
         "A dominant cosmological recombination epoch is not a universal prohibition of any earlier bound-electron population, nor a sharp date at which all atoms become stable. Ionization and recombination depend on density, temperature, radiation and rates.",
-        "No numerical recombination history, complete atomic-shell construction, molecular chemistry or universal SOMA order is established by this distinction."
+        "No numerical recombination history, complete atomic-shell construction or molecular chemistry is established by this distinction."
       ]
     },
     {
       "id": "phys:bbn-source-scope",
       "name": "Primordial nucleosynthesis source boundary",
       "kind": "definition",
-      "description": "Source card 2.0 is represented by a specified expanding nuclear network, selected absorption and helium-emission analyses, and conditional abundance comparisons. Spectra are not direct recordings of nuclear formation. Astrophysical primordial-abundance inferences depend on line response, chemical evolution and selection; comparison with BBN predictions additionally requires a supplied cosmological background and weak/nuclear inputs. The light-element comparison must retain the lithium discrepancy rather than asserting universal concordance.",
+      "description": "Primordial light-nucleus nucleosynthesis is represented by a specified expanding nuclear network, selected absorption and helium-emission analyses, and conditional abundance comparisons. Spectra are not direct recordings of nuclear formation. Astrophysical primordial-abundance inferences depend on line response, chemical evolution and selection; comparison with BBN predictions additionally requires a supplied cosmological background and weak/nuclear inputs. The light-element comparison must retain the lithium discrepancy rather than asserting universal concordance.",
       "claimIds": [
         "D-phys-bbn-source-scope"
       ],
@@ -1047,16 +1041,11 @@ const contracts = {
         {
           "sourceId": "aver2015-helium",
           "locator": "Author v1, printed pages 15-17, Sections 6-7, Equation 6.1, Figure 6 and Tables 4-5: zero-metallicity regression and emissivity/scaling limits"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original parents 1.7 (confinement) and 1.8 (electroweak symmetry breaking) are not two measured BBN inputs with equal causal strengths. A nuclear description and weak rates are model inputs here; neither parent label derives the reaction network, thermal history, observed abundances or its necessary arising chain.",
-        "The original weights 0.5/0.5, N_min=N_crit=2, carrier classes, direction/mode and dependency codes, phase 0, process/type-role 0 and requirements categories have no admitted physical threshold, estimator or causal authority. Level 2 is a display choice.",
-        "The supplied theoretical and empirical placeholders identify no publication. The selected named papers replace their generic support only within the recorded scopes. Deuterium and helium findings do not independently confirm every isotope, all thermal histories or a unique origin model.",
+        "Level 2 is a display choice.",
+        "The selected named papers provide support only within the recorded scopes. Deuterium and helium findings do not independently confirm every isotope, all thermal histories or a unique origin model.",
         "Helium-3 is a network product in this model, not a separately admitted pristine-abundance measurement. Mass-seven synthesis includes beryllium-7 and later lithium; the reviewed lithium mismatch remains unresolved. No quantitative chemical enrichment model, lithium-depletion mechanism, nonstandard BBN exclusion or universal stable-matter hierarchy is admitted."
       ]
     },
@@ -1485,7 +1474,7 @@ const contracts = {
       "target": "phys:bbn-source-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This definition restricts the scope of source card 2.0; it is not an observed causal formation step.",
+      "assertion": "This definition restricts the primordial nucleosynthesis scope; it is not an observed causal formation step.",
       "claimIds": [
         "D-phys-bbn-source-scope"
       ]
@@ -1496,7 +1485,7 @@ const contracts = {
       "target": "phys:bbn-source-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "This definition restricts the scope of source card 2.0; it is not an observed causal formation step.",
+      "assertion": "This definition restricts the primordial nucleosynthesis scope; it is not an observed causal formation step.",
       "claimIds": [
         "D-phys-bbn-source-scope"
       ]

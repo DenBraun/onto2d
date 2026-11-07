@@ -4,19 +4,18 @@
   "sourceHashes": {
     "controls.json": "64d3f3376c92bcae0d4f0678321ee0ca107d14711ea05a11e4d87d3517cb7102",
     "PROTOCOL.md": "1a938a75cf6799911f74e305de4d1a06794f979e19aaf2997d94113239681a05",
-    "../signatures/reference.py": "d8598f73746db522601974a7dfb23eddbf76e258e65bdcad977c4712dc9fd81f",
-    "../signatures/build.mjs": "205d72a51e10349bf0972fc9c8b088133b91223488e1df36366e8967788e21f3",
-    "../signatures/controls.json": "d9b1933ce711ff25eb0294c0c6271c72904a20015e1974ca3ff5b18716f1a655",
-    "../signatures/PROTOCOL.md": "5fa792febf72489cc7a0334ad43d40d506d0354601fb65d140873986ba0f992f",
-    "../signatures/../responses/reference.py": "c644bb8509af8aca92caa54c3e9b1c21b3e3c4b83ab7f150cef2dc60e046b9d3",
-    "../signatures/../responses/build.mjs": "493401fc13638294128c1937260553b96dd66347d2802b2ac27cdfe5037b7283",
-    "../signatures/../responses/controls.json": "6806c60b1cc305a0b59f95a7c1fb0c200584a96503d4c7b7ee733f6dbbf021af",
-    "../signatures/../responses/PROTOCOL.md": "30298b70229001dbdb5fa5a339c10bffc4c6033546b1711c9fefa00479278d87",
-    "../signatures/../responses/../canonical/reference.py": "0c2471a756bc606580db9be70b05046a6fbf62b5817cc137f93af433757a7cce",
-    "../signatures/../responses/../typed/reference.py": "e3ef0ac2137c428ded9f316ce50218abfda5bf9ca5f77b230ffb5c672b7506f2",
-    "../signatures/../responses/../topology/reference.py": "98946a8296c754b425e865b0d56febcb59bc23ce98fe304116cc722dce410b10",
-    "../signatures/../responses/../invariance/build.mjs": "bcad77f9ecc16fde283572942b7b227f7e7f132050e3f7edab0dcca86382372d",
-    "../signatures/../responses/../../../models/causal-emergence/releases/2026.08.15/bundle.json": "8aaf04c157d4b303f499d35516611fc9aa69aa8c9829621ca0dbb93de36e0c29"
+    "../signatures/reference.py": "ccc72e5d7763594fca39a284eb8ab9ebf3570f3974efbfb01d79945008eda66c",
+    "../signatures/build.mjs": "ab30fce5a373629f9e3de4d3b77187fa6f14a895aba3eeb9408366085f7a19eb",
+    "../signatures/controls.json": "c6ac33c8cfcc3cc4366c265e382b1d3219224b7e289b3a52ad6c127b348cd949",
+    "../signatures/PROTOCOL.md": "73582c3fb3473c501545d59fbe84a365bcd863d2e1b1d30467cb4015ab09cc2f",
+    "../signatures/../responses/reference.py": "1c7ac6474639321fb163fb26b130e7b0eb07a475fe4ef7faf65ef78e0bd9c500",
+    "../signatures/../responses/build.mjs": "afb1ea73fb0b8ae5b6b5d31f922f2889527ef4c2d7acbb1cf0a51c57a9faf376",
+    "../signatures/../responses/controls.json": "c565321f4f196d45f96ea616f99acc7c7fe9250136d18bcee6e72ec21351d4de",
+    "../signatures/../responses/PROTOCOL.md": "eb1e001cf602058da1108ebd5cb5b2d1f22483e0811a07313401dd56de86b082",
+    "../signatures/../responses/../canonical/reference.py": "7adb732f33c7d5f804a5b4e8fd2d9c3a61221e369d1af2a5f43b8c916fc3629b",
+    "../signatures/../responses/../typed/reference.py": "050df2a38b8714017e0f62e6a4183bff06edb61a1854fb0c31fc7f65ff257769",
+    "../signatures/../responses/../topology/reference.py": "c8c61ca52f0d55d6c6ba2af1d1f2249b01333bb9c35241fc1e069ad80b53c210",
+    "../signatures/../responses/../invariance/build.mjs": "10eab8f6b7ec2089ee4cbcb2c24476d9816262c55f375d63fd31d6487df0fea5"
   },
   "endpoints": [
     {

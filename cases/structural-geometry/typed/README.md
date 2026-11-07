@@ -4,13 +4,11 @@ SG2-013 implements the two frozen typed-regime observations and explicit
 vocabulary alignment. See the [contract](../../../docs/structural-geometry/OBSERVATIONS.md#typed-directed-observations-and-vocabulary-alignment)
 and the [declared control protocol](PROTOCOL.md).
 
-[controls.json](controls.json) freezes 25 synthetic graphs, the six-node Causal
-scope, five partial-bijection declarations and eight approval/coverage controls.
-Synthetic graphs test each field, cross-field correlations, set ordering and
-empty versus missing values, source relabeling and metadata/dictionary changes,
-cycles, isolates and complete six-node graphs. Causal Emergence retains the
-existing [source lock](../causal-emergence/source-lock.json); all 11 scoped edges
-have all five fields. No parent relationship is upgraded to reviewed causality.
+[controls.json](controls.json) freezes 25 synthetic graphs, five
+partial-bijection declarations and eight approval/coverage controls. The graphs
+test each field, cross-field correlations, set ordering and empty versus missing
+values, source relabeling and metadata/dictionary changes, cycles, isolates and
+complete six-node graphs. The suite contains synthetic controls only.
 
 [reference.py](reference.py) uses independent Python node permutations. It
 checks every original/remapped directed witness and the joint five-field graph
@@ -19,9 +17,10 @@ graphs and 145 typed isomorphism classes. [census.mjs](census.mjs) checks both
 directions of the class mapping and all 720 relabelings of the six-node control.
 The reused [untyped reference](../canonical/reference.py) supplies independent
 untyped orbits; no production matching or mapping implementation is imported
-by Python. [reference.json](reference.json) pins expectations and source hashes.
+by Python. [reference.json](reference.json) pins expectations and the hashes of
+the controls, protocol and untyped reference.
 
-[suite.json](suite.json) binds 26 observation artifacts (24 measured, two
+[suite.json](suite.json) binds 25 observation artifacts (23 measured, two
 incomplete), five mapping artifacts and eight alignments. Four alignments are
 compatible and four remain unresolved. Equal local code graphs across different
 sources do not pass without an explicitly approved mapping. The renumbering
@@ -38,8 +37,8 @@ npm run structural-geometry:typed:check
 npm run structural-geometry:typed:report
 ```
 
-The focused check verifies pinned legacy compatibility, independent expectations,
-all case bytes, Python witness/translation replay and 37 API/schema/browser tests.
+The focused check verifies independent expectations, all case bytes, Python
+witness/translation replay and 37 API/schema/browser tests.
 `npm test` also discovers three reference/census tests; `npm run build` includes
 the focused gate. A server is unnecessary for this computational stage.
 

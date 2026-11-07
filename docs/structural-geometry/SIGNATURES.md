@@ -251,12 +251,12 @@ kinds. Source bindings and provenance hashes never enter observable coordinates.
 
 ### Computational acceptance
 
-Thirteen frozen artifacts cover all three regimes, a Causal Emergence scope,
-reciprocal/mixed graphs, missing fields, typed sets, boundaries, isolates, opaque
-IDs, a singleton, the complete six-node typed graph and the 64-node/256-edge
-topology boundary. Twelve are complete passes; missing typed evidence is the
-one indeterminate case. Their 52 probe comparisons retain the corresponding
-48 passed and four indeterminate outcomes.
+Twelve frozen artifacts cover all three regimes, reciprocal/mixed graphs,
+missing fields, typed sets, boundaries, isolates, opaque IDs, a singleton, the
+complete six-node typed graph and the 64-node/256-edge topology boundary.
+Eleven are complete passes; missing typed evidence is the one indeterminate
+case. Their 48 probe comparisons retain the corresponding 44 passed and four
+indeterminate outcomes.
 
 The independent Python reference constructs transformations from source records,
 enumerates all bijections for untyped/typed graph orbits and uses Boolean closure
@@ -421,7 +421,7 @@ engine registration use the same public implementation.
 
 ### Computational controls
 
-The [16 controls](../../cases/structural-geometry/responses/README.md) cover 158
+The [15 controls](../../cases/structural-geometry/responses/README.md) cover 154
 targets, including complete effects, missingness, absent targets, rejection,
 scope boundaries and maximum work. Independent source-based Python calculations
 agree on all 207 small-graph requests / 1,438 targets. Transport tests cover
@@ -572,8 +572,8 @@ Overflow throws without a partial artifact.
 
 ### What the controls establish
 
-The [27 controls](../../cases/structural-geometry/signatures/README.md) produce
-12 complete signatures and 15 explicitly indeterminate results. All nine frozen
+The [26 controls](../../cases/structural-geometry/signatures/README.md) produce
+12 complete signatures and 14 explicitly indeterminate results. All nine frozen
 contrasts agree with source-based independent expectations:
 
 - Subdividing the feedback edge changes complete signatures in all three regimes.
@@ -835,8 +835,8 @@ The bounded common population has at most 64 nodes and 64 edges. Forman retains
 the existing full-node population and optional typed edge selection, including
 full-source weight normalization/audit. It does not gain a new induced-scope
 adapter here. Consequently a Forman selection can combine with another layer
-only when their actual populations coincide. Existing induced real-source
-Ollivier/flow controls can disable Forman explicitly. This boundary prevents
+only when their actual populations coincide. Induced Ollivier/flow controls
+can disable Forman explicitly. This boundary prevents
 combining curvature from a full model with a flow on a different fragment.
 
 When all layers are disabled, the source population remains bound and the whole
@@ -930,8 +930,8 @@ There are three ordered mandatory families: `forman-curvature-v1`,
 Feature value hashes also identify measured partial descriptors; their presence
 does not certify completeness. A whole value and its profile-bound fingerprint
 exist only when all three families are observed. Otherwise whole value/hash are
-null and the summary lists partial and unavailable families. Four of the 25
-controls are complete under this policy; 21 retain explicit indeterminate states.
+null and the summary lists partial and unavailable families. Four of the 23
+controls are complete under this policy; 19 retain explicit indeterminate states.
 
 Profiles bind provider/selection/numeric/transport policies and flow settings.
 Explicit unit lengths normalize to the same initialization kind as omitted unit
@@ -973,7 +973,7 @@ partial-success artifact after an error.
 Independent source measurements use pinned NetworkX 3.2.1 network simplex and
 Dijkstra plus the separate Decimal/Fraction Forman reference. A second, standard
 library Python reference independently derives distributions, interval feasibility,
-degree roles, horizon coverage and backward threshold runs. The 25 source controls,
+degree roles, horizon coverage and backward threshold runs. The 23 source controls,
 781 interval profiles, 820 threshold traces and 40 coverage adjudications agree.
-All 25 source/request transports preserve values, hashes, coverage and events.
+All 23 source/request transports preserve values, hashes, coverage and events.
 These are bounded computational checks, not empirical validation of geometry.

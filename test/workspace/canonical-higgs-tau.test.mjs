@@ -44,7 +44,7 @@ test("CMS tau acquisition, response and dependent displays keep their scientific
     ["missing neutrinos are not reconstructed tracks", (d) => removeLimit(d, "tau-pair-readout", "Neutrinos are unobserved", "D")],
     ["one-dimensional exception remains", (d) => removeLimit(d, "cms2016-tau-selected-distributions", "one-dimensional")],
     ["calibration controls can overlap selection", (d) => removeLimit(d, "cms2016-tau-response-context", "Less than half", "M")],
-    ["Run1 combination is not the 2016-only result", (d) => removeLimit(d, "cms2016-tau-rate-excess", "Run1-plus-2016")],
+    ["Run1 combination is not the 2016-only result", (d) => removeLimit(d, "cms2016-tau-rate-excess", "Run 1-plus-2016")],
     ["fixed mass is an adopted input", (d) => removeLimit(d, "cms2016-tau-rate-excess", "125.09")],
     ["local significance is publication-supported", (d) => { claim(d, "cms2016-tau-rate-excess").status = "analytically-checked"; }],
     ["sensitive-bin display is not a second likelihood", (d) => removeLimit(d, "cms2016-tau-display-summary", "second likelihood")],

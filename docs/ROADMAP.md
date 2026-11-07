@@ -23,29 +23,22 @@ model versions do not certify scientific validity or announce a software release
 ## Active sequence: source data
 
 The central priority is the scientific content of `references/` and its derived
-graph. All 249 original source cards now have scoped decisions; the
-[pending list](../references/canonical/pending-review.json) is empty. This is a
-source-review census, not a percentage of scientifically supported claims or
-independently reproduced experiments. Supported, qualified, excluded and explicitly
-unresolved assertions retain their evidence and open obligations.
-All 35 Level-1 source cards have scoped dispositions. Their unsupported physical
-assertions remain excluded or explicitly limited; this is not independent
-validation of the physical branch.
+graph. Supported, qualified, excluded and explicitly unresolved assertions
+retain their evidence and open obligations. Unsupported physical assertions
+remain excluded or explicitly limited; this is not independent validation of
+the physical branch.
 
-All 23 Level-2 cards have scoped dispositions in the
-[Level-2 review](../references/canonical/LEVEL_2_REVIEW.md): primordial nuclear
+The Level-2 scope covers primordial nuclear
 synthesis, atomic and molecular models, finite material response and optical
 channels. Each retains its own system, observable, sources and interpretation
 limits. Unsupported universal parent chains, weights and minima remain excluded;
 completion of source disposition is not independent experimental validation.
-All 50 Level-3 cards have scoped dispositions in the
-[Level-3 source review](../references/canonical/LEVEL_3_REVIEW.md), including
-genetic information, prepared reaction networks/cycles, condensate and lipid
-assays, benign-phage observations and existing retinal photochemistry.
-No Level-3 cards remain pending. Maturation, full infection, complete entry,
+The Level-3 scope includes genetic information, prepared reaction
+networks/cycles, condensate and lipid assays, benign-phage observations and
+existing retinal photochemistry. Maturation, full infection, complete entry,
 host-expression reprogramming, biochemical electron-capture effects and primitive
 chemiosmotic coupling retain explicit unresolved hypotheses. These are scientific
-limits, not unfinished source tasks. Biochemical preparations and interpretations
+limits. Biochemical preparations and interpretations
 have a separate evidence ledger; completed disposition does not mean that all
 original assertions are supported or the experiments independently reproduced.
 
@@ -69,32 +62,27 @@ prediction and failure criterion before reading new source outcomes.
 [CETCH issue #32](https://github.com/DenBraun/onto2d/issues/32) covers deeper main/supplement
 failure analysis and a later evidence-backed case page.
 
-The current graph contains 2537 records, 3488 connections, 2720 claims and 707 sources.
-All 33 [Level-4 cellular cards](../references/canonical/LEVEL_4_REVIEW.md) have
-scoped source dispositions, with 70 study contexts from 44 publications.
+The current graph contains 259 arisings and 1085 causes in its outer layer, 441 of the causes supported by primary studies. Its technical layer holds 2537 records and 3683 connections. Overall the graph holds 3355 claims and 865 sources.
+The Level-4 cellular scope has 70 study contexts from 44 publications.
 Model-inferred flux, measured response,
 cell-fate interpretation and cross-system mechanism transfer remain distinct.
-All 34 [Level-5 organismal cards](../references/canonical/LEVEL_5_REVIEW.md) have
-scoped dispositions: 384 entities, 378 claims, 499 relations, 129 study contexts
-and 26 comparisons, using 51 main publications and two correction notices.
+The Level-5 organismal scope has 384 entities, 378 claims, 499 relations,
+129 study contexts and 26 comparisons, using 51 main publications and two
+correction notices.
 Morphogenesis, matrix/niche support, organ physiology, metabolic supply, tissue
 inflammation, clinical outcomes and retinal computation retain their actual
 preparations. Structural markers differ from mature function, finite persistence
 from hysteresis, and neural activity from measured hormonal/organ output.
 Contrary and partial-rescue outcomes constrain universal dependencies. Immune
 set points, conserved allocation optima and global self-maintaining inflammatory
-regimes remain unestablished; completing card disposition does not establish them.
+regimes remain unestablished; completing source disposition does not establish them.
 Independent scientific review and unresolved mechanisms remain open.
-All 25 [Level-6 neural-system cards](../references/canonical/LEVEL_6_REVIEW.md)
-have explicit scope decisions for 237 assertions and 99 ordered parent occurrences.
-Definitions and descriptive evidence links preserve observations, nulls and
+In Level 6, definitions and descriptive evidence links preserve observations, nulls and
 hypotheses without admitting universal neural dependencies. Twelve additional
 preparation/readout contexts and five comparisons distinguish pain, motor, hormone,
 immune, subjective and airway responses. The source-specific neural obligations
-remain scientific questions, rather than undisposed catalogue cards.
-All 25 [Level-7 social-system cards](../references/canonical/LEVEL_7_REVIEW.md)
-have 244 assertion decisions, 131 ordered parent decisions and 75 original
-bibliography dispositions. Thirty-six study/model contexts and seventeen comparisons
+remain scientific questions.
+In Level 7, thirty-six study/model contexts and seventeen comparisons
 separate animal interactions, human tasks, population associations, cultural models
 and constitutive documents. No universal social threshold, necessary weighted chain
 or society-wide neural mechanism is admitted.
@@ -156,42 +144,48 @@ specified computational result or testable hypothesis. Publications, reading
 limits and preparation boundaries
 belong to the current claims.
 
-1. Complete physical field definitions, primary evidence and the unreviewed
-   dependencies of the open source cards. The quantum-field framework,
+1. Complete physical field definitions, primary evidence and unreviewed
+   dependencies. The quantum-field framework,
    free scalar construction and Standard Model/QCD field definitions have scoped
    sources. Primary electron spectra, TASSO jet shapes and MuLan lifetime
    measurements have explicit contexts and conditional interpretations.
-   Framework card 1.0 is qualified to these declared models; the Level-0
+   The framework is qualified to these declared models; the Level-0
    bridge remains explicitly unresolved and supplies no necessary-parent
-   relation. Vacuum card 1.27 is qualified to a specified state, its
+   relation. The vacuum configuration is qualified to a specified state, its
    correlations and conditional response evidence. A universal background
    substance, absolute energy measurement and maintenance cause are excluded.
    Their original weights, minima and SOMA phase ordering are not established.
-   Card 1.26 has explicit free-field time evolution with a separate finite
-   oscillator witness; scale changes and numerical sampling are distinct.
-   Card 1.29 defines a chosen gauge/matter/Higgs decomposition with explicit
-   chiral representations, hypercharge normalization and cross-sector coupling.
+   The field-dynamics treatment has explicit free-field time evolution with a
+   separate finite oscillator witness; scale changes and numerical sampling are
+   distinct.
+   The gauge-sector treatment defines a chosen gauge/matter/Higgs decomposition
+   with explicit chiral representations, hypercharge normalization and
+   cross-sector coupling.
    Gauge indices and field components are distinct from physical excitations;
    the selected Higgs background does not generate the original field content.
    OPAL and historical UA1 inferences retain their conditional process scope.
    Universal differentiation, autonomous sectors and parent/maintenance rules
    are excluded.
-   Card 1.32 defines a fixed-preparation rotational comparison using the
-   isotropic free scalar dispersion as a formal null. Coordinate changes do
-   not select a physical axis. Unsupported vacuum/admissibility assertions,
-   parent weights and carrier minima are excluded; polarization and directional
-   excitation stability require separately scoped models and evidence.
-   Card 1.33 uses a normalized transverse photon state and a local polarization
-   basis. Passive coefficient/mode changes preserve the same state; preparing
-   polarization is distinct from a material or loop response and supplies no
-   vacuum axis, birefringence or directional stability mechanism.
-   Card 1.34 separates free scalar envelope propagation from damping, localization,
-   intrinsic decay and transport. Its group velocity is a model deduction, not a
-   directional lifetime or drift measurement. Pole/ensemble decay conventions
-   retain their own scope; no universal stability or Level-0 transport bridge
-   follows from anisotropy, polarization or unitary norm conservation.
-   Card 1.23 separates Maxwell gauge/Fock definitions, normalized one-photon
-   states, triggered optical counts and response-conditioned anticorrelation.
+   The field-anisotropy treatment defines a fixed-preparation rotational
+   comparison using the isotropic free scalar dispersion as a formal null.
+   Coordinate changes do not select a physical axis. Unsupported
+   vacuum/admissibility assertions, parent weights and carrier minima are
+   excluded; polarization and directional excitation stability require
+   separately scoped models and evidence.
+   The polarization-anisotropy treatment uses a normalized transverse photon
+   state and a local polarization basis. Passive coefficient/mode changes
+   preserve the same state; preparing polarization is distinct from a material
+   or loop response and supplies no vacuum axis, birefringence or directional
+   stability mechanism.
+   The directional-stability treatment separates free scalar envelope
+   propagation from damping, localization, intrinsic decay and transport. Its
+   group velocity is a model deduction, not a directional lifetime or drift
+   measurement. Pole/ensemble decay conventions retain their own scope; no
+   universal stability or Level-0 transport bridge follows from anisotropy,
+   polarization or unitary norm conservation.
+   The photon treatment separates Maxwell gauge/Fock definitions, normalized
+   one-photon states, triggered optical counts and response-conditioned
+   anticorrelation.
    The counting and inference records share data; separate same-source
    interference is not independent replication. Selected radiative observables
    retain their calibration and analysis boundaries. Empirical mass/charge
@@ -202,12 +196,13 @@ belong to the current claims.
    CMS tau-pair evidence separates selected bins, the fixed-mass rate fit,
    dependent post-fit summaries and a common vector/fermion coupling scan.
    Its width and loop assumptions remain explicit review obligations.
-   Cards 1.8, 1.9, 1.14 and 1.28 are qualified to the single-doublet construction,
+   Electroweak symmetry-breaking, Higgs-mechanism, Higgs-coupling mass and
+   Higgs-vacuum claims are qualified to the single-doublet construction,
    charged-fermion mass/coupling convention and separately scoped collider data.
    Chirality and Yukawa parameters are inputs; a predicted hierarchy, universal
    composite stability, absolute quantum-vacuum stability and causal maintenance
    are excluded. Historical UA1 W/Z candidates, response and mass inferences
-   retain distinct acquisitions. Card 1.24 is qualified to declared weak currents,
+   retain distinct acquisitions. W/Z claims are qualified to declared weak currents,
    low-energy exchange and inclusive decay conventions, with separate LEP Z
    line-shape and W width/branching inferences. Derived fractions reuse their
    fit inputs; the lifetime relation is a pole/exponential convention, not a
@@ -222,20 +217,22 @@ belong to the current claims.
    two-flavor adiabatic approximation, with no inferred solar mechanism edge.
    OPERA accelerator tau appearance retains its selected decay channels,
    modeled expectations, calibrated significance and same-data 90% interval.
-   Card 1.25 has explicit mixing/rephasing and mass-identifiability boundaries.
+   The neutrino mass and mixing treatment has explicit mixing/rephasing and
+   mass-identifiability boundaries.
    A common squared-mass offset remains unidentifiable in the supplied leading
    vacuum phase; two unequal nonzero differences imply at least two massive
    states conditionally. The four historical inference contexts retain their
    model and shared-data limits. Absolute mass, mass ordering, Majorana nature,
    additional states and a unique mass-generation mechanism are not established.
-   Card 1.17 is qualified to these experimental scopes and to explicit
-   production/detection coherence, packet overlap and unresolved-event averaging.
+   Neutrino-oscillation claims are qualified to these experimental scopes and
+   to explicit production/detection coherence, packet overlap and
+   unresolved-event averaging.
    A prescribed solar density and conditional adiabatic survival expression
    keep production and response weights external; resonance alone does not
    establish conversion. The qualitative astrophysical propagation implication
    is retained, while quantitative transport and cosmological predictions are
    excluded without their additional inputs. Mass origin remains unspecified
-   within the qualified scope of card 1.25. Original weights, minima, SOMA ordering
+   within the qualified neutrino-mass scope. Original weights, minima, SOMA ordering
    and universal flavor-instability claims are not admitted.
    Finite bipartite definitions distinguish entanglement, projective Bell
    locality and unconditioned marginals. Two Delft Bell runs preserve separate
@@ -245,13 +242,14 @@ belong to the current claims.
    supplementary selection, score and null-model sections are reviewed;
    acquisition-to-table extraction, stopping decisions and RNG calibration
    remain outside that replay. Printed proof inconsistencies stay explicit.
-   Card 1.4 also has a regulated scalar-region entropy construction, independent
-   photonic Bell evidence from Shalm and a specified Bennett/Boschi teleportation
-   protocol and realization. Their cutoffs, complete outcomes, training/stopping
-   rules, passive correction and ensemble-specific benchmark remain explicit.
+   The entanglement treatment also has a regulated scalar-region entropy
+   construction, independent photonic Bell evidence from Shalm and a specified
+   Bennett/Boschi teleportation protocol and realization. Their cutoffs,
+   complete outcomes, training/stopping rules, passive correction and
+   ensemble-specific benchmark remain explicit.
    Arbitrary continuum factorization, generic vacuum coherence, firstness,
    necessary QFT creation and elementary-particle minimum claims are excluded.
-   Card 1.1 is qualified to declared quark quantum numbers, mass conventions,
+   Quark claims are qualified to declared quark quantum numbers, mass conventions,
    a charge-weighted parton response and existing valence/Fock, spectroscopy,
    lattice and hadron-production evidence. Bloom's apparatus and correction
    record shares the historical SLAC sample; Whitlow's longitudinal/transverse
@@ -261,8 +259,8 @@ belong to the current claims.
    chronological confinement stage and original weights/minima are excluded.
    Full scattering and width analyses remain unreproduced; their reported
    discrepancies and source limits stay explicit. Confinement criteria and evidence
-   retain the separate qualified scope of card 1.7.
-   Card 1.2 is qualified to lepton charge, chirality and flavor conventions,
+   retain their separate qualified scope.
+   Lepton claims are qualified to lepton charge, chirality and flavor conventions,
    species-specific scattering and decay evidence, and a bounded electron role
    in hydrogen. Belle's paired proper-length fit supplies a tau mean lifetime;
    Borexino's constrained spectrum supplies a channel-specific electron-decay
@@ -271,7 +269,8 @@ belong to the current claims.
    boundaries. Universal permanence, persistent neutrino flavor, all-lepton atom
    construction and original parent weights/minima are excluded. Raw event,
    detector-response and complete likelihood reconstruction remain open.
-   Card 1.3 has explicit non-Abelian field-strength and self-coupling terms.
+   The gluon treatment has explicit non-Abelian field-strength and
+   self-coupling terms.
    SLD's selected three-jet shapes test specified spin models; OPAL's correlated
    angular/rate fit tests color factors within its perturbative family. H1's
    inclusive cross sections constrain a scheme-dependent gluon distribution
@@ -280,7 +279,8 @@ belong to the current claims.
    different gauge groups, sea content and calibration. A universal process
    classification, weighted necessary parents and one-carrier thresholds are
    excluded. Full experimental and computational replay remains open.
-   Card 1.18 is qualified to source-conditioned gauge-field structure. A pure-SU(2)
+   Gluon-field self-organization claims are qualified to source-conditioned
+   gauge-field structure. A pure-SU(2)
    Wilson-loop/plaquette calculation supplies explicit vacuum subtraction,
    operator conventions, finite-volume/spacing controls and a separate width
    inference. Adopted scale, printed scale/width conventions, shared sampling
@@ -290,7 +290,8 @@ belong to the current claims.
    condensate, real-time feedback, universal stable-matter law, necessary parent,
    carrier minimum or SOMA phase/type authority follows. No full lattice replay
    or physical-SU(3) continuum profile is claimed.
-   Card 1.19 is qualified to specified QCD-to-nuclear-energy calculations.
+   Claims about quark influence on macroscale matter are qualified to specified
+   QCD-to-nuclear-energy calculations.
    A three-flavor heavy-mass lattice study separates ensemble/scale inputs,
    finite-volume two-nucleon shifts and conditional binding assignments.
    The paired 2026 state-identification preprints preserve spectral assumptions,
@@ -299,8 +300,8 @@ belong to the current claims.
    remain distinct. Bulk density, compressibility and astrophysical equations
    of state require separate many-body models and are not admitted here.
    No original parent weights, necessary maintenance or carrier minima follow.
-   Card 1.20 is qualified to a linear canonical single-field model and one
-   Planck 2018 TT,TE,EE+lowE application. Gauge-invariant curvature power,
+   Primordial-perturbation claims are qualified to a linear canonical single-field
+   model and one Planck 2018 TT,TE,EE+lowE application. Gauge-invariant curvature power,
    conditional long-wave conservation and a restricted stochastic approximation
    are separate from observed angular statistics, response and a primordial
    amplitude/tilt posterior. The background, state, transfer model and priors
@@ -309,8 +310,9 @@ belong to the current claims.
    quantum generation. Large-scale-structure evidence, later matching and full
    likelihood replay require their own review. Original necessary parents,
    weights, carrier minima and SOMA phase/type authority are excluded.
-   Card 1.21 has scoped Wilsonian and subtraction-scale definitions, local
-   fixed-point classification and a finite Gaussian engineering-dimension example.
+   The effective-theory and RG treatment has scoped Wilsonian and subtraction-scale
+   definitions, local fixed-point classification and a finite Gaussian
+   engineering-dimension example.
    An EFT operator expansion and the existing weak contact limit retain matching
    inputs, truncation order and nondecoupling conditions. CMS and L3 supply only
    their reviewed running comparisons, preserving shared data and distinct
@@ -323,7 +325,7 @@ belong to the current claims.
    applications require their own criteria. The selected entropy computation,
    Bell acquisition/calibration and teleportation response analyses remain
    unreproduced; their published results retain their declared scope.
-   Card 1.7 is qualified to explicit pure-gauge area, dynamical-screening and
+   Confinement claims are qualified to explicit pure-gauge area, dynamical-screening and
    phenomenological confinement criteria. Wilson, Creutz and Bali retain their
    regulator, matter, operator and fit limits. Bulava's separate 2+1-flavor
    ensemble adds strange-channel screening with diagonal-crossing scales;
@@ -336,41 +338,40 @@ belong to the current claims.
    weights, carrier minima, temporal maintenance and downward-causation claims
    are excluded. Physical-mass/continuum coverage, real-time dynamics and full
    computational or detector replay require their own evidence; they do not
-   prevent this finite qualified disposition. Card 1.15 is reviewed with
-   qualifications:
+   prevent this finite qualified disposition. Claims about confinement as a
+   macroscale constraint are reviewed with qualifications:
    finite static-source and screening results retain their model boundaries;
    the universal downward-causation assertion, blanket composite stability
    and arbitrary parent weights/minima are excluded. A distinct macroconstraint
    needs an operational variable, reduction or intervention and discriminating
    predictions. Independent lattice replay is separate from this disposition.
-   Cards 1.10 and 1.11 have scoped treatments of hadron production and
-   nucleon properties. Identified neutral-hadron yields, same-acquisition
-   extrapolation, neutron electric/magnetic response and local table checks
-   retain separate contexts. Formal net-flavor labels and the restricted
-   color-singlet calculation do not establish an exact particle population.
+   Hadron production and nucleon properties have scoped treatments. Identified
+   neutral-hadron yields, same-acquisition extrapolation, neutron
+   electric/magnetic response and local table checks retain separate contexts.
+   Formal net-flavor labels and the restricted color-singlet calculation do not
+   establish an exact particle population.
    The deuteron beta-breakup threshold is a conditional energy calculation,
    not an all-channel lifetime result. Blanket stability, arbitrary parent
    weights/minima and a universal construction order are excluded.
-   These cards are no longer pending: their substantive assertions are
-   supported, qualified or excluded. Independent experimental reproduction
+   Independent experimental reproduction
    remains a separate obligation. In particular, raw detector/monitor data,
    resonance and lifetime likelihoods, nuclear-response models, correlated
    mass adjustments, lattice-spectrum fits and full hadron-production
    reconstruction have not been reproduced. Source-specific conflicts and
    missing inputs remain attached to the corresponding claims and
    [physics review](../references/canonical/physics-review.json).
-   Card 1.12 has a finite treatment of decay lifetimes, partial-rate searches,
+   Particle decays have a finite treatment of lifetimes, partial-rate searches,
    channel energetics and the measured PIENU electronic/muonic pion ratio.
    The selected spectra, timing fit, auxiliary response inputs and corrected
    ratio remain distinct. Cosmological applications, universal daughter
    stability and arbitrary parent weights/minima are excluded.
-   Card 1.13 has scoped electron-anomaly and electromagnetic-running evidence
-   alongside the Lamb/Bethe and QCD-running records. The electron spectra,
-   cavity-corrected moment, leading theoretical anomaly and L3 angular-shape
-   inference retain separate inputs and limits. These do not measure bare
-   parameters, virtual-particle populations or absolute vacuum energy, or
-   establish universal necessary formation rules.
-   Card 1.16 has a finite light-flavor classification and transition treatment:
+   Vacuum-structure effects on particle properties have scoped electron-anomaly
+   and electromagnetic-running evidence alongside the Lamb/Bethe and QCD-running
+   records. The electron spectra, cavity-corrected moment, leading theoretical
+   anomaly and L3 angular-shape inference retain separate inputs and limits.
+   These do not measure bare parameters, virtual-particle populations or
+   absolute vacuum energy, or establish universal necessary formation rules.
+   Hadron families have a finite light-flavor classification and transition treatment:
    baryon multiplets and meson mixing conventions, the conditional Barnes
    Omega event and KLOE radiative-decay ratio. Measured tracks/candidates,
    reconstruction and model-dependent interpretation remain separate.
@@ -379,29 +380,33 @@ belong to the current claims.
    checks do not reproduce spectroscopy, acquisition or full covariance.
    This is a restricted classification, not a complete taxonomy or formation
    mechanism. Free-neutron lifetimes and proton partial-lifetime limits do not
-   establish permanence. Universal stability, necessary parent 1.10 and numerical
-   parent/minimum rules are excluded; SOMA level/phase/type assignments gain no
-   scientific validation from these results.
-   Card 1.22 has selected Feynman perturbative-amplitude conventions and a
-   separate exact synthetic kinematic check. Conserved momentum, external
-   mass shells and internal propagators do not imply energy borrowing or
-   a virtual-particle census. No loop calculation or universal formation/
-   maintenance dependencies, weights or minima are admitted by this treatment.
+   establish permanence. Universal stability, a necessary hadronization parent
+   and numerical parent/minimum rules are excluded; SOMA level/phase/type
+   assignments gain no scientific validation from these results.
+   The virtual-excitation treatment has selected Feynman perturbative-amplitude
+   conventions and a separate exact synthetic kinematic check. Conserved
+   momentum, external mass shells and internal propagators do not imply energy
+   borrowing or a virtual-particle census. No loop calculation or universal
+   formation/maintenance dependencies, weights or minima are admitted by this
+   treatment.
    Review newly scoped physical questions with their own preparations and
-   evidence. Do not expand a closed card
+   evidence. Do not expand a closed treatment
    indefinitely to reconstruct every upstream instrument. A new claim about
    formation dynamics, physical stability or a general constituent minimum
    needs separate support.
-2. Select bounded follow-up questions from the completed
-   [Level-7 review](../references/canonical/LEVEL_7_REVIEW.md) and the
+2. Select bounded follow-up questions from the
+   [Level-7 social ledger](../references/canonical/social-systems-review.json) and the
    [neural scientific obligations](../references/canonical/NEURAL_NEXT_REVIEW.md).
    Prioritize independent source readings, unread controls and eligible raw-data
-   checks. Complete catalogue disposition does not establish unique mechanisms
+   checks. Completed source disposition does not establish unique mechanisms
    or close those empirical questions.
-3. Check cross-domain links with matched evidence. Proposed levels, minimum
-   carrier counts and generative rules require their own tests.
+3. Obtain independent review of the descriptive
+   [bridges](../references/canonical/BRIDGES.md) between evidence islands and
+   levels, and test functional cross-level dependencies with matched
+   preparations. Proposed levels, minimum carrier counts and generative rules
+   require their own tests.
 4. Keep the current graph, its derivatives and interface consistent. Maintain
-   one current canonical output and a concise validation record.
+   one current canonical output.
 5. Revisit [Formal Core](ONTO2D_FORMAL_CORE.md) implementation after the data
    review. Existing Structural Geometry experiments inform construction tests;
    their results do not automatically validate a universal generator.
@@ -483,7 +488,7 @@ independent domains.
 | Area | Remaining work and entrypoint |
 |---|---|
 | History Matters | Independently review FD001 preparation, then join held-out outcomes under its frozen protocol; resolve LTEE aggregate-count or unit-level eligibility before scoring. [Benchmark](history/BENCHMARK.md) |
-| Source catalogue | Complete the pending scientific source tasks and current claim validation. [Source policy](architecture/SOURCE_POLICY.md) |
+| Source data | Complete current claim validation. [Source policy](architecture/SOURCE_POLICY.md) |
 | Level 0 | Independent numerical comparison and wider justified parameter coverage; collective Phase D and empirical evidence remain open. Current bounded searches retain their negative results. [Case](../cases/level-0-oscillator/README.md) |
 | Model Pack format | Review manifest-bound lineage and other v2 requirements before changing the format; no v2 runtime is claimed. [Proposal](model-pack-v2/README.md) |
 | Other history cases | Planned SLSA, Software Heritage and lithic studies; Seshat full dependency experiment. These are backlog, not current parallel priorities. [Portfolio](history/PORTFOLIO.md) |

@@ -148,12 +148,6 @@ const contracts = {
           "locator": "Printed pp. 3-8 (PDF pp. 17-22), scope and Sections II.A-II.B, equations (1)-(18)",
           "role": "supports",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /21. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
@@ -168,7 +162,7 @@ const contracts = {
     {
       "id": "M-phys-patrick2021-rosi-context",
       "kind": "method",
-      "statement": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth180 degrees and incident polar angles70 to0 degrees; the actual viewing polar angle is45 degrees with azimuth90 or135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances99 and10 percent, not prescribed constant bidirectional factors.",
+      "statement": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth 180 degrees and incident polar angles 70 to 0 degrees; the actual viewing polar angle is 45 degrees with azimuth 90 or 135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances 99 and 10 percent, not prescribed constant bidirectional factors.",
       "scope": "Selected optical model or prepared-sample evidence with explicit measurement and interpretation boundaries.",
       "status": "method-contract",
       "citations": [
@@ -204,12 +198,12 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ],
       "contextIds": [
         "patrick2021-rosi"
@@ -218,7 +212,7 @@ const contracts = {
     {
       "id": "C-phys-rosi-ptfe-angular-response",
       "kind": "review-finding",
-      "statement": "At550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding30 percent. The source roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray in this scan; these are not universal instrument limits.",
+      "statement": "At 550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at 90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding 30 percent. The source roughly estimates relative expanded uncertainties k=2 of 1 percent for white and 2 percent for gray in this scan; these are not universal instrument limits.",
       "scope": "Selected optical model or prepared-sample evidence with explicit measurement and interpretation boundaries.",
       "status": "publication-supported",
       "citations": [
@@ -242,12 +236,12 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ],
       "contextIds": [
         "patrick2021-rosi"
@@ -286,12 +280,12 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ],
       "contextIds": [
         "patrick2021-rosi"
@@ -321,12 +315,6 @@ const contracts = {
           "locator": "Printed pp. 3-8 (PDF pp. 17-22), scope and Sections II.A-II.B, equations (1)-(18)",
           "role": "limits",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /21. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
@@ -336,18 +324,17 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
         "Retain the existing specified IR integrating-sphere sample study separately from the new PTFE angular scan. Their wavelength ranges, specimens, collection geometries and estimators differ; neither is a duplicate acquisition or a joint fitted likelihood.",
-        "Measured sample response and directional radiometric definitions support a bounded outgoing-light mapping. They do not establish autonomous SOMA scene encoding, every image-formation/sensing/vision application, an optical-to-retinal transfer or uniquely invertible surface characterization.",
-        "Original necessary parents2.1 and2.9 with weights0.5/0.5, upward direction[0], constraint mode[1], dependency types10/0 and arising roles do not supply fitted causal fractions or a universal formation history. Crystal periodic order is not established as a necessary premise of every reflectance description or surface response.",
-        "Original carrier group0/type2 for2.1 and group1/type0 for2.9, both N_min=N_crit=2 and N_sat=null, are catalogue defaults rather than measured onset populations. Two optical directions, detector positions or particular samples do not validate them.",
-        "Original Level2, Phase1, TypeRole2 Pattern, Science[1,41], established, MustCover[10,0], ShouldCover[12] and Optional[] are classification choices. A response map is not independently measured ontological autonomy or a universal emergence stage.",
-        "The original generic boundary/scattering/BRDF and experimental placeholders contain null DOI/URL. Only declared formal definitions, the existing IR evidence and this selected primary angular measurement are admitted; no broad rough-surface wave solver, all-material survey, full-hemisphere inversion or new numerical replay is claimed.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "Measured sample response and directional radiometric definitions support a bounded outgoing-light mapping. They do not establish every image-formation/sensing/vision application, an optical-to-retinal transfer or uniquely invertible surface characterization.",
+        "Crystal periodic order is not established as a necessary premise of every reflectance description or surface response.",
+        "A response map is not independently measured ontological autonomy or a universal emergence stage.",
+        "Only declared formal definitions, the existing IR evidence and this selected primary angular measurement are admitted; no broad rough-surface wave solver, all-material survey, full-hemisphere inversion or new numerical replay is claimed.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ],
       "contextIds": [
         "hanssen2001",
@@ -357,7 +344,7 @@ const contracts = {
     {
       "id": "M-phys-surface-scattering-source-scope",
       "kind": "method",
-      "statement": "Synthesize the two original preparations only at the level of bounded material optical response. Preserve full IR and PTFE contexts, integrated versus directional readouts, finite-aperture corrections, unknown microscopic alternatives and source-specific uncertainties. Do not infer a unique scene/surface, prior crystal stage or original carrier thresholds.",
+      "statement": "Synthesize the two original preparations only at the level of bounded material optical response. Preserve full IR and PTFE contexts, integrated versus directional readouts, finite-aperture corrections, unknown microscopic alternatives and source-specific uncertainties. Do not infer a unique scene/surface, prior crystal stage or carrier thresholds.",
       "scope": "Selected optical model or prepared-sample evidence with explicit measurement and interpretation boundaries.",
       "status": "method-contract",
       "citations": [
@@ -378,12 +365,6 @@ const contracts = {
           "locator": "Printed pp. 3-8 (PDF pp. 17-22), scope and Sections II.A-II.B, equations (1)-(18)",
           "role": "limits",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /21. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
@@ -393,18 +374,17 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
         "Retain the existing specified IR integrating-sphere sample study separately from the new PTFE angular scan. Their wavelength ranges, specimens, collection geometries and estimators differ; neither is a duplicate acquisition or a joint fitted likelihood.",
-        "Measured sample response and directional radiometric definitions support a bounded outgoing-light mapping. They do not establish autonomous SOMA scene encoding, every image-formation/sensing/vision application, an optical-to-retinal transfer or uniquely invertible surface characterization.",
-        "Original necessary parents2.1 and2.9 with weights0.5/0.5, upward direction[0], constraint mode[1], dependency types10/0 and arising roles do not supply fitted causal fractions or a universal formation history. Crystal periodic order is not established as a necessary premise of every reflectance description or surface response.",
-        "Original carrier group0/type2 for2.1 and group1/type0 for2.9, both N_min=N_crit=2 and N_sat=null, are catalogue defaults rather than measured onset populations. Two optical directions, detector positions or particular samples do not validate them.",
-        "Original Level2, Phase1, TypeRole2 Pattern, Science[1,41], established, MustCover[10,0], ShouldCover[12] and Optional[] are classification choices. A response map is not independently measured ontological autonomy or a universal emergence stage.",
-        "The original generic boundary/scattering/BRDF and experimental placeholders contain null DOI/URL. Only declared formal definitions, the existing IR evidence and this selected primary angular measurement are admitted; no broad rough-surface wave solver, all-material survey, full-hemisphere inversion or new numerical replay is claimed.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "Measured sample response and directional radiometric definitions support a bounded outgoing-light mapping. They do not establish every image-formation/sensing/vision application, an optical-to-retinal transfer or uniquely invertible surface characterization.",
+        "Crystal periodic order is not established as a necessary premise of every reflectance description or surface response.",
+        "A response map is not independently measured ontological autonomy or a universal emergence stage.",
+        "Only declared formal definitions, the existing IR evidence and this selected primary angular measurement are admitted; no broad rough-surface wave solver, all-material survey, full-hemisphere inversion or new numerical replay is claimed.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ],
       "contextIds": [
         "hanssen2001",
@@ -449,7 +429,7 @@ const contracts = {
       "id": "phys:patrick2021-rosi-context",
       "name": "Prepared PTFE out-of-plane radiometry context",
       "kind": "context",
-      "description": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth180 degrees and incident polar angles70 to0 degrees; the actual viewing polar angle is45 degrees with azimuth90 or135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances99 and10 percent, not prescribed constant bidirectional factors.",
+      "description": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth 180 degrees and incident polar angles 70 to 0 degrees; the actual viewing polar angle is 45 degrees with azimuth 90 or 135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances 99 and 10 percent, not prescribed constant bidirectional factors.",
       "claimIds": [
         "M-phys-patrick2021-rosi-context"
       ],
@@ -475,19 +455,19 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ]
     },
     {
       "id": "phys:rosi-ptfe-angular-response",
       "name": "Finite non-Lambertian PTFE angular response",
       "kind": "scoped-process",
-      "description": "At550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding30 percent. The source roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray in this scan; these are not universal instrument limits.",
+      "description": "At 550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at 90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding 30 percent. The source roughly estimates relative expanded uncertainties k=2 of 1 percent for white and 2 percent for gray in this scan; these are not universal instrument limits.",
       "claimIds": [
         "C-phys-rosi-ptfe-angular-response"
       ],
@@ -505,12 +485,12 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ]
     },
     {
@@ -539,18 +519,17 @@ const contracts = {
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
         "Retain the existing specified IR integrating-sphere sample study separately from the new PTFE angular scan. Their wavelength ranges, specimens, collection geometries and estimators differ; neither is a duplicate acquisition or a joint fitted likelihood.",
-        "Measured sample response and directional radiometric definitions support a bounded outgoing-light mapping. They do not establish autonomous SOMA scene encoding, every image-formation/sensing/vision application, an optical-to-retinal transfer or uniquely invertible surface characterization.",
-        "Original necessary parents2.1 and2.9 with weights0.5/0.5, upward direction[0], constraint mode[1], dependency types10/0 and arising roles do not supply fitted causal fractions or a universal formation history. Crystal periodic order is not established as a necessary premise of every reflectance description or surface response.",
-        "Original carrier group0/type2 for2.1 and group1/type0 for2.9, both N_min=N_crit=2 and N_sat=null, are catalogue defaults rather than measured onset populations. Two optical directions, detector positions or particular samples do not validate them.",
-        "Original Level2, Phase1, TypeRole2 Pattern, Science[1,41], established, MustCover[10,0], ShouldCover[12] and Optional[] are classification choices. A response map is not independently measured ontological autonomy or a universal emergence stage.",
-        "The original generic boundary/scattering/BRDF and experimental placeholders contain null DOI/URL. Only declared formal definitions, the existing IR evidence and this selected primary angular measurement are admitted; no broad rough-surface wave solver, all-material survey, full-hemisphere inversion or new numerical replay is claimed.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "Measured sample response and directional radiometric definitions support a bounded outgoing-light mapping. They do not establish every image-formation/sensing/vision application, an optical-to-retinal transfer or uniquely invertible surface characterization.",
+        "Crystal periodic order is not established as a necessary premise of every reflectance description or surface response.",
+        "A response map is not independently measured ontological autonomy or a universal emergence stage.",
+        "Only declared formal definitions, the existing IR evidence and this selected primary angular measurement are admitted; no broad rough-surface wave solver, all-material survey, full-hemisphere inversion or new numerical replay is claimed.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ]
     }
   ],
@@ -657,7 +636,7 @@ const contracts = {
     {
       "nodeId": "phys:patrick2021-rosi-context",
       "role": "experimental-context",
-      "denotes": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth180 degrees and incident polar angles70 to0 degrees; the actual viewing polar angle is45 degrees with azimuth90 or135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances99 and10 percent, not prescribed constant bidirectional factors.",
+      "denotes": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth 180 degrees and incident polar angles 70 to 0 degrees; the actual viewing polar angle is 45 degrees with azimuth 90 or 135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances 99 and 10 percent, not prescribed constant bidirectional factors.",
       "instanceAdmission": "none",
       "claimIds": [
         "M-phys-patrick2021-rosi-context"
@@ -666,7 +645,7 @@ const contracts = {
     {
       "nodeId": "phys:rosi-ptfe-angular-response",
       "role": "scoped-phenomenon",
-      "denotes": "At550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding30 percent. The source roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray in this scan; these are not universal instrument limits.",
+      "denotes": "At 550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at 90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding 30 percent. The source roughly estimates relative expanded uncertainties k=2 of 1 percent for white and 2 percent for gray in this scan; these are not universal instrument limits.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-rosi-ptfe-angular-response"
@@ -692,22 +671,22 @@ const contracts = {
       "volume": "60",
       "issue": "28",
       "pages": "8774-8786",
-      "system": "Selected550nm out-of-plane reflectance-factor scans of sintered PTFE reference targets",
-      "preparation": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth180 degrees and incident polar angles70 to0 degrees; the actual viewing polar angle is45 degrees with azimuth90 or135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances99 and10 percent, not prescribed constant bidirectional factors.",
+      "system": "Selected 550 nm out-of-plane reflectance-factor scans of sintered PTFE reference targets",
+      "preparation": "Use the source ROSI under-illumination method: measure the entire incident-beam flux with the sample translated out, then the reflected flux in the selected viewing aperture with the sample in place. Normalize receiver/monitor signals and relative gain/sensitivity settings and apply finite-aperture/collection corrections. For the selected sintered PTFE scan use 550 nm illumination, incident azimuth 180 degrees and incident polar angles 70 to 0 degrees; the actual viewing polar angle is 45 degrees with azimuth 90 or 135 degrees. The white and gray targets have nominal vendor directional-hemispherical reflectances 99 and 10 percent, not prescribed constant bidirectional factors.",
       "observable": "Corrected reflected/incident flux ratios mapped to directional reflectance factors at declared geometries",
-      "finding": "At550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding30 percent. The source roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray in this scan; these are not universal instrument limits.",
+      "finding": "At 550 nm the reported white and gray sintered-PTFE reflectance factors vary with the selected illumination/viewing geometry and depart from their constant Lambertian reference values, especially at large incident angles. For the gray target at 90-degree viewing azimuth, using the nominal Lambertian value would produce a reported reference-value error exceeding 30 percent. The source roughly estimates relative expanded uncertainties k=2 of 1 percent for white and 2 percent for gray in this scan; these are not universal instrument limits.",
       "limitations": [
         "BRDF has units sr^-1, while R=pi*f_r is a dimensionless directional reflectance factor relative to an ideal unit-reflecting Lambertian diffuser. Neither is an integrated reflected-energy fraction; a factor above one is not by itself an energy-conservation violation.",
         "Use the actual finite-spot, finite-aperture, spatial-uniformity and polarization conditions. The effective projected solid angle includes cos(theta_r) and finite-size/collection-efficiency corrections; a raw detector-voltage ratio is not a calibrated BRDF.",
         "Absolute ratio measurement means normalization to measured incident flux rather than a reference sample. It still requires monitor, relative-gain, angle, aperture, collection and sample-uniformity calibration; it is not calibration-free.",
         "Nominal directional-hemispherical reflectance, bidirectional reflectance factor and a whole angular distribution are different. One integral or one direction does not determine the other or uniquely identify microscopic roughness, composition, shape or a scene.",
         "A rough or porous target can have subsurface contributions. These data do not uniquely separate surface from volume scattering, reconstruct a complete electromagnetic boundary solution or measure crystallinity as a necessary cause.",
-        "The preceding remote-sensing example mentions viewing near40 degrees; the actual reported Figure11 measurement uses45 degrees. Nominal99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
+        "The preceding remote-sensing example mentions viewing near 40 degrees; the actual reported Figure 11 measurement uses 45 degrees. Nominal 99/10 percent directional-hemispherical labels are not independent measured Lambertian directional values.",
         "The source uses linearly polarized illumination and supplies a separate s/p averaging rule. Most systematic components are highly correlated between polarizations; unpolarized uncertainty is not automatically reduced by treating s and p as independent replicates.",
         "The out-of-plane uncertainty estimates are rough, target- and geometry-specific, and larger angle/solid-angle contributions are expected than for the tabulated in-plane calibration examples. No full covariance or universal precision is newly reconstructed.",
         "Reference-mirror/PTFE spectral scans and ROSI-STARR comparisons in this publication reuse the same named standards and calibration chain. They are not independent new studies for every wavelength, sample or instrument; the earlier STARR publication was not newly read.",
-        "The exact microscopic reason for the Figure11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
-        "The Figure11 caption and selected Section6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure11 polarization state is inferred."
+        "The exact microscopic reason for the Figure 11 deviations is not resolved by the source. No raw signal/angle recalibration, curve digitization, fitted surface model, sensor-image experiment or scene-reconstruction accuracy is supplied.",
+        "The Figure 11 caption and selected Section 6.B account do not state whether its curves use s polarization, p polarization or an unpolarized average. The general linear-source/averaging method does not fix that missing preparation detail, and no particular Figure 11 polarization state is inferred."
       ],
       "readExtent": "selected-published-primary-radiometry-passages",
       "reviewedLocators": [
@@ -718,29 +697,11 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1364/AO.435117",
-      "correctionCheck": "Actual 13-page published article obtained from NIST; selected Sections2,4.A-B,4.E,5.A-D,6.B read as text. Pages8775 and8782 visually checked; equations and Figure11 on8784 checked separately. No full instrument-design, AppendixA derivation, calibration reconstruction, raw scan or new inverse fit. Source title/authors/DOI and AppliedOptics60(28),8774-8786 checked against primary title block and Crossref: online27September2021, issue1October2021. Empty relation/no update-to and bounded title/DOI correction search found no explicit linked erratum; not exhaustive. Nominal aperture-uncertainty entries and typical budget entries are not reconstructed into a new common covariance or promoted to universal out-of-plane precision."
+      "correctionCheck": "Actual 13-page published article obtained from NIST; selected Sections 2, 4.A-B, 4.E, 5.A-D, 6.B read as text. Pages 8775 and 8782 visually checked; equations and Figure 11 on 8784 checked separately. No full instrument-design, Appendix A derivation, calibration reconstruction, raw scan or new inverse fit. Source title/authors/DOI and Applied Optics 60(28), 8774-8786 checked against primary title block and Crossref: online 27 September 2021, issue 1 October 2021. Empty relation/no update-to and bounded title/DOI correction search found no explicit linked erratum; not exhaustive. Nominal aperture-uncertainty entries and typical budget entries are not reconstructed into a new common covariance or promoted to universal out-of-plane precision."
     }
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "nicodemus1977",
       "kind": "research-publication",
@@ -785,7 +746,7 @@ const contracts = {
           "Section 6, pp. 3201-3203, Figures 6-8: results and limitations",
           "Section 7, pp. 3203-3204: discussion and scope"
         ],
-        "limit": "Specified IR samples and collection geometry; no full angular inversion, universal precision or carrier minimum."
+        "limit": "Specified IR samples and collection geometry; no full angular inversion or universal precision."
       }
     },
     {
@@ -812,7 +773,7 @@ const contracts = {
           "Published pages 8780-8782, Section 4.E Equations 16-18 and Sections 5.A-5.D Figures 6-9: sample-specific uncertainty, correlated polarization averaging and same-sample instrument comparisons",
           "Published pages 8784-8785, Section 6.B and Figure 11: actual 550 nm out-of-plane PTFE geometries, non-Lambertian response and approximate uncertainty estimates"
         ],
-        "limit": "Actual 13-page published article obtained from NIST; selected Sections2,4.A-B,4.E,5.A-D,6.B read as text. Pages8775 and8782 visually checked; equations and Figure11 on8784 checked separately. No full instrument-design, AppendixA derivation, calibration reconstruction, raw scan or new inverse fit. Source title/authors/DOI and AppliedOptics60(28),8774-8786 checked against primary title block and Crossref: online27September2021, issue1October2021. Empty relation/no update-to and bounded title/DOI correction search found no explicit linked erratum; not exhaustive. Nominal aperture-uncertainty entries and typical budget entries are not reconstructed into a new common covariance or promoted to universal out-of-plane precision."
+        "limit": "Actual 13-page published article obtained from NIST; selected Sections 2, 4.A-B, 4.E, 5.A-D, 6.B read as text. Pages 8775 and 8782 visually checked; equations and Figure 11 on 8784 checked separately. No full instrument-design, Appendix A derivation, calibration reconstruction, raw scan or new inverse fit. Source title/authors/DOI and Applied Optics 60(28), 8774-8786 checked against primary title block and Crossref: online 27 September 2021, issue 1 October 2021. Empty relation/no update-to and bounded title/DOI correction search found no explicit linked erratum; not exhaustive. Nominal aperture-uncertainty entries and typical budget entries are not reconstructed into a new common covariance or promoted to universal out-of-plane precision."
       }
     }
   ]

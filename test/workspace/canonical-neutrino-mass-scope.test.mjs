@@ -90,18 +90,18 @@ test("five selected outcomes retain four owning inference contexts and supplemen
   }
 });
 
-test("source-card parent classifications cannot regain causal or mass-generation status", async () => {
+test("lepton, flavor-label and Yukawa dependencies cannot acquire causal or mass-generation status", async () => {
   await rejects([
     ["unitarity and flavor labels remain conditional model/readout assumptions", (data) =>
       dropLimit(data, definition, "charged-lepton preparation/readout")],
     ["charged-fermion Yukawa couplings cannot silently become measured neutrino masses", (data) =>
       dropLimit(data, definition, "Charged-fermion Higgs/Yukawa relations")],
-    ["parent weight and carrier count cannot become measured universal thresholds", (data) =>
-      dropLimit(data, definition, "Weight 1, Nmin=Ncrit=1")],
+    ["the lepton link remains a descriptive flavor-readout dependency rather than a formation threshold", (data) =>
+      dropLimit(data, definition, "lepton link is retained only as a descriptive")],
     ["unknown mechanism is a declared boundary rather than permission for an invented mechanism", (data) =>
       dropLimit(data, definition, "original refusal to specify")],
     ["basis structure cannot become an observed formation intervention", (data) => replaceStatement(data, definition,
-      "One lepton necessarily generates all neutrino masses through the charged-fermion Higgs coupling at the original unit parent weight.")]
+      "One lepton necessarily generates all neutrino masses through the charged-fermion Higgs coupling.")]
   ]);
 });
 
@@ -129,8 +129,8 @@ test("reactor, atmospheric and solar outputs cannot lose their distinct inferent
       dropLimit(data, synthesis, "SNO-only direct joint")],
     ["SNO active components cannot be relabeled as a measured mass splitting", (data) => replaceStatement(data, synthesis,
       "SNO independently measures the vacuum mass splitting by subtracting its independent NC and CC flux measurements.")],
-    ["generic empirical placeholders cannot admit unreviewed astrophysical constraints", (data) =>
-      dropLimit(data, synthesis, "Generic solar, atmospheric, reactor and accelerator evidence placeholders")],
+    ["the evidence comparison cannot admit unreviewed astrophysical, endpoint or double-beta constraints", (data) =>
+      dropLimit(data, synthesis, "evidence is restricted to these actual admitted sources and analysis stages")],
     ["the synthesis cannot be relabeled as an independent numerical replay", (data) => {
       claim(data, synthesis).status = "analytically-checked";
       claim(data, synthesis).checkIds = ["neutrino-phase-data-algebra"];
