@@ -61,8 +61,8 @@ test("citation resolution stays within one claim and preserves fully expanded hi
 test("the actual inspector renders every compact citation with the same title, year, passage and links", async () => {
   const appUrl = new URL("../../apps/model-studio/model-studio.js", import.meta.url);
   const sourceText = await readFile(appUrl, "utf8");
-  const start = sourceText.indexOf("function renderRationale(record) {");
-  const end = sourceText.indexOf("\nfunction updateControls()", start);
+  const start = sourceText.indexOf("function renderRationale(record");
+  const end = sourceText.indexOf("\nfunction ", start + 1);
   assert.ok(start >= 0 && end > start);
   const render = sourceText.slice(start, end).replaceAll("import.meta.url", JSON.stringify(appUrl.href));
   const publication = { id: "publication", title: "Measured response", year: 2026,

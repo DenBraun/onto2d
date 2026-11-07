@@ -4,116 +4,160 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../../assets/js/document-state-reset.js" defer></script>
-    <meta name="description" content="Browse exact verified Onto2D Model Pack releases as searchable catalogues and directed neighborhood graphs.">
+    <meta name="description" content="Browse exact verified Onto2D Model Pack releases: the table of arisings, their causes and the technical subgraph of evidence behind each arising.">
     <title>Model Studio - Onto2D</title>
     <link rel="icon" href="../../assets/icons/favicon.ico?v=20260816.10" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/ui-icons.css?v=20260816.10">
-    <link rel="stylesheet" href="../../assets/css/model-studio-workbench.css?v=20261106.4">
+    <link rel="stylesheet" href="../../assets/css/model-studio-workbench.css?v=20261107.2">
     <script type="importmap">
       {"imports":{
-        "@onto2d/kernel/canonical":"../../packages/kernel/src/canonical-entry.js?v=20261106.10",
-        "@onto2d/model-pack":"../../packages/model-pack/src/index.js?v=20261106.10",
-        "@onto2d/model-pack/registry":"../../packages/model-pack/src/registry.js?v=20261106.10",
-        "@onto2d/rdf-import":"../../packages/rdf-import/src/index.js?v=20261106.10",
-        "@onto2d/rdf-mapping":"../../packages/rdf-mapping/src/index.js?v=20261106.10",
-        "@onto2d/shacl-validation":"../../packages/shacl-validation/src/index.js?v=20261106.10",
-        "@onto2d/view":"../../packages/view/src/index.js?v=20261106.10",
-        "@onto2d/view/lazy":"../../packages/view/src/lazy.js?v=20261106.10",
-        "../../packages/model-pack/src/index.js":"../../packages/model-pack/src/index.js?v=20261106.10",
-        "../../packages/model-pack/src/browser.js":"../../packages/model-pack/src/browser.js?v=20261106.10",
-        "../../packages/model-pack/src/transport-layout.js":"../../packages/model-pack/src/transport-layout.js?v=20261106.10",
-        "../../packages/model-pack/src/json-value-table.js":"../../packages/model-pack/src/json-value-table.js?v=20261106.10",
-        "../../packages/model-pack/src/model-pack-error.js":"../../packages/model-pack/src/model-pack-error.js?v=20261106.10"
+        "@onto2d/kernel/canonical":"../../packages/kernel/src/canonical-entry.js?v=20261107.2",
+        "@onto2d/model-pack":"../../packages/model-pack/src/index.js?v=20261107.2",
+        "@onto2d/model-pack/registry":"../../packages/model-pack/src/registry.js?v=20261107.2",
+        "@onto2d/rdf-import":"../../packages/rdf-import/src/index.js?v=20261107.2",
+        "@onto2d/rdf-mapping":"../../packages/rdf-mapping/src/index.js?v=20261107.2",
+        "@onto2d/shacl-validation":"../../packages/shacl-validation/src/index.js?v=20261107.2",
+        "@onto2d/view":"../../packages/view/src/index.js?v=20261107.2",
+        "@onto2d/view/lazy":"../../packages/view/src/lazy.js?v=20261107.2",
+        "../../packages/model-pack/src/index.js":"../../packages/model-pack/src/index.js?v=20261107.2",
+        "../../packages/model-pack/src/browser.js":"../../packages/model-pack/src/browser.js?v=20261107.2",
+        "../../packages/model-pack/src/transport-layout.js":"../../packages/model-pack/src/transport-layout.js?v=20261107.2",
+        "../../packages/model-pack/src/json-value-table.js":"../../packages/model-pack/src/json-value-table.js?v=20261107.2",
+        "../../packages/model-pack/src/model-pack-error.js":"../../packages/model-pack/src/model-pack-error.js?v=20261107.2"
       }}
     </script>
-    <script type="module" src="./model-studio.js?v=20261106.10"></script>
+    <script type="module" src="./model-studio.js?v=20261107.2"></script>
   </head>
-  <body data-state="loading">
-    <a class="skip-link" href="#studio">Skip to graph editor</a>
+  <body data-state="loading" data-mode="graph">
+    <a class="skip-link" href="#studio">Skip to the graph</a>
 
     <div class="workbench">
       <header class="titlebar">
-        <div class="window-mark" aria-hidden="true"><svg viewBox="0 0 34 34"><circle cx="7" cy="17" r="3"></circle><circle cx="27" cy="8" r="3"></circle><circle cx="27" cy="26" r="3"></circle><path d="M10 17h7m2-3 5-4m-5 10 5 4"></path></svg></div>
-        <nav class="menubar" aria-label="Project links"><a href="../../">Project</a><a href="../canonical-identity-lab/">Studies</a><a href="https://github.com/DenBraun/Onto2D" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
-        <p class="window-title"><span id="window-model-id">causal-emergence</span> - Model Studio</p>
-        <div class="title-actions"><span class="exact-release"><i></i><span id="load-state" role="status" aria-live="polite">Loading model</span></span><a href="../../" aria-label="Close Studio and return to project home"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#close"></use></svg></a></div>
+        <a class="brand" href="../../" aria-label="Onto2D project home"><svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="7" cy="17" r="3"></circle><circle cx="27" cy="8" r="3"></circle><circle cx="27" cy="26" r="3"></circle><path d="M10 17h7m2-3 5-4m-5 10 5 4"></path></svg><span>Onto2D <strong>Studio</strong></span></a>
+        <button id="release-open" class="model-button" type="button" aria-haspopup="dialog" aria-controls="release-dialog" title="Release, verification and evidence library">
+          <span id="window-model-id">causal-emergence</span><small id="model-version-chip">...</small><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#chevron-down"></use></svg>
+        </button>
+        <nav id="view-tabs" class="view-tabs" role="tablist" aria-label="Views" hidden>
+          <button type="button" role="tab" data-mode="table" aria-selected="false" title="Table of arisings by level and phase (1)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h5v5H2zM9 2h5v5H9zM2 9h5v5H2zM9 9h5v5H9z"></path></svg>Table</button>
+          <button type="button" role="tab" data-mode="causes" aria-selected="false" title="Causes and dependents of the focused arising (2)"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="8" r="2"></circle><circle cx="13" cy="3.5" r="2"></circle><circle cx="13" cy="12.5" r="2"></circle><path d="M5 8h3m0 0 3-3.5M8 8l3 3.5"></path></svg>Causes</button>
+          <button type="button" role="tab" data-mode="subgraph" aria-selected="false" title="Technical subgraph of the focused arising (3)"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="2"></rect><circle cx="5" cy="6" r="1.4"></circle><circle cx="11" cy="5" r="1.4"></circle><circle cx="8" cy="11" r="1.4"></circle><path d="M6.2 6.6 7.4 9.8M9.9 5.8 8.6 9.7"></path></svg>Subgraph<small id="subgraph-count"></small></button>
+          <button type="button" role="tab" data-mode="records" aria-selected="false" title="Relations of any record across subgraphs (4)"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.2"></circle><circle cx="2.5" cy="3" r="1.4"></circle><circle cx="13.5" cy="3" r="1.4"></circle><circle cx="2.5" cy="13" r="1.4"></circle><circle cx="13.5" cy="13" r="1.4"></circle><path d="M3.6 4 6.4 6.6M12.4 4 9.6 6.6M3.6 12 6.4 9.4M12.4 12 9.6 9.4"></path></svg>Records</button>
+        </nav>
+        <div class="title-actions">
+          <span class="exact-release" title="Verification state of the open release"><i></i><span id="load-state" role="status" aria-live="polite">Loading model</span></span>
+          <button id="guide-open" class="title-button" type="button" aria-haspopup="dialog" aria-controls="guide-dialog" title="Guide: how to read the Studio (?)"><span aria-hidden="true">?</span><span class="visually-hidden">Guide</span></button>
+          <nav class="menubar" aria-label="Project links"><a href="../../">Project</a><a href="../canonical-identity-lab/">Studies</a><a href="https://github.com/DenBraun/Onto2D" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+        </div>
       </header>
 
       <div class="workspace">
         <aside class="catalog-panel" aria-labelledby="catalog-title">
-          <header class="sidebar-header"><h1 id="catalog-title">Explorer</h1><button id="reset-view" class="toolbar-button" type="button" title="Reset filters and graph" aria-label="Reset filters and graph"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#refresh"></use></svg></button></header>
-          <section class="model-section" aria-labelledby="model-section-title">
-            <h2 id="model-section-title"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#chevron-down"></use></svg> Model Pack</h2>
-            <label class="model-picker" for="model-selector"><span>Registered release</span><select id="model-selector" disabled><option>Loading verified registry...</option></select></label>
-            <dl class="release-summary"><div><dt>Model</dt><dd id="model-name">Loading...</dd></div><div><dt>Release</dt><dd id="model-version">...</dd></div><div><dt>Graph</dt><dd><span id="node-count">...</span> nodes / <span id="edge-count">...</span> edges</dd></div><div><dt>Root</dt><dd><code id="root-hash">...</code></dd></div></dl>
-          </section>
-
-          <section class="catalog-section" aria-labelledby="records-title">
-            <header class="tree-heading"><h2 id="records-title"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#chevron-down"></use></svg> <span id="records-title-label">Records</span></h2><span id="catalog-count" aria-live="polite">...</span></header>
-            <div class="catalog-tools">
-              <label class="search-field" for="catalog-search"><span class="visually-hidden">Search ID, name, or summary</span><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#search"></use></svg><input id="catalog-search" type="search" autocomplete="off" placeholder="Search records"></label>
-              <div id="interaction-view-controls" class="filter-grid" hidden>
-                <label for="interaction-perspective"><span>View</span><select id="interaction-perspective"><option value="">All records</option></select></label>
-                <label for="interaction-case"><span>Case</span><select id="interaction-case"><option value="">All cases</option></select></label>
-              </div>
+          <header class="sidebar-header"><h1 id="catalog-title"><span id="records-title-label">Records</span><span id="catalog-count" aria-live="polite">...</span></h1><button id="reset-view" class="toolbar-button" type="button" title="Reset search, filters and graph" aria-label="Reset search, filters and graph"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#refresh"></use></svg></button></header>
+          <div class="catalog-tools">
+            <label class="search-field" for="catalog-search"><span class="visually-hidden">Search ID, name, or summary</span><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#search"></use></svg><input id="catalog-search" type="search" autocomplete="off" placeholder="Search records"><kbd aria-hidden="true">/</kbd></label>
+            <div id="navigator-group" class="segmented" role="radiogroup" aria-label="Group the ontology by" hidden><button type="button" role="radio" data-group="domain" aria-checked="true">Domains</button><button type="button" role="radio" data-group="level" aria-checked="false">Levels</button></div>
+            <details id="filter-panel" class="filter-panel">
+              <summary><span>Filters</span><span id="filter-count" class="filter-count" hidden></span></summary>
               <div class="filter-grid">
                 <label id="layer-filter-control"><span id="layer-filter-label">Layer</span><select id="layer-filter" title="Filter by layer"><option value="">All</option></select></label><label id="level-filter-control"><span id="level-filter-label">Level</span><select id="level-filter" title="Filter by level"><option value="">All</option></select></label><label id="role-filter-control"><span id="role-filter-label">Type</span><select id="role-filter" title="Filter by type"><option value="">All</option></select></label><label id="phase-filter-control"><span id="phase-filter-label">Phase</span><select id="phase-filter" title="Filter by phase"><option value="">All</option></select></label><label id="status-filter-control"><span id="status-filter-label">Status</span><select id="status-filter" title="Filter by status"><option value="">All</option></select></label>
+                <label class="sort-field"><span>Order</span><select id="catalog-sort"><option value="id:asc">ID</option><option value="level:asc">Level, then ID</option><option value="name:asc">Name</option><option value="degree:desc">Most connected</option></select></label>
               </div>
-              <label class="sort-field"><span>Order</span><select id="catalog-sort"><option value="id:asc">ID</option><option value="level:asc">Level, then ID</option><option value="name:asc">Name</option><option value="degree:desc">Most connected</option></select></label>
-            </div>
-            <div class="catalog-list" id="catalog-list" role="listbox" aria-label="Model nodes" tabindex="-1"></div>
-            <div class="catalog-empty" id="catalog-empty" hidden><strong>No matching records</strong><p id="catalog-empty-hint">Clear a filter or shorten the search.</p></div>
-            <button class="catalog-more" id="catalog-more" type="button" hidden>Load more records</button>
-          </section>
+            </details>
+          </div>
+          <div id="ontology-tree" class="ontology-tree" role="tree" aria-label="Ontology of arisings" hidden></div>
+          <div class="catalog-list" id="catalog-list" role="listbox" aria-label="Model nodes" tabindex="-1"></div>
+          <div class="catalog-empty" id="catalog-empty" hidden><strong>No matching records</strong><p id="catalog-empty-hint">Clear a filter or shorten the search.</p></div>
+          <button class="catalog-more" id="catalog-more" type="button" hidden>Load more records</button>
         </aside>
 
         <main class="editor-group" id="studio">
-          <div class="editor-tabs" role="tablist" aria-label="Open editors"><div class="editor-tab is-active" role="tab" aria-selected="true"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#network"></use></svg><span id="editor-tab-label">0.0 Field Distinguishability</span><i></i></div><button id="rdf-import-open" class="editor-add" type="button" aria-haspopup="dialog" aria-controls="rdf-import-dialog" aria-label="Import a reviewed RDF mapping" title="Import reviewed RDF mapping" disabled><span aria-hidden="true">+</span></button></div>
           <div class="editor-toolbar">
-            <div class="graph-controls" aria-label="Neighborhood controls">
-              <fieldset id="direction-controls"><legend>Direction</legend><button type="button" data-direction="parents" aria-pressed="false">Parents</button><button type="button" data-direction="both" aria-pressed="true">Both</button><button type="button" data-direction="children" aria-pressed="false">Children</button></fieldset><span id="direction-depth-separator" class="toolbar-separator"></span><fieldset id="depth-controls"><legend>Depth</legend><span class="control-label">Depth</span><button type="button" data-depth="1" aria-pressed="true">1</button><button type="button" data-depth="2" aria-pressed="false">2</button></fieldset>
+            <div class="toolbar-title"><strong id="graph-title">Loading neighborhood...</strong><span id="graph-subtitle"></span></div>
+            <div class="graph-controls" aria-label="Graph controls">
+              <span class="panel-toggles"><button id="navigator-toggle" class="toolbar-button" type="button" aria-expanded="true" aria-controls="catalog-title" title="Hide the navigator ([)"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M6 2.5v11"></path></svg><span class="visually-hidden">Toggle navigator</span></button><button id="inspector-toggle" class="toolbar-button" type="button" aria-expanded="true" aria-controls="inspector-title" title="Hide the inspector (])"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M10 2.5v11"></path></svg><span class="visually-hidden">Toggle inspector</span></button></span>
+              <fieldset id="direction-controls" class="segmented"><legend>Direction</legend><button type="button" data-direction="parents" aria-pressed="false"><span id="direction-parents-label">Parents</span></button><button type="button" data-direction="both" aria-pressed="true">Both</button><button type="button" data-direction="children" aria-pressed="false"><span id="direction-children-label">Children</span></button></fieldset>
+              <fieldset id="depth-controls" class="segmented"><legend>Depth</legend><span class="control-label" aria-hidden="true">Depth</span><button type="button" data-depth="1" aria-pressed="true">1</button><button type="button" data-depth="2" aria-pressed="false">2</button><button type="button" data-depth="3" aria-pressed="false">3</button></fieldset>
             </div>
-            <div class="graph-legend" aria-label="Graph legend"><strong id="graph-title">Loading neighborhood...</strong><span id="graph-parent-key"><i class="parent-key"></i>parent</span><span><i class="focus-key"></i>focus</span><span id="graph-child-key"><i class="child-key"></i>child</span><span id="graph-case-key" hidden><i></i>case record</span></div>
           </div>
-          <section class="graph-stage" aria-label="Graph editor">
+          <section class="graph-stage" aria-label="Graph">
             <div class="graph-loading" role="status" aria-live="polite">
               <span class="graph-loading-spinner" aria-hidden="true"></span>
               <span>Loading and verifying graph</span>
             </div>
-            <svg id="neighborhood-graph" viewBox="0 0 1040 680" role="img" aria-labelledby="svg-title svg-description"><title id="svg-title">Directed neighborhood graph</title><desc id="svg-description">Parents are placed to the left, the selected node in the center, and children to the right. Arrowheads point from source to target.</desc><defs><marker id="studio-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z"></path></marker><marker id="studio-arrow-focus" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z"></path></marker></defs><g id="graph-edges" class="graph-edges"></g><g id="graph-nodes" class="graph-nodes"></g></svg>
+            <svg id="neighborhood-graph" role="img" aria-labelledby="svg-title svg-description"><title id="svg-title">Directed graph</title><desc id="svg-description">Causes and parents are placed to the left of the focused record, dependents and children to the right. Arrowheads point from source to target.</desc><defs><marker id="studio-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 1 10 5 0 9z"></path></marker><marker id="studio-arrow-supported" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 1 10 5 0 9z"></path></marker><marker id="studio-arrow-focus" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 1 10 5 0 9z"></path></marker><marker id="studio-arrow-highlight" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 1 10 5 0 9z"></path></marker></defs><g id="graph-viewport"><g id="graph-columns" class="graph-columns"></g><g id="graph-edges" class="graph-edges"></g><g id="graph-nodes" class="graph-nodes"></g></g></svg>
+            <div id="arising-table-panel" class="arising-table-panel" hidden><div id="arising-table" class="arising-table" role="region" aria-label="Table of arisings"></div></div>
+            <div id="interaction-view-controls" class="lens-controls stage-panel" hidden>
+              <label for="interaction-perspective"><span>Lens</span><select id="interaction-perspective"><option value="">All records</option></select></label>
+              <label for="interaction-case"><span>Case</span><select id="interaction-case"><option value="">All cases</option></select></label>
+            </div>
+            <div class="stage-legend">
+              <fieldset id="role-controls" class="role-controls" hidden><legend>Show causes by role</legend><button type="button" data-role="arising" aria-pressed="true" title="Show or hide causes in the arising role"><i data-role="arising"></i>Arising</button><button type="button" data-role="maintenance" aria-pressed="true" title="Show or hide causes in the maintenance role"><i data-role="maintenance"></i>Maintenance</button><button type="button" data-role="modulation" aria-pressed="true" title="Show or hide causes in the modulation role"><i data-role="modulation"></i>Modulation</button></fieldset>
+              <div id="graph-legend" class="graph-legend" aria-label="Graph legend"></div>
+            </div>
+            <canvas id="graph-minimap" class="graph-minimap" width="180" height="120" aria-hidden="true" hidden></canvas>
+            <div id="zoom-controls" class="zoom-controls" role="group" aria-label="Zoom"><button type="button" data-zoom="in" title="Zoom in (+)" aria-label="Zoom in">+</button><button type="button" data-zoom="out" title="Zoom out (-)" aria-label="Zoom out">&minus;</button><button type="button" data-zoom="fit" title="Fit to view (0)" aria-label="Fit graph to view"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"></path></svg></button></div>
             <div class="graph-message" id="graph-message" hidden></div>
+            <div class="graph-tooltip" id="graph-tooltip" role="tooltip" hidden></div>
           </section>
-          <details id="arising-table-panel" class="arising-table-panel" open hidden><summary>Arising table: complexity levels by phases</summary><div id="arising-table" class="arising-table" role="grid" aria-label="Arisings by complexity level and phase"></div></details>
-          <footer class="editor-footer"><p id="graph-counts">...</p><p>Click: inspect / double-click: focus</p></footer>
+          <footer class="editor-footer"><p id="graph-counts">...</p><p id="graph-hint">Click to inspect / double-click to focus</p></footer>
         </main>
 
         <aside class="inspector-panel" aria-labelledby="inspector-title">
-          <header class="sidebar-header"><h2 id="inspector-title">Inspector</h2><span id="selected-id">...</span></header>
-          <div class="inspector-content">
-            <div class="node-heading"><p id="selected-coordinate">Level ... / Phase ...</p><h3 id="selected-name">Loading...</h3><div id="selected-tags" class="tag-row"></div></div>
-            <p class="node-summary" id="selected-summary">Loading the selected model record.</p>
-            <dl class="node-metrics"><div><dt>Parents</dt><dd id="parent-count">...</dd></div><div><dt>Children</dt><dd id="child-count">...</dd></div><div><dt>Edges</dt><dd id="degree-count">...</dd></div></dl>
-            <section class="relation-section" aria-labelledby="parents-title"><header><h4 id="parents-title"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#chevron-down"></use></svg> <span id="parents-title-label">Direct parents</span></h4><span id="parents-total">0</span></header><div id="parent-list" class="relation-list"></div></section>
-            <section class="relation-section" aria-labelledby="children-title"><header><h4 id="children-title"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#chevron-down"></use></svg> <span id="children-title-label">Direct children</span></h4><span id="children-total">0</span></header><div id="child-list" class="relation-list"></div></section>
-            <details id="arising-panel" class="record-details arising-panel" open hidden><summary>Arising</summary><div id="arising-details"></div></details>
-            <details id="interaction-cases-panel" class="record-details" open hidden><summary>Interaction properties and comparisons</summary><div id="interaction-cases-records"></div></details>
-            <details class="record-details"><summary>Full description</summary><p id="selected-description"></p></details><details class="record-details" open><summary>Claims, sources and limitations</summary><div id="selected-rationale"></div></details><details class="record-details"><summary>Evidence and source fields</summary><pre id="selected-record"></pre></details>
-            <details id="source-readiness-panel" class="record-details" hidden><summary>Representation roles</summary><p id="source-readiness-summary"></p><div id="source-readiness-records"></div><button id="source-readiness-download" type="button">Download source readiness review</button></details>
-            <details id="optical-review-panel" class="record-details" hidden><summary>Surface response and material propagation</summary><p id="optical-review-summary"></p><div id="optical-review-records"></div><button id="optical-review-download" type="button">Download complete optical review</button></details>
-            <details id="visual-review-panel" class="record-details" hidden><summary>Visual relay, cortical organization and feedback</summary><p id="visual-review-summary"></p><div id="visual-review-records"></div><button id="visual-review-download" type="button">Download complete visual review</button></details>
-            <details id="neural-review-panel" class="record-details" hidden><summary>Neural observations and interpretations</summary><p id="neural-review-summary"></p><div id="neural-review-records"></div><button id="neural-review-download" type="button">Download complete neural review</button></details>
-            <details id="neural-systems-review-panel" class="record-details" hidden><summary>Neural systems: reviewed topics and evidence boundaries</summary><p id="neural-systems-review-summary"></p><div id="neural-systems-review-records"></div><button id="neural-systems-review-download" type="button">Download neural systems review</button></details>
-            <details id="social-systems-review-panel" class="record-details" hidden><summary>Social systems: reviewed topics, sources and evidence boundaries</summary><p id="social-systems-review-summary"></p><div id="social-systems-review-records"></div><button id="social-systems-review-download" type="button">Download social systems review</button></details>
-            <details id="physics-review-panel" class="record-details" hidden><summary>Particle measurements and interpretations</summary><p id="physics-review-summary"></p><div id="physics-review-records"></div><button id="physics-review-download" type="button">Download particle evidence</button></details>
-            <details id="cellular-review-panel" class="record-details" hidden><summary>Cellular preparations, state and immune responses</summary><p id="cellular-review-summary"></p><div id="cellular-review-records"></div><button id="cellular-review-download" type="button">Download cellular evidence</button></details>
-            <details id="organismal-review-panel" class="record-details" hidden><summary>Organismal preparations, regulation and responses</summary><p id="organismal-review-summary"></p><div id="organismal-review-records"></div><button id="organismal-review-download" type="button">Download organismal evidence</button></details>
-            <details id="biochemistry-review-panel" class="record-details" hidden><summary>Biochemical preparations and interpretations</summary><p id="biochemistry-review-summary"></p><div id="biochemistry-review-records"></div><button id="biochemistry-review-download" type="button">Download biochemical evidence</button></details>
-            <section class="source-boundary" aria-label="Evidence boundary"><h4 id="model-boundary-title">Verified model boundary</h4><p id="model-boundary-summary">Record and relation semantics are those declared by this exact verified release.</p><p id="model-boundary-note">The Studio does not add dependency or causal meaning beyond the selected Model Pack.</p></section>
+          <header class="sidebar-header"><h2 id="inspector-title">Inspector</h2></header>
+          <div class="inspector-content" id="inspector-content">
+            <div id="record-inspector">
+              <div class="node-heading"><p id="selected-coordinate">Level ... / Phase ...</p><h3 id="selected-name">Loading...</h3><div id="selected-tags" class="tag-row"></div></div>
+              <div id="record-actions" class="record-actions" hidden></div>
+              <p class="node-summary" id="selected-summary">Loading the selected model record.</p>
+              <dl id="record-facts" class="fact-grid" hidden></dl>
+              <section class="relation-section" aria-labelledby="parents-title"><header><h4 id="parents-title"><span id="parents-title-label">Direct parents</span></h4><span id="parents-total">0</span></header><div id="parent-list" class="relation-list"></div></section>
+              <section class="relation-section" aria-labelledby="children-title"><header><h4 id="children-title"><span id="children-title-label">Direct children</span></h4><span id="children-total">0</span></header><div id="child-list" class="relation-list"></div></section>
+              <details id="lineage-panel" class="record-details lineage-panel" open hidden><summary>Lineage from the root<span id="lineage-summary"></span></summary><div id="lineage-list" class="lineage-list"></div></details>
+              <details id="arising-panel" class="record-details arising-panel" open hidden><summary>Subgraph and open obligations</summary><div id="arising-details"></div></details>
+              <details id="interaction-cases-panel" class="record-details" open hidden><summary>Interaction properties and comparisons</summary><div id="interaction-cases-records"></div></details>
+              <details id="description-panel" class="record-details"><summary>Full description</summary><p id="selected-description"></p></details>
+              <details id="rationale-panel" class="record-details" open><summary>Claims, sources and limitations</summary><div id="selected-rationale"></div></details>
+              <details class="record-details raw-record"><summary>Raw record</summary><pre id="selected-record"></pre></details>
+            </div>
+            <div id="relation-inspector" hidden></div>
           </div>
         </aside>
       </div>
-
     </div>
+
+    <dialog id="guide-dialog" class="studio-dialog guide-dialog" aria-labelledby="guide-title">
+      <header class="dialog-header"><div><p>GUIDE</p><h2 id="guide-title">How to read the Studio</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close guide"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#close"></use></svg></button></header>
+      <div id="guide-content" class="dialog-body guide-content"></div>
+    </dialog>
+
+    <dialog id="release-dialog" class="studio-dialog release-dialog" aria-labelledby="release-title">
+      <header class="dialog-header"><div><p>RELEASE</p><h2 id="release-title"><span id="model-name">Loading...</span></h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close release details"><svg class="ui-icon" aria-hidden="true"><use href="../../assets/icons/ui-symbols.svg#close"></use></svg></button></header>
+      <div class="dialog-body">
+        <section class="release-section" aria-labelledby="model-section-title">
+          <h3 id="model-section-title">Model Pack</h3>
+          <div class="release-picker">
+            <label class="model-picker" for="model-selector"><span>Registered release</span><select id="model-selector" disabled><option>Loading verified registry...</option></select></label>
+            <button id="rdf-import-open" class="secondary-action" type="button" aria-haspopup="dialog" aria-controls="rdf-import-dialog" title="Import reviewed RDF mapping" disabled>Import RDF mapping</button>
+          </div>
+          <dl class="release-summary"><div><dt>Release</dt><dd id="model-version">...</dd></div><div><dt>Graph</dt><dd><span id="node-count">...</span> nodes / <span id="edge-count">...</span> edges</dd></div><div class="release-hash"><dt>Root hash</dt><dd><code id="root-hash">...</code></dd></div><div class="release-wide"><dt>Verification</dt><dd id="verification-state">...</dd></div></dl>
+        </section>
+        <section class="source-boundary" aria-label="Evidence boundary"><h3 id="model-boundary-title">Verified model boundary</h3><p id="model-boundary-summary">Record and relation semantics are those declared by this exact verified release.</p><p id="model-boundary-note">The Studio does not add dependency or causal meaning beyond the selected Model Pack.</p></section>
+        <section class="release-section evidence-library" aria-labelledby="library-title">
+          <h3 id="library-title">Evidence library</h3>
+          <p class="library-intro">Release-wide reviews load when opened. Each keeps its sources, reading extents and evidence limits.</p>
+          <details id="source-readiness-panel" class="record-details" hidden><summary>Representation roles</summary><p id="source-readiness-summary"></p><div id="source-readiness-records"></div><button id="source-readiness-download" type="button">Download source readiness review</button></details>
+          <details id="optical-review-panel" class="record-details" hidden><summary>Surface response and material propagation</summary><p id="optical-review-summary"></p><div id="optical-review-records"></div><button id="optical-review-download" type="button">Download complete optical review</button></details>
+          <details id="visual-review-panel" class="record-details" hidden><summary>Visual relay, cortical organization and feedback</summary><p id="visual-review-summary"></p><div id="visual-review-records"></div><button id="visual-review-download" type="button">Download complete visual review</button></details>
+          <details id="neural-review-panel" class="record-details" hidden><summary>Neural observations and interpretations</summary><p id="neural-review-summary"></p><div id="neural-review-records"></div><button id="neural-review-download" type="button">Download complete neural review</button></details>
+          <details id="neural-systems-review-panel" class="record-details" hidden><summary>Neural systems: reviewed topics and evidence boundaries</summary><p id="neural-systems-review-summary"></p><div id="neural-systems-review-records"></div><button id="neural-systems-review-download" type="button">Download neural systems review</button></details>
+          <details id="social-systems-review-panel" class="record-details" hidden><summary>Social systems: reviewed topics, sources and evidence boundaries</summary><p id="social-systems-review-summary"></p><div id="social-systems-review-records"></div><button id="social-systems-review-download" type="button">Download social systems review</button></details>
+          <details id="physics-review-panel" class="record-details" hidden><summary>Particle measurements and interpretations</summary><p id="physics-review-summary"></p><div id="physics-review-records"></div><button id="physics-review-download" type="button">Download particle evidence</button></details>
+          <details id="cellular-review-panel" class="record-details" hidden><summary>Cellular preparations, state and immune responses</summary><p id="cellular-review-summary"></p><div id="cellular-review-records"></div><button id="cellular-review-download" type="button">Download cellular evidence</button></details>
+          <details id="organismal-review-panel" class="record-details" hidden><summary>Organismal preparations, regulation and responses</summary><p id="organismal-review-summary"></p><div id="organismal-review-records"></div><button id="organismal-review-download" type="button">Download organismal evidence</button></details>
+          <details id="biochemistry-review-panel" class="record-details" hidden><summary>Biochemical preparations and interpretations</summary><p id="biochemistry-review-summary"></p><div id="biochemistry-review-records"></div><button id="biochemistry-review-download" type="button">Download biochemical evidence</button></details>
+        </section>
+      </div>
+    </dialog>
 
     <dialog id="rdf-import-dialog" class="import-dialog" aria-labelledby="rdf-import-title" aria-describedby="rdf-import-description">
       <form id="rdf-import-form">

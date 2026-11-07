@@ -142,7 +142,7 @@ test("the actual interaction inspector resolves case-local evidence and limits w
   const appUrl = new URL("../../apps/model-studio/model-studio.js", import.meta.url);
   const app = await readFile(appUrl, "utf8");
   const start = app.indexOf("function renderInteractionCases(record) {");
-  const end = app.indexOf("\nfunction renderRationale(record)", start);
+  const end = app.indexOf("\nfunction ", start + 1);
   assert.ok(start >= 0 && end > start);
   const render = app.slice(start, end).replaceAll("import.meta.url", JSON.stringify(appUrl.href));
   const source = { id: "source", title: "Measured supplied network", doi: "10.1234/fixture",

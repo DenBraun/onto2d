@@ -4,14 +4,12 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { verifyModelPack } from "@onto2d/model-pack";
-import { BROWSE_LIMITS } from "../apps/model-studio/browse-data.js";
+import { BROWSE_LIMITS, EDGE_FIELDS, NODE_FIELDS } from "../apps/model-studio/browse-data.js";
 import { recordEvidenceContext, usesDictionaryEvidence } from "../apps/model-studio/record-evidence.js";
 
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const DATA = path.join(ROOT, "apps/model-studio/data");
 const LOADER = path.join(ROOT, "apps/model-studio/browse-data.js");
-const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain", "shortDescription"];
-const EDGE_FIELDS = ["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight", "status"];
 const REVIEW_KEYS = ["sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"];
 const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
@@ -84,6 +82,66 @@ export function buildBrowseArtifacts(input) {
     recordsBytes += bytes;
   }
   flush();
+  // Relations between records of a declared ontological layer (the causes between
+  // arisings) load with their exact records, claims and evidence on request.
+  const ontologicalLayer = dictionaries.presentation?.arisingTable?.layer;
+  const layerIds = new Set(typeof ontologicalLayer === "string"
+    ? sourceNodes.filter((node) => node.layer === ontologicalLayer).map((node) => node.id) : []);
+  const claimsById = new Map((Array.isArray(dictionaries.claims) ? dictionaries.claims : []).map((claim) => [claim.id, claim]));
+  const relationPayload = (values) => {
+    const claims = [...new Map(values.flatMap((relation) => (Array.isArray(relation.claimIds) ? relation.claimIds : [])
+      .map((id) => {
+        assert.ok(claimsById.has(id), `Relation claim ${id} is missing from the release dictionaries`);
+        return [id, claimsById.get(id)];
+      }))).values()];
+    return envelope("onto2d-studio-relation-details", {
+      relations: values,
+      claims,
+      ...(sharedEvidence ? { evidence: recordEvidenceContext([{ rationale: claims }], dictionaries) } : {})
+    });
+  };
+  const relationChunks = [];
+  let relations = [];
+  let relationBytes = 0;
+  const chunkClaims = new Set();
+  function flushRelations() {
+    if (relations.length === 0) return;
+    const relative = `${prefix}/relations-${String(relationChunks.length).padStart(4, "0")}.json`;
+    relationChunks.push({
+      descriptor: add(relative, relationPayload(relations), BROWSE_LIMITS.detailBytes),
+      edgeIds: relations.map((relation) => relation.id)
+    });
+    relations = [];
+    relationBytes = 0;
+    chunkClaims.clear();
+  }
+  // Bytes a relation adds to the current chunk: itself, its claims not yet in the chunk and their
+  // evidence. Evidence shared between claims is counted for each, so the estimate only overstates.
+  function relationCost(relation) {
+    const fresh = (Array.isArray(relation.claimIds) ? relation.claimIds : []).filter((id) => !chunkClaims.has(id)).map((id) => {
+      assert.ok(claimsById.has(id), `Relation claim ${id} is missing from the release dictionaries`);
+      return claimsById.get(id);
+    });
+    const evidence = sharedEvidence && fresh.length > 0
+      ? serialize(recordEvidenceContext([{ rationale: fresh }], dictionaries)).byteLength : 0;
+    return serialize(relation).byteLength + fresh.reduce((sum, claim) => sum + serialize(claim).byteLength, 0) + evidence;
+  }
+  const layerRelations = pack.files["model/edges.json"]
+    .filter((edge) => layerIds.has(edge.source) && layerIds.has(edge.target))
+    .sort((left, right) => (left.target < right.target ? -1 : left.target > right.target ? 1 : 0)
+      || (left.id < right.id ? -1 : left.id > right.id ? 1 : 0));
+  for (const relation of layerRelations) {
+    let cost = relationCost(relation);
+    if (relations.length > 0 && relationBytes + cost > CHUNK_TARGET) {
+      flushRelations();
+      cost = relationCost(relation);
+    }
+    relations.push(relation);
+    for (const id of Array.isArray(relation.claimIds) ? relation.claimIds : []) chunkClaims.add(id);
+    relationBytes += cost;
+  }
+  flushRelations();
+  const declarations = dictionaries.arisingDeclarations;
   const interactionViews = dictionaries.interactions ? {
     cases: dictionaries.interactions.cases.map(({ id, title, entityIds, anchorEntityId }) => ({ id, title, entityIds, anchorEntityId })),
     perspectives: dictionaries.interactions.perspectives
@@ -113,8 +171,10 @@ export function buildBrowseArtifacts(input) {
     presentation: dictionaries.presentation ?? {},
     ...(sharedEvidence ? { recordEvidence: dictionaries.recordEvidence } : {}),
     ...(interactionViews ? { interactionViews } : {}),
+    ...(declarations !== undefined && declarations !== null ? { declarations } : {}),
     reviews,
-    chunks
+    chunks,
+    ...(relationChunks.length > 0 ? { relationChunks } : {})
   }), BROWSE_LIMITS.graphBytes);
   const index = { format: "onto2d-studio-browse-index", formatVersion: "1", entries: [{ identity, graph }] };
   const indexDescriptor = add("index.json", index, BROWSE_LIMITS.indexBytes);

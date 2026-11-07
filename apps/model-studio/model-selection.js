@@ -70,7 +70,7 @@ export function requestedWorkspaceState(parameters, selection, hasNode, defaultF
   const direction = sameModel ? parameters.get("direction") : "both";
   return Object.freeze({
     focusId: candidate && hasNode(candidate) ? candidate : defaultFocusId,
-    depth: [1, 2].includes(depth) ? depth : 1,
+    depth: [1, 2, 3].includes(depth) ? depth : 1,
     direction: ["parents", "both", "children"].includes(direction) ? direction : "both"
   });
 }
