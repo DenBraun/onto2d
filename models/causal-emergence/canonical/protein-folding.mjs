@@ -76,24 +76,6 @@ export const PROTEIN_FOLDING_RECORDS = {
         ],
         "limit": "Read the actual complete published article text, figure captions and Methods for pages 817-819 in the public full-text author upload by Sheila S. Jaswal, dated 4 August 2014 on ResearchGate. The platform title is mistranscribed; the embedded article and Crossref/PubMed supply the correct title. Publisher metadata, Crossref and PubMed PMID 9796818 agree on Nature 395(6704):817-819, 22 October 1998. Publisher/UCSF/eScholarship PDF retrievals were blocked or returned HTML; raster figures were not visually checked and no downloadable-paper hash is asserted. The complete extracted primary text is sufficient for the selected source-reported rates/method boundaries but not digitization or independent numerical validation. No explicit erratum found in limited title/DOI/publisher searches on 2026-10-20; Crossref relation is empty, which does not certify no correction. Inherited native-state Pro binding, structural-equivalence assertions and entropy estimates are not new independently read experiments."
       }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
     }
   ],
   "claims": [
@@ -270,7 +252,7 @@ export const PROTEIN_FOLDING_RECORDS = {
       "limitations": [
         "The actual pairings during the lag were still under investigation; footnote 16 reports preliminary work and footnote 19 is unpublished. They cannot supply a separately validated bond-by-bond pathway.",
         "The opening sequence-information inference relies partly on earlier chemical/physical work and intact sequence through the preparation; this experiment does not systematically vary sequences or isolate all solvent, hydrogen-bond, dispersion and electrostatic contributions.",
-        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative parent relation."
+        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative precursor relation."
       ],
       "contextIds": [
         "anfinsen1961-rnase-refolding"
@@ -547,7 +529,7 @@ export const PROTEIN_FOLDING_RECORDS = {
     {
       "id": "C-bio-protein-folding-source-scope",
       "kind": "review-finding",
-      "statement": "Card 3.0 is qualified to prepared RNase recovery of catalytic/physical readouts, lymphotactin condition-dependent alternative folds with construct-bounded functional assays, and an alpha-lytic-protease kinetic-metastability inference. These cases connect sequence-bearing molecular preparations, conformation-sensitive observations and specified activities. They establish neither a universal unique native fold, universal spontaneous folding, a complete energy-landscape mechanism nor experimentally validated SOMA process-level ancestry.",
+      "statement": "The admitted scope is prepared RNase recovery of catalytic/physical readouts, lymphotactin condition-dependent alternative folds with construct-bounded functional assays, and an alpha-lytic-protease kinetic-metastability inference. These cases connect sequence-bearing molecular preparations, conformation-sensitive observations and specified activities. They establish neither a universal unique native fold, universal spontaneous folding nor a complete energy-landscape mechanism.",
       "scope": "Selected prepared protein system and source-reported observable/inference only.",
       "status": "literature-synthesis",
       "citations": [
@@ -611,14 +593,13 @@ export const PROTEIN_FOLDING_RECORDS = {
         "The source short description is retained only as a finite protein/condition/function statement. Stable means persistence on a declared observational timescale; folded structural restriction does not entail a unique static conformation.",
         "Linear-polypeptide preparation, sequence-dependent contacts, solvent and temperature/ionic conditions are admitted as supplied context or structural interpretation. A universal force decomposition, native-state free-energy minimum, folding trajectory or necessity of any named force is excluded.",
         "Catalytic activity is supported by RNase assays and selective binding/receptor-response distinctions by lymphotactin assays. Atom-resolved catalytic alignment, active-site/binding-pocket formation, domain-level coordination, regulated flexibility and general allosteric responsiveness are not established by these selected experiments; they remain other system-specific scopes.",
-        "Original parent 2.3 Chemical Bonding and Molecular Formation, weight 0.3, necessary, dependency 0, direction [0], modes [0,1], arising, is a molecular-substrate description rather than a measured universal chemical-formation-to-folding causal edge. The experiments start with synthesized proteins.",
-        "Original parent 2.5 Molecular Resonance and Delocalization, weight 0.15, enabling, dependency 10, direction [0], modes [0,1], arising, lacks an isolated resonance intervention or causal estimator here. Peptide-bond structure cannot supply that weight or an autonomous prerequisite stage.",
-        "Original parent 2.7 Hydrogen Bonds, weight 0.25, necessary, dependency 10, direction [0], mode [1], arising, is qualified to structure/model vocabulary. NMR structural hydrogen-bond patterns do not establish a universal necessity intervention, exclusive force mechanism or threshold.",
-        "Original parent 2.6 Van der Waals Interactions and Dispersion Forces, weight 0.2, enabling, dependency 10, direction [0], modes [0,1], arising, is not isolated or quantitatively apportioned by these studies. Hydrophobic packing is not synonymous with a separately measured dispersion-energy contribution.",
-        "Original parent 2.12 Molecular Self-Organization in Liquids, weight 0.1, contextual, dependency 12, direction [0], mode [1], arising, is qualified to actual solution preparation only. Aqueous samples do not establish bulk liquid order as a necessary earlier causal stage.",
-        "Every original parent uses carrier group 2/type 4, N_min=N_crit=1,N_sat=null. No operational counted carrier, threshold, saturation experiment or universal one-chain minimum is supplied. The Ltn40 model is a dimer; finite composition differs from a universal minimality theorem. No replacement normalized weights are invented.",
-        "Original Level 3, Phase 1, TypeRole 0, Science [0,1,2,3], established, MustCover [0,10], ShouldCover [3,9,11], OptionalCover [4,5,6] and SOMA process/object/arising vocabulary are catalogue classification choices, not experimentally validated scientific authority or mathematical construction rules.",
-        "Decoded original requirements are substrate/constraint (must), catalyst/resource/transport (should), and regulation/gradient/compartment (optional). Named protein, reagents, buffer and assay are retained as actual context. Pro assistance has its measured concentration-dependent protocol; no universal catalyst, ongoing energy/resource flux, transport, compartment or maintained gradient is demonstrated as a folding prerequisite by these sources. Heparin intervention is a finite regulatory effect, not validation of the requirement taxonomy.",
+        "Chemical bonding and molecular formation provide a molecular-substrate description rather than a measured universal chemical-formation-to-folding causal edge. The experiments start with synthesized proteins.",
+        "Molecular resonance and delocalization lack an isolated resonance intervention or causal estimator here. Peptide-bond structure cannot supply an autonomous prerequisite stage.",
+        "Hydrogen bonds are qualified to structure/model vocabulary. NMR structural hydrogen-bond patterns do not establish a universal necessity intervention, exclusive force mechanism or threshold.",
+        "Van der Waals interactions and dispersion forces are not isolated or quantitatively apportioned by these studies. Hydrophobic packing is not synonymous with a separately measured dispersion-energy contribution.",
+        "Molecular self-organization in liquids is qualified to actual solution preparation only. Aqueous samples do not establish bulk liquid order as a necessary earlier causal stage.",
+        "The Ltn40 model is a dimer; finite composition differs from a universal minimality theorem.",
+        "Named protein, reagents, buffer and assay are retained as actual context. Pro assistance has its measured concentration-dependent protocol; no universal catalyst, ongoing energy/resource flux, transport, compartment or maintained gradient is demonstrated as a folding prerequisite by these sources. Heparin intervention is a finite regulatory effect.",
         "The unnamed theoretical energy-landscape paragraph has no publication identity. No specific landscape Hamiltonian, statistical ensemble, simulation or kinetic prediction is admitted. The generic empirical list supplies no additional X-ray, cryo-EM or single-molecule acquisition; the selected NMR/kinetic evidence has named sources and finite protocols.",
         "A functional conformation need not be the unique global equilibrium minimum. In-vitro recovery, multiple interconverting folds and kinetically persistent activity are distinct results; none establishes folding of all proteins without pro-regions, chaperones, membranes, ligands or cellular energy inputs.",
         "All selected results remain publication-supported, with full acquisition and fit replay absent. Unread upstream studies, unreviewed supporting information and unresolved construct/variant assumptions remain explicit; the finite disposition does not claim independent replication or complete protein-folding science."
@@ -659,7 +640,7 @@ export const PROTEIN_FOLDING_RECORDS = {
       "limitations": [
         "The actual pairings during the lag were still under investigation; footnote 16 reports preliminary work and footnote 19 is unpublished. They cannot supply a separately validated bond-by-bond pathway.",
         "The opening sequence-information inference relies partly on earlier chemical/physical work and intact sequence through the preparation; this experiment does not systematically vary sequences or isolate all solvent, hydrogen-bond, dispersion and electrostatic contributions.",
-        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative parent relation."
+        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative precursor relation."
       ],
       "contextIds": [
         "anfinsen1961-rnase-refolding"
@@ -745,7 +726,7 @@ export const PROTEIN_FOLDING_RECORDS = {
     {
       "id": "M-bio-folding-synthesis-method",
       "kind": "method",
-      "statement": "Synthesize only the three declared protein studies into the finite original-card scope, preserving chemical/spectral, structural, functional and thermodynamic roles and excluding unmeasured catalogue ancestry, weights and carrier minima.",
+      "statement": "Synthesize only the three declared protein studies into the finite scope, preserving chemical/spectral, structural, functional and thermodynamic roles.",
       "scope": "Descriptive source-analysis dependency, not a new physical cause or independent replication.",
       "status": "method-contract",
       "citations": [
@@ -809,14 +790,13 @@ export const PROTEIN_FOLDING_RECORDS = {
         "The source short description is retained only as a finite protein/condition/function statement. Stable means persistence on a declared observational timescale; folded structural restriction does not entail a unique static conformation.",
         "Linear-polypeptide preparation, sequence-dependent contacts, solvent and temperature/ionic conditions are admitted as supplied context or structural interpretation. A universal force decomposition, native-state free-energy minimum, folding trajectory or necessity of any named force is excluded.",
         "Catalytic activity is supported by RNase assays and selective binding/receptor-response distinctions by lymphotactin assays. Atom-resolved catalytic alignment, active-site/binding-pocket formation, domain-level coordination, regulated flexibility and general allosteric responsiveness are not established by these selected experiments; they remain other system-specific scopes.",
-        "Original parent 2.3 Chemical Bonding and Molecular Formation, weight 0.3, necessary, dependency 0, direction [0], modes [0,1], arising, is a molecular-substrate description rather than a measured universal chemical-formation-to-folding causal edge. The experiments start with synthesized proteins.",
-        "Original parent 2.5 Molecular Resonance and Delocalization, weight 0.15, enabling, dependency 10, direction [0], modes [0,1], arising, lacks an isolated resonance intervention or causal estimator here. Peptide-bond structure cannot supply that weight or an autonomous prerequisite stage.",
-        "Original parent 2.7 Hydrogen Bonds, weight 0.25, necessary, dependency 10, direction [0], mode [1], arising, is qualified to structure/model vocabulary. NMR structural hydrogen-bond patterns do not establish a universal necessity intervention, exclusive force mechanism or threshold.",
-        "Original parent 2.6 Van der Waals Interactions and Dispersion Forces, weight 0.2, enabling, dependency 10, direction [0], modes [0,1], arising, is not isolated or quantitatively apportioned by these studies. Hydrophobic packing is not synonymous with a separately measured dispersion-energy contribution.",
-        "Original parent 2.12 Molecular Self-Organization in Liquids, weight 0.1, contextual, dependency 12, direction [0], mode [1], arising, is qualified to actual solution preparation only. Aqueous samples do not establish bulk liquid order as a necessary earlier causal stage.",
-        "Every original parent uses carrier group 2/type 4, N_min=N_crit=1,N_sat=null. No operational counted carrier, threshold, saturation experiment or universal one-chain minimum is supplied. The Ltn40 model is a dimer; finite composition differs from a universal minimality theorem. No replacement normalized weights are invented.",
-        "Original Level 3, Phase 1, TypeRole 0, Science [0,1,2,3], established, MustCover [0,10], ShouldCover [3,9,11], OptionalCover [4,5,6] and SOMA process/object/arising vocabulary are catalogue classification choices, not experimentally validated scientific authority or mathematical construction rules.",
-        "Decoded original requirements are substrate/constraint (must), catalyst/resource/transport (should), and regulation/gradient/compartment (optional). Named protein, reagents, buffer and assay are retained as actual context. Pro assistance has its measured concentration-dependent protocol; no universal catalyst, ongoing energy/resource flux, transport, compartment or maintained gradient is demonstrated as a folding prerequisite by these sources. Heparin intervention is a finite regulatory effect, not validation of the requirement taxonomy.",
+        "Chemical bonding and molecular formation provide a molecular-substrate description rather than a measured universal chemical-formation-to-folding causal edge. The experiments start with synthesized proteins.",
+        "Molecular resonance and delocalization lack an isolated resonance intervention or causal estimator here. Peptide-bond structure cannot supply an autonomous prerequisite stage.",
+        "Hydrogen bonds are qualified to structure/model vocabulary. NMR structural hydrogen-bond patterns do not establish a universal necessity intervention, exclusive force mechanism or threshold.",
+        "Van der Waals interactions and dispersion forces are not isolated or quantitatively apportioned by these studies. Hydrophobic packing is not synonymous with a separately measured dispersion-energy contribution.",
+        "Molecular self-organization in liquids is qualified to actual solution preparation only. Aqueous samples do not establish bulk liquid order as a necessary earlier causal stage.",
+        "The Ltn40 model is a dimer; finite composition differs from a universal minimality theorem.",
+        "Named protein, reagents, buffer and assay are retained as actual context. Pro assistance has its measured concentration-dependent protocol; no universal catalyst, ongoing energy/resource flux, transport, compartment or maintained gradient is demonstrated as a folding prerequisite by these sources. Heparin intervention is a finite regulatory effect.",
         "The unnamed theoretical energy-landscape paragraph has no publication identity. No specific landscape Hamiltonian, statistical ensemble, simulation or kinetic prediction is admitted. The generic empirical list supplies no additional X-ray, cryo-EM or single-molecule acquisition; the selected NMR/kinetic evidence has named sources and finite protocols.",
         "A functional conformation need not be the unique global equilibrium minimum. In-vitro recovery, multiple interconverting folds and kinetically persistent activity are distinct results; none establishes folding of all proteins without pro-regions, chaperones, membranes, ligands or cellular energy inputs.",
         "All selected results remain publication-supported, with full acquisition and fit replay absent. Unread upstream studies, unreviewed supporting information and unresolved construct/variant assumptions remain explicit; the finite disposition does not claim independent replication or complete protein-folding science."
@@ -971,7 +951,7 @@ export const PROTEIN_FOLDING_RECORDS = {
       "openObligations": [
         "The actual pairings during the lag were still under investigation; footnote 16 reports preliminary work and footnote 19 is unpublished. They cannot supply a separately validated bond-by-bond pathway.",
         "The opening sequence-information inference relies partly on earlier chemical/physical work and intact sequence through the preparation; this experiment does not systematically vary sequences or isolate all solvent, hydrogen-bond, dispersion and electrostatic contributions.",
-        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative parent relation."
+        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative precursor relation."
       ],
       "level": 3
     },
@@ -1205,7 +1185,7 @@ export const PROTEIN_FOLDING_RECORDS = {
       "id": "bio:protein-folding-source-scope",
       "name": "Scoped folding, functional readout and kinetic-stability evidence",
       "kind": "scoped-process",
-      "description": "Card 3.0 is qualified to prepared RNase recovery of catalytic/physical readouts, lymphotactin condition-dependent alternative folds with construct-bounded functional assays, and an alpha-lytic-protease kinetic-metastability inference. These cases connect sequence-bearing molecular preparations, conformation-sensitive observations and specified activities. They establish neither a universal unique native fold, universal spontaneous folding, a complete energy-landscape mechanism nor experimentally validated SOMA process-level ancestry.",
+      "description": "The admitted scope is prepared RNase recovery of catalytic/physical readouts, lymphotactin condition-dependent alternative folds with construct-bounded functional assays, and an alpha-lytic-protease kinetic-metastability inference. These cases connect sequence-bearing molecular preparations, conformation-sensitive observations and specified activities. They establish neither a universal unique native fold, universal spontaneous folding nor a complete energy-landscape mechanism.",
       "claimIds": [
         "C-bio-protein-folding-source-scope"
       ],
@@ -1246,28 +1226,19 @@ export const PROTEIN_FOLDING_RECORDS = {
         {
           "sourceId": "sohl1998-alp-kinetic-stability",
           "locator": "Published page 819, complete Methods through references: WT/S195A preparations, pH/temperature/denaturant conditions, sensitive activity assay, initial-rate approximation, pro-region fitting model and calorimetry"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/0"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/0"
         }
       ],
       "openObligations": [
         "The source short description is retained only as a finite protein/condition/function statement. Stable means persistence on a declared observational timescale; folded structural restriction does not entail a unique static conformation.",
         "Linear-polypeptide preparation, sequence-dependent contacts, solvent and temperature/ionic conditions are admitted as supplied context or structural interpretation. A universal force decomposition, native-state free-energy minimum, folding trajectory or necessity of any named force is excluded.",
         "Catalytic activity is supported by RNase assays and selective binding/receptor-response distinctions by lymphotactin assays. Atom-resolved catalytic alignment, active-site/binding-pocket formation, domain-level coordination, regulated flexibility and general allosteric responsiveness are not established by these selected experiments; they remain other system-specific scopes.",
-        "Original parent 2.3 Chemical Bonding and Molecular Formation, weight 0.3, necessary, dependency 0, direction [0], modes [0,1], arising, is a molecular-substrate description rather than a measured universal chemical-formation-to-folding causal edge. The experiments start with synthesized proteins.",
-        "Original parent 2.5 Molecular Resonance and Delocalization, weight 0.15, enabling, dependency 10, direction [0], modes [0,1], arising, lacks an isolated resonance intervention or causal estimator here. Peptide-bond structure cannot supply that weight or an autonomous prerequisite stage.",
-        "Original parent 2.7 Hydrogen Bonds, weight 0.25, necessary, dependency 10, direction [0], mode [1], arising, is qualified to structure/model vocabulary. NMR structural hydrogen-bond patterns do not establish a universal necessity intervention, exclusive force mechanism or threshold.",
-        "Original parent 2.6 Van der Waals Interactions and Dispersion Forces, weight 0.2, enabling, dependency 10, direction [0], modes [0,1], arising, is not isolated or quantitatively apportioned by these studies. Hydrophobic packing is not synonymous with a separately measured dispersion-energy contribution.",
-        "Original parent 2.12 Molecular Self-Organization in Liquids, weight 0.1, contextual, dependency 12, direction [0], mode [1], arising, is qualified to actual solution preparation only. Aqueous samples do not establish bulk liquid order as a necessary earlier causal stage.",
-        "Every original parent uses carrier group 2/type 4, N_min=N_crit=1,N_sat=null. No operational counted carrier, threshold, saturation experiment or universal one-chain minimum is supplied. The Ltn40 model is a dimer; finite composition differs from a universal minimality theorem. No replacement normalized weights are invented.",
-        "Original Level 3, Phase 1, TypeRole 0, Science [0,1,2,3], established, MustCover [0,10], ShouldCover [3,9,11], OptionalCover [4,5,6] and SOMA process/object/arising vocabulary are catalogue classification choices, not experimentally validated scientific authority or mathematical construction rules.",
-        "Decoded original requirements are substrate/constraint (must), catalyst/resource/transport (should), and regulation/gradient/compartment (optional). Named protein, reagents, buffer and assay are retained as actual context. Pro assistance has its measured concentration-dependent protocol; no universal catalyst, ongoing energy/resource flux, transport, compartment or maintained gradient is demonstrated as a folding prerequisite by these sources. Heparin intervention is a finite regulatory effect, not validation of the requirement taxonomy.",
+        "Chemical bonding and molecular formation provide a molecular-substrate description rather than a measured universal chemical-formation-to-folding causal edge. The experiments start with synthesized proteins.",
+        "Molecular resonance and delocalization lack an isolated resonance intervention or causal estimator here. Peptide-bond structure cannot supply an autonomous prerequisite stage.",
+        "Hydrogen bonds are qualified to structure/model vocabulary. NMR structural hydrogen-bond patterns do not establish a universal necessity intervention, exclusive force mechanism or threshold.",
+        "Van der Waals interactions and dispersion forces are not isolated or quantitatively apportioned by these studies. Hydrophobic packing is not synonymous with a separately measured dispersion-energy contribution.",
+        "Molecular self-organization in liquids is qualified to actual solution preparation only. Aqueous samples do not establish bulk liquid order as a necessary earlier causal stage.",
+        "The Ltn40 model is a dimer; finite composition differs from a universal minimality theorem.",
+        "Named protein, reagents, buffer and assay are retained as actual context. Pro assistance has its measured concentration-dependent protocol; no universal catalyst, ongoing energy/resource flux, transport, compartment or maintained gradient is demonstrated as a folding prerequisite by these sources. Heparin intervention is a finite regulatory effect.",
         "The unnamed theoretical energy-landscape paragraph has no publication identity. No specific landscape Hamiltonian, statistical ensemble, simulation or kinetic prediction is admitted. The generic empirical list supplies no additional X-ray, cryo-EM or single-molecule acquisition; the selected NMR/kinetic evidence has named sources and finite protocols.",
         "A functional conformation need not be the unique global equilibrium minimum. In-vitro recovery, multiple interconverting folds and kinetically persistent activity are distinct results; none establishes folding of all proteins without pro-regions, chaperones, membranes, ligands or cellular energy inputs.",
         "All selected results remain publication-supported, with full acquisition and fit replay absent. Unread upstream studies, unreviewed supporting information and unresolved construct/variant assumptions remain explicit; the finite disposition does not claim independent replication or complete protein-folding science."
@@ -1566,7 +1537,7 @@ export const PROTEIN_FOLDING_RECORDS = {
         "The final activity depends on substrate and assay conditions. Recovering a bulk assay does not itself determine a binding pocket or residue-level catalytic geometry.",
         "The actual pairings during the lag were still under investigation; footnote 16 reports preliminary work and footnote 19 is unpublished. They cannot supply a separately validated bond-by-bond pathway.",
         "The opening sequence-information inference relies partly on earlier chemical/physical work and intact sequence through the preparation; this experiment does not systematically vary sequences or isolate all solvent, hydrogen-bond, dispersion and electrostatic contributions.",
-        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative parent relation."
+        "A source-consistent mechanistic suggestion is not an independent experimental replication, a full energy-landscape calculation or a necessary generative precursor relation."
       ],
       "readExtent": "complete-published-six-page-article-with-selected-figure-table-visual-check",
       "reviewedLocators": [

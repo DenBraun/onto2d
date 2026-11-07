@@ -100,8 +100,8 @@ become MIT-licensed. No separate CLA or signed-off-by trailer is required.
 
 - Do not rewrite `references/` data to make an audit pass. Update a reviewed golden
   only when the source change and its scientific rationale are intentional.
-- Do not classify every `ParentCode` as generative. Source relation policy and
-  node-resolution criteria must be frozen before topology-aware migration.
+- Source relation policy and node-resolution criteria must be frozen before
+  topology-aware migration.
 - Keep `@onto2d/kernel` dependency-free. Adapters may depend inward on kernel
   contracts; the kernel must never import an adapter.
 - Add or update tests for behavior changes and update documentation in the same

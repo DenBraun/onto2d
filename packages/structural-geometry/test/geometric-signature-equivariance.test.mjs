@@ -5,7 +5,7 @@ import { buildGeometricSignature } from "@onto2d/structural-geometry/geometric-s
 import { fixtures, readJson } from "../../../cases/structural-geometry/geometric-signatures/fixtures.mjs";
 import { computeEvidence } from "../../../cases/structural-geometry/geometric-signatures/build.mjs";
 
-test("all 25 source/request transports preserve geometric values, degree roles, intervals, coverage and stopping events", async () => {
+test("all 23 source/request transports preserve geometric values, degree roles, intervals, coverage and stopping events", async () => {
   for (const f of await fixtures()) {
     const original = await readJson(`artifacts/${f.id}.json`), nodes = f.pack.files["model/nodes.json"], edges = f.pack.files["model/edges.json"];
     const nodeIds = new Map(nodes.map((n, i) => [n.id, `${i % 2 ? "\u{10000}" : "\ue000"} node ${nodes.length - i} \n`]));

@@ -2,24 +2,6 @@
 export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
   "sources": [
     {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "su2017",
       "kind": "research-publication",
       "title": "Neuronal activity modifies the chromatin accessibility landscape in the adult brain",
@@ -310,7 +292,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
           "Published page 832 Figure 2e and associated Results, page 836 Methods Stability assays: 15 C GroEL-binding/protease-protection control in 100 micromolar methotrexate, distinct from degradation at 25 C and 320 micromolar methotrexate",
           "Published pages 830-831 Introduction/Results, page 831 Figure 1, pages 833-835 Internal initiation sites/Discussion and Figures 5-6, page 836 complete Methods and page 837 references: finite substrate evidence versus proposed recognition/unfolding cycle and prior work"
         ],
-        "limit": "Read all eight actual published PDF pages 830-837, including complete Results/Discussion/Methods, all six captions and references; visually inspected Figures 1-6 and the Methods page through local page renders. The PDF is hosted on the corresponding author laboratory website and reproduces the published title, five authors, journal11(9), page headers and online 15 August2004 DOI. PubMed PMID 15311270, Crossref and publisher metadata agree on identity, 15 August online date and September2004 issue. No explicit correction was found in limited title/DOI/erratum searches on2026-10-20. Crossref lists a has-review relation10.3410/f.1020782.240458, not an erratum; empty update fields do not prove correction absence. The assays are in rabbit reticulocyte lysate with partly purified translated radiolabeled substrates, with a separately E. coli-expressed/purified His6 construct for immunoblotting. They are not a newly purified/reconstituted proteasome system. Data-not-shown controls, unpublished exact tail sequences, direct binding/force/translocation measurements and raw autoradiograms are not reconstructed. Figure 6 is a proposed cycle using an earlier EM reconstruction, not a newly observed structure or complete measured sequence."
+        "limit": "Read all eight actual published PDF pages 830-837, including complete Results/Discussion/Methods, all six captions and references; visually inspected Figures 1-6 and the Methods page through local page renders. The PDF is hosted on the corresponding author laboratory website and reproduces the published title, five authors, journal 11(9), page headers and online 15 August 2004 DOI. PubMed PMID 15311270, Crossref and publisher metadata agree on identity, 15 August online date and September 2004 issue. No explicit correction was found in limited title/DOI/erratum searches on 2026-10-20. Crossref lists a has-review relation 10.3410/f.1020782.240458, not an erratum; empty update fields do not prove correction absence. The assays are in rabbit reticulocyte lysate with partly purified translated radiolabeled substrates, with a separately E. coli-expressed/purified His6 construct for immunoblotting. They are not a newly purified/reconstituted proteasome system. Data-not-shown controls, unpublished exact tail sequences, direct binding/force/translocation measurements and raw autoradiograms are not reconstructed. Figure 6 is a proposed cycle using an earlier EM reconstruction, not a newly observed structure or complete measured sequence."
       }
     }
   ],
@@ -384,8 +366,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Methylation, histone-associated ChIP, factor-associated ChIP, protein immunoreactivity and endocrine responses are different observables. Cross-fostering and broad TSA perturbations do not isolate a unique causal histone/methylation mediator or universal histone code.",
         "Cross-sectional developmental cohorts and adult observations do not establish mitotic or transgenerational chromatin inheritance, continuous persistence in the same cell, lineage stabilization, universal contextual memory or long-range coordinated regulation.",
         "No genome-wide sequence comparison proves absence of all sequence variation. The epigenetic interpretation is bounded by the actual locus assays and environmental/drug contrasts, rather than universal sequence-independent regulation of replication and transcription.",
-        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate original parent scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes."
       ],
       "contextIds": [
         "weaver2004"
@@ -435,8 +416,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Methylation, histone-associated ChIP, factor-associated ChIP, protein immunoreactivity and endocrine responses are different observables. Cross-fostering and broad TSA perturbations do not isolate a unique causal histone/methylation mediator or universal histone code.",
         "Cross-sectional developmental cohorts and adult observations do not establish mitotic or transgenerational chromatin inheritance, continuous persistence in the same cell, lineage stabilization, universal contextual memory or long-range coordinated regulation.",
         "No genome-wide sequence comparison proves absence of all sequence variation. The epigenetic interpretation is bounded by the actual locus assays and environmental/drug contrasts, rather than universal sequence-independent regulation of replication and transcription.",
-        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate original parent scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes."
       ],
       "contextIds": [
         "weaver2004"
@@ -499,8 +479,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Accessibility and contact-frequency profiles are not direct chromatin-density, unique three-dimensional packing, mechanical force or molecular remodeling trajectories. RNA abundance is not a transcription rate or a direct replication/repair-permissibility measurement.",
         "Separate profiles and populations do not establish that packing causes the expression differences. c-Fos perturbation has multiple possible routes; matching ATAC/RNA effects does not uniquely identify accessibility as their mediator.",
         "Population-level region overlap through sampled windows is not an inherited state, a persistent same-cell trajectory, a universal physical sequence-to-functional-resource transformation or complete spatial control of genomic function.",
-        "The original epigenetic, nucleic-acid copying, hydrogen-bond and signal-pathway parents are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Epigenetic regulation, nucleic-acid copying, hydrogen bonding and signal pathways are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention."
       ],
       "contextIds": [
         "su2017",
@@ -564,8 +543,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Accessibility and contact-frequency profiles are not direct chromatin-density, unique three-dimensional packing, mechanical force or molecular remodeling trajectories. RNA abundance is not a transcription rate or a direct replication/repair-permissibility measurement.",
         "Separate profiles and populations do not establish that packing causes the expression differences. c-Fos perturbation has multiple possible routes; matching ATAC/RNA effects does not uniquely identify accessibility as their mediator.",
         "Population-level region overlap through sampled windows is not an inherited state, a persistent same-cell trajectory, a universal physical sequence-to-functional-resource transformation or complete spatial control of genomic function.",
-        "The original epigenetic, nucleic-acid copying, hydrogen-bond and signal-pathway parents are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Epigenetic regulation, nucleic-acid copying, hydrogen bonding and signal pathways are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention."
       ],
       "contextIds": [
         "su2017",
@@ -594,14 +572,13 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology.",
         "The selected positive scope is accumulating source-assigned ubiquitinated substrate bands under blocked deubiquitination/degradation. Similar net accumulation in two linker constructs is not an isolated ligation rate, exact attachment-site map or proof of identical chain topology.",
         "The genetically encoded linear Ub4 fusion is not a measured post-translational isopeptide-attachment event. Tagging, initiation and degradation have distinct preparations and readouts; no universal modification-to-function causal effect is isolated.",
         "Phosphorylation, acetylation, methylation and glycosylation are not additional reviewed experiments in this scope. No universal timing after completed synthesis, fast reversibility, combinatorial signalling code or regulated network reprogramming is demonstrated.",
-        "The original cooperativity, enzyme-complex and translation parents are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Cooperativity, enzyme complexes and translation are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway."
       ]
     },
     {
@@ -626,14 +603,13 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology.",
         "The selected positive scope is accumulating source-assigned ubiquitinated substrate bands under blocked deubiquitination/degradation. Similar net accumulation in two linker constructs is not an isolated ligation rate, exact attachment-site map or proof of identical chain topology.",
         "The genetically encoded linear Ub4 fusion is not a measured post-translational isopeptide-attachment event. Tagging, initiation and degradation have distinct preparations and readouts; no universal modification-to-function causal effect is isolated.",
         "Phosphorylation, acetylation, methylation and glycosylation are not additional reviewed experiments in this scope. No universal timing after completed synthesis, fast reversibility, combinatorial signalling code or regulated network reprogramming is demonstrated.",
-        "The original cooperativity, enzyme-complex and translation parents are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Cooperativity, enzyme complexes and translation are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway."
       ],
       "contextIds": [
         "prakash2004-substrate-ubiquitination"
@@ -661,14 +637,13 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology.",
         "The selected positive scope is accumulating source-assigned ubiquitinated substrate bands under blocked deubiquitination/degradation. Similar net accumulation in two linker constructs is not an isolated ligation rate, exact attachment-site map or proof of identical chain topology.",
         "The genetically encoded linear Ub4 fusion is not a measured post-translational isopeptide-attachment event. Tagging, initiation and degradation have distinct preparations and readouts; no universal modification-to-function causal effect is isolated.",
         "Phosphorylation, acetylation, methylation and glycosylation are not additional reviewed experiments in this scope. No universal timing after completed synthesis, fast reversibility, combinatorial signalling code or regulated network reprogramming is demonstrated.",
-        "The original cooperativity, enzyme-complex and translation parents are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Cooperativity, enzyme complexes and translation are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway."
       ],
       "contextIds": [
         "prakash2004-substrate-ubiquitination"
@@ -1116,7 +1091,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
     {
       "id": "M-bio-prakash2004-substrate-ubiquitination-context",
       "kind": "method",
-      "statement": "Compare N-end-rule Usignal-DHFR and the shortened Usignal-delta15 construct in the same source lysate assay at 25 C, retaining0.5 mM ATP/regeneration and 25 micromolar ubiquitin, but add 2 micromolar Ubal to inhibit deubiquitinating enzymes and 320 micromolar methotrexate to block degradation. Quantify ubiquitinated-band accumulation relative to initial nonubiquitinated radiolabeled substrate by SDS-PAGE/electronic autoradiography. The shortened linker deletes residues 25-40 as described in the source; its delta15 name is retained without silently correcting the source numbering.",
+      "statement": "Compare N-end-rule Usignal-DHFR and the shortened Usignal-delta15 construct in the same source lysate assay at 25 C, retaining 0.5 mM ATP/regeneration and 25 micromolar ubiquitin, but add 2 micromolar Ubal to inhibit deubiquitinating enzymes and 320 micromolar methotrexate to block degradation. Quantify ubiquitinated-band accumulation relative to initial nonubiquitinated radiolabeled substrate by SDS-PAGE/electronic autoradiography. The shortened linker deletes residues 25-40 as described in the source; its delta15 name is retained without silently correcting the source numbering.",
       "scope": "Only the named purified-client or defined-substrate preparation and assay; no universal proteostasis or ontological construction claim.",
       "status": "method-contract",
       "citations": [
@@ -1135,8 +1110,8 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology."
       ],
       "contextIds": [
@@ -1146,7 +1121,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
     {
       "id": "C-bio-proteasome-tagging-control",
       "kind": "review-finding",
-      "statement": "In the separate25 C lysate assay with Ubal and methotrexate, the full Usignal-DHFR and shortened Usignal-delta15-DHFR constructs accumulate ubiquitinated forms at similar source rates and extents. This constrains reduced net ubiquitination as the explanation for slower degradation of the shortened construct, without equating band accumulation to direct proteasome binding.",
+      "statement": "In the separate 25 C lysate assay with Ubal and methotrexate, the full Usignal-DHFR and shortened Usignal-delta15-DHFR constructs accumulate ubiquitinated forms at similar source rates and extents. This constrains reduced net ubiquitination as the explanation for slower degradation of the shortened construct, without equating band accumulation to direct proteasome binding.",
       "scope": "Only the named purified-client or defined-substrate preparation and assay; no universal proteostasis or ontological construction claim.",
       "status": "publication-supported",
       "citations": [
@@ -1165,8 +1140,8 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology."
       ],
       "contextIds": [
@@ -1237,8 +1212,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Methylation, histone-associated ChIP, factor-associated ChIP, protein immunoreactivity and endocrine responses are different observables. Cross-fostering and broad TSA perturbations do not isolate a unique causal histone/methylation mediator or universal histone code.",
         "Cross-sectional developmental cohorts and adult observations do not establish mitotic or transgenerational chromatin inheritance, continuous persistence in the same cell, lineage stabilization, universal contextual memory or long-range coordinated regulation.",
         "No genome-wide sequence comparison proves absence of all sequence variation. The epigenetic interpretation is bounded by the actual locus assays and environmental/drug contrasts, rather than universal sequence-independent regulation of replication and transcription.",
-        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate original parent scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes."
       ],
       "level": 3
     },
@@ -1252,10 +1226,6 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
       ],
       "status": "evidence-scoped",
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/19"
-        },
         {
           "sourceId": "weaver2004",
           "locator": "Results: cross-fostering; Figure 1d; Methods: Animals and maternal behavior"
@@ -1284,8 +1254,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Methylation, histone-associated ChIP, factor-associated ChIP, protein immunoreactivity and endocrine responses are different observables. Cross-fostering and broad TSA perturbations do not isolate a unique causal histone/methylation mediator or universal histone code.",
         "Cross-sectional developmental cohorts and adult observations do not establish mitotic or transgenerational chromatin inheritance, continuous persistence in the same cell, lineage stabilization, universal contextual memory or long-range coordinated regulation.",
         "No genome-wide sequence comparison proves absence of all sequence variation. The epigenetic interpretation is bounded by the actual locus assays and environmental/drug contrasts, rather than universal sequence-independent regulation of replication and transcription.",
-        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate original parent scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Replication/transcription, protein cooperativity, signalling and hydrogen-bond studies are separate scopes. They are not jointly measured necessary mediators or calibrated contributions to the selected hippocampal outcomes."
       ],
       "level": 3
     },
@@ -1338,8 +1307,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Accessibility and contact-frequency profiles are not direct chromatin-density, unique three-dimensional packing, mechanical force or molecular remodeling trajectories. RNA abundance is not a transcription rate or a direct replication/repair-permissibility measurement.",
         "Separate profiles and populations do not establish that packing causes the expression differences. c-Fos perturbation has multiple possible routes; matching ATAC/RNA effects does not uniquely identify accessibility as their mediator.",
         "Population-level region overlap through sampled windows is not an inherited state, a persistent same-cell trajectory, a universal physical sequence-to-functional-resource transformation or complete spatial control of genomic function.",
-        "The original epigenetic, nucleic-acid copying, hydrogen-bond and signal-pathway parents are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Epigenetic regulation, nucleic-acid copying, hydrogen bonding and signal pathways are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention."
       ],
       "level": 3
     },
@@ -1353,10 +1321,6 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
       ],
       "status": "evidence-scoped",
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/34"
-        },
         {
           "sourceId": "su2017",
           "locator": "Results: chromatin accessibility and gene expression; Figure 2d; Online Methods: RNA-seq and data analyses"
@@ -1396,8 +1360,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "Accessibility and contact-frequency profiles are not direct chromatin-density, unique three-dimensional packing, mechanical force or molecular remodeling trajectories. RNA abundance is not a transcription rate or a direct replication/repair-permissibility measurement.",
         "Separate profiles and populations do not establish that packing causes the expression differences. c-Fos perturbation has multiple possible routes; matching ATAC/RNA effects does not uniquely identify accessibility as their mediator.",
         "Population-level region overlap through sampled windows is not an inherited state, a persistent same-cell trajectory, a universal physical sequence-to-functional-resource transformation or complete spatial control of genomic function.",
-        "The original epigenetic, nucleic-acid copying, hydrogen-bond and signal-pathway parents are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Epigenetic regulation, nucleic-acid copying, hydrogen bonding and signal pathways are separate scopes. A named chromatin role does not make them necessary causal ancestors or substitute for a matched packaging intervention."
       ],
       "level": 3
     },
@@ -1423,14 +1386,13 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology.",
         "The selected positive scope is accumulating source-assigned ubiquitinated substrate bands under blocked deubiquitination/degradation. Similar net accumulation in two linker constructs is not an isolated ligation rate, exact attachment-site map or proof of identical chain topology.",
         "The genetically encoded linear Ub4 fusion is not a measured post-translational isopeptide-attachment event. Tagging, initiation and degradation have distinct preparations and readouts; no universal modification-to-function causal effect is isolated.",
         "Phosphorylation, acetylation, methylation and glycosylation are not additional reviewed experiments in this scope. No universal timing after completed synthesis, fast reversibility, combinatorial signalling code or regulated network reprogramming is demonstrated.",
-        "The original cooperativity, enzyme-complex and translation parents are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Cooperativity, enzyme complexes and translation are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway."
       ],
       "level": 3
     },
@@ -1446,10 +1408,6 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
       "status": "evidence-scoped",
       "sourceCoordinates": [
         {
-          "sourceId": "legacy-3",
-          "locator": "/26"
-        },
-        {
           "sourceId": "prakash2004-proteasome-initiation",
           "locator": "Published pages 833-834, Results Requirement for unstructured initiation sites and Figure 4a-e; page 836 Methods Substrate proteins, Proteasome degradation assays and Ubiquitination assays: deleted linker, matched ubiquitination, two tails and linear Ub4 fusion"
         }
@@ -1461,14 +1419,13 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology.",
         "The selected positive scope is accumulating source-assigned ubiquitinated substrate bands under blocked deubiquitination/degradation. Similar net accumulation in two linker constructs is not an isolated ligation rate, exact attachment-site map or proof of identical chain topology.",
         "The genetically encoded linear Ub4 fusion is not a measured post-translational isopeptide-attachment event. Tagging, initiation and degradation have distinct preparations and readouts; no universal modification-to-function causal effect is isolated.",
         "Phosphorylation, acetylation, methylation and glycosylation are not additional reviewed experiments in this scope. No universal timing after completed synthesis, fast reversibility, combinatorial signalling code or regulated network reprogramming is demonstrated.",
-        "The original cooperativity, enzyme-complex and translation parents are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway.",
-        "Source catalogue level, phase, role, science/status and requirement labels are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, physical thresholds or a universal construction sequence. Generic evidence placeholders add no unidentified study or independent replication."
+        "Cooperativity, enzyme complexes and translation are not measured formation events or universally necessary prerequisites of this supplied-substrate assay. The separate retinal signalling scope does not provide a matched modification pathway."
       ],
       "level": 3
     },
@@ -1476,7 +1433,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
       "id": "bio:prakash2004-substrate-ubiquitination-context",
       "name": "Separate lysate ubiquitination-control context",
       "kind": "context",
-      "description": "Compare N-end-rule Usignal-DHFR and the shortened Usignal-delta15 construct in the same source lysate assay at 25 C, retaining0.5 mM ATP/regeneration and 25 micromolar ubiquitin, but add 2 micromolar Ubal to inhibit deubiquitinating enzymes and 320 micromolar methotrexate to block degradation. Quantify ubiquitinated-band accumulation relative to initial nonubiquitinated radiolabeled substrate by SDS-PAGE/electronic autoradiography. The shortened linker deletes residues 25-40 as described in the source; its delta15 name is retained without silently correcting the source numbering.",
+      "description": "Compare N-end-rule Usignal-DHFR and the shortened Usignal-delta15 construct in the same source lysate assay at 25 C, retaining 0.5 mM ATP/regeneration and 25 micromolar ubiquitin, but add 2 micromolar Ubal to inhibit deubiquitinating enzymes and 320 micromolar methotrexate to block degradation. Quantify ubiquitinated-band accumulation relative to initial nonubiquitinated radiolabeled substrate by SDS-PAGE/electronic autoradiography. The shortened linker deletes residues 25-40 as described in the source; its delta15 name is retained without silently correcting the source numbering.",
       "claimIds": [
         "M-bio-prakash2004-substrate-ubiquitination-context"
       ],
@@ -1494,8 +1451,8 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology."
       ],
       "level": 3
@@ -1680,7 +1637,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
       "issue": "9",
       "pages": "830-837",
       "system": "Full versus shortened N-end-rule DHFR linker constructs in rabbit reticulocyte lysate",
-      "preparation": "Compare N-end-rule Usignal-DHFR and the shortened Usignal-delta15 construct in the same source lysate assay at 25 C, retaining0.5 mM ATP/regeneration and 25 micromolar ubiquitin, but add 2 micromolar Ubal to inhibit deubiquitinating enzymes and 320 micromolar methotrexate to block degradation. Quantify ubiquitinated-band accumulation relative to initial nonubiquitinated radiolabeled substrate by SDS-PAGE/electronic autoradiography. The shortened linker deletes residues 25-40 as described in the source; its delta15 name is retained without silently correcting the source numbering.",
+      "preparation": "Compare N-end-rule Usignal-DHFR and the shortened Usignal-delta15 construct in the same source lysate assay at 25 C, retaining 0.5 mM ATP/regeneration and 25 micromolar ubiquitin, but add 2 micromolar Ubal to inhibit deubiquitinating enzymes and 320 micromolar methotrexate to block degradation. Quantify ubiquitinated-band accumulation relative to initial nonubiquitinated radiolabeled substrate by SDS-PAGE/electronic autoradiography. The shortened linker deletes residues 25-40 as described in the source; its delta15 name is retained without silently correcting the source numbering.",
       "observable": "Accumulating ubiquitinated radiolabeled substrate bands in Ubal/methotrexate lysate control",
       "finding": "Full and shortened N-end-rule constructs show similar source ubiquitination kinetics/extent despite different degradation susceptibility.",
       "limitations": [
@@ -1690,25 +1647,21 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
         "The source tests folded and methotrexate-stabilized proteins. The assays do not establish that only misfolded proteins are degraded, that native proteins are excluded, or that the proteasome itself decides whether a client is damaged.",
         "The engineered linear Ub4 tag has four N-to-C fused ubiquitin moieties with G76V substitutions. It is not a newly measured native Lys48-isopeptide-linked polyubiquitin chain or an independently observed covalent ubiquitination reaction.",
         "No universal requirement for ubiquitination is admitted; the paper itself cites ubiquitin-independent cases as background. Recognition, initiation, unfolding and proteolysis remain distinct, with the detailed unfolding/pulling cycle conditional.",
-        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal20-residue minimum is admitted from data-not-shown observations.",
-        "The ubiquitination control adds2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
+        "No raw autoradiograms, numerical rate fit, binding constant, precise substrate concentration or kinetic uncertainty is reconstructed. Exact engineered tail amino-acid sequences are not printed in the reviewed main Methods, and no universal 20-residue minimum is admitted from data-not-shown observations.",
+        "The ubiquitination control adds 2 micromolar Ubal to inhibit deubiquitination and 320 micromolar methotrexate to inhibit degradation. Its accumulating ubiquitin-band signal is a net assay readout under those conditions, not direct matched receptor occupancy or one isolated E1/E2/E3 rate.",
         "Similar source ubiquitination kinetics for full versus shortened N-end-rule tags constrain reduced tagging as the explanation for the deletion effect. They do not prove equal proteasome-binding occupancy or exact chain topology.",
         "Selected degradation panels use 25 C and 0.5 mM ATP with regeneration; Figure 1 two-domain direction assays use 30 C and are not silently treated as the same condition.",
         "C-terminal tail effects differ between cpLys38 and wild-type DHFR under 320 micromolar methotrexate: the former can be degraded whereas the latter can be clipped while the stabilized DHFR remains. A tag or tail does not guarantee complete degradation of every substrate.",
-        "Tail disorder is a source assignment supported by the paper separate4 C nonspecific-protease sensitivity assay and a hydrodynamic statement partly data-not-shown. It is not a newly solved structure or an independent measurement of every tail conformation.",
+        "Tail disorder is a source assignment supported by the paper separate 4 C nonspecific-protease sensitivity assay and a hydrodynamic statement partly data-not-shown. It is not a newly solved structure or an independent measurement of every tail conformation.",
         "The global-unfolding control is a GroEL-binding/protease-protection assay at 15 C with 100 micromolar methotrexate. Degradation uses 25 C and 320 micromolar methotrexate; a similar control trace is not proof of identical local stability or kinetics under every degradation condition.",
         "Nonspecific protease sensitivity and GroEL capture are operational readouts. A similar source global-unfolding trace does not exclude local changes or establish an exact thermodynamic free-energy identity.",
-        "Original Level3, Phase2 Self-organization, Science arrays and established status are catalogue declarations, not experimental validation of every original conjunct, an ontological arising, a universal level hierarchy or independent reproduction.",
-        "Original carrier group2/type4, parent weights, necessary/enabling/contextual labels, directions, interaction modes and null saturation are not measured quantitative laws. No universal molecule count or critical carrier threshold is inferred from these constructs.",
-        "Generic original theoretical and empirical Evidence entries contain no DOI/URL. They supply no extra experiments, genetic perturbations, model implementation or universal proteostasis network validation.",
-        "Card3.36 property/persistent-quality-capability wording is a representational scope. The selected assays establish finite substrate susceptibility, not a newly observed persistent whole-cell quality-control property or an ontological acquisition event.",
+        "The selected assays establish finite substrate susceptibility, not a newly observed persistent whole-cell quality-control property or an ontological acquisition event.",
         "The original identify/tag/dismantle failed conformations claim is qualified to engineered tag/tail-dependent degradation of defined folded models. Universal native-versus-aberrant surveillance and selective elimination of only defective proteins are excluded from admission.",
         "The original toxic-accumulation suppression, amino-acid recovery/reuse, aggregation prevention, maintenance of functional populations and higher-order stabilization are not measured by these band-loss/clipping assays.",
-        "Original MustCover0/10, ShouldCover4/12 and Optional5/7 are not universal substrate/constraint/regulation/environment/gradient/information gates. Actual lysate, substrate, tag, ligand, ATP and assay conditions are retained; no universal information/gradient variable is measured.",
-        "Original3.36 parents3.20(weight0.4,necessary,dependency4,Nmin1,Ncrit2),3.0(0.35,necessary,dependency10,Nmin1,Ncrit1),2.3(0.15,enabling,dependency10,Nmin1,Ncrit1),3.26(0.1,contextual,dependency4,Nmin1,Ncrit2) all point downward. First three use constraint mode;3.26 uses feedback mode. These do not become universal necessary ancestry, quantitative parent laws or operational thresholds.",
+        "Actual lysate, substrate, tag, ligand, ATP and assay conditions are retained; no universal information/gradient variable is measured.",
         "The source lysate assays do not causally connect GroEL/GroES assistance to proteasome routing. The chaperone client assays and proteasome model substrate assays have separate systems, species preparations and contexts even though both papers use proteins called DHFR in some experiments.",
-        "Original3.26 is a broad post-translational-modification card. N-end-rule ubiquitination and an engineered linear Ub4 fusion do not establish every phosphorylation/acetylation/methylation/glycosylation claim, universal reversibility or the original PTM parent hierarchy.",
-        "Original2.3 is a quantum-mechanical bonding card; proteolytic band loss is not a new molecular electronic-structure measurement, chemistry-wide bond theory or proof of a downward-causation hierarchy."
+        "N-end-rule ubiquitination and an engineered linear Ub4 fusion do not establish every phosphorylation/acetylation/methylation/glycosylation claim or universal reversibility.",
+        "Proteolytic band loss is not a new molecular electronic-structure measurement, chemistry-wide bond theory or proof of a downward-causation hierarchy."
       ],
       "readExtent": "complete-published-eight-page-primary-article-and-six-main-figures",
       "reviewedLocators": [
@@ -1716,7 +1669,7 @@ export const CHROMATIN_PROTEIN_MODIFICATION_RECORDS = {
       ],
       "metadataCheckedAt": "2026-10-20",
       "metadataUrl": "https://doi.org/10.1038/nsmb814",
-      "correctionCheck": "Read all eight actual published PDF pages 830-837, including complete Results/Discussion/Methods, all six captions and references; visually inspected Figures 1-6 and the Methods page through local page renders. The PDF is hosted on the corresponding author laboratory website and reproduces the published title, five authors, journal11(9), page headers and online 15 August2004 DOI. PubMed PMID 15311270, Crossref and publisher metadata agree on identity, 15 August online date and September2004 issue. No explicit correction was found in limited title/DOI/erratum searches on2026-10-20. Crossref lists a has-review relation10.3410/f.1020782.240458, not an erratum; empty update fields do not prove correction absence. The assays are in rabbit reticulocyte lysate with partly purified translated radiolabeled substrates, with a separately E. coli-expressed/purified His6 construct for immunoblotting. They are not a newly purified/reconstituted proteasome system. Data-not-shown controls, unpublished exact tail sequences, direct binding/force/translocation measurements and raw autoradiograms are not reconstructed. Figure 6 is a proposed cycle using an earlier EM reconstruction, not a newly observed structure or complete measured sequence."
+      "correctionCheck": "Read all eight actual published PDF pages 830-837, including complete Results/Discussion/Methods, all six captions and references; visually inspected Figures 1-6 and the Methods page through local page renders. The PDF is hosted on the corresponding author laboratory website and reproduces the published title, five authors, journal 11(9), page headers and online 15 August 2004 DOI. PubMed PMID 15311270, Crossref and publisher metadata agree on identity, 15 August online date and September 2004 issue. No explicit correction was found in limited title/DOI/erratum searches on 2026-10-20. Crossref lists a has-review relation 10.3410/f.1020782.240458, not an erratum; empty update fields do not prove correction absence. The assays are in rabbit reticulocyte lysate with partly purified translated radiolabeled substrates, with a separately E. coli-expressed/purified His6 construct for immunoblotting. They are not a newly purified/reconstituted proteasome system. Data-not-shown controls, unpublished exact tail sequences, direct binding/force/translocation measurements and raw autoradiograms are not reconstructed. Figure 6 is a proposed cycle using an earlier EM reconstruction, not a newly observed structure or complete measured sequence."
     }
   ],
   "comparisons": [],

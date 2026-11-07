@@ -13,7 +13,7 @@ not redefine model semantics. Every file is content-addressed, unexpected
 paths fail closed, and verification reconstructs all indexes from nodes and
 edges.
 
-Aggregate pack canonicalization accepts up to 1,000,000 visited values so
+Aggregate pack canonicalization accepts up to 4,000,000 visited values so
 expanded evidence and indexes fit one verified pack. The kernel default and
 individual-record budget remain 100,000. Depth (64), per-string byte limits
 (1,048,576), and the loader/cache byte limits still apply. The aggregate profile
@@ -36,7 +36,7 @@ content against their configured total limit; a required bundle counts again.
 The bundle loader applies `maxBundleBytes` to both physical and expanded content.
 See the [transport contract](../../docs/architecture/ENGINE.md#bounded-json-value-table-transport).
 
-The package is model-neutral. It does not know the Causal Emergence Catalogue,
+The package is model-neutral. It does not know the Causal Emergence graph,
 network aliases, UI layout, or adapter semantics. Separate Node.js and browser
 subpaths load the same transparent format without moving filesystem or network
 policy into the portable main entrypoint.
@@ -199,8 +199,8 @@ links, path escapes, duplicate or unexpected entries, ambiguous local metadata,
 bad CRC-32, unsafe expansion, and content that fails normal Model Pack
 verification.
 
-Default archive limits are 64 MiB of input, 32 entries, 16 MiB compressed and
-16 MiB uncompressed per entry, 64 MiB total uncompressed content, and a 200:1
+Default archive limits are 256 MiB of input, 32 entries, 64 MiB compressed and
+64 MiB uncompressed per entry, 256 MiB total uncompressed content, and a 200:1
 per-entry compression ratio. `loadModelPackPath` selects the transport from the
 inspected filesystem type rather than trusting a filename extension.
 
@@ -215,7 +215,7 @@ responses. Set
 split files exactly. The bundle loader accepts a `Blob`, `ArrayBuffer`, or
 array-buffer view and checks its byte limit before parsing and verification.
 
-Default browser limits are 16 MiB per split file, 64 MiB total split content,
+Default browser limits are 64 MiB per split file, 256 MiB total split content,
 64 MiB for a bundle, and 16,384 characters per resolved URL. The adapter does
 not discover models, resolve aliases, use a registry, persist a cache itself,
 load ZIP archives, retry requests, or repair content. The optional cache

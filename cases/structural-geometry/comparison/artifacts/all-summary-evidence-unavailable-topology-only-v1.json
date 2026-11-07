@@ -3,7 +3,7 @@
     "id": "structural-comparison",
     "version": "1"
   },
-  "artifactHash": "sha256:c3ca810c2a915d09635d16c68ce5b8bafe49785e9defd0cc7efeecc693803fe9",
+  "artifactHash": "sha256:baec5073c997861f5ac132dcb61d8011e9eb70d2641657f012a2ec875b59f47a",
   "components": [
     {
       "family": "topology",
@@ -20,7 +20,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -47,7 +47,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -74,7 +74,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -101,7 +101,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -128,7 +128,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -155,7 +155,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -182,7 +182,7 @@
       "reasons": [
         {
           "code": "evidence-unavailable",
-          "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+          "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
           "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
           "side": "left"
         }
@@ -1245,49 +1245,49 @@
   "request": {
     "evidenceGaps": [
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "node-count-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
         "side": "left"
       },
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "edge-count-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
         "side": "left"
       },
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "weak-component-sizes-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
         "side": "left"
       },
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "strong-component-sizes-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
         "side": "left"
       },
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "reachable-ordered-pair-count-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
         "side": "left"
       },
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "cyclic-node-count-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",
         "side": "left"
       },
       {
-        "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+        "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
         "disposition": "unavailable",
         "observableId": "isolated-node-count-v1",
         "reference": "cases/structural-geometry/comparison/PROTOCOL.md",

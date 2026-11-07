@@ -1,12 +1,11 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { loadCanonicalSource } from "../../models/causal-emergence/canonical/source.mjs";
 import { validateCellularReview } from "../../models/causal-emergence/canonical/cellular.mjs";
-import { CELLULAR_RECORDS, CELLULAR_CARD_SCOPES } from "../../models/causal-emergence/canonical/level-four.mjs";
+import { CELLULAR_RECORDS } from "../../models/causal-emergence/canonical/level-four.mjs";
+import { withBridgeReadings } from "../../models/causal-emergence/canonical/bridges.mjs";
 
 const source = await loadCanonicalSource();
-const originals = JSON.parse(await readFile(new URL("../../references/level-4.json", import.meta.url), "utf8"));
 const published = new Set(["publication-supported", "literature-synthesis"]);
 const ctx = (data) => Object.fromEntries(["sources", "claims", "entities", "relations"]
   .map((key) => [key, new Map(data.graph[key].map((record) => [record.id, record]))]));
@@ -14,27 +13,14 @@ const validate = (data) => validateCellularReview(data, ctx(data));
 const claim = (id) => source.graph.claims.find((record) => record.id === id);
 const studies = new Map(source.cellular.studies.map((record) => [record.id, record]));
 
-test("all original Level-4 cards have source-bound scopes, assertion decisions and complete ordered parents", () => {
-  assert.equal(originals.length, 33);
-  assert.equal(CELLULAR_CARD_SCOPES.length, originals.length);
-  assert.deepEqual(CELLULAR_CARD_SCOPES.map((card) => card.sourceIndex), originals.map((card) => card.Id));
-  for (const [i, card] of CELLULAR_CARD_SCOPES.entries()) {
-    assert.equal(card.originalName, originals[i].Name);
-    assert.deepEqual(card.parentDispositions.map((parent) => parent.parentCode),
-      originals[i].Parents.map((parent) => parent.ParentCode));
-    assert.ok(card.assertions.length && card.excludedDefaults.length);
-    assert.ok(card.assertions.every((assertion) => assertion.reason.length && assertion.claimIds.length));
-    assert.ok(card.nodeIds.some((id) => ctx(source).entities.get(id).sourceCoordinates.some((coordinate) =>
-      coordinate.sourceId === "legacy-4" && coordinate.locator === `/${i}`)));
-  }
-});
 
 test("canonical graph, study ledger and readiness retain every reviewed cellular record without loss", () => {
   const actual = { ...ctx(source),
     studies, comparisons: new Map(source.cellular.comparisons.map((record) => [record.id, record])),
     readiness: new Map(source.readiness.nodeRoles.map((record) => [record.nodeId, record])) };
   for (const [key, rows] of Object.entries(CELLULAR_RECORDS)) for (const expected of rows) {
-    assert.deepEqual(actual[key].get(key === "readiness" ? expected.nodeId : expected.id), expected);
+    // Bridge readings extend a source's reviewed passages without changing this ledger's preparations.
+    assert.deepEqual(actual[key].get(key === "readiness" ? expected.nodeId : expected.id), key === "sources" ? withBridgeReadings(expected) : expected);
   }
   assert.equal(source.cellular.independentScientificReviewComplete, false);
   assert.deepEqual(source.cellular.checkIds, []);
@@ -122,9 +108,6 @@ test("apoptotic recovery distinguishes same-cell liver morphology from HeLa exec
   assert.match(executionStudy.preparation, /Figure 1H population quantification.*5 hours/);
   assert.match(executionStudy.preparation, /population fractions do not quantify the exact imaged cells/);
   assert.ok(execution.limitations.some((limit) => /3-hour Figure 1G.*5-hour Figure 1H/.test(limit)));
-  const card = CELLULAR_CARD_SCOPES.find((scope) => scope.sourceIndex === 19);
-  assert.equal(card.assertions.find((assertion) => assertion.topic === "Apoptotic commitment overrides all molecular survival and repair").disposition,
-    "excluded");
 });
 
 test("senescence secretion, fibroblast arrest and satellite-cell rescue are independent endpoints", () => {
@@ -145,9 +128,6 @@ test("natural lineage profiles and engineered neuronal function do not silently 
   assert.match(natural.limitations.join(" "), /not.*identical whole genomes/);
   assert.match(engineered.limitations.join(" "), /does not demonstrate unchanged nucleotide sequence|does not prove that nucleotide sequence is unchanged/);
   assert.match(engineered.preparation, /lentiviruses/);
-  const identity = CELLULAR_CARD_SCOPES.find((scope) => scope.sourceIndex === 5).assertions.find((assertion) =>
-    assertion.topic === "Distinct functional states within genetically identical cells without sequence change");
-  assert.equal(identity.disposition, "qualified");
 });
 
 test("a finding cannot lose its preparation while retaining publication-supported status", () => {

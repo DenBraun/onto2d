@@ -321,7 +321,7 @@ const contracts = {
         "locators": [
           "verify(): supplied light-baryon weight and charge enumeration, symmetric flavor monomial weights, synthetic octet-relation identities and historical Figure 1 mass spacing"
         ],
-        "limit": "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced. Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "limit": "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced. Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       }
     }
   ],
@@ -355,13 +355,13 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "Approximate light-flavor SU(3) acts on u,d,s labels and is distinct from the local color SU(3) gauge symmetry. Y=B+S and Q/e=I3+Y/2 here exclude heavy-flavor terms. Representation weights and net-flavor labels are not counts of freely observed quarks or complete Fock-state occupations.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
       "id": "D-phys-light-baryon-multiplets",
       "kind": "review-finding",
-      "statement": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N,Lambda,Sigma,Xi and J^P=3/2+ decuplet Delta,Sigma*,Xi*,Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
+      "statement": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N, Lambda, Sigma, Xi and J^P=3/2+ decuplet Delta, Sigma*, Xi*, Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
       "scope": "Selected light-flavor model conventions, the first-order baryon-octet relation and the Barnes1964 reported Omega event; each calculation and inference retains its declared inputs.",
       "status": "definition",
       "citations": [
@@ -382,7 +382,7 @@ const contracts = {
       "limitations": [
         "Approximate light-flavor SU(3) acts on u,d,s labels and is distinct from the local color SU(3) gauge symmetry. Y=B+S and Q/e=I3+Y/2 here exclude heavy-flavor terms. Representation weights and net-flavor labels are not counts of freely observed quarks or complete Fock-state occupations.",
         "In the stated ground-state three-quark model the antisymmetric color factor accompanies a symmetric space-spin-flavor factor. Flavor 3 tensor 3 tensor 3 contains 10,8,8,1, but it does not assign four independent ground-state families: the spatially symmetric ground-state spin-flavor 56 contains the J^P=1/2+ octet and J^P=3/2+ decuplet. A flavor-singlet ground state is excluded under these assumptions; excited or exotic assignments are outside scope.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -402,7 +402,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The octet mass relation is supplied only to first order in the stated symmetry violation for a common-spin/parity multiplet. No general breaking Hamiltonian, precision mass fit, uncertainty or covariance is derived. Historical meson formulas in the same paper are not imported as modern mass-squared or mixing results.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -422,7 +422,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "contextIds": [
         "barnes1964-reconstruction"
@@ -634,7 +634,7 @@ const contracts = {
         "The reported 0.7e-10 s is the reconstructed proper decay time of this event, not an ensemble mean lifetime or a lifetime fit. Neither a branching fraction nor all-channel stability follows.",
         "The report gives 1686 +/- 12 MeV/c^2 while explicitly deferring a detailed mass discussion until more events and better-understood systematic errors. No new confidence-level meaning, independent significance, modern mass combination or numerical reconstruction of that uncertainty is assigned.",
         "The report presents one selected event from partially analyzed pictures. Approximately 100000 photographs and 10^6 feet of kaon tracks are exposure descriptions, not Omega counts or a measured production rate. The archive stamp and publication date do not establish an acquisition date range.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "contextIds": [
         "barnes1964-reconstruction"
@@ -672,7 +672,7 @@ const contracts = {
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
         "The reported 0.7e-10 s is the reconstructed proper decay time of this event, not an ensemble mean lifetime or a lifetime fit. Neither a branching fraction nor all-channel stability follows.",
         "The report gives 1686 +/- 12 MeV/c^2 while explicitly deferring a detailed mass discussion until more events and better-understood systematic errors. No new confidence-level meaning, independent significance, modern mass combination or numerical reconstruction of that uncertainty is assigned.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "contextIds": [
         "barnes1964-reconstruction"
@@ -727,7 +727,7 @@ const contracts = {
         "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced.",
         "The octet mass relation is supplied only to first order in the stated symmetry violation for a common-spin/parity multiplet. No general breaking Hamiltonian, precision mass fit, uncertainty or covariance is derived. Historical meson formulas in the same paper are not imported as modern mass-squared or mixing results.",
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "contextIds": [
         "hadron-family-replay"
@@ -784,7 +784,7 @@ const contracts = {
         "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced.",
         "The octet mass relation is supplied only to first order in the stated symmetry violation for a common-spin/parity multiplet. No general breaking Hamiltonian, precision mass fit, uncertainty or covariance is derived. Historical meson formulas in the same paper are not imported as modern mass-squared or mixing results.",
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "contextIds": [
         "hadron-family-replay"
@@ -839,7 +839,7 @@ const contracts = {
         "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced.",
         "The octet mass relation is supplied only to first order in the stated symmetry violation for a common-spin/parity multiplet. No general breaking Hamiltonian, precision mass fit, uncertainty or covariance is derived. Historical meson formulas in the same paper are not imported as modern mass-squared or mixing results.",
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "contextIds": [
         "hadron-family-replay"
@@ -872,14 +872,14 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
       "id": "phys:light-baryon-multiplets",
       "name": "Ground-state light-baryon multiplets",
       "kind": "definition",
-      "description": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N,Lambda,Sigma,Xi and J^P=3/2+ decuplet Delta,Sigma*,Xi*,Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
+      "description": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N, Lambda, Sigma, Xi and J^P=3/2+ decuplet Delta, Sigma*, Xi*, Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
       "claimIds": [
         "D-phys-light-baryon-multiplets"
       ],
@@ -896,7 +896,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -916,7 +916,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -936,7 +936,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -956,7 +956,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -980,7 +980,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -1008,7 +1008,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -1032,7 +1032,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -1060,7 +1060,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ]
     },
     {
@@ -1414,7 +1414,7 @@ const contracts = {
         "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced.",
         "The octet mass relation is supplied only to first order in the stated symmetry violation for a common-spin/parity multiplet. No general breaking Hamiltonian, precision mass fit, uncertainty or covariance is derived. Historical meson formulas in the same paper are not imported as modern mass-squared or mixing results.",
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "readExtent": "declared-local-calculation",
       "reviewedLocators": [
@@ -1460,7 +1460,7 @@ const contracts = {
         "The executable checks supplied weights, their electric charges, three synthetic positive-mass relation examples and historical printed-center spacing. The equal-weight bookkeeping is not a proof of an irreducible decomposition or a construction of spin-space-color wave functions. No first-order breaking derivation, measured mass relation, discovery fit/covariance or dynamics is reproduced.",
         "The octet mass relation is supplied only to first order in the stated symmetry violation for a common-spin/parity multiplet. No general breaking Hamiltonian, precision mass fit, uncertainty or covariance is derived. Historical meson formulas in the same paper are not imported as modern mass-squared or mixing results.",
         "Barnes adopts the decuplet expectation I=0, Q=-1, S=-3, J^P=3/2+ and mass about 1680 MeV/c^2. Figure 1 uses historical centers 1238,1385,1532; their arithmetic continuation is 1679. These are an approximate comparison hypothesis, not a modern fitted mass prediction or a measurement of Omega spin/parity.",
-        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, nuclear or weak-decay stability, or a causal generation rule between source cards."
+        "Multiplet classification and conditional event identification do not establish a real-time hadron formation path, a universal constituent minimum, or nuclear or weak-decay stability."
       ],
       "sourceIds": [
         "pdg2025-quark-model",
@@ -1486,7 +1486,7 @@ const contracts = {
     {
       "nodeId": "phys:light-baryon-multiplets",
       "role": "definition",
-      "denotes": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N,Lambda,Sigma,Xi and J^P=3/2+ decuplet Delta,Sigma*,Xi*,Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
+      "denotes": "For the stated spatially symmetric ground-state three-quark model, the spin-flavor 56 contains the J^P=1/2+ octet N, Lambda, Sigma, Xi and J^P=3/2+ decuplet Delta, Sigma*, Xi*, Omega. Their isospin rows contain 2+1+3+2 and 4+3+2+1 weights. Lambda and Sigma0 share (I3,Y)=(0,0) but have different isospin.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-light-baryon-multiplets"

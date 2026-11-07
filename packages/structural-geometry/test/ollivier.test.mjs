@@ -5,6 +5,7 @@ import test from "node:test";
 import { hashCanonical } from "@onto2d/kernel/canonical";
 import { Model, Onto2D } from "@onto2d/engine";
 import { analyzeStructuralGeometry } from "@onto2d/structural-geometry";
+import { buildModelPack } from "@onto2d/model-pack";
 import { OLLIVIER_POLICY, OLLIVIER_SOLVER, prepareOllivierRequest, acceptOllivierResponse,
   createOllivierAnalyzer, createOllivierAnalysis, verifyOllivierArtifact } from "@onto2d/structural-geometry/ollivier";
 import { createPythonOllivierAdapter } from "@onto2d/structural-geometry/ollivier/node";
@@ -145,6 +146,18 @@ test("induced scope explicitly accounts for boundary edges and recomputes its ow
   assert.equal(fragment.request.sourceProjectionHash, full.request.sourceProjectionHash);
   assert.notEqual(fragment.request.projectionHash, full.request.projectionHash);
   assert.throws(() => verifyOllivierArtifact(fragment, pack, { edgeIds: ["b->c"] }), code("RESPONSE_BINDING_MISMATCH"));
+});
+
+test("an unknown node in an induced scope of a layered pack is reported as an unknown node", () => {
+  const pack = buildModelPack({
+    model: { id: "layered-scope", name: "Layered scope control", version: "1" }, source: { id: "layered-scope", files: [] },
+    nodes: [{ id: "a", layer: "technical", level: 1 }, { id: "b", layer: "technical", level: 1 }, { id: "x", layer: "arising", level: 1 }],
+    edges: [{ id: "a->b", source: "a", target: "b", relationLayer: "descriptive", role: "definition-dependency" }],
+    dictionaries: {}
+  });
+  assert.throws(() => prepareOllivierRequest(pack, { edgeIds: ["a->b"], scope: { kind: "induced", nodeIds: ["a", "b", "typo"] } }), code("SCOPE_INVALID"));
+  assert.throws(() => prepareOllivierRequest(pack, { edgeIds: ["a->b"], scope: { kind: "induced", nodeIds: ["a", "b", "x"] } }),
+    (error) => error.code === "STRUCTURAL_GEOMETRY_LAYER_SCOPE_UNSUPPORTED");
 });
 
 test("closed inputs reject malformed scopes, selectors, idleness and empty selections", () => {

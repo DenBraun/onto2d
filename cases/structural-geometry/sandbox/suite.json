@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:d59e5ed6a55d2450c7c727412d5120c9bf96a56aefc6e97c6058c18623949ab3",
+  "artifactHash": "sha256:1dbacd0a924a471335c051167b51ac98f4e4a92ea3c30a14cfe911675495e3dd",
   "census": [
     {
       "applied": 1,
@@ -29,7 +29,7 @@
       "unavailable": 4
     }
   ],
-  "referenceHash": "sha256:76895a28fed02f7f7956578454dd16e55331661e7aaa8272a3bcee21485fa243",
+  "referenceHash": "sha256:13290a2acff5ebc2f08bbf5fc3a0cd7fc3277d48a68b4eaf78fd1e7605102aa3",
   "runs": [
     {
       "artifactHash": "sha256:54b8c8682ebd53975b3b287de91856102867c2b247323a82174179013d42f556",
@@ -1010,115 +1010,6 @@
       "work": {
         "outputGraphCount": 2,
         "transformationEdgeVisits": 1
-      }
-    },
-    {
-      "artifactHash": "sha256:0630035648f0a5cabd7b4ac35d9640f6ff76e7768a9845a1852168062226fd55",
-      "execution": {
-        "appliedCount": 1,
-        "reason": null,
-        "rejectedCount": 0,
-        "state": "completed",
-        "targetCount": 1
-      },
-      "file": "artifacts/causal-identity.json",
-      "id": "causal-identity",
-      "regimeId": "typed-relations-v1",
-      "scenarioId": "causal",
-      "transformation": {
-        "kind": "identity"
-      },
-      "work": {
-        "outputGraphCount": 2,
-        "transformationEdgeVisits": 11
-      }
-    },
-    {
-      "artifactHash": "sha256:834e3aa1558ca8caadd056fc87adf5aff02f40682803a5e05a73d452045d95b0",
-      "execution": {
-        "appliedCount": 1,
-        "reason": null,
-        "rejectedCount": 0,
-        "state": "completed",
-        "targetCount": 1
-      },
-      "file": "artifacts/causal-remove-all.json",
-      "id": "causal-remove-all",
-      "regimeId": "typed-relations-v1",
-      "scenarioId": "causal",
-      "transformation": {
-        "kind": "remove-edges",
-        "targets": "all-scoped-edges"
-      },
-      "work": {
-        "outputGraphCount": 2,
-        "transformationEdgeVisits": 11
-      }
-    },
-    {
-      "artifactHash": "sha256:a6d8d992982683589abd3dd2b4589881bb8dc32e17c0c473a55ebf8f929f6dd3",
-      "execution": {
-        "appliedCount": 11,
-        "reason": null,
-        "rejectedCount": 0,
-        "state": "completed",
-        "targetCount": 11
-      },
-      "file": "artifacts/causal-remove-each.json",
-      "id": "causal-remove-each",
-      "regimeId": "typed-relations-v1",
-      "scenarioId": "causal",
-      "transformation": {
-        "kind": "remove-edges",
-        "targets": "each-scoped-edge"
-      },
-      "work": {
-        "outputGraphCount": 12,
-        "transformationEdgeVisits": 121
-      }
-    },
-    {
-      "artifactHash": "sha256:1b6900babb92647e625617b7f50e82b7c007cbe8e87d69f228cc247bbf7a0f36",
-      "execution": {
-        "appliedCount": 1,
-        "reason": null,
-        "rejectedCount": 0,
-        "state": "completed",
-        "targetCount": 1
-      },
-      "file": "artifacts/causal-reverse-all.json",
-      "id": "causal-reverse-all",
-      "regimeId": "typed-relations-v1",
-      "scenarioId": "causal",
-      "transformation": {
-        "kind": "reverse-edges",
-        "targets": "all-scoped-edges"
-      },
-      "work": {
-        "outputGraphCount": 2,
-        "transformationEdgeVisits": 11
-      }
-    },
-    {
-      "artifactHash": "sha256:ebfcefb8badf74a8b324ede4ddd6a8f8e6dce361ab28a1d8e0bdf932a182dfaf",
-      "execution": {
-        "appliedCount": 11,
-        "reason": null,
-        "rejectedCount": 0,
-        "state": "completed",
-        "targetCount": 11
-      },
-      "file": "artifacts/causal-reverse-each.json",
-      "id": "causal-reverse-each",
-      "regimeId": "typed-relations-v1",
-      "scenarioId": "causal",
-      "transformation": {
-        "kind": "reverse-edges",
-        "targets": "each-scoped-edge"
-      },
-      "work": {
-        "outputGraphCount": 12,
-        "transformationEdgeVisits": 121
       }
     },
     {

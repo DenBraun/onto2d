@@ -209,7 +209,7 @@ const contracts = {
     {
       "id": "M-phys-lep2013-w-width-acquisition-context",
       "kind": "method",
-      "statement": "Use the four experiments direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
+      "statement": "Use the four experiments' direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
       "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
       "status": "method-contract",
       "citations": [
@@ -290,7 +290,7 @@ const contracts = {
     {
       "id": "M-phys-lep2013-w-branching-acquisition-context",
       "kind": "method",
-      "statement": "Use the four experiments WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
+      "statement": "Use the four experiments' WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
       "scope": "The selected LEP-II W width and branching combinations, with their original acquisition, response, parameter and covariance conventions.",
       "status": "method-contract",
       "citations": [
@@ -437,7 +437,7 @@ const contracts = {
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
         "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error.",
-        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical precursor or minimum-count requirement is inferred."
       ],
       "contextIds": [
         "lep2013-w-branching-inference"
@@ -462,7 +462,7 @@ const contracts = {
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
         "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error.",
-        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical precursor or minimum-count requirement is inferred."
       ],
       "contextIds": [
         "lep2013-w-branching-inference"
@@ -486,7 +486,7 @@ const contracts = {
       "limitations": [
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
-        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical precursor or minimum-count requirement is inferred."
       ],
       "contextIds": [
         "lep2013-w-branching-inference"
@@ -510,7 +510,7 @@ const contracts = {
       "limitations": [
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
-        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical precursor or minimum-count requirement is inferred."
       ],
       "contextIds": [
         "lep2013-w-branching-inference"
@@ -522,7 +522,7 @@ const contracts = {
       "id": "phys:lep2013-w-width-acquisition-context",
       "name": "LEP W width data preparation",
       "kind": "context",
-      "description": "Use the four experiments direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
+      "description": "Use the four experiments' direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
       "claimIds": [
         "M-phys-lep2013-w-width-acquisition-context"
       ],
@@ -593,7 +593,7 @@ const contracts = {
       "id": "phys:lep2013-w-branching-acquisition-context",
       "name": "LEP W branching data preparation",
       "kind": "context",
-      "description": "Use the four experiments WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
+      "description": "Use the four experiments' WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
       "claimIds": [
         "M-phys-lep2013-w-branching-acquisition-context"
       ],
@@ -700,7 +700,7 @@ const contracts = {
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "The fit retains a full 12 by 12 input covariance. Page 93 reports electron-muon correlation 13.5%, while Table E.6 prints 0.136; this discrepancy remains unresolved and no covariance replay is certified.",
         "Table 5.5 and Figure 5.3 on page 94 report OPAL B_tau = 11.14 +/- 0.31%, while Table E.6 on page 196 gives total uncertainty 0.35% and statistical uncertainty 0.31% at that central value. This unresolved input-table discrepancy is not silently resolved and does not establish an experimental-fit error.",
-        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical precursor or minimum-count requirement is inferred."
       ]
     },
     {
@@ -722,7 +722,7 @@ const contracts = {
       "openObligations": [
         "The constrained and unconstrained fits reuse the same inputs. Table 5.5 juxtaposes nonuniversal leptonic fractions with a universality-constrained hadronic fraction; these columns are not one normalized fitted vector.",
         "Branching fractions come from individual decay-channel fits. Section 5.2.1 total production cross sections assume Standard Model branching values and are not independent branching evidence.",
-        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical parent/minimum requirement is inferred."
+        "No CKM extraction, new universality significance, direct proper-time measurement, stable W carrier, universal formation rule or numerical precursor or minimum-count requirement is inferred."
       ]
     }
   ],
@@ -907,7 +907,7 @@ const contracts = {
       "issue": "4",
       "pages": "119-244",
       "system": "LEP-II W-pair channels and the declared width or branching analysis stage",
-      "preparation": "Use the four experiments direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
+      "preparation": "Use the four experiments' direct-reconstruction inputs from 1996-2000 at 172-209 GeV, primarily fully hadronic and semileptonic WW selections. Reconstructed jets, charged leptons and assigned missing momentum define the channel inputs.",
       "observable": "LEP W width data preparation",
       "finding": "The declared LEP exposures and reconstructed channel preparation, not a released raw event sample.",
       "limitations": [
@@ -984,7 +984,7 @@ const contracts = {
       "issue": "4",
       "pages": "119-244",
       "system": "LEP-II W-pair channels and the declared width or branching analysis stage",
-      "preparation": "Use the four experiments WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
+      "preparation": "Use the four experiments' WW channel selections from 1997-2000 at 183-207 GeV. The report distinguishes ten four-fermion final states through jets, charged leptons and missing momentum; Table 5.1 specifies the exposure bins.",
       "observable": "LEP W branching data preparation",
       "finding": "The declared channel-selection exposure for branching fits, distinct from the wider width data range.",
       "limitations": [

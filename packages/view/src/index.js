@@ -178,6 +178,10 @@ function summary(node, incoming, outgoing) {
     phase: node.phase ?? null,
     typeRole: node.typeRole ?? null,
     scientificStatus: node.scientificStatus ?? null,
+    layer: node.layer ?? null,
+    arisingId: node.arisingId ?? null,
+    cluster: node.cluster ?? null,
+    domain: node.domain ?? null,
     shortDescription: typeof node.shortDescription === "string" ? node.shortDescription
       : typeof node.description === "string" ? node.description : "",
     parentCount: parentIds.size,
@@ -270,7 +274,8 @@ export class ModelView {
       levels: createFacet(graph.nodes, "level"),
       phases: createFacet(graph.nodes, "phase"),
       typeRoles: createFacet(graph.nodes, "typeRole"),
-      scientificStatuses: createFacet(graph.nodes, "scientificStatus")
+      scientificStatuses: createFacet(graph.nodes, "scientificStatus"),
+      layers: createFacet(graph.nodes, "layer")
     });
     deepFreeze(this.#nodes);
     deepFreeze(this.#edges);
@@ -304,6 +309,7 @@ export class ModelView {
       value.scientificStatuses,
       "options.scientificStatuses"
     );
+    const layers = normalizeFilterList(value.layers, "options.layers");
     const sort = value.sort ?? "id";
     const order = value.order ?? (sort === "degree" ? "desc" : "asc");
     if (!CATALOG_SORTS.includes(sort)) fail("VIEW_OPTION_INVALID", "options.sort is not supported.", { sort });
@@ -314,7 +320,8 @@ export class ModelView {
       level: new Set(levels.map(facetKey)),
       phase: new Set(phases.map(facetKey)),
       typeRole: new Set(typeRoles.map(facetKey)),
-      scientificStatus: new Set(scientificStatuses.map(facetKey))
+      scientificStatus: new Set(scientificStatuses.map(facetKey)),
+      layer: new Set(layers.map(facetKey))
     };
     const matchesFacet = (node, field) => (
       sets[field].size === 0 || sets[field].has(facetKey(node[field] ?? null))
@@ -330,6 +337,7 @@ export class ModelView {
       && matchesFacet(node, "phase")
       && matchesFacet(node, "typeRole")
       && matchesFacet(node, "scientificStatus")
+      && matchesFacet(node, "layer")
     )).sort(catalogComparator(sort, order));
     return deepFreeze({
       query: {
@@ -338,6 +346,7 @@ export class ModelView {
         phases,
         typeRoles,
         scientificStatuses,
+        layers,
         sort,
         order
       },

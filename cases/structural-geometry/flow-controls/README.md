@@ -39,7 +39,7 @@ schemas, tests parameter/source/evidence rejection and strict cut equality, and
 checks the 117-file legacy compatibility inventory. It requires Node 22+ and
 Python 3.9+ with its standard library. It never writes expected output.
 Both `structural-geometry:flow:check` and `structural-geometry:check` include it.
-The original `flow:report` remains the report for the original 11-run suite.
+`flow:report` remains the report for the 11-run reference suite.
 
 For a fresh independent optimization replay, use an isolated environment:
 
@@ -79,7 +79,6 @@ The analytic writer predicts from the inputs alone; its verifier also compares
 all generated artifact values. The NetworkX writer requires agreement with the
 analytic reference before writing. Runtime generation alone is not acceptance.
 Never change a failed expectation by tuning these inputs or overwrite the
-[original suite](../flow/suite.json) or [pre-regime inventory](../../../docs/structural-geometry/EVIDENCE.md).
-All original flow artifact/reference bytes and the original suite hash remain
-unchanged. The [milestone review](../../../docs/structural-geometry/EVIDENCE.md)
+[reference suite](../flow/suite.json). This supplement writes no flow artifact
+or reference file. The [milestone review](../../../docs/structural-geometry/EVIDENCE.md)
 records validation and the next task.

@@ -5,7 +5,7 @@ import test from "node:test";
 import { run, verifyReferenceSources } from "../../../cases/structural-geometry/sandbox/build.mjs";
 import { readJson } from "../../../cases/structural-geometry/sandbox/fixtures.mjs";
 
-test("all 51 frozen runs and all 345 small-graph requests reproduce independent transformations", async () => {
+test("all 46 frozen runs and all 345 small-graph requests reproduce independent transformations", async () => {
   assert.deepEqual(await run(), await readJson("suite.json"));
 });
 

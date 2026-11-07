@@ -1,6 +1,6 @@
 {
+  "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
   "modelId": "causal-emergence",
-  "modelVersion": "2026.08.15",
-  "modelRootHash": "sha256:1364547211fc56dbcfb7962612458d12cb40ee92aa30b11ccb819151015cd2ab",
-  "manifestHash": "sha256:39203e307d7c55582946fce0037682141acae31cdec54640202874d943c7c213"
+  "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
+  "modelVersion": "2026.11.05.0"
 }

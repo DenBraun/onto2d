@@ -95,28 +95,22 @@ const contracts = {
       "citations": [
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.21-7.27 and adjacent text: causal linear polarization response and frequency-dependent absolute permittivity",
+          "locator": "Author instructional Section 7.2, Equations 7.21-7.27 and adjacent text: causal linear polarization response and frequency-dependent absolute permittivity",
           "role": "supports",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
         },
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
           "role": "supports",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /22. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
       "limitations": [
         "This is a supplied local, homogeneous, isotropic, linear constitutive model with monochromatic components and a declared causal response. It is not a derivation of all material response from isolated molecular dipoles or a model of every anisotropic, nonlinear, time-dependent, scattering or spatially dispersive medium.",
-        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
-        "The intensity factor2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
+        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor 2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
+        "The intensity factor 2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
         "Relating attenuation of a measured finite-aperture beam to absorption needs an actual collection/energy model. Redistribution by scattering, boundary reflection and detector acceptance can change collected flux without that signal alone identifying bulk heat deposition.",
         "A deterministic frequency response and dispersive waveform deformation do not by themselves quantify statistical coherence loss, image blur, random-path scattering, a diffraction point-spread function or a measured signal-front/group delay."
       ]
@@ -130,7 +124,7 @@ const contracts = {
       "citations": [
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
           "role": "supports",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
         },
@@ -145,20 +139,14 @@ const contracts = {
           "locator": "Printed pp. 3-8 (PDF pp. 17-22), scope and Sections II.A-II.B, equations (1)-(18)",
           "role": "limits",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /22. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Dimensionless transmission is an incident/collected-flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
+        "Dimensionless transmission is a collected/incident flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
         "The measured aggregate IR transmission does not determine a unique complex refractive index, angular scattering phase function, spatial impulse response, time delay, diffraction pattern or statistical coherence. No inverse propagation operator or phase retrieval is reconstructed.",
         "Refraction, absorption, scattering, dispersion, diffraction and coherence change are distinct questions. Their names are not interchangeable coefficients or effects that every medium must produce simultaneously. The selected uniform plane-wave model does not solve the omitted spatial/random-field cases.",
-        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological parent or a unique information-encoding stage.",
+        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological precursor or a unique information-encoding stage.",
         "The supplied bulk frequency-dependent response is not inferred from the permanent moment of an isolated KRb molecule, N2 axis alignment or static polarization alone. Permanent molecular dipoles are not established as a universal propagation prerequisite."
       ]
     },
@@ -177,7 +165,7 @@ const contracts = {
         },
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
           "role": "supports",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
         },
@@ -198,33 +186,27 @@ const contracts = {
           "locator": "Abstract",
           "role": "limits",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /22. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
       "limitations": [
         "This is a supplied local, homogeneous, isotropic, linear constitutive model with monochromatic components and a declared causal response. It is not a derivation of all material response from isolated molecular dipoles or a model of every anisotropic, nonlinear, time-dependent, scattering or spatially dispersive medium.",
-        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
-        "The intensity factor2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
+        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor 2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
+        "The intensity factor 2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
         "Relating attenuation of a measured finite-aperture beam to absorption needs an actual collection/energy model. Redistribution by scattering, boundary reflection and detector acceptance can change collected flux without that signal alone identifying bulk heat deposition.",
         "A deterministic frequency response and dispersive waveform deformation do not by themselves quantify statistical coherence loss, image blur, random-path scattering, a diffraction point-spread function or a measured signal-front/group delay.",
-        "Dimensionless transmission is an incident/collected-flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
+        "Dimensionless transmission is a collected/incident flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
         "The measured aggregate IR transmission does not determine a unique complex refractive index, angular scattering phase function, spatial impulse response, time delay, diffraction pattern or statistical coherence. No inverse propagation operator or phase retrieval is reconstructed.",
         "Refraction, absorption, scattering, dispersion, diffraction and coherence change are distinct questions. Their names are not interchangeable coefficients or effects that every medium must produce simultaneously. The selected uniform plane-wave model does not solve the omitted spatial/random-field cases.",
-        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological parent or a unique information-encoding stage.",
+        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological precursor or a unique information-encoding stage.",
         "The supplied bulk frequency-dependent response is not inferred from the permanent moment of an isolated KRb molecule, N2 axis alignment or static polarization alone. Permanent molecular dipoles are not established as a universal propagation prerequisite.",
         "The finite positive empirical scope reuses the complete original Hanssen IR-window preparation and its aggregate transmission. No source spectrum, measured complex index or jointly fitted propagation law for those samples is newly obtained; the formal chapter is not an independent experiment.",
         "The existing pure-water absorption report remains at its explicitly limited abstract/metadata reading, with the unadjudicated comment/reply and no numerical precision adopted. It is not silently promoted to a newly reviewed full calibration or a separate validated underwater channel.",
         "Atmospheric and underwater visibility, optical-system point-spread degradation and coherence loss are original proposed applications. They are not measured or quantitatively predicted by this selected window experiment and homogeneous field model; their existence is not denied or converted to unsupported universal rules.",
-        "Original necessary parents2.1 and2.8, weights0.5/0.5, downward direction[1], constraint modes[1], dependency10 and arising roles are not measured causal fractions or a universal formation/maintenance history. The model constitutive response is supplied rather than derived from the original parent chain.",
-        "Original carrier group1/type2 with both N_min=N_crit=1 and null N_sat are catalogue defaults, not measured propagation onset or saturation populations. A field mode, photon count, path segment and macroscopic flux sample are different counting domains.",
-        "Original Level2, Phase1, TypeRole0 Process, Science[1], established, MustCover[12], ShouldCover[10] and Optional[] remain ontology/display metadata. Channel transformation does not establish autonomous SOMA admissibility, irreducible information degradation or a new universal cross-level rule.",
-        "The generic radiative-transfer/wave-optics and atmospheric/underwater/system-characterization Evidence entries have null DOI/URL. This admission supplies only the declared actual formal reading and existing measured window response, not a full radiative-transfer solver, new scattering experiment, imaging replay or universal propagation operator."
+        "The model constitutive response is supplied rather than derived.",
+        "A field mode, photon count, path segment and macroscopic flux sample are different counting domains.",
+        "Channel transformation does not establish irreducible information degradation or a new universal cross-level rule.",
+        "This admission supplies only the declared actual formal reading and existing measured window response, not a full radiative-transfer solver, new scattering experiment, imaging replay or universal propagation operator."
       ],
       "contextIds": [
         "hanssen2001"
@@ -245,7 +227,7 @@ const contracts = {
         },
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change",
           "role": "method",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
         },
@@ -266,33 +248,27 @@ const contracts = {
           "locator": "Abstract",
           "role": "limits",
           "note": "The exact declared passage is used with its reading, preparation and inference limits; no new numerical replay is claimed."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "limits",
-          "note": "Original catalogue JSON pointer: /22. Draft ontology, parent weights and carrier defaults do not establish physical laws."
         }
       ],
       "checkIds": [],
       "limitations": [
         "This is a supplied local, homogeneous, isotropic, linear constitutive model with monochromatic components and a declared causal response. It is not a derivation of all material response from isolated molecular dipoles or a model of every anisotropic, nonlinear, time-dependent, scattering or spatially dispersive medium.",
-        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
-        "The intensity factor2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
+        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor 2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
+        "The intensity factor 2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
         "Relating attenuation of a measured finite-aperture beam to absorption needs an actual collection/energy model. Redistribution by scattering, boundary reflection and detector acceptance can change collected flux without that signal alone identifying bulk heat deposition.",
         "A deterministic frequency response and dispersive waveform deformation do not by themselves quantify statistical coherence loss, image blur, random-path scattering, a diffraction point-spread function or a measured signal-front/group delay.",
-        "Dimensionless transmission is an incident/collected-flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
+        "Dimensionless transmission is a collected/incident flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
         "The measured aggregate IR transmission does not determine a unique complex refractive index, angular scattering phase function, spatial impulse response, time delay, diffraction pattern or statistical coherence. No inverse propagation operator or phase retrieval is reconstructed.",
         "Refraction, absorption, scattering, dispersion, diffraction and coherence change are distinct questions. Their names are not interchangeable coefficients or effects that every medium must produce simultaneously. The selected uniform plane-wave model does not solve the omitted spatial/random-field cases.",
-        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological parent or a unique information-encoding stage.",
+        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological precursor or a unique information-encoding stage.",
         "The supplied bulk frequency-dependent response is not inferred from the permanent moment of an isolated KRb molecule, N2 axis alignment or static polarization alone. Permanent molecular dipoles are not established as a universal propagation prerequisite.",
         "The finite positive empirical scope reuses the complete original Hanssen IR-window preparation and its aggregate transmission. No source spectrum, measured complex index or jointly fitted propagation law for those samples is newly obtained; the formal chapter is not an independent experiment.",
         "The existing pure-water absorption report remains at its explicitly limited abstract/metadata reading, with the unadjudicated comment/reply and no numerical precision adopted. It is not silently promoted to a newly reviewed full calibration or a separate validated underwater channel.",
         "Atmospheric and underwater visibility, optical-system point-spread degradation and coherence loss are original proposed applications. They are not measured or quantitatively predicted by this selected window experiment and homogeneous field model; their existence is not denied or converted to unsupported universal rules.",
-        "Original necessary parents2.1 and2.8, weights0.5/0.5, downward direction[1], constraint modes[1], dependency10 and arising roles are not measured causal fractions or a universal formation/maintenance history. The model constitutive response is supplied rather than derived from the original parent chain.",
-        "Original carrier group1/type2 with both N_min=N_crit=1 and null N_sat are catalogue defaults, not measured propagation onset or saturation populations. A field mode, photon count, path segment and macroscopic flux sample are different counting domains.",
-        "Original Level2, Phase1, TypeRole0 Process, Science[1], established, MustCover[12], ShouldCover[10] and Optional[] remain ontology/display metadata. Channel transformation does not establish autonomous SOMA admissibility, irreducible information degradation or a new universal cross-level rule.",
-        "The generic radiative-transfer/wave-optics and atmospheric/underwater/system-characterization Evidence entries have null DOI/URL. This admission supplies only the declared actual formal reading and existing measured window response, not a full radiative-transfer solver, new scattering experiment, imaging replay or universal propagation operator."
+        "The model constitutive response is supplied rather than derived.",
+        "A field mode, photon count, path segment and macroscopic flux sample are different counting domains.",
+        "Channel transformation does not establish irreducible information degradation or a new universal cross-level rule.",
+        "This admission supplies only the declared actual formal reading and existing measured window response, not a full radiative-transfer solver, new scattering experiment, imaging replay or universal propagation operator."
       ],
       "contextIds": [
         "hanssen2001"
@@ -313,17 +289,17 @@ const contracts = {
       "sourceCoordinates": [
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.21-7.27 and adjacent text: causal linear polarization response and frequency-dependent absolute permittivity"
+          "locator": "Author instructional Section 7.2, Equations 7.21-7.27 and adjacent text: causal linear polarization response and frequency-dependent absolute permittivity"
         },
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
         }
       ],
       "openObligations": [
         "This is a supplied local, homogeneous, isotropic, linear constitutive model with monochromatic components and a declared causal response. It is not a derivation of all material response from isolated molecular dipoles or a model of every anisotropic, nonlinear, time-dependent, scattering or spatially dispersive medium.",
-        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
-        "The intensity factor2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
+        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor 2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
+        "The intensity factor 2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
         "Relating attenuation of a measured finite-aperture beam to absorption needs an actual collection/energy model. Redistribution by scattering, boundary reflection and detector acceptance can change collected flux without that signal alone identifying bulk heat deposition.",
         "A deterministic frequency response and dispersive waveform deformation do not by themselves quantify statistical coherence loss, image blur, random-path scattering, a diffraction point-spread function or a measured signal-front/group delay."
       ]
@@ -341,14 +317,14 @@ const contracts = {
       "sourceCoordinates": [
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
         }
       ],
       "openObligations": [
-        "Dimensionless transmission is an incident/collected-flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
+        "Dimensionless transmission is a collected/incident flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
         "The measured aggregate IR transmission does not determine a unique complex refractive index, angular scattering phase function, spatial impulse response, time delay, diffraction pattern or statistical coherence. No inverse propagation operator or phase retrieval is reconstructed.",
         "Refraction, absorption, scattering, dispersion, diffraction and coherence change are distinct questions. Their names are not interchangeable coefficients or effects that every medium must produce simultaneously. The selected uniform plane-wave model does not solve the omitted spatial/random-field cases.",
-        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological parent or a unique information-encoding stage.",
+        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological precursor or a unique information-encoding stage.",
         "The supplied bulk frequency-dependent response is not inferred from the permanent moment of an isolated KRb molecule, N2 axis alignment or static polarization alone. Permanent molecular dipoles are not established as a universal propagation prerequisite."
       ]
     },
@@ -369,27 +345,27 @@ const contracts = {
         },
         {
           "sourceId": "likharev2022-wave-propagation",
-          "locator": "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
+          "locator": "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
         }
       ],
       "openObligations": [
         "This is a supplied local, homogeneous, isotropic, linear constitutive model with monochromatic components and a declared causal response. It is not a derivation of all material response from isolated molecular dipoles or a model of every anisotropic, nonlinear, time-dependent, scattering or spatially dispersive medium.",
-        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
-        "The intensity factor2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
+        "The harmonic convention is exp(i*k*z-i*omega*t). With the passive forward branch Im(k)>=0, amplitude decays as exp(-Im(k)*z), while intensity has the factor 2 in its exponent. The absolute SI epsilon and mu in k=omega*sqrt(epsilon*mu) are not unqualified relative constants.",
+        "The intensity factor 2 follows algebraically from the squared field amplitude in this fixed homogeneous setting. No new measured attenuation coefficient, optical-index spectrum, independent mathematical proof or numerical fit is supplied.",
         "Relating attenuation of a measured finite-aperture beam to absorption needs an actual collection/energy model. Redistribution by scattering, boundary reflection and detector acceptance can change collected flux without that signal alone identifying bulk heat deposition.",
         "A deterministic frequency response and dispersive waveform deformation do not by themselves quantify statistical coherence loss, image blur, random-path scattering, a diffraction point-spread function or a measured signal-front/group delay.",
-        "Dimensionless transmission is an incident/collected-flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
+        "Dimensionless transmission is a collected/incident flux ratio, not a bulk coefficient in m^-1. Source/receiver geometry, specimen thickness, interface reflection, collection aperture and possible internal paths must be stated before identifying a bulk model parameter.",
         "The measured aggregate IR transmission does not determine a unique complex refractive index, angular scattering phase function, spatial impulse response, time delay, diffraction pattern or statistical coherence. No inverse propagation operator or phase retrieval is reconstructed.",
         "Refraction, absorption, scattering, dispersion, diffraction and coherence change are distinct questions. Their names are not interchangeable coefficients or effects that every medium must produce simultaneously. The selected uniform plane-wave model does not solve the omitted spatial/random-field cases.",
-        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological parent or a unique information-encoding stage.",
+        "A propagation channel may be specified by its input field and intervening medium without a prior scene-reflection event. Existing surface-reflection evidence does not establish a mandatory chronological precursor or a unique information-encoding stage.",
         "The supplied bulk frequency-dependent response is not inferred from the permanent moment of an isolated KRb molecule, N2 axis alignment or static polarization alone. Permanent molecular dipoles are not established as a universal propagation prerequisite.",
         "The finite positive empirical scope reuses the complete original Hanssen IR-window preparation and its aggregate transmission. No source spectrum, measured complex index or jointly fitted propagation law for those samples is newly obtained; the formal chapter is not an independent experiment.",
         "The existing pure-water absorption report remains at its explicitly limited abstract/metadata reading, with the unadjudicated comment/reply and no numerical precision adopted. It is not silently promoted to a newly reviewed full calibration or a separate validated underwater channel.",
         "Atmospheric and underwater visibility, optical-system point-spread degradation and coherence loss are original proposed applications. They are not measured or quantitatively predicted by this selected window experiment and homogeneous field model; their existence is not denied or converted to unsupported universal rules.",
-        "Original necessary parents2.1 and2.8, weights0.5/0.5, downward direction[1], constraint modes[1], dependency10 and arising roles are not measured causal fractions or a universal formation/maintenance history. The model constitutive response is supplied rather than derived from the original parent chain.",
-        "Original carrier group1/type2 with both N_min=N_crit=1 and null N_sat are catalogue defaults, not measured propagation onset or saturation populations. A field mode, photon count, path segment and macroscopic flux sample are different counting domains.",
-        "Original Level2, Phase1, TypeRole0 Process, Science[1], established, MustCover[12], ShouldCover[10] and Optional[] remain ontology/display metadata. Channel transformation does not establish autonomous SOMA admissibility, irreducible information degradation or a new universal cross-level rule.",
-        "The generic radiative-transfer/wave-optics and atmospheric/underwater/system-characterization Evidence entries have null DOI/URL. This admission supplies only the declared actual formal reading and existing measured window response, not a full radiative-transfer solver, new scattering experiment, imaging replay or universal propagation operator."
+        "The model constitutive response is supplied rather than derived.",
+        "A field mode, photon count, path segment and macroscopic flux sample are different counting domains.",
+        "Channel transformation does not establish irreducible information degradation or a new universal cross-level rule.",
+        "This admission supplies only the declared actual formal reading and existing measured window response, not a full radiative-transfer solver, new scattering experiment, imaging replay or universal propagation operator."
       ]
     }
   ],
@@ -495,24 +471,6 @@ const contracts = {
   "comparisons": [],
   "sources": [
     {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "nicodemus1977",
       "kind": "research-publication",
       "title": "Geometrical considerations and nomenclature for reflectance",
@@ -556,7 +514,7 @@ const contracts = {
           "Section 6, pp. 3201-3203, Figures 6-8: results and limitations",
           "Section 7, pp. 3203-3204: discussion and scope"
         ],
-        "limit": "Specified IR samples and collection geometry; no full angular inversion, universal precision or carrier minimum."
+        "limit": "Specified IR samples and collection geometry; no full angular inversion or universal precision."
       }
     },
     {
@@ -637,10 +595,10 @@ const contracts = {
       "review": {
         "extent": "selected-author-instructional-propagation-passages",
         "locators": [
-          "Author instructional Section7.2, Equations7.21-7.27 and adjacent text: causal linear polarization response and frequency-dependent absolute permittivity",
-          "Author instructional Section7.2, Equations7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
+          "Author instructional Section 7.2, Equations 7.21-7.27 and adjacent text: causal linear polarization response and frequency-dependent absolute permittivity",
+          "Author instructional Section 7.2, Equations 7.28-7.29 and adjacent text: complex wave number, sign convention, amplitude attenuation and dispersive waveform change"
         ],
-        "limit": "Actually read the author-attributed LibreTexts text and rendered equations7.21-7.29; page last-modified5March2022. This is instructional formal authority, not a new empirical publication or a reviewed microscopic calculation for the IR windows. The dilute independent-dipole response argument and its linear generalization are supplied models. Later Lorentz-oscillator, waveguide, scattering, diffraction and full statistical-coherence sections are not admitted. No new experimental index/absorption fit, full-book reading or numerical replay. CC BY-NC-SA4.0 attribution retained by the source link; no copied chapter is redistributed."
+        "limit": "Actually read the author-attributed LibreTexts text and rendered equations 7.21-7.29; page last-modified 5 March 2022. This is instructional formal authority, not a new empirical publication or a reviewed microscopic calculation for the IR windows. The dilute independent-dipole response argument and its linear generalization are supplied models. Later Lorentz-oscillator, waveguide, scattering, diffraction and full statistical-coherence sections are not admitted. No new experimental index/absorption fit, full-book reading or numerical replay. CC BY-NC-SA4.0 attribution retained by the source link; no copied chapter is redistributed."
       }
     }
   ]

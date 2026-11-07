@@ -58,10 +58,9 @@ external RDF 1.1 N-Triples
 
 `@onto2d/engine` is a headless, catalogue-independent facade. It resolves an
 exact Model Pack before exposing a model. The repository root facade bundles
-the current canonical research reconstruction and the historical Causal
-Emergence snapshot, and provides `stable` and `latest`
-aliases for convenience; the root package remains private while this preview
-API is reviewed.
+the current canonical research reconstruction and provides `stable` and
+`latest` aliases for convenience; the root package remains private while this
+preview API is reviewed.
 
 ```js
 import { Onto2D } from "onto2d";
@@ -77,10 +76,9 @@ child traversal, ancestors, descendants, bounded neighborhoods, and bounded
 all-shortest directed paths. It does not assign new scientific meaning to
 source relations.
 
-The current default is `causal-emergence@2026.10.02.5`, a partial research
+The current default is `causal-emergence@2026.11.05.0`, a partial research
 reconstruction. `stable` identifies the bundled software artifact, not
-scientific confirmation. Select `causal-emergence@2026.08.15` explicitly for
-the historical 249-record catalogue and its original source-parent semantics.
+scientific confirmation.
 
 The root facade also registers `canonical-identity`. It calls the kernel's
 canonicalizer and returns a replayable artifact bound to the exact selected
@@ -414,8 +412,9 @@ Two packages provide the model boundary:
   registered analyses, and structural diff without embedding a catalogue.
 
 The private root facade composes the generic engine with the current canonical
-graph and the original catalogue used by research cases. `rootHash` binds semantic files, compatibility, and exact
-source; `manifestHash` additionally binds release metadata and derived indexes.
+graph. Structural Geometry examples are being recomputed on the canonical graph.
+`rootHash` binds semantic files, compatibility, and exact source;
+`manifestHash` additionally binds release metadata and derived indexes.
 Indexes are always rebuilt during verification.
 
 Canonical relations retain their declared descriptive or functional-support
@@ -564,7 +563,7 @@ arrays, unsafe keys and invalid Unicode without invoking application code.
 Dynamic programming counts expanded compact UTF-8 bytes, values and depth with
 reference multiplicity before allocating the restored tree. A small doubling
 table cannot bypass the normal entry or byte limits. Wire scaffolding has its
-own bounded structural allowance; the semantic limits remain 1,000,000 values,
+own bounded structural allowance; the semantic limits remain 4,000,000 values,
 depth 64 and 1 MiB per string. Ordinary Model Pack inputs keep their existing
 validation path.
 
@@ -572,7 +571,7 @@ Physical stream/file budgets and logical expansion budgets both apply. The
 split loaders charge each expanded file to the active aggregate byte limit,
 including duplicate content in a required bundle. The bundle loader applies its
 active bundle limit to expansion. Direct encoded-bundle verification has a
-64 MiB default expansion limit. Limits are checked before materialization and
+256 MiB default expansion limit. Limits are checked before materialization and
 semantic verification; they do not change model identity or scientific scope.
 
 Canonical release writing explicitly selects `plain` or `value-table-v1`.

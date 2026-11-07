@@ -16,7 +16,7 @@
       "observable": "Time-lapse morphology; fluorescence localization; bulk cell/form area distributions.",
       "finding": "In the source microfluidic setting, JCVI-syn3.0 and RGD6 propagate as irregular, branching or pearled cellular forms, whereas JCVI-syn1.0 is predominantly small and round. Growth and shape change are not equated with complete daughter-cell scission. Selected RGD6 vesicles have membrane staining and exclude external fluorescent dextran yet lack detectable constitutive mCherry. Enclosure alone therefore does not establish possession of the source cytoplasmic reporter or a complete self-maintaining cell.",
       "limitations": [
-        "The living strains and rich medium are supplied, not assembled de novo from the original Level-3 graph. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
+        "The living strains and rich medium are supplied, not assembled de novo. This study does not jointly quantify all metabolic, replication, transcription, translation and repair fluxes.",
         "Fluorescent label absence is a detection-bound result, not proof that every enzyme or nucleic acid is absent. Multiple nucleoids in a filament suggest continuing replication/segregation but are not a complete inheritance-fidelity measurement.",
         "The source explicitly reserves cell division for complete scission. In observed pleomorphic filaments, scission was not seen; population propagation is a different endpoint.",
         "Microfluidic shear shielding, confinement, diffusive medium exchange and imaging limit the claim to this preparation. Movies, genome reads and morphological distributions were not independently replayed."
@@ -72,11 +72,11 @@
         "The admitted direct acquisition is the 27-67 kDa wild-type series; extension to larger cargo uses another publication and is not a second independent experiment here.",
         "The quantities above are normalized exchange time constants, not literal residence times of individual molecules or universal nuclear-pore construction thresholds.",
         "Nuclear/cytoplasmic volumes are geometrically approximated and NPC numbers use an assumed density. Errors and model assumptions propagate to permeability; no refit was performed.",
-        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell parent."
+        "This passive reporter experiment does not demonstrate active import/export regulation, nuclear protection of genomic information, the origin of eukaryotes or necessity of a prokaryotic-cell precursor."
       ],
       "readExtent": "selected-primary-results-frap-methods-and-captions",
       "reviewedLocators": [
-        "JCB 215(1),57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
+        "JCB 215(1), 57-76, Results Quantification of NPC permeability in vivo and A gradual and approximately cubic dependence on molecular mass, Figures 2-3; Methods FRAP assay and Data integration"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201601004",
@@ -156,7 +156,7 @@
       ],
       "readExtent": "main-results-discussion-experimental-methods-and-figures",
       "reviewedLocators": [
-        "EMBO J 20(10),2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
+        "EMBO J 20(10), 2528-2535, Results Approach and Activation/Autocatalytically expressed activator, Figures 1-4; Theoretical underpinnings and Discussion; Methods Growth conditions and microscopy, Analysis of bistability"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1093/emboj/20.10.2528",
@@ -182,7 +182,7 @@
       ],
       "readExtent": "main-results-discussion-experimental-methods-and-figures",
       "reviewedLocators": [
-        "EMBO J 20(10),2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
+        "EMBO J 20(10), 2531 and 2533-2534, Results Fates of single cells during population growth, Figure 5 image/caption and main text; Discussion Autocatalytic gene circuits produce a random switch; Methods Growth conditions"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1093/emboj/20.10.2528",
@@ -289,7 +289,7 @@
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
+        "JCB 218(5), 1582-1601, Results Designing cargo and Accelerating secretion with an ER export signal; Figures 1-2 captions; Methods Yeast growth, Fluorescence microscopy and Immunoblotting"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -316,7 +316,7 @@
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
+        "JCB 218(5), 1582-1601, Results Visualizing the behavior of the secretory cargo during Golgi maturation; Figure 6A-C; Discussion; Methods Fluorescence microscopy and FRAP"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -343,7 +343,7 @@
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
+        "JCB 218(5), 1582-1601, Results Visualizing behavior during maturation and Probing mechanism between cisternae; Figures 7-8; Discussion mechanism of soluble-cargo recycling; Methods FRAP"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -369,7 +369,7 @@
       ],
       "readExtent": "selected-primary-results-discussion-microscopy-immunoblot-methods-captions",
       "reviewedLocators": [
-        "JCB 218(5),1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
+        "JCB 218(5), 1582-1601, Results Tracking fluorescent secretory cargo after ER export and Visualizing departure from Golgi; Figures 3C-E and 9; Methods Immunoblotting of yeast cell lysate and secreted protein"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.201807195",
@@ -422,7 +422,7 @@
       ],
       "readExtent": "main-scientific-text-methods-and-figure-captions",
       "reviewedLocators": [
-        "JCB 190(3),363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
+        "JCB 190(3), 363-375, Results TAC and sliding are unique mechanisms, Figure 1B-F; Methods Cell culture, Confocal microscopy"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.200911024",
@@ -448,7 +448,7 @@
       ],
       "readExtent": "main-scientific-text-methods-and-figure-captions",
       "reviewedLocators": [
-        "JCB 190(3),363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
+        "JCB 190(3), 363-375, Results Increasing MT acetylation by drug treatment increases ER sliding, Figure 4A-I, especially C-E; Methods treatment/imaging/curvature"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.200911024",
@@ -475,7 +475,7 @@
       ],
       "readExtent": "main-scientific-text-methods-and-figure-captions",
       "reviewedLocators": [
-        "JCB 190(3),363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
+        "JCB 190(3), 363-375, Results ER and mitochondrial dynamics are coupled and Endosome-ER contacts are enriched on MTs not acetylated; Figure 5A-F and Figure 6A-F; Discussion; Methods retrospective immunofluorescence"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1083/jcb.200911024",
@@ -555,7 +555,7 @@
       ],
       "readExtent": "primary-results-discussion-methods-and-caption-review",
       "reviewedLocators": [
-        "Plant Physiology 189(1),152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
+        "Plant Physiology 189(1), 152-164, Results Identification of N-termini, processing of crTP proteins and other nucleus-encoded proteins; Figures 1 and 3-5; Discussion N-terminal processing/model; Methods isolation, HUNTER and mass-spectrometric identification"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1093/plphys/kiac012",
@@ -582,7 +582,7 @@
       ],
       "readExtent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
       "reviewedLocators": [
-        "Science 333(6040),345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
+        "Science 333(6040), 345-348, main text PROPS calibration and metabolic perturbations; Figures 1A-D, 2A-B and 3A-F, rendered Figures 2-3; Supporting Online Material identified but unread"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1126/science.1204763",
@@ -608,7 +608,7 @@
       ],
       "readExtent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
       "reviewedLocators": [
-        "Science 333(6040),346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
+        "Science 333(6040), 346-347, main-text flagellar-motor proxy paragraph and Figure 2C with JY29 caption, rendered Figure 2; SI motor calibration unread"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1126/science.1204763",
@@ -634,7 +634,7 @@
       ],
       "readExtent": "complete-four-page-main-article-and-figure-captions-supplement-unread",
       "reviewedLocators": [
-        "Science 333(6040),347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
+        "Science 333(6040), 347-348, TMRM-efflux main paragraphs and Figure 4A-C, rendered Figure 4; SI dye controls identified but unread"
       ],
       "metadataCheckedAt": "2026-10-21",
       "metadataUrl": "https://doi.org/10.1126/science.1204763",
@@ -788,7 +788,7 @@
       "observable": "Cdc2 kinase activity versus supplied cyclin and preparation history",
       "finding": "Cdc2 activity exhibits different activation and inactivation thresholds with preparation history, consistent with bistability and hysteresis in the tested extract system.",
       "limitations": [
-        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction or a universal protein-carrier minimum.",
+        "An extract is not an autonomous intact cell. Nondegradable cyclin, inhibited protein synthesis and imposed initial history prevent treating the assay as complete cellular reproduction.",
         "Selected Results, figure legends and Methods were read in the eight-page author-hosted PDF at https://www.sontaglab.org/FTPDIR/pomerening-sontag-ferrell-naturecell03.pdf. The archive includes supplementary material; it is not admitted as fully reviewed here. No raw kinase traces or independent bifurcation fit was reconstructed. Cell-free, cycloheximide-treated egg extracts with nondegradable cyclin are distinct from intact cycling cells.",
         "Multiple contexts from this publication are not independent studies or independent replications."
       ],
@@ -1697,7 +1697,7 @@
       "observable": "Rechallenge cytokine output and associated chromatin/transcription changes",
       "finding": "A short initial exposure leaves distinct trained/tolerant response programs after the intervening culture period.",
       "limitations": [
-        "Selected primary Methods summary, Results and Figures 1-3 legends were read in PMC HTML. Detailed supplemental protocols, raw sequencing and separate mouse infection/cAMP experiments were not reconstructed or admitted here. The published title uses of monocyte-to-macrophage differentiation; the PMC author manuscript title uses during monocyte to macrophage differentiation. Both identify DOI 10.1126/science.1251086. Chromatin associations do not establish necessity of every mark.",
+        "Selected primary Methods summary, Results and Figures 1-3 legends were read in PMC HTML. Detailed supplemental protocols, raw sequencing and separate mouse infection/cAMP experiments were not reconstructed or admitted here. The published title uses “of monocyte-to-macrophage differentiation”; the PMC author manuscript title uses “during monocyte to macrophage differentiation”. Both identify DOI 10.1126/science.1251086. Chromatin associations do not establish necessity of every mark.",
         "The observed six-day persistence is not permanent memory, an experimentally measured response threshold, isolated histone-mark necessity or antigen-receptor clonal memory.",
         "Differentiation and priming are separable design components, but culture selection cannot be excluded as every contributor by aggregate omics alone.",
         "Primary source interpretation only: no raw-data replay, laboratory reproduction, independent scientific review, evolutionary origin reconstruction or universal cell-count/causal-weight admission."
@@ -1837,7 +1837,7 @@
       "finding": "Double knockout removes detectable GCAP1/2 expression; transgenic GCAP2 is expressed at about twice endogenous GCAP2, so downstream rescue is not a dose-matched single-variable control.",
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type.",
         "All three contexts share this one publication. Restoration of maximal bulk activity does not imply restoration of single-cell kinetics."
       ],
@@ -1865,7 +1865,7 @@
       "finding": "Knockout removes detectable calcium dependence of GC activity, rather than removing the GC enzyme or all basal activity; GCAP2 transgene restores maximal homogenate activity and added recombinant GCAP1 restores calcium responsiveness in separate extracts.",
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type.",
         "All three contexts share this one publication. Restoration of maximal bulk activity does not imply restoration of single-cell kinetics."
       ],
@@ -1893,7 +1893,7 @@
       "finding": "GCAP knockout yields larger, slower dim-flash responses; GCAP2-only expression does not restore the early fast recovery even when maximal homogenate activity is restored. Bright-background incremental sensitivity falls sooner, while non-GCAP adaptation remains.",
       "limitations": [
         "No independent raw-data replay or new quantitative fit is claimed.",
-        "This preparation does not establish a universal generative parent, carrier minimum or full end-to-end cellular transfer function.",
+        "This preparation does not establish a full end-to-end cellular transfer function.",
         "Complete published primary main HTML was read, including Methods, Results, Discussion, Table 1 and Figures 1-6 captions. Figure images were not digitized or quantitatively reanalysed; raw currents and supplementary materials were not independently replayed. Single-photon amplitudes are inferred using mean-variance scaling, not direct photon-by-photon event labels. Preparations within this publication are dependent and GCAP2 transgenic expression is not dose-matched to wild type.",
         "All three contexts share this one publication. Restoration of maximal bulk activity does not imply restoration of single-cell kinetics."
       ],
@@ -2048,8 +2048,8 @@
     },
     {
       "id": "cellular-apoptosis-commitment-universality",
-      "candidate": "Execution-associated apoptotic signs always mark irreversible commitment.",
-      "alternative": "Some preparations can recover after inducer removal, with possible retained damage.",
+      "candidate": "Some preparations can recover after inducer removal, with possible retained damage.",
+      "alternative": "Execution-associated apoptotic signs always mark irreversible commitment.",
       "sourceIds": [
         "albeck2008-extrinsic-apoptosis-switch",
         "tang2012-apoptotic-recovery"
@@ -2068,8 +2068,8 @@
     },
     {
       "id": "cellular-sasp-versus-arrest",
-      "candidate": "Suppression of senescence-associated secretion implies reversal of proliferation arrest.",
-      "alternative": "Secretory output and persistent growth arrest are separable endpoints.",
+      "candidate": "Secretory output and persistent growth arrest are separable endpoints.",
+      "alternative": "Suppression of senescence-associated secretion implies reversal of proliferation arrest.",
       "sourceIds": [
         "laberge2015-mtor-sasp"
       ],
@@ -2087,8 +2087,8 @@
     },
     {
       "id": "cellular-state-marker-versus-function",
-      "candidate": "A changed lineage marker alone establishes complete differentiated cellular identity.",
-      "alternative": "Expression signatures, electrical function, temporal persistence and genome/epigenome identity require distinct tests.",
+      "candidate": "Expression signatures, electrical function, temporal persistence and genome/epigenome identity require distinct tests.",
+      "alternative": "A changed lineage marker alone establishes complete differentiated cellular identity.",
       "sourceIds": [
         "vierbuchen2010-induced-neurons",
         "ohnishi2014-lineage-segregation"

@@ -54,7 +54,7 @@ test("topology schema and runtime require explicit selection and reject threshol
   }
 });
 
-test("browser computation and expected-source verification reproduce all 23 topology observations", async () => {
+test("browser computation and expected-source verification reproduce all 21 topology observations", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/topology.js", import.meta.url))],
     bundle: true, platform: "browser", format: "iife", globalName: "Topology", write: false, logLevel: "silent" });
   const examples = await fixtures();

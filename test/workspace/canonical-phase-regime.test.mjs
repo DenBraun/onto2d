@@ -75,7 +75,8 @@ test("phase-rule degrees of freedom count intensive states rather than specimens
     ["phase amounts are not independent intensive freedoms", (d) => removeLimit(d, bulk, "relative amounts")],
     ["an identity cannot supply an equation of state or material boundary", (d) => removeLimit(d, bulk, "equation of state")],
     ["coexistence overall density changes need not create new intensive phases", (d) => removeLimit(d, boundary, "phase proportions")],
-    ["phase-rule C and N_ph are not original carrier thresholds", (d) => removeLimit(d, result, "parent N_min=N_crit counts 2/3/3")]
+    ["phase-rule component and phase counts, hard-disk N, alloy grains and coordination counts remain different domains", (d) =>
+      removeLimit(d, result, "liquid coordination counts are different domains")]
   ]);
 });
 
@@ -140,7 +141,7 @@ test("the synthesis reuses exactly four studies and uses its own context-bound m
   ]);
 });
 
-test("actual author-summary reading and original catalogue provenance stay bounded", async () => {
+test("actual author-summary reading, universal precursor phases and unread phase data stay bounded", async () => {
   const data = await source();
   const record = publication(data, paper);
   assert.equal(record.doi, "10.2475/ajs.s3-16.96.441");
@@ -150,14 +151,12 @@ test("actual author-summary reading and original catalogue provenance stay bound
   for (const suffix of ["bulk-equilibrium-phase-conditions", "phase-regime-stability-observable-boundary", "phase-regime-source-scope"]) {
     assert.equal(role(data, suffix).instanceAdmission, "none");
   }
-  assert.equal(claim(data, result).citations.find((item) => item.sourceId === "legacy-2").role, "provenance");
   await rejects([
     ["the selected primary author summary is not the complete earlier treatise", (d) => { publication(d, paper).review.extent = "full-original-1876-1878-treatise"; }],
     ["an unread capillary section cannot become an admitted locator", (d) => { claim(d, bulk).citations[0].locator = "Published pages 450-458: fully reviewed capillary stability proof"; }],
-    ["crystal, liquid and colloid are not universal necessary ancestors", (d) => removeLimit(d, result, "Original necessary parents 2.9")],
-    ["catalogue weights are not measured causal fractions", (d) => removeLimit(d, result, "Original weights 0.4/0.35/0.25")],
-    ["SOMA pattern labels do not add a measured physical entity", (d) => removeLimit(d, result, "SOMA global pattern/stability-map label")],
-    ["generic legacy evidence does not admit unread calorimetric or transport data", (d) => removeLimit(d, result, "generic thermodynamics/Landau/critical-framework")],
-    ["catalogue provenance cannot be promoted to scientific support", (d) => { claim(d, result).citations.find((item) => item.sourceId === "legacy-2").role = "supports"; }]
+    ["crystal, liquid and colloid are not universal necessary ancestors", (d) =>
+      removeLimit(d, result, "Crystals, liquid molecular organization and colloidal interfaces are not universal prerequisites")],
+    ["no unread Landau derivation, calorimetric latent heat or transport phase boundary is admitted", (d) =>
+      removeLimit(d, result, "No unread Landau derivation, calorimetric latent heat")]
   ]);
 });

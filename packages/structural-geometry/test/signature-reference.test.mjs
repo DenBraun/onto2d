@@ -6,7 +6,7 @@ import { run, verifyReferenceSources } from "../../../cases/structural-geometry/
 import { readJson } from "../../../cases/structural-geometry/signatures/fixtures.mjs";
 
 test("all signature artifacts replay against independent source-derived responses, 207 census requests and 2343 adjudications", async () => {
-  const suite = await run(); assert.equal(suite.runs.length, 27); assert.equal(suite.contrasts.length, 9);
+  const suite = await run(); assert.equal(suite.runs.length, 26); assert.equal(suite.contrasts.length, 9);
   assert.equal(suite.census.complete, 0); assert.equal(suite.census.observedFeatures, 345);
 });
 test("signature references reject omitted, changed or extra source/protocol dependencies", async () => {
@@ -20,5 +20,5 @@ test("signature references reject omitted, changed or extra source/protocol depe
 test("independent Python replays complete and incomplete signatures, joint feature rows and all source-derived response evidence", () => {
   const cwd = fileURLToPath(new URL("../../../", import.meta.url));
   const output = execFileSync("python3", ["-B", "cases/structural-geometry/signatures/reference.py", "--verify-artifacts"], { cwd, encoding: "utf8" });
-  assert.match(output, /27 controls/); assert.match(output, /2343 adjudications/);
+  assert.match(output, /26 controls/); assert.match(output, /2343 adjudications/);
 });

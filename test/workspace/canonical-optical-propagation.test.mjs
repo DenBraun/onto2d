@@ -79,7 +79,7 @@ test("amplitude attenuation, intensity attenuation and measured transmission ret
     ["a bulk attenuation coefficient is not dimensionless", (d) => replaceStatement(d, model,
       "alpha_int=2*k_imag in m^-1", "alpha_int=2*k_imag as a dimensionless flux fraction")],
     ["the squared-amplitude factor is algebraic rather than a new measurement", (d) => removeLimit(d, model,
-      "intensity factor2 follows algebraically")],
+      "intensity factor 2 follows algebraically")],
     ["finite-aperture flux loss does not identify bulk heat deposition", (d) => removeLimit(d, model,
       "bulk heat deposition")],
     ["geometry and interfaces are required to infer bulk attenuation from transmission", (d) => removeLimit(d, boundary,
@@ -192,12 +192,11 @@ test("the limited water report and author-instructional reading cannot acquire u
   ]);
 });
 
-test("no universal all-effects channel, chronological parent or carrier threshold follows from this scope", async () => {
+test("no universal all-effects channel, mandatory prior reflection or counting threshold follows from this scope", async () => {
   const data = await source();
   for (const suffix of ["linear-optical-propagation", "optical-channel-observable-boundary", "optical-propagation-source-scope"]) {
     assert.equal(data.readiness.nodeRoles.find((item) => item.nodeId === `phys:${suffix}`).instanceAdmission, "none");
   }
-  assert.equal(claim(data, scope).citations.find((item) => item.sourceId === "legacy-2").role, "limits");
   await rejects([
     ["absorption, refraction and coherence are not effects every material must have simultaneously", (d) => removeLimit(d, boundary,
       "effects that every medium must produce simultaneously")],
@@ -205,13 +204,13 @@ test("no universal all-effects channel, chronological parent or carrier threshol
       "without a prior scene-reflection event")],
     ["isolated permanent dipoles cannot supply a universal constitutive prerequisite", (d) => removeLimit(d, boundary,
       "Permanent molecular dipoles are not established")],
-    ["parent half-weights are not measured causal fractions", (d) => removeLimit(d, scope,
-      "Original necessary parents2.1 and2.8")],
-    ["a field mode or unit carrier count is not a measured onset threshold", (d) => removeLimit(d, scope,
-      "Original carrier group1/type2")],
-    ["SOMA classifications do not demonstrate universal information degradation", (d) => removeLimit(d, scope,
+    ["the constitutive response remains supplied rather than derived", (d) => removeLimit(d, scope,
+      "The model constitutive response is supplied rather than derived")],
+    ["field modes, photon counts, path segments and flux samples remain different counting domains", (d) => removeLimit(d, scope,
+      "macroscopic flux sample are different counting domains")],
+    ["channel transformation does not demonstrate irreducible information degradation", (d) => removeLimit(d, scope,
       "irreducible information degradation")],
-    ["generic legacy evidence does not supply an executable radiative-transfer solver", (d) => removeLimit(d, scope,
+    ["the formal reading and window response do not supply an executable radiative-transfer solver", (d) => removeLimit(d, scope,
       "full radiative-transfer solver")]
   ]);
 });

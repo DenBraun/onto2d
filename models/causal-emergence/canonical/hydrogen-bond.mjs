@@ -220,7 +220,7 @@ const contracts = {
         "Directionality and the usual red shift are tendencies: blue shifts, no shift, multiple donors/acceptors and borderline cases are explicitly allowed. No preferred angle or van der Waals radius comparison is an infallible necessary cutoff.",
         "Cooperative networks are possible multi-bond systems, not required of a single hydrogen bond. An intermolecular-only definition excludes legitimate intramolecular cases.",
         "Contributions and energetic strength depend on the system and environment. A fixed intermediate-strength band or universal dispersion < hydrogen bond < covalent ordering is not admitted.",
-        "This operational definition does not supply a measured critical count, formation rate, recognition selectivity or an ontologically autonomous SOMA arising."
+        "This operational definition does not supply a measured formation rate or recognition selectivity."
       ]
     },
     {
@@ -283,7 +283,7 @@ const contracts = {
       "id": "M-phys-water-dimer-dissociation",
       "kind": "method",
       "statement": "Infer D0 from energy conservation: initial internal energy plus IR photon energy equals D0 plus translational and both fragments rovibrational energies. State-selective REMPI fixes one fragment state; Gaussian features using known cofragment levels and a finite-resolution width are shifted jointly to match image structure and maximum velocities. Preserve the published adopted total uncertainty and unresolved printed discrepancies.",
-      "scope": "Published Equation1 and fits, conditional on calibration, fragment-state assignments and internal-energy estimate.",
+      "scope": "Published Equation 1 and fits, conditional on calibration, fragment-state assignments and internal-energy estimate.",
       "status": "method-contract",
       "citations": [
         {
@@ -386,7 +386,7 @@ const contracts = {
     {
       "id": "C-phys-water-dimer-model",
       "kind": "review-finding",
-      "statement": "For neutral water-dimer Conf1/s0, the RI-MP2 source reports O...O=2.908 Angstrom, H...O=1.943 Angstrom and O-H...O=173.6 degrees. Table1 gives DeltaEe=-4.95 kcal/mol, harmonic-ZPE DeltaE0=-2.82 kcal/mol and frozen-fragment DeltaEint=-5.01 kcal/mol. The model retains directional attractive binding and significant contributions beyond a bare permanent-dipole pair term.",
+      "statement": "For neutral water-dimer Conf1/s0, the RI-MP2 source reports O...O=2.908 Angstrom, H...O=1.943 Angstrom and O-H...O=173.6 degrees. Table 1 gives DeltaEe=-4.95 kcal/mol, harmonic-ZPE DeltaE0=-2.82 kcal/mol and frozen-fragment DeltaEint=-5.01 kcal/mol. The model retains directional attractive binding and significant contributions beyond a bare permanent-dipole pair term.",
       "scope": "Selected isolated-water-dimer source computation, with kcal/mol sign and geometry conventions.",
       "status": "publication-supported",
       "citations": [
@@ -418,7 +418,7 @@ const contracts = {
       "id": "M-phys-hydrogen-bond-source-scope",
       "kind": "method",
       "statement": "Synthesize the definition authority with the one cold-dimer measurement and one isolated computational model, retaining both full contexts. Use the measured energy only with its adopted source uncertainty and discrepancies; use optimized geometry/partition outputs only with their method and inherited-input limits. Qualify broad network/application assertions without converting them to new measured studies.",
-      "scope": "Literature-synthesis interpretation contract for original card2.7.",
+      "scope": "Literature-synthesis interpretation contract for hydrogen bonds.",
       "status": "method-contract",
       "citations": [
         {
@@ -454,14 +454,13 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Original parent2.3 chemical bonding weight0.4, direction[2], modes[0,1], necessary/dependency10/arising and carrier1/0 N_min=N_crit=2,N_sat=null have no matched causal estimator or universal measured threshold. A covalent donor is a structural definition, not the full molecular-formation history.",
-        "Original parent2.4 ionic interaction/formation weight0.3, direction[2], mode[1], necessary/dependency10/arising and carrier1/0 minima1,N_sat=null are excluded as universal prerequisites; a neutral water dimer requires no prior free-ion formation.",
-        "Original parent2.6 dispersion weight0.3, direction[2], modes[0,1], necessary/dependency10/arising and carrier1/0 minima2,N_sat=null are not causal-stage or threshold evidence. A contribution in a joint energy model is not a distinct earlier physical stage.",
-        "Intra- as well as intermolecular hydrogen bonds are included by the definition. Two monomers in the selected dimer specify its composition, not a universal minimum or critical number; no normalized replacement weights are introduced.",
-        "Original Level2, Phase1, TypeRole2, Science[0,1,2], established, MustCover[10], ShouldCover[9], Optional[] and SOMA pattern labels are catalogue/display classifications. Repeated terminology does not establish an autonomous physical arising, absence of bounded molecular complexes or a universal object/event distinction.",
+        "A covalent donor is a structural definition, not the full molecular-formation history.",
+        "A contribution in a joint energy model is not a distinct earlier physical stage, and a neutral water dimer requires no prior free-ion formation.",
+        "Intra- as well as intermolecular hydrogen bonds are included by the definition. Two monomers in the selected dimer specify its composition, not a universal minimum or critical number.",
+        "Repeated terminology does not establish an autonomous physical arising, absence of bounded molecular complexes or a universal object/event distinction.",
         "Electrostatic, polarization, dispersion and partial-covalent interpretations do not establish a universal intermediate strength, selectivity ranking or new fundamental interaction. Energies and diagnostic evidence retain their system/state/method boundaries.",
         "Network cooperativity, molecular recognition, supramolecular organization and liquids/crystals/polymers are real application domains. Their full geometry, kinetics, thermodynamics, structural roles and recognition specificity require system-specific evidence beyond this isolated dimer; their existence is not blanket-excluded.",
-        "The generic original theoretical and empirical paragraphs have null DOI/URL and are not independent publications. No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition is admitted.",
+        "No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition is admitted.",
         "The experimental and computational contexts remain distinct; the model paper comparison reuses prior experiment and an inherited external ZPE. No cloned study, common fitted likelihood, raw VMI reanalysis or new quantum-chemical reproduction is supplied."
       ],
       "contextIds": [
@@ -473,7 +472,7 @@ const contracts = {
       "id": "C-phys-hydrogen-bond-source-scope",
       "kind": "review-finding",
       "statement": "Hydrogen-bond classification can retain intra/intermolecular donor-acceptor interactions with qualified evidence criteria. In the finite positive cases reviewed, a prepared neutral water dimer has a measured fitted dissociation energy and an isolated-water model has directional equilibrium geometry and counteracting interaction-energy contributions. These distinct results support scoped hydrogen-bond description without a universal strength hierarchy, network-cooperativity requirement or necessary chemical/ionic/dispersion emergence chain.",
-      "scope": "Complete disposition of references/level-2.json /7 through selected definitions, finite findings and explicit broad-scope qualifications.",
+      "scope": "Literature synthesis of selected hydrogen-bond definitions and finite findings, with explicit broad-scope qualifications.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -509,14 +508,13 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Original parent2.3 chemical bonding weight0.4, direction[2], modes[0,1], necessary/dependency10/arising and carrier1/0 N_min=N_crit=2,N_sat=null have no matched causal estimator or universal measured threshold. A covalent donor is a structural definition, not the full molecular-formation history.",
-        "Original parent2.4 ionic interaction/formation weight0.3, direction[2], mode[1], necessary/dependency10/arising and carrier1/0 minima1,N_sat=null are excluded as universal prerequisites; a neutral water dimer requires no prior free-ion formation.",
-        "Original parent2.6 dispersion weight0.3, direction[2], modes[0,1], necessary/dependency10/arising and carrier1/0 minima2,N_sat=null are not causal-stage or threshold evidence. A contribution in a joint energy model is not a distinct earlier physical stage.",
-        "Intra- as well as intermolecular hydrogen bonds are included by the definition. Two monomers in the selected dimer specify its composition, not a universal minimum or critical number; no normalized replacement weights are introduced.",
-        "Original Level2, Phase1, TypeRole2, Science[0,1,2], established, MustCover[10], ShouldCover[9], Optional[] and SOMA pattern labels are catalogue/display classifications. Repeated terminology does not establish an autonomous physical arising, absence of bounded molecular complexes or a universal object/event distinction.",
+        "A covalent donor is a structural definition, not the full molecular-formation history.",
+        "A contribution in a joint energy model is not a distinct earlier physical stage, and a neutral water dimer requires no prior free-ion formation.",
+        "Intra- as well as intermolecular hydrogen bonds are included by the definition. Two monomers in the selected dimer specify its composition, not a universal minimum or critical number.",
+        "Repeated terminology does not establish an autonomous physical arising, absence of bounded molecular complexes or a universal object/event distinction.",
         "Electrostatic, polarization, dispersion and partial-covalent interpretations do not establish a universal intermediate strength, selectivity ranking or new fundamental interaction. Energies and diagnostic evidence retain their system/state/method boundaries.",
         "Network cooperativity, molecular recognition, supramolecular organization and liquids/crystals/polymers are real application domains. Their full geometry, kinetics, thermodynamics, structural roles and recognition specificity require system-specific evidence beyond this isolated dimer; their existence is not blanket-excluded.",
-        "The generic original theoretical and empirical paragraphs have null DOI/URL and are not independent publications. No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition is admitted.",
+        "No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition is admitted.",
         "The experimental and computational contexts remain distinct; the model paper comparison reuses prior experiment and an inherited external ZPE. No cloned study, common fitted likelihood, raw VMI reanalysis or new quantum-chemical reproduction is supplied."
       ],
       "contextIds": [
@@ -546,7 +544,7 @@ const contracts = {
         "Directionality and the usual red shift are tendencies: blue shifts, no shift, multiple donors/acceptors and borderline cases are explicitly allowed. No preferred angle or van der Waals radius comparison is an infallible necessary cutoff.",
         "Cooperative networks are possible multi-bond systems, not required of a single hydrogen bond. An intermolecular-only definition excludes legitimate intramolecular cases.",
         "Contributions and energetic strength depend on the system and environment. A fixed intermediate-strength band or universal dispersion < hydrogen bond < covalent ordering is not admitted.",
-        "This operational definition does not supply a measured critical count, formation rate, recognition selectivity or an ontologically autonomous SOMA arising."
+        "This operational definition does not supply a measured formation rate or recognition selectivity."
       ]
     },
     {
@@ -652,7 +650,7 @@ const contracts = {
       "id": "phys:water-dimer-model",
       "name": "Finite water-dimer model geometry and interaction-energy analysis",
       "kind": "scoped-process",
-      "description": "For neutral water-dimer Conf1/s0, the RI-MP2 source reports O...O=2.908 Angstrom, H...O=1.943 Angstrom and O-H...O=173.6 degrees. Table1 gives DeltaEe=-4.95 kcal/mol, harmonic-ZPE DeltaE0=-2.82 kcal/mol and frozen-fragment DeltaEint=-5.01 kcal/mol. The model retains directional attractive binding and significant contributions beyond a bare permanent-dipole pair term.",
+      "description": "For neutral water-dimer Conf1/s0, the RI-MP2 source reports O...O=2.908 Angstrom, H...O=1.943 Angstrom and O-H...O=173.6 degrees. Table 1 gives DeltaEe=-4.95 kcal/mol, harmonic-ZPE DeltaE0=-2.82 kcal/mol and frozen-fragment DeltaEint=-5.01 kcal/mol. The model retains directional attractive binding and significant contributions beyond a bare permanent-dipole pair term.",
       "claimIds": [
         "C-phys-water-dimer-model"
       ],
@@ -705,21 +703,16 @@ const contracts = {
         {
           "sourceId": "altun2018-water-dimer",
           "locator": "Supporting Information page S3, Section 1.1, Conf1 s0: RI-MP2/aug-cc-pVTZ water-dimer O-O and H-O distances and O-H-O angle"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/7"
         }
       ],
       "openObligations": [
-        "Original parent2.3 chemical bonding weight0.4, direction[2], modes[0,1], necessary/dependency10/arising and carrier1/0 N_min=N_crit=2,N_sat=null have no matched causal estimator or universal measured threshold. A covalent donor is a structural definition, not the full molecular-formation history.",
-        "Original parent2.4 ionic interaction/formation weight0.3, direction[2], mode[1], necessary/dependency10/arising and carrier1/0 minima1,N_sat=null are excluded as universal prerequisites; a neutral water dimer requires no prior free-ion formation.",
-        "Original parent2.6 dispersion weight0.3, direction[2], modes[0,1], necessary/dependency10/arising and carrier1/0 minima2,N_sat=null are not causal-stage or threshold evidence. A contribution in a joint energy model is not a distinct earlier physical stage.",
-        "Intra- as well as intermolecular hydrogen bonds are included by the definition. Two monomers in the selected dimer specify its composition, not a universal minimum or critical number; no normalized replacement weights are introduced.",
-        "Original Level2, Phase1, TypeRole2, Science[0,1,2], established, MustCover[10], ShouldCover[9], Optional[] and SOMA pattern labels are catalogue/display classifications. Repeated terminology does not establish an autonomous physical arising, absence of bounded molecular complexes or a universal object/event distinction.",
+        "A covalent donor is a structural definition, not the full molecular-formation history.",
+        "A contribution in a joint energy model is not a distinct earlier physical stage, and a neutral water dimer requires no prior free-ion formation.",
+        "Intra- as well as intermolecular hydrogen bonds are included by the definition. Two monomers in the selected dimer specify its composition, not a universal minimum or critical number.",
+        "Repeated terminology does not establish an autonomous physical arising, absence of bounded molecular complexes or a universal object/event distinction.",
         "Electrostatic, polarization, dispersion and partial-covalent interpretations do not establish a universal intermediate strength, selectivity ranking or new fundamental interaction. Energies and diagnostic evidence retain their system/state/method boundaries.",
         "Network cooperativity, molecular recognition, supramolecular organization and liquids/crystals/polymers are real application domains. Their full geometry, kinetics, thermodynamics, structural roles and recognition specificity require system-specific evidence beyond this isolated dimer; their existence is not blanket-excluded.",
-        "The generic original theoretical and empirical paragraphs have null DOI/URL and are not independent publications. No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition is admitted.",
+        "No unnamed crystallographic, bulk calorimetric or cooperative-network acquisition is admitted.",
         "The experimental and computational contexts remain distinct; the model paper comparison reuses prior experiment and an inherited external ZPE. No cloned study, common fitted likelihood, raw VMI reanalysis or new quantum-chemical reproduction is supplied."
       ]
     }
@@ -976,7 +969,7 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1063/1.3598339",
-      "correctionCheck": "Published title/authors/DOI/article identity and online1June/issue7June2011 dates match DOI registry; empty relation/no update-to item. Limited correction search found no explicit resolution of the printed discrepancies; not exhaustive."
+      "correctionCheck": "Published title/authors/DOI/article identity and online 1 June/issue 7 June 2011 dates match DOI registry; empty relation/no update-to item. Limited correction search found no explicit resolution of the printed discrepancies; not exhaustive."
     },
     {
       "id": "altun2018-water-dimer",
@@ -989,7 +982,7 @@ const contracts = {
       "system": "Isolated neutral-water-dimer Conf1 RI-MP2 geometry and DLPNO-CCSD(T)/LED energy analysis",
       "preparation": "Use the isolated neutral-water-dimer Conf1 geometry optimized at RI-MP2/aug-cc-pVTZ, including harmonic frequencies/ZPE at that level. Compute TightPNO DLPNO-CCSD(T) energies with frozen O1s cores, localized occupied/virtual orbitals, counterpoise BSSE correction and augmented triple/quadruple-zeta extrapolation. Compare LED energy components with the same paper DFT-SAPT partition under its stated basis and asymptotic-functional conventions.",
       "observable": "Computed equilibrium geometry, total dimerization/interaction energies and scheme-dependent energy components; no experimental acquisition.",
-      "finding": "For neutral water-dimer Conf1/s0, the RI-MP2 source reports O...O=2.908 Angstrom, H...O=1.943 Angstrom and O-H...O=173.6 degrees. Table1 gives DeltaEe=-4.95 kcal/mol, harmonic-ZPE DeltaE0=-2.82 kcal/mol and frozen-fragment DeltaEint=-5.01 kcal/mol. The model retains directional attractive binding and significant contributions beyond a bare permanent-dipole pair term.",
+      "finding": "For neutral water-dimer Conf1/s0, the RI-MP2 source reports O...O=2.908 Angstrom, H...O=1.943 Angstrom and O-H...O=173.6 degrees. Table 1 gives DeltaEe=-4.95 kcal/mol, harmonic-ZPE DeltaE0=-2.82 kcal/mol and frozen-fragment DeltaEint=-5.01 kcal/mol. The model retains directional attractive binding and significant contributions beyond a bare permanent-dipole pair term.",
       "limitations": [
         "This is a computational analysis, not a geometry measurement or room-temperature water simulation. The other water conformers have imaginary frequencies and are not admitted as stable populations.",
         "The paper DFT-SAPT implementation supplies an inherited gas-phase water ionization input; that underlying publication was not independently reviewed here. No electronic-structure solver or basis extrapolation is replayed.",
@@ -1007,7 +1000,7 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://www.beilstein-journals.org/bjoc/articles/14/79",
-      "correctionCheck": "Publisher HTML/PDF identity, DOI/authors/date25April2018 checked; limited title/DOI correction search found no explicit correction. Crossref API429; no claim of registry correction coverage or exhaustive later audit.",
+      "correctionCheck": "Publisher HTML/PDF identity, DOI/authors/date 25 April 2018 checked; limited title/DOI correction search found no explicit correction. Crossref API429; no claim of registry correction coverage or exhaustive later audit.",
       "issue": ""
     }
   ],
@@ -1124,7 +1117,7 @@ const contracts = {
           "Published pages 923-927, Table 1 and Figures 3-5: selected water-dimer geometry and energies, harmonic versus inherited ZPE, asymptotic scans and nonunique energy components",
           "Supporting Information page S3, Section 1.1, Conf1 s0: RI-MP2/aug-cc-pVTZ water-dimer O-O and H-O distances and O-H-O angle"
         ],
-        "limit": "Read methods pp.921-923, water-dimer Table1/Figs3-5/results pp.923-926, conformer/interpretation/conclusion p.927 and SI p.S3 Conf1 geometry. This finite water-dimer computation is not an experimental acquisition, a new HF result, a replay of the entire SI or an independent primary review of inherited ZPE/ionization inputs. Publisher title/authors/DOI/date checked; no explicit correction found in limited title/DOI search. Crossref API returned429. CC-BY4.0; attribution to Altun, Neese and Bistoni retained."
+        "limit": "Read methods pp.921-923, water-dimer Table 1/Figs 3-5/results pp.923-926, conformer/interpretation/conclusion p.927 and SI p.S3 Conf1 geometry. This finite water-dimer computation is not an experimental acquisition, a new HF result, a replay of the entire SI or an independent primary review of inherited ZPE/ionization inputs. Publisher title/authors/DOI/date checked; no explicit correction found in limited title/DOI search. Crossref API returned 429. CC-BY4.0; attribution to Altun, Neese and Bistoni retained."
       }
     }
   ]

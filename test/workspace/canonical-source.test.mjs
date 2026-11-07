@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { loadCanonicalSource, validateCanonicalSource } from "../../models/causal-emergence/canonical/source.mjs";
 import { buildCanonicalRelease } from "../../models/causal-emergence/canonical/build.mjs";
+import { NO_RECORDS_OBLIGATION } from "../../models/causal-emergence/canonical/arisings.mjs";
 
 const data = await loadCanonicalSource();
 
@@ -43,10 +44,10 @@ test("joint rules require distinct multiplicities and cannot assert successful p
 
 test("the current output contains evidence and no graph migration history", async () => {
   const pack = await buildCanonicalRelease();
-  assert.deepEqual(pack.manifest.statistics, { nodeCount: 2537, edgeCount: 3488 });
+  assert.deepEqual(pack.manifest.statistics, { nodeCount: 2796, edgeCount: 4768 });
   const dictionaries = pack.files["model/dictionaries.json"];
-  assert.equal(dictionaries.claims.length, 2720);
-  assert.equal(dictionaries.sources.length, 707);
+  assert.equal(dictionaries.claims.length, 3355);
+  assert.equal(dictionaries.sources.length, 865);
   const census = dictionaries.evidence.neurogenesisData;
   assert.equal(census.sampleCount, 39);
   assert.equal(census.retainedNuclei, 153530);
@@ -62,11 +63,18 @@ test("the current output contains evidence and no graph migration history", asyn
     }
   };
   inspect(pack.files);
-  assert.ok(pack.files["model/nodes.json"].every((n) => n.rationale.length));
+  // Technical records carry their evidence claims; an arising carries its catalogue entry and its technical subgraph.
+  for (const node of pack.files["model/nodes.json"]) {
+    if (node.layer === "arising") {
+      assert.ok(node.sourceCoordinates.some((coordinate) => coordinate.sourceId === "arising-catalogue"), node.id);
+      // A predicted arising without records states the obligation to add its evidence.
+      assert.ok(node.memberIds.length || node.openObligations.includes(NO_RECORDS_OBLIGATION), node.id);
+    } else assert.ok(node.rationale.length, node.id);
+  }
   const edges = new Map(pack.files["model/edges.json"].map((edge) => [edge.id, edge]));
   const claims = new Map(dictionaries.claims.map((claim) => [claim.id, claim]));
   const sources = new Map(dictionaries.sources.map((source) => [source.id, source]));
-  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"]
+  const studies = new Map(["pilot", "routing", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems", "causeEvidence"]
     .flatMap((key) => dictionaries[key].studies).map((study) => [study.id, study]));
   for (const node of pack.files["model/nodes.json"]) {
     const resolved = resolveRecordEvidence(node, recordEvidenceContext([node], dictionaries));

@@ -3,7 +3,7 @@
     "id": "structural-comparison",
     "version": "1"
   },
-  "artifactHash": "sha256:c33d22b23ad6780cb1ea30be6f4123b5260b21c8dfab07e143ee179f3289c311",
+  "artifactHash": "sha256:3e80f53f9c53c068101a4bc5a7832441260d9bf02ce6ba4fa5c7091f518497b9",
   "components": [
     {
       "family": "structure",
@@ -111,7 +111,7 @@
         "id": "structural-typed-alignment",
         "version": "1"
       },
-      "artifactHash": "sha256:2628d5cffa37ae3da8b6243db2bbea3945bb6bdbaad64540dfd880317a700300",
+      "artifactHash": "sha256:491affaa0cc63679f687a029de61e4cd5fd4918704173454ca97c512bb13e2d2",
       "compatibility": {
         "basis": null,
         "reasons": [
@@ -122,7 +122,7 @@
         "state": "unresolved"
       },
       "mapping": {
-        "artifactHash": "sha256:39db91e2dbfe3dd52dbb8b3d8ca95fc3c9f0748d5ea6838810bf2e0bcb9b99b9",
+        "artifactHash": "sha256:7e4b0ecb8648f9dd5d188aac011f634e982b3ece7d4fc13c5c0b0647b1307e9a",
         "declaration": {
           "fields": {
             "causalDirectionIds": [
@@ -202,7 +202,7 @@
           },
           "id": "comparison-renumbered-unapproved",
           "reviewEvidence": {
-            "contentHash": "sha256:2a958b1671f026d70317d7f15d426b800185037f237e74c698b816bc11229efb",
+            "contentHash": "sha256:8549f788e668ef08bef1ce650a73aca9a1e165d4303806f3b5f55e337b529fcf",
             "reference": "cases/structural-geometry/comparison/PROTOCOL.md"
           },
           "version": "1"
@@ -1315,7 +1315,7 @@
     },
     "vocabulary": {
       "approvedMappingHash": null,
-      "mappingHash": "sha256:39db91e2dbfe3dd52dbb8b3d8ca95fc3c9f0748d5ea6838810bf2e0bcb9b99b9"
+      "mappingHash": "sha256:7e4b0ecb8648f9dd5d188aac011f634e982b3ece7d4fc13c5c0b0647b1307e9a"
     }
   },
   "schemaVersion": "1",

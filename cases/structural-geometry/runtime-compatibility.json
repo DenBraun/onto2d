@@ -7,7 +7,11 @@
     "Replay declared sequential binary64 score sums explicitly across Python versions; preserve exact score and tuning checks.",
     "Keep independent calculations available when the optional Unix resource module is absent; unavailable peak RSS is null.",
     "Verify the exact compatibility receipts when checking and replaying the historical reports.",
-    "Use the bounded Model Pack aggregate canonicalization profile for expanded evidence; retain canonical bytes, all existing model identities and scientific calculations. Pin the three changed modules and the new capacity helper in the biological census receipt."
+    "Use the bounded Model Pack aggregate canonicalization profile for expanded evidence; retain canonical bytes, all existing model identities and scientific calculations. Pin the three changed modules and the new capacity helper in the biological census receipt.",
+    "Add a canonical relation projection policy for Causal Emergence sources and record the package changes that remove the old source-card catalogue; source-parent projections, synthetic controls and every biological calculation are unchanged. Pin the previously unlisted Model Pack value-table, error and runtime modules in the census receipt.",
+    "Bind metric providers, distinguishability regimes and typed experiments explicitly to the source-parent projection, so a canonical Causal Emergence pack is rejected instead of being processed under a source-parent label; source-parent outputs are byte-identical.",
+    "Add the layered canonical projection policies: the arising-causal policy projects the ontological layer of arisings and their causes, the technical policy projects the evidence records inside arisings, and induced Ollivier and flow scopes select the layer that contains their nodes after one verification of the pack, reporting an unknown node as such. Projection and artifact verification default to the policy the projection names, and Forman groups follow the edge attributes of that policy. Source-parent projection, providers, regimes and typed experiments are unchanged.",
+    "Raise the Model Pack transport and aggregate canonicalization budgets fourfold (64 MiB per file, 256 MiB in total, 4,000,000 visited values) so the canonical graph can grow; limits, verification and hashes are otherwise unchanged."
   ],
   "verifierSha256": "4a9059d30baae8561e28f43b94b70b0ebfff93d06c35f82d8f6014f9c15bd94b",
   "reports": {
@@ -15,6 +19,62 @@
       "reportSha256": "7d2f1c9c32c4f4430883686f03cab0d8da396e11abe6845cb03b90aeb1f2cdac",
       "contentSha256": "58160e13a75ad012df5b2d81c9dc6236464768dbfd50d090395c2b89e7b52296",
       "files": {
+        "../../../package-lock.json": {
+          "recordedSha256": "6a211d376e0659a8584de4663afbfd8a2235e3af701ace1d890c8f2837a27a8f",
+          "currentSha256": "44c26af237f2ace74334c28cc34ca442507f026d09a4b40b1ec0916c487dab2f"
+        },
+        "../../../packages/model-pack/src/browser.js": {
+          "recordedSha256": "70ef8e6d94582e50fa7594d3364492a3009e2352bffcbc945f4bca6d8e3ceedc",
+          "currentSha256": "09978390270e5f570e2d598e4e2eb58b04b9c2f3c489057baf967a9335089dc9"
+        },
+        "../../../packages/model-pack/src/cache.js": {
+          "recordedSha256": "aad69aa95f45b5d49a00d818d448685e40686de20303d7a6488f023ff2c7482c",
+          "currentSha256": "9aea67870a7913091276002986eba507dd800b86ac3c30c35f8222ec729eea93"
+        },
+        "../../../packages/model-pack/src/index.js": {
+          "recordedSha256": "8adc749f099281cc3dc8ce531273ec9438265a5e5a3e60469a65eacece64fdee",
+          "currentSha256": "7a76eba85261b01a661f7fcd8c232ec156a7c938011f9ef87c82fa51194679f6"
+        },
+        "../../../packages/model-pack/src/node-archive.js": {
+          "recordedSha256": "170c2475179d1ec580c0fffc5f26bffc18aa4f17fc783ee2a03f16a76066e00e",
+          "currentSha256": "c590af5958f8dc0e6fa4472198daaa5d13717f7a9e0a69dbecaa6a1130c560a2"
+        },
+        "../../../packages/model-pack/src/node.js": {
+          "recordedSha256": "fde0a9cd9932efa44d11b8a93465285c3f28d6f47f01a91513e534830c4fff62",
+          "currentSha256": "c99d2e1fd60c7697b49c4a0c457e13ecd41181f0cf4ee185b6f2db99a40351bb"
+        },
+        "../../../packages/model-pack/src/transport-layout.js": {
+          "recordedSha256": "69c51f3aaebb78afefd440e533a314b4d398d36329e4296361a683ddd1b49ec7",
+          "currentSha256": "8e6893454908a2dc8e75f8a7f8173a68df4425550f717c0ccb739ff6471f529e"
+        },
+        "../../../packages/structural-geometry/src/experiments.js": {
+          "recordedSha256": "6a58ce9a2ee1e59036d0d2315cfa9c35a2ca518d0b8f4671d4e8c7f15d496f34",
+          "currentSha256": "5b95aac118a6a797b988c601d28aaf6e50a4e011ba099a1d2529c8ceee603974"
+        },
+        "../../../packages/structural-geometry/src/flow.js": {
+          "recordedSha256": "8af363089f1a5c45a15a73d134a6c0f12d6eed4af7ae9c3d6783f1279d657ddb",
+          "currentSha256": "dc621b9899cbb48ddef6a821179755ad0277ad9d018e496fa855fb7c963075d0"
+        },
+        "../../../packages/structural-geometry/src/forman.js": {
+          "recordedSha256": "956ac9ab57d4c72053a2e18eacd5a2a6c522cfdf5bc9e1dac540edc09f11e7f5",
+          "currentSha256": "fafffcb3ff40933ce1eb270dcfedf62ef8e25e4f71b5400d90fdb305ea6466c9"
+        },
+        "../../../packages/structural-geometry/src/index.js": {
+          "recordedSha256": "08d27a05ca08a1a1b6da07d6a25a25dc74723765ea38f577eceb41487abf3be0",
+          "currentSha256": "e789c34ae25e70aaac2f315baeba6ab783b66c161afeacd8a43a3c2d7033015b"
+        },
+        "../../../packages/structural-geometry/src/ollivier.js": {
+          "recordedSha256": "fda49f96625c59def3c7e7fc941f9f85946e9ea79eece9d3c40583e023dcc755",
+          "currentSha256": "0ef66dd8d5df60337e5562035913b8e84bf1aeb3e5e9f88a9634df41346dff5d"
+        },
+        "../../../packages/structural-geometry/src/policies.js": {
+          "recordedSha256": "d82581bfcabcc2b049f1acc242b901de4d1d15a03e929daf8b01bc70d303b6b2",
+          "currentSha256": "6438a4c75dc8ea313e6bd0db27d2d9feb95032c9f643f1e1c0085ab1c58b4cce"
+        },
+        "../../../packages/structural-geometry/src/providers.js": {
+          "recordedSha256": "10b4c41801930cf2acbfc69799a1c4618c34da1d89347c89b11268e7c0e652ae",
+          "currentSha256": "33ba73e562d19b7706587e9a18097a2405da0994991adebc677dab7edad1fa0d"
+        },
         "build.mjs": {
           "recordedSha256": "8bccdbaa0b6246aa02a50b1fb3d85cb149b0558edc4e4f7a2555c77e99341fd6",
           "currentSha256": "d17baacafd546d8b710c6857b9b56024de07353df36841b6a230032c2ebc2e28"
@@ -26,22 +86,12 @@
         "randi.py": {
           "recordedSha256": "38fdae1dcecfdd84a17d5235d9fe5a044b45043212d1eabd4f1f1e72cbc7086e",
           "currentSha256": "07ffecc3229698ec4b9f1ca18d914b38e1b881ca91180fc808d0136e8fdcf9fe"
-        },
-        "../../../packages/model-pack/src/index.js": {
-          "recordedSha256": "8adc749f099281cc3dc8ce531273ec9438265a5e5a3e60469a65eacece64fdee",
-          "currentSha256": "1a9a17423effa144424804149303aea83b30de3c213574417023c1e6928f8717"
-        },
-        "../../../packages/model-pack/src/transport-layout.js": {
-          "recordedSha256": "69c51f3aaebb78afefd440e533a314b4d398d36329e4296361a683ddd1b49ec7",
-          "currentSha256": "4c02f5bfc765abb5010f112e1a1f17f8e6c9efbb0881167f5a7bfd54cdf73590"
-        },
-        "../../../packages/model-pack/src/cache.js": {
-          "recordedSha256": "aad69aa95f45b5d49a00d818d448685e40686de20303d7a6488f023ff2c7482c",
-          "currentSha256": "9aea67870a7913091276002986eba507dd800b86ac3c30c35f8222ec729eea93"
         }
       },
       "addedFiles": {
-        "../../../packages/model-pack/src/canonical-options.js": "f36bb36f8f498df3921d8cb9b8478e9dfe79ac30f33539e4d7b1a1528904f921"
+        "../../../packages/model-pack/src/canonical-options.js": "2f851ce8564a7d7edfb2333692b6c391373660a00a2796ce4ec0f86609ed269f",
+        "../../../packages/model-pack/src/json-value-table.js": "21f3f9701d8b54cb48f303d872b8bf5e438f7c38a66f6e1f2d02e5d8758a7926",
+        "../../../packages/model-pack/src/model-pack-error.js": "6d8f55bab78935378f9e555c5d3c2a4eb19fbd9ba020df33c47c7cf9369c8b19"
       }
     },
     "dream4/results.json": {
@@ -122,6 +172,34 @@
       "reportSha256": "b925b67c4103589c91a1ae4b33f36bd752045c43367f70ec615012c32ee22e4b",
       "contentSha256": "72f062fcf1da1c031fa2748b4072315c637cfe4f0a72bc3de2f14285cb8c3f65",
       "files": {
+        "../../../../packages/structural-geometry/src/experiments.js": {
+          "recordedSha256": "6a58ce9a2ee1e59036d0d2315cfa9c35a2ca518d0b8f4671d4e8c7f15d496f34",
+          "currentSha256": "5b95aac118a6a797b988c601d28aaf6e50a4e011ba099a1d2529c8ceee603974"
+        },
+        "../../../../packages/structural-geometry/src/flow.js": {
+          "recordedSha256": "8af363089f1a5c45a15a73d134a6c0f12d6eed4af7ae9c3d6783f1279d657ddb",
+          "currentSha256": "dc621b9899cbb48ddef6a821179755ad0277ad9d018e496fa855fb7c963075d0"
+        },
+        "../../../../packages/structural-geometry/src/forman.js": {
+          "recordedSha256": "956ac9ab57d4c72053a2e18eacd5a2a6c522cfdf5bc9e1dac540edc09f11e7f5",
+          "currentSha256": "fafffcb3ff40933ce1eb270dcfedf62ef8e25e4f71b5400d90fdb305ea6466c9"
+        },
+        "../../../../packages/structural-geometry/src/index.js": {
+          "recordedSha256": "08d27a05ca08a1a1b6da07d6a25a25dc74723765ea38f577eceb41487abf3be0",
+          "currentSha256": "e789c34ae25e70aaac2f315baeba6ab783b66c161afeacd8a43a3c2d7033015b"
+        },
+        "../../../../packages/structural-geometry/src/ollivier.js": {
+          "recordedSha256": "fda49f96625c59def3c7e7fc941f9f85946e9ea79eece9d3c40583e023dcc755",
+          "currentSha256": "0ef66dd8d5df60337e5562035913b8e84bf1aeb3e5e9f88a9634df41346dff5d"
+        },
+        "../../../../packages/structural-geometry/src/policies.js": {
+          "recordedSha256": "d82581bfcabcc2b049f1acc242b901de4d1d15a03e929daf8b01bc70d303b6b2",
+          "currentSha256": "6438a4c75dc8ea313e6bd0db27d2d9feb95032c9f643f1e1c0085ab1c58b4cce"
+        },
+        "../../../../packages/structural-geometry/src/providers.js": {
+          "recordedSha256": "10b4c41801930cf2acbfc69799a1c4618c34da1d89347c89b11268e7c0e652ae",
+          "currentSha256": "33ba73e562d19b7706587e9a18097a2405da0994991adebc677dab7edad1fa0d"
+        },
         "build.mjs": {
           "recordedSha256": "604d19c66b1a6d5aa3f8beba3f66d6716194f0ff52981910d815866484e4abfe",
           "currentSha256": "3bf5e7eade71189a243f5e561d514218a4e0d992eeb3612e720046e88523054c"

@@ -449,7 +449,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The Higgs1964 U(1) example is linearized about a specified classical background. Footnote 4 explicitly supplies no proof of the quantized theory. Its phi0, potential and historical SU(3) discussion are not identified with the electroweak doublet or its background parameter.",
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ]
     },
     {
@@ -956,7 +956,7 @@ const contracts = {
       "limitations": [
         "The historical observation is compatible with the Standard Model Higgs hypothesis and disfavors spin one through the diphoton channel. It is not by itself a unique spin-parity, every-Yukawa, Higgs-potential, W/Z-width or vacuum-stability determination. Later data are not imported into this 2012 result.",
         "Table 6 includes imported 7 TeV WW, tau, associated bb and high-mass ZZ/WW analyses in addition to the updated four-lepton/diphoton and new 8 TeV channels. Only this article account of those imported likelihood inputs is reviewed; their earlier analysis papers are not independently replayed. Correlated nuisance parameters prevent treating displayed channel results as independent numerical replicas.",
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ],
       "contextIds": [
         "atlas2012-inference"
@@ -992,7 +992,7 @@ const contracts = {
       "limitations": [
         "The historical observation is compatible with the Standard Model Higgs hypothesis and disfavors spin one through the diphoton channel. It is not by itself a unique spin-parity, every-Yukawa, Higgs-potential, W/Z-width or vacuum-stability determination. Later data are not imported into this 2012 result.",
         "Table 6 includes imported 7 TeV WW, tau, associated bb and high-mass ZZ/WW analyses in addition to the updated four-lepton/diphoton and new 8 TeV channels. Only this article account of those imported likelihood inputs is reviewed; their earlier analysis papers are not independently replayed. Correlated nuisance parameters prevent treating displayed channel results as independent numerical replicas.",
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ],
       "contextIds": [
         "atlas2012-inference"
@@ -1093,7 +1093,7 @@ const contracts = {
         "The Higgs1964 U(1) example is linearized about a specified classical background. Footnote 4 explicitly supplies no proof of the quantized theory. Its phi0, potential and historical SU(3) discussion are not identified with the electroweak doublet or its background parameter.",
         "Use Weinberg1967 conventions throughout: <phi>=lambda_W*(1,0), where lambda_W is the chosen real background, not a quartic coupling. No silent replacement by the modern (0,v/sqrt(2)) convention is made. The chosen nonzero component is a model/gauge convention, not by itself an observed gauge-invariant order parameter, measured spatial medium or proof of absolute vacuum stability.",
         "Gauge and electron Yukawa couplings are independent inputs. The equations relate mass parameters to those inputs; they do not explain the numerical mass hierarchy. Bare or leading-order model masses are not silently equated with fitted resonance masses or renormalized parameters.",
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ],
       "contextIds": [
         "electroweak-replay"
@@ -1143,7 +1143,7 @@ const contracts = {
         "The Higgs1964 U(1) example is linearized about a specified classical background. Footnote 4 explicitly supplies no proof of the quantized theory. Its phi0, potential and historical SU(3) discussion are not identified with the electroweak doublet or its background parameter.",
         "Use Weinberg1967 conventions throughout: <phi>=lambda_W*(1,0), where lambda_W is the chosen real background, not a quartic coupling. No silent replacement by the modern (0,v/sqrt(2)) convention is made. The chosen nonzero component is a model/gauge convention, not by itself an observed gauge-invariant order parameter, measured spatial medium or proof of absolute vacuum stability.",
         "Gauge and electron Yukawa couplings are independent inputs. The equations relate mass parameters to those inputs; they do not explain the numerical mass hierarchy. Bare or leading-order model masses are not silently equated with fitted resonance masses or renormalized parameters.",
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ],
       "contextIds": [
         "electroweak-replay"
@@ -1168,7 +1168,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ]
     },
     {
@@ -1192,7 +1192,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ]
     },
     {
@@ -1216,7 +1216,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ]
     },
     {
@@ -1240,7 +1240,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ]
     },
     {

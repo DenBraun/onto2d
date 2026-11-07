@@ -34,9 +34,14 @@
 | Structural signature | An explicitly layered descriptor contract, not one universal similarity scalar or semantic identity |
 | Candidate structural analogue | A hypothesis about comparable organization that requires reviewed domain evidence and baselines |
 
-`source-parent` records the relation supplied by a catalogue. Its field names
-such as `causalDirections` do not establish reviewed causal or generative
-semantics. Model verification checks integrity, not scientific truth.
+`source-parent` is the directed parent relation of declared synthetic controls.
+Canonical Causal Emergence evidence records use the `descriptive` and
+`functional-support` layers instead. Its arising layer joins arisings through
+`causal` edges, the author's causes, and each cause carries its own evidence
+status. Field names such as `causalDirections` or `role`, and the `causal` layer
+itself, do not establish reviewed causal or generative semantics. A cause stays
+an author hypothesis until its status records support. Model verification
+checks integrity, not scientific truth.
 
 An edge length is not a physical distance or a causal strength. Unit lengths
 can induce directed path distances, including unreachable pairs. Ollivier and
@@ -47,7 +52,7 @@ weights. Source/artifact identity is distinct from regime-relative equality.
 
 The [revised design](RESEARCH.md) fixes these distinctions before
 providers or comparisons are implemented. Distinguishability is an analytical
-proposal and catalogue motif, not an empirically established origin of space.
+proposal, not an empirically established origin of space.
 
 <a id="representation-policies"></a>
 
@@ -58,8 +63,8 @@ proposal and catalogue motif, not an empirically established origin of space.
 ### `source-parent-directed-v1`, version `1`
 
 This closed policy replaces the proposal's provisional `causal-directed-v1`
-name. The current Causal Emergence release contains source-parent relations,
-including known source findings, rather than reviewed causal relations.
+name. It applies to sources whose edges are all source-parent relations, such
+as the synthetic controls; these relations are not reviewed causal relations.
 
 The policy consumes the complete verified v1 model. Every node and every edge
 is represented once with its original ID and endpoints. Each edge must have
@@ -97,6 +102,72 @@ V1 permits at most 4096 nodes and 16384 edges, with the existing canonical
 codec's 100000-entry, depth and string bounds also applying. Exceeding a bound
 fails; a partial graph is never reported as a complete result. Input size limits
 are not a guarantee that every graph below the count bounds fits the codec.
+
+<a id="representation-policies--canonical-relation-directed-v1-version-1"></a>
+
+### `canonical-relation-directed-v1`, version `1`
+
+This closed policy projects a canonical Causal Emergence graph without an
+arising layer. Every edge must belong to the `descriptive` or
+`functional-support` layer and runs from a premise to its dependent record. A
+source whose edges all use these layers is projected with this policy; any other
+layer, including `causal`, fails explicitly. Self-loops and
+parallel edges fail as in `source-parent-directed-v1`. Joint construction-rule
+premises are projected as separate pairwise incidences
+(`higherOrderPolicy: "none"`); no hyperedge or joint semantics is inferred.
+
+Projection nodes retain `level`, `typeRole` and `scientificStatus`; projection
+edges retain `relationLayer` and `role`. Levels are display groups of the
+canonical graph, not an emergence order. Descriptive relations remain
+representations, and functional-support relations remain bounded by their
+declared preparations. Record hashes, ordering, model binding and bounds follow
+the source-parent policy above.
+
+<a id="representation-policies--canonical-arising-causal-v1-version-1"></a>
+
+### `canonical-arising-causal-v1`, version `1`
+
+This closed policy projects the arising layer of a layered canonical release.
+It is the default for any source with `causal` edges. Nodes are the source nodes
+with `layer: "arising"`. Edges are the `causal` relations, each directed from a
+cause to the arising it conditions. Descriptive and functional-support edges are
+excluded before projection, so no technical record enters.
+
+A layered pack must meet two conditions, or projection fails explicitly:
+
+- Every node declares the `arising` or `technical` layer
+  (`NODE_LAYER_UNSUPPORTED`).
+- Every projected edge joins two arisings (`LAYER_ENDPOINT_UNSUPPORTED`).
+
+Self-loops and parallel edges fail as in `source-parent-directed-v1`.
+
+Projection nodes retain `level`, `phase`, `typeRole` and `scientificStatus`.
+Projection edges retain `relationLayer`, `dependencyType`, `necessity`,
+`ontologicalRole` and `status`. A cause's `status` records its evidence state:
+`author-hypothesis`, `model-supported` or `supported`. The projection carries it
+unchanged, and no metric weighs an edge by it. Levels and phases are the cells
+of the author's table, not a measured emergence order. Record hashes, ordering,
+model binding and bounds follow the source-parent policy above.
+
+<a id="representation-policies--canonical-technical-directed-v1-version-1"></a>
+
+### `canonical-technical-directed-v1`, version `1`
+
+This closed policy projects the technical layer of a layered canonical release.
+Nodes are the nodes with `layer: "technical"`. Edges are their `descriptive` and
+`functional-support` relations, from premise to dependent. `causal` edges are
+excluded. The layer conditions of the arising policy apply, with the technical
+layer in place of the arising layer.
+
+The policy is chosen only in two ways:
+
+- by an explicit `projectionPolicyId`;
+- by `layerPolicyForNodes`, for an induced scope inside the technical layer.
+
+Projection nodes retain `level`, `typeRole` and `scientificStatus`, and
+projection edges retain `relationLayer` and `role`, as in
+`canonical-relation-directed-v1`. On the same records and relations, both
+policies give the same values.
 
 <a id="representation-policies--replay-and-invariance"></a>
 
@@ -176,7 +247,9 @@ Distribution summaries contain count, sum, minimum, maximum and an exact mean
 represented as `{numerator: sum, denominator: count}`. Empty populations have
 sum zero, null extrema and null mean. Histograms sort by increasing curvature.
 Grouped summaries use source level, target level, dependency type, necessity and
-ontological role as separate channels. Missing attributes have an explicit
+ontological role as separate channels for source-parent and arising-causal
+projections. Canonical relation and technical projections use source level,
+target level, relation layer and relation role. Missing attributes have an explicit
 `present: false` group, distinct from a declared null value. Extrema list all
 tied edge IDs in canonical order, without a hidden top-k cutoff.
 
@@ -213,7 +286,6 @@ The unit foundation and its frozen artifacts retain their original contract.
 The [implemented providers](#compatible-metric-providers) preserve the exact
 `inverse-target-share-v1` ID and full-source context below. Necessity and typed
 views remain selections/filtrations/channels, not implicit scalar metrics.
-Existing artifacts are pinned in the [pre-regime baseline](EVIDENCE.md).
 
 <a id="typed-filtration-and-local-weight-experiments--selection-policy"></a>
 
@@ -261,10 +333,9 @@ vertexWeight(v) = 1
 The normalization context is always the full source projection, even when
 some edges are excluded by a selection. This keeps metric changes separate
 from incidence changes across a filtration. Original values are never rewritten.
-The source schema describes Weight as a relative contribution within a child's
-parent population ([source definition](../../references/arising-schema.json)).
-Inverse share is a modeling hypothesis, not calibrated distance or causal
-strength. The three known non-unit incoming sums are disclosed, not repaired
+The metric reads a source-parent `weight` as a relative contribution within a
+child's parent population. Inverse share is a modeling hypothesis, not calibrated
+distance or causal strength. Non-unit incoming sums are disclosed, not repaired
 in source data. There is no raw globally calibrated Weight policy or epsilon.
 
 The audit reports each target's exact decimal sum, incoming edge IDs and
@@ -315,14 +386,16 @@ algorithm version, parameters and numeric contract. Replay requires the source
 pack and the expected request. The initial full-model policy limits and canonical
 codec bounds apply. A separate 100000 selected-incidence operation cap bounds
 experiment work, including its unit baseline; exceeding it fails, with no
-partial result. Suite manifests hold
-artifact hashes and summaries; each full run is checked separately.
+partial result. Each run is replayed separately against its source and request.
 
 Acceptance requires nested membership checks, isolated-node retention, role and
 overlapping-channel controls, exact audit anomalies, context preservation under
 selection, local weight-rescaling invariance, source replay and tamper tests.
 A separate Python Decimal/Fraction implementation checks weighted intervals on
-small controls and the full-model experiment. No default metric is promoted:
+the five [synthetic controls](../../cases/structural-geometry/experiments/README.md);
+no real-source experiment is frozen. These typed selections and weights are defined
+for source-parent relations, so a canonical Causal Emergence pack fails with
+`RELATION_LAYER_UNSUPPORTED`. No default metric is promoted:
 descriptive agreement and sensitivity are not evidence of improved robustness,
 interpretability, prediction or cross-domain equivalence.
 
@@ -410,10 +483,10 @@ Python process or browser-global dependency.
 
 | Existing path | Provider treatment |
 |---|---|
-| Root unit Forman | Reproduced byte for byte inside the additive analysis envelope |
-| 72 typed/local-weight experiments | Shared original selection/audit/metric functions; provider envelope preserves exact legacy output, selection, normalization context and intervals |
-| Unit Ollivier | Existing API/policy and all 40 artifacts remain unchanged; provider unit values agree on every scoped edge, with existing scope/support bounds retained |
-| Shadow flow | Existing API/policy and all 20 original/supplemental trajectories remain unchanged; explicit initial lengths and flow normalization remain separate operations |
+| Root unit Forman | Reproduced byte for byte inside the additive analysis envelope for source-parent sources; a canonical relation source is rejected |
+| Typed/local-weight experiments | Shared original selection/audit/metric functions; provider envelope preserves exact legacy output, selection, normalization context and intervals |
+| Unit Ollivier | Existing API/policy; provider unit values agree on every scoped edge of the 36 source-parent runs, with existing scope/support bounds retained. The four canonical Level-0 runs are outside the provider representation |
+| Shadow flow | Existing API/policy; explicit initial lengths and flow normalization remain separate operations for the 20 reference and supplemental trajectories |
 
 The provider contract does not replace Ollivier's unit transport policy with arbitrary costs or
 override explicit flow initial lengths. Raw metric outputs can supply lengths
@@ -442,9 +515,9 @@ Acceptance requires byte-identical legacy replay, full-source weight context,
 fixed nodes/nested necessities/overlapping channels, explicit capability
 rejection, source/context/input tampering tests, immutable snapshots, browser
 and engine parity, closed schema/TypeScript checks and numeric references.
-The original baseline and nine supplemental flow artifacts are preserved.
-Run the complete repository tests/build after implementation and record the
-actual evidence for this implemented provider contract.
+The nine supplemental flow artifacts are preserved. Run the complete
+repository tests/build after implementation and record the actual evidence for
+this implemented provider contract.
 
 <a id="directed-ollivier-reference-contract"></a>
 
@@ -494,7 +567,9 @@ Larger models require an explicit `{kind: "induced", nodeIds: [...]}` scope.
 All source edges between the selected nodes are included; `edgeIds` chooses
 which of these edges to analyze, without removing other edges from distances.
 The request records excluded node/edge counts and the count of edges crossing
-the scope boundary. No automatic sampling or truncation occurs.
+the scope boundary. No automatic sampling or truncation occurs. In a layered
+pack, an induced scope must lie within one layer, and it is projected with that
+layer's policy. A scope that mixes layers fails with `LAYER_SCOPE_UNSUPPORTED`.
 
 Distances and measures are recomputed within the induced scope. A fragment value
 is consequently not a full-model value for that edge. Removing an outside path
@@ -582,8 +657,9 @@ Timing and cache hits do not enter artifacts.
 ### Verification and limits
 
 The [reference suite](../../cases/structural-geometry/ollivier/README.md) freezes
-40 runs / 242 edge values: 18 synthetic graphs and two explicit source-bound
-Causal Emergence fragments, each at both idleness values. An external NetworkX
+40 runs / 266 edge values: 18 synthetic graphs and two explicit source-bound
+Level-0 fragments of the canonical Causal Emergence graph, each at both
+idleness values. An external NetworkX
 3.2.1 run independently reconstructs measures and shortest paths, then uses its
 [network simplex algorithm](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.flow.network_simplex.html)
 with integer demands and costs. Its optimal values agree exactly. The recorded

@@ -58,44 +58,6 @@ export const POLARIZATION_STATE_SCOPE_ADMISSION = {
 const contracts = {
   "sources": [
     {
-      "id": "legacy-0",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 0 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-0.json",
-      "sha256": "761dab2265dd9e9275e8ff5feb8447eded7e5ed1fc42c9480e36a70cb8a59988",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/",
-          "/14/Description"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
-      "id": "legacy-1",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 1 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-1.json",
-      "sha256": "b1bc5f0fe4b9741f57807d24b638b26a75b2b6e77a32c44b3f3711c8fd30a91a",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/",
-          "/0/Description"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "tong-qft-free-maxwell",
       "kind": "research-publication",
       "title": "Quantum Field Theory: selected electromagnetic gauge-field and QED sections (2021 HTML edition)",
@@ -132,18 +94,6 @@ const contracts = {
           "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian",
           "role": "supports",
           "note": "Reviewed transverse basis, mode algebra and Hamiltonian support this declared wavepacket convention and basis change, not an anisotropic response experiment."
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Source card /33, its parents and unverified evidence placeholders; catalogue labels do not establish physical support."
-        },
-        {
-          "sourceId": "legacy-0",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Directional-gradient proposal /22 remains without an admitted field-response mapping."
         }
       ],
       "checkIds": [],
@@ -151,9 +101,8 @@ const contracts = {
         "The basis is local in momentum space; no globally continuous real transverse basis, zero-momentum sector or extra longitudinal photon polarization is supplied. Sharp-momentum vectors are delta-normalized. The normalized finite-energy wavepacket is an ideal state, not an experimental preparation, analyzer response or complete polarization tomography.",
         "A polarized excitation is distinct from induced material electric polarization or magnetization, and from a QED vacuum-polarization correction. No constitutive or loop response tensor is inferred here. Effective-alpha dependence on scalar momentum transfer is not spatial anisotropy; directional BRDF geometry alone identifies no intrinsic material or vacuum axis.",
         "A response claim must specify its action or constitutive model, state, background, what rotates relative to what, held-fixed controls and polarization-resolved observable. No anisotropic medium, external directional background, calibrated analyzer, response experiment or numerical replay is admitted; equal free-mode frequencies do not establish every vacuum or material response.",
-        "Original parent 1.32 supplies the scoped anisotropy comparison, not a realized anisotropic regime. Parents 1.27 and 1.26 concern a chosen scalar Fock vacuum and free scalar evolution, not electromagnetic polarizability or causal modulation. Parent 0.22 has no admitted functional, domain, gradient operator, units or map to a field response; the Level-0 F12 support finding remains unresolved.",
-        "The source weights 0.50, 0.25, 0.15 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier and direction/mode codes have no quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the proposal; they supply no universal threshold, physical occurrence or vacuum/admissibility law.",
-        "The conceptual and theoretical placeholders in source card 1.33 identify no retrievable supporting publication or reviewed anisotropic-response prediction. The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process, directional excitation stability, localization or transport mechanism is inferred from this polarization definition."
+        "The effective-field-anisotropy dependency supplies the scoped anisotropy comparison, not a realized anisotropic regime. The vacuum-configuration and quantum-field-dynamics dependencies concern a chosen scalar Fock vacuum and free scalar evolution, not electromagnetic polarizability or causal modulation. The directional admissibility gradient has no admitted functional, domain, gradient operator, units or map to a field response; the Level-0 F12 support finding remains unresolved.",
+        "The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process, directional excitation stability, localization or transport mechanism is inferred from this polarization definition."
       ]
     }
   ],
@@ -172,23 +121,14 @@ const contracts = {
         {
           "sourceId": "tong-qft-free-maxwell",
           "locator": "Section 6.2.1: transverse polarization basis, constrained commutator, bosonic mode algebra and normal-ordered free Hamiltonian"
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/"
-        },
-        {
-          "sourceId": "legacy-0",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "The basis is local in momentum space; no globally continuous real transverse basis, zero-momentum sector or extra longitudinal photon polarization is supplied. Sharp-momentum vectors are delta-normalized. The normalized finite-energy wavepacket is an ideal state, not an experimental preparation, analyzer response or complete polarization tomography.",
         "A polarized excitation is distinct from induced material electric polarization or magnetization, and from a QED vacuum-polarization correction. No constitutive or loop response tensor is inferred here. Effective-alpha dependence on scalar momentum transfer is not spatial anisotropy; directional BRDF geometry alone identifies no intrinsic material or vacuum axis.",
         "A response claim must specify its action or constitutive model, state, background, what rotates relative to what, held-fixed controls and polarization-resolved observable. No anisotropic medium, external directional background, calibrated analyzer, response experiment or numerical replay is admitted; equal free-mode frequencies do not establish every vacuum or material response.",
-        "Original parent 1.32 supplies the scoped anisotropy comparison, not a realized anisotropic regime. Parents 1.27 and 1.26 concern a chosen scalar Fock vacuum and free scalar evolution, not electromagnetic polarizability or causal modulation. Parent 0.22 has no admitted functional, domain, gradient operator, units or map to a field response; the Level-0 F12 support finding remains unresolved.",
-        "The source weights 0.50, 0.25, 0.15 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier and direction/mode codes have no quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the proposal; they supply no universal threshold, physical occurrence or vacuum/admissibility law.",
-        "The conceptual and theoretical placeholders in source card 1.33 identify no retrievable supporting publication or reviewed anisotropic-response prediction. The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process, directional excitation stability, localization or transport mechanism is inferred from this polarization definition."
+        "The effective-field-anisotropy dependency supplies the scoped anisotropy comparison, not a realized anisotropic regime. The vacuum-configuration and quantum-field-dynamics dependencies concern a chosen scalar Fock vacuum and free scalar evolution, not electromagnetic polarizability or causal modulation. The directional admissibility gradient has no admitted functional, domain, gradient operator, units or map to a field response; the Level-0 F12 support finding remains unresolved.",
+        "The proposed redistribution of interaction influence and asymmetric mediation remain unsupported by this record. No particle population, standalone process, directional excitation stability, localization or transport mechanism is inferred from this polarization definition."
       ]
     }
   ],
@@ -243,7 +183,7 @@ const contracts = {
       "target": "phys:photon-polarization-scope",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "Free scalar Heisenberg evolution is a separate definition, not a polarization-response mechanism or causal parent.",
+      "assertion": "Free scalar Heisenberg evolution is a separate definition, not a polarization-response mechanism or causal precursor.",
       "claimIds": [
         "D-phys-photon-polarization-scope"
       ]
@@ -253,7 +193,7 @@ const contracts = {
     {
       "nodeId": "phys:photon-polarization-scope",
       "role": "definition",
-      "denotes": "A normalized transverse free-photon polarization convention with explicit limits on anisotropic response, causal parents and vacuum interpretation.",
+      "denotes": "A normalized transverse free-photon polarization convention with explicit limits on anisotropic response, causal precursors and vacuum interpretation.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-photon-polarization-scope"

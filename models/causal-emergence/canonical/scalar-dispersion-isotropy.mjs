@@ -62,7 +62,9 @@ const contracts = {
           "Section 2.3 opening: vacuum and normal ordering",
           "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions",
           "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
-          "Section 2.7 opening before 2.7.1: vacuum two-point function"
+          "Section 2.7 opening before 2.7.1: vacuum two-point function",
+          "Section 2.3.2: Casimir plates, boundary-quantized momentum and regulated 1+1 energy sum",
+          "Section 2.5: complex scalar Lagrangian, equations of motion, particle and antiparticle operators and conserved charge"
         ],
         "limit": "Author lecture notes for the 2006-2007 course, in the HTML edition dated 15 October 2021. Only the listed sections supply support; no complete interacting or gauge-field quantization is reviewed. Formula locators use section names because HTML and PDF equation numbering differ. The separately bound field-dynamics verifier checks finite formal oscillator-mode algebra under declared assumptions; no complete continuum or interacting construction, or experimental reproduction, is claimed."
       }

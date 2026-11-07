@@ -83,8 +83,6 @@ import { fileURLToPath } from "node:url";
 import Ajv from "ajv";
 import { validateRetinalPilot } from "./retinal.mjs";
 import { validateRoutingReview } from "./routing.mjs";
-import { validateDictionaryReview } from "./dictionaries.mjs";
-import { verifyDictionaryWitnesses } from "./dictionary-witnesses.mjs";
 import { validateSourceReadiness } from "./readiness.mjs";
 import { validateOpticalReview } from "./optics.mjs";
 import { validateNeuralReview } from "./neural.mjs";
@@ -100,6 +98,9 @@ import { BEAM_NEUTRON_CHECKS } from "./beam-neutron.mjs";
 import { PROTON_DECAY_CHECKS } from "./proton-decay.mjs";
 import { MASS_CONSTRAINT_CHECKS } from "./mass-constraints.mjs";
 import { verifyOpticalWitnesses } from "./optical-witnesses.mjs";
+import { validateBridgeReview } from "./bridges.mjs";
+import { validateArisingModel } from "./arisings.mjs";
+import { validateCauseEvidence } from "./cause-evidence.mjs";
 import { loadGeometricModelData, verifyGeometricModelData } from "./geometric-model-data.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -207,22 +208,25 @@ export function validateCanonicalSource(data) {
   validateOrganismalReview(data, context);
   validateNeuralSystemsReview(data, context);
   validateSocialSystemsReview(data, context);
+  validateBridgeReview(data, context);
+  validateArisingModel(data, context);
+  validateCauseEvidence(data, context);
   validateRetinalPilot(data, context);
   validateOpticalReview(data, context);
   validateVisualReview(data, context);
   validateNeuralReview(data, context);
   validateRoutingReview(data, context);
-  validateDictionaryReview(data);
   validateSourceReadiness(data, null, proposalText);
   validateCanonicalInteractions(graph, { studies: [data.pilot, data.routing, data.optics, data.visual,
-    data.neural, data.physics, data.biochemistry, data.cellular, data.organismal, data.neuralSystems, data.socialSystems].flatMap((review) => review.studies) });
+    data.neural, data.physics, data.biochemistry, data.cellular, data.organismal, data.neuralSystems, data.socialSystems, data.causeEvidence].flatMap((review) => review.studies) });
   return data;
 }
 
 export async function loadCanonicalSource() {
   const fields = {
     graph: "graph", pilot: "retinal-review", routing: "routing-review", routingPolicy: "routing-policy",
-    dictionaryReview: "dictionary-review", readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review", organismal: "organismal-review", neuralSystems: "neural-systems-review", socialSystems: "social-systems-review"
+    readiness: "source-readiness", optics: "optical-review", visual: "visual-review", neural: "neural-review", physics: "physics-review", biochemistry: "biochemistry-review", cellular: "cellular-review", organismal: "organismal-review", neuralSystems: "neural-systems-review", socialSystems: "social-systems-review",
+    arisingVocabulary: "arising-vocabulary", arisingCatalogue: "arising-catalogue", causeEvidence: "cause-evidence-review"
   };
   const data = validateCanonicalSource(Object.fromEntries(await Promise.all(Object.entries(fields).map(async ([key, file]) => [key, await json(`references/canonical/${file}.json`)]))));
   await Promise.all(data.graph.sources.filter((s) => s.path).map(async (source) => {
@@ -315,11 +319,10 @@ export async function verifyCanonicalEvidence() {
     bellData: JSON.parse(bell.stdout),
     geometricModelData: verifyGeometricModelData(await loadGeometricModelData()),
     opticalWitnesses: verifyOpticalWitnesses(),
-    dictionaryWitnesses: verifyDictionaryWitnesses(),
     routingData: JSON.parse(routing.stdout),
     neurogenesisData: JSON.parse(neurogenesis.stdout),
     mathematicalWitnesses: witnesses.mathematicalWitnesses,
     objecthoodConclusion: artifact.conclusion,
-    limit: "Replayed finite mathematical, vocabulary and optical witnesses, deposited Bell event-table filtering and conditional null-tail arithmetic, selected geometric-model readouts, published workbook cells, grouped deuteron figure fits, rounded-input mass/recoil arithmetic, conditional molecular-state branch arithmetic, printed proton-decay bookkeeping, beam-monitor rescaling, AlphaGamma rate identities and printed calibration arithmetic, bound MAMI form-factor table identities and printed fit-census arithmetic, proton magnetic-moment ratio identities and printed uncertainty bookkeeping, neutron/mercury ratio corrections and conditional reference calibration, exact nucleon charge/color algebra, selected neutron form-factor table and interpolation arithmetic, conditional deuteron beta-decay energetics, selected neutral-hadron production table integrals, printed pion decay-ratio corrections and conditional efficiency algebra, electron moment and ideal frequency-ratio algebra, conditional normalized scattering-shape and inverse-coupling algebra, supplied baryon flavor weights and historical mass spacing, meson trace-projector and synthetic cascade-response bookkeeping, synthetic external-state and exchange-transfer kinematics, finite free-mode evolution, declared electroweak mass algebra, selected reactor-neutrino energies and synthetic phase algebra, and the bound case disposition. This build does not reproduce raw Bell acquisition, stopping decisions or RNG calibration, network inference or training, the nonlinear solver, sequencing analyses or biological experiments, original mass acquisition, state-assignment likelihoods, correlated mass adjustments, molecular theory, crystal calibration or the full CODATA adjustment, proton-decay detector response or lifetime likelihoods, beam count acquisition, proton-loss fitting, monitor calibration or temporal stability, MAMI raw events, acceptance simulation, form-factor optimization, covariance or radii, proton spin-state classification, frequency acquisition, resonance fitting or systematic-effect models, neutron Ramsey fits, field-map/gradient reconstruction or upstream mercury calibration, neutron form-factor nuclear response or covariance, QCD Fock coefficients or confinement, full hadron-production reconstruction or extrapolation, PIENU timing fits or response-tail inference, electron resonance fits or correlated cavity corrections, L3 event selection, BHLUMI predictions or shape likelihoods, historical Omega tracking or mass reconstruction, KLOE detector response or pseudoscalar mixing, QED amplitudes or loop integrals, full field dynamics, collider mass or significance fits, reactor flux/detector modeling or neutrino likelihoods, or independently validate scientific prose."
+    limit: "Replayed finite mathematical and optical witnesses, deposited Bell event-table filtering and conditional null-tail arithmetic, selected geometric-model readouts, published workbook cells, grouped deuteron figure fits, rounded-input mass/recoil arithmetic, conditional molecular-state branch arithmetic, printed proton-decay bookkeeping, beam-monitor rescaling, AlphaGamma rate identities and printed calibration arithmetic, bound MAMI form-factor table identities and printed fit-census arithmetic, proton magnetic-moment ratio identities and printed uncertainty bookkeeping, neutron/mercury ratio corrections and conditional reference calibration, exact nucleon charge/color algebra, selected neutron form-factor table and interpolation arithmetic, conditional deuteron beta-decay energetics, selected neutral-hadron production table integrals, printed pion decay-ratio corrections and conditional efficiency algebra, electron moment and ideal frequency-ratio algebra, conditional normalized scattering-shape and inverse-coupling algebra, supplied baryon flavor weights and historical mass spacing, meson trace-projector and synthetic cascade-response bookkeeping, synthetic external-state and exchange-transfer kinematics, finite free-mode evolution, declared electroweak mass algebra, selected reactor-neutrino energies and synthetic phase algebra, and the bound case disposition. This build does not reproduce raw Bell acquisition, stopping decisions or RNG calibration, network inference or training, the nonlinear solver, sequencing analyses or biological experiments, original mass acquisition, state-assignment likelihoods, correlated mass adjustments, molecular theory, crystal calibration or the full CODATA adjustment, proton-decay detector response or lifetime likelihoods, beam count acquisition, proton-loss fitting, monitor calibration or temporal stability, MAMI raw events, acceptance simulation, form-factor optimization, covariance or radii, proton spin-state classification, frequency acquisition, resonance fitting or systematic-effect models, neutron Ramsey fits, field-map/gradient reconstruction or upstream mercury calibration, neutron form-factor nuclear response or covariance, QCD Fock coefficients or confinement, full hadron-production reconstruction or extrapolation, PIENU timing fits or response-tail inference, electron resonance fits or correlated cavity corrections, L3 event selection, BHLUMI predictions or shape likelihoods, historical Omega tracking or mass reconstruction, KLOE detector response or pseudoscalar mixing, QED amplitudes or loop integrals, full field dynamics, collider mass or significance fits, reactor flux/detector modeling or neutrino likelihoods, or independently validate scientific prose."
   };
 }

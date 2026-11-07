@@ -263,7 +263,7 @@ const contracts = {
       "id": "M-phys-resonance-source-scope",
       "kind": "method",
       "statement": "Interpret the source result as a stationary six-electron VB model and a reference-defined energy comparison, retaining its approximation, representation and linked-correction limits. Separate this calculated lowering from a physical interconversion, molecular-orbital construction, ion-formation pathway and measured charge, magnetic, optical or transport response. No new empirical result, joint likelihood, numerical replay or independent replication is created.",
-      "scope": "Scoped literature synthesis method for the finite reconstruction of original card 2.5.",
+      "scope": "Scoped literature synthesis method for the finite reconstruction of molecular resonance and delocalization.",
       "status": "method-contract",
       "citations": [
         {
@@ -289,23 +289,15 @@ const contracts = {
           "locator": "Published page 482, upper Pauling/Wheland erratum: corrections to radical Tables III-IV on original pages 370-371 and radical dissociation discussion on 373; selected benzene Table I unchanged",
           "role": "method",
           "note": "The attached primary correction was read: it corrects radical results and leaves the selected benzene result unchanged; it is not a second study."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "The complete original catalogue card 2.5 is scope provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The retained result concerns one six-electron benzene VB model. It is not a one-electron H2+/HD+ result, and those existing molecular-ion calculations cannot substitute for every many-electron resonance claim.",
         "No new empirical acquisition is admitted. The reviewed passages do not supply a fitted charge density, spectroscopic response, magnetic ring current, reaction rate, optical spectrum or transport function. Observable inference needs a named response model and matched experiment.",
-        "The future aromaticity card may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
-        "Original parent 2.3 can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require original parent 2.4 ionic interaction/ion formation as a universal prerequisite.",
-        "Original parent weights 0.6/0.4, directions [2], modes [0,1], necessary, dependency type 10 and role arising have no matched quantitative causal estimator. No such weight or necessity is promoted to the graph.",
-        "Original carrier group 1/type 0, parent counts 2 and 1 for N_min=N_crit and null saturation are catalogue provenance. Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9], Optional [] and generic theoretical/empirical placeholders remain catalogue choices. They do not admit all charge, conjugation, response, optical, reactivity or transport claims.",
+        "The future aromaticity scope may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
+        "Chemical bonding and molecular formation can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require ionic interaction/ion formation as a universal prerequisite.",
+        "Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
         "No broad chemical transformation rule or all-system stabilization theorem follows. The source historical aromatic language is not used as an independent operational aromaticity measurement."
       ],
       "contextIds": [
@@ -342,23 +334,15 @@ const contracts = {
           "locator": "Published page 482, upper Pauling/Wheland erratum: corrections to radical Tables III-IV on original pages 370-371 and radical dissociation discussion on 373; selected benzene Table I unchanged",
           "role": "supports",
           "note": "The attached primary correction was read: it corrects radical results and leaves the selected benzene result unchanged; it is not a second study."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "The complete original catalogue card 2.5 is scope provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The retained result concerns one six-electron benzene VB model. It is not a one-electron H2+/HD+ result, and those existing molecular-ion calculations cannot substitute for every many-electron resonance claim.",
         "No new empirical acquisition is admitted. The reviewed passages do not supply a fitted charge density, spectroscopic response, magnetic ring current, reaction rate, optical spectrum or transport function. Observable inference needs a named response model and matched experiment.",
-        "The future aromaticity card may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
-        "Original parent 2.3 can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require original parent 2.4 ionic interaction/ion formation as a universal prerequisite.",
-        "Original parent weights 0.6/0.4, directions [2], modes [0,1], necessary, dependency type 10 and role arising have no matched quantitative causal estimator. No such weight or necessity is promoted to the graph.",
-        "Original carrier group 1/type 0, parent counts 2 and 1 for N_min=N_crit and null saturation are catalogue provenance. Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9], Optional [] and generic theoretical/empirical placeholders remain catalogue choices. They do not admit all charge, conjugation, response, optical, reactivity or transport claims.",
+        "The future aromaticity scope may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
+        "Chemical bonding and molecular formation can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require ionic interaction/ion formation as a universal prerequisite.",
+        "Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
         "No broad chemical transformation rule or all-system stabilization theorem follows. The source historical aromatic language is not used as an independent operational aromaticity measurement."
       ],
       "contextIds": [
@@ -513,20 +497,14 @@ const contracts = {
         {
           "sourceId": "pauling1934-resonance-erratum",
           "locator": "Published page 482, upper Pauling/Wheland erratum: corrections to radical Tables III-IV on original pages 370-371 and radical dissociation discussion on 373; selected benzene Table I unchanged"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "The retained result concerns one six-electron benzene VB model. It is not a one-electron H2+/HD+ result, and those existing molecular-ion calculations cannot substitute for every many-electron resonance claim.",
         "No new empirical acquisition is admitted. The reviewed passages do not supply a fitted charge density, spectroscopic response, magnetic ring current, reaction rate, optical spectrum or transport function. Observable inference needs a named response model and matched experiment.",
-        "The future aromaticity card may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
-        "Original parent 2.3 can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require original parent 2.4 ionic interaction/ion formation as a universal prerequisite.",
-        "Original parent weights 0.6/0.4, directions [2], modes [0,1], necessary, dependency type 10 and role arising have no matched quantitative causal estimator. No such weight or necessity is promoted to the graph.",
-        "Original carrier group 1/type 0, parent counts 2 and 1 for N_min=N_crit and null saturation are catalogue provenance. Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
-        "Original Level 2, Phase 1, TypeRole 2, Science [0,1,2], established, MustCover [10], ShouldCover [9], Optional [] and generic theoretical/empirical placeholders remain catalogue choices. They do not admit all charge, conjugation, response, optical, reactivity or transport claims.",
+        "The future aromaticity scope may reuse this same study and benzene system, but must name its own energetic, magnetic, electronic or structural criterion. Delocalized representation, cyclic geometry or bond-length equality alone does not establish all aromaticity claims.",
+        "Chemical bonding and molecular formation can supply a molecular framework and electronic degrees; the particular earlier H2 binding/spectroscopy study is not a necessary benzene history. The neutral calculation does not require ionic interaction/ion formation as a universal prerequisite.",
+        "Six active electrons and five basis functions are distinct model choices, not measured universal atom, ion, mode or energy thresholds.",
         "No broad chemical transformation rule or all-system stabilization theorem follows. The source historical aromatic language is not used as an independent operational aromaticity measurement."
       ]
     }
@@ -695,29 +673,11 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1063/1.1749304",
-      "correctionCheck": "Read the institution-linked Pauling/Wheland erratum, JCP 2(8),482 (1934), DOI 10.1063/1.1749514. It corrects radical Tables III-IV and discussion on original 370-373, not selected benzene Table I. Crossref relation metadata alone did not expose the correction; no exhaustive later assessment search is claimed."
+      "correctionCheck": "Read the institution-linked Pauling/Wheland erratum, JCP 2(8), 482 (1934), DOI 10.1063/1.1749514. It corrects radical Tables III-IV and discussion on original 370-373, not selected benzene Table I. Crossref relation metadata alone did not expose the correction; no exhaustive later assessment search is claimed."
     }
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "pauling1933-resonance",
       "kind": "research-publication",

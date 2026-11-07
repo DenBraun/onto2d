@@ -70,7 +70,7 @@ test("sector descriptions cannot become observed physical partitions or universa
     ["a chosen decomposition is not a measured partition event", (data) => replaceStatement(data,
       "A universal physical event splits one undifferentiated quantum field into permanent quark, lepton and gauge-boson lineages.")],
     ["finite collider inferences do not reconstruct every gauge sector", (data) =>
-      dropLimit(data, /original generic collider\/scattering placeholder/)],
+      dropLimit(data, /independently prove the complete gauge group/)],
     ["the definition cannot acquire empirical or numerical-check status", (data) => {
       claim(data).status = "analytically-checked";
       claim(data).checkIds = ["field-dynamics-algebra"];
@@ -109,16 +109,16 @@ test("broken-background formulas do not derive chiral content, generation count 
   ]);
 });
 
-test("QFT and free scalar parents retain descriptive roles without weights or maintenance thresholds", async () => {
+test("QFT framework and free scalar dependencies retain descriptive roles without sector-formation or maintenance authority", async () => {
   const inputs = admission.formalDependencies.map(([, [from]]) => from);
   for (const required of ["quantum-field-framework", "free-field-time-evolution",
     "standard-model-sector-decomposition", "electromagnetic-photon-field", "weinberg-electroweak-background"])
     assert.ok(inputs.includes(`phys:${required}`));
   await rejects([
     ["the scalar Hamiltonian cannot construct or maintain the gauge-matter model", (data) =>
-      dropLimit(data, /original parent 1\.0 supplies/)],
-    ["source-card weights and carrier minima cannot become scientific thresholds", (data) =>
-      dropLimit(data, /Original weights 0\.6 and 0\.4/)],
+      dropLimit(data, /quantum-field-architecture dependency supplies/)],
+    ["consistent sector assignments are not a tested attractor or universal sector-formation rule", (data) =>
+      dropLimit(data, /not a tested dynamical attractor or persistence time/)],
     ...admission.formalDependencies.flatMap(([id]) => [
       [`formal input ${id} is not a causal intervention`, (data) => {
         data.graph.relations.find((record) => record.id === id).kind = "functional";

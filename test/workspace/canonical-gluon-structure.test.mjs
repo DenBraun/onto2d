@@ -112,20 +112,20 @@ test("static field structure cannot become a measured feedback history or a reno
   ]);
 });
 
-test("original necessary parents, weights, minima and SOMA labels remain excluded scientific assertions", async () => {
+test("formulation and gluon inputs cannot acquire necessary weights, precursor stages or universal self-organization", async () => {
   await reject([
-    ["weights and unit thresholds cannot regain physical meaning", (d) => dropLimit(d, definitionId, "original weights 0.6/0.4")],
-    ["phase and type labels are not experimentally validated stages", (d) => dropLimit(d, definitionId, "original SOMA phase 1")],
+    ["color components, external sources and sampled configurations remain distinct quantities", (d) =>
+      dropLimit(d, definitionId, "external-source number and sampled configurations are distinct quantities")],
+    ["a broader self-organization mechanism requires its own variables, dynamics and evidence", (d) =>
+      dropLimit(d, definitionId, "Any broader self-organization mechanism requires operational variables")],
     ["a descriptive input cannot hide a necessary maintenance weight", (d) => {
       const r = relation(d, "physics:gluon-self-coupling-source-conditioned-field-structure");
       r.weight = 0.4;
       r.necessity = "necessary";
-      r.N_min = 1;
-      r.N_crit = 1;
     }],
     ["the existing nonperturbative formulation is not a newly established precursor", (d) => {
       claim(d, definitionId).statement +=
-        " Source card 1.31 is a newly measured universal stage that necessarily precedes and maintains all gluon fields.";
+        " The nonperturbative gauge-field formulation is a newly measured universal stage that necessarily precedes and maintains all gluon fields.";
     }]
   ]);
 });

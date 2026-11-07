@@ -11,7 +11,6 @@ import { verifyCensus } from "./census.mjs";
 const encoded = (value) => `${JSON.stringify(canonicalClone(value), null, 2)}\n`;
 export async function verifyReferenceSources(reference) {
   for (const [file, expected] of [["controls.json", reference.controlsFileSha256],
-    ["../../../models/causal-emergence/releases/2026.08.15/bundle.json", reference.causalFileSha256],
     ["../canonical/reference.py", reference.canonicalReferenceFileSha256]]) {
     const actual = createHash("sha256").update(await readFile(new URL(file, directory))).digest("hex");
     assert.equal(actual, expected, `Independent reference source binding differs: ${file}`);
@@ -29,7 +28,6 @@ export async function run({ write = false, report = false } = {}) {
     verifyStructuralTopologyObservation(artifact, f.pack, f.input);
     assert.deepEqual(artifact.observation.value, reference.controls[i].value, f.id);
     assert.deepEqual(artifact.diagnostics, reference.controls[i].diagnostics, f.id);
-    if (f.id.startsWith("causal-fragment")) assert.deepEqual(artifact.preparation.context.model, await readJson("../causal-emergence/source-lock.json"));
     const file = `artifacts/${f.id}.json`;
     outputs.push([file, encoded(artifact)]); artifacts.set(f.id, artifact);
     values.set(f.id, canonicalize(artifact.observation.value));

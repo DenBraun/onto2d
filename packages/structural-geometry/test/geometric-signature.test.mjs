@@ -145,7 +145,7 @@ test("common-population and byte budgets retain explicit errors and source valid
   assert.throws(() => buildGeometricSignature(invalid, f.input, empty));
 });
 test("normalized requests replay identically, including omitted and explicit unit initialization", () => {
-  for (const id of ["path", "period-two", "weighted-necessary", "causal-emergence-seed"]) {
+  for (const id of ["path", "period-two", "weighted-necessary", "two-k4-single-bridge-one-zero"]) {
     const f = source(id), a = get(id); assert.deepEqual(buildGeometricSignature(f.pack, a.request, evidence(a)), a);
   }
 });

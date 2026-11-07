@@ -1,3 +1,4 @@
+import { isReviewedBridgeRelation } from "./bridges.mjs";
 import assert from "node:assert/strict";
 import { LEVEL_TWO_ADMISSION } from "./level-two.mjs";
 
@@ -75,7 +76,7 @@ export function validateOpticalReview({ graph, optics }, { sources, claims, enti
   const reusedRelations = LEVEL_TWO_ADMISSION.dependencies
     .filter(([, source]) => source.startsWith("opt:"))
     .map(([id]) => `physics:${id}`);
-  const opticalRelations = graph.relations.filter((r) => r.id.startsWith("optical:") || r.source.startsWith("opt:") || r.target.startsWith("opt:"));
+  const opticalRelations = graph.relations.filter((r) => !isReviewedBridgeRelation(r) && (r.id.startsWith("optical:") || r.source.startsWith("opt:") || r.target.startsWith("opt:")));
   assert.deepEqual(opticalRelations.map((r) => r.id), [...expectedRelations, ...reusedRelations], "Unreviewed optical relation or cross-domain bridge");
   for (const r of opticalRelations.filter((r) => expectedRelations.includes(r.id))) {
     assert.ok(r.source.startsWith("opt:") && r.target.startsWith("opt:"), "No matched optical-to-retinal bridge is admitted");

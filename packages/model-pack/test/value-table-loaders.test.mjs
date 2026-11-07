@@ -251,15 +251,15 @@ test("a reduced browser bundle budget bounds expansion as well as physical encod
 
 test("value-table transport preserves all established default budgets", () => {
   assert.deepEqual(MODEL_PACK_BROWSER_LIMITS, {
-    maxFileBytes: 16 * 1024 * 1024, maxTotalBytes: 64 * 1024 * 1024,
+    maxFileBytes: 64 * 1024 * 1024, maxTotalBytes: 256 * 1024 * 1024,
     maxBundleBytes: 64 * 1024 * 1024, maxUrlLength: 16_384
   });
   assert.deepEqual(MODEL_PACK_DIRECTORY_LIMITS, {
-    maxFileCount: 32, maxFileBytes: 16 * 1024 * 1024, maxTotalBytes: 64 * 1024 * 1024
+    maxFileCount: 32, maxFileBytes: 64 * 1024 * 1024, maxTotalBytes: 256 * 1024 * 1024
   });
   assert.deepEqual(MODEL_PACK_ARCHIVE_LIMITS, {
-    maxArchiveBytes: 64 * 1024 * 1024, maxEntryCount: 32,
-    maxCompressedEntryBytes: 16 * 1024 * 1024, maxUncompressedEntryBytes: 16 * 1024 * 1024,
-    maxTotalUncompressedBytes: 64 * 1024 * 1024, maxCompressionRatio: 200
+    maxArchiveBytes: 256 * 1024 * 1024, maxEntryCount: 32,
+    maxCompressedEntryBytes: 64 * 1024 * 1024, maxUncompressedEntryBytes: 64 * 1024 * 1024,
+    maxTotalUncompressedBytes: 256 * 1024 * 1024, maxCompressionRatio: 200
   });
 });

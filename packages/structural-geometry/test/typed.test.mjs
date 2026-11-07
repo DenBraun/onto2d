@@ -39,8 +39,8 @@ test("typed observations preserve preparation and supply both frozen specs with 
   frozen(a); assert.equal(canonicalize(source), before);
 });
 
-test("all 26 measured or incomplete observations reproduce their exact frozen source envelopes", async () => {
-  const examples = await fixtures(); assert.equal(examples.length, 26);
+test("all 25 measured or incomplete observations reproduce their exact frozen source envelopes", async () => {
+  const examples = await fixtures(); assert.equal(examples.length, 25);
   for (const f of examples) {
     const a = await readJson(`artifacts/${f.id}.json`);
     assert.deepEqual(verifyTypedRelationsObservation(a, f.pack, f.input), a);

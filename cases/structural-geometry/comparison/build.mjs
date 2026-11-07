@@ -10,7 +10,7 @@ import { fixtures, directory, readJson } from "./fixtures.mjs";
 const codec = { limits: { maxEntries: 500000 } };
 const encoded = (value) => `${JSON.stringify(canonicalClone(value, codec), null, 2)}\n`;
 const referenceFiles = ["controls.json", "PROTOCOL.md", "../typed/controls.json", "../typed/reference.py", "../canonical/reference.py",
-  "../topology/reference.py", "../../../models/causal-emergence/releases/2026.08.15/bundle.json"];
+  "../topology/reference.py"];
 export async function verifyReferenceSources(reference) {
   assert.deepEqual(Object.keys(reference.sourceHashes).sort(), [...referenceFiles].sort(), "Reference source coverage differs.");
   for (const file of referenceFiles) assert.equal(createHash("sha256").update(await readFile(new URL(file, directory))).digest("hex"),

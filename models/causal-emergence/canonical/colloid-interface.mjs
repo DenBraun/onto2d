@@ -268,7 +268,7 @@ const contracts = {
       "id": "D-phys-screened-colloid-pair-model",
       "kind": "review-finding",
       "statement": "For the source isolated identical spheres in the far-separation Debye-Huckel regime, use U(x)/(kB*T)=Zeff^2*lambdaB*[exp(kappa*a)/(1+kappa*a)]^2*exp(-kappa*x)/x. Here x is center-to-center separation, a is sphere radius, Zeff is effective charge in units of the positive elementary-charge magnitude, kappa is inverse screening length and lambdaB=e^2/(epsilon*kB*T) in the source electrostatic-cgs convention. This is a screened repulsive pair term, with finite-sphere amplitude and an effective charge that need not equal titratable charge.",
-      "scope": "Dimensionless rewrite of Crocker-Grier Equation1, retaining its source units, effective-charge meaning and range.",
+      "scope": "Dimensionless rewrite of Crocker-Grier Equation 1, retaining its source units, effective-charge meaning and range.",
       "status": "definition",
       "citations": [
         {
@@ -295,7 +295,7 @@ const contracts = {
     {
       "id": "M-phys-crocker1994-colloid-pair-context",
       "kind": "method",
-      "statement": "Prepare the source dilute aqueous polystyrene-sulfate spheres of radius326 nm, monodisperse within1%, in a glass cell with3-4 micrometre gap, ion-exchange reservoirs and argon flushing to limit ionic contamination. Trap two isolated spheres initially1.5 or1.7 micrometres apart with dual optical tweezers, release when no other particles are nearby, and record796 pair trajectories. Use the source relative-coordinate projection,57 nm bins and a transition-time interval1/30 s; the source pools6502 initial/final separation samples to estimate a transition matrix.",
+      "statement": "Prepare the source dilute aqueous polystyrene-sulfate spheres of radius 326 nm, monodisperse within 1%, in a glass cell with 3-4 micrometre gap, ion-exchange reservoirs and argon flushing to limit ionic contamination. Trap two isolated spheres initially 1.5 or 1.7 micrometres apart with dual optical tweezers, release when no other particles are nearby, and record 796 pair trajectories. Use the source relative-coordinate projection, 57 nm bins and a transition-time interval 1/30 s; the source pools 6502 initial/final separation samples to estimate a transition matrix.",
       "scope": "Source acquisition and preparation of isolated colloid-pair trajectories.",
       "status": "method-contract",
       "citations": [
@@ -310,9 +310,9 @@ const contracts = {
       "limitations": [
         "The acquired data are finite non-equilibrium release trajectories. Infer a stationary distribution under the source time-homogeneous Smoluchowski model and then U=-kB*T*log(p_eq) up to an additive constant; this is not direct equilibrium-histogram sampling or a new force-sensor readout.",
         "The source model assumes a spherically symmetric separation potential and omits hydrodynamic coupling. The trajectory projection, finite bins and boundary condition are analysis choices; reflecting-boundary inference requires the upper separation bound to lie beyond the interaction.",
-        "The reported mean separation uncertainty is50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
+        "The reported mean separation uncertainty is 50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
         "The separate concentrated-cell crystals persisting for months are an ionic-purity control under a different preparation, not the lifetime of an isolated pair or an independent replication of the dilute-pair measurement.",
-        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at25 C does not establish the actual experimental temperature."
+        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at 25 C does not establish the actual experimental temperature."
       ],
       "contextIds": [
         "crocker1994-colloid-pair"
@@ -342,9 +342,9 @@ const contracts = {
       "limitations": [
         "The acquired data are finite non-equilibrium release trajectories. Infer a stationary distribution under the source time-homogeneous Smoluchowski model and then U=-kB*T*log(p_eq) up to an additive constant; this is not direct equilibrium-histogram sampling or a new force-sensor readout.",
         "The source model assumes a spherically symmetric separation potential and omits hydrodynamic coupling. The trajectory projection, finite bins and boundary condition are analysis choices; reflecting-boundary inference requires the upper separation bound to lie beyond the interaction.",
-        "The reported mean separation uncertainty is50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
+        "The reported mean separation uncertainty is 50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
         "The separate concentrated-cell crystals persisting for months are an ionic-purity control under a different preparation, not the lifetime of an isolated pair or an independent replication of the dilute-pair measurement.",
-        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at25 C does not establish the actual experimental temperature."
+        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at 25 C does not establish the actual experimental temperature."
       ],
       "contextIds": [
         "crocker1994-colloid-pair"
@@ -366,7 +366,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "The potential and fit parameters share the same finite release trajectories; they are not independent confirmations. The equivalent1:1 electrolyte concentration quoted from the fitted screening length is an inference, not a separately acquired concentration assay.",
+        "The potential and fit parameters share the same finite release trajectories; they are not independent confirmations. The equivalent 1:1 electrolyte concentration quoted from the fitted screening length is an inference, not a separately acquired concentration assay.",
         "The stated uncertainties are source-reported fit estimates, with position-error and lower-limit caveats retained. No new likelihood, absolute potential offset, error coverage or independent numerical reproduction is supplied.",
         "No statistically significant attraction in the resolved range does not exclude short-range dispersion, other geometries, wall effects, different charge states or concentrated collective behavior. No full DLVO barrier or universal dispersion lifetime is measured."
       ],
@@ -377,7 +377,7 @@ const contracts = {
     {
       "id": "M-phys-gasser2001-colloid-context",
       "kind": "method",
-      "statement": "Use source PMMA spheres sterically stabilized with poly-12-hydroxystearic acid, radius a=1.26 micrometres and polydispersity below5%, in density- and index-matched decahydronaphthalene/cyclohexylbromide. Rhodamine dye imparts a small charge, so these are nearly hard spheres rather than an exact hard-sphere model. Shear melt the50 microlitre sample by magnetically agitating an embedded wire; acquire a58 by55 by20 cubic-micrometre confocal volume containing about4000 particles, at least8 and typically15 particle diameters from treated walls. Classify local order from particle centers with approximately0.04 micrometre accuracy.",
+      "statement": "Use source PMMA spheres sterically stabilized with poly-12-hydroxystearic acid, radius a=1.26 micrometres and polydispersity below 5%, in density- and index-matched decahydronaphthalene/cyclohexylbromide. Rhodamine dye imparts a small charge, so these are nearly hard spheres rather than an exact hard-sphere model. Shear melt the 50 microlitre sample by magnetically agitating an embedded wire; acquire a 58 by 55 by 20 cubic-micrometre confocal volume containing about 4000 particles, at least 8 and typically 15 particle diameters from treated walls. Classify local order from particle centers with approximately 0.04 micrometre accuracy.",
       "scope": "Source finite concentrated-PMMA preparation and confocal classification.",
       "status": "method-contract",
       "citations": [
@@ -396,10 +396,10 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed0.64 and rhcp0.74 reference states; these are not an independent absolute size/packing measurement here.",
-        "The source l=6 normalized bond-order classifier uses neighbor separation below2.83*a, inner-product threshold above0.5 and at least8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
-        "Growth/shrink analysis excludes nuclei with particles closer than0.8*a to the observation-volume edge. Source note27 reports1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
-        "The acquisition starts after shear melting. At higher volume fractions0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
+        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed 0.64 and rhcp 0.74 reference states; these are not an independent absolute size/packing measurement here.",
+        "The source l=6 normalized bond-order classifier uses neighbor separation below 2.83*a, inner-product threshold above 0.5 and at least 8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
+        "Growth/shrink analysis excludes nuclei with particles closer than 0.8*a to the observation-volume edge. Source note 27 reports 1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
+        "The acquisition starts after shear melting. At higher volume fractions 0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
         "Nucleus counts, geometry, inferred interface cost and structure fits share the same experimental study. Computer-generated order-reference histograms matched to experimental broadening are analysis inputs, not independent measured crystals or a separate new computational study."
       ],
       "contextIds": [
@@ -428,10 +428,10 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed0.64 and rhcp0.74 reference states; these are not an independent absolute size/packing measurement here.",
-        "The source l=6 normalized bond-order classifier uses neighbor separation below2.83*a, inner-product threshold above0.5 and at least8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
-        "Growth/shrink analysis excludes nuclei with particles closer than0.8*a to the observation-volume edge. Source note27 reports1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
-        "The acquisition starts after shear melting. At higher volume fractions0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
+        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed 0.64 and rhcp 0.74 reference states; these are not an independent absolute size/packing measurement here.",
+        "The source l=6 normalized bond-order classifier uses neighbor separation below 2.83*a, inner-product threshold above 0.5 and at least 8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
+        "Growth/shrink analysis excludes nuclei with particles closer than 0.8*a to the observation-volume edge. Source note 27 reports 1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
+        "The acquisition starts after shear melting. At higher volume fractions 0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
         "Nucleus counts, geometry, inferred interface cost and structure fits share the same experimental study. Computer-generated order-reference histograms matched to experimental broadening are analysis inputs, not independent measured crystals or a separate new computational study."
       ],
       "contextIds": [
@@ -441,7 +441,7 @@ const contracts = {
     {
       "id": "C-phys-colloid-nucleus-growth",
       "kind": "review-finding",
-      "statement": "In the source post-shear PMMA suspension, finite subcritical nuclei frequently shrink and larger nuclei can grow. For volume fraction0.47 the growth-minus-shrink probability changes sign across60<M<160 particles, giving a preparation- and classifier-dependent critical range. The source rc approximately6.2*a is a spherical-equivalent interpretation. Snapshots at volume fraction0.45 span20,43,66 and89 minutes after shear melting, illustrating finite kinetic evolution rather than permanent interface stabilization.",
+      "statement": "In the source post-shear PMMA suspension, finite subcritical nuclei frequently shrink and larger nuclei can grow. For volume fraction 0.47 the growth-minus-shrink probability changes sign across 60<M<160 particles, giving a preparation- and classifier-dependent critical range. The source rc approximately 6.2*a is a spherical-equivalent interpretation. Snapshots at volume fraction 0.45 span 20, 43, 66 and 89 minutes after shear melting, illustrating finite kinetic evolution rather than permanent interface stabilization.",
       "scope": "Finite source-reported colloid nucleus growth/shrinkage under specified preparation.",
       "status": "publication-supported",
       "citations": [
@@ -460,7 +460,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "The critical range is conditional on the local-order classifier and visible finite trajectories; it is not the original catalogue minimum2 or3, a universal colloid nucleation number or the threshold of all supramolecular organization.",
+        "The critical range is conditional on the local-order classifier and visible finite trajectories; it is not a universal colloid nucleation number or the threshold of all supramolecular organization.",
         "The radius interpretation assumes spherical nuclei, while the observed nuclei are nonspherical with rough surfaces. The interface between ordered cores and liquid exterior is not sharp.",
         "These are kinetic post-shear observations, not a demonstration that every sample was equilibrated before nucleation or that persistence over minutes proves global thermodynamic stability. The source high-density equilibration limitation remains.",
         "Neither exact hard-sphere behavior nor chemical aggregation/coagulation is inferred from this structural order classifier. No universal rate or material transport response is admitted."
@@ -502,7 +502,7 @@ const contracts = {
     {
       "id": "C-phys-colloid-interface-free-energy",
       "kind": "review-finding",
-      "statement": "The source PMMA nuclei have ordered cores, disordered rough exteriors and a diffuse crystal-fluid interface. Using the small-subcritical-nucleus area fit with ellipsoidal areas, the source reports effective gamma approximately0.027*kB*T/a^2 across its samples; the Figure5 example at volume fraction0.445 gives0.026*kB*T/a^2. These are a general approximate summary and a specified sample fit, not competing independent measurements or a universal hard-sphere constant.",
+      "statement": "The source PMMA nuclei have ordered cores, disordered rough exteriors and a diffuse crystal-fluid interface. Using the small-subcritical-nucleus area fit with ellipsoidal areas, the source reports effective gamma approximately 0.027*kB*T/a^2 across its samples; the Figure 5 example at volume fraction 0.445 gives 0.026*kB*T/a^2. These are a general approximate summary and a specified sample fit, not competing independent measurements or a universal hard-sphere constant.",
       "scope": "Finite source-reported statistical inference of a rough colloidal crystal-fluid interface.",
       "status": "publication-supported",
       "citations": [
@@ -527,8 +527,8 @@ const contracts = {
     {
       "id": "M-phys-colloid-interface-source-scope",
       "kind": "method",
-      "statement": "Synthesize the isolated-pair and concentrated-nucleation cases while keeping their complete preparations, observables and inference chains separate. Preserve finite positive screened repulsion, nucleus growth and rough-interface free-energy results, and explicitly qualify every original stability, response, parent and catalogue assertion.",
-      "scope": "Literature-synthesis method for original card2.13.",
+      "statement": "Synthesize the isolated-pair and concentrated-nucleation cases while keeping their complete preparations, observables and inference chains separate. Preserve finite positive screened repulsion, nucleus growth and rough-interface free-energy results, and explicitly qualify every stability and response assertion.",
+      "scope": "Literature-synthesis method.",
       "status": "method-contract",
       "citations": [
         {
@@ -572,12 +572,6 @@ const contracts = {
           "locator": "Published pages 260-261, Figures 3-5, Table 1 and note 34 on page 262: diffuse rough interface, structure/shape inference and small-nucleus area-distribution surface-tension fit",
           "role": "method",
           "note": "Actually read published primary passage supports only the stated finite preparation, inference or formal boundary; no raw-data replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original catalogue JSON pointer: /13. Original vocabulary, asserted parents, weights and carrier minima only; not experimental or theoretical support."
         }
       ],
       "checkIds": [],
@@ -587,12 +581,11 @@ const contracts = {
         "The screened pair equation supplies only the selected far-field repulsive term. It does not validate a full repulsion-plus-attraction DLVO barrier, a near-contact aggregation law, all dense-phase behavior or a universal dispersion lifetime; omitted forces remain real system-dependent possibilities.",
         "The post-shear finite observation, the conditional stationary-inference model and the small-nucleus Boltzmann-fit assumption are distinct. No observation-time persistence is equated with global thermodynamic stability, and the high-density equilibration caveat is retained.",
         "Rough diffuse crystal-fluid boundaries and a conditional effective interfacial free energy are positive finite interface results. They do not require a sharp permanent interface, and no universal inequality making surface effects dominate bulk cohesion at every mesoscopic scale is admitted.",
-        "Original parents2.8 polarization/dipoles and2.9 crystals each weight0.35, direction[1], modes[1], and parent2.12 molecular self-organization/liquids weight0.30, direction[1], modes[0,1], all necessary/dependency10/arising, are not measured causal fractions or universal precursor histories. Neither permanent molecular dipoles nor pre-existing crystallinity is shown necessary for every dispersion or interface.",
-        "Original carrier group1/type0 with N_min=N_crit=2 for2.8/2.9,3 for2.12 and N_sat=null are catalogue defaults, not validated critical populations. An isolated pair, at least8 order-classification bonds, roughly4000 imaged particles and60<M<160 critical nuclei count different domains.",
+        "Neither permanent molecular dipoles nor pre-existing crystallinity is shown necessary for every dispersion or interface.",
+        "An isolated pair, at least 8 order-classification bonds, roughly 4000 imaged particles and 60<M<160 critical nuclei count different domains.",
         "The source continuous liquids and their preparation are supplied experimental conditions; the earlier liquid/self-organization and microscopic polarization studies are not newly replayed or cloned as independent support. The finite nucleation experiment is not a theorem about all molecular-to-macroscopic emergence.",
-        "Original Level2, Phase2, TypeRole3, Science[1,2,41], established, MustCover[10], ShouldCover[9], Optional[] and SOMA property/arising/active-organizational-determinant/bridge labels remain catalogue classifications, not independently measured ontology or universal physical-stage boundaries.",
         "Real droplets, controlled emulsions, solvent-mediated forces, boundary layers, aggregation, rheology, optical scattering and transport need their own stated preparations and response evidence. Their existence is not blanket-excluded, but these outputs are not calculated or measured by this finite scope.",
-        "Original generic DLVO/thermodynamic and direct-observation paragraphs have null DOI/URL and identify no read publication. The original1941/1948 DLVO works, modern complete coagulation theory, later debate main texts and raw-data numerical replays are not newly admitted."
+        "The original 1941/1948 DLVO works, modern complete coagulation theory, later debate main texts and raw-data numerical replays are not admitted."
       ],
       "contextIds": [
         "crocker1994-colloid-pair",
@@ -603,7 +596,7 @@ const contracts = {
       "id": "C-phys-colloid-interface-source-scope",
       "kind": "review-finding",
       "statement": "A dilute charged-sphere experiment supports a conditional screened repulsive isolated-pair potential. A separate concentrated PMMA experiment follows post-shear crystal nuclei and infers a rough crystal-fluid interfacial free energy under stated classification and statistical assumptions. These finite cases retain real colloidal interactions, kinetic structural evolution and interfaces without a universal stability, sharp-boundary, precursor-chain or supramolecular-growth theorem.",
-      "scope": "Complete finite disposition of references/level-2.json /13.",
+      "scope": "Literature synthesis of two distinct primary colloid contexts.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -647,12 +640,6 @@ const contracts = {
           "locator": "Published pages 260-261, Figures 3-5, Table 1 and note 34 on page 262: diffuse rough interface, structure/shape inference and small-nucleus area-distribution surface-tension fit",
           "role": "supports",
           "note": "Actually read published primary passage supports only the stated finite preparation, inference or formal boundary; no raw-data replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original catalogue JSON pointer: /13. Original vocabulary, asserted parents, weights and carrier minima only; not experimental or theoretical support."
         }
       ],
       "checkIds": [],
@@ -662,12 +649,11 @@ const contracts = {
         "The screened pair equation supplies only the selected far-field repulsive term. It does not validate a full repulsion-plus-attraction DLVO barrier, a near-contact aggregation law, all dense-phase behavior or a universal dispersion lifetime; omitted forces remain real system-dependent possibilities.",
         "The post-shear finite observation, the conditional stationary-inference model and the small-nucleus Boltzmann-fit assumption are distinct. No observation-time persistence is equated with global thermodynamic stability, and the high-density equilibration caveat is retained.",
         "Rough diffuse crystal-fluid boundaries and a conditional effective interfacial free energy are positive finite interface results. They do not require a sharp permanent interface, and no universal inequality making surface effects dominate bulk cohesion at every mesoscopic scale is admitted.",
-        "Original parents2.8 polarization/dipoles and2.9 crystals each weight0.35, direction[1], modes[1], and parent2.12 molecular self-organization/liquids weight0.30, direction[1], modes[0,1], all necessary/dependency10/arising, are not measured causal fractions or universal precursor histories. Neither permanent molecular dipoles nor pre-existing crystallinity is shown necessary for every dispersion or interface.",
-        "Original carrier group1/type0 with N_min=N_crit=2 for2.8/2.9,3 for2.12 and N_sat=null are catalogue defaults, not validated critical populations. An isolated pair, at least8 order-classification bonds, roughly4000 imaged particles and60<M<160 critical nuclei count different domains.",
+        "Neither permanent molecular dipoles nor pre-existing crystallinity is shown necessary for every dispersion or interface.",
+        "An isolated pair, at least 8 order-classification bonds, roughly 4000 imaged particles and 60<M<160 critical nuclei count different domains.",
         "The source continuous liquids and their preparation are supplied experimental conditions; the earlier liquid/self-organization and microscopic polarization studies are not newly replayed or cloned as independent support. The finite nucleation experiment is not a theorem about all molecular-to-macroscopic emergence.",
-        "Original Level2, Phase2, TypeRole3, Science[1,2,41], established, MustCover[10], ShouldCover[9], Optional[] and SOMA property/arising/active-organizational-determinant/bridge labels remain catalogue classifications, not independently measured ontology or universal physical-stage boundaries.",
         "Real droplets, controlled emulsions, solvent-mediated forces, boundary layers, aggregation, rheology, optical scattering and transport need their own stated preparations and response evidence. Their existence is not blanket-excluded, but these outputs are not calculated or measured by this finite scope.",
-        "Original generic DLVO/thermodynamic and direct-observation paragraphs have null DOI/URL and identify no read publication. The original1941/1948 DLVO works, modern complete coagulation theory, later debate main texts and raw-data numerical replays are not newly admitted."
+        "The original 1941/1948 DLVO works, modern complete coagulation theory, later debate main texts and raw-data numerical replays are not admitted."
       ],
       "contextIds": [
         "crocker1994-colloid-pair",
@@ -733,7 +719,7 @@ const contracts = {
       "id": "phys:crocker1994-colloid-pair-context",
       "name": "Crocker-Grier isolated-pair release context",
       "kind": "context",
-      "description": "Prepare the source dilute aqueous polystyrene-sulfate spheres of radius326 nm, monodisperse within1%, in a glass cell with3-4 micrometre gap, ion-exchange reservoirs and argon flushing to limit ionic contamination. Trap two isolated spheres initially1.5 or1.7 micrometres apart with dual optical tweezers, release when no other particles are nearby, and record796 pair trajectories. Use the source relative-coordinate projection,57 nm bins and a transition-time interval1/30 s; the source pools6502 initial/final separation samples to estimate a transition matrix.",
+      "description": "Prepare the source dilute aqueous polystyrene-sulfate spheres of radius 326 nm, monodisperse within 1%, in a glass cell with 3-4 micrometre gap, ion-exchange reservoirs and argon flushing to limit ionic contamination. Trap two isolated spheres initially 1.5 or 1.7 micrometres apart with dual optical tweezers, release when no other particles are nearby, and record 796 pair trajectories. Use the source relative-coordinate projection, 57 nm bins and a transition-time interval 1/30 s; the source pools 6502 initial/final separation samples to estimate a transition matrix.",
       "claimIds": [
         "M-phys-crocker1994-colloid-pair-context"
       ],
@@ -748,9 +734,9 @@ const contracts = {
       "openObligations": [
         "The acquired data are finite non-equilibrium release trajectories. Infer a stationary distribution under the source time-homogeneous Smoluchowski model and then U=-kB*T*log(p_eq) up to an additive constant; this is not direct equilibrium-histogram sampling or a new force-sensor readout.",
         "The source model assumes a spherically symmetric separation potential and omits hydrodynamic coupling. The trajectory projection, finite bins and boundary condition are analysis choices; reflecting-boundary inference requires the upper separation bound to lie beyond the interaction.",
-        "The reported mean separation uncertainty is50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
+        "The reported mean separation uncertainty is 50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
         "The separate concentrated-cell crystals persisting for months are an ionic-purity control under a different preparation, not the lifetime of an isolated pair or an independent replication of the dilute-pair measurement.",
-        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at25 C does not establish the actual experimental temperature."
+        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at 25 C does not establish the actual experimental temperature."
       ]
     },
     {
@@ -770,7 +756,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "The potential and fit parameters share the same finite release trajectories; they are not independent confirmations. The equivalent1:1 electrolyte concentration quoted from the fitted screening length is an inference, not a separately acquired concentration assay.",
+        "The potential and fit parameters share the same finite release trajectories; they are not independent confirmations. The equivalent 1:1 electrolyte concentration quoted from the fitted screening length is an inference, not a separately acquired concentration assay.",
         "The stated uncertainties are source-reported fit estimates, with position-error and lower-limit caveats retained. No new likelihood, absolute potential offset, error coverage or independent numerical reproduction is supplied.",
         "No statistically significant attraction in the resolved range does not exclude short-range dispersion, other geometries, wall effects, different charge states or concentrated collective behavior. No full DLVO barrier or universal dispersion lifetime is measured."
       ]
@@ -779,7 +765,7 @@ const contracts = {
       "id": "phys:gasser2001-colloid-context",
       "name": "Gasser post-shear colloidal crystallization context",
       "kind": "context",
-      "description": "Use source PMMA spheres sterically stabilized with poly-12-hydroxystearic acid, radius a=1.26 micrometres and polydispersity below5%, in density- and index-matched decahydronaphthalene/cyclohexylbromide. Rhodamine dye imparts a small charge, so these are nearly hard spheres rather than an exact hard-sphere model. Shear melt the50 microlitre sample by magnetically agitating an embedded wire; acquire a58 by55 by20 cubic-micrometre confocal volume containing about4000 particles, at least8 and typically15 particle diameters from treated walls. Classify local order from particle centers with approximately0.04 micrometre accuracy.",
+      "description": "Use source PMMA spheres sterically stabilized with poly-12-hydroxystearic acid, radius a=1.26 micrometres and polydispersity below 5%, in density- and index-matched decahydronaphthalene/cyclohexylbromide. Rhodamine dye imparts a small charge, so these are nearly hard spheres rather than an exact hard-sphere model. Shear melt the 50 microlitre sample by magnetically agitating an embedded wire; acquire a 58 by 55 by 20 cubic-micrometre confocal volume containing about 4000 particles, at least 8 and typically 15 particle diameters from treated walls. Classify local order from particle centers with approximately 0.04 micrometre accuracy.",
       "claimIds": [
         "M-phys-gasser2001-colloid-context"
       ],
@@ -796,10 +782,10 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed0.64 and rhcp0.74 reference states; these are not an independent absolute size/packing measurement here.",
-        "The source l=6 normalized bond-order classifier uses neighbor separation below2.83*a, inner-product threshold above0.5 and at least8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
-        "Growth/shrink analysis excludes nuclei with particles closer than0.8*a to the observation-volume edge. Source note27 reports1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
-        "The acquisition starts after shear melting. At higher volume fractions0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
+        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed 0.64 and rhcp 0.74 reference states; these are not an independent absolute size/packing measurement here.",
+        "The source l=6 normalized bond-order classifier uses neighbor separation below 2.83*a, inner-product threshold above 0.5 and at least 8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
+        "Growth/shrink analysis excludes nuclei with particles closer than 0.8*a to the observation-volume edge. Source note 27 reports 1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
+        "The acquisition starts after shear melting. At higher volume fractions 0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
         "Nucleus counts, geometry, inferred interface cost and structure fits share the same experimental study. Computer-generated order-reference histograms matched to experimental broadening are analysis inputs, not independent measured crystals or a separate new computational study."
       ]
     },
@@ -807,7 +793,7 @@ const contracts = {
       "id": "phys:colloid-nucleus-growth",
       "name": "Post-shear colloidal nucleus growth and critical range",
       "kind": "scoped-process",
-      "description": "In the source post-shear PMMA suspension, finite subcritical nuclei frequently shrink and larger nuclei can grow. For volume fraction0.47 the growth-minus-shrink probability changes sign across60<M<160 particles, giving a preparation- and classifier-dependent critical range. The source rc approximately6.2*a is a spherical-equivalent interpretation. Snapshots at volume fraction0.45 span20,43,66 and89 minutes after shear melting, illustrating finite kinetic evolution rather than permanent interface stabilization.",
+      "description": "In the source post-shear PMMA suspension, finite subcritical nuclei frequently shrink and larger nuclei can grow. For volume fraction 0.47 the growth-minus-shrink probability changes sign across 60<M<160 particles, giving a preparation- and classifier-dependent critical range. The source rc approximately 6.2*a is a spherical-equivalent interpretation. Snapshots at volume fraction 0.45 span 20, 43, 66 and 89 minutes after shear melting, illustrating finite kinetic evolution rather than permanent interface stabilization.",
       "claimIds": [
         "C-phys-colloid-nucleus-growth"
       ],
@@ -824,7 +810,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "The critical range is conditional on the local-order classifier and visible finite trajectories; it is not the original catalogue minimum2 or3, a universal colloid nucleation number or the threshold of all supramolecular organization.",
+        "The critical range is conditional on the local-order classifier and visible finite trajectories; it is not a universal colloid nucleation number or the threshold of all supramolecular organization.",
         "The radius interpretation assumes spherical nuclei, while the observed nuclei are nonspherical with rough surfaces. The interface between ordered cores and liquid exterior is not sharp.",
         "These are kinetic post-shear observations, not a demonstration that every sample was equilibrated before nucleation or that persistence over minutes proves global thermodynamic stability. The source high-density equilibration limitation remains.",
         "Neither exact hard-sphere behavior nor chemical aggregation/coagulation is inferred from this structural order classifier. No universal rate or material transport response is admitted."
@@ -834,7 +820,7 @@ const contracts = {
       "id": "phys:colloid-interface-free-energy",
       "name": "Conditional colloid crystal-fluid interface free energy",
       "kind": "scoped-process",
-      "description": "The source PMMA nuclei have ordered cores, disordered rough exteriors and a diffuse crystal-fluid interface. Using the small-subcritical-nucleus area fit with ellipsoidal areas, the source reports effective gamma approximately0.027*kB*T/a^2 across its samples; the Figure5 example at volume fraction0.445 gives0.026*kB*T/a^2. These are a general approximate summary and a specified sample fit, not competing independent measurements or a universal hard-sphere constant.",
+      "description": "The source PMMA nuclei have ordered cores, disordered rough exteriors and a diffuse crystal-fluid interface. Using the small-subcritical-nucleus area fit with ellipsoidal areas, the source reports effective gamma approximately 0.027*kB*T/a^2 across its samples; the Figure 5 example at volume fraction 0.445 gives 0.026*kB*T/a^2. These are a general approximate summary and a specified sample fit, not competing independent measurements or a universal hard-sphere constant.",
       "claimIds": [
         "C-phys-colloid-interface-free-energy"
       ],
@@ -891,10 +877,6 @@ const contracts = {
         {
           "sourceId": "gasser2001-colloid-nucleation",
           "locator": "Published pages 260-261, Figures 3-5, Table 1 and note 34 on page 262: diffuse rough interface, structure/shape inference and small-nucleus area-distribution surface-tension fit"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -903,12 +885,11 @@ const contracts = {
         "The screened pair equation supplies only the selected far-field repulsive term. It does not validate a full repulsion-plus-attraction DLVO barrier, a near-contact aggregation law, all dense-phase behavior or a universal dispersion lifetime; omitted forces remain real system-dependent possibilities.",
         "The post-shear finite observation, the conditional stationary-inference model and the small-nucleus Boltzmann-fit assumption are distinct. No observation-time persistence is equated with global thermodynamic stability, and the high-density equilibration caveat is retained.",
         "Rough diffuse crystal-fluid boundaries and a conditional effective interfacial free energy are positive finite interface results. They do not require a sharp permanent interface, and no universal inequality making surface effects dominate bulk cohesion at every mesoscopic scale is admitted.",
-        "Original parents2.8 polarization/dipoles and2.9 crystals each weight0.35, direction[1], modes[1], and parent2.12 molecular self-organization/liquids weight0.30, direction[1], modes[0,1], all necessary/dependency10/arising, are not measured causal fractions or universal precursor histories. Neither permanent molecular dipoles nor pre-existing crystallinity is shown necessary for every dispersion or interface.",
-        "Original carrier group1/type0 with N_min=N_crit=2 for2.8/2.9,3 for2.12 and N_sat=null are catalogue defaults, not validated critical populations. An isolated pair, at least8 order-classification bonds, roughly4000 imaged particles and60<M<160 critical nuclei count different domains.",
+        "Neither permanent molecular dipoles nor pre-existing crystallinity is shown necessary for every dispersion or interface.",
+        "An isolated pair, at least 8 order-classification bonds, roughly 4000 imaged particles and 60<M<160 critical nuclei count different domains.",
         "The source continuous liquids and their preparation are supplied experimental conditions; the earlier liquid/self-organization and microscopic polarization studies are not newly replayed or cloned as independent support. The finite nucleation experiment is not a theorem about all molecular-to-macroscopic emergence.",
-        "Original Level2, Phase2, TypeRole3, Science[1,2,41], established, MustCover[10], ShouldCover[9], Optional[] and SOMA property/arising/active-organizational-determinant/bridge labels remain catalogue classifications, not independently measured ontology or universal physical-stage boundaries.",
         "Real droplets, controlled emulsions, solvent-mediated forces, boundary layers, aggregation, rheology, optical scattering and transport need their own stated preparations and response evidence. Their existence is not blanket-excluded, but these outputs are not calculated or measured by this finite scope.",
-        "Original generic DLVO/thermodynamic and direct-observation paragraphs have null DOI/URL and identify no read publication. The original1941/1948 DLVO works, modern complete coagulation theory, later debate main texts and raw-data numerical replays are not newly admitted."
+        "The original 1941/1948 DLVO works, modern complete coagulation theory, later debate main texts and raw-data numerical replays are not admitted."
       ]
     }
   ],
@@ -1199,16 +1180,16 @@ const contracts = {
       "issue": "2",
       "pages": "352-355",
       "system": "Isolated aqueous charged-polystyrene-sulfate colloid pairs in a controlled thin glass cell",
-      "preparation": "Prepare the source dilute aqueous polystyrene-sulfate spheres of radius326 nm, monodisperse within1%, in a glass cell with3-4 micrometre gap, ion-exchange reservoirs and argon flushing to limit ionic contamination. Trap two isolated spheres initially1.5 or1.7 micrometres apart with dual optical tweezers, release when no other particles are nearby, and record796 pair trajectories. Use the source relative-coordinate projection,57 nm bins and a transition-time interval1/30 s; the source pools6502 initial/final separation samples to estimate a transition matrix.",
+      "preparation": "Prepare the source dilute aqueous polystyrene-sulfate spheres of radius 326 nm, monodisperse within 1%, in a glass cell with 3-4 micrometre gap, ion-exchange reservoirs and argon flushing to limit ionic contamination. Trap two isolated spheres initially 1.5 or 1.7 micrometres apart with dual optical tweezers, release when no other particles are nearby, and record 796 pair trajectories. Use the source relative-coordinate projection, 57 nm bins and a transition-time interval 1/30 s; the source pools 6502 initial/final separation samples to estimate a transition matrix.",
       "observable": "Finite relative-coordinate release trajectories and their estimated transition probabilities; potential and effective parameters are inferred.",
       "finding": "The source isolated-pair transition-matrix analysis reports a screened repulsive potential fitted with Zeff=1991+/-150 elementary-charge units and screening length kappa^-1=161+/-10 nm. It finds no statistically significant long-range attraction in its resolved preparation and separation range. These are conditional parameters and a finite negative bound, not the fully dissociated surface charge or an all-colloid exclusion of attraction.",
       "limitations": [
         "The acquired data are finite non-equilibrium release trajectories. Infer a stationary distribution under the source time-homogeneous Smoluchowski model and then U=-kB*T*log(p_eq) up to an additive constant; this is not direct equilibrium-histogram sampling or a new force-sensor readout.",
         "The source model assumes a spherically symmetric separation potential and omits hydrodynamic coupling. The trajectory projection, finite bins and boundary condition are analysis choices; reflecting-boundary inference requires the upper separation bound to lie beyond the interaction.",
-        "The reported mean separation uncertainty is50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
+        "The reported mean separation uncertainty is 50 nm; source estimates effective charge as a lower limit because localization errors broaden the potential. Reported fit uncertainties have no newly verified coverage convention or full covariance here.",
         "The separate concentrated-cell crystals persisting for months are an ionic-purity control under a different preparation, not the lifetime of an isolated pair or an independent replication of the dilute-pair measurement.",
-        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at25 C does not establish the actual experimental temperature.",
-        "The potential and fit parameters share the same finite release trajectories; they are not independent confirmations. The equivalent1:1 electrolyte concentration quoted from the fitted screening length is an inference, not a separately acquired concentration assay.",
+        "No raw video, calibration replay, new independent effective-charge assay or universal temperature is supplied. The source reference value of Bjerrum length at 25 C does not establish the actual experimental temperature.",
+        "The potential and fit parameters share the same finite release trajectories; they are not independent confirmations. The equivalent 1:1 electrolyte concentration quoted from the fitted screening length is an inference, not a separately acquired concentration assay.",
         "The stated uncertainties are source-reported fit estimates, with position-error and lower-limit caveats retained. No new likelihood, absolute potential offset, error coverage or independent numerical reproduction is supplied.",
         "No statistically significant attraction in the resolved range does not exclude short-range dispersion, other geometries, wall effects, different charge states or concentrated collective behavior. No full DLVO barrier or universal dispersion lifetime is measured."
       ],
@@ -1232,16 +1213,16 @@ const contracts = {
       "issue": "5515",
       "pages": "258-262",
       "system": "Concentrated sterically stabilized weakly charged PMMA suspension after controlled shear melting",
-      "preparation": "Use source PMMA spheres sterically stabilized with poly-12-hydroxystearic acid, radius a=1.26 micrometres and polydispersity below5%, in density- and index-matched decahydronaphthalene/cyclohexylbromide. Rhodamine dye imparts a small charge, so these are nearly hard spheres rather than an exact hard-sphere model. Shear melt the50 microlitre sample by magnetically agitating an embedded wire; acquire a58 by55 by20 cubic-micrometre confocal volume containing about4000 particles, at least8 and typically15 particle diameters from treated walls. Classify local order from particle centers with approximately0.04 micrometre accuracy.",
+      "preparation": "Use source PMMA spheres sterically stabilized with poly-12-hydroxystearic acid, radius a=1.26 micrometres and polydispersity below 5%, in density- and index-matched decahydronaphthalene/cyclohexylbromide. Rhodamine dye imparts a small charge, so these are nearly hard spheres rather than an exact hard-sphere model. Shear melt the 50 microlitre sample by magnetically agitating an embedded wire; acquire a 58 by 55 by 20 cubic-micrometre confocal volume containing about 4000 particles, at least 8 and typically 15 particle diameters from treated walls. Classify local order from particle centers with approximately 0.04 micrometre accuracy.",
       "observable": "Confocal particle positions classified into crystal-like nuclei; finite growth/shrink histories and shape-dependent small-nucleus area statistics.",
-      "finding": "In the source post-shear PMMA suspension, finite subcritical nuclei frequently shrink and larger nuclei can grow. For volume fraction0.47 the growth-minus-shrink probability changes sign across60<M<160 particles, giving a preparation- and classifier-dependent critical range. The source rc approximately6.2*a is a spherical-equivalent interpretation. Snapshots at volume fraction0.45 span20,43,66 and89 minutes after shear melting, illustrating finite kinetic evolution rather than permanent interface stabilization. The source PMMA nuclei have ordered cores, disordered rough exteriors and a diffuse crystal-fluid interface. Using the small-subcritical-nucleus area fit with ellipsoidal areas, the source reports effective gamma approximately0.027*kB*T/a^2 across its samples; the Figure5 example at volume fraction0.445 gives0.026*kB*T/a^2. These are a general approximate summary and a specified sample fit, not competing independent measurements or a universal hard-sphere constant.",
+      "finding": "In the source post-shear PMMA suspension, finite subcritical nuclei frequently shrink and larger nuclei can grow. For volume fraction 0.47 the growth-minus-shrink probability changes sign across 60<M<160 particles, giving a preparation- and classifier-dependent critical range. The source rc approximately 6.2*a is a spherical-equivalent interpretation. Snapshots at volume fraction 0.45 span 20, 43, 66 and 89 minutes after shear melting, illustrating finite kinetic evolution rather than permanent interface stabilization. The source PMMA nuclei have ordered cores, disordered rough exteriors and a diffuse crystal-fluid interface. Using the small-subcritical-nucleus area fit with ellipsoidal areas, the source reports effective gamma approximately 0.027*kB*T/a^2 across its samples; the Figure 5 example at volume fraction 0.445 gives 0.026*kB*T/a^2. These are a general approximate summary and a specified sample fit, not competing independent measurements or a universal hard-sphere constant.",
       "limitations": [
-        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed0.64 and rhcp0.74 reference states; these are not an independent absolute size/packing measurement here.",
-        "The source l=6 normalized bond-order classifier uses neighbor separation below2.83*a, inner-product threshold above0.5 and at least8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
-        "Growth/shrink analysis excludes nuclei with particles closer than0.8*a to the observation-volume edge. Source note27 reports1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
-        "The acquisition starts after shear melting. At higher volume fractions0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
+        "Radius and volume fractions inherit the source calibration from volume per particle at assigned random-close-packed 0.64 and rhcp 0.74 reference states; these are not an independent absolute size/packing measurement here.",
+        "The source l=6 normalized bond-order classifier uses neighbor separation below 2.83*a, inner-product threshold above 0.5 and at least 8 crystal-like bonds per crystal-like particle. Bond denotes a neighbor direction, not a chemical bond; these thresholds are operational classification choices, not universal critical populations.",
+        "Growth/shrink analysis excludes nuclei with particles closer than 0.8*a to the observation-volume edge. Source note 27 reports 1500-2500 fully visible tracked nuclei per typical measurement, without specifying its duration, frame count or unique-track/repeated-observation accounting. This is not a simultaneous population or a known number of independent events. Visibility and tracking impose selection rather than complete sampling of all nuclei.",
+        "The acquisition starts after shear melting. At higher volume fractions 0.47-0.53, immediate growth left little equilibration time and prevented complete observation of critical-nucleus formation. No globally equilibrated sampling or universal homogeneous-nucleation rate is established.",
         "Nucleus counts, geometry, inferred interface cost and structure fits share the same experimental study. Computer-generated order-reference histograms matched to experimental broadening are analysis inputs, not independent measured crystals or a separate new computational study.",
-        "The critical range is conditional on the local-order classifier and visible finite trajectories; it is not the original catalogue minimum2 or3, a universal colloid nucleation number or the threshold of all supramolecular organization.",
+        "The critical range is conditional on the local-order classifier and visible finite trajectories; it is not a universal colloid nucleation number or the threshold of all supramolecular organization.",
         "The radius interpretation assumes spherical nuclei, while the observed nuclei are nonspherical with rough surfaces. The interface between ordered cores and liquid exterior is not sharp.",
         "These are kinetic post-shear observations, not a demonstration that every sample was equilibrated before nucleation or that persistence over minutes proves global thermodynamic stability. The source high-density equilibration limitation remains.",
         "Neither exact hard-sphere behavior nor chemical aggregation/coagulation is inferred from this structural order classifier. No universal rate or material transport response is admitted.",
@@ -1265,24 +1246,6 @@ const contracts = {
   "comparisons": [],
   "sources": [
     {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "crocker1994-colloid-pair",
       "kind": "research-publication",
       "title": "Microscopic Measurement of the Pair Interaction Potential of Charge-Stabilized Colloid",
@@ -1302,7 +1265,7 @@ const contracts = {
           "Published pages 353-354, Equations 2-6 and Figure 1: Smoluchowski transition-matrix stationary inference, cell preparation, optical release, trajectory projection and sampling",
           "Published pages 354-355, Figure 2 and charge/screening discussion: source fit, position-error limitation and resolved long-range-attraction bound"
         ],
-        "limit": "Visually read all four published scientific pages352-355 in the author-hosted published scan; the fifth PDF page repeats Figure1. Admission is restricted to the isolated dilute-pair preparation and inference, not the separate dense-crystal purity control, cited private communications, full nonlinear-charge theory, concentrated-phase law or complete DLVO attraction/barrier validation. No local trajectory reconstruction or independent numerical witness. Identity and printed date checked against the actual published PDF and DOI registry. Registry relation is empty and no update-to item was returned. Limited DOI/title and publisher correction searches found no explicit erratum; this is not an exhaustive later-literature audit. A 2000 Grier/Crocker Comment and Tata/Ise Reply were located by their publisher-indexed abstracts; main bodies were not read and are not newly admitted. No claim of resolving that dispute or universal failure of competing theories is made."
+        "limit": "Visually read all four published scientific pages 352-355 in the author-hosted published scan; the fifth PDF page repeats Figure 1. Admission is restricted to the isolated dilute-pair preparation and inference, not the separate dense-crystal purity control, cited private communications, full nonlinear-charge theory, concentrated-phase law or complete DLVO attraction/barrier validation. No local trajectory reconstruction or independent numerical witness. Identity and printed date checked against the actual published PDF and DOI registry. Registry relation is empty and no update-to item was returned. Limited DOI/title and publisher correction searches found no explicit erratum; this is not an exhaustive later-literature audit. A 2000 Grier/Crocker Comment and Tata/Ise Reply were located by their publisher-indexed abstracts; main bodies were not read and are not newly admitted. No claim of resolving that dispute or universal failure of competing theories is made."
       }
     },
     {
@@ -1329,7 +1292,7 @@ const contracts = {
           "Published page 260, Figures 1-3 and nucleation discussion: finite post-shear evolution, critical-size range at volume fraction 0.47 and high-density equilibration caveat",
           "Published pages 260-261, Figures 3-5, Table 1 and note 34 on page 262: diffuse rough interface, structure/shape inference and small-nucleus area-distribution surface-tension fit"
         ],
-        "limit": "Read the complete article body258-261 and its references/notes through262, checking figures, Table1 and operational thresholds visually. Unrelated preceding references on PDF page1 and the following photoexcited-molecule article on PDF page5 are excluded. Admit finite nucleus-growth and interfacial-fit results, not every rate, packing fraction comparison, simulation claim or derived barrier number. No confocal-image replay or independent thermodynamic calculation. Identity and printed date checked against the actual published PDF and DOI registry. Registry relation is empty and no update-to item was returned. Limited DOI/title and publisher correction searches found no explicit erratum; this is not an exhaustive later-literature audit."
+        "limit": "Read the complete article body 258-261 and its references/notes through 262, checking figures, Table 1 and operational thresholds visually. Unrelated preceding references on PDF page 1 and the following photoexcited-molecule article on PDF page 5 are excluded. Admit finite nucleus-growth and interfacial-fit results, not every rate, packing fraction comparison, simulation claim or derived barrier number. No confocal-image replay or independent thermodynamic calculation. Identity and printed date checked against the actual published PDF and DOI registry. Registry relation is empty and no update-to item was returned. Limited DOI/title and publisher correction searches found no explicit erratum; this is not an exhaustive later-literature audit."
       }
     }
   ]

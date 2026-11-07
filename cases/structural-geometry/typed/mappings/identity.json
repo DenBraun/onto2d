@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:d48848fddd57dbea85c5a953deed42464fad956cc95c0ac794aa519707f751a2",
+  "artifactHash": "sha256:d065ad013cca13ae78625e2705a965efea55d21e76a09cb073443530f165f054",
   "declaration": {
     "fields": {
       "causalDirectionIds": [
@@ -79,7 +79,7 @@
     },
     "id": "declared-identity",
     "reviewEvidence": {
-      "contentHash": "sha256:4cf69822741040f3dd0f91daae68355d1c712d6e8ee42afe43e57aab89a98cac",
+      "contentHash": "sha256:9d5f418ada0ab75b88b99007e8c9db07e8827c13f24de1b489bf114838dbcf9a",
       "reference": "cases/structural-geometry/typed/PROTOCOL.md"
     },
     "version": "1"

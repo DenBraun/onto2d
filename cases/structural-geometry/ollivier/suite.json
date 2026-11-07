@@ -1,6 +1,6 @@
 {
-  "artifactHash": "sha256:3a9cf842ccf6a0f3a46e7eea8d03ce8104e5383e0726a4a3071a51ff17ff6be1",
-  "edgeCount": 242,
+  "artifactHash": "sha256:7dc1af7f828d236be01f7d85d65f6ed93716d0b74a916bbd1a7fcbd74dfc0820",
+  "edgeCount": 266,
   "runs": [
     {
       "artifactHash": "sha256:6ce10c9de4200705831b514fe7587dccf4f273aaa758e59cfd212709c3ca4b39",
@@ -903,102 +903,102 @@
       }
     },
     {
-      "artifactHash": "sha256:8bb0f4a791c21ded627d39007938fa4830045ec17977b8b2f8f93975525cfb77",
-      "boundaryEdgeCount": 27,
-      "file": "artifacts/causal-emergence-seed-zero.json",
-      "id": "causal-emergence-seed-zero",
-      "nodeCount": 10,
-      "requestHash": "sha256:f69b01d80d6b1102f3d25a62d199841e31f8b473ea23f159da2d41d9bbeee49d",
-      "scopedEdgeCount": 18,
+      "artifactHash": "sha256:0bb528cebce25ef3e0d90c86376086bd37f8c7649a7f75aaaa7c4e4faf46b0e0",
+      "boundaryEdgeCount": 40,
+      "file": "artifacts/causal-emergence-level-zero-definitions-zero.json",
+      "id": "causal-emergence-level-zero-definitions-zero",
+      "nodeCount": 28,
+      "requestHash": "sha256:2013616ebb132e197f3c8a78d74a8b761f47ca5580e8432af7f54d71109d152c",
+      "scopedEdgeCount": 22,
       "summary": {
-        "count": 18,
+        "count": 22,
         "mean": {
-          "denominator": "24",
-          "numerator": "-29"
+          "denominator": "44",
+          "numerator": "-57"
         },
         "signs": {
-          "negative": 18,
+          "negative": 20,
           "positive": 0,
-          "zero": 0
+          "zero": 2
+        },
+        "sum": {
+          "denominator": "2",
+          "numerator": "-57"
+        }
+      }
+    },
+    {
+      "artifactHash": "sha256:2b355a3927848394a2c981aa135256d6e6936915d30475eb65efae30c3b63217",
+      "boundaryEdgeCount": 40,
+      "file": "artifacts/causal-emergence-level-zero-definitions-half.json",
+      "id": "causal-emergence-level-zero-definitions-half",
+      "nodeCount": 28,
+      "requestHash": "sha256:8a3d952d9ce2be9fe0b776b1fe00a4abf6ab954caf75d1f949502d3e3176943b",
+      "scopedEdgeCount": 22,
+      "summary": {
+        "count": 22,
+        "mean": {
+          "denominator": "88",
+          "numerator": "-57"
+        },
+        "signs": {
+          "negative": 20,
+          "positive": 0,
+          "zero": 2
         },
         "sum": {
           "denominator": "4",
-          "numerator": "-87"
+          "numerator": "-57"
         }
       }
     },
     {
-      "artifactHash": "sha256:ab4bfc3f55c93edfbf3de51443169142911667622dec7f66a4b6c03c27b91c3c",
-      "boundaryEdgeCount": 27,
-      "file": "artifacts/causal-emergence-seed-half.json",
-      "id": "causal-emergence-seed-half",
-      "nodeCount": 10,
-      "requestHash": "sha256:e53f847216a6e87e561874c9bfcea21ea813dac2fb431cda2287b82de291f4e7",
-      "scopedEdgeCount": 18,
+      "artifactHash": "sha256:b6d1a3046ab4a701c59845c3d9b503b09e0fc44c35c3cc5994be0c49fcbc99ee",
+      "boundaryEdgeCount": 15,
+      "file": "artifacts/causal-emergence-level-zero-rules-zero.json",
+      "id": "causal-emergence-level-zero-rules-zero",
+      "nodeCount": 34,
+      "requestHash": "sha256:64ba5a69fcb20a66f94169fc73244762fdf49f07f9e1258a471e0c3567351e1f",
+      "scopedEdgeCount": 47,
       "summary": {
-        "count": 18,
+        "count": 25,
         "mean": {
-          "denominator": "144",
-          "numerator": "-85"
+          "denominator": "750",
+          "numerator": "-1079"
         },
         "signs": {
-          "negative": 18,
+          "negative": 23,
           "positive": 0,
-          "zero": 0
+          "zero": 2
         },
         "sum": {
-          "denominator": "8",
-          "numerator": "-85"
+          "denominator": "30",
+          "numerator": "-1079"
         }
       }
     },
     {
-      "artifactHash": "sha256:5d3be6ae3304ca8c11756f5494fd408d4f237a7a8719668d67625b56b0eb33a9",
-      "boundaryEdgeCount": 43,
-      "file": "artifacts/causal-emergence-admissibility-zero.json",
-      "id": "causal-emergence-admissibility-zero",
-      "nodeCount": 9,
-      "requestHash": "sha256:c75a242bf2a1fad21c058c5b845d38b5633b18587f3edcd0a054ad065d823eea",
-      "scopedEdgeCount": 17,
+      "artifactHash": "sha256:54236b2d40c263d7fda4f320a87571cd97b3c4256dab4a7b7945fae9ebc1708e",
+      "boundaryEdgeCount": 15,
+      "file": "artifacts/causal-emergence-level-zero-rules-half.json",
+      "id": "causal-emergence-level-zero-rules-half",
+      "nodeCount": 34,
+      "requestHash": "sha256:47f1008741f4bf5f90dc87d9c7333c305dc1114355876a155295ba8d98006e04",
+      "scopedEdgeCount": 47,
       "summary": {
-        "count": 17,
+        "count": 25,
         "mean": {
-          "denominator": "51",
-          "numerator": "-55"
+          "denominator": "1500",
+          "numerator": "-1079"
         },
         "signs": {
-          "negative": 17,
+          "negative": 23,
           "positive": 0,
-          "zero": 0
+          "zero": 2
         },
         "sum": {
-          "denominator": "3",
-          "numerator": "-55"
-        }
-      }
-    },
-    {
-      "artifactHash": "sha256:f583679fb393e207b02f48e94452baee84c0d64d7fdaa269659106083b3a4af5",
-      "boundaryEdgeCount": 43,
-      "file": "artifacts/causal-emergence-admissibility-half.json",
-      "id": "causal-emergence-admissibility-half",
-      "nodeCount": 9,
-      "requestHash": "sha256:968853249bad77ca652bac84a7806d3dd71451d68e5b8c2a9570786fa881cd0e",
-      "scopedEdgeCount": 17,
-      "summary": {
-        "count": 17,
-        "mean": {
-          "denominator": "136",
-          "numerator": "-65"
-        },
-        "signs": {
-          "negative": 16,
-          "positive": 0,
-          "zero": 1
-        },
-        "sum": {
-          "denominator": "8",
-          "numerator": "-65"
+          "denominator": "60",
+          "numerator": "-1079"
         }
       }
     }

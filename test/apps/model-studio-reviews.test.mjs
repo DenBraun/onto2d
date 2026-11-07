@@ -31,16 +31,16 @@ function setup(presentation = null) {
   const initialization = source.slice(source.indexOf("const ids = ["), source.indexOf("\nconst state = {"));
   const app = vm.runInNewContext(`${initialization}\n${[
     "shortenedHash", "studyDesignLabel", "renderSourceReview", "configureReviewPanels", "renderRationale",
-    "renderInspector", "renderInspectedRecord", "activateModelPack"
+    "renderInspector", "renderArising", "renderInspectedRecord", "activateModelPack"
   ].map(declaration).join("\n")}\nfunction render() { renderInspector(); }\n({configureReviewPanels, renderRationale, activateModelPack, elements});`, {
     state, URL, citationLinks, resolveClaimCitations, createElement: element,
     recordEvidenceContext, resolveRecordEvidence, CATALOG_PAGE_SIZE: 60,
     pendingInspection: null, inspectionSequence: 0, eventsBound: true,
     document: { body: { dataset: {} }, getElementById: (id) => markup.get(id), createTextNode: (textContent) => ({ textContent }) },
-    renderVocabulary() {}, renderSourceReadiness() {},
+    renderSourceReadiness() {},
     createVerifiedModelPresentation: () => presentation,
     presentationMetadata: () => ({ labels: {}, boundary: {} }), interactionViewCatalog: () => null,
-    defaultFocusId: () => "org:record", configureFacet() {}, selectLocalOption() {}, replaceLocationState() {},
+    defaultFocusId: () => "org:record", defaultLayerValue: () => "", configureFacet() {}, selectLocalOption() {}, replaceLocationState() {},
     coordinateText: () => "Level 5", scalarLabel: (value) => String(value ?? ""), tag: (text) => element("span", "", text),
     renderRelationList() {}, renderInteractionCases() {},
     downloadRecord: (value, filename) => downloads.push({ value, filename }),
@@ -60,19 +60,30 @@ const study = { id: "organism-preparation", sourceId: publication.id, studyType:
   finding: "A bounded effect", readExtent: "selected-primary-results", reviewedLocators: ["Results", "Figure 2"],
   limitations: ["No universal operating dependency."], correctionCheck: "Publication metadata checked." };
 
-test("social decisions expose bibliography corrections on demand and navigate the actual topic scope", async () => {
+test("Level-7 social scopes load on demand with their open questions and source reading limits and inspect each scope record", async () => {
   const { configureReviewPanels, elements, downloads, inspections } = setup();
   const book = { id: "book", title: "Verified historical publication", year: 1776, url: "https://example.test/book",
     review: { extent: "bibliographic-metadata-only", limit: "Original chapters unread; metadata is not experimental evidence." } };
-  const review = { studies: [], comparisons: [], cards: [{ code: "7.9", originalName: "Dynamics of Economic Markets",
-    scope: "Market outcomes retain their specified institutions, endowments and tested protocols.", nodeIds: ["soc:market-scope"],
-    assertions: [{ topic: "Universal optimality", disposition: "excluded", reason: "A selected auction does not test every market." }],
-    parentDispositions: [{ parentCode: "6.8", disposition: "unresolved", reason: "No neural criticality mediator was measured." }],
-    bibliography: [{ sourceIndex: 0, sourceId: "book", disposition: "metadata-only", reason: "The original publication year is 1776; chapters remain unread." }],
-    excludedDefaults: ["No universal market minimum."], unresolved: ["External validity remains limited."] }] };
+  const scopes = [{ id: "soc:economic-market-dynamics-scope", name: "Dynamics of Economic Markets",
+    scope: "Market outcomes retain their specified institutions, endowments and tested protocols.",
+    nodeIds: ["soc:economic-market-dynamics-scope", "soc:auction-rule-sensitive-coordination"],
+    claimIds: ["D-soc-economic-market-dynamics-scope-scope", "C-soc-auction-rule-sensitive-coordination"],
+    unresolved: ["External validity remains limited."], sourceIds: ["book"] },
+  { id: "soc:social-norms-conventions-scope", name: "Social Norms and Conventions",
+    scope: "Conventions retain their tested populations, payoffs and observation windows.",
+    nodeIds: ["soc:social-norms-conventions-scope", "soc:naming-convention-transition"],
+    claimIds: ["D-soc-social-norms-conventions-scope-scope", "C-soc-naming-convention-transition"], sourceIds: ["book"],
+    unresolved: ["Cross-population persistence remains unmeasured.", "No convention-wide neural mediator was measured."] }];
+  const comparison = { id: "soc:protocol-versus-optimality",
+    candidate: "The tested auction protocol constrains the observed allocation.",
+    alternative: "A selected auction establishes optimality for every market.",
+    discriminator: "Protocol contrasts within the documented sessions.", result: "conditional-support",
+    limit: "The sessions do not test every market institution.", assumptions: ["Session rules operationalize the protocol."],
+    sourceIds: ["book"], claimIds: ["C-soc-auction-rule-sensitive-coordination"] };
+  const review = { studies: [], comparisons: [comparison], scopes };
   const dictionaries = { sources: [book], socialSystems: review }, before = structuredClone(dictionaries), requests = [];
   configureReviewPanels({ files: { "model/dictionaries.json": {} } }, {
-    reviews: { socialSystems: { count: 1 } }, review: async (key) => { requests.push(key); return dictionaries; }
+    reviews: { socialSystems: { count: 3 } }, review: async (key) => { requests.push(key); return dictionaries; }
   });
   const panel = elements["social-systems-review-panel"], records = elements["social-systems-review-records"];
   assert.equal(panel.hidden, false);
@@ -80,11 +91,18 @@ test("social decisions expose bibliography corrections on demand and navigate th
   panel.open = true;
   await panel.ontoggle();
   assert.deepEqual(requests, ["socialSystems"]);
-  for (const expected of ["Universal optimality: excluded", "6.8: unresolved", "Original bibliography: reviewed identities and reading limits",
-    "1. metadata-only: The original publication year is 1776; chapters remain unread.",
+  assert.deepEqual(records.children.map((section) => section.children[0].textContent),
+    ["Dynamics of Economic Markets", "Social Norms and Conventions", "Interpretation: soc:protocol-versus-optimality"]);
+  for (const expected of ["Market outcomes retain their specified institutions, endowments and tested protocols.",
+    "Open question: External validity remains limited.", "Conventions retain their tested populations, payoffs and observation windows.",
+    "Open question: Cross-population persistence remains unmeasured.", "Open question: No convention-wide neural mediator was measured.",
+    "Alternative: A selected auction establishes optimality for every market.",
     "Source review: bibliographic-metadata-only. Original chapters unread; metadata is not experimental evidence."]) assert.ok(lines(records).includes(expected), expected);
-  records.children[0].children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
-  assert.deepEqual(inspections, ["soc:market-scope"]);
+  assert.match(elements["social-systems-review-summary"].textContent, /^2 reviewed topics and 0 additional study contexts\./);
+  const inspectScope = (section) => section.children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
+  inspectScope(records.children[1]);
+  inspectScope(records.children[0]);
+  assert.deepEqual(inspections, ["soc:social-norms-conventions-scope", "soc:economic-market-dynamics-scope"]);
   elements["social-systems-review-download"].onclick();
   assert.deepEqual(downloads, [{ value: review, filename: "socialSystems-evidence.json" }]);
   assert.deepEqual(dictionaries, before);
@@ -94,14 +112,13 @@ test("social decisions expose bibliography corrections on demand and navigate th
   assert.equal(elements["social-systems-review-download"].onclick, null);
 });
 
-test("Level-6 decisions load on demand, retain contrary parent decisions and open the actual scope record", async () => {
+test("Level-6 neural scopes load on demand beside their study contexts and open the actual scope record", async () => {
   const { configureReviewPanels, elements, downloads, inspections } = setup();
-  const review = { studies: [study], comparisons: [], cards: [{ code: "6.16", originalName: "Neurovascular Coupling",
+  const review = { studies: [study], comparisons: [], scopes: [{ id: "cog:neurovascular-coupling-scope", name: "Neurovascular Coupling",
     scope: "Vascular response is distinct from immune regulation and from neural activity itself.",
-    nodeIds: ["neur:source-readout", "cog:vascular-scope"],
-    assertions: [{ topic: "A measured vascular change", disposition: "qualified", reason: "One preparation and endpoint only." }],
-    parentDispositions: [{ parentCode: "5.9", disposition: "excluded", reason: "This immune dependency is not a general vascular necessity." }],
-    excludedDefaults: ["No inherited parent weight."], unresolved: ["The complete neuronal-to-vascular route is unmeasured."] }] };
+    nodeIds: ["cog:neurovascular-coupling-scope", "neur:kir21-cec-current"],
+    claimIds: ["D-cog-neurovascular-coupling-scope-scope", "C-kir21-cec-current"], sourceIds: [publication.id],
+    unresolved: ["The complete neuronal-to-vascular route is unmeasured."] }] };
   const dictionaries = { sources: [publication], neuralSystems: review };
   const before = structuredClone(dictionaries), requests = [];
   configureReviewPanels({ files: { "model/dictionaries.json": {} } }, {
@@ -114,12 +131,13 @@ test("Level-6 decisions load on demand, retain contrary parent decisions and ope
   await panel.ontoggle();
   assert.deepEqual(requests, ["neuralSystems"]);
   const records = elements["neural-systems-review-records"];
-  for (const expected of ["6.16: Neurovascular Coupling", "A measured vascular change: qualified", "5.9: excluded",
-    "This immune dependency is not a general vascular necessity.", "Excluded default: No inherited parent weight.",
-    "Open question: The complete neuronal-to-vascular route is unmeasured."]) assert.ok(lines(records).includes(expected), expected);
+  assert.deepEqual(records.children.map((section) => section.children[0].textContent), ["Neurovascular Coupling", publication.title]);
+  for (const expected of ["Vascular response is distinct from immune regulation and from neural activity itself.",
+    "Open question: The complete neuronal-to-vascular route is unmeasured.", "Finding: A bounded effect",
+    "Source review: selected-primary-results. Supplement and raw data unread."]) assert.ok(lines(records).includes(expected), expected);
   assert.match(elements["neural-systems-review-summary"].textContent, /1 reviewed topics and 1 additional study contexts/);
   records.children[0].children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
-  assert.deepEqual(inspections, ["cog:vascular-scope"]);
+  assert.deepEqual(inspections, ["cog:neurovascular-coupling-scope"]);
   elements["neural-systems-review-download"].onclick();
   assert.deepEqual(downloads, [{ value: review, filename: "neuralSystems-evidence.json" }]);
   assert.deepEqual(dictionaries, before);

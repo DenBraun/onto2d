@@ -108,17 +108,6 @@ test("molecular synthesis retains both Rau generators and dependent constituent-
   ]);
 });
 
-test("all three chemistry source scopes point to the actual Level 2 catalogue", () => {
-  for (const id of ["C-phys-molecular-source-scope", "C-phys-ionic-source-scope", "C-phys-resonance-source-scope"]) {
-    const provenance = claim(data, id).citations.filter((citation) => citation.role === "provenance");
-    assert.ok(provenance.length > 0);
-    for (const citation of provenance) assert.equal(publication(data, citation.sourceId).path, "references/level-2.json");
-    rejects([["a valid source ID from another level is not this card's provenance", (source) => {
-      claim(source, id).citations.find((citation) => citation.role === "provenance").sourceId = "legacy-3";
-    }]]);
-  }
-});
-
 test("ionic charge bookkeeping distinguishes isolated charge from partial or effective charge", () => {
   const definition = claim(data, "D-phys-ionic-charge-state");
   assert.match(definition.statement, /z=sum_a\(Z_a\)-N_e/);
@@ -163,12 +152,10 @@ test("Debye-Huckel remains a dilute equilibrium theory rather than exact core, c
   ]);
 });
 
-test("ionic synthesis reuses charged-state evidence without adding a mass-closure or universal-parent experiment", () => {
+test("ionic synthesis reuses charged-state evidence without adding a mass-closure input or unmeasured mechanism", () => {
   const synthesis = claim(data, "C-phys-ionic-source-scope");
   assert.deepEqual(synthesis.contextIds, ["liu2009-h2", "rau2020-hd", "korobov2017-h2"]);
   rejects([
-    ["molecular ancestry is not a prerequisite for atomic ions", (source) => removeLimit(source, synthesis.id, "bare nuclei")],
-    ["parent weights have no quantitative causal estimator", (source) => removeLimit(source, synthesis.id, "equal weights 0.5/0.5")],
     ["no unmeasured conductivity or crystal mechanism can enter by implication", (source) => removeLimit(source, synthesis.id, "Microscopic donor-acceptor kinetics")],
     ["the reused trap acquisition does not become a closure input here", (source) => removeLimit(source, synthesis.id, "mass-closure output is not an input")]
   ]);
@@ -234,12 +221,12 @@ test("the linked erratum is retained without importing unread radical results or
   ]);
 });
 
-test("resonance scope does not acquire ionic necessity, carrier thresholds or complete aromaticity evidence", () => {
+test("resonance scope does not acquire ionic necessity, universal count thresholds or complete aromaticity evidence", () => {
   const id = "C-phys-resonance-source-scope";
   rejects([
-    ["the neutral model does not need an ionic regime", (source) => removeLimit(source, id, "does not require original parent 2.4")],
+    ["the neutral model does not need an ionic regime", (source) => removeLimit(source, id, "does not require ionic interaction/ion formation")],
     ["six electrons and five functions are model counts, not universal minima", (source) => removeLimit(source, id, "Six active electrons and five basis functions")],
-    ["energy comparison does not supply every aromaticity criterion", (source) => removeLimit(source, id, "future aromaticity card")],
+    ["energy comparison does not supply every aromaticity criterion", (source) => removeLimit(source, id, "must name its own energetic, magnetic, electronic or structural criterion")],
     ["unmeasured densities and responses remain outside the finite model result", (source) => removeLimit(source, id, "fitted charge density")]
   ]);
 });

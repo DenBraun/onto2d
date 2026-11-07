@@ -542,7 +542,7 @@ const contracts = {
     {
       "id": "M-phys-whitlow1990-separation-context",
       "kind": "method",
-      "statement": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=1/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
+      "statement": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=epsilon/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
       "scope": "The specified SLAC electron-only responses and the 1990 archived-data longitudinal/transverse separation; no free-quark census or complete experimental replay.",
       "status": "method-contract",
       "citations": [
@@ -1015,7 +1015,7 @@ const contracts = {
       "id": "phys:whitlow1990-separation-context",
       "name": "SLAC longitudinal/transverse regressions",
       "kind": "context",
-      "description": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=1/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
+      "description": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=epsilon/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
       "claimIds": [
         "M-phys-whitlow1990-separation-context"
       ],
@@ -1430,7 +1430,7 @@ const contracts = {
       "issue": "1-2",
       "pages": "193-198",
       "system": "SLAC inclusive electron-nucleon scattering",
-      "preparation": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=1/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
+      "preparation": "At fixed x,Q^2, regress the flux-divided cross sections against epsilon and propagate the known statistical/systematic correlations. The report gives 176 R regressions, typically using six measurements from four experiments across an epsilon range about 0.5. Separately regress deuterium/proton ratios against epsilonPrime=epsilon/(1+epsilon*Rp), adopting a model for Rp, and average the resulting target differences over Q^2. Exclude E140 deuterium from the global Rd regressions while retaining its normalization-anchor role.",
       "observable": "Separated R ratios and the distinct target-ratio regression",
       "finding": "The 176 regressions report mean chi^2 per degree of freedom 0.91 and nonconstant R values across the stated x,Q^2 range. After comparing target differences, the authors combine Rp and Rd within bins, respecting asymmetric parent distributions; Figure 2 displays these global results separately from improved E140 averages of Rd and RFe. A constant R=0 or R=0.18 is an adopted extraction approximation, not what all these separated data measure. The separate 86 target-ratio regressions have reported mean chi^2 per degree of freedom 0.99. Their full-range average is Rd-Rp=-0.001 +/-0.009 statistical +/-0.009 systematic, compatible with zero over the reviewed kinematics. This finite-precision consistency result does not establish exact target equality or independently measure a free-neutron response.",
       "limitations": [

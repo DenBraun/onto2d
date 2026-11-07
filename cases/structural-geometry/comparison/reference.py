@@ -11,8 +11,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 FILES = ["controls.json", "PROTOCOL.md", "../typed/controls.json", "../typed/reference.py",
-         "../canonical/reference.py", "../topology/reference.py",
-         "../../../models/causal-emergence/releases/2026.08.15/bundle.json"]
+         "../canonical/reference.py", "../topology/reference.py"]
 
 
 def module(name, path):

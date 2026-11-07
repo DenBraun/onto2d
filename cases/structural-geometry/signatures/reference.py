@@ -60,8 +60,7 @@ def source_cases():
     old = response.read("controls.json")
     sources = response.sources(old)
     assert controls["baseControlIds"] == [s["id"] for s in old["scenarios"]]
-    cases = [(s["id"], sources[s["source"]], s["regimeId"],
-              s.get("scope", {"kind": "induced", "nodeIds": old["causalScope"]} if s["source"] == "causal" else None)) for s in old["scenarios"]]
+    cases = [(s["id"], sources[s["source"]], s["regimeId"], s.get("scope")) for s in old["scenarios"]]
     types = {**old["types"], "contextual-necessary": {**old["types"]["contextual"], "necessity": "necessary"}}
     for g in controls["graphs"]:
         for regime in controls["regimes"]:

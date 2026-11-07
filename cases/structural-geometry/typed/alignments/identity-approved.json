@@ -124,14 +124,14 @@
     "id": "structural-typed-alignment",
     "version": "1"
   },
-  "artifactHash": "sha256:3f890c71a98509e423770ed3efbf01fa322e9a4ed57654e14b0674886e2ceb93",
+  "artifactHash": "sha256:713a6005c17e6662b3c70344e3fd44712ca027c1e82f3047065a032127e43142",
   "compatibility": {
     "basis": "approved-mapping",
     "reasons": [],
     "state": "compatible"
   },
   "mapping": {
-    "artifactHash": "sha256:d48848fddd57dbea85c5a953deed42464fad956cc95c0ac794aa519707f751a2",
+    "artifactHash": "sha256:d065ad013cca13ae78625e2705a965efea55d21e76a09cb073443530f165f054",
     "declaration": {
       "fields": {
         "causalDirectionIds": [
@@ -211,7 +211,7 @@
       },
       "id": "declared-identity",
       "reviewEvidence": {
-        "contentHash": "sha256:4cf69822741040f3dd0f91daae68355d1c712d6e8ee42afe43e57aab89a98cac",
+        "contentHash": "sha256:9d5f418ada0ab75b88b99007e8c9db07e8827c13f24de1b489bf114838dbcf9a",
         "reference": "cases/structural-geometry/typed/PROTOCOL.md"
       },
       "version": "1"
@@ -291,7 +291,7 @@
     "version": "1"
   },
   "request": {
-    "approvedMappingHash": "sha256:d48848fddd57dbea85c5a953deed42464fad956cc95c0ac794aa519707f751a2"
+    "approvedMappingHash": "sha256:d065ad013cca13ae78625e2705a965efea55d21e76a09cb073443530f165f054"
   },
   "schemaVersion": "1",
   "sources": {

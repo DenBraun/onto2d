@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   ["python3", ["-B", "cases/structural-geometry/canonical/reference.py", "--verify"]],
   [process.execPath, ["cases/structural-geometry/canonical/build.mjs", "--verify"]],
   ["python3", ["-B", "cases/structural-geometry/canonical/reference.py", "--verify-artifacts"]],
@@ -15,4 +14,4 @@ for (const [command, args] of [
   if (result.error) console.error(result.error.message);
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
-console.log("Canonical observation checks passed: independent graph partitions, source-bound witnesses, portable contracts and exact legacy compatibility.");
+console.log("Canonical observation checks passed: independent graph partitions, source-bound witnesses and portable contracts.");

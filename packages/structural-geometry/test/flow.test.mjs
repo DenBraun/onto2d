@@ -34,7 +34,7 @@ test("all frozen flow trajectories replay with independently reconstructed Netwo
       assert.ok(state.edges.every((e) => BigInt(e.length.numerator) > 0n));
     }
   }
-  assert.equal(states, 68); assert.equal(calculations, 1089);
+  assert.equal(states, 66); assert.equal(calculations, 1233);
 });
 
 test("published G(3,2) recurrence independently checks every step and three recovered groups", () => {

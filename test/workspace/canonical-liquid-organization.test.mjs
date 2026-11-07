@@ -231,9 +231,8 @@ test("actual author-upload text reading excludes unseen figures, unread primary 
   ]);
 });
 
-test("liquid scope admits neither universal self-organization nor crystal prerequisites, parent fractions or carrier thresholds", async () => {
+test("liquid scope admits neither universal self-organization nor crystal prerequisites, interaction fractions or a three-molecule threshold", async () => {
   const data = await source();
-  assert.equal(claim(data, synthesis).citations.find((ref) => ref.sourceId === "legacy-2").role, "provenance");
   for (const suffix of ["liquid-correlation-observable-boundary", "spce-water-reorientation-model",
     "skinner2013-water-context", "laage2006-water-context", "skinner-water-pair-order",
     "laage-water-reorientation", "liquid-organization-source-scope"]) assert.equal(role(data, suffix).instanceAdmission, "none");
@@ -250,13 +249,9 @@ test("liquid scope admits neither universal self-organization nor crystal prereq
       removeLimit(changed, synthesis, "does not require prior crystallization")],
     ["the selected water case does not require every liquid to be polar or hydrogen bonded", (changed) =>
       removeLimit(changed, synthesis, "every liquid is polar or hydrogen bonded")],
-    ["catalogue weights are not measured causal fractions", (changed) =>
-      removeLimit(changed, synthesis, "Original weights 0.4/0.35/0.25")],
-    ["three carriers are not a measured onset threshold", (changed) =>
-      removeLimit(changed, synthesis, "all N_min=N_crit=3")],
-    ["the SOMA classification is not a new measured physical carrier", (changed) =>
-      removeLimit(changed, synthesis, "SOMA higher-order pattern label")],
-    ["the original name does not measure all macroscopic liquid properties", (changed) =>
+    ["coordination, three-body switches and a finite simulation do not establish a three-molecule threshold", (changed) =>
+      removeLimit(changed, synthesis, "universal three-molecule threshold")],
+    ["the selected records do not measure viscosity, surface tension, dielectric response or transport", (changed) =>
       removeLimit(changed, synthesis, "Viscosity, surface tension, dielectric response and cooperative transport")],
     ["a literature-derived curve is not a locally reproduced physical instance", (changed) => {
       role(changed, "skinner-water-pair-order").instanceAdmission = "observed";

@@ -18,7 +18,7 @@ const resign = a => { const { artifactHash, ...body } = a; return { ...body, art
 test("signature composition preserves source/request bytes and embeds the exact prior response artifacts", async () => {
   const f = structuredClone(source("diamond-feedback-typed")), before = canonicalize(f);
   const a = run(f); assert.equal(canonicalize(f), before); frozen(a); frozen(STRUCTURAL_RESPONSE_SIGNATURE_POLICY);
-  for (const f of examples.slice(0, 16)) assert.deepEqual(get(f.id).evidence.responses, await readJson(`../responses/artifacts/${f.id}.json`));
+  for (const f of examples.slice(0, 15)) assert.deepEqual(get(f.id).evidence.responses, await readJson(`../responses/artifacts/${f.id}.json`));
   assert.deepEqual(a.evidence.responses.preparation, a.evidence.invariance.preparation);
   assert.equal(a.evidence.responses.preparation.regime.probeSets.response.execution, "none");
 });

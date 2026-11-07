@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 
-export const SOCIAL_LIMIT = "Source reconstruction is not independent scientific review, raw-data replay or experimental reproduction. Catalogue levels, weighted necessary parents, universal carrier minima, irreducibility and a unique social construction sequence are not established.";
+export const SOCIAL_LIMIT = "Source reconstruction is not independent scientific review, raw-data replay or experimental reproduction. Irreducibility and a unique social construction sequence are not established.";
 const unique = (values) => [...new Set(values)];
 const entityId = (id) => id.includes(":") ? id : `soc:${id}`;
 export function socialCitation(sourceId, locator, role = "supports", note = "Only the declared passage, population, preparation and observable support this statement; interpretation and extrapolation remain distinct.") {
@@ -10,7 +10,7 @@ export function socialCitation(sourceId, locator, role = "supports", note = "Onl
 /** Shared source/assay representation; scientific decisions reside in the topic modules. */
 export function createSocialRecords() {
   const records = Object.fromEntries(["sources", "entities", "claims", "relations", "studies", "comparisons", "readiness"].map((key) => [key, []]));
-  const CARD_SCOPES = [], sources = new Map(), studies = new Map(), findings = new Map();
+  const SCOPES = [], sources = new Map(), studies = new Map(), findings = new Map();
   function publication(p) {
     assert.ok(!sources.has(p.id), `Duplicate social publication ${p.id}`);
     const source = { id: p.id, kind: p.kind ?? "research-publication", title: p.title, authors: p.authors, year: p.year,
@@ -32,7 +32,7 @@ export function createSocialRecords() {
     assert.ok(!studies.has(p.id), `Duplicate social acquisition ${p.id}`);
     const publication = sources.get(p.sourceId);
     assert.ok(publication, `Register publication before study ${p.id}`);
-    const locators = p.locators ?? publication.source.review.locators;
+    const locators = p.locators ?? publication.source.review.locators.filter((locator) => locator !== "Bibliographic metadata");
     assert.ok(locators.every((locator) => publication.source.review.locators.includes(locator)), `Unread social preparation locator ${p.id}`);
     const limits = unique([publication.limit, ...(p.limitations ?? []), SOCIAL_LIMIT]);
     const record = { id: p.id, sourceId: p.sourceId, studyType: p.studyType ?? "primary-experiment",
@@ -86,32 +86,24 @@ export function createSocialRecords() {
         countingStatus: "unoperationalized", numericalAdmission: "none" } });
   }
   function comparison(p) { records.comparisons.push(p); }
-  function card(p) {
+  function topic(p) {
     const scopeClaim = `D-soc-${p.slug}-scope`, scopeNode = `soc:${p.slug}`;
-    const locator = `Card 7.${p.index} scope contract`;
-    const bibliography = p.bibliography.map((entry, sourceIndex) => ({ sourceIndex, ...entry }));
-    const citations = [socialCitation("legacy-7", `/${p.index}`, "provenance", "Original claims, bibliography and ordered proposed parents; catalogue assertions are not empirical support."),
-      socialCitation("social-systems-review", locator, "supports", "Internal topic representation and scoped decisions; empirical findings retain their original publication and preparation identities."),
-      ...bibliography.map((entry) => socialCitation(entry.sourceId, entry.locator ?? "Bibliographic metadata", "provenance", entry.reason))];
+    const locator = `Scope contract: ${p.name}`;
+    const citations = [socialCitation("social-systems-review", locator, "supports", "Internal topic representation and scoped decisions; empirical findings retain their original publication and preparation identities.")];
     const evidence = p.evidence ?? [], evidenceClaims = unique(evidence.flatMap((entry) => entry.claimIds));
-    const defaults = [...(p.excludedDefaults ?? []), "Original parent weights, carrier minima/critical values, phase/type assignments and universal necessary chains are not measured by the selected sources."];
-    const unresolved = p.unresolved ?? [], limits = unique([...defaults, ...unresolved, SOCIAL_LIMIT]);
+    const unresolved = p.unresolved ?? [], limits = unique([...(p.limits ?? []), ...unresolved, SOCIAL_LIMIT]);
     records.claims.push({ id: scopeClaim, kind: "author-definition", statement: p.scope,
-      scope: `Source card 7.${p.index}: declared definition and preparation-specific evidence, not a universal level or construction mechanism.`,
+      scope: "Declared definition and preparation-specific evidence, not a universal level or construction mechanism.",
       status: "definition", citations, checkIds: [], limitations: limits });
     addNode(p.slug, `${p.name}: reviewed scope`, "definition", p.scope, [scopeClaim, ...evidenceClaims],
-      [{ sourceId: "legacy-7", locator: `/${p.index}` }, { sourceId: "social-systems-review", locator }], limits, "definition");
+      [{ sourceId: "social-systems-review", locator }], limits, "definition");
     for (const entry of evidence) records.relations.push({ id: `social-systems:${entry.nodeId.replace(/:/g, "-")}-qualifies-${p.slug}`,
       source: entry.nodeId, target: scopeNode, kind: "descriptive", role: "definition-dependency",
       assertion: "This source-bound record qualifies the topic scope without converting a finding, null, model or hypothesis into a necessary physical dependency.",
       claimIds: unique([scopeClaim, ...entry.claimIds]) });
-    const decision = (entry, name) => Array.isArray(entry) ? { [name]: entry[0], disposition: entry[1], reason: entry[2], claimIds: unique([scopeClaim, ...(entry[3] ?? [])]) }
-      : { ...entry, claimIds: unique([scopeClaim, ...(entry.claimIds ?? [])]) };
-    CARD_SCOPES.push({ sourceIndex: p.index, code: `7.${p.index}`, originalName: p.name, scope: p.scope,
-      nodeIds: unique([scopeNode, ...evidence.map((entry) => entry.nodeId)]), claimIds: unique([scopeClaim, ...evidenceClaims]),
-      assertions: p.assertions.map((entry) => decision(entry, "topic")), parentDispositions: p.parents.map((entry) => decision(entry, "parentCode")),
-      bibliography, excludedDefaults: defaults, unresolved });
+    SCOPES.push({ id: scopeNode, name: p.name, scope: p.scope,
+      nodeIds: unique([scopeNode, ...evidence.map((entry) => entry.nodeId)]), claimIds: unique([scopeClaim, ...evidenceClaims]), unresolved });
   }
-  return { records, CARD_SCOPES, publication, study, observation, definition, operating, comparison, card,
+  return { records, SCOPES, publication, study, observation, definition, operating, comparison, topic,
     citation: socialCitation, sources, studies, findings };
 }

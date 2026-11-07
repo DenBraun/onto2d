@@ -90,7 +90,7 @@ test("cutoff elimination, renormalization scale, hard momentum and physical time
       edge(data, "threshold-matching", "effective-description-scope").assertion =
         "The beta function alone determines every threshold coefficient without matching inputs or boundary conditions.";
     }],
-    ["a universal necessary QFT parent replaces the reviewed cutoff construction", (data) => {
+    ["the general QFT framework replaces the reviewed cutoff construction", (data) => {
       edge(data, "wilsonian-effective-action", "effective-description-scope").source = "phys:quantum-field-framework";
     }]
   ]);
@@ -117,10 +117,8 @@ test("a Gaussian fixed-point illustration does not become evidence for all unive
   await rejects([
     ["marginal directions and finite universality assumptions disappear", (data) =>
       dropLimit(data, definition, "Marginal directions require higher-order analysis")],
-    ["a generic condensed-matter evidence placeholder regains empirical standing", (data) =>
+    ["an unselected condensed-matter acquisition or critical-exponent fit gains empirical standing", (data) =>
       dropLimit(data, definition, "No condensed-matter acquisition")],
-    ["unreviewed parent weights, minima and SOMA codes become quantitative", (data) =>
-      dropLimit(data, definition, "N_min=N_crit=1")],
     ["the fixed-point definition proves stable laws throughout physics", (data) => {
       edge(data, "fixed-point-scaling-fields", "effective-description-scope").assertion =
         "The Gaussian example proves every interacting universality class, its full basin and stable low-energy laws across physics.";

@@ -3,11 +3,11 @@
 Frozen on 2026-09-07 before comparison result generation. These are declared
 computational controls, not empirical ground truth or external review approval.
 
-Use the existing typed source fixtures and their verified Causal Emergence
-fragment. Add only the two three-node stars in `controls.json`, with uniform
-declared edge types. Do not change the earlier graph, dictionary, mapping,
-observation or reference files. Each pair lists the regimes tested before its
-outcome is computed. Source scopes retain all induced edges and isolates.
+Use the existing synthetic typed source fixtures. Add only the two three-node
+stars in `controls.json`, with uniform declared edge types. Do not change the
+earlier graph, dictionary, mapping, observation or reference files. Each pair
+lists the regimes tested before its outcome is computed. Source scopes retain
+all induced edges and isolates.
 
 Expected qualitative controls:
 
@@ -26,8 +26,6 @@ Expected qualitative controls:
   comparison coverage. Other comparable differences survive. All seven missing
   summary-use declarations produce 0/7 incomplete coverage, never equality.
 - A missing typed field and a rejection can coexist; preserve both reasons.
-- The unchanged real-source fragment contributes self and explicit unequal-scope
-  comparisons, without a cross-source scientific equivalence claim.
 
 Synthetic identity mappings explicitly pair code values 0, 1 and 2 and each
 role/necessity with itself. Renumbering and partial declarations reuse the old

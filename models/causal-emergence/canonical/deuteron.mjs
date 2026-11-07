@@ -25,7 +25,7 @@ const limits = [
   "Table 1 reports ratio corrections in ppt: image charge 82.1(4.1), relativity -2.9(1.2), magnetic 0.3(0.6), electrostatic <0.1(0.3), line shape 0(4.7), magnetron 0(0.4), total 79.6(6.5). The stated five-percent image-charge uncertainty is retained.",
   "The AWG replacement followed observed double-dip noise; the heating test did not detect a relevant effect. This is not proof that every generator-dependent systematic vanishes.",
   "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-  "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values.",
+  "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values.",
   "The HD+/C4+ acquisition uses one pair over seven weeks and different trapping voltages to match axial frequencies. It is not the common-voltage deuteron preparation.",
   "Extended Data Table 1 reports HD+ ratio correction 54.3(8.1) ppt, including polarization -18.5 ppt, image charge 73.8(3.7), relativity -1.1(0.5), magnetic 0.2(0.3), line shape 0(6.8) and magnetron 0(2.1).",
   "The local LIONTRAP adjustment fits the 2019 proton result, direct deuteron result and HD+ mass constraint. Its m_d/m_p=1.999007501228(59) is a quotient of adjusted masses, not the quotient of the two raw direct central values.",

@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   ["python3", ["-B", "cases/structural-geometry/typed/reference.py", "--verify"]],
   [process.execPath, ["cases/structural-geometry/typed/build.mjs", "--verify"]],
   ["python3", ["-B", "cases/structural-geometry/typed/reference.py", "--verify-artifacts"]],
@@ -15,4 +14,4 @@ for (const [command, args] of [
   if (result.error) console.error(result.error.message);
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
-console.log("Typed checks passed: joint-field matching, independent permutations, explicit vocabulary authority, portable contracts and legacy replay.");
+console.log("Typed checks passed: joint-field matching, independent permutations, explicit vocabulary authority and portable contracts.");

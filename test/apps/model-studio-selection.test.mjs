@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { createVerifiedModelPresentation } from "@onto2d/engine/presentation";
@@ -13,7 +12,7 @@ import {
 } from "../../apps/model-studio/model-selection.js";
 
 const entries = Object.freeze([
-  Object.freeze({ modelId: "causal-emergence", version: "2026.08.15" }),
+  Object.freeze({ modelId: "causal-emergence", version: "2026.11.05.0" }),
   Object.freeze({ modelId: "live-bootstrap-provenance", version: "v2-example" })
 ]);
 const REPOSITORY_ROOT = new URL("../../", import.meta.url);
@@ -52,8 +51,8 @@ test("location selection accepts only an exact registered model and version", ()
 test("switching models cannot reuse a node selection from another model", () => {
   const causalLocation = new URLSearchParams({
     model: "causal-emergence",
-    version: "2026.08.15",
-    node: "0.0",
+    version: "2026.11.05.0",
+    node: "l0:crt-node",
     depth: "2",
     direction: "parents"
   });
@@ -69,24 +68,25 @@ test("switching models cannot reuse a node selection from another model", () => 
     direction: "both"
   });
 
+  const causalNodes = new Set(["R-ensemble", "l0:crt-node"]);
   const causalState = requestedWorkspaceState(
     causalLocation,
     entries[0],
-    (id) => id === "0.0",
-    "0.0"
+    (id) => causalNodes.has(id),
+    "R-ensemble"
   );
   assert.deepEqual(causalState, {
-    focusId: "0.0",
+    focusId: "l0:crt-node",
     depth: 2,
     direction: "parents"
   });
 });
 
-test("the explicit Studio default survives registry canonical sorting and respects exact historical URLs", () => {
-  const preferred = { modelId: "causal-emergence", version: "2026.10.02.5" };
-  const sorted = [{ modelId: "airflow", version: "v1" }, entries[0], preferred];
+test("the explicit Studio default survives registry canonical sorting and respects exact URLs", () => {
+  const preferred = entries[0];
+  const sorted = [{ modelId: "airflow", version: "v1" }, preferred, entries[1]];
   assert.equal(requestedRegistryEntry(sorted, new URLSearchParams(), preferred), preferred);
-  assert.equal(requestedRegistryEntry(sorted, new URLSearchParams({ model: "causal-emergence", version: "2026.08.15" }), preferred), entries[0]);
+  assert.equal(requestedRegistryEntry(sorted, new URLSearchParams({ model: "live-bootstrap-provenance", version: "v2-example" }), preferred), entries[1]);
   assert.equal(requestedRegistryEntry(sorted, new URLSearchParams(), { modelId: "absent", version: "v1" }), sorted[0]);
 });
 
@@ -131,16 +131,5 @@ test("an invalid external pack is rejected before presentation", async () => {
   assert.throws(
     () => createVerifiedModelPresentation(pack, { resolution }),
     (error) => error.code === "MODEL_PACK_VERIFICATION_FAILED"
-  );
-});
-
-test("the causal release retains its pinned bytes after source relocation", async () => {
-  const bytes = await readFile(new URL(
-    "models/causal-emergence/releases/2026.08.15/bundle.json",
-    REPOSITORY_ROOT
-  ));
-  assert.equal(
-    createHash("sha256").update(bytes).digest("hex"),
-    "8aaf04c157d4b303f499d35516611fc9aa69aa8c9829621ca0dbb93de36e0c29"
   );
 });

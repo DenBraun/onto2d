@@ -290,7 +290,7 @@ const contracts = {
       "limitations": [
         "The underlying acquisition papers and imported neutron O-H, form-factor and comparison simulation sources were not separately read or replayed. They remain declared inputs to this reviewed reanalysis, not newly admitted independent studies.",
         "The four datasets share the reanalysis conventions and imported correction inputs. Their comparison is not four independent likelihoods for every final derived quantity.",
-        "Figure 10 compares all four datasets with Q_max=23,18,15.5,13 inverse angstrom for APS,SPring-8,SSRL1,SSRL2 respectively. Figure 11 and Table I use APS,SPring-8,SSRL1; SSRL2 is excluded there because of poorer useful Q range and step.",
+        "Figure 10 compares all four datasets with Q_max=23,18,15.5,13 inverse angstrom for APS, SPring-8, SSRL1, SSRL2 respectively. Figure 11 and Table I use APS, SPring-8, SSRL1; SSRL2 is excluded there because of poorer useful Q range and step.",
         "The text-rendered Table I gives Q_max footnotes 21.8 and 14.8 inverse angstrom, distinct from Figure 10 plotting cutoffs. The table typography and the apparent SPring-8 footnote/cutoff discrepancy were not checked visually or resolved; no common cutoff or inferred extended dataset is invented.",
         "Equation 14 estimates statistical input errors as twice neighboring S_OO(Q) differences. Normalization/calibration uncertainty and between-dataset variation are separate from those bars; no full covariance or universal one-sigma interpretation is reconstructed."
       ],
@@ -527,7 +527,7 @@ const contracts = {
       "id": "M-phys-liquid-organization-source-scope",
       "kind": "method",
       "statement": "Keep the common experimental spatial reanalysis separate from the finite computational dynamics study. Synthesize their positive evidence only at the level of statistical liquid structure and model-dependent reconfiguration, preserving temperatures, correction inputs, distance cutoffs, event endpoints and correlation ranks. Do not turn static pair order into a unique dynamic network, interpret model switches as measured molecular lifetimes, or assign macroscopic response merely from the liquid-organization name.",
-      "scope": "Two-context literature-synthesis method for complete original card /12.",
+      "scope": "Two-context literature-synthesis method.",
       "status": "method-contract",
       "citations": [
         {
@@ -589,12 +589,6 @@ const contracts = {
           "locator": "Published page 835, conclusion and Notes 21 and 27: conditional simulation support, experimental interpretation limits and distinction from unstable broken-bond endpoints",
           "role": "method",
           "note": "Actually read primary author-uploaded published-text passage; no new acquisition, raw-data fit or simulation replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original card /12 is catalogue provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
@@ -604,11 +598,9 @@ const contracts = {
         "Equilibrium statistical correlation does not by itself prove a driven nonequilibrium self-organization mechanism, universal collective coordination law or a new stable bounded entity.",
         "The selected liquid does not require prior crystallization. There is no necessary crystal-to-liquid causal stage or universal position between isolated motion and crystalline order derived from these two publications.",
         "Viscosity, surface tension, dielectric response and cooperative transport are original proposed consequences. They are not measured or quantitatively derived by the selected reanalysis and reorientation model. Referenced prior relaxation experiments are not imported as newly reviewed studies.",
-        "Original necessary parents 2.6 dispersion, 2.7 hydrogen bonds and 2.8 molecular polarization are relevant descriptions for particular liquids, not universal prerequisites proven here. The selected SPC/E model does not estimate their independent causal fractions or prove that every liquid is polar or hydrogen bonded.",
-        "Original weights 0.4/0.35/0.25, directions [2], modes [0,1]/[0,1]/[1], dependency type 10 and arising roles remain catalogue provenance without an admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, all N_min=N_crit=3 and null N_sat are catalogue defaults. The coordination integral, three-body switch illustration and finite 256-molecule simulation do not establish a universal three-molecule threshold, three hydrogen bonds or a minimum cluster lifetime.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2], established, MustCover [10], ShouldCover [9] and Optional [] are ontology/display choices. The SOMA higher-order pattern label is not an independently measured physical carrier or an additional causal law.",
-        "Generic statistical-mechanics/MD and scattering/spectroscopy/viscosity/diffusion/dynamic-structure evidence placeholders are replaced only by the actually read structural reanalysis and computational model. No separate dynamic-structure-factor experiment, spectroscopy acquisition or bulk transport measurement is invented.",
+        "Dispersion, hydrogen bonds and molecular polarization are relevant descriptions for particular liquids, not universal prerequisites proven here. The selected SPC/E model does not estimate their independent causal fractions or prove that every liquid is polar or hydrogen bonded.",
+        "The coordination integral, three-body switch illustration and finite 256-molecule simulation do not establish a universal three-molecule threshold, three hydrogen bonds or a minimum cluster lifetime.",
+        "Statistical-mechanics/MD and scattering/spectroscopy/viscosity/diffusion/dynamic-structure evidence is represented only by the actually read structural reanalysis and computational model. No separate dynamic-structure-factor experiment, spectroscopy acquisition or bulk transport measurement is invented.",
         "The two publications do not share a newly fitted model or jointly validate one unique network. The 2006 dynamics model was not calibrated against the later 2013 benchmark in this reconstruction.",
         "No new acquisition, full underlying-paper review, auxiliary-data download, raw-data refit, diffraction/window replay, molecular-dynamics execution, lifetime distribution, force-field fit or independent empirical reproduction is claimed."
       ],
@@ -621,7 +613,7 @@ const contracts = {
       "id": "C-phys-liquid-organization-source-scope",
       "kind": "review-finding",
       "statement": "The selected ambient-water X-ray reanalysis supports finite ensemble-averaged radial oxygen shell structure under the reported conditions. A separate rigid-SPC/E simulation and jump/frame model supports a specified picture of hydrogen-bond acceptor exchange and orientational reconfiguration with distinct correlation time scales. Together these provide bounded positive structural and dynamical descriptions of a liquid, while retaining the distinction between measured-derived spatial correlations and computational trajectories. They establish neither universal self-organization, uniquely observed networks, obligatory crystal precursors nor necessary dispersion/hydrogen-bond/dipole fractions for all liquids.",
-      "scope": "Literature synthesis of two distinct primary contexts with original /12 fully dispositioned.",
+      "scope": "Literature synthesis of two distinct primary contexts.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -683,12 +675,6 @@ const contracts = {
           "locator": "Published page 835, conclusion and Notes 21 and 27: conditional simulation support, experimental interpretation limits and distinction from unstable broken-bond endpoints",
           "role": "supports",
           "note": "Actually read primary author-uploaded published-text passage; no new acquisition, raw-data fit or simulation replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Complete original card /12 is catalogue provenance, not independent scientific evidence."
         }
       ],
       "checkIds": [],
@@ -698,11 +684,9 @@ const contracts = {
         "Equilibrium statistical correlation does not by itself prove a driven nonequilibrium self-organization mechanism, universal collective coordination law or a new stable bounded entity.",
         "The selected liquid does not require prior crystallization. There is no necessary crystal-to-liquid causal stage or universal position between isolated motion and crystalline order derived from these two publications.",
         "Viscosity, surface tension, dielectric response and cooperative transport are original proposed consequences. They are not measured or quantitatively derived by the selected reanalysis and reorientation model. Referenced prior relaxation experiments are not imported as newly reviewed studies.",
-        "Original necessary parents 2.6 dispersion, 2.7 hydrogen bonds and 2.8 molecular polarization are relevant descriptions for particular liquids, not universal prerequisites proven here. The selected SPC/E model does not estimate their independent causal fractions or prove that every liquid is polar or hydrogen bonded.",
-        "Original weights 0.4/0.35/0.25, directions [2], modes [0,1]/[0,1]/[1], dependency type 10 and arising roles remain catalogue provenance without an admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, all N_min=N_crit=3 and null N_sat are catalogue defaults. The coordination integral, three-body switch illustration and finite 256-molecule simulation do not establish a universal three-molecule threshold, three hydrogen bonds or a minimum cluster lifetime.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2], established, MustCover [10], ShouldCover [9] and Optional [] are ontology/display choices. The SOMA higher-order pattern label is not an independently measured physical carrier or an additional causal law.",
-        "Generic statistical-mechanics/MD and scattering/spectroscopy/viscosity/diffusion/dynamic-structure evidence placeholders are replaced only by the actually read structural reanalysis and computational model. No separate dynamic-structure-factor experiment, spectroscopy acquisition or bulk transport measurement is invented.",
+        "Dispersion, hydrogen bonds and molecular polarization are relevant descriptions for particular liquids, not universal prerequisites proven here. The selected SPC/E model does not estimate their independent causal fractions or prove that every liquid is polar or hydrogen bonded.",
+        "The coordination integral, three-body switch illustration and finite 256-molecule simulation do not establish a universal three-molecule threshold, three hydrogen bonds or a minimum cluster lifetime.",
+        "Statistical-mechanics/MD and scattering/spectroscopy/viscosity/diffusion/dynamic-structure evidence is represented only by the actually read structural reanalysis and computational model. No separate dynamic-structure-factor experiment, spectroscopy acquisition or bulk transport measurement is invented.",
         "The two publications do not share a newly fitted model or jointly validate one unique network. The 2006 dynamics model was not calibrated against the later 2013 benchmark in this reconstruction.",
         "No new acquisition, full underlying-paper review, auxiliary-data download, raw-data refit, diffraction/window replay, molecular-dynamics execution, lifetime distribution, force-field fit or independent empirical reproduction is claimed."
       ],
@@ -808,7 +792,7 @@ const contracts = {
       "openObligations": [
         "The underlying acquisition papers and imported neutron O-H, form-factor and comparison simulation sources were not separately read or replayed. They remain declared inputs to this reviewed reanalysis, not newly admitted independent studies.",
         "The four datasets share the reanalysis conventions and imported correction inputs. Their comparison is not four independent likelihoods for every final derived quantity.",
-        "Figure 10 compares all four datasets with Q_max=23,18,15.5,13 inverse angstrom for APS,SPring-8,SSRL1,SSRL2 respectively. Figure 11 and Table I use APS,SPring-8,SSRL1; SSRL2 is excluded there because of poorer useful Q range and step.",
+        "Figure 10 compares all four datasets with Q_max=23,18,15.5,13 inverse angstrom for APS, SPring-8, SSRL1, SSRL2 respectively. Figure 11 and Table I use APS, SPring-8, SSRL1; SSRL2 is excluded there because of poorer useful Q range and step.",
         "The text-rendered Table I gives Q_max footnotes 21.8 and 14.8 inverse angstrom, distinct from Figure 10 plotting cutoffs. The table typography and the apparent SPring-8 footnote/cutoff discrepancy were not checked visually or resolved; no common cutoff or inferred extended dataset is invented.",
         "Equation 14 estimates statistical input errors as twice neighboring S_OO(Q) differences. Normalization/calibration uncertainty and between-dataset variation are separate from those bars; no full covariance or universal one-sigma interpretation is reconstructed."
       ]
@@ -968,10 +952,6 @@ const contracts = {
         {
           "sourceId": "laage-hynes2006-water-reorientation",
           "locator": "Published page 835, conclusion and Notes 21 and 27: conditional simulation support, experimental interpretation limits and distinction from unstable broken-bond endpoints"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -980,11 +960,9 @@ const contracts = {
         "Equilibrium statistical correlation does not by itself prove a driven nonequilibrium self-organization mechanism, universal collective coordination law or a new stable bounded entity.",
         "The selected liquid does not require prior crystallization. There is no necessary crystal-to-liquid causal stage or universal position between isolated motion and crystalline order derived from these two publications.",
         "Viscosity, surface tension, dielectric response and cooperative transport are original proposed consequences. They are not measured or quantitatively derived by the selected reanalysis and reorientation model. Referenced prior relaxation experiments are not imported as newly reviewed studies.",
-        "Original necessary parents 2.6 dispersion, 2.7 hydrogen bonds and 2.8 molecular polarization are relevant descriptions for particular liquids, not universal prerequisites proven here. The selected SPC/E model does not estimate their independent causal fractions or prove that every liquid is polar or hydrogen bonded.",
-        "Original weights 0.4/0.35/0.25, directions [2], modes [0,1]/[0,1]/[1], dependency type 10 and arising roles remain catalogue provenance without an admitted causal estimator or universal necessity.",
-        "Original carrier group 1/type 0, all N_min=N_crit=3 and null N_sat are catalogue defaults. The coordination integral, three-body switch illustration and finite 256-molecule simulation do not establish a universal three-molecule threshold, three hydrogen bonds or a minimum cluster lifetime.",
-        "Original Level 2, Phase 2, TypeRole 2, Science [1,2], established, MustCover [10], ShouldCover [9] and Optional [] are ontology/display choices. The SOMA higher-order pattern label is not an independently measured physical carrier or an additional causal law.",
-        "Generic statistical-mechanics/MD and scattering/spectroscopy/viscosity/diffusion/dynamic-structure evidence placeholders are replaced only by the actually read structural reanalysis and computational model. No separate dynamic-structure-factor experiment, spectroscopy acquisition or bulk transport measurement is invented.",
+        "Dispersion, hydrogen bonds and molecular polarization are relevant descriptions for particular liquids, not universal prerequisites proven here. The selected SPC/E model does not estimate their independent causal fractions or prove that every liquid is polar or hydrogen bonded.",
+        "The coordination integral, three-body switch illustration and finite 256-molecule simulation do not establish a universal three-molecule threshold, three hydrogen bonds or a minimum cluster lifetime.",
+        "Statistical-mechanics/MD and scattering/spectroscopy/viscosity/diffusion/dynamic-structure evidence is represented only by the actually read structural reanalysis and computational model. No separate dynamic-structure-factor experiment, spectroscopy acquisition or bulk transport measurement is invented.",
         "The two publications do not share a newly fitted model or jointly validate one unique network. The 2006 dynamics model was not calibrated against the later 2013 benchmark in this reconstruction.",
         "No new acquisition, full underlying-paper review, auxiliary-data download, raw-data refit, diffraction/window replay, molecular-dynamics execution, lifetime distribution, force-field fit or independent empirical reproduction is claimed."
       ]
@@ -1204,7 +1182,7 @@ const contracts = {
       "limitations": [
         "The underlying acquisition papers and imported neutron O-H, form-factor and comparison simulation sources were not separately read or replayed. They remain declared inputs to this reviewed reanalysis, not newly admitted independent studies.",
         "The four datasets share the reanalysis conventions and imported correction inputs. Their comparison is not four independent likelihoods for every final derived quantity.",
-        "Figure 10 compares all four datasets with Q_max=23,18,15.5,13 inverse angstrom for APS,SPring-8,SSRL1,SSRL2 respectively. Figure 11 and Table I use APS,SPring-8,SSRL1; SSRL2 is excluded there because of poorer useful Q range and step.",
+        "Figure 10 compares all four datasets with Q_max=23,18,15.5,13 inverse angstrom for APS, SPring-8, SSRL1, SSRL2 respectively. Figure 11 and Table I use APS, SPring-8, SSRL1; SSRL2 is excluded there because of poorer useful Q range and step.",
         "The text-rendered Table I gives Q_max footnotes 21.8 and 14.8 inverse angstrom, distinct from Figure 10 plotting cutoffs. The table typography and the apparent SPring-8 footnote/cutoff discrepancy were not checked visually or resolved; no common cutoff or inferred extended dataset is invented.",
         "Equation 14 estimates statistical input errors as twice neighboring S_OO(Q) differences. Normalization/calibration uncertainty and between-dataset variation are separate from those bars; no full covariance or universal one-sigma interpretation is reconstructed.",
         "The parenthesized errors are the publication estimates with statistical and expected normalization/calibration contributions. No new confidence level, raw-data covariance fit or precision beyond the source is assigned.",
@@ -1223,7 +1201,7 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1063/1.4790861",
-      "correctionCheck": "Actually read the declared published-page body passages and figure/table captions in the published-text copy uploaded by author Lawrie Skinner. Figures were not visually inspected, the publisher PDF was not obtained, and the supplement/numerical data were not downloaded. The exact analytical mapping was read as text but no full symbolic or raw-data replay is claimed. Selected Section III preparation and Figure 2 caption were read, not every apparatus paragraph in that section. Underlying acquisition/form-factor/neutron/comparison-model publications were not separately read. Publisher identity and Crossref metadata verified: JCP138(7),074506, online20 February2013 (print metadata21 February2013). No update-to/correction relation in the checked Crossref record and no linked correction found in the bounded DOI/title primary-record search; not an exhaustive absence claim."
+      "correctionCheck": "Actually read the declared published-page body passages and figure/table captions in the published-text copy uploaded by author Lawrie Skinner. Figures were not visually inspected, the publisher PDF was not obtained, and the supplement/numerical data were not downloaded. The exact analytical mapping was read as text but no full symbolic or raw-data replay is claimed. Selected Section III preparation and Figure 2 caption were read, not every apparatus paragraph in that section. Underlying acquisition/form-factor/neutron/comparison-model publications were not separately read. Publisher identity and Crossref metadata verified: JCP 138(7), 074506, online 20 February 2013 (print metadata 21 February 2013). No update-to/correction relation in the checked Crossref record and no linked correction found in the bounded DOI/title primary-record search; not an exhaustive absence claim."
     },
     {
       "id": "laage2006-water-dynamics",
@@ -1257,29 +1235,11 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1126/science.1122154",
-      "correctionCheck": "Read the complete scientific body on published pages832-835, Equations1-3 as text, Figures1-4/Table1 captions and entries, and selected Notes21/27 in the published-text copy uploaded by coauthor James Hynes. Figures were not visually inspected and the exact printed equation typography was not checked from an obtained PDF; no unverified closed-form jump formula is admitted. Exclude the unrelated turbulent-flow article following on page835. Publisher PDF and raw trajectories not obtained; no simulation/correlation replay or separately reviewed earlier experimental datasets. Crossref/published copy metadata agree on Science311(5762),832-835, issue10 February2006 and body says online26 January2006. Crossref has-review relation is an external appraisal, not a correction. No update-to/correction relation or explicit linked erratum found in the bounded check; not an exhaustive absence claim."
+      "correctionCheck": "Read the complete scientific body on published pages 832-835, Equations 1-3 as text, Figures 1-4/Table 1 captions and entries, and selected Notes 21/27 in the published-text copy uploaded by coauthor James Hynes. Figures were not visually inspected and the exact printed equation typography was not checked from an obtained PDF; no unverified closed-form jump formula is admitted. Exclude the unrelated turbulent-flow article following on page 835. Publisher PDF and raw trajectories not obtained; no simulation/correlation replay or separately reviewed earlier experimental datasets. Crossref/published copy metadata agree on Science 311(5762), 832-835, issue 10 February 2006 and body says online 26 January 2006. Crossref has-review relation is an external appraisal, not a correction. No update-to/correction relation or explicit linked erratum found in the bounded check; not an exhaustive absence claim."
     }
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "skinner2013-water-pair-distribution",
       "kind": "research-publication",
@@ -1307,7 +1267,7 @@ const contracts = {
           "Published pages 074506-9 to 074506-11, Section VI Equations 14-15, Figures 9-11 captions and Table I: statistical/systematic uncertainty, three-dataset comparison, recommended peak and cutoff-dependent coordination",
           "Published page 074506-11, Section VII: finite-range ambient-water pair-correlation conclusions and supplementary-data statement"
         ],
-        "limit": "Actually read the declared published-page body passages and figure/table captions in the published-text copy uploaded by author Lawrie Skinner. Figures were not visually inspected, the publisher PDF was not obtained, and the supplement/numerical data were not downloaded. The exact analytical mapping was read as text but no full symbolic or raw-data replay is claimed. Selected Section III preparation and Figure 2 caption were read, not every apparatus paragraph in that section. Underlying acquisition/form-factor/neutron/comparison-model publications were not separately read. Publisher identity and Crossref metadata verified: JCP138(7),074506, online20 February2013 (print metadata21 February2013). No update-to/correction relation in the checked Crossref record and no linked correction found in the bounded DOI/title primary-record search; not an exhaustive absence claim."
+        "limit": "Actually read the declared published-page body passages and figure/table captions in the published-text copy uploaded by author Lawrie Skinner. Figures were not visually inspected, the publisher PDF was not obtained, and the supplement/numerical data were not downloaded. The exact analytical mapping was read as text but no full symbolic or raw-data replay is claimed. Selected Section III preparation and Figure 2 caption were read, not every apparatus paragraph in that section. Underlying acquisition/form-factor/neutron/comparison-model publications were not separately read. Publisher identity and Crossref metadata verified: JCP 138(7), 074506, online 20 February 2013 (print metadata 21 February 2013). No update-to/correction relation in the checked Crossref record and no linked correction found in the bounded DOI/title primary-record search; not an exhaustive absence claim."
       }
     },
     {
@@ -1331,7 +1291,7 @@ const contracts = {
           "Published pages 833-834, Equations 1-3, Figure 4 caption and Table 1: absorbing-condition switch correlation, jump/frame model, orientational correlation ranks and distinct relaxation times",
           "Published page 835, conclusion and Notes 21 and 27: conditional simulation support, experimental interpretation limits and distinction from unstable broken-bond endpoints"
         ],
-        "limit": "Read the complete scientific body on published pages832-835, Equations1-3 as text, Figures1-4/Table1 captions and entries, and selected Notes21/27 in the published-text copy uploaded by coauthor James Hynes. Figures were not visually inspected and the exact printed equation typography was not checked from an obtained PDF; no unverified closed-form jump formula is admitted. Exclude the unrelated turbulent-flow article following on page835. Publisher PDF and raw trajectories not obtained; no simulation/correlation replay or separately reviewed earlier experimental datasets. Crossref/published copy metadata agree on Science311(5762),832-835, issue10 February2006 and body says online26 January2006. Crossref has-review relation is an external appraisal, not a correction. No update-to/correction relation or explicit linked erratum found in the bounded check; not an exhaustive absence claim."
+        "limit": "Read the complete scientific body on published pages 832-835, Equations 1-3 as text, Figures 1-4/Table 1 captions and entries, and selected Notes 21/27 in the published-text copy uploaded by coauthor James Hynes. Figures were not visually inspected and the exact printed equation typography was not checked from an obtained PDF; no unverified closed-form jump formula is admitted. Exclude the unrelated turbulent-flow article following on page 835. Publisher PDF and raw trajectories not obtained; no simulation/correlation replay or separately reviewed earlier experimental datasets. Crossref/published copy metadata agree on Science 311(5762), 832-835, issue 10 February 2006 and body says online 26 January 2006. Crossref has-review relation is an external appraisal, not a correction. No update-to/correction relation or explicit linked erratum found in the bounded check; not an exhaustive absence claim."
       }
     }
   ]

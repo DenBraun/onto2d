@@ -59,24 +59,6 @@ export const CONDENSATE_LIPID_RECORDS = {
         ],
         "limit": "Read the complete actual primary main article pages 153-165 and complete PMC HTML, all seven figures, all three tables, Methods/References, plus the complete six-page publisher Supporting Information with all four figures and procedures. The university PDF adds a repository cover. Primary supplement identity is verified by ACS figshare DOI 10.1021/acssynbio.7b00265.s001 and file 9445870; original PMC files were unread HTML challenges. Exterkate identity: ACS Synthetic Biology 7(1):153-165, issue 19 January 2018, PMID 28922922, four authors. The original Exterkate PDF, Crossref and PMC give online 18 September 2017, whereas the current publisher metadata page reports 2 October 2017; retain this date-annotation difference without inventing a new publication or correction. Title/DOI/authors/issue identity agree. Crossref updates/relation fields and Europe PMC comments checked on 2026-10-20; No linked comment/correction was found there. Limited searches found no explicit linked correction; no exhaustive absence claim is made."
       }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
     }
   ],
   "claims": [
@@ -618,7 +600,7 @@ export const CONDENSATE_LIPID_RECORDS = {
     {
       "id": "C-bio-condensate-phase-separation-source-scope",
       "kind": "review-finding",
-      "statement": "Card 3.18 is qualified to supplied disordered Ddx4 terminal-region reversible demixing, qualitative tracer mobility and labeled-DNA partition in three distinct source preparations. No universal coacervate family, directly resolved fusion or fission mechanism, catalytic/metabolic benefit, measured solvent ordering or first protocellular compartment follows. Original protein-folding, enzyme-catalysis and prior metabolic-compartment necessities are not established.",
+      "statement": "The admitted scope is supplied disordered Ddx4 terminal-region reversible demixing, qualitative tracer mobility and labeled-DNA partition in three distinct source preparations. No universal coacervate family, directly resolved fusion or fission mechanism, catalytic/metabolic benefit, measured solvent ordering or first protocellular compartment follows. Protein-folding, enzyme-catalysis and prior metabolic-compartment necessities are not established.",
       "scope": "Only the source-defined finite preparation/observable or its explicit interpretation boundary.",
       "status": "publication-supported",
       "citations": [
@@ -661,10 +643,8 @@ export const CONDENSATE_LIPID_RECORDS = {
         "Cellular cold/osmotic response, methylated/splice/charge/aromatic variants and genome enrichment were read but are not new admitted assay contexts. Cellular osmotic changes alter volume/concentration and environment together; sequence/general-mechanism hypotheses do not become universal proof for all condensates.",
         "The admitted thermal, FRAP and DNA-partition contexts do not directly resolve fusion or fission dynamics, transfer/exchange rates for every component or one unique intermolecular/solvent mechanism. No direct catalytic reaction modulation, metabolic throughput/benefit, universal reaction sequestration, membrane-like selectivity, gradient maintenance, prebiotic coacervate ancestry or origin-of-life event is measured in the admitted contexts.",
         "Source fits, calibration and raw measurements are not independently reconstructed or reproduced.",
-        "Original level, phase, type-role, science arrays and scientific-status labels are catalogue declarations, not independent reproduction, universal ontological arising or identified event instances. All node instance admissions remain none.",
-        "Generic original Evidence paragraphs with null DOI/URL create no additional polymer-theory papers, microscopic-interaction measurements, coacervate families, permeability studies or lipidomics experiments.",
-        "Original weights, necessity, causal directions/modes, dependency types, ontological arising, carrier group/type, numerical minima/critical counts and null saturation are not measured effect fractions, universal gates or molecule-count laws.",
-        "The separate folding, enzyme-catalysis, metabolic-compartment and bulk-liquid studies are not matched necessary mediators of this preparation. N-terminal disorder without the helicase prevents a universal folding/catalysis ancestry inference. No original weights, critical molecule counts or biological-origin sequence is admitted."
+        "All node instance admissions remain none.",
+        "The separate folding, enzyme-catalysis, metabolic-compartment and bulk-liquid studies are not matched necessary mediators of this preparation. N-terminal disorder without the helicase prevents a universal folding/catalysis ancestry inference. No weights, critical molecule counts or biological-origin sequence is admitted."
       ],
       "contextIds": [
         "nott2015-ddx4-thermal-demixing",
@@ -827,7 +807,7 @@ export const CONDENSATE_LIPID_RECORDS = {
     {
       "id": "C-bio-lipid-biosynthesis-membrane-source-scope",
       "kind": "review-finding",
-      "statement": "Card 3.27 is qualified to externally supplied enzyme-mediated phospholipid production and finite changes of pre-existing liposomes. The source explicitly does not achieve de novo membrane formation with this pathway. Selective permeability, maintained gradients, localized competing metabolism, autonomous growth/division and universal boundary-generation ancestry remain outside admission.",
+      "statement": "The admitted scope is externally supplied enzyme-mediated phospholipid production and finite changes of pre-existing liposomes. The source explicitly does not achieve de novo membrane formation with this pathway. Selective permeability, maintained gradients, localized competing metabolism, autonomous growth/division and universal boundary-generation ancestry remain outside admission.",
       "scope": "Only the source-defined finite preparation/observable or its explicit interpretation boundary.",
       "status": "publication-supported",
       "citations": [
@@ -870,9 +850,7 @@ export const CONDENSATE_LIPID_RECORDS = {
         "The PA-divalent-cation/outer-leaflet imbalance/slow-flip-flop explanation is a source hypothesis. No direct leaflet-resolved synthesis, flip-flop kinetics, cation binding map, complete membrane retention, permeability/selectivity panel, electrochemical gradient or transport activity is measured here.",
         "The title continuous refers to CoA reuse and finite precursor conversion; the conclusion proposes a future continuously controlled feeding system. Finite time courses/endpoints and supplied doses do not demonstrate indefinite membrane production, balanced division, autonomous enzyme renewal or population self-reproduction.",
         "No universal efficiency/robustness benefit, compartmentalized competing metabolism, spontaneous origin sequence, adaptive regulation or required prior metabolic compartment is established.",
-        "Original level, phase, type-role, science arrays and scientific-status labels are catalogue declarations, not independent reproduction, universal ontological arising or identified event instances. All node instance admissions remain none.",
-        "Generic original Evidence paragraphs with null DOI/URL create no additional polymer-theory papers, microscopic-interaction measurements, coacervate families, permeability studies or lipidomics experiments.",
-        "Original weights, necessity, causal directions/modes, dependency types, ontological arising, carrier group/type, numerical minima/critical counts and null saturation are not measured effect fractions, universal gates or molecule-count laws.",
+        "All node instance admissions remain none.",
         "The separate folding, enzyme-catalysis, metabolic-compartment and bulk-liquid studies are not matched necessary mediators of this preparation. Mature enzymes and pre-existing lipids are supplied; no biosynthesis/folding origin, general metabolic efficiency, universal carrier threshold or unbounded continuous production is admitted."
       ],
       "contextIds": [
@@ -1279,7 +1257,7 @@ export const CONDENSATE_LIPID_RECORDS = {
       "id": "bio:condensate-phase-separation-source-scope",
       "name": "Finite Ddx4 condensate scope",
       "kind": "scoped-process",
-      "description": "Card 3.18 is qualified to supplied disordered Ddx4 terminal-region reversible demixing, qualitative tracer mobility and labeled-DNA partition in three distinct source preparations. No universal coacervate family, directly resolved fusion or fission mechanism, catalytic/metabolic benefit, measured solvent ordering or first protocellular compartment follows. Original protein-folding, enzyme-catalysis and prior metabolic-compartment necessities are not established.",
+      "description": "The admitted scope is supplied disordered Ddx4 terminal-region reversible demixing, qualitative tracer mobility and labeled-DNA partition in three distinct source preparations. No universal coacervate family, directly resolved fusion or fission mechanism, catalytic/metabolic benefit, measured solvent ordering or first protocellular compartment follows. Protein-folding, enzyme-catalysis and prior metabolic-compartment necessities are not established.",
       "claimIds": [
         "C-bio-condensate-phase-separation-source-scope",
         "M-bio-ddx4-condensate-interpretation-method"
@@ -1301,10 +1279,6 @@ export const CONDENSATE_LIPID_RECORDS = {
         {
           "sourceId": "nott2015-ddx4-demixing",
           "locator": "Published pages 936-947, complete primary main text, all seven figures/captions and main Experimental Procedures/References: prepared constructs, cellular versus in vitro scope, hypotheses and limits of generalization"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/18"
         }
       ],
       "openObligations": [
@@ -1320,10 +1294,8 @@ export const CONDENSATE_LIPID_RECORDS = {
         "Cellular cold/osmotic response, methylated/splice/charge/aromatic variants and genome enrichment were read but are not new admitted assay contexts. Cellular osmotic changes alter volume/concentration and environment together; sequence/general-mechanism hypotheses do not become universal proof for all condensates.",
         "The admitted thermal, FRAP and DNA-partition contexts do not directly resolve fusion or fission dynamics, transfer/exchange rates for every component or one unique intermolecular/solvent mechanism. No direct catalytic reaction modulation, metabolic throughput/benefit, universal reaction sequestration, membrane-like selectivity, gradient maintenance, prebiotic coacervate ancestry or origin-of-life event is measured in the admitted contexts.",
         "Source fits, calibration and raw measurements are not independently reconstructed or reproduced.",
-        "Original level, phase, type-role, science arrays and scientific-status labels are catalogue declarations, not independent reproduction, universal ontological arising or identified event instances. All node instance admissions remain none.",
-        "Generic original Evidence paragraphs with null DOI/URL create no additional polymer-theory papers, microscopic-interaction measurements, coacervate families, permeability studies or lipidomics experiments.",
-        "Original weights, necessity, causal directions/modes, dependency types, ontological arising, carrier group/type, numerical minima/critical counts and null saturation are not measured effect fractions, universal gates or molecule-count laws.",
-        "The separate folding, enzyme-catalysis, metabolic-compartment and bulk-liquid studies are not matched necessary mediators of this preparation. N-terminal disorder without the helicase prevents a universal folding/catalysis ancestry inference. No original weights, critical molecule counts or biological-origin sequence is admitted."
+        "All node instance admissions remain none.",
+        "The separate folding, enzyme-catalysis, metabolic-compartment and bulk-liquid studies are not matched necessary mediators of this preparation. N-terminal disorder without the helicase prevents a universal folding/catalysis ancestry inference. No weights, critical molecule counts or biological-origin sequence is admitted."
       ],
       "level": 3
     },
@@ -1471,7 +1443,7 @@ export const CONDENSATE_LIPID_RECORDS = {
       "id": "bio:lipid-biosynthesis-membrane-source-scope",
       "name": "Finite lipid biosynthesis and membrane scope",
       "kind": "scoped-process",
-      "description": "Card 3.27 is qualified to externally supplied enzyme-mediated phospholipid production and finite changes of pre-existing liposomes. The source explicitly does not achieve de novo membrane formation with this pathway. Selective permeability, maintained gradients, localized competing metabolism, autonomous growth/division and universal boundary-generation ancestry remain outside admission.",
+      "description": "The admitted scope is externally supplied enzyme-mediated phospholipid production and finite changes of pre-existing liposomes. The source explicitly does not achieve de novo membrane formation with this pathway. Selective permeability, maintained gradients, localized competing metabolism, autonomous growth/division and universal boundary-generation ancestry remain outside admission.",
       "claimIds": [
         "C-bio-lipid-biosynthesis-membrane-source-scope",
         "M-bio-lipid-membrane-interpretation-method"
@@ -1493,10 +1465,6 @@ export const CONDENSATE_LIPID_RECORDS = {
         {
           "sourceId": "exterkate2018-phospholipid-synthesis",
           "locator": "Published pages 153-165, complete primary main text, all seven figures/three tables/Methods/References; complete six-page Supporting Information including Figures S1-S4/procedures: source identity, supplied enzymes/pre-existing lipids, distinct pathway/preparation annotations and future continuous feeding"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/27"
         }
       ],
       "openObligations": [
@@ -1512,9 +1480,7 @@ export const CONDENSATE_LIPID_RECORDS = {
         "The PA-divalent-cation/outer-leaflet imbalance/slow-flip-flop explanation is a source hypothesis. No direct leaflet-resolved synthesis, flip-flop kinetics, cation binding map, complete membrane retention, permeability/selectivity panel, electrochemical gradient or transport activity is measured here.",
         "The title continuous refers to CoA reuse and finite precursor conversion; the conclusion proposes a future continuously controlled feeding system. Finite time courses/endpoints and supplied doses do not demonstrate indefinite membrane production, balanced division, autonomous enzyme renewal or population self-reproduction.",
         "No universal efficiency/robustness benefit, compartmentalized competing metabolism, spontaneous origin sequence, adaptive regulation or required prior metabolic compartment is established.",
-        "Original level, phase, type-role, science arrays and scientific-status labels are catalogue declarations, not independent reproduction, universal ontological arising or identified event instances. All node instance admissions remain none.",
-        "Generic original Evidence paragraphs with null DOI/URL create no additional polymer-theory papers, microscopic-interaction measurements, coacervate families, permeability studies or lipidomics experiments.",
-        "Original weights, necessity, causal directions/modes, dependency types, ontological arising, carrier group/type, numerical minima/critical counts and null saturation are not measured effect fractions, universal gates or molecule-count laws.",
+        "All node instance admissions remain none.",
         "The separate folding, enzyme-catalysis, metabolic-compartment and bulk-liquid studies are not matched necessary mediators of this preparation. Mature enzymes and pre-existing lipids are supplied; no biosynthesis/folding origin, general metabolic efficiency, universal carrier threshold or unbounded continuous production is admitted."
       ],
       "level": 3

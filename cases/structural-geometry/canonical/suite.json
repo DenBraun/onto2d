@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:41847476e59b38d8ba7cbb86ecd0f2ef25a0f6eb653754e164da87c304ff586d",
+  "artifactHash": "sha256:b8831b08cb79ee2eedd578cef20c5b4af067754e99d7841cb32f1e1cd9687e3f",
   "census": {
     "censusHash": "sha256:c0b16d97948fdf7e744d30bf70d4e0192791b7c99acbecbc4514902d99febd93",
     "rows": [
@@ -63,7 +63,7 @@
       ]
     ]
   },
-  "referenceHash": "sha256:84a521733078ae3b31a8b22409b826b3277558e1c32386e1cf368d09d6674848",
+  "referenceHash": "sha256:dbba54b1d6b3899b7f9c019755eef57ab03dbef4c7a815ac7e34b35841a51995",
   "relabelings": {
     "graph": "asymmetric-six",
     "permutations": 720
@@ -244,28 +244,6 @@
       },
       "nodes": 6,
       "valueHash": "sha256:0aa377b2721722ae1d16e0683aec8f0c7c8034d1cb9bc08718402197aa847086"
-    },
-    {
-      "artifactHash": "sha256:026e06fdd7b2828ddd4057752a00a9403acd1a45c60107b987cbbcc5b0bf0d17",
-      "edges": 11,
-      "file": "artifacts/causal-fragment.json",
-      "id": "causal-fragment",
-      "input": {
-        "regimeId": "canonical-structure-v1",
-        "scope": {
-          "kind": "induced",
-          "nodeIds": [
-            "0.0",
-            "0.1",
-            "0.2",
-            "0.3",
-            "0.4",
-            "0.5"
-          ]
-        }
-      },
-      "nodes": 6,
-      "valueHash": "sha256:0a8582cb2274a440b318ea3e12d3e32cba3141fcd91f2320e44e384fd4dcd30b"
     }
   ],
   "schemaVersion": "1",

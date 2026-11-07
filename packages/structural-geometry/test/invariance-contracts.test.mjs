@@ -62,7 +62,7 @@ test("missing typed observations cannot acquire values, empty reasons, full cove
   ]) { const a = structuredClone(original); mutate(a); assert.equal(validate("structuralInvarianceArtifact", a), false); }
 });
 
-test("browser execution reproduces and verifies all 13 exact payloads, mappings and measured artifacts", async () => {
+test("browser execution reproduces and verifies all 12 exact payloads, mappings and measured artifacts", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/invariance.js", import.meta.url))], bundle: true,
     platform: "browser", format: "iife", globalName: "Invariance", write: false, logLevel: "silent" });
   const output = runInNewContext(`${bundle.outputFiles[0].text}\nJSON.stringify(JSON.parse(fixturesText).map(({pack,input}, i) =>

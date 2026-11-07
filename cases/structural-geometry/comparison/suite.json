@@ -57,8 +57,8 @@
       "profiles": 2187
     }
   ],
-  "artifactHash": "sha256:77606c4547346199bd2d5bb8ab85c334bf49583510971938d9f360738af18386",
-  "referenceHash": "sha256:8d2ef28e4e6fdede169c028b5667627daae819c3b3d7fd481990b0f054f0d2b3",
+  "artifactHash": "sha256:dece7a3bdaeace630c4da3b3a6267d882c60a0067255df5e51eed658a44270a7",
+  "referenceHash": "sha256:cc6d578704e1204e623c9ef18aa6e35e2f0cfdfb6e9645c947570978a59c95d5",
   "runs": [
     {
       "artifactHash": "sha256:6791930c936fa14906ba41b9cc6c3ece440436b24251934a43dbdea811afc4d8",
@@ -123,7 +123,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:b6f5248de293f1b37bd75573fc9eb86e8b7e330c2738155c16058fb30a9cc0d6",
+      "artifactHash": "sha256:e8405e99da6027fac6503fbd2c7083783b2b903a12e25c61fb80b3a225f49040",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -219,7 +219,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:8e55e192ed17a72bdaed4023f74c63f201c51a8fc8181f6ceee3b2b31c7e07fe",
+      "artifactHash": "sha256:73a2e9af84851ef4e7c66e773c2f564b18e7be0ad21ff4b57a25ba42b46cb9fe",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -315,7 +315,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:f1aa0688337851645dd268a6d6b318e0248e00da0b638d566b4f59d3e00126e5",
+      "artifactHash": "sha256:ebeb0141f479c5fba748d5ddad02ab9485d6ba3a88542cb925afc31ec28f05e9",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -411,7 +411,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:926654628a7f1e69122cb4473caea72dbeb18262e260e89848db5ec96ea55229",
+      "artifactHash": "sha256:d3c27c8260e55b463a07e346a95d60cb03fbc79f56f3a0845e4885c73c93489f",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -507,7 +507,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:417ebe06d771e1b3e88320f29584a8a900f4665219aa076c3cbfd323c2efafb5",
+      "artifactHash": "sha256:fa3a9456982320d4dd8ed4cb729220055aeefafb38e202c122bf6a426a296433",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -604,7 +604,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:2769c9bf2bbe3de26fe46066b98a1ef4583af865b60292ea0df07004914abc83",
+      "artifactHash": "sha256:4854384810433869ff0e50b8c059aa17434499785adb64d093983d4172079a2f",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -700,7 +700,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:a5494ac98aeb40ef7c842177029cfbf96a74e540a0d1eecaac2467a96e1aab2e",
+      "artifactHash": "sha256:3d0a07efe1e7e7393e397baff862a0a33c9bfb1d7511fb50f31ea53d398904d4",
       "coverage": {
         "complete": false,
         "denominator": 2,
@@ -798,7 +798,7 @@
       "status": "distinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:26e2fbb7750d005536919ef8bfb59ef0d24e2f0bc231cced3e8b56f35836303c",
+      "artifactHash": "sha256:c16679d4e50b444583d331729c594f38ef37e51bdee00de726f7cc45864cb2c9",
       "coverage": {
         "complete": false,
         "denominator": 2,
@@ -930,200 +930,7 @@
       "status": "indeterminate"
     },
     {
-      "artifactHash": "sha256:b3a344ebb3942a5f6b287f8f5c1c10252fcbd22fab6ad5ac8a9f4d1b7be4edbf",
-      "coverage": {
-        "complete": true,
-        "denominator": 1,
-        "families": [
-          {
-            "denominator": 1,
-            "family": "structure",
-            "numerator": 1
-          }
-        ],
-        "numerator": 1
-      },
-      "diagnostics": {
-        "differentObservableIds": [],
-        "equalObservableIds": [
-          "canonical-directed-structure-v1"
-        ],
-        "incompleteObservableIds": []
-      },
-      "distance": 0,
-      "file": "artifacts/causal-self-canonical-structure-v1.json",
-      "id": "causal-self-canonical-structure-v1",
-      "pairId": "causal-self",
-      "regimeId": "canonical-structure-v1",
-      "status": "indistinguishable-under-regime"
-    },
-    {
-      "artifactHash": "sha256:f2f8972310a0c2c30ce4b1bb2fac2e63194c0d13b7af7342a0dc828569e8d1f9",
-      "coverage": {
-        "complete": true,
-        "denominator": 7,
-        "families": [
-          {
-            "denominator": 7,
-            "family": "topology",
-            "numerator": 7
-          }
-        ],
-        "numerator": 7
-      },
-      "diagnostics": {
-        "differentObservableIds": [],
-        "equalObservableIds": [
-          "node-count-v1",
-          "edge-count-v1",
-          "weak-component-sizes-v1",
-          "strong-component-sizes-v1",
-          "reachable-ordered-pair-count-v1",
-          "cyclic-node-count-v1",
-          "isolated-node-count-v1"
-        ],
-        "incompleteObservableIds": []
-      },
-      "distance": 0,
-      "file": "artifacts/causal-self-topology-only-v1.json",
-      "id": "causal-self-topology-only-v1",
-      "pairId": "causal-self",
-      "regimeId": "topology-only-v1",
-      "status": "indistinguishable-under-regime"
-    },
-    {
-      "artifactHash": "sha256:2df9b04c45a58462e62bdab6b3d1d3dcf3e8a0ec865a197391aba3263f786f76",
-      "coverage": {
-        "complete": true,
-        "denominator": 2,
-        "families": [
-          {
-            "denominator": 1,
-            "family": "structure",
-            "numerator": 1
-          },
-          {
-            "denominator": 1,
-            "family": "typed-relations",
-            "numerator": 1
-          }
-        ],
-        "numerator": 2
-      },
-      "diagnostics": {
-        "differentObservableIds": [],
-        "equalObservableIds": [
-          "canonical-directed-structure-v1",
-          "canonical-typed-directed-structure-v1"
-        ],
-        "incompleteObservableIds": []
-      },
-      "distance": 0,
-      "file": "artifacts/causal-self-typed-relations-v1.json",
-      "id": "causal-self-typed-relations-v1",
-      "pairId": "causal-self",
-      "regimeId": "typed-relations-v1",
-      "status": "indistinguishable-under-regime"
-    },
-    {
-      "artifactHash": "sha256:a89e03e2ceae99de11be08bbab435bdd976cb6e1c7751d2a6efd14ebebaa8a20",
-      "coverage": {
-        "complete": true,
-        "denominator": 1,
-        "families": [
-          {
-            "denominator": 1,
-            "family": "structure",
-            "numerator": 1
-          }
-        ],
-        "numerator": 1
-      },
-      "diagnostics": {
-        "differentObservableIds": [
-          "canonical-directed-structure-v1"
-        ],
-        "equalObservableIds": [],
-        "incompleteObservableIds": []
-      },
-      "distance": 1,
-      "file": "artifacts/causal-scopes-canonical-structure-v1.json",
-      "id": "causal-scopes-canonical-structure-v1",
-      "pairId": "causal-scopes",
-      "regimeId": "canonical-structure-v1",
-      "status": "distinguishable-under-regime"
-    },
-    {
-      "artifactHash": "sha256:50629d5d53e4907a4ef66e6222dccf24254ae4fb1599829dd781845574ad6065",
-      "coverage": {
-        "complete": true,
-        "denominator": 7,
-        "families": [
-          {
-            "denominator": 7,
-            "family": "topology",
-            "numerator": 7
-          }
-        ],
-        "numerator": 7
-      },
-      "diagnostics": {
-        "differentObservableIds": [
-          "node-count-v1",
-          "edge-count-v1",
-          "weak-component-sizes-v1",
-          "strong-component-sizes-v1",
-          "reachable-ordered-pair-count-v1"
-        ],
-        "equalObservableIds": [
-          "cyclic-node-count-v1",
-          "isolated-node-count-v1"
-        ],
-        "incompleteObservableIds": []
-      },
-      "distance": 1,
-      "file": "artifacts/causal-scopes-topology-only-v1.json",
-      "id": "causal-scopes-topology-only-v1",
-      "pairId": "causal-scopes",
-      "regimeId": "topology-only-v1",
-      "status": "distinguishable-under-regime"
-    },
-    {
-      "artifactHash": "sha256:ff1b059ca8acd7aeea2be7c148993e7beba701f0610f45ab297471a76520913a",
-      "coverage": {
-        "complete": true,
-        "denominator": 2,
-        "families": [
-          {
-            "denominator": 1,
-            "family": "structure",
-            "numerator": 1
-          },
-          {
-            "denominator": 1,
-            "family": "typed-relations",
-            "numerator": 1
-          }
-        ],
-        "numerator": 2
-      },
-      "diagnostics": {
-        "differentObservableIds": [
-          "canonical-directed-structure-v1",
-          "canonical-typed-directed-structure-v1"
-        ],
-        "equalObservableIds": [],
-        "incompleteObservableIds": []
-      },
-      "distance": 1,
-      "file": "artifacts/causal-scopes-typed-relations-v1.json",
-      "id": "causal-scopes-typed-relations-v1",
-      "pairId": "causal-scopes",
-      "regimeId": "typed-relations-v1",
-      "status": "distinguishable-under-regime"
-    },
-    {
-      "artifactHash": "sha256:5366ef40361523e0a3d620d997af2ecaf75c5897c099ed79ec1469ea0e5df87a",
+      "artifactHash": "sha256:9da985614775ee00bd98af957dddfb28f68c693ffc19446c8208c21306e60be2",
       "coverage": {
         "complete": true,
         "denominator": 2,
@@ -1157,7 +964,7 @@
       "status": "indistinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:c33d22b23ad6780cb1ea30be6f4123b5260b21c8dfab07e143ee179f3289c311",
+      "artifactHash": "sha256:3e80f53f9c53c068101a4bc5a7832441260d9bf02ce6ba4fa5c7091f518497b9",
       "coverage": {
         "complete": false,
         "denominator": 2,
@@ -1192,7 +999,7 @@
       "status": "indeterminate"
     },
     {
-      "artifactHash": "sha256:9b2f4c6409d170954ce21333e7abed7d8cc1c2cf32fc40833f88546cb31a2ebd",
+      "artifactHash": "sha256:01c986354310bd40df64f7cf52a01882184b8156e3945bb78b87f13f3578cbc8",
       "coverage": {
         "complete": false,
         "denominator": 2,
@@ -1296,7 +1103,7 @@
       "status": "distinguishable-under-regime"
     },
     {
-      "artifactHash": "sha256:c9654b7ab1f7d7d3de3a5948ccb3553c75b5851ea3b369a7b990dd0477e196d9",
+      "artifactHash": "sha256:0951b385b04ba3e4e1cfddbbc30c6e4aa22586b7b23c617d6eeeab70100b9f0e",
       "coverage": {
         "complete": false,
         "denominator": 7,
@@ -1331,7 +1138,7 @@
       "status": "indeterminate"
     },
     {
-      "artifactHash": "sha256:6533faa1d4da3fb8f0520a7db9e5000601f342ce2e319dd566ebbe788cb6d244",
+      "artifactHash": "sha256:192ee8f103e5506bb4ed23fbc0ed9db928ce5ddd1a97b397f3bdad8b94f46e2d",
       "coverage": {
         "complete": false,
         "denominator": 7,
@@ -1367,7 +1174,7 @@
       "status": "indeterminate"
     },
     {
-      "artifactHash": "sha256:c3ca810c2a915d09635d16c68ce5b8bafe49785e9defd0cc7efeecc693803fe9",
+      "artifactHash": "sha256:baec5073c997861f5ac132dcb61d8011e9eb70d2641657f012a2ec875b59f47a",
       "coverage": {
         "complete": false,
         "denominator": 7,
@@ -1401,7 +1208,7 @@
       "status": "indeterminate"
     },
     {
-      "artifactHash": "sha256:f1177b4db6079a78761ce6b71ba575da7358d179d16e389d34a61fd58586838f",
+      "artifactHash": "sha256:97b1c59d0fab79176b487a81dd51cd35df4e926e632b3a676a47e7ac0546f828",
       "coverage": {
         "complete": false,
         "denominator": 2,
@@ -1436,7 +1243,7 @@
       "status": "indeterminate"
     },
     {
-      "artifactHash": "sha256:937eef63ca7d5900056d28c984b1f4f62e20b03874908f82be1ca3084d7d1dfb",
+      "artifactHash": "sha256:28eae0316f7d81ff8564b0efc2005ee7c792f89b726837200f381ab40fed9e3a",
       "coverage": {
         "complete": false,
         "denominator": 2,

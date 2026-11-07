@@ -93,7 +93,7 @@ const reusedPhysicsStudies = [
       "Table 1 reports ratio corrections in ppt: image charge 82.1(4.1), relativity -2.9(1.2), magnetic 0.3(0.6), electrostatic <0.1(0.3), line shape 0(4.7), magnetron 0(0.4), total 79.6(6.5). The stated five-percent image-charge uncertainty is retained.",
       "The AWG replacement followed observed double-dip noise; the heating test did not detect a relevant effect. This is not proof that every generator-dependent systematic vanishes.",
       "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-      "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+      "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
     ],
     "readExtent": "full-author-manuscript",
     "reviewedLocators": [
@@ -125,7 +125,7 @@ const reusedPhysicsStudies = [
       "Table 1 reports ratio corrections in ppt: image charge 82.1(4.1), relativity -2.9(1.2), magnetic 0.3(0.6), electrostatic <0.1(0.3), line shape 0(4.7), magnetron 0(0.4), total 79.6(6.5). The stated five-percent image-charge uncertainty is retained.",
       "The AWG replacement followed observed double-dip noise; the heating test did not detect a relevant effect. This is not proof that every generator-dependent systematic vanishes.",
       "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-      "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+      "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
     ],
     "readExtent": "full-author-manuscript",
     "reviewedLocators": [
@@ -156,7 +156,7 @@ const reusedPhysicsStudies = [
       "Extended Data Table 1 reports HD+ ratio correction 54.3(8.1) ppt, including polarization -18.5 ppt, image charge 73.8(3.7), relativity -1.1(0.5), magnetic 0.2(0.3), line shape 0(6.8) and magnetron 0(2.1).",
       "The molecular mass balance m_HD=m_p+m_d+m_e-E_ion(HD+)/c^2 uses the total positive ionization energy relative to free nuclei and electron. The predicted/direct comparison shares mass-reference and theoretical inputs; it is not independent-facility validation.",
       "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-      "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+      "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
     ],
     "readExtent": "full-author-manuscript",
     "reviewedLocators": [
@@ -184,7 +184,7 @@ const reusedPhysicsStudies = [
       "This is a spin-averaged NRQED calculation with CODATA 2014 constants, not an energy measurement. Higher-order terms use adiabatic/Born-Oppenheimer approximations and hydrogen/LCAO estimates; the code and wavefunctions have not been replayed.",
       "The quoted (6) is theoretical uncertainty only. The table excludes the Rydberg relative uncertainty 5.9e-12 and describes a mass-ratio contribution below 1e-7 cm^-1. It is not a complete propagated uncertainty or a recalculation with CODATA 2018 constants.",
       "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-      "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+      "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
     ],
     "readExtent": "full-author-manuscript",
     "reviewedLocators": [
@@ -212,7 +212,7 @@ const reusedPhysicsStudies = [
       "The NRQED calculation uses CODATA 2014 constants and spin-averaged energies. The quoted uncertainty is theoretical; the separate Rydberg and mass-ratio uncertainties are excluded. Wavefunctions, higher-order approximations and code are not replayed.",
       "Use m_H2=2*m_p+m_e-E_ion(H2+)/c^2. Since both ions carry one positive charge, R=nu(H2+)/nu(D+)=m_d/m_H2. A reciprocal ratio or positive binding addition is a different equation.",
       "Published inferences retain their preparation, calibration and model assumptions. Source reading and central arithmetic do not reproduce acquisition, covariance or propagated uncertainty.",
-      "These records do not establish nucleon formation, intrinsic particle stability or universal carrier minima. Publication-date constants are not automatically current recommendations."
+      "These records do not establish nucleon formation or intrinsic particle stability. Publication-date constants are not automatically current recommendations."
     ],
     "readExtent": "full-author-manuscript",
     "reviewedLocators": [
@@ -308,7 +308,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
+        "Test mechanisms outside this scope and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -334,7 +334,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
+        "Test mechanisms outside this scope and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -356,16 +356,12 @@ const reusedEvidence = {
         {
           "sourceId": "hanssen2001",
           "locator": "Sections 2 and 4, pp. 3197-3200: sample, beam and measurement geometry"
-        },
-        {
-          "sourceId": "pope1997",
-          "locator": "Abstract"
         }
       ],
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
+        "Test mechanisms outside this scope and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -399,7 +395,7 @@ const reusedEvidence = {
       "openObligations": [
         "Complete the water-method and published-dispute review before numerical calibration.",
         "Select an angular scattering dataset and a bounded inverse/forward target before strengthening the scene-encoding claim.",
-        "Test the external-parent mechanisms and obtain matched optical/retinal evidence."
+        "Test mechanisms outside this scope and obtain matched optical/retinal evidence."
       ],
       "level": 2
     },
@@ -712,7 +708,7 @@ const reusedEvidence = {
         }
       ],
       "openObligations": [
-        "Neither the model algebra nor collider compatibility supplies a universal carrier minimum, a mandatory source-card ordering, all-mass origin, cosmic transition history or a proof of particle/composite stability."
+        "Neither the model algebra nor collider compatibility supplies all-mass origin, cosmic transition history or a proof of particle/composite stability."
       ]
     },
     {
@@ -768,7 +764,7 @@ const reusedEvidence = {
     {
       "id": "O-transmission",
       "kind": "review-finding",
-      "statement": "The same study reports aggregate transmission for specified window samples, with sample and geometry limits.",
+      "statement": "The Hanssen integrating-sphere study reports aggregate transmission for specified window samples, with sample and geometry limits.",
       "scope": "Scoped optical representation; no physical occurrence, universal necessity or numerical threshold admission.",
       "status": "publication-supported",
       "citations": [
@@ -956,7 +952,7 @@ const reusedEvidence = {
         "Muon and tau lifetimes are finite. An electron lifetime lower bound applies to its searched channel and statistical/response assumptions; it is not a measured infinite lifetime. No species result establishes a universal lifetime for all leptons.",
         "A field or flavor label is not a permanent classical identity across propagation and interactions. Chirality is distinct from massive-particle helicity; neutrino flavor/mass labels require their separately stated extension and evidence.",
         "The ordinary atomic example is an electron in the specified electromagnetic hydrogen bound-state description. The admitted hydrogen separation and approximate radiative model do not establish that all leptons build ordinary atoms, exclude other bound systems or reconstruct atom formation.",
-        "Quantization, gauge representation and renormalizable interactions do not prove stable individual carriers. The original 0.7/0.3 weights, necessary arising/maintenance, one-carrier minima and SOMA object classification have no scientific admission."
+        "Quantization, gauge representation and renormalizable interactions do not prove stable individual carriers."
       ]
     },
     {
@@ -1168,7 +1164,7 @@ const reusedEvidence = {
         "Extended Data Table 1 reports HD+ ratio correction 54.3(8.1) ppt, including polarization -18.5 ppt, image charge 73.8(3.7), relativity -1.1(0.5), magnetic 0.2(0.3), line shape 0(6.8) and magnetron 0(2.1).",
         "The molecular mass balance m_HD=m_p+m_d+m_e-E_ion(HD+)/c^2 uses the total positive ionization energy relative to free nuclei and electron. The predicted/direct comparison shares mass-reference and theoretical inputs; it is not independent-facility validation.",
         "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-        "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+        "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
       ],
       "contextIds": [
         "rau2020-hd"
@@ -1194,7 +1190,7 @@ const reusedEvidence = {
         "This is a spin-averaged NRQED calculation with CODATA 2014 constants, not an energy measurement. Higher-order terms use adiabatic/Born-Oppenheimer approximations and hydrogen/LCAO estimates; the code and wavefunctions have not been replayed.",
         "The quoted (6) is theoretical uncertainty only. The table excludes the Rydberg relative uncertainty 5.9e-12 and describes a mass-ratio contribution below 1e-7 cm^-1. It is not a complete propagated uncertainty or a recalculation with CODATA 2018 constants.",
         "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-        "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+        "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
       ],
       "contextIds": [
         "korobov2017-hd"
@@ -1244,7 +1240,7 @@ const reusedEvidence = {
         "The 2020 reference uses CODATA 2018 m_e=0.000548579909065(16) u, C-12(6+)=11.99670962641246(35) u and C-12(4+)=11.99780583927483(34) u. These differ from the 2019 reference. Neutral carbon-12 is exactly 12 u, but its ions are not.",
         "For the deuteron R=nu_c(C6+)/nu_c(d), m_d=R*m_C6/6; for HD+, R=nu_c(C4+)/nu_c(HD+), m_HD=R*m_C4/4. Charge factors and positive electronic ionization energies cannot be omitted.",
         "Reported mass values are conditional on the stated preparation, reference constants and correction model. Raw acquisition, original covariance and uncertainty propagation have not been independently reproduced.",
-        "These measurements and calculations do not establish nucleon formation, intrinsic stability or a universal carrier minimum. Historical constants are not present-day recommended values."
+        "These measurements and calculations do not establish nucleon formation or intrinsic stability. Historical constants are not present-day recommended values."
       ],
       "contextIds": [
         "rau2020-awg1",
@@ -1272,7 +1268,7 @@ const reusedEvidence = {
         "The NRQED calculation uses CODATA 2014 constants and spin-averaged energies. The quoted uncertainty is theoretical; the separate Rydberg and mass-ratio uncertainties are excluded. Wavefunctions, higher-order approximations and code are not replayed.",
         "Use m_H2=2*m_p+m_e-E_ion(H2+)/c^2. Since both ions carry one positive charge, R=nu(H2+)/nu(D+)=m_d/m_H2. A reciprocal ratio or positive binding addition is a different equation.",
         "Published inferences retain their preparation, calibration and model assumptions. Source reading and central arithmetic do not reproduce acquisition, covariance or propagated uncertainty.",
-        "These records do not establish nucleon formation, intrinsic particle stability or universal carrier minima. Publication-date constants are not automatically current recommendations."
+        "These records do not establish nucleon formation or intrinsic particle stability. Publication-date constants are not automatically current recommendations."
       ],
       "contextIds": [
         "korobov2017-h2"

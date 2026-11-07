@@ -1,18 +1,16 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
-import { canonicalClone, canonicalize, hashCanonical } from "@onto2d/kernel/canonical";
+import { canonicalClone, hashCanonical } from "@onto2d/kernel/canonical";
 import { DISTINGUISHABILITY_REGIMES, prepareStructuralRegime, verifyStructuralRegimePreparation } from "@onto2d/structural-geometry/regimes";
-import { directory, fixtures, readJson } from "./fixtures.mjs";
+import { directory, fixtures } from "./fixtures.mjs";
 
 const encoded = (value) => `${JSON.stringify(canonicalClone(value), null, 2)}\n`;
 export async function run({ write = false, report = false } = {}) {
   if (write && report) throw new Error("Choose write or verified report.");
   const outputs = [], runs = [];
-  const sourceLock = await readJson("../causal-emergence/source-lock.json");
   for (const f of await fixtures()) {
     const artifact = prepareStructuralRegime(f.pack, f.input);
     verifyStructuralRegimePreparation(artifact, f.pack, f.input);
-    if (f.id.endsWith("causal-fragment") && canonicalize(artifact.context.model) !== canonicalize(sourceLock)) throw new Error("Regime source lock differs.");
     const file = `artifacts/${f.id}.json`;
     outputs.push([file, encoded(artifact)]);
     runs.push({ id: f.id, file, input: f.input, artifactHash: artifact.artifactHash,
@@ -28,7 +26,7 @@ export async function run({ write = false, report = false } = {}) {
     else if (await readFile(new URL(file, directory), "utf8") !== bytes) throw new Error(`Regime contract replay differs: ${file}`);
   }
   if (report) console.table(runs.map(({ id, scopedNodes, scopedEdges, evaluation }) => ({ id, scopedNodes, scopedEdges, evaluation })));
-  console.log(`Regime contracts ${write ? "written" : "verified"}: 3 descriptors, 9 observable specs, 6 source-bound preparations; observations and comparisons not run.`);
+  console.log(`Regime contracts ${write ? "written" : "verified"}: 3 descriptors, 9 observable specs, ${runs.length} source-bound preparations; observations and comparisons not run.`);
   return suite;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

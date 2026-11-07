@@ -20,9 +20,10 @@ the separate reference generation and verification commands.
 
 ## Results and interpretation
 
-There are 27 artifacts: the 16 existing response sources plus 11 variants
-declared before signature evaluation. Twelve signatures are complete; 15 retain
-null whole values with explicit missing, rejected or absent-target evidence.
+There are 26 artifacts: the 15 existing synthetic response sources plus 11
+variants declared before signature evaluation. Twelve signatures are complete;
+14 retain null whole values with explicit missing, rejected or absent-target
+evidence.
 Complete individual features remain inspectable. The maximum upstream control
 performs 70 observations and 448 feature-component visits.
 
@@ -57,5 +58,5 @@ Transport tests check 393 small-graph topology bijections and all 72
 diamond-with-feedback regime/bijection combinations, plus four induced-scope,
 opaque-ID and missing-evidence cases. They compare every feature, reason and
 fingerprint while retaining different provenance. Browser verification rebuilds
-all 27 complete evidence composites. See the
+all 26 complete evidence composites. See the
 [acceptance review](../../../docs/structural-geometry/EVIDENCE.md).

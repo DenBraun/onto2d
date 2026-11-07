@@ -1,0 +1,2044 @@
+{
+  "analysis": {
+    "id": "structural-ollivier",
+    "version": "1"
+  },
+  "artifactHash": "sha256:2b355a3927848394a2c981aa135256d6e6936915d30475eb65efae30c3b63217",
+  "model": {
+    "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+    "modelId": "causal-emergence",
+    "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
+    "modelVersion": "2026.11.05.0"
+  },
+  "request": {
+    "analysis": {
+      "id": "structural-ollivier",
+      "version": "1"
+    },
+    "graph": {
+      "edges": [
+        {
+          "id": "bridge:compensation-discrete-scale",
+          "source": "l0:compensation",
+          "sourceRecordHash": "sha256:cd814822b3829f7de6b9013c4a6c9de143ae8731dc713174b75d18d6fa62c196",
+          "target": "l0:discrete-scale"
+        },
+        {
+          "id": "bridge:compensation-hyperbolic-frame",
+          "source": "l0:compensation",
+          "sourceRecordHash": "sha256:15816a82095e053b4ddcf905ddae94ff3b61af0009f1a791a82f74c905d91619",
+          "target": "l0:hyperbolic-frame"
+        },
+        {
+          "id": "bridge:compensation-oscillatory-mode",
+          "source": "l0:compensation",
+          "sourceRecordHash": "sha256:609d107a6dd2d5039d4f4cbc481f5b26be46926c1f1c4a0de7ff69ca39957dab",
+          "target": "l0:oscillatory-mode"
+        },
+        {
+          "id": "bridge:omega-compensation",
+          "source": "l0:omega",
+          "sourceRecordHash": "sha256:bc9f6242c537fdc577e64cdc3d2553896740314973c87e950fb6ed8298a105e2",
+          "target": "l0:compensation"
+        },
+        {
+          "id": "bridge:oscillatory-mode-discrete-scale",
+          "source": "l0:oscillatory-mode",
+          "sourceRecordHash": "sha256:bdf0b0359376e4c459bd060b02d8ec4874a412c6dcdadba7e4d58d79ce1ce321",
+          "target": "l0:discrete-scale"
+        },
+        {
+          "id": "description:N-action-domain",
+          "source": "l0:trial-field",
+          "sourceRecordHash": "sha256:dfdcb883ff81318e93917db745c8d2011ea19c7c851f961cad740701187558a9",
+          "target": "l0:quadratic-action"
+        },
+        {
+          "id": "description:N-density-domain",
+          "source": "l0:trial-field",
+          "sourceRecordHash": "sha256:5f38433411cf2faa13bc658b547087f96050244e08f21a2954c4829a2812ce47",
+          "target": "l0:local-density"
+        },
+        {
+          "id": "description:N-density-integral",
+          "source": "l0:local-density",
+          "sourceRecordHash": "sha256:992f5239e5819de4491de1d8943b7903d3000846021924ca4c9c0fb3923033ab",
+          "target": "l0:integrated-density"
+        },
+        {
+          "id": "description:distinction-sequential-axis",
+          "source": "l0:distinction",
+          "sourceRecordHash": "sha256:fd5121a08becd6b48f0303d7e75bc1e50754a36007e05df7a6be79eb377da760",
+          "target": "l0:sequential-axis"
+        },
+        {
+          "id": "description:distinction-spatial-axis",
+          "source": "l0:distinction",
+          "sourceRecordHash": "sha256:7291740ebce620eea0592c7d0c98d40df01aa8ad707d6fa849947ea2c87873b4",
+          "target": "l0:spatial-axis"
+        },
+        {
+          "id": "description:ensemble-synchronization",
+          "source": "l0:ensemble",
+          "sourceRecordHash": "sha256:1cd1a4af44cdf5ea4bcc277822d8158300b3dbf835b673ab5775b7e31c31fd6c",
+          "target": "l0:synchronization"
+        },
+        {
+          "id": "description:hyperbolic-frame-cohort-selection",
+          "source": "l0:hyperbolic-frame",
+          "sourceRecordHash": "sha256:661b8c1c4800ee3e93aef23f208860a62a10d099185c8ba6ec821ab173c20631",
+          "target": "l0:cohort-selection"
+        },
+        {
+          "id": "description:nonlinear-action-ensemble-action",
+          "source": "l0:nonlinear-action",
+          "sourceRecordHash": "sha256:7e2814cd4f7c270e7e1c388c4a03a4d7cc09cc7abd0ee3750981778b347c705b",
+          "target": "l0:ensemble-action"
+        },
+        {
+          "id": "description:omega-distinction",
+          "source": "l0:omega",
+          "sourceRecordHash": "sha256:b0f2970b7efb58d094cde4c9c7c0f58c1ceb73e4759b40edbc8d6a062a8f21e2",
+          "target": "l0:distinction"
+        },
+        {
+          "id": "description:omega-premetric-frame",
+          "source": "l0:omega",
+          "sourceRecordHash": "sha256:f95469218a3f3ff5caaccb7714c966d17a86af9fb8309ede2bd9e9c712ea73ff",
+          "target": "l0:premetric-frame"
+        },
+        {
+          "id": "description:oscillatory-mode-closure-parameter",
+          "source": "l0:oscillatory-mode",
+          "sourceRecordHash": "sha256:154ff7b08015b69dd93eb835e2d361652b2480a56ad9e518deedff6683e67d61",
+          "target": "l0:closure-parameter"
+        },
+        {
+          "id": "description:premetric-frame-sequential-axis",
+          "source": "l0:premetric-frame",
+          "sourceRecordHash": "sha256:e419600799e25435cefa7b51fceeaa26ab0cb457696d64b4454f39d1b14f72c5",
+          "target": "l0:sequential-axis"
+        },
+        {
+          "id": "description:premetric-frame-spatial-axis",
+          "source": "l0:premetric-frame",
+          "sourceRecordHash": "sha256:2bcc718b29197c1d12104e02cfc7f238c84595263078b1209bbb8b81695906fd",
+          "target": "l0:spatial-axis"
+        },
+        {
+          "id": "description:quadratic-action-closure-parameter",
+          "source": "l0:quadratic-action",
+          "sourceRecordHash": "sha256:2ac3b267fc8a055a632b08f4e7a7d84eeecbd4fdde83096d17c5c6263bbc3a5f",
+          "target": "l0:closure-parameter"
+        },
+        {
+          "id": "description:quadratic-action-nonlinear-action",
+          "source": "l0:quadratic-action",
+          "sourceRecordHash": "sha256:27491d8492f65030b805274158844dcd2473f18b8c381ea98e0cd24f0e294417",
+          "target": "l0:nonlinear-action"
+        },
+        {
+          "id": "description:sequential-axis-quadratic-action",
+          "source": "l0:sequential-axis",
+          "sourceRecordHash": "sha256:9faa4e87d86299b1bbc74d2949143846149db83ba99aa7850c361773db94b187",
+          "target": "l0:quadratic-action"
+        },
+        {
+          "id": "description:spatial-axis-quadratic-action",
+          "source": "l0:spatial-axis",
+          "sourceRecordHash": "sha256:2e3bca9947419944a65587bceea4ef75cb3f30fe4a3637c4fded0954427cb95d",
+          "target": "l0:quadratic-action"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "l0:anisotropy",
+          "sourceRecordHash": "sha256:07f20096d399cc8c734cbf4c0dbf43194a39c280b42d5b80fb434c3dd1578952"
+        },
+        {
+          "id": "l0:carrier-promotion",
+          "sourceRecordHash": "sha256:174eb504df1fb148d7454878a63a6f98ef12c98cd44948584871282e4296ecb7"
+        },
+        {
+          "id": "l0:closure-parameter",
+          "sourceRecordHash": "sha256:a8855d598f8a38ff9eaed160ab1091c48f0f46914cfcb11fbef653ebf0748329"
+        },
+        {
+          "id": "l0:cohort-selection",
+          "sourceRecordHash": "sha256:4b854bdf3cbfb7a3dbb3cae12dcc8822ec5410eba06716e70ac8caafba42d8b3"
+        },
+        {
+          "id": "l0:compensation",
+          "sourceRecordHash": "sha256:7749afa288b63b408494c7b906f4e99495736c9d094b6a8128418e4672c6be27"
+        },
+        {
+          "id": "l0:crt-node",
+          "sourceRecordHash": "sha256:9d3cf1b3c2336b0a1fc5856316f8b3cbb02d026e3fb33ea3e4370f71a290ed19"
+        },
+        {
+          "id": "l0:deformation",
+          "sourceRecordHash": "sha256:23d9b7ea1afee6e85ee2a228d5f66ef1602996d7f8efc3c95f743bdb120a4abd"
+        },
+        {
+          "id": "l0:directional-gradient",
+          "sourceRecordHash": "sha256:40288594b3fdc70fa60cfc7250ebd8feefce6d1a33445021fc09e7ac9131a5c4"
+        },
+        {
+          "id": "l0:discrete-scale",
+          "sourceRecordHash": "sha256:b0015a719c6b1c6d7cce7b2fda23777d1e0f49cf10e9a858c83871b49c15e006"
+        },
+        {
+          "id": "l0:distinction",
+          "sourceRecordHash": "sha256:3223b4a91460c81e2527dedafb721576150320d690b9827d5348e80c19f56100"
+        },
+        {
+          "id": "l0:ensemble",
+          "sourceRecordHash": "sha256:6764a59928bcf32e678d3e65da6f9eed213e0a8beb473d5634d7a52c78fac6c6"
+        },
+        {
+          "id": "l0:ensemble-action",
+          "sourceRecordHash": "sha256:37ef9c31c0c2afde5ba7ee3d9af042455010fca57e11215ed744675b634377d3"
+        },
+        {
+          "id": "l0:ensemble-quantum",
+          "sourceRecordHash": "sha256:4989067c8b789c771ed5ad74adad98c49ac1ff89d99eb4827fa3f3d271ad0292"
+        },
+        {
+          "id": "l0:hyperbolic-frame",
+          "sourceRecordHash": "sha256:b87996bb6d8ae4cfd7b68c1b09408417f970e722c56f8812fca916e9668b0f2e"
+        },
+        {
+          "id": "l0:integrated-density",
+          "sourceRecordHash": "sha256:cd177ba2e37187810220f5b323bd43319e9b8f26d847e6b5fb4d5394a0704ab9"
+        },
+        {
+          "id": "l0:local-density",
+          "sourceRecordHash": "sha256:c78d6a33c52ff53db502df16c4f50341be35fcfef1c6362c23e12ed71ab97b27"
+        },
+        {
+          "id": "l0:nonlinear-action",
+          "sourceRecordHash": "sha256:b5d167b1f6210002e1652f8c0b6e26232928ad25df0047eb50d691ac9a36d021"
+        },
+        {
+          "id": "l0:omega",
+          "sourceRecordHash": "sha256:cf7efbd5db1105557cb0a938d21be2128e8f499ba8a70552a790d2ddf1eb91f4"
+        },
+        {
+          "id": "l0:oscillatory-mode",
+          "sourceRecordHash": "sha256:23ffaf3a7966f7983e6b0e75ec63b02604de53b54aaab63bb63dbe400dfda338"
+        },
+        {
+          "id": "l0:premetric-frame",
+          "sourceRecordHash": "sha256:14cef20f10a791dc899c73572d7a13b6fcf8a709c256b8aab75ce5abe1c0f71c"
+        },
+        {
+          "id": "l0:quadratic-action",
+          "sourceRecordHash": "sha256:6996ade88420c1ea7ee3a98150abbf603babce4c9e2e4386073ef73b1c62aa83"
+        },
+        {
+          "id": "l0:sequential-axis",
+          "sourceRecordHash": "sha256:48196ea6d7bbb73bfedf3b6b2715c3f0b53655229e24ccc145d4df49367907de"
+        },
+        {
+          "id": "l0:spatial-axis",
+          "sourceRecordHash": "sha256:96c6832356c37a2d533ba7c115d47eb2992be648074bcac5c31d4e04744c0816"
+        },
+        {
+          "id": "l0:synchronization",
+          "sourceRecordHash": "sha256:5f8860f23f12992d100ab4cfca2c0bddb2052482b3b2bc28b60fd7606531feca"
+        },
+        {
+          "id": "l0:transport-bias",
+          "sourceRecordHash": "sha256:9184751cc9e89d1f23b6bd362a90cef4edc9692a2a0c8d6a2f00a5ed2a8548d5"
+        },
+        {
+          "id": "l0:triad-configuration",
+          "sourceRecordHash": "sha256:657eff070bdfe5fb9b8851f3196ad6f34d49fa2e3a579543732157f897503132"
+        },
+        {
+          "id": "l0:triadic-closure",
+          "sourceRecordHash": "sha256:3eb3dcaa3c4b44845b86ded4e90cf4f201a2e0a164d6cb615f82588fc83e34ba"
+        },
+        {
+          "id": "l0:trial-field",
+          "sourceRecordHash": "sha256:be66cdc5858715d358b7ad602ab621dab8540e4b1a1a93a21737cd9b3831b1b1"
+        }
+      ]
+    },
+    "model": {
+      "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+      "modelId": "causal-emergence",
+      "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
+      "modelVersion": "2026.11.05.0"
+    },
+    "parameters": {
+      "edgeIds": [
+        "bridge:compensation-discrete-scale",
+        "bridge:compensation-hyperbolic-frame",
+        "bridge:compensation-oscillatory-mode",
+        "bridge:omega-compensation",
+        "bridge:oscillatory-mode-discrete-scale",
+        "description:N-action-domain",
+        "description:N-density-domain",
+        "description:N-density-integral",
+        "description:distinction-sequential-axis",
+        "description:distinction-spatial-axis",
+        "description:ensemble-synchronization",
+        "description:hyperbolic-frame-cohort-selection",
+        "description:nonlinear-action-ensemble-action",
+        "description:omega-distinction",
+        "description:omega-premetric-frame",
+        "description:oscillatory-mode-closure-parameter",
+        "description:premetric-frame-sequential-axis",
+        "description:premetric-frame-spatial-axis",
+        "description:quadratic-action-closure-parameter",
+        "description:quadratic-action-nonlinear-action",
+        "description:sequential-axis-quadratic-action",
+        "description:spatial-axis-quadratic-action"
+      ],
+      "idleness": "half",
+      "scope": {
+        "kind": "induced",
+        "nodeIds": [
+          "l0:anisotropy",
+          "l0:carrier-promotion",
+          "l0:closure-parameter",
+          "l0:cohort-selection",
+          "l0:compensation",
+          "l0:crt-node",
+          "l0:deformation",
+          "l0:directional-gradient",
+          "l0:discrete-scale",
+          "l0:distinction",
+          "l0:ensemble",
+          "l0:ensemble-action",
+          "l0:ensemble-quantum",
+          "l0:hyperbolic-frame",
+          "l0:integrated-density",
+          "l0:local-density",
+          "l0:nonlinear-action",
+          "l0:omega",
+          "l0:oscillatory-mode",
+          "l0:premetric-frame",
+          "l0:quadratic-action",
+          "l0:sequential-axis",
+          "l0:spatial-axis",
+          "l0:synchronization",
+          "l0:transport-bias",
+          "l0:triad-configuration",
+          "l0:triadic-closure",
+          "l0:trial-field"
+        ]
+      }
+    },
+    "policy": {
+      "defaultIdleness": "zero",
+      "denominator": "directed-endpoint-distance",
+      "disconnectedSupport": "reject-unreachable-pair",
+      "distance": "directed-shortest-path-in-scoped-graph",
+      "edgeLength": 1,
+      "emptyNeighborhood": "dirac-at-endpoint",
+      "id": "ollivier-directed-in-out-unit-v1",
+      "idleness": [
+        "zero",
+        "half"
+      ],
+      "limits": {
+        "maxAnalyzedEdges": 32,
+        "maxEdges": 256,
+        "maxMassDenominator": 512,
+        "maxNodes": 64,
+        "maxPotentialMagnitude": 4096,
+        "maxSupportSize": 16,
+        "maxTotalTransportCells": 4096,
+        "maxTransportBytes": 1048576,
+        "maxTransportCells": 256
+      },
+      "numeric": "exact-integer-transport-rational-curvature",
+      "ordering": "utf16-code-unit",
+      "sourceMeasure": "uniform-predecessors",
+      "sourceWeights": "ignored",
+      "targetMeasure": "uniform-successors",
+      "verification": "primal-dual-equality",
+      "version": "1"
+    },
+    "policyHash": "sha256:d8cfaff53c8257431a8df5fea0909b0a25c2e4f11c3ddd77c27307aca590b4bd",
+    "problems": [
+      {
+        "costs": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "bridge:compensation-discrete-scale",
+        "massDenominator": 2,
+        "source": "l0:compensation",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:omega",
+            "units": 1
+          }
+        ],
+        "target": "l0:discrete-scale",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:discrete-scale",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "bridge:compensation-hyperbolic-frame",
+        "massDenominator": 2,
+        "source": "l0:compensation",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:omega",
+            "units": 1
+          }
+        ],
+        "target": "l0:hyperbolic-frame",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:cohort-selection",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:hyperbolic-frame",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            2,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "bridge:compensation-oscillatory-mode",
+        "massDenominator": 4,
+        "source": "l0:compensation",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 2
+          },
+          {
+            "nodeId": "l0:omega",
+            "units": 2
+          }
+        ],
+        "target": "l0:oscillatory-mode",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:closure-parameter",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:discrete-scale",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:oscillatory-mode",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1,
+            2,
+            2,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "bridge:omega-compensation",
+        "massDenominator": 6,
+        "source": "l0:omega",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:omega",
+            "units": 6
+          }
+        ],
+        "target": "l0:compensation",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 3
+          },
+          {
+            "nodeId": "l0:discrete-scale",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:hyperbolic-frame",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:oscillatory-mode",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "bridge:oscillatory-mode-discrete-scale",
+        "massDenominator": 2,
+        "source": "l0:oscillatory-mode",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:oscillatory-mode",
+            "units": 1
+          }
+        ],
+        "target": "l0:discrete-scale",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:discrete-scale",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:N-action-domain",
+        "massDenominator": 4,
+        "source": "l0:trial-field",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:trial-field",
+            "units": 4
+          }
+        ],
+        "target": "l0:quadratic-action",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:closure-parameter",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:nonlinear-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:N-density-domain",
+        "massDenominator": 2,
+        "source": "l0:trial-field",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:trial-field",
+            "units": 2
+          }
+        ],
+        "target": "l0:local-density",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:integrated-density",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:local-density",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:N-density-integral",
+        "massDenominator": 2,
+        "source": "l0:local-density",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:local-density",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:trial-field",
+            "units": 1
+          }
+        ],
+        "target": "l0:integrated-density",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:integrated-density",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:distinction-sequential-axis",
+        "massDenominator": 2,
+        "source": "l0:distinction",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:distinction",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:omega",
+            "units": 1
+          }
+        ],
+        "target": "l0:sequential-axis",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:distinction-spatial-axis",
+        "massDenominator": 2,
+        "source": "l0:distinction",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:distinction",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:omega",
+            "units": 1
+          }
+        ],
+        "target": "l0:spatial-axis",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:ensemble-synchronization",
+        "massDenominator": 1,
+        "source": "l0:ensemble",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:ensemble",
+            "units": 1
+          }
+        ],
+        "target": "l0:synchronization",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:synchronization",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:hyperbolic-frame-cohort-selection",
+        "massDenominator": 2,
+        "source": "l0:hyperbolic-frame",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:hyperbolic-frame",
+            "units": 1
+          }
+        ],
+        "target": "l0:cohort-selection",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:cohort-selection",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:nonlinear-action-ensemble-action",
+        "massDenominator": 2,
+        "source": "l0:nonlinear-action",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:nonlinear-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 1
+          }
+        ],
+        "target": "l0:ensemble-action",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:ensemble-action",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:omega-distinction",
+        "massDenominator": 4,
+        "source": "l0:omega",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:omega",
+            "units": 4
+          }
+        ],
+        "target": "l0:distinction",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:distinction",
+            "units": 2
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:omega-premetric-frame",
+        "massDenominator": 4,
+        "source": "l0:omega",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:omega",
+            "units": 4
+          }
+        ],
+        "target": "l0:premetric-frame",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:premetric-frame",
+            "units": 2
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:oscillatory-mode-closure-parameter",
+        "massDenominator": 2,
+        "source": "l0:oscillatory-mode",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:compensation",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:oscillatory-mode",
+            "units": 1
+          }
+        ],
+        "target": "l0:closure-parameter",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:closure-parameter",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:premetric-frame-sequential-axis",
+        "massDenominator": 2,
+        "source": "l0:premetric-frame",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:omega",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:premetric-frame",
+            "units": 1
+          }
+        ],
+        "target": "l0:sequential-axis",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:premetric-frame-spatial-axis",
+        "massDenominator": 2,
+        "source": "l0:premetric-frame",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:omega",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:premetric-frame",
+            "units": 1
+          }
+        ],
+        "target": "l0:spatial-axis",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 1
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:quadratic-action-closure-parameter",
+        "massDenominator": 6,
+        "source": "l0:quadratic-action",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 3
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:trial-field",
+            "units": 1
+          }
+        ],
+        "target": "l0:closure-parameter",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:closure-parameter",
+            "units": 6
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:quadratic-action-nonlinear-action",
+        "massDenominator": 6,
+        "source": "l0:quadratic-action",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 3
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:trial-field",
+            "units": 1
+          }
+        ],
+        "target": "l0:nonlinear-action",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:ensemble-action",
+            "units": 3
+          },
+          {
+            "nodeId": "l0:nonlinear-action",
+            "units": 3
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            3,
+            3,
+            2
+          ],
+          [
+            3,
+            3,
+            2
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:sequential-axis-quadratic-action",
+        "massDenominator": 4,
+        "source": "l0:sequential-axis",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:distinction",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:premetric-frame",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:sequential-axis",
+            "units": 2
+          }
+        ],
+        "target": "l0:quadratic-action",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:closure-parameter",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:nonlinear-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 2
+          }
+        ]
+      },
+      {
+        "costs": [
+          [
+            3,
+            3,
+            2
+          ],
+          [
+            3,
+            3,
+            2
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "distance": 1,
+        "edgeId": "description:spatial-axis-quadratic-action",
+        "massDenominator": 4,
+        "source": "l0:spatial-axis",
+        "sourceMeasure": [
+          {
+            "nodeId": "l0:distinction",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:premetric-frame",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:spatial-axis",
+            "units": 2
+          }
+        ],
+        "target": "l0:quadratic-action",
+        "targetMeasure": [
+          {
+            "nodeId": "l0:closure-parameter",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:nonlinear-action",
+            "units": 1
+          },
+          {
+            "nodeId": "l0:quadratic-action",
+            "units": 2
+          }
+        ]
+      }
+    ],
+    "projectionHash": "sha256:9f3abb8eca7755dc42acc1330a6949731a9386d90a45506311ded6a2b8850e28",
+    "requestHash": "sha256:8a3d952d9ce2be9fe0b776b1fe00a4abf6ab954caf75d1f949502d3e3176943b",
+    "schemaVersion": "1",
+    "scope": {
+      "boundaryEdgeCount": 40,
+      "excludedEdgeCount": 3661,
+      "excludedNodeCount": 2509,
+      "kind": "induced",
+      "nodeIds": [
+        "l0:anisotropy",
+        "l0:carrier-promotion",
+        "l0:closure-parameter",
+        "l0:cohort-selection",
+        "l0:compensation",
+        "l0:crt-node",
+        "l0:deformation",
+        "l0:directional-gradient",
+        "l0:discrete-scale",
+        "l0:distinction",
+        "l0:ensemble",
+        "l0:ensemble-action",
+        "l0:ensemble-quantum",
+        "l0:hyperbolic-frame",
+        "l0:integrated-density",
+        "l0:local-density",
+        "l0:nonlinear-action",
+        "l0:omega",
+        "l0:oscillatory-mode",
+        "l0:premetric-frame",
+        "l0:quadratic-action",
+        "l0:sequential-axis",
+        "l0:spatial-axis",
+        "l0:synchronization",
+        "l0:transport-bias",
+        "l0:triad-configuration",
+        "l0:triadic-closure",
+        "l0:trial-field"
+      ]
+    },
+    "solver": {
+      "id": "onto2d-python-ollivier-reference",
+      "method": "integer-successive-shortest-path-primal-dual-v1",
+      "version": "1"
+    },
+    "sourceProjectionHash": "sha256:0738d2517c4dcac5679cd5e1778d282c3a354867bbb483bc6471ac71652ba65f"
+  },
+  "response": {
+    "requestHash": "sha256:8a3d952d9ce2be9fe0b776b1fe00a4abf6ab954caf75d1f949502d3e3176943b",
+    "schemaVersion": "1",
+    "solutions": [
+      {
+        "costNumerator": 3,
+        "edgeId": "bridge:compensation-discrete-scale",
+        "flow": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          1,
+          2
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 4,
+        "edgeId": "bridge:compensation-hyperbolic-frame",
+        "flow": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          3
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 7,
+        "edgeId": "bridge:compensation-oscillatory-mode",
+        "flow": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          3
+        ],
+        "targetPotentials": [
+          0,
+          -1,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 9,
+        "edgeId": "bridge:omega-compensation",
+        "flow": [
+          [
+            3,
+            1,
+            1,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2
+        ],
+        "targetPotentials": [
+          -1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "costNumerator": 2,
+        "edgeId": "bridge:oscillatory-mode-discrete-scale",
+        "flow": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          1,
+          1
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 6,
+        "edgeId": "description:N-action-domain",
+        "flow": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "sourcePotentials": [
+          2
+        ],
+        "targetPotentials": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 3,
+        "edgeId": "description:N-density-domain",
+        "flow": [
+          [
+            1,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 3,
+        "edgeId": "description:N-density-integral",
+        "flow": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          1,
+          2
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 4,
+        "edgeId": "description:distinction-sequential-axis",
+        "flow": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          3
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 4,
+        "edgeId": "description:distinction-spatial-axis",
+        "flow": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          3
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 1,
+        "edgeId": "description:ensemble-synchronization",
+        "flow": [
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          1
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 3,
+        "edgeId": "description:hyperbolic-frame-cohort-selection",
+        "flow": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          1
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 3,
+        "edgeId": "description:nonlinear-action-ensemble-action",
+        "flow": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          1,
+          2
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 6,
+        "edgeId": "description:omega-distinction",
+        "flow": [
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2
+        ],
+        "targetPotentials": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "costNumerator": 6,
+        "edgeId": "description:omega-premetric-frame",
+        "flow": [
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2
+        ],
+        "targetPotentials": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "costNumerator": 3,
+        "edgeId": "description:oscillatory-mode-closure-parameter",
+        "flow": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          1
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 4,
+        "edgeId": "description:premetric-frame-sequential-axis",
+        "flow": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          3,
+          2
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 4,
+        "edgeId": "description:premetric-frame-spatial-axis",
+        "flow": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          3,
+          2
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 9,
+        "edgeId": "description:quadratic-action-closure-parameter",
+        "flow": [
+          [
+            3
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "sourcePotentials": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "targetPotentials": [
+          0
+        ]
+      },
+      {
+        "costNumerator": 12,
+        "edgeId": "description:quadratic-action-nonlinear-action",
+        "flow": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sourcePotentials": [
+          2,
+          3,
+          3,
+          3
+        ],
+        "targetPotentials": [
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 8,
+        "edgeId": "description:sequential-axis-quadratic-action",
+        "flow": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        "sourcePotentials": [
+          3,
+          3,
+          2
+        ],
+        "targetPotentials": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "costNumerator": 8,
+        "edgeId": "description:spatial-axis-quadratic-action",
+        "flow": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        "sourcePotentials": [
+          3,
+          3,
+          2
+        ],
+        "targetPotentials": [
+          0,
+          0,
+          -1
+        ]
+      }
+    ],
+    "solver": {
+      "id": "onto2d-python-ollivier-reference",
+      "method": "integer-successive-shortest-path-primal-dual-v1",
+      "version": "1"
+    }
+  },
+  "result": {
+    "edges": [
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "bridge:compensation-discrete-scale",
+        "sign": "negative",
+        "source": "l0:compensation",
+        "target": "l0:discrete-scale",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "bridge:compensation-hyperbolic-frame",
+        "sign": "negative",
+        "source": "l0:compensation",
+        "target": "l0:hyperbolic-frame",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "4",
+          "numerator": "-3"
+        },
+        "id": "bridge:compensation-oscillatory-mode",
+        "sign": "negative",
+        "source": "l0:compensation",
+        "target": "l0:oscillatory-mode",
+        "wasserstein": {
+          "denominator": "4",
+          "numerator": "7"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "bridge:omega-compensation",
+        "sign": "negative",
+        "source": "l0:omega",
+        "target": "l0:compensation",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "id": "bridge:oscillatory-mode-discrete-scale",
+        "sign": "zero",
+        "source": "l0:oscillatory-mode",
+        "target": "l0:discrete-scale",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "1"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:N-action-domain",
+        "sign": "negative",
+        "source": "l0:trial-field",
+        "target": "l0:quadratic-action",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:N-density-domain",
+        "sign": "negative",
+        "source": "l0:trial-field",
+        "target": "l0:local-density",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:N-density-integral",
+        "sign": "negative",
+        "source": "l0:local-density",
+        "target": "l0:integrated-density",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:distinction-sequential-axis",
+        "sign": "negative",
+        "source": "l0:distinction",
+        "target": "l0:sequential-axis",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:distinction-spatial-axis",
+        "sign": "negative",
+        "source": "l0:distinction",
+        "target": "l0:spatial-axis",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "id": "description:ensemble-synchronization",
+        "sign": "zero",
+        "source": "l0:ensemble",
+        "target": "l0:synchronization",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "1"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:hyperbolic-frame-cohort-selection",
+        "sign": "negative",
+        "source": "l0:hyperbolic-frame",
+        "target": "l0:cohort-selection",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:nonlinear-action-ensemble-action",
+        "sign": "negative",
+        "source": "l0:nonlinear-action",
+        "target": "l0:ensemble-action",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:omega-distinction",
+        "sign": "negative",
+        "source": "l0:omega",
+        "target": "l0:distinction",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:omega-premetric-frame",
+        "sign": "negative",
+        "source": "l0:omega",
+        "target": "l0:premetric-frame",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:oscillatory-mode-closure-parameter",
+        "sign": "negative",
+        "source": "l0:oscillatory-mode",
+        "target": "l0:closure-parameter",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:premetric-frame-sequential-axis",
+        "sign": "negative",
+        "source": "l0:premetric-frame",
+        "target": "l0:sequential-axis",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:premetric-frame-spatial-axis",
+        "sign": "negative",
+        "source": "l0:premetric-frame",
+        "target": "l0:spatial-axis",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "2",
+          "numerator": "-1"
+        },
+        "id": "description:quadratic-action-closure-parameter",
+        "sign": "negative",
+        "source": "l0:quadratic-action",
+        "target": "l0:closure-parameter",
+        "wasserstein": {
+          "denominator": "2",
+          "numerator": "3"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:quadratic-action-nonlinear-action",
+        "sign": "negative",
+        "source": "l0:quadratic-action",
+        "target": "l0:nonlinear-action",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:sequential-axis-quadratic-action",
+        "sign": "negative",
+        "source": "l0:sequential-axis",
+        "target": "l0:quadratic-action",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "curvature": {
+          "denominator": "1",
+          "numerator": "-1"
+        },
+        "id": "description:spatial-axis-quadratic-action",
+        "sign": "negative",
+        "source": "l0:spatial-axis",
+        "target": "l0:quadratic-action",
+        "wasserstein": {
+          "denominator": "1",
+          "numerator": "2"
+        }
+      }
+    ],
+    "summary": {
+      "count": 22,
+      "mean": {
+        "denominator": "88",
+        "numerator": "-57"
+      },
+      "signs": {
+        "negative": 20,
+        "positive": 0,
+        "zero": 2
+      },
+      "sum": {
+        "denominator": "4",
+        "numerator": "-57"
+      }
+    }
+  },
+  "schemaVersion": "1"
+}

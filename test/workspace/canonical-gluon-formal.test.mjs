@@ -63,11 +63,12 @@ test("gluon self-coupling preserves the stated field-strength sign and color nor
   ]);
 });
 
-test("gluon classification retains model-specific lattice, mass and parent boundaries", async () => {
+test("gluon classification retains model-specific lattice, mass and field-content boundaries", async () => {
   await reject([
-    ["eight color components are not a carrier threshold", (d) => removeLimit(d, "gluon", "Eight color components")],
+    ["eight color components are not constituents, polarization states or a minimum group", (d) => removeLimit(d, "gluon", "Eight color components")],
     ["a theoretical zero mass is not a free-particle measurement", (d) => removeLimit(d, "gluon", "theoretical")],
-    ["source parent weights and process classification remain excluded", (d) => removeLimit(d, "gluon", "0.4/0.6")],
+    ["chosen QCD field content and free-scalar dynamics cannot become a measured emergence event", (d) =>
+      removeLimit(d, "gluon", "Gauge-sector differentiation is retained as the chosen QCD field content")],
     ["renormalization scale is not a physical clock", (d) => removeLimit(d, "gluon", "Renormalization-scale evolution")],
     ["pure SU2 and massive-sea SU3 models cannot become physical gluon masses", (d) => removeLimit(d, "gluon", "pure SU(2)")],
     ["a conditional fit is not an imaged vertex", (d) => removeLimit(d, "gluon-self-coupling", "directly image")]

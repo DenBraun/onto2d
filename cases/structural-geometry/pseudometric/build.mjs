@@ -10,8 +10,8 @@ import { directory, fixtures, readJson } from "./fixtures.mjs";
 
 const files = ["controls.json", "PROTOCOL.md", "../signatures/reference.py", "../signatures/build.mjs",
   ...["controls.json", "PROTOCOL.md", "../responses/reference.py", "../responses/build.mjs",
-    ...["controls.json", "PROTOCOL.md", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py", "../invariance/build.mjs",
-      "../../../models/causal-emergence/releases/2026.08.15/bundle.json"].map(f => `../responses/${f}`)].map(f => `../signatures/${f}`)];
+    ...["controls.json", "PROTOCOL.md", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py",
+      "../invariance/build.mjs"].map(f => `../responses/${f}`)].map(f => `../signatures/${f}`)];
 const digest = value => createHash("sha256").update(canonicalize(value, PSEUDOMETRIC_CODEC)).digest("hex");
 const encoded = value => JSON.stringify(canonicalClone(value, PSEUDOMETRIC_CODEC), null, 2) + "\n";
 export async function verifyReferenceSources(reference) {

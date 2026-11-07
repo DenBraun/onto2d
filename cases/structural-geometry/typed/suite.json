@@ -25,7 +25,7 @@
       "id": "cross-source-unbound"
     },
     {
-      "artifactHash": "sha256:217cb96e7015d6303a7e53d0891c7613e5a0390df33a7100d987f73ccb8f9560",
+      "artifactHash": "sha256:cf66ec336ebf09f78ad96dd600ec455ec4856f79133ebcb4cba01483663d42d7",
       "compatibility": {
         "basis": null,
         "reasons": [
@@ -39,7 +39,7 @@
       "id": "renumbered-unapproved"
     },
     {
-      "artifactHash": "sha256:2d8c6c4210a913c958ddb37caab75f41e6d3b1fefff8266aeb4a3a7bb7dbc64e",
+      "artifactHash": "sha256:07761de78639decbb82b247be4582ff695b6b730f58c1ddbda6c04059db15c68",
       "compatibility": {
         "basis": "approved-mapping",
         "reasons": [],
@@ -49,7 +49,7 @@
       "id": "renumbered-approved"
     },
     {
-      "artifactHash": "sha256:acf509811c31ef68cb5c1dc370bd6f5f5045529ac26ee3bad6be79344673b3ad",
+      "artifactHash": "sha256:7e44b34680cffa406a7a573f5015e584c698455e6c493e2688b0a3152de43001",
       "compatibility": {
         "basis": null,
         "reasons": [
@@ -72,7 +72,7 @@
       "id": "partial-approved"
     },
     {
-      "artifactHash": "sha256:3f890c71a98509e423770ed3efbf01fa322e9a4ed57654e14b0674886e2ceb93",
+      "artifactHash": "sha256:713a6005c17e6662b3c70344e3fd44712ca027c1e82f3047065a032127e43142",
       "compatibility": {
         "basis": "approved-mapping",
         "reasons": [],
@@ -82,7 +82,7 @@
       "id": "identity-approved"
     },
     {
-      "artifactHash": "sha256:04b14b85615c3be59555f040501238b8cfb49e4277b0728953fc96d2b0fa2f02",
+      "artifactHash": "sha256:e01ea38d7a26ffd42d0b2dcde945693f591c24de1f85c4137cdf034ca506e478",
       "compatibility": {
         "basis": null,
         "reasons": [
@@ -97,7 +97,7 @@
       "id": "missing-approved"
     },
     {
-      "artifactHash": "sha256:afc33d9ed2b2409cb9e9c4c322cd12875ca333100d06c4ed2e85e57c35070f6c",
+      "artifactHash": "sha256:da2c7ec9ad1f261412b59fc569fe11f8bbbfe9d2f884b78806c7bddb2945c0aa",
       "compatibility": {
         "basis": "approved-mapping",
         "reasons": [],
@@ -107,7 +107,7 @@
       "id": "role-approved"
     }
   ],
-  "artifactHash": "sha256:2208ac6b3e5c1c0df1f76a0a3e25eb3d1de77c49d26f614a81fb38b3c9690d45",
+  "artifactHash": "sha256:e4b80700f9f523ca3c0efb2989227346a6ec0f499fed2ec4945023076d430f09",
   "census": {
     "censusHash": "sha256:f359667f09cdc11c12a65f4473cc482f1f214f2c1aea94de46d8fecb9ecaa60d",
     "rows": [
@@ -187,32 +187,32 @@
   },
   "mappings": [
     {
-      "artifactHash": "sha256:6844ff5356e8ecdcf5eb93e0e14ce1872cbc4b7431d1b3c25184579475ee9ec4",
+      "artifactHash": "sha256:0e788a8065da2fc9c59bdc28f2bd262110899b8651a654af7a068a00d8fcf5ee",
       "file": "mappings/renumbered.json",
       "id": "renumbered"
     },
     {
-      "artifactHash": "sha256:c2cba47c51297dd84fc48ce012212a52ae244f95f59ad532823d9107ec047215",
+      "artifactHash": "sha256:2b465704bb7cd168e527ec61832b4360a0c61bc7f7cd19878bac018ad3c6e59b",
       "file": "mappings/partial.json",
       "id": "partial"
     },
     {
-      "artifactHash": "sha256:d48848fddd57dbea85c5a953deed42464fad956cc95c0ac794aa519707f751a2",
+      "artifactHash": "sha256:d065ad013cca13ae78625e2705a965efea55d21e76a09cb073443530f165f054",
       "file": "mappings/identity.json",
       "id": "identity"
     },
     {
-      "artifactHash": "sha256:2403dd9144968870a5bc4bda95912e20fd778eee975fcd91d84e8126d0c00322",
+      "artifactHash": "sha256:14f3df0e4aac405a3e4a689fe87b2562984d4ebe176da922dbe25e97e5abc287",
       "file": "mappings/missing.json",
       "id": "missing"
     },
     {
-      "artifactHash": "sha256:d3a22fe59d1a5f35ed9a41ac60e7f632ea3b69d2b585c96c6e2a61bc840729d1",
+      "artifactHash": "sha256:13538d3b81b76d7e32b1216123280ffd45b02f6b7f8fa60f769a582391c3ad44",
       "file": "mappings/role.json",
       "id": "role"
     }
   ],
-  "referenceHash": "sha256:f4306be16b58384208931f4abcee6a80009523a2556fd8644287128d719945b4",
+  "referenceHash": "sha256:1d28af0ea7ae84a4206be774b0708db48b8018fc62b616c2dd23c13828636b31",
   "relabelings": {
     "graph": "asymmetric-six",
     "permutations": 720
@@ -523,29 +523,6 @@
       "missingFields": 0,
       "typedValueHash": "sha256:bce3c524c7d09813659828f445677fdcc039c8121dd1359f3759ab5b6c9f4743",
       "untypedValueHash": "sha256:af14f765b2d613defd32eac4a6cb9b097732662cdeba546b25c08a5d1700db42"
-    },
-    {
-      "artifactHash": "sha256:660763d20bd11437af09f18f6adbe6bb9ffb093ee39935b416bd49ad320ec3f2",
-      "evaluation": "measured",
-      "file": "artifacts/causal-fragment.json",
-      "id": "causal-fragment",
-      "input": {
-        "regimeId": "typed-relations-v1",
-        "scope": {
-          "kind": "induced",
-          "nodeIds": [
-            "0.0",
-            "0.1",
-            "0.2",
-            "0.3",
-            "0.4",
-            "0.5"
-          ]
-        }
-      },
-      "missingFields": 0,
-      "typedValueHash": "sha256:1182c3c492624fea2f98e04cc7d31104fcea5423973c6959fe165d6a019acd75",
-      "untypedValueHash": "sha256:baf5d12d32739ca32adb070e62f202b13c1786b39f43ff453c84f34e6df9c6ce"
     }
   ],
   "schemaVersion": "1",

@@ -1,6 +1,7 @@
 import { canonicalize, deepFreeze, hashCanonical } from "@onto2d/kernel/canonical";
 import { EngineError } from "@onto2d/engine";
 import { projectStructuralGeometry } from "./index.js";
+import { SOURCE_PARENT_DIRECTED_POLICY } from "./policies.js";
 import { packFromEngineModel } from "./engine-model.js";
 import { TYPED_SELECTION_POLICY, STRUCTURAL_INTERVAL_POLICY } from "./experiment-policies.js";
 import { SCALE, divide, encodedFraction, encodedInterval, sqrtBounds } from "./rational.js";
@@ -14,11 +15,13 @@ export const STRUCTURAL_EXPERIMENT_ARTIFACT_SCHEMA = "https://onto2d.dev/schemas
 function fail(code, message, details = {}) {
   throw new EngineError(`STRUCTURAL_EXPERIMENT_${code}`, message, details);
 }
+// Typed selections and weights are defined only for source-parent relations.
+const SOURCE_PARENT = Object.freeze({ projectionPolicyId: SOURCE_PARENT_DIRECTED_POLICY.id });
 const hash = (name, value) => hashCanonical(`onto2d:${name}:v1`, value);
 const seal = (name, body) => deepFreeze({ ...body, artifactHash: hash(name, body) });
 
 export function auditStructuralWeights(pack) {
-  return weightAudit(projectStructuralGeometry(pack));
+  return weightAudit(projectStructuralGeometry(pack, SOURCE_PARENT));
 }
 
 export function verifyStructuralWeightAudit(artifact, pack) {
@@ -91,7 +94,7 @@ function results(nodes, edges, lengths) {
 
 export function analyzeStructuralMetricExperiment(pack, input = {}) {
   const request = normalize(input);
-  const projection = projectStructuralGeometry(pack);
+  const projection = projectStructuralGeometry(pack, SOURCE_PARENT);
   const selected = select(projection, request.selection);
   const context = metric(projection, request.metricPolicyId);
   return seal("structural-metric-experiment", {

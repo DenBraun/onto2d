@@ -1,3 +1,4 @@
+import { isReviewedBridgeRelation } from "./bridges.mjs";
 import { LEVEL_TWO_ADMISSION, LEVEL_TWO_CHECKS, LEVEL_TWO_ANALYTICAL_SOURCES, LEVEL_TWO_NODE_IDS, validateLevelTwoContracts } from "./level-two.mjs";
 import { SCALAR_PROPAGATION_ADMISSION, SCALAR_PROPAGATION_CHECKS, SCALAR_PROPAGATION_ANALYTICAL_SOURCES, validateScalarPropagationContracts } from "./scalar-propagation.mjs";
 import { DIRECTIONAL_STABILITY_SCOPE_ADMISSION, DIRECTIONAL_STABILITY_SCOPE_CHECKS, DIRECTIONAL_STABILITY_SCOPE_ANALYTICAL_SOURCES, validateDirectionalStabilityScopeContracts } from "./directional-stability-scope.mjs";
@@ -594,6 +595,7 @@ const dependencies = [
   ["ucn2020-2022-lifetime-global", "ucn2020-2022-lifetime", "ucntau-global-lifetime", "M-phys-ucntau-global-lifetime", "interpretation-dependency"],
   ["survival-ucn-al-loss", "ucn-storage-loss-model", "ucn-al-loss", "M-phys-ucn-al-loss", "interpretation-dependency"],
   ["survival-ucn2018-uncleaned-loss", "ucn-storage-loss-model", "ucn2018-uncleaned-loss", "M-phys-ucn2018-uncleaned-loss", "interpretation-dependency"],
+  ["survival-ucn2022-cleaning-tail", "ucn-storage-loss-model", "ucn2022-cleaning-tail", "M-phys-ucn2022-cleaning-tail", "interpretation-dependency"],
   ["survival-ucn2022-segment-response", "ucn-storage-loss-model", "ucn2022-segment-response", "M-phys-ucn2022-segment-response", "interpretation-dependency"],
   ["survival-ucn2017-2018-lifetime", "ucn-storage-loss-model", "ucn2017-2018-lifetime", "M-phys-ucn2017-2018-lifetime", "interpretation-dependency"],
   ["survival-ucn2020-2022-lifetime", "ucn-storage-loss-model", "ucn2020-2022-lifetime", "M-phys-ucn2020-2022-lifetime", "interpretation-dependency"],
@@ -935,7 +937,7 @@ const qcdDefinitionLimits = new Map([
     [
       "This convention differentiates alpha_s with respect to ln(mu_R^2); differentiation with respect to ln(mu_R) has an additional factor of two.",
       "For SU(3) with fundamental Dirac fermions and no extra colored matter, b0>0 requires n_f<16.5. Pure Yang-Mills theory has n_f=0 and b0=11/(4 pi). Quarks are not necessary for asymptotic freedom.",
-      "Flavor number, representation indices and loop coefficients are mathematical inputs; they are not occurrence counts, carrier minima or empirical edge weights.",
+      "Flavor number, representation indices and loop coefficients are mathematical inputs; they are not occurrence counts.",
       "This is a weak-coupling expansion. Higher-loop coefficients and matter content require their stated conventions; arbitrary non-Abelian matter theories are not all asymptotically free."
     ]
   ],
@@ -3468,7 +3470,7 @@ const liontrapLimits = [
   "Appendix A uses the 2017 proton mass and compares an axial calibration ratio over 1000 measurements drawn from both the image-charge and proton campaigns. This shared input prevents a claim of fully independent proton-mass validation.",
   "The page 6 prose labels a ratio of magnetron frequencies as axial; Appendix A explicitly defines the required ratio using nu_z. The calibration follows the axial observable and retains the printed discrepancy.",
   "These are reported measurements or calculations with scoped interpretations. Original acquisition records, analysis code, thermal corrections and full covariance have not been independently replayed.",
-  "A bare proton, a charged carbon or oxygen nucleus, and a neutral atom have different masses and charge factors. These mass results do not establish nucleon formation, lifetime, stability or a universal carrier minimum.",
+  "A bare proton, a charged carbon or oxygen nucleus, and a neutral atom have different masses and charge factors. These mass results do not establish nucleon formation, lifetime or stability.",
   "The quoted CODATA 2014 and AME 2016 comparisons are historical reference values. They are not current recommended constants or independent experiments reconstructed by this review.",
   "Hei\u00dfe 2019 Table VIII reports corrections in parts per trillion: image charge 91.0(4.6), image current -1.9(0.3), line shape 3.1(3.0), magnetron determination 0.0(0.6), magnetic inhomogeneity -20.9(27.4), relativity -8.9(7.1), and electrostatic terms much smaller than 0.1. Its total is 59.5(28.8).",
   "Adding all finite displayed rows gives 62.4 ppt. The line-shape correction varies by ion pair; the 2017 Table I caption explicitly excludes its pair-specific term from that earlier total. Omitting the 2019 line-shape row gives 59.3 ppt. The final weighting and application to the reanalysis have not been reconstructed; a naive sum is not evidence that the mass result is invalid.",
@@ -4304,7 +4306,7 @@ export function validatePhysicsDefinitions({ graph, physics, readiness }, { sour
   const dependencyIds = new Set(dependencies.map(([id]) => `physics:${id}`));
   for (const id of formalDependencies.keys()) assert.ok(relations.has(id), `Missing physical definition dependency: ${id}`);
   for (const relation of graph.relations) {
-    if (dependencyIds.has(relation.id)) continue;
+    if (dependencyIds.has(relation.id) || isReviewedBridgeRelation(relation)) continue;
     if (!relation.source.startsWith("phys:") && !relation.target.startsWith("phys:") && !relation.id.startsWith("physics:")) continue;
     assert.ok(definitions.has(relation.source) && definitions.has(relation.target),
       `Unreviewed cross-domain physical construction: ${relation.id}`);
@@ -4970,7 +4972,7 @@ export function validatePhysicsDefinitions({ graph, physics, readiness }, { sour
   assert.deepEqual(bridge.checkIds, []);
   assert.equal(entities.get("l0:carrier-promotion").status, "hypothesis");
   assert.ok(entities.get("l0:carrier-promotion").claimIds.includes(bridge.id));
-  assert.ok(bridge.citations.some((c) => c.sourceId === "legacy-1" && c.role === "provenance"));
+  assert.ok(bridge.citations.some((c) => c.sourceId === "topology" && c.role === "limits"), "The bridge obligation lost its manuscript boundary");
   assert.ok(bridge.citations.every((c) => ["provenance", "limits"].includes(c.role)),
     "An unresolved construction acquired affirmative evidence");
 }

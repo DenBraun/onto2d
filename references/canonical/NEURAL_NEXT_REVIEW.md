@@ -1,15 +1,15 @@
 # Neural scientific obligations
 
-All 25 Level-6 source cards have explicit [scope decisions](LEVEL_6_REVIEW.md).
+Level-6 topics have explicit [scope decisions](neural-systems-review.json).
 The following items concern independent scientific review, unread material,
 measurement identity, numerical reconstruction and competing mechanisms. They
-remain scientific obligations; they do not denote undisposed catalogue cards.
+remain scientific obligations.
 
 ## Social recognition and empathy
 
-For source card 6.20, distinguish action observation, action
-recognition, affect sharing, perspective taking and helping. The reviewed F5
-responses do not jointly establish these outcomes or a minimal social circuit.
+Distinguish action observation, action recognition, affect sharing,
+perspective taking and helping. The reviewed F5 responses do not jointly
+establish these outcomes or a minimal social circuit.
 
 - Gallese et al. (1996), DOI `10.1093/brain/119.2.593`: reconcile Table 2's
   printed total of 92 with its eight rows totaling 25 and the Results count of
@@ -45,13 +45,13 @@ responses do not jointly establish these outcomes or a minimal social circuit.
 - Test the shared-manifold proposals in Gallese's *The Roots of Empathy*
   (`10.1159/000072786`, complete paper read) and *The Manifold Nature of
   Interpersonal Relations* (`10.1098/rstb.2002.1234`, pages 517-518 and 524-525
-  read). The original citation remains ambiguous; these are independently
-  identified works. Complete the latter paper's intervening sections and review
-  the relevant primary evidence before extending support. Define common-code
-  predictions across action, affect and intention tasks. A geometric candidate
-  requires measured variables, representation maps, explicit relations and tests
-  against alternative constructions; the three descriptive levels supply none
-  of these by themselves.
+  read). These are independently identified works. Complete the latter paper's
+  intervening sections and review the relevant primary evidence before
+  extending support. Define common-code predictions across action, affect and
+  intention tasks. A geometric candidate requires measured variables,
+  representation maps, explicit relations and tests against alternative
+  constructions; the three descriptive levels supply none of these by
+  themselves.
 - Tan et al. (2024), DOI `10.1038/s41467-024-49541-1`: main scientific text,
   Methods and six figures, all supplementary captions, selected supplementary
   figures, reporting summary, the five-file code repository and selected public
@@ -64,8 +64,7 @@ responses do not jointly establish these outcomes or a minimal social circuit.
   virtual feature removal does not establish neural necessity. Match pain with
   nonpain arousal and aversiveness before assigning pain-specific coding.
 - Assess the proposed perception, affect and working-memory inputs against
-  matched social tasks. Weights 0.34/0.33/0.33 and carrier minima of one are
-  unmeasured defaults; the reviewed sources do not establish universal necessity.
+  matched social tasks; the reviewed sources do not establish universal necessity.
 
 ## Glial functions
 
@@ -172,16 +171,10 @@ intervention on an abstract neural state or a unique downward-causation rule.
   context, not primary causal support. Separate sickness behavior, depression,
   endocrine feedback and synaptic plasticity rather than extending one assay to
   all these endpoints.
-- Assess each proposed incoming dependency and carrier count against a matched
-  preparation. The original card's default weights and minima are not measured
-  parameters.
 
 ## Neurovascular coupling
 
-Source card 6.16 has vascular evidence for selected preparations, while its
-thirteen proposed incoming dependencies lack matched evidence of universal
-vascular necessity. Its immune description does not supply vascular mechanisms.
-Default weights and carrier minima are unmeasured.
+Neurovascular coupling has vascular evidence for selected preparations.
 
 - Longden et al. (2017), DOI `10.1038/nn.4533`: obtain animal-identified recordings
   and custom LFP code. Resolve the Methods/Table 2 age discrepancy, control-line
@@ -216,13 +209,11 @@ Default weights and carrier minima are unmeasured.
 
 ## Adult neurogenesis and circuit remodeling
 
-For source card 6.17, neuron production, functional integration
-and remodeling of existing circuits need separate evidence. The three proposed
-incoming dependencies have no matched necessity test or measured weights and
-carrier minima. Learning can modulate selected stages in selected tasks; it is
-not established as a universal prerequisite. Integration into an existing network does not
-establish a quantitative dependence on generic network formation. Normal
-neurogenesis does not require an injury-repair event.
+Neuron production, functional integration and remodeling of existing circuits
+need separate evidence. Learning can modulate selected stages in selected tasks;
+it is not established as a universal prerequisite. Integration into an existing
+network does not establish a quantitative dependence on generic network
+formation. Normal neurogenesis does not require an injury-repair event.
 
 - van Praag et al. (2002), DOI `10.1038/4151030a`: obtain animal-identified
   measurements and recording code before numerical reproduction. Preserve
@@ -413,14 +404,12 @@ retain separate scientific roles.
 
 ## Symbolic representations
 
-For source card 6.19, definitions of sequence codes, composition,
-description cost and developmental contrast have scoped sources; vector binding,
-mental program induction and conceptual bootstrapping remain hypotheses.
+Definitions of sequence codes, composition, description cost and developmental
+contrast have scoped sources; vector binding, mental program induction and
+conceptual bootstrapping remain hypotheses.
 
-- Resolve the ambiguous “Dehaene et al. 2015” reference. The sequence Perspective
-  is thematically relevant but does not uniquely identify the card's claimed
-  publication about symbolic numbers. Separate number meaning, written-sign
-  recognition and combinatorial processing before choosing primary evidence.
+- Separate number meaning, written-sign recognition and combinatorial
+  processing before choosing primary evidence about symbolic numbers.
 - Obtain and read the relevant original Fodor (1975) passages. Publisher and
   library metadata do not verify the argument; a university-linked excerpt is
   unavailable at the inspected address. Keep original and reprint editions clear.
@@ -513,15 +502,15 @@ mental program induction and conceptual bootstrapping remain hypotheses.
   factor-importance uncertainty under the resolved cohort. Obtain a measured
   cross-format human matching baseline and test generation separately. Correlated
   dataset size is not an isolated causal training effect.
-- Test each proposed incoming necessity from control, working memory and
-  ensembles under matched tasks. Weights and carrier minima are unmeasured.
-  An ordering of representational descriptions does not establish a construction
-  chain; a minimum program does not establish minimum physical resources.
+- Test each proposed necessity of control, working memory and ensembles under
+  matched tasks. An ordering of representational descriptions does not establish
+  a construction chain; a minimum program does not establish minimum physical
+  resources.
 
 ## Contextual treatment and psychophysiology
 
-For card 6.21, independently review the primary pain, motor, hormonal, immune and
-airway comparisons in [neural-systems-review.json](neural-systems-review.json).
+Independently review the primary pain, motor, hormonal, immune and airway
+comparisons in [neural-systems-review.json](neural-systems-review.json).
 Obtain participant-level allocation, raw observations and separate supplements
 before numerical replay. Distinguish treatment-group change from a placebo
 effect against an appropriate control, subjective report from measured peripheral
@@ -529,5 +518,4 @@ function, and source nulls from demonstrated equivalence. Resolve the immune
 protocol timing and prior-data provenance, compare matched conditioning schedules
 and unpaired cue/drug controls, and directly assess expectation before assigning
 a unique associative or conscious-state mechanism. Complete neural/autonomic
-mediation, durable set points, disease modification and universal carrier minima
-remain unestablished.
+mediation, durable set points and disease modification remain unestablished.

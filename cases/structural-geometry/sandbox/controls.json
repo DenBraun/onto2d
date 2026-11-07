@@ -784,18 +784,6 @@
       ]
     },
     {
-      "id": "causal",
-      "source": "typed/causal-fragment",
-      "regimeId": "typed-relations-v1",
-      "operations": [
-        "identity",
-        "remove-all",
-        "remove-each",
-        "reverse-all",
-        "reverse-each"
-      ]
-    },
-    {
       "id": "maximum-targets",
       "source": "local/cycle-32",
       "regimeId": "topology-only-v1",

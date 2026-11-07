@@ -33,7 +33,7 @@ of assertion and must first be split, rather than given an invented single label
 | 0-2 | Adopt epistemic separation as a curation principle; defer the implementation roadmap and do not treat the supplied freeze as current project authority. |
 | 3-13 | Distinguish atlas nodes from configuration occurrences. Specify an incidence representation that preserves parallel assertions, joint premises and context before adopting the proposed signature. Structural and confidence quantities need distinct meanings, not unequal numerical values. |
 | 14-18 | Repair Boolean impossibility and transformer semantics. Missing evaluation is not false; nondeterministic successors require a relation or an explicit selection policy. |
-| 19-24 | Coverage weights, category requirements and SCI/ECI coefficients are modeling choices. No current legacy number is calibrated for these operators. Missing requirements cannot silently become an empty, satisfied list. |
+| 19-24 | Coverage weights, category requirements and SCI/ECI coefficients are modeling choices. Missing requirements cannot silently become an empty, satisfied list. |
 | 25-27 | Separate lifecycle participation from individual necessity. Interventions that change policy or the candidate universe need an explicit comparison map. |
 | 28-34 | Define support-local validity versus validity inside a larger configuration; inclusion-minimal versus minimum-cardinality support; complete versus bounded search; three operationally distinct closures. Do not order physical complexity using display levels. |
 | 35-44 | Make finite candidate generation and budgets explicit. Reconcile explicit unavailable results with Boolean predicates. Define which identity includes evidence and provenance. |

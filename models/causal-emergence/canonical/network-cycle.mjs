@@ -50,24 +50,6 @@ export const NETWORK_CYCLE_RECORDS = {
         ],
         "limit": "The complete actual published article pages 900-904 and complete PMC author main text, both figures and Table 1 were read. The downloaded six-page university PDF includes an additional references page and adjacent article text; only the identified CETCH article supplies evidence. The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction. Identity agrees between actual title block, Crossref and Europe PMC core metadata. Schwander: Science 354(6314):900-904, 18 November 2016, PMID 27856910. Checked on 2026-10-20. Crossref has review links but no correction/update relation; Europe PMC lists a CETCH perspective as Comment in, not a correction. Limited title/DOI correction searches found no explicit linked correction; this is not proof that none exists."
       }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
     }
   ],
   "claims": [
@@ -139,7 +121,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -229,7 +211,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -319,7 +301,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -418,7 +400,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -463,7 +445,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -479,7 +461,7 @@ export const NETWORK_CYCLE_RECORDS = {
     {
       "id": "C-bio-autocatalytic-network-source-scope",
       "kind": "review-finding",
-      "statement": "Card 3.13 is qualified to a defined protein-free pair of mutually catalytic RNA ligation reactions with observed substrate-dependent batch/serial amplification. The source supports a finite prepared network organization; formal RAF generality, historical early-life stage, unrestricted component self-production, universal protein/cooperativity prerequisites and indefinite autonomous persistence are outside admission.",
+      "statement": "The admitted scope is a defined protein-free pair of mutually catalytic RNA ligation reactions with observed substrate-dependent batch/serial amplification. The source supports a finite prepared network organization; formal RAF generality, historical early-life stage, unrestricted component self-production, universal protein/cooperativity prerequisites and indefinite autonomous persistence are outside admission.",
       "scope": "Only the declared source system, preparation and finite observable or its explicit measurement/definition boundary.",
       "status": "publication-supported",
       "citations": [
@@ -513,10 +495,9 @@ export const NETWORK_CYCLE_RECORDS = {
         "The mixed population is a different preparation with 15 mM rather than 25 mM MgCl2, many supplied substrates and 5 percent transfer. Its finite 100-hour result is read but not a second independent publication or the same paired-assay context. It is not admitted here as open-ended evolution or a new arbitrary-function genetic system.",
         "No protein-folding prerequisite, universal protein catalytic ancestry, site cooperativity, allosteric feedback, physical compartment requirement, spontaneous prebiotic origin, unrestricted food generation, living autonomy or universal network persistence is established.",
         "No raw gel acquisition, independent fit, isotope/radiolabel calibration, numerical replay, experimental replication or new experimental optimization was performed.",
-        "Original Level 3, phase, type-role, science arrays and scientific-status labels are catalogue classifications, not independent empirical reproduction or proof of an ontological arising. Instance admission remains none.",
-        "Original generic Evidence paragraphs with null DOI/URL create no additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications.",
-        "Original parent weights, necessity labels, directions, modes, dependency codes, ontological arising labels, carrier group/type, minima, critical counts and null saturation are not measured causal fractions, experimental laws or universal construction rules.",
-        "Card 3.13 parents are 3.0 Protein Folding, 3.1 Enzymatic Catalysis, 3.5 Cooperativity and 3.7 RNA Folding. The observed protein-free RNA amplification does not require the first two parents' protein-centric descriptions or the stated protein carrier counts; RNA catalytic activity is a finite contextual dependency rather than a universal weighted ancestry. All four original edges and defaults are disposed in the reading report."
+        "Instance admission remains none.",
+        "No additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications are admitted.",
+        "The observed protein-free RNA amplification does not require the protein-centric descriptions of protein folding and enzymatic catalysis; RNA catalytic activity is a finite contextual dependency rather than a universal ancestry."
       ],
       "contextIds": [
         "lincoln2009-pair-serial-transfer"
@@ -525,7 +506,7 @@ export const NETWORK_CYCLE_RECORDS = {
     {
       "id": "C-bio-metabolic-cycle-source-scope",
       "kind": "review-finding",
-      "statement": "Card 3.14 is qualified to repeated intermediate transformation/regeneration and product output in an externally assembled and resourced CETCH 5.4 assay. A supplied enzyme cycle does not establish autocatalytic enzyme production, allosteric feedback stabilization, adaptive persistence, universal energy superiority or unbounded operation. Its relationship to the RNA network is conceptual and supplies no measured cross-system causal edge.",
+      "statement": "The admitted scope is repeated intermediate transformation/regeneration and product output in an externally assembled and resourced CETCH 5.4 assay. A supplied enzyme cycle does not establish autocatalytic enzyme production, allosteric feedback stabilization, adaptive persistence, universal energy superiority or unbounded operation. Its relationship to the RNA network is conceptual and supplies no measured cross-system causal edge.",
       "scope": "Only the declared source system, preparation and finite observable or its explicit measurement/definition boundary.",
       "status": "publication-supported",
       "citations": [
@@ -560,7 +541,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -568,10 +549,9 @@ export const NETWORK_CYCLE_RECORDS = {
         "Different CETCH versions alter enzymes, regeneration, protection and side-reaction handling together. No isolated allosteric feedback variable, universally adaptive stabilization mechanism, matched direct comparison with a natural in vivo cycle, or unique causal contribution of each change is admitted.",
         "No long-term robustness under varying conditions, homeostatic flux control, adaptive persistence, membrane transport, autonomous catalyst replacement, origin-of-life sequence or universal requirement for a prior autocatalytic RNA network is measured.",
         "No raw HPLC-MS data replay, model fitting, calibration reconstruction, independent acquisition or laboratory optimization is claimed.",
-        "Original Level 3, phase, type-role, science arrays and scientific-status labels are catalogue classifications, not independent empirical reproduction or proof of an ontological arising. Instance admission remains none.",
-        "Original generic Evidence paragraphs with null DOI/URL create no additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications.",
-        "Original parent weights, necessity labels, directions, modes, dependency codes, ontological arising labels, carrier group/type, minima, critical counts and null saturation are not measured causal fractions, experimental laws or universal construction rules.",
-        "Card 3.14 parents are 3.0 Protein Folding, 3.1 Enzymatic Catalysis, 3.13 Autocatalytic Networks and 3.12 Allostery. Supplied catalysts do not measure folding history; metabolite regeneration does not produce those catalysts; no allosteric feedback experiment or universal carrier threshold is admitted. All four original edges and defaults are disposed in the report."
+        "Instance admission remains none.",
+        "No additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications are admitted.",
+        "Supplied catalysts do not measure folding history; metabolite regeneration does not produce those catalysts; no allosteric feedback experiment is admitted."
       ],
       "contextIds": [
         "schwander2016-cetch54-isotope-product"
@@ -852,7 +832,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -931,7 +911,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -1025,7 +1005,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -1065,7 +1045,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -1080,7 +1060,7 @@ export const NETWORK_CYCLE_RECORDS = {
       "id": "bio:autocatalytic-network-source-scope",
       "name": "Finite cross-catalytic network scope",
       "kind": "scoped-process",
-      "description": "Card 3.13 is qualified to a defined protein-free pair of mutually catalytic RNA ligation reactions with observed substrate-dependent batch/serial amplification. The source supports a finite prepared network organization; formal RAF generality, historical early-life stage, unrestricted component self-production, universal protein/cooperativity prerequisites and indefinite autonomous persistence are outside admission.",
+      "description": "The admitted scope is a defined protein-free pair of mutually catalytic RNA ligation reactions with observed substrate-dependent batch/serial amplification. The source supports a finite prepared network organization; formal RAF generality, historical early-life stage, unrestricted component self-production, universal protein/cooperativity prerequisites and indefinite autonomous persistence are outside admission.",
       "claimIds": [
         "C-bio-autocatalytic-network-source-scope",
         "M-bio-rna-network-interpretation-method"
@@ -1098,10 +1078,6 @@ export const NETWORK_CYCLE_RECORDS = {
         {
           "sourceId": "lincoln2009-cross-catalytic-rna",
           "locator": "Published pages 1230-1232 and Figure 3A-D; PMC author manuscript Figures 3-5 and final discussion: finite mixed-population transfers, substrate inhibition/recombination, simplified genetic scope and future open-ended-function challenge"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/13"
         }
       ],
       "openObligations": [
@@ -1114,10 +1090,9 @@ export const NETWORK_CYCLE_RECORDS = {
         "The mixed population is a different preparation with 15 mM rather than 25 mM MgCl2, many supplied substrates and 5 percent transfer. Its finite 100-hour result is read but not a second independent publication or the same paired-assay context. It is not admitted here as open-ended evolution or a new arbitrary-function genetic system.",
         "No protein-folding prerequisite, universal protein catalytic ancestry, site cooperativity, allosteric feedback, physical compartment requirement, spontaneous prebiotic origin, unrestricted food generation, living autonomy or universal network persistence is established.",
         "No raw gel acquisition, independent fit, isotope/radiolabel calibration, numerical replay, experimental replication or new experimental optimization was performed.",
-        "Original Level 3, phase, type-role, science arrays and scientific-status labels are catalogue classifications, not independent empirical reproduction or proof of an ontological arising. Instance admission remains none.",
-        "Original generic Evidence paragraphs with null DOI/URL create no additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications.",
-        "Original parent weights, necessity labels, directions, modes, dependency codes, ontological arising labels, carrier group/type, minima, critical counts and null saturation are not measured causal fractions, experimental laws or universal construction rules.",
-        "Card 3.13 parents are 3.0 Protein Folding, 3.1 Enzymatic Catalysis, 3.5 Cooperativity and 3.7 RNA Folding. The observed protein-free RNA amplification does not require the first two parents' protein-centric descriptions or the stated protein carrier counts; RNA catalytic activity is a finite contextual dependency rather than a universal weighted ancestry. All four original edges and defaults are disposed in the reading report."
+        "Instance admission remains none.",
+        "No additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications are admitted.",
+        "The observed protein-free RNA amplification does not require the protein-centric descriptions of protein folding and enzymatic catalysis; RNA catalytic activity is a finite contextual dependency rather than a universal ancestry."
       ],
       "level": 3
     },
@@ -1125,7 +1100,7 @@ export const NETWORK_CYCLE_RECORDS = {
       "id": "bio:metabolic-cycle-source-scope",
       "name": "Finite metabolic-cycle scope",
       "kind": "scoped-process",
-      "description": "Card 3.14 is qualified to repeated intermediate transformation/regeneration and product output in an externally assembled and resourced CETCH 5.4 assay. A supplied enzyme cycle does not establish autocatalytic enzyme production, allosteric feedback stabilization, adaptive persistence, universal energy superiority or unbounded operation. Its relationship to the RNA network is conceptual and supplies no measured cross-system causal edge. Source CETCH 1.0 stepwise success and combined non-completion are represented separately, with unknown protocol details retained and the electron-acceptor explanation unresolved.",
+      "description": "The admitted scope is repeated intermediate transformation/regeneration and product output in an externally assembled and resourced CETCH 5.4 assay. A supplied enzyme cycle does not establish autocatalytic enzyme production, allosteric feedback stabilization, adaptive persistence, universal energy superiority or unbounded operation. Its relationship to the RNA network is conceptual and supplies no measured cross-system causal edge. Source CETCH 1.0 stepwise success and combined non-completion are represented separately, with unknown protocol details retained and the electron-acceptor explanation unresolved.",
       "claimIds": [
         "C-bio-metabolic-cycle-source-scope",
         "M-bio-cetch-cycle-interpretation-method",
@@ -1148,10 +1123,6 @@ export const NETWORK_CYCLE_RECORDS = {
         {
           "sourceId": "schwander2016-cetch-cycle",
           "locator": "Published pages 902-904, Discussion, acknowledgments and references; corresponding complete PMC author main text: external assembly/proofreading/cofactor regeneration, unmatched cell-extract comparison and future self-sustained metabolism"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/14"
         }
       ],
       "openObligations": [
@@ -1159,7 +1130,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",
@@ -1167,10 +1138,9 @@ export const NETWORK_CYCLE_RECORDS = {
         "Different CETCH versions alter enzymes, regeneration, protection and side-reaction handling together. No isolated allosteric feedback variable, universally adaptive stabilization mechanism, matched direct comparison with a natural in vivo cycle, or unique causal contribution of each change is admitted.",
         "No long-term robustness under varying conditions, homeostatic flux control, adaptive persistence, membrane transport, autonomous catalyst replacement, origin-of-life sequence or universal requirement for a prior autocatalytic RNA network is measured.",
         "No raw HPLC-MS data replay, model fitting, calibration reconstruction, independent acquisition or laboratory optimization is claimed.",
-        "Original Level 3, phase, type-role, science arrays and scientific-status labels are catalogue classifications, not independent empirical reproduction or proof of an ontological arising. Instance admission remains none.",
-        "Original generic Evidence paragraphs with null DOI/URL create no additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications.",
-        "Original parent weights, necessity labels, directions, modes, dependency codes, ontological arising labels, carrier group/type, minima, critical counts and null saturation are not measured causal fractions, experimental laws or universal construction rules.",
-        "Card 3.14 parents are 3.0 Protein Folding, 3.1 Enzymatic Catalysis, 3.13 Autocatalytic Networks and 3.12 Allostery. Supplied catalysts do not measure folding history; metabolite regeneration does not produce those catalysts; no allosteric feedback experiment or universal carrier threshold is admitted. All four original edges and defaults are disposed in the report."
+        "Instance admission remains none.",
+        "No additional theory papers, RAF proofs, isotope experiments, kinetic studies or comparative replications are admitted.",
+        "Supplied catalysts do not measure folding history; metabolite regeneration does not produce those catalysts; no allosteric feedback experiment is admitted."
       ],
       "level": 3
     },
@@ -1405,7 +1375,7 @@ export const NETWORK_CYCLE_RECORDS = {
       "target": "bio:autocatalytic-network-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Observed finite replenished amplification bounds the network card.",
+      "assertion": "Observed finite replenished amplification bounds the network scope.",
       "claimIds": [
         "M-bio-rna-network-interpretation-method",
         "C-bio-rna-finite-serial-amplification",
@@ -1421,7 +1391,7 @@ export const NETWORK_CYCLE_RECORDS = {
       "target": "bio:autocatalytic-network-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Protein-free reciprocal ligation bounds the network organization and parent interpretation.",
+      "assertion": "Protein-free reciprocal ligation bounds the network organization and its interpretation.",
       "claimIds": [
         "M-bio-rna-network-interpretation-method",
         "C-bio-rna-reciprocal-catalyst-production",
@@ -1641,7 +1611,7 @@ export const NETWORK_CYCLE_RECORDS = {
         "The supplement containing detailed Methods, supplementary text, Figures S1-S14 and Tables S1-S8 was not read. Archive files were HTML challenges; publisher access failed and the author repository exposes only a publisher link. Complete buffer, temperature, enzyme preparation, calibration, raw mass spectra, replicate counts and supplementary controls remain outside reconstruction.",
         "The admitted case is a supplied and externally assembled in vitro enzyme network. Mature enzymes, cofactors, chemical starting acceptor and resource/regeneration inputs are supplied; it does not synthesize its enzyme catalysts, produce an autonomous cell, or demonstrate collectively autocatalytic production of all network components.",
         "Stepwise conversion in CETCH 1.0 did not establish continuous cycling: the simultaneously combined version stalled before a complete turn at methylsuccinyl-CoA. The main text attributes this to electron-acceptor limitations; the underlying supplementary controls are not newly verified.",
-        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not universal carrier minima or independently verified assembly stoichiometry.",
+        "CETCH 5.4 has 13 named core reactions plus auxiliary proofreading/cofactor regeneration, with 17 enzymes from nine organisms in the complete source system. Reaction count, enzyme count and biological origins are distinct; they are not independently verified assembly stoichiometry.",
         "The principal evidence combines six intermediate abundance/isotopologue time courses with a source-topology interpretation and a coupled malate assay. Glyoxylate is trapped by supplied malate synthase using externally added acetyl-CoA. Malate contains externally supplied carbon and is not itself a product composed solely of the fixed CO2.",
         "Source Figure 2C reports 540 micromolar malate over 90 minutes, corresponding in its two-CO2-per-glyoxylate stoichiometric accounting to 1080 micromolar fixed CO2. The cited approximately 5 nmol CO2 per minute per mg uses core cycle protein, not all supplied proteins. These are source-reported values, not independently reproduced quantities or uncertainties.",
         "Progressive 13C enrichment constrains repeated pathway passage under the declared topology. It does not directly track every individual molecule, prove a global steady state, reveal all side fluxes, certify complete mass balance or establish unbounded throughput. Finite intermediate levels change over the same assay.",

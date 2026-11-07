@@ -384,7 +384,7 @@ const contracts = {
       "id": "C-phys-quantum-reaction-source-scope",
       "kind": "review-finding",
       "statement": "The reviewed primary publication supports a finite positive quantum-reaction case: cryogenic matrix-isolated trans-H-C-OH shows dark first-order infrared loss, with weak temperature dependence over the reported 11-20 K noble-gas points, a slower nitrogen host and qualitatively stable H-C-OD. The associated ground-singlet reaction-path/WKB calculation supplies a hydrogen-tunnelling interpretation and a source-predicted H/D lifetime contrast. Observation, mechanism inference and model prediction remain separate; the primary supplement is part of the same publication rather than a second confirmation.",
-      "scope": "Scoped replacement for original Level 2 card /11, with one publication-specific experiment and a distinct computational analysis.",
+      "scope": "Scoped replacement for claims about quantum effects in chemical reactions, with one publication-specific experiment and a distinct computational analysis.",
       "status": "publication-supported",
       "citations": [
         {
@@ -416,21 +416,14 @@ const contracts = {
           "locator": "Supplementary Information pages 9-12, selected Supplementary Table 5 rows and Supplementary Table 6: harmonic/anharmonic zero-point conventions and relative energy references for the printed Figure 4 scheme",
           "role": "supports",
           "note": "Supports only the selected reported preparation, result or declared interpretation boundary; no local numerical replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original card /11 supplies the draft vocabulary and asserted metadata only; it is not empirical support."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.3/2.5/2.8, weights 0.40/0.35/0.25, all two-body minima and critical counts, diagonal-causation code 3 and the cooperation/constraint modes are not established by the selected spectra or computation. A supplied molecular reaction channel is not a measured minimal carrier recipe; no alternative numerical minimum is invented.",
         "The source positively supports nuclear hydrogen-transfer tunnelling as the interpretation of this specific low-temperature ground-singlet rearrangement. It does not establish electronic nonadiabatic coupling, universal reaction-path selection, a universal non-Arrhenius curve, every isotope effect or all proposed quantum chemistry mechanisms.",
-        "Constraint and resource categories do not provide measured causal edges: the actual matrix, state, temperature and preparation are recorded as context. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 4 Effect, science tags, well-supported status and SOMA propagation/irreducibility language are draft classification rather than demonstrated developmental phases, cross-level laws or newly generated rules.",
-        "The original theoretical and empirical Evidence entries contain no publication identifiers and do not establish a bibliography or executable quantum-transition-state/path-integral model. The replacement admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
+        "The actual matrix, state, temperature and preparation are recorded as context, not as measured causal edges. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
+        "Level 2 is a display grouping.",
+        "This record admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
       ],
       "contextIds": [
         "schreiner2008-matrix",
@@ -440,7 +433,7 @@ const contracts = {
     {
       "id": "M-phys-quantum-reaction-source-scope",
       "kind": "method",
-      "statement": "Compare the dark matrix half-lives with the separately supplied reduced-model predictions while preserving host, temperature, isotopologue, energy convention and evidence role. Count the main article and its supplement as one publication. Use isotope comparison and source calculation together for the stated tunnelling interpretation; do not turn qualitative deuterated non-decay into a measured long lifetime, merge photochemical assignment with dark kinetics, or infer universal old parents and carrier counts.",
+      "statement": "Compare the dark matrix half-lives with the separately supplied reduced-model predictions while preserving host, temperature, isotopologue, energy convention and evidence role. Count the main article and its supplement as one publication. Use isotope comparison and source calculation together for the stated tunnelling interpretation; do not turn qualitative deuterated non-decay into a measured long lifetime, merge photochemical assignment with dark kinetics, or infer universal precursors and carrier counts.",
       "scope": "Interpretation contract joining a single publication-specific matrix experiment to its associated reduced quantum-reaction calculation.",
       "status": "method-contract",
       "citations": [
@@ -483,11 +476,10 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.3/2.5/2.8, weights 0.40/0.35/0.25, all two-body minima and critical counts, diagonal-causation code 3 and the cooperation/constraint modes are not established by the selected spectra or computation. A supplied molecular reaction channel is not a measured minimal carrier recipe; no alternative numerical minimum is invented.",
         "The source positively supports nuclear hydrogen-transfer tunnelling as the interpretation of this specific low-temperature ground-singlet rearrangement. It does not establish electronic nonadiabatic coupling, universal reaction-path selection, a universal non-Arrhenius curve, every isotope effect or all proposed quantum chemistry mechanisms.",
-        "Constraint and resource categories do not provide measured causal edges: the actual matrix, state, temperature and preparation are recorded as context. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 4 Effect, science tags, well-supported status and SOMA propagation/irreducibility language are draft classification rather than demonstrated developmental phases, cross-level laws or newly generated rules.",
-        "The original theoretical and empirical Evidence entries contain no publication identifiers and do not establish a bibliography or executable quantum-transition-state/path-integral model. The replacement admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
+        "The actual matrix, state, temperature and preparation are recorded as context, not as measured causal edges. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
+        "Level 2 is a display grouping.",
+        "This record admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
       ],
       "contextIds": [
         "schreiner2008-matrix",
@@ -710,18 +702,13 @@ const contracts = {
         {
           "sourceId": "schreiner2008-hcoh-supplement",
           "locator": "Supplementary Information pages 9-12, selected Supplementary Table 5 rows and Supplementary Table 6: harmonic/anharmonic zero-point conventions and relative energy references for the printed Figure 4 scheme"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original necessary parents 2.3/2.5/2.8, weights 0.40/0.35/0.25, all two-body minima and critical counts, diagonal-causation code 3 and the cooperation/constraint modes are not established by the selected spectra or computation. A supplied molecular reaction channel is not a measured minimal carrier recipe; no alternative numerical minimum is invented.",
         "The source positively supports nuclear hydrogen-transfer tunnelling as the interpretation of this specific low-temperature ground-singlet rearrangement. It does not establish electronic nonadiabatic coupling, universal reaction-path selection, a universal non-Arrhenius curve, every isotope effect or all proposed quantum chemistry mechanisms.",
-        "Constraint and resource categories do not provide measured causal edges: the actual matrix, state, temperature and preparation are recorded as context. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 4 Effect, science tags, well-supported status and SOMA propagation/irreducibility language are draft classification rather than demonstrated developmental phases, cross-level laws or newly generated rules.",
-        "The original theoretical and empirical Evidence entries contain no publication identifiers and do not establish a bibliography or executable quantum-transition-state/path-integral model. The replacement admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
+        "The actual matrix, state, temperature and preparation are recorded as context, not as measured causal edges. The hot pyrolysis preparation and optional visible-light assignment tests are distinct from the shielded dark rearrangement; no sustained external resource threshold is inferred.",
+        "Level 2 is a display grouping.",
+        "This record admits the selected primary experiment and its separate source model only; no broad literature survey, raw-data refit or independent numerical replay is claimed."
       ]
     }
   ],
@@ -732,7 +719,7 @@ const contracts = {
       "target": "phys:reaction-path-quantum-model",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "Specify the supplied trans-H-C-OH ground-singlet channel and distinguish bound-state structure from a model of rearrangement; no old parent weight or body-count recipe follows.",
+      "assertion": "Specify the supplied trans-H-C-OH ground-singlet channel and distinguish bound-state structure from a model of rearrangement.",
       "claimIds": [
         "D-phys-reaction-path-quantum-model"
       ]
@@ -894,7 +881,7 @@ const contracts = {
     {
       "nodeId": "phys:quantum-reaction-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /11, with one publication-specific experiment and a distinct computational analysis.",
+      "denotes": "Scoped replacement for claims about quantum effects in chemical reactions, with one publication-specific experiment and a distinct computational analysis.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-quantum-reaction-source-scope"
@@ -929,7 +916,7 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://www.nature.com/articles/nature07010",
-      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197),906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
+      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197), 906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
     },
     {
       "id": "schreiner2008-reaction-path",
@@ -958,29 +945,11 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://www.nature.com/articles/nature07010",
-      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197),906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
+      "correctionCheck": "Primary article DOI, title, authors, Nature 453(7197), 906-909 and 12 June 2008 title block checked against the actual published PDF and publisher HTML; Crossref metadata checked on 2026-10-19 shows an empty relation object and no update-to entry. No exhaustive correction search or numerical reproduction is implied. The actual publisher supplement was read for the matrix-specific values and energy conventions; it is part of the same publication. The companion supplement has its own source record and exact passage citations; it is part of this same publication, not another independent experiment."
     }
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "schreiner2008-hcoh-tunneling",
       "kind": "research-publication",
@@ -1005,7 +974,8 @@ const contracts = {
           "Published pages 906-907, Figures 1-3 and Table 1: glyoxylic-acid pyrolysis, matrix trapping, isotopologue assignment and separate visible-light difference spectra",
           "Published page 908, Figure 4 and tunnelling-analysis paragraphs: singlet reaction path, zero-point conventions, WKB model, 122 min hydrogen prediction and over 1,200 yr deuterium prediction",
           "Online Methods, PDF page 5, Matrix-isolation experiments: dark first-order infrared decay, 30 min acquisition, 11/15/20 K matrix preparations and qualitative deuterated non-decay",
-          "Online Methods, PDF page 5, Electronic structure computations and Vibrational computations and tunnelling analysis: focal-point energetics, orthogonal modes and reduced reaction-path assumptions"
+          "Online Methods, PDF page 5, Electronic structure computations and Vibrational computations and tunnelling analysis: focal-point energetics, orthogonal modes and reduced reaction-path assumptions",
+          "Abstract"
         ],
         "limit": "Read the primary published scientific text on pages 906-908, Table 1 and Figures 1-4, plus selected online Methods on PDF page 5; visually inspected published pages 907-908 including Figures 2 and 4. The six-page published PDF was obtained from a third-party copy and checked against the publisher article title, DOI and dated title block. The publisher HTML and actual publisher Supplementary Information were also obtained. The references, all numerical electronic-structure tables and raw spectra were not independently reanalysed. The low-temperature matrix kinetics and the same-publication calculation are distinct evidence roles, not independent experiments."
       }

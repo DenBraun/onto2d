@@ -13,33 +13,37 @@ import {
 test("the root facade loads the exact bundled Causal Emergence Model Pack", async () => {
   const onto = await Onto2D.create();
   assert.equal(onto.model.name, "Causal Emergence — Canonical Reconstruction");
-  assert.equal(onto.model.version, "2026.11.04.0");
+  assert.equal(onto.model.version, "2026.11.05.0");
   assert.equal(onto.modelResolution.requested, "causal-emergence@stable");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.04.0");
-  assert.equal(onto.model.nodes().length, 2537);
-  assert.equal(onto.model.edges().length, 3488);
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.05.0");
+  assert.equal(onto.model.nodes().length, 2796);
+  assert.equal(onto.model.edges().length, 4768);
   assert.equal(onto.model.get("l0:crt-node").name, "CRT carrier class — no admitted instance");
   assert.equal(onto.model.get("R-object").parents().length, 5);
-  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 3183);
+  assert.equal(onto.model.edges({ relationLayer: "descriptive" }).length, 3378);
   assert.ok(onto.model.query({ level: 0, typeRole: "construction-rule" }).length > 0);
   assert.ok(onto.model.paths({ from: "l0:oscillatory-mode", to: "l0:crt-node" }).length > 0);
 });
 
-test("the historical exact version remains selectable with its original identity and semantics", async () => {
-  const onto = await Onto2D.create({ model: "causal-emergence@2026.08.15" });
-  assert.equal(onto.model.nodes().length, 249);
-  assert.equal(onto.model.edges().length, 971);
-  assert.equal(onto.model.get("0.8").name, "Resonant Localized Configuration (CRT-Node)");
-  assert.equal(onto.model.get("0.8").parents().length, 7);
-  assert.equal(onto.model.edges({ relationLayer: "source-parent" }).length, 971);
-  assert.ok(onto.model.query({ level: 0, phase: "C", typeRole: "Object" }).length > 0);
-  assert.ok(onto.model.paths({ from: "0.0", to: "0.8" }).length > 0);
+test("an exact version request selects the bundled release without the stable alias", async () => {
+  const onto = await Onto2D.create({ model: "causal-emergence@2026.11.05.0" });
+  assert.equal(onto.modelResolution.requested, "causal-emergence@2026.11.05.0");
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.05.0");
+  assert.equal(onto.modelResolution.modelVersion, "2026.11.05.0");
+  assert.equal(onto.modelResolution.modelRootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
+  assert.equal(onto.model.version, bundledCausalEmergenceModelPack.manifest.model.version);
+  assert.equal(onto.model.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
+  assert.throws(
+    () => onto.models.resolve("causal-emergence@2000.01.01.0"),
+    (error) => error.code === "ENGINE_MODEL_RESOLUTION_FAILED",
+    "An exact version that is not bundled must fail closed instead of falling back to the stable alias"
+  );
 });
 
 test("the Node loader accepts the current release within default transport budgets", async () => {
   const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
   const loaded = await loadModelPackDirectory(
-    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.11.04.0")
+    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.11.05.0")
   );
   assert.equal(loaded.manifest.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
   assert.equal(loaded.manifest.manifestHash, bundledCausalEmergenceModelPack.manifest.manifestHash);

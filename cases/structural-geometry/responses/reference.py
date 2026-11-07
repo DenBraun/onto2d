@@ -9,7 +9,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 FILES = ["controls.json", "PROTOCOL.md", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py",
-         "../invariance/build.mjs", "../../../models/causal-emergence/releases/2026.08.15/bundle.json"]
+         "../invariance/build.mjs"]
 REGIMES = ["canonical-structure-v1", "topology-only-v1", "typed-relations-v1"]
 PROBES = ["feedback-edge-ablation-v1", "necessary-parent-ablation-v1", "enabling-parent-ablation-v1", "edge-direction-reversal-v1", "redundant-support-path-ablation-v1"]
 OBSERVABLES = [["canonical-directed-structure-v1"], ["node-count-v1", "edge-count-v1", "weak-component-sizes-v1",
@@ -225,8 +225,6 @@ def sources(document):
     result = {g["id"]: records(g, document["types"]) for g in document["graphs"]}
     bound = document["maximumCycle"]
     result["maximum"] = records({"nodes": bound["cycleNodes"] + bound["isolates"], "edges": [[u, (u + 1) % bound["cycleNodes"], bound["type"]] for u in range(bound["cycleNodes"])]}, document["types"])
-    pack = read(FILES[-1])["files"]
-    result["causal"] = {"nodes": [n["id"] for n in pack["model/nodes.json"]], "edges": pack["model/edges.json"]}
     return result
 
 
@@ -251,7 +249,7 @@ def aggregation_profiles():
 def expected():
     document = read("controls.json")
     graphs = sources(document)
-    cases = [summary(s["id"], graphs[s["source"]], s["regimeId"], s.get("scope", {"kind": "induced", "nodeIds": document["causalScope"]} if s["source"] == "causal" else None)) for s in document["scenarios"]]
+    cases = [summary(s["id"], graphs[s["source"]], s["regimeId"], s.get("scope")) for s in document["scenarios"]]
     census, totals = [], {"requests": 0, "probes": 0, "targets": 0, "applied": 0, "rejected": 0, "unavailableProbes": 0}
     for n in range(1, 4):
         pairs = canonical.pairs(n)

@@ -11,8 +11,6 @@ from functools import lru_cache
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
-CAUSAL = ROOT / "models/causal-emergence/releases/2026.08.15/bundle.json"
 
 
 def pairs(n):
@@ -40,11 +38,6 @@ def source_graphs():
     for g in controls:
         labels = g.get("labels", ["n" + str(i) for i in range(g["nodes"])])
         result.append((g["id"], labels, [("e" + str(i), labels[u], labels[v]) for i, (u, v) in enumerate(g["edges"])]))
-    pack = json.loads(CAUSAL.read_text(encoding="utf-8"))
-    labels = ["0." + str(i) for i in range(6)]
-    edges = [(e["id"], e["source"], e["target"]) for e in pack["files"]["model/edges.json"]
-             if e["source"] in labels and e["target"] in labels]
-    result.append(("causal-fragment", labels, edges))
     return result
 
 
@@ -61,11 +54,12 @@ def expected():
                          "key": key(len(labels), [(index[u], index[v]) for _, u, v in edges])})
     return {"schemaVersion": "1", "method": "minimum-off-diagonal-bitmask-over-all-node-permutations",
             "controlsFileSha256": hashlib.sha256((HERE / "controls.json").read_bytes()).hexdigest(),
-            "causalFileSha256": hashlib.sha256(CAUSAL.read_bytes()).hexdigest(), "census": census, "controls": controls}
+            "census": census, "controls": controls}
 
 
 def verify_artifacts():
-    for name, labels, edges in source_graphs():
+    sources = source_graphs()
+    for name, labels, edges in sources:
         artifact = json.loads((HERE / "artifacts" / (name + ".json")).read_text(encoding="utf-8"))
         value = artifact["observation"]["value"]
         index = {label: i for i, label in enumerate(labels)}
@@ -80,7 +74,7 @@ def verify_artifacts():
         claimed = {e["sourceEdgeId"]: (e["from"], e["to"]) for e in witness["edges"]}
         assert len(claimed) == len(witness["edges"]) == len(edges) and claimed == mapped, name
         assert sorted(mapped.values()) == sorted((e["from"], e["to"]) for e in value["edges"]), name
-    print("Independent artifact replay passed: 17 graph orbits and complete directed mapping witnesses.")
+    print("Independent artifact replay passed: {} graph orbits and complete directed mapping witnesses.".format(len(sources)))
 
 
 def main():
@@ -101,9 +95,9 @@ def main():
             stream.write(text)
     else:
         assert path.read_text(encoding="utf-8") == text, "Frozen independent canonical reference differs."
-    print("Independent permutation reference {}: {} labelled graphs, {} classes, 17 controls.".format(
+    print("Independent permutation reference {}: {} labelled graphs, {} classes, {} controls.".format(
         "written" if args.write else "verified", sum(c["labelledGraphs"] for c in value["census"]),
-        sum(c["isomorphismClasses"] for c in value["census"])))
+        sum(c["isomorphismClasses"] for c in value["census"]), len(value["controls"])))
 
 
 if __name__ == "__main__":

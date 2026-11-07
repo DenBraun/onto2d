@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   ["python3", ["-B", "cases/structural-geometry/comparison/reference.py", "--verify"]],
   [process.execPath, ["cases/structural-geometry/comparison/build.mjs", "--verify"]],
   ["python3", ["-B", "cases/structural-geometry/comparison/reference.py", "--verify-artifacts"]],

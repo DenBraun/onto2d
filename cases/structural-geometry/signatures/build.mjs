@@ -11,7 +11,7 @@ import { directory, fixtures, readJson } from "./fixtures.mjs";
 
 const files = ["controls.json", "PROTOCOL.md", "../responses/reference.py", "../responses/build.mjs",
   ...["controls.json", "PROTOCOL.md", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py",
-    "../invariance/build.mjs", "../../../models/causal-emergence/releases/2026.08.15/bundle.json"].map(f => `../responses/${f}`)];
+    "../invariance/build.mjs"].map(f => `../responses/${f}`)];
 const digest = value => createHash("sha256").update(canonicalize(value, SIGNATURE_CODEC)).digest("hex");
 const encoded = value => JSON.stringify(canonicalClone(value, SIGNATURE_CODEC), null, 2) + "\n";
 export async function verifyReferenceSources(reference) {

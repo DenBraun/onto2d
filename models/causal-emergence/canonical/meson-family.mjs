@@ -445,7 +445,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded."
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded."
       ]
     },
     {
@@ -470,7 +470,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "Physical isoscalars with the same quantum numbers mix. The two-state basis rotation does not make eta and eta-prime exact pure octet/singlet states or establish their full state content. A single flavor-basis pseudoscalar angle assumes the stated treatment of OZI-violating terms; generic beyond-leading-order descriptions need not use one angle.",
         "The reported 41.4-degree result assumes zero eta-prime gluonium and Equation 10, including constituent mass ratio m_s/m_bar, C_NS/C_S overlap parameters, vector mixing phi_V=3.4 degrees and the photon-momentum ratio cubed. These are model/external inputs, not determined by R_phi alone. The theoretical error is a maximum variation over the adopted parameter spreads, not a locally derived Gaussian uncertainty."
       ]
@@ -864,7 +864,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The signal efficiency averages two cascade efficiencies weighted by their daughter branching products. Equation 7 also needs the daughter branching-ratio ratio, FLS response and K_rho interference/radiative correction. Their full numerical inputs, correlations, event selection and background simulation are not reconstructed; rounded listed efficiencies and counts alone cannot reproduce R_phi."
       ],
       "contextIds": [
@@ -908,7 +908,7 @@ const contracts = {
       ],
       "limitations": [
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The signal efficiency averages two cascade efficiencies weighted by their daughter branching products. Equation 7 also needs the daughter branching-ratio ratio, FLS response and K_rho interference/radiative correction. Their full numerical inputs, correlations, event selection and background simulation are not reconstructed; rounded listed efficiencies and counts alone cannot reproduce R_phi."
       ],
       "contextIds": [
@@ -950,7 +950,7 @@ const contracts = {
       "checkIds": [],
       "limitations": [
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The signal efficiency averages two cascade efficiencies weighted by their daughter branching products. Equation 7 also needs the daughter branching-ratio ratio, FLS response and K_rho interference/radiative correction. Their full numerical inputs, correlations, event selection and background simulation are not reconstructed; rounded listed efficiencies and counts alone cannot reproduce R_phi."
       ],
       "contextIds": [
@@ -976,7 +976,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded."
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded."
       ]
     },
     {
@@ -1000,7 +1000,7 @@ const contracts = {
         }
       ],
       "openObligations": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "Physical isoscalars with the same quantum numbers mix. The two-state basis rotation does not make eta and eta-prime exact pure octet/singlet states or establish their full state content. A single flavor-basis pseudoscalar angle assumes the stated treatment of OZI-violating terms; generic beyond-leading-order descriptions need not use one angle.",
         "The reported 41.4-degree result assumes zero eta-prime gluonium and Equation 10, including constituent mass ratio m_s/m_bar, C_NS/C_S overlap parameters, vector mixing phi_V=3.4 degrees and the photon-momentum ratio cubed. These are model/external inputs, not determined by R_phi alone. The theoretical error is a maximum variation over the adopted parameter spreads, not a locally derived Gaussian uncertainty."
       ]
@@ -1229,7 +1229,7 @@ const contracts = {
       ],
       "openObligations": [
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The signal efficiency averages two cascade efficiencies weighted by their daughter branching products. Equation 7 also needs the daughter branching-ratio ratio, FLS response and K_rho interference/radiative correction. Their full numerical inputs, correlations, event selection and background simulation are not reconstructed; rounded listed efficiencies and counts alone cannot reproduce R_phi."
       ]
     },
@@ -1263,7 +1263,7 @@ const contracts = {
       ],
       "openObligations": [
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The signal efficiency averages two cascade efficiencies weighted by their daughter branching products. Equation 7 also needs the daughter branching-ratio ratio, FLS response and K_rho interference/radiative correction. Their full numerical inputs, correlations, event selection and background simulation are not reconstructed; rounded listed efficiencies and counts alone cannot reproduce R_phi."
       ]
     }
@@ -1367,7 +1367,7 @@ const contracts = {
       "finding": "Three rational matrix witnesses preserve scalar-plus-traceless reconstruction, idempotence and orthogonality. Nine q-qbar basis labels include three coincident zero-weight vectors. Three synthetic exposure cases recover the declared ratio only with the branch-weighted response and proper correction direction; Table 1 backgrounds sum 343 and 3750-343=3407.",
       "limitations": [
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The signal efficiency averages two cascade efficiencies weighted by their daughter branching products. Equation 7 also needs the daughter branching-ratio ratio, FLS response and K_rho interference/radiative correction. Their full numerical inputs, correlations, event selection and background simulation are not reconstructed; rounded listed efficiencies and counts alone cannot reproduce R_phi."
       ],
       "readExtent": "declared-local-calculation",
@@ -1388,8 +1388,7 @@ const contracts = {
       "result": "conditional-support",
       "limit": "Physical isoscalars with the same quantum numbers mix. The two-state basis rotation does not make eta and eta-prime exact pure octet/singlet states or establish their full state content. A single flavor-basis pseudoscalar angle assumes the stated treatment of OZI-violating terms; generic beyond-leading-order descriptions need not use one angle.",
       "assumptions": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
-        "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude."
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded."
       ],
       "sourceIds": [
         "pdg2025-quark-model",
@@ -1404,12 +1403,11 @@ const contracts = {
       "id": "kloe2007-ratio-angle-scope",
       "candidate": "The measured radiative ratio conditionally constrains the stated no-gluonium mixing model.",
       "alternative": "The ratio alone determines a universal mixing angle, gluonium content or all meson transition rates.",
-      "discriminator": "Keep selected counts,response correction,model parameters and inferred angle as separate records.",
+      "discriminator": "Keep selected counts, response correction, model parameters and inferred angle as separate records.",
       "result": "conditional-support",
       "limit": "The reported 41.4-degree result assumes zero eta-prime gluonium and Equation 10, including constituent mass ratio m_s/m_bar, C_NS/C_S overlap parameters, vector mixing phi_V=3.4 degrees and the photon-momentum ratio cubed. These are model/external inputs, not determined by R_phi alone. The theoretical error is a maximum variation over the adopted parameter spreads, not a locally derived Gaussian uncertainty. The paper's separate multi-source gluonium fit is not admitted. The 2009 abstract reports an updated global fit using the radiative ratio with other widths; only that reuse/scope statement was reviewed. No updated angle/gluonium number, latest-result claim, direct gluon population or unique hadron-formation mechanism is inferred.",
       "assumptions": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
-        "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude."
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded."
       ],
       "sourceIds": [
         "kloe2007-meson-ratio",
@@ -1428,7 +1426,7 @@ const contracts = {
       "result": "conditional-support",
       "limit": "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude.",
       "assumptions": [
-        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments and universal parent weights/minima are excluded.",
+        "The u,d,s q-qbar model supplies flavor labels and multiplets, not a complete hadronic Fock state, exact constituent census, physical formation sequence or color-SU(3) result. Only the lightest pseudoscalar/vector assignments are retained; scalar/excited/exotic assignments are excluded.",
         "The local calculation checks rational trace projectors, flavor-weight bookkeeping, a synthetic two-cascade response model and the printed background subtraction. It does not prove representation irreducibility, measure q-qbar content or calculate physical mixing, R_phi, detector response, covariance or a radiative amplitude."
       ],
       "sourceIds": [

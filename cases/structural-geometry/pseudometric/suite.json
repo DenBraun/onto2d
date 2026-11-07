@@ -1,6 +1,6 @@
 {
   "aggregationProfiles": 728,
-  "artifactHash": "sha256:154cd282cd32b29c49b416e4d28e7a6bc85aafdc8158aa509d356e9f364cb4e9",
+  "artifactHash": "sha256:f6f8838f40d324baf0449412ac730a52b436ea80ca7855a62494a458392bfa60",
   "metricProperties": [
     {
       "dimensions": 3,
@@ -17,7 +17,7 @@
       "vectors": 243
     }
   ],
-  "referenceHash": "sha256:6ea3ac9a45303b78edb5fc515b4672f415bce28c18fd29698be0a40ac7ad2c78",
+  "referenceHash": "sha256:00f75ddeaf5fe93223d218095e0a8c8b9694f7c01873bda2486c73b96d0d1cb0",
   "runs": [
     {
       "artifactHash": "sha256:287502859b98cd80436a1dfc146a3bffc586c28980cb7ad64adadd6d5ddaaba5",

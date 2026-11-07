@@ -1,8 +1,10 @@
 # `@onto2d/structural-geometry`
 
 Read-only directed geometry of a complete verified Onto2D Model Pack. The initial
-research implementation supports a closed `source-parent-directed-v1` projection
-and `unit-v1` metric. It returns deterministic projections and non-augmented
+research implementation supports four closed projections,
+`source-parent-directed-v1`, `canonical-relation-directed-v1`,
+`canonical-arising-causal-v1` and `canonical-technical-directed-v1`, and the
+`unit-v1` metric. It returns deterministic projections and non-augmented
 directed Forman curvature with exact source replay.
 
 ```js
@@ -21,8 +23,28 @@ console.log(checked.result.summary);
 `pack` must be a complete v1 Model Pack. Every public computation verifies it.
 `verifyStructuralProjection(projection, pack)` and the artifact verifier replay
 the full expected value from that pack; a supplied artifact is never its own
-source authority. All outputs are deeply frozen. Unknown request fields or
-unsupported policy IDs fail. Explicit selection is equivalent to the defaults:
+source authority. Without a request, they replay under the closed policy that the
+projection or artifact names; a request requires a particular policy. All
+outputs are deeply frozen. Unknown request fields or unsupported policy IDs fail.
+Default policies follow the source's relation layers:
+
+- **`causal` edges.** A source with them, such as the layered canonical Causal
+  Emergence release, is projected with `canonical-arising-causal-v1`: its
+  arisings and the causes between them. Its technical layer is projected only on
+  request, with `canonical-technical-directed-v1`.
+- **Only `descriptive` or `functional-support` edges.** The source is projected
+  with `canonical-relation-directed-v1`.
+- **Any other source.** It uses `source-parent-directed-v1`.
+
+A mixed or unsupported layer fails instead of being dropped.
+`layerPolicyForNodes(pack, nodeIds)` returns the layer policy for an induced
+scope of a layered pack, and it fails for a scope that mixes layers. It ignores
+unknown node IDs, so the scope check reports them as unknown nodes.
+`projectStructuralGeometryForScope(pack, scope)` verifies the pack once and
+projects an induced scope under the policy of its layer, and any other scope
+under the default policy.
+
+Explicit selection is equivalent to these defaults:
 
 ```js
 const artifact = analyzeStructuralGeometry(pack, {
@@ -111,14 +133,18 @@ and [seven examples](../../cases/structural-geometry/providers/README.md).
 The portable `/regimes` entrypoint exposes three frozen observation contracts
 and source-bound preparations. Exact canonical and typed profiles allow six
 nodes; the lossy topology summary allows 64. All retain direction and explicitly
-bind their matching, vocabulary and work limits.
+bind their matching, vocabulary and work limits. These contracts, the metric
+providers and the typed experiments are defined for source-parent relations;
+a canonical Causal Emergence pack fails with `RELATION_LAYER_UNSUPPORTED`. In the
+examples below, `pack` is a source-parent Model Pack such as a declared
+synthetic control.
 
 ```js
 import { prepareStructuralRegime, verifyStructuralRegimePreparation }
   from "@onto2d/structural-geometry/regimes";
 
 const request = { regimeId: "canonical-structure-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] } };
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] } };
 const preparation = prepareStructuralRegime(pack, request);
 verifyStructuralRegimePreparation(preparation, pack, request);
 ```
@@ -129,7 +155,7 @@ incoming, outgoing and external edges. It has `evaluation: "not-run"`, no
 measured observations and no comparison distance or status. Engine registration
 uses `createStructuralRegimePreparationAnalysis()` explicitly. See the
 [contract](../../docs/structural-geometry/OBSERVATIONS.md#distinguishability-regime-and-observable-contracts) and
-[six examples](../../cases/structural-geometry/regimes/README.md).
+[three examples](../../cases/structural-geometry/regimes/README.md).
 
 ## Exact canonical observations
 
@@ -140,7 +166,7 @@ import { observeCanonicalStructure, verifyCanonicalStructureObservation }
   from "@onto2d/structural-geometry/canonical";
 
 const request = { regimeId: "canonical-structure-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] } };
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] } };
 const observation = observeCanonicalStructure(pack, request);
 verifyCanonicalStructureObservation(observation, pack, request);
 console.log(observation.observation.valueHash);
@@ -153,7 +179,7 @@ six nodes and 30 edges. Engine registration uses
 `createCanonicalStructureObservationAnalysis()` explicitly. This observation
 does not contain a comparison status, distance or response signature. See the
 [contract](../../docs/structural-geometry/OBSERVATIONS.md#exact-canonical-directed-observations) and
-[17 examples](../../cases/structural-geometry/canonical/README.md).
+[16 examples](../../cases/structural-geometry/canonical/README.md).
 
 ## Directed topology observations
 
@@ -164,7 +190,7 @@ import { observeStructuralTopology, verifyStructuralTopologyObservation }
   from "@onto2d/structural-geometry/topology";
 
 const request = { regimeId: "topology-only-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] } };
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] } };
 const topology = observeStructuralTopology(pack, request);
 verifyStructuralTopologyObservation(topology, pack, request);
 console.log(topology.observation.value);
@@ -179,7 +205,7 @@ source/target visits including self seeds. Register
 
 Equal summaries can describe nonisomorphic graphs; reversing every edge always
 preserves this profile. The [contract](../../docs/structural-geometry/OBSERVATIONS.md#directed-topology-observations)
-and [23 examples](../../cases/structural-geometry/topology/README.md) document
+and [21 examples](../../cases/structural-geometry/topology/README.md) document
 independent matrix checks and explicit collisions against exact canonical
 analysis. This API measures one graph and supplies no comparison result or
 response signature.
@@ -193,7 +219,7 @@ import { observeTypedRelations, verifyTypedRelationsObservation }
   from "@onto2d/structural-geometry/typed";
 
 const request = { regimeId: "typed-relations-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] } };
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] } };
 const typed = observeTypedRelations(pack, request);
 verifyTypedRelationsObservation(typed, pack, request);
 console.log(typed.observations[1].availability);
@@ -244,7 +270,7 @@ Verification takes the independently expected request, including approvals and
 restrictions. `createStructuralComparisonAnalysis(rightPack)` snapshots the right
 source for explicit engine registration. The same API runs in Node and browsers.
 See the [contract](../../docs/structural-geometry/OBSERVATIONS.md#strict-structural-comparison-and-mandatory-coverage),
-[43 controls](../../cases/structural-geometry/comparison/README.md) and
+[37 controls](../../cases/structural-geometry/comparison/README.md) and
 [acceptance review](../../docs/structural-geometry/EVIDENCE.md).
 
 ## Immutable probe sandbox
@@ -261,7 +287,7 @@ import { runStructuralProbeSandbox, verifyStructuralProbeSandbox }
 
 const input = {
   regimeId: "topology-only-v1",
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2"] },
+  scope: { kind: "induced", nodeIds: ["a", "b", "c"] },
   transformation: { kind: "reverse-edges", targets: "each-scoped-edge" }
 };
 const sandbox = runStructuralProbeSandbox(pack, input);
@@ -282,7 +308,7 @@ Packs. The API interprets bounded data operations and accepts no executable
 callbacks. `createStructuralProbeSandboxAnalysis()` supplies opt-in engine
 registration; the same artifact replays in Node and browsers. See the
 [contract](../../docs/structural-geometry/SIGNATURES.md#immutable-structural-probe-sandbox),
-[51 controls](../../cases/structural-geometry/sandbox/README.md) and
+[46 controls](../../cases/structural-geometry/sandbox/README.md) and
 [review](../../docs/structural-geometry/EVIDENCE.md).
 
 ## Stage-three experiments
@@ -320,7 +346,7 @@ not raw floating point scalars or confidence intervals. The full source weight
 audit is replayable with `verifyStructuralWeightAudit(audit, pack)`. Invalid
 weights block only weighted computation, with no epsilon substitution.
 See the [contract](../../docs/structural-geometry/GEOMETRY.md#typed-filtration-and-local-weight-experiments) and
-[72-run reference suite](../../cases/structural-geometry/experiments/README.md).
+[synthetic reference controls](../../cases/structural-geometry/experiments/README.md).
 
 ## Certified external Ollivier
 
@@ -334,10 +360,10 @@ import {
 } from "@onto2d/structural-geometry/ollivier";
 import { createPythonOllivierAdapter } from "@onto2d/structural-geometry/ollivier/node";
 
-// These node/edge IDs refer to the bundled Causal Emergence source.
+// Level-0 definitions of the bundled canonical Causal Emergence release.
 const input = {
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2", "0.3"] },
-  edgeIds: ["0.0->0.1", "0.1->0.3"],
+  scope: { kind: "induced", nodeIds: ["l0:omega", "l0:distinction", "l0:premetric-frame", "l0:sequential-axis"] },
+  edgeIds: ["description:omega-distinction", "description:distinction-sequential-axis"],
   idleness: "zero"
 };
 const analyzer = createOllivierAnalyzer(createPythonOllivierAdapter(), { maxCacheEntries: 16 });
@@ -380,9 +406,9 @@ explicit through `@onto2d/structural-geometry/flow/node`:
 import { createStructuralFlowAnalyzer, verifyStructuralFlowArtifact } from "@onto2d/structural-geometry/flow";
 import { createPythonStructuralFlowAdapter } from "@onto2d/structural-geometry/flow/node";
 
-// Bounded induced fragment of the bundled Causal Emergence Model Pack.
+// Bounded induced fragment of the bundled canonical Causal Emergence release.
 const input = {
-  scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2", "0.3"] },
+  scope: { kind: "induced", nodeIds: ["l0:omega", "l0:distinction", "l0:premetric-frame", "l0:sequential-axis"] },
   maxIterations: 6, step: "half", idleness: "half"
 };
 const analyzer = createStructuralFlowAnalyzer(createPythonStructuralFlowAdapter());
@@ -469,7 +495,7 @@ provides no response signature or distance. Five representations/evaluations and
 at most ten bounded canonicalizer calls are allowed, with 500,000 canonical
 entries and 4 MiB cumulative/final output; existing graph and codec limits apply.
 See the [contract](../../docs/structural-geometry/SIGNATURES.md#measured-structural-invariance-probes),
-[13 controls](../../cases/structural-geometry/invariance/README.md) and
+[12 controls](../../cases/structural-geometry/invariance/README.md) and
 [acceptance review](../../docs/structural-geometry/EVIDENCE.md).
 
 ## Measured response probes
@@ -515,7 +541,7 @@ without a partial result.
 `createStructuralResponseAnalysis()` supports explicit engine registration
 using authentic models. Closed schemas, readonly declarations and browser replay
 use the same runner. See the [contract](../../docs/structural-geometry/SIGNATURES.md#graph-native-response-probes),
-[16 controls](../../cases/structural-geometry/responses/README.md) and
+[15 controls](../../cases/structural-geometry/responses/README.md) and
 [acceptance review](../../docs/structural-geometry/EVIDENCE.md).
 
 ## Graph-native response signature
@@ -552,7 +578,7 @@ canonicalizer calls, 64 feature rows, 448 component visits and 8 MiB cumulative/
 final output. `createStructuralResponseSignatureAnalysis()` supports explicit
 engine registration. Readonly types, closed schemas and browser replay use the
 same runner. See the [contract](../../docs/structural-geometry/SIGNATURES.md#graph-native-responsesignature-v0),
-[27 controls](../../cases/structural-geometry/signatures/README.md) and
+[26 controls](../../cases/structural-geometry/signatures/README.md) and
 [review](../../docs/structural-geometry/EVIDENCE.md).
 
 ## Fixed-domain response pseudometric
@@ -633,7 +659,7 @@ use the same implementation without a solver. Composite limits are 64 nodes/edge
 25 frames, 3,328 scalar samples, 1,600 joint samples, two million canonical entries
 and 24 MiB cumulative/final output. See the
 [contract](../../docs/structural-geometry/SIGNATURES.md#geometricsignature-v1),
-[25 controls](../../cases/structural-geometry/geometric-signatures/README.md) and
+[23 controls](../../cases/structural-geometry/geometric-signatures/README.md) and
 [review](../../docs/structural-geometry/EVIDENCE.md).
 SG2-041's separate offline study is implemented below; SG2-042/043
 sensitivity/robustness remain open.

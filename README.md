@@ -72,7 +72,7 @@ the root `onto2d` package is private and has not been published to npm.
 
 ### Read a canonical construction rule and its premises
 
-`Onto2D.create()` loads the current Causal Emergence graph (`2026.10.02.9`).
+`Onto2D.create()` loads the current Causal Emergence graph (`2026.11.05.0`).
 The graph is being reconstructed; its scope and evidence are documented in the
 [source documentation](references/canonical/README.md).
 
@@ -94,19 +94,41 @@ console.log("Direct parent IDs:", parents.map(parent => parent.id).join(", "));
 Expected output:
 
 ```text
-Causal Emergence — Canonical Reconstruction: 1166 nodes, 921 connections
+Causal Emergence — Canonical Reconstruction: 2796 nodes, 4768 connections
 Test localized objecthood
 Direct parent IDs: l0:deformation, l0:integrated-density, l0:local-density, l0:nonlinear-action, l0:triad-configuration
 ```
 
 Each premise can be inspected with its claim rationale, citations and limits.
 
+### Read an arising and its causes
+
+The outer layer of the graph holds the arisings of the author's catalogue,
+joined by their causes ([arising model](docs/architecture/ARISING_MODEL.md)).
+Every other record belongs to the technical subgraph of one arising.
+
+```js
+const arising = model.require("arising:4.3");
+console.log(arising.name);
+
+// Each cause is an author hypothesis until its status records evidence.
+const causes = model.parents(arising.id, { relationLayer: "causal" });
+console.log("Causes:", causes.map(cause => cause.id).join(", "));
+```
+
+Expected output:
+
+```text
+Cellular Signaling and Communication
+Causes: arising:3.15, arising:4.0, arising:4.1, arising:4.2
+```
+
 ### Check whether two directed graphs have the same structure
 
 Consider three steps connected as a chain. Changing their numbering should
 preserve the graph's identity; changing the chain into a fork should not.
 This example supplies its own small graphs to the built-in `canonical-identity`
-analysis. It does not edit the catalogue.
+analysis. It does not edit the Causal Emergence graph.
 
 ```js
 import { Onto2D } from "onto2d";

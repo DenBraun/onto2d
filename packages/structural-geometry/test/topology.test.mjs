@@ -38,8 +38,8 @@ test("topology measures exactly the seven frozen specs while preserving the unev
   frozen(a); assert.equal(canonicalize(source), before);
 });
 
-test("all 23 observations replay exactly against their frozen verified sources", async () => {
-  const examples = await fixtures(); assert.equal(examples.length, 23);
+test("all 21 observations replay exactly against their frozen verified sources", async () => {
+  const examples = await fixtures(); assert.equal(examples.length, 21);
   for (const f of examples) {
     const a = await readJson(`artifacts/${f.id}.json`);
     assert.deepEqual(verifyStructuralTopologyObservation(a, f.pack, f.input), a);

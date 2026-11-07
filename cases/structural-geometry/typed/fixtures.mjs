@@ -14,11 +14,9 @@ export function packFor(graph) {
       source: labels[e.from], target: labels[e.to], relationLayer: "source-parent" })) });
 }
 export async function fixtures() {
-  const { controls, causalScope } = await readJson("controls.json");
-  const causal = await readJson("../../../models/causal-emergence/releases/2026.08.15/bundle.json");
-  return [...controls.map((graph) => ({ id: graph.id, pack: packFor(graph), input: graph.scope
-    ? { ...input, scope: { kind: "induced", nodeIds: graph.scope } } : input })),
-  { id: "causal-fragment", pack: causal, input: { ...input, scope: { kind: "induced", nodeIds: causalScope } } }];
+  const { controls } = await readJson("controls.json");
+  return controls.map((graph) => ({ id: graph.id, pack: packFor(graph), input: graph.scope
+    ? { ...input, scope: { kind: "induced", nodeIds: graph.scope } } : input }));
 }
 export async function mappingFixtures() {
   const examples = new Map((await fixtures()).map((f) => [f.id, f]));

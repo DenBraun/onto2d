@@ -13,8 +13,6 @@ export function packFor(graph) {
       source: labels[from], target: labels[to], relationLayer: "source-parent" })) });
 }
 export async function fixtures() {
-  const { controls, causalScopes } = await readJson("controls.json");
-  const causal = await readJson("../../../models/causal-emergence/releases/2026.08.15/bundle.json");
-  return [...controls.map((graph) => ({ id: graph.id, pack: packFor(graph), input })),
-    ...causalScopes.map(({ id, nodeIds }) => ({ id, pack: causal, input: { ...input, scope: { kind: "induced", nodeIds } } }))];
+  const { controls } = await readJson("controls.json");
+  return controls.map((graph) => ({ id: graph.id, pack: packFor(graph), input }));
 }

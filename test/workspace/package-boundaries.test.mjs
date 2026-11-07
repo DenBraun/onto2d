@@ -4,7 +4,7 @@ import { schemaUrls, SCHEMA_VERSION } from "../../packages/schemas/src/index.js"
 
 test("schema package exposes every initial contract as a file URL", () => {
   assert.equal(SCHEMA_VERSION, "1");
-  assert.equal(Object.keys(schemaUrls).length, 217);
+  assert.equal(Object.keys(schemaUrls).length, 216);
   assert.ok(schemaUrls.geometricAddedValueUnit.pathname.endsWith("geometric-added-value-unit.schema.json"));
   assert.ok(schemaUrls.geometricAddedValueSuite.pathname.endsWith("geometric-added-value-suite.schema.json"));
   assert.ok(schemaUrls.geometricSignatureInput.pathname.endsWith("geometric-signature-input.schema.json"));
@@ -50,7 +50,6 @@ test("schema package exposes every initial contract as a file URL", () => {
   assert.ok(schemaUrls.structuralOllivierArtifact.pathname.endsWith("structural-ollivier-artifact.schema.json"));
   assert.ok(schemaUrls.structuralMetricExperiment.pathname.endsWith("structural-metric-experiment.schema.json"));
   assert.ok(schemaUrls.structuralWeightAudit.pathname.endsWith("structural-weight-audit.schema.json"));
-  assert.ok(schemaUrls.structuralMetricSuite.pathname.endsWith("structural-metric-suite.schema.json"));
   assert.ok(schemaUrls.structuralProjectionPolicy.pathname.endsWith("structural-projection-policy.schema.json"));
   assert.ok(schemaUrls.structuralMetricPolicy.pathname.endsWith("structural-metric-policy.schema.json"));
   assert.ok(schemaUrls.structuralProjection.pathname.endsWith("structural-projection.schema.json"));

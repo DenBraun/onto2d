@@ -2,7 +2,6 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   ["python3", ["-B", "cases/structural-geometry/added-value/reference.py", "--verify"]],
   [process.execPath, ["cases/structural-geometry/added-value/build.mjs", "--verify"]],
   ["python3", ["-B", "cases/structural-geometry/added-value/reference.py", "--verify-artifacts"]],

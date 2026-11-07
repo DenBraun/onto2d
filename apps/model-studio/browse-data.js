@@ -1,9 +1,9 @@
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
-import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261104.3";
+import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261106.10";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:acfeeb6cdd2d910cd9718b4eb3f729fd307a9d5e0c92517cfede495544cffc6c";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:1df4c111e85a6e16869c2e7084955586763d7656846dddca5ea43cecddea4517";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,
@@ -19,8 +19,8 @@ export const BROWSE_LIMITS = Object.freeze({
 const HASH = /^sha256:[0-9a-f]{64}$/;
 const IDENTIFIER = /^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/;
 const PATH = /^(?:[A-Za-z0-9][A-Za-z0-9._-]*\/)*[A-Za-z0-9][A-Za-z0-9._-]*\.json$/;
-const REVIEW_KEYS = new Set(["vocabulary", "sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"]);
-const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "shortDescription"];
+const REVIEW_KEYS = new Set(["sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"]);
+const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain", "shortDescription"];
 
 function fail(code, message) {
   const error = new Error(message);

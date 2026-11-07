@@ -58,24 +58,6 @@ export const BIOENERGETICS_RECORDS = {
         ],
         "limit": "Read selected original PDF text at printed pp. 56, 58, 60-66 and 68, concentrating on the listed definitions, standard-state cautions, rate/transport distinction and note 18. This is not a complete book reading or review of all sections 2.11-2.12.1. PDF text extraction was inspected; attempted screenshots returned reference markers without usable page images, so no visual equation audit is claimed. The title page identifies Third Edition and IUPAC 2007. The IUPAC book index confirms the 2007 edition and corrected 2008/reprinted 2011 history; the hosted filename containing 2012 is not treated as a separate edition. DOI/ISBN metadata were checked against the IUPAC book index and publisher record on 2026-10-20. A newer 2023 abridged fourth edition is listed by IUPAC and was not read. No complete edition comparison, correction audit or later terminology survey is claimed. The inaccessible second-edition PDF and current Gold Book pages were discovery routes, not full-text reads. Additional bioenergetics review on 2026-10-20 read selected original PDF text at printed pp. 70-71, including operational cautions for single-ion quantities and electrochemical-potential note 11. This extends the selected-passage review and does not claim full-section or full-book reading."
       }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
     }
   ],
   "claims": [
@@ -105,8 +87,7 @@ export const BIOENERGETICS_RECORDS = {
         "External bulk pH alone does not determine internal pH, membrane potential, the total proton electrochemical potential difference, proton/ATP stoichiometry or energy-conversion efficiency.",
         "A driven steady state and chemical equilibrium are different conditions. Pumping can sustain a composition or electrochemical difference without changing the intrinsic equilibrium constant of an unchanged net reaction. A grouped biochemical apparent constant requires its own proton, metal and reference conventions.",
         "The original equilibrium-shaping language is qualified to imposed activities, electrochemical differences and explicitly coupled reactions. The intrinsic equilibrium constant of the same net reaction at fixed reference conditions does not change merely because a pump operates nearby.",
-        "The selected proton trace does not measure every neighbouring reaction quotient, kinetic bias, ATP/redox pump class, stable internal pH, ionic homeostasis or robust network operation. Channel conductance, ion-formation studies and separate pH-regulation systems are not matched causal prerequisites of this prepared pump.",
-        "Catalogue level, phase, process/property role, science/status strings and requirement categories are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, universal thresholds or independent evidence. Generic evidence placeholders supply no additional primary result."
+        "The selected proton trace does not measure every neighbouring reaction quotient, kinetic bias, ATP/redox pump class, stable internal pH, ionic homeostasis or robust network operation. Channel conductance, ion-formation studies and separate pH-regulation systems are not matched causal prerequisites of this prepared pump."
       ]
     },
     {
@@ -315,8 +296,7 @@ export const BIOENERGETICS_RECORDS = {
         "No complete gradient, energy-conversion efficiency, steady ATP synthesis flux, biochemical homeostasis, metabolic-cycle closure or origin-of-life claim follows.",
         "The proteins are obtained from modern biological systems. Their reconstitution supports a finite modern energy-transduction model; it does not demonstrate how a primitive membrane without those proteins could couple a gradient to chemistry.",
         "The positive scope is supplied modern protein machinery under externally supplied illumination and assay reagents. It does not establish universal ATP dependence, complete redox or metabolic cycling, regulated energy redistribution, robust supply or a universal energetic backbone for all higher biochemical organization.",
-        "Folded proteins and phosphorylation machinery are supplied preparation components; the experiment does not measure their formation or prove a universal necessary sequence from folding, enzyme catalysis and metabolic cycles. General kinetics/thermodynamics supply bookkeeping, not an additional acquired parent mechanism.",
-        "Catalogue level, phase, process/property role, science/status strings and requirement categories are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, universal thresholds or independent evidence. Generic evidence placeholders supply no additional primary result."
+        "Folded proteins and phosphorylation machinery are supplied preparation components; the experiment does not measure their formation or prove a universal necessary sequence from folding, enzyme catalysis and metabolic cycles. General kinetics/thermodynamics supply bookkeeping, not an additional acquired precursor mechanism."
       ],
       "contextIds": [
         "racker1974-purple-vesicle-proton-context",
@@ -326,16 +306,10 @@ export const BIOENERGETICS_RECORDS = {
     {
       "id": "C-bio-primitive-chemiosmotic-coupling-open",
       "kind": "review-finding",
-      "statement": "The catalogue hypothesis that a primitive boundary can couple an electrochemical gradient to internal chemistry remains unestablished by the primary evidence reviewed here. The modern protein-containing Racker preparation does not supply direct evidence for that protein-free primitive coupling claim.",
-      "scope": "Explicit unresolved interpretation of original card 3.47, not a claim that such coupling is impossible.",
+      "statement": "The hypothesis that a primitive boundary can couple an electrochemical gradient to internal chemistry remains unestablished by the primary evidence reviewed here. The modern protein-containing Racker preparation does not supply direct evidence for that protein-free primitive coupling claim.",
+      "scope": "Explicit unresolved interpretation of chemiosmotic energy transduction in proto-membranes, not a claim that such coupling is impossible.",
       "status": "unresolved",
       "citations": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original author-supplied hypothesis inventoried in full with its actual parents; its generic empirical label is not a reviewed primary result."
-        },
         {
           "sourceId": "racker1974-purple-vesicle-energy-transduction",
           "locator": "J. Biol. Chem. 249(2), 662-663, Materials and Methods: ATP formation assay; Results and Discussion: mitochondrial fraction/coupling-factor and lipid dependence; Table I caption and qualitative control comparisons",
@@ -348,8 +322,7 @@ export const BIOENERGETICS_RECORDS = {
         "The selected review contains no directly observed gradient-to-reaction coupling in a protein-free primitive boundary. This is an evidence-scope gap, not an exhaustive absence-of-literature result or proof of impossibility.",
         "Gradient formation, retention or passive equilibration alone does not establish productive coupling to an internal reaction, regulation of a network, self-maintenance or a historical primordial pathway.",
         "No carrier count, protocell threshold, necessary developmental hierarchy or physical instance is admitted. No experimental design or optimization is proposed.",
-        "The original claims of enduring primitive boundary-to-interior regulation, otherwise unfavourable chemistry and stabilized internal networks remain hypotheses. Passive permeability, supplied pH conditions, modern phosphorylation machinery and driven-state definitions do not jointly instantiate a primitive transduction system.",
-        "Catalogue level, phase, process/property role, science/status strings and requirement categories are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, universal thresholds or independent evidence. Generic evidence placeholders supply no additional primary result."
+        "The claims of enduring primitive boundary-to-interior regulation, otherwise unfavourable chemistry and stabilized internal networks remain hypotheses. Passive permeability, supplied pH conditions, modern phosphorylation machinery and driven-state definitions do not jointly instantiate a primitive transduction system."
       ]
     },
     {
@@ -371,9 +344,8 @@ export const BIOENERGETICS_RECORDS = {
         "No equilibrium constant or reaction Gibbs energy is measured by the reused KSI assays. This definition does not convert a turnover fit into thermodynamic data.",
         "Solute standard states based on concentration, molality or mole fraction differ. Grouped biochemical species and fixed proton conditions must be declared before using a biochemical reference quantity.",
         "Thermodynamic admissibility does not specify how quickly a preparation approaches its equilibrium, or establish a sustained network flux.",
-        "Rate and equilibrium definitions do not arise only after enzymes, cooperativity or metabolic cycles. The selected KSI turnover data contain no cooperative-site, whole-cycle, bulk-liquid-order or network-flux measurement establishing those catalogue parents as necessary causes.",
-        "Pathway efficiency, sustained throughput, steady-state maintenance, environmental adaptation and system-level regulatory organization are not measured by the selected variant assays. A driven steady state requires declared supply/removal and coupling conditions; a stationary composition alone does not establish equilibrium.",
-        "Original property/phase/level/science labels, established status, substrate/constraint, regulation/environment and gradient/information requirement codes are representation choices. Numerical parent weights 0.40/0.25/0.25/0.10, direction/mode/dependency codes, necessity and one- or two-carrier minima supply no measured hierarchy, criticality or quantitative rate law."
+        "Rate and equilibrium definitions do not arise only after enzymes, cooperativity or metabolic cycles. The selected KSI turnover data contain no cooperative-site, whole-cycle, bulk-liquid-order or network-flux measurement establishing those factors as necessary causes.",
+        "Pathway efficiency, sustained throughput, steady-state maintenance, environmental adaptation and system-level regulatory organization are not measured by the selected variant assays. A driven steady state requires declared supply/removal and coupling conditions; a stationary composition alone does not establish equilibrium."
       ]
     }
   ],
@@ -396,10 +368,6 @@ export const BIOENERGETICS_RECORDS = {
         {
           "sourceId": "iupac2007-green-book-kinetics-thermodynamics",
           "locator": "Green Book, 3rd ed., sections 2.11-2.11.1, pp. 58, 60-62: standard reaction Gibbs energy, reaction quotient, equilibrium constant and standard states"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/38"
         }
       ],
       "openObligations": [
@@ -407,8 +375,7 @@ export const BIOENERGETICS_RECORDS = {
         "External bulk pH alone does not determine internal pH, membrane potential, the total proton electrochemical potential difference, proton/ATP stoichiometry or energy-conversion efficiency.",
         "A driven steady state and chemical equilibrium are different conditions. Pumping can sustain a composition or electrochemical difference without changing the intrinsic equilibrium constant of an unchanged net reaction. A grouped biochemical apparent constant requires its own proton, metal and reference conventions.",
         "The original equilibrium-shaping language is qualified to imposed activities, electrochemical differences and explicitly coupled reactions. The intrinsic equilibrium constant of the same net reaction at fixed reference conditions does not change merely because a pump operates nearby.",
-        "The selected proton trace does not measure every neighbouring reaction quotient, kinetic bias, ATP/redox pump class, stable internal pH, ionic homeostasis or robust network operation. Channel conductance, ion-formation studies and separate pH-regulation systems are not matched causal prerequisites of this prepared pump.",
-        "Catalogue level, phase, process/property role, science/status strings and requirement categories are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, universal thresholds or independent evidence. Generic evidence placeholders supply no additional primary result."
+        "The selected proton trace does not measure every neighbouring reaction quotient, kinetic bias, ATP/redox pump class, stable internal pH, ionic homeostasis or robust network operation. Channel conductance, ion-formation studies and separate pH-regulation systems are not matched causal prerequisites of this prepared pump."
       ]
     },
     {
@@ -541,7 +508,7 @@ export const BIOENERGETICS_RECORDS = {
       "id": "bio:racker-coupling-interpretation",
       "name": "Bounded modern-vesicle chemiosmotic interpretation",
       "kind": "hypothesis",
-      "status": "evidence-scoped",
+      "status": "hypothesis",
       "level": 3,
       "description": "The separate proton-response and phosphorylation controls support the authors’ finite chemiosmotic energy-transduction interpretation in reconstituted protein-containing vesicles. They do not identify an altered intrinsic reaction equilibrium constant or demonstrate protein-free primordial coupling.",
       "claimIds": [
@@ -560,10 +527,6 @@ export const BIOENERGETICS_RECORDS = {
         {
           "sourceId": "racker1974-purple-vesicle-energy-transduction",
           "locator": "J. Biol. Chem. 249(2), 662-663, Results and Discussion: preferential orientation, pump/back-diffusion steady-state interpretation and chemiosmotic conclusion; distinct Figures 1-2 versus Table I preparations"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/24"
         }
       ],
       "openObligations": [
@@ -572,8 +535,7 @@ export const BIOENERGETICS_RECORDS = {
         "No complete gradient, energy-conversion efficiency, steady ATP synthesis flux, biochemical homeostasis, metabolic-cycle closure or origin-of-life claim follows.",
         "The proteins are obtained from modern biological systems. Their reconstitution supports a finite modern energy-transduction model; it does not demonstrate how a primitive membrane without those proteins could couple a gradient to chemistry.",
         "The positive scope is supplied modern protein machinery under externally supplied illumination and assay reagents. It does not establish universal ATP dependence, complete redox or metabolic cycling, regulated energy redistribution, robust supply or a universal energetic backbone for all higher biochemical organization.",
-        "Folded proteins and phosphorylation machinery are supplied preparation components; the experiment does not measure their formation or prove a universal necessary sequence from folding, enzyme catalysis and metabolic cycles. General kinetics/thermodynamics supply bookkeeping, not an additional acquired parent mechanism.",
-        "Catalogue level, phase, process/property role, science/status strings and requirement categories are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, universal thresholds or independent evidence. Generic evidence placeholders supply no additional primary result."
+        "Folded proteins and phosphorylation machinery are supplied preparation components; the experiment does not measure their formation or prove a universal necessary sequence from folding, enzyme catalysis and metabolic cycles. General kinetics/thermodynamics supply bookkeeping, not an additional acquired precursor mechanism."
       ]
     },
     {
@@ -582,15 +544,11 @@ export const BIOENERGETICS_RECORDS = {
       "kind": "hypothesis",
       "status": "hypothesis",
       "level": 3,
-      "description": "The catalogue hypothesis that a primitive boundary can couple an electrochemical gradient to internal chemistry remains unestablished by the primary evidence reviewed here. The modern protein-containing Racker preparation does not supply direct evidence for that protein-free primitive coupling claim.",
+      "description": "The hypothesis that a primitive boundary can couple an electrochemical gradient to internal chemistry remains unestablished by the primary evidence reviewed here. The modern protein-containing Racker preparation does not supply direct evidence for that protein-free primitive coupling claim.",
       "claimIds": [
         "C-bio-primitive-chemiosmotic-coupling-open"
       ],
       "sourceCoordinates": [
-        {
-          "sourceId": "legacy-3",
-          "locator": "/47"
-        },
         {
           "sourceId": "racker1974-purple-vesicle-energy-transduction",
           "locator": "J. Biol. Chem. 249(2), 662-663, Materials and Methods: ATP formation assay; Results and Discussion: mitochondrial fraction/coupling-factor and lipid dependence; Table I caption and qualitative control comparisons"
@@ -600,8 +558,7 @@ export const BIOENERGETICS_RECORDS = {
         "The selected review contains no directly observed gradient-to-reaction coupling in a protein-free primitive boundary. This is an evidence-scope gap, not an exhaustive absence-of-literature result or proof of impossibility.",
         "Gradient formation, retention or passive equilibration alone does not establish productive coupling to an internal reaction, regulation of a network, self-maintenance or a historical primordial pathway.",
         "No carrier count, protocell threshold, necessary developmental hierarchy or physical instance is admitted. No experimental design or optimization is proposed.",
-        "The original claims of enduring primitive boundary-to-interior regulation, otherwise unfavourable chemistry and stabilized internal networks remain hypotheses. Passive permeability, supplied pH conditions, modern phosphorylation machinery and driven-state definitions do not jointly instantiate a primitive transduction system.",
-        "Catalogue level, phase, process/property role, science/status strings and requirement categories are representation choices. Original parent weights, necessity, directions/modes, carrier minima/critical counts and null saturation are not measured causal fractions, universal thresholds or independent evidence. Generic evidence placeholders supply no additional primary result."
+        "The claims of enduring primitive boundary-to-interior regulation, otherwise unfavourable chemistry and stabilized internal networks remain hypotheses. Passive permeability, supplied pH conditions, modern phosphorylation machinery and driven-state definitions do not jointly instantiate a primitive transduction system."
       ]
     },
     {
@@ -618,19 +575,14 @@ export const BIOENERGETICS_RECORDS = {
         {
           "sourceId": "iupac2007-green-book-kinetics-thermodynamics",
           "locator": "Green Book, 3rd ed., sections 2.11-2.11.1, pp. 58, 60-62: standard reaction Gibbs energy, reaction quotient, equilibrium constant and standard states"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/21"
         }
       ],
       "openObligations": [
         "No equilibrium constant or reaction Gibbs energy is measured by the reused KSI assays. This definition does not convert a turnover fit into thermodynamic data.",
         "Solute standard states based on concentration, molality or mole fraction differ. Grouped biochemical species and fixed proton conditions must be declared before using a biochemical reference quantity.",
         "Thermodynamic admissibility does not specify how quickly a preparation approaches its equilibrium, or establish a sustained network flux.",
-        "Rate and equilibrium definitions do not arise only after enzymes, cooperativity or metabolic cycles. The selected KSI turnover data contain no cooperative-site, whole-cycle, bulk-liquid-order or network-flux measurement establishing those catalogue parents as necessary causes.",
-        "Pathway efficiency, sustained throughput, steady-state maintenance, environmental adaptation and system-level regulatory organization are not measured by the selected variant assays. A driven steady state requires declared supply/removal and coupling conditions; a stationary composition alone does not establish equilibrium.",
-        "Original property/phase/level/science labels, established status, substrate/constraint, regulation/environment and gradient/information requirement codes are representation choices. Numerical parent weights 0.40/0.25/0.25/0.10, direction/mode/dependency codes, necessity and one- or two-carrier minima supply no measured hierarchy, criticality or quantitative rate law."
+        "Rate and equilibrium definitions do not arise only after enzymes, cooperativity or metabolic cycles. The selected KSI turnover data contain no cooperative-site, whole-cycle, bulk-liquid-order or network-flux measurement establishing those factors as necessary causes.",
+        "Pathway efficiency, sustained throughput, steady-state maintenance, environmental adaptation and system-level regulatory organization are not measured by the selected variant assays. A driven steady state requires declared supply/removal and coupling conditions; a stationary composition alone does not establish equilibrium."
       ]
     }
   ],
@@ -843,7 +795,7 @@ export const BIOENERGETICS_RECORDS = {
     {
       "nodeId": "bio:primitive-chemiosmotic-coupling-open",
       "role": "hypothesis",
-      "denotes": "Explicit unresolved interpretation of original card 3.47, not a claim that such coupling is impossible.",
+      "denotes": "Explicit unresolved interpretation of chemiosmotic energy transduction in proto-membranes, not a claim that such coupling is impossible.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-bio-primitive-chemiosmotic-coupling-open"

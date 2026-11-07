@@ -21,7 +21,7 @@ const compact = (value) => `${JSON.stringify(value)}\n`;
 
 function fixture(description = "A scoped response with quoted \"inputs\", a line\nbreak and \u03bc normalization.") {
   return buildModelPack({
-    model: { id: "canonical-serialization-fixture", name: "Serialization fixture", version: "2026.10.02.8" },
+    model: { id: "canonical-serialization-fixture", name: "Serialization fixture", version: "1" },
     source: { id: "fixture-source", files: [{ path: "selected-data.json", hash: hashArtifactBytes(new TextEncoder().encode("selected input\n")) }] },
     nodes: [{ id: "input", description }, { id: "result", description: "Conditional result" }],
     edges: [{ id: "input-result", source: "input", target: "result", role: "interpretation-dependency" }],
@@ -61,7 +61,7 @@ test("canonical entities retain source descriptions and evidence without generat
       scope: { summary: "A scoped presentation fixture" }, entities: [entity], rules: [rule],
       relations: [], sources: [publication], claims: [claim], interactionCases: [], interactionAnalogies: [] },
     readiness: { nodeRoles: [{ nodeId: "entity", role: "definition" }, { nodeId: "rule", role: "rule-specification" }] },
-    dictionaryReview: { records: [] }, pilot: { studies: [] },
+    pilot: { studies: [] },
     routing: { studies: [], contexts: [], reviews: [], measurements: [], routes: [] }, routingPolicy: {},
     optics: { studies: [] }, visual: { studies: [] }, neural: { studies: [] }, physics: { studies: [] }
   };
@@ -114,7 +114,7 @@ test("repeated passage citations retain complete claim-local evidence after seri
       sources: [publication, alternative], claims: [first, second], interactionCases: [], interactionAnalogies: [] },
     readiness: { nodeRoles: [{ nodeId: entity.id, role: "scoped-phenomenon", denotes: entity.description,
       instanceAdmission: "none", claimIds: entity.claimIds }] },
-    dictionaryReview: { records: [] }, pilot: { studies: [study] },
+    pilot: { studies: [study] },
     routing: { studies: [], contexts: [], reviews: [], measurements: [], routes: [] }, routingPolicy: {},
     optics: { studies: [] }, visual: { studies: [] }, neural: { studies: [] }, physics: { studies: [] }
   };
@@ -332,15 +332,15 @@ test("canonical release inventory and invalid-pack failures do not repair immuta
 
 test("transport encoding failures leave no immutable release directory", async () => {
   await withDirectory(async (directory) => {
-    // Each scalar is canonical JSON; their escaped expansion exceeds the
-    // codec's 64 MiB bound even though semantic pack validation succeeds.
+    // Each scalar is canonical JSON; their escaped expansion exceeds a lowered
+    // 64 MiB codec bound even though semantic pack validation succeeds.
     const pack = buildModelPack({
       model: { id: "encoding-preflight", name: "Encoding preflight", version: "1" },
       source: { id: "fixture-source", files: [] },
       nodes: [{ id: "a", evidence: Array(11).fill("\u0000".repeat(1_048_576)) }],
       edges: [], dictionaries: {}
     });
-    await assert.rejects(() => writeCanonicalRelease(pack, directory, { transportEncoding: "value-table-v1" }),
+    await assert.rejects(() => writeCanonicalRelease(pack, directory, { transportEncoding: "value-table-v1", transportLimits: { maxBytes: 64 * 1024 * 1024 } }),
       (error) => error.code === "MODEL_PACK_JSON_VALUE_TABLE_LIMIT_EXCEEDED");
     await assert.rejects(() => stat(directory), (error) => error.code === "ENOENT",
       "A codec rejection must not strand a partial immutable version");

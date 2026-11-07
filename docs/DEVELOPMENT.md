@@ -61,10 +61,7 @@ the separately pinned reference environment. Set `PYTHONUTF8=1` and
 | `npm run model-studio:data:verify` | Exact browser projection, detail chunks, review files and their pinned index |
 | `npm run check:public-revisions` | Coherent public module revisions |
 | `npm run check:worker` | Reproducible browser worker bundle |
-| `npm run audit:catalogue` | Preserved source-catalogue audit |
-| `npm run audit:references` | Complete legacy source JSON census, schema defects, missing bibliography and dictionary consistency; diagnostic, not a clean-data gate |
 | `npm run check:canonical` | Current source schema, claim and vocabulary contracts, mathematical witnesses, retinal data and exact current output verification |
-| `npm run model:causal-emergence:legacy:verify` | Exact reproduction of the historical `2026.08.15` catalogue |
 | `npm run structural-geometry:check` | Combined geometry evidence and independent references |
 | `npm run structural-geometry:added-value:check` | Frozen synthetic added-value study, coverage and baselines |
 | `npm run history-benchmark:check` | History Matters sources, replay and registry |
@@ -134,10 +131,7 @@ writing. Use case-specific `:verify` or `:check` commands for normal work;
 
 Source facts in `references/` and upstream archives retain their exact content
 and terms. Model Pack `releases/` directories are immutable dataset artifacts;
-they are not a software changelog. The geometry baseline verifier's
-`--compatibility` mode checks its pinned compatibility subset; its complete
-pre-regime inventory is an earlier computational snapshot, not the current
-repository file census.
+they are not a software changelog.
 
 ## Browser and publication checks
 

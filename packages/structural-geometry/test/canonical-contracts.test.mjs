@@ -52,7 +52,7 @@ test("schema and runtime both require the implemented exact regime and reject pa
   }
 });
 
-test("browser computation and exact source replay reproduce all 17 canonical observations", async () => {
+test("browser computation and exact source replay reproduce all 16 canonical observations", async () => {
   assert.equal(portableCanonicalize, rootCanonicalize);
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/canonical.js", import.meta.url))],
     bundle: true, platform: "browser", format: "iife", globalName: "Canonical", write: false, logLevel: "silent" });

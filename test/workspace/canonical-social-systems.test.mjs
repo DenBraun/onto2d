@@ -1,13 +1,11 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { loadCanonicalSource, validateCanonicalSource } from "../../models/causal-emergence/canonical/source.mjs";
-import { SOCIAL_SYSTEMS_RECORDS, SOCIAL_SYSTEMS_CARD_SCOPES, isReviewedSocialSystemsDescription } from "../../models/causal-emergence/canonical/level-seven.mjs";
-import { socialSystemsCards } from "../../models/causal-emergence/canonical/social-systems.mjs";
+import { SOCIAL_SYSTEMS_RECORDS, SOCIAL_SYSTEMS_SCOPES, isReviewedSocialSystemsDescription } from "../../models/causal-emergence/canonical/level-seven.mjs";
+import { socialSystemsScopes } from "../../models/causal-emergence/canonical/social-systems.mjs";
 import { publicationIdentity } from "../../models/causal-emergence/canonical/publication-identity.mjs";
 
 const data = await loadCanonicalSource();
-const originals = JSON.parse(await readFile(new URL("../../references/level-7.json", import.meta.url)));
 const claims = new Map(data.graph.claims.map((claim) => [claim.id, claim]));
 const sources = new Map(data.graph.sources.map((source) => [source.id, source]));
 const studies = new Map(Object.values(data).flatMap((ledger) => ledger?.studies ?? []).map((study) => [study.id, study]));
@@ -17,27 +15,24 @@ const reject = (mutate, pattern) => {
   assert.throws(() => validateCanonicalSource(changed), pattern);
 };
 
-test("all 25 Level-7 topics preserve their ordered dependencies and all 75 original references", () => {
-  assert.equal(SOCIAL_SYSTEMS_CARD_SCOPES.length, 25);
-  assert.deepEqual(data.socialSystems.cards, socialSystemsCards(data.graph));
-  assert.equal(data.socialSystems.cards.reduce((n, card) => n + card.bibliography.length, 0), 75);
-  for (const card of data.socialSystems.cards) {
-    const original = originals[card.sourceIndex];
-    assert.equal(card.originalName, original.Name);
-    assert.deepEqual(card.parentDispositions.map((entry) => entry.parentCode), original.Parents.map((entry) => entry.ParentCode));
-    assert.deepEqual(card.bibliography.map((entry) => entry.sourceIndex), original.Evidence.map((_, i) => i));
-    for (const entry of card.bibliography) assert.ok(sources.get(entry.sourceId).review.locators.includes(entry.locator));
-    for (const entry of [...card.assertions, ...card.parentDispositions]) assert.ok(entry.reason.length && entry.claimIds.length);
+test("all 25 Level-7 topic scopes name their scope node, claims and open questions", () => {
+  assert.equal(SOCIAL_SYSTEMS_SCOPES.length, 25);
+  assert.deepEqual(data.socialSystems.scopes, socialSystemsScopes(data.graph));
+  const entities = new Map(data.graph.entities.map((entity) => [entity.id, entity]));
+  for (const scope of data.socialSystems.scopes) {
+    assert.equal(scope.nodeIds[0], scope.id);
+    assert.equal(entities.get(scope.id).name, `${scope.name}: reviewed scope`);
+    assert.ok(scope.scope.length && scope.claimIds.every((id) => claims.has(id)));
+    assert.ok(scope.sourceIds.every((id) => sources.has(id)));
+    assert.ok(Array.isArray(scope.unresolved));
   }
 });
 
-test("assertion, dependency and bibliography decisions cannot vanish or be promoted silently", () => {
+test("topic scopes and review status cannot vanish or be promoted silently", () => {
   for (const mutate of [
-    (d) => d.socialSystems.cards.pop(),
-    (d) => d.socialSystems.cards[0].assertions.pop(),
-    (d) => d.socialSystems.cards[0].parentDispositions.reverse(),
-    (d) => d.socialSystems.cards[0].bibliography.pop(),
-    (d) => { d.socialSystems.cards[0].bibliography[0].disposition = "primary-evidence"; },
+    (d) => d.socialSystems.scopes.pop(),
+    (d) => d.socialSystems.scopes[0].claimIds.pop(),
+    (d) => { d.socialSystems.scopes[0].scope = "A universal social construction law."; },
     (d) => { d.socialSystems.independentScientificReviewComplete = true; },
     (d) => { d.socialSystems.checkIds = ["objecthood-negative"]; }
   ]) reject(mutate);
@@ -59,16 +54,13 @@ test("findings retain actual study designs and nulls have no synthetic negative-
   assert.equal(new Set(ids).size, ids.length, "Preparations are not copied into a second ledger");
 });
 
-test("documentary rules and unread book metadata do not become experimental evidence", () => {
+test("documentary rules do not become experimental evidence", () => {
   const documentary = SOCIAL_SYSTEMS_RECORDS.sources.filter((source) => source.kind === "primary-document");
   assert.ok(documentary.length);
   for (const source of documentary) {
     assert.ok(!data.socialSystems.studies.some((study) => study.sourceId === source.id));
     for (const claim of SOCIAL_SYSTEMS_RECORDS.claims.filter((claim) => claim.citations.some((citation) => citation.sourceId === source.id))) assert.equal(claim.status, "definition");
   }
-  const metadata = new Set(SOCIAL_SYSTEMS_RECORDS.sources.filter((source) => /metadata-only/.test(source.review.extent)).map((source) => source.id));
-  assert.ok(metadata.size);
-  assert.ok(!data.socialSystems.studies.some((study) => metadata.has(study.sourceId)));
 });
 
 test("physical-support links require matched experimental endpoints; observed associations and models stay descriptive", () => {
@@ -96,18 +88,18 @@ test("new IDs cannot launder reviewed publications, findings, acquisitions or co
     sourceId: d.socialSystems.studies[0].sourceId, doi: d.socialSystems.studies[0].doi }), /social-systems study/);
 });
 
-test("original catalogue provenance cannot escape social admission through retinal IDs or borrowed experiments", () => {
-  const catalogue = { sourceId: "legacy-7", locator: "/0", role: "provenance",
-    note: "The catalogue supplies this unreviewed social interpretation." };
-  reject((d) => d.graph.claims.push({ id: "D-unreviewed-catalogue", kind: "author-definition",
-    statement: "An additional social interpretation outside the reviewed inventory.", scope: "Source card 7.0",
-    status: "definition", citations: [catalogue], checkIds: [], limitations: ["No independent validation."] }), /Unreviewed social-systems claim/);
+test("internal review provenance cannot escape social admission through retinal IDs or borrowed experiments", () => {
+  const review = { sourceId: "social-systems-review", locator: "studies", role: "provenance",
+    note: "The internal review supplies this unreviewed social interpretation." };
+  reject((d) => d.graph.claims.push({ id: "D-unreviewed-review-note", kind: "author-definition",
+    statement: "An additional social interpretation outside the reviewed inventory.", scope: "Unreviewed topic",
+    status: "definition", citations: [review], checkIds: [], limitations: ["No independent validation."] }), /Unreviewed social-systems claim/);
 
   const addNode = (d, id, claimId, kind, status) => {
-    const description = "Catalogue provenance remains social under a different namespace.";
+    const description = "Review provenance remains social under a different namespace.";
     d.graph.entities.push({ id, name: "Unreviewed social interpretation", kind,
       description, claimIds: [claimId], status,
-      sourceCoordinates: [{ sourceId: "legacy-7", locator: "/0" }], openObligations: ["No independent validation."], level: 7 });
+      sourceCoordinates: [{ sourceId: "social-systems-review", locator: "studies" }], openObligations: ["No independent validation."], level: 7 });
     d.readiness.nodeRoles.splice(d.graph.entities.length - 1, 0, { nodeId: id,
       role: kind === "definition" ? "definition" : "scoped-phenomenon", denotes: description,
       instanceAdmission: "none", claimIds: [claimId] });
@@ -119,7 +111,7 @@ test("original catalogue provenance cannot escape social admission through retin
     const claim = structuredClone(d.graph.claims.find((record) => record.id === "P-baylor1979"));
     claim.id = "P-unreviewed-social-necessity";
     claim.statement = "An unrelated retinal experiment establishes a necessary social dependency.";
-    claim.citations.push({ ...catalogue, role: "supports" });
+    claim.citations.push({ ...review, role: "supports" });
     d.graph.claims.push(claim);
     return claim;
   };
@@ -151,34 +143,27 @@ test("reviewed citation and preparation boundaries cannot expand through metadat
     (d) => { d.socialSystems.studies[0].readExtent = "complete-independent-reproduction"; },
     (d) => { d.socialSystems.studies[0].studyType = "computational-analysis"; },
     (d) => { d.graph.sources.find((source) => source.id === "social-systems-review").kind = "research-publication"; },
-    (d) => { d.graph.entities.find((entity) => entity.id.startsWith("soc:")).Weight = 0.5; }
+    (d) => { d.graph.entities.find((entity) => entity.id.startsWith("soc:")).causalWeight = 0.5; }
   ]) reject(mutate);
 });
 
-test("all original source cards have explicit scope decisions without claiming complete scientific validation", async () => {
-  const pending = JSON.parse(await readFile(new URL("../../references/canonical/pending-review.json", import.meta.url)));
-  assert.deepEqual(pending.cards, []);
-  assert.equal(data.socialSystems.independentScientificReviewComplete, false);
-});
 
 test("DOI mirrors, PLOS print views and Google Books pages retain publication identity without merging different resources", () => {
-  const doiBook = sources.get("north1990-institutions");
-  assert.equal(doiBook.doi, null, "The DOI is carried by the registered source URL in this case");
-  const doiIdentity = publicationIdentity(doiBook.url);
+  const doiPaper = sources.get("henrich2001-prestige");
+  const doiIdentity = publicationIdentity(`https://doi.org/${doiPaper.doi}`);
   assert.match(doiIdentity, /^doi:10\./);
-  reject((d) => d.graph.sources.push({ ...doiBook, id: "aliased-doi-book",
-    doi: doiIdentity.slice(4), url: "https://example.test/north1990-mirror" }), /publication alias/);
+  reject((d) => d.graph.sources.push({ ...doiPaper, id: "aliased-doi-paper", url: "https://example.test/henrich2001-mirror" }), /publication alias/);
+  reject((d) => d.graph.sources.push({ ...doiPaper, id: "url-only-doi-paper", doi: null, url: `https://doi.org/${doiPaper.doi}` }), /publication alias/);
   const paper = sources.get("mesoudi2016-migrant-cultural-profiles");
   const print = new URL(paper.url); print.searchParams.set("view", "print");
   assert.equal(publicationIdentity(print.href), publicationIdentity(`https://doi.org/${paper.doi}`));
   reject((d) => d.graph.sources.push({ ...paper, id: "aliased-migrant-paper", doi: null, url: print.href }), /publication alias/);
-  const book = sources.get("tinbergen1951-instinct");
-  const page = new URL(book.url); page.searchParams.set("pg", "PA10"); page.searchParams.set("jscmd", "SearchWithinVolume2");
-  assert.equal(publicationIdentity(page.href), publicationIdentity(book.url));
-  reject((d) => d.graph.sources.push({ ...book, id: "aliased-instinct-book", url: page.href }), /publication alias/);
-  const distinct = new URL(book.url); distinct.searchParams.set("id", "another-volume");
-  assert.notEqual(publicationIdentity(distinct.href), publicationIdentity(book.url));
-  assert.notEqual(publicationIdentity("https://example.test/catalogue?id=first"), publicationIdentity("https://example.test/catalogue?id=second"));
+  const book = "https://books.google.com/books/about/Example.html?id=hEGTugAACAAJ";
+  const page = new URL(book); page.searchParams.set("pg", "PA10"); page.searchParams.set("jscmd", "SearchWithinVolume2");
+  assert.equal(publicationIdentity(page.href), publicationIdentity(book));
+  const distinct = new URL(book); distinct.searchParams.set("id", "another-volume");
+  assert.notEqual(publicationIdentity(distinct.href), publicationIdentity(book));
+  assert.notEqual(publicationIdentity("https://example.test/records?id=first"), publicationIdentity("https://example.test/records?id=second"));
 });
 
 test("the neural reuse exception accepts only exact descriptive links and does not change prior findings", () => {
@@ -197,15 +182,13 @@ test("ant cue units and fish choice endpoints retain their source conflicts rath
 });
 
 test("published corrections remain reachable from the affected language and cultural-profile claims", () => {
-  for (const [code, notice] of [["7.12", "kirby2017-language-si-correction"], ["7.22", "mesoudi2018-migrant-table-correction"]]) {
-    const card = data.socialSystems.cards.find((record) => record.code === code);
-    assert.ok(card.sourceIds.includes(notice));
-    assert.ok(card.claimIds.some((id) => claims.get(id).citations.some((citation) => citation.sourceId === notice && citation.role === "limits")));
+  for (const [id, notice] of [["soc:cultural-linguistic-change-scope", "kirby2017-language-si-correction"], ["soc:transculturation-scope", "mesoudi2018-migrant-table-correction"]]) {
+    const scope = data.socialSystems.scopes.find((record) => record.id === id);
+    assert.ok(scope.sourceIds.includes(notice));
+    assert.ok(scope.claimIds.some((id) => claims.get(id).citations.some((citation) => citation.sourceId === notice && citation.role === "limits")));
   }
   assert.match(sources.get("kirby2017-language-si-correction").review.limit, /replacement table.*not inspected/);
   assert.match(sources.get("mesoudi2018-migrant-table-correction").review.limit, /swaps.*first-generation.*non-migrant/);
-  assert.equal(sources.get("smith1776-wealth").year, 1776);
-  assert.equal(sources.get("shapin1994-history-truth").year, 1994);
 });
 
 test("ordered social-exclusion imaging is not a selective neural intervention or evidence of measured belief", () => {

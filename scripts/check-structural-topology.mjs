@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   ["python3", ["-B", "cases/structural-geometry/topology/reference.py", "--verify"]],
   [process.execPath, ["cases/structural-geometry/topology/build.mjs", "--verify"]],
   ["python3", ["-B", "cases/structural-geometry/topology/reference.py", "--verify-artifacts"]],
@@ -15,4 +14,4 @@ for (const [command, args] of [
   if (result.error) console.error(result.error.message);
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
-console.log("Topology checks passed: independent directed summaries, documented collisions, portable contracts and exact legacy compatibility.");
+console.log("Topology checks passed: independent directed summaries, documented collisions and portable contracts.");

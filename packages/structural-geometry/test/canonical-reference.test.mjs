@@ -20,7 +20,7 @@ test("all 720 relabelings of the declared six-node directed control retain the e
 test("independent Python permutations regenerate expectations and verify all stored directed mapping witnesses", async () => {
   const reference = await readJson("reference.json");
   await verifyReferenceSources(reference);
-  for (const field of ["controlsFileSha256", "causalFileSha256"]) {
+  for (const field of ["controlsFileSha256"]) {
     await assert.rejects(() => verifyReferenceSources({ ...reference, [field]: "0".repeat(64) }), /source binding differs/);
   }
   const script = fileURLToPath(new URL("../../../cases/structural-geometry/canonical/reference.py", import.meta.url));

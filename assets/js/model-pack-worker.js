@@ -629,7 +629,7 @@ function isContentHash(value) {
 
 // packages/model-pack/src/canonical-options.js
 var MODEL_PACK_CANONICAL_OPTIONS = Object.freeze({
-  limits: Object.freeze({ maxEntries: 1e6 })
+  limits: Object.freeze({ maxEntries: 4e6 })
 });
 
 // packages/model-pack/src/model-pack-error.js
@@ -646,8 +646,8 @@ var ModelPackError = class extends Error {
 var FORMAT = "onto2d-json-value-table";
 var VERSION = "1";
 var DEFAULT_LIMITS2 = Object.freeze({
-  maxBytes: 64 * 1024 * 1024,
-  maxEntries: 1e6,
+  maxBytes: 256 * 1024 * 1024,
+  maxEntries: 4e6,
   maxDepth: 64,
   maxStringBytes: 1024 * 1024
 });
@@ -1328,7 +1328,7 @@ function inspectTransportOptions(value, code, subject) {
   }
   return entries;
 }
-function verifyTransportFiles(values, { maxTotalBytes = 64 * 1024 * 1024 } = {}) {
+function verifyTransportFiles(values, { maxTotalBytes = 256 * 1024 * 1024 } = {}) {
   let expandedBytes = 0;
   function decoded(relative) {
     const remaining = maxTotalBytes - expandedBytes;
@@ -1367,8 +1367,8 @@ function verifyTransportFiles(values, { maxTotalBytes = 64 * 1024 * 1024 } = {})
 
 // packages/model-pack/src/browser.js
 var MODEL_PACK_BROWSER_LIMITS = Object.freeze({
-  maxFileBytes: 16 * 1024 * 1024,
-  maxTotalBytes: 64 * 1024 * 1024,
+  maxFileBytes: 64 * 1024 * 1024,
+  maxTotalBytes: 256 * 1024 * 1024,
   maxBundleBytes: 64 * 1024 * 1024,
   maxUrlLength: 16384
 });

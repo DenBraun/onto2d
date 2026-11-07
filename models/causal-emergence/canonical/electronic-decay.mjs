@@ -429,7 +429,7 @@ const contracts = {
       "id": "C-phys-electronic-decay-source-scope",
       "kind": "review-finding",
       "statement": "The reviewed primary experiment supports a finite electronic-state sensitivity of one nuclear channel: fitted orbital EC of stored H-like 140Pr58+ is faster than He-like 140Pr57+, while the measured beta+ partial rates agree within their reported errors. The Schottky acquisition, loss-corrected nuclear-rate inference and conditional hyperfine explanation remain separate roles within the same publication. This positive case constrains an occupancy-only story and does not extend to every nuclear decay or ordinary chemical environment.",
-      "scope": "Scoped replacement for original Level 2 card /18 using one isotope-specific primary charge-state experiment.",
+      "scope": "Scope for electronic-environment sensitivity of selected nuclear decay channels using one isotope-specific primary charge-state experiment.",
       "status": "publication-supported",
       "citations": [
         {
@@ -455,30 +455,17 @@ const contracts = {
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor",
           "role": "supports",
           "note": "Supports the declared source-reported preparation, population fit or conditional interpretation only; no independent replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original card /18 supplies draft scope and asserted metadata only; it is not empirical support."
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original parent catalogue JSON pointer: /12, Particle Decays. The broad draft category and its metadata do not supply an empirical Pr140 channel, rate or causal weight."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.2 and 1.12, weights 0.35/0.65, downward-causation/constraint codes and carrier group1/type1 N_min=N_crit=1 and N_sat=null are not established causal or numerical thresholds. The catalogue group/type pairing is inconsistent with the carrier dictionary and is not resolved as a physical particle type. The prose diagonal/SOMA label does not resolve or validate those coded directions.",
         "Ionization preserves the prepared parent isotope, but EC itself converts Pr to Ce. No invariant nuclear identity through decay, changed intrinsic nuclear matrix element, universal nuclear-electronic coupling law or newly generated cross-level rule is demonstrated.",
         "This finite highly ionized EC comparison does not establish molecular, chemical-bonding or solid-state/lattice effects, a universal density-at-the-nucleus coefficient, or how most ordinary decay modes respond to chemistry. Other isotopes and bound-beta cases cited in the source introduction are outside the primary admission.",
         "Orbital occupancy, nuclear/lepton angular momentum and assumed hyperfine populations are distinct dependencies; fewer electrons do not imply a universally slower EC rate. The source beta+ agreement is limited by its reported precision and is not proof that all beta, alpha or gamma rates are exactly environment-independent.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 3 Property, science tags, well-supported status and SOMA diagonal linkage supply no measured developmental phase, carrier minimum or universal causal hierarchy.",
-        "Theoretical and empirical Evidence placeholders have null publication identifiers. Replace them with the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
-        "Constraint/resource requirement codes do not supply physical thresholds. The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
-        "Original parent 1.12, Particle Decays, is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no measured 0.65 causal weight, unit carrier minimum, universal daughter stability or general cosmological population law."
+        "Level 2 is a display grouping.",
+        "This admission uses the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
+        "The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
+        "Particle decay is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no universal daughter stability or general cosmological population law."
       ],
       "contextIds": [
         "litvinov2007-pr-charge-states"
@@ -487,7 +474,7 @@ const contracts = {
     {
       "id": "M-phys-electronic-decay-source-scope",
       "kind": "method",
-      "statement": "Join the source Schottky intensities, fitted EC/beta+ partial rates and conditional hyperfine interpretation only within the same Pr140 charge-state experiment. Retain loss and time-frame conventions, initial isotope versus daughter identity, magnetic-moment/population assumptions and finite precision. Do not convert one acquisition into multiple confirmations or infer generic chemical effects, universal decay control, old parent weights or particle minima.",
+      "statement": "Join the source Schottky intensities, fitted EC/beta+ partial rates and conditional hyperfine interpretation only within the same Pr140 charge-state experiment. Retain loss and time-frame conventions, initial isotope versus daughter identity, magnetic-moment/population assumptions and finite precision. Do not convert one acquisition into multiple confirmations or infer generic chemical effects or universal decay control.",
       "scope": "Interpretation dependencies for the finite Pr140 electronic-environment decay case.",
       "status": "method-contract",
       "citations": [
@@ -514,24 +501,17 @@ const contracts = {
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor",
           "role": "method",
           "note": "Supports the declared source-reported preparation, population fit or conditional interpretation only; no independent replay."
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original parent catalogue JSON pointer: /12, Particle Decays. The broad draft category and its metadata do not supply an empirical Pr140 channel, rate or causal weight."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original necessary parents 2.2 and 1.12, weights 0.35/0.65, downward-causation/constraint codes and carrier group1/type1 N_min=N_crit=1 and N_sat=null are not established causal or numerical thresholds. The catalogue group/type pairing is inconsistent with the carrier dictionary and is not resolved as a physical particle type. The prose diagonal/SOMA label does not resolve or validate those coded directions.",
         "Ionization preserves the prepared parent isotope, but EC itself converts Pr to Ce. No invariant nuclear identity through decay, changed intrinsic nuclear matrix element, universal nuclear-electronic coupling law or newly generated cross-level rule is demonstrated.",
         "This finite highly ionized EC comparison does not establish molecular, chemical-bonding or solid-state/lattice effects, a universal density-at-the-nucleus coefficient, or how most ordinary decay modes respond to chemistry. Other isotopes and bound-beta cases cited in the source introduction are outside the primary admission.",
         "Orbital occupancy, nuclear/lepton angular momentum and assumed hyperfine populations are distinct dependencies; fewer electrons do not imply a universally slower EC rate. The source beta+ agreement is limited by its reported precision and is not proof that all beta, alpha or gamma rates are exactly environment-independent.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 3 Property, science tags, well-supported status and SOMA diagonal linkage supply no measured developmental phase, carrier minimum or universal causal hierarchy.",
-        "Theoretical and empirical Evidence placeholders have null publication identifiers. Replace them with the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
-        "Constraint/resource requirement codes do not supply physical thresholds. The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
-        "Original parent 1.12, Particle Decays, is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no measured 0.65 causal weight, unit carrier minimum, universal daughter stability or general cosmological population law."
+        "Level 2 is a display grouping.",
+        "This admission uses the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
+        "The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
+        "Particle decay is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no universal daughter stability or general cosmological population law."
       ],
       "contextIds": [
         "litvinov2007-pr-charge-states"
@@ -728,25 +708,16 @@ const contracts = {
         {
           "sourceId": "litvinov2007-pr-ec",
           "locator": "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original necessary parents 2.2 and 1.12, weights 0.35/0.65, downward-causation/constraint codes and carrier group1/type1 N_min=N_crit=1 and N_sat=null are not established causal or numerical thresholds. The catalogue group/type pairing is inconsistent with the carrier dictionary and is not resolved as a physical particle type. The prose diagonal/SOMA label does not resolve or validate those coded directions.",
         "Ionization preserves the prepared parent isotope, but EC itself converts Pr to Ce. No invariant nuclear identity through decay, changed intrinsic nuclear matrix element, universal nuclear-electronic coupling law or newly generated cross-level rule is demonstrated.",
         "This finite highly ionized EC comparison does not establish molecular, chemical-bonding or solid-state/lattice effects, a universal density-at-the-nucleus coefficient, or how most ordinary decay modes respond to chemistry. Other isotopes and bound-beta cases cited in the source introduction are outside the primary admission.",
         "Orbital occupancy, nuclear/lepton angular momentum and assumed hyperfine populations are distinct dependencies; fewer electrons do not imply a universally slower EC rate. The source beta+ agreement is limited by its reported precision and is not proof that all beta, alpha or gamma rates are exactly environment-independent.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 3 Property, science tags, well-supported status and SOMA diagonal linkage supply no measured developmental phase, carrier minimum or universal causal hierarchy.",
-        "Theoretical and empirical Evidence placeholders have null publication identifiers. Replace them with the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
-        "Constraint/resource requirement codes do not supply physical thresholds. The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
-        "Original parent 1.12, Particle Decays, is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no measured 0.65 causal weight, unit carrier minimum, universal daughter stability or general cosmological population law."
+        "Level 2 is a display grouping.",
+        "This admission uses the actual primary charge-state experiment and its conditional source interpretation; no ordinary chemical intervention, broad literature survey, oscillation signal or independent numerical replay is claimed.",
+        "The selected projectile production, cooling, vacuum and Schottky pickup are preparation/readout context; no universal sustained resource requirement for nuclear decay is inferred.",
+        "Particle decay is a broad category of unstable-state transformations under symmetry, conservation and interaction-channel constraints. Its lifetime and branching vocabulary does not determine the Pr140 EC/beta+ channel partition, bound-electron or hyperfine preparation, beam-loss correction or laboratory/rest-frame model. It supplies no universal daughter stability or general cosmological population law."
       ]
     }
   ],
@@ -757,7 +728,7 @@ const contracts = {
       "target": "phys:orbital-ec-channel-boundary",
       "kind": "descriptive",
       "role": "definition-dependency",
-      "assertion": "Specify an already supplied ionic electronic state and distinguish nuclear orbital capture from atomic neutralization; this does not establish an old necessary parent or formation sequence.",
+      "assertion": "Specify an already supplied ionic electronic state and distinguish nuclear orbital capture from atomic neutralization; this does not establish a formation sequence.",
       "claimIds": [
         "D-phys-orbital-ec-channel-boundary"
       ]
@@ -930,7 +901,7 @@ const contracts = {
     {
       "nodeId": "phys:electronic-decay-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /18 using one isotope-specific primary charge-state experiment.",
+      "denotes": "Scope for electronic-environment sensitivity of selected nuclear decay channels using one isotope-specific primary charge-state experiment.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-electronic-decay-source-scope"
@@ -978,24 +949,6 @@ const contracts = {
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "litvinov2007-pr-ec",
       "kind": "research-publication",
@@ -1057,7 +1010,7 @@ const contracts = {
           "Author manuscript arXiv:0711.3709v1 page 3, Table I and adjoining rate-comparison paragraphs: charge-state-specific rest-frame beta+/EC constants, reported 1.49(8) ratio and mean loss term",
           "Author manuscript arXiv:0711.3709v1 pages 3-4, Figure 3 and hyperfine-state discussion: nuclear/lepton angular momentum, inferred moment sign, relaxation assumption and conditional 3/2 statistical factor"
         ],
-        "limit": "Actual four-page author manuscript arXiv:0711.3709v1 dated 23 November 2007, linked by the repository and author institution GSI record 54473 to Phys. Rev. Lett. 99(26),262501. Read scientific text on pages 1-4, Figures 1-3, Equations 1-2 and Table I; visually checked manuscript pages 3-4 including the rate table, population equations and hyperfine diagram. Publisher title/DOI/date/authors/abstract and Crossref metadata were checked; final publisher full text was not accessible, so no page-for-page final-version identity is claimed. The references on other isotopes, neutral-atom X-ray experiments, hyperfine lifetimes and general stellar applications are not separately admitted primary studies. No raw Schottky time series, new rate fit, hyperfine population measurement, nuclear magnetic-moment measurement or numerical replay was performed."
+        "limit": "Actual four-page author manuscript arXiv:0711.3709v1 dated 23 November 2007, linked by the repository and author institution GSI record 54473 to Phys. Rev. Lett. 99(26), 262501. Read scientific text on pages 1-4, Figures 1-3, Equations 1-2 and Table I; visually checked manuscript pages 3-4 including the rate table, population equations and hyperfine diagram. Publisher title/DOI/date/authors/abstract and Crossref metadata were checked; final publisher full text was not accessible, so no page-for-page final-version identity is claimed. The references on other isotopes, neutral-atom X-ray experiments, hyperfine lifetimes and general stellar applications are not separately admitted primary studies. No raw Schottky time series, new rate fit, hyperfine population measurement, nuclear magnetic-moment measurement or numerical replay was performed."
       }
     }
   ]

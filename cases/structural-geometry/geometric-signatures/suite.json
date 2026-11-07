@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:1a763c45e3e441c729d7c382b49cfd775aa63969c4e619dc38eb55b0fe26fef1",
+  "artifactHash": "sha256:c0a9dea01eba78c9171b6f4265f5184a6d94012f091ea83acfcf36200c017711",
   "properties": {
     "aggregation": {
       "profiles": 40,
@@ -14,7 +14,7 @@
       "sha256": "caaae52065f8d5b48cb759b39d55fef4347d318bf5cd30091aa69bbf46b760b2"
     }
   },
-  "referenceHash": "sha256:0248cb4261a5086ef513d41f208d39f02ed9c8b65bc59380ea59db71ac570138",
+  "referenceHash": "sha256:b7d212582a049fba55260e783bc657be5f424fd79ddc2af334eb5e20ee1bf9e1",
   "runs": [
     {
       "artifactHash": "sha256:b1c3e988fc4cfdb106786d0a0bda355a86f9146b704c66503d67a1d6df8aa8be",
@@ -437,102 +437,6 @@
         "status": "indeterminate",
         "unavailableFeatureIds": [
           "ollivier-curvature-v1"
-        ]
-      },
-      "termination": "iteration-limit",
-      "valueHash": null
-    },
-    {
-      "artifactHash": "sha256:b7690ab52b35d7d70bef5131db34dd49c826f6e2dc6f93c0daf5d565bb815428",
-      "features": [
-        {
-          "coverage": {
-            "complete": false,
-            "denominator": 18,
-            "numerator": 0
-          },
-          "id": "forman-curvature-v1",
-          "state": "unavailable"
-        },
-        {
-          "coverage": {
-            "complete": true,
-            "denominator": 18,
-            "numerator": 18
-          },
-          "id": "ollivier-curvature-v1",
-          "state": "observed"
-        },
-        {
-          "coverage": {
-            "complete": true,
-            "denominator": 7,
-            "numerator": 7
-          },
-          "id": "flow-trajectory-v1",
-          "state": "observed"
-        }
-      ],
-      "file": "artifacts/causal-emergence-seed.json",
-      "id": "causal-emergence-seed",
-      "summary": {
-        "coverage": {
-          "complete": false,
-          "denominator": 3,
-          "numerator": 2
-        },
-        "partialFeatureIds": [],
-        "status": "indeterminate",
-        "unavailableFeatureIds": [
-          "forman-curvature-v1"
-        ]
-      },
-      "termination": "iteration-limit",
-      "valueHash": null
-    },
-    {
-      "artifactHash": "sha256:46e2bc8551977ba2a7d403e668c76cf0d0ac2a7b9ada61c016cbfd04f3603cfa",
-      "features": [
-        {
-          "coverage": {
-            "complete": false,
-            "denominator": 17,
-            "numerator": 0
-          },
-          "id": "forman-curvature-v1",
-          "state": "unavailable"
-        },
-        {
-          "coverage": {
-            "complete": true,
-            "denominator": 17,
-            "numerator": 17
-          },
-          "id": "ollivier-curvature-v1",
-          "state": "observed"
-        },
-        {
-          "coverage": {
-            "complete": true,
-            "denominator": 7,
-            "numerator": 7
-          },
-          "id": "flow-trajectory-v1",
-          "state": "observed"
-        }
-      ],
-      "file": "artifacts/causal-emergence-admissibility.json",
-      "id": "causal-emergence-admissibility",
-      "summary": {
-        "coverage": {
-          "complete": false,
-          "denominator": 3,
-          "numerator": 2
-        },
-        "partialFeatureIds": [],
-        "status": "indeterminate",
-        "unavailableFeatureIds": [
-          "forman-curvature-v1"
         ]
       },
       "termination": "iteration-limit",

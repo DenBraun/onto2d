@@ -94,10 +94,10 @@ test("conditional fit agreement cannot become complete gauge-group or matter-con
       "The selected UA1 mass summaries independently measure every fermion chirality and establish universal weak couplings.")],
     ["the selected comparisons cannot observe a universal partition event", (data) => replaceStatement(data, synthesis,
       "These three measurements observe one undifferentiated field splitting into permanent quark, lepton and gauge-boson lineages.")],
-    ["unreviewed collider placeholders cannot prove every sector", (data) =>
-      dropLimit(data, synthesis, /generic collider\/scattering placeholders/)],
-    ["formal architecture cannot acquire measured parent thresholds", (data) =>
-      dropLimit(data, synthesis, /0\.6\/0\.4 weights/)]
+    ["compatible collider predictions are not a sector-differentiation observation or a proof of every sector", (data) =>
+      dropLimit(data, synthesis, /not direct observation of a universal sector-differentiation event/)],
+    ["the formal framework cannot dynamically derive the declared gauge, matter and Higgs content", (data) =>
+      dropLimit(data, synthesis, /gauge\/matter\/Higgs decomposition is a declared model input/)]
   ]);
 });
 

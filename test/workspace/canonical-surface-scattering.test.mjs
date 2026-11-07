@@ -104,19 +104,19 @@ test("directional radiometry retains units, projected geometry and calibrated fl
 
 test("the PTFE scan keeps actual Figure11 geometry, nominal hemispherical labels and unspecified polarization", async () => {
   const data = await source();
-  assert.match(claim(data, preparation).statement, /550 nm.*azimuth180 degrees.*angles70 to0 degrees/);
-  assert.match(claim(data, preparation).statement, /actual viewing polar angle is45 degrees with azimuth90 or135 degrees/);
-  assert.match(claim(data, preparation).statement, /nominal vendor directional-hemispherical reflectances99 and10 percent/);
+  assert.match(claim(data, preparation).statement, /550 nm.*azimuth 180 degrees.*angles 70 to 0 degrees/);
+  assert.match(claim(data, preparation).statement, /actual viewing polar angle is 45 degrees with azimuth 90 or 135 degrees/);
+  assert.match(claim(data, preparation).statement, /nominal vendor directional-hemispherical reflectances 99 and 10 percent/);
   for (const id of [preparation, observed, inference, synthesis, method]) {
     assert.match(claim(data, id).limitations.join(" "), /do not state whether its curves use s polarization, p polarization or an unpolarized average/);
   }
   await rejects([
     ["the example forty-degree view cannot replace the actual forty-five-degree scan", (changed) =>
-      replaceStatement(changed, preparation, "viewing polar angle is45 degrees", "viewing polar angle is40 degrees")],
+      replaceStatement(changed, preparation, "viewing polar angle is 45 degrees", "viewing polar angle is40 degrees")],
     ["vendor integrated labels cannot become calibrated directional response", (changed) =>
-      replaceStatement(changed, preparation, "nominal vendor directional-hemispherical reflectances99 and10 percent", "measured constant bidirectional reflectance factors0.99 and0.10")],
+      replaceStatement(changed, preparation, "nominal vendor directional-hemispherical reflectances 99 and 10 percent", "measured constant bidirectional reflectance factors0.99 and0.10")],
     ["general source polarization cannot resolve missing Figure11 polarization", (changed) =>
-      dropLimit(changed, observed, "no particular Figure11 polarization state is inferred")],
+      dropLimit(changed, observed, "no particular Figure 11 polarization state is inferred")],
     ["polarization systematics cannot be counted as independent replicate errors", (changed) =>
       dropLimit(changed, observed, "highly correlated between polarizations")]
   ]);
@@ -124,11 +124,11 @@ test("the PTFE scan keeps actual Figure11 geometry, nominal hemispherical labels
 
 test("reported angular deviations keep target-specific uncertainty and avoid an invented microscopic inverse solution", async () => {
   const data = await source();
-  assert.match(claim(data, observed).statement, /gray target at90-degree viewing azimuth.*error exceeding30 percent/);
-  assert.match(claim(data, observed).statement, /roughly estimates relative expanded uncertainties k=2 of1 percent for white and2 percent for gray/);
+  assert.match(claim(data, observed).statement, /gray target at 90-degree viewing azimuth.*error exceeding 30 percent/);
+  assert.match(claim(data, observed).statement, /roughly estimates relative expanded uncertainties k=2 of 1 percent for white and 2 percent for gray/);
   await rejects([
     ["a nominal reference error cannot become a directly fitted microscopic roughness", (changed) =>
-      replaceStatement(changed, observed, "reference-value error exceeding30 percent", "uniquely inferred microscopic roughness exceeding30 percent")],
+      replaceStatement(changed, observed, "reference-value error exceeding 30 percent", "uniquely inferred microscopic roughness exceeding30 percent")],
     ["rough expanded uncertainty cannot become universal instrument precision", (changed) =>
       dropLimit(changed, observed, "rough, target- and geometry-specific")],
     ["same standards cannot become independent evidence at every wavelength", (changed) =>
@@ -170,19 +170,17 @@ test("only the two declared optical references bridge domains and preserve compl
   ]);
 });
 
-test("bounded optical response cannot acquire original causal weights, emergence minima or vision authority", async () => {
+test("bounded optical response cannot acquire crystal ancestry, emergence autonomy or vision authority", async () => {
   const data = await source();
   for (const id of [definition, preparation, observed, inference, synthesis, method]) {
     assert.deepEqual(claim(data, id).checkIds, []);
   }
   assert.match(publication(data).review.limit, /No full instrument-design.*raw scan or new inverse fit/);
   await rejects([
-    ["original parent weights cannot become measured causes or necessary crystal ancestry", (changed) =>
-      dropLimit(changed, synthesis, "weights0.5/0.5")],
-    ["two samples or optical directions cannot establish universal carrier minima", (changed) =>
-      dropLimit(changed, synthesis, "N_min=N_crit=2")],
-    ["a response map cannot independently establish SOMA autonomy", (changed) =>
-      dropLimit(changed, synthesis, "classification choices")],
+    ["crystal periodic order is not a necessary premise of every reflectance description", (changed) =>
+      dropLimit(changed, synthesis, "Crystal periodic order is not established as a necessary premise")],
+    ["a response map cannot independently establish ontological autonomy or a universal emergence stage", (changed) =>
+      dropLimit(changed, synthesis, "A response map is not independently measured ontological autonomy")],
     ["surface radiometry cannot establish a matched retina or uniquely recover a scene", (changed) =>
       dropLimit(changed, synthesis, "optical-to-retinal transfer")],
     ["aggregate and angular studies cannot silently become one fitted likelihood", (changed) =>

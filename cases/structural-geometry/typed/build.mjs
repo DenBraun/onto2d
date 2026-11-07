@@ -11,7 +11,6 @@ import { verifyCensus, verifySixNodeRelabelings, referenceKey } from "./census.m
 const encoded = (value) => `${JSON.stringify(canonicalClone(value), null, 2)}\n`;
 export async function verifyReferenceSources(reference) {
   for (const [file, expected] of [["controls.json", reference.controlsFileSha256], ["PROTOCOL.md", reference.protocolFileSha256],
-    ["../../../models/causal-emergence/releases/2026.08.15/bundle.json", reference.causalFileSha256],
     ["../canonical/reference.py", reference.canonicalReferenceFileSha256]]) {
     assert.equal(createHash("sha256").update(await readFile(new URL(file, directory))).digest("hex"), expected,
       `Independent reference source binding differs: ${file}`);
@@ -43,7 +42,6 @@ export async function run({ write = false, report = false } = {}) {
     assert.equal(artifact.observations[0].value.edges.length, expected.edges);
     const value = artifact.observations[1].value;
     assert.equal(value ? referenceKey(value) : null, expected.typedKey, `Independent typed orbit differs: ${f.id}`);
-    if (f.id === "causal-fragment") assert.deepEqual(artifact.preparation.context.model, await readJson("../causal-emergence/source-lock.json"));
     const file = `artifacts/${f.id}.json`; outputs.push([file, encoded(artifact)]);
     values.set(f.id, value ? canonicalize(value) : null);
     runs.push({ id: f.id, input: f.input, file, evaluation: artifact.evaluation,
@@ -83,7 +81,7 @@ export async function run({ write = false, report = false } = {}) {
   }
   if (report) { console.table(census.rows); console.table(runs.map(({ id, evaluation, missingFields, typedValueHash }) => ({ id, evaluation, missingFields, typedValueHash })));
     console.table(alignments.map(({ id, compatibility }) => ({ id, state: compatibility.state, basis: compatibility.basis, reasons: compatibility.reasons.map((r) => r.code).join(", ") }))); }
-  console.log(`Typed observations ${write ? "written" : "verified"}: 26 observations, 5 mappings, 8 alignments; 739 exhaustive colored graphs / 145 classes and 720 relabelings.`);
+  console.log(`Typed observations ${write ? "written" : "verified"}: ${runs.length} observations, ${mappings.length} mappings, ${alignments.length} alignments; 739 exhaustive colored graphs / 145 classes and 720 relabelings.`);
   return suite;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

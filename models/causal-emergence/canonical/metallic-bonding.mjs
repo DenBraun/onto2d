@@ -260,7 +260,7 @@ const contracts = {
     {
       "id": "M-phys-gaissmaier2020-na-bulk-context",
       "kind": "method",
-      "statement": "Use the source PAW/VASP ground-state electronic calculation for supplied periodic Na bulk structures. The principal functional is PBE-GGA; BEEF-vdW provides a separate functional/ensemble comparison. The reported bulk settings include a 340 eV plane-wave cutoff, 0.15 inverse-Angstrom k-point mesh density, 0.2 eV Methfessel-Paxton smearing and a 1e-5 eV electronic convergence criterion. Uniformly expand/compress each unit cell and fit the stabilized-jellium equation of state to obtain an equilibrium and bulk modulus. Compare bulk energy per atom with an isolated neutral atom under the stated cohesive-energy convention.",
+      "statement": "Use the source PAW/VASP ground-state electronic calculation for supplied periodic Na bulk structures. The principal functional is PBE-GGA; BEEF-vdW provides a separate functional/ensemble comparison. The reported bulk settings include a 340 eV plane-wave cutoff, 0.15 inverse-Angstrom k-point mesh density, 0.2 eV Methfessel-Paxton smearing and a 1e-5 eV electronic convergence criterion. Uniformly expand/compress each unit cell and fit the stabilized-jellium equation of state to obtain an equilibrium lattice parameter and bulk modulus. Compare bulk energy per atom with an isolated neutral atom under the stated cohesive-energy convention.",
       "scope": "Selected Na bcc periodic bulk-energy calculation and equation-of-state fitting protocol.",
       "status": "method-contract",
       "citations": [
@@ -447,7 +447,7 @@ const contracts = {
       "id": "C-phys-metallic-bonding-source-scope",
       "kind": "review-finding",
       "statement": "The reviewed sources support two distinct finite metallic-sodium results: a supplied periodic electronic model predicts positive cohesion relative to neutral atoms, while a prepared sodium film has a near-Fermi photoemission contour and a source-inferred occupied quasiparticle band. Together these provide explicit energetic and spectral meanings for this selected metallic regime. Their agreement in material name does not turn band mobility into a measured cause of cohesion or supply conductivity, heat-flow and mechanical laws.",
-      "scope": "Scoped replacement for original Level 2 card /14 with separate computational binding and experimental spectral evidence.",
+      "scope": "Scope for metallic bonding and electron collectivization with separate computational binding and experimental spectral evidence.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -479,22 +479,15 @@ const contracts = {
           "locator": "Published pages 125138-5 to 125138-6, Appendix A and selected Appendix B paragraphs: photon-energy-dependent momentum assignment, 0.88 inverse-Angstrom fit and separate linewidth-correction assumptions",
           "role": "supports",
           "note": "Supports the declared source-reported preparation, definition or scoped output only; no local reproduction."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original card /14 supplies draft vocabulary, asserted parent weights and counts only, not empirical support."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original parents 2.3 and 2.5, weights 0.50/0.50, necessary labels, upward-causation/mode codes and three-body N_min/N_crit values do not follow from this sodium calculation or film spectrum. No alternative atom-count threshold is invented.",
         "The finite positive admission separates a source-predicted neutral-atom cohesion energy from a measured photoemission response and its band inference. It does not show that electron mobility alone causes cohesion, that all metallic bonds are non-directional, or that every metal is a perfect periodic free-electron lattice.",
         "No measured conductivity, heat transport, ductility, malleability, mechanical response or screened interaction curve is admitted. Such properties require their own phase, disorder, scattering, loading and measurement conditions; a band crossing or positive cohesion alone does not fix them.",
         "The supplied periodic Na model and the actual Na film/W preparation are separate systems and evidence roles. No raw-data agreement test, common fitted parameter or universal electron-collectivization variable joins them.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 2 Pattern, science tags, established status, SOMA transition and collective stabilization language do not verify a developmental ordering, new rule-generating law or universal material category boundary.",
-        "Constraint/resource requirement codes and empty Evidence publication identifiers are draft metadata. Record actual unit-cell, electronic-method, film, field and temperature assumptions; do not infer a universal sustained resource cause from evaporation, annealing or the ARPES probe. No new numerical replay or broad literature survey is claimed."
+        "Level 2 is a display grouping.",
+        "Record actual unit-cell, electronic-method, film, field and temperature assumptions; do not infer a universal sustained resource cause from evaporation, annealing or the ARPES probe. No new numerical replay or broad literature survey is claimed."
       ],
       "contextIds": [
         "gaissmaier2020-na-bulk",
@@ -504,7 +497,7 @@ const contracts = {
     {
       "id": "M-phys-metallic-bonding-source-scope",
       "kind": "method",
-      "statement": "Compare the sodium bulk calculation and film spectrum only within their own supplied structures, reference energies, temperatures, observables and approximations. Preserve static cohesion versus excited-state quasiparticle energies, model ensemble spread versus zero-point corrections, and acquisition versus same-data band inference. Do not create universal causal parents, free-electron properties, material laws or carrier minima from the comparison.",
+      "statement": "Compare the sodium bulk calculation and film spectrum only within their own supplied structures, reference energies, temperatures, observables and approximations. Preserve static cohesion versus excited-state quasiparticle energies, model ensemble spread versus zero-point corrections, and acquisition versus same-data band inference. Do not create free-electron properties or material laws from the comparison.",
       "scope": "Interpretation dependencies for the finite metallic-sodium synthesis.",
       "status": "method-contract",
       "citations": [
@@ -541,12 +534,11 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "Original parents 2.3 and 2.5, weights 0.50/0.50, necessary labels, upward-causation/mode codes and three-body N_min/N_crit values do not follow from this sodium calculation or film spectrum. No alternative atom-count threshold is invented.",
         "The finite positive admission separates a source-predicted neutral-atom cohesion energy from a measured photoemission response and its band inference. It does not show that electron mobility alone causes cohesion, that all metallic bonds are non-directional, or that every metal is a perfect periodic free-electron lattice.",
         "No measured conductivity, heat transport, ductility, malleability, mechanical response or screened interaction curve is admitted. Such properties require their own phase, disorder, scattering, loading and measurement conditions; a band crossing or positive cohesion alone does not fix them.",
         "The supplied periodic Na model and the actual Na film/W preparation are separate systems and evidence roles. No raw-data agreement test, common fitted parameter or universal electron-collectivization variable joins them.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 2 Pattern, science tags, established status, SOMA transition and collective stabilization language do not verify a developmental ordering, new rule-generating law or universal material category boundary.",
-        "Constraint/resource requirement codes and empty Evidence publication identifiers are draft metadata. Record actual unit-cell, electronic-method, film, field and temperature assumptions; do not infer a universal sustained resource cause from evaporation, annealing or the ARPES probe. No new numerical replay or broad literature survey is claimed."
+        "Level 2 is a display grouping.",
+        "Record actual unit-cell, electronic-method, film, field and temperature assumptions; do not infer a universal sustained resource cause from evaporation, annealing or the ARPES probe. No new numerical replay or broad literature survey is claimed."
       ],
       "contextIds": [
         "gaissmaier2020-na-bulk",
@@ -615,7 +607,7 @@ const contracts = {
       "id": "phys:gaissmaier2020-na-bulk-context",
       "name": "Gaissmaier sodium bulk-energy calculation",
       "kind": "context",
-      "description": "Use the source PAW/VASP ground-state electronic calculation for supplied periodic Na bulk structures. The principal functional is PBE-GGA; BEEF-vdW provides a separate functional/ensemble comparison. The reported bulk settings include a 340 eV plane-wave cutoff, 0.15 inverse-Angstrom k-point mesh density, 0.2 eV Methfessel-Paxton smearing and a 1e-5 eV electronic convergence criterion. Uniformly expand/compress each unit cell and fit the stabilized-jellium equation of state to obtain an equilibrium and bulk modulus. Compare bulk energy per atom with an isolated neutral atom under the stated cohesive-energy convention.",
+      "description": "Use the source PAW/VASP ground-state electronic calculation for supplied periodic Na bulk structures. The principal functional is PBE-GGA; BEEF-vdW provides a separate functional/ensemble comparison. The reported bulk settings include a 340 eV plane-wave cutoff, 0.15 inverse-Angstrom k-point mesh density, 0.2 eV Methfessel-Paxton smearing and a 1e-5 eV electronic convergence criterion. Uniformly expand/compress each unit cell and fit the stabilized-jellium equation of state to obtain an equilibrium lattice parameter and bulk modulus. Compare bulk energy per atom with an isolated neutral atom under the stated cohesive-energy convention.",
       "claimIds": [
         "M-phys-gaissmaier2020-na-bulk-context"
       ],
@@ -773,19 +765,14 @@ const contracts = {
         {
           "sourceId": "potorochin2022-na-arpes",
           "locator": "Published pages 125138-5 to 125138-6, Appendix A and selected Appendix B paragraphs: photon-energy-dependent momentum assignment, 0.88 inverse-Angstrom fit and separate linewidth-correction assumptions"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original parents 2.3 and 2.5, weights 0.50/0.50, necessary labels, upward-causation/mode codes and three-body N_min/N_crit values do not follow from this sodium calculation or film spectrum. No alternative atom-count threshold is invented.",
         "The finite positive admission separates a source-predicted neutral-atom cohesion energy from a measured photoemission response and its band inference. It does not show that electron mobility alone causes cohesion, that all metallic bonds are non-directional, or that every metal is a perfect periodic free-electron lattice.",
         "No measured conductivity, heat transport, ductility, malleability, mechanical response or screened interaction curve is admitted. Such properties require their own phase, disorder, scattering, loading and measurement conditions; a band crossing or positive cohesion alone does not fix them.",
         "The supplied periodic Na model and the actual Na film/W preparation are separate systems and evidence roles. No raw-data agreement test, common fitted parameter or universal electron-collectivization variable joins them.",
-        "Level 2 is a display grouping. Phase 2, TypeRole 2 Pattern, science tags, established status, SOMA transition and collective stabilization language do not verify a developmental ordering, new rule-generating law or universal material category boundary.",
-        "Constraint/resource requirement codes and empty Evidence publication identifiers are draft metadata. Record actual unit-cell, electronic-method, film, field and temperature assumptions; do not infer a universal sustained resource cause from evaporation, annealing or the ARPES probe. No new numerical replay or broad literature survey is claimed."
+        "Level 2 is a display grouping.",
+        "Record actual unit-cell, electronic-method, film, field and temperature assumptions; do not infer a universal sustained resource cause from evaporation, annealing or the ARPES probe. No new numerical replay or broad literature survey is claimed."
       ]
     }
   ],
@@ -874,7 +861,7 @@ const contracts = {
       "target": "phys:metallic-bonding-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-parent rule follows.",
+      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-precursor rule follows.",
       "claimIds": [
         "M-phys-metallic-bonding-source-scope"
       ],
@@ -889,7 +876,7 @@ const contracts = {
       "target": "phys:metallic-bonding-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-parent rule follows.",
+      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-precursor rule follows.",
       "claimIds": [
         "M-phys-metallic-bonding-source-scope"
       ],
@@ -904,7 +891,7 @@ const contracts = {
       "target": "phys:metallic-bonding-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-parent rule follows.",
+      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-precursor rule follows.",
       "claimIds": [
         "M-phys-metallic-bonding-source-scope"
       ],
@@ -919,7 +906,7 @@ const contracts = {
       "target": "phys:metallic-bonding-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-parent rule follows.",
+      "assertion": "Preserve energetic, spectral, preparation and interpretation scopes in the finite sodium synthesis; no general transport or causal-precursor rule follows.",
       "claimIds": [
         "M-phys-metallic-bonding-source-scope"
       ],
@@ -996,7 +983,7 @@ const contracts = {
     {
       "nodeId": "phys:metallic-bonding-source-scope",
       "role": "scoped-phenomenon",
-      "denotes": "Scoped replacement for original Level 2 card /14 with separate computational binding and experimental spectral evidence.",
+      "denotes": "Scope for metallic bonding and electron collectivization with separate computational binding and experimental spectral evidence.",
       "instanceAdmission": "none",
       "claimIds": [
         "C-phys-metallic-bonding-source-scope"
@@ -1014,7 +1001,7 @@ const contracts = {
       "issue": "4",
       "pages": "771-783",
       "system": "Selected Na bcc branch in periodic ground-state electronic DFT",
-      "preparation": "Use the source PAW/VASP ground-state electronic calculation for supplied periodic Na bulk structures. The principal functional is PBE-GGA; BEEF-vdW provides a separate functional/ensemble comparison. The reported bulk settings include a 340 eV plane-wave cutoff, 0.15 inverse-Angstrom k-point mesh density, 0.2 eV Methfessel-Paxton smearing and a 1e-5 eV electronic convergence criterion. Uniformly expand/compress each unit cell and fit the stabilized-jellium equation of state to obtain an equilibrium and bulk modulus. Compare bulk energy per atom with an isolated neutral atom under the stated cohesive-energy convention.",
+      "preparation": "Use the source PAW/VASP ground-state electronic calculation for supplied periodic Na bulk structures. The principal functional is PBE-GGA; BEEF-vdW provides a separate functional/ensemble comparison. The reported bulk settings include a 340 eV plane-wave cutoff, 0.15 inverse-Angstrom k-point mesh density, 0.2 eV Methfessel-Paxton smearing and a 1e-5 eV electronic convergence criterion. Uniformly expand/compress each unit cell and fit the stabilized-jellium equation of state to obtain an equilibrium lattice parameter and bulk modulus. Compare bulk energy per atom with an isolated neutral atom under the stated cohesive-energy convention.",
       "observable": "Source-computed total-energy differences and fitted Na bulk equilibrium parameters, not primary measured heats or compression data.",
       "finding": "For the supplied Na bcc branch, Table 1 reports PBE a0=4.19 Angstrom, E_coh=1.09 eV/atom and B0=7.96 GPa; BEEF-vdW gives a0=4.18 Angstrom, E_coh=1.15 eV/atom and B0=8.48 GPa. The BEEF cohesive-energy parenthesis 0.25 eV/atom represents the source functional-ensemble standard deviation. These are source computational outputs, not independently measured constants.",
       "limitations": [
@@ -1061,29 +1048,11 @@ const contracts = {
       ],
       "metadataCheckedAt": "2026-10-19",
       "metadataUrl": "https://doi.org/10.1103/PhysRevB.106.125138",
-      "correctionCheck": "Read selected actual published full text from the DESY deposited final PDF via the web indexed text, and cross-checked against the actual downloaded arXiv2112.00422v2 PDF; visual checks were of the author version only. The final text includes both R8000 and R4000 analyzer preparations. Publisher title, DOI, authors, issue/article number and 22 September 2022 publication date agree with Crossref; acceptance was 19 August 2022. Crossref relation is empty and no update-to appears; targeted DOI/erratum searches found no correction record, without implying exhaustive correction coverage. No raw-data refit or independently reproduced calculation was performed."
+      "correctionCheck": "Read selected actual published full text from the DESY deposited final PDF via the web indexed text, and cross-checked against the actual downloaded arXiv 2112.00422v2 PDF; visual checks were of the author version only. The final text includes both R8000 and R4000 analyzer preparations. Publisher title, DOI, authors, issue/article number and 22 September 2022 publication date agree with Crossref; acceptance was 19 August 2022. Crossref relation is empty and no update-to appears; targeted DOI/erratum searches found no correction record, without implying exhaustive correction coverage. No raw-data refit or independently reproduced calculation was performed."
     }
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "gaissmaier2020-na-cohesion",
       "kind": "research-publication",

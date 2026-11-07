@@ -58,44 +58,6 @@ export const DIRECTIONAL_STABILITY_SCOPE_ADMISSION = {
 const contracts = {
   "sources": [
     {
-      "id": "legacy-0",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 0 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-0.json",
-      "sha256": "761dab2265dd9e9275e8ff5feb8447eded7e5ed1fc42c9480e36a70cb8a59988",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/",
-          "/14/Description"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
-      "id": "legacy-1",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 1 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-1.json",
-      "sha256": "b1bc5f0fe4b9741f57807d24b638b26a75b2b6e77a32c44b3f3711c8fd30a91a",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/",
-          "/0/Description"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
-    {
       "id": "tong-qft-free-fields",
       "kind": "research-publication",
       "title": "Quantum Field Theory: Free Fields (2021 HTML edition)",
@@ -114,7 +76,9 @@ const contracts = {
           "Section 2.3 opening: vacuum and normal ordering",
           "Section 2.4 before 2.4.1: particles, Fock space and operator-valued distributions",
           "Section 2.6 and 2.6.1: Heisenberg evolution and spacelike commutators",
-          "Section 2.7 opening before 2.7.1: vacuum two-point function"
+          "Section 2.7 opening before 2.7.1: vacuum two-point function",
+          "Section 2.3.2: Casimir plates, boundary-quantized momentum and regulated 1+1 energy sum",
+          "Section 2.5: complex scalar Lagrangian, equations of motion, particle and antiparticle operators and conserved charge"
         ],
         "limit": "Author lecture notes for the 2006-2007 course, in the HTML edition dated 15 October 2021. Only the listed sections supply support; no complete interacting or gauge-field quantization is reviewed. Formula locators use section names because HTML and PDF equation numbering differ. The separately bound field-dynamics verifier checks finite formal oscillator-mode algebra under declared assumptions; no complete continuum or interacting construction, or experimental reproduction, is claimed."
       }
@@ -150,7 +114,7 @@ const contracts = {
       "id": "D-phys-directional-excitation-boundary",
       "kind": "review-finding",
       "statement": "A directional excitation claim must distinguish dispersion and envelope velocity, damping or attenuation, a localization criterion and intrinsic decay lifetime. They are different observables and require a specified model, state, environment, frame, held-fixed controls and directional comparison. The supplied free scalar propagation and photon polarization definitions establish no anisotropic environment or unequal directional persistence. No measured directional stability, localized transport bias or Level-0-to-field mechanism is admitted.",
-      "scope": "Interpretation boundary for source-card 1.34, its proposed parents and conflated directional excitation observables; no observed asymmetry or transport mechanism.",
+      "scope": "Interpretation boundary for directional stability asymmetry of excitations and conflated directional excitation observables; no observed asymmetry or transport mechanism.",
       "status": "definition",
       "citations": [
         {
@@ -176,18 +140,6 @@ const contracts = {
           "locator": "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units",
           "role": "supports",
           "note": "The reviewed exponential proper-lifetime and laboratory survival convention supplies a contrast with packet motion; no new width or measurement is inferred."
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original source card /34, including its four proposed parents, numerical defaults and unsupported evidence placeholders."
-        },
-        {
-          "sourceId": "legacy-0",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original localized-transport-bias proposal /23; its author classification is not physical evidence."
         }
       ],
       "checkIds": [],
@@ -196,10 +148,9 @@ const contracts = {
         "Only within the declared exponential-survival approximation does the PDG convention give tau_proper=1/Gamma and P(t_lab)=exp(-Gamma*t_lab/gamma) in hbar=c=1, with Gamma an energy width and gamma the fixed Lorentz factor. This is a formal decay convention, not an exact survival law at every time, a new complex-pole calculation or a measured lifetime. Detector linewidth, instrumental broadening, scattering and path attenuation cannot automatically become intrinsic decay width.",
         "A unit-modulus free-mode phase and conservation of the full state norm do not alone establish persistence of a selected unstable component or spatially localized packet. Unitary evolution can transfer amplitude out of a selected subspace. The supplied free model preserves its Fock number sector, but this does not freeze the packet shape or generalize to interacting or open subsystems.",
         "Comparing different axes at fixed momentum magnitude is distinct from comparing opposite directions in one specified apparatus. Spatial anisotropy does not by itself establish opposite-direction nonreciprocity, a preferred drift or net transport. A directional comparison must hold the model, frame, preparation and apparatus controls appropriately fixed; no selected anisotropic environment or response protocol is supplied here.",
-        "Original parent 1.32 supplies a scoped field-anisotropy interpretation, not a realized anisotropic regime. Parent 1.33 supplies a transverse free-photon polarization state, not a scalar polarization branch or a universal modulation of excitation persistence. Parent 1.26 supplies evolution in an already specified free scalar model, not an enabling causal intervention. These are descriptive definition dependencies; their labels do not establish necessary arising or modulation relations.",
-        "Parent 0.23 remains an author-supplied methodological transport-bias proposal without a specified admissibility functional, domain, physical units, map to a field observable or testable drift or transfer prediction. The Level-0 F12 support finding remains unresolved. Neither a localized-bias label nor the neighboring anisotropy and polarization proposals supply the missing physical bridge; no Level-0 causal or construction edge is admitted.",
-        "The original weights 0.40, 0.30, 0.20 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier codes, dependency types and direction/interaction-mode codes have no admitted quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the source proposal; they do not supply a universal threshold, formation mechanism or physical occurrence.",
-        "The conceptual and theoretical evidence placeholders identify no retrievable supporting publication or reviewed direction-dependent persistence, localization or transport prediction. This limits the supplied record, not the existence of anisotropic models elsewhere. No primary experiment, anisotropic-vacuum realization, carrier population, numerical replay or new computational study is admitted."
+        "The effective-field-anisotropy dependency supplies a scoped field-anisotropy interpretation, not a realized anisotropic regime. The field-polarization-anisotropy dependency supplies a transverse free-photon polarization state, not a scalar polarization branch or a universal modulation of excitation persistence. The quantum-field-dynamics dependency supplies evolution in an already specified free scalar model, not an enabling causal intervention. These are descriptive definition dependencies; they do not establish necessary arising or modulation relations.",
+        "Localized transport bias remains an author-supplied methodological transport-bias proposal without a specified admissibility functional, domain, physical units, map to a field observable or testable drift or transfer prediction. The Level-0 F12 support finding remains unresolved. Neither a localized-bias label nor the neighboring anisotropy and polarization proposals supply the missing physical bridge; no Level-0 causal or construction edge is admitted.",
+        "No primary experiment, anisotropic-vacuum realization, carrier population, numerical replay or new computational study is admitted. This limits the supplied record, not the existence of anisotropic models elsewhere."
       ]
     }
   ],
@@ -230,14 +181,6 @@ const contracts = {
         {
           "sourceId": "pdg2025-kinematics",
           "locator": "Page 2, Section 49.4.1, Equations 49.14-49.15: exponential survival, proper lifetime, total width and time dilation in the declared natural units"
-        },
-        {
-          "sourceId": "legacy-1",
-          "locator": "/"
-        },
-        {
-          "sourceId": "legacy-0",
-          "locator": "/"
         }
       ],
       "openObligations": [
@@ -245,10 +188,9 @@ const contracts = {
         "Only within the declared exponential-survival approximation does the PDG convention give tau_proper=1/Gamma and P(t_lab)=exp(-Gamma*t_lab/gamma) in hbar=c=1, with Gamma an energy width and gamma the fixed Lorentz factor. This is a formal decay convention, not an exact survival law at every time, a new complex-pole calculation or a measured lifetime. Detector linewidth, instrumental broadening, scattering and path attenuation cannot automatically become intrinsic decay width.",
         "A unit-modulus free-mode phase and conservation of the full state norm do not alone establish persistence of a selected unstable component or spatially localized packet. Unitary evolution can transfer amplitude out of a selected subspace. The supplied free model preserves its Fock number sector, but this does not freeze the packet shape or generalize to interacting or open subsystems.",
         "Comparing different axes at fixed momentum magnitude is distinct from comparing opposite directions in one specified apparatus. Spatial anisotropy does not by itself establish opposite-direction nonreciprocity, a preferred drift or net transport. A directional comparison must hold the model, frame, preparation and apparatus controls appropriately fixed; no selected anisotropic environment or response protocol is supplied here.",
-        "Original parent 1.32 supplies a scoped field-anisotropy interpretation, not a realized anisotropic regime. Parent 1.33 supplies a transverse free-photon polarization state, not a scalar polarization branch or a universal modulation of excitation persistence. Parent 1.26 supplies evolution in an already specified free scalar model, not an enabling causal intervention. These are descriptive definition dependencies; their labels do not establish necessary arising or modulation relations.",
-        "Parent 0.23 remains an author-supplied methodological transport-bias proposal without a specified admissibility functional, domain, physical units, map to a field observable or testable drift or transfer prediction. The Level-0 F12 support finding remains unresolved. Neither a localized-bias label nor the neighboring anisotropy and polarization proposals supply the missing physical bridge; no Level-0 causal or construction edge is admitted.",
-        "The original weights 0.40, 0.30, 0.20 and 0.10, all Nmin=Ncrit=1, necessary/enabling/contextual and arising/modulation labels, carrier codes, dependency types and direction/interaction-mode codes have no admitted quantitative or causal force. SOMA phase 2, property/type-role 3 and speculative status classify the source proposal; they do not supply a universal threshold, formation mechanism or physical occurrence.",
-        "The conceptual and theoretical evidence placeholders identify no retrievable supporting publication or reviewed direction-dependent persistence, localization or transport prediction. This limits the supplied record, not the existence of anisotropic models elsewhere. No primary experiment, anisotropic-vacuum realization, carrier population, numerical replay or new computational study is admitted."
+        "The effective-field-anisotropy dependency supplies a scoped field-anisotropy interpretation, not a realized anisotropic regime. The field-polarization-anisotropy dependency supplies a transverse free-photon polarization state, not a scalar polarization branch or a universal modulation of excitation persistence. The quantum-field-dynamics dependency supplies evolution in an already specified free scalar model, not an enabling causal intervention. These are descriptive definition dependencies; they do not establish necessary arising or modulation relations.",
+        "Localized transport bias remains an author-supplied methodological transport-bias proposal without a specified admissibility functional, domain, physical units, map to a field observable or testable drift or transfer prediction. The Level-0 F12 support finding remains unresolved. Neither a localized-bias label nor the neighboring anisotropy and polarization proposals supply the missing physical bridge; no Level-0 causal or construction edge is admitted.",
+        "No primary experiment, anisotropic-vacuum realization, carrier population, numerical replay or new computational study is admitted. This limits the supplied record, not the existence of anisotropic models elsewhere."
       ]
     }
   ],
@@ -313,7 +255,7 @@ const contracts = {
     {
       "nodeId": "phys:directional-excitation-boundary",
       "role": "definition",
-      "denotes": "A scoped boundary separating directional propagation, attenuation, localization and intrinsic decay while excluding unsupported source-card causes and the unresolved Level-0 transport bridge.",
+      "denotes": "A scoped boundary separating directional propagation, attenuation, localization and intrinsic decay while excluding the unresolved Level-0 transport bridge.",
       "instanceAdmission": "none",
       "claimIds": [
         "D-phys-directional-excitation-boundary"

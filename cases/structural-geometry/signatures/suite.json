@@ -1,6 +1,6 @@
 {
   "aggregationProfiles": 2343,
-  "artifactHash": "sha256:a896360446fa70ff8b7908af102ace1f6d7167ad0cdd936361ba2e395d025456",
+  "artifactHash": "sha256:686995ae3e5aa914768a7bb2815f26bfc5f6d9fca6ce256c8e0ee3746567e514",
   "census": {
     "complete": 0,
     "observedFeatures": 345,
@@ -71,7 +71,7 @@
       "right": "necessity-change-typed-relations-v1"
     }
   ],
-  "referenceHash": "sha256:1bcc212d21700f640071223dccf6f25d3a6d0db201d95b800fefb70eb4364977",
+  "referenceHash": "sha256:770699ff07682baa67fee58cf0549ff76e2f30e9dcdfe498e1a41c2d7f5e4705",
   "runs": [
     {
       "artifactHash": "sha256:b4e8adaaa01b71ca3373083a725087e87df9a960b4b57875cba42d578d58e115",
@@ -330,25 +330,6 @@
           "complete": false,
           "denominator": 3,
           "numerator": 1
-        },
-        "invarianceStatus": "passed",
-        "reasons": [
-          "incomplete-response-features"
-        ],
-        "status": "indeterminate"
-      },
-      "valueHash": null
-    },
-    {
-      "artifactHash": "sha256:eeffc3cabeee8c7acb76faad23401984a661adce19ee22a97422b0a05307f68d",
-      "file": "artifacts/causal.json",
-      "id": "causal",
-      "regimeId": "typed-relations-v1",
-      "summary": {
-        "coverage": {
-          "complete": false,
-          "denominator": 5,
-          "numerator": 2
         },
         "invarianceStatus": "passed",
         "reasons": [

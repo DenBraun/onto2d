@@ -10,7 +10,7 @@ import { packFor } from "../typed/fixtures.mjs";
 import { directory, fixtures, readJson } from "./fixtures.mjs";
 
 const referenceFiles = ["controls.json", "PROTOCOL.md", "../canonical/reference.py", "../typed/reference.py", "../topology/reference.py",
-  "../invariance/build.mjs", "../../../models/causal-emergence/releases/2026.08.15/bundle.json"];
+  "../invariance/build.mjs"];
 const encoded = value => JSON.stringify(canonicalClone(value, RESPONSE_CODEC), null, 2) + "\n";
 const digest = value => createHash("sha256").update(canonicalize(value, RESPONSE_CODEC)).digest("hex");
 export async function verifyReferenceSources(reference) {

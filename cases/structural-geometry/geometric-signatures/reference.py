@@ -183,7 +183,8 @@ def main():
         if args.verify_artifacts:
             for c in value["cases"]:
                 assert actual_summary(c["id"], read("artifacts/" + c["id"] + ".json")) == c, c["id"]
-    print("Independent geometric descriptors {}: 25 cases, 781 interval profiles, 820 threshold traces, 40 adjudications.".format("written" if args.write else "verified"))
+    print("Independent geometric descriptors {}: {} cases, 781 interval profiles, 820 threshold traces, 40 adjudications.".format(
+        "written" if args.write else "verified", len(value["cases"])))
 
 
 if __name__ == "__main__":

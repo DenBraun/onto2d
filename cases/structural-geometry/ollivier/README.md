@@ -1,8 +1,8 @@
 # Ollivier reference suite
 
 The stage-four suite contains 18 synthetic graphs and two explicit induced
-fragments of the frozen Causal Emergence Model Pack. Each is evaluated with
-`zero` and `half` idleness: 40 runs and 242 exact edge calculations.
+fragments of the technical layer of the canonical Causal Emergence graph. Each is evaluated with
+`zero` and `half` idleness: 40 runs and 266 exact edge calculations.
 
 - [controls.json](controls.json) declares synthetic topology and analyzed edges.
 - [fragments.json](fragments.json) fixes the source identity and selected node sets.
@@ -61,11 +61,21 @@ independent `--write` operation first requires agreement with computed artifacts
 | Open endpoint-degree control | -2 | No shortcut between the two neighborhoods |
 | Same endpoint degrees with a shortcut | 0 | A direct neighborhood route reduces cost |
 
-The Causal Emergence seed fragment has 10 nodes / 18 scoped edges and 27 boundary
-edges; the admissibility fragment has 9 nodes / 17 scoped edges and 43 boundary
-edges. Their values describe these induced graphs, not the full 249-node graph.
-The selection is illustrative and fixed, not a statistically representative
-sample. Source snapshot findings and source-parent semantics are unchanged.
+The Causal Emergence fragments are selected by a declared rule on Level 0 of
+the canonical graph. The definition fragment contains all 28 Level-0 entities
+and their 22 definition edges, five of them reviewed bridges from the
+manuscript's own definitions. Its 40 boundary edges lead to construction rules
+(25) or to Level-1 records through reviewed bridges (15). Twenty analyzed edges
+are negatively curved. Two have zero curvature: the isolated
+`description:ensemble-synchronization` and `bridge:oscillatory-mode-discrete-scale`,
+which closes a shortcut with the compensation definitions of both endpoints. The
+rule fragment adds the six construction rules (34 nodes, 47 scoped edges, 15
+boundary bridges) and analyzes the 25 rule-premise and rule-conclusion edges:
+23 are negative. `l0:closure-parameter->R-mode`, on the graph's single directed
+cycle, and `l0:hyperbolic-frame->R-mode` have zero curvature. Both fragments lie in the technical layer and are
+projected with `canonical-technical-directed-v1`. Values describe these induced graphs, not the full
+2537-node technical layer. The selection is illustrative and fixed, not a statistically
+representative sample, and relation semantics are unchanged.
 
 See the [method contract](../../../docs/structural-geometry/GEOMETRY.md#directed-ollivier-reference-contract)
 and [review](../../../docs/structural-geometry/EVIDENCE.md).

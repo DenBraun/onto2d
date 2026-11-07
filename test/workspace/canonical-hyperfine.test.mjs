@@ -136,19 +136,19 @@ test("hyperfine state parameters retain angular momentum, frequency units and co
 
 test("the optical acquisition retains isotope, excited state, fluorescence and polarization geometry", async () => {
   const data = await source();
-  assert.match(claim(data, csContext).statement, /Cs133.*6s1\/2 F=3 or F=4.*7d2D3\/2 Fprime=2,3,4,5/);
+  assert.match(claim(data, csContext).statement, /Cs133.*6s1\/2 F=3 or F=4.*7d 2D3\/2 Fprime=2,3,4,5/);
   assert.match(claim(data, csContext).statement, /767\.8 nm.*AOM2.*double-pass.*672\.5 nm.*10 nm bandpass/);
   assert.match(claim(data, csContext).statement, /135 C.*2 mG.*63\+\/-3 micrometres.*25 mm.*67 mm/);
   assert.match(claim(data, csContext).statement, /theta between incident linear polarization and detection direction/);
   await rejects([
     ["the detected fluorescence wavelength cannot be the excitation wavelength", (changed) =>
-      replaceStatement(changed, csContext, "record672.5 nm", "record767.8 nm")],
+      replaceStatement(changed, csContext, "record 672.5 nm", "record767.8 nm")],
     ["a ground-state microwave acquisition cannot replace the excited7d optical method", (changed) =>
       replaceStatement(changed, csContext, "Doppler-free two-photon excitation", "direct ground-state microwave Ramsey excitation")],
     ["theta is polarization-to-detection angle, not beam crossing angle", (changed) =>
       replaceStatement(changed, csContext, "between incident linear polarization and detection direction", "between the counterpropagating laser beams")],
     ["the preparation is near135C, not an unperformed zero-temperature experiment", (changed) =>
-      replaceStatement(changed, csContext, "near135 C", "at exactly0 K")],
+      replaceStatement(changed, csContext, "near 135 C", "at exactly0 K")],
     ["the source frequency coordinate and inferred excited interval remain distinct", (changed) =>
       dropLimit(changed, csContext, "not directly driven microwave transitions")],
     ["measured near-magic53+/-2 degrees and finite aperture do not guarantee zero residual shifts", (changed) =>
@@ -180,7 +180,7 @@ test("resolved lines retain interference bias and simulations retain their measu
 test("the actual erratum replaces old intervals and retains shared-line control dependencies", async () => {
   const data = await source();
   assert.match(claim(data, intervals).statement, /36\.760\(9\) MHz.*29\.427\(5\) MHz.*22\.073\(5\) MHz/);
-  assert.match(claim(data, intervals).statement, /ground-F=4 column gives36\.760\(10\),29\.427\(5\) and22\.071\(5\)/);
+  assert.match(claim(data, intervals).statement, /ground-F=4 column gives 36\.760\(10\), 29\.427\(5\) and 22\.071\(5\)/);
   assert.ok(claim(data, intervals).citations.some((item) => item.sourceId === correction && item.role === "supports"));
   await rejects([
     ["the corrected groundF3 interval cannot revert to an old Voigt result", (changed) =>
@@ -232,7 +232,7 @@ test("corrected coupling constants keep mixed units, weak octupole precision and
 
 test("the exact SI hyperfine assignment is normative and distinct from measured clock accuracy", async () => {
   const data = await source();
-  assert.match(claim(data, siDefinition).statement, /exactly9,192,631,770 Hz.*Hz=s\^-1/);
+  assert.match(claim(data, siDefinition).statement, /exactly 9,192,631,770 Hz.*Hz=s\^-1/);
   assert.match(claim(data, siDefinition).statement, /F=4,mF=0 and F=3,mF=0.*isolated atom.*blackbody/);
   assert.equal(publication(data, siSource).doi, "10.59161/AUEZ1291");
   assert.equal(publication(data, siSource).year, 2026);
@@ -241,14 +241,14 @@ test("the exact SI hyperfine assignment is normative and distinct from measured 
     .every((item) => item.role === "definition-dependency" && item.contextIds === undefined));
   await rejects([
     ["the unit-defining Cs frequency cannot become the measured Rb frequency", (changed) =>
-      replaceStatement(changed, siDefinition, "exactly9,192,631,770 Hz", "exactly6,834,682,610.904324 Hz")],
+      replaceStatement(changed, siDefinition, "exactly 9,192,631,770 Hz", "exactly6,834,682,610.904324 Hz")],
     ["an assigned exact number cannot erase finite apparatus uncertainty", (changed) =>
       replaceStatement(changed, siDefinition, "nonzero uncertainty", "zero uncertainty")],
     ["unit definition cannot acquire an empirical context", (changed) => {
       claim(changed, siDefinition).contextIds = [clockStudy];
     }, /Definition acquired an experimental preparation/],
     ["the Cs ground-state reference is not proof of an operating7D optical clock", (changed) =>
-      dropLimit(changed, siDefinition, "demonstrates an operating7D optical frequency standard")],
+      dropLimit(changed, siDefinition, "demonstrates an operating 7D optical frequency standard")],
     ["current definition wording cannot recalibrate the2002 result or its1999 reference", (changed) =>
       dropLimit(changed, siDefinition, "automatically recalibrated to a new uncertainty")],
     ["mF0 selection does not remove all second-order and thermal shifts", (changed) =>
@@ -260,7 +260,7 @@ test("fountain spectroscopy retains Ramsey populations, shared flywheel and alte
   const data = await source();
   assert.match(claim(data, clockContext).statement, /electronic ground states.*alternately with Rb and Cs/);
   assert.match(claim(data, clockContext).statement, /mF=0.*two Ramsey microwave interactions.*fluorescence.*digital servo/);
-  assert.match(claim(data, clockContext).statement, /share a100 MHz.*one hydrogen-maser.*few minutes/);
+  assert.match(claim(data, clockContext).statement, /share a 100 MHz.*one hydrogen-maser.*few minutes/);
   await rejects([
     ["a shared flywheel is not an independent maser per fountain", (changed) =>
       replaceStatement(changed, clockContext, "one hydrogen-maser flywheel", "independent hydrogen-maser flywheels per species")],
@@ -271,7 +271,7 @@ test("fountain spectroscopy retains Ramsey populations, shared flywheel and alte
     ["shared-maser timing and sampling dependence cannot disappear", (changed) =>
       dropLimit(changed, clockContext, "fluctuations are common")],
     ["TableI10^-16 fractions are not shifts in Hz and mF0 does not remove quadratic Zeeman shifts", (changed) =>
-      dropLimit(changed, clockContext, "fractional units of10^-16")],
+      dropLimit(changed, clockContext, "fractional units of 10^-16")],
     ["historical source calibrations cannot become a current performance record", (changed) =>
       dropLimit(changed, clockContext, "current clock-performance record")]
   ]);
@@ -280,21 +280,21 @@ test("fountain spectroscopy retains Ramsey populations, shared flywheel and alte
 test("the historical Rb frequency retains statistical/systematic errors and its distinct display reference", async () => {
   const data = await source();
   assert.match(claim(data, clock).statement, /2002.*6,834,682,610\.904324\(4\)\(7\) Hz/);
-  assert.match(claim(data, clock).statement, /first parenthesis is1-sigma statistical.*separate systematic.*DF_Rb,DF_Cs and FOM/);
-  assert.match(claim(data, clock).statement, /1999 frequency6,834,682,610\.904333 Hz.*not the new2002 result/);
+  assert.match(claim(data, clock).statement, /first parenthesis is 1-sigma statistical.*separate systematic.*DF_Rb,DF_Cs and FOM/);
+  assert.match(claim(data, clock).statement, /1999 frequency 6,834,682,610\.904333 Hz.*not the new 2002 result/);
   await rejects([
     ["the1999 conventional display reference cannot replace the2002 measurement", (changed) =>
       replaceStatement(changed, clock, "6,834,682,610.904324(4)(7) Hz", "6,834,682,610.904333(4)(7) Hz")],
     ["the statistical and systematic uncertainties cannot exchange roles", (changed) =>
-      replaceStatement(changed, clock, "first parenthesis is1-sigma statistical uncertainty", "first parenthesis is systematic uncertainty")],
+      replaceStatement(changed, clock, "first parenthesis is 1-sigma statistical uncertainty", "first parenthesis is systematic uncertainty")],
     ["source uncertainty cannot become an exact unit assignment", (changed) =>
       replaceStatement(changed, clock, "6,834,682,610.904324(4)(7) Hz", "exactly6,834,682,610.904324 Hz")],
     ["statistical plot bars do not replace the full historical shift budget", (changed) =>
-      dropLimit(changed, clockContext, "Figure2 error bars are statistical comparison scatter")],
+      dropLimit(changed, clockContext, "Figure 2 error bars are statistical comparison scatter")],
     ["a clock ratio does not independently measure nuclear moments or single-parameter drift", (changed) =>
       dropLimit(changed, clockContext, "oversimplified Schmidt model")],
     ["the out-of-scope drift-sign inconsistency is not silently adjudicated", (changed) =>
-      dropLimit(changed, clock, "positive0.2 versus final-summary negative0.2")]
+      dropLimit(changed, clock, "positive 0.2 versus final-summary negative 0.2")]
   ]);
 });
 
@@ -302,7 +302,7 @@ test("corrections, definitions and conditional simulations cannot add independen
   const data = await source();
   assert.equal(data.physics.studies.filter((item) => item.sourceId === csStudy).length, 1);
   assert.equal(data.physics.studies.filter((item) => item.sourceId === clockStudy).length, 1);
-  assert.match(publication(data, correction).review.limit, /same2024 experiment.*not a third empirical context/);
+  assert.match(publication(data, correction).review.limit, /same 2024 experiment.*not a third empirical context/);
   assert.match(publication(data, csStudy).review.limit, /Supplemental Material were not fully read.*401/);
   await rejects([
     ...[correction, formal, original, siSource].map((id) => [
@@ -321,7 +321,7 @@ test("corrections, definitions and conditional simulations cannot add independen
   ]);
 });
 
-test("the complete synthesis retains both preparations and dispositions of the original parents and defaults", async () => {
+test("the complete synthesis retains both preparations, separate counting domains and no Z=1-to-Cs prediction", async () => {
   const data = await source();
   for (const id of [synthesis, synthesisMethod]) assert.deepEqual(claim(data, id).contextIds, contexts);
   assert.equal(claim(data, synthesis).status, "literature-synthesis");
@@ -332,9 +332,6 @@ test("the complete synthesis retains both preparations and dispositions of the o
     assert.deepEqual(item.claimIds, [synthesisMethod]);
     assert.deepEqual(item.contextIds, contexts);
   }
-  const legacy = claim(data, synthesis).citations.find((item) => item.sourceId === "legacy-2");
-  assert.equal(legacy.role, "provenance");
-  assert.match(legacy.note, /Original catalogue JSON pointer: \/20/);
   await rejects([
     ["the synthesis cannot drop the clock realization preparation", (changed) => {
       claim(changed, synthesis).contextIds = [csStudy];
@@ -345,12 +342,10 @@ test("the complete synthesis retains both preparations and dispositions of the o
     ["a literature aggregate cannot become a single-publication inference", (changed) => {
       claim(changed, synthesis).status = "publication-supported";
     }],
-    ["parent2.2/.55 and actual nucleon parent1.11/.45 are not measured causal fractions", (changed) =>
-      dropLimit(changed, synthesis, "Original parent2.2 weight0.55 and parent1.11 weight0.45")],
-    ["one carrier is not a measured universal hyperfine onset population", (changed) =>
-      dropLimit(changed, synthesis, "N_min=N_crit=1")],
-    ["SOMA and Level2 labels cannot become measured physical stage boundaries", (changed) =>
-      dropLimit(changed, synthesis, "provenance/display classification")],
+    ["a Z=1 binding model and free-nucleon moment cannot become a Cs many-electron or nuclear prediction", (changed) =>
+      dropLimit(changed, synthesis, "do not turn the leading Z=1 binding model or free-nucleon moment")],
+    ["atomic, nuclear, sublevel, fountain-atom and campaign counts remain different domains", (changed) =>
+      dropLimit(changed, synthesis, "number of experimental campaigns count different domains")],
     ["source simulations and inherited corrections do not create independent confirmations", (changed) =>
       dropLimit(changed, synthesis, "Source simulations consume measured HFS")],
     ["the prepared findings cannot authorize an unreviewed physical edge between the two experiments", (changed) => {

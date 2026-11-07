@@ -114,7 +114,8 @@ const contracts = {
           "Author v2, pages 3-4, Figure 1 and equations 1-5: quenching, pile-up and detector response",
           "Author v2, pages 4-5: constrained spectral fit, fiducial selection and background inputs",
           "Author v2, page 5, equations 6-7: event-limit normalization and statistical lifetime bound",
-          "Author v2, page 5: correlated systematic profiles and final electron-decay channel bound"
+          "Author v2, page 5: correlated systematic profiles and final electron-decay channel bound",
+          "Author v2, pages 1-2: abstract and introduction, charge-conservation motivation and the searched electron-to-neutrino-plus-photon channel"
         ],
         "limit": "Read the five-page author v2 and visually checked Figure 1 and equations 1-7 on pages 3-5; cross-checked the published response/fit and limit text on pages 231802-4 to 231802-5. The cited calibration, solar-neutrino and response theses/articles were not independently reconstructed. No new full spectral fit or confidence-profile calculation is supplied."
       }

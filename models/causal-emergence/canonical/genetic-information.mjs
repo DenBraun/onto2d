@@ -100,24 +100,6 @@ export const GENETIC_INFORMATION_RECORDS = {
         ],
         "limit": "Read the original Fire article scientific text, Methods, Figure 1-3 captions and Table 1-2 transcription/footnotes from the six-page original PDF hosted by the Mello lab at https://www.umassmed.edu/globalassets/mellolab/documents/publications/fire_mello_genetic-interference-by-dsrna_1998.pdf. The PDF includes tails of unrelated adjacent articles; those are excluded. The Nature indexed primary record was used for publication metadata, not as a substitute for the scientific full text. A full visual figure/table audit, supplementary GIF/DOC, upstream methods articles, raw data, numerical reanalysis and later mechanistic literature were not reviewed. Text extraction has unit and layout artifacts; no numerical effect sizes, doses, molecular thresholds or precise RNA lengths are newly admitted. Qualitative comparisons and their limits alone are used. Checked 2026-10-20 against the original author-lab-hosted PDF header and indexed primary Nature article/issue records: six authors, DOI 10.1038/35888, Nature 391(6669), 806-811 and 19 February 1998 agree. Received 16 September and accepted 24 November 1997 are separate dates. Direct Nature and PubMed 9486653 opening returned unavailable or empty text; indexed primary Nature supplied the metadata. Limited exact-DOI and title correction/erratum/retraction searches surfaced no explicit correction to this article. Unrelated corrected or retracted articles citing it are not corrections to Fire 1998. This bounded search does not establish absence of later corrections and is not a DOI-registry relation audit."
       }
-    },
-    {
-      "id": "legacy-3",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 3 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-3.json",
-      "sha256": "baf02946627ee18978d017f897d17a1f63c1dee96f641b5b3260d115d7e695c1",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
     }
   ],
   "claims": [
@@ -481,7 +463,7 @@ export const GENETIC_INFORMATION_RECORDS = {
         "E. coli W3100 extracts/fractions, prepared ribosomes, soluble components, supplied synthetic polyU, amino acids and ATP/ATP-generating inputs are laboratory preparations. This is not synthesis of the translation machinery or spontaneous sequence expression.",
         "Table 6 reports 44 versus 39,800 counts per minute per milligram protein for no addition versus supplied polyU in its labelled-phenylalanine comparison after 60 minutes at 35 C. These are radioactivity-normalized endpoints, not an elementary elongation rate, universal amplification factor or copying-fidelity estimate.",
         "Different tables and Figure 6 use declared differing conditions or times; their numerical values are not pooled as one common rate or replicated error model. The Methods report duplicate assays without a reconstructed full uncertainty model.",
-        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor, identify ribosomal peptidyl-transfer chemistry or establish universal necessity of separate source-catalogue parents.",
+        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor or identify ribosomal peptidyl-transfer chemistry.",
         "The product resembles authentic poly-L-phenylalanine in the reported solubility/hydrolysis comparisons and yields labelled phenylalanine on complete hydrolysis. This is partial product characterization, not a directly read complete amino-acid sequence, molecular-weight distribution or functional folded-protein assay.",
         "The source explicitly states that singlet versus triplet or other codon size is not determined, and its proof note leaves eventual template stoichiometry unestablished. Do not attribute direct identification of the UUU triplet, the full genetic code, reading-frame maintenance or general translation fidelity to this paper.",
         "Adaptor recognition, modern ribosome structure, translocation, proofreading, coupled transcription and recursive production of functional catalysts are not measured in the admitted polyU context. Supplied polyU does not require simultaneous DNA replication/transcription in this assay."
@@ -521,7 +503,7 @@ export const GENETIC_INFORMATION_RECORDS = {
         "E. coli W3100 extracts/fractions, prepared ribosomes, soluble components, supplied synthetic polyU, amino acids and ATP/ATP-generating inputs are laboratory preparations. This is not synthesis of the translation machinery or spontaneous sequence expression.",
         "Table 6 reports 44 versus 39,800 counts per minute per milligram protein for no addition versus supplied polyU in its labelled-phenylalanine comparison after 60 minutes at 35 C. These are radioactivity-normalized endpoints, not an elementary elongation rate, universal amplification factor or copying-fidelity estimate.",
         "Different tables and Figure 6 use declared differing conditions or times; their numerical values are not pooled as one common rate or replicated error model. The Methods report duplicate assays without a reconstructed full uncertainty model.",
-        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor, identify ribosomal peptidyl-transfer chemistry or establish universal necessity of separate source-catalogue parents.",
+        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor or identify ribosomal peptidyl-transfer chemistry.",
         "The product resembles authentic poly-L-phenylalanine in the reported solubility/hydrolysis comparisons and yields labelled phenylalanine on complete hydrolysis. This is partial product characterization, not a directly read complete amino-acid sequence, molecular-weight distribution or functional folded-protein assay.",
         "The source explicitly states that singlet versus triplet or other codon size is not determined, and its proof note leaves eventual template stoichiometry unestablished. Do not attribute direct identification of the UUU triplet, the full genetic code, reading-frame maintenance or general translation fidelity to this paper.",
         "Adaptor recognition, modern ribosome structure, translocation, proofreading, coupled transcription and recursive production of functional catalysts are not measured in the admitted polyU context. Supplied polyU does not require simultaneous DNA replication/transcription in this assay."
@@ -566,24 +548,15 @@ export const GENETIC_INFORMATION_RECORDS = {
           "locator": "PNAS 48(1), 88-93: ATP-only polyadenylate formation, Tables 9-12, Discussion and Summary on unresolved enzyme identity, RNA-DNA association and in-vivo transfer",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported preparation, observable or conditional inference only. No independent experimental replay or raw-data refit."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /4 supplies the complete assertions and defaults audited here; it is not a primary experimental source."
         }
       ],
       "checkIds": [],
       "limitations": [
         "Replication and transcription are represented by separate experimental systems. Meselson nitrogen transfer supports qualified semiconservative partition in growing bacteria; Chamberlin enzyme fractions support supplied-DNA-dependent RNA-product synthesis and bulk composition. Neither directly reads complete sequence fidelity.",
         "No single coupled copying/expression system, regulated transcript initiation/termination, physiological sequence-to-functional-product mapping, constrained hereditary variation or universal informational continuity is demonstrated by joining these publications.",
-        "Original parents 2.3 bonding, 2.5 resonance and 2.7 hydrogen bonding have separate finite molecular preparations. They are not mediator interventions or independently weighted necessary causes in the isotope-transfer or RNA-fraction assays.",
-        "Original parent 3.1 has selected KSI/lysozyme catalytic evidence, which is not an RNA-polymerase experiment; the present Chamberlin activity is admitted directly. Original 3.40 has finite prepared-primer match/mismatch discrimination, whose derived percentage and chemistry do not transfer to these replication/transcription systems.",
-        "Original parent links 2.3 weight 0.25, necessary, directions [0], interaction modes [0, 1], dependency 0 Substrate; 2.5 weight 0.2, enabling, directions [0], interaction modes [0, 1], dependency 10 Constraint; 2.7 weight 0.25, necessary, directions [0], interaction modes [0, 1], dependency 2 Template; 3.1 weight 0.2, necessary, directions [0], interaction modes [0, 4], dependency 3 Catalyst; 3.40 weight 0.1, enabling, directions [0], interaction modes [1], dependency 7 Information. Their arising labels, weights, directions, modes and necessity are catalogue assertions without a matched estimator or universal proof in these sources; none is adopted as a generative causal edge.",
-        "Original quantization [('2.3', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('2.5', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('2.7', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.1', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.40', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None})]. These functional-material carrier codes and minimum/critical/saturation defaults are not measured molecular counts, biochemical thresholds or minima. Null saturation is absent information, not evidence of no saturation.",
-        "Original Level 3, Phase 2, TypeRole 0, Science [0, 1, 2, 3], ScientificStatus established and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are project classification/coverage data. They do not prove an ordered historical phase, dynamic ontological arising, universal resource/transport/gradient/compartment requirement or source-independent scientific status.",
-        "Both original generic evidence entries have null DOI/Link. Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this card are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
+        "Bonding, resonance and hydrogen bonding have separate finite molecular preparations. They are not mediator interventions or independently weighted necessary causes in the isotope-transfer or RNA-fraction assays.",
+        "The enzymatic-catalysis scope has selected KSI/lysozyme catalytic evidence, which is not an RNA-polymerase experiment; the present Chamberlin activity is admitted directly. The template-complementarity scope has finite prepared-primer match/mismatch discrimination, whose derived percentage and chemistry do not transfer to these replication/transcription systems.",
+        "Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this scope are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
         "No numerical checks, raw-data replay, experiment, kinetic fit, uncertainty reconstruction or physical instance admission is claimed."
       ],
       "contextIds": [
@@ -629,24 +602,15 @@ export const GENETIC_INFORMATION_RECORDS = {
           "locator": "PNAS 48(1), 88-93: ATP-only polyadenylate formation, Tables 9-12, Discussion and Summary on unresolved enzyme identity, RNA-DNA association and in-vivo transfer",
           "role": "method",
           "note": "Actually read original primary passage; source-reported preparation, observable or conditional inference only. No independent experimental replay or raw-data refit."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /4 supplies the complete assertions and defaults audited here; it is not a primary experimental source."
         }
       ],
       "checkIds": [],
       "limitations": [
         "Replication and transcription are represented by separate experimental systems. Meselson nitrogen transfer supports qualified semiconservative partition in growing bacteria; Chamberlin enzyme fractions support supplied-DNA-dependent RNA-product synthesis and bulk composition. Neither directly reads complete sequence fidelity.",
         "No single coupled copying/expression system, regulated transcript initiation/termination, physiological sequence-to-functional-product mapping, constrained hereditary variation or universal informational continuity is demonstrated by joining these publications.",
-        "Original parents 2.3 bonding, 2.5 resonance and 2.7 hydrogen bonding have separate finite molecular preparations. They are not mediator interventions or independently weighted necessary causes in the isotope-transfer or RNA-fraction assays.",
-        "Original parent 3.1 has selected KSI/lysozyme catalytic evidence, which is not an RNA-polymerase experiment; the present Chamberlin activity is admitted directly. Original 3.40 has finite prepared-primer match/mismatch discrimination, whose derived percentage and chemistry do not transfer to these replication/transcription systems.",
-        "Original parent links 2.3 weight 0.25, necessary, directions [0], interaction modes [0, 1], dependency 0 Substrate; 2.5 weight 0.2, enabling, directions [0], interaction modes [0, 1], dependency 10 Constraint; 2.7 weight 0.25, necessary, directions [0], interaction modes [0, 1], dependency 2 Template; 3.1 weight 0.2, necessary, directions [0], interaction modes [0, 4], dependency 3 Catalyst; 3.40 weight 0.1, enabling, directions [0], interaction modes [1], dependency 7 Information. Their arising labels, weights, directions, modes and necessity are catalogue assertions without a matched estimator or universal proof in these sources; none is adopted as a generative causal edge.",
-        "Original quantization [('2.3', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('2.5', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('2.7', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.1', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.40', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None})]. These functional-material carrier codes and minimum/critical/saturation defaults are not measured molecular counts, biochemical thresholds or minima. Null saturation is absent information, not evidence of no saturation.",
-        "Original Level 3, Phase 2, TypeRole 0, Science [0, 1, 2, 3], ScientificStatus established and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are project classification/coverage data. They do not prove an ordered historical phase, dynamic ontological arising, universal resource/transport/gradient/compartment requirement or source-independent scientific status.",
-        "Both original generic evidence entries have null DOI/Link. Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this card are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
+        "Bonding, resonance and hydrogen bonding have separate finite molecular preparations. They are not mediator interventions or independently weighted necessary causes in the isotope-transfer or RNA-fraction assays.",
+        "The enzymatic-catalysis scope has selected KSI/lysozyme catalytic evidence, which is not an RNA-polymerase experiment; the present Chamberlin activity is admitted directly. The template-complementarity scope has finite prepared-primer match/mismatch discrimination, whose derived percentage and chemistry do not transfer to these replication/transcription systems.",
+        "Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this scope are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
         "No numerical checks, raw-data replay, experiment, kinetic fit, uncertainty reconstruction or physical instance admission is claimed."
       ],
       "contextIds": [
@@ -680,24 +644,15 @@ export const GENETIC_INFORMATION_RECORDS = {
           "locator": "PNAS 47(10), 1600-1601: Discussion, Summary and Note added in proof on RNA-fraction identity, unresolved codon size and unestablished eventual template stoichiometry",
           "role": "supports",
           "note": "Actually read original primary passage; source-reported preparation, observable or conditional inference only. No independent experimental replay or raw-data refit."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /22 supplies the complete assertions and defaults audited here; it is not a primary experimental source."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The positive case is supplied-polyU-dependent labelled-phenylalanine incorporation and partial product identity in a prepared cell-free E. coli system. The source does not jointly resolve codon recognition, adaptor matching, reading frame, peptide transfer, translocation and fidelity control.",
         "RNA-dependent polypeptide synthesis is retained without a claim that a complete code, general arbitrary-sequence mapping, folded protein activity, feedback-maintained synthesis or recursive biochemical organization was measured.",
-        "Original parent 3.4 is a broad replication/transcription card. The present assay supplies polyU, so the separate Meselson/Chamberlin studies do not become necessary upstream steps, a common coupled experiment or another independent translation acquisition.",
-        "Original parent 3.7 hammerhead folding/cleavage preparations do not establish the ribosome catalytic mechanism; original 3.5 CAPN cooperativity does not establish translation regulation, and original 3.21 kinetic definitions do not provide a measured elongation law or thermodynamic closure in this experiment.",
-        "Original parent links 3.4 weight 0.35, necessary, directions [0], interaction modes [0, 1], dependency 7 Information; 3.7 weight 0.3, necessary, directions [0], interaction modes [0, 1], dependency 3 Catalyst; 3.5 weight 0.2, enabling, directions [0], interaction modes [2], dependency 4 Regulation; 3.21 weight 0.15, contextual, directions [2], interaction modes [1], dependency 10 Constraint. Their arising labels, weights, directions, modes and necessity are catalogue assertions without a matched estimator or universal proof in these sources; none is adopted as a generative causal edge.",
-        "Original quantization [('3.4', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.7', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.5', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 2, 'N_crit': 2, 'N_sat': None}), ('3.21', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None})]. These functional-material carrier codes and minimum/critical/saturation defaults are not measured molecular counts, biochemical thresholds or minima. Null saturation is absent information, not evidence of no saturation.",
-        "Original Level 3, Phase 2, TypeRole 0, Science [1, 2, 3], ScientificStatus established and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are project classification/coverage data. They do not prove an ordered historical phase, dynamic ontological arising, universal resource/transport/gradient/compartment requirement or source-independent scientific status.",
-        "Both original generic evidence entries have null DOI/Link. Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this card are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
+        "The present assay supplies polyU, so the separate Meselson/Chamberlin studies do not become necessary upstream steps, a common coupled experiment or another independent translation acquisition.",
+        "Hammerhead folding/cleavage preparations do not establish the ribosome catalytic mechanism; CAPN cooperativity does not establish translation regulation, and kinetic definitions do not provide a measured elongation law or thermodynamic closure in this experiment.",
+        "Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this scope are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
         "No numerical checks, raw-data replay, experiment, kinetic fit, uncertainty reconstruction or physical instance admission is claimed."
       ],
       "contextIds": [
@@ -728,24 +683,15 @@ export const GENETIC_INFORMATION_RECORDS = {
           "locator": "PNAS 47(10), 1600-1601: Discussion, Summary and Note added in proof on RNA-fraction identity, unresolved codon size and unestablished eventual template stoichiometry",
           "role": "method",
           "note": "Actually read original primary passage; source-reported preparation, observable or conditional inference only. No independent experimental replay or raw-data refit."
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original Level 3 card /22 supplies the complete assertions and defaults audited here; it is not a primary experimental source."
         }
       ],
       "checkIds": [],
       "limitations": [
         "The positive case is supplied-polyU-dependent labelled-phenylalanine incorporation and partial product identity in a prepared cell-free E. coli system. The source does not jointly resolve codon recognition, adaptor matching, reading frame, peptide transfer, translocation and fidelity control.",
         "RNA-dependent polypeptide synthesis is retained without a claim that a complete code, general arbitrary-sequence mapping, folded protein activity, feedback-maintained synthesis or recursive biochemical organization was measured.",
-        "Original parent 3.4 is a broad replication/transcription card. The present assay supplies polyU, so the separate Meselson/Chamberlin studies do not become necessary upstream steps, a common coupled experiment or another independent translation acquisition.",
-        "Original parent 3.7 hammerhead folding/cleavage preparations do not establish the ribosome catalytic mechanism; original 3.5 CAPN cooperativity does not establish translation regulation, and original 3.21 kinetic definitions do not provide a measured elongation law or thermodynamic closure in this experiment.",
-        "Original parent links 3.4 weight 0.35, necessary, directions [0], interaction modes [0, 1], dependency 7 Information; 3.7 weight 0.3, necessary, directions [0], interaction modes [0, 1], dependency 3 Catalyst; 3.5 weight 0.2, enabling, directions [0], interaction modes [2], dependency 4 Regulation; 3.21 weight 0.15, contextual, directions [2], interaction modes [1], dependency 10 Constraint. Their arising labels, weights, directions, modes and necessity are catalogue assertions without a matched estimator or universal proof in these sources; none is adopted as a generative causal edge.",
-        "Original quantization [('3.4', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.7', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.5', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 2, 'N_crit': 2, 'N_sat': None}), ('3.21', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None})]. These functional-material carrier codes and minimum/critical/saturation defaults are not measured molecular counts, biochemical thresholds or minima. Null saturation is absent information, not evidence of no saturation.",
-        "Original Level 3, Phase 2, TypeRole 0, Science [1, 2, 3], ScientificStatus established and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are project classification/coverage data. They do not prove an ordered historical phase, dynamic ontological arising, universal resource/transport/gradient/compartment requirement or source-independent scientific status.",
-        "Both original generic evidence entries have null DOI/Link. Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this card are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
+        "The present assay supplies polyU, so the separate Meselson/Chamberlin studies do not become necessary upstream steps, a common coupled experiment or another independent translation acquisition.",
+        "Hammerhead folding/cleavage preparations do not establish the ribosome catalytic mechanism; CAPN cooperativity does not establish translation regulation, and kinetic definitions do not provide a measured elongation law or thermodynamic closure in this experiment.",
+        "Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this scope are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
         "No numerical checks, raw-data replay, experiment, kinetic fit, uncertainty reconstruction or physical instance admission is claimed."
       ],
       "contextIds": [
@@ -790,9 +736,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -825,9 +771,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-dsrna-phenotype-context"
@@ -863,9 +809,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-dsrna-phenotype-context"
@@ -895,9 +841,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-dual-gfp-context"
@@ -927,9 +873,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-dual-gfp-context"
@@ -958,9 +904,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-mex3-in-situ-context"
@@ -989,9 +935,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-mex3-in-situ-context"
@@ -1035,9 +981,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-dsrna-phenotype-context",
@@ -1048,7 +994,7 @@ export const GENETIC_INFORMATION_RECORDS = {
     {
       "id": "C-bio-rnai-source-inference",
       "kind": "review-finding",
-      "statement": "The selected source comparisons support introduced-dsRNA-associated, sequence-related functional interference in prepared C. elegans, with a separate mex-3 observation of reduced detectable transcript. The evidence does not resolve the molecular silencing mechanism or establish the full non-coding-RNA, translation, chromatin, reversibility and adaptive-regulation claims of original card 23.",
+      "statement": "The selected source comparisons support introduced-dsRNA-associated, sequence-related functional interference in prepared C. elegans, with a separate mex-3 observation of reduced detectable transcript. The evidence does not resolve the molecular silencing mechanism or establish full non-coding-RNA, translation, chromatin, reversibility and adaptive-regulation claims.",
       "scope": "Bounded original-publication interpretation of the three separate readout contexts.",
       "status": "publication-supported",
       "citations": [
@@ -1083,9 +1029,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "contextIds": [
         "fire1998-celegans-dsrna-phenotype-context",
@@ -1405,7 +1351,7 @@ export const GENETIC_INFORMATION_RECORDS = {
         "E. coli W3100 extracts/fractions, prepared ribosomes, soluble components, supplied synthetic polyU, amino acids and ATP/ATP-generating inputs are laboratory preparations. This is not synthesis of the translation machinery or spontaneous sequence expression.",
         "Table 6 reports 44 versus 39,800 counts per minute per milligram protein for no addition versus supplied polyU in its labelled-phenylalanine comparison after 60 minutes at 35 C. These are radioactivity-normalized endpoints, not an elementary elongation rate, universal amplification factor or copying-fidelity estimate.",
         "Different tables and Figure 6 use declared differing conditions or times; their numerical values are not pooled as one common rate or replicated error model. The Methods report duplicate assays without a reconstructed full uncertainty model.",
-        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor, identify ribosomal peptidyl-transfer chemistry or establish universal necessity of separate source-catalogue parents.",
+        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor or identify ribosomal peptidyl-transfer chemistry.",
         "The product resembles authentic poly-L-phenylalanine in the reported solubility/hydrolysis comparisons and yields labelled phenylalanine on complete hydrolysis. This is partial product characterization, not a directly read complete amino-acid sequence, molecular-weight distribution or functional folded-protein assay.",
         "The source explicitly states that singlet versus triplet or other codon size is not determined, and its proof note leaves eventual template stoichiometry unestablished. Do not attribute direct identification of the UUU triplet, the full genetic code, reading-frame maintenance or general translation fidelity to this paper.",
         "Adaptor recognition, modern ribosome structure, translocation, proofreading, coupled transcription and recursive production of functional catalysts are not measured in the admitted polyU context. Supplied polyU does not require simultaneous DNA replication/transcription in this assay."
@@ -1439,7 +1385,7 @@ export const GENETIC_INFORMATION_RECORDS = {
         "E. coli W3100 extracts/fractions, prepared ribosomes, soluble components, supplied synthetic polyU, amino acids and ATP/ATP-generating inputs are laboratory preparations. This is not synthesis of the translation machinery or spontaneous sequence expression.",
         "Table 6 reports 44 versus 39,800 counts per minute per milligram protein for no addition versus supplied polyU in its labelled-phenylalanine comparison after 60 minutes at 35 C. These are radioactivity-normalized endpoints, not an elementary elongation rate, universal amplification factor or copying-fidelity estimate.",
         "Different tables and Figure 6 use declared differing conditions or times; their numerical values are not pooled as one common rate or replicated error model. The Methods report duplicate assays without a reconstructed full uncertainty model.",
-        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor, identify ribosomal peptidyl-transfer chemistry or establish universal necessity of separate source-catalogue parents.",
+        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor or identify ribosomal peptidyl-transfer chemistry.",
         "The product resembles authentic poly-L-phenylalanine in the reported solubility/hydrolysis comparisons and yields labelled phenylalanine on complete hydrolysis. This is partial product characterization, not a directly read complete amino-acid sequence, molecular-weight distribution or functional folded-protein assay.",
         "The source explicitly states that singlet versus triplet or other codon size is not determined, and its proof note leaves eventual template stoichiometry unestablished. Do not attribute direct identification of the UUU triplet, the full genetic code, reading-frame maintenance or general translation fidelity to this paper.",
         "Adaptor recognition, modern ribosome structure, translocation, proofreading, coupled transcription and recursive production of functional catalysts are not measured in the admitted polyU context. Supplied polyU does not require simultaneous DNA replication/transcription in this assay."
@@ -1476,21 +1422,14 @@ export const GENETIC_INFORMATION_RECORDS = {
         {
           "sourceId": "chamberlin1962-dna-directed-rna",
           "locator": "PNAS 48(1), 88-93: ATP-only polyadenylate formation, Tables 9-12, Discussion and Summary on unresolved enzyme identity, RNA-DNA association and in-vivo transfer"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "Replication and transcription are represented by separate experimental systems. Meselson nitrogen transfer supports qualified semiconservative partition in growing bacteria; Chamberlin enzyme fractions support supplied-DNA-dependent RNA-product synthesis and bulk composition. Neither directly reads complete sequence fidelity.",
         "No single coupled copying/expression system, regulated transcript initiation/termination, physiological sequence-to-functional-product mapping, constrained hereditary variation or universal informational continuity is demonstrated by joining these publications.",
-        "Original parents 2.3 bonding, 2.5 resonance and 2.7 hydrogen bonding have separate finite molecular preparations. They are not mediator interventions or independently weighted necessary causes in the isotope-transfer or RNA-fraction assays.",
-        "Original parent 3.1 has selected KSI/lysozyme catalytic evidence, which is not an RNA-polymerase experiment; the present Chamberlin activity is admitted directly. Original 3.40 has finite prepared-primer match/mismatch discrimination, whose derived percentage and chemistry do not transfer to these replication/transcription systems.",
-        "Original parent links 2.3 weight 0.25, necessary, directions [0], interaction modes [0, 1], dependency 0 Substrate; 2.5 weight 0.2, enabling, directions [0], interaction modes [0, 1], dependency 10 Constraint; 2.7 weight 0.25, necessary, directions [0], interaction modes [0, 1], dependency 2 Template; 3.1 weight 0.2, necessary, directions [0], interaction modes [0, 4], dependency 3 Catalyst; 3.40 weight 0.1, enabling, directions [0], interaction modes [1], dependency 7 Information. Their arising labels, weights, directions, modes and necessity are catalogue assertions without a matched estimator or universal proof in these sources; none is adopted as a generative causal edge.",
-        "Original quantization [('2.3', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('2.5', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('2.7', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.1', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.40', {'CarrierGroupId': 2, 'CarrierTypeId': 4, 'N_min': 1, 'N_crit': 1, 'N_sat': None})]. These functional-material carrier codes and minimum/critical/saturation defaults are not measured molecular counts, biochemical thresholds or minima. Null saturation is absent information, not evidence of no saturation.",
-        "Original Level 3, Phase 2, TypeRole 0, Science [0, 1, 2, 3], ScientificStatus established and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are project classification/coverage data. They do not prove an ordered historical phase, dynamic ontological arising, universal resource/transport/gradient/compartment requirement or source-independent scientific status.",
-        "Both original generic evidence entries have null DOI/Link. Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this card are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
+        "Bonding, resonance and hydrogen bonding have separate finite molecular preparations. They are not mediator interventions or independently weighted necessary causes in the isotope-transfer or RNA-fraction assays.",
+        "The enzymatic-catalysis scope has selected KSI/lysozyme catalytic evidence, which is not an RNA-polymerase experiment; the present Chamberlin activity is admitted directly. The template-complementarity scope has finite prepared-primer match/mismatch discrimination, whose derived percentage and chemistry do not transfer to these replication/transcription systems.",
+        "Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this scope are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
         "No numerical checks, raw-data replay, experiment, kinetic fit, uncertainty reconstruction or physical instance admission is claimed."
       ]
     },
@@ -1517,21 +1456,14 @@ export const GENETIC_INFORMATION_RECORDS = {
         {
           "sourceId": "nirenberg1961-polyu-phenylalanine",
           "locator": "PNAS 47(10), 1600-1601: Discussion, Summary and Note added in proof on RNA-fraction identity, unresolved codon size and unestablished eventual template stoichiometry"
-        },
-        {
-          "sourceId": "legacy-3",
-          "locator": "/"
         }
       ],
       "openObligations": [
         "The positive case is supplied-polyU-dependent labelled-phenylalanine incorporation and partial product identity in a prepared cell-free E. coli system. The source does not jointly resolve codon recognition, adaptor matching, reading frame, peptide transfer, translocation and fidelity control.",
         "RNA-dependent polypeptide synthesis is retained without a claim that a complete code, general arbitrary-sequence mapping, folded protein activity, feedback-maintained synthesis or recursive biochemical organization was measured.",
-        "Original parent 3.4 is a broad replication/transcription card. The present assay supplies polyU, so the separate Meselson/Chamberlin studies do not become necessary upstream steps, a common coupled experiment or another independent translation acquisition.",
-        "Original parent 3.7 hammerhead folding/cleavage preparations do not establish the ribosome catalytic mechanism; original 3.5 CAPN cooperativity does not establish translation regulation, and original 3.21 kinetic definitions do not provide a measured elongation law or thermodynamic closure in this experiment.",
-        "Original parent links 3.4 weight 0.35, necessary, directions [0], interaction modes [0, 1], dependency 7 Information; 3.7 weight 0.3, necessary, directions [0], interaction modes [0, 1], dependency 3 Catalyst; 3.5 weight 0.2, enabling, directions [0], interaction modes [2], dependency 4 Regulation; 3.21 weight 0.15, contextual, directions [2], interaction modes [1], dependency 10 Constraint. Their arising labels, weights, directions, modes and necessity are catalogue assertions without a matched estimator or universal proof in these sources; none is adopted as a generative causal edge.",
-        "Original quantization [('3.4', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.7', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None}), ('3.5', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 2, 'N_crit': 2, 'N_sat': None}), ('3.21', {'CarrierGroupId': 2, 'CarrierTypeId': 5, 'N_min': 1, 'N_crit': 1, 'N_sat': None})]. These functional-material carrier codes and minimum/critical/saturation defaults are not measured molecular counts, biochemical thresholds or minima. Null saturation is absent information, not evidence of no saturation.",
-        "Original Level 3, Phase 2, TypeRole 0, Science [1, 2, 3], ScientificStatus established and requirements {\"MustCover\": [\"Substrate\", \"Constraint\"], \"ShouldCover\": [\"Catalyst\", \"Resource\", \"Transport\"], \"OptionalCover\": [\"Regulation\", \"Gradient\", \"Compartment\"]} are project classification/coverage data. They do not prove an ordered historical phase, dynamic ontological arising, universal resource/transport/gradient/compartment requirement or source-independent scientific status.",
-        "Both original generic evidence entries have null DOI/Link. Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this card are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
+        "The present assay supplies polyU, so the separate Meselson/Chamberlin studies do not become necessary upstream steps, a common coupled experiment or another independent translation acquisition.",
+        "Hammerhead folding/cleavage preparations do not establish the ribosome catalytic mechanism; CAPN cooperativity does not establish translation regulation, and kinetic definitions do not provide a measured elongation law or thermodynamic closure in this experiment.",
+        "Only the named actually read isotope-transfer, RNA-product/composition and supplied-polyU observations relevant to this scope are admitted. No unidentified structural study, sequencing-fidelity panel, ribosome profiling, kinetic proofreading model or elongation-cycle simulation is added.",
         "No numerical checks, raw-data replay, experiment, kinetic fit, uncertainty reconstruction or physical instance admission is claimed."
       ]
     },
@@ -1568,9 +1500,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -1602,9 +1534,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -1636,9 +1568,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -1666,9 +1598,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -1696,9 +1628,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -1725,9 +1657,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
@@ -1754,18 +1686,18 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     },
     {
       "id": "bio:rnai-source-inference",
       "name": "Bounded introduced-dsRNA interference interpretation",
       "kind": "hypothesis",
-      "status": "evidence-scoped",
+      "status": "hypothesis",
       "level": 3,
-      "description": "The selected source comparisons support introduced-dsRNA-associated, sequence-related functional interference in prepared C. elegans, with a separate mex-3 observation of reduced detectable transcript. The evidence does not resolve the molecular silencing mechanism or establish the full non-coding-RNA, translation, chromatin, reversibility and adaptive-regulation claims of original card 23.",
+      "description": "The selected source comparisons support introduced-dsRNA-associated, sequence-related functional interference in prepared C. elegans, with a separate mex-3 observation of reduced detectable transcript. The evidence does not resolve the molecular silencing mechanism or establish full non-coding-RNA, translation, chromatin, reversibility and adaptive-regulation claims.",
       "claimIds": [
         "C-bio-rnai-source-inference",
         "M-bio-rnai-source-inference"
@@ -1793,9 +1725,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ]
     }
   ],
@@ -2272,7 +2204,7 @@ export const GENETIC_INFORMATION_RECORDS = {
         "E. coli W3100 extracts/fractions, prepared ribosomes, soluble components, supplied synthetic polyU, amino acids and ATP/ATP-generating inputs are laboratory preparations. This is not synthesis of the translation machinery or spontaneous sequence expression.",
         "Table 6 reports 44 versus 39,800 counts per minute per milligram protein for no addition versus supplied polyU in its labelled-phenylalanine comparison after 60 minutes at 35 C. These are radioactivity-normalized endpoints, not an elementary elongation rate, universal amplification factor or copying-fidelity estimate.",
         "Different tables and Figure 6 use declared differing conditions or times; their numerical values are not pooled as one common rate or replicated error model. The Methods report duplicate assays without a reconstructed full uncertainty model.",
-        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor, identify ribosomal peptidyl-transfer chemistry or establish universal necessity of separate source-catalogue parents.",
+        "Ribosome and soluble-fraction omissions, ATP/ATP-regeneration omissions and source inhibitors support finite preparation dependence. They do not isolate every individual molecular factor or identify ribosomal peptidyl-transfer chemistry.",
         "The product resembles authentic poly-L-phenylalanine in the reported solubility/hydrolysis comparisons and yields labelled phenylalanine on complete hydrolysis. This is partial product characterization, not a directly read complete amino-acid sequence, molecular-weight distribution or functional folded-protein assay.",
         "The source explicitly states that singlet versus triplet or other codon size is not determined, and its proof note leaves eventual template stoichiometry unestablished. Do not attribute direct identification of the UUU triplet, the full genetic code, reading-frame maintenance or general translation fidelity to this paper.",
         "Adaptor recognition, modern ribosome structure, translocation, proofreading, coupled transcription and recursive production of functional catalysts are not measured in the admitted polyU context. Supplied polyU does not require simultaneous DNA replication/transcription in this assay."
@@ -2314,9 +2246,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "reviewedLocators": [
         "Nature 391, 806-810: RNA-structure/activity comparisons, Figure 1, Table 1 and footnotes; Methods: RNA synthesis and microinjection and Analysis of phenotypes",
@@ -2349,9 +2281,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "reviewedLocators": [
         "Nature 391, 808-810: GFP/LacZ reporter comparisons, Figure 2 and caption, Table 2 and footnotes; Methods: Analysis of phenotypes",
@@ -2383,9 +2315,9 @@ export const GENETIC_INFORMATION_RECORDS = {
         "The introduced RNAs and modern C. elegans machinery were supplied. This is neither spontaneous primordial regulatory emergence nor protein-free RNA catalysis.",
         "No small interfering RNAs, microRNAs, long non-coding RNA functions, Dicer, Argonaute, RISC composition, guide-loading mechanism, direct translation rate or chromatin modification is measured in this admitted source.",
         "The original source explicitly leaves RNA-targeted and chromatin/transcription mechanisms open. The mex-3 transcript signal supports a bounded RNA-abundance interpretation without distinguishing transcript destruction from reduced production.",
-        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting, a carrier minimum, a critical threshold or a demonstrated catalytic molecular mechanism.",
+        "The source estimated injected amount from staining and displaced volume, with several-fold variability. A dilution-based few-molecules interpretation is not direct intracellular counting or a demonstrated catalytic molecular mechanism.",
         "Finite injected-animal and progeny observations do not establish permanent genome editing, indefinite transgenerational memory, a universal physiological feedback system or complete silencing in every cell.",
-        "No legacy parent weights, necessity labels, phase order, numerical direction/mode/type codes, count minima or causal hierarchy are admitted. No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
+        "No rate constant, equilibrium constant, activation energy or general emergence threshold is measured."
       ],
       "reviewedLocators": [
         "Nature 391, 809: endogenous mex-3 transcript comparison, Figure 3 and caption",

@@ -134,21 +134,6 @@ test("recurring electromagnetic descriptions do not establish an autonomous phys
   ]);
 });
 
-test("all three original parents retain their specific necessity, weight and mode-count exclusions", async () => {
-  await rejects([
-    ["vacuum variance does not supply a matter current or two-mode minimum", (data) =>
-      dropLimit(data, scope, "Original necessary parent 1.5")],
-    ["QCD asymptotic freedom is not an Abelian Maxwell-Dirac premise", (data) =>
-      dropLimit(data, scope, "Original necessary parent 1.6")],
-    ["an electroweak model origin does not measure a one-mode threshold", (data) =>
-      dropLimit(data, scope, "Original parent 1.8")],
-    ["0.30/0.30/0.40 and 2/2/1 do not become physical estimators", (data) =>
-      dropLimit(data, scope, "Original weights 0.30")],
-    ["unnamed Coulomb-law and dielectric placeholders cannot become primary evidence", (data) =>
-      dropLimit(data, scope, "generic theoretical and empirical evidence paragraphs")]
-  ]);
-});
-
 test("the cross-scale synthesis retains separate observations and every HD+ closure acquisition", async () => {
   const data = await source();
   for (const id of [synthesis, method]) {
@@ -175,7 +160,8 @@ test("the cross-scale synthesis retains separate observations and every HD+ clos
       `the synthesis and dependencies cannot jointly omit ${removed}`, (changed) => {
         for (const id of [synthesis, method]) claim(changed, id).contextIds =
           claim(changed, id).contextIds.filter((id) => id !== removed);
-        for (const relation of changed.graph.relations.filter((record) => record.target === outcome)) {
+        // Reviewed descriptive bridges into the outcome name no preparation.
+        for (const relation of changed.graph.relations.filter((record) => record.target === outcome && record.contextIds)) {
           relation.contextIds = relation.contextIds.filter((id) => id !== removed);
         }
       }, /preparation|Electromagnetic regime/i
@@ -208,11 +194,18 @@ test("Hanssen stays one optical study whose context resolves in the compiled lit
   assert.equal(data.physics.studies.filter((record) => record.sourceId === "hanssen2001").length, 0);
   assert.ok(!data.graph.relations.some((record) =>
     record.source.startsWith("phys:") && record.target.startsWith("opt:")));
-  const opticalReferences = data.graph.relations.filter((record) =>
-    record.source.startsWith("opt:") && record.target.startsWith("phys:"));
+  const opticalReferences = data.graph.relations.filter((record) => !record.id.startsWith("bridge:")
+    && record.source.startsWith("opt:") && record.target.startsWith("phys:"));
   assert.deepEqual(new Set(opticalReferences.map((record) => record.target)), new Set([
     "phys:surface-scattering-source-scope", "phys:optical-propagation-source-scope"
   ]));
+  // Two reviewed bridges organize the same Hanssen readouts under the literature node, without a preparation.
+  const opticalBridges = data.graph.relations.filter((record) => record.id.startsWith("bridge:")
+    && record.source.startsWith("opt:") && record.target.startsWith("phys:"));
+  assert.deepEqual(opticalBridges.map((record) => [record.source, record.target, record.role, record.contextIds]), [
+    ["opt:specular-response", outcome, "definition-dependency", undefined],
+    ["opt:material-transmission", outcome, "definition-dependency", undefined]
+  ]);
   assert.ok(opticalReferences.every((record) =>
     record.kind === "descriptive" && record.role === "interpretation-dependency"));
 

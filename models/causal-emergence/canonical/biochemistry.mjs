@@ -1,6 +1,7 @@
+import { isReviewedBridgeRelation, withBridgeReadings } from "./bridges.mjs";
 import { isReviewedNeuralSystemsDescription } from "./level-six.mjs";
 import assert from "node:assert/strict";
-import { BIOCHEMISTRY_CARDS, BIOCHEMISTRY_OWN_STUDY_IDS } from "./level-three.mjs";
+import { BIOCHEMISTRY_GROUPS, BIOCHEMISTRY_OWN_STUDY_IDS } from "./level-three.mjs";
 
 const published = new Set(["publication-supported", "literature-synthesis"]);
 const sorted = (values) => [...values].sort();
@@ -20,23 +21,17 @@ export function validateBiochemistryReview(data, context) {
   };
   const admitted = Object.fromEntries(["entities", "claims", "relations", "studies", "comparisons"]
     .map((kind) => [kind, new Set()]));
-  const reviewedCards = new Set();
-  for (const card of BIOCHEMISTRY_CARDS) {
-    assert.ok(Number.isInteger(card.card) && card.card >= 0 && card.card < 50, "Unknown Level-3 source card");
-    assert.ok(!reviewedCards.has(card.card), "Duplicate Level-3 card admission");
-    reviewedCards.add(card.card);
-    for (const [kind, expectedRecords] of Object.entries(card.records)) {
+  for (const group of BIOCHEMISTRY_GROUPS) {
+    for (const [kind, expectedRecords] of Object.entries(group.records)) {
       assert.ok(records[kind] instanceof Map, `Unknown biochemical contract inventory: ${kind}`);
       for (const expected of expectedRecords) {
         const id = kind === "readiness" ? expected.nodeId : expected.id;
-        assert.deepEqual(records[kind].get(id), expected,
-          `Biochemistry card 3.${card.card} ${kind} changed ${id}: preserve the reviewed scope`);
+        assert.deepEqual(records[kind].get(id), kind === "sources" ? withBridgeReadings(expected) : expected,
+          `Biochemistry ${kind} changed ${id}: preserve the reviewed scope`);
         admitted[kind]?.add(id);
       }
     }
   }
-  assert.deepEqual([...reviewedCards].sort((a, b) => a - b),
-    Array.from({ length: 50 }, (_, index) => index), "Incomplete Level-3 source-card inventory");
   const ownEntities = graph.entities.filter((record) => record.id.startsWith("bio:"));
   assert.deepEqual(sorted(ownEntities.map((record) => record.id)),
     sorted([...admitted.entities].filter((id) => id.startsWith("bio:"))), "Unreviewed biochemical node");
@@ -75,7 +70,7 @@ export function validateBiochemistryReview(data, context) {
     }
   }
   for (const relation of graph.relations) {
-    if (isReviewedNeuralSystemsDescription(relation)) continue;
+    if (isReviewedNeuralSystemsDescription(relation) || isReviewedBridgeRelation(relation)) continue;
     if (!relation.id.startsWith("biochemistry:") && !relation.source.startsWith("bio:") && !relation.target.startsWith("bio:")) continue;
     assert.ok(admitted.relations.has(relation.id), "Unreviewed biochemical relation or cross-domain bridge");
     const claims = relation.claimIds.map((id) => context.claims.get(id));

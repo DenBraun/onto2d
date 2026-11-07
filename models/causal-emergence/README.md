@@ -1,23 +1,24 @@
 # Causal Emergence
 
-The current canonical graph is `2026.10.21.0`: 1960 records, 2101 connections,
-2149 claims and 549 sources. It is a partial research reconstruction with explicit
-evidence limits, not a validated universal emergence hierarchy.
+The current canonical graph is `2026.11.05.0`: 2537 records, 3489 connections,
+2720 claims and 628 sources.
+It is a partial research reconstruction with explicit evidence limits, not a
+validated universal emergence hierarchy.
 
 Edit [the canonical source](../../references/canonical/README.md). A claim records
 what is asserted, its publication or formal basis, the relevant reading and its
 experimental scope. Proposed construction rules require their joint premises
 and gates; a rule specification does not establish an actual physical instance.
 
-All 50 [Level-3 source cards](../../references/canonical/LEVEL_3_REVIEW.md) have
-scoped dispositions. The biochemical ledger contains 61 preparations from
-31 publications, with exact reuse of existing evidence across dependent cards.
+The [biochemical ledger](../../references/canonical/biochemistry-review.json)
+contains 61 preparations from 31 publications, with exact reuse of existing
+evidence across dependent scopes.
 Definitions, supplied materials, measured responses and conditional mechanisms
 remain separate. Unmatched lifecycle, biochemical-decay and primitive-coupling
 claims remain hypotheses; published findings are not independent reproductions.
 
-All 33 [Level-4 source cards](../../references/canonical/LEVEL_4_REVIEW.md) have
-scoped dispositions: 70 study contexts from 44 publications. Cellular
+The [cellular ledger](../../references/canonical/cellular-review.json) contains
+70 study contexts from 44 publications. Cellular
 organization, transport, regulation, fate, phototransduction and immune responses
 retain their preparation and reading limits. Partial rescue, state recovery,
 source corrections and contrary outcomes constrain stronger generalizations.
@@ -106,7 +107,7 @@ do not supply empirical exact zeros, permanent carrier identity, a real-photon
 static flux or quantitative atomic binding.
 Lattice examples retain their specific theories and Euclidean scope. Neither
 formal terms nor these results establish universal process classification,
-an all-channel confinement theorem, temporal emergence or carrier-count minima.
+an all-channel confinement theorem or temporal emergence.
 Confinement records distinguish pure-gauge area criteria, dynamical screening
 and hadronic phenomenology. Wilson, Creutz and Bali retain their exact model,
 operator and fit boundaries. Bulava's single 2+1-flavor ensemble adds light and
@@ -114,8 +115,8 @@ strange screening with conditional crossing distances. Lee's selected oil-drop
 bound retains its source-version and confidence-normalization gaps; CMS supplies
 a distinct collider limit for detector-stable color-singlet particles. Electric
 charge is not color charge, and these searches are not pooled. Hadron evidence
-does not establish nuclear or atomic stability, a temporal maintenance mechanism
-or the original weighted parent/minimum rules.
+does not establish nuclear or atomic stability or a temporal maintenance
+mechanism.
 Entanglement records retain subsystem choice, classical-correlation counterexamples
 and local reduced states. The regulated scalar-vacuum calculation specifies its
 radial cutoff, partial trace and conditional entropy scaling. Shalm's photonic
@@ -208,8 +209,5 @@ bundle stay below the 64 MiB aggregate limit. Editable canonical inputs remain
 indented; Model Studio initially requests only its graph projection and loads
 complete record details and evidence reviews on demand.
 
-Only the current canonical output is maintained. The original `2026.08.15`
-catalogue remains an input pinned by existing research cases.
-
-Scientific work continues through the [remaining source tasks](../../references/canonical/pending-review.json)
-and [roadmap](../../docs/ROADMAP.md). Formal Core implementation is deferred.
+Scientific work continues through the [roadmap](../../docs/ROADMAP.md).
+Formal Core implementation is deferred.

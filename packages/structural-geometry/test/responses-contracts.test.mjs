@@ -61,7 +61,7 @@ test("rejected and unresolved probes cannot carry invented observations, complet
   ]) { const a = structuredClone(unresolved); mutate(a); assert.equal(validate("structuralResponseArtifact", a), false); }
 });
 
-test("browser verification reproduces all 16 source-bound response artifacts including the 64-target boundary", async () => {
+test("browser verification reproduces all 15 source-bound response artifacts including the 64-target boundary", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/responses.js", import.meta.url))], bundle: true,
     platform: "browser", format: "iife", globalName: "Responses", write: false, logLevel: "silent" });
   const output = runInNewContext(`${bundle.outputFiles[0].text}\nconst expected = JSON.parse(artifactsText); JSON.stringify(JSON.parse(fixturesText).map(({pack,input}, i) =>

@@ -299,9 +299,9 @@ const contracts = {
           "Printed pages 23–24, 26 (PDF 25–26, 28), Section 9 and Figures 20–21: fixed-mass 2016 rate/local significance and shared subchannel constraints",
           "Printed pages 22–25 (PDF 24–27), Figures 18–19 and Table 4: sensitive-bin and weighted summaries",
           "Printed pages 23–24, 27 (PDF 25–26, 29), Section 9 and Figure 22: common-modifier scan and H-to-WW role change",
-          "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run1/2016 combination and cross-energy uncertainty assumption"
+          "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run 1/2016 combination and cross-energy uncertainty assumption"
         ],
-        "limit": "Read scientific text/captions on printed pages 1–27 (PDF 3–29) and selected reference 26 on printed page 29. Visually checked printed pages 5,8,12,16,22,24–27, including Tables 1–4, Figures 6–7 and 19–22, and calibration overlap. Collective authorship and publication metadata checked. Official CMS Table 4 was also inspected and repeats the reported values. The full author roster, earlier Run1 analyses, raw data, reusable likelihood and upstream calibrations are not independently reviewed or replayed."
+        "limit": "Read scientific text/captions on printed pages 1–27 (PDF 3–29) and selected reference 26 on printed page 29. Visually checked printed pages 5,8,12,16,22,24–27, including Tables 1–4, Figures 6–7 and 19–22, and calibration overlap. Collective authorship and publication metadata checked. Official CMS Table 4 was also inspected and repeats the reported values. The full author roster, earlier Run 1 analyses, raw data, reusable likelihood and upstream calibrations are not independently reviewed or replayed."
       }
     },
     {
@@ -398,7 +398,7 @@ const contracts = {
       "limitations": [
         "The rate identity assumes a single narrow resonance and production-decay factorization with the same fixed-mass Standard Model reference. Coupling rescalings additionally assume specified tensor structure, loop functions and total width; rate data alone do not remove the width degeneracy.",
         "The handbook distinguishes a width built from scaled Standard Model partial widths from variants allowing an independent width. Its generic identity and examples do not identify or reconstruct the exact CMS2018 implemented width/loop map.",
-        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph parent/minimum rules."
+        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph dependency or minimum-count rules."
       ]
     },
     {
@@ -580,7 +580,7 @@ const contracts = {
         },
         {
           "sourceId": "cms2018-tau",
-          "locator": "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run1/2016 combination and cross-energy uncertainty assumption",
+          "locator": "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run 1/2016 combination and cross-energy uncertainty assumption",
           "role": "supports",
           "note": "Supports only the stated reconstruction, original inference or explicitly conditional rate convention."
         }
@@ -590,8 +590,8 @@ const contracts = {
         "The 1.09 (+0.27/-0.26) strength and observed 4.9 versus expected 4.7 local standard deviations are 2016-only results. They are not an isolated tau Yukawa measurement or a posterior probability of the Higgs hypothesis.",
         "The joint signal/control likelihood, response templates, fitted nuisance covariance and background-tail calibration are not reproduced. H-to-WW is background in the tau signal-strength/significance fit.",
         "The fit adopts mH=125.09 GeV from the cited earlier mass combination. It does not measure this mass anew and does not substitute the historical ATLAS2012 mass result.",
-        "The separately reported Run1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run1 likelihood inputs are not independently reviewed here.",
-        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph parent/minimum rules."
+        "The separately reported Run 1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run 1 likelihood inputs are not independently reviewed here.",
+        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph dependency or minimum-count rules."
       ],
       "contextIds": [
         "cms2016-tau-rate-inference"
@@ -612,7 +612,7 @@ const contracts = {
         },
         {
           "sourceId": "cms2018-tau",
-          "locator": "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run1/2016 combination and cross-energy uncertainty assumption",
+          "locator": "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run 1/2016 combination and cross-energy uncertainty assumption",
           "role": "method",
           "note": "Supports only the stated reconstruction, original inference or explicitly conditional rate convention."
         }
@@ -622,8 +622,8 @@ const contracts = {
         "The 1.09 (+0.27/-0.26) strength and observed 4.9 versus expected 4.7 local standard deviations are 2016-only results. They are not an isolated tau Yukawa measurement or a posterior probability of the Higgs hypothesis.",
         "The joint signal/control likelihood, response templates, fitted nuisance covariance and background-tail calibration are not reproduced. H-to-WW is background in the tau signal-strength/significance fit.",
         "The fit adopts mH=125.09 GeV from the cited earlier mass combination. It does not measure this mass anew and does not substitute the historical ATLAS2012 mass result.",
-        "The separately reported Run1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run1 likelihood inputs are not independently reviewed here.",
-        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph parent/minimum rules."
+        "The separately reported Run 1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run 1 likelihood inputs are not independently reviewed here.",
+        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph dependency or minimum-count rules."
       ],
       "contextIds": [
         "cms2016-tau-rate-inference"
@@ -775,7 +775,7 @@ const contracts = {
         "Figure 22 reports compatibility under the authors' implemented width/loop map, which is not fully specified in the reviewed passages. kappa_f is a common fermion modifier, not an independently varied tau Yukawa. H-to-WW is treated as signal in this scan, unlike the tau-only rate fit. No contour digitization, unique coupling extraction or all-fermion mass derivation is admitted.",
         "The handbook distinguishes a width built from scaled Standard Model partial widths from variants allowing an independent width. Its generic identity and examples do not identify or reconstruct the exact CMS2018 implemented width/loop map.",
         "The source specifies 2016, not exact acquisition dates. Channel/category fits, post-fit plots and the coupling scan reuse this exposure and shared nuisance constraints; they are not independent replications.",
-        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph parent/minimum rules."
+        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph dependency or minimum-count rules."
       ],
       "contextIds": [
         "cms2016-tau-coupling-inference"
@@ -818,7 +818,7 @@ const contracts = {
         "Figure 22 reports compatibility under the authors' implemented width/loop map, which is not fully specified in the reviewed passages. kappa_f is a common fermion modifier, not an independently varied tau Yukawa. H-to-WW is treated as signal in this scan, unlike the tau-only rate fit. No contour digitization, unique coupling extraction or all-fermion mass derivation is admitted.",
         "The handbook distinguishes a width built from scaled Standard Model partial widths from variants allowing an independent width. Its generic identity and examples do not identify or reconstruct the exact CMS2018 implemented width/loop map.",
         "The source specifies 2016, not exact acquisition dates. Channel/category fits, post-fit plots and the coupling scan reuse this exposure and shared nuisance constraints; they are not independent replications.",
-        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph parent/minimum rules."
+        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph dependency or minimum-count rules."
       ],
       "contextIds": [
         "cms2016-tau-coupling-inference"
@@ -995,7 +995,7 @@ const contracts = {
         },
         {
           "sourceId": "cms2018-tau",
-          "locator": "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run1/2016 combination and cross-energy uncertainty assumption"
+          "locator": "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run 1/2016 combination and cross-energy uncertainty assumption"
         }
       ],
       "openObligations": [
@@ -1352,7 +1352,7 @@ const contracts = {
         "The joint signal/control likelihood, response templates, fitted nuisance covariance and background-tail calibration are not reproduced. H-to-WW is background in the tau signal-strength/significance fit.",
         "The fit adopts mH=125.09 GeV from the cited earlier mass combination. It does not measure this mass anew and does not substitute the historical ATLAS2012 mass result.",
         "The 1.09 (+0.27/-0.26) strength and observed 4.9 versus expected 4.7 local standard deviations are 2016-only results. They are not an isolated tau Yukawa measurement or a posterior probability of the Higgs hypothesis.",
-        "The separately reported Run1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run1 likelihood inputs are not independently reviewed here.",
+        "The separately reported Run 1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run 1 likelihood inputs are not independently reviewed here.",
         "Some Table 4 process-row sums do not recover the printed background/signal totals within nearest displayed-digit rounding. The official CMS table repeats these values; the reviewed caption does not specify a resolving normalization. No repaired total, uncertainty quadrature, experimental-error conclusion or executable certification is admitted."
       ],
       "readExtent": "selected-primary-author-version-passages",
@@ -1362,7 +1362,7 @@ const contracts = {
         "Printed pages 15–24 (PDF 17–26), Section 9, Figures 6–18 and Table 4: joint binned likelihood, observed bins and post-fit templates",
         "Printed pages 23–24, 26 (PDF 25–26, 28), Section 9 and Figures 20–21: fixed-mass 2016 rate/local significance and shared subchannel constraints",
         "Printed pages 22–25 (PDF 24–27), Figures 18–19 and Table 4: sensitive-bin and weighted summaries",
-        "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run1/2016 combination and cross-energy uncertainty assumption"
+        "Printed page 24 (PDF 26), end of Section 9 and Section 10: Run 1/2016 combination and cross-energy uncertainty assumption"
       ],
       "metadataCheckedAt": "2026-10-02",
       "metadataUrl": "https://arxiv.org/abs/1708.00373v2",
@@ -1400,7 +1400,7 @@ const contracts = {
     {
       "id": "cms2016-tau-rate-interpretation",
       "candidate": "The original 2016 likelihood supports an H-to-tau-tau rate/excess under the stated signal, response and background model.",
-      "alternative": "Selected candidates are all identified signal decays, post-fit views are independent replications, or the stronger Run1 combination is a 2016-only result.",
+      "alternative": "Selected candidates are all identified signal decays, post-fit views are independent replications, or the stronger Run 1 combination is a 2016-only result.",
       "discriminator": "Separate selected bins, shared response/control constraints, original 2016 likelihood and dependent display/combination stages.",
       "result": "conditional-support",
       "limit": "The joint signal/control likelihood, response templates, fitted nuisance covariance and background-tail calibration are not reproduced. H-to-WW is background in the tau signal-strength/significance fit.",
@@ -1408,7 +1408,7 @@ const contracts = {
         "The 1.09 (+0.27/-0.26) strength and observed 4.9 versus expected 4.7 local standard deviations are 2016-only results. They are not an isolated tau Yukawa measurement or a posterior probability of the Higgs hypothesis.",
         "The source specifies 2016, not exact acquisition dates. Channel/category fits, post-fit plots and the coupling scan reuse this exposure and shared nuisance constraints; they are not independent replications.",
         "The fit adopts mH=125.09 GeV from the cited earlier mass combination. It does not measure this mass anew and does not substitute the historical ATLAS2012 mass result.",
-        "The separately reported Run1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run1 likelihood inputs are not independently reviewed here.",
+        "The separately reported Run 1-plus-2016 result, mu=0.98 +/-0.18 and 5.9 observed/expected standard deviations, reuses the 2016 data. It assumes a common strength and uncertainties fully uncorrelated between center-of-mass energies; this is the authors' combination assumption, not a demonstrated independence of all physical systematics. Earlier Run 1 likelihood inputs are not independently reviewed here.",
         "Figures 18–19 and Table 4 are derived views of the same fit. Figure 19 excludes categories using visible mass; its weights use mass-distribution signal/background integrals excluding first/last bins. Table 4 selects only bins with log10(S/(S+B))>-0.9; post-fit expected components and model-dependent weights are not measured process labels or a second likelihood input.",
         "Some Table 4 process-row sums do not recover the printed background/signal totals within nearest displayed-digit rounding. The official CMS table repeats these values; the reviewed caption does not specify a resolving normalization. No repaired total, uncertainty quadrature, experimental-error conclusion or executable certification is admitted."
       ],
@@ -1432,7 +1432,7 @@ const contracts = {
         "The rate identity assumes a single narrow resonance and production-decay factorization with the same fixed-mass Standard Model reference. Coupling rescalings additionally assume specified tensor structure, loop functions and total width; rate data alone do not remove the width degeneracy.",
         "The handbook distinguishes a width built from scaled Standard Model partial widths from variants allowing an independent width. Its generic identity and examples do not identify or reconstruct the exact CMS2018 implemented width/loop map.",
         "The source specifies 2016, not exact acquisition dates. Channel/category fits, post-fit plots and the coupling scan reuse this exposure and shared nuisance constraints; they are not independent replications.",
-        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph parent/minimum rules."
+        "This channel evidence and conditional coupling interpretation do not derive all masses, establish the full scalar potential or vacuum stability, or supply arbitrary graph dependency or minimum-count rules."
       ],
       "sourceIds": [
         "cms2018-tau",

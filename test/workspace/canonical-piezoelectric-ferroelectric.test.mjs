@@ -125,7 +125,7 @@ test("e and d retain derivative signs, units, thermodynamic boundaries and shear
 
 test("quartz resonance inference retains inherited dielectric inputs and its sampling levels", async () => {
   const data = await source();
-  assert.match(claim(data, quartzContext).statement, /17 synthetic alpha-quartz.*15.*2.*point group32/);
+  assert.match(claim(data, quartzContext).statement, /17 synthetic alpha-quartz.*15.*2.*point group 32/);
   assert.match(claim(data, quartzContext).statement, /1 Pa.*30 C.*3 acquisitions.*72 identified resonance/);
   assert.match(claim(data, quartzContext).statement, /epsilon11\/epsilon0=4\.424.*epsilon33\/epsilon0=4\.632/);
   await rejects([
@@ -148,7 +148,7 @@ test("quartz resonance inference retains inherited dielectric inputs and its sam
 test("quartz coefficients retain specimen scatter and do not become polarization switching", async () => {
   const data = await source();
   assert.match(claim(data, quartzResult).statement, /e11=0\.151 C\/m\^2.*e14=-0\.061 C\/m\^2.*30 C/);
-  assert.match(claim(data, quartzResult).statement, /specimen standard deviations4\.75 percent and17\.8 percent/);
+  assert.match(claim(data, quartzResult).statement, /specimen standard deviations 4\.75 percent and 17\.8 percent/);
   await rejects([
     ["source matrix signs cannot be silently reversed", (changed) =>
       replaceStatement(changed, quartzResult, "e14=-0.061", "e14=+0.061")],
@@ -166,10 +166,10 @@ test("quartz coefficients retain specimen scatter and do not become polarization
 
 test("the AlScN leakage correction uses five controlled sweeps rather than ordinary DLCC or standard PUND", async () => {
   const data = await source();
-  assert.match(claim(data, filmContext).statement, /x=0\.27 with400 nm.*x=0\.32,0\.36,0\.40 with600 nm.*x=0\.43 with1 micrometre/);
-  assert.match(claim(data, filmContext).statement, /711 Hz.*711 and411 Hz/);
+  assert.match(claim(data, filmContext).statement, /x=0\.27 with 400 nm.*x=0\.32,0\.36,0\.40 with 600 nm.*x=0\.43 with 1 micrometre/);
+  assert.match(claim(data, filmContext).statement, /711 Hz.*711 and 411 Hz/);
   const correction = claim(data, filmContext).limitations.find((limit) => limit.includes("5 successive"));
-  assert.match(correction, /1 bipolar and4 non-switching unipolar.*two frequencies.*intervening reversals/);
+  assert.match(correction, /1 bipolar and 4 non-switching unipolar.*two frequencies.*intervening reversals/);
   assert.match(correction, /frequency-independent leakage.*zero switching contribution.*distortions remain/);
   await rejects([
     ["the modified non-switching controls cannot become standard PUND by relabeling", (changed) =>
@@ -177,11 +177,11 @@ test("the AlScN leakage correction uses five controlled sweeps rather than ordin
     ["frequency-dependent coercivity prevents ordinary correction of complete switching loops", (changed) =>
       dropLimit(changed, filmContext, "ordinary dynamic leakage compensation")],
     ["loop correction cannot silently use identical frequencies", (changed) =>
-      replaceStatement(changed, filmContext, "711 and411 Hz", "711 and711 Hz")],
+      replaceStatement(changed, filmContext, "711 and 411 Hz", "711 and711 Hz")],
     ["one publication does not mean every composition and readout used one identical specimen", (changed) =>
       dropLimit(changed, filmContext, "not all the same specimen")],
     ["the figure series cannot borrow a universal600 nm thickness for every composition", (changed) =>
-      replaceStatement(changed, filmContext, "x=0.27 with400 nm thickness", "x=0.27 with600 nm thickness")]
+      replaceStatement(changed, filmContext, "x=0.27 with 400 nm thickness", "x=0.27 with600 nm thickness")]
   ]);
 });
 
@@ -189,7 +189,7 @@ test("ferroelectric switching needs polarity controls and does not measure an ab
   const data = await source();
   assert.match(claim(data, switching).statement, /hysteresis loop alone is insufficient/);
   assert.match(claim(data, filmSwitching).statement, /polarity-selective etching.*piezoelectric sign reversal.*pulse controls/);
-  assert.match(claim(data, filmContext).statement, /electrode removal with50 nm overetch/);
+  assert.match(claim(data, filmContext).statement, /electrode removal with 50 nm overetch/);
   await rejects([
     ["a hysteresis loop alone cannot classify every material as ferroelectric", (changed) =>
       replaceStatement(changed, switching, "hysteresis loop alone is insufficient", "hysteresis loop alone is sufficient")],
@@ -208,19 +208,19 @@ test("ferroelectric switching needs polarity controls and does not measure an ab
 
 test("effective transverse sign reversal cannot become longitudinal d33 or an unconstrained bulk coefficient", async () => {
   const data = await source();
-  assert.match(claim(data, filmResponse).statement, /e31,f changes from-2\.90 C\/m\^2.*to\+2\.76 C\/m\^2/);
-  assert.match(claim(data, filmContext).statement, /4-point bending and16 mm\^2 electrodes/);
-  assert.match(claim(data, filmContext).statement, /0\.1 Hz.*-200 V over60 s/);
+  assert.match(claim(data, filmResponse).statement, /e31,f changes from -2\.90 C\/m\^2.*to \+2\.76 C\/m\^2/);
+  assert.match(claim(data, filmContext).statement, /4-point bending and 16 mm\^2 electrodes/);
+  assert.match(claim(data, filmContext).statement, /0\.1 Hz.*-200 V over 60 s/);
   await rejects([
     ["an effective transverse e31 response cannot become a longitudinal d33 measurement", (changed) =>
       replaceStatement(changed, filmResponse, "effective transverse coefficient e31,f", "longitudinal coefficient d33,f")],
     ["field reversal cannot retain the same reported coefficient sign", (changed) =>
-      replaceStatement(changed, filmResponse, "to+2.76 C/m^2", "to-2.76 C/m^2")],
+      replaceStatement(changed, filmResponse, "to +2.76 C/m^2", "to-2.76 C/m^2")],
     ["the film result is not an unconstrained bulk-crystal constant", (changed) =>
       replaceStatement(changed, filmResponse, "not a longitudinal d33 coefficient or an unconstrained bulk-crystal constant",
         "a longitudinal d33 coefficient and an unconstrained bulk-crystal constant")],
     ["the source0.85/0.83 longitudinal correction and small/large-signal distinction cannot be silently resolved", (changed) =>
-      dropLimit(changed, filmContext, "main text uses0.85 while SI gives0.83")],
+      dropLimit(changed, filmContext, "main text uses 0.85 while SI gives 0.83")],
     ["transverse coefficient signs retain electrode/axis/loading conventions", (changed) =>
       dropLimit(changed, filmResponse, "stated electrode, axis and loading convention")]
   ]);
@@ -228,11 +228,11 @@ test("effective transverse sign reversal cannot become longitudinal d33 or an un
 
 test("finite short-circuit retention and thermal steps do not locate an equilibrium Curie point or infinite memory", async () => {
   const data = await source();
-  assert.match(claim(data, filmSwitching).statement, /short-circuited between2 ms.*up to10\^5 s.*not exactly zero/);
-  assert.match(claim(data, filmResponse).limitations.join(" "), /consecutive5-minute treatments.*not an observed equilibrium Curie temperature at600 C/);
+  assert.match(claim(data, filmSwitching).statement, /short-circuited between 2 ms.*up to 10\^5 s.*not exactly zero/);
+  assert.match(claim(data, filmResponse).limitations.join(" "), /consecutive 5-minute treatments.*not an observed equilibrium Curie temperature at 600 C/);
   await rejects([
     ["a finite10^5-second observation cannot become an infinite storage result", (changed) =>
-      replaceStatement(changed, filmSwitching, "up to10^5 s", "for an infinite time")],
+      replaceStatement(changed, filmSwitching, "up to 10^5 s", "for an infinite time")],
     ["shorted retention intervals cannot become driven open-circuit storage", (changed) =>
       replaceStatement(changed, filmSwitching, "capacitor short-circuited", "capacitor under a continuous dc bias")],
     ["the residual non-switching charge cannot be silently set to zero", (changed) =>
@@ -240,13 +240,13 @@ test("finite short-circuit retention and thermal steps do not locate an equilibr
     ["finite pulse retention cannot be promoted to unlimited endurance", (changed) =>
       dropLimit(changed, filmSwitching, "not infinite retention")],
     ["five-minute thermal survival and electrode degradation do not locate equilibriumTc=600C", (changed) =>
-      dropLimit(changed, filmResponse, "equilibrium Curie temperature at600 C")],
+      dropLimit(changed, filmResponse, "equilibrium Curie temperature at 600 C")],
     ["thirty-week repeated response checks are not a continuous zero-field polarization trace", (changed) =>
       dropLimit(changed, filmResponse, "limited storage details")]
   ]);
 });
 
-test("the synthesis retains both complete contexts, source-version limits and excluded catalogue defaults", async () => {
+test("the synthesis retains both complete contexts, source-version limits and supplied specimen and counting boundaries", async () => {
   const data = await source();
   for (const id of [synthesis, synthesisMethod]) assert.deepEqual(claim(data, id).contextIds, contexts);
   assert.equal(claim(data, synthesis).status, "literature-synthesis");
@@ -258,11 +258,8 @@ test("the synthesis retains both complete contexts, source-version limits and ex
     assert.deepEqual(item.claimIds, [synthesisMethod]);
     assert.deepEqual(item.contextIds, contexts);
   }
-  const legacy = claim(data, synthesis).citations.find((item) => item.sourceId === "legacy-2");
-  assert.equal(legacy.role, "provenance");
-  assert.match(legacy.note, /Original catalogue JSON pointer: \/16/);
-  assert.match(publication(data, filmStudy).review.limit, /26November2018.*2019.*403/);
-  assert.match(publication(data, formalPaper).review.limit, /not the941-material dataset/);
+  assert.match(publication(data, filmStudy).review.limit, /26 November 2018.*2019.*403/);
+  assert.match(publication(data, formalPaper).review.limit, /not the 941-material dataset/);
   await rejects([
     ["the shared interpretation cannot drop its quartz preparation and inherited inputs", (changed) => {
       claim(changed, synthesis).contextIds = [filmStudy];
@@ -273,14 +270,12 @@ test("the synthesis retains both complete contexts, source-version limits and ex
     ["author-v2 reading cannot silently become obtained final-publisher reading", (changed) => {
       publication(changed, filmStudy).review.extent = "full-final-publisher-text-and-independent-data-reproduction";
     }],
+    ["the quartz and AlScN specimens remain supplied preparations rather than derived formation histories", (changed) =>
+      dropLimit(changed, synthesis, "The quartz and AlScN specimens are supplied physical preparations")],
+    ["tensor components, cells, grains, specimens, modes and control sweeps remain different counting domains", (changed) =>
+      dropLimit(changed, synthesis, "5 leakage-control sweeps count different domains")],
     ["the actual source version and printed discrepancies cannot disappear", (changed) =>
       dropLimit(changed, synthesis, "Source-version and printed discrepancies")],
-    ["parent fractions are not measured causal weights", (changed) =>
-      dropLimit(changed, synthesis, "rather than measured causal fractions")],
-    ["two carriers are not a measured piezoelectric or ferroelectric onset threshold", (changed) =>
-      dropLimit(changed, synthesis, "N_min=N_crit=2")],
-    ["SOMA and display labels cannot acquire independent physical-stage authority", (changed) =>
-      dropLimit(changed, synthesis, "provenance/display classification")],
     ["a prepared specimen does not prove a universal microscopic soft-mode or Landau model", (changed) =>
       dropLimit(changed, synthesis, "universal soft-mode mechanism")]
   ]);

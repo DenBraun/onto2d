@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 
 const cwd = fileURLToPath(new URL("../", import.meta.url));
 for (const [command, args] of [
-  ["python3", ["-B", "docs/structural-geometry/baselines/verify_baseline.py", "--compatibility"]],
   ["python3", ["-B", "cases/structural-geometry/invariance/reference.py", "--verify"]],
   [process.execPath, ["cases/structural-geometry/invariance/build.mjs", "--verify"]],
   ["python3", ["-B", "cases/structural-geometry/invariance/reference.py", "--verify-artifacts"]],
@@ -13,4 +12,4 @@ for (const [command, args] of [
   if (result.error) console.error(result.error.message);
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
-console.log("Invariance checks passed: fixed registry, measured controls, independent orbits, strict missingness, portable replay and legacy compatibility.");
+console.log("Invariance checks passed: fixed registry, measured controls, independent orbits, strict missingness and portable replay.");

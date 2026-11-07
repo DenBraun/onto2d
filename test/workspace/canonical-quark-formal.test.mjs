@@ -59,11 +59,11 @@ test("quark field labels retain quantum numbers without universal stability or c
       assert.ok(c.citations.some((ref) => ref.sourceId === "cdf2013-top-width"));
       c.citations = c.citations.filter((ref) => ref.sourceId !== "cdf2013-top-width");
     }],
-    ["temporal confinement and arbitrary minima return", (x) => removeLimit(x, "quark", "later temporal stage")]
+    ["temporal confinement and universal arising or maintenance necessity return", (x) => removeLimit(x, "quark", "later temporal stage")]
   ]);
 });
 
-test("formal quark cards preserve their displayed meaning and evidence bindings", async () => {
+test("formal quark records preserve their displayed meaning and evidence bindings", async () => {
   const mutations = QUARK_FORMAL_ADMISSION.definitions.flatMap(([id]) => [
     [`${id} cannot display an unsupported measurement`, (d) => {
       d.graph.entities.find((e) => e.id === id).description =

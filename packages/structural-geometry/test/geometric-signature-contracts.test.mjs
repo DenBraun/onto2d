@@ -15,7 +15,7 @@ for (const [name, url] of Object.entries(schemaUrls)) {
 const validate = (name, value) => ajv.validate(ids.get(name), value);
 const examples = await fixtures(), artifacts = await Promise.all(examples.map(f => readJson(`artifacts/${f.id}.json`)));
 const get = id => artifacts[examples.findIndex(f => f.id === id)];
-test("closed geometric schemas accept all 25 complete, partial and unavailable composites with their embedded evidence", () => {
+test("closed geometric schemas accept all 23 complete, partial and unavailable composites with their embedded evidence", () => {
   for (const [i, f] of examples.entries()) {
     assert.equal(validate("geometricSignatureInput", f.input), true, ajv.errorsText());
     assert.equal(validate("geometricSignatureArtifact", artifacts[i]), true, `${f.id}: ${ajv.errorsText()}`);
@@ -45,7 +45,7 @@ test("schemas reject invented certainty, malformed distributions, false complete
     assert.equal(validate("geometricSignatureArtifact", a), false);
   }
 });
-test("browser replay verifies all 25 signatures and their source-bound transport certificates without an external solver", async () => {
+test("browser replay verifies all 23 signatures and their source-bound transport certificates without an external solver", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/geometric-signature.js", import.meta.url))], bundle: true,
     platform: "browser", format: "iife", globalName: "Geometry", write: false, logLevel: "silent" });
   const result = runInNewContext(`${bundle.outputFiles[0].text}\nconst values=JSON.parse(artifactText); JSON.stringify(JSON.parse(fixtureText).map(({pack,input},i)=>

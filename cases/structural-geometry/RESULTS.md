@@ -1,48 +1,163 @@
-# Causal Emergence: first descriptive geometry result
+# Causal Emergence: descriptive geometry of the canonical graph
 
-Source: complete verified `causal-emergence@2026.08.15`, pinned by
-[source-lock.json](causal-emergence/source-lock.json).
-Projection: `source-parent-directed-v1`; metric: `unit-v1`;
-algorithm: `forman-directed-unit`, version `1`.
+Source: complete verified `causal-emergence@2026.11.05.0`, the canonical graph,
+pinned by [source-lock.json](causal-emergence/source-lock.json).
+The release has two layers ([arising model](../../docs/architecture/ARISING_MODEL.md)).
+The outer layer holds the arisings of the author's catalogue, joined by their
+causes. The technical layer holds the evidence records, and each of them belongs
+to exactly one arising. The census measures each layer with its own projection.
+No projected edge crosses from one layer to the other.
+
+Metric: `unit-v1`; algorithm: `forman-directed-unit`, version `1`, for both layers.
+
+## Arising layer
+
+Projection: `canonical-arising-causal-v1`. Nodes are arisings, and each edge is
+a cause, directed from the cause to the arising it conditions.
 
 | Quantity | Frozen result |
 |---|---:|
-| Nodes | 249 |
-| Edges | 971 |
-| Negative-curvature edges | 940 |
-| Zero-curvature edges | 24 |
-| Positive-curvature edges | 7 |
-| Minimum | -34 |
+| Nodes | 259 |
+| Edges | 1085 |
+| Negative-curvature edges | 1055 |
+| Zero-curvature edges | 26 |
+| Positive-curvature edges | 4 |
+| Minimum | -38 |
 | Maximum | 1 |
-| Exact mean | -6328 / 971 |
+| Exact mean | -7812 / 1085 |
 
 The [artifact](causal-emergence/artifact.json) has hash
-`sha256:c455cd2dba039e9545ab6866b390a2f3522b23247bbef550df0a1c86710cb745`.
-It includes every edge/node value, separate source/target level and relation
-summaries, and all extrema ties. No edge was sampled or filtered out.
+`sha256:b697690630f4d92f01090366314b27ba4e3e250926301995cda18de2020e08c9`.
+It includes:
 
-## Reading an edge
+- every edge and node value;
+- summaries by dependency type, necessity, ontological role, source level and
+  target level;
+- all extrema ties.
 
-For `u -> v`, start with 2 and subtract the number of edges entering `u` and
-the number leaving `v`. The result reports exactly those two counts alongside
-`curvature`. A negative value therefore says that their sum exceeds 2 under
-this metric. It does not establish weakness, causal importance or emergence.
+No edge was sampled or filtered out.
+
+Of the 1085 causes, 441 are supported by primary studies, and the rest remain
+author hypotheses. The census weighs every cause alike. It therefore describes the
+shape of the proposed causal structure, not its support.
+
+### Reading an edge
+
+For `u -> v`, start with 2. Subtract the number of edges entering `u` and the
+number of edges leaving `v`. The result reports both counts alongside
+`curvature`. A negative value says that their sum exceeds 2 under this metric.
+It does not establish weakness, causal importance or emergence.
 This is the unit specialization of the directed definition documented in the
 [metric policy](../../docs/structural-geometry/GEOMETRY.md#metric-and-algorithm-policies).
 
-For example, edge `4.0->4.3` has the minimum value -34. Its result can be traced
-through its original edge ID and the projection's source record hash to the
-exact Model Pack. A node's `incomingCurvature` and `outgoingCurvature` sum its
-incident edge values; `balance` is their difference, without a physical flow
+A node's `incomingCurvature` and `outgoingCurvature` sum the values of its
+incident edges. Its `balance` is incoming minus outgoing, with no physical flow
 interpretation.
+
+For example, the cause `cause:4.0>4.3` has the minimum value -38. It runs from
+Prokaryotic Cell Organization to Cellular Signaling and Communication. Eleven
+causes enter its source, and 29 causes leave its target.
+
+### What the census shows
+
+| Ontological role | Causes | Curvature sum | Minimum | Maximum |
+|---|---:|---:|---:|---:|
+| `arising` | 666 | -4571 | -31 | 1 |
+| `maintenance` | 109 | -921 | -38 | 0 |
+| `modulation` | 310 | -2320 | -26 | 0 |
+
+| Necessity | Causes | Curvature sum |
+|---|---:|---:|
+| `necessary` | 604 | -4146 |
+| `enabling` | 317 | -2355 |
+| `contextual` | 150 | -1216 |
+| `optional` | 14 | -95 |
+
+Causes leaving Level 4 sum to -1855 over 202 causes, and causes leaving Level 3
+sum to -1641 over 210. Causes leaving Level 1 sum to only -302 over 106. Two kinds
+of arising stand out:
+
+- **Hubs.** Cellular Signaling and Communication (4.3) has the largest balance,
+  +98: it has 4 causes and 29 dependents. Next are Chemical Bonding and Molecular
+  Formation (2.3, +96) and Hydrogen Bonds (2.7, +82).
+- **Sinks.** Neuro–Immune Interactions (6.15) has the smallest balance, -63: it
+  has 13 causes and 2 dependents. Next are Immune Resilience vs Immune Constraint
+  Trade-off (5.25, -44) and Emotional and Affective Processing (6.6, -42).
+
+These values describe how the catalogue distributes causes. They are not causal
+or empirical findings.
+
+## Technical layer
+
+Projection: `canonical-technical-directed-v1`. Nodes are the technical records.
+Edges are their descriptive and functional-support relations, directed from
+premise to dependent.
+
+| Quantity | Frozen result |
+|---|---:|
+| Nodes | 2537 |
+| Edges | 3683 |
+| Negative-curvature edges | 836 |
+| Zero-curvature edges | 891 |
+| Positive-curvature edges | 1956 |
+| Minimum | -17 |
+| Maximum | 2 |
+| Exact mean | 920 / 3683 |
+
+The [technical artifact](causal-emergence/technical-artifact.json) has hash
+`sha256:36fe54da7e53481a4bdd751ef3300d5855ca88ce30f1b1577bf66a4773fe79a2`.
+It includes:
+
+- every edge and node value;
+- summaries by source level, target level, relation layer and relation role;
+- all extrema ties.
+
+For example, the definition edge `physics:standard-model-qcd`
+(`phys:standard-model -> phys:qcd`) has the minimum value -17. One edge enters
+its source, and 18 edges leave its target. Its result can be traced through its
+edge ID and the projection's source record hash to the exact Model Pack.
+
+| Relation role | Edges | Curvature sum | Minimum | Maximum |
+|---|---:|---:|---:|---:|
+| `interpretation-dependency` | 1429 | -141 | -9 | 2 |
+| `definition-dependency` | 1289 | 813 | -17 | 2 |
+| `measurement-context` | 605 | 226 | -6 | 2 |
+| `scoped-operating-support` (functional) | 305 | 32 | -4 | 1 |
+| `computation-context` | 30 | 16 | -1 | 2 |
+| `rule-premise` | 19 | -10 | -3 | 1 |
+| `rule-conclusion` | 6 | -16 | -7 | -1 |
+
+Edges leaving Level 1 sum to -646 over 1063 edges. Edges leaving Level 6 sum to
++1298 over 890 edges. The difference follows how the evidence is built:
+
+- **Level 1.** Physical definitions form chains through hubs with many
+  dependents. The smallest balances belong to physical boundary definitions such
+  as `phys:qcd-nuclear-evidence-boundary` (-26).
+- **Level 6.** Topic scopes collect many evidence records and have no outgoing
+  edges. They hold the largest balances, for example
+  `cog:adult-neurogenesis-remodeling-scope` (+325, 181 incoming edges).
+
+These are descriptive properties of how the graph records evidence. They are not
+causal or empirical findings.
+
+The census includes the 194 [reviewed bridges](../../references/canonical/BRIDGES.md)
+that join the evidence islands:
+
+- 69 are positively curved, 63 zero and 62 negative, with sum -66.
+- The most negative, -12, joins a condensate boundary to the model-vesicle
+  readout boundary. The condensate boundary has one incoming edge, and the
+  readout boundary has 13 dependents.
+
+The [Ollivier](ollivier/README.md) and [flow](flow/README.md) suites measure
+induced fragments of the technical layer.
 
 ## Local inspection
 
 1. Run `npm ci --ignore-scripts` after pulling the changes.
-2. Run `npm run structural-geometry:check`. All 35 focused tests and frozen
+2. Run `npm run structural-geometry:check`. The focused tests and frozen
    reference checks should pass. Python 3 is required for the reference checks.
-3. Run `npm run structural-geometry:report` to verify and inspect the census.
-4. Open the JSON artifact for a specific edge or grouped summary. The
+3. Run `npm run structural-geometry:report` to verify and inspect both censuses.
+4. Open a JSON artifact to read a specific edge or grouped summary. The
    [package API](../../packages/structural-geometry/README.md) supports direct
    analysis, explicit engine registration and verification against a source pack.
 

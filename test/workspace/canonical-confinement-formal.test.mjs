@@ -52,13 +52,13 @@ test("unscreened area behavior, dynamical screening and hadronic interpretations
   ]);
 });
 
-test("original parent weights, occurrence minima, phase placement and temporal maintenance remain excluded", () => {
+test("formulation, scale and gluon dependencies cannot acquire weights, phase placement or temporal maintenance", () => {
   rejects([
-    ["original weights and one-particle minima regain semantics", (d) => dropLimit(d, criterionId, "0.55, 0.20 and 0.25")],
-    ["renormalization scale becomes elapsed time", (d) => dropLimit(d, criterionId, "Source card 1.30")],
+    ["regime-level classification becomes a universal phase sequence or material carrier", (d) => dropLimit(d, criterionId, "Classification as a regime-level pattern is descriptive")],
+    ["renormalization scale becomes elapsed time", (d) => dropLimit(d, criterionId, "renormalization prescription and scale are not physical elapsed time")],
     ["a lattice action becomes a necessary organization stage", (d) => { relation(d, "physics:lattice-gauge-formulation-confinement-criteria").assertion = "The lattice is the universally necessary preceding organization stage of confinement."; }],
     ["gluon interpretation becomes weighted maintenance causality", (d) => { const r = relation(d, "physics:gluon-self-coupling-confinement-criteria"); r.weight = 0.25; r.necessity = "necessary"; r.kind = "causal"; }],
-    ["SOMA is added through display metadata", (d) => { d.graph.entities.find((r) => r.id === "phys:confinement-criteria").phase = "universally-necessary-material-organization"; }],
+    ["a universal organization phase is added through display metadata", (d) => { d.graph.entities.find((r) => r.id === "phys:confinement-criteria").phase = "universally-necessary-material-organization"; }],
     ["downward constraint is silently revived", (d) => dropLimit(d, criterionId, "universal downward constraint")]
   ]);
 });

@@ -16,13 +16,11 @@ const checks = [
   "check-schemas.mjs",
   "check-kernel-closure.mjs",
   "check-interaction-pilot.mjs",
-  "check-docs.mjs",
-  "audit-catalogue.mjs"
+  "check-docs.mjs"
 ];
 
 for (const script of checks) {
   const args = [path.join(REPOSITORY_ROOT, "scripts", script)];
-  if (script === "audit-catalogue.mjs") args.push("--verify");
   const result = spawnSync(process.execPath, args, {
     cwd: REPOSITORY_ROOT,
     stdio: "inherit"

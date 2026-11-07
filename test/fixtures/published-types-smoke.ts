@@ -7,7 +7,6 @@ import {
   hashCanonical as portableHashCanonical
 } from "@onto2d/kernel/canonical";
 import { schemaUrls } from "@onto2d/schemas";
-import { auditSourceCatalogue } from "@onto2d/catalog-adapter";
 import { defineScientificAdapter } from "@onto2d/scientific-adapter";
 import { writePackageRunArtifactBundle } from "@onto2d/run-store";
 import { runCli, type RunCliOptions } from "@onto2d/cli";
@@ -156,7 +155,6 @@ void portableCanonicalize({ browser: true });
 void portableHashCanonical("onto2d:artifact:v1", { browser: true });
 void adapter;
 void schemaUrls.candidate;
-void auditSourceCatalogue;
 void writePackageRunArtifactBundle;
 const cliOptions: RunCliOptions = {
   cwd: ".",

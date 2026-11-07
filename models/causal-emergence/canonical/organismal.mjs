@@ -1,16 +1,15 @@
+import { isReviewedBridgeRelation, isReviewedBridgeClaim, withBridgeReadings } from "./bridges.mjs";
+import { isCauseEvidenceClaim } from "./cause-evidence.mjs";
 import { isReviewedNeuralSystemsRecord, isReviewedNeuralSystemsDescription } from "./level-six.mjs";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  ORGANISMAL_RECORDS, ORGANISMAL_CARD_SCOPES, ORGANISMAL_OWN_STUDY_IDS
+  ORGANISMAL_RECORDS, ORGANISMAL_OWN_STUDY_IDS
 } from "./level-five.mjs";
 
-const sourceCards = JSON.parse(readFileSync(new URL("../../../references/level-5.json", import.meta.url), "utf8"));
 const root = fileURLToPath(new URL("../../../", import.meta.url));
 const published = new Set(["publication-supported", "literature-synthesis"]);
-const dispositions = new Set(["supported", "qualified", "excluded", "unresolved"]);
 const sorted = (values) => [...values].sort();
 const claimContexts = (claim) => claim.contextIds ?? [];
 
@@ -63,7 +62,7 @@ export function validateOrganismalReview(data, context) {
     assert.ok(records[kind] instanceof Map, `Unknown organismal inventory: ${kind}`);
     for (const expected of expectedRecords) {
       const id = expected[idKey];
-      assert.deepEqual(records[kind].get(id), expected,
+      assert.deepEqual(records[kind].get(id), kind === "sources" ? withBridgeReadings(expected) : expected,
         `Organismal ${kind} changed ${id}: preserve the reviewed preparation and scope`);
       admitted[kind].add(id);
     }
@@ -71,9 +70,8 @@ export function validateOrganismalReview(data, context) {
   // Provenance owns these records even when a new ID hides their namespace.
   // Otherwise a copied preparation or finding could be relabeled as Level 0
   // and used to justify a construction rule without reviewing that inference.
-  const ownedSources = new Set([...admitted.sources, "legacy-5", "organismal-review"]);
+  const ownedSources = new Set([...admitted.sources, "organismal-review"]);
   const ownedFiles = new Map([
-    ["references/level-5.json", { id: "legacy-5", kind: "legacy-catalogue" }],
     ["references/canonical/organismal-review.json", { id: "organismal-review", kind: "internal-review" }]
   ]);
   for (const [file, owner] of ownedFiles) {
@@ -110,45 +108,13 @@ export function validateOrganismalReview(data, context) {
   assert.deepEqual(sorted(graph.entities.filter((record) => !isReviewedNeuralSystemsRecord("entities", record) && (record.id.startsWith("org:")
     || usesClaims(record) || record.sourceCoordinates.some((coordinate) => ownedSources.has(coordinate.sourceId))))
     .map((record) => record.id)), sorted(admitted.entities), "Unreviewed organismal node");
-  assert.deepEqual(sorted(graph.claims.filter((record) => !isReviewedNeuralSystemsRecord("claims", record) && (/^[^-]+-org-/.test(record.id) || usesEvidence(record)))
+  assert.deepEqual(sorted(graph.claims.filter((record) => !isReviewedNeuralSystemsRecord("claims", record) && !isReviewedBridgeClaim(record) && !isCauseEvidenceClaim(record) && (/^[^-]+-org-/.test(record.id) || usesEvidence(record)))
     .map((record) => record.id)), sorted(admitted.claims), "Unreviewed organismal claim");
   assert.deepEqual(sorted(organismal.studies.map((record) => record.id)), sorted(ORGANISMAL_OWN_STUDY_IDS),
     "Unreviewed organismal study or moved acquisition");
   assert.deepEqual(sorted(organismal.comparisons.map((record) => record.id)), sorted(admitted.comparisons),
     "Unreviewed organismal comparison");
 
-  assert.equal(ORGANISMAL_CARD_SCOPES.length, sourceCards.length, "Incomplete Level-5 card coverage");
-  const seenCards = new Set();
-  for (const card of ORGANISMAL_CARD_SCOPES) {
-    const original = sourceCards[card.sourceIndex];
-    assert.ok(original && original.Id === card.sourceIndex, "Unknown organismal source card");
-    assert.equal(card.code, `5.${original.Id}`);
-    assert.ok(!seenCards.has(card.code), `Duplicate organismal card ${card.code}`);
-    seenCards.add(card.code);
-    assert.equal(card.originalName, original.Name, `Organismal original name changed ${card.code}`);
-    assert.ok(typeof card.scope === "string" && card.scope.length, `Empty organismal scope ${card.code}`);
-    assert.ok(card.nodeIds.length && card.claimIds.length && card.assertions.length,
-      `Empty organismal admission contract ${card.code}`);
-    assert.equal(new Set(card.nodeIds).size, card.nodeIds.length, `Duplicate organismal card node ${card.code}`);
-    assert.equal(new Set(card.claimIds).size, card.claimIds.length, `Duplicate organismal card claim ${card.code}`);
-    for (const id of card.nodeIds) assert.ok(context.entities.has(id), `Unknown organismal scope node ${card.code}: ${id}`);
-    for (const id of card.claimIds) assert.ok(context.claims.has(id), `Unknown organismal scope claim ${card.code}: ${id}`);
-    assert.ok(card.nodeIds.some((id) => context.entities.get(id).sourceCoordinates.some((coordinate) =>
-      coordinate.sourceId === "legacy-5" && coordinate.locator === `/${original.Id}`)),
-    `Organismal card lost its actual source coordinate ${card.code}`);
-    assert.deepEqual(card.parentDispositions.map((parent) => parent.parentCode),
-      original.Parents.map((parent) => parent.ParentCode), `Organismal parent inventory/order changed ${card.code}`);
-    for (const entry of [...card.assertions, ...card.parentDispositions]) {
-      assert.ok(dispositions.has(entry.disposition), `Unknown organismal disposition ${card.code}`);
-      assert.ok(typeof entry.reason === "string" && entry.reason.length && entry.claimIds.length,
-        `Organismal disposition lacks its scientific reason/evidence ${card.code}`);
-      if (Object.hasOwn(entry, "topic")) assert.ok(entry.topic.length, `Unnamed organismal assertion ${card.code}`);
-      for (const id of entry.claimIds) assert.ok(context.claims.has(id), `Unknown organismal disposition claim ${id}`);
-    }
-    assert.ok(card.excludedDefaults.length, `Organismal card retains unreviewed catalogue defaults ${card.code}`);
-    assert.ok(Array.isArray(card.unresolved), `Organismal card lost uncertainty inventory ${card.code}`);
-  }
-  assert.deepEqual(sorted(seenCards), sorted(sourceCards.map((card) => `5.${card.Id}`)));
 
   for (const expected of ORGANISMAL_RECORDS.studies) {
     const source = context.sources.get(expected.sourceId);
@@ -203,7 +169,7 @@ export function validateOrganismalReview(data, context) {
       .includes(coordinate.locator), `Organismal coordinate exceeds reading ${entity.id}`);
   }
   for (const relation of graph.relations) {
-    if (isReviewedNeuralSystemsDescription(relation)) continue;
+    if (isReviewedNeuralSystemsDescription(relation) || isReviewedBridgeRelation(relation)) continue;
     if (!relation.id.startsWith("organismal:") && !relation.source.startsWith("org:")
       && !relation.target.startsWith("org:") && !usesClaims(relation) && !usesEvidence(relation)
       && !(relation.carrier && usesEvidence(relation.carrier))) continue;

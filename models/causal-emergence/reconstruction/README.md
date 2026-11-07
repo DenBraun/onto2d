@@ -6,7 +6,7 @@ tests and independent scientific review.
 The supplied texts contain a recognizable construction idea: configurations
 become admissible, acquire persistent identity, and provide carriers and
 constraints for another round of organization. The missing link is a justified
-procedure from those principles to the individual catalogue decisions.
+procedure from those principles to individual graph decisions.
 The papers and archive supply principles, definitions and proposed algorithms;
 scientific justification for individual nodes and relations requires separate
 evidence. The canonical graph implements a partial, explicitly scoped model.
@@ -39,7 +39,7 @@ python3 models/causal-emergence/reconstruction/verify.py
 | `LifeSynth_Solutions_v3.txt`, lines 24–108 | Proof obligations for changes, negative proxy tests, evidence milestones | Useful experimental design ideas; proposed implementations and identity claims remain unverified |
 | `Lisy_eng.txt`, lines 25–111 | English version of the v3 concepts | A closely corresponding translation, not an independent result |
 | `Research Plan Emergence.txt`, lines 14–43, 49–55 | Necessary-condition, representation and engineering questions | A research agenda; milestone labels are not evidence of completed validation |
-| `new layer.txt`, lines 1–71, 175–195, 274–289 | 24 agent/institution and 28 virtual-world candidates, with rule-governed environments | Scenario material. The 52 candidates do not constitute 52 required catalogue omissions |
+| `new layer.txt`, lines 1–71, 175–195, 274–289 | 24 agent/institution and 28 virtual-world candidates, with rule-governed environments | Scenario material. The 52 candidates do not constitute 52 required missing nodes |
 | `substack.txt`, lines 1–19, 26–118 | Continuity-supporting infrastructure and an editorial programme | Distinguish process, support and interface; keep future scenarios outside established claims |
 
 The archive is useful evidence of the project's intellectual direction. Its
@@ -59,10 +59,9 @@ asymmetry and compensatory boundedness still need mathematical predicates
 before they can establish that the indefinite class is forced.
 
 Represent the assumptions, the conditional result and any physical
-identification separately. The present catalogue's `0.16` also combines an
-early premetric frame with the later analytic metric. Split those meanings:
-otherwise a metric becomes an unexplained prerequisite of the directions from
-which the paper later argues for it.
+identification separately. Keep the early premetric frame separate from the
+later analytic metric: otherwise a metric becomes an unexplained prerequisite
+of the directions from which the paper later argues for it.
 
 ### F02 — An explicit operator/mass sign inconsistency
 
@@ -130,8 +129,8 @@ This counterexample targets the claimed sufficiency of the balance equations.
 It does not purport to solve an independently specified nonlinear self-binding
 model. Such a model is precisely an additional obligation.
 
-Split `0.7` into local density `rho` and integrated quantity `Gamma`, with
-support, measure, normalization and transformation group. For fixed support
+Separate local density `rho` from integrated quantity `Gamma`, with support,
+measure, normalization and transformation group. For fixed support
 and measure, global phase invariance is directly justified. Conservation in
 time, localization and persistence require additional dynamics and evidence.
 
@@ -155,22 +154,22 @@ ensemble gate.
 
 ### F08–F12 — Coordinates and later steps remain explicit obligations
 
-- `0.7` and `0.8` are in catalogue Phase C; the paper develops density and
-  objecthood by the end of Phase B, then formalizes nodes in Phase C and later
-  refers to nodes formed there. Preserve the two source coordinates and the
-  ambiguity. Neither is automatically kernel derivation depth.
+- The paper develops local density and objecthood by the end of Phase B, then
+  formalizes nodes in Phase C and later refers to nodes formed there. Preserve
+  this phase ambiguity. Neither phase is automatically kernel derivation depth.
 - `E=hbar omega` and `p=hbar k` do not, by themselves, make continuous
-  frequencies or wave numbers discrete. `0.17` needs a separate spectrum or
-  admissibility rule.
+  frequencies or wave numbers discrete. The discrete-scale hypothesis needs a
+  separate spectrum or admissibility rule.
 - A nonzero inter-node coupling does not automatically prove collective
   stability. A list of nodes, an ensemble and a promoted carrier are distinct
   objects of evaluation.
 - The p. 34 selector leaves metric definitions and coefficients open. A
   selected candidate needs a specified cohort and uncertainty/sensitivity
   record; tied minima remain alternatives.
-- The named `0.20–0.23` directional branch has no sufficiently specific
-  derivation in the fully reviewed topology paper. Perturbative persistence
-  supplies a related question for `0.21`, not a proof of the full branch.
+- The directional branch of anisotropy, perturbation test, directional
+  gradient and transport bias has no sufficiently specific derivation in the
+  fully reviewed topology paper. Perturbative persistence supplies a related
+  question for the perturbation test, not a proof of the full branch.
   Keep these proposals available with their missing definitions recorded.
 
 ## Archive issues to resolve before reuse
@@ -187,11 +186,6 @@ ensemble gate.
 | `OntoUML.txt`, lines 188–194; `log.txt`, lines 84–96; LifeSynth v3, lines 5, 69–77 | Level and phase labels differ between drafts; the v3 source-code references are unversioned | Use source-qualified coordinates and versioned node references; level numbers cannot be treated as shared measurements |
 | `mvp.txt`, lines 64, 82, 123–131, 254–261; research plan, lines 49–55 | Reliability-by-count, strong completion claims and priority claims lack attached validation | Preserve the plans without converting them into scientific status |
 | `log.txt`, lines 308–435; `new layer.txt`; `substack.txt` | Speculation about cosmological cognition, gravity, digital subjects and future societies | Treat as hypotheses/scenarios; neither endorsement nor conceptual compatibility establishes a causal relation |
-
-The named Level-5/6/7 references in LifeSynth v3 do resolve to current labels
-for endocrine regulation, sleep–wake cycles, neurovascular coupling, social
-norms, digital social networks and cultural transmission. This verifies label
-alignment only, not the proposed applications or the 2025 historical versions.
 
 The process/relator distinction can be checked against the project's intended
 external vocabulary: [gUFO Relator and Event definitions](https://nemo-ufes.github.io/gufo/).
@@ -219,7 +213,7 @@ notion and cannot stand in for the other three.
 Every minimality claim needs: candidate universe, target, scope and boundary,
 allowed edits/substitutions, cost or partial order, evaluation protocol,
 search bounds, and all surviving tied alternatives. None may be inferred from
-an attractive geometry score or the current catalogue's size.
+an attractive geometry score or the current graph's size.
 
 An external methodological precedent is the minimal predictive representation
 in [Shalizi and Crutchfield, Theorem 2](https://arxiv.org/html/cond-mat/9907176v2).

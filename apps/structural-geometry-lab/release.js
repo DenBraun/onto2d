@@ -2,14 +2,14 @@
 export const RELEASE = {
   "evidence.json": {
     "bytes": 448296,
-    "sha256": "8c0bc5c1012e7c67c6a4c456eb9ecd4f0880f046525133cbde8af9c1f9da06d5"
+    "sha256": "ba16a926ef0edf5a2375699c06e6b4622afd79096dbc19aba5fa8612e7f4489c"
   },
   "controls.json": {
     "bytes": 556814,
-    "sha256": "b846fcee02b1c585b65c1a805e0b38a21edcfe4464167318a931e51219d4592a"
+    "sha256": "13f5d3274192cd7057cc4d9f50a49f5694ab465a82521e7e34fd8e30b9927017"
   },
   "worker.js": {
-    "bytes": 310468,
-    "sha256": "86c61cf7405d957775a851ece0e8e05b8c66e3bb08f90515ab1cf9b6603b8701"
+    "bytes": 330644,
+    "sha256": "2c277e84c35eb11ecbcfc42050c6c1eb9ac2cd998258be60d0cc97b751a83f5c"
   }
 };

@@ -218,14 +218,12 @@ test("Pitrou retains historical inputs, reused abundance evidence, lithium tensi
   ]);
 });
 
-test("original parent weights and carrier minima cannot regain scientific authority", async () => {
+test("the BBN scope keeps finite isotope findings, network products and its display level bounded", async () => {
   await rejects([
-    ["confinement and electroweak labels do not derive a reaction history", (data) =>
-      dropLimit(data, "D-phys-bbn-source-scope", "Original parents 1.7")],
-    ["equal weights and two-carrier minima are not physical estimates", (data) =>
-      dropLimit(data, "D-phys-bbn-source-scope", "weights 0.5/0.5")],
-    ["generic evidence placeholders cannot become primary publications", (data) =>
-      dropLimit(data, "D-phys-bbn-source-scope", "placeholders identify no publication")],
+    ["the Level 2 grouping remains a display choice rather than a physical stage", (data) =>
+      dropLimit(data, "D-phys-bbn-source-scope", "Level 2 is a display choice")],
+    ["deuterium and helium findings cannot confirm every isotope, thermal history or a unique origin", (data) =>
+      dropLimit(data, "D-phys-bbn-source-scope", "do not independently confirm every isotope")],
     ["a population-level isotope comparison is not a universal matter hierarchy", (data) =>
       dropLimit(data, "D-phys-bbn-source-scope", "Helium-3 is a network product")]
   ]);

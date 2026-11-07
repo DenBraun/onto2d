@@ -18,7 +18,7 @@ test("all 720 relabelings of the declared six-node typed control preserve its jo
 
 test("independent Python permutations verify original/remapped witnesses and all locked reference inputs", async () => {
   const reference = await readJson("reference.json"); await verifyReferenceSources(reference);
-  for (const field of ["controlsFileSha256", "protocolFileSha256", "causalFileSha256", "canonicalReferenceFileSha256"]) {
+  for (const field of ["controlsFileSha256", "protocolFileSha256", "canonicalReferenceFileSha256"]) {
     await assert.rejects(() => verifyReferenceSources({ ...reference, [field]: "0".repeat(64) }), /source binding differs/);
   }
   const script = fileURLToPath(new URL("../../../cases/structural-geometry/typed/reference.py", import.meta.url));

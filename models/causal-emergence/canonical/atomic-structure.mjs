@@ -158,7 +158,7 @@ const contracts = {
       "limitations": [
         "The source uses Gaussian units; the displayed rationalized-unit Hamiltonian and energy formula are an explicitly declared convention rewrite, not a quoted equation in those units.",
         "The nucleus is supplied and held fixed. Finite nuclear mass/recoil, spin, fine/hyperfine structure, radiative corrections, nuclear size and external fields are outside this leading model. No new Dirac spectrum or modern precision prediction is derived.",
-        "The model concerns one electron and Z=1. It neither derives all many-electron shells nor establishes element-specific chemistry, atom formation rates or universal matter stability. Its state count is a chosen model specification, not the catalogue N_crit."
+        "The model concerns one electron and Z=1. It neither derives all many-electron shells nor establishes element-specific chemistry, atom formation rates or universal matter stability. Its state count is a chosen model specification."
       ]
     },
     {
@@ -230,20 +230,14 @@ const contracts = {
           "locator": "Published pages L1-L4, Sections 2.1-3 and 4, especially Figure 1, Equations 1 and 3-5: historical multilevel hydrogen recombination, supplied cosmology, population evolution and approximate-rate validity",
           "role": "supports",
           "note": "Supports the specified model or interpretation only; no new numerical or experimental replay."
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/",
-          "role": "provenance",
-          "note": "Original source card /2 is a catalogue proposal, not independent scientific evidence."
         }
       ],
       "checkIds": [],
       "limitations": [
-        "Original parent 2.0 is primordial light-nucleus nucleosynthesis. A supplied hydrogen proton nucleus is sufficient for this bound-state model; the model and laboratory atom do not require the selected BBN calculation as their formation history. No numerical BBN result is substituted for Seager's historical helium-composition input.",
-        "Original parent 2.1 can delimit an effective Coulomb interaction, not establish equal causal strength with nuclear ancestry. The original weights 0.5/0.5, upward directions, necessity and interaction/dependency labels have no matched estimator or universal causal authority.",
-        "Original 2.0 physical-body N_min=N_crit=1 and 2.1 resonant-mode N_min=N_crit=2 do not count the supplied nucleus and electron. A model constituent count is not a measured critical threshold. Phase 1, TypeRole 1, Science [0,1], MustCover [10], ShouldCover [9] and Level 2 remain catalogue/display choices.",
-        "The unnamed Schrodinger/Dirac and spectroscopy placeholders do not themselves identify publications. The selected one-electron result excludes a derivation of many-electron Pauli filling, chemical bonding, elemental/isotopic taxonomy and all-scale material stability."
+        "A supplied hydrogen proton nucleus is sufficient for this bound-state model; the model and laboratory atom do not require the selected BBN calculation as their formation history. No numerical BBN result is substituted for Seager's historical helium-composition input.",
+        "The atomic-to-macroscopic electromagnetic interaction regime can delimit an effective Coulomb interaction, not establish equal causal strength with nuclear ancestry.",
+        "A model constituent count is not a measured critical threshold.",
+        "The selected one-electron result excludes a derivation of many-electron Pauli filling, chemical bonding, elemental/isotopic taxonomy and all-scale material stability."
       ],
       "contextIds": [
         "lamb1947",
@@ -338,7 +332,7 @@ const contracts = {
       ],
       "checkIds": [],
       "limitations": [
-        "No shared acquisition, quantitative formation chain, independent replication, universal parent necessity or many-electron stability theorem follows from this comparison."
+        "No shared acquisition, quantitative formation chain, independent replication, universal precursor necessity or many-electron stability theorem follows from this comparison."
       ],
       "contextIds": [
         "lamb1947",
@@ -370,7 +364,7 @@ const contracts = {
       "openObligations": [
         "The source uses Gaussian units; the displayed rationalized-unit Hamiltonian and energy formula are an explicitly declared convention rewrite, not a quoted equation in those units.",
         "The nucleus is supplied and held fixed. Finite nuclear mass/recoil, spin, fine/hyperfine structure, radiative corrections, nuclear size and external fields are outside this leading model. No new Dirac spectrum or modern precision prediction is derived.",
-        "The model concerns one electron and Z=1. It neither derives all many-electron shells nor establishes element-specific chemistry, atom formation rates or universal matter stability. Its state count is a chosen model specification, not the catalogue N_crit."
+        "The model concerns one electron and Z=1. It neither derives all many-electron shells nor establishes element-specific chemistry, atom formation rates or universal matter stability. Its state count is a chosen model specification."
       ]
     },
     {
@@ -433,17 +427,13 @@ const contracts = {
         {
           "sourceId": "seager1999-recombination",
           "locator": "Published pages L1-L4, Sections 2.1-3 and 4, especially Figure 1, Equations 1 and 3-5: historical multilevel hydrogen recombination, supplied cosmology, population evolution and approximate-rate validity"
-        },
-        {
-          "sourceId": "legacy-2",
-          "locator": "/"
         }
       ],
       "openObligations": [
-        "Original parent 2.0 is primordial light-nucleus nucleosynthesis. A supplied hydrogen proton nucleus is sufficient for this bound-state model; the model and laboratory atom do not require the selected BBN calculation as their formation history. No numerical BBN result is substituted for Seager's historical helium-composition input.",
-        "Original parent 2.1 can delimit an effective Coulomb interaction, not establish equal causal strength with nuclear ancestry. The original weights 0.5/0.5, upward directions, necessity and interaction/dependency labels have no matched estimator or universal causal authority.",
-        "Original 2.0 physical-body N_min=N_crit=1 and 2.1 resonant-mode N_min=N_crit=2 do not count the supplied nucleus and electron. A model constituent count is not a measured critical threshold. Phase 1, TypeRole 1, Science [0,1], MustCover [10], ShouldCover [9] and Level 2 remain catalogue/display choices.",
-        "The unnamed Schrodinger/Dirac and spectroscopy placeholders do not themselves identify publications. The selected one-electron result excludes a derivation of many-electron Pauli filling, chemical bonding, elemental/isotopic taxonomy and all-scale material stability."
+        "A supplied hydrogen proton nucleus is sufficient for this bound-state model; the model and laboratory atom do not require the selected BBN calculation as their formation history. No numerical BBN result is substituted for Seager's historical helium-composition input.",
+        "The atomic-to-macroscopic electromagnetic interaction regime can delimit an effective Coulomb interaction, not establish equal causal strength with nuclear ancestry.",
+        "A model constituent count is not a measured critical threshold.",
+        "The selected one-electron result excludes a derivation of many-electron Pauli filling, chemical bonding, elemental/isotopic taxonomy and all-scale material stability."
       ]
     },
     {
@@ -509,7 +499,7 @@ const contracts = {
       "target": "phys:atomic-structure-source-scope",
       "kind": "descriptive",
       "role": "interpretation-dependency",
-      "assertion": "The one-electron negative-energy spectrum supplies a finite positive binding construction within the card scope, without deriving a formation rate or all-element shell structure.",
+      "assertion": "The one-electron negative-energy spectrum supplies a finite positive binding construction within the scope, without deriving a formation rate or all-element shell structure.",
       "claimIds": [
         "M-phys-atomic-structure-source-scope"
       ],
@@ -674,24 +664,6 @@ const contracts = {
   ],
   "comparisons": [],
   "sources": [
-    {
-      "id": "legacy-2",
-      "kind": "legacy-catalogue",
-      "title": "Original Level 2 source catalogue",
-      "authors": [],
-      "year": 2026,
-      "doi": null,
-      "url": null,
-      "path": "references/level-2.json",
-      "sha256": "0698f7d404a3a56de934dd35b98a9e884e846f51b3e8a55af40b916f258a0a61",
-      "review": {
-        "extent": "inventoried",
-        "locators": [
-          "/"
-        ],
-        "limit": "Author-supplied source material; its evidence labels and numerical thresholds require scientific review."
-      }
-    },
     {
       "id": "lamb1947",
       "kind": "research-publication",

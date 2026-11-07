@@ -6,8 +6,14 @@ Date: 2026-09-06.
 ## Adopted definition
 
 Policy `directed-ollivier-shadow-flow-v1` evolves a separate array of positive
-edge lengths over an immutable verified `source-parent` graph. Every edge in
-the declared full or induced scope participates. Source Weight, quantization
+edge lengths over an immutable verified graph, projected with
+`source-parent-directed-v1` or `canonical-relation-directed-v1`. An induced
+scope of a layered canonical release uses the policy of its layer,
+`canonical-arising-causal-v1` or `canonical-technical-directed-v1`. The policy's frozen
+`sourceGraph` label `immutable-source-parent-induced-scope` predates the
+canonical projection and is kept so existing v1 artifacts remain verifiable.
+Each request binds the full source projection hash, which identifies the
+projection policy and relation layers actually used. Every edge in the declared full or induced scope participates. Source Weight, quantization
 and other annotations never become lengths or probabilities. The complete
 source is verified before scope selection; excluded nodes, excluded edges and
 boundary edges are counted. Scoped isolates remain throughout the analysis.
@@ -134,7 +140,9 @@ even if a graph might stop early. Full-source projection and canonical codec
 bounds also apply. Exact rational growth can hit the digit bound before the
 iteration cap, including on a small graph. Such a failure returns an explicit
 error with no partial success artifact, rounding, clamping or silent truncation.
-The two frozen real-source examples therefore declare six transformations.
+The two frozen canonical Level-0 examples therefore declare their step counts
+explicitly: six for the definitions and four for the fragment with rules,
+where a fifth step exceeds the digit bound.
 Process startup uses isolated Python, a fixed packaged script and no shell.
 
 ## Published gate and interpretation
@@ -156,18 +164,19 @@ or that the finite run has converged.
 
 A second reference independently rebuilds all 11 trajectories with NetworkX
 3.2.1 Dijkstra paths, integer-scaled network simplex and rational arithmetic.
-All 68 states / 1089 edge calculations, normalization traces, stopping records
-and cuts agree. The two six-step Causal Emergence fragments illustrate relative
-length changes after this computational gate. They are bounded induced graphs
-with disclosed boundary counts, and both stop at their iteration limit.
+All 66 states / 1233 edge calculations, normalization traces, stopping records
+and cuts agree. Two Level-0 fragments of the canonical Causal Emergence graph,
+run for six and four steps, illustrate relative length changes after this
+computational gate. They are bounded induced graphs with disclosed boundary
+counts, and both stop at their iteration limit.
 
 The separate [star and bridge controls](../../cases/structural-geometry/flow-controls/README.md)
 adds eight inward/outward-star profiles and one two-K4 single-bridge profile.
 All 33 states / 506 edge calculations agree with a separate analytic derivation
 and NetworkX. Stars preserve their normalized unequal lengths with zero
 curvature; the bridge profile recovers its two groups at the declared cap and
-threshold. It reaches `iteration-limit`, not a convergence result. The original
-11 trajectories and their suite hash are unchanged.
+threshold. It reaches `iteration-limit`, not a convergence result. It adds no
+run to the 11-trajectory reference suite.
 
 These outputs describe the selected representation under the declared flow.
 Community truth, causal significance, full-model scalability and empirical

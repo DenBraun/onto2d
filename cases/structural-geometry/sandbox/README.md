@@ -1,14 +1,15 @@
 # Immutable structural sandbox controls
 
-SG2-020 supplies 51 frozen requests with 108 targets: 104 applied operations and
+SG2-020 supplies 46 frozen requests with 83 targets: 79 applied operations and
 four rejected singleton reversals. Four edgeless edit requests are unavailable
 and produce no targets. See the [protocol](PROTOCOL.md), [controls](controls.json)
 and [execution contract](../../../docs/structural-geometry/SIGNATURES.md#immutable-structural-probe-sandbox).
 
-Sources reuse existing canonical/typed fixtures and the exact Causal Emergence
-release. Separate controls add a mixed reciprocal/path graph, an induced scope
-with all four edge partitions and an isolate, opaque source IDs, and a 32-node
-cycle with 32 exhaustive targets / 1,024 transformation edge visits.
+Sources reuse existing synthetic canonical/typed fixtures. Separate controls
+add a mixed reciprocal/path graph, an induced scope with all four edge
+partitions and an isolate, opaque source IDs, and a 32-node cycle with 32
+exhaustive targets / 1,024 transformation edge visits. The suite contains
+synthetic controls only.
 
 Each deletion/reversal starts from the baseline. Deletions retain all nodes and
 the original IDs of surviving shadow edges. A reciprocal pair can be reversed
@@ -41,11 +42,11 @@ npm run structural-geometry:sandbox:check
 npm run structural-geometry:sandbox:report
 ```
 
-The check verifies the 117 pinned legacy files, independent source expectations,
-all 51 artifacts and the 345-request census, and runs 26 behavior/schema/browser
-tests. `npm test` also discovers three reference tests. Report mode verifies
-before printing execution counts and work. The [suite index](suite.json) binds
-all artifacts and the independent [reference](reference.json).
+The check verifies independent source expectations, all 46 artifacts and the
+345-request census, and runs 26 behavior/schema/browser tests. `npm test` also
+discovers three reference tests. Report mode verifies before printing execution
+counts and work. The [suite index](suite.json) binds all artifacts and the
+independent [reference](reference.json).
 
 For a deliberately reviewed control revision, derive the independent outcomes
 before regenerating this suite:

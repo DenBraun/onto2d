@@ -14,8 +14,5 @@ export function packFor(graph) {
 }
 export async function fixtures() {
   const { controls } = await readJson("controls.json");
-  const causal = await readJson("../../../models/causal-emergence/releases/2026.08.15/bundle.json");
-  return [...controls.map((graph) => ({ id: graph.id, pack: packFor(graph), input })),
-    { id: "causal-fragment", pack: causal, input: { ...input,
-      scope: { kind: "induced", nodeIds: ["0.0", "0.1", "0.2", "0.3", "0.4", "0.5"] } } }];
+  return controls.map((graph) => ({ id: graph.id, pack: packFor(graph), input }));
 }

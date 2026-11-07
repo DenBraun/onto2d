@@ -102,7 +102,7 @@ export async function run({ write = false, report = false } = {}) {
   }
   if (report) console.table(runs.map(r => ({ case: r.id, status: r.summary.status, observed: `${r.summary.coverage.numerator}/3`,
     Forman: r.features[0].state, Ollivier: r.features[1].state, flow: `${r.features[2].state} (${r.features[2].coverage.numerator}/${r.features[2].coverage.denominator})`, termination: r.termination })));
-  console.log(`Geometric signature suite ${write ? "written" : "verified"}: 25 cases, 781 interval profiles, 820 threshold traces, 40 adjudications.`);
+  console.log(`Geometric signature suite ${write ? "written" : "verified"}: ${runs.length} cases, 781 interval profiles, 820 threshold traces, 40 adjudications.`);
   return suite;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

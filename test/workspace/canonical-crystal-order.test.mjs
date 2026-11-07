@@ -250,9 +250,8 @@ test("primary reading and sampling errors do not imply unread publisher text or 
   ]);
 });
 
-test("crystal scope does not infer material response, universal parents or carrier minima by name", async () => {
+test("crystal scope does not infer material response, universal precursor interactions or critical unit counts", async () => {
   const data = await source();
-  assert.equal(claim(data, synthesis).citations.find((citation) => citation.sourceId === "legacy-2").role, "provenance");
   for (const suffix of ["spatial-order-symmetry-boundary", "hard-disk-equilibrium-model",
     "shechtman1984-alloy-context", "bernard2011-hard-disk-context", "shechtman-icosahedral-order",
     "bernard-hard-disk-ordering", "crystal-order-source-scope"]) {
@@ -263,14 +262,10 @@ test("crystal scope does not infer material response, universal parents or carri
       removeLimit(changed, synthesis, "Elasticity, conductivity, anisotropic transport")],
     ["hard-disk entropy is not a proof of real-alloy force contributions", (changed) =>
       removeLimit(changed, synthesis, "which microscopic contributions stabilize the real Al-Mn alloy")],
-    ["catalogue weights do not become fitted causal fractions", (changed) =>
-      removeLimit(changed, synthesis, "Original weights 0.4/0.35/0.25")],
-    ["finite order does not establish a two-unit crystallization threshold", (changed) =>
-      removeLimit(changed, synthesis, "N_min=N_crit=2")],
+    ["a disk pair, finite grain or simulation size does not establish a critical number or two-unit threshold", (changed) =>
+      removeLimit(changed, synthesis, "two-unit crystallization threshold")],
     ["thermal protocols and one density model do not establish arbitrary external-field phase maps", (changed) =>
       removeLimit(changed, synthesis, "arbitrary temperature, pressure, composition or external fields")],
-    ["SOMA's pattern classification is not an observed new physical entity", (changed) =>
-      removeLimit(changed, synthesis, "SOMA pattern-level/higher-order label")],
     ["the two finite contexts cannot be declared mutual replications", (changed) =>
       removeLimit(changed, synthesisMethod, "not mutual replications")],
     ["a reported alloy grain is not a locally reproduced instance", (changed) => {

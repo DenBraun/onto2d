@@ -17,7 +17,7 @@ const validate = (name, value) => ajv.validate(ids.get(name), value);
 const examples = await fixtures(), artifacts = await Promise.all(examples.map(f => readJson(`artifacts/${f.id}.json`)));
 const get = id => artifacts[examples.findIndex(f => f.id === id)];
 
-test("closed signature schemas accept all 27 complete/incomplete artifacts and their embedded evidence", () => {
+test("closed signature schemas accept all 26 complete/incomplete artifacts and their embedded evidence", () => {
   for (const [i, f] of examples.entries()) {
     assert.equal(validate("structuralResponseSignatureInput", f.input), true, ajv.errorsText());
     assert.equal(validate("structuralResponseSignatureArtifact", artifacts[i]), true, `${f.id}: ${ajv.errorsText()}`);
@@ -65,7 +65,7 @@ test("schema represents failed invariance with complete feature coverage while r
   a.summary.status = "complete";
   assert.equal(validate("structuralResponseSignatureArtifact", a), false);
 });
-test("browser verification rebuilds all 27 signature artifacts and both complete upstream evidence layers", async () => {
+test("browser verification rebuilds all 26 signature artifacts and both complete upstream evidence layers", async () => {
   const bundle = await build({ entryPoints: [fileURLToPath(new URL("../src/signature.js", import.meta.url))], bundle: true,
     platform: "browser", format: "iife", globalName: "Signature", write: false, logLevel: "silent" });
   const result = runInNewContext(`${bundle.outputFiles[0].text}\nconst values = JSON.parse(artifactText); JSON.stringify(JSON.parse(fixtureText).map(({pack,input},i) =>

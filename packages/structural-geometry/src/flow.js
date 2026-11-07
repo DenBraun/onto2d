@@ -1,6 +1,6 @@
 import { canonicalClone, canonicalize, deepFreeze, hashCanonical } from "@onto2d/kernel/canonical";
 import { defineScientificAdapter } from "@onto2d/scientific-adapter";
-import { projectStructuralGeometry } from "./index.js";
+import { projectStructuralGeometryForScope } from "./index.js";
 import { packFromEngineModel } from "./engine-model.js";
 import { connectivity } from "./connectivity.js";
 import { STRUCTURAL_FLOW_POLICY, STRUCTURAL_FLOW_SOLVER } from "./flow-policy.js";
@@ -40,7 +40,7 @@ export function prepareStructuralFlow(pack, input = {}) {
   else if (cut.kind === "final-length") { fields(cut, ["kind", "threshold"]); rational(cut.threshold, true); }
   else fail("INPUT_INVALID", "Unsupported analytical cut policy.");
 
-  const projection = projectStructuralGeometry(pack);
+  const projection = projectStructuralGeometryForScope(pack, scope);
   const selected = new Set(scope.kind === "full" ? projection.nodes.map((n) => n.id) : scope.nodeIds);
   const nodes = projection.nodes.filter((n) => selected.has(n.id)).map(({ id, sourceRecordHash }) => ({ id, sourceRecordHash }));
   if (nodes.length !== selected.size) fail("SCOPE_INVALID", "Unknown node in flow scope.");
