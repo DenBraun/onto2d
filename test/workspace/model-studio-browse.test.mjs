@@ -690,3 +690,65 @@ test("dictionary-backed details preserve exact raw nodes and resolve complete ev
   });
   await assert.rejects(loaderFor(unsupported).load(resolution(pack)), { code: "STUDIO_BROWSE_GRAPH_INVALID" });
 });
+
+test("causes between arisings load their exact records, claims and evidence only on request", async () => {
+  const source = { id: "paper", title: "A reviewed intervention", review: { extent: "selected-main", limit: "No raw replay" } };
+  const study = { id: "assay", sourceId: "paper", preparation: "Matched sample", limitations: ["Finite observation"] };
+  const claim = { id: "CE-a-b-forms", contextIds: [study.id], statement: "B forms only with A.", limitations: ["One preparation"],
+    citations: [{ sourceId: source.id, locator: "Figure 2", role: "supports" }] };
+  const arising = (id, name) => ({ id, name, layer: "arising", level: 0, phase: 0, typeRole: "process", rationale: [] });
+  const nodes = [arising("arising:0.0", "First"), arising("arising:0.1", "Second"),
+    { id: "record", name: "Technical record", layer: "technical", arisingId: "arising:0.0", rationale: [] }];
+  const edges = [
+    { id: "cause:0.0>0.1", source: "arising:0.0", target: "arising:0.1", relationLayer: "causal", role: "arising",
+      necessity: "necessary", dependencyType: 0, status: "supported", weight: null, claimIds: [claim.id],
+      causalDirections: [0], interactionModes: [3], openObligations: [] },
+    { id: "cause:0.1>0.0", source: "arising:0.1", target: "arising:0.0", relationLayer: "causal", role: "maintenance",
+      necessity: "enabling", dependencyType: 4, status: "author-hypothesis", weight: null, claimIds: [],
+      causalDirections: [2], interactionModes: [2], openObligations: ["Show persistence without the cause."] },
+    { id: "technical", source: "record", target: "arising:0.0", relationLayer: "descriptive", role: "context", claimIds: [] }
+  ];
+  const pack = buildModelPack({ model: { id: "ontology-fixture", name: "Ontology Fixture", version: "1" },
+    source: { id: "ontology-source", files: [{ path: "source.json", hash: `sha256:${"e".repeat(64)}` }] }, nodes, edges,
+    dictionaries: { recordEvidence: { format: "dictionary-references-v1" }, sources: [source], causeEvidence: { studies: [study] },
+      claims: [claim], arisingDeclarations: { root: { code: "0.0", statement: "A declared root." } },
+      presentation: { arisingTable: { layer: "arising", levels: [{ value: 0, name: "Zero" }], phases: [{ value: 0, name: "First" }] } } } });
+  const artifacts = buildBrowseArtifacts(pack);
+  const graph = JSON.parse(decoder.decode(artifacts.files.get(artifacts.index.entries[0].graph.path)));
+  assert.deepEqual(graph.relationChunks.flatMap((chunk) => chunk.edgeIds).sort(), ["cause:0.0>0.1", "cause:0.1>0.0"],
+    "Only relations between records of the declared ontological layer get detail chunks");
+  assert.deepEqual(graph.declarations, pack.files["model/dictionaries.json"].arisingDeclarations);
+  assert.ok(graph.edges.every((edge) => !Object.hasOwn(edge, "claimIds")), "The compact graph stays free of evidence");
+  const { load, mock } = loaderFor(artifacts);
+  const browse = await load(resolution(pack));
+  try {
+    assert.equal(mock.calls.length, 2, "Relation details are not fetched before a cause is opened");
+    assert.equal(browse.hasRelationDetail("technical"), false);
+    assert.deepEqual(browse.declarations, graph.declarations);
+    const supported = await browse.inspectRelation("cause:0.0>0.1");
+    assert.deepEqual(supported.relation, edges[0], "The relation is the exact verified release edge");
+    assert.deepEqual(supported.rationale, [{ ...claim, contexts: [study], experimentalContexts: [],
+      citations: claim.citations.map((citation) => ({ ...citation, source })) }]);
+    const hypothesis = await browse.inspectRelation("cause:0.1>0.0");
+    assert.deepEqual(hypothesis.rationale, []);
+    assert.deepEqual(hypothesis.relation.openObligations, ["Show persistence without the cause."]);
+    assert.equal(mock.calls.length, 3, "Both causes share one cached relation chunk");
+    await assert.rejects(browse.inspectRelation("technical"), { code: "STUDIO_BROWSE_RELATION_MISSING" });
+  } finally { browse.close(); }
+
+  for (const [label, mutate] of [
+    ["a changed relation", (chunk) => { chunk.relations.find((relation) => relation.id === "cause:0.0>0.1").status = "author-hypothesis"; }],
+    ["a missing claim", (chunk) => { chunk.claims = []; }],
+    ["an unresolved study", (chunk) => { chunk.evidence.studies = []; }]
+  ]) {
+    const broken = editedArtifacts(artifacts, ({ graph: edited, rewrite }) => rewrite(edited.relationChunks[0].descriptor, mutate));
+    const session = await loaderFor(broken).load(resolution(pack));
+    try {
+      await assert.rejects(session.inspectRelation("cause:0.0>0.1"), { code: "STUDIO_BROWSE_DETAIL_INVALID" }, label);
+    } finally { session.close(); }
+  }
+  const duplicated = editedArtifacts(artifacts, ({ graph: edited }) => {
+    edited.relationChunks.push({ ...edited.relationChunks[0] });
+  });
+  await assert.rejects(loaderFor(duplicated).load(resolution(pack)), { code: "STUDIO_BROWSE_GRAPH_INVALID" });
+});

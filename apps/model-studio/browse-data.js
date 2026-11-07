@@ -1,9 +1,9 @@
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
-import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261106.10";
+import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261107.2";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:1df4c111e85a6e16869c2e7084955586763d7656846dddca5ea43cecddea4517";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:3793c5972c789e74cb1eb1a2223f30fb3688f882c619024562a04ba85a0dc0f0";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,
@@ -20,7 +20,9 @@ const HASH = /^sha256:[0-9a-f]{64}$/;
 const IDENTIFIER = /^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/;
 const PATH = /^(?:[A-Za-z0-9][A-Za-z0-9._-]*\/)*[A-Za-z0-9][A-Za-z0-9._-]*\.json$/;
 const REVIEW_KEYS = new Set(["sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"]);
-const NODE_FIELDS = ["id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain", "shortDescription"];
+// The compact graph keeps these fields; the build script projects records with the same lists.
+export const NODE_FIELDS = Object.freeze(["id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain", "shortDescription"]);
+export const EDGE_FIELDS = Object.freeze(["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight", "status"]);
 
 function fail(code, message) {
   const error = new Error(message);
@@ -168,6 +170,11 @@ function matchingProjection(left, right) {
     && left[key] === right[key]);
 }
 
+function matchingRelation(record, pinned) {
+  return object(record) && object(pinned) && EDGE_FIELDS.every((key) => Object.hasOwn(record, key) === Object.hasOwn(pinned, key)
+    && record[key] === pinned[key]);
+}
+
 /** A pinned, build-verified browsing projection, not a partially verified Model Pack. */
 export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: suppliedFetch } = {}) {
   const url = new URL(indexUrl);
@@ -206,7 +213,9 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
     envelope(graph, "onto2d-studio-browse-graph", expectedIdentity);
     exactFields(graph, ["format", "formatVersion", "identity", "model", "nodes", "edges", "presentation", "reviews", "chunks",
       ...(Object.hasOwn(graph, "interactionViews") ? ["interactionViews"] : []),
-      ...(Object.hasOwn(graph, "recordEvidence") ? ["recordEvidence"] : [])], "Browse graph");
+      ...(Object.hasOwn(graph, "recordEvidence") ? ["recordEvidence"] : []),
+      ...(Object.hasOwn(graph, "declarations") ? ["declarations"] : []),
+      ...(Object.hasOwn(graph, "relationChunks") ? ["relationChunks"] : [])], "Browse graph");
     if (!object(graph.model) || graph.model.id !== expectedIdentity.modelId
       || graph.model.version !== expectedIdentity.modelVersion || !Array.isArray(graph.nodes)
       || graph.nodes.length > BROWSE_LIMITS.nodes || !Array.isArray(graph.edges)
@@ -238,6 +247,31 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       }
     }
     if (chunksById.size !== graph.nodes.length) fail("GRAPH_INVALID", "The browse graph has missing or duplicate detail records.");
+    if (Object.hasOwn(graph, "declarations") && !object(graph.declarations)) {
+      fail("GRAPH_INVALID", "Ontology declarations must be an object.");
+    }
+    const edgesById = new Map(graph.edges.map((edge) => [edge.id, edge]));
+    const relationChunksById = new Map();
+    if (Object.hasOwn(graph, "relationChunks")) {
+      if (!Array.isArray(graph.relationChunks) || graph.relationChunks.length === 0
+        || graph.relationChunks.length > graph.edges.length) {
+        fail("GRAPH_INVALID", "Relation detail chunks are inconsistent with the browse graph.");
+      }
+      for (const chunk of graph.relationChunks) {
+        exactFields(chunk, ["descriptor", "edgeIds"], "Relation detail chunk");
+        descriptor(chunk.descriptor, BROWSE_LIMITS.detailBytes);
+        requireNewPath(chunk.descriptor);
+        if (!Array.isArray(chunk.edgeIds) || chunk.edgeIds.length === 0 || chunk.edgeIds.length > graph.edges.length) {
+          fail("GRAPH_INVALID", "A relation detail chunk must identify its relations.");
+        }
+        for (const id of chunk.edgeIds) {
+          if (!edgesById.has(id) || relationChunksById.has(id)) {
+            fail("GRAPH_INVALID", "Relation details must cover existing relations at most once.");
+          }
+          relationChunksById.set(id, chunk);
+        }
+      }
+    }
     const reviews = {};
     for (const [key, review] of Object.entries(graph.reviews)) {
       if (!REVIEW_KEYS.has(key) || !object(review) || !Number.isSafeInteger(review.count) || review.count < 0) {
@@ -317,13 +351,66 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       });
       return { record: data.records.find((record) => record.id === id), evidence: data.evidence ?? null };
     }
+    async function relationDetail(id, { signal: requestSignal } = {}) {
+      requireOpen(requestSignal);
+      const chunk = relationChunksById.get(id);
+      if (!chunk) fail("RELATION_MISSING", "The requested relation has no detail record in this release.");
+      const data = await cached(chunk.descriptor, BROWSE_LIMITS.detailBytes, requestSignal, (value) => {
+        envelope(value, "onto2d-studio-relation-details", expectedIdentity);
+        if (sharedEvidence && !Object.hasOwn(value, "evidence")) {
+          fail("DETAIL_INVALID", "A relation chunk is missing its declared evidence envelope.");
+        }
+        exactFields(value, ["format", "formatVersion", "identity", "relations", "claims",
+          ...(Object.hasOwn(value, "evidence") ? ["evidence"] : [])], "Relation details");
+        if (!Array.isArray(value.relations) || value.relations.length !== chunk.edgeIds.length || !Array.isArray(value.claims)) {
+          fail("DETAIL_INVALID", "A relation chunk has an unexpected record count.");
+        }
+        if (Object.hasOwn(value, "evidence") && !object(value.evidence)) {
+          fail("DETAIL_INVALID", "A relation chunk has an invalid evidence envelope.");
+        }
+        const claims = new Map();
+        for (const claim of value.claims) {
+          if (!object(claim) || typeof claim.id !== "string" || claims.has(claim.id)) {
+            fail("DETAIL_INVALID", "A relation chunk has an invalid claim.");
+          }
+          claims.set(claim.id, claim);
+        }
+        const observed = new Set();
+        for (const relation of value.relations) {
+          if (!object(relation) || observed.has(relation.id) || relationChunksById.get(relation.id) !== chunk
+            || !matchingRelation(relation, edgesById.get(relation.id))) {
+            fail("DETAIL_INVALID", "A relation record differs from its pinned graph summary or chunk assignment.");
+          }
+          observed.add(relation.id);
+          const claimIds = Array.isArray(relation.claimIds) ? relation.claimIds : [];
+          if (claimIds.some((claimId) => !claims.has(claimId))) {
+            fail("DETAIL_INVALID", "A relation cites a claim that its chunk does not carry.");
+          }
+          if (Object.hasOwn(value, "evidence")) {
+            try { resolveRecordEvidence({ rationale: claimIds.map((claimId) => claims.get(claimId)) }, value.evidence); }
+            catch { fail("DETAIL_INVALID", "A relation chunk has unresolved evidence references."); }
+          }
+        }
+      });
+      const relation = data.relations.find((candidate) => candidate.id === id);
+      const claims = new Map(data.claims.map((claim) => [claim.id, claim]));
+      const rationale = (Array.isArray(relation.claimIds) ? relation.claimIds : []).map((claimId) => claims.get(claimId));
+      return { relation, rationale: resolveRecordEvidence({ rationale }, data.evidence ?? null) };
+    }
     return Object.freeze({
       manifest: freeze({ model: graph.model, rootHash: graph.identity.rootHash, manifestHash: graph.identity.manifestHash }),
       presentation,
       graphInput: freeze({ identity: graph.identity, nodes: graph.nodes, edges: graph.edges }),
       interactionViews: freeze(graph.interactionViews ?? null),
       dictionaries: freeze({ presentation: graph.presentation }),
+      declarations: freeze(graph.declarations ?? null),
       reviews: freeze(reviews),
+      hasRelationDetail(id) {
+        return relationChunksById.has(id);
+      },
+      async inspectRelation(id, options) {
+        return relationDetail(id, options);
+      },
       async inspect(id, options) {
         return (await detail(id, options)).record;
       },

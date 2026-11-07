@@ -147,6 +147,24 @@ test("parallel and self-loop routes remain finite and distinct", () => {
   assert.ok(layout.edges.every((edge) => !edge.path.includes("NaN")));
 });
 
+test("opposite directions between two nodes bend to opposite sides instead of overlapping", () => {
+  const view = createModelView({
+    nodes: [{ id: "a" }, { id: "b" }],
+    edges: [{ id: "a-b", source: "a", target: "b" }, { id: "b-a", source: "b", target: "a" }]
+  });
+  const layout = layoutNeighborhood(view.neighborhood({ focusId: "a", depth: 1 }), { width: 800, height: 480 });
+  const control = (id) => {
+    const match = layout.edges.find((edge) => edge.id === id).path.match(/ Q ([-\d.]+) ([-\d.]+) /);
+    return { x: Number(match[1]), y: Number(match[2]) };
+  };
+  const midline = layout.nodes.find((node) => node.id === "a").y;
+  const forward = control("a-b");
+  const backward = control("b-a");
+  assert.notDeepEqual(forward, backward);
+  assert.ok(Math.sign(forward.y - midline) !== Math.sign(backward.y - midline),
+    "The two directions must leave the shared axis on opposite sides");
+});
+
 test("an edge crossing an intermediate node takes a right-side detour", () => {
   const projection = {
     query: {

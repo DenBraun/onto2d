@@ -732,7 +732,11 @@ export function layoutNeighborhood(projection, options = {}) {
   for (const group of pairGroups.values()) {
     group.sort((left, right) => compareText(left.id, right.id));
     group.forEach((edge, index) => {
-      const offset = (index - (group.length - 1) / 2) * 15;
+      // Offsets are measured against one shared direction of the pair: the
+      // perpendicular of a reversed edge points the other way, so its offset
+      // flips sign and opposite directions bend apart instead of overlapping.
+      const reversed = compareText(edge.source, edge.target) > 0;
+      const offset = (index - (group.length - 1) / 2) * 15 * (reversed ? -1 : 1);
       edges.push({ ...edge, ...edgeRoute(edge, positions, geometry, offset, index) });
     });
   }

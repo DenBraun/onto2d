@@ -1010,7 +1010,8 @@ test("Model Studio binds incremental and full-pack views to exact verified relea
   assert.match(studioApp, /Model verified/);
   assert.match(studioMarkup, /"@onto2d\/kernel\/canonical":"\.\.\/\.\.\/packages\/kernel\/src\/canonical-entry\.js\?v=/);
   assert.match(studioMarkup, /"@onto2d\/view\/lazy":"\.\.\/\.\.\/packages\/view\/src\/lazy\.js\?v=/);
-  assert.match(studioApp, /layoutNeighborhood\(projection/);
+  assert.match(studioApp, /layoutLayeredGraph\(\{/);
+  assert.match(studioApp, /neighbourhoodLayers\(projection/);
   assert.match(studioApp, /wrapGraphNodeLabel/);
   assert.match(studioApp, /svgElement\("rect"/);
   assert.match(studioStyles, /\.graph-node rect/);
@@ -1324,7 +1325,9 @@ test("graph sidebars keep machine fields on bounded single lines", () => {
   assert.match(studioStyles, /\.relation-list\s*\{[^}]*overflow-x:hidden[^}]*overflow-y:auto/s);
   assert.match(studioStyles, /\.relation-item\s*\{[^}]*grid-template-columns:minmax\(0,1fr\)[^}]*overflow:hidden/s);
   assert.match(studioStyles, /\.relation-item code,\.relation-item span\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);
-  assert.match(studioApp, /button\.title = `\$\{node\.id\} \| \$\{node\.name\}`/);
+  // Technical identifiers are not shown; a truncated name stays readable on hover.
+  assert.match(studioApp, /button\.title = node\.name;/);
+  assert.doesNotMatch(studioApp, /\$\{node\.id\} \|/);
   assert.match(bootstrapStyles, /\.trace-item code\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);
   assert.match(read("assets/css/study-historical-load.css"), /\.constraint-copy small\s*\{[^}]*overflow:\s*hidden[^}]*text-overflow:\s*ellipsis[^}]*white-space:\s*nowrap/s);
   assert.match(motifStyles, /\.edge-list code,\.identity code\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);

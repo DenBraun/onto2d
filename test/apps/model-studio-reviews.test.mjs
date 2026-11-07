@@ -30,10 +30,12 @@ function setup(presentation = null) {
   // Initialize the app's actual element registry against its actual markup.
   const initialization = source.slice(source.indexOf("const ids = ["), source.indexOf("\nconst state = {"));
   const app = vm.runInNewContext(`${initialization}\n${[
-    "shortenedHash", "studyDesignLabel", "renderSourceReview", "configureReviewPanels", "renderRationale",
-    "renderInspector", "renderArising", "renderInspectedRecord", "activateModelPack"
+    "studyDesignLabel", "renderSourceReview", "configureReviewPanels", "renderRationale",
+    "renderInspector", "renderArising", "renderInspectedRecord", "activateModelPack",
+    "humanize", "isArising", "nodeSummary", "buildGraphIndex", "configureOntology", "applyRequestedFocus"
   ].map(declaration).join("\n")}\nfunction render() { renderInspector(); }\n({configureReviewPanels, renderRationale, activateModelPack, elements});`, {
-    state, URL, citationLinks, resolveClaimCitations, createElement: element,
+    state, URL, citationLinks, resolveClaimCitations, createElement: element, CAUSE_ROLES: ["arising", "maintenance", "modulation"],
+    renderHeader() {}, renderActions() {}, renderFacts() {}, renderGuide() {}, renderReleaseFacts() {},
     recordEvidenceContext, resolveRecordEvidence, CATALOG_PAGE_SIZE: 60,
     pendingInspection: null, inspectionSequence: 0, eventsBound: true,
     document: { body: { dataset: {} }, getElementById: (id) => markup.get(id), createTextNode: (textContent) => ({ textContent }) },
@@ -208,8 +210,8 @@ test("the inspector retains distinct organismal and reused cellular preparations
   const before = structuredClone({ record, dictionaries });
   renderRationale({ ...record, rationale: resolveRecordEvidence(record, recordEvidenceContext([record], dictionaries)) });
   const rendered = lines(elements["selected-rationale"]);
-  for (const text of ["Study context: organism-preparation · One specified organism",
-    "Study context: cellular-preparation · Isolated cells", "Preparation: Matched intervention and control",
+  for (const text of ["Study context: One specified organism",
+    "Study context: Isolated cells", "Preparation: Matched intervention and control",
     "Preparation: Separate cell preparation", "Reviewed: selected-primary-results. Results; Figure 2",
     "Reviewed: selected-primary-results. Figure 1", "Study limit: No organismal transfer.",
     "Source review: selected-primary-results. Supplement and raw data unread."]) assert.ok(rendered.includes(text), text);
