@@ -24,12 +24,13 @@ function deferred() {
 
 const flush = () => new Promise((resolve) => setImmediate(resolve));
 
-function startup() {
+function startup({ unknownModel = false } = {}) {
   const registry = deferred();
   const initialModel = deferred();
   const listeners = new Map();
   const activations = [];
   const failures = [];
+  const notes = [];
   const fetchSignals = [];
   const current = { modelId: "fixture", version: "current" };
   const older = { modelId: "fixture", version: "older" };
@@ -46,6 +47,8 @@ function startup() {
     populateRegistrySelector() {},
     requestedRegistryEntry: (entries, parameters, fallback) => entries.find((entry) => entry.version === parameters.get("version")) ?? fallback,
     modelSelectionKey: (entry) => `${entry.modelId}@${entry.version}`,
+    namesUnknownModel: () => unknownModel,
+    noteUnknownModel: () => notes.push(activations.at(-1)),
     resolveModelPackRegistry: (_registry, _url, entry) => ({ ...entry, registryTrust: "hash-pinned" }),
     loadBrowseModel: (resolution, options) => {
       fetchSignals.push(options.signal);
@@ -72,7 +75,7 @@ function startup() {
     ${declaration("start")}
     ({start});`, context);
   const snapshot = { registry: { entries: [current, older] }, registryUrl: "https://example.test/registry.json", registryTrust: "hash-pinned" };
-  return { app, registry, snapshot, initialModel, listeners, activations, failures, fetchSignals, location };
+  return { app, registry, snapshot, initialModel, listeners, activations, failures, notes, fetchSignals, location };
 }
 
 test("a hash change while the initial graph is loading supersedes that load", async () => {
@@ -108,6 +111,38 @@ test("a hash change before the registry arrives is read by initial selection", a
   await started;
   assert.deepEqual(setup.activations, ["older"]);
   assert.deepEqual(setup.failures, []);
+});
+
+test("a first visit to a link naming a model not published here gets its note, over the view it opened", async () => {
+  const setup = startup({ unknownModel: true });
+  const started = setup.app.start();
+  setup.registry.resolve(setup.snapshot);
+  await flush();
+  assert.deepEqual(setup.notes, [], "Not before the view is there");
+  setup.initialModel.resolve({ manifest: { model: { id: "fixture", version: "current" } }, dictionaries: {}, presentation: {}, close() {} });
+  await started;
+  assert.deepEqual(setup.notes, ["current"]);
+  const plain = startup();
+  const opened = plain.app.start();
+  plain.registry.resolve(plain.snapshot);
+  await flush();
+  plain.initialModel.resolve({ manifest: { model: { id: "fixture", version: "current" } }, dictionaries: {}, presentation: {}, close() {} });
+  await opened;
+  assert.deepEqual(plain.notes, [], "A link to a model that is here has nothing to say");
+});
+
+test("a first load that a newer address replaced says nothing about the link it came from", async () => {
+  const setup = startup({ unknownModel: true });
+  const started = setup.app.start();
+  setup.registry.resolve(setup.snapshot);
+  await flush();
+  setup.location.hash = "#model=fixture&version=older";
+  setup.listeners.get("hashchange")();
+  await flush();
+  setup.notes.length = 0;
+  setup.initialModel.resolve({ manifest: { model: { id: "fixture", version: "current" } }, dictionaries: {}, presentation: {}, close() {} });
+  await started;
+  assert.deepEqual(setup.notes, []);
 });
 
 function element() {

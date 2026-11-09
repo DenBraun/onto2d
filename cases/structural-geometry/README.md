@@ -58,7 +58,7 @@ authored in this milestone, not independent reviewer approval.
 ## Full Causal Emergence snapshot
 
 [source-lock.json](causal-emergence/source-lock.json) pins model ID, version,
-semantic root and manifest of the canonical 2026.11.05.0 release. The release
+semantic root and manifest of the canonical 2026.11.08.0 release. The release
 has two layers, and each layer has its own census with exact source record traces:
 
 - **Arising layer.** The [projection](causal-emergence/projection.json) includes

@@ -72,7 +72,7 @@ the root `onto2d` package is private and has not been published to npm.
 
 ### Read a canonical construction rule and its premises
 
-`Onto2D.create()` loads the current Causal Emergence graph (`2026.11.05.0`).
+`Onto2D.create()` loads the current Causal Emergence graph (`2026.11.08.0`).
 The graph is being reconstructed; its scope and evidence are documented in the
 [source documentation](references/canonical/README.md).
 

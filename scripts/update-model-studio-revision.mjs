@@ -9,6 +9,7 @@ const REPOSITORY_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)
 const INDEX_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "index.html");
 const APP_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "model-studio.js");
 const BROWSE_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "browse-data.js");
+const GRAPH_PATHS_PATH = path.join(REPOSITORY_ROOT, "apps", "model-studio", "graph-paths.js");
 const revision = process.argv[2];
 
 if (!revision || process.argv.length !== 3) {
@@ -16,16 +17,18 @@ if (!revision || process.argv.length !== 3) {
   process.exitCode = 1;
 } else {
   try {
-    const [indexSource, appSource, browseSource] = await Promise.all([
+    const [indexSource, appSource, browseSource, graphPathsSource] = await Promise.all([
       readFile(INDEX_PATH, "utf8"),
       readFile(APP_PATH, "utf8"),
-      readFile(BROWSE_PATH, "utf8")
+      readFile(BROWSE_PATH, "utf8"),
+      readFile(GRAPH_PATHS_PATH, "utf8")
     ]);
-    const updated = synchronizeModelStudioRevision(indexSource, appSource, revision, { "browse-data.js": browseSource });
+    const updated = synchronizeModelStudioRevision(indexSource, appSource, revision, { "browse-data.js": browseSource, "graph-paths.js": graphPathsSource });
     const writes = [];
     if (updated.indexSource !== indexSource) writes.push(writeFile(INDEX_PATH, updated.indexSource));
     if (updated.appSource !== appSource) writes.push(writeFile(APP_PATH, updated.appSource));
     if (updated.moduleSources["browse-data.js"] !== browseSource) writes.push(writeFile(BROWSE_PATH, updated.moduleSources["browse-data.js"]));
+    if (updated.moduleSources["graph-paths.js"] !== graphPathsSource) writes.push(writeFile(GRAPH_PATHS_PATH, updated.moduleSources["graph-paths.js"]));
     await Promise.all(writes);
     console.log(
       writes.length === 0

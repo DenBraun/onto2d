@@ -3,12 +3,12 @@
     "id": "structural-ollivier",
     "version": "1"
   },
-  "artifactHash": "sha256:0bb528cebce25ef3e0d90c86376086bd37f8c7649a7f75aaaa7c4e4faf46b0e0",
+  "artifactHash": "sha256:c17e6d291f7eb631a7836244a2630f9b457bb8dcc23a4f41e23c2647ab22a226",
   "model": {
-    "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+    "manifestHash": "sha256:9d01d6a40bf2f5df7f3d149d1fbd530cdc2a0381e50dc6ee026958bdc9c7fd01",
     "modelId": "causal-emergence",
-    "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
-    "modelVersion": "2026.11.05.0"
+    "modelRootHash": "sha256:8fdd0d18ffaf176dd9f548653181cfa3b6ad5bd5be6a9d8a79e9834c6d32cf5d",
+    "modelVersion": "2026.11.08.0"
   },
   "request": {
     "analysis": {
@@ -266,10 +266,10 @@
       ]
     },
     "model": {
-      "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+      "manifestHash": "sha256:9d01d6a40bf2f5df7f3d149d1fbd530cdc2a0381e50dc6ee026958bdc9c7fd01",
       "modelId": "causal-emergence",
-      "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
-      "modelVersion": "2026.11.05.0"
+      "modelRootHash": "sha256:8fdd0d18ffaf176dd9f548653181cfa3b6ad5bd5be6a9d8a79e9834c6d32cf5d",
+      "modelVersion": "2026.11.08.0"
     },
     "parameters": {
       "edgeIds": [
@@ -977,8 +977,8 @@
         ]
       }
     ],
-    "projectionHash": "sha256:9f3abb8eca7755dc42acc1330a6949731a9386d90a45506311ded6a2b8850e28",
-    "requestHash": "sha256:2013616ebb132e197f3c8a78d74a8b761f47ca5580e8432af7f54d71109d152c",
+    "projectionHash": "sha256:c7e3b1d55673bf4685608a8a43ed09594119aa1ee51cae327db109591b58acc8",
+    "requestHash": "sha256:ffc194b8cea1b8b1146acf590197c8f1a17eecdece4182338cb5e49c9dfef96c",
     "schemaVersion": "1",
     "scope": {
       "boundaryEdgeCount": 40,
@@ -1021,10 +1021,10 @@
       "method": "integer-successive-shortest-path-primal-dual-v1",
       "version": "1"
     },
-    "sourceProjectionHash": "sha256:0738d2517c4dcac5679cd5e1778d282c3a354867bbb483bc6471ac71652ba65f"
+    "sourceProjectionHash": "sha256:df2020da6644baaafebae5da13c4f0d77d49a4bacab40c38446305c8960ccca3"
   },
   "response": {
-    "requestHash": "sha256:2013616ebb132e197f3c8a78d74a8b761f47ca5580e8432af7f54d71109d152c",
+    "requestHash": "sha256:ffc194b8cea1b8b1146acf590197c8f1a17eecdece4182338cb5e49c9dfef96c",
     "schemaVersion": "1",
     "solutions": [
       {

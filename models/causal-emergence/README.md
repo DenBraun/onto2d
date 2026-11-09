@@ -1,7 +1,8 @@
 # Causal Emergence
 
-The current canonical graph is `2026.11.05.0`: 2537 records, 3489 connections,
-2720 claims and 628 sources.
+The current canonical graph is `2026.11.08.0`: 259 arisings and 1085 causes in
+the outer layer, 2537 technical records and 3683 connections, 3355 claims and
+865 sources.
 It is a partial research reconstruction with explicit evidence limits, not a
 validated universal emergence hierarchy.
 
@@ -204,8 +205,8 @@ the current release within the existing transport limits.
 The current release loads through `loadModelPackDirectory` with default limits.
 Lossless JSON value tables encode complete nodes and the optional bundle;
 decoding restores the ordinary semantic records before hash verification.
-Physical files stay below 16 MiB, and expanded files including the repeated
-bundle stay below the 64 MiB aggregate limit. Editable canonical inputs remain
+Physical files stay below the 64 MiB per-file limit, and the whole release stays
+below the 256 MiB aggregate limit. Editable canonical inputs remain
 indented; Model Studio initially requests only its graph projection and loads
 complete record details and evidence reviews on demand.
 

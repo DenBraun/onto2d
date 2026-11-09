@@ -13,9 +13,9 @@ import {
 test("the root facade loads the exact bundled Causal Emergence Model Pack", async () => {
   const onto = await Onto2D.create();
   assert.equal(onto.model.name, "Causal Emergence — Canonical Reconstruction");
-  assert.equal(onto.model.version, "2026.11.05.0");
+  assert.equal(onto.model.version, "2026.11.08.0");
   assert.equal(onto.modelResolution.requested, "causal-emergence@stable");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.05.0");
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.08.0");
   assert.equal(onto.model.nodes().length, 2796);
   assert.equal(onto.model.edges().length, 4768);
   assert.equal(onto.model.get("l0:crt-node").name, "CRT carrier class — no admitted instance");
@@ -26,10 +26,10 @@ test("the root facade loads the exact bundled Causal Emergence Model Pack", asyn
 });
 
 test("an exact version request selects the bundled release without the stable alias", async () => {
-  const onto = await Onto2D.create({ model: "causal-emergence@2026.11.05.0" });
-  assert.equal(onto.modelResolution.requested, "causal-emergence@2026.11.05.0");
-  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.05.0");
-  assert.equal(onto.modelResolution.modelVersion, "2026.11.05.0");
+  const onto = await Onto2D.create({ model: "causal-emergence@2026.11.08.0" });
+  assert.equal(onto.modelResolution.requested, "causal-emergence@2026.11.08.0");
+  assert.equal(onto.modelResolution.exact, "causal-emergence@2026.11.08.0");
+  assert.equal(onto.modelResolution.modelVersion, "2026.11.08.0");
   assert.equal(onto.modelResolution.modelRootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
   assert.equal(onto.model.version, bundledCausalEmergenceModelPack.manifest.model.version);
   assert.equal(onto.model.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
@@ -43,7 +43,7 @@ test("an exact version request selects the bundled release without the stable al
 test("the Node loader accepts the current release within default transport budgets", async () => {
   const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
   const loaded = await loadModelPackDirectory(
-    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.11.05.0")
+    path.join(repositoryRoot, "models", "causal-emergence", "releases", "2026.11.08.0")
   );
   assert.equal(loaded.manifest.rootHash, bundledCausalEmergenceModelPack.manifest.rootHash);
   assert.equal(loaded.manifest.manifestHash, bundledCausalEmergenceModelPack.manifest.manifestHash);

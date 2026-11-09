@@ -5,6 +5,7 @@ import vm from "node:vm";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
 import { layoutNeighborhood } from "@onto2d/view";
 import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
+import { plainLocator, plainSlug, readingExtent, slugWords } from "../../apps/model-studio/plain-text.js";
 import {
   interactionViewCatalog,
   selectInteractionGraph,
@@ -60,7 +61,7 @@ test("case overview keeps isolated system records visible and creates no relatio
   assert.equal(ordinary.nodes.length, 1, "A neighborhood alone would hide the second case record");
   const overview = interactionCaseOverview(presentation, selection, "response");
   assert.deepEqual(overview.nodes.map((node) => node.id), ["response", "isolated"]);
-  assert.ok(overview.nodes.every((node) => node.caseContext && node.caseIsolate));
+  assert.ok(overview.nodes.every((node) => node.caseContext));
   assert.deepEqual(overview.edges, []);
   assert.deepEqual(overview.adjacent, { parents: [], children: [] });
   assert.equal(overview.counts.discoveredNodeCount, 2);
@@ -103,6 +104,16 @@ test("six disconnected case cards preserve their size in desktop, mobile and sho
   }
 });
 
+test("disconnected case cards share the height their longest card needs", () => {
+  const projection = { nodes: Array.from({ length: 6 }, (_, index) => ({ id: String(index), caseContext: true })), edges: [] };
+  const layout = layoutIsolatedCaseCards(projection, { width: 480, height: 300, nodeHeight: 110 });
+  assert.equal(layout.nodeHeight, 110);
+  const rows = [...new Set(layout.nodes.map((node) => node.y))];
+  assert.ok(rows.length > 1);
+  assert.equal(rows[1] - rows[0], 110 + 16, "Rows keep their gap at the taller size");
+  assert.ok(layout.nodes.every((node) => node.y + layout.nodeHeight / 2 <= layout.height), "The canvas grows for the taller rows");
+});
+
 test("invalid perspective memberships fail instead of inventing or repairing edges", () => {
   const escaped = structuredClone(memberships);
   escaped.perspectives[0].edgeIds = ["measurement"];
@@ -117,7 +128,7 @@ test("invalid perspective memberships fail instead of inventing or repairing edg
   assert.throws(() => selectInteractionGraph(input, views, { perspectiveId: "causal" }), /unknown perspective/);
 });
 
-test("interaction view URLs remain bound to an exact release and compatible case focus", async () => {
+test("interaction view URLs remain bound to their model and a compatible case focus", async () => {
   const app = await readFile(new URL("../../apps/model-studio/model-studio.js", import.meta.url), "utf8");
   const start = app.indexOf("function restoreInteractionLocationState(focusId) {");
   const end = app.indexOf("\nasync function restoreLocationState()", start);
@@ -132,7 +143,8 @@ test("interaction view URLs remain bound to an exact release and compatible case
   }
   const requested = { model: "fixture", version: "1", view: "system", case: "case:one" };
   assert.deepEqual(restore(requested), { perspective: "system", case: "case:one" });
-  assert.deepEqual(restore({ ...requested, version: "other" }), { perspective: "", case: "" });
+  assert.deepEqual(restore({ ...requested, version: "earlier" }), { perspective: "system", case: "case:one" });
+  assert.deepEqual(restore({ model: "fixture", view: "system", case: "case:one" }), { perspective: "system", case: "case:one" }, "An address needs no version");
   assert.deepEqual(restore({ ...requested, model: "other" }), { perspective: "", case: "" });
   assert.deepEqual(restore({ ...requested, view: "invented", case: "unknown" }), { perspective: "", case: "" });
   assert.deepEqual(restore({ ...requested, case: "case:no-hypothesis" }), { perspective: "system", case: "" });
@@ -174,7 +186,8 @@ test("the actual interaction inspector resolves case-local evidence and limits w
   const container = element("div");
   const focused = [];
   vm.runInNewContext(`${render}\nrenderInteractionCases(record);`, {
-    record, URL, citationLinks, resolveClaimCitations, createElement: element,
+    record, URL, citationLinks, resolveClaimCitations, createElement: element, plainLocator, plainSlug, readingExtent, slugWords,
+    humanize: (value) => value.charAt(0).toUpperCase() + value.slice(1), prose: (text) => text, proseLine: (text) => element("p", "", text),
     focusNode: (id) => focused.push(id), elements: { "interaction-cases-panel": panel, "interaction-cases-records": container },
     document: { createTextNode: (textContent) => ({ textContent }) }
   });
@@ -183,7 +196,7 @@ test("the actual interaction inspector resolves case-local evidence and limits w
   visit(container);
   assert.equal(panel.hidden, false);
   const text = all.map((node) => node.textContent).join("\n");
-  for (const expected of ["The combined network stalled.", "Separate steps do not assure a complete turn.", "composition: reported-failure · reported", "not-reported", "Measured supplied network", "Figure 1",
+  for (const expected of ["The combined network stalled.", "Separate steps do not assure a complete turn.", "Composition: reported failure · reported", "No value is asserted (not reported).", "Measured supplied network", "Figure 1",
     "Supplementary controls were not read.", "One shared acquisition.", "No isolated causal explanation.",
     "No autonomous reproduction.", "Different readouts cannot be equated."]) assert.ok(text.includes(expected), expected);
   assert.equal(all.filter((node) => node.textContent?.startsWith("Comparison boundary:")).length, 1);

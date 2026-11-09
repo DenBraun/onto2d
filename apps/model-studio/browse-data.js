@@ -1,9 +1,9 @@
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { createLazyModelPresentation } from "@onto2d/view/lazy";
-import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261107.2";
+import { resolveRecordEvidence, usesDictionaryEvidence } from "./record-evidence.js?v=20261109.1";
 
 // Updated from the exact generated index by scripts/build-model-studio-data.mjs.
-export const EXPECTED_BROWSE_INDEX_HASH = "sha256:3793c5972c789e74cb1eb1a2223f30fb3688f882c619024562a04ba85a0dc0f0";
+export const EXPECTED_BROWSE_INDEX_HASH = "sha256:1c62082b725d54feb395a56e67e70f2449972d591976574be1ff393ffe992c30";
 
 export const BROWSE_LIMITS = Object.freeze({
   indexBytes: 1024 * 1024,
@@ -23,6 +23,8 @@ const REVIEW_KEYS = new Set(["sourceReadiness", "optics", "visual", "neural", "p
 // The compact graph keeps these fields; the build script projects records with the same lists.
 export const NODE_FIELDS = Object.freeze(["id", "name", "level", "phase", "typeRole", "scientificStatus", "layer", "arisingId", "cluster", "domain", "shortDescription"]);
 export const EDGE_FIELDS = Object.freeze(["id", "source", "target", "relationLayer", "role", "assertion", "dependencyType", "necessity", "weight", "status"]);
+
+const FACT_FIELDS = new Set(["disciplines", "evidenceCoverage", "openSlots", "openObligations"]);
 
 function fail(code, message) {
   const error = new Error(message);
@@ -157,6 +159,53 @@ async function readJson(url, expected, maximum, fetchImplementation, signal, cac
   }
 }
 
+/** The optional facts of arisings: each key is an arising of the graph, and whatever is empty was left out when building. */
+export function requireArisingFacts(facts, nodesById, layer) {
+  if (!object(facts)) fail("GRAPH_INVALID", "Arising facts must be an object.");
+  const list = (value, valid) => Array.isArray(value) && value.length > 0 && value.every(valid);
+  const text = (value) => typeof value === "string" && value.length > 0;
+  for (const [id, fact] of Object.entries(facts)) {
+    if (typeof layer !== "string" || nodesById.get(id)?.layer !== layer) {
+      fail("GRAPH_INVALID", "Arising facts must describe arisings of this graph.");
+    }
+    if (!object(fact) || Object.keys(fact).length === 0 || Object.keys(fact).some((field) => !FACT_FIELDS.has(field))
+      || (Object.hasOwn(fact, "disciplines") && !list(fact.disciplines, Number.isSafeInteger))
+      || (Object.hasOwn(fact, "evidenceCoverage") && !text(fact.evidenceCoverage))
+      || (Object.hasOwn(fact, "openSlots") && !list(fact.openSlots, Number.isSafeInteger))
+      || (Object.hasOwn(fact, "openObligations") && !list(fact.openObligations, text))) {
+      fail("GRAPH_INVALID", "An arising has invalid facts.");
+    }
+  }
+}
+
+const VOCABULARY_TERMS = Object.freeze(["typeRoles", "phases", "dependencyTypes", "causalDirections", "interactionModes"]);
+
+/** The optional names of vocabulary numbers: unique values, named, and types inside declared groups. */
+export function requireVocabulary(vocabulary) {
+  exactFields(vocabulary, ["carrierGroups", "carrierTypes", "disciplines", ...VOCABULARY_TERMS], "Browse vocabulary");
+  const values = (entries, fields, subject) => {
+    if (!Array.isArray(entries)) fail("GRAPH_INVALID", `${subject} entries must be a list.`);
+    const seen = new Set();
+    for (const entry of entries) {
+      exactFields(entry, ["value", "name", "definition", ...fields], subject);
+      if (!Number.isSafeInteger(entry.value) || seen.has(entry.value) || typeof entry.name !== "string" || entry.name.length === 0
+        || (entry.definition !== null && typeof entry.definition !== "string")) {
+        fail("GRAPH_INVALID", `${subject} entries need a unique number and a name.`);
+      }
+      seen.add(entry.value);
+    }
+    return seen;
+  };
+  const groups = values(vocabulary.carrierGroups, [], "Carrier group");
+  values(vocabulary.carrierTypes, ["group"], "Carrier type");
+  if (vocabulary.carrierTypes.some((entry) => !groups.has(entry.group))) {
+    fail("GRAPH_INVALID", "A carrier type belongs to an undeclared group.");
+  }
+  values(vocabulary.disciplines, ["type"], "Discipline");
+  for (const field of VOCABULARY_TERMS) values(vocabulary[field], [], "Vocabulary term");
+  return vocabulary;
+}
+
 function nodeProjection(record) {
   return {
     ...Object.fromEntries(NODE_FIELDS.filter((key) => Object.hasOwn(record, key)).map((key) => [key, record[key]])),
@@ -215,6 +264,8 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       ...(Object.hasOwn(graph, "interactionViews") ? ["interactionViews"] : []),
       ...(Object.hasOwn(graph, "recordEvidence") ? ["recordEvidence"] : []),
       ...(Object.hasOwn(graph, "declarations") ? ["declarations"] : []),
+      ...(Object.hasOwn(graph, "arisingFacts") ? ["arisingFacts"] : []),
+      ...(Object.hasOwn(graph, "vocabulary") ? ["vocabulary"] : []),
       ...(Object.hasOwn(graph, "relationChunks") ? ["relationChunks"] : [])], "Browse graph");
     if (!object(graph.model) || graph.model.id !== expectedIdentity.modelId
       || graph.model.version !== expectedIdentity.modelVersion || !Array.isArray(graph.nodes)
@@ -249,6 +300,13 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
     if (chunksById.size !== graph.nodes.length) fail("GRAPH_INVALID", "The browse graph has missing or duplicate detail records.");
     if (Object.hasOwn(graph, "declarations") && !object(graph.declarations)) {
       fail("GRAPH_INVALID", "Ontology declarations must be an object.");
+    }
+    if (Object.hasOwn(graph, "arisingFacts")) requireArisingFacts(graph.arisingFacts, nodesById, graph.presentation.arisingTable?.layer);
+    if (Object.hasOwn(graph, "vocabulary")) {
+      const named = new Set(requireVocabulary(graph.vocabulary).disciplines.map((entry) => entry.value));
+      if (Object.values(graph.arisingFacts ?? {}).some((fact) => (fact.disciplines ?? []).some((value) => !named.has(value)))) {
+        fail("GRAPH_INVALID", "An arising names a discipline the vocabulary does not.");
+      }
     }
     const edgesById = new Map(graph.edges.map((edge) => [edge.id, edge]));
     const relationChunksById = new Map();
@@ -404,6 +462,8 @@ export function createBrowseModelLoader({ indexUrl, expectedIndexHash, fetch: su
       interactionViews: freeze(graph.interactionViews ?? null),
       dictionaries: freeze({ presentation: graph.presentation }),
       declarations: freeze(graph.declarations ?? null),
+      arisingFacts: freeze(graph.arisingFacts ?? null),
+      vocabulary: freeze(graph.vocabulary ?? null),
       reviews: freeze(reviews),
       hasRelationDetail(id) {
         return relationChunksById.has(id);

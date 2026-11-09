@@ -1018,6 +1018,13 @@ test("Model Studio binds incremental and full-pack views to exact verified relea
   assert.match(studioApp, /addEventListener\("click", \(\) => inspectNode\(node\.id\)\)/);
   assert.match(studioApp, /addEventListener\("dblclick", \(\) => focusNode\(node\.id\)\)/);
   assert.match(studioApp, /graphHighlight\(activeGraphProjection, target\)/);
+  // The graph shows no tooltip of its own or from the browser, and no record shows its cell code.
+  assert.doesNotMatch(studioMarkup.match(/<svg id="neighborhood-graph"[\s\S]*?<\/svg>/)[0], /<title|<desc/);
+  assert.doesNotMatch(studioMarkup, /graph-tooltip/);
+  assert.doesNotMatch(studioApp, /showTooltip|svgElement\("title"/);
+  assert.doesNotMatch(studioMarkup.match(/<div id="stage-legend"[\s\S]*?id="graph-message"/)[0], / title="/, "Controls over the graph carry no tooltip either");
+  assert.match(studioApp, /height: cardHeight\(node, width, /, "A card grows until its whole name shows");
+  assert.equal([...studioApp.matchAll(/arisingCode\(/g)].length, 2, "Cell codes only order records: one definition, one use in codeKey");
   assert.match(studioApp, /policy\.inputs\.dataSourceId/);
   assert.match(studioApp, /policy\.inputs\.shapesSourceId/);
   assert.match(studioApp, /buildRdfMappedModelPack\(data, shapes, report, policy/);
@@ -1324,8 +1331,9 @@ test("graph sidebars keep machine fields on bounded single lines", () => {
   assert.match(studioStyles, /\.catalog-coordinate\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);
   assert.match(studioStyles, /\.relation-list\s*\{[^}]*overflow-x:hidden[^}]*overflow-y:auto/s);
   assert.match(studioStyles, /\.relation-item\s*\{[^}]*grid-template-columns:minmax\(0,1fr\)[^}]*overflow:hidden/s);
-  assert.match(studioStyles, /\.relation-item code,\.relation-item span\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);
-  // Technical identifiers are not shown; a truncated name stays readable on hover.
+  assert.match(studioStyles, /\.relation-item code\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);
+  assert.doesNotMatch(studioStyles.match(/\.relation-item span\s*\{[^}]*\}/)[0], /text-overflow|nowrap/, "Names wrap; only machine fields stay on one line");
+  // Technical identifiers are not shown; a name keeps its native title.
   assert.match(studioApp, /button\.title = node\.name;/);
   assert.doesNotMatch(studioApp, /\$\{node\.id\} \|/);
   assert.match(bootstrapStyles, /\.trace-item code\s*\{[^}]*overflow:hidden[^}]*text-overflow:ellipsis[^}]*white-space:nowrap/s);

@@ -14107,10 +14107,10 @@
     }
   ],
   "model": {
-    "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+    "manifestHash": "sha256:9d01d6a40bf2f5df7f3d149d1fbd530cdc2a0381e50dc6ee026958bdc9c7fd01",
     "modelId": "causal-emergence",
-    "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
-    "modelVersion": "2026.11.05.0"
+    "modelRootHash": "sha256:8fdd0d18ffaf176dd9f548653181cfa3b6ad5bd5be6a9d8a79e9834c6d32cf5d",
+    "modelVersion": "2026.11.08.0"
   },
   "nodes": [
     {
@@ -16739,6 +16739,6 @@
     "version": "1"
   },
   "policyHash": "sha256:c2c8db6c900596588cc39192ca41989a6d429cce623d865b9760061fb624a4d9",
-  "projectionHash": "sha256:4ff778e4be94b58fa65db7ab6b3d31505eb65657efdcce6bf3524d52f59180f9",
+  "projectionHash": "sha256:5c872a01996ce41c6a5e65819faf7b53ebf3d6ff7f802a6d01b19cff172172c5",
   "schemaVersion": "1"
 }

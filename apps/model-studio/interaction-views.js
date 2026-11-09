@@ -77,6 +77,20 @@ export function selectInteractionGraph(input, views, { perspectiveId = "", caseI
   };
 }
 
+/** The cases touching each arising: the arising itself or a record it owns is among the entities of the case. */
+export function casesByArising(views, nodes, arisingIds) {
+  const owner = new Map(nodes.map((node) => [node.id, arisingIds.has(node.id) ? node.id : node.arisingId]));
+  const index = new Map();
+  for (const record of views?.cases ?? []) {
+    for (const id of new Set(record.entityIds.map((entity) => owner.get(entity)))) {
+      if (!arisingIds.has(id)) continue;
+      if (!index.has(id)) index.set(id, []);
+      index.get(id).push(record);
+    }
+  }
+  return index;
+}
+
 /** A case overview includes isolates. Their layout position asserts no relation. */
 export function interactionCaseOverview(presentation, selection, focusId, { maxNodes = 48, maxEdges = 180 } = {}) {
   const local = presentation.neighborhood({ focusId, depth: 1, direction: "both", maxNodes, maxEdges });
@@ -89,16 +103,15 @@ export function interactionCaseOverview(presentation, selection, focusId, { maxN
   const edges = allEdges.slice(0, maxEdges).map((edge) => Object.fromEntries(
     fields.filter((field) => Object.hasOwn(edge, field)).map((field) => [field, edge[field]])
   ));
-  const incident = new Set(edges.flatMap((edge) => [edge.source, edge.target]));
   const nodes = ids.map((id) => {
     const node = localNodes.get(id);
-    if (node) return { ...node, caseContext: true, caseIsolate: !incident.has(id) };
+    if (node) return { ...node, caseContext: true };
     return {
       ...presentation.inspect(id).node,
       // These coordinates place a context card in the existing layout. The
       // renderer labels it as a case record, never as a discovered descendant.
       relation: "child", distance: 1, upstreamDistance: null, downstreamDistance: 1,
-      caseContext: true, caseIsolate: !incident.has(id)
+      caseContext: true
     };
   });
   const hiddenNodeCount = ordered.length - nodes.length;
@@ -113,12 +126,11 @@ export function interactionCaseOverview(presentation, selection, focusId, { maxN
 }
 
 /** Neutral cards retain their size; excess rows extend the scrollable canvas. */
-export function layoutIsolatedCaseCards(projection, { width, height, padding = 24, gap = 16 } = {}) {
+export function layoutIsolatedCaseCards(projection, { width, height, padding = 24, gap = 16, nodeHeight = 72 } = {}) {
   requireValue(projection.edges.length === 0 && projection.nodes.length > 0, "an isolated-card layout requires records without edges");
   requireValue(Number.isFinite(width) && Number.isFinite(height) && width >= 320 && height >= 240,
     "an isolated-card layout requires a usable viewport");
   const nodeWidth = Math.min(208, width - padding * 2);
-  const nodeHeight = 72;
   const columns = Math.min(projection.nodes.length, Math.max(1,
     Math.floor((width - padding * 2 + gap) / (nodeWidth + gap))));
   const rows = Math.ceil(projection.nodes.length / columns);
