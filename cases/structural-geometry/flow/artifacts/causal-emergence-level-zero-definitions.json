@@ -3,7 +3,7 @@
     "id": "structural-flow",
     "version": "1"
   },
-  "artifactHash": "sha256:1a65355e7a6f68fc6648b7085371e763f71d99f6502726df60183be068c7467e",
+  "artifactHash": "sha256:0ed4c04de63116bc974c87ad46f4ec1db80ca9969e5869e1a707f047d7784aa8",
   "cuts": {
     "connectivity": {
       "cyclicNodeCount": 0,
@@ -156,10 +156,10 @@
     ]
   },
   "model": {
-    "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+    "manifestHash": "sha256:9d01d6a40bf2f5df7f3d149d1fbd530cdc2a0381e50dc6ee026958bdc9c7fd01",
     "modelId": "causal-emergence",
-    "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
-    "modelVersion": "2026.11.05.0"
+    "modelRootHash": "sha256:8fdd0d18ffaf176dd9f548653181cfa3b6ad5bd5be6a9d8a79e9834c6d32cf5d",
+    "modelVersion": "2026.11.08.0"
   },
   "request": {
     "analysis": {
@@ -417,10 +417,10 @@
       ]
     },
     "model": {
-      "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
+      "manifestHash": "sha256:9d01d6a40bf2f5df7f3d149d1fbd530cdc2a0381e50dc6ee026958bdc9c7fd01",
       "modelId": "causal-emergence",
-      "modelRootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
-      "modelVersion": "2026.11.05.0"
+      "modelRootHash": "sha256:8fdd0d18ffaf176dd9f548653181cfa3b6ad5bd5be6a9d8a79e9834c6d32cf5d",
+      "modelVersion": "2026.11.08.0"
     },
     "parameters": {
       "cut": {
@@ -671,8 +671,8 @@
       "version": "1"
     },
     "policyHash": "sha256:cb60665be0085bbb9d85a2089c9bd54a7070bb58c409e7f5b2a2761f99defe35",
-    "projectionHash": "sha256:41676a93d8d113b1de4bf44b814db7af2c63d92a67ab8c87669718be995f3a83",
-    "requestHash": "sha256:c92a700cbac36275d1265d076e6c9c1a212e36f3761d77d3b4a474591d672447",
+    "projectionHash": "sha256:42bdc3178fd9d3d7a027f8931bf025518858a3959d6c10d2e57939b9677f86ed",
+    "requestHash": "sha256:2152567b9896f4f85e097a20dd760de49c9b042babaa9653c92b8d65eaaa5bc4",
     "schemaVersion": "1",
     "scope": {
       "boundaryEdgeCount": 40,
@@ -710,7 +710,7 @@
         "l0:trial-field"
       ]
     },
-    "sourceProjectionHash": "sha256:0738d2517c4dcac5679cd5e1778d282c3a354867bbb483bc6471ac71652ba65f"
+    "sourceProjectionHash": "sha256:df2020da6644baaafebae5da13c4f0d77d49a4bacab40c38446305c8960ccca3"
   },
   "schemaVersion": "1",
   "states": [
@@ -1048,7 +1048,7 @@
         }
       ],
       "iteration": 0,
-      "metricHash": "sha256:6e03f591eba66b382fdee08a4ca3df78e90d95bee279bcd1e8849fd1a9d2cea8",
+      "metricHash": "sha256:a93ed1a1708854e1df51228625e7dcc7bbe99aa903ce0fe480c7554e7322d1d1",
       "normalization": {
         "closureSum": {
           "denominator": "1",
@@ -1065,7 +1065,7 @@
         "shortenedEdgeIds": []
       },
       "previousStateHash": null,
-      "stateHash": "sha256:4668123a8b0d61b3c2f0ae634d060910ef4d2300305bf341b56c37252660a547",
+      "stateHash": "sha256:7b984eb00ee4c72c8aa2f5fb000af8055a186dc6cb7a2e8a96dc3938a7ed3edd",
       "summary": {
         "curvatureSum": {
           "denominator": "4",
@@ -1125,7 +1125,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:501fc83645855fc826435f2f9468f76a23c0bd85075737dff2fc4e60783bff96",
+        "requestHash": "sha256:377ab07fcccdcc199f5864a9b90fb8398f0dad31ad052e6222c03f80f15e6fca",
         "schemaVersion": "1",
         "solutions": [
           {
@@ -2280,7 +2280,7 @@
         }
       ],
       "iteration": 1,
-      "metricHash": "sha256:3d144a92f27b752c2227e9127cc0520932e486603ca49622a195326a588e5a9a",
+      "metricHash": "sha256:f0053c86a8b967c8f172f46ae5d163bb82b6c6479aebfca4c87cfabb393ccf84",
       "normalization": {
         "closureSum": {
           "denominator": "8",
@@ -2296,8 +2296,8 @@
         },
         "shortenedEdgeIds": []
       },
-      "previousStateHash": "sha256:4668123a8b0d61b3c2f0ae634d060910ef4d2300305bf341b56c37252660a547",
-      "stateHash": "sha256:97f84f87869f20180cdf00cd1ac529aaa59136e5ae99b2e008177ea9c5fe519e",
+      "previousStateHash": "sha256:7b984eb00ee4c72c8aa2f5fb000af8055a186dc6cb7a2e8a96dc3938a7ed3edd",
+      "stateHash": "sha256:38a82620f0bbcd31dab4d31dca7fb4ac4a0fefc765706e00e7301554ad979a39",
       "summary": {
         "curvatureSum": {
           "denominator": "3960",
@@ -2349,7 +2349,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:d4e70918197104eaf6de5ec98bbe714caa04db3c4eadbbbc295812ff6427ac84",
+        "requestHash": "sha256:f27e06ba08a8a6b7674dd16328450abc2828993503825af5a67247688c37ca18",
         "schemaVersion": "1",
         "solutions": [
           {
@@ -3504,7 +3504,7 @@
         }
       ],
       "iteration": 2,
-      "metricHash": "sha256:ee9d7202c3b91e1957313343535ff989aa7495f2f2e4b3c07d42e5b3c1a915a7",
+      "metricHash": "sha256:7cdc1a5f73316e41172223d20008662ed036c5f2f923eeb9ae6e23f29fd0c0ab",
       "normalization": {
         "closureSum": {
           "denominator": "2796",
@@ -3520,8 +3520,8 @@
         },
         "shortenedEdgeIds": []
       },
-      "previousStateHash": "sha256:97f84f87869f20180cdf00cd1ac529aaa59136e5ae99b2e008177ea9c5fe519e",
-      "stateHash": "sha256:05db3ec6f53c6ef8923044c818e87aad524d33b97db4b98079fcc902dcc3a34d",
+      "previousStateHash": "sha256:38a82620f0bbcd31dab4d31dca7fb4ac4a0fefc765706e00e7301554ad979a39",
+      "stateHash": "sha256:8cee18364b0b1843944776b5dc7afd2aadb5c927a1c3136b44570ce22f158be0",
       "summary": {
         "curvatureSum": {
           "denominator": "414242400",
@@ -3567,7 +3567,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:9406827062421a983c615f8cc124b1c507ec616a47b76559c7e41d799560f494",
+        "requestHash": "sha256:aeb4327820e6f91962c172e584ee96d1923df03801fc263bec7485e6c4286876",
         "schemaVersion": "1",
         "solutions": [
           {
@@ -4722,7 +4722,7 @@
         }
       ],
       "iteration": 3,
-      "metricHash": "sha256:ea814cacc0620ceff144502b044b744d350bf58d3bcf5db1c553144d993b7e2c",
+      "metricHash": "sha256:c9c9da7d04c2297b07d030824cc79179851e1b6c1e814f5759d7c68781f95b58",
       "normalization": {
         "closureSum": {
           "denominator": "29908",
@@ -4738,8 +4738,8 @@
         },
         "shortenedEdgeIds": []
       },
-      "previousStateHash": "sha256:05db3ec6f53c6ef8923044c818e87aad524d33b97db4b98079fcc902dcc3a34d",
-      "stateHash": "sha256:7e923e9b8ae827c56f51dd8d0896868b2a530170d6b7dd91b7d92dabfcc266b1",
+      "previousStateHash": "sha256:8cee18364b0b1843944776b5dc7afd2aadb5c927a1c3136b44570ce22f158be0",
+      "stateHash": "sha256:389989f5ac75045ad8402984b6c7084b62026c18e5302ca92b2f802e686d9606",
       "summary": {
         "curvatureSum": {
           "denominator": "8409096927190142191152144000",
@@ -4785,7 +4785,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:5c8c2cf02ead31f1ef546d4e968dbd3813d4cddf89cdbf129a04ac63d69c01b1",
+        "requestHash": "sha256:63589ab2bfdf53b6be27bea099c65ae9b140701c20cb2cfd4dad7ec553dd5300",
         "schemaVersion": "1",
         "solutions": [
           {
@@ -5940,7 +5940,7 @@
         }
       ],
       "iteration": 4,
-      "metricHash": "sha256:d8eb05e18dd149c890e40ad677ec2eb214214421277a62fe4bf5165172508a66",
+      "metricHash": "sha256:b2cb938fd77fe30c9784f20ab33af8be2ca6b17c225814fe070dcb59a752248c",
       "normalization": {
         "closureSum": {
           "denominator": "107444",
@@ -5956,8 +5956,8 @@
         },
         "shortenedEdgeIds": []
       },
-      "previousStateHash": "sha256:7e923e9b8ae827c56f51dd8d0896868b2a530170d6b7dd91b7d92dabfcc266b1",
-      "stateHash": "sha256:6dbf9c274320665c34c0d2097a7cd81aa0b3befa046c4d90f52ccdfc099228ac",
+      "previousStateHash": "sha256:389989f5ac75045ad8402984b6c7084b62026c18e5302ca92b2f802e686d9606",
+      "stateHash": "sha256:a5e7063ac54d2c71630265dbea81bc610d3b6529bf70133b7cdef1935a94902f",
       "summary": {
         "curvatureSum": {
           "denominator": "433092451726886234208063863887156995",
@@ -6003,7 +6003,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:8c391e20c954f07aa0b53dd1577ed143d0bb181ed03c2283519ca9fc8bab48e5",
+        "requestHash": "sha256:7fa38cd711f5b7f38f7fb92989091c751f1e2d3a8691ffcb051d94bdd37fad0f",
         "schemaVersion": "1",
         "solutions": [
           {
@@ -7158,7 +7158,7 @@
         }
       ],
       "iteration": 5,
-      "metricHash": "sha256:83e2ab637091b46a5470ffbc25f0c76ba2c5d00601a5e1b9146cf54cdfbc9074",
+      "metricHash": "sha256:f6bc3072831b6878d8579fe115d41731e9b3fadbf444340e92644c00508c0527",
       "normalization": {
         "closureSum": {
           "denominator": "1164676",
@@ -7174,8 +7174,8 @@
         },
         "shortenedEdgeIds": []
       },
-      "previousStateHash": "sha256:6dbf9c274320665c34c0d2097a7cd81aa0b3befa046c4d90f52ccdfc099228ac",
-      "stateHash": "sha256:b064c357b8817e884bc4cd01cf6b725fdb87de0443346d3901aa719721366717",
+      "previousStateHash": "sha256:a5e7063ac54d2c71630265dbea81bc610d3b6529bf70133b7cdef1935a94902f",
+      "stateHash": "sha256:75b93a02e501fae2e531424b38adc1cd2532997419fbaa484b3ebb498a35d835",
       "summary": {
         "curvatureSum": {
           "denominator": "435081376512994294685023824539123107580758135086863937673743253860",
@@ -7221,7 +7221,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:9352071b3af6eba155e1c2e1f95d3b5dd4852b1bce6d25b8976d886020b8627e",
+        "requestHash": "sha256:0e3651f0e7978c9427b33239251fd70a2e3a18b5fe100ff38d3694f141c4591b",
         "schemaVersion": "1",
         "solutions": [
           {
@@ -8376,7 +8376,7 @@
         }
       ],
       "iteration": 6,
-      "metricHash": "sha256:2557a0c8aedb45f6fc847ad5520005b304d3a60ea2c43c037a1493a69af5cebe",
+      "metricHash": "sha256:4d20b1a90f7525a99916a562687fd1c9ae6a0a56f3513941e536da5ca214086f",
       "normalization": {
         "closureSum": {
           "denominator": "114138468",
@@ -8392,8 +8392,8 @@
         },
         "shortenedEdgeIds": []
       },
-      "previousStateHash": "sha256:b064c357b8817e884bc4cd01cf6b725fdb87de0443346d3901aa719721366717",
-      "stateHash": "sha256:da5d5ea2e2ed091f1cf601adb829177835d6b8ed72af2667e28dfb24a0669ef3",
+      "previousStateHash": "sha256:75b93a02e501fae2e531424b38adc1cd2532997419fbaa484b3ebb498a35d835",
+      "stateHash": "sha256:a8607913fa3c5f3d2ce93cb1ac0fcfb9864dc31a27d7171adfaff93e11dc2428",
       "summary": {
         "curvatureSum": {
           "denominator": "101430463268299725086178057480613575101807522705585119871092409363418860160",
@@ -8439,7 +8439,7 @@
         "stableStepCount": 0
       },
       "transportResponse": {
-        "requestHash": "sha256:4916289f8104bf6a1acf75551c7e00d492ab76836fffbdaa42b6b0a7eed1ca07",
+        "requestHash": "sha256:0da0e50d1b0079ac57e1897cce468e7c16efbd143fb998527b4488e9422ab5f4",
         "schemaVersion": "1",
         "solutions": [
           {

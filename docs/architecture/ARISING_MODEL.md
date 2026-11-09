@@ -2,7 +2,7 @@
 
 Status:
 
-- **Structure: implemented.** The canonical release `2026.11.05.0` carries the
+- **Structure: implemented.** The canonical release `2026.11.08.0` carries the
   arising layer, its organization into clusters and domains, and the technical
   subgraphs.
 - **Evidence review of the causes: in progress.** 441 of 1085 causes are
@@ -126,7 +126,7 @@ joins the one that holds most of its arising causes.
 | Domain | Levels | Clusters | Arisings |
 |---|---|---:|---:|
 | Admissibility lineage | 0-1 | 5 | 28 |
-| Fields, particles and physical matter | 1-3 | 7 | 44 |
+| Fields, particles and physical matter | 1-2 | 7 | 44 |
 | Molecular organization and cell machinery | 2-4 | 14 | 75 |
 | Signalling, development and organismal coordination | 4-5 | 5 | 27 |
 | Homeostasis, defence and repair | 4-6 | 7 | 34 |
@@ -134,10 +134,10 @@ joins the one that holds most of its arising causes.
 
 The organization follows the causes:
 
-- **Clusters.** They keep 253 of the 455 same-level arising causes together.
-  Clusters of the same sizes drawn at random keep about 75.
-- **Domains.** They keep 606 of the 681 arising causes inside one lineage,
-  whereas levels alone keep 455.
+- **Clusters.** They keep 247 of the 449 same-level arising causes together.
+  Clusters of the same sizes drawn at random keep about 74.
+- **Domains.** They keep 592 of the 666 arising causes inside one lineage,
+  whereas levels alone keep 449.
 
 ## Arising record
 
@@ -186,6 +186,11 @@ carries its own obligation:
 | Arising | does not first form without the parent |
 | Maintenance | once formed, does not persist without the parent |
 | Modulation | has its operating regime changed by the parent, which is required for neither its formation nor its persistence |
+
+Role and necessity are independent, as the theory states (Section 7.4): the
+role says which part of the child's life the cause concerns, and necessity how
+essential the cause is in the description. A modulation cause can therefore be
+necessary, and an arising cause merely enabling.
 
 Each status requires its own evidence:
 
@@ -319,7 +324,7 @@ The 18 arisings are:
   - The arising table shows levels by phases.
   - Each arising carries its domain colour and is ordered by cluster.
   - The domain legend dims the other domains.
-  - The layer filter defaults to arisings.
+  - The navigator lists arisings; a search also finds technical records.
   - Selecting an arising shows its cell, status, domain and cluster, evidence
     coverage, open cause slots, causes and dependents, technical subgraph and
     obligations.

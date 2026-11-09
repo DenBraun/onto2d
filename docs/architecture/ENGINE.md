@@ -76,7 +76,7 @@ child traversal, ancestors, descendants, bounded neighborhoods, and bounded
 all-shortest directed paths. It does not assign new scientific meaning to
 source relations.
 
-The current default is `causal-emergence@2026.11.05.0`, a partial research
+The current default is `causal-emergence@2026.11.08.0`, a partial research
 reconstruction. `stable` identifies the bundled software artifact, not
 scientific confirmation.
 
@@ -222,9 +222,9 @@ resolved model ID, version, root hash, and manifest hash.
 Model Studio pins the committed registry hash, resolves its explicit release,
 then selects its verified browsing projection when one is available. A
 separately pinned browser index binds the projection's graph, record chunks
-and review files to all four registry identity coordinates. Build validation
-regenerates those files from the fully verified release and checks their exact
-bytes and inventory. Runtime checks each fetched file's digest, decoded byte
+and review files to all four registry identity coordinates.
+`npm run model-studio:data:verify` regenerates those files from the fully
+verified release and checks their exact bytes and inventory. Runtime checks each fetched file's digest, decoded byte
 length and release identity. It loads the searchable topology first, selected
 records on demand and review panels when opened; it does not present this as
 full Model Pack verification. Other releases use the worker/cache composition,

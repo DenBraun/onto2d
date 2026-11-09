@@ -27,3 +27,6 @@ cases/structural-geometry/robustness/metric/cache/
 
 # Local scope coverage replay details
 cases/structural-geometry/robustness/scope/cache/
+
+# Articles about Onto2D are drafted locally and published elsewhere.
+/articles/

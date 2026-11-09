@@ -4,7 +4,7 @@ import test from "node:test";
 import { createModelView, layoutNeighborhood } from "@onto2d/view";
 import { decodeJsonValueTable, isJsonValueTable } from "../../packages/model-pack/src/json-value-table.js";
 
-const releaseRoot = new URL("../../models/causal-emergence/releases/2026.11.05.0/", import.meta.url);
+const releaseRoot = new URL("../../models/causal-emergence/releases/2026.11.08.0/", import.meta.url);
 const loaded = new Map();
 
 function json(path) {

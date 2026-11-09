@@ -98,4 +98,4 @@ agreement and the published recurrence before replacing its expected file.
 Then run the check and review the diff. Neither command rewrites source locks.
 
 Suite hash:
-`sha256:ce06d81b482196ba3bd542037ef7370b53912c3211564414c4c15f448ec32aa5`.
+`sha256:90b7488424df6d0ee08001b4381cc145db217e2bb9c8403d5a33e4df8eae2782`.

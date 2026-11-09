@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import vm from "node:vm";
 import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
+import { plainLocator, plainSlug, readingExtent, slugWords } from "../../apps/model-studio/plain-text.js";
 import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 
 const base = "https://example.org/Onto2D/";
@@ -84,7 +85,8 @@ test("the actual inspector renders every compact citation with the same title, y
       replaceChildren(...children) { this.children = children; } });
     const container = element("div");
     vm.runInNewContext(`${render}\nrenderRationale(record);`, {
-      record, URL, citationLinks, resolveClaimCitations,
+      record, URL, citationLinks, resolveClaimCitations, plainLocator, plainSlug, readingExtent, slugWords,
+      humanize: (value) => value, prose: (text) => text, proseLine: (text) => element("p", "", text),
       createElement: element, elements: { "selected-rationale": container },
       document: { createTextNode: (textContent) => ({ textContent }) }
     });
@@ -108,7 +110,7 @@ test("the actual inspector renders every compact citation with the same title, y
     for (const child of element.children ?? []) collect(child);
   };
   collect(compactView);
-  assert.deepEqual(reviewLines, ["Source review: full-article. Shared calibration."],
+  assert.deepEqual(reviewLines, ["Source review: Full article. Shared calibration."],
     "Reading extent and its limit remain visible once per source without repeating them for each passage");
   assert.equal(anchors.length, citations.length * 3, "Every passage retains DOI, reviewed source and repository links");
   for (let index = 0; index < citations.length; index += 1) {

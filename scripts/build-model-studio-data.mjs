@@ -4,12 +4,14 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { hashArtifactBytes } from "@onto2d/kernel/canonical";
 import { verifyModelPack } from "@onto2d/model-pack";
-import { BROWSE_LIMITS, EDGE_FIELDS, NODE_FIELDS } from "../apps/model-studio/browse-data.js";
+import { arisingFactsFromNodes, factDisciplineIds, vocabularyProjection } from "../apps/model-studio/arising-facts.js";
+import { BROWSE_LIMITS, EDGE_FIELDS, NODE_FIELDS, requireArisingFacts, requireVocabulary } from "../apps/model-studio/browse-data.js";
 import { recordEvidenceContext, usesDictionaryEvidence } from "../apps/model-studio/record-evidence.js";
 
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const DATA = path.join(ROOT, "apps/model-studio/data");
 const LOADER = path.join(ROOT, "apps/model-studio/browse-data.js");
+const VOCABULARY_SOURCE = Object.freeze({ id: "arising-vocabulary", path: "references/canonical/arising-vocabulary.json" });
 const REVIEW_KEYS = ["sourceReadiness", "optics", "visual", "neural", "physics", "biochemistry", "cellular", "organismal", "neuralSystems", "socialSystems"];
 const CHUNK_TARGET = 192 * 1024;
 const serialize = (value) => new TextEncoder().encode(`${JSON.stringify(value)}\n`);
@@ -33,8 +35,18 @@ function referencedSources(value, result = new Set()) {
   return result;
 }
 
+/** The arising vocabulary a release pins by hash; undefined when the release lists none. The bytes on disk must be the pinned ones. */
+export async function pinnedVocabulary(dictionaries, root = ROOT) {
+  const source = (Array.isArray(dictionaries?.sources) ? dictionaries.sources : []).find((candidate) => candidate.id === VOCABULARY_SOURCE.id);
+  if (!source) return undefined;
+  assert.equal(source.path, VOCABULARY_SOURCE.path, "The release pins the arising vocabulary at an unexpected path");
+  const bytes = await readFile(path.join(root, VOCABULARY_SOURCE.path));
+  assert.equal(hashArtifactBytes(bytes), `sha256:${source.sha256}`, "The arising vocabulary on disk differs from the hash the release pins");
+  return JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
+}
+
 /** Derive browse artifacts only after full Model Pack reconstruction succeeds. */
-export function buildBrowseArtifacts(input) {
+export function buildBrowseArtifacts(input, { vocabulary } = {}) {
   const pack = verifyModelPack(input);
   const model = pack.manifest.model;
   assert.match(model.id, /^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/);
@@ -142,6 +154,18 @@ export function buildBrowseArtifacts(input) {
   }
   flushRelations();
   const declarations = dictionaries.arisingDeclarations;
+  const arisingFacts = arisingFactsFromNodes(sourceNodes, ontologicalLayer);
+  const usedDisciplineIds = factDisciplineIds(arisingFacts);
+  const vocabularyNames = vocabulary ? vocabularyProjection(vocabulary, usedDisciplineIds) : null;
+  if (vocabularyNames) {
+    const named = new Set(vocabularyNames.disciplines.map((entry) => entry.value));
+    for (const id of usedDisciplineIds) assert.ok(named.has(id), `Discipline ${id} is missing from the arising vocabulary`);
+    // As the loader will read it: serialized, so a missing value is a missing field.
+    requireVocabulary(JSON.parse(JSON.stringify(vocabularyNames)));
+  }
+  if (Object.keys(arisingFacts).length > 0) {
+    requireArisingFacts(arisingFacts, new Map(sourceNodes.map((node) => [node.id, node])), ontologicalLayer);
+  }
   const interactionViews = dictionaries.interactions ? {
     cases: dictionaries.interactions.cases.map(({ id, title, entityIds, anchorEntityId }) => ({ id, title, entityIds, anchorEntityId })),
     perspectives: dictionaries.interactions.perspectives
@@ -172,6 +196,8 @@ export function buildBrowseArtifacts(input) {
     ...(sharedEvidence ? { recordEvidence: dictionaries.recordEvidence } : {}),
     ...(interactionViews ? { interactionViews } : {}),
     ...(declarations !== undefined && declarations !== null ? { declarations } : {}),
+    ...(Object.keys(arisingFacts).length > 0 ? { arisingFacts } : {}),
+    ...(vocabularyNames ? { vocabulary: vocabularyNames } : {}),
     reviews,
     chunks,
     ...(relationChunks.length > 0 ? { relationChunks } : {})
@@ -221,7 +247,7 @@ async function main() {
   assert.equal(pack.manifest.model.version, entry.version);
   assert.equal(pack.manifest.rootHash, entry.rootHash);
   assert.equal(pack.manifest.manifestHash, entry.manifestHash);
-  const artifacts = buildBrowseArtifacts(pack);
+  const artifacts = buildBrowseArtifacts(pack, { vocabulary: await pinnedVocabulary(pack.files["model/dictionaries.json"]) });
   const loader = await readFile(LOADER, "utf8");
   const pinPattern = /export const EXPECTED_BROWSE_INDEX_HASH = "sha256:[0-9a-f]{64}";/;
   assert.match(loader, pinPattern, "Browse loader pin is missing");

@@ -10,7 +10,7 @@ import { brotliCompressSync, gzipSync } from "node:zlib";
 import { buildModelPack } from "@onto2d/model-pack";
 import { createVerifiedModelPresentation } from "@onto2d/engine/presentation";
 import { createBrowseModelLoader } from "../../apps/model-studio/browse-data.js";
-import { buildBrowseArtifacts, checkBrowseArtifacts } from "../../scripts/build-model-studio-data.mjs";
+import { buildBrowseArtifacts, checkBrowseArtifacts, pinnedVocabulary } from "../../scripts/build-model-studio-data.mjs";
 import { encodeJsonValueTable } from "../../packages/model-pack/src/json-value-table.js";
 
 const BASE_URL = "https://example.test/Onto2D/apps/model-studio/data/";
@@ -91,8 +91,10 @@ test("the browse CLI writes and verifies plain and value-table registered bundle
     await writeFile(path.join(directory, "scripts/build-model-studio-data.mjs"),
       await readFile(new URL("scripts/build-model-studio-data.mjs", root)));
     const loader = await readFile(new URL("apps/model-studio/browse-data.js", root));
-    await writeFile(path.join(directory, "apps/model-studio/record-evidence.js"),
-      await readFile(new URL("apps/model-studio/record-evidence.js", root)));
+    for (const helper of ["record-evidence.js", "arising-facts.js"]) {
+      await writeFile(path.join(directory, "apps/model-studio", helper),
+        await readFile(new URL(`apps/model-studio/${helper}`, root)));
+    }
     const pack = fixture();
     const expected = buildBrowseArtifacts(pack);
     await writeFile(path.join(directory, "references/canonical/graph.json"), JSON.stringify({ model: pack.manifest.model }));
@@ -751,4 +753,133 @@ test("causes between arisings load their exact records, claims and evidence only
     edited.relationChunks.push({ ...edited.relationChunks[0] });
   });
   await assert.rejects(loaderFor(duplicated).load(resolution(pack)), { code: "STUDIO_BROWSE_GRAPH_INVALID" });
+});
+
+function factsFixture() {
+  const arising = (id, name, extra) => ({ id, name, layer: "arising", level: 0, phase: 0, typeRole: "scoped-process", scientificStatus: "established",
+    shortDescription: name, rationale: [], ...extra });
+  return buildModelPack({ model: { id: "facts-fixture", name: "Facts Fixture", version: "1" },
+    source: { id: "facts-source", files: [{ path: "source.json", hash: `sha256:${"e".repeat(64)}` }] },
+    nodes: [
+      arising("arising:0.0", "First", { disciplines: [3, 5], evidenceCoverage: "published-findings", completeness: { openSlots: [10] }, openObligations: ["Add a definition."] }),
+      arising("arising:0.1", "Second", { disciplines: [], evidenceCoverage: null, completeness: { openSlots: [] }, openObligations: [] }),
+      { id: "record", name: "Technical record", layer: "technical", arisingId: "arising:0.0", disciplines: [9], rationale: [] }
+    ],
+    edges: [{ id: "cause:0.0>0.1", source: "arising:0.0", target: "arising:0.1", relationLayer: "causal", role: "arising", status: "author-hypothesis", claimIds: [] }],
+    dictionaries: { presentation: { arisingTable: { layer: "arising", levels: [{ value: 0, name: "Zero" }], phases: [{ value: 0, name: "First" }] } } } });
+}
+
+const factsVocabulary = {
+  carrierGroups: [{ Id: 2, Code: "CG_{FMC}", Name: "Functional material carriers", Definition: "Units of material." }],
+  carrierTypes: [{ Id: 8, Code: "CT_{C}", Name: "Cell", GroupId: 2, Definition: "A living unit.", TypicalLevels: [4] }],
+  disciplines: [
+    { Id: 3, Name: "Biology", Icon: "b", Type: "life", Definition: "The study of life." },
+    { Id: 4, Name: "Ecology", Icon: "e", Type: "life", Definition: "Not used here." },
+    { Id: 5, Name: "Neuroscience", Icon: "n", Type: "life", Definition: "The study of nerves." }
+  ]
+};
+
+test("browse graphs carry the facts of arisings and the names of the vocabulary, and the loader exposes them", async () => {
+  const pack = factsFixture();
+  const artifacts = buildBrowseArtifacts(pack, { vocabulary: factsVocabulary });
+  const graph = JSON.parse(decoder.decode(artifacts.files.get(artifacts.index.entries[0].graph.path)));
+  assert.deepEqual(graph.arisingFacts, { "arising:0.0": { disciplines: [3, 5], evidenceCoverage: "published-findings", openSlots: [10], openObligations: ["Add a definition."] } },
+    "Empty values and technical records stay out");
+  assert.deepEqual(graph.vocabulary.disciplines.map((entry) => entry.value), [3, 5], "Only the disciplines in use");
+  assert.deepEqual(graph.vocabulary.carrierTypes, [{ value: 8, name: "Cell", group: 2, definition: "A living unit." }], "No code or typical level");
+  const { load } = loaderFor(artifacts);
+  const browse = await load(resolution(pack));
+  try {
+    assert.deepEqual(browse.arisingFacts, graph.arisingFacts);
+    assert.deepEqual(browse.vocabulary, graph.vocabulary);
+    assert.ok(Object.isFrozen(browse.arisingFacts["arising:0.0"].disciplines) && Object.isFrozen(browse.vocabulary.disciplines[0]));
+  } finally { browse.close(); }
+  const bare = buildBrowseArtifacts(pack);
+  const bareGraph = JSON.parse(decoder.decode(bare.files.get(bare.index.entries[0].graph.path)));
+  assert.ok(!Object.hasOwn(bareGraph, "vocabulary"), "A build without a vocabulary adds none");
+  const session = await loaderFor(bare).load(resolution(pack));
+  try {
+    assert.equal(session.vocabulary, null);
+    assert.deepEqual(session.arisingFacts, graph.arisingFacts);
+  } finally { session.close(); }
+  const plain = buildBrowseArtifacts(fixture());
+  const plainGraph = JSON.parse(decoder.decode(plain.files.get(plain.index.entries[0].graph.path)));
+  assert.ok(!Object.hasOwn(plainGraph, "arisingFacts") && !Object.hasOwn(plainGraph, "vocabulary"), "A plain model gains no field");
+  const plainSession = await loaderFor(plain).load(resolution(fixture()));
+  try {
+    assert.equal(plainSession.arisingFacts, null);
+    assert.equal(plainSession.vocabulary, null);
+  } finally { plainSession.close(); }
+  assert.throws(() => buildBrowseArtifacts(pack, { vocabulary: { ...factsVocabulary, disciplines: factsVocabulary.disciplines.slice(0, 2) } }), /Discipline 5 is missing/,
+    "A number the vocabulary cannot name stops the build");
+});
+
+test("the loader rejects facts and vocabulary that do not fit the graph", async () => {
+  const pack = factsFixture();
+  const artifacts = buildBrowseArtifacts(pack, { vocabulary: factsVocabulary });
+  const invalid = { code: "STUDIO_BROWSE_GRAPH_INVALID" };
+  for (const [label, mutate, expected = invalid] of [
+    ["a list of facts", (graph) => { graph.arisingFacts = []; }],
+    ["a key that is no record", (graph) => { graph.arisingFacts["arising:9.9"] = { disciplines: [3] }; }],
+    ["a key that is a technical record", (graph) => { graph.arisingFacts.record = { disciplines: [3] }; }],
+    ["an empty fact", (graph) => { graph.arisingFacts["arising:0.1"] = {}; }],
+    ["an unknown field", (graph) => { graph.arisingFacts["arising:0.1"] = { weight: 1 }; }],
+    ["an empty list", (graph) => { graph.arisingFacts["arising:0.1"] = { disciplines: [] }; }],
+    ["a discipline by name", (graph) => { graph.arisingFacts["arising:0.1"] = { disciplines: ["Biology"] }; }],
+    ["a coverage that is no text", (graph) => { graph.arisingFacts["arising:0.1"] = { evidenceCoverage: 1 }; }],
+    ["a slot that is no number", (graph) => { graph.arisingFacts["arising:0.1"] = { openSlots: ["Constraint"] }; }],
+    ["an obligation that is no text", (graph) => { graph.arisingFacts["arising:0.1"] = { openObligations: [1] }; }],
+    ["a discipline the vocabulary cannot name", (graph) => { graph.arisingFacts["arising:0.1"] = { disciplines: [44] }; }],
+    ["a vocabulary with another section", (graph) => { graph.vocabulary.extra = []; }, { code: "STUDIO_BROWSE_INVALID" }],
+    ["a section that is no list", (graph) => { graph.vocabulary.disciplines = {}; }],
+    ["an entry with a code", (graph) => { graph.vocabulary.carrierGroups[0].code = "CG_{FMC}"; }, { code: "STUDIO_BROWSE_INVALID" }],
+    ["an entry without a name", (graph) => { graph.vocabulary.disciplines[0].name = ""; }],
+    ["a repeated number", (graph) => { graph.vocabulary.carrierGroups.push({ ...graph.vocabulary.carrierGroups[0] }); }, { code: "STUDIO_BROWSE_GRAPH_INVALID", message: /Carrier group entries need a unique number/ }],
+    ["a definition that is no text", (graph) => { graph.vocabulary.disciplines[0].definition = 3; }],
+    ["a type outside the groups", (graph) => { graph.vocabulary.carrierTypes[0].group = 7; }]
+  ]) {
+    const broken = editedArtifacts(artifacts, ({ graph }) => mutate(graph));
+    await assert.rejects(loaderFor(broken).load(resolution(pack)), expected, label);
+  }
+  const withoutTable = editedArtifacts(artifacts, ({ graph }) => { graph.presentation = {}; });
+  await assert.rejects(loaderFor(withoutTable).load(resolution(pack)), invalid, "Facts need a declared layer of arisings");
+});
+
+test("the build refuses the vocabulary and facts the loader would refuse", async () => {
+  const pack = factsFixture();
+  const without = (section, index, field) => ({ ...factsVocabulary, [section]: factsVocabulary[section].map((entry, position) => {
+    if (position !== index) return entry;
+    const { [field]: _dropped, ...rest } = entry;
+    return rest;
+  }) });
+  for (const [label, vocabulary, message] of [
+    ["a discipline without a type", without("disciplines", 0, "Type"), /invalid field set/],
+    ["a discipline without a name", without("disciplines", 0, "Name"), /invalid field set|need a unique number/],
+    ["a type in an undeclared group", { ...factsVocabulary, carrierTypes: [{ ...factsVocabulary.carrierTypes[0], GroupId: 99 }] }, /undeclared group/],
+    ["a group declared twice", { ...factsVocabulary, carrierGroups: [factsVocabulary.carrierGroups[0], factsVocabulary.carrierGroups[0]] }, /unique number/],
+    ["a number that is text", { ...factsVocabulary, carrierGroups: [{ ...factsVocabulary.carrierGroups[0], Id: "2" }], carrierTypes: [{ ...factsVocabulary.carrierTypes[0], GroupId: "2" }] }, /unique number/]
+  ]) {
+    assert.throws(() => buildBrowseArtifacts(pack, { vocabulary }), message, label);
+  }
+  assert.ok(buildBrowseArtifacts(pack, { vocabulary: factsVocabulary }), "A sound vocabulary still builds");
+});
+
+test("a release's vocabulary is read only when listed, and only with the pinned bytes", async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "onto2d-browse-vocabulary-"));
+  try {
+    await mkdir(path.join(directory, "references/canonical"), { recursive: true });
+    const bytes = Buffer.from(JSON.stringify(factsVocabulary));
+    await writeFile(path.join(directory, "references/canonical/arising-vocabulary.json"), bytes);
+    const sha256 = createHash("sha256").update(bytes).digest("hex");
+    const source = { id: "arising-vocabulary", path: "references/canonical/arising-vocabulary.json", sha256 };
+    assert.deepEqual(await pinnedVocabulary({ sources: [{ id: "other" }, source] }, directory), factsVocabulary);
+    assert.equal(await pinnedVocabulary({ sources: [{ id: "other" }] }, path.join(directory, "absent")), undefined, "A release without the source reads nothing");
+    assert.equal(await pinnedVocabulary({}, path.join(directory, "absent")), undefined);
+    await assert.rejects(pinnedVocabulary({ sources: [{ ...source, sha256: "0".repeat(64) }] }, directory), /differs from the hash the release pins/);
+    await assert.rejects(pinnedVocabulary({ sources: [{ ...source, path: "elsewhere.json" }] }, directory), /unexpected path/);
+    await writeFile(path.join(directory, "references/canonical/arising-vocabulary.json"), Buffer.from(`${bytes} `));
+    await assert.rejects(pinnedVocabulary({ sources: [source] }, directory), /differs from the hash the release pins/, "An edited file on disk stops the build");
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
 });

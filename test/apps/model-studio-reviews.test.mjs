@@ -3,6 +3,8 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import vm from "node:vm";
 import { citationLinks, resolveClaimCitations } from "../../apps/model-studio/evidence-links.js";
+import { arisingFactsFromNodes, usedDisciplines } from "../../apps/model-studio/arising-facts.js";
+import { plainLocator, plainProse, plainSlug, readingExtent, recordDisplayName, slugWords } from "../../apps/model-studio/plain-text.js";
 import { recordEvidenceContext, resolveRecordEvidence } from "../../apps/model-studio/record-evidence.js";
 
 const appUrl = new URL("../../apps/model-studio/model-studio.js", import.meta.url);
@@ -30,12 +32,13 @@ function setup(presentation = null) {
   // Initialize the app's actual element registry against its actual markup.
   const initialization = source.slice(source.indexOf("const ids = ["), source.indexOf("\nconst state = {"));
   const app = vm.runInNewContext(`${initialization}\n${[
-    "studyDesignLabel", "renderSourceReview", "configureReviewPanels", "renderRationale",
+    "studyDesignLabel", "interpretationTitle", "renderSourceReview", "configureReviewPanels", "renderRationale",
     "renderInspector", "renderArising", "renderInspectedRecord", "activateModelPack",
-    "humanize", "isArising", "nodeSummary", "buildGraphIndex", "configureOntology", "applyRequestedFocus"
+    "humanize", "isArising", "nodeSummary", "displayName", "buildGraphIndex", "configureOntology", "applyRequestedFocus", "prose", "proseLine"
   ].map(declaration).join("\n")}\nfunction render() { renderInspector(); }\n({configureReviewPanels, renderRationale, activateModelPack, elements});`, {
     state, URL, citationLinks, resolveClaimCitations, createElement: element, CAUSE_ROLES: ["arising", "maintenance", "modulation"],
-    renderHeader() {}, renderActions() {}, renderFacts() {}, renderGuide() {}, renderReleaseFacts() {},
+    plainLocator, plainProse, plainSlug, readingExtent, recordDisplayName, slugWords, arisingFactsFromNodes, usedDisciplines,
+    renderHeader() {}, renderActions() {}, renderFacts() {}, renderGuide() {}, renderReleaseFacts() {}, openInspectorForLink() {},
     recordEvidenceContext, resolveRecordEvidence, CATALOG_PAGE_SIZE: 60,
     pendingInspection: null, inspectionSequence: 0, eventsBound: true,
     document: { body: { dataset: {} }, getElementById: (id) => markup.get(id), createTextNode: (textContent) => ({ textContent }) },
@@ -44,7 +47,7 @@ function setup(presentation = null) {
     presentationMetadata: () => ({ labels: {}, boundary: {} }), interactionViewCatalog: () => null,
     defaultFocusId: () => "org:record", defaultLayerValue: () => "", configureFacet() {}, selectLocalOption() {}, replaceLocationState() {},
     coordinateText: () => "Level 5", scalarLabel: (value) => String(value ?? ""), tag: (text) => element("span", "", text),
-    renderRelationList() {}, renderInteractionCases() {},
+    renderRelationList() {}, renderInteractionCases() {}, renderArisingCases() {},
     downloadRecord: (value, filename) => downloads.push({ value, filename }),
     inspectNode: (id) => inspections.push(id)
   });
@@ -94,12 +97,12 @@ test("Level-7 social scopes load on demand with their open questions and source 
   await panel.ontoggle();
   assert.deepEqual(requests, ["socialSystems"]);
   assert.deepEqual(records.children.map((section) => section.children[0].textContent),
-    ["Dynamics of Economic Markets", "Social Norms and Conventions", "Interpretation: soc:protocol-versus-optimality"]);
+    ["Dynamics of Economic Markets", "Social Norms and Conventions", "Interpretation: Protocol versus optimality"]);
   for (const expected of ["Market outcomes retain their specified institutions, endowments and tested protocols.",
     "Open question: External validity remains limited.", "Conventions retain their tested populations, payoffs and observation windows.",
     "Open question: Cross-population persistence remains unmeasured.", "Open question: No convention-wide neural mediator was measured.",
     "Alternative: A selected auction establishes optimality for every market.",
-    "Source review: bibliographic-metadata-only. Original chapters unread; metadata is not experimental evidence."]) assert.ok(lines(records).includes(expected), expected);
+    "Source review: Bibliographic metadata only. Original chapters unread; metadata is not experimental evidence."]) assert.ok(lines(records).includes(expected), expected);
   assert.match(elements["social-systems-review-summary"].textContent, /^2 reviewed topics and 0 additional study contexts\./);
   const inspectScope = (section) => section.children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
   inspectScope(records.children[1]);
@@ -136,7 +139,7 @@ test("Level-6 neural scopes load on demand beside their study contexts and open 
   assert.deepEqual(records.children.map((section) => section.children[0].textContent), ["Neurovascular Coupling", publication.title]);
   for (const expected of ["Vascular response is distinct from immune regulation and from neural activity itself.",
     "Open question: The complete neuronal-to-vascular route is unmeasured.", "Finding: A bounded effect",
-    "Source review: selected-primary-results. Supplement and raw data unread."]) assert.ok(lines(records).includes(expected), expected);
+    "Source review: Selected primary results. Supplement and raw data unread."]) assert.ok(lines(records).includes(expected), expected);
   assert.match(elements["neural-systems-review-summary"].textContent, /1 reviewed topics and 1 additional study contexts/);
   records.children[0].children.find((child) => child.textContent === "Inspect reviewed scope").onclick();
   assert.deepEqual(inspections, ["cog:neurovascular-coupling-scope"]);
@@ -173,8 +176,8 @@ test("the organismal panel loads on opening, retains reading boundaries and down
   const rendered = lines(records);
   for (const text of ["Study design: Primary experimental study", "System: One specified organism",
     "Preparation: Matched intervention and control", "Observable: Finite response", "Finding: A bounded effect",
-    "Reviewed: selected-primary-results. Results; Figure 2", "No universal operating dependency.",
-    "Source review: selected-primary-results. Supplement and raw data unread."]) assert.ok(rendered.includes(text), text);
+    "Reviewed: Selected primary results. Results; Figure 2", "No universal operating dependency.",
+    "Source review: Selected primary results. Supplement and raw data unread."]) assert.ok(rendered.includes(text), text);
   for (const section of records.children) {
     assert.equal(lines(section).filter((text) => text.includes(publication.review.limit)).length, 1,
       "Each study displays a source reading limit once, retaining the full raw limitations for download");
@@ -212,10 +215,34 @@ test("the inspector retains distinct organismal and reused cellular preparations
   const rendered = lines(elements["selected-rationale"]);
   for (const text of ["Study context: One specified organism",
     "Study context: Isolated cells", "Preparation: Matched intervention and control",
-    "Preparation: Separate cell preparation", "Reviewed: selected-primary-results. Results; Figure 2",
-    "Reviewed: selected-primary-results. Figure 1", "Study limit: No organismal transfer.",
-    "Source review: selected-primary-results. Supplement and raw data unread."]) assert.ok(rendered.includes(text), text);
+    "Preparation: Separate cell preparation", "Reviewed: Selected primary results. Results; Figure 2",
+    "Reviewed: Selected primary results. Figure 1", "Study limit: No organismal transfer.",
+    "Source review: Selected primary results. Supplement and raw data unread."]) assert.ok(rendered.includes(text), text);
   assert.deepEqual({ record, dictionaries }, before);
+});
+
+test("the evidence of an ontology reads by names and words, and the same text in a plain release stays as declared", () => {
+  const { renderRationale, elements, state } = setup();
+  const claim = { id: "claim", status: "publication-supported", statement: "A finding for arising 6.17.", scope: "contexts fesenko1985",
+    limitations: ["The species differences recorded in arising 6.17 are untested here.", "Read with the nuclear-spin claim of cause 6.17 > 6.2."],
+    contexts: [{ system: "A system", preparation: "See the same fung1981 preparation.", observable: "A readout", readExtent: "selected-primary-results", reviewedLocators: ["Figure 2"], limitations: [] }],
+    citations: [{ locator: "verify(): bell-null-tail-2015", role: "method", note: "Bounded by F12.", sourceId: "check",
+      source: { id: "check", title: "A check", review: { extent: "full-primary-article", limit: "Reviewed as bloom1969." } } }] };
+  state.ontology = {};
+  state.graphIndex = { nodesById: new Map([["arising:6.17", { name: "Restricted Adult Neurogenesis" }], ["arising:6.2", { name: "Brain Oscillations and Rhythms" }]]) };
+  renderRationale({ rationale: [claim] });
+  const named = lines(elements["selected-rationale"]);
+  for (const text of ["A finding for Restricted Adult Neurogenesis.", "Scope: contexts Fesenko 1985",
+    "Limit: The species differences recorded in Restricted Adult Neurogenesis are untested here.",
+    "Limit: Read with the nuclear-spin claim of the cause from Restricted Adult Neurogenesis to Brain Oscillations and Rhythms.",
+    "Preparation: See the same Fung 1981 preparation.", "Reviewed: Selected primary results. Figure 2",
+    "Source review: Full primary article. Reviewed as Bloom 1969."]) assert.ok(named.includes(text), text);
+  assert.ok(named.some((text) => text.startsWith("method: A check \u2014 Bell null tail 2015. Bounded by Finding 12.")), named.join("\n"));
+  state.ontology = null;
+  renderRationale({ rationale: [claim] });
+  const plain = lines(elements["selected-rationale"]);
+  assert.ok(plain.includes("A finding for arising 6.17."));
+  assert.ok(plain.includes("Scope: contexts fesenko1985"));
 });
 
 test("historical source reviews render without inventing absent reading metadata", async () => {
@@ -249,5 +276,5 @@ test("activating a full pack replaces prior release evidence before rendering it
   assert.equal(state.pack, pack, "The newly active pack must replace the previous release before rendering");
   assert.deepEqual(JSON.parse(elements["selected-record"].textContent), record);
   assert.ok(lines(elements["selected-rationale"]).includes("Preparation: Matched intervention and control"));
-  assert.ok(lines(elements["selected-rationale"]).includes("Source review: selected-primary-results. Supplement and raw data unread."));
+  assert.ok(lines(elements["selected-rationale"]).includes("Source review: Selected primary results. Supplement and raw data unread."));
 });

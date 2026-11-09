@@ -398,7 +398,7 @@ test("separate Python incidence reference agrees on additional deterministic gra
 });
 
 test("the complete Causal Emergence census agrees with the separate incidence reference", async () => {
-  const pack = JSON.parse(await readFile(new URL("../../../models/causal-emergence/releases/2026.11.05.0/bundle.json", import.meta.url), "utf8"));
+  const pack = JSON.parse(await readFile(new URL("../../../models/causal-emergence/releases/2026.11.08.0/bundle.json", import.meta.url), "utf8"));
   const lock = await json("causal-emergence/source-lock.json");
   const technical = { projectionPolicyId: "canonical-technical-directed-v1" };
   // Primary census: the ontological layer of arisings and the causes between them.

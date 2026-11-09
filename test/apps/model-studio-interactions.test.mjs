@@ -21,6 +21,16 @@ test("node hover selects only its incident edges and nearest neighbors", () => {
   });
 });
 
+test("several lines at one spot light up together, with their cards and nothing else", () => {
+  assert.deepEqual(graphHighlight(projection, { kind: "edges", ids: ["a-b", "c-d"] }), {
+    primaryNodes: ["a", "b", "c", "d"],
+    connectedNodes: [],
+    primaryEdges: ["a-b", "c-d"],
+    connectedEdges: []
+  });
+  assert.throws(() => graphHighlight(projection, { kind: "edges", ids: ["missing"] }), RangeError);
+});
+
 test("edge hover selects its endpoints and their one-hop context", () => {
   assert.deepEqual(graphHighlight(projection, { kind: "edge", id: "a-c" }), {
     primaryNodes: ["a", "c"],

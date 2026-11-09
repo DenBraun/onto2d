@@ -1,5 +1,5 @@
 {
-  "artifactHash": "sha256:ce06d81b482196ba3bd542037ef7370b53912c3211564414c4c15f448ec32aa5",
+  "artifactHash": "sha256:90b7488424df6d0ee08001b4381cc145db217e2bb9c8403d5a33e4df8eae2782",
   "edgeCalculations": 1233,
   "runs": [
     {
@@ -653,7 +653,7 @@
       ]
     },
     {
-      "artifactHash": "sha256:1a65355e7a6f68fc6648b7085371e763f71d99f6502726df60183be068c7467e",
+      "artifactHash": "sha256:0ed4c04de63116bc974c87ad46f4ec1db80ca9969e5869e1a707f047d7784aa8",
       "boundaryEdgeCount": 40,
       "edgeCount": 22,
       "file": "artifacts/causal-emergence-level-zero-definitions.json",
@@ -704,7 +704,7 @@
       "id": "causal-emergence-level-zero-definitions",
       "nodeCount": 28,
       "removedEdgeIds": [],
-      "requestHash": "sha256:c92a700cbac36275d1265d076e6c9c1a212e36f3761d77d3b4a474591d672447",
+      "requestHash": "sha256:2152567b9896f4f85e097a20dd760de49c9b042babaa9653c92b8d65eaaa5bc4",
       "stateCount": 7,
       "termination": {
         "cyclePeriod": null,
@@ -767,7 +767,7 @@
       ]
     },
     {
-      "artifactHash": "sha256:a02d1829e79d473e8d5aa12b7b339fe68cdbffa13bf917a03141463c08514b63",
+      "artifactHash": "sha256:2c2c507cd2f1ba6beab52ff1067fbf41b563e85fcba45c3d7b1fe12263d62b41",
       "boundaryEdgeCount": 15,
       "edgeCount": 47,
       "file": "artifacts/causal-emergence-level-zero-rules.json",
@@ -817,7 +817,7 @@
       "id": "causal-emergence-level-zero-rules",
       "nodeCount": 34,
       "removedEdgeIds": [],
-      "requestHash": "sha256:ab396ffac7d6135f7cdd43086c04c71bfa76b29d22c76df9b11a210b20acc8c1",
+      "requestHash": "sha256:18df69bdb99955cfc7a2f78ec728995c1960c013b11a6f948a1b34686b733630",
       "stateCount": 5,
       "termination": {
         "cyclePeriod": null,

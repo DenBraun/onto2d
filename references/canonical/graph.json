@@ -3,7 +3,7 @@
   "model": {
     "id": "causal-emergence",
     "name": "Causal Emergence — Canonical Reconstruction",
-    "version": "2026.11.05.0",
+    "version": "2026.11.08.0",
     "status": "research-reconstruction-partial"
   },
   "scope": {
@@ -17151,7 +17151,7 @@
       "doi": null,
       "url": null,
       "path": "references/canonical/cause-evidence-review.json",
-      "sha256": "8339b2bba37d687400d79063e4488e5ab131d544bfa8b28ae35e97ad5c519c37",
+      "sha256": "5cc659cdcf3a80adeef37f433f15a749b8e9068c827bf754f20fbcb3626a1e5c",
       "review": {
         "extent": "internal-source-review",
         "locators": [
@@ -127228,7 +127228,7 @@
     {
       "id": "CE-6.1-6.21-pharmacological-conditioning-creates-a-hormonal-placebo-response",
       "kind": "review-finding",
-      "statement": "In the same study, verbal suggestions of hormonal increase or decrease leave growth hormone and cortisol unchanged, but after two days of subcutaneous sumatriptan the test-day saline injection reproduces the drug's effects, raising growth hormone and lowering cortisol, and it does so under either direction of verbal suggestion. This is evidence for Synaptic Plasticity and Learning to Placebo Responses and Psychosomatic Modulation in the arising role: for an output that expectation cannot reach, the placebo response exists only after a learned drug-context pairing has been established.",
+      "statement": "Benedetti et al. report that verbal suggestions of hormonal increase or decrease leave growth hormone and cortisol unchanged, but after two days of subcutaneous sumatriptan the test-day saline injection reproduces the drug's effects, raising growth hormone and lowering cortisol, and it does so under either direction of verbal suggestion. This is evidence for Synaptic Plasticity and Learning to Placebo Responses and Psychosomatic Modulation in the arising role: for two hormonal outputs with no significant change under verbal suggestion alone, the response appeared after two days of prior drug exposure.",
       "scope": "Cause 6.1 > 6.21 (arising): group comparisons of hormonal responses to saline with and without two days of prior sumatriptan, under opposite verbal instructions, against untreated serial-sampling days; it shows a conditioned response in two hormonal outputs, without identifying any synaptic mechanism.",
       "status": "literature-synthesis",
       "citations": [
@@ -127248,7 +127248,7 @@
       "checkIds": [],
       "limitations": [
         "Learning is inferred from the conditioning procedure; no synaptic or neural measurement is made.",
-        "Between-group design with eight to eleven healthy volunteers per hormonal group.",
+        "Between-group design with nine to eleven healthy volunteers per hormonal intervention group.",
         "One conditioning drug, sumatriptan, and two hormonal outputs sampled over 75 minutes.",
         "Whether the conditioned response would extinguish and over what interval is not tested here."
       ],
@@ -127297,8 +127297,8 @@
     {
       "id": "CE-6.3-6.21-verbal-expectation-creates-and-reverses-the-placebo-response",
       "kind": "review-finding",
-      "statement": "Benedetti et al. show that in ischaemic arm pain a placebo described as an analgesic raises tolerance while the same injection described as hyperalgesic lowers it, and that after two days of ketorolac conditioning the analgesic description produces a larger response than suggestion alone whereas the opposite description abolishes it and leaves tolerance below the untreated days. In Parkinsonian patients with implanted stimulators kept switched on, a sham switch-off slows hand movement while the opposite instruction leaves velocity unchanged. This is evidence for Cognitive Processing and Decision Making to Placebo Responses and Psychosomatic Modulation in the arising role: the response appears only when an expectation is formed, and reversing the expectation reverses or removes it.",
-      "scope": "Cause 6.3 > 6.21 (arising): within-subject comparisons of opposite verbal descriptions of an inert treatment, with untreated natural-history days and a pharmacological conditioning arm; it shows the dependence of the analgesic and motor placebo on the induced expectation, not the neural mechanism of that expectation, and expectations were not measured directly.",
+      "statement": "Benedetti et al. show that in ischaemic arm pain a placebo described as an analgesic raises tolerance while the same injection described as hyperalgesic lowers it, and that after two days of ketorolac conditioning the analgesic description produces a larger response than suggestion alone whereas the opposite description abolishes it and leaves tolerance below the untreated days. In Parkinsonian patients with implanted stimulators kept switched on, a sham switch-off slows hand movement while the opposite instruction leaves velocity unchanged. This is evidence for Cognitive Processing and Decision Making to Placebo Responses and Psychosomatic Modulation in the arising role: in these preparations the response followed the verbal instruction, and reversing the instruction reversed or removed it.",
+      "scope": "Cause 6.3 > 6.21 (arising): opposite verbal descriptions of an inert treatment, compared across separate groups for pain and within the same ten patients for movement, with untreated natural-history days and a pharmacological conditioning arm; it shows the dependence of the analgesic and motor placebo on the induced expectation, not the neural mechanism of that expectation, and expectations were not measured directly.",
       "status": "literature-synthesis",
       "citations": [
         {
@@ -127318,7 +127318,7 @@
       "limitations": [
         "Expectations are inferred from the verbal instructions, not assessed.",
         "Pain tolerance is a subjective end point and the motor measure comes from ten patients with implanted stimulators.",
-        "Both arms are open-label manipulations within a single laboratory and session order.",
+        "Both arms come from a single laboratory.",
         "The same source finds no expectation effect on hormonal secretion, so the claim does not extend to unconscious outputs."
       ],
       "contextIds": [
@@ -127979,7 +127979,7 @@
     {
       "id": "CE-6.6-6.21-anxiety-and-cholecystokinin-separate-the-nocebo-response",
       "kind": "review-finding",
-      "statement": "Benedetti et al. found that a nocebo suggestion raised ischaemic arm pain ratings from 5.07 to 8.61 at ten minutes and raised adrenocorticotropic hormone and cortisol, while an untreated group was identical on the two test days. Intravenous diazepam abolished both the hyperalgesia and the hormonal hyperactivity, the cholecystokinin antagonist proglumide abolished the hyperalgesia while leaving the hormonal rise intact, and neither drug reduced pain in the non-nocebo condition. This is evidence for Emotional and Affective Processing to Placebo Responses and Psychosomatic Modulation in the modulation role: the anxiety raised by the suggestion sets the size of the symptom response, and removing it removes the response while leaving basal pain untouched.",
+      "statement": "Benedetti et al. found that a nocebo suggestion raised ischaemic arm pain ratings from 5.07 to 8.61 at ten minutes and raised adrenocorticotropic hormone and cortisol, while an untreated group showed no difference between the two test days. Intravenous diazepam blocked both the hyperalgesia and the hormonal hyperactivity, the cholecystokinin antagonist proglumide blocked the hyperalgesia while leaving the hormonal rise intact, and neither drug reduced pain in the non-nocebo condition. This is evidence for Emotional and Affective Processing to Placebo Responses and Psychosomatic Modulation in the modulation role: a drug with anxiolytic action blocked the nocebo pain rise and the hormonal rise, consistent with an affective contribution to this form of the response that was not itself measured.",
       "scope": "Cause 6.6 > 6.21 (modulation): a randomised double-blind design with an untreated natural-history group and two pharmacological antagonists, read out as pain ratings and stress-axis hormones; it shows that the nocebo response depends on an anxiolytic-sensitive affective component, inferring anxiety from the drug effect rather than measuring it.",
       "status": "publication-supported",
       "citations": [

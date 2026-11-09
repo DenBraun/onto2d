@@ -1,7 +1,7 @@
 import { Onto2D as EngineOnto2D } from "@onto2d/engine";
 import { verifyModelPack } from "@onto2d/model-pack";
 import { canonicalIdentityAnalysis } from "@onto2d/canonical-identity-analysis";
-import bundledPackJson from "../models/causal-emergence/releases/2026.11.05.0/bundle.json" with { type: "json" };
+import bundledPackJson from "../models/causal-emergence/releases/2026.11.08.0/bundle.json" with { type: "json" };
 
 const CREATE_OPTION_FIELDS = new Set(["models", "aliases", "lineages", "model", "analyses"]);
 const FORBIDDEN_KEYS = new Set(["__proto__", "constructor", "prototype"]);

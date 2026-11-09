@@ -1,6 +1,6 @@
 # Causal Emergence: descriptive geometry of the canonical graph
 
-Source: complete verified `causal-emergence@2026.11.05.0`, the canonical graph,
+Source: complete verified `causal-emergence@2026.11.08.0`, the canonical graph,
 pinned by [source-lock.json](causal-emergence/source-lock.json).
 The release has two layers ([arising model](../../docs/architecture/ARISING_MODEL.md)).
 The outer layer holds the arisings of the author's catalogue, joined by their
@@ -27,7 +27,7 @@ a cause, directed from the cause to the arising it conditions.
 | Exact mean | -7812 / 1085 |
 
 The [artifact](causal-emergence/artifact.json) has hash
-`sha256:b697690630f4d92f01090366314b27ba4e3e250926301995cda18de2020e08c9`.
+`sha256:c78430ed4a222a2fcac1c14abd7b9eba8e3ed27a6236c786becfc05746853c22`.
 It includes:
 
 - every edge and node value;
@@ -105,7 +105,7 @@ premise to dependent.
 | Exact mean | 920 / 3683 |
 
 The [technical artifact](causal-emergence/technical-artifact.json) has hash
-`sha256:36fe54da7e53481a4bdd751ef3300d5855ca88ce30f1b1577bf66a4773fe79a2`.
+`sha256:a5f255722b55acb2b51b11247b4107cc58c297c52cd0b8cccca1faeb580ab66f`.
 It includes:
 
 - every edge and node value;

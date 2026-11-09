@@ -4,10 +4,10 @@
   "entries": [
     {
       "modelId": "causal-emergence",
-      "version": "2026.11.05.0",
-      "rootHash": "sha256:454574968c59f80a40e326e5fa1133f32424be491055f0ea4cd98b76e401dacf",
-      "manifestHash": "sha256:4b99a194a3a834f4f955860496d5654b0e0722acb2fed89ba326a853e4be03d8",
-      "packPath": "causal-emergence/releases/2026.11.05.0/"
+      "version": "2026.11.08.0",
+      "rootHash": "sha256:8fdd0d18ffaf176dd9f548653181cfa3b6ad5bd5be6a9d8a79e9834c6d32cf5d",
+      "manifestHash": "sha256:9d01d6a40bf2f5df7f3d149d1fbd530cdc2a0381e50dc6ee026958bdc9c7fd01",
+      "packPath": "causal-emergence/releases/2026.11.08.0/"
     },
     {
       "modelId": "live-bootstrap-provenance",

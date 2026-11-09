@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
 const html = await readFile(new URL("../../apps/model-studio/index.html", import.meta.url), "utf8");
@@ -64,4 +64,23 @@ test("the app and lazy browse loader resolve the same current record evidence mo
   assert.equal(effectiveUrl(specifier(app, "record-evidence"), appUrl), expected);
   assert.equal(effectiveUrl(specifier(browse, "record-evidence"), browseUrl), expected,
     "Lazy inspection must not retain a previous deployment's evidence resolver");
+});
+
+test("every Studio module imports its siblings at the current revision, and the revision scripts cover those that do", async () => {
+  const folder = new URL("../../apps/model-studio/", import.meta.url);
+  const files = (await readdir(folder)).filter((name) => name.endsWith(".js"));
+  const importers = [];
+  for (const name of files) {
+    const source = await readFile(new URL(name, folder), "utf8");
+    const siblings = [...source.matchAll(/(?:\bfrom\s*|\bimport\s*\(?\s*)["'](\.\/[^"']+\.js[^"']*)["']/gu)].map((match) => match[1]);
+    if (siblings.length > 0 && name !== "model-studio.js") importers.push(name);
+    for (const specifier of siblings) {
+      assert.equal(new URL(specifier, documentUrl).searchParams.get("v"), revision, `${name} imports ${specifier}: one URL per module, or it runs twice and a stale copy can be served`);
+    }
+  }
+  assert.ok(importers.length >= 2);
+  for (const script of ["update-model-studio-revision.mjs", "check-public-module-revisions.mjs"]) {
+    const source = await readFile(new URL(`../../scripts/${script}`, import.meta.url), "utf8");
+    for (const name of importers) assert.ok(source.includes(`"${name}"`), `${script} must follow ${name}`);
+  }
 });
