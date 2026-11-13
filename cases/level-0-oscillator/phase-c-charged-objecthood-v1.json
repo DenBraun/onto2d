@@ -1,0 +1,903 @@
+{
+  "schemaVersion": "1",
+  "caseId": "level-0-oscillator",
+  "modelId": "level-0-phase-c-charged-objecthood",
+  "modelVersion": "1.0.0",
+  "status": "preregistered-bounded-extension",
+  "preregisteredAt": "2026-11-13",
+  "source": {
+    "name": "topology-of-arising.pdf",
+    "repositoryPath": "references/topology-of-arising.pdf",
+    "doi": "10.5281/zenodo.19397414",
+    "version": "v1.2",
+    "sha256": "3992ae25c5e499842a57b07dea0d2f9d206ee3483d634fb9053af39dc260a8f7",
+    "bytes": 340428,
+    "pageRange": {
+      "start": 15,
+      "end": 26
+    }
+  },
+  "dependencies": [
+    {
+      "id": "phase-c-objecthood-search-v2",
+      "repositoryPath": "cases/level-0-oscillator/artifacts/phase-c-objecthood-v2.json",
+      "analysisHash": "sha256:d20ae86e0db42ae8c3ea47e379faff67d0f79eb924238504fa75b241280ac2a6",
+      "requiredScenarioId": "localized-pulse",
+      "requiredCandidateId": "sha256:a7af3a47d2d3cdf92220c00ffd702d43e53572a4f88edb78f79f001739681182"
+    },
+    {
+      "id": "phase-c-expanded-search-v2",
+      "repositoryPath": "cases/level-0-oscillator/artifacts/phase-c-expanded-search-v2.json",
+      "analysisHash": "sha256:a020a2b5c24f4e682c29845154a116bc52f051830dc01837cf088cd844f0c3a5",
+      "requiredResult": "bounded-negative-no-qualified-asymmetric-branch"
+    }
+  ],
+  "exploration": {
+    "status": "unregistered-exploratory-run-inspected-before-preregistration",
+    "date": "2026-11-13",
+    "layer": "H (heuristic / exploratory)",
+    "inspected": {
+      "lambda": 2,
+      "quarticCoefficient": 1.3,
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "frequencyFamily": "omega=(W,W,-2W)",
+      "profiledFrequencies": [
+        0.3,
+        0.36,
+        0.4,
+        0.43,
+        0.45,
+        0.47,
+        0.48,
+        0.49
+      ],
+      "evolvedFrequencies": [
+        0.36,
+        0.4,
+        0.49
+      ],
+      "alsoInspected": [
+        "two-object runs and a homogeneous-state run at W=0.4",
+        "the static pulse of the frozen model (lambda=2, quarticCoefficient=0.5)"
+      ]
+    },
+    "calibration": "the shape band, the kernel tolerance, the duration and the conservation thresholds were fixed on the two inspected control scenarios only",
+    "designInformation": "the six eligible scenarios were selected from the potential alone: the true-vacuum certificate and the necessary existence condition min(U_eff)<0; no eligible profile or evolution was computed before this file was frozen",
+    "consequence": "the inspected parameter sets enter only as ineligible controls"
+  },
+  "inputMapping": {
+    "status": "declared-extension-of-normalized-surrogate-not-derived",
+    "source": "the frozen Phase-C quartic three-envelope model and the admitted Phase-B resonant-triad candidate",
+    "retained": [
+      "three coupled envelope components",
+      "cubic resonant coupling and positive quartic completion",
+      "Dirichlet finite-domain convention",
+      "three-node simple-cycle skeleton",
+      "source, Phase-B and Phase-C evidence lineage"
+    ],
+    "restored": [
+      "the signed-frequency balance omega_1+omega_2+omega_3=0 of Phase B, carried as rotating envelope phases"
+    ],
+    "changed": [
+      "quartic coefficient and mass-squared values are restricted to parameter sets for which psi=0 is the global minimum of the declared potential"
+    ],
+    "notRetained": [
+      "individual Phase-B amplitudes",
+      "individual wave numbers",
+      "individual Phase-B frequency values",
+      "individual Phase-B Klein-Gordon mass-squared values"
+    ],
+    "claim": "the extension is a case assumption and not a derivation from the source paper"
+  },
+  "scope": {
+    "fieldRepresentation": "three complex fields psi_i(x,t)=f_i(x)*exp(i*omega_i*t) with real stationary envelopes f_i and omega_1+omega_2+omega_3=0",
+    "domain": "one-dimensional finite interval [-L,L] with homogeneous Dirichlet boundaries",
+    "energy": "E=integral(0.5*sum_i(abs(dt(psi_i))^2+abs(dx(psi_i))^2+m2_i*abs(psi_i)^2)-2*lambda*Re(psi_1*psi_2*psi_3)+0.25*g*(sum_i(abs(psi_i)^2))^2)dx",
+    "equationsOfMotion": "d2_t(psi_i)=d2_x(psi_i)-m2_i*psi_i+2*lambda*conj(psi_j*psi_k)-g*(sum_l(abs(psi_l)^2))*psi_i",
+    "stationaryEquations": "-d2_x(f_i)+(m2_i-omega_i^2)*f_i-2*lambda*f_j*f_k+g*(sum_l(f_l^2))*f_i=0",
+    "conservedCharges": "Q_1=N_1-N_3 and Q_2=N_2-N_3 with N_i=integral(Im(conj(psi_i)*dt(psi_i)))dx; on a stationary state N_i=omega_i*integral(f_i^2)dx",
+    "vacuumAdmissibility": "27*min_i(m2_i)*g-8*lambda^2>=0 implies U>=0 for every field value, so psi=0 is the global minimum; it is also necessary when the three mass-squared values are equal",
+    "gamma": "integral((f_1+f_2+f_3)^2)dx evaluated on the stationary envelopes in the co-rotating phase-aligned frame",
+    "staticStabilityPolicy": "charge-constrained count on the fine grid: n(H)=number of eigenvalues below minus the kernel tolerance of the real-amplitude and imaginary-phase block Hessians of E-Omega_1*Q_1-Omega_2*Q_2; p(d'')=number of positive eigenvalues of minus the symmetrized charge response dQ_a/dOmega_b; the count passes when the near-zero eigenvalues are exactly the three symmetry directions and n(H)=p(d'')",
+    "dynamicStabilityPolicy": "complex velocity-Verlet evolution of the unperturbed state and of every preregistered perturbation at base, time-refined and space-refined resolution; a run departs when the density peak or the 90-percent support radius about the density centroid leaves the declared factor band relative to the unperturbed stationary state",
+    "perturbationFrame": "perturbations are added to the envelope with zero velocity in the co-rotating frame, so the laboratory velocity of component i is i*omega_i*psi_i",
+    "excluded": [
+      "all parameter values",
+      "all perturbation functions",
+      "alternative nonlinear completions",
+      "unbounded time evolution and instabilities slower than the declared duration resolves",
+      "two and three spatial dimensions",
+      "moving or boosted states",
+      "collective Phase-D behaviour",
+      "a proof of the count criterion for this system",
+      "empirical physical validation"
+    ]
+  },
+  "parameters": {
+    "baseHalfWidth": 24,
+    "extendedHalfWidth": 36,
+    "coarseIntervals": 192,
+    "fineIntervals": 384,
+    "extendedIntervals": 576,
+    "dynamicRefinedIntervals": 768,
+    "newtonTolerance": 1e-10,
+    "newtonMaxIterations": 100,
+    "continuationStages": 24,
+    "frequencyResponseStep": 0.0025,
+    "kernelTolerance": 0.001,
+    "dynamicDuration": 300,
+    "dynamicBaseSteps": 6000,
+    "timeRefinementFactor": 2,
+    "shapeSampleInterval": 0.2,
+    "conservationSampleInterval": 1,
+    "perturbationFraction": 0.02,
+    "shapeBandFactor": 2,
+    "traceCount": 31,
+    "reportingPolicy": {
+      "id": "portable-numeric-reporting-v1",
+      "significantDigits": 12,
+      "traceSignificantDigits": 10,
+      "traceAbsoluteTolerance": 0.000001,
+      "convergedResidualPolicy": "newton-tolerance-upper-bound-v1",
+      "absoluteTolerance": 1e-9,
+      "identityExcludedQuantities": []
+    }
+  },
+  "acceptance": {
+    "trueVacuumCertificateMinimum": 0,
+    "frequencyBalanceMaximum": 1e-9,
+    "evanescenceMinimumExclusive": 0,
+    "stationarityMaxResidual": 1e-8,
+    "gammaMinimum": 0.1,
+    "chargeMagnitudeMinimum": 0.01,
+    "gammaGridRelativeChangeMaximum": 0.01,
+    "profileGridRelativeL2Maximum": 0.01,
+    "gammaDomainRelativeChangeMaximum": 0.05,
+    "supportRadiusRelativeChangeMaximum": 0.05,
+    "realSectorNearZeroCount": 1,
+    "phaseSectorNearZeroCount": 2,
+    "chargeResponseRelativeSymmetryDefectMaximum": 0.01,
+    "constrainedStabilityFlag": 1,
+    "departureCountMaximum": 0,
+    "energyRelativeDriftMaximum": 0.001,
+    "chargeRelativeDriftMaximum": 1e-9,
+    "departurePatternAgreementFlag": 1,
+    "dynamicRefinementRelativeChangeMaximum": 0.05
+  },
+  "hypotheses": {
+    "primaryAlternative": "at least one eligible scenario passes vacuum admissibility, frequency balance, evanescence, stationarity, nontriviality, intrinsic localization, the charge-constrained count, unperturbed persistence and the complete declared dynamic bank",
+    "primaryNull": "no eligible scenario passes every declared necessary gate",
+    "secondary": "on every scenario with complete numerics the charge-constrained count and the dynamic bank give the same verdict",
+    "controls": "the inspected stable-branch control passes every gate except eligibility and the inspected unstable-branch control is rejected by both the count and the dynamic bank; otherwise the study is indeterminate",
+    "outcomePolicy": "report positive, negative, mixed, or numerically indeterminate without adding scenarios after inspection"
+  },
+  "stoppingRule": "evaluate exactly the eight scenarios and six perturbations below once; do not expand the grid, change a threshold, or remove a scenario or direction after inspecting results",
+  "oracle": {
+    "solver": {
+      "id": "onto2d-level-0-phase-c-charged",
+      "version": "1.0.0",
+      "method": "rotating-frame-block-newton-inertia-count-complex-verlet-portable-report-v1"
+    },
+    "toleranceTarget": {
+      "absolute": 1e-8
+    },
+    "quantities": [
+      {
+        "id": "true_vacuum_certificate_margin",
+        "unit": "1",
+        "semantic": "true-vacuum-certificate-27-m2min-g-minus-8-lambda2-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "frequency_balance_abs",
+        "unit": "1",
+        "semantic": "signed-frequency-balance-absolute-residual-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "evanescence_minimum",
+        "unit": "1",
+        "semantic": "minimum-effective-mass-squared-m2-minus-omega2-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "stationarity_max_residual_coarse",
+        "unit": "1",
+        "semantic": "rotating-envelope-stationarity-convergence-bound-coarse-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "stationarity_max_residual_fine",
+        "unit": "1",
+        "semantic": "rotating-envelope-stationarity-convergence-bound-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "stationarity_max_residual_extended",
+        "unit": "1",
+        "semantic": "rotating-envelope-stationarity-convergence-bound-extended-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "stationarity_max_residual_refined",
+        "unit": "1",
+        "semantic": "rotating-envelope-stationarity-convergence-bound-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "gamma_coarse",
+        "unit": "1",
+        "semantic": "rotating-frame-composite-envelope-gamma-coarse-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "gamma_fine",
+        "unit": "1",
+        "semantic": "rotating-frame-composite-envelope-gamma-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "gamma_extended",
+        "unit": "1",
+        "semantic": "rotating-frame-composite-envelope-gamma-extended-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "gamma_grid_relative_change",
+        "unit": "1",
+        "semantic": "rotating-frame-gamma-grid-relative-change-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "gamma_domain_relative_change",
+        "unit": "1",
+        "semantic": "rotating-frame-gamma-domain-relative-change-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "profile_grid_relative_l2",
+        "unit": "1",
+        "semantic": "rotating-envelope-profile-grid-relative-l2-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "support_radius_90_fine",
+        "unit": "1",
+        "semantic": "rotating-frame-composite-support-radius-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "support_radius_90_extended",
+        "unit": "1",
+        "semantic": "rotating-frame-composite-support-radius-extended-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "support_radius_relative_change",
+        "unit": "1",
+        "semantic": "rotating-frame-support-radius-relative-change-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "peak_density_fine",
+        "unit": "1",
+        "semantic": "stationary-density-peak-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_1_fine",
+        "unit": "1",
+        "semantic": "conserved-charge-n1-minus-n3-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_2_fine",
+        "unit": "1",
+        "semantic": "conserved-charge-n2-minus-n3-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "energy_fine",
+        "unit": "1",
+        "semantic": "three-component-rotating-state-energy-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "free_quanta_energy_ratio_fine",
+        "unit": "1",
+        "semantic": "energy-over-free-quanta-rest-energy-fine-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_sector_negative_count",
+        "unit": "1",
+        "semantic": "real-amplitude-hessian-eigenvalues-below-minus-tolerance-count-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_sector_near_zero_count",
+        "unit": "1",
+        "semantic": "real-amplitude-hessian-eigenvalues-within-tolerance-count-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "phase_sector_negative_count",
+        "unit": "1",
+        "semantic": "imaginary-phase-hessian-eigenvalues-below-minus-tolerance-count-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "phase_sector_near_zero_count",
+        "unit": "1",
+        "semantic": "imaginary-phase-hessian-eigenvalues-within-tolerance-count-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_response_11",
+        "unit": "1",
+        "semantic": "charge-1-central-difference-response-to-frequency-1-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_response_12",
+        "unit": "1",
+        "semantic": "charge-1-central-difference-response-to-frequency-2-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_response_21",
+        "unit": "1",
+        "semantic": "charge-2-central-difference-response-to-frequency-1-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_response_22",
+        "unit": "1",
+        "semantic": "charge-2-central-difference-response-to-frequency-2-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_response_symmetry_defect",
+        "unit": "1",
+        "semantic": "charge-response-matrix-symmetry-defect-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_hessian_determinant",
+        "unit": "1",
+        "semantic": "symmetrized-charge-response-determinant-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_hessian_positive_count",
+        "unit": "1",
+        "semantic": "minus-charge-response-positive-eigenvalue-count-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "charge_hessian_positive_count_half_step",
+        "unit": "1",
+        "semantic": "minus-charge-response-positive-eigenvalue-count-half-step-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "constrained_stability_flag",
+        "unit": "1",
+        "semantic": "charge-constrained-stability-count-flag-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_departure_count_base",
+        "unit": "1",
+        "semantic": "shape-band-departure-count-base-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_departure_count_time_refined",
+        "unit": "1",
+        "semantic": "shape-band-departure-count-time-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_departure_count_space_refined",
+        "unit": "1",
+        "semantic": "shape-band-departure-count-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_worst_shape_excursion_base",
+        "unit": "1",
+        "semantic": "shape-band-worst-excursion-base-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_worst_shape_excursion_time_refined",
+        "unit": "1",
+        "semantic": "shape-band-worst-excursion-time-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_worst_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "shape-band-worst-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_max_energy_relative_drift_base",
+        "unit": "1",
+        "semantic": "rotating-dynamics-energy-drift-base-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_max_energy_relative_drift_time_refined",
+        "unit": "1",
+        "semantic": "rotating-dynamics-energy-drift-time-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_max_energy_relative_drift_space_refined",
+        "unit": "1",
+        "semantic": "rotating-dynamics-energy-drift-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_max_charge_relative_drift_base",
+        "unit": "1",
+        "semantic": "rotating-dynamics-charge-drift-base-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_max_charge_relative_drift_time_refined",
+        "unit": "1",
+        "semantic": "rotating-dynamics-charge-drift-time-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_max_charge_relative_drift_space_refined",
+        "unit": "1",
+        "semantic": "rotating-dynamics-charge-drift-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_time_relative_change",
+        "unit": "1",
+        "semantic": "shape-band-worst-excursion-time-refinement-change-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_space_relative_change",
+        "unit": "1",
+        "semantic": "shape-band-worst-excursion-space-refinement-change-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "dynamic_departure_pattern_agreement",
+        "unit": "1",
+        "semantic": "shape-band-departure-pattern-agreement-flag-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "unperturbed_control_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "unperturbed-control-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_amplitude_up_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "real-amplitude-up-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_amplitude_down_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "real-amplitude-down-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "complex_common_phase_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "complex-common-phase-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "complex_relative_phase_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "complex-relative-phase-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_off_center_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "real-off-center-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "complex_dipole_packet_shape_excursion_space_refined",
+        "unit": "1",
+        "semantic": "complex-dipole-packet-shape-excursion-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "unperturbed_control_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "unperturbed-control-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_amplitude_up_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "real-amplitude-up-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_amplitude_down_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "real-amplitude-down-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "complex_common_phase_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "complex-common-phase-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "complex_relative_phase_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "complex-relative-phase-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "real_off_center_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "real-off-center-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      },
+      {
+        "id": "complex_dipole_packet_departure_time_space_refined",
+        "unit": "1",
+        "semantic": "complex-dipole-packet-departure-time-space-refined-v1",
+        "toleranceTarget": {
+          "absolute": 1e-8
+        }
+      }
+    ]
+  },
+  "perturbations": [
+    {
+      "id": "real-amplitude-up",
+      "field": "real",
+      "componentDirection": [
+        1,
+        1,
+        1
+      ],
+      "spatialProfile": "stationary-envelope"
+    },
+    {
+      "id": "real-amplitude-down",
+      "field": "real",
+      "componentDirection": [
+        -1,
+        -1,
+        -1
+      ],
+      "spatialProfile": "stationary-envelope"
+    },
+    {
+      "id": "complex-common-phase",
+      "field": "imaginary",
+      "componentDirection": [
+        1,
+        1,
+        1
+      ],
+      "spatialProfile": "stationary-envelope"
+    },
+    {
+      "id": "complex-relative-phase",
+      "field": "imaginary",
+      "componentDirection": [
+        1,
+        -1,
+        0
+      ],
+      "spatialProfile": "stationary-envelope"
+    },
+    {
+      "id": "real-off-center",
+      "field": "real",
+      "componentDirection": [
+        1,
+        -0.5,
+        0.25
+      ],
+      "spatialProfile": "squared-lorentzian-width-0.8-centered-at-1.5"
+    },
+    {
+      "id": "complex-dipole-packet",
+      "field": "imaginary",
+      "componentDirection": [
+        1,
+        0.5,
+        -0.75
+      ],
+      "spatialProfile": "odd-squared-lorentzian-width-1-centered-at-minus-1.5"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "inspected-stable-branch",
+      "eligible": false,
+      "role": "inspected-control",
+      "expectation": "expected-pass",
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 1.3,
+      "frequencies": [
+        0.4,
+        0.4,
+        -0.8
+      ]
+    },
+    {
+      "id": "inspected-unstable-branch",
+      "eligible": false,
+      "role": "inspected-control",
+      "expectation": "expected-fail",
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 1.3,
+      "frequencies": [
+        0.49,
+        0.49,
+        -0.98
+      ]
+    },
+    {
+      "id": "stiffer-quartic",
+      "eligible": true,
+      "role": "confirmatory",
+      "expectation": "predicted-pass",
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 1.6,
+      "frequencies": [
+        0.4,
+        0.4,
+        -0.8
+      ]
+    },
+    {
+      "id": "weaker-coupling",
+      "eligible": true,
+      "role": "confirmatory",
+      "expectation": "predicted-pass",
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "lambda": 1.8,
+      "quarticCoefficient": 1.1,
+      "frequencies": [
+        0.42,
+        0.42,
+        -0.84
+      ]
+    },
+    {
+      "id": "asymmetric-frequencies",
+      "eligible": true,
+      "role": "confirmatory",
+      "expectation": "predicted-pass",
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 1.3,
+      "frequencies": [
+        0.34,
+        0.46,
+        -0.8
+      ]
+    },
+    {
+      "id": "equal-effective-mass",
+      "eligible": true,
+      "role": "confirmatory",
+      "expectation": "predicted-pass",
+      "massSquared": [
+        1,
+        1,
+        1.48
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 1.3,
+      "frequencies": [
+        0.4,
+        0.4,
+        -0.8
+      ]
+    },
+    {
+      "id": "phase-b-mass-ratios",
+      "eligible": true,
+      "role": "confirmatory",
+      "expectation": "open",
+      "massSquared": [
+        1,
+        0.6,
+        3.2
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 2.5,
+      "frequencies": [
+        0.9,
+        0.65,
+        -1.55
+      ]
+    },
+    {
+      "id": "near-threshold",
+      "eligible": true,
+      "role": "confirmatory",
+      "expectation": "predicted-fail",
+      "massSquared": [
+        1,
+        1,
+        1
+      ],
+      "lambda": 2,
+      "quarticCoefficient": 1.6,
+      "frequencies": [
+        0.48,
+        0.48,
+        -0.96
+      ]
+    }
+  ]
+}

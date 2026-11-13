@@ -26,6 +26,7 @@ npm run build
 npm run case:level-0:verify
 npm run case:level-0:dynamics:verify
 npm run case:level-0:expanded:verify
+npm run case:level-0:charged:verify
 npm test
 ```
 
@@ -86,12 +87,61 @@ change the frozen numerical result or mark its independent review complete.
 17. Confirm that the bounded dynamic-bank pass does not override either failed
     static stability gate and that Phase D still receives no eligible node.
 
+## Charged-state study
+
+Status date: 2026-11-13
+
+[`PHASE_C_CHARGED_OBJECTHOOD.md`](PHASE_C_CHARGED_OBJECTHOOD.md) reports a
+bounded positive result in a different declared model family. It needs its own
+review and is not covered by an approval of the negative result above.
+
+18. Confirm from the declared energy that phase rotations whose angles sum to
+    zero are a symmetry, and derive the two conserved charges and the rotating
+    stationary equations.
+19. Independently verify that `27 * min(m2) * g - 8 * lambda^2 >= 0` implies a
+    non-negative potential, and that `8 * lambda^2 - 9 * g * sum(m2) > 0`
+    exhibits a negative value on the symmetric ray. Recompute both bounds for
+    the nine frozen static scenarios and the eight charged scenarios.
+20. Review the declared exploratory inspection and the freeze record. The
+    freeze is a set of file digests, not a commit. State whether the ordering
+    is accepted, and check that the contract and the preregistration text
+    still match their recorded digests.
+21. Assess whether the count `n(H) = p(d'')` is an acceptable
+    operationalization of stability at fixed charge for this second-order
+    system with two charges. The study does not prove it.
+22. Independently assemble the real-amplitude and imaginary-phase Hessians for
+    at least one qualified scenario and for `near-threshold`. Confirm the
+    eigenvalue counts and the three near-zero directions without relying on
+    the repository block inertia.
+23. Independently recompute the charge response for at least one scenario with
+    unequal frequencies and confirm its symmetry and its sign pattern at both
+    steps.
+24. Independently evaluate the continuum envelope of `equal-effective-mass`,
+    `f(x) = 1.68 / (8/3 + sqrt(64/9 - 6.552) * cosh(sqrt(0.84) * x))`, and
+    confirm `Gamma` near `8.67741` and a peak density near `0.726290` before
+    discretization error.
+25. Reproduce the seven probes at the three resolutions for at least one
+    qualified scenario and for both controls. Confirm the shape band, the
+    departure pattern, and the energy and charge conservation checks.
+26. Confirm that `near-threshold` is rejected by the dynamic bank although it
+    passes the count, and that the report states the secondary hypothesis as
+    not supported.
+27. Confirm that the post-hoc note is labelled unregistered, that the static
+    dispositions and the integrated v3 disposition are unchanged, and that
+    Phase D has not been run.
+
 ## Claim audit
 
 The final report may say that the declared case executed completely and
 returned a negative result. It must not say that Level 0 is physically
 validated, that the general theory is falsified, that all nonlinear
 completions were searched, or that the result is empirical.
+
+For the charged-state study the report may say that five preregistered
+scenarios passed every declared gate inside the declared one-dimensional model
+and perturbation bank. It must not say that Level 0 is validated, that the
+paper's CRT-node is established, that the count criterion is proven, or that
+the states are stable beyond the declared duration, dimension and bank.
 
 ## Review record
 
@@ -111,11 +161,17 @@ Independent real-time dynamics check:
 Independent asymmetric stationary check:
 Independent real/phase Hessian check:
 Independent four-probe dynamics check:
+Independent charged symmetry/charge/vacuum-bound check:
+Independent charged Hessian-count and charge-response check:
+Independent charged seven-probe dynamics check:
+Charged-study freeze ordering accepted: yes/no
+Count criterion accepted as operationalization: yes/no
 Phase-B to Phase-C mapping accepted: yes/no
 Claim boundary accepted: yes/no
 Blocking findings:
 Non-blocking findings:
 Decision: accept bounded computational result / request changes
+Charged-study decision: accept bounded computational result / request changes
 ```
 
 An accepted review record should be linked by commit hash. Do not edit the

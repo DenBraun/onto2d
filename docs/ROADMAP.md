@@ -489,7 +489,7 @@ independent domains.
 |---|---|
 | History Matters | Independently review FD001 preparation, then join held-out outcomes under its frozen protocol; resolve LTEE aggregate-count or unit-level eligibility before scoring. [Benchmark](history/BENCHMARK.md) |
 | Source data | Complete current claim validation. [Source policy](architecture/SOURCE_POLICY.md) |
-| Level 0 | Independent numerical comparison and wider justified parameter coverage; collective Phase D and empirical evidence remain open. Current bounded searches retain their negative results. [Case](../cases/level-0-oscillator/README.md) |
+| Level 0 | Independent numerical comparison and wider justified parameter coverage; collective Phase D and empirical evidence remain open. Current bounded static searches retain their negative results. A preregistered [charged-state study](../cases/level-0-oscillator/PHASE_C_CHARGED_OBJECTHOOD.md) qualifies five rotating-phase scenarios inside its declared model and awaits independent review; Phase D needs its own preregistration. [Case](../cases/level-0-oscillator/README.md) |
 | Model Pack format | Review manifest-bound lineage and other v2 requirements before changing the format; no v2 runtime is claimed. [Proposal](model-pack-v2/README.md) |
 | Other history cases | Planned SLSA, Software Heritage and lithic studies; Seshat full dependency experiment. These are backlog, not current parallel priorities. [Portfolio](history/PORTFOLIO.md) |
 | Integration | Remote run-store persistence and external evaluators need explicit contracts when selected; local stores and benchmark replay already work |

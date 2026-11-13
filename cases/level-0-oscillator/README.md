@@ -15,6 +15,7 @@ npm run case:level-0:phase-c:verify
 npm run case:level-0:objecthood:verify
 npm run case:level-0:dynamics:verify
 npm run case:level-0:expanded:verify
+npm run case:level-0:charged:verify
 ```
 
 To regenerate the frozen artifact intentionally:
@@ -26,6 +27,7 @@ npm run case:level-0:phase-c
 npm run case:level-0:objecthood
 npm run case:level-0:dynamics
 npm run case:level-0:expanded
+npm run case:level-0:charged
 ```
 
 The non-mutating verification command is the normal review path.
@@ -126,6 +128,18 @@ four-direction complex perturbation bank. All eligible branches are localized
 and non-trivial, but none passes the real-amplitude or complex-phase Hessian
 gate. The integrated v3 disposition therefore remains negative inside the
 portable expanded declared model.
+
+The separately preregistered study in
+[`PHASE_C_CHARGED_OBJECTHOOD.md`](PHASE_C_CHARGED_OBJECTHOOD.md) keeps the
+signed-frequency balance of Phase B as rotating envelope phases and restricts
+the parameters to a potential whose global minimum is the vacuum. It tests
+persistence at fixed conserved charge, a different declared notion from the
+positive-definite gate above. Five of its six eligible scenarios pass every
+declared gate; its secondary hypothesis, that the charge-constrained count and
+the dynamic bank always agree, is not supported. It leaves the static
+rejections and the integrated v3 disposition unchanged, has not been
+independently reviewed, and records Phase D only as eligible for a separate
+preregistration.
 
 ## Interpretation boundary
 
